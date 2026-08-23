@@ -1,0 +1,846 @@
+{
+  "stage": "whole-source-depth",
+  "task": "whole-source quota-free semantic depth planning (late lawful recovery)",
+  "context_policy": "one source deep-read once; no unrelated source batching",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_58.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "arxiv-preprint",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Reda Chhaibi",
+        "Joseph Najnudel",
+        "Ashkan Nikeghbali"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 4942,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 17,
+          "text": "Abstract"
+        },
+        {
+          "line": 47,
+          "text": "Contents"
+        },
+        {
+          "line": 48,
+          "text": "1 Introduction 3"
+        },
+        {
+          "line": 49,
+          "text": "1.1 The characteristic polynomial of random unitary matrices and the num-"
+        },
+        {
+          "line": 51,
+          "text": "1.2 Virtual isometries and almost sure convergence . . . . . . . . . . . . . . . 8"
+        },
+        {
+          "line": 52,
+          "text": "1.3 Outline of the paper . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12"
+        },
+        {
+          "line": 54,
+          "text": "2 Proof of Theorem 1.5 14"
+        },
+        {
+          "line": 55,
+          "text": "2.1 On the argument of the characteristic polynomial . . . . . . . . . . . . . 14"
+        },
+        {
+          "line": 56,
+          "text": "2.2 Precise estimates for the eigenvalues of virtual isometries . . . . . . . . . 18"
+        },
+        {
+          "line": 57,
+          "text": "2.3 Infinite product representation of the ratio and its convergence . . . . . . 22"
+        },
+        {
+          "line": 59,
+          "text": "3 First properties of ξ ∞ and linear statistics 25"
+        },
+        {
+          "line": 60,
+          "text": "3.1 The order of ξ ∞ as an entire function . . . . . . . . . . . . . . . . . . . . . 25"
+        },
+        {
+          "line": 61,
+          "text": "3.2 Convergence of linear statistics . . . . . . . . . . . . . . . . . . . . . . . . 27"
+        },
+        {
+          "line": 63,
+          "text": "4 Fine estimates for the logarithimic derivative and related conjectures for the"
+        },
+        {
+          "line": 66,
+          "text": "5 The moments of ratios related to ξ ∞ 43"
+        },
+        {
+          "line": 67,
+          "text": "5.1 Expectation of ratios . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43"
+        },
+        {
+          "line": 68,
+          "text": "5.2 Moments of the logarithmic derivative . . . . . . . . . . . . . . . . . . . . 51"
+        },
+        {
+          "line": 70,
+          "text": "6 Mesoscopic fluctuations and blue noise 58"
+        },
+        {
+          "line": 71,
+          "text": "6.1 The sine kernel from afar . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59"
+        },
+        {
+          "line": 72,
+          "text": "6.2 Application to the Stieltjes transform of the sine kernel . . . . . . . . . . 63"
+        },
+        {
+          "line": 81,
+          "text": "1 Introduction"
+        },
+        {
+          "line": 134,
+          "text": "1. Ratios and correlations on the microscopic scale: ratios of characteristic polyno-"
+        },
+        {
+          "line": 155,
+          "text": "2. Linear statistics: we shall see that the logarithmic derivative of our random an-"
+        },
+        {
+          "line": 168,
+          "text": "3. Value distribution of the Riemann zeta function on the critical line: on the"
+        },
+        {
+          "line": 179,
+          "text": "1 This question was asked to A.N. by Alexei Borodin in a private communication."
+        },
+        {
+          "line": 198,
+          "text": "1.1 The characteristic polynomial of random unitary matrices and"
+        },
+        {
+          "line": 367,
+          "text": "1.2 Virtual isometries and almost sure convergence"
+        },
+        {
+          "line": 385,
+          "text": "1. One considers a sequence ( xn )x≥1 of independent random vectors, xn being uni-"
+        },
+        {
+          "line": 388,
+          "text": "2. Almost surely, for all n ≥ 1, xn is different from the last basis vector en of C n ,"
+        },
+        {
+          "line": 392,
+          "text": "3. We define (Un )n≥1 by induction as follows: U1 = x1 and for all n ≥ 2,"
+        },
+        {
+          "line": 405,
+          "text": "1. If 1 ≤ k ≤ n, we denote by θk the argument of λk , taken in the interval (0, 2π ):"
+        },
+        {
+          "line": 522,
+          "text": "2 log n 2 log n"
+        },
+        {
+          "line": 636,
+          "text": "1.3 Outline of the paper"
+        },
+        {
+          "line": 657,
+          "text": "1. For any p > 0 and any compact set K ⊂ C \\R, we have:"
+        },
+        {
+          "line": 671,
+          "text": "2. For z1 , . . . , zk , z1′ , . . . , z′k ∈ C \\R, and for all n ∈ N ⊔ {∞},"
+        },
+        {
+          "line": 686,
+          "text": "E −→ E"
+        },
+        {
+          "line": 693,
+          "text": "3. For all z1 , . . . , zk , z1′ , . . . , z′k ∈ C \\R such that zi 6= z′j for 1 ≤ i, j ≤ n, we have"
+        },
+        {
+          "line": 697,
+          "text": "1 j 1"
+        },
+        {
+          "line": 706,
+          "text": "E = ′"
+        },
+        {
+          "line": 712,
+          "text": "1 i2πz′j"
+        },
+        {
+          "line": 716,
+          "text": "1 i2πz j"
+        },
+        {
+          "line": 765,
+          "text": "2 Proof of Theorem 1.5"
+        },
+        {
+          "line": 766,
+          "text": "2.1 On the argument of the characteristic polynomial"
+        },
+        {
+          "line": 863,
+          "text": "1 Y z −z/j"
+        },
+        {
+          "line": 925,
+          "text": "X ∞ X 1"
+        },
+        {
+          "line": 927,
+          "text": "4 k =1 j = k j2"
+        },
+        {
+          "line": 932,
+          "text": "4 k = 1 k2 k t2"
+        },
+        {
+          "line": 938,
+          "text": "4 k=1 k k"
+        },
+        {
+          "line": 1007,
+          "text": "∞ X ∞"
+        },
+        {
+          "line": 1044,
+          "text": "2.2 Precise estimates for the eigenvalues of virtual isometries"
+        },
+        {
+          "line": 1057,
+          "text": "E ( X I ) = | I |, (2.1)"
+        },
+        {
+          "line": 1069,
+          "text": "4 Var(X I ) 2"
+        },
+        {
+          "line": 1074,
+          "text": "XI 1 » 2"
+        },
+        {
+          "line": 1080,
+          "text": "2 sin"
+        },
+        {
+          "line": 1128,
+          "text": "2 sin2 (π | I |k)"
+        },
+        {
+          "line": 1131,
+          "text": "Z Z !"
+        },
+        {
+          "line": 1132,
+          "text": "2 sin2 (π | I |k) sin2 (π | I |k)"
+        },
+        {
+          "line": 1137,
+          "text": "Z Z Z ∞"
+        },
+        {
+          "line": 1142,
+          "text": "Z Z Z"
+        },
+        {
+          "line": 1149,
+          "text": "1 X m na(na + 1) na(2na)"
+        },
+        {
+          "line": 1162,
+          "text": "X 1 X 1"
+        },
+        {
+          "line": 1202,
+          "text": "! Z ∞"
+        },
+        {
+          "line": 1204,
+          "text": "XI \u0010 \u0011"
+        },
+        {
+          "line": 1211,
+          "text": "Z Z !!"
+        },
+        {
+          "line": 1219,
+          "text": "Z ∞ 2 Z ∞"
+        },
+        {
+          "line": 1273,
+          "text": "X[0,⌊ A⌋] ≤ X[0,A] ≤ X[0,⌈ A⌉] ,"
+        },
+        {
+          "line": 1319,
+          "text": "2.3 Infinite product representation of the ratio and its convergence"
+        },
+        {
+          "line": 1358,
+          "text": "2 k ) exp 2 iθk − exp − 2 iθk"
+        },
+        {
+          "line": 1396,
+          "text": "1 A→∞ θ"
+        },
+        {
+          "line": 1478,
+          "text": "= OK , (2.3)"
+        },
+        {
+          "line": 1482,
+          "text": "1− − 1− = OK . (2.4)"
+        },
+        {
+          "line": 1506,
+          "text": "1− = 1 + OK = 1 + OK"
+        },
+        {
+          "line": 1515,
+          "text": "= OK ( 1)"
+        },
+        {
+          "line": 1539,
+          "text": "1 − 1 + OK"
+        },
+        {
+          "line": 1581,
+          "text": "− 1− + OK"
+        },
+        {
+          "line": 1590,
+          "text": "− 1− = OK"
+        },
+        {
+          "line": 1597,
+          "text": "3 First properties of ξ ∞ and linear statistics"
+        },
+        {
+          "line": 1598,
+          "text": "3.1 The order of ξ ∞ as an entire function"
+        },
+        {
+          "line": 1622,
+          "text": "1− 1− = 1+O ,"
+        },
+        {
+          "line": 1645,
+          "text": "1− 1− = 1+O ,"
+        },
+        {
+          "line": 1707,
+          "text": "3.2 Convergence of linear statistics"
+        },
+        {
+          "line": 1746,
+          "text": "X X Z"
+        },
+        {
+          "line": 1753,
+          "text": "X X X"
+        },
+        {
+          "line": 1795,
+          "text": "X Z Z ∞"
+        },
+        {
+          "line": 1826,
+          "text": "X Z ∞ Z ∞ Z ∞"
+        },
+        {
+          "line": 1836,
+          "text": "4 Fine estimates for the logarithimic derivative and re-"
+        },
+        {
+          "line": 1846,
+          "text": "1 i2πz"
+        },
+        {
+          "line": 1893,
+          "text": "X 1 1 X 1 1"
+        },
+        {
+          "line": 1936,
+          "text": "Q \u0010 \u0011"
+        },
+        {
+          "line": 1966,
+          "text": "X 1 1"
+        },
+        {
+          "line": 2005,
+          "text": "section and the reference there to the recent work by Aizenman and Warzel [AW13])."
+        },
+        {
+          "line": 2028,
+          "text": "X 1 X 1"
+        },
+        {
+          "line": 2109,
+          "text": "  A"
+        },
+        {
+          "line": 2144,
+          "text": "X 1 X X 1"
+        },
+        {
+          "line": 2158,
+          "text": "X X I A − X− I A X I A + X− I A"
+        },
+        {
+          "line": 2167,
+          "text": "X I −IA X I A + X− I A"
+        },
+        {
+          "line": 2175,
+          "text": "X IℓA"
+        },
+        {
+          "line": 2176,
+          "text": "1 X CK,α"
+        },
+        {
+          "line": 2178,
+          "text": "X I A + X− I A 1+"
+        },
+        {
+          "line": 2180,
+          "text": "ℓ≥0 (1 + ℓ) ℓ≥0 (1 + ℓ)"
+        },
+        {
+          "line": 2181,
+          "text": "ℓ ℓ 1+ℓ"
+        },
+        {
+          "line": 2187,
+          "text": "X 1 1 1 X ℓI −IA ℓ"
+        },
+        {
+          "line": 2205,
+          "text": "1 (1 + ℓ)2"
+        },
+        {
+          "line": 2215,
+          "text": "0. Let ( β ℓ )ℓ∈Z be the probability weights given by:"
+        },
+        {
+          "line": 2216,
+          "text": "1 o 1"
+        },
+        {
+          "line": 2240,
+          "text": "1 1 X"
+        },
+        {
+          "line": 2243,
+          "text": "1 1 I ℓ"
+        },
+        {
+          "line": 2269,
+          "text": "ℓ∈Z ℓ∈Z"
+        },
+        {
+          "line": 2333,
+          "text": "1 p p"
+        },
+        {
+          "line": 2336,
+          "text": "E  1 1 2"
+        },
+        {
+          "line": 2343,
+          "text": "1 X 2"
+        },
+        {
+          "line": 2351,
+          "text": "X 2 X"
+        },
+        {
+          "line": 2357,
+          "text": "X Z ∞"
+        },
+        {
+          "line": 2363,
+          "text": "\" #∞ Z"
+        },
+        {
+          "line": 2382,
+          "text": "X Z ∞"
+        },
+        {
+          "line": 2399,
+          "text": "E  1 1 2"
+        },
+        {
+          "line": 2427,
+          "text": "  A"
+        },
+        {
+          "line": 2446,
+          "text": "  A"
+        },
+        {
+          "line": 2453,
+          "text": "OK ≤ OK = O K (1 ),"
+        },
+        {
+          "line": 2463,
+          "text": "  A"
+        },
+        {
+          "line": 2509,
+          "text": "\" P #"
+        },
+        {
+          "line": 2516,
+          "text": "X 1 "
+        },
+        {
+          "line": 2668,
+          "text": "I1 = ,"
+        },
+        {
+          "line": 2690,
+          "text": "2 R2 1 + (y1 − y2 )2 (1 + |y1 |)2 (1 + |y2 |)2"
+        },
+        {
+          "line": 2892,
+          "text": "5 The moments of ratios related to ξ ∞"
+        },
+        {
+          "line": 2893,
+          "text": "5.1 Expectation of ratios"
+        },
+        {
+          "line": 2952,
+          "text": "X 1 1 1"
+        },
+        {
+          "line": 2979,
+          "text": "E −→ E"
+        },
+        {
+          "line": 3062,
+          "text": "2 supr∈N⊔{∞} supz∈K |ξ r (z)| supz∈K |ξ n (z) − ξ ∞ (z)|"
+        },
+        {
+          "line": 3097,
+          "text": "2 sup −"
+        },
+        {
+          "line": 3160,
+          "text": "1 j 1"
+        },
+        {
+          "line": 3167,
+          "text": "1 X λim"
+        },
+        {
+          "line": 3175,
+          "text": "2 The authors are grateful to Brad Rodgers for many insightful discussions on the subject"
+        },
+        {
+          "line": 3219,
+          "text": "1 j 1"
+        },
+        {
+          "line": 3222,
+          "text": "E (5.3)"
+        },
+        {
+          "line": 3231,
+          "text": "E = ′ (5.4)"
+        },
+        {
+          "line": 3315,
+          "text": "3 This idea was suggested to us by Brad Rodgers"
+        },
+        {
+          "line": 3406,
+          "text": "1 j 1"
+        },
+        {
+          "line": 3415,
+          "text": "E = ′"
+        },
+        {
+          "line": 3448,
+          "text": "1 i2πz′j"
+        },
+        {
+          "line": 3452,
+          "text": "1 i2πz j"
+        },
+        {
+          "line": 3474,
+          "text": "5.2 Moments of the logarithmic derivative"
+        },
+        {
+          "line": 3483,
+          "text": "Section 4 can be obtained with this method in a much quicker way. We shall use this"
+        },
+        {
+          "line": 3510,
+          "text": "1 i < j ( z j − zi ) i < j ( zi − z j )"
+        },
+        {
+          "line": 3546,
+          "text": "  Ñ"
+        },
+        {
+          "line": 3555,
+          "text": "Y Y Y"
+        },
+        {
+          "line": 3570,
+          "text": "Y Y X"
+        },
+        {
+          "line": 3598,
+          "text": "X ∂ |V | Y"
+        },
+        {
+          "line": 3611,
+          "text": "∂ |W | Y"
+        },
+        {
+          "line": 3620,
+          "text": "∂ |V | Y"
+        },
+        {
+          "line": 3625,
+          "text": "X Y Y"
+        },
+        {
+          "line": 3646,
+          "text": "1 m p=1"
+        },
+        {
+          "line": 3700,
+          "text": "X X −1"
+        },
+        {
+          "line": 3748,
+          "text": "∂ |W | Y"
+        },
+        {
+          "line": 3752,
+          "text": "Y X Y"
+        },
+        {
+          "line": 3778,
+          "text": "Y Y Y"
+        },
+        {
+          "line": 3787,
+          "text": "/ V ∪ W = X,"
+        },
+        {
+          "line": 3788,
+          "text": "Y Y Y"
+        },
+        {
+          "line": 3795,
+          "text": "Y Y Y"
+        },
+        {
+          "line": 3814,
+          "text": "X X Y"
+        },
+        {
+          "line": 3853,
+          "text": "X \u0010 \u0011"
+        },
+        {
+          "line": 3857,
+          "text": "X \u0010 \u0011"
+        },
+        {
+          "line": 3875,
+          "text": "X X Y"
+        },
+        {
+          "line": 3915,
+          "text": "X X Y Y"
+        },
+        {
+          "line": 3923,
+          "text": "Y X Y"
+        },
+        {
+          "line": 3937,
+          "text": "P X X Y"
+        },
+        {
+          "line": 3953,
+          "text": "Y X P"
+        },
+        {
+          "line": 3979,
+          "text": "Y P Y \u0010 \u0011"
+        },
+        {
+          "line": 3998,
+          "text": "Y P Y \u0010 \u0011"
+        },
+        {
+          "line": 4012,
+          "text": "6 Mesoscopic fluctuations and blue noise"
+        },
+        {
+          "line": 4054,
+          "text": "X Z Z"
+        },
+        {
+          "line": 4091,
+          "text": "6.1 The sine kernel from afar"
+        },
+        {
+          "line": 4118,
+          "text": "1 n (n )"
+        },
+        {
+          "line": 4163,
+          "text": "1 X |k1 | ˆ 2πk1 2πk p"
+        },
+        {
+          "line": 4180,
+          "text": "1 X |k1 | ˆ 2πk1 2πk p"
+        },
+        {
+          "line": 4297,
+          "text": "( L) 1 2 2"
+        },
+        {
+          "line": 4342,
+          "text": "Z ! !"
+        },
+        {
+          "line": 4382,
+          "text": "L L L H2"
+        },
+        {
+          "line": 4390,
+          "text": "L→∞ 2"
+        },
+        {
+          "line": 4400,
+          "text": "6.2 Application to the Stieltjes transform of the sine kernel"
+        },
+        {
+          "line": 4413,
+          "text": "X 1 1"
+        },
+        {
+          "line": 4419,
+          "text": "1 on [−1, 1] and to 0 on R \\[−2, 2]. If for A > 0, f z (t) = f z (t) ϕ(t/A), we have"
+        },
+        {
+          "line": 4457,
+          "text": "A→∞ 1"
+        },
+        {
+          "line": 4477,
+          "text": "1 k ∈Z"
+        },
+        {
+          "line": 4479,
+          "text": "L2 (Ω )"
+        },
+        {
+          "line": 4486,
+          "text": "1 k ∈Z"
+        },
+        {
+          "line": 4488,
+          "text": "L2 (Ω )"
+        },
+        {
+          "line": 4494,
+          "text": "L2 (Ω )"
+        },
+        {
+          "line": 4501,
+          "text": "A→∞ 1"
+        },
+        {
+          "line": 4546,
+          "text": "6.1. It remains to compute the covariance structure. For z1 , z2 ∈ C \\R,"
+        },
+        {
+          "line": 4548,
+          "text": "Z √ √"
+        },
+        {
+          "line": 4566,
+          "text": "Z ∞ Z ∞"
+        },
+        {
+          "line": 4687,
+          "text": "Z 2 Z 1Z 1"
+        },
+        {
+          "line": 4689,
+          "text": "Γ 0 0"
+        },
+        {
+          "line": 4692,
+          "text": "Z 2 Z 1Z 1"
+        },
+        {
+          "line": 4695,
+          "text": "Γ 0 0"
+        },
+        {
+          "line": 4706,
+          "text": "Γ Γ Γ"
+        },
+        {
+          "line": 4729,
+          "text": "Γ Γ Γ"
+        },
+        {
+          "line": 4737,
+          "text": "2 dz1 dz2"
+        },
+        {
+          "line": 4835,
+          "text": "References"
+        }
+      ],
+      "normalized_bytes": 321075,
+      "normalized_page_count": 71,
+      "normalized_relpath": "normalized/openalex_w3105720561_be3dac4e59e0.txt",
+      "normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "prior_v1_units": [],
+      "source_id": "openalex_w3105720561",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "random-matrix",
+        "heuristic-bridge"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2016,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/openalex_w3105720561_be3dac4e59e0.txt"
+    }
+  ],
+  "model_visible_packet_sha256": "b367d13f609c28c5da1efc8dbc8615eda0ec15fcf42699f18422dca44ecb9856"
+}

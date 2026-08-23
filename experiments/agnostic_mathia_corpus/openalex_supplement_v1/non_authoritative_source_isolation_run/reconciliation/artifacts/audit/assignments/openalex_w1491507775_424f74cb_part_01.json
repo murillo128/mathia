@@ -1,0 +1,556 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_blowup_polytope_surgery": {
+      "boundary_or_failure": "Vertex truncation represents blowup only at a torus-fixed center. The excerpt says projective symmetry can place up to three generic centers at the triangle's vertices, whereas further toric centers are special-position choices and may lose the positive first-Chern property of generic del Pezzo blowups. It supplies no general decision procedure for arbitrary center configurations or incidence data. This is a limitation of the toric representation, not of abstract blown-up projective-plane geometry.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_f98f6e81bddd7718ec7511cfea78fb70702c84c1d63cce21a1204683567c7dfa",
+        "agnostic_oa_critic_6492040632e20a39d14bebbdeabe0837ae89e60a6b671566d4dea62b956ed14f",
+        "agnostic_oa_revision_6480a8a664170b9ee162da76f2f80ede10eb02d549be42de094fa8bb3eda94ba"
+      ],
+      "interpretation": "Inference: replacing a torus-fixed point by a projective line becomes a local cut of the orbit polygon, with the new interval's size recording the size of that blown-up sphere; repeating the surgery is faithful to generic point-position data only while the desired centers lie in the relevant projective-symmetry orbit of torus-fixed vertices.",
+      "nonparaphrase_operation": "Choose a triangle vertex that represents the blowup center, truncate that vertex to expose a new interval, and record the interval length as the size of the inserted projective line. Record the collapsing torus cycle only when the figure or other bound data makes it identifiable. For multiple centers, verify separately that the desired configuration lies in the projective-automorphism orbit of torus-fixed centers; this excerpt certifies up to three generic points but gives no general test. Otherwise label the continued toric construction special-position rather than generic.",
+      "quality_reason": "Accepted after removing the unsupported incidence-preservation checklist and replacing it with the source's actual automorphism-orbit and point-position boundary. The operation retains the local surgery and size encoding without importing the separate higher-dimensional ambient escape or unreadable cycle labels.",
+      "source_support": "The source defines blowup here as replacing a point of the projective plane by a projective line and depicts the toric operation as replacing a triangle vertex by an interval whose length directly measures the blown-up sphere. It states that projective symmetry maps up to three generic points to the three vertices, but further toric blowups require special corner points and can fail to retain the positive first Chern class of generic del Pezzo blowups.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w1491507775",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "bounded-source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the task execution brief/prompt, the exact SHA-bound assignment, and its six exact local unit artifacts only; no network, issue history, other sources, or other analysis outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The surgery and collapsing-cycle labels are figure-dependent, and symmetry and Chern notation are OCR-damaged. No criterion for arbitrary or infinitely-near center configurations is reconstructed.",
+      "unit_id": "agnostic_oa_blowup_polytope_surgery"
+    },
+    "agnostic_oa_hypersurface_ambient_lift": {
+      "boundary_or_failure": "A generic hypersurface need not inherit the ambient torus symmetry, so its toric polytope is parameter data for ambient monomials rather than an orbit polytope of the hypersurface itself. The large-parameter boundary union is a degenerate singular limit, not an isomorphism with the smooth member. The degree condition in the displayed projective example is essential for the Calabi-Yau conclusion.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_c8be978387aed842b1257f312fb75138ce1c6e509839a47fef58291f4d59daa5",
+        "agnostic_oa_critic_10f6a368ba9360726bd016aeabada308c77039033a48ab1484df62d1c156ceec"
+      ],
+      "interpretation": "Inference: a non-toric space can remain combinatorially accessible by embedding it as the zero locus of a section in a higher-dimensional toric ambient space. Lattice points encode allowable monomials even after the generic coefficients break the symmetry.",
+      "nonparaphrase_operation": "Choose a toric ambient variety and an integral line bundle, enumerate the lattice points of its section polytope, and attach one monomial and coefficient to each point to form the hypersurface equation. Treat integral translation of all exponent points as a local monomial rescaling only on patches avoiding coordinate zero and infinity. To expose a toric skeleton, increase the coefficient of the product of boundary-defining coordinates and take the degeneration in which the hypersurface becomes their union; keep this boundary model distinct from the smooth generic hypersurface.",
+      "quality_reason": "The ambient hypersurface construction, lattice-point/monomial dictionary, generic breaking of the ambient torus symmetry, local qualification on integral exponent shifts, and large-coefficient degeneration to the union of coordinate boundary faces are all directly supported. The candidate also correctly prevents identification of that reducible singular limit with the smooth generic member.",
+      "source_support": "The source constructs Calabi-Yau hypersurfaces as degree n-plus-two equations in projective ambient space, views the polynomial as a line-bundle section, and associates its monomial deformations with integral-polytope points. It states that a generic equation breaks torus symmetry, then exhibits a parameter limit dominated by the product of homogeneous coordinates whose zero set is the union of boundary faces with the described lower-dimensional torus fibers.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Exponents and the degeneration parameter are OCR-distorted; the ambient-section, lattice-monomial, symmetry-breaking, and boundary-union mechanisms are directly supported.",
+      "unit_id": "agnostic_oa_hypersurface_ambient_lift"
+    },
+    "agnostic_oa_integral_points_sections": {
+      "boundary_or_failure": "This construction is the source's projective-line example for a line bundle of nonnegative integer degree. The bare geometric interval does not supply the lattice; the integral degree supplies the normalization. The excerpt asserts the section correspondence but does not display line-bundle transition functions, so the two complex-plane endpoint neighborhoods alone do not verify that affine powers glue globally. Negative degree, arbitrary bundles, and higher-dimensional toric counts are outside this span.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_eeca787e63b756f9cb5533cb55f096f51ff28de961a56578fa1c99eac4f43192",
+        "agnostic_oa_critic_4d44cc7a27ad918872bcc3911c32233c60c9cabd8ae0fce561b3db8ee14dafde",
+        "agnostic_oa_revision_52822c17efb1e9c91b6d67e73f158ec6afb287ccb8653bb50a07666ec2036221"
+      ],
+      "interpretation": "Inference: for a nonnegative integral line-bundle degree on the projective line, the continuous interval can be normalized so that its lattice points discretely index the source's listed section representatives; their status as global sections still belongs to the line-bundle gluing data, not to endpoint geometry alone.",
+      "nonparaphrase_operation": "Restrict to a line bundle of nonnegative integer degree n on the projective line. Determine n by integrating its first Chern form, normalize the orbit interval to run from zero to n, and enumerate its lattice points i from zero through n. Associate i with the affine-chart representative z^i. Before treating those representatives as global sections, verify their transformation on the second chart using the bundle transition function; do not substitute the fact that both endpoint neighborhoods look like the complex plane for this gluing check.",
+      "quality_reason": "Accepted after making the nonnegative-degree projective-line scope explicit and replacing the insufficient endpoint check with the required bundle-transition check. The revised record preserves the lattice-point indexing mechanism while distinguishing the source's asserted global-section result from a verification not supplied in the excerpt.",
+      "source_support": "The source takes the first Chern class to be an integral multiple of the Kahler form, identifies the sphere's integral volume and interval length with an integer n, normalizes the interval from zero to n, and relates its integral points to holomorphic sections represented on an affine chart by powers z^i for i from zero through n. It separately says that each endpoint neighborhood has the complex-plane geometry.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w1491507775",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "bounded-source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the task execution brief/prompt, the exact SHA-bound assignment, and its six exact local unit artifacts only; no network, issue history, other sources, or other analysis outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. OCR obscures the Chern integral and monomial notation, though the integer degree, interval normalization, and index range are clear in prose. The transition function needed for an independent gluing verification is not present in the excerpt.",
+      "unit_id": "agnostic_oa_integral_points_sections"
+    },
+    "agnostic_oa_lattice_index_singularity": {
+      "boundary_or_failure": "The vertex test assumes that n independent boundary faces meet over a zero-dimensional orbit in an n-torus fibration. Equal rank of the ambient cycle lattice and the shrinking-cycle sublattice makes their quotient finite, but smoothness requires index one, not merely full rank. The local quotient description is tied to this toric setting.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_0f0a573039ab0de065a3c5d9c017b19b721c77f0eedd8e5428ff694754022947",
+        "agnostic_oa_critic_cd6d46bfe81d3eb1c7e3002696f558fdf47471b6c410a96ecfc142eaed854298"
+      ],
+      "interpretation": "Inference: a toric singularity is detected arithmetically by the failure of collapsing cycles to form a primitive lattice basis. The finite lattice quotient measures the residual local isotropy invisible over the real vector space.",
+      "nonparaphrase_operation": "At each vertex, write the primitive shrinking one-cycles as columns in an integer matrix relative to a basis of the full torus cycle lattice. Compute the index of their generated sublattice, equivalently the absolute determinant in the square case or the Smith normal form. Index one certifies the local smooth chart; a nontrivial finite cokernel records the quotient group in the local model. Audit vertices only after confirming the polytope has the stated face structure.",
+      "quality_reason": "The candidate accurately preserves the excerpt's mechanism: incident vanishing cycles generate a same-rank sublattice, the finite quotient is the local quotient group, equality of lattices gives the smooth chart, and checking vertices suffices in this setup. Its index-one formulation is the correct arithmetic restatement of equality.",
+      "source_support": "The source says that when n faces meet, their vanishing cycles must form a basis of the n-dimensional fiber lattice for smoothness. It defines the full lattice M, the sublattice generated by shrinking cycles, and the finite quotient G at a vertex, identifies the local geometry with complex n-space modulo G, and gives the A-type example where the quotient is a finite cyclic group. It states that checking vertices suffices in this setup.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Several singularity labels are OCR-damaged; the sublattice-index criterion and local quotient conclusion are clear, while the precise group action is not reconstructed.",
+      "unit_id": "agnostic_oa_lattice_index_singularity"
+    },
+    "agnostic_oa_open_dual_dimension_drop": {
+      "boundary_or_failure": "The source-supported dimension drop occurs in its open local Calabi-Yau-like examples, where the integral ray representatives all have final coordinate one. The excerpt does not establish this for every open toric variety. Without primitive ray normalization, a common primitive integral height functional, and preservation of face associations and repeated rays, projection can lose scale, incidence, or multiplicity. The reduced configuration is not generally a compact polar polytope.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_3a2cd07ee1177f3dae9aebd7cdc1d4574993153e7bcb889374bd49166154cecf",
+        "agnostic_oa_critic_6e09749493a2425fb850434838d92a429e342181db2842387d83983e427b5e94",
+        "agnostic_oa_revision_0a65f9e906ddf08115d6c572af35972f50704890dabaf5481187d7406ef75139"
+      ],
+      "interpretation": "Inference from the examples: primitive ray data lying in a common integral height-one affine slice can be dehomogenized by removing the redundant height, provided the reduced representation remains a face-indexed multiset and the chosen height splitting makes reconstruction verifiable.",
+      "nonparaphrase_operation": "Index each boundary face and normalize its normal direction to a primitive integral ray generator. Exhibit a primitive integral height functional taking value one on every generator. Project along that height to a lattice one dimension lower, storing the results as a face-indexed multiset so repeated points and ray-to-face associations survive. Reconstruct with the chosen integral splitting by restoring height one, then compare every primitive ray and its face association with the input. Refuse the compression if the common-height test or the round-trip comparison fails.",
+      "quality_reason": "Accepted after enacting the candidate's own losslessness safeguards: primitive normalization, an explicit common-height witness, face-indexed multiplicity preservation, and a full association-preserving round trip. The direct claim is restricted to the source's examples, while the reusable common-height criterion is labeled as inference.",
+      "source_support": "The source assigns an integral normal ray to each face of an open toric base. In its A-type and local projective-plane examples, every listed ray point has final coordinate one; it explains this by fixing a normal circle while adjacent face data change by compact-cycle additions, and says the same information is then contained in integral points of a lattice one dimension lower.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w1491507775",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "bounded-source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the task execution brief/prompt, the exact SHA-bound assignment, and its six exact local unit artifacts only; no network, issue history, other sources, or other analysis outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Several example coordinates are OCR-corrupted, and the primitive-height-functional formulation, multiset safeguard, and integral round-trip check are inferred audit conditions rather than procedures stated in the excerpt. No unreliable coordinate list is reproduced.",
+      "unit_id": "agnostic_oa_open_dual_dimension_drop"
+    },
+    "agnostic_oa_reflexive_face_duality": {
+      "boundary_or_failure": "Polar duality here requires an integral polytope with the origin in its interior, a chosen dual-lattice pairing, and the excerpt's inequality convention. The polar of an integral polytope need not be integral; reflexivity is the additional intended condition. The Calabi-Yau implication is confined to the associated toric anticanonical hypersurface construction, with the smoothness or mild-singularity qualification stated by the source, and is not a consequence of polar integrality in an arbitrary setting.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_7da514591b389fda665093205dfaca653aa83214de6d0d6ed2c2f43491b65a83",
+        "agnostic_oa_critic_2c55cc1a286f4c4a052330cef002da42697025c11c876011556061753ded6ae1",
+        "agnostic_oa_revision_089c1ec14616ba2c849b7c7139b7b02a6e49b78ee3f198d72690c3f29d429595"
+      ],
+      "interpretation": "Inference: reflexivity keeps polar duality inside the integral-lattice category while reversing face dimensions, and in the source's toric hypersurface setting the same compatibility identifies the tensor product of boundary line bundles with the anticanonical bundle; the origin then indexes the boundary-product deformation.",
+      "nonparaphrase_operation": "Place the origin in the interior of an integral polytope and form the polar using the chosen lattice pairing and the source's inequality convention. Test whether the polar vertices lie in the dual lattice before calling the pair reflexive, and match a k-dimensional face with the complementary face of dimension n-k-1. In the associated toric hypersurface construction, tensor the boundary line bundles—equivalently, sum their divisor classes—and compare that tensor product with the anticanonical bundle. Only within that adjunction setting, and with the stated smoothness or mild-singularity allowance, infer the Calabi-Yau hypersurface condition.",
+      "quality_reason": "Accepted after removing the ambiguity between adding divisor classes and tensoring line bundles, and after tying the Calabi-Yau conclusion to the source's toric anticanonical hypersurface setting. The record also marks the OCR-corrupted reflexivity sentence as an intended condition recovered from its surrounding example and stated involutivity.",
+      "source_support": "The source defines the polar through pairing inequalities for an integral polytope containing the origin, illustrates face-to-vertex duality, states the complementary face dimension n-k-1 and that reflexive duality is symmetric, and equates reflexivity in its toric construction with the product of boundary line bundles being the inverse canonical bundle. It associates the product of boundary sections with the origin lattice point.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w1491507775",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "bounded-source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the task execution brief/prompt, the exact SHA-bound assignment, and its six exact local unit artifacts only; no network, issue history, other sources, or other analysis outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. OCR damages the polar inequality, canonical-bundle formula, and a sentence whose missing or reversed negation would otherwise misdefine reflexivity. The intended integral-polar condition is recovered only from the surrounding example, face correspondence, and assertion that the dual is again reflexive; broader mirror-symmetry claims are not made.",
+      "unit_id": "agnostic_oa_reflexive_face_duality"
+    },
+    "agnostic_oa_representation_failure_audit": {
+      "boundary_or_failure": "The sign diagnostic applies only under the source's toric/brane dictionary to the represented middle projective line bounded by the relevant external directions; arbitrary parallel or crossing lines do not inherit it. Grauert's contraction criterion requires the stated complex-geometric negative-normal-bundle hypotheses, and the first-Chern translation uses the Calabi-Yau setting. A zero or negative pairing obstructs the required contraction in this representation but does not show that a generic abstract blowup fails to exist. The ambient-with-equations escape is supported here only for the stated blown-up projective-plane setting and does not guarantee a useful representation.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_018149e3e32ae7010539766ad153d37caa9cab1b1a102f769cfde82c47604e60",
+        "agnostic_oa_critic_a9bf7100ed7be68b631c4f78326bab2ba5cc9367cda090f878188683698310f3",
+        "agnostic_oa_revision_2c30d908d7f33ca5af04e45a0589d4231962499d1c68d289dfa83dbe262de595"
+      ],
+      "interpretation": "Inference: audit a diagrammatic failure in stages—first verify the representation dictionary, then translate the diagram to an invariant pairing and contraction condition, then distinguish failure of that presentation from existence of the geometry, and finally test whether any richer representation exposes the data or questions actually needed.",
+      "nonparaphrase_operation": "First verify that the diagram fits the source's toric/brane dictionary and that the bounded interval represents the middle projective line. In that setting, translate parallel external directions to zero first-Chern pairing and crossing directions to negative pairing on that curve. Apply Grauert's criterion only after checking the complex submanifold, normal-bundle, and Calabi-Yau hypotheses needed for the contraction conclusion. For the supported generic blowups of the projective plane that the toric diagram misses, a higher-dimensional toric ambient variety with equations is a candidate representation. Audit it separately by recording which geometric data or observables it exposes and whether those suffice for the intended question; existence of the lift alone is not success.",
+      "quality_reason": "Accepted after adding the missing preconditions for the diagram-to-contraction translation, limiting the ambient lift to the blowup setting stated in the source, and making usefulness a separate post-lift test. The resulting operation distinguishes representability, contractibility, geometric existence, and practical accessibility.",
+      "source_support": "The source translates parallel external lines bounding the relevant interval into a neighborhood locally modeled on the cotangent bundle of the projective line and obtains zero first-Chern pairing; it states that intersection gives a negative pairing on the middle projective line. It invokes Grauert's negative-normal-bundle criterion to explain failure to shrink at finite moduli distance. It also says that the generic projective-plane blowups can exist and be realized in a higher-dimensional toric variety with equations, while warning that existence of a brane representation is distinct from its usefulness for extracting results.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w1491507775",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "bounded-source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the task execution brief/prompt, the exact SHA-bound assignment, and its six exact local unit artifacts only; no network, issue history, other sources, or other analysis outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The brane diagram is unavailable, charge and Chern notation are OCR-damaged, and the contraction argument depends on analytic and Calabi-Yau hypotheses summarized rather than proved in the excerpt. Physical claims about critical theories and speculative alternative brane configurations are not promoted to general mathematical conclusions.",
+      "unit_id": "agnostic_oa_representation_failure_audit"
+    },
+    "agnostic_oa_torus_fiber_skeleton": {
+      "boundary_or_failure": "The directly supported construction is limited to the complex plane and projective line examples: it encodes an orbit base, a circle fiber, and endpoint collapse, but not a complete metric. The excerpt does not establish a general higher-dimensional face/intersection algorithm or prove that collapse labels determine local topology. Any such extension would additionally require face-incidence data and compatible integral cycle labels. A space without the relevant torus symmetry need not admit this encoding.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_78b0724e9d8c0ed80abd270b9b7eba09262bdb2fd6c85898e5c4974d20995546",
+        "agnostic_oa_critic_ba9f67f33c4e8fe64903dbc160baa53916859ce2a98ac650977971fd13d45e3d",
+        "agnostic_oa_revision_ff25625dbc8f1cdc8f025bd621611fa0b1877d36e0d9d56ecd20d3b189c9edda"
+      ],
+      "interpretation": "Inference from the two examples: fixed-locus behavior can be compressed by recording a one-dimensional base together with where its circle fiber collapses, while keeping geometric size and the arbitrary choice of coordinate origin as distinct pieces of data.",
+      "nonparaphrase_operation": "For the complex plane, encode the radial direction by a half-line, place a circle over its interior, and mark its collapse at the endpoint. For the projective line, use an interval, mark circle collapse at both endpoints, record the interval length as the sphere-size parameter, and treat translation of the interval coordinate as a presentation change. Do not infer topology reconstruction for higher-dimensional faces or intersections from these examples alone; first supply face incidences and compatible integral collapse-cycle labels from additional evidence.",
+      "quality_reason": "Accepted after narrowing the operation to the two source-demonstrated orbit-base examples, replacing the unsupported topology-reconstruction guarantee with an encoding rule, and separating interval size from coordinate-origin freedom. The boundary now makes the higher-dimensional compatibility requirements explicitly unsupported here.",
+      "source_support": "The source says toric geometry encodes geometries with a torus action and fixed points through their fixed-point structure. It represents the complex plane as a half-line with a circle shrinking at its endpoint and the projective line as an interval with the circle shrinking at both endpoints. It states that the interval length is determined by sphere size and that translating the interval coordinate does not change the picture.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w1491507775",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "bounded-source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the task execution brief/prompt, the exact SHA-bound assignment, and its six exact local unit artifacts only; no network, issue history, other sources, or other analysis outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. OCR damages the group-action and coordinate formulas, and the figures carry part of the representation. The general effective-action and higher-dimensional reconstruction conditions are therefore not treated as established by this excerpt.",
+      "unit_id": "agnostic_oa_torus_fiber_skeleton"
+    }
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w1491507775_424f74cb_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_torus_fiber_skeleton.txt",
+      "artifact_bytes": 2491,
+      "artifact_relpath": "depth/units/agnostic_oa_torus_fiber_skeleton.txt",
+      "artifact_sha256": "28064c0e3edd94f05dca233feed5eeeb949ea3b26037a3af470dae0089f17d72",
+      "context_note": "The unit is demonstrated for the complex plane and projective line; later examples generalize it to higher-dimensional torus fibers and faces. The source is a review for physicists rather than a formal proof treatment. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_torus_fiber_skeleton",
+            "agnostic_oa_blowup_polytope_surgery",
+            "agnostic_oa_hypersurface_ambient_lift",
+            "agnostic_oa_open_dual_dimension_drop",
+            "agnostic_oa_representation_failure_audit"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Within this source, representation change ranges from loss-aware skeletonization to local polytope surgery, ambient lifting by equations, structurally justified dimension reduction, and explicit failure audits. This strengthens a source-only probe that asks what data each representation preserves, what it forgets, and when a richer ambient encoding is necessary. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_torus_fiber_skeleton",
+            "agnostic_oa_lattice_index_singularity"
+          ],
+          "identifier": "lattice_generation_controls_local_quotient_geometry",
+          "kind": "new_geometry_dependency",
+          "summary": "The source makes local geometry depend not only on which fiber cycles vanish, but on whether their primitive classes generate the full integral lattice: finite index becomes a finite quotient singularity. This is a source-grounded candidate geometry dependency; novelty elsewhere in the ecosystem is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1491507775",
+      "line_end": 145,
+      "line_start": 93,
+      "representation_dependency": "Extraction limit: the circle-action formula and metric coordinate are OCR-damaged, and the figures are unavailable; exact conventions require the PDF. Representation limit: the skeleton is meaningful only together with fiber and collapse labels, not as an unadorned interval. Scope limit: these examples rely on a torus action with controlled fixed loci; an arbitrary fibration or quotient need not be reconstructible from this skeletal data.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The source replaces a space with a lower-dimensional orbit coordinate together with a generic circle fiber and marks the boundary loci where that fiber collapses. The half-line and interval models separate three roles: the base records orbit position, collapse loci recover fixed points, and interval length records geometric size while translation of the interval origin changes nothing. The reusable move is to compress geometry without discarding degeneration data, and to state which coordinates in the compressed representation are gauge-like rather than intrinsic.",
+      "source_id": "openalex_w1491507775",
+      "source_normalized_sha256": "46fd93e8622f34f9ab489154d1640188739277963f72ec75a31cc1badc1eb535",
+      "title": "Encode an equivariant space by a skeleton and its collapsing fibers",
+      "unit_id": "agnostic_oa_torus_fiber_skeleton",
+      "unit_type": "geometric-compression"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_integral_points_sections.txt",
+      "artifact_bytes": 1385,
+      "artifact_relpath": "depth/units/agnostic_oa_integral_points_sections.txt",
+      "artifact_sha256": "dca71484d1724051c390c9b9d2a73599374feca51cfc627852f321c67036f65a",
+      "context_note": "The source establishes the dictionary in the projective-line example and later extends it to projective-space polytopes and hypersurface monomials. The physical Bohr-Sommerfeld analogy is supporting intuition, not an additional proof. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_integral_points_sections",
+            "agnostic_oa_lattice_index_singularity",
+            "agnostic_oa_reflexive_face_duality",
+            "agnostic_oa_open_dual_dimension_drop"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source uses integral lattices, indices, monomials, and reflexive polytopes, but its mathematical mechanisms are toric combinatorics and complex geometry rather than arithmetic geometry in the usual number-theoretic sense. It therefore challenges routing based only on words such as integral or lattice. Whether this corrects any actual #44 assignment is unconfirmed because #44 was not inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1491507775",
+      "line_end": 168,
+      "line_start": 147,
+      "representation_dependency": "Extraction limit: the Chern-class and section formulas contain OCR errors, though the prose correspondence is clear. Representation limit: the encoding depends on a chosen line bundle and integral moment-polytope normalization. Scope limit: lattice points count the relevant sections in this toric setting; arbitrary bundles, nonintegral classes, or non-toric spaces do not inherit this indexing rule without further hypotheses.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "Adding a line bundle forces the interval length into an integral lattice, and lattice points then index the holomorphic sections. This connects a geometric quantization condition, a discrete polytope, and an algebraic basis without requiring evaluation of the sections. The semantic mechanism is that an integral structure upgrades a continuous orbit-space representation into a finite combinatorial catalogue of allowed global objects.",
+      "source_id": "openalex_w1491507775",
+      "source_normalized_sha256": "46fd93e8622f34f9ab489154d1640188739277963f72ec75a31cc1badc1eb535",
+      "title": "Turn an integral base into an index set for global sections",
+      "unit_id": "agnostic_oa_integral_points_sections",
+      "unit_type": "combinatorial-encoding"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_blowup_polytope_surgery.txt",
+      "artifact_bytes": 2455,
+      "artifact_relpath": "depth/units/agnostic_oa_blowup_polytope_surgery.txt",
+      "artifact_sha256": "cd97eca35793bb6c3aac07e7aeff8a68b117844efe3770ea70260f8046f658ed",
+      "context_note": "The construction is illustrated for projective-plane blow-ups and the source distinguishes generic del Pezzo blow-ups from special toric ones. Exact incidence is figure-dependent. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_torus_fiber_skeleton",
+            "agnostic_oa_blowup_polytope_surgery",
+            "agnostic_oa_hypersurface_ambient_lift",
+            "agnostic_oa_open_dual_dimension_drop",
+            "agnostic_oa_representation_failure_audit"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Within this source, representation change ranges from loss-aware skeletonization to local polytope surgery, ambient lifting by equations, structurally justified dimension reduction, and explicit failure audits. This strengthens a source-only probe that asks what data each representation preserves, what it forgets, and when a richer ambient encoding is necessary. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_blowup_polytope_surgery",
+            "agnostic_oa_hypersurface_ambient_lift",
+            "agnostic_oa_representation_failure_audit"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Point positions, line-bundle coefficients, and contraction limits show that a combinatorial presentation can cover only a special locus in a larger moduli problem. This strengthens a source-only probe for distinguishing parameters encoded by a representation from moduli it silently freezes or omits. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1491507775",
+      "line_end": 293,
+      "line_start": 243,
+      "representation_dependency": "Extraction limit: the surgery is primarily shown in a missing figure, and some group/Chern-class labels are corrupted. Representation limit: the polytope cut encodes blow-up at a torus-fixed vertex, not arbitrary point-position data. Scope limit: local similarity of the surgery does not imply that repeated special-position blow-ups share the positivity or deformation class of generic blow-ups.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "Blowing up a torus-fixed point is translated into replacing a vertex by an interval, with the interval length measuring the exceptional divisor. The same passage then supplies the crucial failure mode: symmetry can move only finitely many generic points to toric vertices, and further corner blow-ups represent special configurations rather than generic ones; the resulting geometry can change with point position. This is a reusable discipline for combinatorial models: pair the local surgery rule with an explicit characterization of the moduli it cannot encode.",
+      "source_id": "openalex_w1491507775",
+      "source_normalized_sha256": "46fd93e8622f34f9ab489154d1640188739277963f72ec75a31cc1badc1eb535",
+      "title": "Represent blow-up by local polytope surgery and mark where the representation stops",
+      "unit_id": "agnostic_oa_blowup_polytope_surgery",
+      "unit_type": "local-surgery-and-limit"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_lattice_index_singularity.txt",
+      "artifact_bytes": 2360,
+      "artifact_relpath": "depth/units/agnostic_oa_lattice_index_singularity.txt",
+      "artifact_sha256": "74f293d06f5a352b5b48d0abccf5e7f9a87d6a22471fd1849cfabad73cb6f7be",
+      "context_note": "The source states this as the general smoothness consideration for toric varieties and illustrates it with cyclic quotient singularities. It does not provide a full formal toric proof. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_integral_points_sections",
+            "agnostic_oa_lattice_index_singularity",
+            "agnostic_oa_reflexive_face_duality",
+            "agnostic_oa_open_dual_dimension_drop"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source uses integral lattices, indices, monomials, and reflexive polytopes, but its mathematical mechanisms are toric combinatorics and complex geometry rather than arithmetic geometry in the usual number-theoretic sense. It therefore challenges routing based only on words such as integral or lattice. Whether this corrects any actual #44 assignment is unconfirmed because #44 was not inspected."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_torus_fiber_skeleton",
+            "agnostic_oa_lattice_index_singularity"
+          ],
+          "identifier": "lattice_generation_controls_local_quotient_geometry",
+          "kind": "new_geometry_dependency",
+          "summary": "The source makes local geometry depend not only on which fiber cycles vanish, but on whether their primitive classes generate the full integral lattice: finite index becomes a finite quotient singularity. This is a source-grounded candidate geometry dependency; novelty elsewhere in the ecosystem is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1491507775",
+      "line_end": 450,
+      "line_start": 414,
+      "representation_dependency": "Extraction limit: cycle labels and the example's indices are OCR-damaged; the lattice quotient statement is prose-readable but exact labels require the PDF. Representation limit: the test presupposes the toric face/cycle dictionary and primitive lattice data. Scope limit: checking vertices suffices in the stated toric setting; non-toric singularities, non-simplicial behavior, stack structures, or incorrectly normalized cycle generators require additional analysis.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "At a vertex, the cycles collapsing along incident faces span a full-rank sublattice of the torus-cycle lattice. Equality of the two lattices gives the smooth local model; finite index leaves a finite quotient group and produces a local quotient singularity. Because smoothness propagates along faces adjacent to a smooth vertex, the global toric smoothness check reduces to the zero-dimensional strata. The generic move is to convert local geometric regularity into an exact generation test and then minimize verification to canonical strata.",
+      "source_id": "openalex_w1491507775",
+      "source_normalized_sha256": "46fd93e8622f34f9ab489154d1640188739277963f72ec75a31cc1badc1eb535",
+      "title": "Detect a quotient singularity from failure of vanishing cycles to generate the lattice",
+      "unit_id": "agnostic_oa_lattice_index_singularity",
+      "unit_type": "local-obstruction-test"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_hypersurface_ambient_lift.txt",
+      "artifact_bytes": 3068,
+      "artifact_relpath": "depth/units/agnostic_oa_hypersurface_ambient_lift.txt",
+      "artifact_sha256": "7226209ae78f3fdce96e2003283e460305e267d55f40a30af34750d6d4090a14",
+      "context_note": "The passage treats Calabi-Yau hypersurfaces, beginning with degree-defined hypersurfaces in projective space. The generic hypersurface is explicitly noted not to retain the ambient torus symmetry. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_torus_fiber_skeleton",
+            "agnostic_oa_blowup_polytope_surgery",
+            "agnostic_oa_hypersurface_ambient_lift",
+            "agnostic_oa_open_dual_dimension_drop",
+            "agnostic_oa_representation_failure_audit"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Within this source, representation change ranges from loss-aware skeletonization to local polytope surgery, ambient lifting by equations, structurally justified dimension reduction, and explicit failure audits. This strengthens a source-only probe that asks what data each representation preserves, what it forgets, and when a richer ambient encoding is necessary. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_blowup_polytope_surgery",
+            "agnostic_oa_hypersurface_ambient_lift",
+            "agnostic_oa_representation_failure_audit"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Point positions, line-bundle coefficients, and contraction limits show that a combinatorial presentation can cover only a special locus in a larger moduli problem. This strengthens a source-only probe for distinguishing parameters encoded by a representation from moduli it silently freezes or omits. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1491507775",
+      "line_end": 506,
+      "line_start": 452,
+      "representation_dependency": "Extraction limit: degree, monomial, coefficient-limit, and fiber-dimension formulas are damaged and need typeset verification. Representation limit: the object is represented by ambient toric data plus an equation; the polytope alone no longer determines the generic hypersurface. Scope limit: smoothness, Calabi-Yau status, and faithfulness of the degeneration require the appropriate line bundle and genericity assumptions; arbitrary equations or ambient spaces need not behave similarly.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "When the target object itself lacks torus symmetry, the source embeds it as the zero locus of a line-bundle section in a higher-dimensional toric space. Integral polytope points index the monomial deformations of the defining equation, while a controlled coefficient limit degenerates the object to the union of toric boundary faces. The reusable move is to trade direct representability for an ambient representation that preserves combinatorial access to deformations and a tractable limiting model.",
+      "source_id": "openalex_w1491507775",
+      "source_normalized_sha256": "46fd93e8622f34f9ab489154d1640188739277963f72ec75a31cc1badc1eb535",
+      "title": "Recover a non-toric object by imposing equations in a richer toric ambient space",
+      "unit_id": "agnostic_oa_hypersurface_ambient_lift",
+      "unit_type": "representation-lift"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_reflexive_face_duality.txt",
+      "artifact_bytes": 3473,
+      "artifact_relpath": "depth/units/agnostic_oa_reflexive_face_duality.txt",
+      "artifact_sha256": "da439338dc67c03e29265f04135840fe58dfa43b10c07d37eecddbde387b355f",
+      "context_note": "The source states the face correspondence, involutive reflexivity, and equivalence with the Calabi-Yau hypersurface condition, citing Batyrev. Its later physical mirror explanation is explicitly non-rigorous and is not used to strengthen these claims. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_integral_points_sections",
+            "agnostic_oa_lattice_index_singularity",
+            "agnostic_oa_reflexive_face_duality",
+            "agnostic_oa_open_dual_dimension_drop"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source uses integral lattices, indices, monomials, and reflexive polytopes, but its mathematical mechanisms are toric combinatorics and complex geometry rather than arithmetic geometry in the usual number-theoretic sense. It therefore challenges routing based only on words such as integral or lattice. Whether this corrects any actual #44 assignment is unconfirmed because #44 was not inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1491507775",
+      "line_end": 564,
+      "line_start": 507,
+      "representation_dependency": "Extraction limit: the polar inequality, dimension indices, and line-bundle equation are OCR-damaged; exact conventions require the PDF. Representation limit: the construction depends on an integral polytope with the origin in its interior and a chosen lattice pairing. Scope limit: a polar of an arbitrary integral polytope need not be integral, and reflexive duality of ambient polytopes does not by itself prove every asserted mirror-symmetry property.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "Polar duality converts each supporting face into a dual vertex and, more generally, a face of one dimension into a complementary-dimensional face. Integrality is not automatic; requiring both the polytope and its polar to be integral singles out reflexive polytopes. In the source, that same condition matches the anticanonical bundle requirement for the hypersurface, and the origin supplies the distinguished boundary-product deformation. The reusable pattern is to identify the compatibility condition that makes a dual representation stay inside the original discrete category.",
+      "source_id": "openalex_w1491507775",
+      "source_normalized_sha256": "46fd93e8622f34f9ab489154d1640188739277963f72ec75a31cc1badc1eb535",
+      "title": "Use reflexivity to make polar duality integral and reverse face dimensions",
+      "unit_id": "agnostic_oa_reflexive_face_duality",
+      "unit_type": "duality-and-canonicality"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_open_dual_dimension_drop.txt",
+      "artifact_bytes": 2028,
+      "artifact_relpath": "depth/units/agnostic_oa_open_dual_dimension_drop.txt",
+      "artifact_sha256": "1ea2c610d2fa955d05b29a4bfd0637e690322d5b81a9601603c0155d01a0731b",
+      "context_note": "The construction is illustrated on local surface and canonical-bundle examples and is presented as an extension of compact polytope duality. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_torus_fiber_skeleton",
+            "agnostic_oa_blowup_polytope_surgery",
+            "agnostic_oa_hypersurface_ambient_lift",
+            "agnostic_oa_open_dual_dimension_drop",
+            "agnostic_oa_representation_failure_audit"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Within this source, representation change ranges from loss-aware skeletonization to local polytope surgery, ambient lifting by equations, structurally justified dimension reduction, and explicit failure audits. This strengthens a source-only probe that asks what data each representation preserves, what it forgets, and when a richer ambient encoding is necessary. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_integral_points_sections",
+            "agnostic_oa_lattice_index_singularity",
+            "agnostic_oa_reflexive_face_duality",
+            "agnostic_oa_open_dual_dimension_drop"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source uses integral lattices, indices, monomials, and reflexive polytopes, but its mathematical mechanisms are toric combinatorics and complex geometry rather than arithmetic geometry in the usual number-theoretic sense. It therefore challenges routing based only on words such as integral or lattice. Whether this corrects any actual #44 assignment is unconfirmed because #44 was not inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1491507775",
+      "line_end": 621,
+      "line_start": 593,
+      "representation_dependency": "Extraction limit: several ray coordinates and example point lists are corrupted; exact configurations require typeset figures/formulas. Representation limit: dimension reduction depends on all rays lying in a common affine hyperplane fixed by the Calabi-Yau normal direction. Scope limit: general open toric varieties may not have this common-coordinate property, so projecting rays can otherwise lose scale or incidence information.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "For an open toric variety, the source replaces bounded polar faces by rays normal to the original faces. In the Calabi-Yau local models considered, every ray has the same final coordinate, reflecting a fixed normal-circle contribution. Removing that redundant coordinate leaves a finite point configuration in a lattice of one lower dimension without losing the face-normal data. The generic move is to prove a coordinate is constant for structural reasons before quotienting it away as redundant.",
+      "source_id": "openalex_w1491507775",
+      "source_normalized_sha256": "46fd93e8622f34f9ab489154d1640188739277963f72ec75a31cc1badc1eb535",
+      "title": "Compress open dual rays when one coordinate is globally fixed",
+      "unit_id": "agnostic_oa_open_dual_dimension_drop",
+      "unit_type": "data-compression"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_representation_failure_audit.txt",
+      "artifact_bytes": 4340,
+      "artifact_relpath": "depth/units/agnostic_oa_representation_failure_audit.txt",
+      "artifact_sha256": "c2358d3a5a04fec8ab097bbe1f3857f61d5e27f38dc74f54bd42636510fbe770",
+      "context_note": "The Chern-class and contraction discussion uses established geometry, while the surrounding brane interpretation and proposed future configurations are physical and partly speculative. The unit retains the methodological separation, not the speculative brane proposals. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_torus_fiber_skeleton",
+            "agnostic_oa_blowup_polytope_surgery",
+            "agnostic_oa_hypersurface_ambient_lift",
+            "agnostic_oa_open_dual_dimension_drop",
+            "agnostic_oa_representation_failure_audit"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Within this source, representation change ranges from loss-aware skeletonization to local polytope surgery, ambient lifting by equations, structurally justified dimension reduction, and explicit failure audits. This strengthens a source-only probe that asks what data each representation preserves, what it forgets, and when a richer ambient encoding is necessary. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_blowup_polytope_surgery",
+            "agnostic_oa_hypersurface_ambient_lift",
+            "agnostic_oa_representation_failure_audit"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Point positions, line-bundle coefficients, and contraction limits show that a combinatorial presentation can cover only a special locus in a larger moduli problem. This strengthens a source-only probe for distinguishing parameters encoded by a representation from moduli it silently freezes or omits. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1491507775",
+      "line_end": 802,
+      "line_start": 729,
+      "representation_dependency": "Extraction limit: the relevant diagram is unavailable and some bundle/Chern labels are damaged; exact incidence and signs require the PDF. Representation limit: the diagnostic translation relies on the toric/brane dictionary and a curve represented by the bounded interval. Scope limit: Grauert-type negativity has precise analytic hypotheses, and the source's physical conclusion about critical theories does not follow for arbitrary diagrams; an alternative representation's existence also does not guarantee its usefulness.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The source translates parallel or intersecting external lines in a brane diagram back into zero or negative first-Chern behavior on a corresponding curve, then applies a negativity criterion to explain why a locally sensible configuration cannot shrink at finite moduli distance. It distinguishes three questions that a representation can easily conflate: whether the local object exists, whether it admits the required global contraction, and whether the alternative representation is actually useful for extracting results. The failure points toward a richer construction in a higher-dimensional ambient space with equations.",
+      "source_id": "openalex_w1491507775",
+      "source_normalized_sha256": "46fd93e8622f34f9ab489154d1640188739277963f72ec75a31cc1badc1eb535",
+      "title": "Use diagram pathologies to audit representability, contractibility, and usefulness separately",
+      "unit_id": "agnostic_oa_representation_failure_audit",
+      "unit_type": "counterexample-and-reframing"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2151203439",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2151203439_82161402_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Pair correlation, limsup/liminf normalized consecutive gaps, critical-line-only Lambda, and positive-proportion r-step gaps encode different spacing questions and require distinct interpretations.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2151203439_u07",
+          "full_openalex_w2151203439_u08",
+          "full_openalex_w2151203439_u09",
+          "full_openalex_w2151203439_u11"
+        ],
+        "proposed_limit": "The source's equalities and comparisons involving all zeros versus critical-line zeros are RH-sensitive, and the positive-proportion route is only summarized from prior work.",
+        "source_id": "openalex_w2151203439",
+        "synthesis_id": "riemann_v2_within_203fc659f9aaa6887f40e537",
+        "title": "Do not collapse zero-spacing observables"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The pair-correlation statement is introductory context rather than an ingredient in the paper's three proofs.",
+          "line_end": 296,
+          "line_start": 274,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on a normalized pair-count display, but the complementary role and spectral analogy are stated in checked prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source separates the large-gap objective from pair correlation, while relating the latter to essential simplicity and unitary eigenvalue statistics; this prevents treating all zero-spacing evidence as the same target.",
+          "source_id": "openalex_w2151203439",
+          "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pair correlation is a distributional spacing lens distinct from extremal gaps",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u07.txt",
+          "unit_bytes": 1839,
+          "unit_id": "full_openalex_w2151203439_u07",
+          "unit_sha256": "ca0f1f1831f149b0197b23b08ddea8aa5c35d4573e7c17689f782606722c9483",
+          "unit_type": "method distinction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Under RH, pair correlation represents the zero set through a normalized two-point distribution with sine-kernel density, rather than through its ordered consecutive gaps. This representation gains distributional information and supports the stated essential-simplicity consequence, but it forgets which pairs are consecutive; consequently, as a conceptual inference, it does not by itself determine rare largest consecutive gaps. The comparison with spectral energy levels motivates a Hilbert–Pólya viewpoint but supplies neither RH nor an operator.",
+            "nonparaphrase_operation": "Contrast observables by information retained: a two-point count records a spacing distribution but discards consecutive ordering, so distributional evidence and an extremal limsup question cannot be treated as interchangeable targets.",
+            "quality_reason": "Accepted after grounding the spectral comparison in the source's energy-level wording and separating the distributional-versus-extremal inference from stated theorem content; exact display indexing remains OCR-sensitive.",
+            "source_support": "The span states Montgomery's normalized pair-correlation conjecture under RH, displays the density 1−(sin(πx)/(πx))², says the conjecture implies essential simplicity, compares the integral with two-point correlations of eigenvalue energy levels, and presents the self-adjoint-operator idea as renewed hope.",
+            "speculation_status": "The pair-correlation law is explicitly conjectural and RH-conditioned. Its weak direct control of rare extremal consecutive gaps and the information-loss description are labeled conceptual inferences. No unitary qualifier or claim about use in the paper's proofs is attributed to this span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The later list of historical numerical bounds supports context but adds no new mechanism.",
+          "line_end": 322,
+          "line_start": 297,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Relies on the displayed normalization and limsup/liminf definitions, which are legible and reinforced by prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Dividing consecutive ordinate gaps by 2pi/log(gamma_n) creates a scale-free sequence with average one, after which lambda and mu isolate asymptotically large and small gaps.",
+          "source_id": "openalex_w2151203439",
+          "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Normalized gaps define separate limsup and liminf extremal statistics",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u08.txt",
+          "unit_bytes": 1316,
+          "unit_id": "full_openalex_w2151203439_u08",
+          "unit_sha256": "bfb83f21ea28389d4d79394b4f5b69228c03c9574e0ddf18884bdb4b9e37d948",
+          "unit_type": "definition and normalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local-density normalization makes gaps at different heights comparable. The mean records bulk scale, whereas limsup and liminf compress the sequence to opposite extremal behaviors; neither statistic records how often an extreme occurs.",
+            "nonparaphrase_operation": "The map from raw ordinates to r_n bridges a nonstationary zero sequence to a scale-free spacing sequence. λ and μ then route that sequence to separate large- and small-gap questions.",
+            "quality_reason": "The span defines r_n from consecutive upper-half-plane zero ordinates using 2pi/log gamma_n, defines lambda and mu by limsup and liminf, identifies the denominator as average spacing, states average r_n is one, and distinguishes proved inequalities from the beliefs mu=0 and lambda=infinity. The candidate preserves multiplicity, the all-zero scope, the directions of the two extrema, and the conjectural status of the endpoint beliefs. The candidate goes beyond restatement by contrasting bulk normalization with opposite extremal compressions and naming the information those compressions lose.",
+            "source_support": "For ordered upper-half-plane zero ordinates γ_n, counted with multiplicity, the source defines r_n=(γ_{n+1}−γ_n)/(2π/log γ_n), then λ=limsup r_n and μ=liminf r_n. It identifies the denominator as average spacing, states that r_n has average one, cites 0<μ<1<λ, and reports the beliefs μ=0 and λ=∞.",
+            "speculation_status": "Average one does not imply either conjectured extreme, and a limsup or liminf alone gives no positive-proportion statement. This definition ranges over all listed zeros and must not be silently identified with the later critical-line-only statistic without RH. Subscripts and equality signs in the display are extraction-noisy, but the normalization, mean-spacing interpretation, and limsup/liminf roles are explicit and mutually reinforcing. Describing the normalization as removing first-order density variation and making heights comparable is a faithful interpretation of the stated average-spacing denominator. The observation that limsup and liminf discard frequency and absolute scale is a valid consequence of these summaries rather than an imported zero theorem. Missing plus signs and noisy subscripts affect the display, but the prose and mutually reinforcing definitions make the normalization and extremal roles reliable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span also records the first cited Beesack-Wirtinger lower-bound instance as evidence that endpoint inequalities can address this target.",
+          "line_end": 390,
+          "line_start": 370,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on the displayed normalized limsup definition and one numerical bound; both relations are recoverable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defining Lambda using distinct positive critical-line zeros clarifies what the real Hardy-function argument can measure; Lambda is at least lambda unconditionally at the definitional level described here, and the distinction disappears under RH.",
+          "source_id": "openalex_w2151203439",
+          "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Critical-line gap Lambda dominates the all-zero gap statistic and coincides with it under RH",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u09.txt",
+          "unit_bytes": 1121,
+          "unit_id": "full_openalex_w2151203439_u09",
+          "unit_sha256": "aff8f203d9ae8a2bd3b7231857c2e2ded981534b9bf56bcac48124204a7a9cc5",
+          "unit_type": "target refinement",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Λ refines the spacing target to normalized consecutive gaps among positive critical-line zeros. Relative to the all-zero statistic λ, the source states Λ≥λ and identifies the two only under RH; thus the restriction gains a critical-line-specific observable but does not unconditionally preserve the all-zero ordering. The cited Beesack–Wirtinger result supplies Λ≥(105/4)^{1/4}=2.2635, while neither its proof mechanism nor any frequency of such gaps is established in this span.",
+            "nonparaphrase_operation": "Expose the assumption boundary created by changing the underlying zero sequence: a critical-line limsup can dominate the all-zero statistic as stated, but equality is an RH-conditioned identification rather than a definition-level equivalence.",
+            "quality_reason": "Accepted after deleting the unsupported Hardy-Z/local-endpoint bridge and retaining the unresolved source wording that calls t_n both distinct and counted with multiplicity; the core relations are prose-secure.",
+            "source_support": "The passage gives the limsup definition of Λ, states Λ≥λ and equality under RH, and cites Hall's Beesack-type Wirtinger bound with the value 2.2635. It cites rather than derives that bound.",
+            "speculation_status": "The definition, comparison, conditional equality, and numerical bound are source facts. The information-gain/loss account is a bounded interpretation of changing the sequence; no Hardy-Z endpoint mechanism or detailed explanation using off-line-zero insertion is imported."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "It is a cited alternative, not used in the main proofs, and remains conditional on RH and the stated moment conjecture.",
+          "line_end": 464,
+          "line_start": 447,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The quantitative threshold is display-dependent, but the averaging mechanism and positive-proportion conclusion are recoverable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "This route compares a continuous global average with a discrete local average and targets r-step gaps for a positive proportion of zeros, rather than only an extremal limsup.",
+          "source_id": "openalex_w2151203439",
+          "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Global-versus-local averages yield positive-proportion multi-zero gap statements",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u11.txt",
+          "unit_bytes": 1032,
+          "unit_id": "full_openalex_w2151203439_u11",
+          "unit_sha256": "02519fe7e4aa32069330d4898f756ef77b9ee71d201bbed6e5aad6f02b1ab84c",
+          "unit_type": "alternative averaging method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Global-to-local averaging retains frequency information that a limsup discards and naturally handles multi-zero windows. It therefore answers a different spacing question from the extremal Λ statistic.",
+            "nonparaphrase_operation": "A continuous integral average is matched against a discrete average localized at zero ordinates. That comparison bridges moment data to counts of r-step gaps satisfying a threshold.",
+            "quality_reason": "The span explicitly describes comparison of a continuous global average with a local average from a discrete average, under RH and moment conjecture (1.9), and targets fixed-r gaps. It gives a computable c(k,theta,r) and a lower bound holding for more than c(log T)^(-4k) proportion of zeros, which the candidate carefully does not inflate into fixed positive density. The candidate identifies a genuine change of observable and retained information rather than merely paraphrasing 'global' and 'local'.",
+            "source_support": "Under RH and the mixed-moment conjecture (1.9), the cited method compares continuous global and discrete local averages. For fixed positive integer r it gives a lower bound for γ_{n+r}−γ_n at an allowed threshold θ and states that the inequality holds for more than c(log T)^{-4k} proportion of zeros up to T, with computable c(k,θ,r).",
+            "speculation_status": "This is a cited alternative and is not used in the paper's main proofs. It is conditional on RH and the stated moment model; moreover the displayed fraction c(log T)^{-4k} decreases with T, so it should not be paraphrased as a fixed positive density. The OCR makes the exact θ threshold and some bracketing in (1.33) unsafe. The averaging mechanism, r-step target, conditional assumptions, and logarithmic proportion statement are recoverable. Contrasting this frequency-bearing r-step statement with a limsup statistic and viewing the localized discrete average as the bridge from moments to gap counts are direct conceptual consequences of the displayed conclusion. The exact theta threshold, bracketing, and some subscripts are OCR-unsafe; the mechanism, assumptions, r-step target, and logarithmically decaying proportion are nevertheless recoverable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "3df930a56231a3e70383d9f35a51dd78cf6c069d32164b4492020f4992354414"
+}

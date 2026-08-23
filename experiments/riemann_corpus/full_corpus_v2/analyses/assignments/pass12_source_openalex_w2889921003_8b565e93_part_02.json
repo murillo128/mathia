@@ -1,0 +1,387 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2889921003_8b565e93_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2889921003",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Explains the weight introduced in the refined sum.",
+      "line_end": 1599,
+      "line_start": 1586,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Combinatorial prose is sufficient; only the final multiplicity formula is symbolic.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Counts the decompositions realizing a fixed swap: unmarked elements choose blocks independently and block orderings contribute factorials, producing ell!^2 ell^{2(k-ell)}.",
+      "source_id": "openalex_w2889921003",
+      "source_normalized_sha256": "36a2e51fc8de50008b1270e0b7fb4bc112e4fb9464cb71c6b25ba9ae253c4eea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Every fixed ell-swap is repeated by block decompositions with one marked element each",
+      "unit_artifact_relpath": "depth/units/openalex_w2889921003_d025.txt",
+      "unit_bytes": 1197,
+      "unit_id": "openalex_w2889921003_d025",
+      "unit_sha256": "bfaac079ca7548e7b1708d755cb87582253ba46a575c258c7826ba67a33129a0",
+      "unit_type": "multiplicity-accounting",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2889921003_d025.txt",
+      "source": {
+        "source_id": "openalex_w2889921003",
+        "title": "Moments of zeta and correlations of divisor‐sums: V",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1578,
+          "line_end": 1585,
+          "text": "\nwhere A = A1 ∪ · · · ∪ Aℓ and B = B1 ∪ · · · ∪ Bℓ .\n  These together imply Theorem 4.\n\n<!-- source-page: 25 -->\n\nMOMENTS OF ZETA AND CORRELATIONS OF DIVISOR-SUMS: V                                    25\n\n",
+          "sha256": "b6f53e45497fc91ecd724d20cad52d65ba9474d7d640a164da9c1d7353007b1b"
+        },
+        "after": {
+          "line_start": 1600,
+          "line_end": 1607,
+          "text": "12.2. How many times does the same (m, n) lead to a solution of a (∗)-system?\nOur original problem is to evaluate\n                               X τA (m)τB (n)    T      m\u0001\n                                     √        ψ̂    log    .\n                              m,n≤X\n                                       mn        2π     n\n\nNote that if A = {α1 , . . . , αk } and B = {β1 , . . . , βk } then\n",
+          "sha256": "68ba574e78a78a7de00638da5658a224b1562e28ec3a7c9fcc99f10b1fd4167a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8b87517365fb207fa04b3d3b8b7ed894a347975d1967a98f9cf20e9af5c272a",
+        "dossier_sha256": "87431febbe4142cf14862c686940f44fc6e5270d4a4a39c52fb1bf0207266712",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12. Multiplicities and conclusion",
+            "line_end": 1682,
+            "line_start": 1586,
+            "mathematical_role": "Shows that partition overcounting equals representation-system overcounting and summarizes the stratum-to-swap correspondence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1599,
+          "line_start": 1586,
+          "title": "Every fixed ell-swap is repeated by block decompositions with one marked element each",
+          "unit_id": "openalex_w2889921003_d025",
+          "unit_type": "multiplicity-accounting",
+          "why_material": "Counts the decompositions realizing a fixed swap: unmarked elements choose blocks independently and block orderings contribute factorials, producing ell!^2 ell^{2(k-ell)}."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Explains the weight introduced in the refined sum.",
+          "representation_dependency": "Combinatorial prose is sufficient; only the final multiplicity formula is symbolic.",
+          "unit_id": "openalex_w2889921003_d025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1580,
+            "line_start": 1518,
+            "title": "Earlier local lemmas extend to the hybrid identity",
+            "unit_id": "openalex_w2889921003_d024",
+            "unit_type": "proof-transfer",
+            "why_material": "Substitutes the boundary Sigma formula, then uses the same convolution and inclusion-exclusion identities with all blocks in C but only active blocks in the swap factors."
+          },
+          {
+            "line_end": 1661,
+            "line_start": 1600,
+            "title": "The same multiplicity counts representations by direction-discrepancy systems",
+            "unit_id": "openalex_w2889921003_d026",
+            "unit_type": "multiplicity-correspondence",
+            "why_material": "Shows that redistributing unused divisor factors and ordering distinguished factors produces exactly the same multiplicity for each underlying (m,n), including strata with zero discrepancies."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same factor counts how often a fixed swap appears across block partitions and how often an underlying term appears across direction-discrepancy systems, so dividing by it aligns the two global enumerations.",
+            "limit": "This is an accounting equivalence within the chosen decompositions, not independent evidence for the conjectural correlation estimates.",
+            "parent_local_unit_ids": [
+              "openalex_w2889921003_d007",
+              "openalex_w2889921003_d025",
+              "openalex_w2889921003_d026",
+              "openalex_w2889921003_d027"
+            ],
+            "title": "Matching overcounts close the two representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1585,
+              "line_start": 1581,
+              "reason": "Page transition into multiplicity accounting."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Equality of the two overcount counts justifies division by the common weight.",
+      "line_end": 1661,
+      "line_start": 1600,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The extracted starred and hatted variables are somewhat degraded, but the construction and count are recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that redistributing unused divisor factors and ordering distinguished factors produces exactly the same multiplicity for each underlying (m,n), including strata with zero discrepancies.",
+      "source_id": "openalex_w2889921003",
+      "source_normalized_sha256": "36a2e51fc8de50008b1270e0b7fb4bc112e4fb9464cb71c6b25ba9ae253c4eea",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same multiplicity counts representations by direction-discrepancy systems",
+      "unit_artifact_relpath": "depth/units/openalex_w2889921003_d026.txt",
+      "unit_bytes": 4126,
+      "unit_id": "openalex_w2889921003_d026",
+      "unit_sha256": "62f37cf9daf2434b6da112403e86db0a919e5a6ad2578346fd378770e42a31eb",
+      "unit_type": "multiplicity-correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2889921003_d026.txt",
+      "source": {
+        "source_id": "openalex_w2889921003",
+        "title": "Moments of zeta and correlations of divisor‐sums: V",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1592,
+          "line_end": 1599,
+          "text": "A into ℓ disjoint non-empty subsets and similarly for B. Then every pair of ℓ sized subsets\nwill indeed appear in the swaps. However, now two different decompositions will often lead\nto the same swap. So how do we account for the overcounting?\n   How many times will a given ℓ-sized swap S for T occur? This is equivalent to asking how\nmany ways can A be split into ℓ subsets where Aj contains αj ? If A has k elements then\nthere are k − ℓ elements that can be distributed arbitrarily into ℓ sets. This can happen in\nℓ(k−ℓ) ways. Similarly for B. Taking into account permutations we end up with a multiplicity\nof ℓ!2 ℓ2(k−ℓ) .\n",
+          "sha256": "4f83892981c4ad6dfcb6e2ac41674860e9cd853a87f924f600cabd5392025336"
+        },
+        "after": {
+          "line_start": 1662,
+          "line_end": 1669,
+          "text": "                                           ψ\n12.3. Conclusion. We have found that IA;B     (T ; X) can be conjecturally evaluated by two\ndifferent methods which produce the same answer. One way is to use the recipe of [CFKRS].\nThe other way is to let ℓ be defined by T ℓ ≤ X < T ℓ+1 . Then partition A and B into ℓ\nsubsets and evaluate a convolution of ℓ shifted divisor sums\n                                    X\n                                             τAi (mi )τBi (ni )\n                                            mi ≤ui\n",
+          "sha256": "9d764bd7b9fd1d410f159de2da971514137a99adf9db116189faa79f5a949ca7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8b87517365fb207fa04b3d3b8b7ed894a347975d1967a98f9cf20e9af5c272a",
+        "dossier_sha256": "87431febbe4142cf14862c686940f44fc6e5270d4a4a39c52fb1bf0207266712",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12. Multiplicities and conclusion",
+            "line_end": 1682,
+            "line_start": 1586,
+            "mathematical_role": "Shows that partition overcounting equals representation-system overcounting and summarizes the stratum-to-swap correspondence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1661,
+          "line_start": 1600,
+          "title": "The same multiplicity counts representations by direction-discrepancy systems",
+          "unit_id": "openalex_w2889921003_d026",
+          "unit_type": "multiplicity-correspondence",
+          "why_material": "Shows that redistributing unused divisor factors and ordering distinguished factors produces exactly the same multiplicity for each underlying (m,n), including strata with zero discrepancies."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Equality of the two overcount counts justifies division by the common weight.",
+          "representation_dependency": "The extracted starred and hatted variables are somewhat degraded, but the construction and count are recoverable from prose.",
+          "unit_id": "openalex_w2889921003_d026"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1599,
+            "line_start": 1586,
+            "title": "Every fixed ell-swap is repeated by block decompositions with one marked element each",
+            "unit_id": "openalex_w2889921003_d025",
+            "unit_type": "multiplicity-accounting",
+            "why_material": "Counts the decompositions realizing a fixed swap: unmarked elements choose blocks independently and block orderings contribute factorials, producing ell!^2 ell^{2(k-ell)}."
+          },
+          {
+            "line_end": 1681,
+            "line_start": 1663,
+            "title": "All discrepancy strata collectively reproduce all surviving swap terms",
+            "unit_id": "openalex_w2889921003_d027",
+            "unit_type": "method-correspondence",
+            "why_material": "Summarizes the causal correspondence: all nonzero h_j give ell swaps, exactly ell-prime nonzero h_j give ell-prime swaps, and summing weighted partitions makes the delta-method and recipe evaluations agree."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same factor counts how often a fixed swap appears across block partitions and how often an underlying term appears across direction-discrepancy systems, so dividing by it aligns the two global enumerations.",
+            "limit": "This is an accounting equivalence within the chosen decompositions, not independent evidence for the conjectural correlation estimates.",
+            "parent_local_unit_ids": [
+              "openalex_w2889921003_d007",
+              "openalex_w2889921003_d025",
+              "openalex_w2889921003_d026",
+              "openalex_w2889921003_d027"
+            ],
+            "title": "Matching overcounts close the two representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The agreement remains conditional on the conjectural shifted-divisor average, while the Euler-product identifications are rigorous.",
+      "line_end": 1681,
+      "line_start": 1663,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded summary with a small convolution display.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Summarizes the causal correspondence: all nonzero h_j give ell swaps, exactly ell-prime nonzero h_j give ell-prime swaps, and summing weighted partitions makes the delta-method and recipe evaluations agree.",
+      "source_id": "openalex_w2889921003",
+      "source_normalized_sha256": "36a2e51fc8de50008b1270e0b7fb4bc112e4fb9464cb71c6b25ba9ae253c4eea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "All discrepancy strata collectively reproduce all surviving swap terms",
+      "unit_artifact_relpath": "depth/units/openalex_w2889921003_d027.txt",
+      "unit_bytes": 1329,
+      "unit_id": "openalex_w2889921003_d027",
+      "unit_sha256": "d379621397f2c91dce4bf6a4bcea13e04f20c89494c048d54c277ce4c2c17bfc",
+      "unit_type": "method-correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2889921003_d027.txt",
+      "source": {
+        "source_id": "openalex_w2889921003",
+        "title": "Moments of zeta and correlations of divisor‐sums: V",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1655,
+          "line_end": 1662,
+          "text": "ν̂j from the {νℓ+1 , . . . νk }. But this is exactly ℓk−ℓ for the µ̂j and the same for the ν̂j . Then\nwe take into account the ordering of the µ1 , . . . , µℓ and of the ν1 , . . . , νℓ ; this gives a factor\nof ℓ!2 . In this way we arrive at a multiplicity ℓ!2 ℓ2(k−ℓ) for each solution of our (∗)-system\nwhich is the same as the multiplicity counted in the swaps of ℓ-sets.\n    Note that the same argument applies whether any of the hj are 0 or not. We need to\ndivide out this multiplicity.\n    This explains the weight factor wℓ in (6).\n                                           ψ\n",
+          "sha256": "bdd18ab02a245fb3973509732a4600eb79cb3e034249e3f67f610c02bf0b26fb"
+        },
+        "after": {
+          "line_start": 1682,
+          "line_end": 1689,
+          "text": "\n                                                 References\n[BK1]      E.B. Bogomolny and J.P. Keating. Random matrix theory and the Riemann zeros I: three- and\n           four-point correlations. Nonlinearity 8 (1995), 1115–1131.\n[BK2]      E.B. Bogomolny and J.P. Keating. Random matrix theory and the Riemann zeros II: n-point\n           correlations. Nonlinearity 9 (1996), 911–935.\n[B]        T. D. Browning. Quantitative arithmetic of projective varieties. Volume 277 of Progress in Math-\n           ematics. Birkhäuser Verlag, Basel, 2009.\n",
+          "sha256": "90c255824e45019c3d29027aab95be71d74a99f3c5db5e841039c5329f392254"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8b87517365fb207fa04b3d3b8b7ed894a347975d1967a98f9cf20e9af5c272a",
+        "dossier_sha256": "87431febbe4142cf14862c686940f44fc6e5270d4a4a39c52fb1bf0207266712",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12. Multiplicities and conclusion",
+            "line_end": 1682,
+            "line_start": 1586,
+            "mathematical_role": "Shows that partition overcounting equals representation-system overcounting and summarizes the stratum-to-swap correspondence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1681,
+          "line_start": 1663,
+          "title": "All discrepancy strata collectively reproduce all surviving swap terms",
+          "unit_id": "openalex_w2889921003_d027",
+          "unit_type": "method-correspondence",
+          "why_material": "Summarizes the causal correspondence: all nonzero h_j give ell swaps, exactly ell-prime nonzero h_j give ell-prime swaps, and summing weighted partitions makes the delta-method and recipe evaluations agree."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The agreement remains conditional on the conjectural shifted-divisor average, while the Euler-product identifications are rigorous.",
+          "representation_dependency": "Prose-grounded summary with a small convolution display.",
+          "unit_id": "openalex_w2889921003_d027"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1661,
+            "line_start": 1600,
+            "title": "The same multiplicity counts representations by direction-discrepancy systems",
+            "unit_id": "openalex_w2889921003_d026",
+            "unit_type": "multiplicity-correspondence",
+            "why_material": "Shows that redistributing unused divisor factors and ordering distinguished factors produces exactly the same multiplicity for each underlying (m,n), including strata with zero discrepancies."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same factor counts how often a fixed swap appears across block partitions and how often an underlying term appears across direction-discrepancy systems, so dividing by it aligns the two global enumerations.",
+            "limit": "This is an accounting equivalence within the chosen decompositions, not independent evidence for the conjectural correlation estimates.",
+            "parent_local_unit_ids": [
+              "openalex_w2889921003_d007",
+              "openalex_w2889921003_d025",
+              "openalex_w2889921003_d026",
+              "openalex_w2889921003_d027"
+            ],
+            "title": "Matching overcounts close the two representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1682,
+              "line_start": 1682,
+              "reason": "Blank transition to references."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "4425fb4b7a2bf2b0a3bf5cf3c7a35464e06083df8a27f3c1999a579e777f744d"
+}

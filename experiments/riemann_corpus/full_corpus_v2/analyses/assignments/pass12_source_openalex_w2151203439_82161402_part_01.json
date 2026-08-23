@@ -1,0 +1,1118 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2151203439_82161402_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2151203439",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The surrounding zeta definition and functional equation are background; this span includes the representation, zero correspondence, and both moment families needed downstream.",
+      "line_end": 145,
+      "line_start": 105,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the displayed phase factor and integral notation, but the prose makes the representation and moment roles recoverable despite extraction noise.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The phase-adjusted Hardy function is real on the real axis, preserves the critical-line modulus, and has zeros exactly at critical-line zeta zeros; defining moments of Z and Z' then makes zero spacing accessible to real endpoint inequalities.",
+      "source_id": "openalex_w2151203439",
+      "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hardy Z turns critical-line zero geometry into a real-variable moment problem",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u04.txt",
+      "unit_bytes": 2163,
+      "unit_id": "full_openalex_w2151203439_u04",
+      "unit_sha256": "0578a50dc1299d46eb4f8df0d0f9b3c900eec16e163dc076a9da3823fa8d9eaa",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u04.txt",
+      "source": {
+        "source_id": "openalex_w2151203439",
+        "title": "Applications of Wirtinger Inequalities on the Distribution of Zeros of the Riemann Zeta-Function",
+        "authors": [
+          "Samir H. Saker"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 97,
+          "line_end": 104,
+          "text": "to the papers by Conrey 2\b and Cheer and Goldston 3\b.\n        The second direction is the most important goal of number theorists which is the\ndetermination of the moments of the Riemann zeta-function on the critical line. It is important\nbecause it can be used to estimate the maximal order of the zeta-function on the critical line,\nand because of its applicability in studying the distribution of prime numbers and divisor\nproblems. For more details of the second direction, we refer the reader to the papers in 4–6\b\nand the references cited therein. For further classical results from zeta-function theory, we\nrefer to the monograph 7\b of Ivić and the papers by Kim 8–11\b.\n",
+          "sha256": "ff633f495bd43839e70430f351b301474a6efa6682c741a8ad64fa3916e48263"
+        },
+        "after": {
+          "line_start": 146,
+          "line_end": 153,
+          "text": "       Keating and Snaith 12\b based on considerations from random matrix theory\nconjectured that\n\n                                                          \b     k2\n                                        Ik \u0002T \u0003 ∼ a\u0002k\u0003bk T log T ,                                \u00021.7\u0003\n\n\nwhere\n",
+          "sha256": "65ab8c26228e171be606d96fccff4923dc1cb2341d7f39fd932dd0c861bfa18b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Zeta background, critical line, and Hardy Z representation",
+            "line_end": 145,
+            "line_start": 43,
+            "mathematical_role": "Introduces the zero problem, recodes critical-line zeta values as a real function, and defines the function and derivative moments used later."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 145,
+          "line_start": 105,
+          "title": "Hardy Z turns critical-line zero geometry into a real-variable moment problem",
+          "unit_id": "full_openalex_w2151203439_u04",
+          "unit_type": "representation change",
+          "why_material": "The phase-adjusted Hardy function is real on the real axis, preserves the critical-line modulus, and has zeros exactly at critical-line zeta zeros; defining moments of Z and Z' then makes zero spacing accessible to real endpoint inequalities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The surrounding zeta definition and functional equation are background; this span includes the representation, zero correspondence, and both moment families needed downstream.",
+          "representation_dependency": "Depends on the displayed phase factor and integral notation, but the prose makes the representation and moment roles recoverable despite extraction noise.",
+          "unit_id": "full_openalex_w2151203439_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 230,
+            "line_start": 146,
+            "title": "Mixed RMT moments expose a coefficient-availability bottleneck",
+            "unit_id": "full_openalex_w2151203439_u05",
+            "unit_type": "conjectural moment model and obstruction",
+            "why_material": "The source connects zeta moments to random-matrix constants and explains that the mixed-moment route requires rational functions H(h,k) whose unavailable values beyond the known range block higher-k gap estimates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Hardy-Z representation supplies zero-endpoint intervals, separate Z and Z' moment asymptotics supply a global ratio, and any suitable endpoint inequality converts a hypothetical gap cap into a contradiction and hence a lower bound.",
+            "limit": "All three numerical conclusions remain conditional on RH and conjectural random-matrix moment asymptotics; exact extracted constants need scan verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2151203439_u04",
+              "full_openalex_w2151203439_u06",
+              "full_openalex_w2151203439_u01",
+              "full_openalex_w2151203439_u02",
+              "full_openalex_w2151203439_u03"
+            ],
+            "title": "Moment-to-gap transducer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 104,
+              "line_start": 43,
+              "reason": "Standard zeta definitions, RH context, and research-direction overview needed to orient the later source-specific mechanisms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly conjectural input, not verified zeta asymptotics; the terminal prose identifies the obstruction and motivates the later change of moment representation.",
+      "line_end": 230,
+      "line_start": 146,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual relation and bottleneck are recoverable from prose. Exact rational formulas in lines 189-218 are OCR-fragile and require scan verification; they are not relied on as exact values here.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source connects zeta moments to random-matrix constants and explains that the mixed-moment route requires rational functions H(h,k) whose unavailable values beyond the known range block higher-k gap estimates.",
+      "source_id": "openalex_w2151203439",
+      "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mixed RMT moments expose a coefficient-availability bottleneck",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u05.txt",
+      "unit_bytes": 4403,
+      "unit_id": "full_openalex_w2151203439_u05",
+      "unit_sha256": "36f16077fc0cba53558f07e730d3be464f2123f88d11b49cc593efc8d18166ee",
+      "unit_type": "conjectural moment model and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u05.txt",
+      "source": {
+        "source_id": "openalex_w2151203439",
+        "title": "Applications of Wirtinger Inequalities on the Distribution of Zeros of the Riemann Zeta-Function",
+        "authors": [
+          "Samir H. Saker"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 138,
+          "line_end": 145,
+          "text": "                                                        \b     k2\n                                          Ik \u0002T \u0003 ∼ Ck T log T ,\n                                                                                                  \u00021.6\u0003\n                                                      \b      k2 2k\n                                        Mk \u0002T \u0003 ∼ Lk T log T       ,\n\n\nfor positive constants Ck and Lk will be defined later.\n",
+          "sha256": "c9f0e7f468c231f2cf8a0a31f494498db530ac328e3cac41f4c9728bf416fc4e"
+        },
+        "after": {
+          "line_start": 231,
+          "line_end": 238,
+          "text": "       Conrey et al. 4\b established the moments of the derivative, on the unit circle, of\ncharacteristic polynomials of random unitary matrices and used this to formulate a conjecture\nfor the moments of the derivative of the Riemann zeta-function on the critical line. Their\nmethod depends on the fact that the distribution of the eigenvalues of unitary matrices gives\ninsight into the distribution of zeros of the Riemann zeta-function and the values of the\ncharacteristic polynomials of the unitary matrices give a model for the value distribution\nof the Riemann zeta-function. Their formulae are expressed in terms of a determinant of a\nmatrix whose entries involve the I-Bessel function and, alternately, by a combinatorial sum.\n",
+          "sha256": "15ef7c204aebbb73e44b871fd99b7d50ed0c2a00332d5be8766f1c99546206d4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Random-matrix moment inputs and coefficient bottlenecks",
+            "line_end": 273,
+            "line_start": 146,
+            "mathematical_role": "States conjectural moment models, explains the mixed-moment H(h,k) limitation, and introduces the separate derivative-moment constants c_k."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 230,
+          "line_start": 146,
+          "title": "Mixed RMT moments expose a coefficient-availability bottleneck",
+          "unit_id": "full_openalex_w2151203439_u05",
+          "unit_type": "conjectural moment model and obstruction",
+          "why_material": "The source connects zeta moments to random-matrix constants and explains that the mixed-moment route requires rational functions H(h,k) whose unavailable values beyond the known range block higher-k gap estimates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is explicitly conjectural input, not verified zeta asymptotics; the terminal prose identifies the obstruction and motivates the later change of moment representation.",
+          "representation_dependency": "The conceptual relation and bottleneck are recoverable from prose. Exact rational formulas in lines 189-218 are OCR-fragile and require scan verification; they are not relied on as exact values here.",
+          "unit_id": "full_openalex_w2151203439_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 145,
+            "line_start": 105,
+            "title": "Hardy Z turns critical-line zero geometry into a real-variable moment problem",
+            "unit_id": "full_openalex_w2151203439_u04",
+            "unit_type": "representation change",
+            "why_material": "The phase-adjusted Hardy function is real on the real axis, preserves the critical-line modulus, and has zeros exactly at critical-line zeta zeros; defining moments of Z and Z' then makes zero spacing accessible to real endpoint inequalities."
+          },
+          {
+            "line_end": 273,
+            "line_start": 231,
+            "title": "Separate derivative moments replace unavailable mixed-moment coefficients",
+            "unit_id": "full_openalex_w2151203439_u06",
+            "unit_type": "model-input substitution",
+            "why_material": "Characteristic-polynomial derivative moments motivate a conjecture for M_k with constants c_k, offering a separate derivative/function moment ratio that can be inserted into gap inequalities without computing H(h,k)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Moving from Hughes's mixed moments H(h,k) to separate ordinary and derivative moments parameterized by b_k and c_k permits the same gap architecture to be evaluated through k=15.",
+            "limit": "The replacement shifts rather than removes finite coefficient dependence: the source has no c_k values beyond k=15 and proves no asymptotic continuation.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2151203439_u05",
+              "full_openalex_w2151203439_u06",
+              "full_openalex_w2151203439_u12",
+              "full_openalex_w2151203439_u03"
+            ],
+            "title": "Replacing the mixed-moment coefficient bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 218,
+              "line_start": 189,
+              "reason": "The detailed rational H(h,k) displays are too OCR-fragile for exact reuse; their prose-level role is retained."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source says c_k is available explicitly through k=15 and defers those values to the main-results section.",
+      "line_end": 273,
+      "line_start": 231,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The determinant/combinatorial formula in lines 248-271 is extraction-fragile, but the prose securely supports the existence, origin, and finite availability of c_k.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Characteristic-polynomial derivative moments motivate a conjecture for M_k with constants c_k, offering a separate derivative/function moment ratio that can be inserted into gap inequalities without computing H(h,k).",
+      "source_id": "openalex_w2151203439",
+      "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Separate derivative moments replace unavailable mixed-moment coefficients",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u06.txt",
+      "unit_bytes": 2497,
+      "unit_id": "full_openalex_w2151203439_u06",
+      "unit_sha256": "16de8a113bdda4bc2688d7f962727c9f857edccb2b881385f21bc7bbf2ad65b5",
+      "unit_type": "model-input substitution",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u06.txt",
+      "source": {
+        "source_id": "openalex_w2151203439",
+        "title": "Applications of Wirtinger Inequalities on the Distribution of Zeros of the Riemann Zeta-Function",
+        "authors": [
+          "Samir H. Saker"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 223,
+          "line_end": 230,
+          "text": "H\u0002h, k\u0003, we can obtain the values of b\u00020, k\u0003/b\u0002k, k\u0003 for k \u0006 1, 2, . . . , 7. As indicated in\n 13\b Hughes 5\b evaluated the first four functions and then writes a numerical experiment\nsuggesting the next three. The values of b\u00020, k\u0003/b\u0002k, k\u0003 for k \u0006 1, 2, . . . , 7 have been collected\nin 6\b. To the best of my knowledge there is no explicit formula to find the values of the\nfunction H\u0002h, k\u0003 for k, h ≥ 8. This limitation of the values of H\u0002h, k\u0003 leads to the limitation of\nthe values of the lower bound between the zeros of the Riemann zeta-function by applying\nthe moments \u00021.9\u0003. To overcame this restriction, we will use a diﬀerent explicit formula of the\nmoments to establish new values of the distance between zeros.\n",
+          "sha256": "091a69ffea585c80a6b013c00faf57f84a857e80336ae660735f3b90e2b9f4ca"
+        },
+        "after": {
+          "line_start": 274,
+          "line_end": 281,
+          "text": "        The third direction in the studies of the zeros of the Riemann zeta-function is the gaps\nbetween the zeros \u0002finding small gaps and large gaps between the zeros\u0003 on the critical line\nwhen the Riemann hypothesis is satisfied. In the present paper we are concerned with the\nlargest gaps between the zeros on the critical line assuming that the Riemann hypothesis is\ntrue.\n        Assuming the truth of the Riemann hypothesis Montgomery 14\b studied the\ndistribution of pairs of nontrivial zeros 1/2 iγ and 1/2 iγ \u0005 and conjectured, for fixed α, β\nsatisfying 0 < α < β, that\n",
+          "sha256": "7d3398f34d3be27afaa55c6371883a9f70df8a08beca2c75f51a7504cf9f99b3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Random-matrix moment inputs and coefficient bottlenecks",
+            "line_end": 273,
+            "line_start": 146,
+            "mathematical_role": "States conjectural moment models, explains the mixed-moment H(h,k) limitation, and introduces the separate derivative-moment constants c_k."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 273,
+          "line_start": 231,
+          "title": "Separate derivative moments replace unavailable mixed-moment coefficients",
+          "unit_id": "full_openalex_w2151203439_u06",
+          "unit_type": "model-input substitution",
+          "why_material": "Characteristic-polynomial derivative moments motivate a conjecture for M_k with constants c_k, offering a separate derivative/function moment ratio that can be inserted into gap inequalities without computing H(h,k)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source says c_k is available explicitly through k=15 and defers those values to the main-results section.",
+          "representation_dependency": "The determinant/combinatorial formula in lines 248-271 is extraction-fragile, but the prose securely supports the existence, origin, and finite availability of c_k.",
+          "unit_id": "full_openalex_w2151203439_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 230,
+            "line_start": 146,
+            "title": "Mixed RMT moments expose a coefficient-availability bottleneck",
+            "unit_id": "full_openalex_w2151203439_u05",
+            "unit_type": "conjectural moment model and obstruction",
+            "why_material": "The source connects zeta moments to random-matrix constants and explains that the mixed-moment route requires rational functions H(h,k) whose unavailable values beyond the known range block higher-k gap estimates."
+          },
+          {
+            "line_end": 296,
+            "line_start": 274,
+            "title": "Pair correlation is a distributional spacing lens distinct from extremal gaps",
+            "unit_id": "full_openalex_w2151203439_u07",
+            "unit_type": "method distinction",
+            "why_material": "The source separates the large-gap objective from pair correlation, while relating the latter to essential simplicity and unitary eigenvalue statistics; this prevents treating all zero-spacing evidence as the same target."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Hardy-Z representation supplies zero-endpoint intervals, separate Z and Z' moment asymptotics supply a global ratio, and any suitable endpoint inequality converts a hypothetical gap cap into a contradiction and hence a lower bound.",
+            "limit": "All three numerical conclusions remain conditional on RH and conjectural random-matrix moment asymptotics; exact extracted constants need scan verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2151203439_u04",
+              "full_openalex_w2151203439_u06",
+              "full_openalex_w2151203439_u01",
+              "full_openalex_w2151203439_u02",
+              "full_openalex_w2151203439_u03"
+            ],
+            "title": "Moment-to-gap transducer"
+          },
+          {
+            "claim": "Moving from Hughes's mixed moments H(h,k) to separate ordinary and derivative moments parameterized by b_k and c_k permits the same gap architecture to be evaluated through k=15.",
+            "limit": "The replacement shifts rather than removes finite coefficient dependence: the source has no c_k values beyond k=15 and proves no asymptotic continuation.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2151203439_u05",
+              "full_openalex_w2151203439_u06",
+              "full_openalex_w2151203439_u12",
+              "full_openalex_w2151203439_u03"
+            ],
+            "title": "Replacing the mixed-moment coefficient bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 247,
+              "line_start": 244,
+              "reason": "Page marker and running header."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 271,
+              "line_start": 248,
+              "reason": "The exact partition/determinant expression for c_k is extraction-fragile, though its semantic role is recoverable."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The pair-correlation statement is introductory context rather than an ingredient in the paper's three proofs.",
+      "line_end": 296,
+      "line_start": 274,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on a normalized pair-count display, but the complementary role and spectral analogy are stated in checked prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source separates the large-gap objective from pair correlation, while relating the latter to essential simplicity and unitary eigenvalue statistics; this prevents treating all zero-spacing evidence as the same target.",
+      "source_id": "openalex_w2151203439",
+      "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair correlation is a distributional spacing lens distinct from extremal gaps",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u07.txt",
+      "unit_bytes": 1839,
+      "unit_id": "full_openalex_w2151203439_u07",
+      "unit_sha256": "ca0f1f1831f149b0197b23b08ddea8aa5c35d4573e7c17689f782606722c9483",
+      "unit_type": "method distinction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u07.txt",
+      "source": {
+        "source_id": "openalex_w2151203439",
+        "title": "Applications of Wirtinger Inequalities on the Distribution of Zeros of the Riemann Zeta-Function",
+        "authors": [
+          "Samir H. Saker"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 266,
+          "line_end": 273,
+          "text": "                               Mi,j :\u0006 ⎝                     mj − mi    i − j ⎠,                               \u00021.14\u0003\n                                                  1≤i,j≤k\n\n\n\nand Pok 1 \u00022k\u0003 denotes the set of partitions m \u0006 \u0002m0 , . . . , mk \u0003 of 2k into nonnegative parts.\nThey also gave some explicit values of ck for k \u0006 1, 2, . . . , 15. These values will be presented\nin Section 2 and will be used to establish the main results in this paper.\n",
+          "sha256": "2abfe0c7f7c910ea0b9c464f0dc176ce49c0846864a4ff46e4ff2123b2df0475"
+        },
+        "after": {
+          "line_start": 297,
+          "line_end": 304,
+          "text": "       Now, we assume that \u0002βn iγn \u0003 are the zeros of ζ\u0002s\u0003 in the upper half-plane \u0002arranged\nin nondecreasing order and counted according multiplicity\u0003 and γn ≤ γn 1 are consecutive\nordinates of all zeros and define\n                                                       \b\n                                                            γn 1 − γn\n                                             rn :\u0006 \b                    ,                                      \u00021.16\u0003\n                                                        2π/ log γn\n\n",
+          "sha256": "36847c9ddbdb17a27310cd117baab442a2466779290a93199b16768ae9852eff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Gap questions, pair correlation, and normalized all-zero gaps",
+            "line_end": 369,
+            "line_start": 274,
+            "mathematical_role": "Separates zero-spacing directions, records the pair-correlation viewpoint, and defines normalized limsup and liminf gap statistics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 296,
+          "line_start": 274,
+          "title": "Pair correlation is a distributional spacing lens distinct from extremal gaps",
+          "unit_id": "full_openalex_w2151203439_u07",
+          "unit_type": "method distinction",
+          "why_material": "The source separates the large-gap objective from pair correlation, while relating the latter to essential simplicity and unitary eigenvalue statistics; this prevents treating all zero-spacing evidence as the same target."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The pair-correlation statement is introductory context rather than an ingredient in the paper's three proofs.",
+          "representation_dependency": "Depends on a normalized pair-count display, but the complementary role and spectral analogy are stated in checked prose.",
+          "unit_id": "full_openalex_w2151203439_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 273,
+            "line_start": 231,
+            "title": "Separate derivative moments replace unavailable mixed-moment coefficients",
+            "unit_id": "full_openalex_w2151203439_u06",
+            "unit_type": "model-input substitution",
+            "why_material": "Characteristic-polynomial derivative moments motivate a conjecture for M_k with constants c_k, offering a separate derivative/function moment ratio that can be inserted into gap inequalities without computing H(h,k)."
+          },
+          {
+            "line_end": 322,
+            "line_start": 297,
+            "title": "Normalized gaps define separate limsup and liminf extremal statistics",
+            "unit_id": "full_openalex_w2151203439_u08",
+            "unit_type": "definition and normalization",
+            "why_material": "Dividing consecutive ordinate gaps by 2pi/log(gamma_n) creates a scale-free sequence with average one, after which lambda and mu isolate asymptotically large and small gaps."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pair correlation, limsup/liminf normalized consecutive gaps, critical-line-only Lambda, and positive-proportion r-step gaps encode different spacing questions and require distinct interpretations.",
+            "limit": "The source's equalities and comparisons involving all zeros versus critical-line zeros are RH-sensitive, and the positive-proportion route is only summarized from prior work.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2151203439_u07",
+              "full_openalex_w2151203439_u08",
+              "full_openalex_w2151203439_u09",
+              "full_openalex_w2151203439_u11"
+            ],
+            "title": "Do not collapse zero-spacing observables"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 271,
+              "line_start": 248,
+              "reason": "The exact partition/determinant expression for c_k is extraction-fragile, though its semantic role is recoverable."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The later list of historical numerical bounds supports context but adds no new mechanism.",
+      "line_end": 322,
+      "line_start": 297,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Relies on the displayed normalization and limsup/liminf definitions, which are legible and reinforced by prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Dividing consecutive ordinate gaps by 2pi/log(gamma_n) creates a scale-free sequence with average one, after which lambda and mu isolate asymptotically large and small gaps.",
+      "source_id": "openalex_w2151203439",
+      "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Normalized gaps define separate limsup and liminf extremal statistics",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u08.txt",
+      "unit_bytes": 1316,
+      "unit_id": "full_openalex_w2151203439_u08",
+      "unit_sha256": "bfb83f21ea28389d4d79394b4f5b69228c03c9574e0ddf18884bdb4b9e37d948",
+      "unit_type": "definition and normalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u08.txt",
+      "source": {
+        "source_id": "openalex_w2151203439",
+        "title": "Applications of Wirtinger Inequalities on the Distribution of Zeros of the Riemann Zeta-Function",
+        "authors": [
+          "Samir H. Saker"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 289,
+          "line_end": 296,
+          "text": "This so-called pair correlation conjecture plays a complementary role to the Riemann\nhypothesis. This conjecture implies the essential simplicity hypothesis that almost all zeros\nof the zeta-function are simple. On the other hand, the integral on the right hand side is the\nsame as the one observed in the two-point correlation of the eigenvalues which are the energy\nlevels of the corresponding Hamiltonian which are usually not known with uncertainty. This\nobservation is due to Dyson and it restored some hope in an old idea of Hilbert and Polya\nthat the Riemann hypothesis follows from the existence of a self-adjoint Hermitian operator\nwhose spectrum of eigenvalues correspond to the set of nontrivial zeros of the zeta-function.\n",
+          "sha256": "24b76f32073fdff8a0c52595afca69c922058a718ac81c6f14bbf150ef6100d1"
+        },
+        "after": {
+          "line_start": 323,
+          "line_end": 330,
+          "text": " 16\b also showed that there exist constants λ > 1 and μ < 1 such that\n\n                           \b                              \b\n                               γn 1 − γn                   γn 1 − γn\n                          \b                ≥ λ,       \b                ≤ μ,                     \u00021.19\u0003\n                           2π/ log γn                     2π/ log γn\n\n\n",
+          "sha256": "34fcae77e7c8139bb49b062816ae1e6af14a7b928e1432c91e5c957fa0937257"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Gap questions, pair correlation, and normalized all-zero gaps",
+            "line_end": 369,
+            "line_start": 274,
+            "mathematical_role": "Separates zero-spacing directions, records the pair-correlation viewpoint, and defines normalized limsup and liminf gap statistics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 322,
+          "line_start": 297,
+          "title": "Normalized gaps define separate limsup and liminf extremal statistics",
+          "unit_id": "full_openalex_w2151203439_u08",
+          "unit_type": "definition and normalization",
+          "why_material": "Dividing consecutive ordinate gaps by 2pi/log(gamma_n) creates a scale-free sequence with average one, after which lambda and mu isolate asymptotically large and small gaps."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The later list of historical numerical bounds supports context but adds no new mechanism.",
+          "representation_dependency": "Relies on the displayed normalization and limsup/liminf definitions, which are legible and reinforced by prose.",
+          "unit_id": "full_openalex_w2151203439_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 296,
+            "line_start": 274,
+            "title": "Pair correlation is a distributional spacing lens distinct from extremal gaps",
+            "unit_id": "full_openalex_w2151203439_u07",
+            "unit_type": "method distinction",
+            "why_material": "The source separates the large-gap objective from pair correlation, while relating the latter to essential simplicity and unitary eigenvalue statistics; this prevents treating all zero-spacing evidence as the same target."
+          },
+          {
+            "line_end": 390,
+            "line_start": 370,
+            "title": "Critical-line gap Lambda dominates the all-zero gap statistic and coincides with it under RH",
+            "unit_id": "full_openalex_w2151203439_u09",
+            "unit_type": "target refinement",
+            "why_material": "Defining Lambda using distinct positive critical-line zeros clarifies what the real Hardy-function argument can measure; Lambda is at least lambda unconditionally at the definitional level described here, and the distinction disappears under RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pair correlation, limsup/liminf normalized consecutive gaps, critical-line-only Lambda, and positive-proportion r-step gaps encode different spacing questions and require distinct interpretations.",
+            "limit": "The source's equalities and comparisons involving all zeros versus critical-line zeros are RH-sensitive, and the positive-proportion route is only summarized from prior work.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2151203439_u07",
+              "full_openalex_w2151203439_u08",
+              "full_openalex_w2151203439_u09",
+              "full_openalex_w2151203439_u11"
+            ],
+            "title": "Do not collapse zero-spacing observables"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 369,
+              "line_start": 323,
+              "reason": "Historical numerical bounds and page furniture contextualize the target without adding a new reusable mechanism."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span also records the first cited Beesack-Wirtinger lower-bound instance as evidence that endpoint inequalities can address this target.",
+      "line_end": 390,
+      "line_start": 370,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the displayed normalized limsup definition and one numerical bound; both relations are recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defining Lambda using distinct positive critical-line zeros clarifies what the real Hardy-function argument can measure; Lambda is at least lambda unconditionally at the definitional level described here, and the distinction disappears under RH.",
+      "source_id": "openalex_w2151203439",
+      "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line gap Lambda dominates the all-zero gap statistic and coincides with it under RH",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u09.txt",
+      "unit_bytes": 1121,
+      "unit_id": "full_openalex_w2151203439_u09",
+      "unit_sha256": "aff8f203d9ae8a2bd3b7231857c2e2ded981534b9bf56bcac48124204a7a9cc5",
+      "unit_type": "target refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u09.txt",
+      "source": {
+        "source_id": "openalex_w2151203439",
+        "title": "Applications of Wirtinger Inequalities on the Distribution of Zeros of the Riemann Zeta-Function",
+        "authors": [
+          "Samir H. Saker"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 362,
+          "line_end": 369,
+          "text": "\n\nassuming the generalized Riemann hypothesis for the zeros of the Dirichlet L-functions.\n\n<!-- source-page: 7 -->\n\nJournal of Inequalities and Applications                                                      7\n\n",
+          "sha256": "0f1ac1579661274639e94548a108a2968c3003185f1394bd8d5310146a768364"
+        },
+        "after": {
+          "line_start": 391,
+          "line_end": 398,
+          "text": "In 25\b Hall proved a Wirtinger inequality and used the moment\n\n                                   T\n                                                     1                 \u0006      \u0007\n                                       Z4 \u0002t\u0003dt \u0006        T log4 \u0002t\u0003   O T log3 ,          \u00021.28\u0003\n                                   0                2π 2\n\n\n",
+          "sha256": "4ed0a454248fcf264d0c5031c06506888288342308bfd28bbefabdfc815f60fe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Critical-line gap parameter and prior mechanisms",
+            "line_end": 485,
+            "line_start": 370,
+            "mathematical_role": "Defines Lambda, relates it to the all-zero statistic under RH, surveys Wirtinger/moment and local-average routes, and states the paper's intended extension."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 390,
+          "line_start": 370,
+          "title": "Critical-line gap Lambda dominates the all-zero gap statistic and coincides with it under RH",
+          "unit_id": "full_openalex_w2151203439_u09",
+          "unit_type": "target refinement",
+          "why_material": "Defining Lambda using distinct positive critical-line zeros clarifies what the real Hardy-function argument can measure; Lambda is at least lambda unconditionally at the definitional level described here, and the distinction disappears under RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span also records the first cited Beesack-Wirtinger lower-bound instance as evidence that endpoint inequalities can address this target.",
+          "representation_dependency": "Depends on the displayed normalized limsup definition and one numerical bound; both relations are recoverable from prose.",
+          "unit_id": "full_openalex_w2151203439_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 322,
+            "line_start": 297,
+            "title": "Normalized gaps define separate limsup and liminf extremal statistics",
+            "unit_id": "full_openalex_w2151203439_u08",
+            "unit_type": "definition and normalization",
+            "why_material": "Dividing consecutive ordinate gaps by 2pi/log(gamma_n) creates a scale-free sequence with average one, after which lambda and mu isolate asymptotically large and small gaps."
+          },
+          {
+            "line_end": 446,
+            "line_start": 391,
+            "title": "Moment information and stronger variational Wirtinger inequalities successively sharpen gap bounds",
+            "unit_id": "full_openalex_w2151203439_u10",
+            "unit_type": "method progression",
+            "why_material": "The historical progression shows two independent levers in the same proof family: richer mixed moments and stronger endpoint inequalities, including a variational inequality whose optimization can be recast algebraically through Jacobi-Schur functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pair correlation, limsup/liminf normalized consecutive gaps, critical-line-only Lambda, and positive-proportion r-step gaps encode different spacing questions and require distinct interpretations.",
+            "limit": "The source's equalities and comparisons involving all zeros versus critical-line zeros are RH-sensitive, and the positive-proportion route is only summarized from prior work.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2151203439_u07",
+              "full_openalex_w2151203439_u08",
+              "full_openalex_w2151203439_u09",
+              "full_openalex_w2151203439_u11"
+            ],
+            "title": "Do not collapse zero-spacing observables"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 369,
+              "line_start": 323,
+              "reason": "Historical numerical bounds and page furniture contextualize the target without adding a new reusable mechanism."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span is comparative evidence for the reusable method architecture, not a new proof of the cited bounds.",
+      "line_end": 446,
+      "line_start": 391,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several moment displays are formula-dependent; their exact coefficients are readable only with caution, while the method comparisons are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The historical progression shows two independent levers in the same proof family: richer mixed moments and stronger endpoint inequalities, including a variational inequality whose optimization can be recast algebraically through Jacobi-Schur functions.",
+      "source_id": "openalex_w2151203439",
+      "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Moment information and stronger variational Wirtinger inequalities successively sharpen gap bounds",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u10.txt",
+      "unit_bytes": 2479,
+      "unit_id": "full_openalex_w2151203439_u10",
+      "unit_sha256": "02c2914db83b6f310eaa335192ea200dede8a6700ff929f591cb5d30fe8f1955",
+      "unit_type": "method progression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u10.txt",
+      "source": {
+        "source_id": "openalex_w2151203439",
+        "title": "Applications of Wirtinger Inequalities on the Distribution of Zeros of the Riemann Zeta-Function",
+        "authors": [
+          "Samir H. Saker"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 383,
+          "line_end": 390,
+          "text": "is true. Hall 23\b used a Wirtinger-type inequality of Beesack and proved that\n\n                                                \u0004         \u00051/4\n                                                    105\n                                           Λ≥                    \u0006 2.2635.                \u00021.27\u0003\n                                                     4\n\n\n",
+          "sha256": "e49e4e881164bfb38d2a153d6383d367fcf34f29ebc79833385bb496dbed8f36"
+        },
+        "after": {
+          "line_start": 447,
+          "line_end": 454,
+          "text": "In 29\b the authors applied a technique involving the comparison of the continuous global\naverage with local average obtained from the discrete average to a problem of gaps between\nthe zeros of zeta-function assuming the Riemann hypothesis. Using this approach, which\ntakes only zeros on the critical line into account, the authors computed similar bounds under\nassumption of the Riemann hypothesis when \u00021.9\u0003 holds. They then showed that for fixed\npositive integer r\n\n                                                                \u0004          \u0005\n",
+          "sha256": "69f26a6dad61236132fc23858e90b302216ee57ca0eb4df23be33574b20d5517"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Critical-line gap parameter and prior mechanisms",
+            "line_end": 485,
+            "line_start": 370,
+            "mathematical_role": "Defines Lambda, relates it to the all-zero statistic under RH, surveys Wirtinger/moment and local-average routes, and states the paper's intended extension."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 446,
+          "line_start": 391,
+          "title": "Moment information and stronger variational Wirtinger inequalities successively sharpen gap bounds",
+          "unit_id": "full_openalex_w2151203439_u10",
+          "unit_type": "method progression",
+          "why_material": "The historical progression shows two independent levers in the same proof family: richer mixed moments and stronger endpoint inequalities, including a variational inequality whose optimization can be recast algebraically through Jacobi-Schur functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span is comparative evidence for the reusable method architecture, not a new proof of the cited bounds.",
+          "representation_dependency": "Several moment displays are formula-dependent; their exact coefficients are readable only with caution, while the method comparisons are explicit in prose.",
+          "unit_id": "full_openalex_w2151203439_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 390,
+            "line_start": 370,
+            "title": "Critical-line gap Lambda dominates the all-zero gap statistic and coincides with it under RH",
+            "unit_id": "full_openalex_w2151203439_u09",
+            "unit_type": "target refinement",
+            "why_material": "Defining Lambda using distinct positive critical-line zeros clarifies what the real Hardy-function argument can measure; Lambda is at least lambda unconditionally at the definitional level described here, and the distinction disappears under RH."
+          },
+          {
+            "line_end": 464,
+            "line_start": 447,
+            "title": "Global-versus-local averages yield positive-proportion multi-zero gap statements",
+            "unit_id": "full_openalex_w2151203439_u11",
+            "unit_type": "alternative averaging method",
+            "why_material": "This route compares a continuous global average with a discrete local average and targets r-step gaps for a positive proportion of zeros, rather than only an extremal limsup."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "It is a cited alternative, not used in the main proofs, and remains conditional on RH and the stated moment conjecture.",
+      "line_end": 464,
+      "line_start": 447,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The quantitative threshold is display-dependent, but the averaging mechanism and positive-proportion conclusion are recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This route compares a continuous global average with a discrete local average and targets r-step gaps for a positive proportion of zeros, rather than only an extremal limsup.",
+      "source_id": "openalex_w2151203439",
+      "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Global-versus-local averages yield positive-proportion multi-zero gap statements",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u11.txt",
+      "unit_bytes": 1032,
+      "unit_id": "full_openalex_w2151203439_u11",
+      "unit_sha256": "02519fe7e4aa32069330d4898f756ef77b9ee71d201bbed6e5aad6f02b1ab84c",
+      "unit_type": "alternative averaging method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u11.txt",
+      "source": {
+        "source_id": "openalex_w2151203439",
+        "title": "Applications of Wirtinger Inequalities on the Distribution of Zeros of the Riemann Zeta-Function",
+        "authors": [
+          "Samir H. Saker"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 439,
+          "line_end": 446,
+          "text": "8                                                                        Journal of Inequalities and Applications\n\nby RMT, Hall 28\b proved that\n\n\n              Λ\u00024\u0003 ≥ 3.392272 . . . ,       Λ\u00025\u0003 ≥ 3.858851 . . . ,           Λ\u00025\u0003 ≥ 4.2981467 . . . .     \u00021.32\u0003\n\n\n",
+          "sha256": "09056fcc76c5a934dd482b4557a629a972b4ea7940e70a88c9a1abfd4755ca71"
+        },
+        "after": {
+          "line_start": 465,
+          "line_end": 472,
+          "text": "       Hall 13\b developed the technique used in 28\b and proved that\n\n\n                                               Λ\u00027\u0003 ≥ 4.215007.                                            \u00021.34\u0003\n\n\nThe improvement of this value as obtained in 13\b is given by\n\n",
+          "sha256": "dfa4f7e227a0922356bb4b87e7761ef49494691d8c42f333ecd3c2f47c7ff598"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Critical-line gap parameter and prior mechanisms",
+            "line_end": 485,
+            "line_start": 370,
+            "mathematical_role": "Defines Lambda, relates it to the all-zero statistic under RH, surveys Wirtinger/moment and local-average routes, and states the paper's intended extension."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 464,
+          "line_start": 447,
+          "title": "Global-versus-local averages yield positive-proportion multi-zero gap statements",
+          "unit_id": "full_openalex_w2151203439_u11",
+          "unit_type": "alternative averaging method",
+          "why_material": "This route compares a continuous global average with a discrete local average and targets r-step gaps for a positive proportion of zeros, rather than only an extremal limsup."
+        },
+        "unit_dependency_entry": {
+          "context_note": "It is a cited alternative, not used in the main proofs, and remains conditional on RH and the stated moment conjecture.",
+          "representation_dependency": "The quantitative threshold is display-dependent, but the averaging mechanism and positive-proportion conclusion are recoverable from prose.",
+          "unit_id": "full_openalex_w2151203439_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 446,
+            "line_start": 391,
+            "title": "Moment information and stronger variational Wirtinger inequalities successively sharpen gap bounds",
+            "unit_id": "full_openalex_w2151203439_u10",
+            "unit_type": "method progression",
+            "why_material": "The historical progression shows two independent levers in the same proof family: richer mixed moments and stronger endpoint inequalities, including a variational inequality whose optimization can be recast algebraically through Jacobi-Schur functions."
+          },
+          {
+            "line_end": 483,
+            "line_start": 465,
+            "title": "The paper reframes higher-k gap extension around separately available b_k and c_k",
+            "unit_id": "full_openalex_w2151203439_u12",
+            "unit_type": "problem reframing",
+            "why_material": "After recording the prior mixed-moment ceiling, the source proposes using ordinary Hardy moments and derivative moments with explicit b_k and c_k to continue from k=7 through k=15."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pair correlation, limsup/liminf normalized consecutive gaps, critical-line-only Lambda, and positive-proportion r-step gaps encode different spacing questions and require distinct interpretations.",
+            "limit": "The source's equalities and comparisons involving all zeros versus critical-line zeros are RH-sensitive, and the positive-proportion route is only summarized from prior work.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2151203439_u07",
+              "full_openalex_w2151203439_u08",
+              "full_openalex_w2151203439_u09",
+              "full_openalex_w2151203439_u11"
+            ],
+            "title": "Do not collapse zero-spacing observables"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the bridge from the literature review to the three main theorem instantiations; the advertised numerical conclusion is conditional on RH and the moment predictions.",
+      "line_end": 483,
+      "line_start": 465,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primarily prose-grounded; exact advertised decimals are legible but are later supported by the theorem tables.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After recording the prior mixed-moment ceiling, the source proposes using ordinary Hardy moments and derivative moments with explicit b_k and c_k to continue from k=7 through k=15.",
+      "source_id": "openalex_w2151203439",
+      "source_normalized_sha256": "e5874b452a3d4ab2e750eefa33c6b044947ae90b2501456c8e734223a4a08c78",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The paper reframes higher-k gap extension around separately available b_k and c_k",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2151203439_u12.txt",
+      "unit_bytes": 1020,
+      "unit_id": "full_openalex_w2151203439_u12",
+      "unit_sha256": "b50a35087d8ce998e1d9079afed493efae9bce784de36b3692a4e4dc20815a71",
+      "unit_type": "problem reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2151203439_u12.txt",
+      "source": {
+        "source_id": "openalex_w2151203439",
+        "title": "Applications of Wirtinger Inequalities on the Distribution of Zeros of the Riemann Zeta-Function",
+        "authors": [
+          "Samir H. Saker"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 457,
+          "line_end": 464,
+          "text": "                                                                    log γn\n\n\nholds for any θ ≤ 4k/πre for more than c\u0002log T \u0003−4k proportion of the zeros γn ∈ 0, T \b with\n                                                                     2\n\n\na computable constant c \u0006 c\u0002k, θ, r\u0003.\n",
+          "sha256": "a73bb984c2ccaf5a719a2b0057b6a67613151fb335fc072808043a91c9cea22c"
+        },
+        "after": {
+          "line_start": 484,
+          "line_end": 491,
+          "text": "\n\n2. Main Results\nIn this section, we establish some explicit formulas for Λ\u0002k\u0003 and by using the same explicit\nvalues of bk and ck we establish new lower bounds for Λ\u000215\u0003. The explicit values of bk using\nthe formula\n\n                                                      \u0003\n",
+          "sha256": "53187627fa5a439052cfa636c2d67fcf6719d1f388c380517ae965630f5b6d7b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_53128d3d05fe138687c24c1e73611728ee5d92edb68a6d2852ade17d4296cce2",
+        "dossier_sha256": "3acd2b10f03f9fc7cbed88583787c4a57927ce4109f6f02d0d816ea37dffea6a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Critical-line gap parameter and prior mechanisms",
+            "line_end": 485,
+            "line_start": 370,
+            "mathematical_role": "Defines Lambda, relates it to the all-zero statistic under RH, surveys Wirtinger/moment and local-average routes, and states the paper's intended extension."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 483,
+          "line_start": 465,
+          "title": "The paper reframes higher-k gap extension around separately available b_k and c_k",
+          "unit_id": "full_openalex_w2151203439_u12",
+          "unit_type": "problem reframing",
+          "why_material": "After recording the prior mixed-moment ceiling, the source proposes using ordinary Hardy moments and derivative moments with explicit b_k and c_k to continue from k=7 through k=15."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the bridge from the literature review to the three main theorem instantiations; the advertised numerical conclusion is conditional on RH and the moment predictions.",
+          "representation_dependency": "Primarily prose-grounded; exact advertised decimals are legible but are later supported by the theorem tables.",
+          "unit_id": "full_openalex_w2151203439_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 464,
+            "line_start": 447,
+            "title": "Global-versus-local averages yield positive-proportion multi-zero gap statements",
+            "unit_id": "full_openalex_w2151203439_u11",
+            "unit_type": "alternative averaging method",
+            "why_material": "This route compares a continuous global average with a discrete local average and targets r-step gaps for a positive proportion of zeros, rather than only an extremal limsup."
+          },
+          {
+            "line_end": 673,
+            "line_start": 582,
+            "title": "Agarwal-Pang endpoint inequality converts a uniform gap cap into a moment-ratio lower bound",
+            "unit_id": "full_openalex_w2151203439_u01",
+            "unit_type": "gap-bound derivation",
+            "why_material": "The proof scales an endpoint Wirtinger inequality to each consecutive Hardy-Z zero interval, replaces every interval length by a hypothetical common cap, sums, and compares conjectural Z and Z' moments to force the explicit Lambda(k) bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Moving from Hughes's mixed moments H(h,k) to separate ordinary and derivative moments parameterized by b_k and c_k permits the same gap architecture to be evaluated through k=15.",
+            "limit": "The replacement shifts rather than removes finite coefficient dependence: the source has no c_k values beyond k=15 and proves no asymptotic continuation.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2151203439_u05",
+              "full_openalex_w2151203439_u06",
+              "full_openalex_w2151203439_u12",
+              "full_openalex_w2151203439_u03"
+            ],
+            "title": "Replacing the mixed-moment coefficient bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 501,
+              "line_start": 484,
+              "reason": "Section transition and definition of the b_k input formula."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "f5de9f5661b773089bd0c9cc3a7a352c5d9ae8fa2ca58b74ea9c59060562ba62"
+}

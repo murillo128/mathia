@@ -1,0 +1,171 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1977375336",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1977375336_da4d879d_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Agreement and first-omitted-term behavior can validate the computed derivatives and explicit truncation at their achieved scale, yet the experiment remains insensitive to the hypothesized counterexamples and therefore supplies no RH evidence.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1977375336_v2_u05",
+          "openalex_w1977375336_v2_u06",
+          "openalex_w1977375336_v2_u07",
+          "openalex_w1977375336_v2_u08"
+        ],
+        "proposed_limit": "The alternating-series accelerator was used outside its formally stated applicability for complex arguments, so even computational certification is empirical rather than formal.",
+        "source_id": "openalex_w1977375336",
+        "synthesis_id": "riemann_v2_within_a806b0355a884d7d6ff3e78d",
+        "title": "Residual convergence certifies arithmetic implementation, not the Riemann Hypothesis"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes independent precision reruns and the initial 87/105-digit discrepancies.",
+          "line_end": 477,
+          "line_start": 410,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Data and exponent heavy; exact timings, partial sums, and residual inequalities should be table-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes c100000 from a 100001-term finite binomial sum whose partial sums reach about 10 to the 30100 before canceling to 10 to the minus 9, then builds the zero-explicit approximation from enough zeros to target 1000 digits and discovers derivative error dominates.",
+          "source_id": "openalex_w1977375336",
+          "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The generic finite sum is exact in principle but catastrophic cancellation makes digit budgeting the central computation",
+          "unit_artifact_relpath": "depth/units/openalex_w1977375336_v2_u05.txt",
+          "unit_bytes": 7055,
+          "unit_id": "openalex_w1977375336_v2_u05",
+          "unit_sha256": "340caedffdf4f8b4fe1136af47ed49886c159f15b8885ba63bb2c8de66fab962",
+          "unit_type": "high-precision experiment design",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1977375336_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Two mathematically equivalent representations have opposite conditioning profiles: the finite sum includes all zeros but destroys digits through cancellation, whereas the explicit sum converges quickly but inherits the accuracy of each zero and derivative. Their discrepancy localizes a computational bottleneck only after each side has its own error budget.",
+            "nonparaphrase_operation": "The pair cg_100000 and ce_100000 is a cross-representation diagnostic. Partial-sum magnitudes quantify condition loss, while the exponential gamma tail estimates how many zero terms should be needed absent bad derivative data.",
+            "quality_reason": "The 100001-term computation, 100000/150000-digit reruns, partial sums near 10^30100, final value near 10^-9, estimated 50000 secure digits, zero-height cutoff, and 87- then 105-digit comparisons are all stated. The output correctly separates cancellation conditioning from zero/derivative conditioning and denies formal certification. The 'opposite conditioning profiles' phrase is supported by explicit numerical behavior on both sides.",
+            "source_support": "For k=100000 the source evaluates the 100001-term binomial formula at 100000- and 150000-digit working precision, records huge partial sums, and regards roughly 50000 final digits as secure. It separately forms the explicit value from the trivial-zero series and nontrivial zeros up to the height estimated to give 1000-digit gamma damping. Initial comparisons agree only to 87 digits, then 105 digits after numerical-differentiation adjustments, directing attention to errors in ζ'(ρ).",
+            "speculation_status": "A small discrepancy would not by itself refute RH until program error, cancellation, tail truncation, zero accuracy, and derivative accuracy are all independently controlled. The claimed finite-sum digits are empirical precision assessments, not a formal interval certificate. The experiment design is explicit, but exact table exponents, residual inequalities, and timings are extraction- and implementation-dependent. Using the two representations as a bottleneck-localization diagnostic is a reasonable interpretation of the author's response to the discrepancy. Table exponents, timings, and residual inequalities remain source-reported numerical evidence rather than independently certified facts."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the experiment unit because derivative recalculation is the causal diagnosis of its discrepancies.",
+          "line_end": 518,
+          "line_start": 453,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; the differentiated series and residual exponents must be checked, and the source admits using the accelerator beyond its formal applicability.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives a differentiable eta-style series for zeta, accelerates it numerically, and shows how increasing working precision moves agreement from 105 to 625 and finally 996 digits, retrospectively certifying the derivative values only at the achieved residual scale.",
+          "source_id": "openalex_w1977375336",
+          "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "An alternating-series continuation and higher internal precision repair the zeta-derivative bottleneck",
+          "unit_artifact_relpath": "depth/units/openalex_w1977375336_v2_u06.txt",
+          "unit_bytes": 6588,
+          "unit_id": "openalex_w1977375336_v2_u06",
+          "unit_sha256": "f2abc68b348d67888e14616ad591d28ba99e4a7b5646ecac4437bffc56722882",
+          "unit_type": "numerical-derivative certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1977375336_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The experiment uses representation agreement as error diagnosis: zeros can satisfy ζ(ρ)≈0 to high precision while their derivatives remain inadequate for a residue calculation. Increasing internal precision targets the unstable intermediate computation rather than the final stored width.",
+            "nonparaphrase_operation": "The differentiated eta continuation bridges ζ' on the critical line to a summation routine. Agreement of independently computed cg and ce values is a posteriori evidence that the derivative data are accurate enough for this weighted aggregate.",
+            "quality_reason": "The eta-style continuation, termwise derivative on compact subsets of Re(s)>0, sumalt computations, acknowledged out-of-scope use for complex terms, 625-digit improvement, 2000-digit internal precision, and 996-digit aggregate agreement are explicit. The output appropriately weakens the author's 'a posteriori proof' language to aggregate evidence rather than per-derivative certification. The representation-agreement framing is grounded by three observed plateaus and a named numerical intervention.",
+            "source_support": "The source derives ζ and ζ' from an alternating eta-style continuation valid for Re(s)>0 and differentiable on compact subsets. It evaluates ζ'(ρ_l) with PARI's sumalt routine, first at 1000-digit precision and then with 2000-digit internal precision while storing 1000 digits. Substitution into the explicit coefficient formula improves relative agreement with the finite value to about 625 and finally 996 digits, which the author calls an a posteriori check of the derivatives.",
+            "speculation_status": "The source explicitly says sumalt is used outside its stated applicability for complex nonalternating terms. Posterior aggregate agreement is not an independent proof that every derivative digit is correct, and it supplies no evidence for RH beyond the tested representation's sensitivity. The progression of agreement is explicit, but the differentiated display and residual exponents should be checked; the numerical claim depends on the reported software behavior and working-precision settings. Diagnosing derivative accuracy despite small zeta residuals is a reasonable inference from the described experiment. The differentiated display and residual exponents need scan checking, and software behavior is not independently verified."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The printed asymptotic at line 539 appears extraction-ambiguous and must be checked against the figure/PDF before quotation.",
+          "line_end": 555,
+          "line_start": 512,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high due two-column figure captions and a likely degraded reciprocal/log expression.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines a distance from the generic value to partial explicit sums and compares it with the expected first-discarded-term scale, using plateau locations to identify the first inaccurate zeta derivative in each computational method.",
+          "source_id": "openalex_w1977375336",
+          "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The first omitted exponentially damped zero predicts when bad derivative data creates an accuracy plateau",
+          "unit_artifact_relpath": "depth/units/openalex_w1977375336_v2_u07.txt",
+          "unit_bytes": 5046,
+          "unit_id": "openalex_w1977375336_v2_u07",
+          "unit_sha256": "04c088147b1b81796966b33ad66a7c0f776d14bbd0fc272a3cc5f05570d70de0",
+          "unit_type": "convergence-error diagnostic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1977375336_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The whole error trajectory contains more diagnostic information than the final residual. The expected truncation envelope serves as a baseline; deviation from it identifies the point where input error overtakes legitimate tail error.",
+            "nonparaphrase_operation": "The bridge is the residual-versus-zero-index curve, with gamma damping providing the predicted tail scale. Plateau height and onset translate numerical derivative quality into an observable signature in the explicit sum.",
+            "quality_reason": "The span defines y(n), compares it to a first-discarded-term heuristic, reports three plateau onsets, and attributes the plateaus to inaccurate zeta derivatives whose later contributions are damped. The output correctly calls the alternating-series analogy heuristic and declines to identify a unique defective derivative from a plateau alone. The forensic metaphor is backed by the onset indices, predicted envelope, and damping mechanism.",
+            "source_support": "For k=100000 the source defines y(n) from the distance between the finite value and the explicit partial sum through the nth zero, then compares it with the expected scale from the next omitted term. Three derivative-computation methods initially follow that prediction and later flatten at different zero indices. The captions associate each plateau with the first inaccurate ζ'(ρ_n), because subsequent contributions are exponentially suppressed.",
+            "speculation_status": "The comparison to an alternating-series first-omitted-term rule is heuristic because the terms change sign erratically and are not shown to satisfy an alternating monotone theorem. A plateau identifies an error scale, not necessarily a unique defective derivative. Two-column extraction makes the exact definition and the printed asymptotic near equation (41) ambiguous; only the qualitative plateau mechanism is safely recoverable without the figure/PDF. Treating the full residual curve as more diagnostic than a final residual is a reasonable methodological inference. Equation (41), the reciprocal/log scaling, and two-column figure layout are explicitly recognized as ambiguous."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The final physical charge analogy is anecdotal and not selected separately.",
+          "line_end": 577,
+          "line_start": 553,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low; the conclusion is prose-stable, while the illustrative near-identity formula is scan-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explicitly rejects interpreting the 996-digit agreement as RH evidence, demands a representation with stronger sensitivity to high zeros, and invokes extreme near-identities as a warning against confusing precision with proof.",
+          "source_id": "openalex_w1977375336",
+          "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A thousand matching digits do not test RH when the representation is insensitive to plausible counterexamples",
+          "unit_artifact_relpath": "depth/units/openalex_w1977375336_v2_u08.txt",
+          "unit_bytes": 2178,
+          "unit_id": "openalex_w1977375336_v2_u08",
+          "unit_sha256": "d3abea8fed0da05de8bea16d79ef656982976ea4437d29f1752d65ae974b630f",
+          "unit_type": "epistemic limitation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1977375336_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Evidence quality depends on the counterfactual response of the observable: would a plausible high off-line zero noticeably alter it? Here exponential damping makes the answer effectively no, so additional matching digits mostly certify computation within an insensitive channel.",
+            "nonparaphrase_operation": "The missing bridge is a high-zero-sensitive observable linking an elementary calculation to a zero expansion. The near-identity example illustrates why a tiny residual alone does not establish structural equality.",
+            "quality_reason": "The author explicitly says the 996-digit agreement means nothing for RH, asks for a high-zero-sensitive two-representation observable, and supplies a high-precision nonidentity warning. The output correctly treats the desired observable as missing future methodology, not a construction delivered by the source. The slogan 'precision is not discriminating power' is supported by the source's explicit negative conclusion and damping discussion.",
+            "source_support": "The final remarks report agreement between cg_100000 and ce_100000 through 996 places, then explicitly state that this means nothing for RH. The author argues that a computational refutation would require two representations with strong sensitivity to the locations of high zeros and cites an extreme near-equality that is not an identity as a cautionary example.",
+            "speculation_status": "The calculation neither proves RH nor meaningfully raises its probability without a sensitivity analysis. The proposed search for a better observable is a methodological desideratum, not a supplied construction. The epistemic limitation is prose-stable. The decorative near-equality formula is extraction-sensitive and is not needed for the conclusion. The counterfactual-sensitivity formulation is a faithful epistemic interpretation of the source's warning. The decorative near-identity formula is extraction-sensitive and nonessential, as stated."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9db46ab4b76c23b7b847879af8fae2cb7fd3c27938c3e2dd616c6d47b66931c5",
+        "dossier_sha256": "6ea34618aca4e77552a0aa86f25a4f9707b2b3c6b97e45f4d7936a39863a629c"
+      }
+    }
+  ]
+}

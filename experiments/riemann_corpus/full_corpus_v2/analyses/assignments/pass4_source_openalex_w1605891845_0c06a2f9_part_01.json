@@ -1,0 +1,650 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1605891845_0c06a2f9_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1605891845",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The formulas provide local setup for the source's strategy; the unit records the proposed change of viewpoint rather than validating the later proof claim.",
+      "line_end": 99,
+      "line_start": 43,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the prose is clear, but displayed formulas contain normalization glyph noise and should be checked against the page scan before formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage assembles the series continuation, pole, real and nontrivial zeros, critical strip, Laurent expansion, and functional equation, then explicitly reframes the intended RH route in terms of conformal mappings of fundamental domains.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From the analytic zeta setup to a fundamental-domain formulation of RH",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d01.txt",
+      "unit_bytes": 2887,
+      "unit_id": "openalex_w1605891845_d01",
+      "unit_sha256": "a02b69a9286014b389c9a84d2823c358a2b46be61d270e4e55294ae7e3c3acaa",
+      "unit_type": "strategic setup and representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d01.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 35,
+          "line_end": 42,
+          "text": "\n    The RP proof will be derived from the global mapping properties of Zeta function. The\nRiemann conjecture prompted the study of at lest local mapping properties in the\nneighborhood of non trivial zeros. There are known color visualizations of the module, the\nreal part and the imaginary part of Zeta function at some of those points (see Wolfram\nMathWorld), however they do not offer an easy way to visualize the global behavior of this\nfunction. We perfected an idea found in [8], page 213.\n\n",
+          "sha256": "84ea4b92eeabee6576c280f0a739644ce758a416a16de460bfb31d78087fb63d"
+        },
+        "after": {
+          "line_start": 100,
+          "line_end": 107,
+          "text": "\n    The concept of a fundamental domain, as it appears here, has been formulated by\nAhlfors, who also emphasized its importance as a tool in the study of analytic functions. He\nsaid: Whatever the advantage of such a representation may be, the clearest picture of the\nRiemann surface is obtained by direct consideration of the fundamental regions in the\nz-plane ([1], page 99).\n\n    Starting with the study of Blaschke products ([4], [5], [7]), we followed a true program of\n",
+          "sha256": "9ea5453e0bc2a7b5779ba63ceac350216ecd27d346c7e101c3f2815f31059365"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 136,
+            "line_start": 25,
+            "mathematical_role": "Sets up zeta, its pole, zeros, functional equation, the RH target, and the proposed fundamental-domain/global-mapping viewpoint."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 99,
+          "line_start": 43,
+          "title": "From the analytic zeta setup to a fundamental-domain formulation of RH",
+          "unit_id": "openalex_w1605891845_d01",
+          "unit_type": "strategic setup and representation change",
+          "why_material": "The passage assembles the series continuation, pole, real and nontrivial zeros, critical strip, Laurent expansion, and functional equation, then explicitly reframes the intended RH route in terms of conformal mappings of fundamental domains."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The formulas provide local setup for the source's strategy; the unit records the proposed change of viewpoint rather than validating the later proof claim.",
+          "representation_dependency": "Moderate: the prose is clear, but displayed formulas contain normalization glyph noise and should be checked against the page scan before formula-level reuse.",
+          "unit_id": "openalex_w1605891845_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 135,
+            "line_start": 101,
+            "title": "Fundamental domains near an essential singularity",
+            "unit_id": "openalex_w1605891845_d02",
+            "unit_type": "definition and global geometric consequence",
+            "why_material": "The source defines the working role of fundamental regions as domains mapped conformally onto a slit plane and derives the proposed accumulation pattern: finitely many meet a compact set, while infinitely many occur outside it toward infinity."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 42,
+              "line_start": 25,
+              "reason": "Section heading, broad RH motivation, and announcement of the global-mapping strategy."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1605891845_d01",
+        "spontaneous": {
+          "unit_id": "openalex_w1605891845_d01",
+          "spontaneous_reading": "The operative move is to replace a list of analytic facts about ζ with a global geometric question: how ζ partitions its argument plane into domains on which it acts conformally."
+        },
+        "directed": {
+          "unit_id": "openalex_w1605891845_d01",
+          "source_grounded_mathematics": "The passage recalls analytic continuation of the Dirichlet series, the simple pole at 1, trivial and nontrivial zeros, the critical strip and line, a Laurent expansion, and the functional equation, then announces a fundamental-domain approach to RH.",
+          "conceptual_reading": "The proposed compression is from pointwise zero-location data to the organization of injective conformal pieces. If valid, global constraints on how those pieces fit could turn a spectral-looking question about zeros into a topological-geometric obstruction.",
+          "representation_or_bridge": "Fundamental domains are the bridge from ζ as a meromorphic formula to ζ as a branched global map. They expose sheets, boundaries, and exceptional values, while the displayed expansions supply analytic normalization rather than the later argument itself.",
+          "boundary_or_failure": "This unit only states the change of viewpoint; it neither constructs the domains nor shows that their geometry controls RH. The later claimed proof must not be inferred from this setup.",
+          "uncertainty": "Moderate: the prose-level strategy is clear, but several displayed formulas have normalization/OCR damage and require scan verification before formula-level reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1605891845_d01",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly identifies the span's shift from analytic setup to the proposed study of zeta through conformal mapping properties of fundamental domains.",
+          "It correctly limits this unit to an announced viewpoint rather than treating it as an RH argument."
+        ],
+        "inference": [
+          "Recasting zero location as a global geometric organization problem is a plausible conceptual compression of the author's proposal."
+        ],
+        "unsupported_or_imported": [
+          "Calling zeta a 'branched global map' and saying this span exposes sheets, boundaries, and exceptional values imports machinery not stated in the frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic 'representation exposes structure' language becomes substantive only when tied to the author's exact fundamental-domain proposal."
+        ],
+        "context_or_ocr_risk": [
+          "Several displayed formulas are visibly damaged, including normalization in the Laurent expansion and functional equation, so formula-level reuse is unsafe without scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the imported sheets/branched-map vocabulary; retain the explicit move from the recalled analytic facts to the author's proposed fundamental-domain study, and keep all claimed RH control conditional and unproved."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the combinatorial bookkeeping later used to index fundamental domains and adjacent zero configurations.",
+      "line_end": 234,
+      "line_start": 221,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low to moderate: the prose is complete, with only subscripts and inverse-image symbols affected by OCR.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Within each strip the source distinguishes one component mapping bijectively to (-infinity,1) from finitely many components mapping to the whole real axis, thereby tying the count of curves to nontrivial zeros and points where zeta equals 1.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The j_k-strip inventory of zeros, one-points, and real-axis components",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d05.txt",
+      "unit_bytes": 1222,
+      "unit_id": "openalex_w1605891845_d05",
+      "unit_sha256": "57360c378ce71f4ed89e8672fac493daccc6ae144564a140960ce08a8a133305",
+      "unit_type": "structural decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d05.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 213,
+          "line_end": 220,
+          "text": "\n                                                                                                4\n\n<!-- source-page: 5 -->\n\nthe only pole of ζ is s = 1. When a point s travels on Γ ′k and then on Γ ′k+1 leaving the strip at\nleft, ζs moves on the real axis from 1 to ∞ and back. □\n\n",
+          "sha256": "3de5120b70cc7a0d3f828a7dafe390c9f4246c501b39136eadfdb78e434f87f5"
+        },
+        "after": {
+          "line_start": 235,
+          "line_end": 242,
+          "text": "\n      Theorem 2: When the continuation takes place over the whole real axis, the components\nΓ k,j are such that the branches corresponding to both the positive and the negative real half\naxis contain only points σ + it with σ < 0 for |σ| big enough.\n\n    Proof: A point traveling in the same direction on a circle γ centered at the origin of the\nz-plane meets consecutively the positive and the negative real half axis. Thus the pre-image\nof γ should meet consecutively the branches corresponding to the pre-image of the positive\n",
+          "sha256": "e1eb2333481f1d8aaaaf6116860bb591c1869644b33f9bdb57ea6f3870722988"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The Pre-Image by zeta of the Real Axis",
+            "line_end": 305,
+            "line_start": 137,
+            "mathematical_role": "Develops simultaneous continuation of real-axis pre-images, strip decomposition, color alternation, unit-disc pre-images, and conformal-grid visualization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 234,
+          "line_start": 221,
+          "title": "The j_k-strip inventory of zeros, one-points, and real-axis components",
+          "unit_id": "openalex_w1605891845_d05",
+          "unit_type": "structural decomposition",
+          "why_material": "Within each strip the source distinguishes one component mapping bijectively to (-infinity,1) from finitely many components mapping to the whole real axis, thereby tying the count of curves to nontrivial zeros and points where zeta equals 1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the combinatorial bookkeeping later used to index fundamental domains and adjacent zero configurations.",
+          "representation_dependency": "Low to moderate: the prose is complete, with only subscripts and inverse-image symbols affected by OCR.",
+          "unit_id": "openalex_w1605891845_d05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 219,
+            "line_start": 187,
+            "title": "Quasi-lacunary value 1 and the infinite strip decomposition",
+            "unit_id": "openalex_w1605891845_d04",
+            "unit_type": "theorem-plus-proof fragment",
+            "why_material": "The paper identifies 1 as a quasi-lacunary value, obtains unbounded boundary curves from continuation over (1,+infinity), and states that consecutive curves bound doubly infinite strips mapped onto a slit plane; the proof uses the unique pole to rule out boundary intersection."
+          },
+          {
+            "line_end": 255,
+            "line_start": 236,
+            "title": "Color alternation constrains remote branches, derivative zeros, and circle pre-images",
+            "unit_id": "openalex_w1605891845_d06",
+            "unit_type": "geometric constraint and consequences",
+            "why_material": "Theorem 2 imposes a common left-half-plane direction on both sign branches, and the source then applies color alternation to claim unique derivative zeros between consecutive trivial zeros and unbounded alternating components of circle pre-images."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable construction proceeds from simultaneous continuation of signed real-axis pre-images to infinite strips, inventories special components in each strip, and cuts those strips at branch-value pre-images into fundamental domains with one stated zero each.",
+            "limit": "The synthesis is internal to the paper and inherits its cited simplicity, branch-point-count, and uniqueness claims; it does not independently establish them.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d03",
+              "openalex_w1605891845_d04",
+              "openalex_w1605891845_d05",
+              "openalex_w1605891845_d07",
+              "openalex_w1605891845_d09"
+            ],
+            "title": "From real-axis lifts to a countable fundamental-domain partition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1605891845_d05",
+        "spontaneous": {
+          "unit_id": "openalex_w1605891845_d05",
+          "spontaneous_reading": "Each strip is compressed into a finite inventory: one distinguished component escaping toward the value 1, plus whole-real-axis components pairing one-points with nontrivial zeros."
+        },
+        "directed": {
+          "unit_id": "openalex_w1605891845_d05",
+          "source_grounded_mathematics": "Inside Sₖ, points uₖ,ⱼ satisfy ζ(uₖ,ⱼ)=1 and components Γₖ,ⱼ of ζ⁻¹(R) contain those points and nontrivial zeros sₖ,ⱼ. One Γₖ,₀ is claimed to map bijectively to (-∞,1), while jₖ-1 others map bijectively to all of R, yielding jₖ curves and zeros but jₖ-1 one-points.",
+          "conceptual_reading": "The strip's complicated curve geometry is reduced to combinatorial bookkeeping. The exceptional component accounts for the asymptotic value 1, and the remaining components make zeros and one-points alternate as structural markers.",
+          "representation_or_bridge": "The jₖ-strip is the intermediate object connecting global strip geometry to an indexed finite set of fibers, zeros, and one-points. It preserves incidence and order but not metric placement.",
+          "boundary_or_failure": "Uniqueness of Γₖ,₀, finiteness of the other components, and their bijective projection properties are imported from a cited theorem rather than established here.",
+          "uncertainty": "Moderate: the inventory is explicit and prose-led, but OCR affects subscripts and the decisive classification depends on uninspected prior work."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1605891845_d05",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately gives the distinguished Gamma_(k,0), the j_k-1 whole-real-axis components, and the resulting counts of curves, zeros, and one-points inside a strip.",
+          "It properly attributes uniqueness, finiteness, and bijectivity to an external cited theorem."
+        ],
+        "inference": [
+          "Reducing the strip to finite incidence bookkeeping is a reasonable conceptual interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the remaining components make zeros and one-points 'alternate' is not stated in this span; it establishes co-membership and counts, not an internal alternating order.",
+          "Saying the representation preserves order overstates the evidence beyond the stated consecutiveness of curve labels."
+        ],
+        "paraphrase_or_style_risk": [
+          "The intermediate-object/preserves-incidence phrasing is useful only if restricted to the exact inventory actually given."
+        ],
+        "context_or_ocr_risk": [
+          "Subscripts and inverse-image symbols are noisy, and the classification is imported from [3], Theorem 7."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the alternation and broad order claims with the supported component-wise incidence and counting relation, explicitly attributed to [3]."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The count of branch points and uniqueness/simple-zero statements are attributed to cited papers [3] and [9], not established within this span.",
+      "line_end": 318,
+      "line_start": 308,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the expansion-and-fusion construction is recoverable from prose despite noisy subscripts.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starting from small disjoint pre-image circles around zeros, the passage increases the radius until loops fuse at derivative branch points, then combines pre-images of branch-value segments and (1,+infinity) to bound sub-strips that are declared fundamental domains.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expanding zero loops, fusion at branch points, and fundamental-domain boundaries",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d09.txt",
+      "unit_bytes": 1047,
+      "unit_id": "openalex_w1605891845_d09",
+      "unit_sha256": "29cdbec97f15dfd3cd597e6743744fe5322f02b93269e8e80b2e474e3fd8908c",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d09.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 300,
+          "line_end": 307,
+          "text": "\n\n                                                                                               6\n\n<!-- source-page: 7 -->\n\n3. Fundamental Domains of the Riemann Zeta Function\n\n",
+          "sha256": "7e5e5e6acb77e612032d1da2c0b79df746e456fb142f99aebe10c857234bcb40"
+        },
+        "after": {
+          "line_start": 319,
+          "line_end": 326,
+          "text": "\n       The simplicity of the zeros of ζ has been proved in [9] by using the so-called intertwined\ncurves. Namely, it has been shown that the components Υ ′k of the pre-image by ζ ′ of the\ninterval −∞, 0 of the real axis such that lim σ−>−∞ ζ ′ σ + it = −∞ and\nlim σ−>+∞ ζ ′ σ + it = 0, σ + it ∈ Υ ′k form infinite strips Σ k containing j k − 1 simple zeros of\nζ ′ . These zeros belong to the components Υ k,j , j ≠ 0 of the pre-image by ζ ′ of the real axis.\nThere is also in Σ k a unique component Υ k,0 of the pre-image of the interval 0, +∞. These\ncomponents follow also the color alternation rule. It has been proved in [9] that there is a one\n",
+          "sha256": "48ed07c5420b933139bce129dd2b6953312204c58fed5e95985488d800523207"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Fundamental Domains of the Riemann Zeta Function",
+            "line_end": 437,
+            "line_start": 306,
+            "mathematical_role": "Constructs fundamental domains from expanding level curves and branch points, relates zeta and its derivative through intertwined curves, and proves the stated turning-point property."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 318,
+          "line_start": 308,
+          "title": "Expanding zero loops, fusion at branch points, and fundamental-domain boundaries",
+          "unit_id": "openalex_w1605891845_d09",
+          "unit_type": "construction",
+          "why_material": "Starting from small disjoint pre-image circles around zeros, the passage increases the radius until loops fuse at derivative branch points, then combines pre-images of branch-value segments and (1,+infinity) to bound sub-strips that are declared fundamental domains."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The count of branch points and uniqueness/simple-zero statements are attributed to cited papers [3] and [9], not established within this span.",
+          "representation_dependency": "Moderate: the expansion-and-fusion construction is recoverable from prose despite noisy subscripts.",
+          "unit_id": "openalex_w1605891845_d09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 292,
+            "line_start": 274,
+            "title": "Pulling back an orthogonal polar net as a conformal-coordinate visualization",
+            "unit_id": "openalex_w1605891845_d08",
+            "unit_type": "representation change and visualization method",
+            "why_material": "The source replaces isolated real-axis curves with the pre-image of rays and concentric circles, using color, saturation, brightness, and conformal modulus to compare image quadrilaterals with their pre-images and to visualize repeating strip geometry."
+          },
+          {
+            "line_end": 332,
+            "line_start": 320,
+            "title": "Intertwined zeta and zeta-derivative curves with color matching",
+            "unit_id": "openalex_w1605891845_d10",
+            "unit_type": "bridge construction",
+            "why_material": "The source overlays strip decompositions for zeta and its derivative, posits one-to-one correspondence between intersecting curve families, and combines color alternation with a cross-function color-matching rule to support claimed zero simplicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable construction proceeds from simultaneous continuation of signed real-axis pre-images to infinite strips, inventories special components in each strip, and cuts those strips at branch-value pre-images into fundamental domains with one stated zero each.",
+            "limit": "The synthesis is internal to the paper and inherits its cited simplicity, branch-point-count, and uniqueness claims; it does not independently establish them.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d03",
+              "openalex_w1605891845_d04",
+              "openalex_w1605891845_d05",
+              "openalex_w1605891845_d07",
+              "openalex_w1605891845_d09"
+            ],
+            "title": "From real-axis lifts to a countable fundamental-domain partition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 305,
+              "line_start": 293,
+              "reason": "Blank space, Fig. 2 label, pagination, and page marker; the referenced graphic is absent from normalized text."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1605891845_d09",
+        "spontaneous": {
+          "unit_id": "openalex_w1605891845_d09",
+          "spontaneous_reading": "Growing level loops around zeros until they merge turns critical points into a merge tree; cutting along the corresponding branch-value lifts then carves a strip into proposed fundamental domains."
+        },
+        "directed": {
+          "unit_id": "openalex_w1605891845_d09",
+          "source_grounded_mathematics": "Small-circle pre-images in a jₖ-strip begin as disjoint Jordan loops, each around one zero. As the radius grows, loops meet and fuse at branch points vₖ,ⱼ. Pre-images of segments from 1 to ζ(vₖ,ⱼ), together with ζ⁻¹([1,+∞)), are then said to bound sub-strips Ωₖ,ⱼ, each a fundamental domain with one simple zero.",
+          "conceptual_reading": "A continuous scale parameter reveals the branching hierarchy: connected components change exactly at critical values. Those events provide natural cuts for decomposing a many-sheeted region into one-sheeted pieces.",
+          "representation_or_bridge": "The expanding level loops are the dynamic representation; critical points and their branch-value segments bridge that filtration to static fundamental-domain boundaries.",
+          "boundary_or_failure": "The exact count jₖ-1 of branch points and the one-simple-zero property of every Ωₖ,ⱼ are attributed to cited papers. The span does not rule out more complicated mergers or prove that the proposed boundaries yield conformal bijections.",
+          "uncertainty": "Moderate: the expansion-and-fusion mechanism is clear despite noisy subscripts, but its decisive counting and uniqueness claims are external."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1605891845_d09",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately follows small level loops around zeros, their reported fusion at branch points as radius increases, and the proposed cuts by branch-value segment preimages and the [1,+infinity) preimage.",
+          "It correctly identifies the exact branch-point count, simple-zero claim, and fundamental-domain conclusion as externally attributed."
+        ],
+        "inference": [
+          "A merger hierarchy or merge-tree viewpoint is a useful interpretation of the radius filtration, provided it remains explicitly provisional."
+        ],
+        "unsupported_or_imported": [
+          "The statement that connected components change 'exactly' at critical values is stronger than this span, which narrates certain mergers but does not exclude other changes.",
+          "Calling the resulting pieces one-sheeted or natural cuts silently assumes the cited fundamental-domain conclusion instead of auditing it."
+        ],
+        "paraphrase_or_style_risk": [
+          "The dynamic-to-static bridge is substantive, but 'natural cuts' risks endorsing rather than reporting the construction."
+        ],
+        "context_or_ocr_risk": [
+          "Subscripts are noisy, and the decisive count and conformal-domain properties are assigned to [3] and [9]."
+        ],
+        "missed_mechanism": [
+          "The source distinguishes unbounded preimage curves starting at one-points from arcs connecting two one-points; that boundary dichotomy should be retained when precision matters."
+        ],
+        "revision_instructions": [
+          "Change 'exactly' to a report of the mergers described by the author, preserve the curve/arc boundary alternatives, and keep the fundamental-domain and unique-simple-zero properties explicitly cited rather than inferred."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly an observed numerical-geometric heuristic, not a derivation supplied by the text.",
+      "line_end": 660,
+      "line_start": 658,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the estimate and inference depend on the omitted graphics and should not be reused as certified data without scan and computation checks.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source connects an approximately stable critical-strip width in the pictures with increasing zeros per strip to infer that average consecutive-zero spacing decreases with height while remaining nonzero.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Approximate strip width and decreasing average zero spacing",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d16.txt",
+      "unit_bytes": 281,
+      "unit_id": "openalex_w1605891845_d16",
+      "unit_sha256": "d8e2cbc1ac278dc5c9e6be18bd316b06dc6a6386bb01ab2d90bdf6925d7613c9",
+      "unit_type": "empirical heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d16.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 650,
+          "line_end": 657,
+          "text": "\n\n                                                                                                     14\n\n<!-- source-page: 15 -->\n\nand 10 9 + 19. These phenomena do not contradict the theorems proven in [3] and [9].\n\n",
+          "sha256": "d01561bf08c13e28ab9c171878057e64563f3b82784c01a49029865a8cf47994"
+        },
+        "after": {
+          "line_start": 661,
+          "line_end": 668,
+          "text": "\n\n\n\n                             Fig.6 a\n\n\n\n",
+          "sha256": "6800f712032003d500729f97ae5c24e1e9bcd2681dc797766815c03463b4ffa8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Addendum and figure-only tail",
+            "line_end": 714,
+            "line_start": 632,
+            "mathematical_role": "Reports graphical observations about fundamental-domain counts, exceptional configurations, apparent strip width, curve separation, and a proposed geometric quantification problem; several intervening pages contain only missing figures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 660,
+          "line_start": 658,
+          "title": "Approximate strip width and decreasing average zero spacing",
+          "unit_id": "openalex_w1605891845_d16",
+          "unit_type": "empirical heuristic",
+          "why_material": "The source connects an approximately stable critical-strip width in the pictures with increasing zeros per strip to infer that average consecutive-zero spacing decreases with height while remaining nonzero."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is explicitly an observed numerical-geometric heuristic, not a derivation supplied by the text.",
+          "representation_dependency": "High: the estimate and inference depend on the omitted graphics and should not be reused as certified data without scan and computation checks.",
+          "unit_id": "openalex_w1605891845_d16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 656,
+            "line_start": 638,
+            "title": "Addendum observations on domain counts and unexpected high-strip geometry",
+            "unit_id": "openalex_w1605891845_d15",
+            "unit_type": "computational observation and counterconfiguration",
+            "why_material": "The addendum reports increasing average numbers of fundamental domains in higher strips and highlights a bounded unit-disc pre-image component ahead of the unbounded one and curves embracing other curves as unexpected but allegedly theorem-compatible phenomena."
+          },
+          {
+            "line_end": 709,
+            "line_start": 699,
+            "title": "Apparent overlap of intertwined curves as a resolution artifact",
+            "unit_id": "openalex_w1605891845_d17",
+            "unit_type": "representation caveat and open problem",
+            "why_material": "The source distinguishes apparent plotted overlap from actual intersection, attributes the illusion to curve separation below dot resolution, and proposes quantifying that distance with geometric-function-theory inequalities."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pulled-back polar grids and high-strip graphics suggest stable conformal organization, changing domain counts, exceptional nesting, and shrinking visible separations, while the final example warns that plot resolution can falsely suggest curve intersection.",
+            "limit": "These are qualitative or sampled graphical observations; the normalized source lacks the figures and supplies neither reproducible generation details nor certified bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d08",
+              "openalex_w1605891845_d15",
+              "openalex_w1605891845_d16",
+              "openalex_w1605891845_d17"
+            ],
+            "title": "Visualization as both structural probe and source of artifacts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 698,
+              "line_start": 661,
+              "reason": "Figure-only and pagination pages for Figs. 6-8; graphical mathematical content is not present in normalized text."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1605891845_d16",
+        "spontaneous": {
+          "unit_id": "openalex_w1605891845_d16",
+          "spontaneous_reading": "A visually stable strip width is combined with increasing zero counts to suggest crowding: more zeros occupy roughly the same horizontal-scale cell as height grows."
+        },
+        "directed": {
+          "unit_id": "openalex_w1605891845_d16",
+          "source_grounded_mathematics": "The source reports that the width of Sₖ across the critical strip is approximately 10 for the observed k and infers that the average distance between consecutive nontrivial zeros tends to zero with height while never becoming zero.",
+          "conceptual_reading": "This is a density-from-capacity heuristic: if a region's effective width stays bounded while its inventory grows, average spacing must shrink.",
+          "representation_or_bridge": "Strip width and zeros-per-strip are the coarse observables bridging conformal pictures to a spacing claim. The averaging discards local fluctuations and individual zero locations.",
+          "boundary_or_failure": "Finite graphical observations do not establish an asymptotically constant width or a limiting zero-spacing statement. The assertion that spacing never vanishes relies on distinctness or simplicity, not on the visual estimate itself.",
+          "uncertainty": "Very high: the unit explicitly presents an empirical heuristic, and the omitted graphics and computations prevent numerical or asymptotic verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1605891845_d16",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately reports the author's approximate width-around-10 observation, the asserted average-spacing conclusion, and the fact that this is an empirical heuristic rather than a derivation.",
+          "It correctly warns that finite omitted graphics cannot establish an asymptotic limit or nonzero spacing."
+        ],
+        "inference": [
+          "A bounded-capacity/crowding heuristic is a reasonable reconstruction of the intended intuition."
+        ],
+        "unsupported_or_imported": [
+          "The candidate's explicit premise that zeros-per-strip increases is not present in this three-line frozen span and is imported from neighboring material.",
+          "The exact-span evidence does not supply the measurements or argument connecting strip width to vertical zero spacing."
+        ],
+        "paraphrase_or_style_risk": [
+          "The density-from-capacity template can sound explanatory while hiding the missing variable definitions and asymptotic evidence."
+        ],
+        "context_or_ocr_risk": [
+          "The semantic unit is too narrow to support its own asymptotic inference, and the graphics and computations on which the estimate depends are omitted."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Restrict the analysis to reporting the author's width observation and spacing heuristic; remove the imported growing-inventory premise or label it explicitly as outside this span, and do not turn the graphical claim into an asymptotic argument."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "c00f88bac7b3bf20f1fd8cf4c71d75cc52558dad9af57beefe666792fb24179b"
+}

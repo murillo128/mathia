@@ -1,0 +1,385 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1913535681",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1913535681_c28fdc79_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Hadamard factorization defines the zero kernel, pointwise minorization controls its sum, compact Fourier support makes the explicit formula's prime side finite, and L1 loss fixes the main constant.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1913535681_v2_u02",
+          "openalex_w1913535681_v2_u03",
+          "openalex_w1913535681_v2_u04",
+          "openalex_w1913535681_v2_u06"
+        ],
+        "proposed_limit": "The argument is conditional on RH and still estimates the surviving prime sum essentially trivially.",
+        "source_id": "openalex_w1913535681",
+        "synthesis_id": "riemann_v2_within_30178e0da0c4dbdf2ba60708",
+        "title": "Extremal approximation is an interface between zero geometry and finite prime data"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the representation change that makes the extremal problem possible.",
+          "line_end": 100,
+          "line_start": 64,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends essentially on RH and on the exact completion; all displayed factors are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Under RH, termwise division of the absolutely convergent Hadamard products pairs each zero with a factor involving (t-gamma)^2; Stirling then isolates log t minus one half the sum of a fixed logarithmic kernel.",
+          "source_id": "openalex_w1913535681",
+          "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A ratio of completed zeta values turns log|zeta| into a positive zero-distance kernel",
+          "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u02.txt",
+          "unit_bytes": 2299,
+          "unit_id": "openalex_w1913535681_v2_u02",
+          "unit_sha256": "0453b2519c553d73a7e5fba6a65b10470352d410aea85bb2c6e66886839d6de9",
+          "unit_type": "hadamard-ratio-representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The ratio removes normalization while preserving zero geometry. RH is exactly what collapses two-dimensional complex zero positions to a real distance kernel, whose positivity makes a lower approximation useful for an upper bound on log|zeta|.",
+            "nonparaphrase_operation": "The xi ratio and the kernel f are the bridge objects. They translate multiplicative Hadamard factors into an additive zero statistic suited to extremal approximation.",
+            "quality_reason": "The xi ratio, termwise division of the absolutely convergent Hadamard product, RH specialization rho=1/2+i gamma, Stirling estimate and kernel identity are all explicit. No unsupported generalization is present; failure without RH is correctly limited to this positive squared-distance form. The response performs a real representation analysis rather than merely restating the formulas.",
+            "source_support": "The completed xi function has an absolutely convergent Hadamard product. Evaluating it at 1/2+it and -3/2+it, dividing termwise, writing rho=1/2+i gamma under RH, applying the functional equation, and bounding zeta at 5/2-it yield log|zeta(1/2+it)|=log t+O(1)-(1/2) sum_gamma f(t-gamma), with f(x)=log((4+x^2)/x^2).",
+            "speculation_status": "Without RH, zeros cannot all be represented as 1/2+i gamma and the positive squared-distance kernel formula fails in this form. The ratio also relies on the exact completion and absolute product convergence. The factors and assumptions are cleanly extracted; the derivation is source-explicit rather than reconstructed from neighboring material. Interpreting the ratio as removing normalization while preserving zero geometry is a faithful conceptual summary. No material extraction defect affects the displayed factors."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps the four roles distinct rather than treating bandlimiting alone as sufficient.",
+          "line_end": 123,
+          "line_start": 101,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "No material extraction defect.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proposition 2.1 specifies all properties needed downstream: domination from below, complex growth sufficient for the explicit formula, a frequency cutoff, and a computable integral deficit that becomes the main constant.",
+          "source_id": "openalex_w1913535681",
+          "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The required minorant combines pointwise order, exponential type, compact Fourier support, and exact L1 loss",
+          "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u03.txt",
+          "unit_bytes": 1253,
+          "unit_id": "openalex_w1913535681_v2_u03",
+          "unit_sha256": "0ce437c9c0871e051fe6196176ce46e38ea213d08d39b7e218a20e4e1ec0a830",
+          "unit_type": "extremal-minorant-contract",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The four properties solve distinct proof burdens. Domination preserves order, growth admits the explicit formula, compact support enforces finite frequency complexity, and L1 loss quantifies approximation quality.",
+            "nonparaphrase_operation": "g_Delta is the bridge object connecting pointwise zero control to a bandwidth-limited prime expression; Delta is the tunable resolution parameter.",
+            "quality_reason": "All four stated proof obligations—pointwise lower/upper control, entire growth, Fourier support/boundedness, and exact L1 deficit—are directly in Proposition 2.1. No unsupported theorem or analogy is introduced. The four-role analysis is specific and non-paraphrastic rather than generic 'representation exposes structure' prose.",
+            "source_support": "For every Delta>0, Proposition 2.1 supplies an entire g_Delta bounded below by -C/(1+x^2) and above by f on the real line, with controlled complex growth. Its Fourier transform is real, bounded, and supported in [-Delta,Delta]. The integral of f-g_Delta is given exactly by a Delta-dependent logarithmic expression.",
+            "speculation_status": "Bandlimiting alone is insufficient: a function with the wrong pointwise direction, uncontrolled growth, or unknown integral deficit would not prove the desired bound. The proposition does not itself apply the explicit formula. No material extraction defect is apparent; the exact displayed deficit should nevertheless be preserved when reused quantitatively. Calling the proposition an interface contract is a useful interpretation of the separate clauses. No material extraction defect is visible."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the parameter choice that yields the theorem rather than only the formal inequality.",
+          "line_end": 175,
+          "line_start": 128,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The prime sum and error terms are formula-sensitive but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replacing the zero kernel by its minorant permits the zeta explicit formula; the L1 deficit supplies the log t term, compact support truncates the prime sum, and choosing Delta balances that sum against exponential-type errors.",
+          "source_id": "openalex_w1913535681",
+          "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The explicit formula converts minorant quality into a prime sum and an optimizable bandwidth error",
+          "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u04.txt",
+          "unit_bytes": 3160,
+          "unit_id": "openalex_w1913535681_v2_u04",
+          "unit_sha256": "bd6e8635785e5acda25497fd20435f1f07cec98dbf18745c8930c9870d6e135a",
+          "unit_type": "explicit-formula-bound-and-optimization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Bandwidth Delta mediates a resolution-cost tradeoff: greater frequency support improves the kernel approximation but enlarges the accessible prime sum and exponential-type errors. The theorem emerges from balancing these opposing monotone effects.",
+            "nonparaphrase_operation": "The Fourier transform of g_Delta is the explicit-formula bridge between zero locations and prime powers; its value at zero carries the L1 deficit into the leading term.",
+            "quality_reason": "The minorization inequality, explicit formula, gamma contribution, compactly supported prime sum, absolute bound and choice pi Delta=log log t-3 log log log t are explicit. No material unsupported claim appears; the lack of arithmetic cancellation is accurately identified from the absolute estimate. The tradeoff language is supported by concrete monotone terms and the actual parameter choice.",
+            "source_support": "The inequality sum f(t-gamma)>=sum g_Delta(t-gamma) is inserted into the zeta representation. Lemma 2.2's explicit formula evaluates the latter using gamma terms and a von-Mangoldt sum. Proposition 2.1 gives the main log t contribution and bounds auxiliary terms, while Fourier support restricts the prime sum. Bounding that sum by exp(pi Delta) and taking pi Delta=log log t-3 log log log t yields Theorem 1.1.",
+            "speculation_status": "The prime sum is bounded absolutely here, so cancellation beyond compact support is not exploited. A better minorant alone cannot bypass whatever growth remains in that arithmetic term. The formulas are readable but quantitatively sensitive; the exact choice of Delta and error powers should be retained from the source. The bandwidth tradeoff is a direct reasonable inference from the inverse-Delta loss and exponential prime/error growth. Quantitative formulas are legible but should be preserved exactly."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source notes that global nonnegativity is expected but proves only the weaker lower bound actually needed.",
+          "line_end": 339,
+          "line_start": 238,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several Fourier-integral formulas are dense but cleanly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Sinc interpolation controls complex growth and a real lower bound, the Carneiro-Vaaler transform formula proves compact support, and an exact integral computes the L1 deficit; rescaling then gives every part of Proposition 2.1.",
+          "source_id": "openalex_w1913535681",
+          "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+          "source_page_markers_inside_unit": [
+            5,
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Interpolation bounds and Fourier identities verify the minorant after rescaling",
+          "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u06.txt",
+          "unit_bytes": 5953,
+          "unit_id": "openalex_w1913535681_v2_u06",
+          "unit_sha256": "d0b2752c09295759df85305e13d5c913a4b29647b36e3ad8b0073fd352b21bdb",
+          "unit_type": "property-verification-and-scaling",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Verification is modular: interpolation handles physical-space growth and order, Fourier representation handles frequency support, and a conserved integral measures optimality. The proof deliberately proves the weakest lower bound sufficient downstream rather than an attractive stronger claim.",
+            "nonparaphrase_operation": "The squared-sinc basis links discrete half-integer samples to an entire function; L-hat links the mixture measure to Fourier support; scaling z to Delta z transports the unit-bandwidth solution to the desired resolution.",
+            "quality_reason": "The sinc interpolation bound, paired-term lower bound, Fourier identities, support, L1 deficit and final rescaling are explicitly used to prove Proposition 2.1. The response correctly distinguishes expected global nonnegativity from the weaker bound actually proved. The 'weakest sufficient claim' observation is specific to the source's explicit remark and is not empty style.",
+            "source_support": "Poisson summation gives a squared-sinc partition used to express and bound G_Delta. Bounds on f and f' yield exponential-type growth; the Carneiro-Vaaler order gives the upper minorant inequality, while pairing n with 1-n yields a sufficient lower bound without proving expected global nonnegativity. Fourier identities give integrability, support through L-hat, a uniform transform bound, and the exact L1 deficit. Defining g_Delta(z)=G_Delta(z Delta)+f(1/Delta) proves all parts of Proposition 2.1.",
+            "speculation_status": "Global nonnegativity of the shifted G_Delta is only expected, not established. The downstream theorem needs only a decaying negative lower bound, so treating nonnegativity as proved would overstate the source. Dense Fourier-integral formulas appear cleanly extracted. Exact normalization and scaling factors remain formula-sensitive. Describing the verification as modular is a faithful synthesis of the proof's physical-space and Fourier-space components. Dense formulas are clean enough, though scaling constants remain quantitative."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_cca786dbe90c9bb9e727f473f6fa37812fb08a11d9732e7d3002417e4f79544b",
+        "dossier_sha256": "eb3e84cbe90822fc8b2d025089f4984d48629b3e47fbe9868b79eddf56298567"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The Carneiro-Vaaler minorant is optimal for the exact logarithmic kernel, while convolution minorants sacrifice the leading constant but adapt to shifted kernels outside that theorem's measure class.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1913535681_v2_u05",
+          "openalex_w1913535681_v2_u06",
+          "openalex_w1913535681_v2_u07"
+        ],
+        "proposed_limit": "The source gives no universal optimal construction for all related L-function kernels.",
+        "source_id": "openalex_w1913535681",
+        "synthesis_id": "riemann_v2_within_6fd5b4f1c5e5616f52e19896",
+        "title": "Optimality and portability trade off across related kernels"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the derivative check used to identify the measure representation.",
+          "line_end": 237,
+          "line_start": 177,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The interpolation series and measure density are exact-formula dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The kernel is expressed, after scaling and an additive normalization, as an integral of exponential kernels against a nonnegative measure; the general interpolation formula then supplies the optimal entire minorant.",
+          "source_id": "openalex_w1913535681",
+          "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A positive measure representation places the logarithmic kernel inside the Carneiro-Vaaler class",
+          "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u05.txt",
+          "unit_bytes": 3789,
+          "unit_id": "openalex_w1913535681_v2_u05",
+          "unit_sha256": "914e15b1f673483bb1e5b85aebf52973997c99105f68dbad59068e2a7ae032d9",
+          "unit_type": "extremal-function-specialization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Positive-mixture representation is a membership certificate: it reveals that the target logarithm is assembled from basis kernels for which an extremal theorem already exists. Scaling and additive normalization preserve the relevant approximation order while fitting the theorem's template.",
+            "nonparaphrase_operation": "The measure mu_Delta is the bridge from the logarithmic kernel to the Carneiro-Vaaler class; the half-integer interpolation series G_Delta transfers the general extremal result back to the concrete problem.",
+            "quality_reason": "The nonnegative measure, its integral identity with the scaled logarithmic kernel, the derivative check and the Carneiro-Vaaler optimal interpolation minorant are all explicit. No unsupported extension is made; the response correctly stops before later verification of Proposition 2.1. The basis-kernel language is tied to the exact measure and theorem class, avoiding generic style-only prose.",
+            "source_support": "Carneiro and Vaaler optimize L1 minorants of exponential type for functions f_mu built from e^{-lambda|x|}-e^{-lambda}. The source chooses the nonnegative measure dmu_Delta=2(1-cos(2 Delta lambda))d lambda/lambda and verifies that its integral representation equals f(x/Delta)-f(1/Delta), using equality at x=1 and matching derivatives. Their interpolation series G_Delta is therefore an optimal type-2pi minorant of this scaled kernel.",
+            "speculation_status": "The positivity and integrability condition on the measure are essential. This unit supplies optimality at exponential type 2pi before the later rescaling, but it does not yet verify every bound required by Proposition 2.1. The measure density and interpolation series are exact-formula dependent. Their conceptual roles are clear, but transcription should follow the source displays. Calling the positive-mixture representation a membership certificate is a precise conceptual inference. Exact density and interpolation normalization remain formula-sensitive but readable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source notes that global nonnegativity is expected but proves only the weaker lower bound actually needed.",
+          "line_end": 339,
+          "line_start": 238,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several Fourier-integral formulas are dense but cleanly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Sinc interpolation controls complex growth and a real lower bound, the Carneiro-Vaaler transform formula proves compact support, and an exact integral computes the L1 deficit; rescaling then gives every part of Proposition 2.1.",
+          "source_id": "openalex_w1913535681",
+          "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+          "source_page_markers_inside_unit": [
+            5,
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Interpolation bounds and Fourier identities verify the minorant after rescaling",
+          "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u06.txt",
+          "unit_bytes": 5953,
+          "unit_id": "openalex_w1913535681_v2_u06",
+          "unit_sha256": "d0b2752c09295759df85305e13d5c913a4b29647b36e3ad8b0073fd352b21bdb",
+          "unit_type": "property-verification-and-scaling",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Verification is modular: interpolation handles physical-space growth and order, Fourier representation handles frequency support, and a conserved integral measures optimality. The proof deliberately proves the weakest lower bound sufficient downstream rather than an attractive stronger claim.",
+            "nonparaphrase_operation": "The squared-sinc basis links discrete half-integer samples to an entire function; L-hat links the mixture measure to Fourier support; scaling z to Delta z transports the unit-bandwidth solution to the desired resolution.",
+            "quality_reason": "The sinc interpolation bound, paired-term lower bound, Fourier identities, support, L1 deficit and final rescaling are explicitly used to prove Proposition 2.1. The response correctly distinguishes expected global nonnegativity from the weaker bound actually proved. The 'weakest sufficient claim' observation is specific to the source's explicit remark and is not empty style.",
+            "source_support": "Poisson summation gives a squared-sinc partition used to express and bound G_Delta. Bounds on f and f' yield exponential-type growth; the Carneiro-Vaaler order gives the upper minorant inequality, while pairing n with 1-n yields a sufficient lower bound without proving expected global nonnegativity. Fourier identities give integrability, support through L-hat, a uniform transform bound, and the exact L1 deficit. Defining g_Delta(z)=G_Delta(z Delta)+f(1/Delta) proves all parts of Proposition 2.1.",
+            "speculation_status": "Global nonnegativity of the shifted G_Delta is only expected, not established. The downstream theorem needs only a decaying negative lower bound, so treating nonnegativity as proved would overstate the source. Dense Fourier-integral formulas appear cleanly extracted. Exact normalization and scaling factors remain formula-sensitive. Describing the verification as modular is a faithful synthesis of the proof's physical-space and Fourier-space components. Dense formulas are clean enough, though scaling constants remain quantitative."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Separates optimality for one kernel from robustness across related shifted kernels.",
+          "line_end": 397,
+          "line_start": 341,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact comparison inequalities require formula preservation; the methodological conclusion is prose-clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The discussion compares the optimal construction with an earlier convolution-based minorant and explains that further pointwise improvement requires nontrivial control of the resulting short prime sum; the less optimal construction remains useful for kernels outside the extremal theorem's class.",
+          "source_id": "openalex_w1913535681",
+          "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Optimal minorization improves the constant but leaves the prime Dirichlet polynomial as the barrier",
+          "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u07.txt",
+          "unit_bytes": 4122,
+          "unit_id": "openalex_w1913535681_v2_u07",
+          "unit_sha256": "bcccd9a3135e3d15c7f1d9f3a9d1f961c49fb1bf5f483c1e5bbefba5e0c06a9f",
+          "unit_type": "method-comparison-and-bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Optimality in one module need not optimize the full proof. Once extremal approximation is solved, arithmetic cancellation becomes the limiting interface. Robustness across a family of kernels can make a suboptimal construction strategically preferable.",
+            "nonparaphrase_operation": "The short von-Mangoldt Dirichlet polynomial is the exposed bottleneck. The kernels K_Delta provide an alternate convolution bridge whose compact Fourier support is easy to retain under integration and parameter changes.",
+            "quality_reason": "The source explicitly identifies the prime sums as the barrier, connects their large-value frequency to moments, reconstructs the earlier nonoptimal minorant, and notes its robustness for shifted kernels. No unsupported claim appears; the response does not say the true maximal order or barrier is resolved. The optimality-versus-robustness comparison is concrete and source-specific.",
+            "source_support": "The discussion compares estimate (5) with Soundararajan's earlier proposition and identifies the corresponding prime sums as the barrier to stronger pointwise bounds, though their large-value frequency informs moment estimates. It reinterprets the earlier argument as a nonoptimal minorant built by integrating compact-Fourier-support kernels K_Delta, derives a valid lower approximation when alpha_0 exceeds a threshold involving lambda_0, and notes that this construction also handles log((4+x^2)/(alpha^2+x^2)).",
+            "speculation_status": "The convolution minorant is explicitly nonoptimal, and compact support does not itself control the resulting prime polynomial. The comparison does not claim that the true maximal order is reached. Exact comparison inequalities and normalizations are formula-sensitive, while the bottleneck and robustness conclusions are stated clearly in prose. The conclusion that module-wise extremal optimality need not optimize the whole proof is a strong reasonable inference. Exact comparison inequalities are formula-sensitive, but methodological conclusions are prose-clear."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_cca786dbe90c9bb9e727f473f6fa37812fb08a11d9732e7d3002417e4f79544b",
+        "dossier_sha256": "eb3e84cbe90822fc8b2d025089f4984d48629b3e47fbe9868b79eddf56298567"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The analytic-conductor generalization preserves the zero-side architecture, but the quality of the final bound is governed by how sharply logarithmic-derivative coefficients can be controlled.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1913535681_v2_u04",
+          "openalex_w1913535681_v2_u08"
+        ],
+        "proposed_limit": "Both stated family bounds assume GRH, and the best constant additionally assumes Ramanujan.",
+        "source_id": "openalex_w1913535681",
+        "synthesis_id": "riemann_v2_within_6413d574e97636a6a66f7d28",
+        "title": "Coefficient hypotheses measure the cost of family-level transfer"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the parameter choice that yields the theorem rather than only the formal inequality.",
+          "line_end": 175,
+          "line_start": 128,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The prime sum and error terms are formula-sensitive but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replacing the zero kernel by its minorant permits the zeta explicit formula; the L1 deficit supplies the log t term, compact support truncates the prime sum, and choosing Delta balances that sum against exponential-type errors.",
+          "source_id": "openalex_w1913535681",
+          "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The explicit formula converts minorant quality into a prime sum and an optimizable bandwidth error",
+          "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u04.txt",
+          "unit_bytes": 3160,
+          "unit_id": "openalex_w1913535681_v2_u04",
+          "unit_sha256": "bd6e8635785e5acda25497fd20435f1f07cec98dbf18745c8930c9870d6e135a",
+          "unit_type": "explicit-formula-bound-and-optimization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Bandwidth Delta mediates a resolution-cost tradeoff: greater frequency support improves the kernel approximation but enlarges the accessible prime sum and exponential-type errors. The theorem emerges from balancing these opposing monotone effects.",
+            "nonparaphrase_operation": "The Fourier transform of g_Delta is the explicit-formula bridge between zero locations and prime powers; its value at zero carries the L1 deficit into the leading term.",
+            "quality_reason": "The minorization inequality, explicit formula, gamma contribution, compactly supported prime sum, absolute bound and choice pi Delta=log log t-3 log log log t are explicit. No material unsupported claim appears; the lack of arithmetic cancellation is accurately identified from the absolute estimate. The tradeoff language is supported by concrete monotone terms and the actual parameter choice.",
+            "source_support": "The inequality sum f(t-gamma)>=sum g_Delta(t-gamma) is inserted into the zeta representation. Lemma 2.2's explicit formula evaluates the latter using gamma terms and a von-Mangoldt sum. Proposition 2.1 gives the main log t contribution and bounds auxiliary terms, while Fourier support restricts the prime sum. Bounding that sum by exp(pi Delta) and taking pi Delta=log log t-3 log log log t yields Theorem 1.1.",
+            "speculation_status": "The prime sum is bounded absolutely here, so cancellation beyond compact support is not exploited. A better minorant alone cannot bypass whatever growth remains in that arithmetic term. The formulas are readable but quantitatively sensitive; the exact choice of Delta and error powers should be retained from the source. The bandwidth tradeoff is a direct reasonable inference from the inverse-Delta loss and exponential prime/error growth. Quantitative formulas are legible but should be preserved exactly."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps GRH, entire-order, functional-equation, and Ramanujan assumptions explicit.",
+          "line_end": 447,
+          "line_start": 398,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The conductor and coefficient normalizations are formula-sensitive but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Hadamard and explicit-formula steps extend to completed degree-d L-functions on GRH; coefficient bounds from Ramanujan give the zeta-level leading constant, while only absolute Euler-product convergence forces a threefold loss.",
+          "source_id": "openalex_w1913535681",
+          "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The minorant method transfers to analytic conductor, with Ramanujan control determining the constant loss",
+          "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u08.txt",
+          "unit_bytes": 3468,
+          "unit_id": "openalex_w1913535681_v2_u08",
+          "unit_sha256": "0f86a54150cab5396eba4db0c3c279712bc7412559815ca17236317c3dbc9f2b",
+          "unit_type": "family-generalization-and-assumption-cost",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analytic conductor is the invariant scale that absorbs arithmetic level and archimedean parameters into the transferred argument. The comparison isolates assumption cost: weaker coefficient information forces a smaller bandwidth and directly worsens the constant.",
+            "nonparaphrase_operation": "The completed L-function supplies the Hadamard zero representation, analytic conductor replaces t in the gamma estimate, and the coefficients of -L'/L bridge the explicit formula to local Euler data.",
+            "quality_reason": "The analytic axioms, GRH, conductor, explicit-formula coefficient terms, Ramanujan bound and factor-three loss under mere absolute convergence are explicit. No unsupported transfer beyond the stated L-function framework is made. The response ties generalization to exact hypotheses and quantified constant loss, so it is not content-free analogy.",
+            "source_support": "The source assumes an absolutely convergent degree-d Euler product, an order-one completion with specified gamma factors and possible poles, a contragredient functional equation, and GRH. The same minorant argument yields inequality (16) in terms of analytic conductor C(f) and logarithmic-derivative coefficients for f and its dual. Under Ramanujan, |Lambda_f(n)|<=d Lambda(n) gives the zeta-level leading constant; using only absolute Euler-product convergence gives the same shape with a factor-three loss.",
+            "speculation_status": "The extension is conditional on GRH and the stated analytic axioms. The sharp constant additionally depends on Ramanujan; absolute convergence alone cannot reproduce it and incurs the stated loss. The normalizations of conductor, completion, and coefficients are formula-sensitive but legible in this span. Calling conductor the invariant scale and the difference an assumption cost is a faithful interpretation of the comparison. Completion and conductor normalizations are formula-sensitive but readable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_cca786dbe90c9bb9e727f473f6fa37812fb08a11d9732e7d3002417e4f79544b",
+        "dossier_sha256": "eb3e84cbe90822fc8b2d025089f4984d48629b3e47fbe9868b79eddf56298567"
+      }
+    }
+  ]
+}

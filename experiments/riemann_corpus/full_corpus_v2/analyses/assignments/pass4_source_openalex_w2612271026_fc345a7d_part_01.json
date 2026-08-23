@@ -1,0 +1,162 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2612271026_fc345a7d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2612271026",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This derivation supplies the immediate setup for frozen v1 unit u01.",
+      "line_end": 335,
+      "line_start": 248,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sequence of transformations is prose-supported; exact constants, contour positions, and arguments are display-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It tracks the reusable chain from a Fourier-weighted off-diagonal sum through a residue approximation, Ramanujan sums, Cauchy integrals, and Mellin/Fourier transforms to the analytic identity compared with the recipe.",
+      "source_id": "openalex_w2612271026",
+      "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Off-diagonal averaging becomes an analytic shifted-divisor identity",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2612271026_v2_u06.txt",
+      "unit_bytes": 5296,
+      "unit_id": "full_openalex_w2612271026_v2_u06",
+      "unit_sha256": "58bcec6b3d15c17c15c665357eff50bc3332c9cd38456299b90804175c4b7eec",
+      "unit_type": "transform derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2612271026_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2612271026",
+        "title": "Moments of zeta and correlations of divisor-sums: IV",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 240,
+          "line_end": 247,
+          "text": "\n                     Conjecture 1 We conjecture for each fixedh > 0 that SA,B (s, h) has a meromorphic con-\n                     tinuation to\u0007s > 12 + with all poles only in the region|s − 1| < and that\n\n                            RA,B (y; h) = R∗A,B (y; h).\n\n                       The above is essentially the obvious pole structure that one would conjecture by using\n                     the δ-method for example.\n",
+          "sha256": "ea82edf846960d16bd2b92e4e6c54b690432c758eecb4158ea94b10631976357"
+        },
+        "after": {
+          "line_start": 336,
+          "line_end": 343,
+          "text": "                     Theorem 1\n                                        ∞\n                                        \u0006            ∞\n                                                     \u0006                            \u0003    \u0003     \u0004\u0004   \u0003 \u0003        \u0004\u0004\n                                                                                           1               1\n                                Res           μ(q)         d z+w−1 ζ (w + z − 1)DA w, e −       DB z, e −\n                               w=1−α                                                      qd              qd\n                               z=1−β q=1             d=1\n",
+          "sha256": "fe5b8e5e8c3380b0a8ce253f582df9ac44060f0b3826e3216f520335948c77bb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6790e0c1bed9fc018a1215d976684c4d652342d6d609dcb8832712448d6154a7",
+        "dossier_sha256": "b84e8a00dbf1285689cd64ccf7752658824f616717f38cb62f8a2521b3a7ab05",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 Shifted moments",
+            "line_end": 387,
+            "line_start": 46,
+            "mathematical_role": "Defines shifted moments and generalized divisor polynomials, states the swap recipe, derives the length/swap cutoff, recalls the shifted-divisor conjecture, and states the two-correlation identity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 335,
+          "line_start": 248,
+          "title": "Off-diagonal averaging becomes an analytic shifted-divisor identity",
+          "unit_id": "full_openalex_w2612271026_v2_u06",
+          "unit_type": "transform derivation",
+          "why_material": "It tracks the reusable chain from a Fourier-weighted off-diagonal sum through a residue approximation, Ramanujan sums, Cauchy integrals, and Mellin/Fourier transforms to the analytic identity compared with the recipe."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This derivation supplies the immediate setup for frozen v1 unit u01.",
+          "representation_dependency": "The sequence of transformations is prose-supported; exact constants, contour positions, and arguments are display-dependent.",
+          "unit_id": "full_openalex_w2612271026_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 247,
+            "line_start": 200,
+            "title": "Shifted-divisor correlations modeled by additive-character residue data",
+            "unit_id": "full_openalex_w2612271026_v2_u05",
+            "unit_type": "conjectural correlation model",
+            "why_material": "It isolates the conjectural bridge from an additive shift correlation to Ramanujan-weighted residues of twisted divisor Dirichlet series, including the asserted pole region."
+          },
+          {
+            "line_end": 386,
+            "line_start": 336,
+            "title": "Analytic convolution identity for two shifted divisor sums",
+            "unit_id": "full_openalex_w2612271026_u01",
+            "unit_type": "shifted-divisor convolution identity",
+            "why_material": "The two stated identities culminate in the paper's fundamental new move: split a product-difference equation into two coordinated shifted equations with rational parameters M and N."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2612271026_v2_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2612271026_v2_u06",
+          "spontaneous_reading": "A chain of Perron differentiation, residue replacement, Ramanujan expansion, Cauchy integrals, and Fourier-Mellin transforms converts the off-diagonal average into an analytic identity comparable with the moment recipe."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2612271026_v2_u06",
+          "source_grounded_mathematics": "The Fourier-weighted off-diagonal double sum is rewritten as an integral of shifted divisor correlations, approximated by RA,B, replaced by the conjectural R*A,B, expanded using r_q(h), and transformed into contour integrals where the h-sum yields a zeta factor and the v-integral a chi factor.",
+          "conceptual_reading": "Each transformation preserves a different aspect of the same correlation while exposing the next usable operation: residues expose poles, Ramanujan sums expose divisibility, and Mellin/Fourier transforms expose zeta factors.",
+          "representation_or_bridge": "RA,B and R*A,B are the central interface between arithmetic correlation averages and the analytic contour expression used for comparison with the recipe.",
+          "boundary_or_failure": "The crucial replacement R by R* invokes the preceding conjecture, and the final identity itself begins only after this unit.",
+          "uncertainty": "The transformation sequence is prose-supported, but constants, contour locations, and additive-character arguments are display-dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2612271026_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly tracks the chain from the Fourier-weighted off-diagonal sum through residue terms, the conjectural R-to-R-star substitution, Ramanujan expansion, Cauchy integrals, and zeta/chi factors.",
+          "It correctly states that the final comparison identity begins after this span and that the R-star step depends on the preceding conjecture."
+        ],
+        "inference": [
+          "The listed representations expose different usable structures, such as poles, divisibility, and Mellin factors."
+        ],
+        "unsupported_or_imported": [
+          "The sentence that each transformation 'preserves a different aspect of the same correlation' blurs exact rearrangements with the residue approximation and the explicitly conjectural replacement of R by R-star."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Constants, contour conditions, and additive-character arguments are degraded in the extracted displays, as the candidate notes."
+        ],
+        "missed_mechanism": [
+          "The conceptual reading should distinguish identities or changes of variables from discarded-contour/error terms and from the conjectural correlation substitution."
+        ],
+        "revision_instructions": [
+          "Replace the preservation claim with a sentence that explicitly separates exact analytic reorganizations from the residue approximation and conjectural R-to-R-star step; retain the current source-grounded chain and formula-risk caveat."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "f453aa496de18e11a9ecf13cf1147c860002c3f78775b5d26ccf6d9e1cecc9fa"
+}

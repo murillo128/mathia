@@ -1,0 +1,698 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1978559180_c8713d3c_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1978559180",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 61-66 explicitly limit the construction: it preserves B=17 to reuse Schoenfeld's numerical work rather than optimize the general two-parameter region.",
+      "line_end": 84,
+      "line_start": 46,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent. The inequalities and matching equation are readable in the text layer, but radicals, absolute-value bars, and exponent placement require scan verification before exact symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The text fixes the auxiliary scale parameter, combines Kadiri's zero-free region above a threshold with the verified zero height below it, solves the matching condition, and obtains a region usable by Schoenfeld's explicit-error machinery. This is a reusable local-to-global certification pattern rather than a bare constant update.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Trading verified RH height and a zero-free region for an effective constant",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_d01.txt",
+      "unit_bytes": 2293,
+      "unit_id": "openalex_w1978559180_d01",
+      "unit_sha256": "638910ecdeae79912e802c3cf4eefc74688ab9c6866a3a45f92cf9dbde66cd51",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_d01.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 38,
+          "line_end": 45,
+          "text": "\n                                              ∗\n                                                  Supported by Australian Research Council DECRA Grant DE120100173.\n\n                                                                                      1\n\n<!-- source-page: 2 -->\n\n",
+          "sha256": "ed0d3103571a902d5345a011a09ff7bb23346036415ab372c1e987d618ecbd54"
+        },
+        "after": {
+          "line_start": 85,
+          "line_end": 92,
+          "text": "\n                                         2\n\n<!-- source-page: 3 -->\n\nTheorem 1. Let\n                    r\n                         8                         p\n",
+          "sha256": "7e64e3c69d60ef5702b8340eb3fb3d64b236c956ff479d0a81f18f8dcb4efc9d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3597ff3dd3e7592fb1cc1e455f491de6d72b6c083bccdc6bdd35bc7ec05c6227",
+        "dossier_sha256": "2d7950fa4e8b6c53aa45aa6a987b99d58e83d6ab16a54247369cfabac62b95fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 Introduction and explicit Chebyshev bounds",
+            "line_end": 148,
+            "line_start": 34,
+            "mathematical_role": "Derives a usable zero-free region from verified RH height plus Kadiri's region, states explicit theta/psi error bounds, and bridges asymptotic and small ranges."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 84,
+          "line_start": 46,
+          "title": "Trading verified RH height and a zero-free region for an effective constant",
+          "unit_id": "openalex_w1978559180_d01",
+          "unit_type": "construction",
+          "why_material": "The text fixes the auxiliary scale parameter, combines Kadiri's zero-free region above a threshold with the verified zero height below it, solves the matching condition, and obtains a region usable by Schoenfeld's explicit-error machinery. This is a reusable local-to-global certification pattern rather than a bare constant update."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 61-66 explicitly limit the construction: it preserves B=17 to reuse Schoenfeld's numerical work rather than optimize the general two-parameter region.",
+          "representation_dependency": "Formula-dependent. The inequalities and matching equation are readable in the text layer, but radicals, absolute-value bars, and exponent placement require scan verification before exact symbolic reuse.",
+          "unit_id": "openalex_w1978559180_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 146,
+            "line_start": 90,
+            "title": "Extending explicit theta and psi error bounds across analytic and finite ranges",
+            "unit_id": "openalex_w1978559180_d02",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Theorem 1 gives explicit bounds, then the proof transports Schoenfeld's large-range argument to the new constant, uses independent psi bounds plus the psi-theta discrepancy on intermediate ranges, exploits the shape of epsilon on the small range, and reduces the final bounded residue to computation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A verified-zero-height/zero-free-region match can be converted first into explicit Chebyshev errors and then, through partial summation plus finite certification, into an explicit pi(x)-li(x) error bound.",
+            "limit": "The constants and finite checks are solver- and computation-dependent, and several displayed formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1978559180_d01",
+              "openalex_w1978559180_d02",
+              "openalex_w1978559180_d03",
+              "openalex_w1978559180_d04",
+              "openalex_w1978559180_d05"
+            ],
+            "title": "Certified zero information propagates through two analytic representations"
+          },
+          {
+            "claim": "The source's own sensitivity checks distinguish weak levers, such as more gap data or idealized secondary coefficients, from stronger levers, such as reducing the theta-error coefficient, strengthening the zero-free region, improving psi bounds, or rebuilding the inherited explicit argument.",
+            "limit": "These are source-local diagnoses and proposals, not experimentally compared improvements under a common budget.",
+            "parent_local_unit_ids": [
+              "openalex_w1978559180_d01",
+              "openalex_w1978559180_d08",
+              "openalex_w1978559180_d11",
+              "openalex_w1978559180_d13",
+              "openalex_w1978559180_d15"
+            ],
+            "title": "Bottleneck location matters more than undirected constant optimization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 45,
+              "line_start": 34,
+              "reason": "Introduces theta and the explicit-error objective before the first complete mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1978559180_d01",
+        "spontaneous": {
+          "unit_id": "openalex_w1978559180_d01",
+          "spontaneous_reading": "The working move is to splice a finite verified-zero certificate to an asymptotic zero-free certificate at a deliberately chosen matching height. Fixing B=17 sacrifices parameter optimality but preserves access to Schoenfeld's numerical machinery, so the main compression is compatibility rather than a globally best constant."
+        },
+        "directed": {
+          "unit_id": "openalex_w1978559180_d01",
+          "source_grounded_mathematics": "The source combines verification of RH up to H=3.061×10^10 with Kadiri's zero-free region. With B fixed at 17, it solves H=exp(R log 17/(R−5.69693)) to obtain R=6.455 and reports that ζ has no zeros in σ≥1−1/(6.455 log|17t|) for t≥24.",
+          "conceptual_reading": "A bounded certificate and a tail theorem cover complementary regimes; matching them at their interface converts two partial guarantees into one usable global input. The deliberately frozen auxiliary parameter shows that reusability of an inherited argument can outweigh local constant optimization.",
+          "representation_or_bridge": "The matching equation translates verified height into the R parameter of a zero-free region. That region is the bridge object consumed by Schoenfeld-style explicit bounds for θ(x)−x and ψ(x)−x.",
+          "boundary_or_failure": "This is not a general optimization over R and B, and the source explicitly declines the overhaul needed for one. It establishes an effective zero-free region, not RH beyond the verified height.",
+          "uncertainty": "The mechanism and reported constants are clear in the source, but radicals, absolute-value bars, and exponent placement in the extracted formulas require scan verification before exact symbolic reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1978559180_d01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span fixes B=17 so that Schoenfeld's numerical estimates remain reusable, combines Platt's verified RH height with Kadiri's zero-free region, solves the matching equation for R=6.455, and states the resulting zero-free region for t≥24.",
+          "The directed analysis correctly limits the result to an effective zero-free region and notes that a general optimization over R and B is not performed."
+        ],
+        "inference": [
+          "Viewing the construction as a splice of finite verification and an asymptotic certificate, and as favoring compatibility over parameter optimality, is a specific and reasonable interpretation of the displayed construction."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous phrase 'a deliberately chosen matching height' mislocates the choice: H is fixed by the cited verification, while R is chosen by matching Kadiri's bound to that fixed H."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the analysis identifies the concrete matching equation, the frozen B parameter, and the inherited numerical machinery rather than using only a generic structure-exposure template."
+        ],
+        "context_or_ocr_risk": [
+          "The extraction visibly risks the square root in X, absolute-value bars around 17t, and exponent placement; the candidate appropriately withholds exact symbolic reuse pending scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'at a deliberately chosen matching height' with wording that H is the fixed verified height and that the construction chooses R by matching the tail inequality at H; retain the rest."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The threshold in the corollary is ultimately lower than the initial analytic range only after the later finite-gap descent.",
+      "line_end": 296,
+      "line_start": 280,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; fraction baselines and powers of log are visibly displaced in extraction, so the exact interval and lemma constants require scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The corollary states the target multiplicative interval, and Lemma 1 supplies the precise theta-error scale needed to make the theta increment positive. This cleanly exposes the analytic subgoal behind the prime-existence claim.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reducing a short-interval prime theorem to a uniform theta-error lemma",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_d07.txt",
+      "unit_bytes": 942,
+      "unit_id": "openalex_w1978559180_d07",
+      "unit_sha256": "872902e9028d9a2dd43d08608502be70b5f81b32777ba4a249f709f0d4a85182",
+      "unit_type": "theorem-and-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_d07.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 272,
+          "line_end": 279,
+          "text": "reduce the bound on k in Corollary 1 to a height below which direct compu-\ntation could be carried out.\n\n\n                                     6\n\n<!-- source-page: 7 -->\n\n",
+          "sha256": "852b21fcbb868b0974d1a8b8be5a05986207d50600f263c7798ca4bd64031699"
+        },
+        "after": {
+          "line_start": 297,
+          "line_end": 304,
+          "text": "Proof. Using (5.3∗ ) of [21] we have\n\n|θ(x) − x| log2 x                          1.001093 log2 x 3 log2 x\n                     \u0012                                               \u0013\n                        |ψ(x) − x|     2\n                   ≤               log x +       √         +           = B(x),\n       x                    x                      x            x2/3\n                                                                             (13)\n",
+          "sha256": "739c309fc36e406df69d72e6dec5bb1c33433dee901e50f54fe9b5ecf75e0934"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3597ff3dd3e7592fb1cc1e455f491de6d72b6c083bccdc6bdd35bc7ec05c6227",
+        "dossier_sha256": "2d7950fa4e8b6c53aa45aa6a987b99d58e83d6ab16a54247369cfabac62b95fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2 Primes in short intervals",
+            "line_end": 400,
+            "line_start": 280,
+            "mathematical_role": "Builds a uniform theta bound by interval certification, turns positive theta increments into prime existence, and descends to a computable range via maximal prime gaps."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 296,
+          "line_start": 280,
+          "title": "Reducing a short-interval prime theorem to a uniform theta-error lemma",
+          "unit_id": "openalex_w1978559180_d07",
+          "unit_type": "theorem-and-setup",
+          "why_material": "The corollary states the target multiplicative interval, and Lemma 1 supplies the precise theta-error scale needed to make the theta increment positive. This cleanly exposes the analytic subgoal behind the prime-existence claim."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The threshold in the corollary is ultimately lower than the initial analytic range only after the later finite-gap descent.",
+          "representation_dependency": "Formula-dependent; fraction baselines and powers of log are visibly displaced in extraction, so the exact interval and lemma constants require scan checking.",
+          "unit_id": "openalex_w1978559180_d07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 273,
+            "line_start": 244,
+            "title": "Propagating an improved prime-interval estimate into an arithmetic-progression threshold",
+            "unit_id": "openalex_w1978559180_d06",
+            "unit_type": "application-transfer",
+            "why_material": "The source shows how an explicit prime in [k,k+a] estimate can be substituted into an existing combinatorial proof to lower the classification threshold for maximally intersecting arithmetic progressions. It also distinguishes analytic improvement from the remaining infeasible direct-computation barrier."
+          },
+          {
+            "line_end": 345,
+            "line_start": 293,
+            "title": "Piecewise endpoint certification of a uniform theta-error bound",
+            "unit_id": "openalex_w1978559180_d08",
+            "unit_type": "computational-certification-logic",
+            "why_material": "The proof combines a psi bound with an explicit psi-theta discrepancy, defines a normalized error expression, and certifies it on exponential intervals using a bound at each left endpoint and evaluation at the right endpoint. A finite table covers the middle range and Theorem 1 covers the tail."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same explicit Chebyshev/prime-counting control can be substituted into combinatorial, short-interval, residue-system, and inequality arguments because each exposes a quantitative prime-distribution interface.",
+            "limit": "Most downstream proof bodies are imported from cited works; this source demonstrates substitution and resulting thresholds, not self-contained proofs of every application.",
+            "parent_local_unit_ids": [
+              "openalex_w1978559180_d02",
+              "openalex_w1978559180_d06",
+              "openalex_w1978559180_d07",
+              "openalex_w1978559180_d12",
+              "openalex_w1978559180_d14"
+            ],
+            "title": "An explicit prime-distribution bound acts as an interface to heterogeneous applications"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1978559180_d07",
+        "spontaneous": {
+          "unit_id": "openalex_w1978559180_d07",
+          "spontaneous_reading": "The short-interval theorem is reframed as one quantitative subgoal: make θ uniformly close enough to x that its increment across the proposed interval cannot vanish. This isolates the analytic constant that later controls the interval width."
+        },
+        "directed": {
+          "unit_id": "openalex_w1978559180_d07",
+          "source_grounded_mathematics": "Corollary 2 states that for x≥2,898,239 there is a prime in [x,x(1+1/(111 log²x))]. The proof first isolates Lemma 1, the bound |θ(x)−x|≤0.0045x/log²x for x≥e^35.",
+          "conceptual_reading": "The theorem-and-lemma split exposes the actual proof burden. A discrete existence question is routed through a uniform approximation statement whose error scale matches the proposed relative interval length.",
+          "representation_or_bridge": "The candidate bridge is the θ increment over the target interval; Lemma 1 supplies two endpoint error bounds that can make this increment positive.",
+          "boundary_or_failure": "The lemma initially covers only x≥e^35, much higher than the corollary's final threshold. A separate finite-gap descent is still needed for the lower range.",
+          "uncertainty": "The prose relation is clear, but displaced fractions and powers in the extraction mean the exact interval and lemma formula should be scan-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1978559180_d07",
+        "critic_decision": "revise",
+        "supported": [
+          "The exact span states the target prime interval and isolates Lemma 1, the uniform bound |θ(x)−x|≤0.0045x/log²x for x≥e³⁵.",
+          "The mismatch between the lemma's initial range and the corollary's lower threshold shows that this unit alone cannot complete the full corollary."
+        ],
+        "inference": [
+          "Using endpoint θ errors to seek a positive increment over the target interval is a natural proof strategy and may be presented as inference, but the exact unit does not yet execute it."
+        ],
+        "unsupported_or_imported": [
+          "The boundary statement that 'a separate finite-gap descent is still needed' identifies a later proof method not contained in this exact source span.",
+          "The representation field states the positive-increment bridge more definitively than the theorem-and-setup span itself establishes."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low otherwise: the error scale is connected specifically to the proposed reciprocal-log-squared interval."
+        ],
+        "context_or_ocr_risk": [
+          "Displaced fraction baselines and log powers make the exact interval and lemma constants scan-dependent, as the candidate notes."
+        ],
+        "missed_mechanism": [
+          "The span does not supply the implication from Lemma 1 to prime existence or the argument covering the range below e³⁵."
+        ],
+        "revision_instructions": [
+          "Keep the exact corollary and lemma statements; label positive θ-increment reasoning as an inference to be established later, and replace the imported 'finite-gap descent' claim with the bounded statement that an additional lower-range argument is required but not supplied here."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The actual exclusion criterion and its numerical verification occur in lines 419-451 and are quarantined pending scan verification.",
+      "line_end": 418,
+      "line_start": 401,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The definition and examples are readable. Concrete residue sets are illustrative execution details; the exact exponent formatting in prior and improved bounds should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The text defines the residue-system property, gives contrasting examples, states earlier bounds, and explains that replacing an older pi(x)-li(x) estimate by Theorem 2 improves the upper bound. This exposes the semantic dependency of the application without relying on the damaged subsequent formulas.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "P-integers and the route from prime-counting error to a finite upper bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_d12.txt",
+      "unit_bytes": 879,
+      "unit_id": "openalex_w1978559180_d12",
+      "unit_sha256": "f8c2deb6df14e87d46bfa6e86cae9ab61dd37692b90f7664b622f81da25c4a34",
+      "unit_type": "definition-and-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_d12.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 393,
+          "line_end": 400,
+          "text": "proved that there is always a prime in the interval\n\n               (x(1 − ∆−1 ), x],    ∆ = 212215384,         x ≥ e150 .\n\nCorollary 2 improves on this whenever x ≥ 3.2 × 10600 ≈ e1383 . Although this\nvalue of x is large by anyone’s standards, it appears that Corollary 2 could\nbe useful in searching for primes between cubes — see [2].\n\n",
+          "sha256": "b1e926ae44a86ecc05e152f35903760cda2b9ee6619716a367e823d27bb6cd25"
+        },
+        "after": {
+          "line_start": 419,
+          "line_end": 426,
+          "text": "Proof. We use Theorem 2 instead of Lemma 2.1(iii) in [10] and proceed as\n\n\n\n\n                                          9\n\n<!-- source-page: 10 -->\n",
+          "sha256": "5b7fb5e3f1597c12808d95a52f408f67b7068016acc9569188c00e2b04d1d300"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3597ff3dd3e7592fb1cc1e455f491de6d72b6c083bccdc6bdd35bc7ec05c6227",
+        "dossier_sha256": "2d7950fa4e8b6c53aa45aa6a987b99d58e83d6ab16a54247369cfabac62b95fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.3 A conjecture by Pomerance",
+            "line_end": 466,
+            "line_start": 401,
+            "mathematical_role": "Defines P-integers, states an improved bound, invokes a formula-dependent inherited exclusion criterion, and analyzes coefficient sensitivity and alternative routes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 418,
+          "line_start": 401,
+          "title": "P-integers and the route from prime-counting error to a finite upper bound",
+          "unit_id": "openalex_w1978559180_d12",
+          "unit_type": "definition-and-reduction",
+          "why_material": "The text defines the residue-system property, gives contrasting examples, states earlier bounds, and explains that replacing an older pi(x)-li(x) estimate by Theorem 2 improves the upper bound. This exposes the semantic dependency of the application without relying on the damaged subsequent formulas."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The actual exclusion criterion and its numerical verification occur in lines 419-451 and are quarantined pending scan verification.",
+          "representation_dependency": "The definition and examples are readable. Concrete residue sets are illustrative execution details; the exact exponent formatting in prior and improved bounds should be scan-checked.",
+          "unit_id": "openalex_w1978559180_d12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 400,
+            "line_start": 386,
+            "title": "Sensitivity analysis for improving the short-interval result",
+            "unit_id": "openalex_w1978559180_d11",
+            "unit_type": "method-comparison",
+            "why_material": "The source identifies the theta-error coefficient, rather than a farther maximal-gap computation, as the effective bottleneck, quantifies how a smaller coefficient changes the interval constant, and compares a differently shaped known interval result."
+          },
+          {
+            "line_end": 465,
+            "line_start": 452,
+            "title": "Why optimizing secondary asymptotic coefficients barely moves the P-integer threshold",
+            "unit_id": "openalex_w1978559180_d13",
+            "unit_type": "obstruction-and-sensitivity",
+            "why_material": "The source explains the origin of two coefficients as approximations to asymptotic expansion coefficients, tests their unattainably ideal replacement, and finds negligible improvement. It thereby isolates the main theorem, or a different approach, as the consequential lever."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same explicit Chebyshev/prime-counting control can be substituted into combinatorial, short-interval, residue-system, and inequality arguments because each exposes a quantitative prime-distribution interface.",
+            "limit": "Most downstream proof bodies are imported from cited works; this source demonstrates substitution and resulting thresholds, not self-contained proofs of every application.",
+            "parent_local_unit_ids": [
+              "openalex_w1978559180_d02",
+              "openalex_w1978559180_d06",
+              "openalex_w1978559180_d07",
+              "openalex_w1978559180_d12",
+              "openalex_w1978559180_d14"
+            ],
+            "title": "An explicit prime-distribution bound acts as an interface to heterogeneous applications"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 451,
+              "line_start": 419,
+              "reason": "The proof depends on extracted definitions of f0 and fn and a summation criterion whose fractions, powers, indices, and layout are too damaged for safe exact reconstruction; retain for scan verification."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1978559180_d12",
+        "spontaneous": {
+          "unit_id": "openalex_w1978559180_d12",
+          "spontaneous_reading": "The residue-system problem exposes a narrow analytic interface: an explicit π−li error can replace an older estimate inside an inherited exclusion argument and thereby tighten a global bound on possible P-integers. The combinatorial property itself remains distinct from the analytic tool used to bound it."
+        },
+        "directed": {
+          "unit_id": "openalex_w1978559180_d12",
+          "source_grounded_mathematics": "A P-integer k is defined by requiring the first φ(k) primes coprime to k to form a reduced residue system modulo k. The source recalls finiteness and prior bounds, then says that Theorem 2 replaces an older π−li estimate in the Hajdu–Saradha–Tijdeman argument, yielding the stated Corollary 3 upper bound.",
+          "conceptual_reading": "The application is a reduction: distributional control of primes constrains whether an initial prime segment can realize every invertible residue class exactly once. Improved analytic error tightens the finite search region without changing the semantic definition.",
+          "representation_or_bridge": "The bridge is the explicit π(x)−li(x) bound consumed by the inherited P-integer exclusion criterion. It packages prime distribution into a quantitative input for a residue-system argument.",
+          "boundary_or_failure": "The actual criterion and its numerical verification lie in extraction-defective lines 419–451 and are quarantined, so this unit does not support reconstructing the proof or exact bound calculation. Concrete examples illustrate the definition only.",
+          "uncertainty": "The definition and reduction are readable, but exponent formatting in the reported bounds needs scan verification; the missing damaged proof prevents stronger claims."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1978559180_d12",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines P-integers, gives contrasting examples, cites finiteness and prior bounds, states that Kadiri's zero-free region/Theorem 1 improves the earlier estimate (7), and announces Corollary 3.",
+          "The candidate correctly refuses to reconstruct the extraction-defective exclusion criterion and treats the examples as illustrative only."
+        ],
+        "inference": [
+          "Interpreting the application as using prime-distribution control to shrink a finite search region is plausible, but this exact span does not expose the inherited exclusion mechanism."
+        ],
+        "unsupported_or_imported": [
+          "The directed analysis says Theorem 2 replaces an older π−li estimate in the inherited argument, whereas the exact unit itself says to use Kadiri's zero-free region/'our Theorem 1'; the Theorem 2 wording comes from adjacent proof text outside the exact span.",
+          "The bridge field presents the explicit π−li bound as the consumed criterion even though that criterion and its use are not visible within this unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: without the excluded proof, the bridge description risks becoming a generic analytic-bound-to-combinatorics template unless anchored to the exact wording available here."
+        ],
+        "context_or_ocr_risk": [
+          "The reported powers in the prior and improved bounds need scan verification, and lines 419–451 are explicitly extraction-defective and outside this unit."
+        ],
+        "missed_mechanism": [
+          "The exact exclusion inequality, its direction, and the numerical verification that yields Corollary 3 are absent, so the causal link from Theorem 1 or 2 to the bound cannot be audited here."
+        ],
+        "revision_instructions": [
+          "Anchor the source-grounded account to what this span actually says: Kadiri's region/Theorem 1 is used to improve estimate (7), leading to Corollary 3. Do not assert the specific Theorem 2 replacement or the form of the inherited criterion; state only as inference that an improved prime-counting estimate is intended to tighten the exclusion argument."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivations are in cited work, so this is an application comparison rather than a source-contained proof.",
+      "line_end": 481,
+      "line_start": 467,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose thresholds are readable, but the displayed Ramanujan inequality has fraction and argument-placement risk and should be verified against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source records the same target inequality under two regimes: verified computation plus an RH assumption gives a much smaller threshold, whereas the unconditional use of the explicit estimate produces an exponential threshold. The contrast illustrates how assumptions and explicit-error strength control downstream usability.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "One explicit estimate yields sharply different Ramanujan-inequality thresholds with and without RH",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_d14.txt",
+      "unit_bytes": 660,
+      "unit_id": "openalex_w1978559180_d14",
+      "unit_sha256": "0cc78ec9eaccc3f674c37f721aba92bd3674850a9c36eafad34cc338f4cecd07",
+      "unit_type": "conditional-unconditional-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_d14.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 459,
+          "line_end": 466,
+          "text": "\nReplacing these numbers in (15) by 2, a situation on which one could not\npossibly improve, makes a negligible difference. Indeed, such a substitution\ncould not improve the bound in Corollary 3 to k < 101803 .\n   It is certainly possible that a refined version of Theorem 1 could resolve\ncompletely the Pomerance conjecture. Indeed, using a slightly different ap-\nproach, Togbé and Yang have announced in [22] a proof of the conjecture.\n\n",
+          "sha256": "10180f68f410c9622abfbe1434502d796f2d4df98334a47e28582b165db84455"
+        },
+        "after": {
+          "line_start": 482,
+          "line_end": 489,
+          "text": "\n\n4    Conclusion\nTheorems 1 and 2 could be improved in several ways. First, if one knew that\nthe Riemann hypothesis had been verified to a height greater than 3.061 ×\n1010 , one could reduce the coefficient in the zero-free region in (3). Second,\none could try to improve Kadiri’s zero-free region either by reducing the\nvalue of R or by improving the size of B in (2). A higher verification of the\n",
+          "sha256": "aa80767b7f43a0dd10df22926fb4b291356a2f3f65cd4e12ccfa05617743b05d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3597ff3dd3e7592fb1cc1e455f491de6d72b6c083bccdc6bdd35bc7ec05c6227",
+        "dossier_sha256": "2d7950fa4e8b6c53aa45aa6a987b99d58e83d6ab16a54247369cfabac62b95fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4 An equality studied by Ramanujan",
+            "line_end": 483,
+            "line_start": 467,
+            "mathematical_role": "Contrasts conditional and unconditional thresholds for an inequality obtained using the explicit Chebyshev estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 481,
+          "line_start": 467,
+          "title": "One explicit estimate yields sharply different Ramanujan-inequality thresholds with and without RH",
+          "unit_id": "openalex_w1978559180_d14",
+          "unit_type": "conditional-unconditional-comparison",
+          "why_material": "The source records the same target inequality under two regimes: verified computation plus an RH assumption gives a much smaller threshold, whereas the unconditional use of the explicit estimate produces an exponential threshold. The contrast illustrates how assumptions and explicit-error strength control downstream usability."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The derivations are in cited work, so this is an application comparison rather than a source-contained proof.",
+          "representation_dependency": "The prose thresholds are readable, but the displayed Ramanujan inequality has fraction and argument-placement risk and should be verified against the scan.",
+          "unit_id": "openalex_w1978559180_d14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 465,
+            "line_start": 452,
+            "title": "Why optimizing secondary asymptotic coefficients barely moves the P-integer threshold",
+            "unit_id": "openalex_w1978559180_d13",
+            "unit_type": "obstruction-and-sensitivity",
+            "why_material": "The source explains the origin of two coefficients as approximations to asymptotic expansion coefficients, tests their unattainably ideal replacement, and finds negligible improvement. It thereby isolates the main theorem, or a different approach, as the consequential lever."
+          },
+          {
+            "line_end": 495,
+            "line_start": 484,
+            "title": "Four non-equivalent levers for sharpening the explicit-error method",
+            "unit_id": "openalex_w1978559180_d15",
+            "unit_type": "improvement-map",
+            "why_material": "The conclusion separates raising the verified RH height, strengthening the zero-free region's constants, feeding both advances into independent psi estimates, and rebuilding Schoenfeld's argument for the target parameters. This is a source-specific map of where improvement can enter and notes that verified height alone has only mild influence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same explicit Chebyshev/prime-counting control can be substituted into combinatorial, short-interval, residue-system, and inequality arguments because each exposes a quantitative prime-distribution interface.",
+            "limit": "Most downstream proof bodies are imported from cited works; this source demonstrates substitution and resulting thresholds, not self-contained proofs of every application.",
+            "parent_local_unit_ids": [
+              "openalex_w1978559180_d02",
+              "openalex_w1978559180_d06",
+              "openalex_w1978559180_d07",
+              "openalex_w1978559180_d12",
+              "openalex_w1978559180_d14"
+            ],
+            "title": "An explicit prime-distribution bound acts as an interface to heterogeneous applications"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 466,
+              "line_start": 466,
+              "reason": "Section transition whitespace."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 483,
+              "line_start": 482,
+              "reason": "Whitespace before the conclusion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1978559180_d14",
+        "spontaneous": {
+          "unit_id": "openalex_w1978559180_d14",
+          "spontaneous_reading": "The same target inequality acts as a stress test for assumptions: adding RH plus verified computation collapses the usable threshold, while the unconditional explicit estimate leaves an enormous exponential boundary. The gap measures downstream usability, not merely truth of the eventual statement."
+        },
+        "directed": {
+          "unit_id": "openalex_w1978559180_d14",
+          "source_grounded_mathematics": "For Ramanujan's inequality involving π(x), the source reports that Dudek and Platt use Theorem 1 to obtain validity for x>38,358,837,682 under RH, whereas their unconditional result gives validity only for x≥exp(9658).",
+          "conceptual_reading": "Holding the target fixed isolates the effect of the assumption regime and strength of explicit error control. A theorem known for sufficiently large x can differ radically in effective reach depending on which prime-distribution estimate is available.",
+          "representation_or_bridge": "The explicit θ/prime-counting estimate is the common bridge into both conditional and unconditional analyses; the two thresholds summarize how much quantitative slack each regime leaves.",
+          "boundary_or_failure": "The derivations are in cited work, so this is an application comparison, not a source-contained proof. The threshold disparity does not by itself identify which step consumes the slack.",
+          "uncertainty": "The prose thresholds are readable, but the displayed Ramanujan inequality has fraction and argument-placement risk and should be checked against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1978559180_d14",
+        "critic_decision": "revise",
+        "supported": [
+          "The exact span holds Ramanujan's target inequality fixed and reports two thresholds: x>38,358,837,682 under RH and x≥exp(9658) unconditionally.",
+          "The candidate correctly notes that the derivations are in cited work and that the threshold gap alone does not locate where slack is consumed."
+        ],
+        "inference": [
+          "Reading the contrast as evidence that the assumption regime changes effective reach is supported by the explicit conditional/unconditional comparison."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that an 'unconditional explicit estimate' produces the larger threshold is stronger than the span, which only reports the unconditional result.",
+          "The representation field calls the explicit θ/prime-counting estimate a common bridge into both analyses, but the span explicitly mentions use of Theorem 1 only for the RH result and provides neither derivation."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: the general language about quantitative slack is useful only if it does not imply an unaudited common mechanism for the two cited arguments."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed Ramanujan inequality has fraction and argument-placement risk; the threshold prose itself is readable."
+        ],
+        "missed_mechanism": [
+          "The source-local unit does not reveal which estimates or proof steps generate either threshold, so it supports comparison but not a causal attribution to explicit-error strength."
+        ],
+        "revision_instructions": [
+          "Retain the target and the two assumption-qualified thresholds. Remove the claim that the same explicit estimate is a common bridge or that an unconditional explicit estimate causes exp(9658); describe the mechanisms as external and unresolved in this span."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "026ced5fd047ac9bf100f62552eabe25e1f073e863caba299af953b820d07265"
+}

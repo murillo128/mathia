@@ -1,0 +1,227 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_harmonic_boundary_normalization": {
+      "analysis_id": "agnostic_oa_generation_8bfca5b46a3e44997f7058fbdedbeccea4632027ee2609dba9a59dedc8543a77",
+      "boundary_or_failure": "The extremum argument depends on an interior harmonic potential, the compact interval/orbifold geometry with boundary, and the source's behavior near any allowed positive singular sources. Sign-changing or interior negative sources, noncompact domains, altered boundary conditions, or failure of the relevant maximum principle can move or remove the boundary minimum. The threshold describes the reconstructed metric in this ansatz and is not automatically a universal regularity criterion.",
+      "interpretation": "The additive kernel of the scalar equation can be fixed at a geometrically distinguished extremal locus. Normalizing the boundary minimum to zero turns a redundant pair consisting of a shifted potential and reconstruction constant into a potential with a visible positivity margin: the remaining constant directly measures distance from degeneration. This uses a qualitative extremum principle to expose an obstruction without evaluating the potential pointwise.",
+      "nonparaphrase_operation": "Quotient the additive-shift freedom by selecting the boundary-minimum representative, then reparameterize reconstruction so admissibility is read from the sign of one residual constant. This converts gauge-like nonuniqueness into a threshold coordinate on the solution family and identifies the locus where the reconstructed geometry fails.",
+      "source_support": "The source states that the sourced scalar equation determines the potential only up to an additive constant. It says the potential is harmonic in the interior, tends to positive infinity near an included five-brane, and therefore attains its minimum at a fixed-point boundary. It then shifts that minimum to zero and concludes that the exact metric is regular for a positive reconstruction constant and becomes singular on the boundary when that constant reaches zero.",
+      "uncertainty": "The exact conformal factor is inherited from formulae in the preceding unit and is not reasserted coefficient-by-coefficient here. The source identifies the singular threshold but treats its physical interpretation beyond this excerpt cautiously. Applicability of the maximum-principle step under other source signs or geometries, and novelty of the normalization move, are unconfirmed.",
+      "unit_id": "agnostic_oa_harmonic_boundary_normalization"
+    },
+    "agnostic_oa_reference_metric_scalar_bootstrap": {
+      "analysis_id": "agnostic_oa_generation_ade92e24afda8dfc1f83c852065572d89b4776d056ad88e8cf14b8407f73f876",
+      "boundary_or_failure": "The bootstrap relies on the Bianchi identity being metric-independent, the conformal metric ansatz, dualization of the field to a scalar potential in the reference geometry, and supersymmetry forcing the correction to depend only on that same potential. For a metric-dependent source equation, a correction with additional independent variables, or another nonlinear field system, the reference solution need not survive reconstruction. Exactness is internal to the stated physical system and ansatz, not a general nonlinear-PDE theorem.",
+      "interpretation": "The apparent circularity between the unknown metric and the field equation is broken by identifying a scalar sufficient variable in a reference representation. First solve the metric-independent source condition for the potential; then let the symmetry equations constrain every nonlinear correction to be a function of that potential. Because a scalar function of the potential times its differential is closed, the reconstructed metric does not invalidate the reference-form solution. Thus the nonlinear system is compressed to one sourced scalar problem followed by algebraic reconstruction under special compatibility conditions.",
+      "nonparaphrase_operation": "Build a dependency graph and reverse the seemingly circular edge: solve source data to a reference potential, derive the correction as a function of that potential, and substitute this functional dependence back as a closure test. The operation isolates the exact structural reasons the reference solution is stable rather than merely repeating the sequence of formulas.",
+      "source_support": "The source says that the field equation initially depends on the unknown corrected metric, yet the differential form obtained using the starting metric also solves the corrected system. In the starting metric it writes the field as dual to the gradient of a scalar satisfying a sourced Laplace equation and notes that the Bianchi identity is metric-independent. In the corrected metric the equation becomes closure of a potential-dependent factor times the potential differential; supersymmetry yields the metric correction as a function of that potential and then gives the reconstructed warp factors and metric.",
+      "uncertainty": "Several dual, Laplacian, exponential, and conformal-factor expressions are flattened, so this row preserves their qualitative dependency without asserting exact coefficients or exponents. The excerpt supports the internal reconstruction claim but does not establish transfer to other ansatzes or equations. Novelty of this extracted family is unconfirmed.",
+      "unit_id": "agnostic_oa_reference_metric_scalar_bootstrap"
+    },
+    "agnostic_oa_source_type_compatibility": {
+      "analysis_id": "agnostic_oa_generation_d07d63ddb9d2f2d2319e0a4068e19345598a667dd0e17fbee91800808245dec7",
+      "boundary_or_failure": "Matching the graded component used by this computation is a compatibility condition, not a general proof that an added source preserves supersymmetry, satisfies the global cohomology constraint, or yields a regular solution. The conclusion depends on five-branes placed on holomorphic curves times points in the transverse interval/orbifold direction; a source with a different placement or type need not pass the same interface.",
+      "interpretation": "The form-type decomposition exposes a narrow interface between source construction and the downstream calculation: the later solver uses the source through its particular graded component rather than through every detail of its origin. A new source can therefore reuse the calculation when its geometric placement makes its contribution land in that same component. This is an inferred modularity principle scoped to the source's derivation, not an equivalence between all sources of matching type.",
+      "nonparaphrase_operation": "Forget the physical label of each source and compare old and new contributions after projection to the holomorphic, antiholomorphic, and transverse grading. Treat equality of the consumed component type as an interface check, while retaining the separate global cohomology gate. This converts a source extension into a representation-sensitive compatibility test.",
+      "source_support": "The source decomposes complex-valued forms into types counting holomorphic, antiholomorphic, and transverse indices. It states that the important property of the original singular source is type (2,2,1), locates each five-brane on a holomorphic curve times a point, and says this makes the five-brane contribution have the same type, so its inclusion causes no difficulty for the computation. It separately gives a cohomological source-balance condition including the curve classes.",
+      "uncertainty": "The type labels and qualitative dependency are readable, but layout damage makes exact coefficients in the cohomological equation unsuitable for precise reuse here. The source's phrase that inclusion causes no difficulty is interpreted only for the displayed calculation and stated placement assumptions. Whether this compatibility pattern is novel or absent elsewhere is unconfirmed.",
+      "unit_id": "agnostic_oa_source_type_compatibility"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_harmonic_boundary_normalization": {
+      "critic_sha256": "df7f1becc2b800bd2c47b10f3c9914d8cade3d4481177ede6b63a750df4f01bb",
+      "generation_sha256": "c8a40475a4028d9eaa8719399f4bd67c8755dae0ebc2805bd9a6f30bf127e122"
+    },
+    "agnostic_oa_reference_metric_scalar_bootstrap": {
+      "critic_sha256": "b44a063178a0365ac4a9fb4a0f0544c4481f0ee2d78cb8d7ac87241c51143a84",
+      "generation_sha256": "afec727e581c892facdaafdd75ec109de2105f9b496a17c5df28e11dc3b38db5"
+    },
+    "agnostic_oa_source_type_compatibility": {
+      "critic_sha256": "c00e2f6d521979b7cb9a7ceb2fe5821a45d80559dc6f0b5aa8368a96165a55c5",
+      "generation_sha256": "709208311c66ac08ef6d12d1a4d028cc3dc9d994c39492ed98cb632d05373878"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_harmonic_boundary_normalization": {
+      "analysis_id": "agnostic_oa_critic_be2d335598143f3bbc3403b79674b4b0a1fa46148ca548188b55d9222164ba68",
+      "context_risk": "The exact conformal factor is inherited from the previous unit, but this span explicitly states the additive freedom, boundary-minimum normalization, and c greater than zero versus c equals zero regularity threshold. No OCR defect blocks those claims.",
+      "decision": "revise",
+      "faithfulness": "The candidate accurately connects interior harmonicity and positive divergence near an allowed five-brane to a boundary minimum, then uses that minimum to fix the additive kernel and expose the regularity threshold in c.",
+      "missed_mechanism": "The source supports c as the minimum value of the shifted reconstruction factor after normalization, but it does not equip the solution family with a metric or other notion under which c is literally a distance to degeneration.",
+      "paraphrase_risk": "Low. Selecting an extremal representative of an additive equivalence class and reading admissibility from the residual parameter is a concrete nonparaphrase operation.",
+      "revision_instructions": "Replace 'directly measures distance from degeneration' with 'is the positivity margin of the reconstructed factor' or 'is a threshold parameter for degeneration.' Keep the conclusion restricted to the displayed metric ansatz and boundary normalization.",
+      "unit_id": "agnostic_oa_harmonic_boundary_normalization",
+      "unsupported_or_imported": "The word 'distance' is an unsupported quantitative or geometric gloss. The source establishes only that c greater than zero is regular and c equals zero is singular after the chosen normalization."
+    },
+    "agnostic_oa_reference_metric_scalar_bootstrap": {
+      "analysis_id": "agnostic_oa_critic_a7617ac2d92abe43182a6a98294ac033f2a435ba2ee73a65a0ba12d0c50b3e22",
+      "context_risk": "Flattening makes exact exponents and tensor conventions unsafe to reuse, but the reference-metric construction and functional dependence f equals F of w are readable. Exactness remains internal to the stated ansatz and physical system.",
+      "decision": "revise",
+      "faithfulness": "The candidate captures the central bootstrap: solve for a scalar in the starting metric, derive f as a function of that scalar from supersymmetry, and use that dependence to make the corrected-metric equation close.",
+      "missed_mechanism": "The reference step solves the starting-metric equation of motion together with the metric-independent Bianchi identity; it is not itself wholly metric-independent. For closure of the corrected equation, the specifically required dependence is f as a function of w.",
+      "paraphrase_risk": "Low. The dependency-graph reversal and substitution closure test expose the noncircular mechanism rather than merely restating formulas.",
+      "revision_instructions": "State explicitly that only the Bianchi identity is metric-independent, while the sourced Laplace problem uses the chosen starting metric. Replace 'every nonlinear correction' with the narrower supported claim that supersymmetry forces the conformal factor f, and consequently the displayed reconstructed warp factors, to depend on w.",
+      "unit_id": "agnostic_oa_reference_metric_scalar_bootstrap",
+      "unsupported_or_imported": "Calling the first scalar solve a metric-independent source condition can obscure its use of the reference Laplacian, and saying every nonlinear correction is forced to depend only on w is broader than the functional dependence directly needed and displayed in this span."
+    },
+    "agnostic_oa_source_type_compatibility": {
+      "analysis_id": "agnostic_oa_critic_bd1174f94bc7b0c469fec1b43e32d230ca8c75f0b7dfb09bfce0d42c7ab5760d",
+      "context_risk": "The exact cohomological coefficients are layout-damaged, but the geometric placement, singular support, and type (2,2,1) claims are readable. The judgment therefore does not rely on reconstructing the flattened formula.",
+      "decision": "revise",
+      "faithfulness": "The candidate correctly identifies the type decomposition, the placement on a holomorphic curve times a transverse point, and the separate global cohomology condition. Its narrow scope warnings also avoid treating type matching as a general supersymmetry or regularity theorem.",
+      "missed_mechanism": "The source identifies two relevant properties of the original source term: support at singularities and type (2,2,1). The candidate collapses the reusable interface to graded type alone and does not retain singular localization as part of what the computation consumes.",
+      "paraphrase_risk": "Moderate but repairable. The interface and modularity language performs a useful projection test, yet calling the graded component the narrow interface makes the abstraction cleaner than the source warrants.",
+      "revision_instructions": "Replace the claim that the solver consumes only the graded component with a two-part compatibility condition: the added term has the required singular support/localization and type (2,2,1). Retain holomorphic placement and the independent cohomology gate, and do not claim these conditions are exhaustive outside this computation.",
+      "unit_id": "agnostic_oa_source_type_compatibility",
+      "unsupported_or_imported": "The assertion that the downstream calculation uses the source through its graded component rather than every detail of origin is too strong: the passage also explicitly lists singular support as important and does not prove that the listed properties exhaust all dependencies."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_harmonic_boundary_normalization": "agnostic_oa_revision_223b955d9c77d4ed03facb68e5c503923bbe7e125c0b7d0d8fd25e1da57c1e8b",
+    "agnostic_oa_reference_metric_scalar_bootstrap": "agnostic_oa_revision_36e48dfe30d602a86508a1b720b73aa82b7f0317d66f042a477ad2fc8bf3190e",
+    "agnostic_oa_source_type_compatibility": "agnostic_oa_revision_f6e620200164ef65f57834b9b1008ed0a5b9dce6a3173587db8a7a04e2b10169"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "a4dac975c3279f9a1f09db3f486bd8e73cb3a3b959fe8f02dc72942d531e2051",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2085099209_eb971e46_part_01.jsonl",
+  "source_id": "openalex_w2085099209",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_source_type_compatibility.txt",
+      "artifact_bytes": 2487,
+      "artifact_relpath": "depth/units/agnostic_oa_source_type_compatibility.txt",
+      "artifact_sha256": "a75395d331842698acf184821a30486d1ba9093c23a222f0b7c9baa2fc3ae0d6",
+      "content_sha256": "67c53f15638f02ae3ec1a4e5a3da7e45c0661d2b4ff1a69d369eaec382c56114",
+      "context_note": "The type-matching argument is conditional on holomorphic source curves and points in the interval/orbifold direction. The claim that five-branes cause no further difficulty is scoped to the computation described by the source. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_sourced_cohomology_obstruction",
+            "agnostic_oa_source_type_compatibility",
+            "agnostic_oa_reference_metric_scalar_bootstrap"
+          ],
+          "identifier": "projectivization_and_compactification",
+          "kind": "saturation_probe_challenged",
+          "summary": "The title's use of compactification denotes physical dimensional reduction, while the retained mathematics concerns sourced differential forms, cohomology, Hodge theory, and warped metrics. This source therefore challenges keyword-only routing to a projectivization/compactification lens. Whether this challenge is novel relative to #44 or the corpus is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_sourced_cohomology_obstruction",
+            "agnostic_oa_source_type_compatibility",
+            "agnostic_oa_hodge_kernel_moduli"
+          ],
+          "identifier": "hodge_solvability_with_singular_sources",
+          "kind": "new_geometry_dependency",
+          "summary": "Within this source, solvability depends jointly on global cohomological neutrality, compatibility of graded source type, and Hodge-theoretic choice modulo a harmonic kernel. This is a source-grounded candidate geometry dependency; its novelty and coverage elsewhere in the ecosystem are unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2085099209",
+      "line_end": 511,
+      "line_start": 478,
+      "representation_dependency": "Extraction limit: the type labels are readable, but exact source coefficients and the cohomological equation are layout-damaged. Representation limit: compatibility uses the complex type decomposition on a Calabi-Yau factor together with a separate transverse degree. Scope limit: matching type is not a general proof that every new source preserves supersymmetry or analytic regularity; it only shows that this derivation uses the same component structure under the stated geometric placement.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "Rather than redoing the complete calculation after adding a new kind of singular source, the source decomposes forms into holomorphic, antiholomorphic, and transverse degrees and identifies the single component type on which the later computation depends. Placing the new source on compatible geometric data makes it contribute in that same type, so the established solution strategy survives. This is a reusable modularity test: determine which graded component an argument actually consumes and require extensions to land in that component.",
+      "source_id": "openalex_w2085099209",
+      "source_normalized_sha256": "406a71d371d69e0f9dd02a573c9fb82fea3b9ed22b0b4ef2d6c3848dfb7ef70e",
+      "title": "Admit a new source by matching the component type used by the solver",
+      "unit_id": "agnostic_oa_source_type_compatibility",
+      "unit_type": "compatibility-test"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_reference_metric_scalar_bootstrap.txt",
+      "artifact_bytes": 5748,
+      "artifact_relpath": "depth/units/agnostic_oa_reference_metric_scalar_bootstrap.txt",
+      "artifact_sha256": "78b3e469004cad52fbde0e1c506265e24339ec610bf2ff79b4197e5b712412a4",
+      "content_sha256": "5ee700d8ff399c40aac1ee875ab412da26865a3a86b26672957791504581e2b8",
+      "context_note": "The source presents this as an exact all-orders solution of the stated six-dimensional supergravity system, distinct from the earlier linearized four-dimensional analysis. Exactness is internal to that physical truncation and ansatz, not a general mathematical theorem about nonlinear metric-field systems. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_sourced_cohomology_obstruction",
+            "agnostic_oa_source_type_compatibility",
+            "agnostic_oa_reference_metric_scalar_bootstrap"
+          ],
+          "identifier": "projectivization_and_compactification",
+          "kind": "saturation_probe_challenged",
+          "summary": "The title's use of compactification denotes physical dimensional reduction, while the retained mathematics concerns sourced differential forms, cohomology, Hodge theory, and warped metrics. This source therefore challenges keyword-only routing to a projectivization/compactification lens. Whether this challenge is novel relative to #44 or the corpus is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_reference_metric_scalar_bootstrap",
+            "agnostic_oa_harmonic_boundary_normalization"
+          ],
+          "identifier": "reference_solution_nonlinear_bootstrap",
+          "kind": "new_family",
+          "summary": "The source exhibits a candidate family in which a metric-independent equation is solved in a reference representation, while the unknown nonlinear correction is forced to depend on the same potential so the reference solution remains valid after reconstruction. The family label is provisional and corpus novelty is explicitly unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2085099209",
+      "line_end": 1044,
+      "line_start": 948,
+      "representation_dependency": "Extraction limit: Hodge-dual, Laplacian, exponential, and conformal-factor formulas contain displaced notation; exact exponents and constants need the typeset source. Representation limit: the reduction uses a five-dimensional internal metric, a conformal ansatz, duality between a four-form and scalar gradient, and the supersymmetry equations. Scope limit: the bootstrap works because the correction depends only on the potential and because the Bianchi identity is metric-independent; a general metric-dependent PDE need not share either property.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "A field equation appears circular because its divergence operator depends on the unknown corrected metric. The source first solves the metric-independent source equation in a reference geometry by dualizing the field to the gradient of a scalar potential. Supersymmetry then forces the conformal correction to be a function of that same potential; consequently the corrected equation reduces to closure of a scalar function of the potential times its differential and is automatically compatible. The nonlinear fields and warp factors are thereby compressed to one sourced scalar problem plus algebraic functions of its solution.",
+      "source_id": "openalex_w2085099209",
+      "source_normalized_sha256": "406a71d371d69e0f9dd02a573c9fb82fea3b9ed22b0b4ef2d6c3848dfb7ef70e",
+      "title": "Bootstrap a metric-dependent system from a scalar potential in a reference metric",
+      "unit_id": "agnostic_oa_reference_metric_scalar_bootstrap",
+      "unit_type": "nonlinear-reduction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_harmonic_boundary_normalization.txt",
+      "artifact_bytes": 1255,
+      "artifact_relpath": "depth/units/agnostic_oa_harmonic_boundary_normalization.txt",
+      "artifact_sha256": "032459124a094051bd6cae1ddb6165c9f10015311ff5c18b7076855a619b9685",
+      "content_sha256": "2b88af7462548a0c6103622727ae0cda4c1c01dad8c8aec7aeae783c487f8bb4",
+      "context_note": "The minimum argument allows singular positive sources and is applied on the orbifold interval with boundary. The resulting metric singularity is a conclusion of the source's supergravity solution; its physical interpretation is treated cautiously by the source. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_reference_metric_scalar_bootstrap",
+            "agnostic_oa_harmonic_boundary_normalization"
+          ],
+          "identifier": "reference_solution_nonlinear_bootstrap",
+          "kind": "new_family",
+          "summary": "The source exhibits a candidate family in which a metric-independent equation is solved in a reference representation, while the unknown nonlinear correction is forced to depend on the same potential so the reference solution remains valid after reconstruction. The family label is provisional and corpus novelty is explicitly unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2085099209",
+      "line_end": 1107,
+      "line_start": 1093,
+      "representation_dependency": "Extraction limit: this passage is prose-readable, but the exact conformal factor is inherited from damaged displayed equations in the previous unit. Representation limit: the normalization uses a scalar harmonic potential, an additive-constant kernel, a boundary, and reconstruction through a positive conformal factor. Scope limit: the maximum principle requires its usual ellipticity and domain hypotheses, and interior singularities, sign-changing sources, noncompactness, or different boundary conditions can change where extrema occur and what the threshold means.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The scalar potential is determined only up to a constant. Because it is harmonic in the interior, the source uses the maximum principle to place its minimum on the boundary, fixes the additive ambiguity by setting that minimum to zero, and then reads regularity of the reconstructed metric from positivity of a single shifted factor. This is a reusable move: normalize a kernel freedom at an extremal locus so that loss of admissibility becomes a transparent threshold condition.",
+      "source_id": "openalex_w2085099209",
+      "source_normalized_sha256": "406a71d371d69e0f9dd02a573c9fb82fea3b9ed22b0b4ef2d6c3848dfb7ef70e",
+      "title": "Fix additive freedom at a boundary minimum and expose the positivity threshold",
+      "unit_id": "agnostic_oa_harmonic_boundary_normalization",
+      "unit_type": "normalization-and-obstruction"
+    }
+  ]
+}

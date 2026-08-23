@@ -1,0 +1,1807 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1980957747_78c5ed6f_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1980957747",
+  "unit_count": 13,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The weighted expansion requires convergence of both first- and second-order coefficient sums.",
+      "line_end": 2447,
+      "line_start": 2406,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; exact summation indices need scan verification, while convergence claims are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The finite factorizations pass to absolutely convergent infinite products and marked-factor series for the limiting unweighted and weighted distributions, making later decay and analyticity estimates possible.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Limit characteristic functions retain explicit convergent product expansions",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d25.txt",
+      "unit_bytes": 2142,
+      "unit_id": "openalex_w1980957747_d25",
+      "unit_sha256": "97e437a59c14404ca68aacfb2815a455e2a5ed2b3d02d99c9091bbbaa3d70cff",
+      "unit_type": "infinite-product representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d25.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2398,
+          "line_end": 2405,
+          "text": "\nwhence the uniform convergence of A(y; v,) for n ~ c,~ in any circle lYl ~ a.\n    This completes the proof of the theorem.\n\n<!-- source-page: 48 -->\n\n144                                             Vibeke Borchsenius and Borge Jessen.\n\n",
+          "sha256": "62ee3164e1d330dba4093ad153fa3c577a998680c3be3bcc5e437c6e54a1d350"
+        },
+        "after": {
+          "line_start": 2448,
+          "line_end": 2455,
+          "text": "\n     33. For every n the densities I~(x) and G,,(x) vanish outside the dosed\nbounded set of values assumed by ~(0~ . . . . ,0,). Since / ~ , ( x ) a n d G,(x)and\ntheir partial derivatives converge uniformly towards F(x) and G (x) and their\npartial derivatives when ~-~ oo it is plain that all the latter functions will ap-\nproach zero when Ix[ -~ c~. ~ We shall now prove a much preciser result.\n\n    Theorem 6. For a.!! ). > o the deusitie.,, F(x), G (x) a,~d l'n (x), G,, (x), n ~ ~o,\n",
+          "sha256": "17ece6c2fc2e5583f59e11bb6c70faaa72c48dea6ff4fb4d53f9e607648178a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: two types of distribution functions",
+            "line_end": 2942,
+            "line_start": 2166,
+            "mathematical_role": "torus distributions, Fourier-product formulas, smoothness, decay, positivity, analyticity, parameter continuity, and boundary degeneration"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2447,
+          "line_start": 2406,
+          "title": "Limit characteristic functions retain explicit convergent product expansions",
+          "unit_id": "openalex_w1980957747_d25",
+          "unit_type": "infinite-product representation",
+          "why_material": "The finite factorizations pass to absolutely convergent infinite products and marked-factor series for the limiting unweighted and weighted distributions, making later decay and analyticity estimates possible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The weighted expansion requires convergence of both first- and second-order coefficient sums.",
+          "representation_dependency": "High; exact summation indices need scan verification, while convergence claims are explicit.",
+          "unit_id": "openalex_w1980957747_d25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2400,
+            "line_start": 2223,
+            "title": "Factorized characteristic functions turn small circular summands into density regularity",
+            "unit_id": "openalex_w1980957747_d24",
+            "unit_type": "fourier-product proof",
+            "why_material": "Independence factors the unweighted Fourier transform and expands the weighted transform into products with one or two marked factors; local oscillatory estimates give enough inverse-power decay, while summability yields Cauchy convergence uniformly on bounded frequency sets."
+          },
+          {
+            "line_end": 2615,
+            "line_start": 2449,
+            "title": "Convolution tails give Gaussian-type spatial majorants for densities and derivatives",
+            "unit_id": "openalex_w1980957747_d26",
+            "unit_type": "tail-certification logic",
+            "why_material": "Splitting head and tail variables expresses finite densities as convolutions; exponential moment bounds for tail sums make translated tail probabilities rapidly small, yielding Gaussian-type majorants uniformly for densities and their derivatives and passing them to the limit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Independence factorizes characteristic functions; allocating enough small factors yields polynomial decay and arbitrary smoothness, while quantitative radius decay upgrades this to exponential decay and analytic or entire density extension.",
+            "limit": "The weighted law requires additional marked-factor summability, and exact decay rates depend on the radius sequence.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d05",
+              "openalex_w1980957747_d23",
+              "openalex_w1980957747_d24",
+              "openalex_w1980957747_d25",
+              "openalex_w1980957747_d26",
+              "openalex_w1980957747_d29"
+            ],
+            "title": "Fourier factor allocation yields a hierarchy from smoothness to entire density"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d25",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d25",
+          "spontaneous_reading": "The mathematical work is the preservation of a finite factorization after passage to the limiting law. The ordinary characteristic function remains an absolutely convergent product of single-factor transforms, while the derivative-weighted transform becomes a convergent sum of products with one or two marked factors; the separate summability conditions are exactly what keeps those markings controlled."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d25",
+          "source_grounded_mathematics": "The source obtains the limiting transform A(y;μ) as an infinite product of K_0(y,r_k). For the weighted measure ν it passes from the finite expansion to infinite one- and two-index sums whose terms contain K_1 or K_2 insertions among K_0 factors. Absolute convergence follows from the previously stated S_0, S_1, and S_2 conditions, and the remaining finite-to-infinite discrepancy is a tail product tending to 1.",
+          "conceptual_reading": "This is a closure step: independence gives an algebraic decomposition at finite level, and summability certifies that the same decomposition survives completion. The weighted law is not merely another product; its marks record where the derivative weight enters and expose the extra proof burden created by that weight.",
+          "representation_or_bridge": "Fourier representation converts addition of independent circular contributions into multiplication, while marked factors encode differentiated or weighted contributions without expanding the full distribution in physical space. The resulting product-series representation is the bridge to later frequency-decay and inversion arguments.",
+          "boundary_or_failure": "The unweighted product only uses the base summability, whereas the weighted expansion needs both first- and second-order coefficient sums. Without absolute convergence, neither the infinite marked sums nor the removal of the tail product is justified.",
+          "uncertainty": "The OCR damages several summation indices and K-factor labels, so their exact placement should be checked against the scan. The product-limit mechanism and the stated absolute-convergence dependencies are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The weighted case uses a second tail measure and a Schwarz bound but follows the same convolution architecture.",
+      "line_end": 2615,
+      "line_start": 2449,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for constants and moment displays; the head-tail/convolution proof is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splitting head and tail variables expresses finite densities as convolutions; exponential moment bounds for tail sums make translated tail probabilities rapidly small, yielding Gaussian-type majorants uniformly for densities and their derivatives and passing them to the limit.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [
+        49,
+        50,
+        51
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convolution tails give Gaussian-type spatial majorants for densities and derivatives",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d26.txt",
+      "unit_bytes": 9236,
+      "unit_id": "openalex_w1980957747_d26",
+      "unit_sha256": "efd1103bd22ec709deb69ea2c3c90966eb51468a617ecc93de13c3e15c24faf0",
+      "unit_type": "tail-certification logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d26.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2441,
+          "line_end": 2448,
+          "text": "                                oO\n\n\nby the factor n                        K0 (y, rk), which converges towards t when n-~ c~. Hence (53)\n                             k=n+l\n\nconverges towards A(y; ~), and this establishes (62).\n\n",
+          "sha256": "449ccd86116e805ef934424a6baaf74871e3b22a2a195abc8a322ba2107c9395"
+        },
+        "after": {
+          "line_start": 2616,
+          "line_end": 2623,
+          "text": "\n     37.    If the series          rk converges, it is plain, since ]l(z)] ~ A I z ] for [z[ _<- 0o,\n                             k:l\n\nthat all fn (01 . . . . . O~) are uniformly bounded, say [f~(01, . . . , O~) I ~ K. This im-\nplies that all F~(x) and Gn(X) and hence F ( x ) and G(x) vanish for [x[ > K.\nW e shall now prove the following theorem.\n\n",
+          "sha256": "147a489399e17c47f71362352cb8decca647eb0f6b1a1e35a8e51ef4e3f2db7b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: two types of distribution functions",
+            "line_end": 2942,
+            "line_start": 2166,
+            "mathematical_role": "torus distributions, Fourier-product formulas, smoothness, decay, positivity, analyticity, parameter continuity, and boundary degeneration"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2615,
+          "line_start": 2449,
+          "title": "Convolution tails give Gaussian-type spatial majorants for densities and derivatives",
+          "unit_id": "openalex_w1980957747_d26",
+          "unit_type": "tail-certification logic",
+          "why_material": "Splitting head and tail variables expresses finite densities as convolutions; exponential moment bounds for tail sums make translated tail probabilities rapidly small, yielding Gaussian-type majorants uniformly for densities and their derivatives and passing them to the limit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The weighted case uses a second tail measure and a Schwarz bound but follows the same convolution architecture.",
+          "representation_dependency": "High for constants and moment displays; the head-tail/convolution proof is clear.",
+          "unit_id": "openalex_w1980957747_d26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2447,
+            "line_start": 2406,
+            "title": "Limit characteristic functions retain explicit convergent product expansions",
+            "unit_id": "openalex_w1980957747_d25",
+            "unit_type": "infinite-product representation",
+            "why_material": "The finite factorizations pass to absolutely convergent infinite products and marked-factor series for the limiting unweighted and weighted distributions, making later decay and analyticity estimates possible."
+          },
+          {
+            "line_end": 2681,
+            "line_start": 2617,
+            "title": "Divergent step lengths make the unweighted limiting density positive everywhere",
+            "unit_id": "openalex_w1980957747_d27",
+            "unit_type": "support-positivity proof",
+            "why_material": "When the component radii are summable the value support is bounded; when they diverge, polygonal selection of tail phases reaches every target neighborhood, tail concentration transfers positive mass through convolution, and continuity then forces the limiting density F to be positive at every point."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Independence factorizes characteristic functions; allocating enough small factors yields polynomial decay and arbitrary smoothness, while quantitative radius decay upgrades this to exponential decay and analytic or entire density extension.",
+            "limit": "The weighted law requires additional marked-factor summability, and exact decay rates depend on the radius sequence.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d05",
+              "openalex_w1980957747_d23",
+              "openalex_w1980957747_d24",
+              "openalex_w1980957747_d25",
+              "openalex_w1980957747_d26",
+              "openalex_w1980957747_d29"
+            ],
+            "title": "Fourier factor allocation yields a hierarchy from smoothness to entire density"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d26",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d26",
+          "spontaneous_reading": "The key move is to split the phase sum into a fixed head and a small random tail, then turn concentration of the tail into spatial decay of the full density by convolution. Linearizing the tail gives exponential-moment control, and the weighted case is recovered through a second tail measure and a Schwarz estimate rather than by silently treating it as an ordinary probability law."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d26",
+          "source_grounded_mathematics": "Writing f_n=f_q+f_{q,n}, Fubini gives μ_n(E)=∫μ_q(E-u)dμ_{q,n}(u) and hence F_n(x)=∫F_q(x-u)dμ_{q,n}(u). The nonlinear tail is compared with its linear part; Parseval estimates moments of that linear sum and yields exponentially small translated-tail probabilities. Bounded head densities and differentiation under the convolution then give Gaussian-type majorants for F_n, F, and their derivatives. For G_n the source proves an inequality involving F_q and a weighted tail measure ν_{q,n}, with ν_{q,n}(E) bounded by a constant times μ_{q,n}(E)^{1/2}.",
+          "conceptual_reading": "This proof localizes two tasks: the head supplies regularity, while the tail supplies localization. It shows that a density can inherit strong pointwise decay from concentration of an otherwise implicit tail distribution, and that the same architecture survives weighting only after an additional moment comparison.",
+          "representation_or_bridge": "The head-tail convolution is the bridge from probabilistic tail bounds to analytic estimates on densities. Translation of a bounded head support converts a distant evaluation point into a rare tail event; differentiating the fixed head factor transfers the identical bound to derivatives.",
+          "boundary_or_failure": "The argument needs q large enough for the analytic linearization error and exponential moment estimate, as well as the relevant convergent coefficient sums. The weighted result additionally uses control of the derivative tail and Schwarz; it is not a consequence of the unweighted convolution formula alone.",
+          "uncertainty": "Several constants and displayed exponents are OCR-degraded. The source clearly supports Gaussian-type spatial majorants and the head-tail mechanism, but the exact numerical exponent and constants should be scan-verified before reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This distinguishes full support from mere smoothness or nonnegative density.",
+      "line_end": 2681,
+      "line_start": 2617,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium; the geometric selection and convolution implication survive OCR damage to estimates.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "When the component radii are summable the value support is bounded; when they diverge, polygonal selection of tail phases reaches every target neighborhood, tail concentration transfers positive mass through convolution, and continuity then forces the limiting density F to be positive at every point.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [
+        52,
+        53
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Divergent step lengths make the unweighted limiting density positive everywhere",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d27.txt",
+      "unit_bytes": 3666,
+      "unit_id": "openalex_w1980957747_d27",
+      "unit_sha256": "11073faf0cffc285ad4143c38cadcbca3959b801aaef6dd965afb0c7cce2252b",
+      "unit_type": "support-positivity proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d27.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2609,
+          "line_end": 2616,
+          "text": "The same argument then shows that the partial derivatives of order ===-p of\nl~(x) for n > q, and hence for n _--n,, have a m a j o r a n t of the form Kpe -~1~1\".\nSince the partial derivatives converge towards the partial derivatives of F ( x )\nwhen n ~ 0% this function also ma.jorizes the partial derivatives of order _--<p\nof F(x).\n    The corresponding results on the functions G,(x) and G(x) follow in the\nsame manner from (66).\n\n",
+          "sha256": "042ca2cbd45d8238f3782dfdbea1e52a2f7ccca13024af42c1dad79740bdea31"
+        },
+        "after": {
+          "line_start": 2682,
+          "line_end": 2689,
+          "text": "\n       39.   Next we shall consider the function G(x).\n       Since rn-~ o when n-~ co, and since G(x) is n o t altered if for an arbitrary\n_N we make a permutation of the numbers rl . . . . . r~ and the same permuta-\ntion of the numbers X 1 , . . . , ~.~', we may suppose t h a t the numbers rx and r2 are\nas small as we please and t h a t r~ > r2.\n       The proof depends on an elementary proposition, viz. t h a t if rl and r 2 are\nsufficiently small, and r~ > r2, then there exist two pairs of values (~, 0~) and\n",
+          "sha256": "c3618214925a58eb6fe5383b9a21ecc6cc4225cc660f0ddd60c62617fd9dcd23"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: two types of distribution functions",
+            "line_end": 2942,
+            "line_start": 2166,
+            "mathematical_role": "torus distributions, Fourier-product formulas, smoothness, decay, positivity, analyticity, parameter continuity, and boundary degeneration"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2681,
+          "line_start": 2617,
+          "title": "Divergent step lengths make the unweighted limiting density positive everywhere",
+          "unit_id": "openalex_w1980957747_d27",
+          "unit_type": "support-positivity proof",
+          "why_material": "When the component radii are summable the value support is bounded; when they diverge, polygonal selection of tail phases reaches every target neighborhood, tail concentration transfers positive mass through convolution, and continuity then forces the limiting density F to be positive at every point."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This distinguishes full support from mere smoothness or nonnegative density.",
+          "representation_dependency": "Medium; the geometric selection and convolution implication survive OCR damage to estimates.",
+          "unit_id": "openalex_w1980957747_d27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2615,
+            "line_start": 2449,
+            "title": "Convolution tails give Gaussian-type spatial majorants for densities and derivatives",
+            "unit_id": "openalex_w1980957747_d26",
+            "unit_type": "tail-certification logic",
+            "why_material": "Splitting head and tail variables expresses finite densities as convolutions; exponential moment bounds for tail sums make translated tail probabilities rapidly small, yielding Gaussian-type majorants uniformly for densities and their derivatives and passing them to the limit."
+          },
+          {
+            "line_end": 2833,
+            "line_start": 2683,
+            "title": "A nondegenerate double representation transfers positivity to the derivative-weighted density",
+            "unit_id": "openalex_w1980957747_d28",
+            "unit_type": "weighted-positivity proof",
+            "why_material": "Two small circular summands are chosen so the same value has two regular phase preimages with distinct derivative weights; inverse-coordinate maps and a Jacobian lower bound prevent cancellation, reducing positivity of the weighted density G to the already-established positivity of an unweighted tail density."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Unweighted positivity comes from phase-polygon reachability plus convolution, whereas derivative-weighted positivity additionally needs two regular representations of one value with separated weights to prevent the weight from degenerating.",
+            "limit": "The arguments use small analytic circular components and divergence of their effective radii; they are not generic positivity theorems for arbitrary sums.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d27",
+              "openalex_w1980957747_d28"
+            ],
+            "title": "Full support and weighted positivity require distinct mechanisms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d27",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d27",
+          "spontaneous_reading": "Strict positivity is obtained from reachability plus residual randomness, not from smoothness. Divergence of the radii lets a finite block of sufficiently small phase vectors close a polygon to any desired displacement, while the remaining tail has positive probability of staying near zero; convolution then turns positive mass in every open set into pointwise positivity of the limiting density."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d27",
+          "source_grounded_mathematics": "The source first contrasts the summable-radius case, where all values stay in a bounded set, with the divergent-radius case. A second-moment estimate shows that a sufficiently remote tail lies in a small circle with uniformly positive probability. Using l(z)≈l_1z for small z and divergence of ∑r_k, phases in a finite tail block can be chosen so its vector sum reaches the displacement from a fixed head value to an arbitrary target. Thus the limiting measure is positive on every set with interior. The limiting convolution F(x)=∫F_q(x-u)dQ_q(u), with Q_q positive on open sets, then gives F(x)>0 everywhere.",
+          "conceptual_reading": "Full support is constructed geometrically before it is upgraded analytically to strict density positivity. The proof separates controllability of a finite phase block from robustness supplied by unused tail variables.",
+          "representation_or_bridge": "The polygonal vector-sum picture translates phase freedom into reachability in the value plane. Convolution with a smooth positive head density bridges open-set support of the tail law to pointwise positivity of F.",
+          "boundary_or_failure": "Divergence of ∑r_k and the locally nonzero linear term of l are essential. If the radii are summable, the support is bounded. This span proves positivity for the unweighted density F; positivity of the derivative-weighted density G requires the distinct nondegeneracy argument that follows.",
+          "uncertainty": "OCR obscures some circle radii and numerical probability bounds, but the phase-selection, open-set support, and convolution implications are readable."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof explicitly treats proportional and nonproportional analytic functions before applying the local change of variables.",
+      "line_end": 2833,
+      "line_start": 2683,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for Jacobians and analytic expansions; the nondegenerate-two-preimage mechanism is stated coherently.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two small circular summands are chosen so the same value has two regular phase preimages with distinct derivative weights; inverse-coordinate maps and a Jacobian lower bound prevent cancellation, reducing positivity of the weighted density G to the already-established positivity of an unweighted tail density.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [
+        54,
+        55,
+        56
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A nondegenerate double representation transfers positivity to the derivative-weighted density",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d28.txt",
+      "unit_bytes": 8947,
+      "unit_id": "openalex_w1980957747_d28",
+      "unit_sha256": "f85d99eb852c4e4ccd042146ed5b347c00ff79fed28f0037db71ed9c9adbf421",
+      "unit_type": "weighted-positivity proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d28.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2675,
+          "line_end": 2682,
+          "text": "\n<!-- source-page: 53 -->\n\nMean Motions and Values of the Riemann Zeta Function.                                          149\n\nfor any set E containing interior points. The relation (7~)therefore implies t h a t\nF(x) > o for all x.\n\n",
+          "sha256": "be19ac62c4895577d880eeb1c51f337cafdd43d4fa7818e792f3bf58b6ec4daa"
+        },
+        "after": {
+          "line_start": 2834,
+          "line_end": 2841,
+          "text": "      41. Next we shall prove the following theorem.\n    Theorem 8. I f ~q 1-~ O(n), then the densities F(x)=F(~a, ~2) and G(x)=G(~x,~)\nare regular analytic in every point of the real plane R~. I f r~'-~ o(n), then F(x)\nand G(x) are entire functions of the two variables ~a,~2.\n      Consider the products\n                            oo                oo                      o0\n\n\n",
+          "sha256": "1c6109aab3a441a14073143c79f4066b9e5703657b5f6f3d94b521f4f4e71b13"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: two types of distribution functions",
+            "line_end": 2942,
+            "line_start": 2166,
+            "mathematical_role": "torus distributions, Fourier-product formulas, smoothness, decay, positivity, analyticity, parameter continuity, and boundary degeneration"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2833,
+          "line_start": 2683,
+          "title": "A nondegenerate double representation transfers positivity to the derivative-weighted density",
+          "unit_id": "openalex_w1980957747_d28",
+          "unit_type": "weighted-positivity proof",
+          "why_material": "Two small circular summands are chosen so the same value has two regular phase preimages with distinct derivative weights; inverse-coordinate maps and a Jacobian lower bound prevent cancellation, reducing positivity of the weighted density G to the already-established positivity of an unweighted tail density."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof explicitly treats proportional and nonproportional analytic functions before applying the local change of variables.",
+          "representation_dependency": "High for Jacobians and analytic expansions; the nondegenerate-two-preimage mechanism is stated coherently.",
+          "unit_id": "openalex_w1980957747_d28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2681,
+            "line_start": 2617,
+            "title": "Divergent step lengths make the unweighted limiting density positive everywhere",
+            "unit_id": "openalex_w1980957747_d27",
+            "unit_type": "support-positivity proof",
+            "why_material": "When the component radii are summable the value support is bounded; when they diverge, polygonal selection of tail phases reaches every target neighborhood, tail concentration transfers positive mass through convolution, and continuity then forces the limiting density F to be positive at every point."
+          },
+          {
+            "line_end": 2884,
+            "line_start": 2834,
+            "title": "Rate of radius decay controls real analyticity versus entire density extension",
+            "unit_id": "openalex_w1980957747_d29",
+            "unit_type": "analyticity criterion",
+            "why_material": "Allocating successive small-radius factors in the characteristic-function products produces exponential Fourier decay; geometric-rate radius decay yields local real analyticity, while supergeometric decay permits arbitrarily strong exponential decay and entire extension in the two real coordinates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Unweighted positivity comes from phase-polygon reachability plus convolution, whereas derivative-weighted positivity additionally needs two regular representations of one value with separated weights to prevent the weight from degenerating.",
+            "limit": "The arguments use small analytic circular components and divergence of their effective radii; they are not generic positivity theorems for arbitrary sums.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d27",
+              "openalex_w1980957747_d28"
+            ],
+            "title": "Full support and weighted positivity require distinct mechanisms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d28",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d28",
+          "spontaneous_reading": "The weighted positivity problem is solved by finding redundancy in the phase-to-value map: the same head value has two regular phase representations whose derivative weights differ. Two inverse charts and a uniform separation of those weights prevent the squared weight from cancelling after an arbitrary tail contribution, so positivity of an unweighted tail density can be transferred to G."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d28",
+          "source_grounded_mathematics": "After permuting two sufficiently small unequal radii to the front, the source constructs two phase pairs with f_2(θ_1,θ_2) equal, g_2 different, and nonzero Jacobian for the map from phases to the two real coordinates of f_2. Convexity of the small image curves produces two transverse intersections; proportional and nonproportional cases for the analytic functions are treated separately to ensure the g_2 values differ. Local inverse maps on two phase neighborhoods have Jacobians bounded below, and the corresponding head weights remain separated. Fubini and change of variables then lower-bound ν_n(E) by a positive constant times an unweighted tail measure averaged over a value neighborhood. Passing to the limit and using positivity of the tail density yields G(x)>0 for every x.",
+          "conceptual_reading": "A weighted pushforward may vanish even when its unweighted support is full. The additional resource is a nondegenerate fiber with two representations carrying separated weights; fiber redundancy converts a possible cancellation or degeneracy into a uniform lower bound.",
+          "representation_or_bridge": "The phase-to-value map, its Jacobian, and two local inverse charts are the operative intermediate objects. They bridge geometric multiplicity of representations to a measure lower bound, which convolution with the already-positive tail density turns into global positivity.",
+          "boundary_or_failure": "The mechanism uses small analytic circular components, unequal radii, regular preimages, and the divergent-radius tail positivity proved earlier. It is not a general theorem that every derivative-weighted pushforward of a full-support law is positive.",
+          "uncertainty": "The OCR is unreliable for exact Jacobian notation, constants, and the displayed proportionality formulas. The two-preimage, weight-separation, change-of-variables mechanism is nevertheless explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a direct frequency-decay-to-spatial-analyticity transfer.",
+      "line_end": 2884,
+      "line_start": 2834,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for the exact limsup rate and constants, but the dichotomy is explicit in Theorem 8 and proof prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Allocating successive small-radius factors in the characteristic-function products produces exponential Fourier decay; geometric-rate radius decay yields local real analyticity, while supergeometric decay permits arbitrarily strong exponential decay and entire extension in the two real coordinates.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [
+        57
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rate of radius decay controls real analyticity versus entire density extension",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d29.txt",
+      "unit_bytes": 2383,
+      "unit_id": "openalex_w1980957747_d29",
+      "unit_sha256": "a91a04f81db556168ae3f79c7d8b15a55434c2391406391662a08cccf7ffc47e",
+      "unit_type": "analyticity criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d29.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2826,
+          "line_end": 2833,
+          "text": "whence for n-~ vo\n                                   9 (E) >= 89               x)m(dR~),\n                                                     M\nSO that for an arbitrary xo\n                                 g (xo) > 89k, k] f R~ (xo -- x) m (d R~),\n\nwhere B2(x) denotes the density of 02. Since, by the first part of the theorem,\nRa(x) > o for all x, this shows that G(x)> o for all x.\n",
+          "sha256": "644f12055be5d0622ae5545e10140b4aa84a71d1a2bcf7fdc15db5a1dedc50c8"
+        },
+        "after": {
+          "line_start": 2885,
+          "line_end": 2892,
+          "text": "\n    42. In the applications the numbers rl, r 2 , . . , will depend on a parameter a\n(whereas s ~2. . . . remain constants).\n      Theorem 9. I f rl, rz, 9 . . are continuous functions of a parameter a in a closed\ninterval al <= a <=a2, and rn--~o uniformly in a, then the distribution functions I~,\nand ~, will for every n depend continuously on a, the numbers np, p >=o, may be\n chosen independent of a, and the densities F , (x) and G, (x) and their partial deriva-\n tives will be continuous fu~ctions of x and a together.\n",
+          "sha256": "ed6ed6e1f82f43807f29d87765e6967292773909e257958f31a9323a4cc541dd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: two types of distribution functions",
+            "line_end": 2942,
+            "line_start": 2166,
+            "mathematical_role": "torus distributions, Fourier-product formulas, smoothness, decay, positivity, analyticity, parameter continuity, and boundary degeneration"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2884,
+          "line_start": 2834,
+          "title": "Rate of radius decay controls real analyticity versus entire density extension",
+          "unit_id": "openalex_w1980957747_d29",
+          "unit_type": "analyticity criterion",
+          "why_material": "Allocating successive small-radius factors in the characteristic-function products produces exponential Fourier decay; geometric-rate radius decay yields local real analyticity, while supergeometric decay permits arbitrarily strong exponential decay and entire extension in the two real coordinates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a direct frequency-decay-to-spatial-analyticity transfer.",
+          "representation_dependency": "High for the exact limsup rate and constants, but the dichotomy is explicit in Theorem 8 and proof prose.",
+          "unit_id": "openalex_w1980957747_d29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2833,
+            "line_start": 2683,
+            "title": "A nondegenerate double representation transfers positivity to the derivative-weighted density",
+            "unit_id": "openalex_w1980957747_d28",
+            "unit_type": "weighted-positivity proof",
+            "why_material": "Two small circular summands are chosen so the same value has two regular phase preimages with distinct derivative weights; inverse-coordinate maps and a Jacobian lower bound prevent cancellation, reducing positivity of the weighted density G to the already-established positivity of an unweighted tail density."
+          },
+          {
+            "line_end": 2912,
+            "line_start": 2886,
+            "title": "Uniform tail control upgrades distribution convergence to joint parameter regularity",
+            "unit_id": "openalex_w1980957747_d30",
+            "unit_type": "parameter-stability theorem",
+            "why_material": "Theorem 9 shows that uniform decay and uniform summable majorants in a parameter give continuous measure dependence, joint continuity of densities and derivatives, uniform convergence in value and parameter, and uniform spatial majorants."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Independence factorizes characteristic functions; allocating enough small factors yields polynomial decay and arbitrary smoothness, while quantitative radius decay upgrades this to exponential decay and analytic or entire density extension.",
+            "limit": "The weighted law requires additional marked-factor summability, and exact decay rates depend on the radius sequence.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d05",
+              "openalex_w1980957747_d23",
+              "openalex_w1980957747_d24",
+              "openalex_w1980957747_d25",
+              "openalex_w1980957747_d26",
+              "openalex_w1980957747_d29"
+            ],
+            "title": "Fourier factor allocation yields a hierarchy from smoothness to entire density"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d29",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d29",
+          "spontaneous_reading": "The rate at which component radii shrink is converted into a regularity scale. Assigning successively smaller factors to a large frequency forces the characteristic-function products to decay exponentially; a geometric rate gives a fixed exponential type and real analyticity, while supergeometric decay gives every exponential rate and hence entire extension."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d29",
+          "source_grounded_mathematics": "The proof starts from the product representations for A(y;μ) and A(y;ν). With b defined by the limsup geometric rate of r_n, any a>b eventually bounds r_n by a^n. The local bound for K_0 supplies roughly one inverse-frequency contribution per allocated small factor; multiplying these bounds and using Stirling produces O(e^{-c|y|}) decay for the products, with a corresponding polynomial prefactor absorbed in the weighted sums. If b=0, c can be taken arbitrarily large. Fourier inversion then yields real analyticity in the first case and an entire function of the two real-coordinate variables in the second.",
+          "conceptual_reading": "This is a quantitative refinement of the earlier smoothness argument: factor abundance controls polynomial decay, but factor scale controls exponential decay. The asymptotic geometry of the radius sequence therefore becomes the analytic continuation budget of the density.",
+          "representation_or_bridge": "The bridge runs from radius decay to factorwise Fourier decay, from the product to global exponential frequency decay, and then through Fourier inversion to spatial analyticity or entire extension.",
+          "boundary_or_failure": "The conclusion depends on the explicit product and marked-product formulas and their summability; a qualitative statement r_n→0 alone only supports smoothness, not analyticity. The weighted transform must absorb its marked-factor polynomial growth.",
+          "uncertainty": "The OCR corrupts the exact hypothesis as printed and several constants in the limsup estimate. The geometric-versus-supergeometric dichotomy and its Fourier-decay proof are explicit and agree with the bounded dossier."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is required because the vertical-line real part later serves as the parameter.",
+      "line_end": 2912,
+      "line_start": 2886,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium; the theorem and proof strategy are prose-readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 9 shows that uniform decay and uniform summable majorants in a parameter give continuous measure dependence, joint continuity of densities and derivatives, uniform convergence in value and parameter, and uniform spatial majorants.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform tail control upgrades distribution convergence to joint parameter regularity",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d30.txt",
+      "unit_bytes": 2099,
+      "unit_id": "openalex_w1980957747_d30",
+      "unit_sha256": "fc6fcdf483f792cb0f309c2134372f62cb85d88699a8a9d9f5e5b0730963a1fb",
+      "unit_type": "parameter-stability theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d30.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2878,
+          "line_end": 2885,
+          "text": "                                          14=m\n\n                      <~ (A' S, + A\" S~ lY ['0)Ce-Cl'l\nConsequently, A(y; t~) and A(y; v) are O(e -clul) for every c < 8 9            -1, which\nproves the first part of the theorem (cf. w 6). If b = o we may take a ar-\nbitrarily small; hence A(y; tt) and A(y;v) are O(e -clul) for arbitrarily large c\nwhich proves the second part of the theorem.\n\n",
+          "sha256": "c66602f5b5ba72c739f9bf07924c9a89e685755e615c002c3aa310fa7fd3a98e"
+        },
+        "after": {
+          "line_start": 2913,
+          "line_end": 2920,
+          "text": "\n<!-- source-page: 58 -->\n\n154                           Vibeke Borchsenius and Borge Jessen.\n\n       Theorem 10. Let rx, r 2 , . . , be continuous functions of a parameter a in a\nclosed interval al <=a<=a2, such that r , ~ o uniformly in a. Let the series So, $1, $2\nbe convergent for al < a ~ a2, but let So be divergent for a ~-- al. Then the density\n",
+          "sha256": "8eff5c172a73e430b6f57abc7eae76cdbaea79bf42c0a0c560f94a1bc1801e20"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: two types of distribution functions",
+            "line_end": 2942,
+            "line_start": 2166,
+            "mathematical_role": "torus distributions, Fourier-product formulas, smoothness, decay, positivity, analyticity, parameter continuity, and boundary degeneration"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2912,
+          "line_start": 2886,
+          "title": "Uniform tail control upgrades distribution convergence to joint parameter regularity",
+          "unit_id": "openalex_w1980957747_d30",
+          "unit_type": "parameter-stability theorem",
+          "why_material": "Theorem 9 shows that uniform decay and uniform summable majorants in a parameter give continuous measure dependence, joint continuity of densities and derivatives, uniform convergence in value and parameter, and uniform spatial majorants."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is required because the vertical-line real part later serves as the parameter.",
+          "representation_dependency": "Medium; the theorem and proof strategy are prose-readable.",
+          "unit_id": "openalex_w1980957747_d30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2884,
+            "line_start": 2834,
+            "title": "Rate of radius decay controls real analyticity versus entire density extension",
+            "unit_id": "openalex_w1980957747_d29",
+            "unit_type": "analyticity criterion",
+            "why_material": "Allocating successive small-radius factors in the characteristic-function products produces exponential Fourier decay; geometric-rate radius decay yields local real analyticity, while supergeometric decay permits arbitrarily strong exponential decay and entire extension in the two real coordinates."
+          },
+          {
+            "line_end": 2942,
+            "line_start": 2918,
+            "title": "Diverging variance forces the limiting density and all derivatives to vanish uniformly",
+            "unit_id": "openalex_w1980957747_d31",
+            "unit_type": "boundary-degeneration theorem",
+            "why_material": "When the square-sum diverges at a boundary parameter while remaining convergent inside, the characteristic function tends to zero away from frequency zero under an integrable uniform majorant, so Fourier inversion and dominated convergence give uniform vanishing of the density and its derivatives."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d30",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d30",
+          "spontaneous_reading": "Uniform tail control is what permits the parameter to pass through every limit. Continuity of each finite characteristic function is elementary, but parameter-independent frequency majorants and uniform convergence on bounded frequency sets upgrade this to joint continuity of limiting densities and derivatives, uniform convergence, and decay estimates with common constants."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d30",
+          "source_grounded_mathematics": "For radii r_k(a) continuous on a closed parameter interval and tending to zero uniformly, the finite distributions depend continuously on a and the regularity thresholds n_p can be chosen uniformly. If S_0, S_1, and S_2 have convergent parameter-independent majorants, estimates for A(y;μ_n) and A(y;ν_n) give uniform convergence on bounded y-sets and integrable inverse-power majorants independent of a. Fourier inversion then yields joint continuity in x and a, uniform convergence of densities and all stated derivatives, and parameter-independent versions of the spatial majorants from Theorem 6.",
+          "conceptual_reading": "The theorem is a controlled interchange of quantifiers: pointwise-in-parameter convergence becomes one statement valid simultaneously across the parameter interval. The real content is not finite continuity but uniform domination of the infinite tail.",
+          "representation_or_bridge": "Parameter-dependent characteristic functions provide a common comparison space. Uniform Fourier majorants bridge continuity and convergence of the transforms to joint regularity and uniform convergence of the physical-space densities.",
+          "boundary_or_failure": "Pointwise decay r_n(a)→0 or pointwise convergence of the coefficient sums would not justify uniform inversion. Compact parameter control and convergent common majorants for all three sums are the decisive hypotheses for the limiting conclusions.",
+          "uncertainty": "The theorem and proof strategy are prose-readable; OCR mainly damages symbols in the parameter bounds, not the uniformity claims."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the later source of the Re(s)→1/2 boundary behavior.",
+      "line_end": 2942,
+      "line_start": 2918,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for the product estimate, low for the dominated-convergence mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "When the square-sum diverges at a boundary parameter while remaining convergent inside, the characteristic function tends to zero away from frequency zero under an integrable uniform majorant, so Fourier inversion and dominated convergence give uniform vanishing of the density and its derivatives.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Diverging variance forces the limiting density and all derivatives to vanish uniformly",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d31.txt",
+      "unit_bytes": 1526,
+      "unit_id": "openalex_w1980957747_d31",
+      "unit_sha256": "b7517444447df2d22ab99927a032f40cd5ef8cf89252bb11dff0faadc20803d7",
+      "unit_type": "boundary-degeneration theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d31.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2910,
+          "line_end": 2917,
+          "text": "of a. This establishes the second part of the theorem except the last statement,\nwhich follows on examination of the proof of Theorem 6, where again all constants\nmay be chosen independent of a.\n\n<!-- source-page: 58 -->\n\n154                           Vibeke Borchsenius and Borge Jessen.\n\n",
+          "sha256": "61dad6802a163f42011a2d667fcc101f08b6a145dd0390f6cf078ee61f9b99c3"
+        },
+        "after": {
+          "line_start": 2943,
+          "line_end": 2950,
+          "text": "\n\nDistribution Functions Connected with the Zeta Function and its Logarithm.\n\n      43. I n w 27 we have reduced the study of the functions ~(s) and log ~(s)\nto a study of the functions ~(s) and log ~(s).                               Together with ~(s) we shall\nconsider the whole class of functions\n                                                             n\n",
+          "sha256": "24858b23e223740068b079178cab5f970cf02d89d2dd0dbd413c04048c9798fa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: two types of distribution functions",
+            "line_end": 2942,
+            "line_start": 2166,
+            "mathematical_role": "torus distributions, Fourier-product formulas, smoothness, decay, positivity, analyticity, parameter continuity, and boundary degeneration"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2942,
+          "line_start": 2918,
+          "title": "Diverging variance forces the limiting density and all derivatives to vanish uniformly",
+          "unit_id": "openalex_w1980957747_d31",
+          "unit_type": "boundary-degeneration theorem",
+          "why_material": "When the square-sum diverges at a boundary parameter while remaining convergent inside, the characteristic function tends to zero away from frequency zero under an integrable uniform majorant, so Fourier inversion and dominated convergence give uniform vanishing of the density and its derivatives."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the later source of the Re(s)→1/2 boundary behavior.",
+          "representation_dependency": "High for the product estimate, low for the dominated-convergence mechanism.",
+          "unit_id": "openalex_w1980957747_d31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2912,
+            "line_start": 2886,
+            "title": "Uniform tail control upgrades distribution convergence to joint parameter regularity",
+            "unit_id": "openalex_w1980957747_d30",
+            "unit_type": "parameter-stability theorem",
+            "why_material": "Theorem 9 shows that uniform decay and uniform summable majorants in a parameter give continuous measure dependence, joint continuity of densities and derivatives, uniform convergence in value and parameter, and uniform spatial majorants."
+          },
+          {
+            "line_end": 3023,
+            "line_start": 2947,
+            "title": "Logarithmic Euler factors instantiate the abstract smooth-density theory",
+            "unit_id": "openalex_w1980957747_d32",
+            "unit_type": "specialization theorem",
+            "why_material": "Choosing l(z)=-log(1-z), its derivative-weight companion, prime radii, and log-prime frequencies verifies the abstract hypotheses and yields smooth, positive, analytic, parameter-continuous log-Euler-product densities with uniform decay and boundary vanishing."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "As the log-Euler variance diverges at Re(s)=1/2, pointwise density flattens while the logarithmic-potential/Jensen quantities grow, producing increasing zero frequencies across the full half-plane.",
+            "limit": "The source establishes asymptotic distribution and zero-frequency consequences in Re(s)>1/2, not any assertion about the location of zeta zeros on the critical line.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d31",
+              "openalex_w1980957747_d32",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36",
+              "openalex_w1980957747_d37"
+            ],
+            "title": "Boundary variance collapse drives Jensen growth near the critical-line edge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d31",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d31",
+          "spontaneous_reading": "At the boundary, diverging quadratic mass flattens the density rather than producing a pointwise limiting profile. Away from zero frequency, more small factors force the characteristic function to zero; a uniform integrable Fourier majorant then turns that punctured-frequency collapse into uniform vanishing of the density and every derivative."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d31",
+          "source_grounded_mathematics": "Theorem 10 assumes r_k(a) are continuous, tend to zero uniformly, and the relevant sums converge for interior parameters while S_0 diverges at the boundary a_1. A parameter-independent integrable majorant for |y|^p|A(y;μ_a)| is inherited from the preceding uniform estimates. On each annulus 0<c≤|y|≤C, the product formula and a small-factor bound of the form |K_0(y,r_k)|≤1-c' r_k^2|y|^2 force A(y;μ_a)→0 as a→a_1 because S_0 diverges. Dominated Fourier inversion gives uniform convergence of F_a and each partial derivative to zero.",
+          "conceptual_reading": "The law does not lose total mass; its mass spreads so broadly that every fixed spatial location sees vanishing density. The proof isolates the exceptional zero frequency, where characteristic functions remain normalized, from the positive-measure frequency region that controls inversion.",
+          "representation_or_bridge": "The infinite product converts variance divergence into characteristic-function collapse on punctured annuli. Dominated convergence in Fourier space is the bridge from that collapse to uniform spatial flattening, including after multiplication by frequency monomials for derivatives.",
+          "boundary_or_failure": "There is no claim that the measures themselves converge to the zero measure, and convergence cannot hold at y=0. The displayed theorem concerns the unweighted density F; extending it to a weighted law would require separately stated domination.",
+          "uncertainty": "The OCR damages the boundary value and some product constants. The dossier identifies this boundary with the later real-part one-half limit, and the dominated-convergence mechanism is explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span contains Theorem 11 and the exact mapping from prime Euler factors to Theorems 5–10.",
+      "line_end": 3023,
+      "line_start": 2947,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for prime-power exponents and boundary symbols; theorem conclusions are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Choosing l(z)=-log(1-z), its derivative-weight companion, prime radii, and log-prime frequencies verifies the abstract hypotheses and yields smooth, positive, analytic, parameter-continuous log-Euler-product densities with uniform decay and boundary vanishing.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [
+        59,
+        60
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic Euler factors instantiate the abstract smooth-density theory",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d32.txt",
+      "unit_bytes": 5292,
+      "unit_id": "openalex_w1980957747_d32",
+      "unit_sha256": "00d5e2c84f41a98d0e2ddf60315e98e512c8e4bd3feaf3502d21ab2fff33b79d",
+      "unit_type": "specialization theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d32.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2939,
+          "line_end": 2946,
+          "text": "                        k~l                           k~q                          k~q\n\nSince the series So diverges for a ~ al, the last product converges towards zero\nwhen a - + al, and this establishes the theorem.\n\n\nDistribution Functions Connected with the Zeta Function and its Logarithm.\n\n",
+          "sha256": "0d51ad87fed4da4ec588c25b16f28d08d6c6fee30edfd6c5bda60bb3a662397d"
+        },
+        "after": {
+          "line_start": 3024,
+          "line_end": 3031,
+          "text": "\n    44. Let R~ be mapped on itself by the transformation e~; every point\nx--~l+i~2#o    is then the image of the enumerable set of points l o g x =\n   log ] x] + i arg x. In the neighbourhood of each of these points the Jacobian\nof the transformation is equal to ]x]~. If E is an arbitrary set in R~ we denote\nby log E the set of all points x such that ex belongs to E. W e shall now prove\nthe following theorem.\n\n",
+          "sha256": "6a01b18653b9410c90ef918dcfbebbfd3ae0465c2fc4569087a422a85e402d4a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: log-Euler-product distributions",
+            "line_end": 3024,
+            "line_start": 2943,
+            "mathematical_role": "specialization of the abstract torus theory to logarithms of partial Euler products"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3023,
+          "line_start": 2947,
+          "title": "Logarithmic Euler factors instantiate the abstract smooth-density theory",
+          "unit_id": "openalex_w1980957747_d32",
+          "unit_type": "specialization theorem",
+          "why_material": "Choosing l(z)=-log(1-z), its derivative-weight companion, prime radii, and log-prime frequencies verifies the abstract hypotheses and yields smooth, positive, analytic, parameter-continuous log-Euler-product densities with uniform decay and boundary vanishing."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span contains Theorem 11 and the exact mapping from prime Euler factors to Theorems 5–10.",
+          "representation_dependency": "High for prime-power exponents and boundary symbols; theorem conclusions are clear.",
+          "unit_id": "openalex_w1980957747_d32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2942,
+            "line_start": 2918,
+            "title": "Diverging variance forces the limiting density and all derivatives to vanish uniformly",
+            "unit_id": "openalex_w1980957747_d31",
+            "unit_type": "boundary-degeneration theorem",
+            "why_material": "When the square-sum diverges at a boundary parameter while remaining convergent inside, the characteristic function tends to zero away from frequency zero under an integrable uniform majorant, so Fourier inversion and dominated convergence give uniform vanishing of the density and its derivatives."
+          },
+          {
+            "line_end": 3170,
+            "line_start": 3025,
+            "title": "Exponentiation transports log-value distributions to zeta-value distributions",
+            "unit_id": "openalex_w1980957747_d33",
+            "unit_type": "measure-pushforward",
+            "why_material": "The exponential map sends log-value measures to value measures and transforms densities by summing over all logarithms with the Jacobian factor; Gaussian decay makes these periodized sums and all derivatives converge, giving smoothness, positivity away from zero, analyticity after composition, and boundary-weighted vanishing."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Zeta-value densities are periodized, Jacobian-adjusted pushforwards of log-zeta densities, allowing regularity and curvature results to transfer while creating a distinguished behavior at value zero and multiple logarithmic preimages.",
+            "limit": "Boundary statements need the explicit |x|-weights recorded in Theorem 12; unweighted uniform vanishing is false.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d32",
+              "openalex_w1980957747_d33",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36"
+            ],
+            "title": "Exponentiation preserves the distribution program but changes singular behavior"
+          },
+          {
+            "claim": "As the log-Euler variance diverges at Re(s)=1/2, pointwise density flattens while the logarithmic-potential/Jensen quantities grow, producing increasing zero frequencies across the full half-plane.",
+            "limit": "The source establishes asymptotic distribution and zero-frequency consequences in Re(s)>1/2, not any assertion about the location of zeta zeros on the critical line.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d31",
+              "openalex_w1980957747_d32",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36",
+              "openalex_w1980957747_d37"
+            ],
+            "title": "Boundary variance collapse drives Jensen growth near the critical-line edge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d32",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d32",
+          "spontaneous_reading": "The abstract torus theory is instantiated by a precise dictionary: logarithm turns each Euler factor into the analytic component l(z)=-log(1-z), differentiation supplies m(z)=z/(1-z) and a log-prime weight, and prime powers set the radii. Verifying the three coefficient sums and radius rates imports smoothness, positivity, entire extension, parameter stability, decay, and boundary flattening without rebuilding those arguments for Euler products."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d32",
+          "source_grounded_mathematics": "For the partial Euler product, the source writes log ζ_n as a sum of -log(1-p_k^{-s}e^{2πiθ_k}) and its s-derivative using the corresponding rational factor and log p_k. It identifies these with the abstract f_n and g_n by taking l(z)=-log(1-z), m(z)=zl'(z)=z/(1-z), r_k=p_k^{-a}, and λ_k=-log p_k. The hypotheses of Theorems 5–10 are then checked in their respective ranges. Theorem 11 concludes finite and limiting absolute continuity, arbitrary smoothness in the interior half-plane, strict positivity in the stated strip, entire dependence on the two value coordinates in the narrower strip, joint parameter regularity, uniform convergence and Gaussian-type decay, symmetry under conjugation, and uniform boundary vanishing for the log-density.",
+          "conceptual_reading": "This is theorem reuse by structural matching. The logarithmic Euler product is recognized as an independent-phase analytic series, so arithmetic input is compressed into the sequences of radii and log-prime weights whose convergence properties select the available analytic conclusions.",
+          "representation_or_bridge": "Taking logarithms is the decisive representation change: a multiplicative Euler product becomes an additive torus sum to which convolution and Fourier-product methods apply. The prime-local dictionary bridges the abstract component model to log-Euler-product value and derivative-weighted distributions.",
+          "boundary_or_failure": "These are torus distributions for finite and limiting Euler-product models. Their identification with actual vertical distributions of log zeta still needs the prime-log equidistribution and limiting transfer developed later. Pointwise boundary flattening of a density is not disappearance of probability mass.",
+          "uncertainty": "OCR renders one-half as 89 and damages some prime exponents and finite thresholds. The choices of l, m, radii, and log-prime weights, as well as the qualitative theorem conclusions, are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distinction between unweighted and derivative-weighted Jacobian factors is preserved in Theorem 12.",
+      "line_end": 3170,
+      "line_start": 3025,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for exact density factors and Fourier-series formulas; the pushforward mechanism is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The exponential map sends log-value measures to value measures and transforms densities by summing over all logarithms with the Jacobian factor; Gaussian decay makes these periodized sums and all derivatives converge, giving smoothness, positivity away from zero, analyticity after composition, and boundary-weighted vanishing.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [
+        61,
+        62,
+        63
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponentiation transports log-value distributions to zeta-value distributions",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d33.txt",
+      "unit_bytes": 8324,
+      "unit_id": "openalex_w1980957747_d33",
+      "unit_sha256": "567dff5be340f64b62527bc899acecc2a92ffa3e9c000e45a5b939c1001bf075",
+      "unit_type": "measure-pushforward",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d33.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3017,
+          "line_end": 3024,
+          "text": "of the form Ko e-~ I~P, and for every p the partial derivatives of F~(x), Go(x) and\nFn, o(x), G..o(X), n > I I + 2 p , of order < p , have a majorant of the f o r m KT, e -~1\"~1~.\n       The density To(x) and each of its partial derivatives converge umformly towards\nz s r o a8 a--> ~.\n     We remark that since log ~=(a; 01. . . . ,0n) and ~'./~.(a; 01 . . . . . On) take con-\njugate values in the points (01. . . . , O.) and (--01 . . . . , --O~), all the distribution\nfunctions and hence also their densities are symmetric with respect to the line _~----o.\n\n",
+          "sha256": "22a42028f33b59de416905b265ba131e3b6cc5f742b6333acb17082c7c01bc0b"
+        },
+        "after": {
+          "line_start": 3171,
+          "line_end": 3178,
+          "text": "\n                                                                  ~ain Results,\n\n        45.          W e are n o w in a position to p r o v e our m a i n t h e o r e m s .\n        L e t us first consider t h e f u n c t i o n s log ~,,(s) f o r o > o.                                       A c c o r d i n g to w167\na n d 27 t h e r e exist for every a a s y m p t o t i c d i s t r i b u t i o n f u n c t i o n s of log ~n(a + it)\na n d of log ~ ( a + it) with r e s p e c t to {~'~/~,~(a+ it){ ~.                                        For 5 ( a +       it) we h a v e the\nexpression\n",
+          "sha256": "5b9cf0ac637b8b9419df62d0668aa4fdcd6e849c33813b4127e0be80620deedd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: exponential pushforward to zeta-value distributions",
+            "line_end": 3170,
+            "line_start": 3025,
+            "mathematical_role": "mapping log-value measures and weighted measures through exponentiation, including density formulas and regularity"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3170,
+          "line_start": 3025,
+          "title": "Exponentiation transports log-value distributions to zeta-value distributions",
+          "unit_id": "openalex_w1980957747_d33",
+          "unit_type": "measure-pushforward",
+          "why_material": "The exponential map sends log-value measures to value measures and transforms densities by summing over all logarithms with the Jacobian factor; Gaussian decay makes these periodized sums and all derivatives converge, giving smoothness, positivity away from zero, analyticity after composition, and boundary-weighted vanishing."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The distinction between unweighted and derivative-weighted Jacobian factors is preserved in Theorem 12.",
+          "representation_dependency": "High for exact density factors and Fourier-series formulas; the pushforward mechanism is explicit.",
+          "unit_id": "openalex_w1980957747_d33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3023,
+            "line_start": 2947,
+            "title": "Logarithmic Euler factors instantiate the abstract smooth-density theory",
+            "unit_id": "openalex_w1980957747_d32",
+            "unit_type": "specialization theorem",
+            "why_material": "Choosing l(z)=-log(1-z), its derivative-weight companion, prime radii, and log-prime frequencies verifies the abstract hypotheses and yields smooth, positive, analytic, parameter-continuous log-Euler-product densities with uniform decay and boundary vanishing."
+          },
+          {
+            "line_end": 3267,
+            "line_start": 3174,
+            "title": "Prime-log independence identifies torus distributions with vertical asymptotic distributions",
+            "unit_id": "openalex_w1980957747_d34",
+            "unit_type": "equidistribution bridge",
+            "why_material": "Linear independence of log primes makes long vertical averages of continuous functions equal Haar averages on the finite torus; hence the torus measures are exactly the asymptotic value and derivative-weighted distributions of partial Euler products, and their densities give second derivatives of finite-product Jensen functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Zeta-value densities are periodized, Jacobian-adjusted pushforwards of log-zeta densities, allowing regularity and curvature results to transfer while creating a distinguished behavior at value zero and multiple logarithmic preimages.",
+            "limit": "Boundary statements need the explicit |x|-weights recorded in Theorem 12; unweighted uniform vanishing is false.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d32",
+              "openalex_w1980957747_d33",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36"
+            ],
+            "title": "Exponentiation preserves the distribution program but changes singular behavior"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d33",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d33",
+          "spontaneous_reading": "Exponentiation is treated as a many-to-one pushforward rather than a harmless change of variables. Each nonzero value has all logarithmic lifts, so its density is a periodized sum over those lifts with the appropriate Jacobian; strong decay in the log plane makes the infinite sum differentiable termwise, while the origin remains a distinguished boundary point."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d33",
+          "source_grounded_mathematics": "The source maps the log-value measures through exp. For a Borel set E it gives μ^{val}(E)=μ^{log}(log E), while the derivative-weighted measure includes the factor e^{2ξ_1} on log E. For x≠0, the ordinary density is |x|^{-2} times the sum of the log-density over all values of log x; the derivative-weighted density is the corresponding sum of weighted log-densities, with cancellation of the Jacobian factor. Both are defined to be zero at x=0. Gaussian bounds in the log plane uniformly dominate the 2πi-periodized series and all differentiated series, yielding smoothness, positivity away from zero, parameter continuity, uniform convergence, and analytic or entire statements after composition with exp. The final boundary assertion retains explicit powers of |x|.",
+          "conceptual_reading": "Exponentiation quotients the log plane by vertical period and collapses its far-left end to zero. Regularity transfers through this quotient only after accounting for multiplicity and Jacobian, and the weighted law transforms differently because its derivative weight compensates that Jacobian.",
+          "representation_or_bridge": "The covering-space picture log x+2πih is the useful bridge object. Periodization transports log-value densities to the punctured value plane, while decay of distant lifts controls the infinite preimage sum and its derivatives.",
+          "boundary_or_failure": "The formulas are singular at x=0 and positivity is asserted only away from zero. The source explicitly warns that boundary vanishing is false if the prescribed |x| powers are omitted; even bounded-set mass need not vanish. Thus unweighted uniform boundary conclusions cannot be imported from the log plane.",
+          "uncertainty": "Some density symbols and exponents are OCR-damaged, but equations 77–82 clearly support the pushforward, lift-sum, and Jacobian structure. Exact derivative-weight powers should be checked against the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the deterministic bridge from abstract phase variables back to actual vertical motion.",
+      "line_end": 3267,
+      "line_start": 3174,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for Fourier-transform formulas and constants; equidistribution and its consequence are prose-clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Linear independence of log primes makes long vertical averages of continuous functions equal Haar averages on the finite torus; hence the torus measures are exactly the asymptotic value and derivative-weighted distributions of partial Euler products, and their densities give second derivatives of finite-product Jensen functions.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [
+        64,
+        65
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-log independence identifies torus distributions with vertical asymptotic distributions",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d34.txt",
+      "unit_bytes": 5855,
+      "unit_id": "openalex_w1980957747_d34",
+      "unit_sha256": "ee3e33a1040138eba0184a2102527e634ec0e83865ff7c9da07b2ce371b91dd9",
+      "unit_type": "equidistribution bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d34.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3166,
+          "line_end": 3173,
+          "text": "v a r i a b l e s ~x, ~2 if 89< a < I.\n         T h e last p a r t of the t h e o r e m is e q u i v a l e n t to the s t a t e m e n t t h a t r                                       and\ne~eh of its p a r t i a l derivatives t e n d u n i f o r m l y to zero w h e n a - ~ 89 which by t h e\nargument                 used in the p r o o f of T h e o r e m Io follows f r o m t h e above m e n t i o n e d\nexpression f o r (I)~(x). ~\n\n                                                                  ~ain Results,\n\n",
+          "sha256": "e58690f99a49775afd91b03f1da56274460e6ef513836e9f1455e5f1d869b146"
+        },
+        "after": {
+          "line_start": 3268,
+          "line_end": 3275,
+          "text": "\n       4:6.   By means of these results we shall now deduce the following theorem\nconnecting the function log ~(s) with the distribution functions described in\nTheorem Ix.\n       T h e o r e m 13.    For every a > 89 the function log ~(o + it) possesses the asymp-\ntotic distribution fit~etion #o, i. e, the distribution function\n\n                                                  'E     m (A,,; r, ~(E))\n",
+          "sha256": "940e8dab2c1e4905b81ebd149b9ed676af6e1fb97455c2e2cde7b68b1732c389"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: main results",
+            "line_end": 3501,
+            "line_start": 3171,
+            "mathematical_role": "equidistribution transfer from torus averages to vertical means and final theorems for log zeta, zeta, mean motions, and zero frequencies"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3267,
+          "line_start": 3174,
+          "title": "Prime-log independence identifies torus distributions with vertical asymptotic distributions",
+          "unit_id": "openalex_w1980957747_d34",
+          "unit_type": "equidistribution bridge",
+          "why_material": "Linear independence of log primes makes long vertical averages of continuous functions equal Haar averages on the finite torus; hence the torus measures are exactly the asymptotic value and derivative-weighted distributions of partial Euler products, and their densities give second derivatives of finite-product Jensen functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the deterministic bridge from abstract phase variables back to actual vertical motion.",
+          "representation_dependency": "High for Fourier-transform formulas and constants; equidistribution and its consequence are prose-clear.",
+          "unit_id": "openalex_w1980957747_d34"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3170,
+            "line_start": 3025,
+            "title": "Exponentiation transports log-value distributions to zeta-value distributions",
+            "unit_id": "openalex_w1980957747_d33",
+            "unit_type": "measure-pushforward",
+            "why_material": "The exponential map sends log-value measures to value measures and transforms densities by summing over all logarithms with the Jacobian factor; Gaussian decay makes these periodized sums and all derivatives converge, giving smoothness, positivity away from zero, analyticity after composition, and boundary-weighted vanishing."
+          },
+          {
+            "line_end": 3347,
+            "line_start": 3269,
+            "title": "Log-zeta value density is Jensen curvature and determines motions and zero frequencies",
+            "unit_id": "openalex_w1980957747_d35",
+            "unit_type": "main-theorem",
+            "why_material": "Theorem 13 identifies the asymptotic distribution of log zeta, expresses the Jensen function of log zeta minus x as a logarithmic potential, proves twice differentiability with curvature 2π times the weighted density, and derives exact mean motions and strip zero frequencies by integrating that density; it also records boundary divergence and the conjugate negative-height version."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Partial Euler products first supply ordinary almost-periodic objects whose torus laws are exact by equidistribution, then generalized convergence theorems transfer their Jensen functions and distributions to zeta and log zeta.",
+            "limit": "The transfer is conditional on the stated mean convergence and branch-domain hypotheses and does not extend automatically beyond Re(s)>1/2.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d10",
+              "openalex_w1980957747_d14",
+              "openalex_w1980957747_d16",
+              "openalex_w1980957747_d21",
+              "openalex_w1980957747_d22",
+              "openalex_w1980957747_d34"
+            ],
+            "title": "Finite Euler products form a two-stage transfer scaffold"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d34",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d34",
+          "spontaneous_reading": "The abstract independent phases are connected to one deterministic vertical trajectory by rational independence of the log primes. Long-time averaging of any continuous torus observable equals Haar averaging, so the previously constructed torus measures become exact asymptotic value laws for finite Euler products, including the derivative-weighted law."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d34",
+          "source_grounded_mathematics": "The partial Euler product and its logarithm along s=a+it are written as torus functions evaluated at phases λ_kt, with λ_k proportional to -log p_k. Linear independence of these frequencies gives M_t H(λ_1t,…,λ_nt)=∫H dm for every continuous H on the finite torus. Applying this to exponential test functions identifies the Fourier transforms, hence the torus measures μ_{n,a} and ν_{n,a}, with the ordinary and derivative-weighted vertical asymptotic distributions of log ζ_n. The source then expresses the finite-product Jensen function as the logarithmic potential of μ_{n,a} and identifies its second derivative with 2π times the weighted density.",
+          "conceptual_reading": "A one-parameter deterministic motion emulates independent phase sampling because its orbit is equidistributed. This supplies the missing semantic justification for treating prime phases as independent in finite vertical-value statistics.",
+          "representation_or_bridge": "The dense torus flow t↦(λ_1t,…,λ_nt) is the bridge between vertical motion and Haar phase space. Characteristic functions make equality of the two averaging procedures into equality of distributions, and logarithmic potentials then connect those laws to Jensen curvature.",
+          "boundary_or_failure": "The equidistribution statement directly handles finite partial products and continuous torus observables. Passing to log zeta or zeta requires the separate convergence theorems and branch-domain hypotheses; finite-dimensional equidistribution alone does not justify the infinite limit.",
+          "uncertainty": "Exact normalization constants in the frequencies and Fourier formulas are OCR-degraded. Linear independence, Haar averaging, distribution identification, and the finite Jensen-curvature consequence are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This carries v1 u03 and includes its proof and the negative-direction remark.",
+      "line_end": 3347,
+      "line_start": 3269,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for exact constants, branch-domain notation, and large-Re formulas; the theorem's causal chain is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 13 identifies the asymptotic distribution of log zeta, expresses the Jensen function of log zeta minus x as a logarithmic potential, proves twice differentiability with curvature 2π times the weighted density, and derives exact mean motions and strip zero frequencies by integrating that density; it also records boundary divergence and the conjugate negative-height version.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [
+        66
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Log-zeta value density is Jensen curvature and determines motions and zero frequencies",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d35.txt",
+      "unit_bytes": 3884,
+      "unit_id": "openalex_w1980957747_d35",
+      "unit_sha256": "7390a64de2db02a9d9aa875afb3440c6ce6d95330d11848e5d5040b94c614014",
+      "unit_type": "main-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d35.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3261,
+          "line_end": 3268,
+          "text": "\nMean Motions and Values of the Riemann Zeta Function.                                     161\n\n       From Theorem             II    and w 9 it follows t h a t ~log~.-~(o) for any n > 11 and\nany x is twice differentiable with the second derivative\n\n(s4)                                      ~','og~._= (~) = 2 ,~ ~,,, o (x).\n\n",
+          "sha256": "c707c23b621390a6a616dc3d3849ea52b661b97e5c14b16eaa39f5d71ac4ffe4"
+        },
+        "after": {
+          "line_start": 3348,
+          "line_end": 3355,
+          "text": "\n      49. We shall now prove the following analogous theorem, connecting the\nfunction ~(s) itself with the distribution functions introduced in Theorem i2.\n\n      Theorem 14.    For every a > 89 the function ~ (a + i t) possesses the asymptotic\ndistribution function ~o, i.e. the distribution function\n\n      i Cf. Jessen and Tornehave[l], Theorem 9.\n",
+          "sha256": "e25255b40a16437e82b990bf2faa7057296f60e898606359638a85ad3484bed2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: main results",
+            "line_end": 3501,
+            "line_start": 3171,
+            "mathematical_role": "equidistribution transfer from torus averages to vertical means and final theorems for log zeta, zeta, mean motions, and zero frequencies"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3347,
+          "line_start": 3269,
+          "title": "Log-zeta value density is Jensen curvature and determines motions and zero frequencies",
+          "unit_id": "openalex_w1980957747_d35",
+          "unit_type": "main-theorem",
+          "why_material": "Theorem 13 identifies the asymptotic distribution of log zeta, expresses the Jensen function of log zeta minus x as a logarithmic potential, proves twice differentiability with curvature 2π times the weighted density, and derives exact mean motions and strip zero frequencies by integrating that density; it also records boundary divergence and the conjugate negative-height version."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This carries v1 u03 and includes its proof and the negative-direction remark.",
+          "representation_dependency": "High for exact constants, branch-domain notation, and large-Re formulas; the theorem's causal chain is readable.",
+          "unit_id": "openalex_w1980957747_d35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3267,
+            "line_start": 3174,
+            "title": "Prime-log independence identifies torus distributions with vertical asymptotic distributions",
+            "unit_id": "openalex_w1980957747_d34",
+            "unit_type": "equidistribution bridge",
+            "why_material": "Linear independence of log primes makes long vertical averages of continuous functions equal Haar averages on the finite torus; hence the torus measures are exactly the asymptotic value and derivative-weighted distributions of partial Euler products, and their densities give second derivatives of finite-product Jensen functions."
+          },
+          {
+            "line_end": 3491,
+            "line_start": 3349,
+            "title": "Zeta-value density is Jensen curvature and determines motions and zero frequencies",
+            "unit_id": "openalex_w1980957747_d36",
+            "unit_type": "main-theorem",
+            "why_material": "Theorem 14 gives the parallel statements for zeta minus x: asymptotic distribution, logarithmic-potential Jensen formula, curvature from the weighted zeta-value density, mean motions, and density-integral zero frequencies; its proof uses the exponential pushforward and relates zeta Jensen functions to all logarithmic preimages."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The logarithmic potential of the value distribution becomes twice differentiable because area counting identifies its curvature with a derivative-weighted value density, whose integral across real parts equals zero frequency.",
+            "limit": "Exact constants and applicability require the continuous-density and differentiability conditions stated in the source.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d06",
+              "openalex_w1980957747_d07",
+              "openalex_w1980957747_d08",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36"
+            ],
+            "title": "Derivative-weighted value density is the local curvature behind zero counts"
+          },
+          {
+            "claim": "Zeta-value densities are periodized, Jacobian-adjusted pushforwards of log-zeta densities, allowing regularity and curvature results to transfer while creating a distinguished behavior at value zero and multiple logarithmic preimages.",
+            "limit": "Boundary statements need the explicit |x|-weights recorded in Theorem 12; unweighted uniform vanishing is false.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d32",
+              "openalex_w1980957747_d33",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36"
+            ],
+            "title": "Exponentiation preserves the distribution program but changes singular behavior"
+          },
+          {
+            "claim": "As the log-Euler variance diverges at Re(s)=1/2, pointwise density flattens while the logarithmic-potential/Jensen quantities grow, producing increasing zero frequencies across the full half-plane.",
+            "limit": "The source establishes asymptotic distribution and zero-frequency consequences in Re(s)>1/2, not any assertion about the location of zeta zeros on the critical line.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d31",
+              "openalex_w1980957747_d32",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36",
+              "openalex_w1980957747_d37"
+            ],
+            "title": "Boundary variance collapse drives Jensen growth near the critical-line edge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d35",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d35",
+          "spontaneous_reading": "The weighted log-value density becomes a local curvature density for a global Jensen function. Once the log-zeta value law is identified, its logarithmic potential is twice differentiable in the vertical-line parameter; integrating that curvature recovers mean motions and strip zero frequencies, so value statistics are converted into zero-counting information."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d35",
+          "source_grounded_mathematics": "For each a>1/2, Theorem 13 gives an asymptotic distribution μ_a for log ζ(a+it). It represents the Jensen function of log ζ(s)-x as ∫log|u-x|dμ_a(u)=∫log|u-x|F_a(u)du and states that its second derivative in a is 2πG_a(x), where G_a is the derivative-weighted log-value density. The left and right mean motions equal the first derivative of this Jensen function, and the relative frequency of zeros in a strip is the difference of those slopes divided by 2π, equivalently the integral of G_a(x) across the strip. The Jensen function diverges as a approaches 1/2 from the right, and conjugation supplies the negative-height version.",
+          "conceptual_reading": "The theorem factors zero counting into a potential-theoretic chain: value distribution gives a logarithmic potential, derivative weighting gives its curvature, and integration of curvature gives argument motion and zero frequency. G_a is therefore not decorative auxiliary data but the local density of Jensen convexity.",
+          "representation_or_bridge": "The logarithmic potential of the asymptotic value measure is the intermediate representation linking two-dimensional value statistics to one-dimensional variation in real part. Jensen theory then bridges its slope changes to zeros in vertical strips.",
+          "boundary_or_failure": "The statements apply in the half-plane a>1/2 and, for log zeta, within the specified branch domain. Boundary divergence and unbounded zero frequencies do not locate zeros on the critical line and do not prove the Riemann hypothesis. The transfer relies on the earlier finite-product convergence and density regularity.",
+          "uncertainty": "OCR damages branch notation, large-a exceptional formulas, and some normalizations. The 2π curvature relation, strip integral, boundary divergence, and negative-height symmetry are readable."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This carries v1 u04 and includes the boundary-divergence argument and conjugate negative-height version.",
+      "line_end": 3491,
+      "line_start": 3349,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for exact formulas and exceptional cases x=0 or 1; the proof structure and conclusions are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 14 gives the parallel statements for zeta minus x: asymptotic distribution, logarithmic-potential Jensen formula, curvature from the weighted zeta-value density, mean motions, and density-integral zero frequencies; its proof uses the exponential pushforward and relates zeta Jensen functions to all logarithmic preimages.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [
+        67,
+        68,
+        69
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta-value density is Jensen curvature and determines motions and zero frequencies",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d36.txt",
+      "unit_bytes": 7212,
+      "unit_id": "openalex_w1980957747_d36",
+      "unit_sha256": "b56fb823fd3d55fa03462d4d81e0cbc0a2fe830ccf7a8fa7d18c8aab53abdf34",
+      "unit_type": "main-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d36.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3341,
+          "line_end": 3348,
+          "text": "Theorem II, since the integral of F~(u) over R~ is I.\n      The remainder of the theorem is now implied by Theorem 3.\n\n      48.    From the remark at the end of w 18 it follows t h a t Theorem I3 re-\nmains valid if the limits are taken for 7 - ~ - c~ and a fixed d < o. This follows\nalso from the remark at the end of w 43, since log ~(s) takes conjugate values\nfor conjugate values of s.\n\n",
+          "sha256": "78ccde787dad4d450cf9e479350682c07421908d7cee63ad1fbb80239b1ddbf0"
+        },
+        "after": {
+          "line_start": 3492,
+          "line_end": 3499,
+          "text": "\n        53.   As a corollary of T h e o r e m s I3 and 14 we have the following theorem.\n\n        Theorem 15.          If   N(T)       denotes either the number of zeros of log ~ ( s ) - - x in\nthe part of the domain a > 89 o < t < T which belongs to h, for an arbitrary x,\nor the number of geros of ~ (s) -- x in the domain a > 89 o < t < T, for an arbitrary\nx 4= o, then\n                                           ;V(T)\n",
+          "sha256": "e066299e7708f2e2eb219779337e3453527ca68936253b2a86abe6a80ce51276"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: main results",
+            "line_end": 3501,
+            "line_start": 3171,
+            "mathematical_role": "equidistribution transfer from torus averages to vertical means and final theorems for log zeta, zeta, mean motions, and zero frequencies"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3491,
+          "line_start": 3349,
+          "title": "Zeta-value density is Jensen curvature and determines motions and zero frequencies",
+          "unit_id": "openalex_w1980957747_d36",
+          "unit_type": "main-theorem",
+          "why_material": "Theorem 14 gives the parallel statements for zeta minus x: asymptotic distribution, logarithmic-potential Jensen formula, curvature from the weighted zeta-value density, mean motions, and density-integral zero frequencies; its proof uses the exponential pushforward and relates zeta Jensen functions to all logarithmic preimages."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This carries v1 u04 and includes the boundary-divergence argument and conjugate negative-height version.",
+          "representation_dependency": "High for exact formulas and exceptional cases x=0 or 1; the proof structure and conclusions are explicit.",
+          "unit_id": "openalex_w1980957747_d36"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3347,
+            "line_start": 3269,
+            "title": "Log-zeta value density is Jensen curvature and determines motions and zero frequencies",
+            "unit_id": "openalex_w1980957747_d35",
+            "unit_type": "main-theorem",
+            "why_material": "Theorem 13 identifies the asymptotic distribution of log zeta, expresses the Jensen function of log zeta minus x as a logarithmic potential, proves twice differentiability with curvature 2π times the weighted density, and derives exact mean motions and strip zero frequencies by integrating that density; it also records boundary divergence and the conjugate negative-height version."
+          },
+          {
+            "line_end": 3501,
+            "line_start": 3493,
+            "title": "Zeros of zeta-minus-value and log-zeta-minus-value have unbounded normalized totals over the half-plane",
+            "unit_id": "openalex_w1980957747_d37",
+            "unit_type": "corollary",
+            "why_material": "Theorem 15 condenses the boundary growth of Jensen slopes into the conclusion that the normalized number of relevant zeros in Re(s)>1/2 tends to infinity for log zeta minus arbitrary x and zeta minus nonzero x."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The logarithmic potential of the value distribution becomes twice differentiable because area counting identifies its curvature with a derivative-weighted value density, whose integral across real parts equals zero frequency.",
+            "limit": "Exact constants and applicability require the continuous-density and differentiability conditions stated in the source.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d06",
+              "openalex_w1980957747_d07",
+              "openalex_w1980957747_d08",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36"
+            ],
+            "title": "Derivative-weighted value density is the local curvature behind zero counts"
+          },
+          {
+            "claim": "Zeta-value densities are periodized, Jacobian-adjusted pushforwards of log-zeta densities, allowing regularity and curvature results to transfer while creating a distinguished behavior at value zero and multiple logarithmic preimages.",
+            "limit": "Boundary statements need the explicit |x|-weights recorded in Theorem 12; unweighted uniform vanishing is false.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d32",
+              "openalex_w1980957747_d33",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36"
+            ],
+            "title": "Exponentiation preserves the distribution program but changes singular behavior"
+          },
+          {
+            "claim": "As the log-Euler variance diverges at Re(s)=1/2, pointwise density flattens while the logarithmic-potential/Jensen quantities grow, producing increasing zero frequencies across the full half-plane.",
+            "limit": "The source establishes asymptotic distribution and zero-frequency consequences in Re(s)>1/2, not any assertion about the location of zeta zeros on the critical line.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d31",
+              "openalex_w1980957747_d32",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36",
+              "openalex_w1980957747_d37"
+            ],
+            "title": "Boundary variance collapse drives Jensen growth near the critical-line edge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d36",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d36",
+          "spontaneous_reading": "The log-zeta curvature theorem is transported to zeta values through all logarithmic lifts of the target. The periodized pushforward explains both the parallel Jensen and zero-frequency formulas and the exceptional roles of target values zero and one; exponentiation preserves the architecture but not every boundary statement unchanged."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d36",
+          "source_grounded_mathematics": "Theorem 14 states that ζ(a+it) has the asymptotic value distribution μ̃_a for a>1/2. The Jensen function of ζ(s)-x is its logarithmic potential and has second derivative 2πG̃_a(x), with mean motions given by its first derivative and strip zero frequencies by the integral of G̃_a(x). The proof first establishes the analogous formulas for finite Euler products, then passes to the limit using Theorem 12. It also relates the zeta Jensen quantity to the family of log-zeta quantities over all logarithms of x, using a convergent majorant to integrate the resulting series. For x≠0 the Jensen function diverges as a approaches 1/2; for x=0 it is identically zero, and x=1 has a separate large-real-part formula. Conjugation again gives negative-height limits.",
+          "conceptual_reading": "A many-sheeted representation can transfer a theorem only after summing over every lift and tracking exceptional fibers. The zeta result is thus a synthesis of the log-plane curvature laws rather than a formally identical copy.",
+          "representation_or_bridge": "Exponentiation and the set of logarithmic preimages of x bridge log-zeta value laws to zeta value laws. The logarithmic-potential identity and its twice-differentiated form carry curvature, mean motion, and zero frequency through that bridge.",
+          "boundary_or_failure": "The boundary divergence excludes x=0, and the large-real-part behavior distinguishes x=1. All conclusions concern a>1/2 and value equations ζ(s)=x; they do not assert where ordinary zeta zeros lie on or relative to the critical line.",
+          "uncertainty": "OCR obscures several exact formulas and exceptional-case constants, but the asymptotic distribution, potential, 2π curvature, lift-sum proof, and stated exceptions are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a source-level consequence of Theorems 13 and 14, not a Riemann-hypothesis claim.",
+      "line_end": 3501,
+      "line_start": 3493,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium; the printed half-plane bound is OCR-degraded but the corollary is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 15 condenses the boundary growth of Jensen slopes into the conclusion that the normalized number of relevant zeros in Re(s)>1/2 tends to infinity for log zeta minus arbitrary x and zeta minus nonzero x.",
+      "source_id": "openalex_w1980957747",
+      "source_normalized_sha256": "44533a9770c2e49878f42316f193be067a3e64f37dadab641447dbcbdfb665dd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeros of zeta-minus-value and log-zeta-minus-value have unbounded normalized totals over the half-plane",
+      "unit_artifact_relpath": "depth/units/openalex_w1980957747_d37.txt",
+      "unit_bytes": 553,
+      "unit_id": "openalex_w1980957747_d37",
+      "unit_sha256": "b6e12a4f44d8d64e11a2dae34eb47f30d3ef167bf5d9c12b87ef49c804a2a45e",
+      "unit_type": "corollary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980957747_d37.txt",
+      "source": {
+        "source_id": "openalex_w1980957747",
+        "title": "Mean motions and values of the Riemann zeta function",
+        "authors": [
+          "Vibeke Borchsenius",
+          "Børge Jessen"
+        ],
+        "year": 1948,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3485,
+          "line_end": 3492,
+          "text": "when a ~ 89\n        T h e r e m a i n d e r of the t h e o r e m is implied by T h e o r e m I.\n\n        52.   F r o m the r e m a r k a t the end of w II it follows t h a t T h e o r e m 14 re-\nmains valid if the limits are taken for 7 -\" - - oo and a fixed d < o.                                 This follows\nalso f r o m the r e m a r k         a f t e r T h e o r e m I2, since ~(s) takes c o n j u g a t e values for\nc o n j u g a t e values of s.\n\n",
+          "sha256": "905bfa5b93482fcad4635274d6faca2c20c75bdae478e578f902e1c373a5b273"
+        },
+        "after": {
+          "line_start": 3502,
+          "line_end": 3509,
+          "text": "\n<!-- source-page: 70 -->\n\n166                     Vibeke Borchsenius and Borge Jessen.\n\n\n                                   Bibliography.\nA. S. BESICOVITCH. [1] Almost periodic functions. Cambridge 1932.\n",
+          "sha256": "12e5117c3c40d792615572e33a9bbb27b6fb12d8192ece058646d884522d0cce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2cc8dd70061eb4023fb7e4e84746840d76feec3f32b0de8e98ecc20b36108919",
+        "dossier_sha256": "0d474e4ce90328586c0c1c4e7ecc2d6efb6b2d66f463a5be0a3f6e003400e098",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter II: main results",
+            "line_end": 3501,
+            "line_start": 3171,
+            "mathematical_role": "equidistribution transfer from torus averages to vertical means and final theorems for log zeta, zeta, mean motions, and zero frequencies"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3501,
+          "line_start": 3493,
+          "title": "Zeros of zeta-minus-value and log-zeta-minus-value have unbounded normalized totals over the half-plane",
+          "unit_id": "openalex_w1980957747_d37",
+          "unit_type": "corollary",
+          "why_material": "Theorem 15 condenses the boundary growth of Jensen slopes into the conclusion that the normalized number of relevant zeros in Re(s)>1/2 tends to infinity for log zeta minus arbitrary x and zeta minus nonzero x."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a source-level consequence of Theorems 13 and 14, not a Riemann-hypothesis claim.",
+          "representation_dependency": "Medium; the printed half-plane bound is OCR-degraded but the corollary is readable.",
+          "unit_id": "openalex_w1980957747_d37"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3491,
+            "line_start": 3349,
+            "title": "Zeta-value density is Jensen curvature and determines motions and zero frequencies",
+            "unit_id": "openalex_w1980957747_d36",
+            "unit_type": "main-theorem",
+            "why_material": "Theorem 14 gives the parallel statements for zeta minus x: asymptotic distribution, logarithmic-potential Jensen formula, curvature from the weighted zeta-value density, mean motions, and density-integral zero frequencies; its proof uses the exponential pushforward and relates zeta Jensen functions to all logarithmic preimages."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "As the log-Euler variance diverges at Re(s)=1/2, pointwise density flattens while the logarithmic-potential/Jensen quantities grow, producing increasing zero frequencies across the full half-plane.",
+            "limit": "The source establishes asymptotic distribution and zero-frequency consequences in Re(s)>1/2, not any assertion about the location of zeta zeros on the critical line.",
+            "parent_local_unit_ids": [
+              "openalex_w1980957747_d31",
+              "openalex_w1980957747_d32",
+              "openalex_w1980957747_d35",
+              "openalex_w1980957747_d36",
+              "openalex_w1980957747_d37"
+            ],
+            "title": "Boundary variance collapse drives Jensen growth near the critical-line edge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980957747_d37",
+        "spontaneous": {
+          "unit_id": "openalex_w1980957747_d37",
+          "spontaneous_reading": "The final corollary converts boundary growth of the preceding Jensen slopes into a global abundance statement: when the whole half-plane to the right of one-half is allowed, the zero count grows faster than any fixed linear normalization. It is a cumulative consequence of strip-frequency formulas, not a new localization theorem."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980957747_d37",
+          "source_grounded_mathematics": "Theorem 15 states that N(T)/T→∞ when N(T) counts either zeros of log ζ(s)-x in the relevant branch portion of Re(s)>1/2 for arbitrary x, or zeros of ζ(s)-x in Re(s)>1/2 for nonzero x. It is presented as a corollary of Theorems 13 and 14.",
+          "conceptual_reading": "Finite-strip densities of zeros are accumulated while the left boundary approaches the variance-divergent edge. The unbounded normalized total records growth of the integrated Jensen curvature across the entire open half-plane.",
+          "representation_or_bridge": "The bridge is the preceding identity between strip zero frequency and the integral of the derivative-weighted value density. Boundary divergence lets those finite-strip frequencies become unbounded as strips exhaust Re(s)>1/2.",
+          "boundary_or_failure": "This is not a Riemann-hypothesis statement, does not place zeros on Re(s)=1/2, and does not say that every fixed strip has infinite normalized frequency. The zeta-minus-value statement excludes x=0, while the log-zeta statement retains its branch-domain restriction.",
+          "uncertainty": "The span is short and delegates its proof to Theorems 13 and 14. The half-plane symbol is OCR-degraded, but the dossier and surrounding theorem statements identify it as Re(s)>1/2."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "1ff14f6e466b691288bf1f31acfee1c9c5de53e4be3fd367c39f6febfb45d267"
+}

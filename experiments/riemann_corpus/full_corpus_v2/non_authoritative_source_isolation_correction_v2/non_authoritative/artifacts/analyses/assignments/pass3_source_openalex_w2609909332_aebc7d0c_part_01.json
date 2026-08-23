@@ -1,0 +1,1934 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2609909332_aebc7d0c_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2609909332",
+  "unit_count": 14,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem's exact square-root scale and allowed constant depend on beta. Lines 52-62 give the causal explanation for the gain rather than merely announcing a stronger estimate.",
+      "line_end": 62,
+      "line_start": 24,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem display has split radicals, iterated logarithms, and OCR punctuation. Verify the exact exponent, constant restriction, interval, and approximation (2) against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 improves the leading constant in the extreme-value lower bound. The source identifies the mechanism precisely: instead of a truncated pointwise approximation whose explicit pole contribution is troublesome on short lower ranges, convolve zeta with a suitable smooth kernel so that the pole becomes harmless for every beta below one.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth convolution avoids the pole term that limits a classical pointwise approximation",
+      "unit_artifact_relpath": "depth/units/w2609909332_smoothing_removes_pole_obstruction.txt",
+      "unit_bytes": 3251,
+      "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+      "unit_sha256": "e533ddc01930af0e9fa5c4b9e088d97d6998eea351ab69673ebf1fd71cb462ae",
+      "unit_type": "result_and_method_comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_smoothing_removes_pole_obstruction.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 16,
+          "line_end": 23,
+          "text": "                                                   the Riemann hypothesis, the maximum of |S(t )| is at least c log T log log log T / log log T and\n                                                                                           p\n                                                   the maximum of S 1 (t ) is at least c 1 log T log log log T /(log log T )3 on the interval T β ≤ t ≤ T\n                                                   whenever 0 ≤ β < 1.\n\n\n\n\n",
+          "sha256": "109c560f5d70f01cd3c6a5986dfb6c57b0274240a386d952ff519d3160652c30"
+        },
+        "after": {
+          "line_start": 63,
+          "line_end": 70,
+          "text": "    We next turn to our results for the functions\n\n                                                                     Zt\n                               1\n                       S(t ) := Im log ζ(1/2 + i t ) and S 1 (t ) :=    S(τ)d τ.\n                               π                                      0\n\n\n",
+          "sha256": "b7c8b50c21ed9e1ea1d8e196bd71acea5bcf466db0bc1d92edc47df7ffac9a42"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 204,
+            "line_start": 24,
+            "mathematical_role": "states extreme-value results, introduces S and S1, explains smoothing, methodological tradeoffs, conditionality, and sign obstruction"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 62,
+          "line_start": 24,
+          "title": "Smooth convolution avoids the pole term that limits a classical pointwise approximation",
+          "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+          "unit_type": "result_and_method_comparison",
+          "why_material": "Theorem 1 improves the leading constant in the extreme-value lower bound. The source identifies the mechanism precisely: instead of a truncated pointwise approximation whose explicit pole contribution is troublesome on short lower ranges, convolve zeta with a suitable smooth kernel so that the pole becomes harmless for every beta below one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem's exact square-root scale and allowed constant depend on beta. Lines 52-62 give the causal explanation for the gain rather than merely announcing a stronger estimate.",
+          "representation_dependency": "The theorem display has split radicals, iterated logarithms, and OCR punctuation. Verify the exact exponent, constant restriction, interval, and approximation (2) against the PDF.",
+          "unit_id": "w2609909332_smoothing_removes_pole_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 140,
+            "line_start": 63,
+            "title": "S and its primitive isolate the fluctuating remainder in zero counting",
+            "unit_id": "w2609909332_argument_functions_encode_zero_fluctuation",
+            "unit_type": "definition_and_result_boundary",
+            "why_material": "The paper fixes the branch and jump convention for the argument of zeta, places S directly in the Riemann-von Mangoldt formula, and contrasts unconditional and RH-conditional upper and lower bounds. Theorem 2 then states improved conditional extremes for both S and S1 on a movable interval."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 43,
+              "line_start": 31,
+              "reason": "Theorem 1 and its comparison constant are mathematically recoverable from prose and abstract, but radicals and iterated-log fractions are spatially fragmented; exact statement needs the PDF."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+        "spontaneous": {
+          "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+          "spontaneous_reading": "The decisive move is to replace a pointwise truncated zeta approximation by a smooth convolution. The truncation's explicit pole term grows troublesome below the square-root time scale, whereas smoothing turns the pole into a separately controllable residue and leaves a Fourier-filtered Dirichlet series for resonance."
+        },
+        "directed": {
+          "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+          "source_grounded_mathematics": "Theorem 1 asserts unconditionally that for fixed 0 <= beta < 1 and positive c below sqrt(1-beta), sufficiently large T contains t in [T^beta,T] with an exponential lower bound for |zeta(1/2+it)|. The stated improvement in the leading constant is attributed to convolving zeta with a suitable smooth kernel instead of using the classical truncation whose pole term obstructs beta < 1/2.",
+          "conceptual_reading": "Smoothing changes the representation of the target without discarding the coefficient structure needed by the resonator: the global analytic obstruction is isolated as a residue rather than mixed into the main approximation. This exposes a proof-design principle in which the transform is chosen to make a singular contribution harmless over the desired localization range.",
+          "representation_or_bridge": "The bridge is pointwise zeta -> kernel convolution -> Fourier-selected Dirichlet series plus a pole contribution. The later resonance argument can act on the selected coefficients while the pole is estimated separately.",
+          "boundary_or_failure": "This span gives an existence lower bound, not a frequency or measure estimate, and does not establish optimality. It announces rather than proves the convolution control. The result for zeta is unconditional, unlike the later claims for S and S1.",
+          "uncertainty": "The PDF text layer breaks the radical and nested logarithms in the theorem display. The exact constant, exponent, and endpoints should be checked against the PDF before formula-level reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distinction between absolute maximum for S and positive maximum for S1 is material and later traced to kernel parity and coefficient sign.",
+      "line_end": 140,
+      "line_start": 63,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the branch convention, half-jump definition, normalization by pi, and exact powers of log, log log, and log log log. Equations (3)-(5) are vertically fragmented and require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper fixes the branch and jump convention for the argument of zeta, places S directly in the Riemann-von Mangoldt formula, and contrasts unconditional and RH-conditional upper and lower bounds. Theorem 2 then states improved conditional extremes for both S and S1 on a movable interval.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "S and its primitive isolate the fluctuating remainder in zero counting",
+      "unit_artifact_relpath": "depth/units/w2609909332_argument_functions_encode_zero_fluctuation.txt",
+      "unit_bytes": 4813,
+      "unit_id": "w2609909332_argument_functions_encode_zero_fluctuation",
+      "unit_sha256": "c084ae3b8029a1a77d41f3844291444eecc3cc47557ac01df0925a75b41e603d",
+      "unit_type": "definition_and_result_boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_argument_functions_encode_zero_fluctuation.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 55,
+          "line_end": 62,
+          "text": "                                       X                    T 1/2−i t\n(2)                  ζ(1/2 + i t ) =         n −1/2−i t −             + O(T −1/2 ),   |t | ≤ T,\n                                       n≤T                  1/2 − i t\n\n\nwhere the second term causes problems when β < 1/2; we replace this approximation by\nζ(1/2 + i t ) convolved with a suitable smooth kernel K (t ), so that the influence of the pole of\nζ(s) becomes essentially harmless in the whole range 0 ≤ β < 1.\n",
+          "sha256": "b42fe5f979f753a0a6ded9bb11b98e8a2e68ac1f0c8dcac4aea1ed119ffd7ce2"
+        },
+        "after": {
+          "line_start": 141,
+          "line_end": 148,
+          "text": "\n  This result is of course intimately related with the problem of producing large values of\n|ζ(σ + i t )|. We may in fact obtain a slightly weaker result than (5) as a direct consequence of\nour earlier work in [3]. To this end, we start from the conditional formula (see [9, (14.12.4)])\n                                              Z2t\n                                                       S(y)\n                            log |ζ(s)| = Re i                    d y + O(1).\n                                               t/2 s − 1/2 − i y\n",
+          "sha256": "8b10f2270d66c8d6fd86ed7a6a301870b2a740e4c00befc100b0b9cf3c805b8f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 204,
+            "line_start": 24,
+            "mathematical_role": "states extreme-value results, introduces S and S1, explains smoothing, methodological tradeoffs, conditionality, and sign obstruction"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 140,
+          "line_start": 63,
+          "title": "S and its primitive isolate the fluctuating remainder in zero counting",
+          "unit_id": "w2609909332_argument_functions_encode_zero_fluctuation",
+          "unit_type": "definition_and_result_boundary",
+          "why_material": "The paper fixes the branch and jump convention for the argument of zeta, places S directly in the Riemann-von Mangoldt formula, and contrasts unconditional and RH-conditional upper and lower bounds. Theorem 2 then states improved conditional extremes for both S and S1 on a movable interval."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The distinction between absolute maximum for S and positive maximum for S1 is material and later traced to kernel parity and coefficient sign.",
+          "representation_dependency": "Depends on the branch convention, half-jump definition, normalization by pi, and exact powers of log, log log, and log log log. Equations (3)-(5) are vertically fragmented and require PDF verification.",
+          "unit_id": "w2609909332_argument_functions_encode_zero_fluctuation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 62,
+            "line_start": 24,
+            "title": "Smooth convolution avoids the pole term that limits a classical pointwise approximation",
+            "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+            "unit_type": "result_and_method_comparison",
+            "why_material": "Theorem 1 improves the leading constant in the extreme-value lower bound. The source identifies the mechanism precisely: instead of a truncated pointwise approximation whose explicit pole contribution is troublesome on short lower ranges, convolve zeta with a suitable smooth kernel so that the pole becomes harmless for every beta below one."
+          },
+          {
+            "line_end": 175,
+            "line_start": 142,
+            "title": "A Cauchy-kernel formula transfers large log-zeta values into lower bounds for the primitive S1",
+            "unit_id": "w2609909332_s1_controls_log_zeta",
+            "unit_type": "integration_by_parts_bridge",
+            "why_material": "Starting from a conditional integral representation of log absolute zeta in terms of S, integration by parts replaces S with S1 and an explicit signed kernel. Choosing sigma just to the right of the critical line then imports an earlier large-value result to obtain a preliminary conditional S1 bound."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_argument_functions_encode_zero_fluctuation",
+        "spontaneous": {
+          "unit_id": "w2609909332_argument_functions_encode_zero_fluctuation",
+          "spontaneous_reading": "S is the phase fluctuation term in zero counting, while S1 integrates that jump-sensitive signal into a smoother cumulative observable. This makes the pair a bridge from boundary values of log zeta to fine fluctuations of the vertical zero distribution, but it also creates different sign information in the two extreme-value statements."
+        },
+        "directed": {
+          "unit_id": "w2609909332_argument_functions_encode_zero_fluctuation",
+          "source_grounded_mathematics": "The source defines S(t)=pi^{-1} Im log zeta(1/2+it) with an explicit branch path and midpoint convention at zero ordinates, and S1(t) as its integral from 0 to t. S appears as the fluctuation term in the Riemann-von Mangoldt zero-counting formula. After reviewing known unconditional and RH-conditional bounds and competing heuristics, Theorem 2 assumes RH and gives improved lower bounds for max |S(t)| and for the positive maximum of S1(t) on [T^beta,T].",
+          "conceptual_reading": "S converts analytic phase into zero-count discrepancy; S1 preserves accumulated fluctuation while suppressing individual jumps. The theorem's different observables already signal an epistemic asymmetry: absolute magnitude is obtained for S, whereas a one-sided positive extreme is obtained for S1.",
+          "representation_or_bridge": "The branch-normalized logarithm bridges zeta to S, the zero-counting formula bridges S to N(t), and integration bridges S to S1. These representations respectively expose phase, counting error, and cumulative error.",
+          "boundary_or_failure": "Theorem 2 is conditional on RH. The historical upper bounds, omega results, and heuristic growth proposals have different epistemic status; the heuristics are not proofs of the true order. A positive maximum for S1 does not imply a matching negative extreme, and an absolute maximum for S does not determine its sign.",
+          "uncertainty": "Several extracted exponents and signs in the displayed historical bounds are visually scrambled, and one line prints ':=' where an upper-bound equality is intended. Preserve the qualitative distinctions but verify all exact scales from the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a weaker precursor to Theorem 2 but exposes a reusable bridge between a function and its primitive rather than serving only as historical context.",
+      "line_end": 175,
+      "line_start": 142,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the exact conditional formula, endpoint term, kernel denominator, and sigma choice. The displayed integral is crowded and must be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starting from a conditional integral representation of log absolute zeta in terms of S, integration by parts replaces S with S1 and an explicit signed kernel. Choosing sigma just to the right of the critical line then imports an earlier large-value result to obtain a preliminary conditional S1 bound.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Cauchy-kernel formula transfers large log-zeta values into lower bounds for the primitive S1",
+      "unit_artifact_relpath": "depth/units/w2609909332_s1_controls_log_zeta.txt",
+      "unit_bytes": 1924,
+      "unit_id": "w2609909332_s1_controls_log_zeta",
+      "unit_sha256": "7eb3eb4076100e120234b4614111b9517efc8cf36959d7a98531379985846acb",
+      "unit_type": "integration_by_parts_bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_s1_controls_log_zeta.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 134,
+          "line_end": 141,
+          "text": "                              β\n                            T ≤t≤T                    log log T\n                                                s\n                                                  log T log log log T\n(5)                           max S 1 (t ) ≥ c1                        .\n                              β\n                             T ≤t≤T                  (log log T )3\n\n",
+          "sha256": "c2b8a695a2a6f04b438917f9f3a82f71681a93a72b9f88bf41c756a17cdfb5e0"
+        },
+        "after": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "    The starting point for the proof of Theorem 2 is a convolution formula for log ζ(s), which\nwas introduced by Selberg [7] and later used also by Tsang [10, 11] to study S(t ) and S 1 (t ). We\nwill present this formula as well as the corresponding one for ζ(s) in the next section. On the\nRiemann hypothesis, the two formulas are very similar, as we will see, and both are in tune\nwith the resonance method, which is a device for picking out large values of Dirichlet series. In\nSection 3, we will present the combinatorial construction from [2] underlying our resonators,\nalong with some related estimates to be used in our analysis of the two convolution formulas.\nThe proofs of Theorem 1 and Theorem 2 are then given in respectively Section 4 and Section 5.\n",
+          "sha256": "4e16d77fa49a4b59d934d14ee00effdfa0bf6d84ed666e7cd91b87aeb3466ef3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 204,
+            "line_start": 24,
+            "mathematical_role": "states extreme-value results, introduces S and S1, explains smoothing, methodological tradeoffs, conditionality, and sign obstruction"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 175,
+          "line_start": 142,
+          "title": "A Cauchy-kernel formula transfers large log-zeta values into lower bounds for the primitive S1",
+          "unit_id": "w2609909332_s1_controls_log_zeta",
+          "unit_type": "integration_by_parts_bridge",
+          "why_material": "Starting from a conditional integral representation of log absolute zeta in terms of S, integration by parts replaces S with S1 and an explicit signed kernel. Choosing sigma just to the right of the critical line then imports an earlier large-value result to obtain a preliminary conditional S1 bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a weaker precursor to Theorem 2 but exposes a reusable bridge between a function and its primitive rather than serving only as historical context.",
+          "representation_dependency": "Requires the exact conditional formula, endpoint term, kernel denominator, and sigma choice. The displayed integral is crowded and must be checked against the PDF.",
+          "unit_id": "w2609909332_s1_controls_log_zeta"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 140,
+            "line_start": 63,
+            "title": "S and its primitive isolate the fluctuating remainder in zero counting",
+            "unit_id": "w2609909332_argument_functions_encode_zero_fluctuation",
+            "unit_type": "definition_and_result_boundary",
+            "why_material": "The paper fixes the branch and jump convention for the argument of zeta, places S directly in the Riemann-von Mangoldt formula, and contrasts unconditional and RH-conditional upper and lower bounds. Theorem 2 then states improved conditional extremes for both S and S1 on a movable interval."
+          },
+          {
+            "line_end": 204,
+            "line_start": 176,
+            "title": "Longer positive resonators improve amplitude but enlarge the location interval and lose sign flexibility",
+            "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+            "unit_type": "method_comparison_and_limitation",
+            "why_material": "The authors contrast resonance with high moments and with earlier shorter resonators. Larger primes and a longer Dirichlet polynomial improve the detectable maximum, but currently yield a much larger interval and no comparable measure estimate. Because all coefficients are nonnegative, the construction detects large positive real parts and cannot symmetrically force both signs."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_s1_controls_log_zeta",
+        "spontaneous": {
+          "unit_id": "w2609909332_s1_controls_log_zeta",
+          "spontaneous_reading": "Integration by parts transfers a conditional integral representation of log |zeta| from S to S1. Choosing sigma just to the right of the critical line then lets an existing large-zeta result force a large absolute value of S1, showing that cumulative argument fluctuation can control modulus growth through a signed resolvent kernel."
+        },
+        "directed": {
+          "unit_id": "w2609909332_s1_controls_log_zeta",
+          "source_grounded_mathematics": "Starting from a conditional formula expressing log |zeta(s)| as the real part of an integral of S(y)/(s-1/2-iy), the source sets s=sigma+it and integrates by parts. The result is an integral of S1(y) against a kernel whose numerator changes sign at |t-y|=sigma-1/2, plus a small endpoint error. Taking sigma=1/2+1/log log t and invoking an earlier large-value theorem yields a weaker conditional lower bound for max |S1| on [T^{1/2},T].",
+          "conceptual_reading": "Passing from S to S1 is not merely smoothing: differentiation is moved onto the analytic kernel, so modulus information is encoded in a controlled weighted average of the primitive. A large output of this linear functional forces S1 to be large somewhere, but the signed kernel loses one-sided sign control.",
+          "representation_or_bridge": "The bridge is log |zeta| -> Cauchy-type integral of S -> integration-by-parts kernel acting on S1. The adjustable displacement sigma-1/2 sets the kernel's spatial scale.",
+          "boundary_or_failure": "The argument is conditional, imports an earlier large-zeta theorem, and yields an absolute-value bound weaker than Theorem 2's positive S1 result. It supplies neither an opposite-sign conclusion nor a prevalence estimate.",
+          "uncertainty": "The extracted denominator and parentheses in the post-integration kernel are damaged. The kernel's sign-changing shape is readable, but its exact formula and the final logarithmic powers require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly presents the missing measure estimate as an impasse and connects it to the inability to make some conditional results unconditional.",
+      "line_end": 204,
+      "line_start": 176,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primarily prose-based; exact comparisons to prior quantitative results remain citation-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors contrast resonance with high moments and with earlier shorter resonators. Larger primes and a longer Dirichlet polynomial improve the detectable maximum, but currently yield a much larger interval and no comparable measure estimate. Because all coefficients are nonnegative, the construction detects large positive real parts and cannot symmetrically force both signs.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Longer positive resonators improve amplitude but enlarge the location interval and lose sign flexibility",
+      "unit_artifact_relpath": "depth/units/w2609909332_resonance_tradeoffs_and_sign_obstruction.txt",
+      "unit_bytes": 2444,
+      "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+      "unit_sha256": "08424a2e00fde20504e38a4f6f1b838a1ca1fdef2c45b6ffc9e390ea485fdba7",
+      "unit_type": "method_comparison_and_limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_resonance_tradeoffs_and_sign_obstruction.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 168,
+          "line_end": 175,
+          "text": "                                                          −3/2\n                           max |S 1 (t )| ≥ c1 (log log T )          log T log log log T\n                      T 1/2 ≤t≤T\n\n\n\n\nfor all large enough T .\n",
+          "sha256": "1be641881acf0fc91a8e8d8e56f44eb482dc81c7e3003859ea0c7385ffdadf35"
+        },
+        "after": {
+          "line_start": 205,
+          "line_end": 212,
+          "text": "\n\n                        2. C ONVOLUTION FORMULAS FOR ζ(s) AND log ζ(s)\n\n  We define the Fourier transform Kb of K on R as\n                                           Z∞\n                                 Kb (ξ) :=    K (x)e −i xξ d x.\n                                                  −∞\n",
+          "sha256": "7cb9c6288ebc5e7d46517b5fab9420ca48fa90b056b4d33d23e9faa1557093c8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 204,
+            "line_start": 24,
+            "mathematical_role": "states extreme-value results, introduces S and S1, explains smoothing, methodological tradeoffs, conditionality, and sign obstruction"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 204,
+          "line_start": 176,
+          "title": "Longer positive resonators improve amplitude but enlarge the location interval and lose sign flexibility",
+          "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+          "unit_type": "method_comparison_and_limitation",
+          "why_material": "The authors contrast resonance with high moments and with earlier shorter resonators. Larger primes and a longer Dirichlet polynomial improve the detectable maximum, but currently yield a much larger interval and no comparable measure estimate. Because all coefficients are nonnegative, the construction detects large positive real parts and cannot symmetrically force both signs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly presents the missing measure estimate as an impasse and connects it to the inability to make some conditional results unconditional.",
+          "representation_dependency": "Primarily prose-based; exact comparisons to prior quantitative results remain citation-dependent.",
+          "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 175,
+            "line_start": 142,
+            "title": "A Cauchy-kernel formula transfers large log-zeta values into lower bounds for the primitive S1",
+            "unit_id": "w2609909332_s1_controls_log_zeta",
+            "unit_type": "integration_by_parts_bridge",
+            "why_material": "Starting from a conditional integral representation of log absolute zeta in terms of S, integration by parts replaces S with S1 and an explicit signed kernel. Choosing sigma just to the right of the critical line then imports an earlier large-value result to obtain a preliminary conditional S1 bound."
+          },
+          {
+            "line_end": 245,
+            "line_start": 207,
+            "title": "Contour shifting turns a smoothed zeta value into a weighted Dirichlet series plus an explicit pole residue",
+            "unit_id": "w2609909332_zeta_convolution_identity",
+            "unit_type": "lemma_plus_contour_proof",
+            "why_material": "Lemma 1 shifts a contour from the critical strip to an absolutely convergent line, expands zeta there, and shifts each kernel integral back. The result cleanly separates Fourier-selected Dirichlet coefficients from the residue of the zeta pole."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Longer resonators built from larger primes improve the lower-bound scale, while the proof must work on a larger interval and currently gives no comparable estimate for how often the extreme values occur.",
+            "limit": "The source proves existence of a large value only; it explicitly leaves measure estimates and several opposite-sign bounds unresolved.",
+            "parent_local_unit_ids": [
+              "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+              "w2609909332_theorem1_kernel_and_localization"
+            ],
+            "title": "Improved amplitude trades against localization and prevalence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 206,
+              "line_start": 205,
+              "reason": "Blank transition to convolution formulas."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+        "spontaneous": {
+          "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+          "spontaneous_reading": "Using larger primes and a longer resonator increases the detectable Dirichlet-series amplitude, but weakens localization and currently loses control of how often the extremes occur. More fundamentally, nonnegative resonator coefficients make the method a positive-real-part selector, so they do not recover both signs the way high moments can."
+        },
+        "directed": {
+          "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+          "source_grounded_mathematics": "The source contrasts its resonance method with Selberg-Tsang high moments and with an earlier shorter resonator. Larger primes and a longer Dirichlet polynomial improve maxima but require substantially larger intervals and have not produced a reasonable measure estimate for the large-value set. It states that nonnegative coefficients allow the resonator to catch large positive real parts, obstructing improved conditional Omega-plus/minus results for S and an improved Omega-minus result for S1.",
+          "conceptual_reading": "The resonator architecture fixes both sensitivity and blind spots: support length controls amplitude versus localization, while coefficient positivity supplies monotonicity at the cost of sign symmetry. These are structural tradeoffs, not merely loose constants.",
+          "representation_or_bridge": "Resonance bridges a Dirichlet series to a weighted mean dominated by chosen multiplicative correlations; high moments provide the comparison bridge that can detect either sign and support measure estimates.",
+          "boundary_or_failure": "The claimed adaptability of an earlier measure result and Tsang's proof is mentioned without proof. No stronger measure theorem is supplied, so an unconditional version of the later S1 result remains a hope. Positivity explicitly blocks the missing sign results.",
+          "uncertainty": "The methodological claims and stated obstruction are clear in the text; quantitative comparisons with the cited works cannot be independently assessed from this span."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Analyticity of the kernel in a horizontal strip and quadratic horizontal decay justify the contour and limit operations. This identity is the input that replaces the classical approximation in Theorem 1.",
+      "line_end": 245,
+      "line_start": 207,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires Fourier-transform convention, kernel shift signs, contour orientation, and pole location. There appears to be a sign/argument layout discrepancy across displayed intermediate formulas; verify equation (6) and its proof against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 1 shifts a contour from the critical strip to an absolutely convergent line, expands zeta there, and shifts each kernel integral back. The result cleanly separates Fourier-selected Dirichlet coefficients from the residue of the zeta pole.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour shifting turns a smoothed zeta value into a weighted Dirichlet series plus an explicit pole residue",
+      "unit_artifact_relpath": "depth/units/w2609909332_zeta_convolution_identity.txt",
+      "unit_bytes": 2178,
+      "unit_id": "w2609909332_zeta_convolution_identity",
+      "unit_sha256": "f1f5dbd4dcaf31c264de2a85a9971de56a1e49fcac36b232d189d1964920dfbb",
+      "unit_type": "lemma_plus_contour_proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_zeta_convolution_identity.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 199,
+          "line_end": 206,
+          "text": "\n                  EXTREME VALUES OF THE RIEMANN ZETA FUNCTION AND ITS ARGUMENT                             5\n\nmethod only catches large positive values of the real part of a Dirichlet series whose coeffi-\ncients are all nonnegative. In contrast, when relying on high moments, one is able to catch\nlarge values of either sign.\n\n\n",
+          "sha256": "0268aa4eb3c58a7da23442f379469c1714c1f2d8885bf5381845ebc09b71f20c"
+        },
+        "after": {
+          "line_start": 246,
+          "line_end": 253,
+          "text": "\n6                               ANDRIY BONDARENKO AND KRISTIAN SEIP\n\n    The formula of Selberg for log ζ(s) to be used below, can be found in the following conve-\nnient form in [10, Lemma 5].\n\n\nLemma 2. Suppose that 1/2 ≤ σ < 1, and let K (x +i y) be an analytic function in the horizontal\n",
+          "sha256": "26f9ac47ca4c46fb9f59b11c11fc2732f22c2f4ec3371fbbec9b7fb70d2dc8a9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Convolution formulas for zeta and log zeta",
+            "line_end": 300,
+            "line_start": 205,
+            "mathematical_role": "derives kernel identities, pole correction, zero correction, and RH-conditional prime-series formulas for S and S1"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 245,
+          "line_start": 207,
+          "title": "Contour shifting turns a smoothed zeta value into a weighted Dirichlet series plus an explicit pole residue",
+          "unit_id": "w2609909332_zeta_convolution_identity",
+          "unit_type": "lemma_plus_contour_proof",
+          "why_material": "Lemma 1 shifts a contour from the critical strip to an absolutely convergent line, expands zeta there, and shifts each kernel integral back. The result cleanly separates Fourier-selected Dirichlet coefficients from the residue of the zeta pole."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Analyticity of the kernel in a horizontal strip and quadratic horizontal decay justify the contour and limit operations. This identity is the input that replaces the classical approximation in Theorem 1.",
+          "representation_dependency": "Requires Fourier-transform convention, kernel shift signs, contour orientation, and pole location. There appears to be a sign/argument layout discrepancy across displayed intermediate formulas; verify equation (6) and its proof against the PDF.",
+          "unit_id": "w2609909332_zeta_convolution_identity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 204,
+            "line_start": 176,
+            "title": "Longer positive resonators improve amplitude but enlarge the location interval and lose sign flexibility",
+            "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+            "unit_type": "method_comparison_and_limitation",
+            "why_material": "The authors contrast resonance with high moments and with earlier shorter resonators. Larger primes and a longer Dirichlet polynomial improve the detectable maximum, but currently yield a much larger interval and no comparable measure estimate. Because all coefficients are nonnegative, the construction detects large positive real parts and cannot symmetrically force both signs."
+          },
+          {
+            "line_end": 300,
+            "line_start": 249,
+            "title": "The smoothed logarithm equals a prime series plus an explicit correction from zeros to the right",
+            "unit_id": "w2609909332_log_convolution_zero_correction",
+            "unit_type": "conditional_representation_and_projection",
+            "why_material": "Selberg's convolution formula writes log zeta as a von-Mangoldt Dirichlet series plus integrals over any zeros with real part beyond sigma. RH removes that correction at the critical line. Taking imaginary parts yields the S formula, while a bounded correction and an extra logarithmic denominator yield the S1 formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Convolution transforms zeta observables into Fourier-filtered Dirichlet series while isolating pole or zero corrections; once the remaining coefficients are nonnegative, the resonator can discard unfavorable terms and retain a multiplicatively aligned subcollection.",
+            "limit": "For log zeta and the resulting S/S1 formulas, removal of the zero correction is conditional on RH; positivity also prevents symmetric sign selection.",
+            "parent_local_unit_ids": [
+              "w2609909332_zeta_convolution_identity",
+              "w2609909332_log_convolution_zero_correction",
+              "w2609909332_positive_dirichlet_resonance_lemma",
+              "w2609909332_von_mangoldt_resonance_lemma"
+            ],
+            "title": "Smooth first, then resonate: representation engineering exposes coefficients a positive selector can use"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 206,
+              "line_start": 205,
+              "reason": "Blank transition to convolution formulas."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 248,
+              "line_start": 246,
+              "reason": "Page transition and introduction to Selberg's formula."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_zeta_convolution_identity",
+        "spontaneous": {
+          "unit_id": "w2609909332_zeta_convolution_identity",
+          "spontaneous_reading": "A contour shift makes smoothing algebraic: convolution of zeta on a vertical line becomes a Dirichlet series weighted by the Fourier transform of the kernel, plus the residue of zeta's pole. Analyticity and horizontal decay of the kernel are exactly what permit the shift and termwise recovery of the coefficient series."
+        },
+        "directed": {
+          "unit_id": "w2609909332_zeta_convolution_identity",
+          "source_grounded_mathematics": "Lemma 1 assumes 1/2 <= sigma < 1 and a kernel analytic in a horizontal strip with quadratic decay in the real direction. Applying the residue theorem to zeta(z+it) times a shifted kernel on a rectangle, then expanding zeta absolutely on Re z=2 and moving each term back, expresses the convolution as sum_{n>=1} K-hat(log n)n^{-sigma-it} plus an explicit pole term.",
+          "conceptual_reading": "The contour shift separates two semantic components of zeta: its Dirichlet coefficients, exposed through frequency selection, and its pole, exposed as a local residue evaluation. Kernel design can therefore preserve favorable coefficients while directly suppressing the obstruction.",
+          "representation_or_bridge": "This is the exact bridge from an analytic vertical-line convolution to a Fourier-filtered Dirichlet series. The residue term records what the coefficient representation alone forgets about the pole.",
+          "boundary_or_failure": "The identity requires the stated strip analyticity and decay and does not itself prove that any chosen kernel makes the residue small. It is a zeta identity, not the Selberg log-zeta formula or an extreme-value conclusion.",
+          "uncertainty": "The extracted statement and proof display opposite-looking signs/arguments for the residue evaluation, including K(-t-i(1-sigma)) versus K(t-i(1-sigma)). The contour mechanism is secure, but the exact residue sign and argument must be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit makes the source's conditionality transparent: RH is used to delete a named zero term, not hidden inside the resonator. The real-valued-kernel assumption controls the imaginary/real projections.",
+      "line_end": 300,
+      "line_start": 249,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive: zero-sum limits, von Mangoldt weights, Fourier coefficients, bounded h(t), and O-terms must be checked in equations (7)-(10). OCR corrupts some hats and parentheses.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Selberg's convolution formula writes log zeta as a von-Mangoldt Dirichlet series plus integrals over any zeros with real part beyond sigma. RH removes that correction at the critical line. Taking imaginary parts yields the S formula, while a bounded correction and an extra logarithmic denominator yield the S1 formula.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The smoothed logarithm equals a prime series plus an explicit correction from zeros to the right",
+      "unit_artifact_relpath": "depth/units/w2609909332_log_convolution_zero_correction.txt",
+      "unit_bytes": 3117,
+      "unit_id": "w2609909332_log_convolution_zero_correction",
+      "unit_sha256": "02f0f6d1f1383b110315b2da618989cfaf3190b74a750b74b27a462a3dd0e4f9",
+      "unit_type": "conditional_representation_and_projection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_log_convolution_zero_correction.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 241,
+          "line_end": 248,
+          "text": "      −∞                                −∞\n\nwhere both integrals are absolutely convergent by the assumed decay of K (u). Now using the\nabsolutely convergent Dirichlet series of ζ(s) on the 2-line and applying Cauchy’s theorem\ntermwise to move the integral back to the σ-line, we reach the desired conclusion.                         \u0004\n\n6                               ANDRIY BONDARENKO AND KRISTIAN SEIP\n\n",
+          "sha256": "ab8279f59ac407921ea41895fca4fd4680330a66228b2894de6baa4e01184369"
+        },
+        "after": {
+          "line_start": 301,
+          "line_end": 308,
+          "text": "\n                   EXTREME VALUES OF THE RIEMANN ZETA FUNCTION AND ITS ARGUMENT                        7\n\n                             3. T HE RESONATOR AND ASSOCIATED ESTIMATES\n\n  A resonator is a function of the form |R(t )|2 , where\n                                                          X\n(11)                                           R(t ) =           r (m)m −i t ,\n",
+          "sha256": "ff12d3e332b05225f9e19d97de9ead84e4a1c0c2ff1682be340950f5005d13ef"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Convolution formulas for zeta and log zeta",
+            "line_end": 300,
+            "line_start": 205,
+            "mathematical_role": "derives kernel identities, pole correction, zero correction, and RH-conditional prime-series formulas for S and S1"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 300,
+          "line_start": 249,
+          "title": "The smoothed logarithm equals a prime series plus an explicit correction from zeros to the right",
+          "unit_id": "w2609909332_log_convolution_zero_correction",
+          "unit_type": "conditional_representation_and_projection",
+          "why_material": "Selberg's convolution formula writes log zeta as a von-Mangoldt Dirichlet series plus integrals over any zeros with real part beyond sigma. RH removes that correction at the critical line. Taking imaginary parts yields the S formula, while a bounded correction and an extra logarithmic denominator yield the S1 formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit makes the source's conditionality transparent: RH is used to delete a named zero term, not hidden inside the resonator. The real-valued-kernel assumption controls the imaginary/real projections.",
+          "representation_dependency": "Formula-sensitive: zero-sum limits, von Mangoldt weights, Fourier coefficients, bounded h(t), and O-terms must be checked in equations (7)-(10). OCR corrupts some hats and parentheses.",
+          "unit_id": "w2609909332_log_convolution_zero_correction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 245,
+            "line_start": 207,
+            "title": "Contour shifting turns a smoothed zeta value into a weighted Dirichlet series plus an explicit pole residue",
+            "unit_id": "w2609909332_zeta_convolution_identity",
+            "unit_type": "lemma_plus_contour_proof",
+            "why_material": "Lemma 1 shifts a contour from the critical strip to an absolutely convergent line, expands zeta there, and shifts each kernel integral back. The result cleanly separates Fourier-selected Dirichlet coefficients from the residue of the zeta pole."
+          },
+          {
+            "line_end": 346,
+            "line_start": 304,
+            "title": "Prime bands and square-free multiplicative weights build a large but cardinality-controlled resonator",
+            "unit_id": "w2609909332_prime_band_resonator_construction",
+            "unit_type": "combinatorial_construction",
+            "why_material": "The resonator uses a multiplicative weight supported on square-free products of primes in carefully chosen logarithmic bands. Removing integers with too many factors in any band produces a divisor-closed set M whose cardinality stays below N while preserving the desired multiplicative structure."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Convolution transforms zeta observables into Fourier-filtered Dirichlet series while isolating pole or zero corrections; once the remaining coefficients are nonnegative, the resonator can discard unfavorable terms and retain a multiplicatively aligned subcollection.",
+            "limit": "For log zeta and the resulting S/S1 formulas, removal of the zero correction is conditional on RH; positivity also prevents symmetric sign selection.",
+            "parent_local_unit_ids": [
+              "w2609909332_zeta_convolution_identity",
+              "w2609909332_log_convolution_zero_correction",
+              "w2609909332_positive_dirichlet_resonance_lemma",
+              "w2609909332_von_mangoldt_resonance_lemma"
+            ],
+            "title": "Smooth first, then resonate: representation engineering exposes coefficients a positive selector can use"
+          },
+          {
+            "claim": "A real odd kernel has an imaginary Fourier transform and selects S through the imaginary prime series, yielding only an absolute extreme; a real even kernel has positive real transform and selects a one-sided positive extreme of S1.",
+            "limit": "This explains the asymmetry of the proved results, not the true sign distribution or optimal order of either function.",
+            "parent_local_unit_ids": [
+              "w2609909332_log_convolution_zero_correction",
+              "w2609909332_odd_kernel_selects_s",
+              "w2609909332_even_kernel_selects_s1"
+            ],
+            "title": "Kernel parity selects both the observable component and the sign information recoverable by resonance"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 248,
+              "line_start": 246,
+              "reason": "Page transition and introduction to Selberg's formula."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 303,
+              "line_start": 301,
+              "reason": "Page and section transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_log_convolution_zero_correction",
+        "spontaneous": {
+          "unit_id": "w2609909332_log_convolution_zero_correction",
+          "spontaneous_reading": "Selberg's smoothed log-zeta formula exposes a prime-power Dirichlet series and a correction indexed by zeros to the right of the integration line. RH removes that correction at the critical boundary; imaginary and real projections then yield kernels for S and S1, with the latter paying an extra logarithmic denominator and a bounded correction."
+        },
+        "directed": {
+          "unit_id": "w2609909332_log_convolution_zero_correction",
+          "source_grounded_mathematics": "Lemma 2 writes the convolution of log zeta with K as a von-Mangoldt series with coefficients K-hat(log n)/(log n)n^sigma and a sum of kernel integrals over zeros with beta>sigma, plus O(V(t)). Under RH this zero correction disappears for sigma>=1/2. At sigma=1/2, taking the imaginary part for real K gives the conditional S formula. Using bounded h(t)=S1(t)-pi^{-1} integral_{1/2}^2 log|zeta(sigma+it)| d sigma gives the conditional S1 formula with (log n)^{-2} coefficients.",
+          "conceptual_reading": "The formula makes conditionality local and inspectable: the off-line-zero contribution is a separate correction rather than hidden in an approximation. Projection chooses the observable, while integrating across sigma converts log zeta to S1 and attenuates coefficients by another log n.",
+          "representation_or_bridge": "The bridges are log zeta convolution -> prime-power series plus zero correction; imaginary projection -> S; sigma integration and bounded h -> S1. Fourier weights and logarithmic denominators determine which prime scales remain resonant.",
+          "boundary_or_failure": "Equations (8)-(10) rely on RH to remove the zero term. They require real-valued K on the real axis, and Lemma 2 excludes t=0. Boundedness of h only permits absorption into error; it does not erase the distinction between S1 and the integrated log modulus.",
+          "uncertainty": "The final S1 display has text-layer ambiguity in an inner error term and parentheses. Exact normalization, summation placement, and error terms should be verified from the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The parameters gamma and a balance the number and concentration of selected prime factors. Lemma 3 supplies the cardinality gate used when the support is later discretized.",
+      "line_end": 346,
+      "line_start": 304,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact prime window, f(p), thresholds, and set subtraction/union around lines 333-340 are layout-degraded. Prose recovers divisor closure, but all quantitative definitions need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The resonator uses a multiplicative weight supported on square-free products of primes in carefully chosen logarithmic bands. Removing integers with too many factors in any band produces a divisor-closed set M whose cardinality stays below N while preserving the desired multiplicative structure.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime bands and square-free multiplicative weights build a large but cardinality-controlled resonator",
+      "unit_artifact_relpath": "depth/units/w2609909332_prime_band_resonator_construction.txt",
+      "unit_bytes": 2750,
+      "unit_id": "w2609909332_prime_band_resonator_construction",
+      "unit_sha256": "c07e774f7bcaa8a34d64d9873dcc9e96d1876a11bbb336a04883009ad972cc76",
+      "unit_type": "combinatorial_construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_prime_band_resonator_construction.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 296,
+          "line_end": 303,
+          "text": "\nagain assuming that K (u) takes real values for real arguments u. Notice that here we have\nextended the definitions of S(t ) and S 1 (t ) in the obvious way so that S(t ) is an odd function\nand S 1 (t ) is an even function on R. The two conditional formulas (9) and (10) will be our\nstarting point for the proof of Theorem 2.\n\n                   EXTREME VALUES OF THE RIEMANN ZETA FUNCTION AND ITS ARGUMENT                        7\n\n",
+          "sha256": "b628de8f49ee063d66b62a352f95fb39eae4bc09bebe9d163e87f099808428e3"
+        },
+        "after": {
+          "line_start": 347,
+          "line_end": 354,
+          "text": "\n8                                  ANDRIY BONDARENKO AND KRISTIAN SEIP\n\nLemma 4. We have\n                                                                    s\n                         1        X       2\n                                            X       1                 log N log3 N\n(12)               P            2\n",
+          "sha256": "643d11b479cc396a9413758f187d68b4e7b03fe61c83bd49e1e3f095555be541"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonator and associated estimates",
+            "line_end": 618,
+            "line_start": 301,
+            "mathematical_role": "constructs prime-band multiplicative weights, truncates exceptional mass, discretizes support, and proves general positive-coefficient resonance inequalities"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 346,
+          "line_start": 304,
+          "title": "Prime bands and square-free multiplicative weights build a large but cardinality-controlled resonator",
+          "unit_id": "w2609909332_prime_band_resonator_construction",
+          "unit_type": "combinatorial_construction",
+          "why_material": "The resonator uses a multiplicative weight supported on square-free products of primes in carefully chosen logarithmic bands. Removing integers with too many factors in any band produces a divisor-closed set M whose cardinality stays below N while preserving the desired multiplicative structure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The parameters gamma and a balance the number and concentration of selected prime factors. Lemma 3 supplies the cardinality gate used when the support is later discretized.",
+          "representation_dependency": "The exact prime window, f(p), thresholds, and set subtraction/union around lines 333-340 are layout-degraded. Prose recovers divisor closure, but all quantitative definitions need PDF verification.",
+          "unit_id": "w2609909332_prime_band_resonator_construction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 300,
+            "line_start": 249,
+            "title": "The smoothed logarithm equals a prime series plus an explicit correction from zeros to the right",
+            "unit_id": "w2609909332_log_convolution_zero_correction",
+            "unit_type": "conditional_representation_and_projection",
+            "why_material": "Selberg's convolution formula writes log zeta as a von-Mangoldt Dirichlet series plus integrals over any zeros with real part beyond sigma. RH removes that correction at the critical line. Taking imaginary parts yields the S formula, while a bounded correction and an extra logarithmic denominator yield the S1 formula."
+          },
+          {
+            "line_end": 459,
+            "line_start": 350,
+            "title": "Exponential tail estimates show that truncation preserves the weighted prime contribution",
+            "unit_id": "w2609909332_weighted_mass_survives_truncation",
+            "unit_type": "concentration_lemma",
+            "why_material": "Lemma 4 proves a lower bound for a normalized weighted divisor sum. It introduces a narrower typical set, reduces the claim to showing exceptional multiplicative mass is negligible, factorizes each prime band, and chooses an exponential tilt b so the tail exponent is negative."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-band weights create multiplicative gain, exceptional-factor truncation preserves most weighted mass while enforcing a size cap, and geometric thinning compresses the support so Gaussian decay controls off-diagonal frequency interactions.",
+            "limit": "The parameter balance is specific to the stated logarithmic scale and relies partly on estimates imported from earlier work; it is not an automatic template for arbitrary coefficient systems.",
+            "parent_local_unit_ids": [
+              "w2609909332_prime_band_resonator_construction",
+              "w2609909332_weighted_mass_survives_truncation",
+              "w2609909332_geometric_thinning_controls_off_diagonal"
+            ],
+            "title": "A useful resonator balances combinatorial mass, cardinality, and Fourier off-diagonal decay"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 303,
+              "line_start": 301,
+              "reason": "Page and section transition."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 340,
+              "line_start": 333,
+              "reason": "The set operation defining M and its threshold are split and misaligned; surrounding prose recovers the role but exact notation needs PDF verification."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_prime_band_resonator_construction",
+        "spontaneous": {
+          "unit_id": "w2609909332_prime_band_resonator_construction",
+          "spontaneous_reading": "The resonator is built in multiplicative coordinates: square-free products of primes from logarithmic bands receive tuned weights, and integers with excessive occupancy in any band are deleted. The deletion keeps a divisor-closed typical set of size at most N while retaining the prime-incidence structure later used for resonance."
+        },
+        "directed": {
+          "unit_id": "w2609909332_prime_band_resonator_construction",
+          "source_grounded_mathematics": "The source defines R(t) over a finite set M-prime and constructs a multiplicative square-free weight f supported on primes P in a prescribed range. P is partitioned into bands P_k. For parameters gamma and a, sets with too many P_k prime factors are removed from supp(f), producing a divisor-closed M; Lemma 3 states |M|<=N for sufficiently large N.",
+          "conceptual_reading": "Prime bands provide coordinates at comparable logarithmic scale, and occupancy caps are a sparsification rule that controls combinatorial size without destroying downward divisibility. The construction anticipates a typical-set argument: resonant mass should live on balanced products rather than rare over-occupied ones.",
+          "representation_or_bridge": "The bridge from arithmetic to analysis is the Dirichlet polynomial sum r(m)m^{-it}; multiplication of integers becomes additive phase in t. The intermediate objects P_k, f, and divisor-closed M carry the combinatorial correlations used later.",
+          "boundary_or_failure": "This span constructs the support and states its cardinality; it does not yet show that weighted mass survives deletion or that R detects a large value. Lemma 3 is imported from earlier work rather than proved here.",
+          "uncertainty": "The extracted formula for f(p), the prime-range endpoints, and occupancy thresholds has crowded radicals and superscripts. Their exact normalization must be checked before reproduction, although square-free support, banding, and divisor closure are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof of one symmetric exceptional tail is omitted by reference to earlier work; the displayed argument fully exposes the low-tail mechanism and explains why alpha can approach one.",
+      "line_end": 459,
+      "line_start": 350,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on exact normalization, band thresholds, products over primes, and the sign of b-1-alpha log b. Several set symbols and sums are split; equations (12)-(16) require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 4 proves a lower bound for a normalized weighted divisor sum. It introduces a narrower typical set, reduces the claim to showing exceptional multiplicative mass is negligible, factorizes each prime band, and chooses an exponential tilt b so the tail exponent is negative.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponential tail estimates show that truncation preserves the weighted prime contribution",
+      "unit_artifact_relpath": "depth/units/w2609909332_weighted_mass_survives_truncation.txt",
+      "unit_bytes": 6659,
+      "unit_id": "w2609909332_weighted_mass_survives_truncation",
+      "unit_sha256": "71dcfa1023190fced3b89fa1c5a2b900ab9aa7408a30c1538fbbb6acf7693c7f",
+      "unit_type": "concentration_lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_weighted_mass_survives_truncation.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 342,
+          "line_end": 349,
+          "text": "each group P k . It is is clear that M is divisor closed, by which we mean that d is in M when-\never m is in M and d divides m.\n  The first of the following two lemmas was established as part of the proof of [2, Lemma 2].\n\nLemma 3. We have |M | ≤ N whenever N is large enough, depending on a and γ.\n\n8                                  ANDRIY BONDARENKO AND KRISTIAN SEIP\n\n",
+          "sha256": "076324ffda973f529726f93d5b09b0ac390c8760778eb13c8430c1f7d46e8970"
+        },
+        "after": {
+          "line_start": 460,
+          "line_end": 467,
+          "text": "\n  We proceed as in [2] (following an idea from [1]) and let J be the set of integers j such that\n                             h                                 ´\\\n                              (1 + T −1 ) j , (1 + T −1 ) j +1    M 6= ;,\n                                £                                ¢T\nand we let m j be the minimum of (1 + T −1 ) j , (1 + T −1 ) j +1 M for j in J . We then set\n                                                          ©            ª\n                                                    M ′ := m j : j ∈ J\n",
+          "sha256": "cfeac7e191de461bd8fa051e57dd68d50f957da869e1d741e6f43fd153c2770f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonator and associated estimates",
+            "line_end": 618,
+            "line_start": 301,
+            "mathematical_role": "constructs prime-band multiplicative weights, truncates exceptional mass, discretizes support, and proves general positive-coefficient resonance inequalities"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 459,
+          "line_start": 350,
+          "title": "Exponential tail estimates show that truncation preserves the weighted prime contribution",
+          "unit_id": "w2609909332_weighted_mass_survives_truncation",
+          "unit_type": "concentration_lemma",
+          "why_material": "Lemma 4 proves a lower bound for a normalized weighted divisor sum. It introduces a narrower typical set, reduces the claim to showing exceptional multiplicative mass is negligible, factorizes each prime band, and chooses an exponential tilt b so the tail exponent is negative."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof of one symmetric exceptional tail is omitted by reference to earlier work; the displayed argument fully exposes the low-tail mechanism and explains why alpha can approach one.",
+          "representation_dependency": "Depends on exact normalization, band thresholds, products over primes, and the sign of b-1-alpha log b. Several set symbols and sums are split; equations (12)-(16) require PDF verification.",
+          "unit_id": "w2609909332_weighted_mass_survives_truncation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 346,
+            "line_start": 304,
+            "title": "Prime bands and square-free multiplicative weights build a large but cardinality-controlled resonator",
+            "unit_id": "w2609909332_prime_band_resonator_construction",
+            "unit_type": "combinatorial_construction",
+            "why_material": "The resonator uses a multiplicative weight supported on square-free products of primes in carefully chosen logarithmic bands. Removing integers with too many factors in any band produces a divisor-closed set M whose cardinality stays below N while preserving the desired multiplicative structure."
+          },
+          {
+            "line_end": 537,
+            "line_start": 461,
+            "title": "Geometric binning compresses the support while preserving near-multiplicative correlations",
+            "unit_id": "w2609909332_geometric_thinning_controls_off_diagonal",
+            "unit_type": "discretization_and_norm_control",
+            "why_material": "The construction chooses one representative from each narrow multiplicative interval and assigns it the square root of nearby f-mass. Gaussian Fourier decay then controls off-diagonal pairs in the L2 norm, while Cauchy-Schwarz transfers exact relations mk=n on M to approximate relations on the thinned set M-prime."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-band weights create multiplicative gain, exceptional-factor truncation preserves most weighted mass while enforcing a size cap, and geometric thinning compresses the support so Gaussian decay controls off-diagonal frequency interactions.",
+            "limit": "The parameter balance is specific to the stated logarithmic scale and relies partly on estimates imported from earlier work; it is not an automatic template for arbitrary coefficient systems.",
+            "parent_local_unit_ids": [
+              "w2609909332_prime_band_resonator_construction",
+              "w2609909332_weighted_mass_survives_truncation",
+              "w2609909332_geometric_thinning_controls_off_diagonal"
+            ],
+            "title": "A useful resonator balances combinatorial mass, cardinality, and Fourier off-diagonal decay"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_weighted_mass_survives_truncation",
+        "spontaneous": {
+          "unit_id": "w2609909332_weighted_mass_survives_truncation",
+          "spontaneous_reading": "Cardinality control is useful only if deletion preserves the weighted divisor signal. The proof isolates a narrower typical set whose members contain enough primes in every band, shows the complement has negligible f-squared mass by an exponential tilt, and thereby converts band occupancy into the lower bound for the normalized prime-divisor sum."
+        },
+        "directed": {
+          "unit_id": "w2609909332_weighted_mass_survives_truncation",
+          "source_grounded_mathematics": "Lemma 4 lower-bounds a normalized sum over n in M of f(n)^2 times sum_{p|n}1/(f(p)sqrt(p)) by the square-root scale involving log N, log_3 N, and log_2 N. The proof defines a typical subset L with lower and upper occupancy constraints in each P_k. It reduces the claim to negligible f-squared mass outside L, factors the band contribution multiplicatively, and applies an exponential tilt b<1; choosing b near 1 makes b-1-alpha log b negative. The opposite exceptional tail is said to be similar and essentially contained in earlier work.",
+          "conceptual_reading": "This is a concentration argument on multiplicative coordinates. The f-squared Euler-product measure makes prime choices approximately product-like, while the exponential tilt certifies that occupancy deviations cost exponentially small mass. Thus sparsification preserves the statistic that will feed the analytic lower bound.",
+          "representation_or_bridge": "The bridge is weighted divisor incidence -> prime-band occupancy -> product-factorized tail estimate. The auxiliary set L and tilt parameter b turn a combinatorial truncation question into a large-deviation calculation.",
+          "boundary_or_failure": "One of the two exceptional-tail estimates is omitted and referred to prior work, and the band-sum estimate for f(p)^2 is also imported. The lemma controls normalized weighted mass, not the final resonator integral or an extreme value by itself.",
+          "uncertainty": "Several powers, floor marks, and thresholds are degraded in extraction. The negativity condition and proof structure are readable, but exact constants and the displayed lower-bound normalization require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This compression keeps the resonator length bounded by N and prepares the coefficient sums used in Lemmas 6 and 7.",
+      "line_end": 537,
+      "line_start": 461,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires exact interval endpoints, neighborhood used in r(m), Gaussian normalization, and tolerance 3/T. Prime marks and intersection notation are OCR-fragile; verify equations (17)-(21).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The construction chooses one representative from each narrow multiplicative interval and assigns it the square root of nearby f-mass. Gaussian Fourier decay then controls off-diagonal pairs in the L2 norm, while Cauchy-Schwarz transfers exact relations mk=n on M to approximate relations on the thinned set M-prime.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Geometric binning compresses the support while preserving near-multiplicative correlations",
+      "unit_artifact_relpath": "depth/units/w2609909332_geometric_thinning_controls_off_diagonal.txt",
+      "unit_bytes": 5162,
+      "unit_id": "w2609909332_geometric_thinning_controls_off_diagonal",
+      "unit_sha256": "c6509d7553d050eb66ad5bc6db08267f2e11d0ce20693c1706417e47ab0a1ac0",
+      "unit_type": "discretization_and_norm_control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_geometric_thinning_controls_off_diagonal.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 453,
+          "line_end": 460,
+          "text": "Therefore the right-hand side of (16) is at most\n                               µ                                 ¶\n                                                         log N\n                            exp (b − 1 − α log b + o(1)) 2         .\n                                                        k log3 N\nChoosing b sufficiently close to 1, we obtain b − 1 − α logb < 0. This gives (14) and hence (13).\n                                                                                                      \u0004\n\n",
+          "sha256": "a919c2107cc8e0caf4a274d27f895f05b4555943628f4192301a10599a1b5748"
+        },
+        "after": {
+          "line_start": 538,
+          "line_end": 545,
+          "text": "\nLemma 6. Suppose that\n                                                    ∞\n                                                    X\n(22)                                   F (t ) :=         an n −1/2−i t\n                                                   n=1\n\nis absolutely convergent and that an ≥ 0 for every n. Let ε be a positive number and γ be the\n",
+          "sha256": "16fd5a6bb110415958d12ebf63b206f51a5c5d22f0b4d94d14136a057ba52792"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonator and associated estimates",
+            "line_end": 618,
+            "line_start": 301,
+            "mathematical_role": "constructs prime-band multiplicative weights, truncates exceptional mass, discretizes support, and proves general positive-coefficient resonance inequalities"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 537,
+          "line_start": 461,
+          "title": "Geometric binning compresses the support while preserving near-multiplicative correlations",
+          "unit_id": "w2609909332_geometric_thinning_controls_off_diagonal",
+          "unit_type": "discretization_and_norm_control",
+          "why_material": "The construction chooses one representative from each narrow multiplicative interval and assigns it the square root of nearby f-mass. Gaussian Fourier decay then controls off-diagonal pairs in the L2 norm, while Cauchy-Schwarz transfers exact relations mk=n on M to approximate relations on the thinned set M-prime."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This compression keeps the resonator length bounded by N and prepares the coefficient sums used in Lemmas 6 and 7.",
+          "representation_dependency": "Requires exact interval endpoints, neighborhood used in r(m), Gaussian normalization, and tolerance 3/T. Prime marks and intersection notation are OCR-fragile; verify equations (17)-(21).",
+          "unit_id": "w2609909332_geometric_thinning_controls_off_diagonal"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 459,
+            "line_start": 350,
+            "title": "Exponential tail estimates show that truncation preserves the weighted prime contribution",
+            "unit_id": "w2609909332_weighted_mass_survives_truncation",
+            "unit_type": "concentration_lemma",
+            "why_material": "Lemma 4 proves a lower bound for a normalized weighted divisor sum. It introduces a narrower typical set, reduces the claim to showing exceptional multiplicative mass is negligible, factorizes each prime band, and chooses an exponential tilt b so the tail exponent is negative."
+          },
+          {
+            "line_end": 571,
+            "line_start": 539,
+            "title": "Positivity lets a resonator retain a favorable finite subcollection of any Dirichlet series",
+            "unit_id": "w2609909332_positive_dirichlet_resonance_lemma",
+            "unit_type": "abstract_selection_lemma",
+            "why_material": "Lemma 6 abstracts the resonance step for an absolutely convergent Dirichlet series with nonnegative coefficients. Expanding the weighted integral makes every term nonnegative, so a selected finite portion indexed by the resonator's multiplicative relations yields an exponential lower bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-band weights create multiplicative gain, exceptional-factor truncation preserves most weighted mass while enforcing a size cap, and geometric thinning compresses the support so Gaussian decay controls off-diagonal frequency interactions.",
+            "limit": "The parameter balance is specific to the stated logarithmic scale and relies partly on estimates imported from earlier work; it is not an automatic template for arbitrary coefficient systems.",
+            "parent_local_unit_ids": [
+              "w2609909332_prime_band_resonator_construction",
+              "w2609909332_weighted_mass_survives_truncation",
+              "w2609909332_geometric_thinning_controls_off_diagonal"
+            ],
+            "title": "A useful resonator balances combinatorial mass, cardinality, and Fourier off-diagonal decay"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_geometric_thinning_controls_off_diagonal",
+        "spontaneous": {
+          "unit_id": "w2609909332_geometric_thinning_controls_off_diagonal",
+          "spontaneous_reading": "The large multiplicative set is compressed by retaining one representative per interval of relative width about 1/T and assigning it the square root of nearby f-squared mass. Gaussian Fourier decay then suppresses pairs that are separated in logarithmic scale, while Cauchy-Schwarz ensures that exact relations mk=n in the original set survive as controlled approximate relations among representatives."
+        },
+        "directed": {
+          "unit_id": "w2609909332_geometric_thinning_controls_off_diagonal",
+          "source_grounded_mathematics": "The source partitions M into geometric intervals with ratio 1+T^{-1}, selects the least element m_j from each occupied interval to form M-prime, and defines r(m_j) from nearby f(n)^2 mass. With N=[T^kappa] and Gaussian Phi, the Fourier identity expands the weighted L2 norm of R into a sum with Phi(T log(m/n)). Diagonal mass is bounded by the original f-squared mass; Gaussian decay and Cauchy-Schwarz bound the off-diagonal. Inequality (21) transfers sums over exact mk=n relations in M to pairs in M-prime satisfying |km-prime/n-prime-1|<=3/T.",
+          "conceptual_reading": "Geometric thinning is a stable compression of multiplicative geometry at the resolution visible to a time window of length T. It forgets exact integer identity inside each cell but preserves enough local mass and approximate ratios for the analytic kernel to detect the same correlations.",
+          "representation_or_bridge": "The key bridges are log(m/n), which converts multiplicative separation into Fourier frequency, and the aggregate coefficient r, which converts a cell's f-squared mass into an L2-compatible amplitude. Inequality (21) links exact combinatorial incidence to approximate analytic alignment.",
+          "boundary_or_failure": "Lemma 5 is an upper bound for resonator mass, not a lower bound for correlation with a target series. Compression preserves only relations within the stated tolerance, and its usefulness depends on the later positive-coefficient sums.",
+          "uncertainty": "Some interval brackets, representative notation, and subscripts are malformed in the text layer. The relative-width construction and bounds are clear, but exact cell endpoints in (19)-(21) should be checked from the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uniformity of the little-o term with respect to F is recorded. The omitted final estimate is explicitly delegated to a cited earlier computation, so this source does not independently contain every detail.",
+      "line_end": 571,
+      "line_start": 539,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the coefficient minimum up to T^epsilon, parameter kappa, and the exact exponential scale. Equation (23) is visually fragmented and requires PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 6 abstracts the resonance step for an absolutely convergent Dirichlet series with nonnegative coefficients. Expanding the weighted integral makes every term nonnegative, so a selected finite portion indexed by the resonator's multiplicative relations yields an exponential lower bound.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positivity lets a resonator retain a favorable finite subcollection of any Dirichlet series",
+      "unit_artifact_relpath": "depth/units/w2609909332_positive_dirichlet_resonance_lemma.txt",
+      "unit_bytes": 2148,
+      "unit_id": "w2609909332_positive_dirichlet_resonance_lemma",
+      "unit_sha256": "5c1e76aa82c5bbe7927c5a3e5b72f19fb967d1f5e7d019fb6ee87807e5d8e294",
+      "unit_type": "abstract_selection_lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_positive_dirichlet_resonance_lemma.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 531,
+          "line_end": 538,
+          "text": "\n                 EXTREME VALUES OF THE RIEMANN ZETA FUNCTION AND ITS ARGUMENT                              11\n\nand hence, by the definition of M ′ , that\n                         X                                         X\n(21)                              f (m) f (n) ≤                                        r (m ′ )r (n ′ ).\n                    m,n∈M ,mk=n                    m ′ ,n ′ ∈M ′ ,|km ′ /n ′ −1|≤3/T\n\n",
+          "sha256": "eaa28fd4cd083f822c2630b1f318907ce979c446e8fdb1cf68dd704034ddbcba"
+        },
+        "after": {
+          "line_start": 572,
+          "line_end": 579,
+          "text": "\nLemma 7. There exists a positive constant c such that if\n                                               ∞\n                                               X Λ(n)a         n\n                                    G(t ) :=                       n −1/2−i t\n                                               n=2     log n\n\nis absolutely convergent and an ≥ 0 for every n, then\n",
+          "sha256": "80cf9fa5ad1ba06d52dfaf9b7301c5e318b32c03508d48f18dfc498430a514b6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonator and associated estimates",
+            "line_end": 618,
+            "line_start": 301,
+            "mathematical_role": "constructs prime-band multiplicative weights, truncates exceptional mass, discretizes support, and proves general positive-coefficient resonance inequalities"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 571,
+          "line_start": 539,
+          "title": "Positivity lets a resonator retain a favorable finite subcollection of any Dirichlet series",
+          "unit_id": "w2609909332_positive_dirichlet_resonance_lemma",
+          "unit_type": "abstract_selection_lemma",
+          "why_material": "Lemma 6 abstracts the resonance step for an absolutely convergent Dirichlet series with nonnegative coefficients. Expanding the weighted integral makes every term nonnegative, so a selected finite portion indexed by the resonator's multiplicative relations yields an exponential lower bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uniformity of the little-o term with respect to F is recorded. The omitted final estimate is explicitly delegated to a cited earlier computation, so this source does not independently contain every detail.",
+          "representation_dependency": "Depends on the coefficient minimum up to T^epsilon, parameter kappa, and the exact exponential scale. Equation (23) is visually fragmented and requires PDF verification.",
+          "unit_id": "w2609909332_positive_dirichlet_resonance_lemma"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 537,
+            "line_start": 461,
+            "title": "Geometric binning compresses the support while preserving near-multiplicative correlations",
+            "unit_id": "w2609909332_geometric_thinning_controls_off_diagonal",
+            "unit_type": "discretization_and_norm_control",
+            "why_material": "The construction chooses one representative from each narrow multiplicative interval and assigns it the square root of nearby f-mass. Gaussian Fourier decay then controls off-diagonal pairs in the L2 norm, while Cauchy-Schwarz transfers exact relations mk=n on M to approximate relations on the thinned set M-prime."
+          },
+          {
+            "line_end": 616,
+            "line_start": 573,
+            "title": "Restricting the von-Mangoldt series to selected primes converts combinatorial divisor mass into the S-scale gain",
+            "unit_id": "w2609909332_von_mangoldt_resonance_lemma",
+            "unit_type": "specialized_selection_lemma",
+            "why_material": "Lemma 7 adapts positivity to coefficients Lambda(n)a_n/log n. Keeping only primes in the designated set transforms the weighted integral into the divisor sum controlled by Lemma 4, producing the square-root log T log3 T over log2 T scale."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Convolution transforms zeta observables into Fourier-filtered Dirichlet series while isolating pole or zero corrections; once the remaining coefficients are nonnegative, the resonator can discard unfavorable terms and retain a multiplicatively aligned subcollection.",
+            "limit": "For log zeta and the resulting S/S1 formulas, removal of the zero correction is conditional on RH; positivity also prevents symmetric sign selection.",
+            "parent_local_unit_ids": [
+              "w2609909332_zeta_convolution_identity",
+              "w2609909332_log_convolution_zero_correction",
+              "w2609909332_positive_dirichlet_resonance_lemma",
+              "w2609909332_von_mangoldt_resonance_lemma"
+            ],
+            "title": "Smooth first, then resonate: representation engineering exposes coefficients a positive selector can use"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_positive_dirichlet_resonance_lemma",
+        "spontaneous": {
+          "unit_id": "w2609909332_positive_dirichlet_resonance_lemma",
+          "spontaneous_reading": "Nonnegative Dirichlet coefficients turn the expanded weighted mean into a monotone sum: the proof can discard every term except a favorable finite family of multiplicative alignments. The resulting combinatorial mass exponentiates into a large analytic average, uniformly over the otherwise unspecified series F."
+        },
+        "directed": {
+          "unit_id": "w2609909332_positive_dirichlet_resonance_lemma",
+          "source_grounded_mathematics": "Lemma 6 considers an absolutely convergent Dirichlet series F(t)=sum a_n n^{-1/2-it} with a_n>=0. Termwise integration against |R(t)|^2 Phi(t/T) produces a triple sum weighted by Phi(T log(km/n)). Positivity permits restriction to selected k and to pairs whose multiplicative relation is controlled by (21); the omitted continuation, imported from earlier work, gives the stated exponential lower bound times T sum_{n in M}f(n)^2, with an o(1) uniform in F.",
+          "conceptual_reading": "Coefficient positivity is a certificate that selective forgetting cannot hurt the lower bound. It converts resonance from a cancellation-sensitive estimate into monotone extraction of designed multiplicative correlations, but exactly that monotonicity creates the later sign obstruction.",
+          "representation_or_bridge": "The weighted time integral bridges analytic amplitude to a Gaussian count of approximate relations km≈n. Geometric thinning and (21) then bridge those approximate relations back to the divisor structure of M.",
+          "boundary_or_failure": "Absolute convergence and nonnegative coefficients are essential. The lemma does not apply directly to signed or conditionally convergent series, and it cannot select a negative real part. A material part of the estimate is omitted and referenced to an earlier paper.",
+          "uncertainty": "The extraction crowds the minimum over coefficients and the exponential factor in (23). The monotone-restriction mechanism is explicit, but the exact dependence on epsilon, gamma, kappa, and the iterated logarithms should be PDF-checked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the bridge from the generic resonator to the prime-weighted convolution formulas for S and S1.",
+      "line_end": 616,
+      "line_start": 573,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires exact square-root normalization, prime coefficient minimum, and use of Lambda(p)=log p. Equations (24) and the preceding displays are split across lines and need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 7 adapts positivity to coefficients Lambda(n)a_n/log n. Keeping only primes in the designated set transforms the weighted integral into the divisor sum controlled by Lemma 4, producing the square-root log T log3 T over log2 T scale.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Restricting the von-Mangoldt series to selected primes converts combinatorial divisor mass into the S-scale gain",
+      "unit_artifact_relpath": "depth/units/w2609909332_von_mangoldt_resonance_lemma.txt",
+      "unit_bytes": 2893,
+      "unit_id": "w2609909332_von_mangoldt_resonance_lemma",
+      "unit_sha256": "6a0539261ef152368ce40abd7d62d6c5719885e21ed12ea1c3b331c1bbce138a",
+      "unit_type": "specialized_selection_lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_von_mangoldt_resonance_lemma.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 565,
+          "line_end": 572,
+          "text": "                                            j ≤T     m,n∈M ′ k≤T ε   k              n\n\nIn the last step, we used that all the terms in the series are positive, so that we could sum over\na suitable finite subcollection of them. As in [2, p. 1699], we change the order of summation\nand sum only over those m and n such that (21) applies; the remaining part of the proof is\nidentical to the estimation of the quantity I (R, T ) in [2, p. 1699], leading to the displayed\nformula (25) in [2]. We therefore omit the details.                                                        \u0004\n\n",
+          "sha256": "1b066a7811d956d66789af9b899f752d216f9fa930a0656bfe6376191d41545f"
+        },
+        "after": {
+          "line_start": 617,
+          "line_end": 624,
+          "text": "\n\n                                          4. P ROOF OF T HEOREM 1\n\n     The proof of Theorem 1 is a little easier than the proof of the main theorem of [2], because\nour convolution formula allows us to estimate more crudely. We choose\n\n                                                       sin2 ((ε log T )t )\n",
+          "sha256": "8b905490ab3a8137a65484538d37e7623f1ba96c477139b98ec8d5eed1b4bdad"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonator and associated estimates",
+            "line_end": 618,
+            "line_start": 301,
+            "mathematical_role": "constructs prime-band multiplicative weights, truncates exceptional mass, discretizes support, and proves general positive-coefficient resonance inequalities"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 616,
+          "line_start": 573,
+          "title": "Restricting the von-Mangoldt series to selected primes converts combinatorial divisor mass into the S-scale gain",
+          "unit_id": "w2609909332_von_mangoldt_resonance_lemma",
+          "unit_type": "specialized_selection_lemma",
+          "why_material": "Lemma 7 adapts positivity to coefficients Lambda(n)a_n/log n. Keeping only primes in the designated set transforms the weighted integral into the divisor sum controlled by Lemma 4, producing the square-root log T log3 T over log2 T scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the bridge from the generic resonator to the prime-weighted convolution formulas for S and S1.",
+          "representation_dependency": "Requires exact square-root normalization, prime coefficient minimum, and use of Lambda(p)=log p. Equations (24) and the preceding displays are split across lines and need PDF verification.",
+          "unit_id": "w2609909332_von_mangoldt_resonance_lemma"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 571,
+            "line_start": 539,
+            "title": "Positivity lets a resonator retain a favorable finite subcollection of any Dirichlet series",
+            "unit_id": "w2609909332_positive_dirichlet_resonance_lemma",
+            "unit_type": "abstract_selection_lemma",
+            "why_material": "Lemma 6 abstracts the resonance step for an absolutely convergent Dirichlet series with nonnegative coefficients. Expanding the weighted integral makes every term nonnegative, so a selected finite portion indexed by the resonator's multiplicative relations yields an exponential lower bound."
+          },
+          {
+            "line_end": 722,
+            "line_start": 619,
+            "title": "A compact-frequency even kernel combines pole control, interval localization, and positive resonance",
+            "unit_id": "w2609909332_theorem1_kernel_and_localization",
+            "unit_type": "proof_synthesis",
+            "why_material": "The proof selects a sinc-squared kernel whose Fourier transform is nonnegative and compactly supported. Moment bounds control the central interval, Gaussian decay removes the far tail, kappa below 1-beta suppresses errors, Lemma 1 supplies the positive Dirichlet series, and Lemmas 5-6 convert the weighted mean into the claimed maximum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Convolution transforms zeta observables into Fourier-filtered Dirichlet series while isolating pole or zero corrections; once the remaining coefficients are nonnegative, the resonator can discard unfavorable terms and retain a multiplicatively aligned subcollection.",
+            "limit": "For log zeta and the resulting S/S1 formulas, removal of the zero correction is conditional on RH; positivity also prevents symmetric sign selection.",
+            "parent_local_unit_ids": [
+              "w2609909332_zeta_convolution_identity",
+              "w2609909332_log_convolution_zero_correction",
+              "w2609909332_positive_dirichlet_resonance_lemma",
+              "w2609909332_von_mangoldt_resonance_lemma"
+            ],
+            "title": "Smooth first, then resonate: representation engineering exposes coefficients a positive selector can use"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 618,
+              "line_start": 617,
+              "reason": "Blank transition to Theorem 1 proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_von_mangoldt_resonance_lemma",
+        "spontaneous": {
+          "unit_id": "w2609909332_von_mangoldt_resonance_lemma",
+          "spontaneous_reading": "Specializing the target series to von-Mangoldt coefficients makes primes in the prepared band the useful terms: on k=p, Lambda(p)/log p cancels, so the analytic mean reduces to the weighted prime-divisor incidence already lower-bounded by Lemma 4. This converts the combinatorial construction directly into the S-scale square-root gain."
+        },
+        "directed": {
+          "unit_id": "w2609909332_von_mangoldt_resonance_lemma",
+          "source_grounded_mathematics": "Lemma 7 takes an absolutely convergent series G(t)=sum_{n>=2} Lambda(n)a_n/(log n)n^{-1/2-it} with a_n>=0. Expanding its resonator mean and retaining only k=p in P is valid by positivity; since Lambda(p)=log p, the remaining terms involve r(m)r(n)/sqrt(p) with pm approximately n. Applying (21), summing over p|n, and invoking Lemma 4 yields a lower bound of order T sqrt(log T log_3 T/log_2 T) times min_{p in P}a_p and the f-squared mass.",
+          "conceptual_reading": "The prime restriction aligns the analytic coefficients with the exact coordinates used to build the resonator. The von-Mangoldt normalization is not incidental: at primes it removes log p and reveals the divisor-incidence statistic that the combinatorial lemma was designed to amplify.",
+          "representation_or_bridge": "The bridge chain is von-Mangoldt Dirichlet series -> selected prime terms -> approximate pm=n resonance -> exact p-divisibility in M -> Lemma 4's weighted mass.",
+          "boundary_or_failure": "The result retains the absolute-convergence and nonnegative-coefficient hypotheses and only controls the positive selected component. The value of min a_p must remain nontrivial on P; the lemma alone gives no sign-reversed conclusion.",
+          "uncertainty": "The scale is readable, but the displayed equations have displaced radicals and factors. Exact constants and normalization in (24) should be verified from the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The final rescaling of T and slight adjustment of beta restore the theorem's target interval after the proof first locates a value in an enlarged range.",
+      "line_end": 722,
+      "line_start": 619,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact kernel scaling, triangular Fourier transform, error powers, interval endpoints, and lower bound for the Fourier coefficient are essential. Equations (25)-(28) require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof selects a sinc-squared kernel whose Fourier transform is nonnegative and compactly supported. Moment bounds control the central interval, Gaussian decay removes the far tail, kappa below 1-beta suppresses errors, Lemma 1 supplies the positive Dirichlet series, and Lemmas 5-6 convert the weighted mean into the claimed maximum.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A compact-frequency even kernel combines pole control, interval localization, and positive resonance",
+      "unit_artifact_relpath": "depth/units/w2609909332_theorem1_kernel_and_localization.txt",
+      "unit_bytes": 6698,
+      "unit_id": "w2609909332_theorem1_kernel_and_localization",
+      "unit_sha256": "af7f4eef628cdc19e2203b56a613416be9aa155c73c7b6a9864682d8a9540626",
+      "unit_type": "proof_synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_theorem1_kernel_and_localization.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 611,
+          "line_end": 618,
+          "text": "                                     ³t´                    log T log3 T                       X\n(24)                              2\n                       G(t )|R(t )| Φ    dt ≫ T                                  min a p             f (n)2 .\n                    −∞                T                       log2 T             p∈P           n∈M\n\n                                                                                                                         \u0004\n\n\n",
+          "sha256": "34164d3d9cbc535b5541e8f53b449a67861fd50ab3102a5ef6a37f94e71f19fb"
+        },
+        "after": {
+          "line_start": 723,
+          "line_end": 730,
+          "text": "\n\n                                       5. P ROOF OF T HEOREM 2\n\n     The proof of Theorem 2 is very similar to the preceding proof, but there is an interesting\ndistinction: In Lemma 2, we choose K (t ) to be an odd function when dealing with S(t ) and\nan even function when dealing with S 1 (t ); this difference is the reason why we only obtain a\nconditional Ω result for S(t ).\n",
+          "sha256": "e32e49c530dbd6813472da4b629cbfa6a5ea6edadeb87fa5c7587694b17a3cc9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1",
+            "line_end": 724,
+            "line_start": 619,
+            "mathematical_role": "uses a band-limited even kernel to make the zeta pole harmless and transfer the resonator mean into an unconditional maximum"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 722,
+          "line_start": 619,
+          "title": "A compact-frequency even kernel combines pole control, interval localization, and positive resonance",
+          "unit_id": "w2609909332_theorem1_kernel_and_localization",
+          "unit_type": "proof_synthesis",
+          "why_material": "The proof selects a sinc-squared kernel whose Fourier transform is nonnegative and compactly supported. Moment bounds control the central interval, Gaussian decay removes the far tail, kappa below 1-beta suppresses errors, Lemma 1 supplies the positive Dirichlet series, and Lemmas 5-6 convert the weighted mean into the claimed maximum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The final rescaling of T and slight adjustment of beta restore the theorem's target interval after the proof first locates a value in an enlarged range.",
+          "representation_dependency": "Exact kernel scaling, triangular Fourier transform, error powers, interval endpoints, and lower bound for the Fourier coefficient are essential. Equations (25)-(28) require PDF verification.",
+          "unit_id": "w2609909332_theorem1_kernel_and_localization"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 616,
+            "line_start": 573,
+            "title": "Restricting the von-Mangoldt series to selected primes converts combinatorial divisor mass into the S-scale gain",
+            "unit_id": "w2609909332_von_mangoldt_resonance_lemma",
+            "unit_type": "specialized_selection_lemma",
+            "why_material": "Lemma 7 adapts positivity to coefficients Lambda(n)a_n/log n. Keeping only primes in the designated set transforms the weighted integral into the divisor sum controlled by Lemma 4, producing the square-root log T log3 T over log2 T scale."
+          },
+          {
+            "line_end": 814,
+            "line_start": 725,
+            "title": "An odd kernel turns the imaginary prime series into a lower bound for the absolute size of S",
+            "unit_id": "w2609909332_odd_kernel_selects_s",
+            "unit_type": "parity_based_projection",
+            "why_material": "For S, the proof differentiates a Gaussian to obtain a real odd kernel with purely imaginary Fourier transform. The conditional convolution formula, second-moment localization, and Lemma 7 then select the imaginary part of the prime series and yield a lower bound for max absolute S."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Longer resonators built from larger primes improve the lower-bound scale, while the proof must work on a larger interval and currently gives no comparable estimate for how often the extreme values occur.",
+            "limit": "The source proves existence of a large value only; it explicitly leaves measure estimates and several opposite-sign bounds unresolved.",
+            "parent_local_unit_ids": [
+              "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+              "w2609909332_theorem1_kernel_and_localization"
+            ],
+            "title": "Improved amplitude trades against localization and prevalence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 618,
+              "line_start": 617,
+              "reason": "Blank transition to Theorem 1 proof."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 724,
+              "line_start": 723,
+              "reason": "Blank transition to Theorem 2 proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_theorem1_kernel_and_localization",
+        "spontaneous": {
+          "unit_id": "w2609909332_theorem1_kernel_and_localization",
+          "spontaneous_reading": "The proof coordinates two smoothings: a sinc-squared kernel has a nonnegative compactly supported triangular Fourier transform that preserves a short positive Dirichlet series, while a Gaussian time weight localizes the resonator. Moment bounds remove the central forbidden interval, Gaussian decay removes the far tail, and kappa<1-beta makes both localization errors smaller than the resonant main term; the pole residue is then explicitly harmless."
+        },
+        "directed": {
+          "unit_id": "w2609909332_theorem1_kernel_and_localization",
+          "source_grounded_mathematics": "The proof chooses a sinc-squared K whose Fourier transform is triangular, nonnegative, and supported up to 2 epsilon log T. A second-moment bound for zeta controls the contribution from |t|<=T^beta, rapid Gaussian decay controls |t|>T log T, and N=[T^kappa] with kappa<1-beta controls the resonator error. Lemma 1 rewrites the full convolution as F(t)=sum K-hat(log n)n^{-1/2-it} plus the pole residue. Lemmas 5 and 6 lower-bound the main weighted mean, K-hat stays bounded below on n<=T^epsilon, and a final rescaling of T and slight change of beta restores [T^beta,T].",
+          "conceptual_reading": "Compact frequency support makes the smoothing compatible with positivity: it forgets high coefficients but keeps a uniformly positive block that the resonator can amplify. Time localization and coefficient selection are separately tunable, and the inequality kappa<1-beta is the budget that prevents the longer resonator from leaking into the excluded central region.",
+          "representation_or_bridge": "The proof bridges a maximum to a weighted convolution mean, then uses Lemma 1 to bridge that mean to a positive Dirichlet series and an explicit residue. The sinc-squared/triangular Fourier pair supplies coefficient control; the Gaussian supplies off-diagonal and far-tail control.",
+          "boundary_or_failure": "The argument proves existence, not prevalence. It first locates a value on an enlarged interval and relies on a final parameter adjustment for the theorem's stated range. The pole estimate, error exponents, and positivity all depend on the particular kernel design.",
+          "uncertainty": "Equations (25)-(28) contain text-layer damage in kernel scaling, powers, and nested logarithms, and the residue argument inherits the sign ambiguity seen in Lemma 1. Verify every exact formula before reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The paper explicitly identifies oddness as the reason this argument gives an absolute-value result rather than a one-sided positive extreme.",
+      "line_end": 814,
+      "line_start": 725,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires kernel parity, Fourier phase, the minimum of Im K-hat on the prime band, and all scaling by log2 T. OCR introduces an extra parenthesis in some S integrals; verify equations (29)-(32).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For S, the proof differentiates a Gaussian to obtain a real odd kernel with purely imaginary Fourier transform. The conditional convolution formula, second-moment localization, and Lemma 7 then select the imaginary part of the prime series and yield a lower bound for max absolute S.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An odd kernel turns the imaginary prime series into a lower bound for the absolute size of S",
+      "unit_artifact_relpath": "depth/units/w2609909332_odd_kernel_selects_s.txt",
+      "unit_bytes": 5534,
+      "unit_id": "w2609909332_odd_kernel_selects_s",
+      "unit_sha256": "7567fedf8aa1b400dd05e35107afac40847aa00180c63bd1169d95a95f84a5fa",
+      "unit_type": "parity_based_projection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_odd_kernel_selects_s.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 717,
+          "line_end": 724,
+          "text": "\n\nIn view of (25), minn≤T ε Kb (logn) is bounded below by π/4. Hence, choosing ε small enough\nand plugging (28) into (27), we find that the asserted bound (1) holds for some t satisfying\nT β /2 ≤ t ≤ 2T log T . We obtain the desired restriction T β ≤ t ≤ T after a trivial adjustment,\nchanging T to T /(2 log T ) and making β slightly smaller.\n\n\n",
+          "sha256": "50a7c4659ef5e343cb1b2c815e141aeea6e55e4fdf86fffae5148461d6c961b4"
+        },
+        "after": {
+          "line_start": 815,
+          "line_end": 822,
+          "text": "\n16                                   ANDRIY BONDARENKO AND KRISTIAN SEIP\n\nProof of (5). We now choose\n\n                                           K (t ) := log2 T Φ((log2 T )t ),\n\nwhich has Fourier transform\n",
+          "sha256": "c102c9815d39c78ffc9d9a496575d011373faf7ffe7ef616f17d06a8980775f3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2",
+            "line_end": 870,
+            "line_start": 725,
+            "mathematical_role": "uses odd and even Gaussian-derived kernels to select respectively S and S1 under RH"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 814,
+          "line_start": 725,
+          "title": "An odd kernel turns the imaginary prime series into a lower bound for the absolute size of S",
+          "unit_id": "w2609909332_odd_kernel_selects_s",
+          "unit_type": "parity_based_projection",
+          "why_material": "For S, the proof differentiates a Gaussian to obtain a real odd kernel with purely imaginary Fourier transform. The conditional convolution formula, second-moment localization, and Lemma 7 then select the imaginary part of the prime series and yield a lower bound for max absolute S."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The paper explicitly identifies oddness as the reason this argument gives an absolute-value result rather than a one-sided positive extreme.",
+          "representation_dependency": "Requires kernel parity, Fourier phase, the minimum of Im K-hat on the prime band, and all scaling by log2 T. OCR introduces an extra parenthesis in some S integrals; verify equations (29)-(32).",
+          "unit_id": "w2609909332_odd_kernel_selects_s"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 722,
+            "line_start": 619,
+            "title": "A compact-frequency even kernel combines pole control, interval localization, and positive resonance",
+            "unit_id": "w2609909332_theorem1_kernel_and_localization",
+            "unit_type": "proof_synthesis",
+            "why_material": "The proof selects a sinc-squared kernel whose Fourier transform is nonnegative and compactly supported. Moment bounds control the central interval, Gaussian decay removes the far tail, kappa below 1-beta suppresses errors, Lemma 1 supplies the positive Dirichlet series, and Lemmas 5-6 convert the weighted mean into the claimed maximum."
+          },
+          {
+            "line_end": 870,
+            "line_start": 818,
+            "title": "An even positive-frequency kernel yields a one-sided positive extreme for S1",
+            "unit_id": "w2609909332_even_kernel_selects_s1",
+            "unit_type": "parity_based_projection",
+            "why_material": "For S1, an even Gaussian kernel has a real positive Fourier transform. The same localization and resonance architecture now extracts the real prime series with an additional log denominator, explaining both the positive sign and the extra powers of log log in the final scale."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A real odd kernel has an imaginary Fourier transform and selects S through the imaginary prime series, yielding only an absolute extreme; a real even kernel has positive real transform and selects a one-sided positive extreme of S1.",
+            "limit": "This explains the asymmetry of the proved results, not the true sign distribution or optimal order of either function.",
+            "parent_local_unit_ids": [
+              "w2609909332_log_convolution_zero_correction",
+              "w2609909332_odd_kernel_selects_s",
+              "w2609909332_even_kernel_selects_s1"
+            ],
+            "title": "Kernel parity selects both the observable component and the sign information recoverable by resonance"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 724,
+              "line_start": 723,
+              "reason": "Blank transition to Theorem 2 proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_odd_kernel_selects_s",
+        "spontaneous": {
+          "unit_id": "w2609909332_odd_kernel_selects_s",
+          "spontaneous_reading": "Differentiating a Gaussian produces a real odd kernel with a purely imaginary Fourier transform. Under RH, the S convolution therefore selects the imaginary prime series in a form whose prime-band coefficients are positive for Lemma 7; because the physical kernel changes sign, the final comparison can force only a large absolute value of S, not a one-sided extreme."
+        },
+        "directed": {
+          "unit_id": "w2609909332_odd_kernel_selects_s",
+          "source_grounded_mathematics": "For the bound on S, the proof takes K(t)=-(log_2 T)^2 t Phi((log_2 T)t), whose Fourier transform is purely imaginary and proportional to xi Phi(xi/log_2 T). Selberg's second moment localizes away from |t|<=T^beta, Gaussian decay handles the far tail, and kappa<1-beta controls the error. The RH-conditional formula (9) turns the double integral into Im of a von-Mangoldt series. Im K-hat(log p) is bounded below on P, so Lemma 7 yields the claimed lower bound for max |S(t)| after rescaling.",
+          "conceptual_reading": "Kernel parity is an observable selector. Oddness converts real input into imaginary frequency weights aligned with S's phase component, but the sign-changing kernel destroys order preservation on the physical side. Thus frequency positivity can power resonance without implying that S itself is positive.",
+          "representation_or_bridge": "The bridge chain is S -> odd-kernel convolution -> imaginary Fourier-weighted prime series -> Lemma 7 resonance -> absolute maximum. The derivative-Gaussian pair simultaneously supplies the phase rotation and localization.",
+          "boundary_or_failure": "The use of formula (9) makes the result conditional on RH. The proof yields an absolute-value extreme only, says nothing about which sign occurs, and gives no measure estimate. It reuses rather than rederives the resonator lemmas.",
+          "uncertainty": "The text layer inserts extra parentheses in S integrals and compresses the scaling and minimum in equations (29)-(32). Kernel parity and Fourier phase are clear, but exact constants and powers require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The bounded correction h is absorbed into the error term. The proof reuses Lemma 7 and differs materially from the S case through parity and coefficient normalization.",
+      "line_end": 870,
+      "line_start": 818,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires exact Gaussian transform, K-hat/log p minimum, V(t) error, and final exponent of log2 T. Verify equations (33)-(34) against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For S1, an even Gaussian kernel has a real positive Fourier transform. The same localization and resonance architecture now extracts the real prime series with an additional log denominator, explaining both the positive sign and the extra powers of log log in the final scale.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An even positive-frequency kernel yields a one-sided positive extreme for S1",
+      "unit_artifact_relpath": "depth/units/w2609909332_even_kernel_selects_s1.txt",
+      "unit_bytes": 3223,
+      "unit_id": "w2609909332_even_kernel_selects_s1",
+      "unit_sha256": "9b1d7bb46efdfc23ead26e76ef32baa228ea74238b3a78eacc86031aa020dc0b",
+      "unit_type": "parity_based_projection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_even_kernel_selects_s1.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 810,
+          "line_end": 817,
+          "text": "        p∈P                                                          γ\n                                        e log N log2 N≤p≤e (log 2 N ) log N log2 N           log2 T\n\nsince N = [T κ ]. Choosing ε small enough and plugging (32) into (31), we therefore obtain the\nasserted bound (4), after the same trivial adjustment of T and β as in the preceding case.                          \u0004\n\n16                                   ANDRIY BONDARENKO AND KRISTIAN SEIP\n\n",
+          "sha256": "19ba283ee7319bb5afa5e6897f5f6bb42183c665282aacd1d3b3ec70035c6dae"
+        },
+        "after": {
+          "line_start": 871,
+          "line_end": 878,
+          "text": "\n                    EXTREME VALUES OF THE RIEMANN ZETA FUNCTION AND ITS ARGUMENT                                  17\n\n                                          ACKNOWLEDGEMENTS\n\n  We would like to thank Dennis Hejhal for an inspiring correspondence which led us to carry\nout the research presented in this paper. We are also indebted to Daniel Goldston for a perti-\nnent bibliographical remark on the first version of this paper. Finally, we would like to express\n",
+          "sha256": "be6aac5faf9eb7d4706043e240acec19a6fb1c02dab5bb94ec948b08d0aba5f6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2",
+            "line_end": 870,
+            "line_start": 725,
+            "mathematical_role": "uses odd and even Gaussian-derived kernels to select respectively S and S1 under RH"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 870,
+          "line_start": 818,
+          "title": "An even positive-frequency kernel yields a one-sided positive extreme for S1",
+          "unit_id": "w2609909332_even_kernel_selects_s1",
+          "unit_type": "parity_based_projection",
+          "why_material": "For S1, an even Gaussian kernel has a real positive Fourier transform. The same localization and resonance architecture now extracts the real prime series with an additional log denominator, explaining both the positive sign and the extra powers of log log in the final scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The bounded correction h is absorbed into the error term. The proof reuses Lemma 7 and differs materially from the S case through parity and coefficient normalization.",
+          "representation_dependency": "Requires exact Gaussian transform, K-hat/log p minimum, V(t) error, and final exponent of log2 T. Verify equations (33)-(34) against the PDF.",
+          "unit_id": "w2609909332_even_kernel_selects_s1"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 814,
+            "line_start": 725,
+            "title": "An odd kernel turns the imaginary prime series into a lower bound for the absolute size of S",
+            "unit_id": "w2609909332_odd_kernel_selects_s",
+            "unit_type": "parity_based_projection",
+            "why_material": "For S, the proof differentiates a Gaussian to obtain a real odd kernel with purely imaginary Fourier transform. The conditional convolution formula, second-moment localization, and Lemma 7 then select the imaginary part of the prime series and yield a lower bound for max absolute S."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A real odd kernel has an imaginary Fourier transform and selects S through the imaginary prime series, yielding only an absolute extreme; a real even kernel has positive real transform and selects a one-sided positive extreme of S1.",
+            "limit": "This explains the asymmetry of the proved results, not the true sign distribution or optimal order of either function.",
+            "parent_local_unit_ids": [
+              "w2609909332_log_convolution_zero_correction",
+              "w2609909332_odd_kernel_selects_s",
+              "w2609909332_even_kernel_selects_s1"
+            ],
+            "title": "Kernel parity selects both the observable component and the sign information recoverable by resonance"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_even_kernel_selects_s1",
+        "spontaneous": {
+          "unit_id": "w2609909332_even_kernel_selects_s1",
+          "spontaneous_reading": "For S1 the Gaussian kernel is even and nonnegative, so its Fourier transform is real and positive. The same conditional prime-series resonance now gives an order-preserving convolution: a positive weighted mean forces a positive value of S1, while the extra 1/log p in the S1 coefficients accounts for the weaker iterated-log scale."
+        },
+        "directed": {
+          "unit_id": "w2609909332_even_kernel_selects_s1",
+          "source_grounded_mathematics": "The proof chooses K(t)=log_2 T Phi((log_2 T)t), with positive Gaussian Fourier transform. Formula (10), conditional on RH, represents the weighted S1 integral as the real part of a von-Mangoldt series with coefficients K-hat(log n)/(pi log^2 n), plus errors from V(t) and the bounded correction h. Lemma 7 applies to the nonnegative coefficients; on p in P, K-hat(log p)/log p is bounded below by a constant times 1/log_2 T. Localization and a final adjustment of T and beta yield the positive maximum asserted in (5).",
+          "conceptual_reading": "Evenness preserves the real component and nonnegativity preserves order on the physical side, so parity determines both the observable and the sign information recoverable from resonance. Integrating to S1 smooths the signal but introduces an extra logarithmic attenuation in frequency.",
+          "representation_or_bridge": "The bridge chain is S1 -> even Gaussian convolution -> real positive prime series -> Lemma 7 -> positive maximum. The bounded h term connects S1 to integrated log modulus without altering the main resonant scale.",
+          "boundary_or_failure": "The argument is RH-conditional and proves only a positive extreme; it does not give an Omega-minus counterpart or prevalence. Absorbing h as an error relies on its boundedness, and the exact gain depends on maintaining a positive lower bound for K-hat(log p)/log p across P.",
+          "uncertainty": "Equations (33)-(34) have extraction risk in Fourier normalization, error placement, and the final log_2 exponent. The parity/sign mechanism is explicit, but exact formula-level use requires PDF verification."
+        }
+      }
+    }
+  ]
+}

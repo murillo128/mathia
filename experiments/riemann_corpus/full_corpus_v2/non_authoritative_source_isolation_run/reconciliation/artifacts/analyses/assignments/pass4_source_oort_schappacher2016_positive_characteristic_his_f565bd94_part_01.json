@@ -1,0 +1,356 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_oort_schappacher2016_positive_characteristic_his_f565bd94_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "oort_schappacher2016_positive_characteristic_history",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the arithmetic construction, Dirichlet-character interpretation, reciprocity, factorization, and pRH normalization together.",
+      "line_end": 283,
+      "line_start": 200,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several symbols and denominators are degraded; exact formulas and the treatment of trivial zeros require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds the quadratic function-field analogue through ideals and Euler factors, reorganizes it as a finite polynomial, connects its roots to prime counting and class numbers, and states pRH as a common root-modulus condition after removing trivial zeros.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Artin reduces a function-field zeta function to a finite root polynomial",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history_v2_u03.txt",
+      "unit_bytes": 4843,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u03",
+      "unit_sha256": "393537ebd9cc9949a90ae3e9a609422089f2efe393e5ff6374aa5639b3609c56",
+      "unit_type": "analogue construction and criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history_v2_u03.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 192,
+          "line_end": 199,
+          "text": "                    Ω(s) =          =               (\u0003(s) > 1).\n                              a\n                                a s\n                                      p\n                                         1 − p1s\n\nHere a runs through all ideals, and p through all prime ideals, of the ring of integers\nof the given number ﬁeld.\n",
+          "sha256": "052dc9ce61ebe2506d82bcdd135a08fac79f98f7dc787f5a407bffb93d7391df"
+        },
+        "after": {
+          "line_start": 284,
+          "line_end": 291,
+          "text": "1.2. The 40 examples by E. Artin. Let us show some of the examples from the\ntables calculated by Artin, see [1], p. 232–233. They can be checked by counting\nthe number of points on the various curves. We use σ1 as explained by Artin. We\nwrite β = π + π, and\n                          N = N1 = #(E(Fp )) = 1 − β + p\n(notation explained in the next section). We have:\n    Table I, σ1 = −β, one point at inﬁnity;\n    Table II, “komplexe Körper”, σ1 − 1 = −β, see page 234, and no Fp -rational\n",
+          "sha256": "c0cefed5d48f971c7611ab313065e33aea4cf038c69a24c6f8b2a769cc972eb2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_123145797b5f3ea76b71c21d016ee6b58fed2056f4050a635051b9985b847ace",
+        "dossier_sha256": "c21f02f08981e0ee405cd2c55ed7619c7ab1fef9315c88a4307c6c12229d18c8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 From Richard Dedekind to Emil Artin",
+            "line_end": 324,
+            "line_start": 143,
+            "mathematical_role": "Traces the arithmetic/analytic inheritance, derives Artin's function-field zeta representation, formulates pRH as a root-modulus condition, and reviews finite computational cases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 283,
+          "line_start": 200,
+          "title": "Artin reduces a function-field zeta function to a finite root polynomial",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u03",
+          "unit_type": "analogue construction and criterion",
+          "why_material": "Builds the quadratic function-field analogue through ideals and Euler factors, reorganizes it as a finite polynomial, connects its roots to prime counting and class numbers, and states pRH as a common root-modulus condition after removing trivial zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the arithmetic construction, Dirichlet-character interpretation, reciprocity, factorization, and pRH normalization together.",
+          "representation_dependency": "Several symbols and denominators are degraded; exact formulas and the treatment of trivial zeros require scan verification.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 199,
+            "line_start": 143,
+            "title": "A self-contained polynomial arithmetic inherits an analytic zeta layer",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u02",
+            "unit_type": "historical representation shift",
+            "why_material": "Shows how Dedekind's arithmetic analogy for polynomials modulo a prime coexisted with the analytic Dedekind-zeta side of number fields, creating the two-part template Artin would transfer."
+          },
+          {
+            "line_end": 322,
+            "line_start": 284,
+            "title": "Point counts recover Artin's tabulated root data",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u04",
+            "unit_type": "computational evidence and reinterpretation",
+            "why_material": "Shows how Artin's roughly forty examples can be checked by counting curve points and converting the result to the coefficient or Frobenius trace used in the zeta polynomial."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The successful finite-field reframing packages extension-field point counts into a rational zeta function whose numerator roots are Frobenius eigenvalues; pRH is then an intrinsic norm statement accessible through endomorphism structure.",
+            "limit": "This is an analogue in positive characteristic and does not by itself transfer a proof or operator to classical RH.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history_v2_u03",
+              "oort_schappacher2016_positive_characteristic_history_v2_u05",
+              "oort_schappacher2016_positive_characteristic_history_v2_u06",
+              "oort_schappacher2016_positive_characteristic_history_v2_u07",
+              "oort_schappacher2016_positive_characteristic_history_v2_u13"
+            ],
+            "title": "pRH becomes concrete when zeros are replaced by Frobenius and point counts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u03",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u03",
+          "spontaneous_reading": "Artin's crucial compression is that the quadratic function-field zeta problem becomes a finite polynomial root problem, so pRH is a common-modulus statement after trivial factors are removed."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u03",
+          "source_grounded_mathematics": "The source builds the quadratic extension through ideals and Euler factors, identifies a Dirichlet-character-like factor, uses finite coefficient relations to obtain a degree n-1 polynomial, connects its roots to prime counts and class numbers, and formulates pRH via their modulus.",
+          "conceptual_reading": "Finite-field periodicity converts an analytic zero-distribution question into finite algebraic data without eliminating its arithmetic consequences.",
+          "representation_or_bridge": "The coefficient sequence σν and root polynomial bridge Euler factors, quadratic reciprocity, zeta zeros, and counting formulas.",
+          "boundary_or_failure": "Trivial zeros and the relation between polynomial degree and curve genus require careful normalization; the extracted formulas are visibly degraded.",
+          "uncertainty": "The finite-polynomial mechanism is secure, but symbols, denominators, root conventions, and exact modulus statements need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span constructs Artin's quadratic function-field zeta/L factor, introduces finite coefficients sigma_nu, obtains a degree n-1 root polynomial, links it to prime counts and class-number consequences, and formulates pRH after removing trivial zeros."
+        ],
+        "inference": [
+          "Calling the polynomial a finite algebraic compression of an analytic zero problem is a sound conceptual reading of the reduction."
+        ],
+        "unsupported_or_imported": [
+          "The directed analysis attributes the reduction to 'finite-field periodicity,' but the frozen span states finite coefficient vanishing and reciprocity relations without identifying periodicity as the causal mechanism."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low after correction: the bridge among Euler factors, coefficients, the root polynomial, and arithmetic consequences is specific."
+        ],
+        "context_or_ocr_risk": [
+          "Several products, denominators, root conventions, trivial-zero statements, and modulus formulas are visibly degraded."
+        ],
+        "missed_mechanism": [
+          "The source explicitly foregrounds remarkable reciprocity relations linked to the functional equation; these, together with sigma_nu=0 for nu>=n, are safer mechanisms than an imported periodicity explanation."
+        ],
+        "revision_instructions": [
+          "Replace 'finite-field periodicity converts' with the source-grounded finite coefficient relations/vanishing and reciprocity mechanism; preserve the trivial-zero and genus-normalization caveats."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The supersingular real-Frobenius case is explicitly flagged as requiring extra care.",
+      "line_end": 1072,
+      "line_start": 1054,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact norm identities should be checked, but the structural mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compresses the elliptic pRH proof into the identity between Frobenius and its conjugate and identifies the relevant anti-involution later called Rosati, replacing the first proof's lifting construction by intrinsic endomorphism structure.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Frobenius norm plus conjugating involution yields Hasse's second proof",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history_v2_u13.txt",
+      "unit_bytes": 1100,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u13",
+      "unit_sha256": "257d694543fa93a34c841e780a223e351654fc7c2e1d7fb2760a9b2d0645bd8d",
+      "unit_type": "intrinsic proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history_v2_u13.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1046,
+          "line_end": 1053,
+          "text": "                   √\nThe real number p is the Frobenius of an abelian variety, but not of an elliptic\ncurve, see [75], Example (b) on page 97.\n    In general it is not so easy for a given π as above to determine E. Existence\ncan be proved by analytic parametrization and reduction modulo p, see [36], [75];\nan algebraic proof can be found in [6].\n\n\n",
+          "sha256": "ffd83803c83a68fc7ea02e66e024d582442e608accbedd75331fa6317e2c1ffb"
+        },
+        "after": {
+          "line_start": 1073,
+          "line_end": 1080,
+          "text": "\n\n8     Rational points over a field\nTheorem 8.1 (F. K. Schmidt 1931, Witt 1934). Let C be an algebraic curve\n(complete, non-singular) over a ﬁnite ﬁeld κ = Fq . Then\n                                     C(κ) = ∅.\nSee [60], page 27; [86]; see [54], Part 1, pp. 54–55.\nCorollary 8.2. Let V be a complete, projective variety of positive dimension over\n",
+          "sha256": "c07a1c4b6cb7469341dff1b1364d54bf735fdfb3748dde2ee0e27e5160688571"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_123145797b5f3ea76b71c21d016ee6b58fed2056f4050a635051b9985b847ace",
+        "dossier_sha256": "c21f02f08981e0ee405cd2c55ed7619c7ab1fef9315c88a4307c6c12229d18c8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7 Hasse's second proof",
+            "line_end": 1074,
+            "line_start": 1054,
+            "mathematical_role": "Expresses pRH through Frobenius norm and the conjugating involution intrinsic to the endomorphism algebra."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1072,
+          "line_start": 1054,
+          "title": "Frobenius norm plus conjugating involution yields Hasse's second proof",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u13",
+          "unit_type": "intrinsic proof mechanism",
+          "why_material": "Compresses the elliptic pRH proof into the identity between Frobenius and its conjugate and identifies the relevant anti-involution later called Rosati, replacing the first proof's lifting construction by intrinsic endomorphism structure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The supersingular real-Frobenius case is explicitly flagged as requiring extra care.",
+          "representation_dependency": "Exact norm identities should be checked, but the structural mechanism is clear.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1051,
+            "line_start": 934,
+            "title": "Changing the ground field invalidates a claimed supersingularity converse",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u12",
+            "unit_type": "counterexample-driven correction",
+            "why_material": "Diagnoses Hasse's conflation of a curve over an algebraic closure with its chosen finite-field Frobenius, gives supersingular counterexamples away from endpoint traces, and uses Honda-Tate conditions to state which quadratic Weil numbers actually arise from elliptic curves."
+          },
+          {
+            "line_end": 1169,
+            "line_start": 1117,
+            "title": "Higher genus forced a choice between analytic uniformization and structural algebra",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u14",
+            "unit_type": "research-strategy comparison",
+            "why_material": "Contrasts Hasse's preference for a purely structural second proof with his initial proposal to generalize CM and abelian-function uniformization, then records Deuring's apparently decisive alternative."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The successful finite-field reframing packages extension-field point counts into a rational zeta function whose numerator roots are Frobenius eigenvalues; pRH is then an intrinsic norm statement accessible through endomorphism structure.",
+            "limit": "This is an analogue in positive characteristic and does not by itself transfer a proof or operator to classical RH.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history_v2_u03",
+              "oort_schappacher2016_positive_characteristic_history_v2_u05",
+              "oort_schappacher2016_positive_characteristic_history_v2_u06",
+              "oort_schappacher2016_positive_characteristic_history_v2_u07",
+              "oort_schappacher2016_positive_characteristic_history_v2_u13"
+            ],
+            "title": "pRH becomes concrete when zeros are replaced by Frobenius and point counts"
+          },
+          {
+            "claim": "Gauss-Herglotz and Hasse's first proof use characteristic-zero CM control followed by reduction, whereas the second proof and Deuring's higher-genus program seek an intrinsic algebraic positivity structure in Frobenius endomorphisms and correspondences.",
+            "limit": "For higher genus the source explicitly says Hasse's proposed generalized norm step was never supplied; later success required other developments not covered here.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history_v2_u08",
+              "oort_schappacher2016_positive_characteristic_history_v2_u09",
+              "oort_schappacher2016_positive_characteristic_history_v2_u13",
+              "oort_schappacher2016_positive_characteristic_history_v2_u14",
+              "oort_schappacher2016_positive_characteristic_history_v2_u15",
+              "oort_schappacher2016_positive_characteristic_history_v2_u17"
+            ],
+            "title": "The proof route shifted from lifting special models to intrinsic correspondences"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u13",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u13",
+          "spontaneous_reading": "Hasse's second proof compresses elliptic pRH into the intrinsic identity relating Frobenius, its conjugate under an anti-involution, and norm q, avoiding the lifting apparatus of the first proof."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u13",
+          "source_grounded_mathematics": "The source states Frobenius as an elliptic-curve endomorphism, records π times its conjugate equals q and that this yields pRH, identifies the conjugation as the later Rosati involution, and notes extra care for real Frobenius in the supersingular case.",
+          "conceptual_reading": "The successful reframing replaces an external construction by an invariant internal symmetry with a positive norm.",
+          "representation_or_bridge": "The endomorphism ring, Frobenius, and Rosati-type conjugation bridge point-count spectral data to a norm constraint.",
+          "boundary_or_failure": "The supersingular real-Frobenius case is not covered by naive complex-conjugation intuition and requires separate treatment.",
+          "uncertainty": "The structural mechanism is clear; exact norm identities and historical attribution should be checked before formal reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u13",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states Frobenius as an elliptic-curve endomorphism, gives pi times its conjugate equal to q, says this implies pRH, identifies the anti-involution as Rosati, and flags extra care in the real supersingular case."
+        ],
+        "inference": [
+          "Reading the proof as replacing external lifting with an internal endomorphism and conjugation identity is a strong source-grounded conceptual contrast."
+        ],
+        "unsupported_or_imported": [
+          "The directed analysis calls the norm 'positive,' but this frozen span states only the norm identity and conjugating anti-involution; positivity of Rosati or a positive-definite form is not stated here."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low after removing positivity: Frobenius, conjugation, norm q, and the supersingular exception specify the mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "The prose mechanism is clear, but exact norm notation and historical attribution should be checked before formal reuse."
+        ],
+        "missed_mechanism": [
+          "The source's explicit caution is the real-Frobenius supersingular case; it should not be hidden by a generic positive-norm slogan."
+        ],
+        "revision_instructions": [
+          "Replace 'positive norm' with the source-visible conjugation/norm-q identity, retain the Rosati identification, and keep the separate-treatment warning for real supersingular Frobenius."
+        ]
+      }
+    }
+  ]
+}

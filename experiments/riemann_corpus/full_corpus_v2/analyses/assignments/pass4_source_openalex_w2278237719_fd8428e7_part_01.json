@@ -1,0 +1,159 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2278237719_fd8428e7_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2278237719",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem, historical comparison, resonance declaration, GCD upper bound, and claimed optimality belong together because they define both the gain and its controlling resource.",
+      "line_end": 80,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Radicals, asymptotic exponents, the zeta argument, and the GCD sum are layout-degraded; exact constants and ranges must be checked in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The main theorem improves the scale of known lower bounds for |ζ(1/2+it)|, and the introduction identifies the new causal ingredient: a large GCD form inserted into Soundararajan's resonance method, with optimality of the GCD exponent as a parallel consequence.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Extreme ζ values are reduced to a near-optimal GCD sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u01.txt",
+      "unit_bytes": 4138,
+      "unit_id": "openalex_w2278237719_v2_u01",
+      "unit_sha256": "4f3caa8f678c499042d4f4efac7de4ee6f0df8f7985810d165b4cbd98be314f6",
+      "unit_type": "result-and-method-map",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 17,
+          "line_end": 24,
+          "text": "                                                                        sup              p         ≪ N exp A                        ,\n                                                                    1≤n 1 <···<n N k,ℓ=1  nk nℓ                    log log N\n\n                                                   established in a recent paper of ours, cannot be taken smaller than 1.\n\n\n\n\n",
+          "sha256": "c6eb9678143f018c6da126afdc7b0bd7a0c8319dd7aac666b5bb2df4aac1174c"
+        },
+        "after": {
+          "line_start": 81,
+          "line_end": 88,
+          "text": "\nTheorem 2. Suppose that 0 < γ < 1 is given. Then for every sufficiently large integer N there\nexist integers 1 ≤ n 1 < · · · < n N and positive numbers c1 , ..., c N such that\n                                                               Ã s                     !\n                    N\n                    X           gcd(n k , n ℓ ) ³ N\n                                                 X 2´              log N log log log N\n(2)                     ck cℓ p                ≥      c j · exp γ                        .\n",
+          "sha256": "9c23ccbe1cc77961bf2f23830b6fab4af61ec1490e294f638bb007b5be3251a1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 159,
+            "line_start": 25,
+            "mathematical_role": "States the main zeta and GCD theorems, places them against prior bounds, explains the extremal-set-to-resonator bridge, and sketches extensions and limitations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 80,
+          "line_start": 25,
+          "title": "Extreme ζ values are reduced to a near-optimal GCD sum",
+          "unit_id": "openalex_w2278237719_v2_u01",
+          "unit_type": "result-and-method-map",
+          "why_material": "The main theorem improves the scale of known lower bounds for |ζ(1/2+it)|, and the introduction identifies the new causal ingredient: a large GCD form inserted into Soundararajan's resonance method, with optimality of the GCD exponent as a parallel consequence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem, historical comparison, resonance declaration, GCD upper bound, and claimed optimality belong together because they define both the gain and its controlling resource.",
+          "representation_dependency": "Radicals, asymptotic exponents, the zeta argument, and the GCD sum are layout-degraded; exact constants and ranges must be checked in the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 123,
+            "line_start": 82,
+            "title": "A weighted GCD quadratic form supplies an essentially optimal resonator",
+            "unit_id": "openalex_w2278237719_v2_u02",
+            "unit_type": "weighted-extremal-form",
+            "why_material": "Theorem 2 allows optimized positive coefficients rather than uniform weights, situates the form in the GCD-sum hierarchy, and explains that nearly extremal square-free sets are enough to produce an essentially optimal resonating Dirichlet polynomial even without identifying an exact extremizer."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2278237719_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2278237719_v2_u01",
+          "spontaneous_reading": "The decisive move is to compress an analytic extreme-value problem into an arithmetic optimization problem: a large GCD quadratic form supplies the coefficients that make a Dirichlet polynomial resonate strongly with zeta. The improvement is therefore controlled by how much multiplicative overlap can be packed into the GCD form, not merely by refining a zeta approximation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2278237719_v2_u01",
+          "source_grounded_mathematics": "Theorem 1 gives a new lower bound for extreme values of |ζ(1/2+it)| on T^β≤t≤T, compares it with earlier lower bounds, and identifies Theorem 2—a weighted lower bound for the kernel gcd(n_k,n_l)/sqrt(n_k n_l)—as the essential new input. It also recalls a general upper bound for the corresponding unweighted GCD sum and claims its leading exponent cannot be below one.",
+          "conceptual_reading": "The proof strategy factors into an arithmetic resource and an analytic amplifier. The GCD form measures shared multiplicative structure among the chosen integers; resonance converts that structure into a large analytic value. The parallel optimality statement makes the resource limitation visible at the same time as the gain.",
+          "representation_or_bridge": "The bridge object is the positive weighted GCD matrix, viewed as a quadratic form whose near-extremizing vector becomes the coefficient profile of a resonating Dirichlet polynomial.",
+          "boundary_or_failure": "This unit is a result-and-method map, not the proof of either theorem. It establishes lower bounds for large zeta values, not the Riemann Hypothesis, and near-optimality of this GCD input does not imply global optimality of every possible method.",
+          "uncertainty": "High confidence in the qualitative reduction and theorem relationship. Radicals, constants, and iterated-logarithm exponents are layout-degraded, so their literal normalization requires the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2278237719_v2_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 1's lower bound, the comparison with earlier bounds, and the statement that a large GCD sum is the main new ingredient are explicit in the span.",
+          "The span says the following result is essential to Theorem 1 and will show that the leading constant in the displayed GCD upper bound cannot be below one."
+        ],
+        "inference": [
+          "Reading the GCD kernel as shared multiplicative structure and resonance as an analytic amplifier is a defensible conceptual interpretation of the stated method link."
+        ],
+        "unsupported_or_imported": [
+          "The claim that a near-extremizing vector of a positive weighted GCD matrix becomes the coefficient profile of the resonating Dirichlet polynomial is not established in this span; it imports a later construction.",
+          "The spontaneous claim that the GCD quadratic form directly supplies the resonator coefficients is stronger than the local prose, which only identifies the GCD sum as the main new ingredient."
+        ],
+        "paraphrase_or_style_risk": [
+          "The arithmetic-resource/analytic-amplifier language is useful only if kept tied to the explicit GCD-sum-to-resonance relation rather than presented as a generic template."
+        ],
+        "context_or_ocr_risk": [
+          "Radicals and iterated-logarithm factors are layout-degraded, and the weighted theorem is only partly visible in bounded following context."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish the unweighted upper bound actually displayed in the span from the weighted coefficient mechanism developed later."
+        ],
+        "revision_instructions": [
+          "Retain the theorem comparison and the explicit statement that the GCD sum is the essential new input, but remove the vector-to-resonator-coefficient claim and any direct coefficient-supply claim.",
+          "Present multiplicative overlap and analytic amplification as labeled inference, and avoid exact formula normalization beyond the extraction-safe qualitative relationship."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ac690590904cc369a4a5e76d8a8df56ee99e9a30178e8da2a25d7e8bdebf27e4"
+}

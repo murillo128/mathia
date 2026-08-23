@@ -1,0 +1,389 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "rodgers_tao2020_newman",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_rodgers_tao2020_newman_7e18d13b_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Because negative time lacks a usable near-axis Dirichlet series, saddle estimates are available only at logarithmic height, which costs a logarithm in zero counts yet still exactly reaches the scale that inverse-gap dynamics can relax before time zero.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "rodgers_tao2020_v2_u03",
+          "rodgers_tao2020_v2_u06",
+          "rodgers_tao2020_v2_u07",
+          "rodgers_tao2020_v2_u09"
+        ],
+        "proposed_limit": "The scale match is solver-specific to these estimates and does not show sharper local statistics for H_t at negative time.",
+        "source_id": "rodgers_tao2020_newman",
+        "synthesis_id": "riemann_v2_within_7764569ae68813a0da3267c4",
+        "title": "Analytic control sets the spatial resolution of dynamical relaxation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The limitation on imaginary height explains the extra logarithm later lost in mesoscopic zero counts.",
+          "line_end": 424,
+          "line_start": 371,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Lemma statements are legible, but exact exponents, constants, and logarithmic branches are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Specifies the upper, lower, and logarithmic-derivative estimates needed for zero counting and explains the representation bottleneck: t=0 admits Dirichlet-series control closer to the axis, whereas negative time requires accurate saddle analysis only at logarithmic height.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Off-axis H_t asymptotics replace the missing t<0 Dirichlet series",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u03.txt",
+          "unit_bytes": 3218,
+          "unit_id": "rodgers_tao2020_v2_u03",
+          "unit_sha256": "ef68100efdf50b912602968a09e3ee65c9d5cafe13114414cf4787f63e89e0d0",
+          "unit_type": "asymptotic-interface",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For Λ<t≤0 the lemma controls H_t and its logarithmic derivative at imaginary depth comparable to log x, with sharper information only when the depth coefficient is sufficiently large. The source contrasts usable t=0 Dirichlet-series access closer to the axis with negative-time expansions that converge rapidly only at logarithmic depth; it also distinguishes estimates that could hold on -C<t from the stronger Λ<t assumption required by the stated application.",
+            "nonparaphrase_operation": "Identifies representation availability as the reason the proof moves off axis, without calling the evaluation curve an already chosen contour or importing later counting losses.",
+            "quality_reason": "Accepted after removing later-section conclusions and preserving both time-regime qualifications.",
+            "source_support": "Lemma 4 and Remark 5 explicitly give the depth regimes, time assumptions, and comparison of available series methods.",
+            "speculation_status": "No claim about zeros follows from failed near-axis access; constants, branches, and exact error powers remain uncertain."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This closes the analytic input used by both argument-principle proofs in the next section.",
+          "line_end": 1018,
+          "line_start": 836,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact main terms and cutoffs are OCR-sensitive; dominance, tail splitting, and holomorphic differentiation are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows the n=1 series term dominates, proves the huge-index tail negligible, compares t with zero, and uses holomorphy plus Borel-Caratheodory and Cauchy estimates to pass from modulus control to a logarithmic derivative estimate.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            17,
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "First-term dominance converts saddle asymptotics into H_t and log-derivative control",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u06.txt",
+          "unit_bytes": 9960,
+          "unit_id": "rodgers_tao2020_v2_u06",
+          "unit_sha256": "e2012285121693b46ddc63407d240ec63f4e48e8cfbcba76542d959690a9fbd9",
+          "unit_type": "dominant-term-asymptotic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "After saddle evaluation, the series for H_t is dominated by Q_{t,1}: moderate indices are quantitatively smaller relative to it, while negative saddle displacement makes the large-index tail summable. The resulting nonvanishing holomorphic ratio H_t/H_0 yields modulus control, and Borel–Carathéodory plus Cauchy estimates upgrade that control to a logarithmic-derivative bound.",
+            "nonparaphrase_operation": "Combines dominant-term compression with a second representation change—from real-part/modulus information to derivative information via holomorphy—and states why nonvanishing is essential.",
+            "quality_reason": "Accepted because both the local precision and global tail mechanisms are proved in the span, subject to logarithmic-depth and time assumptions.",
+            "source_support": "The Q_{t,n} split, moderate and tail estimates, comparison with Q_{t,1}, holomorphic logarithm, and derivative upgrade are explicit.",
+            "speculation_status": "No uniqueness is attached to the dominant term, and no cutoff or phase constant is reconstructed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The classical locations later serve as the reference configuration subtracted from energy and Hamiltonian interactions.",
+          "line_end": 1218,
+          "line_start": 1020,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Spacing relations are recoverable but exact 4-pi normalizations and error scales are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines quantiles from the Riemann-von Mangoldt main term, derives their spacing, compares H_0 and H_t zeros with those locations, and identifies the mesoscopic scale on which negative-time zeros already resemble an arithmetic progression.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Classical locations provide a nonuniform lattice for H_t zeros",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u07.txt",
+          "unit_bytes": 10969,
+          "unit_id": "rodgers_tao2020_v2_u07",
+          "unit_sha256": "2ebc3abc3be853aea8267e64017e50c945fb3f636814da9b2d4187f1996e8665",
+          "unit_type": "zero-location-model",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The smooth counting main term Ψ defines classical locations ξ_j by Ψ(ξ_j)=j, thereby removing the slowly varying zero density and providing a nonuniform reference lattice. The source derives size and spacing for these quantiles, places t=0 zeros near them, and—under the stated RH/Lindelöf assumption for the sharper local t=0 count—obtains fine local spacing; for Λ<t≤0 it states weaker global and mesoscopic estimates with one additional logarithmic loss.",
+            "nonparaphrase_operation": "Transforms counting information into normalized particle coordinates and compares the resolution gained at t=0 with the coarser negative-time resolution.",
+            "quality_reason": "Accepted after restoring the conditional hypothesis and removing imported future uses; exact scales and 4π factors remain formula-sensitive.",
+            "source_support": "The definitions of Ψ and ξ_j, Lemma 8, the conditional Littlewood estimate, Theorem 9, and Corollary 10 are all present.",
+            "speculation_status": "The approximate-lattice language is normalized interpretation only and does not assert uniform nearest-neighbor gaps."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The heuristic scale calculation shows why the available mesoscopic count is only barely sufficient.",
+          "line_end": 1486,
+          "line_start": 1387,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The ODE and formal Hamiltonian are formula-dependent; the physical and scaling interpretation is clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the principal-value zero ODE, interprets arithmetic progressions as equilibrium, estimates the relaxation time of a density fluctuation, and reframes the flow as gradient descent for a convex logarithmic Hamiltonian.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Inverse-distance zero motion relaxes spacing fluctuations toward a local lattice",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u09.txt",
+          "unit_bytes": 5864,
+          "unit_id": "rodgers_tao2020_v2_u09",
+          "unit_sha256": "0fb88b4e28226b4600a1389489263979024247b943e5ecbe7269870fbedafe47",
+          "unit_type": "dynamical-reframing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Backward heat evolution induces a principal-value inverse-distance ODE for the real zeros. The source-authored heuristic views local arithmetic progressions as equilibria and estimates how spacing fluctuations might relax over the available time; it then introduces a logarithmic Hamiltonian and inverse-square energy only formally, since the infinite sums are not absolutely convergent.",
+            "nonparaphrase_operation": "Reframes analytic zero motion as an interacting-particle problem and separates the rigorous ODE from the heuristic relaxation and formal convexity machinery.",
+            "quality_reason": "Accepted after removing later renormalization and coercivity claims; principal-value conventions and scale constants remain formula-sensitive.",
+            "source_support": "Theorem 11, the local-equilibrium heuristic, the back-of-envelope time scale, the formal gradient-flow formula, and its divergence warning are present.",
+            "speculation_status": "The relaxation rate and Hamiltonian dissipation are explicitly heuristic/formal here; no mean-density renormalization is claimed in this unit."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_09a93da01136a6e23b8407dbcf034e0a98e973ce697ae25aee6426576f68b324",
+        "dossier_sha256": "91188f1f0c4774c4fbf82f0c2825e3ca51c1aeeea80382dea612d152d9ab3d9f"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Finite-subsystem identities isolate environmental errors, while subtracting the classical-location linearization and spatial mollification make Hamiltonian dissipation summable and zero precisely at local lattice spacing.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "rodgers_tao2020_v2_u10",
+          "rodgers_tao2020_v2_u12",
+          "rodgers_tao2020_v2_u13",
+          "rodgers_tao2020_v2_u14",
+          "rodgers_tao2020_v2_u15"
+        ],
+        "proposed_limit": "The construction controls averaged localized defects, not pointwise convergence of every gap.",
+        "source_id": "rodgers_tao2020_newman",
+        "synthesis_id": "riemann_v2_within_a6d2102aaefc9b0f712fe11b",
+        "title": "Renormalization converts an infinite formal flow into an equilibrium detector"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The long algebraic verification through line 1788 is supporting proof detail; the reusable content is the identity package and cross-term interpretation.",
+          "line_end": 1576,
+          "line_start": 1505,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense displayed formulas require scan verification; each identity's sign and role are stated in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Packages gap dynamics, cross-energy inequality, energy identity, virial identity, and Hamiltonian identity for a finite index set, isolating signed internal terms from interactions with the external environment.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Truncation exposes monotone bulk terms and environmental cross terms",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u10.txt",
+          "unit_bytes": 4725,
+          "unit_id": "rodgers_tao2020_v2_u10",
+          "unit_sha256": "d5dc0ff8c59302deb914d4142eefba7bd1185729bdc420735443c1ad82f848a5",
+          "unit_type": "finite-subsystem-identities",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite truncation makes several consequences of the zero ODE legal: a gap identity, a weak cross-energy inequality, and exact energy, virial, and Hamiltonian formulas. Only identities (iii)–(v) have the source's sign-definite internal terms when environmental cross interactions are ignored, so prospective monotonicity depends on controlling those boundary terms.",
+            "nonparaphrase_operation": "Uses K as a local-system/environment interface and identifies cross terms as the quantified information lost by truncation.",
+            "quality_reason": "Accepted after distinguishing the weak inequality from exact identities and restricting sign claims to (iii)–(v); dense coefficients and indices are not restated.",
+            "source_support": "Lemma 12 and the prose immediately following it give the five statements, the weak interpretation of part (ii), and the exact scope of the sign observation.",
+            "speculation_status": "No global finite Hamiltonian or unconditional monotonicity is inferred from the identities."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This weak bound is used chiefly to justify later exchanges of differentiation, summation, and integration.",
+          "line_end": 2035,
+          "line_start": 1967,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The cutoff geometry and absorption are clear; exact powers and sums require formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Pigeonholes an interval whose slight enlargement adds little time-integrated energy, applies the finite Hamiltonian identity there, and absorbs near-boundary terms to obtain a polynomial rather than superpolynomial energy bound.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            38
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A slowly growing cutoff turns formal Hamiltonian dissipation into weak integrated energy",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u12.txt",
+          "unit_bytes": 3908,
+          "unit_id": "rodgers_tao2020_v2_u12",
+          "unit_sha256": "d6acc55c2088d0c0ae8a238ce812a3d5ffe2f75147ed5e93b684e4bbc2cd64b5",
+          "unit_type": "pigeonholed-cutoff-method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For each interval I, Q_I records time-integrated internal inverse-square energy. Comparing crude bounds across nested intervals locates a cutoff K whose slight enlargement K' adds only a small fraction of energy; integrating the finite Hamiltonian identity, bounding the far exterior, and absorbing the annular contribution then yields a polynomial integrated-energy bound.",
+            "nonparaphrase_operation": "Selects a boundary by energy growth rather than position alone, turning a divergent global object into a finite subsystem with controlled leakage.",
+            "quality_reason": "Accepted because the cutoff/absorption mechanism is complete; exact widths and logarithmic powers are left formula-sensitive.",
+            "source_support": "The definition of Q_I, the growth-ratio pigeonhole, Q_{K'} inequality, integrated Hamiltonian identity, exterior/annular split, and absorption are explicit.",
+            "speculation_status": "No pointwise energy estimate or equilibrium conclusion is inferred; the result is time-integrated and chiefly licenses later exchanges."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The linear correction cancels in aggregate up to small error and makes zero energy correspond to the reference lattice.",
+          "line_end": 2199,
+          "line_start": 2037,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Potential asymptotics and normalization factors are formula-dependent but conceptually recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introduces a nonnegative convex potential by subtracting the value and linearization of inverse-square interaction at unit relative spacing, defines renormalized pair energy against classical locations, and mollifies it with a decaying weight.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            39,
+            40,
+            41
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Subtracting the classical lattice makes energy finite and equilibrium-sensitive",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u13.txt",
+          "unit_bytes": 8986,
+          "unit_id": "rodgers_tao2020_v2_u13",
+          "unit_sha256": "3e3ab35803fe5691fcb119b47d0f0942667d5e7f7f47b3e82d7fc385ba045716",
+          "unit_type": "renormalization-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Subtracting the value and tangent of the inverse-square interaction at normalized gap one produces a convex nonnegative defect V. Pairwise it vanishes when the absolute normalized gap equals one—not uniquely at the unshifted reference configuration—and interval summation cancels the linear displacement term up to polylogarithmic boundary error. The span then states the stronger integrated-energy target and introduces a smooth weight ψ_T to localize a globally weighted renormalized energy.",
+            "nonparaphrase_operation": "Explains tangent subtraction as baseline removal plus first-order cancellation and tracks the transition from interval renormalization to smooth localization.",
+            "quality_reason": "Accepted after correcting the vanishing set and incorporating the latter half of the source; normalizations and asymptotic powers remain formula-sensitive.",
+            "source_support": "V and its regimes, the normalized pair energy, Lemma 16, Theorem 17, ψ_T, and the weighted energy are all present.",
+            "speculation_status": "No uniqueness of equilibrium or small-energy conclusion is asserted at this stage."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This supplies a nonnegative state variable whose derivative can be compared with renormalized energy.",
+          "line_end": 2421,
+          "line_start": 2250,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact neighborhood exponents and decay rates are OCR-sensitive; the multiscale decomposition is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines a nearby-index relation and convex logarithmic defect that vanishes at classical spacing, proves its equivalence to the truncated Hamiltonian, and establishes multiscale long-range decay from macroscopic and mesoscopic zero-location estimates.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            43,
+            44,
+            45
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A renormalized Hamiltonian localizes spacing defects and decays at long range",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u14.txt",
+          "unit_bytes": 9247,
+          "unit_id": "rodgers_tao2020_v2_u14",
+          "unit_sha256": "ca1e44648532ae6b30c034e02c66012b487b771e0fe7138c1d7b9355859cba4c",
+          "unit_type": "localized-equilibrium-functional",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Using the previously defined ψ_T and renormalized energy, the span introduces a nearby-index relation and a smoothly truncated Hamiltonian based on L(x)=log(1/|x|)+|x|-1. Lemma 19 rewrites it as nonnegative normalized pair defects up to lower-order error, with the linear term controlled by oddness around j and near-symmetry of the cutoff; Lemma 20 then supplies far, intermediate, and very-near distance bounds.",
+            "nonparaphrase_operation": "Shows how tangent renormalization, symmetric cancellation, and multiscale localization make the infinite pair interaction convergent and equilibrium-sensitive without yet claiming a derivative law.",
+            "quality_reason": "Accepted with inherited context identified and claims limited to convergence, defect representation, and decay proved here; cutoff exponents are not normalized.",
+            "source_support": "The nearby relation, Hamiltonian, L, pair normalization, Lemma 19 proof, and three-regime Lemma 20 appear locally, while ψ_T is explicitly recalled.",
+            "speculation_status": "The complementary roles of L and the earlier V are interpretation; ε(j) is unspecified and the decay is not a uniform sharp estimate."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The extensive term splitting is retained as one mechanism because its purpose is to validate the formal gradient-flow identity after truncation and renormalization.",
+          "line_end": 2880,
+          "line_start": 2420,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very formula-dense; the dominated-convergence logic and cancellation roles are readable, while individual estimates require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introduces moderate and negligible error classes, rigorously interchanges the infinite sum with time differentiation using weak energy bounds, and cancels near, far, and reference-lattice contributions to recover approximate dissipation.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Differentiated renormalized Hamiltonian equals minus energy up to negligible terms",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u15.txt",
+          "unit_bytes": 26237,
+          "unit_id": "rodgers_tao2020_v2_u15",
+          "unit_sha256": "eb99c5aeeeb9d3d496be477bac914a32317258b60358bc7fdd89c3e09cca2947",
+          "unit_type": "dissipation-identity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Moderate/negligible weighted-sum bounds first make the infinite calculation integrable. Proposition 22 then proves absolute continuity, justifies interchanging the pair sum with time integration, differentiates the nearby weighted Hamiltonian, and decomposes the result into near/far terms; symmetrization, weight smoothness, replacement by classical-location interactions, and reference-interaction cancellation leave -4 times renormalized energy up to scale-relative negligible error.",
+            "nonparaphrase_operation": "Turns a formal gradient-flow identity into a legal scale-local law by identifying exactly which convergence and cancellation steps preserve it.",
+            "quality_reason": "Accepted because the legality proof and error taxonomy are substantive; extraction-sensitive primes, indices, weights, and cutoffs are not reconstructed.",
+            "source_support": "Lemma 21, the dominated-convergence argument, almost-everywhere differentiation, X1–X4 decomposition, parallel ξ calculation, and final dissipation identity are in the span.",
+            "speculation_status": "The equilibrium explanation in Remark 23 is heuristic; ξ_j are a fixed reference, not an evolving reference dynamics."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_09a93da01136a6e23b8407dbcf034e0a98e973ce697ae25aee6426576f68b324",
+        "dossier_sha256": "91188f1f0c4774c4fbf82f0c2825e3ca51c1aeeea80382dea612d152d9ab3d9f"
+      }
+    }
+  ]
+}

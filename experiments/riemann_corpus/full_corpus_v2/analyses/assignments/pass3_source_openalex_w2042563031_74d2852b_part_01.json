@@ -1,0 +1,2605 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2042563031_74d2852b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2042563031",
+  "unit_count": 19,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Self-contained as motivation; later ranges refine the same F(x,T).",
+      "line_end": 42,
+      "line_start": 15,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout is important for the definition and asymptotics, but the prose fixes their roles.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the weighted zero-pair statistic, records its established small-x asymptotic, and explains how the strong conjecture yields the weak local-spacing law.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair-correlation statistic and the strong-to-weak implication",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u05.txt",
+      "unit_bytes": 1530,
+      "unit_id": "full_openalex_w2042563031_u05",
+      "unit_sha256": "b87a2ff01499af3aeebf1b9cdce3729c5d97fb6677c3d80e803e8fe6d714db5d",
+      "unit_type": "definition-and-historical-implication",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u05.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 7,
+          "line_end": 14,
+          "text": "\n\n      More precise Pair Correlation Conjecture on the\n            zeros of the Riemann zeta function\n                                           by\n\n                       Tsz Ho Chan (Cleveland, OH)\n\n",
+          "sha256": "b7b11f0495409e02eefb2386151118856c89e7122bf03e989fd53df74c6f121d"
+        },
+        "after": {
+          "line_start": 43,
+          "line_end": 50,
+          "text": "\n    In [1], the author proved that, under the Riemann Hypothesis, for any\nε > 0,\n                                     \u0014 \u0012         \u0013              \u0015\n                       1           1 T        T 2     T      T\n(2)       F (x, T ) =    T log x + 2      log      −2    log\n                      2π           x 2π       2π      2π     2π\n                                      \u0012       \u0013\n",
+          "sha256": "e5d854f86b11fe1076f0355103890a37729aebe5228e21e4bbb0871bd4e2ea84"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 132,
+            "line_start": 15,
+            "mathematical_role": "defines pair correlation, contrasts known small-x and conjectural large-x regimes, states the transition theorem and corollaries"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 42,
+          "line_start": 15,
+          "title": "Pair-correlation statistic and the strong-to-weak implication",
+          "unit_id": "full_openalex_w2042563031_u05",
+          "unit_type": "definition-and-historical-implication",
+          "why_material": "Defines the weighted zero-pair statistic, records its established small-x asymptotic, and explains how the strong conjecture yields the weak local-spacing law."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Self-contained as motivation; later ranges refine the same F(x,T).",
+          "representation_dependency": "Formula layout is important for the definition and asymptotics, but the prose fixes their roles.",
+          "unit_id": "full_openalex_w2042563031_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 71,
+            "line_start": 44,
+            "title": "The unresolved transition between two precise asymptotic regimes",
+            "unit_id": "full_openalex_w2042563031_u06",
+            "unit_type": "regime-comparison-motivation",
+            "why_material": "Places the known expansion below T/log T beside the refined strong conjecture above T^(1+epsilon) and identifies behavior near x=T as the target gap."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u05",
+          "spontaneous_reading": "The statistic F(x,T) compresses all pairs of zero ordinates into a scale-sensitive weighted transform: the phase depends on their difference while w damps widely separated pairs. Its change with x is therefore the intermediate object connecting global zero data to a local spacing law."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u05",
+          "source_grounded_mathematics": "Under RH the source records a small-x asymptotic for F(x,T), then states the Strong Pair Correlation Conjecture for T <= x <= T^M and says that this yields the weak pair-correlation formula with the squared sinc kernel.",
+          "conceptual_reading": "The strong statement controls a transform over a long scale range; the weak spacing count is a coarser consequence recovered from that transform. This is an implication from transform information to local statistics, not merely two equivalent wordings.",
+          "representation_or_bridge": "F(x,T), with phase x^{i(gamma-gamma')} and weight 4/(4+(gamma-gamma')^2), is the bridge from differences of zero ordinates to an x-indexed spectral statistic; the sinc-squared expression is the target local-spacing representation.",
+          "boundary_or_failure": "Both the established asymptotic and the stated implication are presented under RH, while the large-x law is conjectural. The span does not supply the derivation from strong to weak correlation.",
+          "uncertainty": "Formula layout is extraction-sensitive, especially exponents and the final normalized spacing display, but the prose fixes the roles and regimes."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the source's organizing problem and directly frames Theorem 1.1.",
+      "line_end": 71,
+      "line_start": 44,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The correction terms in equations (2) and (3) are formula-dependent but legible with prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Places the known expansion below T/log T beside the refined strong conjecture above T^(1+epsilon) and identifies behavior near x=T as the target gap.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The unresolved transition between two precise asymptotic regimes",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u06.txt",
+      "unit_bytes": 1276,
+      "unit_id": "full_openalex_w2042563031_u06",
+      "unit_sha256": "af7371ff46b5e25d1d0d6386930ccc8e5acce665ec4474d69892a8a784e01f06",
+      "unit_type": "regime-comparison-motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u06.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 36,
+          "line_end": 43,
+          "text": "                                          α\u0014     \u0012       \u0013 \u0015\n                  X              T                 sin πu 2\n                            1∼      log T    1−              du.\n                                2π                   πu\n                    0\n               0<γ,γ ≤T                           0\n            0<γ−γ 0 ≤2πα/log T\n\n",
+          "sha256": "674cc469b654a96262c52cb457238f0a5be2ad1df674c18251e6701ef2252e6f"
+        },
+        "after": {
+          "line_start": 72,
+          "line_end": 79,
+          "text": "   Theorem 1.1. Assume the Riemann Hypothesis and the Twin Prime\nConjecture in the form stated at the start of Section 2. For any small ε > 0\nand any integer M > 2,\n                                T /x               \u0012∞       \u0013\u0012           \u0013\n               T           4x        sin v      x2 X S(h)              T\n   F (x, T ) =    log x −                  dv +                1 − cos\n               2π          3π          v        πT      h2             x\n                                 0                  h=1\n",
+          "sha256": "2b079379e7cf789de7c1f57e8f4504a2261b50550f8673d50341895984c059e7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 132,
+            "line_start": 15,
+            "mathematical_role": "defines pair correlation, contrasts known small-x and conjectural large-x regimes, states the transition theorem and corollaries"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 71,
+          "line_start": 44,
+          "title": "The unresolved transition between two precise asymptotic regimes",
+          "unit_id": "full_openalex_w2042563031_u06",
+          "unit_type": "regime-comparison-motivation",
+          "why_material": "Places the known expansion below T/log T beside the refined strong conjecture above T^(1+epsilon) and identifies behavior near x=T as the target gap."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the source's organizing problem and directly frames Theorem 1.1.",
+          "representation_dependency": "The correction terms in equations (2) and (3) are formula-dependent but legible with prose.",
+          "unit_id": "full_openalex_w2042563031_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 42,
+            "line_start": 15,
+            "title": "Pair-correlation statistic and the strong-to-weak implication",
+            "unit_id": "full_openalex_w2042563031_u05",
+            "unit_type": "definition-and-historical-implication",
+            "why_material": "Defines the weighted zero-pair statistic, records its established small-x asymptotic, and explains how the strong conjecture yields the weak local-spacing law."
+          },
+          {
+            "line_end": 107,
+            "line_start": 72,
+            "title": "Conditional transition-range formula for pair correlation",
+            "unit_id": "full_openalex_w2042563031_u01",
+            "unit_type": "pair-correlation asymptotic theorem",
+            "why_material": "States the main conditional expansion across T/(log T)^M through T^(2-epsilon), retaining singular-series and integrated-error corrections rather than collapsing immediately to an endpoint asymptotic."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source treats the neighborhood of x=T as a matching problem: retain lower-order corrections in a broad conditional formula, then show distinct collections become negligible on opposite sides to recover compatible endpoint asymptotics.",
+            "limit": "This is conditional on RH and the stated quantitative twin-prime conjecture, and the final three-regime statement remains conjectural.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u06",
+              "full_openalex_w2042563031_u01",
+              "full_openalex_w2042563031_u07",
+              "full_openalex_w2042563031_u20",
+              "full_openalex_w2042563031_u22",
+              "full_openalex_w2042563031_u23"
+            ],
+            "title": "Transition-scale matching from two endpoint laws"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u06",
+          "spontaneous_reading": "Two refined endpoint descriptions leave a genuine matching problem: one resolves lower-order behavior below T/log T, the other starts only beyond T^{1+epsilon}, so the neighborhood of x=T is where neither asymptotic may simply be extrapolated."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u06",
+          "source_grounded_mathematics": "Under RH the source gives a more precise formula for 1 <= x <= T/log T. It also recalls a refined Strong Pair Correlation Conjecture, uniform for T^{1+epsilon} <= x <= T^A, and identifies the unresolved change near x=T.",
+          "conceptual_reading": "The organizing move is asymptotic matching across a transition scale. Lower-order terms that are negligible at either endpoint may be decisive near x=T, motivating a formula that retains them rather than choosing one endpoint law.",
+          "representation_or_bridge": "The common statistic F(x,T) and the scale ratio x/T bridge the two regimes; equations (2) and (3) are endpoint expansions whose domains leave the transition window exposed.",
+          "boundary_or_failure": "The small-x statement is conditional on RH and the large-x statement is conjectural. This unit motivates but does not state or prove the transition theorem.",
+          "uncertainty": "The correction terms are display-dependent, though the ranges, conditional status, and transition question are explicit in prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with Theorem 1.1 and the proofs in Section 5.",
+      "line_end": 124,
+      "line_start": 108,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed error exponents and uniform ranges are formula-dependent but recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the x<=T and x>=T consequences, showing which transition corrections collapse to the known small-x and strong-pair-correlation shapes.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two endpoint simplifications of the transition theorem",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u07.txt",
+      "unit_bytes": 858,
+      "unit_id": "full_openalex_w2042563031_u07",
+      "unit_sha256": "cf265a9a04c1c45d91372b77c3a653b95ea4b06565188fc00f6cb8e1fece2ebb",
+      "unit_type": "asymptotic-corollaries",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u07.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 100,
+          "line_end": 107,
+          "text": "                      1    y\n                                       \u0012           \u0013\n                         1/2+7ε            T\n                 + O(x            )+O                ,\n                                      (log T )M −2\nfor T /(log T )M ≤ x ≤ T 2−ε . Here B = −C0 − log 2π, C0 is Euler’s constant\n0.5772156649 . . . , and S(h) and f (u) are defined in the next section. The\nimplicit constants may depend on ε and M .\n",
+          "sha256": "6b813dd766311cef3ec5f993d16d012cebac310d023967fd76a896dd6a56cc70"
+        },
+        "after": {
+          "line_start": 125,
+          "line_end": 132,
+          "text": "\n<!-- source-page: 3 -->\n\nMore precise Pair Correlation Conjecture           201\n\n    This work is part of the author’s 2002 Ph.D. thesis. The author would\nalso like to thank the referee for some helpful suggestions.\n\n",
+          "sha256": "9fba53b7d0611ec1e5421642004afbe27d118a20b24539228dac00b56ef380f4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 132,
+            "line_start": 15,
+            "mathematical_role": "defines pair correlation, contrasts known small-x and conjectural large-x regimes, states the transition theorem and corollaries"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 124,
+          "line_start": 108,
+          "title": "Two endpoint simplifications of the transition theorem",
+          "unit_id": "full_openalex_w2042563031_u07",
+          "unit_type": "asymptotic-corollaries",
+          "why_material": "Separates the x<=T and x>=T consequences, showing which transition corrections collapse to the known small-x and strong-pair-correlation shapes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with Theorem 1.1 and the proofs in Section 5.",
+          "representation_dependency": "Displayed error exponents and uniform ranges are formula-dependent but recoverable.",
+          "unit_id": "full_openalex_w2042563031_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 107,
+            "line_start": 72,
+            "title": "Conditional transition-range formula for pair correlation",
+            "unit_id": "full_openalex_w2042563031_u01",
+            "unit_type": "pair-correlation asymptotic theorem",
+            "why_material": "States the main conditional expansion across T/(log T)^M through T^(2-epsilon), retaining singular-series and integrated-error corrections rather than collapsing immediately to an endpoint asymptotic."
+          },
+          {
+            "line_end": 188,
+            "line_start": 133,
+            "title": "Quantitative twin-prime input and centered singular-series sums",
+            "unit_id": "full_openalex_w2042563031_u02",
+            "unit_type": "twin-prime singular-series preparation",
+            "why_material": "States the exact uniform prime-pair hypothesis, defines the singular series and its centered partial/tail sums, and identifies the first integrated mean of their error."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source treats the neighborhood of x=T as a matching problem: retain lower-order corrections in a broad conditional formula, then show distinct collections become negligible on opposite sides to recover compatible endpoint asymptotics.",
+            "limit": "This is conditional on RH and the stated quantitative twin-prime conjecture, and the final three-regime statement remains conjectural.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u06",
+              "full_openalex_w2042563031_u01",
+              "full_openalex_w2042563031_u07",
+              "full_openalex_w2042563031_u20",
+              "full_openalex_w2042563031_u22",
+              "full_openalex_w2042563031_u23"
+            ],
+            "title": "Transition-scale matching from two endpoint laws"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u07",
+          "spontaneous_reading": "The broad transition formula is useful because different correction packages collapse on opposite sides of x=T, recovering a small-x logarithmic law and a large-x strong-correlation law from one conditional mechanism."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u07",
+          "source_grounded_mathematics": "Assuming RH and the stated Twin Prime Conjecture, Corollary 1.1 gives F(x,T)=T log(x)/(2 pi) plus controlled errors for T/(log T)^M <= x <= T. Corollary 1.2 gives the refined large-x form for T <= x <= T^{2-29 epsilon}, again with explicit errors.",
+          "conceptual_reading": "These are endpoint projections of a more detailed transition theorem. The same underlying expression simplifies differently according to whether x/T is at most or at least one.",
+          "representation_or_bridge": "The threshold x=T selects which terms in Theorem 1.1 can be absorbed into error; the two corollaries provide compatible summaries on the adjacent scale ranges.",
+          "boundary_or_failure": "Both corollaries depend on RH and a quantitative twin-prime input. The unit states the results but defers the simplifications to Section 5.",
+          "uncertainty": "The precise error exponents and uniform endpoints rely on displayed formulas, but the extracted statements are legible."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the mechanism introduced by the carried preparation unit.",
+      "line_end": 226,
+      "line_start": 194,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy but the integration-by-parts mechanism and growth orders are recoverable from adjacent prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the mean of the centered singular-series error, defines f as its integrated centered remainder, and obtains weighted integral identities later used to expose lower-order terms.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integrating singular-series discrepancy into a controlled remainder",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u08.txt",
+      "unit_bytes": 1802,
+      "unit_id": "full_openalex_w2042563031_u08",
+      "unit_sha256": "97edcccc4699ed3fc4a27ba9d5d2a1365443fbfb37ab25cba16f084459d3dfab",
+      "unit_type": "error-primitive-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u08.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 186,
+          "line_end": 193,
+          "text": "                                          2\n                          1\nwhere B = −C0 − log 2π as in the previous section.\n\n<!-- source-page: 4 -->\n\n202                                                  T. H. Chan\n\n",
+          "sha256": "40a571ede57de60d052276e6a91c5ada5c0af1c1f4f0cc3aee47bc0d4f732f56"
+        },
+        "after": {
+          "line_start": 227,
+          "line_end": 234,
+          "text": "We also need the following lemmas.\n      Lemma 2.3. Assume the Riemann Hypothesis. For any ε > 0,\n                X             1          1\n                    Λ(n)2 n = x2 log x − x2 + O(x3/2+ε ),\n                              2          4\n                n≤x\n                 X Λ(n)2                       \u0012      \u0013\n                              1 log x 1 1          1\n",
+          "sha256": "88c720ee0054ee7425c1e35ac803e8d749bd21b3d9e9a098de00b6cd1cb92a30"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Preparations",
+            "line_end": 286,
+            "line_start": 133,
+            "mathematical_role": "states the quantitative twin-prime input and converts singular-series averages into weighted remainder identities"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 226,
+          "line_start": 194,
+          "title": "Integrating singular-series discrepancy into a controlled remainder",
+          "unit_id": "full_openalex_w2042563031_u08",
+          "unit_type": "error-primitive-construction",
+          "why_material": "Derives the mean of the centered singular-series error, defines f as its integrated centered remainder, and obtains weighted integral identities later used to expose lower-order terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Completes the mechanism introduced by the carried preparation unit.",
+          "representation_dependency": "Formula-heavy but the integration-by-parts mechanism and growth orders are recoverable from adjacent prose.",
+          "unit_id": "full_openalex_w2042563031_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 188,
+            "line_start": 133,
+            "title": "Quantitative twin-prime input and centered singular-series sums",
+            "unit_id": "full_openalex_w2042563031_u02",
+            "unit_type": "twin-prime singular-series preparation",
+            "why_material": "States the exact uniform prime-pair hypothesis, defines the singular series and its centered partial/tail sums, and identifies the first integrated mean of their error."
+          },
+          {
+            "line_end": 240,
+            "line_start": 228,
+            "title": "Second-moment estimates for von Mangoldt coefficients",
+            "unit_id": "full_openalex_w2042563031_u09",
+            "unit_type": "dirichlet-coefficient-moment-lemma",
+            "why_material": "Provides the head and tail asymptotics for Lambda(n)^2 that supply the diagonal terms in the later Dirichlet-polynomial mean values."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Centering singular-series sums and integrating their discrepancy into f turns several discrete arithmetic errors into a common analytic object whose appearances in head and tail transforms can be bounded or canceled.",
+            "limit": "The quantitative quality of f inherits the strong prime-pair hypothesis and exact coefficients remain formula-layout-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u02",
+              "full_openalex_w2042563031_u08",
+              "full_openalex_w2042563031_u10",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Arithmetic discrepancy compressed into one transferable remainder"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u08",
+          "spontaneous_reading": "The source compresses a fluctuating singular-series discrepancy into one primitive f. Once centered by B/2 and integrated, the same arithmetic error can be moved through weighted integrals by parts and controlled by a single growth estimate."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u08",
+          "source_grounded_mathematics": "Using Lemma 2.1, the source derives an average for epsilon(u), defines f(y) as the integral of epsilon(u)-B/2, and by integration by parts obtains a head identity for integral epsilon(u)u du and a tail identity for integral epsilon(u)/u^3 du.",
+          "conceptual_reading": "Centering removes the deterministic mean, and taking a primitive converts several discrete summatory errors into a reusable analytic remainder. Integration by parts then exposes boundary terms and shifts weight onto f.",
+          "representation_or_bridge": "The sequence of objects is the centered singular-series sum epsilon, its integrated remainder f, and weighted head/tail transforms. This is the arithmetic-to-analytic bridge later shared by multiple correction terms.",
+          "boundary_or_failure": "The bounds inherit the earlier singular-series estimates and ultimately the source's prime-pair hypothesis. This unit does not independently justify those inputs.",
+          "uncertainty": "Some exact coefficients are formula-layout-sensitive, but the definition of f, the integration-by-parts mechanism, and the stated growth orders are recoverable."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A concise supporting lemma whose proof is delegated to partial summation and the RH prime number theorem.",
+      "line_end": 240,
+      "line_start": 228,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants and exponents depend on the displayed formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides the head and tail asymptotics for Lambda(n)^2 that supply the diagonal terms in the later Dirichlet-polynomial mean values.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Second-moment estimates for von Mangoldt coefficients",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u09.txt",
+      "unit_bytes": 621,
+      "unit_id": "full_openalex_w2042563031_u09",
+      "unit_sha256": "bdb8e7126facfe38bc3c1f2993e9b37bf0cfb09172155474b817fc7223f70674",
+      "unit_type": "dirichlet-coefficient-moment-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u09.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 220,
+          "line_end": 227,
+          "text": "          ε(u)      B  f (y)    f (u)      B\n(9)         3\n               du = 2 − 3 + 3      4\n                                      du = 2 + O(y −5/2+ε ).\n        y\n           u       4y   y     y\n                                 u        4y\nWe also need the following lemmas.\n",
+          "sha256": "6ecdb39eed2b10a29ffec91a6a48b604427d90a8676d6c17da12226c7ae328f2"
+        },
+        "after": {
+          "line_start": 241,
+          "line_end": 248,
+          "text": "      Lemma 2.4. For any x ≥ 1, and f (u) defined in (7), we have\n                   X S(h)                      ∞\n                                               X                                  ∞\n                                   1             S(h)            7 B                  f (u)\n                                  \n ,                           = + +6                      du,\n                         h2        x                     h2      4 2                   u4\n                   h≥x                         h=1                                1\n",
+          "sha256": "6679a01a156d3b514cdce1ebd64766149b29f6519bc60bbb5df0e95405d5e406"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Preparations",
+            "line_end": 286,
+            "line_start": 133,
+            "mathematical_role": "states the quantitative twin-prime input and converts singular-series averages into weighted remainder identities"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 240,
+          "line_start": 228,
+          "title": "Second-moment estimates for von Mangoldt coefficients",
+          "unit_id": "full_openalex_w2042563031_u09",
+          "unit_type": "dirichlet-coefficient-moment-lemma",
+          "why_material": "Provides the head and tail asymptotics for Lambda(n)^2 that supply the diagonal terms in the later Dirichlet-polynomial mean values."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A concise supporting lemma whose proof is delegated to partial summation and the RH prime number theorem.",
+          "representation_dependency": "Exact constants and exponents depend on the displayed formulas.",
+          "unit_id": "full_openalex_w2042563031_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 226,
+            "line_start": 194,
+            "title": "Integrating singular-series discrepancy into a controlled remainder",
+            "unit_id": "full_openalex_w2042563031_u08",
+            "unit_type": "error-primitive-construction",
+            "why_material": "Derives the mean of the centered singular-series error, defines f as its integrated centered remainder, and obtains weighted integral identities later used to expose lower-order terms."
+          },
+          {
+            "line_end": 285,
+            "line_start": 241,
+            "title": "Reciprocal-square singular-series mass expressed through f",
+            "unit_id": "full_openalex_w2042563031_u10",
+            "unit_type": "singular-series-summation-identity",
+            "why_material": "Shows convergence of the reciprocal-square singular-series sum and rewrites its constant and tail through the integrated error f, enabling the later cosine correction."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u09",
+          "spontaneous_reading": "A single Lambda-square moment estimate is supplied in complementary head and tail forms, exactly matching the two Dirichlet-polynomial pieces that appear later."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u09",
+          "source_grounded_mathematics": "Under RH, Lemma 2.3 gives an asymptotic for sum_{n<=x} Lambda(n)^2 n and a reciprocal-cubic tail asymptotic for sum_{n>x} Lambda(n)^2/n^3, with explicit leading and secondary terms. The proof is attributed to partial summation and the RH prime number theorem.",
+          "conceptual_reading": "The lemma prepackages diagonal contributions in the two weightings required by the later head/tail decomposition, avoiding a fresh calculation inside each mean value.",
+          "representation_or_bridge": "Partial summation translates prime-number-theorem information for Lambda(n)^2 into both a growing moment and a decaying tail moment.",
+          "boundary_or_failure": "The estimates are conditional on RH, and the span gives only the proof route rather than its details.",
+          "uncertainty": "Exact constants and error exponents depend on the display, but both complementary moment shapes are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text-layer splits two comparison symbols at lines 245 and 254-256, but the equality and integration-by-parts conclusion are recoverable from lines 263-285.",
+      "line_end": 285,
+      "line_start": 241,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong formula and OCR-layout dependency; use page verification for exact inequality glyphs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows convergence of the reciprocal-square singular-series sum and rewrites its constant and tail through the integrated error f, enabling the later cosine correction.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reciprocal-square singular-series mass expressed through f",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u10.txt",
+      "unit_bytes": 2666,
+      "unit_id": "full_openalex_w2042563031_u10",
+      "unit_sha256": "0e8e1e7b4dc045b86d79af46eef0a4e0195c1cff072302c499aa9c8da2bf330a",
+      "unit_type": "singular-series-summation-identity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u10.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 233,
+          "line_end": 240,
+          "text": "                 X Λ(n)2                       \u0012      \u0013\n                              1 log x 1 1          1\n                            =        +      + O 5/2−ε ,\n                 n>x\n                      n3      2 x2     4 x2      x\nwhere the implicit constants may depend on ε.\n   Proof. This follows by partial summation and prime number theorem\nunder the Riemann Hypothesis.\n",
+          "sha256": "d81c3c71c75354bc4d3b75f7e86c4dd721b1d72c381b2790910ffe4b8eecdb2c"
+        },
+        "after": {
+          "line_start": 286,
+          "line_end": 293,
+          "text": "\n    3. Smooth weight. Fix a small positive real number ε and let K be\na large integer depending on ε. Let M be an integer greater than 2 and\nU = (log T )M . We want to define a smooth weight function ΨU (t) with:\n   1. support in [−1/U, 1 + 1/U ],\n   2. 0 ≤ ΨU (t) ≤ 1,\n   3. ΨU (t) = 1 for 1/U ≤ t ≤ 1 − 1/U ,\n         (j)\n",
+          "sha256": "e70abb0d15f0211d25d5d60e7dd28230dba4fd45cda17782b51795ff4867d7e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Preparations",
+            "line_end": 286,
+            "line_start": 133,
+            "mathematical_role": "states the quantitative twin-prime input and converts singular-series averages into weighted remainder identities"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 285,
+          "line_start": 241,
+          "title": "Reciprocal-square singular-series mass expressed through f",
+          "unit_id": "full_openalex_w2042563031_u10",
+          "unit_type": "singular-series-summation-identity",
+          "why_material": "Shows convergence of the reciprocal-square singular-series sum and rewrites its constant and tail through the integrated error f, enabling the later cosine correction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The text-layer splits two comparison symbols at lines 245 and 254-256, but the equality and integration-by-parts conclusion are recoverable from lines 263-285.",
+          "representation_dependency": "Strong formula and OCR-layout dependency; use page verification for exact inequality glyphs.",
+          "unit_id": "full_openalex_w2042563031_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 240,
+            "line_start": 228,
+            "title": "Second-moment estimates for von Mangoldt coefficients",
+            "unit_id": "full_openalex_w2042563031_u09",
+            "unit_type": "dirichlet-coefficient-moment-lemma",
+            "why_material": "Provides the head and tail asymptotics for Lambda(n)^2 that supply the diagonal terms in the later Dirichlet-polynomial mean values."
+          },
+          {
+            "line_end": 349,
+            "line_start": 284,
+            "title": "Iterated-averaging construction of a compact smooth cutoff",
+            "unit_id": "full_openalex_w2042563031_u03",
+            "unit_type": "smoothing kernel construction",
+            "why_material": "Introduces the desired support, plateau, and derivative controls and realizes them by repeated local averaging of an indicator."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Centering singular-series sums and integrating their discrepancy into f turns several discrete arithmetic errors into a common analytic object whose appearances in head and tail transforms can be bounded or canceled.",
+            "limit": "The quantitative quality of f inherits the strong prime-pair hypothesis and exact coefficients remain formula-layout-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u02",
+              "full_openalex_w2042563031_u08",
+              "full_openalex_w2042563031_u10",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Arithmetic discrepancy compressed into one transferable remainder"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 286,
+              "line_start": 286,
+              "reason": "section-separating blank line"
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u10",
+          "spontaneous_reading": "The reciprocal-square mass of the singular series is not left as an opaque constant: it is decomposed into explicit constants plus an integral of the same remainder f, making discrete arithmetic mass compatible with later analytic transforms."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u10",
+          "source_grounded_mathematics": "Lemma 2.4 establishes convergence of the reciprocal-square singular-series sum and, via the centered summatory function, epsilon, f, and integration by parts, expresses the total mass as 7/4+B/2+6 times the integral of f(u)/u^4.",
+          "conceptual_reading": "Repeated centering and integration by parts isolate universal main terms from the residual arithmetic information. The residual is represented by f, so the same object can later cancel against head and tail corrections.",
+          "representation_or_bridge": "Stieltjes summation turns sum S(h)/h^2 into an integral of the singular-series summatory function; epsilon and then f bridge that discrete sum to a convergent analytic remainder integral.",
+          "boundary_or_failure": "The opening displayed comparison and tail notation are damaged in the text layer, so exact inequality glyphs should not be inferred here. The recoverable equality chain supports the convergence and total-mass identity.",
+          "uncertainty": "High formula/OCR risk affects the first displayed line, while the later integration-by-parts conclusion is substantially clearer."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the necessary continuation of the carried smoothing unit.",
+      "line_end": 435,
+      "line_start": 350,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The transform products and comparison signs are formula-dependent; their qualitative decay role is clear from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Completes the inductive derivative bound, derives the sinc-product Fourier transform, and obtains the decay estimates that justify transferring earlier mean-value machinery to this cutoff.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Completion of smoothness proof and product formula for Fourier decay",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u11.txt",
+      "unit_bytes": 4243,
+      "unit_id": "full_openalex_w2042563031_u11",
+      "unit_sha256": "20444b7930dcf34be55ab6b1238f3d25fb3f1b4e992408b2a325c10502ddb006",
+      "unit_type": "fourier-transform-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u11.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 342,
+          "line_end": 349,
+          "text": "                         1\n                     =     [χ1 (t + ∆ + ξ1 ) − χ1 (t − ∆ + ξ2 )]\n                        2∆\nfor some 0 ≤ ξ1 , ξ2 ≤ h by the mean-value theorem. So χ02 (t) exists and\n        1\nequals 2∆ [χ1 (t+∆)−χ1 (t−∆)], which is continuous and ≤ 1/∆. Assume that\n (j)                                               (j)\nχi (t) are continuous and satisfy χi \n",
+          "sha256": "7dbca8545a43b45ddce22b1de234004d60dfb3eec2328b85e1f90247cb0f4203"
+        },
+        "after": {
+          "line_start": 436,
+          "line_end": 443,
+          "text": "    We shall need the following lemmas concerning our weight function\nΨU (t). Here we assume T ∆ ≤ x.\n   Lemma 3.3. For any integer n ≥ 1,\n      ∞          \u0012     \u0013         ∞      Ty       \u0012         \u0013\n         1     b   Ty          x sin x                   1\n           Re ΨU         dy =              dy + O K∆ log     .\n        yn         2πx         T     y n+1               ∆\n            1                                 1\n",
+          "sha256": "f6c9bf6dcde516099db1743b4eb075b96d922d8a1ba561d4d8e27304e22c7d88"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Smooth weight",
+            "line_end": 513,
+            "line_start": 287,
+            "mathematical_role": "constructs the cutoff, proves derivative and Fourier control, and derives sine-kernel replacement lemmas"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 435,
+          "line_start": 350,
+          "title": "Completion of smoothness proof and product formula for Fourier decay",
+          "unit_id": "full_openalex_w2042563031_u11",
+          "unit_type": "fourier-transform-control",
+          "why_material": "Completes the inductive derivative bound, derives the sinc-product Fourier transform, and obtains the decay estimates that justify transferring earlier mean-value machinery to this cutoff."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the necessary continuation of the carried smoothing unit.",
+          "representation_dependency": "The transform products and comparison signs are formula-dependent; their qualitative decay role is clear from prose.",
+          "unit_id": "full_openalex_w2042563031_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 349,
+            "line_start": 284,
+            "title": "Iterated-averaging construction of a compact smooth cutoff",
+            "unit_id": "full_openalex_w2042563031_u03",
+            "unit_type": "smoothing kernel construction",
+            "why_material": "Introduces the desired support, plateau, and derivative controls and realizes them by repeated local averaging of an indicator."
+          },
+          {
+            "line_end": 512,
+            "line_start": 436,
+            "title": "Replacing the smooth Fourier kernel by sine kernels",
+            "unit_id": "full_openalex_w2042563031_u12",
+            "unit_type": "kernel-replacement-lemmas",
+            "why_material": "Quantifies when weighted Fourier integrals can be replaced by explicit sine-kernel integrals, including a version for decaying test functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Iterated averaging constructs a cutoff strong enough to import mean-value estimates, while explicit Fourier control later replaces that auxiliary cutoff by sine kernels with errors below the target scale.",
+            "limit": "The source verifies this for its chosen cutoff and parameter regime; it does not establish a cutoff-independent theorem.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u03",
+              "full_openalex_w2042563031_u11",
+              "full_openalex_w2042563031_u12",
+              "full_openalex_w2042563031_u13"
+            ],
+            "title": "Smoothing as a removable proof interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u11",
+          "spontaneous_reading": "Iterated local averaging buys two properties at once: bounded derivatives in physical space and a product of sinc factors in Fourier space. The latter makes the auxiliary cutoff decay fast enough to carry prior mean-value machinery."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u11",
+          "source_grounded_mathematics": "The source completes the inductive derivative bounds for the averaged indicators chi_i, computes their inverse Fourier transforms recursively, sets Psi_U=chi_{K+1}, and obtains an explicit sinc-product transform together with polynomial decay bounds.",
+          "conceptual_reading": "Repeated convolution smooths sharp support boundaries, while Fourier transformation converts those averages into multiplicative sinc factors. Increasing the number of averages directly increases available decay.",
+          "representation_or_bridge": "The functions chi_i connect a compact supported plateau to the explicit transform e^{pi i y}(sin(pi y)/(pi y))(sin(2 pi Delta y)/(2 pi Delta y))^{K+1}; this cutoff imports estimates from earlier work.",
+          "boundary_or_failure": "The conclusion is for this constructed cutoff and stated parameter range, not a cutoff-independent result. Several comparison signs in the extracted bounds are visually damaged.",
+          "uncertainty": "Exact transform products are readable, but some decay inequalities and derivative notation remain layout-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These lemmas are the analytic interface used repeatedly in Sections 4 and 5.",
+      "line_end": 512,
+      "line_start": 436,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact powers and errors require the displayed estimates; the change-of-variable and cutoff-splitting logic is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Quantifies when weighted Fourier integrals can be replaced by explicit sine-kernel integrals, including a version for decaying test functions.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replacing the smooth Fourier kernel by sine kernels",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u12.txt",
+      "unit_bytes": 3698,
+      "unit_id": "full_openalex_w2042563031_u12",
+      "unit_sha256": "d1eb5f7acf96b9de8a6eb18054e97cc764b8ba57e430f8383640848385a97707",
+      "unit_type": "kernel-replacement-lemmas",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u12.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 428,
+          "line_end": 435,
+          "text": "                                                  U K\n                     ΨbU (y), ΨbU0 (y) \n min 1,          ,\n                                                 2πy\nwhich is (17) in [5]. Consequently, the results in [5] are true with our choice\nof ΨU (t). Moreover, if one follows their arguments carefully, one has their\nCorollaries 1 and 2 (except an extra N ε to the error terms) and Theorem 3\nas long as τ = T 1−ε ≤ x.\n",
+          "sha256": "9e4d1ed898ab33c65860e435fc81823cdddf21c2ccd55eccf128739173732a36"
+        },
+        "after": {
+          "line_start": 513,
+          "line_end": 520,
+          "text": "\n    4. Proof of the theorem. Throughout this section, we assume τ =\nT 1−ε ≤ T /(log T )M ≤ x, U = (log T )M for M > 2, H ∗ = τ −2 x2/(1−ε) , and\nΨU (t) is defined as in the previous section. The implicit constants in the\nerror terms may depend on ε and M .\n   Proof of Theorem 1.1. Our method is that of Goldston and Gonek [5].\nLet s = σ + it,\n                        X Λ(n)                X Λ(n)\n",
+          "sha256": "e242e37ca007ce092cf50955539395fb776380209d13021cf9ddd61df6a0dfaf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Smooth weight",
+            "line_end": 513,
+            "line_start": 287,
+            "mathematical_role": "constructs the cutoff, proves derivative and Fourier control, and derives sine-kernel replacement lemmas"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 512,
+          "line_start": 436,
+          "title": "Replacing the smooth Fourier kernel by sine kernels",
+          "unit_id": "full_openalex_w2042563031_u12",
+          "unit_type": "kernel-replacement-lemmas",
+          "why_material": "Quantifies when weighted Fourier integrals can be replaced by explicit sine-kernel integrals, including a version for decaying test functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These lemmas are the analytic interface used repeatedly in Sections 4 and 5.",
+          "representation_dependency": "Exact powers and errors require the displayed estimates; the change-of-variable and cutoff-splitting logic is recoverable.",
+          "unit_id": "full_openalex_w2042563031_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 435,
+            "line_start": 350,
+            "title": "Completion of smoothness proof and product formula for Fourier decay",
+            "unit_id": "full_openalex_w2042563031_u11",
+            "unit_type": "fourier-transform-control",
+            "why_material": "Completes the inductive derivative bound, derives the sinc-product Fourier transform, and obtains the decay estimates that justify transferring earlier mean-value machinery to this cutoff."
+          },
+          {
+            "line_end": 564,
+            "line_start": 514,
+            "title": "Reduction of pair correlation to two smoothed Dirichlet-polynomial mean values",
+            "unit_id": "full_openalex_w2042563031_u13",
+            "unit_type": "proof-reduction",
+            "why_material": "Introduces complementary head and tail Dirichlet polynomials, inserts the smooth time cutoff, and isolates I1 and I2 with controlled cross-term and truncation errors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Iterated averaging constructs a cutoff strong enough to import mean-value estimates, while explicit Fourier control later replaces that auxiliary cutoff by sine kernels with errors below the target scale.",
+            "limit": "The source verifies this for its chosen cutoff and parameter regime; it does not establish a cutoff-independent theorem.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u03",
+              "full_openalex_w2042563031_u11",
+              "full_openalex_w2042563031_u12",
+              "full_openalex_w2042563031_u13"
+            ],
+            "title": "Smoothing as a removable proof interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 513,
+              "line_start": 513,
+              "reason": "section-separating blank line"
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u12",
+          "spontaneous_reading": "The smooth Fourier cutoff is engineered as a removable interface: after it legitimizes the mean-value argument, these lemmas replace it by explicit sine kernels with errors controlled below the target scale."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u12",
+          "source_grounded_mathematics": "Assuming T Delta <= x, Lemma 3.3 replaces weighted integrals of Re Psi_U-hat(Ty/(2 pi x)) by sine-kernel integrals, with a stated K Delta log(1/Delta) error. Lemma 3.4 gives an analogous replacement for F(y) decaying like y^{-3/2+epsilon}, with O(K Delta) error.",
+          "conceptual_reading": "A change of variables exposes the small-Delta sinc factor as a perturbation of one on the main range; splitting at 1/Delta controls the tail. Thus a technically convenient cutoff can later be removed without losing the explicit oscillatory structure.",
+          "representation_or_bridge": "The bridge is the product formula for Psi_U-hat, transformed by v=Ty/x into sin(v)/v-type kernels. The decay assumption on F controls the discarded tail.",
+          "boundary_or_failure": "The replacements require T Delta <= x and the stated decay for the second lemma. Error powers and the n=2 logarithmic exception depend on the detailed estimates.",
+          "uncertainty": "The mechanism is prose-supported, while exact powers and normalizing constants are display-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Establishes the proof architecture before invoking the twin-prime input.",
+      "line_end": 564,
+      "line_start": 514,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Definitions of I1 and I2 are display-dependent but structurally readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces complementary head and tail Dirichlet polynomials, inserts the smooth time cutoff, and isolates I1 and I2 with controlled cross-term and truncation errors.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reduction of pair correlation to two smoothed Dirichlet-polynomial mean values",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u13.txt",
+      "unit_bytes": 2461,
+      "unit_id": "full_openalex_w2042563031_u13",
+      "unit_sha256": "12a6cb9bb59e5a41f0b42fbfed2218c12b164a7aa77aa85cef6bac3136331183",
+      "unit_type": "proof-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u13.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 506,
+          "line_end": 513,
+          "text": "   T               T       v           T    v\n          T /x                                        1/∆\n      ∞\n                     sin Tx y\n =        F (y)        T\n                                dy + O(K∆).\n      1                xy\n\n",
+          "sha256": "1c315d3d2786c7b8fe5c8c3be799e5b11bfc605dcf13563cb8365bdca55def68"
+        },
+        "after": {
+          "line_start": 565,
+          "line_end": 572,
+          "text": "    We now assume the Twin Prime Conjecture defined in the previous sec-\ntion. By Corollary 1 of [5] (see also the calculations at the end of [5] and\n[6]) and Lemma 2.3, one has\n                           X\n     I1 (x, T ) = ΨbU (0)T   Λ(n)2 n\n                              n≤x\n                          \u0012        \u00133     ∞     \u0010   X            \u0011\n                      T                                                     dv\n",
+          "sha256": "1bd0c62bf861907486b648feb3a493e90c3f8a85e1709ee24006ef315f8c3a08"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the theorem",
+            "line_end": 898,
+            "line_start": 514,
+            "mathematical_role": "reduces pair correlation to Dirichlet-polynomial mean values and evaluates the three correction components"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 564,
+          "line_start": 514,
+          "title": "Reduction of pair correlation to two smoothed Dirichlet-polynomial mean values",
+          "unit_id": "full_openalex_w2042563031_u13",
+          "unit_type": "proof-reduction",
+          "why_material": "Introduces complementary head and tail Dirichlet polynomials, inserts the smooth time cutoff, and isolates I1 and I2 with controlled cross-term and truncation errors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Establishes the proof architecture before invoking the twin-prime input.",
+          "representation_dependency": "Definitions of I1 and I2 are display-dependent but structurally readable.",
+          "unit_id": "full_openalex_w2042563031_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 512,
+            "line_start": 436,
+            "title": "Replacing the smooth Fourier kernel by sine kernels",
+            "unit_id": "full_openalex_w2042563031_u12",
+            "unit_type": "kernel-replacement-lemmas",
+            "why_material": "Quantifies when weighted Fourier integrals can be replaced by explicit sine-kernel integrals, including a version for decaying test functions."
+          },
+          {
+            "line_end": 635,
+            "line_start": 565,
+            "title": "Evaluation of the head mean value I1",
+            "unit_id": "full_openalex_w2042563031_u14",
+            "unit_type": "mean-value-evaluation",
+            "why_material": "Uses the prime-pair hypothesis and the Lambda-square diagonal estimate to turn I1 into a singular-series sum plus an explicit sine-integral correction."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Iterated averaging constructs a cutoff strong enough to import mean-value estimates, while explicit Fourier control later replaces that auxiliary cutoff by sine kernels with errors below the target scale.",
+            "limit": "The source verifies this for its chosen cutoff and parameter regime; it does not establish a cutoff-independent theorem.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u03",
+              "full_openalex_w2042563031_u11",
+              "full_openalex_w2042563031_u12",
+              "full_openalex_w2042563031_u13"
+            ],
+            "title": "Smoothing as a removable proof interface"
+          },
+          {
+            "claim": "The proof gains tractability by separating a discrete cosine-weighted singular-series term from two complementary centered-error transforms, evaluating each in its natural representation, and recombining only after cancellations are explicit.",
+            "limit": "This is a source-specific proof architecture, not evidence that the same decomposition is canonical for other zero-statistics problems.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u13",
+              "full_openalex_w2042563031_u14",
+              "full_openalex_w2042563031_u15",
+              "full_openalex_w2042563031_u16",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Three-component decomposition isolates discrete, head, and tail corrections"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 513,
+              "line_start": 513,
+              "reason": "section-separating blank line"
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u13",
+          "spontaneous_reading": "The proof becomes tractable after splitting the von Mangoldt Dirichlet series at n=x into complementary head and tail polynomials, then measuring each through the same smooth time window."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u13",
+          "source_grounded_mathematics": "The source defines A(s) from n<=x and A*(s) from n>x. Under RH it expresses F(x,T) through integrals involving both, inserts Psi_U(t/T), extends the time integral to the real line, and reduces the statistic to scaled mean values I1 and I2 plus explicit errors.",
+          "conceptual_reading": "The split assigns the two coefficient ranges their natural weights and isolates their quadratic contributions. Smoothing controls truncation, while RH is used to bound the cross term rather than treating it as a third main contribution.",
+          "representation_or_bridge": "A and A* are complementary Dirichlet-polynomial representations of the arithmetic data; I1 and I2 bridge their smoothed L2 mean values back to pair correlation through equation (11).",
+          "boundary_or_failure": "The reduction depends on RH and modified results cited from earlier papers. This unit establishes architecture, not the later twin-prime evaluation of either mean value.",
+          "uncertainty": "Definitions and scaling constants are display-dependent but structurally legible."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The intervening algebra is retained because it shows where diagonal and shifted-prime contributions separate.",
+      "line_end": 635,
+      "line_start": 565,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense displayed sums carry text-layer risk; exact constants should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the prime-pair hypothesis and the Lambda-square diagonal estimate to turn I1 into a singular-series sum plus an explicit sine-integral correction.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Evaluation of the head mean value I1",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u14.txt",
+      "unit_bytes": 4283,
+      "unit_id": "full_openalex_w2042563031_u14",
+      "unit_sha256": "3a0e93dc415cff4d7b35067c6d8f12d65ba6835b2590e3aaef7ee3abb2fe8364",
+      "unit_type": "mean-value-evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u14.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 557,
+          "line_end": 564,
+          "text": "                               t        3\n          I2 (x, T ) =    ΨU       A∗     + it − u−3/2−it du dt\n                       −∞\n                               T        2       x\n\nby Lemma 1 of [6] with modification V = −T /U and T − T /U , and W =\n2T /U . The Riemann Hypothesis is assumed here so that the contribution\nfrom the cross term is estimated via Theorem 3 of [5].\n",
+          "sha256": "0a39c1e2eba6ab2243a2ea958b8c51a268b03052afa1e014d8d3efd159278cd9"
+        },
+        "after": {
+          "line_start": 636,
+          "line_end": 643,
+          "text": "      Similarly, by Corollary 2 of [5] and Lemma 2.3,\n                                                           T /2πx\u0012                    \u0013\n                              X Λ(n)2               8π 2              X        S(h)\n  I2 (x, T ) = ΨbU (0)T                           +                                       Re ΨbU (v)v dv\n                                          n3         T                          h2\n                              x<n                              0     1≤h≤H   ∗\n\n                              T H ∗ /2πx   \u0012           X                \u0013\n",
+          "sha256": "4126c6cef899a9400dbe3e9868c7256a50da0710f529e47d915869b565d9f81d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the theorem",
+            "line_end": 898,
+            "line_start": 514,
+            "mathematical_role": "reduces pair correlation to Dirichlet-polynomial mean values and evaluates the three correction components"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 635,
+          "line_start": 565,
+          "title": "Evaluation of the head mean value I1",
+          "unit_id": "full_openalex_w2042563031_u14",
+          "unit_type": "mean-value-evaluation",
+          "why_material": "Uses the prime-pair hypothesis and the Lambda-square diagonal estimate to turn I1 into a singular-series sum plus an explicit sine-integral correction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The intervening algebra is retained because it shows where diagonal and shifted-prime contributions separate.",
+          "representation_dependency": "Dense displayed sums carry text-layer risk; exact constants should be scan-checked.",
+          "unit_id": "full_openalex_w2042563031_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 564,
+            "line_start": 514,
+            "title": "Reduction of pair correlation to two smoothed Dirichlet-polynomial mean values",
+            "unit_id": "full_openalex_w2042563031_u13",
+            "unit_type": "proof-reduction",
+            "why_material": "Introduces complementary head and tail Dirichlet polynomials, inserts the smooth time cutoff, and isolates I1 and I2 with controlled cross-term and truncation errors."
+          },
+          {
+            "line_end": 713,
+            "line_start": 636,
+            "title": "Tail mean value I2 and the three-correction decomposition",
+            "unit_id": "full_openalex_w2042563031_u15",
+            "unit_type": "mean-value-evaluation-and-decomposition",
+            "why_material": "Evaluates the complementary Dirichlet tail and recombines both mean values into three named integrals I1, I2, I3 plus a universal sine term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof gains tractability by separating a discrete cosine-weighted singular-series term from two complementary centered-error transforms, evaluating each in its natural representation, and recombining only after cancellations are explicit.",
+            "limit": "This is a source-specific proof architecture, not evidence that the same decomposition is canonical for other zero-statistics problems.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u13",
+              "full_openalex_w2042563031_u14",
+              "full_openalex_w2042563031_u15",
+              "full_openalex_w2042563031_u16",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Three-component decomposition isolates discrete, head, and tail corrections"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u14",
+          "spontaneous_reading": "The head mean value separates into a diagonal Lambda-square moment and off-diagonal shifted-prime correlations; smoothing then converts the latter toward a singular-series expression while producing an explicit sine correction."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u14",
+          "source_grounded_mathematics": "Assuming the stated Twin Prime Conjecture, the source applies a prior mean-value result and Lemma 2.3 to expand I1. The diagonal terms give the T x^2 log x and secondary contributions, while shifted terms involve S(h)h^2; the Fourier cutoff integral is then approximated by an integral of sin(v)/v.",
+          "conceptual_reading": "Diagonal and shifted correlations are evaluated in different representations before recombination. This prevents the arithmetic singular series from being hidden inside the analytic smoothing calculation.",
+          "representation_or_bridge": "The smoothed Fourier factor Re Psi_U-hat links shifted-prime sums to an integral parameter v, and its sinc formula exposes the sine-kernel correction.",
+          "boundary_or_failure": "The evaluation is conditional on the quantitative twin-prime input and cited results. Dense sums make exact constants unsafe to reuse without scan verification.",
+          "uncertainty": "The separation and final sine-integral role are clear; intermediate coefficients have text-layer risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This decomposition exposes which subsequent singular-series transforms must cancel.",
+      "line_end": 713,
+      "line_start": 636,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout is essential; prose and equation (12) preserve the high-level decomposition.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Evaluates the complementary Dirichlet tail and recombines both mean values into three named integrals I1, I2, I3 plus a universal sine term.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tail mean value I2 and the three-correction decomposition",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u15.txt",
+      "unit_bytes": 4773,
+      "unit_id": "full_openalex_w2042563031_u15",
+      "unit_sha256": "58cb40cde1d5cd80f5cbd07d7f00540f78a0dfb92a7fe0b53992e204eb89a6ef",
+      "unit_type": "mean-value-evaluation-and-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u15.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 628,
+          "line_end": 635,
+          "text": "                                                 0\n                                                T /x                \u0012         \u0013    \u0012 \u0013\n                                        1              sin u          K∆2 T 2       T\n                                     =                       du + O      2\n                                                                                +O     .\n                                       2π                u             x            τx\n                                                 0\n\n",
+          "sha256": "81e9bfb25cd18e08ca2ab660c2b07b3e2fa1d1e14bd9f026e6981e6ffbd05ae3"
+        },
+        "after": {
+          "line_start": 714,
+          "line_end": 721,
+          "text": "            1\u0012 X             H∗      \u0013        \u0012     \u0013\n                     S(h)        du        b    Ty\n(13) I3 =                  −            Re ΨU         y dy\n                      h2          u2            2πx\n             0     ∗\n                 h≤H          y\n                       \u0012X                    \u0012    \u0013\u0013 T /2πx\n             4π 2 x2                S(h)       1\n",
+          "sha256": "6bd2007c55f0de395b7b6b1e01a43930ef8f5fbb2780925646fcaee3bbf4706a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the theorem",
+            "line_end": 898,
+            "line_start": 514,
+            "mathematical_role": "reduces pair correlation to Dirichlet-polynomial mean values and evaluates the three correction components"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 713,
+          "line_start": 636,
+          "title": "Tail mean value I2 and the three-correction decomposition",
+          "unit_id": "full_openalex_w2042563031_u15",
+          "unit_type": "mean-value-evaluation-and-decomposition",
+          "why_material": "Evaluates the complementary Dirichlet tail and recombines both mean values into three named integrals I1, I2, I3 plus a universal sine term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This decomposition exposes which subsequent singular-series transforms must cancel.",
+          "representation_dependency": "Formula layout is essential; prose and equation (12) preserve the high-level decomposition.",
+          "unit_id": "full_openalex_w2042563031_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 635,
+            "line_start": 565,
+            "title": "Evaluation of the head mean value I1",
+            "unit_id": "full_openalex_w2042563031_u14",
+            "unit_type": "mean-value-evaluation",
+            "why_material": "Uses the prime-pair hypothesis and the Lambda-square diagonal estimate to turn I1 into a singular-series sum plus an explicit sine-integral correction."
+          },
+          {
+            "line_end": 747,
+            "line_start": 714,
+            "title": "Conversion of I3 into a cosine-weighted singular-series correction",
+            "unit_id": "full_openalex_w2042563031_u16",
+            "unit_type": "singular-series-to-cosine-transform",
+            "why_material": "Uses the global reciprocal-square identity and the smooth Fourier formula to express I3 as a cosine-weighted singular-series sum minus a sine integral."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof gains tractability by separating a discrete cosine-weighted singular-series term from two complementary centered-error transforms, evaluating each in its natural representation, and recombining only after cancellations are explicit.",
+            "limit": "This is a source-specific proof architecture, not evidence that the same decomposition is canonical for other zero-statistics problems.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u13",
+              "full_openalex_w2042563031_u14",
+              "full_openalex_w2042563031_u15",
+              "full_openalex_w2042563031_u16",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Three-component decomposition isolates discrete, head, and tail corrections"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u15",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u15",
+          "spontaneous_reading": "After the tail polynomial is evaluated, both mean values are reorganized into three correction integrals with distinct jobs: a head transform, a tail transform, and a discrete singular-series mass, plus a universal sine term."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u15",
+          "source_grounded_mathematics": "Using the complementary mean-value estimate and Lemma 2.3, the source expands the tail quantity I2. A change of variables and equation (11) then yield equation (12), expressing F(x,T) as its logarithmic main term, three named correction integrals, a sine integral, and controlled errors.",
+          "conceptual_reading": "This is a proof-level modularization: each correction is isolated in the representation best suited to its later evaluation, and cancellation is postponed until those evaluations are explicit.",
+          "representation_or_bridge": "The cutoff variable is rescaled to y=2 pi x v/T. The resulting three integrals separate a weighted head sum, a truncated tail discrepancy, and a global singular-series contribution.",
+          "boundary_or_failure": "The notation reuses I1 and I2 for new correction integrals after earlier mean values, so roles must be tracked from equation (12). The derivation remains conditional on prior hypotheses and mean-value results.",
+          "uncertainty": "Formula layout is essential for exact coefficients; the high-level three-component decomposition is explicit in the text and dossier."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the discrete arithmetic correction that appears explicitly in Theorem 1.1.",
+      "line_end": 747,
+      "line_start": 714,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The equality chain is formula-dependent but its use of Lemma 2.4 is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the global reciprocal-square identity and the smooth Fourier formula to express I3 as a cosine-weighted singular-series sum minus a sine integral.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conversion of I3 into a cosine-weighted singular-series correction",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u16.txt",
+      "unit_bytes": 1737,
+      "unit_id": "full_openalex_w2042563031_u16",
+      "unit_sha256": "c8822edd523851d2b2e563a67181552d0f7d61465d896a4f2883f94c71066177",
+      "unit_type": "singular-series-to-cosine-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u16.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 706,
+          "line_end": 713,
+          "text": "                =     log x + I1 + I2 + I3 −                        dv\n                   2π          π         π      π       3π      v\n                                                            0\n                       \u0012                \u0013     \u0012 1+6ε \u0013\n                              KT                x\n                   +O                      +O            + O(x1/2+7ε ),\n                          (log T ) M −2           T\nwhere I1 , I2 and I3 are the first three integrals respectively. Now,\n",
+          "sha256": "a2e155cdc8023dad6d66a648ceed0301905895e3c4a663c553172b025ae37ed4"
+        },
+        "after": {
+          "line_start": 748,
+          "line_end": 755,
+          "text": "\n<!-- source-page: 12 -->\n\n210                                      T. H. Chan\n\n             ∞                 \u0013 \u0012\n                           T y dy\n(14) I1 =        S2 (y) Re ΨbU\n",
+          "sha256": "c3d45bc9845ce79a86af5fc02b9dc2c82c42d1c37e25614a350033e94fa0ed12"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the theorem",
+            "line_end": 898,
+            "line_start": 514,
+            "mathematical_role": "reduces pair correlation to Dirichlet-polynomial mean values and evaluates the three correction components"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 747,
+          "line_start": 714,
+          "title": "Conversion of I3 into a cosine-weighted singular-series correction",
+          "unit_id": "full_openalex_w2042563031_u16",
+          "unit_type": "singular-series-to-cosine-transform",
+          "why_material": "Uses the global reciprocal-square identity and the smooth Fourier formula to express I3 as a cosine-weighted singular-series sum minus a sine integral."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the discrete arithmetic correction that appears explicitly in Theorem 1.1.",
+          "representation_dependency": "The equality chain is formula-dependent but its use of Lemma 2.4 is explicit.",
+          "unit_id": "full_openalex_w2042563031_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 713,
+            "line_start": 636,
+            "title": "Tail mean value I2 and the three-correction decomposition",
+            "unit_id": "full_openalex_w2042563031_u15",
+            "unit_type": "mean-value-evaluation-and-decomposition",
+            "why_material": "Evaluates the complementary Dirichlet tail and recombines both mean values into three named integrals I1, I2, I3 plus a universal sine term."
+          },
+          {
+            "line_end": 797,
+            "line_start": 753,
+            "title": "Expansion of I1 through S2, epsilon, and f",
+            "unit_id": "full_openalex_w2042563031_u17",
+            "unit_type": "centered-sum-transform",
+            "why_material": "Applies partial-summation identities and kernel-replacement lemmas to rewrite the first correction integral in terms of the centered singular-series error and its primitive f."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof gains tractability by separating a discrete cosine-weighted singular-series term from two complementary centered-error transforms, evaluating each in its natural representation, and recombining only after cancellations are explicit.",
+            "limit": "This is a source-specific proof architecture, not evidence that the same decomposition is canonical for other zero-statistics problems.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u13",
+              "full_openalex_w2042563031_u14",
+              "full_openalex_w2042563031_u15",
+              "full_openalex_w2042563031_u16",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Three-component decomposition isolates discrete, head, and tail corrections"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u16",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u16",
+          "spontaneous_reading": "The third correction is converted from an integrated cutoff expression into a transparent discrete cosine response of the singular series, with a sine integral subtracting the continuous baseline."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u16",
+          "source_grounded_mathematics": "Equation (13) rewrites I3 using the Fourier formula, Lemma 2.4, and T Delta <= x. The result is x^2/T^2 times a reciprocal-square singular-series sum weighted by 1-cos(T h/x), minus (x/T) times an integral of sin(u)/u, with O(K Delta) error.",
+          "conceptual_reading": "Subtracting the continuous reciprocal-square baseline leaves the arithmetic deviations encoded by S(h), while the cosine factor selects their response at scale T/x.",
+          "representation_or_bridge": "Fourier inversion turns the smooth cutoff integral into sine and cosine kernels; Lemma 2.4 supplies the global reciprocal-square normalization needed to expose 1-cos(T h/x).",
+          "boundary_or_failure": "The identity is tied to the constructed cutoff and stated scale condition. It supplies one component of Theorem 1.1 and is not independently a pair-correlation asymptotic.",
+          "uncertainty": "The equality chain is dense but recoverable; exact normalization remains display-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This produces three of the theorem's explicit remainder integrals.",
+      "line_end": 797,
+      "line_start": 753,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Nested integrals and constants are layout-sensitive; the cited equations make the transformation traceable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies partial-summation identities and kernel-replacement lemmas to rewrite the first correction integral in terms of the centered singular-series error and its primitive f.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expansion of I1 through S2, epsilon, and f",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u17.txt",
+      "unit_bytes": 2113,
+      "unit_id": "full_openalex_w2042563031_u17",
+      "unit_sha256": "5d846afca7772550beb63f8fdea96db7254975c7c438ba3be373a719a60280e6",
+      "unit_type": "centered-sum-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u17.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 745,
+          "line_end": 752,
+          "text": "                      h≤H    ∗                                               0\n\nby (10), Lemma 2.4 and T ∆ ≤ x. With the notation of Sα (y) and Tα (y),\n\n<!-- source-page: 12 -->\n\n210                                      T. H. Chan\n\n",
+          "sha256": "99e70219b37f9e5a23bbb0911feb57bbcfa00f2247c5a77137d91576c9bd98a4"
+        },
+        "after": {
+          "line_start": 798,
+          "line_end": 805,
+          "text": "             X                   H∗\n                  S(h)     du                         1      1\n                     2\n                       −     2\n                               = T2 (y) − T2 (H ∗ ) − − ∗\n                   h       u                          y H\n          y<h≤H ∗        y\n                                                  \u0012               \u0013\n",
+          "sha256": "d46f1ceddc7f23b3e1da4a1ad097013380545401f2bc03060372a1a0f436521f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the theorem",
+            "line_end": 898,
+            "line_start": 514,
+            "mathematical_role": "reduces pair correlation to Dirichlet-polynomial mean values and evaluates the three correction components"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 797,
+          "line_start": 753,
+          "title": "Expansion of I1 through S2, epsilon, and f",
+          "unit_id": "full_openalex_w2042563031_u17",
+          "unit_type": "centered-sum-transform",
+          "why_material": "Applies partial-summation identities and kernel-replacement lemmas to rewrite the first correction integral in terms of the centered singular-series error and its primitive f."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This produces three of the theorem's explicit remainder integrals.",
+          "representation_dependency": "Nested integrals and constants are layout-sensitive; the cited equations make the transformation traceable.",
+          "unit_id": "full_openalex_w2042563031_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 747,
+            "line_start": 714,
+            "title": "Conversion of I3 into a cosine-weighted singular-series correction",
+            "unit_id": "full_openalex_w2042563031_u16",
+            "unit_type": "singular-series-to-cosine-transform",
+            "why_material": "Uses the global reciprocal-square identity and the smooth Fourier formula to express I3 as a cosine-weighted singular-series sum minus a sine integral."
+          },
+          {
+            "line_end": 874,
+            "line_start": 798,
+            "title": "Expansion of I2 through T2 and the same error primitive",
+            "unit_id": "full_openalex_w2042563031_u18",
+            "unit_type": "tail-sum-transform",
+            "why_material": "Controls truncation at H* and rewrites the tail correction through epsilon and f so it can be paired with I1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Centering singular-series sums and integrating their discrepancy into f turns several discrete arithmetic errors into a common analytic object whose appearances in head and tail transforms can be bounded or canceled.",
+            "limit": "The quantitative quality of f inherits the strong prime-pair hypothesis and exact coefficients remain formula-layout-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u02",
+              "full_openalex_w2042563031_u08",
+              "full_openalex_w2042563031_u10",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Arithmetic discrepancy compressed into one transferable remainder"
+          },
+          {
+            "claim": "The proof gains tractability by separating a discrete cosine-weighted singular-series term from two complementary centered-error transforms, evaluating each in its natural representation, and recombining only after cancellations are explicit.",
+            "limit": "This is a source-specific proof architecture, not evidence that the same decomposition is canonical for other zero-statistics problems.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u13",
+              "full_openalex_w2042563031_u14",
+              "full_openalex_w2042563031_u15",
+              "full_openalex_w2042563031_u16",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Three-component decomposition isolates discrete, head, and tail corrections"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u17",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u17",
+          "spontaneous_reading": "The head correction is successively recoded from S2 to the centered discrepancy epsilon and finally to f, so its arithmetic fluctuation appears in the same language as the tail correction that will be added later."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u17",
+          "source_grounded_mathematics": "Equation (14) begins with an integral of S2(y) against Re Psi_U-hat. Using identities (5) and (8) plus Lemmas 3.3 and 3.4, the source expands it into explicit epsilon and B terms and several sine-kernel integrals involving f and its inner integral.",
+          "conceptual_reading": "Partial summation and centering expose which pieces are universal and which carry singular-series error. Kernel replacement then removes the auxiliary cutoff while preserving the f-dependent structure needed for cancellation.",
+          "representation_or_bridge": "S2 is the weighted discrete sum, epsilon its centered summatory error, f its primitive, and sin(Ty/x) the explicit oscillatory kernel linking those arithmetic objects to the transition scale.",
+          "boundary_or_failure": "The resulting nested integrals depend on earlier bounds for f and on the smoothing lemmas. This span alone does not show their cancellation with the tail terms.",
+          "uncertainty": "Nested integrals and constants are layout-sensitive, though the cited transformation chain is traceable."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 838-840 contain an unreadable extracted inequality and are not used as standalone evidence; the surrounding definition of H* and the explicit continuation at lines 843-874 recover the asserted negligible-tail role.",
+      "line_end": 874,
+      "line_start": 798,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula/OCR dependency, with one quarantined micro-fragment at lines 838-840.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Controls truncation at H* and rewrites the tail correction through epsilon and f so it can be paired with I1.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expansion of I2 through T2 and the same error primitive",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u18.txt",
+      "unit_bytes": 3872,
+      "unit_id": "full_openalex_w2042563031_u18",
+      "unit_sha256": "b6b418de09ae0a0de78d85edd77f452dabe095f875dbcd22e81dec3247f7994f",
+      "unit_type": "tail-sum-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u18.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 790,
+          "line_end": 797,
+          "text": "                                     1\n\nby (5), (8) and Lemmas 3.3 and 3.4. As for I2 , note that by (4) and (6),\n                                     \u0012            \u0013\n                              1        (log z)2/3\n(15)                 T2 (z) = + O                   ,\n                              z            z2\nand\n",
+          "sha256": "5ef42904cd7ccdfdd0db69b2c4e0f701d53124e1f9ec669b35eb7834729ab731"
+        },
+        "after": {
+          "line_start": 875,
+          "line_end": 882,
+          "text": "Now (14) and (16) give\n                                   ∞                  \u0012         \u0013 ∞\n                      x                sin Txy                       Ty\n                                                          B 11 x sin x\n(17)     I1 + I2 = −                           dy +         +           dy\n                     2T                  y2               2   12 T  y4\n                                 1                             1\n                                ∞        T           ∞ y               T\n",
+          "sha256": "355d1f7ee12c27ae096c6ea06cdb25216f1add4c7e99bdc04a53ae5a80ca9322"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the theorem",
+            "line_end": 898,
+            "line_start": 514,
+            "mathematical_role": "reduces pair correlation to Dirichlet-polynomial mean values and evaluates the three correction components"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 874,
+          "line_start": 798,
+          "title": "Expansion of I2 through T2 and the same error primitive",
+          "unit_id": "full_openalex_w2042563031_u18",
+          "unit_type": "tail-sum-transform",
+          "why_material": "Controls truncation at H* and rewrites the tail correction through epsilon and f so it can be paired with I1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 838-840 contain an unreadable extracted inequality and are not used as standalone evidence; the surrounding definition of H* and the explicit continuation at lines 843-874 recover the asserted negligible-tail role.",
+          "representation_dependency": "High formula/OCR dependency, with one quarantined micro-fragment at lines 838-840.",
+          "unit_id": "full_openalex_w2042563031_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 797,
+            "line_start": 753,
+            "title": "Expansion of I1 through S2, epsilon, and f",
+            "unit_id": "full_openalex_w2042563031_u17",
+            "unit_type": "centered-sum-transform",
+            "why_material": "Applies partial-summation identities and kernel-replacement lemmas to rewrite the first correction integral in terms of the centered singular-series error and its primitive f."
+          },
+          {
+            "line_end": 897,
+            "line_start": 875,
+            "title": "Cancellation of centered errors and completion of Theorem 1.1",
+            "unit_id": "full_openalex_w2042563031_u19",
+            "unit_type": "proof-synthesis",
+            "why_material": "Adds the transformed I1 and I2, cancels their common centered-error terms, and inserts the result with I3 into the global decomposition."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Centering singular-series sums and integrating their discrepancy into f turns several discrete arithmetic errors into a common analytic object whose appearances in head and tail transforms can be bounded or canceled.",
+            "limit": "The quantitative quality of f inherits the strong prime-pair hypothesis and exact coefficients remain formula-layout-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u02",
+              "full_openalex_w2042563031_u08",
+              "full_openalex_w2042563031_u10",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Arithmetic discrepancy compressed into one transferable remainder"
+          },
+          {
+            "claim": "The proof gains tractability by separating a discrete cosine-weighted singular-series term from two complementary centered-error transforms, evaluating each in its natural representation, and recombining only after cancellations are explicit.",
+            "limit": "This is a source-specific proof architecture, not evidence that the same decomposition is canonical for other zero-statistics problems.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u13",
+              "full_openalex_w2042563031_u14",
+              "full_openalex_w2042563031_u15",
+              "full_openalex_w2042563031_u16",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Three-component decomposition isolates discrete, head, and tail corrections"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 840,
+              "line_start": 838,
+              "reason": "isolated inequality fragment is not recoverable from the text layer"
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u18",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u18",
+          "spontaneous_reading": "The tail correction is brought into the same epsilon-and-f basis as the head correction; the artificial truncation H* is shown negligible before the shared representation is used."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u18",
+          "source_grounded_mathematics": "The source expresses the truncated tail sum through T2(y)-T2(H*) and elementary reciprocal terms, uses the asymptotic T2(z)=1/z+O((log z)^{2/3}/z^2), extends the integral to infinity with negligible error, and applies identities (6), (9), and Lemma 3.4 to obtain equation (16) in terms of epsilon, B, and f.",
+          "conceptual_reading": "The finite cutoff is an auxiliary device rather than mathematical content: once its remainder is controlled, the tail lives in the same centered-error representation as the head, allowing termwise comparison.",
+          "representation_or_bridge": "T2 encodes reciprocal-square tail mass; epsilon and f convert it to the shared analytic remainder basis, and the sine kernel records scale dependence after smoothing is removed.",
+          "boundary_or_failure": "The isolated inequality at source lines 838-840 is unreadable and is not used as standalone evidence. The negligible-tail role is supported only by the surrounding definition of H* and the explicit continuation.",
+          "uncertainty": "High OCR/formula risk affects that micro-fragment and exact coefficients, while the overall extension-and-transform mechanism is recoverable."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the short but decisive synthesis step completing the main theorem.",
+      "line_end": 897,
+      "line_start": 875,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact surviving integral coefficients are display-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Adds the transformed I1 and I2, cancels their common centered-error terms, and inserts the result with I3 into the global decomposition.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cancellation of centered errors and completion of Theorem 1.1",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u19.txt",
+      "unit_bytes": 1325,
+      "unit_id": "full_openalex_w2042563031_u19",
+      "unit_sha256": "f0b6e831ae688bae20ec3cfcf60d0b3049a2ecbfae78487e1abd706b10ea352b",
+      "unit_type": "proof-synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u19.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 867,
+          "line_end": 874,
+          "text": "            1                                              1\n                 ∞       ∞\n                           f (u)    sin Tx y\n            +6       y           du          dy + O(K∆).\n                            u4        T\n                                      xy\n                 1       y\n\n",
+          "sha256": "d6fe0b6c0bbf242556fc62bf6cd28f146ae9e5bf3972041c32af6ccdc3f91736"
+        },
+        "after": {
+          "line_start": 898,
+          "line_end": 905,
+          "text": "\n   5. Proof of the corollaries\n    Proof of Corollary 1.1. This follows from Theorem 1.1 as x ≤ T and\nf (u) \n u1/2+ε by Lemma 2.2. Note that the error term is better than that\nof (2) for x in the given range.\n   Before proving Corollary 1.2, we need the following lemmas.\n\n",
+          "sha256": "907d6673cb22a239d365af82d15e8a2368b0613a2cebde4aedda81827a4fcf5f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the theorem",
+            "line_end": 898,
+            "line_start": 514,
+            "mathematical_role": "reduces pair correlation to Dirichlet-polynomial mean values and evaluates the three correction components"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 897,
+          "line_start": 875,
+          "title": "Cancellation of centered errors and completion of Theorem 1.1",
+          "unit_id": "full_openalex_w2042563031_u19",
+          "unit_type": "proof-synthesis",
+          "why_material": "Adds the transformed I1 and I2, cancels their common centered-error terms, and inserts the result with I3 into the global decomposition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the short but decisive synthesis step completing the main theorem.",
+          "representation_dependency": "Exact surviving integral coefficients are display-dependent.",
+          "unit_id": "full_openalex_w2042563031_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 874,
+            "line_start": 798,
+            "title": "Expansion of I2 through T2 and the same error primitive",
+            "unit_id": "full_openalex_w2042563031_u18",
+            "unit_type": "tail-sum-transform",
+            "why_material": "Controls truncation at H* and rewrites the tail correction through epsilon and f so it can be paired with I1."
+          },
+          {
+            "line_end": 903,
+            "line_start": 899,
+            "title": "Small-x corollary from growth control of f",
+            "unit_id": "full_openalex_w2042563031_u20",
+            "unit_type": "endpoint-bound",
+            "why_material": "Explains that the first corollary follows by bounding the error primitive, and records that the resulting error improves the earlier expansion in the stated range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Centering singular-series sums and integrating their discrepancy into f turns several discrete arithmetic errors into a common analytic object whose appearances in head and tail transforms can be bounded or canceled.",
+            "limit": "The quantitative quality of f inherits the strong prime-pair hypothesis and exact coefficients remain formula-layout-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u02",
+              "full_openalex_w2042563031_u08",
+              "full_openalex_w2042563031_u10",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Arithmetic discrepancy compressed into one transferable remainder"
+          },
+          {
+            "claim": "The proof gains tractability by separating a discrete cosine-weighted singular-series term from two complementary centered-error transforms, evaluating each in its natural representation, and recombining only after cancellations are explicit.",
+            "limit": "This is a source-specific proof architecture, not evidence that the same decomposition is canonical for other zero-statistics problems.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u13",
+              "full_openalex_w2042563031_u14",
+              "full_openalex_w2042563031_u15",
+              "full_openalex_w2042563031_u16",
+              "full_openalex_w2042563031_u17",
+              "full_openalex_w2042563031_u18",
+              "full_openalex_w2042563031_u19"
+            ],
+            "title": "Three-component decomposition isolates discrete, head, and tail corrections"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 898,
+              "line_start": 898,
+              "reason": "section-separating blank line"
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u19",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u19",
+          "spontaneous_reading": "The decisive step is not another estimate but alignment: once head and tail corrections are written with the same primitive f, their centered pieces combine and the surviving integrals can be inserted with the discrete correction to close the theorem."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u19",
+          "source_grounded_mathematics": "Adding equations (14) and (16) gives equation (17), an explicit formula for I1+I2 in sine-kernel integrals involving f and constants, with O(K Delta) error. Substitution of (13) and (17) into (12) completes Theorem 1.1.",
+          "conceptual_reading": "A common representation makes cancellation visible. The proof synthesizes the transformed head and tail before recombining them with I3, rather than estimating each original mean value independently to the endpoint.",
+          "representation_or_bridge": "Equation (17) is the matching interface between the shared f-based error transforms and the global decomposition (12); equation (13) supplies the separate cosine-weighted arithmetic term.",
+          "boundary_or_failure": "This short span relies on all earlier identities and bounds and does not restate the theorem's hypotheses. It shows algebraic synthesis, not an unconditional conclusion.",
+          "uncertainty": "Exact surviving coefficients are display-dependent, but the substitution route and completion claim are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uses Lemma 2.2 and the main theorem directly.",
+      "line_end": 903,
+      "line_start": 899,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Minimal; the decisive growth comparison is clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains that the first corollary follows by bounding the error primitive, and records that the resulting error improves the earlier expansion in the stated range.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Small-x corollary from growth control of f",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u20.txt",
+      "unit_bytes": 212,
+      "unit_id": "full_openalex_w2042563031_u20",
+      "unit_sha256": "ffa801c698327852c555e66d744667f052997f2cef85eb56e70f75efef38e327",
+      "unit_type": "endpoint-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u20.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 891,
+          "line_end": 898,
+          "text": "                                  f (u)     sin Tx y\n                         +6 y            du          dy + O(K∆)\n                                    u4        T\n                                              xy\n                            1   y\n\nby Lemma 3.3 again. Putting (13) and (17) into (12), we have Theorem 1.1.\n\n",
+          "sha256": "dd3b37ab70a1442d6b4ec22f654fe995577ec3595bf82ec74e25ddb5f424e733"
+        },
+        "after": {
+          "line_start": 904,
+          "line_end": 911,
+          "text": "   Before proving Corollary 1.2, we need the following lemmas.\n\n<!-- source-page: 14 -->\n\n212                                       T. H. Chan\n\n      Lemma 5.1.\n∞                         \u00142n−1\n",
+          "sha256": "c002594587f507183a075f75ce2250080507d125e8bb26ded54acbf33c1f4eac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of the corollaries",
+            "line_end": 1053,
+            "line_start": 899,
+            "mathematical_role": "extracts the two endpoint regimes using decay and oscillatory-integral estimates"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 903,
+          "line_start": 899,
+          "title": "Small-x corollary from growth control of f",
+          "unit_id": "full_openalex_w2042563031_u20",
+          "unit_type": "endpoint-bound",
+          "why_material": "Explains that the first corollary follows by bounding the error primitive, and records that the resulting error improves the earlier expansion in the stated range."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uses Lemma 2.2 and the main theorem directly.",
+          "representation_dependency": "Minimal; the decisive growth comparison is clear in prose.",
+          "unit_id": "full_openalex_w2042563031_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 897,
+            "line_start": 875,
+            "title": "Cancellation of centered errors and completion of Theorem 1.1",
+            "unit_id": "full_openalex_w2042563031_u19",
+            "unit_type": "proof-synthesis",
+            "why_material": "Adds the transformed I1 and I2, cancels their common centered-error terms, and inserts the result with I3 into the global decomposition."
+          },
+          {
+            "line_end": 955,
+            "line_start": 910,
+            "title": "Exact sine-moment identity and large-x kernel removal",
+            "unit_id": "full_openalex_w2042563031_u21",
+            "unit_type": "oscillatory-integral-control",
+            "why_material": "Supplies an exact repeated-integration formula and a decay lemma replacing sin(Ty/x) by its small-argument behavior when x>=T."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source treats the neighborhood of x=T as a matching problem: retain lower-order corrections in a broad conditional formula, then show distinct collections become negligible on opposite sides to recover compatible endpoint asymptotics.",
+            "limit": "This is conditional on RH and the stated quantitative twin-prime conjecture, and the final three-regime statement remains conjectural.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u06",
+              "full_openalex_w2042563031_u01",
+              "full_openalex_w2042563031_u07",
+              "full_openalex_w2042563031_u20",
+              "full_openalex_w2042563031_u22",
+              "full_openalex_w2042563031_u23"
+            ],
+            "title": "Transition-scale matching from two endpoint laws"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 898,
+              "line_start": 898,
+              "reason": "section-separating blank line"
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u20",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u20",
+          "spontaneous_reading": "On the x<=T side, the transition machinery collapses through one growth fact for f; no new oscillatory identity is needed."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u20",
+          "source_grounded_mathematics": "The proof of Corollary 1.1 invokes Theorem 1.1, the condition x<=T, and Lemma 2.2's bound f(u) << u^{1/2+epsilon}. It states that the resulting error improves equation (2) on the corollary's range.",
+          "conceptual_reading": "The primitive f was designed to concentrate arithmetic uncertainty, so a single growth bound suppresses all its contributions in the small-x regime.",
+          "representation_or_bridge": "Theorem 1.1 is the detailed representation, and the growth estimate for f is the compression that reduces it to the small-x endpoint law.",
+          "boundary_or_failure": "The argument inherits the main theorem's RH and twin-prime assumptions. The span gives no termwise estimates, only the decisive bound and conclusion.",
+          "uncertainty": "Minimal extraction risk; the comparison symbol in the f bound is visually degraded but its growth meaning is clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are the analytic tools for simplifying all correction terms in Corollary 1.2.",
+      "line_end": 955,
+      "line_start": 910,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Lemma 5.1's exact coefficients are formula-dependent; Lemma 5.2's mechanism is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Supplies an exact repeated-integration formula and a decay lemma replacing sin(Ty/x) by its small-argument behavior when x>=T.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exact sine-moment identity and large-x kernel removal",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u21.txt",
+      "unit_bytes": 2523,
+      "unit_id": "full_openalex_w2042563031_u21",
+      "unit_sha256": "8366c28dad6f9dee55fccd07f39d0285c7f932f98cf48c87e61964324ae5ceab",
+      "unit_type": "oscillatory-integral-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u21.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 902,
+          "line_end": 909,
+          "text": " u1/2+ε by Lemma 2.2. Note that the error term is better than that\nof (2) for x in the given range.\n   Before proving Corollary 1.2, we need the following lemmas.\n\n<!-- source-page: 14 -->\n\n212                                       T. H. Chan\n\n",
+          "sha256": "cbab66b24160c770d93ef71e2b7bdaf74f5e80745b233598838e035ab243cc46"
+        },
+        "after": {
+          "line_start": 956,
+          "line_end": 963,
+          "text": "   Proof of Corollary 1.2. First observe that when x is in the required\nrange, the error terms in Theorem 1.1 are Oε,M (T /(log T )M −2 ). Rewrite\nTheorem 1.1 as\n                                                            \u0012              \u0013\n            T                                                      T\nF (x, T ) =    log x − T1 + T2 − T3 + T4 − T5 + T6 + T7 + O                  .\n            2π                                                (log T )M −2\nThen, by Lemmas 5.1, 5.2 and 2.4,\n",
+          "sha256": "3968084be4ab77a77c6050f39d8b2bcc1ab857570303db814db9f9f5940e7019"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of the corollaries",
+            "line_end": 1053,
+            "line_start": 899,
+            "mathematical_role": "extracts the two endpoint regimes using decay and oscillatory-integral estimates"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 955,
+          "line_start": 910,
+          "title": "Exact sine-moment identity and large-x kernel removal",
+          "unit_id": "full_openalex_w2042563031_u21",
+          "unit_type": "oscillatory-integral-control",
+          "why_material": "Supplies an exact repeated-integration formula and a decay lemma replacing sin(Ty/x) by its small-argument behavior when x>=T."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These are the analytic tools for simplifying all correction terms in Corollary 1.2.",
+          "representation_dependency": "Lemma 5.1's exact coefficients are formula-dependent; Lemma 5.2's mechanism is prose-supported.",
+          "unit_id": "full_openalex_w2042563031_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 903,
+            "line_start": 899,
+            "title": "Small-x corollary from growth control of f",
+            "unit_id": "full_openalex_w2042563031_u20",
+            "unit_type": "endpoint-bound",
+            "why_material": "Explains that the first corollary follows by bounding the error primitive, and records that the resulting error improves the earlier expansion in the stated range."
+          },
+          {
+            "line_end": 1037,
+            "line_start": 941,
+            "title": "Carried v1 transition-range computation window",
+            "unit_id": "full_openalex_w2042563031_u04",
+            "unit_type": "piecewise strong pair-correlation conjecture",
+            "why_material": "Preserves the immutable v1 unit ID and its exact frozen span, which contains the end of the kernel-removal lemma and most of the termwise Corollary 1.2 computation feeding the later piecewise conjecture."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u21",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u21",
+          "spontaneous_reading": "Large-x simplification uses two complementary controls: an exact repeated-integration formula for pure sine moments and a decay lemma that lets a general weighted sine kernel be replaced by its small-argument limit."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u21",
+          "source_grounded_mathematics": "Lemma 5.1 evaluates integral_1^infinity sin(a x)/x^{2n} dx using a finite trigonometric sum and the cosine integral ci(a), obtained by repeated integration by parts. Lemma 5.2 states that for F(y) << y^{-3/2+epsilon} and T<=x, the sine-weighted integral equals integral F(y)dy up to O((T/x)^{1/2-epsilon}).",
+          "conceptual_reading": "The exact identity handles explicit kernel moments, while the decay lemma treats remainder functions abstractly. Together they separate calculable constants from controlled f-dependent errors.",
+          "representation_or_bridge": "The parameter a=T/x controls the oscillation. The cosine integral records exact boundary behavior, whereas decay of F justifies replacing sin(a y)/(a y) by one over the effective range.",
+          "boundary_or_failure": "Lemma 5.2 requires the stated decay and x>=T; it does not apply to arbitrary test functions. Lemma 5.1's exact coefficients are extraction-sensitive.",
+          "uncertainty": "The kernel-removal mechanism is clear in prose, while the finite-sum coefficients in Lemma 5.1 should be scan-checked for exact reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This complete proof window overlaps the carried u04 fragment while preserving that immutable record.",
+      "line_end": 1052,
+      "line_start": 956,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense formula dependency; exact coefficients should be verified from the scan if reused computationally.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands every correction term of Theorem 1.1, applies the oscillatory lemmas, and shows their constants combine to the refined strong-pair-correlation main term.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Termwise derivation of the large-x transition asymptotic",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u22.txt",
+      "unit_bytes": 4616,
+      "unit_id": "full_openalex_w2042563031_u22",
+      "unit_sha256": "646141c7de3f11540e762cbc3e19c655cc1b0763ac3d1d28325de8969acf0cf0",
+      "unit_type": "asymptotic-term-cancellation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u22.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 948,
+          "line_end": 955,
+          "text": "                       =           F (y) dy + O         |F (y)| dy + O\n                                                                         x\n                             1                    x/T\n                             ∞                  \u0012\u0012 \u00131/2−ε \u0013\n                                                  T\n                       =           F (y) dy + O             .\n                                                  x\n                             1\n",
+          "sha256": "3401259924636c3ae17aa645f80b74fa9549c268f8383fcdd2f322fd95b92111"
+        },
+        "after": {
+          "line_start": 1053,
+          "line_end": 1060,
+          "text": "\n<!-- source-page: 16 -->\n\n214                                     T. H. Chan\n\n   6. Conclusion. Based on (2), (3) and Corollaries 1.1 and 1.2, we pro-\npose the following more precise Strong Pair Correlation Conjecture: For any\nsmall ε > 0 and any large A > 1,\n",
+          "sha256": "a5e7e5e18f1ee180719953bf90e6e735a249e134fc081085a205b056fb46b43a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of the corollaries",
+            "line_end": 1053,
+            "line_start": 899,
+            "mathematical_role": "extracts the two endpoint regimes using decay and oscillatory-integral estimates"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1052,
+          "line_start": 956,
+          "title": "Termwise derivation of the large-x transition asymptotic",
+          "unit_id": "full_openalex_w2042563031_u22",
+          "unit_type": "asymptotic-term-cancellation",
+          "why_material": "Expands every correction term of Theorem 1.1, applies the oscillatory lemmas, and shows their constants combine to the refined strong-pair-correlation main term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This complete proof window overlaps the carried u04 fragment while preserving that immutable record.",
+          "representation_dependency": "Dense formula dependency; exact coefficients should be verified from the scan if reused computationally.",
+          "unit_id": "full_openalex_w2042563031_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1037,
+            "line_start": 941,
+            "title": "Carried v1 transition-range computation window",
+            "unit_id": "full_openalex_w2042563031_u04",
+            "unit_type": "piecewise strong pair-correlation conjecture",
+            "why_material": "Preserves the immutable v1 unit ID and its exact frozen span, which contains the end of the kernel-removal lemma and most of the termwise Corollary 1.2 computation feeding the later piecewise conjecture."
+          },
+          {
+            "line_end": 1089,
+            "line_start": 1058,
+            "title": "Three-regime precise Strong Pair Correlation Conjecture",
+            "unit_id": "full_openalex_w2042563031_u23",
+            "unit_type": "piecewise-conjectural-synthesis",
+            "why_material": "Synthesizes the earlier small-x result, the two new transition corollaries, and the established large-x conjectural form into a single piecewise prediction across x."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source treats the neighborhood of x=T as a matching problem: retain lower-order corrections in a broad conditional formula, then show distinct collections become negligible on opposite sides to recover compatible endpoint asymptotics.",
+            "limit": "This is conditional on RH and the stated quantitative twin-prime conjecture, and the final three-regime statement remains conjectural.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u06",
+              "full_openalex_w2042563031_u01",
+              "full_openalex_w2042563031_u07",
+              "full_openalex_w2042563031_u20",
+              "full_openalex_w2042563031_u22",
+              "full_openalex_w2042563031_u23"
+            ],
+            "title": "Transition-scale matching from two endpoint laws"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u22",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u22",
+          "spontaneous_reading": "The large-x law emerges only after seven correction terms are expanded in compatible asymptotic forms: their f-integrals and constants cancel, leaving the refined strong-pair-correlation main term."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u22",
+          "source_grounded_mathematics": "For T<=x in the required range, the source rewrites Theorem 1.1 as a main term plus T1 through T7. Applying Lemmas 5.1, 5.2, and 2.4, it expands each term and combines them to obtain F(x,T)=T log T/(2 pi)-T(1+log(2 pi))/(2 pi), up to the stated transition and logarithmic errors, proving Corollary 1.2.",
+          "conceptual_reading": "The calculation is an asymptotic matching argument: explicit sine moments, singular-series mass, and f-based head/tail remainders are normalized separately so their cancellation can be audited before the endpoint formula is recognized.",
+          "representation_or_bridge": "The seven-term decomposition is the bridge from the full transition theorem to the large-x endpoint; Lemma 5.2 removes oscillatory kernels and Lemma 2.4 replaces total singular-series mass by constants and f.",
+          "boundary_or_failure": "The result inherits RH and the stated Twin Prime Conjecture and is restricted to the corollary's range. The window overlaps a carried earlier unit, and exact coefficient reuse requires scan verification.",
+          "uncertainty": "Dense displays create high formula risk, but the final constant combination and conclusion are legible."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a conjectural synthesis, not an additional theorem; its pretraining-familiar setting limits novelty claims.",
+      "line_end": 1089,
+      "line_start": 1058,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Piecewise display layout is essential, but the three ranges and their roles are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Synthesizes the earlier small-x result, the two new transition corollaries, and the established large-x conjectural form into a single piecewise prediction across x.",
+      "source_id": "openalex_w2042563031",
+      "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three-regime precise Strong Pair Correlation Conjecture",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2042563031_u23.txt",
+      "unit_bytes": 1267,
+      "unit_id": "full_openalex_w2042563031_u23",
+      "unit_sha256": "ca77ea14b40093a36189c7c48dfef1205ab14adbf6c871432e95401f145a52a4",
+      "unit_type": "piecewise-conjectural-synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2042563031_u23.txt",
+      "source": {
+        "source_id": "openalex_w2042563031",
+        "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+        "authors": [
+          "Tsz Ho Chan"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "pair-correlation",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1050,
+          "line_end": 1057,
+          "text": "                          (log T )M −2\n\nwhich gives the corollary.\n\n<!-- source-page: 16 -->\n\n214                                     T. H. Chan\n\n",
+          "sha256": "729f4f133308990a6f131a3be00e7f22b82a2532072b8c3e0dfb354922fa531e"
+        },
+        "after": {
+          "line_start": 1090,
+          "line_end": 1097,
+          "text": "\n\n                                       References\n\n[1]   T. H. Chan, On a conjecture of Liu and Ye, Arch. Math. (Basel) 80 (2003), 600–610.\n[2]   —, More precise pair correlation of zeros and primes in short intervals, J. London\n      Math. Soc. (2) 68 (2003), 579–598.\n[3]   J. B. Friedlander and D. A. Goldston, Some singular series averages and the distri-\n",
+          "sha256": "f6c4220128a5bc914cef8b7eb41fdd0d017192f3d09d591e877827d0a13d388e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76148f9c1811931c8018af60b91f45e40baac0207338d0a7762775ef68ae6a12",
+        "dossier_sha256": "d1875f06f1e168ba28dd1fef8bbe027544b5dff84ab3b2e8f1c98d56f1683fa1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Conclusion and page furniture",
+            "line_end": 1091,
+            "line_start": 1054,
+            "mathematical_role": "synthesizes the proved ranges with prior results into a piecewise strong pair-correlation conjecture"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1089,
+          "line_start": 1058,
+          "title": "Three-regime precise Strong Pair Correlation Conjecture",
+          "unit_id": "full_openalex_w2042563031_u23",
+          "unit_type": "piecewise-conjectural-synthesis",
+          "why_material": "Synthesizes the earlier small-x result, the two new transition corollaries, and the established large-x conjectural form into a single piecewise prediction across x."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a conjectural synthesis, not an additional theorem; its pretraining-familiar setting limits novelty claims.",
+          "representation_dependency": "Piecewise display layout is essential, but the three ranges and their roles are recoverable.",
+          "unit_id": "full_openalex_w2042563031_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1052,
+            "line_start": 956,
+            "title": "Termwise derivation of the large-x transition asymptotic",
+            "unit_id": "full_openalex_w2042563031_u22",
+            "unit_type": "asymptotic-term-cancellation",
+            "why_material": "Expands every correction term of Theorem 1.1, applies the oscillatory lemmas, and shows their constants combine to the refined strong-pair-correlation main term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source treats the neighborhood of x=T as a matching problem: retain lower-order corrections in a broad conditional formula, then show distinct collections become negligible on opposite sides to recover compatible endpoint asymptotics.",
+            "limit": "This is conditional on RH and the stated quantitative twin-prime conjecture, and the final three-regime statement remains conjectural.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2042563031_u06",
+              "full_openalex_w2042563031_u01",
+              "full_openalex_w2042563031_u07",
+              "full_openalex_w2042563031_u20",
+              "full_openalex_w2042563031_u22",
+              "full_openalex_w2042563031_u23"
+            ],
+            "title": "Transition-scale matching from two endpoint laws"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1091,
+              "line_start": 1090,
+              "reason": "closing blank lines"
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2042563031_u23",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2042563031_u23",
+          "spontaneous_reading": "The conclusion stitches established and conditional transition information into one three-regime conjectural profile, making x=T and x=T^{1+epsilon} explicit matching boundaries rather than hiding them in a single coarse asymptotic."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2042563031_u23",
+          "source_grounded_mathematics": "The source proposes a more precise Strong Pair Correlation Conjecture with separate formulas for 1<=x<=T, T<=x<=T^{1+epsilon}, and T^{1+epsilon}<=x<=T^A. The first retains the refined small-x correction, the middle uses the transition asymptotic, and the last uses the established conjectural large-x shape.",
+          "conceptual_reading": "The piecewise statement is a synthesis of compatible asymptotic descriptions across scales. Its value is to expose which lower-order terms persist or disappear as x passes through the transition zones.",
+          "representation_or_bridge": "A single statistic F(x,T) is represented by three scale-adapted expansions, with overlapping boundaries intended to match the previously discussed endpoint laws.",
+          "boundary_or_failure": "This is explicitly a conjecture, not a new theorem. It depends on preceding results and earlier conjectural input, and the familiar setting does not by itself support novelty or discovery claims.",
+          "uncertainty": "The piecewise layout is essential and formula-sensitive, but the three ranges and their logical status are recoverable."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "3e1a3f19dd38724a65e3fcafc8326d47ee52b6b86ac492a15abca76e52eaa1d0"
+}

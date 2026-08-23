@@ -1,0 +1,977 @@
+{
+  "task": "whole-source quota-free semantic depth planning (missing-source repair)",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/repair_plans/batch_27_missing.jsonl",
+  "base_assignment_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/assignments/batch_27.json",
+  "base_plan_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_27.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "arxiv-preprint",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Pieter Moree",
+        "Izabela Petrykiewicz",
+        "Alisa Sedunova"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 1504,
+      "lineage": "v2-promoted-or-new-discovery",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "A COMPUTATIONAL HISTORY OF PRIME NUMBERS AND"
+        },
+        {
+          "line": 4,
+          "text": "RIEMANN ZEROS"
+        },
+        {
+          "line": 6,
+          "text": "PIETER MOREE, IZABELA PETRYKIEWICZ, AND ALISA SEDUNOVA"
+        },
+        {
+          "line": 39,
+          "text": "2 log t"
+        },
+        {
+          "line": 47,
+          "text": "2010 Mathematics Subject Classification. 11N37, 11Y60."
+        },
+        {
+          "line": 57,
+          "text": "2 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 109,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 3"
+        },
+        {
+          "line": 160,
+          "text": "4 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 212,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 5"
+        },
+        {
+          "line": 265,
+          "text": "6 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 290,
+          "text": "1737 by Euler who established the stronger result that p p is unbounded23. It turns out"
+        },
+        {
+          "line": 322,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 7"
+        },
+        {
+          "line": 377,
+          "text": "8 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 431,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 9"
+        },
+        {
+          "line": 458,
+          "text": "1022 and showed that they all are critical, [52]. The first fifteen zeros are listed in Table 2."
+        },
+        {
+          "line": 480,
+          "text": "10 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 485,
+          "text": "1. Euler-Maclaurin formula"
+        },
+        {
+          "line": 504,
+          "text": "2 s − 1 k=1"
+        },
+        {
+          "line": 536,
+          "text": "0 m k=0"
+        },
+        {
+          "line": 543,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 11"
+        },
+        {
+          "line": 549,
+          "text": "5 and 6 we will present more efficient algorithms to approximate ζ(s)."
+        },
+        {
+          "line": 551,
+          "text": "2. Gram test"
+        },
+        {
+          "line": 596,
+          "text": "12 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 598,
+          "text": "3. Total number of zeros up to a given height"
+        },
+        {
+          "line": 603,
+          "text": "1 1 X"
+        },
+        {
+          "line": 606,
+          "text": "2 Reγ>0"
+        },
+        {
+          "line": 609,
+          "text": "P −10"
+        },
+        {
+          "line": 611,
+          "text": "15 zeros found on the critical line. He then concluded that RH holds up to height T = 50."
+        },
+        {
+          "line": 627,
+          "text": "N (T ) = + 1 + S(T )."
+        },
+        {
+          "line": 631,
+          "text": "|S(T )| ≤ ."
+        },
+        {
+          "line": 644,
+          "text": "Section 9.4, strongly suggests that all the zeros are simple. It is also a numerical observation"
+        },
+        {
+          "line": 651,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 13"
+        },
+        {
+          "line": 662,
+          "text": "4. Riemann-Siegel formula"
+        },
+        {
+          "line": 693,
+          "text": "√ \u0012 \u0013−1/4 \u0010 X"
+        },
+        {
+          "line": 710,
+          "text": "14 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 726,
+          "text": "5. Turing’s method"
+        },
+        {
+          "line": 760,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 15"
+        },
+        {
+          "line": 791,
+          "text": "6. Odlyzko-Schönhage method"
+        },
+        {
+          "line": 812,
+          "text": "16 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 833,
+          "text": "7. A brief history of non-trivial zeros calculations"
+        },
+        {
+          "line": 863,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 17"
+        },
+        {
+          "line": 865,
+          "text": "8. Applications"
+        },
+        {
+          "line": 874,
+          "text": "8.1. The exact value of π(x). The record values for which π(x) has been exactly com-"
+        },
+        {
+          "line": 890,
+          "text": "8.2. Explicit prime number bounds. One of the most often quoted papers in compu-"
+        },
+        {
+          "line": 910,
+          "text": "18 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 916,
+          "text": "8.3. Comparison of π(x) with Li(x). From Riemann’s formulae (7) and (8) it follows"
+        },
+        {
+          "line": 937,
+          "text": "14 digits for the next 35 000 zeros, te Riele showed that (19) is false for at least 10 180"
+        },
+        {
+          "line": 958,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 19"
+        },
+        {
+          "line": 960,
+          "text": "8.4. The Mertens conjecture. The Mertens function M (x) denotes the difference"
+        },
+        {
+          "line": 971,
+          "text": "∞ Z ∞"
+        },
+        {
+          "line": 972,
+          "text": "1 X µ(n) M (t)"
+        },
+        {
+          "line": 1006,
+          "text": "56 Robert Daublebsky von Sterneck (1871 Vienna, Austria–1928 Graz,Austria), a student of F. Mertens."
+        },
+        {
+          "line": 1012,
+          "text": "20 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 1034,
+          "text": "8.5. The ternary Goldbach conjecture. The Goldbach conjecture (formulated in"
+        },
+        {
+          "line": 1035,
+          "text": "1742 in a letter to Euler) states that every even number exceeding 2 can be represented as"
+        },
+        {
+          "line": 1062,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 21"
+        },
+        {
+          "line": 1068,
+          "text": "9. Major recent developments"
+        },
+        {
+          "line": 1071,
+          "text": "9.1. Complex analytic number theory. Riemann’s paper and, in its wake, the proof of"
+        },
+        {
+          "line": 1099,
+          "text": "9.2. The Zeta Zoo. The study of the Riemann zeta-function has proved so extraordinarily"
+        },
+        {
+          "line": 1112,
+          "text": "22 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 1152,
+          "text": "9.3. Correlation of pairs of non-trivial zeros. So far we exclusively focused on find-"
+        },
+        {
+          "line": 1161,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 23"
+        },
+        {
+          "line": 1182,
+          "text": "9.4. Random matrix theory. In 1972 Montgomery discussed his pair correlation con-"
+        },
+        {
+          "line": 1187,
+          "text": "1951 to describe nuclear physics. The quantum mechanics of a heavy nucleus is complex"
+        },
+        {
+          "line": 1201,
+          "text": "1916 the asymptotic behaviour of I1 (T ). Ingham [36] improved this in 1926 in two ways,"
+        },
+        {
+          "line": 1211,
+          "text": "24 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 1258,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 25"
+        },
+        {
+          "line": 1287,
+          "text": "10. Words of warning"
+        },
+        {
+          "line": 1296,
+          "text": "11. Further reading"
+        },
+        {
+          "line": 1306,
+          "text": "26 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 1322,
+          "text": "12. Acknowledgement"
+        },
+        {
+          "line": 1328,
+          "text": "References"
+        },
+        {
+          "line": 1354,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 27"
+        },
+        {
+          "line": 1409,
+          "text": "28 P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA"
+        },
+        {
+          "line": 1422,
+          "text": "4076 of Lecture Notes in Comput. Sci., pages 156–167. Springer, Berlin, 2006."
+        },
+        {
+          "line": 1462,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS 29"
+        },
+        {
+          "line": 1495,
+          "text": "SSR, 15:291–294, 1937."
+        }
+      ],
+      "normalized_bytes": 100893,
+      "normalized_page_count": 29,
+      "normalized_relpath": "normalized/moree2018_computational_history_f303fc251167.txt",
+      "normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "prior_v1_units": [],
+      "source_id": "moree2018_computational_history",
+      "source_type": "historical-computational-survey",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "A Computational History of Prime Numbers and Riemann Zeros",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "explicit-computation",
+        "historical-foundational",
+        "zeros",
+        "prime-counting"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2018,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/moree2018_computational_history_f303fc251167.txt"
+    },
+    {
+      "acquisition_route": "arxiv-preprint",
+      "artifact_store": "riemann-corpus-v0",
+      "authors": [
+        "K. Soundararajan"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 1077,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "EXTREME VALUES OF ZETA AND L-FUNCTIONS"
+        },
+        {
+          "line": 12,
+          "text": "1. Introduction"
+        },
+        {
+          "line": 25,
+          "text": "T \u0010 V2 \u0011"
+        },
+        {
+          "line": 28,
+          "text": "2 log V"
+        },
+        {
+          "line": 40,
+          "text": "20 log log |t|"
+        },
+        {
+          "line": 55,
+          "text": "1 The value of B stated by him is B = 0.75 . . . , but there appears to be a numerical error in the"
+        },
+        {
+          "line": 64,
+          "text": "2 K. SOUNDARARAJAN"
+        },
+        {
+          "line": 83,
+          "text": "\u0010 V2 \u0011"
+        },
+        {
+          "line": 95,
+          "text": "Z ∞ Z ∞"
+        },
+        {
+          "line": 101,
+          "text": "1 for all y, and Φ(y) = 1 for 5/4 ≤ y ≤ 7/4. Plainly"
+        },
+        {
+          "line": 103,
+          "text": "|M2 (R, T )|"
+        },
+        {
+          "line": 120,
+          "text": "5 log log X"
+        },
+        {
+          "line": 124,
+          "text": "EXTREME VALUES OF ZETA AND L-FUNCTIONS 3"
+        },
+        {
+          "line": 130,
+          "text": "5 log log X"
+        },
+        {
+          "line": 181,
+          "text": "4 K. SOUNDARARAJAN"
+        },
+        {
+          "line": 195,
+          "text": "2. Large values of |ζ( 12 + it)|: Proof of Theorem 1"
+        },
+        {
+          "line": 214,
+          "text": "X \u0010 \u0010X \u00112 \u0011"
+        },
+        {
+          "line": 245,
+          "text": "EXTREME VALUES OF ZETA AND L-FUNCTIONS 5"
+        },
+        {
+          "line": 254,
+          "text": "X \u0010 1 X"
+        },
+        {
+          "line": 299,
+          "text": "X X X∞"
+        },
+        {
+          "line": 316,
+          "text": "\u0010 1 Y \u0011"
+        },
+        {
+          "line": 323,
+          "text": "6 K. SOUNDARARAJAN"
+        },
+        {
+          "line": 337,
+          "text": "√ \u0010 1 Y \u0011"
+        },
+        {
+          "line": 357,
+          "text": "1 Y\u0010 f (p) \u0011"
+        },
+        {
+          "line": 359,
+          "text": "2 p p"
+        },
+        {
+          "line": 366,
+          "text": "1 X 1 \u0010 |r(mk)|2 \u0011 1 X \u0010 X g(k) X 1 \u0011"
+        },
+        {
+          "line": 368,
+          "text": "2 k g(k) 2 k kg(k)"
+        },
+        {
+          "line": 378,
+          "text": "\u0010 X 1 X L \u0011"
+        },
+        {
+          "line": 395,
+          "text": "EXTREME VALUES OF ZETA AND L-FUNCTIONS 7"
+        },
+        {
+          "line": 409,
+          "text": "T 2 √"
+        },
+        {
+          "line": 420,
+          "text": "2 log T } |ζ( 21 + it)|4 dt ."
+        },
+        {
+          "line": 442,
+          "text": "\u0010 \u0011 41 \u0010 Z 2T \u0011 41 \u0010 Z ∞ \u0011 21"
+        },
+        {
+          "line": 447,
+          "text": "4\u0010Z ∞ \u0011−2"
+        },
+        {
+          "line": 448,
+          "text": "|M2 (R, T )| 4"
+        },
+        {
+          "line": 457,
+          "text": "0 otherwise."
+        },
+        {
+          "line": 461,
+          "text": "8 K. SOUNDARARAJAN"
+        },
+        {
+          "line": 487,
+          "text": "Z ∞ X"
+        },
+        {
+          "line": 498,
+          "text": "T \u0010 X"
+        },
+        {
+          "line": 504,
+          "text": "2 log N \u0011"
+        },
+        {
+          "line": 509,
+          "text": "2 log V )"
+        },
+        {
+          "line": 514,
+          "text": "3. Extreme values of quadratic Dirichlet"
+        },
+        {
+          "line": 534,
+          "text": "EXTREME VALUES OF ZETA AND L-FUNCTIONS 9"
+        },
+        {
+          "line": 539,
+          "text": "\u0010X \u00112 \u0011"
+        },
+        {
+          "line": 603,
+          "text": "10 K. SOUNDARARAJAN"
+        },
+        {
+          "line": 606,
+          "text": "\u0012 \u0013Z 2 \u0012 √ \u0013"
+        },
+        {
+          "line": 613,
+          "text": "\u0010X \u00112 \u0011"
+        },
+        {
+          "line": 620,
+          "text": "X X 1 X"
+        },
+        {
+          "line": 650,
+          "text": "\u0010X \u00112 ∞"
+        },
+        {
+          "line": 652,
+          "text": "\u0010X \u00112"
+        },
+        {
+          "line": 676,
+          "text": "2 Thus f is the function appearing in the proof of the lower bound in Theorem 2.1."
+        },
+        {
+          "line": 680,
+          "text": "EXTREME VALUES OF ZETA AND L-FUNCTIONS 11"
+        },
+        {
+          "line": 714,
+          "text": "\u0011 X Y"
+        },
+        {
+          "line": 750,
+          "text": "12 K. SOUNDARARAJAN"
+        },
+        {
+          "line": 769,
+          "text": "Y \u0010 1 \u0011 1 1"
+        },
+        {
+          "line": 775,
+          "text": "\u0012 \u0013 Y \u0010"
+        },
+        {
+          "line": 776,
+          "text": "1 Y p 1 \u0011\u0010 X X log p \u0011 1 1"
+        },
+        {
+          "line": 778,
+          "text": "2 p+1 p(p + 1) rs p(p + 1)"
+        },
+        {
+          "line": 807,
+          "text": "2 f (p)h(p) \u0011"
+        },
+        {
+          "line": 819,
+          "text": "EXTREME VALUES OF ZETA AND L-FUNCTIONS 13"
+        },
+        {
+          "line": 865,
+          "text": "4. Extreme values of L-functions of cusp forms: Proof of Theorem 3"
+        },
+        {
+          "line": 882,
+          "text": "14 K. SOUNDARARAJAN"
+        },
+        {
+          "line": 890,
+          "text": "12 X λf (m)λf (n) X∞"
+        },
+        {
+          "line": 910,
+          "text": "ℓ=0 ℓ=0"
+        },
+        {
+          "line": 916,
+          "text": "12 X λf (m)λf (n) 2π mn \u0011k−1 \u0011"
+        },
+        {
+          "line": 926,
+          "text": "12 X R(f )2 X X"
+        },
+        {
+          "line": 946,
+          "text": "1 ik −s Γ(−s + 2 ) 1 ds"
+        },
+        {
+          "line": 953,
+          "text": "EXTREME VALUES OF ZETA AND L-FUNCTIONS 15"
+        },
+        {
+          "line": 985,
+          "text": "12 X R(f )2 X λf (r)"
+        },
+        {
+          "line": 989,
+          "text": "12 X 1 X X \u0010 mn \u0011 X λ (r)"
+        },
+        {
+          "line": 1013,
+          "text": "12 X R(f )2 1 X σ((m, n)) \u0010 X \u0011"
+        },
+        {
+          "line": 1020,
+          "text": "16 K. SOUNDARARAJAN"
+        },
+        {
+          "line": 1026,
+          "text": "12 X R(f )2 Y"
+        },
+        {
+          "line": 1034,
+          "text": "12 X R(f )2 1 Y\u0010 \u0010 1\u0011 f (p) \u0011"
+        },
+        {
+          "line": 1044,
+          "text": "References"
+        },
+        {
+          "line": 1046,
+          "text": "J. 9 (1986), 1–10."
+        },
+        {
+          "line": 1064,
+          "text": "USA 102 (2005), 6837–6838."
+        },
+        {
+          "line": 1076,
+          "text": "CA 94305-2125, USA"
+        }
+      ],
+      "normalized_bytes": 61166,
+      "normalized_page_count": 16,
+      "normalized_relpath": "normalized/openalex_w2950102297.txt",
+      "normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "prior_v1_units": [],
+      "source_id": "openalex_w1964482233",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "Extreme values of zeta and L-functions",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "citation-expansion",
+        "l-functions",
+        "zeta"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2008,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/normalized/openalex_w2950102297.txt"
+    },
+    {
+      "acquisition_route": "v1-carry-forward",
+      "artifact_store": "riemann-corpus-v0",
+      "authors": [
+        "R. B. Paris",
+        "S. Cang"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [],
+      "line_count": 712,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 9,
+          "text": "AN EXPONENTIALLY-SMOOTHED GRAM-TYPE FORMULA FOR THE"
+        },
+        {
+          "line": 10,
+          "text": "RLEMANN ZETA FUNCTION"
+        },
+        {
+          "line": 25,
+          "text": "1. Introduction"
+        },
+        {
+          "line": 62,
+          "text": "AN EXPONENTIALLY-SMOOTHED GRAM-TYPE FORMULA 327"
+        },
+        {
+          "line": 103,
+          "text": "2. A generalised expansion for £(s)"
+        },
+        {
+          "line": 115,
+          "text": "328 PARIS AND GANG"
+        },
+        {
+          "line": 131,
+          "text": "00 Y(a 4- ^\"M isi—s"
+        },
+        {
+          "line": 133,
+          "text": "T(J S_1 +J (2-2)"
+        },
+        {
+          "line": 155,
+          "text": "=TT^Y."
+        },
+        {
+          "line": 179,
+          "text": "AN EXPONENTIALLY-SMOOTHED GRAM-TYPE FORMULA 329"
+        },
+        {
+          "line": 187,
+          "text": "\\ ZPJ Z"
+        },
+        {
+          "line": 209,
+          "text": "3. A bound on RM when a > 0"
+        },
+        {
+          "line": 221,
+          "text": "- ^ £ {- M) \" \"« -' ' - *>"
+        },
+        {
+          "line": 247,
+          "text": "330 PARIS AND GANG"
+        },
+        {
+          "line": 301,
+          "text": "AN EXPONENTIALLY-SMOOTHED GRAM-TYPE FORMULA 331"
+        },
+        {
+          "line": 307,
+          "text": "M GP(M;50) GP(M; 100)"
+        },
+        {
+          "line": 318,
+          "text": "4. An exponentially-smoothed main sum"
+        },
+        {
+          "line": 353,
+          "text": "332 PARIS AND GANG"
+        },
+        {
+          "line": 384,
+          "text": "\\RM\\ < (4.6)"
+        },
+        {
+          "line": 407,
+          "text": "AN EXPONENTIALLY-SMOOTHED GRAM-TYPE FORMULA 333"
+        },
+        {
+          "line": 429,
+          "text": "2.464 xlO\"12 2.911 xlO\" 14"
+        },
+        {
+          "line": 430,
+          "text": "1.156 xlO-12"
+        },
+        {
+          "line": 432,
+          "text": "2.330 xlO\"17 1.273 xlO\" 19"
+        },
+        {
+          "line": 433,
+          "text": "9.219 xlO\"18"
+        },
+        {
+          "line": 438,
+          "text": "1.455 xlO\"26"
+        },
+        {
+          "line": 446,
+          "text": "3.706 xlO\" 1.064 xlO\" 2.037 xlO\"13"
+        },
+        {
+          "line": 449,
+          "text": "9.179 xlO\" 1.945 xlO\"19"
+        },
+        {
+          "line": 452,
+          "text": "1.654 xlO\" 1.078 xlO\" 26"
+        },
+        {
+          "line": 453,
+          "text": "8.304 xlO\"26"
+        },
+        {
+          "line": 457,
+          "text": "2.520 xlO -45"
+        },
+        {
+          "line": 458,
+          "text": "9.583 xlO -49"
+        },
+        {
+          "line": 459,
+          "text": "1.022 xlO\"45"
+        },
+        {
+          "line": 477,
+          "text": "334 PARIS AND GANG"
+        },
+        {
+          "line": 497,
+          "text": "5. Concluding remarks"
+        },
+        {
+          "line": 505,
+          "text": "«.)-£>-.* (./JO+^<1A"
+        },
+        {
+          "line": 531,
+          "text": "AN EXPONENTIALLY-SMOOTHED GRAM-TYPE FORMULA 335"
+        },
+        {
+          "line": 548,
+          "text": "Appendix A. The relation between the expansions (1.4) and (2.2)"
+        },
+        {
+          "line": 559,
+          "text": "(A.2)"
+        },
+        {
+          "line": 566,
+          "text": "(A.3)"
+        },
+        {
+          "line": 579,
+          "text": "336 PARIS AND GANG"
+        },
+        {
+          "line": 591,
+          "text": "Appendix B. The monotonicity of F(x) and G(x)"
+        },
+        {
+          "line": 604,
+          "text": "(B.2)"
+        },
+        {
+          "line": 611,
+          "text": "2 V\" 4;^"
+        },
+        {
+          "line": 640,
+          "text": "AN EXPONENTIALLY-SMOOTHED GRAM-TYPE FORMULA 337"
+        },
+        {
+          "line": 679,
+          "text": "(B.6)"
+        },
+        {
+          "line": 688,
+          "text": "References"
+        },
+        {
+          "line": 689,
+          "text": "1. M. Abramowitz and I. Stegun (Eds.), Handbook of Mathematical Functions, Dover, New York,"
+        },
+        {
+          "line": 691,
+          "text": "2. M. V. Berry and J. P. Keating, A new asymptotic representation for C(^ 4- it) and quantum"
+        },
+        {
+          "line": 693,
+          "text": "3. H. M. Edwards, Riemann's Zeta Function, Academic Press, New York, 1974."
+        },
+        {
+          "line": 694,
+          "text": "4. J. P. Gram, Note sur les zeros de la fonction C(s) de Riemann, Acta Mathematica 27 (1903),"
+        },
+        {
+          "line": 696,
+          "text": "5. C. B. Haselgrove, Tables of the Riemann Zeta Function, Royal Society Mathematical Tables, Vol."
+        },
+        {
+          "line": 701,
+          "text": "338 PARIS AND GANG"
+        },
+        {
+          "line": 704,
+          "text": "6. R. B. Paris, An asymptotic representation for the Riemann zeta function on the critical line, Proc."
+        },
+        {
+          "line": 708,
+          "text": "8. R. B. Paris and S. Gang, An asymptotic representation for £(^ +z£), to appear in Methods Appl."
+        },
+        {
+          "line": 710,
+          "text": "9. E. C. Titchmarsh, The Theory of Functions, Oxford University Press, 1939."
+        },
+        {
+          "line": 712,
+          "text": "DIVISION OF MATHEMATICAL SCIENCES, UNIVERSITY OF ABERTAY DUNDEE, DUNDEE DD1 1HG, U.K."
+        }
+      ],
+      "normalized_bytes": 38188,
+      "normalized_page_count": 13,
+      "normalized_relpath": "normalized/openalex_w2670735437.txt",
+      "normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "prior_v1_units": [
+        {
+          "line_end": 100,
+          "line_start": 25,
+          "unit_id": "full_openalex_w2670735437_u01",
+          "unit_type": "smoothed-expansion method-comparison"
+        },
+        {
+          "line_end": 205,
+          "line_start": 103,
+          "unit_id": "full_openalex_w2670735437_u02",
+          "unit_type": "generalized incomplete-gamma expansion"
+        },
+        {
+          "line_end": 298,
+          "line_start": 209,
+          "unit_id": "full_openalex_w2670735437_u03",
+          "unit_type": "remainder-term bound"
+        },
+        {
+          "line_end": 495,
+          "line_start": 318,
+          "unit_id": "full_openalex_w2670735437_u04",
+          "unit_type": "exponential-smoothing tradeoff"
+        }
+      ],
+      "source_id": "openalex_w2670735437",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+      "v1_inspection_decision": "usable",
+      "v1_or_acquisition_reason": "normalized source has coherent mathematical text suitable for semantic segmentation",
+      "viewpoint_tags": [
+        "rh",
+        "zeta"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 1997,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/normalized/openalex_w2670735437.txt"
+    }
+  ]
+}

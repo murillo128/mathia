@@ -1,0 +1,238 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "keating_snaith2000_rmt",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_keating_snaith2000_rmt_49a8e274_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Growing common variances and bounded higher cumulants yield independent Gaussian limits, while odd-cumulant cancellation makes Im log Z approach that limit faster and symmetrically compared with Re log Z.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "keating_snaith2000_rmt_v2_u05",
+          "keating_snaith2000_rmt_v2_u06",
+          "keating_snaith2000_rmt_v2_u07"
+        ],
+        "proposed_limit": "This is an N-to-infinity statement; finite-height zeta data also contain arithmetic corrections absent from CUE.",
+        "source_id": "keating_snaith2000_rmt",
+        "synthesis_id": "riemann_v2_within_5438d0c8fc320010aadaad0c",
+        "title": "Cumulant structure explains both Gaussianity and unequal finite-size errors"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the contrast between the Gaussian limit and the Airy-type approximation capturing finite-size skewness.",
+          "line_end": 671,
+          "line_start": 469,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The mechanism is prose-supported; exact polygamma expansions and correction coefficients need formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Turns the exact generator into moments, cumulants, and a Fourier density, then shows variance grows while normalized higher cumulants vanish; retaining them yields finite-N asymmetric corrections.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            10,
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Bound higher cumulants to obtain a Gaussian real-log law",
+          "unit_artifact_relpath": "depth/units/keating_snaith2000_rmt_v2_u05.txt",
+          "unit_bytes": 12551,
+          "unit_id": "keating_snaith2000_rmt_v2_u05",
+          "unit_sha256": "19bb67c6a62203dbf5fed80c114e62ded17f705f17857905f9dc8888c4f09d75",
+          "unit_type": "cumulant-to-limit mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating_snaith2000_rmt_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof isolates a scale separation: one cumulant diverges and the rest remain bounded. This converts exact finite-N information into both a limit theorem and a controlled explanation of asymmetric finite-size behavior.",
+            "nonparaphrase_operation": "The cumulant generating function is the intermediate object connecting gamma products to moments and densities; polygamma integral representations control asymptotics, while Fourier inversion translates cumulant estimates into distributional statements.",
+            "quality_reason": "The source derives cumulants from log M_N, shows variance grows logarithmically while every cumulant of order at least three has a finite limit, and obtains Gaussianity after variance normalization. It explicitly traces finite-N asymmetry to odd powers and gives an Airy expression after retaining the cubic term, which the analysis correctly labels an approximation. The analysis does not materially exceed the span; 'controlled explanation' should not be interpreted as a rigorous error bound for the cubic Airy approximation, which the source does not provide here. The cumulant-to-density bridge is somewhat standard explanatory language, but the non-paraphrase content is the concrete prediction that standardized higher cumulants vanish while finite-N odd cumulants preserve skewness.",
+            "source_support": "Derivatives of log M_N give polygamma sums for cumulants of Re log Z. The mean is zero, the second cumulant has logarithmic growth with an inverse-power expansion, and cumulants of order at least three have finite large-N limits with corrections. Fourier inversion then proves a centered Gaussian limit after variance scaling and produces correction expansions, including an Airy-function approximation from the cubic term.",
+            "speculation_status": "The real-log density is not even at finite N because odd cumulants survive, and the Gaussian statement applies only after normalization and in the N-to-infinity limit. The Airy expression is a retained-term approximation, not the exact density. The mechanism and asymptotic hierarchy are clear, but OCR corrupts coefficients in polygamma and correction formulas. Exact constants and error orders should be source-checked. Calling the divergent-variance versus bounded-higher-cumulant hierarchy a scale separation is a faithful conceptual compression. Polygamma coefficients, inverse-power corrections, and the Airy arguments are badly degraded; the qualitative asymptotic hierarchy remains readable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also identifies Im log Z with the fluctuating eigenvalue-counting function.",
+          "line_end": 777,
+          "line_start": 672,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact cumulant constants and Fourier coefficients require PDF checking; symmetry and rate comparison are clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows the imaginary-log distribution is even for every N, relates its even cumulants to those of the real part, and explains why its first non-Gaussian correction is smaller.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Odd phase cumulants vanish and accelerate convergence to Gaussianity",
+          "unit_artifact_relpath": "depth/units/keating_snaith2000_rmt_v2_u06.txt",
+          "unit_bytes": 6860,
+          "unit_id": "keating_snaith2000_rmt_v2_u06",
+          "unit_sha256": "8282fd76cb8c8d33827fb8389c28d755b7a7ed2ffcd94c075e14d75ed47283ce",
+          "unit_type": "symmetry-controlled limit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating_snaith2000_rmt_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "An exact symmetry condition controls both qualitative shape and convergence rate. The counting-function identity supplies an alternate interpretation of the same random variable, linking characteristic-polynomial phase to spectral fluctuations.",
+            "nonparaphrase_operation": "The phase generator L_N, its cumulants, and the identity expressing interval eigenvalue counts through differences of Im log Z form the bridge from algebraic symmetry to a spectral-statistics limit.",
+            "quality_reason": "The displayed cumulant formula makes every odd phase cumulant vanish exactly, relates even phase cumulants to the real-log cumulants, and yields equal variances and an even finite-N density. The source explicitly identifies the phase with the fluctuating eigenvalue-counting function up to a pi factor and states an order (log N)^-2 approach to Gaussianity. No false transfer is made: the answer explicitly refuses to carry exact finite-N CUE parity over to arbitrary zeta samples. The phrase 'symmetry condition controls shape and rate' is generic, but it is backed by the exact vanishing of odd cumulants and the even-power Fourier expansion.",
+            "source_support": "Expanding log L_N gives zero odd cumulants and even cumulants proportional to those for Re log Z. The phase variance equals the real-log variance, higher normalized cumulants vanish, and Fourier inversion yields a Gaussian limit. Im log Z is also related, up to scaling, to the fluctuating eigenvalue-counting function, and the even correction expansion shows faster approach to Gaussianity.",
+            "speculation_status": "Evenness and vanishing odd moments hold for the CUE phase at each N; they should not be transferred automatically to arbitrary finite-height zeta samples. Gaussianity still requires variance normalization and the large-N limit. The parity conclusions and rate comparison are prose-supported. Exact cumulant constants, Fourier coefficients, and endpoint conventions in the counting identity are OCR-sensitive. Interpreting exact parity as the mechanism controlling both density symmetry and the leading correction order is reasonable and source-specific. Cumulant constants and the endpoint convention in the counting identity are OCR-sensitive; the endpoint exclusion itself is visible in the span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the exact mixed-derivative parity cancellation and the final factorized Fourier integral.",
+          "line_end": 940,
+          "line_start": 778,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent; the asymptotic factorization is explicit, but exact gamma products and indices need verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives a joint generating function by the same Selberg method and proves that scaled mixed terms disappear, so marginal Gaussianity strengthens to asymptotic independence.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            15,
+            16,
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mixed cumulants vanish after common variance scaling",
+          "unit_artifact_relpath": "depth/units/keating_snaith2000_rmt_v2_u07.txt",
+          "unit_bytes": 9867,
+          "unit_id": "keating_snaith2000_rmt_v2_u07",
+          "unit_sha256": "ba797825946d7ab319445557b9d490bc10382f82545eb1486ad50c2c9115fecb",
+          "unit_type": "joint-limit construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating_snaith2000_rmt_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The joint generating function is a compatibility test: it checks whether two separately understood limits decouple when represented together. Common scaling exposes that surviving dependence is lower order.",
+            "nonparaphrase_operation": "The exact joint gamma product and its bivariate cumulant expansion bridge Haar averages to asymptotic independence; the final two-dimensional Fourier transform makes factorization explicit.",
+            "quality_reason": "The source builds one joint generator, evaluates it as a Selberg gamma product, shows the mixed coefficients with odd phase order vanish, and bounds all total orders at least three. After division by the common logarithmically growing variance, the bivariate Fourier integral factorizes into two Gaussian integrals, proving asymptotic rather than finite-N independence. No independent assumption of independence is imported; the answer correctly attributes it to the joint expansion and scaling. 'Represented together' could be generic prose, but the answer identifies the precise bivariate generator and mixed-cumulant parity condition.",
+            "source_support": "A joint CUE average of |Z|^t and exp(is Im log Z) is converted by Selberg's integral to a gamma product. Expanding its logarithm yields pure cumulants and mixed coefficients; mixed coefficients with an odd phase order vanish, and all total order at least three are bounded. After scaling each coordinate by its variance, the joint Fourier integral factorizes in the limit into two standard Gaussian integrals.",
+            "speculation_status": "Independence is asymptotic, not an exact finite-N statement. Bounded mixed cumulants are sufficient only after division by the diverging variance scale. The factorization argument is clear, but OCR damages gamma arguments, signs, and coefficient indices. Exact parity formulas and error terms require checking the source PDF. Calling the joint generator a compatibility test and bounded mixed cumulants lower-order dependence is a well-supported conceptual reading. Gamma arguments, the s/t indexing, and several powers in the scaled Fourier formula are damaged; exact parity indexing should be PDF-checked."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1b73f28a8ab333b0c16d96b564df3ee8513c7d991222ec146242d52819ba9f0c",
+        "dossier_sha256": "fe5049bd24c94c889c3ce8cdd297e5a6e10752cbf984b4ec13d7233fce4fd511"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Across CUE, COE, and CSE the same exact-generator and bounded-higher-cumulant route gives Gaussian log-value laws, but leading constants and analytic zero/pole patterns retain the ensemble symmetry.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "keating_snaith2000_rmt_v2_u12",
+          "keating_snaith2000_rmt_v2_u13"
+        ],
+        "proposed_limit": "The paper only outlines possible applications to other spectral determinants and L-function families; it does not validate those transfers empirically here.",
+        "source_id": "keating_snaith2000_rmt",
+        "synthesis_id": "riemann_v2_within_574b4564d028d0e32bf31996",
+        "title": "Symmetry class changes constants while preserving the limit mechanism"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This supports later L-function family modeling without asserting that the present zeta data use COE or CSE.",
+          "line_end": 1579,
+          "line_start": 1479,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Beta/symmetry parameters are degraded in extraction; exact products and constants need source verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes the finite-N generator products to COE and CSE, showing that variance still diverges logarithmically and higher cumulants stabilize, hence Gaussian limits persist with symmetry-dependent constants.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            28,
+            29
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Change the circular ensemble without changing the cumulant strategy",
+          "unit_artifact_relpath": "depth/units/keating_snaith2000_rmt_v2_u12.txt",
+          "unit_bytes": 5935,
+          "unit_id": "keating_snaith2000_rmt_v2_u12",
+          "unit_sha256": "361855d8939f573af601634f5df6eb74753201a8867c53b78ab16ef88a7118d9",
+          "unit_type": "symmetry-class transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating_snaith2000_rmt_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reusable object is the cumulant strategy rather than a particular CUE formula. Symmetry class changes parameters and limiting constants without changing the variance-versus-higher-cumulant separation that drives Gaussianity.",
+            "nonparaphrase_operation": "The beta-ensemble joint density and its Selberg-type gamma products bridge COE, CUE, and CSE; beta-dependent polygamma sums expose what is universal and what remembers symmetry.",
+            "quality_reason": "The span gives beta-dependent circular-ensemble eigenphase integrals and gamma products, expresses cumulants as polygamma sums, and states logarithmic variance with convergent higher cumulants for beta=1,2,4. It separately derives the phase generator, zero odd phase cumulants, equal real/phase variances, and Gaussian normalized limits. The answer does not claim that zeta belongs to COE or CSE and correctly limits the transfer to these circular ensembles. 'What is universal and what remembers symmetry' is broad phrasing, but beta-dependent variance coefficients and limiting cumulant constants give it concrete content.",
+            "source_support": "A beta-dependent circular-ensemble eigenphase integral yields gamma-product generators M_N(beta;s) and L_N(beta;s). Their cumulants are polygamma sums. For each of beta=1,2,4 the mean vanishes, the real and phase variances grow logarithmically with beta-dependent coefficient, higher cumulants converge, and normalized real and imaginary log-characteristic-polynomial values approach Gaussian laws.",
+            "speculation_status": "This transfer concerns circular ensembles and does not assert that zeta data should use COE or CSE. Gaussian limits erase some symmetry information that remains in subleading constants. The shared strategy is clear, but beta symbols and exact gamma/polygamma factors are degraded. Precise coefficients for each ensemble need source verification. Identifying the cumulant hierarchy as the reusable proof architecture across symmetry classes is source-grounded and goes beyond mere restatement. The beta glyph and exact gamma/polygamma factors are degraded, so the analysis appropriately avoids exact coefficients."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The repeated algebra is retained as one unit because its semantic role is the comparison of symmetry-dependent constants, not each expansion separately.",
+          "line_end": 1753,
+          "line_start": 1580,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extremely formula-dense and extraction-damaged; use only after verification against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Carries the shared cumulant method far enough to show that leading moment coefficients, rational special values, and zero/pole patterns retain information about the ensemble symmetry class.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            30,
+            31,
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gamma and Barnes G combinations distinguish COE and CSE moments",
+          "unit_artifact_relpath": "depth/units/keating_snaith2000_rmt_v2_u13.txt",
+          "unit_bytes": 10159,
+          "unit_id": "keating_snaith2000_rmt_v2_u13",
+          "unit_sha256": "f2a08b2873bfc750196b1b20d37090a2bfcfccdb558f8efddbd6b1be5914a4b3",
+          "unit_type": "symmetry-dependent leading constants",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating_snaith2000_rmt_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "After a universal limit collapses distinctions, subleading analytic data recover them. The move is to compare global special-function structure rather than only the common Gaussian endpoint.",
+            "nonparaphrase_operation": "Gamma and Barnes-G combinations compress ensemble-dependent cumulants into meromorphic functions whose singularities and integer values provide symmetry fingerprints.",
+            "quality_reason": "The span computes distinct COE/CSE variance constants, identifies limiting gamma/Barnes-G combinations, and states their poles, zeros, and rational values at selected positive integers. It visibly treats even and odd N separately for COE and obtains different scaling powers for the two ensembles. The analysis properly refuses to turn those fingerprints into a classification theorem for zeta or L-function families. The 'universal limit collapses distinctions' template is somewhat polished, but the identified variance constants, singularity orders, and integer products make it source-specific.",
+            "source_support": "The text derives constant terms in the COE and CSE variance asymptotics, then matches their higher-cumulant expansions to explicit combinations of gamma and Barnes G-functions for magnitude and phase generators. Analytic continuation yields symmetry-specific poles and zeros, and positive integer arguments give rational or factorial-product leading moment coefficients.",
+            "speculation_status": "These are leading normalized random-matrix moment constants, not a direct classification theorem for zeta or L-function families. Separate even and odd N calculations and analytic continuation carry technical assumptions. This span is extremely formula-dense and OCR-damaged. The qualitative role of the constants and singularities is supported, but every exact combination, exponent, pole order, and special value needs PDF verification. Using subleading constants and meromorphic structure as symmetry fingerprints is a defensible conceptual synthesis of the displayed calculations. This is exceptionally formula-dense and OCR-damaged; no exact special-function combination, exponent, order, or rational value should be trusted without PDF verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1b73f28a8ab333b0c16d96b564df3ee8513c7d991222ec146242d52819ba9f0c",
+        "dossier_sha256": "fe5049bd24c94c889c3ce8cdd297e5a6e10752cbf984b4ec13d7233fce4fd511"
+      }
+    }
+  ]
+}

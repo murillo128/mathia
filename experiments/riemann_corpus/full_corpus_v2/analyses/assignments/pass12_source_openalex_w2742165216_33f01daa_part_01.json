@@ -1,0 +1,1705 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2742165216_33f01daa_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2742165216",
+  "unit_count": 15,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Self-contained setup for all later units; the abstract at lines 11-18 supplies only a shorter preview.",
+      "line_end": 79,
+      "line_start": 23,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed functional equation and moment definition matter, but the regime decomposition is recoverable from the checked prose and text-layer formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper defines its common moment functional and explains why integer moments and the functional equation reduce the study to four qualitatively different regions, with the critical line singled out as the hard case.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Short-interval moments split into four sigma regimes",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u05.txt",
+      "unit_bytes": 3090,
+      "unit_id": "full_openalex_w2742165216_u05",
+      "unit_sha256": "a7561e454d7b7dc6fa65c0b57748ce7cfe57b671c4417cc9c8988baf13d54b17",
+      "unit_type": "problem decomposition and functional-equation reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u05.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 15,
+          "line_end": 22,
+          "text": "                        T\n\n        In particular, the author’s new upper bound for the above integral under the Riemann\n        hypothesis is presented.\n\n\n\n\n",
+          "sha256": "f0fd67f495d08ca3a8478a1f398a9ad8a5aa995e6f24b87f629fce577c3c53c4"
+        },
+        "after": {
+          "line_start": 80,
+          "line_end": 87,
+          "text": "\n                                 2. The case when σ > 1\n   We start with the case when σ > 1. This is actually the only easy case, and thus\nthe discussion can be given in detail. We have\n                                       ∞\n                                       X\n                             k\n                            ζ (s) =          dk (n)n−s            (σ > 1),\n",
+          "sha256": "7d9d3c33ff95214f5c8bb01e9fe1c31f73918a7804e7f0c6974239cadd2fa438"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and introduction",
+            "line_end": 80,
+            "line_start": 1,
+            "mathematical_role": "Defines the short-interval moment object, records the functional equation, and decomposes analysis into sigma regimes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 79,
+          "line_start": 23,
+          "title": "Short-interval moments split into four sigma regimes",
+          "unit_id": "full_openalex_w2742165216_u05",
+          "unit_type": "problem decomposition and functional-equation reduction",
+          "why_material": "The paper defines its common moment functional and explains why integer moments and the functional equation reduce the study to four qualitatively different regions, with the critical line singled out as the hard case."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Self-contained setup for all later units; the abstract at lines 11-18 supplies only a shorter preview.",
+          "representation_dependency": "The displayed functional equation and moment definition matter, but the regime decomposition is recoverable from the checked prose and text-layer formulas.",
+          "unit_id": "full_openalex_w2742165216_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 145,
+            "line_start": 81,
+            "title": "Absolute convergence turns moments into a diagonal main term",
+            "unit_id": "full_openalex_w2742165216_u01",
+            "unit_type": "diagonal-offdiagonal decomposition",
+            "why_material": "Expanding zeta^k as a divisor-coefficient Dirichlet series separates equal indices from oscillatory unequal indices; absolute convergence makes the latter bounded and yields a short-interval main term proportional to H."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The Hooley-Huxley contour is identified as the non-elementary ingredient; the span ends with the short-interval consequence.",
+      "line_end": 202,
+      "line_start": 147,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several constants and powers are display-dependent, but the error-term-to-local-asymptotic logic is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source isolates the pole-adjacent mean-square error, connects its pointwise bound to zeta on the 1-line, and records complex-k, logarithmic-derivative, and log-zeta mean values that imply a linear short-interval asymptotic.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "At sigma=1, global error control yields short-interval asymptotics",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u06.txt",
+      "unit_bytes": 3227,
+      "unit_id": "full_openalex_w2742165216_u06",
+      "unit_sha256": "a9f0fdbb060ddeea56e6958c552e1710010fc47cfc62937d3361cb26f9b653a5",
+      "unit_type": "boundary-line error-term asymptotic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u06.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 139,
+          "line_end": 146,
+          "text": "                                                m−n\nif ε is small enough. This finally gives the asymptotic formula\n          Z T                                                  X∞\n(2.1)          |ζ(σ + it)|2k dt = T C(k, σ) + O(1), C(k, σ) :=    d2k (n)n−2σ .\n           1                                                                        n=1\nHence from (1.3) and (2.1) we have\n          Iσ (T + H, k) − Iσ (T, k) = C(k, σ)H + O(1)                           (1 ≪ H ⩽ T ).\n\n",
+          "sha256": "9526a84fad34447b6eef1f6df33854cc22f57954fb582afc02d9cdbd07b472a6"
+        },
+        "after": {
+          "line_start": 203,
+          "line_end": 210,
+          "text": "\n\n                4. The moments in the critical strip 12 < σ < 1\n   As σ moves further to the left from σ = 1 to the critical line σ = 12 , the results\non Iσ (T, k) become richer. Mean values of ζ(s) for 12 ⩽ σ < 1 in the cases k = 1\nand k = 2 have been extensively studied, and represent one of the central themes\nin zeta-function theory. For the mean square case the reader should consult the\nsurvey paper of K. Matsumoto [26]. One has (see Ivić–Matsumoto [20])\n",
+          "sha256": "b8b3248e6a9825b3c428aa94c4cfbf122c29f4ed96bd5747025d795296249088"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3: sigma = 1",
+            "line_end": 204,
+            "line_start": 147,
+            "mathematical_role": "Packages boundary-line mean values into error terms and extends the asymptotic to complex moment parameters via contour methods."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 202,
+          "line_start": 147,
+          "title": "At sigma=1, global error control yields short-interval asymptotics",
+          "unit_id": "full_openalex_w2742165216_u06",
+          "unit_type": "boundary-line error-term asymptotic",
+          "why_material": "The source isolates the pole-adjacent mean-square error, connects its pointwise bound to zeta on the 1-line, and records complex-k, logarithmic-derivative, and log-zeta mean values that imply a linear short-interval asymptotic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The Hooley-Huxley contour is identified as the non-elementary ingredient; the span ends with the short-interval consequence.",
+          "representation_dependency": "Several constants and powers are display-dependent, but the error-term-to-local-asymptotic logic is explicit in prose.",
+          "unit_id": "full_openalex_w2742165216_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 145,
+            "line_start": 81,
+            "title": "Absolute convergence turns moments into a diagonal main term",
+            "unit_id": "full_openalex_w2742165216_u01",
+            "unit_type": "diagonal-offdiagonal decomposition",
+            "why_material": "Expanding zeta^k as a divisor-coefficient Dirichlet series separates equal indices from oscillatory unequal indices; absolute convergence makes the latter bounded and yields a short-interval main term proportional to H."
+          },
+          {
+            "line_end": 250,
+            "line_start": 205,
+            "title": "Secondary terms and error scales inside the critical strip",
+            "unit_id": "full_openalex_w2742165216_u02",
+            "unit_type": "mean-square and fourth-moment strip results",
+            "why_material": "The mean square and fourth moment develop additional main terms away from sigma=1, and comparison of the spectral fourth-moment error with those terms identifies where the nominal expansion ceases to be informative."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span contrasts the reusable sigma-star mechanism with cumbersome k-specific exponent lists and records its deterioration near sigma=1.",
+      "line_end": 297,
+      "line_start": 255,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed exponents are essential for quantitative reuse; prose fully identifies the abstraction and its limitation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After special low moments stop generalizing, the source expresses a general 2k-th moment remainder in terms of the least line on which a T^(1+epsilon) moment bound is available and shows how this produces explicit but nonuniform exponents.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Higher-moment remainders are parameterized by sigma-star",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u07.txt",
+      "unit_bytes": 2507,
+      "unit_id": "full_openalex_w2742165216_u07",
+      "unit_sha256": "96a1b8a44ab5f90901cde2507c966038af2fe31b2e0ffea7bed5bb3dc4e31aef",
+      "unit_type": "general-moment control by a critical abscissa",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u07.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 247,
+          "line_end": 254,
+          "text": "σ < 34 . Thus the bound for the error term E2 (T, σ) in (4.4) is already larger than\n                                                 √\nthe second main term in (4.3) unless 12 < σ < 1+4 2 .\n\n<!-- source-page: 5 -->\n\n8                                                Aleksandar Ivić\n\n",
+          "sha256": "c6078de43b239987a8f5fb097bb94d99eeb509e2b2aa853141af7c1f093fcfc2"
+        },
+        "after": {
+          "line_start": 298,
+          "line_end": 305,
+          "text": "   New bounds for R(k, σ; T ) have been given by the author in [18]. To formulate\nthem let, as usual,\n                                  \u001a                    Z x                              \u001b\n(4.8)               βk = inf          bk (⩾ 0) :             ∆2k (y) dy   ≪ x   1+2bk\n                                                                                            ,\n                                                        1\n\nwhere                                           X\n",
+          "sha256": "9e3b8d86451d2b7e184c0608e68c94c990d574f334f66cac68b8e5115c6608c8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 4: critical strip",
+            "line_end": 356,
+            "line_start": 205,
+            "mathematical_role": "Surveys mean-square, fourth-moment, and general higher-moment asymptotics, comparing divisor-problem and moment-abscissa controls."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 297,
+          "line_start": 255,
+          "title": "Higher-moment remainders are parameterized by sigma-star",
+          "unit_id": "full_openalex_w2742165216_u07",
+          "unit_type": "general-moment control by a critical abscissa",
+          "why_material": "After special low moments stop generalizing, the source expresses a general 2k-th moment remainder in terms of the least line on which a T^(1+epsilon) moment bound is available and shows how this produces explicit but nonuniform exponents."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span contrasts the reusable sigma-star mechanism with cumbersome k-specific exponent lists and records its deterioration near sigma=1.",
+          "representation_dependency": "Displayed exponents are essential for quantitative reuse; prose fully identifies the abstraction and its limitation.",
+          "unit_id": "full_openalex_w2742165216_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 250,
+            "line_start": 205,
+            "title": "Secondary terms and error scales inside the critical strip",
+            "unit_id": "full_openalex_w2742165216_u02",
+            "unit_type": "mean-square and fourth-moment strip results",
+            "why_material": "The mean square and fourth moment develop additional main terms away from sigma=1, and comparison of the spectral fourth-moment error with those terms identifies where the nominal expansion ceases to be informative."
+          },
+          {
+            "line_end": 338,
+            "line_start": 317,
+            "title": "Two controls dominate in complementary parts of the strip",
+            "unit_id": "full_openalex_w2742165216_u03",
+            "unit_type": "beta_k versus sigma_k-star bounds",
+            "why_material": "The source compares a divisor-problem mean-square parameter with the moment-abscissa parameter, explaining that one controls remainders near sigma=1 while the other is better near its threshold, then instantiates the comparison for several moments."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the theorem, full proof mechanism, and the source's argument that this kernel method cannot push H substantially below a multiple of log log T.",
+      "line_end": 472,
+      "line_start": 357,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour geometry, kernel decay, and balancing inequalities use displays, but all transitions and the method barrier are recoverable from checked prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A lower bound in the absolutely convergent region is carried to the critical strip by a residue representation with double-exponential horizontal decay, followed by two parameter choices that first prevent the target integral from being tiny and then close the bound.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ramachandra's kernel transports a lower bound across sigma",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u08.txt",
+      "unit_bytes": 5563,
+      "unit_id": "full_openalex_w2742165216_u08",
+      "unit_sha256": "2f4a63930cc4557b57d4dbb2ebb2140f2e2f213ff48bb573de382127f3060140",
+      "unit_type": "kernel transfer and parameter balancing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u08.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 349,
+          "line_end": 356,
+          "text": "       |ζ(σ + it)|2k dt =    d2k (n)n−2σ T + Oε T k+1 +ε ( 21 < σ ⩽ 1, k ⩾ 2).\n    1                             n=1\n\nIn fact, the bound (4.11) for all k ∈ N is equivalent to the Lindelöf hypothesis. One\ncan easily obtain from the above results asymptotic formulas for Iσ (T + H, k) −\nIσ (T, k) for certain range of H = H(σ, k). However, as far as lower bounds are\nconcerned, one can do considerably better.\n\n",
+          "sha256": "e00650577f197900b0b41b1cb2674ad357ee4218242a3121049c48f88bd64b62"
+        },
+        "after": {
+          "line_start": 473,
+          "line_end": 480,
+          "text": "\n                           6. The mean values for σ = 12\n  Asymptotic formulas for I1/2 (T, k) are known to exist only in the cases when\nk = 1 or k = 2. For the mean square it is customary to define\n                           Z T                               \u0012                \u0013\n                                                                  T \u0001\n(6.1)          E(T ) =               |ζ( 12 + it)|2 dt − T    log     + 2γ − 1 ,\n                                0                                 2π\n",
+          "sha256": "261916ed1aa73d41c78d1e4df053cbefea907364bd0ef05ce1809f6495d74ac4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 5: unconditional lower bound",
+            "line_end": 473,
+            "line_start": 357,
+            "mathematical_role": "Transfers a nonvanishing estimate from absolute convergence to the strip through an optimal double-exponential kernel and parameter balancing."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 472,
+          "line_start": 357,
+          "title": "Ramachandra's kernel transports a lower bound across sigma",
+          "unit_id": "full_openalex_w2742165216_u08",
+          "unit_type": "kernel transfer and parameter balancing",
+          "why_material": "A lower bound in the absolutely convergent region is carried to the critical strip by a residue representation with double-exponential horizontal decay, followed by two parameter choices that first prevent the target integral from being tiny and then close the bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the theorem, full proof mechanism, and the source's argument that this kernel method cannot push H substantially below a multiple of log log T.",
+          "representation_dependency": "Contour geometry, kernel decay, and balancing inequalities use displays, but all transitions and the method barrier are recoverable from checked prose.",
+          "unit_id": "full_openalex_w2742165216_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 338,
+            "line_start": 317,
+            "title": "Two controls dominate in complementary parts of the strip",
+            "unit_id": "full_openalex_w2742165216_u03",
+            "unit_type": "beta_k versus sigma_k-star bounds",
+            "why_material": "The source compares a divisor-problem mean-square parameter with the moment-abscissa parameter, explaining that one controls remainders near sigma=1 while the other is better near its threshold, then instantiates the comparison for several moments."
+          },
+          {
+            "line_end": 525,
+            "line_start": 474,
+            "title": "Atkinson represents the mean-square error by dual oscillatory sums",
+            "unit_id": "full_openalex_w2742165216_u09",
+            "unit_type": "oscillatory explicit formula",
+            "why_material": "The critical-line mean-square error is converted into two explicit oscillatory sums with complementary ranges, making the error term accessible to cancellation estimates rather than only integral identities."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span defines E(T), states the explicit formula, and gives the phase and weight behavior needed to understand the representation.",
+      "line_end": 525,
+      "line_start": 474,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly display-dependent; the normalized formulas are usable for mechanism-level segmentation, while exact phase typography should be checked before equation-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The critical-line mean-square error is converted into two explicit oscillatory sums with complementary ranges, making the error term accessible to cancellation estimates rather than only integral identities.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Atkinson represents the mean-square error by dual oscillatory sums",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u09.txt",
+      "unit_bytes": 2387,
+      "unit_id": "full_openalex_w2742165216_u09",
+      "unit_sha256": "6b8d9dec06111f12c6cd8585d27790923e6da2526296d418dfde2265ecbedcd8",
+      "unit_type": "oscillatory explicit formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u09.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 466,
+          "line_end": 473,
+          "text": "and choose X = H ε . Then (5.4) gives I ≫ H 1−2ε , showing that I cannot be too\nsmall. Then we choose X = H 1/3 I −1/3 , so that (since ζ( 21 + it) ≪ |t|1/6 ) trivially\n\n                                       T −k/18 ≪ X ≪ H ≪ T,\n\nand (5.3) is satisfied. With this choice of X (5.4) reduces to H ≪ H 2/3 I 1/3 , and\n(5.1) follows.\n\n",
+          "sha256": "8441b107b532b5649a8cc46dd5d4f080ed72f0a44627b1f8278f5b5733b02906"
+        },
+        "after": {
+          "line_start": 526,
+          "line_end": 533,
+          "text": "Balasubramanian [2], is based on the use of the classical Riemann–Siegel formula\nfor ζ( 12 + it) (see [11, eq. (4.5)] or [34, Theorem 4.16]). This is\n                            X      X       sin(T log n/m)\n               E(T ) = 2                    √\n                                              mn log n/m\n                           n⩽K m⩽K,m6=n\n(6.7)                       X      X      sin(2θ1 − T log mn)\n                     +2                   √        ′\n",
+          "sha256": "94d86f229254910d019cad5149f7a8b37b2f3e6493ae51f38c8db0b5db5d8604"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 6: critical-line mean values",
+            "line_end": 699,
+            "line_start": 474,
+            "mathematical_role": "Relates second- and fourth-moment error terms to oscillatory and spectral representations, short-interval thresholds, and higher-moment obstructions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 525,
+          "line_start": 474,
+          "title": "Atkinson represents the mean-square error by dual oscillatory sums",
+          "unit_id": "full_openalex_w2742165216_u09",
+          "unit_type": "oscillatory explicit formula",
+          "why_material": "The critical-line mean-square error is converted into two explicit oscillatory sums with complementary ranges, making the error term accessible to cancellation estimates rather than only integral identities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span defines E(T), states the explicit formula, and gives the phase and weight behavior needed to understand the representation.",
+          "representation_dependency": "Highly display-dependent; the normalized formulas are usable for mechanism-level segmentation, while exact phase typography should be checked before equation-level reuse.",
+          "unit_id": "full_openalex_w2742165216_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 472,
+            "line_start": 357,
+            "title": "Ramachandra's kernel transports a lower bound across sigma",
+            "unit_id": "full_openalex_w2742165216_u08",
+            "unit_type": "kernel transfer and parameter balancing",
+            "why_material": "A lower bound in the absolutely convergent region is carried to the critical strip by a residue representation with double-exponential horizontal decay, followed by two parameter choices that first prevent the target integral from being tiny and then close the bound."
+          },
+          {
+            "line_end": 579,
+            "line_start": 526,
+            "title": "Riemann-Siegel sums and error increments control local zeta size",
+            "unit_id": "full_openalex_w2742165216_u10",
+            "unit_type": "alternative representation and localization bridge",
+            "why_material": "A structurally different Riemann-Siegel-based formula estimates the same error term, and a local averaging inequality turns increments of E into pointwise control of zeta, exposing how global error exponents set short-interval asymptotic thresholds."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Oscillatory sums, Riemann-Siegel correlations, and smoothed spectral sums are alternative representations chosen to expose cancellation or convergence unavailable in the raw moment integral.",
+            "limit": "They concern different error terms and cannot be interchanged without their distinct weights, ranges, and spectral hypotheses.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u09",
+              "full_openalex_w2742165216_u10",
+              "full_openalex_w2742165216_u11"
+            ],
+            "title": "Complementary representations of critical-line errors"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records opposing omega behavior and the conjectured T^(1/4+epsilon) scale, which delimit what error-term improvement would mean.",
+      "line_end": 579,
+      "line_start": 526,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The double sums and omega factors require the displays; the representation comparison and localization bridge are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A structurally different Riemann-Siegel-based formula estimates the same error term, and a local averaging inequality turns increments of E into pointwise control of zeta, exposing how global error exponents set short-interval asymptotic thresholds.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Siegel sums and error increments control local zeta size",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u10.txt",
+      "unit_bytes": 2855,
+      "unit_id": "full_openalex_w2742165216_u10",
+      "unit_sha256": "fb9ca48eafbe3dff4b2c7caf5b042f5cdc56aceb5bcd1b68490b07ae72b5ad7f",
+      "unit_type": "alternative representation and localization bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u10.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 518,
+          "line_end": 525,
+          "text": "\n\n                                               n                            \u0010p         \u0011o−1\n(6.6)                                   −1/4                  1/2\n             e(T, n) = (1 + πn/(2T ))              (2T /πn)         ar sinh   πn/(2T )\n                     = 1 + O(n/T )        (1 ⩽ n < T ),\n                             √\nand ar sinh x = log(x + 1 + x2 ). Another explicit formula for E(T ), due to R.\n",
+          "sha256": "90e42131b41a8f7397582be16bce9321d781becd9a004a894cc33d65864385d2"
+        },
+        "after": {
+          "line_start": 580,
+          "line_end": 587,
+          "text": "  The case of the asymptotic formula for I1/2 (T, k) when k = 2 is more involved.\nThis formula is customarily written as\n           Z T                                                                            4\n                                                                                          X\n(6.9)            |ζ( 21 + it)|4 dt     = T p4 (log T ) + E2 (T ),         p4 (x) =              a j xj .\n             0                                                                            j=0\n\n\n",
+          "sha256": "3b2da9c655bdde19b6f2a269388c3537c3290fc74dcb272bcdd0e7b2fe695373"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 6: critical-line mean values",
+            "line_end": 699,
+            "line_start": 474,
+            "mathematical_role": "Relates second- and fourth-moment error terms to oscillatory and spectral representations, short-interval thresholds, and higher-moment obstructions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 579,
+          "line_start": 526,
+          "title": "Riemann-Siegel sums and error increments control local zeta size",
+          "unit_id": "full_openalex_w2742165216_u10",
+          "unit_type": "alternative representation and localization bridge",
+          "why_material": "A structurally different Riemann-Siegel-based formula estimates the same error term, and a local averaging inequality turns increments of E into pointwise control of zeta, exposing how global error exponents set short-interval asymptotic thresholds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also records opposing omega behavior and the conjectured T^(1/4+epsilon) scale, which delimit what error-term improvement would mean.",
+          "representation_dependency": "The double sums and omega factors require the displays; the representation comparison and localization bridge are clear in prose.",
+          "unit_id": "full_openalex_w2742165216_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 525,
+            "line_start": 474,
+            "title": "Atkinson represents the mean-square error by dual oscillatory sums",
+            "unit_id": "full_openalex_w2742165216_u09",
+            "unit_type": "oscillatory explicit formula",
+            "why_material": "The critical-line mean-square error is converted into two explicit oscillatory sums with complementary ranges, making the error term accessible to cancellation estimates rather than only integral identities."
+          },
+          {
+            "line_end": 670,
+            "line_start": 580,
+            "title": "Gaussian smoothing opens a spectral route to the fourth-moment error",
+            "unit_id": "full_openalex_w2742165216_u11",
+            "unit_type": "spectral representation of a smoothed fourth moment",
+            "why_material": "Motohashi's Gaussian-smoothed fourth moment is expressed through spectral data via trace formulas; resulting upper, omega, and mean-square bounds for E2 translate into a concrete short-interval length at which a fourth-moment asymptotic is unconditional."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For the second and fourth moments, subtracting global asymptotics makes the error-term scale the effective minimum H at which a local main term is visible.",
+            "limit": "This comparison is established here only for the two low moments with explicit global formulas; it does not furnish higher-moment asymptotics.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u10",
+              "full_openalex_w2742165216_u11"
+            ],
+            "title": "Error-term exponents as short-interval resolution limits"
+          },
+          {
+            "claim": "Oscillatory sums, Riemann-Siegel correlations, and smoothed spectral sums are alternative representations chosen to expose cancellation or convergence unavailable in the raw moment integral.",
+            "limit": "They concern different error terms and cannot be interchanged without their distinct weights, ranges, and spectral hypotheses.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u09",
+              "full_openalex_w2742165216_u10",
+              "full_openalex_w2742165216_u11"
+            ],
+            "title": "Complementary representations of critical-line errors"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span joins the representation, why smoothing is necessary, the spectral quantities, and the downstream H threshold.",
+      "line_end": 670,
+      "line_start": 580,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact spectral coefficients and smoothing ranges are display-dependent; the transform, convergence role, and threshold are textually recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Motohashi's Gaussian-smoothed fourth moment is expressed through spectral data via trace formulas; resulting upper, omega, and mean-square bounds for E2 translate into a concrete short-interval length at which a fourth-moment asymptotic is unconditional.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian smoothing opens a spectral route to the fourth-moment error",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u11.txt",
+      "unit_bytes": 4897,
+      "unit_id": "full_openalex_w2742165216_u11",
+      "unit_sha256": "03c5b152ad69db72fd665d1fdd22593549054843536e2ba837091e723568b7e1",
+      "unit_type": "spectral representation of a smoothed fourth moment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u11.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 572,
+          "line_end": 579,
+          "text": "\n<!-- source-page: 10 -->\n\nMean values results for the Riemann zeta-function in short intervals                            13\n\nHere, as usual, f = Ω+ (g) means lim sup f /g > 0, and f = Ω− (g) means that\nlim inf f /g < 0 holds. In the other direction, it is commonly conjectured that\nE(T ) ≪ε T 1/4+ε holds.\n",
+          "sha256": "165601daee5e24e9ca1ec9c8bc8717136be960bc1e57994ae9e5c4f37a30befb"
+        },
+        "after": {
+          "line_start": 671,
+          "line_end": 678,
+          "text": "  In what concerns higher moments (i.e., I1/2 (T, k) for k ∈ N, k > 2) there are not\nmany results. The bound of D.R. Heath-Brown [7] that\n                                     Z T\n                     I1/2 (T, 6) =         |ζ( 12 + it)|12 dt ≪ T 2 (log T )17\n                                      1\n\nstill represents essentially the strongest known result on high moments of |ζ( 21 +it)|.\nAlthough with the use of methods relating to random matrix theory (see J.B. Con-\n",
+          "sha256": "9230554db4a1c942139f9e3e1be1c1cc0fbd5ee2b1c191eb02573bd3b7870327"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 6: critical-line mean values",
+            "line_end": 699,
+            "line_start": 474,
+            "mathematical_role": "Relates second- and fourth-moment error terms to oscillatory and spectral representations, short-interval thresholds, and higher-moment obstructions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 670,
+          "line_start": 580,
+          "title": "Gaussian smoothing opens a spectral route to the fourth-moment error",
+          "unit_id": "full_openalex_w2742165216_u11",
+          "unit_type": "spectral representation of a smoothed fourth moment",
+          "why_material": "Motohashi's Gaussian-smoothed fourth moment is expressed through spectral data via trace formulas; resulting upper, omega, and mean-square bounds for E2 translate into a concrete short-interval length at which a fourth-moment asymptotic is unconditional."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span joins the representation, why smoothing is necessary, the spectral quantities, and the downstream H threshold.",
+          "representation_dependency": "Exact spectral coefficients and smoothing ranges are display-dependent; the transform, convergence role, and threshold are textually recoverable.",
+          "unit_id": "full_openalex_w2742165216_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 579,
+            "line_start": 526,
+            "title": "Riemann-Siegel sums and error increments control local zeta size",
+            "unit_id": "full_openalex_w2742165216_u10",
+            "unit_type": "alternative representation and localization bridge",
+            "why_material": "A structurally different Riemann-Siegel-based formula estimates the same error term, and a local averaging inequality turns increments of E into pointwise control of zeta, exposing how global error exponents set short-interval asymptotic thresholds."
+          },
+          {
+            "line_end": 694,
+            "line_start": 671,
+            "title": "Critical-line higher moments expose both equivalences and bottlenecks",
+            "unit_id": "full_openalex_w2742165216_u12",
+            "unit_type": "higher-moment obstruction and conditional bridge",
+            "why_material": "The survey contrasts the lone strong twelfth-moment bound with absent asymptotics for k>=3, identifies all-moment T^(1+epsilon) bounds as equivalent to Lindelof, and links the sixth moment to a ternary additive divisor conjecture."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For the second and fourth moments, subtracting global asymptotics makes the error-term scale the effective minimum H at which a local main term is visible.",
+            "limit": "This comparison is established here only for the two low moments with explicit global formulas; it does not furnish higher-moment asymptotics.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u10",
+              "full_openalex_w2742165216_u11"
+            ],
+            "title": "Error-term exponents as short-interval resolution limits"
+          },
+          {
+            "claim": "Oscillatory sums, Riemann-Siegel correlations, and smoothed spectral sums are alternative representations chosen to expose cancellation or convergence unavailable in the raw moment integral.",
+            "limit": "They concern different error terms and cannot be interchanged without their distinct weights, ranges, and spectral hypotheses.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u09",
+              "full_openalex_w2742165216_u10",
+              "full_openalex_w2742165216_u11"
+            ],
+            "title": "Complementary representations of critical-line errors"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a compact obstruction map rather than a proof.",
+      "line_end": 694,
+      "line_start": 671,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The logical claims are prose-supported; the exact moment exponents appear in readable displays.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The survey contrasts the lone strong twelfth-moment bound with absent asymptotics for k>=3, identifies all-moment T^(1+epsilon) bounds as equivalent to Lindelof, and links the sixth moment to a ternary additive divisor conjecture.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line higher moments expose both equivalences and bottlenecks",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u12.txt",
+      "unit_bytes": 1374,
+      "unit_id": "full_openalex_w2742165216_u12",
+      "unit_sha256": "33ff0983ba38059b4c3014f46ed22b4cef57edd0adafdd0f8984f37b5b8a071f",
+      "unit_type": "higher-moment obstruction and conditional bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u12.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 663,
+          "line_end": 670,
+          "text": "                                                TZ+H\n                                                                                H\n I1/2 (T + H, 2) − I1/2 (T − H, 2) =                      |ζ( 12 + it)|4 dt =      (log4 T + O(log3 T ))\n                                                                                π2\n                                            T −H\n\n\nfor H = T 2/3 logC T and some suitable C > 0.\n",
+          "sha256": "1eab5689625446b7a61a2483ea983c2b2d68db20b2f237282aef8ccb67db53b5"
+        },
+        "after": {
+          "line_start": 695,
+          "line_end": 702,
+          "text": "\n<!-- source-page: 12 -->\n\nMean values results for the Riemann zeta-function in short intervals          15\n\n               7. The bounds over short intervals for σ = 12\n   Although Theorem 1 is valid for σ = 12 , one can do considerably better in this\ncase. Namely, we have the following result of Balasubramanian–Ramachandra,\n",
+          "sha256": "6d5262056aaa6136ab93c94b6fd1f41b5cc412c9819b18cb7ee1249943f51460"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 6: critical-line mean values",
+            "line_end": 699,
+            "line_start": 474,
+            "mathematical_role": "Relates second- and fourth-moment error terms to oscillatory and spectral representations, short-interval thresholds, and higher-moment obstructions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 694,
+          "line_start": 671,
+          "title": "Critical-line higher moments expose both equivalences and bottlenecks",
+          "unit_id": "full_openalex_w2742165216_u12",
+          "unit_type": "higher-moment obstruction and conditional bridge",
+          "why_material": "The survey contrasts the lone strong twelfth-moment bound with absent asymptotics for k>=3, identifies all-moment T^(1+epsilon) bounds as equivalent to Lindelof, and links the sixth moment to a ternary additive divisor conjecture."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a compact obstruction map rather than a proof.",
+          "representation_dependency": "The logical claims are prose-supported; the exact moment exponents appear in readable displays.",
+          "unit_id": "full_openalex_w2742165216_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 670,
+            "line_start": 580,
+            "title": "Gaussian smoothing opens a spectral route to the fourth-moment error",
+            "unit_id": "full_openalex_w2742165216_u11",
+            "unit_type": "spectral representation of a smoothed fourth moment",
+            "why_material": "Motohashi's Gaussian-smoothed fourth moment is expressed through spectral data via trace formulas; resulting upper, omega, and mean-square bounds for E2 translate into a concrete short-interval length at which a fourth-moment asymptotic is unconditional."
+          },
+          {
+            "line_end": 725,
+            "line_start": 700,
+            "title": "Critical-line moments have the conjectured logarithmic lower scale",
+            "unit_id": "full_openalex_w2742165216_u13",
+            "unit_type": "unconditional short-interval lower bound",
+            "why_material": "Theorem 2 strengthens the general lower bound on the critical line to H times a k-squared logarithmic power and records the arithmetic Euler-product constant and the log-log interval threshold."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is cited rather than reproduced, so the unit supports the result and scale but not its internal derivation.",
+      "line_end": 725,
+      "line_start": 700,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exponent and Euler product are display-dependent; the range and interpretation are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 strengthens the general lower bound on the critical line to H times a k-squared logarithmic power and records the arithmetic Euler-product constant and the log-log interval threshold.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line moments have the conjectured logarithmic lower scale",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u13.txt",
+      "unit_bytes": 1376,
+      "unit_id": "full_openalex_w2742165216_u13",
+      "unit_sha256": "0d97104d29a7bb60b120d4ff1e239f6518564517b71622ed66cdf85ddf1e5db2",
+      "unit_type": "unconditional short-interval lower bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u13.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 692,
+          "line_end": 699,
+          "text": "\nholds if a certain conjecture involving the ternary additive divisor problem (the\nsummatory function of d3 (n)d3 (n + h) when h is not fixed) holds.\n\n<!-- source-page: 12 -->\n\nMean values results for the Riemann zeta-function in short intervals          15\n\n",
+          "sha256": "710e407f7b4c8a5a8bbf6502b9eb06f6d0d7be91ff07b3fe21c3d9fe6ac1809e"
+        },
+        "after": {
+          "line_start": 726,
+          "line_end": 733,
+          "text": "   In what concerns upper bounds for I1/2 (T + H, k) − I1/2 (T − H, k) there are no\nnon-trivial results (apart from those coming from asymptotic formulas discussed\nbefore when k = 1 or k = 2). To obtain good bounds one then has to assume\nthe Lindelöf hypothesis (LH, |ζ( 12 + it)| ≪ε |t|ε ) or the Riemann Hypothesis (RH)\nthat all complex zeros of ζ(s) are on the “critical line” ℜe s = 12 . Recall that both\nthe LH and the RH are hitherto unproved, and that the RH implies the LH, but\nwhether the converse is true is not known. A classical result of J.E. Littlewood\nstates (see e.g., [34] for a proof) that, under the RH (logℓ T = log(logℓ−1 T )),\n",
+          "sha256": "96b866b66f74fb16d6978c1de871cd36d58d0771debb76f18aaf37de397dbd52"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 7: critical-line short intervals",
+            "line_end": 1131,
+            "line_start": 700,
+            "mathematical_role": "Gives unconditional lower bounds and an RH-conditional upper bound, then proves the latter through large-value tails and prime Dirichlet-polynomial moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 725,
+          "line_start": 700,
+          "title": "Critical-line moments have the conjectured logarithmic lower scale",
+          "unit_id": "full_openalex_w2742165216_u13",
+          "unit_type": "unconditional short-interval lower bound",
+          "why_material": "Theorem 2 strengthens the general lower bound on the critical line to H times a k-squared logarithmic power and records the arithmetic Euler-product constant and the log-log interval threshold."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof is cited rather than reproduced, so the unit supports the result and scale but not its internal derivation.",
+          "representation_dependency": "The exponent and Euler product are display-dependent; the range and interpretation are explicit in prose.",
+          "unit_id": "full_openalex_w2742165216_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 694,
+            "line_start": 671,
+            "title": "Critical-line higher moments expose both equivalences and bottlenecks",
+            "unit_id": "full_openalex_w2742165216_u12",
+            "unit_type": "higher-moment obstruction and conditional bridge",
+            "why_material": "The survey contrasts the lone strong twelfth-moment bound with absent asymptotics for k>=3, identifies all-moment T^(1+epsilon) bounds as equivalent to Lindelof, and links the sixth moment to a ternary additive divisor conjecture."
+          },
+          {
+            "line_end": 751,
+            "line_start": 726,
+            "title": "Large values replace pointwise RH bounds in moment control",
+            "unit_id": "full_openalex_w2742165216_u14",
+            "unit_type": "conditional upper-bound landscape",
+            "why_material": "The source explains why known unconditional upper bounds are sparse, distinguishes RH from Lindelof, and contrasts a weak pointwise RH consequence with Soundararajan's essentially sharp full-interval moment bound based on the distribution of log|zeta|."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "On fixed-power short intervals, the unconditional lower bound and RH-conditional upper bound identify H times a k-squared logarithmic power as the common scale up to the stated vanishing loss.",
+            "limit": "The upper bound assumes RH and H=T^theta with fixed theta, while the lower bound covers integer k and much shorter intervals.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u13",
+              "full_openalex_w2742165216_u15"
+            ],
+            "title": "Two-sided critical-line moment scale"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Sets the strategic motivation for the short-interval adaptation that follows.",
+      "line_end": 751,
+      "line_start": 726,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The quantitative logarithmic exponents use displays; the method comparison is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explains why known unconditional upper bounds are sparse, distinguishes RH from Lindelof, and contrasts a weak pointwise RH consequence with Soundararajan's essentially sharp full-interval moment bound based on the distribution of log|zeta|.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Large values replace pointwise RH bounds in moment control",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u14.txt",
+      "unit_bytes": 1728,
+      "unit_id": "full_openalex_w2742165216_u14",
+      "unit_sha256": "2607c2c73529771f3022241ac3dd26ec92e3866df869af917720d24017a53589",
+      "unit_type": "conditional upper-bound landscape",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u14.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 718,
+          "line_end": 725,
+          "text": "                                                   Γ(k)m!\n\n\n   The reader may find the proof e.g., in the comprehensive monograph of K. Ra-\nmachandra [31] (see in particular Remark 2 on p. 45). Therein a historical discus-\nsion is also given, as well as many related results involving ζ(s) and the more general\nTitchmarsh series, to which the methods of Balasubramanian–Ramachandra apply\nas well.\n",
+          "sha256": "2102ece57741fe09751be2085b6cea3ccb2a286e5c06361a89308624ed88b513"
+        },
+        "after": {
+          "line_start": 752,
+          "line_end": 759,
+          "text": "   Recently the author [19] used Soundararajan’s method to obtain (under the RH)\na bound for I1/2 (T + H, k) − I1/2 (T − H, k). The result is contained in\n\n<!-- source-page: 13 -->\n\n16                                         Aleksandar Ivić\n\n   THEOREM 3. Let H = T θ where 0 < θ ⩽ 1 is a fixed number, and let k be a\n",
+          "sha256": "f8dcce7a889c49f2edf7e56c546f7a2951c8c93407ba8227dc886744648957e6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 7: critical-line short intervals",
+            "line_end": 1131,
+            "line_start": 700,
+            "mathematical_role": "Gives unconditional lower bounds and an RH-conditional upper bound, then proves the latter through large-value tails and prime Dirichlet-polynomial moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 751,
+          "line_start": 726,
+          "title": "Large values replace pointwise RH bounds in moment control",
+          "unit_id": "full_openalex_w2742165216_u14",
+          "unit_type": "conditional upper-bound landscape",
+          "why_material": "The source explains why known unconditional upper bounds are sparse, distinguishes RH from Lindelof, and contrasts a weak pointwise RH consequence with Soundararajan's essentially sharp full-interval moment bound based on the distribution of log|zeta|."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Sets the strategic motivation for the short-interval adaptation that follows.",
+          "representation_dependency": "The quantitative logarithmic exponents use displays; the method comparison is prose-supported.",
+          "unit_id": "full_openalex_w2742165216_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 725,
+            "line_start": 700,
+            "title": "Critical-line moments have the conjectured logarithmic lower scale",
+            "unit_id": "full_openalex_w2742165216_u13",
+            "unit_type": "unconditional short-interval lower bound",
+            "why_material": "Theorem 2 strengthens the general lower bound on the critical line to H times a k-squared logarithmic power and records the arithmetic Euler-product constant and the log-log interval threshold."
+          },
+          {
+            "line_end": 784,
+            "line_start": 752,
+            "title": "The full-interval large-values method localizes to H=T^theta",
+            "unit_id": "full_openalex_w2742165216_u15",
+            "unit_type": "RH-conditional short-interval moment bound",
+            "why_material": "Theorem 3 gives an RH-conditional upper bound matching the lower-bound logarithmic scale up to a vanishing exponent loss, while explicitly recording the fixed-power interval restriction and known exceptional low-moment ranges."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source itself flags the unresolved extension to log-log-length intervals and removal of the exponent loss.",
+      "line_end": 784,
+      "line_start": 752,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact O(1/log_3 T) exponent is display-dependent; the range, comparison, and limitations are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3 gives an RH-conditional upper bound matching the lower-bound logarithmic scale up to a vanishing exponent loss, while explicitly recording the fixed-power interval restriction and known exceptional low-moment ranges.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The full-interval large-values method localizes to H=T^theta",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u15.txt",
+      "unit_bytes": 1779,
+      "unit_id": "full_openalex_w2742165216_u15",
+      "unit_sha256": "460c23e91d1979135bcf21949ba8ca1963ec7914258a6529e339ddc638447a43",
+      "unit_type": "RH-conditional short-interval moment bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u15.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 744,
+          "line_end": 751,
+          "text": "(7.4)                         |ζ( 21 + it)|2k dt ≪ε T (log T )k +ε ,\n                         0\n\nwhich is valid for any fixed k > 0 and any given ε > 0. In view of (7.1) this result,\napart from ‘ε’, is therefore best possible. His method of proof is based on a large\nvalues estimate for log |ζ( 12 + it)|, which gives as a corollary (under the RH) the\nbound (7.3) with the explicit constant C = 3/8. This improves the earlier value\nC = 0.4666 . . . of Ramachandra–Sankaranarayanan [32].\n",
+          "sha256": "7825b690f94e40a4737b30a6b5a7189b8b32398b96acf84cc72c79c0a76c49d6"
+        },
+        "after": {
+          "line_start": 785,
+          "line_end": 792,
+          "text": "   Theorem 3 will be deduced from a large values estimate for log |ζ( 21 + it)|. This\nis\n  THEOREM 4. Let H = T θ where 0 < θ ⩽ 1 is a fixed number, and let µ(T, H, V )\ndenote the measure of points t from [T − H, T + H] such that\n                                                                3 log 2T\n                  log |ζ( 21 + it)| ⩾ V,\n                                                 p\n(7.6)                                          10 log2 T ⩽ V ⩽              .\n",
+          "sha256": "2c4617b8b4192895c0bb32b149426f0a62f7bafe9a5e018b269b3a313eaf00cd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 7: critical-line short intervals",
+            "line_end": 1131,
+            "line_start": 700,
+            "mathematical_role": "Gives unconditional lower bounds and an RH-conditional upper bound, then proves the latter through large-value tails and prime Dirichlet-polynomial moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 784,
+          "line_start": 752,
+          "title": "The full-interval large-values method localizes to H=T^theta",
+          "unit_id": "full_openalex_w2742165216_u15",
+          "unit_type": "RH-conditional short-interval moment bound",
+          "why_material": "Theorem 3 gives an RH-conditional upper bound matching the lower-bound logarithmic scale up to a vanishing exponent loss, while explicitly recording the fixed-power interval restriction and known exceptional low-moment ranges."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source itself flags the unresolved extension to log-log-length intervals and removal of the exponent loss.",
+          "representation_dependency": "The exact O(1/log_3 T) exponent is display-dependent; the range, comparison, and limitations are clear.",
+          "unit_id": "full_openalex_w2742165216_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 751,
+            "line_start": 726,
+            "title": "Large values replace pointwise RH bounds in moment control",
+            "unit_id": "full_openalex_w2742165216_u14",
+            "unit_type": "conditional upper-bound landscape",
+            "why_material": "The source explains why known unconditional upper bounds are sparse, distinguishes RH from Lindelof, and contrasts a weak pointwise RH consequence with Soundararajan's essentially sharp full-interval moment bound based on the distribution of log|zeta|."
+          },
+          {
+            "line_end": 821,
+            "line_start": 785,
+            "title": "Log|zeta| tails have Gaussian and V log V regimes",
+            "unit_id": "full_openalex_w2742165216_u16",
+            "unit_type": "piecewise large-deviation estimate",
+            "why_material": "Theorem 4 partitions the admissible large-value range into two near-Gaussian decay regimes and a far-tail V log V regime, with explicit theta-dependent losses suited to a short interval."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "On fixed-power short intervals, the unconditional lower bound and RH-conditional upper bound identify H times a k-squared logarithmic power as the common scale up to the stated vanishing loss.",
+            "limit": "The upper bound assumes RH and H=T^theta with fixed theta, while the lower bound covers integer k and much shorter intervals.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u13",
+              "full_openalex_w2742165216_u15"
+            ],
+            "title": "Two-sided critical-line moment scale"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the target estimate later converted into the moment bound.",
+      "line_end": 821,
+      "line_start": 785,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Range endpoints and loss factors are equation-dependent but legible; the three-regime structure is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 4 partitions the admissible large-value range into two near-Gaussian decay regimes and a far-tail V log V regime, with explicit theta-dependent losses suited to a short interval.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Log|zeta| tails have Gaussian and V log V regimes",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u16.txt",
+      "unit_bytes": 1765,
+      "unit_id": "full_openalex_w2742165216_u16",
+      "unit_sha256": "0ea67c11a7035bad82013764967715ea5220fc2951e7070f60a44ca9753ff599",
+      "unit_type": "piecewise large-deviation estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u16.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 777,
+          "line_end": 784,
+          "text": "                                                                         2\n                     I1/2 (T + H, k) − I1/2 (T − H, k) ≪ H(log T )k\n\ncan be derived unconditionally in the cases k = 1 and k = 2. They are known to\nhold for θ > 1/3 (and even for some slightly smaller values of θ) when k = 1, and\nfor θ > 2/3 when k = 2. In the case when k = 1/2 it is known (see K. Ramachandra\n[31]) that this bound holds unconditionally when θ > 1/2 and for θ > 1/4 under\nthe RH. No other results of this type seem to be known for other values of k.\n",
+          "sha256": "5d9e5e311ee234a5268bbf9e3af5d995cb6edd413459ddb99cf494c2c12e56de"
+        },
+        "after": {
+          "line_start": 822,
+          "line_end": 829,
+          "text": "   To see how Theorem 4 implies Theorem 3, first note that the contribution of t\nsatisfying log |ζ( 21 + it)| ⩽ 12 k log2 T to the left-hand side of (7.5) is\n                              n            o2k             2\n(7.10)                     ⩽ H (log T )k/2     = H(log T )k .\n\n<!-- source-page: 14 -->\n\nMean values results for the Riemann zeta-function in short intervals            17\n",
+          "sha256": "4469e5cedfeedaf02c9ed1c416338a1e3cb875dbf0a31cbc2aea9782ed4fe599"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 7: critical-line short intervals",
+            "line_end": 1131,
+            "line_start": 700,
+            "mathematical_role": "Gives unconditional lower bounds and an RH-conditional upper bound, then proves the latter through large-value tails and prime Dirichlet-polynomial moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 821,
+          "line_start": 785,
+          "title": "Log|zeta| tails have Gaussian and V log V regimes",
+          "unit_id": "full_openalex_w2742165216_u16",
+          "unit_type": "piecewise large-deviation estimate",
+          "why_material": "Theorem 4 partitions the admissible large-value range into two near-Gaussian decay regimes and a far-tail V log V regime, with explicit theta-dependent losses suited to a short interval."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the target estimate later converted into the moment bound.",
+          "representation_dependency": "Range endpoints and loss factors are equation-dependent but legible; the three-regime structure is explicit.",
+          "unit_id": "full_openalex_w2742165216_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 784,
+            "line_start": 752,
+            "title": "The full-interval large-values method localizes to H=T^theta",
+            "unit_id": "full_openalex_w2742165216_u15",
+            "unit_type": "RH-conditional short-interval moment bound",
+            "why_material": "Theorem 3 gives an RH-conditional upper bound matching the lower-bound logarithmic scale up to a vanishing exponent loss, while explicitly recording the fixed-power interval restriction and known exceptional low-moment ranges."
+          },
+          {
+            "line_end": 875,
+            "line_start": 822,
+            "title": "Discretized tails reduce the moment bound to a quadratic maximum",
+            "unit_id": "full_openalex_w2742165216_u17",
+            "unit_type": "tail-to-moment conversion",
+            "why_material": "Small and very large values are disposed of directly, the middle range is discretized, and multiplying its measure by exp(2kU) reduces the problem to maximizing a concave quadratic, recovering the k-squared logarithmic exponent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "RH supplies a prime-polynomial majorant; high-moment estimates yield piecewise tail decay; discretizing and optimizing those tails yields the moment exponent.",
+            "limit": "The chain is solver- and parameter-specific analytic evidence, depends on fixed theta, and retains an O(1/log_3 T) exponent loss.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u16",
+              "full_openalex_w2742165216_u17",
+              "full_openalex_w2742165216_u18",
+              "full_openalex_w2742165216_u04",
+              "full_openalex_w2742165216_u19"
+            ],
+            "title": "Modular route from RH to short-interval moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span is the conceptual bridge from Theorem 4 to Theorem 3.",
+      "line_end": 875,
+      "line_start": 822,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The discretization and maximization depend on displayed inequalities, all supported by explanatory prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Small and very large values are disposed of directly, the middle range is discretized, and multiplying its measure by exp(2kU) reduces the problem to maximizing a concave quadratic, recovering the k-squared logarithmic exponent.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Discretized tails reduce the moment bound to a quadratic maximum",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u17.txt",
+      "unit_bytes": 2868,
+      "unit_id": "full_openalex_w2742165216_u17",
+      "unit_sha256": "05637523deb14d03111d542e39d63ce7ca37a7a9c20717c727a7875c6435a21a",
+      "unit_type": "tail-to-moment conversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u17.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 814,
+          "line_end": 821,
+          "text": "                                          log 2T\n                                             (2T )\n                                                   we have\n                                           2\n\n                                                1\n(7.9)                     µ(T, H, V ) ≪ H exp(− 20 θV log V ).\n\n",
+          "sha256": "d1fc972c49d743caa8f7883b3ffdacf9b56655015992c286610b31bd2aa4af40"
+        },
+        "after": {
+          "line_start": 876,
+          "line_end": 883,
+          "text": "   The proof of Theorem 4 is based on the following lemmas, whose proofs may be\nfound in [19] or [33].\n   LEMMA 1. Assume the RH. Let T ⩽ t ⩽ 2T, T ⩾ T0 , 2 ⩽ x ⩽ T 2 . If λ0 =\n0.4912 . . . denotes the unique positive real number satisfying e−λ0 = λ0 + 12 λ20 , then\nfor λ ⩾ λ0 we have\n                                                           \n                       X             Λ(n)         log(x/n)  (1 + λ) log T    \u0010 1 \u0011\nlog |ζ( 12 +it)| ⩽ ℜe           1     λ                       +             +O           .\n",
+          "sha256": "189a11c7f2b8ea8bdee1bb7af6db71f9c27b47caec263ea1fb3a25bab1b27a72"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 7: critical-line short intervals",
+            "line_end": 1131,
+            "line_start": 700,
+            "mathematical_role": "Gives unconditional lower bounds and an RH-conditional upper bound, then proves the latter through large-value tails and prime Dirichlet-polynomial moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 875,
+          "line_start": 822,
+          "title": "Discretized tails reduce the moment bound to a quadratic maximum",
+          "unit_id": "full_openalex_w2742165216_u17",
+          "unit_type": "tail-to-moment conversion",
+          "why_material": "Small and very large values are disposed of directly, the middle range is discretized, and multiplying its measure by exp(2kU) reduces the problem to maximizing a concave quadratic, recovering the k-squared logarithmic exponent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span is the conceptual bridge from Theorem 4 to Theorem 3.",
+          "representation_dependency": "The discretization and maximization depend on displayed inequalities, all supported by explanatory prose.",
+          "unit_id": "full_openalex_w2742165216_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 821,
+            "line_start": 785,
+            "title": "Log|zeta| tails have Gaussian and V log V regimes",
+            "unit_id": "full_openalex_w2742165216_u16",
+            "unit_type": "piecewise large-deviation estimate",
+            "why_material": "Theorem 4 partitions the admissible large-value range into two near-Gaussian decay regimes and a far-tail V log V regime, with explicit theta-dependent losses suited to a short interval."
+          },
+          {
+            "line_end": 905,
+            "line_start": 876,
+            "title": "RH turns large log|zeta| into a large prime polynomial",
+            "unit_id": "full_openalex_w2742165216_u18",
+            "unit_type": "Dirichlet-polynomial reduction and moment lemma",
+            "why_material": "Three lemmas upper-bound log|zeta| by a smoothed Dirichlet polynomial, show prime powers contribute only a small error, and control high moments of prime polynomials on a short interval under the length-budget condition x^r<=H."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "RH supplies a prime-polynomial majorant; high-moment estimates yield piecewise tail decay; discretizing and optimizing those tails yields the moment exponent.",
+            "limit": "The chain is solver- and parameter-specific analytic evidence, depends on fixed theta, and retains an O(1/log_3 T) exponent loss.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u16",
+              "full_openalex_w2742165216_u17",
+              "full_openalex_w2742165216_u18",
+              "full_openalex_w2742165216_u04",
+              "full_openalex_w2742165216_u19"
+            ],
+            "title": "Modular route from RH to short-interval moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are the reusable analytic inputs for the subsequent probability-style tail argument.",
+      "line_end": 905,
+      "line_start": 876,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient weights and the moment inequality are display-dependent; their roles and hypotheses are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Three lemmas upper-bound log|zeta| by a smoothed Dirichlet polynomial, show prime powers contribute only a small error, and control high moments of prime polynomials on a short interval under the length-budget condition x^r<=H.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH turns large log|zeta| into a large prime polynomial",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u18.txt",
+      "unit_bytes": 1586,
+      "unit_id": "full_openalex_w2742165216_u18",
+      "unit_sha256": "f5af71e23fc682f6d64f02c9b900c7d06eaf13410426cf3cf91b713b620e476a",
+      "unit_type": "Dirichlet-polynomial reduction and moment lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u18.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 868,
+          "line_end": 875,
+          "text": "                                           log3 T\n                                   \u0010              1 \u0001\u0001        \u0011\n                     ≪ H log2 T exp k 2 1 + O          log2 T\n                                               log3 T\n                                    2\n                     = H(log T )k (1+O(1/ log3 T )) ,\n\nso that (7.13) yields then (7.5) of Theorem 3.\n",
+          "sha256": "d3687f1e90a59191531efbc4d362aaea8cbb7984df4ae7000667470e2966978c"
+        },
+        "after": {
+          "line_start": 906,
+          "line_end": 913,
+          "text": "     Now we can give a sketch of the proof of Theorem 4. We assume the RH and let\n\n                   x = H A/V ,         z = x1/ log2 T ,        A = A(T, V ) ( ⩾ 1),\n\nwhere A will be suitably chosen below. We follow the method of proof of [33] (see\nalso [19]) and accordingly consider three cases.\n   Case 1. When 10 log2 T ⩽ V ⩽ log2 T , we take A = 12 log3 T .\n                     p\n",
+          "sha256": "91a63028d5636bdafca7fb2700786ce94a03678a69a1838b4a41d7cb3488ead4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 7: critical-line short intervals",
+            "line_end": 1131,
+            "line_start": 700,
+            "mathematical_role": "Gives unconditional lower bounds and an RH-conditional upper bound, then proves the latter through large-value tails and prime Dirichlet-polynomial moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 905,
+          "line_start": 876,
+          "title": "RH turns large log|zeta| into a large prime polynomial",
+          "unit_id": "full_openalex_w2742165216_u18",
+          "unit_type": "Dirichlet-polynomial reduction and moment lemma",
+          "why_material": "Three lemmas upper-bound log|zeta| by a smoothed Dirichlet polynomial, show prime powers contribute only a small error, and control high moments of prime polynomials on a short interval under the length-budget condition x^r<=H."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These are the reusable analytic inputs for the subsequent probability-style tail argument.",
+          "representation_dependency": "Coefficient weights and the moment inequality are display-dependent; their roles and hypotheses are recoverable.",
+          "unit_id": "full_openalex_w2742165216_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 875,
+            "line_start": 822,
+            "title": "Discretized tails reduce the moment bound to a quadratic maximum",
+            "unit_id": "full_openalex_w2742165216_u17",
+            "unit_type": "tail-to-moment conversion",
+            "why_material": "Small and very large values are disposed of directly, the middle range is discretized, and multiplying its measure by exp(2kU) reduces the problem to maximizing a concave quadratic, recovering the k-squared logarithmic exponent."
+          },
+          {
+            "line_end": 1027,
+            "line_start": 898,
+            "title": "Prime-range splitting converts moment estimates into tail decay",
+            "unit_id": "full_openalex_w2742165216_u04",
+            "unit_type": "large-value measure argument under RH",
+            "why_material": "The proof chooses a V-dependent polynomial length, splits primes at a secondary cutoff, forces one piece to be large, and applies high moments with optimized integer orders to obtain Gaussian or V log V decay."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "RH supplies a prime-polynomial majorant; high-moment estimates yield piecewise tail decay; discretizing and optimizing those tails yields the moment exponent.",
+            "limit": "The chain is solver- and parameter-specific analytic evidence, depends on fixed theta, and retains an O(1/log_3 T) exponent loss.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u16",
+              "full_openalex_w2742165216_u17",
+              "full_openalex_w2742165216_u18",
+              "full_openalex_w2742165216_u04",
+              "full_openalex_w2742165216_u19"
+            ],
+            "title": "Modular route from RH to short-interval moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the end of the carried v1 unit to preserve the transition into the omitted completion.",
+      "line_end": 1126,
+      "line_start": 1016,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants and iterated-log comparisons are display-dependent; the optimization and recombination are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A parallel high-moment bound controls the longer-prime piece, case-specific choices verify the short-interval length constraint, and comparison with the first-piece bounds yields each of Theorem 4's three stated estimates.",
+      "source_id": "openalex_w2742165216",
+      "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+      "source_page_markers_inside_unit": [
+        17,
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The second prime range is bounded and the three tail regimes close",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u19.txt",
+      "unit_bytes": 5256,
+      "unit_id": "full_openalex_w2742165216_u19",
+      "unit_sha256": "d501d40dd522f4e6ea9c1744313c30dee47bd756d1732546ef3edc19ad10eb66",
+      "unit_type": "tail-estimate completion and regime recombination",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u19.txt",
+      "source": {
+        "source_id": "openalex_w2742165216",
+        "title": "On mean value results for the Riemann zeta-function in short intervals.",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1008,
+          "line_end": 1015,
+          "text": "         r       2     ⩽ V                   ⩽ V 2 − 4 ≪ exp(− 101\n                                                                   V log V ),\n              eV1                   eV\n\ngiving in this case\n                                                  1\n(7.23)                   µ1 (T, H, V ) ≪ H exp(− 10 V log V ).\n\n",
+          "sha256": "101929d81375a9d0698a41917810b48f38ad49a89685971097aa91c438a1e50a"
+        },
+        "after": {
+          "line_start": 1127,
+          "line_end": 1134,
+          "text": "\n<!-- source-page: 19 -->\n\n22                                        Aleksandar Ivić\n\n                                          References\n\n [1] F.V. Atkinson, The mean value of the Riemann zeta-function, Acta Math. 81(1949), 353-376.\n",
+          "sha256": "7b96d159de4b3ce4c852709af0d4933e881da680321ecac9fa7c17baa2f1a3ce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 7: critical-line short intervals",
+            "line_end": 1131,
+            "line_start": 700,
+            "mathematical_role": "Gives unconditional lower bounds and an RH-conditional upper bound, then proves the latter through large-value tails and prime Dirichlet-polynomial moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1126,
+          "line_start": 1016,
+          "title": "The second prime range is bounded and the three tail regimes close",
+          "unit_id": "full_openalex_w2742165216_u19",
+          "unit_type": "tail-estimate completion and regime recombination",
+          "why_material": "A parallel high-moment bound controls the longer-prime piece, case-specific choices verify the short-interval length constraint, and comparison with the first-piece bounds yields each of Theorem 4's three stated estimates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps the end of the carried v1 unit to preserve the transition into the omitted completion.",
+          "representation_dependency": "Exact constants and iterated-log comparisons are display-dependent; the optimization and recombination are explicit in prose.",
+          "unit_id": "full_openalex_w2742165216_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1027,
+            "line_start": 898,
+            "title": "Prime-range splitting converts moment estimates into tail decay",
+            "unit_id": "full_openalex_w2742165216_u04",
+            "unit_type": "large-value measure argument under RH",
+            "why_material": "The proof chooses a V-dependent polynomial length, splits primes at a secondary cutoff, forces one piece to be large, and applies high moments with optimized integer orders to obtain Gaussian or V log V decay."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "RH supplies a prime-polynomial majorant; high-moment estimates yield piecewise tail decay; discretizing and optimizing those tails yields the moment exponent.",
+            "limit": "The chain is solver- and parameter-specific analytic evidence, depends on fixed theta, and retains an O(1/log_3 T) exponent loss.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2742165216_u16",
+              "full_openalex_w2742165216_u17",
+              "full_openalex_w2742165216_u18",
+              "full_openalex_w2742165216_u04",
+              "full_openalex_w2742165216_u19"
+            ],
+            "title": "Modular route from RH to short-interval moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "de4fbee095c875686dd4cea18b156bf476be3dd6555067d0d9f80b88804fe016"
+}

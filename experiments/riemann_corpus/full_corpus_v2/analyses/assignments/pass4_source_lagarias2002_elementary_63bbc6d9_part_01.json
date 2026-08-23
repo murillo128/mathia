@@ -1,0 +1,529 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_lagarias2002_elementary_63bbc6d9_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "lagarias2002_elementary",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The adjacent factorization setup explains the function, while the following Mertens/Robin refinement supplies the sharper threshold.",
+      "line_end": 140,
+      "line_start": 121,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; page extraction splits the average-order coefficient across lines 121-127, although the named theorem and asymptotic roles remain readable. Verify exact constants against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bachmann's average-order statement and Gronwall's limsup statement expose the scale change from typical sigma(n) to the logarithmically enhanced values relevant to RH criteria.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Average and maximal divisor-sum regimes separate typical from extremal behavior",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u04_average_vs_maximal_order.txt",
+      "unit_bytes": 798,
+      "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+      "unit_sha256": "f03ab3e0167c70e12ec9a09088590f464df06084a725c793324fda8bbfa908cc",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u04_average_vs_maximal_order.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 113,
+          "line_end": 120,
+          "text": "but pa+1 does not divide n. Most values of σ(n) are on the order of Cn. The average size of σ(n)\nwas essentially found by Dirichlet in 1849, and is given by the following result of Bachmann, cf.\nHardy and Wright [7, Theorem 324].\n\n                                                      2\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "b831d66344d32ddc7505caa438d1059f1797ea65e9f5f4bf12bed152e5b511a3"
+        },
+        "after": {
+          "line_start": 141,
+          "line_end": 148,
+          "text": "\n   This result can be deduced from Mertens’ theorem, which asserts that\n                                          Y       1      eγ\n                                              (1 − ) ∼       .\n                                                  p    log x\n                                         p≤x\n\nas x → ∞. A much more refined version of the asymptotic upper bound, due to Robin [18, Theorem\n",
+          "sha256": "2e0691791d72dea6c5a54c641be59383269a28ede6b6d3319df2b3dd76012425"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 140,
+          "line_start": 121,
+          "title": "Average and maximal divisor-sum regimes separate typical from extremal behavior",
+          "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+          "unit_type": "method-comparison",
+          "why_material": "Bachmann's average-order statement and Gronwall's limsup statement expose the scale change from typical sigma(n) to the logarithmically enhanced values relevant to RH criteria."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The adjacent factorization setup explains the function, while the following Mertens/Robin refinement supplies the sharper threshold.",
+          "representation_dependency": "Formula-dependent; page extraction splits the average-order coefficient across lines 121-127, although the named theorem and asymptotic roles remain readable. Verify exact constants against the scan.",
+          "unit_id": "lagarias2002_u04_average_vs_maximal_order"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 115,
+            "line_start": 103,
+            "title": "Prime-power factorization turns divisor sums into local multiplicative factors",
+            "unit_id": "lagarias2002_u03_multiplicative_divisor_structure",
+            "unit_type": "representation-change",
+            "why_material": "The product formula represents sigma(n) through independent prime-power contributions and establishes the structural coordinate system used to analyze unusually large divisor sums."
+          },
+          {
+            "line_end": 159,
+            "line_start": 142,
+            "title": "Mertens scale, Robin's unconditional envelope, and the narrow margin for Problem E",
+            "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison",
+            "unit_type": "bound-comparison",
+            "why_material": "The source relates maximal divisor sums to the prime product in Mertens' theorem, records Robin's unconditional upper envelope, and compares it with the forthcoming harmonic bound to show that any failure of Problem E must be quantitatively small."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-power multiplicativity creates a hierarchy of normalized extremizers whose tuned small-prime factorizations concentrate the divisor-sum fluctuations capable of witnessing failure of the RH criterion.",
+            "limit": "The fluctuation transfer is explicitly heuristic here, and the decisive thin-set witness statement is imported from Robin rather than proved in Section 2.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u03_multiplicative_divisor_structure",
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u06_nested_extremal_classes",
+              "lagarias2002_u07_colossally_abundant_extremal_reduction",
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "From multiplicativity to a sparse RH-sensitive witness set"
+          },
+          {
+            "claim": "Average behavior is too small to probe RH, maximal behavior reaches the Mertens/Robin scale, and only small fluctuations around that extremal boundary can change the criterion.",
+            "limit": "The source states the average, maximal, and unconditional refined bounds from prior work; it does not derive their full asymptotics locally.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u05_mertens_robin_threshold_comparison",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "Three scales isolate the RH-sensitive boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 120,
+              "line_start": 116,
+              "reason": "Whitespace, isolated formula carryover, and page marker around the average-order theorem."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+          "spontaneous_reading": "Two summaries of the same function reveal different worlds: averaging keeps sigma(n) on a linear scale, whereas a limsup normalization requires the larger n log log n scale. The RH-sensitive behavior must therefore live in an extreme tail rather than in typical values."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+          "source_grounded_mathematics": "Bachmann's theorem gives a quadratic asymptotic for the partial sums of sigma(j), hence average order proportional to n. Gronwall's theorem states that the limsup of sigma(n)/(n log log n) is e^gamma.",
+          "conceptual_reading": "Changing from an average statistic to a maximal-order statistic is a perspective-selection move. It separates bulk behavior from rare configurations and identifies the normalization at which the exceptional values become stable enough to compare.",
+          "representation_or_bridge": "The two normalized observables, sigma(n)/n in aggregate and sigma(n)/(n log log n) along extremal subsequences, form the bridge from typical divisor sums to the boundary scale later used by Robin.",
+          "boundary_or_failure": "Neither theorem locates the extremal inputs or controls fluctuations around the limsup. Both results are cited rather than derived in this unit, and average behavior cannot by itself test RH.",
+          "uncertainty": "The named theorems and scale contrast are clear. The extracted average-order display splits coefficients and exponents across lines, so exact constants should be checked against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+        "critic_decision": "revise",
+        "supported": [
+          "Bachmann's theorem gives a quadratic asymptotic for the partial sums of sigma(j), hence an average value on a linear-in-n scale.",
+          "Gronwall's theorem gives limsup sigma(n)/(n log log n)=e^gamma, supporting the bulk-versus-extremal scale contrast."
+        ],
+        "inference": [
+          "Reading the change from an averaging statistic to a limsup statistic as perspective selection is a useful conceptual move.",
+          "Connecting the maximal scale to later RH-sensitive thresholds is supported by the bounded dossier and nearby context, but is not a consequence of these two displays alone."
+        ],
+        "unsupported_or_imported": [
+          "The phrase 'sigma(n)/n in aggregate' misstates the first observable: the theorem concerns the partial sum sum_{j<=n} sigma(j), not an aggregate of the pointwise ratios sigma(n)/n.",
+          "Saying RH-sensitive behavior 'must therefore' live in the extreme tail overstates what the average/maximal comparison alone proves; that conclusion needs the separate thin-set/RH context."
+        ],
+        "paraphrase_or_style_risk": [
+          "Phrases such as 'two different worlds' and values becoming 'stable enough to compare' are rhetorical unless tied to the precise averaging and limsup operations."
+        ],
+        "context_or_ocr_risk": [
+          "The extracted Bachmann display splits its coefficient and exponent; exact constants require scan verification, although the asymptotic role is readable."
+        ],
+        "missed_mechanism": [
+          "The analysis should explicitly distinguish a partial-sum average from a pointwise maximal-order normalization."
+        ],
+        "revision_instructions": [
+          "Replace 'sigma(n)/n in aggregate' with the average (1/n) sum_{j<=n} sigma(j), or equivalently describe the quadratic partial-sum asymptotic.",
+          "Qualify the extreme-tail/RH claim as a connection supplied by the surrounding criterion, not as a deduction from Bachmann and Gronwall alone; keep the precise linear versus n log log n scale comparison."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The colossally abundant analogue appears after the numerical table at lines 214-226 and completes this hierarchy.",
+      "line_end": 180,
+      "line_start": 160,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low-to-moderate; the normalized objectives are displayed and some exponent placement is extraction-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Highly composite, superior highly composite, and superabundant numbers illustrate two reusable extremal selectors: beating all earlier inputs and maximizing a normalized objective over all inputs.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Record extrema and parameterized extrema define nested filters",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u06_nested_extremal_classes.txt",
+      "unit_bytes": 1119,
+      "unit_id": "lagarias2002_u06_nested_extremal_classes",
+      "unit_sha256": "185d273f96a69fd0e5d4409ce09484102e88ef4bba33135b62ddf2fa7e7f808a",
+      "unit_type": "definition-hierarchy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u06_nested_extremal_classes.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 152,
+          "line_end": 159,
+          "text": "                                                                 log log n\nIn §3 we will show that\n                                                                           7n\n                          Hn + exp(Hn ) log(Hn ) ≤ eγ n log log n +             ,\n                                                                          log n\n\nthe right side of which is only slightly smaller than that of (2.2). Comparing this bound with (2.2)\nshows that the inequality (1.1), if ever false, cannot be false by very much.\n",
+          "sha256": "46f67931af0cd5bc35dba2b79ccbfe745e761f045f394c74fdf3ba935603137b"
+        },
+        "after": {
+          "line_start": 181,
+          "line_end": 188,
+          "text": "\n                                                      3\n\n<!-- source-page: 4 -->\n\nσ(n)\n                                        n          Factorization of n                       n\n                                        2          2                                      1.500\n",
+          "sha256": "131eb3e52ab3b5ec6595a096cf1fdc70ac786725690f159320ae397e163760dd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 180,
+          "line_start": 160,
+          "title": "Record extrema and parameterized extrema define nested filters",
+          "unit_id": "lagarias2002_u06_nested_extremal_classes",
+          "unit_type": "definition-hierarchy",
+          "why_material": "Highly composite, superior highly composite, and superabundant numbers illustrate two reusable extremal selectors: beating all earlier inputs and maximizing a normalized objective over all inputs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The colossally abundant analogue appears after the numerical table at lines 214-226 and completes this hierarchy.",
+          "representation_dependency": "Low-to-moderate; the normalized objectives are displayed and some exponent placement is extraction-sensitive.",
+          "unit_id": "lagarias2002_u06_nested_extremal_classes"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 159,
+            "line_start": 142,
+            "title": "Mertens scale, Robin's unconditional envelope, and the narrow margin for Problem E",
+            "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison",
+            "unit_type": "bound-comparison",
+            "why_material": "The source relates maximal divisor sums to the prime product in Mertens' theorem, records Robin's unconditional upper envelope, and compares it with the forthcoming harmonic bound to show that any failure of Problem E must be quantitatively small."
+          },
+          {
+            "line_end": 226,
+            "line_start": 214,
+            "title": "Colossal abundance concentrates possible RH-criterion counterexamples",
+            "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+            "unit_type": "extremal-reduction",
+            "why_material": "The parameterized global maximization defining colossally abundant numbers creates an infinite thin subset of the superabundant numbers, and Robin's result ensures that RH failure has a witness to the divisor-sum criterion inside this subset."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-power multiplicativity creates a hierarchy of normalized extremizers whose tuned small-prime factorizations concentrate the divisor-sum fluctuations capable of witnessing failure of the RH criterion.",
+            "limit": "The fluctuation transfer is explicitly heuristic here, and the decisive thin-set witness statement is imported from Robin rather than proved in Section 2.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u03_multiplicative_divisor_structure",
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u06_nested_extremal_classes",
+              "lagarias2002_u07_colossally_abundant_extremal_reduction",
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "From multiplicativity to a sparse RH-sensitive witness set"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u06_nested_extremal_classes",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u06_nested_extremal_classes",
+          "spontaneous_reading": "The unit introduces two reusable ways to compress a huge search space: retain record breakers against all earlier inputs, or maximize a penalized objective globally for some parameter. Moving from d(n) to sigma(n)/n shows that the selector matters more than the particular divisor statistic."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u06_nested_extremal_classes",
+          "source_grounded_mathematics": "Highly composite numbers set new records for d(n). Superior highly composite numbers maximize d(k)/k^epsilon over all k for some positive epsilon and form a subset of the highly composite numbers. Superabundant numbers analogously set new records for sigma(n)/n.",
+          "conceptual_reading": "Record selection is order-based, while parameterized maximization exposes extrema through a supporting objective. The second construction is a stronger filter: it selects points that are optimal after trading arithmetic size against a tunable growth penalty.",
+          "representation_or_bridge": "The normalized objectives d(k)/k^epsilon and sigma(k)/k turn extremality into comparison of scalar scores. The parameter epsilon is a bridge from a discrete record sequence to a variational family.",
+          "boundary_or_failure": "This span defines the filters but does not yet prove their infinitude, characterize prime exponents, or establish an RH witness reduction. In particular, record breaking and parameterized optimality should not be treated as equivalent definitions.",
+          "uncertainty": "The prose definitions and containment are clear; exponent placement in the normalized displays is extraction-sensitive and should be scan-checked for exact transcription."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "lagarias2002_u06_nested_extremal_classes",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately distinguishes record-setting highly composite numbers, parameterized global maximizers defining superior highly composite numbers, and record-setting superabundant numbers for sigma(n)/n.",
+          "The stated containment of superior highly composite numbers in the highly composite numbers is source-grounded, and the candidate correctly warns that record breaking and parameterized optimality are not equivalent definitions."
+        ],
+        "inference": [
+          "Contrasting order-based records with optimization under a tunable size penalty is a useful non-paraphrase interpretation.",
+          "Viewing epsilon as a bridge from a record sequence to a variational family is reasonable conceptual language."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that the selector 'matters more than the particular divisor statistic' is not established by presenting analogous definitions and makes an unsupported comparative generalization.",
+          "The span does not place all three named classes in one containment chain; superabundant numbers are introduced as an analogue for a different statistic."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Compress a huge search space' is a generic optimization template unless anchored to the exact earlier-input record condition and all-k maximizing condition."
+        ],
+        "context_or_ocr_risk": [
+          "Exponent placement in d(k)/k^epsilon is flattened, but the prose definition and containment are reliable."
+        ],
+        "missed_mechanism": [
+          "The analysis should separate the asserted containment for the d-based classes from the cross-statistic analogy to superabundance."
+        ],
+        "revision_instructions": [
+          "Delete the claim that the selector matters more than the divisor statistic.",
+          "Retain the exact contrast between record selection and parameterized global maximization, and explicitly state that this span gives an analogy across d and sigma rather than a single three-class nesting."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The intervening table is not needed to state the reduction; lines 227-242 separately explain the factorization geometry suggested by it.",
+      "line_end": 226,
+      "line_start": 214,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate formula dependence in the normalized maximizing objective; the containment and counterexample-reduction claims are explicit prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The parameterized global maximization defining colossally abundant numbers creates an infinite thin subset of the superabundant numbers, and Robin's result ensures that RH failure has a witness to the divisor-sum criterion inside this subset.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Colossal abundance concentrates possible RH-criterion counterexamples",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u07_colossally_abundant_extremal_reduction.txt",
+      "unit_bytes": 907,
+      "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+      "unit_sha256": "4ceba5ffdbafed799c749dd2bec6f507f292dcd329d3a8edac5f4a8e05aad896",
+      "unit_type": "extremal-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u07_colossally_abundant_extremal_reduction.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 206,
+          "line_end": 213,
+          "text": "                          288807105787200          26 · 33 · 52 · 7 · · · 31              6.078\n                         2021649740510400          26 · 33 · 52 · 72 · 11 · · · 31        6.187\n                         6064949221531200          26 · 34 · 52 · 72 · 11 · · · 31        6.238\n                       224403121196654400          26 · 34 · 52 · 72 · 11 · · · 37        6.407\n\n                             Table 1: Colossally abundant numbers up to 1018 .\n\n\n",
+          "sha256": "810525502c1ed21da76e1b2aa6f9ff281c52d04df46e85f18e72bee8139537f2"
+        },
+        "after": {
+          "line_start": 227,
+          "line_end": 234,
+          "text": "    Superabundant and colossally abundant numbers were studied1 in detail by Alaoglu and Erdős [1]\nin 1944. As evidenced in the table, colossally abundant numbers consist of a product of all the\nsmall primes up to some bound, with exponents which are nonincreasing as the prime increases.\nThe values of these exponents have a characteristic smooth shape which can be almost completely\ndescribed (see (2.3) below). In fact these classes of numbers had been studied earlier, by Ramanu-\njan, in his 1915 work on highly composite numbers [14]. The notes in Ramanjuan’s Collected\nPapers report: “The London Mathematical Society was in some financial difficulty at the time, and\nRamanujan suppressed part of what he had written in order to save expense.” [14, p. 339]. Only\n",
+          "sha256": "717fec0e66ca58e962ceae2dc8354c12c75b5ed945863b6f14cdb3140e7940e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 226,
+          "line_start": 214,
+          "title": "Colossal abundance concentrates possible RH-criterion counterexamples",
+          "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+          "unit_type": "extremal-reduction",
+          "why_material": "The parameterized global maximization defining colossally abundant numbers creates an infinite thin subset of the superabundant numbers, and Robin's result ensures that RH failure has a witness to the divisor-sum criterion inside this subset."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The intervening table is not needed to state the reduction; lines 227-242 separately explain the factorization geometry suggested by it.",
+          "representation_dependency": "Moderate formula dependence in the normalized maximizing objective; the containment and counterexample-reduction claims are explicit prose.",
+          "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 180,
+            "line_start": 160,
+            "title": "Record extrema and parameterized extrema define nested filters",
+            "unit_id": "lagarias2002_u06_nested_extremal_classes",
+            "unit_type": "definition-hierarchy",
+            "why_material": "Highly composite, superior highly composite, and superabundant numbers illustrate two reusable extremal selectors: beating all earlier inputs and maximizing a normalized objective over all inputs."
+          },
+          {
+            "line_end": 242,
+            "line_start": 227,
+            "title": "Small-prime support and decreasing exponents shape colossally abundant numbers",
+            "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+            "unit_type": "structural-characterization",
+            "why_material": "The source identifies the qualitative factorization pattern—initial primes with nonincreasing, smoothly shaped exponents—and records that a stronger strict-tie convention is what makes the later exponent formula exact."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-power multiplicativity creates a hierarchy of normalized extremizers whose tuned small-prime factorizations concentrate the divisor-sum fluctuations capable of witnessing failure of the RH criterion.",
+            "limit": "The fluctuation transfer is explicitly heuristic here, and the decisive thin-set witness statement is imported from Robin rather than proved in Section 2.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u03_multiplicative_divisor_structure",
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u06_nested_extremal_classes",
+              "lagarias2002_u07_colossally_abundant_extremal_reduction",
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "From multiplicativity to a sparse RH-sensitive witness set"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+          "spontaneous_reading": "A continuous penalty parameter selects a sparse infinite family of global maximizers, and Robin's result says that this family is rich enough to contain an RH-failure witness. The reduction preserves existence of a counterexample while discarding almost all integers."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+          "source_grounded_mathematics": "A colossally abundant n maximizes sigma(k)/k^(1+epsilon) over k>1 for some positive epsilon. The source states that these numbers are infinite and form a subset of the superabundant numbers. It also reports Robin's result that, if RH is false, a counterexample to inequality (1.2) exists among them, with the analogous property available for (1.1).",
+          "conceptual_reading": "This is an extremal-reduction move: replace universal counterexample search by a structurally selected witness class without claiming that every counterexample belongs to it. Parameterized global optimality supplies the compression.",
+          "representation_or_bridge": "The objective sigma(k)/k^(1+epsilon) is the bridge from arbitrary integers to the thin extremal set. Varying epsilon traces candidate boundary points where normalized divisor sums are hardest to control.",
+          "boundary_or_failure": "The result guarantees an extremal witness under RH failure but allows other counterexamples. The witness theorem is attributed to Robin rather than proved here, and the reduction does not make the remaining search finite.",
+          "uncertainty": "Containment, infinitude, and witness existence are explicit prose. The normalized maximizing formula has flattened exponent layout, so its exact typography requires scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines a colossally abundant number through maximization of sigma(k)/k^(1+epsilon), states that the class is infinite and contained in the superabundant numbers, and reports Robin's RH-false witness reduction.",
+          "The candidate correctly preserves the existential direction: RH failure has a colossally abundant witness, without asserting that every counterexample is colossally abundant.",
+          "It also correctly notes that the reduction is imported from Robin and does not make the search finite."
+        ],
+        "inference": [
+          "Describing parameterized global optimality as an extremal-reduction mechanism is a substantive interpretation supported by the witness statement.",
+          "Viewing epsilon as selecting boundary candidates is plausible, provided it is not presented as a theorem about density or hardness."
+        ],
+        "unsupported_or_imported": [
+          "The candidate calls the family 'sparse' or a 'thin extremal set', but this frozen span establishes infinitude and containment only; it supplies no density or sparsity statement.",
+          "Saying the selected points are where normalized divisor sums are 'hardest to control' is heuristic rather than a claim made in the span."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Compression' is useful only when stated as preservation of existence of a witness, not as an unqualified generic search-space slogan."
+        ],
+        "context_or_ocr_risk": [
+          "The exponent in the maximizing objective is flattened; the prose supports its role but exact typography requires scan verification."
+        ],
+        "missed_mechanism": [
+          "The strongest exact compression claim is witness preservation under RH failure, not sparsity of the selected family."
+        ],
+        "revision_instructions": [
+          "Replace 'sparse' and 'thin' with 'infinite selected subset of the superabundant numbers' unless a separate exact span establishing sparsity is cited.",
+          "Keep the existential witness-preservation mechanism and label any claim about being hardest to control as heuristic rather than source-grounded."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "d367ccf9dbbd85898c4d3c17014be0748b670a95988f8dcd642fd91bd087327c"
+}

@@ -1,0 +1,858 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_milne2015_rh_finite_fields_9453d263_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "milne2015_rh_finite_fields",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends with the direct deduction of curve RH from the Jacobian.",
+      "line_end": 1246,
+      "line_start": 1163,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a positive adjoint, derives semisimplicity and conjugate absolute values, then proves π†π=q using the Weil pairing.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rosati positivity forces Frobenius eigenvalues onto the weight circle",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u018.txt",
+      "unit_bytes": 4663,
+      "unit_id": "milne2015_depth_u018",
+      "unit_sha256": "c4e5db0cfd3b1b2d5e7817a98b2160bb8787fc6a0cd1d71a92280ee4673fc3a5",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u018.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1155,
+          "line_end": 1162,
+          "text": "                                        d\n                                   ∏i=1 F(ai ) = ± deg(F(α)),\nand for the characteristic polynomial Pα,` (T ) of α on T` A,\n                                    d\n                                ∏i=1 F(ai ) ` = |det(F(T` α))|` .\nTherefore, (14) shows that Pα (T ) and Pα,` (T ) coincide as elements of Q` [T ].                 2\n\n\n",
+          "sha256": "53ca1e256c3486953b2be033bc83b8620400dc81672e4779bccdd5edf5a81f53"
+        },
+        "after": {
+          "line_start": 1247,
+          "line_end": 1254,
+          "text": "\n<!-- source-page: 23 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                                        23\n\n\nS UMMARY 1.31. Let A be an abelian variety of dimension g over k = Fq , and let P(T ) be\nthe characteristic polynomial of the Frobenius endomorphism π. Then P(T ) is a monic\n",
+          "sha256": "9a250891309cdf47ca5bb2d3ab2fe14c3698a7db15702afe31b10e8dd6786668"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abelian varieties, Jacobians, and Frobenius",
+            "line_end": 1269,
+            "line_start": 818,
+            "mathematical_role": "Develops Weil numbers, birational construction of Jacobians, Tate modules, characteristic polynomials, and Rosati positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1246,
+          "line_start": 1163,
+          "title": "Rosati positivity forces Frobenius eigenvalues onto the weight circle",
+          "unit_id": "milne2015_depth_u018",
+          "unit_type": "proof-mechanism",
+          "why_material": "Builds a positive adjoint, derives semisimplicity and conjugate absolute values, then proves π†π=q using the Weil pairing."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Ends with the direct deduction of curve RH from the Jacobian.",
+          "representation_dependency": "Formula-dependent but coherent.",
+          "unit_id": "milne2015_depth_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1160,
+            "line_start": 1083,
+            "title": "Tate modules realize the intrinsic characteristic polynomial",
+            "unit_id": "milne2015_depth_u017",
+            "unit_type": "representation-change",
+            "why_material": "Proves finite-rank control of homomorphisms and identifies the degree-defined polynomial with the ℓ-adic action."
+          },
+          {
+            "line_end": 1267,
+            "line_start": 1253,
+            "title": "Finite-field abelian Frobenius package",
+            "unit_id": "milne2015_depth_u019",
+            "unit_type": "structural-summary",
+            "why_material": "Collects integrality, ℓ-independence, point counts, weight, and reciprocal symmetry into one reusable package."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Degree, intersection defect, Rosati adjoints, and Weil forms are successive representations of the same strategy: construct a positive involution or quadratic form, relate Frobenius to its adjoint, and force spectral size.",
+            "limit": "The source establishes these instances and analogies, not a formal equivalence theorem among all four frameworks.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u007",
+              "milne2015_depth_u008",
+              "milne2015_depth_u018",
+              "milne2015_depth_u034",
+              "milne2015_depth_u036"
+            ],
+            "title": "One positivity pattern across four proof languages"
+          },
+          {
+            "claim": "Elliptic degree arguments, surface intersections, determinant estimates, Jacobian positivity, and Stepanov’s method reach the same curve bound with different prerequisites and downstream reach.",
+            "limit": "The source notes that elementary RH proofs do not automatically yield polynomiality of Artin L-functions.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u008",
+              "milne2015_depth_u009",
+              "milne2015_depth_u011",
+              "milne2015_depth_u018",
+              "milne2015_depth_u053"
+            ],
+            "title": "The curve case is a laboratory, not a single canonical proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u018",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u018",
+          "spontaneous_reading": "A polarization supplies a positive adjoint; the Weil pairing identifies Frobenius times its adjoint with q, so positivity turns that algebraic norm identity into absolute value q^{1/2} under every complex embedding."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u018",
+          "source_grounded_mathematics": "A polarization λ defines the Rosati involution α†=λ^{-1}α∨λ, and intersection positivity makes Tr(αα†) positive definite, implying semisimplicity. On Q[α], † becomes complex conjugation under complex embeddings; if αα†=q then every embedding has modulus q^{1/2}. The Weil pairing proves π†π=q_A for finite-field Frobenius, and applying this to a curve's Jacobian gives curve RH.",
+          "conceptual_reading": "The key move is to build an adjoint compatible with a positive form, convert Frobenius into a scalar norm relation, and read spectral size from that relation.",
+          "representation_or_bridge": "Polarization bridges divisors to an involution on End⁰(A); intersection numbers certify positivity; the Weil pairing bridges the adjoint to Frobenius scaling; the Jacobian transfers the abelian result to curves.",
+          "boundary_or_failure": "The proof depends on polarization, Tate-module faithfulness, and the prior Jacobian construction; it establishes the finite-field abelian weight-one circle, not higher-dimensional weights.",
+          "uncertainty": "One theorem display appears to use α† where π† is intended in context, but the proof and conclusion unambiguously concern Frobenius π."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "milne2015_depth_u018",
+        "critic_decision": "revise",
+        "supported": [
+          "The source constructs the Rosati involution from a polarization, proves positivity by intersections, derives semisimplicity, and explains that the involution acts as complex conjugation on complex factors.",
+          "The Weil pairing proves π†π=q on the Tate module and hence algebraically, yielding Frobenius root modulus q^(1/2) and curve RH via the Jacobian."
+        ],
+        "inference": [
+          "The positive-adjoint plus scalar-norm pattern is a faithful non-paraphrase extraction of the proof mechanism."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Several crucial overbars are lost in extraction: the corollary's displayed ρ(α†)=ρ(α) and subsequent product/square are not reliable literally, although the prose explicitly says complex conjugation.",
+          "Theorem 1.30's display uses α† where context requires π†, which the candidate notices only partially."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the analysis, but revise the uncertainty field to state both OCR defects explicitly: missing complex-conjugation bars in Corollary 1.29 and α† in place of π† in Theorem 1.30.",
+          "Ground the repaired conjugation relation in the proof's explicit sentence about complex conjugation and the Weil-pairing identity, not in the damaged displays read literally."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes pushforward as the adjoint supplied by Poincaré duality.",
+      "line_end": 1474,
+      "line_start": 1395,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Notation is dense but intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specifies the minimal functorial package that transports intersection data into finite-dimensional graded linear algebra.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil cohomology axioms encode duality, products, and algebraic cycles",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u022.txt",
+      "unit_bytes": 4871,
+      "unit_id": "milne2015_depth_u022",
+      "unit_sha256": "0fc4d945e08c466e56fb2be38db40471a4f295b4e2cebe1afd7bc8a92b0780cd",
+      "unit_type": "axiomatic-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u022.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1387,
+          "line_end": 1394,
+          "text": "A SIDE 1.33. To say that Z(V, T ) is rational means that there exist elements c1 , . . . , cm ∈ Q,\nnot all zero, and an integer n0 such that, for all n ≥ n0 ,\n\n                                 c1 Nn + c2 Nn+1 + · · · + cm Nn+m−1 = 0.\n\nIn particular, the set of Nn can be computed inductively from a finite subset.\n\n\n",
+          "sha256": "4adbc506d9ea9948659652bc810324accb57f18474c67128dd82e75ea0c20dac"
+        },
+        "after": {
+          "line_start": 1475,
+          "line_end": 1482,
+          "text": "\n<!-- source-page: 27 -->\n\n2     WEIL COHOMOLOGY                                                                               27\n\n\nT HE L EFSCHETZ TRACE FORMULA\nLet H ∗ be a Weil cohomology over the base field k, and let V be nonsingular projective\n",
+          "sha256": "bae4a322288caa4b1dc77f718c715897a40eff91b7d056f90dd773f55b53522a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil cohomology and consequences",
+            "line_end": 1750,
+            "line_start": 1395,
+            "mathematical_role": "Axiomatizes cohomology, proves trace/rationality/integrality/functional equation, isolates the weight gap, and derives semisimplicity of numerical correspondences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1474,
+          "line_start": 1395,
+          "title": "Weil cohomology axioms encode duality, products, and algebraic cycles",
+          "unit_id": "milne2015_depth_u022",
+          "unit_type": "axiomatic-construction",
+          "why_material": "Specifies the minimal functorial package that transports intersection data into finite-dimensional graded linear algebra."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes pushforward as the adjoint supplied by Poincaré duality.",
+          "representation_dependency": "Notation is dense but intact.",
+          "unit_id": "milne2015_depth_u022"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1392,
+            "line_start": 1372,
+            "title": "Abelian exterior powers and rational recurrences model the conjectures",
+            "unit_id": "milne2015_depth_u021",
+            "unit_type": "example-and-criterion",
+            "why_material": "Exhibits cohomological degrees through products of Frobenius roots and interprets rationality as a finite linear recurrence."
+          },
+          {
+            "line_end": 1516,
+            "line_start": 1481,
+            "title": "Lefschetz trace identifies intersections with alternating cohomological traces",
+            "unit_id": "milne2015_depth_u023",
+            "unit_type": "trace-formula",
+            "why_material": "Derives the fixed-point trace formula from the graph class, Künneth decomposition, and dual bases."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Duality plus trace formalism explains rationality, integrality, and functional equation, while weights are the extra input that prevents cancellation and identifies degreewise factors.",
+            "limit": "This synthesis applies to smooth projective varieties in the stated Weil-cohomology setting.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u020",
+              "milne2015_depth_u022",
+              "milne2015_depth_u023",
+              "milne2015_depth_u025",
+              "milne2015_depth_u026"
+            ],
+            "title": "What cohomology proves before purity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u022",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u022",
+          "spontaneous_reading": "The axioms retain exactly the operations needed to turn geometry into controlled finite-dimensional linear algebra: pullback, products, duality, cycle classes, and the duality-defined pushforward."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u022",
+          "source_grounded_mathematics": "A Weil cohomology is a contravariant finite-dimensional graded anticommutative Q-algebra functor on smooth projective varieties, with Poincaré duality, Künneth isomorphisms, and functorial, multiplicative, normalized cycle maps. Nondegenerate duality uniquely defines pushforward φ_* by the projection formula.",
+          "conceptual_reading": "The axioms abstract the common proof interface: they preserve intersections and functorial movement of cycles while replacing varieties by graded vector spaces where traces and determinants are available.",
+          "representation_or_bridge": "The cycle map bridges algebraic cycles to even cohomology; Künneth represents product geometry tensorially; Poincaré duality turns pullback into an adjoint pushforward and evaluates top-degree intersections.",
+          "boundary_or_failure": "The package is restricted here to nonsingular projective varieties and a characteristic-zero coefficient field; existence and coefficient-field obstructions are separate questions.",
+          "uncertainty": "Notation is dense but intact; no material ambiguity affects the axioms."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "milne2015_depth_u022",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly axiomatizes finite-dimensional graded cohomology with Poincaré duality, Künneth, and functorial, multiplicative, normalized cycle maps.",
+          "Nondegenerate duality uniquely defines pushforward through the projection formula, supporting the stated adjoint bridge."
+        ],
+        "inference": [
+          "Describing the axioms as a proof interface that moves intersection data into finite-dimensional graded linear algebra is well grounded."
+        ],
+        "unsupported_or_imported": [
+          "The candidate calls the listed package ‘minimal’ and says it retains ‘exactly’ the needed operations, but the span neither proves minimality nor excludes redundant or alternative axiom systems."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The notation is dense but intact enough to support all substantive axioms and the pushforward construction."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the claims of minimality and exact necessity; describe the axioms as the package listed in the source or as a sufficient proof interface."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source presents a proof architecture rather than every technical detail; that limit is preserved.",
+      "line_end": 3239,
+      "line_start": 3177,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered with a few clear spectral-sequence formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses vanishing cycles, Leray, big monodromy, and duality to close Deligne’s induction for all smooth projective varieties.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        57
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lefschetz pencils turn lower-dimensional purity into the general theorem",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u049.txt",
+      "unit_bytes": 3726,
+      "unit_id": "milne2015_depth_u049",
+      "unit_sha256": "134209ad80dd88cfed421f9ead4866a9b040d2a8af7cff61edd33d7f4ad0b55f",
+      "unit_type": "inductive-completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u049.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3169,
+          "line_end": 3176,
+          "text": "of π acting on\n                      H r (V, Q` )⊗d ⊗ H 0 (V, Q` )⊗r−d ⊂ H rd (V r , Q` )\n                                                                              rd\nbecause π acts as 1 on H 0 (V, Q` ). Therefore α d is algebraic and |α d | = q 2 , and similarly for\nits conjugates. The case r < d can be treated similarly using that π acts as qd on H 2d (V, Q` ),\nor by using Poincaré duality.                                                                    2\n\n\n",
+          "sha256": "1f41dcbef54318b44eaa11f5862096b66f1fc9b453ab384f7dfa92ee6b52584e"
+        },
+        "after": {
+          "line_start": 3240,
+          "line_end": 3247,
+          "text": "\n\nBeyond the Riemann hypothesis over finite fields\nIn a seminar at IHES, Nov. 1973 to Feb. 1974, Deligne improved his results on zeta functions.\nIn particular he proved stronger forms of the Main Lemma. These results were published in\nDeligne 1980, which has become known as Weil II. Even beyond his earlier results on the\nRiemann hypothesis, these results have found a vast array of applications, which I shall not\nattempt to summarize (see the various writings of Katz, especially Katz 2001, and the book\n",
+          "sha256": "acc8df81232305b022406066a29bd52d1b2d52fe06784779e714cae9ca632875"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deligne’s proof",
+            "line_end": 3249,
+            "line_start": 2749,
+            "mathematical_role": "Develops the Landau–Rankin clue, trace formula, big monodromy, tensor-power amplification, main lemma, and Lefschetz-pencil induction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3239,
+          "line_start": 3177,
+          "title": "Lefschetz pencils turn lower-dimensional purity into the general theorem",
+          "unit_id": "milne2015_depth_u049",
+          "unit_type": "inductive-completion",
+          "why_material": "Uses vanishing cycles, Leray, big monodromy, and duality to close Deligne’s induction for all smooth projective varieties."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source presents a proof architecture rather than every technical detail; that limit is preserved.",
+          "representation_dependency": "Prose-centered with a few clear spectral-sequence formulas.",
+          "unit_id": "milne2015_depth_u049"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3174,
+            "line_start": 3107,
+            "title": "The main lemma and product powers reduce exact weights to coarse middle-degree bounds",
+            "unit_id": "milne2015_depth_u048",
+            "unit_type": "reduction-and-lemma",
+            "why_material": "Abstracts the curve-family argument and shows how arbitrarily high powers erase a fixed exponent error, then transfers middle-degree control to all degrees."
+          },
+          {
+            "line_end": 3294,
+            "line_start": 3251,
+            "title": "Hasse-Weil zeta functions assemble local weights into a global functional equation",
+            "unit_id": "milne2015_depth_u050",
+            "unit_type": "local-to-global-conjecture",
+            "why_material": "Defines good-prime factors and the completed rth zeta factor, separating known local convergence from conjectural global continuation and symmetry."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative tensor-power traces, control of global poles, and big geometric monodromy provide an alternative weight mechanism that avoids proving the standard conjectures.",
+            "limit": "The source sketches technical inputs such as vanishing cycles and the Kazhdan–Margulis theorem rather than proving them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u044",
+              "milne2015_depth_u045",
+              "milne2015_depth_u046",
+              "milne2015_depth_u047",
+              "milne2015_depth_u048",
+              "milne2015_depth_u049"
+            ],
+            "title": "Deligne’s route replaces unavailable cycle positivity with analytic positivity plus monodromy"
+          },
+          {
+            "claim": "Deligne’s local weight theorem controls Euler-factor convergence, but global continuation and functional equation are transferred to automorphic or motivic identifications rather than following from local purity alone.",
+            "limit": "The automorphic identification is conjectural in general and known examples do not establish universality.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u049",
+              "milne2015_depth_u050",
+              "milne2015_depth_u051",
+              "milne2015_depth_u052"
+            ],
+            "title": "Local finite-field purity feeds a distinct global automorphic problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u049",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u049",
+          "spontaneous_reading": "The decisive move is to replace the middle cohomology of one higher-dimensional variety by the cohomology of a one-parameter family of lower-dimensional hyperplane sections. A Lefschetz pencil, resolved by blowing up its axis, supplies a proper map to P1; Leray isolates three terms, and the genuinely variable middle term is compressed into a quotient subquotient E. Inductive purity on the fibres, the intersection pairing, big-monodromy input, the Main Lemma, and duality then turn this family representation into the required two-sided eigenvalue control."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u049",
+          "source_grounded_mathematics": "For an even-dimensional nonsingular projective V0, the source chooses a Lefschetz pencil after modifying the embedding and making a finite field extension, blows up the axis to obtain f: V0* -> P1, and uses the Leray spectral sequence to reduce the target middle-degree estimate to H2(P1,R^{d-2}f_*Q_l), H1(P1,R^{d-1}f_*Q_l), and H0(P1,R^d f_*Q_l). For the difficult H1 term, Deligne applies the Main Lemma to a quotient subquotient E: induction supplies one hypothesis, an intersection form supplies the skew form, and a Kazhdan-Margulis theorem supplies the remaining input; duality supplies the opposite bound.",
+          "conceptual_reading": "The pencil performs an inductive reframing: a static global cohomology problem becomes variation over a curve, where singular fibres and monodromy are controllable. Leray decomposes the proof burden, while E separates the variable part on which the monodromy mechanism can act. Thus lower-dimensional purity is not merely reused pointwise; it is transported through a family and combined with pairing and duality to control the original middle degree.",
+          "representation_or_bridge": "The bridge is V0 -> its blown-up pencil f: V0* -> P1 -> the higher direct-image sheaves R^s f_*Q_l -> Leray terms computing total cohomology. Vanishing cycles and Picard-Lefschetz theory control degeneration, the intersection form puts E into the form required by the Main Lemma, and duality converts one-sided spectral control into a two-sided estimate.",
+          "boundary_or_failure": "This span gives the architecture, not proofs of vanishing-cycle theory, the Main Lemma, the Kazhdan-Margulis input, or the easier Leray terms. It also uses changes of embedding and base field and treats the displayed even-dimensional middle-degree step; the surrounding reductions needed for every degree are not reconstructed here.",
+          "uncertainty": "The prose and spectral-sequence structure are clear. PDF extraction flattens exponents and l-adic notation, and the final displayed lower bound appears typographically ambiguous, so the reading preserves the claimed two-sided control without repairing the exact formula from memory."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "milne2015_depth_u049",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately records the Lefschetz-pencil construction, blow-up of the axis, proper map to P^1, and Leray reduction to the three displayed terms.",
+          "It correctly preserves the proof inputs actually named for E: induction for hypothesis (i), an intersection form for (ii), Kazhdan-Margulis for (iii), followed by the Main Lemma and duality.",
+          "Its boundary statement correctly says that the span gives proof architecture rather than proofs of the technical inputs or easier Leray terms."
+        ],
+        "inference": [
+          "Reading the pencil as converting a static cohomology problem into a family and Leray as decomposing the proof burden is a defensible conceptual synthesis."
+        ],
+        "unsupported_or_imported": [
+          "The span calls E only a certain quotient subquotient; describing it as the genuinely variable part, or as precisely separating the variable part, imports a more specific identification.",
+          "Calling the Kazhdan-Margulis input big monodromy is not established in the exact span, which only says that the theorem supplies hypothesis (iii)."
+        ],
+        "paraphrase_or_style_risk": [
+          "The compression and variable-part language sounds mechanism-rich but outruns the exact role assigned to E."
+        ],
+        "context_or_ocr_risk": [
+          "The extracted l-adic notation and exponents are degraded, and the final displayed lower bound is ambiguous; the candidate responsibly avoids repairing that formula from memory."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the variable-part descriptions with the source-faithful statement that E is a certain quotient subquotient of R^{d-1}f_*Q_l, and describe Kazhdan-Margulis only as supplying Main Lemma hypothesis (iii) unless its monodromy role is separately evidenced. Retain the family/Leray architecture and OCR caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the indirect embedding argument proving the conjugation conjecture.",
+      "line_end": 3454,
+      "line_start": 3370,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Group-extension and cocycle notation are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reframes Galois action on CM abelian varieties as a tannakian extension and shows how Langlands’s cocycle is characterized by the same action.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        60,
+        61
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shimura conjugation data identifies the motivic Taniyama group",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u052.txt",
+      "unit_bytes": 5670,
+      "unit_id": "milne2015_depth_u052",
+      "unit_sha256": "95d36f0ca09f3e9d2aba7e299b2b2258b1f48e418de6424444b2709b4c9442e5",
+      "unit_type": "categorical-identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u052.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3362,
+          "line_end": 3369,
+          "text": "         with the help of the knowledge and tools obtained, to develop a theory of\n         correspondences and simultaneously of motives over Q and other global fields,\n         as well as C.55 (Langlands 2015, p.205).\n\n     In support of this statement, he mentions two examples (Langlands 2007, 2015). The\nfirst, Deligne’s proof of the Riemann hypothesis over finite fields, has already been discussed\nin some detail. I now discuss the second example.\n\n",
+          "sha256": "7409e969bc0f347d8c1932ad26b29fbf44099ae52008c2df12a23a4bd8387dae"
+        },
+        "after": {
+          "line_start": 3455,
+          "line_end": 3462,
+          "text": "\n\nEpilogue\nStepanov (1969) introduced a new elementary approach for proving the Riemann hypothesis\nfor curves, which requires only the Riemann-Roch theorem for curves. This approach was\ncompleted and simplified by Bombieri (1974) (see also Schmidt 1973).\n    How would our story have been changed if this proof had been found in the 1930s?\n\n",
+          "sha256": "97c2d16904633201534178312ead4e09895f2aefebe4ada2d639ef477b6156ee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Hasse-Weil zeta functions and automorphic outlook",
+            "line_end": 3456,
+            "line_start": 3250,
+            "mathematical_role": "Moves from local finite-field factors to global functional equations, automorphic functoriality, and the motivic Taniyama group."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3454,
+          "line_start": 3370,
+          "title": "Shimura conjugation data identifies the motivic Taniyama group",
+          "unit_id": "milne2015_depth_u052",
+          "unit_type": "categorical-identification",
+          "why_material": "Reframes Galois action on CM abelian varieties as a tannakian extension and shows how Langlands’s cocycle is characterized by the same action."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the indirect embedding argument proving the conjugation conjecture.",
+          "representation_dependency": "Group-extension and cocycle notation are clear.",
+          "unit_id": "milne2015_depth_u052"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3368,
+            "line_start": 3296,
+            "title": "Automorphic identification is the proposed route to global Hasse-Weil continuation",
+            "unit_id": "milne2015_depth_u051",
+            "unit_type": "bridge-strategy",
+            "why_material": "Explains known modular/CM cases, the functoriality principle, and Langlands’s proposed feedback from automorphic tools to cycles and motives."
+          },
+          {
+            "line_end": 3461,
+            "line_start": 3457,
+            "title": "Stepanov–Bombieri gives a curve proof using only curve Riemann–Roch",
+            "unit_id": "milne2015_depth_u053",
+            "unit_type": "alternative-route",
+            "why_material": "Records an elementary route with substantially weaker prerequisites than the intersection/cohomology approaches."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Deligne’s local weight theorem controls Euler-factor convergence, but global continuation and functional equation are transferred to automorphic or motivic identifications rather than following from local purity alone.",
+            "limit": "The automorphic identification is conjectural in general and known examples do not establish universality.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u049",
+              "milne2015_depth_u050",
+              "milne2015_depth_u051",
+              "milne2015_depth_u052"
+            ],
+            "title": "Local finite-field purity feeds a distinct global automorphic problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u052",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u052",
+          "spontaneous_reading": "The higher-dimensional CM action problem becomes manageable only after it is compressed into a single tannakian symmetry object: an extension of the absolute Galois group by the Serre protorus, together with a finite-adelic section. Independently, Langlands's cocycle for conjugating Shimura data constructs a candidate Taniyama group. Deligne's characterization by the induced actions on CM abelian varieties identifies the two descriptions, while the conjugation theorem itself is reached indirectly by embedding general Shimura varieties into richer ones containing many type-A1 subvarieties."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u052",
+          "source_grounded_mathematics": "The source asks for a higher-dimensional description of Gal(Qal/Q) acting on polarized CM abelian varieties and their torsion. Under the motivic framework described, the CM-motivic Galois group fits into 1 -> S -> T -> Gal(Qal/Q) -> 1, with S the Serre protorus and an etale-cohomological section over the finite adeles. Langlands's one-cocycle twists Shimura data (G,X) under automorphisms of C and also yields a conjectural Taniyama group. Deligne showed that compatibility with the Shimura-Taniyama action characterizes the groups, identifying the motivic and Langlands constructions. The conjugation conjecture is proved via an embedding into a larger Shimura variety with many type-A1 subvarieties and implies Shimura's conjecture.",
+          "conceptual_reading": "A dispersed family of Galois actions is reframed as the representation theory of one group extension, making a global compatibility problem into an object-identification problem. The cocycle is the comparison invariant: it records how conjugation changes Shimura data. Equality follows through a characterization by action, illustrating how two constructions can be identified by what they do on a sufficiently structured class of objects rather than by matching formulas directly.",
+          "representation_or_bridge": "Tannakian reconstruction bridges the category of CM motives to the group extension T; etale cohomology supplies the adelic section; the action on CM abelian varieties and torsion is the observable interface. Langlands's one-cocycle bridges field automorphisms to twisted Shimura data and then to a second Taniyama-group construction. The geometric embedding into a larger Shimura variety is a separate bridge that reduces the general conjugation problem to settings rich in type-A1 subvarieties.",
+          "boundary_or_failure": "In this account, existence of the tannakian CM-motive category is tied to the Hodge conjecture, and the span does not give the cocycle or the characterization proof. The eventual proof of the conjugation conjecture is indirect; the attempted direct use of the embedding idea failed, and no direct proof of Shimura's conjecture is known. These results do not by themselves prove the broader automorphic or motivic program.",
+          "uncertainty": "The group extension, cocycle role, and indirect embedding route are legible. Some extracted accents, primes, and embedding notation are degraded, but no missing formula is needed for the structural reading; the precise logical dependence of every motivic construction is retained only as stated in the survey."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "milne2015_depth_u052",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately states the group extension by the Serre protorus, the finite-adelic section from etale cohomology, Langlands's twisting cocycle, Deligne's characterization, and the indirect embedding route for the conjugation conjecture.",
+          "It correctly separates the Taniyama-group identification from the later geometric argument and retains the failure of a direct proof of Shimura's conjecture.",
+          "The boundary notes that the span supplies neither the cocycle nor the characterization proof and explicitly records the Hodge-conjecture dependence."
+        ],
+        "inference": [
+          "Treating the action on CM abelian varieties and torsion as an observable comparison interface is a defensible conceptual reading.",
+          "Describing the embedding into a larger Shimura variety as a bridge to a setting rich in type-A1 subvarieties is a reasonable summary of the stated proof route."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the higher-dimensional problem becomes manageable only after compression into one tannakian object turns a suggested framework into a necessity claim.",
+          "The generic lesson about identification by action on a sufficiently structured class of objects is broader than the exact characterizing property stated for the two Taniyama groups."
+        ],
+        "paraphrase_or_style_risk": [
+          "Single-object compression is a reusable template, but here it should remain tied to the conditional CM-motive construction rather than presented as the uniquely decisive move."
+        ],
+        "context_or_ocr_risk": [
+          "Accents, primes, and embedding notation are degraded, but the extension, cocycle role, and embedding argument remain legible without formula reconstruction."
+        ],
+        "missed_mechanism": [
+          "The spontaneous synthesis does not carry forward the source's hypothesis that the Hodge conjecture implies existence of the tannakian category of CM motives."
+        ],
+        "revision_instructions": [
+          "Qualify the tannakian construction by the Hodge-conjecture implication, replace only-after necessity with neutral reframing language, and state Deligne's characterization specifically in terms of the Shimura-Taniyama-compatible actions on CM abelian varieties and torsion. Keep any broader identify-by-action lesson explicitly marked as inference."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source only states the route and references, so no proof details are inferred.",
+      "line_end": 3461,
+      "line_start": 3457,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records an elementary route with substantially weaker prerequisites than the intersection/cohomology approaches.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Stepanov–Bombieri gives a curve proof using only curve Riemann–Roch",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u053.txt",
+      "unit_bytes": 338,
+      "unit_id": "milne2015_depth_u053",
+      "unit_sha256": "f130e3d76e893c21432da21f326fd812e357932ced350d32d71d642df1217ae1",
+      "unit_type": "alternative-route",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u053.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3449,
+          "line_end": 3456,
+          "text": "by Shimura and his students and in general by Deligne. To obtain a proof for a general\nShimura variety, Piatetski-Shapiro suggested embedding the Shimura variety in a larger\nShimura variety that contains many Shimura subvarieties of type A1 . After Borovoi had\nunsuccessfully tried to use Piatetski-Shapiro’s idea to prove Shimura’s conjecture directly, the\nauthor used it to prove Langlands’s conjugation conjecture, which has Shimura’s conjecture\nas a consequence. No direct proof of Shimura’s conjecture is known.\n\n\n",
+          "sha256": "8953cf62a2cc9e7a045f48d23a0ca45786d0b808fb949bd13bc5a2b6c6969b4f"
+        },
+        "after": {
+          "line_start": 3462,
+          "line_end": 3469,
+          "text": "\nACKNOWLEDGEMENT\nI thank F. Oort and J-P. Serre for their comments on the first draft of this article, and Serre for\ncontributing the letter of Weil. It would not have been possible to write this article without\nthe University of Michigan Science Library, which provided me with a copy of the 1953\nthesis of Frank Quigley, and where I was able to find such works as Castelnuovo’s Memoire\nScelte . . . and Severi’s Trattato ... available on open shelves.\n\n",
+          "sha256": "e4e9f8f1b5b4e62dc4a7bce273c69c6dde1bdec919a47d5b003950ff4c817ba9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Epilogue and acknowledgements",
+            "line_end": 3470,
+            "line_start": 3457,
+            "mathematical_role": "Notes the independent Stepanov–Bombieri elementary route and closes the narrative."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3461,
+          "line_start": 3457,
+          "title": "Stepanov–Bombieri gives a curve proof using only curve Riemann–Roch",
+          "unit_id": "milne2015_depth_u053",
+          "unit_type": "alternative-route",
+          "why_material": "Records an elementary route with substantially weaker prerequisites than the intersection/cohomology approaches."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source only states the route and references, so no proof details are inferred.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u053"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3454,
+            "line_start": 3370,
+            "title": "Shimura conjugation data identifies the motivic Taniyama group",
+            "unit_id": "milne2015_depth_u052",
+            "unit_type": "categorical-identification",
+            "why_material": "Reframes Galois action on CM abelian varieties as a tannakian extension and shows how Langlands’s cocycle is characterized by the same action."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Elliptic degree arguments, surface intersections, determinant estimates, Jacobian positivity, and Stepanov’s method reach the same curve bound with different prerequisites and downstream reach.",
+            "limit": "The source notes that elementary RH proofs do not automatically yield polynomiality of Artin L-functions.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u008",
+              "milne2015_depth_u009",
+              "milne2015_depth_u011",
+              "milne2015_depth_u018",
+              "milne2015_depth_u053"
+            ],
+            "title": "The curve case is a laboratory, not a single canonical proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u053",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u053",
+          "spontaneous_reading": "The important information is a change in proof prerequisites: Stepanov opened a curve-level route to the finite-field Riemann hypothesis needing only the Riemann-Roch theorem for curves, and Bombieri completed and simplified it. Its late discovery shows that the sophisticated historical route was not logically forced, but the narrow span supplies no mechanism for the elementary proof."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u053",
+          "source_grounded_mathematics": "The source states that Stepanov introduced an elementary approach to the Riemann hypothesis for curves requiring only the Riemann-Roch theorem for curves, and that Bombieri completed and simplified it, with Schmidt also cited.",
+          "conceptual_reading": "This is an alternative-route observation about dependency structure: the same curve-level target can be approached from substantially weaker stated prerequisites. The closing counterfactual asks how the history would differ had that route been available earlier, emphasizing that discovery order need not mirror logical necessity.",
+          "representation_or_bridge": "The only explicit bridge is from curve Riemann-Roch to an elementary proof approach for the curve Riemann hypothesis. No intermediate construction, auxiliary function, estimate, or transfer mechanism is described in this unit.",
+          "boundary_or_failure": "The claim is restricted to curves and records attribution and prerequisites, not proof details. The span does not establish what the method proves beyond the curve RH, how the method works, or whether it provides consequences supplied by cohomological approaches.",
+          "uncertainty": "Attribution and the stated prerequisite are clear. Mathematical-mechanism uncertainty is high because the source gives only a two-sentence historical summary, so no missing steps are inferred."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "milne2015_depth_u053",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately records Stepanov's elementary curve-level approach, its stated reliance only on curve Riemann-Roch, and Bombieri's completion and simplification, with Schmidt cited.",
+          "It correctly refuses to invent an auxiliary construction, estimate, or proof mechanism absent from the two-sentence source summary.",
+          "It preserves the restriction to curves and distinguishes attribution and prerequisites from proof details."
+        ],
+        "inference": [
+          "The closing question invites reflection on discovery chronology, but it does not itself answer the historical counterfactual."
+        ],
+        "unsupported_or_imported": [
+          "Calling the stated prerequisite substantially weaker than intersection or cohomological approaches imports a comparison not made within the exact span.",
+          "Saying that the proof's late discovery shows that the sophisticated historical route was not logically forced converts the source's unanswered counterfactual into a conclusion and relies on surrounding history."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic maxim that discovery order need not mirror logical necessity risks substituting a broad methodological slogan for the source's deliberately open question."
+        ],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [
+          "No mathematical mechanism is available to recover from this semantic unit; the candidate appropriately identifies that limitation."
+        ],
+        "revision_instructions": [
+          "Retain the explicit attribution, curve scope, and Riemann-Roch prerequisite; replace the relative weaker-prerequisites claim with the source's exact only-Riemann-Roch statement, and present the possible historical effect as an open question rather than a derived conclusion. Do not add method details."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "5c781c27edf597d1fe2bf0905047d13c71bfdb7b222e50b6d66a5d6df44ed842"
+}

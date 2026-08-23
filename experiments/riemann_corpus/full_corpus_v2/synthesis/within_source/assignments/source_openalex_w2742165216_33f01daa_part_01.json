@@ -1,0 +1,320 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2742165216",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2742165216_33f01daa_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "For the second and fourth moments, subtracting global asymptotics makes the error-term scale the effective minimum H at which a local main term is visible.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2742165216_u10",
+          "full_openalex_w2742165216_u11"
+        ],
+        "proposed_limit": "This comparison is established here only for the two low moments with explicit global formulas; it does not furnish higher-moment asymptotics.",
+        "source_id": "openalex_w2742165216",
+        "synthesis_id": "riemann_v2_within_f52d7bfbac561036cac03b39",
+        "title": "Error-term exponents as short-interval resolution limits"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also records opposing omega behavior and the conjectured T^(1/4+epsilon) scale, which delimit what error-term improvement would mean.",
+          "line_end": 579,
+          "line_start": 526,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The double sums and omega factors require the displays; the representation comparison and localization bridge are clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A structurally different Riemann-Siegel-based formula estimates the same error term, and a local averaging inequality turns increments of E into pointwise control of zeta, exposing how global error exponents set short-interval asymptotic thresholds.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Riemann-Siegel sums and error increments control local zeta size",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u10.txt",
+          "unit_bytes": 2855,
+          "unit_id": "full_openalex_w2742165216_u10",
+          "unit_sha256": "fb9ca48eafbe3dff4b2c7caf5b042f5cdc56aceb5bcd1b68490b07ae72b5ad7f",
+          "unit_type": "alternative representation and localization bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The key move is to translate global approximation quality into local observability: after subtraction of the main term, an interval must be longer than the error scale for the local main term to be visible. The increment inequality also shows that error oscillation, not just error magnitude, mediates local peaks.",
+            "nonparaphrase_operation": "Riemann-Siegel double sums expose pair correlations in E(T); the unit-scale averaging inequality then bridges E-increments to local zeta size, and endpoint differencing bridges the global E bound to a short-interval asymptotic.",
+            "quality_reason": "The span gives the alternative Riemann-Siegel double-sum formula, the local averaging inequality involving E(t+1)-E(t-1), Watt's 131/416 bound, the resulting H=T^theta threshold, both-sign omega behavior, and the conjectural quarter-power bound. The candidate keeps the proven, omega, and conjectural signals distinct.",
+            "source_support": "Balasubramanian's formula expresses E(T) as two double oscillatory sums over n,m up to K=T/(2pi), plus O(log^2 T). Although structurally different from Atkinson's formula, it can also estimate E. The source records a local averaging bound for |zeta(1/2+it)|^2 in terms of a unit-neighborhood mean and then in terms of log t and E(t+1)-E(t-1). Watt's bound E(T) << T^(131/416+epsilon) yields the stated unconditional short-interval mean-square asymptotic for H=T^theta with theta>131/416. Opposite-sign omega results and the conjecture E(T)<<T^(1/4+epsilon) delimit the possible scale.",
+            "speculation_status": "The proven exponent gives only the stated threshold and does not reach the conjectural quarter-power scale. Omega behavior prevents treating E as a one-sided negligible remainder, and this low-moment bridge does not furnish higher-moment asymptotics. The representation comparison, exponent threshold, omega meaning, and conjectural boundary are clear. Exact double-sum denominators and the extracted display of the local asymptotic require source-image checking for literal reuse. Viewing endpoint-error size as a short-interval resolution limit and increments rather than absolute error as mediating local peaks follows directly from the displayed differencing and local inequality. The double-sum denominators and the centered asymptotic have flattened display grouping; the mechanism-level account avoids relying on those details."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span joins the representation, why smoothing is necessary, the spectral quantities, and the downstream H threshold.",
+          "line_end": 670,
+          "line_start": 580,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact spectral coefficients and smoothing ranges are display-dependent; the transform, convergence role, and threshold are textually recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Motohashi's Gaussian-smoothed fourth moment is expressed through spectral data via trace formulas; resulting upper, omega, and mean-square bounds for E2 translate into a concrete short-interval length at which a fourth-moment asymptotic is unconditional.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gaussian smoothing opens a spectral route to the fourth-moment error",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u11.txt",
+          "unit_bytes": 4897,
+          "unit_id": "full_openalex_w2742165216_u11",
+          "unit_sha256": "03c5b152ad69db72fd665d1fdd22593549054843536e2ba837091e723568b7e1",
+          "unit_type": "spectral representation of a smoothed fourth moment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing trades exact localization for analytic and spectral accessibility. The spectral expansion exposes cancellation and arithmetic structure unavailable in the raw fourth-moment integral, while the residual E_2 again acts as the resolution limit for recovering a local main term.",
+            "nonparaphrase_operation": "The Gaussian-smoothed moment is the bridge from zeta values to Maass spectral parameters and Hecke data; trace formulas mediate that change of representation. Returning from the global polynomial-plus-error formula to a centered interval converts the E_2 bound into the stated H threshold.",
+            "quality_reason": "The span defines the fourth-moment polynomial-plus-error decomposition, Motohashi's Gaussian-smoothed integral, its simplified spectral sum and Delta restrictions, and the role of Bruggeman-Kuznetsov trace formulas. It also records the E_2 upper, omega, integral, and mean-square bounds and derives the stated H=T^(2/3)log^C T short-interval result.",
+            "source_support": "The fourth moment is written as T times a degree-four polynomial in log T plus E_2(T). Motohashi's smoothed integral I(T,Delta) averages |zeta(1/2+iT+it)|^4 against a Gaussian and, in simplified form, equals a sum over the discrete spectrum of the modular Laplacian involving eigenparameters kappa_j, spectral weights alpha_j, central values H_j(1/2)^3, an oscillatory sine, and Gaussian damping. The smoothing resolves convergence problems in the proof, which uses Bruggeman-Kuznetsov trace formulas. The source records E_2(T)=O(T^(2/3)log^C T), omega of both signs at scale T^(1/2), integral bounds for E_2, and an unconditional short-interval fourth-moment asymptotic when H=T^(2/3)log^C T.",
+            "speculation_status": "The spectral formula is presented only in simplified form and under restrictions on Delta. The conjectural E_2(T)<<T^(1/2+epsilon) is not proved, and the known local result inherits the larger two-thirds scale and logarithmic factor. The roles of smoothing, spectral data, error bounds, and localization are explicit. Exact coefficients, powers, and admissible Delta range are display-sensitive and should be checked before quantitative reuse. Describing smoothing as trading localization for spectral accessibility is a faithful conceptual summary of the explicitly stated convergence role. Calling E_2 a resolution limit is supported by the final localization threshold, not merely a generic slogan. Spectral coefficients, Gaussian exponents, and the admissible Delta range are highly display-sensitive; the candidate explicitly limits literal reuse."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "On fixed-power short intervals, the unconditional lower bound and RH-conditional upper bound identify H times a k-squared logarithmic power as the common scale up to the stated vanishing loss.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2742165216_u13",
+          "full_openalex_w2742165216_u15"
+        ],
+        "proposed_limit": "The upper bound assumes RH and H=T^theta with fixed theta, while the lower bound covers integer k and much shorter intervals.",
+        "source_id": "openalex_w2742165216",
+        "synthesis_id": "riemann_v2_within_8be8488d7ddb27688c98cb6c",
+        "title": "Two-sided critical-line moment scale"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof is cited rather than reproduced, so the unit supports the result and scale but not its internal derivation.",
+          "line_end": 725,
+          "line_start": 700,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exponent and Euler product are display-dependent; the range and interpretation are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2 strengthens the general lower bound on the critical line to H times a k-squared logarithmic power and records the arithmetic Euler-product constant and the log-log interval threshold.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Critical-line moments have the conjectured logarithmic lower scale",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u13.txt",
+          "unit_bytes": 1376,
+          "unit_id": "full_openalex_w2742165216_u13",
+          "unit_sha256": "0d97104d29a7bb60b120d4ff1e239f6518564517b71622ed66cdf85ddf1e5db2",
+          "unit_type": "unconditional short-interval lower bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For fixed integer k≥1 and C(ε,k)log log T≤H≤T/2, Theorem 2 gives an unconditional centered critical-line 2k-th-moment lower bound of (C'_k−2ε)H(log H)^(k²). This factors the certified lower scale into interval length, logarithmic growth, and an arithmetic constant displayed as a product of prime-indexed local factors. That representation gains visibility into the constant's arithmetic factorization, but it does not establish probabilistic independence of the factors. The statement is only a lower bound, not an asymptotic or matching upper bound; its proof is cited to Ramachandra's monograph rather than reproduced, so the unit supports the scale and hypotheses but not an internal derivation.",
+            "nonparaphrase_operation": "Decomposes the theorem's lower bound into geometric interval volume, logarithmic critical-line growth, and prime-indexed arithmetic factorization, then marks exactly which explanatory content is unavailable because the proof is external.",
+            "quality_reason": "Accepted after replacing conjectural scale language with the proved lower-bound scale and restricting the Euler-product interpretation to displayed factorization. Formula-sensitive local factors are not transcribed beyond what the unit safely supports.",
+            "source_support": "Equations (7.1)–(7.2) state the fixed-integer-k hypothesis, the H range, the H(log H)^(k²) lower bound, and the gamma/Euler-product expression for C'_k. The following paragraph points to Ramachandra's monograph for the proof and says the methods also apply to more general Titchmarsh series.",
+            "speculation_status": "The factorization reading is source-grounded. No claim that the scale is expected or universal, and no independence interpretation of the prime-indexed factors, is retained; no cross-source suggestion is made."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source itself flags the unresolved extension to log-log-length intervals and removal of the exponent loss.",
+          "line_end": 784,
+          "line_start": 752,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact O(1/log_3 T) exponent is display-dependent; the range, comparison, and limitations are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 3 gives an RH-conditional upper bound matching the lower-bound logarithmic scale up to a vanishing exponent loss, while explicitly recording the fixed-power interval restriction and known exceptional low-moment ranges.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The full-interval large-values method localizes to H=T^theta",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u15.txt",
+          "unit_bytes": 1779,
+          "unit_id": "full_openalex_w2742165216_u15",
+          "unit_sha256": "460c23e91d1979135bcf21949ba8ca1963ec7914258a6529e339ddc638447a43",
+          "unit_type": "RH-conditional short-interval moment bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Under RH, for fixed θ∈(0,1], H=T^θ, and fixed positive k, Theorem 3 bounds the centered critical-line 2k-th moment by H(log T)^[k²(1+O(1/log_3 T))]. Because θ is fixed, log H=θ log T, so the same estimate can be expressed using log H and compared directly with the cited lower bound: on fixed-power intervals the logarithmic powers agree up to the stated vanishing exponent loss. The substitution H=T^θ gains this scale comparison but restricts the result to fixed-power intervals. The source explicitly says the present method does not reach the full log_2 T≪H≤T range or remove the exponent loss; the general result remains RH-conditional, while the listed k=1, k=2, and k=1/2 ranges are separate low-moment facts and do not automatically generalize. The large-values route is announced but not developed in this unit.",
+            "nonparaphrase_operation": "Uses the fixed-power identity log H=θ log T as a representation bridge, aligning the upper and cited lower logarithmic powers while isolating the costs carried by the theorem's assumptions, interval range, and exponent loss.",
+            "quality_reason": "Accepted after replacing expected-scale language with the proved fixed-power comparison and limiting the methodological conclusion to the source's stated failures. The record preserves RH, fixedness, exceptional low-moment cases, and display sensitivity of the loss term.",
+            "source_support": "Equation (7.5) states the RH-conditional bound for fixed θ and positive k. The next paragraph uses H=T^θ to rewrite the bound with log H, compares it with (7.1), and states both limitations of the present method. The closing paragraph records the distinct unconditional or RH-dependent θ thresholds for k=1, k=2, and k=1/2.",
+            "speculation_status": "The upper/lower comparison is explicitly source-supported. No claim that the scale is expected, or that localization is the unique unresolved obstacle, is made; the announced large-values method is not expanded beyond the packet."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Oscillatory sums, Riemann-Siegel correlations, and smoothed spectral sums are alternative representations chosen to expose cancellation or convergence unavailable in the raw moment integral.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2742165216_u09",
+          "full_openalex_w2742165216_u10",
+          "full_openalex_w2742165216_u11"
+        ],
+        "proposed_limit": "They concern different error terms and cannot be interchanged without their distinct weights, ranges, and spectral hypotheses.",
+        "source_id": "openalex_w2742165216",
+        "synthesis_id": "riemann_v2_within_401d16bbc1f30f53e402790f",
+        "title": "Complementary representations of critical-line errors"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span defines E(T), states the explicit formula, and gives the phase and weight behavior needed to understand the representation.",
+          "line_end": 525,
+          "line_start": 474,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly display-dependent; the normalized formulas are usable for mechanism-level segmentation, while exact phase typography should be checked before equation-level reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The critical-line mean-square error is converted into two explicit oscillatory sums with complementary ranges, making the error term accessible to cancellation estimates rather than only integral identities.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Atkinson represents the mean-square error by dual oscillatory sums",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u09.txt",
+          "unit_bytes": 2387,
+          "unit_id": "full_openalex_w2742165216_u09",
+          "unit_sha256": "6b8d9dec06111f12c6cd8585d27790923e6da2526296d418dfde2265ecbedcd8",
+          "unit_type": "oscillatory explicit formula",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The explicit formula exposes cancellation that the integral definition hides. Its two sums are not redundant: their different ranges and phases resolve distinct contributions while recombining to the same global error.",
+            "nonparaphrase_operation": "E(T) bridges the raw moment to an error problem, and Atkinson's pair of oscillatory sums bridges that error to exponential-sum methods. The asymptotic expansion of f and the near-unit weight e identify the dominant oscillatory geometry.",
+            "quality_reason": "The span defines E(T), states Atkinson's two-sum formula with N comparable to T and the cutoff N', and gives the phase expansion and near-unit weight e(T,n). The candidate correctly says the representation itself supplies no cancellation bound.",
+            "source_support": "The span defines E(T) as the critical-line mean square minus its classical T(log(T/(2pi))+2gamma-1) main term. For N comparable with T it states Atkinson's formula E(T)=Sigma_1(T)+Sigma_2(T)+O(log^2 T), with a complementary cutoff N'. Sigma_1 is a divisor-weighted cosine sum with amplitude n^(-3/4)e(T,n) and phase f(T,n); the weight satisfies e(T,n)=1+O(n/T) for n<T. Sigma_2 is a second oscillatory divisor sum over n up to N'.",
+            "speculation_status": "The formula alone supplies no cancellation estimate and therefore no improved bound for E(T). The two pieces cannot be dropped or interchanged merely because both are oscillatory. The decomposition, ranges, and weight behavior are clear. This unit is highly display-dependent; exact phase signs, constants, and the definition of N' should be verified against the typeset source before equation-level use. Recasting the error integral as an oscillatory-sum cancellation problem is the substantive operation enabled by the explicit formula. The statement that the two sums encode distinct contributions is interpretive but appropriately qualified by their visibly different phases and ranges. Exact signs, constants, inverse-hyperbolic-sine typography, and the N' formula are unsafe without the typeset source; the candidate flags this."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also records opposing omega behavior and the conjectured T^(1/4+epsilon) scale, which delimit what error-term improvement would mean.",
+          "line_end": 579,
+          "line_start": 526,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The double sums and omega factors require the displays; the representation comparison and localization bridge are clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A structurally different Riemann-Siegel-based formula estimates the same error term, and a local averaging inequality turns increments of E into pointwise control of zeta, exposing how global error exponents set short-interval asymptotic thresholds.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Riemann-Siegel sums and error increments control local zeta size",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u10.txt",
+          "unit_bytes": 2855,
+          "unit_id": "full_openalex_w2742165216_u10",
+          "unit_sha256": "fb9ca48eafbe3dff4b2c7caf5b042f5cdc56aceb5bcd1b68490b07ae72b5ad7f",
+          "unit_type": "alternative representation and localization bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The key move is to translate global approximation quality into local observability: after subtraction of the main term, an interval must be longer than the error scale for the local main term to be visible. The increment inequality also shows that error oscillation, not just error magnitude, mediates local peaks.",
+            "nonparaphrase_operation": "Riemann-Siegel double sums expose pair correlations in E(T); the unit-scale averaging inequality then bridges E-increments to local zeta size, and endpoint differencing bridges the global E bound to a short-interval asymptotic.",
+            "quality_reason": "The span gives the alternative Riemann-Siegel double-sum formula, the local averaging inequality involving E(t+1)-E(t-1), Watt's 131/416 bound, the resulting H=T^theta threshold, both-sign omega behavior, and the conjectural quarter-power bound. The candidate keeps the proven, omega, and conjectural signals distinct.",
+            "source_support": "Balasubramanian's formula expresses E(T) as two double oscillatory sums over n,m up to K=T/(2pi), plus O(log^2 T). Although structurally different from Atkinson's formula, it can also estimate E. The source records a local averaging bound for |zeta(1/2+it)|^2 in terms of a unit-neighborhood mean and then in terms of log t and E(t+1)-E(t-1). Watt's bound E(T) << T^(131/416+epsilon) yields the stated unconditional short-interval mean-square asymptotic for H=T^theta with theta>131/416. Opposite-sign omega results and the conjecture E(T)<<T^(1/4+epsilon) delimit the possible scale.",
+            "speculation_status": "The proven exponent gives only the stated threshold and does not reach the conjectural quarter-power scale. Omega behavior prevents treating E as a one-sided negligible remainder, and this low-moment bridge does not furnish higher-moment asymptotics. The representation comparison, exponent threshold, omega meaning, and conjectural boundary are clear. Exact double-sum denominators and the extracted display of the local asymptotic require source-image checking for literal reuse. Viewing endpoint-error size as a short-interval resolution limit and increments rather than absolute error as mediating local peaks follows directly from the displayed differencing and local inequality. The double-sum denominators and the centered asymptotic have flattened display grouping; the mechanism-level account avoids relying on those details."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span joins the representation, why smoothing is necessary, the spectral quantities, and the downstream H threshold.",
+          "line_end": 670,
+          "line_start": 580,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact spectral coefficients and smoothing ranges are display-dependent; the transform, convergence role, and threshold are textually recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Motohashi's Gaussian-smoothed fourth moment is expressed through spectral data via trace formulas; resulting upper, omega, and mean-square bounds for E2 translate into a concrete short-interval length at which a fourth-moment asymptotic is unconditional.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gaussian smoothing opens a spectral route to the fourth-moment error",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2742165216_u11.txt",
+          "unit_bytes": 4897,
+          "unit_id": "full_openalex_w2742165216_u11",
+          "unit_sha256": "03c5b152ad69db72fd665d1fdd22593549054843536e2ba837091e723568b7e1",
+          "unit_type": "spectral representation of a smoothed fourth moment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2742165216_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing trades exact localization for analytic and spectral accessibility. The spectral expansion exposes cancellation and arithmetic structure unavailable in the raw fourth-moment integral, while the residual E_2 again acts as the resolution limit for recovering a local main term.",
+            "nonparaphrase_operation": "The Gaussian-smoothed moment is the bridge from zeta values to Maass spectral parameters and Hecke data; trace formulas mediate that change of representation. Returning from the global polynomial-plus-error formula to a centered interval converts the E_2 bound into the stated H threshold.",
+            "quality_reason": "The span defines the fourth-moment polynomial-plus-error decomposition, Motohashi's Gaussian-smoothed integral, its simplified spectral sum and Delta restrictions, and the role of Bruggeman-Kuznetsov trace formulas. It also records the E_2 upper, omega, integral, and mean-square bounds and derives the stated H=T^(2/3)log^C T short-interval result.",
+            "source_support": "The fourth moment is written as T times a degree-four polynomial in log T plus E_2(T). Motohashi's smoothed integral I(T,Delta) averages |zeta(1/2+iT+it)|^4 against a Gaussian and, in simplified form, equals a sum over the discrete spectrum of the modular Laplacian involving eigenparameters kappa_j, spectral weights alpha_j, central values H_j(1/2)^3, an oscillatory sine, and Gaussian damping. The smoothing resolves convergence problems in the proof, which uses Bruggeman-Kuznetsov trace formulas. The source records E_2(T)=O(T^(2/3)log^C T), omega of both signs at scale T^(1/2), integral bounds for E_2, and an unconditional short-interval fourth-moment asymptotic when H=T^(2/3)log^C T.",
+            "speculation_status": "The spectral formula is presented only in simplified form and under restrictions on Delta. The conjectural E_2(T)<<T^(1/2+epsilon) is not proved, and the known local result inherits the larger two-thirds scale and logarithmic factor. The roles of smoothing, spectral data, error bounds, and localization are explicit. Exact coefficients, powers, and admissible Delta range are display-sensitive and should be checked before quantitative reuse. Describing smoothing as trading localization for spectral accessibility is a faithful conceptual summary of the explicitly stated convergence role. Calling E_2 a resolution limit is supported by the final localization threshold, not merely a generic slogan. Spectral coefficients, Gaussian exponents, and the admissible Delta range are highly display-sensitive; the candidate explicitly limits literal reuse."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_21f9e314ad0ddb6e003724db973d7b8be3ce6a186de34bda843c253ad5666073",
+        "dossier_sha256": "eb0bb53ed6d0ca777e330ea29c8be99acd17f111c97289f92c8ee86916849334"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "247101b478a887c6652c55fdbc0a0e01b5d652610a2c79f15fead598b125a60b"
+}

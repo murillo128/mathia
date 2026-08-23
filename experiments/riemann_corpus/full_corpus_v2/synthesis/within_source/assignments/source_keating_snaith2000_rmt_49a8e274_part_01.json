@@ -1,0 +1,571 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "keating_snaith2000_rmt",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_keating_snaith2000_rmt_49a8e274_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Bounded higher cumulants yield Gaussian normalization, but exact disappearance of odd phase cumulants enforces finite-N evenness and removes the slower cubic correction; mixed-cumulant decay separately gives independence.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "keating2000_v2_u10_real_cumulant_scale_separation",
+          "keating2000_v2_u12_real_finite_n_asymmetry",
+          "keating2000_v2_u14_imaginary_parity_and_counting_bridge",
+          "keating2000_v2_u15_imaginary_faster_gaussian_approach",
+          "keating2000_v2_u16_joint_generator_proves_independence"
+        ],
+        "proposed_limit": "These rates and independence are established for the CUE characteristic-polynomial model, not automatically for finite-height zeta values.",
+        "source_id": "keating_snaith2000_rmt",
+        "synthesis_id": "riemann_v2_within_d3126b61f1455e45094859c8",
+        "title": "Cumulant parity predicts both shape and convergence speed"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source also explains how arbitrarily many inverse-N terms can be generated, though only representative terms are displayed.",
+          "line_end": 578,
+          "line_start": 523,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact coefficients in equations (42)-(48) are formula-sensitive; the logarithmic-versus-bounded asymptotic distinction is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates the divergent second cumulant from bounded higher cumulants using integral representations and rescaling, which is the key scale separation behind Gaussian normalization.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Variance grows logarithmically while higher real-part cumulants stabilize",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u10_real_cumulant_scale_separation.txt",
+          "unit_bytes": 3356,
+          "unit_id": "keating2000_v2_u10_real_cumulant_scale_separation",
+          "unit_sha256": "7cba3ad9c6124b241e4b5ec0021206c31dd8872c390e453aca2099d457929f5a",
+          "unit_type": "asymptotic-cumulant-analysis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u10_real_cumulant_scale_separation.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Normalization amplifies the divergent quadratic scale and suppresses bounded higher-order shape information, explaining rather than merely asserting the coming Gaussian limit.",
+            "nonparaphrase_operation": "Polygamma sums are converted to integrals, then split into an N-independent limit and a rescaled finite-N remainder.",
+            "quality_reason": "The span derives one-half log N growth for Q_2 and convergence of each fixed Q_n for n at least three, with a method for inverse-N expansions. The candidate correctly identifies variance normalization as necessary and does not claim exact finite-N Gaussianity.",
+            "source_support": "Integral and series manipulations give Q_2(N) with leading one-half log N growth, while for n at least 3 the N-dependent term vanishes and Q_n(N) converges, with inverse-N expansions available.",
+            "speculation_status": "Bounded higher cumulants establish a mechanism only after normalization and do not imply exact finite-N Gaussianity. Exact coefficients in (42)-(48) are formula-sensitive; the logarithmic-versus-bounded distinction is explicit in prose. Interpreting the divergent quadratic scale as suppressing bounded higher-order shape information accurately captures the mechanism used in the next unit. Exact asymptotic coefficients are formula-sensitive, while the scale separation is secure."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The Airy form is an alternative leading approximation rather than a new limiting law.",
+          "line_end": 659,
+          "line_start": 598,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The detailed coefficient and Airy formulas are extraction-risky; the correction order, odd-cumulant cause, and asymmetry are prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows how retaining higher cumulants produces a correction expansion, identifies the leading (log N)^(-3/2) deviation, and traces finite-N asymmetry to odd powers, including an Airy resummation of the cubic term.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Odd cumulants create asymmetric finite-N corrections before the Gaussian limit",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u12_real_finite_n_asymmetry.txt",
+          "unit_bytes": 4001,
+          "unit_id": "keating2000_v2_u12_real_finite_n_asymmetry",
+          "unit_sha256": "5cebf39e9d2de72903924322a7a83d44200353029ee4f6977f443afee262f4da",
+          "unit_type": "finite-size-correction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u12_real_finite_n_asymmetry.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite-size error is organized by cumulant order, and parity predicts qualitative shape before detailed integration.",
+            "nonparaphrase_operation": "The same Fourier integral supports an Edgeworth-like termwise expansion or a cubic saddle integral expressed with an Airy function.",
+            "quality_reason": "The span gives a higher-cumulant correction expansion of order (log N)^(-3/2), attributes finite-N asymmetry to odd powers, and evaluates the retained cubic approximation with an Airy function. The candidate correctly distinguishes the Airy approximation from a new limit law and warns about tail nonuniformity.",
+            "source_support": "Expanding the higher-cumulant part of the Fourier exponent yields corrections of order (log N)^(-3/2); odd powers make the finite-N Re log Z density asymmetric, and retaining the cubic term gives an Airy-function approximation.",
+            "speculation_status": "The Airy expression is a leading approximation, not a different limit law, and the expansion need not be uniform in the tails. Detailed coefficients and the Airy formula are extraction-risky; correction order, odd-cumulant cause, and asymmetry are prose-stable. Calling the two treatments Edgeworth-like and cubic resummation is interpretive terminology consistent with the operations shown. Detailed coefficients and the Airy formula require scan checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The counting-function identity explains why an earlier random-matrix Gaussian theorem applies to the argument observable.",
+          "line_end": 734,
+          "line_start": 672,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact counting identity and constants are formula-sensitive; parity, Gaussianity, and the observable bridge are prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives the vanishing of all odd cumulants for Im log Z, relates even cumulants to the real-part calculation, and identifies Im log Z differences with fluctuations of eigenvalue counts in arcs.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Argument cumulants have exact parity and equal eigenvalue-count fluctuations",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u14_imaginary_parity_and_counting_bridge.txt",
+          "unit_bytes": 4200,
+          "unit_id": "keating2000_v2_u14_imaginary_parity_and_counting_bridge",
+          "unit_sha256": "12c97c191fb0a7fc0044dfffa2e9a8d4dabb391217a1da60691a4410f3c5dfb4",
+          "unit_type": "symmetry-and-observable-identification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u14_imaginary_parity_and_counting_bridge.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Parity is an exact structural constraint, and the counting identity transfers a phase statistic into a familiar fluctuation observable.",
+            "nonparaphrase_operation": "The phase generator bridges to cumulants, while the endpoint difference of Im log Z bridges to the eigenvalue counting function.",
+            "quality_reason": "Differentiation of L_N gives zero odd cumulants and relates even cumulants to the real-part cumulants. The arc-count identity equates centered eigenvalue counts with a scaled difference of Im log Z, with the stated endpoint exclusion, and supports the Gaussian counting interpretation.",
+            "source_support": "Differentiating L_N shows all odd cumulants of Im log Z vanish and relates even cumulants to those of Re log Z; differences of Im log Z equal π times centered eigenvalue counts in arcs, yielding a Gaussian limit with stabilized higher even cumulants.",
+            "speculation_status": "The counting identity excludes eigenphases at arc endpoints, and the CUE result does not automatically establish the analogous finite-height zeta law. Exact constants in the counting formula are extraction-sensitive; parity, Gaussianity, and the observable identification are prose-recoverable. Calling parity an exact structural constraint and the count identity an observable transfer is well supported. Exact constants in the counting identity are extraction-sensitive, as noted."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The comparison with the real part turns a symmetry statement into a quantitative convergence prediction.",
+          "line_end": 777,
+          "line_start": 739,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Expansion coefficients are formula-risky, while the evenness and relative correction order are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects the identically zero odd cumulants to an even finite-N density and a (log N)^(-2) correction scale, asymptotically smaller than for the real part.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Exact evenness removes cubic corrections and accelerates Gaussian convergence",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u15_imaginary_faster_gaussian_approach.txt",
+          "unit_bytes": 2577,
+          "unit_id": "keating2000_v2_u15_imaginary_faster_gaussian_approach",
+          "unit_sha256": "1d064fe93e230ab9a431b3b6fb373ebc006d335162c05e81c1aeffa538b5a7a4",
+          "unit_type": "comparative-finite-size-analysis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u15_imaginary_faster_gaussian_approach.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A symmetry constraint predicts both shape and convergence rate by forbidding the lowest-order non-Gaussian term.",
+            "nonparaphrase_operation": "The even cumulant expansion turns exact parity of L_N into a quantitative comparison between the two marginal densities.",
+            "quality_reason": "The source states exact finite-N evenness from vanishing odd cumulants and a leading deviation of order (log N)^(-2), asymptotically smaller than the real part's (log N)^(-3/2) deviation. The candidate correctly confines these rates to CUE and does not transfer them to zeta.",
+            "source_support": "With all odd phase cumulants identically zero, the normalized density expansion contains only even powers, remains even for finite N, and has leading deviation of order (log N)^(-2), smaller than the real part's (log N)^(-3/2) correction.",
+            "speculation_status": "The stated rates are asymptotic CUE rates and do not transfer automatically to zeta data. Expansion coefficients are formula-risky, while evenness and the relative correction orders are explicit. Saying symmetry forbids the lowest-order non-Gaussian term is an accurate explanation of the even cumulant expansion. Expansion coefficients are formula-risky but not needed for the qualitative conclusion."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This proves asymptotic independence rather than inferring it from the two marginal Gaussian limits.",
+          "line_end": 940,
+          "line_start": 778,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several joint-density symbols are split by control characters at lines 872-923; the mixed-cumulant scaling and factorized conclusion at lines 929-940 are recoverable, but exact formulas need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Constructs the joint modulus-phase generator, evaluates it in Selberg form, and shows that normalized mixed terms vanish so the bivariate density factors into two Gaussian densities.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            15,
+            16,
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mixed cumulants vanish after scaling, yielding independent Gaussian components",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u16_joint_generator_proves_independence.txt",
+          "unit_bytes": 9867,
+          "unit_id": "keating2000_v2_u16_joint_generator_proves_independence",
+          "unit_sha256": "ba797825946d7ab319445557b9d490bc10382f82545eb1486ad50c2c9115fecb",
+          "unit_type": "joint-limit-law",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u16_joint_generator_proves_independence.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Independence is established as disappearance of cross-structure in the joint representation, not inferred from separate marginal limits.",
+            "nonparaphrase_operation": "The joint Mellin-Fourier generator connects Selberg evaluation to mixed cumulants and then to a bivariate density.",
+            "quality_reason": "The span evaluates the joint modulus-phase generator, shows zero covariance and bounded higher mixed coefficients, and demonstrates that normalized mixed terms vanish. The limiting bivariate Fourier integral factors into two Gaussian integrals, so independence is proved jointly rather than inferred from marginal Gaussianity.",
+            "source_support": "A joint Haar average of absolute Z and exp(i s Im log Z) is evaluated through a Selberg integral; its expansion has zero covariance and bounded higher mixed coefficients, which vanish after variance scaling, leaving a product of two Gaussian Fourier integrals.",
+            "speculation_status": "Finite-N dependence can remain in higher mixed terms, and the proof is conditional on the CUE model rather than a zeta theorem. Several joint-density symbols are corrupted, but the mixed-cumulant scaling and factorized conclusion are recoverable. Describing independence as disappearance of cross-structure is a faithful conceptual summary. Several joint-density symbols are corrupted, but the scaling and factorization conclusion remain readable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Orthogonal, unitary, and symplectic models share logarithmic variance plus bounded higher cumulants, yet differ in variance constants, admissible rational moment subsequences, and pole/zero patterns.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "keating2000_v2_u06_family_symmetry_selects_model",
+          "keating2000_v2_u25_beta_ensemble_gaussian_universality",
+          "keating2000_v2_u26_symmetry_specific_variance_constants",
+          "keating2000_v2_u27_cse_leading_coefficients",
+          "keating2000_v2_u28_coe_leading_coefficients"
+        ],
+        "proposed_limit": "Applying a non-CUE class to an L-function requires an independently justified family-symmetry assignment, and exact special-function formulas are extraction-sensitive.",
+        "source_id": "keating_snaith2000_rmt",
+        "synthesis_id": "riemann_v2_within_c636123fd2a2da847aed1258",
+        "title": "Symmetry class changes constants without changing the Gaussian mechanism"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a proposed extension to other L-function families, not evidence that the CUE description applies universally.",
+          "line_end": 274,
+          "line_start": 266,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "No material formula dependency; group names and the averaging regime are prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Limits naive CUE transfer by explaining that averaging low zeros across L-function families may select orthogonal or symplectic groups, so the correct characteristic-polynomial model depends on family symmetry.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Low-lying family statistics require the compact group selected by symmetry",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u06_family_symmetry_selects_model.txt",
+          "unit_bytes": 826,
+          "unit_id": "keating2000_v2_u06_family_symmetry_selects_model",
+          "unit_sha256": "b6f84f5c2c5a36079cc40720bab6c635d795ad6cc3154a83485e773e881028e9",
+          "unit_type": "scope-boundary-and-generalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u06_family_symmetry_selects_model.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry class is a model-selection variable, so universality preserves a pattern only after the correct family structure has been identified.",
+            "nonparaphrase_operation": "A family of L-functions near the symmetry point is mapped to characteristic-polynomial averages over its proposed classical compact group.",
+            "quality_reason": "The source explicitly reports the conjectural Katz-Sarnak replacement of CUE by orthogonal or symplectic compact groups for low-lying zeros averaged in appropriate L-function families. The candidate correctly treats symmetry as a model-selection constraint and labels the extension as expected rather than proved here.",
+            "source_support": "The source reports the Katz-Sarnak conjectural description of low-lying zeros averaged within L-function families by unitary, orthogonal, or symplectic compact-group statistics.",
+            "speculation_status": "This is an expected extension, not evidence that CUE applies to every L-function or that any particular family assignment is proved here. The prose and group names are clear and have no material formula dependency. Universality preserving a pattern only after family structure is identified is a reasonable synthesis of the stated scope boundary."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The calculation transfers the mechanism while changing symmetry-dependent coefficients.",
+          "line_end": 1579,
+          "line_start": 1479,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The ensemble parameter glyph is missing in many formulas, but prose anchors its values to CUE, COE, and CSE; exact beta-dependent products need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes the exact generators and cumulants to three circular ensembles, showing that logarithmic variance with bounded higher cumulants yields Gaussian real and imaginary parts in every symmetry class.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            28,
+            29
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A single circular-ensemble parameter preserves the Gaussian mechanism across CUE, COE, and CSE",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u25_beta_ensemble_gaussian_universality.txt",
+          "unit_bytes": 5935,
+          "unit_id": "keating2000_v2_u25_beta_ensemble_gaussian_universality",
+          "unit_sha256": "361855d8939f573af601634f5df6eb74753201a8867c53b78ab16ef88a7118d9",
+          "unit_type": "symmetry-class-generalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u25_beta_ensemble_gaussian_universality.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Universality resides in the scale-separation mechanism, not in equality of finite-size constants or exact generators.",
+            "nonparaphrase_operation": "A single circular-ensemble parameter organizes Haar-type eigenphase densities, gamma products, cumulants, and normalized limiting laws across three symmetry classes.",
+            "quality_reason": "The span parameterizes CUE, COE, and CSE, derives ensemble-dependent gamma products and cumulants, and shows logarithmic variance with convergent fixed higher cumulants. It states Gaussian limits for normalized real and imaginary parts across all three ensembles while retaining ensemble-dependent coefficients.",
+            "source_support": "The source generalizes modulus and phase generators to CUE, COE, and CSE, derives ensemble-parameter-dependent polygamma cumulants, and shows variance grows like a symmetry-dependent multiple of log N while fixed higher cumulants converge, yielding Gaussian limits for both parts.",
+            "speculation_status": "Selecting an ensemble for an L-function still requires independent family-symmetry evidence, and shared Gaussianity does not erase class-dependent corrections. The ensemble-parameter glyph is missing in many formulas, so exact beta-dependent products need scan verification; its values and mechanism are prose-anchored. Locating universality in the scale-separation mechanism rather than identical finite-size formulas is a faithful synthesis. The ensemble-parameter glyph is missing in many formulas, so exact parameter-dependent products require the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This identifies exactly where symmetry affects finite-size calibration despite a shared Gaussian limit.",
+          "line_end": 1629,
+          "line_start": 1580,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Polygamma coefficients and constants are formula-dependent and require scan verification; the need for separate symmetry-class calculations is clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes the next variance asymptotics separately for symplectic and orthogonal ensembles, including the even/odd matrix-size issue, while retaining equality of real and imaginary variances.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "COE and CSE change the variance scale and constant term",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u26_symmetry_specific_variance_constants.txt",
+          "unit_bytes": 3146,
+          "unit_id": "keating2000_v2_u26_symmetry_specific_variance_constants",
+          "unit_sha256": "6037785619b932f7cd05b6675d00b5a6d8b90f3a60fbd3bea70fbbc14d6c00ac",
+          "unit_type": "parameter-sensitive-asymptotics",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u26_symmetry_specific_variance_constants.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry affects the metric scale of fluctuations even when the normalized limiting shape is unchanged.",
+            "nonparaphrase_operation": "Integer and half-integer polygamma sums translate compact-group symmetry into explicit log N and constant contributions to the variance.",
+            "quality_reason": "The source separately derives CSE and COE second-cumulant asymptotics, including log N coefficients and constant terms, and handles even and odd COE dimensions. It preserves equality of real and imaginary second cumulants within each symmetry class.",
+            "source_support": "Using polygamma recurrence and separate sums, the source derives next-order variance asymptotics for CSE and COE, treats even and odd COE dimensions separately, and retains equality between real and imaginary second cumulants within each class.",
+            "speculation_status": "These calculations calibrate ensemble observables only; they neither justify a symmetry assignment for an L-function family nor make finite-N laws identical. Polygamma coefficients and constants are formula-dependent and require scan verification, while the need for separate symmetry-class calculations is clear. Interpreting integer versus half-integer polygamma sums as the route from symmetry class to variance calibration is well grounded. Exact polygamma coefficients and constants are formula-dependent and need scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a formula-level refinement of the symmetry-class generalization.",
+          "line_end": 1697,
+          "line_start": 1630,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The source is heavily formula-dependent here and the ensemble parameter is partly lost; use the prose pole/zero and rationality statements, and scan-verify every exact special-function formula.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives symplectic leading coefficients for modulus and phase generators, identifies the moment subsequence yielding rational values, and checks pole and zero multiplicities against the finite-N products.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "CSE leading moment coefficients have distinct gamma/Barnes G and zero structures",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u27_cse_leading_coefficients.txt",
+          "unit_bytes": 4041,
+          "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+          "unit_sha256": "598bdf6bf59c14187f990e9a1b00a4cd26540bef6c15a4dd6a0fc559cf803331",
+          "unit_type": "symmetry-specific-special-function-asymptotics",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u27_cse_leading_coefficients.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Removing the CSE modulus growth N^(s²/8) leaves a coefficient whose cumulant series can be resummed with gamma and Barnes G functions and then continued meromorphically. The residual coefficient retains pole, zero, and rational-specialization data that the quadratic growth exponent alone loses. The source checks the positive s=4k modulus specialization through the leading term of a degree-2k² polynomial in N, while it separately checks the phase-zero multiplicities by examining L_N; these are distinct validations. None of this assigns CSE symmetry to an L-function family.",
+            "nonparaphrase_operation": "Separates dominant scaling from the meromorphic remainder, explains what information the remainder preserves, and disentangles the polynomial leading-term check for modulus values from the L_N check for phase zeros.",
+            "quality_reason": "Accepted after replacing the blurred finite-N-product claim with the two distinct source checks requested by the critic. Prose supports the structural claims, but the exact OCR-damaged gamma/Barnes G factors and phase normalization require scan verification.",
+            "source_support": "For |s|<1 the span matches the normalized modulus series to gamma/Barnes G expansions and extends the result by analytic continuation. Its prose states kth-order poles at negative odd integers, simple zeros at −(4k−2), rational values at s=4k, the degree-2k² polynomial check, and phase zeros of order k at ±(4k−2) and ±4k.",
+            "speculation_status": "The statements are source-local CSE asymptotics and analytic continuation. Transfer to an L-function symmetry class or a zeta-moment formula is not supported; the damaged special-function quotient is not reconstructed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Together with the CSE unit, this shows that Gaussian universality does not imply identical moment constants.",
+          "line_end": 1753,
+          "line_start": 1698,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact gamma/Barnes G formulas and multiplicities are formula-sensitive; all should be verified against the scan before symbolic use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Provides the orthogonal analogue, with different normalization, rational moment subsequence, and analytic pole/zero structure for modulus and phase generators.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "COE leading coefficients shift the moment subsequence and pole/zero pattern",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u28_coe_leading_coefficients.txt",
+          "unit_bytes": 2972,
+          "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+          "unit_sha256": "83db1177af94a6d81b67275ef3b5a7c60e2b4bc9fd0d97ae2fc5e208cb7bdaac",
+          "unit_type": "symmetry-specific-special-function-asymptotics",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u28_coe_leading_coefficients.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For COE modulus moments, removing the quadratic growth N^(s²/2) leaves a coefficient obtained by matching the local cumulant series to gamma and Barnes G expansions and continuing the result meromorphically. This remainder carries negative-axis pole data and rational positive-even specializations that would be lost if only the dominant N scaling were kept. The stated degree-2k² polynomial leading term checks the s=2k specialization, while the phase calculation supplies its own zero multiplicities. The unit establishes only this COE mechanism, not a comparison with other ensembles or an L-function model.",
+            "nonparaphrase_operation": "Decomposes the COE asymptotic into dominant quadratic growth and a meromorphic remainder, then connects the remainder's positive-even values to the source's narrowly stated polynomial-leading-term check without importing cross-ensemble synthesis.",
+            "quality_reason": "Accepted after localizing the interpretation to COE and replacing “exact moment combinatorics” with the supported polynomial-leading-term check. Exact gamma/Barnes G formulas, normalizations, and multiplicities remain scan-sensitive.",
+            "source_support": "The span compares the relevant series for |s|<1/2, identifies the normalized coefficient and extends it analytically. It states simple poles at negative odd integers, kth-order poles at s=−(2k+1)/2, rational factorial-product values at s=2k, a degree-2k² polynomial leading-term check, and phase zeros of order k at ±2k and ±(2k+1).",
+            "speculation_status": "The claims are confined to the source's COE derivation and analytic continuation. No COE assignment to an L-function or transfer to zeta is inferred, and OCR-damaged exact quotients are withheld."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Fourier/Mellin inversion links analytic generator structure to distributional regimes: a saddle controls the bulk, the nearest pole controls fixed-N near-zero values, and the arithmetic multiplier is most visible away from the large-N bulk.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "keating2000_v2_u09_generator_to_cumulants_and_density",
+          "keating2000_v2_u17_barnes_g_modulus_coefficient",
+          "keating2000_v2_u23_bulk_vs_near_zero_magnitude_regimes",
+          "keating2000_v2_u24_prime_factor_moves_to_magnitude_tail"
+        ],
+        "proposed_limit": "The approximations are nonuniform in N and magnitude, so exchanging limits or extending the saddle formula to the origin is invalid.",
+        "source_id": "keating_snaith2000_rmt",
+        "synthesis_id": "riemann_v2_within_8a11e3b7633072abb231e6e8",
+        "title": "Transform singularities distinguish bulk, near-zero, and arithmetic-tail behavior"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The polygamma representation begins the asymptotic analysis used in the next units.",
+          "line_end": 522,
+          "line_start": 469,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The transform formulas are legible in structure but symbol-level transcription should be checked against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Makes explicit the reusable interface from Taylor coefficients of M_N to moments, derivatives of log M_N to cumulants, and Fourier inversion to the value density.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "One generator yields moments, cumulants, and the full density through three transforms",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u09_generator_to_cumulants_and_density.txt",
+          "unit_bytes": 3070,
+          "unit_id": "keating2000_v2_u09_generator_to_cumulants_and_density",
+          "unit_sha256": "5136747659dc0987d202b65a5be7a9d6982db006d1821f3ca7ea3f48e4aeead6",
+          "unit_type": "analytic-statistics-interface",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u09_generator_to_cumulants_and_density.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The generator is a lossless interface among algebraic, additive, and distributional descriptions, with cumulants isolating scale and interaction by order.",
+            "nonparaphrase_operation": "M_N links a Mellin transform, a cumulant-generating series, polygamma sums, and a Fourier-inverted probability density.",
+            "quality_reason": "The source explicitly derives moments from Taylor coefficients of M_N, cumulants from log M_N, and the density by Fourier inversion, then obtains polygamma sums by differentiation. The candidate identifies the three distinct representation changes and confines them to the CUE observable.",
+            "source_support": "Taylor coefficients of M_N give moments of log absolute Z, derivatives of log M_N give cumulants Q_n, and Fourier inversion of M_N on the imaginary axis gives the density; differentiating the gamma product produces polygamma sums and integral formulas.",
+            "speculation_status": "Each conversion needs analytic control such as differentiability and inversion validity; the formulas describe the CUE observable only. Transform structure is clear, but exact coefficients and symbols in equations (34)-(41) are extraction-sensitive. Lossless interface is justified here by the exact generating and inversion formulas, subject to the analytic qualifications the candidate records. Symbol-level coefficients in (34)-(41) remain extraction-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The matching values motivate, but do not independently prove, the zeta moment conjecture.",
+          "line_end": 1026,
+          "line_start": 941,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Gamma and Barnes G typography is degraded; prose identifies the continuation, poles, and integer-product reduction, while exact formulas require scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies the N-normalized CUE modulus moment coefficient with a Barnes G ratio, extends it analytically, exposes its pole structure, and reduces integer values to factorial products matching known zeta coefficients.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Barnes G compresses the universal leading coefficient of modulus moments",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u17_barnes_g_modulus_coefficient.txt",
+          "unit_bytes": 5847,
+          "unit_id": "keating2000_v2_u17_barnes_g_modulus_coefficient",
+          "unit_sha256": "e0d7f5d741f93ebb5781c6387cbd95f28314e3762f366d1429a77fdf85d33767",
+          "unit_type": "special-function-compression",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u17_barnes_g_modulus_coefficient.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "After the dominant power of N is removed from the CUE modulus generator, comparison of its local cumulant series with Barnes G expansions resums the remaining coefficient into one meromorphic object. This representation gains analytic continuation, an explicit negative-odd pole pattern, and factorial-product evaluations at positive integers; retaining only the leading N exponent would discard that structure. The result is a CUE identity and by itself supplies neither a zeta-moment theorem nor a transfer to zeta.",
+            "nonparaphrase_operation": "Repackages an infinite asymptotic-cumulant sequence as a global meromorphic coefficient and contrasts the information visible in that coefficient with the information retained by the leading growth exponent alone.",
+            "quality_reason": "Accepted after deleting the imported claim about matching known or conjectured zeta coefficients. The series-to-special-function mechanism is supported, while exact Barnes G typography and pole formulas remain scan-sensitive.",
+            "source_support": "For |s|<1 the span compares the series for the normalized limit with a Barnes G ratio, extends the identity by analytic continuation, states poles of order 2k−1 at negative odd integers, and reduces positive integer values to a factorial product.",
+            "speculation_status": "The CUE coefficient calculation is presented as derived in the source. Any identification with zeta coefficients or use as a zeta transfer lies outside this span and is not asserted here."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The figure is supporting calibration; the reusable mechanism is the saddle-versus-pole and nonuniform-limit distinction.",
+          "line_end": 1462,
+          "line_start": 1390,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact constants and pole residues are formula-sensitive, but the two asymptotic regimes and failure condition are prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Fourier inversion gives a large-N lognormal-type bulk approximation, while the nearest pole controls the fixed-N near-zero limit; the source explicitly diagnoses why exchanging the N and w limits invalidates the bulk approximation.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Saddle and pole regimes separate bulk lognormal behavior from near-zero mass",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u23_bulk_vs_near_zero_magnitude_regimes.txt",
+          "unit_bytes": 3574,
+          "unit_id": "keating2000_v2_u23_bulk_vs_near_zero_magnitude_regimes",
+          "unit_sha256": "2a22fa368aa9cdab31a75c2361adc089734755497de4b7936dd2e14bfb794457",
+          "unit_type": "nonuniform-asymptotic-analysis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u23_bulk_vs_near_zero_magnitude_regimes.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Asymptotic descriptions are regime-dependent because the dominant feature of the transform moves from a stationary point to a singularity.",
+            "nonparaphrase_operation": "The inversion contour exposes both the saddle location controlled by log w and the pole structure inherited from the moment generator.",
+            "quality_reason": "The source obtains the magnitude density by Fourier-Mellin inversion, derives a large-N lognormal-type approximation, and separately uses the nearest pole for the fixed-N w-to-zero limit. It explicitly explains that the saddle assumption fails when absolute log w grows at fixed N, so the candidate's nonuniform-limit boundary is source-grounded.",
+            "source_support": "Fourier-Mellin inversion of M_N gives the absolute-value density; for large N and fixed magnitude a quadratic saddle yields a lognormal-type approximation, whereas at fixed N and magnitude tending to zero the nearest pole of M_N determines a finite limiting density.",
+            "speculation_status": "The bulk approximation is nonuniform near zero; taking w to zero at fixed N invalidates the neglect of higher cumulants. Exact constants and residues are formula-sensitive, but the saddle-versus-pole distinction and failure condition are explicit. Describing the change of dominant transform geometry from saddle to pole is a substantive and faithful conceptual mechanism. Exact constants and residues need scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This refines the universal-times-arithmetic split at the distributional rather than moment level.",
+          "line_end": 1477,
+          "line_start": 1463,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Numerical constants and transform notation should be scan-checked; the tail-localization argument is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Multiplies the magnitude transform by the arithmetic factor, checks the near-zero correction numerically, and uses the saddle location to explain why the prime contribution is pushed toward the tail for large N.",
+          "source_id": "keating_snaith2000_rmt",
+          "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The arithmetic product affects near-zero and tail probabilities more than the bulk",
+          "unit_artifact_relpath": "depth/units/keating2000_v2_u24_prime_factor_moves_to_magnitude_tail.txt",
+          "unit_bytes": 1071,
+          "unit_id": "keating2000_v2_u24_prime_factor_moves_to_magnitude_tail",
+          "unit_sha256": "ad9a62dcb89596c96cbbb22a30056978a8ac81f7be037830c56cdb98f9a2d441",
+          "unit_type": "tail-correction-mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u24_prime_factor_moves_to_magnitude_tail.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A multiplicative correction can have strongly nonuniform distributional impact because inversion samples it at regime-dependent transform locations.",
+            "nonparaphrase_operation": "The arithmetic Euler product is evaluated either at the nearest pole for w near zero or at the saddle determined by log w divided by the variance.",
+            "quality_reason": "The proposed zeta density inserts a(is/2) into the CUE inversion, gives the near-zero multiplier a(-1/2), and reports the N=12 corrected value close to the numerical datum. At the saddle the arithmetic factor is evaluated near zero and hence near one under the stated large-N bulk condition, leading the source to place its contribution in the tail.",
+            "source_support": "The proposed zeta magnitude density inserts a(is/2) into the CUE inversion; at zero this multiplies P_N(0) by a(-1/2) and gives a reported N=12 value close to data, while at the bulk saddle the factor approaches one as N grows.",
+            "speculation_status": "The numerical near-zero match and tail argument are heuristic, and saddle validity imposes a restricted relation between w and N. Numerical constants and transform notation should be scan-checked; the tail-localization mechanism is prose-stable. Regime-dependent sampling of the multiplier is an accurate explanation of its nonuniform distributional impact. Numerical constants and transform notation are extraction-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "00082ccc8b80c09a88662a50031eb8575233210c5bfbd3ec55e00c5523970864"
+}

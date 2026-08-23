@@ -1,0 +1,2119 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_aim2004_resource_264d457f_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "aim2004_resource",
+  "unit_count": 13,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Dimension formulas at 439-464 are supporting setup; the conceptual core is the oldform/newform decomposition at 472-503.",
+      "line_end": 503,
+      "line_start": 428,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy and partially garbled; the two oldform mechanisms and primitive-basis interpretation are prose-recoverable, while exact dimension and Euler-factor formulas need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explains two mechanisms generating imprimitive forms, extracts the new subspace, and characterizes its Hecke basis through Euler products and functional equations.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Removing oldforms isolates primitive newforms with Euler products",
+      "unit_artifact_relpath": "depth/units/aim2004_u10_newform_primitive_decomposition.txt",
+      "unit_bytes": 4614,
+      "unit_id": "aim2004_u10_newform_primitive_decomposition",
+      "unit_sha256": "06eb056b9d2907b0de4edf7bb51fd08bdc68c891a11a58ea9de6869ce522544a",
+      "unit_type": "decomposition-and-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u10_newform_primitive_decomposition.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 420,
+          "line_end": 427,
+          "text": "                                                                       .\n                                   p\n                                             p                p\n\nThe functional equation satisfied by Lf (s) is\n                     ξf (s) = (2π)−s Γ(s + (k − 1)/2)Lf (s) = (−1)k/2 ξf (1 − s).\n                                                                           µ      ¶\n                                                                             a b\n",
+          "sha256": "886e81b1f24cc09e013e54d304e18ac05a7ed5125122d0566fe704303a2ce2ea"
+        },
+        "after": {
+          "line_start": 504,
+          "line_end": 511,
+          "text": "A.2.d.i.A Examples. See the website1 for many specific examples.\n     Ramanujan’s tau-function defined implicitly by\n                                         ∞\n                                         Y                     ∞\n                                                               X\n                                    x          (1 − xn )24 =         τ (n)xn\n                                         n=1                   n=1\n\n",
+          "sha256": "1667b0b4f29c9c06d2ea119ad5615d4b9d060d53069cbb4e1fc8a863932db80d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter A.2: arithmetic L-functions",
+            "line_end": 570,
+            "line_start": 317,
+            "mathematical_role": "Moves from basic zeta/Dirichlet/Dedekind examples to cusp-form, newform, and elliptic-curve constructions of arithmetic L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 503,
+          "line_start": 428,
+          "title": "Removing oldforms isolates primitive newforms with Euler products",
+          "unit_id": "aim2004_u10_newform_primitive_decomposition",
+          "unit_type": "decomposition-and-construction",
+          "why_material": "The source explains two mechanisms generating imprimitive forms, extracts the new subspace, and characterizes its Hecke basis through Euler products and functional equations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Dimension formulas at 439-464 are supporting setup; the conceptual core is the oldform/newform decomposition at 472-503.",
+          "representation_dependency": "Formula-heavy and partially garbled; the two oldform mechanisms and primitive-basis interpretation are prose-recoverable, while exact dimension and Euler-factor formulas need scan verification.",
+          "unit_id": "aim2004_u10_newform_primitive_decomposition"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 425,
+            "line_start": 381,
+            "title": "Hecke eigenform coefficients produce degree-two L-functions",
+            "unit_id": "aim2004_u09_cuspform_l_function_bridge",
+            "unit_type": "construction",
+            "why_material": "The transformation law, coefficient relations, Euler factors, coefficient normalization, and functional equation show how automorphic data is repackaged as an L-function."
+          },
+          {
+            "line_end": 567,
+            "line_start": 551,
+            "title": "Point counts of elliptic curves become coefficients of modular L-functions",
+            "unit_id": "aim2004_u11_elliptic_curve_modularity_bridge",
+            "unit_type": "arithmetic-to-automorphic-bridge",
+            "why_material": "This is a compact construction chain from reductions modulo primes to Hasse-Weil coefficients and then to weight-two modular forms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 427,
+              "line_start": 426,
+              "reason": "Formula/page continuation into the higher-level modular-form subsection."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u10_newform_primitive_decomposition",
+        "spontaneous": {
+          "unit_id": "aim2004_u10_newform_primitive_decomposition",
+          "spontaneous_reading": "The decisive move is to quotient away two inheritance mechanisms from lower level so that the remaining newforms are primitive eigenobjects with clean Euler products."
+        },
+        "directed": {
+          "unit_id": "aim2004_u10_newform_primitive_decomposition",
+          "source_grounded_mathematics": "For Γ0(q) cusp spaces the source describes oldforms arising by level inclusion and dilation f(z)↦f(dz), gives a divisor-sum dimension formula for the new subspace, and characterizes a Hecke basis of newforms through normalized Euler products and functional equations.",
+          "conceptual_reading": "Primitivity is a decomposition principle: remove objects induced from simpler levels before treating the residual basis elements as irreducible arithmetic building blocks.",
+          "representation_or_bridge": "The old/new decomposition bridges geometric level structure to factorization of L-functions; Hecke diagonalization then converts the primitive subspace into individual multiplicative analytic objects.",
+          "boundary_or_failure": "Dimension subtraction alone does not identify newforms, and primitive here is relative to level-generation mechanisms rather than a proof of irreducibility in every possible category.",
+          "uncertainty": "The two oldform mechanisms and the primitive-basis interpretation are clear, while the dimension and good/bad Euler-factor formulas are heavily OCR-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u10_newform_primitive_decomposition",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly gives two oldform mechanisms: level inclusion and dilation f(z)↦f(dz).",
+          "It defines the dimension of the new subspace, states that it has a Hecke basis of primitive/new forms, and associates normalized Euler products and functional equations to those forms.",
+          "The candidate's warning that primitivity is relative to the stated level mechanisms is appropriate."
+        ],
+        "inference": [
+          "Removing contributions inherited from lower levels before studying newforms is a faithful decomposition reading."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says the oldforms are 'quotient[ed] away,' but the span describes a subspace and dimension formula, not a quotient construction.",
+          "Calling newforms 'irreducible arithmetic building blocks' imports a broader categorical irreducibility not established here.",
+          "The claimed bridge to 'factorization of L-functions' is stronger than the displayed association with Euler products; no factorization theorem is stated in this unit.",
+          "'Hecke diagonalization' is plausible background language, but the span only states the existence of a Hecke basis."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic primitive/irreducible vocabulary risks collapsing a precise old/new level decomposition into a reusable but inaccurate template."
+        ],
+        "context_or_ocr_risk": [
+          "Dimension and good/bad Euler-factor formulas are garbled; the two inheritance mechanisms and new-basis claim remain prose-recoverable."
+        ],
+        "missed_mechanism": [
+          "The revision should keep the distinction between constructing the new subspace and merely computing its dimension."
+        ],
+        "revision_instructions": [
+          "Replace 'quotient away' and categorical irreducibility language with removal/separation of the subspace generated by the two lower-level mechanisms.",
+          "Describe the analytic bridge only as associating each stated newform basis element with an Euler product and functional equation; do not claim L-function factorization or unstated diagonalization."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Earlier explicit full-level cusp-form examples are not required for this bridge.",
+      "line_end": 567,
+      "line_start": 551,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed Euler product is extraction-damaged, but the conductor, point-count coefficient rule, and modularity conclusion are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This is a compact construction chain from reductions modulo primes to Hasse-Weil coefficients and then to weight-two modular forms.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Point counts of elliptic curves become coefficients of modular L-functions",
+      "unit_artifact_relpath": "depth/units/aim2004_u11_elliptic_curve_modularity_bridge.txt",
+      "unit_bytes": 1086,
+      "unit_id": "aim2004_u11_elliptic_curve_modularity_bridge",
+      "unit_sha256": "cd3005ab33733eed330202dc31765e2df9f9313cd22927b243e155980f24d0fa",
+      "unit_type": "arithmetic-to-automorphic-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u11_elliptic_curve_modularity_bridge.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 543,
+          "line_end": 550,
+          "text": "\nThen, ∆(z)E4 (z) gives the unique Hecke form of weight 16; ∆(z)E6 (z) gives the unique\nHecke form of weight 18; ∆(z)E4 (z)2 is the Hecke form of weight 20; ∆(z)E4 (z)E6 (z) is the\nHecke form of weight 22; and ∆(z)E4 (z)2 E6 (z) is the Hecke form of weight 26. The two\nHecke forms of weight 24 are given by\n                                         ∆(z)E4 (z)3 + x∆(z)2\n                     √\nwhere x = −156 ± 12 144169.\n",
+          "sha256": "2bc3241df0006cd956406aa4fe521fcf947857ff6e9f5f31e6d19aef562d0978"
+        },
+        "after": {
+          "line_start": 568,
+          "line_end": 575,
+          "text": "\nA.2.d.j Dirichlet series associated with Maass forms.\n\nA.2.e Higher rank L-functions. A.3 The Selberg class\n     Selberg [94f:11085] has given an elegant a set of axioms which presumably describes\nexactly the set of arithmetic L-functions. He also made two deep conjectures82 about these\nL-functions which have far reaching consequences.\n     The collection of Dirichlet series satisfying Selberg’s axioms is called “The Selberg\n",
+          "sha256": "f24955c46b2e1816f640e596af3f617d4a33cf2b5abf8c1053232b6413bde875"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter A.2: arithmetic L-functions",
+            "line_end": 570,
+            "line_start": 317,
+            "mathematical_role": "Moves from basic zeta/Dirichlet/Dedekind examples to cusp-form, newform, and elliptic-curve constructions of arithmetic L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 567,
+          "line_start": 551,
+          "title": "Point counts of elliptic curves become coefficients of modular L-functions",
+          "unit_id": "aim2004_u11_elliptic_curve_modularity_bridge",
+          "unit_type": "arithmetic-to-automorphic-bridge",
+          "why_material": "This is a compact construction chain from reductions modulo primes to Hasse-Weil coefficients and then to weight-two modular forms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Earlier explicit full-level cusp-form examples are not required for this bridge.",
+          "representation_dependency": "The displayed Euler product is extraction-damaged, but the conductor, point-count coefficient rule, and modularity conclusion are explicit in prose.",
+          "unit_id": "aim2004_u11_elliptic_curve_modularity_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 503,
+            "line_start": 428,
+            "title": "Removing oldforms isolates primitive newforms with Euler products",
+            "unit_id": "aim2004_u10_newform_primitive_decomposition",
+            "unit_type": "decomposition-and-construction",
+            "why_material": "The source explains two mechanisms generating imprimitive forms, extracts the new subspace, and characterizes its Hecke basis through Euler products and functional equations."
+          },
+          {
+            "line_end": 638,
+            "line_start": 571,
+            "title": "The Selberg class packages analytic continuation, symmetry, locality, growth, and primitive factorization",
+            "unit_id": "aim2004_u12_selberg_axiomatic_factorization",
+            "unit_type": "axiomatization",
+            "why_material": "It supplies a representation-independent candidate definition of arithmetic L-functions and records closure, unique primitive factorization, and the five governing axioms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u11_elliptic_curve_modularity_bridge",
+        "spontaneous": {
+          "unit_id": "aim2004_u11_elliptic_curve_modularity_bridge",
+          "spontaneous_reading": "Finite-field point counts become prime coefficients, those coefficients assemble an Euler product, and modularity identifies the resulting Hasse–Weil L-function with a weight-two modular form."
+        },
+        "directed": {
+          "unit_id": "aim2004_u11_elliptic_curve_modularity_bridge",
+          "source_grounded_mathematics": "For an integral elliptic curve the span names its conductor N, states a prime coefficient rule from the number of solutions modulo p, builds the Hasse–Weil Dirichlet series and separate local factors at primes dividing or not dividing N, and invokes the work of Wiles and others to associate it to a weight-two modular form.",
+          "conceptual_reading": "The bridge converts local geometric counts into global analytic data and then recognizes that data inside an automorphic representation, making two initially different descriptions of the curve compatible.",
+          "representation_or_bridge": "Reduction modulo primes supplies a(p); multiplicative assembly supplies L_E(s); modularity transfers the object to the modular-form framework with its analytic structure.",
+          "boundary_or_failure": "The span states modularity rather than deriving it, and the bad-prime data and conductor carry information not captured by the simple point-count slogan.",
+          "uncertainty": "The prose construction is clear, but the extracted point-count convention and displayed Euler product are damaged enough that exact formulas need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u11_elliptic_curve_modularity_bridge",
+        "critic_decision": "revise",
+        "supported": [
+          "The span names the conductor, derives prime coefficients from reductions modulo p, assembles the Hasse-Weil Dirichlet series with separate good/bad local factors, and states association to a weight-two modular form.",
+          "The candidate appropriately treats modularity as invoked rather than proved and flags the damaged point-count and Euler-product formulas."
+        ],
+        "inference": [
+          "The local-count to global-series to modular-form chain is the central representation bridge supported by the span."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading says the data are recognized 'inside an automorphic representation,' but this span states association to a modular form, not an automorphic representation.",
+          "Saying modularity transfers the object 'with its analytic structure' imports consequences not displayed in this short unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "The abstract phrase 'making two descriptions compatible' is acceptable only when anchored to the explicit point-count, Euler-product, and weight-two modular-form chain."
+        ],
+        "context_or_ocr_risk": [
+          "The extracted a_p point-count convention appears damaged and the displayed local factors are unsafe for exact reuse."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'automorphic representation' with the stated weight-two modular form and remove the unstated transfer of analytic structure.",
+          "Retain the three explicit stages and the caveat that exact coefficient/local-factor conventions require scan verification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes both conjectures and the source's stated consequences, so no outside justification is imported.",
+      "line_end": 666,
+      "line_start": 639,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One displayed correlation is visibly truncated at 653-658; the orthogonality interpretation and stated consequences are prose-recoverable, but the exact sum requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Selberg's conjectures turn primitive functions into an orthonormal-like system and connect coefficient correlations to uniqueness, holomorphy, and prime-number-theorem behavior.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coefficient orthogonality organizes primitive Selberg-class factors",
+      "unit_artifact_relpath": "depth/units/aim2004_u13_selberg_orthogonality_consequences.txt",
+      "unit_bytes": 1273,
+      "unit_id": "aim2004_u13_selberg_orthogonality_consequences",
+      "unit_sha256": "7c3a02a5161997b78b8af57db9209b7b84ddbb47a44fbfc7e64cb6cbc196d560",
+      "unit_type": "conjectural-structure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u13_selberg_orthogonality_consequences.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 631,
+          "line_end": 638,
+          "text": "with bn ¿ nθ for some θ < 12 .\n       Note that this implies a1 = 1, so F (s) = 1 is the only constant function in the Selberg\nclass.\n\nA.3.e Axiom 5: Ramanujan Hypothesis. We have\n                                           an ¿ nε\nfor all ε > 0.\n\n",
+          "sha256": "c57629c4cb92823514100e1c4cf235f81ea98f13a938e6a7709763391dcde259"
+        },
+        "after": {
+          "line_start": 667,
+          "line_end": 674,
+          "text": "A.4 Analogues of zeta-functions\n\nA.4.a Dynamical zeta-functions. For several decades now there has been interest amongst\nphysicists and mathematicians to study the statistics of the eigenvalue spectra of physical\nsystems - especially those with a classical counterpart which displays chaotic behaviour. One\nparticular goal is to try to detect in the statistical distribution of a set of energy eigenvalues\nan indication of whether the corresponding classical system behaves chaoticly or integrably.\nThe answer was suggested by Berry and Tabor in 1977, and examined in depth by Bohigas,\n",
+          "sha256": "892e169ca54556e750f424b8dbafbf39ad8b636acd83a413bbd7f07b1431f6bd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter A.3: the Selberg class",
+            "line_end": 666,
+            "line_start": 571,
+            "mathematical_role": "Axiomatizes the intended class, its primitive factorization, and conjectural coefficient orthogonality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 666,
+          "line_start": 639,
+          "title": "Coefficient orthogonality organizes primitive Selberg-class factors",
+          "unit_id": "aim2004_u13_selberg_orthogonality_consequences",
+          "unit_type": "conjectural-structure",
+          "why_material": "Selberg's conjectures turn primitive functions into an orthonormal-like system and connect coefficient correlations to uniqueness, holomorphy, and prime-number-theorem behavior."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes both conjectures and the source's stated consequences, so no outside justification is imported.",
+          "representation_dependency": "One displayed correlation is visibly truncated at 653-658; the orthogonality interpretation and stated consequences are prose-recoverable, but the exact sum requires scan verification.",
+          "unit_id": "aim2004_u13_selberg_orthogonality_consequences"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 638,
+            "line_start": 571,
+            "title": "The Selberg class packages analytic continuation, symmetry, locality, growth, and primitive factorization",
+            "unit_id": "aim2004_u12_selberg_axiomatic_factorization",
+            "unit_type": "axiomatization",
+            "why_material": "It supplies a representation-independent candidate definition of arithmetic L-functions and records closure, unique primitive factorization, and the five governing axioms."
+          },
+          {
+            "line_end": 724,
+            "line_start": 669,
+            "title": "Periodic-orbit data constructs a zeta function whose zeros encode energy levels",
+            "unit_id": "aim2004_u14_dynamical_zeta_spectral_determinant",
+            "unit_type": "spectral-analogy-and-construction",
+            "why_material": "The source links chaotic spectral statistics to random matrices and builds a dynamical zeta function from a semiclassical spectral determinant and periodic orbits."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler factors and coefficient orthogonality motivate an axiomatic class in which zero-free, density, and prime-number-theorem questions can be asked uniformly.",
+            "limit": "Several bridges are conjectural in the source, and the Selberg-class identification problem remains open there.",
+            "parent_local_unit_ids": [
+              "aim2004_u04_euler_product_local_global",
+              "aim2004_u12_selberg_axiomatic_factorization",
+              "aim2004_u13_selberg_orthogonality_consequences",
+              "aim2004_u16_weaker_zero_distribution_hypotheses"
+            ],
+            "title": "Local-global axioms to quantitative zero questions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 668,
+              "line_start": 667,
+              "reason": "Chapter transition into zeta analogues."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u13_selberg_orthogonality_consequences",
+        "spontaneous": {
+          "unit_id": "aim2004_u13_selberg_orthogonality_consequences",
+          "spontaneous_reading": "Prime-coefficient correlations are proposed as an inner product that makes primitive Selberg-class functions behave like orthogonal basis elements."
+        },
+        "directed": {
+          "unit_id": "aim2004_u13_selberg_orthogonality_consequences",
+          "source_grounded_mathematics": "The span states Selberg's conjectural prime-coefficient second-moment and cross-correlation laws, interprets distinct primitive functions as orthogonal, and reports consequences for Artin holomorphy, uniqueness of primitive factorization, and a prime number theorem after allowing vertical shifts.",
+          "conceptual_reading": "Instead of classifying primitive functions by origin, the conjectures try to distinguish them through asymptotic coefficient correlations, turning arithmetic data into a geometry of the class.",
+          "representation_or_bridge": "Prime-indexed coefficients bridge Euler products to an orthogonality relation; pairing a shifted function with a shifted zeta function is stated to bridge that relation to boundary nonvanishing and a prime number theorem.",
+          "boundary_or_failure": "Every major structural implication in the span depends on conjectural orthogonality, so it cannot be used as established classification or analytic control.",
+          "uncertainty": "The intended orthogonality and stated consequences are prose-clear, but one displayed cross-correlation formula is visibly truncated and needs scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u13_selberg_orthogonality_consequences",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states conjectural second-moment and cross-correlation laws, interprets primitive functions as an orthonormal system, and names consequences for Artin holomorphy and uniqueness of primitive factorization.",
+          "It also states that, after admitting vertical shifts, the shifted-zeta case is equivalent to a prime number theorem for F.",
+          "The candidate consistently marks the main claims as conjectural."
+        ],
+        "inference": [
+          "Using prime-indexed coefficient correlations to distinguish primitive functions is a faithful geometric interpretation of the source's own 'orthonormal system' language."
+        ],
+        "unsupported_or_imported": [
+          "The representation bridge adds 'boundary nonvanishing,' which is not stated in this unit; the span says only 'prime number theorem' and provides no boundary formulation here."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The displayed cross-correlation loses closing symbols and likely conjugation, so only the prose orthogonality interpretation is safe."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the imported boundary-nonvanishing gloss and state only the source's equivalence between the specified shifted pairing and a prime number theorem for F."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The spectral-determinant setup at 682-715 is necessary for the zero/eigenvalue claim at 716-724.",
+      "line_end": 724,
+      "line_start": 669,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy with imperfect radicals and products; conceptual use is safe from the prose, but exact semiclassical formulas need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source links chaotic spectral statistics to random matrices and builds a dynamical zeta function from a semiclassical spectral determinant and periodic orbits.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Periodic-orbit data constructs a zeta function whose zeros encode energy levels",
+      "unit_artifact_relpath": "depth/units/aim2004_u14_dynamical_zeta_spectral_determinant.txt",
+      "unit_bytes": 3476,
+      "unit_id": "aim2004_u14_dynamical_zeta_spectral_determinant",
+      "unit_sha256": "5a5b9d85fcfae1b00175219b241a75539d673a12a19899419220aa510fcddf4f",
+      "unit_type": "spectral-analogy-and-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u14_dynamical_zeta_spectral_determinant.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 661,
+          "line_end": 668,
+          "text": "      Conjecture B can be interpreted as saying that the primitive functions form an or-\nthonormal system. This conjecture is very deep. It implies, among other things, Artin’s\nconjecture on the holomorphy of non-abelian L-functions [98h:11106], and that the factor-\nization of elements into primitives is unique [95f:11064].\n      If you extend the Selberg Class to include G(s) = F (s + iy) for F ∈ S and y real, then\nConjecture B with F 0 (s) = ζ(s − iy) is equivalent to a prime number theorem26 for F (s).\nA.4 Analogues of zeta-functions\n\n",
+          "sha256": "2a8d64d365ce99c28db0a14b083047469d549fdb009443510ab33b95feb932bc"
+        },
+        "after": {
+          "line_start": 725,
+          "line_end": 732,
+          "text": "\nA.4.b Spectral zeta functions.\n\n\n                                 Chapter B: Riemann Hypotheses\n\nB.1 The Riemann Hypothesis and its generalizations\n      The Riemann Hypothesis for L(s) is the assertion that the nontrivial zeros 64 of L(s) lie\n",
+          "sha256": "b9ad8006817bd97744b34f2cf51582812c07541db30b520cee1f80bf579b08bf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter A.4: analogues of zeta-functions",
+            "line_end": 728,
+            "line_start": 667,
+            "mathematical_role": "Relates periodic-orbit spectral determinants to dynamical zeta functions and zero spectra."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 724,
+          "line_start": 669,
+          "title": "Periodic-orbit data constructs a zeta function whose zeros encode energy levels",
+          "unit_id": "aim2004_u14_dynamical_zeta_spectral_determinant",
+          "unit_type": "spectral-analogy-and-construction",
+          "why_material": "The source links chaotic spectral statistics to random matrices and builds a dynamical zeta function from a semiclassical spectral determinant and periodic orbits."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The spectral-determinant setup at 682-715 is necessary for the zero/eigenvalue claim at 716-724.",
+          "representation_dependency": "Formula-heavy with imperfect radicals and products; conceptual use is safe from the prose, but exact semiclassical formulas need scan verification.",
+          "unit_id": "aim2004_u14_dynamical_zeta_spectral_determinant"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 666,
+            "line_start": 639,
+            "title": "Coefficient orthogonality organizes primitive Selberg-class factors",
+            "unit_id": "aim2004_u13_selberg_orthogonality_consequences",
+            "unit_type": "conjectural-structure",
+            "why_material": "Selberg's conjectures turn primitive functions into an orthonormal-like system and connect coefficient correlations to uniqueness, holomorphy, and prime-number-theorem behavior."
+          },
+          {
+            "line_end": 789,
+            "line_start": 729,
+            "title": "RH variants differ by L-function family and treatment of real zeros",
+            "unit_id": "aim2004_u15_rh_hierarchy_modified_variants",
+            "unit_type": "hypothesis-taxonomy",
+            "why_material": "It cleanly separates RH, GRH, ERH, Grand RH, and their modified forms, preventing family scope and real-axis exceptions from being collapsed."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Spectral determinants, CUE statistics, periodic-orbit analogies, and partition-function phase transitions jointly constrain what a zeta-related dynamical or operator model might need to reproduce.",
+            "limit": "The source supplies analogies and constructions with different outputs, not one operator whose spectrum proves RH.",
+            "parent_local_unit_ids": [
+              "aim2004_u14_dynamical_zeta_spectral_determinant",
+              "aim2004_u18_vertical_zero_statistics_rmt",
+              "aim2004_u20_hilbert_polya_periodic_orbit_route",
+              "aim2004_u38_bost_connes_phase_transition"
+            ],
+            "title": "Spectral realization constraints"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 668,
+              "line_start": 667,
+              "reason": "Chapter transition into zeta analogues."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u14_dynamical_zeta_spectral_determinant",
+        "spontaneous": {
+          "unit_id": "aim2004_u14_dynamical_zeta_spectral_determinant",
+          "spontaneous_reading": "A convergent spectral determinant is rewritten semiclassically through periodic orbits, isolating a dynamical zeta factor whose zeros recover the system's energy spectrum."
+        },
+        "directed": {
+          "unit_id": "aim2004_u14_dynamical_zeta_spectral_determinant",
+          "source_grounded_mathematics": "The span contrasts random-matrix statistics of integrable and chaotic spectra, defines a regularized determinant for a Hamiltonian's eigenvalues, gives a semiclassical periodic-orbit expression involving actions and monodromy matrices, and defines a dynamical zeta whose zeros are the eigenvalues because the remaining factor is zero-free.",
+          "conceptual_reading": "Periodic orbits act as compressed classical data from which quantum spectral information is reconstructed, paralleling the way prime data feeds zeta-like products.",
+          "representation_or_bridge": "The spectral determinant bridges operator eigenvalues to zeros of a function, while the semiclassical trace-style expansion bridges that function to classical periodic actions and stability matrices.",
+          "boundary_or_failure": "This constructs a zeta function for a chosen dynamical system and matches local statistical behavior; it does not identify that spectrum with Riemann zeros or prove RH.",
+          "uncertainty": "The prose mechanism is clear, but the determinant and periodic-orbit formulas are extraction-sensitive and the semiclassical equality is explicitly approximate."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u14_dynamical_zeta_spectral_determinant",
+        "critic_decision": "revise",
+        "supported": [
+          "The span contrasts integrable and chaotic spectra, identifies unitary random-matrix local statistics for the relevant symmetry class, defines a regularized spectral determinant, and gives a semiclassical periodic-orbit expression.",
+          "It defines a dynamical zeta factor and explicitly claims that its zeros are the system's eigenvalues because the remaining B(E) factor is zero-free.",
+          "The candidate correctly notes that the semiclassical relation is approximate and that no Riemann-zero spectral identification follows."
+        ],
+        "inference": [
+          "Periodic-orbit data can be read as a compressed classical description used to reconstruct semiclassical spectral information."
+        ],
+        "unsupported_or_imported": [
+          "The claim that this parallels primes feeding zeta-like products is not present anywhere in this unit or its bounded context; it is a familiar external analogy.",
+          "The spontaneous reading calls the spectral determinant 'convergent' without preserving that convergence is imposed by the auxiliary A factor."
+        ],
+        "paraphrase_or_style_risk": [
+          "Without the actual action and monodromy ingredients, 'representation exposes structure' would be generic; those concrete ingredients should remain explicit."
+        ],
+        "context_or_ocr_risk": [
+          "Radicals, determinants, products, and phase terms are formula-damaged.",
+          "There is an unresolved proof burden between the approximate semiclassical factorization and the prose's exact zero/eigenvalue conclusion."
+        ],
+        "missed_mechanism": [
+          "The role of the zero-free regularizing factors A and B, and the approximation sign in the periodic-orbit formula, must remain explicit."
+        ],
+        "revision_instructions": [
+          "Delete the prime analogy, qualify convergence as produced by A, and present the zero/eigenvalue conclusion as the source's claim while foregrounding the approximate factorization that precedes it."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source itself flags ERH exposition as incomplete at 776-777; the taxonomy is retained with that limitation.",
+      "line_end": 789,
+      "line_start": 729,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Predominantly prose-led; cross-reference numbers are noisy but the scopes are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It cleanly separates RH, GRH, ERH, Grand RH, and their modified forms, preventing family scope and real-axis exceptions from being collapsed.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH variants differ by L-function family and treatment of real zeros",
+      "unit_artifact_relpath": "depth/units/aim2004_u15_rh_hierarchy_modified_variants.txt",
+      "unit_bytes": 3581,
+      "unit_id": "aim2004_u15_rh_hierarchy_modified_variants",
+      "unit_sha256": "47d4edb719d9f2590b73e67ccc746dbb059d64ac36678f0388d793e9c43d3b29",
+      "unit_type": "hypothesis-taxonomy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u15_rh_hierarchy_modified_variants.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 721,
+          "line_end": 728,
+          "text": "                                 p        k=1 k   | det(Mpk − 1)|\n\nSince B(E) has no zeros, the zeros of Z(E) are the eigenvalues of the system under investi-\ngation.\n\nA.4.b Spectral zeta functions.\n\n\n",
+          "sha256": "c8c75cac1127fcb14c1203996858511b217b8ab8146c67d2cca474546190ef67"
+        },
+        "after": {
+          "line_start": 790,
+          "line_end": 797,
+          "text": "\n  16page 14, The Riemann Hypothesis\n  64page 4, Terminology and basic properties\n  9page 8, Dirichlet L-functions\n  64page 4, Terminology and basic properties\n  11page 11, The Selberg class\n  16page 14, The Riemann Hypothesis\n  64page 4, Terminology and basic properties\n",
+          "sha256": "80bb56570e255a8227eed7f045342943bbe522c3cbf89f6b5d9fc5b690dd27bb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter B: Riemann hypotheses and perspectives",
+            "line_end": 953,
+            "line_start": 729,
+            "mathematical_role": "Separates RH variants and weaker zero-distribution hypotheses, then motivates arithmetic and spectral perspectives."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 789,
+          "line_start": 729,
+          "title": "RH variants differ by L-function family and treatment of real zeros",
+          "unit_id": "aim2004_u15_rh_hierarchy_modified_variants",
+          "unit_type": "hypothesis-taxonomy",
+          "why_material": "It cleanly separates RH, GRH, ERH, Grand RH, and their modified forms, preventing family scope and real-axis exceptions from being collapsed."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source itself flags ERH exposition as incomplete at 776-777; the taxonomy is retained with that limitation.",
+          "representation_dependency": "Predominantly prose-led; cross-reference numbers are noisy but the scopes are explicit.",
+          "unit_id": "aim2004_u15_rh_hierarchy_modified_variants"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 724,
+            "line_start": 669,
+            "title": "Periodic-orbit data constructs a zeta function whose zeros encode energy levels",
+            "unit_id": "aim2004_u14_dynamical_zeta_spectral_determinant",
+            "unit_type": "spectral-analogy-and-construction",
+            "why_material": "The source links chaotic spectral statistics to random matrices and builds a dynamical zeta function from a semiclassical spectral determinant and periodic orbits."
+          },
+          {
+            "line_end": 840,
+            "line_start": 813,
+            "title": "Quasi, density-one, and density bounds retain different fragments of RH",
+            "unit_id": "aim2004_u16_weaker_zero_distribution_hypotheses",
+            "unit_type": "strength-comparison",
+            "why_material": "The three weakenings separate a fixed zero-free half-plane, almost-all zeros on the line, and quantitative control of off-line density, including the moment-estimation bottleneck."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Completion and recentering systematically convert functional equations into critical-line or real-zero formulations whose scope varies with the chosen L-function family.",
+            "limit": "This is a representational synthesis, not evidence that the zeros satisfy the desired geometry.",
+            "parent_local_unit_ids": [
+              "aim2004_u03_functional_equation_family",
+              "aim2004_u05_completed_xi_hardy_z",
+              "aim2004_u06_critical_strip_zero_geometry",
+              "aim2004_u15_rh_hierarchy_modified_variants"
+            ],
+            "title": "Reflection symmetry to real-zero geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u15_rh_hierarchy_modified_variants",
+        "spontaneous": {
+          "unit_id": "aim2004_u15_rh_hierarchy_modified_variants",
+          "spontaneous_reading": "The taxonomy prevents one phrase, “Riemann Hypothesis,” from hiding two choices: which L-function family is quantified over and whether exceptional real zeros are allowed."
+        },
+        "directed": {
+          "unit_id": "aim2004_u15_rh_hierarchy_modified_variants",
+          "source_grounded_mathematics": "The source distinguishes RH for zeta, GRH for Dirichlet L-functions, ERH for Dedekind zeta functions, and Grand RH for automorphic L-functions; modified versions allow nontrivial real-axis zeros in addition to critical-line zeros and the text names near-1 real zeros as Landau–Siegel zeros.",
+          "conceptual_reading": "The hypotheses share a zero-location template but differ materially in quantifier scope and exception policy, so implications must track the underlying family rather than rely on a common label.",
+          "representation_or_bridge": "Degree-one, number-field, and automorphic viewpoints provide nested or conjecturally related domains over which the same critical-line predicate is asserted.",
+          "boundary_or_failure": "The source says the ERH exposition is incomplete and presents the coincidence of global, automorphic, and Selberg-class scopes as belief, not theorem.",
+          "uncertainty": "The prose scopes are explicit despite noisy cross-references; the claimed degree-one equivalence and family inclusions should be read in the source's stated convention."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u15_rh_hierarchy_modified_variants",
+        "critic_decision": "revise",
+        "supported": [
+          "The span separately defines RH, GRH, ERH, Grand RH, and modified variants that allow nontrivial real-axis zeros.",
+          "It explicitly says ERH includes RH, defines GRH to include RH, names near-1 real zeros, and labels the global/automorphic/Selberg coincidence as belief or presumption.",
+          "The candidate preserves the source's incomplete-ERH warning and conjectural scope identifications."
+        ],
+        "inference": [
+          "Tracking both quantified L-function family and exception policy is the correct non-paraphrase comparison."
+        ],
+        "unsupported_or_imported": [
+          "The bridge's phrase 'nested or conjecturally related domains' can falsely suggest that the degree-one, number-field, and automorphic scopes form one nested hierarchy; that nesting is not stated and does not follow from this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Calling the catalogue a hierarchy risks replacing its distinct scopes with an unjustified inclusion ordering."
+        ],
+        "context_or_ocr_risk": [
+          "Cross-reference numbers are noisy, but the prose definitions are stable; the source itself marks ERH exposition incomplete."
+        ],
+        "missed_mechanism": [
+          "The revision should distinguish explicit inclusions involving RH from the merely conjectural coincidence of broader L-function classes."
+        ],
+        "revision_instructions": [
+          "Replace the nested-domain claim with a scope comparison: GRH and ERH explicitly include RH under the source's definitions, while the relation among broader global, automorphic, and Selberg-class scopes is stated only as belief."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical examples demonstrate transfer from zeta to automorphic L-functions and expose the open Selberg-class case.",
+      "line_end": 875,
+      "line_start": 843,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prime-counting display at 847-868 is badly laid out, but the nonvanishing/Tauberian mechanism is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The unit identifies both the semantic equivalence and the bridge mechanism: regularity of the logarithmic derivative on the boundary enables a Tauberian theorem.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Boundary nonvanishing becomes a prime number theorem through a Tauberian step",
+      "unit_artifact_relpath": "depth/units/aim2004_u17_pnt_as_boundary_nonvanishing.txt",
+      "unit_bytes": 1667,
+      "unit_id": "aim2004_u17_pnt_as_boundary_nonvanishing",
+      "unit_sha256": "2ee597d69f74f0c969d041f1d1618e92f537b5841efd94cc81fc4f7a104e48e2",
+      "unit_type": "analytic-arithmetic-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u17_pnt_as_boundary_nonvanishing.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 835,
+          "line_end": 842,
+          "text": "      The Density Hypothesis follows from the Lindelöf Hypothesis. The importance of the\nDensity Hypothesis is that, in terms of bounding the gaps between consecutive primes, the\ndensity hypothesis appears to be as strong as the Riemann Hypothesis.\n      Results on N (σ, T ) are generally obtained from mean values of the zeta-function. Fur-\nther progress in this direction, particularly for σ close to 12 , appears to be hampered by the\ngreat difficulty in estimating the moments of the zeta-function on the critical line.\n      See Titchmarsh [88c:11049], Chapter 9, for an extensive discussion.\n\n",
+          "sha256": "d1351d33901ab71a9ff1c53ccdfb28a184369c8aaf80444bbc421888a7c87a94"
+        },
+        "after": {
+          "line_start": 876,
+          "line_end": 883,
+          "text": "\nB.2.e Landau-Siegel zeros. A zero of L(s, χ) which is very close to s = 1 is called a\nLandau-Siegel zero, often shortened to “Siegel zero.” [this section will be expanded]\n\nB.2.f The vertical distribution of zeros of L-functions. The Riemann Hypothesis 55\nis an assertion about the horizontal distribution of zeros of L-functions 2. The question of\nthe vertical distribution of the zeros may be even more subtle. Questions of interest include\nthe neighbor spacing of zeros, the very large and very small gaps between zeros, correlations\n",
+          "sha256": "5d1d0bf4f164eecebb54b9b4e833e6c9e4c802593be2532fd184f2ce77b1ea5c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter B: Riemann hypotheses and perspectives",
+            "line_end": 953,
+            "line_start": 729,
+            "mathematical_role": "Separates RH variants and weaker zero-distribution hypotheses, then motivates arithmetic and spectral perspectives."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 875,
+          "line_start": 843,
+          "title": "Boundary nonvanishing becomes a prime number theorem through a Tauberian step",
+          "unit_id": "aim2004_u17_pnt_as_boundary_nonvanishing",
+          "unit_type": "analytic-arithmetic-equivalence",
+          "why_material": "The unit identifies both the semantic equivalence and the bridge mechanism: regularity of the logarithmic derivative on the boundary enables a Tauberian theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The historical examples demonstrate transfer from zeta to automorphic L-functions and expose the open Selberg-class case.",
+          "representation_dependency": "The prime-counting display at 847-868 is badly laid out, but the nonvanishing/Tauberian mechanism is explicit in prose.",
+          "unit_id": "aim2004_u17_pnt_as_boundary_nonvanishing"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 840,
+            "line_start": 813,
+            "title": "Quasi, density-one, and density bounds retain different fragments of RH",
+            "unit_id": "aim2004_u16_weaker_zero_distribution_hypotheses",
+            "unit_type": "strength-comparison",
+            "why_material": "The three weakenings separate a fixed zero-free half-plane, almost-all zeros on the line, and quantitative control of off-line density, including the moment-estimation bottleneck."
+          },
+          {
+            "line_end": 887,
+            "line_start": 880,
+            "title": "Vertical zero questions are modeled by random-matrix statistics",
+            "unit_id": "aim2004_u18_vertical_zero_statistics_rmt",
+            "unit_type": "distributional-perspective",
+            "why_material": "It separates vertical spacing and correlations from RH's horizontal location question and records random matrix theory as the proposed descriptive framework."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic derivatives, Tauberian arguments, summatory cancellation, and explicit formulas provide multiple interfaces translating zero location into arithmetic error or positivity statements.",
+            "limit": "The criteria have different hypotheses and levels of quantitative strength; this synthesis does not make them interchangeable proofs.",
+            "parent_local_unit_ids": [
+              "aim2004_u17_pnt_as_boundary_nonvanishing",
+              "aim2004_u19_zero_free_regions_prime_error",
+              "aim2004_u01_equivalence_map",
+              "aim2004_u21_mangoldt_mobius_cancellation",
+              "aim2004_u26_weil_bombieri_positivity_duality"
+            ],
+            "title": "Prime-zero translation pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u17_pnt_as_boundary_nonvanishing",
+        "spontaneous": {
+          "unit_id": "aim2004_u17_pnt_as_boundary_nonvanishing",
+          "spontaneous_reading": "The key mechanism is not merely equivalence: regularity of the logarithmic derivative on the boundary lets a Tauberian theorem turn analytic nonvanishing into asymptotic prime distribution."
+        },
+        "directed": {
+          "unit_id": "aim2004_u17_pnt_as_boundary_nonvanishing",
+          "source_grounded_mathematics": "Starting from Euler-product nonvanishing for σ>1, the source calls nonvanishing on σ=1 a prime number theorem for L(s), states the classical equivalence for ζ, and says the deduction uses a Tauberian theorem applied to ζ'/ζ, regular on the boundary except at the pole s=1.",
+          "conceptual_reading": "The logarithmic derivative is the interface that exposes prime-weighted coefficients, while the Tauberian step transfers boundary analytic control into an arithmetic asymptotic.",
+          "representation_or_bridge": "Euler product → logarithmic derivative → boundary regularity → Tauberian theorem is the explicit analytic-to-arithmetic pipeline; automorphic examples show its portability.",
+          "boundary_or_failure": "Nonvanishing only on σ=1 yields a prime number theorem, not RH-strength error terms, and the analogous statement for the whole Selberg class is posed as open.",
+          "uncertainty": "The mechanism is prose-clear, but the displayed prime-counting asymptotic is badly laid out and should not be quoted exactly from this extraction."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u17_pnt_as_boundary_nonvanishing",
+        "critic_decision": "revise",
+        "supported": [
+          "The span starts from Euler-product nonvanishing for sigma>1, defines boundary nonvanishing on sigma=1 as a prime number theorem for L, and states the classical zeta equivalence.",
+          "It explicitly names the Tauberian application to zeta'/zeta and the required boundary regularity except at s=1.",
+          "It records automorphic portability and leaves the Selberg-class result open."
+        ],
+        "inference": [
+          "The Tauberian theorem is the explicit mechanism transferring boundary analytic information to the prime-counting asymptotic."
+        ],
+        "unsupported_or_imported": [
+          "The candidate says the logarithmic derivative 'exposes prime-weighted coefficients' and expands the pipeline as Euler product → logarithmic derivative; that coefficient identity is standard but is not stated in this unit.",
+          "The phrase 'RH-strength error terms' invokes a quantitative comparison absent from the span, which discusses only PNT-level nonvanishing."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The prime-counting display is badly laid out, though the prose equivalence and Tauberian condition are clear."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the stated boundary-nonvanishing, regularity, and Tauberian chain, but remove the unstated prime-coefficient/logarithmic-derivative expansion and the ungrounded RH-error-term comparison."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 916-927 complete the assertion begun on the previous page and must remain attached.",
+      "line_end": 927,
+      "line_start": 893,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The main displayed relation is recoverable despite a likely Li/psi OCR inconsistency at 904; exact notation should be verified before formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The von Mangoldt summatory function translates a zero-free half-plane into an error term, with the optimal square-root exponent equivalent to RH and an analogous GRH statement for progressions.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The rightmost zero boundary controls the prime-counting error exponent",
+      "unit_artifact_relpath": "depth/units/aim2004_u19_zero_free_regions_prime_error.txt",
+      "unit_bytes": 1726,
+      "unit_id": "aim2004_u19_zero_free_regions_prime_error",
+      "unit_sha256": "4b0a7bb0fd758a372ca2d27df0a32ae78f1f5abbf5f8396ee1f9c325ea014a05",
+      "unit_type": "duality-and-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u19_zero_free_regions_prime_error.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 885,
+          "line_end": 892,
+          "text": "      The current view is that Random Matrix Theory provides the description of these and\nmany other properties of L-functions and their zeros. This is discussed on the web site\nL-functions and Random Matrix Theory2.\nB.3 The Lindelof hypothesis and breaking convexity\nB.4 Perspectives on the Riemann Hypothesis\n     An attraction of the Riemann Hypothesis is that it arises naturally in many different\ncontexts. Several examples are given below.\n\n",
+          "sha256": "46a9cbd4650ae78081a304009c4222d9f6b734339c7669495f330962d6edc526"
+        },
+        "after": {
+          "line_start": 928,
+          "line_end": 935,
+          "text": "B.4.b Physics and zeros of the zeta-function. The local statistics of the imaginary parts\nγn of the complex zeros of the Riemann zeta function show the characteristic distribution\nseen in the eigenvalues of a matrix pulled at random from the unitary group endowed with\nHaar measure. This collection of matrices is called by physicists the CUE: circular unitary\nensemble. For more details on the statistics of the zeros of the zeta function and other\nL-functions, see L-functions and Random Matrix Theory3.\n       These very same CUE statistics are also seen on a local scale when one studies the\ndistribution of the semiclassical eigenvalues En of quantum systems having classical analogues\n",
+          "sha256": "840b2812b8d756aee140296518af8b540c9db49b4abb1b3182fbb9a34321e9a1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter B: Riemann hypotheses and perspectives",
+            "line_end": 953,
+            "line_start": 729,
+            "mathematical_role": "Separates RH variants and weaker zero-distribution hypotheses, then motivates arithmetic and spectral perspectives."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 927,
+          "line_start": 893,
+          "title": "The rightmost zero boundary controls the prime-counting error exponent",
+          "unit_id": "aim2004_u19_zero_free_regions_prime_error",
+          "unit_type": "duality-and-equivalence",
+          "why_material": "The von Mangoldt summatory function translates a zero-free half-plane into an error term, with the optimal square-root exponent equivalent to RH and an analogous GRH statement for progressions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 916-927 complete the assertion begun on the previous page and must remain attached.",
+          "representation_dependency": "The main displayed relation is recoverable despite a likely Li/psi OCR inconsistency at 904; exact notation should be verified before formula-level reuse.",
+          "unit_id": "aim2004_u19_zero_free_regions_prime_error"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 887,
+            "line_start": 880,
+            "title": "Vertical zero questions are modeled by random-matrix statistics",
+            "unit_id": "aim2004_u18_vertical_zero_statistics_rmt",
+            "unit_type": "distributional-perspective",
+            "why_material": "It separates vertical spacing and correlations from RH's horizontal location question and records random matrix theory as the proposed descriptive framework."
+          },
+          {
+            "line_end": 950,
+            "line_start": 928,
+            "title": "CUE statistics and prime-sensitive long-range behavior motivate a self-adjoint spectral realization",
+            "unit_id": "aim2004_u20_hilbert_polya_periodic_orbit_route",
+            "unit_type": "strategic-interpretation",
+            "why_material": "The source combines local random-matrix evidence, semiclassical chaotic systems, and prime/periodic-orbit analogies to specify features of a hypothetical operator whose spectrum would force RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic derivatives, Tauberian arguments, summatory cancellation, and explicit formulas provide multiple interfaces translating zero location into arithmetic error or positivity statements.",
+            "limit": "The criteria have different hypotheses and levels of quantitative strength; this synthesis does not make them interchangeable proofs.",
+            "parent_local_unit_ids": [
+              "aim2004_u17_pnt_as_boundary_nonvanishing",
+              "aim2004_u19_zero_free_regions_prime_error",
+              "aim2004_u01_equivalence_map",
+              "aim2004_u21_mangoldt_mobius_cancellation",
+              "aim2004_u26_weil_bombieri_positivity_duality"
+            ],
+            "title": "Prime-zero translation pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 892,
+              "line_start": 888,
+              "reason": "Empty Lindelof heading and perspectives introduction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u19_zero_free_regions_prime_error",
+        "spontaneous": {
+          "unit_id": "aim2004_u19_zero_free_regions_prime_error",
+          "spontaneous_reading": "The rightmost permitted zero acts as a control parameter for the exponent in a prime-weighted counting error, with the square-root threshold marking RH."
+        },
+        "directed": {
+          "unit_id": "aim2004_u19_zero_free_regions_prime_error",
+          "source_grounded_mathematics": "The span defines the von Mangoldt function and its summatory function ψ, states an equivalence between a zero-free half-plane σ>σ0 and a power-size error term, identifies exponent 1/2+ε with RH, and gives an analogous GRH link for primes in arithmetic progressions.",
+          "conceptual_reading": "Zero location is translated into quantitative arithmetic regularity: moving the analytic barrier left strengthens the cancellation visible in prime-power weights.",
+          "representation_or_bridge": "The von Mangoldt sum is the bridge observable connecting the logarithmic derivative of ζ to prime distribution, so a complex-analytic exclusion region becomes an error exponent.",
+          "boundary_or_failure": "The source says such strong prime-distribution links are not known for general L-functions, and a zero-free region short of the critical line yields only a correspondingly weaker error.",
+          "uncertainty": "The bridge and exponent claim are clear, but the extracted main term appears to contain a ψ/Li inconsistency and exact notation needs scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u19_zero_free_regions_prime_error",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines Lambda and psi, states an iff relation between a zero-free half-plane and a power-scale summatory error, identifies the 1/2+epsilon threshold with RH, and gives the analogous GRH statement for arithmetic progressions.",
+          "The candidate correctly notes that the displayed main term is internally suspect and that the source denies a comparable strong connection for other L-functions.",
+          "Interpreting the rightmost permitted zero boundary as controlling the error exponent is faithful to the stated equivalence."
+        ],
+        "inference": [
+          "Moving the asserted zero-free boundary left corresponds to a stronger exponent in the source's displayed criterion."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the von Mangoldt sum is connected to zeta by logarithmic differentiation is standard background but is not present in this span or its bounded context."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The formula gives psi(X) a Li(X) main term, a likely extraction or source error; exact notation and any claimed equivalence using it require scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the unstated logarithmic-derivative explanation and retain the source-visible bridge as the asserted equivalence between the von Mangoldt summatory error and the zero-free half-plane.",
+          "Keep the Li/psi inconsistency prominent rather than silently repairing the formula from background knowledge."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Definitions and each family of equivalent bounds are retained together.",
+      "line_end": 1045,
+      "line_start": 1016,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but legible; OCR uses nonstandard epsilon glyphs and Vinogradov symbols.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The two arithmetic functions expose complementary translations of RH into error control for prime powers and cancellation of multiplicative signs.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Square-root cancellation in prime-weighted and Möbius sums encodes RH",
+      "unit_artifact_relpath": "depth/units/aim2004_u21_mangoldt_mobius_cancellation.txt",
+      "unit_bytes": 1365,
+      "unit_id": "aim2004_u21_mangoldt_mobius_cancellation",
+      "unit_sha256": "092fb94335c891fb6fc29fefca25ac8a11d8c3eef1d65c822d95c65e0b6899e4",
+      "unit_type": "cancellation-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u21_mangoldt_mobius_cancellation.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1008,
+          "line_end": 1015,
+          "text": "where f is an arithmetic function, F (x) a smooth approximation to        n≤x f (n), and α a real\nnumber.\n  4http://www.maths.tcd.ie/pub/HistMath/People/Riemann/Zeta\n\n<!-- source-page: 20 -->\n\n20\n\n",
+          "sha256": "8185e459306155f1ee5c7ee41c9a113582cfd59831570752422bb4626de58c50"
+        },
+        "after": {
+          "line_start": 1046,
+          "line_end": 1053,
+          "text": "\nC.2.b Large values. The RH is equivalent to several inequalities of the following type :\n                                         f (n) < F (n),\nwhere f is an “arithmetic”, “irregular” function, and F an “analytic”, “regular” function.\n\nC.2.b.i The sum of divisors of n. Let\n                                                   X\n                                         σ(n) =          d\n",
+          "sha256": "0e54336005f329f36174a2c8e30add58a177b3f7251ec7144c4cc6248959b8b1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C introduction through Farey and cyclotomic criteria",
+            "line_end": 1147,
+            "line_start": 954,
+            "mathematical_role": "Maps RH to prime errors, cancellation of arithmetic functions, extremal inequalities, Farey discrepancy, and cyclotomic height."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1045,
+          "line_start": 1016,
+          "title": "Square-root cancellation in prime-weighted and Möbius sums encodes RH",
+          "unit_id": "aim2004_u21_mangoldt_mobius_cancellation",
+          "unit_type": "cancellation-equivalence",
+          "why_material": "The two arithmetic functions expose complementary translations of RH into error control for prime powers and cancellation of multiplicative signs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Definitions and each family of equivalent bounds are retained together.",
+          "representation_dependency": "Formula-dependent but legible; OCR uses nonstandard epsilon glyphs and Vinogradov symbols.",
+          "unit_id": "aim2004_u21_mangoldt_mobius_cancellation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1009,
+            "line_start": 940,
+            "title": "Immutable v1 equivalence map",
+            "unit_id": "aim2004_u01_equivalence_map",
+            "unit_type": "landscape-and-duality",
+            "why_material": "Preserves the v1 unit ID and exact span, which crosses from prime-sensitive spectral statistics into the chapter's prime-zero duality and initial arithmetic-equivalence template."
+          },
+          {
+            "line_end": 1087,
+            "line_start": 1047,
+            "title": "Robin and Lagarias turn RH into universal divisor-sum thresholds",
+            "unit_id": "aim2004_u22_divisor_sum_threshold_equivalences",
+            "unit_type": "extremal-inequality",
+            "why_material": "The criteria compare the irregular divisor sum with asymptotically sharp smooth envelopes and show how equivalent formulations can be made finite-domain and elementary-looking."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic derivatives, Tauberian arguments, summatory cancellation, and explicit formulas provide multiple interfaces translating zero location into arithmetic error or positivity statements.",
+            "limit": "The criteria have different hypotheses and levels of quantitative strength; this synthesis does not make them interchangeable proofs.",
+            "parent_local_unit_ids": [
+              "aim2004_u17_pnt_as_boundary_nonvanishing",
+              "aim2004_u19_zero_free_regions_prime_error",
+              "aim2004_u01_equivalence_map",
+              "aim2004_u21_mangoldt_mobius_cancellation",
+              "aim2004_u26_weil_bombieri_positivity_duality"
+            ],
+            "title": "Prime-zero translation pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1046,
+              "line_start": 1046,
+              "reason": "Blank transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u21_mangoldt_mobius_cancellation",
+        "spontaneous": {
+          "unit_id": "aim2004_u21_mangoldt_mobius_cancellation",
+          "spontaneous_reading": "RH is recoded as square-root-scale cancellation in two complementary arithmetic sums: deviation of prime-power weight from its main term and cancellation of Möbius signs."
+        },
+        "directed": {
+          "unit_id": "aim2004_u21_mangoldt_mobius_cancellation",
+          "source_grounded_mathematics": "The span defines Λ and ψ(x)=Σ_{n≤x}Λ(n), then lists RH-equivalent ψ error bounds, including ε-dependent, logarithmic, and explicit finite-range forms; it defines μ and M(x)=Σ_{n≤x}μ(n) and lists two RH-equivalent growth bounds for M.",
+          "conceptual_reading": "The two observables expose different faces of multiplicative structure: Λ concentrates on prime powers, whereas μ records squarefree sign cancellation, yet each packages zero-location information into a real-variable error scale.",
+          "representation_or_bridge": "Dirichlet-series logarithmic differentiation links ζ to Λ, while reciprocal-series coefficients link 1/ζ to μ; summation turns both analytic relations into cancellation criteria.",
+          "boundary_or_failure": "These are equivalence statements, not independent proofs of the bounds, and the finite explicit ψ inequality has a different quantifier and strength profile from the asymptotic formulations.",
+          "uncertainty": "The definitions and qualitative bounds are legible, but epsilon and Vinogradov glyphs are nonstandard in the OCR and exact constants should be scan-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u21_mangoldt_mobius_cancellation",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines Lambda and psi and lists three RH-equivalent square-root-scale error bounds, including an explicit finite-range inequality.",
+          "It separately defines mu and M and lists two RH-equivalent growth bounds.",
+          "The candidate correctly distinguishes prime-power concentration from squarefree sign cancellation and warns that these are equivalent criteria rather than proved estimates."
+        ],
+        "inference": [
+          "The two real-variable summatory observables expose complementary forms of cancellation while encoding the same zero-location hypothesis."
+        ],
+        "unsupported_or_imported": [
+          "The bridge through logarithmic differentiation of zeta and Dirichlet coefficients of 1/zeta is not stated in this unit or its bounded context; it is imported standard theory."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Epsilon and Vinogradov glyphs are nonstandard, and exact constants in the explicit psi inequality need scan checking."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the unstated zeta'/zeta and 1/zeta derivations; describe the bridge only as the source's recoding of RH into the displayed summatory cancellation bounds."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The primorial definition and permutation-order notation are necessary local setup.",
+      "line_end": 1114,
+      "line_start": 1089,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive but readable; inverse logarithmic-integral radicals at 1109-1113 should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The span supplies two structurally different finite/combinatorial observables whose asymptotic inequalities are equivalent to RH.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Totient primorials and maximal permutation order encode RH through extremal growth",
+      "unit_artifact_relpath": "depth/units/aim2004_u23_extremal_arithmetic_combinatorial_criteria.txt",
+      "unit_bytes": 1265,
+      "unit_id": "aim2004_u23_extremal_arithmetic_combinatorial_criteria",
+      "unit_sha256": "205a192d5437957732149eaf4380d8262f8012bcd971fd701aed51f033c8a4de",
+      "unit_type": "cross-domain-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u23_extremal_arithmetic_combinatorial_criteria.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1081,
+          "line_end": 1088,
+          "text": "                                                  j=1\n                                                      j\n\nBy definition,\n                                      γ = lim Hn − log n,\n                                            n→∞\nso Lagarias’ and Robin’s inequalities are the same to leading order.\n\n",
+          "sha256": "3a1d66140f6de66fa5917a788dae91ac8fb4599e5313e67e530e13480ba36979"
+        },
+        "after": {
+          "line_start": 1115,
+          "line_end": 1122,
+          "text": "C.3 Equivalences involving the Farey series\n     Equidistribution of Farey sequence: Let PNrv be the elements of the Farey sequence of\norder N , v = 1, 2, . . . Φ(N ) where Φ(N ) = n=1 φ(n). Let δv = rv − v/Φ(N ). Then RH if\n\n<!-- source-page: 22 -->\n\n22\n\n",
+          "sha256": "5709314a1f55cae2047470e145e80c668c32dae7964f28a10a9e1726e8053144"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C introduction through Farey and cyclotomic criteria",
+            "line_end": 1147,
+            "line_start": 954,
+            "mathematical_role": "Maps RH to prime errors, cancellation of arithmetic functions, extremal inequalities, Farey discrepancy, and cyclotomic height."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1114,
+          "line_start": 1089,
+          "title": "Totient primorials and maximal permutation order encode RH through extremal growth",
+          "unit_id": "aim2004_u23_extremal_arithmetic_combinatorial_criteria",
+          "unit_type": "cross-domain-equivalence",
+          "why_material": "The span supplies two structurally different finite/combinatorial observables whose asymptotic inequalities are equivalent to RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The primorial definition and permutation-order notation are necessary local setup.",
+          "representation_dependency": "Formula-sensitive but readable; inverse logarithmic-integral radicals at 1109-1113 should be checked against the scan.",
+          "unit_id": "aim2004_u23_extremal_arithmetic_combinatorial_criteria"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1087,
+            "line_start": 1047,
+            "title": "Robin and Lagarias turn RH into universal divisor-sum thresholds",
+            "unit_id": "aim2004_u22_divisor_sum_threshold_equivalences",
+            "unit_type": "extremal-inequality",
+            "why_material": "The criteria compare the irregular divisor sum with asymptotically sharp smooth envelopes and show how equivalent formulations can be made finite-domain and elementary-looking."
+          },
+          {
+            "line_end": 1134,
+            "line_start": 1115,
+            "title": "Farey discrepancy norms translate RH into quantitative equidistribution",
+            "unit_id": "aim2004_u24_farey_discrepancy_equivalence",
+            "unit_type": "equidistribution-criterion",
+            "why_material": "The unit shows that both quadratic and absolute aggregate deviations of ordered Farey fractions have RH-equivalent rates."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1088,
+              "line_start": 1088,
+              "reason": "Blank transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u23_extremal_arithmetic_combinatorial_criteria",
+        "spontaneous": {
+          "unit_id": "aim2004_u23_extremal_arithmetic_combinatorial_criteria",
+          "spontaneous_reading": "Extremizing over primorials or permutation orders concentrates prime-factor data into sparse finite observables whose threshold growth is stated to detect RH."
+        },
+        "directed": {
+          "unit_id": "aim2004_u23_extremal_arithmetic_combinatorial_criteria",
+          "source_grounded_mathematics": "The span defines Euler's φ and primorial N_k and gives Nicolas's RH-equivalent inequalities for N_k/φ(N_k); it then defines the maximal permutation order g(n), the number ω of distinct prime divisors, and states two eventual RH-equivalent bounds involving the inverse logarithmic integral.",
+          "conceptual_reading": "Primorials maximize exposure to small primes, while maximal permutation order converts partitions into least-common-multiple structure; both are extremal compressors of prime distribution.",
+          "representation_or_bridge": "Products of the first primes bridge RH to totient ratios, and cycle decompositions bridge permutation order to arithmetic optimization over prime powers.",
+          "boundary_or_failure": "The criteria assert global or eventual inequalities but do not explain a tractable way to verify all required cases, and the two displayed totient quantifiers must not be conflated.",
+          "uncertainty": "The extremal mechanisms are prose-clear; radicals and inverse-logarithmic-integral notation in the permutation bounds are OCR-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u23_extremal_arithmetic_combinatorial_criteria",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines phi, primorial N_k, maximal permutation order g(n), and omega, then states RH-equivalent universal/eventual inequalities for the two observables.",
+          "The candidate correctly emphasizes the distinct quantifiers in the two totient criteria and the eventual quantifier in the permutation bounds.",
+          "Using sparse extremal observables to encode prime distribution is a reasonable synthesis of primorials and maximal order."
+        ],
+        "inference": [
+          "Primorials concentrate the first primes and thereby provide an extremal arithmetic test."
+        ],
+        "unsupported_or_imported": [
+          "The claim that maximal permutation order 'converts partitions into least-common-multiple structure' and the reference to cycle decompositions are not stated in the frozen span; both are imported background.",
+          "Calling both observables 'compressors' is acceptable only after removing the unstated mechanism for g(n)."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic 'extremal compressor' label risks masking that the source gives no derivation of the permutation-order criterion."
+        ],
+        "context_or_ocr_risk": [
+          "Square roots and inverse-logarithmic-integral notation in both permutation inequalities are damaged and require scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the cycle-decomposition, partition, and least-common-multiple explanation; limit the permutation side to the stated maximal-order observable and its eventual inequalities."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The empty Mikolas heading is not included.",
+      "line_end": 1147,
+      "line_start": 1138,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The product and integral are recoverable with minor subscript inconsistencies; exact N/n notation should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Amoroso's criterion links growth of an averaged positive logarithmic height of a cyclotomic product to a specified zero-free region.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cyclotomic-product height bounds encode zeta zero-free half-planes",
+      "unit_artifact_relpath": "depth/units/aim2004_u25_cyclotomic_height_zero_free_bridge.txt",
+      "unit_bytes": 593,
+      "unit_id": "aim2004_u25_cyclotomic_height_zero_free_bridge",
+      "unit_sha256": "9c1f7c0a12b101e716a250e8a8d4a3559566a1c0a58d1b13046c6cace7e710da",
+      "unit_type": "representation-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u25_cyclotomic_height_zero_free_bridge.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1130,
+          "line_end": 1137,
+          "text": "                                              X\n                                                         |δv | ¿ N 1/2+² .\n                                               v=1\n                                        5\n        Here is a good bibliography on this subject.\n\nC.3.a Mikolas functions.\n\n",
+          "sha256": "bdafe285929c3e6a0fbd7d1d4351004ed48762b435fe3b589208829178c7503f"
+        },
+        "after": {
+          "line_start": 1148,
+          "line_end": 1155,
+          "text": "C.4 Weil’s positivity criterion\n      André Weil [MR 14,727e] proved the following explicit formula (see also A. P. Guinand\n[MR 10,104g] which specifically illustrates the dependence between primes and zeros. Let\nh be an even function which is holomorphic in the strip |=t| ≤ 1/2 + δ and satisfying\nh(t) = O((1 + |t|)−2−δ ) for some δ > 0, and let\n                                            Z ∞\n                                          1\n                                 g(u) =          h(r)e−iur dr.\n",
+          "sha256": "19dd49fec711793edf5ed901acd00a19bc7fe0e6427497308cbfd861ae4607c5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C introduction through Farey and cyclotomic criteria",
+            "line_end": 1147,
+            "line_start": 954,
+            "mathematical_role": "Maps RH to prime errors, cancellation of arithmetic functions, extremal inequalities, Farey discrepancy, and cyclotomic height."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1147,
+          "line_start": 1138,
+          "title": "Cyclotomic-product height bounds encode zeta zero-free half-planes",
+          "unit_id": "aim2004_u25_cyclotomic_height_zero_free_bridge",
+          "unit_type": "representation-bridge",
+          "why_material": "Amoroso's criterion links growth of an averaged positive logarithmic height of a cyclotomic product to a specified zero-free region."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The empty Mikolas heading is not included.",
+          "representation_dependency": "The product and integral are recoverable with minor subscript inconsistencies; exact N/n notation should be scan-checked.",
+          "unit_id": "aim2004_u25_cyclotomic_height_zero_free_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1134,
+            "line_start": 1115,
+            "title": "Farey discrepancy norms translate RH into quantitative equidistribution",
+            "unit_id": "aim2004_u24_farey_discrepancy_equivalence",
+            "unit_type": "equidistribution-criterion",
+            "why_material": "The unit shows that both quadratic and absolute aggregate deviations of ordered Farey fractions have RH-equivalent rates."
+          },
+          {
+            "line_end": 1182,
+            "line_start": 1148,
+            "title": "The explicit formula converts prime-zero duality into a positivity criterion",
+            "unit_id": "aim2004_u26_weil_bombieri_positivity_duality",
+            "unit_type": "explicit-formula-and-positivity",
+            "why_material": "Weil's transform formula displays both prime and zero sides, while Bombieri's refinement reformulates RH as positivity over a test-function class."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u25_cyclotomic_height_zero_free_bridge",
+        "spontaneous": {
+          "unit_id": "aim2004_u25_cyclotomic_height_zero_free_bridge",
+          "spontaneous_reading": "An averaged positive logarithmic size of a product of cyclotomic polynomials serves as a scalar growth probe for how far a zeta zero-free half-plane extends."
+        },
+        "directed": {
+          "unit_id": "aim2004_u25_cyclotomic_height_zero_free_bridge",
+          "source_grounded_mathematics": "The source forms F_N from cyclotomic polynomials, defines a circle average of log⁺|F_N(e^{iθ})|, and states that a bound of order N^{λ+ε} is equivalent to zeta having no zeros in Re z≥λ+ε.",
+          "conceptual_reading": "Cyclotomic factors package roots of unity across orders, and the logarithmic height compresses their collective boundary growth into a quantity sensitive to zeta zero exclusion.",
+          "representation_or_bridge": "The finite polynomial product and its unit-circle mean bridge algebraic root-of-unity data to an analytic zero-free region for ζ.",
+          "boundary_or_failure": "A λ-dependent zero-free criterion is not automatically RH unless the relevant λ is fixed at the critical threshold with the stated quantifiers, and the span gives no proof of the equivalence.",
+          "uncertainty": "The intended bridge is clear, but product subscripts, F_N/F_n, integration notation, and exponents are OCR-inconsistent and need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u25_cyclotomic_height_zero_free_bridge",
+        "critic_decision": "revise",
+        "supported": [
+          "The span forms F_N from cyclotomic polynomials, defines a unit-circle average of log-positive magnitude, and states equivalence between its growth bound and a zeta zero-free region.",
+          "The candidate appropriately refuses to identify the general lambda-dependent statement with RH without fixing the critical threshold and quantifiers.",
+          "It flags all visible N/n, F_N/F_n, integration, and exponent inconsistencies."
+        ],
+        "inference": [
+          "The averaged logarithmic magnitude is a scalar growth probe for the stated zero-free half-plane."
+        ],
+        "unsupported_or_imported": [
+          "The claim that cyclotomic factors 'package roots of unity across orders' is standard background but the span does not define cyclotomic polynomials or state this mechanism.",
+          "The source's opening calls the result an RH equivalent while the displayed lambda/epsilon statement is under-specified; the candidate should not smooth over that unresolved quantifier connection."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The very short span has inconsistent subscripts and a crowded integral, so exact formula-level interpretation is unsafe without scan verification."
+        ],
+        "missed_mechanism": [
+          "The relation between the general lambda-dependent zero-free assertion and the opening RH-equivalence label is not supplied in the span."
+        ],
+        "revision_instructions": [
+          "Remove the imported roots-of-unity explanation and state the bridge only in terms of the defined cyclotomic product and circle-average height.",
+          "Explicitly preserve the missing lambda/epsilon quantifier needed to specialize the displayed claim to RH."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Line 1201 completes the displayed normalization of xi and is included despite the page break.",
+      "line_end": 1201,
+      "line_start": 1188,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent with a literal 'rho' OCR substitution at 1191; exact normalization should be verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Li's criterion provides both a zero-sum representation and a local derivative representation, bridging global zero data to a sequence of scalar inequalities.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH is equivalent to positivity of coefficients derived from all zeros or derivatives of xi",
+      "unit_artifact_relpath": "depth/units/aim2004_u27_li_coefficient_positivity.txt",
+      "unit_bytes": 672,
+      "unit_id": "aim2004_u27_li_coefficient_positivity",
+      "unit_sha256": "67d605be437e47622ac3a91f27ddf5000612ba4d0a85bdae5684423cd78fc9eb",
+      "unit_type": "coefficient-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u27_li_coefficient_positivity.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1180,
+          "line_end": 1187,
+          "text": "\n     5http://www.math.jussieu.fr/∼miw/telecom/biblio-Amoroso.html\n     76page 22, Bombieri’s refinement\n\n<!-- source-page: 23 -->\n\n23\n\n",
+          "sha256": "879f1276910dcd5f76f9f90790128c99dc772eec2c7840833fd97e72d6a353c8"
+        },
+        "after": {
+          "line_start": 1202,
+          "line_end": 1209,
+          "text": "C.5 Equivalences involving function-theoretic properties of ζ\nC.5.a Speiser’s criterion. A. Speiser (Math Annahlen 110 (1934) 514-521) proved that\nthe Riemann Hypothesis is equivalent to the non-vanishing of the derivative ζ 0 (s) in the\nleft-half of the critical strip 0 < σ < 1/2. Levinson and Montgomery [MR 54 #5135] gave\nan alternative, quantitative version of this result which led to Levinson’s [MR 58 #27837]\ndiscovery of his method for counting zeros on the critical line. He then proceeded to prove\nthat at least 1/3 of the zeros of ζ(s) are on the critical line.\n\n",
+          "sha256": "297fa20fca4d051f94bdb3c8c183f5481dd70878b74146ad62b053ee45555949"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.4-C.5: positivity and function theory",
+            "line_end": 1222,
+            "line_start": 1148,
+            "mathematical_role": "Uses the explicit formula, coefficient positivity, derivative zero location, and logarithmic-derivative positivity to re-express RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1201,
+          "line_start": 1188,
+          "title": "RH is equivalent to positivity of coefficients derived from all zeros or derivatives of xi",
+          "unit_id": "aim2004_u27_li_coefficient_positivity",
+          "unit_type": "coefficient-criterion",
+          "why_material": "Li's criterion provides both a zero-sum representation and a local derivative representation, bridging global zero data to a sequence of scalar inequalities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Line 1201 completes the displayed normalization of xi and is included despite the page break.",
+          "representation_dependency": "Formula-dependent with a literal 'rho' OCR substitution at 1191; exact normalization should be verified.",
+          "unit_id": "aim2004_u27_li_coefficient_positivity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1182,
+            "line_start": 1148,
+            "title": "The explicit formula converts prime-zero duality into a positivity criterion",
+            "unit_id": "aim2004_u26_weil_bombieri_positivity_duality",
+            "unit_type": "explicit-formula-and-positivity",
+            "why_material": "Weil's transform formula displays both prime and zero sides, while Bombieri's refinement reformulates RH as positivity over a test-function class."
+          },
+          {
+            "line_end": 1209,
+            "line_start": 1202,
+            "title": "Zeros of zeta's derivative on the left half-strip characterize RH",
+            "unit_id": "aim2004_u28_speiser_derivative_criterion",
+            "unit_type": "critical-point-reframing",
+            "why_material": "The criterion moves the question from zeros of zeta to critical points of zeta and notes its quantitative role in methods for counting critical-line zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A wide family of RH equivalences replaces direct zero location by positivity, density, approximation error, or determinant tests over increasingly rich witnesses.",
+            "limit": "Equivalence alone does not identify a tractable witness or algorithm, and several displayed formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "aim2004_u26_weil_bombieri_positivity_duality",
+              "aim2004_u27_li_coefficient_positivity",
+              "aim2004_u29_log_derivative_halfplane_positivity",
+              "aim2004_u30_beurling_nyman_density",
+              "aim2004_u31_dirichlet_polynomial_mollification",
+              "aim2004_u34_polya_fourier_positivity",
+              "aim2004_u36_grommer_hankel_determinants"
+            ],
+            "title": "Positivity, approximation, and matrix certificates"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u27_li_coefficient_positivity",
+        "spontaneous": {
+          "unit_id": "aim2004_u27_li_coefficient_positivity",
+          "spontaneous_reading": "The useful compression is that the entire zero configuration is pushed into scalar coefficients λ_n, and the same coefficients can be read locally from derivatives of s^(n-1) log ξ(s) at s=1. Positivity of every coefficient then becomes a sequence of certificates for RH."
+        },
+        "directed": {
+          "unit_id": "aim2004_u27_li_coefficient_positivity",
+          "source_grounded_mathematics": "The source states Li's equivalence: RH holds exactly when λ_n ≥ 0 for every positive integer n. It displays λ_n both as a sum over zeros ρ and as a normalized nth derivative at s=1, together with ξ(s)=1/2·s(s−1)Γ(s/2)ζ(s).",
+          "conceptual_reading": "This reframes a geometric condition on all nontrivial zeros as coefficientwise positivity. The zero-sum form retains global spectral data, while the derivative form packages the same data into the local jet of log ξ at a distinguished point.",
+          "representation_or_bridge": "The Li coefficients are the bridge object: zero multiset → scalar sequence, and logarithmic ξ → derivatives at s=1. The dual representation creates two possible routes to the same inequalities.",
+          "boundary_or_failure": "The criterion does not make the infinite family of inequalities easy to establish, and finite positivity checks cannot certify RH. It also leaves convergence and multiplicity conventions for the zero sum unstated in this span.",
+          "uncertainty": "High for the exact displayed formulas: ρ is OCR-rendered as the word 'rho', and derivative placement and ξ normalization should be checked against the scan. Low for the stated equivalence and positivity mechanism."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u27_li_coefficient_positivity",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states RH if and only if lambda_n is nonnegative for every positive integer n.",
+          "It gives both a sum over rho and a normalized derivative of s^(n-1) log xi(s) at s=1, so the scalar-sequence and dual-representation readings are grounded.",
+          "The candidate correctly preserves the infinite verification burden and flags missing convergence and multiplicity conventions."
+        ],
+        "inference": [
+          "Describing the derivative formula as a local jet and the coefficients as a compression of zero data is a reasonable conceptual inference.",
+          "A bounded collection of verified inequalities cannot establish the source's universally quantified criterion."
+        ],
+        "unsupported_or_imported": [
+          "Calling the zeros 'spectral data' imports a spectral interpretation not supplied by this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The analysis performs a genuine bridge operation rather than merely restating positivity, but the word 'spectral' gives the bridge an unjustified extra interpretation."
+        ],
+        "context_or_ocr_risk": [
+          "The literal word 'rho' replaces the zero symbol, and superscripts, derivative placement, and xi normalization remain formula-sensitive even though the overall two-form criterion is legible."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'global spectral data' with 'global zero data' and otherwise retain the bridge, infinite-family boundary, and explicit formula-verification warning."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The survey framing at 1223-1228 identifies completeness as the common functional-analytic move.",
+      "line_end": 1248,
+      "line_start": 1223,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but recoverable; 'nozeros' and line wrapping are benign, while the coefficient constraint should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The criterion turns analytic zero exclusion into approximation/completeness of an explicitly constrained function family and records the p-parametrized strengthening.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-free half-planes become density of fractional-part spans in Lp",
+      "unit_artifact_relpath": "depth/units/aim2004_u30_beurling_nyman_density.txt",
+      "unit_bytes": 1315,
+      "unit_id": "aim2004_u30_beurling_nyman_density",
+      "unit_sha256": "46ba2024ede45c41a662c608f9cea730bedbcca8220966c30c5074b508ba7821",
+      "unit_type": "functional-space-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u30_beurling_nyman_density.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1215,
+          "line_end": 1222,
+          "text": "\nC.5.c An inequality for the logarithmic derivative of xi. The Riemann Hypothesis\nis true if and only if\n                                            ξ 0 (s)\n                                          <         >0\n                                             ξ(s)\nfor <s > 1/2 (see Hinkkanen [MR 98d:30047 ]).\n      See also Lagarias’ paper (to appear in Acta Arithmetica) at www.research.att.com/∼jcl/doc/positivity\n",
+          "sha256": "c261225eb000866ad2de894be46826564fc7ef7f3483cb3bb415cc35130c3688"
+        },
+        "after": {
+          "line_start": 1249,
+          "line_end": 1256,
+          "text": "\nC.6.a.i A mollification problem. Baez-Duarte [arXiv:math.NT/0202141] has recently proven\nthat the Riemann Hypothesis is equivalent to the assertion that\n                             Z ∞\n                                                                    dt\n                        inf      |1 − AN (1/2 + it)ζ(1/2 + it|2 ) 1\n                       AN (s) −∞\n                                                                  4\n",
+          "sha256": "03c97fda7e93ebb31f2362f89c4d3d6da075658e06516408fe1c34e7a9581bc4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1248,
+          "line_start": 1223,
+          "title": "Zero-free half-planes become density of fractional-part spans in Lp",
+          "unit_id": "aim2004_u30_beurling_nyman_density",
+          "unit_type": "functional-space-equivalence",
+          "why_material": "The criterion turns analytic zero exclusion into approximation/completeness of an explicitly constrained function family and records the p-parametrized strengthening."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The survey framing at 1223-1228 identifies completeness as the common functional-analytic move.",
+          "representation_dependency": "Formula-dependent but recoverable; 'nozeros' and line wrapping are benign, while the coefficient constraint should be scan-checked.",
+          "unit_id": "aim2004_u30_beurling_nyman_density"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1222,
+            "line_start": 1216,
+            "title": "Positivity of xi's logarithmic derivative on a half-plane characterizes RH",
+            "unit_id": "aim2004_u29_log_derivative_halfplane_positivity",
+            "unit_type": "analytic-positivity",
+            "why_material": "This is a compact half-plane positivity reformulation that complements coefficient and test-function positivity criteria."
+          },
+          {
+            "line_end": 1266,
+            "line_start": 1250,
+            "title": "Dirichlet polynomials approximating the reciprocal of zeta characterize RH",
+            "unit_id": "aim2004_u31_dirichlet_polynomial_mollification",
+            "unit_type": "approximation-criterion",
+            "why_material": "The weighted L2 infimum expresses RH as the existence of increasingly effective finite mollifiers and records the direction previously known from Nyman-Beurling."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A wide family of RH equivalences replaces direct zero location by positivity, density, approximation error, or determinant tests over increasingly rich witnesses.",
+            "limit": "Equivalence alone does not identify a tractable witness or algorithm, and several displayed formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "aim2004_u26_weil_bombieri_positivity_duality",
+              "aim2004_u27_li_coefficient_positivity",
+              "aim2004_u29_log_derivative_halfplane_positivity",
+              "aim2004_u30_beurling_nyman_density",
+              "aim2004_u31_dirichlet_polynomial_mollification",
+              "aim2004_u34_polya_fourier_positivity",
+              "aim2004_u36_grommer_hankel_determinants"
+            ],
+            "title": "Positivity, approximation, and matrix certificates"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1215,
+              "line_start": 1210,
+              "reason": "Volchkov logarithmic-integral equality is too garbled to recover its integrand and constants safely."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u30_beurling_nyman_density",
+        "spontaneous": {
+          "unit_id": "aim2004_u30_beurling_nyman_density",
+          "spontaneous_reading": "The central move is to replace a zero-free region by whether a constrained span of fractional-part functions is dense in L^p. Analytic nonvanishing becomes the ability of a concrete function family to approximate arbitrary targets, or just the characteristic function."
+        },
+        "directed": {
+          "unit_id": "aim2004_u30_beurling_nyman_density",
+          "source_grounded_mathematics": "The source defines N(0,1) using finite sums f(t)=Σ c_k ρ(θ_k/t), with θ_k∈(0,1) and the displayed constraint Σ c_k=0. It states RH is equivalent to density of N(0,1) in L²(0,1). More generally, for 1<p<∞ it states equivalence among ζ having no zeros in σ>1/p, density in L^p(0,1), and membership of χ_(0,1) in the closure.",
+          "conceptual_reading": "The function-space representation replaces exact zero positions by completeness. The p-parameter tracks how a stronger zero-free half-plane corresponds to a different ambient norm, and the characteristic-function formulation compresses full density to approximation of one distinguished target.",
+          "representation_or_bridge": "Fractional-part functions ρ(θ/t), their constrained finite span N(0,1), L^p closure, and χ_(0,1) are the bridge objects between ζ's analytic region and approximation theory.",
+          "boundary_or_failure": "Density is existential and the span supplies no explicit approximating sequence or convergence rate. The criterion does not show that verifying closure is simpler than controlling zeros.",
+          "uncertainty": "Moderate for exact formula details: line wrapping is benign, but the extracted coefficient constraint and fractional-part typography should be checked against the scan. The density and zero-free equivalences are clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u30_beurling_nyman_density",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states RH equivalently as density of N(0,1) in L2(0,1).",
+          "For 1<p<infinity it explicitly equates a zero-free half-plane, Lp density, and membership of the characteristic function in the closure.",
+          "The candidate correctly identifies constrained fractional-part spans, closure, and the distinguished-target compression as the bridge."
+        ],
+        "inference": [
+          "The p-parameter organizes the relation between the zero-free region and the ambient norm.",
+          "Density is existential and supplies neither an explicit approximating sequence nor a rate in this span."
+        ],
+        "unsupported_or_imported": [
+          "The directed record states sum c_k=0 as the exact coefficient constraint even though the assignment itself marks that formula for scan checking; a potentially defective OCR rendering should not be promoted to exact training content."
+        ],
+        "paraphrase_or_style_risk": [
+          "The approximation/completeness interpretation is substantive and not a generic representation slogan."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed constraint is the material formula risk; line wrapping and the fractional-part glyph are secondary risks."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Change the exact-constraint sentence to say that the extraction renders the constraint as sum c_k=0 and withhold the literal constraint pending scan verification; retain the density, zero-free-region, Lp, and characteristic-function mechanisms."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The ancillary eigenvalue estimates show that determinant and spectrum offer distinct observables.",
+      "line_end": 1353,
+      "line_start": 1339,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several eigenvalue asymptotics are visibly corrupted; the matrix definition and RH-equivalent determinant exponent are recoverable but exact claims need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Redheffer construction turns divisibility into a finite 0-1 matrix whose determinant bound is RH-equivalent, alongside unconditional and conditional spectral information.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A divisibility matrix encodes RH in determinant growth",
+      "unit_artifact_relpath": "depth/units/aim2004_u37_redheffer_matrix_determinant.txt",
+      "unit_bytes": 1145,
+      "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+      "unit_sha256": "ba6d752b590e97dad3398050d996ec84769df2a870f39d86aa56ff3aeac2dcee",
+      "unit_type": "finite-matrix-encoding",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u37_redheffer_matrix_determinant.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1331,
+          "line_end": 1338,
+          "text": "                                −   (t) = s1 + s2 t + s3 t2 + . . . .\n                                 Ξ\nLet Mn be the matrix whose i, j entry is si+j . J. Grommer (J. Reine Angew. Math. 144\n(1914), 114–165) proved that necessary and sufficient conditions for the truth of the Riemann\nHypothesis are that\n                                          det Mn > 0\nfor all n ≥ 1.\n      See also the paper of R. Alter [MR 36 #1399].\n",
+          "sha256": "d7e0cda1c96ede287915d6d19693079959dd6f846f33eeb9756878b75b807aac"
+        },
+        "after": {
+          "line_start": 1354,
+          "line_end": 1361,
+          "text": "C.10 Equivalences involving dynamical systems\n\n<!-- source-page: 26 -->\n\n26\n\n                     Chapter D: Attacks on the Riemann Hypothesis\n     The topics in this section are generally of the form “A implies RH,” where there is\n",
+          "sha256": "ff8daef0ae5d2f47496b32f7e8ffab6cecc71cf53f08f3f891a8dce2e3c66a16"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1353,
+          "line_start": 1339,
+          "title": "A divisibility matrix encodes RH in determinant growth",
+          "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+          "unit_type": "finite-matrix-encoding",
+          "why_material": "The Redheffer construction turns divisibility into a finite 0-1 matrix whose determinant bound is RH-equivalent, alongside unconditional and conditional spectral information."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The ancillary eigenvalue estimates show that determinant and spectrum offer distinct observables.",
+          "representation_dependency": "Several eigenvalue asymptotics are visibly corrupted; the matrix definition and RH-equivalent determinant exponent are recoverable but exact claims need scan verification.",
+          "unit_id": "aim2004_u37_redheffer_matrix_determinant"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1338,
+            "line_start": 1328,
+            "title": "Positivity of all Hankel-type determinants characterizes RH",
+            "unit_id": "aim2004_u36_grommer_hankel_determinants",
+            "unit_type": "moment-matrix-criterion",
+            "why_material": "The logarithmic derivative coefficients are assembled into matrices, converting a zero-location problem into an infinite hierarchy of determinant inequalities."
+          },
+          {
+            "line_end": 1420,
+            "line_start": 1360,
+            "title": "Zeta as a partition function with symmetry breaking at its pole",
+            "unit_id": "aim2004_u38_bost_connes_phase_transition",
+            "unit_type": "operator-algebraic-construction",
+            "why_material": "The source defines KMS equilibrium, symmetry, and spontaneous breaking, then poses and states solutions of zeta and Dedekind-zeta dynamical-system realization problems."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Heat deformation, moment matrices, and divisibility matrices recast RH as a threshold or asymptotic hierarchy that can be probed away from direct zero enumeration.",
+            "limit": "The source does not establish that these encodings simplify the underlying difficulty.",
+            "parent_local_unit_ids": [
+              "aim2004_u35_debruijn_newman_heat_deformation",
+              "aim2004_u36_grommer_hankel_determinants",
+              "aim2004_u37_redheffer_matrix_determinant"
+            ],
+            "title": "Deformation and finite-matrix encodings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+        "spontaneous": {
+          "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+          "spontaneous_reading": "Divisibility is encoded in an explicit finite 0–1 matrix, whose determinant growth carries an RH-equivalent exponent. This creates a combinatorial finite-dimensional observable, distinct from the accompanying spectral estimates."
+        },
+        "directed": {
+          "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+          "source_grounded_mathematics": "The source defines A(n) by A(i,j)=1 when j=1 or i divides j and 0 otherwise. It states RH is equivalent to det A(n)=O(n^(1/2+ε)) for every ε>0, and separately reports eigenvalue multiplicities, dominant-eigenvalue estimates, bounds on nontrivial eigenvalues, and a possible unit-disc conjecture.",
+          "conceptual_reading": "The matrix packages the divisibility poset into linear algebra. Determinant growth aggregates all eigenvalues and encodes the delicate arithmetic cancellation, whereas spectral radius and individual-eigenvalue bounds expose different, generally weaker observables.",
+          "representation_or_bridge": "The Redheffer matrix is the bridge from divisibility incidence to determinant asymptotics; its spectrum provides auxiliary diagnostics but is not interchangeable with the determinant criterion.",
+          "boundary_or_failure": "The stated eigenvalue information does not establish the RH-equivalent determinant bound, and the unit-disc remark is explicitly only a possibility. A finite matrix calculation at fixed n cannot settle the asymptotic condition.",
+          "uncertainty": "High for several spectral asymptotics, whose radicals and comparison symbols are corrupted. The matrix definition and determinant exponent are recoverable but should still be scan-verified for exact use."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly defines the 0-1 divisibility matrix A(n) and states the RH-equivalent determinant bound O(n^(1/2+epsilon)) for every epsilon>0.",
+          "It separately reports eigenvalue multiplicities and asymptotics, conditional and unconditional nontrivial-eigenvalue bounds, and a possible unit-disc statement.",
+          "The candidate correctly warns that fixed-n calculations and the listed spectral facts do not establish the asymptotic determinant criterion."
+        ],
+        "inference": [
+          "Encoding divisibility incidence in a finite matrix is a substantive combinatorial-to-linear-algebra bridge.",
+          "Determinant and individual spectral estimates are different observables, and the latter are not shown here to imply the former's RH-equivalent bound."
+        ],
+        "unsupported_or_imported": [
+          "The claim that determinant growth 'encodes the delicate arithmetic cancellation' imports a cancellation mechanism not stated or derived in this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Most of the analysis is concrete, but the arithmetic-cancellation gloss sounds explanatory without source-local support."
+        ],
+        "context_or_ocr_risk": [
+          "Radicals and comparison symbols in the ancillary eigenvalue asymptotics are corrupted; the matrix rule and determinant exponent remain recoverable, with exact-use scan checking still prudent."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the unsupported arithmetic-cancellation clause or replace it with the source-grounded statement that determinant growth is the RH-equivalent aggregate matrix observable; retain the determinant-versus-spectrum boundary."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "4c787c7e49fdf2c5453a2e5c9d55b19eb151a62d067c82b3d9950d085f2c64af"
+}

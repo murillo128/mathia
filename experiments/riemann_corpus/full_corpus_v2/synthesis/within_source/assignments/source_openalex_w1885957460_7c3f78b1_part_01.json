@@ -1,0 +1,208 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1885957460",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1885957460_7c3f78b1_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The Fourier form and a formal reordering of momentum/worldsheet integration suggest how an RH-equivalent phase sum rule might be represented by a nonlocal or holographic effective action.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w1885957460_v2_u16",
+          "full_openalex_w1885957460_v2_u17",
+          "full_openalex_w1885957460_v2_u18",
+          "full_openalex_w1885957460_v2_u19",
+          "full_openalex_w1885957460_v2_u20"
+        ],
+        "proposed_limit": "The effective Riemann string and its computable phase functional are explicitly unresolved conjectures, and the paper disclaims an RH solution.",
+        "source_id": "openalex_w1885957460",
+        "synthesis_id": "riemann_v2_within_37703746efa1926ca9933a9d",
+        "title": "Integral transforms connect amplitude phase to prospective effective actions"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Oddness of both kernel transform and dressed-amplitude phase justifies extending the integral to the real axis.",
+          "line_end": 1042,
+          "line_start": 1013,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Fourier conventions, signs, and constants are formula sensitive; the representation-change mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains why the rational kernel is unusually tractable and rewrites it via a Fourier transform, turning the criterion into a weighted moment of the transformed amplitude phase.",
+          "source_id": "openalex_w1885957460",
+          "source_normalized_sha256": "26f58d181a09cceb38e67c7fc79044b16d5c2c8216323627598039ffce35a9dc",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fourier representation of the amplitude-phase criterion",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1885957460_v2_u16.txt",
+          "unit_bytes": 2087,
+          "unit_id": "full_openalex_w1885957460_v2_u16",
+          "unit_sha256": "e36bb15b94dea85e69bd390b8c0fb94bf730135b4604faeac407761a24f3b998",
+          "unit_type": "integral transform",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1885957460_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The transform trades a special rational kernel for exponential modes natural to scattering, exposing the criterion as a moment constraint in the conjugate variable.",
+            "nonparaphrase_operation": "A Fourier transform bridges the dressed Veneziano amplitude's momentum-space phase to a real-space weighted transform while preserving the scalar criterion.",
+            "quality_reason": "The span Fourier-resolves the rational Volchkov kernel as ix exp(-|x|/2), substitutes it into the amplitude criterion, and uses oddness to extend over the real axis. The candidate accurately presents the result as an equivalent transform rather than a new proof mechanism.",
+            "source_support": "The kernel -2T/(T²+1/4)² is written as a Fourier integral of ix exp(-|x|/2). Substitution into the Volchkov–Veneziano criterion yields an exponential identity involving the x-weighted Fourier transform of arg Â(T); oddness of both functions permits integration over the full real axis.",
+            "speculation_status": "Few kernels permit the preceding digamma and infinite-sum evaluations exactly; the transform is an equivalent reformulation, not a new proof mechanism. Fourier signs, normalization, and phase hats are extraction-sensitive, though the representation change is clear. Interpreting the transformed identity as a weighted moment constraint in the conjugate variable is directly supported by equation (3.41). Fourier sign, normalization, and amplitude-hat extraction are fragile but explicitly qualified."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The analogy to Friedel-type phase-shift sum rules is motivational and does not establish a physical realization.",
+          "line_end": 1068,
+          "line_start": 1045,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant with low representation dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the central representational distinction: the usual string spectrum reflects trivial zeros, whereas the scattering phase supports the RH-equivalent sum rule.",
+          "source_id": "openalex_w1885957460",
+          "source_normalized_sha256": "26f58d181a09cceb38e67c7fc79044b16d5c2c8216323627598039ffce35a9dc",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Spectrum sees trivial zeros while phase carries the criterion",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1885957460_v2_u17.txt",
+          "unit_bytes": 1673,
+          "unit_id": "full_openalex_w1885957460_v2_u17",
+          "unit_sha256": "36c8f01d8d2d7a4be88848ec1678e996458bc506e4b79bd5719c0d84d7582b7b",
+          "unit_type": "physical interpretation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1885957460_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Choosing which observable to read is decisive: spectrum and phase are not interchangeable summaries of the amplitude and preserve different arithmetic information.",
+            "nonparaphrase_operation": "The scattering phase provides the bridge from string amplitude to an RH-equivalent integral, with phase-shift sum rules offered as physical analogy.",
+            "quality_reason": "The span explicitly contrasts the Veneziano spectrum's trivial-zero information with the amplitude phase entering the Volchkov–Veneziano criterion. It labels the phase-shift comparison as reminiscent and acknowledges arbitrary complex momenta as a source of formality.",
+            "source_support": "The paper contrasts the ordinary Veneziano spectrum, associated through Gamma structure with trivial zeta zeros, with the amplitude argument entering the Volchkov–Veneziano critical-line integral criterion.",
+            "speculation_status": "The Friedel-type analogy is motivational, and arbitrary complex momenta make the proposed physical interpretation formal rather than a realized Hilbert–Pólya system. The passage is prose-dominant; uncertainty concerns physical interpretation, not extraction. The claim that spectrum and phase preserve different arithmetic information is the central representational distinction stated by the authors."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The reversed-order 'Riemann string' is a formal proposal; the authors flag phase extraction from the generating functional as the delicate unresolved step.",
+          "line_end": 1149,
+          "line_start": 1069,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Path-integral displays are extraction-sensitive; prose clearly specifies the sequence and proposed reordering.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Recasts the criterion as worldsheet integration followed by phase extraction and momentum integration, then reverses the integration order to motivate an effective nonlocal action and a possible holographic phase computation.",
+          "source_id": "openalex_w1885957460",
+          "source_normalized_sha256": "26f58d181a09cceb38e67c7fc79044b16d5c2c8216323627598039ffce35a9dc",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integrating momenta first suggests a nonlocal effective worldsheet theory",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1885957460_v2_u18.txt",
+          "unit_bytes": 5536,
+          "unit_id": "full_openalex_w1885957460_v2_u18",
+          "unit_sha256": "850a00145546edbe213fb074b773a938a34e215cd8d721f7b62550430e8f858e",
+          "unit_type": "operation reordering construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1885957460_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Operation reordering can synthesize an effective theory in which an external criterion becomes internal dynamics, provided noncommuting nonlinear steps—especially taking arg—are controlled.",
+            "nonparaphrase_operation": "Vertex-operator path integrals, momentum integration, an effective nonlocal action, and a possible holographic action form the proposed bridge.",
+            "quality_reason": "The span gives the ordinary sequence of worldsheet integration, argument extraction, and Volchkov-weighted momentum integration, then proposes performing momentum integration first. It explicitly describes the resulting nonlocal worldsheet action as effective and the generating-functional phase as the delicate unresolved step.",
+            "source_support": "The ordinary procedure evaluates the Polyakov path integral with four tachyon vertex operators, takes the Veneziano amplitude's argument, then integrates it over momentum with the Volchkov measure. The proposed reverse order first performs the momentum integral, formally leaving a nonlocal interacting two-dimensional worldsheet action; a holographic generating functional is suggested for its phase.",
+            "speculation_status": "The reordering is formal; extracting the argument of the generating functional is explicitly the delicate unresolved step, so no Riemann-string construction is established. Path-integral formulas are extraction-sensitive, while the procedural sequence and its caveat are explicit in prose. Framing arg as a nonlinear obstruction to routine operation reordering is a justified conceptual interpretation of the authors' caveat. The path-integral displays are extraction-sensitive, but the procedural ordering is clear in prose."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Do not promote these research questions to established mechanisms or evidence for RH.",
+          "line_end": 1188,
+          "line_start": 1150,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The candidate Beta-to-xi quotient analogy is formula dependent; surrounding limitations are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proposes replacing Gamma/Beta amplitude structure by a xi analogue and identifies concrete speculative routes—holography, p-adic rewriting, and evaluation at non-trivial zeros—while marking them as conjectural.",
+          "source_id": "openalex_w1885957460",
+          "source_normalized_sha256": "26f58d181a09cceb38e67c7fc79044b16d5c2c8216323627598039ffce35a9dc",
+          "source_page_markers_inside_unit": [
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Candidate Riemann-string amplitude and dual Regge questions",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1885957460_v2_u19.txt",
+          "unit_bytes": 2686,
+          "unit_id": "full_openalex_w1885957460_v2_u19",
+          "unit_sha256": "c9cdfe6300b0c4e19a330b16729636bdbc6706f267b6bbf73d420f866f17c594",
+          "unit_type": "conjectural physical model",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1885957460_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The passage uses a structural substitution, not a derivation: it proposes a xi-function quotient analogous to the Beta-function Gamma quotient and asks what additional structures would be required to make that formal analogy into physics. Holographic phase rewriting, p-adic reformulation, algebraic-geometric or matrix-model techniques, and Regge behavior at momenta associated with nontrivial zeros become distinct tests of whether a putative Riemann string has a bulk action, a dual description, and a spectrum. This reframing gains a concrete research program and candidate observables, but loses the established worldsheet dynamics and analytic control enjoyed by the ordinary Veneziano amplitude. The span supplies no effective action, controlled regularization, duality, Regge trajectories, or evidence for RH; all of those remain proof or construction burdens.",
+            "nonparaphrase_operation": "Decomposes the Beta-to-xi analogy into concrete validation obligations—dynamics, phase observable, regularization, dual realization, and spectral behavior—and distinguishes the bridge's heuristic gain from the mechanisms it does not provide.",
+            "quality_reason": "Accepted as a carefully bounded speculative interpretation: it preserves the passage's concrete proposed routes and observables, applies the critic's formula-safety correction, and prevents structural analogy from being promoted to mechanism or evidence.",
+            "source_support": "The source explicitly calls the xi analogue purely conjectural, lists holographic, algebraic-geometric, matrix-model, phase-space, and p-adic directions, and asks whether evaluating ordinary Gamma/Beta amplitudes at nontrivial-zero momenta yields Regge trajectories in a dual formulation.",
+            "speculation_status": "Explicit conjecture and research questions only; neither an RH result nor evidence for a Riemann-string theory. The numerator arguments in the displayed Beta and xi quotients are OCR-unsafe and are deliberately not reconstructed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Important negative constraint for any downstream synthesis of the paper's more speculative passages.",
+          "line_end": 1196,
+          "line_start": 1189,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explicitly bounds the paper's claim to a potentially useful physical reframing and denies that it solves RH.",
+          "source_id": "openalex_w1885957460",
+          "source_normalized_sha256": "26f58d181a09cceb38e67c7fc79044b16d5c2c8216323627598039ffce35a9dc",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Physical reformulation is not an RH solution",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1885957460_v2_u20.txt",
+          "unit_bytes": 700,
+          "unit_id": "full_openalex_w1885957460_v2_u20",
+          "unit_sha256": "8f386eb158776e33b8b5004e2d20573015f17c09d4a586c8fa6d9f739964ab5a",
+          "unit_type": "scope limitation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1885957460_v2_u20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A bridge can be useful by organizing relations between fields without discharging the proof burdens of either side.",
+            "nonparaphrase_operation": "String theory is presented as connective physical mathematics linking number theory, analysis, and geometry around RH.",
+            "quality_reason": "The span expressly disclaims a solution of RH and characterizes the contribution as a physical rephrasing connecting mathematical areas. The candidate makes no new identity or proof claim and preserves this negative constraint for downstream use. The conceptual sentence is broad, but it serves the span's explicit claim-boundary function rather than substituting style for mathematical content.",
+            "source_support": "No new mathematical identity is asserted; the authors characterize their string-theoretic connection as a rephrasing of RH rather than a proof.",
+            "speculation_status": "The paper makes no claim to solve RH, so downstream synthesis must not promote its equivalences or conjectural models into a proof or construction. Prose-only and explicit; there is little extraction uncertainty. The limited claim that a cross-field bridge may organize relations without proving RH is a faithful scope reading."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c237909a3610ce91a083a1c5b4ce0f67a06d2bff18e670307a0011634217406d",
+        "dossier_sha256": "b762c32f523d5404096097d5985df38f2ad3c065ef4354dd68a9e4294261925a"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "42e9d75302a01f3a3b096dfeac33b9b70e5da15ec3a4503abaa2a7bead0f3716"
+}

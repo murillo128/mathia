@@ -1,0 +1,497 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2908969280",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2908969280_b551802a_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The same prime field is seen as a shared trunk plus subtree, one branching tree, or a forest depending on whether the interval is mesoscopic, unit scale, or macroscopic.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2908969280_v2_u03",
+          "openalex_w2908969280_v2_u06",
+          "openalex_w2908969280_v2_u11"
+        ],
+        "proposed_limit": "This is a first-order and proof-organizing model; the source warns that correlations can reappear in fluctuations and subleading terms.",
+        "source_id": "openalex_w2908969280",
+        "synthesis_id": "riemann_v2_within_b99bfd4dd83c1806ff820f32",
+        "title": "Interval length selects a genealogical representation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the conjectured subleading corrections and the discontinuity as θ approaches zero.",
+          "line_end": 310,
+          "line_start": 231,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose is stable; exact normalizations in the displayed conjectures are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Selberg variance and logarithmic sampling suggest a REM scale, while correlations refine it into a shared random-walk trunk for θ<0, one branching random walk at θ=0, and many approximately independent trees for θ>0.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The correct extreme-value model changes from a shared trunk to one tree to a forest",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u03.txt",
+          "unit_bytes": 5403,
+          "unit_id": "openalex_w2908969280_v2_u03",
+          "unit_sha256": "083d773d260c4a8f5d302170ce2e6d782d18fd07ac690d879769569a23e7f16d",
+          "unit_type": "probabilistic-model-selection",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Sample count and one-point variance determine the leading REM exponent, but correlation topology determines finer behavior. The model must therefore change when the interval crosses the correlation length.",
+            "nonparaphrase_operation": "A random walk or branching random walk represents prime-scale accumulation; a forest represents macroscopic intervals whose unit subintervals are approximately independent.",
+            "quality_reason": "The span derives the REM scale from Selberg variance and log-mesh sample count, then explicitly replaces independence by one branching walk, a forest, or a shared trunk according to θ. The analysis correctly labels subleading corrections, crossover, and shared-trunk fluctuation as conjectural rather than established laws for zeta. The tree/trunk/forest language is source-specific and carries precise θ regimes and correlation scales.",
+            "source_support": "Selberg's central limit theorem gives variance about one-half log log T, and ζ varies on a 1/log T mesh. The source compares the resulting REM heuristic with log correlations and conjectures θ-dependent subleading corrections, including a discontinuity at θ=0.",
+            "speculation_status": "Independence is false within correlation range, so REM is only a leading-order guide. The proposed subleading laws, crossover, and Gaussian trunk fluctuation are conjectural. The model selection is source-supported heuristic interpretation, not an equality in law for ζ. Saying correlation topology selects the correct extreme-value model is a faithful synthesis of the source’s regime comparison. Exact subleading normalizations are display-sensitive, but their conjectural role is unambiguous."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the covariance calculation, branching scale, grid size, and separate consequences for θ<0, θ=0, and θ>0.",
+          "line_end": 616,
+          "line_start": 476,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several prime-sum displays are damaged; the checked prose determines the covariance and branching mechanisms.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Off-axis reduction and mollification expose prime-block increments whose covariance stays high until the scale set by |h-h′|; this produces the tree, subtree, and forest representations used by the lower-bound method.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [
+            9,
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime scales generate an approximate genealogical metric for zeta",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u06.txt",
+          "unit_bytes": 8734,
+          "unit_id": "openalex_w2908969280_v2_u06",
+          "unit_sha256": "e7048e7ae04ce40b8f2cf717c44ffe1086a783f539af0d7433bea0bdc1f45112",
+          "unit_type": "multiscale-correlation-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Frequency scale becomes ancestry: low-frequency prime blocks cannot distinguish nearby h values, while higher frequencies decorrelate them. This exposes a tree, subtree, or forest according to θ.",
+            "nonparaphrase_operation": "The prime polynomial bridges ζ to a log-correlated field, and its block decomposition bridges analytic covariance to branching-random-walk geometry.",
+            "quality_reason": "The source reduces off-axis zeta to a prime polynomial, computes its covariance, defines equal-variance prime blocks, and explicitly explains branching scales for θ<0, θ=0, and θ>0. The analysis says approximately Gaussian and log-correlated and does not claim exact process equality or independence. The tree metaphor has nondecorative content through exp(|h-h′|^{-1}), k(h,h′), the 1/log T grid, and the three interval regimes.",
+            "source_support": "After off-axis reduction and mollification, the source studies Re P_{1-δ}. Its covariance is a prime cosine sum, approximately one-half log |h-h′|^{-1}; prime blocks have near-equal variance and branch near log |h-h′|^{-1}.",
+            "speculation_status": "The field is only approximately Gaussian and log-correlated, and for θ>0 one tree is inadequate because order-one separated intervals are essentially independent. Several prime-sum displays are damaged, so exact normalization should not be reconstructed; the covariance and branching roles are explicitly stated in prose. Interpreting frequency scale as genealogy is exactly the conceptual compression licensed by the covariance and block construction. Prime-sum displays are damaged, so exact covariance normalization should not be reconstructed from OCR."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the rigorous counterpart of the θ<0 subtree heuristic.",
+          "line_end": 1440,
+          "line_start": 1347,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and event decomposition are clear; displayed moment constants are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof separates the value at one point from the within-interval increment and controls both by high moments, formalizing why the common prime trunk does not create the interval's extremes.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Small primes are nearly constant across a mesoscopic interval and can be discarded probabilistically",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u11.txt",
+          "unit_bytes": 5422,
+          "unit_id": "openalex_w2908969280_v2_u11",
+          "unit_sha256": "ac9ddeb55f1b4981feff7011e5e7629e79f7d3409c96635e6909a7b3839cfe10",
+          "unit_type": "shared-component-removal",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A component common to every candidate point shifts the whole field but supplies little discriminatory information for maximizing within the interval. Removing it exposes the post-branching variance.",
+            "nonparaphrase_operation": "The base-plus-increment decomposition bridges the tree heuristic's shared trunk to a rigorous probability estimate.",
+            "quality_reason": "Corollary 2.12 explicitly decomposes P_|θ|(h) into its base value and increment and controls both by high moments, discretization, and prime-sum estimates. The analysis does not say small primes vanish; it correctly calls their removal probabilistic and leading-scale. The common-component language is tied to P(h)=P(0)+(P(h)-P(0)) and the explicit e^{-cV} bound.",
+            "source_support": "For -1<θ<0, Corollary 2.12 bounds the probability that the maximum of the small-prime polynomial P_|θ| exceeds V by an exponential tail. The proof decomposes P(h) into P(0) and P(h)-P(0), controlling both with moments and discretization.",
+            "speculation_status": "The removal is probabilistic, restricted to θ<0 and a specified V range; small primes are not literally zero and can still affect absolute field levels. The event logic is clear, while displayed constants and moment normalizations remain formula-sensitive. Reading this as rigorous control of a shared low-frequency trunk is supported by the condition |h|log^{|θ|}T≤1 and the effective-variance remark. Moment normalizations and constants are formula-sensitive, but event logic is clear."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_833b81e550f260e31e7f3fbf559cdc11949dccf441e405d12b4e7d54713117c3",
+        "dossier_sha256": "b2ea948ff4b43b1a7b5e5a343812df21b4bef652c1c150c50ada8989b6ce1c28"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Successive finite representations remove the shared small-prime component and replace zeta by a short exponential prime field while preserving the target moment scale.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2908969280_v2_u07",
+          "openalex_w2908969280_v2_u12",
+          "openalex_w2908969280_v2_u17",
+          "openalex_w2908969280_v2_u18"
+        ],
+        "proposed_limit": "Each replacement is high-probability or averaged and carries explicit parameter-dependent errors.",
+        "source_id": "openalex_w2908969280",
+        "synthesis_id": "riemann_v2_within_18adb96965b1a40826c45187",
+        "title": "Representation stripping isolates the fertile stochastic core"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Defines the multiplicative coefficient g used throughout the subsequent moment bounds.",
+          "line_end": 681,
+          "line_start": 640,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact truncation indices are formula-sensitive; the construction and error direction are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The multinomial expansion with a controlled tail makes exponential removal of prime ranges compatible with mean-value estimates for finite Dirichlet polynomials.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A truncated exponential converts prime-polynomial factors into short Dirichlet polynomials",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u07.txt",
+          "unit_bytes": 2494,
+          "unit_id": "openalex_w2908969280_v2_u07",
+          "unit_sha256": "4a8fe2bdf91c4488da703aec63a927268755bea10db50d4f1417dbfaba9bd956",
+          "unit_type": "finite-representation-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The construction trades a nonlinear analytic object for a finite multiplicative expansion while preserving it on a controlled event. The Ω cutoff records the combinatorial complexity paid for truncation.",
+            "nonparaphrase_operation": "The multinomial formula is the bridge from prime-polynomial exponentials to short Dirichlet polynomials compatible with mean-value machinery.",
+            "quality_reason": "The span proves that a truncated exponential of a prime polynomial becomes a Dirichlet polynomial with coefficient g(p^k)=1/k! and an exponentially small tail on |λP|≤ν/10. No global approximation is claimed outside the stated good event and finite truncation. The finite-representation language is anchored to a specific exponential series, Ω cutoff, multiplicative g, and error e^{-ν}.",
+            "source_support": "When |λP(s)|≤ν/10, the source truncates exp(λP) at degree ν with exponentially small error and rewrites the truncation as a sum over integers with Ω(n)≤ν, using the multiplicative coefficient g(p^k)=1/k!.",
+            "speculation_status": "The approximation requires a pointwise bound on λP and finite ν; without the good event the exponential tail estimate is unavailable. Exact truncation indices are formula-sensitive. The construction and error direction are clear, but precise parameter choices should be checked against the PDF. Describing Ω(n) as the combinatorial complexity paid for truncation is a faithful reading of the multinomial cutoff. Exact indices and symbols are formula-sensitive, but the construction and error direction are clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Supplies the bridge used immediately in the θ<0 maximum proof.",
+          "line_end": 1509,
+          "line_start": 1442,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact constants and tail weights are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "On a high-probability event, exp(-P|θ|) is replaced by a finite Dirichlet polynomial and multiplied by the zeta approximation, allowing the same grid argument to control ζ exp(-P|θ|).",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Truncating the prime exponential makes mollified zeta uniformly sampleable",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u12.txt",
+          "unit_bytes": 4483,
+          "unit_id": "openalex_w2908969280_v2_u12",
+          "unit_sha256": "78d92b985f583ef23a08ce362f73cc2fd1a4d7a862cc5cb630c51d9bfbba7366",
+          "unit_type": "uniform-mollified-discretization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Two representation changes are composed only after their good events align: analytic ζ becomes finite, and multiplicative prime removal becomes finite. Uniform control is then a property of their product polynomial.",
+            "nonparaphrase_operation": "The finite product D is the bridge from the mollified analytic function to the Poisson grid.",
+            "quality_reason": "The source builds a high-probability event, truncates e^{-P_|θ|}, multiplies by the finite ζ approximation, and applies Proposition 2.7 to the product polynomial. No deterministic equality for ζe^{-P} is asserted; truncation, approximation, and probability errors remain explicit. The composed-bridge prose is specific to the polynomial D and the weighted grid inequality.",
+            "source_support": "Corollary 2.13 constructs an event of probability 1-o(1) on which the maximum of |ζ exp(-P_|θ|)|² is bounded by weighted grid samples. It uses the small-prime tail bound, exponential truncation, ζ approximation, and Dirichlet-polynomial discretization.",
+            "speculation_status": "The conclusion is high probability, requires -1<θ≤0, and carries truncation and tail errors. It does not establish a deterministic identity for ζ exp(-P_|θ|). Exact constants and tail weights are formula-sensitive, but the construction sequence and probability status are explicit. Saying the two finite representations must have aligned good events faithfully summarizes the construction. Exact tail weights and constants are damaged, though the probability-one-minus-o(1) status is clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Highlights why the truncation parameter grows with positive θ.",
+          "line_end": 2107,
+          "line_start": 2016,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact definitions and error powers require PDF checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "An L2 estimate at one point is amplified by discretization to uniform control over logθ T, converting off-axis zeta into an exponential prime field suitable for probabilistic analysis.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A short Möbius mollifier inverts zeta uniformly over the full interval",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u17.txt",
+          "unit_bytes": 4815,
+          "unit_id": "openalex_w2908969280_v2_u17",
+          "unit_sha256": "10aaa4f77f96e58f96d151a48e8fd4d2014895e02840b521b36eee1c0f1afd91",
+          "unit_type": "mollifier-as-approximate-inverse",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The mollifier is a finite, deliberately over-truncated surrogate for 1/ζ at the shifted line σ₀: the source first obtains a θ-dependent one-point mean-square saving, then spends that saving on the log^(1+θ) T discretization cost to make inversion uniform across the whole interval with probability tending to one. Conceptually, the enlarged Ω cutoff is a budget-matching device: a wider interval creates more locations to control, so stronger tail suppression is engineered before uniformization. What is gained is interval-wide probabilistic cancellation of ζ by M; what is lost is exact, deterministic, or critical-line inversion.",
+            "nonparaphrase_operation": "Recasts the proof as a quantitative resource trade: θ controls the interval's discretization burden, νθ controls the mollifier-tail saving, and the latter is set to dominate the former. This identifies why the cutoff must grow for positive θ and locates the remaining proof burden in the one-point L² estimate, short-polynomial approximations, and discretization proposition rather than in any Euler-product-to-prime-field representation.",
+            "quality_reason": "accepted: the interpretation performs the supported cutoff-versus-uniformization cost analysis, preserves the off-axis and high-probability limitations, states the assumptions and residual proof obligations, and applies the critic's bounded repair without importing the subsequent mollifier-representation result.",
+            "source_support": "Equations (3.30)–(3.32) define the Möbius mollifier, its θ-dependent cutoff νθ, and the off-axis point. Lemma 3.7 states uniform high-probability closeness of ζM to 1, while Lemma 3.8 and its error calculation provide the θ-dependent one-point L² saving. Equation (3.38) explicitly charges a log^(1+θ) T factor when Markov's inequality and Proposition 2.7 pass from one-point control to the interval. The proof also relies on ζ and M being approximable by sufficiently short Dirichlet polynomials and on K being chosen large enough for the stated parameters.",
+            "speculation_status": "No cross-source or next-unit consequence is retained. In particular, the span is not claimed to replace ζ by an exponential prime field; it supports only approximate off-axis inversion and its probabilistic uniformization. Exact extracted exponents are treated as formula-sensitive, while the stated domination mechanism and probability conclusion are explicit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This removes the arithmetic mollifier from the final stochastic lower-bound problem.",
+          "line_end": 2164,
+          "line_start": 2109,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-sensitive, though the exceptional coefficient set and Rankin argument are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Euler-product expansion isolates integers with too many prime factors as the only discrepancy, and a mean-square plus discretization estimate makes that discrepancy uniformly negligible.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Rankin truncation replaces the mollifier by the exponential of a prime-power polynomial",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u18.txt",
+          "unit_bytes": 3868,
+          "unit_id": "openalex_w2908969280_v2_u18",
+          "unit_sha256": "1729e2293c18dcc6ecc67aa91b19ee4b15f38985be40593e5b5e6f9c15d47037",
+          "unit_type": "mollifier-representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The representation change isolates all error in a sharply described exceptional set rather than comparing two opaque approximations. Complexity measured by Ω(n) is the quantity that the exponential weight suppresses.",
+            "nonparaphrase_operation": "Euler-product algebra bridges the arithmetic mollifier to the exponential of an additive prime-power field, the form required for the stochastic lower bound.",
+            "quality_reason": "The Euler-product identity explicitly decomposes exp(-P-tilde) into M plus integers with Ω(n)>ν_θ, and Rankin’s trick, mean square, and discretization make that tail uniformly negligible. The analysis correctly retains prime powers and refuses to replace the identity by a primes-only statement. The representation change is concrete through an exact Euler product and a sharply specified coefficient tail.",
+            "source_support": "The source writes exp(-P̃) as the product over p≤X of (1-p^{-s}) and decomposes it into M plus coefficients with Ω(n)>ν_θ. Mean square, discretization, Rankin's trick, and an Euler product show the difference is uniformly small with probability 1-o(1).",
+            "speculation_status": "Uniform negligibility depends on the chosen ν_θ, polynomial length, and mean-value range; the identity includes prime powers and cannot be replaced by a primes-only statement without a further estimate. The exceptional-set mechanism is explicit, while coefficient formulas are extraction-sensitive. Calling Ω(n) the isolated complexity measure is a faithful interpretation of the exact exceptional set. Coefficient displays are formula-sensitive, but the exceptional-set identity and probability bound are clear."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_833b81e550f260e31e7f3fbf559cdc11949dccf441e405d12b4e7d54713117c3",
+        "dossier_sha256": "b2ea948ff4b43b1a7b5e5a343812df21b4bef652c1c150c50ada8989b6ce1c28"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "High-point entropy versus amplitude gives the same piecewise free energy in the upper moment argument and the multiscale Paley-Zygmund lower argument.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2908969280_v2_u13",
+          "openalex_w2908969280_v2_u14",
+          "openalex_w2908969280_v2_u19",
+          "openalex_w2908969280_v2_u20",
+          "openalex_w2908969280_v2_u21"
+        ],
+        "proposed_limit": "The evidence is for first-order exponents under the source's conditionality and interval restrictions, not limiting fluctuation laws.",
+        "source_id": "openalex_w2908969280",
+        "synthesis_id": "riemann_v2_within_ed5e7d60fbbdc122e7e41c07",
+        "title": "Matched upper and lower free-energy mechanisms"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The remark identifies the argument as a Gibbs variational principle.",
+          "line_end": 1607,
+          "line_start": 1515,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact powers should be PDF-checked; optimization mechanism and threshold are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Moments prove the subcritical branch directly, while a high-point measure bound and amplitude partition show that the extremal bin dominates above the critical inverse temperature.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Macroscopic freezing follows by optimizing high-point volume against amplitude",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u13.txt",
+          "unit_bytes": 4381,
+          "unit_id": "openalex_w2908969280_v2_u13",
+          "unit_sha256": "5a7846c283da2a38599c7fc189bb2dda7d434f8ca26adad3c197d9a1654157ef",
+          "unit_type": "high-point-variational-upper-bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The moment integral decomposes into entropy of high points plus energetic reward β times height. Optimizing this tradeoff is a Gibbs variational principle, and boundary optimization is the mathematical signature of freezing.",
+            "nonparaphrase_operation": "High-point Lebesgue measure bridges tail probabilities to the moment integral; amplitude bins turn the integral into a finite variational comparison.",
+            "quality_reason": "The source proves the θ≥0 maximum and subcritical moment upper bounds from sampling and moments, then uses high-point measure and amplitude bins for the supercritical branch. The analysis does not claim microscopic extremizer structure or remove the dependence on a separately proved maximum bound. ‘Freezing’ is tied to the optimizer reaching the endpoint bin and the displayed β threshold, not merely named.",
+            "source_support": "For θ≥0, Markov, discretization, and pointwise moment bounds prove the maximum and subcritical moment upper bounds. High-point measure estimates and a partition by amplitude prove the supercritical branch, with the endpoint bin dominating.",
+            "speculation_status": "The unconditional argument is limited by available pointwise moments, and it gives leading exponents rather than the microscopic structure of extremizers. The bin optimization needs a separately established maximum bound. The variational mechanism and threshold are source-explicit; exact powers should be checked against the PDF. Interpreting the bin optimization as entropy versus β-weighted amplitude is licensed by the source’s explicit Gibbs variational remark. Exact powers need PDF checking, while the optimization and theorem dependency are clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Shows precisely which part of the macroscopic proof changes and which part is reused.",
+          "line_end": 1716,
+          "line_start": 1609,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy but logically recoverable from prose and theorem references.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The small-prime event reduces zeta to ζ exp(-P|θ|), whose moment exponent reflects only the post-branching variance; optimizing the high-point estimate then gives the θ<0 phase diagram.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mesoscopic upper bounds reuse the variational proof after stripping the shared prime trunk",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u14.txt",
+          "unit_bytes": 6225,
+          "unit_id": "openalex_w2908969280_v2_u14",
+          "unit_sha256": "fab6b46317f08039bd5fafcedfe8a4eee96197db1f9fc00d0410dcadbb58d4d0",
+          "unit_type": "effective-variance-upper-bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Once a shared component is removed, the same variational proof applies with effective variance 1+θ. This separates reusable proof architecture from the regime-specific covariance correction.",
+            "nonparaphrase_operation": "The mollified field is the bridge from the full ζ process to a post-branching field; Proposition 2.6 supplies the changed moment exponent needed by the old argument.",
+            "quality_reason": "The θ<0 proof explicitly factors through ζe^{-P_|θ|}, controls e^{P_|θ|}, uses the mollified sampling and β≤2 moment, and reuses high-point partitioning above β=2. The analysis does not omit the high-probability events or treat small-prime removal as free. The ‘surgical change’ language is grounded in one named replacement and the changed exponent 1+θ.",
+            "source_support": "The source bounds ζ by the product of ζ exp(-P_|θ|) and exp(P_|θ|), controls the latter probabilistically, discretizes the mollified field, and applies its β≤2 moment estimate. High-point partitioning then handles β>2 with an optimized lower moment order.",
+            "speculation_status": "The reduction holds on high-probability events and relies on θ<0 and β≤2 input moments before extrapolating via high points; small-prime control cannot simply be omitted. Formula extraction is imperfect, but the source explicitly identifies which part of the θ≥0 proof changes and which is reused. Calling this the macroscopic variational architecture with a post-branching variance correction is a faithful synthesis of the displayed substitution and optimized b choice. Several powers are extraction-sensitive, but proof directions and reused steps are explicit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes exclusion of the first and last scales and the θ-dependent starting block.",
+          "line_end": 2296,
+          "line_start": 2170,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact block endpoints and rate function should be verified against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Prime blocks with nearly equal variances define a multiscale field; lower bounds for the measure of simultaneous block exceedances turn into a variational formula whose optimizer changes at the freezing threshold.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [
+            29
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "High-point entropy and amplitude optimize to the freezing free energy",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u19.txt",
+          "unit_bytes": 7490,
+          "unit_id": "openalex_w2908969280_v2_u19",
+          "unit_sha256": "e3e24bdb024a45ec8951f1df17509e5b4397e4a67a72b42b5e2249edb0f89577",
+          "unit_type": "multiscale-free-energy-lower-bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The blockwise event enforces a multiscale path rather than a single terminal spike. Entropy E_θ(γ) and amplitude βγ form the same variational competition as the upper bound, making matching exponents possible.",
+            "nonparaphrase_operation": "The prime-block field bridges ζ's Euler structure to branching paths; high-point Lebesgue measure bridges path large deviations to the moment integral.",
+            "quality_reason": "The source defines nearly equal-variance prime blocks, omits endpoint blocks for stated reasons, reduces the lower bound to high-point measure, and optimizes βγ+E_θ(γ) with a threshold-dependent optimizer. The analysis does not treat abundant high points as already proved; it notes dependence on the later Paley-Zygmund argument. The variational language is pinned to E_θ, γ, the block indices, and the endpoint optimizer.",
+            "source_support": "Prime blocks P_j are chosen with nearly equal variances, with endpoint blocks omitted. Proposition 3.10 lower-bounds the exponential integral; its proof reduces this to high-point measure events and optimizes βγ+E_θ(γ), whose optimizer moves to m(θ) above the critical β.",
+            "speculation_status": "The conclusion depends on a later Paley-Zygmund proof of abundant high points, removal of first and last blocks, and K chosen relative to parameters. It is a leading-exponent result. Exact block endpoints and rate formulas are formula-sensitive, but the optimizer and freezing mechanism are source-explicit. Interpreting simultaneous block exceedances as multiscale paths and the objective as entropy-amplitude competition is directly licensed by the construction. Block endpoints and rate formulas need PDF verification, while their roles are clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps the full correlation-shell error budget because it is the core reusable mechanism.",
+          "line_end": 2456,
+          "line_start": 2298,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Many displayed rate estimates are degraded; their hierarchy and conclusion are prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof quantifies when two prime-block paths share increments, partitions pairs by branching distance, and shows every correlated shell is negligible compared with the independent region, so the high-point count concentrates.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [
+            30,
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "One- and two-point deviations plus distance shells make Paley-Zygmund sharp",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u20.txt",
+          "unit_bytes": 8952,
+          "unit_id": "openalex_w2908969280_v2_u20",
+          "unit_sha256": "5da840b1be5cf44c7fb8fe923e8059d72f51a55fabce9f8257272003bc420f6a",
+          "unit_type": "second-moment-correlation-analysis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A second moment fails if correlations are treated uniformly. The genealogical metric identifies precisely how much shared path each distance shell has, allowing spatial volume loss to offset correlation gain.",
+            "nonparaphrase_operation": "Distance shells bridge covariance decay to pair-counting; the ratio E[N]²/E[N²] bridges those estimates to a high-probability abundance statement.",
+            "quality_reason": "The unit supplies one- and two-point deviation estimates, partitions I×I by correlation distance, and proves every nonbulk shell is negligible relative to (E[N])². No blanket independence is asserted; factorization is confined to the stated far region and correlated shells use separate bounds. The second-moment narrative is specific to B, B_0, B_ℓ, the diagonal region, and the Paley-Zygmund ratio.",
+            "source_support": "One-point Gaussian deviations estimate E[N]; two-point estimates give factorization beyond the correlation scale and shell-dependent bounds inside it. The proof partitions I×I into distance regions and shows correlated contributions and the diagonal region are o(E[N]²).",
+            "speculation_status": "The bounds require threshold γ below the maximal level, sufficiently large coarse-graining K, and controlled Gaussian moment approximations; endpoint levels are excluded. Many displayed rates are degraded, but the hierarchy of independent bulk, correlated shells, and negligible diagonal is clear. Describing the distance partition as a genealogical metric is faithful to the source’s explicit shared-prime-scale explanation. Many rate displays are degraded, so exact exponents require the PDF, but the hierarchy and conclusion are recoverable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Provides the dependency graph for the lower-bound theorem rather than a new local estimate.",
+          "line_end": 2525,
+          "line_start": 2458,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact epsilon losses are formula-sensitive; the transfer sequence is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The closing proof composes all earlier representation changes in order, discards prime powers and endpoint blocks at controlled cost, and derives the local maximum from a large-β moment.",
+          "source_id": "openalex_w2908969280",
+          "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+          "source_page_markers_inside_unit": [
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Off-axis comparison, mollification, and scale trimming transfer the field lower bound to zeta",
+          "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u21.txt",
+          "unit_bytes": 3640,
+          "unit_id": "openalex_w2908969280_v2_u21",
+          "unit_sha256": "a21906632afbb497ef703ab3aa2544ea7ef0dfaa7167e0a925cabdf0c2f879d6",
+          "unit_type": "proof-transfer-chain",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u21.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "No single approximation carries the theorem. The proof preserves the target exponent across a dependency graph of small errors, ending in the representation where correlation structure is tractable.",
+            "nonparaphrase_operation": "Each bridge has a distinct role: analytic localization, mollifier inversion, additive prime-field conversion, scale trimming, and moment-to-maximum transfer.",
+            "quality_reason": "The closing proof explicitly composes off-axis comparison, mollifier inversion, exponential prime-power replacement, prime-power removal, endpoint-block trimming, Proposition 3.10, and the large-β moment-to-maximum step. No bridge is presented as an exact global identity; the analysis retains probabilistic and asymptotic errors. The chain language is nondecorative because each stage has a distinct cited lemma and removes a different obstruction.",
+            "source_support": "Proposition 3.6 compares critical-line and off-axis moments; Lemmas 3.7 and 3.9 reduce ζ to an exponential prime-power polynomial; moment and discretization estimates remove higher prime powers and endpoint blocks; Proposition 3.10 supplies the lower moment bound, and large β yields the maximum bound.",
+            "speculation_status": "Reversing or omitting a bridge would leave either ζ's analytic complexity, arithmetic coefficients, or correlated endpoint scales uncontrolled. The conclusion is probabilistic and asymptotic. Exact epsilon losses are extraction-sensitive, while the source makes the transfer order explicit. Viewing the proof as exponent-preserving representation changes is a faithful dependency-graph interpretation. Exact epsilon losses and some formulas are extraction-sensitive, but the transfer order is explicit."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_833b81e550f260e31e7f3fbf559cdc11949dccf441e405d12b4e7d54713117c3",
+        "dossier_sha256": "b2ea948ff4b43b1a7b5e5a343812df21b4bef652c1c150c50ada8989b6ce1c28"
+      }
+    }
+  ]
+}

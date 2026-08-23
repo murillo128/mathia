@@ -1,0 +1,178 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1764772889_3f596092_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1764772889",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source later retracts a literal Hilbert-space interpretation of this integral; read with lines 292-314.",
+      "line_end": 270,
+      "line_start": 184,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; operator signs, affine argument, and theta integral are formula dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses a dilation-type operator and Jacobi-theta weight so a scale-invariant integral becomes the completed zeta function and its functional equation becomes a discrete parameter duality.",
+      "source_id": "openalex_w1764772889",
+      "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Theta-weighted non-self-adjoint eigenfunctions generate a completed-zeta pairing",
+      "unit_artifact_relpath": "depth/units/b25_openalex_w1764772889_u01.txt",
+      "unit_bytes": 4946,
+      "unit_id": "b25_openalex_w1764772889_u01",
+      "unit_sha256": "9761b43327fdb291e6b7db76d9a4d63a4cabbf147423c787ae5d4ab606f9f955",
+      "unit_type": "operator construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w1764772889_u01.txt",
+      "source": {
+        "source_id": "openalex_w1764772889",
+        "title": "On SUSY-QM, fractal strings and steps towards a proof of the Riemann hypothesis",
+        "authors": [
+          "Carlos Castro",
+          "Alex Granik",
+          "Jorge Mahecha"
+        ],
+        "year": 2001,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "zeroes, then one concludes that the amplitudes of the p-adic harmonic oscilla-\ntor SUSY QM potential, Eq. (1), (a, b) are only approximate by our method.\nThe numerical results will be given in a forthcoming publication. In the next\nsection we propose an approach for a direct proof of the RH. It is based on\nthe idea of relating the non-trivial zeroes of the ζ with orthogonalities between\neigenfunctions of a conveniently chosen operator. See [16], [21] and [22].\n\n\n",
+          "sha256": "1cf17d13829c51ae2d33b805f4ea4cd98943f37ed790dd9350b6ea37b68de6a5"
+        },
+        "after": {
+          "line_start": 271,
+          "line_end": 278,
+          "text": "    From (12) we obtain the “norm” of any state characterized by s = x + iy,\n                                                \u0014          \u0015\n                                           α      4\n                            hψs |ψs i = Z           (k − x) .                      (14)\n                                            l     l\nThe “norm” of the vectors is the same for all s having the same x. We will\nchoose the domain of the values of s, 1 − s such that they fall inside the critical\ndomain: 0 < Re(s) < 1 and 0 < Re(1 − s) < 1. We will see soon why this is\n",
+          "sha256": "b25cdf8eb0826e4761193b072f98a70e06030332366bdcc2cb1a40cc0300586c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b27be49a7fd5de36453c5572f7a28245c6794eef88c9050aecd0892f215283da",
+        "dossier_sha256": "1d27399da2ea24aab5669b075cfde9a83f5bfd75e5c3c3fcdfafbd51b34f5348",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "A way to prove the Riemann conjecture",
+            "line_end": 515,
+            "line_start": 184,
+            "mathematical_role": "Defines non-self-adjoint operators and a theta-kernel map, derives orthogonality identities, tests zero symmetries, exposes the generic off-line obstruction, and states extra assumptions under which RH would follow."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 270,
+          "line_start": 184,
+          "title": "Theta-weighted non-self-adjoint eigenfunctions generate a completed-zeta pairing",
+          "unit_id": "b25_openalex_w1764772889_u01",
+          "unit_type": "operator construction",
+          "why_material": "Chooses a dilation-type operator and Jacobi-theta weight so a scale-invariant integral becomes the completed zeta function and its functional equation becomes a discrete parameter duality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source later retracts a literal Hilbert-space interpretation of this integral; read with lines 292-314.",
+          "representation_dependency": "Very high; operator signs, affine argument, and theta integral are formula dependent.",
+          "unit_id": "b25_openalex_w1764772889_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 180,
+            "line_start": 79,
+            "title": "Fit a p-adic SUSY potential to prescribed zeta ordinates",
+            "unit_id": "full_openalex_w1764772889_u02",
+            "unit_type": "susy inverse-spectral construction",
+            "why_material": "Turns the Hilbert-Polya aspiration into coupled turning-point and quantization equations for oscillator amplitudes, while recording nonuniqueness and the failure of exactness without shape invariance."
+          },
+          {
+            "line_end": 314,
+            "line_start": 271,
+            "title": "Replace the indefinite divergent pairing by an abstract zeta-valued map",
+            "unit_id": "b25_openalex_w1764772889_u02",
+            "unit_type": "foundational limitation",
+            "why_material": "Shows the would-be norm depends only on the real part, notes its lack of positivity and rigorous scalar-product meaning, and explicitly substitutes a map S on two complex labels for the integral."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A theta kernel can encode completed-zeta zeros as vanishing pairings, but positivity, domain, and exclusion of generic off-line labels are separate requirements that the encoding alone does not provide.",
+            "limit": "The source's map is analytic continuation of a formal integral and lacks a proved Hilbert-space realization.",
+            "parent_local_unit_ids": [
+              "b25_openalex_w1764772889_u01",
+              "b25_openalex_w1764772889_u02",
+              "full_openalex_w1764772889_u01",
+              "b25_openalex_w1764772889_u03"
+            ],
+            "title": "Orthogonality-map audit"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "b25_openalex_w1764772889_u01",
+        "spontaneous": {
+          "unit_id": "b25_openalex_w1764772889_u01",
+          "spontaneous_reading": "The construction engineers a dilation operator and theta weight so that pairing two scale-covariant eigenfunctions produces the completed zeta function at an affine combination of their labels. Functional-equation symmetry then appears as a discrete transformation of operator parameters."
+        },
+        "directed": {
+          "unit_id": "b25_openalex_w1764772889_u01",
+          "source_grounded_mathematics": "The source defines non-self-adjoint partner operators D1 and D2, with D1 eigenfunctions t^(−s+k)e^V. Choosing e^(2V) as a Jacobi-theta series and integrating against dt/t yields an expression proportional to the completed function Z at an affine argument; the relation 8k−4=l simplifies the parameter transformation induced by Z(s)=Z(1−s).",
+          "conceptual_reading": "The theta kernel is selected backward from the target Mellin integral. Scale invariance and the affine label map compress the functional equation into a symmetry of a parameterized operator family.",
+          "representation_or_bridge": "The Jacobi theta series and Mellin-type pairing bridge dilation eigenfunctions to completed ζ. The bridge exposes functional symmetry but uses a non-self-adjoint operator rather than delivering the self-adjoint spectrum sought by Hilbert–Pólya.",
+          "boundary_or_failure": "The later source explicitly withdraws a rigorous Hilbert-space interpretation of the integral. Complex eigenvalues of a non-self-adjoint operator and a zeta-valued pairing do not establish RH.",
+          "uncertainty": "Operator signs, powers, affine factors, and theta parameters are extraction-sensitive. The mechanism is source-explicit, but exact formulas need verification before reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "b25_openalex_w1764772889_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines a non-self-adjoint dilation-type operator, its eigenfunctions, a theta-series weight, and a scale-invariant integral yielding completed zeta at an affine label combination.",
+          "The functional-equation-induced parameter transformation and special relation between k and l are explicit."
+        ],
+        "inference": [
+          "Saying the theta kernel is selected to realize a Mellin representation and that the affine map exposes functional symmetry is a reasonable reading."
+        ],
+        "unsupported_or_imported": [
+          "The boundary paragraph says the later source withdraws a rigorous Hilbert-space interpretation; that warning is true in the next assigned unit and assignment context, but it is not a fact inside this frozen source span.",
+          "The output's claim that the construction does not deliver a self-adjoint Hilbert-Polya spectrum is a valid comparison, but only non-self-adjointness is source-explicit here; the Hilbert-Polya target is imported background."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Compress the functional equation into a symmetry' is acceptable shorthand only when kept attached to the displayed affine transformation."
+        ],
+        "context_or_ocr_risk": [
+          "Operator signs, powers, affine factors, and theta parameters are extraction-sensitive; equation (13)'s continuation assertion should not be independently endorsed from the damaged text."
+        ],
+        "missed_mechanism": [
+          "The span itself already supplies the decisive limitation that D1 is non-self-adjoint with complex eigenvalues; this can carry the boundary analysis without importing the next page."
+        ],
+        "revision_instructions": [
+          "Keep the source-span critique self-contained: emphasize non-self-adjointness and formula sensitivity here.",
+          "If the later retraction is retained, label it explicitly as assignment-supplied adjacent context rather than source fact from this unit."
+        ]
+      }
+    }
+  ]
+}

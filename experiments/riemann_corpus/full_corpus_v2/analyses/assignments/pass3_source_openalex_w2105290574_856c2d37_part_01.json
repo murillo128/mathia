@@ -1,0 +1,968 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2105290574_856c2d37_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2105290574",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes interleaved right-column material about early sign changes and a cancellation table because the normalized page is two-column; the sequence-to-Riesz chain is nevertheless recoverable across equations (1), (4), and (7)-(9).",
+      "line_end": 151,
+      "line_start": 75,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact exponents, factorials, and summation indices are formula-layer dependent, although the surrounding prose explicitly states the transform and growth equivalence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage defines c_k, places it in a general binomial/exponential-transform identity, identifies its generating function with R(x)/x, and states the bidirectional correspondence R(x)=O(x^{delta+1}) iff c_k=O(k^delta). This is the source's main bridge from a discrete sequence to an analytic growth criterion.",
+      "source_id": "openalex_w2105290574",
+      "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-difference sequence as an exponential transform of the Riesz function",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u04.txt",
+      "unit_bytes": 8086,
+      "unit_id": "full_openalex_w2105290574_u04",
+      "unit_sha256": "feaed854891e6580d26a7e418ca900bdae039ed0cfa975f9d0f18f8b82b67345",
+      "unit_type": "representation bridge and equivalent growth criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u04.txt",
+      "source": {
+        "source_id": "openalex_w2105290574",
+        "title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 67,
+          "line_end": 74,
+          "text": "                                                                                                  ∞             ∞\n                                                                                                                        ( −1) x k\n additionally demanded that zeros on the critical line                                        &\n                                                                                              k =0 k !\n                                                                                                         = e x\n                                                                                                               &\n                                                                                                               k = 0 k !ζ ( 2 k + 2 )\n                                                                                                                                      .         (4)\n",
+          "sha256": "1e15d8088c166c25bb3443ee229424d692e6a4bb7c53f2bcedcbea07035e26ab"
+        },
+        "after": {
+          "line_start": 152,
+          "line_end": 159,
+          "text": "\n\n\n              II. COMPUTER EXPERIMENTS                                                                 Let us remark that the partial sums for n and 12000–n are\n                                                                                                   of the same order. The binomial coeficients become very\n    The criterion (2) seemed to be very well suited for                                            large numbers in the middle and to get accurate value of ck\ncomputer verification. At the end of [3] Baez-Duarte wrote                                         one needs a lot of digits accuracy during the calculation.\na sentence “A test for the first ck up to k = 1000 shows                                           Ma lanka has used Mathematica to perform these\n",
+          "sha256": "ab3cf7aa224265e26e1f242c9364fc0e00d1a4be6259a1299c8909b16844cf39"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6a48445e7c4716d439fa49fa535c131c243cb9acccbf6e2935de148536818933",
+        "dossier_sha256": "eb8defbc33c638d853c08a619396c4973bba048aaa776fb6790aa7db6d358061",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: criterion, sequence identities, and Riesz bridge",
+            "line_end": 154,
+            "line_start": 31,
+            "mathematical_role": "States the decay criterion, defines the finite-difference sequence, gives exponential-generating identities, and transfers growth between the sequence and the Riesz function."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 151,
+          "line_start": 75,
+          "title": "Finite-difference sequence as an exponential transform of the Riesz function",
+          "unit_id": "full_openalex_w2105290574_u04",
+          "unit_type": "representation bridge and equivalent growth criterion",
+          "why_material": "The passage defines c_k, places it in a general binomial/exponential-transform identity, identifies its generating function with R(x)/x, and states the bidirectional correspondence R(x)=O(x^{delta+1}) iff c_k=O(k^delta). This is the source's main bridge from a discrete sequence to an analytic growth criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes interleaved right-column material about early sign changes and a cancellation table because the normalized page is two-column; the sequence-to-Riesz chain is nevertheless recoverable across equations (1), (4), and (7)-(9).",
+          "representation_dependency": "High: exact exponents, factorials, and summation indices are formula-layer dependent, although the surrounding prose explicitly states the transform and growth equivalence.",
+          "unit_id": "full_openalex_w2105290574_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 74,
+            "line_start": 31,
+            "title": "Baez-Duarte decay criterion and exponential generating identity",
+            "unit_id": "full_openalex_w2105290574_u02",
+            "unit_type": "criterion and generating-function framing",
+            "why_material": "The frozen v1 span states the equivalence between RH and the k^{-3/4+epsilon} decay threshold, notes the sharpness and simple-zero strengthening, and introduces the inversion/generating-function framing that makes the sequence analytically useful."
+          },
+          {
+            "line_end": 207,
+            "line_start": 94,
+            "title": "Catastrophic cancellation forces precision linear in the sequence index",
+            "unit_id": "full_openalex_w2105290574_u05",
+            "unit_type": "computational obstruction and validation protocol",
+            "why_material": "Direct evaluation combines enormous alternating partial sums to obtain tiny c_k values. The paper turns that instability into a concrete precision rule, requiring enough digits to distinguish 1 from 1+2^{-k}, and uses the generic formula as a slow computation that does not assume RH, hence as an independent check on fast zero-based formulas."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The binomially defined sequence and the Riesz function are linked by an exponential generating transform whose growth-rate equivalence turns the same RH threshold into discrete decay or analytic growth.",
+            "limit": "The normalized formulas are extraction-fragile, and the source reports the equivalence rather than reproducing its proof.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2105290574_u02",
+              "full_openalex_w2105290574_u04"
+            ],
+            "title": "Discrete-to-analytic growth transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2105290574_u04",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2105290574_u04",
+          "spontaneous_reading": "The mathematical work is done by an exponential generating transform: an alternating binomial finite-difference sequence is repackaged as the Riesz function, so a discrete decay question and an analytic growth question become two views of the same asymptotic constraint."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2105290574_u04",
+          "source_grounded_mathematics": "The span defines c_k by an alternating binomial sum involving 1/ζ(2j+2), invokes a general exponential-generating identity, and states that the resulting generating function is expressed through R(x). It reports, for real δ > -3/2, the equivalence R(x)=O(x^{δ+1}) if and only if c_k=O(k^δ), with the proof based on R(k)/k being asymptotic to c_k.",
+          "conceptual_reading": "This is a representation change that transfers asymptotic size between a discrete finite-difference sequence and an analytic function. The transform compresses many alternating samples into one generating object while preserving the growth exponent relevant to the RH criterion.",
+          "representation_or_bridge": "The bridge objects are the exponential generating series of c_k and R(x)/x, related by an exponential factor. They make finite-difference cancellation accessible to analytic growth estimates and turn the Riesz x^{1/4+ε} threshold into the corresponding sequence-decay threshold.",
+          "boundary_or_failure": "The source cites rather than proves the bidirectional growth theorem, and its δ > -3/2 domain is material. The normalized display is formula-fragile, so exact factors and indices should be scan-verified before computational reuse. This reformulation does not itself establish the required bound.",
+          "uncertainty": "High confidence in the discrete-to-analytic growth-transfer mechanism and the stated exponent equivalence; lower confidence in exact display typography because the text layer interleaves two columns and damages formula layout."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span crosses the Computer Experiments heading and a page boundary so that the partial-sum evidence, PARI/GP procedure, failure example, precision rule, and methodological comparison remain together.",
+      "line_end": 207,
+      "line_start": 94,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate to high: the prose and precision mechanism are clear, while table exponents, code layout, and finite-difference notation remain vulnerable to extraction errors.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Direct evaluation combines enormous alternating partial sums to obtain tiny c_k values. The paper turns that instability into a concrete precision rule, requiring enough digits to distinguish 1 from 1+2^{-k}, and uses the generic formula as a slow computation that does not assume RH, hence as an independent check on fast zero-based formulas.",
+      "source_id": "openalex_w2105290574",
+      "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Catastrophic cancellation forces precision linear in the sequence index",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u05.txt",
+      "unit_bytes": 12261,
+      "unit_id": "full_openalex_w2105290574_u05",
+      "unit_sha256": "e83097c9be63d79f7a0e9d85aeb6e031e627366bef071a1897331d3ce010ffac",
+      "unit_type": "computational obstruction and validation protocol",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u05.txt",
+      "source": {
+        "source_id": "openalex_w2105290574",
+        "title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 86,
+          "line_end": 93,
+          "text": "                                                                                                                                                (5)\n                                                                                             k =0   $ j =0 $ %       %          k =0\n\n<!-- source-page: 2 -->\n\n48                                                                                               M. Wolf\n\n\n",
+          "sha256": "7fbc758d829f7100680bda07043c9a7d644ab2a53a541f744ea45aad5c48c62b"
+        },
+        "after": {
+          "line_start": 208,
+          "line_end": 215,
+          "text": "                                                                  trend ck and oscillations ck :\n\n                                                                                                  ck = ck + ck\n                           Table 2.\n       k                              ck                          where:\n                                                       –9\n    198000           –8.1809420017968747912 × 10                                                                           2m\n                                                                                       1      ∞\n",
+          "sha256": "387cb26b1804d96ebfc4885f5e18366b8e7b4e6dabaf85b240e2ed99cbc1d08b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6a48445e7c4716d439fa49fa535c131c243cb9acccbf6e2935de148536818933",
+        "dossier_sha256": "eb8defbc33c638d853c08a619396c4973bba048aaa776fb6790aa7db6d358061",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: criterion, sequence identities, and Riesz bridge",
+            "line_end": 154,
+            "line_start": 31,
+            "mathematical_role": "States the decay criterion, defines the finite-difference sequence, gives exponential-generating identities, and transfers growth between the sequence and the Riesz function."
+          },
+          {
+            "label": "Computer experiments",
+            "line_end": 198,
+            "line_start": 155,
+            "mathematical_role": "Shows sign oscillation, direct-evaluation cancellation, arbitrary-precision requirements, and the role of an RH-independent computation."
+          },
+          {
+            "label": "Explicit formulae and trend",
+            "line_end": 320,
+            "line_start": 199,
+            "mathematical_role": "Contrasts derivations, separates trend from oscillation, states zero-dependent assumptions, and compares exact and asymptotic trend formulas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 207,
+          "line_start": 94,
+          "title": "Catastrophic cancellation forces precision linear in the sequence index",
+          "unit_id": "full_openalex_w2105290574_u05",
+          "unit_type": "computational obstruction and validation protocol",
+          "why_material": "Direct evaluation combines enormous alternating partial sums to obtain tiny c_k values. The paper turns that instability into a concrete precision rule, requiring enough digits to distinguish 1 from 1+2^{-k}, and uses the generic formula as a slow computation that does not assume RH, hence as an independent check on fast zero-based formulas."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span crosses the Computer Experiments heading and a page boundary so that the partial-sum evidence, PARI/GP procedure, failure example, precision rule, and methodological comparison remain together.",
+          "representation_dependency": "Moderate to high: the prose and precision mechanism are clear, while table exponents, code layout, and finite-difference notation remain vulnerable to extraction errors.",
+          "unit_id": "full_openalex_w2105290574_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 151,
+            "line_start": 75,
+            "title": "Finite-difference sequence as an exponential transform of the Riesz function",
+            "unit_id": "full_openalex_w2105290574_u04",
+            "unit_type": "representation bridge and equivalent growth criterion",
+            "why_material": "The passage defines c_k, places it in a general binomial/exponential-transform identity, identifies its generating function with R(x)/x, and states the bidirectional correspondence R(x)=O(x^{delta+1}) iff c_k=O(k^delta). This is the source's main bridge from a discrete sequence to an analytic growth criterion."
+          },
+          {
+            "line_end": 267,
+            "line_start": 199,
+            "title": "Separating a rapidly decaying trend from zero-driven oscillation",
+            "unit_id": "full_openalex_w2105290574_u06",
+            "unit_type": "explicit zero-sum decomposition",
+            "why_material": "The explicit formulas recast c_k as a trend plus an oscillatory sum over nontrivial zeta zeros, state the simple-zero assumption, and contrast the fast assumption-dependent route with the generic formula. The unexpectedly good small-k agreement is used only as numerical evidence that omitted integrals decay rapidly."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The slow generic finite-difference computation, despite severe precision cost, does not assume RH and therefore controls fast explicit zero-based calculations and sign-change diagnostics that do use stronger assumptions or approximations.",
+            "limit": "Agreement over computed ranges validates numerical implementation conditionally; it neither proves the asymptotic criterion nor excludes later violations.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2105290574_u05",
+              "full_openalex_w2105290574_u06",
+              "full_openalex_w2105290574_u09"
+            ],
+            "title": "Assumption-independent computation as a control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2105290574_u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2105290574_u05",
+          "spontaneous_reading": "Catastrophic cancellation is the central mechanism: enormous, nearly symmetric alternating partial sums must leave a tiny residual c_k. The source converts that obstruction into a precision budget growing linearly with k and preserves the slow direct computation as an assumption-independent control."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2105290574_u05",
+          "source_grounded_mathematics": "In the defining binomial sum, ζ(2j+2) rapidly becomes numerically indistinguishable from 1 while middle binomial coefficients are enormous. Table 1 shows huge partial sums canceling to a tiny c_12000. Fixed insufficient precision can produce values wrong by very large powers of ten, and the reported practical rule is at least k log10(2) decimal digits, enough to distinguish 1 from 1+2^{-k}. The direct formula is slow but, unlike the fast formulas discussed next, does not assume RH.",
+          "conceptual_reading": "The unit identifies numerical conditioning as part of the mathematical interface, not a mere implementation detail. A tiny finite difference forgets almost all of the large component values through cancellation, so reliable recovery requires retaining proportionally more information as the index grows.",
+          "representation_or_bridge": "The alternating partial-sum table exposes the hidden scale separation between intermediate terms and the final residual. Arbitrary-precision direct evaluation then serves as a bridge from the definition of c_k to an independent validation channel for faster zero-based representations.",
+          "boundary_or_failure": "The k log10(2) rule is an empirical confidence rule, not a proved forward-error bound. The fixed-precision PARI/GP procedure is expensive and can fail catastrophically without signaling mathematical failure. Agreement with a fast method validates computations only on the checked range; it neither proves RH nor guarantees later behavior.",
+          "uncertainty": "High confidence in the cancellation mechanism, linear precision rule, and control role stated in prose. Exact table exponents and code formatting are extraction-sensitive and should not be treated as a clean machine-readable benchmark."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 199-207 also contain the final interleaved computer-experiment paragraph; retaining them supplies the method comparison that motivates the explicit-formula section.",
+      "line_end": 267,
+      "line_start": 199,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equations (10)-(11), the beta/gamma ratios, primes on zeta, and zero indexing require scan verification before exact computational use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The explicit formulas recast c_k as a trend plus an oscillatory sum over nontrivial zeta zeros, state the simple-zero assumption, and contrast the fast assumption-dependent route with the generic formula. The unexpectedly good small-k agreement is used only as numerical evidence that omitted integrals decay rapidly.",
+      "source_id": "openalex_w2105290574",
+      "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Separating a rapidly decaying trend from zero-driven oscillation",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u06.txt",
+      "unit_bytes": 6613,
+      "unit_id": "full_openalex_w2105290574_u06",
+      "unit_sha256": "1dc3ded9fac13c6342cb336c52984acb698f3728a288fafaa9ff454c13de43f5",
+      "unit_type": "explicit zero-sum decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u06.txt",
+      "source": {
+        "source_id": "openalex_w2105290574",
+        "title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 191,
+          "line_end": 198,
+          "text": "                                                                  (1). It should be stressed that calculations based on (1) do\n    The problem encountered during these calculations was         not assume the validity of Riemann Hypothesis in contrast\nthat it seemed not possible to change the accuracy of             to formulae presented by Ma lanka or below. Using these\ncalculation while running the script (the command \\p 3500         formulae ck can be calculated very quickly for practically\nabove). Thus we had to change the precision by hand. It           arbitrary k – it is very time-consuming to calculate ck\nturned out that when the precision was to small, produced         without assuming RH.\nvalues of ck were completely wrong, differing from the\ncorrect ones by ten to a very large power. The rule learned\n",
+          "sha256": "b45c8613e54a67a6e83d055bca4e57b23f753a074de836e229e1d049d1dec135"
+        },
+        "after": {
+          "line_start": 268,
+          "line_end": 275,
+          "text": "    First let us consider the trend. It can be calculated\ndirectly from (10):                                                                                  Γ ( x)\n                                                                                                              ~ x −a ,                x→∞\n                                   1                                                                Γ( x + a)\n                         ck = −         ×                  (12)\n                                ( 2π )2                                         thus we have\n  ∞\n                                1                          ( −1)m ( 2π )2 m\n",
+          "sha256": "e27dc8a0b641dc102a508a891e7575bcb2cbd9a022f34b128f5b688db40a233a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6a48445e7c4716d439fa49fa535c131c243cb9acccbf6e2935de148536818933",
+        "dossier_sha256": "eb8defbc33c638d853c08a619396c4973bba048aaa776fb6790aa7db6d358061",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Explicit formulae and trend",
+            "line_end": 320,
+            "line_start": 199,
+            "mathematical_role": "Contrasts derivations, separates trend from oscillation, states zero-dependent assumptions, and compares exact and asymptotic trend formulas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 267,
+          "line_start": 199,
+          "title": "Separating a rapidly decaying trend from zero-driven oscillation",
+          "unit_id": "full_openalex_w2105290574_u06",
+          "unit_type": "explicit zero-sum decomposition",
+          "why_material": "The explicit formulas recast c_k as a trend plus an oscillatory sum over nontrivial zeta zeros, state the simple-zero assumption, and contrast the fast assumption-dependent route with the generic formula. The unexpectedly good small-k agreement is used only as numerical evidence that omitted integrals decay rapidly."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 199-207 also contain the final interleaved computer-experiment paragraph; retaining them supplies the method comparison that motivates the explicit-formula section.",
+          "representation_dependency": "High: equations (10)-(11), the beta/gamma ratios, primes on zeta, and zero indexing require scan verification before exact computational use.",
+          "unit_id": "full_openalex_w2105290574_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 207,
+            "line_start": 94,
+            "title": "Catastrophic cancellation forces precision linear in the sequence index",
+            "unit_id": "full_openalex_w2105290574_u05",
+            "unit_type": "computational obstruction and validation protocol",
+            "why_material": "Direct evaluation combines enormous alternating partial sums to obtain tiny c_k values. The paper turns that instability into a concrete precision rule, requiring enough digits to distinguish 1 from 1+2^{-k}, and uses the generic formula as a slow computation that does not assume RH, hence as an independent check on fast zero-based formulas."
+          },
+          {
+            "line_end": 303,
+            "line_start": 243,
+            "title": "Trend/oscillation representation and its asymptotic regime",
+            "unit_id": "full_openalex_w2105290574_u03",
+            "unit_type": "trend-versus-oscillation decomposition",
+            "why_material": "The immutable v1 span contains the assumptions on the zero sum, identifies the beta-function representation, reports close agreement with the generic sequence, and begins the exact-to-asymptotic treatment of the trend. It preserves the conceptual split between smooth decay and spectral fluctuation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The slow generic finite-difference computation, despite severe precision cost, does not assume RH and therefore controls fast explicit zero-based calculations and sign-change diagnostics that do use stronger assumptions or approximations.",
+            "limit": "Agreement over computed ranges validates numerical implementation conditionally; it neither proves the asymptotic criterion nor excludes later violations.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2105290574_u05",
+              "full_openalex_w2105290574_u06",
+              "full_openalex_w2105290574_u09"
+            ],
+            "title": "Assumption-independent computation as a control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2105290574_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2105290574_u06",
+          "spontaneous_reading": "The useful intermediate object is a decomposition of c_k into a smooth, rapidly decreasing trend and an oscillatory sum indexed by nontrivial zeta zeros. It separates background decay from spectral fluctuation and makes the assumptions of the fast route visible."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2105290574_u06",
+          "source_grounded_mathematics": "The source writes c_k as the sum of a trend term and an oscillating term. The trend is given by a beta-function series, while the oscillatory term is a sum over nontrivial zeros ρ with beta/gamma factors and 1/ζ′(1-ρ); simplicity of the zeros is explicitly assumed. The source contrasts these fast explicit calculations with the slow generic formula and reports unexpectedly close agreement even at small k, interpreting the improving agreement as evidence that omitted integrals J_k decrease rapidly.",
+          "conceptual_reading": "The decomposition reframes one opaque sequence into components with different mathematical causes: a regular background and zero-driven fluctuations. This supports separate asymptotic analysis of the envelope, coefficients, and frequencies instead of treating c_k as an undifferentiated numerical signal.",
+          "representation_or_bridge": "Beta and gamma functions connect the sequence index to a spectral sum over zeta zeros, while ζ′ at a zero supplies the residue-like weight. The slow definition-based computation is the external bridge used to check the faster assumption-dependent representation.",
+          "boundary_or_failure": "The zero formula explicitly needs simple zeros, and the source presents the fast route as assumption-dependent in contrast with the generic sum. Its validity is asymptotic; close small-k agreement is numerical evidence for small omitted terms, not a proof of that decay or of the criterion. Exact beta/gamma arguments and zero indexing are text-layer fragile.",
+          "uncertainty": "High confidence in the trend/oscillation split, simple-zero condition, and methodological comparison; moderate confidence in exact displayed factors because equations (10)-(11) require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The comparison table is retained because it shows where the successive approximations become reliable rather than merely listing outputs.",
+      "line_end": 320,
+      "line_start": 268,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact constants and correction terms are embedded in extraction-fragile displays; the asymptotic ordering and table trend are recoverable from the checked prose and rows.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source derives an exact trend series, a finite asymptotic expansion, and a leading k^{-2} simplification, then compares all three across increasing k. This establishes that the trend decays faster than the k^{-3/4} oscillatory scale relevant to the criterion.",
+      "source_id": "openalex_w2105290574",
+      "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The trend is asymptotically k^{-2}, below the criterion-scale wave",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u07.txt",
+      "unit_bytes": 5351,
+      "unit_id": "full_openalex_w2105290574_u07",
+      "unit_sha256": "1a79c9ab2befd1f188a87b028b534df2bf06a6667ce3b882e18aac6677258e9d",
+      "unit_type": "asymptotic hierarchy and numerical comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u07.txt",
+      "source": {
+        "source_id": "openalex_w2105290574",
+        "title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 260,
+          "line_end": 267,
+          "text": "limit of large k, but surprisingly the numbers produced                         The comparison of these formulae is given in Table 3.\nfrom the above formulae (10) and (11) are practically the                           Now we consider the oscillating part ck . Since\nsame as obtained from the generic formula (1) for all k, e.g.                   PARI/GP does not have built in B(x, y) function, we had to\nalready for k = 2 we get c2 = –0.25699711 from (1), while                       use the Γ ( z ) functions instead. Because of the fast growth\n(10) and (11) give c2 = –0.256969863 and accuracy                               of the Γ ( x ) function even in PARI/GP it was not possible\nincreases with k. It suggests that the integrals Jk appearing                   to pursue with formula (11) for large k. Namely it crashes\nin [4] in the proof of the Theorem 1.5 are decreasing to                        for k = 356000 because of overflow. But there is the\nzero rather fast with k.                                                        following asymptotic formula (see e.g. [15], §1.8.7):\n",
+          "sha256": "154de2d623f748a2abe74eb8db9d1819a3a9b187dfd030bd83ff498c56bc675a"
+        },
+        "after": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "<!-- source-page: 5 -->\n\nEvidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis                              51\n\n\n                              ! ! 1 + ρl \" \"\n                              # Γ#       $$\n                       βl = ℑ # % 2 & $ .                        (18)\n",
+          "sha256": "0d8a9d180a6b790c92200e77de1f5e18584ad5623605765c2570f21bbe8625bc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6a48445e7c4716d439fa49fa535c131c243cb9acccbf6e2935de148536818933",
+        "dossier_sha256": "eb8defbc33c638d853c08a619396c4973bba048aaa776fb6790aa7db6d358061",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Explicit formulae and trend",
+            "line_end": 320,
+            "line_start": 199,
+            "mathematical_role": "Contrasts derivations, separates trend from oscillation, states zero-dependent assumptions, and compares exact and asymptotic trend formulas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 320,
+          "line_start": 268,
+          "title": "The trend is asymptotically k^{-2}, below the criterion-scale wave",
+          "unit_id": "full_openalex_w2105290574_u07",
+          "unit_type": "asymptotic hierarchy and numerical comparison",
+          "why_material": "The source derives an exact trend series, a finite asymptotic expansion, and a leading k^{-2} simplification, then compares all three across increasing k. This establishes that the trend decays faster than the k^{-3/4} oscillatory scale relevant to the criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The comparison table is retained because it shows where the successive approximations become reliable rather than merely listing outputs.",
+          "representation_dependency": "High: exact constants and correction terms are embedded in extraction-fragile displays; the asymptotic ordering and table trend are recoverable from the checked prose and rows.",
+          "unit_id": "full_openalex_w2105290574_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 303,
+            "line_start": 243,
+            "title": "Trend/oscillation representation and its asymptotic regime",
+            "unit_id": "full_openalex_w2105290574_u03",
+            "unit_type": "trend-versus-oscillation decomposition",
+            "why_material": "The immutable v1 span contains the assumptions on the zero sum, identifies the beta-function representation, reports close agreement with the generic sequence, and begins the exact-to-asymptotic treatment of the trend. It preserves the conceptual split between smooth decay and spectral fluctuation."
+          },
+          {
+            "line_end": 383,
+            "line_start": 278,
+            "title": "Conjugate zeros generate logarithmic waves with exponentially damped coefficients",
+            "unit_id": "full_openalex_w2105290574_u08",
+            "unit_type": "spectral asymptotic representation",
+            "why_material": "Assuming RH, conjugate zeros convert the oscillatory term into a k^{-3/4} envelope multiplying sines and cosines whose log(k) frequencies are set by zero ordinates. The Hadamard-product and gamma-identity discussion yields exponential coefficient decay, explaining why only the first few zeros materially shape the computed wave."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A k^{-2} trend becomes negligible beside a k^{-3/4} zero-driven wave; exponential damping makes the first zero dominate observed oscillation while also making a sufficiently high hypothetical off-line zero extraordinarily hard to detect at finite k.",
+            "limit": "The displayed oscillatory asymptotic assumes RH and simple zeros, while the damping estimate for hypothetical off-line zeros is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2105290574_u03",
+              "full_openalex_w2105290574_u07",
+              "full_openalex_w2105290574_u08",
+              "full_openalex_w2105290574_u09",
+              "full_openalex_w2105290574_u01"
+            ],
+            "title": "Spectral wave structure and the observational bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2105290574_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2105290574_u07",
+          "spontaneous_reading": "Successive asymptotic compression reveals the hierarchy: the exact trend series is replaced by a finite expansion and then by a leading negative k^{-2} term. The table matters because it shows the regime in which that compression becomes faithful."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2105290574_u07",
+          "source_grounded_mathematics": "The source derives the trend from its exact series, gives a multi-term large-k expansion, and simplifies it to a leading term proportional to -k^{-2}. Table 3 compares the exact trend with the finite expansion and leading approximation from small through large k; the approximations are poor at the smallest indices and rapidly align as k grows. Thus the trend decays faster than the k^{-3/4} oscillatory scale used later.",
+          "conceptual_reading": "This is an asymptotic hierarchy in which each representation forgets lower-order detail in exchange for control of the dominant scale. Once k^{-2} is isolated, the trend can be ruled out as the component governing the normalized k^{3/4} wave.",
+          "representation_or_bridge": "The beta/gamma asymptotic ratio bridges the exact trend series to inverse powers of k. The comparison table bridges symbolic asymptotics to their effective numerical regime and prevents the leading term from being mistaken for a uniformly accurate formula.",
+          "boundary_or_failure": "The leading approximation is visibly unreliable for small k, and the table only checks selected indices. Establishing that the trend is lower order does not bound the oscillatory component or prove the RH criterion. Exact constants and correction terms are embedded in extraction-fragile displays.",
+          "uncertainty": "High confidence in the k^{-2} ordering and improving large-k agreement; moderate confidence in exact constants and early table values without scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span overlaps the trend unit to retain the assumption and asymptotic beta-function step that lead into equation (16), then includes the coefficient argument and Table 4 evidence.",
+      "line_end": 383,
+      "line_start": 278,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the conceptual frequency/amplitude separation is prose-supported, but equation (16), alpha/beta definitions, and exponential factors must be scan-verified before exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Assuming RH, conjugate zeros convert the oscillatory term into a k^{-3/4} envelope multiplying sines and cosines whose log(k) frequencies are set by zero ordinates. The Hadamard-product and gamma-identity discussion yields exponential coefficient decay, explaining why only the first few zeros materially shape the computed wave.",
+      "source_id": "openalex_w2105290574",
+      "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjugate zeros generate logarithmic waves with exponentially damped coefficients",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u08.txt",
+      "unit_bytes": 8366,
+      "unit_id": "full_openalex_w2105290574_u08",
+      "unit_sha256": "76eedf79586e8e6a7b5cda0a71b478fc56ffead19459da7f46b2dfc486605921",
+      "unit_type": "spectral asymptotic representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u08.txt",
+      "source": {
+        "source_id": "openalex_w2105290574",
+        "title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 270,
+          "line_end": 277,
+          "text": "                                                                                                              ~ x −a ,                x→∞\n                                   1                                                                Γ( x + a)\n                         ck = −         ×                  (12)\n                                ( 2π )2                                         thus we have\n  ∞\n                                1                          ( −1)m ( 2π )2 m\n×                                                                                                   B ( a, x ) ~ x − a Γ ( a )        for x large.   (15)\n m − 2 ( k + 1)( k + 2 ) !( k + m ) m ( m + 1) !( 2m − 2 )   ζ ( 2m − 1)\n",
+          "sha256": "68585acce37aab6796a9060a6ff501d20801eeec2b89021848a81cd79a8d9f89"
+        },
+        "after": {
+          "line_start": 384,
+          "line_end": 391,
+          "text": "\n<!-- source-page: 6 -->\n\n52                                                                                M. Wolf\n\n\nas with ck for k < 200000 obtained directly from (1)                                In fact in [4] Baez-Duarte gives among others following\nwithout assuming RH. The plots of ck for k up to 109 ob-                            formula being the transformation of (1):\n",
+          "sha256": "9f5873f30ebf2492bb5316561171f62885012cc7acfe889fc3e4b08cfd70813e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6a48445e7c4716d439fa49fa535c131c243cb9acccbf6e2935de148536818933",
+        "dossier_sha256": "eb8defbc33c638d853c08a619396c4973bba048aaa776fb6790aa7db6d358061",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Explicit formulae and trend",
+            "line_end": 320,
+            "line_start": 199,
+            "mathematical_role": "Contrasts derivations, separates trend from oscillation, states zero-dependent assumptions, and compares exact and asymptotic trend formulas."
+          },
+          {
+            "label": "Oscillatory asymptotics and spectral coefficients",
+            "line_end": 389,
+            "line_start": 321,
+            "mathematical_role": "Interprets the k^{-3/4} envelope as a superposition of logarithmic waves and explains exponential suppression of higher-zero coefficients."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 383,
+          "line_start": 278,
+          "title": "Conjugate zeros generate logarithmic waves with exponentially damped coefficients",
+          "unit_id": "full_openalex_w2105290574_u08",
+          "unit_type": "spectral asymptotic representation",
+          "why_material": "Assuming RH, conjugate zeros convert the oscillatory term into a k^{-3/4} envelope multiplying sines and cosines whose log(k) frequencies are set by zero ordinates. The Hadamard-product and gamma-identity discussion yields exponential coefficient decay, explaining why only the first few zeros materially shape the computed wave."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span overlaps the trend unit to retain the assumption and asymptotic beta-function step that lead into equation (16), then includes the coefficient argument and Table 4 evidence.",
+          "representation_dependency": "High: the conceptual frequency/amplitude separation is prose-supported, but equation (16), alpha/beta definitions, and exponential factors must be scan-verified before exact reuse.",
+          "unit_id": "full_openalex_w2105290574_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 320,
+            "line_start": 268,
+            "title": "The trend is asymptotically k^{-2}, below the criterion-scale wave",
+            "unit_id": "full_openalex_w2105290574_u07",
+            "unit_type": "asymptotic hierarchy and numerical comparison",
+            "why_material": "The source derives an exact trend series, a finite asymptotic expansion, and a leading k^{-2} simplification, then compares all three across increasing k. This establishes that the trend decays faster than the k^{-3/4} oscillatory scale relevant to the criterion."
+          },
+          {
+            "line_end": 457,
+            "line_start": 390,
+            "title": "First-zero dominance turns the normalized sequence into a log-periodic sine",
+            "unit_id": "full_openalex_w2105290574_u09",
+            "unit_type": "dominant-mode reduction and cross-check",
+            "why_material": "The first-zero truncation rewrites k^{3/4}c_k as a single phase-shifted sinusoid with constant wavelength on a logarithmic k-axis. Consecutive sign changes then estimate the first zero's ordinate, while a Mobius-sum transform supplies the independent c_k calculation required for that check."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A k^{-2} trend becomes negligible beside a k^{-3/4} zero-driven wave; exponential damping makes the first zero dominate observed oscillation while also making a sufficiently high hypothetical off-line zero extraordinarily hard to detect at finite k.",
+            "limit": "The displayed oscillatory asymptotic assumes RH and simple zeros, while the damping estimate for hypothetical off-line zeros is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2105290574_u03",
+              "full_openalex_w2105290574_u07",
+              "full_openalex_w2105290574_u08",
+              "full_openalex_w2105290574_u09",
+              "full_openalex_w2105290574_u01"
+            ],
+            "title": "Spectral wave structure and the observational bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 389,
+              "line_start": 384,
+              "reason": "Page marker, header, and whitespace bridge the coefficient table to its prose continuation."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2105290574_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2105290574_u08",
+          "spontaneous_reading": "Pairing conjugate zeros turns the oscillatory remainder into a Fourier-like wave on log(k): zero ordinates determine frequencies, a k^{-3/4} factor supplies the common envelope, and exponentially damped coefficients make the lowest modes observationally dominant."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2105290574_u08",
+          "source_grounded_mathematics": "For large k, under RH the source pairs ρ_l=1/2+iγ_l with its conjugate and writes the oscillatory part as 2/(k+1)^{3/4} times a sum of cosine and sine terms whose arguments contain γ_l log(k+1)/2. Coefficients α_l and β_l come from real and imaginary parts of a gamma-factor divided by ζ′(ρ_l). A Hadamard-product and gamma-identity argument gives decay proportional to exp(-πγ_l/4), and Table 4 shows very small higher-zero coefficients; the author reports that the first zero already gives values within much less than one percent of longer truncations.",
+          "conceptual_reading": "The representation separates three roles cleanly: a universal decay envelope, spectral frequencies from zero heights, and mode amplitudes from local zeta data. Moving to logarithmic index makes multiplicative changes in k into additive phase motion and exposes why a few low zeros shape the visible signal.",
+          "representation_or_bridge": "Conjugate pairing converts complex zero contributions into real trigonometric modes. The Hadamard product and Γ(1+z)Γ(1-z) identity bridge analytic data at each zero to exponential amplitude suppression, making low-mode truncation computationally controllable.",
+          "boundary_or_failure": "The displayed wave uses RH and inherits the simple-zero dependence through ζ′(ρ_l); it is a large-k asymptotic representation. Numerical first-zero dominance over computed ranges does not establish uniform dominance or exclude a qualitatively different off-line contribution. Exact α_l, β_l formulas and exponential factors are extraction-sensitive.",
+          "uncertainty": "High confidence in the envelope/frequency/amplitude separation and rapid coefficient damping stated in prose; lower confidence in exact formula typography and the strength of the proportionality derivation without the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The normalized two-column page interleaves the wave derivation, transformed formula, and sign-change table. Keeping the full span preserves both the proposed diagnostic and the author's explicit independence requirement.",
+      "line_end": 457,
+      "line_start": 390,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: formula (26), phase conventions, the ratio in formula (25), and table columns are extraction-sensitive; the stated log-periodic mechanism and independence condition are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The first-zero truncation rewrites k^{3/4}c_k as a single phase-shifted sinusoid with constant wavelength on a logarithmic k-axis. Consecutive sign changes then estimate the first zero's ordinate, while a Mobius-sum transform supplies the independent c_k calculation required for that check.",
+      "source_id": "openalex_w2105290574",
+      "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "First-zero dominance turns the normalized sequence into a log-periodic sine",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u09.txt",
+      "unit_bytes": 7381,
+      "unit_id": "full_openalex_w2105290574_u09",
+      "unit_sha256": "0fd86fc74889ed899e6bf6c7d131005a9a7e6921567bfc645dc60d0c13da4cb6",
+      "unit_type": "dominant-mode reduction and cross-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u09.txt",
+      "source": {
+        "source_id": "openalex_w2105290574",
+        "title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 382,
+          "line_end": 389,
+          "text": "     9             9.328038737 × 10–19                         –7.472197226 × 10–17                          4.22403 × 10–17\n    10             1.747829093 × 10–17                           1.122667624 × 10–17                         1.05303 × 10–17\n\n<!-- source-page: 6 -->\n\n52                                                                                M. Wolf\n\n\n",
+          "sha256": "c1215165ac82c828a5f3888d061aeee43faab853d01e584816bebb2352da2718"
+        },
+        "after": {
+          "line_start": 458,
+          "line_end": 465,
+          "text": "\n<!-- source-page: 7 -->\n\nEvidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis                            53\n\n         In Fig. 2 the plot of k3/4ck is presented. The Baez-Duarte   the second zero, thus there is no chance to get values of ck\ncriterion requires this ”wave” to be contained in the strip of        violating (2) in this way. It seems to be an open problem\nparallel lines for all k. Violation of the RH would manifest          how to connect the value of the largest k for which\n",
+          "sha256": "2e3c63b97afbaf2771b54ceaea08a272e9eb96d37ca7388ec8aec073439a86d4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6a48445e7c4716d439fa49fa535c131c243cb9acccbf6e2935de148536818933",
+        "dossier_sha256": "eb8defbc33c638d853c08a619396c4973bba048aaa776fb6790aa7db6d358061",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "First-zero wave and independent diagnostics",
+            "line_end": 458,
+            "line_start": 390,
+            "mathematical_role": "Reduces the wave to its first spectral component, derives its envelope and zero spacing, and compares sign changes through a separate transformed expression."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 457,
+          "line_start": 390,
+          "title": "First-zero dominance turns the normalized sequence into a log-periodic sine",
+          "unit_id": "full_openalex_w2105290574_u09",
+          "unit_type": "dominant-mode reduction and cross-check",
+          "why_material": "The first-zero truncation rewrites k^{3/4}c_k as a single phase-shifted sinusoid with constant wavelength on a logarithmic k-axis. Consecutive sign changes then estimate the first zero's ordinate, while a Mobius-sum transform supplies the independent c_k calculation required for that check."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The normalized two-column page interleaves the wave derivation, transformed formula, and sign-change table. Keeping the full span preserves both the proposed diagnostic and the author's explicit independence requirement.",
+          "representation_dependency": "High: formula (26), phase conventions, the ratio in formula (25), and table columns are extraction-sensitive; the stated log-periodic mechanism and independence condition are recoverable.",
+          "unit_id": "full_openalex_w2105290574_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 383,
+            "line_start": 278,
+            "title": "Conjugate zeros generate logarithmic waves with exponentially damped coefficients",
+            "unit_id": "full_openalex_w2105290574_u08",
+            "unit_type": "spectral asymptotic representation",
+            "why_material": "Assuming RH, conjugate zeros convert the oscillatory term into a k^{-3/4} envelope multiplying sines and cosines whose log(k) frequencies are set by zero ordinates. The Hadamard-product and gamma-identity discussion yields exponential coefficient decay, explaining why only the first few zeros materially shape the computed wave."
+          },
+          {
+            "line_end": 506,
+            "line_start": 463,
+            "title": "Off-critical zeros may be invisible because spectral damping overwhelms asymptotic growth",
+            "unit_id": "full_openalex_w2105290574_u01",
+            "unit_type": "Baez-Duarte numerical obstruction",
+            "why_material": "The immutable v1 span separates on-line and hypothetical off-line zero contributions and argues that a very high off-line zero could have an exponentially tiny coefficient, requiring an enormous k before its slower-decaying contribution becomes visible. This directly limits what finite nonviolation of the decay bound can establish."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A k^{-2} trend becomes negligible beside a k^{-3/4} zero-driven wave; exponential damping makes the first zero dominate observed oscillation while also making a sufficiently high hypothetical off-line zero extraordinarily hard to detect at finite k.",
+            "limit": "The displayed oscillatory asymptotic assumes RH and simple zeros, while the damping estimate for hypothetical off-line zeros is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2105290574_u03",
+              "full_openalex_w2105290574_u07",
+              "full_openalex_w2105290574_u08",
+              "full_openalex_w2105290574_u09",
+              "full_openalex_w2105290574_u01"
+            ],
+            "title": "Spectral wave structure and the observational bottleneck"
+          },
+          {
+            "claim": "The slow generic finite-difference computation, despite severe precision cost, does not assume RH and therefore controls fast explicit zero-based calculations and sign-change diagnostics that do use stronger assumptions or approximations.",
+            "limit": "Agreement over computed ranges validates numerical implementation conditionally; it neither proves the asymptotic criterion nor excludes later violations.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2105290574_u05",
+              "full_openalex_w2105290574_u06",
+              "full_openalex_w2105290574_u09"
+            ],
+            "title": "Assumption-independent computation as a control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 389,
+              "line_start": 384,
+              "reason": "Page marker, header, and whitespace bridge the coefficient table to its prose continuation."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 462,
+              "line_start": 458,
+              "reason": "Whitespace, page marker, and running header separate the diagnostic passage from the obstruction discussion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2105290574_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2105290574_u09",
+          "spontaneous_reading": "First-mode truncation compresses the normalized sequence into a phase-shifted sinusoid with constant wavelength on a logarithmic k-axis. Its strongest feature is a noncircular diagnostic: recover the first zero's ordinate from independently computed sign changes rather than from the same sinusoidal formula that predicts them."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2105290574_u09",
+          "source_grounded_mathematics": "Keeping only the first zero combines the cosine and sine coefficients into one amplitude and phase, yielding c_k approximately equal to a k^{-3/4} envelope times a sinusoid in log(k+1). The source relates consecutive zeros of c_k to γ_1 through their logarithmic spacing. To make that check independent, it uses a Möbius-sum transform of the defining sequence to search for sign changes up to k=10^9, linearly interpolates their locations, and reports γ_1 estimates that fluctuate around the known value rather than converging monotonically.",
+          "conceptual_reading": "The first spectral mode is a low-dimensional surrogate that turns a complicated sequence into amplitude, phase, and log-frequency. Sign-change spacing discards amplitude and retains frequency, so it can test whether the proposed spectral interpretation captures the geometry of the oscillation.",
+          "representation_or_bridge": "The trigonometric identity merges α_1 and β_1 into amplitude-phase form; log(k) turns multiplicative spacing into a constant wavelength. The independent Möbius representation of c_k bridges the original sequence to sign locations without reusing the first-zero approximation, which is essential to avoid circular validation.",
+          "boundary_or_failure": "The diagnostic inherits the asymptotic, RH, simple-zero, and first-mode approximations. Integer sampling plus linear interpolation limits zero-location accuracy, and the reported estimates fluctuate. Without an independent computation of c_k the sign-spacing check would be circular. Formula (25)'s ratio and phase conventions are extraction-sensitive.",
+          "uncertainty": "High confidence in the log-periodic mechanism and independence requirement; moderate confidence in exact phase, envelope constants, and spacing formula typography because the two-column extraction interleaves formulas and the table."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Reference entries are interleaved with the left-column final remarks, but the mathematical prose from the heading through the derivative comparison remains readable. This is numerical evidence and a method-specific comparison, not a proof of robustness for all pairs.",
+      "line_end": 528,
+      "line_start": 511,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: formula references and derivative values are extraction-sensitive, while the qualitative comparison is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The final remarks state that the low-zero explicit formula enables evaluation at arbitrary large indices and contrast the Baez-Duarte bound with criteria sensitive to Lehmer pairs. The checked first pair has derivative values comparable for its two zeros, so the author finds no mechanism there for violating the bound.",
+      "source_id": "openalex_w2105290574",
+      "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fast arbitrary-index evaluation is not visibly destabilized by the first Lehmer pair",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u10.txt",
+      "unit_bytes": 1817,
+      "unit_id": "full_openalex_w2105290574_u10",
+      "unit_sha256": "1d1bb81ac79e6242e3feac8d7b3839d0de26f248a1e2c9629e016f8e9f191cda",
+      "unit_type": "method comparison and robustness limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u10.txt",
+      "source": {
+        "source_id": "openalex_w2105290574",
+        "title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 503,
+          "line_end": 510,
+          "text": "thus it gives visual justification of the above statement that             at arXiv:math-ph/0105007 2001.\n c is in fact determined by the first zero γ1. The same                [2] L. Baez-Duarte, On Maslankas representation for the\n                                                                           Riemann zeta function, 2003, math.NT/0307214.\nphenomenon was mentioned by Ma lanka in [6].\n                                                                       [3 L. Baez-Duarte, A new necessary and su±cient condition\n                                                                           for the Riemann Hypothesis, 2003, math.NT/0307215.\n                                                                       [4] L. Baez-Duarte, A sequential Riesz-like criterion for the\n                                                                           Riemann Hypothesis, International Journal of Mathematics\n",
+          "sha256": "c8aacc73161eba31d955b11917c16d3c4fa353ed56576151b93055b5740670ff"
+        },
+        "after": {
+          "line_start": 529,
+          "line_end": 536,
+          "text": "<!-- source-page: 8 -->\n\n54                                                                M. Wolf\n\n[10] J. Cislo and M. Wolf, Criteria equivalent to the Riemann       [16] S. Beltraminelli and D. Merlini, Riemann Hypothesis: The\n     Hypothesis, arXiv:math.NT/0808.0640v2.                              Riesz-Hardy-Littlewood wave in the long wavelength\n[11] L. Baez-Duarte, Möbius-Convolutions and the Riemann                 region, math.NT/0605565\n     Hypothesis, arXiv:math.NT/0504402                              [17] A. M. Odlyzko, An improved bound for the de Bruijn-New-\n",
+          "sha256": "0c0898217fb4ad26608b573d67f93895a449448e7179713a8a7c1c1ba0019e6f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6a48445e7c4716d439fa49fa535c131c243cb9acccbf6e2935de148536818933",
+        "dossier_sha256": "eb8defbc33c638d853c08a619396c4973bba048aaa776fb6790aa7db6d358061",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Off-critical-zero obstruction and final remarks",
+            "line_end": 528,
+            "line_start": 459,
+            "mathematical_role": "Analyzes how a hypothetical off-line zero would enter, why its signal could be extraordinarily suppressed, and compares this criterion with Lehmer-pair-sensitive criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 528,
+          "line_start": 511,
+          "title": "Fast arbitrary-index evaluation is not visibly destabilized by the first Lehmer pair",
+          "unit_id": "full_openalex_w2105290574_u10",
+          "unit_type": "method comparison and robustness limitation",
+          "why_material": "The final remarks state that the low-zero explicit formula enables evaluation at arbitrary large indices and contrast the Baez-Duarte bound with criteria sensitive to Lehmer pairs. The checked first pair has derivative values comparable for its two zeros, so the author finds no mechanism there for violating the bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Reference entries are interleaved with the left-column final remarks, but the mathematical prose from the heading through the derivative comparison remains readable. This is numerical evidence and a method-specific comparison, not a proof of robustness for all pairs.",
+          "representation_dependency": "Moderate: formula references and derivative values are extraction-sensitive, while the qualitative comparison is prose-supported.",
+          "unit_id": "full_openalex_w2105290574_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 506,
+            "line_start": 463,
+            "title": "Off-critical zeros may be invisible because spectral damping overwhelms asymptotic growth",
+            "unit_id": "full_openalex_w2105290574_u01",
+            "unit_type": "Baez-Duarte numerical obstruction",
+            "why_material": "The immutable v1 span separates on-line and hypothetical off-line zero contributions and argues that a very high off-line zero could have an exponentially tiny coefficient, requiring an enormous k before its slower-decaying contribution becomes visible. This directly limits what finite nonviolation of the decay bound can establish."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2105290574_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2105290574_u10",
+          "spontaneous_reading": "The final remark uses a known near-collision of zeta zeros as a stress test for the explicit representation. Because zero contributions are weighted through ζ′ at the zero, comparing derivative values asks whether a Lehmer pair visibly amplifies this criterion's coefficients."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2105290574_u10",
+          "source_grounded_mathematics": "The source says that equation (16) with only a few tabulated coefficients permits evaluation of c_k at arbitrarily large indices. It contrasts the Baez-Duarte inequality with RH criteria known to be vulnerable to Lehmer pairs, then checks the first Lehmer pair near height 7005. The displayed derivative at one zero and the statement that the other has a similar value provide no observed derivative imbalance that would explain violation of the k^{-3/4} bound in this example.",
+          "conceptual_reading": "This is a targeted robustness probe: instead of treating a close zero pair as automatically dangerous, the source tests the local quantity that weights those zeros in its own spectral formula. It illustrates that an obstruction in one RH criterion need not transfer without a representation-specific mechanism.",
+          "representation_or_bridge": "The bridge is ζ′(ρ), whose reciprocal appears in the earlier zero-sum coefficients, linking Lehmer-pair geometry to possible amplification of c_k. The low-zero explicit formula makes very large indices accessible, while the pairwise derivative comparison supplies a local sensitivity check.",
+          "boundary_or_failure": "Only the first Lehmer pair is checked, so the result is numerical and method-specific, not robustness for all pairs or a proof of the inequality. The unit ends after saying the second derivative is similar, without displaying it in the captured span, and references are interleaved with the prose. Arbitrarily large evaluability under the formula's assumptions does not remove those assumptions.",
+          "uncertainty": "Moderate confidence in the qualitative comparison and single-pair limitation; low confidence in exact derivative transcription and no basis in this span for a general Lehmer-pair conclusion."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "053304feeeebe4616560a29c21c53ebdb3cb124590b14225485971dcda4363db"
+}

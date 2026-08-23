@@ -1,0 +1,815 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2039040097_c1822ae4_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2039040097",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the coefficient limit, convergence radius, derivative calculation, and comparison with an explicit-formula derivation.",
+      "line_end": 330,
+      "line_start": 229,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive but coherent in the normalized text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 derives the central decomposition into an eta sum S2, an explicit zeta sum S1, and elementary terms, making separate cancellation mechanisms available for study.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Laurent coefficients of zeta's logarithmic derivative split each Li coefficient into two binomial sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_v2_u02.txt",
+      "unit_bytes": 4626,
+      "unit_id": "openalex_w2039040097_v2_u02",
+      "unit_sha256": "91b60423dc20de8cd2452deec9b76dfacd7b68a184bedf1f5493c99ec8a55e30",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 221,
+          "line_end": 228,
+          "text": "                                        n! dsn ξ(s) s=1\n\nAlternatively, in the particular case of λ2 , one can write λ2 = 2λ1 −λ21 +lims→1 sξ ′′ (s)/ξ(s).\n\nElsewhere, we have very recently obtained a general explicit relation for λk in terms\n\nof the Stieltjes constants [11].\n\n",
+          "sha256": "1f776bd30ad3cadf50b2b93e016017977847ba0ad6a8124a7a691c69c0fb03ce"
+        },
+        "after": {
+          "line_start": 331,
+          "line_end": 338,
+          "text": "\n                                       Estimation of Sums\n\n   We characterize each of the two summation terms on the right side of Eq. (10) in\n\nturn. Before this discussion, we emphasize that the first few λj ’s may be explicitly\n\nwritten, as indicated above, and directly verified to be positive. In addition, we note\n",
+          "sha256": "91d359e62e8ce1cfd92757b2bc2c91446da14c4c9f5b497ae6f6ef1ebbb818eb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d66aa2495b96f36b1c172292a7ff1351855d786b16e6e7c7d4061671118c52d4",
+        "dossier_sha256": "fa93e1f5466669de811ac6c73d460b103cd0bddf1f2572a7a048653490daff21",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Alternative representation of Li coefficients",
+            "line_end": 331,
+            "line_start": 229,
+            "mathematical_role": "Derives the eta-plus-zeta decomposition from the Laurent expansion of the logarithmic derivative of zeta."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 330,
+          "line_start": 229,
+          "title": "Laurent coefficients of zeta's logarithmic derivative split each Li coefficient into two binomial sums",
+          "unit_id": "openalex_w2039040097_v2_u02",
+          "unit_type": "representation-change",
+          "why_material": "Theorem 1 derives the central decomposition into an eta sum S2, an explicit zeta sum S1, and elementary terms, making separate cancellation mechanisms available for study."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the coefficient limit, convergence radius, derivative calculation, and comparison with an explicit-formula derivation.",
+          "representation_dependency": "Formula-sensitive but coherent in the normalized text.",
+          "unit_id": "openalex_w2039040097_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 227,
+            "line_start": 65,
+            "title": "Li positivity converts RH into a sequence problem with a zero-sum interpretation",
+            "unit_id": "openalex_w2039040097_v2_u01",
+            "unit_type": "equivalent-criterion-and-representation",
+            "why_material": "The span separates the analytic unit-disk criterion, logarithmic-derivative definition, reciprocal-zero representation, and Stieltjes-constant formulas, providing the semantic setup for every later estimate."
+          },
+          {
+            "line_end": 455,
+            "line_start": 332,
+            "title": "Odd-integer expansions turn S1 into a monotone sum with an n log n lower bound",
+            "unit_id": "openalex_w2039040097_v2_u03",
+            "unit_type": "comparison-integral-lower-bound",
+            "why_material": "Equivalent sum representations and a decreasing comparison integrand yield a rigorous lower bound for the positive contribution in the Li decomposition, while keeping the linear-term limitation explicit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Li decomposition supplies a rigorous n log n contribution, while the RH route succeeds only if the eta binomial transform is quantitatively smaller; the exact sigma-eta identity motivates but does not prove that cancellation.",
+            "limit": "The S2 bound and the global eta magnitude law are conjectural, so the synthesis is a conditional architecture rather than verification of RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2039040097_v2_u02",
+              "openalex_w2039040097_v2_u03",
+              "openalex_w2039040097_v2_u08",
+              "openalex_w2039040097_v2_u09"
+            ],
+            "title": "Li positivity as a balance between explicit growth and unresolved cancellation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_v2_u02",
+          "spontaneous_reading": "Expanding ζ'/ζ at one decomposes each Li coefficient into two binomial sums: an η-coefficient term with difficult cancellation and an explicit positive zeta term. This separation makes the hoped-for proof route operational by isolating its unresolved component."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_v2_u02",
+          "source_grounded_mathematics": "Theorem 1 derives λ_n as a negative binomial sum over η_{m-1}, a binomial sum over (1-2^{-m})ζ(m), and elementary linear terms. The η_j are Laurent coefficients of ζ'/ζ and also have a von-Mangoldt limit formula. The source notes radius three, set by the trivial zero at -2, and gives derivative and explicit-formula derivations.",
+          "conceptual_reading": "The representation separates an explicitly estimable contribution from arithmetic cancellation encoded locally in ζ'/ζ. It preserves the full Li coefficient while exposing where positivity could fail.",
+          "representation_or_bridge": "Laurent coefficients η_j bridge prime-weighted Chebyshev data to Li derivatives; binomial transforms assemble them into λ_n.",
+          "boundary_or_failure": "The decomposition is exact, but estimating its two large cancelling sums separately can lose decisive information. It does not establish the proposed η behavior.",
+          "uncertainty": "The formula structure is coherent; signs, limits, and coefficient normalizations are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The source decomposes the Li coefficients into explicit elementary terms and a binomial transform involving the eta coefficients from the logarithmic derivative of zeta."
+        ],
+        "inference": [
+          "Viewing the decomposition as separating a tractable deterministic part from a difficult zeta-dependent part is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "Calling the zeta-dependent binomial sum itself 'explicit positive' is unsupported: alternating binomial signs and eta coefficients do not give termwise positivity, and the later lower-bound argument is separate."
+        ],
+        "paraphrase_or_style_risk": [
+          "The easy-versus-hard split is helpful, but positivity language can silently convert an exact decomposition into a sign theorem."
+        ],
+        "context_or_ocr_risk": [
+          "Exact constants, indices, and sign conventions in the displayed decomposition should be checked against the typeset formula."
+        ],
+        "missed_mechanism": [
+          "The analysis misses that the decomposition alone does not determine the sign of the eta contribution; controlling that cancellation is the substantive burden."
+        ],
+        "revision_instructions": [
+          "Replace 'explicit positive' with 'explicit zeta-dependent binomial sum' and reserve positivity or lower-bound claims for the later arguments that actually establish them."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The full transferred inequalities and arithmetic sums are developed in Appendix E.",
+      "line_end": 492,
+      "line_start": 457,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence; exact normalizations should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewriting the parity-dependent elementary terms in terms of S0, S1, and S3 shows exactly which part of the Riemann-case machinery transfers to extended RH settings.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The S1 estimates map directly into Dirichlet and Hecke Li formulas",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_v2_u04.txt",
+      "unit_bytes": 1238,
+      "unit_id": "openalex_w2039040097_v2_u04",
+      "unit_sha256": "1949782bc56bc48acb268fe355301421ac1a8b42b4f4e0da1571a512e3ea7d93",
+      "unit_type": "cross-family-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 449,
+          "line_end": 456,
+          "text": "obtained the inequality λn ≥ (n/2) ln n−(n/2)(1+ln π +2 ln 2)+3/2−|S2|. Similarly,\n\nit is possible to readily obtain an upper bound for S1 and λn . We have, for instance,\n\nS1 (n) ≤ (n/2) ln n + (γ + 1)n/2 − 1/2. It is possible to develop improved coefficients\n\nfor the linear in n term, giving tighter bounds for S1 (n), as shown in Appendix L.\n\n",
+          "sha256": "45acccba1654802d7ca086218d27c6bac48e10d833ed133db5d6e4f02d0179cc"
+        },
+        "after": {
+          "line_start": 493,
+          "line_end": 500,
+          "text": "\n   (2) In Ref. [39], the rate of growth of the sum S1 (n) is conjectured. An integral\n\nexpression for the Li constants is written and a saddle point method is applied. How-\n\never, the dominant O(n ln n) behaviour that we have demonstrated is not rigorously\n\nobtained.\n",
+          "sha256": "8a33e3c2131ff1f3b73b0b82b39f5b0d9385f38b9aace8bd28ae0126eda9eacd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d66aa2495b96f36b1c172292a7ff1351855d786b16e6e7c7d4061671118c52d4",
+        "dossier_sha256": "fa93e1f5466669de811ac6c73d460b103cd0bddf1f2572a7a048653490daff21",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Estimation of sums",
+            "line_end": 969,
+            "line_start": 332,
+            "mathematical_role": "Bounds the explicit zeta sum, connects eta and reciprocal-zero sums, analyzes eta moments and decay, and states the conditional S2 and Li bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 492,
+          "line_start": 457,
+          "title": "The S1 estimates map directly into Dirichlet and Hecke Li formulas",
+          "unit_id": "openalex_w2039040097_v2_u04",
+          "unit_type": "cross-family-transfer",
+          "why_material": "Rewriting the parity-dependent elementary terms in terms of S0, S1, and S3 shows exactly which part of the Riemann-case machinery transfers to extended RH settings."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The full transferred inequalities and arithmetic sums are developed in Appendix E.",
+          "representation_dependency": "High formula dependence; exact normalizations should be scan-checked.",
+          "unit_id": "openalex_w2039040097_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 455,
+            "line_start": 332,
+            "title": "Odd-integer expansions turn S1 into a monotone sum with an n log n lower bound",
+            "unit_id": "openalex_w2039040097_v2_u03",
+            "unit_type": "comparison-integral-lower-bound",
+            "why_material": "Equivalent sum representations and a decreasing comparison integrand yield a rigorous lower bound for the positive contribution in the Li decomposition, while keeping the linear-term limitation explicit."
+          },
+          {
+            "line_end": 517,
+            "line_start": 502,
+            "title": "Eta coefficients are recursively generated from Stieltjes constants",
+            "unit_id": "openalex_w2039040097_v2_u05",
+            "unit_type": "coefficient-recursion",
+            "why_material": "The recursion exposes eta as the coefficient-level consequence of multiplying zeta by its logarithmic derivative, giving a direct computational and inductive bridge between two coefficient systems."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gamma factors yield explicit controllable sums and logarithmic derivatives yield arithmetic prime sums across zeta, Dirichlet, elliptic, and Dedekind settings.",
+            "limit": "The smallness of the arithmetic sums is conjectural, and the Dedekind series is left without a convergence justification.",
+            "parent_local_unit_ids": [
+              "openalex_w2039040097_v2_u04",
+              "openalex_w2039040097_v2_u15",
+              "openalex_w2039040097_v2_u16",
+              "openalex_w2039040097_v2_u17"
+            ],
+            "title": "Completed L-functions share a Li-formula skeleton but not a proved cancellation theorem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 547,
+              "line_start": 493,
+              "reason": "Eta recursion and setup for the sigma coefficient expansion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_v2_u04",
+          "spontaneous_reading": "The Riemann-case sum estimates transfer to Dirichlet and Hecke Li formulas only after their parity-dependent elementary terms are rewritten in a common basis S0, S1, and S3. The reusable content is the estimation toolkit, not the entire RH argument."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_v2_u04",
+          "source_grounded_mathematics": "The source rewrites Li's τ_χ(n) as S1-n log 2 for even characters and S0-S1 for odd characters, and rewrites the elliptic-curve elementary term using S3-S0. It points to Appendix E for resulting inequalities.",
+          "conceptual_reading": "A basis change reveals which analytic pieces are shared across L-function families and which arithmetic sums remain family-specific.",
+          "representation_or_bridge": "The common binomial-zeta sums S0, S1, S3 bridge Riemann estimates to Dirichlet and Hecke Li coefficients.",
+          "boundary_or_failure": "Transfer of elementary estimates does not control the character- or curve-weighted von Mangoldt sums and therefore does not verify generalized RH.",
+          "uncertainty": "The span is short and highly formula-dependent; exact normalizations require scan checking."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_v2_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The source rewrites the tau-function analogue in terms of components labeled S0, S1, and S3 and points the reader to an appendix for details."
+        ],
+        "inference": [
+          "It is reasonable to infer that the same decomposition pattern is being transferred to another L-function setting."
+        ],
+        "unsupported_or_imported": [
+          "The discussion of character twists, curve cases, and von Mangoldt-type obstructions is imported from broader or later context, not established in this short span."
+        ],
+        "paraphrase_or_style_risk": [
+          "A general 'transfer template' risks making a local remark sound like a developed uniform theory."
+        ],
+        "context_or_ocr_risk": [
+          "The unit is a boundary fragment and omits the appendix derivation and surrounding definitions needed to audit the analogue in detail."
+        ],
+        "missed_mechanism": [
+          "The analysis should distinguish the source's actual tau decomposition from speculative extensions to other arithmetic families."
+        ],
+        "revision_instructions": [
+          "Keep the S0/S1/S3 tau analogue and appendix pointer; remove the character-, curve-, and von-Mangoldt generalization or label it explicitly as external speculation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Later bounds use this recursion only as secondary support because the sigma identity is sharper.",
+      "line_end": 517,
+      "line_start": 502,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Normalized formula is legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The recursion exposes eta as the coefficient-level consequence of multiplying zeta by its logarithmic derivative, giving a direct computational and inductive bridge between two coefficient systems.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Eta coefficients are recursively generated from Stieltjes constants",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_v2_u05.txt",
+      "unit_bytes": 843,
+      "unit_id": "openalex_w2039040097_v2_u05",
+      "unit_sha256": "067a84d20637b791fac08f139d2e53bb3dd2a16a53b70d39477a338f2966766e",
+      "unit_type": "coefficient-recursion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 494,
+          "line_end": 501,
+          "text": "   (2) In Ref. [39], the rate of growth of the sum S1 (n) is conjectured. An integral\n\nexpression for the Li constants is written and a saddle point method is applied. How-\n\never, the dominant O(n ln n) behaviour that we have demonstrated is not rigorously\n\nobtained.\n\n",
+          "sha256": "91fa9815969f020ae53e6801c9549d4dfc75d7f3b9932bb101d22d29279fa017"
+        },
+        "after": {
+          "line_start": 518,
+          "line_end": 525,
+          "text": "\n   It is also of interest to relate the sequence {ηj } to the sequence {σk } which occurs\n\nin the expansion\n                                               ∞\n                                                            σk\n                                                    (−1)k      (s − 1)k .\n                                               X\n",
+          "sha256": "3a5654399dde25afeb856c4529b278cd7ff1079b5e93cb028726635c814b3a19"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d66aa2495b96f36b1c172292a7ff1351855d786b16e6e7c7d4061671118c52d4",
+        "dossier_sha256": "fa93e1f5466669de811ac6c73d460b103cd0bddf1f2572a7a048653490daff21",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Estimation of sums",
+            "line_end": 969,
+            "line_start": 332,
+            "mathematical_role": "Bounds the explicit zeta sum, connects eta and reciprocal-zero sums, analyzes eta moments and decay, and states the conditional S2 and Li bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 517,
+          "line_start": 502,
+          "title": "Eta coefficients are recursively generated from Stieltjes constants",
+          "unit_id": "openalex_w2039040097_v2_u05",
+          "unit_type": "coefficient-recursion",
+          "why_material": "The recursion exposes eta as the coefficient-level consequence of multiplying zeta by its logarithmic derivative, giving a direct computational and inductive bridge between two coefficient systems."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Later bounds use this recursion only as secondary support because the sigma identity is sharper.",
+          "representation_dependency": "Normalized formula is legible.",
+          "unit_id": "openalex_w2039040097_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 492,
+            "line_start": 457,
+            "title": "The S1 estimates map directly into Dirichlet and Hecke Li formulas",
+            "unit_id": "openalex_w2039040097_v2_u04",
+            "unit_type": "cross-family-transfer",
+            "why_material": "Rewriting the parity-dependent elementary terms in terms of S0, S1, and S3 shows exactly which part of the Riemann-case machinery transfers to extended RH settings."
+          },
+          {
+            "line_end": 662,
+            "line_start": 519,
+            "title": "Reciprocal-zero power sums equal an eta coefficient minus a simple zeta tail",
+            "unit_id": "openalex_w2039040097_v2_u06",
+            "unit_type": "exact-zero-coefficient-identity",
+            "why_material": "Theorem 3 links the local Laurent data at one to global nontrivial zeros and proves the bridge by reordering a successive zeta sum; it is the key identity behind the decay conjecture."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 547,
+              "line_start": 493,
+              "reason": "Eta recursion and setup for the sigma coefficient expansion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_v2_u05",
+          "spontaneous_reading": "The η sequence is not independent data: multiplying ζ by its logarithmic derivative and comparing Laurent coefficients yields a recursion from the Stieltjes constants. This gives a direct computational and inductive conversion between two local coefficient systems."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_v2_u05",
+          "source_grounded_mathematics": "The source states η_0=-γ and a convolution recursion expressing η_n using γ_n and earlier products η_kγ_{n-k-1}. It identifies the recursion as coefficient comparison in (ζ'/ζ)ζ=ζ'.",
+          "conceptual_reading": "A nonlinear logarithmic derivative is converted into a triangular coefficient recursion. Local analytic data of ζ determine local data of log ζ without referring directly to zeros.",
+          "representation_or_bridge": "Formal Laurent-series multiplication bridges Stieltjes coefficients to η coefficients.",
+          "boundary_or_failure": "The recursion computes coefficients but does not by itself provide uniform sign or magnitude bounds; later arguments prefer the sharper σ identity.",
+          "uncertainty": "The normalized formula is legible, though exact factorial and sign conventions should be preserved from the source."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_v2_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The source derives an exact recursion expressing eta coefficients in terms of Stieltjes constants and earlier eta coefficients."
+        ],
+        "inference": [
+          "Interpreting the recursion as an algebraic consequence of the logarithmic-derivative identity is reasonable, as is noting that exact recursion alone gives no uniform asymptotic control."
+        ],
+        "unsupported_or_imported": [
+          "The claim that later arguments 'prefer the sharper sigma identity' is not supported within this unit and imports a comparative judgment from outside the span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The recursion-versus-structure contrast is useful, but it should not rank tools without source evidence."
+        ],
+        "context_or_ocr_risk": [
+          "Index shifts, factorial conventions, and signs are easy to corrupt in the displayed recursion."
+        ],
+        "missed_mechanism": [
+          "No major derivational mechanism is missed; the main correction is to separate the exact recursion from later strategic preference."
+        ],
+        "revision_instructions": [
+          "Retain the exact recursive mechanism and its lack of a uniform bound; delete or explicitly source the claim that a later sigma identity is preferred."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text's assertion that eta tends to zero is tied to analyticity and these identities, not to RH.",
+      "line_end": 755,
+      "line_start": 664,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-rich but prose conclusions are recoverable; scan verification is prudent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Values and derivatives of the logarithmic-derivative expansion give signed sums, weighted moments, and beta-integral identities, ruling out one-sided eta behavior and constraining any proposed asymptotics.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Evaluation of the eta generating series supplies exact moments and forces both signs",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_v2_u07.txt",
+      "unit_bytes": 4523,
+      "unit_id": "openalex_w2039040097_v2_u07",
+      "unit_sha256": "03ae9edf639b9ac496e50660579f68e550466e3ebd110cf1f34a3cc548391b0d",
+      "unit_type": "moment-and-sign-constraints",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 656,
+          "line_end": 663,
+          "text": "                                                                    k\n\n\n\nIf we then invoke Eq. (18) we obtain successively Eqs. (30) and (29). Theorem 3 is\n\nproved in another manner in Appendix C.\n\n",
+          "sha256": "cfbe96d75edf1bd07e428d95a56dd299e1c9792f926715b50979e12c9af94428"
+        },
+        "after": {
+          "line_start": 756,
+          "line_end": 763,
+          "text": "\n   We now characterize the behaviour of the sequence {ηj } as a function of its index.\n\nWe have\n\nTheorem 5\n\n                                 |ηj−1 | ≤ |σj | + 2−j ζ(j),                          (45)\n",
+          "sha256": "cbe2e0728dfa9d37e8dae796cc54f9b57d0ac28df6466a250d7c2dee29fda18d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d66aa2495b96f36b1c172292a7ff1351855d786b16e6e7c7d4061671118c52d4",
+        "dossier_sha256": "fa93e1f5466669de811ac6c73d460b103cd0bddf1f2572a7a048653490daff21",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Estimation of sums",
+            "line_end": 969,
+            "line_start": 332,
+            "mathematical_role": "Bounds the explicit zeta sum, connects eta and reciprocal-zero sums, analyzes eta moments and decay, and states the conditional S2 and Li bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 755,
+          "line_start": 664,
+          "title": "Evaluation of the eta generating series supplies exact moments and forces both signs",
+          "unit_id": "openalex_w2039040097_v2_u07",
+          "unit_type": "moment-and-sign-constraints",
+          "why_material": "Values and derivatives of the logarithmic-derivative expansion give signed sums, weighted moments, and beta-integral identities, ruling out one-sided eta behavior and constraining any proposed asymptotics."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The text's assertion that eta tends to zero is tied to analyticity and these identities, not to RH.",
+          "representation_dependency": "Formula-rich but prose conclusions are recoverable; scan verification is prudent.",
+          "unit_id": "openalex_w2039040097_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 662,
+            "line_start": 519,
+            "title": "Reciprocal-zero power sums equal an eta coefficient minus a simple zeta tail",
+            "unit_id": "openalex_w2039040097_v2_u06",
+            "unit_type": "exact-zero-coefficient-identity",
+            "why_material": "Theorem 3 links the local Laurent data at one to global nontrivial zeros and proves the bridge by reordering a successive zeta sum; it is the key identity behind the decay conjecture."
+          },
+          {
+            "line_end": 873,
+            "line_start": 757,
+            "title": "Removing the sigma term suggests alternating eta decay at the nearest trivial-zero scale",
+            "unit_id": "openalex_w2039040097_v2_u08",
+            "unit_type": "conditional-decay-argument",
+            "why_material": "Theorem 5 is rigorous, while Conjecture 1 combines the exact sigma-eta identity, the first nontrivial zero's faster decay, and the positive odd-zeta tail to predict eta sign alternation and magnitude decay."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The original eta decay scale is set by the nearest trivial zero, while explicitly removing several trivial zeros enlarges the convergence disk and accelerates residual coefficients at the cost of losing their arithmetic interpretation.",
+            "limit": "A faster residual expansion does not by itself provide the needed binomial cancellation or an RH proof.",
+            "parent_local_unit_ids": [
+              "openalex_w2039040097_v2_u06",
+              "openalex_w2039040097_v2_u07",
+              "openalex_w2039040097_v2_u19"
+            ],
+            "title": "Nearby singularities govern coefficient difficulty and can be moved into explicit terms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_v2_u07",
+          "spontaneous_reading": "Evaluating and differentiating the η generating series supplies exact signed sums, factorial moments, and beta-weighted identities. These constraints rule out one-sided sign behavior and test any proposed decay model."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_v2_u07",
+          "source_grounded_mathematics": "From ζ'/ζ+(s-1)^{-1}, the source evaluates sums such as sum η_p and sum (-1)^pη_p, gives derivative identities for weighted moments at s=2, and evaluates at s=1/2 using the functional equation. It states that infinitely many η_j have each sign and records a beta-integral family from integrating against s^q.",
+          "conceptual_reading": "A generating function converts local analytic evaluations into global moment constraints on the coefficient sequence. These are necessary consistency checks stronger than a few numerical coefficients.",
+          "representation_or_bridge": "Evaluation, differentiation, and weighted integration of ζ'/ζ bridge analytic values to coefficient sums and moments.",
+          "boundary_or_failure": "Moment identities do not determine pointwise sign alternation or the claimed asymptotic. The source's statement that η_j→0 should be read in the context of analyticity and coefficient bounds.",
+          "uncertainty": "The prose conclusions are recoverable, but several formula-rich identities merit scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_v2_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The source records weighted moment identities for the eta coefficients and states sign information, including a claim that coefficients of both signs occur."
+        ],
+        "inference": [
+          "The moment constraints reasonably rule out some uniform sign patterns and show strong cancellation requirements."
+        ],
+        "unsupported_or_imported": [
+          "The displayed identity labeled (40a) alone rules out an all-positive pattern but does not by itself prove infinitely many coefficients of each sign; that stronger conclusion depends on a theorem or argument cut off by the unit boundary."
+        ],
+        "paraphrase_or_style_risk": [
+          "Calling the identities a complete 'sign-forcing mechanism' overstates what is visible in the span."
+        ],
+        "context_or_ocr_risk": [
+          "The unit ends before the referenced theorem is fully available, so the proof basis, quantifiers, and convergence of the moment sums cannot be audited here."
+        ],
+        "missed_mechanism": [
+          "The analysis fails to distinguish a source assertion from a conclusion derivable from the displayed moments alone."
+        ],
+        "revision_instructions": [
+          "State the moment identities and their immediate exclusions separately; attribute the infinite two-sign claim to the source's later theorem and flag the missing boundary proof instead of deriving it from (40a)."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The O(n to one-half plus epsilon) claims for the arithmetic sums are conjectures.",
+      "line_end": 1846,
+      "line_start": 1649,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; character conjugation, Laguerre factors, and elliptic coefficients need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The appendix derives lower bounds in which the unresolved content is concentrated in character- or curve-weighted von Mangoldt sums and argues, conditionally, that sign/phase cancellation may make them small.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        34,
+        35,
+        36
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dirichlet and elliptic-curve Li formulas isolate oscillatory arithmetic sums from explicit positive terms",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_v2_u15.txt",
+      "unit_bytes": 9844,
+      "unit_id": "openalex_w2039040097_v2_u15",
+      "unit_sha256": "2100f595ba72244a98c5693e4a15d1f0e22bfaf2ce151ae7a2010cffe54e14f3",
+      "unit_type": "generalized-li-lower-bounds",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1641,
+          "line_end": 1648,
+          "text": "\n\n\n\n                                    32\n\n<!-- source-page: 33 -->\n\n",
+          "sha256": "becf0d33f945ced29aa9969674a8839647c32f723d2ea5eb35e8457f10156c99"
+        },
+        "after": {
+          "line_start": 1847,
+          "line_end": 1854,
+          "text": "\n   Concerning Eqs. (E.6) and (E.12) we record and briefly discuss some elementary\n\nsummation results. We have\n                                       ∞               ∞\n                                       X     1      1X    1\n                              ln 2 =              −         ,                        (E.14a)\n                                       n=1 2n − 1   2 n=1 n\n",
+          "sha256": "95f3288ae485c43a1f6ccdee50a7b39c04582b183e8258e2c86cbcb0a736e125"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d66aa2495b96f36b1c172292a7ff1351855d786b16e6e7c7d4061671118c52d4",
+        "dossier_sha256": "fa93e1f5466669de811ac6c73d460b103cd0bddf1f2572a7a048653490daff21",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix E",
+            "line_end": 2224,
+            "line_start": 1649,
+            "mathematical_role": "Transfers Li-style formulas and bounds to Dirichlet, elliptic-curve, Hecke, and Dedekind settings, with a convergence caveat for the last case."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1846,
+          "line_start": 1649,
+          "title": "Dirichlet and elliptic-curve Li formulas isolate oscillatory arithmetic sums from explicit positive terms",
+          "unit_id": "openalex_w2039040097_v2_u15",
+          "unit_type": "generalized-li-lower-bounds",
+          "why_material": "The appendix derives lower bounds in which the unresolved content is concentrated in character- or curve-weighted von Mangoldt sums and argues, conditionally, that sign/phase cancellation may make them small."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The O(n to one-half plus epsilon) claims for the arithmetic sums are conjectures.",
+          "representation_dependency": "Very high; character conjugation, Laguerre factors, and elliptic coefficients need scan verification.",
+          "unit_id": "openalex_w2039040097_v2_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1640,
+            "line_start": 1511,
+            "title": "Tabulated Li and eta values exhibit positivity and near one-third alternating decay through index one hundred",
+            "unit_id": "openalex_w2039040097_v2_u14",
+            "unit_type": "numerical-pattern-evidence",
+            "why_material": "The table is the paper's direct computational evidence for its eta approximation and positive initial Li coefficients, while remaining nonproof evidence."
+          },
+          {
+            "line_end": 2098,
+            "line_start": 1958,
+            "title": "Product expansions and polygamma values reproduce the Dirichlet and elliptic Li formulas",
+            "unit_id": "openalex_w2039040097_v2_u16",
+            "unit_type": "explicit-formula-derivation",
+            "why_material": "Differentiating completed L-functions shows systematically how gamma factors produce elementary zeta sums and logarithmic derivatives produce arithmetic von Mangoldt sums."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gamma factors yield explicit controllable sums and logarithmic derivatives yield arithmetic prime sums across zeta, Dirichlet, elliptic, and Dedekind settings.",
+            "limit": "The smallness of the arithmetic sums is conjectural, and the Dedekind series is left without a convergence justification.",
+            "parent_local_unit_ids": [
+              "openalex_w2039040097_v2_u04",
+              "openalex_w2039040097_v2_u15",
+              "openalex_w2039040097_v2_u16",
+              "openalex_w2039040097_v2_u17"
+            ],
+            "title": "Completed L-functions share a Li-formula skeleton but not a proved cancellation theorem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1957,
+              "line_start": 1848,
+              "reason": "Elementary zeta/polygamma identities used by the generalized formulas plus page transitions."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_v2_u15",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_v2_u15",
+          "spontaneous_reading": "Generalized Li formulas separate explicit positive/archimedean terms from arithmetic oscillatory sums. The unresolved question is whether Dirichlet-character phases or elliptic-curve coefficients cancel enough to leave the positive n log n scale dominant."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_v2_u15",
+          "source_grounded_mathematics": "For primitive χ, the source writes λ_χ(n) as S_χ plus conductor/gamma terms and rewrites parity terms via S0 and S1, yielding lower bounds. For an elliptic curve it writes λ_E(n) as S_E plus explicit terms, rewrites them with S3-S0, and obtains a lower bound. It conjectures S_χ and S_E may be O(n^{1/2+ε}) because of phase/sign changes.",
+          "conceptual_reading": "The formulas localize generalized-RH difficulty in prime-weighted oscillatory transforms while making the deterministic contribution explicit.",
+          "representation_or_bridge": "Laguerre-polynomial transforms of von Mangoldt sums bridge prime/curve coefficients to generalized Li sequences.",
+          "boundary_or_failure": "The square-root estimates are conjectures; visible sign changes do not prove cancellation. Positivity semantics for non-real characters and exact normalizations require care.",
+          "uncertainty": "Character conjugations, Laguerre factors, and elliptic coefficients are highly scan-sensitive; only the decomposition and conditional logic are stable."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_v2_u15",
+        "critic_decision": "revise",
+        "supported": [
+          "The source extends Li-type coefficients to broader L-functions and derives lower-bound structure with a leading n log n scale plus explicit conductor and archimedean contributions."
+        ],
+        "inference": [
+          "It is reasonable to view the completed L-function's normalization and gamma factors as determining the deterministic part of the bound."
+        ],
+        "unsupported_or_imported": [
+          "Describing all explicit or archimedean terms as positive is too strong: conductor constants and lower-order gamma contributions need not be termwise positive, and character-valued settings require careful real-part or self-dual formulations."
+        ],
+        "paraphrase_or_style_risk": [
+          "The universal-template framing can erase hypotheses about the L-function, character, and the precise meaning of positivity."
+        ],
+        "context_or_ocr_risk": [
+          "Conductors, gamma parameters, real-part conventions, and error terms are exact-data-sensitive."
+        ],
+        "missed_mechanism": [
+          "The analysis underplays that the robust conclusion is eventual leading-order lower growth under stated hypotheses, not positivity of every displayed deterministic summand."
+        ],
+        "revision_instructions": [
+          "Replace termwise-positive language with an explicit asymptotic decomposition and leading n log n lower structure; state the hypotheses and positivity convention for non-real or non-self-dual cases."
+        ]
+      }
+    }
+  ]
+}

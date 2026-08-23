@@ -1,0 +1,168 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2541363073_dc541b22_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2541363073",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This appendix offers a consistency argument, not the rigorous proof the discussion says is missing.",
+      "line_end": 2115,
+      "line_start": 2074,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several variational symbols are extraction-sensitive and the choice of multiplier is heuristic.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Adds a multiplier enforcing positivity and boundedness of Young density, then selects an odd sign multiplier to recover the proposed eigenphase-density identification.",
+      "source_id": "openalex_w2541363073",
+      "source_normalized_sha256": "6d939457725c51161edd3d1cde473f4c11e63801ddf4bf1696de678c3f365b21",
+      "source_page_markers_inside_unit": [
+        39
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Lagrange multiplier makes θ=πu(h) an admissible boundary choice",
+      "unit_artifact_relpath": "depth/units/openalex_w2541363073_v2_u16.txt",
+      "unit_bytes": 2144,
+      "unit_id": "openalex_w2541363073_v2_u16",
+      "unit_sha256": "84138181d89df5c49a9061ead515f86d833aac4ca39a78b2bace40b81962d84c",
+      "unit_type": "constraint-based heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2541363073_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2541363073",
+        "title": "Phase space distribution of Riemann zeros",
+        "authors": [
+          "Parikshit Dutta",
+          "Suvankar Dutta"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2066,
+          "line_end": 2073,
+          "text": "hence for every θi there is a θi and thus their sum is 0. Equivalently this can be checked\nusing the normalization of R(z) :\n                                        I\n                                     1     dz\n                                              R(z) = 1.                              (B.1)\n                                    2πi     z\n\n\n",
+          "sha256": "2c834fdb306ec08aac9a56758328410ba02493f2bad4fec04ea8a997b35406b3"
+        },
+        "after": {
+          "line_start": 2116,
+          "line_end": 2123,
+          "text": "\n\n\nReferences\n\n[1] H. L. Montgomery, Analytic number theory, American Mathematical Society, pp. 181-193,\n    MR 0337821.\n\n",
+          "sha256": "2a37d2690f83224a5f12024fee7a2dc7f8091ef96eee01a5b24835820ca5945b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cfe5022e91174aa12b7f6ae66c2080eb8be03d19f756e7a318e95b01e3206fa9",
+        "dossier_sha256": "0c4f08a6a3e6561cc26f31d07a50f1a4a3e672767cd775a6a539fffe60c42f99",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendices A-C",
+            "line_end": 2115,
+            "line_start": 1999,
+            "mathematical_role": "Checks the density formula and normalization and supplies a heuristic Lagrange-multiplier argument for θ=πu(h)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2115,
+          "line_start": 2074,
+          "title": "A Lagrange multiplier makes θ=πu(h) an admissible boundary choice",
+          "unit_id": "openalex_w2541363073_v2_u16",
+          "unit_type": "constraint-based heuristic",
+          "why_material": "Adds a multiplier enforcing positivity and boundedness of Young density, then selects an odd sign multiplier to recover the proposed eigenphase-density identification."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This appendix offers a consistency argument, not the rigorous proof the discussion says is missing.",
+          "representation_dependency": "Several variational symbols are extraction-sensitive and the choice of multiplier is heuristic.",
+          "unit_id": "openalex_w2541363073_v2_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1985,
+            "line_start": 1940,
+            "title": "Record the missing quantization and alternative density target",
+            "unit_id": "openalex_w2541363073_v2_u15",
+            "unit_type": "limitation audit",
+            "why_material": "States that an underlying noninteracting quantum theory and the key θ=πu(h) identification are not rigorously established, and proposes replacing logarithmic spikes by a delta-peaked zero density in future work."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Both the zero-derived Young boundary and the fluctuating prime-counting transform are many-to-one and admit branchwise inversions, motivating their proposed conjugate-variable analogy.",
+            "limit": "The source presents resemblance and consistency checks only; no canonical transformation, operator, or rigorous one-to-one correspondence is constructed.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2541363073_u01",
+              "openalex_w2541363073_v2_u14",
+              "openalex_w2541363073_v2_u15",
+              "openalex_w2541363073_v2_u16"
+            ],
+            "title": "Prime-counting and Young distributions share a branching geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2541363073_v2_u16",
+        "spontaneous": {
+          "unit_id": "openalex_w2541363073_v2_u16",
+          "spontaneous_reading": "A Lagrange multiplier enforcing positivity and an upper bound on Young density makes theta=pi u(h) one admissible choice, but the multiplier itself is selected by hand. The appendix therefore checks consistency rather than deriving uniqueness or rigor."
+        },
+        "directed": {
+          "unit_id": "openalex_w2541363073_v2_u16",
+          "source_grounded_mathematics": "Starting from the vanishing integral of theta(x)h(x), the appendix augments the character action with a multiplier coupled to dx/dh. Variation after writing positive h as gamma-star gamma gives u(h)=theta/mu up to the displayed signs. Requiring positivity and u<1 constrains mu, and the particular odd choice mu=pi sign(theta) yields u(h)=theta/pi.",
+          "conceptual_reading": "The constraint calculation shows that the proposed identification fits the allowed density bounds and parity. It does not remove the freedom in choosing the multiplier, so admissibility is weaker than derivation.",
+          "representation_or_bridge": "The multiplier mu, parity of h(theta), and density u=-dx/dh connect the variational constraint to the proposed eigenphase/Young relation.",
+          "boundary_or_failure": "The appendix calls the argument heuristic; choosing mu=pi sign(theta) is not shown to be forced, and no complete Young distribution or quantum operator follows.",
+          "uncertainty": "Several variational symbols and signs are extraction-sensitive. The consistency role is clear, but the exact Euler-Lagrange calculation requires source checking."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2541363073_v2_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The appendix adds a multiplier, derives a relation between u(h), theta, and mu, and explicitly presents mu=pi sign(theta) as a particular rather than forced choice.",
+          "The analysis correctly concludes that the calculation is heuristic and does not establish uniqueness or a quantum operator."
+        ],
+        "inference": [
+          "Calling the result a consistency or admissibility check rather than a derivation is appropriate."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the chosen multiplier unproblematically satisfies all density bounds is not reliable from the displayed text: it first requires |mu|>pi for u<1, then chooses |mu|=pi, and the formula with sign(theta) yields |theta|/pi unless the domain is explicitly restricted to theta>0.",
+          "The directed summary's unqualified u=theta/pi loses the sign/domain issue already acknowledged in the preceding discussion unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Fits allowed bounds and parity' sounds decisive despite the visible strict-bound and sign tension."
+        ],
+        "context_or_ocr_risk": [
+          "Variation symbols, signs, and the multiplier term are extraction-sensitive, but the internal inconsistency is visible even at the prose level and cannot be silently repaired from memory."
+        ],
+        "missed_mechanism": [
+          "The discussion section states the proposed identity only for theta>0; the appendix's sign choice must be reconciled with that restriction and with whether the intended density bound is strict or non-strict."
+        ],
+        "revision_instructions": [
+          "Restrict the claimed identity to the explicitly stated positive-theta branch, flag the |mu|>pi versus |mu|=pi tension as unresolved/OCR-sensitive, and say only that one hand-chosen multiplier reproduces the proposal formally."
+        ]
+      }
+    }
+  ]
+}

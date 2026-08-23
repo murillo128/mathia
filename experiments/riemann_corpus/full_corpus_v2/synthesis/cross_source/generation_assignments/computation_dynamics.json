@@ -1,0 +1,2295 @@
+{
+  "task": "cross-source mechanism synthesis generation",
+  "panel_id": "computation_dynamics",
+  "required_synthesis_id_prefix": "riemann_v2_cross_computation_dynamics_",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/cross_source_synthesis_generation.md",
+  "prompt_sha256": "36a28c7d60c04b42c655798598d1d600a22dd984a29f4093e62ec54247e36d1a",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/cross_source/generation_batches/computation_dynamics.jsonl",
+  "source_count": 17,
+  "unit_index_count": 102,
+  "unit_index": [
+    {
+      "unit_id": "bombieri2000_clay_d01_zeta_rh_package",
+      "source_id": "bombieri2000_clay",
+      "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+      "source_year": 2000,
+      "source_viewpoint_tags": [
+        "overview",
+        "history",
+        "explicit-formula",
+        "l-functions",
+        "finite-fields",
+        "numerical-evidence"
+      ],
+      "unit_title": "The analytic zeta package and the critical-line statement",
+      "unit_type": "definition-and-equivalence",
+      "nonparaphrase_operation": "Representation change and compression: compare the zeta-side analytic package with the xi-side symmetric geometry. The gain is an even entire zero problem with the trivial zeros separated; the limitation is that symmetry is strictly weaker than the conjectured reality statement and removes none of the central proof burden.",
+      "interpretation": "Passing from zeta in the s-plane to the entire even xi function packages the pole-removing and gamma factors and converts the nontrivial-zero question into reality of xi zeros, equivalently critical-line location for nontrivial zeta zeros. This expresses RH inside a symmetric zero problem, but evenness and reflection symmetry organize the zero set without forcing every xi zero to be real.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d01_zeta_rh_package.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041"
+      }
+    },
+    {
+      "unit_id": "bombieri2000_clay_d04_weighted_counts_combinatorial_bounds",
+      "source_id": "bombieri2000_clay",
+      "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+      "source_year": 2000,
+      "source_viewpoint_tags": [
+        "overview",
+        "history",
+        "explicit-formula",
+        "l-functions",
+        "finite-fields",
+        "numerical-evidence"
+      ],
+      "unit_title": "Weighted prime counts connect analytic counting to exact combinatorial identities",
+      "unit_type": "representation-and-bound",
+      "nonparaphrase_operation": "The bridge object is the weighted count, positioned between primes and a combinatorial factorial identity. Logarithms convert factorial products into additive prime-power contributions, enabling inequalities unavailable in the raw counting representation.",
+      "interpretation": "Weighting is a strategic relaxation: it forgets the equal contribution of each prime but gains compatibility with products and factorials. The resulting representation is easier to bound while retaining enough information to transfer order-of-magnitude control back to ordinary counting.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d04_weighted_counts_combinatorial_bounds.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041"
+      }
+    },
+    {
+      "unit_id": "bombieri2000_clay_d07_global_l_function_prototype",
+      "source_id": "bombieri2000_clay",
+      "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+      "source_year": 2000,
+      "source_viewpoint_tags": [
+        "overview",
+        "history",
+        "explicit-formula",
+        "l-functions",
+        "finite-fields",
+        "numerical-evidence"
+      ],
+      "unit_title": "Zeta is a prototype whose zeros encode global arithmetic objects",
+      "unit_type": "generalization",
+      "nonparaphrase_operation": "Global L-functions bridge algebraic, arithmetic, and automorphic objects to analytic invariants. Euler factors retain local information, while zeros, poles, and special values provide global summaries from which arithmetic consequences may be extracted.",
+      "interpretation": "The generalization preserves a structural interface rather than one formula: local factorization, global analytic symmetry, and spectral-looking distinguished data. This makes RH one instance of a family-wide decoding problem rather than an isolated zeta phenomenon.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d07_global_l_function_prototype.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041"
+      }
+    },
+    {
+      "unit_id": "bombieri2000_clay_d10_certified_finite_window_test",
+      "source_id": "bombieri2000_clay",
+      "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+      "source_year": 2000,
+      "source_viewpoint_tags": [
+        "overview",
+        "history",
+        "explicit-formula",
+        "l-functions",
+        "finite-fields",
+        "numerical-evidence"
+      ],
+      "unit_title": "Independent zero counting plus critical-line sign changes certifies a finite RH window",
+      "unit_type": "computational-certification-logic",
+      "nonparaphrase_operation": "The contour integral compresses all enclosed zeros and poles into one integer, while xi sign changes localize candidates on the target line. Their equality is the bridge from numerical observations to a finite completeness claim.",
+      "interpretation": "The protocol closes the sampling gap by coupling detection with an independently conserved total. Apparent line zeros alone are incomplete evidence; equality with the global contour count certifies that no additional off-line or higher-multiplicity zeros remain in the bounded region.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d10_certified_finite_window_test.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041"
+      }
+    },
+    {
+      "unit_id": "bombieri2000_clay_d13_positive_proportion_and_transfer",
+      "source_id": "bombieri2000_clay",
+      "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+      "source_year": 2000,
+      "source_viewpoint_tags": [
+        "overview",
+        "history",
+        "explicit-formula",
+        "l-functions",
+        "finite-fields",
+        "numerical-evidence"
+      ],
+      "unit_title": "A positive proportion of simple critical-line zeros transfers across major L-function classes",
+      "unit_type": "partial-result",
+      "nonparaphrase_operation": "Evidence-channel separation: contrast counting verified critical-line zeros with bounding possible off-line zeros, and treat the proportion as a coarse population statistic for cross-family comparison. This gains abundance information but loses individual identities and cannot upgrade a positive fraction to all zeros.",
+      "interpretation": "A positive-proportion theorem constrains the zero set from the good side: it establishes that many nontrivial zeta zeros are both simple and on the target line, whereas zero-density estimates constrain possible bad behavior. The similar conclusions reported for named L-function families broaden the phenomenon, but the span does not identify a common proof method or make a uniform claim for every L-function.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d13_positive_proportion_and_transfer.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041"
+      }
+    },
+    {
+      "unit_id": "bombieri2000_clay_d16_missing_global_geometry",
+      "source_id": "bombieri2000_clay",
+      "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+      "source_year": 2000,
+      "source_viewpoint_tags": [
+        "overview",
+        "history",
+        "explicit-formula",
+        "l-functions",
+        "finite-fields",
+        "numerical-evidence"
+      ],
+      "unit_title": "The classical case lacks global analogues of cohomology, Frobenius, and the index theorem",
+      "unit_type": "open-obstruction",
+      "nonparaphrase_operation": "Cohomology, a Frobenius-like operator, and an index pairing are proposed bridge roles between arithmetic data and zero geometry; the adelic setting is only a possible arena. No actual classical bridge object is supplied in the span.",
+      "interpretation": "The missing objects are functional requirements for a mechanism: a state space carrying zero data, an operator producing spectral parameters, and a pairing theorem enforcing the needed sign. The Maass case is a falsification test for any proposal tied too narrowly to classical geometry.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d16_missing_global_geometry.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041"
+      }
+    },
+    {
+      "unit_id": "connes1999_v2_u03_hilbert_polya_naturality",
+      "source_id": "connes1999_trace_formula",
+      "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+      "source_year": 1999,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "explicit-formula",
+        "grh",
+        "heuristic-bridge",
+        "hilbert-polya",
+        "l-functions",
+        "noncommutative-geometry",
+        "numerical-evidence",
+        "pair-correlation",
+        "partial-results",
+        "primes-zeros",
+        "random-matrix",
+        "spectral",
+        "zero-density",
+        "zero-statistics",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Naturality criterion for a Hilbert–Polya realization",
+      "unit_type": "motivation-and-diagnostic",
+      "nonparaphrase_operation": "The bridge runs from zeros to an unfolded point process and then to eigenvalues of a natural pair (H,D), with Selberg and function-field analogues supplying precedent.",
+      "interpretation": "Selfadjointness or positivity would relocate RH into operator theory, but the statistical match is primarily a diagnostic for whether the sought representation has the right spectral organization.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u03_hilbert_polya_naturality.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+      }
+    },
+    {
+      "unit_id": "connes1999_v2_u11_local_fixed_point_distribution",
+      "source_id": "connes1999_trace_formula",
+      "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+      "source_year": 1999,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "explicit-formula",
+        "grh",
+        "heuristic-bridge",
+        "hilbert-polya",
+        "l-functions",
+        "noncommutative-geometry",
+        "numerical-evidence",
+        "pair-correlation",
+        "partial-results",
+        "primes-zeros",
+        "random-matrix",
+        "spectral",
+        "zero-density",
+        "zero-statistics",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Fourier control of the local fixed-point denominator",
+      "unit_type": "local-rigorous-model",
+      "nonparaphrase_operation": "Self-dual additive Fourier transform bridges delta-kernel multiplication to convolution of line measures, identifying the local trace contribution used in Weil's formula.",
+      "interpretation": "The inverse local denominator measures transversality of two linear constraints and survives uniformly across Archimedean and non-Archimedean fields.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u11_local_fixed_point_distribution.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+      }
+    },
+    {
+      "unit_id": "connes1999_v2_u19_rapid_cutoff_error",
+      "source_id": "connes1999_trace_formula",
+      "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+      "source_year": 1999,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "explicit-formula",
+        "grh",
+        "heuristic-bridge",
+        "hilbert-polya",
+        "l-functions",
+        "noncommutative-geometry",
+        "numerical-evidence",
+        "pair-correlation",
+        "partial-results",
+        "primes-zeros",
+        "random-matrix",
+        "spectral",
+        "zero-density",
+        "zero-statistics",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Geometric summability and rapid decay of the cutoff error",
+      "unit_type": "analytic-error-control",
+      "nonparaphrase_operation": "The S-unit logarithmic lattice bridges word length to local magnitude, while fractional-difference Fourier estimates bridge local regularity to decay of the quotient tail.",
+      "interpretation": "The proof separates two burdens—summability over arithmetic translates and cutoff convergence—and supplies a different control mechanism for each.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u19_rapid_cutoff_error.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+      }
+    },
+    {
+      "unit_id": "connes1999_v2_u27_angle_random_matrix_link",
+      "source_id": "connes1999_trace_formula",
+      "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+      "source_year": 1999,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "explicit-formula",
+        "grh",
+        "heuristic-bridge",
+        "hilbert-polya",
+        "l-functions",
+        "noncommutative-geometry",
+        "numerical-evidence",
+        "pair-correlation",
+        "partial-results",
+        "primes-zeros",
+        "random-matrix",
+        "spectral",
+        "zero-density",
+        "zero-statistics",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "The cutoff angle spectrum also governs random-matrix gap probabilities",
+      "unit_type": "cross-connection",
+      "nonparaphrase_operation": "The bridge object is the product of a position projection with a Fourier-conjugated projection; its eigenvalue product is a generating function for random-matrix gap counts and its spectrum is related to Theta by the ab scaling invariance.",
+      "interpretation": "Operator angles compress the interaction of two cutoffs into a spectrum that can be reused in a probabilistic eigenvalue-counting formula. The useful move is to compare constructions through a common spectral invariant rather than through their ambient interpretations.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u27_angle_random_matrix_link.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+      }
+    },
+    {
+      "unit_id": "connes1999_v2_u35_spectral_cokernel_proof",
+      "source_id": "connes1999_trace_formula",
+      "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+      "source_year": 1999,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "explicit-formula",
+        "grh",
+        "heuristic-bridge",
+        "hilbert-polya",
+        "l-functions",
+        "noncommutative-geometry",
+        "numerical-evidence",
+        "pair-correlation",
+        "partial-results",
+        "primes-zeros",
+        "random-matrix",
+        "spectral",
+        "zero-density",
+        "zero-statistics",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Zeros characterize the annihilator of the orbit-sum range",
+      "unit_type": "proof-of-spectral-identification",
+      "nonparaphrase_operation": "The decisive bridge chain is E-range to annihilator, compact-character decomposition to Mellin distributions, multiplication by L to support at its zeros, and delta derivatives to generalized eigenvectors of the transposed representation.",
+      "interpretation": "The cokernel changes analytic vanishing into linear-algebraic failure of surjectivity. Multiplicity is not merely repeated eigenvalue counting: derivatives supported at a zero supply generalized eigenvectors and hence Jordan structure.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u35_spectral_cokernel_proof.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+      }
+    },
+    {
+      "unit_id": "connes1999_v2_u44_flow_transversality_contributions",
+      "source_id": "connes1999_trace_formula",
+      "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+      "source_year": 1999,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "explicit-formula",
+        "grh",
+        "heuristic-bridge",
+        "hilbert-polya",
+        "l-functions",
+        "noncommutative-geometry",
+        "numerical-evidence",
+        "pair-correlation",
+        "partial-results",
+        "primes-zeros",
+        "random-matrix",
+        "spectral",
+        "zero-density",
+        "zero-statistics",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Poincaré transversality yields periodic-orbit and zero contributions",
+      "unit_type": "derivation",
+      "nonparaphrase_operation": "The graph delta, diagonal pullback, normal-bundle map, Poincare return map, and pushforward to the time axis form the bridge from flow geometry to periodic-orbit and fixed-zero trace contributions.",
+      "interpretation": "Existence and weight have the same source: the failure of fixed directions transverse to the orbit. Quotienting out the flow direction exposes the Poincare return map, and its determinant measures the density distortion of the graph-diagonal intersection.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u44_flow_transversality_contributions.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+      }
+    },
+    {
+      "unit_id": "moree2018_computational_history_u001",
+      "source_id": "moree2018_computational_history",
+      "source_title": "A Computational History of Prime Numbers and Riemann Zeros",
+      "source_year": 2018,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "historical-foundational",
+        "zeros",
+        "prime-counting"
+      ],
+      "unit_title": "From prime tables to a local density heuristic",
+      "unit_type": "motivation",
+      "nonparaphrase_operation": "Prime indicators are replaced by weights 1/log n and the weighted sum by an integral; this preserves aggregate growth while forgetting exact locations and short-range irregularity.",
+      "interpretation": "A local statistical rule compresses a jagged counting problem into a smooth asymptotic law; the useful object is the density, not a prediction of individual primes.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u001.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90"
+      }
+    },
+    {
+      "unit_id": "moree2018_computational_history_u007",
+      "source_id": "moree2018_computational_history",
+      "source_title": "A Computational History of Prime Numbers and Riemann Zeros",
+      "source_year": 2018,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "historical-foundational",
+        "zeros",
+        "prime-counting"
+      ],
+      "unit_title": "Weighted prime counts linearize the prime-zero bridge",
+      "unit_type": "representation-change",
+      "nonparaphrase_operation": "Λ records prime powers additively after logarithmic differentiation, and Weil's test functions provide adjustable Fourier bridges between weighted zero sums and weighted prime sums.",
+      "interpretation": "Choosing coordinates adapted to the operative algebra can linearize a difficult relation; direct counting is traded for a weighted object whose analytic transform is simpler.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u007.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90"
+      }
+    },
+    {
+      "unit_id": "moree2018_computational_history_u013",
+      "source_id": "moree2018_computational_history",
+      "source_title": "A Computational History of Prime Numbers and Riemann Zeros",
+      "source_year": 2018,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "historical-foundational",
+        "zeros",
+        "prime-counting"
+      ],
+      "unit_title": "Counting all zeros is the completeness half of RH computation",
+      "unit_type": "certification-method",
+      "nonparaphrase_operation": "Decomposes numerical RH verification into localization and global accounting. The theta term gives a tractable main count and S(T) records the discrepancy needed for an exact total; this gains a completeness audit but loses the nearest-integer simplification when the path or discrepancy conditions fail. The proof burden remains establishing the contour condition and accounting with multiplicity rather than merely finding apparent critical-line roots.",
+      "interpretation": "Locating zeros on the critical line and certifying completeness are different obligations. The all-zero count N(T), counted with multiplicity, supplies an independent total against which the critical-zero count N₀(T) can be checked. Backlund's argument-principle analysis represents N(T) as a theta main term plus the path-integral correction S(T); the correction is not itself the full zero counter. The nearest-integer shortcut is fragile because it requires a suitable nonvanishing contour and a height where the correction is small, while the source says S(T) is unbounded.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u013.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90"
+      }
+    },
+    {
+      "unit_id": "moree2018_computational_history_u018",
+      "source_id": "moree2018_computational_history",
+      "source_title": "A Computational History of Prime Numbers and Riemann Zeros",
+      "source_year": 2018,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "historical-foundational",
+        "zeros",
+        "prime-counting"
+      ],
+      "unit_title": "Scale, reproducibility, and provenance of zero verifications",
+      "unit_type": "computational-provenance",
+      "nonparaphrase_operation": "A finite-height RH claim is represented by a computational record linking software, algorithms, numerical range, and reported result, rather than by the zero count alone.",
+      "interpretation": "Scale and correctness are different axes; confidence in computed mathematical claims also depends on reproducible methods, preserved records, and independent checking.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u018.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90"
+      }
+    },
+    {
+      "unit_id": "moree2018_computational_history_u024",
+      "source_id": "moree2018_computational_history",
+      "source_title": "A Computational History of Prime Numbers and Riemann Zeros",
+      "source_year": 2018,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "historical-foundational",
+        "zeros",
+        "prime-counting"
+      ],
+      "unit_title": "Formal analytic estimates plus finite L-function verification close Goldbach",
+      "unit_type": "application",
+      "nonparaphrase_operation": "Separates theorem-producing analytic estimates, a certified finite analytic input, and a standalone finite check of a different conjecture. The combination gains explicit rigor unavailable from an unverified assumption, but finite L-function verification is not promoted to a global RH result and binary enumeration is not confused with a ternary proof. The unresolved proof burden is precisely how Platt's certificates feed Helfgott's estimates.",
+      "interpretation": "The ternary Goldbach result combines distinct kinds of rigor without the span specifying a clean complement-of-ranges mechanism. Helfgott's improved major- and minor-arc estimates yielded the unconditional weak Goldbach theorem, and his proof used Platt's interval-arithmetic verification of RH for a bounded collection and height range of Dirichlet L-functions as a finite analytic input. This shows that certified computation can enter an analytic proof as a rigorously delimited ingredient, but the exact interface between that ingredient and the circle-method estimates remains unstated here.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u024.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90"
+      }
+    },
+    {
+      "unit_id": "moree2018_computational_history_u030",
+      "source_id": "moree2018_computational_history",
+      "source_title": "A Computational History of Prime Numbers and Riemann Zeros",
+      "source_year": 2018,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "historical-foundational",
+        "zeros",
+        "prime-counting"
+      ],
+      "unit_title": "Slow iterated logarithms defeat finite numerical intuition",
+      "unit_type": "methodological-warning",
+      "nonparaphrase_operation": "Diagnoses information loss in finite-range representation and turns the warning into a reusable falsification question about observationally compatible asymptotics. Computation retains authority over the finite values it checks but loses the ability, by appearance alone, to distinguish a very slow divergence from bounded behavior. The proof burden for extrapolation remains outside the sampled pattern.",
+      "interpretation": "Finite numerical observation can erase the distinction between boundedness and extremely slow divergence. The witness log log log x is unbounded yet can look bounded on a computer, so a persistent plateau does not preserve the global asymptotic property one may be tempted to infer. The constructive response is counterfactual scale analysis: ask which qualitatively different long-run behaviors remain compatible with the observed range, and require theoretical and heuristic considerations before promoting a numerical pattern to a global conjecture.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u030.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90"
+      }
+    },
+    {
+      "unit_id": "openalex_w1224069186_u001",
+      "source_id": "openalex_w1224069186",
+      "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Heat-deformed cosine transform turns RH into a real-zero condition",
+      "unit_type": "representation-change",
+      "nonparaphrase_operation": "The scaling identity between H_0 and ξ is the bridge from the classical formulation to the transform family; the parameter t is the prospective bridge from function theory to zero motion.",
+      "interpretation": "Embedding ξ in H_t reframes a static location-of-zeros assertion as zero geometry attached to a parameterized family. The deformation creates room for later monotonicity and threshold arguments, although those are not yet established here.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u001.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85"
+      }
+    },
+    {
+      "unit_id": "openalex_w1224069186_u004",
+      "source_id": "openalex_w1224069186",
+      "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Lehmer pairs compare a tiny gap with interaction from all other zeros",
+      "unit_type": "definition",
+      "nonparaphrase_operation": "The scalar product Δ_k²g_k(0) bridges local spacing and a global zero-field, providing the intermediate object later fed into the heat-flow theorem.",
+      "interpretation": "The criterion measures whether the close pair is isolated strongly enough relative to the background zero configuration. A tiny local scale alone is insufficient; it must be certified against the full environment.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u004.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85"
+      }
+    },
+    {
+      "unit_id": "openalex_w1224069186_u007",
+      "source_id": "openalex_w1224069186",
+      "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Convert local zero counts into an inverse-square tail bound",
+      "unit_type": "proof-fragment",
+      "nonparaphrase_operation": "The chain is zero ordinates → unit-bin counts → a weighted series → an integral bound; x_j=2γ_j transfers the result back to H_0's zero representation.",
+      "interpretation": "This is a reusable count-to-mass conversion: local cardinality bounds control a global summable quantity when paired with a decaying weight. It supplies analytic coverage beyond any finite computed window.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u007.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85"
+      }
+    },
+    {
+      "unit_id": "openalex_w1224069186_u010",
+      "source_id": "openalex_w1224069186",
+      "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Bound the finite local block by the two adjacent outer gaps",
+      "unit_type": "proof-fragment",
+      "nonparaphrase_operation": "The ordering of zeros bridges individual denominators to adjacent-gap bounds, and x=2γ bridges those gaps to the computed ordinate data.",
+      "interpretation": "Ordered real zeros make the nearest admissible outer points worst cases for reciprocal-square distances. This converts a finite but large sum into a count times two boundary contributions.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u010.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85"
+      }
+    },
+    {
+      "unit_id": "openalex_w1224069186_u013",
+      "source_id": "openalex_w1224069186",
+      "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Aggregate the three bounds to certify the close pair as Lehmer",
+      "unit_type": "computational-certification",
+      "nonparaphrase_operation": "The sum M+I+R reconstructs the global interaction, while the dimensionless gap-interaction product bridges that global bound to Definition 1.1's Lehmer certificate.",
+      "interpretation": "The proof is modular: separate conservative controls can be aggregated because the final admissibility test depends only on their total and the local gap. The large slack makes the classification robust to modest looseness in the background estimate.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u013.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85"
+      }
+    },
+    {
+      "unit_id": "openalex_w1224069186_u016",
+      "source_id": "openalex_w1224069186",
+      "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Explicit error absorption proves the unit-interval zero-count certificate",
+      "unit_type": "proof-fragment",
+      "nonparaphrase_operation": "The decomposition N=s+e bridges a global main term plus error to a unit-step count; the α and β inequalities bridge heterogeneous lower-order terms to a common log T budget used by the tail argument.",
+      "interpretation": "An asymptotic counting formula becomes a uniform local statement through explicit error absorption. The proof exposes how a threshold is chosen so lower-order terms fit inside the slack left beneath the target coefficient of log T.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u016.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85"
+      }
+    },
+    {
+      "unit_id": "openalex_w1486331565_u001",
+      "source_id": "openalex_w1486331565",
+      "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+      "source_year": 2015,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region",
+        "zeros"
+      ],
+      "unit_title": "Finite-height role of classical zero-free regions",
+      "unit_type": "motivation-and-method-comparison",
+      "nonparaphrase_operation": "Writing each region as a height-dependent deficit from σ=1 makes the finite-height comparison a comparison of boundary widths and connects it to explicit prime-distribution applications.",
+      "interpretation": "A stronger asymptotic rate need not dominate at computationally or arithmetically relevant scales, so optimizing the constant in a nominally weaker form remains meaningful.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u001.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839"
+      }
+    },
+    {
+      "unit_id": "openalex_w1486331565_u005",
+      "source_id": "openalex_w1486331565",
+      "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+      "source_year": 2015,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region",
+        "zeros"
+      ],
+      "unit_title": "Improved zero-free and Landau bounds",
+      "unit_type": "theorem-and-extremal-result",
+      "nonparaphrase_operation": "The admissible classes Pₙ and their limiting infimum connect finite polynomial witnesses to a global upper bound on V, while the analytic machinery connects a selected witness to the zero-free region.",
+      "interpretation": "A certificate can be evaluated through different transfer maps: one yields a zeta zero-free constant, while another yields an extremal-polynomial bound, and the two achievements should not be conflated.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u005.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839"
+      }
+    },
+    {
+      "unit_id": "openalex_w1486331565_u009",
+      "source_id": "openalex_w1486331565",
+      "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+      "source_year": 2015,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region",
+        "zeros"
+      ],
+      "unit_title": "Split the eta range and balance complementary denominator bounds",
+      "unit_type": "bound-refinement",
+      "nonparaphrase_operation": "The auxiliary cutoff η₁ is a balancing variable joining height information, kernel monotonicity, and retained error sign into a minimax computation.",
+      "interpretation": "A coarse global relaxation is repaired by partitioning the uncertainty domain and matching complementary local bounds at their bottleneck.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u009.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839"
+      }
+    },
+    {
+      "unit_id": "openalex_w1486331565_u012",
+      "source_id": "openalex_w1486331565",
+      "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+      "source_year": 2015,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region",
+        "zeros"
+      ],
+      "unit_title": "C4: isolate numerically tractable middle ranges and analytically bound tails",
+      "unit_type": "piecewise-integral-certification",
+      "nonparaphrase_operation": "The breakpoints t*, ±1/2, and b(1±ε) are proof-relevant intermediate objects that turn a difficult whole-line integral into separately controllable obligations.",
+      "interpretation": "Partitioning aligns each subdomain with the strongest available representation: symmetry, the correct branch of a piecewise majorant, local numerics near a peak, or closed-form tail decay.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u012.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839"
+      }
+    },
+    {
+      "unit_id": "openalex_w1486331565_u016",
+      "source_id": "openalex_w1486331565",
+      "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+      "source_year": 2015,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region",
+        "zeros"
+      ],
+      "unit_title": "Refined annealing yields the degree-40 Landau certificate",
+      "unit_type": "computational-certificate-result",
+      "nonparaphrase_operation": "Changes the epistemic object from a successful stochastic run to a proposed finite inequality witness, while making the witness claim conditional on verification of its explicit data rather than importing a certification protocol.",
+      "interpretation": "Source fact: after degree-by-degree searches produced a degree-40 polynomial with V_40<34.48923, finer annealing passes produced F_40, whose evaluated objective is reported to give V_40<34.488992000856 and hence the paper's upper bound for V; coefficient data are placed in figures. Conceptual interpretation: the search trajectory is heuristic, whereas a fixed admissible polynomial can serve as a finite witness for an upper bound on an infimum once its coefficients and objective value are verified. This gains a reusable witness rather than reliance on the optimizer's path, but the present prose span does not expose enough coefficient or rounding evidence to make independent numerical certification checkable. Global optimality and any lower bound remain outside the claim.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u016.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839"
+      }
+    },
+    {
+      "unit_id": "openalex_w1486331565_u020",
+      "source_id": "openalex_w1486331565",
+      "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+      "source_year": 2015,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region",
+        "zeros"
+      ],
+      "unit_title": "Zero-free width propagates to explicit prime-counting error bounds",
+      "unit_type": "downstream-transfer",
+      "nonparaphrase_operation": "Builds a dependency map from the upstream region constant to multiple downstream bounds and distinguishes asymptotic equivalence of boundary representations from equality of their finite explicit consequences.",
+      "interpretation": "Source fact: the improved zero-free region is inserted into cited prior arguments to obtain revised explicit bounds for theta and psi with R=6.315 and for pi-li with leading constant 0.2593; the source also says that a shifted-log zero-free region, although asymptotically equivalent to the analyzed form, could further improve these finite corollaries. Conceptual interpretation: the zero-free constant functions as an upstream quantitative interface: changing it permits several downstream estimates to be updated by controlled substitutions rather than by rederiving all cited arguments. The gain is reuse and propagation across prime-counting quantities; the loss is that this span is not self-contained and its finite constants still depend on the hypotheses, thresholds, and cited arguments. Exact formulas remain extraction-sensitive.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u020.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839"
+      }
+    },
+    {
+      "unit_id": "openalex_w1980116773_v2_u01",
+      "source_id": "openalex_w1980116773",
+      "source_title": "On the roots of the Riemann zeta-function",
+      "source_year": 1956,
+      "source_viewpoint_tags": [
+        "computation",
+        "exposition",
+        "history",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region"
+      ],
+      "unit_title": "Finite critical-line verification as a bounded computational claim",
+      "unit_type": "computational certification result",
+      "nonparaphrase_operation": "The critical-line representation and the ordering of zeros by height turn a global location conjecture into a finite certification problem with an explicit cutoff.",
+      "interpretation": "This is finite exhaustion within an ordered range, not induction from examples: the force of the result comes from claiming that every zero up to the cutoff has been accounted for.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u01.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3"
+      }
+    },
+    {
+      "unit_id": "openalex_w1980116773_v2_u04",
+      "source_id": "openalex_w1980116773",
+      "source_title": "On the roots of the Riemann zeta-function",
+      "source_year": 1956,
+      "source_viewpoint_tags": [
+        "computation",
+        "exposition",
+        "history",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region"
+      ],
+      "unit_title": "Riemann-Siegel compression of critical-line evaluation",
+      "unit_type": "method comparison",
+      "nonparaphrase_operation": "A phase factor produces a real auxiliary function on the critical line, and a finite cosine-type sum plus controlled remainder bridges zeta values to tractable sign computations.",
+      "interpretation": "The gain is representational compression rather than a new conjectural principle: a complex critical-line evaluation is converted into a short real oscillatory sum whose signs are usable for root detection.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u04.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3"
+      }
+    },
+    {
+      "unit_id": "openalex_w1980116773_v2_u07",
+      "source_id": "openalex_w1980116773",
+      "source_title": "On the roots of the Riemann zeta-function",
+      "source_year": 1956,
+      "source_viewpoint_tags": [
+        "computation",
+        "exposition",
+        "history",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region"
+      ],
+      "unit_title": "Remainder-aware screening and local refinement of exceptional intervals",
+      "unit_type": "adaptive computational certification",
+      "nonparaphrase_operation": "Gram-point values, a Riemann-Siegel remainder bound, coded flags, and a finer local mesh form a bridge from approximate evaluation to interval-level root-count evidence.",
+      "interpretation": "The key move is certified abstention followed by adaptive refinement. Error bounds do not merely assess final accuracy; they decide which observations count as signs and where more computation is required.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u07.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3"
+      }
+    },
+    {
+      "unit_id": "openalex_w1980116773_v2_u10",
+      "source_id": "openalex_w1980116773",
+      "source_title": "On the roots of the Riemann zeta-function",
+      "source_year": 1956,
+      "source_viewpoint_tags": [
+        "computation",
+        "exposition",
+        "history",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region"
+      ],
+      "unit_title": "Increasing failure frequency with nearly balanced displacement direction",
+      "unit_type": "empirical trend analysis",
+      "nonparaphrase_operation": "Cumulative counts and block increments compress many interval-level events into a trend, while the right-left split retains orientation information lost by the total alone.",
+      "interpretation": "Increasing local unreliability of the one-root heuristic does not by itself create a directional drift. Rate and direction are distinct statistics of the displacement process.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u10.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3"
+      }
+    },
+    {
+      "unit_id": "openalex_w1980116773_v2_u13",
+      "source_id": "openalex_w1980116773",
+      "source_title": "On the roots of the Riemann zeta-function",
+      "source_year": 1956,
+      "source_viewpoint_tags": [
+        "computation",
+        "exposition",
+        "history",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region"
+      ],
+      "unit_title": "From frequency anomalies to low-amplitude extrema and close roots",
+      "unit_type": "diagnostic reframing",
+      "nonparaphrase_operation": "Viewing the real critical-line function continuously inside each Gram interval connects root spacing, intervening extrema, and the mesh resolution needed for reliable detection.",
+      "interpretation": "Amplitude is a conditioning variable for root detection. Two distinct roots can become hard to certify not because the counting principle changes, but because the sign margin between them is exceptionally small.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u13.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3"
+      }
+    },
+    {
+      "unit_id": "openalex_w1980116773_v2_u16",
+      "source_id": "openalex_w1980116773",
+      "source_title": "On the roots of the Riemann zeta-function",
+      "source_year": 1956,
+      "source_viewpoint_tags": [
+        "computation",
+        "exposition",
+        "history",
+        "numerical-evidence",
+        "partial-results",
+        "zero-free-region"
+      ],
+      "unit_title": "Additional 15,000-root computation",
+      "unit_type": "extended numerical evidence",
+      "nonparaphrase_operation": "Hold the undefined qualitative descriptor apart from the precise finite-location observation and identify coexistence, rather than silently converting \"worse\" into Gram-law irregularity or into evidence against RH.",
+      "interpretation": "The addendum extends the finite experiment to the next 15,000 roots and records two coexisting observations: the zeta-function's behavior became steadily \"worse\" in an undefined qualitative sense, yet every examined root still had real part one half. The useful distinction is that qualitative deterioration in some observed behavior does not by itself negate the reported finite critical-line result. This comparison gains an evidential guardrail against conflating the two statements, but loses any more specific diagnosis because the note supplies neither a definition of \"worse\" nor a detailed method, height cutoff, simplicity claim, or global implication.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u16.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2010828369_u04",
+      "source_id": "openalex_w2010828369",
+      "source_title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "computation",
+        "explicit-formula",
+        "numerical-evidence",
+        "primes-zeros"
+      ],
+      "unit_title": "Eliminate inaccessible constants, then enforce sign control",
+      "unit_type": "method transition",
+      "nonparaphrase_operation": "Compares successive representations by the work each makes possible: constant elimination enables an initial estimate, differentiation enables stronger combinations, and explicit formulas improve the bound while exposing the analytic constraints. This preserves the distinction between an established methodological gain and mechanisms hidden by the defective formula extraction.",
+      "interpretation": "The analytic progression changes which parts of the discriminant argument are tractable: Stark first eliminates two hard constants from a Hadamard-factorization identity, then combines the prime-ideal expansion valid for real s>1 with a specialization of s to obtain estimates; later differentiated identities strengthen the bounds, and the Guinand-Weil explicit-formula presentation both improves the GRH result and makes the method's requirements and limitations clearer, with subsequent unconditional extensions. The gain is a more effective and auditable analytic interface, while the proof burden remains in the missing identities, parameter choices, and estimates; the surviving prose does not justify reconstructing cancellation or positivity mechanisms.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u04.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c10788b39edd3303ec4ea85fe8ea0cd707939057c88a62e262f418fb2d7fafe8",
+        "dossier_sha256": "0c4f84fa379be5834c71df9c536d29644571a8d5f02233e653bedda6743fe4dd"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2010828369_u07",
+      "source_id": "openalex_w2010828369",
+      "source_title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "computation",
+        "explicit-formula",
+        "numerical-evidence",
+        "primes-zeros"
+      ],
+      "unit_title": "Prescribed local completions unify discriminant and curve-genus minimization",
+      "unit_type": "reframing",
+      "nonparaphrase_operation": "The bridge objects are prescribed local completions; archimedean signatures instantiate the number-field side, while finite-field point conditions and genus instantiate the curve side.",
+      "interpretation": "The global quantity is studied relative to a local specification rather than in isolation. This reframing exposes a reusable constrained-minimization pattern shared by number fields and curves while allowing the invariant and local conditions to change with the category.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u07.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c10788b39edd3303ec4ea85fe8ea0cd707939057c88a62e262f418fb2d7fafe8",
+        "dossier_sha256": "0c4f84fa379be5834c71df9c536d29644571a8d5f02233e653bedda6743fe4dd"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2010828369_u09",
+      "source_id": "openalex_w2010828369",
+      "source_title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "computation",
+        "explicit-formula",
+        "numerical-evidence",
+        "primes-zeros"
+      ],
+      "unit_title": "Infinite class-field towers defeat divergence of minimal root discriminants",
+      "unit_type": "counterexample and obstruction",
+      "nonparaphrase_operation": "Hilbert class field towers bridge ramification behavior to asymptotic degree families; root discriminant is the tower-stable statistic that makes the contradiction visible.",
+      "interpretation": "A tower is a counterexample generator: repeated degree growth combined with invariant root discriminant invalidates a global growth expectation. The useful obstruction is structural rather than a single exceptional numerical field.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u09.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c10788b39edd3303ec4ea85fe8ea0cd707939057c88a62e262f418fb2d7fafe8",
+        "dossier_sha256": "0c4f84fa379be5834c71df9c536d29644571a8d5f02233e653bedda6743fe4dd"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2010828369_u12",
+      "source_id": "openalex_w2010828369",
+      "source_title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "computation",
+        "explicit-formula",
+        "numerical-evidence",
+        "primes-zeros"
+      ],
+      "unit_title": "Tailor kernels to known, absent, or targeted small prime ideals",
+      "unit_type": "kernel construction",
+      "nonparaphrase_operation": "Contrasts general-purpose optimization with evidence-conditioned kernel selection and identifies the representational tradeoff: a kernel strong without auxiliary information may suppress the moderate-norm contributions one wants to use, whereas a tailored kernel makes specified presence, absence, or emphasis operational in the global estimate.",
+      "interpretation": "Kernel design should depend on the arithmetic information available. Kernels optimized for discriminant bounds with no prime-ideal information decay rapidly and may be nonmonotone, so they can underuse known ideals of moderate norm; the alternative explicit-formula construction permits termwise comparison, strengthens the stated estimate when norm-2 prime ideals are absent, and can be redesigned to emphasize particular ideals. The gain is an evidence-conditioned probe rather than a universally optimal bound, and the proof burden remains in verifying the missing kernel, inequalities, and admissibility conditions.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u12.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c10788b39edd3303ec4ea85fe8ea0cd707939057c88a62e262f418fb2d7fafe8",
+        "dossier_sha256": "0c4f84fa379be5834c71df9c536d29644571a8d5f02233e653bedda6743fe4dd"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2010828369_u14",
+      "source_id": "openalex_w2010828369",
+      "source_title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "computation",
+        "explicit-formula",
+        "numerical-evidence",
+        "primes-zeros"
+      ],
+      "unit_title": "Ideal-class zeta functions improve Minkowski constants but resist GRH import",
+      "unit_type": "analytic transfer and limitation",
+      "nonparaphrase_operation": "Ideal-class zeta functions bridge analytic estimates to class-wise small ideals; the different and class inversion organize the paired alternative, while the induced discriminant inequality is a coarser consequence.",
+      "interpretation": "The analytic representation preserves ideal-class information that a bare discriminant bound loses, but that gain changes the available structure: without an Euler product or valid GRH, familiar conditional machinery cannot be transferred by analogy. Representation choice trades one kind of information for another.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u14.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c10788b39edd3303ec4ea85fe8ea0cd707939057c88a62e262f418fb2d7fafe8",
+        "dossier_sha256": "0c4f84fa379be5834c71df9c536d29644571a8d5f02233e653bedda6743fe4dd"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2010828369_u17",
+      "source_id": "openalex_w2010828369",
+      "source_title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "computation",
+        "explicit-formula",
+        "numerical-evidence",
+        "primes-zeros"
+      ],
+      "unit_title": "Use the same kernel to compare prime and zero shares, then test kernel sensitivity",
+      "unit_type": "computational certification logic",
+      "nonparaphrase_operation": "Treats the table as a case-specific accounting control and the unconditional-kernel comparison as a sensitivity analysis. This separates a valid within-case residual decomposition from an invalid fixed-kernel comparison across cases and identifies kernel choice as part of the attribution mechanism.",
+      "interpretation": "For each of six selected fields, the GRH-bound kernel chosen for that case supplies one coherent accounting identity: deficiency is compared with the computed prime-ideal contribution, and the zero contribution is obtained as the residual. The scale parameter b varies across degree/signature cases, so the controlled comparison is within a row rather than under one fixed kernel across the panel. The reported comparable shares are therefore panel- and representation-dependent; rerunning the accounting with the best unconditional kernel makes the zero share considerably larger relative to the prime share, demonstrating kernel sensitivity rather than an intrinsic universal balance.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u17.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c10788b39edd3303ec4ea85fe8ea0cd707939057c88a62e262f418fb2d7fafe8",
+        "dossier_sha256": "0c4f84fa379be5834c71df9c536d29644571a8d5f02233e653bedda6743fe4dd"
+      }
+    },
+    {
+      "unit_id": "openalex_w2021537603_u001",
+      "source_id": "openalex_w2021537603",
+      "source_title": "An explicit formula for the fourth power mean of the Riemann zeta-function",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "zeta"
+      ],
+      "unit_title": "From Atkinson's diagonal split to automorphic spectral decomposition",
+      "unit_type": "motivation-and-strategy",
+      "nonparaphrase_operation": "Quadruples become integral 2×2 matrices; determinant sign encodes the split, while SL(2,Z) orbits, Kloosterman sums, and automorphic L-functions bridge the combinatorial sum to spectral data.",
+      "interpretation": "Atkinson's diagonal/off-diagonal strategy survives, but its separating transform must be upgraded from a classical lattice transform to automorphic spectral decomposition.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_u001.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f13c9c84c24765ecda03fd560f2ab4151eb36f92efda102b62ff7dd01e2c7662",
+        "dossier_sha256": "f4af96a61f66746f700c69821dc4f4b6e29797f57281249aab88770411069723"
+      }
+    },
+    {
+      "unit_id": "openalex_w2021537603_u006",
+      "source_id": "openalex_w2021537603",
+      "source_title": "An explicit formula for the fourth power mean of the Riemann zeta-function",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "zeta"
+      ],
+      "unit_title": "Asymptotic spectral wave formula and its conceptual interpretation",
+      "unit_type": "corollary-and-interpretation",
+      "nonparaphrase_operation": "The oscillatory kernel maps each Laplace eigenvalue into a phase and damping factor contributing to the smoothed zeta fourth moment.",
+      "interpretation": "The spectral formula reframes moment fluctuations as interference among automorphic modes, but the source carefully presents a direct conceptual explanation as an open problem rather than deriving one.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_u006.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f13c9c84c24765ecda03fd560f2ab4151eb36f92efda102b62ff7dd01e2c7662",
+        "dossier_sha256": "f4af96a61f66746f700c69821dc4f4b6e29797f57281249aab88770411069723"
+      }
+    },
+    {
+      "unit_id": "openalex_w2021537603_u011",
+      "source_id": "openalex_w2021537603",
+      "source_title": "An explicit formula for the fourth power mean of the Riemann zeta-function",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "zeta"
+      ],
+      "unit_title": "Corrected opposite-sign Kuznetsov trace formula via K-Bessel inversion",
+      "unit_type": "trace-formula-and-proof",
+      "nonparaphrase_operation": "The K-Bessel transform maps the test weight to a spectral weight; Poincaré-series inner products connect opposite-sign Kloosterman sums to Maass coefficients and the continuous spectrum.",
+      "interpretation": "The trace formula is a basis change whose admissibility depends on transform regularity and inversion, not merely a formal replacement of Kloosterman sums by eigenvalues.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_u011.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f13c9c84c24765ecda03fd560f2ab4151eb36f92efda102b62ff7dd01e2c7662",
+        "dossier_sha256": "f4af96a61f66746f700c69821dc4f4b6e29797f57281249aab88770411069723"
+      }
+    },
+    {
+      "unit_id": "openalex_w2021537603_u017",
+      "source_id": "openalex_w2021537603",
+      "source_title": "An explicit formula for the fourth power mean of the Riemann zeta-function",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "zeta"
+      ],
+      "unit_title": "Hypergeometric residue extraction gives global meromorphy and rapid decay",
+      "unit_type": "meromorphic-continuation",
+      "nonparaphrase_operation": "The Mellin–Barnes kernel becomes a hypergeometric integral; its first P gamma poles become explicit W* terms, while partial integration controls the residual multiple integral and Stirling estimates control spectral decay.",
+      "interpretation": "Finite residue extraction is a tunable continuation device: singular information is made explicit while regularity of the remainder is enlarged without requiring one globally valid contour.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_u017.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f13c9c84c24765ecda03fd560f2ab4151eb36f92efda102b62ff7dd01e2c7662",
+        "dossier_sha256": "f4af96a61f66746f700c69821dc4f4b6e29797f57281249aab88770411069723"
+      }
+    },
+    {
+      "unit_id": "openalex_w2021537603_u022",
+      "source_id": "openalex_w2021537603",
+      "source_title": "An explicit formula for the fourth power mean of the Riemann zeta-function",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "zeta"
+      ],
+      "unit_title": "Hypergeometric representation closes the explicit-formula proof",
+      "unit_type": "kernel-identification",
+      "nonparaphrase_operation": "The master Mellin–Barnes function becomes a Gauss hypergeometric integral, and the substitutions ξ=ir or ξ=k−1 plus y↦1/x bridge continuous, Maass, and holomorphic parameters to the stated kernel.",
+      "interpretation": "Analytic continuation is validated by reconnecting it to a concrete integral representation at the target; this prevents the continuation machinery from losing the theorem's original kernel semantics.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_u022.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f13c9c84c24765ecda03fd560f2ab4151eb36f92efda102b62ff7dd01e2c7662",
+        "dossier_sha256": "f4af96a61f66746f700c69821dc4f4b6e29797f57281249aab88770411069723"
+      }
+    },
+    {
+      "unit_id": "openalex_w2021537603_u027",
+      "source_id": "openalex_w2021537603",
+      "source_title": "An explicit formula for the fourth power mean of the Riemann zeta-function",
+      "source_year": 1993,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "zeta"
+      ],
+      "unit_title": "Assemble the corollary from spectral truncation and mean-value control",
+      "unit_type": "asymptotic-assembly",
+      "nonparaphrase_operation": "Separates pointwise asymptotic extraction from family-level error transport and identifies the spectral mean value as the mechanism joining them. It also distinguishes two independent closure burdens, discrete and continuous, rather than treating localization alone as the end of the proof.",
+      "interpretation": "This is an error-transport and closure step: earlier reductions discard the holomorphic branch and localize the non-holomorphic discrete spectrum, but a pointwise kernel asymptotic is not enough because its remainder must be summed over the retained family. A cited spectral mean value for the Hecke weights converts that local remainder into the printed aggregate bound, while classical individual and fourth-moment zeta estimates close the continuous branch separately. The assembly therefore gains global spectral control by combining branch-specific tools, at the cost of depending on external mean-value and zeta estimates not proved here.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_u027.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f13c9c84c24765ecda03fd560f2ab4151eb36f92efda102b62ff7dd01e2c7662",
+        "dossier_sha256": "f4af96a61f66746f700c69821dc4f4b6e29797f57281249aab88770411069723"
+      }
+    },
+    {
+      "unit_id": "openalex_w2042837137_d001",
+      "source_id": "openalex_w2042837137",
+      "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+      "source_year": 1986,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Finite zero verification assembled from separated ranges and a boundary overrun",
+      "unit_type": "computational-certification",
+      "nonparaphrase_operation": "Decomposes the result into inherited prefix, range interfaces, terminal overrun, and imported theorem, identifying Gram indices as the stitching coordinate and separating computational coverage from the theorem that converts it into a zero statement.",
+      "interpretation": "The finite certificate composes an inherited verified prefix through g_300,000,000 with three adjacent new machine-computed ranges through g_1,500,000,000, then adds five Rosser-valid Gram blocks before invoking the cited Theorem 3.2 to obtain the stated simplicity and critical-line conclusion for the first 1,500,000,001 zeros. The common Gram-index representation makes separately computed ranges composable; the deliberate overrun appears to supply terminal evidence, but its exact theorem-level role is not available here. This gains a distributed finite certificate while leaving the imported conversion theorem and all claims beyond the stated rectangle outside the evidence.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d001.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19"
+      }
+    },
+    {
+      "unit_id": "openalex_w2042837137_d004",
+      "source_id": "openalex_w2042837137",
+      "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+      "source_year": 1986,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Conservative error bounds turn computed Gram-point values into certified signs",
+      "unit_type": "computational-certification",
+      "nonparaphrase_operation": "Reframes numerical error bounds as an enclosure-to-sign bridge and identifies conservative slack as the mechanism protecting the discrete sign record, while separating that layer from the broader zero-separation certificate.",
+      "interpretation": "The computation turns approximate values of Z(t) into usable sign evidence by pairing each value with a conservative error allowance: the source gives safe bounds of 3×10^-5 and 2.1×10^-11 for methods A and B but says the program used the looser fixed bounds 10^-4 and 2.5×10^-7. Interpreted as an enclosure, a computed value whose error interval excludes zero has a controlled sign; the reported success of method B at every Gram point where it was needed supplies the observed sign-resolution fact. This representation gains robust discrete signs from continuous approximations but discards magnitude information and does not by itself certify that all zeros were found.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d004.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19"
+      }
+    },
+    {
+      "unit_id": "openalex_w2042837137_d007",
+      "source_id": "openalex_w2042837137",
+      "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+      "source_year": 1986,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Height comparison and first-occurrence data separate apparent convergence from rarity",
+      "unit_type": "finite-sample-diagnostic",
+      "nonparaphrase_operation": "Conditional type-frequency vectors provide the stabilization diagnostic, and first-occurrence Gram indices provide a complementary rarity coordinate.",
+      "interpretation": "The analysis stratifies by block length before comparing height, avoiding a pooled distribution that would mix changing block abundances. First-occurrence data make nonobservation a censored finite-sample fact rather than a structural impossibility.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d007.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19"
+      }
+    },
+    {
+      "unit_id": "openalex_w2042837137_d009",
+      "source_id": "openalex_w2042837137",
+      "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+      "source_year": 1986,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Post-hoc recovery of missing zero pairs suggests an integrated search and its first failure mode",
+      "unit_type": "search-strategy-obstruction",
+      "nonparaphrase_operation": "Short zero-occupancy strings make the search radius and displacement of the missing pair visible without reconstructing the full function graph.",
+      "interpretation": "An empirical regularity is converted into a search strategy, and counterfactual construction exposes its exact locality assumption. The proposed pattern is a method-level obstruction even though it was not observed.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d009.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19"
+      }
+    },
+    {
+      "unit_id": "openalex_w2042837137_d012",
+      "source_id": "openalex_w2042837137",
+      "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+      "source_year": 1986,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "Rare exception plots and normalized spacing expose local zero geometry beyond block labels",
+      "unit_type": "geometric-example",
+      "nonparaphrase_operation": "Interprets normalized spacing as quotienting out the natural local height scale, thereby isolating local geometry while keeping it distinct from the example's categorical block label and from visual proof.",
+      "interpretation": "The source supplements named rare Rosser-rule examples and the first observed length-nine Gram block with a scale-aware description of the closest observed zero pair: its gap is divided by the natural local spacing 2π/log(t_n), yielding 0.00034. This normalization removes the leading height-dependent spacing scale and adds a comparable local geometric statistic to the example. It gains scale-free information unavailable from an absolute gap alone, but neither supplies the imported semantics of the block-type labels nor establishes a distribution of small gaps.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d012.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19"
+      }
+    },
+    {
+      "unit_id": "openalex_w2042837137_d015",
+      "source_id": "openalex_w2042837137",
+      "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+      "source_year": 1986,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros",
+        "zeta"
+      ],
+      "unit_title": "A higher finite verification bound can sharpen conditional consequences without proving RH",
+      "unit_type": "scope-boundary",
+      "nonparaphrase_operation": "The predicate that all zeros below height A lie on the critical line is the bridge object connecting a computational certificate to literature results parameterized by A.",
+      "interpretation": "A finite zero verification can serve as an interface lemma whose parameter is consumed by other theorems. This preserves the useful downstream role of computation while keeping it logically separate from an unbounded statement.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d015.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19"
+      }
+    },
+    {
+      "unit_id": "d158_u001",
+      "source_id": "openalex_w2080252578",
+      "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+      "source_year": 1994,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "overview",
+        "rh"
+      ],
+      "unit_title": "Heat-deformed entire functions and the threshold constant",
+      "unit_type": "framework",
+      "nonparaphrase_operation": "The bridge runs from the xi-function to a heat-deformed Fourier-cosine transform and then from real-zero location to a scalar threshold parameter.",
+      "interpretation": "A deformation embeds one difficult statement into an ordered phase diagram. Lower bounds on Λ can then be sought through events in the deformation rather than by inspecting H_0 alone.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u001.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49"
+      }
+    },
+    {
+      "unit_id": "d158_u004",
+      "source_id": "openalex_w2080252578",
+      "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+      "source_year": 1994,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "overview",
+        "rh"
+      ],
+      "unit_title": "A Lehmer pair yields an explicit lower bound and an infinite cascade forces nonnegative threshold",
+      "unit_type": "theorem",
+      "nonparaphrase_operation": "Separates the finite certificate-to-bound map from the conditional sequence-limit argument and identifies the assumptions and one-sided information preserved by each.",
+      "interpretation": "Theorem 1 turns one certified Lehmer-pair statistic into a scalar constraint on the de Bruijn–Newman threshold: a negative environmental term gives a positive-threshold conclusion, while a positive environmental term yields an explicit negative pair-derived lower bound. Corollary 1 then applies a separate limiting step: under an infinite family of positive-environment Lehmer pairs whose gaps shrink to zero, the lower bounds accumulate at zero and force only the one-sided conclusion that the threshold is nonnegative. The scalar compression makes local certificates directly comparable with a global threshold, but the span does not supply the later collision proof or establish that the required infinite family exists; equality at zero remains compatible with the Riemann Hypothesis.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u004.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49"
+      }
+    },
+    {
+      "unit_id": "d158_u008",
+      "source_id": "openalex_w2080252578",
+      "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+      "source_year": 1994,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "overview",
+        "rh"
+      ],
+      "unit_title": "Zero motion as an inverse-square interaction and a gap ODE",
+      "unit_type": "representation-change",
+      "nonparaphrase_operation": "The Hadamard product bridges entire-function derivatives to inverse-square zero interactions; the gap ODE and comparison g_k(t) bridge that many-body system to a one-dimensional collision analysis.",
+      "interpretation": "The zero set is recast as an interacting dynamical system. The close pair supplies the singular local mechanism, while the rest of the zeros enter through a scalar environment that can be estimated separately.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u008.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49"
+      }
+    },
+    {
+      "unit_id": "d158_u011",
+      "source_id": "openalex_w2080252578",
+      "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+      "source_year": 1994,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "overview",
+        "rh"
+      ],
+      "unit_title": "Infinitely many shrinking Lehmer gaps force a nonnegative threshold",
+      "unit_type": "limit-argument",
+      "nonparaphrase_operation": "Extracts the dimensionless limit-transfer mechanism and distinguishes accumulation of lower bounds at zero from equality of the unknown threshold with zero.",
+      "interpretation": "The proof normalizes each certified squared gap together with its positive environmental term into a parameter lying in a fixed interval, then expresses the pair-derived threshold bound through a monotone scalar function of that parameter. This removes irrelevant scale and transfers the shrinking-gap limit to the lower-bound limit: under the stated infinite Lehmer-pair hypotheses, the bounds approach zero, and because every one is below the global threshold, they force the one-sided result that the threshold is nonnegative. The argument neither identifies the threshold with zero nor produces the infinite certified family, and its exact normalization is unsafe without the scan.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u011.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49"
+      }
+    },
+    {
+      "unit_id": "d158_u015",
+      "source_id": "openalex_w2080252578",
+      "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+      "source_year": 1994,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "overview",
+        "rh"
+      ],
+      "unit_title": "The pair-derived bound is dominated by the squared gap",
+      "unit_type": "sensitivity-analysis",
+      "nonparaphrase_operation": "The Taylor expansion bridges the exact pair-bound formula to a dominant squared-gap approximation and explains the observed robustness.",
+      "interpretation": "This is a sensitivity decomposition: gap geometry selects the scale of the bound, while environmental certification establishes admissibility and supplies smaller corrections.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u015.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49"
+      }
+    },
+    {
+      "unit_id": "d158_u018",
+      "source_id": "openalex_w2080252578",
+      "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+      "source_year": 1994,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "overview",
+        "rh"
+      ],
+      "unit_title": "A much smaller certified gap sharpens the lower bound and motivates an infinite-pair route",
+      "unit_type": "theorem-and-outlook",
+      "nonparaphrase_operation": "Turns the numerical comparison into a bounded robustness and search-priority inference while separating that inference from the stronger infinite-family limit mechanism proved elsewhere.",
+      "interpretation": "Applying the established pair-to-threshold map to the high-index Lehmer certificate produces the paper’s sharper negative lower bound. Comparing the more precise bound with the leading negative squared-gap term shows that this certificate’s result is only weakly affected by the environmental estimate, which supports a search heuristic favoring exceptionally close pairs that can also be certified. The closing outlook is incremental: further extended zero calculations may supply improved bounds; this span does not prove infinitely many Lehmer pairs, convergence of the bounds to zero, or the Riemann Hypothesis. Exact values and signs remain unsafe without the scan.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u018.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49"
+      }
+    },
+    {
+      "unit_id": "openalex_w2116781013_d01",
+      "source_id": "openalex_w2116781013",
+      "source_title": "On the zeros of the Riemann zeta function in the critical strip. II",
+      "source_year": 1982,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros"
+      ],
+      "unit_title": "Completed-function symmetry reframes the Riemann hypothesis",
+      "unit_type": "representation change and equivalent criterion",
+      "nonparaphrase_operation": "The bridge is the chain from zeta in the s-plane to its completed function and then to the even entire real-variable representation. It exposes reflection symmetry and preserves the relevant nontrivial zero locations, but the OCR does not safely preserve the normalization or coordinate formula.",
+      "interpretation": "Completion absorbs auxiliary factors so that the functional equation becomes geometric symmetry. Recentring then turns the critical line into a real-axis condition; evenness and conjugation identify reflected cases without changing the zero-location question.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_d01.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e72ac45f8f0524947ef3ff5f5e1e694764712b41a89d55f212fe3117746ac26d",
+        "dossier_sha256": "5389db0ec2ce5dbfd703191606135f5184cb2ae88e0744bae624570abfb2e3ce"
+      }
+    },
+    {
+      "unit_id": "openalex_w2116781013_d03",
+      "source_id": "openalex_w2116781013",
+      "source_title": "On the zeros of the Riemann zeta function in the critical strip. II",
+      "source_year": 1982,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros"
+      ],
+      "unit_title": "Finite zero verification becomes costed sign-change separation",
+      "unit_type": "computational certification framing",
+      "nonparaphrase_operation": "Z(t) bridges complex critical-line values to a real sign process, and Gram blocks organize the continuous height variable into search regions. Sign changes are the intermediate evidence connecting evaluation to separated zeros; the final zero-count implication requires theory outside this span.",
+      "interpretation": "The zero-location computation is reframed as production of discrete, checkable sign-change witnesses. Once the bottleneck is identified, algorithm design can target the number and placement of Z-evaluations while leaving the later certification implication distinct.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_d03.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e72ac45f8f0524947ef3ff5f5e1e694764712b41a89d55f212fe3117746ac26d",
+        "dossier_sha256": "5389db0ec2ce5dbfd703191606135f5184cb2ae88e0744bae624570abfb2e3ce"
+      }
+    },
+    {
+      "unit_id": "openalex_w2116781013_d05",
+      "source_id": "openalex_w2116781013",
+      "source_title": "On the zeros of the Riemann zeta function in the critical strip. II",
+      "source_year": 1982,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros"
+      ],
+      "unit_title": "Escalate unresolved blocks to preserved plots and manual inspection",
+      "unit_type": "failure handling and certification closure",
+      "nonparaphrase_operation": "Interprets plots, provisional continuation, boundary overrun, and theorem invocation as distinct layers of an exception-preserving certification pipeline rather than treating program continuation as evidence of success.",
+      "interpretation": "The program separates computational throughput from final certification by turning unresolved automatic cases into preserved exceptions: it continues provisionally, but records plots for later inspection before relying on an overrun and a cited theorem to close the announced finite prefix. This gains an auditable failure path without blocking the main run, but loses self-contained automatic certification; the proof burden remains with the unformalized manual judgments and the unreproduced hypotheses and implication of Brent's Theorem 3.2.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_d05.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e72ac45f8f0524947ef3ff5f5e1e694764712b41a89d55f212fe3117746ac26d",
+        "dossier_sha256": "5389db0ec2ce5dbfd703191606135f5184cb2ae88e0744bae624570abfb2e3ce"
+      }
+    },
+    {
+      "unit_id": "openalex_w2116781013_d07",
+      "source_id": "openalex_w2116781013",
+      "source_title": "On the zeros of the Riemann zeta function in the critical strip. II",
+      "source_year": 1982,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros"
+      ],
+      "unit_title": "Small argument shifts reduce expensive fallbacks but break strict count accumulation",
+      "unit_type": "adaptive fallback and measurement caveat",
+      "nonparaphrase_operation": "The decision chain is fast method A, nearby shifted evaluations, then precise method B. Shifting bridges an inconclusive value near zero to a potentially robust sign, but it also maps the exact Gram-point classification problem to a nearby sampling convention.",
+      "interpretation": "An adaptive measurement can improve decision efficiency while changing the observable being counted. The source correctly treats the resulting provenance difference as mathematically relevant to aggregation, not merely as implementation bookkeeping.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_d07.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e72ac45f8f0524947ef3ff5f5e1e694764712b41a89d55f212fe3117746ac26d",
+        "dossier_sha256": "5389db0ec2ce5dbfd703191606135f5184cb2ae88e0744bae624570abfb2e3ce"
+      }
+    },
+    {
+      "unit_id": "openalex_w2116781013_d09",
+      "source_id": "openalex_w2116781013",
+      "source_title": "On the zeros of the Riemann zeta function in the critical strip. II",
+      "source_year": 1982,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros"
+      ],
+      "unit_title": "Selected subranges can efficiently screen for Rosser-rule exceptions",
+      "unit_type": "alternative search strategy",
+      "nonparaphrase_operation": "The selected subranges are a sparse observation set bridging a large t-interval to candidate Rosser-rule exceptions; the existing table provides the comparison target for measuring recovery.",
+      "interpretation": "Selective search allocates computation to regions predicted to be informative and validates the screen against a fuller catalog. Its value is high recall at lower effort, while the missed cases delimit the regime in which it can substitute for exhaustive scanning.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_d09.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e72ac45f8f0524947ef3ff5f5e1e694764712b41a89d55f212fe3117746ac26d",
+        "dossier_sha256": "5389db0ec2ce5dbfd703191606135f5184cb2ae88e0744bae624570abfb2e3ce"
+      }
+    },
+    {
+      "unit_id": "openalex_w2116781013_d11",
+      "source_id": "openalex_w2116781013",
+      "source_title": "On the zeros of the Riemann zeta function in the critical strip. II",
+      "source_year": 1982,
+      "source_viewpoint_tags": [
+        "computation",
+        "critical-strip",
+        "numerical-evidence",
+        "zeros"
+      ],
+      "unit_title": "The outer-interval heuristic is conditional on Gram-block length",
+      "unit_type": "empirical strategy limitation",
+      "nonparaphrase_operation": "The block-type and zero-pattern representation maps each block length to the location of its missing pair, turning a search policy into an empirically auditable conditional distribution. This exposes where the outer-first rule spends evaluations well and where it likely misallocates them.",
+      "interpretation": "A heuristic learned from dominant short cases should be conditioned on block length rather than extrapolated uniformly. The observed location shift supplies a concrete failure mode and motivates changing the interval priority for rare longer blocks.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_d11.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e72ac45f8f0524947ef3ff5f5e1e694764712b41a89d55f212fe3117746ac26d",
+        "dossier_sha256": "5389db0ec2ce5dbfd703191606135f5184cb2ae88e0744bae624570abfb2e3ce"
+      }
+    },
+    {
+      "unit_id": "openalex_w2146492295_u001",
+      "source_id": "openalex_w2146492295",
+      "source_title": "A new lower bound for the de Bruijn-Newman constant",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "The de Bruijn-Newman real-zero threshold",
+      "unit_type": "definition-and-obstruction",
+      "nonparaphrase_operation": "The bridge is from the kernel to a one-parameter family of entire functions and then from zero geometry to an order relation on the threshold constant. The kernel properties explain why the transform is analytically well behaved, while the parameter provides the comparison axis.",
+      "interpretation": "The deformation parameter organizes a global zero-location question as a phase boundary. To improve a lower bound, it is enough to find an obstruction to real-rootedness below the boundary; this changes the strategic target from proving all-zero behavior to producing one certified counterexample at a parameter.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u001.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e"
+      }
+    },
+    {
+      "unit_id": "openalex_w2146492295_u003",
+      "source_id": "openalex_w2146492295",
+      "source_title": "A new lower bound for the de Bruijn-Newman constant",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Earlier coefficient-error certification by full root computation",
+      "unit_type": "method-comparison",
+      "nonparaphrase_operation": "Approximate coefficient vectors and their error bounds are mapped to controlled neighborhoods of exact roots. The full root list is an intermediate representation used to establish the existence of an exact non-real root.",
+      "interpretation": "This separates discovery from certification. A numerical complex zero is only a candidate; the perturbation theorem is the bridge that makes it evidence about the exact polynomial. Ill-conditioning of roots with respect to coefficients explains why the certification budget greatly exceeds the apparent numerical accuracy of the root.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u003.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e"
+      }
+    },
+    {
+      "unit_id": "openalex_w2146492295_u006",
+      "source_id": "openalex_w2146492295",
+      "source_title": "A new lower bound for the de Bruijn-Newman constant",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Continuation search from a known complex zero",
+      "unit_type": "search-procedure-and-result",
+      "nonparaphrase_operation": "Separates a continuation-guided search into a cheap decision channel and a coordinate-level corroboration channel, explaining how information from a neighboring parameter is reused without asserting that the degree search itself is warm-started.",
+      "interpretation": "The algorithm continues from a known parameter/root case to larger parameter values, screening successive Jensen polynomials by Sturm real-root counts on a suitably chosen interval and reconstructing a complex zero only as a check. The prior complex zero guides that check through an apparently corresponding component in the OCR-degraded notation, while a nearby real local extremum supplies the other starting component. Thus the count is the primary decision representation and an explicit zero is secondary corroboration. The interval's adequacy and the numerical trustworthiness of the signs are assumed rather than established here.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u006.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e"
+      }
+    },
+    {
+      "unit_id": "openalex_w2146492295_u008",
+      "source_id": "openalex_w2146492295",
+      "source_title": "A new lower bound for the de Bruijn-Newman constant",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Minimal degree and precision grow sharply toward minus five",
+      "unit_type": "computational-observation",
+      "nonparaphrase_operation": "Uses the aligned columns as a comparative representation of witness size, zero geometry, and precision budget, then distinguishes their observed association from a causal complexity law.",
+      "interpretation": "The table aligns each sampled parameter with the minimal reported Jensen-polynomial degree having complex roots, an approximate complex zero, and working precision. Across these finite runs, the endpoint changes from degree 16 at parameter -50 to degree 406 at -5, whose row reports 250D precision. This is an observed profile consistent with increased practical cost near -5, not evidence that degree or zero geometry causes the cost, that the pattern is monotone in every column, or that an asymptotic obstruction has been proved.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u008.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e"
+      }
+    },
+    {
+      "unit_id": "openalex_w2146492295_u011",
+      "source_id": "openalex_w2146492295",
+      "source_title": "A new lower bound for the de Bruijn-Newman constant",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Evenness makes trapezoidal refinement preferable to Romberg extrapolation",
+      "unit_type": "method-comparison",
+      "nonparaphrase_operation": "The even-integrand representation bridges a structural property to a convergence theorem and then to composite-trapezoid refinement. Successive corrections and observed digit growth provide practical stopping diagnostics.",
+      "interpretation": "Symmetry is not decorative: it selects the numerical method. Recognizing evenness exposes a convergence regime in which the supposedly more sophisticated extrapolation is unnecessary, and nested grids make refinement values reusable across moments.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u011.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e"
+      }
+    },
+    {
+      "unit_id": "openalex_w2146492295_u013",
+      "source_id": "openalex_w2146492295",
+      "source_title": "A new lower bound for the de Bruijn-Newman constant",
+      "source_year": 1990,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction"
+      ],
+      "unit_title": "Adaptive root interval, precision escalation, and explicit-zero cross-check",
+      "unit_type": "certification-and-recovery-strategy",
+      "nonparaphrase_operation": "Decomposes an ambiguous low count into domain-coverage and arithmetic-accuracy failure modes, maps each to a targeted recovery, and places the explicit-zero representation in the source's subordinate checking role.",
+      "interpretation": "The computation treats two different causes of a deficient real-root count with different repairs. Because the real zeros are stated to be negative, it counts on intervals ending at zero and decreases the left endpoint when coverage may be inadequate; when an abrupt count collapse instead reflects insufficient precision, it raises the arithmetic accuracy until the usual neighboring-degree pattern returns. A complex zero found using a local extremum is retained as an extra check. These repairs improve diagnostic separation, but interval enlargement, restored patterns, and the extra zero do not by themselves provide an independent error bound for every endpoint sign.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u013.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e"
+      }
+    },
+    {
+      "unit_id": "batch_168_u01",
+      "source_id": "openalex_w2591008310",
+      "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+      "source_year": 1978,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "partial-results",
+        "zero-density",
+        "zeta"
+      ],
+      "unit_title": "Generalized Dirichlet-series lower mean values with branch control",
+      "unit_type": "problem formulation",
+      "nonparaphrase_operation": "The chain is coefficient series to analytic continuation to branch-defined power to derivative mean. The vertical integral compresses pointwise oscillation while retaining average magnitude, and differentiation tests variation of the powered object rather than only its size.",
+      "interpretation": "The zero-free condition is a semantic prerequisite rather than a technical decoration: it converts a multivalued power into a chosen analytic object. The problem then asks how much averaged derivative magnitude must survive on a nearby vertical line.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u01.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1e27cc83f7bb770e2441b8aa241837d2c1ecff60b274187f2b01040f4ff2eb1d",
+        "dossier_sha256": "bdd47208ad0b659172b8eb68168301b89d723df091858d9bd6eb5cbebf3b5a73"
+      }
+    },
+    {
+      "unit_id": "batch_168_u04",
+      "source_id": "openalex_w2591008310",
+      "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+      "source_year": 1978,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "partial-results",
+        "zero-density",
+        "zeta"
+      ],
+      "unit_title": "Failure of the target lower bound becomes a uniform mean upper bound",
+      "unit_type": "contradiction setup",
+      "nonparaphrase_operation": "Makes the theorem's quantifiers operational by reframing failure of one large shift as a uniform family of upper estimates.",
+      "interpretation": "The contradiction setup converts failure of an existential maximal lower bound into uniform smallness over every admissible shifted line. That quantifier change is the useful move: it turns the negated theorem into a quantitative estimate that the subsequent lemmas can consume. The gain is uniform control; the loss is that no contradiction has yet been obtained, and the argument still depends on later estimates and on eventually choosing a sufficiently large loss constant.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u04.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1e27cc83f7bb770e2441b8aa241837d2c1ecff60b274187f2b01040f4ff2eb1d",
+        "dossier_sha256": "bdd47208ad0b659172b8eb68168301b89d723df091858d9bd6eb5cbebf3b5a73"
+      }
+    },
+    {
+      "unit_id": "batch_168_u06",
+      "source_id": "openalex_w2591008310",
+      "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+      "source_year": 1978,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "partial-results",
+        "zero-density",
+        "zeta"
+      ],
+      "unit_title": "Jensen control of unit-height local zero counts",
+      "unit_type": "zero-counting lemma",
+      "nonparaphrase_operation": "Analytic data on a circle is represented by a radial counting integral. This bridge forgets individual zero locations but retains enough multiplicity-weighted information to bound a local population.",
+      "interpretation": "The lemma turns continuous boundary growth into combinatorial sparsity of zeros. A zero contributes persistently to n(x) over a range of radii, so the Jensen integral prevents too many zeros from being hidden inside a region whose boundary values are controlled.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u06.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1e27cc83f7bb770e2441b8aa241837d2c1ecff60b274187f2b01040f4ff2eb1d",
+        "dossier_sha256": "bdd47208ad0b659172b8eb68168301b89d723df091858d9bd6eb5cbebf3b5a73"
+      }
+    },
+    {
+      "unit_id": "batch_168_u09",
+      "source_id": "openalex_w2591008310",
+      "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+      "source_year": 1978,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "partial-results",
+        "zero-density",
+        "zeta"
+      ],
+      "unit_title": "Using separated shifted lines to force a derivative mean lower bound",
+      "unit_type": "theorem assembly",
+      "nonparaphrase_operation": "Interprets nearby vertical lines as discrete samples in the real direction and identifies the exact finite-difference synthesis that transports value-mean separation into an averaged derivative bound.",
+      "interpretation": "For condition (ii), the proof samples the powered function on an equally spaced chain of nearby real parts. Referenced lower-bound inputs make the first shifted mean large, while separate parameter choices ensure that the remaining shifted means do not cancel it cheaply. Their alternating finite difference is then represented by Lemma 8 as an m-fold average of the m-th derivative, forcing derivative mean mass somewhere across the chain. This bridge gains derivative information without termwise differentiation, but its success still depends on the prior lower bounds and the quantitative dominance choices, not on the finite-difference identity alone.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u09.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1e27cc83f7bb770e2441b8aa241837d2c1ecff60b274187f2b01040f4ff2eb1d",
+        "dossier_sha256": "bdd47208ad0b659172b8eb68168301b89d723df091858d9bd6eb5cbebf3b5a73"
+      }
+    },
+    {
+      "unit_id": "batch_168_u11",
+      "source_id": "openalex_w2591008310",
+      "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+      "source_year": 1978,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "partial-results",
+        "zero-density",
+        "zeta"
+      ],
+      "unit_title": "Relaxed product growth changes the logarithmic exponent predictably",
+      "unit_type": "hypothesis generalization",
+      "nonparaphrase_operation": "Reads the parameter substitution as a robustness test, distinguishing survival of the proof pattern from preservation of the original quantitative strength.",
+      "interpretation": "The closing remark performs a sensitivity analysis on condition (ii): replacing one sharp product-growth scale by unequal lower and upper scales a<a' does not erase the maximal lower-bound conclusion, but changes its logarithmic exponent in a stated way. Thus the method is presented as quantitatively robust rather than exponent-insensitive. The specialization a'=n explains the earlier non-Galois number-field remark, while optimality and the derivation of the modified exponent remain outside this span.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u11.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1e27cc83f7bb770e2441b8aa241837d2c1ecff60b274187f2b01040f4ff2eb1d",
+        "dossier_sha256": "bdd47208ad0b659172b8eb68168301b89d723df091858d9bd6eb5cbebf3b5a73"
+      }
+    },
+    {
+      "unit_id": "batch_168_u14",
+      "source_id": "openalex_w2591008310",
+      "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+      "source_year": 1978,
+      "source_viewpoint_tags": [
+        "analytic-foundations",
+        "computation",
+        "numerical-evidence",
+        "partial-results",
+        "zero-density",
+        "zeta"
+      ],
+      "unit_title": "Second and fourth moments force a first-moment lower bound",
+      "unit_type": "moment interpolation proof sketch",
+      "nonparaphrase_operation": "Explains the interpolation inequality as a mass-versus-concentration constraint and states precisely what information the moment representation preserves and forgets.",
+      "interpretation": "The recoverable proof mechanism is moment interpolation. After replacing F by a Dirichlet polynomial truncated at an OCR-uncertain power scale Y, a second-moment asymptotic supplies mass and a fourth-moment upper bound limits how concentrated that mass can be. The displayed inequality then forces the qualitative first-moment conclusion referenced by Theorem 4. This aggregate representation preserves enough size information for an L1 lower bound while discarding locations and phases; the exact theorem bound and the detailed moment estimates remain unverified burdens.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u14.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1e27cc83f7bb770e2441b8aa241837d2c1ecff60b274187f2b01040f4ff2eb1d",
+        "dossier_sha256": "bdd47208ad0b659172b8eb68168301b89d723df091858d9bd6eb5cbebf3b5a73"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2955372169_u06",
+      "source_id": "openalex_w2955372169",
+      "source_title": "Riemann zeta fractional derivative—functional equation and link with primes",
+      "source_year": 2019,
+      "source_viewpoint_tags": [
+        "computation",
+        "grh",
+        "l-functions",
+        "numerical-evidence"
+      ],
+      "unit_title": "Fractional zeta as a shifted-convergence Dirichlet series",
+      "unit_type": "definition-and-convergence",
+      "nonparaphrase_operation": "Separates definition, convergence, and specialization into distinct evidential roles, then uses the integer series as a consistency boundary rather than importing it as a coefficientwise formula for noninteger order; this exposes what the representation establishes and what it leaves unproved.",
+      "interpretation": "The span uses a complex-plane Caputo integral operator to define the fractional construction and reports that its associated series converges pointwise only for Re(s)>1+alpha, compared with Re(s)>1 for the defining zeta series. Its separately displayed integer formula, zeta^(k)(s)=e^(i pi k) sum_{n=2}^infinity log^k(n)/n^s, supplies an integer-order comparison: agreement there is a necessary consistency check, while the shifted half-plane shows that changing order also changes where the series representation is directly justified. This gains a controlled bridge from an integral fractional operator to classical derivative behavior, but it does not display a noninteger log^alpha coefficient formula, analytically continue the associated fractional series, or establish a functional equation or zero result. The claims assume m-1<alpha<m and the stated convergence region; exact kernels, phases, indices, and branch choices remain formula-sensitive proof obligations.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u06.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2955372169_u08",
+      "source_id": "openalex_w2955372169",
+      "source_title": "Riemann zeta fractional derivative—functional equation and link with primes",
+      "source_year": 2019,
+      "source_viewpoint_tags": [
+        "computation",
+        "grh",
+        "l-functions",
+        "numerical-evidence"
+      ],
+      "unit_title": "The alpha-translated strip from mismatched zeta and eta convergence",
+      "unit_type": "representation-change",
+      "nonparaphrase_operation": "The Euler product supplies the classical zero-free baseline, while the alternating eta series extends convergence one unit left and relates back to zeta through an even-index correction. Comparing these representations produces the shifted-strip heuristic.",
+      "interpretation": "The proposed strip is organized by a mismatch between two convergence domains, not derived from a classification of fractional-derivative zeros. Translation by alpha preserves the width and limiting classical picture, which makes it a useful heuristic coordinate system but not an invariant theorem.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u08.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2955372169_u10",
+      "source_id": "openalex_w2955372169",
+      "source_title": "Riemann zeta fractional derivative—functional equation and link with primes",
+      "source_year": 2019,
+      "source_viewpoint_tags": [
+        "computation",
+        "grh",
+        "l-functions",
+        "numerical-evidence"
+      ],
+      "unit_title": "Exponential packaging turns reflection differentiation into product differentiation",
+      "unit_type": "proof-mechanism",
+      "nonparaphrase_operation": "The identity between a trigonometric factor and two exponentials bridges the classical reflection formula to a product representation. Periodicity aligns the two exponential branches, and the finite Leibniz expansion turns reflection differentiation into controlled factorwise differentiation.",
+      "interpretation": "Introducing psi is a useful intermediate abstraction: it isolates the difficult completed zeta factor while putting the oscillatory and scaling terms into an operator-friendly exponential. The proof burden is thereby separated into derivatives of the completed factor and scalar powers contributed by the exponential.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u10.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2955372169_u11",
+      "source_id": "openalex_w2955372169",
+      "source_title": "Riemann zeta fractional derivative—functional equation and link with primes",
+      "source_year": 2019,
+      "source_viewpoint_tags": [
+        "computation",
+        "grh",
+        "l-functions",
+        "numerical-evidence"
+      ],
+      "unit_title": "Exponentials are eigenfunctions of the forward fractional difference operator",
+      "unit_type": "operator-eigenfunction lemma",
+      "nonparaphrase_operation": "The generalized binomial series is the bridge between the discrete forward-difference definition and the closed multiplier e^{i*pi*alpha}w^alpha. The condition Re(w)<0 controls convergence for positive h.",
+      "interpretation": "The lemma identifies an eigenfunction-like basis for the nonlocal operator. A potentially unwieldy difference sum is compressed to scalar multiplication, so choosing exponential coordinates converts fractional differentiation into algebra on the spectral parameter w.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u11.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2955372169_u13",
+      "source_id": "openalex_w2955372169",
+      "source_title": "Riemann zeta fractional derivative—functional equation and link with primes",
+      "source_year": 2019,
+      "source_viewpoint_tags": [
+        "computation",
+        "grh",
+        "l-functions",
+        "numerical-evidence"
+      ],
+      "unit_title": "Fractional differentiation under s-to-1-s introduces a phase",
+      "unit_type": "reflection-rule lemma",
+      "nonparaphrase_operation": "The Dirichlet series provides a termwise bridge from the forward-difference operator to logarithmic coefficient weights. The binomial series compresses the k-sum, and comparison with the definition of zeta^(alpha) identifies the reflection phase.",
+      "interpretation": "The calculation isolates how a representation transformation interacts with a noninteger-order operator: ordinary chain-rule sign behavior becomes a continuous complex phase. Thus reflection is preserved only projectively unless another factor absorbs the phase.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u13.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a"
+      }
+    },
+    {
+      "unit_id": "full_openalex_w2955372169_u15",
+      "source_id": "openalex_w2955372169",
+      "source_title": "Riemann zeta fractional derivative—functional equation and link with primes",
+      "source_year": 2019,
+      "source_viewpoint_tags": [
+        "computation",
+        "grh",
+        "l-functions",
+        "numerical-evidence"
+      ],
+      "unit_title": "Nonmultiplicativity and unknown derivative zeros block the direct prime route",
+      "unit_type": "obstruction",
+      "nonparaphrase_operation": "The Euler product is the failed representation: coefficientwise log^alpha weighting does not preserve multiplicativity. Reported integer-derivative zero results act as a diagnostic comparison, showing why a zero-based bridge is also presently unavailable.",
+      "interpretation": "This is an obstruction analysis that separates loss of algebraic structure from lack of zero-control. Translation of a convergence strip does not transfer the multiplicative machinery that connected classical zeta to primes, and analogy with integer derivatives cannot fill that missing bridge.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u15.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a"
+      }
+    },
+    {
+      "unit_id": "platt_trudgian2021_depth_u01_finite_verification_target",
+      "source_id": "platt_trudgian2021_verification",
+      "source_title": "The Riemann hypothesis is true up to 3·10^12",
+      "source_year": 2021,
+      "source_viewpoint_tags": [
+        "computation",
+        "numerical-evidence",
+        "interval-arithmetic",
+        "epistemic-limits"
+      ],
+      "unit_title": "Finite RH verification as a bounded completeness claim",
+      "unit_type": "definition-and-epistemic-motivation",
+      "nonparaphrase_operation": "The scalar H bridges zero-by-zero computational evidence and a reusable quantified statement. It preserves the certified range and universal-on-that-range status while forgetting locations and other data about individual zeros.",
+      "interpretation": "H is a boundary parameter for certified knowledge, not a surrogate proof of RH. It changes an unbounded conjecture into a finite completeness obligation over a precisely delimited ordinate range.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u01_finite_verification_target.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b"
+      }
+    },
+    {
+      "unit_id": "platt_trudgian2021_depth_u03_signchange_completeness_certificate",
+      "source_id": "platt_trudgian2021_verification",
+      "source_title": "The Riemann hypothesis is true up to 3·10^12",
+      "source_year": 2021,
+      "source_viewpoint_tags": [
+        "computation",
+        "numerical-evidence",
+        "interval-arithmetic",
+        "epistemic-limits"
+      ],
+      "unit_title": "Local sign witnesses plus global zero accounting certify a finite RH range",
+      "unit_type": "computational-certification-logic",
+      "nonparaphrase_operation": "The completed zeta function's real sign along the line turns zero detection into sign data, while the Turing count bridges that local data to a statement about the total zero set in the region.",
+      "interpretation": "This is a local-witness plus global-completeness pattern. Sign changes establish existence at sampled transitions; zero accounting closes the gap between finding many on-line zeros and proving that the bounded population contains no missing off-line zeros.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u03_signchange_completeness_certificate.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b"
+      }
+    },
+    {
+      "unit_id": "platt_trudgian2021_depth_u05_sufficient_zero_resolution",
+      "source_id": "platt_trudgian2021_verification",
+      "source_title": "The Riemann hypothesis is true up to 3·10^12",
+      "source_year": 2021,
+      "source_viewpoint_tags": [
+        "computation",
+        "numerical-evidence",
+        "interval-arithmetic",
+        "epistemic-limits"
+      ],
+      "unit_title": "Count only the zero information required by the certificate",
+      "unit_type": "goal-directed-computational-simplification",
+      "nonparaphrase_operation": "A sign-change event replaces a high-precision zero coordinate as the working object. It preserves enough local information to increment the certified count but forgets precise location, so the separate global accounting layer remains essential.",
+      "interpretation": "This is goal-directed compression: retain the existence/count witness required by the finite-RH certificate and discard surplus coordinate precision. The simplification saves runtime and storage because a zero database and a completeness proof have different sufficient statistics.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u05_sufficient_zero_resolution.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b"
+      }
+    },
+    {
+      "unit_id": "platt_trudgian2021_depth_u07_height_as_downstream_parameter",
+      "source_id": "platt_trudgian2021_verification",
+      "source_title": "The Riemann hypothesis is true up to 3·10^12",
+      "source_year": 2021,
+      "source_viewpoint_tags": [
+        "computation",
+        "numerical-evidence",
+        "interval-arithmetic",
+        "epistemic-limits"
+      ],
+      "unit_title": "A larger certified H propagates through explicit prime estimates",
+      "unit_type": "bounded-evidence-transfer",
+      "nonparaphrase_operation": "The bridge objects are the finite verification height H and the explicit error estimates for ψ, θ, and prime intervals. H preserves only the range of validated RH needed by those arguments, not the underlying zero list.",
+      "interpretation": "H functions as a modular certificate parameter: downstream proofs can consume a stronger verified range without repeating the zero computation. The value of the transfer depends on how sensitively each later bound depends on H.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u07_height_as_downstream_parameter.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b"
+      }
+    },
+    {
+      "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+      "source_id": "platt_trudgian2021_verification",
+      "source_title": "The Riemann hypothesis is true up to 3·10^12",
+      "source_year": 2021,
+      "source_viewpoint_tags": [
+        "computation",
+        "numerical-evidence",
+        "interval-arithmetic",
+        "epistemic-limits"
+      ],
+      "unit_title": "Finite verification height interacts with other analytic constants",
+      "unit_type": "dependency-structure",
+      "nonparaphrase_operation": "Builds a typed dependency graph that separates prospective modification of R, joint inputs H and R to reciprocal bounds, and N(σ,T) as the output quantity being estimated.",
+      "interpretation": "The downstream dependencies are layered rather than parallel: Theorem 1 may slightly improve the zero-free-region constant R in deferred work; explicit reciprocal-zeta growth bounds then consume both H and R; and N(σ,T) is a zero-counting quantity whose estimates may also improve, not a third input of the same kind. A larger certified H is therefore reusable but does not by itself instantiate new reciprocal or zero-density estimates. This dependency view gains a faithful account of where proof obligations flow, while leaving the promised recalculation of constants and estimates undone.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b"
+      }
+    },
+    {
+      "unit_id": "platt_trudgian2021_depth_u11_debruijn_newman_threshold",
+      "source_id": "platt_trudgian2021_verification",
+      "source_title": "The Riemann hypothesis is true up to 3·10^12",
+      "source_year": 2021,
+      "source_viewpoint_tags": [
+        "computation",
+        "numerical-evidence",
+        "interval-arithmetic",
+        "epistemic-limits"
+      ],
+      "unit_title": "Crossing a published H threshold improves the de Bruijn–Newman upper bound",
+      "unit_type": "thresholded-bounded-evidence-transfer",
+      "nonparaphrase_operation": "The table's H cutoff is the bridge from finite RH verification to a Λ bound. It compresses the downstream calculation into a checkable threshold comparison while forgetting the individual zeros behind H.",
+      "interpretation": "This transfer is thresholded rather than smoothly proportional: extra verified height has no stated effect until it crosses a condition used by the downstream calculation. The argument carefully distinguishes an achieved implication, an unmet next implication, and speculative interpolation.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u11_debruijn_newman_threshold.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b"
+      }
+    },
+    {
+      "unit_id": "pugh98_u01",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+      "source_year": 1998,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "riemann-siegel",
+        "verification-epistemic-limits"
+      ],
+      "unit_title": "Riemann-Siegel trades generality for square-root-time critical-line evaluation",
+      "unit_type": "motivation-and-method-comparison",
+      "nonparaphrase_operation": "Reframes the complexity comparison as a task-specialization trade: restricting attention to critical-line evaluation compresses the analytic workload, but moves the operational boundary to representation precision and leaves mathematical completeness or proof to separate arguments.",
+      "interpretation": "On the critical line, the Riemann-Siegel formula gains computational reach by specializing the representation of zeta evaluation: it replaces the order-t work attributed here to Euler-Maclaurin with order-square-root-of-t work. The gain is conditional rather than unlimited: approximation quality improves as t grows, but fixed machine floating-point representation eventually limits validity, while extended precision restores range only by sacrificing speed. This makes the formula useful for finite RH verification computations, not a proof of RH.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u01.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2"
+      }
+    },
+    {
+      "unit_id": "pugh98_u08",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+      "source_year": 1998,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "riemann-siegel",
+        "verification-epistemic-limits"
+      ],
+      "unit_title": "Critical-line zeros become sign changes of a real Z function",
+      "unit_type": "representation-change",
+      "nonparaphrase_operation": "The phase θ bridges ζ on the critical line to the real-valued Z function; multiplication by a nonzero unit phase preserves zero locations while enabling real sign-change searches.",
+      "interpretation": "The representation factors out predictable complex rotation and retains a real amplitude. This exposes order and sign, which are more robust computational observables than a two-component complex value.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u08.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2"
+      }
+    },
+    {
+      "unit_id": "pugh98_u15",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+      "source_year": 1998,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "riemann-siegel",
+        "verification-epistemic-limits"
+      ],
+      "unit_title": "Series truncation and path extension make the remainder termwise integrable",
+      "unit_type": "approximation-chain",
+      "nonparaphrase_operation": "The coefficient-integral pairs b_n c_n bridge the local analytic expansion and the explicit remainder hierarchy; c_0 supplies the leading closed-form correction.",
+      "interpretation": "The derivation separates algebraic compression from geometric tractability: finite truncation controls representation size, while path extension creates reusable coefficient integrals.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u15.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2"
+      }
+    },
+    {
+      "unit_id": "pugh98_u22",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+      "source_year": 1998,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "riemann-siegel",
+        "verification-epistemic-limits"
+      ],
+      "unit_title": "Adjusted Gram-point staircases turn an averaged bound into a finite certificate",
+      "unit_type": "computational-certification-logic",
+      "nonparaphrase_operation": "The staircase difference L-L1 is the bridge from point samples to the integral of S. The sum of corrections measures the cost of repairing failed Gram signs.",
+      "interpretation": "The construction transforms local sign evidence and small geometric corrections into a global counting certificate by comparing cumulative step functions rather than attempting to locate every zero analytically.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u22.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2"
+      }
+    },
+    {
+      "unit_id": "pugh98_u29",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+      "source_year": 1998,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "riemann-siegel",
+        "verification-epistemic-limits"
+      ],
+      "unit_title": "The main counter routes ordinary intervals through Gram's Law and exceptional blocks through adaptive search",
+      "unit_type": "algorithm-composition",
+      "nonparaphrase_operation": "Identifies the Gram block as a bridge representation: a run of failed pointwise expectations is converted into one bounded object for adaptive internal search, separating common-case certification from exceptional-case resolution.",
+      "interpretation": "The main counter uses a cheap ordinary path and packages exceptions into larger search objects: a successful Gram-law test increments the count immediately, whereas a failure is extended to the next successful Gram point to form a Gram block for gramblock. Each point begins with a rough Z evaluation and receives a second, more accurate evaluation only when the first does not clear the tolerance. This routing reduces routine work without discarding exceptional behavior, but its count depends on the tolerance and the delegated block search; packet context, not this span alone, says that a separate Turing stage supplies completeness.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u29.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2"
+      }
+    },
+    {
+      "unit_id": "pugh98_u36",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+      "source_year": 1998,
+      "source_viewpoint_tags": [
+        "explicit-computation",
+        "riemann-siegel",
+        "verification-epistemic-limits"
+      ],
+      "unit_title": "The Turing program enforces sign and order constraints while shrinking its adjustment step",
+      "unit_type": "executable-certificate-search",
+      "nonparaphrase_operation": "Interprets the h vector as a coupled witness representation: local feasibility must coexist with global order, so refinement repairs incompatibility by changing the discretization for the entire construction rather than weakening either intended constraint.",
+      "interpretation": "The program constructs twenty coupled adjustment samples rather than independent pointwise choices. Starting with step 0.1, it increases a symmetric integer offset while both parity-adjusted Z(...,4) values are strictly below 0.053/t^1.25; after stopping it selects the negative offset only when that side is strictly above the threshold, otherwise selecting the positive side. It then requires the adjusted Gram points to be strictly increasing, halving the step and restarting the coupled construction if ordering fails. This bridges local sign searches to ordered candidate data for the separate Turing bound, but the literal comparisons leave an equality edge in which stopping need not certify strict positivity on the selected positive side.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u36.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2"
+      }
+    },
+    {
+      "unit_id": "rt2020_d01_complex_height_control",
+      "source_id": "rodgers_tao2020_newman",
+      "source_title": "The De Bruijn-Newman constant is non-negative",
+      "source_year": 2020,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "zero-dynamics"
+      ],
+      "unit_title": "Complex-height control as the interface to zero counting",
+      "unit_type": "analytic-bound-and-interface",
+      "nonparaphrase_operation": "Compresses the three estimates into a single regime-sensitive interface while separating what the representation supplies from the unresolved proof burden: accurate negative-time evaluation is obtained only after moving to logarithmic imaginary height, and the conversion to zero-counting asymptotics remains downstream.",
+      "interpretation": "Lemma 4 turns evaluation on the logarithmically lowered line z=x-iκ log_+ x into a three-part analytic interface: a broad upper bound, a sharper exponential magnitude scale when κ is sufficiently large, and a logarithmic-derivative asymptotic. Together these are stated as key inputs to the next section's Riemann-von Mangoldt type asymptotics, but the span does not assign a separate zero-counting mechanism to each estimate. The gain is usable control of H_t away from the real axis; the cost is a logarithmic-height regime, because for t<0 no usable series for 1/H_t or H_t'/H_t is available at substantially smaller height. The later application still requires Λ<t≤0, although the analytic estimates themselves could be extended to bounded negative t.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d01_complex_height_control.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    },
+    {
+      "unit_id": "rt2020_d07_classical_locations",
+      "source_id": "rodgers_tao2020_newman",
+      "source_title": "The De Bruijn-Newman constant is non-negative",
+      "source_year": 2020,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "zero-dynamics"
+      ],
+      "unit_title": "Classical zero locations provide a slowly varying equilibrium lattice",
+      "unit_type": "reference-geometry",
+      "nonparaphrase_operation": "Ψ and its inverse bridge zero counts to indexed locations; derivative information for Ψ turns index differences into spatial gaps.",
+      "interpretation": "Inverting the counting function changes coordinates from analytic height to particle index, producing an equilibrium geometry whose density varies slowly enough to look locally homogeneous.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d07_classical_locations.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    },
+    {
+      "unit_id": "rt2020_d13_finite_subsystem_monotonicities",
+      "source_id": "rodgers_tao2020_newman",
+      "source_title": "The De Bruijn-Newman constant is non-negative",
+      "source_year": 2020,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "zero-dynamics"
+      ],
+      "unit_title": "Finite-subsystem identities expose controlled environmental errors",
+      "unit_type": "localized-identities",
+      "nonparaphrase_operation": "Finite K bridges the formal infinite Hamiltonian to rigorously differentiable quantities, while cross terms quantify the cost of treating K as a subsystem.",
+      "interpretation": "Localization does not destroy monotonicity but makes its defect explicit. The environment becomes a named error channel rather than an implicit divergence.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d13_finite_subsystem_monotonicities.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    },
+    {
+      "unit_id": "rt2020_d18_reference_renormalized_energy",
+      "source_id": "rodgers_tao2020_newman",
+      "source_title": "The De Bruijn-Newman constant is non-negative",
+      "source_year": 2020,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "zero-dynamics"
+      ],
+      "unit_title": "Convex reference subtraction makes equilibrium energy finite and nonnegative",
+      "unit_type": "renormalization",
+      "nonparaphrase_operation": "Normalizing each gap by ξ_k-ξ_j bridges the slowly varying reference lattice to a dimensionless convex defect suitable for aggregation.",
+      "interpretation": "Renormalization measures deviation rather than absolute interaction: the infinite equilibrium background is forgotten, while collapse, quadratic near-equilibrium error, and large distortion remain visible.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d18_reference_renormalized_energy.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    },
+    {
+      "unit_id": "rt2020_d24_renormalized_dissipation_identity",
+      "source_id": "rodgers_tao2020_newman",
+      "source_title": "The De Bruijn-Newman constant is non-negative",
+      "source_year": 2020,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "zero-dynamics"
+      ],
+      "unit_title": "The truncated renormalized Hamiltonian dissipates as renormalized energy",
+      "unit_type": "approximate-monotonicity",
+      "nonparaphrase_operation": "Integral-form differentiation bridges finite pair dynamics to an infinite localized Hamiltonian; domination controls interchange, and reference renormalization is designed so equilibrium contributions cancel from the derivative.",
+      "interpretation": "Weak gap and integrated-energy estimates serve as an enablement layer: they justify the infinite differentiation needed to convert a formal Lyapunov heuristic into rigorous approximate dissipation.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d24_renormalized_dissipation_identity.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    },
+    {
+      "unit_id": "rt2020_d30_pair_correlation_contradiction",
+      "source_id": "rodgers_tao2020_newman",
+      "source_title": "The De Bruijn-Newman constant is non-negative",
+      "source_year": 2020,
+      "source_viewpoint_tags": [
+        "debruijn-newman",
+        "heat-flow",
+        "obstruction",
+        "zero-dynamics"
+      ],
+      "unit_title": "Equilibrium gap concentration contradicts known positive small-gap density",
+      "unit_type": "final-obstruction",
+      "nonparaphrase_operation": "The normalized consecutive gap and its potential V bridge renormalized particle energy to zero-spacing statistics. The classical spacing xi_{j+1}-xi_j supplies the local unit scale, Markov converts an average potential bound into typical behavior, and the identification of x_j(0) with twice the zero ordinates transfers that behavior to zeta zeros.",
+      "interpretation": "The argument extracts a rigid statistical prediction from near-equilibrium energy and then falsifies it with an independent distributional fact. The contradiction does not require locating a particular anomalous pair: concentration from the energy and positive-density small gaps are mutually exclusive at the level of proportions.",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d30_pair_correlation_contradiction.txt",
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "8d077147a47c29dd598620ca12409b7012f1037fb1dba101203447580aed1d4c"
+}

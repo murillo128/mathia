@@ -1,0 +1,705 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "perezmarco2017_rh_notes",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_perezmarco2017_rh_notes_c989604d_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Euler products, completion, and reflection repeatedly constrain divisors, suggesting minimal critical-line placement only when arithmetic Euler structure is genuinely present.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "perezmarco2017_rh_notes_v2_u01",
+          "perezmarco2017_rh_notes_v2_u04",
+          "perezmarco2017_rh_notes_v2_u07",
+          "perezmarco2017_rh_notes_v2_u09"
+        ],
+        "proposed_limit": "The step from local or completed DL structure to the global RH remains heuristic and is explicitly weakened by non-Eulerian counterexamples.",
+        "source_id": "perezmarco2017_rh_notes",
+        "synthesis_id": "riemann_v2_within_98eda049a764765e8450afa8",
+        "title": "Divisor symmetry as a recurring but limited RH intuition"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the regrouping needed for convergence and the definition and basic closure properties of the DL class.",
+          "line_end": 166,
+          "line_start": 94,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several product and coefficient displays are line-broken; the divisor mechanism and conclusions are prose-recoverable, while exact series transcription should be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source interprets zeta values as Newton sums of the sine divisor, then isolates the structural requirement that the entire divisor lie on a line and relates a one-line divisor to reflection symmetry.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Euler's sine product turns special-value computation into a divisor problem",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u01.txt",
+          "unit_bytes": 4114,
+          "unit_id": "perezmarco2017_rh_notes_v2_u01",
+          "unit_sha256": "e805193ee4830a121c29f9b1a8a99f7a05b117675d0af36542a84e97327ab582",
+          "unit_type": "divisor-representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The divisor is the representation that makes roots into symmetric-function data. Symmetric pairing preserves the reflection structure while repairing convergence; the line constraint guarantees that the algebraic-looking coefficient comparison is about the intended roots.",
+            "nonparaphrase_operation": "The Weierstrass sine product bridges an analytic function to Newton sums of its divisor. The DL property abstracts the geometric ingredient that supports a reflection symmetry.",
+            "quality_reason": "The paired sine product, coefficient comparison, need to exclude nonreal zeros, DL definition, multiplicative closure and qualified one-line reflection statement are explicit. No unqualified functional-equation claim is made; finite order and exponential-polynomial normalization are retained. The response goes beyond friendly restatement by identifying convergence ordering and hidden-zero contamination as separate proof burdens.",
+            "source_support": "The sine product, paired under z to -z for convergence, is expanded and its coefficients compared with the sine power series to obtain zeta(2), zeta(4), and analogously all positive even values. The source stresses that the zero divisor must consist exactly of the nonzero integers. It defines the divisor-on-lines (DL) property, notes multiplicative closure, and relates a one-line finite-order divisor to a reflection functional equation up to an exponential polynomial.",
+            "speculation_status": "Coefficient comparison would be unsound if the product were improperly ordered or if additional complex zeros existed. A divisor on one line yields a functional equation only with finite-order and exponential-normalization qualifications. Some product displays are line-broken, but the divisor mechanism and qualifications are explicit; exact coefficient transcription should be scan-checked. Treating the divisor as symmetric-function data and symmetric pairing as preserving reflection structure is reasonable. Line-broken products make exact coefficient transcription scan-dependent, but the mechanism is clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserves the author's explicit statement that the support is weak and conjectural.",
+          "line_end": 359,
+          "line_start": 297,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The local sine rescaling is display-dependent but readable; the global inference is a heuristic, not a proof of RH.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Each Euler factor has a vertical periodic divisor and rationally independent prime frequency; extrapolating this structure suggests a DL conjecture, while the Davenport-Heilbronn example limits the claim to genuinely Eulerian functions.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Local divisor-line structure suggests an arithmetic Euler-product conjecture, with a sharp non-Eulerian warning",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u04.txt",
+          "unit_bytes": 3749,
+          "unit_id": "perezmarco2017_rh_notes_v2_u04",
+          "unit_sha256": "d716bcc316a5551cc518ad08ca432b0ae3b40ad8ba0a86ba73bb7afa434e6f78",
+          "unit_type": "euler-product-heuristic-and-counterexample",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The heuristic attempts local-to-global synthesis: coherent line divisors at incommensurable frequencies may collectively constrain the global divisor. The counterexample marks Euler structure as potentially essential rather than decorative.",
+            "nonparaphrase_operation": "Prime frequency lattices are the local bridge from Euler factors to divisor geometry; the infinite Euler product is the unresolved global assembly operation.",
+            "quality_reason": "Local Euler factors, vertical divisor lattices, rational independence of prime frequencies, the explicitly weak DL conjecture and the Davenport-Heilbronn warning are all source content. The response does not convert the conjecture into RH or an equivalence and explicitly denies closure under arbitrary infinite products. The local frequency lattices and named non-Eulerian counterexample keep the analogy contentful.",
+            "source_support": "Euler's product follows from unique factorization and links zeta to primes. Each local factor (1-p^{-s})^{-1} has poles on a vertical periodic lattice and, after a p-dependent complex rescaling and exponential factor, is identified with sine. The prime frequencies log p/(2pi) are rationally independent. The author conjectures, with little support, that arithmetic Euler products preserve the DL property and cites the Davenport-Heilbronn example as a reason to restrict expectations to Eulerian functions.",
+            "speculation_status": "DL is closed under finite products, not arbitrary infinite products. The arithmetic preservation conjecture is explicitly imprecise and weakly supported, and it is not a proof or stated equivalent of RH. The local sine rescaling is formula-dependent but readable. The global conclusion has conjectural epistemic status exactly as stated by the author. Describing the argument as a local-to-global synthesis attempt is reasonable. The sine rescaling is display-dependent but readable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the passage from the asymmetric equation to the entire xi-function.",
+          "line_end": 645,
+          "line_start": 563,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Some residue displays are degraded, but the contour-to-functional-equation route and zero symmetries are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A contour enclosing the nonzero exponential singularities converts their residue sum into zeta at one minus s; completion removes poles and makes the critical-strip and reflection-conjugation symmetries explicit.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Residues at the kernel lattice yield the functional equation and fourfold zero symmetry",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u07.txt",
+          "unit_bytes": 4346,
+          "unit_id": "perezmarco2017_rh_notes_v2_u07",
+          "unit_sha256": "b21e328e9e40164ec5ee3c93cf0836ce6898e376a9cd9dbcbdc67532fc2fef66",
+          "unit_type": "functional-equation-and-zero-symmetry",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The pole lattice of the continuation kernel is a dual encoding of the integer Dirichlet series. Completion is a canonical representation change that removes exceptional poles and makes the governing involution visible.",
+            "nonparaphrase_operation": "The contour integral I_0 bridges residues at the exponential kernel's lattice to zeta(1-s); xi bridges the asymmetric functional equation to an entire symmetric divisor.",
+            "quality_reason": "Residues at the exponential lattice, the asymmetric functional equation, completion to xi, pole/trivial-zero removal, critical-strip confinement and reflection-conjugation symmetry are explicit. The response correctly states that symmetry does not force zeros onto the fixed line. The response identifies the distinct roles of residues, gamma identities and completion, so it is not mere paraphrase.",
+            "source_support": "For Re(s)<0, the outer contour contribution vanishes and residues at z=2pi i n express I_0(s) in terms of (2pi)^s, sin(pi s/2), and zeta(1-s), giving the functional equation. Gamma complement and duplication formulas rewrite it symmetrically. Multiplying by s(s-1) defines the entire order-one xi with xi(s)=xi(1-s), removes trivial zeros from its divisor, confines its zeros to the critical strip, and combines reflection with conjugation into fourfold zero symmetry.",
+            "speculation_status": "Functional-equation symmetry pairs zeros but does not force fixed points on Re(s)=1/2. The zero-free statements outside the strip also use the original nonvanishing region and symmetry. Some residue and gamma displays are degraded. The contour route, completion, and zero symmetries are explicit, but exact constants should be verified from the scan. Calling the pole lattice a dual encoding of the Dirichlet series and completion canonical is a reasonable conceptual reading. Some residue and gamma displays are degraded, but qualitative identities are secure."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The unit preserves the conjectural status of the motivating intuition and the distinct analytic equivalence.",
+          "line_end": 821,
+          "line_start": 723,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prime-error exponents are readable but formula-sensitive; the DL argument is authorial speculation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source separates Riemann's numerical observation from a speculative DL minimality heuristic, then states how real parts of zeros control oscillatory prime-error magnitude and why the square-root error is equivalent to RH.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            14,
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Minimal divisor-line placement links RH to optimal prime-counting error",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u09.txt",
+          "unit_bytes": 5648,
+          "unit_id": "perezmarco2017_rh_notes_v2_u09",
+          "unit_sha256": "710805a75544fedeb54ac4da232f3d58de010e38e93829c61d5cd20df7d5f08f",
+          "unit_type": "strategic-hypothesis-and-equivalent-error",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Reflection symmetry only specifies paired candidate lines; a separate minimality principle is invoked to select the fixed line. In contrast, the prime-error statement is a measurable dual formulation: spatial regularity of primes and horizontal zero location constrain one another.",
+            "nonparaphrase_operation": "Xi exposes real-axis zero geometry in t; the explicit prime-error oscillations bridge each nontrivial zero's real part to arithmetic error size; DL is only a proposed organizing language.",
+            "quality_reason": "The span distinctly presents numerical/history evidence, the author's DL minimality speculation, RH, and the stated prime-error equivalence. The response does not use numerical counts or the DL heuristic as proof and keeps their status separate from the analytic equivalence. The three-way epistemic separation adds genuine value beyond paraphrase.",
+            "source_support": "The source describes Riemann's rapidly convergent expansion for Xi, his zero-count asymptotic and initial computations, later results showing infinitely many and positive proportions of critical-line zeros, and the still-open equality N_0(T)=N(T). It states RH as all nontrivial zeros lying on Re(s)=1/2. It then offers a DL-class minimality heuristic and states that RH is equivalent to a square-root-scale prime-counting error, because a zero's real part sets the size of its oscillatory contribution.",
+            "speculation_status": "Numerical agreement and partial critical-line counts do not prove RH. The minimal DL argument is authorial speculation, whereas the prime-error equivalence has distinct mathematical status and should not be justified by that heuristic. The prime-error exponent is readable but formula-sensitive. Historical quantitative claims are reported as source content; the proposed motivation for Riemann's intuition is explicitly speculative. Calling prime-error size a measurable dual formulation is a reasonable conceptual interpretation. Error exponents are formula-sensitive; historical claims are source reports rather than independently checked facts."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1d2789ec08be333bcdb037dff6e3061d99bae8e591ec425750538a92f7fa9fa1",
+        "dossier_sha256": "78f068d380efaf66ebbebfc9cc212c5e46a033869ef57e88397fb0d551ab1c86"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Logarithmic derivatives and inverse transforms repeatedly turn Euler frequencies into divisor data, while test functions and local Fourier analysis reorganize the same duality into explicit, trace, and adelic formulas.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "perezmarco2017_rh_notes_v2_u10",
+          "perezmarco2017_rh_notes_v2_u11",
+          "perezmarco2017_rh_notes_v2_u13",
+          "perezmarco2017_rh_notes_v2_u14",
+          "perezmarco2017_rh_notes_v2_u19"
+        ],
+        "proposed_limit": "Formal unity does not supply the missing positivity or off-convergence control needed for RH.",
+        "source_id": "perezmarco2017_rh_notes",
+        "synthesis_id": "riemann_v2_within_4f67b7c5a90efb05251d72ea",
+        "title": "Prime-zero duality has Mellin, distributional, trace, and adelic realizations"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes enough product setup to identify why zeros become poles of the logarithmic derivative.",
+          "line_end": 912,
+          "line_start": 822,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The paired-zero product convention and exact constants require formula verification; the equivalence and obstruction are prose-clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Differentiating both the Euler product and Hadamard product gives the prime-zero bridge; inversion of zeta recasts RH as square-root cancellation of the Mertens function and records the failure to prove convergence left of one.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            16,
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Logarithmic derivatives expose primes through zeros, while Möbius cancellation remains inaccessible",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u10.txt",
+          "unit_bytes": 4402,
+          "unit_id": "perezmarco2017_rh_notes_v2_u10",
+          "unit_sha256": "c68d4dd38d4d9d5978c0e5561b7922a2e2f167a5aadbdac51187f5f3b04c3cb4",
+          "unit_type": "equivalent-criterion-and-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The logarithmic derivative linearizes multiplicative factorization on both sides, making primes and zeros comparable as additive singularity data. Möbius inversion proposes cancellation as an alternative representation of zero-freeness, but its sign oscillation is not itself a usable estimate.",
+            "nonparaphrase_operation": "The von Mangoldt function compresses prime powers into one coefficient sequence; -zeta'/zeta is the prime-zero bridge; the Mertens function is the cumulative observable for the reciprocal-zeta route.",
+            "quality_reason": "The Euler- and Hadamard-side logarithmic derivatives, von Mangoldt bridge, reciprocal-zeta series, Mertens criterion and failure to prove convergence left of one are explicit. The response does not infer cancellation from signs and squarefree support and preserves the convergence boundary. The prime/zero and Mobius routes are distinguished concretely.",
+            "source_support": "For Re(s)>1, differentiating the Euler product gives -zeta'/zeta as the Dirichlet series of Lambda(n). A paired Hadamard product for xi and the completion factors gives another logarithmic derivative expansion involving gamma, pole terms, and sums over nontrivial zeros, producing formula (2.3). Separately, 1/zeta=sum mu(n)n^{-s}; convergence in Re(s)>1/2 would imply RH and corresponds to M(x)=O(x^{1/2+epsilon}), but no convergence half-plane with boundary below one is known in the account.",
+            "speculation_status": "Alternating signs and squarefree support do not prove square-root cancellation. Product and reciprocal series identities initially hold only in Re(s)>1, and analytic continuation cannot be silently transferred to Dirichlet-series convergence. Paired-product conventions and constants in the logarithmic derivative are formula-sensitive; the equivalence and stated obstruction are prose-clear. Calling logarithmic differentiation a linearization of multiplicative factorization is a standard and accurate conceptual move. Paired-zero conventions and constants need formula verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Contains the convergence warning that the zero series cannot be uniformly convergent across jumps.",
+          "line_end": 1063,
+          "line_start": 914,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several integrals and zero sums are densely extracted; exact normalizations should be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The weighted step function is chosen because its Mellin transform is log zeta; Fourier-Mellin inversion, integration by parts, and the completed product then isolate the pole, zeros, archimedean term, and Möbius inversion to prime counts.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mellin inversion converts weighted prime powers into a main term plus zero oscillations",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u11.txt",
+          "unit_bytes": 7730,
+          "unit_id": "perezmarco2017_rh_notes_v2_u11",
+          "unit_sha256": "e55e38eeef9ac78e930cd41df48bf3bd82ef72d6d533a6968d6838c50a283586",
+          "unit_type": "explicit-formula-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Weighting prime powers is a deliberate linearization of the Euler product. Integration by parts changes the interface so a formally suggestive decomposition becomes analytically summable, while midpoint values acknowledge the unavoidable jump behavior.",
+            "nonparaphrase_operation": "Pi is the bridge between Euler factors and Mellin analysis; log zeta is its transform; the paired xi product inserts zero data; Möbius inversion removes prime-power overcounting.",
+            "quality_reason": "The weighted prime-power staircase, Mellin transform, midpoint inversion, integration-by-parts repair, paired zero insertion, explicit formula and Mobius inversion are explicit. No remainder control or PNT proof is falsely claimed. The response identifies convergence and jump conventions as mechanisms, not just formula content.",
+            "source_support": "The step function Pi assigns weight 1/n at each prime power p^n and satisfies log zeta(s)/s as a Mellin transform. Pi determines pi and vice versa by Möbius inversion. Fourier-Mellin inversion recovers the midpoint-valued Pi*, but direct insertion of the logarithm of the completed Hadamard product has convergence problems, so integration by parts produces a derivative formula suitable for paired termwise integration. The resulting explicit formula has li(x) as main term, zero terms, and a decaying integral; Möbius inversion gives pi with a zero-driven remainder.",
+            "speculation_status": "The zero series cannot converge uniformly across a discontinuous staircase, and Riemann's formula alone does not control its remainder enough for PNT. Pairing associated zeros and respecting jump conventions are essential. Several integrals and zero sums are densely extracted, so exact signs and normalizations require the PDF; the construction sequence and convergence warning are explicit. Describing the weighting as linearizing the Euler product and integration by parts as changing the analytic interface is reasonable. Signs and zero-sum normalization are dense and scan-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Groups related interpretations without asserting that any proposed trace formula has been proved for zeta.",
+          "line_end": 1238,
+          "line_start": 1116,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Delsarte distribution is formula-heavy and should be scan-verified before symbolic use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contour integration and test functions produce a distributional prime-zero identity; Weil positivity, Selberg trace analogies, and Connes's proposal show how the same bridge can be recast as spectral or positivity structure.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            21,
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Distributional explicit formulas turn prime-zero duality into trace and positivity criteria",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u13.txt",
+          "unit_bytes": 6669,
+          "unit_id": "perezmarco2017_rh_notes_v2_u13",
+          "unit_sha256": "7e1bae22929ba0b7f12af5bab6a3f3191fac314ed8db5f72ca4921635d96585e",
+          "unit_type": "explicit-formula-and-positivity-framework",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The test function is a perspective selector: the same prime-zero distributional identity yields different observables when probed differently. Prime-power resonance shows the duality has exact arithmetic frequencies, not just a loose spectral metaphor.",
+            "nonparaphrase_operation": "The distributional explicit formula is the central bridge; zeta'/zeta supplies its contour integrand, Fourier transform couples prime logarithms to zero ordinates, and positivity is a proposed criterion on the resulting functional.",
+            "quality_reason": "The Riemann and Landau formulas, contour architecture, Delsarte distribution, Weil positivity criterion and trace/spectral proposals are all reported in the span. The response does not claim a zeta operator or proved Connes trace formula and preserves the test-class qualification for positivity. Prime-power resonance and the named distribution keep the duality analysis mathematically specific.",
+            "source_support": "The unit gives a Riemann explicit formula for sum_{n<=x}Lambda(n), Landau's resonance distinction when x is or is not a prime power, and Cramer's continued zero exponential sum. It explains the standard rectangular-contour computation of zeta'/zeta using residues at zeros, the functional equation, and the Euler product. Delsarte's distributional formula expresses zero masses as Fourier-transformed prime-power masses plus an archimedean distribution. It reports Weil's RH positivity criterion and analogies or proposals involving Selberg, trace formulas, de Branges, and Connes.",
+            "speculation_status": "Trace-formula interpretations do not establish a zeta operator, and Connes's reduction is reported as a proposal rather than a proved trace identity here. Positivity equivalence depends on a suitable test-function class. The Delsarte formula is dense and formula-sensitive. Historical interpretations are clear, but exact distribution normalizations require the scan. Calling test functions perspective selectors is a reasonable interpretation of a distributional formula generating multiple identities. The Delsarte formula is formula-heavy and exact normalization requires the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the general inverse-Laplace version and gamma example.",
+          "line_end": 1333,
+          "line_start": 1253,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Coefficient multi-index notation is extraction-sensitive; conceptual specializations are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A divisor distribution for finite-order Dirichlet series equals an inverse-Laplace frequency distribution; specializations recover Poisson summation, Newton relations, the zeta explicit formula, and the Selberg trace formula without requiring a functional equation.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Poisson-Newton unifies Fourier summation, polynomial Newton identities, and zeta trace formulas",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u14.txt",
+          "unit_bytes": 4647,
+          "unit_id": "perezmarco2017_rh_notes_v2_u14",
+          "unit_sha256": "a0d11961037a011ecd78916dd2d65ae09c94f821559b29a1c7b8657bad838021",
+          "unit_type": "unifying-distributional-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Zeros and coefficients are dual encodings linked by an inverse transform. The terms supported at zero record precisely the exponential-factor ambiguity left by Hadamard factorization, explaining rather than hiding the normalization defect.",
+            "nonparaphrase_operation": "W(f) is the divisor-side representation; -log f exposes the frequency-side additive semigroup; inverse Laplace transform is the bridge between them.",
+            "quality_reason": "The Newton-Cramer divisor distribution, multi-index frequency expansion, Poisson-Newton identity, four specializations, inverse-Laplace generalization and gamma example are explicit. The response correctly denies that shared distributional origin identifies all additional arithmetic and dynamical structure. The two encodings and exact transform are substantive rather than vague unification prose.",
+            "source_support": "For a finite-order meromorphic continuation of a Dirichlet series, the Newton-Cramer distribution sums multiplicity-weighted exponentials over its divisor. Expanding -log f in multi-indexed Dirichlet frequencies gives coefficients b_k, and Theorem 3.2 equates the divisor distribution to delta derivatives at zero plus masses at combined frequencies. One-frequency cases recover Poisson summation and polynomial Newton relations; zeta and Selberg zeta give the explicit and trace formulas. A general inverse-Laplace form applies beyond Dirichlet series and yields the gamma logarithmic-derivative integral.",
+            "speculation_status": "Finite order and divisor-location hypotheses matter, and the distributional identity need not rely on a functional equation. Unification at this level does not make the arithmetic and dynamical specializations identical in all additional structure. Multi-index coefficients and delta-derivative conventions are extraction-sensitive; the named specializations and independence from a functional equation are explicit. Interpreting the origin-supported terms as recording exponential-factor ambiguity is supported by the source's Hadamard-factor remark. Multi-index and delta-derivative conventions are extraction-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the arithmetic/analytic mixture diagnosis that motivates the construction.",
+          "line_end": 1808,
+          "line_start": 1697,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Idele notation and Haar normalizations are formula-sensitive; the local-global mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Local transforms over all completions produce the p-adic Euler factors and the archimedean gamma factor, while global Fourier duality supplies the functional equation and the product formula explains why the places must be considered together.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Tate's Fourier-Mellin construction puts finite and infinite Euler factors on one footing",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u19.txt",
+          "unit_bytes": 5870,
+          "unit_id": "perezmarco2017_rh_notes_v2_u19",
+          "unit_sha256": "686f4fadcb2b92bf2875967ebaaf7ad3507aa16c3ab49a0d28e9f9bd1f6d96b0",
+          "unit_type": "adelic-local-global-synthesis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Adelic representation makes the completion canonical: the gamma factor is simply the missing local component. Arithmetic and analysis meet because one rational multiplicative group sits diagonally inside all its completions.",
+            "nonparaphrase_operation": "Local zeta integrals Z_v are the bridge from harmonic analysis on each completion to Euler and gamma factors; their restricted product and Fourier duality assemble the global functional equation.",
+            "quality_reason": "Ostrowski's places, ideles, Hecke characters, local/global Fourier-Mellin integrals, finite Euler factors, archimedean gamma factor, Fourier duality and product formula are all present. The response does not turn the compactification remarks into a construction or claim a proof beyond the sketch. The local integrals and diagonal rational group make the local-global synthesis specific.",
+            "source_support": "After Ostrowski's classification of absolute values on Q, the source forms the idele group and Hecke characters trivial on Q^*. Local Fourier-Mellin integrals over Q_v^* factor the global zeta integral and have continuation and an s to 1-s functional equation from Fourier duality. The characteristic function of Z_p gives (1-p^{-s})^{-1}, while a Gaussian over R gives pi^{-s/2}Gamma(s/2). Their product, with the pole-removing factor, reconstructs xi. The product formula for valuations motivates treating the archimedean place alongside all p-adic places.",
+            "speculation_status": "The unit sketches rather than proves the analytic continuation and global factorization, and it specializes the exposition to Q. The geometric compactification remarks are motivational, not a construction supplied here. Measure normalizations and completion factors are formula-sensitive. The uniform local interpretation and product-formula role are explicit. Calling the gamma factor the missing local component and completion canonical is a faithful conceptual reading of Tate's construction. Haar and completion normalizations are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1d2789ec08be333bcdb037dff6e3061d99bae8e591ec425750538a92f7fa9fa1",
+        "dossier_sha256": "78f068d380efaf66ebbebfc9cc212c5e46a033869ef57e88397fb0d551ab1c86"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Cohomology can solve rational local factors, and representation theory can organize global factors, but the infinite product over independent prime frequencies introduces an analytic continuation and resummation problem not discharged by local RH.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "perezmarco2017_rh_notes_v2_u23",
+          "perezmarco2017_rh_notes_v2_u24",
+          "perezmarco2017_rh_notes_v2_u25",
+          "perezmarco2017_rh_notes_v2_u31"
+        ],
+        "proposed_limit": "This is the survey author's diagnosis; it does not prove that geometric or algebraic ideas cannot contribute to a global proof.",
+        "source_id": "perezmarco2017_rh_notes",
+        "synthesis_id": "riemann_v2_within_49b0036d90e39dc2a65fc491",
+        "title": "Local algebraic success and global transcendental control are different problems"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Separates rationality, duality, degree identification, and Deligne's RH as distinct steps.",
+          "line_end": 2093,
+          "line_start": 2020,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Weil-conjecture factorization is densely typeset; exact weights and degrees require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The exponential point-count series is conjecturally rational; etale cohomology identifies its factors with Frobenius actions, Poincare duality gives the functional equation, and positivity supplies the critical absolute-value bound.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            38
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite-field point counts become Frobenius eigenvalues and a cohomological RH",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u23.txt",
+          "unit_bytes": 4930,
+          "unit_id": "perezmarco2017_rh_notes_v2_u23",
+          "unit_sha256": "1ad9c3f500f9ffef54e3f826b24989eb783df4a70f211e02d5138091ab93b0e3",
+          "unit_type": "cohomological-representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u23.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The point-count exponential packages counts over finite-field extensions into a zeta function periodic in the complex s-variable and conjecturally rational in t. The source presents several distinct routes and achievements rather than one canonical chain: periodicity together with meromorphic continuation and the functional equation would imply rationality; Dwork proved rationality separately; etale cohomology identifies the factors through Frobenius; Poincare duality supplies the functional equation; degrees are identified with Betti numbers; and Deligne's positivity-based work gives the RH bound.",
+            "nonparaphrase_operation": "Reorganizes the result by logical burden without collapsing the proof routes: finite-dimensional Frobenius data explain how counts can be represented spectrally, but rationality, duality symmetry, topological degree information, and eigenvalue-modulus control remain distinct achievements. In particular, rationality or a functional equation alone does not yield RH.",
+            "quality_reason": "Accepted after adding the periodicity route and separating Dwork rationality from cohomological factor identification, duality, degree comparison, and Deligne's bound.",
+            "source_support": "The span defines the point-count zeta, lists the four Weil statements, states the periodicity implication, and gives the historical attributions to Dwork, etale cohomology, Poincare duality, degree identification, and Deligne.",
+            "speculation_status": "The spectral-compression reading is interpretation. No unique dependency of rationality on cohomological finite-dimensionality is claimed, and dense weights, indices, and degree formulas are not reconstructed beyond the extracted source."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes modularity as a contrasting successful bridge that imports analytic structure.",
+          "line_end": 2186,
+          "line_start": 2105,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The conclusion is the author's methodological assessment, not a formal impossibility theorem.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Hasse-Weil zeta multiplies rational finite-field factors over incommensurable prime frequencies; the source argues that proving each local divisor constraint leaves untouched the analytic problem created by the infinite global product.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            39,
+            40
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Local rational RH does not resolve the transcendental difficulty of a global Euler product",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u24.txt",
+          "unit_bytes": 4544,
+          "unit_id": "perezmarco2017_rh_notes_v2_u24",
+          "unit_sha256": "a5d52bc0a3b481885ef3d939ec668b9f308dc2f84d50c98c63e796dfc0ceaa47",
+          "unit_type": "local-global-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u24.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local correctness does not compose automatically across incommensurable scales. The decisive missing object is a global representation that couples the factors; modularity succeeds precisely by providing such a bridge rather than extrapolating local divisor geometry.",
+            "nonparaphrase_operation": "The Euler product assembles local point-count factors, while modular forms furnish an alternative global analytic representation for elliptic-curve L-functions.",
+            "quality_reason": "The Hasse-Weil product, rationally independent local frequencies, projective-space and modularity examples, and the author's local-versus-global methodological judgment are explicit. The response correctly marks 'local RH gives no advance' as the author's assessment, not an impossibility theorem. The global assembly problem is tied to the exact infinite Euler product and incommensurable scales.",
+            "source_support": "For a smooth variety over Q, good reductions X_p supply local factors Z_p(p^{-s},X_p), whose product defines the Hasse-Weil zeta function away from bad primes. Cohomological factor products zeta_j isolate expected one-line divisor pieces. Examples recover zeta(s)zeta(s-1) for projective space, while elliptic-curve modularity identifies the arithmetic L-function with one from a modular form and thereby supplies analytic properties. The author argues that finite-field RH concerns rational periodic local factors and does not solve the transcendental problem of their infinite global product.",
+            "speculation_status": "The claim that local RH gives no advance toward classical RH is the author's methodological assessment, not an impossibility theorem. Bad primes and exact cohomological factorization require separate treatment, and modularity is an example rather than a universal construction. Product formulas are somewhat damaged; the local-global distinction and authorial status of the conclusion are clear. Calling modularity an alternative global analytic representation is a sound conceptual explanation of the given example. Some product displays are damaged and bad-prime treatment is omitted by the source."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps the contragredient functional equation and analytic gap together.",
+          "line_end": 2234,
+          "line_start": 2195,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Sketch-level exposition; exact gamma convention is formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Adelic GL(n) representations determine finite polynomial factors and archimedean parameters, suggesting Langlands unification and a grand RH, while the source emphasizes that an Euler-product definition does not itself prove continuation.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            41
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Automorphic local data propose a universal L-function class but still require analytic realization",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u25.txt",
+          "unit_bytes": 2159,
+          "unit_id": "perezmarco2017_rh_notes_v2_u25",
+          "unit_sha256": "ad0b7c4a6de73d94578fec2b6e72994ab65aec0598e4e272076331b9b0248a16",
+          "unit_type": "automorphic-unification-and-definition-gap",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u25.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local representation data supplies a common parameter language across many L-function families. Duality organizes symmetry, but analytic realization remains logically independent from local algebraic definition.",
+            "nonparaphrase_operation": "The restricted tensor product bridges global automorphic data to local factors; archimedean parameters bridge the infinite place to gamma factors; the contragredient is the dual object in the functional equation.",
+            "quality_reason": "Local automorphic representations, finite and archimedean factors, contragredient functional equation, Langlands conjecture, grand RH and the continuation gap are explicit. No conjectural unification is stated as fact. The response is specific to local factors and the contragredient rather than generic 'unification' language.",
+            "source_support": "An automorphic cuspidal representation of GL(n,A) decomposes into local representations. Finite places determine degree-n local factors in p^{-s}; the real place determines n gamma parameters. Their product is completed to Lambda(s,pi), which satisfies a functional equation involving a unit-modulus root number, conductor, and the contragredient representation. The source states Langlands's conjectural multiplicative unification of prior L-functions and a grand RH, while warning that the Euler-product definition does not itself give meromorphic continuation.",
+            "speculation_status": "The exposition is explicitly sketch-level. Langlands unification and grand RH are conjectural, and a formal Euler product may be analytically unusable outside convergence until continuation is proved separately. Exact gamma conventions and conductor powers are formula-sensitive; the definition gap is prose-explicit. The distinction between local parameter language, duality and independent analytic realization is reasonable. The exposition is explicitly sketch-level and exact gamma/conductor conventions are sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Beurling perturbations as evidence that the exact frequencies matter.",
+          "line_end": 2709,
+          "line_start": 2623,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "This is a strategic assessment with polemical language, not a theorem ruling out analytic or algebraic approaches.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source audits numerical checks, positive proportions, toy models, and spectral analogies, then identifies the unresolved combination of resumming the Euler product beyond convergence and exploiting rational independence of prime frequencies.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            49
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Current evidence does not overcome the coupled analytic and arithmetic bottleneck",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u31.txt",
+          "unit_bytes": 5387,
+          "unit_id": "perezmarco2017_rh_notes_v2_u31",
+          "unit_sha256": "d8681f8521064a85f5eed505668b2b800cd870afb8e7ecfa59a6bb7cdafee4f6",
+          "unit_type": "evidence-and-bottleneck-audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u31.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The author audits numerical verification, proportions or densities of critical-line zeros, algebraic and dynamical toy models, and Hilbert-Polya analogies as suggestive but insufficient. The source's proposed bottleneck has two coupled parts: retaining Euler-product information beyond its convergence half-plane through a resummation or continuation mechanism, and exploiting the exact rational independence of prime frequencies. Beurling-zeta perturbations are cited as motivation for frequency sensitivity, not as a stated theorem with hypotheses in this unit.",
+            "nonparaphrase_operation": "Constructs an explicitly critic-level evidence ledger: each representation controls something useful while leaving one side of the claimed coupling unresolved, so a bridge preserving both analytic continuation and exact arithmetic frequencies is a research target. This is a synthesis of the author's complaints, not a demonstrated impossibility taxonomy.",
+            "quality_reason": "Accepted after attributing all strategic forecasts, retaining the source-specific frequency-perturbation example, and avoiding any claim that the coupled bottleneck is an accepted impossibility theorem.",
+            "source_support": "The span lists the evidence classes and the author's objections, identifies analytic resummation and prime-frequency Q-independence, invokes perturbed Beurling frequencies, and states the author's judgment that existing approaches do not exploit both fully.",
+            "speculation_status": "Claims that purely analytic, algebraic, or spectral routes are unlikely to work are polemical authorial judgments. The bridge taxonomy is critic inference, and the Beurling reference supplies sensitivity motivation without a precise perturbation result in the span."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1d2789ec08be333bcdb037dff6e3061d99bae8e591ec425750538a92f7fa9fa1",
+        "dossier_sha256": "78f068d380efaf66ebbebfc9cc212c5e46a033869ef57e88397fb0d551ab1c86"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Family-level algebra, positivity, Fourier duality, and a globally meaningful replacement for the divergent Euler product emerge as mutually dependent strategic requirements.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "perezmarco2017_rh_notes_v2_u18",
+          "perezmarco2017_rh_notes_v2_u19",
+          "perezmarco2017_rh_notes_v2_u31",
+          "perezmarco2017_rh_notes_v2_u32"
+        ],
+        "proposed_limit": "The source provides no construction satisfying all four requirements, so this remains a planning hypothesis.",
+        "source_id": "perezmarco2017_rh_notes",
+        "synthesis_id": "riemann_v2_within_f81032f3bb869bbd5ab08b45",
+        "title": "Candidate proof ingredients recur across otherwise distinct approaches"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the normalization and the stated limitation that global divisor convolution need not remain discrete.",
+          "line_end": 1691,
+          "line_start": 1624,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The formal product is recoverable but symbol extraction is fragile; the final RH argument is explicitly heuristic.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A second product on local rational factors extends primewise to arithmetic Dirichlet series, predicts which zeros appear in cross-family difference statistics, and supplies a speculative RH obstruction to off-line zeros.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The ene-product turns local Euler-factor multiplication into additive divisor convolution",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u18.txt",
+          "unit_bytes": 3620,
+          "unit_id": "perezmarco2017_rh_notes_v2_u18",
+          "unit_sha256": "5dab448e0001aa5cf2d2c6078cbb9ba24bfa713ef9fe09babbbf99e4e7aa39e7",
+          "unit_type": "algebraic-divisor-convolution",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For local factors written with root parameters alpha and beta, the ene-product multiplies those parameters, extends exactly to the fraction field by the displayed quotient rule, and is then extended primewise only formally to normalized Euler products. The source proposes additive convolution of global divisors as the link to cross-family difference statistics, but explicitly notes that such a convolution need not be a discrete divisor. Its unit equation is therefore used only as a heuristic against off-critical-line zeros.",
+            "nonparaphrase_operation": "Separates three levels often conflated: exact finite local algebra, formal assembly over primes, and an empirical/conjectural global divisor semantics. The local rule gains compositional predictions, but without a well-defined discrete global divisor it cannot carry the local identity into an analytic RH exclusion.",
+            "quality_reason": "Accepted after replacing the confusing reciprocal-root terminology with root parameters and making the local-algebra/global-divisor gap the central boundary.",
+            "source_support": "The span displays the local factor rule, the commutative-ring and fraction-field identities, the normalized primewise definition, the proposed divisor interpretation and its non-discreteness problem, and the zeta unit equation followed by an explicitly heuristic RH argument.",
+            "speculation_status": "The divisor convolution and statistical forecast are proposed interpretations, and the final exclusion of off-line zeros is heuristic only. Product symbols, normalization, and the displayed zero calculation are extraction-fragile."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the arithmetic/analytic mixture diagnosis that motivates the construction.",
+          "line_end": 1808,
+          "line_start": 1697,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Idele notation and Haar normalizations are formula-sensitive; the local-global mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Local transforms over all completions produce the p-adic Euler factors and the archimedean gamma factor, while global Fourier duality supplies the functional equation and the product formula explains why the places must be considered together.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Tate's Fourier-Mellin construction puts finite and infinite Euler factors on one footing",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u19.txt",
+          "unit_bytes": 5870,
+          "unit_id": "perezmarco2017_rh_notes_v2_u19",
+          "unit_sha256": "686f4fadcb2b92bf2875967ebaaf7ad3507aa16c3ab49a0d28e9f9bd1f6d96b0",
+          "unit_type": "adelic-local-global-synthesis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Adelic representation makes the completion canonical: the gamma factor is simply the missing local component. Arithmetic and analysis meet because one rational multiplicative group sits diagonally inside all its completions.",
+            "nonparaphrase_operation": "Local zeta integrals Z_v are the bridge from harmonic analysis on each completion to Euler and gamma factors; their restricted product and Fourier duality assemble the global functional equation.",
+            "quality_reason": "Ostrowski's places, ideles, Hecke characters, local/global Fourier-Mellin integrals, finite Euler factors, archimedean gamma factor, Fourier duality and product formula are all present. The response does not turn the compactification remarks into a construction or claim a proof beyond the sketch. The local integrals and diagonal rational group make the local-global synthesis specific.",
+            "source_support": "After Ostrowski's classification of absolute values on Q, the source forms the idele group and Hecke characters trivial on Q^*. Local Fourier-Mellin integrals over Q_v^* factor the global zeta integral and have continuation and an s to 1-s functional equation from Fourier duality. The characteristic function of Z_p gives (1-p^{-s})^{-1}, while a Gaussian over R gives pi^{-s/2}Gamma(s/2). Their product, with the pole-removing factor, reconstructs xi. The product formula for valuations motivates treating the archimedean place alongside all p-adic places.",
+            "speculation_status": "The unit sketches rather than proves the analytic continuation and global factorization, and it specializes the exposition to Q. The geometric compactification remarks are motivational, not a construction supplied here. Measure normalizations and completion factors are formula-sensitive. The uniform local interpretation and product-formula role are explicit. Calling the gamma factor the missing local component and completion canonical is a faithful conceptual reading of Tate's construction. Haar and completion normalizations are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Beurling perturbations as evidence that the exact frequencies matter.",
+          "line_end": 2709,
+          "line_start": 2623,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "This is a strategic assessment with polemical language, not a theorem ruling out analytic or algebraic approaches.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source audits numerical checks, positive proportions, toy models, and spectral analogies, then identifies the unresolved combination of resumming the Euler product beyond convergence and exploiting rational independence of prime frequencies.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            49
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Current evidence does not overcome the coupled analytic and arithmetic bottleneck",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u31.txt",
+          "unit_bytes": 5387,
+          "unit_id": "perezmarco2017_rh_notes_v2_u31",
+          "unit_sha256": "d8681f8521064a85f5eed505668b2b800cd870afb8e7ecfa59a6bb7cdafee4f6",
+          "unit_type": "evidence-and-bottleneck-audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u31.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The author audits numerical verification, proportions or densities of critical-line zeros, algebraic and dynamical toy models, and Hilbert-Polya analogies as suggestive but insufficient. The source's proposed bottleneck has two coupled parts: retaining Euler-product information beyond its convergence half-plane through a resummation or continuation mechanism, and exploiting the exact rational independence of prime frequencies. Beurling-zeta perturbations are cited as motivation for frequency sensitivity, not as a stated theorem with hypotheses in this unit.",
+            "nonparaphrase_operation": "Constructs an explicitly critic-level evidence ledger: each representation controls something useful while leaving one side of the claimed coupling unresolved, so a bridge preserving both analytic continuation and exact arithmetic frequencies is a research target. This is a synthesis of the author's complaints, not a demonstrated impossibility taxonomy.",
+            "quality_reason": "Accepted after attributing all strategic forecasts, retaining the source-specific frequency-perturbation example, and avoiding any claim that the coupled bottleneck is an accepted impossibility theorem.",
+            "source_support": "The span lists the evidence classes and the author's objections, identifies analytic resummation and prime-frequency Q-independence, invokes perturbed Beurling frequencies, and states the author's judgment that existing approaches do not exploit both fully.",
+            "speculation_status": "Claims that purely analytic, algebraic, or spectral routes are unlikely to work are polemical authorial judgments. The bridge taxonomy is critic inference, and the Beurling reference supplies sensitivity motivation without a precise perturbation result in the span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Recorded as a source-specific strategic hypothesis, not an accepted blueprint for an RH proof.",
+          "line_end": 2782,
+          "line_start": 2750,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "No formula dependency; all ingredients remain conjectural forecasts.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proposed ingredients synthesize repeated mechanisms in the survey and explicitly note that positivity alone may prove only a weaker exclusion of finitely many off-line zeros.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            51
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A plausible proof architecture combines hidden family structure, positivity, a global Euler proxy, and Fourier-complex analysis",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u32.txt",
+          "unit_bytes": 1961,
+          "unit_id": "perezmarco2017_rh_notes_v2_u32",
+          "unit_sha256": "25f9f30d29ce98f1781616380691e4cab5371ce1b79c60c5231b0b551ec98847",
+          "unit_type": "proof-ingredient-hypothesis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u32.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The list is a synthesis of proof burdens rather than a sequence of lemmas. Each ingredient repairs a different failure: family structure supplies relations, positivity supplies sign control, the proxy preserves local arithmetic globally, and Fourier-complex analysis mediates the representations.",
+            "nonparaphrase_operation": "The unspecified global Euler proxy is the central proposed bridge between prime-local data and analytic continuation; the positivity pairing would convert that structure into a zero-location constraint.",
+            "quality_reason": "All four forecast ingredients and the caveat that positivity may yield only a weaker exclusion are explicit. The response explicitly says no construction, theorem or sufficiency evidence is supplied and keeps near-uniqueness conjectural. The architecture could become generic, but it remains grounded in the author's exact four-item list and limitations.",
+            "source_support": "The author forecasts that a proof will uncover analytic-algebraic structure across zeta and L-functions, use a pairing with positivity, replace the divergent critical-strip Euler product by a global proxy, and mix Fourier and complex analysis with arithmetic. The source explicitly allows that positivity alone might prove only a weaker statement such as excluding finitely many off-line zeros.",
+            "speculation_status": "No construction, theorem, or evidence of sufficiency is supplied. The claimed near-uniqueness of a future proof and the ingredient list are conjectural strategic judgments, and even the suggested positivity mechanism is acknowledged as potentially too weak. There is no formula dependency, but every claimed proof ingredient remains a source-specific forecast rather than an accepted blueprint. Mapping each ingredient to a distinct proof burden is a reasonable synthesis. No formula issue exists; the entire unit is a source-specific forecast."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_1d2789ec08be333bcdb037dff6e3061d99bae8e591ec425750538a92f7fa9fa1",
+        "dossier_sha256": "78f068d380efaf66ebbebfc9cc212c5e46a033869ef57e88397fb0d551ab1c86"
+      }
+    }
+  ]
+}

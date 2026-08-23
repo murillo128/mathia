@@ -1,0 +1,331 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "connes2026_rh_past_present",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_connes2026_rh_past_present_e4a9faf3_part_02.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Explicit formulas must retain rho log x rather than only x^rho because conditional summation depends on branch-sensitive information lost by exponentiation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "c71_u005",
+          "c71_u006",
+          "c71_u052"
+        ],
+        "proposed_limit": "This repairs notation and interpretation but does not alter the unresolved zero-location problem.",
+        "source_id": "connes2026_rh_past_present",
+        "synthesis_id": "riemann_v2_within_0f1915a1a206c5d8b9ddf55a",
+        "title": "Branch-aware representations as a correctness prerequisite"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This corrects notation rather than changing the underlying explicit-formula theorem; lines 2182-2204 give the expanded formula.",
+          "line_end": 456,
+          "line_start": 399,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: branch-integral cases are layout-fragmented, but the prose makes the representation defect and repair unambiguous.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The text shows why Li(x^rho) suppresses branch data and why Ei(rho log x) preserves the variable needed for a meaningful conditionally convergent explicit formula.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The correct variable in Riemann's conditionally convergent zero sum",
+          "unit_artifact_relpath": "depth/units/c71_u005.txt",
+          "unit_bytes": 3945,
+          "unit_id": "c71_u005",
+          "unit_sha256": "ed9b8f3b276908f57a41316111291e5f14c713456a894bb2f380909515d8b52d",
+          "unit_type": "representation-repair",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u005.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A many-to-one representation can be harmless for absolute identities but invalid for conditionally summed expressions, because lost branch and ordering data affect meaning.",
+            "nonparaphrase_operation": "The lifted coordinate w=rho log x is the bridge retaining the logarithmic branch; exponentiation to x^rho forgets precisely that information.",
+            "quality_reason": "The span emphasizes conditional ordering and branch choice in Riemann's zero sum. It explicitly says the value depends on rho log x rather than x^rho alone and presents von Mangoldt's casewise definition of Li(e^w). The replacement by Ei(rho log x), the notation-only nature of the repair, and the limited numerical check are accurately reported.",
+            "source_support": "Riemann orders the zero terms conditionally and tracks a branch of the integral logarithm; von Mangoldt defines Li(e^w) by cases in w=u+iv. The source repairs modern notation by using Ei(rho log x) rather than treating Li(x^rho) as a single-valued function of x^rho.",
+            "speculation_status": "This is a correctness repair to the explicit-formula notation, not a new zero-location theorem, and numerical agreement from finitely many zeros is only a check. Moderate: the casewise integrals are layout-fragmented, but the representation defect and repair are explicit in the prose. The general claim that a many-to-one map can destroy data needed by conditional summation is a precise abstraction of exponentiation forgetting the logarithmic lift. The casewise integrals are layout-fragmented, but the prose independently fixes the branch defect and repair."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Compact support is the later key to retaining only finitely many prime contributions.",
+          "line_end": 505,
+          "line_start": 458,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: formulas are fragmented across lines but symbols and prose jointly recover the construction.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The Guinand-Weil form replaces a pointwise prime-counting expression by a test-function identity whose Mellin transforms sample zeros and whose local distributions decompose over all places.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Explicit formula as a zeros-versus-places distribution identity",
+          "unit_artifact_relpath": "depth/units/c71_u006.txt",
+          "unit_bytes": 3311,
+          "unit_id": "c71_u006",
+          "unit_sha256": "744d3d6e2cbf5edbfe268a4a394c74fedbc286fc5e6005c0e6f43b8bca7c6cdb",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u006.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Test functions replace a brittle pointwise identity by a family of controlled observables, making the zeros-versus-places duality and local decomposition explicit.",
+            "nonparaphrase_operation": "Mellin transformation, the involution f-sharp(x)=x^(-1)f(x^(-1)), and the distributions W_v are the bridge objects between spectral zero data and arithmetic places.",
+            "quality_reason": "The unit states von Mangoldt's conditionally summed explicit formula and the Guinand-Weil test-function identity. The Mellin transform, f-sharp involution, prime-power distributions W_p, archimedean contribution, and signs are represented in the candidate. The candidate correctly says that admissibility and convergence remain material and that the formula alone supplies neither positivity nor RH.",
+            "source_support": "Von Mangoldt's formula expresses psi(x) through nontrivial zeros with symmetric conditional summation. Its Guinand-Weil form sums the Mellin values f-tilde(rho) and balances them against f-tilde(0), f-tilde(1), and local distributions W_v(f), including prime-power terms and an archimedean term.",
+            "speculation_status": "The zero sum remains generally conditional and admissibility conditions matter; the formula itself does not supply positivity or prove RH. Moderate because display layout is fragmented, though the roles, signs, and local decomposition are prose-supported. Calling test functions controlled observables that expose a zeros-versus-places decomposition is a faithful conceptual reading of the displayed identity. Formula layout is fragmented, so exact typography should not be reconstructed beyond the legible roles and signs."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The passage critiques notation in one source; it does not claim the classical explicit formula itself is false.",
+          "line_end": 2204,
+          "line_start": 2182,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High-to-moderate: the final formula is fragmented but its replacement rule is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The note demonstrates the periodicity defect in x^beta and writes the corrected zero sum using Ei(rho log x), making the earlier representation repair explicit.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Expanded Ei formula preserves branch-sensitive zero dependence",
+          "unit_artifact_relpath": "depth/units/c71_u052.txt",
+          "unit_bytes": 2018,
+          "unit_id": "c71_u052",
+          "unit_sha256": "97cd3e783d8a3a855fdbdd32bd7ac071879652a4b18ebe45209c2b6f610e672d",
+          "unit_type": "representation-repair",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u052.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The substitution β -> β+2πi/log x is an invariance test: x^β is unchanged, whereas the integral it is meant to represent changes. Exponentiation has therefore forgotten branch-sensitive information. Replacing dependence on x^ρ alone by Ei(ρ log x), with its stated branch cut, retains the logarithmic lift needed by the rewritten zero term. This repairs the criticized representation; it neither says the classical explicit formula is false nor locates the zeros.",
+            "nonparaphrase_operation": "Uses invariance under a concrete parameter shift to falsify an information-losing representation, then identifies the branch-aware replacement and its retained data.",
+            "quality_reason": "Accepted after removing the critic-identified unsupported conditional-assembly claim and preserving only the branch-sensitive repair warranted by the span.",
+            "source_support": "The span explicitly performs the β-shift comparison, defines Ei with a branch cut from negative infinity to zero, and proposes a rewritten zero contribution using Ei(ρ log x) summed over zeros with positive imaginary part. The extraction-damaged paired-zero typography is not reconstructed.",
+            "speculation_status": "The periodicity defect, Ei branch cut, and replacement are source facts. Describing exponentiation as quotienting away information and ρ log x as a lift is interpretation. No convergence or conditional-summation prescription is asserted."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_dd6323053dd3543b51635c41b74534ec87b49f9c8c6c7d8162bb1e3ad261be30",
+        "dossier_sha256": "9044f2c865a3ba69995c638c1b1b2624e4a38c19ed512b4a8125e87b415d577f"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The source itself supports a hierarchy from certified finite computation, through reported numerical approximation and asymptotic matching, to a proved analytic limit for a surrogate, with two proof-critical gates still open.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "c71_u027",
+          "c71_u033",
+          "c71_u040",
+          "c71_u041",
+          "c71_u049"
+        ],
+        "proposed_limit": "No independent recomputation or verification of cited experiments was performed in this semantic source audit.",
+        "source_id": "connes2026_rh_past_present",
+        "synthesis_id": "riemann_v2_within_d252005089f2cb66a99a7578",
+        "title": "Evidence ladder for the proposed program"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Finite verification supplies strong evidence and tests exceptions but cannot establish an infinite statement.",
+          "line_end": 1186,
+          "line_start": 1165,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low: list and prose are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The computational history culminates in the reusable distinction between approximating zeros with the Riemann-Siegel/Odlyzko-Schonhage machinery and certifying completeness with error bounds and Turing's method.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Numerical zero verification couples fast evaluation with rigorous counting",
+          "unit_artifact_relpath": "depth/units/c71_u027.txt",
+          "unit_bytes": 1103,
+          "unit_id": "c71_u027",
+          "unit_sha256": "4be1217514edaa4738d124705de5f935bddf6a68194149e244718d74f3a0ae38",
+          "unit_type": "certification-logic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u027.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Approximation and certification are complementary layers: numerical location proposes the finite zero list, while counting and bounds establish completeness over the checked range.",
+            "nonparaphrase_operation": "Analytic evaluation formulas and fast algorithms feed a separate rigorous counting certificate, connecting numerical exploration to finite mathematical evidence.",
+            "quality_reason": "The span distinguishes fast zero computation via Riemann-Siegel and Odlyzko-Schonhage methods from rigorous verification using error bounds and Turing's method. It reports only finite computational evidence, consistent with the candidate's explicit finite-height limitation. Low: the analysis extracts a reusable approximation-versus-certification mechanism from the historical list.",
+            "source_support": "The source surveys increasingly high finite verifications and names the Riemann-Siegel and Odlyzko-Schonhage methods for computation, together with rigorous error bounds and Turing's method for verification.",
+            "speculation_status": "Even complete certification through a finite height cannot establish an infinite zero-location statement. The historical counts and height claims are reported from citations and were not independently recomputed here. Casting numerical location as proposal and rigorous counting as certification of completeness over the checked range is the operative methodological distinction. The historical counts are source-reported and not independently certified, which the candidate acknowledges."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly labels convergence of the minimizers or their transforms as unproved; numerical improbability is not a proof and the error list is only reported evidence.",
+          "line_end": 1501,
+          "line_start": 1462,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low for the logical structure; the long numerical table is legible but not independently certified here.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The computed first fifty zeros from primes at most 13 closely match zeta zeros, motivating a limit in which minimizers converge and Hurwitz preserves line-supported zeros.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Extreme finite-prime agreement still leaves the convergence theorem open",
+          "unit_artifact_relpath": "depth/units/c71_u033.txt",
+          "unit_bytes": 2764,
+          "unit_id": "c71_u033",
+          "unit_sha256": "9e873ab072bfcd027f526be4575479e13d8ff21ebdef6987c94bff97da2fe41d",
+          "unit_type": "experiment-and-gap",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u033.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite agreement suggests the correct approximating objects; the decisive mathematical move is stability of line-supported zeros under a controlled holomorphic limit, not extrapolation from decimal matches.",
+            "nonparaphrase_operation": "The family of minimizers eta_x, their Mellin transforms, compact-uniform convergence, and Hurwitz form the proposed finite-to-global bridge.",
+            "quality_reason": "The source reports very close agreement for fifty zeros from primes at most 13 and explicitly says convergence as the cutoff increases is unproved. The candidate correctly makes locally uniform holomorphic convergence, rather than decimal agreement, the required input to the proposed Hurwitz step. Low: it identifies the missing limiting operation and its proof burden.",
+            "source_support": "For primes at most 13, the source reports extremely small errors between the first zeros of the minimizer's Mellin transform and zeta zeros, then proposes increasing the support cutoff and passing to Xi by Hurwitz's theorem.",
+            "speculation_status": "Convergence of eta_x or their transforms is explicitly unproved, and reported numerical improbability is not a proof of either convergence or RH. The error table is source-reported evidence and was not independently certified; upstream simplicity assumptions also remain relevant. Calling the numerical match evidence for choosing approximants rather than evidence of RH is an appropriate epistemic interpretation. The numerical error list is only reported evidence and was not independently checked; the candidate records this."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This convergence concerns the constructed k_lambda, not the true Weil minimizers theta_x.",
+          "line_end": 1773,
+          "line_start": 1756,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: the strip and error-bound formula are fragmented but Fact 6.4 is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Classical prolate-to-Hermite estimates yield uniform-on-closed-substrip convergence of the Fourier transforms of k_lambda to Xi, providing the analytic convergence side needed for a Hurwitz argument.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prolate-Hermite approximants converge to Xi on closed substrips",
+          "unit_artifact_relpath": "depth/units/c71_u040.txt",
+          "unit_bytes": 968,
+          "unit_id": "c71_u040",
+          "unit_sha256": "72181ece22eb90494c838384b7470121d9ae350f323f9bbe163dbd168c894fe5",
+          "unit_type": "convergence-result",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u040.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local uniform convergence preserves holomorphic zero behavior under suitable hypotheses and makes the surrogate analytically compatible with the target.",
+            "nonparaphrase_operation": "Prolate-to-Hermite convergence followed by E and Fourier transformation bridges compactly localized approximants to Xi.",
+            "quality_reason": "Fact 6.4 states uniform convergence of the Fourier transforms of k_lambda to Xi on closed substrips of the open width-one strip. The candidate correctly restricts this convergence to the constructed surrogate and does not transfer it to theta_x or claim RH. Low: the topology and domain of convergence are retained rather than reduced to a generic convergence claim.",
+            "source_support": "Classical prolate-to-Hermite estimates control k_lambda toward k=E(h), and Fact 6.4 states that the Fourier transforms of k_lambda converge to Xi uniformly on closed substrips of the open width-one strip, with a stated lambda-dependent boundary-line estimate.",
+            "speculation_status": "The theorem concerns k_lambda, not the actual Weil minimizer theta_x; it therefore does not transfer real-zero rigidity or prove RH. The strip and error-bound typography are fragmented, though the uniform-on-closed-substrips convergence statement is clear. Identifying this as the analytic-convergence half needed for a later Hurwitz argument is supported by the surrounding program and stated limits. The boundary-line estimate is fragmented, but the uniform-on-closed-substrips statement is clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Analogy with the prolate operator is evidence only; neither gate is claimed solved.",
+          "line_end": 1780,
+          "line_start": 1775,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low: concise prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source names the exact remaining obligations: prove the restricted Weil minimum is simple with an even eigenvector, and prove the prolate ansatz sufficiently approximates that eigenvector.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two unresolved gates separate the program from RH",
+          "unit_artifact_relpath": "depth/units/c71_u041.txt",
+          "unit_bytes": 337,
+          "unit_id": "c71_u041",
+          "unit_sha256": "743c73f05957a024465cb6dafba7eba72a0e60dcd59cd561033ba18f65556947",
+          "unit_type": "open-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u041.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "These are independent transfer gates: one gives line rigidity to the true extremizer, while the other connects the proved Xi-convergent surrogate to that extremizer.",
+            "nonparaphrase_operation": "The prolate operator supplies an analogy for the spectral property and k_lambda supplies the proposed comparison object.",
+            "quality_reason": "The source explicitly names two remaining obligations: simplicity with an even eigenvector for the smallest restricted-Weil eigenvalue, and sufficient approximation of theta_x by k_lambda. The candidate clearly says the analogous prolate property does not establish the Weil property. Low: the concise source is turned into an explicit dependency distinction, not padded with a generic roadmap.",
+            "source_support": "The source says Theorem 6.1 requires the smallest eigenvalue of QW_lambda to be simple with an even eigenvector, and separately requires k_lambda to approximate the recentered minimizer theta_x for lambda=sqrt(x).",
+            "speculation_status": "Neither gate is solved; knowing the analogous prolate property is not evidence that the Weil operator inherits it. The square-root typography is corrupted, but the two obligations are concise and unambiguous. Calling these separate transfer gates accurately reflects that one supplies real-zero rigidity and the other connects the Xi-convergent surrogate to the true extremizer. The square-root typography is corrupt, but it does not obscure either obligation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is asymptotic spectral matching, not equality of individual spectra and not control of low zeros; the plotted proximity is not accepted as extra quantitative data.",
+          "line_end": 2024,
+          "line_start": 1978,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: operator formulas are readable with prose; the following figure is omitted as extraction-defective.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Restricting the natural self-adjoint prolate extension to Sonin space yields discrete negative spectrum, and a Darboux-built Dirac square root has the same ultraviolet behavior as zeta zeros.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            34
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A self-adjoint prolate extension matches ultraviolet zero asymptotics",
+          "unit_artifact_relpath": "depth/units/c71_u049.txt",
+          "unit_bytes": 3657,
+          "unit_id": "c71_u049",
+          "unit_sha256": "4f3964f3ed87d8e6bc736a512c55bc2e6e3a80cc9800a9f360130753681ab38d",
+          "unit_type": "spectral-asymptotic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u049.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The prolate differential operator first makes the two-projection angle geometry locally analyzable by commuting with the angle operator. Separately, the cited unique self-adjoint extension commutes with both projections, is Fourier invariant, and restricts to the Sonin space where both a function and its Fourier transform vanish on [-λ,λ]. The restriction has discrete negative spectrum, and a Darboux-constructed Dirac square root is reported to share the ultraviolet behavior of zeta zeros for the stated special λ choice. This gives an operator-level high-energy comparison, not equality of individual spectra, control of low zeros, or an exact Hilbert-Pólya realization.",
+            "nonparaphrase_operation": "Builds and distinguishes the operator chain from projections to angle operator, commuting differential operator, self-adjoint Sonin restriction, and first-order spectral comparison; it also separates asymptotic evidence from exact spectral realization.",
+            "quality_reason": "Accepted after explicitly separating angle-operator commutation from the extension's commutation with both projections, restoring the exact Sonin condition, and remaining noncommittal about extraction-damaged normalizations.",
+            "source_support": "The span states the two projections, commutation of PW_λ with their angle operator, the stronger properties of the cited self-adjoint extension, the exact Sonin-space vanishing condition, discrete negative spectrum, the Darboux square root, special λ values, ultraviolet comparison, and differential-Galois ambiguity. Damaged radicals and signs are not reconstructed.",
+            "speculation_status": "The operator properties and asymptotic claims are reported source facts from cited work. Interpreting commutation as a compression of nonlocal projection geometry and the result as provisional archimedean evidence is bounded inference. The omitted figure contributes no quantitative claim."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_dd6323053dd3543b51635c41b74534ec87b49f9c8c6c7d8162bb1e3ad261be30",
+        "dossier_sha256": "9044f2c865a3ba69995c638c1b1b2624e4a38c19ed512b4a8125e87b415d577f"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "56e1c10626e871574ab5af7a59e5b0cd51268a82f96565f8027e9820b1ec53ff"
+}

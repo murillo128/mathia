@@ -1,0 +1,341 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1885957460_7c3f78b1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1885957460",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Continues the carried Hadamard setup and supplies its missing semantic payoff; the source's phrase 'unconditionally upon RH' is internally awkward, but the next sentences clearly distinguish the unconditional B identity from RH-dependent equality.",
+      "line_end": 578,
+      "line_start": 520,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive zero sums and rational kernel; the convexity/equality logic is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns functional symmetry into the constant zero sum −B and compares it with a Stieltjes-weighted zero-counting sum; strict equality in the paired convexity bound occurs exactly on the critical line.",
+      "source_id": "openalex_w1885957460",
+      "source_normalized_sha256": "26f58d181a09cceb38e67c7fc79044b16d5c2c8216323627598039ffce35a9dc",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-sum invariant and convexity force critical-line equality",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1885957460_v2_u08.txt",
+      "unit_bytes": 3474,
+      "unit_id": "full_openalex_w1885957460_v2_u08",
+      "unit_sha256": "be32066d633a2aabca76b3cd9a25e9b6317a97f49029f175ffb8f6210fd62818",
+      "unit_type": "equivalent-criterion mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1885957460_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1885957460",
+        "title": "From Veneziano to Riemann: A string theory statement of the Riemann hypothesis",
+        "authors": [
+          "Yang-Hui He",
+          "Vishnu Jejjala",
+          "Djordje Minic"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 512,
+          "line_end": 519,
+          "text": "                       X\u0012      1    1\n                                           \u0013          X\u0012 1     1\n                                                                 \u0013\n                  B+              +            = −B −        +     .                     (3.7)\n                       ρ∈S\n                             1−z−ρ ρ                  ρ∈S\n                                                          z−ρ ρ\n\n",
+          "sha256": "a7f648897bbae57d8d58992eb7db366172994ec81e9dcada49de04749b91595e"
+        },
+        "after": {
+          "line_start": 579,
+          "line_end": 586,
+          "text": "   We can now integrate term by term to evaluate the sum S. First, we have that\n                     Z ∞\n                                −2x          log π     1\n                          dx 1     2  2\n                                        (1 −       x) = log π − 4 .                                  (3.13)\n                       0     (4 + x )         2π       2\n\n\n",
+          "sha256": "a0bf4432c6fbd82efa3ca06f5c85d707903ac07d8f8ef17306288d98eb802439"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c237909a3610ce91a083a1c5b4ce0f67a06d2bff18e670307a0011634217406d",
+        "dossier_sha256": "b762c32f523d5404096097d5985df38f2ad3c065ef4354dd68a9e4294261925a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 The Volchkov Criterion Revisited",
+            "line_end": 609,
+            "line_start": 451,
+            "mathematical_role": "Builds the xi Hadamard product, zero-counting Stieltjes sum, convexity equality condition, and explicit Volchkov integral."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 578,
+          "line_start": 520,
+          "title": "Zero-sum invariant and convexity force critical-line equality",
+          "unit_id": "full_openalex_w1885957460_v2_u08",
+          "unit_type": "equivalent-criterion mechanism",
+          "why_material": "Turns functional symmetry into the constant zero sum −B and compares it with a Stieltjes-weighted zero-counting sum; strict equality in the paired convexity bound occurs exactly on the critical line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Continues the carried Hadamard setup and supplies its missing semantic payoff; the source's phrase 'unconditionally upon RH' is internally awkward, but the next sentences clearly distinguish the unconditional B identity from RH-dependent equality.",
+          "representation_dependency": "Formula-sensitive zero sums and rational kernel; the convexity/equality logic is recoverable from prose.",
+          "unit_id": "full_openalex_w1885957460_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 519,
+            "line_start": 451,
+            "title": "Xi-function Hadamard product and functional symmetry setup",
+            "unit_id": "full_openalex_w1885957460_u03",
+            "unit_type": "Hadamard-product criterion machinery",
+            "why_material": "Constructs the entire xi function, its canonical product and logarithmic derivative, then applies functional symmetry to set up a zero-sum invariant."
+          },
+          {
+            "line_end": 608,
+            "line_start": 579,
+            "title": "Decomposing zero count yields the Volchkov integral",
+            "unit_id": "full_openalex_w1885957460_v2_u09",
+            "unit_type": "integral-criterion derivation",
+            "why_material": "Evaluates the smooth Gamma and average contributions in the zero-counting identity so the remaining oscillatory critical-line phase integral equals the fixed constant exactly when the zero-sum equality holds."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A zero-counting Stieltjes transform, the xi Hadamard invariant, and Chebyshev kernels organize the n=1 Volchkov equality as the first member of an all-n Li-coefficient family.",
+            "limit": "The exact all-n converse is formula-dense in this extraction and should be checked equation by equation before formal reuse.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1885957460_u03",
+              "full_openalex_w1885957460_v2_u08",
+              "full_openalex_w1885957460_v2_u09",
+              "full_openalex_w1885957460_v2_u10",
+              "full_openalex_w1885957460_v2_u11",
+              "full_openalex_w1885957460_v2_u12",
+              "full_openalex_w1885957460_v2_u15",
+              "full_openalex_w1885957460_v2_u27"
+            ],
+            "title": "Volchkov sits inside a Chebyshev–Li hierarchy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1885957460_v2_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1885957460_v2_u08",
+          "spontaneous_reading": "The decisive comparison is between a height-only Stieltjes sum and a zero-sum invariant: functional symmetry fixes the latter, while strict equality in a paired convexity bound detects whether every real part is one-half."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1885957460_v2_u08",
+          "source_grounded_mathematics": "The xi Hadamard product gives B=-Σρ 1/ρ and, after conjugate pairing, a real zero sum. Integrating G(x)=(1/4+x²)^-1 against dN(x) produces Σ(1/4+T²)^-1; pairing σ with 1-σ and applying the stated convexity inequality makes equality with -B occur exactly at σ=1/2.",
+          "conceptual_reading": "The kernel deliberately forgets real parts, and the invariant restores a comparison target; equality rather than mere value matching carries the critical-line information.",
+          "representation_or_bridge": "The zero-counting measure dN converts critical zeros into a Stieltjes sum, while Hadamard factorization and convexity connect that sum to a critical-line condition.",
+          "boundary_or_failure": "The argument relies on symmetry-paired zeros and strict equality conditions, not on computing N alone; the source's phrase about unconditionality is awkward and should not be used to strengthen the claim.",
+          "uncertainty": "The rational kernels and zero sums are formula-sensitive, but the equality mechanism is recoverable from prose."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1885957460_v2_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives a height-only Stieltjes sum and compares it with the Hadamard zero-sum constant using paired zeros.",
+          "The displayed inequality has equality only at σ=1/2, which is the intended RH-discriminating mechanism."
+        ],
+        "inference": [
+          "The description of the height kernel as forgetting real parts and the invariant as supplying a comparison target is well grounded."
+        ],
+        "unsupported_or_imported": [
+          "Calling the mechanism convexity is mathematically inaccurate: for T>1, f_T(σ)=σ/(σ²+T²) is concave on [0,1], consistent with the displayed midpoint-maximizing inequality. The source itself uses the wrong word, and the candidate repeats it without flagging the error."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The source's phrase 'unconditionally upon RH' is internally contradictory; the candidate appropriately avoids strengthening it."
+        ],
+        "missed_mechanism": [
+          "The candidate misses that the source's convexity label is erroneous even though the inequality and equality case remain usable."
+        ],
+        "revision_instructions": [
+          "Replace 'convexity' with the stated paired inequality, or explicitly call it a concavity/midpoint-maximization argument for T>1; retain equality iff σ=1/2 and flag the source's terminology error."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Do not promote these research questions to established mechanisms or evidence for RH.",
+      "line_end": 1188,
+      "line_start": 1150,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The candidate Beta-to-xi quotient analogy is formula dependent; surrounding limitations are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposes replacing Gamma/Beta amplitude structure by a xi analogue and identifies concrete speculative routes—holography, p-adic rewriting, and evaluation at non-trivial zeros—while marking them as conjectural.",
+      "source_id": "openalex_w1885957460",
+      "source_normalized_sha256": "26f58d181a09cceb38e67c7fc79044b16d5c2c8216323627598039ffce35a9dc",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Candidate Riemann-string amplitude and dual Regge questions",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1885957460_v2_u19.txt",
+      "unit_bytes": 2686,
+      "unit_id": "full_openalex_w1885957460_v2_u19",
+      "unit_sha256": "c9cdfe6300b0c4e19a330b16729636bdbc6706f267b6bbf73d420f866f17c594",
+      "unit_type": "conjectural physical model",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1885957460_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w1885957460",
+        "title": "From Veneziano to Riemann: A string theory statement of the Riemann hypothesis",
+        "authors": [
+          "Yang-Hui He",
+          "Vishnu Jejjala",
+          "Djordje Minic"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1142,
+          "line_end": 1149,
+          "text": "                                                  1        µ  a\n                  − d2 σkX\n                he         i ≡ DXe− d σkX e− 4πα′ d σ∂a X σ∂ Xµ = e−SH (p) ,            (4.5)\n\nwhere the SH (p) is the relevant holographic action [34], in terms of bulk variables p whose\n“boundary” values would correspond to the momenta k. After continuing the momenta\nto the Lorentzian signature, we could use such a holographic expression to evaluate the\nargument of the Veneziano amplitude.\n",
+          "sha256": "d072a5620b96c7752a2f9e46164e2a577263d8dd3a432f039df8c789c34400b7"
+        },
+        "after": {
+          "line_start": 1189,
+          "line_end": 1196,
+          "text": "    In this paper, we make no claim to producing a solution to the Riemann hypothesis. We\nbelieve that rephrasing it as a problem in physics renders it more tractable and constitutes\nan advance in its own right. While string theory presents a model for quantum gravity, much\nof its considerable success to date has been in connecting physics to mathematics and linking\ndifferent areas of mathematics to each other. Indeed, many areas of string theory fall under\nthe rubric of physical mathematics [38]. The Riemann hypothesis resides at the nexus of\nnumber theory, analysis, and geometry. It is therefore completely natural that string theory\nand the Riemann hypothesis couple to each other as well.\n",
+          "sha256": "8f386eb158776e33b8b5004e2d20573015f17c09d4a586c8fa6d9f739964ab5a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c237909a3610ce91a083a1c5b4ce0f67a06d2bff18e670307a0011634217406d",
+        "dossier_sha256": "b762c32f523d5404096097d5985df38f2ad3c065ef4354dd68a9e4294261925a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 A Physical Picture",
+            "line_end": 1204,
+            "line_start": 1045,
+            "mathematical_role": "Separates spectral and phase information, recasts the criterion as nested path-integral operations, and proposes explicitly conjectural nonlocal and holographic interpretations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1188,
+          "line_start": 1150,
+          "title": "Candidate Riemann-string amplitude and dual Regge questions",
+          "unit_id": "full_openalex_w1885957460_v2_u19",
+          "unit_type": "conjectural physical model",
+          "why_material": "Proposes replacing Gamma/Beta amplitude structure by a xi analogue and identifies concrete speculative routes—holography, p-adic rewriting, and evaluation at non-trivial zeros—while marking them as conjectural."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Do not promote these research questions to established mechanisms or evidence for RH.",
+          "representation_dependency": "The candidate Beta-to-xi quotient analogy is formula dependent; surrounding limitations are explicit.",
+          "unit_id": "full_openalex_w1885957460_v2_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1149,
+            "line_start": 1069,
+            "title": "Integrating momenta first suggests a nonlocal effective worldsheet theory",
+            "unit_id": "full_openalex_w1885957460_v2_u18",
+            "unit_type": "operation reordering construction",
+            "why_material": "Recasts the criterion as worldsheet integration followed by phase extraction and momentum integration, then reverses the integration order to motivate an effective nonlocal action and a possible holographic phase computation."
+          },
+          {
+            "line_end": 1196,
+            "line_start": 1189,
+            "title": "Physical reformulation is not an RH solution",
+            "unit_id": "full_openalex_w1885957460_v2_u20",
+            "unit_type": "scope limitation",
+            "why_material": "Explicitly bounds the paper's claim to a potentially useful physical reframing and denies that it solves RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Fourier form and a formal reordering of momentum/worldsheet integration suggest how an RH-equivalent phase sum rule might be represented by a nonlocal or holographic effective action.",
+            "limit": "The effective Riemann string and its computable phase functional are explicitly unresolved conjectures, and the paper disclaims an RH solution.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1885957460_v2_u16",
+              "full_openalex_w1885957460_v2_u17",
+              "full_openalex_w1885957460_v2_u18",
+              "full_openalex_w1885957460_v2_u19",
+              "full_openalex_w1885957460_v2_u20"
+            ],
+            "title": "Integral transforms connect amplitude phase to prospective effective actions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1885957460_v2_u19",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1885957460_v2_u19",
+          "spontaneous_reading": "The conjectural model is defined by analogy rather than derivation: replace Beta's Gamma quotient by a xi quotient, then ask whether holography, p-adic structure, or Regge behavior can make that analogy dynamical."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1885957460_v2_u19",
+          "source_grounded_mathematics": "The authors propose ξ(x)ξ(y)/ξ(x+y) as a possible analogue of the Beta-function amplitude, discuss a holographic or p-adic rewriting of the transformed phase criterion, and ask what happens when ordinary Gamma/Beta amplitudes are evaluated at non-trivial-zero momenta.",
+          "conceptual_reading": "The passage generates concrete research questions from a structural substitution—Gamma to xi—while identifying observables, dual descriptions, and trajectory behavior that a genuine theory would need to explain.",
+          "representation_or_bridge": "Candidate xi quotients, holographic bulk actions, p-adic amplitudes, and Regge trajectories are speculative bridge objects between string theory and zero data.",
+          "boundary_or_failure": "Every proposed Riemann-string mechanism is explicitly conjectural; none supplies an effective action, controlled phase functional, dual theory, or evidence for RH.",
+          "uncertainty": "The quotient analogy is formula dependent, but the dominant uncertainty is epistemic and openly acknowledged by the authors."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1885957460_v2_u19",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly proposes a Beta-to-xi quotient analogy and asks about holographic, p-adic, algebraic-geometric, and Regge realizations while repeatedly marking the proposal conjectural.",
+          "The candidate's epistemic boundary correctly denies an effective action, controlled phase functional, dual theory, or RH evidence."
+        ],
+        "inference": [
+          "Organizing the passage as research questions generated by a structural Gamma-to-xi substitution is faithful to its exploratory role."
+        ],
+        "unsupported_or_imported": [
+          "The candidate writes ξ(x)ξ(y)/ξ(x+y), but the frozen OCR span displays ξ(x)ξ(x)/ξ(x+y). The likely correction is familiar from the Beta analogy, yet reconstructing y is not licensed by this exact span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The numerator variables in both the Beta and xi quotient displays are OCR/formula-unsafe, while the quotient analogy is recoverable from prose."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Describe only 'a xi-function quotient analogous to the Beta-function Gamma quotient' and flag the numerator arguments as OCR-unsafe; do not supply ξ(x)ξ(y)/ξ(x+y) without scan-level evidence."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "f058446b896823e88c2e41e45a2682c910f11f9bcbe76d606ee31f2bbc29a580"
+}

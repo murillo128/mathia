@@ -1,0 +1,1158 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1986417812_745a8f52_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1986417812",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The normalized lines interleave the left-column zeta introduction with the right-column independence heuristic; both threads are source-visible, but their clauses must be read columnwise rather than as one paragraph.",
+      "line_end": 48,
+      "line_start": 28,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (1) is layout-split, so the unit relies on the surrounding prose about the Euler product, critical line, and independent-Gaussian heuristic rather than reconstruction of the displayed formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The text places the extreme-value question between broad known bounds and records an independence/normal baseline for local maxima, thereby isolating the modeling choice that the later correlation argument changes.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Extreme critical-line values require a model beyond typical-value behavior",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_d01.txt",
+      "unit_bytes": 3180,
+      "unit_id": "openalex_w1986417812_d01",
+      "unit_sha256": "7b1680d4a5d006ed318d4c13b808b9ed694367871d9e512dcb05dff1ba697036",
+      "unit_type": "motivation-and-baseline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_d01.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 20,
+          "line_end": 27,
+          "text": "\n\narXiv:1202.4713v2 [math-ph] 27 Apr 2012\n                                                        and the theory of the Riemann zeta function.\n\n                                                        PACS numbers: 05.90.+m,05.40.-a,75.10.Nr\n\n\n",
+          "sha256": "05c0909c22a9cb01882fcce6c54e529d8e2dad80bc6eab72211d64ddb50c21f7"
+        },
+        "after": {
+          "line_start": 49,
+          "line_end": 56,
+          "text": "                                                                                                                                                         (ζ)\n                                             Some of the most significant questions in the theory of the           Selberg’s theorem implies that Vt (x) behaves like a Gaus-\n                                          zeta function concern the distribution of values it takes on the         sian random function of x when t → ∞. Such a random\n                                          critical line, where it behaves like a quasi-random function of          process is characterized by the two-point correlation function\n                                          t (essentially because the phases of the terms in the product                             (ζ)       (ζ)\n                                                                                                                   C(x1 , x2 ) = Vt (x1 )Vt (x2 ), with the bar denoting the av-\n                                          in (1) contribute as if they were random) . It was proved by             erage over intervals [t − h/2, t + h/2], with h \n t chosen\n",
+          "sha256": "43ce42762c5abbc62b7a8a92f1819d7b3914a30c9a6ed752ff717729142df4c3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e30f8395c7236ab8b0c1aaca64227209344814e47fef81fea48425c347e27f12",
+        "dossier_sha256": "048b554d033eeb5765c20ca44c50142f2867ad040ab5988f65bc33eeee1717bf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Zeta extremes and logarithmic-correlation motivation",
+            "line_end": 85,
+            "line_start": 28,
+            "mathematical_role": "Contrasts typical and extreme critical-line values, introduces the zeta-derived random potential, and motivates logarithmic rather than independent-value modeling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 48,
+          "line_start": 28,
+          "title": "Extreme critical-line values require a model beyond typical-value behavior",
+          "unit_id": "openalex_w1986417812_d01",
+          "unit_type": "motivation-and-baseline",
+          "why_material": "The text places the extreme-value question between broad known bounds and records an independence/normal baseline for local maxima, thereby isolating the modeling choice that the later correlation argument changes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The normalized lines interleave the left-column zeta introduction with the right-column independence heuristic; both threads are source-visible, but their clauses must be read columnwise rather than as one paragraph.",
+          "representation_dependency": "Equation (1) is layout-split, so the unit relies on the surrounding prose about the Euler product, critical line, and independent-Gaussian heuristic rather than reconstruction of the displayed formula.",
+          "unit_id": "openalex_w1986417812_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 76,
+            "line_start": 50,
+            "title": "Critical-line zeta values form a logarithmically correlated landscape",
+            "unit_id": "openalex_w1986417812_d02",
+            "unit_type": "correlation-mechanism",
+            "why_material": "Selberg-type Gaussian behavior is supplemented by a two-point description whose prose-supported conclusion is logarithmic correlation with a small-scale saturation, explaining why extreme values need not follow an independent-sample model."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Short-range and logarithmic models are separated by multiple observables: the logarithmic centering correction, the non-Gumbel density/tail, and a low-temperature free-energy plateau, allowing the hypothesis to be challenged at more than one representational level.",
+            "limit": "The reported tests are preliminary, converge slowly, omit lower-order arithmetic effects in places, and are not independent validation of the proposed law.",
+            "parent_local_unit_ids": [
+              "openalex_w1986417812_d01",
+              "openalex_w1986417812_d08",
+              "openalex_w1986417812_d09",
+              "openalex_w1986417812_d10",
+              "openalex_w1986417812_d12"
+            ],
+            "title": "Competing-correlation falsification ladder"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 23,
+              "line_start": 12,
+              "reason": "Abstract-level synopsis and stated purpose; useful orientation but not a separate derivation."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 56,
+              "line_start": 55,
+              "reason": "A U+001C boundary replaces the relation after h in the averaging-window condition; the missing sign is not reconstructed."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1986417812_d01",
+        "spontaneous": {
+          "unit_id": "openalex_w1986417812_d01",
+          "spontaneous_reading": "The mathematical work is the contrast between a one-point Gaussian/independence baseline for local maxima and the source's warning that the log-zeta field is strongly correlated. It isolates dependence, rather than typical-value scale, as the missing input for extremes."
+        },
+        "directed": {
+          "unit_id": "openalex_w1986417812_d01",
+          "source_grounded_mathematics": "On the critical line, the source presents zeta through its Dirichlet-series/Euler-product representation, describes its values as quasi-random, records a heuristic treating local maxima of log|ζ| as independent normal samples, and then states that those values are in fact strongly correlated. It introduces V_t^(ζ)(x) = -2 log|ζ(1/2+i(t+x))| as the field to study.",
+          "conceptual_reading": "A marginal Gaussian law can set the scale of typical fluctuations without determining maxima. The independence calculation is useful as a foil: changing only the dependence structure can change the extreme-value regime even when one-point behavior remains Gaussian.",
+          "representation_or_bridge": "Taking the negative logarithm of the modulus converts multiplicative zeta values into an additive random-potential landscape. That representation makes covariance and statistical-mechanical extreme-value tools available while preserving the locations of maxima as minima of the potential.",
+          "boundary_or_failure": "This span neither derives the correlation law nor determines the maximum. Its broad bounds and independence baseline do not establish where the true extremes lie, and the split layout of equation (1) should not be used for exact formula recovery.",
+          "uncertainty": "The independence model is explicitly heuristic, and the exact normalization of its predicted maximum is formula-fragile in this extraction. Confidence is high only in the prose-supported contrast between that baseline and strong correlation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1986417812_d01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span records the independent-normal local-maximum heuristic, immediately contrasts it with the statement that log|zeta| values are strongly correlated, and defines V_t^(zeta)=-2 log|zeta|.",
+          "Turning modulus maxima into minima of the negative-log potential is a valid consequence of the displayed definition."
+        ],
+        "inference": [
+          "The candidate's claim that marginal or typical-value information does not determine extremes is a reasonable conceptual inference from the independence-versus-correlation contrast."
+        ],
+        "unsupported_or_imported": [
+          "The source-grounded paragraph calls critical-line values quasi-random, but that wording occurs only in the following unit/context, not in this frozen span.",
+          "The boundary paragraph refers to broad bounds that are not contained in this span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The two columns interleave separate threads, and equation (1) plus the heuristic maximum scale are layout-fragile; exact formula recovery is unsafe."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the quasi-random and broad-bounds claims, retain the explicit heuristic/strong-correlation contrast and negative-log transformation, and avoid reproducing the damaged maximum-scale formula."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 50-62 define the random potential and averaging setup; lines 71-76 explicitly state the significance of the logarithmic form. Exact range inequalities in the intervening display are not used.",
+      "line_end": 76,
+      "line_start": 50,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula dependent and scan verification needed: U+001C boundaries split lines 55/56, 63/64/65, and 69/70 and erase relation signs. The exact conditions in (3) are quarantined; only the independently stated prose-level logarithmic-correlation claim is accepted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Selberg-type Gaussian behavior is supplemented by a two-point description whose prose-supported conclusion is logarithmic correlation with a small-scale saturation, explaining why extreme values need not follow an independent-sample model.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line zeta values form a logarithmically correlated landscape",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_d02.txt",
+      "unit_bytes": 3482,
+      "unit_id": "openalex_w1986417812_d02",
+      "unit_sha256": "de5cce029be928678d668d02cf39499909f2bf2533d2538cf43abf2dd6c06e0e",
+      "unit_type": "correlation-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_d02.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 42,
+          "line_end": 49,
+          "text": "                                          years been considerable interest, stemming from speculations             correlated in a way that is significant from the point of view\n                                          about a spectral interpretation of the Riemann zeros, in pos-            we shall explore here. Specifically, define, for a fixed t ∈ R,\n                                          sible connections between the theory of the zeta-function and                                             \u0012                \u0013\n                                          quantum mechanics (see, e.g. [2]). Our focus here is on sug-                           (ζ)                   1\n                                                                                                                               Vt (x) = −2 log |ζ        + i(t + x) |           (2)\n                                          gesting a new link with physics via the statistical mechanics                                                2\n                                          of disordered landscapes.\n                                                                                                                                                         (ζ)\n",
+          "sha256": "4d3530e217a0e0f518f91e9f95129a65bb6caf83072db5f2cd950b389920c657"
+        },
+        "after": {
+          "line_start": 77,
+          "line_end": 84,
+          "text": "                                          between these upper and lower bounds (and are significantly                 Over the past 40 years, inspired by the pioneering work of\n                                          larger than the typical values). The problem of determining              Montgomery [7] and Odlyzko [8], considerable evidence has\n                                          where precisely within this range they lie has attracted con-            accumulated for connections between the statistical properties\n                                          siderable attention, but remains unresolved. The extreme val-            of the Riemann zeta-function and those of large random ma-\n                                          ues in question are so rare that numerical computations have             trices. For example, correlations between the nontrivial ze-\n                                          failed to settle the matter so far.                                      ros of the zeta function are believed to coincide asymptoti-\n                                             One model, proposed by Montgomery, that leads to predic-              cally with those between the eigenvalues of large random uni-\n                                          tions for the extreme values is based on the assumption that             tary or hermitian matrices [7, 8], and the value distribution of\n",
+          "sha256": "1eaa42b9d02cdbd24969c7a64da55011d31b79fcc26aa60b2d9beeeff7213ea0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e30f8395c7236ab8b0c1aaca64227209344814e47fef81fea48425c347e27f12",
+        "dossier_sha256": "048b554d033eeb5765c20ca44c50142f2867ad040ab5988f65bc33eeee1717bf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Zeta extremes and logarithmic-correlation motivation",
+            "line_end": 85,
+            "line_start": 28,
+            "mathematical_role": "Contrasts typical and extreme critical-line values, introduces the zeta-derived random potential, and motivates logarithmic rather than independent-value modeling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 76,
+          "line_start": 50,
+          "title": "Critical-line zeta values form a logarithmically correlated landscape",
+          "unit_id": "openalex_w1986417812_d02",
+          "unit_type": "correlation-mechanism",
+          "why_material": "Selberg-type Gaussian behavior is supplemented by a two-point description whose prose-supported conclusion is logarithmic correlation with a small-scale saturation, explaining why extreme values need not follow an independent-sample model."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 50-62 define the random potential and averaging setup; lines 71-76 explicitly state the significance of the logarithmic form. Exact range inequalities in the intervening display are not used.",
+          "representation_dependency": "Formula dependent and scan verification needed: U+001C boundaries split lines 55/56, 63/64/65, and 69/70 and erase relation signs. The exact conditions in (3) are quarantined; only the independently stated prose-level logarithmic-correlation claim is accepted.",
+          "unit_id": "openalex_w1986417812_d02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 48,
+            "line_start": 28,
+            "title": "Extreme critical-line values require a model beyond typical-value behavior",
+            "unit_id": "openalex_w1986417812_d01",
+            "unit_type": "motivation-and-baseline",
+            "why_material": "The text places the extreme-value question between broad known bounds and records an independence/normal baseline for local maxima, thereby isolating the modeling choice that the later correlation argument changes."
+          },
+          {
+            "line_end": 100,
+            "line_start": 77,
+            "title": "Random matrices and disordered landscapes provide a freezing hypothesis for zeta extremes",
+            "unit_id": "openalex_w1986417812_d03",
+            "unit_type": "heuristic-bridge",
+            "why_material": "The article connects established zeta/random-matrix statistical analogies to logarithmically correlated energy landscapes and states the central strategic hypothesis that a low-temperature freezing transition governs characteristic-polynomial and, conjecturally, zeta maxima."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable strategic chain is: expose logarithmic covariance, find a structurally matched CUE Fourier field, convert maxima to free energy, identify the partition moments with a circular logarithmic model, and transfer that model's freezing extreme law.",
+            "limit": "The exact covariance ranges and several moment constants are formula-unsafe in this extraction, and transfer from CUE to zeta remains explicitly conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1986417812_d02",
+              "openalex_w1986417812_d05",
+              "openalex_w1986417812_d06",
+              "openalex_w1986417812_d07",
+              "openalex_w1986417812_d08"
+            ],
+            "title": "Correlation-to-freezing mechanism chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 56,
+              "line_start": 55,
+              "reason": "A U+001C boundary replaces the relation after h in the averaging-window condition; the missing sign is not reconstructed."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 70,
+              "line_start": 63,
+              "reason": "Three U+001C boundaries corrupt the range inequalities in the piecewise covariance formula; exact regimes and signs are quarantined."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1986417812_d02",
+        "spontaneous": {
+          "unit_id": "openalex_w1986417812_d02",
+          "spontaneous_reading": "The two-point function supplies the information missing from the Gaussian typical-value statement: the zeta-derived field has logarithmic correlations down to a microscopic cutoff, so its extremes should not be modeled as independent samples."
+        },
+        "directed": {
+          "unit_id": "openalex_w1986417812_d02",
+          "source_grounded_mathematics": "Selberg-type asymptotics make log|ζ(1/2+it)| Gaussian at typical points. For V_t^(ζ)(x), the source averages a two-point correlation over a short interval around t and states that it varies logarithmically with separation, with the growth saturating at the smallest scale associated with the local zero spacing.",
+          "conceptual_reading": "The covariance kernel upgrades a collection of Gaussian marginals into a spatial field. Its logarithmic form encodes shared fluctuations across many scales, while saturation records the finite resolution at which the apparent singularity stops.",
+          "representation_or_bridge": "The two-point kernel is the bridge object: it can be compared directly with covariance kernels from random matrices and logarithmically correlated energy landscapes. It exposes both multiscale dependence and the cutoff that a surrogate must preserve.",
+          "boundary_or_failure": "A covariance match alone does not prove an extreme-value law or a freezing transition. The extracted range inequalities in equation (3) have missing relation signs, so no exact separation regimes are asserted here.",
+          "uncertainty": "The prose-level claims of logarithmic correlation and small-scale saturation are source-supported. Exact signs, constants, and ranges in the displayed piecewise formula remain quarantined because of the damaged text layer."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1986417812_d02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states Selberg-type Gaussian typical-value behavior, defines a two-point function for V_t^(zeta), and explicitly emphasizes the logarithmic form of the correlations.",
+          "Using the two-point kernel as the object for comparison with random-matrix and landscape models is source-supported."
+        ],
+        "inference": [
+          "Viewing covariance as the information that turns Gaussian marginals into a spatial field is a sound conceptual inference."
+        ],
+        "unsupported_or_imported": [
+          "The candidate presents small-scale saturation at local-zero-spacing scale as source-grounded even though the relevant case inequalities are damaged and the packet explicitly quarantines their exact regimes.",
+          "The association of the cutoff with local zero spacing is not stated in this exact span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Missing relation signs corrupt the averaging condition and all regime inequalities in equation (3); signs, constants, ranges, and cutoff direction cannot be reconstructed safely."
+        ],
+        "missed_mechanism": [
+          "The analysis should separate the independently stated logarithmic-correlation conclusion from any interpretation of the damaged constant branch."
+        ],
+        "revision_instructions": [
+          "Restrict source-grounded mathematics to Gaussian typical behavior, the two-point construction, and the prose-supported logarithmic form; either omit saturation/local-spacing claims or label them as unverified interpretations requiring the scan."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the unresolved/numerically rare nature of zeta extremes and the source's explicit statement of how its single-matrix maximum question differs from earlier many-matrix tail work.",
+      "line_end": 100,
+      "line_start": 77,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-supported; two-column extraction interleaves the historical RMT discussion with the freezing proposal but does not obscure the stated comparison.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The article connects established zeta/random-matrix statistical analogies to logarithmically correlated energy landscapes and states the central strategic hypothesis that a low-temperature freezing transition governs characteristic-polynomial and, conjecturally, zeta maxima.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Random matrices and disordered landscapes provide a freezing hypothesis for zeta extremes",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_d03.txt",
+      "unit_bytes": 2857,
+      "unit_id": "openalex_w1986417812_d03",
+      "unit_sha256": "1309dfb3bb012d8ad6be3697c8b7eb8932bb02cae327afef0e8c78bb27f0b0b9",
+      "unit_type": "heuristic-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_d03.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 69,
+          "line_end": 76,
+          "text": "                                          long ranges, the Lindelöf Hypothesis asserts that |ζ(1/2 + it)|                                2 log log t, for |x1 − x2 | \n log1 t\n                                          grows more slowly than any power of t as t → ∞, the Rie-                                                                              (3)\n                                          mann Hypothesis implies that it is O(exp(const.f (t))), where            The significance of the logarithmic form of the correlations\n                                                                                   p that |ζ(1/2 + it)|\n                                          f (t) = log t/ log log t, while it is known                              will become apparent when we come to make comparisons\n                                          takes values at least as large as exp( f (t)) infinitely often           with corresponding problems in random matrix theory and\n                                          [1, pp. 354, 209]. The extreme values thus lie in the range              statistical mechanics.\n",
+          "sha256": "3240dd62840def050fccd2a168769a73005908aecb50e225db37651cabdb9852"
+        },
+        "after": {
+          "line_start": 101,
+          "line_end": 108,
+          "text": "   To establish such a connection we consider the ensemble of       N → ∞, rather than concentrating on the tail that is relevant\nN ×N unitary matrices, chosen uniformly at random from the          when maximizing over many matrices. This leads to a model\nunitary group U(N ) (i.e. from the Circular Unitary Ensemble,       for the distribution of maximum values of |ζ(1/2 + it)| over\nor CUE). We denote the eigenvalues of a given matrix UN by          the intervals T ≤ t ≤ T + 2π, rather than 0 ≤ t ≤ T as\nexp (iφ1 ), . . . , exp (iφN ) and the corresponding characteris-   T → ∞. Furthermore, it makes the problem of numerical\ntic polynomial by                                                   computation of the distribution in question significantly eas-\n                                                                    ier, because one is finding the maximum of ∼ log T rather\n                                       N \u0010\n",
+          "sha256": "f94f99f111be49200e04c30005ce8f7f5aa0e21994e4e8edd2e74e57d947df8d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e30f8395c7236ab8b0c1aaca64227209344814e47fef81fea48425c347e27f12",
+        "dossier_sha256": "048b554d033eeb5765c20ca44c50142f2867ad040ab5988f65bc33eeee1717bf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Zeta extremes and logarithmic-correlation motivation",
+            "line_end": 85,
+            "line_start": 28,
+            "mathematical_role": "Contrasts typical and extreme critical-line values, introduces the zeta-derived random potential, and motivates logarithmic rather than independent-value modeling."
+          },
+          {
+            "label": "CUE surrogate and freezing formulation",
+            "line_end": 175,
+            "line_start": 86,
+            "mathematical_role": "Defines the CUE characteristic polynomial, matches its scale and covariance to zeta, and reframes its maximum through a random-landscape partition function and free energy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 100,
+          "line_start": 77,
+          "title": "Random matrices and disordered landscapes provide a freezing hypothesis for zeta extremes",
+          "unit_id": "openalex_w1986417812_d03",
+          "unit_type": "heuristic-bridge",
+          "why_material": "The article connects established zeta/random-matrix statistical analogies to logarithmically correlated energy landscapes and states the central strategic hypothesis that a low-temperature freezing transition governs characteristic-polynomial and, conjecturally, zeta maxima."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the unresolved/numerically rare nature of zeta extremes and the source's explicit statement of how its single-matrix maximum question differs from earlier many-matrix tail work.",
+          "representation_dependency": "Prose-supported; two-column extraction interleaves the historical RMT discussion with the freezing proposal but does not obscure the stated comparison.",
+          "unit_id": "openalex_w1986417812_d03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 76,
+            "line_start": 50,
+            "title": "Critical-line zeta values form a logarithmically correlated landscape",
+            "unit_id": "openalex_w1986417812_d02",
+            "unit_type": "correlation-mechanism",
+            "why_material": "Selberg-type Gaussian behavior is supplemented by a two-point description whose prose-supported conclusion is logarithmic correlation with a small-scale saturation, explaining why extreme values need not follow an independent-sample model."
+          },
+          {
+            "line_end": 133,
+            "line_start": 101,
+            "title": "CUE characteristic polynomials are scale-matched to critical-line zeta values",
+            "unit_id": "openalex_w1986417812_d04",
+            "unit_type": "surrogate-construction",
+            "why_material": "The characteristic polynomial supplies a tractable random-matrix surrogate, and matching CUE eigenvalue density with zeta-zero density aligns its Gaussian value scale with the zeta scale before any extreme-value transfer is attempted."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 70,
+              "line_start": 63,
+              "reason": "Three U+001C boundaries corrupt the range inequalities in the piecewise covariance formula; exact regimes and signs are quarantined."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1986417812_d03",
+        "spontaneous": {
+          "unit_id": "openalex_w1986417812_d03",
+          "spontaneous_reading": "The source builds a three-way bridge: established zeta/random-matrix statistical analogies identify a surrogate, and the shared logarithmic landscape suggests importing a freezing mechanism. Its sharper target is the full maximum law for one matrix, not merely a tail assembled from many matrices."
+        },
+        "directed": {
+          "unit_id": "openalex_w1986417812_d03",
+          "source_grounded_mathematics": "The span recalls conjectural asymptotic correspondences between zeta zeros and random-matrix eigenvalues and between zeta values and characteristic polynomials. It then proposes that the low-temperature freezing transition of logarithmically correlated disordered landscapes governs characteristic-polynomial extremes and, conjecturally, zeta extremes, while distinguishing single-matrix maxima from earlier many-matrix tail questions.",
+          "conceptual_reading": "The proposed transfer is structural rather than based on surface resemblance: match the dependence geometry, identify an extreme-value mechanism in the tractable model, and only then formulate a zeta prediction. Separating the single-object distribution from repeated-sampling tails also prevents two different extremal questions from being conflated.",
+          "representation_or_bridge": "A CUE characteristic polynomial is the intermediate mathematical object connecting zeta statistics to a random energy landscape. Its log modulus can be treated as an energy field, so matrix size, circle position, and inverse temperature can later be aligned with zeta height, local displacement, and extremal bias.",
+          "boundary_or_failure": "The span states an analogy and research program, not a proof of transfer to zeta. Existing statistical correspondences are described as believed, rare zeta extremes remain numerically unresolved, and a many-matrix tail result does not by itself give the one-matrix maximum law.",
+          "uncertainty": "The central freezing claim is explicitly speculative for zeta. The two-column extraction is interleaved, but the scope distinction and conjectural status are clear in the prose."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1986417812_d03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span connects believed zeta/random-matrix statistical correspondences with logarithmically correlated disordered landscapes and proposes freezing as the governing mechanism for characteristic-polynomial and zeta extremes.",
+          "It explicitly distinguishes the maximum law for a single matrix from a tail relevant to maximizing over many independently sampled matrices."
+        ],
+        "inference": [
+          "Describing the proposed transfer as structural rather than as mere surface analogy is a reasonable synthesis of the three-way bridge."
+        ],
+        "unsupported_or_imported": [
+          "The parameter-level statement that matrix size, circle position, and inverse temperature can be aligned with zeta height, local displacement, and extremal bias imports constructions from later units; inverse temperature is not introduced in this span.",
+          "Treating the characteristic-polynomial log modulus explicitly as an energy field is developed later rather than established here."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Two-column interleaving is present, but the conjectural status and single-versus-many distinction remain readable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the bridge at the level actually stated here: established/believed statistical analogies motivate a freezing hypothesis and a distinct single-matrix extremal question. Remove the later parameter alignment and energy-field details."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The right column begins the partition-function construction later isolated as d06; the local CUE definition and density identification are in the left-column clauses.",
+      "line_end": 133,
+      "line_start": 101,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The determinant/product displays and variance typography are line-split. The construction and density-matching claim are recoverable from checked prose, but exact constants in the displayed normalization should be verified against the scan before formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The characteristic polynomial supplies a tractable random-matrix surrogate, and matching CUE eigenvalue density with zeta-zero density aligns its Gaussian value scale with the zeta scale before any extreme-value transfer is attempted.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "CUE characteristic polynomials are scale-matched to critical-line zeta values",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_d04.txt",
+      "unit_bytes": 3309,
+      "unit_id": "openalex_w1986417812_d04",
+      "unit_sha256": "1a238f0088862d092ed3cdc6443b74860a1daf63e4ee9906299e41fd12b34bee",
+      "unit_type": "surrogate-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_d04.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 93,
+          "line_end": 100,
+          "text": "cal mechanics of disordered logarithmically-correlated energy       nentially in N ) number of times from within U(N ). The re-\nlandscapes, see [13–15] and references therein. The analogy         sults are consistent with the Montgomery model and lead to a\nwe develop suggests that the spin-glass-like freezing transi-       prediction for the value of the constant cM there.\ntion that dominates the low-temperature behaviour in the sta-          The focus here will differ from that of [4] in the following\ntistical mechanical problems also governs the extreme values        ways. We shall be concerned with the distribution of max-\ntaken by the characteristic polynomials of random matrices          imum values of the characteristic polynomials of single ma-\nand the zeta function. This sheds new light on the longstand-       trices, rather than with large numbers of matrices, and will\ning problem of determining the maximum size of ζ(1/2 + it).         obtain the full value distribution of the maxima in the limit as\n",
+          "sha256": "1845718df9307cf1e03608d738de8775c6ee84c0bcac6be87eb2d6d327922b49"
+        },
+        "after": {
+          "line_start": 134,
+          "line_end": 141,
+          "text": "                (U )\nfor us here, VN has the following representation [10]:              The key observation is that (6) takes the form of the partition\n                    ∞                                               function for a system with energy VN (θ) and inverse temper-\n         (U )\n                   X    1 h                        i\n                                                                    ature β. F(β) may then be associated with the corresponding\n       VN (θ) =        √ e−inθ vn(N ) + comp. conj.           (5)\n                   n=1\n",
+          "sha256": "b05916e31a3919a2443ec6e68295e34fe686f6d82f539e9f59741f7cbf043f92"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e30f8395c7236ab8b0c1aaca64227209344814e47fef81fea48425c347e27f12",
+        "dossier_sha256": "048b554d033eeb5765c20ca44c50142f2867ad040ab5988f65bc33eeee1717bf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "CUE surrogate and freezing formulation",
+            "line_end": 175,
+            "line_start": 86,
+            "mathematical_role": "Defines the CUE characteristic polynomial, matches its scale and covariance to zeta, and reframes its maximum through a random-landscape partition function and free energy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 133,
+          "line_start": 101,
+          "title": "CUE characteristic polynomials are scale-matched to critical-line zeta values",
+          "unit_id": "openalex_w1986417812_d04",
+          "unit_type": "surrogate-construction",
+          "why_material": "The characteristic polynomial supplies a tractable random-matrix surrogate, and matching CUE eigenvalue density with zeta-zero density aligns its Gaussian value scale with the zeta scale before any extreme-value transfer is attempted."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The right column begins the partition-function construction later isolated as d06; the local CUE definition and density identification are in the left-column clauses.",
+          "representation_dependency": "The determinant/product displays and variance typography are line-split. The construction and density-matching claim are recoverable from checked prose, but exact constants in the displayed normalization should be verified against the scan before formula-level reuse.",
+          "unit_id": "openalex_w1986417812_d04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 100,
+            "line_start": 77,
+            "title": "Random matrices and disordered landscapes provide a freezing hypothesis for zeta extremes",
+            "unit_id": "openalex_w1986417812_d03",
+            "unit_type": "heuristic-bridge",
+            "why_material": "The article connects established zeta/random-matrix statistical analogies to logarithmically correlated energy landscapes and states the central strategic hypothesis that a low-temperature freezing transition governs characteristic-polynomial and, conjecturally, zeta maxima."
+          },
+          {
+            "line_end": 166,
+            "line_start": 134,
+            "title": "A random Fourier representation exposes the CUE logarithmic covariance and microscopic cutoff",
+            "unit_id": "openalex_w1986417812_d05",
+            "unit_type": "representation-and-cutoff",
+            "why_material": "Representing the CUE log-characteristic polynomial by random Fourier modes makes logarithmic covariance explicit; finite matrix size saturates the singularity at the eigenvalue-spacing scale, yielding the structural match to the zeta-derived field."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1986417812_d04",
+        "spontaneous": {
+          "unit_id": "openalex_w1986417812_d04",
+          "spontaneous_reading": "The useful move is calibration before transfer: the CUE determinant compresses all eigenangles into a random function, and matching eigenvalue density to zero density aligns its Gaussian variance scale with that of log|ζ|."
+        },
+        "directed": {
+          "unit_id": "openalex_w1986417812_d04",
+          "source_grounded_mathematics": "For Haar-distributed U_N, the source defines p_N(θ)=det(1-U_N e^{-iθ}) as a product over eigenangles and V_N^(U)(θ)=-2 log|p_N(θ)|. It cites a central limit theorem with mean zero and variance 2 log N for log|p_N(θ)| and matches the CUE density N/(2π) to the local zeta-zero density, yielding the scale identification N approximately log(t/(2π)).",
+          "conceptual_reading": "The surrogate is calibrated by a structural observable, local spectral density, rather than by choosing N ad hoc. This aligns typical-value behavior first; only after that calibration is it meaningful to ask whether correlations and extremes also transfer.",
+          "representation_or_bridge": "The characteristic polynomial turns the eigenangle configuration into a scalar field on the circle. The density map between eigenangles and zeta zeros supplies the scale bridge, while the log modulus supplies a common observable on both sides.",
+          "boundary_or_failure": "Matching density and a one-point Gaussian variance is insufficient to match maxima. The determinant/product and normalization displays are line-split, and the partition-function material in the other column belongs to a later step.",
+          "uncertainty": "The construction and density-matching claim are clear from the prose. Exact displayed constants and typography should be checked against the scan before formula-level reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1986417812_d04",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the CUE characteristic polynomial and its negative-log field, cites Gaussian limiting behavior, and calibrates CUE size by matching eigenvalue density to local zeta-zero density.",
+          "The candidate correctly notes that one-point calibration alone does not establish an extreme-value match."
+        ],
+        "inference": [
+          "Calibration by spectral density before attempting a transfer of correlations or extremes is a useful conceptual reading of the construction."
+        ],
+        "unsupported_or_imported": [
+          "The candidate states the variance as exactly 2 log N even though the fraction typography is line-split and the assignment explicitly requires scan verification of exact constants."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The determinant/product display and variance normalization are formula-fragile; the right column simultaneously begins the later partition-function construction."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the characteristic-polynomial construction, qualitative Gaussian scale match, and density calibration, but do not state an exact variance constant from this extraction. Keep the later partition-function material outside this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The left-column Fourier/covariance argument is interleaved with right-column background on logarithmic random landscapes. The source itself states the small-distance logarithmic behavior, finite-N saturation, and the scale association.",
+      "line_end": 166,
+      "line_start": 134,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (5) and the covariance display are extraction-fragile. The accepted mechanism follows the surrounding prose; exact coefficients and punctuation require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Representing the CUE log-characteristic polynomial by random Fourier modes makes logarithmic covariance explicit; finite matrix size saturates the singularity at the eigenvalue-spacing scale, yielding the structural match to the zeta-derived field.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A random Fourier representation exposes the CUE logarithmic covariance and microscopic cutoff",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_d05.txt",
+      "unit_bytes": 3113,
+      "unit_id": "openalex_w1986417812_d05",
+      "unit_sha256": "cad088f2c3d7d3bfa05833f1ad17c3440bd880c90c32ae7944962bb8957fe767",
+      "unit_type": "representation-and-cutoff",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_d05.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 126,
+          "line_end": 133,
+          "text": "a central limit theorem: the distribution of the values of                                                                       (6)\nlog |pN (θ)| tends to a normal with mean zero and variance          where VN (θ) = −2 log |pN (θ)| and β > 0. Specifically, if\n2 log N as N → ∞. Identifying the mean density of the               F(β) = −β −1 log ZN (β), then\neigenvalues, N/2π, with the mean density of the Riemann ze-\n                        1      t                                       lim F(β) = min VN (θ) = −2 max log |pN (θ)|.\nros near to height t, 2π  log 2π , renders the agreement with\n                                                                      β→∞             θ∈(0,2π)               θ∈(0,2π)\nSelberg’s theorem for log |ζ(1/2 + it)| complete. Importantly                                                                     (7)\n",
+          "sha256": "41176d7bf47fb947f75e17df8f41e1fdc5e0ba3e937532a9882d0f09b864c62f"
+        },
+        "after": {
+          "line_start": 167,
+          "line_end": 174,
+          "text": "   Our primary goal is to determine the distribution of the         similar freezing transition determines the extreme value statis-\nmaximum value of |pN (θ)| over 0 ≤ θ ≤ 2π when the ma-              tics of the characteristic polynomials and hence, conjecturally,\ntrix UN ranges over U(N ). Our second goal is then to use the       of |ζ(1/2+it)|, and that therefore the logarithmic correlations\n                                                                                     (U )          (ζ)\nrandom-matrix results to motivate predictions for the extreme       exhibited by VN (θ) and Vt (x) play an important role.\nvalues of the Riemann zeta function. The first steps in this           The first step is to consider the positive integer moments\n                                                                        k\ndirection were taken in [4], where the tail of the distribution       ZN  (β) , k = 1, 2, . . .. Using standard methods of ran-\n",
+          "sha256": "65bc62a46af963eb4cc70636516fe505e61165b2b9f57270df0a22909c5a5683"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e30f8395c7236ab8b0c1aaca64227209344814e47fef81fea48425c347e27f12",
+        "dossier_sha256": "048b554d033eeb5765c20ca44c50142f2867ad040ab5988f65bc33eeee1717bf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "CUE surrogate and freezing formulation",
+            "line_end": 175,
+            "line_start": 86,
+            "mathematical_role": "Defines the CUE characteristic polynomial, matches its scale and covariance to zeta, and reframes its maximum through a random-landscape partition function and free energy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 166,
+          "line_start": 134,
+          "title": "A random Fourier representation exposes the CUE logarithmic covariance and microscopic cutoff",
+          "unit_id": "openalex_w1986417812_d05",
+          "unit_type": "representation-and-cutoff",
+          "why_material": "Representing the CUE log-characteristic polynomial by random Fourier modes makes logarithmic covariance explicit; finite matrix size saturates the singularity at the eigenvalue-spacing scale, yielding the structural match to the zeta-derived field."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The left-column Fourier/covariance argument is interleaved with right-column background on logarithmic random landscapes. The source itself states the small-distance logarithmic behavior, finite-N saturation, and the scale association.",
+          "representation_dependency": "Equation (5) and the covariance display are extraction-fragile. The accepted mechanism follows the surrounding prose; exact coefficients and punctuation require scan verification.",
+          "unit_id": "openalex_w1986417812_d05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 133,
+            "line_start": 101,
+            "title": "CUE characteristic polynomials are scale-matched to critical-line zeta values",
+            "unit_id": "openalex_w1986417812_d04",
+            "unit_type": "surrogate-construction",
+            "why_material": "The characteristic polynomial supplies a tractable random-matrix surrogate, and matching CUE eigenvalue density with zeta-zero density aligns its Gaussian value scale with the zeta scale before any extreme-value transfer is attempted."
+          },
+          {
+            "line_end": 171,
+            "line_start": 114,
+            "title": "The maximum becomes a zero-temperature limit of a random-landscape free energy",
+            "unit_id": "openalex_w1986417812_d06",
+            "unit_type": "variational-reframing",
+            "why_material": "Defining a positive-temperature partition function for the characteristic polynomial converts the maximum into the low-temperature limit of free energy, which is the operative bridge from extreme values to a freezing transition."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable strategic chain is: expose logarithmic covariance, find a structurally matched CUE Fourier field, convert maxima to free energy, identify the partition moments with a circular logarithmic model, and transfer that model's freezing extreme law.",
+            "limit": "The exact covariance ranges and several moment constants are formula-unsafe in this extraction, and transfer from CUE to zeta remains explicitly conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1986417812_d02",
+              "openalex_w1986417812_d05",
+              "openalex_w1986417812_d06",
+              "openalex_w1986417812_d07",
+              "openalex_w1986417812_d08"
+            ],
+            "title": "Correlation-to-freezing mechanism chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1986417812_d05",
+        "spontaneous": {
+          "unit_id": "openalex_w1986417812_d05",
+          "spontaneous_reading": "The random Fourier expansion is the decisive representation: trace modes become asymptotically Gaussian coefficients, making the logarithmic covariance visible and showing that finite matrix size regularizes it at the eigenvalue-spacing scale."
+        },
+        "directed": {
+          "unit_id": "openalex_w1986417812_d05",
+          "source_grounded_mathematics": "The source expands V_N^(U)(θ) as a Fourier series with coefficients derived from traces of powers of U_N. For each fixed mode these coefficients tend to independent complex Gaussians under CUE averaging. The resulting covariance is stated as -2 log|2 sin((θ_1-θ_2)/2)| in the large-N limit, with its short-distance divergence saturating when the separation is of order N^{-1}.",
+          "conceptual_reading": "Mode decomposition explains, rather than merely labels, logarithmic correlation: low and high frequencies share fluctuations across nested scales. The finite-N cutoff records which modes and spatial distinctions the matrix can actually resolve.",
+          "representation_or_bridge": "The trace/Fourier field links a concrete matrix invariant to periodic 1/f-type noise and logarithmic random landscapes. Under N approximately log(t/(2π)), both the covariance shape and the microscopic cutoff can be compared with the zeta-derived field.",
+          "boundary_or_failure": "Fixed-mode Gaussian independence is not a uniform statement about all modes, and covariance agreement does not itself determine extreme statistics. Exact coefficients in equation (5) and the covariance display are extraction-fragile.",
+          "uncertainty": "Confidence is high in the prose-supported logarithmic form, cutoff scale, and scale association. Formula punctuation and coefficients require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1986417812_d05",
+        "critic_decision": "revise",
+        "supported": [
+          "The span represents the CUE negative-log characteristic polynomial by Fourier modes built from traces, states fixed-mode asymptotic complex-Gaussian independence, and states logarithmic covariance with finite-N saturation at separation of order N^-1.",
+          "The candidate correctly limits fixed-mode independence and notes that covariance agreement alone does not determine extreme statistics."
+        ],
+        "inference": [
+          "Interpreting the mode expansion as exposing multiscale dependence and finite resolution is plausible but should remain identified as conceptual inference."
+        ],
+        "unsupported_or_imported": [
+          "The exact covariance kernel with coefficient -2 is asserted as settled despite the packet's warning that equation (5) and the covariance display require scan verification.",
+          "The label periodic 1/f-type noise is introduced in a later span, not in this exact unit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Fourier coefficients and covariance punctuation are extraction-fragile, although the prose supports the qualitative logarithmic form and cutoff order."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "State only the prose-supported qualitative logarithmic covariance and order-N^-1 saturation, quarantine the exact kernel/coefficient, and remove the later 1/f label from this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Page marker lines 176-179 and right-column numerical-introduction prose occur inside the span because of source layout. The derivation proceeds in the left-column clauses from the moment identity through (11).",
+      "line_end": 231,
+      "line_start": 172,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula dependent. OCR obscures exponents and threshold typography near lines 210-231, so exact moment constants and convergence bounds are quarantined pending scan verification; the prose-stated Toeplitz-to-Selberg reduction and matching-form claim are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source turns integer moments into Toeplitz determinants, applies their large-N asymptotics, and identifies a Dyson-Morris/Selberg-integral moment form matching a circular logarithmic landscape. This is the mathematical mechanism supporting transfer of the freezing result rather than analogy alone.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "CUE partition-function moments reduce to a Toeplitz/Selberg law",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_d07.txt",
+      "unit_bytes": 5188,
+      "unit_id": "openalex_w1986417812_d07",
+      "unit_sha256": "bca4b5befad8ff1fb7f18bc92c6302f9823b8f3b465f80911506af4f523c8d08",
+      "unit_type": "moment-method-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_d07.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 164,
+          "line_end": 171,
+          "text": "     (U )          (ζ)                                              value statistics. The latter appears to be manifestly different\nof VN (θ) and Vt (x) becomes complete. This is significant\nfrom the point of view we seek to develop.                          from the case of uncorrelated variables. We shall argue that a\n   Our primary goal is to determine the distribution of the         similar freezing transition determines the extreme value statis-\nmaximum value of |pN (θ)| over 0 ≤ θ ≤ 2π when the ma-              tics of the characteristic polynomials and hence, conjecturally,\ntrix UN ranges over U(N ). Our second goal is then to use the       of |ζ(1/2+it)|, and that therefore the logarithmic correlations\n                                                                                     (U )          (ζ)\nrandom-matrix results to motivate predictions for the extreme       exhibited by VN (θ) and Vt (x) play an important role.\n",
+          "sha256": "b7ff5df078d5daf9bd4f9466c98f072774744c2557d411d29e8286a01dc3a175"
+        },
+        "after": {
+          "line_start": 232,
+          "line_end": 239,
+          "text": "                                                                                                                                c=3/2              c=1/2\n\n   The expression (11) for the moments has exactly the same                                     1022         51         1.001343            0.504993\nform as that for the partition function of the landscape of the                                 1019         44         0.992672            0.510293\ncircular-logarithmic model (a periodic version of 1/f noise)                                    1015         35         0.976830            0.518057\n[14], but with a different value for the characteristic scale Ze .                           3.6 × 107       17         0.930533            0.552856\nThis means we can simply translate, mutatis mutandis, the\nresults of [14] to the values of characteristic polynomial sam-\n",
+          "sha256": "8094928f889df8c116b60bb4127d4e5284cf6de287bbf47c1233df1fb87002a0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e30f8395c7236ab8b0c1aaca64227209344814e47fef81fea48425c347e27f12",
+        "dossier_sha256": "048b554d033eeb5765c20ca44c50142f2867ad040ab5988f65bc33eeee1717bf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "CUE surrogate and freezing formulation",
+            "line_end": 175,
+            "line_start": 86,
+            "mathematical_role": "Defines the CUE characteristic polynomial, matches its scale and covariance to zeta, and reframes its maximum through a random-landscape partition function and free energy."
+          },
+          {
+            "label": "Moment law, maximum prediction, and zeta numerical checks",
+            "line_end": 269,
+            "line_start": 176,
+            "mathematical_role": "Uses Toeplitz-determinant/Selberg-integral structure to transfer a circular log-model freezing law, then tests its centering and distributional consequences on zeta data and defines a zeta partition-function observable."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 231,
+          "line_start": 172,
+          "title": "CUE partition-function moments reduce to a Toeplitz/Selberg law",
+          "unit_id": "openalex_w1986417812_d07",
+          "unit_type": "moment-method-derivation",
+          "why_material": "The source turns integer moments into Toeplitz determinants, applies their large-N asymptotics, and identifies a Dyson-Morris/Selberg-integral moment form matching a circular logarithmic landscape. This is the mathematical mechanism supporting transfer of the freezing result rather than analogy alone."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Page marker lines 176-179 and right-column numerical-introduction prose occur inside the span because of source layout. The derivation proceeds in the left-column clauses from the moment identity through (11).",
+          "representation_dependency": "Highly formula dependent. OCR obscures exponents and threshold typography near lines 210-231, so exact moment constants and convergence bounds are quarantined pending scan verification; the prose-stated Toeplitz-to-Selberg reduction and matching-form claim are recoverable.",
+          "unit_id": "openalex_w1986417812_d07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 171,
+            "line_start": 114,
+            "title": "The maximum becomes a zero-temperature limit of a random-landscape free energy",
+            "unit_id": "openalex_w1986417812_d06",
+            "unit_type": "variational-reframing",
+            "why_material": "Defining a positive-temperature partition function for the characteristic polynomial converts the maximum into the low-temperature limit of free energy, which is the operative bridge from extreme values to a freezing transition."
+          },
+          {
+            "line_end": 268,
+            "line_start": 234,
+            "title": "Freezing predicts a CUE maximum law distinct from short-range Gumbel behavior",
+            "unit_id": "openalex_w1986417812_d08",
+            "unit_type": "extreme-value-prediction",
+            "why_material": "Matching the moment form to the circular logarithmic model yields a centered/scaled maximum distribution, a 3/2 logarithmic correction, and a left-tail form that the source contrasts with the 1/2 correction and Gumbel density of short-range variables."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable strategic chain is: expose logarithmic covariance, find a structurally matched CUE Fourier field, convert maxima to free energy, identify the partition moments with a circular logarithmic model, and transfer that model's freezing extreme law.",
+            "limit": "The exact covariance ranges and several moment constants are formula-unsafe in this extraction, and transfer from CUE to zeta remains explicitly conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1986417812_d02",
+              "openalex_w1986417812_d05",
+              "openalex_w1986417812_d06",
+              "openalex_w1986417812_d07",
+              "openalex_w1986417812_d08"
+            ],
+            "title": "Correlation-to-freezing mechanism chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1986417812_d07",
+        "spontaneous": {
+          "unit_id": "openalex_w1986417812_d07",
+          "spontaneous_reading": "The analogy gains mathematical content when integer partition-function moments become Toeplitz determinants and then a Dyson-Morris/Selberg integral. The resulting moment form matches the circular logarithmic model up to scale, providing an actual transfer mechanism."
+        },
+        "directed": {
+          "unit_id": "openalex_w1986417812_d07",
+          "source_grounded_mathematics": "For positive integer k, the source rewrites moments of Z_N(β) as k-fold circle integrals involving a Toeplitz determinant. Large-N Toeplitz asymptotics produce a product of pairwise angular-distance factors, recognized as a Dyson-Morris version of the Selberg integral, and hence a moment law of the same form as that of a circular logarithmic landscape.",
+          "conceptual_reading": "The proof strategy changes representation twice to reveal known structure: random-matrix averaging becomes a determinant, and determinant asymptotics become an integrable pair-interaction model. Matching an entire moment law is more constraining than matching a covariance, although it still has a restricted domain.",
+          "representation_or_bridge": "Toeplitz determinants are the bridge from CUE averages to Selberg integrals; the latter expose the circular log-model partition law. The characteristic scale may change while the functional moment structure, which carries the freezing information, is preserved.",
+          "boundary_or_failure": "The displayed exponents and convergence threshold are OCR-fragile and are not reconstructed. The moment calculation is subcritical and integer-moment based; divergence outside its domain means that continuation to the frozen phase is not justified by these displayed moments alone.",
+          "uncertainty": "The prose-supported Toeplitz-to-Selberg reduction and matching-form claim are reliable. Exact constants, powers, and admissible inequalities require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1986417812_d07",
+        "critic_decision": "revise",
+        "supported": [
+          "Within the exact span, positive integer moments of the CUE partition function are rewritten using Toeplitz determinants, whose large-N asymptotics yield a pair-interaction integral identified as Dyson-Morris/Selberg type.",
+          "The candidate appropriately refuses to reconstruct OCR-damaged exponents, constants, and convergence thresholds."
+        ],
+        "inference": [
+          "The two representation changes, from CUE averaging to determinants and then to an integrable interaction, are a useful mechanism-level reading."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the resulting moment law has the same form as the circular-logarithmic landscape and therefore supplies a transfer mechanism is stated only in the following nearby lines 232-239, outside the frozen unit span ending at line 231.",
+          "The assertion that the characteristic scale may change while the freezing-carrying functional structure is preserved depends on that out-of-span comparison."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The derivation is highly formula-dependent and its powers and admissible inequalities are OCR-fragile."
+        ],
+        "missed_mechanism": [
+          "The semantic boundary is too narrow for the candidate's central matching-form conclusion, even though it supports the Toeplitz-to-Selberg reduction itself."
+        ],
+        "revision_instructions": [
+          "Confine this unit to the integer-moment, Toeplitz-asymptotic, and Selberg-reduction mechanism. Remove the circular-log matching and transfer claims unless the accepted span is explicitly widened to include lines 232-239."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read the right-column clauses beginning at line 189 and continuing through Table I; the overlapping left column contains the independent moment derivation captured in d07.",
+      "line_end": 237,
+      "line_start": 189,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The table entries and prose comparison are readable, but the model-mean display is typographically damaged. The accepted claim is the source's reported comparative fit, not a reconstructed formula or independent recomputation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The first numerical diagnostic compares the distinct centering corrections predicted by logarithmic and short-range models; across the displayed heights the source reports that the 3/2 correction fits the sample means considerably better than 1/2.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta mean-maximum correction favors logarithmic over short-range correlations",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_d09.txt",
+      "unit_bytes": 4699,
+      "unit_id": "openalex_w1986417812_d09",
+      "unit_sha256": "e943e57bf713132672ca303c4b7393ca96856f98543665eb9a5646e0d3240720",
+      "unit_type": "competing-model-test",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_d09.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 181,
+          "line_end": 188,
+          "text": "                                                                                   mers on disordered trees [23], 1/f noise [14, 15] and models\n                               Z 2π         Z 2π       (k)     k\n       k                   k                         DN (β) Y dθj                  appearing in turbulence and financial mathematics [24].\n      ZN (β)          =N              ...                         , (8)\n                                0            0\n                                                      (k)\n                                                     D (0) j=1 2π                     In order to illustrate the extreme value predictions in the\n                                                       N\n",
+          "sha256": "fb3e43e9328eeaa4a8b88da3deeda3db4b5c458a48e2c05c3a9b963e4b6b8405"
+        },
+        "after": {
+          "line_start": 238,
+          "line_end": 245,
+          "text": "This means we can simply translate, mutatis mutandis, the\nresults of [14] to the values of characteristic polynomial sam-\npled along the full circle θ ∈ (0, 2π]. In particular, we con-                        Testing the distribution p(x) is more difficult, because\nclude that the maximum value of the modulus of a CUE char-                         the data converge extremely slowly at that scale. The re-\nacteristic polynomial pN (θ) in an interval θ ∈ [0, 2π] can be                     sults of our initial experiments are summarized in Figure 1.\nwritten in the limit N → ∞ as                                                      Specifically, we consider −2 log |ζmax (2π; T )| + 2 log N −\n                                                                                   3                                                           8\n                                                                                   2 log log N based on a set of approximately 2.5 × 10 ze-\n",
+          "sha256": "88d3447e885bbb86b5c6f2e9f96496126c439f59ef3b683a93f9abd13efc4666"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e30f8395c7236ab8b0c1aaca64227209344814e47fef81fea48425c347e27f12",
+        "dossier_sha256": "048b554d033eeb5765c20ca44c50142f2867ad040ab5988f65bc33eeee1717bf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Moment law, maximum prediction, and zeta numerical checks",
+            "line_end": 269,
+            "line_start": 176,
+            "mathematical_role": "Uses Toeplitz-determinant/Selberg-integral structure to transfer a circular log-model freezing law, then tests its centering and distributional consequences on zeta data and defines a zeta partition-function observable."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 237,
+          "line_start": 189,
+          "title": "The zeta mean-maximum correction favors logarithmic over short-range correlations",
+          "unit_id": "openalex_w1986417812_d09",
+          "unit_type": "competing-model-test",
+          "why_material": "The first numerical diagnostic compares the distinct centering corrections predicted by logarithmic and short-range models; across the displayed heights the source reports that the 3/2 correction fits the sample means considerably better than 1/2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read the right-column clauses beginning at line 189 and continuing through Table I; the overlapping left column contains the independent moment derivation captured in d07.",
+          "representation_dependency": "The table entries and prose comparison are readable, but the model-mean display is typographically damaged. The accepted claim is the source's reported comparative fit, not a reconstructed formula or independent recomputation.",
+          "unit_id": "openalex_w1986417812_d09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 268,
+            "line_start": 234,
+            "title": "Freezing predicts a CUE maximum law distinct from short-range Gumbel behavior",
+            "unit_id": "openalex_w1986417812_d08",
+            "unit_type": "extreme-value-prediction",
+            "why_material": "Matching the moment form to the circular logarithmic model yields a centered/scaled maximum distribution, a 3/2 logarithmic correction, and a left-tail form that the source contrasts with the 1/2 correction and Gumbel density of short-range variables."
+          },
+          {
+            "line_end": 260,
+            "line_start": 240,
+            "title": "The zeta maximum-density test is supportive but explicitly inconclusive",
+            "unit_id": "openalex_w1986417812_d10",
+            "unit_type": "prediction-and-falsification",
+            "why_material": "The source compares normalized zeta maxima with the predicted density and tail, while explicitly recording slow convergence, omitted lower-order arithmetic terms, and the fact that the agreement does not conclusively verify the prediction."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Short-range and logarithmic models are separated by multiple observables: the logarithmic centering correction, the non-Gumbel density/tail, and a low-temperature free-energy plateau, allowing the hypothesis to be challenged at more than one representational level.",
+            "limit": "The reported tests are preliminary, converge slowly, omit lower-order arithmetic effects in places, and are not independent validation of the proposed law.",
+            "parent_local_unit_ids": [
+              "openalex_w1986417812_d01",
+              "openalex_w1986417812_d08",
+              "openalex_w1986417812_d09",
+              "openalex_w1986417812_d10",
+              "openalex_w1986417812_d12"
+            ],
+            "title": "Competing-correlation falsification ladder"
+          },
+          {
+            "claim": "Testing both normalized maxima and the beta-dependent partition free energy probes the same freezing proposal through an extreme-value view and a phase-transition view rather than relying on a single fit.",
+            "limit": "The source provides numerical consistency only; figure extraction is incomplete and no claimed test is presented as conclusive.",
+            "parent_local_unit_ids": [
+              "openalex_w1986417812_d09",
+              "openalex_w1986417812_d10",
+              "openalex_w1986417812_d11",
+              "openalex_w1986417812_d12"
+            ],
+            "title": "Maximum statistics and thermodynamic behavior as complementary views"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1986417812_d09",
+        "spontaneous": {
+          "unit_id": "openalex_w1986417812_d09",
+          "spontaneous_reading": "The numerical test is organized as a direct competition between correlation models: after mapping a zeta height to an effective CUE size, the observed mean maxima are much closer to the 3/2 correction than to the short-range 1/2 correction."
+        },
+        "directed": {
+          "unit_id": "openalex_w1986417812_d09",
+          "source_grounded_mathematics": "The source computes maxima of |ζ(1/2+it)| on many intervals of length 2π at several heights, takes N near log T, and compares sample means with two model means differing in the centering coefficient c. The displayed ratios are near one for c=3/2 and near one half for c=1/2, leading the authors to report a considerably better fit for the logarithmic-correlation model.",
+          "conceptual_reading": "This is a competing-model test rather than an absolute goodness claim. The subleading centering term functions as a diagnostic because the two models share much of the leading scale but disagree on a specific consequence of dependence.",
+          "representation_or_bridge": "Local zeta windows are represented as effective CUE samples through N approximately log T, and division by the model mean turns data from different heights into comparable ratios. That normalization makes the correlation hypothesis visible in a compact table.",
+          "boundary_or_failure": "The table reports finite-height numerical evidence, not independent validation or a proof of the asymptotic law. The damaged model-mean display is not reconstructed, and the comparison may still be affected by finite-size and arithmetic corrections.",
+          "uncertainty": "The table entries and the authors' comparative conclusion are readable. Confidence is limited to the reported fit; no independent recomputation or exact formula recovery is available within this packet."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1986417812_d09",
+        "critic_decision": "revise",
+        "supported": [
+          "The span reports maxima from many length-2pi zeta intervals, maps height to an effective N, and compares sample means under c=3/2 and c=1/2.",
+          "The displayed ratios and prose support only the authors' conclusion that c=3/2 fits these data considerably better."
+        ],
+        "inference": [
+          "Reading the subleading centering coefficient as a competing-model diagnostic is a sound interpretation of the comparison."
+        ],
+        "unsupported_or_imported": [
+          "The boundary discussion invokes arithmetic corrections, but lower-order arithmetic terms are first mentioned in the following distribution-test unit, not in this exact span.",
+          "The exact damaged model-mean formula is wisely not reconstructed, but its limitations do not themselves establish an arithmetic correction here."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The model-mean display is typographically damaged; table entries and the authors' comparative conclusion remain readable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the finite-height and no-independent-recomputation limitations, but remove the arithmetic-correction claim from this unit or identify it explicitly as neighboring evidence outside the span."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "1d3d39f37e4aff7231b8de8461a474a25ab2e4be8ed791838c8078b646f0f513"
+}

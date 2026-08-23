@@ -1,0 +1,353 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2917089270_dfd8f485_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2917089270",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the modular-form setup, coefficient notation, Theorem 5, and the roadmap linking Theorems 3, 5, and 7.",
+      "line_end": 187,
+      "line_start": 150,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Fourier expansions and shifts are display-dependent and lightly degraded; the theorem statement and transfer principle are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The partition sequence is reframed as a modular-form coefficient sequence, leading to a general theorem for real Fourier coefficients of weakly holomorphic modular forms. The span also identifies a common proof architecture: verify one universal asymptotic criterion separately for each sequence.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weakly holomorphic modular-form coefficients inherit eventual Jensen hyperbolicity",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u05.txt",
+      "unit_bytes": 2571,
+      "unit_id": "openalex_w2917089270_depth_u05",
+      "unit_sha256": "a23b051994b9c82f9993aee689aa2792286544172599e61212ec23407841b21e",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u05.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 142,
+          "line_end": 149,
+          "text": "       N(d)     19975     21907     23938      26068     28305     30636     33084     35627\n\nRemark. Larson and Wagner [23] have made the proof of Theorem 4 effective by a brute force\nimplementation of Hermite’s criterion (see Theorem C of [3]). They showed that the values in\n                                                                         2\nthe table are correct for d = 4 and d = 5 and that N(d) ≤ (3d)24d (50d)3d in general. The true\nvalues are presumably much smaller, and are probably of only polynomial growth, the numbers\nin the table being approximately of size N(d) ≈ 10 d2 log d.\n",
+          "sha256": "8282270ce949e89b4062c10806a7ddaaa818a665091527566bf5241cf66c7a71"
+        },
+        "after": {
+          "line_start": 188,
+          "line_end": 195,
+          "text": "\n                                          Acknowledgements\nThe authors thank the generosity of the Max Planck Institute for Mathematics in Bonn for its\nsupport and hospitality. The authors thank William Y. C. Chen, Rick Kreminski, Hannah Larson,\nSteffen Löbrich, Peter Sarnak, and Ian Wagner for discussions related to this work. They also\nthank Jacques Gélinas for bringing their attention to old work of Hadamard cited as a footnote\nin Section 4.\n\n",
+          "sha256": "1a0cbd2ef66b8f5205290eb3bdaeb5522f58a47c7cc5ca572181e29eacc1fa16"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and Statement of Results",
+            "line_end": 195,
+            "line_start": 25,
+            "mathematical_role": "Defines Jensen polynomials and hyperbolicity, states the RH equivalence and main theorems, motivates the Hermite/GUE bridge, and situates the general criterion across zeta and modular-form sequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 187,
+          "line_start": 150,
+          "title": "Weakly holomorphic modular-form coefficients inherit eventual Jensen hyperbolicity",
+          "unit_id": "openalex_w2917089270_depth_u05",
+          "unit_type": "generalization",
+          "why_material": "The partition sequence is reframed as a modular-form coefficient sequence, leading to a general theorem for real Fourier coefficients of weakly holomorphic modular forms. The span also identifies a common proof architecture: verify one universal asymptotic criterion separately for each sequence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the modular-form setup, coefficient notation, Theorem 5, and the roadmap linking Theorems 3, 5, and 7.",
+          "representation_dependency": "The Fourier expansions and shifts are display-dependent and lightly degraded; the theorem statement and transfer principle are clear in prose.",
+          "unit_id": "openalex_w2917089270_depth_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 149,
+            "line_start": 119,
+            "title": "Hyperbolicity asymptotics as a criterion for partition log-concavity phenomena",
+            "unit_id": "openalex_w2917089270_depth_u04",
+            "unit_type": "cross-domain-application",
+            "why_material": "This span explains why the general Hermite criterion matters beyond zeta: real-rooted Jensen polynomials control higher log-concavity in enumerative sequences, and the partition function supplies a concrete eventual-hyperbolicity conjecture with finite threshold evidence and an effective-but-large bound."
+          },
+          {
+            "line_end": 249,
+            "line_start": 196,
+            "title": "Finite-difference cancellation selects the limiting polynomial family",
+            "unit_id": "openalex_w2917089270_depth_u06",
+            "unit_type": "proof-mechanism",
+            "why_material": "Theorem 6 shows that a general local ratio expansion produces a polynomial family determined by a formal generating series. Its proof exposes the reusable algebraic engine: the relevant finite difference kills all powers below the required order and retains exactly the matching coefficient, with the Hermite case arising from a Gaussian generating series."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Very different analytic sequences can share the same Hermite Jensen limit once their short coefficient ratios admit the required quadratic scale; higher-order normalizations change convergence speed without changing the limiting mechanism.",
+            "limit": "The shared normal form does not transfer RH-specific meaning to partition or modular-form coefficients, and asymptotic coordinates can be invalid at small indices.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u05",
+              "openalex_w2917089270_depth_u07",
+              "openalex_w2917089270_depth_u13"
+            ],
+            "title": "One local-growth criterion across zeta and modular coefficients"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2917089270_depth_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2917089270_depth_u05",
+          "spontaneous_reading": "The partition example is not isolated: expressing p(n) as Fourier data of 1/η reveals a larger class whose coefficients share the same eventual Hermite behavior. The proof architecture becomes modular—derive sequence-specific asymptotics, then pass through one universal Jensen criterion."
+        },
+        "directed": {
+          "unit_id": "openalex_w2917089270_depth_u05",
+          "source_grounded_mathematics": "The span identifies partition numbers with shifted Fourier coefficients of the weakly holomorphic modular form 1/η and states Theorem 5: for the specified class of real-coefficient weakly holomorphic modular forms, every fixed-degree Jensen family is hyperbolic for all sufficiently large shifts. It also gives the section-by-section reduction to Theorem 3.",
+          "conceptual_reading": "The abstraction isolates modularity as a source of coefficient asymptotics rather than treating the partition sequence as exceptional. Distinct analytic sequences can therefore enter the same local polynomial universality class.",
+          "representation_or_bridge": "Fourier expansion and modular-form growth supply short-shift coefficient asymptotics; Theorem 3 translates those asymptotics into normalized Hermite limits and eventual real-rootedness.",
+          "boundary_or_failure": "The result is eventual and degree-by-degree, applies only to the stated modular-form class, and does not transfer zeta-specific interpretations to modular coefficients. The harmless index translation is asymptotic, not an identity of the displayed sequences.",
+          "uncertainty": "The theorem and transfer plan are clear, while exact Fourier exponents, fractional shifts, and the displayed central-zeta normalization need PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2917089270_depth_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives the exact shifted Fourier-coefficient realization of p(n), defines the relevant weakly holomorphic modular-form class, states eventual fixed-degree hyperbolicity, and supplies the reduction through Theorem 3.",
+          "The modularity-to-coefficient-asymptotics-to-Jensen-geometry bridge and the degree-by-degree boundary are supported."
+        ],
+        "inference": [
+          "Treating modularity as the sequence-specific source of asymptotics feeding a universal Jensen criterion is a faithful abstraction of the roadmap."
+        ],
+        "unsupported_or_imported": [
+          "The boundary sentence says the index translation is 'asymptotic, not an identity of the displayed sequences,' but the footnote states the exact identity p(n)=a_f(n-1/24); only preservation of the required asymptotic property under translation is asymptotic reasoning."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Fourier exponents and fractional shifts are extraction-sensitive, although the footnote's exact identity and translation argument are legible."
+        ],
+        "missed_mechanism": [
+          "The candidate should separate the exact shifted coefficient identity from translation invariance of the asymptotic hypothesis used to invoke Theorem 5."
+        ],
+        "revision_instructions": [
+          "Replace the final index-translation sentence with: 'For f=1/eta the source gives the exact shifted identity p(n)=a_f(n-1/24); applying Theorem 5 to partition numbers uses invariance of the required asymptotic property under translating the index.' Leave the remaining analysis unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the normalized coefficients, finite checked range, signed tolerance vectors, uniform C(n,j) bound, tail thresholds, and the worked degree-four enclosure.",
+      "line_end": 553,
+      "line_start": 522,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact inequalities and thresholds are formula/numerical-data dependent and must be preserved only after checking the original display; the finite-prefix-plus-tail architecture is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof of the all-shift finite-degree result is a hybrid certificate: direct Hermite-criterion checks cover n up to one million, while coefficient neighborhoods around the limiting Hermite polynomial and explicit uniform ratio bounds cover the infinite tail. The d=4 inequalities illustrate how a stability neighborhood is made effective.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite verification plus a certified asymptotic tail proves degrees at most eight",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u12.txt",
+      "unit_bytes": 2045,
+      "unit_id": "openalex_w2917089270_depth_u12",
+      "unit_sha256": "f81ae56177014408253cd2b9e2d9d9712234b5ee023a9fb0a241b769e06d7616",
+      "unit_type": "computational-certification-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u12.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 514,
+          "line_end": 521,
+          "text": "<!-- source-page: 9 -->\n\nJENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES                                9\n\nThe bounds for the gm (n) and the asymptotics above imply the o(1) error term in (15), and also\nthat for sufficiently large n we have 0 < δ(n) → 0. Therefore, Theorem 3 applies, and its corollary\ngives Theorem 1.\n\n",
+          "sha256": "a59f95f01497b5b022d52c4d8972f8c4101f8d0289c53c98f831731b38a20c92"
+        },
+        "after": {
+          "line_start": 554,
+          "line_end": 561,
+          "text": "\n\n                                                   6. Examples\n  For convenience, we let the Jbαd,n (X) denote the polynomials which converge to Hd (X) in (5).\nWe now illustrate Theorem 5 with (6),q where m = 1/24 and k = −1/2. Using (10), we may choose\n          2π       24                     12π          288\nA(n) = √24n−1 − 24n−1 and δ(n) = (24n−1)      3/2 − (24n−1)2 . Although the one-term approximations\n\n",
+          "sha256": "9aef29544ca85416b0d22d5079f1178684b81dd2c2c273361f68cc99a15e4fd7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorems 1 and 2",
+            "line_end": 555,
+            "line_start": 421,
+            "mathematical_role": "Checks the local log-ratio expansion for the zeta Taylor coefficients, derives eventual hyperbolicity, and combines finite computation with an effective tail bound for degrees at most eight."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 553,
+          "line_start": 522,
+          "title": "Finite verification plus a certified asymptotic tail proves degrees at most eight",
+          "unit_id": "openalex_w2917089270_depth_u12",
+          "unit_type": "computational-certification-logic",
+          "why_material": "The proof of the all-shift finite-degree result is a hybrid certificate: direct Hermite-criterion checks cover n up to one million, while coefficient neighborhoods around the limiting Hermite polynomial and explicit uniform ratio bounds cover the infinite tail. The d=4 inequalities illustrate how a stability neighborhood is made effective."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the normalized coefficients, finite checked range, signed tolerance vectors, uniform C(n,j) bound, tail thresholds, and the worked degree-four enclosure.",
+          "representation_dependency": "Exact inequalities and thresholds are formula/numerical-data dependent and must be preserved only after checking the original display; the finite-prefix-plus-tail architecture is clear.",
+          "unit_id": "openalex_w2917089270_depth_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 520,
+            "line_start": 421,
+            "title": "Short-shift expansion verifies eventual fixed-degree hyperbolicity for zeta coefficients",
+            "unit_id": "openalex_w2917089270_depth_u11",
+            "unit_type": "application-proof",
+            "why_material": "This span applies the universal criterion to gamma(n): analytic control of the implicit saddle and correction factors yields a Taylor expansion of log gamma(n+j)/gamma(n), identifies a positive vanishing quadratic scale, and bounds higher coefficients strongly enough for every fixed degree. Theorem 1 then follows from Hermite convergence and root stability."
+          },
+          {
+            "line_end": 566,
+            "line_start": 556,
+            "title": "Higher-order normalization accelerates visible Hermite convergence but may fail at small shifts",
+            "unit_id": "openalex_w2917089270_depth_u13",
+            "unit_type": "method-comparison-and-limitation",
+            "why_material": "The example explains why a two-term local normalization is chosen even though a one-term normalization suffices asymptotically: it converges faster and makes the Hermite model visible earlier. The footnote that delta(6) is not real records a concrete small-index limitation of the asymptotic coordinates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "All-orders asymptotics and explicit Hermite stability neighborhoods can certify the infinite tail, while a separate exact Hermite-criterion computation covers the finite prefix, converting an asymptotic theorem into an all-shift result for bounded degree.",
+            "limit": "The certification depends on the stated effective bounds and computations and does not automatically extend beyond degree eight or replace verification of the numeric certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u11",
+              "openalex_w2917089270_depth_u12"
+            ],
+            "title": "Turning eventual stability into an all-shift finite-degree certificate"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2917089270_depth_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w2917089270_depth_u12",
+          "spontaneous_reading": "The all-shift result is a split certificate: exact Hermite-criterion computation covers a finite prefix, while explicit coefficient enclosures place every remaining normalized polynomial inside a one-sided stability neighborhood of H_d."
+        },
+        "directed": {
+          "unit_id": "openalex_w2917089270_depth_u12",
+          "source_grounded_mathematics": "For degrees four through eight, normalized zeta Jensen polynomials were checked for hyperbolicity through n=10^6. The authors choose signed coefficient tolerances around H_d, bound the normalized ratio error C(n,j) uniformly for n≥7 and j≤8, and find tail thresholds below 10^6; degree four is illustrated with explicit coefficient inequalities.",
+          "conceptual_reading": "Simple-root stability becomes an effective finite-dimensional robustness region. Computation and analysis cover complementary domains, converting eventual convergence into a statement for every shift in the bounded degree range.",
+          "representation_or_bridge": "Each normalized polynomial is represented by its coefficient vector β^{d,n}; a signed box around the Hermite coefficient vector h is certified to remain in the hyperbolic region.",
+          "boundary_or_failure": "The certificate is bounded to degrees at most eight and depends on the stated finite computation, effective estimates, and tolerance construction. It provides no automatic extension to degree nine or to RH.",
+          "uncertainty": "The finite-prefix-plus-tail architecture is clear. Exact tolerances, inequalities, numerical thresholds, and the underlying computation should be verified from the original displays and certificate evidence before reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2917089270_depth_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The span reports Hermite-criterion verification through n=10^6 for degrees four through eight, constructs signed one-sided coefficient neighborhoods of H_d, bounds C(n,j), and obtains tail thresholds below 10^6.",
+          "The candidate correctly describes the finite-prefix-plus-analytic-tail architecture, the degree-eight boundary, and dependence on the reported computation and effective bounds."
+        ],
+        "inference": [
+          "Viewing the signed coefficient inequalities as an effective finite-dimensional stability neighborhood is supported by their stated role in guaranteeing hyperbolicity."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the finite-prefix check an 'exact Hermite-criterion computation.' The span reports that hyperbolicity was confirmed using Hermite's criterion but supplies neither exact-arithmetic provenance nor a checkable computational certificate in this evidence boundary."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact tolerances, inequalities, bounds, and thresholds are formula/numerical-data dependent; the directed uncertainty correctly requires display and computation verification."
+        ],
+        "missed_mechanism": [
+          "The epistemic status of the finite prefix should remain a reported computation, distinct from independently verified exact computational evidence."
+        ],
+        "revision_instructions": [
+          "Change 'exact Hermite-criterion computation covers a finite prefix' to 'the reported Hermite-criterion computation covers a finite prefix.' Preserve the rest of the candidate, including its explicit dependency and verification caveats."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "21ebffb6bb424a621320d33fc8b7f9177e4c6a0718a9ee18d2fd220aed7192e8"
+}

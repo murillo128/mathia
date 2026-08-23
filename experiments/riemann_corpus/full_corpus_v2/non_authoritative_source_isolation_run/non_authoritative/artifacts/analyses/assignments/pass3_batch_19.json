@@ -1,0 +1,1682 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no prior analysis-stage conversation",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_19.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_19.jsonl"
+  },
+  "unit_count": 36,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the distinction between joint control of all blocks and earlier methods that examined pieces separately.",
+      "line_end": 249,
+      "line_start": 164,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose-stable; schematic exponential identities are clean.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source isolates the length-versus-available-moments tradeoff and the loss from Markov tail bounds, then replaces them with block-dependent truncation powers, first-bad exceptional sets, and direct integration of truncated exponential products.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        4,
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Multiscale truncation and direct moments bypass two losses in large-value counting",
+      "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u01.txt",
+      "unit_bytes": 5804,
+      "unit_id": "openalex_w1507181162_v2_u01",
+      "unit_sha256": "6dfaa4f0e3e6f61532f7b0e0ff174ec8af26af719d00c79680c867a3c84b19e2",
+      "unit_type": "method-limitation-and-redesign",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the v1 toolkit because it supplies the second indispensable input.",
+      "line_end": 323,
+      "line_start": 291,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The combinatorial coefficient f(n) is formula-dependent but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 2 makes the random-phase analogy rigorous for bounded products: odd prime multiplicities vanish from the main term, even ones factor multiplicatively, and distinct primes do not interact.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cosine products have a main term exactly when every prime multiplicity pairs",
+      "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u02.txt",
+      "unit_bytes": 1683,
+      "unit_id": "openalex_w1507181162_v2_u02",
+      "unit_sha256": "58616e5ea61b7af243c07d289990d50f0b2c743e24a496628af7f7a1b2c698bb",
+      "unit_type": "prime-pairing-orthogonality",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The detailed combinatorics are retained because the square-supported reassembly is the central rigorous surrogate for Gaussian independence.",
+      "line_end": 778,
+      "line_start": 502,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense formula extraction; exact truncation constants and combinatorial factors require scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "On the good set each exponential series is truncated at a block-specific degree, squared to preserve positivity when extending the integration domain, expanded through Proposition 2, and reassembled using multiplicativity; square support then yields exp(k^2 sum 1/p), hence the sharp logarithmic order.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positivity and square support turn truncated block exponentials into the Gaussian moment scale",
+      "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u03.txt",
+      "unit_bytes": 18393,
+      "unit_id": "openalex_w1507181162_v2_u03",
+      "unit_sha256": "658951f50bf11db3fd479b5aeae3bad8376a047ebf1af093aac116da9cdaba13",
+      "unit_type": "truncated-exponential-moment-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the separate super-small measure estimate for S(0).",
+      "line_end": 928,
+      "line_start": 780,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponents are OCR-sensitive, while the high-power penalty mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "On S(j), the first failing block is inserted at a high even power while earlier blocks remain truncatable; orthogonality then yields an exponential penalty in beta_{j+1}^{-1} log(1/beta_{j+1}) strong enough to sum over all failure levels.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A first oversized block pays for itself through a high even power",
+      "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u04.txt",
+      "unit_bytes": 10437,
+      "unit_id": "openalex_w1507181162_v2_u04",
+      "unit_sha256": "3d90ffdcca143f7ee2ba562b8b1ad83e9175e33c95b2e1d341b1d0c5e51bcd2f",
+      "unit_type": "exceptional-set-first-failure-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This proves the third lemma rather than treating the prime-square term as harmless by assertion.",
+      "line_end": 1082,
+      "line_start": 931,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy OCR; exact dyadic thresholds should be verified from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The prime-square contribution is split into dyadic prime ranges, typical ranges sum to O(1), and a first atypical range is penalized by a very high moment on a disjoint prime set, preserving the main log^{k^2} scale.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dyadic exceptional sets keep the prime-square polynomial from spoiling the sharp moment",
+      "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u05.txt",
+      "unit_bytes": 10471,
+      "unit_id": "openalex_w1507181162_v2_u05",
+      "unit_sha256": "a094562f9e91b79c074759b65311ef9ad622d82384802a1e86f7ae3e1fb9bc90",
+      "unit_type": "secondary-prime-power-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source also explains why careless treatment of small primes loses the arithmetic factor.",
+      "line_end": 1371,
+      "line_start": 1226,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The comparison is partly heuristic and depends on exact asymptotic products; quantitative reuse requires formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Tracking constants identifies the need to choose beta_I exponentially small in k as the source of a doubly exponential loss; allowing a conjecturally longer Gaussian prime polynomial and optimizing its length recovers an exp(-k^2 log k+O(k^2)) factor close to random matrix theory.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The rigorous short-polynomial constraint explains the poor constant, while Gaussian optimization predicts the random-matrix scale",
+      "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u06.txt",
+      "unit_bytes": 9641,
+      "unit_id": "openalex_w1507181162_v2_u06",
+      "unit_sha256": "18ec6904b1d897f481b088d9454b491faffe4f0af1ca6ad52b59ac542dbb4445",
+      "unit_type": "constant-loss-diagnosis-and-heuristic-optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the common mechanism behind all criterion families in the paper.",
+      "line_end": 69,
+      "line_start": 31,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour orientation and kernels are formula-dependent; the method is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction gives the reusable construction: integrate log zeta times a chosen kernel around an expanding rectangle, show the remote edges vanish, and evaluate the result through poles and zeros using generalized Littlewood theory.",
+      "source_id": "openalex_w2005232657",
+      "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Choosing a rational kernel turns a boundary log-zeta integral into residues and zero corrections",
+      "unit_artifact_relpath": "depth/units/openalex_w2005232657_v2_u01.txt",
+      "unit_bytes": 2419,
+      "unit_id": "openalex_w2005232657_v2_u01",
+      "unit_sha256": "f7ef0bba63a5692f2b5ba20e70245611bd9f9930dfc3ddeb9d40b82293418c02",
+      "unit_type": "generalized-littlewood-kernel-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2005232657_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2005232657",
+        "title": "A few equalities involving integrals of the logarithm of the Riemann zeta-function and equivalent to the Riemann hypothesis II",
+        "authors": [
+          "S. K. Sekatskiǐ",
+          "Stefano Beltraminelli",
+          "Danilo Merlini"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both the two-scale specialization and its one-pole limit.",
+      "line_end": 328,
+      "line_start": 249,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Constants and denominators are formula-sensitive; numerical values should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Special values of zeta turn the abstract criterion into compact critical-line identities, and a Laurent expansion handles the limiting case where a kernel pole meets zeta's pole instead of excluding it.",
+      "source_id": "openalex_w2005232657",
+      "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kernel parameters can expose explicit constants, including a removable collision with zeta's pole",
+      "unit_artifact_relpath": "depth/units/openalex_w2005232657_v2_u02.txt",
+      "unit_bytes": 4950,
+      "unit_id": "openalex_w2005232657_v2_u02",
+      "unit_sha256": "f21d0d87c0b22cb5539096f49b4f7adab3ed46645e08baf14f15890c7ea905de",
+      "unit_type": "criterion-specialization-and-pole-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2005232657_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2005232657",
+        "title": "A few equalities involving integrals of the logarithm of the Riemann zeta-function and equivalent to the Riemann hypothesis II",
+        "authors": [
+          "S. K. Sekatskiǐ",
+          "Stefano Beltraminelli",
+          "Danilo Merlini"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the derivation required to understand the v1 criterion statement that follows.",
+      "line_end": 415,
+      "line_start": 329,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Severe displayed-formula dependency; qualitative residue change is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Changing to a double-pole rational kernel makes the residue at a+b proportional to zeta'/zeta and yields a new same-sign zero correction, producing a second family of zero-free half-strip criteria.",
+      "source_id": "openalex_w2005232657",
+      "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A repeated quadratic factor replaces zeta values by its logarithmic derivative",
+      "unit_artifact_relpath": "depth/units/openalex_w2005232657_v2_u03.txt",
+      "unit_bytes": 5170,
+      "unit_id": "openalex_w2005232657_v2_u03",
+      "unit_sha256": "1ec5717b1f281942fe8ea7b04bd945bd49a4e5520aaf10f78ebb4403500e1238",
+      "unit_type": "double-pole-kernel-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2005232657_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2005232657",
+        "title": "A few equalities involving integrals of the logarithm of the Riemann zeta-function and equivalent to the Riemann hypothesis II",
+        "authors": [
+          "S. K. Sekatskiǐ",
+          "Stefano Beltraminelli",
+          "Danilo Merlini"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Distinguishes two genuinely different proof interfaces rather than merely rederiving a formula.",
+      "line_end": 560,
+      "line_start": 466,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the obstruction is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integration by parts converts the argument integral to an integral of Re(zeta'/zeta), differentiation of an earlier log-modulus identity reproduces the repeated-kernel criterion, and the authors identify why an analogous indirect route for the two-scale kernel lacks a tractable logarithmic weight.",
+      "source_id": "openalex_w2005232657",
+      "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Differentiating a modulus identity recovers the argument criterion but not every two-scale kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w2005232657_v2_u04.txt",
+      "unit_bytes": 5697,
+      "unit_id": "openalex_w2005232657_v2_u04",
+      "unit_sha256": "628bf5aa393a347dbda73119dfbc507c4c762e7c1a07795fca8a89acf61e34b7",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2005232657_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2005232657",
+        "title": "A few equalities involving integrals of the logarithm of the Riemann zeta-function and equivalent to the Riemann hypothesis II",
+        "authors": [
+          "S. K. Sekatskiǐ",
+          "Stefano Beltraminelli",
+          "Danilo Merlini"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The principal-value definition is retained because it is part of the representation change.",
+      "line_end": 662,
+      "line_start": 562,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The semi-contour geometry and exact rational weight are image/formula dependent; verify against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing zeta(z) by zeta(z)(z-1) simplifies the singularity structure; a semi-indented contour then produces a principal-value equality between critical-line and real-axis log-modulus integrals, while off-line zeros again add one-signed corrections.",
+      "source_id": "openalex_w2005232657",
+      "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Multiplying by z-1 cancels zeta's pole and links vertical and real-axis modulus integrals",
+      "unit_artifact_relpath": "depth/units/openalex_w2005232657_v2_u05.txt",
+      "unit_bytes": 5941,
+      "unit_id": "openalex_w2005232657_v2_u05",
+      "unit_sha256": "98a17195eb28caa2243c2f68d6fc1f8a5e71f951e3f9a6bd43cbf36b59c48eba",
+      "unit_type": "pole-cancellation-and-semicontour-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2005232657_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2005232657",
+        "title": "A few equalities involving integrals of the logarithm of the Riemann zeta-function and equivalent to the Riemann hypothesis II",
+        "authors": [
+          "S. K. Sekatskiǐ",
+          "Stefano Beltraminelli",
+          "Danilo Merlini"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Shows that the contour criteria and zero-sum criteria are two representations of the same mechanism.",
+      "line_end": 747,
+      "line_start": 678,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact normalizations in N(x) and the constant term are OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Riemann-von Mangoldt counting formula isolates arg zeta, and Stieltjes integration plus integration by parts converts a chosen weight into a sum over zero ordinates; Volchkov's weight reproduces the repeated-kernel criterion.",
+      "source_id": "openalex_w2005232657",
+      "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Argument integrals are weighted sums over zero ordinates through the counting function",
+      "unit_artifact_relpath": "depth/units/openalex_w2005232657_v2_u06.txt",
+      "unit_bytes": 3697,
+      "unit_id": "openalex_w2005232657_v2_u06",
+      "unit_sha256": "14ca12e3d747754490dcaad4d09e5e3c7298280d5796a22b35a470d4ef5b8224",
+      "unit_type": "zero-counting-stieltjes-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2005232657_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2005232657",
+        "title": "A few equalities involving integrals of the logarithm of the Riemann zeta-function and equivalent to the Riemann hypothesis II",
+        "authors": [
+          "S. K. Sekatskiǐ",
+          "Stefano Beltraminelli",
+          "Danilo Merlini"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes a second explicit transformed criterion and the general weighted-zero-sum observation.",
+      "line_end": 867,
+      "line_start": 749,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Nested integral formulas are extraction-fragile; the equivalence claims are prose-clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integrating the argument through S1(x), applying Littlewood's theorem, and comparing with the earlier modulus criterion shows that the famous argument and modulus formulations are not independent tests but equivalent rewritings; other resolvent weights fit the same template.",
+      "source_id": "openalex_w2005232657",
+      "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Volchkov and Balazard-Saias-Yor criteria are transformed versions of one log-zeta identity",
+      "unit_artifact_relpath": "depth/units/openalex_w2005232657_v2_u07.txt",
+      "unit_bytes": 7535,
+      "unit_id": "openalex_w2005232657_v2_u07",
+      "unit_sha256": "e3cfb6f696cfd1b2820cf234fc89ad7f33263679a4612c62083c815131221397",
+      "unit_type": "criterion-unification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2005232657_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2005232657",
+        "title": "A few equalities involving integrals of the logarithm of the Riemann zeta-function and equivalent to the Riemann hypothesis II",
+        "authors": [
+          "S. K. Sekatskiǐ",
+          "Stefano Beltraminelli",
+          "Danilo Merlini"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The reported residuals are computational evidence conditional on the finite integration and known-zero input.",
+      "line_end": 919,
+      "line_start": 875,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numbers are clean enough to read but should be checked against the source before reuse; the cited finite-zero bound is historical.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors report convergence for three kernels, vary b toward the known zero-free boundary, and compare the semi-contour integrals; the setup explicitly supplies known zeros as singularities and truncates at finite height, so it validates numerical consistency rather than RH.",
+      "source_id": "openalex_w2005232657",
+      "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncated quadrature calibrates the identities only over already known critical-line zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w2005232657_v2_u08.txt",
+      "unit_bytes": 2748,
+      "unit_id": "openalex_w2005232657_v2_u08",
+      "unit_sha256": "62c7216f1fcd2fedebb73c110b9bca58ead1efa0a81c456a291cf44ff2a26bb0",
+      "unit_type": "numerical-calibration-with-limitations",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2005232657_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2005232657",
+        "title": "A few equalities involving integrals of the logarithm of the Riemann zeta-function and equivalent to the Riemann hypothesis II",
+        "authors": [
+          "S. K. Sekatskiǐ",
+          "Stefano Beltraminelli",
+          "Danilo Merlini"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the primitive-L-function setting, normalization, test-function conditions, and the GUE density needed to interpret the theorems.",
+      "line_end": 162,
+      "line_start": 11,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive PDF extraction; definitions are prose-recoverable, but determinant and normalization constants should be checked against the retained scan before transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source moves from unit-mean normalized ordinates and level repulsion to translation-invariant test functions that count clusters, making the GUE determinant a precise observable rather than a spacing metaphor.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        2,
+        3,
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Normalized zero clusters turn local spacing into n-level correlations",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u01.txt",
+      "unit_bytes": 8745,
+      "unit_id": "openalex_w2068184834_v2_u01",
+      "unit_sha256": "3054936afbe2d20bb0bf9f9840dd9be41a2cf7d195f86ce55df73e8274a85392",
+      "unit_type": "statistical-model-and-observable",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also contains the proof roadmap from the explicit formula through unique-factorization pairings to determinant cycles.",
+      "line_end": 296,
+      "line_start": 163,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The support inequality and asymptotic constants are display-dependent but legible enough for semantic use; verify exact notation for quantitative reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorems 1.1-1.2 and the remarks separate the proved support range from the full conjecture, show why products of primitive factors lose level repulsion, and identify Rankin-Selberg second-moment universality rather than coefficient-law universality as the causal input.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        5,
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Restricted-support GUE universality depends on primitivity and a universal second moment",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u02.txt",
+      "unit_bytes": 7781,
+      "unit_id": "openalex_w2068184834_v2_u02",
+      "unit_sha256": "4b80e387e87ecb017b79343b26aae697d5533ec0cae7f72a87e8f74029b5db57",
+      "unit_type": "universality-theorem-and-confounds",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The full proof span is retained because the legitimacy of the contour shifts and the two contragredient terms are part of the mechanism.",
+      "line_end": 536,
+      "line_start": 419,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several contour formulas have damaged integral symbols; the residue structure and term roles are clear from prose, while exact signs and constants require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 2.1 and its proof show how the Euler product, functional equation, and a rapidly decaying entire test function combine to express zero statistics through logarithmic-derivative coefficients while keeping the pole of zeta explicit.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour shifting converts a smoothed zero sum into prime powers and archimedean terms",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u03.txt",
+      "unit_bytes": 6194,
+      "unit_id": "openalex_w2068184834_v2_u03",
+      "unit_sha256": "bed590780e9d5cabe64ae2bf1807730c6f91c28f6ff008d6762bbab52a8a9352",
+      "unit_type": "explicit-formula-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the comparison of two analytic-continuation methods and the stronger error term obtained from global continuation and vertical-strip bounds.",
+      "line_end": 715,
+      "line_start": 538,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Product and logarithmic-derivative displays are OCR-fragile; the pole-to-mean-square transfer is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The local identity for L(s,pi times pi-tilde), its simple pole at one, and a Tauberian argument yield a universal log-squared asymptotic for the weighted coefficient mean square, explaining the analytic source of GUE universality.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Rankin-Selberg pole forces the universal quadratic coefficient mass",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u04.txt",
+      "unit_bytes": 9105,
+      "unit_id": "openalex_w2068184834_v2_u04",
+      "unit_sha256": "afbd765788d53f5aee1fbe87f5a3cfd7a657811b399feaf75502b2554622e18d",
+      "unit_type": "rankin-selberg-second-moment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the second-moment unit because H is exactly what lets the prime term inherit that asymptotic.",
+      "line_end": 799,
+      "line_start": 681,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact parameter exponents are formula-dependent and should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Hypothesis H cleanly separates higher-prime-power convergence from the Rankin-Selberg main term, and Proposition 2.4 proves it for degrees at most three by ordering Satake parameters and feeding the resulting bound back into Rankin-Selberg convergence.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Higher prime powers are isolated as the only technical gap and controlled through degree three",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u05.txt",
+      "unit_bytes": 5503,
+      "unit_id": "openalex_w2068184834_v2_u05",
+      "unit_sha256": "003149a1aa409f7614b51327a48ce690db107e73f46499ea1940f2bd828c3c0c",
+      "unit_type": "hypothesis-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both the smoothed theorem and its RH-conditional unsmoothed form.",
+      "line_end": 887,
+      "line_start": 805,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The distribution CO and its basis-vector formula are display-sensitive but the pairing interpretation is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source deliberately replaces distinct-index correlations by unrestricted sums, Fourier-represents the test function, and states a pairing measure whose disjoint index pairs will later be sieved into the true n-level statistic.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        19,
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unrestricted smoothed correlations expose pairings before distinctness is restored",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u06.txt",
+      "unit_bytes": 4090,
+      "unit_id": "openalex_w2068184834_v2_u06",
+      "unit_sha256": "7a0f5231233958df8523b0c7186cc52c04c67d7463f7e30a120f947532acd0df",
+      "unit_type": "correlation-representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the operational bridge between the one-variable explicit formula and multidimensional correlation analysis.",
+      "line_end": 985,
+      "line_start": 888,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependency; use the source scan for exact scaling and signs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Each Fourier coordinate is split into archimedean, positive-prime, and negative-prime components, so expanding the product reduces the zero statistic to structured sums C_{r,s} with transparent sign choices and coefficient products.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Applying the explicit formula coordinatewise factorizes the correlation into signed prime sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u07.txt",
+      "unit_bytes": 5376,
+      "unit_id": "openalex_w2068184834_v2_u07",
+      "unit_sha256": "368d663f65c193c575a99ab0c2ae0471dd9224313db7c1cc71519a99bfa3f4b8",
+      "unit_type": "zeros-to-primes-factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the truncation comparison, the near/far off-diagonal split, and the dyadic Cauchy-Schwarz estimate.",
+      "line_end": 1402,
+      "line_start": 1053,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Many inequalities are OCR-damaged, but the support-to-integrality argument and error hierarchy are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compact support bounds the product of prime-power variables; localization plus integrality then turns near equality of two integer products into exact equality, while divisor-type L2 estimates show the discarded off-diagonal range is lower order.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier support makes approximate multiplicative balance exact and suppresses the off diagonal",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u08.txt",
+      "unit_bytes": 15477,
+      "unit_id": "openalex_w2068184834_v2_u08",
+      "unit_sha256": "6d3c075628e2e4b1e5b4c03cef9d5be98415e992ae5ffd0f5fe37d3413af18b2",
+      "unit_type": "diagonal-localization-and-off-diagonal-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The long span is needed to retain the sequence from rescaling through prime-factor grouping and summation by parts.",
+      "line_end": 1765,
+      "line_start": 1413,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact powers and integration domains are formula-sensitive; the matching mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After rescaling the diagonal integral, Rankin-Selberg bounds show configurations with unequal positive and negative counts or repeated higher prime powers are lower order; distinct primes must match by a permutation, producing the disjoint-pair formula in Theorem 3.1.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Only balanced prime pairings survive at main-term scale",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u09.txt",
+      "unit_bytes": 17042,
+      "unit_id": "openalex_w2068184834_v2_u09",
+      "unit_sha256": "41fac1bc114c97d547039be4472ecda49bd5456bced025f732ef0e6040d1344b",
+      "unit_type": "pairing-main-term-extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a source-internal diagnosis of why the theorem's technical support bound is not always the conceptual boundary.",
+      "line_end": 1839,
+      "line_start": 1766,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The heuristic off-diagonal estimates are formula-dependent and explicitly conjectural.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors explain that zeta's polar term and Dirichlet-character prime correlations cause saturation at total support two, whereas cusp-form coefficient cancellation should preserve diagonal dominance farther than the proved degree-dependent range.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The natural support boundary changes with poles and coefficient cancellation",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u10.txt",
+      "unit_bytes": 3656,
+      "unit_id": "openalex_w2068184834_v2_u10",
+      "unit_sha256": "3294cf92309392310a129c952a6983efbd576bf30442f89ff12b57d1f30b261e",
+      "unit_type": "support-boundary-and-solver-confound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "RH is used to keep ordinates real during the cutoff and normalization passage.",
+      "line_end": 1950,
+      "line_start": 1840,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The argument is prose-stable; exact O(T) comparisons depend on displayed normalizations.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Positive majorants extend the admissible cutoff class to characteristic functions, and a mean-value comparison shows that height-dependent local normalization and fixed log-T normalization differ only below the main scale.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        35,
+        36
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Approximation and RH transfer the smoothed theorem to sharp height cutoffs and local spacing",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u11.txt",
+      "unit_bytes": 5521,
+      "unit_id": "openalex_w2068184834_v2_u11",
+      "unit_sha256": "c532c82523b6ba22753549275311cbf48ba06bfc033893c67cd5739c08493084",
+      "unit_type": "smoothing-removal-and-renormalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the diagonal embeddings and explicit partition-lattice Möbius coefficient.",
+      "line_end": 2041,
+      "line_start": 1956,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low extraction risk; exact factorial signs remain formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Coincidence patterns among indices form the partition lattice; unrestricted and distinct correlation sums are related by its zeta transform, so Möbius inversion reconstructs the desired n-level statistic from lower-dimensional unrestricted sums.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        37,
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Möbius inversion on set partitions removes repeated zero indices",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u12.txt",
+      "unit_bytes": 4475,
+      "unit_id": "openalex_w2068184834_v2_u12",
+      "unit_sha256": "57019acabc99d74f492c26f36b38e7703b925bcab391c44494b5f15c46e7f31b",
+      "unit_type": "partition-lattice-sieve",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit states the three propositions that isolate the exact combinatorial burden.",
+      "line_end": 2190,
+      "line_start": 2042,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Delta-distribution and subset formulas are densely displayed and should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Fourier pullback under each partition embedding yields delta distributions for collapsed blocks; after Möbius inversion, comparison with the cycle expansion of the GUE determinant reduces the theorem to the identity X_S=(-1)^{|S|-1}Y_S.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        39,
+        40,
+        41,
+        42
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Collapsed correlation pairings and GUE cycles reduce to one subset identity",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u13.txt",
+      "unit_bytes": 7794,
+      "unit_id": "openalex_w2068184834_v2_u13",
+      "unit_sha256": "cbfff3bbd2cdd374e8942f38e285032003049705b3266eb180d86fb5bc55a36e",
+      "unit_type": "distributional-combinatorial-identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the preceding reduction because it proves the GUE side of that comparison.",
+      "line_end": 2352,
+      "line_start": 2156,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Fourier convention and kernel normalizations are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expanding the determinant by permutations, decomposing into disjoint cycles, and applying Parseval turns each cycle into an interval-overlap integral, explaining structurally why determinant combinatorics can match prime pairings.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Permutation cycles factor the Fourier transform of the sine-kernel determinant",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u14.txt",
+      "unit_bytes": 11729,
+      "unit_id": "openalex_w2068184834_v2_u14",
+      "unit_sha256": "2bd8858073d093811f188de31af79069b1c8f7f646a1b8d2def3567f4ca10626",
+      "unit_type": "determinant-cycle-fourier-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both the geometric interpretation and the factorial counting of ordered convex-envelope blocks.",
+      "line_end": 2522,
+      "line_start": 2353,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose-stable, with formula-sensitive factorial weights.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Partial sums are interpreted as a closed real walk; interval intersection gives one minus its range, and Spitzer's unique rotation plus upper-convex-envelope blocks counts maximal deviations by set partitions, proving the final subset identity.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        46,
+        47,
+        48
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A convex-envelope bijection evaluates the cycle overlap by maximal walk deviation",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u15.txt",
+      "unit_bytes": 9151,
+      "unit_id": "openalex_w2068184834_v2_u15",
+      "unit_sha256": "092bbc00012621e1a8aa50465cd849aefd1d189ff3feda4f486860b64e627249",
+      "unit_type": "spitzer-random-walk-identity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Sets up both finite and archimedean analyses that follow.",
+      "line_end": 2565,
+      "line_start": 2528,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Representation-theoretic notation is legible but formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The appendix represents a generic unitary local component as a Langlands quotient, factors its L-function through tempered pieces, and reduces those further to square-integrable data, making local analytic bounds a statement about real Langlands parameters.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        49
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Langlands quotients reduce non-tempered local factors to tempered building blocks",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u16.txt",
+      "unit_bytes": 1825,
+      "unit_id": "openalex_w2068184834_v2_u16",
+      "unit_sha256": "551f87f802320c4d3c8f559c14e1d39c6035c85e88930d15e64052fcc711356c",
+      "unit_type": "local-factor-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Lemma 5.1 because its coefficient lower bound is later needed for the ramified global estimate.",
+      "line_end": 2737,
+      "line_start": 2567,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Severe formula dependency; verify indices and exponents from the original PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Supercuspidal twist classes and segment representations turn the ramified Rankin-Selberg factor into products of conjugate quadratic terms; logarithmic expansion then gives nonnegative Dirichlet coefficients and bounds the local parameters.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        50,
+        51,
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Twist classes expose ramified Rankin-Selberg factors as positive quadratic products",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u17.txt",
+      "unit_bytes": 9602,
+      "unit_id": "openalex_w2068184834_v2_u17",
+      "unit_sha256": "03cdf8b3e6d195c53d6c3293783bc06f45604217fa51b2331b238971540b98b5",
+      "unit_type": "ramified-factor-positivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly contrasts this global proof with a more complicated purely local classification route.",
+      "line_end": 2821,
+      "line_start": 2739,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Gamma-factor conventions and pole locations require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The classification of real square-integrable factors and their Rankin-Selberg products locates the first possible archimedean pole; global holomorphy to the right of one then forces every real parameter inside the half strip.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        53,
+        54
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Global holomorphy bounds archimedean Langlands parameters",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u18.txt",
+      "unit_bytes": 4826,
+      "unit_id": "openalex_w2068184834_v2_u18",
+      "unit_sha256": "2e1d3aaa19947e73a449b22b87c2ee8be849d2a4ac254842d0643e02c9569a72",
+      "unit_type": "archimedean-global-local-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records the analogous spherical archimedean improvement obtained by a different method.",
+      "line_end": 2883,
+      "line_start": 2823,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponents are OCR-fragile and should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Landau's coefficient estimate, applied to the globally continued nonnegative Rankin-Selberg series, bounds powers of unramified parameters and, through the ramified coefficient inequality, yields the same improvement at every finite place.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        55
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nonnegative Rankin-Selberg coefficients turn Landau's theorem into uniform local bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u19.txt",
+      "unit_bytes": 2838,
+      "unit_id": "openalex_w2068184834_v2_u19",
+      "unit_sha256": "b6b246416b02f85e801b597ba711ffca1688286ad1c29af64654e7655839f759",
+      "unit_type": "landau-global-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Introduces both the search objective and the reason Z-evaluation dominates runtime.",
+      "line_end": 103,
+      "line_start": 81,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The OCR degrades notation but the certification direction is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper separates the mathematical certificate from implementation speed: sign changes of real Z(t) locate critical-line zeros, and a zero-counting theorem certifies completeness once sufficiently many have been separated.",
+      "source_id": "openalex_w2116781013",
+      "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite RH verification reduces to enough rigorously signed changes of a real critical-line function",
+      "unit_artifact_relpath": "depth/units/openalex_w2116781013_v2_u01.txt",
+      "unit_bytes": 1822,
+      "unit_id": "openalex_w2116781013_v2_u01",
+      "unit_sha256": "e514b6ec8fabb7c6cab6aac148bf907100ab5d5c0bf1e879cfd84866829b38c4",
+      "unit_type": "finite-rh-certification-architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2116781013",
+        "title": "On the zeros of the Riemann zeta function in the critical strip. II",
+        "authors": [
+          "Richard P. Brent",
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1982,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source verifies cross-program agreement on an overlap to bound concern without claiming exact statistical identity.",
+      "line_end": 209,
+      "line_start": 184,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Counts are legible, though table labels and symbols are OCR-degraded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "When a computed value is too small, argument shifts precede the expensive fallback; this changes the literal sampling points, so statistics cannot be combined naively and some Rosser-rule exceptions may be reclassified or missed.",
+      "source_id": "openalex_w2116781013",
+      "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted Gram points improve robustness but complicate aggregation and exception counts",
+      "unit_artifact_relpath": "depth/units/openalex_w2116781013_v2_u02.txt",
+      "unit_bytes": 2071,
+      "unit_id": "openalex_w2116781013_v2_u02",
+      "unit_sha256": "f44e5a37db17d1184a1d440ecaf737527a37204b21c80252f5a7acd5f6aa2d24",
+      "unit_type": "computational-confound-audit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2116781013",
+        "title": "On the zeros of the Riemann zeta function in the critical strip. II",
+        "authors": [
+          "Richard P. Brent",
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1982,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes comparison with a targeted exception-search method and independent-program counts over a shared range.",
+      "line_end": 397,
+      "line_start": 275,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tables are partially degraded; qualitative comparisons and the cited counts should be scan-checked before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Block-length and type counts validate the strategy for moderate lengths, but show that for longer blocks the missing pair increasingly moves inward; only one length-seven block placed it in an outer interval, exposing a concrete distribution shift in the heuristic.",
+      "source_id": "openalex_w2116781013",
+      "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gram-block statistics reveal where the outer-first search heuristic ceases to be efficient",
+      "unit_artifact_relpath": "depth/units/openalex_w2116781013_v2_u03.txt",
+      "unit_bytes": 7698,
+      "unit_id": "openalex_w2116781013_v2_u03",
+      "unit_sha256": "3e225bd55f2633185890de56e2230d022e655b9874987e93d9f7024cd564d4e7",
+      "unit_type": "empirical-strategy-evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2116781013",
+        "title": "On the zeros of the Riemann zeta function in the critical strip. II",
+        "authors": [
+          "Richard P. Brent",
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1982,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    }
+  ]
+}

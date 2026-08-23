@@ -1,0 +1,859 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2080252578_8e97e0f4_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2080252578",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains the class definition, equivalence H_t in the class iff t is at or above the threshold, order/type information, product factorization, zero ordering, and reciprocal-square convergence.",
+      "line_end": 145,
+      "line_start": 106,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence. The product and class formula are damaged by OCR, but the prose states their roles and convergence conditions; exact factors and inequality signs need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper recasts the real-zero threshold as membership in the Laguerre–Pólya class and represents each H_t by a Hadamard product over square-summable reciprocal zeros. This bridges a global zero-location property to local derivative inequalities and convergent zero interactions.",
+      "source_id": "openalex_w2080252578",
+      "source_normalized_sha256": "fabf574e671488bd7a1a6ef630b6f0e2928bd89a73852342d131d8aebaa88e78",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Laguerre–Pólya membership and zero-product representation",
+      "unit_artifact_relpath": "depth/units/d158_u002.txt",
+      "unit_bytes": 1228,
+      "unit_id": "d158_u002",
+      "unit_sha256": "94e999e45b2a817796340f828e140d6413f09976209782d4a4ddf3453ac92cad",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u002.txt",
+      "source": {
+        "source_id": "openalex_w2080252578",
+        "title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+        "authors": [
+          "George Csordás",
+          "Wayne Smith",
+          "Richard S. Varga"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 98,
+          "line_end": 105,
+          "text": "It is perhaps of interest to mention that, while each of the known lower bounds\nfor A of (1.5) depended on numerical calculations, the underlying mathematical\nanalysis for each lower bound above was different. Similarly, the new lower bounds\nto be derived in this paper depend again on numerical calculations, but the\nunderlying mathematical analysis here (depending now on a differential equation\napproach) is completely different from the techniques used in deriving the result\nof (1.5).\n\n",
+          "sha256": "05dffb5075d9df08b5f2e91c64c765cbc6c41f218e57ad6334c4613b8c518a15"
+        },
+        "after": {
+          "line_start": 146,
+          "line_end": 153,
+          "text": "In 1956 Lehmer [L], from his calculations of zeros of the Riemann ¢-function\nin the critical strip, found two consecutive simple zeros on the critical line which\nwere exceptionally close to one another, and this has been referred to in the\nliterature as “Lehmer’s near counterexample” to the Riemann Hypothesis (see\np. 177 of [E]). In our formulation here, those zeros, found by Lehmer, correspond\nto the following two consecutive simple positive zeros of Ho:\n\nX6700(0) = 14,010.125 732 349 841...,\n",
+          "sha256": "8b818688dcff5ff9f5fe0c6cb61af0cb095d092ba87073740408c04ac515dbf4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 260,
+            "line_start": 26,
+            "mathematical_role": "Defines the heat-deformed entire functions and threshold framework, recalls the Laguerre–Pólya characterization, defines Lehmer pairs, and states the main theorem and conditional consequence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 145,
+          "line_start": 106,
+          "title": "Laguerre–Pólya membership and zero-product representation",
+          "unit_id": "d158_u002",
+          "unit_type": "representation-change",
+          "why_material": "The paper recasts the real-zero threshold as membership in the Laguerre–Pólya class and represents each H_t by a Hadamard product over square-summable reciprocal zeros. This bridges a global zero-location property to local derivative inequalities and convergent zero interactions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contains the class definition, equivalence H_t in the class iff t is at or above the threshold, order/type information, product factorization, zero ordering, and reciprocal-square convergence.",
+          "representation_dependency": "High formula dependence. The product and class formula are damaged by OCR, but the prose states their roles and convergence conditions; exact factors and inequality signs need scan verification.",
+          "unit_id": "d158_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 104,
+            "line_start": 40,
+            "title": "Heat-deformed entire functions and the threshold constant",
+            "unit_id": "d158_u001",
+            "unit_type": "framework",
+            "why_material": "The Fourier-cosine family H_t converts the real-zero question into a monotone parameter threshold: all zeros are real exactly at and above the de Bruijn–Newman constant, while the Riemann Hypothesis is the assertion that the t=0 member lies on the real-zero side. This supplies the parameter geometry used by every later collision argument."
+          },
+          {
+            "line_end": 213,
+            "line_start": 146,
+            "title": "Lehmer pairs require a close gap relative to the entire zero environment",
+            "unit_id": "d158_u003",
+            "unit_type": "definition",
+            "why_material": "The definition improves on a raw close-pair heuristic: a consecutive simple gap is qualified only when its squared size is small relative to a convergent sum measuring interaction with all other zeros. The discussion explicitly explains that arbitrarily small gaps alone do not suffice."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "d158_u002",
+        "spontaneous": {
+          "unit_id": "d158_u002",
+          "spontaneous_reading": "The useful compression is to replace a global statement about every zero by membership in a structured class, while the product representation makes the zeros available as a summable interaction system."
+        },
+        "directed": {
+          "unit_id": "d158_u002",
+          "source_grounded_mathematics": "The source characterizes the real-zero regime of H_t by Laguerre–Pólya membership and gives an even Hadamard product over its zeros, together with convergence of their reciprocal squares.",
+          "conceptual_reading": "Class membership packages a qualitative zero constraint into analytic structure; factorization then exposes individual zeros without discarding the global entire function that controls them.",
+          "representation_or_bridge": "Laguerre–Pólya membership bridges real-zero geometry to derivative inequalities, while the Hadamard product bridges H_t to convergent sums over zeros used later in the motion equations.",
+          "boundary_or_failure": "The representation is useful only with its convergence and entire-function hypotheses; it does not by itself identify the threshold or certify a close pair.",
+          "uncertainty": "The roles of the class and product are prose-supported, but OCR damage obscures exact factors, ordering notation, and inequality signs."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "d158_u002",
+        "critic_decision": "revise",
+        "supported": [
+          "The span characterizes the real-zero regime by Laguerre-Pólya membership and gives an even Hadamard product with reciprocal-square convergence.",
+          "Packaging the zero constraint as class membership and then passing to a product over zeros is a genuine representation change."
+        ],
+        "inference": [
+          "The product makes individual zeros available while retaining a global entire-function representation."
+        ],
+        "unsupported_or_imported": [
+          "The claimed bridge from Laguerre-Pólya membership to derivative inequalities is not present in this span.",
+          "Saying the convergent sums are used later in motion equations imports a later-stage role rather than describing evidence in the frozen unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase about exposing zeros without discarding the controlling function is broad unless tied to the displayed factorization and convergence condition."
+        ],
+        "context_or_ocr_risk": [
+          "OCR obscures the class formula, exact product factors, ordering, and inequality signs."
+        ],
+        "missed_mechanism": [
+          "The span grounds the product in even entire-function order/type information and positivity at the origin; that is the available bridge mechanism here."
+        ],
+        "revision_instructions": [
+          "Remove derivative-inequality and later-motion claims. Recast the bridge solely as real-zero class membership plus the Hadamard product and reciprocal-square convergence, retaining the scan-verification caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Theorem 1, its explicit bound parameter, Corollary 1, the 'barely true' interpretation, and the announced numerical applications.",
+      "line_end": 259,
+      "line_start": 215,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence. The OCR obscures the exact expression for the bound parameter and some inequality glyphs; preserve the conceptual implication but verify any exact formula or sign from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The main statement maps a local pair statistic to a source-defined negative lower bound for the de Bruijn–Newman constant, handles the case of a negative environmental sum by forcing nonreal zeros at t=0, and shows that infinitely many increasingly close Lehmer pairs would force the threshold to be nonnegative.",
+      "source_id": "openalex_w2080252578",
+      "source_normalized_sha256": "fabf574e671488bd7a1a6ef630b6f0e2928bd89a73852342d131d8aebaa88e78",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Lehmer pair yields an explicit lower bound and an infinite cascade forces nonnegative threshold",
+      "unit_artifact_relpath": "depth/units/d158_u004.txt",
+      "unit_bytes": 1773,
+      "unit_id": "d158_u004",
+      "unit_sha256": "76e7040ccba8b7d27f41ede087ddbb64395a43443678b9822113d45fb2683176",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u004.txt",
+      "source": {
+        "source_id": "openalex_w2080252578",
+        "title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+        "authors": [
+          "George Csordás",
+          "Wayne Smith",
+          "Richard S. Varga"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 207,
+          "line_end": 214,
+          "text": "\nFrom density considerations, it is known (see p. 214 of [T]) that consecutive\npairs {x,,(0); x;,+1(0)} of real zeros of Hy can be found for which lim;.,,, A,, = 0.\nie., “extremely close pairs” of consecutive zeros of Hy certainly do exist. We\nremark, however, that the inequality in (1.11) is not solely dependent on A,, so\nthat a Lehmer pair of zeros of Ho, from Definition 1, requires more than just close\npairs of zeros.\n\n",
+          "sha256": "4115dba18f42d970ec7a83f6df8661859452eaff34e60f367163cc5a39197416"
+        },
+        "after": {
+          "line_start": 260,
+          "line_end": 267,
+          "text": "\n2. The Movement of the Zeros of H,, as a Function of t, and the\nde Bruijn—Newman Constant A\n\nIn this section, in preparation to proving Theorem 1 in the next section, we\ninvestigate both the movement of the zeros of H,, as a function of t, and how this\nmovement is related to the de Bruijn~Newman constant A. To this end, we begin\nwith Lemma 2.1, which shows that the movement of a simple real zero of H, is\n",
+          "sha256": "d35d70715e7c560bbd27c0661e68038fa5b5aa899e67b3f158073ac334d91bc0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 260,
+            "line_start": 26,
+            "mathematical_role": "Defines the heat-deformed entire functions and threshold framework, recalls the Laguerre–Pólya characterization, defines Lehmer pairs, and states the main theorem and conditional consequence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 259,
+          "line_start": 215,
+          "title": "A Lehmer pair yields an explicit lower bound and an infinite cascade forces nonnegative threshold",
+          "unit_id": "d158_u004",
+          "unit_type": "theorem",
+          "why_material": "The main statement maps a local pair statistic to a source-defined negative lower bound for the de Bruijn–Newman constant, handles the case of a negative environmental sum by forcing nonreal zeros at t=0, and shows that infinitely many increasingly close Lehmer pairs would force the threshold to be nonnegative."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Theorem 1, its explicit bound parameter, Corollary 1, the 'barely true' interpretation, and the announced numerical applications.",
+          "representation_dependency": "High formula dependence. The OCR obscures the exact expression for the bound parameter and some inequality glyphs; preserve the conceptual implication but verify any exact formula or sign from the scan.",
+          "unit_id": "d158_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 213,
+            "line_start": 146,
+            "title": "Lehmer pairs require a close gap relative to the entire zero environment",
+            "unit_id": "d158_u003",
+            "unit_type": "definition",
+            "why_material": "The definition improves on a raw close-pair heuristic: a consecutive simple gap is qualified only when its squared size is small relative to a convergent sum measuring interaction with all other zeros. The discussion explicitly explains that arbitrarily small gaps alone do not suffice."
+          },
+          {
+            "line_end": 316,
+            "line_start": 261,
+            "title": "Local zero velocity predicts pair collision under backward heat flow",
+            "unit_id": "d158_u005",
+            "unit_type": "mechanism",
+            "why_material": "Implicit differentiation gives a local velocity for a simple real zero in terms of derivatives of H_t. For two close zeros separated from their neighbors, derivative signs make them approach as t decreases, motivating collision time as a lower-bound witness."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Each Lehmer pair supplies a negative lower bound, and an infinite sequence of certified gaps shrinking to zero would make those bounds approach zero, forcing the threshold to be nonnegative while remaining compatible with the Riemann Hypothesis at equality.",
+            "limit": "The source does not prove the existence of infinitely many Lehmer pairs; its conclusion is explicitly predictive.",
+            "parent_local_unit_ids": [
+              "d158_u004",
+              "d158_u011",
+              "d158_u018"
+            ],
+            "title": "Local certificates can accumulate toward a global nonnegativity statement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "d158_u004",
+        "spontaneous": {
+          "unit_id": "d158_u004",
+          "spontaneous_reading": "One certified pair becomes a quantitative obstruction to pushing the all-real regime too far backward, and a sequence of ever tighter certificates would accumulate at the critical time zero."
+        },
+        "directed": {
+          "unit_id": "d158_u004",
+          "source_grounded_mathematics": "Theorem 1 states that a Lehmer pair with negative g_k(0) forces Λ>0, while a pair with positive g_k(0) yields an explicit negative pair-derived lower bound Λ_k≤Λ. Corollary 1 says infinitely many such pairs with gaps tending to zero force 0≤Λ.",
+          "conceptual_reading": "A local configuration supplies a global threshold bound because it predicts where real zeros cannot remain separated under backward heat flow. Repetition at smaller scales turns local bounds into a limiting global statement.",
+          "representation_or_bridge": "The source-defined parameter Λ_k compresses the pair's gap and environment into a number comparable directly with the deformation threshold.",
+          "boundary_or_failure": "The infinite-pair conclusion is conditional and does not disprove the Riemann Hypothesis; equality at zero remains compatible with it.",
+          "uncertainty": "The implication structure is explicit, but OCR obscures the exact formula for Λ_k and several signs, so formula-exact reuse requires scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "d158_u004",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the two cases of Theorem 1, the explicit pair-derived negative lower bound when g_k(0)>0, and the conditional nonnegative-threshold conclusion for infinitely many shrinking Lehmer gaps.",
+          "It explicitly preserves compatibility with the Riemann Hypothesis at equality and does not assert the infinite family exists."
+        ],
+        "inference": [
+          "Compressing gap and environment into a scalar comparable with the threshold is supported by the stated parameter definition."
+        ],
+        "unsupported_or_imported": [
+          "The explanation that the local configuration predicts loss of separation under backward heat flow imports the proof mechanism from later sections; this span only states and interprets the theorem and corollary."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The exact formula for the pair parameter and several inequality signs are OCR-damaged."
+        ],
+        "missed_mechanism": [
+          "Within this unit the defensible mechanism is the theorem's explicit scalar map and limiting corollary, not the later collision proof."
+        ],
+        "revision_instructions": [
+          "Replace the backward-heat-flow proof explanation with a span-local account: Theorem 1 maps a certified pair statistic to a threshold lower bound, and the corollary takes a conditional sequence limit. Keep the exact formula caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This proves Corollary 1 and turns repeated local near-collisions into a global limiting statement.",
+      "line_end": 791,
+      "line_start": 770,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence. The scalar monotonicity formula is damaged, though the equivalence of the two limits and conclusion are stated; exact normalization needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The pair-derived lower bound is rewritten using the dimensionless product of squared gap and environmental term. Monotonicity shows the bound tends to zero exactly when the certified gaps do, so a sequence of lower bounds approaching zero forces the threshold to be nonnegative.",
+      "source_id": "openalex_w2080252578",
+      "source_normalized_sha256": "fabf574e671488bd7a1a6ef630b6f0e2928bd89a73852342d131d8aebaa88e78",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Infinitely many shrinking Lehmer gaps force a nonnegative threshold",
+      "unit_artifact_relpath": "depth/units/d158_u011.txt",
+      "unit_bytes": 696,
+      "unit_id": "d158_u011",
+      "unit_sha256": "32359211c445d4bb3555399497134d43bbe696a331393357c638ca59536384c3",
+      "unit_type": "limit-argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u011.txt",
+      "source": {
+        "source_id": "openalex_w2080252578",
+        "title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+        "authors": [
+          "George Csordás",
+          "Wayne Smith",
+          "Richard S. Varga"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 762,
+          "line_end": 769,
+          "text": "sarily conclude from (3.7) that\n\nVan) = (Xe (Ax) — X4(A))? <0,\n\nwhich is a contradiction (see the line after (3.1)). However, this is a contradiction\nto the hypothesis that A < A,, for A < 2, guarantees that all zeros of H,, are real\nand simple, so that yZ(A,) = (x44 1(A,) — xy(4,))? > 0. Thus, A, < A. a\n\n",
+          "sha256": "2a8a9b1a81a9bec9ee61ae8821f0e87f440d9168ac6382dcf9e8b96d2697777c"
+        },
+        "after": {
+          "line_start": 792,
+          "line_end": 799,
+          "text": "\n4, Existence of Lehmer Pairs of Zeros of Hy, and a\nNumerical Lower Bound for A\n\nWe now use the theoretical results of the previous sections to show that Lehmer\npairs of zeros of Hy do indeed exist. We begin with\n\n<!-- source-page: 15 -->\n",
+          "sha256": "5ca6e1a77844a674caa50abcce21af9ee6a265d3b1be27937dfb92f657d54788"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proofs of Theorem 1 and Corollary 1",
+            "line_end": 792,
+            "line_start": 682,
+            "mathematical_role": "Integrates the squared-gap differential equation to force a contradiction and derives the limiting consequence of infinitely many qualifying pairs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 791,
+          "line_start": 770,
+          "title": "Infinitely many shrinking Lehmer gaps force a nonnegative threshold",
+          "unit_id": "d158_u011",
+          "unit_type": "limit-argument",
+          "why_material": "The pair-derived lower bound is rewritten using the dimensionless product of squared gap and environmental term. Monotonicity shows the bound tends to zero exactly when the certified gaps do, so a sequence of lower bounds approaching zero forces the threshold to be nonnegative."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This proves Corollary 1 and turns repeated local near-collisions into a global limiting statement.",
+          "representation_dependency": "High formula dependence. The scalar monotonicity formula is damaged, though the equivalence of the two limits and conclusion are stated; exact normalization needs scan verification.",
+          "unit_id": "d158_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 768,
+            "line_start": 685,
+            "title": "Integrating the squared-gap equation forces the threshold lower bound",
+            "unit_id": "d158_u010",
+            "unit_type": "proof",
+            "why_material": "Assuming the threshold lies below the pair-derived bound keeps both zeros real and simple throughout an interval. An integrating factor and the environmental estimate then force the squared gap to become negative at the proposed endpoint, contradicting simplicity and proving the lower bound."
+          },
+          {
+            "line_end": 848,
+            "line_start": 803,
+            "title": "A moment ratio fixes the total reciprocal-square zero mass",
+            "unit_id": "d158_u012",
+            "unit_type": "computational-bridge",
+            "why_material": "Comparing the Hadamard product with the Taylor expansion expresses the total reciprocal-square sum over zeros through low-order moments of the Fourier kernel, allowing a rigorously controlled global constant to enter later tail estimates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Each Lehmer pair supplies a negative lower bound, and an infinite sequence of certified gaps shrinking to zero would make those bounds approach zero, forcing the threshold to be nonnegative while remaining compatible with the Riemann Hypothesis at equality.",
+            "limit": "The source does not prove the existence of infinitely many Lehmer pairs; its conclusion is explicitly predictive.",
+            "parent_local_unit_ids": [
+              "d158_u004",
+              "d158_u011",
+              "d158_u018"
+            ],
+            "title": "Local certificates can accumulate toward a global nonnegativity statement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 802,
+              "line_start": 793,
+              "reason": "Section heading and transition to numerical certification."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "d158_u011",
+        "spontaneous": {
+          "unit_id": "d158_u011",
+          "spontaneous_reading": "A dimensionless gap-environment product separates scale from shape, making it possible to compare the vanishing of local gaps with the vanishing of their threshold bounds."
+        },
+        "directed": {
+          "unit_id": "d158_u011",
+          "source_grounded_mathematics": "For an infinite sequence of Lehmer pairs, the source rewrites each pair-derived lower bound using a normalized product of squared gap and g_k(0). Monotonicity of the resulting scalar function shows that the lower bounds tend to zero exactly when the certified gaps do. Since every pair bound lies below Λ, gaps tending to zero imply 0≤Λ.",
+          "conceptual_reading": "Repeated local obstructions can converge to a sharp global boundary even though no single pair reaches it.",
+          "representation_or_bridge": "The normalized scalar parameter bridges two limits: shrinking certified gaps and pair-derived lower bounds approaching zero.",
+          "boundary_or_failure": "The source does not prove that infinitely many Lehmer pairs exist; arbitrarily small raw gaps are insufficient without the environmental certificate.",
+          "uncertainty": "The limit implication is stated clearly, but the scalar formula and its exact normalization are OCR-damaged."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "d158_u011",
+        "critic_decision": "revise",
+        "supported": [
+          "The span normalizes the squared-gap/environment product, uses monotonicity of a scalar function, and proves that pair-derived bounds tend to zero exactly when the certified gaps do.",
+          "Together with each lower bound lying below the threshold, the stated one-sided conclusion is 0≤Λ under the infinite-family hypotheses."
+        ],
+        "inference": [
+          "The normalization legitimately bridges the limit of certified gaps to the limit of pair bounds."
+        ],
+        "unsupported_or_imported": [
+          "The phrase 'converge to a sharp global boundary' can imply that Λ=0 or that the true boundary is identified, whereas the span proves only the lower constraint 0≤Λ."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Repeated local obstructions' is acceptable shorthand only if the one-sided and conditional nature of the limit is kept explicit."
+        ],
+        "context_or_ocr_risk": [
+          "The scalar formula and normalization are OCR-damaged, although the monotonicity and limit equivalence are stated in prose."
+        ],
+        "missed_mechanism": [
+          "The candidate should foreground that every pair bound is a lower bound and hence their approach to zero establishes nonnegativity, not equality."
+        ],
+        "revision_instructions": [
+          "Replace 'sharp global boundary' with 'lower bounds accumulating at zero force the one-sided conclusion 0≤Λ.' Preserve the Lehmer-pair, positivity, and shrinking-gap hypotheses and the exact-normalization caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Lemma 4.1, the product/Taylor comparison, positivity of moments, cited numerical accuracy, and the evaluated constant.",
+      "line_end": 848,
+      "line_start": 803,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence and externally computed numeric input. The identity and moment values are OCR-sensitive and must be checked against the scan and cited table before exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Comparing the Hadamard product with the Taylor expansion expresses the total reciprocal-square sum over zeros through low-order moments of the Fourier kernel, allowing a rigorously controlled global constant to enter later tail estimates.",
+      "source_id": "openalex_w2080252578",
+      "source_normalized_sha256": "fabf574e671488bd7a1a6ef630b6f0e2928bd89a73852342d131d8aebaa88e78",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A moment ratio fixes the total reciprocal-square zero mass",
+      "unit_artifact_relpath": "depth/units/d158_u012.txt",
+      "unit_bytes": 1034,
+      "unit_id": "d158_u012",
+      "unit_sha256": "bd1b512a1a951edf1fde317ce4cf3dc31a23bb7f25ed2791c44fa69833e65647",
+      "unit_type": "computational-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u012.txt",
+      "source": {
+        "source_id": "openalex_w2080252578",
+        "title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+        "authors": [
+          "George Csordás",
+          "Wayne Smith",
+          "Richard S. Varga"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 795,
+          "line_end": 802,
+          "text": "\nWe now use the theoretical results of the previous sections to show that Lehmer\npairs of zeros of Hy do indeed exist. We begin with\n\n<!-- source-page: 15 -->\n\nLehmer Pairs of Zeros, the de Bruijn~Newman Constant A, and the Riemann Hypothesis 121\n\n",
+          "sha256": "2547493d4757b310b61558a07423c42ff806bedce0669147f09784419b7e3118"
+        },
+        "after": {
+          "line_start": 849,
+          "line_end": 856,
+          "text": "\nRecalling our discussion in Section 1 of g,(0) in (1.12), we continue with\n\nLemma 4.2. For positive integers k and N with N > k +1, set\n\n45) o= F 1 i =|\nGs Od LO —GOP Had — ort\n\n",
+          "sha256": "e549bb724f1e9e7da8d5478647c0e541bf378488e987bdd7023b1d769de1ef21"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Existence of Lehmer pairs and a numerical lower bound",
+            "line_end": 1089,
+            "line_start": 793,
+            "mathematical_role": "Builds moment and tail estimates, certifies Lehmer's historic close pair, computes its threshold bound, and analyzes numerical sensitivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 848,
+          "line_start": 803,
+          "title": "A moment ratio fixes the total reciprocal-square zero mass",
+          "unit_id": "d158_u012",
+          "unit_type": "computational-bridge",
+          "why_material": "Comparing the Hadamard product with the Taylor expansion expresses the total reciprocal-square sum over zeros through low-order moments of the Fourier kernel, allowing a rigorously controlled global constant to enter later tail estimates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Lemma 4.1, the product/Taylor comparison, positivity of moments, cited numerical accuracy, and the evaluated constant.",
+          "representation_dependency": "Very high formula dependence and externally computed numeric input. The identity and moment values are OCR-sensitive and must be checked against the scan and cited table before exact reuse.",
+          "unit_id": "d158_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 791,
+            "line_start": 770,
+            "title": "Infinitely many shrinking Lehmer gaps force a nonnegative threshold",
+            "unit_id": "d158_u011",
+            "unit_type": "limit-argument",
+            "why_material": "The pair-derived lower bound is rewritten using the dimensionless product of squared gap and environmental term. Monotonicity shows the bound tends to zero exactly when the certified gaps do, so a sequence of lower bounds approaching zero forces the threshold to be nonnegative."
+          },
+          {
+            "line_end": 934,
+            "line_start": 850,
+            "title": "Finite zero sums can be completed by an explicit tail bound",
+            "unit_id": "d158_u013",
+            "unit_type": "certification-method",
+            "why_material": "The full environmental interaction g_k(0) is decomposed into a finite partial sum and a remainder. Evenness, zero ordering, reciprocal-square mass, and a bound on possible imaginary parts control the omitted tail and prove convergence, creating a reusable numerical certification pattern."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A moment-derived total reciprocal-square mass converts incomplete zero tables into rigorous certificates: compute a finite interaction sum, bound omitted regions analytically, then test the strict Lehmer inequality.",
+            "limit": "Both examples rely on external zero tables and OCR-damaged numerical exponents; provenance and scan-level reconstruction are necessary before reproduction.",
+            "parent_local_unit_ids": [
+              "d158_u012",
+              "d158_u013",
+              "d158_u014",
+              "d158_u017"
+            ],
+            "title": "Global analytic identities make finite zero computations certifiable"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 802,
+              "line_start": 793,
+              "reason": "Section heading and transition to numerical certification."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "d158_u012",
+        "spontaneous": {
+          "unit_id": "d158_u012",
+          "spontaneous_reading": "Low-order information at the origin determines a global reciprocal-square mass of the zeros, providing the conserved budget needed to control unseen tails."
+        },
+        "directed": {
+          "unit_id": "d158_u012",
+          "source_grounded_mathematics": "By comparing the Hadamard product of H_0 with its even Taylor expansion, the source expresses the total reciprocal-square sum over zeros as a ratio of low-order moments of the Fourier kernel. Previously computed moment values then evaluate this global constant to high stated precision.",
+          "conceptual_reading": "A local coefficient identity compresses infinitely many zeros into one global quantity that can complete finite computations rigorously.",
+          "representation_or_bridge": "Coefficient comparison bridges Fourier-kernel moments, derivatives of H_0 at the origin, and the total reciprocal-square zero mass.",
+          "boundary_or_failure": "The identity supplies aggregate tail mass, not the location of individual omitted zeros, and its numerical value depends on cited external moment computations.",
+          "uncertainty": "The conceptual identity is clear, but formulas, numerical exponents, and the cited precision are OCR-sensitive and need source-table and scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "d158_u012",
+        "critic_decision": "revise",
+        "supported": [
+          "Comparing the Hadamard product with the even Taylor series expresses the total reciprocal-square zero sum through a ratio of low-order Fourier-kernel moments.",
+          "The span cites computed moment values and a stated precision for the resulting constant."
+        ],
+        "inference": [
+          "Calling coefficient comparison a compression from infinitely many zeros to one aggregate quantity is a supported conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "Calling the quantity a 'conserved budget' is unsupported: the span evaluates a fixed t=0 sum and establishes no conservation law in t.",
+          "Saying the quantity is needed to control unseen tails or completes finite computations imports its use from the following unit rather than this frozen span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The identity, exponents, numerical values, and precision statement are OCR-sensitive and rely on an external cited table."
+        ],
+        "missed_mechanism": [
+          "The span-local mechanism is coefficient matching among the product, derivatives at the origin, and kernel moments."
+        ],
+        "revision_instructions": [
+          "Remove 'conserved budget' and future tail-certification claims. Describe only the aggregate t=0 reciprocal-square identity obtained by coefficient comparison and its dependence on cited moment computations."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains Theorem 3, the rounded and more precise forms of the result, leading-term comparison, and the concluding connection to Lehmer's prediction.",
+      "line_end": 1231,
+      "line_start": 1203,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High numerical and formula dependence. OCR loses minus signs and decimal exponents in places; exact bound values and normalization require scan verification, while the qualitative conclusion is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying the general theorem to the high-index certificate yields the paper's sharper numerical lower bound. The comparison with the leading squared-gap term again shows robustness, and the conclusion proposes that increasingly close certified pairs could continue improving bounds and realize the infinite-pair scenario.",
+      "source_id": "openalex_w2080252578",
+      "source_normalized_sha256": "fabf574e671488bd7a1a6ef630b6f0e2928bd89a73852342d131d8aebaa88e78",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A much smaller certified gap sharpens the lower bound and motivates an infinite-pair route",
+      "unit_artifact_relpath": "depth/units/d158_u018.txt",
+      "unit_bytes": 1169,
+      "unit_id": "d158_u018",
+      "unit_sha256": "2301321f87d48468ab6bcb4468744b83bd717d89863ea52846489948b5a81cd9",
+      "unit_type": "theorem-and-outlook",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/d158_u018.txt",
+      "source": {
+        "source_id": "openalex_w2080252578",
+        "title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+        "authors": [
+          "George Csordás",
+          "Wayne Smith",
+          "Richard S. Varga"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1195,
+          "line_end": 1202,
+          "text": "(5.9) gx(0) < 8.568 635...\n\nHowever, as (see (5.1)) Ax = 0.005 918..., then, with (5.9),\n\n(5.10) Az gx(0) < 3.000 969...-107* < 4,\n\nproving that the pair of zeros of (5.1) is a Lehmer pair of zeros of Ho. a\n\n",
+          "sha256": "48fde1d1ae4f6949ff18e15c309ec09fa3aea0dfa1eb0703559824dbf011744a"
+        },
+        "after": {
+          "line_start": 1232,
+          "line_end": 1239,
+          "text": "\nAcknowledgments. We heartily thank Dr. A. M. Odlyzko for his kindness in\n\nproviding computed values of {},,}?.10°, from which the lower bound of (5.11) was\n\nderived. Support by the National Science Foundation for this research is also\ngratefully acknowledged.\n\n",
+          "sha256": "3fbbc929193020dd4923827a6db2e579986e6b3f54f7d0addadda2d13eb607b4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_76ad94fb6990374ba3d21775c9efa3bfe4d6c9fb13fd0de189a01e61ba39c155",
+        "dossier_sha256": "f258ada8d44dca025283c1f32e2cd58283c24fa63fef7320e08b54878473bc49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Other Lehmer pairs",
+            "line_end": 1232,
+            "line_start": 1090,
+            "mathematical_role": "Uses record-small gaps to choose a higher pair, certifies it by local summation plus two tail bounds, and obtains the sharper lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1231,
+          "line_start": 1203,
+          "title": "A much smaller certified gap sharpens the lower bound and motivates an infinite-pair route",
+          "unit_id": "d158_u018",
+          "unit_type": "theorem-and-outlook",
+          "why_material": "Applying the general theorem to the high-index certificate yields the paper's sharper numerical lower bound. The comparison with the leading squared-gap term again shows robustness, and the conclusion proposes that increasingly close certified pairs could continue improving bounds and realize the infinite-pair scenario."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contains Theorem 3, the rounded and more precise forms of the result, leading-term comparison, and the concluding connection to Lehmer's prediction.",
+          "representation_dependency": "High numerical and formula dependence. OCR loses minus signs and decimal exponents in places; exact bound values and normalization require scan verification, while the qualitative conclusion is clear.",
+          "unit_id": "d158_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1201,
+            "line_start": 1117,
+            "title": "A high-index pair is certified by a local window plus two tail controls",
+            "unit_id": "d158_u017",
+            "unit_type": "computational-certification",
+            "why_material": "The environmental sum for the selected high pair is partitioned into 5,000 nearby zeros on each side, a finite remote block, and the far tail. Crude but explicit bounds on both omitted regions suffice to establish the strict Lehmer inequality."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Each Lehmer pair supplies a negative lower bound, and an infinite sequence of certified gaps shrinking to zero would make those bounds approach zero, forcing the threshold to be nonnegative while remaining compatible with the Riemann Hypothesis at equality.",
+            "limit": "The source does not prove the existence of infinitely many Lehmer pairs; its conclusion is explicitly predictive.",
+            "parent_local_unit_ids": [
+              "d158_u004",
+              "d158_u011",
+              "d158_u018"
+            ],
+            "title": "Local certificates can accumulate toward a global nonnegativity statement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "d158_u018",
+        "spontaneous": {
+          "unit_id": "d158_u018",
+          "spontaneous_reading": "The sharper certified gap improves the threshold bound almost exactly at the squared-gap scale, and the paper turns this success into a conditional program of searching for an infinite cascade of such pairs."
+        },
+        "directed": {
+          "unit_id": "d158_u018",
+          "source_grounded_mathematics": "Applying Theorem 1 to the high-index Lehmer certificate yields the paper's sharper negative lower bound for Λ. The more precise value is compared with −Δ_k²/8 and found very close, again showing weak sensitivity to the environmental estimate. The conclusion invokes Lehmer's prediction of infinitely many exceptionally close pairs as motivation for further bounds.",
+          "conceptual_reading": "The theorem converts better local resolution into a global bound, while the limiting vision is that a sequence of certified near-collisions could drive those bounds to zero.",
+          "representation_or_bridge": "The certified pair feeds the source-defined Λ_k map; comparison with the leading squared-gap term connects the numerical theorem back to the search heuristic and the infinite-pair scenario.",
+          "boundary_or_failure": "The source neither proves infinitely many Lehmer pairs nor resolves the Riemann Hypothesis; future improvement remains conditional on new zero computations and successful environmental certification.",
+          "uncertainty": "The qualitative result is clear, but missing minus signs and damaged decimal exponents make the exact numerical bound unsafe without scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "d158_u018",
+        "critic_decision": "revise",
+        "supported": [
+          "The span applies Theorem 1 to the high-index certificate, states a sharper negative lower bound, compares its more precise value with the leading −Δ_k²/8 term, and notes weak sensitivity to the environmental estimate.",
+          "The conclusion presents Lehmer's prediction as motivation for infinitely many candidate Lehmer pairs and further improved lower bounds, while not proving their existence."
+        ],
+        "inference": [
+          "Connecting the certified pair to the source-defined pair-bound map and to a continuing search program is supported."
+        ],
+        "unsupported_or_imported": [
+          "The claim that a sequence of certified near-collisions could drive the bounds to zero imports the Corollary 1 limit mechanism and its hypotheses; this span itself promises only probable further improvement and does not state convergence to zero."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Minus signs, decimal exponents, and exact numerical normalization are OCR-damaged."
+        ],
+        "missed_mechanism": [
+          "The unit's own outlook is incremental improvement from extended zero calculations; a zero-limit requires separately citing the shrinking-gap and environmental hypotheses of the earlier corollary."
+        ],
+        "revision_instructions": [
+          "Replace the zero-limit sentence with the span-local claim that further computed and certified close pairs could yield improved lower bounds. If the zero-limit is retained, label it explicitly as an inference requiring Corollary 1's additional infinite-family hypotheses."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "d201f68365a13c2b69ad38e35d2f813db465b83f4a7c51abd8fd79fb926b38e9"
+}

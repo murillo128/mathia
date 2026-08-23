@@ -1,0 +1,297 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1971669581",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1971669581_ab81a06d_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "One may enlarge a difficult squarefree family to a completed multivariable family with usable symmetries, perform analytic work there, and then return through congruence decomposition and Möbius sieving.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w1971669581_u07",
+          "full_openalex_w1971669581_u10",
+          "full_openalex_w1971669581_u11"
+        ],
+        "proposed_limit": "The construction is tailored to quadratic characters and its correction polynomials; no general transfer principle is established.",
+        "source_id": "openalex_w1971669581",
+        "synthesis_id": "riemann_v2_within_762bea87dfb39532482521b4",
+        "title": "Auxiliary completion followed by arithmetic projection"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Contains the defining reciprocity identity, the completed series, and the initial pole classification; exact polynomial formulas are extraction-sensitive but the construction is clear.",
+          "line_end": 318,
+          "line_start": 273,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on a two-variable multiple Dirichlet series completed by finite Dirichlet polynomials at nonsquarefree and bad-prime data.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The polynomials P and Q complete the coefficients so that summing first in d or n yields the same object; the resulting Z_M admits global meromorphic continuation and exposes its candidate polar lines.",
+          "source_id": "openalex_w1971669581",
+          "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Choose correction polynomials so two summation orders satisfy reciprocal identities",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u07.txt",
+          "unit_bytes": 2768,
+          "unit_id": "full_openalex_w1971669581_u07",
+          "unit_sha256": "d664f5de913f1cb9f7241d7c262c299e2644919b2d77b3073cef02287522ca5e",
+          "unit_type": "completed-family construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Completion enlarges the coefficient data just enough to make two summation perspectives compatible. The gain is a symmetric analytic object whose polar lines can be transported; the arithmetic cost is retained explicitly in finite correction polynomials.",
+            "nonparaphrase_operation": "The reciprocity identity bridges the d-indexed cubic L-function expansion and the n-indexed quadratic-character expansion. Z_M is the common carrier on which the two functional equations can act.",
+            "quality_reason": "The span states existence and uniqueness of P and Q with normalization and reciprocal identities, equates the d- and n-sum expansions, and defines Z_M. It states global meromorphic continuation, the possible poles of Z_M(1/2,w), the conditional simple w=1 residue, the polar line producing the possible w=3/4 pole, and the origins of the two functional equations. Low: the candidate identifies the concrete reciprocal identities and common carrier rather than merely saying that a representation exposes structure.",
+            "source_support": "The source states the existence and uniqueness of correction polynomials P and Q with normalization and reciprocal identities, equates the d- and n-sum expansions, and defines Z_M(s,w;a,b). It cites global meromorphic continuation, lists possible poles of Z_M(1/2,w) at 0, 1, and 3/4, and gives the conditional simple w=1 residue R_M(s)/zeta_M(2s)^3 when b=1.",
+            "speculation_status": "The construction and continuation are cited from earlier work and their proofs are omitted. The listed locations are only possible poles, so in particular the candidate at w=3/4 still requires a residue and nonvanishing argument. The completion mechanism, pole classification, and w=1 residue are clear, but the exact polynomial identities and decorations are extraction-sensitive. Viewing the correction polynomials as a completion that makes the two summation perspectives compatible accurately compresses equations (3.1)-(3.4). Exact polynomial decorations and fractions are extraction-sensitive, which the candidate explicitly limits."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof identifies the mechanism as a case split by sign and residue class modulo 8.",
+          "line_end": 676,
+          "line_start": 647,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on the local Euler factor at 2 and the classification of fundamental discriminants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proposition 5 expresses Z as a fixed linear combination of auxiliary sign/parity series, making explicit how the prime 2 and the classification of fundamental discriminants mediate the return from Z_M-like objects to the original moment series.",
+          "source_id": "openalex_w1971669581",
+          "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Recover the original discriminant series by sign and mod-8 classes",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u10.txt",
+          "unit_bytes": 1512,
+          "unit_id": "full_openalex_w1971669581_u10",
+          "unit_sha256": "54703b64104f2b2917e78610eb233969f0a320b6ed3630c0c8bb01c16c598879",
+          "unit_type": "arithmetic decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is arithmetic decomposition followed by reconstruction: local invariants partition the family into components compatible with the auxiliary formalism, and a finite linear projection recombines them without losing the original indexing condition.",
+            "nonparaphrase_operation": "Sign/mod-8 classes and the local Euler factor at 2 bridge the Z_M-related twisted series back to the generating series over fundamental discriminants.",
+            "quality_reason": "Proposition 5 gives an explicit finite linear combination of the signed 1 and 2 auxiliary series with coefficients depending on powers of 2. The proof rewrites the Euler factor at 2 and says the identity follows by splitting fundamental discriminants by sign and congruence class modulo 8. Low: the prime-2 interface and sign/mod-8 partition are specific mechanisms, not generic projection language alone.",
+            "source_support": "Proposition 5 expresses Z(s,w) as a linear combination of Z(s,w;a,b) for a and b among signed 1 and 2 parameters, with coefficients involving powers of 2 and the removed Euler factor at 2. The proof expands L(s,chi_D)^3 through L_2(s,chi_D)^3 and classifies fundamental discriminants by sign and congruence modulo 8.",
+            "speculation_status": "The mechanism is specific to quadratic discriminants and the exceptional prime 2; it is not a general projection principle. The decomposition transfers information only after the auxiliary components themselves are analytically controlled. The case-split mechanism is explicit and the displayed linear combination is readable, though coefficient-level reuse should preserve the source's exact parentheses and signs. Calling the identity a decomposition and reconstruction through local invariants accurately describes the exact equality. The displayed combination is readable, but exact signs and parentheses remain formula-sensitive; the candidate warns against casual coefficient reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The displayed identity has OCR symbol damage, but the Möbius-sieve structure and its derivation from (1.6) and the cited decomposition are clear.",
+          "line_end": 712,
+          "line_start": 678,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on Möbius inversion, squarefree kernels, and character twists; exact summation indices require rendered-source verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proposition 6 turns the assumed expansion over r into an exact expression for the desired residue in terms of residues of the M=2 completed family, preserving the squarefree constraint while exposing multiplicative factors.",
+          "source_id": "openalex_w1971669581",
+          "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Remove square factors through a Möbius-weighted residue identity",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u11.txt",
+          "unit_bytes": 2057,
+          "unit_id": "full_openalex_w1971669581_u11",
+          "unit_sha256": "4388a6ee84bd5e3c5c5f99c1aa2721601829868649df7ad2790146d3fbc7e93b",
+          "unit_type": "sieving identity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Inclusion-exclusion acts as an arithmetic projection after analytic work has been done in a larger completed family. The residue is preserved through the projection only because the assumed expansion and convergence justify exchanging reconstruction with residue extraction.",
+            "nonparaphrase_operation": "The residues of Z_2 with twisted parameters are the intermediate bridge objects; Möbius weights remove square factors, while squarefree kernels and characters carry the local arithmetic into the projection.",
+            "quality_reason": "Under Theorem 1's assumptions, Proposition 6 expresses the w=3/4 residue of Z(1/2,w;a,b) as nested Mobius-, character-, and divisor-weighted residues of Z_2 with twisted parameters. The proof takes residues in expansion (1.6), inserts the cited decomposition of Z(s,w;a,b;r), and combines the identities. Low: the Mobius weights, squarefree kernels, character twists, and target residues supply a concrete non-paraphrase operation.",
+            "source_support": "Under the assumptions of Theorem 1, Proposition 6 expresses Res at w=3/4 of Z(1/2,w;a,b) as nested Möbius- and character-weighted sums of Res at w=3/4 of Z_2(1/2,w;a delta,epsilon b m_0). The proof takes residues in the expansion over r and inserts a cited decomposition of Z(s,w;a,b;r).",
+            "speculation_status": "The identity is conditional on the stated continuation and expansion assumptions, and the exact interchange of sums and residues is part of that analytic burden. It neither evaluates the nested sum nor proves that the projected residue is nonzero. The sieve structure and derivation from the two cited identities are clear, but OCR damage makes the precise indices, character decorations, and summation constraints unsafe to reproduce literally. Describing this as arithmetic projection after work in the larger Z_2 family is a faithful conceptual account of the displayed reconstruction. The candidate appropriately treats interchange of reconstruction and residue extraction as part of the stated analytic assumptions rather than an automatic algebraic step. OCR damage makes exact indices, constraints, and character decorations unsafe to reproduce, a limitation the candidate preserves."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Packaging congruence and bad-prime corrections multiplicatively makes the final residue a comparison of Euler-product pole orders, turning many elaborate intermediate terms into zero unless all characters are principal.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w1971669581_u06",
+          "full_openalex_w1971669581_u08",
+          "full_openalex_w1971669581_u09",
+          "full_openalex_w1971669581_u12"
+        ],
+        "proposed_limit": "Exact coefficients and several case formulas are extraction-sensitive, and the paper explicitly computes only representative congruence cases in detail.",
+        "source_id": "openalex_w1971669581",
+        "synthesis_id": "riemann_v2_within_3982d2bd6bc3608212d80a69",
+        "title": "Local factors as a global selection rule"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This span is heavily formula-dependent; its structural role and named definitions are recoverable, but exact reuse requires checking the rendered source.",
+          "line_end": 267,
+          "line_start": 218,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Strong dependence on exact Euler factors, character values, and superscript/subscript placement; scan verification is advisable for coefficients.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The B, A, E, and R factors compress the exceptional-prime algebra into multiplicative objects later recognized inside residue sums, enabling a global Euler-product computation rather than repeated casewise expansions.",
+          "source_id": "openalex_w1971669581",
+          "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Package finite-prime corrections for residue transport",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u06.txt",
+          "unit_bytes": 2460,
+          "unit_id": "full_openalex_w1971669581_u06",
+          "unit_sha256": "e80e2b309709ca62208eb1607650c03f3de9acf4ebd92262bf91834dcea84d31",
+          "unit_type": "local correction construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Equations (2.6)-(2.11) package prime-local corrections into B_m and B_m*, character-dependent A_m and A_m*, complementary starred/unstarred combinations A_N(s,chi;a) and E_N(s;b), and the separate zeta quotient R_M(s). The supported conceptual move is to replace several explicit primewise formulas with named multiplicative components that can be recombined; the definitions alone establish no cancellation, residue, or pole comparison.",
+            "nonparaphrase_operation": "Abstract the displayed local cases into composable starred and unstarred factors: this gains compact recombination across complementary divisors and separates finite-prime bookkeeping from the named zeta quotient, but it hides the individual coefficients whose exact values are required for any identity. Formula verification therefore remains essential, and no downstream completed-series or residue role is claimed.",
+            "quality_reason": "Accepted for structural use only. The names, product structure, complementary-factor combinations, and zeta quotient are readable, but OCR blurs exponents, subscripts, and character values, so the record deliberately does not authorize exact coefficient reuse without checking the rendered source.",
+            "source_support": "The span explicitly defines B_m and B_m* as products over primes dividing m, A_m and A_m* as character-dependent products, A_N(s,chi;a) = A_{N/a}(s,chi) A_a*(s,chi), E_N(s;b) = B_{N/b}(s) B_b*(s), and R_M(s) as a quotient of zeta factors with M-local factors separated.",
+            "speculation_status": "None. The interpretation is restricted to the visible product definitions and their packaging role; proposed downstream analytic uses are excluded."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof works out one congruence case and states that the remaining cases are analogous; the semantic mechanism is intact although exact case coefficients need rendered-formula checking.",
+          "line_end": 496,
+          "line_start": 407,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on gamma-factor parity cases and multiplicative local corrections E and D.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proposition 3 evaluates the residue on the first transformed polar line by inserting the known w=1 residue into the first functional equation and collapsing divisor sums into previously defined finite Euler factors.",
+          "source_id": "openalex_w1971669581",
+          "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pull the w=1 residue across the first symmetry",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u08.txt",
+          "unit_bytes": 4834,
+          "unit_id": "full_openalex_w1971669581_u08",
+          "unit_sha256": "8abbd305a7cf825a4ddf51534827304e777469d5a74f26d90fd086d14c1855d9",
+          "unit_type": "residue propagation through first functional equation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Functional symmetry transports singular data rather than merely function values. Multiplicative packaging makes the transport controllable by separating the global residue, archimedean parity, and finite-prime corrections.",
+            "nonparaphrase_operation": "The first functional equation is the bridge from the original w=1 pole to a new polar line; E and D compress the divisor sums and congruence cases produced during transport.",
+            "quality_reason": "The span explicitly applies the w=1 residue formula to Proposition 1 and states the transported residue on w=5/2-3s with R_M, a gamma ratio, zeta factors, E, and the case-dependent D factor. The proof works one a congruent to -1 modulo 4 case and says the other cases are omitted as similar. Low: the analysis specifies the transported polar line and the global, archimedean, and finite-prime components.",
+            "source_support": "Proposition 3 applies the w=1 residue formula to the first functional equation and gives the residue of Z_M(s,w;a,b) along w=5/2-3s in terms of R_M(1-s), a gamma-factor ratio, zeta factors, E, and a congruence-dependent factor D_b(s;a). The proof works out the case a congruent to -1 modulo 4 and states that the remaining cases are similar.",
+            "speculation_status": "Only one congruence case is derived in detail, with the others omitted. This is the first transport step and does not by itself produce or prove nonvanishing of the target residue at (1/2,3/4). The semantic transport and representative derivation are intact, but exact coefficients, parity cases, and gamma decorations require rendered-formula checking. Describing the functional equation as transporting singular data and the E/D factors as collapsing the displayed divisor sum is a faithful abstraction of the calculation. Exact coefficients, gamma decorations, parity cases, and divisibility symbols require rendered-source checking, as the candidate states."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proposition, piecewise local factor, and representative b congruent to 1 mod 4 computation form one coherent derivation; other cases are explicitly omitted by the source.",
+          "line_end": 645,
+          "line_start": 498,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Strongly depends on exact gamma ratios, congruence cases, and 2-adic Euler factors; use the source rendering for literal formulas.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combining the second functional equation with Proposition 3 produces an explicit residue on the polar line that contains (1/2,3/4), while the proof shows how a divisor sum factors into an A-factor and a small 2-adic correction.",
+          "source_id": "openalex_w1971669581",
+          "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Move the residue onto the line w=(3-3s)/2",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u09.txt",
+          "unit_bytes": 7863,
+          "unit_id": "full_openalex_w1971669581_u09",
+          "unit_sha256": "a1dbb1c91b1557411fdaef48a95056895a07895ca5e801e31fa27829718ed8c7",
+          "unit_type": "residue propagation through second functional equation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A second change of summation perspective completes the pole transport. Factorization converts an entangled divisor sum into global multiplicative data and a controlled exceptional-prime correction, making evaluation at the target point feasible.",
+            "nonparaphrase_operation": "The intermediate C(s;a,b), together with the gamma combinations and A/E factors, bridges the functional-equation image of Proposition 3 to an explicit residue on the target polar line.",
+            "quality_reason": "The span says Proposition 2 is applied to Proposition 3 and gives the residue on w=(3-3s)/2 as the stated product involving zeta, R_M, E_M, and a piecewise C factor. Its representative proof factors the divisor sum into an A-factor and an exceptional prime-2 correction, then explicitly omits analogous cases. Low: the candidate identifies a concrete factorization operation and retains the omitted-case and auxiliary-family burdens.",
+            "source_support": "Proposition 4 gives the residue of Z_M(s,w;a,b) along w=(3-3s)/2 as a product involving zeta_M(3s-1), R_M(s/2), E_M((2-s)/2;b), and a piecewise factor C(s;a,b) built from gamma combinations, A-factors, and 2-adic terms. The proof derives the case b congruent to 1 modulo 4 with 2 not dividing a and omits the analogous cases.",
+            "speculation_status": "The other congruence cases are asserted rather than shown, and the formula still belongs to the auxiliary Z_M family. Arithmetic projection to Z and proof that the resulting combination is nonzero remain separate burdens. The polar line and factorization mechanism are clear; exact gamma ratios, piecewise coefficients, and 2-adic factors are formula-sensitive in the extraction. Calling this the second transport step and observing that the target line passes through (1/2,3/4) follow directly from the opening statement and the displayed affine line. The 'change of summation perspective' wording interprets the named Proposition 2, but the candidate's substantive claims are independently supported by this span's residue formula and derivation. The gamma combinations, piecewise coefficients, and 2-adic factors are extraction-sensitive, as acknowledged."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the decisive cancellation/nonvanishing mechanism rather than routine constant arithmetic; some character decorations are blurred but the selection argument is explicit in prose.",
+          "line_end": 775,
+          "line_start": 714,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on Euler-product factorization and comparing pole orders at 1; the final numeric and gamma-factor constant is formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof reduces all residue contributions to Euler products R(chi,chi',chi''), shows via orders of L- and zeta-factors that every contribution with a nontrivial character vanishes, and retains the principal-character term to obtain the explicit nonzero residue.",
+          "source_id": "openalex_w1971669581",
+          "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Only the principal-character Euler product survives the limiting residue",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u12.txt",
+          "unit_bytes": 3603,
+          "unit_id": "full_openalex_w1971669581_u12",
+          "unit_sha256": "39021a0bd289cd1e8d87382f6a05d5647aa65e09bffbeb223c2703fcb5b4778f",
+          "unit_type": "nonvanishing and residue computation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Pole-order comparison is used as a global filter on local character data. Instead of tracking every term numerically, the argument asks which character combination has enough principal poles to survive the limiting normalization.",
+            "nonparaphrase_operation": "The R Euler products bridge the Möbius-sieved residue sum to standard L- and zeta-factor pole orders; the all-principal component then bridges to P and the final gamma-factor expression.",
+            "quality_reason": "The span reduces the residue to a linear combination of R(chi,chi',chi'') for quadratic characters of conductor dividing 8 and factors R through L-functions over zeta(1+epsilon)^11. It concludes that R vanishes unless all three characters are principal, identifies the surviving term with P, and gives the explicit nonzero residue with approximation -0.162. Low: the analysis identifies the concrete limiting Euler-product test and does not reduce the passage to routine constant arithmetic.",
+            "source_support": "The proof writes the residue as a linear combination of quantities R(chi,chi',chi'') for quadratic characters of conductor dividing 8. Their Euler products are compared with a quotient of L-functions by zeta(1+epsilon)^11, from which R vanishes unless all three characters are principal. The surviving term is identified with the constant P and yields an explicit residue for Z(1/2,w) at w=3/4, numerically about -0.162.",
+            "speculation_status": "The residue computation remains conditional on the continuation and sieving assumptions used earlier. The selection rule is established only for the finite set of characters arising here, and the exact final constant is sensitive to extracted coefficients and gamma factors. The vanishing criterion, survival of the principal term, and reported approximation are explicit in prose and formulas; some character marks and the literal constant formula are blurred. Calling pole-order comparison a selection rule accurately captures why nonprincipal character terms vanish under the limiting normalization. Some character marks and the final gamma-factor constant are blurred, but the vanishing criterion and numerical approximation are explicit; the candidate distinguishes these levels."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "80200971ad062ea63663d0166c4757ed891b800820e14341836fb5d8a41cb5e0"
+}

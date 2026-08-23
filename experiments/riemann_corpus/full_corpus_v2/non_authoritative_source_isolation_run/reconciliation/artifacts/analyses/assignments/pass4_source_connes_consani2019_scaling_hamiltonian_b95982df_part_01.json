@@ -1,0 +1,495 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_connes_consani2019_scaling_hamiltonian_b95982df_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "connes_consani2019_scaling_hamiltonian",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the number-theoretic Fourier normalization and the first phase-space cutoff.",
+      "line_end": 168,
+      "line_start": 112,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The argument is prose-stable; constants in H=2 pi pq are normalization-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source removes a supposed quantization mystery by identifying P and Q in the Heisenberg representation, showing that one-half(PQ+QP) generates scaling, while its unboundedness explains the absence of a discrete spectrum without cutoffs.",
+      "source_id": "connes_consani2019_scaling_hamiltonian",
+      "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The symmetrized PQ Hamiltonian is exactly the generator of unitary scaling",
+      "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u02.txt",
+      "unit_bytes": 2056,
+      "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u02",
+      "unit_sha256": "9f3918bdaf7c26179d4ba5bd37922b447386e38ce20b3c6ca83d74d296a717fc",
+      "unit_type": "scaling-hamiltonian-quantization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u02.txt",
+      "source": {
+        "source_id": "connes_consani2019_scaling_hamiltonian",
+        "title": "The Scaling Hamiltonian",
+        "authors": [
+          "Alain Connes",
+          "Caterina Consani"
+        ],
+        "year": 2019,
+        "source_type": "primary-survey-paper",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "hilbert-polya",
+          "trace-formula",
+          "failed-or-limited-approaches"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 104,
+          "line_end": 111,
+          "text": "\n\nfunctions involved in the semi-local trace formula. We finally discuss the merits\nof the geometric strategy compared to the analytic one outlined here.\n\n\n\n\n",
+          "sha256": "7b3131ecff06626da996650a4ce79ad9db9691d45a88924ea60ae7a4cd342bfe"
+        },
+        "after": {
+          "line_start": 169,
+          "line_end": 176,
+          "text": "As explained in details in Chapter II, §3.2 of [12], one restricts to even functions to\nhandle the Riemann zeta function, and to the first quadrant in order to estimate\nthe semiclassical count of the zeros of ζ with positive imaginary part less than\nE. This procedure is depicted in Figure 3. In order to compare this semiclassical\npicture with white light, one considers the model of white light given by the\nregular representation of the additive group R. We adjust the cutoff so that this\ncorresponds, using the isomorphism u 7→ exp(u) of R with the multiplicative\ngroup R∗+ , to the subgraph of the hyperbola pq = 2π      E\n",
+          "sha256": "3fe81c91d7d10c21a840ae076405a1ff1bc577f8804a5c60b17e9fd528784696"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+        "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. The Scaling Hamiltonian",
+            "line_end": 380,
+            "line_start": 112,
+            "mathematical_role": "Quantizes PQ as the generator of scaling, compares phase-space cutoffs for absorption and emission spectra, and tracks the residual minus sign into Maslov phases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 168,
+          "line_start": 112,
+          "title": "The symmetrized PQ Hamiltonian is exactly the generator of unitary scaling",
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u02",
+          "unit_type": "scaling-hamiltonian-quantization",
+          "why_material": "The source removes a supposed quantization mystery by identifying P and Q in the Heisenberg representation, showing that one-half(PQ+QP) generates scaling, while its unboundedness explains the absence of a discrete spectrum without cutoffs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the number-theoretic Fourier normalization and the first phase-space cutoff.",
+          "representation_dependency": "The argument is prose-stable; constants in H=2 pi pq are normalization-dependent.",
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 107,
+            "line_start": 30,
+            "title": "Canonical semi-local operators motivate reopening an analytic route to Weil positivity",
+            "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u01",
+            "unit_type": "analytic-geometric-boundary-and-roadmap",
+            "why_material": "The introduction distinguishes an artificial global spectral realization from canonical finite-place operators, identifies normalization as the likely missing ingredient in a failed local argument, and bounds the paper's analytic proposal against the established geometric program."
+          },
+          {
+            "line_end": 376,
+            "line_start": 169,
+            "title": "A symplectic cutoff comparison makes absorption and emission counts agree but preserves a quantum sign",
+            "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u03",
+            "unit_type": "absorption-emission-symplectic-comparison",
+            "why_material": "A symplectic map identifies the white-light phase space with the multiplicative scaling picture; subtracting it leaves the Berry-Keating region, so semiclassical counts agree, yet the absorption minus sign reappears in Maslov phases and prevents model equivalence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A symplectic cutoff transformation makes absorption and emission phase-space counts identical, but the sign suppressed by area counting returns in Maslov phases.",
+            "limit": "The comparison is semiclassical and relies heavily on the retained figures and normalization conventions.",
+            "parent_local_unit_ids": [
+              "connes_consani2019_scaling_hamiltonian_v2_u02",
+              "connes_consani2019_scaling_hamiltonian_v2_u03"
+            ],
+            "title": "Semiclassical equivalence does not imply quantum equivalence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u02",
+        "spontaneous": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u02",
+          "spontaneous_reading": "The alleged quantization problem dissolves once the symmetrized product (PQ+QP)/2 is recognized as the infinitesimal generator of scaling. The real obstruction is spectral: the operator is unbounded below and has no discrete spectrum until phase space is cut off in dual q and p directions."
+        },
+        "directed": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u02",
+          "source_grounded_mathematics": "In the Heisenberg representation, P is proportional to i∂_x and Q to multiplication by x, so (PQ+QP)/2 corresponds to x∂_x plus the half-density correction generating a unitary scaling group on L²(R). The operator is unbounded below and its scaling action has no discrete spectrum; the source introduces equal q- and p-cutoffs and notes the number-theoretic Fourier normalization H=2πpq.",
+          "conceptual_reading": "Quantization preserves the classical scaling flow exactly; discreteness is not intrinsic to the Hamiltonian but is created by the chosen finite phase-space window.",
+          "representation_or_bridge": "The Heisenberg representation bridges classical pq dynamics to the unitary dilation operator, while Fourier-dual cutoffs make semiclassical counting finite.",
+          "boundary_or_failure": "The cutoff does not turn the unrestricted scaling generator into a naturally discrete global spectrum. Any spectral interpretation depends on normalization and boundary treatment.",
+          "uncertainty": "The operator identification is source-grounded. Exact 2π constants depend on the Fourier convention and figure geometry."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The source directly identifies the symmetrized PQ operator with the unitary scaling generator and says it is unbounded below with no discrete spectrum.",
+          "It introduces equal q and p cutoffs and the number-theoretic 2pi normalization for semiclassical analysis."
+        ],
+        "inference": [
+          "It is reasonable to say the unrestricted operator's real difficulty is spectral rather than a quantization ambiguity."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that the operator has no discrete spectrum 'until' cutoffs are imposed suggests the cutoffs produce an actual discrete spectrum; this span only says the cutoff is used to analyze and count the system semiclassically.",
+          "Any claim of a canonical finite quantum system requires boundary conditions and normalization not supplied here."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Discreteness is created by the window' is a clean slogan but overstates what the source proves."
+        ],
+        "context_or_ocr_risk": [
+          "The 2pi constant depends on Fourier convention, as the output notes.",
+          "The following figures carry the actual cutoff geometry and are outside this short unit."
+        ],
+        "missed_mechanism": [
+          "The half-density correction 1/2 is essential for the scaling flow to be unitary and should be retained in a revised mechanism statement."
+        ],
+        "revision_instructions": [
+          "Keep the exact generator identification and absence of unrestricted discrete spectrum, but say the cutoffs make semiclassical counting finite rather than asserting they create a discrete spectrum."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the intertwining with the regular representation of the semi-local idèle class group.",
+      "line_end": 540,
+      "line_start": 457,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Adelic notation and character choices are formula-dependent; the quotient construction is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Quotienting the finite product A_S by its S-units defines X_S, removes the global measure singularity, and yields a Hilbert space where additive Fourier transform, multiplicative scaling, and local L-factor ratios coexist canonically.",
+      "source_id": "connes_consani2019_scaling_hamiltonian",
+      "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite sets of places produce canonical adèle-class approximations with compatible Fourier and scaling actions",
+      "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u05.txt",
+      "unit_bytes": 4287,
+      "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u05",
+      "unit_sha256": "783eb83342ead82e1665593a8ec1257376895caa773e35798f0a4bca15b7b4e3",
+      "unit_type": "semi-local-hilbert-space-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u05.txt",
+      "source": {
+        "source_id": "connes_consani2019_scaling_hamiltonian",
+        "title": "The Scaling Hamiltonian",
+        "authors": [
+          "Alain Connes",
+          "Caterina Consani"
+        ],
+        "year": 2019,
+        "source_type": "primary-survey-paper",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "hilbert-polya",
+          "trace-formula",
+          "failed-or-limited-approaches"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 449,
+          "line_end": 456,
+          "text": "the characteristic function of the set P = {u ∈ C | |u| ≥ 1}. Such H plays the role\nof the Hilbert transform.\nIn analogy with (2.7), we define the “quantized\" differential of f as the operator\n(2.10)                       d− f := [ H, f ] = H f − f H.\nWe also use the following notation whose normalization fits with (2.5) :\n                             −1\n(2.11)      Π[a,b] := FC 1Y FC  ,   for Y = {u ∈ C | e2π a ≤ |u| ≤ e2πb }.\n\n",
+          "sha256": "bce9350d5927ceaeda1c71da1c15cba0f6ebdb72a84de6c8bce244cc704ddb75"
+        },
+        "after": {
+          "line_start": 541,
+          "line_end": 548,
+          "text": "<!-- source-page: 13 -->\n\nT HE SCALING H AMILTONIAN                                 113\n\n\n2.3. T HE SEMI - LOCAL TRACE FORMULA . As in the case of the single place ∞, we\nintroduce infrared and ultraviolet cutoffs. For the infrared, we use the orthogonal\nprojection PΛ onto the subspace\n",
+          "sha256": "ccba32249716a04a1badd8100d776eab6ef559dde354b2896fa23f3995742cf0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+        "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Semi-local Trace Formula",
+            "line_end": 618,
+            "line_start": 381,
+            "mathematical_role": "Builds the quantized differential, the semi-local Hilbert space L2(X_S), Fourier and scaling actions, cutoff operators, and the trace formula producing local explicit-formula terms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 540,
+          "line_start": 457,
+          "title": "Finite sets of places produce canonical adèle-class approximations with compatible Fourier and scaling actions",
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u05",
+          "unit_type": "semi-local-hilbert-space-construction",
+          "why_material": "Quotienting the finite product A_S by its S-units defines X_S, removes the global measure singularity, and yields a Hilbert space where additive Fourier transform, multiplicative scaling, and local L-factor ratios coexist canonically."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the intertwining with the regular representation of the semi-local idèle class group.",
+          "representation_dependency": "Adelic notation and character choices are formula-dependent; the quotient construction is prose-stable.",
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 456,
+            "line_start": 381,
+            "title": "Commutators with a Hilbert-transform involution form a differential calculus",
+            "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u04",
+            "unit_type": "quantized-differential-construction",
+            "why_material": "Replacing ordinary differentiation by [F,f] yields a graded differential squaring to zero; in one variable the commutator kernel becomes a divided difference, and the construction extends to arbitrary modulated abelian groups."
+          },
+          {
+            "line_end": 615,
+            "line_start": 546,
+            "title": "Infrared and Fourier-dual cutoffs turn the scaling trace into a sum of local explicit-formula terms",
+            "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u06",
+            "unit_type": "semi-local-trace-formula",
+            "why_material": "The product of physical and Fourier cutoffs is conjugated to interval projections and the quantized differential of the local-factor ratio; additivity of the logarithmic derivative then decomposes its trace place by place and yields the semi-local trace formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Semi-local spaces make the operators canonical, but Poisson self-duality fixes the additive characters, principal values, local-factor ratios, and Sonine support conditions needed for Weil positivity.",
+            "limit": "The paper offers a conceptual framework and conjecture, not a proof of the required inequality.",
+            "parent_local_unit_ids": [
+              "connes_consani2019_scaling_hamiltonian_v2_u05",
+              "connes_consani2019_scaling_hamiltonian_v2_u06",
+              "connes_consani2019_scaling_hamiltonian_v2_u10",
+              "connes_consani2019_scaling_hamiltonian_v2_u11"
+            ],
+            "title": "Global Poisson normalization is the missing constraint in a semi-local trace argument"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u05",
+        "spontaneous": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u05",
+          "spontaneous_reading": "Restricting to finitely many places removes the measure incompatibility of the full adèles while retaining additive Fourier transform and multiplicative scaling on one quotient. Local L-factor ratios then appear as the precise multiplier intertwining Fourier inversion with the regular idèle-class action."
+        },
+        "directed": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u05",
+          "source_grounded_mathematics": "For finite S containing ∞, the source defines A_S=∏_{v∈S}Q_v, the S-integers and S-unit group Q_S^*, and X_S=A_S/Q_S^*. It states that a self-dual additive Fourier transform extends unitarily to L²(X_S), and that a unitary identification with L²(C_{Q,S}) intertwines scaling with the regular representation up to |λ|^{1/2}. Lemma 2.3 factors Fourier transform as inversion and multiplicative convolution by the product of local-factor ratios u_v.",
+          "conceptual_reading": "The semi-local quotient is a compatibility space: it keeps enough global identification to let additive and multiplicative symmetries coexist, yet remains finite-place and canonical.",
+          "representation_or_bridge": "X_S and the intertwiner w bridge adèlic scaling to a regular group representation; u=∏u_v bridges additive Fourier transform to local L-factors.",
+          "boundary_or_failure": "This is an approximation to the full adèle class space, not a global spectral realization. Choices of basic characters and exact module factors matter until quotient invariance is used.",
+          "uncertainty": "The lemmas are cited as proved in earlier work. Adelic notation and character normalizations require exact source preservation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The source says the additive/multiplicative Haar-measure incompatibility does not arise after restriction to a finite set of places and defines A_S, Q_S-star, X_S, and C_Q,S.",
+          "It states the unitary Fourier transform, scaling intertwiner, and factorization through inversion and the product of local-factor ratios."
+        ],
+        "inference": [
+          "Calling X_S a compatibility space for additive Fourier and multiplicative scaling actions is a reasonable interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The pass12 boundary statement that quotient invariance removes basic-character ambiguity is established later in the source, not within this unit's exact span.",
+          "Saying the quotient 'removes the global measure singularity' should be restricted to the source's narrower statement that the mutual-singularity problem does not arise in the finite-place setting."
+        ],
+        "paraphrase_or_style_risk": [
+          "The compatibility-space language is useful but can become generic unless tied to Lemmas 2.2 and 2.3."
+        ],
+        "context_or_ocr_risk": [
+          "Character choices, module factors, and local L-factor conventions are formula-sensitive.",
+          "The unit contains the construction but not the later proof of character-choice independence."
+        ],
+        "missed_mechanism": [
+          "The half-module factor in the intertwining relation is essential for converting the nonunitary additive scaling action to the regular representation."
+        ],
+        "revision_instructions": [
+          "Keep the semi-local quotient, Fourier/scaling coexistence, and local-factor multiplier; remove the imported character-ambiguity resolution or label it explicitly as later-source context."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Explicitly marks the proposal's limit rather than converting it into a settled architecture.",
+      "line_end": 999,
+      "line_start": 987,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conclusion keeps the semi-local operator conjecture alive but emphasizes that principal-value choices make an analytic proof fragile, whereas the global Scaling Site interprets scaling as Frobenius and exposes structure absent semi-locally.",
+      "source_id": "connes_consani2019_scaling_hamiltonian",
+      "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The analytic route is normalization-sensitive while geometry supplies global conceptual structure",
+      "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u13.txt",
+      "unit_bytes": 995,
+      "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u13",
+      "unit_sha256": "670aad8655231aac35bff170feb0d4e397c9756c585d42d2963663de00350891",
+      "unit_type": "method-comparison-and-risk",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u13.txt",
+      "source": {
+        "source_id": "connes_consani2019_scaling_hamiltonian",
+        "title": "The Scaling Hamiltonian",
+        "authors": [
+          "Alain Connes",
+          "Caterina Consani"
+        ],
+        "year": 2019,
+        "source_type": "primary-survey-paper",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "hilbert-polya",
+          "trace-formula",
+          "failed-or-limited-approaches"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 979,
+          "line_end": 986,
+          "text": "                   =(s) =\n                                        \u0001\n                                 α + 2πk , j ∈ {1, . . . 2g}, k ∈ Z,\n                            log q j\nwhere the −α j are the arguments of the z j and are determined only modulo 2π.\nThis type of distribution of numbers, being periodic, is very natural as a distribu-\ntion in “time\", not in “energy\".\n\n",
+          "sha256": "9299dba80f65694ea1ac20a84071f4e87a1b5519de57b9de695ff3769d0230b6"
+        },
+        "after": {
+          "line_start": 1000,
+          "line_end": 1007,
+          "text": "\n\n\n                                        REFERENCES\n\n [1] M. Berry and J. Keating, H = qp and the Riemann zeros, “Supersymmetry and Trace\n     Formulae: Chaos and Disorder”, edited by J.P. Keating, D.E. Khmelnitskii and I.V.\n     Lerner, Plenum Press. Link to download the paper\n",
+          "sha256": "e6fe5bcd154c870843015dea5d7b2bb5cf59c44d6826fba4a3bab3d3debf3601"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+        "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. An Operator Theoretic Problem",
+            "line_end": 1002,
+            "line_start": 826,
+            "mathematical_role": "States the semi-local bounded-support conjecture, explains local-factor ratios through Poisson summation, constructs Sonine elements, and compares time, energy, analytic, and geometric viewpoints."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 999,
+          "line_start": 987,
+          "title": "The analytic route is normalization-sensitive while geometry supplies global conceptual structure",
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u13",
+          "unit_type": "method-comparison-and-risk",
+          "why_material": "The conclusion keeps the semi-local operator conjecture alive but emphasizes that principal-value choices make an analytic proof fragile, whereas the global Scaling Site interprets scaling as Frobenius and exposes structure absent semi-locally."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Explicitly marks the proposal's limit rather than converting it into a settled architecture.",
+          "representation_dependency": "Prose-only.",
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 985,
+            "line_start": 957,
+            "title": "Function-field zeros are naturally periodic times rather than energy levels",
+            "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u12",
+            "unit_type": "time-energy-reframing",
+            "why_material": "For curves over finite fields, zeta is a rational function of q to minus s and numerator roots lie on a circle, making imaginary parts repeat modulo 2 pi over log q; this periodicity favors the dual time interpretation of zeros."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u13",
+        "spontaneous": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u13",
+          "spontaneous_reading": "The conclusion keeps the analytic conjecture alive but identifies its fragility: principal-value normalizations can be wrong by small local choices. The geometric Scaling Site offers a different kind of control by making the adèle-class space and Frobenius meaning global and structural rather than implicit in calculations."
+        },
+        "directed": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u13",
+          "source_grounded_mathematics": "The authors say Conjecture 4.1 might be approached first at one place using the support condition, but warn that Weil positivity depends sensitively on principal-value choices and is vulnerable to computational mistakes. They contrast this with their global geometric program, where the adèle-class space becomes the points of the Scaling Site and the scaling action is interpreted as Frobenius.",
+          "conceptual_reading": "The two programs trade calculational directness against structural constraint. Global geometry may prevent normalization errors by making compatibility intrinsic, whereas semi-local analysis must enforce it explicitly.",
+          "representation_or_bridge": "The adèle-class space is the shared object: implicit in semi-local operator analysis and explicit as a geometric space with Frobenius-like scaling.",
+          "boundary_or_failure": "No superiority theorem or solution is claimed. The analytic route remains possible but conjectural, and the geometric route supplies conceptual meaning rather than a completed RH proof here.",
+          "uncertainty": "This is an explicit methodological assessment by the authors, not experimental evidence that either program will succeed."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u13",
+        "critic_decision": "revise",
+        "supported": [
+          "The authors explicitly keep the one-place support-based approach open, warn that principal-value choices make it vulnerable to computational error, and contrast it with their global geometric program.",
+          "They identify the adele-class space and scaling-as-Frobenius interpretation in the Scaling Site."
+        ],
+        "inference": [
+          "Saying the two programs trade analytic directness against global structural meaning is a reasonable interpretation of the comparison."
+        ],
+        "unsupported_or_imported": [
+          "The claim that global geometry may 'prevent normalization errors' goes beyond the span: the authors say the analytic approach is vulnerable and geometry reveals structure, but do not prove geometry immunizes calculations from error.",
+          "No superiority theorem, completed RH route, or evidence of likely success is provided."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Making compatibility intrinsic' is attractive methodological prose unless presented explicitly as an inference from the global geometric interpretation."
+        ],
+        "context_or_ocr_risk": [
+          "The unit is prose-only and source quality is high.",
+          "Its short conclusion is sufficient for a methodological-status reading but not for technical comparison of either program."
+        ],
+        "missed_mechanism": [
+          "The support condition is the only concrete proposed handle on the simplest one-place analytic case and should not be lost beneath broad method-comparison language."
+        ],
+        "revision_instructions": [
+          "Retain the authors' explicit risk comparison and global Frobenius interpretation, but relabel error-prevention/intrinsic-compatibility claims as speculation rather than source-grounded consequences."
+        ]
+      }
+    }
+  ]
+}

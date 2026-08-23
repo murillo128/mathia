@@ -1,0 +1,343 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2068184834_40807e6b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2068184834",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "RH is used to keep ordinates real during the cutoff and normalization passage.",
+      "line_end": 1950,
+      "line_start": 1840,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The argument is prose-stable; exact O(T) comparisons depend on displayed normalizations.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Positive majorants extend the admissible cutoff class to characteristic functions, and a mean-value comparison shows that height-dependent local normalization and fixed log-T normalization differ only below the main scale.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        35,
+        36
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Approximation and RH transfer the smoothed theorem to sharp height cutoffs and local spacing",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u11.txt",
+      "unit_bytes": 5521,
+      "unit_id": "openalex_w2068184834_v2_u11",
+      "unit_sha256": "c532c82523b6ba22753549275311cbf48ba06bfc033893c67cd5739c08493084",
+      "unit_type": "smoothing-removal-and-renormalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1832,
+          "line_end": 1839,
+          "text": "                 2π      (L)2r−1 p1 ,...,pr ≤T j=1 pj\n                       X                      log p1        log pr log q1       log qr\n           ·                            Φ(−          ,...,−       ,       ,...,        , 0, . . . , 0) +(3.62)\n                                                                                                         O(T\n               q1 ·····qr =p1 ·····pr           L             L      L            L\n\nwhere the inner sum is over primes qj . Since p1 , . . . , pr are distinct\nprimes, the primes qj are then a permutation of pj . Thus for some\n",
+          "sha256": "99a5a072024bf3884f2ac733c23c43c6ab3ea501066d45a7007493a10415756b"
+        },
+        "after": {
+          "line_start": 1951,
+          "line_end": 1958,
+          "text": "case m = 1.\n     In this respect we observe an important difference of the above anal-\nysis when m = 1 and a(p) = χ(p) is a Dirichlet character, say of\nconductor Q. Then the sum\n                    X\n                           Λ(p)χ(p)Λ(p + 2kQ)χ(p + 2kQ)              (3.70)\n                  X≤p≤2X\n\n",
+          "sha256": "71416497c0b2bf2a20fb1892fb44705cb1c5619de7c91063507bf9a9659a9a12"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_213f3a0704b9a01388bea677a70d988cc91f6424f79b91eb8a410a42fef8f8b9",
+        "dossier_sha256": "4ab35fc90e67cd07b6fe485942b024b565b608a181b30fa0d6004e49f8208bea",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Sums over primes",
+            "line_end": 1950,
+            "line_start": 801,
+            "mathematical_role": "Converts smoothed zero correlations to multidimensional prime sums, proves off-diagonal suppression and diagonal pairing asymptotics, analyzes the support boundary, and removes smoothing under RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1950,
+          "line_start": 1840,
+          "title": "Approximation and RH transfer the smoothed theorem to sharp height cutoffs and local spacing",
+          "unit_id": "openalex_w2068184834_v2_u11",
+          "unit_type": "smoothing-removal-and-renormalization",
+          "why_material": "Positive majorants extend the admissible cutoff class to characteristic functions, and a mean-value comparison shows that height-dependent local normalization and fixed log-T normalization differ only below the main scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "RH is used to keep ordinates real during the cutoff and normalization passage.",
+          "representation_dependency": "The argument is prose-stable; exact O(T) comparisons depend on displayed normalizations.",
+          "unit_id": "openalex_w2068184834_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1839,
+            "line_start": 1766,
+            "title": "The natural support boundary changes with poles and coefficient cancellation",
+            "unit_id": "openalex_w2068184834_v2_u10",
+            "unit_type": "support-boundary-and-solver-confound",
+            "why_material": "The authors explain that zeta's polar term and Dirichlet-character prime correlations cause saturation at total support two, whereas cusp-form coefficient cancellation should preserve diagonal dominance farther than the proved degree-dependent range."
+          },
+          {
+            "line_end": 2041,
+            "line_start": 1956,
+            "title": "Möbius inversion on set partitions removes repeated zero indices",
+            "unit_id": "openalex_w2068184834_v2_u12",
+            "unit_type": "partition-lattice-sieve",
+            "why_material": "Coincidence patterns among indices form the partition lattice; unrestricted and distinct correlation sums are related by its zeta transform, so Möbius inversion reconstructs the desired n-level statistic from lower-dimensional unrestricted sums."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Products of primitive L-functions fail through superposed spectra, while support restrictions fail through polar or off-diagonal terms; smoothing is a removable analytic interface under RH rather than a spectral mechanism.",
+            "limit": "The wider support ranges for higher-degree cusp forms are heuristic and depend on conjectural cancellation.",
+            "parent_local_unit_ids": [
+              "openalex_w2068184834_v2_u02",
+              "openalex_w2068184834_v2_u10",
+              "openalex_w2068184834_v2_u11"
+            ],
+            "title": "Primitivity and support control distinct failure modes of GUE inference"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2068184834_v2_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w2068184834_v2_u11",
+          "spontaneous_reading": "The unit closes the prime-pair computation by summation by parts, then uses its own proof to diagnose the support barrier: for zeta the polar term reaches main scale at total support two, while for cusp forms expected cancellation in shifted coefficient sums should keep the off diagonal small out to that same boundary even though the theorem proves only 2/m."
+        },
+        "directed": {
+          "unit_id": "openalex_w2068184834_v2_u11",
+          "source_grounded_mathematics": "Distinct matched primes are summed using the Rankin-Selberg estimate sum_{p<=X}|c(p)|^2/p=(1/2)log^2 X+O(log X), producing the r-fold v-integral and completing Theorem 3.1. The following remark analyzes support. For zeta, the explicit-formula polar term has size T^{sum|xi_j|/2} and becomes comparable with T log T at total support two. For a GL(2) cusp form, a pair-correlation off-diagonal is reduced to shifted sums c(m)c(m+h); conjectural square-root cancellation would keep it below the diagonal for |xi_1|+|xi_2|<2, beyond the proved 2/m range.",
+          "conceptual_reading": "The proof's support condition is audited against two different obstructions: a genuine polar contribution and a technical inability to prove coefficient cancellation. This separates a natural phase boundary from the current method's conservative bound.",
+          "representation_or_bridge": "Summation by parts turns discrete quadratic prime mass into continuous v weights. The shifted-convolution form of the off diagonal then bridges a support question to a coefficient-cancellation question.",
+          "boundary_or_failure": "The support-two extension for cusp forms is heuristic, based on square-root cancellation not proved here. The artifact begins but does not complete the subsequent smoothing-removal proof, despite the assignment's emphasis on that topic.",
+          "uncertainty": "The qualitative boundary diagnosis is explicit; exact support powers and O(T) normalizations are display-dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2068184834_v2_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The artifact completes the matched-prime summation by parts and Theorem 3.1, then explicitly compares the support restriction with zeta's polar term and with conjectural cancellation in shifted cusp-form coefficient sums.",
+          "The conclusion that support two is a real zeta boundary but a conjectural farther range for cusp forms is correctly distinguished from the proved 2/m range."
+        ],
+        "inference": [
+          "Separating a polar obstruction from a current cancellation bottleneck is a strong conceptual reading.",
+          "Calling the shifted convolution a bridge from support to coefficient cancellation is justified by formulas (3.67)-(3.69)."
+        ],
+        "unsupported_or_imported": [
+          "The uncertainty says the artifact begins the subsequent smoothing-removal proof. The exact hashed unit ends during the support heuristic and does not begin that proof."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The assigned title describes smoothing removal, but that material lies in the next hashed artifact; exact powers and O(T) normalizations remain display-dependent."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the claim that smoothing removal begins here with an explicit statement that it is absent from this artifact despite the assignment metadata."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Lemma 5.1 because its coefficient lower bound is later needed for the ramified global estimate.",
+      "line_end": 2737,
+      "line_start": 2567,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Severe formula dependency; verify indices and exponents from the original PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Supercuspidal twist classes and segment representations turn the ramified Rankin-Selberg factor into products of conjugate quadratic terms; logarithmic expansion then gives nonnegative Dirichlet coefficients and bounds the local parameters.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        50,
+        51,
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Twist classes expose ramified Rankin-Selberg factors as positive quadratic products",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u17.txt",
+      "unit_bytes": 9602,
+      "unit_id": "openalex_w2068184834_v2_u17",
+      "unit_sha256": "03cdf8b3e6d195c53d6c3293783bc06f45604217fa51b2331b238971540b98b5",
+      "unit_type": "ramified-factor-positivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2559,
+          "line_end": 2566,
+          "text": "         Apparently this identity is quite old - it can already be found in Kac [12]\n\n<!-- source-page: 49 -->\n\nZEROS OF PRINCIPAL L-FUNCTIONS AND RANDOM MATRIX THEORY 49\n           P                P\nThe sums θ M(θ) and           θ m(θ) are easily seen to be negatives of each\nother, and so\n",
+          "sha256": "87af1f0c4c986dc1468d29ccb17862b2c40e75aa89ff727b96df53ff2ff5d359"
+        },
+        "after": {
+          "line_start": 2738,
+          "line_end": 2745,
+          "text": "     For the general πp given as a Langlands quotient π = J (G, P ; σ1 [t1], . . . , σr [tr ])\nas in (5.1), we can by using induction by stages assume that σj =\n\n<!-- source-page: 53 -->\n\nZEROS OF PRINCIPAL L-FUNCTIONS AND RANDOM MATRIX THEORY 53\n\n∆(nj , ρj ) and t1 ≥ · · · ≥ tr . Then we have\n",
+          "sha256": "093cf0d9eb4bc2202efc0d35253777fb8716352c62878721790ab9902acf4290"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_213f3a0704b9a01388bea677a70d988cc91f6424f79b91eb8a410a42fef8f8b9",
+        "dossier_sha256": "4ab35fc90e67cd07b6fe485942b024b565b608a181b30fa0d6004e49f8208bea",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Appendix",
+            "line_end": 2886,
+            "line_start": 2523,
+            "mathematical_role": "Constructs ramified finite and archimedean local factors through Langlands data, proves positivity for Rankin-Selberg coefficients, and derives local-parameter bounds by global analytic arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2737,
+          "line_start": 2567,
+          "title": "Twist classes expose ramified Rankin-Selberg factors as positive quadratic products",
+          "unit_id": "openalex_w2068184834_v2_u17",
+          "unit_type": "ramified-factor-positivity",
+          "why_material": "Supercuspidal twist classes and segment representations turn the ramified Rankin-Selberg factor into products of conjugate quadratic terms; logarithmic expansion then gives nonnegative Dirichlet coefficients and bounds the local parameters."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Lemma 5.1 because its coefficient lower bound is later needed for the ramified global estimate.",
+          "representation_dependency": "Severe formula dependency; verify indices and exponents from the original PDF.",
+          "unit_id": "openalex_w2068184834_v2_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2565,
+            "line_start": 2528,
+            "title": "Langlands quotients reduce non-tempered local factors to tempered building blocks",
+            "unit_id": "openalex_w2068184834_v2_u16",
+            "unit_type": "local-factor-construction",
+            "why_material": "The appendix represents a generic unitary local component as a Langlands quotient, factors its L-function through tempered pieces, and reduces those further to square-integrable data, making local analytic bounds a statement about real Langlands parameters."
+          },
+          {
+            "line_end": 2821,
+            "line_start": 2739,
+            "title": "Global holomorphy bounds archimedean Langlands parameters",
+            "unit_id": "openalex_w2068184834_v2_u18",
+            "unit_type": "archimedean-global-local-transfer",
+            "why_material": "The classification of real square-integrable factors and their Rankin-Selberg products locates the first possible archimedean pole; global holomorphy to the right of one then forces every real parameter inside the half strip."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Langlands factorization locates local poles, Rankin-Selberg positivity exposes parameters in coefficients, and global holomorphy plus Landau bounds force uniform finite and archimedean constraints.",
+            "limit": "Several exact local-factor exponents are OCR-sensitive and need verification from the original PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w2068184834_v2_u16",
+              "openalex_w2068184834_v2_u17",
+              "openalex_w2068184834_v2_u18",
+              "openalex_w2068184834_v2_u19"
+            ],
+            "title": "Global analytic continuation constrains every local representation parameter"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2068184834_v2_u17",
+        "spontaneous": {
+          "unit_id": "openalex_w2068184834_v2_u17",
+          "spontaneous_reading": "Spitzer's unique-rotation lemma turns every ordered walk into ordered blocks lying below chords with strictly decreasing slopes; the upper convex envelope makes that decomposition bijective. Counting the block orderings as permutation cycles supplies the factorial subset weights and proves the walk-range identity. Only afterward does the text begin classifying p-adic square-integrable and Rankin-Selberg factors."
+        },
+        "directed": {
+          "unit_id": "openalex_w2068184834_v2_u17",
+          "source_grounded_mathematics": "For generic increments summing to zero, each ordering has an upper convex envelope whose consecutive blocks lie below their chords and have decreasing slopes. Spitzer's lemma gives a unique cyclic rotation of each block with the first property, while ordering slopes gives the second. This bijects full orderings with set partitions and cyclic orderings of blocks. The maximum M(theta) becomes half the sum of absolute block sums; summing and identifying products (|F_j|-1)! with cycle counts yields the factorial subset formula for T(u), proving Proposition 4.3. The artifact then starts the appendix: p-adic square-integrable representations are segments Delta(n,rho), principal factors reduce to supercuspidal factors, and Rankin-Selberg factors vanish unless twist classes match.",
+          "conceptual_reading": "A geometric canonicalization—upper convex envelope plus unique rotations—converts maximal deviation into partition combinatorics. On the appendix side, twist classes play an analogous grouping role for deciding which local factors can interact.",
+          "representation_or_bridge": "Convex-envelope blocks bridge walk maxima to set partitions and permutation-cycle counts. Segment representations Delta(n,rho) bridge p-adic square-integrable data to supercuspidal twist classes.",
+          "boundary_or_failure": "The walk proof assumes generic increments and extends only by continuity. The p-adic discussion is preliminary and does not yet derive the positive quadratic product or coefficient lower bound described in the assignment metadata.",
+          "uncertainty": "There is a partial metadata/artifact mismatch: most of the hashed unit proves the Spitzer identity, while only its end starts ramified-factor classification. Exact factorials and local indices are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2068184834_v2_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The source uses the upper convex envelope, Spitzer's unique-rotation lemma, decreasing slopes, and a bijection with set partitions and cyclic block orders to prove the walk-range identity.",
+          "Only after completing that proof does it begin the p-adic appendix with segment representations, supercuspidal reductions, twist equivalence, and the condition for nontrivial Rankin-Selberg factors."
+        ],
+        "inference": [
+          "The convex-envelope blocks genuinely bridge maxima to set partitions and permutation-cycle counts.",
+          "Segment representations genuinely bridge square-integrable data to supercuspidal twist classes."
+        ],
+        "unsupported_or_imported": [
+          "Saying twist classes play an analogous grouping role to convex-envelope blocks is a stylistic cross-domain analogy not supported by any correspondence in the source."
+        ],
+        "paraphrase_or_style_risk": [
+          "The spontaneous reading's analogy risks conflating two adjacent but unrelated mechanisms merely because both group objects."
+        ],
+        "context_or_ocr_risk": [
+          "The assignment metadata emphasizes ramified positivity, but the hashed unit only begins that analysis; exact factorials and local indices are formula-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Delete the convex-envelope/twist-class analogy and present the completed Spitzer proof and the preliminary p-adic classification as separate source-bounded mechanisms."
+        ]
+      }
+    }
+  ]
+}

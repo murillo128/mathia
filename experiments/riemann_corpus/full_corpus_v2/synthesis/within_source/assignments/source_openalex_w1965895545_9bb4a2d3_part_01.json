@@ -1,0 +1,335 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1965895545",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1965895545_9bb4a2d3_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Both the even and odd kernels become tractable after representation by finite nonnegative Gaussian-subordination measures, allowing known unique extremals to be integrated and rescaled while retaining one-sided order and computable L1 cost.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w1965895545_u15",
+          "full_openalex_w1965895545_u17",
+          "full_openalex_w1965895545_u18",
+          "full_openalex_w1965895545_u20"
+        ],
+        "proposed_limit": "The even and truncated-odd constructions invoke different external results and cannot be merged into a universal recipe from this source alone.",
+        "source_id": "openalex_w1965895545",
+        "synthesis_id": "riemann_v2_within_0333e59142ced43ed2568485",
+        "title": "Positive Gaussian mixtures transfer solved extremal problems to zeta kernels"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The figure body at lines 996-1023 is excluded; its caption is nonessential supporting context.",
+          "line_end": 1060,
+          "line_start": 952,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Measure and interpolation displays are fragmented but the mixture identity, positivity, finiteness, rescaling, and source theorem are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows that the even S1 kernel belongs to a positive Gaussian-mixture class, constructs the finite measure, invokes the solved extremal problem, and rescales type-2pi interpolants to bandwidth Delta.",
+          "source_id": "openalex_w1965895545",
+          "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+          "source_page_markers_inside_unit": [
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Realizing f1 as a positive Gaussian mixture and rescaling its extremals",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u15.txt",
+          "unit_bytes": 4879,
+          "unit_id": "full_openalex_w1965895545_u15",
+          "unit_sha256": "38ffb5d651a4f540a69bfabfddef7594eb896de1ed6b7af5cac706cd8f183f9f",
+          "unit_type": "even Gaussian subordination construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Positive subordination transfers order and extremality from elementary Gaussian building blocks to a more complicated kernel, while scaling separates the normalized construction from the bandwidth parameter.",
+            "nonparaphrase_operation": "The measure nu_Delta, Gaussian mixture F_Delta, interpolation extremals G_Delta, and dilation z to Delta z form the construction pipeline.",
+            "quality_reason": "The span defines a finite nonnegative measure, represents F_Delta as an even Gaussian mixture, computes F_Delta, and identifies f1(x)=F_Delta(Delta x). It invokes unique type-2pi extremals for that mixture class and rescales them to type 2pi Delta. The construction-pipeline phrasing remains concrete because every stage is named and appears in the span.",
+            "source_support": "The authors define a finite nonnegative measure nu_Delta, represent F_Delta as its mixture of even Gaussians, compute F_Delta(x)=1-(x/Delta) arctan(Delta/x), observe f1(x)=F_Delta(Delta x), invoke unique type-2pi extremals, and rescale them to type 2pi Delta.",
+            "speculation_status": "The argument relies on an external solved extremal theorem for this positive mixture class and does not supply a recipe for kernels lacking such a representation. The measure and interpolation displays are fragmented, but positivity, finiteness, the mixture identity, and rescaling are recoverable; the defective figure is nonessential. Describing positive subordination as transferring solved Gaussian-mixture extremality to f1 is a faithful reading of the invoked theorem. Separating normalized construction from bandwidth through dilation accurately captures the displayed scaling. The measure and interpolation formulas are fragmented and the figure body is defective, but positivity, finiteness, mixture identity, uniqueness, and scaling are readable without the plot."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Completes parts (ii) and (iii) of Lemma 6 after the pointwise estimates.",
+          "line_end": 1317,
+          "line_start": 1216,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The multiple integrals and series are severely linearized, though the support conclusion and terminal logarithmic cost formulas are readable enough for semantic use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies Paley-Wiener to obtain compact Fourier support and derives exact upper/lower L1 errors from the subordinating measure, including the nonnegative-integrand justification for exchanging integrals.",
+          "source_id": "openalex_w1965895545",
+          "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+          "source_page_markers_inside_unit": [
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Completing the even extremal certificate",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u17.txt",
+          "unit_bytes": 5876,
+          "unit_id": "full_openalex_w1965895545_u17",
+          "unit_sha256": "ff0b8150e1cdb579543023109d62d83eb8a145c332874c824cd3e103cab97e35",
+          "unit_type": "spectral support and exact approximation cost",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This span completes two independent parts of the even extremal certificate. Exponential type together with real-line integrability gives Fourier support in [-Δ,Δ] by Paley-Wiener, while the real-axis envelope separately supplies a uniform Fourier-transform bound; compact support alone does not give that norm estimate. On the quantitative side, the positive Gaussian-subordination integrand permits the exchange of integrals and transfers the known Gaussian errors into two distinct exact logarithmic L1 costs, with no claim here about downstream theorem constants or signed mixtures.",
+            "nonparaphrase_operation": "Decomposes admissibility into support and norm controls with different premises, and distinguishes those qualitative certificates from the direction-dependent error accounting.",
+            "quality_reason": "Accepted after adding the envelope-based origin of the transform bound and removing imported explicit-formula/theorem-constant claims and the overbroad signed-mixture warning; severe formula linearization does not obscure the stated conclusions.",
+            "source_support": "The proof invokes Paley-Wiener from exponential type 2πΔ and integrability, bounds the transform by integrating the envelope, and explicitly justifies the error-integral interchange by nonnegativity before displaying separate upper and lower logarithmic formulas.",
+            "speculation_status": "Source-grounded synthesis of parts (ii) and (iii); it deliberately makes no universal counterfactual claim about signed measures or downstream use."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The plotted figure body at lines 1357-1387 is excluded; its caption only illustrates the already stated order relation.",
+          "line_end": 1421,
+          "line_start": 1319,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The measure density and interpolation formulas need typography verification, but positivity/finite status, scaling, and symmetry are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Embeds the odd S kernel into a finite nonnegative Gaussian-subordination measure, rescales unique odd extremals, and uses reflection symmetry to reduce the two-sided verification to the majorant.",
+          "source_id": "openalex_w1965895545",
+          "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Building odd extremals from a positive truncated-Gaussian mixture",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u18.txt",
+          "unit_bytes": 4769,
+          "unit_id": "full_openalex_w1965895545_u18",
+          "unit_sha256": "1e1770dc10f64e2f941dc278f917235a353352a5b6ebe6b61ac6665a912ff314",
+          "unit_type": "odd Gaussian subordination construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For x>0, HΔ is represented by a Gaussian mixture whose measure is stated to be finite and nonnegative, and f is recovered by dilation. This representation imports the previously solved unique odd Gaussian majorant and minorant constructions; rescaling transfers them to f, while mΔ⁻(z)=-mΔ⁺(-z) reduces the two-sided verification burden to the majorant. The gain depends essentially on the asserted mixture and measure admissibility, whose positivity and finiteness are deferred to Appendix A rather than proved in this span.",
+            "nonparaphrase_operation": "Tracks how subordination, dilation, and odd reflection transfer a solved extremal problem and compress two verification tasks into one while locating the deferred admissibility proof.",
+            "quality_reason": "Accepted after removing the imported comparison with the even construction and replacing it with the local dependency on the separately deferred representation, positivity, and finiteness proofs; the defective plot is nonessential.",
+            "source_support": "The span states the HΔ mixture and the finite nonnegative status of μΔ, records f(x)=HΔ(Δx), invokes unique odd exponential-type extremals, defines their dilations, and proves the reflection identity before explicitly reducing Lemma 8 to mΔ⁺.",
+            "speculation_status": "Calling the odd extension a mixture of odd Gaussians is a source-motivated reading; positivity and finiteness are treated only as stated claims pending the cited appendix certificates."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Completes parts (ii) and (iii) of Lemma 8.",
+          "line_end": 1580,
+          "line_start": 1554,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The key decomposition and integral are legible; the Fourier norm display has minor extraction fragmentation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Decomposes the majorant into an odd term plus a squared sinc correction, so integration kills the odd part and yields the exact pi/(2 Delta) error; exponential type and integrability then imply compact support.",
+          "source_id": "openalex_w1965895545",
+          "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Oddness isolates the exact L1 excess and Paley-Wiener gives support",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u20.txt",
+          "unit_bytes": 1547,
+          "unit_id": "full_openalex_w1965895545_u20",
+          "unit_sha256": "800a838d9fa32316fc80cdc445e51466a8db78a166a9c03c32f053b9801b842b",
+          "unit_type": "odd approximation certificate",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The decomposition mΔ⁺(x)=JΔ(Δx) plus a squared-sinc term separates a zero-integral odd component from the component carrying the entire L1 excess. Absolute integrability and oddness annihilate the integrals of JΔ(Δx) and f, leaving the explicit correction mass π/(2Δ); independently, exponential type and integrability give Fourier support in [-Δ,Δ] by Paley-Wiener, and the pointwise envelope gives the uniform transform bound. These conclusions require the stated parity, integrability, type, and envelope and do not re-prove one-sided order.",
+            "nonparaphrase_operation": "Splits the construction by integration behavior to isolate exact approximation cost, then distinguishes the separate hypotheses responsible for spectral support and transform control.",
+            "quality_reason": "Accepted after removing the unsupported role of JΔ as enforcing order and retaining only its proved cancellation role; minor fragmentation in the transform display does not compromise the certificate.",
+            "source_support": "The span displays the decomposition, invokes oddness and absolute integrability to reduce the excess integral to squared sinc, evaluates it as π/(2Δ), then applies Paley-Wiener and the part-(i) envelope to obtain support and the transform estimate.",
+            "speculation_status": "Fully source-grounded for this construction; the correction is cost-carrying here, with no claim that all odd extremals share its form or cost."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "For the odd construction, the appendix's representation, positivity, and finite-mass proofs are not ancillary calculations: together they certify that Gaussian subordination is legally applicable.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w1965895545_u18",
+          "full_openalex_w1965895545_u21",
+          "full_openalex_w1965895545_u22",
+          "full_openalex_w1965895545_u23"
+        ],
+        "proposed_limit": "These certificates establish this particular measure only and do not supply a generic positivity test for other kernels.",
+        "source_id": "openalex_w1965895545",
+        "synthesis_id": "riemann_v2_within_46272c1fcdc4ca925b607581",
+        "title": "Measure admissibility is part of the mathematical mechanism"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The plotted figure body at lines 1357-1387 is excluded; its caption only illustrates the already stated order relation.",
+          "line_end": 1421,
+          "line_start": 1319,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The measure density and interpolation formulas need typography verification, but positivity/finite status, scaling, and symmetry are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Embeds the odd S kernel into a finite nonnegative Gaussian-subordination measure, rescales unique odd extremals, and uses reflection symmetry to reduce the two-sided verification to the majorant.",
+          "source_id": "openalex_w1965895545",
+          "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Building odd extremals from a positive truncated-Gaussian mixture",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u18.txt",
+          "unit_bytes": 4769,
+          "unit_id": "full_openalex_w1965895545_u18",
+          "unit_sha256": "1e1770dc10f64e2f941dc278f917235a353352a5b6ebe6b61ac6665a912ff314",
+          "unit_type": "odd Gaussian subordination construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For x>0, HΔ is represented by a Gaussian mixture whose measure is stated to be finite and nonnegative, and f is recovered by dilation. This representation imports the previously solved unique odd Gaussian majorant and minorant constructions; rescaling transfers them to f, while mΔ⁻(z)=-mΔ⁺(-z) reduces the two-sided verification burden to the majorant. The gain depends essentially on the asserted mixture and measure admissibility, whose positivity and finiteness are deferred to Appendix A rather than proved in this span.",
+            "nonparaphrase_operation": "Tracks how subordination, dilation, and odd reflection transfer a solved extremal problem and compress two verification tasks into one while locating the deferred admissibility proof.",
+            "quality_reason": "Accepted after removing the imported comparison with the even construction and replacing it with the local dependency on the separately deferred representation, positivity, and finiteness proofs; the defective plot is nonessential.",
+            "source_support": "The span states the HΔ mixture and the finite nonnegative status of μΔ, records f(x)=HΔ(Δx), invokes unique odd exponential-type extremals, defines their dilations, and proves the reflection identity before explicitly reducing Lemma 8 to mΔ⁺.",
+            "speculation_status": "Calling the odd extension a mixture of odd Gaussians is a source-motivated reading; positivity and finiteness are treated only as stated claims pending the cited appendix certificates."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Appendix dependency for the construction in u18.",
+          "line_end": 1640,
+          "line_start": 1583,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Successive integral displays are fragmented but substitutions and the terminal identity are stated in prose and formulas.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Verifies the Gaussian-mixture identity by Fubini and successive substitutions, reducing the inner integral to an elementary Gaussian integral with the desired exponential kernel.",
+          "source_id": "openalex_w1965895545",
+          "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Transforming the candidate measure into the odd kernel",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u21.txt",
+          "unit_bytes": 3094,
+          "unit_id": "full_openalex_w1965895545_u21",
+          "unit_sha256": "df75a251f493d42d6bf61b775d6f1a1e362dde163155f7979500d588b1cab3ae",
+          "unit_type": "integral representation certificate",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u21.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A complicated candidate density is certified by choosing transformations that expose a standard Gaussian integral; the representation proof is a necessary compatibility check between the measure and target kernel.",
+            "nonparaphrase_operation": "Fubini, the substitutions in y, k, and w, and the evaluated kernel W connect the lambda-mixture density to the elementary integral representation of H_Delta.",
+            "quality_reason": "The appendix uses Fubini and the displayed substitutions to reduce the double integral to an inner kernel W. Symmetry under k to 1/k and the change w=k-1/k evaluate W(x,y,Delta)=exp(-xy/Delta), yielding the stated representation of H_Delta for x>0. The transformation-to-standard-Gaussian description is grounded by the named variables and terminal evaluated kernel.",
+            "source_support": "Using Fubini and successive changes of variables, the source evaluates an inner integral W(x,y,Delta) as exp(-xy/Delta); integrating this against sin(y)/y-cos(y) yields the stated Gaussian-mixture representation of H_Delta for x>0.",
+            "speculation_status": "This establishes the identity but not positivity or finite mass, which are separate admissibility obligations handled in later units. The displays are fragmented, though the substitutions and terminal identity W=exp(-xy/Delta) are explicit. Calling the calculation a compatibility certificate for the candidate measure accurately distinguishes verification from merely postulating the mixture. Successive displays are fragmented, but the substitutions and terminal identity are explicit enough for semantic use."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Closes the most delicate admissibility condition for odd Gaussian subordination.",
+          "line_end": 1690,
+          "line_start": 1642,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The density integral is formula-dependent but its reductions and final derivative certificate are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Turns nonnegativity of the oscillatory-looking density into a one-variable inequality, then proves it from h(0)=0 and an explicitly nonnegative derivative.",
+          "source_id": "openalex_w1965895545",
+          "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+          "source_page_markers_inside_unit": [
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Reducing measure positivity to monotonicity of a scalar remainder",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u22.txt",
+          "unit_bytes": 2591,
+          "unit_id": "full_openalex_w1965895545_u22",
+          "unit_sha256": "285f02f1f9c261911d0e9d014786becc29ebfd50981f1b4256493eb78eaf63e9",
+          "unit_type": "positivity certificate",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u22.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Rather than estimating an oscillatory integral directly, the proof finds a one-dimensional certificate whose monotonicity makes the required sign manifest.",
+            "nonparaphrase_operation": "Variable scaling, integration by parts, the odd-Gaussian Fourier transform, and the auxiliary remainder h bridge measure density to a positive derivative.",
+            "quality_reason": "Scaling, integration by parts, and the odd-Gaussian Fourier transform reduce density nonnegativity to h(a)>=0. The displayed h satisfies h(0)=0 and h'(a)=exp(a^2)4a^2/(1+2a^2)^2>=0, which proves the required sign. The one-dimensional-certificate language is specific because the candidate gives h and its derivative rather than only saying positivity becomes manifest.",
+            "source_support": "After scaling the density integral, integration by parts and the Fourier transform of the odd Gaussian reduce its sign to h(a)=integral_0^a exp(w^2)dw-a exp(a^2)/(1+2a^2); the source computes h(0)=0 and h'(a)=exp(a^2)4a^2/(1+2a^2)^2, hence h is nonnegative.",
+            "speculation_status": "The certificate proves nonnegativity for this density only and does not furnish a generic positivity test for other subordinating measures. The density formula is typography-sensitive, but the reduction to h and its derivative certificate are recoverable. Describing this as replacing direct oscillatory estimation by a monotonicity certificate faithfully captures the non-paraphrase operation. The density typography is sensitive, but the reductions, h formula, and derivative certificate are recoverable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Short terminal certificate for Appendix A.",
+          "line_end": 1696,
+          "line_start": 1691,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The limit display is legible enough to identify the total mass as pi/2.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the established representation and monotone convergence as x approaches zero to compute finite total mass, completing the measure hypotheses.",
+          "source_id": "openalex_w1965895545",
+          "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Total mass from monotone convergence",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u23.txt",
+          "unit_bytes": 491,
+          "unit_id": "full_openalex_w1965895545_u23",
+          "unit_sha256": "abc5e3e4d432d0902f133903fc867498eac507bc21e1dd6f2ab20945a987713f",
+          "unit_type": "measure finiteness certificate",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u23.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A boundary value of the represented function encodes the mass of its positive mixing measure, avoiding a direct integration of the complicated density.",
+            "nonparaphrase_operation": "The positive Gaussian mixture, monotone convergence, and the limit H_Delta(0+) connect kernel behavior to measure finiteness.",
+            "quality_reason": "Using the previously established nonnegative mixture, the span applies monotone convergence as x approaches zero from above. The limit of H_Delta(x) is explicitly computed as pi/2, giving the finite total mass of mu_Delta. The finiteness-certificate language is anchored in the precise positive-mixture limit and does not merely restate the conclusion.",
+            "source_support": "The source applies monotone convergence to the established representation as x approaches zero from above and computes the total mass of mu_Delta as the limiting value of H_Delta(x), namely pi/2.",
+            "speculation_status": "This step depends on the previously established representation and nonnegativity; without positivity, monotone convergence would not justify the conclusion. The short limit display is legible enough to identify the mass pi/2. Interpreting the boundary value as encoding mixing-measure mass is exactly the conceptual operation performed by the limit. The short limit display is legible enough to identify the limiting process and mass."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a58520186df6dd4ff42f506ae96a7e22a9ebae6272b8630b96a562dfa7b7d808"
+}

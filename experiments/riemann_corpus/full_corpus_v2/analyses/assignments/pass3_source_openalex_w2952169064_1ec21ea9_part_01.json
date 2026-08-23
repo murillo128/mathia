@@ -1,0 +1,3195 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2952169064_1ec21ea9_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2952169064",
+  "unit_count": 22,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the motivating function-field/monodromy viewpoint and the exact family definitions needed to interpret every later density statement.",
+      "line_end": 77,
+      "line_start": 13,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose with light notation; the family and sign distinctions survive the imperfect text-layer rendering.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes large-weight GL2, large-level GL2, and symmetric-square GL3 families, then uses self-duality and functional-equation signs to predict O/SO parity types versus Sp.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three conductor-ordered families and their symmetry classes",
+      "unit_artifact_relpath": "depth/units/batch79_u01.txt",
+      "unit_bytes": 4107,
+      "unit_id": "batch79_u01",
+      "unit_sha256": "78b40c61978bd778c94e5a8b3c3fdfe9c7b2ecfb75cac03e7311c1c51781faae",
+      "unit_type": "family construction and symmetry prediction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u01.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5,
+          "line_end": 12,
+          "text": "\n\n                                                                     H.Iwaniec, W.Luo and P.Sarnak 1\n\n\n\n\narXiv:math/9901141v1 [math.NT] 19 Jan 1999\n",
+          "sha256": "7a4fcd2992964eee163b6195c60b34cf7607faba7396d13fa066f27641edec07"
+        },
+        "after": {
+          "line_start": 78,
+          "line_end": 85,
+          "text": "\n\n\n\n                                            2\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "2168d3de3349a752d337ecfaa3390d29ab90ef67e6fda8e297c964042df45b52"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter, introduction, families, density conjecture, main results, and quasi-RH consequence",
+            "line_end": 416,
+            "line_start": 1,
+            "mathematical_role": "Defines the three families and scaled zero statistic, predicts symmetry types, states density and nonvanishing results, and identifies support beyond the diagonal as the source of stronger information."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 77,
+          "line_start": 13,
+          "title": "Three conductor-ordered families and their symmetry classes",
+          "unit_id": "batch79_u01",
+          "unit_type": "family construction and symmetry prediction",
+          "why_material": "The source distinguishes large-weight GL2, large-level GL2, and symmetric-square GL3 families, then uses self-duality and functional-equation signs to predict O/SO parity types versus Sp."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the motivating function-field/monodromy viewpoint and the exact family definitions needed to interpret every later density statement.",
+          "representation_dependency": "Mostly prose with light notation; the family and sign distinctions survive the imperfect text-layer rendering.",
+          "unit_id": "batch79_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 151,
+            "line_start": 86,
+            "title": "Scaled low-lying zero density as a symmetry observable",
+            "unit_id": "batch79_u02",
+            "unit_type": "definition and conjectural correspondence",
+            "why_material": "Defines the conductor-scaled one-level statistic and states the density conjecture that identifies its family limit with a random-matrix symmetry kernel."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Breaking parity inserts concrete analytic structure—weight congruence in the K-aspect and a level coefficient in the N-aspect—whose off-diagonal contribution changes sign and separates SO(even) from SO(odd).",
+            "limit": "The two implementations are analogous but not identical, and both conclusions are conditional on the stated GRH assumptions and support ranges.",
+            "parent_local_unit_ids": [
+              "batch79_u01",
+              "batch79_u09",
+              "batch79_u10",
+              "batch79_u13",
+              "batch79_u14",
+              "batch79_u17",
+              "batch79_u19"
+            ],
+            "title": "Functional-equation parity is an analytic operator, not only a label"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u01",
+        "spontaneous": {
+          "unit_id": "batch79_u01",
+          "spontaneous_reading": "The family definition is doing more than bookkeeping: conductor ordering, self-duality, and functional-equation sign jointly select the scale and the expected local symmetry, with sign splitting the GL2 orthogonal family while the symmetric-square lift remains symplectic."
+        },
+        "directed": {
+          "unit_id": "batch79_u01",
+          "source_grounded_mathematics": "The source defines large-weight level-one GL2 forms with conductor k^2, fixed-weight prime-level GL2 newforms with conductor N, and symmetric-square GL3 lifts with conductor k^2. It predicts O symmetry for the two GL2 families, SO(even) and SO(odd) after splitting by sign, and Sp symmetry for symmetric squares, whose sign is always +1.",
+          "conceptual_reading": "A family is a structured population rather than a list of L-functions: the ordering parameter fixes the microscopic scale, while self-duality and sign expose distinctions expected to govern low zeros.",
+          "representation_or_bridge": "Function-field monodromy supplies the motivating bridge from arithmetic families to random-matrix symmetry classes; conductor and root number are the concrete bridge variables used on the number-field side.",
+          "boundary_or_failure": "These symmetry assignments are predictions motivating density tests, not proofs of the density conjecture, and the span does not derive monodromy for the number-field families.",
+          "uncertainty": "The family and sign distinctions are clear in the text layer; some typography around the alternative orthogonal-group labels is imperfect and should not be used for exact notation without the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the zero parametrization, scale, averaging convention, four kernels, and conjecture together so the observable is not detached from its semantics.",
+      "line_end": 151,
+      "line_start": 86,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed formulas are text-layer fragmented, but the prose fixes the scale and the named kernels; scan verification would be prudent for exact transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the conductor-scaled one-level statistic and states the density conjecture that identifies its family limit with a random-matrix symmetry kernel.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Scaled low-lying zero density as a symmetry observable",
+      "unit_artifact_relpath": "depth/units/batch79_u02.txt",
+      "unit_bytes": 3018,
+      "unit_id": "batch79_u02",
+      "unit_sha256": "fa1e0adaf2bbfca1e36bb0937eed550bf661404516092e61381912b00ecdbd8e",
+      "unit_type": "definition and conjectural correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u02.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 78,
+          "line_end": 85,
+          "text": "\n\n\n\n                                            2\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "2168d3de3349a752d337ecfaa3390d29ab90ef67e6fda8e297c964042df45b52"
+        },
+        "after": {
+          "line_start": 152,
+          "line_end": 159,
+          "text": "\n   Towards this Density Conjecture the following theorem is our main result. Let\nHk∗ (Γ0 (N)) denote the set of newforms (normalized to have first coefficient 1) of weight\n\nk for Γ0 (N). Let Hk± (Γ0 (N)) be the subsets with ǫf = 1 and ǫf = −1 respectively.\nNote that if N = 1 for f ∈ Hk∗ (Γ) we have ǫf = (−1)k/2 . Set\n                                          X\n                     M + (K) =                      #Hk∗ (Γ),\n",
+          "sha256": "bcfb911bf43cec5845955722965c43eda67a2a4780910e243002f7b13aa7d2eb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter, introduction, families, density conjecture, main results, and quasi-RH consequence",
+            "line_end": 416,
+            "line_start": 1,
+            "mathematical_role": "Defines the three families and scaled zero statistic, predicts symmetry types, states density and nonvanishing results, and identifies support beyond the diagonal as the source of stronger information."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 151,
+          "line_start": 86,
+          "title": "Scaled low-lying zero density as a symmetry observable",
+          "unit_id": "batch79_u02",
+          "unit_type": "definition and conjectural correspondence",
+          "why_material": "Defines the conductor-scaled one-level statistic and states the density conjecture that identifies its family limit with a random-matrix symmetry kernel."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the zero parametrization, scale, averaging convention, four kernels, and conjecture together so the observable is not detached from its semantics.",
+          "representation_dependency": "Several displayed formulas are text-layer fragmented, but the prose fixes the scale and the named kernels; scan verification would be prudent for exact transcription.",
+          "unit_id": "batch79_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 77,
+            "line_start": 13,
+            "title": "Three conductor-ordered families and their symmetry classes",
+            "unit_id": "batch79_u01",
+            "unit_type": "family construction and symmetry prediction",
+            "why_material": "The source distinguishes large-weight GL2, large-level GL2, and symmetric-square GL3 families, then uses self-duality and functional-equation signs to predict O/SO parity types versus Sp."
+          },
+          {
+            "line_end": 247,
+            "line_start": 153,
+            "title": "Density theorem across three families and why support past one matters",
+            "unit_id": "batch79_u03",
+            "unit_type": "theorem and method-significance analysis",
+            "why_material": "States the conditional support ranges for parity-split GL2 and symmetric-square densities and explains that crossing Fourier support one activates genuinely new Kloosterman off-diagonal main terms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support controls accessible prime ranges; crossing support one changes the proof qualitatively because trace-formula off-diagonal terms become main terms and reveal distinctions invisible to the diagonal.",
+            "limit": "The exact accessible range and arithmetic evaluation differ by family, aspect, and hypotheses; this is a source-internal pattern, not a universal theorem.",
+            "parent_local_unit_ids": [
+              "batch79_u02",
+              "batch79_u03",
+              "batch79_u07",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u17"
+            ],
+            "title": "Fourier support as a phase boundary for arithmetic information"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u02",
+        "spontaneous": {
+          "unit_id": "batch79_u02",
+          "spontaneous_reading": "Conductor rescaling turns zeros near the central point into a common microscopic coordinate, so a one-level statistic can compare arithmetically different families with the SO(even), SO(odd), O, and Sp kernels."
+        },
+        "directed": {
+          "unit_id": "batch79_u02",
+          "source_grounded_mathematics": "Writing nontrivial zeros as 1/2+i gamma, the source defines D(F,phi) by evaluating an even Schwartz test function at gamma log(c_F)/(2 pi), averages D over family members ordered by conductor, lists the four symmetry densities, and conjectures convergence to the kernel attached to the family.",
+          "conceptual_reading": "The test statistic compresses an entire local zero configuration into controlled linear observables; varying phi probes the limiting measure without requiring pointwise convergence of individual zeros.",
+          "representation_or_bridge": "The factor log(c_F)/(2 pi) aligns the natural mean-zero spacing across conductors, and the Fourier transform of phi later bridges the zero statistic to prime sums through the explicit formula.",
+          "boundary_or_failure": "Compact Fourier support restricts which observables the later arguments can establish, and gamma being real is equivalent here to GRH rather than an unconditional property.",
+          "uncertainty": "The prose fixes the scaling and kernel identities, but fragmented displayed formulas make exact transcription of every measure term scan-dependent."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The remarks are essential: they distinguish diagonal confirmation from the stronger beyond-diagonal test of the symmetry conjecture.",
+      "line_end": 247,
+      "line_start": 153,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem equations are recoverable by surrounding family labels and prose; exact interval endpoints should remain tied to the displayed text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the conditional support ranges for parity-split GL2 and symmetric-square densities and explains that crossing Fourier support one activates genuinely new Kloosterman off-diagonal main terms.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Density theorem across three families and why support past one matters",
+      "unit_artifact_relpath": "depth/units/batch79_u03.txt",
+      "unit_bytes": 4209,
+      "unit_id": "batch79_u03",
+      "unit_sha256": "35283ba515f2538120ec3a1aef1d0f5c52d6ca5457a7658f41f9146ceb6d7dd9",
+      "unit_type": "theorem and method-significance analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u03.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 145,
+          "line_end": 152,
+          "text": "                             X                       Z ∞\n                    1\n               lim                    D(F, φ) =            φ(x)W (G(F ))(x)dx              (5)\n              x→∞ Mx (F )                             −∞\n                          F ∈F ,cF ≤x\n\nfor any φ ∈ S(R) with support of φ̂ compact, where G(F ) is the proposed symmetry.\n\n",
+          "sha256": "02afc77228a24374bd16ba79133307171456624a2b9f4538cd8b7568425eb435"
+        },
+        "after": {
+          "line_start": 248,
+          "line_end": 255,
+          "text": "\n   By choosing positive test functions φ in Theorem 1 with appropriate restrictions on\nthe support of φ̂, we obtain estimates for the number of f ∈ F such that L( 21 , f ) 6=\n0. An analysis of the optimal choice for φ for this purpose involves extremizing a\nquadratic form subject to a linear constraint and is carried out in the Appendix.\n\n\n                                           5\n",
+          "sha256": "cef359e16bc45d681c35ed802eac2b147f8da64a2568ccf067786ff02e6e025d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter, introduction, families, density conjecture, main results, and quasi-RH consequence",
+            "line_end": 416,
+            "line_start": 1,
+            "mathematical_role": "Defines the three families and scaled zero statistic, predicts symmetry types, states density and nonvanishing results, and identifies support beyond the diagonal as the source of stronger information."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 247,
+          "line_start": 153,
+          "title": "Density theorem across three families and why support past one matters",
+          "unit_id": "batch79_u03",
+          "unit_type": "theorem and method-significance analysis",
+          "why_material": "States the conditional support ranges for parity-split GL2 and symmetric-square densities and explains that crossing Fourier support one activates genuinely new Kloosterman off-diagonal main terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The remarks are essential: they distinguish diagonal confirmation from the stronger beyond-diagonal test of the symmetry conjecture.",
+          "representation_dependency": "The theorem equations are recoverable by surrounding family labels and prose; exact interval endpoints should remain tied to the displayed text.",
+          "unit_id": "batch79_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 151,
+            "line_start": 86,
+            "title": "Scaled low-lying zero density as a symmetry observable",
+            "unit_id": "batch79_u02",
+            "unit_type": "definition and conjectural correspondence",
+            "why_material": "Defines the conductor-scaled one-level statistic and states the density conjecture that identifies its family limit with a random-matrix symmetry kernel."
+          },
+          {
+            "line_end": 324,
+            "line_start": 249,
+            "title": "Positive band-limited tests convert density into central nonvanishing",
+            "unit_id": "batch79_u04",
+            "unit_type": "density-to-nonvanishing consequence",
+            "why_material": "Introduces constrained positive test-function optimization, states the resulting nonvanishing and mean-rank-style bounds, and explains that support extension is what beats diagonal-only thresholds."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support controls accessible prime ranges; crossing support one changes the proof qualitatively because trace-formula off-diagonal terms become main terms and reveal distinctions invisible to the diagonal.",
+            "limit": "The exact accessible range and arithmetic evaluation differ by family, aspect, and hypotheses; this is a source-internal pattern, not a universal theorem.",
+            "parent_local_unit_ids": [
+              "batch79_u02",
+              "batch79_u03",
+              "batch79_u07",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u17"
+            ],
+            "title": "Fourier support as a phase boundary for arithmetic information"
+          },
+          {
+            "claim": "Off-diagonal arithmetic makes the Fourier-side density kernel nonconstant; positivity then turns zero density into a band-limited extremal problem whose Fredholm solution improves central nonvanishing bounds.",
+            "limit": "The resulting proportions are lower bounds under the source's hypotheses, not exact nonvanishing densities.",
+            "parent_local_unit_ids": [
+              "batch79_u03",
+              "batch79_u04",
+              "batch79_u18",
+              "batch79_u19",
+              "batch79_u20",
+              "batch79_u21",
+              "batch79_u22"
+            ],
+            "title": "From arithmetic density to an operator-theoretic nonvanishing optimizer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u03",
+        "spontaneous": {
+          "unit_id": "batch79_u03",
+          "spontaneous_reading": "The decisive threshold is Fourier support one: below it the diagonal already mimics several symmetry types, while crossing it exposes Kloosterman off-diagonal main terms that can actually distinguish the predicted kernels."
+        },
+        "directed": {
+          "unit_id": "batch79_u03",
+          "source_grounded_mathematics": "Under GRH, Theorem 1 gives SO(even) and SO(odd) one-level limits for the sign-split large-weight and large-level GL2 families when support(phi-hat) lies in (-2,2), and the Sp limit for symmetric squares in (-4/3,4/3). The remarks identify new Kloosterman contributions beyond support one.",
+          "conceptual_reading": "Fourier support is an information budget with a phase boundary: enlarging it does not merely improve an error term but activates arithmetic structure invisible to the diagonal regime.",
+          "representation_or_bridge": "The explicit formula turns support bounds into prime ranges, and the Petersson trace formula then separates a universal diagonal from family-sensitive Kloosterman terms.",
+          "boundary_or_failure": "The theorem verifies only band-limited instances of the density conjecture and is conditional on the stated GRH assumptions; it does not establish unrestricted low-zero statistics.",
+          "uncertainty": "The family labels and support intervals are recoverable, but exact displayed normalization should remain tied to the source image."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes limitations and comparison remarks, including the dependence on GRH and the modular-Jacobian application.",
+      "line_end": 324,
+      "line_start": 249,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Fractions and central-point typography are noisy, but the numbered cases and explanatory prose make the mechanism and direction of bounds recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces constrained positive test-function optimization, states the resulting nonvanishing and mean-rank-style bounds, and explains that support extension is what beats diagonal-only thresholds.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positive band-limited tests convert density into central nonvanishing",
+      "unit_artifact_relpath": "depth/units/batch79_u04.txt",
+      "unit_bytes": 3356,
+      "unit_id": "batch79_u04",
+      "unit_sha256": "fd897740424b82fbde8bd578461745d3fb853d990192aa4a49c9b58b87f2d861",
+      "unit_type": "density-to-nonvanishing consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u04.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 241,
+          "line_end": 248,
+          "text": "\nthe zeros of the Riemann zeta function (Montgomery [Mon], Hejhal [He], Rudnick-\nSarnak [RS]). The analysis in those works extends only as far as the diagonal terms\nbeing the main contribution to the asymptotics. In particular in as much as Theorem\n1 tests the density conjecture (5) beyond the diagonal, we feel it lends strong evidence\n\nto the truth of the conjecture.\n\n",
+          "sha256": "4f132f13e4e8beb91710278a96dbdb347277c3e24d24fde9b7d5889d6c4f0839"
+        },
+        "after": {
+          "line_start": 325,
+          "line_end": 332,
+          "text": "\n   The results in Theorem 1 are stated for families with fixed sign of ǫf , and they\n\nare conditional. However, if we do not break parity (with respect to the sign of ǫf )\nwe can easily establish unconditionally a version of Theorem 1, which is as strong .\nWe do so for a weighted version of the densities for the family FK , the weight being\n\nL(1, sym2 (f ))−1 which is dictated by the Petersson formula [Pet].\n",
+          "sha256": "998e9c8588a25b2e22fc3d959081cddf4defc61a75f96560c28aab3b3dd05498"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter, introduction, families, density conjecture, main results, and quasi-RH consequence",
+            "line_end": 416,
+            "line_start": 1,
+            "mathematical_role": "Defines the three families and scaled zero statistic, predicts symmetry types, states density and nonvanishing results, and identifies support beyond the diagonal as the source of stronger information."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 324,
+          "line_start": 249,
+          "title": "Positive band-limited tests convert density into central nonvanishing",
+          "unit_id": "batch79_u04",
+          "unit_type": "density-to-nonvanishing consequence",
+          "why_material": "Introduces constrained positive test-function optimization, states the resulting nonvanishing and mean-rank-style bounds, and explains that support extension is what beats diagonal-only thresholds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes limitations and comparison remarks, including the dependence on GRH and the modular-Jacobian application.",
+          "representation_dependency": "Fractions and central-point typography are noisy, but the numbered cases and explanatory prose make the mechanism and direction of bounds recoverable.",
+          "unit_id": "batch79_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 247,
+            "line_start": 153,
+            "title": "Density theorem across three families and why support past one matters",
+            "unit_id": "batch79_u03",
+            "unit_type": "theorem and method-significance analysis",
+            "why_material": "States the conditional support ranges for parity-split GL2 and symmetric-square densities and explains that crossing Fourier support one activates genuinely new Kloosterman off-diagonal main terms."
+          },
+          {
+            "line_end": 414,
+            "line_start": 326,
+            "title": "Prime exponential-sum cancellation would force a GL2 zero-free region",
+            "unit_id": "batch79_u05",
+            "unit_type": "conditional bridge and counterfactual implication",
+            "why_material": "Pairs an unconditional parity-mixed weighted density with a stronger prime-progressions hypothesis, then derives extended support and a quasi-Riemann-hypothesis consequence for large-weight GL2 forms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Off-diagonal arithmetic makes the Fourier-side density kernel nonconstant; positivity then turns zero density into a band-limited extremal problem whose Fredholm solution improves central nonvanishing bounds.",
+            "limit": "The resulting proportions are lower bounds under the source's hypotheses, not exact nonvanishing densities.",
+            "parent_local_unit_ids": [
+              "batch79_u03",
+              "batch79_u04",
+              "batch79_u18",
+              "batch79_u19",
+              "batch79_u20",
+              "batch79_u21",
+              "batch79_u22"
+            ],
+            "title": "From arithmetic density to an operator-theoretic nonvanishing optimizer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u04",
+        "spontaneous": {
+          "unit_id": "batch79_u04",
+          "spontaneous_reading": "A positive band-limited test converts a distributional zero-density statement into a bound on central vanishing, and optimizing that conversion becomes a genuine constrained quadratic problem rather than a cosmetic choice of test function."
+        },
+        "directed": {
+          "unit_id": "batch79_u04",
+          "source_grounded_mathematics": "The source derives sign-specific GL2 central-nonvanishing lower bounds, an average central-order bound in the level family, and a symmetric-square nonvanishing bound from Theorem 1. It stresses that support beyond the diagonal thresholds is what makes the improvements strict and refers the optimal positive-test problem to the appendix.",
+          "conceptual_reading": "Positivity provides a one-way transfer: each central zero incurs a nonnegative cost in the density statistic, so minimizing the expected cost under phi(0)=1 sharpens exclusion of vanishing.",
+          "representation_or_bridge": "The density kernel becomes a quadratic functional of a band-limited factor of phi, linking analytic number theory to an operator-theoretic extremal problem.",
+          "boundary_or_failure": "The reported proportions are conditional lower bounds, not exact limiting nonvanishing densities; famous-kernel predictions are not established merely by obtaining these consequences.",
+          "uncertainty": "The inequality mechanism and numbered cases are clear, while several fractions and central-point glyphs are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit captures the source's explicit bridge from a classical GL1-type cancellation statement to control of GL2 zeros, including the stated auxiliary zero-location assumption.",
+      "line_end": 414,
+      "line_start": 326,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exponential-sum display and numerical endpoint are legible enough in context, though exact formula reuse should be checked against the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Pairs an unconditional parity-mixed weighted density with a stronger prime-progressions hypothesis, then derives extended support and a quasi-Riemann-hypothesis consequence for large-weight GL2 forms.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime exponential-sum cancellation would force a GL2 zero-free region",
+      "unit_artifact_relpath": "depth/units/batch79_u05.txt",
+      "unit_bytes": 3771,
+      "unit_id": "batch79_u05",
+      "unit_sha256": "55cd2788b4cdddbb13d42e5a5f354061a1bc435e2f6fe2c417a1b5cf660a7ee1",
+      "unit_type": "conditional bridge and counterfactual implication",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u05.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 318,
+          "line_end": 325,
+          "text": "recently been established by Kowalski-Michel [KM] and Vanderkam [Va]. Also in\nKowalski-Michel [KM] an unconditional upper bound of 6.5 in place of 1 in (e) above,\n\nis proven.\n(D). The Density Conjecture for FN and the cases (c), (d) and (e) of Corollary 2\nspecified to k = 2 have applications to the estimation of the ranks of the Jacobians\nof the modular curves X0 (N), see [KS2] for a description of these implications.\n\n",
+          "sha256": "0ae1c2dc7dada126e062016a75b57b8fc46bcc15975db250381c62e3f829cec3"
+        },
+        "after": {
+          "line_start": 415,
+          "line_end": 422,
+          "text": "\n\n2      Large weight\n2.1     Preliminaries\n\nIn order to carry out summations over the weight k (k even) we recall some results\nabout series of Bessel functions, the Petersson Formula and the Explicit Formula.\n\n",
+          "sha256": "a2afdff263f60d0cfa4813ca899d95adcbe39b165b1595994c9d60dbe467371c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter, introduction, families, density conjecture, main results, and quasi-RH consequence",
+            "line_end": 416,
+            "line_start": 1,
+            "mathematical_role": "Defines the three families and scaled zero statistic, predicts symmetry types, states density and nonvanishing results, and identifies support beyond the diagonal as the source of stronger information."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 414,
+          "line_start": 326,
+          "title": "Prime exponential-sum cancellation would force a GL2 zero-free region",
+          "unit_id": "batch79_u05",
+          "unit_type": "conditional bridge and counterfactual implication",
+          "why_material": "Pairs an unconditional parity-mixed weighted density with a stronger prime-progressions hypothesis, then derives extended support and a quasi-Riemann-hypothesis consequence for large-weight GL2 forms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit captures the source's explicit bridge from a classical GL1-type cancellation statement to control of GL2 zeros, including the stated auxiliary zero-location assumption.",
+          "representation_dependency": "The exponential-sum display and numerical endpoint are legible enough in context, though exact formula reuse should be checked against the page image.",
+          "unit_id": "batch79_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 324,
+            "line_start": 249,
+            "title": "Positive band-limited tests convert density into central nonvanishing",
+            "unit_id": "batch79_u04",
+            "unit_type": "density-to-nonvanishing consequence",
+            "why_material": "Introduces constrained positive test-function optimization, states the resulting nonvanishing and mean-rank-style bounds, and explains that support extension is what beats diagonal-only thresholds."
+          },
+          {
+            "line_end": 613,
+            "line_start": 420,
+            "title": "Bessel summation, Petersson averaging, and the explicit formula",
+            "unit_id": "batch79_u06",
+            "unit_type": "analytic toolkit",
+            "why_material": "Assembles the three transformations used repeatedly: averaging Bessel kernels over weight, replacing form averages by diagonal plus Kloosterman sums, and replacing zeros by prime-power coefficients."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Improved cancellation for an analytic exponential phase over primes in progressions extends density support far enough that positivity of a chosen test function excludes real GL2 zeros beyond a quantitative endpoint.",
+            "limit": "The source states an auxiliary condition on zero locations for this derivation and explicitly notes that removing it needs a different method not contained here.",
+            "parent_local_unit_ids": [
+              "batch79_u05",
+              "batch79_u08"
+            ],
+            "title": "A classical prime-cancellation hypothesis as a higher-degree zero detector"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 613,
+              "line_start": 417,
+              "reason": "Reusable analytic setup for all large-weight arguments; retained as a toolkit unit although many individual displayed identities are standard."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u05",
+        "spontaneous": {
+          "unit_id": "batch79_u05",
+          "spontaneous_reading": "Cancellation in an analytic square-root phase over primes in progressions enlarges the observable Fourier window; positivity then amplifies that average gain into exclusion of an individual real GL2 zero past a quantitative boundary."
+        },
+        "directed": {
+          "unit_id": "batch79_u05",
+          "source_grounded_mathematics": "Hypothesis 4 posits square-root-strength cancellation for sums of exp(2 sqrt(p)/c) over primes in a residue class. It extends the parity-mixed weighted density from support (-2,2) to (-7/3,7/3), and, assuming every zero is either critical-line or real, yields L(beta,f) nonzero for beta>13/14 for sufficiently large weight.",
+          "conceptual_reading": "The argument is a counterfactual bridge from a classical prime-distribution estimate to higher-degree zero geometry: additional cancellation buys support, and support buys a stronger zero detector.",
+          "representation_or_bridge": "The bridge object is the Bessel-induced oscillatory prime sum; a nonnegative squared-sinc test converts its averaged control into a hyperbolic-growth inequality for an off-line real zero.",
+          "boundary_or_failure": "This is not a proof of GL2 RH: it depends on Hypothesis 4 and an auxiliary zero-location dichotomy, and the source says removing the latter requires a different method not present here.",
+          "uncertainty": "The implication and endpoint are explicit, but the exponential-sum display and exact exponents should be scan-checked before reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records why inverse symmetric-square values are the natural Petersson weights and how the sign-restricted averaging operators are normalized.",
+      "line_end": 613,
+      "line_start": 420,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy and text-layer fragile; the roles of each proposition are secure from prose, but exact kernels and constants require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Assembles the three transformations used repeatedly: averaging Bessel kernels over weight, replacing form averages by diagonal plus Kloosterman sums, and replacing zeros by prime-power coefficients.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        10,
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bessel summation, Petersson averaging, and the explicit formula",
+      "unit_artifact_relpath": "depth/units/batch79_u06.txt",
+      "unit_bytes": 9169,
+      "unit_id": "batch79_u06",
+      "unit_sha256": "14cafe4d8f69d3fa653c1ecca970a70f29e23647c7b8a9f5720a6916f519afed",
+      "unit_type": "analytic toolkit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u06.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 412,
+          "line_end": 419,
+          "text": "λf (p) is the p-th Fourier coefficient of f , and the Riemann Hypothesis for L(s, f ).\nThe relation in Corollary 6 also throws new light on these classical exponential sums\nin Hypothesis 4.\n\n\n2      Large weight\n2.1     Preliminaries\n\n",
+          "sha256": "7323ce0b62049f29e428068ed7d0fe7d83dc297065c72a6f708a7b6958fa5a31"
+        },
+        "after": {
+          "line_start": 614,
+          "line_end": 621,
+          "text": "2.2        When k ≡ 0(mod2):\n\n          Fix a test function φ as in Proposition 3. For K large and A1 K ≤ k ≤ A2 K\n\n(A1 < A2 , fixed) define the densities of low-lying zeros for f ∈ Hk∗ (Γ) by\n\n                                                                 !\n                                                γf log K 2\n",
+          "sha256": "340d05febca0e99d9eb9fcda829514b89fe5f0e1f0d77745518cd0b976b02a5e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large weight: analytic preliminaries",
+            "line_end": 613,
+            "line_start": 417,
+            "mathematical_role": "Supplies Bessel summation, Hecke and symmetric-square identities, Petersson averaging, harmonic weights, and the explicit formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 613,
+          "line_start": 420,
+          "title": "Bessel summation, Petersson averaging, and the explicit formula",
+          "unit_id": "batch79_u06",
+          "unit_type": "analytic toolkit",
+          "why_material": "Assembles the three transformations used repeatedly: averaging Bessel kernels over weight, replacing form averages by diagonal plus Kloosterman sums, and replacing zeros by prime-power coefficients."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also records why inverse symmetric-square values are the natural Petersson weights and how the sign-restricted averaging operators are normalized.",
+          "representation_dependency": "Formula-heavy and text-layer fragile; the roles of each proposition are secure from prose, but exact kernels and constants require scan verification.",
+          "unit_id": "batch79_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 414,
+            "line_start": 326,
+            "title": "Prime exponential-sum cancellation would force a GL2 zero-free region",
+            "unit_id": "batch79_u05",
+            "unit_type": "conditional bridge and counterfactual implication",
+            "why_material": "Pairs an unconditional parity-mixed weighted density with a stronger prime-progressions hypothesis, then derives extended support and a quasi-Riemann-hypothesis consequence for large-weight GL2 forms."
+          },
+          {
+            "line_end": 727,
+            "line_start": 614,
+            "title": "Explicit-formula decomposition in the diagonal support regime",
+            "unit_id": "batch79_u07",
+            "unit_type": "proof mechanism",
+            "why_material": "Shows how the zero statistic splits into archimedean, prime-square, prime, and higher terms; compact support bounds prime ranges so Petersson plus Weil makes the non-diagonal pieces negligible and leaves the O-density main term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Petersson naturally supplies inverse symmetric-square weights; a short Dirichlet-series approximation to their reciprocal converts harmonic trace-formula information into uniform family statistics.",
+            "limit": "The approximation is invoked under GRH here and its error control is aspect-specific.",
+            "parent_local_unit_ids": [
+              "batch79_u06",
+              "batch79_u09",
+              "batch79_u13",
+              "batch79_u14"
+            ],
+            "title": "A repeated weighted-to-uniform transfer pattern"
+          },
+          {
+            "claim": "The source repeatedly turns explicit-formula prime terms into Kloosterman sums, then into character or Poisson decompositions whose principal/zero-frequency part supplies the symmetry correction while the rest is bounded away.",
+            "limit": "Not every off-diagonal term survives: the parity-blind large-level part cancels, and the symmetric-square arithmetic requires a distinct multiplicative evaluation.",
+            "parent_local_unit_ids": [
+              "batch79_u06",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u16",
+              "batch79_u17"
+            ],
+            "title": "Trace formula to character sums to symmetry kernel"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 613,
+              "line_start": 417,
+              "reason": "Reusable analytic setup for all large-weight arguments; retained as a toolkit unit although many individual displayed identities are standard."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u06",
+        "spontaneous": {
+          "unit_id": "batch79_u06",
+          "spontaneous_reading": "Three transforms form the reusable engine: weight-averaged Bessel kernels localize oscillation, Petersson replaces a form average by diagonal plus Kloosterman sums, and the explicit formula replaces zeros by prime-power coefficients."
+        },
+        "directed": {
+          "unit_id": "batch79_u06",
+          "source_grounded_mathematics": "The span states Bessel summation formulas for weights in parity classes, Hecke and symmetric-square identities, the Petersson trace formula with inverse L(1,sym^2 f) weight, normalized averaging operators, and an explicit formula relating zeros of L(s,f) to archimedean and prime-power terms.",
+          "conceptual_reading": "Each formula changes representation to expose a different controllable feature: spectral averaging exposes arithmetic sums, while the explicit formula makes low zeros accessible through coefficients.",
+          "representation_or_bridge": "The harmonic weight L(1,sym^2 f)^(-1) is forced by Petersson normalization; Bessel kernels and Kloosterman sums are the intermediate objects connecting family averages to prime data.",
+          "boundary_or_failure": "This toolkit alone proves no density result, and its usefulness depends on later support restrictions, cancellation estimates, and sometimes GRH-based unweighting.",
+          "uncertainty": "The roles of the propositions are secure, but the formula-dense extraction is unsafe for exact constants, kernels, or normalization without scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is useful as a baseline against which every later support-extension contribution is identified.",
+      "line_end": 727,
+      "line_start": 614,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed summands are OCR-sensitive, but their named decomposition and the support-to-prime-range logic are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how the zero statistic splits into archimedean, prime-square, prime, and higher terms; compact support bounds prime ranges so Petersson plus Weil makes the non-diagonal pieces negligible and leaves the O-density main term.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit-formula decomposition in the diagonal support regime",
+      "unit_artifact_relpath": "depth/units/batch79_u07.txt",
+      "unit_bytes": 6023,
+      "unit_id": "batch79_u07",
+      "unit_sha256": "55c0ab05fd87348d73745bdd7141bc518df2b6d25bfc057d0909c98a8cd15b51",
+      "unit_type": "proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u07.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 606,
+          "line_end": 613,
+          "text": "γf   2π           2π   −∞                Γ       2         Γ                 2                       2π\n                                                          ∞\n                                                         XX log p\n                                                    −2           ν/2\n                                                                         (αf (p)ν + βf (p)ν )φ̂(log pν ).\n                                                         p ν=1 p\n\n\n",
+          "sha256": "4ec45c16f4611ccb29e701d810ecd28eda67be11d303a8aeaa345678ecd2a528"
+        },
+        "after": {
+          "line_start": 728,
+          "line_end": 735,
+          "text": "\n   We turn to extending this result to φ̂’s with larger support. Allowing p to be larger\nthan K 4 in the term III above one faces the new term coming from Proposition 1\npart B, viz the imaginary part of\n                                                    !\n                           X log p      log p           X S(1, p, c)\n                                  √ φ̂\n                              p    p   2 log K           c        c\n",
+          "sha256": "39a235c4816d42fd5f616015706d86977e41983fe7e0985a29d4cd2bb3d902b6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large weight without parity split",
+            "line_end": 845,
+            "line_start": 614,
+            "mathematical_role": "Decomposes the averaged explicit formula, proves the orthogonal density in support less than two, and conditionally extends support to derive a zero-free region."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 727,
+          "line_start": 614,
+          "title": "Explicit-formula decomposition in the diagonal support regime",
+          "unit_id": "batch79_u07",
+          "unit_type": "proof mechanism",
+          "why_material": "Shows how the zero statistic splits into archimedean, prime-square, prime, and higher terms; compact support bounds prime ranges so Petersson plus Weil makes the non-diagonal pieces negligible and leaves the O-density main term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof is useful as a baseline against which every later support-extension contribution is identified.",
+          "representation_dependency": "Displayed summands are OCR-sensitive, but their named decomposition and the support-to-prime-range logic are recoverable.",
+          "unit_id": "batch79_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 613,
+            "line_start": 420,
+            "title": "Bessel summation, Petersson averaging, and the explicit formula",
+            "unit_id": "batch79_u06",
+            "unit_type": "analytic toolkit",
+            "why_material": "Assembles the three transformations used repeatedly: averaging Bessel kernels over weight, replacing form averages by diagonal plus Kloosterman sums, and replacing zeros by prime-power coefficients."
+          },
+          {
+            "line_end": 840,
+            "line_start": 729,
+            "title": "Extended support turns density positivity into individual zero exclusion",
+            "unit_id": "batch79_u08",
+            "unit_type": "support-extension and zero-detection mechanism",
+            "why_material": "Tracks the new oscillatory Bessel term past the diagonal range, controls it by the prime-progressions hypothesis, and uses a nonnegative squared-sinc test to turn the averaged estimate into a bound on each real off-line zero."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support controls accessible prime ranges; crossing support one changes the proof qualitatively because trace-formula off-diagonal terms become main terms and reveal distinctions invisible to the diagonal.",
+            "limit": "The exact accessible range and arithmetic evaluation differ by family, aspect, and hypotheses; this is a source-internal pattern, not a universal theorem.",
+            "parent_local_unit_ids": [
+              "batch79_u02",
+              "batch79_u03",
+              "batch79_u07",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u17"
+            ],
+            "title": "Fourier support as a phase boundary for arithmetic information"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 613,
+              "line_start": 417,
+              "reason": "Reusable analytic setup for all large-weight arguments; retained as a toolkit unit although many individual displayed identities are standard."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u07",
+        "spontaneous": {
+          "unit_id": "batch79_u07",
+          "spontaneous_reading": "In the support-below-two regime the explicit formula decomposes the statistic so completely that only the universal integral and prime-square contribution survive; Petersson plus Weil suppresses the coefficient-sensitive terms and leaves orthogonal density."
+        },
+        "directed": {
+          "unit_id": "batch79_u07",
+          "source_grounded_mathematics": "For the large-weight parity-mixed harmonic average, the explicit formula splits D_K into an archimedean term, a scalar prime term, a prime-linear lambda_f(p) term, and a lambda_f(p^2) term. Support in (-2,2) bounds the prime ranges, and Petersson, Bessel summation, and Weil bounds make the last two negligible, giving integral phi plus phi(0)/2.",
+          "conceptual_reading": "The calculation is a baseline experiment: compact support keeps the trace formula in a diagonal regime where family-specific off-diagonal structure is filtered out.",
+          "representation_or_bridge": "Fourier support translates directly into prime cutoffs; the Petersson formula and Bessel decay then turn those cutoffs into error estimates.",
+          "boundary_or_failure": "The resulting O kernel cannot distinguish the two root-number parities and does not test the discontinuities at support one.",
+          "uncertainty": "Term roles and support logic are clear, though individual displayed summands are OCR-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the chain from support restriction through the hyperbolic growth estimate to the stated zero-free endpoint.",
+      "line_end": 840,
+      "line_start": 729,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The asymptotic inequalities contain extraction risk; the prose and equation sequence establish the argument, while exact exponent checking should use the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Tracks the new oscillatory Bessel term past the diagonal range, controls it by the prime-progressions hypothesis, and uses a nonnegative squared-sinc test to turn the averaged estimate into a bound on each real off-line zero.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Extended support turns density positivity into individual zero exclusion",
+      "unit_artifact_relpath": "depth/units/batch79_u08.txt",
+      "unit_bytes": 5182,
+      "unit_id": "batch79_u08",
+      "unit_sha256": "fe65fb19ce79550f2ecc3c8e7ced4da689bef104ed754dfdaeaa63ab9a0e0d61",
+      "unit_type": "support-extension and zero-detection mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u08.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 721,
+          "line_end": 728,
+          "text": "                     AK [DK (f, φ)] ∼ (           φ(x)dx +            )AK [1]\n                                             −∞                   2\n                                   Z ∞\n                                                    φ(0) ĥ(0)K\n                              ∼(         φ(x)dx +       )       ,                  (29)\n                                   −∞                2      2\nas K → ∞. This establishes Theorem 3.\n\n",
+          "sha256": "394864b870af6e208bdacf189825e6840fd05f89c1017830a2ada0a27c6ebc40"
+        },
+        "after": {
+          "line_start": 841,
+          "line_end": 848,
+          "text": "\n                                              16\n\n<!-- source-page: 17 -->\n\n2.3     When k ≡ a(mod4):\n\nIn this subsection we consider similar averages to the previous one except that we\n",
+          "sha256": "3d1d9f48146ab9f44e4840f7d68481a18049d52e2aabc78ba6aeb8ffd9ae66ca"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large weight without parity split",
+            "line_end": 845,
+            "line_start": 614,
+            "mathematical_role": "Decomposes the averaged explicit formula, proves the orthogonal density in support less than two, and conditionally extends support to derive a zero-free region."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 840,
+          "line_start": 729,
+          "title": "Extended support turns density positivity into individual zero exclusion",
+          "unit_id": "batch79_u08",
+          "unit_type": "support-extension and zero-detection mechanism",
+          "why_material": "Tracks the new oscillatory Bessel term past the diagonal range, controls it by the prime-progressions hypothesis, and uses a nonnegative squared-sinc test to turn the averaged estimate into a bound on each real off-line zero."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves the chain from support restriction through the hyperbolic growth estimate to the stated zero-free endpoint.",
+          "representation_dependency": "The asymptotic inequalities contain extraction risk; the prose and equation sequence establish the argument, while exact exponent checking should use the scan.",
+          "unit_id": "batch79_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 727,
+            "line_start": 614,
+            "title": "Explicit-formula decomposition in the diagonal support regime",
+            "unit_id": "batch79_u07",
+            "unit_type": "proof mechanism",
+            "why_material": "Shows how the zero statistic splits into archimedean, prime-square, prime, and higher terms; compact support bounds prime ranges so Petersson plus Weil makes the non-diagonal pieces negligible and leaves the O-density main term."
+          },
+          {
+            "line_end": 1045,
+            "line_start": 846,
+            "title": "Removing harmonic weights before parity-sensitive averaging",
+            "unit_id": "batch79_u09",
+            "unit_type": "representation change and reduction",
+            "why_material": "Uses GRH to approximate the symmetric-square value by a short Dirichlet series, multiplies it into the explicit formula, and separates diagonal, negligible, and potentially main off-diagonal pieces."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Improved cancellation for an analytic exponential phase over primes in progressions extends density support far enough that positivity of a chosen test function excludes real GL2 zeros beyond a quantitative endpoint.",
+            "limit": "The source states an auxiliary condition on zero locations for this derivation and explicitly notes that removing it needs a different method not contained here.",
+            "parent_local_unit_ids": [
+              "batch79_u05",
+              "batch79_u08"
+            ],
+            "title": "A classical prime-cancellation hypothesis as a higher-degree zero detector"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u08",
+        "spontaneous": {
+          "unit_id": "batch79_u08",
+          "spontaneous_reading": "Past the diagonal range, a previously negligible oscillatory Bessel contribution becomes the sole obstruction; Hypothesis 4 controls exactly that term, after which a positive test detects any real off-line zero through exponential growth."
+        },
+        "directed": {
+          "unit_id": "batch79_u08",
+          "source_grounded_mathematics": "Allowing the prime-linear term beyond p about K^4 introduces an oscillatory expression involving Kloosterman sums and exp(2 sqrt(p)/c). Hypothesis 4 makes it o(K) through support (-7/3,7/3); a nonnegative squared-sinc test with parameter below 7/6 then forces any real zero to have real part at most 13/14 under the stated zero-location assumption.",
+          "conceptual_reading": "Support extension is useful only after identifying and controlling the new obstruction; positivity then changes an average density estimate into an individual exclusion statement.",
+          "representation_or_bridge": "Partial summation packages the prime phase into residue-class sums F_{a,c}; the squared-sinc test turns an imaginary zero ordinate into a sinh term whose growth contradicts the averaged bound.",
+          "boundary_or_failure": "The conclusion applies only under Hypothesis 4 and the assumption that non-critical zeros are real; it neither handles general complex off-line zeros nor proves full RH.",
+          "uncertainty": "The argument sequence is explicit, but extraction risk affects detailed asymptotic exponents and inequalities."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the critical unweighting step that makes uniform sign-restricted family counts comparable to harmonic Petersson averages.",
+      "line_end": 1045,
+      "line_start": 846,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dense; the short-series reduction and term classification are reliable from prose, but precise summation indices warrant scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses GRH to approximate the symmetric-square value by a short Dirichlet series, multiplies it into the explicit formula, and separates diagonal, negligible, and potentially main off-diagonal pieces.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        18,
+        19,
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Removing harmonic weights before parity-sensitive averaging",
+      "unit_artifact_relpath": "depth/units/batch79_u09.txt",
+      "unit_bytes": 9053,
+      "unit_id": "batch79_u09",
+      "unit_sha256": "0d1bcbce86a6d152c8bf84c5385391dfffe8d2e7fd61d1c2d1d091038de6f041",
+      "unit_type": "representation change and reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u09.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 838,
+          "line_end": 845,
+          "text": "\nFor k large this implies that µf ⩽ (2ν)−1 , i.e. µf ⩽ 3/7. We conclude that any real\nzero ρf satisfies ρf ⩽ 13/14. This establishes Corollary 6.\n\n                                              16\n\n<!-- source-page: 17 -->\n\n",
+          "sha256": "d266c1b7b4e0f6e40a40b4ad65548577f7e1d92c9c835a2139c19a489b4b7baf"
+        },
+        "after": {
+          "line_start": 1046,
+          "line_end": 1053,
+          "text": "   This leaves us with the second term in (50) which in fact contributes to the main\nterm (this being an ‘off-diagonal’ contribution). Applying Proposition 2 it equals\n\n\n                                                 !\n           6   X log p  log p\n       − 2        √ φ̂\n        π log K p   p  2 log K\n",
+          "sha256": "fe4768a9faa280e6651fe12205f2df59e3d15cba5adbb0ee058853e30a9c53ba"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large weight with fixed functional-equation sign",
+            "line_end": 1255,
+            "line_start": 846,
+            "mathematical_role": "Removes harmonic weights via a short symmetric-square Dirichlet series and evaluates the off-diagonal term that separates SO(even) from SO(odd)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1045,
+          "line_start": 846,
+          "title": "Removing harmonic weights before parity-sensitive averaging",
+          "unit_id": "batch79_u09",
+          "unit_type": "representation change and reduction",
+          "why_material": "Uses GRH to approximate the symmetric-square value by a short Dirichlet series, multiplies it into the explicit formula, and separates diagonal, negligible, and potentially main off-diagonal pieces."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the critical unweighting step that makes uniform sign-restricted family counts comparable to harmonic Petersson averages.",
+          "representation_dependency": "Formula-dense; the short-series reduction and term classification are reliable from prose, but precise summation indices warrant scan verification.",
+          "unit_id": "batch79_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 840,
+            "line_start": 729,
+            "title": "Extended support turns density positivity into individual zero exclusion",
+            "unit_id": "batch79_u08",
+            "unit_type": "support-extension and zero-detection mechanism",
+            "why_material": "Tracks the new oscillatory Bessel term past the diagonal range, controls it by the prime-progressions hypothesis, and uses a nonnegative squared-sinc test to turn the averaged estimate into a bound on each real off-line zero."
+          },
+          {
+            "line_end": 1254,
+            "line_start": 1046,
+            "title": "Kloosterman-to-character conversion yields the SO parity split",
+            "unit_id": "batch79_u10",
+            "unit_type": "off-diagonal evaluation",
+            "why_material": "Evaluates the surviving prime-linear Petersson term by Bessel averaging, character orthogonality, GRH for Dirichlet L-functions, and a principal-character main term, producing opposite Fourier-tail corrections for the two signs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Breaking parity inserts concrete analytic structure—weight congruence in the K-aspect and a level coefficient in the N-aspect—whose off-diagonal contribution changes sign and separates SO(even) from SO(odd).",
+            "limit": "The two implementations are analogous but not identical, and both conclusions are conditional on the stated GRH assumptions and support ranges.",
+            "parent_local_unit_ids": [
+              "batch79_u01",
+              "batch79_u09",
+              "batch79_u10",
+              "batch79_u13",
+              "batch79_u14",
+              "batch79_u17",
+              "batch79_u19"
+            ],
+            "title": "Functional-equation parity is an analytic operator, not only a label"
+          },
+          {
+            "claim": "Petersson naturally supplies inverse symmetric-square weights; a short Dirichlet-series approximation to their reciprocal converts harmonic trace-formula information into uniform family statistics.",
+            "limit": "The approximation is invoked under GRH here and its error control is aspect-specific.",
+            "parent_local_unit_ids": [
+              "batch79_u06",
+              "batch79_u09",
+              "batch79_u13",
+              "batch79_u14"
+            ],
+            "title": "A repeated weighted-to-uniform transfer pattern"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u09",
+        "spontaneous": {
+          "unit_id": "batch79_u09",
+          "spontaneous_reading": "Uniform parity-sensitive counting is recovered from a harmonically weighted trace formula by multiplying back the symmetric-square value and replacing it with a short Dirichlet series; this exposes exactly one off-diagonal term capable of carrying the sign distinction."
+        },
+        "directed": {
+          "unit_id": "batch79_u09",
+          "source_grounded_mathematics": "Assuming GRH, the source bounds D_K(f,phi), approximates L(1,sym^2 f) by a short sum of lambda_f(n^2)/(m^2 n), inserts it into the parity-class harmonic average, and applies the explicit formula. The resulting terms are classified as main, error, negligible prime-square, and a surviving prime-linear correlation.",
+          "conceptual_reading": "Unweighting is a controlled change of measure: the short symmetric-square series removes Petersson bias while retaining a form on which the trace formula can act.",
+          "representation_or_bridge": "The truncated Dirichlet series is the bridge between uniform family statistics and harmonic spectral averages; parity is represented by the weight congruence class.",
+          "boundary_or_failure": "The transfer uses GRH and short-series error control and is valid only within the fixed support margin; the span does not yet evaluate the surviving off-diagonal term.",
+          "uncertainty": "The reduction and term classification are clear, but precise indices and constants are formula-extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the final replacement of the fixed K-scale statistic by the true conductor-scaled density and therefore closes the large-weight theorem.",
+      "line_end": 1254,
+      "line_start": 1046,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants and nested sums are text-layer sensitive; the off-diagonal pipeline and final SO(even)/SO(odd) interpretations are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Evaluates the surviving prime-linear Petersson term by Bessel averaging, character orthogonality, GRH for Dirichlet L-functions, and a principal-character main term, producing opposite Fourier-tail corrections for the two signs.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        21,
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kloosterman-to-character conversion yields the SO parity split",
+      "unit_artifact_relpath": "depth/units/batch79_u10.txt",
+      "unit_bytes": 11083,
+      "unit_id": "batch79_u10",
+      "unit_sha256": "1a301644d5d75c6f93ce2d5d6797b0594c888cf39033d56dfd5a24a8035c2a53",
+      "unit_type": "off-diagonal evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u10.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1038,
+          "line_end": 1045,
+          "text": "                     p       p      log K        m2 n≤K δ0\n                                                           mn c        c            cK\n                 X   log p X        1 X − 1 +ǫ         1\n     ≪ K+                           2\n                                           c 2 ≪ K + K 2 +ǫ ≪ K.                              (52)\n               p≤K 2\n                       p m2 n≤K δ0 m n c≤K\n\n",
+          "sha256": "5e87d8068a49c0bb63038b426b6c29db9652571a2ef66468e172af499eab3a61"
+        },
+        "after": {
+          "line_start": 1255,
+          "line_end": 1262,
+          "text": "\n2.4    The symmetric square\n\nIn this subsection we investigate the distribution of the low lying zeros for the family\nof L-functions L(s, F ) where F = sym2 (f ), f ∈ Hk∗ (Γ). As in the previous sections\nwe let ρF = 12 + iγF denote a typical (non-trivial) zero of L(s, F ). Throughout\n\nthis subsection we assume GRH. From (14) and the usual derivation ([RS]) of the\n",
+          "sha256": "f69d22363350dac20891030b4aabde6bb0748d1be6f60e4351d7bef6a08b6d45"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large weight with fixed functional-equation sign",
+            "line_end": 1255,
+            "line_start": 846,
+            "mathematical_role": "Removes harmonic weights via a short symmetric-square Dirichlet series and evaluates the off-diagonal term that separates SO(even) from SO(odd)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1254,
+          "line_start": 1046,
+          "title": "Kloosterman-to-character conversion yields the SO parity split",
+          "unit_id": "batch79_u10",
+          "unit_type": "off-diagonal evaluation",
+          "why_material": "Evaluates the surviving prime-linear Petersson term by Bessel averaging, character orthogonality, GRH for Dirichlet L-functions, and a principal-character main term, producing opposite Fourier-tail corrections for the two signs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the final replacement of the fixed K-scale statistic by the true conductor-scaled density and therefore closes the large-weight theorem.",
+          "representation_dependency": "Exact constants and nested sums are text-layer sensitive; the off-diagonal pipeline and final SO(even)/SO(odd) interpretations are explicit in prose.",
+          "unit_id": "batch79_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1045,
+            "line_start": 846,
+            "title": "Removing harmonic weights before parity-sensitive averaging",
+            "unit_id": "batch79_u09",
+            "unit_type": "representation change and reduction",
+            "why_material": "Uses GRH to approximate the symmetric-square value by a short Dirichlet series, multiplies it into the explicit formula, and separates diagonal, negligible, and potentially main off-diagonal pieces."
+          },
+          {
+            "line_end": 1366,
+            "line_start": 1256,
+            "title": "Symmetric-square explicit formula and identification of its exceptional term",
+            "unit_id": "batch79_u11",
+            "unit_type": "family-specific reformulation",
+            "why_material": "Rewrites the prime coefficients for symmetric squares, introduces the corresponding uniform average, and isolates the prime-square term that becomes a main term only beyond support one."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support controls accessible prime ranges; crossing support one changes the proof qualitatively because trace-formula off-diagonal terms become main terms and reveal distinctions invisible to the diagonal.",
+            "limit": "The exact accessible range and arithmetic evaluation differ by family, aspect, and hypotheses; this is a source-internal pattern, not a universal theorem.",
+            "parent_local_unit_ids": [
+              "batch79_u02",
+              "batch79_u03",
+              "batch79_u07",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u17"
+            ],
+            "title": "Fourier support as a phase boundary for arithmetic information"
+          },
+          {
+            "claim": "Breaking parity inserts concrete analytic structure—weight congruence in the K-aspect and a level coefficient in the N-aspect—whose off-diagonal contribution changes sign and separates SO(even) from SO(odd).",
+            "limit": "The two implementations are analogous but not identical, and both conclusions are conditional on the stated GRH assumptions and support ranges.",
+            "parent_local_unit_ids": [
+              "batch79_u01",
+              "batch79_u09",
+              "batch79_u10",
+              "batch79_u13",
+              "batch79_u14",
+              "batch79_u17",
+              "batch79_u19"
+            ],
+            "title": "Functional-equation parity is an analytic operator, not only a label"
+          },
+          {
+            "claim": "The source repeatedly turns explicit-formula prime terms into Kloosterman sums, then into character or Poisson decompositions whose principal/zero-frequency part supplies the symmetry correction while the rest is bounded away.",
+            "limit": "Not every off-diagonal term survives: the parity-blind large-level part cancels, and the symmetric-square arithmetic requires a distinct multiplicative evaluation.",
+            "parent_local_unit_ids": [
+              "batch79_u06",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u16",
+              "batch79_u17"
+            ],
+            "title": "Trace formula to character sums to symmetry kernel"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u10",
+        "spontaneous": {
+          "unit_id": "batch79_u10",
+          "spontaneous_reading": "The parity split is manufactured analytically: the weight-congruence phase survives Bessel averaging, Kloosterman sums become characters, and only the principal character leaves a Fourier-tail main term whose sign flips between the two classes."
+        },
+        "directed": {
+          "unit_id": "batch79_u10",
+          "source_grounded_mathematics": "The surviving lambda_f(p) correlation is passed through Petersson and the main term of the parity-restricted Bessel sum, expanded by character orthogonality, and estimated under Dirichlet GRH. Nonprincipal characters are lower order; the principal character contributes an integral of phi-hat over |xi|>=1 with opposite signs for weights 0 and 2 modulo 4, yielding SO(even) and SO(odd) densities for support (-2,2).",
+          "conceptual_reading": "Functional-equation parity acts as an operator on the off-diagonal rather than as a passive label: its phase changes the symmetry correction while the diagonal remains shared.",
+          "representation_or_bridge": "Kloosterman sums, Dirichlet characters, and the principal-character prime main term form the bridge from the Petersson off-diagonal to the random-matrix Fourier tail.",
+          "boundary_or_failure": "The conclusion is GRH-conditional, support-limited, and specific to this large-weight averaging interface; it does not show solver-independent universality of the mechanism.",
+          "uncertainty": "The pipeline and final kernels are explicit, while exact constants and nested-sum normalizations require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit includes the target symplectic density and the bounds that dispose of the other components.",
+      "line_end": 1366,
+      "line_start": 1256,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The coefficient identity is formula-dependent; the surrounding prose clearly identifies which term is non-diagonal and why it matters.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites the prime coefficients for symmetric squares, introduces the corresponding uniform average, and isolates the prime-square term that becomes a main term only beyond support one.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetric-square explicit formula and identification of its exceptional term",
+      "unit_artifact_relpath": "depth/units/batch79_u11.txt",
+      "unit_bytes": 5750,
+      "unit_id": "batch79_u11",
+      "unit_sha256": "d4518a1ec95ae1a46da485bdb1a7eea0fbd503b543721b72cd31beddf58975c4",
+      "unit_type": "family-specific reformulation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u11.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1248,
+          "line_end": 1255,
+          "text": "                                              Z ∞\n                     −1              −1\n                    SK  [D(f, φ)] ∼ SK  [1]          ω(SO(odd))(x)φ(x)dx\n                                               −∞\n\nfor any φ with support (φ̂) ⊂ (−2, 2). This completes the proof of Theorem 1 for the\nfamily FK .\n\n",
+          "sha256": "77ad512080bc7b52f976b1c658efef61b1326bf5fe69244942da52f25e9b1379"
+        },
+        "after": {
+          "line_start": 1367,
+          "line_end": 1374,
+          "text": "                                                     !                                    \n                 6   X log p  log p                                  X λf (n2 )λf (p2 ) \n             − 2        √ φ̂                             AK                                       (75)\n              π log K p   p  2 log K                         m2 n≤K δ0\n                                                                            m2 n\n                                                         !                         !\n                 6   X log p  log p                                  X     k−1          2π 2\n            =− 2        √ φ̂                                             h\n",
+          "sha256": "cba71f07be91ee3f41962ee623aa552656de9c83056cfb870960fb5374c0bc6e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Symmetric-square family",
+            "line_end": 1788,
+            "line_start": 1256,
+            "mathematical_role": "Reworks the explicit/Petersson analysis for degree three and extracts the non-diagonal main term producing symplectic density."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1366,
+          "line_start": 1256,
+          "title": "Symmetric-square explicit formula and identification of its exceptional term",
+          "unit_id": "batch79_u11",
+          "unit_type": "family-specific reformulation",
+          "why_material": "Rewrites the prime coefficients for symmetric squares, introduces the corresponding uniform average, and isolates the prime-square term that becomes a main term only beyond support one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit includes the target symplectic density and the bounds that dispose of the other components.",
+          "representation_dependency": "The coefficient identity is formula-dependent; the surrounding prose clearly identifies which term is non-diagonal and why it matters.",
+          "unit_id": "batch79_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1254,
+            "line_start": 1046,
+            "title": "Kloosterman-to-character conversion yields the SO parity split",
+            "unit_id": "batch79_u10",
+            "unit_type": "off-diagonal evaluation",
+            "why_material": "Evaluates the surviving prime-linear Petersson term by Bessel averaging, character orthogonality, GRH for Dirichlet L-functions, and a principal-character main term, producing opposite Fourier-tail corrections for the two signs."
+          },
+          {
+            "line_end": 1782,
+            "line_start": 1367,
+            "title": "Poisson analysis of the symmetric-square term produces symplectic density",
+            "unit_id": "batch79_u12",
+            "unit_type": "off-diagonal evaluation",
+            "why_material": "Transforms the exceptional Petersson term into arithmetic sums, evaluates a multiplicative Kloosterman aggregate, applies Poisson summation, extracts the zero-frequency main term, and proves the remaining frequencies negligible."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u11",
+        "spontaneous": {
+          "unit_id": "batch79_u11",
+          "spontaneous_reading": "For symmetric squares the explicit formula reorganizes coefficients so that a prime-square correlation, negligible in smaller support, becomes the exceptional off-diagonal object expected to reverse the orthogonal sinc correction into a symplectic one."
+        },
+        "directed": {
+          "unit_id": "batch79_u11",
+          "source_grounded_mathematics": "Assuming GRH, the source writes the symmetric-square explicit formula using lambda_f(p^2) and lambda_f(p^4)-lambda_f(p^2), defines a uniformly weighted average via the same symmetric-square unweighting, disposes of the routine terms, and isolates term III involving lambda_f(n^2)lambda_f(p^2) as order K once support crosses one.",
+          "conceptual_reading": "Changing from GL2 to its symmetric-square lift changes which coefficient correlation encodes the family-specific symmetry; the exceptional term is identified before it is evaluated.",
+          "representation_or_bridge": "The Hecke coefficient identities translate degree-three prime data back to GL2 eigenvalues, making Petersson averaging available for the lifted family.",
+          "boundary_or_failure": "This unit only isolates the exceptional term and states the target Sp density; it does not itself establish the required off-diagonal asymptotic.",
+          "uncertainty": "The identity and term roles are clear in prose, but exact coefficient formulas remain scan-dependent."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends with the Fourier correction and the completed support-4/3 symplectic density theorem.",
+      "line_end": 1782,
+      "line_start": 1367,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This long span is highly formula-dependent and should be scan-checked before exact reuse; the sequence of transformations and the main-versus-error distinction remain recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms the exceptional Petersson term into arithmetic sums, evaluates a multiplicative Kloosterman aggregate, applies Poisson summation, extracts the zero-frequency main term, and proves the remaining frequencies negligible.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson analysis of the symmetric-square term produces symplectic density",
+      "unit_artifact_relpath": "depth/units/batch79_u12.txt",
+      "unit_bytes": 24666,
+      "unit_id": "batch79_u12",
+      "unit_sha256": "f702d438c1b4ba73f932bcf8cef5a3704ed577f8f66e4858f9bcf10f1faa0c15",
+      "unit_type": "off-diagonal evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u12.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1359,
+          "line_end": 1366,
+          "text": "Applying Propositions 1 and 2 we find that for φ with support(φ̂) ⊂ (−5/3, 5/3)\n\n                                       IV ≪ K/ log K.                                              (74)\n\n\n   So we are left with the term III whose analysis will occupy the rest of this subsec-\ntion. Remarkably it contributes to the main term (i.e. it is of size K) when support(φ̂)\nis not inside [−1, 1]. That is this term gives a ‘non-diagonal’ contribution.\n",
+          "sha256": "4854a4b9504569191c7ebb9831d73a4e28f931fd26d3195ac03749bfcc1b57eb"
+        },
+        "after": {
+          "line_start": 1783,
+          "line_end": 1790,
+          "text": "\n\n                                                       31\n\n<!-- source-page: 32 -->\n\n3     Large level\n3.1    Preliminaries\n",
+          "sha256": "94d5c53c3c1d75c9030efb24d3a4c18ec738e0201014453fe03acc18b8f191cf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Symmetric-square family",
+            "line_end": 1788,
+            "line_start": 1256,
+            "mathematical_role": "Reworks the explicit/Petersson analysis for degree three and extracts the non-diagonal main term producing symplectic density."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1782,
+          "line_start": 1367,
+          "title": "Poisson analysis of the symmetric-square term produces symplectic density",
+          "unit_id": "batch79_u12",
+          "unit_type": "off-diagonal evaluation",
+          "why_material": "Transforms the exceptional Petersson term into arithmetic sums, evaluates a multiplicative Kloosterman aggregate, applies Poisson summation, extracts the zero-frequency main term, and proves the remaining frequencies negligible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Ends with the Fourier correction and the completed support-4/3 symplectic density theorem.",
+          "representation_dependency": "This long span is highly formula-dependent and should be scan-checked before exact reuse; the sequence of transformations and the main-versus-error distinction remain recoverable.",
+          "unit_id": "batch79_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1366,
+            "line_start": 1256,
+            "title": "Symmetric-square explicit formula and identification of its exceptional term",
+            "unit_id": "batch79_u11",
+            "unit_type": "family-specific reformulation",
+            "why_material": "Rewrites the prime coefficients for symmetric squares, introduces the corresponding uniform average, and isolates the prime-square term that becomes a main term only beyond support one."
+          },
+          {
+            "line_end": 2007,
+            "line_start": 1789,
+            "title": "Large-level newform normalization and Petersson weights",
+            "unit_id": "batch79_u13",
+            "unit_type": "normalization and trace-formula construction",
+            "why_material": "Derives the level-N functional-equation sign, unfolds an Eisenstein series to identify the first Fourier coefficient and natural harmonic weight, then obtains usable Petersson estimates including a special coefficient involving N."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support controls accessible prime ranges; crossing support one changes the proof qualitatively because trace-formula off-diagonal terms become main terms and reveal distinctions invisible to the diagonal.",
+            "limit": "The exact accessible range and arithmetic evaluation differ by family, aspect, and hypotheses; this is a source-internal pattern, not a universal theorem.",
+            "parent_local_unit_ids": [
+              "batch79_u02",
+              "batch79_u03",
+              "batch79_u07",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u17"
+            ],
+            "title": "Fourier support as a phase boundary for arithmetic information"
+          },
+          {
+            "claim": "The source repeatedly turns explicit-formula prime terms into Kloosterman sums, then into character or Poisson decompositions whose principal/zero-frequency part supplies the symmetry correction while the rest is bounded away.",
+            "limit": "Not every off-diagonal term survives: the parity-blind large-level part cancels, and the symmetric-square arithmetic requires a distinct multiplicative evaluation.",
+            "parent_local_unit_ids": [
+              "batch79_u06",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u16",
+              "batch79_u17"
+            ],
+            "title": "Trace formula to character sums to symmetry kernel"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2066,
+              "line_start": 1789,
+              "reason": "Large-level normalization, Petersson estimates, parity projectors, and explicit formula required to understand the N-aspect proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u12",
+        "spontaneous": {
+          "unit_id": "batch79_u12",
+          "spontaneous_reading": "The symmetric-square correction comes from a zero-frequency Poisson term hidden inside a multiplicative Kloosterman aggregate; all nonzero frequencies are shown negligible, leaving precisely the Fourier contribution that produces symplectic density."
+        },
+        "directed": {
+          "unit_id": "batch79_u12",
+          "source_grounded_mathematics": "Petersson and Bessel summation transform the exceptional lambda_f(p^2) term into sums S_n(c). Their prime-power evaluation makes the modulus multiplicative, Poisson summation is applied to a square variable, the zero-frequency subtraction supplies the order-K main term, and the remaining frequencies are bounded. Combining terms yields the Sp kernel for support(phi-hat) in (-4/3,4/3).",
+          "conceptual_reading": "The proof searches for a canonical low-complexity component inside a complicated off-diagonal sum: after the right factorization, zero frequency is the structured signal and oscillatory frequencies are error.",
+          "representation_or_bridge": "The bridge runs from Petersson Kloosterman sums through multiplicative local evaluations and Poisson duality to an indicator-type Fourier correction in the density kernel.",
+          "boundary_or_failure": "The result is GRH-conditional and support-limited; the long arithmetic reduction is family-specific and does not imply every off-diagonal has a zero-frequency main term.",
+          "uncertainty": "The transformation sequence and main-versus-error distinction are recoverable, but the formula-heavy span needs scan verification for exact local factors and constants."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This setup explains why the later sign projector inserts a level-N Hecke eigenvalue rather than merely restricting a list of forms.",
+      "line_end": 2007,
+      "line_start": 1789,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Many displayed normalizations are extraction-sensitive; the derivation path and proposition roles are coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the level-N functional-equation sign, unfolds an Eisenstein series to identify the first Fourier coefficient and natural harmonic weight, then obtains usable Petersson estimates including a special coefficient involving N.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        33,
+        34,
+        35
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Large-level newform normalization and Petersson weights",
+      "unit_artifact_relpath": "depth/units/batch79_u13.txt",
+      "unit_bytes": 10905,
+      "unit_id": "batch79_u13",
+      "unit_sha256": "62a29fa803557e1b781e2e34b4ee8e8ea6527fe2c75a6886db4bdba8e0ccac06",
+      "unit_type": "normalization and trace-formula construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u13.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1781,
+          "line_end": 1788,
+          "text": "for support(φ̂) ⊂ (−4/3, 4/3).\n   This concludes the proof of Theorem 1 for the family Fsym2 .\n\n\n                                                       31\n\n<!-- source-page: 32 -->\n\n",
+          "sha256": "6ade25c3745d8ab1a1af29061584cf1ec91c24b10a486c07c673fd8ec4330289"
+        },
+        "after": {
+          "line_start": 2008,
+          "line_end": 2015,
+          "text": "\n   Set\n                                                  X\n                                   S[Xf ] =                 Xf ,               (133)\n                                              f ∈H ∗ (N )\n                                              X        1 + ǫf\n                             S + [Xf ] =                      Xf ,             (134)\n                                           f ∈H ∗ (N )\n",
+          "sha256": "08cc4265437ae6e690a3598acb0a3784e27b06f87a6867b9e8624871317e31db"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large level preliminaries",
+            "line_end": 2066,
+            "line_start": 1789,
+            "mathematical_role": "Normalizes level-N newforms, derives their harmonic weights, records Petersson estimates, parity projectors, and the level-aspect explicit formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2007,
+          "line_start": 1789,
+          "title": "Large-level newform normalization and Petersson weights",
+          "unit_id": "batch79_u13",
+          "unit_type": "normalization and trace-formula construction",
+          "why_material": "Derives the level-N functional-equation sign, unfolds an Eisenstein series to identify the first Fourier coefficient and natural harmonic weight, then obtains usable Petersson estimates including a special coefficient involving N."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This setup explains why the later sign projector inserts a level-N Hecke eigenvalue rather than merely restricting a list of forms.",
+          "representation_dependency": "Many displayed normalizations are extraction-sensitive; the derivation path and proposition roles are coherent.",
+          "unit_id": "batch79_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1782,
+            "line_start": 1367,
+            "title": "Poisson analysis of the symmetric-square term produces symplectic density",
+            "unit_id": "batch79_u12",
+            "unit_type": "off-diagonal evaluation",
+            "why_material": "Transforms the exceptional Petersson term into arithmetic sums, evaluates a multiplicative Kloosterman aggregate, applies Poisson summation, extracts the zero-frequency main term, and proves the remaining frequencies negligible."
+          },
+          {
+            "line_end": 2066,
+            "line_start": 2009,
+            "title": "From harmonic level averages to uniform sign subfamilies",
+            "unit_id": "batch79_u14",
+            "unit_type": "unweighting and parity projection",
+            "why_material": "Defines uniform and sign-projected sums, removes the inverse symmetric-square harmonic weight with a short series, establishes equal leading sizes for the two signs, and states the level-aspect explicit formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Breaking parity inserts concrete analytic structure—weight congruence in the K-aspect and a level coefficient in the N-aspect—whose off-diagonal contribution changes sign and separates SO(even) from SO(odd).",
+            "limit": "The two implementations are analogous but not identical, and both conclusions are conditional on the stated GRH assumptions and support ranges.",
+            "parent_local_unit_ids": [
+              "batch79_u01",
+              "batch79_u09",
+              "batch79_u10",
+              "batch79_u13",
+              "batch79_u14",
+              "batch79_u17",
+              "batch79_u19"
+            ],
+            "title": "Functional-equation parity is an analytic operator, not only a label"
+          },
+          {
+            "claim": "Petersson naturally supplies inverse symmetric-square weights; a short Dirichlet-series approximation to their reciprocal converts harmonic trace-formula information into uniform family statistics.",
+            "limit": "The approximation is invoked under GRH here and its error control is aspect-specific.",
+            "parent_local_unit_ids": [
+              "batch79_u06",
+              "batch79_u09",
+              "batch79_u13",
+              "batch79_u14"
+            ],
+            "title": "A repeated weighted-to-uniform transfer pattern"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2066,
+              "line_start": 1789,
+              "reason": "Large-level normalization, Petersson estimates, parity projectors, and explicit formula required to understand the N-aspect proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u13",
+        "spontaneous": {
+          "unit_id": "batch79_u13",
+          "spontaneous_reading": "At prime level, normalization reveals that the root number is itself a scaled level-N Hecke coefficient; this makes parity accessible to Petersson averaging instead of requiring an external partition of forms."
+        },
+        "directed": {
+          "unit_id": "batch79_u13",
+          "source_grounded_mathematics": "For weight-two prime-level newforms, the source relates Fricke eigenvalue and functional-equation sign to lambda_f(N), unfolds an Eisenstein series to express the first Fourier coefficient through a symmetric-square series, defines the positive harmonic weight, and derives Petersson estimates both for ordinary coefficients and the special lambda_f(N) correlation.",
+          "conceptual_reading": "Normalization is mathematically active: it converts geometric involution data into a coefficient observable compatible with the trace formula.",
+          "representation_or_bridge": "The chain Fricke involution to root number to lambda_f(N), together with Eisenstein unfolding and the symmetric-square weight, bridges sign-restricted uniform families to harmonic spectral estimates.",
+          "boundary_or_failure": "The presentation assumes prime level and treats weight two explicitly; fixed higher weight is only said to differ by negligible oldforms, and later truncation invokes GRH.",
+          "uncertainty": "The derivation path is coherent, but displayed constants and normalizations are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit is the large-level analogue of the large-weight unweighting step but with the functional-equation sign encoded through the Fricke/level coefficient.",
+      "line_end": 2066,
+      "line_start": 2009,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The operator identities are legible, while exact error exponents and prime-term coefficients should be checked against the source image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines uniform and sign-projected sums, removes the inverse symmetric-square harmonic weight with a short series, establishes equal leading sizes for the two signs, and states the level-aspect explicit formula.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        36
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From harmonic level averages to uniform sign subfamilies",
+      "unit_artifact_relpath": "depth/units/batch79_u14.txt",
+      "unit_bytes": 3230,
+      "unit_id": "batch79_u14",
+      "unit_sha256": "ee3932a55417665ae9b10c5df5bfe3010a2bba8c595d248504b38e5390ac6243",
+      "unit_type": "unweighting and parity projection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u14.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2001,
+          "line_end": 2008,
+          "text": "   Factoring the Kloosterman sum S(N, n; Nl) as a Ramanujan sum to the modulus\nN and a Kloosterman sum to the modulus l (see below), we get in a similar way\nProposition 3. We have\n\n                                      N                                1\n               A∗ [λf (N)λf (n)] =       δ(N, n) + Oǫ (N ǫ (n, N)(n/N) 2 ).    (132)\n                                      12\n\n",
+          "sha256": "3d462634d1a3175187112358b3cf9d3d395bd6d30cd2f65f56165bc7fc8d3197"
+        },
+        "after": {
+          "line_start": 2067,
+          "line_end": 2074,
+          "text": "3.2    Proof of Theorem 1 for FN\n\nIn what follows we examine the asymptotics of\n\n                                        S ± [D(f, φ)],                                           (140)\n\n                                                   36\n\n",
+          "sha256": "75af5b8451ccab7d827fad1e534b43dde9e6a2b16418c77b773709cc11aae0b2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large level preliminaries",
+            "line_end": 2066,
+            "line_start": 1789,
+            "mathematical_role": "Normalizes level-N newforms, derives their harmonic weights, records Petersson estimates, parity projectors, and the level-aspect explicit formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2066,
+          "line_start": 2009,
+          "title": "From harmonic level averages to uniform sign subfamilies",
+          "unit_id": "batch79_u14",
+          "unit_type": "unweighting and parity projection",
+          "why_material": "Defines uniform and sign-projected sums, removes the inverse symmetric-square harmonic weight with a short series, establishes equal leading sizes for the two signs, and states the level-aspect explicit formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit is the large-level analogue of the large-weight unweighting step but with the functional-equation sign encoded through the Fricke/level coefficient.",
+          "representation_dependency": "The operator identities are legible, while exact error exponents and prime-term coefficients should be checked against the source image.",
+          "unit_id": "batch79_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2007,
+            "line_start": 1789,
+            "title": "Large-level newform normalization and Petersson weights",
+            "unit_id": "batch79_u13",
+            "unit_type": "normalization and trace-formula construction",
+            "why_material": "Derives the level-N functional-equation sign, unfolds an Eisenstein series to identify the first Fourier coefficient and natural harmonic weight, then obtains usable Petersson estimates including a special coefficient involving N."
+          },
+          {
+            "line_end": 2135,
+            "line_start": 2067,
+            "title": "Large-level density isolates a single non-diagonal prime term",
+            "unit_id": "batch79_u15",
+            "unit_type": "proof decomposition",
+            "why_material": "Splits the sign-restricted density average, evaluates the universal and prime-square pieces, and identifies the remaining prime-linear contribution as the only order-N source of symmetry separation beyond support one."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Breaking parity inserts concrete analytic structure—weight congruence in the K-aspect and a level coefficient in the N-aspect—whose off-diagonal contribution changes sign and separates SO(even) from SO(odd).",
+            "limit": "The two implementations are analogous but not identical, and both conclusions are conditional on the stated GRH assumptions and support ranges.",
+            "parent_local_unit_ids": [
+              "batch79_u01",
+              "batch79_u09",
+              "batch79_u10",
+              "batch79_u13",
+              "batch79_u14",
+              "batch79_u17",
+              "batch79_u19"
+            ],
+            "title": "Functional-equation parity is an analytic operator, not only a label"
+          },
+          {
+            "claim": "Petersson naturally supplies inverse symmetric-square weights; a short Dirichlet-series approximation to their reciprocal converts harmonic trace-formula information into uniform family statistics.",
+            "limit": "The approximation is invoked under GRH here and its error control is aspect-specific.",
+            "parent_local_unit_ids": [
+              "batch79_u06",
+              "batch79_u09",
+              "batch79_u13",
+              "batch79_u14"
+            ],
+            "title": "A repeated weighted-to-uniform transfer pattern"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2066,
+              "line_start": 1789,
+              "reason": "Large-level normalization, Petersson estimates, parity projectors, and explicit formula required to understand the N-aspect proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u14",
+        "spontaneous": {
+          "unit_id": "batch79_u14",
+          "spontaneous_reading": "The level-aspect unweighting and sign projector create a common interface: uniform sums become short symmetric-square-weighted Petersson averages, while the root number injects the special level coefficient that can later generate parity separation."
+        },
+        "directed": {
+          "unit_id": "batch79_u14",
+          "source_grounded_mathematics": "The source defines uniform S and sign-projected S-plus and S-minus sums, expresses S through the inverse Petersson weight, truncates the symmetric-square series under GRH, obtains S[1] about N/12 and equal sign-family sizes about N/24, and states the level-aspect explicit formula with scalar, lambda_f(p^2), and lambda_f(p) prime terms.",
+          "conceptual_reading": "This is a change-of-measure plus projection step: it preserves the target uniform statistic while exposing both diagonal trace structure and a sign-sensitive coefficient insertion.",
+          "representation_or_bridge": "The short sum of lambda_f(n^2)/n bridges harmonic and uniform averages; the identity expressing epsilon_f through lambda_f(N) bridges parity projection to Petersson.",
+          "boundary_or_failure": "The approximation and equal-size asymptotics carry stated errors and GRH dependence; the unit prepares but does not prove the density limit.",
+          "uncertainty": "Operator identities are legible, while exact error exponents and prime-term constants should be scan-checked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This concise reduction makes the subsequent lengthy character-sum argument conceptually navigable.",
+      "line_end": 2135,
+      "line_start": 2067,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Term labels and asymptotic roles are clear despite imperfect display extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splits the sign-restricted density average, evaluates the universal and prime-square pieces, and identifies the remaining prime-linear contribution as the only order-N source of symmetry separation beyond support one.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        37,
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Large-level density isolates a single non-diagonal prime term",
+      "unit_artifact_relpath": "depth/units/batch79_u15.txt",
+      "unit_bytes": 3390,
+      "unit_id": "batch79_u15",
+      "unit_sha256": "e42c8e838bdade2bd4746d248bf226f00dd915881b830809acb5b828556188cb",
+      "unit_type": "proof decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u15.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2059,
+          "line_end": 2066,
+          "text": "                              2 X λf (p2 ) log p    2 log p\n                          −                      φ̂\n                            log N p6=N  p           log N\n                                                                          !              !\n                              2 X λf (p) log p     log p                           1\n                          −            √       φ̂                             +O             .\n                            log N p6=N   p        log N                          log N\n\n",
+          "sha256": "4f1a10c04a4b42c0e33cd324d2533ccf096b1f4985e6351a9757339564306b81"
+        },
+        "after": {
+          "line_start": 2136,
+          "line_end": 2143,
+          "text": "\n   Now\n                                                              !\n                    2 X X log p          log p                           1 + ǫf\n           IV = −                  √ φ̂                           A∗ [          λf (n2 )λf (p)].   (145)\n                  log N p6=N n≤N δ0 pn  log N                              2\n\n   We split this as IVA + IVB where\n",
+          "sha256": "90955f14af80c0752aa7143af25627e9587c9e1aef042a2b122c6a9b6ab81263"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large level proof",
+            "line_end": 2480,
+            "line_start": 2067,
+            "mathematical_role": "Separates routine terms from the sign-sensitive off-diagonal term and obtains the SO(even)/SO(odd) level-aspect densities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2135,
+          "line_start": 2067,
+          "title": "Large-level density isolates a single non-diagonal prime term",
+          "unit_id": "batch79_u15",
+          "unit_type": "proof decomposition",
+          "why_material": "Splits the sign-restricted density average, evaluates the universal and prime-square pieces, and identifies the remaining prime-linear contribution as the only order-N source of symmetry separation beyond support one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This concise reduction makes the subsequent lengthy character-sum argument conceptually navigable.",
+          "representation_dependency": "Term labels and asymptotic roles are clear despite imperfect display extraction.",
+          "unit_id": "batch79_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2066,
+            "line_start": 2009,
+            "title": "From harmonic level averages to uniform sign subfamilies",
+            "unit_id": "batch79_u14",
+            "unit_type": "unweighting and parity projection",
+            "why_material": "Defines uniform and sign-projected sums, removes the inverse symmetric-square harmonic weight with a short series, establishes equal leading sizes for the two signs, and states the level-aspect explicit formula."
+          },
+          {
+            "line_end": 2233,
+            "line_start": 2137,
+            "title": "The parity-blind large-level off-diagonal term cancels",
+            "unit_id": "batch79_u16",
+            "unit_type": "obstruction elimination",
+            "why_material": "Applies Petersson, truncates the modulus, expands primes by residue-class characters, and uses Dirichlet GRH to show both principal and nonprincipal portions of the parity-blind contribution are lower order."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2066,
+              "line_start": 1789,
+              "reason": "Large-level normalization, Petersson estimates, parity projectors, and explicit formula required to understand the N-aspect proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u15",
+        "spontaneous": {
+          "unit_id": "batch79_u15",
+          "spontaneous_reading": "After the explicit-formula expansion, every routine level-aspect contribution is lower order or universal, leaving one prime-linear off-diagonal term as the unique possible source of an order-N symmetry correction."
+        },
+        "directed": {
+          "unit_id": "batch79_u15",
+          "source_grounded_mathematics": "For support(phi-hat) in (-2,2), the sign-restricted density average is decomposed into five terms. The archimedean and scalar prime terms give integral phi plus phi(0)/2, the lambda_f(p^2) term is o(N), and the remaining lambda_f(p) term IV is split into a parity-blind part IVA and sign-weighted part IVB.",
+          "conceptual_reading": "The decomposition localizes the proof burden: symmetry separation cannot come from the shared diagonal, so it must be sought in the isolated sign-sensitive off-diagonal.",
+          "representation_or_bridge": "The explicit formula is the routing map, and Petersson estimates certify which coefficient correlations can survive at family scale.",
+          "boundary_or_failure": "Isolation of IV does not show that it has a main term; IVA and IVB require distinct later analyses under GRH and the support restriction.",
+          "uncertainty": "The asymptotic roles and labels are clear despite imperfect display layout."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The negative result is structurally useful because it locates the actual density correction in the sign-weighted component.",
+      "line_end": 2233,
+      "line_start": 2137,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Nested sums are OCR-fragile, but the split, character bound, and conclusion IVA=o(N) are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies Petersson, truncates the modulus, expands primes by residue-class characters, and uses Dirichlet GRH to show both principal and nonprincipal portions of the parity-blind contribution are lower order.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        39
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The parity-blind large-level off-diagonal term cancels",
+      "unit_artifact_relpath": "depth/units/batch79_u16.txt",
+      "unit_bytes": 5905,
+      "unit_id": "batch79_u16",
+      "unit_sha256": "dde3245a7e4027852f7fa3d0a6d2bfde7e7f4a88083c15ae011743fb9ac0a6c6",
+      "unit_type": "obstruction elimination",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u16.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2129,
+          "line_end": 2136,
+          "text": "\n\n                                             37\n\n<!-- source-page: 38 -->\n\nintroduction and which is present if support(φ̂) is not contained in [−1, 1].\n\n",
+          "sha256": "c2668e3becfe44bd28db5b89ba5d383fb20aa0494640fdc0e5c5043e48daf54b"
+        },
+        "after": {
+          "line_start": 2234,
+          "line_end": 2241,
+          "text": "\n\n   We turn to IVB which is given as\n                                                         !\n            −1 X X log p        log p                                              1\n    IVB =                  √ φ̂                               A∗ [−µ(N)N 2 λf (N)λf (n2 )λf (p)]               (154)\n          log N p6=N n≤N δ0 pn log N\n\n",
+          "sha256": "020299f933e09db1ece5729750a004dc8f00b2da54b25f01f5aff46f9c6c79b3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large level proof",
+            "line_end": 2480,
+            "line_start": 2067,
+            "mathematical_role": "Separates routine terms from the sign-sensitive off-diagonal term and obtains the SO(even)/SO(odd) level-aspect densities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2233,
+          "line_start": 2137,
+          "title": "The parity-blind large-level off-diagonal term cancels",
+          "unit_id": "batch79_u16",
+          "unit_type": "obstruction elimination",
+          "why_material": "Applies Petersson, truncates the modulus, expands primes by residue-class characters, and uses Dirichlet GRH to show both principal and nonprincipal portions of the parity-blind contribution are lower order."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The negative result is structurally useful because it locates the actual density correction in the sign-weighted component.",
+          "representation_dependency": "Nested sums are OCR-fragile, but the split, character bound, and conclusion IVA=o(N) are explicit.",
+          "unit_id": "batch79_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2135,
+            "line_start": 2067,
+            "title": "Large-level density isolates a single non-diagonal prime term",
+            "unit_id": "batch79_u15",
+            "unit_type": "proof decomposition",
+            "why_material": "Splits the sign-restricted density average, evaluates the universal and prime-square pieces, and identifies the remaining prime-linear contribution as the only order-N source of symmetry separation beyond support one."
+          },
+          {
+            "line_end": 2478,
+            "line_start": 2236,
+            "title": "The level coefficient creates the orthogonal Fourier-tail correction",
+            "unit_id": "batch79_u17",
+            "unit_type": "sign-sensitive off-diagonal evaluation",
+            "why_material": "Inserts the functional-equation sign as a level-N coefficient, factors the Kloosterman sum, removes nonprincipal characters, and evaluates the principal contribution to obtain opposite tail terms and hence SO(even)/SO(odd) densities."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly turns explicit-formula prime terms into Kloosterman sums, then into character or Poisson decompositions whose principal/zero-frequency part supplies the symmetry correction while the rest is bounded away.",
+            "limit": "Not every off-diagonal term survives: the parity-blind large-level part cancels, and the symmetric-square arithmetic requires a distinct multiplicative evaluation.",
+            "parent_local_unit_ids": [
+              "batch79_u06",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u16",
+              "batch79_u17"
+            ],
+            "title": "Trace formula to character sums to symmetry kernel"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u16",
+        "spontaneous": {
+          "unit_id": "batch79_u16",
+          "spontaneous_reading": "The parity-blind candidate off-diagonal is a false lead: after truncating the modulus and expanding primes into characters, both principal and nonprincipal pieces cancel below family scale, locating the real correction in the sign-weighted term."
+        },
+        "directed": {
+          "unit_id": "batch79_u16",
+          "source_grounded_mathematics": "Petersson turns IVA into Kloosterman sums with a Bessel kernel; the modulus sum is truncated, primes in residue classes are expanded using Dirichlet characters, and Dirichlet GRH bounds the nonprincipal characters. The principal contribution is also estimated as lower order, giving IVA=o(N).",
+          "conceptual_reading": "A rigorous negative result sharpens the mechanism by elimination: off-diagonality alone is insufficient, and the root-number insertion is essential for a surviving symmetry signal.",
+          "representation_or_bridge": "Character orthogonality separates structured principal behavior from oscillatory nonprincipal behavior in the Kloosterman-prime sum.",
+          "boundary_or_failure": "The cancellation is conditional on the stated analytic bounds and pertains to this parity-blind level term; it is not a general theorem that unweighted off-diagonals vanish.",
+          "uncertainty": "The split and conclusion are explicit, while nested sums and error exponents are OCR-fragile."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the large-level causal mechanism for parity separation, not merely a repetition of the large-weight conclusion.",
+      "line_end": 2478,
+      "line_start": 2236,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Kloosterman identities, Bessel integrals, and constants need scan verification; the sign-dependent structure and final kernels are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Inserts the functional-equation sign as a level-N coefficient, factors the Kloosterman sum, removes nonprincipal characters, and evaluates the principal contribution to obtain opposite tail terms and hence SO(even)/SO(odd) densities.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The level coefficient creates the orthogonal Fourier-tail correction",
+      "unit_artifact_relpath": "depth/units/batch79_u17.txt",
+      "unit_bytes": 13340,
+      "unit_id": "batch79_u17",
+      "unit_sha256": "1f8589ec4ce4d376f3ea4742175b0b25da115904fa3931d550d1c52ffc9fe157",
+      "unit_type": "sign-sensitive off-diagonal evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u17.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2228,
+          "line_end": 2235,
+          "text": "\nThat is the contribution from the χ 6= χ0 terms to IVA is o(N). The contribution to\nIVA from χ = χ0 is easily estimated as being o(N) as well. Therefore we have\n\n\n                                                  IVA = o(N).                                                  (153)\n\n\n",
+          "sha256": "004808db820de51467f3142e8791ff784de0af31119ecb447e2351471288f090"
+        },
+        "after": {
+          "line_start": 2479,
+          "line_end": 2486,
+          "text": "\n\n4      Application to nonvanishing at s = 21\n\nIn this short Section we derive Corollary 2 from Theorem 1. To this end define α2 (G),\n\nwhere G is one of SO(even), SO(odd) or O, and W (G)(x) is the corresponding\ndensity,\n",
+          "sha256": "6472997b8cbc7cfd19382093f9b35ccf104b3bc924debabf93afe51a489fbb2f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large level proof",
+            "line_end": 2480,
+            "line_start": 2067,
+            "mathematical_role": "Separates routine terms from the sign-sensitive off-diagonal term and obtains the SO(even)/SO(odd) level-aspect densities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2478,
+          "line_start": 2236,
+          "title": "The level coefficient creates the orthogonal Fourier-tail correction",
+          "unit_id": "batch79_u17",
+          "unit_type": "sign-sensitive off-diagonal evaluation",
+          "why_material": "Inserts the functional-equation sign as a level-N coefficient, factors the Kloosterman sum, removes nonprincipal characters, and evaluates the principal contribution to obtain opposite tail terms and hence SO(even)/SO(odd) densities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the large-level causal mechanism for parity separation, not merely a repetition of the large-weight conclusion.",
+          "representation_dependency": "Exact Kloosterman identities, Bessel integrals, and constants need scan verification; the sign-dependent structure and final kernels are recoverable.",
+          "unit_id": "batch79_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2233,
+            "line_start": 2137,
+            "title": "The parity-blind large-level off-diagonal term cancels",
+            "unit_id": "batch79_u16",
+            "unit_type": "obstruction elimination",
+            "why_material": "Applies Petersson, truncates the modulus, expands primes by residue-class characters, and uses Dirichlet GRH to show both principal and nonprincipal portions of the parity-blind contribution are lower order."
+          },
+          {
+            "line_end": 2504,
+            "line_start": 2481,
+            "title": "Nonconstant Fourier-side density makes the standard sinc test suboptimal",
+            "unit_id": "batch79_u18",
+            "unit_type": "optimization criterion",
+            "why_material": "Defines the constrained nonnegative band-limited density infimum and observes that a nonconstant Fourier-side correction—created by off-diagonal analysis—prevents the familiar squared-sinc function from attaining it."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support controls accessible prime ranges; crossing support one changes the proof qualitatively because trace-formula off-diagonal terms become main terms and reveal distinctions invisible to the diagonal.",
+            "limit": "The exact accessible range and arithmetic evaluation differ by family, aspect, and hypotheses; this is a source-internal pattern, not a universal theorem.",
+            "parent_local_unit_ids": [
+              "batch79_u02",
+              "batch79_u03",
+              "batch79_u07",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u17"
+            ],
+            "title": "Fourier support as a phase boundary for arithmetic information"
+          },
+          {
+            "claim": "Breaking parity inserts concrete analytic structure—weight congruence in the K-aspect and a level coefficient in the N-aspect—whose off-diagonal contribution changes sign and separates SO(even) from SO(odd).",
+            "limit": "The two implementations are analogous but not identical, and both conclusions are conditional on the stated GRH assumptions and support ranges.",
+            "parent_local_unit_ids": [
+              "batch79_u01",
+              "batch79_u09",
+              "batch79_u10",
+              "batch79_u13",
+              "batch79_u14",
+              "batch79_u17",
+              "batch79_u19"
+            ],
+            "title": "Functional-equation parity is an analytic operator, not only a label"
+          },
+          {
+            "claim": "The source repeatedly turns explicit-formula prime terms into Kloosterman sums, then into character or Poisson decompositions whose principal/zero-frequency part supplies the symmetry correction while the rest is bounded away.",
+            "limit": "Not every off-diagonal term survives: the parity-blind large-level part cancels, and the symmetric-square arithmetic requires a distinct multiplicative evaluation.",
+            "parent_local_unit_ids": [
+              "batch79_u06",
+              "batch79_u10",
+              "batch79_u12",
+              "batch79_u16",
+              "batch79_u17"
+            ],
+            "title": "Trace formula to character sums to symmetry kernel"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u17",
+        "spontaneous": {
+          "unit_id": "batch79_u17",
+          "spontaneous_reading": "Multiplying by the root number inserts lambda_f(N), changes the Kloosterman geometry, and creates a principal-character Fourier tail of size N; reversing the projector reverses this tail and separates SO(even) from SO(odd)."
+        },
+        "directed": {
+          "unit_id": "batch79_u17",
+          "source_grounded_mathematics": "Using epsilon_f=-mu(N)N^(1/2)lambda_f(N), IVB becomes a Petersson average with lambda_f(Nn^2)lambda_f(p). The resulting Kloosterman sum factors at prime level; nonprincipal characters are o(N) under GRH, while the principal character contributes -(N/48) times the integral of phi-hat over |xi|>=1. Combining it with the common terms yields the SO(even) kernel, and the opposite projector yields SO(odd), for support (-2,2).",
+          "conceptual_reading": "Parity is causal analytic data: representing it as a coefficient changes which off-diagonal structure survives rather than merely relabeling an already computed average.",
+          "representation_or_bridge": "The level coefficient, factored Kloosterman sum, character expansion, and Bessel integral form the bridge from the Fricke sign to the orthogonal Fourier-tail correction.",
+          "boundary_or_failure": "The proof is for prime level, fixed weight, compact support, and stated GRH assumptions; analogy with the weight aspect does not make the implementations identical.",
+          "uncertainty": "The sign-dependent structure and final kernels are clear, but exact Kloosterman identities and constants merit scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This bridges the analytic density theorem to the functional-analytic appendix.",
+      "line_end": 2504,
+      "line_start": 2481,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Conceptual prose is clear; the infimum display is recoverable with minor formula-layout risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the constrained nonnegative band-limited density infimum and observes that a nonconstant Fourier-side correction—created by off-diagonal analysis—prevents the familiar squared-sinc function from attaining it.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nonconstant Fourier-side density makes the standard sinc test suboptimal",
+      "unit_artifact_relpath": "depth/units/batch79_u18.txt",
+      "unit_bytes": 1165,
+      "unit_id": "batch79_u18",
+      "unit_sha256": "1824652573c45bdc50c6bc0189504dda8edde7685b654f9b92b5159f086f175f",
+      "unit_type": "optimization criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u18.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2473,
+          "line_end": 2480,
+          "text": "                                         Z ∞\n                             ∼ S − [1]         φ(x)W (SO(odd))(x)dx.               (165)\n                                         −∞\n\n    The results (164) and (165) are proven under GRH and the assumption that\nsupport(φ̂) ⊂ (−2, 2). This concludes the proof of Theorem 1 in the N-aspect.\n\n\n",
+          "sha256": "72afed9ddb248cbe9d8a95915018503acb4bd36ae799915502c3cc179599de69"
+        },
+        "after": {
+          "line_start": 2505,
+          "line_end": 2512,
+          "text": "\n    Applying Theorem 1 (assuming GRH as is done in that Theorem) with a test\nfunction φ as in (1) we obtain:\n                    1           X              X         1\n            lim                                      ord( , f ) ⩽ α2 (SO(even));   (167)\n            K→∞ M + (K)                                  2\n                          k≡0( mod 4),k ⩽K f ∈Hk (Γ)\n\n",
+          "sha256": "66222a2df18129f8cb47afa5947ecac36e941ba882e23efd589c807fc0cfeab8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Application to central nonvanishing",
+            "line_end": 2699,
+            "line_start": 2481,
+            "mathematical_role": "Turns density bounds into average-order and nonvanishing estimates and explains why parity splitting and nonconstant Fourier-side kernels yield strict improvements."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2504,
+          "line_start": 2481,
+          "title": "Nonconstant Fourier-side density makes the standard sinc test suboptimal",
+          "unit_id": "batch79_u18",
+          "unit_type": "optimization criterion",
+          "why_material": "Defines the constrained nonnegative band-limited density infimum and observes that a nonconstant Fourier-side correction—created by off-diagonal analysis—prevents the familiar squared-sinc function from attaining it."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This bridges the analytic density theorem to the functional-analytic appendix.",
+          "representation_dependency": "Conceptual prose is clear; the infimum display is recoverable with minor formula-layout risk.",
+          "unit_id": "batch79_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2478,
+            "line_start": 2236,
+            "title": "The level coefficient creates the orthogonal Fourier-tail correction",
+            "unit_id": "batch79_u17",
+            "unit_type": "sign-sensitive off-diagonal evaluation",
+            "why_material": "Inserts the functional-equation sign as a level-N coefficient, factors the Kloosterman sum, removes nonprincipal characters, and evaluates the principal contribution to obtain opposite tail terms and hence SO(even)/SO(odd) densities."
+          },
+          {
+            "line_end": 2693,
+            "line_start": 2506,
+            "title": "Density bounds, parity of vanishing, and strict nonvanishing gains",
+            "unit_id": "batch79_u19",
+            "unit_type": "consequence chain",
+            "why_material": "Uses positivity and parity of central vanishing order to turn extremal density values into explicit nonvanishing proportions, and shows why splitting signs gives a strict mean-order gain that the parity-mixed O-kernel cannot provide."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Off-diagonal arithmetic makes the Fourier-side density kernel nonconstant; positivity then turns zero density into a band-limited extremal problem whose Fredholm solution improves central nonvanishing bounds.",
+            "limit": "The resulting proportions are lower bounds under the source's hypotheses, not exact nonvanishing densities.",
+            "parent_local_unit_ids": [
+              "batch79_u03",
+              "batch79_u04",
+              "batch79_u18",
+              "batch79_u19",
+              "batch79_u20",
+              "batch79_u21",
+              "batch79_u22"
+            ],
+            "title": "From arithmetic density to an operator-theoretic nonvanishing optimizer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u18",
+        "spontaneous": {
+          "unit_id": "batch79_u18",
+          "spontaneous_reading": "Once off-diagonal arithmetic makes the Fourier-side density nonconstant, the standard squared-sinc test ceases to be extremal; sharper nonvanishing therefore requires solving the kernel-shaped optimization problem rather than merely extending support."
+        },
+        "directed": {
+          "unit_id": "batch79_u18",
+          "source_grounded_mathematics": "The source defines alpha_2(G) as the infimum of the W(G)-weighted integral over nonnegative phi with phi(0)=1 and Fourier support in (-2,2). Writing W-hat as delta_0+m_G, it observes that when m_G is nonconstant on the support interval, squared sinc does not attain the infimum.",
+          "conceptual_reading": "Arithmetic information changes not only the density value but the geometry of the optimal probe: the best test must adapt to the nonconstant Fourier correction.",
+          "representation_or_bridge": "The density theorem supplies W-hat, while band-limited positivity turns choice of phi into the functional-analytic problem solved in the appendix.",
+          "boundary_or_failure": "This span states the criterion and optimization target but does not yet prove the Fredholm characterization or calculate the minimizer.",
+          "uncertainty": "The conceptual statement is clear; the infimum display has minor formula-layout risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the analogous symmetric-square deduction and its dependence on support 4/3.",
+      "line_end": 2693,
+      "line_start": 2506,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several numerical fractions are visually degraded; the inequality logic is intact, but exact reported constants should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses positivity and parity of central vanishing order to turn extremal density values into explicit nonvanishing proportions, and shows why splitting signs gives a strict mean-order gain that the parity-mixed O-kernel cannot provide.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        44,
+        45,
+        46
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Density bounds, parity of vanishing, and strict nonvanishing gains",
+      "unit_artifact_relpath": "depth/units/batch79_u19.txt",
+      "unit_bytes": 10113,
+      "unit_id": "batch79_u19",
+      "unit_sha256": "b9ffc102c58e29c3084b3cca5c2546cf0787e1fad3469109419ba857d77d6d08",
+      "unit_type": "consequence chain",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u19.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2498,
+          "line_end": 2505,
+          "text": "where mG (ξ) is not constant on [−2, 2] (in our example this results from the non-\ndiagonal analysis carried out in the previous Sections), the familiar test function\n                                               \u0012             \u00132\n                                                   sin 2πx\n                                   φ(x) =\n                                                     2πx\nis not optimal. That is, it does not achieve the infimum in (166).\n\n",
+          "sha256": "44a62667caf78be0f4171bafacbeb2fc4e3b175b4deca295bea62651d74b8733"
+        },
+        "after": {
+          "line_start": 2694,
+          "line_end": 2701,
+          "text": "\n\n                                                46\n\n<!-- source-page: 47 -->\n\n5     Appendix. A related extremal problem\n\n",
+          "sha256": "c33a9194292657368f1c767b8f1dc589b1f79ed6e45daaeda8236a214056892c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Application to central nonvanishing",
+            "line_end": 2699,
+            "line_start": 2481,
+            "mathematical_role": "Turns density bounds into average-order and nonvanishing estimates and explains why parity splitting and nonconstant Fourier-side kernels yield strict improvements."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2693,
+          "line_start": 2506,
+          "title": "Density bounds, parity of vanishing, and strict nonvanishing gains",
+          "unit_id": "batch79_u19",
+          "unit_type": "consequence chain",
+          "why_material": "Uses positivity and parity of central vanishing order to turn extremal density values into explicit nonvanishing proportions, and shows why splitting signs gives a strict mean-order gain that the parity-mixed O-kernel cannot provide."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the analogous symmetric-square deduction and its dependence on support 4/3.",
+          "representation_dependency": "Several numerical fractions are visually degraded; the inequality logic is intact, but exact reported constants should be scan-verified.",
+          "unit_id": "batch79_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2504,
+            "line_start": 2481,
+            "title": "Nonconstant Fourier-side density makes the standard sinc test suboptimal",
+            "unit_id": "batch79_u18",
+            "unit_type": "optimization criterion",
+            "why_material": "Defines the constrained nonnegative band-limited density infimum and observes that a nonconstant Fourier-side correction—created by off-diagonal analysis—prevents the familiar squared-sinc function from attaining it."
+          },
+          {
+            "line_end": 2808,
+            "line_start": 2700,
+            "title": "Band-limited positivity becomes a Fredholm quadratic minimization",
+            "unit_id": "batch79_u20",
+            "unit_type": "representation change and variational theorem",
+            "why_material": "Factors admissible positive test functions as squared entire functions, transfers the problem by Plancherel to a convolution quotient, and identifies the minimizer through the equation (I+K)f=1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Breaking parity inserts concrete analytic structure—weight congruence in the K-aspect and a level coefficient in the N-aspect—whose off-diagonal contribution changes sign and separates SO(even) from SO(odd).",
+            "limit": "The two implementations are analogous but not identical, and both conclusions are conditional on the stated GRH assumptions and support ranges.",
+            "parent_local_unit_ids": [
+              "batch79_u01",
+              "batch79_u09",
+              "batch79_u10",
+              "batch79_u13",
+              "batch79_u14",
+              "batch79_u17",
+              "batch79_u19"
+            ],
+            "title": "Functional-equation parity is an analytic operator, not only a label"
+          },
+          {
+            "claim": "Off-diagonal arithmetic makes the Fourier-side density kernel nonconstant; positivity then turns zero density into a band-limited extremal problem whose Fredholm solution improves central nonvanishing bounds.",
+            "limit": "The resulting proportions are lower bounds under the source's hypotheses, not exact nonvanishing densities.",
+            "parent_local_unit_ids": [
+              "batch79_u03",
+              "batch79_u04",
+              "batch79_u18",
+              "batch79_u19",
+              "batch79_u20",
+              "batch79_u21",
+              "batch79_u22"
+            ],
+            "title": "From arithmetic density to an operator-theoretic nonvanishing optimizer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u19",
+        "spontaneous": {
+          "unit_id": "batch79_u19",
+          "spontaneous_reading": "Positivity bounds mean central order, and root-number parity discretizes that bound into nonvanishing proportions; treating the two signs separately produces a strict gain that the parity-mixed orthogonal kernel cannot see."
+        },
+        "directed": {
+          "unit_id": "batch79_u19",
+          "source_grounded_mathematics": "The alpha_2 bounds control average central vanishing order in both large-weight and large-level sign families. Even order in the plus family and odd order in the minus family convert these bounds into proportions exceeding 9/16 and 15/16; combining the split families gives mean order strictly below one, whereas the O-kernel test gives only at most one. The analogous support-4/3 Sp argument gives symmetric-square nonvanishing exceeding 55/64.",
+          "conceptual_reading": "A continuous density inequality gains combinatorial force from parity: the allowed vanishing orders have gaps, so an average-cost bound controls the mass of exceptional forms.",
+          "representation_or_bridge": "The extremal kernel value is the bridge from one-level density to arithmetic proportions; sign splitting preserves information discarded by the mixed O representation.",
+          "boundary_or_failure": "These are conditional lower or upper bounds, not exact limiting proportions, and strictness depends on support beyond the diagonal plus nonconstant-kernel optimization.",
+          "uncertainty": "The inequality chain is intact, but exact fractions in the extraction should be checked against the scan before quotation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the singular-kernel alternative, positivity, compact self-adjoint structure, and uniqueness condition.",
+      "line_end": 2808,
+      "line_start": 2700,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The operator argument is prose-supported; exact function spaces in one display show a likely extraction inconsistency and should be checked before formal transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factors admissible positive test functions as squared entire functions, transfers the problem by Plancherel to a convolution quotient, and identifies the minimizer through the equation (I+K)f=1.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        48,
+        49
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Band-limited positivity becomes a Fredholm quadratic minimization",
+      "unit_artifact_relpath": "depth/units/batch79_u20.txt",
+      "unit_bytes": 4651,
+      "unit_id": "batch79_u20",
+      "unit_sha256": "68fe0a5cacd7e28232d868aaa789c5ca420cbdc98a8cef3cc7e4835d0b8835e7",
+      "unit_type": "representation change and variational theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u20.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2692,
+          "line_end": 2699,
+          "text": "\nThis completes the proof of Corollary 2.\n\n\n                                                46\n\n<!-- source-page: 47 -->\n\n",
+          "sha256": "9ed57328b57930b77108fc3d566a677879e6ff49545cc6b53b97d196f56ccb19"
+        },
+        "after": {
+          "line_start": 2809,
+          "line_end": 2816,
+          "text": "\n\n\nProof: Let g ∈ L2 [−1, 1] with the normalization < 1, g >= A (which we can assume\nif < 1, g >6= 0). Then writing g = f0 + h, we have < h, 1 >= 0, i.e.\n\n\n                                < h, (I + K)f0 >= 0.                             (199)\n",
+          "sha256": "4c5505feaa9853cc80d1468d1eb92cd023e31656e5644bfa3df2572286305b8c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix: related extremal problem",
+            "line_end": 2999,
+            "line_start": 2700,
+            "mathematical_role": "Factors admissible positive band-limited tests, converts optimization to a Fredholm equation, characterizes sinc optimality, and computes improved extremizers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2808,
+          "line_start": 2700,
+          "title": "Band-limited positivity becomes a Fredholm quadratic minimization",
+          "unit_id": "batch79_u20",
+          "unit_type": "representation change and variational theorem",
+          "why_material": "Factors admissible positive test functions as squared entire functions, transfers the problem by Plancherel to a convolution quotient, and identifies the minimizer through the equation (I+K)f=1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the singular-kernel alternative, positivity, compact self-adjoint structure, and uniqueness condition.",
+          "representation_dependency": "The operator argument is prose-supported; exact function spaces in one display show a likely extraction inconsistency and should be checked before formal transcription.",
+          "unit_id": "batch79_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2693,
+            "line_start": 2506,
+            "title": "Density bounds, parity of vanishing, and strict nonvanishing gains",
+            "unit_id": "batch79_u19",
+            "unit_type": "consequence chain",
+            "why_material": "Uses positivity and parity of central vanishing order to turn extremal density values into explicit nonvanishing proportions, and shows why splitting signs gives a strict mean-order gain that the parity-mixed O-kernel cannot provide."
+          },
+          {
+            "line_end": 2899,
+            "line_start": 2812,
+            "title": "A projection argument characterizes when squared sinc is optimal",
+            "unit_id": "batch79_u21",
+            "unit_type": "optimality proof and criterion",
+            "why_material": "Proves the Fredholm minimizer by decomposing any normalized competitor into the solution plus an orthogonal remainder, then shows the constant Fourier factor—and hence squared sinc—is optimal exactly when the kernel average is constant."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Off-diagonal arithmetic makes the Fourier-side density kernel nonconstant; positivity then turns zero density into a band-limited extremal problem whose Fredholm solution improves central nonvanishing bounds.",
+            "limit": "The resulting proportions are lower bounds under the source's hypotheses, not exact nonvanishing densities.",
+            "parent_local_unit_ids": [
+              "batch79_u03",
+              "batch79_u04",
+              "batch79_u18",
+              "batch79_u19",
+              "batch79_u20",
+              "batch79_u21",
+              "batch79_u22"
+            ],
+            "title": "From arithmetic density to an operator-theoretic nonvanishing optimizer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u20",
+        "spontaneous": {
+          "unit_id": "batch79_u20",
+          "spontaneous_reading": "Paley-Wiener factorization converts nonnegative band-limited tests into squares, turning an apparently linear optimization over phi into a quadratic Rayleigh quotient whose minimizer is obtained by inverting a compact Fredholm operator."
+        },
+        "directed": {
+          "unit_id": "batch79_u20",
+          "source_grounded_mathematics": "Admissible phi factor as |h|^2 with phi-hat=g*g-check and g supported in [-1,1]. For W-hat=delta_0+m, the objective becomes <(I+K)g,g>/|<g,1>|^2, where K is convolution by m on L2[-1,1]. Positivity gives I+K nonnegative; outside a stated singular case, (I+K)f_0=1 and the minimum is 1/<1,f_0>.",
+          "conceptual_reading": "The representation change exposes convex geometry and a canonical solution: positivity becomes an operator inequality, normalization a linear constraint, and optimality an inverse problem.",
+          "representation_or_bridge": "Ahiezer and Paley-Wiener factorization plus Plancherel bridge the zero-density test function to a compact self-adjoint convolution operator.",
+          "boundary_or_failure": "If -1 is an eigenvalue and the kernel pairs nontrivially with 1, the infimum can be zero; uniqueness needs the stronger spectral condition stated in the source.",
+          "uncertainty": "The operator argument is prose-supported, but one displayed L2 interval is inconsistent with the surrounding support convention and should be scan-checked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Applying the criterion to SO(even), SO(odd), Sp, and O explains why only the parity-mixed orthogonal kernel retains the standard test.",
+      "line_end": 2899,
+      "line_start": 2812,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The variational proof is robust in prose and notation; kernel indicator displays are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves the Fredholm minimizer by decomposing any normalized competitor into the solution plus an orthogonal remainder, then shows the constant Fourier factor—and hence squared sinc—is optimal exactly when the kernel average is constant.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        50,
+        51
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A projection argument characterizes when squared sinc is optimal",
+      "unit_artifact_relpath": "depth/units/batch79_u21.txt",
+      "unit_bytes": 3379,
+      "unit_id": "batch79_u21",
+      "unit_sha256": "d2106d735f7d6800cf4cbf50686c6f2d76158e061bdc0b58e61b1ad20a7b95a1",
+      "unit_type": "optimality proof and criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u21.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2804,
+          "line_end": 2811,
+          "text": "                                     2\n                                 g∈L [−1, 1]            A\n\nand it is attained by f0 which satisfies (196). Moreover if λ1 > −1 then this minimizer\nis unique (in fact the solution to (196) is unique).\n\n\n\n",
+          "sha256": "59c4d0f1cc349404775c49270e6c0c70b8852cdb436fb7adf9607fe54a450059"
+        },
+        "after": {
+          "line_start": 2900,
+          "line_end": 2907,
+          "text": "\n    It is not difficult to determine the extremal functions for the m’s in (201). J.Vanderkam\n[Va2] first pointed out to us these functions which he obtained by a direct analysis of\n\nthe functional (188).\n\n    We must solve the equation (196), that is\n                                             Z 1\n",
+          "sha256": "9f71910988990c7be5434def723c6633bcdbb2c3893c3b9e6e727ce4d0cc7ab9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix: related extremal problem",
+            "line_end": 2999,
+            "line_start": 2700,
+            "mathematical_role": "Factors admissible positive band-limited tests, converts optimization to a Fredholm equation, characterizes sinc optimality, and computes improved extremizers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2899,
+          "line_start": 2812,
+          "title": "A projection argument characterizes when squared sinc is optimal",
+          "unit_id": "batch79_u21",
+          "unit_type": "optimality proof and criterion",
+          "why_material": "Proves the Fredholm minimizer by decomposing any normalized competitor into the solution plus an orthogonal remainder, then shows the constant Fourier factor—and hence squared sinc—is optimal exactly when the kernel average is constant."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Applying the criterion to SO(even), SO(odd), Sp, and O explains why only the parity-mixed orthogonal kernel retains the standard test.",
+          "representation_dependency": "The variational proof is robust in prose and notation; kernel indicator displays are legible.",
+          "unit_id": "batch79_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2808,
+            "line_start": 2700,
+            "title": "Band-limited positivity becomes a Fredholm quadratic minimization",
+            "unit_id": "batch79_u20",
+            "unit_type": "representation change and variational theorem",
+            "why_material": "Factors admissible positive test functions as squared entire functions, transfers the problem by Plancherel to a convolution quotient, and identifies the minimizer through the equation (I+K)f=1."
+          },
+          {
+            "line_end": 2988,
+            "line_start": 2901,
+            "title": "Solving the symmetry-kernel Fredholm equations sharpens nonvanishing",
+            "unit_id": "batch79_u22",
+            "unit_type": "explicit extremizer construction",
+            "why_material": "Uses evenness to reduce the SO kernels to integral equations, solves them by trigonometric functions, and feeds the resulting minimum values back into improved nonvanishing and mean-order bounds."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Off-diagonal arithmetic makes the Fourier-side density kernel nonconstant; positivity then turns zero density into a band-limited extremal problem whose Fredholm solution improves central nonvanishing bounds.",
+            "limit": "The resulting proportions are lower bounds under the source's hypotheses, not exact nonvanishing densities.",
+            "parent_local_unit_ids": [
+              "batch79_u03",
+              "batch79_u04",
+              "batch79_u18",
+              "batch79_u19",
+              "batch79_u20",
+              "batch79_u21",
+              "batch79_u22"
+            ],
+            "title": "From arithmetic density to an operator-theoretic nonvanishing optimizer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u21",
+        "spontaneous": {
+          "unit_id": "batch79_u21",
+          "spontaneous_reading": "The minimizer is characterized by an orthogonal projection: every normalized competitor splits into the Fredholm solution plus a nonnegative-energy remainder, and squared sinc is optimal exactly when the constant Fourier factor is preserved by the kernel."
+        },
+        "directed": {
+          "unit_id": "batch79_u21",
+          "source_grounded_mathematics": "Writing a normalized competitor as g=f_0+h, with (I+K)f_0=1 and <h,1>=0, kills the cross term and proves the lower bound by positivity of I+K. Since squared sinc corresponds to constant g on [-1,1], it is optimal exactly when the integral of m(x-y) over y in [-1,1] is independent of x. Applying the listed kernels leaves only O with this property.",
+          "conceptual_reading": "Optimality is reduced to an invariance test: the naive probe works only when averaging the kernel preserves the constant direction.",
+          "representation_or_bridge": "The Fourier factor g translates squared sinc into a constant vector, while the Fredholm equation and energy orthogonality translate functional optimization into projection geometry.",
+          "boundary_or_failure": "The criterion holds within the specified nonnegative band-limited class and the nonsingular operator setting; it does not assert universal optimality of these tests outside that class.",
+          "uncertainty": "The variational proof and kernel indicators are legible and internally coherent."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides a complete example of turning a qualitative non-optimality diagnosis into quantitative gains.",
+      "line_end": 2988,
+      "line_start": 2901,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The trigonometric formulas and cotangent arguments are notably garbled in extraction; only the construction and printed decimals are safe without scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses evenness to reduce the SO kernels to integral equations, solves them by trigonometric functions, and feeds the resulting minimum values back into improved nonvanishing and mean-order bounds.",
+      "source_id": "openalex_w2952169064",
+      "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+      "source_page_markers_inside_unit": [
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Solving the symmetry-kernel Fredholm equations sharpens nonvanishing",
+      "unit_artifact_relpath": "depth/units/batch79_u22.txt",
+      "unit_bytes": 3849,
+      "unit_id": "batch79_u22",
+      "unit_sha256": "e688e2d194d0a6a69643524e45d2458072af73803d7c59a83d67343571140771",
+      "unit_type": "explicit extremizer construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch79_u22.txt",
+      "source": {
+        "source_id": "openalex_w2952169064",
+        "title": "Low lying zeros of families of L-functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Wenzhi Luo",
+          "Peter Sarnak"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2893,
+          "line_end": 2900,
+          "text": "                                                2πx\n\n                                             50\n\n<!-- source-page: 51 -->\n\nis not the minimizer. This establishes (171), (172), (173) and (185) of Section 4.\n\n",
+          "sha256": "42972410e4015536028738d4d4c25a25b263b72985d6391c2342a8d2c4eb6d65"
+        },
+        "after": {
+          "line_start": 2989,
+          "line_end": 2996,
+          "text": "\nAcknowledgement: We would like to thank S.J.Miller for his careful reading and\ncomments on this paper.\n\n\n\n\n                                              52\n",
+          "sha256": "a3473c2891793c7ae1b6b6db80c40a3ed26b9dce310ea024103e744626627260"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1cf52736b162c3107507753416edbc5774b096bf0bbb8c31b895d8bf7a579444",
+        "dossier_sha256": "053d474270f33c57757dea591457d83e5ee49a26bfe8bdc8db0999e5f568638f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix: related extremal problem",
+            "line_end": 2999,
+            "line_start": 2700,
+            "mathematical_role": "Factors admissible positive band-limited tests, converts optimization to a Fredholm equation, characterizes sinc optimality, and computes improved extremizers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2988,
+          "line_start": 2901,
+          "title": "Solving the symmetry-kernel Fredholm equations sharpens nonvanishing",
+          "unit_id": "batch79_u22",
+          "unit_type": "explicit extremizer construction",
+          "why_material": "Uses evenness to reduce the SO kernels to integral equations, solves them by trigonometric functions, and feeds the resulting minimum values back into improved nonvanishing and mean-order bounds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides a complete example of turning a qualitative non-optimality diagnosis into quantitative gains.",
+          "representation_dependency": "The trigonometric formulas and cotangent arguments are notably garbled in extraction; only the construction and printed decimals are safe without scan verification.",
+          "unit_id": "batch79_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2899,
+            "line_start": 2812,
+            "title": "A projection argument characterizes when squared sinc is optimal",
+            "unit_id": "batch79_u21",
+            "unit_type": "optimality proof and criterion",
+            "why_material": "Proves the Fredholm minimizer by decomposing any normalized competitor into the solution plus an orthogonal remainder, then shows the constant Fourier factor—and hence squared sinc—is optimal exactly when the kernel average is constant."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Off-diagonal arithmetic makes the Fourier-side density kernel nonconstant; positivity then turns zero density into a band-limited extremal problem whose Fredholm solution improves central nonvanishing bounds.",
+            "limit": "The resulting proportions are lower bounds under the source's hypotheses, not exact nonvanishing densities.",
+            "parent_local_unit_ids": [
+              "batch79_u03",
+              "batch79_u04",
+              "batch79_u18",
+              "batch79_u19",
+              "batch79_u20",
+              "batch79_u21",
+              "batch79_u22"
+            ],
+            "title": "From arithmetic density to an operator-theoretic nonvanishing optimizer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "batch79_u22",
+        "spontaneous": {
+          "unit_id": "batch79_u22",
+          "spontaneous_reading": "For the SO kernels, symmetry reduces the Fredholm equation to explicit integral equations on half the interval, and trigonometric solutions turn qualitative nonoptimality of squared sinc into concrete improvements in nonvanishing and mean-order bounds."
+        },
+        "directed": {
+          "unit_id": "batch79_u22",
+          "source_grounded_mathematics": "Evenness reduces the SO(even) and SO(odd) equations to integral equations on [0,1]. The source solves them by trigonometric functions, obtaining alpha_2 values approximately 0.8645 and 1.1145, then reports sharpened consequences approximately 0.5678 for plus-family nonvanishing, 0.94275 for minus-family minimal-order proportion, and 0.9895 for the combined mean-order bound.",
+          "conceptual_reading": "Solving the operator equation completes a chain from arithmetic off-diagonal terms to an adapted analytic probe and finally to quantitative arithmetic gains.",
+          "representation_or_bridge": "Even symmetry and differentiation or Fourier-series methods reduce the convolution equation to tractable trigonometric forms; the inner product with the solution gives the extremal value.",
+          "boundary_or_failure": "These optimized numbers remain consequences of the source's conditional density theorems, not exact nonvanishing densities, and this span does not safely expose every symmetry case in exact formula form.",
+          "uncertainty": "The construction and printed decimals are readable, but the extracted trigonometric formulas and cotangent arguments are garbled and should not be transcribed exactly without the scan."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "1d79f4413ab3bc003ba8a2c96793cc6cb5d05db3bd02e1f7266a0879665e43de"
+}

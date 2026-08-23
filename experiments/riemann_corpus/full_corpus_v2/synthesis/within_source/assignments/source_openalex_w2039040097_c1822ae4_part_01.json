@@ -1,0 +1,1157 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2039040097",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2039040097_c1822ae4_part_01.jsonl",
+  "candidate_count": 7,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The eta representation makes S1 an analytically controlled n log n contribution while concentrating the unresolved RH burden in cancellation and magnitude control for S2.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2039040097_d03",
+          "openalex_w2039040097_d05",
+          "openalex_w2039040097_d12",
+          "openalex_w2039040097_d13"
+        ],
+        "proposed_limit": "The S2 square-root bound is conjectural; sign alternation alone is insufficient, and the paper explicitly lacks consecutive-magnitude control.",
+        "source_id": "openalex_w2039040097",
+        "synthesis_id": "riemann_v2_within_7d24bb1aa1d9859efa21813f",
+        "title": "Li positivity splits into explicit growth and arithmetic cancellation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the central representation and includes enough differentiation and coefficient-extraction setup to avoid reconstructing the derivation externally.",
+          "line_end": 330,
+          "line_start": 229,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Core equations (10)-(15) are formula-dependent but readable in sequence; verify source TeX for exact transcription.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 1 decomposes lambda_n into an eta-binomial sum, an explicit alternating zeta-binomial sum, and elementary terms, while deriving eta from the Laurent expansion of zeta'/zeta and from von Mangoldt limits.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Eta decomposition of each Li coefficient",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d03.txt",
+          "unit_bytes": 4626,
+          "unit_id": "openalex_w2039040097_d03",
+          "unit_sha256": "91b60423dc20de8cd2452deec9b76dfacd7b68a184bedf1f5493c99ec8a55e30",
+          "unit_type": "theorem-plus-derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Logarithmic differentiation separates completed-zeta structure into an explicit analytic contribution and a prime-sensitive residual, concentrating the unresolved burden rather than hiding it.",
+            "nonparaphrase_operation": "The Laurent expansion of zeta'/zeta bridges von Mangoldt data to eta coefficients, and coefficient extraction from log xi bridges eta through a binomial transform to lambda.",
+            "quality_reason": "Theorem 1 gives the claimed decomposition into the eta binomial sum, the explicit alternating zeta binomial sum, and elementary terms. The Laurent expansion of zeta'/zeta, the von Mangoldt limit for eta_k, coefficient extraction from log xi, and the radius-three obstruction from the trivial zero at -2 all appear in the span. The candidate correctly says the exact representation does not provide the needed eta-binomial bound.",
+            "source_support": "Theorem 1 expresses lambda_n using the binomial transform of eta_{m-1}, the alternating binomial sum of (1-2^(-m))zeta(m), and explicit linear terms; eta_k are coefficients of zeta'/zeta at 1 and also limits weighted by the von Mangoldt function.",
+            "speculation_status": "The representation is exact, but it supplies no adequate bound for the eta-binomial term; the radius three is limited by the trivial zero at -2. Equations (10)-(15) are readable in sequence, though exact indices and typography should be checked against source TeX before literal reuse. Calling eta the prime-sensitive residual and the explicit part analytically controlled is a faithful mechanism-level synthesis of the derivation. Equations (10)-(15) are layout-sensitive; the candidate appropriately avoids claiming typography-level certainty."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span includes the theorem statement, complete monotonicity argument, and corollary so the direction and use of the inequality remain visible.",
+          "line_end": 455,
+          "line_start": 384,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact constants and integral kernels depend on displayed equations (20)-(24); checked prose makes the proof architecture recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2 compares a decreasing summand with an integral, changes variables, integrates by parts, evaluates with the digamma function, and transfers the result into lower and upper bounds for lambda_n modulo S2.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integral comparison gives an n log n lower bound for S1",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d05.txt",
+          "unit_bytes": 3255,
+          "unit_id": "openalex_w2039040097_d05",
+          "unit_sha256": "cfa82ccac50096059096f28e55f7f6cdc34465ab45e8022a6948cbcffe0f389f",
+          "unit_type": "theorem-plus-proof fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof extracts a deterministic growth reserve from S1 that can later pay for an arithmetic error term if that term is shown to be smaller.",
+            "nonparaphrase_operation": "The discrete odd-kernel sum is bridged to an integral and then to the digamma function; the corollary inserts this bound into the decomposition of lambda_n.",
+            "quality_reason": "Theorem 2 states the lower bound for S1, and its proof uses the decreasing k-integrand, changes of variables, integration by parts, and evaluation through the digamma function. The corollary inserts the estimate into lambda_n while retaining the unresolved -|S2| term, exactly as the candidate reports.",
+            "source_support": "Theorem 2 proves S1(n)>=(n/2)log n+((gamma-1)/2)n+1/2 by comparing a decreasing summand with an integral, changing variables, integrating by parts, and evaluating the result through psi(n).",
+            "speculation_status": "The resulting lambda_n lower bound still contains -|S2|, so sharpening S1 alone cannot prove Li positivity. The proof architecture and inequality direction are explicit; exact constants rely on displayed equations (20)-(24). Interpreting the n log n contribution as a deterministic reserve that could dominate a smaller arithmetic residual is explicitly conditional and faithful to the corollary. Exact constants depend on equations (20)-(24), but their direction and values are readable in the artifact."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The implication is conditional on Conjecture 2; the source does not prove the needed magnitude correlation.",
+          "line_end": 968,
+          "line_start": 923,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equations (52)-(54) carry exact constants; prose makes the conditional dependency unambiguous.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source conjectures square-root-scale growth for the eta-binomial sum S2 and combines it with the proved S1 bound to obtain an eventual positive lower bound for lambda_n, leaving only finitely many direct checks.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "S2 cancellation is the unresolved bridge from eta behavior to Li positivity",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d12.txt",
+          "unit_bytes": 1881,
+          "unit_id": "openalex_w2039040097_d12",
+          "unit_sha256": "e11395ed9b1a0ebc98a30fe9ded903246cb23ca17275e1605572f1a1edae3c39",
+          "unit_type": "conditional lower-bound route",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The positive n log n reserve from S1 would dominate a square-root-scale residual, reducing universal Li positivity to an eventual argument plus finitely many direct checks.",
+            "nonparaphrase_operation": "The binomial transform maps pointwise eta behavior into S2, and the lambda decomposition combines this residual with the explicit S1 growth.",
+            "quality_reason": "The span defines S2, conditions its cancellation discussion on Conjecture 1, states the square-root-scale Conjecture 2, and combines it with equation (10) and the proved S1 inequality to state conditional Conjecture 3. The candidate preserves that alternation, decreasing magnitudes, and the S2 bound are not proved in the unit and labels the Brownian link as motivation only.",
+            "source_support": "S2(n)=-sum_{m=1}^n binom(n,m)eta_{m-1}. Conjecture 2 posits |S2|<=3gamma+C_2 n^(1/2+epsilon), and combining it with the proved S1 estimate yields the conditional lower bound for lambda_n in Conjecture 3.",
+            "speculation_status": "Sign alternation and decreasing magnitudes are assumed, and neither they nor the stated square-root cancellation bound are proved in this span; the Brownian analogy is motivation only. The conditional dependency is unambiguous; exact constants in equations (52)-(54) are display-dependent. The eventual-growth-plus-finite-check interpretation follows from the source's discussion after equation (54), but remains conditional on the conjectured residual bound. Exact constants in equations (52)-(54) are display-dependent but readable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Useful as a limitation-aware map of proved, computed, and conjectural ingredients rather than as a new theorem.",
+          "line_end": 1066,
+          "line_start": 970,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Predominantly prose; embedded formulas only name already-defined components.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The discussion cleanly separates explicit sign alternation in S1, established or asserted eta sign alternation in S2, and the still-needed control relating consecutive eta magnitudes; it also states the proposed transfer to generalized L-functions.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            19,
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Program summary isolates exponential cancellation and magnitude correlation",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d13.txt",
+          "unit_bytes": 3683,
+          "unit_id": "openalex_w2039040097_d13",
+          "unit_sha256": "906ebbd7163c0e6a5a106ff48c183501ad678f94e931bf1ab144445dd5c89669",
+          "unit_type": "method synthesis and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A simple sign pattern is not a cancellation theorem; the summary distinguishes structural plausibility, numerical support, cited progress on alternation, and the missing quantitative estimate.",
+            "nonparaphrase_operation": "The decomposition routes completed-zeta terms to S1 and arithmetic Laurent data to S2, and the same pattern is proposed for generalized L-functions with character-weighted von Mangoldt sums.",
+            "quality_reason": "The summary restates the lambda decomposition, identifies exponential-size binomial coefficients, separates explicit S1 alternation from the cited eta alternation for S2, and says magnitude correlation between consecutive eta values is still required. The candidate correctly reports that strict eta alternation is cited rather than proved in this span and that generalized transfer leaves new residual sums to estimate.",
+            "source_support": "The source restates lambda_n=S1+S2+1-n(gamma+log pi+2 log 2)/2, notes binomial coefficients approaching exponential size, and identifies magnitude correlation for eta_j and eta_{j+1} as the next analytic task.",
+            "speculation_status": "Claims of strict eta alternation are cited rather than proved here, Conjectures 1-3 remain conditional, and transfer to generalized hypotheses does not solve their residual sums. This predominantly prose unit is best read as a status map, not as an additional theorem. Calling this a failure map and distinguishing sign pattern from quantitative cancellation are faithful conceptual readings of the source's own caveats."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Sigma provides a bridge from global zeros to eta Laurent coefficients and then through binomial transformation to lambda, allowing zero-scale heuristics and exact moment identities to constrain the proposed route.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2039040097_d02",
+          "openalex_w2039040097_d08",
+          "openalex_w2039040097_d09",
+          "openalex_w2039040097_d10"
+        ],
+        "proposed_limit": "The dominant-first-zero argument is asymptotic/plausibility evidence and does not prove the uniform eta bound needed by the Li criterion.",
+        "source_id": "openalex_w2039040097",
+        "synthesis_id": "riemann_v2_within_fbe82903b497920a2b9f1092",
+        "title": "Zero-power sums mediate local Laurent data and Li coefficients"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the normalization caveat and the first logarithmic-derivative product relation needed to interpret the zero sum.",
+          "line_end": 174,
+          "line_start": 120,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several displayed equations are layout-sensitive; checked prose fixes their roles, while exact symbol placement should be verified against source TeX before literal reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The same sequence is presented through logarithmic derivatives at one and zero and through reciprocal-power expressions over nontrivial zeros, connecting local analytic data to global zero geometry.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Li coefficients as derivatives and sums over zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d02.txt",
+          "unit_bytes": 2329,
+          "unit_id": "openalex_w2039040097_d02",
+          "unit_sha256": "6ac3b8f01164a38a63dcb16a00966478e65c434d7a08c38da820826c01b56199",
+          "unit_type": "definition and representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local Taylor data of log xi compresses global zero geometry; the alternative base points exploit the xi functional setting without changing the coefficient sequence.",
+            "nonparaphrase_operation": "Logarithmic differentiation links the product over zeros to derivatives, while the zero-sum formula links each lambda_n to reciprocal powers and collective zero geometry.",
+            "quality_reason": "The artifact defines lambda_n by derivatives at s=1, gives the equivalent s=0 formula, and connects lambda_n to the stated sum over nontrivial zeros. The factor-of-two normalization caveat and the need for the intended zero-summation convention are retained.",
+            "source_support": "The span defines lambda_n by derivatives of s^(n-1) log xi(s) at s=1, gives an equivalent derivative formula at s=0, and relates lambda_n to the zero sum sum_rho[1-(1-1/rho)^n].",
+            "speculation_status": "The displayed identities do not themselves establish positivity, and literal use of the zero sum requires its intended summation convention. The factor-of-two xi normalization is explicitly immaterial to logarithmic derivatives; several displayed formulas are layout-sensitive. Describing local logarithmic-derivative data as compressing global zero geometry is a defensible interpretation of the displayed identities. Several displayed products and sums are extraction-fragile, so exact symbols should not be reconstructed from prose alone."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the definition of sigma, its relation to lambda, the full summation evaluation, and the alternative-proof pointer.",
+          "line_end": 662,
+          "line_start": 519,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Relies heavily on equations (28)-(39); semantic relations are recoverable, but exact binomial indices merit TeX verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 3 connects sigma_k, the reciprocal-power sum over nontrivial zeros, to eta_{k-1} and an explicit zeta term; reordering and a generating identity evaluate the intervening zeta sum.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Eta coefficients equal zero-power sums plus an explicit tail",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d08.txt",
+          "unit_bytes": 7170,
+          "unit_id": "openalex_w2039040097_d08",
+          "unit_sha256": "0384518273832278bc16b5a23f361c27cef848d3679c3392bde86bd599e2815f",
+          "unit_type": "theorem-plus-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The identity separates each zero moment into an unknown eta coefficient and an explicit trivial/gamma tail, making comparisons of their decay scales possible.",
+            "nonparaphrase_operation": "Coefficient comparison, binomial transformation, and evaluation of a reordered zeta sum connect global zeros, sigma moments, eta Laurent coefficients, and Li coefficients.",
+            "quality_reason": "The span defines sigma_k through the local log-xi expansion and as reciprocal-power sums over zeros, gives the binomial relation to lambda_n, and proves sigma_k=(-1)^k eta_{k-1}-(1-2^{-k})zeta(k)+1 for k>=2. The proof explicitly uses coefficient comparison, reordering, the generating identity, and the odd-denominator evaluation. The candidate correctly refuses to infer eta or sigma decay from the identity.",
+            "source_support": "Writing log xi near 1 with coefficients sigma_k=sum_rho rho^(-k), the source has lambda_n=-sum_{j=1}^n(-1)^j binom(n,j)sigma_j and proves sigma_k=(-1)^k eta_{k-1}-(1-2^(-k))zeta(k)+1 for k>=2.",
+            "speculation_status": "The exact bridge does not validate any later decay or sign conjecture for eta or sigma. The semantic chain is recoverable, but equations (28)-(39) are dense and exact binomial indices merit source-TeX verification. Describing the explicit zeta term as the completed-function tail and using the identity to compare scales is a reasonable interpretation of the displayed decomposition. The dense binomial indices and summation layout require source-formula checking before literal transcription."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "These are exact aggregate constraints, not a proof of the later pointwise conjecture.",
+          "line_end": 755,
+          "line_start": 664,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed series (40)-(44) are formula-sensitive; qualitative sign and moment conclusions are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Evaluating and differentiating the Laurent series at several points produces sums, alternating sums, weighted moments, logarithmic sums, and a beta-weighted integral, ruling out a one-sign eta sequence and constraining decay.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Analytic evaluations constrain eta signs and moments",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d09.txt",
+          "unit_bytes": 4523,
+          "unit_id": "openalex_w2039040097_d09",
+          "unit_sha256": "03ae9edf639b9ac496e50660579f68e550466e3ebd110cf1f34a3cc548391b0d",
+          "unit_type": "moment constraints",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Global evaluations act as probes of the coefficient sequence: they rule out an unconstrained one-sign picture and test proposed decay behavior without determining coefficients pointwise.",
+            "nonparaphrase_operation": "The Laurent series bridges analytic values and derivatives of zeta to moment-like linear functionals of eta.",
+            "quality_reason": "Equations (40)-(43) give sums, alternating sums, derivative moments, logarithmic sums, and the half-point evaluation; equation (44) gives the beta-weighted integral identity. The prose asserts infinitely many eta coefficients of each sign and decay to zero, while the candidate carefully distinguishes those source assertions from a pointwise magnitude theorem. The candidate notes that the extracted artifact names Theorem 4 without displaying a separate theorem statement.",
+            "source_support": "Values of zeta'/zeta and log zeta at 2, 0, and 1/2 yield equations (40)-(43); successive derivatives give factorial moments, and integrating s^q times the Laurent expansion gives the beta-weighted identity (44).",
+            "speculation_status": "These are aggregate identities, not a proof of the later pointwise magnitude bound or eventual geometric model. The span asserts infinitely many positive and negative eta_j and decay to zero, but the displayed Theorem 4 statement is absent from the extracted unit; formula-level claims should therefore remain tied to equations (40)-(44). Viewing analytic evaluations as probes or linear functionals of the coefficient sequence is a substantive synthesis of the operations performed. Formula-level reuse should stay tied to equations (40)-(44), whose displayed layout is sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span preserves both the numerical/heuristic status and the completed equations (47)-(48) needed after the original v1 cutoff.",
+          "line_end": 887,
+          "line_start": 757,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The four-case expansion for sigma is extraction-fragile, but the competing decay scales and inequality logic are stated in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Conjecture 1 separates four claims about sigma decay and eta alternation/size; the argument compares the first nontrivial-zero contribution with the explicit odd-integer tail and proves the stated triangle-inequality bound while leaving global magnitude control conjectural.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Trivial-zero scale versus nontrivial-zero scale predicts eta alternation",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d10.txt",
+          "unit_bytes": 5098,
+          "unit_id": "openalex_w2039040097_d10",
+          "unit_sha256": "0bca576c17870ffadac658c72a6743feb0f7c3c1a29d6f0b267fe9a4f43ca38c",
+          "unit_type": "conjecture with plausibility argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The exact eta-sigma identity exposes a dominant-term strategy, while the first-zero analysis supplies only plausibility that the sigma contribution is negligible relative to the explicit tail.",
+            "nonparaphrase_operation": "Pairing the first nontrivial zero with its conjugate estimates sigma_j, while the odd-denominator expansion bounds the explicit tail and a triangle inequality proves Theorem 5.",
+            "quality_reason": "Theorem 5 and all four parts of Conjecture 1 are separated correctly, including the conjectural fast sigma decay, eta alternation and size claims, and the global bound. The source gives the first-zero scale argument, restates the exact eta-sigma identity, proves the tail inequalities, and uses the triangle inequality to prove Theorem 5. The candidate correctly treats first-zero dominance and the global magnitude claim as heuristic or conjectural and the all-index alternation proof as only cited here.",
+            "source_support": "Theorem 5 proves |eta_{j-1}|<=|sigma_j|+2^(-j)zeta(j). Conjecture 1 separately posits fast sigma decay, eventual eta alternation near scale 3^(-j), a global bound |eta_k|<=gamma 2^(-k), and alternation for all k.",
+            "speculation_status": "Dominance by the first zero is asymptotic heuristic, the global magnitude bound is unproved here, and the claimed proof of all-index alternation is only cited from separate work. The four-case sigma display is extraction-fragile, but the competing scales and the proved triangle-inequality bound are clear. Framing the argument as competition between nontrivial-zero and explicit odd-tail scales captures the actual mechanism without promoting it to proof. The four-case OCR display for sigma is fragile, but the prose and equations (47)-(48) support the claimed scale comparison."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Removing known trivial-zero poles from zeta'/zeta shifts the convergence barrier from the first trivial zero to near the first nontrivial zero, producing faster-decaying modified coefficients plus explicit correction terms in lambda.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2039040097_d03",
+          "openalex_w2039040097_d28",
+          "openalex_w2039040097_d29"
+        ],
+        "proposed_limit": "The modified coefficients lose the stated von-Mangoldt interpretation and their binomial sum still requires an independent bound.",
+        "source_id": "openalex_w2039040097",
+        "synthesis_id": "riemann_v2_within_e448b6b87e4751e7f183c104",
+        "title": "Trivial-zero subtraction trades explicit corrections for a larger analytic radius"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the central representation and includes enough differentiation and coefficient-extraction setup to avoid reconstructing the derivation externally.",
+          "line_end": 330,
+          "line_start": 229,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Core equations (10)-(15) are formula-dependent but readable in sequence; verify source TeX for exact transcription.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 1 decomposes lambda_n into an eta-binomial sum, an explicit alternating zeta-binomial sum, and elementary terms, while deriving eta from the Laurent expansion of zeta'/zeta and from von Mangoldt limits.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Eta decomposition of each Li coefficient",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d03.txt",
+          "unit_bytes": 4626,
+          "unit_id": "openalex_w2039040097_d03",
+          "unit_sha256": "91b60423dc20de8cd2452deec9b76dfacd7b68a184bedf1f5493c99ec8a55e30",
+          "unit_type": "theorem-plus-derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Logarithmic differentiation separates completed-zeta structure into an explicit analytic contribution and a prime-sensitive residual, concentrating the unresolved burden rather than hiding it.",
+            "nonparaphrase_operation": "The Laurent expansion of zeta'/zeta bridges von Mangoldt data to eta coefficients, and coefficient extraction from log xi bridges eta through a binomial transform to lambda.",
+            "quality_reason": "Theorem 1 gives the claimed decomposition into the eta binomial sum, the explicit alternating zeta binomial sum, and elementary terms. The Laurent expansion of zeta'/zeta, the von Mangoldt limit for eta_k, coefficient extraction from log xi, and the radius-three obstruction from the trivial zero at -2 all appear in the span. The candidate correctly says the exact representation does not provide the needed eta-binomial bound.",
+            "source_support": "Theorem 1 expresses lambda_n using the binomial transform of eta_{m-1}, the alternating binomial sum of (1-2^(-m))zeta(m), and explicit linear terms; eta_k are coefficients of zeta'/zeta at 1 and also limits weighted by the von Mangoldt function.",
+            "speculation_status": "The representation is exact, but it supplies no adequate bound for the eta-binomial term; the radius three is limited by the trivial zero at -2. Equations (10)-(15) are readable in sequence, though exact indices and typography should be checked against source TeX before literal reuse. Calling eta the prime-sensitive residual and the explicit part analytically controlled is a faithful mechanism-level synthesis of the derivation. Equations (10)-(15) are layout-sensitive; the candidate appropriately avoids claiming typography-level certainty."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a representation trade: improved coefficient scale is purchased with explicit zero corrections and constants lacking the earlier arithmetic interpretation.",
+          "line_end": 2487,
+          "line_start": 2379,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equations (G.1)-(G.8) are extraction-sensitive; the radius change from 3 to 13 and its cause are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explicitly removing six trivial-zero contributions moves the nearest remaining singularity outward, yields faster-decaying modified eta coefficients, and changes the Li representation by known exponential terms.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            48
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Subtracting trivial-zero poles enlarges the eta expansion radius",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d28.txt",
+          "unit_bytes": 5938,
+          "unit_id": "openalex_w2039040097_d28",
+          "unit_sha256": "8f149cab5307297a7b915952d719bc6420b93739a534da64d260101a70fb303b",
+          "unit_type": "representation refinement",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d28.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is singularity management by exact subtraction: removing known nearby obstructions improves the analytic coordinates for the unknown remainder. The benefit is smaller coefficients; the cost is bookkeeping terms and loss of the earlier arithmetic interpretation.",
+            "nonparaphrase_operation": "The bridge connects the pole-subtracted logarithmic derivative to a modified eta sequence and then to λ_n. The known trivial zeros become explicit powers such as (2k/(2k+1))^n, leaving a modified binomial residual S2^(12).",
+            "quality_reason": "Equations (G.2)-(G.4) subtract the six poles at the first six trivial zeros, and the prose explicitly states that the convergence radius becomes 13. Applying the Li derivative formula yields the six explicit exponentially decreasing corrections in (G.1), while the remaining coefficients form the modified eta sequence. The source explicitly says the modified constants lack an arithmetic interpretation and retains the binomial residual in Corollary G1, supporting the candidate's stated trade and failure boundary.",
+            "source_support": "The source defines modified coefficients η_j^(12) by removing the poles at the first six trivial zeros from the expansion of ζ'/ζ around s = 1. Integrating and inserting the expansion into the Li derivative formula produces (G.1), including six explicit exponential corrections, and states that the convergence radius increases to 13 and η_j^(12) grows no faster than 13^(-j) in magnitude.",
+            "speculation_status": "A larger radius and decaying individual coefficients do not bound their binomial transform S2^(12). The source explicitly says the modified constants lack an arithmetic interpretation, so the central sign obstruction is relocated rather than removed. The subtraction mechanism, radius 13, and qualitative trade are explicit; exact signs and powers in (G.1)-(G.8) remain formula-extraction sensitive. Describing exact pole subtraction as singularity management and improved analytic coordinates is a faithful nonliteral interpretation. Saying the sign obstruction is relocated rather than removed follows from the surviving absolute-value residual, though it is not a theorem stated verbatim. The signs and powers in (G.1)-(G.8) are extraction-sensitive; the candidate appropriately quarantines literal coefficients from unchecked reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The derivative formulas support the preceding subtraction scheme rather than proving the remaining modified S2 bound.",
+          "line_end": 2553,
+          "line_start": 2489,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The text layer around equations (G.9)-(G.15) is formula-fragile and should not be copied literally without TeX verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Taylor expansion at each trivial zero and functional-equation derivative identities provide modified coefficient data, including eta_0, and refine the lower-bound decomposition.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            49
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Trivial-zero derivatives calibrate the modified eta sequence",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d29.txt",
+          "unit_bytes": 3040,
+          "unit_id": "openalex_w2039040097_d29",
+          "unit_sha256": "57484526b432749f3e10e6471c58825a90a163358051575a2d00b7d15ab53ef7",
+          "unit_type": "local expansion and refinement",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d29.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The span supplies two parallel pieces of calibration for the trivial-zero-subtracted framework rather than one causal chain. First, Taylor expansions at negative even zeros and differentiated functional-equation identities express negative-side zeta derivatives, and a finite derivative-ratio combination, through positive odd zeta values and derivatives. Separately, the pole-subtracted expansion (G.2) directly gives eta_0^(12), which is inserted into Corollary G2. These calculations make explicit local and leading-coefficient data, but they do not show that the Taylor jets determine the modified eta sequence or bound the remaining m>=2 modified-eta binomial sum.",
+            "nonparaphrase_operation": "Separates two adjacent computations that the candidate had conflated—negative-even derivative transfer and independent extraction of the leading modified eta coefficient—and assigns each its actual role and unresolved proof burden.",
+            "quality_reason": "Accepted after splitting the supported threads, removing the unsupported jet-to-eta implication, and retaining the unresolved modified-binomial-sum boundary and formula-fragility warning.",
+            "source_support": "Equations (G.9)-(G.13) contain the local expansions, functional-equation derivative identities, and finite derivative-ratio evaluation. The prose then explicitly derives eta_0^(12) from (G.2), records it in (G.14), and substitutes it into (G.15).",
+            "speculation_status": "Both calculation threads and the insertion into the lower-bound decomposition are source-supported. Any dependence of individual modified eta coefficients on the displayed Taylor jets is unestablished and excluded; exact literal formulas remain TeX-verification dependent."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Reordering alternating zeta sums into monotone kernels enables integral, hypergeometric, and digamma comparisons that cover S0, S1, S3, and a parameterized family.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2039040097_d04",
+          "openalex_w2039040097_d05",
+          "openalex_w2039040097_d14",
+          "openalex_w2039040097_d15",
+          "openalex_w2039040097_d16",
+          "openalex_w2039040097_d27"
+        ],
+        "proposed_limit": "Portability of the explicit component does not control the separate prime-weighted arithmetic residuals.",
+        "source_id": "openalex_w2039040097",
+        "synthesis_id": "riemann_v2_within_99b8a76d8aa2825b327d201f",
+        "title": "Integral comparison is the portable deterministic component"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The two forms support different estimates and motivate the later Appendix A comparison.",
+          "line_end": 379,
+          "line_start": 332,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on equations (16)-(19); prose confirms the reordering mechanism despite multi-line formula layout.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reordering the zeta Dirichlet series turns the finite binomial sum into sums of elementary kernels, creating monotone functions suitable for integral comparison.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Equivalent discrete forms of the explicit S1 sum",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d04.txt",
+          "unit_bytes": 2539,
+          "unit_id": "openalex_w2039040097_d04",
+          "unit_sha256": "cb6c1fceaeabfd102d65f9d8ff4f59eeaa324804b2514b248438d3aa8139790a",
+          "unit_type": "representation comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The finite alternating binomial sum S1 is recast, using the odd-integer Dirichlet series and the stated interchange of summations, as two infinite sums of elementary odd-index kernels. This moves cancellation from the zeta-weighted m-sum into explicit k-dependent expressions, making term shape available for later estimation; monotonicity and integral comparability are inferences from those kernels or results of the following unit, not proofs supplied here. The change applies only to S1, and convergence or domination justifying the interchange remains a proof burden absent from this span.",
+            "nonparaphrase_operation": "Reorganizes a finite binomial transform of zeta values into odd-index elementary kernels and identifies the gain—estimable term structure—and the loss—no longer retaining the original finite-sum form, while leaving interchange justification unresolved.",
+            "quality_reason": "Accepted after replacing the candidate's unsupported 'justified' interchange with the source's stated interchange and preserving formula-layout risk and the missing convergence argument.",
+            "source_support": "Equations (16)-(19) define S1, state (1-2^(-n))zeta(n) as the odd-integer Dirichlet series, attribute (17) to an interchange of the two sums, and display a second equivalent form (19).",
+            "speculation_status": "The representation identities and stated interchange are source claims. Monotonicity and usefulness for integral comparison are bounded inferences, not established in this unit; no claim about other Li-decomposition terms or positivity is made."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span includes the theorem statement, complete monotonicity argument, and corollary so the direction and use of the inequality remain visible.",
+          "line_end": 455,
+          "line_start": 384,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact constants and integral kernels depend on displayed equations (20)-(24); checked prose makes the proof architecture recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2 compares a decreasing summand with an integral, changes variables, integrates by parts, evaluates with the digamma function, and transfers the result into lower and upper bounds for lambda_n modulo S2.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integral comparison gives an n log n lower bound for S1",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d05.txt",
+          "unit_bytes": 3255,
+          "unit_id": "openalex_w2039040097_d05",
+          "unit_sha256": "cfa82ccac50096059096f28e55f7f6cdc34465ab45e8022a6948cbcffe0f389f",
+          "unit_type": "theorem-plus-proof fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof extracts a deterministic growth reserve from S1 that can later pay for an arithmetic error term if that term is shown to be smaller.",
+            "nonparaphrase_operation": "The discrete odd-kernel sum is bridged to an integral and then to the digamma function; the corollary inserts this bound into the decomposition of lambda_n.",
+            "quality_reason": "Theorem 2 states the lower bound for S1, and its proof uses the decreasing k-integrand, changes of variables, integration by parts, and evaluation through the digamma function. The corollary inserts the estimate into lambda_n while retaining the unresolved -|S2| term, exactly as the candidate reports.",
+            "source_support": "Theorem 2 proves S1(n)>=(n/2)log n+((gamma-1)/2)n+1/2 by comparing a decreasing summand with an integral, changing variables, integrating by parts, and evaluating the result through psi(n).",
+            "speculation_status": "The resulting lambda_n lower bound still contains -|S2|, so sharpening S1 alone cannot prove Li positivity. The proof architecture and inequality direction are explicit; exact constants rely on displayed equations (20)-(24). Interpreting the n log n contribution as a deterministic reserve that could dominate a smaller arithmetic residual is explicitly conditional and faithful to the corollary. Exact constants depend on equations (20)-(24), but their direction and values are readable in the artifact."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span contains two evaluations of the same remaining integral and their consistency check.",
+          "line_end": 1238,
+          "line_start": 1097,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Multi-line equations (A.1)-(A.14) are layout-sensitive; method and inequality direction are recoverable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A second integral form, integration by parts, hypergeometric reduction, binomial expansion, and elementary inequalities sharpen the lower estimate for S1 beyond the main-text comparison.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            23,
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Appendix A strengthens the S1 integral comparison",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d14.txt",
+          "unit_bytes": 7842,
+          "unit_id": "openalex_w2039040097_d14",
+          "unit_sha256": "25918a021269acc87d136ec4d09db19ba09d638252e146983d6adf30ff2cce57",
+          "unit_type": "alternative estimate",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Multiple evaluations of the same remainder serve both as a consistency check and as a way to expose bounded corrections hidden by the coarser n log n estimate.",
+            "nonparaphrase_operation": "The chain runs from a discrete elementary kernel to an integral, then to digamma, hypergeometric, finite-difference, and binomial-harmonic representations.",
+            "quality_reason": "The appendix starts from representation (19), defines I1, changes variables, integrates by parts, evaluates the remaining integral by both hypergeometric and binomial routes, checks their agreement, and derives inequality (A.14). The candidate correctly limits the refinement to S1 and does not claim progress on S2.",
+            "source_support": "Starting from form (19), the appendix defines I1, changes variables, integrates by parts, rewrites the remaining integral using 2F1 or a beta-type finite sum, and obtains I1(n)>=(n/2)[psi(n)+gamma+log 2-1]-1+2^(1-n).",
+            "speculation_status": "The refinement improves only the explicit S1 term and leaves the S2 magnitude problem untouched. Method and inequality direction are recoverable, but multiline equations (A.1)-(A.14) are layout-sensitive. Treating the two evaluations as a consistency check and as exposure of bounded corrections is directly supported by their explicit agreement and subsequent bounds. Equations (A.1)-(A.14) are multiline and exact transcription remains formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This estimate later enters the parity split for generalized Li coefficients.",
+          "line_end": 1272,
+          "line_start": 1240,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact summands and asymptotic constants depend on equations (A.15)-(A.17).",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Changing the kernel from odd denominators to all positive integers yields S0 and an exact comparison integral, showing the reusable part of the S1 estimation strategy.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The same comparison method bounds S0",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d15.txt",
+          "unit_bytes": 1897,
+          "unit_id": "openalex_w2039040097_d15",
+          "unit_sha256": "058a6490513a49e7e34c217f6639dae733a8b2e44822a7b257043061cb3dadb2",
+          "unit_type": "generalized sum estimate",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The estimation method depends on the kernel's monotone structure rather than on the specific odd-integer realization used for S1.",
+            "nonparaphrase_operation": "Dirichlet-series expansion and binomial summation bridge zeta values to an elementary k-kernel; integration by parts bridges that kernel to digamma asymptotics.",
+            "quality_reason": "The source defines S0, rewrites it as an elementary k-sum, evaluates the comparison integral by binomial integration and by parts, and states both the digamma and logarithmic lower bounds. The candidate accurately says this controls only the reusable explicit component.",
+            "source_support": "S0(n)=sum_{m=2}^n(-1)^m binom(n,m)zeta(m) is rewritten as a sum over k, compared with I0, and evaluated as I0=n[psi(n)+gamma-1]+1, giving S0(n)>=n(log n+gamma-1)+1 for n>=2.",
+            "speculation_status": "This bound controls an archimedean component used later but says nothing about generalized prime-weighted residuals. Exact summands and asymptotic constants depend on equations (A.15)-(A.17), whose layout should be preserved. Saying the method depends on monotone kernel structure rather than the earlier odd-denominator realization is a reasonable comparison of the displayed S0 and S1 constructions. Exact summands and constants in (A.15)-(A.17) should be retained from the formulas."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The final digamma form is explicitly cited as the useful representation for Appendix E.",
+          "line_end": 1326,
+          "line_start": 1274,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equation (A.21) is visually fragmented; equation (A.22) and prose recover the structural result, not every typeset detail.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A weighted zeta sum is converted to an integral whose evaluation changes form with parity, furnishing the S3 term required by the elliptic-curve Li formula.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "S3 comparison exposes parity-sensitive digamma structure",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d16.txt",
+          "unit_bytes": 2630,
+          "unit_id": "openalex_w2039040097_d16",
+          "unit_sha256": "e8a4c1bbd3466abba6b558c0692319d5ee3dadb4576c2035641229a91d79cd74",
+          "unit_type": "generalized sum estimate",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Parity is not a nuisance term but structural information introduced by the doubled kernel; making it explicit prepares the expression for elliptic completed-L contributions.",
+            "nonparaphrase_operation": "The discrete weighted zeta sum is bridged to an integral and then, through reflection and doubling identities, to a parity-adapted digamma formula.",
+            "quality_reason": "The artifact defines S3, introduces I3, integrates by parts, and rewrites the result with reflection and doubling identities into a formula involving psi(n), psi(n/2), log 2, and (-1)^n. The source explicitly says the final form is useful in Appendix E, and the candidate does not claim that it controls the elliptic residual.",
+            "source_support": "The appendix defines S3(n)=sum_{j=2}^n(-1)^j binom(n,j)2^j zeta(j), introduces a comparison integral I3, integrates by parts, and rewrites I3 using psi(n), psi(n/2), log 2, and (-1)^n.",
+            "speculation_status": "The unit supplies the estimable S3 component, not control of the elliptic arithmetic residual. Equation (A.21) is visually fragmented; equation (A.22) and prose support the structural form but not casual literal transcription. Interpreting the doubled kernel as the origin of the parity-sensitive terms is a well-grounded structural reading of (A.19)-(A.22). Equation (A.21) is OCR-fragmented; only the structural result, not every symbol, is safe without TeX verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The inequality family subsumes S0, S1, and S3 comparison cases but does not automatically provide sharp bounds for every parameter.",
+          "line_end": 2370,
+          "line_start": 2225,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula layout for (F.2)-(F.13) is fragile; prose and special-case identifications recover the conceptual family.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introducing a shift and multiplier turns several special sums into terminating 2F1 forms, whose comparison integrals become 3F2 expressions and reduce to digamma/harmonic forms at special parameters.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            45,
+            46
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A hypergeometric family unifies alternating zeta-sum bounds",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d27.txt",
+          "unit_bytes": 6635,
+          "unit_id": "openalex_w2039040097_d27",
+          "unit_sha256": "9d2242185bbe7af963751ae83be0e813abb474b523d9c98251e4d936c6cf9f71",
+          "unit_type": "parameterized method generalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d27.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The shifted, positively scaled family S_nu(kappa,n) compresses several alternating zeta sums into one representation chain: reordering produces a terminating 2F1 expression, the source compares its j-sum with I_nu, and term-by-term integration after v=1/j gives a 3F2 value. At kappa=1 this specializes to digamma and harmonic-number forms, while the stated nu=0 cases at kappa=1/2 and 2 recover earlier comparison integrals. The construction gains a parameterized special-function template but does not by itself give sharp bounds for every parameter, and literal reuse must preserve the base condition nu+2<=n, the indicated extension, kappa>0, and the additional restrictions attached to the unit-argument identities.",
+            "nonparaphrase_operation": "Abstracts isolated sum estimates into a parameterized bridge from a finite binomial sum to a terminating hypergeometric kernel, then to a comparison integral and a closed special-function form; this reveals shared structure without asserting an unproved monotonicity mechanism.",
+            "quality_reason": "Accepted with the imported prime-residual boundary removed, no unsupported monotonicity assertion, and the source's parameter and validity conditions made explicit despite layout-fragile prefactors.",
+            "source_support": "Equations (F.1)-(F.6) define the family and its conditions, display the terminating 2F1 form, define I_nu, evaluate it as 3F2, and state S_nu>=I_nu. Equations (F.7)-(F.13) give the kappa=1 reductions, restrictions for (F.9)-(F.11), and the kappa=1/2 and 2 special cases.",
+            "speculation_status": "The displayed representation chain, comparison inequality, and special cases are source-supported. Viewing the family as conceptual compression is interpretation; sharpness, monotonicity, and unrestricted parameter validity are not claimed."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Across Dirichlet, elliptic, and Dedekind completions, logarithmic differentiation separates conductor and gamma terms from prime or prime-ideal sums, so the architecture transfers while the cancellation problem changes weights.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2039040097_d21",
+          "openalex_w2039040097_d22",
+          "openalex_w2039040097_d24",
+          "openalex_w2039040097_d25",
+          "openalex_w2039040097_d26"
+        ],
+        "proposed_limit": "Character phases or local sign changes are only plausibility for cancellation, and the Dedekind formula still carries an explicit convergence-justification gate.",
+        "source_id": "openalex_w2039040097",
+        "synthesis_id": "riemann_v2_within_b45a29878f17f3ed51f6dc18",
+        "title": "Generalized Li formulas preserve the same arithmetic bottleneck"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a transfer of architecture, not evidence that the residual S_chi is small.",
+          "line_end": 1752,
+          "line_start": 1649,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equations (E.1)-(E.7) are dense and formula-dependent; prose distinguishes the proved lower bounds from the growth conjecture.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For primitive characters, the generalized Li coefficient is decomposed into an arithmetic von-Mangoldt/Laguerre sum and parity-dependent explicit terms, then bounded using S0 and S1; cancellation in character phases is explicitly conjectural.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            34
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Dirichlet Li coefficients split into gamma growth and an arithmetic character sum",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d21.txt",
+          "unit_bytes": 5299,
+          "unit_id": "openalex_w2039040097_d21",
+          "unit_sha256": "1f9dcb2d8be1395b555bfd66bc3a693b9fe029f4cfc8f710d304f9d1869b13de",
+          "unit_type": "generalization and bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d21.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Riemann-case architecture transfers cleanly at the completed-function level, but the residual changes from eta coefficients to oscillatory character-weighted prime data.",
+            "nonparaphrase_operation": "The functional equation and zero product lead to generalized Li coefficients; parity maps gamma terms to S0/S1, and Laguerre polynomials compress repeated logarithmic derivatives of the Euler-product term.",
+            "quality_reason": "The span defines the completed Dirichlet function, its functional equation and zero product, lambda_chi, the explicit decomposition into S_chi and parity-dependent terms, and the Laguerre-weighted von Mangoldt representation. It states the critical-line criterion only as presumed and labels O(n) or O(n^{1/2+epsilon}) growth of S_chi as conjectural cancellation from character phases; the candidate preserves both qualifications. The Appendix A estimates are used to derive the displayed lower bounds without bounding S_chi.",
+            "source_support": "The span defines xi(s,chi), lambda_chi(n) as a zero sum, and Li's formula lambda_chi=S_chi+(n/2)log(r/pi)-n gamma/2+tau_chi; S_chi is a von-Mangoldt character sum equivalently weighted by L^1_{n-1}(log k), while tau_chi reduces by parity to S0 and S1.",
+            "speculation_status": "The criterion is stated as presumed in this span, and the proposed O(n) or O(n^(1/2+epsilon)) size of S_chi is conjectural; character phases alone are not a cancellation proof. Dense equations (E.1)-(E.7) distinguish proved lower bounds from the growth conjecture, though exact conjugations and constants require TeX verification. The analytic-growth-versus-arithmetic-residual architecture is a supported synthesis of equations (E.3)-(E.7), not a claim that the residual is small. Conjugations, parity cases, and constants in equations (E.1)-(E.7) require formula-level verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The Hasse-type local range and bad-reduction cases are used only as plausibility for the residual estimate.",
+          "line_end": 1846,
+          "line_start": 1754,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact normalization and constants in equations (E.8)-(E.13) require source-formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The elliptic xi product yields a Li decomposition with an arithmetic b(k) sum and explicit S0/S3 terms; possible sign changes in local coefficients motivate, but do not establish, cancellation.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            35,
+            36
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Elliptic Li coefficients expose a signed prime-power residual",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d22.txt",
+          "unit_bytes": 4544,
+          "unit_id": "openalex_w2039040097_d22",
+          "unit_sha256": "f67eb32001d6025efab4dedb10f28e6fae9a20ccac5b96e324e36e23e5d8c7c7",
+          "unit_type": "generalization and bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d22.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Completion isolates universal analytic growth while the Euler factors determine a problem-specific residual, so method transfer preserves the bottleneck rather than solving it.",
+            "nonparaphrase_operation": "The xi_E product bridges zeros to lambda_E; logarithmic derivatives and Laguerre weights bridge local prime-power coefficients to SE; Appendix A estimates bridge gamma factors to S0/S3.",
+            "quality_reason": "The artifact defines xi_E and lambda_E, states the critical-line positivity equivalence, gives the explicit formula with S_E, rewrites its elementary part using S0 and S3, and derives the lower bound that still contains S_E. It defines the local coefficients b(p^k) and offers their possible sign changes only as plausibility for conjectural cancellation; the candidate explicitly preserves that limitation.",
+            "source_support": "The unit defines xi_E and lambda_E from its zeros, states the critical-line positivity equivalence, and rewrites Li's explicit formula as SE plus conductor/gamma terms involving S0 and S3; SE is a Laguerre-weighted sum with local coefficients b(p^k).",
+            "speculation_status": "The conjecture SE=O(n^(1/2+epsilon)) is unsupported here, and possible signs of b(p^k), including good and bad reduction cases, provide plausibility rather than quantitative cancellation. Exact normalization and constants in equations (E.8)-(E.13) are formula-sensitive, but the proved-versus-conjectural split is clear. Describing completion as isolating analytic growth while Euler factors determine the residual is a source-grounded synthesis of (E.8)-(E.13). Exact normalization and local-coefficient formulas are dense and should be checked against TeX before literal reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This independently derives the result used earlier rather than merely quoting it.",
+          "line_end": 2037,
+          "line_start": 1958,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equations (E.19)-(E.23) are symbol-dense; exact indices and conjugations should be checked against TeX.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Starting from the xi product, repeated logarithmic differentiation separates conductor, gamma-factor, and prime-power contributions and recovers the explicit Dirichlet Li formula.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            40
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Dirichlet generalized Li formula from logarithmic derivatives",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d24.txt",
+          "unit_bytes": 3891,
+          "unit_id": "openalex_w2039040097_d24",
+          "unit_sha256": "d95ed80e3f00df5e822f8db69924c2ccd9262a2664d0d4cfb51344ddf6a48fd9",
+          "unit_type": "explicit-formula derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d24.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Logarithmic differentiation is the decomposition engine: multiplicative completion becomes additive components whose analytic and arithmetic burdens can be treated separately.",
+            "nonparaphrase_operation": "The zero product bridges lambda_chi to local derivatives, the Euler product bridges log L derivatives to prime powers, and polygamma special values bridge gamma derivatives to explicit zeta sums.",
+            "quality_reason": "The product expansion gives lambda_chi as the binomial combination of logarithmic derivatives at one; differentiating the conductor, gamma, and L factors yields polygamma and prime-power series terms and recovers equation (E.3). The source explicitly attributes convergence of the infinite S_chi series to the prime number theorem for arithmetic progressions. The candidate correctly says derivation of the formula neither bounds the arithmetic series nor proves generalized Li positivity.",
+            "source_support": "From the product for xi(s,chi), lambda_chi is expressed as a binomial combination of derivatives of log xi at 1. Differentiating its conductor, Gamma, and L factors gives polygamma terms and a von-Mangoldt character series, yielding equation (E.3); convergence is attributed to the prime number theorem for arithmetic progressions.",
+            "speculation_status": "Deriving the formula does not bound its arithmetic series or prove generalized Li positivity; convergence and exact normalization remain required hypotheses, not cancellation estimates. Equations (E.19)-(E.23) are symbol-dense, so exact indices and character conjugations should be checked against source TeX before literal reuse. Calling logarithmic differentiation the decomposition engine is a non-generic description tied to the actual multiplicative-to-additive operation in equations (E.19)-(E.23). Indices, character conjugations, and normalization in the symbol-dense equations require source-TeX checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This demonstrates structural portability of the derivation while changing the gamma shift and prime weights.",
+          "line_end": 2098,
+          "line_start": 2039,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact powers and shifts in equations (E.24)-(E.28) are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The same product-to-derivative template applied to the elliptic xi function separates conductor, gamma, and local arithmetic components and recovers the elliptic explicit formula.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            41
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Elliptic generalized Li formula from logarithmic derivatives",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d25.txt",
+          "unit_bytes": 2958,
+          "unit_id": "openalex_w2039040097_d25",
+          "unit_sha256": "d024f5fa6c3962bdb895b99cb001f4e371211a17e5c1043dce3d4aca0be0d8d5",
+          "unit_type": "explicit-formula derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d25.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Logarithmic differentiation is the compression mechanism: multiplicative global and local factors become independently inspectable additive contributions, while repeated differentiation supplies the precise moments needed by the Li functional.",
+            "nonparaphrase_operation": "The bridge runs from the completed elliptic product ξ_E to its logarithmic derivatives at s = 1, with polygamma values translating the archimedean factor and the Λ(n)b(n)/n^(3/2) series translating local arithmetic data.",
+            "quality_reason": "Equations (E.24)-(E.28) explicitly pass from the completed elliptic xi product to logarithmic derivatives at s=1 and then to lambda_E(n). The conductor, gamma/polygamma, and Lambda(n)b(n)-weighted contributions are visibly separated in the displayed formulas. The candidate preserves the important limit that this calculation derives a representation but supplies no sign or magnitude control for the arithmetic sum.",
+            "source_support": "The span writes log ξ_E(s) as a conductor term, a gamma term, and log L_E(s+1/2), differentiates it, and substitutes the resulting polygamma and Λ(n)b(n)-weighted prime sum into the binomial derivative formula for λ_E(n), obtaining (E.28) and the stated result (E.12).",
+            "speculation_status": "The calculation transports the explicit-formula architecture but does not itself control the sign or size of the arithmetic sum, nor establish a zero criterion beyond the cited generalized Li framework. The derivation and component separation are explicit, but exact exponents, shifts, and signs in (E.24)-(E.28) are text-layer sensitive and should be checked against TeX before literal reuse. Calling logarithmic differentiation a compression mechanism and the derivative orders moments is a faithful conceptual interpretation of the displayed binomial derivative formula. The extraction is formula-sensitive around shifts, signs, and powers in (E.24)-(E.28); the candidate explicitly warns against literal reuse without TeX checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source presents a framework rather than a fully justified final formula.",
+          "line_end": 2216,
+          "line_start": 2100,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense equations (E.29)-(E.37) and a broken product layout require TeX verification for literal reuse; the incomplete status is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The Dedekind completion is decomposed into discriminant, archimedean, and prime-ideal terms; differentiating supplies the candidate Li representation while explicitly leaving convergence justification as a gate.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            42,
+            43
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Dedekind Li explicit-formula framework and convergence gate",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d26.txt",
+          "unit_bytes": 5328,
+          "unit_id": "openalex_w2039040097_d26",
+          "unit_sha256": "c6bd25965cb0fe40adf18457ab29e1d7289897a472f6e6061f101e0d997df2b2",
+          "unit_type": "partial construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d26.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Completion organizes field invariants, archimedean geometry, and prime-ideal arithmetic into separate channels. Logarithmic differentiation then makes the Riemann, Dirichlet, elliptic, and Dedekind constructions structurally comparable without making their arithmetic weights identical.",
+            "nonparaphrase_operation": "The central bridge is ξ_k → log ξ_k → derivatives at s = 1 → λ_n; r1, r2, and d_k encode the global completion, while norms of prime ideals encode the local channel.",
+            "quality_reason": "The span defines the Dedekind completion from discriminant, archimedean gamma factors, and zeta_k, then differentiates its logarithm. Equation (E.34) expands zeta_k'/zeta_k over prime ideals and powers, and (E.37) supplies the higher-derivative arithmetic term. The final prose explicitly says that the s to 1 limit should yield the formula only subject to convergence justification, which the candidate correctly treats as an unresolved gate. The phrase 'separate channels' is a reusable stylistic template, but here it is instantiated by named field invariants, gamma factors, and prime-ideal norms rather than standing alone.",
+            "source_support": "For a number field with r1 real and r2 complex places, the source defines Z_k and the entire completion ξ_k, expresses log ξ_k through |d_k|, gamma factors, and ζ_k, and differentiates. The logarithmic derivative of ζ_k is expanded over prime ideals and powers, yielding (E.37) as the arithmetic component of a candidate λ_n formula.",
+            "speculation_status": "The source explicitly stops short of the final explicit representation: taking s → 1 is subject to justification of convergence of the resulting prime-ideal series. Thus this is a framework, not a completed theorem or a sign bound for λ_n. The incomplete status is unambiguous, but the displayed product and dense formulas (E.29)-(E.37) are extraction-fragile, so literal coefficients require TeX verification. Describing r1, r2, and d_k as a global channel and prime-ideal norms as a local channel is interpretive but concretely anchored in (E.29)-(E.37). Structural comparability with the elliptic and Dirichlet cases is supported by the source's own statement that the formula is analogous, while nonidentity of weights is a reasonable qualification. The product layout and coefficients in (E.29)-(E.37) are extraction-fragile; the candidate confines literal confidence appropriately."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The eta-sigma identity is recovered by discrete reordering, Mellin integration, and coefficient comparison, showing that the relation is not tied to one manipulation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2039040097_d08",
+          "openalex_w2039040097_d19",
+          "openalex_w2039040097_d20"
+        ],
+        "proposed_limit": "Agreement among derivations validates the identity's internal representation, not the later conjectural decay assumptions.",
+        "source_id": "openalex_w2039040097",
+        "synthesis_id": "riemann_v2_within_7242be9f8c578f71e8bd3162",
+        "title": "Alternative derivations test representation robustness"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the definition of sigma, its relation to lambda, the full summation evaluation, and the alternative-proof pointer.",
+          "line_end": 662,
+          "line_start": 519,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Relies heavily on equations (28)-(39); semantic relations are recoverable, but exact binomial indices merit TeX verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 3 connects sigma_k, the reciprocal-power sum over nontrivial zeros, to eta_{k-1} and an explicit zeta term; reordering and a generating identity evaluate the intervening zeta sum.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Eta coefficients equal zero-power sums plus an explicit tail",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d08.txt",
+          "unit_bytes": 7170,
+          "unit_id": "openalex_w2039040097_d08",
+          "unit_sha256": "0384518273832278bc16b5a23f361c27cef848d3679c3392bde86bd599e2815f",
+          "unit_type": "theorem-plus-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The identity separates each zero moment into an unknown eta coefficient and an explicit trivial/gamma tail, making comparisons of their decay scales possible.",
+            "nonparaphrase_operation": "Coefficient comparison, binomial transformation, and evaluation of a reordered zeta sum connect global zeros, sigma moments, eta Laurent coefficients, and Li coefficients.",
+            "quality_reason": "The span defines sigma_k through the local log-xi expansion and as reciprocal-power sums over zeros, gives the binomial relation to lambda_n, and proves sigma_k=(-1)^k eta_{k-1}-(1-2^{-k})zeta(k)+1 for k>=2. The proof explicitly uses coefficient comparison, reordering, the generating identity, and the odd-denominator evaluation. The candidate correctly refuses to infer eta or sigma decay from the identity.",
+            "source_support": "Writing log xi near 1 with coefficients sigma_k=sum_rho rho^(-k), the source has lambda_n=-sum_{j=1}^n(-1)^j binom(n,j)sigma_j and proves sigma_k=(-1)^k eta_{k-1}-(1-2^(-k))zeta(k)+1 for k>=2.",
+            "speculation_status": "The exact bridge does not validate any later decay or sign conjecture for eta or sigma. The semantic chain is recoverable, but equations (28)-(39) are dense and exact binomial indices merit source-TeX verification. Describing the explicit zeta term as the completed-function tail and using the identity to compare scales is a reasonable interpretation of the displayed decomposition. The dense binomial indices and summation layout require source-formula checking before literal transcription."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Provides a robustness check on the reordering-based main proof.",
+          "line_end": 1447,
+          "line_start": 1396,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equations (B.1)-(B.4) are formula-dependent, but the chain to equation (30) is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Substituting the Mellin integral for zeta, changing variables, and subtracting the unit contribution independently evaluates the summation that links eta and sigma.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integral evaluation of the zeta sum in Theorem 3",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d19.txt",
+          "unit_bytes": 2632,
+          "unit_id": "openalex_w2039040097_d19",
+          "unit_sha256": "924acdcc379c2bc00a89bc6383bbb2aa06b2465b6f416d1c763101af3cf006c4",
+          "unit_type": "alternative proof fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Agreement between discrete reordering and integral evaluation checks that the eta-sigma bridge is not an artifact of one summation manipulation.",
+            "nonparaphrase_operation": "The Mellin representation bridges zeta values to a hyperbolic-sine integral, where the binomial weight collapses before evaluation.",
+            "quality_reason": "The appendix substitutes the Mellin integral for zeta into the weighted sum, changes variables, evaluates the sinh-kernel integral, subtracts the unit contribution, and obtains equation (30). It also records the two auxiliary zeta sums, while the candidate correctly avoids drawing decay conclusions.",
+            "source_support": "Substituting the Mellin integral for zeta into the binomially weighted tail, changing variables, and evaluating a sinh-kernel integral yields (1-2^(-k))zeta(k); subtracting the unit contribution proves equation (30), with two auxiliary zeta sums also recorded.",
+            "speculation_status": "This verifies a summation identity but gives no evidence for the later eta or sigma decay conjectures. The chain through equations (B.1)-(B.4) is explicit; interchange conditions are not developed in detail inside this narrow appendix span. Treating agreement with the discrete derivation as a robustness check on the eta-sigma bridge is supported by this explicitly alternative evaluation. The narrow span does not spell out interchange conditions, a limitation the candidate retains."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source also flags a corrected typographical error in the antecedent reference.",
+          "line_end": 1503,
+          "line_start": 1456,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact series coefficients require equations (C.1)-(C.3); the proof move is clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expanding xi'/xi, the digamma term, and zeta'/zeta around one and equating coefficients gives a second, conceptually different proof of Theorem 3.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Coefficient comparison rederives the eta-sigma identity",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d20.txt",
+          "unit_bytes": 1991,
+          "unit_id": "openalex_w2039040097_d20",
+          "unit_sha256": "a56602a385104b77726813497353e597f3ef5bdeee3582171658ff72a6ba2303",
+          "unit_type": "alternative proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Factor-by-factor coefficient accounting shows exactly which completed-zeta components contribute the explicit tail and which contribute eta.",
+            "nonparaphrase_operation": "Logarithmic differentiation turns the xi product into zero moments, while local power-series comparison bridges gamma, zeta, eta, and sigma coefficients.",
+            "quality_reason": "The source expands xi'/xi, 1/s, the digamma term, and zeta'/zeta near s=1, then equates coefficients to recover sigma_1 and Theorem 3. The candidate retains the local convergence condition |1-s|<1 and does not infer signs, decay, or RH from the identity. The corrected-typographical-error notice is not promoted into mathematical evidence.",
+            "source_support": "The source expands xi'/xi around s=1 using its zero coefficients sigma, expands the digamma term with zeta values, inserts the Laurent series for zeta'/zeta, and equates powers of s-1 to recover sigma_1 and Theorem 3.",
+            "speculation_status": "The derivation validates the identity only within its local convergence setting and does not establish coefficient decay, signs, or RH. The source flags a corrected typo in prior work; exact coefficients in (C.1)-(C.3) remain formula-sensitive, with 1/s expanded for |1-s|<1. Factor-by-factor coefficient accounting as the explanation for the explicit tail versus eta contribution is a faithful reading of equations (C.1)-(C.3). Exact series coefficients remain formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Asymptotic corrections can tighten S1's linear term and suggest alternating approximations, but further refinement of S1 leaves S2 magnitude control as the decisive missing ingredient.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2039040097_d05",
+          "openalex_w2039040097_d36",
+          "openalex_w2039040097_d12"
+        ],
+        "proposed_limit": "The Euler-Maclaurin correction series is explicitly divergent and the proposed upper/lower approximations are not stated as proved uniform bounds.",
+        "source_id": "openalex_w2039040097",
+        "synthesis_id": "riemann_v2_within_1dac1fc4a5fcf3e01a4461c9",
+        "title": "Euler-Maclaurin refines the solved term without removing the central obstruction"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span includes the theorem statement, complete monotonicity argument, and corollary so the direction and use of the inequality remain visible.",
+          "line_end": 455,
+          "line_start": 384,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact constants and integral kernels depend on displayed equations (20)-(24); checked prose makes the proof architecture recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2 compares a decreasing summand with an integral, changes variables, integrates by parts, evaluates with the digamma function, and transfers the result into lower and upper bounds for lambda_n modulo S2.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integral comparison gives an n log n lower bound for S1",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d05.txt",
+          "unit_bytes": 3255,
+          "unit_id": "openalex_w2039040097_d05",
+          "unit_sha256": "cfa82ccac50096059096f28e55f7f6cdc34465ab45e8022a6948cbcffe0f389f",
+          "unit_type": "theorem-plus-proof fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof extracts a deterministic growth reserve from S1 that can later pay for an arithmetic error term if that term is shown to be smaller.",
+            "nonparaphrase_operation": "The discrete odd-kernel sum is bridged to an integral and then to the digamma function; the corollary inserts this bound into the decomposition of lambda_n.",
+            "quality_reason": "Theorem 2 states the lower bound for S1, and its proof uses the decreasing k-integrand, changes of variables, integration by parts, and evaluation through the digamma function. The corollary inserts the estimate into lambda_n while retaining the unresolved -|S2| term, exactly as the candidate reports.",
+            "source_support": "Theorem 2 proves S1(n)>=(n/2)log n+((gamma-1)/2)n+1/2 by comparing a decreasing summand with an integral, changing variables, integrating by parts, and evaluating the result through psi(n).",
+            "speculation_status": "The resulting lambda_n lower bound still contains -|S2|, so sharpening S1 alone cannot prove Li positivity. The proof architecture and inequality direction are explicit; exact constants rely on displayed equations (20)-(24). Interpreting the n log n contribution as a deterministic reserve that could dominate a smaller arithmetic residual is explicitly conditional and faithful to the corollary. Exact constants depend on equations (20)-(24), but their direction and values are readable in the artifact."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proposed bounds are described as expected approximations, not proved global inequalities.",
+          "line_end": 3267,
+          "line_start": 3162,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equations (L.1)-(L.7) are layout-sensitive; the asymptotic status and sign-alternation mechanism are stated clearly.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explicit summand derivatives are inserted into Euler-Maclaurin to refine the n log n contribution and suggest alternating upper/lower approximations while warning that the correction series is generally divergent.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            63
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Euler-Maclaurin expansion refines S1 with a divergent correction series",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d36.txt",
+          "unit_bytes": 5497,
+          "unit_id": "openalex_w2039040097_d36",
+          "unit_sha256": "2a3f6bd0dbded7d5c51b40ba887334699b3a9b670e9a2cbddd5d249285e56975",
+          "unit_type": "asymptotic refinement",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d36.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Euler-Maclaurin decomposes the discrete S1 sum into a digamma bulk term and Bernoulli-weighted endpoint derivatives, with explicit derivatives of the summand generating successive corrections. This provides a systematic asymptotic refinement, but the source says the correction sums are generally divergent: only finite or heuristically chosen truncations are available here, pending independent remainder control. The eventual alternation of formal correction signs for sufficiently large n does not furnish an alternating-series remainder theorem, and the proposed upper and lower forms are expected approximate bounds rather than proved uniform inequalities.",
+            "nonparaphrase_operation": "Separates smooth bulk from endpoint corrections and distinguishes three logically different objects—the formal asymptotic series, a finite truncation, and a rigorous remainder-bounded approximation—of which only the first two are present in the source.",
+            "quality_reason": "Accepted after replacing 'controlled truncation' with a remainder-dependent finite truncation, removing the outside-unit S2 claim, and preserving the distinction between term-sign alternation and rigorous error control.",
+            "source_support": "Equations (L.1)-(L.4) define the summand and its derivatives; (L.5)-(L.6) apply Euler-Maclaurin and identify the digamma main term plus Bernoulli corrections. The prose around (L.6)-(L.7) explicitly labels the sums asymptotic and generally divergent and the two truncations expected approximate bounds, then explains eventual sign alternation.",
+            "speculation_status": "The Euler-Maclaurin representation, asymptotic divergence, and eventual formal sign alternation are source-supported. Truncation quality and upper/lower inequality status remain heuristic until a remainder argument is supplied; no external obstruction is imported."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The implication is conditional on Conjecture 2; the source does not prove the needed magnitude correlation.",
+          "line_end": 968,
+          "line_start": 923,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equations (52)-(54) carry exact constants; prose makes the conditional dependency unambiguous.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source conjectures square-root-scale growth for the eta-binomial sum S2 and combines it with the proved S1 bound to obtain an eventual positive lower bound for lambda_n, leaving only finitely many direct checks.",
+          "source_id": "openalex_w2039040097",
+          "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+          "source_page_markers_inside_unit": [
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "S2 cancellation is the unresolved bridge from eta behavior to Li positivity",
+          "unit_artifact_relpath": "depth/units/openalex_w2039040097_d12.txt",
+          "unit_bytes": 1881,
+          "unit_id": "openalex_w2039040097_d12",
+          "unit_sha256": "e11395ed9b1a0ebc98a30fe9ded903246cb23ca17275e1605572f1a1edae3c39",
+          "unit_type": "conditional lower-bound route",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The positive n log n reserve from S1 would dominate a square-root-scale residual, reducing universal Li positivity to an eventual argument plus finitely many direct checks.",
+            "nonparaphrase_operation": "The binomial transform maps pointwise eta behavior into S2, and the lambda decomposition combines this residual with the explicit S1 growth.",
+            "quality_reason": "The span defines S2, conditions its cancellation discussion on Conjecture 1, states the square-root-scale Conjecture 2, and combines it with equation (10) and the proved S1 inequality to state conditional Conjecture 3. The candidate preserves that alternation, decreasing magnitudes, and the S2 bound are not proved in the unit and labels the Brownian link as motivation only.",
+            "source_support": "S2(n)=-sum_{m=1}^n binom(n,m)eta_{m-1}. Conjecture 2 posits |S2|<=3gamma+C_2 n^(1/2+epsilon), and combining it with the proved S1 estimate yields the conditional lower bound for lambda_n in Conjecture 3.",
+            "speculation_status": "Sign alternation and decreasing magnitudes are assumed, and neither they nor the stated square-root cancellation bound are proved in this span; the Brownian analogy is motivation only. The conditional dependency is unambiguous; exact constants in equations (52)-(54) are display-dependent. The eventual-growth-plus-finite-check interpretation follows from the source's discussion after equation (54), but remains conditional on the conjectured residual bound. Exact constants in equations (52)-(54) are display-dependent but readable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "e96affd95760be9f6e04ddcc0f10965e928e47a2e1f1efe67b344b0858309aae"
+}

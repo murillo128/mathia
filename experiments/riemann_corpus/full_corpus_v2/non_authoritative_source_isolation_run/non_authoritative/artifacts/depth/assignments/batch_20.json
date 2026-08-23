@@ -1,0 +1,1713 @@
+{
+  "task": "whole-source quota-free semantic depth planning",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_20.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "author-hosted-manuscript",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Glendon Ralph Pugh"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 3633,
+      "lineage": "v2-promoted-or-new-discovery",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "THE RIEMANN-SIEGEL FORMULA AND LARGE"
+        },
+        {
+          "line": 4,
+          "text": "SCALE COMPUTATIONS OF THE RIEMANN ZETA"
+        },
+        {
+          "line": 5,
+          "text": "FUNCTION"
+        },
+        {
+          "line": 8,
+          "text": "GLENDON RALPH PUGH"
+        },
+        {
+          "line": 12,
+          "text": "A THESIS SUBMITTED IN PARTIAL FULFILLMENT OF"
+        },
+        {
+          "line": 14,
+          "text": "THE REQUIREMENTS FOR THE DEGREE OF"
+        },
+        {
+          "line": 16,
+          "text": "MASTER OF SCIENCE"
+        },
+        {
+          "line": 20,
+          "text": "THE FACULTY OF GRADUATE STUDIES"
+        },
+        {
+          "line": 37,
+          "text": "THE UNIVERSITY OF BRITISH COLUMBIA"
+        },
+        {
+          "line": 69,
+          "text": "Abstract"
+        },
+        {
+          "line": 105,
+          "text": "Chapter 1. Introduction 1"
+        },
+        {
+          "line": 107,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function 4"
+        },
+        {
+          "line": 113,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula 14"
+        },
+        {
+          "line": 126,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis 33"
+        },
+        {
+          "line": 131,
+          "text": "Chapter 5. Riemann-Siegel At Work 46"
+        },
+        {
+          "line": 147,
+          "text": "5.4.4 The Function gramblock(n,m,FILE) . . . . . . . . . . . . . . . . . . . . . . . . . . 52"
+        },
+        {
+          "line": 148,
+          "text": "5.4.5 The Main Root Counting Program . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53"
+        },
+        {
+          "line": 149,
+          "text": "5.4.6 The Turing Method Program . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53"
+        },
+        {
+          "line": 152,
+          "text": "Chapter 6. Conclusion and Future Work 55"
+        },
+        {
+          "line": 154,
+          "text": "Appendix A. C Functions Used in Main Programs 57"
+        },
+        {
+          "line": 156,
+          "text": "Appendix B. C Program for Simple Evaluation of Z(t) 67"
+        },
+        {
+          "line": 158,
+          "text": "Appendix C. C Program for Counting Roots of Z(t) 69"
+        },
+        {
+          "line": 160,
+          "text": "Appendix D. C Program for Locating Turing Adjustments 73"
+        },
+        {
+          "line": 193,
+          "text": "Chapter 1"
+        },
+        {
+          "line": 194,
+          "text": "Introduction"
+        },
+        {
+          "line": 225,
+          "text": "Chapter 1. Introduction"
+        },
+        {
+          "line": 262,
+          "text": "Chapter 1. Introduction"
+        },
+        {
+          "line": 265,
+          "text": "chapter we mention some familiar properties of the function and derive a global"
+        },
+        {
+          "line": 270,
+          "text": "chapter examines the Riemann Hypothesis verification process. Major contributions"
+        },
+        {
+          "line": 284,
+          "text": "Chapter 2"
+        },
+        {
+          "line": 291,
+          "text": "2.1 Introduction"
+        },
+        {
+          "line": 302,
+          "text": "2.2 The Function ζ(s)"
+        },
+        {
+          "line": 320,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 330,
+          "text": "1 Y \u0001−1"
+        },
+        {
+          "line": 345,
+          "text": "2.3 Global Representation of ζ(s)"
+        },
+        {
+          "line": 371,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 419,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 435,
+          "text": "K K Z ∞"
+        },
+        {
+          "line": 442,
+          "text": "Z ∞ X !"
+        },
+        {
+          "line": 450,
+          "text": "K Z ∞\u0012 \u0013"
+        },
+        {
+          "line": 458,
+          "text": "K Z ∞\u0012 \u0013"
+        },
+        {
+          "line": 465,
+          "text": "Z ∞ \u0012 \u0013"
+        },
+        {
+          "line": 468,
+          "text": "0 K→∞ et − 1"
+        },
+        {
+          "line": 473,
+          "text": "0 et − 1"
+        },
+        {
+          "line": 476,
+          "text": "∞ Z ∞"
+        },
+        {
+          "line": 494,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 516,
+          "text": "Γ1 (\u000f)"
+        },
+        {
+          "line": 517,
+          "text": "Γ2 (\u000f)"
+        },
+        {
+          "line": 525,
+          "text": "Γ3 (\u000f)"
+        },
+        {
+          "line": 534,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 540,
+          "text": "\u000f→0 C"
+        },
+        {
+          "line": 569,
+          "text": "Z ∞ X∞"
+        },
+        {
+          "line": 571,
+          "text": "2 dt = 2 Π(s − 1) < ∞."
+        },
+        {
+          "line": 572,
+          "text": "0 e −1"
+        },
+        {
+          "line": 578,
+          "text": "Z 0 Z 0"
+        },
+        {
+          "line": 604,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 630,
+          "text": "Z Z +∞"
+        },
+        {
+          "line": 635,
+          "text": "\u000f→0 C"
+        },
+        {
+          "line": 656,
+          "text": "\u000f→0 C"
+        },
+        {
+          "line": 681,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 711,
+          "text": "1. The Π(−s) factor in (2.11) has singularities when s is a positive integer. The"
+        },
+        {
+          "line": 717,
+          "text": "2. Although we have derived (2.11) under the assumption that s ∈ R , s > 1, for"
+        },
+        {
+          "line": 742,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 744,
+          "text": "2.4 Properties of the Zeta Function"
+        },
+        {
+          "line": 788,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 835,
+          "text": "Chapter 3"
+        },
+        {
+          "line": 842,
+          "text": "3.1 Introduction"
+        },
+        {
+          "line": 867,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 887,
+          "text": "3.2 The Formula"
+        },
+        {
+          "line": 906,
+          "text": "R ≈ (−1)N −1 C0 + C1 + C2 + C3 + C4"
+        },
+        {
+          "line": 913,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 928,
+          "text": "C2 = 4"
+        },
+        {
+          "line": 934,
+          "text": "C3 = − 6"
+        },
+        {
+          "line": 941,
+          "text": "C4 = 8"
+        },
+        {
+          "line": 973,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 976,
+          "text": "3.3 Derivation of Z(t)"
+        },
+        {
+          "line": 1021,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1023,
+          "text": "Z ! Z"
+        },
+        {
+          "line": 1093,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1124,
+          "text": "2 j=1"
+        },
+        {
+          "line": 1137,
+          "text": "2 n=1"
+        },
+        {
+          "line": 1154,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1168,
+          "text": "2 n=1"
+        },
+        {
+          "line": 1170,
+          "text": "\u0012 \u0013 XN"
+        },
+        {
+          "line": 1173,
+          "text": "2 n=1"
+        },
+        {
+          "line": 1187,
+          "text": "\u0012 \u0013 XN"
+        },
+        {
+          "line": 1190,
+          "text": "2 n=1"
+        },
+        {
+          "line": 1212,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1271,
+          "text": "= SN + RN . (3.6)"
+        },
+        {
+          "line": 1278,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1288,
+          "text": "3.4 Saddle Point Argument"
+        },
+        {
+          "line": 1325,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1379,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1388,
+          "text": "3.5 First Approximation"
+        },
+        {
+          "line": 1402,
+          "text": "3.6 Change of Variables"
+        },
+        {
+          "line": 1423,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1430,
+          "text": "R1,N = (−1)N −1"
+        },
+        {
+          "line": 1456,
+          "text": "3.7 Second Approximation"
+        },
+        {
+          "line": 1462,
+          "text": "R1,N ≈ R2,N = (−1)N −1"
+        },
+        {
+          "line": 1477,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1483,
+          "text": "3.8 Third Approximation"
+        },
+        {
+          "line": 1524,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1531,
+          "text": "3.9 Fourth Approximation"
+        },
+        {
+          "line": 1595,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1642,
+          "text": "2 j=0 2j! (n − 2j)!"
+        },
+        {
+          "line": 1655,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1657,
+          "text": "3.10 An Example"
+        },
+        {
+          "line": 1659,
+          "text": "Appendix B contains an implementation of the Riemann-Siegel method written in"
+        },
+        {
+          "line": 1670,
+          "text": "8 Z(t), 6×106 ≤ t ≤ 6×106 +10"
+        },
+        {
+          "line": 1692,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1694,
+          "text": "3.11 Errors in the Approximation"
+        },
+        {
+          "line": 1731,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1769,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1780,
+          "text": "Chapter 4"
+        },
+        {
+          "line": 1787,
+          "text": "4.1 Introduction"
+        },
+        {
+          "line": 1813,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1820,
+          "text": "4.2 Gram’s Observations"
+        },
+        {
+          "line": 1829,
+          "text": "2. The zeros of Z(t) tend to alternate with the zeros of sin ϑ(t)."
+        },
+        {
+          "line": 1845,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1891,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1934,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1970,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1995,
+          "text": "4.3 The Number of Roots to Height T"
+        },
+        {
+          "line": 2007,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2052,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2086,
+          "text": "S(T ) = N(T ) − −1 ."
+        },
+        {
+          "line": 2105,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2147,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2192,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2239,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2290,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2304,
+          "text": "Chapter 5"
+        },
+        {
+          "line": 2310,
+          "text": "5.1 Introduction"
+        },
+        {
+          "line": 2319,
+          "text": "5.2 Results"
+        },
+        {
+          "line": 2325,
+          "text": "1. g12 193 873 = 6 000 000.485 999"
+        },
+        {
+          "line": 2327,
+          "text": "2. There are at least 12 193 874 zeros of ζ(1/2 + it) for 0 ≤ t ≤ g12 193 873 ."
+        },
+        {
+          "line": 2329,
+          "text": "3. There are 1 518 045 Gram blocks containing 3 317 645 of these roots."
+        },
+        {
+          "line": 2331,
+          "text": "4. The longest Gram block in the range 0 ≤ t ≤ g12 193 873 is"
+        },
+        {
+          "line": 2339,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2341,
+          "text": "5. The data for twenty Gram points used to apply Turing’s method (see"
+        },
+        {
+          "line": 2342,
+          "text": "Section 4.3) is as follows:"
+        },
+        {
+          "line": 2370,
+          "text": "S(T ) = N(T ) − −1 ,"
+        },
+        {
+          "line": 2380,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2436,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2438,
+          "text": "5.3 Computation"
+        },
+        {
+          "line": 2442,
+          "text": "Appendix C, while the program to produce the data needed for Turing’s method is"
+        },
+        {
+          "line": 2473,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2475,
+          "text": "5.4 Programs"
+        },
+        {
+          "line": 2485,
+          "text": "5.4.1 The Function C(n,z)"
+        },
+        {
+          "line": 2517,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2519,
+          "text": "5.4.2 The Function Z(t,n)"
+        },
+        {
+          "line": 2530,
+          "text": "5.4.3 The Function gram(n)"
+        },
+        {
+          "line": 2561,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2563,
+          "text": "5.4.4 The Function gramblock(n,m,FILE)"
+        },
+        {
+          "line": 2598,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2600,
+          "text": "5.4.5 The Main Root Counting Program"
+        },
+        {
+          "line": 2619,
+          "text": "5.4.6 The Turing Method Program"
+        },
+        {
+          "line": 2636,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2638,
+          "text": "5.5 Effective Domain of the Algorithms"
+        },
+        {
+          "line": 2674,
+          "text": "Chapter 6"
+        },
+        {
+          "line": 2692,
+          "text": "1020 th zero of the zeta function where t ≈ 1.5 × 1019 ."
+        },
+        {
+          "line": 2710,
+          "text": "Chapter 6. Conclusion and Future Work"
+        },
+        {
+          "line": 2721,
+          "text": "N X 1"
+        },
+        {
+          "line": 2741,
+          "text": "Appendix A"
+        },
+        {
+          "line": 2784,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 2822,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 2875,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 2928,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 2979,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3003,
+          "text": "ZZ = 0.0L; /* */"
+        },
+        {
+          "line": 3004,
+          "text": "R = 0.0L; /* */"
+        },
+        {
+          "line": 3019,
+          "text": "ZZ = 2.0L * ZZ; /* */"
+        },
+        {
+          "line": 3028,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3049,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3102,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3155,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3205,
+          "text": "Appendix B"
+        },
+        {
+          "line": 3247,
+          "text": "Appendix B. C Program for Simple Evaluation of Z(t)"
+        },
+        {
+          "line": 3282,
+          "text": "Appendix C"
+        },
+        {
+          "line": 3325,
+          "text": "Appendix C. C Program for Counting Roots of Z(t)"
+        },
+        {
+          "line": 3379,
+          "text": "Appendix C. C Program for Counting Roots of Z(t)"
+        },
+        {
+          "line": 3432,
+          "text": "Appendix C. C Program for Counting Roots of Z(t)"
+        },
+        {
+          "line": 3461,
+          "text": "Appendix D"
+        },
+        {
+          "line": 3504,
+          "text": "Appendix D. C Program for Locating Turing Adjustments"
+        },
+        {
+          "line": 3557,
+          "text": "Appendix D. C Program for Locating Turing Adjustments"
+        },
+        {
+          "line": 3610,
+          "text": "Bibliography"
+        }
+      ],
+      "normalized_bytes": 158390,
+      "normalized_page_count": 82,
+      "normalized_relpath": "normalized/pugh1998_riemann_siegel_thesis_765c55a8110d.txt",
+      "normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "prior_v1_units": [],
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_type": "masters-thesis",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "explicit-computation",
+        "riemann-siegel",
+        "verification-epistemic-limits"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 1998,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/pugh1998_riemann_siegel_thesis_765c55a8110d.txt"
+    },
+    {
+      "acquisition_route": "arxiv-preprint",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Jean Bourgain"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 1447,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 17,
+          "text": "Abstract"
+        },
+        {
+          "line": 25,
+          "text": "0 Introduction"
+        },
+        {
+          "line": 29,
+          "text": "\u0010 1 Z 1Z 1Z 1 Z 1"
+        },
+        {
+          "line": 30,
+          "text": "1\u0011 X 1 1 1"
+        },
+        {
+          "line": 122,
+          "text": "1 A decoupling inequality for curves"
+        },
+        {
+          "line": 136,
+          "text": "|Ω| Ω"
+        },
+        {
+          "line": 153,
+          "text": "# (BN )"
+        },
+        {
+          "line": 190,
+          "text": "Ω̃ = [0, N ] × [0, N 2 ] × [0, N 2 ] × [0, N ]"
+        },
+        {
+          "line": 217,
+          "text": "Z 1 \u0010X Z \u0011 21"
+        },
+        {
+          "line": 220,
+          "text": "0 L6 (BN ) Iτ L6 (BN )"
+        },
+        {
+          "line": 230,
+          "text": "|BN | BN N"
+        },
+        {
+          "line": 252,
+          "text": "Y X 1"
+        },
+        {
+          "line": 257,
+          "text": "(BN ) #"
+        },
+        {
+          "line": 273,
+          "text": "# (BN )"
+        },
+        {
+          "line": 298,
+          "text": "L# (BN )"
+        },
+        {
+          "line": 313,
+          "text": "# (BN )"
+        },
+        {
+          "line": 356,
+          "text": "# (BN )"
+        },
+        {
+          "line": 379,
+          "text": "Y \u0002 X \u0001 6 1"
+        },
+        {
+          "line": 413,
+          "text": "# (BN )"
+        },
+        {
+          "line": 494,
+          "text": "Y Z Z K − 12 6"
+        },
+        {
+          "line": 542,
+          "text": "2 A mean value theorem"
+        },
+        {
+          "line": 549,
+          "text": "N L12"
+        },
+        {
+          "line": 550,
+          "text": "# (BN )"
+        },
+        {
+          "line": 552,
+          "text": "2 \u0010 X"
+        },
+        {
+          "line": 558,
+          "text": "N L6# (BN )"
+        },
+        {
+          "line": 580,
+          "text": "Ω = [0, N ] × [0, N 3/2 ] × [0, N 3/2 ] × [0, N ]"
+        },
+        {
+          "line": 588,
+          "text": "N L12"
+        },
+        {
+          "line": 589,
+          "text": "# (∆N )"
+        },
+        {
+          "line": 594,
+          "text": "2 \u0010 X"
+        },
+        {
+          "line": 600,
+          "text": "N L6# (∆N )"
+        },
+        {
+          "line": 605,
+          "text": "Y X 1"
+        },
+        {
+          "line": 609,
+          "text": "# (Ω)"
+        },
+        {
+          "line": 619,
+          "text": "J2 ⊂I2 N N"
+        },
+        {
+          "line": 631,
+          "text": "N N N N"
+        },
+        {
+          "line": 634,
+          "text": "N2 2 N"
+        },
+        {
+          "line": 645,
+          "text": "N N 2 N"
+        },
+        {
+          "line": 654,
+          "text": "N N 2 N"
+        },
+        {
+          "line": 669,
+          "text": "Z 1Z 1Z 1Z 1 X \u0010 \u00116"
+        },
+        {
+          "line": 672,
+          "text": "0 0 0 0 √ N"
+        },
+        {
+          "line": 690,
+          "text": "J1′ ⊂I1"
+        },
+        {
+          "line": 691,
+          "text": "J2′ ⊂I2"
+        },
+        {
+          "line": 700,
+          "text": "N 1/2"
+        },
+        {
+          "line": 711,
+          "text": "Ω̃ = [0, N ] × [0, N 2 ] × [0, N 2 ] × [0, N ]"
+        },
+        {
+          "line": 715,
+          "text": "Y X 1"
+        },
+        {
+          "line": 727,
+          "text": "0 0 N"
+        },
+        {
+          "line": 729,
+          "text": "J2′ ⊂I2"
+        },
+        {
+          "line": 739,
+          "text": "Y X 1"
+        },
+        {
+          "line": 743,
+          "text": "# (Ω̃)"
+        },
+        {
+          "line": 751,
+          "text": "0 0 N"
+        },
+        {
+          "line": 755,
+          "text": "J2′ ⊂I2"
+        },
+        {
+          "line": 769,
+          "text": "N N N N N N"
+        },
+        {
+          "line": 773,
+          "text": "N 2 N"
+        },
+        {
+          "line": 789,
+          "text": "N L12"
+        },
+        {
+          "line": 790,
+          "text": "# (Ω̃)"
+        },
+        {
+          "line": 806,
+          "text": "Z 1Z 1Z 1 Z 1 X 12"
+        },
+        {
+          "line": 822,
+          "text": "2 X 6o"
+        },
+        {
+          "line": 869,
+          "text": "2 8 M"
+        },
+        {
+          "line": 873,
+          "text": "2 8 M M"
+        },
+        {
+          "line": 875,
+          "text": "3 M 4"
+        },
+        {
+          "line": 891,
+          "text": "2 X 1 1"
+        },
+        {
+          "line": 892,
+          "text": "2 N 2 M3"
+        },
+        {
+          "line": 904,
+          "text": "N 2M N M3"
+        },
+        {
+          "line": 917,
+          "text": "X 12 X 12 X Z X 12"
+        },
+        {
+          "line": 918,
+          "text": "≤ 212 + (2K)12 . (2.24)"
+        },
+        {
+          "line": 929,
+          "text": "≤4 +K . (2.25)"
+        },
+        {
+          "line": 947,
+          "text": "X X 12"
+        },
+        {
+          "line": 949,
+          "text": "(2K) 4 ."
+        },
+        {
+          "line": 982,
+          "text": "\u0010 100N \u0011"
+        },
+        {
+          "line": 987,
+          "text": "\u0010 100N \u0011"
+        },
+        {
+          "line": 1006,
+          "text": "3 Applications to exponential sums"
+        },
+        {
+          "line": 1023,
+          "text": "R= , (3.3)"
+        },
+        {
+          "line": 1029,
+          "text": "R ≤ N ≤ R2"
+        },
+        {
+          "line": 1048,
+          "text": "I∈I(Q,ℓ)"
+        },
+        {
+          "line": 1051,
+          "text": "1 \u0010 R \u00112"
+        },
+        {
+          "line": 1062,
+          "text": "X M R2 R2 M R2"
+        },
+        {
+          "line": 1063,
+          "text": "|I(Q, ℓ)| ≪ + ≍ ."
+        },
+        {
+          "line": 1064,
+          "text": "N Q2 Q N Q2"
+        },
+        {
+          "line": 1070,
+          "text": "|S| ≪ (3.5)"
+        },
+        {
+          "line": 1071,
+          "text": "N 1/2"
+        },
+        {
+          "line": 1073,
+          "text": "R ≤ Q < R2/3 N 1/3 ≤ N (3.6)"
+        },
+        {
+          "line": 1078,
+          "text": "Q1/2 N Q2"
+        },
+        {
+          "line": 1083,
+          "text": "X 3/2 1/2 1/2 1/2"
+        },
+        {
+          "line": 1097,
+          "text": "X X 4"
+        },
+        {
+          "line": 1104,
+          "text": "Y1 = 6H, Y2 = 6H 2 , Y3 = 6H 3/2 , Y4 = 6H 1/2 ,"
+        },
+        {
+          "line": 1123,
+          "text": "2 X1 · · · X4 −X1 −X2 −X3 −X4"
+        },
+        {
+          "line": 1126,
+          "text": "Z 1 Z 1 Z R2 √2H Z R2 √2H X"
+        },
+        {
+          "line": 1129,
+          "text": "4HR4 0 0 − R2"
+        },
+        {
+          "line": 1141,
+          "text": "H 2 R2"
+        },
+        {
+          "line": 1148,
+          "text": "\u0010 M \u00112 \u0010 Q \u00114"
+        },
+        {
+          "line": 1157,
+          "text": "1 1 R4 1 Q2 R2"
+        },
+        {
+          "line": 1159,
+          "text": "X2 Y2 3H 2 N 2 Q2 X3 Y3 6R2 H 2 N2"
+        },
+        {
+          "line": 1161,
+          "text": "M 2 R 2 Q2"
+        },
+        {
+          "line": 1162,
+          "text": "B1 ≪ (3.11)"
+        },
+        {
+          "line": 1167,
+          "text": "N3 Q7 N3 N3 R"
+        },
+        {
+          "line": 1172,
+          "text": "N3 M3 N 3/2"
+        },
+        {
+          "line": 1194,
+          "text": "N 5 Q13 Q7"
+        },
+        {
+          "line": 1201,
+          "text": "\u0010 V M R2 \u0010 M \u00112 \u0011\u0010 Q \u00114"
+        },
+        {
+          "line": 1203,
+          "text": "V BV ≪ + ∆1 ∆2 ∆4 (3.15)"
+        },
+        {
+          "line": 1204,
+          "text": "N Q2 N R"
+        },
+        {
+          "line": 1211,
+          "text": "1 Q2 Q"
+        },
+        {
+          "line": 1213,
+          "text": "X4 Y4 6R2 H N"
+        },
+        {
+          "line": 1218,
+          "text": "Q7 Q N N R N N"
+        },
+        {
+          "line": 1221,
+          "text": "R3 R N N N N"
+        },
+        {
+          "line": 1224,
+          "text": "R7/2 RN 1/2 N3 R"
+        },
+        {
+          "line": 1231,
+          "text": "|S|6 ≪ ≍ . (3.17)"
+        },
+        {
+          "line": 1232,
+          "text": "N3 R N2"
+        },
+        {
+          "line": 1274,
+          "text": "1 log M 17"
+        },
+        {
+          "line": 1276,
+          "text": "2 log T 42"
+        },
+        {
+          "line": 1281,
+          "text": "4 Bounding the zeta-function on the critical line"
+        },
+        {
+          "line": 1290,
+          "text": "\u0010 T \u00111/9"
+        },
+        {
+          "line": 1309,
+          "text": "\u00101 \u0011 X 1"
+        },
+        {
+          "line": 1332,
+          "text": "5 Further comments"
+        },
+        {
+          "line": 1337,
+          "text": "2 log T"
+        },
+        {
+          "line": 1344,
+          "text": "84 is an exponent pair."
+        },
+        {
+          "line": 1396,
+          "text": "References"
+        }
+      ],
+      "normalized_bytes": 90648,
+      "normalized_page_count": 22,
+      "normalized_relpath": "normalized/openalex_w1592212038_2bf5677c911d.txt",
+      "normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "prior_v1_units": [],
+      "source_id": "openalex_w1592212038",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "Decoupling, exponential sums and the Riemann zeta function",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "zeta",
+        "analytic-foundations"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2016,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/openalex_w1592212038_2bf5677c911d.txt"
+    },
+    {
+      "acquisition_route": "v1-carry-forward",
+      "artifact_store": "riemann-corpus-v0",
+      "authors": [
+        "Tsz Ho Chan"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [],
+      "line_count": 1121,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "ACTA ARITHMETICA"
+        },
+        {
+          "line": 15,
+          "text": "1. Introduction. In the early 1970s, H. L. Montgomery studied the"
+        },
+        {
+          "line": 18,
+          "text": "X 0 4"
+        },
+        {
+          "line": 47,
+          "text": "1 1 T T 2 T T"
+        },
+        {
+          "line": 55,
+          "text": "2000 Mathematics Subject Classification: Primary 11M26."
+        },
+        {
+          "line": 61,
+          "text": "200 T. H. Chan"
+        },
+        {
+          "line": 66,
+          "text": "T T T"
+        },
+        {
+          "line": 79,
+          "text": "0 h=1"
+        },
+        {
+          "line": 121,
+          "text": "T T T T T"
+        },
+        {
+          "line": 133,
+          "text": "2. Preparations. We mentioned the Twin Prime Conjecture in the"
+        },
+        {
+          "line": 192,
+          "text": "202 T. H. Chan"
+        },
+        {
+          "line": 200,
+          "text": "X 1 2 1 1"
+        },
+        {
+          "line": 215,
+          "text": "B B B"
+        },
+        {
+          "line": 229,
+          "text": "X 1 1"
+        },
+        {
+          "line": 234,
+          "text": "1 log x 1 1 1"
+        },
+        {
+          "line": 244,
+          "text": "1 S(h) 7 B f (u)"
+        },
+        {
+          "line": 268,
+          "text": "1 S0 (u) + u u − 12 log u + ε(u)"
+        },
+        {
+          "line": 276,
+          "text": "4 u 4 2 u3"
+        },
+        {
+          "line": 279,
+          "text": "7 B 1 7 B f (u)"
+        },
+        {
+          "line": 287,
+          "text": "3. Smooth weight. Fix a small positive real number ε and let K be"
+        },
+        {
+          "line": 290,
+          "text": "1. support in [−1/U, 1 + 1/U ],"
+        },
+        {
+          "line": 299,
+          "text": "1 if 0 ≤ t ≤ 1,"
+        },
+        {
+          "line": 301,
+          "text": "0 else,"
+        },
+        {
+          "line": 328,
+          "text": "204 T. H. Chan"
+        },
+        {
+          "line": 399,
+          "text": "1 bi (y) e(−y∆) − e(y∆)"
+        },
+        {
+          "line": 440,
+          "text": "1 b Ty x sin x 1"
+        },
+        {
+          "line": 464,
+          "text": "206 T. H. Chan"
+        },
+        {
+          "line": 514,
+          "text": "4. Proof of the theorem. Throughout this section, we assume τ ="
+        },
+        {
+          "line": 547,
+          "text": "1 x2 T (log T )2 x"
+        },
+        {
+          "line": 571,
+          "text": "\u0012 \u00133 ∞ \u0010 X \u0011"
+        },
+        {
+          "line": 585,
+          "text": "\u0012 \u00133 ∞ \u0010 X"
+        },
+        {
+          "line": 586,
+          "text": "1 2 1 2 T"
+        },
+        {
+          "line": 591,
+          "text": "2 dv 4π 3"
+        },
+        {
+          "line": 594,
+          "text": "0 T /2πτ x"
+        },
+        {
+          "line": 598,
+          "text": "208 T. H. Chan"
+        },
+        {
+          "line": 603,
+          "text": "\u0012 \u00133 ∞ \u0010 X"
+        },
+        {
+          "line": 604,
+          "text": "1 2 1 2 T"
+        },
+        {
+          "line": 625,
+          "text": "1 sin u 2 2 T"
+        },
+        {
+          "line": 630,
+          "text": "1 sin u K∆2 T 2 T"
+        },
+        {
+          "line": 650,
+          "text": "2 T H /2πx\u0010 H∗ \u0011"
+        },
+        {
+          "line": 678,
+          "text": "∞\u0012 X \u0013 \u0012 \u0013"
+        },
+        {
+          "line": 682,
+          "text": "1 h≤y"
+        },
+        {
+          "line": 683,
+          "text": "H∗\u0012 X H∗ \u0013 \u0012 \u0013"
+        },
+        {
+          "line": 688,
+          "text": "1 y<h≤H ∗ y"
+        },
+        {
+          "line": 690,
+          "text": "1\u0012 X H∗ \u0013 \u0012 \u0013"
+        },
+        {
+          "line": 695,
+          "text": "0 h≤H ∗ y"
+        },
+        {
+          "line": 714,
+          "text": "1\u0012 X H∗ \u0013 \u0012 \u0013"
+        },
+        {
+          "line": 751,
+          "text": "210 T. H. Chan"
+        },
+        {
+          "line": 780,
+          "text": "1 f (u) du sin x y"
+        },
+        {
+          "line": 785,
+          "text": "1 x 1 x"
+        },
+        {
+          "line": 810,
+          "text": "H∗\u0012 \u0012 \u0013\u0013 \u0012 \u0013"
+        },
+        {
+          "line": 815,
+          "text": "H∗\u0012 \u0013 \u0012 \u0013"
+        },
+        {
+          "line": 816,
+          "text": "1 b Ty"
+        },
+        {
+          "line": 823,
+          "text": "(H ∗ )2 T 2"
+        },
+        {
+          "line": 831,
+          "text": "1 Ty 1"
+        },
+        {
+          "line": 899,
+          "text": "5. Proof of the corollaries"
+        },
+        {
+          "line": 908,
+          "text": "212 T. H. Chan"
+        },
+        {
+          "line": 916,
+          "text": "1 k=1"
+        },
+        {
+          "line": 940,
+          "text": "1 x/T x"
+        },
+        {
+          "line": 950,
+          "text": "1 x/T"
+        },
+        {
+          "line": 971,
+          "text": "T2 = + +6 4"
+        },
+        {
+          "line": 987,
+          "text": "T 1 T T"
+        },
+        {
+          "line": 991,
+          "text": "T T C0 T T T"
+        },
+        {
+          "line": 1003,
+          "text": "B 11 T T"
+        },
+        {
+          "line": 1004,
+          "text": "= + +O T ,"
+        },
+        {
+          "line": 1036,
+          "text": "T T 8 7 B B 11"
+        },
+        {
+          "line": 1041,
+          "text": "+O T +O"
+        },
+        {
+          "line": 1044,
+          "text": "T T T"
+        },
+        {
+          "line": 1056,
+          "text": "214 T. H. Chan"
+        },
+        {
+          "line": 1058,
+          "text": "6. Conclusion. Based on (2), (3) and Corollaries 1.1 and 1.2, we pro-"
+        },
+        {
+          "line": 1063,
+          "text": " T 1 T T 2 T T"
+        },
+        {
+          "line": 1077,
+          "text": " T T T T"
+        },
+        {
+          "line": 1092,
+          "text": "References"
+        },
+        {
+          "line": 1116,
+          "text": "10900 Euclid Avenue"
+        }
+      ],
+      "normalized_bytes": 56704,
+      "normalized_page_count": 16,
+      "normalized_relpath": "normalized/openalex_w2042563031.txt",
+      "normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+      "prior_v1_units": [
+        {
+          "line_end": 107,
+          "line_start": 72,
+          "unit_id": "full_openalex_w2042563031_u01",
+          "unit_type": "pair-correlation asymptotic theorem"
+        },
+        {
+          "line_end": 188,
+          "line_start": 133,
+          "unit_id": "full_openalex_w2042563031_u02",
+          "unit_type": "twin-prime singular-series preparation"
+        },
+        {
+          "line_end": 349,
+          "line_start": 284,
+          "unit_id": "full_openalex_w2042563031_u03",
+          "unit_type": "smoothing kernel construction"
+        },
+        {
+          "line_end": 1037,
+          "line_start": 941,
+          "unit_id": "full_openalex_w2042563031_u04",
+          "unit_type": "piecewise strong pair-correlation conjecture"
+        }
+      ],
+      "source_id": "openalex_w2042563031",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "More precise Pair Correlation Conjecture on the zeros of the Riemann zeta function",
+      "v1_inspection_decision": "usable",
+      "v1_or_acquisition_reason": "normalized source has coherent mathematical text suitable for semantic segmentation",
+      "viewpoint_tags": [
+        "pair-correlation",
+        "zero-statistics"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2004,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/normalized/openalex_w2042563031.txt"
+    },
+    {
+      "acquisition_route": "v1-carry-forward",
+      "artifact_store": "riemann-corpus-v0",
+      "authors": [
+        "Jeffrey C. Lagarias"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [],
+      "line_count": 511,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 28,
+          "text": "1. Introduction"
+        },
+        {
+          "line": 75,
+          "text": "2 log t"
+        },
+        {
+          "line": 103,
+          "text": "2. Colossally Abundant Numbers"
+        },
+        {
+          "line": 107,
+          "text": "Y Y 1 1"
+        },
+        {
+          "line": 316,
+          "text": "3. Proofs"
+        },
+        {
+          "line": 351,
+          "text": "1 t2 t2 r n"
+        },
+        {
+          "line": 357,
+          "text": "1 t2 1 t2"
+        },
+        {
+          "line": 396,
+          "text": "\u0012 Z ∞ \u0013"
+        },
+        {
+          "line": 444,
+          "text": "References"
+        }
+      ],
+      "normalized_bytes": 30264,
+      "normalized_page_count": 9,
+      "normalized_relpath": "normalized/lagarias2002_elementary.txt",
+      "normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "prior_v1_units": [
+        {
+          "line_end": 101,
+          "line_start": 28,
+          "unit_id": "lagarias2002_u01_elementary_equivalence_v1",
+          "unit_type": "representation-change"
+        },
+        {
+          "line_end": 314,
+          "line_start": 282,
+          "unit_id": "lagarias2002_u02_extremal_thin_set",
+          "unit_type": "mechanism-and-counterfactual"
+        }
+      ],
+      "source_id": "lagarias2002_elementary",
+      "source_type": "primary-expository-paper",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+      "v1_inspection_decision": "usable",
+      "v1_or_acquisition_reason": "normalized source has coherent mathematical text suitable for semantic segmentation",
+      "viewpoint_tags": [
+        "arithmetic-functions",
+        "equivalent-criteria",
+        "overview",
+        "reformulation",
+        "rh"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2002,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/normalized/lagarias2002_elementary.txt"
+    }
+  ]
+}

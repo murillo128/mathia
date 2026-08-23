@@ -1,0 +1,961 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2068184834",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2068184834_40807e6b_part_01.jsonl",
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Smoothing and Fourier localization turn zeros into bounded prime products; discreteness forces multiplicative diagonals, universal second moments reduce them to pairings, and Möbius/cycle combinatorics identifies those pairings with the GUE determinant.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2068184834-u10",
+          "openalex_w2068184834-u14",
+          "openalex_w2068184834-u16",
+          "openalex_w2068184834-u19",
+          "openalex_w2068184834-u22",
+          "openalex_w2068184834-u23",
+          "openalex_w2068184834-u25",
+          "openalex_w2068184834-u26"
+        ],
+        "proposed_limit": "The chain is proved only under the source's coefficient and Fourier-support hypotheses, and the unsmoothed statement additionally uses RH.",
+        "source_id": "openalex_w2068184834",
+        "synthesis_id": "riemann_v2_within_7171d07a40669c89903d1a10",
+        "title": "Explicit-formula-to-GUE causal chain"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the proof mechanism—residues, contour reflection, and Dirichlet-series evaluation—because it explains why smoothing permits the bridge.",
+          "line_end": 536,
+          "line_start": 419,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several contour symbols are corrupt in the text layer; the semantic route is recoverable from prose, but every displayed identity needs retained-PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The logarithmic derivative packages prime powers into coefficients c_pi(n), and contour shifting plus the functional equation expresses a smooth sum over zeros in terms of conductor/gamma contributions and Fourier-localized prime sums.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Smooth explicit formula as a zeros-to-prime-coefficients bridge",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u10.txt",
+          "unit_bytes": 6194,
+          "unit_id": "openalex_w2068184834-u10",
+          "unit_sha256": "bed590780e9d5cabe64ae2bf1807730c6f91c28f6ff008d6762bbab52a8a9352",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The explicit formula is a controlled dual description: spectral zeros become arithmetic coefficients once smoothing supplies decay and Fourier support.",
+            "nonparaphrase_operation": "Contour integration and the functional equation bridge the zero divisor to the logarithmic derivative; Fourier support makes the resulting prime sums finite-range in later applications.",
+            "quality_reason": "The span defines prime-power coefficients through the logarithmic derivative and derives the smooth explicit formula by residues, contour shifting, functional-equation reflection, and Dirichlet-series evaluation.",
+            "source_support": "The logarithmic derivative defines c_pi(n) on prime powers; for a compactly supported smooth Fourier input, residue collection, functional-equation reflection, and Dirichlet-series evaluation yield the explicit formula relating smoothed zeros to archimedean, conductor, pole, and prime terms.",
+            "speculation_status": "The formula is not a pointwise correspondence between individual zeros and primes and depends on analytic continuation, decay, and careful treatment of the zeta poles. Several extracted contour symbols and displayed identities are corrupt; only the prose-supported mechanism is safe without PDF verification. Calling the formula a controlled spectral-to-arithmetic dual description and noting that compact Fourier support later bounds prime ranges are faithful interpretations. Several contour symbols are corrupt, but the candidate restricts itself to the prose-supported mechanism and requires PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The deliberate relaxation of distinctness is essential: it makes factorization possible and creates a clean modular separation between analysis and combinatorics.",
+          "line_end": 894,
+          "line_start": 812,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The pairing-measure display is crowded and needs PDF verification, while its prose description and index structure are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The distinct-index statistic is replaced temporarily by an unrestricted sum, smoothed at height T and Fourier represented; Theorems 3.1 and 3.2 predict a measure consisting exactly of disjoint pair contributions, with distinctness deferred to a later sieve.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Unrestricted smoothed correlations as the analytic surrogate",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u14.txt",
+          "unit_bytes": 4328,
+          "unit_id": "openalex_w2068184834-u14",
+          "unit_sha256": "a07df34d16802a97fc27164869982b8a01cc84959e53727e64a33eb9fff10485",
+          "unit_type": "reframing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The hard global constraint is separated into an analytic module that tolerates coincidences and a combinatorial correction module that accounts for them.",
+            "nonparaphrase_operation": "Fourier variables and height smoothing bridge zero tuples to factorable coordinate expressions; the pairing measure is the interface later consumed by Möbius inversion.",
+            "quality_reason": "The span deliberately replaces distinct-index correlations by unrestricted smoothed sums, uses a Fourier representation, states a disjoint-pair limiting measure, and defers recovery of distinctness to Section 4.",
+            "source_support": "The source replaces the distinct-index n-level statistic by unrestricted smoothed sums, Fourier-represents translation-invariant test functions, and states limits whose measure is a sum over disjoint coordinate pairings; distinctness is deferred to Section 4.",
+            "speculation_status": "The surrogate still has the Fourier-support restriction, and its unsmoothed form assumes RH; unrestricted sums include diagonals and are not yet the desired correlation. The pairing-measure display is crowded, but its index structure and role are clear from the prose. Characterizing this as modular separation between an analytic relaxation and a later combinatorial correction is a substantive non-paraphrase reading. The pairing-measure display is crowded but its indexing and role are sufficiently clear for the candidate's prose-level claims."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This discrete gap argument is the decisive bridge from analytic localization to arithmetic diagonal structure.",
+          "line_end": 1154,
+          "line_start": 1101,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The integer-gap inequalities are readable only in outline in the text layer; exact powers of T require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Once neutral Fourier coordinates are truncated, the zero-sum constraint makes the logarithm of the ratio of the positive and negative prime products too small for two distinct integers of the allowed size, forcing exact diagonal equality.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Multiplicative equality forced by Fourier support",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u16.txt",
+          "unit_bytes": 2127,
+          "unit_id": "openalex_w2068184834-u16",
+          "unit_sha256": "2aec1d07917d3c9986fd76670a2c2c62721516959e8e7fff8de183ce085585a7",
+          "unit_type": "proof-fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A continuous small-error statement is rigidified by arithmetic discreteness, converting Fourier concentration into an exact multiplicative diagonal.",
+            "nonparaphrase_operation": "The products M and N compress many prime-power coordinates into two integers whose log-ratio connects the Fourier constraint to unique factorization.",
+            "quality_reason": "After truncating neutral coordinates, the zero-sum constraint makes the log-ratio of the two bounded integer products very small; the elementary gap lower bound for unequal integers contradicts this and forces exact multiplicative equality.",
+            "source_support": "After truncating neutral Fourier coordinates, the zero-sum condition bounds the logarithm of M/N, while the support bound controls MN; the elementary lower bound for distinct integers contradicts these estimates for large T and forces n_1...n_r=n_{r+1}...n_{r+s}.",
+            "speculation_status": "The rigidity uses a positive support margin and the neutral-coordinate truncation; without those scale inequalities off-diagonal products need not be excluded. The integer-gap argument is clear in outline, but exact powers of T are extraction-sensitive. Calling this a rigidification of continuous localization by arithmetic discreteness precisely captures the non-paraphrase operation. Exact powers of T are extraction-sensitive, which the candidate flags without relying on reconstructed symbols."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the analytic origin of Wick-like pairings and explains why detailed coefficient distributions disappear from the leading term.",
+          "line_end": 1885,
+          "line_start": 1680,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several multiple sums are layout-damaged; exact coefficients, domains, and constants require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Higher prime-power coincidences and unmatched numbers are bounded, while equal numbers with the same number of factors reduce by unique factorization to permutations of distinct primes; repeated use of the universal second moment then produces the disjoint-pair integral.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            32,
+            33,
+            34,
+            35
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Only prime pairings survive at main order",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u19.txt",
+          "unit_bytes": 10535,
+          "unit_id": "openalex_w2068184834-u19",
+          "unit_sha256": "6fa33d8745bd094f9c42a4c2d10cfa3a83341993150613aedd77827f5ae83b25",
+          "unit_type": "proof-fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The main term has a Wick-like form because arithmetic rigidity selects pair matchings, thereby discarding higher coefficient moments and retaining only the universal second moment.",
+            "nonparaphrase_operation": "Prime-factor patterns bridge multiplicative equality to permutations; those permutations become the disjoint index pairings in the Fourier-side correlation measure.",
+            "quality_reason": "The span bounds higher prime-power coincidences, shows unbalanced r and s terms are lower order, uses unique factorization to turn balanced distinct-prime products into permutations, and applies the universal coefficient mean square by summation by parts.",
+            "source_support": "The source bounds prime-power coincidence sums, groups diagonal factorizations by distinct primes, shows r not equal to s is lower order, and for r=s uses unique factorization to identify the second prime list as a permutation of the first; summation by parts with the coefficient mean square yields the pairing integral.",
+            "speculation_status": "This is a restricted-support main-term result under the paper's coefficient hypotheses and does not imply Gaussian independence or unrestricted GUE statistics. Multiple sums and domains are layout-damaged, so exact coefficients and constants require PDF checking. Calling the surviving main term Wick-like is clearly marked as structural analogy and is immediately explained by arithmetic pair matchings rather than probabilistic independence. Several multiple sums and domains are layout-damaged; the candidate does not rely on their exact typography."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a general representation change from equality constraints to incidence algebra, independent of the particular analytic input.",
+          "line_end": 2169,
+          "line_start": 2084,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The partial-order glyph is degraded, but the prose and inversion equations recover the direction; scan verification is advised for exact notation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Coincidence patterns of unrestricted index tuples are encoded as set partitions; embeddings identify lower-order correlations, and Möbius inversion subtracts every diagonal pattern to recover the distinct-index statistic.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            41
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Partition-lattice Möbius sieve for distinct zero indices",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u22.txt",
+          "unit_bytes": 4747,
+          "unit_id": "openalex_w2068184834-u22",
+          "unit_sha256": "7b92794ec7932619a69e80d594821f18f6647150f5856bd4567d06c72bc08844",
+          "unit_type": "construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u22.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A difficult exclusion constraint is changed into incidence algebra: equality patterns are enumerated positively first and canceled systematically afterward.",
+            "nonparaphrase_operation": "The embedding iota_F bridges lower-order correlations to n-coordinate diagonal strata, while Möbius inversion bridges inclusive coincidence sums to exact distinctness.",
+            "quality_reason": "The span encodes coincidence types by the partition lattice, embeds lower-order correlations on diagonal strata, decomposes unrestricted sums by exact coincidence pattern, and applies the partition-lattice Möbius function to recover the all-distinct statistic.",
+            "source_support": "Set partitions encode which indices coincide; embeddings repeat one coordinate across each block, unrestricted correlations decompose as sums over exact coincidence types, and the partition-lattice Möbius function inverts this relation to express the all-distinct statistic.",
+            "speculation_status": "This finite combinatorial identity does not itself evaluate any correlation and depends on the analytic limits supplied for every embedded unrestricted sum. The ordering glyph is degraded, but the prose, endpoints of the lattice, and inversion direction determine the construction; exact notation should still be scan-checked. Describing this as replacing an exclusion constraint with incidence algebra is a substantive and accurate representation change. The partial-order glyph is degraded, but the prose and inversion equations determine the direction; the candidate appropriately advises notation checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This span isolates Theorem 4.1 as the exact interface between arithmetic pairings and random-matrix cycles.",
+          "line_end": 2267,
+          "line_start": 2170,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy; exact delta products and support domain require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Delta constraints describe the Fourier subspace induced by each partition, allowing Theorem 3.2's pairing measure to be pushed forward and Möbius-combined; the remaining goal is precisely equality with the Fourier transform of the sine-kernel determinant.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            42,
+            43
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pushing correlation measures through partition embeddings",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u23.txt",
+          "unit_bytes": 6047,
+          "unit_id": "openalex_w2068184834-u23",
+          "unit_sha256": "f8cf51e00f69e34df20d6176ce139a8b4defe5084f62a2355d0af56ad2037cdd",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u23.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The delta constraints provide a common Fourier language in which arithmetic pairings and random-matrix cycles can be compared without conflating their derivations.",
+            "nonparaphrase_operation": "Pushforward along block-sum maps bridges coincidence geometry to Fourier distributions; R_O is the interface between analytic prime pairings and the determinantal target.",
+            "quality_reason": "Blockwise delta functions describe the Fourier subspace for a partition, the pullback along the partition embedding turns Φ into block sums, Theorem 3.2 supplies C_F, and the Möbius combination R_O is stated to equal the Fourier transform of the sine-kernel determinant under support less than two.",
+            "source_support": "For each partition, blockwise delta functions support the Fourier variables where each block sum vanishes; pulling f back along the partition embedding pushes Phi to block sums, Theorem 3.2 supplies the corresponding pairing measure C_F, and Möbius combination defines R_O, which Theorem 4.1 identifies with the Fourier transform of the sine-kernel determinant under support less than two.",
+            "speculation_status": "The identification inherits Theorem 3.2's assumptions and Fourier-support restriction; this span states rather than proves the remaining combinatorial identity. Exact delta products and support notation are formula-heavy and require PDF verification. Calling R_O a common interface between arithmetic pairings and random-matrix cycles accurately separates the two derivations. Exact delta products are formula-heavy, but the candidate does not overstate their typography."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The two proofs expose parallel decompositions—partition reduction and cycle decomposition—that set up the final componentwise comparison.",
+          "line_end": 2480,
+          "line_start": 2319,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Some marking superscripts and products are damaged; conceptual structure is prose-grounded, but equations need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Marking paired blocks makes the Möbius-side factorization explicit, while decomposing determinant permutations into disjoint cycles and applying Parseval yields the Fourier-side interval-overlap factors.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            45,
+            46,
+            47
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Marked partitions and permutation cycles produce the two factorizations",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u25.txt",
+          "unit_bytes": 8935,
+          "unit_id": "openalex_w2068184834-u25",
+          "unit_sha256": "1279f35945daefc78236b25b246677052c5462cbfa8a37d2c485bc52de3f8656",
+          "unit_type": "proof-fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u25.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof makes two global expansions comparable by decomposing each into blockwise data. On the Möbius side, a marking records paired positive and negative blocks; reduction joins each marked pair and then forgets the mark. Regrouping by the reduced partition makes the coefficient factor over its blocks into X-functions. On the determinant side, expanding over permutations and decomposing each permutation into disjoint cycles factorizes the Fourier transform cyclewise; successive-difference variables impose a zero-sum delta constraint, and Parseval converts a cyclic kernel convolution into an integral of shifted copies of f2. Regrouping cycles by their supports then yields the second partition factorization. The common set-partition skeleton is the conceptual bridge, but equality of the block factors is not proved here: Proposition 4.3 remains the essential local identity. This span also does not itself license interpreting the shifted-f2 integral as interval overlap.",
+            "nonparaphrase_operation": "Identifies deliberate information loss under reduction and aligns it with cycle localization, revealing a shared block-multiplicative representation without conflating factorization with final equality.",
+            "quality_reason": "Accepted after removing the imported interval-overlap description and retaining only integrals of shifted f2 copies. The remaining proof burden and extraction-damaged symbols, signs, and product indices are explicit.",
+            "source_support": "The span defines marked partitions and reduction, regroups the Möbius sum by reduced partitions, proves its block factorization, expands the determinant over permutations, decomposes permutations into cycles, performs the successive-difference and Parseval calculation, and regroups the cycles by set-partition support.",
+            "speculation_status": "The marking, reduction, cycle, delta, and Parseval mechanisms are explicit. The shared-skeleton description is interpretation; the unproved Proposition 4.3 identity and any later interval semantics are kept separate."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The random-walk perspective is the key semantic bridge from Fourier interval intersections to factorial subset weights.",
+          "line_end": 2650,
+          "line_start": 2481,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The argument is well supported by prose; exact factorial sums and figure-dependent geometry should be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Cycle overlap is reinterpreted as one minus the range of a zero-sum walk; Spitzer's unique rotation below a chord and upper-convex-envelope decomposition count that range by set partitions, proving the subset identity needed for the GUE determinant.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            48,
+            49,
+            50
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Spitzer random-walk identity closes the arithmetic-to-GUE bridge",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u26.txt",
+          "unit_bytes": 9111,
+          "unit_id": "openalex_w2068184834-u26",
+          "unit_sha256": "9153d359ac457328459a9ed2e34d1d05a9cd490a79e6137ab96f6c54d73b4bcf",
+          "unit_type": "bridge-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u26.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The walk representation compresses many interval endpoints into two extrema. Rotation invariance removes an arbitrary starting point, and the upper convex envelope supplies a canonical decomposition whose blocks can be reconstructed uniquely from partition data plus cyclic orderings. Thus a geometric extremum statistic becomes a partition sum, completing the semantic bridge between Fourier overlap and Möbius weights.",
+            "nonparaphrase_operation": "The bridge runs from shifted intervals to partial sums, then to the range V, the cyclic sum T, upper-convex-envelope blocks satisfying the two Spitzer properties, and finally set partitions whose complementary permutations are counted through disjoint cycles.",
+            "quality_reason": "The zero-sum walk, rotation-invariant range V, interval-intersection identity 1-V under the l1 support bound, and cyclic sum T are explicit in the span. The continuity reduction to generic increments, Spitzer unique-rotation lemma, upper-envelope block decomposition with decreasing slopes, and converse reconstruction are accurately reported. The factorial count via cycle decompositions of the complementary set and the pairing of a subset with its complement correctly describe the derivation of the subset identity and Proposition 4.3. The candidate preserves the zero-sum, support, and genericity/continuity qualifications. 'Semantic bridge' is an interpretive label, but the concrete chain from interval intersections to walk range to partition weights prevents it from becoming a generic representation slogan.",
+            "source_support": "For an ordering theta of zero-sum increments u_j, the consecutive sums define a closed walk with range V(theta)=M(theta)-m(theta). Because f_2 is the indicator of [-1/2,1/2], the integral of its shifted copies is the length of an interval intersection, equal under the support condition to 1-V. Summing V over cyclic orderings gives T. After reducing by continuity to generic u, Spitzer's unique-rotation lemma and the upper convex envelope decompose every ordered walk into blocks below chords with decreasing slopes. The resulting bijection counts block orderings by factorials; summing the block contributions and pairing a subset with its complement proves the subset formula for T and hence Proposition 4.3.",
+            "speculation_status": "The argument assumes sum u_j=0 and sum |u_j|<2; without the support condition the claimed interval length need not be 1-V. Genericity is used for uniqueness and is removed only by continuity. The unit relies on Spitzer's lemma and proves the stated subset identity, not a broader random-walk principle outside these hypotheses. The prose and main mechanism are clear. Exact factorial coefficients and the geometry encoded by the referenced figure remain formula-sensitive and should be scan-verified for literal transcription. Describing the walk as compressing interval endpoints into extrema and the envelope as canonical is a faithful conceptual interpretation of the displayed construction. The exact factorial displays and figure-dependent envelope geometry remain formula-sensitive despite clear prose."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Nonuniversal prime-coefficient laws can yield universal local zero correlations because the diagonal main term retains only the Rankin-Selberg-controlled second moment and its induced pairings.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2068184834-u06",
+          "openalex_w2068184834-u11",
+          "openalex_w2068184834-u12",
+          "openalex_w2068184834-u19"
+        ],
+        "proposed_limit": "This explains the leading term in the proved restricted-support regime; it does not establish unrestricted universality or universality for nonprimitive products.",
+        "source_id": "openalex_w2068184834",
+        "synthesis_id": "riemann_v2_within_b978c4544e9a869418cdfbfd",
+        "title": "Universality through a compressed second moment"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This span is a conceptual audit of what the theorem does and does not claim, including the conjecture beyond restricted support.",
+          "line_end": 271,
+          "line_start": 207,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mostly prose; a few support inequalities and product formulas should be verified in the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The remarks separate three mechanisms: diagonal saturation at the Fourier boundary, failure of GUE for products through multiplicity or independent superposition, and universality across primitive L-functions arising from a common Rankin-Selberg second moment despite nonuniversal prime coefficients.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Support saturation, primitivity, and second-moment universality",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u06.txt",
+          "unit_bytes": 3963,
+          "unit_id": "openalex_w2068184834-u06",
+          "unit_sha256": "5d95f0aeebf0b230710c2f8af985340ea955d29ff647a649c61abaaa4dbd0dad",
+          "unit_type": "method-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The leading statistic selects a low-order invariant shared across arithmetic families, whereas factorization changes the point-process composition and therefore the local law.",
+            "nonparaphrase_operation": "Diagonal pairings bridge the Rankin–Selberg second moment to all n-level main terms; superposition is the comparison representation for nonprimitive products.",
+            "quality_reason": "The remarks distinguish support saturation, multiplicity and superposition failures for nonprimitive products, and universality driven by a common Rankin-Selberg second moment whose higher-level manifestation is diagonal pairing.",
+            "source_support": "The remarks identify diagonal saturation at the support boundary, explain why products such as zeta squared or two distinct primitive factors are not a single GUE process, and attribute primitive-family universality to a common coefficient second moment feeding diagonal pairings.",
+            "speculation_status": "Universality beyond the proved support is conjectural, and the claimed independence or superposition of distinct primitive zero sets is an interpretation rather than a complete classification theorem. The prose is reliable; exact support inequalities and product typography remain extraction-sensitive. Describing the second moment as a low-order invariant and factorization as changing point-process composition is a faithful synthesis. Support inequalities and product typography are mildly extraction-sensitive, as acknowledged."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the comparison between integral and Eisenstein-series approaches because it explains which analytic properties each method supplies.",
+          "line_end": 652,
+          "line_start": 538,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent with line-wrap losses around half-plane inequalities; exact statements require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The self-convolution encodes squared local coefficients, has a simple pole at one and a controlled completed functional equation, and supplies the analytic continuation and growth properties needed for Tauberian and contour arguments.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            13,
+            14,
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Rankin-Selberg convolution as second-moment access",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u11.txt",
+          "unit_bytes": 6004,
+          "unit_id": "openalex_w2068184834-u11",
+          "unit_sha256": "b0dd4e8d79aa3b7b8342181b02171a21c08d20b8a46df6d8bb93232e16fc0018",
+          "unit_type": "construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The lift deliberately forgets coefficient phase and preserves magnitude, producing a positive Dirichlet-series channel whose singularity controls averaged arithmetic data.",
+            "nonparaphrase_operation": "Local tensor-product factors bridge Satake parameters to coefficient squares; the completed convolution bridges those coefficients to Tauberian and contour tools.",
+            "quality_reason": "For the unramified self Rankin-Selberg convolution the logarithm contains squared coefficient magnitudes, while the global object has the pole, continuation, functional equation, holomorphy, and vertical-strip control described by RS 1-3.",
+            "source_support": "For pi times its contragredient, the unramified logarithm contains |a_pi(p^nu)| squared, while the global convolution has absolute convergence to the right of one, a simple pole at one, meromorphic continuation, a functional equation, and controlled vertical growth.",
+            "speculation_status": "Ramified and archimedean factors require separate theory, and this span supplies analytic access rather than the mean-square asymptotic itself. Half-plane inequalities and several local formulas are extraction-damaged, so exact statements require the retained PDF. Describing this construction as forgetting phase while retaining a positive magnitude channel captures the self-convolution mechanism and respects the separate ramified theory. Several half-plane inequalities and local formulas are extraction-damaged, which the candidate flags."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the arithmetic compression that later makes all diagonal pairings independent of the particular primitive representation.",
+          "line_end": 765,
+          "line_start": 653,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The chain of Dirichlet series, residues, and weighted sums is extraction-sensitive; consult the PDF for exact weights and constants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Differentiating the Rankin-Selberg logarithmic derivative and applying Tauberian/contour arguments turns its simple pole into a universal quadratic-log asymptotic for the weighted mean square of c_pi(n), with a sharpened error under Hypothesis H.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            16,
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Universal coefficient mean square from the Rankin-Selberg pole",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u12.txt",
+          "unit_bytes": 5625,
+          "unit_id": "openalex_w2068184834-u12",
+          "unit_sha256": "62d98c9a745801e89ecd8df20db7420cab5b83faf8d936b094b1acce91befcca",
+          "unit_type": "theorem-plus-proof-fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A global singularity fixes a family-independent low-order statistic, explaining how detailed coefficient distributions can disappear from later diagonal main terms.",
+            "nonparaphrase_operation": "Logarithmic differentiation converts the pole into a positive weighted series; Tauberian and contour arguments bridge its singular behavior to coefficient asymptotics.",
+            "quality_reason": "The span differentiates the Rankin-Selberg logarithmic derivative, applies a Tauberian argument, uses Hypothesis H to compare coefficient sums, and uses continuation and contour shifting for the sharper weighted mean-square estimate.",
+            "source_support": "The source differentiates the Rankin–Selberg logarithmic derivative, applies a Tauberian argument to obtain a log-squared weighted mean square, uses Hypothesis H to compare two coefficient sums, and uses continuation plus contour shifting to sharpen the error.",
+            "speculation_status": "The conclusion is a weighted mean-square law, not a full coefficient distribution, and the comparison and sharpened result retain Hypothesis H. Exact weights, residues, and constants in the displayed chain are extraction-sensitive and need PDF checking. Reading the pole as fixing a representation-independent low-order statistic that later survives diagonal compression is well motivated by the source's own universality remark. Exact weights, residues, and constants are formula-sensitive; the candidate preserves that limit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the analytic origin of Wick-like pairings and explains why detailed coefficient distributions disappear from the leading term.",
+          "line_end": 1885,
+          "line_start": 1680,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several multiple sums are layout-damaged; exact coefficients, domains, and constants require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Higher prime-power coincidences and unmatched numbers are bounded, while equal numbers with the same number of factors reduce by unique factorization to permutations of distinct primes; repeated use of the universal second moment then produces the disjoint-pair integral.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            32,
+            33,
+            34,
+            35
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Only prime pairings survive at main order",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u19.txt",
+          "unit_bytes": 10535,
+          "unit_id": "openalex_w2068184834-u19",
+          "unit_sha256": "6fa33d8745bd094f9c42a4c2d10cfa3a83341993150613aedd77827f5ae83b25",
+          "unit_type": "proof-fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The main term has a Wick-like form because arithmetic rigidity selects pair matchings, thereby discarding higher coefficient moments and retaining only the universal second moment.",
+            "nonparaphrase_operation": "Prime-factor patterns bridge multiplicative equality to permutations; those permutations become the disjoint index pairings in the Fourier-side correlation measure.",
+            "quality_reason": "The span bounds higher prime-power coincidences, shows unbalanced r and s terms are lower order, uses unique factorization to turn balanced distinct-prime products into permutations, and applies the universal coefficient mean square by summation by parts.",
+            "source_support": "The source bounds prime-power coincidence sums, groups diagonal factorizations by distinct primes, shows r not equal to s is lower order, and for r=s uses unique factorization to identify the second prime list as a permutation of the first; summation by parts with the coefficient mean square yields the pairing integral.",
+            "speculation_status": "This is a restricted-support main-term result under the paper's coefficient hypotheses and does not imply Gaussian independence or unrestricted GUE statistics. Multiple sums and domains are layout-damaged, so exact coefficients and constants require PDF checking. Calling the surviving main term Wick-like is clearly marked as structural analogy and is immediately explained by arithmetic pair matchings rather than probabilistic independence. Several multiple sums and domains are layout-damaged; the candidate does not rely on their exact typography."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The Fourier cutoff controls prime-product size and diagonal dominance; the source's own heuristics show that the proven 2/m range can reflect available off-diagonal control rather than the conjectured final law.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2068184834-u05",
+          "openalex_w2068184834-u15",
+          "openalex_w2068184834-u20"
+        ],
+        "proposed_limit": "The wider range is heuristic and depends on cancellation behavior that differs between higher-degree cusp-form coefficients and degree-one characters.",
+        "source_id": "openalex_w2068184834",
+        "synthesis_id": "riemann_v2_within_deff8063f8bd27e3a0ec8caf",
+        "title": "Support restriction as an analytic dominance boundary"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The two statements must remain paired: smoothing removes RH from the analytic theorem, while RH permits the direct zero statistic.",
+          "line_end": 205,
+          "line_start": 173,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Central displayed asymptotics are extraction-sensitive and require the PDF for symbol-exact use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorems 1.1 and 1.2 state the smoothed result without RH and the unsmoothed correlation result with RH, both under a Fourier-support restriction and with a universal GUE limit.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Restricted-support GUE correlation theorems",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u05.txt",
+          "unit_bytes": 1552,
+          "unit_id": "openalex_w2068184834-u05",
+          "unit_sha256": "ae610e584990680b62726c8c507328316d8a2404b77f12b66abf384b68a6b2fe",
+          "unit_type": "theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The paired theorems expose smoothing as a change of proof interface rather than a change of predicted local law.",
+            "nonparaphrase_operation": "The smooth height weight, Fourier-localized test function, and center-of-mass delta distribution bridge zero sums to the universal sine-kernel density.",
+            "quality_reason": "Theorem 1.1 gives the smoothed GUE asymptotic without RH under the coefficient and Fourier-support conditions; Theorem 1.2 adds RH and reaches the direct normalized-zero statistic.",
+            "source_support": "For cuspidal GL_m data satisfying m at most three or Hypothesis H and a Fourier-support bound, Theorem 1.1 gives the smoothed GUE correlation asymptotic; with RH, Theorem 1.2 replaces the smooth cutoff by the direct normalized-zero statistic.",
+            "speculation_status": "Both results have restricted Fourier support; the unsmoothed statement assumes RH and neither statement establishes unrestricted consecutive-spacing universality. The theorem roles are clear, but the central displayed asymptotics should be checked in the PDF before symbol-exact use. Calling smoothing a change of proof interface rather than of the predicted local law accurately relates the paired statements. The central asymptotic displays are extraction-sensitive, and the candidate correctly limits symbol-exact reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the gamma-term kernel bounds because they control the supposedly neutral coordinates in the product expansion.",
+          "line_end": 1100,
+          "line_start": 895,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Many displayed functions and inequalities have layout damage; exact formulas require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Fourier inversion lets the explicit formula act on each zero coordinate, expanding the correlation into signed prime-sum terms; compact Fourier support bounds individual prime powers and the total product below T^(2-delta).",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            21,
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Applying the explicit formula coordinatewise and localizing prime products",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u15.txt",
+          "unit_bytes": 9498,
+          "unit_id": "openalex_w2068184834-u15",
+          "unit_sha256": "d49fc13ff67dd52c94a5f8a34f0f687022a6e4a5ca9b9b60a7dc26727de191b0",
+          "unit_type": "method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Fourier localization translates geometric resolution on zeros into arithmetic complexity bounds, preparing a finite regime in which discrete product gaps can force diagonality.",
+            "nonparaphrase_operation": "The functions S-plus, S-minus, and the gamma kernel bridge each spectral coordinate to a signed arithmetic or neutral coordinate; product expansion exposes all interaction patterns.",
+            "quality_reason": "Coordinatewise Fourier inversion and the explicit formula produce polar, gamma, positive-prime, and negative-prime factors; expansion yields C_{r,s}, and strict compact support bounds individual prime powers and their total product.",
+            "source_support": "Fourier inversion lets the explicit formula act on each zero coordinate, producing polar, gamma-kernel, positive-prime, and negative-prime factors; expanding them gives C_{r,s} sums, and support inside a strict 2/m region bounds each n_j and the total product.",
+            "speculation_status": "The polar term is exceptional for zeta, gamma coordinates still require tail control, and the product bound depends directly on the strict support margin. Many displayed functions and inequalities are layout-damaged, so exact formulas should be recovered from the PDF. Interpreting Fourier resolution as an arithmetic complexity budget is a faithful abstraction of Lemma 3.2. Many displayed definitions and inequalities are layout-damaged, and the candidate correctly avoids exact reconstruction."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly distinguishes its proven support restriction from conjectured full universality and gives a solver-bottleneck explanation rather than treating the restriction as intrinsic truth.",
+          "line_end": 1962,
+          "line_start": 1886,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Heuristic sums and exponents are extraction-sensitive; prose supports the comparison, but numerical powers require PDF checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For zeta, the pole and nonnegative prime coefficients make the boundary where diagonal dominance fails visible; for higher degree, expected cancellation suggests a wider natural range than the proven 2/m range, while Dirichlet characters behave differently.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            36
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Fourier-support boundary is a method-sensitive saturation threshold",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u20.txt",
+          "unit_bytes": 3734,
+          "unit_id": "openalex_w2068184834-u20",
+          "unit_sha256": "abd96809f1785262f3f628c7fb87f044f2f8f82e2295ef79f088569878cdf67c",
+          "unit_type": "heuristic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A theorem's support boundary can encode the available off-diagonal control rather than the conjectured local law, and different arithmetic coefficient structures change that control.",
+            "nonparaphrase_operation": "The pair-correlation off-diagonal is rewritten as shifted coefficient sums, making cancellation quality the bridge between Fourier support and diagonal dominance.",
+            "quality_reason": "The span identifies the zeta support-two boundary through the polar term and nonnegative coefficients, heuristically predicts square-root cancellation for degree-two cusp-form shifted sums, and contrasts this with Dirichlet-character sums under twin-prime-type conjectures.",
+            "source_support": "For zeta, the pole term and nonnegative prime coefficients make the support-two boundary visible; for degree-two cusp forms, expected square-root cancellation in shifted coefficient sums suggests diagonal dominance up to a wider range, whereas Dirichlet characters are compared with twin-prime-type correlations and lack that saving.",
+            "speculation_status": "The wider cusp-form range and the character comparison are heuristic and conditional; they do not prove support extension or full universality. The prose comparison is clear, but heuristic sums and numerical exponents are extraction-sensitive. Diagnosing the proved cutoff as method- and coefficient-sensitive rather than as the conjectured final law is exactly the source's stated comparison. Heuristic sums and numerical exponents are extraction-sensitive, while the candidate keeps the conclusions explicitly heuristic."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Primitivity is structurally aligned with a single GUE-type process: products create repeated or independently superposed zero sets, whereas a primitive factor's diagonal main term is internally paired through its own coefficients.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2068184834-u01",
+          "openalex_w2068184834-u06",
+          "openalex_w2068184834-u19"
+        ],
+        "proposed_limit": "The superposition discussion is a natural conjectural interpretation, not a complete classification theorem for every nonprimitive L-function.",
+        "source_id": "openalex_w2068184834",
+        "synthesis_id": "riemann_v2_within_25349528d885a4128f1cb981",
+        "title": "Primitivity prevents superposed zero processes"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The factorization motivation, RH-based real ordering, zero-density scale, and statistical question form one necessary setup.",
+          "line_end": 54,
+          "line_start": 13,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The normalization is displayed with degraded superscripts and spacing; the checked prose is clear, but symbol-exact reuse should consult the retained PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The article treats cuspidal GL_m L-functions as irreducible building blocks for general L-functions, then normalizes zero ordinates to unit mean spacing so that Poisson behavior can be contrasted with structured local statistics.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Primitive factors and the local-scale zero-statistics question",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u01.txt",
+          "unit_bytes": 2516,
+          "unit_id": "openalex_w2068184834-u01",
+          "unit_sha256": "3a2e0a3cf9d5e5a179b5895e64e3707300276f446b776cee713add67b6dea670",
+          "unit_type": "motivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Treating primitive standard GL_m L-functions as the components to study and then unfolding their zero ordinates are two distinct reductions. Primitivity aims to isolate one arithmetic factor rather than a product of factors, while the height-dependent normalization converts its nonuniform zero density into a local point process of unit mean spacing. This representation preserves the order and adjacency of zeros but rescales gap magnitudes by the local density; it therefore enables comparison of local statistics across heights and degrees while suppressing absolute height and the original density scale. The span only poses the Poisson-versus-structured question: the primitive-factor claim is Langlands-motivated, RH is assumed to place the ordinates on a real ordered line, and no local zero law is proved here.",
+            "nonparaphrase_operation": "Separates factor isolation from density unfolding and audits what the change of representation preserves, rescales, and forgets.",
+            "quality_reason": "Accepted after replacing the unsupported claim that relative spacing is preserved with the narrower preservation of order or adjacency under local-density rescaling. Symbol-exact normalization remains unsafe because the extraction damages superscripts and spacing.",
+            "source_support": "The span calls cuspidal standard GL_m L-functions conjectural primitive building blocks, assumes RH before ordering the ordinates, states their asymptotic density near height T, and normalizes them to unit mean spacing before asking whether the resulting sequence is Poisson or more structured.",
+            "speculation_status": "The source facts and assumptions are explicit; interpreting the normalization as unfolding for cross-height and cross-degree comparison is a source-grounded inference, not a proved zero-statistics result."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This span is a conceptual audit of what the theorem does and does not claim, including the conjecture beyond restricted support.",
+          "line_end": 271,
+          "line_start": 207,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mostly prose; a few support inequalities and product formulas should be verified in the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The remarks separate three mechanisms: diagonal saturation at the Fourier boundary, failure of GUE for products through multiplicity or independent superposition, and universality across primitive L-functions arising from a common Rankin-Selberg second moment despite nonuniversal prime coefficients.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Support saturation, primitivity, and second-moment universality",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u06.txt",
+          "unit_bytes": 3963,
+          "unit_id": "openalex_w2068184834-u06",
+          "unit_sha256": "5d95f0aeebf0b230710c2f8af985340ea955d29ff647a649c61abaaa4dbd0dad",
+          "unit_type": "method-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The leading statistic selects a low-order invariant shared across arithmetic families, whereas factorization changes the point-process composition and therefore the local law.",
+            "nonparaphrase_operation": "Diagonal pairings bridge the Rankin–Selberg second moment to all n-level main terms; superposition is the comparison representation for nonprimitive products.",
+            "quality_reason": "The remarks distinguish support saturation, multiplicity and superposition failures for nonprimitive products, and universality driven by a common Rankin-Selberg second moment whose higher-level manifestation is diagonal pairing.",
+            "source_support": "The remarks identify diagonal saturation at the support boundary, explain why products such as zeta squared or two distinct primitive factors are not a single GUE process, and attribute primitive-family universality to a common coefficient second moment feeding diagonal pairings.",
+            "speculation_status": "Universality beyond the proved support is conjectural, and the claimed independence or superposition of distinct primitive zero sets is an interpretation rather than a complete classification theorem. The prose is reliable; exact support inequalities and product typography remain extraction-sensitive. Describing the second moment as a low-order invariant and factorization as changing point-process composition is a faithful synthesis. Support inequalities and product typography are mildly extraction-sensitive, as acknowledged."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the analytic origin of Wick-like pairings and explains why detailed coefficient distributions disappear from the leading term.",
+          "line_end": 1885,
+          "line_start": 1680,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several multiple sums are layout-damaged; exact coefficients, domains, and constants require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Higher prime-power coincidences and unmatched numbers are bounded, while equal numbers with the same number of factors reduce by unique factorization to permutations of distinct primes; repeated use of the universal second moment then produces the disjoint-pair integral.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            32,
+            33,
+            34,
+            35
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Only prime pairings survive at main order",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u19.txt",
+          "unit_bytes": 10535,
+          "unit_id": "openalex_w2068184834-u19",
+          "unit_sha256": "6fa33d8745bd094f9c42a4c2d10cfa3a83341993150613aedd77827f5ae83b25",
+          "unit_type": "proof-fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The main term has a Wick-like form because arithmetic rigidity selects pair matchings, thereby discarding higher coefficient moments and retaining only the universal second moment.",
+            "nonparaphrase_operation": "Prime-factor patterns bridge multiplicative equality to permutations; those permutations become the disjoint index pairings in the Fourier-side correlation measure.",
+            "quality_reason": "The span bounds higher prime-power coincidences, shows unbalanced r and s terms are lower order, uses unique factorization to turn balanced distinct-prime products into permutations, and applies the universal coefficient mean square by summation by parts.",
+            "source_support": "The source bounds prime-power coincidence sums, groups diagonal factorizations by distinct primes, shows r not equal to s is lower order, and for r=s uses unique factorization to identify the second prime list as a permutation of the first; summation by parts with the coefficient mean square yields the pairing integral.",
+            "speculation_status": "This is a restricted-support main-term result under the paper's coefficient hypotheses and does not imply Gaussian independence or unrestricted GUE statistics. Multiple sums and domains are layout-damaged, so exact coefficients and constants require PDF checking. Calling the surviving main term Wick-like is clearly marked as structural analogy and is immediately explained by arithmetic pair matchings rather than probabilistic independence. Several multiple sums and domains are layout-damaged; the candidate does not rely on their exact typography."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Local representation structure makes Rankin-Selberg coefficients positive and locates local poles, while global continuation, holomorphy, and Landau estimates feed back to sharpen local parameter bounds used in the global prime-sum analysis.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2068184834-u08",
+          "openalex_w2068184834-u11",
+          "openalex_w2068184834-u29",
+          "openalex_w2068184834-u30",
+          "openalex_w2068184834-u31"
+        ],
+        "proposed_limit": "Several exact local formulas are text-layer fragile, and the strongest archimedean improvement stated at the end is cited for the spherical case rather than derived there.",
+        "source_id": "openalex_w2068184834",
+        "synthesis_id": "riemann_v2_within_85af776fe3a2846f89f37ebf",
+        "title": "Local-global feedback loop for analytic control"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the zero-parameter convention at ramified places and the distinction between conjectural tempered bounds and the weaker proven global estimate.",
+          "line_end": 369,
+          "line_start": 304,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Product and exponent typography are degraded; exact local-factor formulas and bounds need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The Euler product is organized uniformly across unramified and ramified primes through local parameters, then finite and archimedean bounds delimit the analytic region available to contour and coefficient arguments.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Principal local factors and Ramanujan-type parameter control",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u08.txt",
+          "unit_bytes": 3608,
+          "unit_id": "openalex_w2068184834-u08",
+          "unit_sha256": "c2765e20fc3501192177d60b9032644df26986a59b00dedbbec9089ccaef5868",
+          "unit_type": "construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A common local representation absorbs exceptional ramification into the same syntax, while size bounds quantify how far Euler products and contour arguments may safely move.",
+            "nonparaphrase_operation": "Local conjugacy classes and gamma parameters bridge automorphic representations to finite and archimedean analytic factors without erasing the ramified/unramified distinction.",
+            "quality_reason": "The span uniformly writes unramified and ramified local factors using parameter lists with allowed zeros, distinguishes known bounds from conjectural Ramanujan temperedness, and introduces the archimedean gamma parameters.",
+            "source_support": "The source parameterizes unramified local factors by Satake eigenvalues, extends the form to ramified primes by allowing zero parameters, states generic and global bounds, contrasts them with Ramanujan temperedness, and introduces archimedean gamma parameters.",
+            "speculation_status": "Ramanujan bounds are conjectural in general, and the weaker stated global bounds—not temperedness—are what the paper can use uniformly. Exact local-factor products and exponent bounds are degraded in the text layer and need PDF verification. Treating the uniform syntax as an interface and the bounds as limits on later analytic movement is a reasonable forward-looking interpretation. Product notation and exponent bounds are degraded; the candidate correctly requires PDF verification for exact reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the comparison between integral and Eisenstein-series approaches because it explains which analytic properties each method supplies.",
+          "line_end": 652,
+          "line_start": 538,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent with line-wrap losses around half-plane inequalities; exact statements require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The self-convolution encodes squared local coefficients, has a simple pole at one and a controlled completed functional equation, and supplies the analytic continuation and growth properties needed for Tauberian and contour arguments.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            13,
+            14,
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Rankin-Selberg convolution as second-moment access",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u11.txt",
+          "unit_bytes": 6004,
+          "unit_id": "openalex_w2068184834-u11",
+          "unit_sha256": "b0dd4e8d79aa3b7b8342181b02171a21c08d20b8a46df6d8bb93232e16fc0018",
+          "unit_type": "construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The lift deliberately forgets coefficient phase and preserves magnitude, producing a positive Dirichlet-series channel whose singularity controls averaged arithmetic data.",
+            "nonparaphrase_operation": "Local tensor-product factors bridge Satake parameters to coefficient squares; the completed convolution bridges those coefficients to Tauberian and contour tools.",
+            "quality_reason": "For the unramified self Rankin-Selberg convolution the logarithm contains squared coefficient magnitudes, while the global object has the pole, continuation, functional equation, holomorphy, and vertical-strip control described by RS 1-3.",
+            "source_support": "For pi times its contragredient, the unramified logarithm contains |a_pi(p^nu)| squared, while the global convolution has absolute convergence to the right of one, a simple pole at one, meromorphic continuation, a functional equation, and controlled vertical growth.",
+            "speculation_status": "Ramified and archimedean factors require separate theory, and this span supplies analytic access rather than the mean-square asymptotic itself. Half-plane inequalities and several local formulas are extraction-damaged, so exact statements require the retained PDF. Describing this construction as forgetting phase while retaining a positive magnitude channel captures the self-convolution mechanism and respects the separate ramified theory. Several half-plane inequalities and local formulas are extraction-damaged, which the candidate flags."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This positivity is later the prerequisite for Landau's theorem and thus for global parameter bounds.",
+          "line_end": 2865,
+          "line_start": 2815,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact exponents and divisibility conditions need PDF verification, though the sum-of-squares mechanism is recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Taking logarithms of the twist-class product writes each relevant coefficient as sums of squared magnitudes, giving a lower bound that implies nonnegativity of the global Rankin-Selberg Dirichlet coefficients.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            55
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Local factorization yields nonnegative Rankin-Selberg coefficients",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u29.txt",
+          "unit_bytes": 2373,
+          "unit_id": "openalex_w2068184834-u29",
+          "unit_sha256": "50e09e92b34c21ff16251e3bfa406ccee2ee1954a47dfa8d0eda36b599adeadf",
+          "unit_type": "proof-fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u29.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Logarithms linearize the Euler product and expose a Gram-like sum-of-squares certificate that was hidden in the multiplicative form. Positivity is the preserved invariant needed downstream: it prevents cancellation when global coefficient estimates are converted back into local parameter bounds.",
+            "nonparaphrase_operation": "The chain is twist-class Euler product to logarithmic coefficients lambda_l(e), to squared power sums in z_j, to lower bounds for local Dirichlet coefficients b_l, and finally to nonnegative global coefficients b(n).",
+            "quality_reason": "The span takes logarithms of each twist-class factor, writes the logarithmic coefficient as a sum of absolute squares, keeps the nu=1 term for a lower bound, and exponentiates to obtain Lemma 5.1. The candidate preserves the divisibility qualification and correctly notes that the final global nonnegativity conclusion also uses the earlier coefficient relation (2.19). It does not import the later Landau growth bound or parameter exponent into this proof fragment. The conceptual account identifies the non-paraphrase operation—logarithmic linearization—rather than relying on a generic 'representation exposes structure' template.",
+            "source_support": "The local self Rankin-Selberg factor and each twist-class factor are expanded as Dirichlet series. For exponents compatible with the class integer r_l, the logarithm of the class factor has coefficients lambda_l(e). Formula (5.10) rewrites lambda_l(e) as a sum, over nu, of squared absolute values of sums of powers of the z_j. Keeping the nu=1 contribution gives the displayed square lower bound. Exponentiating yields the coefficient inequality in Lemma 5.1, and together with the earlier Euler-product relation this implies b(n)>=0 for the global self Rankin-Selberg series.",
+            "speculation_status": "The explicit inequality is stated only under the divisibility condition r_l|e, and the global conclusion also uses the earlier coefficient relation (2.19). This unit establishes positivity and a lower bound, not the later growth estimate or parameter exponent. The sum-of-squares mechanism is clear. Exact powers, signs in s_j, and divisibility/exponent notation are text-layer fragile and need PDF verification. Calling the absolute-square formula a Gram-like certificate and explaining its value as protection against cancellation are reasonable conceptual consequences of the explicit nonnegative decomposition. The relation among e, r_l, the prime-power arguments, and the extracted powers of z_j and p is typography-sensitive; only the prose-grounded sum-of-squares mechanism is safe without the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The explicit local-versus-global proof comparison is a reusable method-selection insight.",
+          "line_end": 2949,
+          "line_start": 2867,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Gamma shifts and tensor-product cases are formula-dependent and require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Real Langlands quotients reduce to characters and discrete series, whose gamma factors give the completed local term; comparing the first local pole with global Rankin-Selberg holomorphy proves the archimedean parameter half-bound and avoids a more complicated local classification proof.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            56,
+            57
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Archimedean factor classification and a global proof of the half-bound",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u30.txt",
+          "unit_bytes": 4448,
+          "unit_id": "openalex_w2068184834-u30",
+          "unit_sha256": "ef7de8fb47b5b51d10065b616277dbea92d9b41d7ade88784f075bda2fd3c1ed",
+          "unit_type": "method-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u30.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Gamma shifts provide coordinates in which local non-temperedness becomes pole position. The proof then selects between two routes: a purely local classification/integral analysis and a global-to-local obstruction argument. The latter preserves the needed pole information while avoiding a more elaborate local proof.",
+            "nonparaphrase_operation": "The bridge runs from real Langlands blocks to Gamma_R and Gamma_C factors, through duplication to the shift multiset mu_pi(j), then through the small tensor-product table to the first Rankin-Selberg pole, which global holomorphy constrains.",
+            "quality_reason": "The span classifies the real square-integrable building blocks in degrees one and two, gives their Gamma_R/Gamma_C factors, and uses duplication to rewrite the principal factor as m real Gamma factors. The listed basic Rankin-Selberg products and Langlands-quotient product support the stated first pole at twice the largest absolute real twist parameter. The candidate correctly restricts the global holomorphy argument to an archimedean component of a cuspidal automorphic representation and distinguishes the baseline half-bound from later improvements. The local-versus-global proof comparison is explicit in the source's remark. 'Compression' and 'small tensor-product table' are stylistic summaries, but the candidate supplies the actual classification, factor conversion, and pole mechanism.",
+            "source_support": "Real square-integrable building blocks occur only in degrees one and two: characters and twists of discrete series. Their principal factors are Gamma_R or Gamma_C factors, and duplication rewrites the full archimedean factor as a product of m Gamma_R(s+mu_pi(j)). Basic Rankin-Selberg products for characters, signs, and discrete series, combined with the Langlands-quotient product, show that the first local self Rankin-Selberg pole occurs at 2 max |Re s_j|. For a real component of a cuspidal automorphic representation, the stated global Rankin-Selberg holomorphy forces that pole below one, hence the one-half bound and Re mu_pi(j)>-1/2.",
+            "speculation_status": "The global argument applies when pi_infinity is a component of a cuspidal automorphic representation and uses the cited Rankin-Selberg analytic property. It proves the baseline one-half bound; the stronger bounds mentioned next require global considerations, and the later archimedean improvement is not proved in this unit. The strategy and classification are clear, but individual Gamma shifts and discrete-series tensor-product formulas are extraction-sensitive and should be checked against the PDF. Viewing Gamma shifts as coordinates for non-temperedness and the global argument as a cheaper obstruction route is a faithful method-selection interpretation. Individual Gamma shifts and discrete-series tensor-product formulas are extraction-sensitive and should be scan-verified before exact citation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This closes the dependency loop from the appendix back to the coefficient bounds used in Sections 2 and 3.",
+          "line_end": 3014,
+          "line_start": 2951,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exponent typography is broken across lines; the bound's exact formula must be checked in the retained PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Nonnegative Rankin-Selberg coefficients plus meromorphic continuation let Landau's theorem bound coefficient growth; taking high powers isolates each local parameter and yields the exponent 1/2 minus 1/(m^2+1), with an analogous spherical archimedean estimate cited.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            58
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Landau positivity sharpens finite-place parameter bounds",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834-u31.txt",
+          "unit_bytes": 2866,
+          "unit_id": "openalex_w2068184834-u31",
+          "unit_sha256": "a67dc8a34251055e36fa82b51aa4faf95ea93a6c805bd0a133c4b57280f338bf",
+          "unit_type": "theorem-plus-proof-fragment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u31.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "At finite places, positivity creates a local-global feedback loop. Nonnegative coefficients of the global self Rankin-Selberg series, together with its meromorphic continuation, gamma-degree data, and pole structure, let Landau's theorem turn a summatory estimate into pointwise coefficient control. At an unramified prime, applying that control to arbitrarily high prime powers bounds power sums of the local roots and isolates the largest modulus, yielding the exponent 1/2-1/(m^2+1). At ramified primes, the earlier twist-class square lower bound supplies a noncancelling certificate along suitable powers, giving the same finite-place control. The analogous infinity estimate is not part of this mechanism: the span only cites it for spherical pi_infinity and says it comes from a different method. Thus the proved feedback reaches every finite place, not every local place without qualification.",
+            "nonparaphrase_operation": "Interprets passage to high prime powers as amplification that converts coefficient growth into a spectral-radius bound, while separating proved finite-place feedback from a cited archimedean analogue.",
+            "quality_reason": "Accepted after restricting the spontaneous overclaim from every local place to every finite place and explicitly excluding the cited spherical infinity result from the Landau/twist-class proof. Broken fraction and epsilon typography is not relied on for literal transcription.",
+            "source_support": "The span invokes Landau's theorem using nonnegative Rankin-Selberg coefficients and the stated global analytic data, derives a pointwise b(n) bound, applies prime-power relations at unramified primes, uses the prior classwise lower bound at ramified primes, and separately cites the spherical archimedean estimate from another method.",
+            "speculation_status": "The finite-place deductions and exponent are source-supported, subject to typography checks. 'Amplification' and 'spectral radius' are explanatory language; the infinity statement retains its limited cited status."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "36369cbb2070794b0c0dfa27fa2063427a3f190fb0348234dc198f964bbb342f"
+}

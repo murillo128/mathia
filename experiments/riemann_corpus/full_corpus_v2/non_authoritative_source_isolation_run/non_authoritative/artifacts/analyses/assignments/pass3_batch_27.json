@@ -1,0 +1,3585 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no prior analysis-stage conversation",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_27.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_27.jsonl"
+  },
+  "unit_count": 78,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Gaussian and maximum-size predictions in the introduction are heuristic comparisons; Theorem 1 proves the stated lower bounds only.",
+      "line_end": 114,
+      "line_start": 12,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; theorem ranges, moment definitions, and normalizations require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After stating the large-value and frequency targets, the source defines smoothed unweighted and zeta-weighted moments of a resonator R(t); their ratio lower-bounds the maximum, and diagonal evaluation makes both moments quadratic forms in tunable coefficients.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A correlated Dirichlet polynomial turns extreme zeta values into quadratic-form optimization",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u01.txt",
+      "unit_bytes": 7847,
+      "unit_id": "openalex_w1964482233_v2_u01",
+      "unit_sha256": "d3969f0e2c7b198882e3160828353f23f658fe84540b46547039c090c4135eb1",
+      "unit_type": "resonance-method blueprint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Chowla positivity is reported as a conjecture; small nonzero values do not refute it.",
+      "line_end": 148,
+      "line_start": 115,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants, discriminant range, and exponential scale are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 and its context frame the first family transfer: central values over fundamental discriminants admit opposite exponential extremes even amid nonvanishing and positivity questions.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same resonator can force both large and small quadratic-character central values",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u02.txt",
+      "unit_bytes": 1945,
+      "unit_id": "openalex_w1964482233_v2_u02",
+      "unit_sha256": "bdebfc2577d2848347b3bb56abbdc1f335b5c01ad4ad9354d80a90ddbfac1804",
+      "unit_type": "family transfer target",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Theorem 3 is deliberately not optimized, as the author states.",
+      "line_end": 192,
+      "line_start": 149,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Fourier normalization, parity, and theorem constants need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source defines the Hecke family and L-function, uses the functional-equation sign to exclude weights with forced central zero, states large and small value results for the even-sign family, and identifies further contexts where resonance transfers.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional-equation parity gates which cusp-form family can exhibit central extremes",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u03.txt",
+      "unit_bytes": 2724,
+      "unit_id": "openalex_w1964482233_v2_u03",
+      "unit_sha256": "daca725fbebae0dd21fd3f61229deeaf57cb406d750f9ff3d32e6fdbac7c5872",
+      "unit_type": "automorphic family transfer target",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The reduction requires the resonator length N to remain below a power of T.",
+      "line_end": 271,
+      "line_start": 195,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; Fourier transforms, diagonal conditions, error terms, and the final ratio must be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compact smoothing turns distinct Dirichlet frequencies into rapidly decaying off-diagonal Fourier terms; the two evaluated moments reduce the zeta maximum to a ratio involving r(m)r(mk) over the coefficient energy.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier decay makes the resonator moments diagonal and exposes the correlation ratio",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u04.txt",
+      "unit_bytes": 4062,
+      "unit_id": "openalex_w1964482233_v2_u04",
+      "unit_sha256": "e3da62ebd25e4d0f5e4d104ebb6ffb4c7a6346cbaa7ea4da52e3e68652d76028",
+      "unit_type": "diagonal moment reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Prime-number-theorem estimates are invoked for the final asymptotics rather than derived here.",
+      "line_end": 361,
+      "line_start": 272,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact prime window, L definition, Euler products, and alpha choice are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The lower-bound proof chooses squarefree multiplicative coefficients concentrated on an intermediate prime window, factors the denominator into an Euler product, and uses Rankin's trick to show truncation tails are negligible while the numerator gains coherently.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A sparse prime-supported multiplicative weight aligns the numerator while controlling mass",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u05.txt",
+      "unit_bytes": 4315,
+      "unit_id": "openalex_w1964482233_v2_u05",
+      "unit_sha256": "4261b24a8283c232ab988f95b48ee1d46a8b1e77db2578c850ea62c6f24e493e",
+      "unit_type": "multiplicative resonator construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This bounds the optimization problem of Theorem 2.1, not all possible methods for large zeta values.",
+      "line_end": 401,
+      "line_start": 362,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The definition of g and resulting product estimates require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The upper-bound proof introduces g(k), splits each product r(mk)r(m) by a weighted quadratic inequality, regroups by coefficient energy, and bounds both divisor-side factors through Euler products, matching the lower construction's main exponential scale.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A tailored multiplicative majorant proves the resonator scale is essentially optimal",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u06.txt",
+      "unit_bytes": 2086,
+      "unit_id": "openalex_w1964482233_v2_u06",
+      "unit_sha256": "4efd85d4a17f35bc09e68c015707f6bc92f705d0f210ac1bb716c98abd90ff38",
+      "unit_type": "dual-weight upper bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the moderate-value regime; the larger-V range uses a different resonator length and fourth-moment control.",
+      "line_end": 432,
+      "line_start": 402,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Thresholds and logarithmic powers are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof separates the portion of the second moment above a threshold and uses Cauchy-Schwarz with the fourth moment to lower-bound the measure of that portion, covering the initial V range without a specialized long resonator.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Known zeta moments already force a nontrivial measure of moderately large values",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u07.txt",
+      "unit_bytes": 1839,
+      "unit_id": "openalex_w1964482233_v2_u07",
+      "unit_sha256": "68dfd8e3e2aa12cde3278e66440d1ea576a5cc164a747035af23ff3f8aa63460",
+      "unit_type": "moment-to-frequency transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument is valid only in the theorem's stated V range and under the resonator-length constraints.",
+      "line_end": 512,
+      "line_start": 433,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; equations (8)-(9), the prime support, fourth-moment product, and A choice need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Cauchy-Schwarz converts a large correlation ratio into a measure bound involving the resonator's fourth moment; squarefree prime weights make the fourth moment an Euler product, and choosing its amplitude from V balances gain against concentration cost.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A shorter resonator plus its fourth moment yields frequency bounds for larger zeta values",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u08.txt",
+      "unit_bytes": 4803,
+      "unit_id": "openalex_w1964482233_v2_u08",
+      "unit_sha256": "5b90d3b7f2166d32ee8b6b86532d6085244b511474fdb18e2ca18230f6da326b",
+      "unit_type": "large-deviation resonance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The paper restricts to discriminants of form 8d for convenience, not as a claim about all family members.",
+      "line_end": 576,
+      "line_start": 514,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Character symbols, square condition, local factors, and errors are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The quadratic-family resonator is averaged over squarefree discriminants; Pólya-Vinogradov controls nonsquare character products while square products supply an explicit main term, yielding the first family moment.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A quadratic-character average selects square products as the family diagonal",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u09.txt",
+      "unit_bytes": 3353,
+      "unit_id": "openalex_w1964482233_v2_u09",
+      "unit_sha256": "751d284b4be1d0e45d2c42ab6451b7f99716da2654b7d9a7d741d2c67aeea3a1",
+      "unit_type": "character-orthogonality reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Properties of the weight W and the character-sum estimates are cited or briefly justified, not developed from first principles.",
+      "line_end": 658,
+      "line_start": 577,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; Mellin weight, decay estimates, main term, and error exponent require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The approximate functional equation writes each central L-value as a rapidly weighted character sum; after expanding the resonator, the square/non-square estimates again separate a main term from a controlled error and produce Lemma 3.2.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A smooth central-value expansion makes the second quadratic-family moment accessible to the same square filter",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u10.txt",
+      "unit_bytes": 4694,
+      "unit_id": "openalex_w1964482233_v2_u10",
+      "unit_sha256": "c81b6113613ea214d7cefe73634d7d2d4e9cab3361fc74dee6cc67769b513ca9",
+      "unit_type": "approximate-functional-equation family bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Existence follows from a weighted average ratio and the stated positivity/absolute-value setup, not from locating an explicit discriminant.",
+      "line_end": 690,
+      "line_start": 659,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The product signs and exponential constants are essential and PDF-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 3.3 evaluates the same moment architecture with r(n)=mu(n)f(n); the negative prime-level cross term makes the weighted central-value ratio exponentially small, while removing Möbius gives the large-value counterpart.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Multiplying resonator coefficients by Möbius changes constructive alignment into destructive alignment",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u11.txt",
+      "unit_bytes": 1670,
+      "unit_id": "openalex_w1964482233_v2_u11",
+      "unit_sha256": "505637ffb054341a6096f4f7c3ac069cd3b4d5fc61d6db8953be5281960cf5d7",
+      "unit_type": "sign-controlled extremum selection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is one component of Proposition 3.3 and depends on the earlier coefficient choice.",
+      "line_end": 718,
+      "line_start": 691,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Local factors and admissible length exponents require exact verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 3.1 is specialized to the chosen squarefree coefficients, and a small positive exponent proves that terms beyond the resonator cutoff have exponentially small relative mass, leaving the clean product asymptotic.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rankin's trick upgrades the first quadratic-family moment to its full Euler product",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u12.txt",
+      "unit_bytes": 1438,
+      "unit_id": "openalex_w1964482233_v2_u12",
+      "unit_sha256": "5eb179bc76c8e3c4d23fbe338efb3679625949af5d163d41f84aa54e3e58af87",
+      "unit_type": "truncated Euler-product evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivation uses pairwise coprimality from the squarefree resonator support.",
+      "line_end": 793,
+      "line_start": 719,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; reparameterized sums, contour integrand, residue, and h(p) must be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Writing n1=ar, n2=as and the approximate-functional-equation index as rsm squared resolves the family diagonal; Mellin inversion factors the remaining m-sum, and shifting the contour extracts the zeta pole and logarithmic main term.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Factoring the square condition reveals a zeta pole whose residue supplies the central-value main term",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u13.txt",
+      "unit_bytes": 4400,
+      "unit_id": "openalex_w1964482233_v2_u13",
+      "unit_sha256": "e37e983ccaac06bdf2a83b59459bb22ed3b2a288034ae73b3299a30b972353c9",
+      "unit_type": "square-constraint reparameterization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The lengthy algebra implements one reusable step: local factorization plus tail removal.",
+      "line_end": 863,
+      "line_start": 794,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Euler factors and tail exponents are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Multiplicativity factors the extended a,r,s sum into the signed Euler product predicted by Proposition 3.3, while another Rankin argument bounds the cutoff tails relative to that product.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Extending coprime sums to infinity converts the quadratic-family main term into local factors",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u14.txt",
+      "unit_bytes": 4067,
+      "unit_id": "openalex_w1964482233_v2_u14",
+      "unit_sha256": "588d38966d71ea0477da6f299976c41e195dd52bd00fbf85dffed7d286aa6161",
+      "unit_type": "multiplicative main-term factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The admissible resonator length is tied to the weight k and the stated Bessel range.",
+      "line_end": 932,
+      "line_start": 865,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; harmonic normalization, trace formula, Bessel estimate, and length bound need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Harmonic weights normalize the family, a Bessel bound makes the Kloosterman off-diagonal exponentially small for a short resonator, and the weighted resonator square collapses to coefficient energy just as in the zeta case.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Petersson's trace formula replaces time and character orthogonality for cusp forms",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u15.txt",
+      "unit_bytes": 3217,
+      "unit_id": "openalex_w1964482233_v2_u15",
+      "unit_sha256": "baca7c9f5912cb825f1842f7aaa87a8be8774790e19c997d13e3e703420763d9",
+      "unit_type": "spectral-family orthogonality",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This explains both the parity gate and why only a bounded index range enters the averaged computation.",
+      "line_end": 981,
+      "line_start": 933,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; gamma ratios, contours, parity factor, and V(x) estimates require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shifting a Mellin contour across the central-value pole and using the functional equation produces a smooth Dirichlet expansion; parity appears as the factor 1+i^k, and contour bounds make the weight near one at short indices and tiny in the tail.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour reflection turns the cusp-form central value into a short smoothed Hecke series",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u16.txt",
+      "unit_bytes": 2873,
+      "unit_id": "openalex_w1964482233_v2_u16",
+      "unit_sha256": "3b1c8c9fd5eeb97f8f1ac212dd01613846224e23a5e4b886b49ba82699722074",
+      "unit_type": "central approximate functional equation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The reduction assumes k congruent to zero mod four and the specified short resonator.",
+      "line_end": 1017,
+      "line_start": 982,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; all indices, divisor sums, cutoffs, and errors need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expanding the resonator and approximate functional equation, using Hecke relations, and applying the trace formula collapses the family average to a quadratic form with sigma(gcd(m,n))/sqrt(mn), with the smooth weight replaced by one under controlled errors.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hecke multiplication and Petersson orthogonality turn the weighted central moment into a gcd kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u17.txt",
+      "unit_bytes": 2137,
+      "unit_id": "openalex_w1964482233_v2_u17",
+      "unit_sha256": "92446855c4755e2dcb6cabe6db88a030111080974e974e34526f949fdc02cd5d",
+      "unit_type": "Hecke-relation quadratic reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument proves existence within the harmonic family and does not identify an explicit form.",
+      "line_end": 1042,
+      "line_start": 1022,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The two Euler products and asymptotic scale require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rankin factorization of the unweighted and central-value quadratic forms produces a positive prime cross term for f and its sign reversal for mu f, completing the family transfer of the resonance mechanism.",
+      "source_id": "openalex_w1964482233",
+      "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same f versus Möbius-times-f choice selects large versus small cusp-form central values",
+      "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u18.txt",
+      "unit_bytes": 953,
+      "unit_id": "openalex_w1964482233_v2_u18",
+      "unit_sha256": "c3ee1d831aa677dffd562865e21f1a19ff914a284868d0eb588317a268092020",
+      "unit_type": "prime-sign selection in an automorphic family",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w1964482233",
+        "title": "Extreme values of zeta and L-functions",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cost comparison concerns the number of main-sum terms and does not by itself compare every implementation cost or error constant.",
+      "line_end": 100,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; formulas (1.1)-(1.4), cutoff definitions, and OCR-confused symbols require the original scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction compares O(t) Euler-Maclaurin/Gram evaluation with the square-root-length Riemann-Siegel sum, reviews smooth error-function cutoffs, and isolates the paper's finding that a simpler real smoothing forces the effective cutoff back to O(t).",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smoothing removes cutoff discontinuities but its parameter dependence decides whether the cost is Gram- or Riemann-Siegel-type",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u01.txt",
+      "unit_bytes": 4782,
+      "unit_id": "openalex_w2670735437_v2_u01",
+      "unit_sha256": "0690dd8b1c96b54d8ee17477a1b30186375851dcb3c62ed67552d31a06ae3653",
+      "unit_type": "computational method comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Computational usefulness also requires the shifted zeta values in the coefficients to lie in a convergent-series region.",
+      "line_end": 206,
+      "line_start": 103,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Essential original-page dependency: equations (2.1)-(2.8) are substantially OCR-damaged, though the prose derivation and restrictions are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Absolute convergence licenses exchanging the sum and contour integral; moving the path collects the zeta and pole terms, then the functional equation and gamma-pole residues produce finite corrections plus a remainder, with a free smoothing parameter containing a known formula as a special case.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        3,
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An incomplete-gamma Mellin transform generates a family of smoothed zeta expansions",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u02.txt",
+      "unit_bytes": 5614,
+      "unit_id": "openalex_w2670735437_v2_u02",
+      "unit_sha256": "8d7b89942995f1b3156231c182e5246d9b4f19aa75fac661e408f91646c63b02",
+      "unit_type": "Mellin-contour construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The monotonicity inputs are deferred to Appendix B, and the table shows the coefficient ceasing to be order one rather than proving sharpness of the final remainder bound.",
+      "line_end": 314,
+      "line_start": 209,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Essential scan verification for equations (3.1)-(3.8), gamma ratios, and Table 1.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After reflecting zeta and recentering the contour, the proof bounds the integral with an even increasing gamma ratio, rescales it by a decreasing function, evaluates the tail as an incomplete gamma function, and obtains a numerical remainder bound whose coefficient growth diagnoses the useful truncation range.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        5,
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gamma-ratio monotonicity converts the contour remainder into a computable incomplete-gamma bound",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u03.txt",
+      "unit_bytes": 5255,
+      "unit_id": "openalex_w2670735437_v2_u03",
+      "unit_sha256": "7ec3e9e16a061f29ab55289af72d02ec65913d2a9730c4861bcaed743b0b12c8",
+      "unit_type": "remainder-bound mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The positive-integer restriction on p is adopted for simplicity and is not mathematically necessary.",
+      "line_end": 369,
+      "line_start": 318,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; expansion (4.2), term sequence, optimal M formula, and parameter inequalities need the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Setting the incomplete-gamma parameter to one makes the main sum exponentially smoothed, but asymptotic decrease of the correction terms requires K greater than t/(2pi), hence a Gram-type cutoff; the free power p accelerates decay while lowering optimal truncation and attainable accuracy.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Real exponential smoothing forces a length-t cutoff and a finite optimal correction series",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u04.txt",
+      "unit_bytes": 3440,
+      "unit_id": "openalex_w2670735437_v2_u04",
+      "unit_sha256": "c9e66edb2af4e3abca564c6ab62b3d5f6f7f247272104f40016f53fc8b326fd4",
+      "unit_type": "asymptotic tradeoff analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The tables test selected t and parameters and do not prove global error behavior.",
+      "line_end": 470,
+      "line_start": 370,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Essential: formulas (4.5)-(4.6) and Tables 2-4 must be read from the original pages because the OCR is poor.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A concrete critical-line specialization supplies a computable Z(t) expansion and analytic remainder bound; tables compare optimal and deliberately suboptimal truncations, showing high accuracy for modest M but rapid deterioration of the bound well before the formal least term.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Actual critical-line errors validate suboptimal truncation but expose a nonuniform remainder bound",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u05.txt",
+      "unit_bytes": 5672,
+      "unit_id": "openalex_w2670735437_v2_u05",
+      "unit_sha256": "29123cdea34ad95e574822c2429f01be3ea31bb99d21f81319c8f19b7df963f1",
+      "unit_type": "numerical validation and bound audit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conclusions are empirical for the displayed t, K, p, and capped truncation choices, although they match the preceding asymptotic analysis.",
+      "line_end": 495,
+      "line_start": 471,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Table 5 is essential and requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The final numerical comparison separates two effects: larger K extends the effective main sum and improves attainable accuracy, whereas larger p sharpens exponential decay but shortens the asymptotic correction series enough to reduce total accuracy.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Increasing cutoff scale buys accuracy, while increasing smoothing power can destroy it",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u06.txt",
+      "unit_bytes": 1361,
+      "unit_id": "openalex_w2670735437_v2_u06",
+      "unit_sha256": "c925883446a4279f72e5108cbb914844a26218df098a837bf32e2a7cdd2c7a2e",
+      "unit_type": "parameter tradeoff experiment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The possibility of enormous optimal-truncation accuracy is conditional on an unproved asymptotic character of the expansion.",
+      "line_end": 543,
+      "line_start": 497,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The complementary-error-function expansion and remainder bound are badly OCR-damaged; the comparison prose is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conclusion compares exponential and complementary-error-function choices, explains why the Berry-Keating logarithmic cutoff remains square-root length, identifies a transition from order-one to s-dependent parameters as open, and attributes remainder-bound failure to crude loss of oscillation.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Changing the smoothing shape preserves the Gram cost unless the parameter scales with s",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u07.txt",
+      "unit_bytes": 2901,
+      "unit_id": "openalex_w2670735437_v2_u07",
+      "unit_sha256": "5dd17fb19191ad3b82a686c1a2e06aaf7af20cebaa3e3aafa416ec7188e1c96e",
+      "unit_type": "alternative smoothing and open obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This appendix checks consistency of representations rather than introducing a new computational advantage.",
+      "line_end": 589,
+      "line_start": 548,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Essential scan dependency: equations (A.1)-(A.4) are severely corrupted in the text layer.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializing the free parameters cancels gamma poles against trivial zeta zeros, reflection transforms the residual contour into the companion smoothed sum, and analytic continuation extends the identity before the critical-line parameter choice recovers formula (1.4).",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pole cancellation and analytic continuation recover the earlier two-sided incomplete-gamma formula",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u08.txt",
+      "unit_bytes": 2380,
+      "unit_id": "openalex_w2670735437_v2_u08",
+      "unit_sha256": "614cbd5162b7552b321f308893aad47d7dd645f12a621383a34496e2d3bf6a7a",
+      "unit_type": "specialization consistency check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The wider threshold near 0.63605 is numerical evidence, while the written proof establishes the stronger sufficient condition a greater than one for G.",
+      "line_end": 686,
+      "line_start": 591,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; equations (B.1)-(B.6), parameter symbols, and the kernel inequality require original-page verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A gamma-product logarithmic derivative proves F is even and increasing above a parameter threshold; scaling removes its power growth, and an integral-kernel sign argument proves G decreases in the stated analytic range, with numerical computation suggesting a wider range.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Product and integral representations establish the gamma-ratio monotonicities used by the remainder estimate",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u09.txt",
+      "unit_bytes": 4431,
+      "unit_id": "openalex_w2670735437_v2_u09",
+      "unit_sha256": "b113d41f66d0d7cc26da63045e48c19d3386d166c58adb0d5c121e583a48736f",
+      "unit_type": "auxiliary monotonicity proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The probability language is heuristic; the asymptotic theorem is introduced later in the survey.",
+      "line_end": 53,
+      "line_start": 12,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; the definitions of pi(x) and Li(x) should be checked against the PDF for exact typesetting.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gauss's empirical thinning heuristic replaces a count by a sum of local densities and then by Li(x), making the recurring sum-to-integral move explicit before stating the PNT scale.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime tables suggest a local probability whose cumulative form is an integral",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u01.txt",
+      "unit_bytes": 4176,
+      "unit_id": "moree2018_computational_history_v2_u01",
+      "unit_sha256": "3c1ab2757665c1fa9a9aa50f94066659c5b14a02a530c8980d6f24800afb5c72",
+      "unit_type": "heuristic-to-asymptotic transition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u01.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The explicit inequality is reported from the literature, not proved in this survey.",
+      "line_end": 91,
+      "line_start": 59,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants and O-terms are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The span distinguishes the PNT's first-order asymptotic from explicit two-sided estimates and the much sharper RH-conditional error, while noting that unavoidable prime irregularity rules out an even smaller proposed scale.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH matters because it would turn Li(x) into a uniformly sharp prime-counting surrogate",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u02.txt",
+      "unit_bytes": 2662,
+      "unit_id": "moree2018_computational_history_v2_u02",
+      "unit_sha256": "78cdd916f05fe2ff39e00c3e5c765e94db7cd81e4074ee00d9d6d5d2bf91d525",
+      "unit_type": "conditional error-scale interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u02.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is historical synthesis rather than a proof of the PNT.",
+      "line_end": 137,
+      "line_start": 111,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source contrasts Euler's real-variable series with Riemann's analytic-function viewpoint and explains how later complex-function foundations converted the conceptual leap into the PNT proof tradition.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Complexifying the zeta variable transformed the prime-number problem",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u03.txt",
+      "unit_bytes": 1998,
+      "unit_id": "moree2018_computational_history_v2_u03",
+      "unit_sha256": "8854288016524b582abd8df24fea20e42ff75bfebe3995b20fe93ca9cd3fc4df",
+      "unit_type": "historical representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u03.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The identity is displayed without a full derivation.",
+      "line_end": 175,
+      "line_start": 138,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The extracted symmetry formula needs PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Selberg's symmetry identity supports an elementary proof and extension to arithmetic progressions, but the survey records that hopes for broader new insight from avoiding complex analysis were not realized.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An elementary PNT proof reproduces the theorem without reproducing Riemann's structural leverage",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u04.txt",
+      "unit_bytes": 2432,
+      "unit_id": "moree2018_computational_history_v2_u04",
+      "unit_sha256": "b0c504c270bf2592d34ecf005ece492aae49d41152427ff3a234f37a40da6370",
+      "unit_type": "method comparison and limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u04.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The continuation formulas are illustrative and the full-plane continuation is stated rather than proved.",
+      "line_end": 205,
+      "line_start": 176,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence; gamma and exponent placement should be verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two continuation devices lead to the meromorphic zeta function and its functional equation; multiplying by the polar factors produces the entire xi-function whose zeros are precisely the nontrivial zeta zeros.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Continuation and completion expose the zeta function's reflection symmetry",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u05.txt",
+      "unit_bytes": 2042,
+      "unit_id": "moree2018_computational_history_v2_u05",
+      "unit_sha256": "7f7d17939c7f13f89aeda97fc783941d0af8e019e0da72e14b5bdab0cca82219",
+      "unit_type": "analytic completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u05.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The survey reports Riemann's hypothesis and historical wording; it does not establish RH.",
+      "line_end": 243,
+      "line_start": 214,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Hadamard product and theta transformation are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The completed-function product turns zeros into factors, while functional-equation and conjugation symmetries reduce computation to one region and identify the critical line and finite-height RH certification target.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hadamard factorization and the functional equation organize zeros into fourfold symmetry",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u06.txt",
+      "unit_bytes": 2148,
+      "unit_id": "moree2018_computational_history_v2_u06",
+      "unit_sha256": "df4775f7ce7cda3ec6c64bfb07cfa7568aba81c4900e243a86addc20918aed07",
+      "unit_type": "zero-geometry construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u06.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The displayed explicit formula is presented informally and its summation convention is not developed here.",
+      "line_end": 314,
+      "line_start": 251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive; the table is useful but not essential.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Unique factorization becomes an Euler product, its singularity implies infinitely many primes, and Riemann's explicit formula expresses pi(x) as a smooth R(x) term corrected by every nontrivial zero; the table illustrates why R(x) improves Li(x).",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler products encode primes while explicit formulas reconstruct their count from zeros",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u07.txt",
+      "unit_bytes": 4262,
+      "unit_id": "moree2018_computational_history_v2_u07",
+      "unit_sha256": "609739a62cbc5630ea74b4a1f5b6abe9b02f93faab4ea1f5e7d8f0583fef351a",
+      "unit_type": "prime-zero dual representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u07.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source warns implicitly that summing zero contributions requires truncation because the naive absolute sum diverges.",
+      "line_end": 380,
+      "line_start": 324,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact sums, truncations, and logarithmic powers require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The von Mangoldt weight arises from logarithmically differentiating the Euler product, simplifies the explicit formula for psi(x), and makes the rightmost zero's real part control the prime-counting error, yielding an RH-equivalent error exponent.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic weights make the prime-zero correspondence analytically natural",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u08.txt",
+      "unit_bytes": 3848,
+      "unit_id": "moree2018_computational_history_v2_u08",
+      "unit_sha256": "c3f09a1414ae1da9fbb0b605edb42b04dbb5b69410a6455ee15880164375ce1c",
+      "unit_type": "weighted explicit-formula bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u08.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The reported region and constants are historical best-known values as of the survey.",
+      "line_end": 401,
+      "line_start": 381,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The zero-free-region denominator is degraded and must be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Von Koch's equivalence makes the critical-line location an error exponent, while explicit zero-free regions show how partial exclusion of zeros yields weaker PNT errors and expose the stubborn gap to any fixed x-to-a-power improvement.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Moving a zero-free boundary left improves prime errors, but known regions remain far from a power saving",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u09.txt",
+      "unit_bytes": 1511,
+      "unit_id": "moree2018_computational_history_v2_u09",
+      "unit_sha256": "78fce2e5682eca3733baa584a0a3aaee3e74c840ce9f447b28631a1e08fd59f0",
+      "unit_type": "zero-free-region limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u09.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The passage is explicitly heuristic until connected to the cited exact identities.",
+      "line_end": 420,
+      "line_start": 402,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Pi(x) and Möbius-inversion formulas require layout verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The average-one heuristic for the von Mangoldt function unifies equivalent PNT forms; counting prime powers and applying Möbius inversion then produces R(x) as a principled refinement of Li(x).",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replacing prime probability by the average of Lambda leads naturally to psi, Pi, and R",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u10.txt",
+      "unit_bytes": 1217,
+      "unit_id": "moree2018_computational_history_v2_u10",
+      "unit_sha256": "742f7980557c824f91c9874f84571f97f13cca20e1119838091f0a5e6086a768",
+      "unit_type": "heuristic refinement and inversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u10.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Counts at finite height are evidence and certification only for that range, never a proof of global RH.",
+      "line_end": 483,
+      "line_start": 443,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The rediscovery of Riemann's approximate formulas leads to a three-stage certification architecture: compute zeta accurately, locate critical-line zeros, and independently count all strip zeros up to the height so agreement has evidential force.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Numerical RH verification separates evaluation, localization, and completeness",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u11.txt",
+      "unit_bytes": 3041,
+      "unit_id": "moree2018_computational_history_v2_u11",
+      "unit_sha256": "05563ad80064cba25d8995cef66c6fa266b3685c1524abd1c1ce509f67b2784f",
+      "unit_type": "computational task decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u11.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact expansion is readable but extracted Bernoulli notation is crowded.",
+      "line_end": 549,
+      "line_start": 485,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; verify the series, remainder inequality, and indices against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A finite Dirichlet sum plus Bernoulli corrections and a controlled remainder gives prescribed-precision evaluation; the number of required terms grows linearly with the imaginary part, explaining why the simple method loses at height.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-Maclaurin makes zeta computable with a certified but linearly growing cost",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u12.txt",
+      "unit_bytes": 4416,
+      "unit_id": "moree2018_computational_history_v2_u12",
+      "unit_sha256": "bb3cb4456b21758b699a86a93ddd343df71ab3a5a871e2b92501577081580b11",
+      "unit_type": "sum-integral evaluation algorithm",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u12.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A sign change proves an odd number of roots in the interval, while absence of a sign change alone does not prove no root.",
+      "line_end": 586,
+      "line_start": 551,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Definitions of Z(t), theta(t), and its asymptotic are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Phase rotation makes critical-line zeta real, asymptotic phase monotonicity defines Gram points, and endpoint signs bracket zeros; empty intervals paired with neighboring double intervals show how the rule can fail locally without defeating computation.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Hardy Z-function turns critical zeros into real sign changes sampled at Gram points",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u13.txt",
+      "unit_bytes": 2760,
+      "unit_id": "moree2018_computational_history_v2_u13",
+      "unit_sha256": "8b81839274972d15e2ccb5b022062d0bcaa7b10b7bd291ea7ee2430451ddc96f",
+      "unit_type": "sign-change zero localization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u13.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Random-matrix evidence for simplicity is reported as conjectural and numerical, not as certification.",
+      "line_end": 645,
+      "line_start": 598,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The log-xi identity, contour definition, and constants require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "N(T) and the argument term S(T) provide a total-zero count to compare with located critical zeros; Backlund's nearest-integer shortcut is obstructed by contour nonvanishing and unbounded S(T), and multiple zeros expose a separate failure mode.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Argument variation counts all strip zeros but pointwise control of S(T) is fragile",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u14.txt",
+      "unit_bytes": 3488,
+      "unit_id": "moree2018_computational_history_v2_u14",
+      "unit_sha256": "68eee89fd2e18f2b6e5800449aeea6605c480257034f1ffd34a047f34028d390",
+      "unit_type": "zero-count completeness criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u14.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Values are reported as of 2018 and should not be treated as current without external verification.",
+      "line_end": 660,
+      "line_start": 653,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; numerical constants should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The historical chain from infinitely many critical zeros to a positive fraction and then successively improved constants provides a calibrated intermediate signal distinct from proving every zero critical.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positive proportions quantify progress without collapsing into full RH",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u15.txt",
+      "unit_bytes": 691,
+      "unit_id": "moree2018_computational_history_v2_u15",
+      "unit_sha256": "b9686118541968d58012bcbd54f97e2ba479b01bb009d09c827972f716fce745",
+      "unit_type": "partial-RH progress metric",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u15.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source sketches the derivation and reports a particular historical bound rather than proving all coefficients.",
+      "line_end": 724,
+      "line_start": 662,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; contour orientation, cutoff, coefficients, and remainder exponents need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two evaluations of a contour integral produce the short cosine sum for Z(t); saddle-point analysis expands the remainder, and an explicit bound is what upgrades fast approximation into certified computation.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Siegel replaces a length-t sum by a square-root-length oscillatory sum plus a controlled remainder",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u16.txt",
+      "unit_bytes": 3538,
+      "unit_id": "moree2018_computational_history_v2_u16",
+      "unit_sha256": "8ea65a08739c7b69cd51a8937485a48420612e93c7c1b8c8a4ada82a5cc37c05",
+      "unit_type": "short-sum asymptotic evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u16.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The method certifies completeness only under its numerical and analytic error controls.",
+      "line_end": 789,
+      "line_start": 726,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integral inequality and constants require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing the unknown total count by the observed critical-zero count shifts S(t) downward by the number missed; an integral bound on S prevents that shift from persisting and yields a finite extra-height buffer for certification.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Turing averages the counting discrepancy so any missed zeros create an impossible persistent bias",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u17.txt",
+      "unit_bytes": 4598,
+      "unit_id": "moree2018_computational_history_v2_u17",
+      "unit_sha256": "7c2af5d755d2fc0dd7fee7970cce607f29f57b5d7c7eb4581374ce5245249baf",
+      "unit_type": "missing-zero certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u17.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem is summarized and its implementation details are not given.",
+      "line_end": 803,
+      "line_start": 791,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The two transformed sums and complexity parameters are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Odlyzko-Schoenhage maps an evenly sampled Dirichlet polynomial to rational-function values at roots of unity, so FFT-style batching changes the asymptotic cost of large zero-verification runs without improving a single evaluation.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Fourier transform makes many nearby zeta evaluations cheaper than isolated evaluations",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u18.txt",
+      "unit_bytes": 1063,
+      "unit_id": "moree2018_computational_history_v2_u18",
+      "unit_sha256": "863e14fe663a4e09716352d4085cd82e06db5e6d407d1edbe9ee76a08e97470a",
+      "unit_type": "batched fast evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u18.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A reported computation is not elevated to formal or independently replicated evidence.",
+      "line_end": 857,
+      "line_start": 814,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The record table is required for exact counts and dates.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The chronological table and prose connect methodological advances to orders-of-magnitude growth and explicitly flag that two enormous computations were neither independently repeated nor published in a mathematical journal.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-verification records scale through algorithms and distributed computation but still require reproducible evidence",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u19.txt",
+      "unit_bytes": 3150,
+      "unit_id": "moree2018_computational_history_v2_u19",
+      "unit_sha256": "a7513d5d4e3b1bf6a399db20b3f2ed74acecbef8e0fc7220a5fcc09cd5d8591b",
+      "unit_type": "computational provenance history",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u19.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The survey gives the result and data requirements, not the complete interval-arithmetic proof.",
+      "line_end": 888,
+      "line_start": 865,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact numerical thresholds and the displayed pi value should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The evolution from combinatorial prime counting to Platt's unconditional explicit-formula computation shows how sufficiently accurate, complete critical-zero data can certify an exact pi(x) value far beyond direct enumeration.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit formulas trade exhaustive prime enumeration for a finite certified zero input",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u20.txt",
+      "unit_bytes": 1941,
+      "unit_id": "moree2018_computational_history_v2_u20",
+      "unit_sha256": "611b5f5fe4d181f73e76aeb2deb78f0241f3e765dfcfe8486da9169a41961620",
+      "unit_type": "analytic exact computation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u20.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The transfer has explicit range conditions; it does not extend finite verification to all x.",
+      "line_end": 915,
+      "line_start": 890,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Constants, counts, and the height-to-x inequality require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The span traces explicit bounds for pi, theta, and the nth prime to finite-height zero verification and states a direct relation between an RH height and the x-range on which an RH-strength inequality follows.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial RH converts a verified zero range into explicit prime inequalities on a bounded x-range",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u21.txt",
+      "unit_bytes": 1823,
+      "unit_id": "moree2018_computational_history_v2_u21",
+      "unit_sha256": "6d7e68bcdd2452a55993682854fa44778f43ca92424c499f5f731d25e48d2ea5",
+      "unit_type": "finite-verification transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u21.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The density statement is conditional on additional plausible conjectures, as the source says.",
+      "line_end": 952,
+      "line_start": 916,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The explicit formula, huge bounds, and density value are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The explicit formula explains why pi(x)-Li(x) must oscillate despite vast initial evidence, while accurately known zeros plus Lehman's bounds locate a region of reversed inequality and logarithmic density quantifies the remaining bias.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A tiny zero-driven oscillation can overturn an overwhelmingly persistent prime-counting bias",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u22.txt",
+      "unit_bytes": 2748,
+      "unit_id": "moree2018_computational_history_v2_u22",
+      "unit_sha256": "89d2d7233a6df1d240359defb6132da34f21ea10699f3c544897b386d39abd73",
+      "unit_type": "counterexample localization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u22.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivation of the truncated formula assumes RH and simple zeros, while the cited disproof conclusion is unconditional through its full rigorous argument.",
+      "line_end": 1032,
+      "line_start": 960,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; integral identities, limsup bounds, and phase terms need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The reciprocal-zeta representation gives RH and PNT equivalences for M(x), a random-walk heuristic already warns against the square-root bound, and the disproof combines a truncated zero formula, certified roots and simplicity, simultaneous phase alignment, and LLL.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Mertens conjecture failed when an explicit zero sum was phase-aligned by Diophantine optimization",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u23.txt",
+      "unit_bytes": 5154,
+      "unit_id": "moree2018_computational_history_v2_u23",
+      "unit_sha256": "4dacb038f5af1b2e27f6c2e87e16cde574b7ed0d90c4e227b374a13fb0e78233",
+      "unit_type": "heuristic falsification pipeline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u23.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Binary Goldbach remains distinct and is reported only as numerically verified to a finite bound.",
+      "line_end": 1066,
+      "line_start": 1034,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Huge numerical cutoffs and the q-dependent height require verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The progression from GRH-conditional asymptotics through explicit bounds to Helfgott's unconditional proof shows computation serving as a bounded verification component inside a proof whose large range is handled analytically.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ternary Goldbach closes by combining arc estimates with certified Dirichlet-L zero ranges",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u24.txt",
+      "unit_bytes": 2360,
+      "unit_id": "moree2018_computational_history_v2_u24",
+      "unit_sha256": "02fb97f29e71dfdf5d5978164a123af05ae4c07337a7d99606c93d072e81d337",
+      "unit_type": "theory-computation proof pipeline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u24.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a methodological sketch with convergence hypotheses, not a general theorem as stated.",
+      "line_end": 1098,
+      "line_start": 1071,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Perron integral and convergence line are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source abstracts a reusable Riemann reflex: encode an arithmetic function in a Dirichlet series, recover its summatory function by Perron's integral, shift the contour using continuation, and if necessary replace the function by a better-behaved proxy before transferring conclusions back.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dirichlet series regularize erratic arithmetic data and contour shifting returns information to sums",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u25.txt",
+      "unit_bytes": 2087,
+      "unit_id": "moree2018_computational_history_v2_u25",
+      "unit_sha256": "42788e03a64660427acd4008ca8ceab4547ff2e62bf34750c05adf363a15cc10",
+      "unit_type": "analytic-number-theory template",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u25.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The list is an informal characterization and should not be mistaken for a complete definition of every zeta-like function.",
+      "line_end": 1150,
+      "line_start": 1099,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The coefficient-growth and product formulas should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Dirichlet and Dedekind examples show how prime-distribution questions migrate to L-functions; the five listed Selberg-style properties separate the reusable architecture from the Riemann zeta function's particular coefficients.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta template generalizes through a package of series, growth, continuation, reflection, and Euler factors",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u26.txt",
+      "unit_bytes": 3866,
+      "unit_id": "moree2018_computational_history_v2_u26",
+      "unit_sha256": "c8f5145aef3a4cf545af507cc24f4e8659cd3a4d06365b700e83cc81dde9d9da",
+      "unit_type": "structural generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u26.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The full pair-correlation formula is conjectural and the discussion assumes RH.",
+      "line_end": 1181,
+      "line_start": 1152,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The unfolding and limiting integral require exact formula verification; the later figure supports the numerical comparison.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The N(T) asymptotic motivates unfolding the ordinates, Montgomery's pair statistic predicts suppressed near-collisions, and both a smooth theorem and Odlyzko's data connect the statistic to zero simplicity.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rescaling zeros to unit mean spacing reveals repulsion through pair correlation",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u27.txt",
+      "unit_bytes": 1986,
+      "unit_id": "moree2018_computational_history_v2_u27",
+      "unit_sha256": "d53673c0905b5dd4e5e53a86c0ff28721948b011f0e828e377d5c0d62fe9c19d",
+      "unit_type": "statistical representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u27.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Similarity of statistics is not a proof that a corresponding operator or universal dictionary exists.",
+      "line_end": 1193,
+      "line_start": 1182,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Dyson's recognition transfers Montgomery's zero-spacing law to a random-matrix ensemble, providing a model that generates otherwise inaccessible conjectures and makes high-height numerical checks scientifically important.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Random Hermitian spectra supply a statistical model for zeta zeros",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u28.txt",
+      "unit_bytes": 978,
+      "unit_id": "moree2018_computational_history_v2_u28",
+      "unit_sha256": "43e953647a3fa84653a6793b2874c411b7613c500459fcc5bf3a6181e761b6cb",
+      "unit_type": "cross-domain conjecture generator",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u28.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The general moment formula and the random-matrix dictionary remain conjectural; the figure is numerical evidence only.",
+      "line_end": 1277,
+      "line_start": 1194,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Essential formula/figure dependency for the moment normalization, f(k), and Odlyzko spacing plot.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Known first and second moments establish anchors, matrix size near log(T/2pi) supplies the translation, and Keating-Snaith values extend the coefficient pattern to all moments while analytic special cases and high-zero computations test the dictionary.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Random matrices predict the full hierarchy of zeta moments and are calibrated by known cases",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u29.txt",
+      "unit_bytes": 3413,
+      "unit_id": "moree2018_computational_history_v2_u29",
+      "unit_sha256": "d825edb88c43d477493a0bd17e4312b7f67e690b24d5dea90ec59bbc7e14a5fa",
+      "unit_type": "heuristic dictionary and calibration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u29.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The survey states the analogy broadly and does not specify the individual function-field theorems.",
+      "line_end": 1285,
+      "line_start": 1278,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A structurally related setting where RH is known lets Katz-Sarnak prove random-matrix predictions, offering exact analogue evidence without transferring those proofs automatically to number fields.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Function fields turn parts of the random-matrix dictionary into theorems",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u30.txt",
+      "unit_bytes": 564,
+      "unit_id": "moree2018_computational_history_v2_u30",
+      "unit_sha256": "a52a934234706c18b48f6bfa6419915a7a9e76788bdd12492fd4672bee4fca3f",
+      "unit_type": "analogue-based validation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u30.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Mertens is an example of the danger, not evidence that every numerically motivated conjecture fails.",
+      "line_end": 1294,
+      "line_start": 1287,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The warning explains a concrete mechanism behind false computational conjectures: asymptotically unbounded functions such as iterated logarithms can remain visually flat, so numerics need theoretical or heuristic support.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Iterated logarithms can make divergent behavior look bounded on every feasible computation",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u31.txt",
+      "unit_bytes": 670,
+      "unit_id": "moree2018_computational_history_v2_u31",
+      "unit_sha256": "2250e28541705230b9a10543d7e778303fcab7b255d6a39873f89036142454c6",
+      "unit_type": "numerical epistemic obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u31.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the modern positive-lower-density statement and proof skeleton, not a full proof.",
+      "line_end": 150,
+      "line_start": 56,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed formulas are partly degraded; exact normalizations require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Mean approximation by truncated Euler products combines with rational independence of prime logarithms and Kronecker-Weyl phase control; Mergelyan and rearrangement tools complete target approximation.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite Euler products and independent prime phases create dense function-space orbits",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u01.txt",
+      "unit_bytes": 4849,
+      "unit_id": "matsumoto2014_universality_survey_v2_u01",
+      "unit_sha256": "fe70bc8e58bbaf9caf35d5a37ebb7751e12b6caf54034ffb0ed2a0db19f9454c",
+      "unit_type": "proof architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u01.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The many underlying limit theorems are cited rather than developed.",
+      "line_end": 203,
+      "line_start": 156,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The progression from scalar values through derivative tuples to function-space density clarifies the conceptual lift, while Bagchi's functional limit theorem supplies a probabilistic proof route.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Value density becomes universality in a holomorphic function space",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u02.txt",
+      "unit_bytes": 2628,
+      "unit_id": "matsumoto2014_universality_survey_v2_u02",
+      "unit_sha256": "3a0eef1089afcd8d63963332d5f49515e13a30b89fd3a3e9d6898ccb9ad5397f",
+      "unit_type": "finite-to-infinite-dimensional interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u02.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Several applications instantiate one reusable workaround.",
+      "line_end": 452,
+      "line_start": 284,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient formulas and strip endpoints require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For automorphic L-functions the positive-density method combines the classical prime harmonic sum with a proved coefficient second moment; higher moments can also remove Ramanujan-type assumptions.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Second moments replace an unavailable prime-coefficient first moment",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u03.txt",
+      "unit_bytes": 8764,
+      "unit_id": "matsumoto2014_universality_survey_v2_u03",
+      "unit_sha256": "e2514f6410f9c66eeebab461f2f3c80281916f844f1515e9221c87c8955df815",
+      "unit_type": "coefficient-density workaround",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u03.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The optimal exponent is conjectural.",
+      "line_end": 478,
+      "line_start": 453,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Primitive-geodesic counting occupies the prime-counting role for Selberg zeta, and its error exponent directly limits the universality strip.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A prime geodesic theorem substitutes for the prime number theorem",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u04.txt",
+      "unit_bytes": 1419,
+      "unit_id": "matsumoto2014_universality_survey_v2_u04",
+      "unit_sha256": "7d1e36843218a5a7d1ce25ab6aedf491ff1fb86edf5cbbe3097e05b0d70ac120",
+      "unit_type": "arithmetic-input transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u04.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Disjoint-strip results are weaker than same-strip joint universality.",
+      "line_end": 629,
+      "line_start": 480,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact asymptotics require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Character orthogonality, full-rank prime-class matrices, arithmetic-progression coefficient means, and Selberg orthogonality are compared, with counterexamples to an overweak criterion.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        11,
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Joint universality turns analytic independence into orthogonality or matrix rank",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u05.txt",
+      "unit_bytes": 8299,
+      "unit_id": "matsumoto2014_universality_survey_v2_u05",
+      "unit_sha256": "9b406023d32c44f6b5125d105aa61984916531bad20bdf89a84f3c16470444c1",
+      "unit_type": "joint-independence criteria",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u05.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The algebraic irrational Hurwitz case is explicitly open.",
+      "line_end": 705,
+      "line_start": 631,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The rational decomposition is formula-dependent; the Rouche argument is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Hurwitz frequency independence or reduction to joint Dirichlet L-functions removes target nonvanishing; approximating a linear target and applying Rouche transfers one target zero to linearly many source zeros.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Removing Euler-product constraints permits zero-bearing targets and creates many zeros",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u06.txt",
+      "unit_bytes": 3746,
+      "unit_id": "matsumoto2014_universality_survey_v2_u06",
+      "unit_sha256": "a4ac31a6e0064bce9f0759bf0552ca6a98ef0f57728c0c4949c7a533e7c02d2a",
+      "unit_type": "strong universality and zeros",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u06.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The six hypotheses function as a package.",
+      "line_end": 797,
+      "line_start": 760,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A general theorem jointly requires independent exponents, continuation, growth, mean square, counting, and coefficient energy; a powers-of-two series refutes the continuation-only conjecture.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Continuation alone cannot characterize universal Dirichlet series",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u07.txt",
+      "unit_bytes": 2106,
+      "unit_id": "matsumoto2014_universality_survey_v2_u07",
+      "unit_sha256": "56cb757799f3e2a9c002fea3ecdafe6579b3ab3cb6a8c06b07e533ba9d7f389c",
+      "unit_type": "general criterion and counterexample",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u07.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source corrects an earlier transcendence hypothesis to algebraic independence.",
+      "line_end": 948,
+      "line_start": 803,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Parameter formulas are OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The progression toward direct independence of all logarithmic frequencies gives an intrinsic sufficient condition, while inversion identities and non-dense constructions show that individually universal functions need not be jointly universal.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        18,
+        19,
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic independence removes matrix conditions but functional relations still obstruct joint universality",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u08.txt",
+      "unit_bytes": 8395,
+      "unit_id": "matsumoto2014_universality_survey_v2_u08",
+      "unit_sha256": "06fa748dd82cc3997846328bc43c5e4f0570f16ecd3dc5193d9289710d7e6259",
+      "unit_type": "joint strong universality and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u08.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Disjointness is essential.",
+      "line_end": 957,
+      "line_start": 950,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separate targets are pasted on disjoint translated compacta, converting single-function universality into joint universality without new coefficient independence.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "One universal function yields a joint family on disjoint translated domains",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u09.txt",
+      "unit_bytes": 597,
+      "unit_id": "matsumoto2014_universality_survey_v2_u09",
+      "unit_sha256": "5f8a57c4b7fa769be16ec407c99224afebf9e5dbb399a966a5e56a960fc6b2cc",
+      "unit_type": "shift synthesis principle",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u09.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The multiple theorem is not full multivariable universality.",
+      "line_end": 1073,
+      "line_start": 960,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Multiple-sum indices require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Multiple Hurwitz universality in the first variable depends on a lower-depth nonzero value; mixed universality instead combines prime and shifted-integer logarithms in one independence statement.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Recursive nonvanishing gates multiple zeta universality while mixed families need combined frequency independence",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u10.txt",
+      "unit_bytes": 5797,
+      "unit_id": "matsumoto2014_universality_survey_v2_u10",
+      "unit_sha256": "9113b80589fef46a911d09f5c3131844b13f1fba73232d91c87de322dae6175e",
+      "unit_type": "multiple and mixed transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u10.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Untreated generalized ratios are not evidence against RH.",
+      "line_end": 1164,
+      "line_start": 1075,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exceptional rational cases should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Zero density rules out strong universality for zeta, but zero-freeness lets ordinary universality target zeta itself; Bagchi's converse makes this recurrence equivalent to RH, while generalized ratios expose arithmetic exceptions and a documented gap.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        23,
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Self-approximation of zeta is equivalent to RH",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u11.txt",
+      "unit_bytes": 4587,
+      "unit_id": "matsumoto2014_universality_survey_v2_u11",
+      "unit_sha256": "15e418365fb3bb1cf82766eb7784cd241293e2f8c6bb078a92d6b9878a06cd25",
+      "unit_type": "RH-equivalent recurrence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u11.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Bounded variation and process hypotheses are part of admissibility.",
+      "line_end": 1223,
+      "line_start": 1172,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "If a weight preserves the Birkhoff-Khinchin expectation asymptotically, Bagchi's proof yields weighted universality.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A weighted ergodic average can replace uniform time density",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u12.txt",
+      "unit_bytes": 2272,
+      "unit_id": "matsumoto2014_universality_survey_v2_u12",
+      "unit_sha256": "23b4de08397d95e8099fda1efd7a9e4940190c486f328382be7c933918c572d8",
+      "unit_type": "weighted ergodic transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u12.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Different families impose different sufficient conditions on the step.",
+      "line_end": 1336,
+      "line_start": 1225,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Modified Euler factors are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The arithmetic nature of the step changes logarithmic independence and can require a modified L-function; the source explicitly corrects a published statement that ignored this.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        26,
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Discrete sampling adds a frequency that can force deletion of resonant Euler factors",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u13.txt",
+      "unit_bytes": 5811,
+      "unit_id": "matsumoto2014_universality_survey_v2_u13",
+      "unit_sha256": "bc2ea42e0fc2ba18deea6d2f60b84df21c8adbb5cba5dcebd639da1f2013da7e",
+      "unit_type": "discrete arithmetic resonance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u13.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The admissible modulus set repairs overbroad earlier claims.",
+      "line_end": 1425,
+      "line_start": 1342,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Density and class-number formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Character/discriminant variation creates dense L-value families, with real-axis symmetry constraining targets and class-number formulas transferring density to algebraic invariants.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Varying characters replaces vertical translation as the approximation parameter",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u14.txt",
+      "unit_bytes": 4335,
+      "unit_id": "matsumoto2014_universality_survey_v2_u14",
+      "unit_sha256": "8731610b2daac93e1c84bfd158200f41f390a324cd35945736148d2d6eb9d2df",
+      "unit_type": "aspect change and arithmetic application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u14.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is cited rather than reproduced.",
+      "line_end": 1467,
+      "line_start": 1427,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Density of derivative tuples forces all coefficient functions in a universal identity to vanish; polynomial specialization gives differential algebraic independence.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative-value density forbids nontrivial continuous differential relations",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u15.txt",
+      "unit_bytes": 2154,
+      "unit_id": "matsumoto2014_universality_survey_v2_u15",
+      "unit_sha256": "183a7b2a99605b182ff3960cc150701dbdef1a77c05664fe06168ba5432394c9",
+      "unit_type": "functional-independence consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u15.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ordinary zeta universality does not target every holomorphic function.",
+      "line_end": 1558,
+      "line_start": 1471,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Fekete, Birkhoff, Riemann rearrangement, Pecherskii, Voronin, and Kronecker-Weyl fit one topological orbit framework while preserving the target subset distinction.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        31,
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rearrangement and translation orbits unify classical and zeta universality",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u16.txt",
+      "unit_bytes": 4909,
+      "unit_id": "matsumoto2014_universality_survey_v2_u16",
+      "unit_sha256": "4aed1615ec148dff816ae315ac66d6568c9fbe1e4c5b070aa35f688fa0ad637d",
+      "unit_type": "orbit-density abstraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u16.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Nonvanishing and convergence hypotheses remain essential.",
+      "line_end": 1647,
+      "line_start": 1559,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Prescribing auxiliary phases handles products and Dirichlet-series coefficients, yielding strong universality and linear zero counts for sums and polynomials of L-functions.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Simultaneous torus control makes algebraic combinations strongly universal",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u17.txt",
+      "unit_bytes": 5187,
+      "unit_id": "matsumoto2014_universality_survey_v2_u17",
+      "unit_sha256": "59962b8f4112c059620b5545df88df0efc8a43af7c3b531412d89a6c9db4c99b",
+      "unit_type": "hybrid control and algebraic closure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u17.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The explicit bounds are illustrative, not practical.",
+      "line_end": 1706,
+      "line_start": 1649,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical exponents require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The section compares convex separation plus quantitative Weyl, explicit small-domain estimates, functional-limit rates, and finite derivative approximation as routes from existence to bounds.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        35
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ineffective rearrangement is the bottleneck in quantitative universality",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u18.txt",
+      "unit_bytes": 3408,
+      "unit_id": "matsumoto2014_universality_survey_v2_u18",
+      "unit_sha256": "b4186ba98783f416ae5f4ad327d6cc43aeb5af1b24e8dca83ab41a504f35e159",
+      "unit_type": "effectivization comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u18.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The operator domain is the critical-strip holomorphic space.",
+      "line_end": 1773,
+      "line_start": 1708,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The defining inequalities are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Composite universality reduces to zero-free preimages for polynomial targets and continuity control, covering derivatives and nonlinear functions; a differential-equation method supplies an alternative.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        36,
+        37
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Preimages and local Holder control transfer universality through an operator",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u19.txt",
+      "unit_bytes": 3596,
+      "unit_id": "matsumoto2014_universality_survey_v2_u19",
+      "unit_sha256": "ff6333c4db664d72ee8bba707f2196e40f475ca3a0d191fbdfeb18c5cdb45c91",
+      "unit_type": "operator preservation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u19.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The concluding dynamical interpretation of RH is heuristic.",
+      "line_end": 1850,
+      "line_start": 1776,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Iteration notation is mildly degraded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Existence of a simultaneous approximating shift is equated with almost-sure ergodic recurrence and positive lower discrete density; random walks and Brownian motion extend the sampling interface.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Universality persists under ergodic iterates and certain random paths",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u20.txt",
+      "unit_bytes": 3870,
+      "unit_id": "matsumoto2014_universality_survey_v2_u20",
+      "unit_sha256": "303b038f11730a74594ba88ff69b96e1124fa330173f35502bbbc7c37f0fd824",
+      "unit_type": "ergodic and stochastic sampling",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u20.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    }
+  ]
+}

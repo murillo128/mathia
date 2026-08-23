@@ -1,0 +1,343 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_harper2014_zeta_course_part1_c31ad953_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "harper2014_zeta_course_part1",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the comparison of Psi with the unweighted prime count.",
+      "line_end": 270,
+      "line_start": 202,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The series manipulations rely on absolute and uniform convergence, which the text explicitly checks.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The von Mangoldt function absorbs all powers of a prime so that differentiation of the logarithm of each Euler factor gives one simple Dirichlet series, making zeros analytically relevant to prime counts.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-power weights are selected because their Dirichlet series is -zeta'/zeta",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u03.txt",
+      "unit_bytes": 3595,
+      "unit_id": "harper2014_zeta_course_part1_v2_u03",
+      "unit_sha256": "65349d7e7ec84f5c73edf421e5ed23f8081cfd83421c02117840b9e7e944f393",
+      "unit_type": "weight-selection-and-logarithmic-derivative",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u03.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 194,
+          "line_end": 201,
+          "text": "the zeta function and the primes. We will begin to do this in the next section, when we\nsee how distributional information about the primes could be recovered if we had good\ninformation about the zeta function.\n\n<!-- source-page: 4 -->\n\n4                                       ADAM J HARPER\n\n",
+          "sha256": "5ac0854387d82a1cabca9ce5dcb3cddbb2b112f0467fcdebb4a3e26307dedd85"
+        },
+        "after": {
+          "line_start": 271,
+          "line_end": 278,
+          "text": "the zeta function to the behaviour of prime numbers.\n\n   After the foregoing preparations, we would like to formulate a procedure for recov-\nering information about Ψ(x) from information about ∞             Λ(n)\n                                                            P\n                                                              n=1 ns . One can think of\nthe Dirichlet series ∞      Λ(n)\n                     P\n",
+          "sha256": "2ad5099fb7a99bd69b0356bd1497900255edab3b4e39907002dd8b0be1ec722a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9e34f30763dcfcde09aee26f1afd5a229a680397241442f65077ccb0f4e4c1d",
+        "dossier_sha256": "1f008d9af1896099c86b26c9c3e2a9020084bb666e844a4b9034699232fee72b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Primes and Perron's formula",
+            "line_end": 483,
+            "line_start": 202,
+            "mathematical_role": "Introduces von Mangoldt weights, identifies the logarithmic derivative, and develops truncated Mellin inversion for coefficient sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 270,
+          "line_start": 202,
+          "title": "Prime-power weights are selected because their Dirichlet series is -zeta'/zeta",
+          "unit_id": "harper2014_zeta_course_part1_v2_u03",
+          "unit_type": "weight-selection-and-logarithmic-derivative",
+          "why_material": "The von Mangoldt function absorbs all powers of a prime so that differentiation of the logarithm of each Euler factor gives one simple Dirichlet series, making zeros analytically relevant to prime counts."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the comparison of Psi with the unweighted prime count.",
+          "representation_dependency": "The series manipulations rely on absolute and uniform convergence, which the text explicitly checks.",
+          "unit_id": "harper2014_zeta_course_part1_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 196,
+            "line_start": 124,
+            "title": "Absolute convergence and unique factorization turn the integer series into a prime product",
+            "unit_id": "harper2014_zeta_course_part1_v2_u02",
+            "unit_type": "euler-product-construction",
+            "why_material": "Finite products of geometric series enumerate exactly the integers with bounded prime factors; a convergent tail estimate then passes to the infinite Euler product and separates arithmetic from analytic representations."
+          },
+          {
+            "line_end": 418,
+            "line_start": 273,
+            "title": "A truncated Perron kernel approximately inverts a Dirichlet series with frequency-controlled error",
+            "unit_id": "harper2014_zeta_course_part1_v2_u04",
+            "unit_type": "truncated-transform-inversion",
+            "why_material": "Residue evaluation of y^s/s constructs an approximate step function; summing it against arbitrary coefficients yields an inversion formula whose error shrinks as the vertical frequency window widens."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Euler product supplies prime structure, the fractional-part or completed representations supply continuation, and logarithmic derivatives plus Perron inversion transmit zeros back to prime counts.",
+            "limit": "The notes state rather than prove the final global completion and explicit formula.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_v2_u02",
+              "harper2014_zeta_course_part1_v2_u03",
+              "harper2014_zeta_course_part1_v2_u06",
+              "harper2014_zeta_course_part1_v2_u16"
+            ],
+            "title": "Three representations divide the work among arithmetic, continuation, and inversion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 201,
+              "line_start": 197,
+              "reason": "Section transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part1_v2_u03",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part1_v2_u03",
+          "spontaneous_reading": "The von Mangoldt weight is chosen so every prime power produced by differentiating an Euler factor contributes the same logarithmic prime weight. This makes the weighted prime count the coefficient-side representation of -zeta'/zeta, where zeros later become poles."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part1_v2_u03",
+          "source_grounded_mathematics": "Lambda(n) equals log p on prime powers and zero otherwise, and Psi(x)=sum_{n<=x}Lambda(n) differs from the log-weighted prime sum by a controlled prime-power error. In Re(s)>1, uniform absolute convergence justifies differentiating the logarithm of the Euler product termwise, giving sum Lambda(n)n^{-s}=-zeta'(s)/zeta(s). The Euler product also proves zeta is nonzero there.",
+          "conceptual_reading": "The weighting is an interface design choice: it absorbs the repeated prime powers inherent in logarithmic differentiation, replacing an awkward prime-only series by one exactly matched to analytic singularities.",
+          "representation_or_bridge": "Lambda is the coefficient bridge between Euler factors and the logarithmic derivative; Psi is its cumulative arithmetic observable; -zeta'/zeta will expose zeros as poles.",
+          "boundary_or_failure": "The identity and nonvanishing argument depend on absolute and uniform convergence in Re(s)>1. Psi is only approximately a prime count and includes all prime powers.",
+          "uncertainty": "The convergence checks and formulas are legible; the unit ends before developing the promised role of zeros."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part1_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The von Mangoldt definition, Psi comparison, justified termwise differentiation, identity with -zeta'/zeta and zero-freeness in Re(s)>1 are explicit."
+        ],
+        "inference": [
+          "Calling Lambda an interface design choice that absorbs prime powers is a strong reasonable inference."
+        ],
+        "unsupported_or_imported": [
+          "The response says zeros later become poles of -zeta'/zeta; this is mathematically standard and future-oriented, but the unit ends before developing that mechanism and only hints at relevance of vanishing."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'analytic singularities' phrase imports downstream context unless clearly labeled as anticipation."
+        ],
+        "context_or_ocr_risk": [
+          "The artifact truncates immediately after the heading of Remark 2.2, so any fuller zero discussion lies beyond the frozen span."
+        ],
+        "missed_mechanism": [
+          "The controlled prime-power error relating Psi to the prime-only weighted count is stated but receives little conceptual attention."
+        ],
+        "revision_instructions": [
+          "Keep the exact coefficient/logarithmic-derivative match, label the zero-as-pole statement as downstream inference, and mention the prime-power approximation separately."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Records the target before the separate construction of the strip and contour proof.",
+      "line_end": 847,
+      "line_start": 789,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material extraction defect.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem pair makes the causal channel explicit: excluding zeros only slightly left of one permits a contour shift and already yields a strong asymptotic for weighted primes.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A zero-free strip is the exact contour resource needed for a quantitative prime number theorem",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u08.txt",
+      "unit_bytes": 3315,
+      "unit_id": "harper2014_zeta_course_part1_v2_u08",
+      "unit_sha256": "1e5eb4cf6262d6ab392c2927e2935ec9a963e2671415f492357f87407b5fde87",
+      "unit_type": "signal-to-asymptotic-contract",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u08.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 781,
+          "line_end": 788,
+          "text": "\n<!-- source-page: 12 -->\n\n12                                    ADAM J HARPER\n\nmoderately well (we will see this later), but if one could approximate by a shorter\nDirichlet polynomial that would be even better.\n\n",
+          "sha256": "51d9a8632596c8f183b450a5aa169068f6e2808fb20353b086dd740a154ab60c"
+        },
+        "after": {
+          "line_start": 848,
+          "line_end": 855,
+          "text": "   Lots of our recent work on the zeta function has made use of its series expansion.\nIn contrast, the proof of Theorem 4.3 is mainly based on its Euler product expression,\nshowing that this continues to have an influence a little to the left of the half plane\n{σ > 1} where it is valid.\n\nProof of Theorem 4.3. We may assume throughout that σ − 1 is less than a small con-\nstant, since if σ − 1 is large then the result is a trivial consequence of the Euler product.\nWe may also assume that |t| is larger than a small constant, since otherwise ζ(σ + it) is\n",
+          "sha256": "4ec1f6b7a117b493944c2dc7b3466c374789c8005b44e2ccb66a957414a6d7ff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9e34f30763dcfcde09aee26f1afd5a229a680397241442f65077ccb0f4e4c1d",
+        "dossier_sha256": "1f008d9af1896099c86b26c9c3e2a9020084bb666e844a4b9034699232fee72b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the Prime Number Theorem",
+            "line_end": 1054,
+            "line_start": 789,
+            "mathematical_role": "Proves a weak zero-free region and uses a matched contour shift and error balance to derive a quantitative PNT."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 847,
+          "line_start": 789,
+          "title": "A zero-free strip is the exact contour resource needed for a quantitative prime number theorem",
+          "unit_id": "harper2014_zeta_course_part1_v2_u08",
+          "unit_type": "signal-to-asymptotic-contract",
+          "why_material": "The theorem pair makes the causal channel explicit: excluding zeros only slightly left of one permits a contour shift and already yields a strong asymptotic for weighted primes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Records the target before the separate construction of the strip and contour proof.",
+          "representation_dependency": "No material extraction defect.",
+          "unit_id": "harper2014_zeta_course_part1_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 787,
+            "line_start": 606,
+            "title": "Slow phase variation upgrades the zeta approximation to the full right half-plane",
+            "unit_id": "harper2014_zeta_course_part1_v2_u07",
+            "unit_type": "oscillatory-sum-to-integral-transfer",
+            "why_material": "A van der Corput lemma compares a slowly oscillating sum with its integral; applied to the logarithmic phase, it cancels the tail of zeta and produces a length-|t| Dirichlet polynomial with O(x^-sigma) error."
+          },
+          {
+            "line_end": 921,
+            "line_start": 848,
+            "title": "A nonnegative trigonometric combination of Euler products prevents zeta from becoming too small near one",
+            "unit_id": "harper2014_zeta_course_part1_v2_u09",
+            "unit_type": "positive-trigonometric-zero-free-method",
+            "why_material": "The identity 3+4 cos(theta)+cos(2 theta)>=0 couples zeta at three heights; pole growth and vertical bounds then force a quantitative lower bound that transfers a short distance left of one."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 829,
+              "line_start": 788,
+              "reason": "PNT statement, elementary corollary, and roadmap to the zero-free input."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part1_v2_u08",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part1_v2_u08",
+          "spontaneous_reading": "The theorem pair isolates the causal resource for PNT: even a narrow zero-free strip crossing the one-line, together with a reciprocal-zeta bound, is enough to shift the prime-counting contour and obtain subexponential error."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part1_v2_u08",
+          "source_grounded_mathematics": "Theorem 4.1 states Psi(x)=x with an error x exp(-c log^{1/10}x), and derives pi(x) asymptotic to Li(x). Theorem 4.3 supplies 1/zeta(s)=O(log^7(|t|+2)) and hence no zeros when sigma>=1-c/log^9(|t|+2). The source notes that this is only a slight extension of the Euler-product zero-free half-plane but includes Re(s)=1 and suffices for the quantitative PNT.",
+          "conceptual_reading": "The zero-free strip is not the arithmetic conclusion but a contour-mobility certificate. Its width determines how much exponential decay x^sigma gains when the transform is moved left.",
+          "representation_or_bridge": "The reciprocal-zeta bound controls the logarithmic derivative in the shifted Perron integral; the strip width is the bridge from analytic zero exclusion to prime-counting error.",
+          "boundary_or_failure": "This unit states rather than proves the implication and the zero-free theorem. It yields a weak modern error, not the later classical square-root-log exponential scale.",
+          "uncertainty": "The theorem statements are clearly extracted and their distinct roles are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part1_v2_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The PNT/error theorem and weak zero-free region with a reciprocal-zeta bound are explicitly stated, and the source says the latter suffices for the former."
+        ],
+        "inference": [
+          "Calling the zero-free region a contour-mobility resource is a reasonable preview of the next proof."
+        ],
+        "unsupported_or_imported": [
+          "The response says the reciprocal-zeta bound controls the logarithmic derivative; that additionally needs a zeta-prime estimate and is not established in this theorem-only unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'causal resource' framing is useful but may imply a proof already contained in the span."
+        ],
+        "context_or_ocr_risk": [
+          "No extraction defect exists, but the actual contour transfer is outside the unit boundary."
+        ],
+        "missed_mechanism": [
+          "The distinction between zero exclusion and the simultaneous quantitative 1/zeta estimate should be kept without asserting their later combination with zeta prime."
+        ],
+        "revision_instructions": [
+          "Present the theorem pair as an announced contract, mark contour mobility as inference, and remove the unsupported direct logarithmic-derivative claim."
+        ]
+      }
+    }
+  ]
+}

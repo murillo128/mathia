@@ -1,0 +1,485 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w1975718627_causal_spectral_axioms": {
+      "boundary_or_failure": "The axioms concern time-ordered products of Wick polynomials as operator-valued distributions on the chosen microlocal domain and formal local S-matrices. Spectrality is expressed by a source-defined graph cone and is a replacement for translation covariance, not a conventional global energy spectrum. The framework assumes global hyperbolicity and the free scalar Hadamard setup.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_9d8890f024f2f61ecb6651498483594a5430e7747731495207c2e99e5c171bc0",
+        "agnostic_oa_critic_e36246abd55b29dce6fcbe2fdb1c9ef52cc144f828929f568ae7724856a01dde"
+      ],
+      "interpretation": "Inference: an operator-valued extension problem becomes manageable when separated into algebraic axioms and numerical singular coefficients. A graph-based directional spectrum supplies the missing compatibility condition that lets numerical distributions multiply the common Wick domain.",
+      "nonparaphrase_operation": "Require time-ordered products to be well posed on the microlocal domain, symmetric, causally factorizing, graph-spectral, and compatible with the causal Wick expansion. Reduce commutators with the free field to derivatives of lower-order Wick polynomials, so the undetermined data are numerical expectation distributions. For each coefficient, verify its wavefront set lies in the causal graph cone; combine that cone with the all-past domain bound to prove the coefficient times the residual Wick monomial is a defined operator-valued distribution.",
+      "quality_reason": "All five source properties are correctly separated: operator-valued well-posedness, symmetry, causal factorization, graph-based spectrality, and causal Wick expansion. The candidate faithfully explains how the commutator condition and Wick expansion reduce the construction to numerical expectation distributions and how Theorem 0 makes their multiplication with Wick monomials well defined on the common domain.",
+      "source_support": "The source formulates five properties: operator-valued well-posedness, permutation symmetry, causal factorization, graph-based microlocal spectrality, and causal Wick expansion. Its microlocal Theorem 0 proves that the spectral cone excludes precisely the covector configuration that would obstruct multiplication by Wick monomials on the domain, thereby making the numerical-coefficient expansion meaningful everywhere it is defined.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The source notes unresolved classification of all relatively local fields in curved spacetime, so the row stays within its selected Wick-polynomial space.",
+      "unit_id": "agnostic_oa_w1975718627_causal_spectral_axioms"
+    },
+    "agnostic_oa_w1975718627_cutoff_independent_local_net": {
+      "boundary_or_failure": "Cutoff independence is local and only up to unitary intertwining for interactions that coincide near a causally closed compact region. It uses causal factorization and a decomposition of the cutoff difference into future- and past-supported pieces. The resulting net is perturbative and does not require or establish a global adiabatic limit.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_581ca630e3f8dd0520a2818d09caa8173b9be4cb22bce9096d24a52ed40608f9",
+        "agnostic_oa_critic_c2156c8675e4c9265ea3b3c361895ae830f123845d02b03af44341e58af6669d"
+      ],
+      "interpretation": "Inference: a local object can be defined from a family of auxiliary-cutoff presentations by retaining only sections invariant under all transition intertwiners. This converts noncanonical local representatives into a canonical algebraic object without selecting a preferred global cutoff.",
+      "nonparaphrase_operation": "For two cutoff functions equal near a region, split their difference into a term avoiding the region's past and a term avoiding its future. Apply causal factorization on the two sides of a local insertion to construct a unitary that conjugates one relative functional to the other. Regard the cutoff-indexed local algebras as fibers with all such intertwiners as transition maps, define the intrinsic local algebra as covariantly constant sections, and obtain inclusions for nested regions by restriction of those sections.",
+      "quality_reason": "The cutoff-difference split, two uses of causal factorization, unitary intertwiner, cutoff-indexed fiber algebras, covariance under every admissible intertwiner, and inclusions by restriction of sections all match the artifact. The candidate correctly avoids turning formal unitarity into a nonperturbative Hilbert-space existence claim.",
+      "source_support": "The source defines relative interacting observables from local S-matrices and proves that cutoffs agreeing near a causally closed region give unitarily equivalent observables there by splitting their difference and applying causal factorization twice. It defines the local algebra through families over all cutoffs equal to one near the region, imposes covariance under every intertwiner, and derives the net inclusions by restriction, explicitly without an adiabatic limit.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The existence of the future-past support split is used in the stated causal setting, and the word unitary is understood within the source's formal local S-matrix framework rather than as a nonperturbative Hilbert-space construction.",
+      "unit_id": "agnostic_oa_w1975718627_cutoff_independent_local_net"
+    },
+    "agnostic_oa_w1975718627_diagonal_renormalization": {
+      "boundary_or_failure": "The closing estimate is proved for polynomial interactions of a scalar field without derivatives in a globally hyperbolic spacetime; the source says extensions to derivatives and multiple fields are straightforward but leaves them to the reader. The theorem matches short-distance perturbative classification, not global dynamics, convergence, or a nonperturbative theory. Renormalization choices remain in the finite extension ambiguity.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_7f8c508a27ebdebf3650014557edfdf5f90a78176090da54003affc10373f2a9",
+        "agnostic_oa_critic_12d442c82046be0b9143ed6801823d1995e3fe14310d373ca7e99f8011bc6fb7"
+      ],
+      "interpretation": "Inference: an inductive renormalization scheme closes when every new off-diagonal term decomposes into lower-order pieces and fixed propagator factors whose scaling degrees add without a wavefront obstruction. Geometry affects coordinates but not the resulting power-counting class.",
+      "nonparaphrase_operation": "Expand each off-diagonal numerical coefficient as a finite sum of products of two lower-order coefficients and cross-contraction powers of the two-point function. Restrict their known scaling bounds from partial diagonals to the small diagonal, verify the associated conic sums avoid zero, and add the bounds. Use the resulting finite degree in the submanifold extension theorem to continue across total coincidence. Choose normal relative coordinates by exponentiating tangent vectors with zero sum around a common base point, and record the remaining normal-jet choices as the renormalization freedom.",
+      "quality_reason": "The candidate accurately follows the source from the off-diagonal factorization into lower-order coefficients and cross-contraction powers, through restriction/product scaling estimates at the small diagonal, to the finite-degree extension and normal-coordinate reference choice. It correctly limits the theorem to short-distance perturbative classification and retains renormalization ambiguity.",
+      "source_support": "The source writes the nth-order coefficient in terms of lower-order factors, smooth causal partitions, and powers of the Hadamard two-point distribution. It combines restriction and product scaling lemmas to bound the small-diagonal degree and derives the same monomial power-counting bound as in flat space. It then states equality of short-distance perturbative classifications and specifies a metric normal fibration and cutoff convention for reference extensions.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Formula indices and the exact degree expression are OCR-sensitive, so the record retains the inductive additive bound without retyping a potentially corrupted closed formula.",
+      "unit_id": "agnostic_oa_w1975718627_diagonal_renormalization"
+    },
+    "agnostic_oa_w1975718627_graph_wavefront_bookkeeping": {
+      "boundary_or_failure": "The graph expansion uses quasifree Hadamard expectations, so contractions reduce to two-point functions and edges follow null-geodesic wavefront relations. The graph cone is an upper bound on the wavefront set, not necessarily an equality. Products exist because the relevant frequency cone is convex and avoids zero in the required sums.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_df8f59e27abd2568171c70ca8f60bcab379c741cf03f84ed5bf8f6878eec579d",
+        "agnostic_oa_critic_bca227a696282143a8121b7c5c1ceebff508d08748aa7c43a20e2b903fb2c6e3"
+      ],
+      "interpretation": "Inference: complicated directional singularities can be compressed into a flow-conservation rule on a graph. Each contraction edge carries a future-directed covector, and the covector observed at a vertex is outgoing flow minus incoming flow.",
+      "nonparaphrase_operation": "Differentiate each Wick polynomial until a generalized Wick expansion expresses its product through numerical expectation values and residual normal-ordered monomials. For a monomial expectation, enumerate contraction graphs that saturate the required valence at every vertex. Assign each edge a null-geodesic covector transported between its endpoints and calculate each vertex covector as the signed incidence sum. Take the union of these graph cones as a wavefront bound and use it to test downstream products.",
+      "quality_reason": "The generalized Wick expansion, quasifree contraction products, saturated graphs, future-directed covector transport along null geodesics, signed vertex incidence, and containment rather than equality are all faithfully represented. The candidate also retains the convex-cone condition underlying existence of the displayed products.",
+      "source_support": "The source defines derivatives of Wick polynomials through their commutators, states the generalized Wick expansion, and represents quasifree monomial expectations as sums over products of two-point functions indexed by saturated graphs. It defines graph immersions by null geodesics with future covectors and proves that the resulting signed vertex-incidence cone contains the wavefront set of each multi-point expectation.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Some graph notation is extraction-degraded, so this record preserves the signed-incidence construction and containment claim without reconstructing every combinatorial coefficient.",
+      "unit_id": "agnostic_oa_w1975718627_graph_wavefront_bookkeeping"
+    },
+    "agnostic_oa_w1975718627_microlocal_wick_domain": {
+      "boundary_or_failure": "The domain is defined inside a fixed representation, although it is independent of the choice of cyclic vector used to present that representation. Its invariance and inclusion theorem are stated for Weyl operators, smeared Wick polynomials, and vectors inducing quasifree Hadamard states. The wavefront orientation is essential; generic Hilbert-space vectors need not belong.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_93a5b6565053426699e69fe496ef322c65b36370c64c417d2fee49af14d7e319",
+        "agnostic_oa_critic_aff5f848d521d9798bd4e17e0c5948a56d674d3e58a963654e81b7176fbefea8"
+      ],
+      "interpretation": "Inference: a common domain for singular operator products can be specified by regularity of a generating vector-valued functional rather than by intersecting ad hoc operator domains. Directional spectral bounds then make diagonal evaluation a controlled trace operation.",
+      "nonparaphrase_operation": "Normal-order the Weyl functional relative to a Hadamard two-point distribution and apply it to a candidate vector. Require derivatives of every order at zero as vector-valued distributions with wavefront covectors confined to the past cone. Interpret those derivatives as Wick monomials. Use conormal avoidance to restrict them to every partial diagonal and the product criterion to multiply them by numerical distributions whose forbidden all-future directions are absent.",
+      "quality_reason": "The candidate accurately connects differentiability of the normal-ordered Weyl-vector functional to vector-valued Wick monomials, imposes the one-sided past-cone wavefront bound, and uses trace/product criteria for partial diagonals and numerical multipliers. Its representation-relative and quasifree-Hadamard boundaries match the artifact.",
+      "source_support": "The source defines a differentiability condition for the normal-ordered Weyl-vector functional and identifies its functional derivatives with Wick monomials. It defines the microlocal domain by a uniform past-cone wavefront condition, states that diagonal restrictions and compatible multiplications exist there, and that the domain is invariant. It proves that vectors inducing quasifree Hadamard states lie in the domain because changing the state changes the two-point function only by a smooth term.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Norm and seminorm estimates are source-specific and partially OCR-sensitive; no claim is made that this is a maximal common domain.",
+      "unit_id": "agnostic_oa_w1975718627_microlocal_wick_domain"
+    },
+    "agnostic_oa_w1975718627_point_extension_threshold": {
+      "boundary_or_failure": "The uniqueness threshold is the dimension of the transverse ambient space. Below it, no point-supported distribution can be added without increasing scaling degree. At or above it, extensions exist for finite degree but are nonunique by derivatives of delta up to the singular order; infinite scaling degree is stated to admit no distributional extension in this setup. Auxiliary cutoff and projection choices parametrize, rather than remove, the ambiguity.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_349862b5f5803e4412d4c9e5e2703e20272612a35ae68ce6e92b950ed364ae18",
+        "agnostic_oa_critic_e2d9e1c432b9a2e165eb5c5d0d88b6e408e8b2eea07872e74dec1d200fc2a071"
+      ],
+      "interpretation": "Inference: extension across a missing point is governed by a sharp dimension comparison. The finite ambiguity is exactly the dual of the finite jet of test functions that the singular distribution cannot evaluate continuously.",
+      "nonparaphrase_operation": "Compute the scaling degree omega and compare it with dimension d. If omega is below d, remove shrinking neighborhoods with a dyadic cutoff and take the unique Cauchy limit. If omega is at least d but finite, set the singular order to omega minus d, project every test function onto those whose jet through that order vanishes at the origin, extend uniquely on that subspace after factoring out enough coordinate powers, and assign arbitrary values to a complementary jet basis. Interpret changes of those values as derivatives of delta counterterms.",
+      "quality_reason": "The candidate faithfully states uniqueness below dimension, same-degree existence with finite jet ambiguity at finite degree above threshold, the role of point-supported delta derivatives, and the source's infinite-degree boundary. Its operation follows the two source constructions and correctly treats projection/cutoff choices as parametrizing rather than eliminating ambiguity.",
+      "source_support": "The source proves uniqueness and existence with unchanged scaling degree below dimension by a shrinking-cutoff series and observes that differences would be point-supported delta derivatives of degree at least d. For finite degree at or above dimension it constructs a Taylor-jet projection, extends uniquely on the vanishing-jet subspace, and shows extensions are determined by finitely many complementary test-function values, identifying the localized ambiguity with counterterms.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Integer floors in the singular-order formulas are extraction-sensitive; the strict threshold, finite-jet mechanism, and localized ambiguity are explicit.",
+      "unit_id": "agnostic_oa_w1975718627_point_extension_threshold"
+    },
+    "agnostic_oa_w1975718627_scaling_degree": {
+      "boundary_or_failure": "Scaling degree measures asymptotic singular strength under a specified dilation toward a point. Finite scaling degree supports the later extension theory, whereas infinite degree may obstruct distributional extension. Exact homogeneity is only an example; general distributions need only satisfy an asymptotic bound. Multiplication requires separate wavefront compatibility and is not controlled by scaling degree alone.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_e85558ec0d83f78be3f9295c95e6be0c9cede0c177fcd84fa6372e6b410f6455",
+        "agnostic_oa_critic_63a8f4b69545aa4e4281f2df701de2e0eb085bfc842c100cbc0bbeb2667f5039"
+      ],
+      "interpretation": "Inference: singularity strength can be quantified by asking how much power of scale is needed to suppress a rescaled distribution. The resulting number supports an algebraic power-counting calculus under derivatives, coordinate factors, smooth multipliers, and tensor products.",
+      "nonparaphrase_operation": "Rescale test functions with the density factor that preserves integration and pull this action back to a distribution. Find the infimum exponent for which multiplying the rescaled distribution by that power forces convergence to zero. During a calculation, raise the bound by derivative order, lower it by vanishing coordinate order, never raise it for multiplication by a smooth function, and add it across tensor products. Compare the result with ambient dimension only at the extension stage.",
+      "quality_reason": "The rescaling of test functions, pullback to distributions, infimum definition, examples, and calculus under derivatives, coordinate monomials, smooth multipliers, and tensor products match the artifact. The candidate also correctly separates scaling control from the independent wavefront condition needed for products.",
+      "source_support": "The source defines scaling degree at the origin through distributional dilation limits, illustrates it on smooth functions, delta distributions, propagators, homogeneous functions, and an infinite-degree example, and proves its basic calculus. It states that derivatives increase the bound by at most their order, coordinate monomials decrease it, smooth multipliers do not increase it, and tensor-product degrees add.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Fourier and propagator normalizations are representation-specific and OCR-sensitive; the abstract dilation definition and inequalities are clear.",
+      "unit_id": "agnostic_oa_w1975718627_scaling_degree"
+    },
+    "agnostic_oa_w1975718627_scaling_invariance_calculus": {
+      "boundary_or_failure": "Product estimates require the sum of the two limiting conic wavefront sets to avoid the zero section; scaling bounds alone cannot authorize multiplication. Restriction to a smaller submanifold also requires the trace operation to be defined. Invariance holds among the admissible first-order-compatible blow-up maps and transversal fibrations specified by the source.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_f60085ea416eb189149329bb6b9afe8040d74312ada015f436d9983646057119",
+        "agnostic_oa_critic_954dc08a366f01be6b041a9c193a46297ece75c75d1756dd5ed66e3fe78b0e10"
+      ],
+      "interpretation": "Inference: once representation independence is proved, scaling degree becomes intrinsic enough to support a calculus. One may choose convenient normal coordinates for computation, then combine degrees only through operations whose microlocal continuity has separately been verified.",
+      "nonparaphrase_operation": "Compare two blow-up maps by their rescaled transition diffeomorphism and show it approaches the identity with uniform derivative and Fourier estimates; transfer both weak and cone-controlled convergence to prove equal degrees. For a product, first apply the wavefront zero-sum test, then add the two degrees and union their conic bounds. For restriction to a nested submanifold, use continuity of trace to retain a degree no larger than the original. Replace full tangent blow-up by any transverse fibration only after invoking their proved equivalence.",
+      "quality_reason": "The rescaled transition map tending to the identity, transfer of weak and cone-controlled convergence, additive upper bound for admissible products, nonincrease on passing to a nested surface, and equivalence with transversal scaling are all accurately grounded. The candidate correctly makes product existence depend on the wavefront zero-sum test.",
+      "source_support": "The source proves independence of microlocal scaling degree from the admissible blow-up map using rescaled coordinate changes and stationary-phase estimates. It proves an additive upper bound for products under a conic compatibility condition and a nonincrease under restriction. It defines transversal scaling and proves it coincides with full microlocal scaling independently of the chosen fibration.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The Fourier estimates and cone trivializations are technical and partially extraction-sensitive; no product is claimed when the wavefront compatibility hypothesis fails.",
+      "unit_id": "agnostic_oa_w1975718627_scaling_invariance_calculus"
+    },
+    "agnostic_oa_w1975718627_submanifold_blowup": {
+      "boundary_or_failure": "The definition assumes the distribution's wavefront directions over the submanifold annihilate its tangent bundle, enabling traces to sufficiently small transverse slices. A blow-up map or tubular identification must agree with the identity to first normal order. The exponential-map example additionally assumes the relevant submanifold is totally geodesic; it is not the only admissible choice.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_21e6fb6e24e7f53a4416af6b91c86b3edf36c39bd31acdbad8b4765c022f2472",
+        "agnostic_oa_critic_f4dd7fbfcb5324f1de087898b70ecdf7b7436f0e293ac1eee83e51b795432f6a"
+      ],
+      "interpretation": "Inference: uniform singularity along a submanifold is measured by dilating only normal displacement while retaining the base point. A microlocal topology simultaneously controls blow-up rate and the directions that may survive on the submanifold.",
+      "nonparaphrase_operation": "Choose a tubular blow-up map from a neighborhood of the zero section in the tangent bundle along the submanifold to nearby point pairs. Pull the distribution back with a passive base variable, dilate the displacement fiber, and bound all rescaled wavefront sets in one closed cone orthogonal to the lifted tangent directions. Define the microlocal scaling degree from convergence in that cone-controlled topology. As a diagnostic, restrict to transverse slices, where the construction reduces to ordinary point scaling.",
+      "quality_reason": "The tangent-annihilating wavefront hypothesis, restriction to small transverse slices, admissible blow-up map, fiber dilation, common conic control, and Hörmander-topology definition are faithfully summarized. The candidate correctly presents normal displacement as scaled while retaining the base point and tangential control.",
+      "source_support": "The source proves that wavefront orthogonality to the submanifold tangent permits restriction to small transverse submanifolds. It defines an admissible class of blow-up maps, constructs uniformly controlled rescaled pullbacks, and defines microlocal scaling degree at the submanifold in the Hormander topology. It gives the diagonal propagator and Hadamard two-point function degree d-minus-two as examples.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Bundle-coordinate displays are OCR-dense; the normal-dilation geometry and wavefront hypotheses are retained without asserting a canonical trivialization in general.",
+      "unit_id": "agnostic_oa_w1975718627_submanifold_blowup"
+    }
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w1975718627_03680462_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_microlocal_wick_domain.txt",
+      "artifact_bytes": 7386,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_microlocal_wick_domain.txt",
+      "artifact_sha256": "a1ae8fa464441bb597d22f9ca8239439fed4d2faf9fcfcfa2ba6866c40596ec9",
+      "context_note": "The construction is representation-relative and depends on a Hadamard representation; state independence is local/qualified, and finite redefinitions are explicitly not resolved here.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 629,
+      "line_start": 515,
+      "representation_dependency": "Uses Weyl operators, functional derivatives, Hadamard wave front bounds, and the trace/product criteria for distributions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Defines a state-vector domain by differentiability plus one-sided wave-front control so vector-valued distributions can be restricted to partial diagonals and multiplied without changing domains unexpectedly.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Choose a common microlocal domain before restricting Wick fields",
+      "unit_id": "agnostic_oa_w1975718627_microlocal_wick_domain",
+      "unit_type": "domain-construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_graph_wavefront_bookkeeping.txt",
+      "artifact_bytes": 8844,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_graph_wavefront_bookkeeping.txt",
+      "artifact_sha256": "a29cb13761a4ce273c8053de5a739036fc055102b034a8f0a134c06023c1da4c",
+      "context_note": "Graph-cone formulas and indices are OCR-sensitive; the robust content is the graph-to-covector bookkeeping and its bound on wave front sets.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1975718627_directional_singularities",
+            "agnostic_oa_w1975718627_graph_wavefront_bookkeeping",
+            "agnostic_oa_w1975718627_causal_spectral_axioms",
+            "agnostic_oa_w1975718627_scaling_invariance_calculus"
+          ],
+          "identifier": "transforms_and_spectralization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source replaces unavailable global Fourier spectral data by localized Fourier decay and cotangent cones, then composes those directional data through graph immersions and scaling. The lens mapping follows the assignment and is source-grounded, but novelty relative to #44 or any other corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 758,
+      "line_start": 630,
+      "representation_dependency": "Uses the generalized Wick expansion, quasi-free factorization into two-point functions, immersed null-geodesic graphs, and Hörmander's product criterion.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Associates edges with transported covectors and vertices with signed sums, yielding a geometric upper bound for multipoint singular directions and explaining how nonlinear products create directions absent from the basic field.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Graphs encode how singular covectors compose",
+      "unit_id": "agnostic_oa_w1975718627_graph_wavefront_bookkeeping",
+      "unit_type": "structural-bound"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_causal_spectral_axioms.txt",
+      "artifact_bytes": 13847,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_causal_spectral_axioms.txt",
+      "artifact_sha256": "cacbae7bc63deae99862a938456fd31747e833b6e32f5c57c2b14fc63b1592f8",
+      "context_note": "Displayed time-ordering and cone definitions contain damaged glyphs. The accepted content is the axiom architecture and reduction to numerical distributions, not unchecked formula transcription.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1975718627_directional_singularities",
+            "agnostic_oa_w1975718627_graph_wavefront_bookkeeping",
+            "agnostic_oa_w1975718627_causal_spectral_axioms",
+            "agnostic_oa_w1975718627_scaling_invariance_calculus"
+          ],
+          "identifier": "transforms_and_spectralization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source replaces unavailable global Fourier spectral data by localized Fourier decay and cotangent cones, then composes those directional data through graph immersions and scaling. The lens mapping follows the assignment and is source-grounded, but novelty relative to #44 or any other corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 981,
+      "line_start": 759,
+      "representation_dependency": "Uses time-ordered products of Wick polynomials, formal local S-matrices, the microlocal domain, causal order, graph-defined conic bounds, and causal Wick expansion.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Separates well-posedness, symmetry, causal factorization, directional spectral control, and Wick expansion so the operator problem reduces to extending numerical distributions while preserving explicit invariants.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Replace translation covariance by causality plus microlocal spectrality",
+      "unit_id": "agnostic_oa_w1975718627_causal_spectral_axioms",
+      "unit_type": "axiom-design"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_scaling_degree.txt",
+      "artifact_bytes": 6778,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_scaling_degree.txt",
+      "artifact_sha256": "ee50d38c70c460656f387eaa7ed5c14be1820d52b0d1ca695dcf6982d9c7c6af",
+      "context_note": "Concrete propagator values and dilation formulas are examples; the semantic unit is the invariant that orders singular strength and its calculus under basic operations.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 1240,
+      "line_start": 1130,
+      "representation_dependency": "Uses dilation of test functions/distributions around a point and weak distributional convergence; the microlocal refinement appears later.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Generalizes homogeneity by asking how much rescaling is needed for a distribution to vanish, and supplies predictable behavior under derivatives, coordinate factors, smooth multiplication, and tensor products.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Scaling degree measures singular strength without choosing a formula",
+      "unit_id": "agnostic_oa_w1975718627_scaling_degree",
+      "unit_type": "invariant"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_point_extension_threshold.txt",
+      "artifact_bytes": 10265,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_point_extension_threshold.txt",
+      "artifact_sha256": "296eb6c8404efb37a2a2cc79faebcad326f0079dece7ed69e715918adcdb9ea7",
+      "context_note": "The detailed estimates are readable but several exponents and multiline equations need PDF verification. The proof gives existence/classification, not a canonical choice in the ambiguous regime.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 1413,
+      "line_start": 1241,
+      "representation_dependency": "Uses distributions off a point, scaling degree, the structure theorem for point-supported distributions, Taylor-jet projections, and dyadic cutoff limits.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Shows a sharp structural split: below ambient dimension the degree-preserving extension is unique; at or above it, the ambiguity is finite-dimensional and supported at the singular point, represented by finitely many delta derivatives.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Compare scaling degree with dimension to classify extensions",
+      "unit_id": "agnostic_oa_w1975718627_point_extension_threshold",
+      "unit_type": "extension-principle"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_submanifold_blowup.txt",
+      "artifact_bytes": 8750,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_submanifold_blowup.txt",
+      "artifact_sha256": "7c054b9689494422fc0d06aea386e7683b149a71cde43aa52409b11cd5b4ce9d",
+      "context_note": "The exponential-map realization requires a suitable metric/totally geodesic setting; the abstract definition uses an admissible tubular map. Exact bundle and cone notation is OCR-fragile.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1975718627_directional_singularities",
+            "agnostic_oa_w1975718627_submanifold_blowup",
+            "agnostic_oa_w1975718627_surface_extension_threshold",
+            "agnostic_oa_w1975718627_diagonal_renormalization"
+          ],
+          "identifier": "partial_differential_equations",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a PDE lens through Green functions, directional singularities of distributional solutions, conormal restriction criteria, and invariant extension across characteristic coincidence loci. This is an assignment-routed association only; no frozen-parent comparison or novelty determination was performed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 1548,
+      "line_start": 1416,
+      "representation_dependency": "Uses conormal transversality, restriction to transversal slices, a tubular/normal-bundle map, fiberwise scaling, and Hörmander topology.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Lifts pointwise scaling to a surface by scaling only normal directions while retaining tangential microlocal control, thereby reducing a geometric singular locus to compatible transversal point problems.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Blow up normal directions to measure singularity along a submanifold",
+      "unit_id": "agnostic_oa_w1975718627_submanifold_blowup",
+      "unit_type": "geometric-reduction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_scaling_invariance_calculus.txt",
+      "artifact_bytes": 10644,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_scaling_invariance_calculus.txt",
+      "artifact_sha256": "a62baa3ade5f838aae68a761388d9cafb26ee61f64b21a2a5e8c6d3db99047ba",
+      "context_note": "The coordinate/Fourier proofs establish invariance but are notation-heavy and OCR-sensitive; the conclusions should be materialized with the original formulas available.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1975718627_directional_singularities",
+            "agnostic_oa_w1975718627_graph_wavefront_bookkeeping",
+            "agnostic_oa_w1975718627_causal_spectral_axioms",
+            "agnostic_oa_w1975718627_scaling_invariance_calculus"
+          ],
+          "identifier": "transforms_and_spectralization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source replaces unavailable global Fourier spectral data by localized Fourier decay and cotangent cones, then composes those directional data through graph immersions and scaling. The lens mapping follows the assignment and is source-grounded, but novelty relative to #44 or any other corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 1714,
+      "line_start": 1549,
+      "representation_dependency": "Uses changes between admissible tubular maps, stationary-phase estimates, Hörmander convergence, products, restrictions, and a normal fibration.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Shows that the microlocal scaling degree does not depend on the chosen tubular coordinates, behaves subadditively under admissible products, does not increase under restriction, and agrees with transversal fiberwise scaling.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Prove the scaling invariant is representation-independent and compositional",
+      "unit_id": "agnostic_oa_w1975718627_scaling_invariance_calculus",
+      "unit_type": "invariance-and-transfer"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_diagonal_renormalization.txt",
+      "artifact_bytes": 4747,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_diagonal_renormalization.txt",
+      "artifact_sha256": "fd3b60571f81841d61d0967551a96999570118410a19d1f79c37a07b84224137",
+      "context_note": "The theorem proved here covers polynomial scalar interactions without derivative terms; multiple fields and derivative interactions are said to follow similarly but are not proved in this span. Finite renormalizations remain deferred.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1975718627_directional_singularities",
+            "agnostic_oa_w1975718627_submanifold_blowup",
+            "agnostic_oa_w1975718627_surface_extension_threshold",
+            "agnostic_oa_w1975718627_diagonal_renormalization"
+          ],
+          "identifier": "partial_differential_equations",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a PDE lens through Green functions, directional singularities of distributional solutions, conormal restriction criteria, and invariant extension across characteristic coincidence loci. This is an assignment-routed association only; no frozen-parent comparison or novelty determination was performed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 1878,
+      "line_start": 1806,
+      "representation_dependency": "Uses the off-diagonal inductive product, microlocal scaling estimates for factors, total-geodesic partial diagonals, normal coordinates, and the surface extension theorem.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Isolates all remaining ambiguity on the coincidence submanifold, bounds its scaling degree from lower-order terms, and identifies local counterterms with the finite choices in a degree-preserving extension.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Renormalization is extension across the small diagonal",
+      "unit_id": "agnostic_oa_w1975718627_diagonal_renormalization",
+      "unit_type": "problem-decomposition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_cutoff_independent_local_net.txt",
+      "artifact_bytes": 3643,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_cutoff_independent_local_net.txt",
+      "artifact_sha256": "42d0b73646793dd512ea25a9570f904f387bbe913a8bec75a70efc985bd768cd",
+      "context_note": "The construction remains within formal perturbation theory and yields algebras up to intertwining/unitary equivalence; it does not solve infrared limits or convergence.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 1933,
+      "line_start": 1880,
+      "representation_dependency": "Uses causal factorization of local S-matrices, interaction cutoffs equal near a causally closed region, intertwiners, and restriction maps between regions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Proves that cutoff choices agreeing near a region produce intertwined local observable algebras, then packages these fibers as covariantly constant sections with compatible inclusions to form a local net.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Local observables forget how the interaction is cut off far away",
+      "unit_id": "agnostic_oa_w1975718627_cutoff_independent_local_net",
+      "unit_type": "locality-and-descent"
+    }
+  ]
+}

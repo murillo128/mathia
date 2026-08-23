@@ -1,0 +1,514 @@
+{
+  "stage": "audit",
+  "task": "fresh-context stratified capability-vs-style and ecosystem audit",
+  "audit_context_group": "source:openalex_w2591008310",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/independent_stratified_audit.md",
+  "prompt_sha256": "01b8ad26214a2c99a0499451602be75e5b1bd4408ec5d01e781c6a32145d9439",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/audit/batches/source_openalex_w2591008310_cd2deed8_part_01.jsonl",
+  "item_count": 4,
+  "items": [
+    {
+      "object_id": "mathia_interpretation_724d4421622918a4c0cc95eea179b4746577e7c16fd1b17b658e1dce73c42deb",
+      "object_role": "interpretation",
+      "proposed_content": "For condition (ii), the proof samples the powered function on an equally spaced chain of nearby real parts. Referenced lower-bound inputs make the first shifted mean large, while separate parameter choices ensure that the remaining shifted means do not cancel it cheaply. Their alternating finite difference is then represented by Lemma 8 as an m-fold average of the m-th derivative, forcing derivative mean mass somewhere across the chain. This bridge gains derivative information without termwise differentiation, but its success still depends on the prior lower bounds and the quantitative dominance choices, not on the finite-difference identity alone.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_1dab7f13f961138e148b87a23100305094b0d6c7e49c75fe480f013929940ce8",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u09"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u09.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u09.txt",
+          "content_sha256": "e1a412b609bd0d1c9d025e05dc8071bdcd06ccc8c9cfda5770683a6b06acea70",
+          "artifact_sha256": "da0b55886ba251fb06897b44efd69952742f4c30f41397c1eaefce9be5ca00a4",
+          "artifact_bytes": 1350
+        }
+      ],
+      "audit_context_group": "source:openalex_w2591008310",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "partial-results",
+          "zero-density",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 14
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_4407be0e444a5ce32ee75d631c78bb5f4c7e4d25b6bdc9f8b5b57111862f8453",
+      "object_role": "synthesis",
+      "proposed_content": "The packet supports separate contradiction, local zero-counting, diagonal-extraction, and finite-difference steps, but it does not support the claimed end-to-end pipeline linking them through zero-near interval deletion and coefficient growth.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_362fece2411ab551d415810e2843dd30f25eab680efa936a5c7d50a0e59f82af",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u03"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u03.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u03.txt",
+          "content_sha256": "2488137c251181094b1157d3ed9f40a397e3bd63c7dda3ab8939ab24a809b195",
+          "artifact_sha256": "f3a8425bc024a430d6633bf100d845ed8edd40ffc4081a37648b31de5804e89a",
+          "artifact_bytes": 1561
+        },
+        {
+          "source_object_id": "mathia_source_0938b64c83673025ef40085faccf60b6fd519a3171f4ad38300e02d37a7eb251",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u04"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u04.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u04.txt",
+          "content_sha256": "8d7862cbcce198d60d4b0489193208b18127ca8d91d1c8fcb4fefe4132cdbff1",
+          "artifact_sha256": "6f9941c2740cf1c0142f71a29b3cbe5e339871a8c62a8418bd2e4a7ad34532f7",
+          "artifact_bytes": 580
+        },
+        {
+          "source_object_id": "mathia_source_60fe0a037e648fe6106e40b9a1a2b090028dd3158f64212e9049337876ca7786",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u05"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u05.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u05.txt",
+          "content_sha256": "02845bb0a88cfc117baf98d76c944eb18fa947d7b2b30955af23d1d31535e1f3",
+          "artifact_sha256": "8d22094b12724abe39180d561170d6ac844cdbbeb3aeb5bdd837972ac9c9958a",
+          "artifact_bytes": 2345
+        },
+        {
+          "source_object_id": "mathia_source_de6a982faef751a0a741de407e54643c26f214826d3e1f9a1ed624f29bc25921",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u06"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u06.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u06.txt",
+          "content_sha256": "232d5c88d675a661fccc1c89b711d44d81ac183ff15041052444fbb2e98e13da",
+          "artifact_sha256": "5ea42408345fb1a06988e6daef5faca0ba1c5d35c847ba8c9e41a25c9bd6cbce",
+          "artifact_bytes": 1228
+        },
+        {
+          "source_object_id": "mathia_source_cb03ad36e27e71d1c2b2b095cf02c7694353c78b870336e7ce326e4dcbdb6b47",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u07"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u07.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u07.txt",
+          "content_sha256": "c0e1bf2112b7f75ddb20596bed3e18bc9d4860abf1ab5185328321cd63878f25",
+          "artifact_sha256": "3e3a152e3d6b5c3986f1847279b215e01b33a000959a50ac6f29c083bffcf221",
+          "artifact_bytes": 3396
+        },
+        {
+          "source_object_id": "mathia_source_4a0f988bded8cb64b4b73661f63869c6c1eadd4d8e0de8ace264775b8413899b",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u08"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u08.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u08.txt",
+          "content_sha256": "06c98a39b8723e92aba7844a6c6219c0a07758ec2ce1f8e98f16852c272957ce",
+          "artifact_sha256": "f27f3d54f2b04854c15070b829f6f934ec95496db80acba2d024fd8c5daa1b4a",
+          "artifact_bytes": 676
+        },
+        {
+          "source_object_id": "mathia_source_1dab7f13f961138e148b87a23100305094b0d6c7e49c75fe480f013929940ce8",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u09"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u09.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u09.txt",
+          "content_sha256": "e1a412b609bd0d1c9d025e05dc8071bdcd06ccc8c9cfda5770683a6b06acea70",
+          "artifact_sha256": "da0b55886ba251fb06897b44efd69952742f4c30f41397c1eaefce9be5ca00a4",
+          "artifact_bytes": 1350
+        },
+        {
+          "source_object_id": "mathia_source_a6ecb105385f88d0d3ae31cf8ead236b8eea7bd46a9dd8d6b8160f000b5f4bd1",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u10"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u10.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u10.txt",
+          "content_sha256": "949a2271c398a13592f17ded8040497238f03f4a4a025ac52862e276b0131d4e",
+          "artifact_sha256": "ad2f75df349a3233a79461699f16982d1f327f28bb871b6e08a4f23f3d1829cd",
+          "artifact_bytes": 1202
+        }
+      ],
+      "audit_context_group": "source:openalex_w2591008310",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "partial-results",
+          "zero-density",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 14
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_8e2af3f49d335ed7ffcc473d29755bc55968ecd64e90fcc75553f6eb7af2df86",
+      "object_role": "synthesis",
+      "proposed_content": "The second-moment/fourth-moment interpolation mechanism is supported, but it is already stated completely in u14 and therefore is not a synthesis jointly contributed by u07 and u14.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_cb03ad36e27e71d1c2b2b095cf02c7694353c78b870336e7ce326e4dcbdb6b47",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u07"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u07.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u07.txt",
+          "content_sha256": "c0e1bf2112b7f75ddb20596bed3e18bc9d4860abf1ab5185328321cd63878f25",
+          "artifact_sha256": "3e3a152e3d6b5c3986f1847279b215e01b33a000959a50ac6f29c083bffcf221",
+          "artifact_bytes": 3396
+        },
+        {
+          "source_object_id": "mathia_source_4640d11ef73e96d90150d9004ea366622502c55033a66fae34ebae449fa25783",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u14"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u14.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u14.txt",
+          "content_sha256": "3642976c1e865372459cbfd50ca4df143ce8c6a30658b8f08a97b6a993ace66d",
+          "artifact_sha256": "17573ad8d96c9882c5e3d7d7dab981a4cd7dc7f25d61d270e6aea78d192f68d2",
+          "artifact_bytes": 1333
+        }
+      ],
+      "audit_context_group": "source:openalex_w2591008310",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "partial-results",
+          "zero-density",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 14
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_e277101fb2c116736475f51a7e8fe00cd86ed1cf1da82f35718f7637d868506a",
+      "object_role": "synthesis",
+      "proposed_content": "The source supports a broad contrast between a stronger Euler-product regime and a weaker no-product fallback, and it supports the truncated-inverse/bilinear mechanism of the fallback; the assigned parents do not support the candidate's detailed causal account of the Euler-product route.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_08b68c9f7278a03de0e1906b509693707eb99bff42d38f19f6342b07537a3639",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u02"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u02.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u02.txt",
+          "content_sha256": "43736fc757648abffbed272462409dd1c3928cfcae67e1c8220857ad8eb7efff",
+          "artifact_sha256": "d083f854b01cbedde0ef2455494ab8f8fd372f1669b75f12d4c6a283a5d69185",
+          "artifact_bytes": 1823
+        },
+        {
+          "source_object_id": "mathia_source_362fece2411ab551d415810e2843dd30f25eab680efa936a5c7d50a0e59f82af",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u03"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u03.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u03.txt",
+          "content_sha256": "2488137c251181094b1157d3ed9f40a397e3bd63c7dda3ab8939ab24a809b195",
+          "artifact_sha256": "f3a8425bc024a430d6633bf100d845ed8edd40ffc4081a37648b31de5804e89a",
+          "artifact_bytes": 1561
+        },
+        {
+          "source_object_id": "mathia_source_cb03ad36e27e71d1c2b2b095cf02c7694353c78b870336e7ce326e4dcbdb6b47",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u07"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u07.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u07.txt",
+          "content_sha256": "c0e1bf2112b7f75ddb20596bed3e18bc9d4860abf1ab5185328321cd63878f25",
+          "artifact_sha256": "3e3a152e3d6b5c3986f1847279b215e01b33a000959a50ac6f29c083bffcf221",
+          "artifact_bytes": 3396
+        },
+        {
+          "source_object_id": "mathia_source_fa21e1c513769d45d438b839ded6ef0ed27d92f8444e1b97049afa97a08a7a1c",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u12"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u12.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u12.txt",
+          "content_sha256": "f1e9b747f24c86ea645e651088a2b9847f5b54e27c11b99f95b7279cec58c35e",
+          "artifact_sha256": "2010e90395d33525f2fbc085d43a03655dc97a495faba1ae6c8b7f12a4e80887",
+          "artifact_bytes": 2138
+        },
+        {
+          "source_object_id": "mathia_source_6ea34fd7a9d40001a09738c67ba4cb46b6b1a7261d3b9e268ef113bac6abf5e2",
+          "source_id": "openalex_w2591008310",
+          "source_unit_ids": [
+            "batch_168_u13"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/batch_168_u13.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "source_year": 1978,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "numerical-evidence",
+            "partial-results",
+            "zero-density",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/batch_168_u13.txt",
+          "content_sha256": "2c3f1b7fb451e3e95ee0c96bb917f05d767054c25c6e704e39279fb963bf980a",
+          "artifact_sha256": "435bb125bbc0373388cf67fae5fabffd0b378fd5614bb13cc4b9acb54a50af96",
+          "artifact_bytes": 620
+        }
+      ],
+      "audit_context_group": "source:openalex_w2591008310",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "partial-results",
+          "zero-density",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 14
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "5e275f166671c83f4ceb4ac68ab44a0726b052e3c5c2cd582cc45a909c0969c9"
+}

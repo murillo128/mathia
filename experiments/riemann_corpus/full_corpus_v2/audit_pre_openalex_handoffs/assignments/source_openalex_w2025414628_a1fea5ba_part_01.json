@@ -1,0 +1,254 @@
+{
+  "task": "fresh-context stratified capability-vs-style and ecosystem audit",
+  "audit_context_group": "source:openalex_w2025414628",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/independent_stratified_audit.md",
+  "prompt_sha256": "01b8ad26214a2c99a0499451602be75e5b1bd4408ec5d01e781c6a32145d9439",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/audit/batches/source_openalex_w2025414628_a1fea5ba_part_01.jsonl",
+  "item_count": 3,
+  "items": [
+    {
+      "object_id": "mathia_interpretation_88b2733026fc999817366ef65175102b3b2a4aabe125d79b5ac071da53dafba0",
+      "object_role": "interpretation",
+      "proposed_content": "Source fact: the auxiliary function f built from xi and xi' is not zero at a simple xi zero, while a zero of multiplicity r survives with multiplicity r-1. Symmetry and Littlewood therefore make zeros of f control N(T)-N_d(T). Jensen reduces the problem to a mollified mean square; rewriting f through a linear differential polynomial Q and importing Conrey's optimized parameters with Q(0)=1 gives kappa_d>0.70. Interpretation: f removes exactly one layer of vanishing, turning excess multiplicity into a zero set accessible to averaged estimates. Boundary: the construction bounds a distinct-zero proportion; it neither locates zeros nor proves simplicity, and Q(0)=1 restricts the admissible optimization.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_7c77b601219aa8267f215957f843237a7493d04d4d03e3cfb8ca83cea57540cf",
+          "source_id": "openalex_w2025414628",
+          "source_unit_ids": [
+            "openalex_w2025414628_v2_u08"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u08.txt",
+          "source_title": "Zeros of the derivatives of the Riemann zeta-function",
+          "source_year": 2012,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "mollifier",
+            "critical-line",
+            "partial-results"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u08.txt",
+          "content_sha256": "c912c3b158b70fa51f924b9bd387bfe151a25c8410b74cf6493f21db082eebbf",
+          "artifact_sha256": "79f4a87efa604f3ca77a2fbfc17677edd17035f8345af18e294cb688693ed15c",
+          "artifact_bytes": 3323
+        }
+      ],
+      "audit_context_group": "source:openalex_w2025414628",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "critical-line",
+          "mollifier",
+          "partial-results"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 8
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_14c882c3a8ee45bc7cd9d4da1cd0364623e703e382de62969d0a6990039f6aa4",
+      "object_role": "synthesis",
+      "proposed_content": "Conrey's parameterized mollified mean square is a common variational interface, but two different auxiliary constructions determine what defect it measures. For derivative zeros, Littlewood and Jensen turn zeros of J_k on or left of the critical line into an L2 cost; integration by parts replaces J_k by V_k with Q_k(x)=(1-x)^k, and optimizing the mollifier makes the cost approach 2, yielding a right-side derivative-zero density approaching one as k grows. For distinct zeta zeros, the xi-plus-xi' auxiliary f deletes simple zeros and reduces each multiple-zero multiplicity by one; symmetry, Littlewood, and Jensen turn that excess multiplicity into the same kind of L2 cost, now with an admissible linear Q satisfying Q(0)=1, whose imported optimization gives kappa_d>0.70.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_44434c560474801790afceafec92b9980d17b4e7c4ffe82aa62ae508e99440f2",
+          "source_id": "openalex_w2025414628",
+          "source_unit_ids": [
+            "openalex_w2025414628_v2_u02"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u02.txt",
+          "source_title": "Zeros of the derivatives of the Riemann zeta-function",
+          "source_year": 2012,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "mollifier",
+            "critical-line",
+            "partial-results"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u02.txt",
+          "content_sha256": "98d86caa038c5bf91e1a69c5538b8d740816e0fc8842f2e2e3f6382371acb41f",
+          "artifact_sha256": "051c70c920a74e898089470050469f1c48ebfa727cca11d4ee59d763914291ec",
+          "artifact_bytes": 1404
+        },
+        {
+          "source_object_id": "mathia_source_a81e0747104b988591ed2796d97bab22d07b8af24b14544555e33512b4e8c84a",
+          "source_id": "openalex_w2025414628",
+          "source_unit_ids": [
+            "openalex_w2025414628_v2_u07"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u07.txt",
+          "source_title": "Zeros of the derivatives of the Riemann zeta-function",
+          "source_year": 2012,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "mollifier",
+            "critical-line",
+            "partial-results"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u07.txt",
+          "content_sha256": "55d99f19d159ea0b03527b2c45801b8e33d9351f9e3af4db6028078b3f55d399",
+          "artifact_sha256": "87b33e867bf84b19921d136dc9f15cf175f6b477c3c0946839dcd89d63af44ff",
+          "artifact_bytes": 6183
+        },
+        {
+          "source_object_id": "mathia_source_7c77b601219aa8267f215957f843237a7493d04d4d03e3cfb8ca83cea57540cf",
+          "source_id": "openalex_w2025414628",
+          "source_unit_ids": [
+            "openalex_w2025414628_v2_u08"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u08.txt",
+          "source_title": "Zeros of the derivatives of the Riemann zeta-function",
+          "source_year": 2012,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "mollifier",
+            "critical-line",
+            "partial-results"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u08.txt",
+          "content_sha256": "c912c3b158b70fa51f924b9bd387bfe151a25c8410b74cf6493f21db082eebbf",
+          "artifact_sha256": "79f4a87efa604f3ca77a2fbfc17677edd17035f8345af18e294cb688693ed15c",
+          "artifact_bytes": 3323
+        }
+      ],
+      "audit_context_group": "source:openalex_w2025414628",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "critical-line",
+          "mollifier",
+          "partial-results"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 8
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_94b8e7a3cdeb7c623563759dd4820c6ab71748336a0f6a98a4f45847280fbea7",
+      "object_role": "synthesis",
+      "proposed_content": "High-strip asymptotics and nonvanishing for the chi derivatives make it possible to divide the differentiated functional equation by chi^(m) and define J_m without introducing functional-equation-factor zeros. Zeros of J_m then encode reflected zeros of zeta^(m), so Littlewood's lemma converts their leftward displacement into a boundary integral while explicitly retaining a rightward zeta-zero displacement term. Fractional-moment control of successive logarithmic derivatives bounds that boundary integral, producing the comparison theorem; Selberg's estimate, functional-equation symmetry, and the cited signed total-displacement formula then respectively bound the left derivative-zero mass and isolate the right-side main term.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_c60b7125c8be414c5bbd155395327ba22f2b7e6dfe9ada57d45b5269ebc7edde",
+          "source_id": "openalex_w2025414628",
+          "source_unit_ids": [
+            "openalex_w2025414628_v2_u01"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u01.txt",
+          "source_title": "Zeros of the derivatives of the Riemann zeta-function",
+          "source_year": 2012,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "mollifier",
+            "critical-line",
+            "partial-results"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u01.txt",
+          "content_sha256": "6d1c6971f5d0e16441d954cc21221128e60f47b048b0b7cf3462832e9b90adff",
+          "artifact_sha256": "b92ac8c7896f187b789f57959ba4b5cfe650202ded2ad066ef8532f9f3a6ecba",
+          "artifact_bytes": 2170
+        },
+        {
+          "source_object_id": "mathia_source_dcda1f294c38c1fe2ede12a140c85b47b9c5f044d9d65fbb2b4d295a1a21bc28",
+          "source_id": "openalex_w2025414628",
+          "source_unit_ids": [
+            "openalex_w2025414628_v2_u04"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u04.txt",
+          "source_title": "Zeros of the derivatives of the Riemann zeta-function",
+          "source_year": 2012,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "mollifier",
+            "critical-line",
+            "partial-results"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u04.txt",
+          "content_sha256": "d03934b4267e8abe32e8a0051dea0f52d2d2a7da3d2213e78337abe499d0a8e8",
+          "artifact_sha256": "b3d091b0e3b88989db4b8ee3fc1a099cc3ba92e85db20b3c0ed85c1a12ba71f2",
+          "artifact_bytes": 2517
+        },
+        {
+          "source_object_id": "mathia_source_0622af5ab19106365cec08f56f7f2f63d7cb6434e90203a4e523f3673ba0239e",
+          "source_id": "openalex_w2025414628",
+          "source_unit_ids": [
+            "openalex_w2025414628_v2_u05"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u05.txt",
+          "source_title": "Zeros of the derivatives of the Riemann zeta-function",
+          "source_year": 2012,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "mollifier",
+            "critical-line",
+            "partial-results"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u05.txt",
+          "content_sha256": "5707ce4eda87df1705b5bdb2abf3d52acf9883a1de8c61ab72c867e76756c6e2",
+          "artifact_sha256": "5f6f3a8a87ce1f57eb1e1b970dd0396467e831903222546c7c2ee4321e3cdd5b",
+          "artifact_bytes": 6182
+        },
+        {
+          "source_object_id": "mathia_source_baa95ea5f34ccb579fcf6f5d3b320e2478ffa37224ccdcdde33e9521c556786b",
+          "source_id": "openalex_w2025414628",
+          "source_unit_ids": [
+            "openalex_w2025414628_v2_u06"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u06.txt",
+          "source_title": "Zeros of the derivatives of the Riemann zeta-function",
+          "source_year": 2012,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "mollifier",
+            "critical-line",
+            "partial-results"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u06.txt",
+          "content_sha256": "ad14ac86c9eac2edf79074379eca252499955ac43fb54fcf055bdbb2b90c18fd",
+          "artifact_sha256": "5771473fa328fbfafc4268b668aefba39742e778c8e04548f165f96632cfdff5",
+          "artifact_bytes": 1210
+        }
+      ],
+      "audit_context_group": "source:openalex_w2025414628",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "critical-line",
+          "mollifier",
+          "partial-results"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 8
+      }
+    }
+  ]
+}

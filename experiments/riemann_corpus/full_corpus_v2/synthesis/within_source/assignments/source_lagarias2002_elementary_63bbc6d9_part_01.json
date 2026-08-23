@@ -1,0 +1,100 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "lagarias2002_elementary",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_lagarias2002_elementary_63bbc6d9_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The parameterized exponent shape is stable on generic intervals, while equality between competing prime contributions produces discrete tie parameters whose possible multiplicity is constrained by rational-power phenomena.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+          "lagarias2002_u10_exceptional_maximizer_multiplicity"
+        ],
+        "proposed_limit": "The Alaoglu-Erdos rational-power assertion and the four-exponentials conjecture are unresolved, so the claimed exclusion of four-way ties is conditional.",
+        "source_id": "lagarias2002_elementary",
+        "synthesis_id": "riemann_v2_within_7d964a4f253c9d0087b733d2",
+        "title": "Exceptional ties link transcendence to extremal factorization jumps"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the definitional footnote because it changes which maximizers are captured by formula (2.3), rather than being merely bibliographic detail.",
+          "line_end": 242,
+          "line_start": 227,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The qualitative pattern is prose-grounded; the footnote's normalized ratios have flattened exponents and require scan verification for exact notation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source identifies the qualitative factorization pattern—initial primes with nonincreasing, smoothly shaped exponents—and records that a stronger strict-tie convention is what makes the later exponent formula exact.",
+          "source_id": "lagarias2002_elementary",
+          "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Small-prime support and decreasing exponents shape colossally abundant numbers",
+          "unit_artifact_relpath": "depth/units/lagarias2002_u08_prime_exponent_shape_and_definition_boundary.txt",
+          "unit_bytes": 1311,
+          "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+          "unit_sha256": "98f61dc571a39b4775735ee496e5f28621d803ce193dc4a27f6bd91097ba00a7",
+          "unit_type": "structural-characterization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u08_prime_exponent_shape_and_definition_boundary.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Prime-exponent geometry compresses a large integer into an ordered profile. Monotonicity expresses how an extremal allocation favors cheaper small primes, while the definitional footnote shows that tie handling changes an exact classification.",
+            "nonparaphrase_operation": "The map from n to its ordered prime-exponent sequence exposes support, monotonicity, and smooth variation that decimal or integer representations hide. It bridges the variational definition to the explicit exponent rule in the next unit.",
+            "quality_reason": "The source describes colossally abundant numbers as products of all small primes up to a cutoff with nonincreasing exponents of a characteristic smooth shape. The footnote imposes a strict comparison against smaller k and states that, under the stronger Alaoglu-Erdos definition, the class is exactly the one produced by formula (2.3). The candidate correctly warns that the qualitative span neither displays nor proves the promised formula and that tied maximizers make the definitional distinction material. The generic claim that one representation 'hides' what another exposes remains acceptable here because it names the concrete support and monotonicity information preserved by the exponent profile.",
+            "source_support": "The source describes colossally abundant numbers as products of all small primes up to a cutoff, with nonincreasing exponents having a characteristic smooth shape. A footnote says Alaoglu and Erdos impose an additional strict inequality against smaller k; under that stronger definition the numbers are exactly those produced by formula (2.3).",
+            "speculation_status": "The qualitative shape is supported, but this span does not display or prove the promised formula. The stronger and weaker definitions must not be silently conflated, especially at tied maximizers. The qualitative prose is reliable. The footnote's normalized ratios have flattened exponents, so the precise strict condition and any exact symbolic reuse need scan verification. Representing an integer by its ordered prime-exponent profile is a useful operation that exposes the support and monotonicity stated in the prose. Interpreting the profile as favoring smaller primes is a reasonable optimization intuition, not an asserted proof of the shape. The normalized ratios in the definitional footnote have flattened exponents; the candidate correctly limits exact transcription pending scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the conjecture, its stated four-exponentials implication, the exponent rule, and the consequences for multiplicity and consecutive extrema.",
+          "line_end": 281,
+          "line_start": 257,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependence at (2.3) and the normalized objective; the prose reliably states generic uniqueness, exceptional multiplicities, and conditional consequences, but exact formula transcription requires the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The explicit prime-exponent rule classifies generic maximizers, while a discrete exceptional parameter set permits multiple maximizers; the unresolved rational-power conjecture would exclude four-way ties and force consecutive colossally abundant numbers to differ by a prime factor.",
+          "source_id": "lagarias2002_elementary",
+          "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A transcendence obstruction controls ties between extremal factorizations",
+          "unit_artifact_relpath": "depth/units/lagarias2002_u10_exceptional_maximizer_multiplicity.txt",
+          "unit_bytes": 2016,
+          "unit_id": "lagarias2002_u10_exceptional_maximizer_multiplicity",
+          "unit_sha256": "e26b1e369b35653f10487ca3b3b3993582b2e4ec34ddbea1f836ab64c06267ff",
+          "unit_type": "obstruction-and-classification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u10_exceptional_maximizer_multiplicity.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Parameterized optimization produces a piecewise-stable discrete object: exponent profiles remain fixed on open regions and change at tie parameters. The unresolved transcendence statement controls how many independent prime-coordinate changes can coincide at one boundary.",
+            "nonparaphrase_operation": "The exponent functions a_p(epsilon) are the bridge from a global maximization over integers to local prime decisions. The exceptional epsilon set records precisely where this coordinatewise representation ceases to select a unique integer.",
+            "quality_reason": "The source states the unresolved Alaoglu-Erdos rational-power conjecture and its implication from the four exponentials conjecture. It reports generic uniqueness, the primewise floor-and-log exponent rule, a discrete exceptional epsilon set, and exactly one, two, or four maximizing integers. The candidate correctly marks exclusion of four-way ties, consecutive prime ratios, and open generic intervals as conditional on a positive answer to the conjecture.",
+            "source_support": "The source states the Alaoglu-Erdos rational-power conjecture and notes that it would follow from the four exponentials conjecture. It gives a floor-and-log rule for each prime exponent in the generic maximizing integer. Generic epsilon has one maximizer; at a discrete exceptional set there can be one, two, or four. A positive answer to the conjecture would exclude four, force consecutive colossally abundant numbers to have prime ratio, and place each such number on an open interval of generic parameters.",
+            "speculation_status": "The no-four-ties and consecutive-prime-ratio conclusions are conditional, not established facts. Generic uniqueness does not eliminate exceptional multiplicity, and the cited classification is not proved in this span. The prose classification and conditional dependencies are clear. Formula (2.3) and the normalized objective are highly layout-sensitive in extraction, so exact transcription requires the scan. Interpreting the parameterized optimizer as piecewise stable and exceptional epsilon values as tie boundaries is a substantive synthesis of generic uniqueness, discreteness, and the stated open intervals. Describing simultaneous prime-coordinate changes as controlled by the rational-power obstruction is a reasonable mechanism-level reading of the conditional multiplicity consequences. Formula (2.3) and the normalized maximizing objective are highly layout-sensitive; the candidate appropriately avoids relying on an exact unverified transcription."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "5af4b4b5f0b31eaab458607fe7a9dde5b3aa72fed4611d0e28c1491b0ffcdeb8"
+}

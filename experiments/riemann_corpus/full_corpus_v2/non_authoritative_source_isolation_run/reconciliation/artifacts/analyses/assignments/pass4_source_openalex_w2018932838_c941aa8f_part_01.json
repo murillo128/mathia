@@ -1,0 +1,347 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2018932838_c941aa8f_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2018932838",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivation makes the smoothing-resolution mechanism explicit rather than treating convolution as a plotting trick.",
+      "line_end": 469,
+      "line_start": 367,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy; the leading Taylor approximation, amplitude freezing, and damping exponent need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Linearizes the phase across the narrow Gaussian window to derive an exponential damping factor in the zero sum, replacing conditional convergence by an absolutely convergent coarse-grained density.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convolution damps each zero by its local oscillation frequency",
+      "unit_artifact_relpath": "depth/units/openalex_w2018932838_v2_u06.txt",
+      "unit_bytes": 7298,
+      "unit_id": "openalex_w2018932838_v2_u06",
+      "unit_sha256": "518bb9eb3f5b83e40c220e7fc3c35f6ce04cf9ca6e369a011598db20fd83c983",
+      "unit_type": "absolutely-convergent sum rule",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2018932838_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 359,
+          "line_end": 366,
+          "text": "\n\n\nFIG. 3: The result of computing Eq. (5) using the first 104 zeros and σ = 0.05. The range is the\nsame as in Fig. 1. Note that lines with height less than unity occur at powers of primes pn and\nhave height 1/n (for example, the line at 26 = 64 has height 1/6 = 0.16̇).\n\n\n",
+          "sha256": "3983ab117ab598c6241caa7f32d60bdeb6f42b2c111d346516fa160996a209aa"
+        },
+        "after": {
+          "line_start": 470,
+          "line_end": 477,
+          "text": "  We now provide a few examples to illustrate the utility of relation (10). As a first example,\n             .\nwe take αmax = 9878 which is the 104th zero. Using the above formula (with σ = 0.1) yields\n     .\nxmax = 373. In Fig. 4, we evaluate Eq. (9) using the first 104 zeros (and include the smooth\nterm). One can clearly see significant errors for x > 400. As a second example, we take\n     .                                                      .\nαmax = 74921 (the 105 th zero). The formula then gives xmax = 2832. In Fig. 5, we truncate\n",
+          "sha256": "2ce7f85c8e29d1515adbe41513831268fac4f5150487b7d202a717d4847eb48f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c7469bbf131d94d1e59c0b2b1a3b4b72171f8036f258e47dbd4bbef57ed5e762",
+        "dossier_sha256": "7bffc381a77367bed1659795b3ce8ed08fb7e71fe7c5982974949a2b41a2ade9",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III.B Sum Rule and Numerical Convergence",
+            "line_end": 529,
+            "line_start": 367,
+            "mathematical_role": "Derives the Gaussian-damped sum rule, proves practical absolute convergence, and establishes a tunable resolution/error relation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 469,
+          "line_start": 367,
+          "title": "Convolution damps each zero by its local oscillation frequency",
+          "unit_id": "openalex_w2018932838_v2_u06",
+          "unit_type": "absolutely-convergent sum rule",
+          "why_material": "Linearizes the phase across the narrow Gaussian window to derive an exponential damping factor in the zero sum, replacing conditional convergence by an absolutely convergent coarse-grained density."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The derivation makes the smoothing-resolution mechanism explicit rather than treating convolution as a plotting trick.",
+          "representation_dependency": "Formula-heavy; the leading Taylor approximation, amplitude freezing, and damping exponent need PDF verification.",
+          "unit_id": "openalex_w2018932838_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 316,
+            "line_start": 272,
+            "title": "Gaussian smoothing converts irregular peaks into comparable intensities",
+            "unit_id": "full_openalex_w2018932838_u02",
+            "unit_type": "convolution-based extraction",
+            "why_material": "Convolves the truncated density with an unnormalized Gaussian so peaks share a controlled width and their heights estimate pre-convolution areas, while stating the spacing-resolution tradeoff."
+          },
+          {
+            "line_end": 527,
+            "line_start": 470,
+            "title": "Translate a zero cutoff into a reliable prime-power range",
+            "unit_id": "openalex_w2018932838_v2_u07",
+            "unit_type": "resolution and error certification",
+            "why_material": "Chooses a damping threshold ε and solves for xmax proportional to σαmax, so omitted zeros are uniformly insignificant below that range and truncation error can be tuned directly."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Correctly ordered zero interference becomes quantitatively usable only after Gaussian convolution standardizes peak shapes and exponentially suppresses high-zero terms, yielding a direct cutoff-to-resolution error law.",
+            "limit": "The sum rule reconstructs a chosen coarse-grained density and relies on a local phase approximation; it does not make the unsmoothed conditional series efficient for enormous primes.",
+            "parent_local_unit_ids": [
+              "openalex_w2018932838_v2_u05",
+              "full_openalex_w2018932838_u02",
+              "openalex_w2018932838_v2_u06",
+              "openalex_w2018932838_v2_u07"
+            ],
+            "title": "Smoothing turns reconstruction into a certifiable spectral measurement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 366,
+              "line_start": 317,
+              "reason": "Plots and captions verify reciprocal prime-power heights and introduce the convergence subsection."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2018932838_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2018932838_v2_u06",
+          "spontaneous_reading": "Gaussian convolution does more than make a plot smoother: local phase linearization turns it into an explicit exponential filter on zero ordinates. That filter upgrades the coarse-grained series to absolute convergence and converts a zero cutoff into a controllable spatial resolution."
+        },
+        "directed": {
+          "unit_id": "openalex_w2018932838_v2_u06",
+          "source_grounded_mathematics": "Riemann's oscillatory prime-power density is convolved termwise with a Gaussian. Approximating the slowly varying amplitude by its central value and linearizing S_alpha(x')=alpha log x' near x yields a damped cosine sum with factor exp(-sigma^2 alpha^2/(2x^2)). A threshold epsilon then gives a proportional relation between the largest reliable x and sigma times the largest included zero.",
+          "conceptual_reading": "Smoothing creates a regularized representation whose truncation error is encoded in its coefficients. Resolution and convergence become tunable parameters rather than opaque consequences of a raw conditionally convergent sum.",
+          "representation_or_bridge": "The Gaussian kernel, local phase derivative, and exponential damping factor bridge physical-space coarse graining to frequency-space suppression; epsilon is the certification parameter.",
+          "boundary_or_failure": "The derivation freezes the amplitude and retains only the leading Taylor term, under a narrow-kernel condition. The smoothed density resolves Gaussian lines, not the original delta spikes, and resolution is traded against precision.",
+          "uncertainty": "The mechanism is clear, but exact amplitude, variance convention, damping exponent, and threshold formula are display-sensitive and should be PDF-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2018932838_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span convolves with a Gaussian, freezes a slowly varying amplitude, linearizes the phase, and thereby obtains an exponentially damped cosine formula.",
+          "It presents a relation among alpha_max, sigma, epsilon, and x_max and explicitly describes the resolution-versus-precision tradeoff."
+        ],
+        "inference": [
+          "Interpreting Gaussian smoothing as frequency suppression and x_max as an operational resolution scale is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The pass overstates the result by calling epsilon a 'certification parameter' and saying truncation error is encoded in coefficients without qualification; equation (9) follows two local approximations, and the span supplies no rigorous bound on the sum of all omitted terms.",
+          "Saying smoothing 'upgrades' the original series to absolute convergence is source-reported, but the displayed damped formula is only approximate, so exact convolution and approximate local-phase sum rule must remain distinct."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Resolution and convergence become tunable parameters' is useful only if attached to the explicit Gaussian approximation and not presented as a general theorem about smoothing."
+        ],
+        "context_or_ocr_risk": [
+          "The Gaussian variance convention is inconsistent in prose versus formulas, and the threshold range is OCR-sensitive; exact exponents and constants need PDF checking."
+        ],
+        "missed_mechanism": [
+          "The decisive approximation hypotheses are sigma at most one-half, slowly varying A on the kernel window, and truncation of the Taylor expansion of S_alpha after its linear term."
+        ],
+        "revision_instructions": [
+          "Replace 'certificate' and 'certification' with 'heuristic/operational cutoff estimate'; state that the exponential filter and x_max rule arise after amplitude freezing and phase linearization, and do not claim a rigorous aggregate truncation-error bound."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes numerical demonstrations and the distinction between theoretical machine-zero precision and visually meaningful percent-level resolution.",
+      "line_end": 527,
+      "line_start": 470,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact proportionality and reported alpha values require source verification; figures are supporting evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses a damping threshold ε and solves for xmax proportional to σαmax, so omitted zeros are uniformly insignificant below that range and truncation error can be tuned directly.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Translate a zero cutoff into a reliable prime-power range",
+      "unit_artifact_relpath": "depth/units/openalex_w2018932838_v2_u07.txt",
+      "unit_bytes": 2600,
+      "unit_id": "openalex_w2018932838_v2_u07",
+      "unit_sha256": "0815ae65e5cb5cdd527e50129d6749a1beac419d921b9311d4cd87ab70ad8830",
+      "unit_type": "resolution and error certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2018932838_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 462,
+          "line_end": 469,
+          "text": "exponential factor (e−3/2 ) at its inflection point xI = (1/ 3)σα [15]. This implies xmax < xI .\nThe lower bound can be as small as machine zero (for example 10−16 ). However, there is\nno reason for such an extreme choice since we are mostly interested in determining where\nnumerical errors become significant (i.e. where lines are no longer visibly resolved and the\nintensities are erroneous by more than 1%). Of course, higher precision can be imposed at\nthe cost of resolving fewer primes. But, since the improved precision will not be apparent\nin the graph of ρσ (x), there is no compelling reason to choose exceedingly small values. For\nour purposes, a convenient choice is ε = e−7/2 .\n",
+          "sha256": "164a39c85e4048f0b89231bfa580f85900483fe47ec1b8f8d9cc7866d3392670"
+        },
+        "after": {
+          "line_start": 528,
+          "line_end": 535,
+          "text": "\n\nIV.   DISCUSSION AND CONCLUSION\n\n\n   By writing ζ(γ + it) = |ζ(γ + it)| exp(−iθγ (t)), we see that all the information about the\nzeros along the t−axis is contained in the phase θγ (t). This has to jump by π to accomodate\nthe sign change in ζ at every zero, and it can be shown that the oscillating part of the\n",
+          "sha256": "9efacb56cff753510ddded209533766249b26b65945c96805617caa4df62fa85"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c7469bbf131d94d1e59c0b2b1a3b4b72171f8036f258e47dbd4bbef57ed5e762",
+        "dossier_sha256": "7bffc381a77367bed1659795b3ce8ed08fb7e71fe7c5982974949a2b41a2ade9",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III.B Sum Rule and Numerical Convergence",
+            "line_end": 529,
+            "line_start": 367,
+            "mathematical_role": "Derives the Gaussian-damped sum rule, proves practical absolute convergence, and establishes a tunable resolution/error relation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 527,
+          "line_start": 470,
+          "title": "Translate a zero cutoff into a reliable prime-power range",
+          "unit_id": "openalex_w2018932838_v2_u07",
+          "unit_type": "resolution and error certification",
+          "why_material": "Chooses a damping threshold ε and solves for xmax proportional to σαmax, so omitted zeros are uniformly insignificant below that range and truncation error can be tuned directly."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes numerical demonstrations and the distinction between theoretical machine-zero precision and visually meaningful percent-level resolution.",
+          "representation_dependency": "Exact proportionality and reported alpha values require source verification; figures are supporting evidence.",
+          "unit_id": "openalex_w2018932838_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 469,
+            "line_start": 367,
+            "title": "Convolution damps each zero by its local oscillation frequency",
+            "unit_id": "openalex_w2018932838_v2_u06",
+            "unit_type": "absolutely-convergent sum rule",
+            "why_material": "Linearizes the phase across the narrow Gaussian window to derive an exponential damping factor in the zero sum, replacing conditional convergence by an absolutely convergent coarse-grained density."
+          },
+          {
+            "line_end": 609,
+            "line_start": 530,
+            "title": "Zero ordinates set peak locations while real parts set intensities",
+            "unit_id": "openalex_w2018932838_v2_u08",
+            "unit_type": "critical-line sensitivity test",
+            "why_material": "Uses the zeta phase to connect zeros and primes, explains why high zero frequencies are required at large x, and reports that moving zeros off the critical line preserves prime-power positions but destroys their relative weights."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Correctly ordered zero interference becomes quantitatively usable only after Gaussian convolution standardizes peak shapes and exponentially suppresses high-zero terms, yielding a direct cutoff-to-resolution error law.",
+            "limit": "The sum rule reconstructs a chosen coarse-grained density and relies on a local phase approximation; it does not make the unsmoothed conditional series efficient for enormous primes.",
+            "parent_local_unit_ids": [
+              "openalex_w2018932838_v2_u05",
+              "full_openalex_w2018932838_u02",
+              "openalex_w2018932838_v2_u06",
+              "openalex_w2018932838_v2_u07"
+            ],
+            "title": "Smoothing turns reconstruction into a certifiable spectral measurement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2018932838_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2018932838_v2_u07",
+          "spontaneous_reading": "The cutoff rule becomes an empirical certificate: predicted endpoints from alpha_max and sigma coincide with where the reconstructed line heights visibly deteriorate, and epsilon directly sets the scale of omitted contributions near that endpoint."
+        },
+        "directed": {
+          "unit_id": "openalex_w2018932838_v2_u07",
+          "source_grounded_mathematics": "Two examples evaluate the Gaussian sum rule using successively larger zero cutoffs. The relation from the preceding unit predicts reliable ranges around x=373 and x=2832, and the plotted reconstructions develop significant errors shortly beyond those values. The text says omitted terms are order epsilon near x_max and exponentially smaller deeper inside the certified interval.",
+          "conceptual_reading": "A heuristic smoothing derivation is turned into an operational error-control rule and checked at two scales. The important output is a mapping from spectral budget to reliable reconstruction range.",
+          "representation_or_bridge": "The tuple of alpha_max, sigma, epsilon, and x_max connects the available zero data to a spatial validity interval for the prime-power density.",
+          "boundary_or_failure": "The certification concerns the smoothed sum rule and an indicated percent-level intensity tolerance, not exact recovery of unsmoothed spikes. Accuracy degrades beyond the predicted range.",
+          "uncertainty": "The reported examples are clear, but exact proportionality, alpha values, and interpretation of the plotted one-percent bound should be verified from the original figures and formulas."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2018932838_v2_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The source tests the preceding x_max relation at two zero cutoffs, obtaining approximately 373 and 2832, and observes visible deterioration shortly beyond those values.",
+          "It says omitted contributions near x_max are O(epsilon), smaller deeper inside, and gives the figure's one-percent intensity claim for the chosen sigma."
+        ],
+        "inference": [
+          "Calling the examples an empirical check of a spectral-budget-to-range rule is justified."
+        ],
+        "unsupported_or_imported": [
+          "The pass repeatedly calls the range 'certified' and the rule an 'error-control certificate'; this is too strong because the underlying sum rule was obtained by approximations and the evidence here is two numerical examples plus the authors' error estimate.",
+          "The source does not prove a uniform bound over all omitted zero terms in this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Operational error-control rule' risks turning an illustrative numerical heuristic into a reusable theorem-like template."
+        ],
+        "context_or_ocr_risk": [
+          "Interpreting the plotted 0.01 tolerance depends on the preceding sigma/epsilon conventions and the figures; exact alpha exponents are visually ambiguous in extraction."
+        ],
+        "missed_mechanism": [
+          "The reported cutoff controls the smoothed Gaussian-line reconstruction, not the original delta density or the raw conditionally convergent series."
+        ],
+        "revision_instructions": [
+          "Downgrade 'certificate/certified' to 'empirical cutoff estimate' and explicitly inherit the approximation assumptions from unit u06; retain the two numerical endpoint comparisons as evidence, not proof."
+        ]
+      }
+    }
+  ]
+}

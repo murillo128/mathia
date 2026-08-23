@@ -1,0 +1,263 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1764772889",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1764772889_3f596092_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Affine covariance under conjugation and reflection gives a fixed point at one half, while continuous parameter deformation plus a discrete target spectrum motivates pinning the real part to that fixed point.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w1764772889_v2_u05",
+          "full_openalex_w1764772889_v2_u06",
+          "full_openalex_w1764772889_v2_u07"
+        ],
+        "proposed_limit": "The decisive double-reflection symmetry or parameter-independent orthogonality is assumed rather than derived, so discreteness cannot complete the argument alone.",
+        "source_id": "openalex_w1764772889",
+        "synthesis_id": "riemann_v2_within_8435ced54f4553b40567dc4b",
+        "title": "Reflection covariance, deformation, and the fixed line"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Figure 3 at lines 919-925 supports the rectangle geometry, but the classification and failure conclusion are stated in prose here and do not require the plot body.",
+          "line_end": 424,
+          "line_start": 382,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Medium: affine complex labels and the 24-permutation count matter, but the cases and obstruction are recoverable from prose. The rectangle visualization is helpful rather than essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Systematically compares the four reflected zero locations with four reference-state orthogonality arguments. It rejects permutations that smuggle in the RH through s*=1-s, classifies generic and degenerate mappings, and concludes that generic off-critical orthogonal states cannot be discarded. This negative result is the paper's clearest protection against a circular symmetry proof.",
+          "source_id": "openalex_w1764772889",
+          "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Permutation audit fails to exclude generic off-critical zeros",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1764772889_v2_u05.txt",
+          "unit_bytes": 3029,
+          "unit_id": "full_openalex_w1764772889_v2_u05",
+          "unit_sha256": "a3e9d42e64a4c2312f98b25fdf196b9c30fd482d84dd06b33d94df0ad8eb1d43",
+          "unit_type": "failed route and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1764772889_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The permutation classification is a counterfactual falsification tool: require the proposed correspondence to survive every symmetry-consistent placement, then distinguish genuine constraints from relabellings that encode RH in advance. The surviving generic cases are the obstruction.",
+            "nonparaphrase_operation": "Two rectangles of four points provide the representation: one from zeta's conjugation/reflection orbit and one from affine state labels. Permutations test whether the affine map intertwines the orbits without identifying opposite vertices by assumption.",
+            "quality_reason": "The span enumerates the 24 vertex permutations, rejects identifications such as s*=1-s as circular, separates generic, critical-line, and degenerate cases, and concludes that generic off-critical orthogonal labels cannot be discarded. The candidate preserves the distinction between failing to exclude off-line zeros and producing an off-line zero.",
+            "source_support": "Starting from S(1/2,s)=-Z(3/4-s/2)=-Z(1/4+s/2), the source compares the four affine arguments associated with s=x+iy, 1-x+iy, 1-x-iy, and x-iy to a zero quadruple s', s'*, 1-s', 1-s'*. Among 24 vertex permutations it rejects identifications such as s*=1-s as circular, identifies four generic affine correspondences compatible with zeros anywhere in the strip, four critical-line identifications (with sign variants), and twelve degeneracies collapsing to the reference state's self-pairing. It concludes that off-critical orthogonal labels cannot be excluded by this analysis.",
+            "speculation_status": "This audit does not produce off-line zeros, but it proves the proposed symmetry analysis has no mechanism to exclude them. Any route that selects s'=1-s'* has inserted the critical-line conclusion, while collapsed reference-state cases supply no orthogonality relation. Thus this stage cannot imply RH. The failure conclusion and case types are explicit in prose. Exact affine coefficients and the figure-3 geometry are formula-sensitive, though the obstruction does not depend on inspecting the figure body. Viewing the two four-point orbits as rectangles and the permutation classification as an adversarial falsification test is a substantive representation of the source's symmetry audit. The conclusion that this analysis has no mechanism to imply RH follows directly from the surviving generic cases and the source's explicit negative conclusion. Exact affine coefficients and sign variants are formula-sensitive, but the prose independently supports the case classification and obstruction."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Begins with the transition from the failed generic analysis and ends at the source's own conditional statement. It must be paired with the preceding obstruction to avoid presenting a conditional criterion as an unconditional proof.",
+          "line_end": 451,
+          "line_start": 425,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Medium: the affine equations are concise and prose-explained; exact coefficient substitutions for k and l remain formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Isolates an exact affine constraint, 2b+a=1, under which the map from state labels to zeta arguments commutes with both conjugation and reflection. It makes explicit that the claimed RH consequence assumes the orthogonal states possess the double-reflection symmetry; the theorem does not establish that assumption.",
+          "source_id": "openalex_w1764772889",
+          "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Double-reflection covariance criterion for affine zeta maps",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1764772889_v2_u06.txt",
+          "unit_bytes": 1741,
+          "unit_id": "full_openalex_w1764772889_v2_u06",
+          "unit_sha256": "c9fc81209d5c3127e9b0176751aafd58d01d4dc3c72f3bdfc19c64b6751249f9",
+          "unit_type": "conditional criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1764772889_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The criterion is an intertwining relation between two involutions. Rewriting it as s'=a(s-1/2)+1/2 shows that all admissible affine maps share the fixed point 1/2; covariance constrains representation parameters but does not establish invariance of the underlying vanishing set.",
+            "nonparaphrase_operation": "The bridge is a commuting-square viewpoint: reflect or conjugate a state label and then apply s->as+b, or first map to the zeta plane and apply the corresponding zeta symmetry. The scalar constraint 2b+a=1 is exactly what makes reflection commute.",
+            "quality_reason": "For real a,b, the span maps s to as+b, respects conjugation, and derives 2b+a=1 as the iff condition for compatibility with reflection. It substitutes a=-2/l and b=(4k-1)/l, obtains l=4(2k-1), and states the claimed RH result only under an assumed double-reflection invariance.",
+            "source_support": "Theorem 4 considers a real-affine zeta argument s'=as+b. Conjugation is automatically respected for real a,b, while matching 1-s' with a(1-s)+b is equivalent to 2b+a=1. For the source's a=-2/l and b=(4k-1)/l, this becomes l=4(2k-1). The source states its RH conclusion conditionally on the orthogonal labels actually possessing the double-reflection symmetry.",
+            "speculation_status": "The preceding permutation audit found generic off-line cases, and this theorem assumes the extra double-reflection invariance needed to remove them. It therefore supplies a conditional covariance criterion, not an unconditional proof of that invariance or of RH; arbitrary a,b do not preserve the symmetry. The iff constraint and its conditional status are explicit. The substitutions relating a,b to k,l and their exact signs should be scan-verified because they are displayed-formula sensitive. The commuting-involutions and shared-fixed-point formulation is an exact algebraic restatement of 2b+a=1, not a generic representation slogan. The candidate correctly separates covariance of the affine map from proof that the orthogonal/vanishing set has the required invariance. Signs in the a,b,k,l substitutions are display-sensitive and are appropriately marked for scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The statement labeled (i), rather than discreteness alone, supplies the needed parameter-independence assumption. Lines 505-515 merely summarize this and the earlier results.",
+          "line_end": 504,
+          "line_start": 452,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: affine relations among s, s-prime, a, b, k, and l carry the argument. Prose is sufficient for the conceptual move, but exact subscripts and coefficients should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Parametrizes a family of operators satisfying the reflection constraint, reformulates RH as independence of reference-state orthogonality from the family parameter, and argues that a continuously moving real part is incompatible with a discrete zero set unless the fixed point is one half. This exposes both the intended deformation mechanism and its unproved premise.",
+          "source_id": "openalex_w1764772889",
+          "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Continuous operator-family deformation turns RH into parameter-independent orthogonality",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1764772889_v2_u07.txt",
+          "unit_bytes": 3480,
+          "unit_id": "full_openalex_w1764772889_v2_u07",
+          "unit_sha256": "7bc1a217af88cd03da67610cc92374c95a100cf24dd5cceb457eff199ccdf511",
+          "unit_type": "deformation and discreteness argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1764772889_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a deformation-to-rigidity argument: a continuum of representations is used to turn discreteness of an external target set into a fixed-point constraint. It is potentially reusable when an invariant property truly transports across the family, but here transport of eigenfunction labels is weaker than transport of vanishing.",
+            "nonparaphrase_operation": "The affine family x'=1/2+a(x-1/2) is the central bridge between operator parameter k (with constrained l), state real part x, and zeta-zero real part x'. Its common point (1/2,1/2) makes the intended rigidity visible in the x-x' plane.",
+            "quality_reason": "The span parametrizes the constrained operator family, states parameter-independent reference-state orthogonality as statement (i), rewrites the zero coordinate as s'=a(s-1/2)+1/2, and invokes discreteness under continuous variation of a. The candidate correctly identifies that statement (i), not discreteness by itself, is the premise needed to keep the moving image inside the zero set.",
+            "source_support": "Under l=4(2k-1), the source parametrizes D1 and its eigenfunctions by k. Statement (i) requires that if a state with real part x is orthogonal to the reference label 1/2 for one (k,l), the corresponding same-x state is orthogonal for every admissible (k,l). The zeta coordinate is written s'=a(s-1/2)+1/2, so x'=1/2+a(x-1/2). Varying a continuously while zero locations are discrete then pins x=x'=1/2, provided statement (i) holds.",
+            "speculation_status": "Statement (i)—parameter-independent orthogonality—is an assumption, not a consequence of a one-to-one correspondence between eigenfunctions. Discreteness can force constancy only after one proves that the continuously parameterized image remains in the zero set throughout a connected deformation. Consequently the argument reformulates the missing burden rather than discharging it. The logical dependency on statement (i) is explicit. Exact subscripts, coefficient formulas, admissible parameter ranges, and continuity/domain conditions are not fully secured by the extracted span and require scan or analytic verification. The deformation-to-rigidity description captures the non-paraphrase mechanism: continuous transport into a discrete target can force a common fixed point only if vanishing actually persists along the family. Distinguishing a correspondence of eigenfunction labels from transport of orthogonality exposes the unproved burden without asserting a counterexample. Subscripts, coefficient formulas, exclusion of singular parameter values, and analytic continuity/domain conditions are not fully secure in the extraction; the candidate records these limits."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_3436d862765b166d5acfc080e3fa21aeea031d0c6a98f5d75e0400e4191ae84c",
+        "dossier_sha256": "a70dae0dd4c5ac2c900aa284e7f23cf932a057f51e961866816aefc1c94ac350"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The discrete separation of lengths from integer harmonics explains zeta factorization, the Cantor example explains pole-defined complex dimensions, and the continuum proposal tries to lift both ideas into a string/dual-string realization of zeta reflection.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w1764772889_v2_u08",
+          "full_openalex_w1764772889_v2_u09",
+          "full_openalex_w1764772889_v2_u10"
+        ],
+        "proposed_limit": "The required complex continuum data and pseudo-measures are proposed only in principle, and the source does not establish their existence, uniqueness, analytic domains, or functional-equation duality.",
+        "source_id": "openalex_w1764772889",
+        "synthesis_id": "riemann_v2_within_4bee1adbb5b821e5b49736bf",
+        "title": "Discrete factorization to continuum dual string"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The surrounding physical examples are motivational; the reusable mechanism is the separation of primitive lengths from harmonic multiplicities and its Dirichlet-series factorization.",
+          "line_end": 576,
+          "line_start": 516,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: equations (21)-(24) define the counting functions and factorization. The prose makes the sums' roles clear, but exact domains and exponents should be checked against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates a string's geometric length counting function from the integer harmonics of each length and derives the reusable factorization ZF=ZL times zeta. It also explains why poles of the geometric factor encode complex dimensions and why collisions with zeta zeros affect spectral visibility.",
+          "source_id": "openalex_w1764772889",
+          "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fractal-string frequency spectrum factors through the Riemann zeta function",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1764772889_v2_u08.txt",
+          "unit_bytes": 3779,
+          "unit_id": "full_openalex_w1764772889_v2_u08",
+          "unit_sha256": "97cbb099660341790d642cb35202dcc827c433c17e3492449a64fcc242cafacd",
+          "unit_type": "spectral factorization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1764772889_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The factorization cleanly decomposes geometry from repetition: Z_L records the primitive length multiset, while zeta records the common integer-harmonic tower. This is a reusable product-generating-function move, and zeros of one factor can mask singular information carried by the other.",
+            "nonparaphrase_operation": "The bridge is the frequency double sum indexed independently by component j and harmonic k. Factoring those indices converts a physical spectrum into the product of a geometric Dirichlet series and the Riemann zeta function.",
+            "quality_reason": "The span defines the geometric length series and the double frequency series, with component index j and harmonic index k separating to give Z_F(s)=zeta(s)Z_L(s) in the fractal-string case. It identifies poles of Z_L as complex dimensions and explicitly says their coincidence with zeta zeros matters.",
+            "source_support": "For link lengths l_j, the source defines Z_L(s)=sum_j l_j^s. Frequencies k/l_j give Z_F(s)=sum_{k,j}k^{-s}l_j^s, which factors as Z_F(s)=zeta(s)Z_L(s) in the fractal-string case (or with a generalized zeta in the broader notation). It identifies poles of Z_L as complex dimensions and notes that coincidence of such poles with zeta zeros can affect their spectral visibility.",
+            "speculation_status": "The identity requires convergence or a justified meromorphic continuation before products, poles, and cancellations can be manipulated. It does not make the string's complex dimensions zeta zeros, nor do the surrounding Epstein-zeta and physical examples establish a Riemann fractal string. The separation of indices and factorization are clear in prose. Exact summation domains, exponents, and the distinction between ordinary and generalized zeta notation are formula-sensitive and should be checked against the page image. Interpreting the factorization as separation of primitive geometry from a universal integer-harmonic tower is a concrete reusable mechanism supplied by the independent double-sum indices. The masking/cancellation warning and need for convergence or justified meromorphic continuation are valid analytic proof-burden qualifications. Exact summation domains, exponents, and the ordinary-versus-generalized zeta notation are formula-sensitive and are explicitly left for scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The final quantum-gravity remark is speculative; the accepted mechanism is the counting-series-to-poles calculation and its dimensional interpretation.",
+          "line_end": 600,
+          "line_start": 577,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: the OCR around equation (25) is crowded, although the prose clearly states lengths, degeneracies, pole equation, and resulting real and imaginary parts. Scan verification is required for exact algebra.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Works from length multiplicities and scaling ratios to a geometric counting series whose poles have a real part equal to Cantor dimension and periodically spaced imaginary parts. This is the concrete model motivating pole-defined complex dimensions in the proposed Riemann fractal string.",
+          "source_id": "openalex_w1764772889",
+          "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Cantor-string poles generate complex dimensions",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1764772889_v2_u09.txt",
+          "unit_bytes": 1479,
+          "unit_id": "full_openalex_w1764772889_v2_u09",
+          "unit_sha256": "28a7d5bbd53b35fcf3f76de64a6aa18adb493acc4bc8a621ce32620cef086743",
+          "unit_type": "worked construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1764772889_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The worked construction shows how scale and branching data split into two components of a pole: exponential growth versus contraction fixes the real part, while multivalued logarithmic phase creates periodic imaginary copies. A self-similar recursion is thus compressed into a meromorphic singularity lattice.",
+            "nonparaphrase_operation": "The bridge runs from a weighted length multiset to its Dirichlet generating function, then from the geometric-series denominator to the complex logarithms of its pole equation. This concretely motivates the later proposal to define strings through prescribed pole sets.",
+            "quality_reason": "The span assigns Cantor-string lengths 3^{-n} and multiplicities 2^n, sums the resulting geometric series, solves its pole equation, and states a common real part log(2)/log(3) with imaginary period 2pi/log(3). It identifies that real part as the Cantor dimension and keeps the quantum-gravity remark at the level of a proposal.",
+            "source_support": "The example assigns lengths l_n=3^{-n} with multiplicities w_n=2^n, so Z_L(s) sums powers of 2·3^{-s} and has denominator 1-2·3^{-s}. Its poles satisfy 2·3^{-s}=1, giving s_n=log(2)/log(3) plus integer imaginary shifts of period 2pi/log(3). The source identifies the common real part with the Cantor-set dimension.",
+            "speculation_status": "This calculation concerns the Cantor string only. The speculative quantum-gravity interpretation is unsupported here, and the existence of periodic complex dimensions does not connect them to nontrivial zeta zeros or prove properties of a proposed Riemann fractal string. Lengths, degeneracies, and the stated real/imaginary parts are prose-supported, but equation (25) is crowded in extraction; the denominator, indexing convention, and signs of the imaginary branches should be scan-verified for exact algebra. Separating branching/contraction growth from logarithmic phase is a mathematically grounded explanation of how the real similarity dimension and periodic imaginary translates arise. The generating-function-to-pole-set bridge is a non-paraphrase mechanism that directly motivates, without validating, later prescribed-pole constructions. Equation (25)'s denominator, indexing, and signs of imaginary branches are crowded in OCR; the candidate flags these while relying on the prose-supported mechanism."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The text says suitable fractal pseudo-measures and renormalized contour tools could define the integrals only in principle; it does not construct functions satisfying all asserted properties or prove the duality.",
+          "line_end": 654,
+          "line_start": 612,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: equations (27)-(29), tilded dual data, measures, and the zero-versus-pole alternative are central. Extraction is prose-recoverable at the conceptual level, but exact integrals and conjugacy claims need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replaces discrete lengths and frequencies by complex-valued continuum maps and measures for a string and its dual, proposes their counting-integral ratio as zeta, and defines a Riemann fractal string by poles of its geometric counting function at zeta zeros. It is the source's explicit attempt to realize the functional equation as duality between representations.",
+          "source_id": "openalex_w1764772889",
+          "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Continuum fractal-string duality encodes zeta as a ratio of counting integrals",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1764772889_v2_u10.txt",
+          "unit_bytes": 2782,
+          "unit_id": "full_openalex_w1764772889_v2_u10",
+          "unit_sha256": "42cd30d49c75bcca1160fb8499ab5420aba407d94d824acf84751b6bf8a648c9",
+          "unit_type": "continuum dual construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1764772889_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The move is a continuum synthesis: encode arithmetic as a quotient of spectral and geometric transforms and seek to realize functional-equation reflection as duality between two sets of continuum data. The ratio separates numerator-zero and denominator-pole mechanisms, but prescribing the quotient risks merely relocating the target zeta structure into the unknown data.",
+            "nonparaphrase_operation": "The bridge objects are the complex maps l,f, their duals, the pseudo-measures mu and tilde-mu, and Mellin-like counting integrals. A string/dual-string correspondence is intended to carry s<->1-s, while the quotient Z_F/Z_L carries the representation to zeta.",
+            "quality_reason": "The span replaces the discrete counting sums by complex-valued continuum integrals for a string and its dual, proposes Z_F/Z_L=zeta with an analogous dual relation, and says pseudo-measures and renormalized contour tools could define the data only in principle. It gives the numerator-zero versus denominator-pole alternative at zeta zeros and defines a Riemann fractal string by simple poles of Z_L at precisely those zeros.",
+            "source_support": "The span replaces discrete sums by integrals Z_L(s)=integral l(x)^s dmu(x) and Z_F(s)=integral f(x)^{-s} dmu(x), with tilded complex-conjugate data and a dual measure for 1-s. It proposes Z_F(s)/Z_L(s)=zeta(s), with an analogous dual relation, and says fractal pseudo-measures and renormalized contour integration could define the quantities in principle. At a zeta zero it allows either a zero of Z_F or a pole of Z_L, then defines a Riemann fractal string by requiring simple poles of Z_L precisely at zeta zeros.",
+            "speculation_status": "No functions or measures satisfying all identities are constructed, and existence, uniqueness, convergence, analytic continuation, and duality are not proved. A zero of a quotient does not by itself determine a simple numerator zero or denominator pole without order and noncancellation hypotheses. Defining the Riemann fractal string by the desired pole set is not evidence that such a string exists. The proposal and its in-principle status are explicit. Exact tildes, powers, normalizations, conjugacy claims, and pole/zero alternatives in equations (27)-(29) are extraction-sensitive and need scan verification. The candidate accurately reads this as a specification of desired continuum data and duality, not an existence construction. Its warning that prescribing the quotient can relocate the desired zeta structure into unknown functions, and that zero/pole orders require noncancellation hypotheses, is a necessary proof-burden analysis. Tildes, conjugacy, powers, normalization, and the precise zero/pole alternatives in equations (27)-(29) are extraction-sensitive and are properly marked for scan verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_3436d862765b166d5acfc080e3fa21aeea031d0c6a98f5d75e0400e4191ae84c",
+        "dossier_sha256": "a70dae0dd4c5ac2c900aa284e7f23cf932a057f51e961866816aefc1c94ac350"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ad4971d65e39658f6b231b0ab548bc1c7682dc29fa9fd2549301f5fc5033f387"
+}

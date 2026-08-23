@@ -1,0 +1,648 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2008229093_2d55b35d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2008229093",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Self-contained methodological motivation; its general method is instantiated by the functionals beginning at line 172.",
+      "line_end": 70,
+      "line_start": 32,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; only the partition-function display is formula-dependent and is legible in the normalized text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It separates zero-temperature dynamics from statistical summation and explains why a self-consistent filling-fraction equation can reuse S-matrix data beyond exactly integrable systems.",
+      "source_id": "openalex_w2008229093",
+      "source_normalized_sha256": "8da67a3e0a612880d845fbcefab616c42837a6a127c83c709eedfa900b7394f0",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Scattering data as the dynamical input to thermal occupation equations",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2008229093_u04.txt",
+      "unit_bytes": 2926,
+      "unit_id": "full_openalex_w2008229093_u04",
+      "unit_sha256": "4af19f35dc790f34164e97b638b161d421aa88a8a08886e1098254d511873ec8",
+      "unit_type": "thermal-dynamics separation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2008229093_u04.txt",
+      "source": {
+        "source_id": "openalex_w2008229093",
+        "title": "INTERACTING BOSE AND FERMI GASES IN LOW DIMENSIONS AND THE RIEMANN HYPOTHESIS",
+        "authors": [
+          "André LeClair"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 24,
+          "line_end": 31,
+          "text": "\n                                                                                    1\n\n<!-- source-page: 2 -->\n\nI.    INTRODUCTION\n\n\n",
+          "sha256": "92c5e1293804b1eec1bef7d81fdadf1766f5f64057c6c4c0d31d0dc147c7c696"
+        },
+        "after": {
+          "line_start": 71,
+          "line_end": 78,
+          "text": "   In the next section we first review the main results in [1]. In section III we describe the\nkind of second-quantized hamiltonians that are the subject of this paper. In section IV we\nconsider bosons with a δ function two-body potential. In section V we turn to fermionic\ngases in the same approximation and derive formulas that can be used to study the effect\nof interactions on the Fermi energy. Since the lowest order contribution corresponds to a\nconstant scattering length approximation, the results we obtain in sections IV and V are\nalready known, and are included here mainly for illustrative purposes.\n   In section IV we study the 2d case which has some remarkable features. The integral\n",
+          "sha256": "9af3eac26ec02a29616c6c6f3dfc19e1f70203207a9d742232088d08791351f9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ff2a403b3e78095e9225749fc4bd918e926270d4a303cc02050c465fc7b0bc7e",
+        "dossier_sha256": "2a844570ff31e1a91c71dca99557eb667d00155b11b51cd1d82810f431b0c571",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. Introduction",
+            "line_end": 164,
+            "line_start": 29,
+            "mathematical_role": "Motivates the S-matrix thermal formalism, contrasts physics approaches to RH, and states the pressure-based heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 70,
+          "line_start": 32,
+          "title": "Scattering data as the dynamical input to thermal occupation equations",
+          "unit_id": "full_openalex_w2008229093_u04",
+          "unit_type": "thermal-dynamics separation",
+          "why_material": "It separates zero-temperature dynamics from statistical summation and explains why a self-consistent filling-fraction equation can reuse S-matrix data beyond exactly integrable systems."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Self-contained methodological motivation; its general method is instantiated by the functionals beginning at line 172.",
+          "representation_dependency": "Prose-dominant; only the partition-function display is formula-dependent and is legible in the normalized text.",
+          "unit_id": "full_openalex_w2008229093_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 163,
+            "line_start": 87,
+            "title": "From fermionic critical-strip convergence to a pressure-based RH heuristic",
+            "unit_id": "full_openalex_w2008229093_u02",
+            "unit_type": "pressure-modification RH heuristic",
+            "why_material": "It states the paper's conceptual bridge: fermionic one-dimensional quasi-periodic interactions yield a zeta-controlled pressure correction, and RH would follow from the additional physical premise that nonzero interactions cannot leave pressure unchanged."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 31,
+              "line_start": 29,
+              "reason": "Section heading and spacing."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 86,
+              "line_start": 71,
+              "reason": "Paper roadmap and previews of later low-dimensional examples."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2008229093_u04",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2008229093_u04",
+          "spontaneous_reading": "The working move is to replace direct access to an intractable many-body spectrum by a self-consistent occupation-number problem whose dynamical input is zero-temperature scattering data. The filling-fraction integral equation is the useful intermediate object: it keeps the statistical summation distinct while resumming repeated two-body effects."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2008229093_u04",
+          "source_grounded_mathematics": "The source begins from Z = Tr exp(-βH) and argues that, given a complete spectrum, dynamics and thermal summation are conceptually separable. Its proposed approximation uses S-matrix amplitudes as zero-temperature data and filling fractions as thermodynamic variables; retaining two-particle-to-two-particle contributions leads to a TBA-like self-consistent integral equation in general spatial dimension.",
+          "conceptual_reading": "This is a change of sufficient representation: microscopic spectral information is compressed into scattering data, while the thermal state is represented by occupations. Self-consistency is needed because even a two-body truncation must account for repeated interaction effects across the populated gas.",
+          "representation_or_bridge": "The bridge is many-body trace → filling fractions → nonlinear integral equation, with the S-matrix supplying the kernel-level dynamics. It aims to preserve the thermodynamically relevant effect of scattering without enumerating the full interacting spectrum.",
+          "boundary_or_failure": "Outside integrable one-dimensional systems the construction is explicitly approximate. The two-body dominance claim is motivated by low density, not proved here, and the span supplies neither an error bound nor a guarantee that neglected higher-body forward scattering is small.",
+          "uncertainty": "The prose is clear and the partition-function display is legible. The exact later integral equation is only referenced in this unit, so its detailed form should not be reconstructed from this span alone."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2008229093_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly separates zero-temperature dynamics from thermal summation, uses filling fractions and S-matrix amplitudes, and describes a self-consistent two-body integral equation.",
+          "The candidate correctly preserves the method's approximate, non-integrable, general-dimensional status and the lack of a density-based error bound."
+        ],
+        "inference": [
+          "Describing the occupation equation as an intermediate representation that avoids enumerating the full interacting spectrum is a reasonable interpretation of the stated construction.",
+          "Calling the self-consistent equation nonlinear is plausible from the mechanism, although the exact equation is not displayed in this span."
+        ],
+        "unsupported_or_imported": [
+          "The phrase 'S-matrix supplying the kernel-level dynamics' imports the kernel representation from the later equations; this span names S-matrix amplitudes and an integral equation but no kernel."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Change of sufficient representation' and 'compressed' are interpretive labels, but the candidate also identifies the concrete occupation/scattering operation."
+        ],
+        "context_or_ocr_risk": [
+          "The partition-function display is legible; the detailed integral equation lies outside the unit and must not be reconstructed here."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'kernel-level dynamics' with the span-supported statement that zero-temperature scattering amplitudes supply the dynamical input; keep the exact integral-equation form explicitly deferred."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definitions of free energy, pressure, density, the Legendre functional, and its saddle condition.",
+      "line_end": 224,
+      "line_start": 172,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on equations (2)-(8); symbols are recoverable, though the calligraphic functional glyph is degraded in extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Legendre transform turns occupation numbers into dynamical variables and recovers physical free energy by stationarity, providing the representation on which all later kernel arguments act.",
+      "source_id": "openalex_w2008229093",
+      "source_normalized_sha256": "8da67a3e0a612880d845fbcefab616c42837a6a127c83c709eedfa900b7394f0",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Free energy as a stationary functional of filling fractions",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2008229093_u05.txt",
+      "unit_bytes": 2832,
+      "unit_id": "full_openalex_w2008229093_u05",
+      "unit_sha256": "4710038b009a3c6c061b5a6434cffcbea30894b08bf2c95745833b4c71789e51",
+      "unit_type": "variational thermodynamic construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2008229093_u05.txt",
+      "source": {
+        "source_id": "openalex_w2008229093",
+        "title": "INTERACTING BOSE AND FERMI GASES IN LOW DIMENSIONS AND THE RIEMANN HYPOTHESIS",
+        "authors": [
+          "André LeClair"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 164,
+          "line_end": 171,
+          "text": "\nII.     FREE ENERGY AS A DYNAMICAL FUNCTIONAL OF FILLING FRAC-\nTION\n\n\n      A.   Generalities\n\n\n",
+          "sha256": "de417a968fcbe379454dbb6b2392e9b92574021fa9d7f7bb611bb6b2f7a55f85"
+        },
+        "after": {
+          "line_start": 225,
+          "line_end": 232,
+          "text": "\n   In a free theory, the eigenstates of H are multi-particle Fock space states |k1 , k2 ....i. Let\nωk denote the one-particle energy as a function of momentum k. In this paper the theory\nis assumed to be non-relativistic with\n\n                                                    k2\n                                             ωk =                                             (9)\n                                                    2m\n",
+          "sha256": "db57213221333f5172cc398567829c7bfa816f3da39993043ff9a649f1da7cec"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ff2a403b3e78095e9225749fc4bd918e926270d4a303cc02050c465fc7b0bc7e",
+        "dossier_sha256": "2a844570ff31e1a91c71dca99557eb667d00155b11b51cd1d82810f431b0c571",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II.A. Free energy as a filling-fraction functional",
+            "line_end": 300,
+            "line_start": 165,
+            "mathematical_role": "Builds the Legendre/stationary functional, entropy representation, pseudo-energy, and interacting free-energy equations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 224,
+          "line_start": 172,
+          "title": "Free energy as a stationary functional of filling fractions",
+          "unit_id": "full_openalex_w2008229093_u05",
+          "unit_type": "variational thermodynamic construction",
+          "why_material": "The Legendre transform turns occupation numbers into dynamical variables and recovers physical free energy by stationarity, providing the representation on which all later kernel arguments act."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the definitions of free energy, pressure, density, the Legendre functional, and its saddle condition.",
+          "representation_dependency": "Depends on equations (2)-(8); symbols are recoverable, though the calligraphic functional glyph is degraded in extraction.",
+          "unit_id": "full_openalex_w2008229093_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 163,
+            "line_start": 87,
+            "title": "From fermionic critical-strip convergence to a pressure-based RH heuristic",
+            "unit_id": "full_openalex_w2008229093_u02",
+            "unit_type": "pressure-modification RH heuristic",
+            "why_material": "It states the paper's conceptual bridge: fermionic one-dimensional quasi-periodic interactions yield a zeta-controlled pressure correction, and RH would follow from the additional physical premise that nonzero interactions cannot leave pressure unchanged."
+          },
+          {
+            "line_end": 295,
+            "line_start": 226,
+            "title": "Entropy functional and pseudo-energy deformation by interactions",
+            "unit_id": "full_openalex_w2008229093_u06",
+            "unit_type": "pseudo-energy interaction deformation",
+            "why_material": "It derives the free Bose/Fermi occupation law from energy minus entropy, adds an interaction potential, and rewrites stationarity as a pseudo-energy equation with a corrected free energy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper's RH proposal is a composed representation chain from a stationary occupation functional, through a forward-scattering kernel, to a quasi-periodic real-space interaction whose leading thermal correction is zeta-controlled.",
+            "limit": "The composition remains conditional on the approximate two-body formalism, the low-temperature pseudo-energy ansatz, and an unproved pressure-response premise.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2008229093_u05",
+              "full_openalex_w2008229093_u06",
+              "full_openalex_w2008229093_u07",
+              "full_openalex_w2008229093_u08",
+              "full_openalex_w2008229093_u01",
+              "full_openalex_w2008229093_u03"
+            ],
+            "title": "Variational scattering-to-RH chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 171,
+              "line_start": 164,
+              "reason": "Spacing and section/subsection headings."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2008229093_u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2008229093_u05",
+          "spontaneous_reading": "The mathematically useful object is an off-shell free-energy functional of filling fractions. A Legendre transform makes occupation numbers into variables, and stationarity then selects the physical occupation profile and recovers the ordinary free energy."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2008229093_u05",
+          "source_grounded_mathematics": "From F = -(βV)^{-1} log Z and p = -F, the density is n = -∂F/∂μ = ∫ f(k) d^d k/(2π)^d. Defining G = F + μn and eliminating μ gives a functional of f; subtracting μ∫f produces a functional whose variational equation δℱ/δf = 0 determines f(μ), and its stationary value is the physical F.",
+          "conceptual_reading": "Legendre duality turns the conjugacy between chemical potential and density into a variational description over momentum-resolved occupations. The extension away from the stationary solution creates a space on which interaction terms can later act and be differentiated.",
+          "representation_or_bridge": "The bridge is thermodynamic function F(μ) → Legendre object G(f) → stationary functional ℱ(f,μ). It exposes local variations of the occupation profile while compressing microscopic state counting into a scalar functional.",
+          "boundary_or_failure": "The functional-integral display is presented as suggestive of a saddle approximation, not as a derived exact measure over f. Existence, uniqueness, and regularity of the Legendre inversion or stationary solution are not established in this span.",
+          "uncertainty": "The calligraphic functional glyph is degraded in extraction, but the roles of equations (2)-(8), their variables, and the stationarity claim are recoverable from the prose."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2008229093_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The definitions of free energy, pressure, density, G=F+mu n, the off-shell functional, stationarity, and recovery of physical F at the stationary profile are all present.",
+          "The candidate correctly treats the functional-integral display as suggestive rather than an exact derived measure."
+        ],
+        "inference": [
+          "Viewing stationarity as a representation on which later interaction terms can act is a reasonable forward-looking interpretation of the variational construction."
+        ],
+        "unsupported_or_imported": [
+          "The candidate presents the passage from the scalar Legendre pair F(mu), n to a functional G(f) as uncomplicated Legendre duality. The span constrains only the total density integral of f and does not justify uniqueness of a momentum-resolved functional from that scalar transform."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Compressing microscopic state counting into a scalar functional' is not established in this span and is less precise than the displayed variational construction."
+        ],
+        "context_or_ocr_risk": [
+          "The calligraphic functional glyph is degraded, but its role in equations (6)-(8) is recoverable."
+        ],
+        "missed_mechanism": [
+          "The key proof burden is not merely regularity or uniqueness of a stationary solution: the claimed promotion from a Legendre transform in total density to a functional of the full profile f(k) is itself under-justified in this span."
+        ],
+        "revision_instructions": [
+          "Add the underdetermination of G(f) from F(mu) and total n to the boundary/failure field, and soften the claim that ordinary Legendre duality alone produces the momentum-resolved functional."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Requires the pseudo-energy definition in the preceding accepted unit but contains the complete two-body approximation itself.",
+      "line_end": 333,
+      "line_start": 301,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (20)-(24) are essential and legible enough to recover the convolution and saddle structure.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It compresses the leading interaction approximation into a kernel convolution and produces the specific nonlinear pseudo-energy/free-energy equations later specialized to zeta-bearing kernels.",
+      "source_id": "openalex_w2008229093",
+      "source_normalized_sha256": "8da67a3e0a612880d845fbcefab616c42837a6a127c83c709eedfa900b7394f0",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Forward scattering becomes a self-consistent convolution kernel",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2008229093_u07.txt",
+      "unit_bytes": 1740,
+      "unit_id": "full_openalex_w2008229093_u07",
+      "unit_sha256": "c5bfe70d4545f61368955de38fd6aea9720f7607fa388571c774b98d7a5488f4",
+      "unit_type": "two-body kernel reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2008229093_u07.txt",
+      "source": {
+        "source_id": "openalex_w2008229093",
+        "title": "INTERACTING BOSE AND FERMI GASES IN LOW DIMENSIONS AND THE RIEMANN HYPOTHESIS",
+        "authors": [
+          "André LeClair"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 293,
+          "line_end": 300,
+          "text": "                                                                       \u0003\n                    F = −            −s log(1 − se    ) + (1 − f ∂f )U                     (19)\n                          β   (2π)d\n\n                                                7\n\n<!-- source-page: 8 -->\n\n",
+          "sha256": "2c65ea510fafc108496ff9fa7a1ee4dc7b2f62d4aff784c5f4e58bf0404568af"
+        },
+        "after": {
+          "line_start": 334,
+          "line_end": 341,
+          "text": "\n\nIII.    SECOND QUANTIZED HAMILTONIANS\n\n\n   In this paper we consider second quantized hamiltonians of the form:\n         Z      \u0012              \u0013     Z     Z\n             d     1 ~ † ~         1\n",
+          "sha256": "01b4b61e86536c130b5cf1e5544c8e4f8d99f384c0e945969674bfaf06fe8088"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ff2a403b3e78095e9225749fc4bd918e926270d4a303cc02050c465fc7b0bc7e",
+        "dossier_sha256": "2a844570ff31e1a91c71dca99557eb667d00155b11b51cd1d82810f431b0c571",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II.B. Two-body approximation",
+            "line_end": 335,
+            "line_start": 301,
+            "mathematical_role": "Reduces interaction effects to a convolution kernel identified with forward two-body scattering."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 333,
+          "line_start": 301,
+          "title": "Forward scattering becomes a self-consistent convolution kernel",
+          "unit_id": "full_openalex_w2008229093_u07",
+          "unit_type": "two-body kernel reduction",
+          "why_material": "It compresses the leading interaction approximation into a kernel convolution and produces the specific nonlinear pseudo-energy/free-energy equations later specialized to zeta-bearing kernels."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Requires the pseudo-energy definition in the preceding accepted unit but contains the complete two-body approximation itself.",
+          "representation_dependency": "Equations (20)-(24) are essential and legible enough to recover the convolution and saddle structure.",
+          "unit_id": "full_openalex_w2008229093_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 295,
+            "line_start": 226,
+            "title": "Entropy functional and pseudo-energy deformation by interactions",
+            "unit_id": "full_openalex_w2008229093_u06",
+            "unit_type": "pseudo-energy interaction deformation",
+            "why_material": "It derives the free Bose/Fermi occupation law from energy minus entropy, adds an interaction potential, and rewrites stationarity as a pseudo-energy equation with a corrected free energy."
+          },
+          {
+            "line_end": 376,
+            "line_start": 336,
+            "title": "Lowest-order extraction of the scattering kernel from a two-body Hamiltonian",
+            "unit_id": "full_openalex_w2008229093_u08",
+            "unit_type": "hamiltonian-to-kernel map",
+            "why_material": "It supplies the execution bridge needed to ask whether a hypothesized momentum kernel actually arises from a real-space Hamiltonian."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper's RH proposal is a composed representation chain from a stationary occupation functional, through a forward-scattering kernel, to a quasi-periodic real-space interaction whose leading thermal correction is zeta-controlled.",
+            "limit": "The composition remains conditional on the approximate two-body formalism, the low-temperature pseudo-energy ansatz, and an unproved pressure-response premise.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2008229093_u05",
+              "full_openalex_w2008229093_u06",
+              "full_openalex_w2008229093_u07",
+              "full_openalex_w2008229093_u08",
+              "full_openalex_w2008229093_u01",
+              "full_openalex_w2008229093_u03"
+            ],
+            "title": "Variational scattering-to-RH chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2008229093_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2008229093_u07",
+          "spontaneous_reading": "The decisive compression is that the leading interaction functional is quadratic in occupations, so its variation becomes a convolution with a forward-scattering kernel. A many-particle thermal problem is thereby reduced to a nonlinear fixed point for one pseudo-energy function."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2008229093_u07",
+          "source_grounded_mathematics": "The two-body approximation sets U(k) = (β/2)f(k)(K*f)(k), with (K*f)(k) = ∫K(k,k')f(k') d^d k'/(2π)^d and K identified with the two-to-two forward scattering amplitude. Substitution into the variational equations yields a pseudo-energy equation in which K is convolved with 1/(exp(βε)-s), plus a free-energy formula containing the induced energy shift.",
+          "conceptual_reading": "The kernel is a reusable bridge object between microscopic scattering and macroscopic self-consistency. Convolution preserves momentum-resolved pair influence while discarding the detailed organization of higher-particle processes.",
+          "representation_or_bridge": "The bridge is forward amplitude M12;12 → kernel K(k,k') → convolution operator K*f → pseudo-energy fixed point. This operator form makes later constant or quasi-periodic kernel specializations mathematically controllable.",
+          "boundary_or_failure": "Only the n = 2 forward-scattering contribution is retained although the source notes n-particle terms for all n ≥ 2. No small parameter or truncation error is provided, so the resulting thermodynamics remains solver- and approximation-conditional.",
+          "uncertainty": "The convolution and saddle structure in equations (20)-(24) are legible. Exact sign and normalization should remain tied to these displayed conventions rather than imported from other TBA formalisms."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2008229093_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The two-body term is quadratic in occupations through f(K*f), its variation produces the displayed self-consistent pseudo-energy equation, and K is identified with the forward two-to-two amplitude.",
+          "The candidate correctly records that all n-particle forward terms exist in the general formalism and that the span gives no truncation parameter or error bound."
+        ],
+        "inference": [
+          "Treating the convolution kernel as the bridge between microscopic scattering and macroscopic self-consistency is directly motivated by equations (20)-(24)."
+        ],
+        "unsupported_or_imported": [
+          "Saying the operator form makes later specializations 'mathematically controllable' overstates the evidence: this unit provides a manipulable specialization interface, not mathematical control of the approximation or resulting thermodynamics.",
+          "'Solver-conditional' is imported terminology; the source limitation is approximation-conditional."
+        ],
+        "paraphrase_or_style_risk": [
+          "The candidate is otherwise operational rather than a generic representation template."
+        ],
+        "context_or_ocr_risk": [
+          "Signs and normalization are convention-sensitive but legible enough here, and the candidate appropriately ties them to the displays."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'mathematically controllable' with 'straightforward to specialize algebraically' or equivalent, and replace 'solver- and approximation-conditional' with the source-grounded approximation limitation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The bosonic comparison is contained in the immediately preceding accepted unit; this span includes the full fermionic specialization and rational points.",
+      "line_end": 748,
+      "line_start": 716,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (75)-(78) define the algebraic system and coefficient; prose independently supports the stability comparison.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It compares solution existence and dilogarithm branch structure under attractive interactions, making exclusion statistics an analytic stability mechanism rather than a label.",
+      "source_id": "openalex_w2008229093",
+      "source_normalized_sha256": "8da67a3e0a612880d845fbcefab616c42837a6a127c83c709eedfa900b7394f0",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fermionic statistics remove the bosonic real-axis branch obstruction",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2008229093_u14.txt",
+      "unit_bytes": 1703,
+      "unit_id": "full_openalex_w2008229093_u14",
+      "unit_sha256": "a9465cdf00ba37bf1bd4c2a2159a418c4f328145a83d78edf2343bb3776eeef8",
+      "unit_type": "statistics-dependent analytic stability",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2008229093_u14.txt",
+      "source": {
+        "source_id": "openalex_w2008229093",
+        "title": "INTERACTING BOSE AND FERMI GASES IN LOW DIMENSIONS AND THE RIEMANN HYPOTHESIS",
+        "authors": [
+          "André LeClair"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 708,
+          "line_end": 715,
+          "text": "\nThe above relations may be viewed as results in additive number theory by virtue of eq.\n(39).\n   Since the pressure p = −F , the coefficient c is a measure of the pressure of the gas.\nOne observes from eq. (74) that as h increases the pressure decreases. This is expected on\nphysical grounds: larger h means stronger repulsive interactions so the gas is less dense.\n\n\n",
+          "sha256": "b1f0860e9f9398bac5cb681d337be7f8d4ce3a00aea180351edc0c57a6d0077d"
+        },
+        "after": {
+          "line_start": 749,
+          "line_end": 756,
+          "text": "\n\n\n                                              16\n\n<!-- source-page: 17 -->\n\nC.   Many mixed particles\n",
+          "sha256": "c8e6b6a34e03be1259fa8338ff0aa0062b84cbec1a6ec46d87b0d53dfe7541eb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ff2a403b3e78095e9225749fc4bd918e926270d4a303cc02050c465fc7b0bc7e",
+        "dossier_sha256": "2a844570ff31e1a91c71dca99557eb667d00155b11b51cd1d82810f431b0c571",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VI.B. Two-dimensional fermionic case",
+            "line_end": 755,
+            "line_start": 716,
+            "mathematical_role": "Contrasts fermionic stability and analytic structure with the bosonic branch obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 748,
+          "line_start": 716,
+          "title": "Fermionic statistics remove the bosonic real-axis branch obstruction",
+          "unit_id": "full_openalex_w2008229093_u14",
+          "unit_type": "statistics-dependent analytic stability",
+          "why_material": "It compares solution existence and dilogarithm branch structure under attractive interactions, making exclusion statistics an analytic stability mechanism rather than a label."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The bosonic comparison is contained in the immediately preceding accepted unit; this span includes the full fermionic specialization and rational points.",
+          "representation_dependency": "Equations (75)-(78) define the algebraic system and coefficient; prose independently supports the stability comparison.",
+          "unit_id": "full_openalex_w2008229093_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 714,
+            "line_start": 634,
+            "title": "Two-dimensional bosonic thermodynamics becomes an algebraic Rogers-dilogarithm system",
+            "unit_id": "full_openalex_w2008229093_u13",
+            "unit_type": "dilogarithmic algebraization",
+            "why_material": "It exhibits a representation change from an integral saddle equation to an algebraic fugacity equation, then connects pressure to Rogers dilogarithm identities and rational special points."
+          },
+          {
+            "line_end": 814,
+            "line_start": 756,
+            "title": "Coupled algebraic thermodynamics for multiple particle species",
+            "unit_id": "full_openalex_w2008229093_u15",
+            "unit_type": "mixed-statistics synthesis",
+            "why_material": "It generalizes a single-species saddle to a matrix of scattering couplings and shows how mixed statistics combine into a total pressure coefficient, including a boson-fermion example."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Specializing the kernel and dimension compresses nonlinear integral thermodynamics into algebraic fugacity equations whose pressure is organized by Rogers-dilogarithm identities and extends compositionally to mixed species.",
+            "limit": "The rational examples are illustrative consequences of the constant-kernel approximation and do not independently support the RH argument.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2008229093_u09",
+              "full_openalex_w2008229093_u13",
+              "full_openalex_w2008229093_u14",
+              "full_openalex_w2008229093_u15"
+            ],
+            "title": "Integral equations algebraize into dilogarithmic pressure systems"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2008229093_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2008229093_u14",
+          "spontaneous_reading": "The fermionic sign changes both the algebraic fixed point and the branch geometry of the pressure function. The resulting equation retains real solutions under attractive coupling where the bosonic branch fails, so statistics controls analytic stability rather than merely labeling the particles."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2008229093_u14",
+          "source_grounded_mathematics": "At zero chemical potential the fermionic fugacity satisfies z = (1+z)^{-h}; density is proportional to log(1+z), and c = -6Lr2(-z)/π². The source states that real solutions continue for h < 0 and that the negative dilogarithm argument avoids the bosonic positive-axis branch obstruction. It also lists fermionic rational points and observes that increasing h lowers pressure.",
+          "conceptual_reading": "Exclusion changes the domain on which the thermodynamic representation stays real. The plus sign in the fixed point routes the dilogarithm along a branch-safe direction, turning particle statistics into a mechanism for continuation across attractive interactions.",
+          "representation_or_bridge": "The bridge is statistics sign → algebraic equation z = (1+z)^{-h} → negative Rogers-dilogarithm argument → real pressure coefficient. Comparison with the bosonic equation isolates the sign as the structural difference.",
+          "boundary_or_failure": "Existence of a real algebraic solution is not a proof of full physical stability or of a realizable Hamiltonian. The rational points and pressure monotonicity remain within the two-dimensional constant-kernel approximation, including limiting cases such as z tending to infinity.",
+          "uncertainty": "The defining equations (75)-(78) and prose comparison are legible. Branch statements should be interpreted for the displayed argument -z; the span does not provide a full complex-domain analysis."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2008229093_u14",
+        "critic_decision": "revise",
+        "supported": [
+          "The fermionic fixed point, logarithmic density, negative Rogers-dilogarithm pressure coefficient, rational examples, and negative-axis branch comparison are all present.",
+          "The candidate appropriately distinguishes existence of a real algebraic solution from Hamiltonian realizability or full physical stability."
+        ],
+        "inference": [
+          "Treating the statistics sign as the structural source of the different fixed-point and dilogarithm arguments is well grounded."
+        ],
+        "unsupported_or_imported": [
+          "The unqualified statement that real solutions continue 'for h<0' is too broad. The source says solutions continue even when interactions are attractive and lists h=-1/2 plus the limiting h=-1 point; the displayed equation does not establish existence for every negative h and in fact does not have a positive real solution for arbitrary h<-1."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Branch-safe direction' is rhetorical but is tied to the explicit negative dilogarithm argument."
+        ],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [
+          "The admissible attractive-coupling range or solution domain is not analyzed in the span, so the existence statement must remain existential or example-bound rather than universal."
+        ],
+        "revision_instructions": [
+          "Change claims of real solutions for all h<0 to the source-supported claim that real solutions persist for some attractive couplings, including the listed examples/limit, and state that the full negative-h domain is not established here."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "242859aeb5efa86b77e916b692988d1e3959f325cdc8128cd7ad8362e13333c0"
+}

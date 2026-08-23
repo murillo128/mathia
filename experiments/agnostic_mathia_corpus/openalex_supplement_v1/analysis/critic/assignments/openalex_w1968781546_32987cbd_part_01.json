@@ -1,0 +1,904 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_compact_quotient_invariant_lift": {
+      "analysis_id": "agnostic_oa_generation_574fd7776ced0458c07808bfc09ac22da373670318eb00247ea41c4d54a2589e",
+      "boundary_or_failure": "Boundary and representation dependence: The transfer theorem is conditional on a compact group with normalized Haar measure acting continuously, isometrically, and reference-measure-preservingly, plus uniqueness of the Wasserstein geodesic between absolutely continuous measures and absolute continuity along it. Without uniqueness the lifted geodesic need not be invariant, so the proof does not establish an unconditional quotient-curvature principle.",
+      "interpretation": "Inference: Quotient transport is best understood as the invariant sector of transport upstairs. Averaging erases arbitrary representative choices without changing cost, while minimum-distance representatives recover every quotient coupling at exactly the quotient cost.",
+      "nonparaphrase_operation": "Operation: Average upstairs couplings diagonally over the group, lift quotient couplings through a measurable closest-orbit representative and Haar averaging, prove these maps are inverse isometries on invariant measures, then use uniqueness to force the good upstairs geodesic into that invariant sector and descend its energy inequality.",
+      "source_support": "Source fact: Lemma 5.36 proves that pushforward identifies invariant probability measures on the original space isometrically with all probability measures on the quotient. Theorem 5.35 lifts absolutely continuous quotient endpoints, uses uniqueness to make the connecting geodesic invariant, proves equality of lifted and quotient energies, and transfers the stated curvature bounds.",
+      "uncertainty": "Low theorem-level uncertainty. The measurable closest-representative map relies on a cited selection theorem, and the conclusion should not be generalized beyond the explicit uniqueness and regularity assumptions.",
+      "unit_id": "agnostic_oa_compact_quotient_invariant_lift"
+    },
+    "agnostic_oa_curvature_functional_inequality_chain": {
+      "analysis_id": "agnostic_oa_generation_63e4a78d41c0b48e1ef9f237e2800db272456adcb1697a981f5888e57eeeadad",
+      "boundary_or_failure": "Boundary and representation dependence: Coercive log-Sobolev and Talagrand constants require a positive infinite-dimensional curvature lower bound; the HWI input initially assumes positive Lipschitz densities and the source uses approximation for the displayed corollary. Poincaré is obtained by a small equilibrium perturbation. The stronger implications labeled Theorem 6.22 are announced as work shown elsewhere and are not treated here as internally proved consequences.",
+      "interpretation": "Inference: The functional inequalities are different projections of one curved energy landscape. HWI retains distance, energy, and slope simultaneously; optimizing away distance yields log-Sobolev, dropping the slope side yields transport control, and infinitesimal linearization near the reference turns nonlinear entropy control into a quadratic spectral inequality.",
+      "nonparaphrase_operation": "Operation: Specialize the general geodesic HWI bound to entropy, optimize its quadratic expression in Wasserstein distance for log-Sobolev, retain the opposite side for Talagrand, regularize square densities where needed, and insert a normalized small perturbation of the constant density to extract Poincaré from the second-order term.",
+      "source_support": "Source fact: Theorem 6.1 states the entropy transport and information inequalities under the curvature hypotheses and justifies absolute continuity of the selected geodesic. Definitions 6.6 identify LSI, Talagrand, and Poincaré; Corollary 6.12 gives the explicit log-Sobolev form, and Theorem 6.18 proves LSI implies Poincaré by Taylor expansion around equilibrium.",
+      "uncertainty": "High confidence in the internally proved implication chain. Formula typography and normalization constants are extraction-sensitive, and no independent support is assigned to the explicitly deferred stronger cross-implications.",
+      "unit_id": "agnostic_oa_curvature_functional_inequality_chain"
+    },
+    "agnostic_oa_curvature_localization_and_limit": {
+      "analysis_id": "agnostic_oa_generation_8dbb51f733e2a987538b10896cc4df4525e7867a20e5372c2dcfa1a1298a3d64",
+      "boundary_or_failure": "Boundary and representation dependence: Localization requires a closed totally convex subset, positive reference mass on it, and renormalization of the restricted reference; ordinary convexity would not keep every relevant ambient Wasserstein geodesic inside. Limit preservation inherits the compact measured-length and common-geodesic hypotheses of the earlier stability theorem. This unit does not itself verify agreement with smooth classical curvature.",
+      "interpretation": "Inference: The curvature condition is stable under two different representation changes because its definition is expressed through a family of energy inequalities: restriction is handled by conjugating the energies under reference rescaling, while limits are handled by closure of the same family-wise inequalities.",
+      "nonparaphrase_operation": "Operation: Identify Wasserstein measures on a totally convex subset with a totally convex subspace upstairs, transform each energy to compensate exactly for reference normalization, verify that class membership and curvature coefficient are invariant under this transform, and separately instantiate the prior family-stability theorem for measured limits.",
+      "source_support": "Source fact: Proposition 5.15 proves localization and displays an energy rescaling that identifies restricted-reference energy with an ambient transformed energy. Theorem 5.19 proves both finite- and infinite-dimensional curvature preservation by applying Theorem 4.27 to the appropriate full energy class and coefficient function.",
+      "uncertainty": "Low uncertainty. The localization and limit results are explicit; the broader geometric interpretation is an inference from their shared family-of-energies representation.",
+      "unit_id": "agnostic_oa_curvature_localization_and_limit"
+    },
+    "agnostic_oa_dimension_indexed_convexity_curvature": {
+      "analysis_id": "agnostic_oa_generation_6b30b60cfc5660d116611d4eb65be0c3c09dcbc89810cbd04f621fb2ae429b9c",
+      "boundary_or_failure": "Boundary and representation dependence: The synthetic condition depends on a distinguished reference measure, the quadratic Wasserstein geometry, a dimension-indexed rescaling of density, and existence of one geodesic satisfying every energy inequality simultaneously. It is a definition plus internal characterizations of the test class at this point in the source, not by itself evidence that the condition agrees with a classical tensor bound.",
+      "interpretation": "Inference: A putative dimension is encoded not as a coordinate count but as a constraint on which internal energies remain convex after volume-like rescaling. Nesting of the energy classes makes monotonicity in the dimension parameter a structural consequence rather than a separate curvature theorem.",
+      "nonparaphrase_operation": "Operation: Reparameterize each convex energy by the scaling law associated with a dimension, characterize admissibility through monotonicity of pressure or an iterated-pressure inequality, collect all admissible energies into a nested test family, and define curvature by their simultaneous displacement convexity.",
+      "source_support": "Source fact: Definition 5.3 introduces the classes DC_N through convexity of a rescaled energy; Lemma 5.6 proves their nesting and Lemma 5.7 gives pressure characterizations. Definitions 5.12 and 5.13 use family-wise weak displacement convexity to define nonnegative finite-dimensional Ricci curvature and a lower infinite-dimensional Ricci bound.",
+      "uncertainty": "The class nesting and semantic role are clear. Exact derivative powers and the piecewise coefficient in the infinite-dimensional definition are formula-risk points and are therefore not reproduced beyond their stated roles.",
+      "unit_id": "agnostic_oa_dimension_indexed_convexity_curvature"
+    },
+    "agnostic_oa_dimension_sobolev_diameter": {
+      "analysis_id": "agnostic_oa_generation_4982caa3e4c2a1ba0904254838b3d0f0f919c712d4bf70d66cbb4989d53c0de0",
+      "boundary_or_failure": "Boundary and representation dependence: The direct Sobolev reparameterization splits by the finite dimension value, with the familiar power form stated above the critical case and a different exponential form at the critical case. The diameter result requires both nonnegative finite-dimensional curvature, a positive infinite-dimensional lower bound, and full support. Its final universal constant comes by invoking and repeating an earlier cited argument, not by a fully reproduced derivation in this unit.",
+      "interpretation": "Inference: Finite-dimensional entropy control limits how sharply mass can concentrate through a Sobolev-type norm comparison, while positive curvature supplies transport concentration. Combining polynomial small-ball growth with concentration prevents a full-support space from sustaining arbitrarily distant regions.",
+      "nonparaphrase_operation": "Operation: Substitute a power or logarithm of the density into the finite-dimensional entropy-information inequality to turn it into a function-norm estimate, homogenize that estimate as Sobolev control, and for diameter combine the previously derived volume-growth ratio with Talagrand concentration at competing spatial scales.",
+      "source_support": "Source fact: Section 6.3 algebraically rewrites the finite-dimensional inequality into Sobolev-type bounds, including a separate critical-dimension expression. Theorem 6.30 states a universal diameter bound under the combined curvature and support assumptions and derives it from Theorem 5.31 growth plus Theorem 6.1 transport concentration; Remark 6.33 records an admissible constant.",
+      "uncertainty": "The qualitative Sobolev and diameter mechanisms are clear. Exact exponents and the numerical diameter constant are formula-sensitive, and the last diameter step depends on a cited earlier proof rather than a self-contained calculation here.",
+      "unit_id": "agnostic_oa_dimension_sobolev_diameter"
+    },
+    "agnostic_oa_displacement_convexity_limit_stability": {
+      "analysis_id": "agnostic_oa_generation_ff4d8000de60962d10c1370a96e7cf33824742c5531adbe85f19e2f70d5983f3",
+      "boundary_or_failure": "Boundary and representation dependence: The theorem assumes measured Gromov-Hausdorff convergence of compact measured length spaces, convergence of reference measures, contraction of energy under pushforward, and joint lower semicontinuity. For a family of energies, every approximating space must furnish one common geodesic that works for the whole family; separate witnesses for separate energies do not suffice. The result preserves weak, not automatically all-geodesic, convexity.",
+      "interpretation": "Inference: An existential geometric property can survive a limit if its witnesses are compact and its inequality is oriented correctly for lower semicontinuity. Regular endpoint densities are the interface at which both endpoint energies and reference-measure convergence can be controlled.",
+      "nonparaphrase_operation": "Operation: Pull continuous target densities back to normalized densities on the approximating references, select good geodesics there, push the geodesics into the limit Wasserstein space, compactify them, and combine exact endpoint-energy convergence with contraction and joint lower semicontinuity at interior times.",
+      "source_support": "Source fact: Theorem 4.15 proves stability for one convex energy by this approximation-and-limit argument. Definition 4.25 makes the common-geodesic quantifier explicit, Theorem 4.27 extends stability to an entire family, and Proposition 4.28 reduces family-wise testing to absolutely continuous endpoints.",
+      "uncertainty": "Low theorem-level uncertainty. There is a minor naming inconsistency in the extracted theorem statement for the limit reference measure, but the proof and conclusion consistently concern the measured limit.",
+      "unit_id": "agnostic_oa_displacement_convexity_limit_stability"
+    },
+    "agnostic_oa_dyadic_gluing_geodesic_reconstruction": {
+      "analysis_id": "agnostic_oa_generation_7b335f40f5476f53f9bed36c0e9ae668cf60b392f5fa0f02d491f9435b74ca7a",
+      "boundary_or_failure": "Boundary and representation dependence: Compactness of the base and geodesic-path spaces is used to take weak limits, and a measurable segment selector turns dyadic point strings into paths. Equality in the triangle and quadratic estimates is what forces the glued points to lie at proportional distances on a minimizing geodesic. The finite laws need not themselves form a projectively consistent family; the argument extracts a convergent subsequence of induced path laws.",
+      "interpretation": "Inference: A global path representation can be recovered from only the time-indexed Wasserstein geodesic by repeatedly resolving it at finer scales. Optimality acts as a rigidity condition: local transitions cannot bend or waste length once their total cost already saturates the endpoint distance.",
+      "nonparaphrase_operation": "Operation: Glue optimal couplings across every dyadic partition, use saturation of the metric bounds to restrict the glued tuples to aligned geodesic configurations, map those tuples to full paths, compactify the resulting path laws, and extend equality of dyadic marginals to all times by continuity.",
+      "source_support": "Source fact: Proposition 2.10 constructs measures on dyadic tuples with the prescribed time marginals, proves their endpoint couplings are optimal and supported on equally spaced minimizing configurations, and takes a weak-star limit of the associated probability measures on the compact geodesic space. Evaluation of the limit agrees with the given curve first at dyadic times and then everywhere.",
+      "uncertainty": "The reconstruction theorem and its proof strategy are clear. Exact dyadic subscripts and displayed gluing formulas are extraction-sensitive, so this interpretation relies on their structural role rather than asserting unchecked index-level transcription.",
+      "unit_id": "agnostic_oa_dyadic_gluing_geodesic_reconstruction"
+    },
+    "agnostic_oa_dynamical_transport_lift": {
+      "analysis_id": "agnostic_oa_generation_d61c41336847b4e263d44605709ffcb063d6d531415dbef7d44c22c7ffa3e368",
+      "boundary_or_failure": "Boundary and representation dependence: The lift uses a compact length space so that minimizing geodesics exist, the geodesic space is compact, and the endpoint map admits a measurable selection. Quadratic cost and normalized constant-speed geodesics give the stated length calculation. The construction supplies a geodesic, not a canonical or unique one; the planar switch example illustrates nonuniqueness but does not prove the proposition.",
+      "interpretation": "Inference: A static endpoint coupling omits a latent variable—the particular minimizing path followed by each unit of mass. Adding that variable converts transport from a relation between two marginals into a time-indexed evolution while preserving the optimal endpoint cost.",
+      "nonparaphrase_operation": "Operation: Lift an optimal coupling through a measurable right inverse of the endpoint map to a probability law on geodesics, then push that law through each evaluation map and compare every subinterval cost with its proportional share of the endpoint cost.",
+      "source_support": "Source fact: Proposition 2.6 chooses a Borel minimizing geodesic for every endpoint pair and pushes an optimal transference plan through that selector. Lemma 2.4 proves that the evaluated measures form a curve whose length equals the endpoint Wasserstein distance; Corollary 2.7 concludes that the Wasserstein space is a compact length space.",
+      "uncertainty": "Low theorem-level uncertainty. The measurable-selection step is invoked from a cited result rather than reproved in the excerpt, and the source does not make the selected lift canonical.",
+      "unit_id": "agnostic_oa_dynamical_transport_lift"
+    },
+    "agnostic_oa_entropy_volume_growth_compactness": {
+      "analysis_id": "agnostic_oa_generation_a33fc398c179e9a7d71cc95353ed4a1d0440749544fc83f848a585abbba2cfce",
+      "boundary_or_failure": "Boundary and representation dependence: The ball-volume estimate uses finite dimension and weak displacement convexity of the selected entropy; the atomic argument has a separate infinite-dimensional case. Sequential compactness additionally assumes a uniform diameter bound and full support, and the source gives an explicit counterexample to the analogous infinite-dimensional compactness claim. A delta reference is a permitted exceptional case.",
+      "interpretation": "Inference: Entropy convexity becomes geometric volume control by choosing a transport whose support is forced to contract into a smaller ball. Convexity supplies an upper energy estimate, concentration of the interpolated support supplies a lower estimate, and their compatibility restricts how quickly reference volume can disappear at small scales.",
+      "nonparaphrase_operation": "Operation: Transport a point mass toward normalized mass in a ball, trap intermediate mass in proportionally shrinking balls, sandwich its entropy using displacement convexity and Hölder or Jensen, extract a ball-volume ratio, then convert uniform volume ratios into covering control and measured subsequential compactness.",
+      "source_support": "Source fact: Proposition 5.20 proves that the reference is either nonatomic or a delta under the entropy-convexity hypothesis. Proposition 5.27 and Theorem 5.31 derive the Bishop-Gromov-type ratio, and Corollary 5.33 combines that ratio with bounded diameter to obtain measured Gromov-Hausdorff sequential compactness and proves full support of the limit.",
+      "uncertainty": "The implication structure is clear. The dense entropy and Hölder displays are extraction-sensitive, so no claim is made here about independently verified formula typography beyond the stated ball-volume exponent.",
+      "unit_id": "agnostic_oa_entropy_volume_growth_compactness"
+    },
+    "agnostic_oa_geodesic_convexity_hwi": {
+      "analysis_id": "agnostic_oa_generation_469a7cca8d255efb085155b8a8e600a4242a6720c4acf505f69b4f0adeae8346",
+      "boundary_or_failure": "Boundary and representation dependence: The upper HWI estimate requires a twice-regular convex integrand, a positive Lipschitz initial density, finite energy, and absolute continuity of every measure on the selected geodesic to the reference. Its pathwise estimate depends on a dynamical-plan representation and the descending metric gradient. If interpolation develops singular mass or the density lacks the stated regularity, this proof does not supply the information bound.",
+      "interpretation": "Inference: Geodesic convexity can be queried at one endpoint without differentiating the energy as a functional. The initial energy drop is instead controlled by resolving the geodesic into particle paths, bounding density changes along those paths, and aggregating by Cauchy-Schwarz.",
+      "nonparaphrase_operation": "Operation: Compare the convexity inequality along a geodesic from the target measure to the reference at times near zero, replace the one-sided energy difference by a pointwise convex lower support, express marginal differences through a dynamical plan, and factor the result into transport distance times generalized Fisher information.",
+      "source_support": "Source fact: Proposition 3.36 derives a transport lower bound and an HWI upper bound from equation (3.16) along one geodesic from a measure to the reference. The proof invokes Proposition 2.10, monotonicity of the integrand derivative, Cauchy-Schwarz, the descending gradient, and dominated convergence; the listed particular cases specialize the result to the dimension-indexed entropies.",
+      "uncertainty": "The conceptual inequality chain is well supported. Exact exponents and signs in the formula-heavy Fisher-information displays were not independently checked against a page image.",
+      "unit_id": "agnostic_oa_geodesic_convexity_hwi"
+    },
+    "agnostic_oa_jacobian_root_curvature_inequality": {
+      "analysis_id": "agnostic_oa_generation_118b7c92c814b3c4f21834498f315971f3c81f7d035cd0993a60cfb3c5f0a64d",
+      "boundary_or_failure": "Boundary and representation dependence: The lemma is a smooth-manifold, almost-everywhere statement requiring a transport potential with an Alexandrov Hessian, differentiable transport maps, and nonsingular differentials for times before the endpoint. It compresses curvature to Ricci through a trace and therefore does not retain full sectional information; the stated interval excludes possible endpoint singularity.",
+      "interpretation": "Inference: The determinant root is the scalar mode of a matrix-valued geodesic deformation that is relevant to volume transport. Self-adjoint evolution makes shear contribute with the correct sign, allowing a trace inequality to discard anisotropic detail and leave precisely Ricci curvature in the scalar acceleration bound.",
+      "nonparaphrase_operation": "Operation: Differentiate a frame of Jacobi fields transported by the optimal map, encode their Gram matrix and logarithmic deformation by a self-adjoint operator, insert the Jacobi equation into the second derivative of the normalized determinant, and apply the trace-square inequality to collapse the matrix expression to a Ricci bound.",
+      "source_support": "Source fact: Lemma 7.4 defines the normalized determinant of the transport differential and proves its second-derivative inequality under three explicit regularity conditions. The proof constructs Jacobi fields, derives self-adjointness of the deformation matrix, differentiates the Gram determinant, and applies the trace inequality.",
+      "uncertainty": "The matrix-to-scalar proof mechanism is clear. Determinant-root powers, matrix indices, and signs in the extracted displays are formula-risk points and were not independently checked against a rendered page.",
+      "unit_id": "agnostic_oa_jacobian_root_curvature_inequality"
+    },
+    "agnostic_oa_local_uniqueness_weak_to_strong": {
+      "analysis_id": "agnostic_oa_generation_44faf66c5c802e616d76ba0401fa0a162a5fa9d1b249a0d25af6be5952e27ee6",
+      "boundary_or_failure": "Boundary and representation dependence: The upgrade requires local uniqueness for short subsegments of every geodesic under consideration and full support of the reference measure. In the absolutely continuous version, the absolutely continuous subspace must also be totally convex. Without these hypotheses, an existentially good geodesic need not coincide with a chosen geodesic, so weak and strong convexity remain different.",
+      "interpretation": "Inference: Local uniqueness changes a quantifier because it removes the freedom hidden inside 'there exists a good geodesic.' Once each sufficiently short endpoint pair admits only the already chosen subsegment, local convexity is forced on that path and can be patched globally.",
+      "nonparaphrase_operation": "Operation: Fix an arbitrary geodesic, apply weak convexity to close pairs of points on it, identify each existential witness with the fixed subsegment by uniqueness, and concatenate the resulting local convexity inequalities over the full parameter interval.",
+      "source_support": "Source fact: Lemma 3.25 states separate all-measure and absolutely-continuous versions of the weak-to-strong implication. Its proof restricts weak convexity to intervals shorter than a geodesic-dependent uniqueness radius and concludes global lambda-convexity along the arbitrary original geodesic.",
+      "uncertainty": "Low uncertainty. The excerpt gives the sufficient hypotheses and short proof explicitly; it does not claim those hypotheses are necessary.",
+      "unit_id": "agnostic_oa_local_uniqueness_weak_to_strong"
+    },
+    "agnostic_oa_superlinear_energy_absolute_continuity": {
+      "analysis_id": "agnostic_oa_generation_ab689c40b3f26e7745b8a40df3a57642abd29a8394f3aa23ab6ead9e55286d0b",
+      "boundary_or_failure": "Boundary and representation dependence: The tailored barrier argument for a general endpoint pair uses finite dimension and simultaneous convexity for the full DC_N family, so the energy can be selected after inspecting endpoint densities yet still share the curvature witness. It proves existence of an absolutely continuous interpolation, not that every interpolation is absolutely continuous. The resulting support is convex, explicitly not necessarily totally convex.",
+      "interpretation": "Inference: Absolute continuity can be enforced without estimating densities directly by designing an energy whose recession slope is infinite but whose values at the chosen endpoints are finite. Finiteness of that energy then acts as a certificate excluding any singular component along a good interpolation.",
+      "nonparaphrase_operation": "Operation: Use uniform integrability of the endpoint densities to build a superlinear control function, take a lower convex hull after the dimension-dependent change of variables so it belongs to the admissible energy class, invoke simultaneous displacement convexity, and read finite intermediate energy as a barrier against singular mass; then pass to endpoint approximations to confine a geodesic to the reference support.",
+      "source_support": "Source fact: Lemma 5.43 constructs an admissible superlinear energy finite on any finite collection of absolutely continuous densities. Theorem 5.52 applies it to obtain a Wasserstein geodesic entirely in the absolutely continuous class. Theorem 5.53 uses such geodesics, approximation, and closed support to prove convexity of the reference support and equivalence of the curvature condition on that support.",
+      "uncertainty": "The barrier mechanism and existential conclusion are clear. Exact formulas in the convex-minorant construction are extraction-sensitive; the infinite-dimensional support argument uses entropy separately rather than the finite-dimensional tailored-energy lemma.",
+      "unit_id": "agnostic_oa_superlinear_energy_absolute_continuity"
+    },
+    "agnostic_oa_tensor_displacement_convexity_equivalence": {
+      "analysis_id": "agnostic_oa_generation_1eac4152b9068419382de772e06d3cd96bc927addec637923b09321245f34f49",
+      "boundary_or_failure": "Boundary and representation dependence: The equivalence is proved for the smooth compact weighted-manifold setting using unique optimal transport from absolutely continuous data, weighted change of variables, almost-everywhere regularity, and localized smooth test transports. The finite-dimensional statement has genuine obstructions: the synthetic condition fails below the manifold dimension, and equality with the manifold dimension forces the weight to be constant. This theorem does not assign a tensor to a general nonsmooth limit space.",
+      "interpretation": "Inference: The forward direction geometricizes a tensor inequality by turning weighted volume distortion along each transport ray into scalar concavity, which every admissible entropy can read as displacement convexity. The converse shows this representation loses no tensor information in the smooth setting because localized transports can independently tune velocity and Hessian to probe the missing curvature components.",
+      "nonparaphrase_operation": "Operation: Factor transported density through a weighted Jacobian, combine the root-Jacobian inequality with the weight term to obtain concavity of a scalar distortion factor, compose it with each nonincreasing convex energy transform and integrate; then reverse the argument by concentrating a transport near one point and selecting its initial Hessian so failure of a tensor component forces positive second variation of entropy.",
+      "source_support": "Source fact: Theorem 7.3 states equivalence between the weighted Ricci bounds, the synthetic curvature definitions, family-wise weak displacement convexity, and entropy convexity. Its proof uses the change-of-variables formula and Lemma 7.4 for the forward implication, and localized transports for the converse, explicitly treating the cases above, at, and below the manifold dimension and the infinite-dimensional weighted case.",
+      "uncertainty": "High confidence in the theorem-level equivalence and dimension obstruction. The proof is densely formula-dependent, so coefficients in weighted Jacobian and second-variation formulas are not independently asserted beyond their structural use.",
+      "unit_id": "agnostic_oa_tensor_displacement_convexity_equivalence"
+    },
+    "agnostic_oa_wasserstein_functor_gh_stability": {
+      "analysis_id": "agnostic_oa_generation_9f0b800521bd1617c745692f7b04a1701014f9e59da2281383d21d814b099dbe",
+      "boundary_or_failure": "Boundary and representation dependence: The quantitative lift is for compact metric spaces; bounded diameters control the error after squaring distances. The reverse comparison and approximate surjectivity use an approximate inverse. The source explicitly notes that pushforward by a Gromov-Hausdorff approximation is generally discontinuous, so the result is metric approximation rather than continuity of a Wasserstein functor on arbitrary maps.",
+      "interpretation": "Inference: Passing from points to probability measures does not amplify a small uniform distortion uncontrollably because every coupling can be pushed forward and its averaged squared cost inherits the pointwise distortion bound. Approximate inverses prevent this one-sided construction from collapsing Wasserstein geometry.",
+      "nonparaphrase_operation": "Operation: Transport an optimal coupling through the approximate isometry for the forward cost bound, repeat the comparison through an approximate inverse for the reverse bound, and push each target measure around the approximate inverse cycle to establish density of the lifted image.",
+      "source_support": "Source fact: Proposition 4.1 gives an explicit Wasserstein Gromov-Hausdorff approximation induced by an epsilon-approximation. Its proof bounds squared-distance distortion in pushed couplings, uses an approximate inverse to reverse the metric estimate, and constructs an approximate preimage for every target measure; Corollary 4.3 passes convergence to Wasserstein spaces.",
+      "uncertainty": "Low uncertainty about the two-sided mechanism and convergence corollary. The exact displayed distortion constant is extraction-sensitive and is not restated here.",
+      "unit_id": "agnostic_oa_wasserstein_functor_gh_stability"
+    },
+    "agnostic_oa_weak_convexity_closure": {
+      "analysis_id": "agnostic_oa_generation_f35a6d683f773a37f4096ac386f2c34d9681f37ed2fc80984dda209526a3fe18",
+      "boundary_or_failure": "Boundary and representation dependence: The extension uses compact Wasserstein geometry, approximation by absolutely continuous measures with continuous densities and convergent energies, and lower semicontinuity of the full energy including its singular-mass term. It preserves the existential 'some geodesic' quantifier; it does not turn weak displacement convexity into convexity along every geodesic.",
+      "interpretation": "Inference: Weak convexity on a regular core is a closed property when both the endpoints and the witnessing geodesics can be compactified without losing the energy inequality. The singular term in the energy is part of what makes the closure statement meaningful for arbitrary supported measures.",
+      "nonparaphrase_operation": "Operation: Replace arbitrary finite-energy endpoints by energy-preserving continuous-density approximants, choose one good geodesic for each pair, take a uniformly convergent subsequence of those geodesics, and pass the inequality through endpoint-energy convergence and interior lower semicontinuity.",
+      "source_support": "Source fact: Definition 3.15 separates all-geodesic, some-geodesic, and absolutely-continuous-endpoint notions. Proposition 3.21 proves weak displacement convexity is equivalent to its absolutely continuous endpoint version, and Lemma 3.24 shows that testing continuous densities suffices, using Theorem C.12 and lower semicontinuity from Appendix B.",
+      "uncertainty": "Low uncertainty about the quantifier distinction and closure mechanism. The approximation and lower-semicontinuity theorems are referenced from appendices rather than included in full in this unit.",
+      "unit_id": "agnostic_oa_weak_convexity_closure"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_compact_quotient_invariant_lift": "3f9454db55f990ed72bbfd665d9d08c3fa25587094b8465a16ee1f11a45229a5",
+    "agnostic_oa_curvature_functional_inequality_chain": "b1203aed28f97b36aa03a78ff9947ef74ebea8a8bdf72455ea5bb9764aea61b4",
+    "agnostic_oa_curvature_localization_and_limit": "cd20d2e31e46c3dbe6f58ce2542032764f0d9d6e764f5f6a9785bab1f9c2e59c",
+    "agnostic_oa_dimension_indexed_convexity_curvature": "2032f7d3e0b928610210c4976fae98d1449ec5ca2a9317db2cb2f03b2259c00a",
+    "agnostic_oa_dimension_sobolev_diameter": "08ed27b8714fbcac577d2551ebefc2af038151276e69895458000ca82c5b54cb",
+    "agnostic_oa_displacement_convexity_limit_stability": "78bf9c5112a3b66503360153ea83c7ad6ad7305f6905cc0e8460da725062b6d6",
+    "agnostic_oa_dyadic_gluing_geodesic_reconstruction": "367eef5d67bf44c83cd98b1b579ab1a30f56b0cd4dd8d7c18838bacfc39935a2",
+    "agnostic_oa_dynamical_transport_lift": "db254fbbbd022de9c3fe2c10ae90dd7a73e62b33fd14b6823e8479427dcbd7f0",
+    "agnostic_oa_entropy_volume_growth_compactness": "2a9e674ddf1f3b12a125b14d96ff2236ba113e508bb9f8fd8c9ec14adb2daf1c",
+    "agnostic_oa_geodesic_convexity_hwi": "27345cfddca377a6281c213d347984f7abd0c6288ee36dd4a8942ca6cde3395e",
+    "agnostic_oa_jacobian_root_curvature_inequality": "04baaa7a70a36ee4f32db932d958445938dba0ea7b9058e3232f1f1f5c055cb7",
+    "agnostic_oa_local_uniqueness_weak_to_strong": "5b5a25691402106708c7f64efd33ab72a8d7fe9cb3a49cf3f38364ca72e4ac69",
+    "agnostic_oa_superlinear_energy_absolute_continuity": "80d18f78b5143b8beaabba3ecdad6ce5ffdff7b820bc34b7b7b381db96eed044",
+    "agnostic_oa_tensor_displacement_convexity_equivalence": "44f2446df14c374b4797a211d52c7427660d155df20edc20bdd0e90fea666ca9",
+    "agnostic_oa_wasserstein_functor_gh_stability": "a3a0decfc58c9c42613c7a0f6256fff5ab44738428f8b301976ba60156a30ae5",
+    "agnostic_oa_weak_convexity_closure": "d81671a0ced2bab93a3e6fe596489d4a742079c833fde55371a03b3b55e5f1cf"
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_compact_quotient_invariant_lift": "agnostic_oa_critic_1f0a6216474cde698deb08ee6e69b510a1297d784d688c1acd7232e4686f344a",
+    "agnostic_oa_curvature_functional_inequality_chain": "agnostic_oa_critic_12849342bfb8cb26d633cf5570ed1e1cced7fc45e2675ee475a596b84a645184",
+    "agnostic_oa_curvature_localization_and_limit": "agnostic_oa_critic_5f8d821f02faf89f5414ad25e99dd4667bed4bc66fbec8f48f322878262d2541",
+    "agnostic_oa_dimension_indexed_convexity_curvature": "agnostic_oa_critic_ca8e5d3c15e17a5a6515b978725c2007e5f9d392a408a3be25d72f4a73715d3b",
+    "agnostic_oa_dimension_sobolev_diameter": "agnostic_oa_critic_810b59fb4c064a9430e7cbda4eddcac8d13b1622b0aa1d3ee17be3eb18a17d42",
+    "agnostic_oa_displacement_convexity_limit_stability": "agnostic_oa_critic_cd1e855586699e59e593a8e264433fb00e39239287eb7333c8a529672d9ae315",
+    "agnostic_oa_dyadic_gluing_geodesic_reconstruction": "agnostic_oa_critic_9b51489afbc2f3aa1d4d253b27524614ad3796471b77e35df8cb3ec26086ad93",
+    "agnostic_oa_dynamical_transport_lift": "agnostic_oa_critic_2fdf2b276719f2efea15f534a33c683b8820531227f11d0f07603fd5961e4123",
+    "agnostic_oa_entropy_volume_growth_compactness": "agnostic_oa_critic_55794152a53645cb34987404c7aa9247a2bdc5dd61a3c3bdd99239fb77cfd965",
+    "agnostic_oa_geodesic_convexity_hwi": "agnostic_oa_critic_fc331551afa85608e59e8793790dadeb37668d6ff3977ed5b2522c8df2f25664",
+    "agnostic_oa_jacobian_root_curvature_inequality": "agnostic_oa_critic_a6d4c927eb3c4a603edb61f853beeb02cd663c81e6284c782bb3507c8710a9da",
+    "agnostic_oa_local_uniqueness_weak_to_strong": "agnostic_oa_critic_1210ed9d5f74a77ab82c49c779b117581c184f068ea5022992f703de5bcd4444",
+    "agnostic_oa_superlinear_energy_absolute_continuity": "agnostic_oa_critic_a04f160aa7f598246b8ddab28df8d25da57e34c62b7a359db8b794753df9c7af",
+    "agnostic_oa_tensor_displacement_convexity_equivalence": "agnostic_oa_critic_5217828664016f8602cb7d705b08a8f14af35d9adfafe94f9aad32844007dc9c",
+    "agnostic_oa_wasserstein_functor_gh_stability": "agnostic_oa_critic_5a57cccad9a57f45d4f72df6026486f88a2f7fc002c8f5319098cc1d70a6a0bc",
+    "agnostic_oa_weak_convexity_closure": "agnostic_oa_critic_a584dae14c6ada7ed3a3f807ccc4eb71bf35a97b21340bd7fd3e207112f571b9"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "context_risk",
+    "critic_provenance",
+    "decision",
+    "faithfulness",
+    "missed_mechanism",
+    "paraphrase_risk",
+    "revision_instructions",
+    "unit_id",
+    "unsupported_or_imported"
+  ],
+  "isolation_requirement": "Fresh critic context for nearby units from one source only; see exact units and compact candidates, not teacher reasoning or unrelated analyses.",
+  "model_visible_packet_sha256": "fa4e6224dfedf11289cca258acf20e4632488c2345634df23a73d2d172ff62cb",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/critic/batches/openalex_w1968781546_32987cbd_part_01.jsonl",
+  "source_id": "openalex_w1968781546",
+  "stage": "critic",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_dynamical_transport_lift.txt",
+      "artifact_bytes": 5096,
+      "artifact_relpath": "depth/units/agnostic_oa_dynamical_transport_lift.txt",
+      "artifact_sha256": "3bdea0c81666751ace2a8a3a22be38e8ad0a606544c0d8e0e7625802b51a53ca",
+      "content_sha256": "ac19fb30512220f321efa1db14ab60fa668f0ed468bfa6bd2d942ebd1e48c785",
+      "context_note": "The source proves the measurable-selection construction and the length identity; the planar switch example only illustrates nonuniqueness.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_dynamical_transport_lift",
+            "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_energy_legendre_lsc_contraction",
+            "agnostic_oa_energy_preserving_mollification",
+            "agnostic_oa_infinite_reference_growth_duality"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint couplings, path measures, convex test potentials, invariant lifts, and weighted Legendre tests provide complementary objects for enforcing transport, marginal, quotient, and growth constraints. This is source-internal reinforcement only."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 692,
+      "line_start": 595,
+      "representation_dependency": "Compactness and the length-space property ensure minimizing geodesics and measurable selection; quadratic cost and constant-speed parametrization give the exact length calculation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A coupling records where mass starts and ends but not which minimizing paths it follows. A measurable geodesic selection lifts an optimal coupling to a dynamical plan, and evaluating that plan at each time produces a curve whose length equals the endpoint Wasserstein distance.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Endpoint transport plans lift to distributions over geodesic paths",
+      "unit_id": "agnostic_oa_dynamical_transport_lift",
+      "unit_type": "representation-lift"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_dyadic_gluing_geodesic_reconstruction.txt",
+      "artifact_bytes": 8519,
+      "artifact_relpath": "depth/units/agnostic_oa_dyadic_gluing_geodesic_reconstruction.txt",
+      "artifact_sha256": "7794fbcd76349ff59ebabd98b46a1f3aaf3253f159429ae6ed6626bfcb4457fe",
+      "content_sha256": "2aee65cd30f5473e468636b605353870eaca267ee667e76a68e463ad3254c5ba",
+      "context_note": "This is a theorem proved in the source, not merely cited background. Dense dyadic formulas are readable at the argument level but need visual checking for exact indices.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_dynamical_transport_lift",
+            "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_energy_legendre_lsc_contraction",
+            "agnostic_oa_energy_preserving_mollification",
+            "agnostic_oa_infinite_reference_growth_duality"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint couplings, path measures, convex test potentials, invariant lifts, and weighted Legendre tests provide complementary objects for enforcing transport, marginal, quotient, and growth constraints. This is source-internal reinforcement only."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 830,
+      "line_start": 693,
+      "representation_dependency": "The proof uses disintegration/gluing, equality cases of triangle and quadratic bounds, compactness of the geodesic-path space, and continuity from dyadic to all times.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Optimal couplings between successive dyadic-time marginals are glued into compatible finite path laws; equality in the metric bounds forces the glued points onto minimizing geodesics, and weak compactness yields one dynamical plan realizing every time marginal.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Every Wasserstein geodesic is reconstructed by dyadic gluing and compactness",
+      "unit_id": "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+      "unit_type": "reconstruction-by-compactness"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_weak_convexity_closure.txt",
+      "artifact_bytes": 9590,
+      "artifact_relpath": "depth/units/agnostic_oa_weak_convexity_closure.txt",
+      "artifact_sha256": "14d2445ff24cced1e35c6768b3f6a5f4528007840025256d4a3e11f1ea617fb2",
+      "content_sha256": "ffc2052f83298b4d2bc7aa3d8e1b21580855931a9a4ab65d7243fe45211a6011",
+      "context_note": "The definition includes the singular part of the energy and makes the quantifier distinction explicit. The approximation and lower-semicontinuity inputs are proved later in appendices.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 1039,
+      "line_start": 859,
+      "representation_dependency": "The extension relies on compact Wasserstein geometry, continuous-density approximation preserving the chosen energy, and lower semicontinuity; it does not upgrade the existential geodesic quantifier to all geodesics.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The source separates convexity along every geodesic from existence of one good geodesic and from restrictions to absolutely continuous endpoints, then proves that weak convexity on regular densities extends to arbitrary supported measures by energy-preserving approximation, geodesic compactness, and lower semicontinuity.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Approximation and lower semicontinuity extend weak convexity beyond regular endpoints",
+      "unit_id": "agnostic_oa_weak_convexity_closure",
+      "unit_type": "closure-and-extension"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_local_uniqueness_weak_to_strong.txt",
+      "artifact_bytes": 1528,
+      "artifact_relpath": "depth/units/agnostic_oa_local_uniqueness_weak_to_strong.txt",
+      "artifact_sha256": "11a407b485a840396f261249c16bda1ffbd730743acf48895aa3a0a0563a7c43",
+      "content_sha256": "cdf952a48bedbbee40231845d030fb86486750979451515bbdd0fe074775a972",
+      "context_note": "The theorem states separate versions for all measures and for a totally convex absolutely continuous subspace.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 1064,
+      "line_start": 1040,
+      "representation_dependency": "The upgrade materially requires local uniqueness, full support of the reference, and total convexity in the absolutely continuous version; without them weak and strong displacement convexity remain distinct.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "If short subsegments of each geodesic are uniquely minimizing, the existential good geodesic between nearby points must coincide with the chosen subsegment; local convexity then patches across the full interval.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Local geodesic uniqueness upgrades weak convexity to all-geodesic convexity",
+      "unit_id": "agnostic_oa_local_uniqueness_weak_to_strong",
+      "unit_type": "quantifier-upgrade"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_geodesic_convexity_hwi.txt",
+      "artifact_bytes": 9335,
+      "artifact_relpath": "depth/units/agnostic_oa_geodesic_convexity_hwi.txt",
+      "artifact_sha256": "892fc41b4170c1919d31b3e963d09d6094de52488dd3b44c3df8bddedfc1d85d",
+      "content_sha256": "b1b3efe0120466225198590d46ea097bf9292e14def4c485214e53648345133c",
+      "context_note": "The proof avoids an explicit derivative by convex comparison, monotonicity, Cauchy-Schwarz, and a descending metric gradient. Formula-heavy estimates require exact visual verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_dynamical_transport_lift",
+            "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_energy_legendre_lsc_contraction",
+            "agnostic_oa_energy_preserving_mollification",
+            "agnostic_oa_infinite_reference_growth_duality"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint couplings, path measures, convex test potentials, invariant lifts, and weighted Legendre tests provide complementary objects for enforcing transport, marginal, quotient, and growth constraints. This is source-internal reinforcement only."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 1322,
+      "line_start": 1128,
+      "representation_dependency": "The slope estimate needs a positive Lipschitz density, regularity of the convex integrand, absolute continuity along the selected geodesic, and the dynamical-plan representation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A single convexity inequality along a geodesic from a measure to the reference gives a transport lower bound and, by estimating the initial directional slope through a dynamical plan, a generalized HWI inequality linking energy, Wasserstein distance, and Fisher information.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Geodesic convexity yields transport-information-energy inequalities",
+      "unit_id": "agnostic_oa_geodesic_convexity_hwi",
+      "unit_type": "convexity-to-inequality"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_wasserstein_functor_gh_stability.txt",
+      "artifact_bytes": 4154,
+      "artifact_relpath": "depth/units/agnostic_oa_wasserstein_functor_gh_stability.txt",
+      "artifact_sha256": "4874ca306c9bae9ee0e1a495c76a7705bb8e208c36267019b3ac37c505261916",
+      "content_sha256": "bc067555062788ecd091279dff674e941e0f75a68cf7d0d20c3bbf879bb63410",
+      "context_note": "The proof is internal to the source. The displayed distortion constant is extraction-sensitive but the two-sided comparison mechanism is clear.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 1416,
+      "line_start": 1323,
+      "representation_dependency": "Compactness controls diameters, pushforward transports couplings, and approximate inverses are required for the reverse bound and density of the image.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Pushing measures forward along an approximate isometry distorts quadratic transport costs by a controlled amount, while an approximate inverse supplies the reverse estimate and approximate surjectivity; therefore convergence of compact spaces induces convergence of their Wasserstein spaces.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Approximate metric equivalences lift quantitatively to Wasserstein spaces",
+      "unit_id": "agnostic_oa_wasserstein_functor_gh_stability",
+      "unit_type": "functorial-stability"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_displacement_convexity_limit_stability.txt",
+      "artifact_bytes": 8016,
+      "artifact_relpath": "depth/units/agnostic_oa_displacement_convexity_limit_stability.txt",
+      "artifact_sha256": "7679fb5afde508fbf4baae672ffbc78fb3f96aebf41d425bccf39710135242a2",
+      "content_sha256": "7793024d1f53f0ee75042644d4455cbedbeae9cb84e59fa94640a322893d6ac0",
+      "context_note": "This is a central theorem proved in the source, with the family-valued version and regular-endpoint equivalence stated explicitly.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 1551,
+      "line_start": 1417,
+      "representation_dependency": "The proof depends on measured convergence of references, Wasserstein-space convergence, energy contraction under pushforward, joint lower semicontinuity, and a common-geodesic quantifier for all functions in the family.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Regular endpoint measures are pulled back to approximating spaces, good geodesics are compactified after pushforward, endpoint energies converge, and contraction plus joint lower semicontinuity pass the convexity inequality to the limit; the same geodesic can be retained for an entire family of energies.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Weak displacement convexity survives measured Gromov-Hausdorff limits",
+      "unit_id": "agnostic_oa_displacement_convexity_limit_stability",
+      "unit_type": "property-transfer-under-limits"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_dimension_indexed_convexity_curvature.txt",
+      "artifact_bytes": 5968,
+      "artifact_relpath": "depth/units/agnostic_oa_dimension_indexed_convexity_curvature.txt",
+      "artifact_sha256": "de1cc4905c54516c61703a2305a5656acf5572a7e1c339b1d91cf90ac74e8028",
+      "content_sha256": "f45a4ab4500d2d74908fd0898053bd02e2f0417c9bedf5873bf274d57a25f438",
+      "context_note": "The source proves nesting and pressure characterizations before using the classes in the definition. Exact derivative and exponent formulas are formula-risk points.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 1666,
+      "line_start": 1552,
+      "representation_dependency": "The encoding depends on the reference measure, Wasserstein geodesics, the dimension-indexed rescaling of density, and an existential common geodesic for the full energy class.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A change of variables selects nested classes of convex internal energies indexed by a dimension parameter; weak simultaneous displacement convexity for the class becomes the definition of lower synthetic Ricci curvature, with pressure criteria giving equivalent membership tests.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Dimension-indexed convex energies encode a synthetic curvature condition",
+      "unit_id": "agnostic_oa_dimension_indexed_convexity_curvature",
+      "unit_type": "synthetic-definition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_curvature_localization_and_limit.txt",
+      "artifact_bytes": 3505,
+      "artifact_relpath": "depth/units/agnostic_oa_curvature_localization_and_limit.txt",
+      "artifact_sha256": "f9ae2e61b516f507688348863a53d162a8519b28e35aeb86a01e6ce144ff60a9",
+      "content_sha256": "e7d3abc4d292f23f76b2ec8e0d87a60aee5bdd6dfe092ae5d64ca5742f027067",
+      "context_note": "Both localization and measured-limit preservation are theorems proved here; the later smooth section separately checks agreement with classical curvature.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 1738,
+      "line_start": 1667,
+      "representation_dependency": "Localization requires total convexity rather than ordinary convexity and correct reference normalization; limit closure inherits all hypotheses of the measured Gromov-Hausdorff stability theorem.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Restriction to a totally convex subset preserves admissible geodesics, while renormalizing the restricted reference induces a corresponding rescaling of every energy; the main limit theorem then follows directly from family-wise displacement-convexity stability.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Synthetic curvature localizes to totally convex subsets and is closed under measured limits",
+      "unit_id": "agnostic_oa_curvature_localization_and_limit",
+      "unit_type": "localization-and-stability"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_entropy_volume_growth_compactness.txt",
+      "artifact_bytes": 8562,
+      "artifact_relpath": "depth/units/agnostic_oa_entropy_volume_growth_compactness.txt",
+      "artifact_sha256": "1e12db4f038ecd8b0cf50b7a11e0e4f34d15f0c65d59e0743cfd28a72a9f5c36",
+      "content_sha256": "35bfc58509bb9696c22a395ca1f2f20aab974b97beb6f2f674d0f2e619a79f99",
+      "context_note": "The proofs are internal. Concrete radii are symbolic parameters, not hidden arithmetic; dense Hölder and entropy formulas need visual checking.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 1900,
+      "line_start": 1739,
+      "representation_dependency": "The conclusions use finite dimension-indexed entropy, displacement interpolation support contraction, nonatomicity or the delta case, full support for compactness, and the prior stability theorem.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Transporting a point mass into a ball and comparing upper entropy convexity with support-based lower bounds rules out isolated partial atoms and yields a Bishop-Gromov-type ball-volume ratio; the growth bound then supplies metric-measure sequential compactness and full support of limits.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Entropy convexity forces nonatomicity, volume growth, and precompactness",
+      "unit_id": "agnostic_oa_entropy_volume_growth_compactness",
+      "unit_type": "geometric-consequence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_compact_quotient_invariant_lift.txt",
+      "artifact_bytes": 7748,
+      "artifact_relpath": "depth/units/agnostic_oa_compact_quotient_invariant_lift.txt",
+      "artifact_sha256": "d669148f3535159802e5eae240f0301c13167642195b3da47f172319c91b0c13",
+      "content_sha256": "e96281f934993c33cea0b872267f36532942b591a13ea5d5905afc9494eb9194",
+      "context_note": "The theorem is proved under explicit uniqueness and absolute-continuity assumptions; it is not an unconditional quotient principle.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_dynamical_transport_lift",
+            "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_energy_legendre_lsc_contraction",
+            "agnostic_oa_energy_preserving_mollification",
+            "agnostic_oa_infinite_reference_growth_duality"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint couplings, path measures, convex test potentials, invariant lifts, and weighted Legendre tests provide complementary objects for enforcing transport, marginal, quotient, and growth constraints. This is source-internal reinforcement only."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2046,
+      "line_start": 1901,
+      "representation_dependency": "The construction requires a compact group with Haar measure, isometric measure-preserving action, measurable orbit representatives, unique absolutely continuous Wasserstein geodesics, and equality of lifted and quotient densities.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Averaging couplings over a compact group and measurably choosing minimum-distance orbit representatives proves that invariant measures upstairs are isometric to all measures downstairs; uniqueness makes the lifted geodesic invariant, so its energy convexity descends to the quotient.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Invariant lifting identifies quotient Wasserstein geometry and transfers curvature",
+      "unit_id": "agnostic_oa_compact_quotient_invariant_lift",
+      "unit_type": "quotient-transfer"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_superlinear_energy_absolute_continuity.txt",
+      "artifact_bytes": 8326,
+      "artifact_relpath": "depth/units/agnostic_oa_superlinear_energy_absolute_continuity.txt",
+      "artifact_sha256": "18fdb23ca237740a29e992372f50fa95ecba983a4d5fd601adea572fff89e0b5",
+      "content_sha256": "813670320b41ea6b454e521f78c8e7f7fbfd3efed080a544634f8d7cc930bf05",
+      "context_note": "The source constructs the energy using a convex minorant and proves both absolute-continuity and support results. Formula details around the minorant require verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2193,
+      "line_start": 2047,
+      "representation_dependency": "This argument uses finite dimension parameter, simultaneous convexity for the full energy class, Dunford-Pettis uniform integrability, and closedness of the support under weak limits.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Uniform integrability is converted into one admissible superlinear convex energy finite at both endpoints; convexity keeps that energy finite along a selected geodesic, and its infinite recession slope excludes singular mass. Approximation then shows that the reference support is geodesically convex and carries the same curvature condition.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "A tailored superlinear energy keeps interpolation inside the absolutely continuous class",
+      "unit_id": "agnostic_oa_superlinear_energy_absolute_continuity",
+      "unit_type": "barrier-and-support"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_curvature_functional_inequality_chain.txt",
+      "artifact_bytes": 9178,
+      "artifact_relpath": "depth/units/agnostic_oa_curvature_functional_inequality_chain.txt",
+      "artifact_sha256": "f38b05e64ac484e41aee4bb3da6a7a291648cc8861e7623628fbc7a6bb92bc68",
+      "content_sha256": "4f05f4c18f0475f1d6c199767dc3bc55b655ff3535e91296afce845aa28d0012",
+      "context_note": "The main implications and perturbative proof are internal. Some stronger cross-implications are explicitly announced for other work and remain cited/background rather than established here.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2369,
+      "line_start": 2194,
+      "representation_dependency": "The chain uses positive curvature for coercive constants, Lipschitz positive densities for Fisher information, the descending gradient norm, and a Taylor expansion near equilibrium.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The general geodesic HWI estimate is specialized using curvature-selected entropy and absolute continuity, yielding log-Sobolev and Talagrand inequalities; a small perturbation around the reference measure linearizes log-Sobolev into Poincaré.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Synthetic curvature propagates through HWI to log-Sobolev, transport, and Poincaré bounds",
+      "unit_id": "agnostic_oa_curvature_functional_inequality_chain",
+      "unit_type": "analytic-consequence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_dimension_sobolev_diameter.txt",
+      "artifact_bytes": 4548,
+      "artifact_relpath": "depth/units/agnostic_oa_dimension_sobolev_diameter.txt",
+      "artifact_sha256": "f094504a4d986af472a4ea2074dc059ec8a2edbeb5446b17aa70da75a2c5adbf",
+      "content_sha256": "1dd86504f96f126360bc89907b558999c1a049c1a1fe50b737f4c4e688e49c77",
+      "context_note": "The source proves the algebraic reformulation and invokes an earlier argument for the final universal diameter constant; the exact exponents and constant are formula-sensitive.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2459,
+      "line_start": 2377,
+      "representation_dependency": "Sobolev exponents depend on the finite dimension parameter, and the diameter conclusion needs both finite-dimensional nonnegative curvature, positive infinite-dimensional curvature, and full support.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Reparameterizing the finite-dimension entropy inequality produces a Sobolev-type embedding estimate, while combining polynomial volume growth with transport concentration gives a weak Bonnet-Myers diameter bound.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Finite-dimensional entropy bounds yield Sobolev control and a curvature-growth diameter estimate",
+      "unit_id": "agnostic_oa_dimension_sobolev_diameter",
+      "unit_type": "dimension-dependent-consequence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_jacobian_root_curvature_inequality.txt",
+      "artifact_bytes": 5121,
+      "artifact_relpath": "depth/units/agnostic_oa_jacobian_root_curvature_inequality.txt",
+      "artifact_sha256": "90491f775a3550de4a8d1401592fffc108a2b1956a19f7b876989fc9c0977153",
+      "content_sha256": "09ce54b860a7de6f94f40f4521f70ec78c7969c450cbb96fea439781e96506ab",
+      "context_note": "This lemma is proved in the source and is the local engine for the smooth equivalence theorem. Matrix indices, determinant roots, and signs require PDF verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2611,
+      "line_start": 2507,
+      "representation_dependency": "The proof requires a smooth manifold, almost-everywhere Hessian of the transport potential, nonsingular transport differentials, Jacobi equations, and self-adjointness of the induced deformation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Jacobi fields along an optimal transport map turn the determinant of its differential into a scalar function; self-adjoint matrix evolution and a trace inequality bound the second derivative of its normalized determinant by Ricci curvature.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "A root-Jacobian differential inequality compresses sectional data to Ricci curvature",
+      "unit_id": "agnostic_oa_jacobian_root_curvature_inequality",
+      "unit_type": "differential-geometric-lemma"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tensor_displacement_convexity_equivalence.txt",
+      "artifact_bytes": 10099,
+      "artifact_relpath": "depth/units/agnostic_oa_tensor_displacement_convexity_equivalence.txt",
+      "artifact_sha256": "ee915c48d4a1906ab81afa9a858445204c01af9f66c8642a33a9d2d4ca765f4e",
+      "content_sha256": "d3b43eddae2a3f844324a14ed308d25e601a3014439f1051971858e52d8362cd",
+      "context_note": "This is the central smooth theorem proved in the source. It distinguishes the finite-dimension and infinite-dimension cases and handles the dimension obstruction explicitly; the derivation is densely formula-dependent.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2802,
+      "line_start": 2612,
+      "representation_dependency": "The equivalence uses unique smooth-manifold optimal transport from absolutely continuous data, weighted Jacobians, the preceding Jacobi lemma, precisely chosen convexity classes, and localized test transports.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A change-of-variables formula factors transported densities into weighted Jacobian terms whose concavity, supplied by the curvature tensor bound, makes every admissible entropy convex; conversely, localized transports with chosen Hessian recover each tensor component from required entropy convexity.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Weighted Ricci tensors are equivalent to displacement convexity of entropy",
+      "unit_id": "agnostic_oa_tensor_displacement_convexity_equivalence",
+      "unit_type": "equivalent-characterizations"
+    }
+  ]
+}

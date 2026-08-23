@@ -1,0 +1,2534 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1983740031_4c4781fe_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1983740031",
+  "unit_count": 15,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the defining formulas and both symmetry statements; the displayed sums are visibly split by PDF extraction.",
+      "line_end": 53,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Original PDF required to verify equations (1)-(4), especially fractions and matrix layout.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates two series representations to meromorphic continuation, the s↦1−s functional equation, and modular invariance, supplying the structural symmetries used by every later integral.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Completed Eisenstein series, continuation, and two symmetries",
+      "unit_artifact_relpath": "depth/units/u01_eisenstein_symmetry.txt",
+      "unit_bytes": 3277,
+      "unit_id": "u01_eisenstein_symmetry",
+      "unit_sha256": "0f3f6737acfc3d9f8de28780a2e729d1ded8fe7f59ed5bd0eeff604566081e91",
+      "unit_type": "definition-and-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u01_eisenstein_symmetry.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 17,
+          "line_end": 24,
+          "text": "                                                   zeros on the line ℜ(s) = 12 . For the constant term a0 (y, s) of the Eisenstein series\n                                                   the Riemann hypothesis holds for all values y ≥ 1, with at most two exceptional real\n                                                   zeros, which occur exactly for those y > 4πe−γ = 7.0555+. The Riemann hypothesis\n                                                   holds for all truncation integrals with truncation parameter T ≥ 1. At the value T = 1\n                                                   this proves the Riemann hypothesis for a zeta function Z2,Q (s) recently introduced\n                                                   by Lin Weng, associated to rank 2 semistable lattices over Q.\n\n\n",
+          "sha256": "6d59b882535539b80d4e3dacdf1c87091289e18aad16a93e3c1d942669769193"
+        },
+        "after": {
+          "line_start": 54,
+          "line_end": 61,
+          "text": "\n<!-- source-page: 2 -->\n\n2\n\nIn particular E ∗ (z + 1, s) = E ∗ (z, s) so it has a Fourier expansion\n                                                ∞\n                               E ∗ (z, s) =              an (y, s)e2πinx,\n",
+          "sha256": "acbdffa13ac3d6adf64d73c5a5c4ab3e675da6f84b8a109e7ba46c55cdc92d09"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 335,
+            "line_start": 25,
+            "mathematical_role": "Defines the completed Eisenstein series and Fourier coefficients, constructs Weng and truncation integrals, states the three main results, and situates their proof mechanisms and prior work."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 53,
+          "line_start": 25,
+          "title": "Completed Eisenstein series, continuation, and two symmetries",
+          "unit_id": "u01_eisenstein_symmetry",
+          "unit_type": "definition-and-representation",
+          "why_material": "Relates two series representations to meromorphic continuation, the s↦1−s functional equation, and modular invariance, supplying the structural symmetries used by every later integral."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the defining formulas and both symmetry statements; the displayed sums are visibly split by PDF extraction.",
+          "representation_dependency": "Original PDF required to verify equations (1)-(4), especially fractions and matrix layout.",
+          "unit_id": "u01_eisenstein_symmetry"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 102,
+            "line_start": 59,
+            "title": "Fourier decomposition isolates an exceptional constant term",
+            "unit_id": "u02_fourier_constant_term",
+            "unit_type": "decomposition",
+            "why_material": "Decomposes the Eisenstein series into entire nonconstant coefficients built from divisor sums and K-Bessel functions versus a meromorphic constant term built from two completed-zeta terms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 24,
+              "line_start": 14,
+              "reason": "Abstract and spacing summarize results but add no mechanism beyond units below."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u01_eisenstein_symmetry",
+        "spontaneous": {
+          "unit_id": "u01_eisenstein_symmetry",
+          "spontaneous_reading": "The useful object is the completed Eisenstein series: its lattice-sum and coprime-pair descriptions lead to one meromorphic function carrying both the spectral reflection s↦1−s and modular invariance in z. Completion packages the poles and symmetry needed by later integrals rather than merely changing notation."
+        },
+        "directed": {
+          "unit_id": "u01_eisenstein_symmetry",
+          "source_grounded_mathematics": "For Re(s)>1 the source gives two equivalent series for E*(z,s), states meromorphic continuation with simple poles at 0 and 1 and opposite half-residues, and records E*(z,s)=E*(z,1−s) together with weight-zero PSL(2,Z) invariance.",
+          "conceptual_reading": "The two symmetries act in different variables: modular transformations identify geometric presentations of z, while the functional equation identifies reflected spectral parameters. Their coexistence is the structural resource later preserved by integration.",
+          "representation_or_bridge": "Multiplying the ordinary Eisenstein series by the gamma/pi completion and using either all lattice pairs or primitive pairs bridges automorphic geometry to zeta/L-function analytic structure.",
+          "boundary_or_failure": "Nothing here implies a line-zero theorem for E* or for an arbitrary integral of it; the unit establishes definitions, continuation, poles, and symmetries only.",
+          "uncertainty": "The extracted displays split fractions, summation conditions, and the modular matrix layout. Equations (1)–(4), including normalizations and residues, require the retained PDF for exact reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u01_eisenstein_symmetry",
+        "critic_decision": "revise",
+        "supported": [
+          "The span directly gives two equivalent definitions of the completed Eisenstein series, meromorphic continuation, poles at 0 and 1, the s↦1−s functional equation, and weight-zero modular invariance."
+        ],
+        "inference": [
+          "Treating the coexistence of spectral and modular symmetries as a resource preserved by later integration is a reasonable forward-looking interpretation, not a claim made in this span."
+        ],
+        "unsupported_or_imported": [
+          "The claim that completion itself packages the poles and symmetry 'needed by later integrals' assigns a causal/design role not established here; later use lies outside the evidence boundary."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Bridges automorphic geometry to zeta/L-function analytic structure' is a familiar bridge template unless tied specifically to the primitive-pair formula's ζ(2s) factor and the two distinct symmetry variables."
+        ],
+        "context_or_ocr_risk": [
+          "Equations (1)–(4) have split fractions, summation conditions, residues, and matrix layout, so no exact normalization should be learned from this text layer alone."
+        ],
+        "missed_mechanism": [
+          "The analysis should emphasize that the two symmetries act independently in z and s and that the primitive-pair representation differs from the full lattice sum by the explicit completion/ζ factor, subject to PDF verification."
+        ],
+        "revision_instructions": [
+          "Keep the factual inventory, label the claimed downstream usefulness as interpretation, replace the generic bridge sentence with the specific all-pairs versus coprime-pairs relation, and prohibit exact formula reuse until the PDF is checked."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the fundamental-domain partition and Zagier vanishing identity needed for the T=1 identification.",
+      "line_end": 210,
+      "line_start": 159,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The region definitions, residues, equations (18)-(21), and signs require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Horizontal integration deletes nonconstant Fourier modes, yielding an explicit two-term expression I(T,s); Theorem 2 gives its sharp T≥1 RH range and the T=1 partition identifies it with Weng's zeta function.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncation converts geometric integration to a shifted zeta combination",
+      "unit_artifact_relpath": "depth/units/u05_truncation_integral_rh.txt",
+      "unit_bytes": 3270,
+      "unit_id": "u05_truncation_integral_rh",
+      "unit_sha256": "82afa67d6832af7bc0f2431eea14957ff686332f23c5a3cd4e2a98a047c8c101",
+      "unit_type": "representation-change-and-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u05_truncation_integral_rh.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 151,
+          "line_end": 158,
+          "text": "                          Z2,Q (s) := ζ ∗ (2s)    − ζ ∗ (2 − 2s)                       (15)\n                                             s−1                 s\n                                              1\nhas all its zeros on the critical line ℜ(s) = 2 .\n  A further result in §4 shows that all these zeros are simple zeros. These results\nsupply evidence that the zeta functions associated to semi-stable lattices introduced\nby Weng [28] are of interest and deserve further investigation. Note that for n ≥ 2 the\nrank n zeta function does not have an Euler product.\n",
+          "sha256": "afadaf4ff3237c9bad3248965dab0f45f26dbc337fe78c6bd6f17bee43905322"
+        },
+        "after": {
+          "line_start": 211,
+          "line_end": 218,
+          "text": "   The second set of integrals we consider are those giving the constant term a0 (y, s)\nfor fixed y, i.e. (6) for n = 0. Study of these integrals is motivated by an observation\nof Dan Bump which is stated in [5, p. 6]: for each n 6= 0 and each y > 0, the Fourier\ncoefficient an (y, s) satisfies the Riemann hypothesis in the s-variable. (This fact was\nnoted earlier by D. Hejhal [12, p. 85]. Bump’s point in [5] is to make an analogy\nwith metaplectic Eisenstein series, see the discussion in §5.) The observation follows\nbecause the finite Dirichlet series σs (n) is easily shown from its Euler product to have\nall zeros on the imaginary axis ℜ(s) = 0. In addition, for fixed y > 0 the K-Bessel\n",
+          "sha256": "de42940ae532a387dccf8f919b30c818480576f4aa7798f5f9da3f0247d1c6b1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 335,
+            "line_start": 25,
+            "mathematical_role": "Defines the completed Eisenstein series and Fourier coefficients, constructs Weng and truncation integrals, states the three main results, and situates their proof mechanisms and prior work."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 210,
+          "line_start": 159,
+          "title": "Truncation converts geometric integration to a shifted zeta combination",
+          "unit_id": "u05_truncation_integral_rh",
+          "unit_type": "representation-change-and-theorem",
+          "why_material": "Horizontal integration deletes nonconstant Fourier modes, yielding an explicit two-term expression I(T,s); Theorem 2 gives its sharp T≥1 RH range and the T=1 partition identifies it with Weng's zeta function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the fundamental-domain partition and Zagier vanishing identity needed for the T=1 identification.",
+          "representation_dependency": "The region definitions, residues, equations (18)-(21), and signs require PDF verification.",
+          "unit_id": "u05_truncation_integral_rh"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 158,
+            "line_start": 122,
+            "title": "Semistable-lattice integral produces Weng's rank-two zeta function",
+            "unit_id": "u04_weng_rank_two_zeta",
+            "unit_type": "construction-and-theorem",
+            "why_material": "Connects Mellin integration over semistable-lattice moduli to an Eisenstein integral, states its continuation and functional equation, and gives the rank-two RH theorem while noting the absence of an Euler product."
+          },
+          {
+            "line_end": 234,
+            "line_start": 211,
+            "title": "Why the constant Fourier coefficient is the difficult case",
+            "unit_id": "u06_fourier_coefficient_contrast",
+            "unit_type": "motivation-and-obstruction",
+            "why_material": "Explains that nonconstant coefficients inherit imaginary-axis zeros from two factors, whereas the meromorphic constant coefficient requires a modified RH and Maass-Selberg input."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Horocycle/truncation integration selects the constant Fourier mode, the resulting two shifted completed-zeta terms admit a symmetry-blocked product comparison, and T≥1 turns that comparison into a strict half-plane modulus barrier.",
+            "limit": "This mechanism proves RH only for the specified integrated/truncated combinations; it neither proves RH for zeta itself nor conceptually explains every Eisenstein coefficient.",
+            "parent_local_unit_ids": [
+              "u02_fourier_constant_term",
+              "u03_measure_integral_interface",
+              "u05_truncation_integral_rh",
+              "u10_shifted_function_line_zero_theorem",
+              "u14_apply_theorem_to_truncation"
+            ],
+            "title": "From Fourier projection to a shifted-xi modulus barrier"
+          },
+          {
+            "claim": "Canonical-polygon semistability selects D_ss in rank two, Weng's lattice Mellin integral becomes an Eisenstein integral over that region, and the fundamental-domain partition converts it to the T=1 truncation integral whose zeros are controlled by Theorem 2.",
+            "limit": "The rank-two identification does not extend the proved RH result to Weng's higher-rank zeta functions, which have different groups and no asserted Euler product.",
+            "parent_local_unit_ids": [
+              "u04_weng_rank_two_zeta",
+              "u05_truncation_integral_rh",
+              "u31_lattice_slopes_and_polygon",
+              "u32_canonical_filtration_and_semistability",
+              "u33_rank_two_moduli_identification",
+              "u34_weng_integral_recovered"
+            ],
+            "title": "Semistability geometry identifies Weng's rank-two zeta with the T=1 theorem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u05_truncation_integral_rh",
+        "spontaneous": {
+          "unit_id": "u05_truncation_integral_rh",
+          "spontaneous_reading": "Geometric truncation and horizontal averaging discard every nonconstant Fourier mode, leaving a parameter-weighted pair of reflected zeta terms. The cutoff T is structurally active: the line-zero theorem holds for T≥1, fails below 1, and at T=1 the complementary-domain identity recovers Weng's rank-two function."
+        },
+        "directed": {
+          "unit_id": "u05_truncation_integral_rh",
+          "source_grounded_mathematics": "The source defines D^T and I(T,s)=∫_{D^T}E*(z,s)dμ_H. Integrating over x retains only a_0 and yields the two-term formula (18). It states a functional equation and possible simple poles, proves all zeros lie on Re(s)=1/2 for T≥1, and says the hypothesis cannot be relaxed because RH fails for 0<T<1. Zagier's vanishing integral over the fundamental domain and its partition by D_ss and D^1 give Z_{2,Q}(s)=−I(1,s).",
+          "conceptual_reading": "Truncation is a representation choice that exchanges the full automorphic function for its constant-mode analytic combination. The threshold T=1 aligns analytic dominance with a geometric containment/partition, so the parameter changes more than scale.",
+          "representation_or_bridge": "Horizontal integration is the projection bridge; the T-dependent powers relocate the geometric cutoff into relative weights on ζ*(2s) and ζ*(2−2s). The T=1 domain partition then identifies this family with the semistable-lattice construction.",
+          "boundary_or_failure": "The result is sharp only as stated: it does not license line zeros for 0<T<1 or for arbitrary truncation regions. The unit states, but does not supply, the argument-principle proof of failure below the threshold.",
+          "uncertainty": "Region inequalities, residues, and signs/exponents in (18)–(21) are formula-sensitive. The extracted statement that I is entire at a particular T is typographically awkward and should not be reused without PDF checking."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u05_truncation_integral_rh",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines D^T and I(T,s), explains that x-integration keeps only a_0, states the T≥1 line-zero theorem and failure for 0<T<1, and gives the T=1 complementary-domain identification with Weng's function."
+        ],
+        "inference": [
+          "Treating the T-dependent powers as relative weights and geometric truncation as a representation change is reasonable from equations (17)–(20)."
+        ],
+        "unsupported_or_imported": [
+          "The statement that T=1 'aligns analytic dominance with a geometric containment/partition' imports the later shifted-modulus proof; this span gives containment and partition but does not establish them as the cause of the full T≥1 theorem."
+        ],
+        "paraphrase_or_style_risk": [
+          "'The parameter changes more than scale' sounds explanatory without specifying which fact is source content and which is interpretation."
+        ],
+        "context_or_ocr_risk": [
+          "The region definitions, residues, signs, exponents, and awkward extracted entireness statement are formula-sensitive and must be checked in the PDF."
+        ],
+        "missed_mechanism": [
+          "The source explicitly distinguishes two roles of T=1: D^T first enters the fundamental domain for T≥1, while exactly T=1 participates in the partition identity; these should not be conflated with the later analytic inequality."
+        ],
+        "revision_instructions": [
+          "Separate the proved facts into projection, sharp parameter range, and special T=1 identification; relabel analytic-dominance language as a later-source hypothesis or remove it, and retain the below-threshold failure caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is source-grounded motivation, not a claimed conceptual explanation; the authors later say such an explanation remains open.",
+      "line_end": 234,
+      "line_start": 211,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The factor formulas appear earlier; no essential reconstruction beyond checked prose is needed here.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains that nonconstant coefficients inherit imaginary-axis zeros from two factors, whereas the meromorphic constant coefficient requires a modified RH and Maass-Selberg input.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why the constant Fourier coefficient is the difficult case",
+      "unit_artifact_relpath": "depth/units/u06_fourier_coefficient_contrast.txt",
+      "unit_bytes": 1633,
+      "unit_id": "u06_fourier_coefficient_contrast",
+      "unit_sha256": "e4cbb6e48840c9771117b6092b76fcd79803d05807fb136e73088afb3ee43f73",
+      "unit_type": "motivation-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u06_fourier_coefficient_contrast.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 203,
+          "line_end": 210,
+          "text": "                        Z2,Q (s) = −              E ∗ (z, s)dµH (z) = −I1 (s).             (21)\n                                             D1\nZagier [30, Example 1] observes the Eisenstein series integral identity\n                                  Z Z\n                                            E ∗ (z, s)dµH (z) ≡ 0,\n                                        F\nfor 0 < ℜ(s) < 1. The identity (21) follows by combining this with the fact that F is\npartitioned into the union of Dss and D 1 (up to a hyperbolic measure zero set).\n",
+          "sha256": "88031ab5f6389d0c8ddbecd495469655594b97047a2bdf976fde2705f079d7e1"
+        },
+        "after": {
+          "line_start": 235,
+          "line_end": 242,
+          "text": "\nTheorem 3. For each y ≥ 1 the constant term of the Eisenstein series\n                          a0 (y, s) := ζ ∗ (2s)y s + ζ ∗(2 − 2s)y 1−s                 (22)\nis a meromorphic function that satisfies the modified Riemann hypothesis. There is a\ncritical value\n                                y ∗ := 4πe−γ = 7.055507 +                             (23)\nsuch that the following hold:\n  (1) All zeros of a0 (y, s) lie on the critical line for 1 ≤ y ≤ y ∗.\n",
+          "sha256": "1e7f00855d4ba443128aee1b98d5c0f820fdd9d0099c18c9f4dbf03d1d11325d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 335,
+            "line_start": 25,
+            "mathematical_role": "Defines the completed Eisenstein series and Fourier coefficients, constructs Weng and truncation integrals, states the three main results, and situates their proof mechanisms and prior work."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 234,
+          "line_start": 211,
+          "title": "Why the constant Fourier coefficient is the difficult case",
+          "unit_id": "u06_fourier_coefficient_contrast",
+          "unit_type": "motivation-and-obstruction",
+          "why_material": "Explains that nonconstant coefficients inherit imaginary-axis zeros from two factors, whereas the meromorphic constant coefficient requires a modified RH and Maass-Selberg input."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is source-grounded motivation, not a claimed conceptual explanation; the authors later say such an explanation remains open.",
+          "representation_dependency": "The factor formulas appear earlier; no essential reconstruction beyond checked prose is needed here.",
+          "unit_id": "u06_fourier_coefficient_contrast"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 210,
+            "line_start": 159,
+            "title": "Truncation converts geometric integration to a shifted zeta combination",
+            "unit_id": "u05_truncation_integral_rh",
+            "unit_type": "representation-change-and-theorem",
+            "why_material": "Horizontal integration deletes nonconstant Fourier modes, yielding an explicit two-term expression I(T,s); Theorem 2 gives its sharp T≥1 RH range and the T=1 partition identifies it with Weng's zeta function."
+          },
+          {
+            "line_end": 263,
+            "line_start": 236,
+            "title": "Exact exceptional-zero bifurcation for the constant term",
+            "unit_id": "u07_exceptional_real_zeros",
+            "unit_type": "theorem-and-comparison",
+            "why_material": "Theorem 3 identifies the cutoff y*=4πe^{-γ}, distinguishes the no-exception and two-real-zero regimes, describes monotone escape toward 1, and contrasts this behavior with Epstein zeta functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper itself separates several successful direct verification technologies from the unresolved question of why Eisenstein Fourier coefficients should display RH behavior, then proposes truncation, integrated Bessel functions, full-surface modes, and zero-motion statistics as tests of possible mechanisms.",
+            "limit": "These proposals are not established unifications; some are conditional or heuristic and must not be promoted to proved explanations.",
+            "parent_local_unit_ids": [
+              "u06_fourier_coefficient_contrast",
+              "u08_proof_architectures",
+              "u09_related_approaches",
+              "u26_conceptual_gap_and_truncation_proposal",
+              "u27_integrated_coefficients_bessel_reduction",
+              "u28_full_surface_integrals",
+              "u29_spacing_prediction",
+              "u30_epstein_average_threshold"
+            ],
+            "title": "Direct line-zero verification versus a conceptual Eisenstein mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u06_fourier_coefficient_contrast",
+        "spontaneous": {
+          "unit_id": "u06_fourier_coefficient_contrast",
+          "spontaneous_reading": "The nonzero coefficients admit direct factorwise zero control, but the zero coefficient replaces that product structure by a meromorphic reflected sum. This explains why the constant mode needs a weaker modified-RH target and a different tool, while the authors explicitly leave a conceptual explanation open."
+        },
+        "directed": {
+          "unit_id": "u06_fourier_coefficient_contrast",
+          "source_grounded_mathematics": "For fixed n≠0 and y>0, the source says the finite divisor-series factor and K-Bessel factor each have zeros on the imaginary axis, so a_n(y,s) satisfies the relevant RH in s. It contrasts this with meromorphic a_0(y,s), recalls Hejhal's modified RH for y≥1 via Maass-Selberg relations, and says the paper will determine the real zeros.",
+          "conceptual_reading": "Multiplicative separation makes the nonzero-mode claim reducible to two established zero-location facts. The constant term lacks that decomposition, so the same direct verification cannot simply be copied; exceptional real zeros must be admitted and analyzed separately.",
+          "representation_or_bridge": "The Fourier index is a diagnostic that selects either a factored arithmetic–special-function representation or a coupled completed-zeta representation.",
+          "boundary_or_failure": "The cited factorwise argument is a direct verification, not the conceptual reason that Eisenstein Fourier coefficients should exhibit RH behavior. The unit does not yet determine the constant term's real zeros.",
+          "uncertainty": "The methodological contrast is prose-supported. Exact factor formulas occur earlier and are not reconstructed here; the historical attributions and modified-RH result are cited rather than reproved in this span."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u06_fourier_coefficient_contrast",
+        "critic_decision": "revise",
+        "supported": [
+          "The span directly cites imaginary-axis zeros for both factors of each nonzero Fourier coefficient, contrasts the meromorphic constant term, recalls modified RH for y≥1 via Maass-Selberg, and announces determination of real zeros."
+        ],
+        "inference": [
+          "The observation that product factorization enables factorwise verification whereas an additive reflected sum does not is a reasonable local algebraic diagnosis."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous wording risks presenting that algebraic diagnosis as the conceptual explanation of the Fourier-mode contrast even though the source later explicitly says no conceptual explanation is known."
+        ],
+        "paraphrase_or_style_risk": [
+          "'The Fourier index is a diagnostic' is polished abstraction that could be reused broadly; it should be anchored to the exact product-versus-sum distinction."
+        ],
+        "context_or_ocr_risk": [
+          "The historical results are cited rather than proved, and the exact factor formulas lie outside this span; only the prose-supported contrast is secure here."
+        ],
+        "missed_mechanism": [
+          "The analysis should preserve the source's distinction between a direct verification and an explanation of why the phenomenon occurs, rather than letting the former masquerade as the latter."
+        ],
+        "revision_instructions": [
+          "State that factorization explains how the nonzero-mode result is verified, not why Eisenstein Fourier coefficients should have RH behavior; keep the constant-term obstruction as inference and leave the conceptual mechanism unresolved."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the simplicity caveat and the exceptional-zero analogy, preventing the theorem from being read as a uniform RH statement.",
+      "line_end": 263,
+      "line_start": 236,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The cutoff and a0 formula should be checked in the PDF; the prose statement is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3 identifies the cutoff y*=4πe^{-γ}, distinguishes the no-exception and two-real-zero regimes, describes monotone escape toward 1, and contrasts this behavior with Epstein zeta functions.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exact exceptional-zero bifurcation for the constant term",
+      "unit_artifact_relpath": "depth/units/u07_exceptional_real_zeros.txt",
+      "unit_bytes": 2153,
+      "unit_id": "u07_exceptional_real_zeros",
+      "unit_sha256": "d3fb306d5ae81df59f09b552b275c3420db8bf35b6c87e8837b348990de34529",
+      "unit_type": "theorem-and-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u07_exceptional_real_zeros.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 228,
+          "line_end": 235,
+          "text": "property hold for the constant term a0 (y, s), which is now a meromorphic function of\ns? There is an interesting answer for y ≥ 1. To state it, recall that the modified Rie-\nmann hypothesis for a function asserts that all its zeros are either on the line ℜ(s) = 21\nor on the real axis in the interval 0 < x < 1. In 1990 D. Hejhal [12, Prop. 5.3 (f)],\nestablished that the modified Riemann hypothesis holds for a0 (y, s) for y ≥ 1 using the\nMaass-Selberg relations. Here we extend this result by determining the occurrence of\nreal zeros.\n\n",
+          "sha256": "9197ec0c032ec0dbbbacdd6957a193c33c4e48a2e50f5ca383ffcacad5a99523"
+        },
+        "after": {
+          "line_start": 264,
+          "line_end": 271,
+          "text": "   We briefly discuss the proofs. The proof of Theorem 2 rests on inequalities proved\non a zero-by-zero basis in a Hadamard product expansion, for a linear combination of\ntwo shifted functions. One may trace methods of this kind back to Pólya [17], see also\n\n<!-- source-page: 6 -->\n\n6\n\n",
+          "sha256": "5b8b86a55f23590edb53b63723f226441a80507125b80b7c1dd467bca29bab39"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 335,
+            "line_start": 25,
+            "mathematical_role": "Defines the completed Eisenstein series and Fourier coefficients, constructs Weng and truncation integrals, states the three main results, and situates their proof mechanisms and prior work."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 263,
+          "line_start": 236,
+          "title": "Exact exceptional-zero bifurcation for the constant term",
+          "unit_id": "u07_exceptional_real_zeros",
+          "unit_type": "theorem-and-comparison",
+          "why_material": "Theorem 3 identifies the cutoff y*=4πe^{-γ}, distinguishes the no-exception and two-real-zero regimes, describes monotone escape toward 1, and contrasts this behavior with Epstein zeta functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the simplicity caveat and the exceptional-zero analogy, preventing the theorem from being read as a uniform RH statement.",
+          "representation_dependency": "The cutoff and a0 formula should be checked in the PDF; the prose statement is clear.",
+          "unit_id": "u07_exceptional_real_zeros"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 234,
+            "line_start": 211,
+            "title": "Why the constant Fourier coefficient is the difficult case",
+            "unit_id": "u06_fourier_coefficient_contrast",
+            "unit_type": "motivation-and-obstruction",
+            "why_material": "Explains that nonconstant coefficients inherit imaginary-axis zeros from two factors, whereas the meromorphic constant coefficient requires a modified RH and Maass-Selberg input."
+          },
+          {
+            "line_end": 286,
+            "line_start": 264,
+            "title": "Two proof mechanisms and a polynomially weighted extension",
+            "unit_id": "u08_proof_architectures",
+            "unit_type": "method-comparison",
+            "why_material": "Separates the Hadamard block-inequality route from the Maass-Selberg route and records a less elegant numerical extension that bounds off-line zeros for polynomially weighted combinations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Maass-Selberg first confines nonreal zeros to the critical line; positivity and symmetry isolate real zeros in (0,1); the scalar level-set representation then turns the central derivative sign at y* and strict log-derivative monotonicity into creation of one symmetric exceptional pair.",
+            "limit": "The proof is specific to this completed-zeta combination and depends on delicate formula-level inequalities; the Landau-Siegel language is analogy, not identity of arithmetic mechanism.",
+            "parent_local_unit_ids": [
+              "u07_exceptional_real_zeros",
+              "u15_entire_transform_for_constant_term",
+              "u16_maass_selberg_exclusion",
+              "u17_real_zero_localization",
+              "u18_scalar_level_set_reformulation",
+              "u19_threshold_from_central_derivative",
+              "u20_log_derivative_monotonicity",
+              "u21_real_zero_bifurcation"
+            ],
+            "title": "Exceptional zeros as a one-parameter level-set bifurcation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u07_exceptional_real_zeros",
+        "spontaneous": {
+          "unit_id": "u07_exceptional_real_zeros",
+          "spontaneous_reading": "The parameter y drives a bifurcation: below an exact threshold every zero is on the critical line, while above it a symmetric pair of simple real zeros leaves the line and moves toward 0 and 1. The theorem isolates this exceptional pair from the nonreal zero population rather than claiming uniform RH."
+        },
+        "directed": {
+          "unit_id": "u07_exceptional_real_zeros",
+          "source_grounded_mathematics": "For y≥1 the source states modified RH for a_0(y,s) and identifies y*=4πe^{−γ}. For 1≤y≤y* all zeros lie on Re(s)=1/2; for y>y* there are exactly two off-line zeros, a simple real pair ρ_y and 1−ρ_y with 1/2<ρ_y<1, and ρ_y tends monotonically toward 1. It records worse behavior for y<1 and compares the pair with exceptional zeros of Epstein zeta functions.",
+          "conceptual_reading": "Functional-equation symmetry forces an off-line real zero to have a reflected partner. The exact cutoff is therefore a phase transition in the real level-set geometry, while the nonreal zeros obey a different rigidity mechanism.",
+          "representation_or_bridge": "The exceptional-zero comparison links the averaged constant term to individual Epstein zeta functions, but only at the level of a similar real-zero phenomenon and parameter motion.",
+          "boundary_or_failure": "This is not ordinary RH for all y, nor does the analogy identify the pair with Landau–Siegel zeros. Simplicity of all nonreal zeros is attributed to Ki; the source notes a possible multiple central zero at y=y* and does not prove simplicity by its own argument.",
+          "uncertainty": "The prose theorem is clear, but the a_0 display and the exponential sign in y* should be checked in the PDF before exact transcription."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u07_exceptional_real_zeros",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 3 supplies modified RH for y≥1, the exact threshold, the symmetric simple real pair above it, monotone motion of ρ_y toward 1, the worse y<1 regime, and the limited Epstein/Landau-Siegel comparisons."
+        ],
+        "inference": [
+          "Functional-equation symmetry accounting for the reflected partner and describing the threshold as a bifurcation are reasonable interpretations of the theorem."
+        ],
+        "unsupported_or_imported": [
+          "Calling the cutoff a change in 'real level-set geometry' imports the scalar level-set proof from later units; this theorem-and-comparison span does not present that mechanism."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Phase transition' can sound deeper than the stated parameter threshold unless it is explicitly marked as descriptive rather than a physical or independently proved mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "The a_0 display and exponent in y* are extraction-sensitive, although the prose theorem clearly fixes the qualitative regimes."
+        ],
+        "missed_mechanism": [
+          "The source distinguishes its own theorem from Ki's cited simplicity result and says the central zero at y=y* is multiple; that provenance and exception must remain visible."
+        ],
+        "revision_instructions": [
+          "Remove the imported level-set explanation, retain 'bifurcation' only as labeled interpretation of the stated regimes, and keep the analogy limited to similar exceptional real-zero behavior rather than identity with Landau-Siegel zeros."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The extension is announced rather than proved and must remain labeled as such.",
+      "line_end": 286,
+      "line_start": 264,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (24) is formula-dependent and requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the Hadamard block-inequality route from the Maass-Selberg route and records a less elegant numerical extension that bounds off-line zeros for polynomially weighted combinations.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two proof mechanisms and a polynomially weighted extension",
+      "unit_artifact_relpath": "depth/units/u08_proof_architectures.txt",
+      "unit_bytes": 1532,
+      "unit_id": "u08_proof_architectures",
+      "unit_sha256": "afb8292fda47a9b63badf7cc14295cb72ee025dd88815f8da265fb4c59e14da5",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u08_proof_architectures.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 256,
+          "line_end": 263,
+          "text": "factor) with E(z, s) for fixed z. However the Riemann hypothesis fails in general for\nEpstein zeta functions; they generically have zeros off the critical line, and often have\nzeros with ℜ(s) > 1; see Arenstorf and Brewer [2] for some numerical examples. We\ndo not address the issue of proving simplicity of zeros of a0 (y, s), but Ki’s result [14]\ntogether with Theorem 3 gives that for each y ≥ 1 all zeros of a0 (y, s) are simple,\nexcept for a multiple zero at s = 12 occurring for y = y ∗ . As discussed in §4, the simple\nzeros result is potentially provable along the lines used for I(T, s), but would require\nadditional analysis.\n",
+          "sha256": "8b30c4755ded140d83e32636d31f718a4f159d9ff6a7a895f4d7bff2c8dff685"
+        },
+        "after": {
+          "line_start": 287,
+          "line_end": 294,
+          "text": "   We now review related work. In the early 1940’s P. R. Taylor, a student of E.\nC. Titchmarsh, proved a result similar in form to Theorem 3 for y = 1. His work\nwas published posthumously [21]. He showed that ζ ∗ (s + 12 ) − ζ ∗(s − 12 ) has all its\nzeros on the critical line. Making the change of variable s = 2s̃ − 12 , which maps\nthe critical line to itself, this asserts F (s̃) = ζ ∗(2s̃) − ζ ∗(2s̃ − 1), satisfies the RH; the\nfunctional equation yields ζ ∗ (2s̃−1) = ζ ∗(2−2s̃). In a different direction, the functions\nI(T, s) were considered by A. I. Vinogradov and L. Taktajan [24] in 1980, who used\nthem in an interesting heuristic argument in support of the Riemann hypothesis for\n",
+          "sha256": "21f20cf8f0c99eee37ced4e1835c57cde227ecb1257e8916c8a1f03291262c14"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 335,
+            "line_start": 25,
+            "mathematical_role": "Defines the completed Eisenstein series and Fourier coefficients, constructs Weng and truncation integrals, states the three main results, and situates their proof mechanisms and prior work."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 286,
+          "line_start": 264,
+          "title": "Two proof mechanisms and a polynomially weighted extension",
+          "unit_id": "u08_proof_architectures",
+          "unit_type": "method-comparison",
+          "why_material": "Separates the Hadamard block-inequality route from the Maass-Selberg route and records a less elegant numerical extension that bounds off-line zeros for polynomially weighted combinations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The extension is announced rather than proved and must remain labeled as such.",
+          "representation_dependency": "Equation (24) is formula-dependent and requires scan verification.",
+          "unit_id": "u08_proof_architectures"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 263,
+            "line_start": 236,
+            "title": "Exact exceptional-zero bifurcation for the constant term",
+            "unit_id": "u07_exceptional_real_zeros",
+            "unit_type": "theorem-and-comparison",
+            "why_material": "Theorem 3 identifies the cutoff y*=4πe^{-γ}, distinguishes the no-exception and two-real-zero regimes, describes monotone escape toward 1, and contrasts this behavior with Epstein zeta functions."
+          },
+          {
+            "line_end": 327,
+            "line_start": 287,
+            "title": "Distinct routes to line-zero results for Eisenstein-derived functions",
+            "unit_id": "u09_related_approaches",
+            "unit_type": "historical-method-map",
+            "why_material": "Maps Taylor's differencing result, Vinogradov-Takhtajan heuristics, Zagier's representation at zeta zeros, Ki's finite Fourier truncations, and three proof approaches to Theorem 3."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper itself separates several successful direct verification technologies from the unresolved question of why Eisenstein Fourier coefficients should display RH behavior, then proposes truncation, integrated Bessel functions, full-surface modes, and zero-motion statistics as tests of possible mechanisms.",
+            "limit": "These proposals are not established unifications; some are conditional or heuristic and must not be promoted to proved explanations.",
+            "parent_local_unit_ids": [
+              "u06_fourier_coefficient_contrast",
+              "u08_proof_architectures",
+              "u09_related_approaches",
+              "u26_conceptual_gap_and_truncation_proposal",
+              "u27_integrated_coefficients_bessel_reduction",
+              "u28_full_surface_integrals",
+              "u29_spacing_prediction",
+              "u30_epstein_average_threshold"
+            ],
+            "title": "Direct line-zero verification versus a conceptual Eisenstein mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u08_proof_architectures",
+        "spontaneous": {
+          "unit_id": "u08_proof_architectures",
+          "spontaneous_reading": "The paper deliberately separates two proof architectures: a zero-by-zero Hadamard-product comparison for shifted sums and a global Maass-Selberg identity plus inequalities for the constant term. A proposed polynomially weighted extension trades elegance for numerical control and only confines the exceptional zeros."
+        },
+        "directed": {
+          "unit_id": "u08_proof_architectures",
+          "source_grounded_mathematics": "The source says Theorem 2 is proved through inequalities on individual zero blocks in a Hadamard product under functional-equation and reality symmetries. Theorem 3 instead uses Maass-Selberg relations for modified RH and inequalities for real zeros. It announces an alternative numerically assisted method for polynomial-weighted H(y,s), giving all but finitely many zeros on the line and a y-uniform compact bound and count for off-line zeros.",
+          "conceptual_reading": "The first method converts global zero location into local comparisons after symmetry grouping; the second uses an integral identity to rule out regions before reducing the residual real problem to estimates. They relocate the proof burden differently.",
+          "representation_or_bridge": "Hadamard factorization bridges zeros to multiplicative inequalities, while Maass-Selberg bridges a zero assumption to a norm-like integral identity.",
+          "boundary_or_failure": "The polynomial extension is announced for future treatment and is not proved in this unit. It gives only all-but-finitely-many line zeros with bounded exceptions, not a full RH statement.",
+          "uncertainty": "Equation (24) is extraction-sensitive and its exact polynomial and zeta arguments require scan verification; only the prose-level scope of the proposed extension is secure here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u08_proof_architectures",
+        "critic_decision": "revise",
+        "supported": [
+          "The span contrasts a zero-block Hadamard inequality proof for Theorem 2 with a Maass-Selberg plus real-inequality proof for Theorem 3 and announces a numerical polynomially weighted extension with bounded exceptions."
+        ],
+        "inference": [
+          "Saying the two architectures relocate the proof burden differently is a useful interpretation of the prose summary."
+        ],
+        "unsupported_or_imported": [
+          "Describing Maass-Selberg here as converting a zero assumption into a 'norm-like integral identity' imports details from the later identity; this span merely names the relations and their role."
+        ],
+        "paraphrase_or_style_risk": [
+          "The paired 'X bridges Y' sentences risk teaching a reusable explanatory template rather than the actual difference between blockwise zero comparison and a cited global relation."
+        ],
+        "context_or_ocr_risk": [
+          "Equation (24) is damaged and the polynomial extension is only promised for later work, so neither its exact function nor proof can be reconstructed here."
+        ],
+        "missed_mechanism": [
+          "The announced extension guarantees only all-but-finitely-many line zeros plus uniform compactness/count of exceptions, and its reliance on numerical calculations is an essential limitation."
+        ],
+        "revision_instructions": [
+          "Keep the proof-architecture comparison at the level stated in this span, defer the norm interpretation to the Maass-Selberg unit, and phrase every polynomial-extension conclusion as an unproved announcement with its exact weaker guarantees."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves differences among direct verification, representation-theoretic construction, Maass-Selberg, Pólya, and Hermite-Biehler methods.",
+      "line_end": 327,
+      "line_start": 287,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed shifted-zeta expressions require PDF checking, but the methodological comparisons are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps Taylor's differencing result, Vinogradov-Takhtajan heuristics, Zagier's representation at zeta zeros, Ki's finite Fourier truncations, and three proof approaches to Theorem 3.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Distinct routes to line-zero results for Eisenstein-derived functions",
+      "unit_artifact_relpath": "depth/units/u09_related_approaches.txt",
+      "unit_bytes": 3032,
+      "unit_id": "u09_related_approaches",
+      "unit_sha256": "8544272a7f43c13d5e883dd80c4b15f0aa67a8fb29dff869a74fa17d4d80c015",
+      "unit_type": "historical-method-map",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u09_related_approaches.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 279,
+          "line_end": 286,
+          "text": "can be given using an extension of the approach of Theorem 1, which is less elegant and\nrelies on numerical calculations. This alternate method generalizes to give information\non zeros of the functions\n                      H(y, s) := p(s)ζ ∗(s)y s + p(1 − s)ζ ∗ (2 − 2s)y 1−s                  (24)\nfor y ≥ 1, provided p(s) is a polynomial with real coefficients. It shows that all but\nfinitely many of the zeros of H(y, s) lie on the critical line, that the zeros off the line\nare confined to a compact set independent of y ≥ 1 and their number is uniformly\nbounded for all y ≥ 1. We hope to treat this method elsewhere.\n",
+          "sha256": "62ce26eacd951f80f738679e0a94572f616f777e8aee6d6acd92b546d0cefbdb"
+        },
+        "after": {
+          "line_start": 328,
+          "line_end": 335,
+          "text": "\nAcknowledgment. The authors thank Prof. Lin Weng for making them aware of\nmutually overlapping results, leading to this joint work. They thank Prof. Dennis\nHejhal for informing them of the work of Prof. Haseo Ki; the preprint [14] was done\naround the same time as our work. They thank L. Takhtajan for informing us of his\nwork with A. I. Vinogradov. They thank the reviewer for helpful comments. The first\nauthor thanks David Applegate for exploratory computations related to Theorem 3.\n\n",
+          "sha256": "97e7c608979684906b5b1e6445d186a3737b0decc243c3c9dceb10af64e45389"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 335,
+            "line_start": 25,
+            "mathematical_role": "Defines the completed Eisenstein series and Fourier coefficients, constructs Weng and truncation integrals, states the three main results, and situates their proof mechanisms and prior work."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 327,
+          "line_start": 287,
+          "title": "Distinct routes to line-zero results for Eisenstein-derived functions",
+          "unit_id": "u09_related_approaches",
+          "unit_type": "historical-method-map",
+          "why_material": "Maps Taylor's differencing result, Vinogradov-Takhtajan heuristics, Zagier's representation at zeta zeros, Ki's finite Fourier truncations, and three proof approaches to Theorem 3."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves differences among direct verification, representation-theoretic construction, Maass-Selberg, Pólya, and Hermite-Biehler methods.",
+          "representation_dependency": "Several displayed shifted-zeta expressions require PDF checking, but the methodological comparisons are prose-supported.",
+          "unit_id": "u09_related_approaches"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 286,
+            "line_start": 264,
+            "title": "Two proof mechanisms and a polynomially weighted extension",
+            "unit_id": "u08_proof_architectures",
+            "unit_type": "method-comparison",
+            "why_material": "Separates the Hadamard block-inequality route from the Maass-Selberg route and records a less elegant numerical extension that bounds off-line zeros for polynomially weighted combinations."
+          },
+          {
+            "line_end": 371,
+            "line_start": 336,
+            "title": "A zero-strip hypothesis forces shifted sums to vanish on one line",
+            "unit_id": "u10_shifted_function_line_zero_theorem",
+            "unit_type": "general-theorem",
+            "why_material": "Theorem 4 abstracts the core mechanism: an entire genus-zero/one function with real and functional-equation symmetries and a bounded zero strip yields a strict shifted-modulus inequality and line zeros for every phased sum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper itself separates several successful direct verification technologies from the unresolved question of why Eisenstein Fourier coefficients should display RH behavior, then proposes truncation, integrated Bessel functions, full-surface modes, and zero-motion statistics as tests of possible mechanisms.",
+            "limit": "These proposals are not established unifications; some are conditional or heuristic and must not be promoted to proved explanations.",
+            "parent_local_unit_ids": [
+              "u06_fourier_coefficient_contrast",
+              "u08_proof_architectures",
+              "u09_related_approaches",
+              "u26_conceptual_gap_and_truncation_proposal",
+              "u27_integrated_coefficients_bessel_reduction",
+              "u28_full_surface_integrals",
+              "u29_spacing_prediction",
+              "u30_epstein_average_threshold"
+            ],
+            "title": "Direct line-zero verification versus a conceptual Eisenstein mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u09_related_approaches",
+        "spontaneous": {
+          "unit_id": "u09_related_approaches",
+          "spontaneous_reading": "Superficially similar line-zero conclusions arise from genuinely different mechanisms: differencing completed zeta, truncated Eisenstein expansions, Maass-Selberg identities, Pólya-style product inequalities, Hermite-Biehler theory, and representation-theoretic constructions. The map is valuable precisely because it does not merge these routes."
+        },
+        "directed": {
+          "unit_id": "u09_related_approaches",
+          "source_grounded_mathematics": "The source surveys Taylor's shifted-zeta difference, Vinogradov–Takhtajan's heuristic use of I(T,s), Zagier's measure integrals containing zeta zeros, Ki's results for finite Fourier truncations and a_0, and three approaches to Theorem 3: extended Pólya/Hadamard with numerics, Maass-Selberg, and Hermite-Biehler with numerics and simplicity.",
+          "conceptual_reading": "The same target property can be exposed through cancellation of shifts, positivity/integral identities, phase-space representation, or entire-function geometry. Keeping these mechanisms distinct prevents a shared conclusion from being mistaken for a shared proof explanation.",
+          "representation_or_bridge": "The survey supplies a method map linking Eisenstein coefficients and integrals to shifted completed-zeta functions, group representations, and Hermite-Biehler entire functions.",
+          "boundary_or_failure": "Several results are cited or described heuristically rather than derived. Vinogradov–Takhtajan's argument is explicitly heuristic, and Zagier's construction containing zeta zeros is not itself an RH proof.",
+          "uncertainty": "Displayed shifted-zeta identities are extraction-sensitive. The methodological distinctions are prose-supported, but their hypotheses and proofs reside in cited works outside this unit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u09_related_approaches",
+        "critic_decision": "revise",
+        "supported": [
+          "The span surveys Taylor, Vinogradov–Takhtajan, Zagier, Ki, and three distinct approaches to Theorem 3, including which are heuristic or numerically assisted and which yield simplicity."
+        ],
+        "inference": [
+          "The warning that a common line-zero conclusion need not imply a common mechanism is a sound organizational inference from the method list."
+        ],
+        "unsupported_or_imported": [
+          "'Phase-space representation' is not named or developed in the span and is an especially loose gloss on Zagier's representation-theoretic construction."
+        ],
+        "paraphrase_or_style_risk": [
+          "The catalogue 'cancellation, positivity, phase-space, entire-function geometry' sounds conceptually rich but compresses cited external work into labels whose mathematical content is absent locally."
+        ],
+        "context_or_ocr_risk": [
+          "Shifted-zeta displays are extraction-sensitive, and nearly all technical hypotheses and proofs reside in cited works outside the unit."
+        ],
+        "missed_mechanism": [
+          "The crucial epistemic distinctions are that Vinogradov–Takhtajan is heuristic, Zagier's functions contain zeta zeros without proving RH, and Ki's claims are cited results rather than local derivations."
+        ],
+        "revision_instructions": [
+          "Delete 'phase-space representation,' retain a source-faithful method map with citation status and stated outputs, and avoid assigning mechanisms beyond what this survey says about each approach."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes hypotheses and conclusions together so the theorem is not detached from its required symmetry and strip width.",
+      "line_end": 371,
+      "line_start": 336,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Original PDF required for inequalities (26)-(29), absolute values, and the phase term.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 4 abstracts the core mechanism: an entire genus-zero/one function with real and functional-equation symmetries and a bounded zero strip yields a strict shifted-modulus inequality and line zeros for every phased sum.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A zero-strip hypothesis forces shifted sums to vanish on one line",
+      "unit_artifact_relpath": "depth/units/u10_shifted_function_line_zero_theorem.txt",
+      "unit_bytes": 2011,
+      "unit_id": "u10_shifted_function_line_zero_theorem",
+      "unit_sha256": "e2a8a7cee5a6aa41dfb0a94915a6b662d0bb4dc0adc9ac9df3fcb92d6eb3a9e1",
+      "unit_type": "general-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u10_shifted_function_line_zero_theorem.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 328,
+          "line_end": 335,
+          "text": "\nAcknowledgment. The authors thank Prof. Lin Weng for making them aware of\nmutually overlapping results, leading to this joint work. They thank Prof. Dennis\nHejhal for informing them of the work of Prof. Haseo Ki; the preprint [14] was done\naround the same time as our work. They thank L. Takhtajan for informing us of his\nwork with A. I. Vinogradov. They thank the reviewer for helpful comments. The first\nauthor thanks David Applegate for exploratory computations related to Theorem 3.\n\n",
+          "sha256": "97e7c608979684906b5b1e6445d186a3737b0decc243c3c9dceb10af64e45389"
+        },
+        "after": {
+          "line_start": 372,
+          "line_end": 379,
+          "text": "Proof. The genus one assumption is equivalent to the assertion that the Hadamard\nproduct factorization\n                                                  s s\n                          F (s) = eA+Bs sR (1 − )e ρ\n                                          Y\n                                                                             (30)\n                                           ρ      ρ\nconverges absolutely and uniformly on compact subsets of C, see Titchmarsh [22, Sec.\n",
+          "sha256": "364de347bfa0b999a7c0ea7860a3459b49f4577fbee471dfce253ede890e00d1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Proof of Theorem 2",
+            "line_end": 592,
+            "line_start": 336,
+            "mathematical_role": "Develops the shifted-entire-function line-zero theorem through symmetry-grouped Hadamard products and applies it to truncation integrals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 371,
+          "line_start": 336,
+          "title": "A zero-strip hypothesis forces shifted sums to vanish on one line",
+          "unit_id": "u10_shifted_function_line_zero_theorem",
+          "unit_type": "general-theorem",
+          "why_material": "Theorem 4 abstracts the core mechanism: an entire genus-zero/one function with real and functional-equation symmetries and a bounded zero strip yields a strict shifted-modulus inequality and line zeros for every phased sum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes hypotheses and conclusions together so the theorem is not detached from its required symmetry and strip width.",
+          "representation_dependency": "Original PDF required for inequalities (26)-(29), absolute values, and the phase term.",
+          "unit_id": "u10_shifted_function_line_zero_theorem"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 327,
+            "line_start": 287,
+            "title": "Distinct routes to line-zero results for Eisenstein-derived functions",
+            "unit_id": "u09_related_approaches",
+            "unit_type": "historical-method-map",
+            "why_material": "Maps Taylor's differencing result, Vinogradov-Takhtajan heuristics, Zagier's representation at zeta zeros, Ki's finite Fourier truncations, and three proof approaches to Theorem 3."
+          },
+          {
+            "line_end": 440,
+            "line_start": 372,
+            "title": "Symmetry blocks remove Hadamard convergence factors",
+            "unit_id": "u11_symmetric_hadamard_blocks",
+            "unit_type": "proof-mechanism",
+            "why_material": "Partitions zeros into functional-equation/conjugation orbits, proves block convergence from the strip bound, removes exponential factors, and uses the functional equation to force the remaining linear exponential to vanish."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Horocycle/truncation integration selects the constant Fourier mode, the resulting two shifted completed-zeta terms admit a symmetry-blocked product comparison, and T≥1 turns that comparison into a strict half-plane modulus barrier.",
+            "limit": "This mechanism proves RH only for the specified integrated/truncated combinations; it neither proves RH for zeta itself nor conceptually explains every Eisenstein coefficient.",
+            "parent_local_unit_ids": [
+              "u02_fourier_constant_term",
+              "u03_measure_integral_interface",
+              "u05_truncation_integral_rh",
+              "u10_shifted_function_line_zero_theorem",
+              "u14_apply_theorem_to_truncation"
+            ],
+            "title": "From Fourier projection to a shifted-xi modulus barrier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u10_shifted_function_line_zero_theorem",
+        "spontaneous": {
+          "unit_id": "u10_shifted_function_line_zero_theorem",
+          "spontaneous_reading": "The theorem turns coarse prior localization of F's zeros into exact localization for a phased sum of two opposite shifts. Once the shift c reaches the zero strip's half-width, the shifted values have strictly unequal modulus off the symmetry line, so they cannot cancel there."
+        },
+        "directed": {
+          "unit_id": "u10_shifted_function_line_zero_theorem",
+          "source_grounded_mathematics": "Theorem 4 assumes an entire genus-zero or genus-one F, real on the real axis, satisfying F(s)=±F(1−s), with all zeros in |Re(s)−1/2|<a. For real c≥a it states |F(s+c)/F(s−c)|>1 to the right of Re(s)=1/2 and <1 to the left. Consequently F(s+c)+e^{iθ}F(s−c) has all zeros on the critical line for every phase θ.",
+          "conceptual_reading": "The shift is chosen large enough to put each symmetry-paired zero closer to one shifted evaluation than the other. A strip bound that is much weaker than RH is thereby amplified into a strict half-plane separator for the new function.",
+          "representation_or_bridge": "Hadamard factorization, developed after this statement, is the intended bridge from the zero set of F to the modulus ratio of its shifted values.",
+          "boundary_or_failure": "The conclusion depends jointly on finite genus, both stated symmetries, the strict zero-strip containment, and c≥a. A functional equation by itself, or a smaller shift, is not covered.",
+          "uncertainty": "Absolute-value bars and inequalities (26)–(29) are degraded in extraction; the assignment metadata confirms their intended roles, but exact typography and the phase term require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u10_shifted_function_line_zero_theorem",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the complete theorem: finite genus, real-axis reality, ± functional equation, a bounded zero strip, c≥a, strict half-plane modulus ratios, and critical-line zeros for every phased shifted sum."
+        ],
+        "inference": [
+          "Viewing the strict ratio as a half-plane separator is a faithful interpretation of the stated inequalities."
+        ],
+        "unsupported_or_imported": [
+          "The explanation that each symmetry-paired zero is closer to one shifted evaluation and the claim that Hadamard factorization is the intended bridge import the proof from subsequent units; this span contains only the theorem statement and historical comparison."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Amplified into a separator' is attractive compression, but without the later blockwise proof it should not be presented as a source-demonstrated mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "Absolute-value bars, strict strip inequality, and the phase term in (26)–(29) are degraded enough to require PDF confirmation."
+        ],
+        "missed_mechanism": [
+          "The theorem's conclusion is only zero exclusion off the line; it does not assert existence, density, or simplicity of zeros on the line."
+        ],
+        "revision_instructions": [
+          "Restrict source-grounded content to theorem hypotheses and conclusions, mark the distance-pairing explanation as a later-proof inference, and explicitly preserve the no-existence/no-simplicity boundary."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly distinguishes the weakened phase functional equation from the additional convergence requirement.",
+      "line_end": 547,
+      "line_start": 514,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The phase equation and Re(B') statement should be verified in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies constant modulus on the critical line as sufficient for the local pairing argument, explains why global Hadamard blocks then need extra hypotheses, and indicates the extension to general automorphic L-functions.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "What survives without real-axis symmetry",
+      "unit_artifact_relpath": "depth/units/u13_phase_functional_equation_extension.txt",
+      "unit_bytes": 2042,
+      "unit_id": "u13_phase_functional_equation_extension",
+      "unit_sha256": "71def74d564a5589e48e07f3b78de5c3d7dc59f028e26057850a53e6e311ee3d",
+      "unit_type": "generalization-with-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u13_phase_functional_equation_extension.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 506,
+          "line_end": 513,
+          "text": "so that (37) is equivalent to the two assertions\n                              −σ + c + 1 − β > −(σ + c − β),\n                             −σ + c + 1 − β > σ + c − β.\nThe second of these is equivalent to σ < 1/2 and the first to c + 1/2 − β > 0, which\nholds.\n  The conclusion that Gθ (s) has all its zeros on the line ℜ(s) = 21 follows, because the\ntwo terms on the right side of (29) have differing absolute values off this line. ✷\n\n",
+          "sha256": "8f91433b7b1a354bb1a05ef73356c7450c38d5127be11172e7733e76327a0833"
+        },
+        "after": {
+          "line_start": 548,
+          "line_end": 555,
+          "text": "\nProof of Theorem 2. Let ξ(s) be the Riemann ξ-function\n                                          1\n                                  ξ(s) := s(s − 1)ζ ∗(s),                              (40)\n                                          2\nwhich is an entire function. Theorem 4 applies to F (s) = ξ(2s − 12 ), which satisfies the\nfunctional equation F (s) = F (1 − s), is real on the real axis, and the zeros of F (s) are\nconfined to 41 < ℜ(s) < 43 , so we can take a = 14 .\n",
+          "sha256": "8aad668a722f5990d31c048077e053c6d1de41f17bf2a0cbae42c3f10a86104e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Proof of Theorem 2",
+            "line_end": 592,
+            "line_start": 336,
+            "mathematical_role": "Develops the shifted-entire-function line-zero theorem through symmetry-grouped Hadamard products and applies it to truncation integrals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 547,
+          "line_start": 514,
+          "title": "What survives without real-axis symmetry",
+          "unit_id": "u13_phase_functional_equation_extension",
+          "unit_type": "generalization-with-limit",
+          "why_material": "Identifies constant modulus on the critical line as sufficient for the local pairing argument, explains why global Hadamard blocks then need extra hypotheses, and indicates the extension to general automorphic L-functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly distinguishes the weakened phase functional equation from the additional convergence requirement.",
+          "representation_dependency": "The phase equation and Re(B') statement should be verified in the PDF.",
+          "unit_id": "u13_phase_functional_equation_extension"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 512,
+            "line_start": 441,
+            "title": "Pairing rho with 1−conjugate(rho) creates a half-plane modulus separator",
+            "unit_id": "u12_blockwise_modulus_inequality",
+            "unit_type": "proof-mechanism",
+            "why_material": "Reduces the shifted-function ratio to independent zero-block factors and shows each paired distance ratio lies strictly above or below one according to the side of the critical line, excluding zeros off it."
+          },
+          {
+            "line_end": 591,
+            "line_start": 549,
+            "title": "Scaled xi shifts prove the truncation-integral RH",
+            "unit_id": "u14_apply_theorem_to_truncation",
+            "unit_type": "theorem-application",
+            "why_material": "Chooses F(s)=xi(2s−1/2) so the known critical-strip containment matches c=1/4, converts I(T,s) to an entire antisymmetric H(T,s), and uses T≥1 to amplify the strict ratio beyond one."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u13_phase_functional_equation_extension",
+        "spontaneous": {
+          "unit_id": "u13_phase_functional_equation_extension",
+          "spontaneous_reading": "The proof decomposes into a local and a global requirement. Constant modulus on the critical line is enough for the local zero pairing, so real-axis symmetry can be weakened to a phased functional equation; but the global Hadamard regrouping then needs a separate convergence hypothesis and differently chosen blocks."
+        },
+        "directed": {
+          "unit_id": "u13_phase_functional_equation_extension",
+          "source_grounded_mathematics": "The source notes that G_θ inherits a ± functional equation only for e^{iθ}=±1. It then says the local inequality needs zeros paired under ρ↦1−conjugate(ρ), which follows from F(s)=e^{iα}F(1−s), but the earlier modified product used real-axis symmetry. An extended theorem therefore needs an added zero-location/convergence condition; invariant blocks then give only Re(B')=0, which is stated to suffice. Automorphic GL(n) L-functions are said to possess suitable products by cited zero asymptotics.",
+          "conceptual_reading": "Weakening a symmetry reveals which proof component actually consumed it. Phase symmetry preserves the local modulus geometry, while absolute convergence of the regrouped global product becomes an independent obligation.",
+          "representation_or_bridge": "Constant modulus on the symmetry line bridges a phased functional equation to reflected-zero pairing; modified Hadamard blocks bridge that pairing back to a convergent product.",
+          "boundary_or_failure": "The phased functional equation plus strip bound alone is not claimed sufficient. The extra hypothesis (iii) is essential, and the automorphic application is indicated via an external theorem rather than proved here.",
+          "uncertainty": "The exact phase equation and Re(B') statement should be verified in the PDF, though the source's separation of local and global requirements is explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u13_phase_functional_equation_extension",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose clearly separates the local pairing requirement from global modified-product convergence, says differently invariant blocks are needed without real-axis symmetry, and states that Re(B')=0 suffices under an added hypothesis."
+        ],
+        "inference": [
+          "The local-versus-global decomposition is a strong, source-grounded conceptual reading; treating the added hypothesis as an independent proof burden is justified."
+        ],
+        "unsupported_or_imported": [
+          "The exact claim that F(s)=e^{iα}F(1−s) by itself yields the pairing ρ↦1−conjugate(ρ) is unsafe from this extraction: a missing conjugation/bar is plausible, and the displayed formula as rendered does not transparently imply that pairing."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Constant modulus bridges phase symmetry to pairing' is useful only after the precise functional equation and conjugations are verified; otherwise it conceals a real logical gap."
+        ],
+        "context_or_ocr_risk": [
+          "Equation (39), conjugations, the phase, and Re(B') are formula-critical. The local prose is interpretable, but the exact weakened hypothesis cannot be trusted from OCR."
+        ],
+        "missed_mechanism": [
+          "The automorphic GL(n) extension is supported only by a citation to external zero asymptotics and is not established in this span."
+        ],
+        "revision_instructions": [
+          "Preserve the local/global proof decomposition, remove any exact implication from the OCR-rendered phase equation, quote the weakened hypothesis only after PDF verification, and label the GL(n) application as externally supported."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The displayed relation is kept with the truncated Eisenstein definition; the extracted prose at line 628 may have lost an imaginary-part symbol and must not be silently repaired.",
+      "line_end": 629,
+      "line_start": 611,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: verify (46)-(47) and the exact nonvanishing conditions against the original PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "At a zero of the constant term, reflection kills the boundary side of the Maass-Selberg relation while the integral side cannot vanish off the relevant symmetry lines, forcing every nonreal zero onto the critical line.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Maass-Selberg positivity excludes nonreal off-line zeros",
+      "unit_artifact_relpath": "depth/units/u16_maass_selberg_exclusion.txt",
+      "unit_bytes": 1331,
+      "unit_id": "u16_maass_selberg_exclusion",
+      "unit_sha256": "3d01c901de9c9308d8c0295c51d25085e901dc016b6b4728eee344da1c0f571c",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u16_maass_selberg_exclusion.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 603,
+          "line_end": 610,
+          "text": "                           2      2\nwhich adds an extra zero at s = 12 . The function H(y, s) satisfies the functional\nequation H(y, s) = −H(y, 1 − s), but has the advantage that both terms on the right\nside of (45) are entire functions.\n   First we will show using the Maass-Selberg relations ( Hejhal [12, Prop. 5.3(f) ]) that\nall zeros of a0 (y, s) lie on the critical line for any y ≥ 1 except for real zeros. Second\nwe will determine the location of real zeros of a0 (y, s).\n\n",
+          "sha256": "ca958d9b67cc1b80443b8f4feb853db44178d89112d8603fa111d07ecaa31a9a"
+        },
+        "after": {
+          "line_start": 630,
+          "line_end": 637,
+          "text": "\n  Lemma 1 shows that we need only to determine the locations of the zeros of H(y, s) =\ns(s − 1)(2s − 1)a0 (y, s) on the real axis.\n\n<!-- source-page: 13 -->\n\n13\n\n",
+          "sha256": "9ba31f9af94e9124f2208a332c6d19a318914736fcc890c5b8c8c917321d5a32"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proof of Theorem 3",
+            "line_end": 786,
+            "line_start": 593,
+            "mathematical_role": "Uses Maass-Selberg exclusion of nonreal off-line zeros and a real-variable monotonicity analysis to locate the exceptional real-zero bifurcation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 629,
+          "line_start": 611,
+          "title": "Maass-Selberg positivity excludes nonreal off-line zeros",
+          "unit_id": "u16_maass_selberg_exclusion",
+          "unit_type": "proof-mechanism",
+          "why_material": "At a zero of the constant term, reflection kills the boundary side of the Maass-Selberg relation while the integral side cannot vanish off the relevant symmetry lines, forcing every nonreal zero onto the critical line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The displayed relation is kept with the truncated Eisenstein definition; the extracted prose at line 628 may have lost an imaginary-part symbol and must not be silently repaired.",
+          "representation_dependency": "High: verify (46)-(47) and the exact nonvanishing conditions against the original PDF.",
+          "unit_id": "u16_maass_selberg_exclusion"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 609,
+            "line_start": 593,
+            "title": "An antisymmetric entire transform makes both constant-term summands entire",
+            "unit_id": "u15_entire_transform_for_constant_term",
+            "unit_type": "representation-selection",
+            "why_material": "Explains why the natural entire multiple G is replaced by H with an extra central zero: the alternative representation makes both summands entire and separates the proof into nonreal and real-zero problems."
+          },
+          {
+            "line_end": 645,
+            "line_start": 631,
+            "title": "Positivity confines real constant-term zeros to (0,1)",
+            "unit_id": "u17_real_zero_localization",
+            "unit_type": "positivity-and-symmetry",
+            "why_material": "Uses positivity of the Eisenstein series and the horocycle-average identity to exclude real zeros above 1, then reflects the conclusion below 0 by the functional equation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Maass-Selberg first confines nonreal zeros to the critical line; positivity and symmetry isolate real zeros in (0,1); the scalar level-set representation then turns the central derivative sign at y* and strict log-derivative monotonicity into creation of one symmetric exceptional pair.",
+            "limit": "The proof is specific to this completed-zeta combination and depends on delicate formula-level inequalities; the Landau-Siegel language is analogy, not identity of arithmetic mechanism.",
+            "parent_local_unit_ids": [
+              "u07_exceptional_real_zeros",
+              "u15_entire_transform_for_constant_term",
+              "u16_maass_selberg_exclusion",
+              "u17_real_zero_localization",
+              "u18_scalar_level_set_reformulation",
+              "u19_threshold_from_central_derivative",
+              "u20_log_derivative_monotonicity",
+              "u21_real_zero_bifurcation"
+            ],
+            "title": "Exceptional zeros as a one-parameter level-set bifurcation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u16_maass_selberg_exclusion",
+        "spontaneous": {
+          "unit_id": "u16_maass_selberg_exclusion",
+          "spontaneous_reading": "The Maass-Selberg relation functions as a certificate: assuming the constant term vanishes makes the boundary expression vanish by conjugation symmetry, while a norm-like integral with a spectral prefactor cannot vanish for a nonreal point away from the critical line. This leaves only the critical line or the real axis."
+        },
+        "directed": {
+          "unit_id": "u16_maass_selberg_exclusion",
+          "source_grounded_mathematics": "Lemma 1 states that for y≥1 every zero of a_0(y,s) is either on Re(s)=1/2 or real. The proof defines a truncated Eisenstein function E_T* and invokes a Maass-Selberg identity. At a zero a_0(T,s)=0, reflection also gives a_0(T,conjugate(s))=0, annihilating the identity's right side; the left side supplies the contradiction outside the allowed symmetry loci.",
+          "conceptual_reading": "Rather than locating zeros individually, the argument converts a hypothetical zero into vanishing boundary data and compares it with a positive integral. The integral identity compresses global automorphic information into a region-exclusion test.",
+          "representation_or_bridge": "The truncated Eisenstein norm is the bridge between the scalar constant term and positivity on the modular domain.",
+          "boundary_or_failure": "The lemma permits real zeros and does not locate them. It also depends on y=T≥1 and the exact nonvanishing range of the spectral prefactor; it is not a generic consequence of a functional equation.",
+          "uncertainty": "The extraction near the final nonvanishing conditions appears to have lost an imaginary-part symbol. Equations (46)–(47) and the precise excluded loci must be checked in the PDF; no silent repair is made here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u16_maass_selberg_exclusion",
+        "critic_decision": "revise",
+        "supported": [
+          "The lemma statement directly supports that for y≥1 a zero of a_0 is either real or on the critical line, and the proof uses a truncated Eisenstein function and a Maass-Selberg identity whose boundary terms vanish at a zero and its conjugate."
+        ],
+        "inference": [
+          "Interpreting the integral as a norm-like certificate is reasonable because the displayed integrand is |E_T*|², but the exact prefactor and nonvanishing loci must remain explicit."
+        ],
+        "unsupported_or_imported": [
+          "The source-grounded summary silently resolves the damaged last sentence into 'outside the allowed symmetry loci.' The intended nonreal/off-critical condition is plausible from the lemma and prefactor, but the extraction itself has lost an imaginary-part symbol and cannot be treated as exact evidence."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Compresses global automorphic information into a region-exclusion test' is generic unless the contradiction is stated through the precise prefactor times the positive integral."
+        ],
+        "context_or_ocr_risk": [
+          "High risk: equation (46) has y/T ambiguity, equation (47) is densely extracted, and the final nonvanishing condition is visibly corrupted."
+        ],
+        "missed_mechanism": [
+          "The proof requires both nonreality, through s−conjugate(s), and departure from Re(s)=1/2, through 1−s−conjugate(s); neither condition should be silently reconstructed as source text."
+        ],
+        "revision_instructions": [
+          "Retain the lemma conclusion as prose-supported, mark the proof-locus description as an inferred reading of the displayed prefactor, and require original-PDF verification before stating the exact Maass-Selberg identity or excluded loci."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This short lemma supplies the domain for the subsequent scalar monotonicity analysis.",
+      "line_end": 645,
+      "line_start": 631,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integral typography is split, but the contradiction is recoverable from prose; scan verification remains advisable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses positivity of the Eisenstein series and the horocycle-average identity to exclude real zeros above 1, then reflects the conclusion below 0 by the functional equation.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positivity confines real constant-term zeros to (0,1)",
+      "unit_artifact_relpath": "depth/units/u17_real_zero_localization.txt",
+      "unit_bytes": 659,
+      "unit_id": "u17_real_zero_localization",
+      "unit_sha256": "5e7095c345e3b39eeb30732e10d74f7564d79a78406637fe674ae2392fd42cf0",
+      "unit_type": "positivity-and-symmetry",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u17_real_zero_localization.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 623,
+          "line_end": 630,
+          "text": "                                   D                y2\n                                   =a0 (T, s)(s̄ζ ∗ (2s̄)T s̄−1 + (1 − s̄)ζ ∗ (2s̄ − 1)T −s̄ )\n                                                                                                  (47)\n                                        − a0 (T, s̄)(sζ ∗(2s)T s−1 + (1 − s)ζ ∗ (2s − 1)T −s ).\nIf a0 (T, s) = 0 then, by the reflection principle, a0 (T, s̄) = 0 as well, so that the right\nside of (47) is zero. But the left side of (47) is non-zero whenever ℜ(s) 6= 0 and\nℜ(s) 6= 1/2 both hold. ✷\n\n",
+          "sha256": "e965f0bcf3db8a12b6bd5627c36e8142b1df0cd14ce7a421a8632fbd4e53dbd6"
+        },
+        "after": {
+          "line_start": 646,
+          "line_end": 653,
+          "text": "\n   Using Lemma 2 and the functional equation it sufficies to deal with H(y, s) for real\ns = σ in the interval ( 21 , 1). To prove the theorem it suffices to show that H(y, σ) 6= 0\non ( 12 , 1) for any fixed 1 < y ≤ y ∗ = 4πe−γ and that there is only one zero of H(y, σ)\nin ( 21 , 1) for any fixed y > y ∗ .\n   We can rewrite the condition H(y, σ) = 0 as\n\n                                  1 − σ ξ(2σ) 2σ−1\n",
+          "sha256": "305a261f9eaad3887dd1bb6d4c0e8799c93b818750460585baaf0e8bbd066f78"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proof of Theorem 3",
+            "line_end": 786,
+            "line_start": 593,
+            "mathematical_role": "Uses Maass-Selberg exclusion of nonreal off-line zeros and a real-variable monotonicity analysis to locate the exceptional real-zero bifurcation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 645,
+          "line_start": 631,
+          "title": "Positivity confines real constant-term zeros to (0,1)",
+          "unit_id": "u17_real_zero_localization",
+          "unit_type": "positivity-and-symmetry",
+          "why_material": "Uses positivity of the Eisenstein series and the horocycle-average identity to exclude real zeros above 1, then reflects the conclusion below 0 by the functional equation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This short lemma supplies the domain for the subsequent scalar monotonicity analysis.",
+          "representation_dependency": "The integral typography is split, but the contradiction is recoverable from prose; scan verification remains advisable.",
+          "unit_id": "u17_real_zero_localization"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 629,
+            "line_start": 611,
+            "title": "Maass-Selberg positivity excludes nonreal off-line zeros",
+            "unit_id": "u16_maass_selberg_exclusion",
+            "unit_type": "proof-mechanism",
+            "why_material": "At a zero of the constant term, reflection kills the boundary side of the Maass-Selberg relation while the integral side cannot vanish off the relevant symmetry lines, forcing every nonreal zero onto the critical line."
+          },
+          {
+            "line_end": 670,
+            "line_start": 647,
+            "title": "Real zeros become a positive scalar level-set equation",
+            "unit_id": "u18_scalar_level_set_reformulation",
+            "unit_type": "reframing",
+            "why_material": "Rewrites H(y,σ)=0 as F(y,σ)=y^{2σ−1}f(σ)=1 and obtains positivity of f from the symmetry-grouped xi product, reducing zero location to one-variable shape analysis."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Maass-Selberg first confines nonreal zeros to the critical line; positivity and symmetry isolate real zeros in (0,1); the scalar level-set representation then turns the central derivative sign at y* and strict log-derivative monotonicity into creation of one symmetric exceptional pair.",
+            "limit": "The proof is specific to this completed-zeta combination and depends on delicate formula-level inequalities; the Landau-Siegel language is analogy, not identity of arithmetic mechanism.",
+            "parent_local_unit_ids": [
+              "u07_exceptional_real_zeros",
+              "u15_entire_transform_for_constant_term",
+              "u16_maass_selberg_exclusion",
+              "u17_real_zero_localization",
+              "u18_scalar_level_set_reformulation",
+              "u19_threshold_from_central_derivative",
+              "u20_log_derivative_monotonicity",
+              "u21_real_zero_bifurcation"
+            ],
+            "title": "Exceptional zeros as a one-parameter level-set bifurcation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u17_real_zero_localization",
+        "spontaneous": {
+          "unit_id": "u17_real_zero_localization",
+          "spontaneous_reading": "Positivity supplies a cheap outer barrier for the remaining real-zero problem. For σ>1 the Eisenstein series is pointwise positive, so its horocycle average cannot vanish; the functional equation reflects this exclusion to σ<0."
+        },
+        "directed": {
+          "unit_id": "u17_real_zero_localization",
+          "source_grounded_mathematics": "Lemma 2 states that a_0(y,σ) has no real zero outside (0,1) for any y>0. For σ>1 the defining Eisenstein series is positive, and a_0 is its integral over x, so a zero would contradict positivity. The functional equation gives the corresponding exclusion for σ<0.",
+          "conceptual_reading": "The argument first uses the representation where sign is manifest, then uses symmetry to avoid duplicating work. It reduces the real problem to the compact symmetry interval where finer shape analysis is necessary.",
+          "representation_or_bridge": "The horocycle-average identity bridges positivity of E* to nonvanishing of its constant Fourier coefficient.",
+          "boundary_or_failure": "Positivity does not exclude zeros inside (0,1), and the lemma says nothing about nonreal zeros. The endpoints and poles require the meromorphic context and are not analyzed as ordinary zeros here.",
+          "uncertainty": "The integral typography is split in extraction, but the contradiction and functional-equation reflection are explicit in prose; scan verification remains advisable for exact notation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u17_real_zero_localization",
+        "critic_decision": "revise",
+        "supported": [
+          "The span proves nonvanishing for real σ>1 from positivity of E* and the horocycle-average identity, then reflects the exclusion to σ<0 by the functional equation."
+        ],
+        "inference": [
+          "Viewing this as choosing a sign-manifest representation before exploiting symmetry is a faithful conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "No substantive theorem is imported, but calling the remaining open interval (0,1) 'compact' is mathematically inaccurate; it is bounded but not compact."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Cheap outer barrier' is rhetorical and should not obscure that positivity supplies a rigorous exclusion only on the real axis outside (0,1)."
+        ],
+        "context_or_ocr_risk": [
+          "The integral typography is split, though the prose contradiction and functional-equation reflection remain intelligible."
+        ],
+        "missed_mechanism": [
+          "The endpoints are poles/meromorphic special points rather than ordinary candidates handled by this positivity argument, and nonreal zeros are outside this lemma's scope."
+        ],
+        "revision_instructions": [
+          "Replace 'compact symmetry interval' with 'bounded symmetry interval,' keep the proof restricted to real σ, and preserve the endpoint and nonreal-zero boundaries."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 781-783 appear to confuse the critical point σ0 and root σy in extraction or source typography; retain the qualitative conclusion but verify symbols before downstream use.",
+      "line_end": 784,
+      "line_start": 760,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Original PDF required for inequalities (57)-(59) and the σ0/σy distinction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the monotone logarithmic derivative to show F decreases below the threshold and has a single interior return to level one above it, producing exactly one real zero on each side by symmetry and motion toward the poles.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unimodality yields zero-free and two-exception regimes",
+      "unit_artifact_relpath": "depth/units/u21_real_zero_bifurcation.txt",
+      "unit_bytes": 1970,
+      "unit_id": "u21_real_zero_bifurcation",
+      "unit_sha256": "b7cc8a29abaa542188c5780628ab554ce25cae97ec738bf698976730233d0bda",
+      "unit_type": "proof-conclusion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u21_real_zero_bifurcation.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 752,
+          "line_end": 759,
+          "text": "\n<!-- source-page: 15 -->\n\n15\n\nfor 12 < σ < 1 and we know that γ > 14. Hence g(σ) > 0 for 21 < σ < 1. This implies\n(−f ′ (σ)/f (σ))′ > 0 for 12 < σ < 1, which proves the lemma. ✷\n\n",
+          "sha256": "f0533a5b16808508e04d0c74c49de6790ba69989c001001d75336726cbda878a"
+        },
+        "after": {
+          "line_start": 785,
+          "line_end": 792,
+          "text": "\n\n                                  4. Distribution of Zeros\n   We have shown in §2 that the Riemann hypothesis holds for I(T, s) for each fixed\nT ≥ 1 and in §3 that the modified Riemann hypothesis holds for a0 (y, s) for each\ny ≥ 1. Here we consider how the zeros behave as the parameter T or y is varied, and\nalso consider the issue of simplicity of zeros. Note that the zeros of these functions\nvary continuously in T as the parameter T is varied, and vary analytically in T as long\n",
+          "sha256": "7bc1d2be4fecbb245c4fe43714d2bd6e82b8e4a98ddfc7019cbf115112256022"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proof of Theorem 3",
+            "line_end": 786,
+            "line_start": 593,
+            "mathematical_role": "Uses Maass-Selberg exclusion of nonreal off-line zeros and a real-variable monotonicity analysis to locate the exceptional real-zero bifurcation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 784,
+          "line_start": 760,
+          "title": "Unimodality yields zero-free and two-exception regimes",
+          "unit_id": "u21_real_zero_bifurcation",
+          "unit_type": "proof-conclusion",
+          "why_material": "Uses the monotone logarithmic derivative to show F decreases below the threshold and has a single interior return to level one above it, producing exactly one real zero on each side by symmetry and motion toward the poles."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 781-783 appear to confuse the critical point σ0 and root σy in extraction or source typography; retain the qualitative conclusion but verify symbols before downstream use.",
+          "representation_dependency": "Original PDF required for inequalities (57)-(59) and the σ0/σy distinction.",
+          "unit_id": "u21_real_zero_bifurcation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 758,
+            "line_start": 711,
+            "title": "Zero-block derivatives enforce unimodality",
+            "unit_id": "u20_log_derivative_monotonicity",
+            "unit_type": "proof-mechanism",
+            "why_material": "Differentiates −f'/f into an elementary term and blockwise xi logarithmic derivatives, then uses the known height of xi zeros to make every derivative contribution positive on (1/2,1)."
+          },
+          {
+            "line_end": 809,
+            "line_start": 787,
+            "title": "Simplicity, zero density, and monotone motion for I(T,s)",
+            "unit_id": "u22_zero_distribution_theorem",
+            "unit_type": "theorem",
+            "why_material": "States that all truncation-integral zeros are simple, gives their count as the xi count plus a parameter-dependent linear term, and asserts strictly decreasing positive ordinates as T grows."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Maass-Selberg first confines nonreal zeros to the critical line; positivity and symmetry isolate real zeros in (0,1); the scalar level-set representation then turns the central derivative sign at y* and strict log-derivative monotonicity into creation of one symmetric exceptional pair.",
+            "limit": "The proof is specific to this completed-zeta combination and depends on delicate formula-level inequalities; the Landau-Siegel language is analogy, not identity of arithmetic mechanism.",
+            "parent_local_unit_ids": [
+              "u07_exceptional_real_zeros",
+              "u15_entire_transform_for_constant_term",
+              "u16_maass_selberg_exclusion",
+              "u17_real_zero_localization",
+              "u18_scalar_level_set_reformulation",
+              "u19_threshold_from_central_derivative",
+              "u20_log_derivative_monotonicity",
+              "u21_real_zero_bifurcation"
+            ],
+            "title": "Exceptional zeros as a one-parameter level-set bifurcation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u21_real_zero_bifurcation",
+        "spontaneous": {
+          "unit_id": "u21_real_zero_bifurcation",
+          "spontaneous_reading": "Monotonicity of −f'/f makes the scalar level-set curve unimodal. Below the critical y it falls immediately from its central value and never returns to one; above the threshold it first rises and then falls to zero, creating exactly one return on the right and, by symmetry, one on the left."
+        },
+        "directed": {
+          "unit_id": "u21_real_zero_bifurcation",
+          "source_grounded_mathematics": "For 1≤y≤y* the source uses the monotone logarithmic derivative to show F'(y,σ)<0 on (1/2,1); since F(y,1/2)=1, there is no real zero there. For y>y* it obtains one change of sign of F', combines F(y,1/2)=1 with F(y,1)=0, and concludes a unique level-one crossing in (1/2,1), hence a reflected pair of real zeros. It also states that the right zero tends to 1 as y→∞.",
+          "conceptual_reading": "The bifurcation is a tangency-and-unimodality phenomenon, not an arbitrary appearance of roots. Functional-equation symmetry doubles one right-hand crossing into the exact exceptional pair.",
+          "representation_or_bridge": "The positive level-set representation turns the analytic zero problem into the topology of a parameterized one-hump curve.",
+          "boundary_or_failure": "The conclusion relies on the prior strict monotonicity result and endpoint behavior. It concerns real zeros only; nonreal exclusion came from a different mechanism.",
+          "uncertainty": "The extracted lines appear to confuse the critical-point label σ0 with the root label σ_y. The qualitative one-critical-point/one-crossing conclusion is clear, but inequalities (57)–(59) and symbol identities require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u21_real_zero_bifurcation",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose and argument support monotone decrease with no right-hand crossing for 1≤y≤y*, one critical point and one level-one crossing for y>y*, reflection to a pair, and motion toward the endpoint as y grows."
+        ],
+        "inference": [
+          "Describing the mechanism as tangency plus unimodality is a useful synthesis of this span with the immediately invoked Lemma 3."
+        ],
+        "unsupported_or_imported": [
+          "The analysis states a clean root identification despite lines 781–783 confusing σ0, the critical point, with σ_y, the level-one root; the extracted symbolic conclusion cannot support that exact identification."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Topology of a parameterized one-hump curve' is memorable but should not substitute for the sign pattern, endpoint values, and separate critical-point/root roles."
+        ],
+        "context_or_ocr_risk": [
+          "Inequalities (57)–(59), variable labels, and the final asymptotic sentence are extraction-corrupted; only the qualitative one-critical-point/one-crossing conclusion is locally reliable."
+        ],
+        "missed_mechanism": [
+          "The maximum occurs at σ0 while the zero/root occurs at a distinct later σ_y; preserving that distinction is essential to the proof structure."
+        ],
+        "revision_instructions": [
+          "Keep the qualitative bifurcation and symmetry conclusion, explicitly separate σ0 from σ_y, do not quote the extracted equality identifying the root with σ0, and require PDF verification for all labeled inequalities and asymptotics."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The preliminary lines explain continuity/analytic motion only while zeros stay simple.",
+      "line_end": 809,
+      "line_start": 787,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (60) coefficients require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States that all truncation-integral zeros are simple, gives their count as the xi count plus a parameter-dependent linear term, and asserts strictly decreasing positive ordinates as T grows.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Simplicity, zero density, and monotone motion for I(T,s)",
+      "unit_artifact_relpath": "depth/units/u22_zero_distribution_theorem.txt",
+      "unit_bytes": 1300,
+      "unit_id": "u22_zero_distribution_theorem",
+      "unit_sha256": "5673a1f5fb678c1b2b6e909af51d6c0d3c9f3145d653a00ef3848ca3e819cdd3",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u22_zero_distribution_theorem.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 779,
+          "line_end": 786,
+          "text": "hence F ′ (y, σ1 ) > 0 for 21 ≤ σ1 < σ0 and F ′ (y, σ2 ) < 0 for σ1 < σ2 < 1. Since\nF (y, 12 ) = 1 and F (y, 1) = 0, these imply there is a unique value σy in ( 12 , 1) such\nthat F (y, σy ) = 1, and this value has σ0 < σy < 1. This is exactly the condition for\nH(y, σ) = 0 so we conclude that the unique value where this occurs in ( 21 , 1) is σ = σ0 .\nWe also find 2 that σ0 → 1 as y → +∞, which implies that σy → 1 as y → +∞. This\ncompletes the proof of Theorem 3. ✷\n\n\n",
+          "sha256": "e9c69f73a24bf5207111f9853c06cba97cbe043b80364c33d29637c0c28d356e"
+        },
+        "after": {
+          "line_start": 810,
+          "line_end": 817,
+          "text": "Remark. Standard estimates from the theory of the Riemann zeta function show that\n                                     2          2\n                   N(ξ(2s), U) = U log U − (log π + 1) U + O(log U).                    (61)\n                                    π           π\nsee for example [8, p. 98].\nProof. We study the variation in argument of the entire function\n                     1\n         H(T, s) := (2s)(2s − 1)(2s − 2)I(T, s) = −ξ(2s)T s−1 + ξ(2 − 2s)T −s ,\n",
+          "sha256": "49842ee7a00ad838afbbca7beea999c58aa103e3778f32895bae15ca729b8715"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Distribution of Zeros",
+            "line_end": 942,
+            "line_start": 787,
+            "mathematical_role": "Proves simplicity, counts zeros, derives monotone parameter motion, and discusses the unresolved analogue for the constant term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 809,
+          "line_start": 787,
+          "title": "Simplicity, zero density, and monotone motion for I(T,s)",
+          "unit_id": "u22_zero_distribution_theorem",
+          "unit_type": "theorem",
+          "why_material": "States that all truncation-integral zeros are simple, gives their count as the xi count plus a parameter-dependent linear term, and asserts strictly decreasing positive ordinates as T grows."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The preliminary lines explain continuity/analytic motion only while zeros stay simple.",
+          "representation_dependency": "Equation (60) coefficients require PDF verification.",
+          "unit_id": "u22_zero_distribution_theorem"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 784,
+            "line_start": 760,
+            "title": "Unimodality yields zero-free and two-exception regimes",
+            "unit_id": "u21_real_zero_bifurcation",
+            "unit_type": "proof-conclusion",
+            "why_material": "Uses the monotone logarithmic derivative to show F decreases below the threshold and has a single interior return to level one above it, producing exactly one real zero on each side by symmetry and motion toward the poles."
+          },
+          {
+            "line_end": 845,
+            "line_start": 815,
+            "title": "Critical-line zeros become phase crossings of xi",
+            "unit_id": "u23_phase_detection_and_base_simplicity",
+            "unit_type": "representation-change",
+            "why_material": "Represents H(T,1/2+it) as a sine of θ(2t)+t log T, turning zeros into phase congruences, and imports a differenced-xi theorem to establish the T=1 simple-zero base case."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Writing critical-line values as a sine of a rotating xi phase unifies zero detection, simplicity, an asymptotic counting correction, and monotone motion under T; the failed transfer to a0 pinpoints an oppositely rotating factor and the real-zero escape.",
+            "limit": "For a0 the analogous motion and simplicity statements are partly conjectural/numerical and need additional analytic estimates.",
+            "parent_local_unit_ids": [
+              "u22_zero_distribution_theorem",
+              "u23_phase_detection_and_base_simplicity",
+              "u24_phase_monotonicity_and_count",
+              "u25_constant_term_motion_obstruction"
+            ],
+            "title": "Phase rotation links zero density, simplicity, and motion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u22_zero_distribution_theorem",
+        "spontaneous": {
+          "unit_id": "u22_zero_distribution_theorem",
+          "spontaneous_reading": "Once zero location is known, the parameter family supports a stronger dynamical statement: zeros are simple, their count is the ξ count plus a linear phase contribution from log T, and each positive ordinate moves strictly downward as T increases."
+        },
+        "directed": {
+          "unit_id": "u22_zero_distribution_theorem",
+          "source_grounded_mathematics": "Theorem 5 states that for fixed T≥1, I(T,s) has only simple zeros and N(I(T,s);U)=N(ξ(2s);U)+(2/π)(log T)U+O(log U). It also states that every zero with positive imaginary part has a strictly decreasing ordinate as T increases. The preface notes continuous dependence on the parameter and analytic dependence while zeros remain simple.",
+          "conceptual_reading": "Simplicity upgrades a static zero set into trackable branches. The additional counting term signals that the truncation weight contributes a uniform phase rotation rather than merely perturbing individual zeros.",
+          "representation_or_bridge": "The theorem prepares a phase representation in which counts and motion can be read from argument crossings.",
+          "boundary_or_failure": "Analytic motion is guaranteed only while zeros are simple; the theorem supplies that for this T≥1 family, not for the related constant term. The asymptotic count has an O(log U) error.",
+          "uncertainty": "The coefficient and normalization in equation (60) are extraction-sensitive and should be checked in the PDF before quantitative use."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u22_zero_distribution_theorem",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 5 directly states simplicity for T≥1, the zero-count asymptotic with an added linear log T term, and strictly decreasing positive ordinates; the preface states continuous and conditionally analytic parameter dependence."
+        ],
+        "inference": [
+          "Simplicity making individual branches trackable is a reasonable inference from the preface and theorem."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the added count term 'signals a uniform phase rotation' and that the theorem 'prepares a phase representation' imports the explanatory mechanism from following units; this span only states the theorem."
+        ],
+        "paraphrase_or_style_risk": [
+          "The dynamical-language summary is useful, but it risks making the stated asymptotic look causally explained when the phase proof is outside the unit."
+        ],
+        "context_or_ocr_risk": [
+          "The coefficient and normalization in (60) require PDF verification; the theorem's qualitative conclusions are clear."
+        ],
+        "missed_mechanism": [
+          "The count has an O(log U) remainder and analytic motion is only guaranteed while zeros are simple; these restrictions should remain attached to the relevant claims."
+        ],
+        "revision_instructions": [
+          "Restrict the conceptual reading to trackability and the three stated outputs, relabel phase rotation as a later-unit explanation, and retain the asymptotic error and T≥1 scope."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distinction between detected crossings and a priori multiplicity is explicitly retained.",
+      "line_end": 845,
+      "line_start": 815,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: verify all constants, arguments, and normalizations in (62) and the differenced-xi identity.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Represents H(T,1/2+it) as a sine of θ(2t)+t log T, turning zeros into phase congruences, and imports a differenced-xi theorem to establish the T=1 simple-zero base case.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line zeros become phase crossings of xi",
+      "unit_artifact_relpath": "depth/units/u23_phase_detection_and_base_simplicity.txt",
+      "unit_bytes": 2162,
+      "unit_id": "u23_phase_detection_and_base_simplicity",
+      "unit_sha256": "f2f635ae135848fe3aafd4e3840762fec08132f6885ae3171a624821ce688a6d",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u23_phase_detection_and_base_simplicity.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 807,
+          "line_end": 814,
+          "text": "                                                  π\n   (2) As T ≥ 1 increases, each zero ρ of I(T, s) with ℑ(ρ) > 0 has imaginary part that\nis a strictly decreasing function of T .\nRemark. Standard estimates from the theory of the Riemann zeta function show that\n                                     2          2\n                   N(ξ(2s), U) = U log U − (log π + 1) U + O(log U).                    (61)\n                                    π           π\nsee for example [8, p. 98].\n",
+          "sha256": "5da41363becba3b84a49234760986effcae6510c58035eebb6f250861289418c"
+        },
+        "after": {
+          "line_start": 846,
+          "line_end": 853,
+          "text": "    For T > 1 it is sufficient to show that dtd f (t, T ) > 0 for all t ∈ R. We have\n d\ndt\n   f (t, T ) = dtd f (t, 1) + log T , and since log T > 0 it suffices to establish dtd f (t, 1) ≥ 0\nfor all t. We now apply Lemma 2.2 of [16] to E(s) = ξ(s + 21 ), whose hypotheses are\n\n<!-- source-page: 17 -->\n\n",
+          "sha256": "e04d227072a026859ca7d7485c55068a95809843709dc0a645a642076a0fe80a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Distribution of Zeros",
+            "line_end": 942,
+            "line_start": 787,
+            "mathematical_role": "Proves simplicity, counts zeros, derives monotone parameter motion, and discusses the unresolved analogue for the constant term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 845,
+          "line_start": 815,
+          "title": "Critical-line zeros become phase crossings of xi",
+          "unit_id": "u23_phase_detection_and_base_simplicity",
+          "unit_type": "representation-change",
+          "why_material": "Represents H(T,1/2+it) as a sine of θ(2t)+t log T, turning zeros into phase congruences, and imports a differenced-xi theorem to establish the T=1 simple-zero base case."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The distinction between detected crossings and a priori multiplicity is explicitly retained.",
+          "representation_dependency": "High: verify all constants, arguments, and normalizations in (62) and the differenced-xi identity.",
+          "unit_id": "u23_phase_detection_and_base_simplicity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 809,
+            "line_start": 787,
+            "title": "Simplicity, zero density, and monotone motion for I(T,s)",
+            "unit_id": "u22_zero_distribution_theorem",
+            "unit_type": "theorem",
+            "why_material": "States that all truncation-integral zeros are simple, gives their count as the xi count plus a parameter-dependent linear term, and asserts strictly decreasing positive ordinates as T grows."
+          },
+          {
+            "line_end": 875,
+            "line_start": 846,
+            "title": "Phase monotonicity controls simplicity, count, and parameter motion",
+            "unit_id": "u24_phase_monotonicity_and_count",
+            "unit_type": "proof-mechanism",
+            "why_material": "Adds log T to the phase derivative, invokes nonnegative xi phase rotation, derives simple crossings and the asymptotic count, then reads decreasing zero ordinates directly from monotonicity in both variables."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Writing critical-line values as a sine of a rotating xi phase unifies zero detection, simplicity, an asymptotic counting correction, and monotone motion under T; the failed transfer to a0 pinpoints an oppositely rotating factor and the real-zero escape.",
+            "limit": "For a0 the analogous motion and simplicity statements are partly conjectural/numerical and need additional analytic estimates.",
+            "parent_local_unit_ids": [
+              "u22_zero_distribution_theorem",
+              "u23_phase_detection_and_base_simplicity",
+              "u24_phase_monotonicity_and_count",
+              "u25_constant_term_motion_obstruction"
+            ],
+            "title": "Phase rotation links zero density, simplicity, and motion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u23_phase_detection_and_base_simplicity",
+        "spontaneous": {
+          "unit_id": "u23_phase_detection_and_base_simplicity",
+          "spontaneous_reading": "On the critical line the pole-cleared truncation integral becomes a sine wave whose phase is θ(2t)+t log T. Zeros are therefore phase crossings modulo π, but the source carefully separates detection from multiplicity and imports a differenced-ξ theorem to certify simplicity at T=1."
+        },
+        "directed": {
+          "unit_id": "u23_phase_detection_and_base_simplicity",
+          "source_grounded_mathematics": "The source writes H(T,1/2+it) as a purely imaginary multiple of R(2t)sin(θ(2t)+t log T), where ξ(1+it)=R(t)e^{iθ(t)} with continuous θ(0)=0. Thus zeros satisfy f(T,t)≡0 mod π, without an immediate multiplicity conclusion. For T=1 it identifies H(1,s), after a linear change of variable and the ξ functional equation, with a cited differenced-ξ function whose zeros are simple and on the line.",
+          "conceptual_reading": "Amplitude–phase coordinates discard irrelevant magnitude and expose the zero event as a rotation count. Simplicity becomes transversality of phase crossings, which is a separate obligation from locating the crossings.",
+          "representation_or_bridge": "The polar form of ξ on Re(s)=1 bridges an entire-function zero problem to a real phase congruence; the differenced-ξ identity supplies the base certification.",
+          "boundary_or_failure": "The congruence alone gives neither simplicity nor monotone phase. The T=1 simplicity claim depends on the cited Lagarias theorem and exact normalization, not solely on the displayed sine identity.",
+          "uncertainty": "Constants, arguments, powers of T, and the differenced-ξ scaling are formula-sensitive and require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u23_phase_detection_and_base_simplicity",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines pole-cleared H, states its relation to I up to an extra central zero, gives the sine/phase form and exact congruence for zeros, warns that multiplicity is not yet known, and imports a cited differenced-ξ theorem for T=1 simplicity."
+        ],
+        "inference": [
+          "Interpreting phase crossings as a real-coordinate representation of zero detection and simplicity as transversality is mathematically reasonable."
+        ],
+        "unsupported_or_imported": [
+          "No major theorem is falsely imported, but the directed source summary omits the artificial central zero and the qualified relation between H and I, which are necessary to avoid transferring a zero or multiplicity incorrectly."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Amplitude–phase coordinates discard irrelevant magnitude' overstates irrelevance: nonvanishing of R(2t) is required for exact zero detection, and the normalization matters for the cited identity."
+        ],
+        "context_or_ocr_risk": [
+          "Constants, arguments, powers of T, the sine normalization, and the linear change into the cited differenced-ξ function all require PDF verification."
+        ],
+        "missed_mechanism": [
+          "H has the same zeros as I with multiplicity except for the deliberately added central zero, and T=1 simplicity comes from an external theorem rather than the congruence itself."
+        ],
+        "revision_instructions": [
+          "Add the H-versus-I zero-set qualification and the extra central zero to source-grounded mathematics, replace 'irrelevant magnitude' with 'nonvanishing amplitude separated from phase,' and preserve the external provenance of base simplicity."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The statement is an expectation, not a theorem.",
+      "line_end": 998,
+      "line_start": 994,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "None beyond prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Makes a falsifiable zero-statistics prediction from the behavior of related differenced L-functions, explicitly contrasting it with a tempting random-matrix analogy.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth parameterized zeros are predicted not to exhibit GUE spacing",
+      "unit_artifact_relpath": "depth/units/u29_spacing_prediction.txt",
+      "unit_bytes": 354,
+      "unit_id": "u29_spacing_prediction",
+      "unit_sha256": "4790d47ab4adfb6cf74bb1649e9aa1f30dd1c9d622563f6e4b23513d0fc96c66",
+      "unit_type": "heuristic-prediction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u29_spacing_prediction.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 986,
+          "line_end": 993,
+          "text": "Fourier coefficients an (y, s) over the entire modular surface F , i.e.\n                                                         dxdy\n                                          Z Z\n                                Kn (s) :=       an (y, s) 2 .\n                                              F           y\nThe observation of Zagier states that K0 (s) ≡ 0, because K0 (s) is an eigenfunction of\nthe non-Euclidean Laplacian. However this is not the case for the other Kn (s), which\nare potentially interesting functions.\n",
+          "sha256": "4ab78ed92e24842a303792e3f58ba9b3a9c6e92fd64148fa25283bfa17fa69f0"
+        },
+        "after": {
+          "line_start": 999,
+          "line_end": 1006,
+          "text": "   The existence of zeros on the real axis for individual Epstein zeta functions was noted\nlong ago. In 1964 Bateman and Grosswald [3] gave a criterion for individual Epstein\nzeta functions to have a real zero, whose main term was y ∗ = 4πe−γ with a very small\n\n<!-- source-page: 20 -->\n\n20\n\n",
+          "sha256": "1895955f915bd6a8db3991b1217e1b3b28e03a78b0ecfdd855e6d2b8a7869b88"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Concluding Remarks",
+            "line_end": 1013,
+            "line_start": 943,
+            "mathematical_role": "States conceptual gaps, proposes related integrals and special-function reductions, and contrasts predicted zero statistics and Epstein-zero thresholds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 998,
+          "line_start": 994,
+          "title": "Smooth parameterized zeros are predicted not to exhibit GUE spacing",
+          "unit_id": "u29_spacing_prediction",
+          "unit_type": "heuristic-prediction",
+          "why_material": "Makes a falsifiable zero-statistics prediction from the behavior of related differenced L-functions, explicitly contrasting it with a tempting random-matrix analogy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The statement is an expectation, not a theorem.",
+          "representation_dependency": "None beyond prose.",
+          "unit_id": "u29_spacing_prediction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 993,
+            "line_start": 985,
+            "title": "Laplacian structure kills only the zero-mode full-surface integral",
+            "unit_id": "u28_full_surface_integrals",
+            "unit_type": "comparison-and-obstruction",
+            "why_material": "Contrasts Zagier's identically vanishing K_0, explained by a Laplacian eigenfunction property, with potentially nontrivial full-surface integrals for other Fourier modes."
+          },
+          {
+            "line_end": 1012,
+            "line_start": 999,
+            "title": "Averaging Epstein zeta functions sharpens an approximate real-zero cutoff",
+            "unit_id": "u30_epstein_average_threshold",
+            "unit_type": "comparison",
+            "why_material": "Relates the nearly identical Bateman-Grosswald threshold for individual Epstein zeta functions to the exact cutoff for their x-average, the Eisenstein constant term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper itself separates several successful direct verification technologies from the unresolved question of why Eisenstein Fourier coefficients should display RH behavior, then proposes truncation, integrated Bessel functions, full-surface modes, and zero-motion statistics as tests of possible mechanisms.",
+            "limit": "These proposals are not established unifications; some are conditional or heuristic and must not be promoted to proved explanations.",
+            "parent_local_unit_ids": [
+              "u06_fourier_coefficient_contrast",
+              "u08_proof_architectures",
+              "u09_related_approaches",
+              "u26_conceptual_gap_and_truncation_proposal",
+              "u27_integrated_coefficients_bessel_reduction",
+              "u28_full_surface_integrals",
+              "u29_spacing_prediction",
+              "u30_epstein_average_threshold"
+            ],
+            "title": "Direct line-zero verification versus a conceptual Eisenstein mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u29_spacing_prediction",
+        "spontaneous": {
+          "unit_id": "u29_spacing_prediction",
+          "spontaneous_reading": "The source rejects an automatic random-matrix analogy: results for a related family suggest unusually smooth spacing as the parameter varies, hence no GUE behavior. This is a falsifiable expectation, not an established statistic."
+        },
+        "directed": {
+          "unit_id": "u29_spacing_prediction",
+          "source_grounded_mathematics": "The authors ask whether a GUE analogue should govern the vertical zero distribution and answer heuristically that results of a cited related problem suggest smoothly spaced zeros with no GUE behavior.",
+          "conceptual_reading": "Parameterized shifted combinations may impose ordered phase crossings that differ from the fluctuating spacing associated with zeta zeros. The prediction tests whether shared critical-line location is too weak a basis for transferring GUE statistics.",
+          "representation_or_bridge": "The only bridge offered is analogy with the related differenced-function results in [16]; no calculation or statistic is supplied here.",
+          "boundary_or_failure": "This is explicitly an expectation. The unit provides neither data nor a theorem and does not identify the precise limiting spacing law.",
+          "uncertainty": "No formula reconstruction is needed; uncertainty is epistemic because the claim is speculative and rests on an external comparison."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u29_spacing_prediction",
+        "critic_decision": "revise",
+        "supported": [
+          "The span asks about a GUE analogue and reports an expectation, based on cited related results, of very smoothly spaced zeros with no GUE behavior."
+        ],
+        "inference": [
+          "Treating this as a falsifiable expectation rather than a statistic or theorem is correct."
+        ],
+        "unsupported_or_imported": [
+          "The claim that parameterized shifted combinations impose ordered phase crossings is imported from earlier analysis and is not stated or derived in this five-line span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The proposed test about shared critical-line location and GUE transfer is useful critic framing, but it goes beyond the source's brief analogy unless explicitly labeled as an evaluator's question."
+        ],
+        "context_or_ocr_risk": [
+          "There is little OCR risk, but the evidence for the prediction lies entirely in external reference [16], whose relevant result is absent."
+        ],
+        "missed_mechanism": [
+          "The span does not define 'smoothly spaced,' specify a limiting statistic, or state which functions and parameter regime the expectation covers with precision."
+        ],
+        "revision_instructions": [
+          "Remove the phase-crossing causal story, preserve only the cited heuristic prediction, and state that its statistic, scope, and supporting external mechanism are unresolved in this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source compares thresholds but does not claim averaging alone explains exactness.",
+      "line_end": 1012,
+      "line_start": 999,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical bounds and the exact exponential sign should be verified in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates the nearly identical Bateman-Grosswald threshold for individual Epstein zeta functions to the exact cutoff for their x-average, the Eisenstein constant term.",
+      "source_id": "openalex_w1983740031",
+      "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Averaging Epstein zeta functions sharpens an approximate real-zero cutoff",
+      "unit_artifact_relpath": "depth/units/u30_epstein_average_threshold.txt",
+      "unit_bytes": 763,
+      "unit_id": "u30_epstein_average_threshold",
+      "unit_sha256": "b61e5e97475b90bcb2b5380ff0090965a08e0a20bad3e6425a636fcd63203b8e",
+      "unit_type": "comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u30_epstein_average_threshold.txt",
+      "source": {
+        "source_id": "openalex_w1983740031",
+        "title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+        "authors": [
+          "Jeffrey C. Lagarias",
+          "Masatoshi Suzuki"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 991,
+          "line_end": 998,
+          "text": "The observation of Zagier states that K0 (s) ≡ 0, because K0 (s) is an eigenfunction of\nthe non-Euclidean Laplacian. However this is not the case for the other Kn (s), which\nare potentially interesting functions.\n   It might also be of interest to study properties of the vertical distribution of the\nzeros of these functions, particularly as y varies. Should some analogue of the GUE\nproperty hold for these zeros? The results of [16] on a related problem suggest that one\nshould expect the zeros of these functions to be very smoothly spaced, with no GUE\nbehavior.\n",
+          "sha256": "d380ef32f4b867ed757e380306954b00a0a22f98fc367b8c7e6099c684e448ac"
+        },
+        "after": {
+          "line_start": 1013,
+          "line_end": 1020,
+          "text": "\n                 6. Appendix : Stable and semi-stable lattices\n   The rank n zeta function AN,K (s) of a number field K is given in [28] as an Mellin-\ntype integral over a moduli space of rank n semi-stable lattices; this can be reduced\nto an integral of an Eisenstein series associated to the group P SL(n, Z) over a certain\nsubset of the allowable lattices.\n   The notion of semistability for lattices was introduced by Stuhler [19], in analogy\nwith a notion of semistability for vector bundles on curves, as given in Harder and\n",
+          "sha256": "c9e329e40fb56125b9265cbedc506258812192812a67dbb7537067069c5300ab"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+        "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Concluding Remarks",
+            "line_end": 1013,
+            "line_start": 943,
+            "mathematical_role": "States conceptual gaps, proposes related integrals and special-function reductions, and contrasts predicted zero statistics and Epstein-zero thresholds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1012,
+          "line_start": 999,
+          "title": "Averaging Epstein zeta functions sharpens an approximate real-zero cutoff",
+          "unit_id": "u30_epstein_average_threshold",
+          "unit_type": "comparison",
+          "why_material": "Relates the nearly identical Bateman-Grosswald threshold for individual Epstein zeta functions to the exact cutoff for their x-average, the Eisenstein constant term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source compares thresholds but does not claim averaging alone explains exactness.",
+          "representation_dependency": "Numerical bounds and the exact exponential sign should be verified in the PDF.",
+          "unit_id": "u30_epstein_average_threshold"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 998,
+            "line_start": 994,
+            "title": "Smooth parameterized zeros are predicted not to exhibit GUE spacing",
+            "unit_id": "u29_spacing_prediction",
+            "unit_type": "heuristic-prediction",
+            "why_material": "Makes a falsifiable zero-statistics prediction from the behavior of related differenced L-functions, explicitly contrasting it with a tempting random-matrix analogy."
+          },
+          {
+            "line_end": 1045,
+            "line_start": 1014,
+            "title": "Sublattice covolumes form a canonical convex polygon",
+            "unit_id": "u31_lattice_slopes_and_polygon",
+            "unit_type": "definition-and-construction",
+            "why_material": "Defines lattice covolume, rankwise minimal slopes, and the convex envelope controlled by the sublattice intersection/sum inequality, creating the representation used to define stability."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper itself separates several successful direct verification technologies from the unresolved question of why Eisenstein Fourier coefficients should display RH behavior, then proposes truncation, integrated Bessel functions, full-surface modes, and zero-motion statistics as tests of possible mechanisms.",
+            "limit": "These proposals are not established unifications; some are conditional or heuristic and must not be promoted to proved explanations.",
+            "parent_local_unit_ids": [
+              "u06_fourier_coefficient_contrast",
+              "u08_proof_architectures",
+              "u09_related_approaches",
+              "u26_conceptual_gap_and_truncation_proposal",
+              "u27_integrated_coefficients_bessel_reduction",
+              "u28_full_surface_integrals",
+              "u29_spacing_prediction",
+              "u30_epstein_average_threshold"
+            ],
+            "title": "Direct line-zero verification versus a conceptual Eisenstein mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u30_epstein_average_threshold",
+        "spontaneous": {
+          "unit_id": "u30_epstein_average_threshold",
+          "spontaneous_reading": "Individual Epstein zeta functions have a real-zero threshold known only within a tiny parameter-dependent error, while averaging them over x to form the Eisenstein constant term yields the exact same leading cutoff. The comparison suggests that averaging removes variation relevant to the error without proving that this is the reason."
+        },
+        "directed": {
+          "unit_id": "u30_epstein_average_threshold",
+          "source_grounded_mathematics": "The source reports Bateman–Grosswald criteria placing the real-zero transition for individual E(x+iy,s) near 4πe^{−γ}, with numerical no-zero/zero bounds around 7.0555. It contrasts this with the exact cutoff y*=4πe^{−γ} for a_0(y,s), which is the x-average of E(x+iy,s) at fixed y.",
+          "conceptual_reading": "Averaging compresses a family of x-dependent zero problems into one invariant coefficient and sharpens an approximate threshold to an exact one. The stable leading constant across both settings is the concrete structural relation.",
+          "representation_or_bridge": "Fourier projection onto the constant mode is the bridge from individual Epstein zeta functions to their x-averaged threshold problem.",
+          "boundary_or_failure": "The source does not claim that averaging alone explains exactness, nor that every individual function has the identical cutoff. The numerical bounds are comparisons, not the proof of Theorem 3.",
+          "uncertainty": "The exponential sign, parameter naming, and numerical bounds should be verified against the PDF before exact reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u30_epstein_average_threshold",
+        "critic_decision": "revise",
+        "supported": [
+          "The span reports near-threshold criteria for individual Epstein zeta functions, the exact y*=4πe^{−γ} threshold for a_0, and the fact that a_0 is the x-average of E(x+iy,s)."
+        ],
+        "inference": [
+          "Noting the stable leading constant and asking whether averaging is relevant to the exact threshold is a reasonable hypothesis."
+        ],
+        "unsupported_or_imported": [
+          "The claim that averaging 'sharpens' or 'removes variation relevant to the error' suggests a causal mechanism the source explicitly does not establish; it only juxtaposes the thresholds and averaging relation."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Averaging compresses a family into an invariant coefficient' is structurally true but can sound like a generic explanation of exactness without evidence."
+        ],
+        "context_or_ocr_risk": [
+          "The parameter switches from y to k in extraction, and the exponent sign and decimal bounds need PDF verification."
+        ],
+        "missed_mechanism": [
+          "No reason is given for the shared constant or exactness after averaging; the individual criterion's parameter-dependent error and quantifiers are only summarized."
+        ],
+        "revision_instructions": [
+          "State the comparison and averaging identity as facts, move every sharpening/removal claim into explicitly speculative language, and verify the parameter names, inequalities, and exponential sign in the PDF."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1592212038",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1592212038_3a09c52f_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "An optimal first-spacing mean value improves zeta only after factorization through a double large sieve and optimization against a separately bounded second-spacing count.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "bourgain2016_depth_u01",
+          "bourgain2016_depth_u10",
+          "bourgain2016_depth_u11",
+          "bourgain2016_depth_u12"
+        ],
+        "proposed_limit": "The conclusion remains dependent on external second-spacing results; the paper does not make that bottleneck optimal.",
+        "source_id": "openalex_w1592212038",
+        "synthesis_id": "riemann_v2_within_6001c6928402387403549f46",
+        "title": "A two-bottleneck improvement chain"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The paper explicitly limits its new input to the first spacing problem.",
+          "line_end": 95,
+          "line_start": 53,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed phase coordinates are formula-dependent but readable; prose fixes the pipeline.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows how short-sum cubic approximation and Poisson summation produce a four-coordinate exponential sum, how convolution turns its first spacing into a mean value, and why improving only that side can still sharpen zeta bounds when paired with existing second-spacing control.",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Bombieri-Iwaniec separates first and second spacing problems",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u01.txt",
+          "unit_bytes": 2774,
+          "unit_id": "bourgain2016_depth_u01",
+          "unit_sha256": "ec192c3f86fd8a05be41f892374f9ffbe338f4fe296caef3ad38c647b57b2337",
+          "unit_type": "method-decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The method isolates two statistically different bottlenecks instead of estimating the original sum monolithically. A sharp component can improve the assembled bound without solving the complementary component optimally.",
+            "nonparaphrase_operation": "Poisson summation supplies the four-coordinate phase vector, convolution supplies a moment/counting representation, and the double-spacing decomposition is the bridge from local oscillatory sums to a large-sieve bound.",
+            "quality_reason": "The source describes short intervals, cubic replacement, Poisson transformation to four coordinates, first/second spacing, convolution to a mean value, and improvement only of first spacing. No material unsupported claim; the approximate-functional-equation dependency is also explicitly stated. 'A sharp component can improve the assembled bound' is general prose, but it is concretely instantiated by A6 versus the imported B parameter.",
+            "source_support": "A long sum with smooth phase is partitioned into length-N intervals, locally replaced by a cubic, and transformed into sums whose phases use four coordinates depending on h and on the interval I. An r-fold convolution expresses the first-spacing L2 norm through the A6-type mean value, while a parameter B controls the second spacing; the paper improves the former and combines it with existing bounds for the latter to reach the zeta estimate.",
+            "speculation_status": "The paper explicitly does not improve the second spacing problem; downstream strength is limited by imported estimates for B. The zeta conclusion also needs the approximate functional equation and other known exponential-sum bounds. The pipeline is prose-supported, but the extracted phase display is layout-sensitive and exact coordinates should be checked in the PDF before formal reuse. Saying the method isolates two different bottlenecks is a reasonable synthesis of the explicit decomposition. The phase vector is layout-sensitive, and the detailed second-spacing machinery is outside the span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Only A is improved here; B1 remains solver/input from the second-spacing literature.",
+          "line_end": 1145,
+          "line_start": 1060,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact box widths and scale substitutions require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates the incidence sum into A and B1, identifies A with an A6 mean value after scaling, and applies the new corollary to obtain the optimal first-spacing estimate.",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The double large sieve multiplies first-spacing and second-spacing counts",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u10.txt",
+          "unit_bytes": 6149,
+          "unit_id": "bourgain2016_depth_u10",
+          "unit_sha256": "ce30d87d9805b0d2726992bb26b6d2e21bcf4da8e6b12d22984a5c905165184b",
+          "unit_type": "factorized-spacing-bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A hard mixed correlation is decomposed into independent multiplicity questions for its two indexing sets. Optimal first-spacing control improves only A, while the final result transparently retains dependence on B1.",
+            "nonparaphrase_operation": "Coordinate boxes and Fourier integrals turn near-collision counts into mean values. The A6 theorem is therefore not merely analogous to first spacing; it is the quantitative bound on its collision energy.",
+            "quality_reason": "The double large sieve factors the mixed sum into A and B1, integrality forces two exact coordinates on the h side, Fourier majorization relates A to A6, and Corollary 3 gives the stated A bound. No material unsupported claim; the continued dependence on external B1 control is explicit. 'Not merely analogous' is rhetorical, but the equality/majorization to A6 is concretely shown.",
+            "source_support": "After Holder raises the localized sum to the sixth power, the double large sieve bounds the resulting I,h incidence sum by factors A and B1 times coordinate-volume terms. B1 counts pairs of interval vectors x(I) close coordinatewise; A counts pairs of six-tuples whose y(h) values are close. Integrality forces equality in the first two y coordinates, and Fourier majorization identifies A with a scaled A6 integral, so Corollary 3 gives A<<delta^2 H^(10+epsilon).",
+            "speculation_status": "No new estimate for B1 is proved here, so the large-sieve product remains only as strong as external second-spacing bounds. Exact box widths and scaling substitutions are formula-dependent. The A/B1 factorization is clear; numerical factors and the precise delta substitution should be checked against the PDF. Calling A and B1 independent collision energies is a faithful conceptual interpretation of their definitions. Box widths, delta scaling, and constants require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The resulting improvement is conditional on external second-spacing estimates and the stated derivative regime.",
+          "line_end": 1276,
+          "line_start": 1146,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense exponent arithmetic is OCR-risk and must be checked from the original before numerical reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines the A6 bound with basic and resonance-curve B estimates, varies N and R across M-ranges, and stitches the cases into the exponential-sum exponent 13/84.",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [
+            17,
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Available second-spacing estimates determine the ranges where the optimal first-spacing input pays off",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u11.txt",
+          "unit_bytes": 8961,
+          "unit_id": "bourgain2016_depth_u11",
+          "unit_sha256": "b5648fd71352d5a89b35524deb93cc88c6fc1556028c382ba8c31671a8e63cf4",
+          "unit_type": "parameter-optimization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof is a compatibility optimization, not a single uniform estimate. Each local bound pays off only where all scale inequalities and external inputs hold, so regime boundaries are part of the mechanism rather than bookkeeping.",
+            "nonparaphrase_operation": "The parameters N,R,Q,V mediate between phase localization, first-spacing strength, and second-spacing resolution. Resonance curves improve the B-side clustering estimate without changing the A6 input.",
+            "quality_reason": "The source combines first-spacing A with basic and resonance-curve second-spacing bounds, optimizes N across explicit ranges, enforces R<=N<=R^2, and stitches to exponent 13/84. No material unsupported claim; the imported Huxley estimates and derivative regime are acknowledged. 'Regime boundaries are mechanism' is explanatory but justified by the explicit switch when the nominal optimizer violates N<=R^2.",
+            "source_support": "The source combines the A estimate with two forms of second-spacing control. A basic choice N=M T^(-2/7) gives the desired sum bound in an initial M-range. Huxley's strengthened coordinate resolution replaces B1 by V B_V and resonance-curve estimates lead to optimized choices of N in further ranges, including a boundary choice when N<=R^2 would otherwise fail. Piecewise bounds are then shown to imply |S|<<M^(1/2)T^(13/84+epsilon) down to the stated alpha threshold.",
+            "speculation_status": "The conclusion is conditional on imported second-spacing theorems and derivative hypotheses. Choosing the formally optimal N outside R<=N<=R^2 invalidates the route, necessitating the boundary regime. The range-stitching narrative is recoverable, but dense exponent arithmetic and exact endpoints are OCR-risk and require source verification. Characterizing the proof as compatibility optimization across regimes is source-grounded. Dense exponent arithmetic is unsafe to copy from OCR and needs original verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source notes that auxiliary bounds require derivative hypotheses satisfied by log x in the zeta application.",
+          "line_end": 1328,
+          "line_start": 1281,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed exponents and the approximate functional equation are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Covers short remaining ranges with prior exponent-pair bounds, specializes to the logarithmic phase, then uses approximate functional equation, partial summation, and dyadic dissection to obtain the critical-line zeta estimate.",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Dyadic exponential-sum control passes to zeta via the approximate functional equation",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u12.txt",
+          "unit_bytes": 3471,
+          "unit_id": "bourgain2016_depth_u12",
+          "unit_sha256": "a56b51717ee898589d96ee69a93faa297fe11aded6e58049db428de0c4935a6e",
+          "unit_type": "bound-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A global analytic bound can be assembled from heterogeneous local tools as long as their valid ranges cover the entire decomposition. The special logarithmic phase supplies compatibility with hypotheses not guaranteed for a generic smooth phase.",
+            "nonparaphrase_operation": "The approximate functional equation is the bridge from zeta to finite Dirichlet sums, while partial summation converts unweighted exponential-sum cancellation into the n^(-1/2)-weighted form.",
+            "quality_reason": "The source fills the remaining alpha ranges with two prior bounds, notes their stronger phase assumptions, specializes to log x, and transfers through the approximate functional equation, partial summation, and dyadic dissection. No material unsupported claim; the analysis explicitly denies that the auxiliary bounds follow from decoupling or imply RH. 'Dyadic landscape' is stylistic, but all components and coverage obligations are explicit.",
+            "source_support": "For shorter M-ranges the source invokes two prior exponential-sum estimates and checks their alpha intervals overlap the gap left by Theorem 4. These auxiliary estimates require additional phase hypotheses, which F(x)=log x satisfies. The approximate functional equation bounds zeta(1/2+it) by a weighted sum up to about sqrt(t); partial summation and dyadic dissection then yield the exponent 13/84.",
+            "speculation_status": "The auxiliary bounds are not consequences of the new decoupling theorem and need stronger derivative assumptions. The transfer proves a zeta growth bound, not RH. The logical coverage is clear; exact interval endpoints, exponents, and the displayed functional equation are formula-dependent and should be PDF-checked. The coverage-patching interpretation is a faithful synthesis of the interval checks. Exact exponents, interval endpoints, and the functional-equation display require PDF checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2949c43663d08590ea31efc65c03b5eb83e0d14a4292f967e1664f6b088747b5",
+        "dossier_sha256": "7bb0ac6548f158698173fe02258bc77b1cbe17d1f549aebdca6a33c5fb0f0c8d"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Separated curve arcs make local Taylor coordinates invertible, allowing a high-dimensional estimate to factor into planar decouplings at successively finer scales.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "bourgain2016_depth_u02",
+          "bourgain2016_depth_u05",
+          "bourgain2016_depth_u06"
+        ],
+        "proposed_limit": "The theorem is stated for even dimension, with the application specialized to d=4.",
+        "source_id": "openalex_w1592212038",
+        "synthesis_id": "riemann_v2_within_9122768e7630a15dd9c2373d",
+        "title": "Transversality enables repeated dimension reduction"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The suppressed weight technicality is explicitly acknowledged in the source.",
+          "line_end": 172,
+          "line_start": 122,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact powers/norm notation should be checked against the PDF before formal reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the core harmonic-analytic inequality with Wronskian nondegeneracy, separated intervals, scale N, and square-summed fine pieces.",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Separated arcs of a nondegenerate even-dimensional curve admit multilinear L6-to-L3d decoupling",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u02.txt",
+          "unit_bytes": 3089,
+          "unit_id": "bourgain2016_depth_u02",
+          "unit_sha256": "81d391895361c8c6b83432f557336a4285cdc1aa7a75bcaee5afadbb4c9b91bd",
+          "unit_type": "decoupling-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For an even-dimensional smooth curve satisfying the stated nonvanishing Wronskian condition, Theorem 1 compares the averaged L^(3d) norm of the multilinear extension expression over d/2 pairwise separated arcs with N^(1/6+epsilon) times square sums of averaged L^6 norms of its N^(-1/2)-scale arc pieces. A bounded interpretation is that separation and nondegeneracy provide the transversality needed to replace one coupled, coarse-scale quantity by scale-resolved fine-piece control. This representation gains an explicit route from the whole separated-arc expression to norms of its fine pieces, but the theorem statement does not establish that geometric mechanism; that proof burden remains in the following argument. The displayed sharp-ball L^6 notation also suppresses the technically correct decaying weight, and OCR makes exact formula transcription unsafe without the PDF.",
+            "nonparaphrase_operation": "Recasts the theorem as a change of analytic resolution from the coupled separated-arc extension quantity to square-summed fine-arc norms, while isolating transversality as an interpretation whose derivation is not present in this statement unit.",
+            "quality_reason": "Accepted after bounded revision: it retains the exact hypotheses, scale, conclusion, and suppressed-weight caveat, removes the unsupported information-loss gloss and overbroad independence language, and clearly distinguishes the theorem statement from its later proof.",
+            "source_support": "The span states the smooth-curve Wronskian hypothesis, even d, O(1)-separated intervals, the N^(-1/2) partition, the L^(3d)-to-square-summed-L^6 inequality with N^(1/6+epsilon), and the caveat replacing a weighted L^6 space by sharp-ball notation for simplicity.",
+            "speculation_status": "No cross-source claim is made. Transversality is explicitly a source-compatible interpretation, not a result proved in this span; no claim is made that the square sum forgets phase information or that the fine pieces are independent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The factorization around lines 484-500 is the conceptual hinge; the surrounding setup is required to see why it applies.",
+          "line_end": 538,
+          "line_start": 307,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-intensive OCR; exact constants, scale powers, and multilinear norms require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Builds a preliminary interpolation bound, partitions physical space, Taylor-expands separated arcs, uses wedge transversality to factor coordinates, applies two-dimensional parabola decoupling, and closes b(N) by b(N^(2/3)).",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [
+            6,
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Local quadratic factorization reduces curve decoupling to planar decoupling and scale iteration",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u05.txt",
+          "unit_bytes": 15302,
+          "unit_id": "bourgain2016_depth_u05",
+          "unit_sha256": "684dbe2280535378fa00fb3d0f44fc44a34df0c44c81d766c45a5f58146f71ec",
+          "unit_type": "bootstrap-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "In the separated, even-dimensional setting with the paper's Wronskian condition, the proof turns a preliminary estimate into a scale bootstrap. After defining b(N), partitioning the physical ball into K-cubes, and restricting each separated arc to K^(-1/2) length, it Taylor-expands to quadratic order only under N=o(K^(3/2)); the resulting o(1) phase contributes a harmless smooth Fourier multiplier. The wedge lower bound makes the coordinate map built from each Phi'(t_j) and Phi''(t_j) invertible, so the relevant d-dimensional integral factors into planar quadratic integrals to which parabola decoupling applies. This representation gains access to a lower-dimensional decoupling theorem and yields b(N) bounded by b(N^(2/3))N^epsilon, allowing iteration. It does not justify a claim that every nondegenerate curve is globally a product of parabolas: the reduction is local, scale-conditioned, and depends on separated arcs, even dimension, and the specific nondegeneracy hypothesis.",
+            "nonparaphrase_operation": "Identifies the invertible derivative/second-derivative coordinates as the precise bridge that converts the local high-dimensional expression into planar decoupling inputs, then tracks how that representation change produces the scale-reduction recurrence rather than treating factorization as a general slogan.",
+            "quality_reason": "Accepted after bounded revision: it narrows the parabola-product language to the actual hypotheses and local scale, explicitly restores N=o(K^(3/2)) and the harmless Fourier-multiplier step, preserves the supported recurrence, and flags formula-intensive OCR as unsuitable for exact formal transcription.",
+            "source_support": "The span derives the preliminary L^6-to-L^(3d) estimate, defines b(N), partitions into K-cubes, states N=o(K^(3/2)) for the quadratic Taylor replacement, identifies the o(1) term as a harmless smooth Fourier multiplier, proves invertibility from the derivative/second-derivative wedge bound, calls the planar factorization the main point, applies two-dimensional parabola decoupling, and obtains b(N) much less than b(N^(2/3))N^epsilon before iteration.",
+            "speculation_status": "The local-to-global bootstrap description is interpretive but directly anchored in the displayed factorization and recurrence. No portability beyond this separated even-dimensional, Wronskian-nondegenerate, scale-compatible setting is asserted, and OCR-obscured constants or norm formulas are not repaired from memory."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This directly repairs the first gap identified in the introduction to Theorem 2.",
+          "line_end": 802,
+          "line_start": 542,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several phase expansions are degraded; the scale and factorization sequence is recoverable, but exact formulas are scan-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Specializes to a four-coordinate curve, enlarges and tiles the anisotropic domain, expands on shorter frequency intervals, uses separated base points to change variables, and performs successive N^(1/2) and N^(1/4) decouplings.",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [
+            9,
+            10,
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Periodicity and repeated planar decoupling adapt an isotropic estimate to the A6 box",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u06.txt",
+          "unit_bytes": 14666,
+          "unit_id": "bourgain2016_depth_u06",
+          "unit_sha256": "4b4709c3bddaf034f05a62aa0771c27d0bc3ebefa50d00774646298971813f9d",
+          "unit_type": "anisotropic-domain-reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Domain enlargement is controlled redundancy: it creates a tiling on which a theorem can be applied locally, while periodicity allows the added directions to be averaged away. Repeated scale reduction aligns theorem geometry with application geometry.",
+            "nonparaphrase_operation": "Taylor coordinates around separated h_1,h_2 and periodic phase variables convert the four-dimensional curve expression into products of two-dimensional parabola sums. This factorization transports planar decoupling into the anisotropic setting.",
+            "quality_reason": "The span specializes to d=4, enlarges and tiles domains, uses periodicity and separated centers to change variables, applies planar decoupling at successive scales, and proves the bilinear anisotropic estimate. No material unsupported formula claim; the analysis expressly refuses to reconstruct degraded phase coefficients. 'Removes irrelevant coordinates' is shorthand; it should be understood as the source's periodicity/change-of-variable step, not literal losslessness.",
+            "source_support": "In d=4 the source fixes phi_1(t)=t and phi_2(t)=t^2 with derivative nondegeneracy for the remaining coordinates. It first works on an enlarged anisotropic region tiled by N-cubes, expands around two separated N^(1/2)-length blocks, uses periodicity and changes of variables to reach two planar phases, and decouples to N^(1/4)-length blocks. It then tiles the full A6 box, repeats the expansion and planar L6 step, and obtains the separated bilinear estimate on that box.",
+            "speculation_status": "The construction depends on separated intervals and the stated derivative/Wronskian conditions. Several phase displays are degraded, so the exact transformations cannot safely be reconstructed beyond the prose-supported sequence. The two-stage N^(1/2) then N^(1/4) mechanism is recoverable; exact coefficients and normalization factors require the original scan. Calling enlargement controlled redundancy and repeated reduction an adapter between geometries is reasonable. Several phase expansions and normalizations are badly extracted, but the sequential mechanism and hypotheses remain readable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2949c43663d08590ea31efc65c03b5eb83e0d14a4292f967e1664f6b088747b5",
+        "dossier_sha256": "7bb0ac6548f158698173fe02258bc77b1cbe17d1f549aebdca6a33c5fb0f0c8d"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A sharp separated-pair estimate controls the full moment only after recursive interval decomposition isolates either one dominant block or a separated pair at some scale.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "bourgain2016_depth_u03",
+          "bourgain2016_depth_u07",
+          "bourgain2016_depth_u08"
+        ],
+        "proposed_limit": "Exact exponents and scale factors are formula-OCR dependent.",
+        "source_id": "openalex_w1592212038",
+        "synthesis_id": "riemann_v2_within_66d6418e716602e598286727",
+        "title": "Bilinear strength needs a scale-selection mechanism to become linear"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "These two gaps organize the whole mean-value section.",
+          "line_end": 209,
+          "line_start": 178,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant with supporting displayed domains.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies the two gaps between the decoupling theorem and the desired A6 result: the average is over a smaller anisotropic box, and the target is linear rather than bilinear.",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The application needs both domain compression and bilinear-to-linear conversion",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u03.txt",
+          "unit_bytes": 2077,
+          "unit_id": "bourgain2016_depth_u03",
+          "unit_sha256": "d71c88acd3b6895548b7cf9987f78db8e77f8476a97ab0cb782d90d4b4ff2c44",
+          "unit_type": "obstruction-and-proof-roadmap",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Explicitly naming representation mismatches turns one large proof gap into two independently addressable obligations. Neither stronger local control nor multilinearity alone automatically has the shape required by the application.",
+            "nonparaphrase_operation": "The anisotropic box is the application-native geometry, while ball decoupling is the theorem-native geometry. Periodicity/2D decoupling and induction on scales are the two adapters between these interfaces.",
+            "quality_reason": "The source explicitly contrasts the target anisotropic linear moment with the theorem's bilinear ball estimate and names the two later repairs. No material unsupported claim; periodicity, planar decoupling, and induction are announced in this span. The 'interfaces/adapters' language is stylistic but maps exactly to the two stated mismatches and repairs.",
+            "source_support": "The target mean value is written as an average of the twelfth power of a sum along Phi(t)=(t,t^2,t^(3/2),t^(1/2)) over an anisotropic region. Theorem 1 yields instead a bilinear estimate on balls of radius N^2. The source identifies smaller-domain control and conversion to a linear estimate as the two remaining tasks.",
+            "speculation_status": "This span is a roadmap, not the execution of either repair. Treating the bilinear ball estimate as the desired A6 result would skip both substantive gaps. The domain descriptions and logical gaps are explicit; exact displayed powers remain formula-sensitive. Calling this a two-obstruction roadmap is a direct and useful conceptual compression. This boundary is intentionally a roadmap and contains no execution of either repair; exact powers remain OCR-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The residual functions satisfy the required Wronskian-type condition after normalization.",
+          "line_end": 905,
+          "line_start": 803,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The system of equations and Taylor coefficients are strongly formula-dependent and should be checked in the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the sharp twelfth-moment bound, interprets it as a system of moment constraints, subtracts the linear/quadratic parts of fractional powers, and applies the prior decoupling estimate to the residual curve.",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A6 becomes a lattice solution count normalized to a nondegenerate curve",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u07.txt",
+          "unit_bytes": 5206,
+          "unit_id": "bourgain2016_depth_u07",
+          "unit_sha256": "e0a4adc75f225b594329742a7e08bf4667e79dddc8786599b24c3cec9fa16b53",
+          "unit_type": "mean-value-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Moment constraints are not just a counting interpretation; they actively quotient out low-order Taylor data. This exposes the genuinely curved residual coordinates that decoupling can control.",
+            "nonparaphrase_operation": "Fourier orthogonality bridges the integral moment and a system of lattice constraints. Taylor normalization then bridges fractional-power phases to the nondegenerate model curve from the previous theorem.",
+            "quality_reason": "The source states the N^(6+epsilon) twelfth moment, converts a bilinear moment to exact and approximate constraints, cancels linear/quadratic Taylor terms, and applies the preceding curve estimate to residual functions. No material unsupported claim; the analysis does not invent the exact degraded tolerances or coefficients. 'Exposes genuinely curved residual coordinates' is interpretive, but it is tied to the asserted condition (2.11).",
+            "source_support": "Theorem 2 states a twelfth-moment bound of order N^(6+epsilon) for the four-coordinate exponential sum. On two separated subintervals the bilinear moment counts twelve-tuples satisfying two exact equations and two approximate fractional-power relations. Taylor expansion of (N_0+m)^(3/2) and (N_0+m)^(1/2), followed by cancellation using the exact equations, produces residual functions phi_3 and phi_4 satisfying the earlier curve conditions, to which the anisotropic estimate applies.",
+            "speculation_status": "The argument needs intervals separated on their own scale and the residual Wronskian condition. The extracted system and coefficients are formula-sensitive, so only the cancellation mechanism, not exact numerical normalization, is secure here. The theorem and proof route are supported, but exact equation tolerances and Taylor coefficients must be checked in the PDF. Interpreting the exact constraints as quotienting out low-order Taylor data is a strong but faithful conceptual inference. The equation system and Taylor expansions are formula-sensitive; coefficient-level reuse requires the PDF."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This repairs the second gap identified before Theorem 1's proof.",
+          "line_end": 1002,
+          "line_start": 910,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula powers are OCR-risk; the recursive decomposition is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses decreasing rearrangement to split dominant single blocks from separated pairs, bounds every bilinear contribution, and iterates over interval scales until the bootstrap b(N) is essentially constant.",
+          "source_id": "openalex_w1592212038",
+          "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Separated bilinear control closes the linear mean value by recursive interval decomposition",
+          "unit_artifact_relpath": "depth/units/bourgain2016_depth_u08.txt",
+          "unit_bytes": 6100,
+          "unit_id": "bourgain2016_depth_u08",
+          "unit_sha256": "90b2f440fecaabd85317b345cfdd6b2055f2d79916db592ad0962b9a6e3b20aa",
+          "unit_type": "bilinear-to-linear-induction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bourgain2016_depth_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The recursion converts local concentration into a smaller copy of the original problem and transverse interaction into a solved bilinear problem. This is a proof-by-dichotomy between structure and separation.",
+            "nonparaphrase_operation": "Interval trees and decreasing rearrangement are the bridge from a linear sum to separated bilinear pairs. The scale-normalized constant b(N) makes the recursive contraction visible.",
+            "quality_reason": "The source defines b(N), uses a pointwise decreasing-rearrangement split, bounds separated bilinear terms, recursively partitions dominant terms, derives a contraction, and states the A6 corollary. No material unsupported claim; the analysis preserves the need for repeated recursion. 'Interval trees' is not source terminology but accurately names the recursive nested partitions.",
+            "source_support": "Writing b(N)N^6 for the target twelfth moment, the proof partitions [0,N] into a short initial interval and K comparable blocks. A pointwise rearrangement inequality decomposes each block's twelfth power into dominant subblock terms and products from separated subblocks. The latter are bounded by the prior bilinear estimate, while the former are recursively partitioned; summing scales yields a contraction for b(N) plus N^epsilon and hence b(N)<<N^epsilon. Corollary 3 gives the corresponding A6 bound.",
+            "speculation_status": "The bilinear estimate applies only to sufficiently separated pairs; adjacent or dominant pieces must remain in the recursive branch. Stopping after one decomposition would not control repeated concentration. The induction mechanism is prose-supported; OCR-sensitive constants and powers in the contraction should be verified before quantitative reuse. The structure-versus-separation dichotomy is a reasonable summary of the two branches. Constants and powers in the contraction are OCR-sensitive; the proof architecture is explicit."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2949c43663d08590ea31efc65c03b5eb83e0d14a4292f967e1664f6b088747b5",
+        "dossier_sha256": "7bb0ac6548f158698173fe02258bc77b1cbe17d1f549aebdca6a33c5fb0f0c8d"
+      }
+    }
+  ]
+}

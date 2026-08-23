@@ -1,0 +1,1145 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1980950385_b5ccf3a1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1980950385",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This refinement of the carried theorem anchor ends where the paper turns from historical shapes to the explicit zeta bound used as input.",
+      "line_end": 118,
+      "line_start": 70,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact displayed region exponents and constants depend on formulas, but the comparison among region shapes is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source organizes the research trajectory by increasingly strong boundary shapes, distinguishes explicit constants from asymptotic existence, and identifies exponential-sum and Vinogradov-Korobov estimates as the mechanism behind the widest form.",
+      "source_id": "openalex_w1980950385",
+      "source_normalized_sha256": "748239d847c5dfeee0017f160f0b794f845a1f7c3b34548e046527f13d5e1fde",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Successive widening of zero-free regions and the exponential-sum route",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1980950385_u06.txt",
+      "unit_bytes": 2567,
+      "unit_id": "full_openalex_w1980950385_u06",
+      "unit_sha256": "b52af574382ef98eb0186529b352edc1518499fbdc581e2d2efb4864461f959f",
+      "unit_type": "historical-change-and-method motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1980950385_u06.txt",
+      "source": {
+        "source_id": "openalex_w1980950385",
+        "title": "An Explicit Zero-Free Region for the Riemann Zeta-Function",
+        "authors": [
+          "Yuanyou Furui Cheng"
+        ],
+        "year": 2000,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 62,
+          "line_end": 69,
+          "text": "\n136                                  Y. CHENG\n\n\n\nn cancel with the so-called trivial zeros of the Riemann zeta-function,\nwhich are s = −2n for all positive integers n. For reference, one may\nsee [7, 9, 12, 16] or [21].\n",
+          "sha256": "4741f37cc1497bc44cffc07069f599ba35cce33838c74932e76ed86a0a1416fc"
+        },
+        "after": {
+          "line_start": 119,
+          "line_end": 126,
+          "text": "\n Lemma 1. For σ ≥ (1/2) and t ≥ 2, we have\n(4)                      |ζ(s)| ≤ AtB(σ) log2/3 t,\nwhere A is 175 and\n (a) B(σ) = 46(1 − σ)3/2 if σ ≤ 1;\n (b) B(σ) = 0 if σ > 1.\n\n  The best known upper bound for the Riemann zeta-function in the\n",
+          "sha256": "f4ddf577ee530354040c636cb41a6435664cdd7150979ee9936f3d68fc9dff58"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c945471ed064f2a48512247ad37a4cf0062b4ff9ac1c2640bd6fdff277c67aa0",
+        "dossier_sha256": "f7a29aecca58acaf5534b28c51cbe217460bc31c2ce6c1ce1593ce733d562314",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and theorem",
+            "line_end": 140,
+            "line_start": 23,
+            "mathematical_role": "Defines and analytically continues zeta, situates successive zero-free-region shapes, states the explicit Vinogradov-Korobov input bound, and records the main theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 118,
+          "line_start": 70,
+          "title": "Successive widening of zero-free regions and the exponential-sum route",
+          "unit_id": "full_openalex_w1980950385_u06",
+          "unit_type": "historical-change-and-method motivation",
+          "why_material": "The source organizes the research trajectory by increasingly strong boundary shapes, distinguishes explicit constants from asymptotic existence, and identifies exponential-sum and Vinogradov-Korobov estimates as the mechanism behind the widest form."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This refinement of the carried theorem anchor ends where the paper turns from historical shapes to the explicit zeta bound used as input.",
+          "representation_dependency": "Exact displayed region exponents and constants depend on formulas, but the comparison among region shapes is recoverable from prose.",
+          "unit_id": "full_openalex_w1980950385_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 69,
+            "line_start": 23,
+            "title": "Dirichlet series, analytic continuation, functional equation, and trivial-zero cancellation",
+            "unit_id": "full_openalex_w1980950385_u05",
+            "unit_type": "definition-and-representation change",
+            "why_material": "This span contrasts the absolutely convergent half-plane representation with the global meromorphic object and explains how gamma poles correspond to the pole and trivial zeros, establishing which zeros the later region concerns."
+          },
+          {
+            "line_end": 130,
+            "line_start": 101,
+            "title": "Explicit Vinogradov-Korobov growth bound as the zero-free input",
+            "unit_id": "full_openalex_w1980950385_u07",
+            "unit_type": "method-input-and-explicitness tradeoff",
+            "why_material": "The lemma packages the analytic input as a growth exponent depending on distance from the line one and explicitly distinguishes a weaker fully numerical bound from a stronger bound with an unavailable constant."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1980950385_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1980950385_u06",
+          "spontaneous_reading": "The passage organizes progress by the geometry of successively wider forbidden regions and identifies the upstream change that enabled the widest scale: exponential-sum estimates feeding the Vinogradov-Korobov zeta bound. It also keeps asymptotic shape separate from explicit numerical constants."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1980950385_u06",
+          "source_grounded_mathematics": "The source surveys nonvanishing first on and to the right of one, then regions with widths of order inverse log, log-log over log, and finally inverse log to the two-thirds times log-log to the one-third. It attributes the latter developments to upper bounds obtained through exponential-sum and Vinogradov-Korobov methods.",
+          "conceptual_reading": "The changing boundary shape serves as a performance invariant: a stronger upstream growth estimate permits a larger zero-free neighborhood. Explicit constants and asymptotic existence are independent proof burdens rather than interchangeable versions of one result.",
+          "representation_or_bridge": "The bridge is the methodological chain from exponential-sum control to a zeta growth envelope and then to geometric exclusion of zeros near the line one.",
+          "boundary_or_failure": "This is a historical and motivational comparison, not a derivation of any cited region. Exact exponents, constants, thresholds, and bibliographic claims are formula- or source-dependent.",
+          "uncertainty": "The comparative mechanism is explicit in the prose; quantitative details should be scan-checked and the cited results were not independently verified in this packet."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1980950385_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately distinguishes the successive zero-free boundary shapes and the difference between asymptotic constants and fully numerical results.",
+          "The span separately attributes Littlewood's region to an exponential-sum upper bound and the widest displayed form to a zeta upper bound derived by the Vinogradov-Korobov method."
+        ],
+        "inference": [
+          "Reading boundary width as a comparative performance measure and treating explicitness as a separate proof burden are plausible conceptual interpretations."
+        ],
+        "unsupported_or_imported": [
+          "The claimed single chain from exponential-sum estimates into the Vinogradov-Korobov zeta envelope and then into the widest region is not stated in this span; the passage presents the Littlewood and Vinogradov-Korobov attributions separately.",
+          "The assertion that a stronger upstream growth estimate itself permits a larger neighborhood is plausible but not demonstrated by this historical survey."
+        ],
+        "paraphrase_or_style_risk": [
+          "Performance invariant is abstract template language unless tied explicitly to the compared boundary formulas."
+        ],
+        "context_or_ocr_risk": [
+          "The exact exponents, constants, thresholds, and inequality signs remain formula-sensitive, as the candidate notes."
+        ],
+        "missed_mechanism": [
+          "The analysis should preserve the distinction between the exponential-sum basis stated for Littlewood's result and the Vinogradov-Korobov zeta bound stated for the widest form."
+        ],
+        "revision_instructions": [
+          "Separate the two historical method attributions and remove the unsupported direct exponential-sum-to-Vinogradov-Korobov chain.",
+          "Present the growth-bound-to-wider-region relation as a provisional inference rather than as a source-stated causal result."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlap with the historical unit is necessary because the widest-region form, the input lemma, and the explicit-versus-inexplicit comparison form one coherent methodological decision.",
+      "line_end": 130,
+      "line_start": 101,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The piecewise exponent and numerical constants are formula-dependent but legible enough for conceptual use; verify against scan for quantitative use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The lemma packages the analytic input as a growth exponent depending on distance from the line one and explicitly distinguishes a weaker fully numerical bound from a stronger bound with an unavailable constant.",
+      "source_id": "openalex_w1980950385",
+      "source_normalized_sha256": "748239d847c5dfeee0017f160f0b794f845a1f7c3b34548e046527f13d5e1fde",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit Vinogradov-Korobov growth bound as the zero-free input",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1980950385_u07.txt",
+      "unit_bytes": 1221,
+      "unit_id": "full_openalex_w1980950385_u07",
+      "unit_sha256": "3d7af73e6ae097877c3d244f92867ddc8f5363815e8440d787918fcc8f1b4b28",
+      "unit_type": "method-input-and-explicitness tradeoff",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1980950385_u07.txt",
+      "source": {
+        "source_id": "openalex_w1980950385",
+        "title": "An Explicit Zero-Free Region for the Riemann Zeta-Function",
+        "authors": [
+          "Yuanyou Furui Cheng"
+        ],
+        "year": 2000,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 93,
+          "line_end": 100,
+          "text": "                                  log log t\n                       σ >1−A               , t ≥ t0 ,\n                                    log t\nwhere A and t0 are positive constants. This result was based on an\nupper bound on exponential sums, see [2] or [27]. An explicit zero-\nfree region has useful applications in number theory. For reference,\none may see the above-mentioned paper of Rosser, that of Rosser and\nSchoenfeld, or [5].\n",
+          "sha256": "2d551332dd4991164e8d5f4695a16b4fb9eaeba2172a48d43d77b172dc8d35c9"
+        },
+        "after": {
+          "line_start": 131,
+          "line_end": 138,
+          "text": "  The purpose of this paper is to give a zero-free region in the form\nof (3) explicitly. Like the results in [19, 18, 20] and [5], this explicit\nzero-free region can be used to obtain explicit results concerning the\ndistribution of prime numbers, see [4]. The main result in this paper\nis as follows:\n\n Theorem. The Riemann zeta-function does not vanish in the region\n       σ ≥ 1 − 0.00101 log−2/3 |t|(log log |t|)−1/3   and   |t| ≥ 3.\n",
+          "sha256": "03609938dd43820a5deb5643e1db4f67b75e725c73ba41ededa2ef67c89cf7d1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c945471ed064f2a48512247ad37a4cf0062b4ff9ac1c2640bd6fdff277c67aa0",
+        "dossier_sha256": "f7a29aecca58acaf5534b28c51cbe217460bc31c2ce6c1ce1593ce733d562314",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and theorem",
+            "line_end": 140,
+            "line_start": 23,
+            "mathematical_role": "Defines and analytically continues zeta, situates successive zero-free-region shapes, states the explicit Vinogradov-Korobov input bound, and records the main theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 130,
+          "line_start": 101,
+          "title": "Explicit Vinogradov-Korobov growth bound as the zero-free input",
+          "unit_id": "full_openalex_w1980950385_u07",
+          "unit_type": "method-input-and-explicitness tradeoff",
+          "why_material": "The lemma packages the analytic input as a growth exponent depending on distance from the line one and explicitly distinguishes a weaker fully numerical bound from a stronger bound with an unavailable constant."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlap with the historical unit is necessary because the widest-region form, the input lemma, and the explicit-versus-inexplicit comparison form one coherent methodological decision.",
+          "representation_dependency": "The piecewise exponent and numerical constants are formula-dependent but legible enough for conceptual use; verify against scan for quantitative use.",
+          "unit_id": "full_openalex_w1980950385_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 118,
+            "line_start": 70,
+            "title": "Successive widening of zero-free regions and the exponential-sum route",
+            "unit_id": "full_openalex_w1980950385_u06",
+            "unit_type": "historical-change-and-method motivation",
+            "why_material": "The source organizes the research trajectory by increasingly strong boundary shapes, distinguishes explicit constants from asymptotic existence, and identifies exponential-sum and Vinogradov-Korobov estimates as the mechanism behind the widest form."
+          },
+          {
+            "line_end": 139,
+            "line_start": 131,
+            "title": "Target explicit zero-free region",
+            "unit_id": "full_openalex_w1980950385_u08",
+            "unit_type": "theorem statement",
+            "why_material": "This compact span states the exact output against which all subsequent estimates and parameter choices are organized."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A zeta growth bound on the left portion of a tuned circle, paired with an Euler-product lower bound on the right, controls a boundary integral whose interior-zero term yields an explicit reciprocal-distance penalty.",
+            "limit": "The result is conditional on the specific circle identity, zero geometry, and explicit growth input used here; it is not a general claim about arbitrary analytic functions without those hypotheses.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1980950385_u07",
+              "full_openalex_w1980950385_u13",
+              "full_openalex_w1980950385_u14",
+              "full_openalex_w1980950385_u15",
+              "full_openalex_w1980950385_u16",
+              "full_openalex_w1980950385_u17"
+            ],
+            "title": "Growth control becomes geometric repulsion of zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1980950385_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1980950385_u07",
+          "spontaneous_reading": "Lemma 1 compresses the Vinogradov-Korobov input into a reusable growth envelope whose exponent depends on distance from the line one. The operative tradeoff is that a slightly weaker bound with all constants explicit is usable downstream, whereas a stronger exponent coefficient with an inexplicit prefactor is not."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1980950385_u07",
+          "source_grounded_mathematics": "For real part at least one half and height at least two, the source gives an upper bound for the modulus of zeta with explicit prefactor 175 and a piecewise exponent: 46 times one minus the real part to the three-halves on the left of one, and zero to the right. It contrasts this with a reported coefficient 18.8 whose prefactor is inexplicit.",
+          "conceptual_reading": "The lemma is a modular interface: it hides the exponential-sum derivation but preserves precisely the dependence needed by the circle argument. Full explicitness is a compositional requirement because every later constant must remain numerically traceable.",
+          "representation_or_bridge": "The piecewise exponent function turns horizontal distance from one into vertical growth cost, bridging the Vinogradov-Korobov estimate to later boundary-integral control.",
+          "boundary_or_failure": "The unit does not prove the growth bound, and the sharper reported alternative cannot support a fully explicit conclusion because one constant is unavailable. Quantitative use depends on the exact displayed exponents.",
+          "uncertainty": "The explicit-versus-inexplicit distinction is clear; the bound's typesetting and numerical constants should still be verified against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1980950385_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives the explicit bound with prefactor 175, the piecewise exponent coefficient 46 to the left of one and zero to the right, and contrasts it with the reported coefficient 18.8 having an inexplicit prefactor.",
+          "The candidate correctly identifies complete explicitness as necessary for the paper's application and states that the lemma is not proved here."
+        ],
+        "inference": [
+          "Treating the lemma as a reusable growth-envelope interface and the exponent as a vertical-growth cost depending on horizontal distance are grounded conceptual readings."
+        ],
+        "unsupported_or_imported": [
+          "The span names the Vinogradov-Korobov method but does not say that this lemma hides an exponential-sum derivation.",
+          "References to the later circle argument and boundary-integral control import a mechanism not present in the exact span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Modular interface is useful here because the candidate identifies the preserved parameter dependence and explicitness burden rather than merely restating the lemma."
+        ],
+        "context_or_ocr_risk": [
+          "The piecewise exponent, powers of height and logarithm, and numerical constants require scan verification; the candidate records that risk."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the exponential-sum and circle-specific claims with the source-bounded statement that the explicit growth estimate is required for the paper's downstream application.",
+          "Keep the explicit-versus-inexplicit compositional point and the precise domain restrictions."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit relies only on the Section 2 zeta sandwich and retains the numerical-estimate justification rather than just the final inequality.",
+      "line_end": 184,
+      "line_start": 160,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several integral and exponent fragments are OCR-damaged; the derivation is prose-recoverable, while the 1.001 certification needs formula-level verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source derives an explicit bound for the derivative by another sum-integral comparison and divides by the preceding lower bound for zeta, yielding the pole-like logarithmic-derivative control used in the trigonometric combination.",
+      "source_id": "openalex_w1980950385",
+      "source_normalized_sha256": "748239d847c5dfeee0017f160f0b794f845a1f7c3b34548e046527f13d5e1fde",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Termwise differentiation and an explicit real-axis logarithmic-derivative bound",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1980950385_u10.txt",
+      "unit_bytes": 1229,
+      "unit_id": "full_openalex_w1980950385_u10",
+      "unit_sha256": "9e8a257ffacf0c0c3ff04be3f76341ad0274fa6d4db98e9739f45af72a5310bb",
+      "unit_type": "derivative estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1980950385_u10.txt",
+      "source": {
+        "source_id": "openalex_w1980950385",
+        "title": "An Explicit Zero-Free Region for the Riemann Zeta-Function",
+        "authors": [
+          "Yuanyou Furui Cheng"
+        ],
+        "year": 2000,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 152,
+          "line_end": 159,
+          "text": "                    σ−1              σ−1\n\n<!-- source-page: 4 -->\n\n138                                 Y. CHENG\n\n\n\n",
+          "sha256": "9a6f440b80001b9a34cae2e08d230cbac34c6d4211c671ce3e837ccff40b41d4"
+        },
+        "after": {
+          "line_start": 185,
+          "line_end": 192,
+          "text": "\n The following identity is called Euler’s product identity for the\nRiemann zeta-function. For σ > 1, we have\n\n                                    \u0003\u0004   1\n                                           \u0005−1\n(8)                       ζ(s) =      1− s     ,\n                                    p\n",
+          "sha256": "e480d1a09b46be3a4cb760f26d390fc8410d0656c16bf8deb56975850db03cde"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c945471ed064f2a48512247ad37a4cf0062b4ff9ac1c2640bd6fdff277c67aa0",
+        "dossier_sha256": "f7a29aecca58acaf5534b28c51cbe217460bc31c2ce6c1ce1593ce733d562314",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2: estimates on zeta and its logarithmic derivative",
+            "line_end": 284,
+            "line_start": 141,
+            "mathematical_role": "Builds real-axis size and derivative estimates, obtains nonvanishing from the Euler product, and rewrites the logarithmic derivative as the von Mangoldt Dirichlet series used to sense zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 184,
+          "line_start": 160,
+          "title": "Termwise differentiation and an explicit real-axis logarithmic-derivative bound",
+          "unit_id": "full_openalex_w1980950385_u10",
+          "unit_type": "derivative estimate",
+          "why_material": "The source derives an explicit bound for the derivative by another sum-integral comparison and divides by the preceding lower bound for zeta, yielding the pole-like logarithmic-derivative control used in the trigonometric combination."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit relies only on the Section 2 zeta sandwich and retains the numerical-estimate justification rather than just the final inequality.",
+          "representation_dependency": "Several integral and exponent fragments are OCR-damaged; the derivation is prose-recoverable, while the 1.001 certification needs formula-level verification.",
+          "unit_id": "full_openalex_w1980950385_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 152,
+            "line_start": 141,
+            "title": "Integral sandwich for zeta on the real axis",
+            "unit_id": "full_openalex_w1980950385_u09",
+            "unit_type": "elementary comparison estimate",
+            "why_material": "Monotonicity converts a series into upper and lower integral comparisons, exposing the simple pole-scale behavior needed later to bound zeta away from zero and normalize its derivative."
+          },
+          {
+            "line_end": 223,
+            "line_start": 186,
+            "title": "Euler product as unique factorization and a quantitative nonvanishing bound",
+            "unit_id": "full_openalex_w1980950385_u11",
+            "unit_type": "factorization-to-nonvanishing bridge",
+            "why_material": "The Euler product is interpreted as analytic unique factorization, then bounded through absolute values to prove both nonvanishing and a lower bound in the half-plane to the right of one; both outputs later control the circle center and right semicircle."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The real-axis logarithmic derivative contributes controlled pole-scale pressure, positivity combines it with bounded harmonic-height terms, and retaining one zero-distance term forces the hypothetical zero a quantified distance left of one after optimizing the center displacement.",
+            "limit": "The numerical quality is solver-free but parameter- and constant-specific; OCR damage prevents trusting the exact optimized radical without scan comparison.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1980950385_u10",
+              "full_openalex_w1980950385_u17",
+              "full_openalex_w1980950385_u18",
+              "full_openalex_w1980950385_u19",
+              "full_openalex_w1980950385_u20"
+            ],
+            "title": "Zero-free width emerges from coupling local pole pressure against one selected zero"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1980950385_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1980950385_u10",
+          "spontaneous_reading": "Termwise differentiation and a second integral comparison first produce a double-pole-scale bound for the derivative; division by the preceding lower bound for zeta converts it into a simple-pole-scale logarithmic derivative. That normalized quantity is the reusable pressure term needed by the final weighted inequality."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1980950385_u10",
+          "source_grounded_mathematics": "The source differentiates the absolutely convergent Dirichlet series to express the derivative as a negative weighted sum of log n. Integral comparison plus finite corrections yields an explicit 1.001 bound over sigma minus one squared, and the earlier lower bound for zeta gives minus zeta prime over zeta less than 1.001 over sigma minus one for one below sigma below 1.05.",
+          "conceptual_reading": "Logarithmic differentiation normalizes absolute growth by function size and changes a derivative estimate into a pole-like additive quantity. This is the form that can be combined across several arguments without carrying zeta's scale separately.",
+          "representation_or_bridge": "The bridge combines termwise differentiation, a sum-integral estimate, and division by the real-axis zeta lower bound.",
+          "boundary_or_failure": "The explicit final bound is restricted to the real interval between one and 1.05. Several integral and exponent fragments are OCR-damaged, so the 1.001 certification is not secure from this text alone.",
+          "uncertainty": "The derivation architecture is clear; the finite correction calculation, exact signs, and numerical constant need formula-level scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1980950385_u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly follows termwise differentiation, the sum-integral comparison giving a double-pole-scale derivative bound, and division by the earlier lower bound for zeta to obtain the simple-pole logarithmic-derivative estimate.",
+          "It retains the interval one less than sigma less than 1.05 and warns that the 1.001 computation and exact signs are OCR-sensitive."
+        ],
+        "inference": [
+          "Reading logarithmic differentiation as normalization by function size and as producing an additive pole-like quantity is a well-grounded conceptual move."
+        ],
+        "unsupported_or_imported": [
+          "Calling the result the pressure term needed by the final weighted inequality and asserting combination across several arguments imports downstream use not stated in this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Pressure term is metaphorical but has mathematical content when limited to the displayed simple-pole bound."
+        ],
+        "context_or_ocr_risk": [
+          "Several integral, exponent, and equality fragments are damaged, so the finite correction and 1.001 certification cannot be independently recovered from this artifact."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the final-weighted-inequality and multi-argument claims, or label them explicitly as unverified downstream context.",
+          "Retain the concrete normalization chain and its real-interval restriction."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the declared later-use statement, making the role of the lower bound and nonvanishing explicit.",
+      "line_end": 223,
+      "line_start": 186,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Product glyphs are degraded but the product, comparison to zeta of the real part, and resulting bound are readable; scan-check exact inequality signs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Euler product is interpreted as analytic unique factorization, then bounded through absolute values to prove both nonvanishing and a lower bound in the half-plane to the right of one; both outputs later control the circle center and right semicircle.",
+      "source_id": "openalex_w1980950385",
+      "source_normalized_sha256": "748239d847c5dfeee0017f160f0b794f845a1f7c3b34548e046527f13d5e1fde",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler product as unique factorization and a quantitative nonvanishing bound",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1980950385_u11.txt",
+      "unit_bytes": 1389,
+      "unit_id": "full_openalex_w1980950385_u11",
+      "unit_sha256": "ee699e45bcb6bd1500c930f6fcec0d6dd3e9537c48aa66804f70e2817f0cb269",
+      "unit_type": "factorization-to-nonvanishing bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1980950385_u11.txt",
+      "source": {
+        "source_id": "openalex_w1980950385",
+        "title": "An Explicit Zero-Free Region for the Riemann Zeta-Function",
+        "authors": [
+          "Yuanyou Furui Cheng"
+        ],
+        "year": 2000,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 178,
+          "line_end": 185,
+          "text": "In the last step, we have used the fact 3 u−σ log u du = (1 =\nσ log 3 − log 3)(σ − 1)−2 31−σ and 3−σ+1 (1 + σ log 3 − log 3) + (σ − 1)2 ×\n(2−σ log 2 + 3−σ log 3) ≤ 1.001 for 1 < σ < 1.05. Recalling (5), we\nobtain\n                      ζ \u0003 (σ)   1.001\n(7)               −           <            for 1 < σ < 1.05.\n                      ζ(σ)      σ−1\n\n",
+          "sha256": "a7134e3e4f7e699ce8db05149cbb0ad465e44dd874d44444ea4be9948c0c4079"
+        },
+        "after": {
+          "line_start": 224,
+          "line_end": 231,
+          "text": "  We may take logarithms on both sides of (8), in view of convergences\nfor the resulting series. It gives us\n                             \u0001       \u0004     \u0005\n                                         1\n(11)            log ζ(s) = −     log 1 − s   for σ > 1.\n                               p\n                                        p\n\n",
+          "sha256": "f619850717c156099a7a0278b8258bf077a77a6f105b0670f2882c3b57e28a9e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c945471ed064f2a48512247ad37a4cf0062b4ff9ac1c2640bd6fdff277c67aa0",
+        "dossier_sha256": "f7a29aecca58acaf5534b28c51cbe217460bc31c2ce6c1ce1593ce733d562314",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2: estimates on zeta and its logarithmic derivative",
+            "line_end": 284,
+            "line_start": 141,
+            "mathematical_role": "Builds real-axis size and derivative estimates, obtains nonvanishing from the Euler product, and rewrites the logarithmic derivative as the von Mangoldt Dirichlet series used to sense zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 223,
+          "line_start": 186,
+          "title": "Euler product as unique factorization and a quantitative nonvanishing bound",
+          "unit_id": "full_openalex_w1980950385_u11",
+          "unit_type": "factorization-to-nonvanishing bridge",
+          "why_material": "The Euler product is interpreted as analytic unique factorization, then bounded through absolute values to prove both nonvanishing and a lower bound in the half-plane to the right of one; both outputs later control the circle center and right semicircle."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the declared later-use statement, making the role of the lower bound and nonvanishing explicit.",
+          "representation_dependency": "Product glyphs are degraded but the product, comparison to zeta of the real part, and resulting bound are readable; scan-check exact inequality signs.",
+          "unit_id": "full_openalex_w1980950385_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 184,
+            "line_start": 160,
+            "title": "Termwise differentiation and an explicit real-axis logarithmic-derivative bound",
+            "unit_id": "full_openalex_w1980950385_u10",
+            "unit_type": "derivative estimate",
+            "why_material": "The source derives an explicit bound for the derivative by another sum-integral comparison and divides by the preceding lower bound for zeta, yielding the pole-like logarithmic-derivative control used in the trigonometric combination."
+          },
+          {
+            "line_end": 272,
+            "line_start": 224,
+            "title": "Euler product to von Mangoldt Dirichlet series for the logarithmic derivative",
+            "unit_id": "full_openalex_w1980950385_u12",
+            "unit_type": "representation change",
+            "why_material": "Taking a logarithm, differentiating, expanding prime powers, and collecting them with the von Mangoldt function turns multiplicative structure into a positive-coefficient series whose real parts can later be coupled by a nonnegative trigonometric polynomial."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Unique factorization supplies the Euler product, logarithmic differentiation turns it into positive prime-power weights, and a factored nonnegative trigonometric polynomial then converts pointwise positivity into a multi-height analytic inequality.",
+            "limit": "This synthesis is source-internal and depends on the half-plane of absolute convergence; exact extracted coefficient and series formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1980950385_u11",
+              "full_openalex_w1980950385_u12",
+              "full_openalex_w1980950385_u18"
+            ],
+            "title": "Multiplicative structure becomes a positivity instrument"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1980950385_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1980950385_u11",
+          "spontaneous_reading": "Unique factorization is recoded as an Euler product, and absolute-value comparison of its reciprocal turns multiplicative structure into both nonvanishing and a quantitative lower bound. The product is useful not merely as an identity but as a certificate that no factor can collectively create a zero in the half-plane of convergence."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1980950385_u11",
+          "source_grounded_mathematics": "For real part greater than one, the source states the Euler product over primes. Bounding the reciprocal modulus by a positive product and then by zeta of the real part gives modulus of zeta greater than sigma minus one over sigma, hence zeta is nonzero there.",
+          "conceptual_reading": "The Euler product transfers unique factorization into analytic structure. Taking absolute values forgets phase and individual prime behavior, but preserves enough positivity to certify nonvanishing and control the circle's right side.",
+          "representation_or_bridge": "The prime-factor product, followed by comparison with the real Dirichlet series and its integral bound, bridges arithmetic factorization to analytic nonvanishing.",
+          "boundary_or_failure": "The argument relies on absolute convergence and therefore applies only to the half-plane right of one. Product glyphs and some inequality signs are degraded in extraction.",
+          "uncertainty": "The factorization-to-nonvanishing mechanism is explicit, but the exact displayed product and comparison signs should be checked against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1980950385_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the Euler product for real part greater than one, explicitly relates it to unique prime-power factorization, bounds the reciprocal modulus by zeta of the real part, and derives both a positive lower bound and nonvanishing.",
+          "The candidate correctly notes that absolute values discard phase while retaining enough positivity for the quantitative conclusion."
+        ],
+        "inference": [
+          "Describing the product as a bridge from arithmetic factorization to analytic nonvanishing is directly licensed by the source's own equivalence statement."
+        ],
+        "unsupported_or_imported": [
+          "Control of the circle's right side is not present in the exact span; the source says only that the two conclusions will be needed later.",
+          "The phrase that no factor can collectively create a zero risks suggesting factorwise nonzeroness alone proves an infinite product nonzero; the displayed reciprocal-modulus bound is the actual certificate."
+        ],
+        "paraphrase_or_style_risk": [
+          "The unique-factorization-to-analysis framing adds a concrete bridge and is not merely stylistic."
+        ],
+        "context_or_ocr_risk": [
+          "Product glyphs and inequality signs are degraded and should be scan-checked, as the candidate says."
+        ],
+        "missed_mechanism": [
+          "Nonvanishing should be attributed specifically to the uniform reciprocal bound, not merely to the appearance of nonzero Euler factors."
+        ],
+        "revision_instructions": [
+          "Replace the factor-collectivity wording with the explicit reciprocal-modulus comparison and remove the circle-specific later use.",
+          "Keep the half-plane restriction and the distinction between identity, lower bound, and nonvanishing conclusion."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The endpoint includes the naming of the arithmetic weight; lines 280-283 separately explain its role in estimating zeros.",
+      "line_end": 272,
+      "line_start": 224,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed double-sum layout is substantially scrambled, but the prose explicitly states prime-power summation, absolute convergence, the definition of Lambda, and equation (13); exact indexing needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Taking a logarithm, differentiating, expanding prime powers, and collecting them with the von Mangoldt function turns multiplicative structure into a positive-coefficient series whose real parts can later be coupled by a nonnegative trigonometric polynomial.",
+      "source_id": "openalex_w1980950385",
+      "source_normalized_sha256": "748239d847c5dfeee0017f160f0b794f845a1f7c3b34548e046527f13d5e1fde",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler product to von Mangoldt Dirichlet series for the logarithmic derivative",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1980950385_u12.txt",
+      "unit_bytes": 2202,
+      "unit_id": "full_openalex_w1980950385_u12",
+      "unit_sha256": "d657764478be253409dd3c62a907345ce7c82afab10906f2393a682b9ac393ca",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1980950385_u12.txt",
+      "source": {
+        "source_id": "openalex_w1980950385",
+        "title": "An Explicit Zero-Free Region for the Riemann Zeta-Function",
+        "authors": [
+          "Yuanyou Furui Cheng"
+        ],
+        "year": 2000,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 216,
+          "line_end": 223,
+          "text": "AN EXPLICIT ZERO-FREE REGION                      139\n\n\nThis gives\n\n(10)                        ζ(s) \u0003= 0 for σ > 1.\n\nBoth (9) and (10) shall be needed later in this paper.\n",
+          "sha256": "62c2872e6e3e9a54ac3ab24ec58a603f6e5bbbf53494d0220d9893a1431f4b47"
+        },
+        "after": {
+          "line_start": 273,
+          "line_end": 280,
+          "text": "\n<!-- source-page: 6 -->\n\n140                                Y. CHENG\n\n\n\n  It is this equation (13) which is used in the estimation on the zeros\n",
+          "sha256": "ba0ac8e60dd25987239df1f1924d2709472748c6f236c53695a041f749a931f5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c945471ed064f2a48512247ad37a4cf0062b4ff9ac1c2640bd6fdff277c67aa0",
+        "dossier_sha256": "f7a29aecca58acaf5534b28c51cbe217460bc31c2ce6c1ce1593ce733d562314",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2: estimates on zeta and its logarithmic derivative",
+            "line_end": 284,
+            "line_start": 141,
+            "mathematical_role": "Builds real-axis size and derivative estimates, obtains nonvanishing from the Euler product, and rewrites the logarithmic derivative as the von Mangoldt Dirichlet series used to sense zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 272,
+          "line_start": 224,
+          "title": "Euler product to von Mangoldt Dirichlet series for the logarithmic derivative",
+          "unit_id": "full_openalex_w1980950385_u12",
+          "unit_type": "representation change",
+          "why_material": "Taking a logarithm, differentiating, expanding prime powers, and collecting them with the von Mangoldt function turns multiplicative structure into a positive-coefficient series whose real parts can later be coupled by a nonnegative trigonometric polynomial."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The endpoint includes the naming of the arithmetic weight; lines 280-283 separately explain its role in estimating zeros.",
+          "representation_dependency": "The displayed double-sum layout is substantially scrambled, but the prose explicitly states prime-power summation, absolute convergence, the definition of Lambda, and equation (13); exact indexing needs scan verification.",
+          "unit_id": "full_openalex_w1980950385_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 223,
+            "line_start": 186,
+            "title": "Euler product as unique factorization and a quantitative nonvanishing bound",
+            "unit_id": "full_openalex_w1980950385_u11",
+            "unit_type": "factorization-to-nonvanishing bridge",
+            "why_material": "The Euler product is interpreted as analytic unique factorization, then bounded through absolute values to prove both nonvanishing and a lower bound in the half-plane to the right of one; both outputs later control the circle center and right semicircle."
+          },
+          {
+            "line_end": 340,
+            "line_start": 280,
+            "title": "Circle integral with signed interior-zero contributions",
+            "unit_id": "full_openalex_w1980950385_u13",
+            "unit_type": "circle-identity-and-zero-sign mechanism",
+            "why_material": "The source introduces the precise bridge from a boundary average of log magnitude to the logarithmic derivative at the center, then uses the left-half-plane location of interior zeros to discard or retain their contributions with a controlled sign and isolate a same-height zero."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Unique factorization supplies the Euler product, logarithmic differentiation turns it into positive prime-power weights, and a factored nonnegative trigonometric polynomial then converts pointwise positivity into a multi-height analytic inequality.",
+            "limit": "This synthesis is source-internal and depends on the half-plane of absolute convergence; exact extracted coefficient and series formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1980950385_u11",
+              "full_openalex_w1980950385_u12",
+              "full_openalex_w1980950385_u18"
+            ],
+            "title": "Multiplicative structure becomes a positivity instrument"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 284,
+              "line_start": 273,
+              "reason": "Page furniture plus the short bridge explaining that equation (13) connects zeta growth, logarithmic derivatives, and zeros; retained in context repair and u13."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1980950385_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1980950385_u12",
+          "spontaneous_reading": "Logarithmic differentiation linearizes the Euler factors, expansion into prime powers is then compressed by the von Mangoldt function, and the result is a positive-coefficient Dirichlet series. This is the decisive representation for later cosine filtering and positivity transfer."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1980950385_u12",
+          "source_grounded_mathematics": "In the half-plane right of one, the source takes a logarithm of the Euler product, differentiates term by term, expands each prime denominator into prime powers, and defines the von Mangoldt weight. It obtains minus zeta prime over zeta as the sum of Lambda of n over n to the s.",
+          "conceptual_reading": "The transformation converts multiplicative data into an additive weighted spectrum. It retains prime-power support and nonnegative weights while abstracting away the separate Euler factors, making harmonic combinations possible.",
+          "representation_or_bridge": "The chain Euler product to logarithm to derivative to prime-power double sum to von Mangoldt Dirichlet series is the bridge object used by the final trigonometric argument.",
+          "boundary_or_failure": "All rearrangements and differentiations are justified only in the half-plane of absolute convergence. The extracted double-sum layout is substantially scrambled, so exact indexing cannot be trusted without the scan.",
+          "uncertainty": "The prose fixes the prime-power collection and final representation; formula layout and termwise details remain text-layer sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1980950385_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately traces logarithm, termwise differentiation, geometric expansion over prime powers, and compression with the nonnegative von Mangoldt weight to the logarithmic-derivative Dirichlet series for real part greater than one.",
+          "It preserves the convergence restriction and explicitly warns that the double-sum indexing is scrambled."
+        ],
+        "inference": [
+          "Calling the transformation a linearization of multiplicative data into an additive weighted spectrum is well anchored to the Euler-product and prime-power formulas.",
+          "Nonnegative weights do make positivity-preserving combinations possible, but the particular combination is not given here."
+        ],
+        "unsupported_or_imported": [
+          "Cosine filtering and the final trigonometric argument are not present in the exact span; only a general later Section 4 use is mentioned.",
+          "The specific claim that this is the bridge used by the final harmonic argument therefore exceeds the frozen evidence boundary."
+        ],
+        "paraphrase_or_style_risk": [
+          "The representation-change description is substantive because it names every operation and the support and sign information preserved."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed double sum has severely scrambled layout and missing indices, so its exact reconstruction must not be trusted without the scan."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace cosine-filtering and final-argument specificity with the source-stated fact that a similar technique will be used in Section 4.",
+          "Keep the prime-power support, nonnegative weight, and absolute-convergence qualifications."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit is the quantitative compression step between the boundary split and the logarithmic-derivative corollaries.",
+      "line_end": 447,
+      "line_start": 411,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The formula defining C includes a likely stray OCR character and should not be used numerically without scan verification; its parameter dependence and common-scale compression are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Each component of the circle estimate is converted to the common scale L1^(2/3)L2^(1/3), allowing all analytic losses to be summarized in a single explicit constant C depending on the growth-bound and radius parameters.",
+      "source_id": "openalex_w1980950385",
+      "source_normalized_sha256": "748239d847c5dfeee0017f160f0b794f845a1f7c3b34548e046527f13d5e1fde",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Compressing boundary terms into one explicit log-power constant",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1980950385_u16.txt",
+      "unit_bytes": 1331,
+      "unit_id": "full_openalex_w1980950385_u16",
+      "unit_sha256": "6bb530a2ec24c1be9215422785bbdcbb2eca8e807233ed54f3859f0cb2a89e0e",
+      "unit_type": "asymptotic-scale compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1980950385_u16.txt",
+      "source": {
+        "source_id": "openalex_w1980950385",
+        "title": "An Explicit Zero-Free Region for the Riemann Zeta-Function",
+        "authors": [
+          "Yuanyou Furui Cheng"
+        ],
+        "year": 2000,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 403,
+          "line_end": 410,
+          "text": "          \b\n        1 2π                          2      1 1.438B 1/2\n(19) −         cos θ log |ζ(s)| dθ ≤     log +           r log t\n        πr 0                         πr      r      π\n                                     \u0004                          \u0005\n                                       4                          1\n                                   +     log log t+2 log A+0.714     .\n                                       3                          πr\n",
+          "sha256": "db5d9812f5f2493adba9c07346de566b98896bd36d95ae176586cf25044c12d4"
+        },
+        "after": {
+          "line_start": 448,
+          "line_end": 455,
+          "text": "Applying Corollaries 1 and 2 of Lemma 2, we get\n                             \u0004 \u0003      \u0005\n                              ζ (s0 )       2/3 1/3\n(21)                      −\u0007            ≤ CL1 L2 ;\n                              ζ(s0 )\n\nand if ρ0 = µ0 + it0 is a zero of ζ(s), then\n                   \u0004 \u0003      \u0005\n",
+          "sha256": "696f00095f191797ab5ca2f60c424ad2c39dc5370f9cd78e004026735944e2c2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c945471ed064f2a48512247ad37a4cf0062b4ff9ac1c2640bd6fdff277c67aa0",
+        "dossier_sha256": "f7a29aecca58acaf5534b28c51cbe217460bc31c2ce6c1ce1593ce733d562314",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3: analytic tool",
+            "line_end": 460,
+            "line_start": 285,
+            "mathematical_role": "Uses a circle identity and signed zero contributions, splits the boundary by half-plane, inserts lower and upper zeta bounds, and produces explicit logarithmic-derivative and zero-distance inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 447,
+          "line_start": 411,
+          "title": "Compressing boundary terms into one explicit log-power constant",
+          "unit_id": "full_openalex_w1980950385_u16",
+          "unit_type": "asymptotic-scale compression",
+          "why_material": "Each component of the circle estimate is converted to the common scale L1^(2/3)L2^(1/3), allowing all analytic losses to be summarized in a single explicit constant C depending on the growth-bound and radius parameters."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit is the quantitative compression step between the boundary split and the logarithmic-derivative corollaries.",
+          "representation_dependency": "The formula defining C includes a likely stray OCR character and should not be used numerically without scan verification; its parameter dependence and common-scale compression are clear.",
+          "unit_id": "full_openalex_w1980950385_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 410,
+            "line_start": 360,
+            "title": "Two semicircles use complementary lower and upper bounds for zeta",
+            "unit_id": "full_openalex_w1980950385_u15",
+            "unit_type": "boundary-decomposition estimate",
+            "why_material": "On the right semicircle the Euler-product lower bound controls negative log magnitude, while on the left the Vinogradov-Korobov upper bound controls positive log magnitude; cosine weighting and recombination produce a uniform circle integral estimate."
+          },
+          {
+            "line_end": 459,
+            "line_start": 448,
+            "title": "From the circle bound to logarithmic-derivative and selected-zero control",
+            "unit_id": "full_openalex_w1980950385_u17",
+            "unit_type": "zero-distance inequality",
+            "why_material": "Applying the two circle corollaries yields both a generic logarithmic-derivative bound and a strengthened bound containing the reciprocal horizontal distance to a zero at the center's height, which is exactly the term the final argument isolates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A zeta growth bound on the left portion of a tuned circle, paired with an Euler-product lower bound on the right, controls a boundary integral whose interior-zero term yields an explicit reciprocal-distance penalty.",
+            "limit": "The result is conditional on the specific circle identity, zero geometry, and explicit growth input used here; it is not a general claim about arbitrary analytic functions without those hypotheses.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1980950385_u07",
+              "full_openalex_w1980950385_u13",
+              "full_openalex_w1980950385_u14",
+              "full_openalex_w1980950385_u15",
+              "full_openalex_w1980950385_u16",
+              "full_openalex_w1980950385_u17"
+            ],
+            "title": "Growth control becomes geometric repulsion of zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1980950385_u16",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1980950385_u16",
+          "spontaneous_reading": "Several heterogeneous boundary losses are rescaled to the common factor L1 to the two-thirds times L2 to the one-third and compressed into one constant C. This preserves dependence on the growth and radius parameters while allowing the next stage to manipulate a single analytic budget."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1980950385_u16",
+          "source_grounded_mathematics": "Using the chosen radius, inequalities (19a) through (19c) separately bound the logarithmic, growth, and remaining boundary terms by the same log-power scale. Their sum gives the circle integral at most C times that scale, with C expressed in terms of A, B, and lambda.",
+          "conceptual_reading": "Common-scale normalization is an abstraction step: it forgets the later-irrelevant decomposition of losses but retains their parameter dependencies and total cost. That compression makes subsequent zero-distance algebra and optimization tractable.",
+          "representation_or_bridge": "Substituting the radius formula and applying elementary logarithmic comparisons bridge the detailed semicircle estimate to the single constant C.",
+          "boundary_or_failure": "The reduction assumes all earlier height and radius conditions. The displayed definition of C contains a likely stray OCR character, so it is unsafe for numerical recomputation from this extraction.",
+          "uncertainty": "The common-scale compression is clear; the exact terms and numerical value of C require comparison with the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1980950385_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The span separately converts the logarithmic, growth, and residual boundary terms to the common factor L1 to the two-thirds times L2 to the one-third, then sums them into a constant C depending on A, B, and lambda.",
+          "The candidate correctly identifies common-scale normalization and warns that the extracted formula for C has a stray OCR character."
+        ],
+        "inference": [
+          "Treating C as a compressed analytic cost retaining parameter dependence is a faithful abstraction of equations (19a) through (20)."
+        ],
+        "unsupported_or_imported": [
+          "Calling the decomposed losses later-irrelevant is stronger than the span establishes.",
+          "The specific claim that this compression makes subsequent zero-distance algebra and optimization tractable imports downstream steps outside the exact span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The abstraction language is useful because it identifies the exact common scale and retained parameters."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed definition of C is formula-unsafe and cannot support numerical recomputation without the scan."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove later-irrelevant and downstream zero-distance or optimization claims, or mark them as external context rather than span-supported mathematics.",
+          "Keep the explicit three-term-to-one-scale compression and parameter dependencies."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These inequalities are direct required inputs to Section 4 and are therefore also context repairs for the broad carried final-step unit.",
+      "line_end": 459,
+      "line_start": 448,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Real-part glyphs are corrupted, but the two inequality forms and the reciprocal zero-distance term are readable; check exact signs and parentheses against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying the two circle corollaries yields both a generic logarithmic-derivative bound and a strengthened bound containing the reciprocal horizontal distance to a zero at the center's height, which is exactly the term the final argument isolates.",
+      "source_id": "openalex_w1980950385",
+      "source_normalized_sha256": "748239d847c5dfeee0017f160f0b794f845a1f7c3b34548e046527f13d5e1fde",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From the circle bound to logarithmic-derivative and selected-zero control",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1980950385_u17.txt",
+      "unit_bytes": 505,
+      "unit_id": "full_openalex_w1980950385_u17",
+      "unit_sha256": "6a3eb9be68902145cf1f7f8d50af68ba6d17b30c0121126af84dc05be7e366b1",
+      "unit_type": "zero-distance inequality",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1980950385_u17.txt",
+      "source": {
+        "source_id": "openalex_w1980950385",
+        "title": "An Explicit Zero-Free Region for the Riemann Zeta-Function",
+        "authors": [
+          "Yuanyou Furui Cheng"
+        ],
+        "year": 2000,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 440,
+          "line_end": 447,
+          "text": "\nwhere\n\n    C = C(A, B, λ)\n            4 − 2 log λ 1.438Bλ1/2     4    32/3 (2 log A + 0.714)\n        =              +           d+     +                        .\n               3πλ           π        3πλ             πe2 λ\n\n",
+          "sha256": "2375acfc801d212318fab8fefe9945cbd0e20d6f159e62f28b107563c8ef5638"
+        },
+        "after": {
+          "line_start": 460,
+          "line_end": 467,
+          "text": "\n  4. The final step. We should have recourse to a trigonometric\ninequality. The inequality serves for the same purpose as 3 + 4 cos θ +\ncos(2θ) > 0, see [7]. We may choose diﬀerent ones from those in [3] and\n[10] to suboptimize the results. Let us use the following arbitrary form.\nLet a, b, c and d be positive numbers. Let α, β, γ, δ, η be determined\nby\n\n",
+          "sha256": "ed928dca8e8a989e50f5dafc0ca95c6fe8348926e4669ba64c211eefbd243577"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c945471ed064f2a48512247ad37a4cf0062b4ff9ac1c2640bd6fdff277c67aa0",
+        "dossier_sha256": "f7a29aecca58acaf5534b28c51cbe217460bc31c2ce6c1ce1593ce733d562314",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3: analytic tool",
+            "line_end": 460,
+            "line_start": 285,
+            "mathematical_role": "Uses a circle identity and signed zero contributions, splits the boundary by half-plane, inserts lower and upper zeta bounds, and produces explicit logarithmic-derivative and zero-distance inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 459,
+          "line_start": 448,
+          "title": "From the circle bound to logarithmic-derivative and selected-zero control",
+          "unit_id": "full_openalex_w1980950385_u17",
+          "unit_type": "zero-distance inequality",
+          "why_material": "Applying the two circle corollaries yields both a generic logarithmic-derivative bound and a strengthened bound containing the reciprocal horizontal distance to a zero at the center's height, which is exactly the term the final argument isolates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These inequalities are direct required inputs to Section 4 and are therefore also context repairs for the broad carried final-step unit.",
+          "representation_dependency": "Real-part glyphs are corrupted, but the two inequality forms and the reciprocal zero-distance term are readable; check exact signs and parentheses against the scan.",
+          "unit_id": "full_openalex_w1980950385_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 447,
+            "line_start": 411,
+            "title": "Compressing boundary terms into one explicit log-power constant",
+            "unit_id": "full_openalex_w1980950385_u16",
+            "unit_type": "asymptotic-scale compression",
+            "why_material": "Each component of the circle estimate is converted to the common scale L1^(2/3)L2^(1/3), allowing all analytic losses to be summarized in a single explicit constant C depending on the growth-bound and radius parameters."
+          },
+          {
+            "line_end": 511,
+            "line_start": 461,
+            "title": "Factored nonnegative trigonometric polynomial transferred through prime-power weights",
+            "unit_id": "full_openalex_w1980950385_u18",
+            "unit_type": "positivity-transfer construction",
+            "why_material": "A square-factor construction guarantees a nonnegative trigonometric polynomial. Substitution into the positive von Mangoldt expansion transports that positivity into a weighted inequality among real logarithmic derivatives at four harmonically related heights."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A zeta growth bound on the left portion of a tuned circle, paired with an Euler-product lower bound on the right, controls a boundary integral whose interior-zero term yields an explicit reciprocal-distance penalty.",
+            "limit": "The result is conditional on the specific circle identity, zero geometry, and explicit growth input used here; it is not a general claim about arbitrary analytic functions without those hypotheses.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1980950385_u07",
+              "full_openalex_w1980950385_u13",
+              "full_openalex_w1980950385_u14",
+              "full_openalex_w1980950385_u15",
+              "full_openalex_w1980950385_u16",
+              "full_openalex_w1980950385_u17"
+            ],
+            "title": "Growth control becomes geometric repulsion of zeros"
+          },
+          {
+            "claim": "The real-axis logarithmic derivative contributes controlled pole-scale pressure, positivity combines it with bounded harmonic-height terms, and retaining one zero-distance term forces the hypothetical zero a quantified distance left of one after optimizing the center displacement.",
+            "limit": "The numerical quality is solver-free but parameter- and constant-specific; OCR damage prevents trusting the exact optimized radical without scan comparison.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1980950385_u10",
+              "full_openalex_w1980950385_u17",
+              "full_openalex_w1980950385_u18",
+              "full_openalex_w1980950385_u19",
+              "full_openalex_w1980950385_u20"
+            ],
+            "title": "Zero-free width emerges from coupling local pole pressure against one selected zero"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 460,
+              "line_start": 460,
+              "reason": "Blank section separator."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1980950385_u17",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1980950385_u17",
+          "spontaneous_reading": "The compressed circle budget is exposed through two interfaces: a generic bound for the real logarithmic derivative and a sharpened bound that keeps a negative reciprocal-distance term for a zero at the same height. The latter is the local obstruction that the final positivity argument can isolate."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1980950385_u17",
+          "source_grounded_mathematics": "Applying the two corollaries of Lemma 2 gives inequality (21), bounding the negative real part of zeta prime over zeta by C times the common log scale. If a zero has the center's imaginary part, inequality (22) adds lambda inverse to the budget and subtracts the reciprocal horizontal distance from the center to that zero.",
+          "conceptual_reading": "Dropping all signed zero terms gives robust aggregate control; retaining one selected term gives more informative local control. This selective preservation converts boundary growth into a potential zero-repulsion inequality.",
+          "representation_or_bridge": "The bridge combines the circle constant C with the corollaries' zero accounting, representing a selected zero by the gap sigma-zero minus its real part.",
+          "boundary_or_failure": "The strengthened form requires the same-height zero and the circle admissibility hypotheses. Real-part glyphs and exact signs are corrupted in the extraction.",
+          "uncertainty": "The two-interface distinction and reciprocal-gap role are clear, but exact signs, parentheses, and coefficients need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1980950385_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly distinguishes the generic logarithmic-derivative bound (21) from the strengthened same-height-zero bound (22), including the added lambda-inverse cost and negative reciprocal horizontal-gap term.",
+          "It preserves the need for the circle corollary hypotheses and warns that real-part glyphs and exact signs are corrupted."
+        ],
+        "inference": [
+          "Describing the selected term as converting aggregate control into potential zero repulsion is a faithful conceptual reading of the strengthened inequality."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the final positivity argument isolates this obstruction is not stated in the exact span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Two interfaces is procedural language, but it accurately distinguishes the two displayed conclusions."
+        ],
+        "context_or_ocr_risk": [
+          "The real-part operator, signs, parentheses, and scaling placement require scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the final-positivity reference or state only that the strengthened inequality exposes a reciprocal-gap term for possible later use.",
+          "Retain the same-height and circle-admissibility restrictions."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "2ca56fbc2f7dc794d04d09bcd4889edadd5887a66d7b3c7d75a4cffabac6288f"
+}

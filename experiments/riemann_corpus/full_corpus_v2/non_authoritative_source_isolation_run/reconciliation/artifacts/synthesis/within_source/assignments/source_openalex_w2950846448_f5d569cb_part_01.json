@@ -1,0 +1,175 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2950846448",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2950846448_f5d569cb_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Infinite characteristic-polynomial limits become finite factorial ratios, which admit exact valuation analysis and scaling limits rather than serving only as numerical constants.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2950846448_v2_u03",
+          "openalex_w2950846448_v2_u05",
+          "openalex_w2950846448_v2_u06",
+          "openalex_w2950846448_v2_u09"
+        ],
+        "proposed_limit": "Agreement with known low moments calibrates but does not independently prove the full L-function conjectures.",
+        "source_id": "openalex_w2950846448",
+        "synthesis_id": "riemann_v2_within_5e5af79c830443ea57f9edcf",
+        "title": "Random-matrix prediction becomes inspectable through finite products"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the announced analytic, arithmetic, self-similar, and asymptotic consequences that the rest of the paper proves.",
+          "line_end": 405,
+          "line_start": 299,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact gamma products are essential and cleanly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Random matrix theory produces explicit gamma-product limits for U, O, and Sp; agreement with known small-k values calibrates the transfer, while integrality motivates keeping a factorial normalization visible.",
+          "source_id": "openalex_w2950846448",
+          "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Characteristic-polynomial limits supply the previously mysterious universal constants",
+          "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u03.txt",
+          "unit_bytes": 7010,
+          "unit_id": "openalex_w2950846448_v2_u03",
+          "unit_sha256": "b47875b2bc49245023668a5fc171c0ffc2a9f3bc8540befdf53fd213d38ee9a3",
+          "unit_type": "random-matrix-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For each symmetry type X in {U, O, Sp}, a characteristic-polynomial limit gives a gamma-product candidate for g_{lambda,X}. Keeping Gamma(1+B_X(lambda)) visible is not cosmetic: absorbing it would hide the arithmetic origins of the moment parameters and the integrality of g_k at positive integers, whereas the quotient g_lambda/Gamma(1+B(lambda)) is precisely the nonvanishing meromorphic function of order two whose poles the paper describes. This normalization therefore separates an analytic object from arithmetic structure; agreement at small k calibrates, but does not prove, the conjectural transfer to L-function moments.",
+            "nonparaphrase_operation": "The reading compares the two normalization choices and assigns distinct mathematical work to their factors: the quotient carries the stated analytic continuation and pole structure, while the displayed Gamma normalization retains visible arithmetic information. The alternative normalization gains compactness but loses that visibility, leaving the conjectural random-matrix-to-L-function bridge as the outstanding proof burden.",
+            "quality_reason": "Accepted after restoring the critic-required quotient g_lambda/Gamma(1+B(lambda)) as the exact order-two meromorphic object and preserving the conjectural-transfer boundary; the relevant formulas are legible in the assigned span.",
+            "source_support": "Equations (2.1)-(2.3) state the U, O, and Sp limits with their respective B_X(lambda), and the text says they agree with known and conjectural g_k values. It then states both that g_lambda/Gamma(1+B(lambda)) is nonvanishing meromorphic of order two with completely described pole locations and that g_k is integral for positive integer k.",
+            "speculation_status": "The meromorphic-quotient and positive-integer integrality claims are reported source results. The identification of the normalization as an analytic/arithmetic interface is an interpretation of those results. The L-function moment transfer remains conjectural, and low-k agreement is only calibration."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Shown for the unitary case with the other cases declared analogous.",
+          "line_end": 605,
+          "line_start": 550,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Uses the extracted integral representation for log Gamma and its differentiated estimate.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A gamma-product tail is reduced to a second finite difference, estimated through the second derivative of log Gamma; convergence, growth, and the exponent of convergence of poles then establish exact order two.",
+          "source_id": "openalex_w2950846448",
+          "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Second differences of log Gamma control an infinite product as an order-two meromorphic function",
+          "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u05.txt",
+          "unit_bytes": 2640,
+          "unit_id": "openalex_w2950846448_v2_u05",
+          "unit_sha256": "be64fe20f71ad2a6083585ba6668a57939f92421671c8e884a8b80bd6d13185d",
+          "unit_type": "meromorphic-growth-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite differencing exposes precisely the common growth canceled by the normalization.",
+            "nonparaphrase_operation": "Second log-Gamma differences, the derivative estimate, normalization, and pole sequence bridge the product to meromorphic growth.",
+            "quality_reason": "Source fact: the unitary gamma-product tail becomes a second finite difference of log Gamma, a derivative estimate gives 1/j plus a summable error, subtraction of lambda^2 log N yields convergence and order at most two, and pole exponent of convergence supplies exact order two. None identified; the output limits the detailed proof to U and does not claim it proves any L-function moment. The cancellation language is directly supported by the finite-difference calculation and normalization.",
+            "source_support": "For the unitary case, log Gamma(j)-2log Gamma(j+lambda)+log Gamma(j+2lambda) equals lambda^2 f_j''(xi). An integral formula gives f_j''(xi)=1/j+O((xi+1)/j^2), proving convergence after subtracting lambda^2 log N and order at most two. The poles have exponent of convergence two.",
+            "speculation_status": "The unit illustrates U and declares other cases similar; it does not prove L-function moments. The extraction is sufficient and legible. Reasonable inference: finite differencing isolates the common growth removed by normalization. The extraction is legible and no formula reconstruction is needed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also explains how the exceptional nondivisibility intervals follow from the first valuation layer.",
+          "line_end": 884,
+          "line_start": 715,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Floor conventions are essential; extraction is legible but symbolic reuse should preserve them exactly.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Regrouped factorial products yield exact p-adic floor sums; decomposing each summand into two residue cases makes it an integer strictly greater than -1, hence nonnegative.",
+          "source_id": "openalex_w2950846448",
+          "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+          "source_page_markers_inside_unit": [
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Floor-sum decompositions prove every p-adic valuation is nonnegative",
+          "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u06.txt",
+          "unit_bytes": 10388,
+          "unit_id": "openalex_w2950846448_v2_u06",
+          "unit_sha256": "534f64c861e6cca45eb8b14e6cf38c77f139c53114dd258f5550e365062029d7",
+          "unit_type": "valuation-positivity-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Regrouping factorial and odd-double-factorial products converts the global integrality question into p-adic floor sums indexed by valuation layer ell. For every odd prime p, the orthogonal summand and each of the two exhaustive unitary residue cases are rewritten as integers strictly greater than -1, hence as nonnegative contributions; their sums give nonnegative odd-prime valuations. This representation gains a prime-by-prime, scale-by-scale certificate and exposes residue geometry hidden by the gamma-product form, but it depends on the exact floor conventions and does not itself supply the omitted p=2 argument.",
+            "nonparaphrase_operation": "The reading decomposes integrality into local certificates along two axes, prime p and layer ell, and explains why the two unitary residue cases are the exhaustive obstruction check. This exposes where nonnegativity is proved and what the representation costs: specialized floor notation must be preserved exactly, and the detailed proof burden for p=2 lies outside the displayed layerwise argument.",
+            "quality_reason": "Accepted after correcting the boundary to distinguish the detailed odd-prime proof from the span's unsupported-by-detail p=2 assertion; exact floor conventions and both unitary residue cases are retained.",
+            "source_support": "Lemma 5.3 gives the factorial and odd-double-factorial valuation formulas, including the special convention [x]_2=[([x]+1)/2]. Proposition 5.4 supplies exact floor sums. Equations (5.1)-(5.3) show the orthogonal layer and the two unitary cases are greater than -1 and integral, so each is nonnegative. The span explicitly assumes p>2 and only says divisibility by a large power of 2 is easy.",
+            "speculation_status": "The odd-prime layerwise nonnegativity and residue-case split are proved in the assigned span. The prime p=2 is merely set aside there as easy, not established by the displayed derivation. The residue-geometry description is a supported conceptual interpretation, not an additional theorem."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Orthogonal and symplectic limits then follow by a parallel calculation and the O/Sp identity.",
+          "line_end": 1328,
+          "line_start": 1203,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent but cleanly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof normalizes exact valuations at k=[p^j x], shifts the scale index, controls finite and tail ranges uniformly, and recognizes the limit through a floor identity as ||p^ell x||^2.",
+          "source_id": "openalex_w2950846448",
+          "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Rescaled floor formulas converge to the distance-to-nearest-integer series",
+          "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u09.txt",
+          "unit_bytes": 6873,
+          "unit_id": "openalex_w2950846448_v2_u09",
+          "unit_sha256": "db3854685bdda6bdd9973d3d7221fbc579578f032e6b0c8ba6309b5b4afc06dd",
+          "unit_type": "asymptotic-valuation-derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Normalization and scale shifting reveal a continuous renormalization profile behind discrete valuations.",
+            "nonparaphrase_operation": "Geometric sampling, the shifted valuation layer, tail control, and nearest-integer identity form the bridge.",
+            "quality_reason": "Source fact: substituting k=floor(p^j x) into exact valuation formulas, shifting the layer index, and controlling finite and tail errors yields the bilateral nearest-integer-square series; the O and Sp limits have the stated one-half factor. None identified; the output limits convergence to the prescribed geometric sampling and preserves floor conventions. 'Irregular floor formulas become a fractal' is supported by the explicit limiting identity, not a visual analogy alone.",
+            "source_support": "The proof inserts k=[p^j x] into exact valuations, shifts ell to j-ell, and controls perturbations and tails. The unitary limit is sum p^{-ell}(p^ell x-floor(2p^ell x)+floor(p^ell x))^2=sum p^{-ell}||p^ell x||^2; O and Sp give one half.",
+            "speculation_status": "The limit is along prescribed geometric samples, and exact floor conventions are essential. The formulas are clean but highly convention-dependent. Reasonable inference: normalization and scale shifting reveal a continuous renormalization profile behind the discrete valuations. The proof is clean but convention-sensitive, especially largest-integer and nearest-integer identities."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_0e8daeefc8f61ccc26a888e1c7ab5a471d073dc363a08a77f618a73b58ab0d82",
+        "dossier_sha256": "7fe24c5f6036d66dd957318525235659916f13434b330488907ca702a76105ae"
+      }
+    }
+  ]
+}

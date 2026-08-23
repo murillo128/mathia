@@ -1,0 +1,1531 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2090804474_71dee00f_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2090804474",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains all hypotheses, definitions, error terms, and the remark distinguishing the sharp and weighted prime factors.",
+      "line_end": 160,
+      "line_start": 127,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent; displayed definitions and error exponents should be checked against the retained PDF before downstream symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the central decomposition zeta=PX ZX times controlled errors, with the smoothing kernel, prime factor, zero factor, and weighted-prime variant made explicit.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unconditional hybrid Euler-Hadamard factorization",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_002.txt",
+      "unit_bytes": 2254,
+      "unit_id": "openalex_w2090804474_depth_002",
+      "unit_sha256": "c6efd5bd84a64e2609525aa5de11f3f304979e31e013fb87f94512b7077d78a6",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_002.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 119,
+          "line_end": 126,
+          "text": "then reproduce Conjecture 1. Our model is based on the following representation of the zeta\nfunction.\n\n<!-- source-page: 3 -->\n\nA HYBRID EULER-HADAMARD PRODUCT FORMULA FOR THE RIEMANN ZETA FUNCTION                        3\n\n\n",
+          "sha256": "b7e92686e10510dc8174eff73038a563fcca828e3eee9e8a8792727ec9e64da9"
+        },
+        "after": {
+          "line_start": 161,
+          "line_end": 168,
+          "text": "   To clarify (5), we temporarily assume the Riemann Hypothesis (RH) and take s = 21 + ıt. We\nshall denote the nontrivial zeros of ζ(s) by ρn = 12 + ıγn , ordered by their height above the real\naxis, with γ−n = −γn . Since the support of u is concentrated near e, U (z) is roughly E1 (z), which\nis asymptotic to −γ − log z as z → 0. Here γ = 0.5772 . . . is Euler’s constant. Thus, for those\nordinates γn close enough to t, we see that\n                                                   \u0001\n                         exp − U (ı(t − γn ) log X) ≈ ı (t − γn ) eγ log X .\nWe expect the ordinates\n",
+          "sha256": "7f848edc758fa211f48f06a9d6cafdf750d69bfe9279570741f00f3649f5a239"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 285,
+            "line_start": 24,
+            "mathematical_role": "Motivates moment constants, diagnoses the prime-free random-matrix model, states the hybrid product, splitting conjecture, prime-factor moment theorem, zero-factor conjecture, and verified k=1,2 cases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 160,
+          "line_start": 127,
+          "title": "Unconditional hybrid Euler-Hadamard factorization",
+          "unit_id": "openalex_w2090804474_depth_002",
+          "unit_type": "theorem",
+          "why_material": "States the central decomposition zeta=PX ZX times controlled errors, with the smoothing kernel, prime factor, zero factor, and weighted-prime variant made explicit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains all hypotheses, definitions, error terms, and the remark distinguishing the sharp and weighted prime factors.",
+          "representation_dependency": "Strongly formula-dependent; displayed definitions and error exponents should be checked against the retained PDF before downstream symbolic use.",
+          "unit_id": "openalex_w2090804474_depth_002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 120,
+            "line_start": 77,
+            "title": "Random-matrix universality lacks the arithmetic factor",
+            "unit_id": "openalex_w2090804474_depth_001",
+            "unit_type": "motivation-and-model-comparison",
+            "why_material": "Explains why characteristic polynomials recover the universal moment factor yet omit primes, motivating an explicit-formula model that contains both zeros and arithmetic."
+          },
+          {
+            "line_end": 184,
+            "line_start": 161,
+            "title": "The scale X transfers resolution between primes and zeros",
+            "unit_id": "openalex_w2090804474_depth_003",
+            "unit_type": "representation-interpretation",
+            "why_material": "Interprets the factorization as complementary truncated Euler and Hadamard products and shows how X trades the number of local zeros against included primes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smoothing an explicit formula yields complementary prime and zero representations whose resolution is redistributed by X while their product remains zeta within controlled errors.",
+            "limit": "The sharp-factor error requires the stated intermediate regime, and formula-level reuse requires PDF verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_002",
+              "openalex_w2090804474_depth_003",
+              "openalex_w2090804474_depth_011",
+              "openalex_w2090804474_depth_012"
+            ],
+            "title": "A scale-mediated partition of zeta information"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2090804474_depth_002",
+        "spontaneous": {
+          "unit_id": "openalex_w2090804474_depth_002",
+          "spontaneous_reading": "A smoothed explicit formula is exponentiated into complementary finite-resolution prime and zero factors, with the smoothing choice exposing exactly where the approximation error enters."
+        },
+        "directed": {
+          "unit_id": "openalex_w2090804474_depth_002",
+          "source_grounded_mathematics": "Theorem 1 unconditionally writes zeta(s) as P_X(s)Z_X(s) times stated errors for sigma at least zero and |t| at least two: P_X is an exponential Mangoldt sum through X, Z_X is an exponential U-kernel sum over nontrivial zeros, and a weighted prime factor removes the second error term.",
+          "conceptual_reading": "This is an information partition rather than an independent factorization: prime data and zero data are retained in different truncated representations whose product reconstructs zeta to controlled accuracy.",
+          "representation_or_bridge": "The kernel U, obtained by smoothing the exponential integral, converts the explicit formula into a partial Euler factor P_X and a partial Hadamard factor Z_X.",
+          "boundary_or_failure": "The useful parameter regime still depends on the displayed error sizes, and replacing the weighted prime sum by the sharp cutoff costs an additional error.",
+          "uncertainty": "Unconditional status and factor roles are prose-grounded; hypotheses, error exponents, and extracted displays are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2090804474_depth_002",
+        "critic_decision": "revise",
+        "supported": [
+          "The unconditional product formula, the distinct prime and zero factors, and removal of the second error by using the weighted prime factor are all explicit.",
+          "The kernel U does arise by smoothing the exponential integral."
+        ],
+        "inference": [
+          "Describing the formula as an information partition rather than independence is a defensible conceptual reading."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "Finite-resolution and information partition are abstract labels, though they are anchored to P_X and Z_X."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed definitions and both error terms are strongly OCR-sensitive."
+        ],
+        "missed_mechanism": [
+          "The theorem summary drops material hypotheses: X>=2, fixed positive integer K, and u nonnegative C-infinity of mass one supported on [e^(1-1/X),e]; it also omits that implied constants depend only on u and K."
+        ],
+        "revision_instructions": [
+          "Add the omitted X, K, and kernel hypotheses and the dependence of implied constants; retain the distinction between the sharp and weighted prime factors without reconstructing OCR-damaged exponents beyond the span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes uniformity in sigma and the special identification a(k,1/2)=a(k).",
+      "line_end": 226,
+      "line_start": 203,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent, especially the Euler product and the piecewise FX definition.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives a rigorous moment asymptotic for PX in which a(k,sigma) carries prime arithmetic and FX carries the critical-line scale transition.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-factor moments separate arithmetic and scale terms",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_005.txt",
+      "unit_bytes": 1614,
+      "unit_id": "openalex_w2090804474_depth_005",
+      "unit_sha256": "cd7059466a341f10e06a284dcd49962d44ee853f542554be3a230881220d7509",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_005.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 195,
+          "line_end": 202,
+          "text": "product splits as the product of the moments. We call this the “Splitting Conjecture”.\nConjecture 2. (Splitting Conjecture.) Let X and T → ∞ with X = O((log T )2−ǫ ). Then for\nk > −1/2 we have\n        Z                    \u0012 Z 2T                \u0013 \u0012 Z 2T                    \u0013\n      1 2T      1      2k     1          1      2k    1           1      2k\n             ζ( 2 + ıt) dt ∼        PX ( 2 + ıt) dt ×        ZX ( 2 + ıt) dt .\n      T T                     T T                     T T\n\n",
+          "sha256": "2122671eb040cb11acd7067a2ce190d5589c79e817437c47ddf54d5c30fab586"
+        },
+        "after": {
+          "line_start": 227,
+          "line_end": 234,
+          "text": "                                                            R 2T\n   In Section 4 we conjecture an asymptotic estimate for T |ZX ( 12 + ıt)|2k dt using random matrix\ntheory. We introduce random matrix theory in the following way. The statistical distribution of\nthe ordinates γn is conjectured to coincide with that of the eigenangles θn of N × N random unitary\nmatrices chosen with Haar measure for some N (see for example [17], [19] and [15]). The choice\nof N requires consideration. The numbers γn are spaced 2π/ log T apart on average, whereas the\naverage spacing of the θn is 2π/N , and so we take N to be the greatest integer less than or equal to\nlog T . We therefore conjecture that the 2kth moment of |ZX ( 21 + ıt)|, when averaged over t around\n",
+          "sha256": "cfee3155236aad9898ff651ca44acdf2ee443e6ffab73be769c6f8add44c37ce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 285,
+            "line_start": 24,
+            "mathematical_role": "Motivates moment constants, diagnoses the prime-free random-matrix model, states the hybrid product, splitting conjecture, prime-factor moment theorem, zero-factor conjecture, and verified k=1,2 cases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 226,
+          "line_start": 203,
+          "title": "Prime-factor moments separate arithmetic and scale terms",
+          "unit_id": "openalex_w2090804474_depth_005",
+          "unit_type": "theorem",
+          "why_material": "Gives a rigorous moment asymptotic for PX in which a(k,sigma) carries prime arithmetic and FX carries the critical-line scale transition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes uniformity in sigma and the special identification a(k,1/2)=a(k).",
+          "representation_dependency": "Strongly formula-dependent, especially the Euler product and the piecewise FX definition.",
+          "unit_id": "openalex_w2090804474_depth_005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 201,
+            "line_start": 191,
+            "title": "Moment splitting into prime and zero factors",
+            "unit_id": "openalex_w2090804474_depth_004",
+            "unit_type": "conjecture",
+            "why_material": "Introduces the pivotal independence-style hypothesis that the moment of the hybrid product asymptotically factors into separate moments."
+          },
+          {
+            "line_end": 260,
+            "line_start": 228,
+            "title": "Local zero statistics determine the zero-factor moment",
+            "unit_id": "openalex_w2090804474_depth_006",
+            "unit_type": "heuristic-bridge",
+            "why_material": "Matches zero spacing to unitary eigenangle spacing, states the ZX moment conjecture, identifies effective degree log T/(e^gamma log X), and shows the X factors cancel when combined with PX."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The prime factor supplies the arithmetic Euler product, the local zero factor supplies the Barnes-G/random-matrix term, and their X-dependent scales cancel in the zeta moment.",
+            "limit": "The general-k multiplication uses the splitting and zero-factor conjectures; this source proves only k=1 and k=2.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_004",
+              "openalex_w2090804474_depth_005",
+              "openalex_w2090804474_depth_006",
+              "openalex_w2090804474_depth_007",
+              "openalex_w2090804474_depth_015",
+              "openalex_w2090804474_depth_016"
+            ],
+            "title": "Arithmetic times universal moment structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2090804474_depth_005",
+        "spontaneous": {
+          "unit_id": "openalex_w2090804474_depth_005",
+          "spontaneous_reading": "The prime-factor moment itself splits into a stable Euler-product invariant and a scale-dependent transition term, isolating arithmetic from cutoff geometry."
+        },
+        "directed": {
+          "unit_id": "openalex_w2090804474_depth_005",
+          "source_grounded_mathematics": "Theorem 2 gives a uniform asymptotic for the 2k-th moment of P_X(sigma+it) on c<=sigma<=1: a(k,sigma) is an Euler product of divisor-coefficient squares, while F_X(k,sigma) is expressed by zeta and E1 off the critical line and by (e^gamma log X)^(k^2) on it; a(k,1/2)=a(k).",
+          "conceptual_reading": "Multiplicativity packages the genuinely arithmetic content into a(k,sigma), leaving F_X to record how the truncation scale behaves across the critical boundary.",
+          "representation_or_bridge": "A time-averaged truncated prime exponential is converted into an Euler product times an analytic scale factor involving the exponential integral.",
+          "boundary_or_failure": "The theorem requires the stated relationship between X and T and uniform sigma range; it establishes only the prime-factor moment, not the splitting or zero-factor conjectures.",
+          "uncertainty": "The theorem's separation is explicit, but the Euler-product powers, piecewise F_X formula, and growth exponent are extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2090804474_depth_005",
+        "critic_decision": "revise",
+        "supported": [
+          "The theorem explicitly factors the P_X moment into a(k,sigma) and the piecewise F_X(k,sigma), uniformly for c<=sigma<=1, and identifies a(k,1/2)=a(k).",
+          "The distinction between an arithmetic Euler product and a cutoff-dependent scale factor is source-grounded."
+        ],
+        "inference": [
+          "Describing the two factors as arithmetic content and cutoff geometry is a reasonable interpretation."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "Critical boundary is slightly loose language for the critical-line endpoint sigma=1/2."
+        ],
+        "context_or_ocr_risk": [
+          "Euler-product exponents, the two F_X branches, and the growth exponent are strongly formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The compact theorem account does not preserve the material domain 1/2<=c<1, epsilon>0, real k, X,T tending to infinity, and X=O((log T)^(1/(1-c+epsilon))); saying only the stated relationship is too implicit for reuse."
+        ],
+        "revision_instructions": [
+          "State the full parameter and growth hypotheses explicitly, while keeping the claim limited to the prime-factor moment and preserving the existing OCR warning."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates the random-matrix heuristic from the rigorous prime-factor theorem and records uncertainty about the maximal X range.",
+      "line_end": 260,
+      "line_start": 228,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive for the Barnes-G constant and scaling; modeling claims are explicitly heuristic.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Matches zero spacing to unitary eigenangle spacing, states the ZX moment conjecture, identifies effective degree log T/(e^gamma log X), and shows the X factors cancel when combined with PX.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local zero statistics determine the zero-factor moment",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_006.txt",
+      "unit_bytes": 2265,
+      "unit_id": "openalex_w2090804474_depth_006",
+      "unit_sha256": "9fb53323ca12b8e9a2a6e4cffa24c7cbce7953b69a25d9bfda6b0aaff51e7364",
+      "unit_type": "heuristic-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_006.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 220,
+          "line_end": 227,
+          "text": "and                                  (       2    2\n                                      ζ(2σ)k e−k E1 ((2σ−1) log X)   if σ > 1/2 ,\n                         FX (k, σ) =              2\n                                      (eγ log X)k                    if σ = 1/2 .\nHere E1 is the exponential integral, and γ = 0.5772 . . . is Euler’s constant.\n\n    Note that a(k, 12 ) is the same as a(k) in (1).\n                                                            R 2T\n",
+          "sha256": "edabcb1e85ea26aa25735c5f9c728c779cb9fb15b5ee02900e72fcf6a74c1979"
+        },
+        "after": {
+          "line_start": 261,
+          "line_end": 268,
+          "text": "  In Section 5, we prove\nTheorem 3. Let ǫ > 0 and let X and T → ∞ with X = O((log T )2−ǫ ). Then for k = 1 and k = 2\nwe have\n                 Z                                             \u0012       \u0013k 2\n              1 2T       1           1      −1 2k   G2 (k + 1)   log T\n                     |ζ( 2 + ıt)PX ( 2 + ıt) | dt ∼                         .\n              T T                                   G(2k + 1) eγ log X\n\n",
+          "sha256": "ad5bdeb1f50861d773dd67d2bfcdecf430e11751746cef0bd1331e3008cb2622"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 285,
+            "line_start": 24,
+            "mathematical_role": "Motivates moment constants, diagnoses the prime-free random-matrix model, states the hybrid product, splitting conjecture, prime-factor moment theorem, zero-factor conjecture, and verified k=1,2 cases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 260,
+          "line_start": 228,
+          "title": "Local zero statistics determine the zero-factor moment",
+          "unit_id": "openalex_w2090804474_depth_006",
+          "unit_type": "heuristic-bridge",
+          "why_material": "Matches zero spacing to unitary eigenangle spacing, states the ZX moment conjecture, identifies effective degree log T/(e^gamma log X), and shows the X factors cancel when combined with PX."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Separates the random-matrix heuristic from the rigorous prime-factor theorem and records uncertainty about the maximal X range.",
+          "representation_dependency": "Formula-sensitive for the Barnes-G constant and scaling; modeling claims are explicitly heuristic.",
+          "unit_id": "openalex_w2090804474_depth_006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 226,
+            "line_start": 203,
+            "title": "Prime-factor moments separate arithmetic and scale terms",
+            "unit_id": "openalex_w2090804474_depth_005",
+            "unit_type": "theorem",
+            "why_material": "Gives a rigorous moment asymptotic for PX in which a(k,sigma) carries prime arithmetic and FX carries the critical-line scale transition."
+          },
+          {
+            "line_end": 276,
+            "line_start": 261,
+            "title": "The split and zero-factor conjecture hold for k=1 and k=2",
+            "unit_id": "openalex_w2090804474_depth_007",
+            "unit_type": "partial-verification",
+            "why_material": "States the inverse-prime-factor moment theorem and its consequences: rigorous verification of both conjectural components in the first two cases."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The prime factor supplies the arithmetic Euler product, the local zero factor supplies the Barnes-G/random-matrix term, and their X-dependent scales cancel in the zeta moment.",
+            "limit": "The general-k multiplication uses the splitting and zero-factor conjectures; this source proves only k=1 and k=2.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_004",
+              "openalex_w2090804474_depth_005",
+              "openalex_w2090804474_depth_006",
+              "openalex_w2090804474_depth_007",
+              "openalex_w2090804474_depth_015",
+              "openalex_w2090804474_depth_016"
+            ],
+            "title": "Arithmetic times universal moment structure"
+          },
+          {
+            "claim": "Changing X alters PX and ZX individually, but both the moment calculation and the reported pointwise experiment show compensating dependence in their product.",
+            "limit": "The appendix plots are unavailable in the normalized text and constitute an illustration rather than independent proof.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_003",
+              "openalex_w2090804474_depth_006",
+              "openalex_w2090804474_depth_007",
+              "openalex_w2090804474_depth_034"
+            ],
+            "title": "Theoretical and pointwise X cancellation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2090804474_depth_006",
+        "spontaneous": {
+          "unit_id": "openalex_w2090804474_depth_006",
+          "spontaneous_reading": "Matching local mean spacing chooses the matrix size, and the prime cutoff then reduces the effective zero-matrix dimension by the same scale that the prime moment gains."
+        },
+        "directed": {
+          "unit_id": "openalex_w2090804474_depth_006",
+          "source_grounded_mathematics": "The zero ordinates near height T are heuristically replaced by eigenangles of a Haar unitary matrix with N about log T; Conjecture 3 predicts the Z_X moment with Barnes-G constant and scale (log T/(e^gamma log X))^(k^2). Combining it with Theorem 2 and the Splitting Conjecture cancels every X-dependent factor.",
+          "conceptual_reading": "Local zero universality supplies the non-arithmetic moment factor, while complementary X dependence provides a consistency check that the prime/zero partition has not changed the target zeta moment.",
+          "representation_or_bridge": "Average zero spacing 2pi/log T is matched to unitary eigenangle spacing 2pi/N, and the X-rescaled local density identifies the effective characteristic-polynomial degree.",
+          "boundary_or_failure": "The zeta-zero to unitary-eigenangle substitution, the general zero-factor moment, and moment splitting remain conjectural; the source says the maximal valid X range is unclear.",
+          "uncertainty": "The heuristic versus rigorous components are clearly separated; constants and scaling powers remain formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2090804474_depth_006",
+        "critic_decision": "revise",
+        "supported": [
+          "The local-spacing match N about log T, the conjectural Barnes-G zero-factor moment, the effective scale log T/(e^gamma log X), and cancellation with Theorem 2 plus the Splitting Conjecture are explicit.",
+          "The source explicitly says the larger valid X range is unclear."
+        ],
+        "inference": [
+          "Treating cancellation of X-dependence as a consistency check on the prime-zero partition is a sound interpretation."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "Determine in the title is stronger than the source's conjectural modeling language, but the candidate body restores the heuristic status."
+        ],
+        "context_or_ocr_risk": [
+          "The Barnes-G ratio and scaling powers are formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The Conjecture 3 summary omits its stated domain: fixed k>-1/2 and X,T tending to infinity with X=O((log T)^(2-epsilon))."
+        ],
+        "revision_instructions": [
+          "Add the exact k and X,T conditions to the source-grounded statement and keep the zeta-zero to unitary substitution explicitly heuristic."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the branch-cut convention and absolute-convergence justification needed for the representation.",
+      "line_end": 376,
+      "line_start": 345,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula- and branch-convention-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integrates the logarithmic derivative with a controlled logarithm branch, turning prime, zero, pole, and trivial-zero contributions into U-kernel terms for log zeta.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Horizontal integration converts the explicit formula to log zeta",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_010.txt",
+      "unit_bytes": 2364,
+      "unit_id": "openalex_w2090804474_depth_010",
+      "unit_sha256": "fef3b5cf3e143791a8f65233bedf24b4b33c3b53bcb2860a67c6c2e861a7f04f",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_010.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 337,
+          "line_end": 344,
+          "text": "                                          x                Γ(z + K)\n                                                                                                    (11)\n                                                (K)        emax{Re z+K,0}\n                                    ⩽ max |u          (x)|\n                                          x                  (1 + |z|)K\n\nfor any positive integer K. Thus, the sums over ρ and m on the right-hand side of (10) converge\nabsolutely so long as s 6= ρ and s 6= −2m. This, in fact, is the reason we require smoothing.\n",
+          "sha256": "584dc3bae6ab9390be82e6d6a6bc132de34eb20d58ef2dc2fb5ef8ff40f392eb"
+        },
+        "after": {
+          "line_start": 377,
+          "line_end": 384,
+          "text": "   We next suppose that the support of u is contained in [e1−1/X , e] with the same X as in (13). It\nis easy to see that there is a smooth nonnegative function f with support in [0, 1] and total mass\none such that u(x) = Xf (X log(x/e) + 1)/x. Since maxx |f (K)(x)| is bounded and independent of\nX, we see that maxx |u(K) (x)| ≪K X K+1 . It therefore follows from (11) that\n\n                                                        emax{σ,0} X K+1\n                                           u\n                                           e(s) ≪K                      .\n",
+          "sha256": "c8f7cfc929e3cfaf44b2508411df7132122cfd5487c6bd284e93604d0548ab55"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The Proof of Theorem 1",
+            "line_end": 495,
+            "line_start": 286,
+            "mathematical_role": "Derives the hybrid Euler-Hadamard product from a smoothed explicit formula and controls smoothing, pole, trivial-zero, truncation, and zero-limit effects."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 376,
+          "line_start": 345,
+          "title": "Horizontal integration converts the explicit formula to log zeta",
+          "unit_id": "openalex_w2090804474_depth_010",
+          "unit_type": "representation-change",
+          "why_material": "Integrates the logarithmic derivative with a controlled logarithm branch, turning prime, zero, pole, and trivial-zero contributions into U-kernel terms for log zeta."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the branch-cut convention and absolute-convergence justification needed for the representation.",
+          "representation_dependency": "Formula- and branch-convention-dependent.",
+          "unit_id": "openalex_w2090804474_depth_010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 344,
+            "line_start": 288,
+            "title": "Smoothing makes the explicit formula summable",
+            "unit_id": "openalex_w2090804474_depth_009",
+            "unit_type": "lemma-and-method",
+            "why_material": "States the smoothed logarithmic-derivative explicit formula and explains that repeated integration by parts supplies absolute convergence of the zero and trivial-zero sums."
+          },
+          {
+            "line_end": 454,
+            "line_start": 377,
+            "title": "Concentrated kernel support yields the hybrid product with uniform errors",
+            "unit_id": "openalex_w2090804474_depth_011",
+            "unit_type": "localization-and-error-control",
+            "why_material": "Uses support near e to quantify Mellin decay, suppress the pole and trivial zeros, and exponentiate the log formula into a weighted prime factor times the zero factor."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same compactly supported kernel makes the explicit formula absolutely summable, localizes the zero contribution, and provides controlled Fourier data after periodicization.",
+            "limit": "The quantitative statements depend on this kernel class and its support near e.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_009",
+              "openalex_w2090804474_depth_010",
+              "openalex_w2090804474_depth_011",
+              "openalex_w2090804474_depth_021",
+              "openalex_w2090804474_depth_022"
+            ],
+            "title": "Smoothing as both convergence device and spectral window"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2090804474_depth_010",
+        "spontaneous": {
+          "unit_id": "openalex_w2090804474_depth_010",
+          "spontaneous_reading": "Horizontal integration changes a logarithmic-derivative balance into an additive representation of log zeta, with a branch convention carrying the formula through cuts."
+        },
+        "directed": {
+          "unit_id": "openalex_w2090804474_depth_010",
+          "source_grounded_mathematics": "Integrating the smoothed explicit formula from s_0 horizontally to +infinity gives log zeta(s_0) as a weighted finite prime sum, minus U-kernel terms over nontrivial zeros, plus pole and trivial-zero U terms. Absolute convergence justifies interchange, and symmetric boundary values define log zeta when the line crosses a zero or an E1 branch cut.",
+          "conceptual_reading": "Integration converts additive pole/zero data for a derivative into logarithmic factors that can later be exponentiated into a product representation.",
+          "representation_or_bridge": "The integral of the Mellin kernel divided by s-z is identified with U((s_0-z)log X), bridging the explicit formula to log zeta.",
+          "boundary_or_failure": "The representation excludes the pole and zeros as evaluation points here and depends on the stated logarithm and E1 branch conventions.",
+          "uncertainty": "The branch-handling mechanism is explicit; the OCR-damaged averaging notation and integral layout warrant PDF checking for symbolic use."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2090804474_depth_010",
+        "critic_decision": "revise",
+        "supported": [
+          "Horizontal integration produces the stated additive log-zeta representation with prime, nontrivial-zero, pole, and trivial-zero contributions.",
+          "Absolute convergence justifies interchange, and the span supplies both a log-zeta convention and a separate E1/U branch-cut convention."
+        ],
+        "inference": [
+          "Viewing integration as preparation for exponentiation into factors is a valid representation-level inference."
+        ],
+        "unsupported_or_imported": [
+          "The candidate sentence says symmetric boundary values define log zeta when a line crosses either a zero or an E1 branch cut, conflating two conventions: symmetric values define log zeta when the horizontal line passes through a zero, whereas a separate symmetric convention defines U on the E1 branch cut."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The extracted averaging notation around both branch conventions is visibly damaged and should not be reconstructed symbolically."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Split the branch statement into the two distinct conventions and identify which function each convention defines; leave all other claims unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the proof step that separates arithmetic content from scale dependence.",
+      "line_end": 780,
+      "line_start": 694,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent; prime ranges and error exponents matter.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factors the diagonal sum prime by prime, shows the corrected large-prime factors are negligible, and identifies the convergent arithmetic factor a(k,sigma) times a truncated zeta product.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The diagonal coefficient sum isolates the arithmetic Euler product",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_015.txt",
+      "unit_bytes": 5402,
+      "unit_id": "openalex_w2090804474_depth_015",
+      "unit_sha256": "f63195d159235727af942659858ef4b8d1036014fb5896d0eaf535b703249d99",
+      "unit_type": "factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_015.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 686,
+          "line_end": 693,
+          "text": "                         Z 2T                        \u0010                \u0011 X α (n)2\n                     1                                                     k\n                                |PX∗ (σ + ıt)|2k dt = 1 + Ok (T −ǫ/4 )           .                   (18)\n                     T    T                                                n2σ\n                                                                                n∈S(X)\n\n<!-- source-page: 11 -->\n\n",
+          "sha256": "383c4a9a1e0fa4287d3a3f3501884f6dcc2694fca5855d8e1313e90a0a9e8dcd"
+        },
+        "after": {
+          "line_start": 781,
+          "line_end": 788,
+          "text": "Lemma 4. If k is a real number, then\n                        Y\u0012          \u0013 2\n                                  1 −k\n                                                   \u0012\n                                                               1\n                                                                    \u0013\n                            1 − 2σ      = FX (k, σ) 1 + Ok (       )\n                                 p                           log X\n",
+          "sha256": "6d4727b4825bf6467c1a7c8ac2b1aef6ecfa38774609b096861ee59d49f2d373"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. The Proof of Theorem 2",
+            "line_end": 843,
+            "line_start": 496,
+            "mathematical_role": "Replaces the exponential prime factor by a corrected Euler product, truncates its Dirichlet series, applies a mean-value theorem, and extracts arithmetic and scale factors."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 780,
+          "line_start": 694,
+          "title": "The diagonal coefficient sum isolates the arithmetic Euler product",
+          "unit_id": "openalex_w2090804474_depth_015",
+          "unit_type": "factorization",
+          "why_material": "Factors the diagonal sum prime by prime, shows the corrected large-prime factors are negligible, and identifies the convergent arithmetic factor a(k,sigma) times a truncated zeta product."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the proof step that separates arithmetic content from scale dependence.",
+          "representation_dependency": "Strongly formula-dependent; prime ranges and error exponents matter.",
+          "unit_id": "openalex_w2090804474_depth_015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 691,
+            "line_start": 561,
+            "title": "Smooth-number truncation plus a Dirichlet-polynomial mean value",
+            "unit_id": "openalex_w2090804474_depth_014",
+            "unit_type": "proof-method",
+            "why_material": "Expands PX*^k over X-smooth numbers, controls the tail uniformly from the X-versus-log T restriction, and converts the moment into a diagonal coefficient sum via a mean-value theorem."
+          },
+          {
+            "line_end": 841,
+            "line_start": 781,
+            "title": "Mertens and the exponential integral unify the critical transition",
+            "unit_id": "openalex_w2090804474_depth_016",
+            "unit_type": "asymptotic-transition",
+            "why_material": "Evaluates the truncated zeta product as either (e^gamma log X)^(k^2) on the critical line or a zeta/exponential-integral expression off it, completing Theorem 2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The prime factor supplies the arithmetic Euler product, the local zero factor supplies the Barnes-G/random-matrix term, and their X-dependent scales cancel in the zeta moment.",
+            "limit": "The general-k multiplication uses the splitting and zero-factor conjectures; this source proves only k=1 and k=2.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_004",
+              "openalex_w2090804474_depth_005",
+              "openalex_w2090804474_depth_006",
+              "openalex_w2090804474_depth_007",
+              "openalex_w2090804474_depth_015",
+              "openalex_w2090804474_depth_016"
+            ],
+            "title": "Arithmetic times universal moment structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2090804474_depth_015",
+        "spontaneous": {
+          "unit_id": "openalex_w2090804474_depth_015",
+          "spontaneous_reading": "Prime-by-prime factorization of the diagonal sum cleanly peels off a convergent arithmetic Euler product, leaving a universal truncated zeta product that carries the scale."
+        },
+        "directed": {
+          "unit_id": "openalex_w2090804474_depth_015",
+          "source_grounded_mathematics": "The diagonal coefficient sum factors over p<=X. The modified factors for sqrt(X)<p<=X contribute only the stated small relative error; inserting and removing (1-p^(-2sigma)) powers identifies the all-prime convergent factor a(k,sigma) and leaves the truncated product over p<=X.",
+          "conceptual_reading": "Local multiplicativity separates persistent arithmetic data from cutoff-dependent mass: normalization makes each prime's residual contribution convergent, while the common divergent part is isolated for separate asymptotic evaluation.",
+          "representation_or_bridge": "A global coefficient norm is converted into local Euler factors, normalized by zeta-type factors, and extended from the finite prime range to all primes.",
+          "boundary_or_failure": "The conclusion inherits the prior Dirichlet-polynomial approximation and depends on precise transition-prime corrections and error exponents; the remaining truncated product is evaluated only in the next step.",
+          "uncertainty": "The factorization role is explicit; exact local factors, powers, and prime ranges are strongly formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2090804474_depth_015",
+        "critic_decision": "revise",
+        "supported": [
+          "The diagonal sum is factored prime by prime, transition-range correction factors are shown negligible, and insertion of zeta-type factors isolates a(k,sigma) from the remaining finite product.",
+          "The span does extend the normalized arithmetic factor from primes up to X to all primes with a controlled error."
+        ],
+        "inference": [
+          "Persistent arithmetic data versus cutoff-dependent scale is a useful interpretation of the factorization."
+        ],
+        "unsupported_or_imported": [
+          "Calling the remaining common factor divergent without qualification is false over the full stated sigma range: divergence occurs at sigma=1/2, while for fixed sigma>1/2 the corresponding Euler product converges."
+        ],
+        "paraphrase_or_style_risk": [
+          "Universal truncated zeta product is acceptable only as a structural label, not as a claim of universality beyond this calculation."
+        ],
+        "context_or_ocr_risk": [
+          "Local factors, powers, transition prime ranges, and relative errors are strongly OCR-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace common divergent part by common truncated zeta-type factor and explicitly distinguish critical-line growth from off-critical convergence."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The RH and random-matrix substitutions are explicit assumptions; nonzero periodic images are later bounded.",
+      "line_end": 900,
+      "line_start": 844,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent and heuristic; the locality claim is also stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites |ZX| through cosine-integral contributions of nearby zeros, replaces their ordinates by unitary eigenangles, and periodicizes the local kernel so the matrix calculation is well-defined.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From a local zero statistic to a periodic unitary statistic",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_017.txt",
+      "unit_bytes": 3538,
+      "unit_id": "openalex_w2090804474_depth_017",
+      "unit_sha256": "4328351ea6b5b93a5e6bb73937e28219a1bf88e3e8de88c90994751dd095299d",
+      "unit_type": "model-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_017.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 836,
+          "line_end": 843,
+          "text": "                 1 − 2σ          = ζ(2σ)     exp −k E1 ((2σ − 1) log X) 1 + Ok                  ,\n                    p                                                              log X\n           p⩽X\n\nas asserted.\n     The proof of Theorem 2 now follows immediately from Lemmas 2, 3 and 4.\n\n\n",
+          "sha256": "8a92871da6bad4b2d2b58e3a4f477150b2c8d693a6923486c9064976f55000ef"
+        },
+        "after": {
+          "line_start": 901,
+          "line_end": 908,
+          "text": "The remainder of this section is devoted to the proof of\nTheorem 4. Let φ(θ) be defined as in (20), then for fixed k > − 21 and X ⩾ 2, we have as N → ∞,\n                \"N          #                 \u0012          \u0013k 2 \u0012        \u0012       \u0013\u0013\n                  Y             (G(k + 1))2        N                       1\n             EN       φ(θn ) ∼                                  1 + Ok            .\n                  n=1\n                                 G(2k + 1) eγ log X                      log X\n\n",
+          "sha256": "7867d44805d0c8dc2a67b1be58352d2a5324c3c7d877785c44faee85c2ace164"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Support for Conjecture 3",
+            "line_end": 1161,
+            "line_start": 844,
+            "mathematical_role": "Models the local zero factor by periodicized unitary eigenangles and evaluates its moment through Toeplitz/Fisher-Hartwig asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 900,
+          "line_start": 844,
+          "title": "From a local zero statistic to a periodic unitary statistic",
+          "unit_id": "openalex_w2090804474_depth_017",
+          "unit_type": "model-construction",
+          "why_material": "Rewrites |ZX| through cosine-integral contributions of nearby zeros, replaces their ordinates by unitary eigenangles, and periodicizes the local kernel so the matrix calculation is well-defined."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The RH and random-matrix substitutions are explicit assumptions; nonzero periodic images are later bounded.",
+          "representation_dependency": "Formula-dependent and heuristic; the locality claim is also stated in prose.",
+          "unit_id": "openalex_w2090804474_depth_017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 841,
+            "line_start": 781,
+            "title": "Mertens and the exponential integral unify the critical transition",
+            "unit_id": "openalex_w2090804474_depth_016",
+            "unit_type": "asymptotic-transition",
+            "why_material": "Evaluates the truncated zeta product as either (e^gamma log X)^(k^2) on the critical line or a zeta/exponential-integral expression off it, completing Theorem 2."
+          },
+          {
+            "line_end": 921,
+            "line_start": 901,
+            "title": "Effective matrix dimension is fixed by rescaled local density",
+            "unit_id": "openalex_w2090804474_depth_018",
+            "unit_type": "scaling-interpretation",
+            "why_material": "States the random-matrix asymptotic and explains why rescaling eigenangles by e^gamma log X is equivalent, for local statistics, to dimension N/(e^gamma log X)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After rescaling by e^gamma log X, the zero factor is a local statistic with the same leading asymptotics as a unitary characteristic polynomial of effective dimension log T/(e^gamma log X).",
+            "limit": "The zeta-to-unitary substitution is heuristic even though the subsequent Toeplitz calculation is an asymptotic theorem for the matrix model.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_017",
+              "openalex_w2090804474_depth_018",
+              "openalex_w2090804474_depth_019",
+              "openalex_w2090804474_depth_020"
+            ],
+            "title": "Local zero density determines the effective matrix scale"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2090804474_depth_017",
+        "spontaneous": {
+          "unit_id": "openalex_w2090804474_depth_017",
+          "spontaneous_reading": "The smoothed zero factor becomes a genuinely local statistic, and periodicization is the technical move that lets this statistic live on the unitary circle without materially changing it."
+        },
+        "directed": {
+          "unit_id": "openalex_w2090804474_depth_017",
+          "source_grounded_mathematics": "Assuming RH, Re E1(ix)=-Ci(|x|) rewrites |Z_X|^(2k) as an exponential of smoothed cosine-integral contributions from zero ordinates. Decay makes the statistic local near t; the ordinates are then heuristically replaced by eigenangles of a Haar unitary matrix of size floor(log T), and summing periodic images defines a circle-valued symbol phi. Nonzero images are claimed, and later proved, to contribute O_k(1/log X).",
+          "conceptual_reading": "Locality permits a universality substitution, while periodicization reconciles a statistic on the line with the compact geometry of eigenangles.",
+          "representation_or_bridge": "The U-kernel is converted to a cosine-integral observable, zeta zeros are replaced by unitary eigenangles, and periodic images turn the observable into a Toeplitz-compatible symbol.",
+          "boundary_or_failure": "RH and the zeta-to-random-matrix replacement are heuristic assumptions; the later bound controls periodic images but does not validate that substitution.",
+          "uncertainty": "The modeling status and locality argument are explicit; the product and integral displays are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2090804474_depth_017",
+        "critic_decision": "revise",
+        "supported": [
+          "Under RH the E1 real part produces a Ci statistic, decay makes it effectively local, and the zero ordinates are then heuristically replaced by Haar-unitary eigenangles of size floor(log T).",
+          "The span explicitly periodicizes the kernel and states that nonzero images contribute O_k(1/log X), with proof deferred."
+        ],
+        "inference": [
+          "Reconciling a line statistic with circle geometry is a faithful interpretation of periodicization."
+        ],
+        "unsupported_or_imported": [
+          "Calling the periodicized symbol Toeplitz-compatible imports the determinant machinery from the next unit; this span says only that periodicization makes the random-matrix calculation easier."
+        ],
+        "paraphrase_or_style_risk": [
+          "Genuinely local is stronger than the source's effectively local wording."
+        ],
+        "context_or_ocr_risk": [
+          "The product-integral display and the periodicized symbol are formula-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace genuinely local by effectively local and describe phi only as a periodic circle-valued unitary statistic; omit the Toeplitz label until the subsequent unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the cutoff behavior of v and the harmonic-sum evaluation used in the constant.",
+      "line_end": 1018,
+      "line_start": 966,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the Fourier coefficients of log b and the asymptotic value b(0), then combines them to recover the Barnes-G moment constant and the scale (e^gamma log X)^(-k^2).",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier data and singular value determine the Toeplitz constant",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_020.txt",
+      "unit_bytes": 3175,
+      "unit_id": "openalex_w2090804474_depth_020",
+      "unit_sha256": "800ae8c8aa5ef57ec4e9e2f0371f70f810a073266973582b7ad41e5e6c492ae4",
+      "unit_type": "lemma-package",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_020.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 958,
+          "line_end": 965,
+          "text": "                         X∞    \u0012 Z π                     \u00132 !\n                                 1                                   G2 (k + 1)\n              E = exp        n          log b(θ)e−ınθ dθ      b(0)−k            .\n                         n=1\n                                2π −π                                G(2k + 1)\n\n  To evaluate E we need to know b(0) and the Fourier coefficients of log b(θ). These are given by\nthe next two lemmas.\n",
+          "sha256": "eddd504efd1b7889a7e25543b28e22829b2bc9b452c682c4dc83d2ed840e3a6b"
+        },
+        "after": {
+          "line_start": 1019,
+          "line_end": 1026,
+          "text": "  Proof of Lemma 5. We wish to evaluate\n                                  Z π\n                                1\n                                      log b(θ)e−ınθ dθ ,\n                               2π −π\nwhere b(θ) is given by (23). After some straightforward algebra we see that this equals\n        Z                                   Z       \u0012Z ∞                            \u0013\n    −k π                                  2k e\n",
+          "sha256": "887626b7d75f9ec48142c9c6e9c1c2744996276338fdf2e4cf8b1ce69fadc6ae"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Support for Conjecture 3",
+            "line_end": 1161,
+            "line_start": 844,
+            "mathematical_role": "Models the local zero factor by periodicized unitary eigenangles and evaluates its moment through Toeplitz/Fisher-Hartwig asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1018,
+          "line_start": 966,
+          "title": "Fourier data and singular value determine the Toeplitz constant",
+          "unit_id": "openalex_w2090804474_depth_020",
+          "unit_type": "lemma-package",
+          "why_material": "States the Fourier coefficients of log b and the asymptotic value b(0), then combines them to recover the Barnes-G moment constant and the scale (e^gamma log X)^(-k^2)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the cutoff behavior of v and the harmonic-sum evaluation used in the constant.",
+          "representation_dependency": "Strongly formula-dependent.",
+          "unit_id": "openalex_w2090804474_depth_020"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 965,
+            "line_start": 923,
+            "title": "Toeplitz determinant and Fisher-Hartwig singularity extraction",
+            "unit_id": "openalex_w2090804474_depth_019",
+            "unit_type": "representation-change",
+            "why_material": "Uses Heine's identity to turn the unitary expectation into a Toeplitz determinant, factors its zero singularity, and invokes a Fisher-Hartwig asymptotic with an explicit smooth-symbol constant."
+          },
+          {
+            "line_end": 1071,
+            "line_start": 1019,
+            "title": "Periodicized cosine integrals encode the cutoff in Fourier coefficients",
+            "unit_id": "openalex_w2090804474_depth_021",
+            "unit_type": "fourier-computation",
+            "why_material": "Computes the Fourier coefficients of log b by cancellation between the logarithmic singular factor and a cosine-integral transform, yielding k v(exp(n/log X))/n."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After rescaling by e^gamma log X, the zero factor is a local statistic with the same leading asymptotics as a unitary characteristic polynomial of effective dimension log T/(e^gamma log X).",
+            "limit": "The zeta-to-unitary substitution is heuristic even though the subsequent Toeplitz calculation is an asymptotic theorem for the matrix model.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_017",
+              "openalex_w2090804474_depth_018",
+              "openalex_w2090804474_depth_019",
+              "openalex_w2090804474_depth_020"
+            ],
+            "title": "Local zero density determines the effective matrix scale"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2090804474_depth_020",
+        "spontaneous": {
+          "unit_id": "openalex_w2090804474_depth_020",
+          "spontaneous_reading": "The entire smooth-symbol correction is compressed into a cutoff sequence of Fourier coefficients and one finite singular value, from which the expected Barnes-G and log-X scale re-emerge."
+        },
+        "directed": {
+          "unit_id": "openalex_w2090804474_depth_020",
+          "source_grounded_mathematics": "Lemma 5 gives the zeroth Fourier coefficient of log b as zero and the positive coefficients as k v(exp(n/log X))/n. Lemma 6 gives b(0) with leading exponential 2k(log log X+gamma). The support of u makes v essentially a cutoff at n about log X, so the harmonic sum equals log log X+gamma up to O(1/log X); substitution into the Fisher-Hartwig constant proves Theorem 4.",
+          "conceptual_reading": "Smoothing survives the determinant reduction only as a spectral cutoff profile, whose aggregate harmonic mass supplies precisely the scale needed to complement the singularity contribution.",
+          "representation_or_bridge": "Support bounds on u become cutoff bounds on v, Fourier coefficients feed the Toeplitz constant E, and b(0) cancels the remaining normalization.",
+          "boundary_or_failure": "This completion depends on Lemmas 5 and 6 and the prescribed kernel support; it proves the matrix theorem, not Conjecture 3 for zeta.",
+          "uncertainty": "The logical combination is clear, but extracted Fourier and exponential constants are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2090804474_depth_020",
+        "critic_decision": "revise",
+        "supported": [
+          "The two lemmas provide the zeroth and positive Fourier coefficients of log b and the asymptotic value b(0).",
+          "Support of u turns v into a transition near n=log X, the harmonic sum yields log log X+gamma, and substitution completes Theorem 4."
+        ],
+        "inference": [
+          "Describing v as a spectral cutoff profile is a faithful interpretation of its Fourier-coefficient role."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "Singular value is misleading terminology: b(0) is the value of the smooth factor at the singular point, not a matrix singular value."
+        ],
+        "context_or_ocr_risk": [
+          "Fourier coefficients, the exponent in b(0), and cancellation in E are strongly formula-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace singular value with value at the singular point b(0); preserve the distinction between the Fisher-Hartwig singular factor and the nonvanishing smooth factor b."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the X restriction, coefficient behavior, truncation error, coprime formula, and aggregate error bound.",
+      "line_end": 1225,
+      "line_start": 1162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands PX*^{-1} as a short smooth-number Dirichlet polynomial and inserts it into a uniform twisted second-moment formula for zeta.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "k=1 reduces to a truncated reciprocal product and a twisted second moment",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_023.txt",
+      "unit_bytes": 4043,
+      "unit_id": "openalex_w2090804474_depth_023",
+      "unit_sha256": "3e6353e25f40e31dccc750b0d77cfb11ee736b0fbf306c47241bfbf078065e36",
+      "unit_type": "proof-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_023.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1154,
+          "line_end": 1161,
+          "text": "                                                                  log X\nThis completes the proof of Lemma 6.\n\n<!-- source-page: 17 -->\n\nA HYBRID EULER-HADAMARD PRODUCT FORMULA FOR THE RIEMANN ZETA FUNCTION                                          17\n\n\n",
+          "sha256": "78a17c7ea2b2ad3989b21a49cd0f8b654b8e4914d4e566971e2d0017529688b3"
+        },
+        "after": {
+          "line_start": 1226,
+          "line_end": 1233,
+          "text": "\n<!-- source-page: 18 -->\n\n18                                S.M. GONEK, C.P. HUGHES, AND J.P. KEATING\n\n\nGrouping together those m and n for which (m, n) = g, replacing m by gm and n by gn, and then\nusing the inequality d(ab) ⩽ d(a)d(b), we find that\n",
+          "sha256": "6104fe34ea1465cdf443ce7867433323a1fccd4783084a988c3c8894750388e3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=1",
+            "line_end": 1435,
+            "line_start": 1162,
+            "mathematical_role": "Combines a truncated reciprocal Euler product with a twisted zeta second moment, gcd reorganization, and Euler factors to prove the split for k=1."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1225,
+          "line_start": 1162,
+          "title": "k=1 reduces to a truncated reciprocal product and a twisted second moment",
+          "unit_id": "openalex_w2090804474_depth_023",
+          "unit_type": "proof-strategy",
+          "why_material": "Expands PX*^{-1} as a short smooth-number Dirichlet polynomial and inserts it into a uniform twisted second-moment formula for zeta."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the X restriction, coefficient behavior, truncation error, coprime formula, and aggregate error bound.",
+          "representation_dependency": "Strongly formula-dependent.",
+          "unit_id": "openalex_w2090804474_depth_023"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1155,
+            "line_start": 1072,
+            "title": "The local logarithmic singularity cancels and periodic images are negligible",
+            "unit_id": "openalex_w2090804474_depth_022",
+            "unit_type": "singularity-cancellation-and-bound",
+            "why_material": "Shows that the singular factor and j=0 cosine-integral term combine to a finite b(0), while all nonzero periodic copies contribute only O(1/log X)."
+          },
+          {
+            "line_end": 1367,
+            "line_start": 1232,
+            "title": "Gcd decomposition turns the k=1 diagonal into an Euler product",
+            "unit_id": "openalex_w2090804474_depth_024",
+            "unit_type": "decomposition-and-tail-control",
+            "why_material": "Groups coefficient pairs by their gcd, uses the divisor identity for gcd weights, extends finite smooth sums with controlled tails, and reaches a multiplicative infinite sum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2090804474_depth_023",
+        "spontaneous": {
+          "unit_id": "openalex_w2090804474_depth_023",
+          "spontaneous_reading": "For k=1 the reciprocal prime factor becomes a short Möbius-like filter, and a twisted zeta second moment exposes the gcd-weighted diagonal that survives averaging."
+        },
+        "directed": {
+          "unit_id": "openalex_w2090804474_depth_023",
+          "source_grounded_mathematics": "After replacing P_X by P_X^*, its inverse is expanded over X-smooth numbers with coefficients alpha_{-1}, equal to the Möbius function on the smaller smooth range and divisor-bounded generally. Truncation at a small power of T has a power-saving error. Inserting the polynomial into a uniform twisted second-moment formula for |zeta|^2 yields a double sum weighted by gcd(m,n), with the total stated off-diagonal/error contribution negligible.",
+          "conceptual_reading": "The reciprocal Euler product removes small-prime content through Möbius cancellation, and time averaging converts the residual interaction with zeta into an arithmetic correlation kernel controlled by shared divisors.",
+          "representation_or_bridge": "A reciprocal hybrid factor becomes a short Dirichlet polynomial; the twisted second-moment identity then maps analytic averaging to a gcd-weighted coefficient sum.",
+          "boundary_or_failure": "This strategy is specialized to k=1 here, requires X much smaller than (log T)^(2-epsilon), and stops before evaluating the main gcd sum.",
+          "uncertainty": "The proof route and restrictions are clear; coefficient ranges, truncation exponents, and the twisted-moment error are strongly formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2090804474_depth_023",
+        "critic_decision": "revise",
+        "supported": [
+          "For k=1 the reciprocal corrected prime factor is expanded over X-smooth numbers, with Mobius coefficients on the smaller smooth range and divisor bounds generally.",
+          "The series is truncated with a power-saving error and inserted into a twisted second-moment formula, producing the gcd-weighted main double sum and a negligible aggregate formula error."
+        ],
+        "inference": [
+          "Interpreting the reciprocal product as a small-prime Mobius filter and the gcd weight as shared-divisor correlation is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The labels gcd-weighted diagonal and off-diagonal/error are not supported by the displayed step: the surviving object is a gcd-weighted main double sum, while the bounded remainder is the error term in the twisted-moment formula, not an identified off-diagonal contribution."
+        ],
+        "paraphrase_or_style_risk": [
+          "Möbius-like is appropriately qualified because alpha_{-1} equals mu only on the stated smaller range."
+        ],
+        "context_or_ocr_risk": [
+          "Coefficient ranges, truncation exponents, coprimality conditions, and the twisted-moment error are strongly formula-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace diagonal by main double sum and off-diagonal/error by aggregate twisted-moment error; keep the later gcd decomposition separate from this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The textual claim and setup are preserved, but the curves themselves are absent from the normalized text layer.",
+      "line_end": 2276,
+      "line_start": 2252,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Image-dependent for independent assessment of accuracy; formulas are extraction-sensitive and the claim is only an illustration.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reports that PX and ZX change with X but their product largely cancels that dependence and closely approximates zeta near a high zero; it also defines the actual plotted sharp/unsmoothed factors.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pointwise prime-zero compensation across two X values",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_034.txt",
+      "unit_bytes": 1608,
+      "unit_id": "openalex_w2090804474_depth_034",
+      "unit_sha256": "e311ec085e683872beccd9ef2c6b7c7c208a8247991d280711070fb5ac0f14bd",
+      "unit_type": "computational-illustration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_034.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2244,
+          "line_end": 2251,
+          "text": "\n   The treatment of T3 is almost identical and leads to the same bound. Thus, combining our\nestimates for T1 (see (46)), T2 , and T3 with (41), and noting that we may take ǫ1 > 0 as small as\nwe like, we obtain (38). This completes the proof of the case k = 2 of Theorem 3 and thus, also\nthe proof of the theorem.\n\n\n\n",
+          "sha256": "ae2a2e4dca7a8d0ae180d54bb6a727d0f05d5423c55862f7f6c56e191bea5dda"
+        },
+        "after": {
+          "line_start": 2277,
+          "line_end": 2284,
+          "text": "\n<!-- source-page: 32 -->\n\n32                         S.M. GONEK, C.P. HUGHES, AND J.P. KEATING\n\n\n\n                   7\n",
+          "sha256": "5e472f82695c6bfa065d5dc4b10dbefc0701fbe829d9ac1fda82b7f559d99cb4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A. Graphs",
+            "line_end": 2342,
+            "line_start": 2252,
+            "mathematical_role": "Describes a pointwise numerical illustration of complementary X-dependence; the normalized text preserves prose and captions but not the plotted curves."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2276,
+          "line_start": 2252,
+          "title": "Pointwise prime-zero compensation across two X values",
+          "unit_id": "openalex_w2090804474_depth_034",
+          "unit_type": "computational-illustration",
+          "why_material": "Reports that PX and ZX change with X but their product largely cancels that dependence and closely approximates zeta near a high zero; it also defines the actual plotted sharp/unsmoothed factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The textual claim and setup are preserved, but the curves themselves are absent from the normalized text layer.",
+          "representation_dependency": "Image-dependent for independent assessment of accuracy; formulas are extraction-sensitive and the claim is only an illustration.",
+          "unit_id": "openalex_w2090804474_depth_034"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2248,
+            "line_start": 2155,
+            "title": "Multiplicative bounds make both k=2 off-diagonal terms negligible",
+            "unit_id": "openalex_w2090804474_depth_033",
+            "unit_type": "error-bound-and-proof-completion",
+            "why_material": "Substitutes the factorized S(d), bounds the residual coprime sum and Euler products, obtains the required small bound for T2, transfers it to T3, and completes Theorem 3."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Changing X alters PX and ZX individually, but both the moment calculation and the reported pointwise experiment show compensating dependence in their product.",
+            "limit": "The appendix plots are unavailable in the normalized text and constitute an illustration rather than independent proof.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_003",
+              "openalex_w2090804474_depth_006",
+              "openalex_w2090804474_depth_007",
+              "openalex_w2090804474_depth_034"
+            ],
+            "title": "Theoretical and pointwise X cancellation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 2336,
+              "line_start": 2277,
+              "reason": "The three graphical curves are reduced to page markers, axis numbers, and captions, so their visual evidence cannot be audited from normalized text."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2090804474_depth_034",
+        "spontaneous": {
+          "unit_id": "openalex_w2090804474_depth_034",
+          "spontaneous_reading": "The appendix offers a pointwise sanity check for the hybrid representation: changing X substantially changes the prime and zero factors separately, but their product is reported to remain close to ζ. The plotted factors are deliberately sharper finite proxies, so the experiment tests compensation rather than the theorem's exact smoothed objects."
+        },
+        "directed": {
+          "unit_id": "openalex_w2090804474_depth_034",
+          "source_grounded_mathematics": "Near the 10^12-th zeta zero, the authors compare |P_X|, |Z_X|, and their product for X=26.31≈log γ_{10^12} and X=1000 over an x-interval covering twenty nearby zeros. P_X is computed from a finite von Mangoldt cosine sum, while Z_X is an unsmoothed product over one hundred nearby zeros using exp(Ci(|x+t0-γ_n|log X)). The text reports that individual X-dependence mostly cancels and the product accurately approximates ζ pointwise.",
+          "conceptual_reading": "The cutoff X reallocates local behavior between a prime-side factor and a zero-side factor. Stability of their product under two cutoffs is evidence for complementarity of the representation, but only at the level of a numerical illustration.",
+          "representation_or_bridge": "The prime sum and truncated zero product are two finite coordinate views of the same local zeta behavior. Their product is the bridge object intended to preserve the target while each factor exposes a different source of oscillation.",
+          "boundary_or_failure": "The normalized artifact contains no curves, numerical residuals, or error metric, so the accuracy claim cannot be independently assessed. The factors plotted are sharp or unsmoothed truncations, and the experiment is illustrative rather than a proof of Theorem 1.",
+          "uncertainty": "Confidence in the qualitative setup is high from the prose, but confidence in empirical accuracy is limited because the image evidence is absent and the formulas are extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2090804474_depth_034",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose explicitly reports that P_X and Z_X depend on X, that their product mostly cancels this dependence, and that it gives an accurate pointwise approximation in the plotted example.",
+          "The span supplies the two X values, the finite von Mangoldt cosine sum, the one-hundred-zero Ci product, the x-range, and the explicit warning that the plotted Z_X is unsmoothed and truncated."
+        ],
+        "inference": [
+          "Reading the cutoff as reallocating behavior between prime-side and zero-side factors is a reasonable interpretation of the authors' reported compensation, provided it remains clearly labeled as an interpretation of the report."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that changing X substantially changes the two factors is stronger than the available prose, which says only that they depend on X; the absent curves prevent auditing the magnitude.",
+          "Calling both plotted factors deliberately sharper proxies imports intention not stated in the span; only the displayed finite forms and the explicit unsmoothed-truncated qualification for Z_X are available."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase two finite coordinate views is metaphorical but remains anchored to the displayed prime sum, zero product, and their product."
+        ],
+        "context_or_ocr_risk": [
+          "The normalized artifact contains no curves, residuals, or error metric, so the empirical accuracy and degree of cancellation cannot be independently assessed; the formulas also retain extraction risk."
+        ],
+        "missed_mechanism": [
+          "The candidate should keep the authors' textual report distinct from empirical evidence visible in the available artifact."
+        ],
+        "revision_instructions": [
+          "Replace substantially changes with the source-bounded statement that the factors depend on X and the authors report mostly cancelling dependence in their product.",
+          "Remove the unsupported intention claim deliberately sharper; describe the displayed prime sum and the explicitly unsmoothed, one-hundred-zero truncation directly, while retaining the existing limitation that the curves and error metrics are unavailable."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "5ba761478d9a85ebd315944dce174a3c8ef589f12dd897694b70ffb96aebb170"
+}

@@ -1,0 +1,430 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2066135483_e85600ca_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2066135483",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The output is the explicit one-minus-M-to-minus-two-tau-times-one-minus-b contribution; all asymptotics remain within the source's shift regime.",
+      "line_end": 2425,
+      "line_start": 2279,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: pole orders, Euler products, and powers are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies the convolution lemma twice below the mollifier breakpoint, extends the gamma sum with controlled error, shows the apparent minus-tau pole is killed by reciprocal-zeta zeros, and evaluates the remaining pole through an Euler-product asymptotic.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [
+        34,
+        35
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The short gamma range collapses to a single tau pole",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d25.txt",
+      "unit_bytes": 8302,
+      "unit_id": "openalex_w2066135483_d25",
+      "unit_sha256": "977a24484ac59c9224dbfc7dee6a659cd2ce6f4ad1079146a31da47d7645db96",
+      "unit_type": "short-range main-term extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d25.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2271,
+          "line_end": 2278,
+          "text": "This clearly equals\n                              ∞\n                              X    s−k (k) \u0010 log(y/c) \u0011\n                                         R             ,\n                                  logk y\n                                  k=0\n                                               log y\ncompleting our proof of the Lemma.\n",
+          "sha256": "70b76bcf560c8d2f034f765be5d6c45898e9261dcc04dcf01a48ca488314f7ce"
+        },
+        "after": {
+          "line_start": 2426,
+          "line_end": 2433,
+          "text": "                          3ζ(2)\n\n   We now turn to the corresponding contribution from the terms γ > M 1−b in (6.6).\nApplying Lemma 6.1 with u, v, g(n), and Gw (s, γ; u, v) as above, and with R(x) = P (x),\nand y = M . We get that for any odd M 1−b ≤ γ < M , (since Q( log(M/aγ)\n                                                                  log M ) = P ( log(M/aγ)\n                                                                                   log M  )\nfor γ in this range)\n",
+          "sha256": "0c116e8b14458d9127a5a26a6261ee61981dab0d394866237a0137da528f2374"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Proof of Proposition 2.4",
+            "line_end": 2577,
+            "line_start": 1997,
+            "mathematical_role": "Inserts the moment formula into the mollified mean, reorganizes the coefficient convolution, evaluates short and long mollifier ranges, and recovers the explicit near-central moment."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2425,
+          "line_start": 2279,
+          "title": "The short gamma range collapses to a single tau pole",
+          "unit_id": "openalex_w2066135483_d25",
+          "unit_type": "short-range main-term extraction",
+          "why_material": "Applies the convolution lemma twice below the mollifier breakpoint, extends the gamma sum with controlled error, shows the apparent minus-tau pole is killed by reciprocal-zeta zeros, and evaluates the remaining pole through an Euler-product asymptotic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The output is the explicit one-minus-M-to-minus-two-tau-times-one-minus-b contribution; all asymptotics remain within the source's shift regime.",
+          "representation_dependency": "Very high: pole orders, Euler products, and powers are formula-sensitive.",
+          "unit_id": "openalex_w2066135483_d25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2278,
+            "line_start": 2168,
+            "title": "A zero-free-region contour evaluates polynomial mollifier convolutions uniformly",
+            "unit_id": "openalex_w2066135483_d24",
+            "unit_type": "mollifier convolution lemma",
+            "why_material": "Factors a generic mollifier convolution by two reciprocal zeta functions, uses the polynomial's double zero at the endpoint, shifts within a zeta zero-free region, and expresses the result as a local residue plus exponentially decaying error."
+          },
+          {
+            "line_end": 2563,
+            "line_start": 2428,
+            "title": "Derivative data of the taper controls the long gamma contribution",
+            "unit_id": "openalex_w2066135483_d26",
+            "unit_type": "long-range boundary calculation",
+            "why_material": "Applies the convolution residue beyond the breakpoint, expands the local analytic factor, converts the gamma sum to an integral involving Q, Q-prime, and Q-double-prime, and uses contour residues plus integration by parts to obtain the explicit long-range term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reorganizing the square-free coefficient pairs exposes a generic convolution lemma; splitting at the taper breakpoint then makes the short range a pole calculation and the long range an integral controlled by the taper's endpoint and derivative conditions.",
+            "limit": "The source evaluates one constrained polynomial family and explicitly leaves optimal mollifier selection unresolved.",
+            "parent_local_unit_ids": [
+              "openalex_w2066135483_d23",
+              "openalex_w2066135483_d24",
+              "openalex_w2066135483_d25",
+              "openalex_w2066135483_d26",
+              "openalex_w2066135483_d27"
+            ],
+            "title": "A mollifier breakpoint turns coefficient design into boundary and derivative data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2427,
+              "line_start": 2426,
+              "reason": "Blank transition to the complementary mollifier range."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d25",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d25",
+          "spontaneous_reading": "The short-γ calculation works by splicing two applications of the polynomial convolution lemma so that the piecewise mollifier Q is represented on both sides of its breakpoint. After this compression, a contour integral that appears to have poles at ±τ actually has only the τ residue: reciprocal-zeta factors vanish to second order at −τ. An Euler-product/Perron estimate for the remaining square-free γ-sum then produces the factor 1−M^{-2τ(1−b)} with a controlled error."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d25",
+          "source_grounded_mathematics": "For γ≤M^{1−b}, Lemma 6.1 is applied with R=P at scale M and with R(x)=1−P(b+x(1−b)) at scale M^{1−b}; their sum evaluates the Q-weighted a-sum, and the analogous b-sum follows with δ1 replaced by δ2. Substitution into the w-contour leaves one simple pole at w=τ because the reciprocal-zeta product kills the apparent w=−τ pole. Lemma 6.2 factors the square-free γ coefficients through ζ(s)F_w(s), uses Perron and contour shifting to obtain ζ(1+2τ)(1−x^{-2τ}), and yields (6.9), proportional to 1−M^{-2τ(1−b)} plus the stated shift-dependent error.",
+          "conceptual_reading": "The decisive move is to align the coefficient representation with the mollifier breakpoint before taking residues. This turns a nested convolution into a normalized multiplicative partial sum, while analytic zeros select which formal contour pole genuinely contributes. The computation separates local singular structure in w from global accumulation over γ.",
+          "representation_or_bridge": "The bridge objects are the two polynomial presentations of Q, the local factors G_w and H_w/h_w, the contour integrand in w, and the Dirichlet series ∑f_w(γ)γ^{-s}=ζ(s)F_w(s). The last representation exposes the ζ pole whose truncated mass is 1−x^{-2τ}; partial summation also bridges that estimate to smooth γ-weights.",
+          "boundary_or_failure": "The conclusion is confined to γ≤M^{1−b}, the prescribed contour and small-shift regime, and the chosen piecewise polynomial mollifier. The pole cancellation depends on exact reciprocal-zeta factors and does not follow merely from seeing formal denominators at ±τ. Lemma 6.2 supplies an asymptotic, not an exact finite identity, and this unit does not address the complementary long-γ range.",
+          "uncertainty": "The extraction is formula-sensitive: subscripts, products over signs, pole orders, and powers should be checked against the scan before exact reuse. The prose clearly supports the mechanism and (6.9), but some displayed formulas are visually compressed or potentially OCR-corrupted."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is where the taper's endpoint conditions eliminate boundary terms and convert coefficient design into the final moment functional.",
+      "line_end": 2563,
+      "line_start": 2428,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: Taylor coefficients, contour denominators, and the final integral need scan-level verification for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies the convolution residue beyond the breakpoint, expands the local analytic factor, converts the gamma sum to an integral involving Q, Q-prime, and Q-double-prime, and uses contour residues plus integration by parts to obtain the explicit long-range term.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [
+        36,
+        37
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative data of the taper controls the long gamma contribution",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d26.txt",
+      "unit_bytes": 9084,
+      "unit_id": "openalex_w2066135483_d26",
+      "unit_sha256": "57d487e3df60633701802dad9cb578df7756cc46d06857c2fee781e585292197",
+      "unit_type": "long-range boundary calculation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d26.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2420,
+          "line_end": 2427,
+          "text": "summation, and arguing along similar lines.\n  Using Lemma 6.2 in (6.8) above, and combining with the error term estimate (6.7), we\nconclude that the part of the M1 (l) contribution arising from the γ ≤ M 1−b terms equals\n\n                          2Φ̌(0)\n(6.9)                            (1 − M −2τ (1−b) ) + O(log2 X|δ1 |3 M −2τ (1−b) ).\n                          3ζ(2)\n\n",
+          "sha256": "b0cc0ff5e3b2261eb51d463cd74bb5b642f7bfc78fe436d85542c4c1b9258962"
+        },
+        "after": {
+          "line_start": 2564,
+          "line_end": 2571,
+          "text": "   The calculation of the M2 (l) contribution to (6.2a) is entirely similar. We obtain that\nthis contribution equals\n               \u0012 \u0013−τ\n         2Φ̌(0) 8X       (8X/π)δ − (8X/π)−δ b −2τ (1−x) ′                Q′′ (x) 2\n                                              Z\n       −                                          M           Q (x) +              dx\n         3ζ(2) π              2δ log M          0                      2δ1 log M\n                                                O(X −τ M −2τ (1−b) |δ1 |6 log5 X).\n",
+          "sha256": "6c501cbba38b8b9e6718cde28ff67adbb7a1c080ec0821eadf44fc6aba42a344"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Proof of Proposition 2.4",
+            "line_end": 2577,
+            "line_start": 1997,
+            "mathematical_role": "Inserts the moment formula into the mollified mean, reorganizes the coefficient convolution, evaluates short and long mollifier ranges, and recovers the explicit near-central moment."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2563,
+          "line_start": 2428,
+          "title": "Derivative data of the taper controls the long gamma contribution",
+          "unit_id": "openalex_w2066135483_d26",
+          "unit_type": "long-range boundary calculation",
+          "why_material": "Applies the convolution residue beyond the breakpoint, expands the local analytic factor, converts the gamma sum to an integral involving Q, Q-prime, and Q-double-prime, and uses contour residues plus integration by parts to obtain the explicit long-range term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is where the taper's endpoint conditions eliminate boundary terms and convert coefficient design into the final moment functional.",
+          "representation_dependency": "Very high: Taylor coefficients, contour denominators, and the final integral need scan-level verification for exact reuse.",
+          "unit_id": "openalex_w2066135483_d26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2425,
+            "line_start": 2279,
+            "title": "The short gamma range collapses to a single tau pole",
+            "unit_id": "openalex_w2066135483_d25",
+            "unit_type": "short-range main-term extraction",
+            "why_material": "Applies the convolution lemma twice below the mollifier breakpoint, extends the gamma sum with controlled error, shows the apparent minus-tau pole is killed by reciprocal-zeta zeros, and evaluates the remaining pole through an Euler-product asymptotic."
+          },
+          {
+            "line_end": 2572,
+            "line_start": 2564,
+            "title": "The conjugate residue family completes the explicit near-central moment",
+            "unit_id": "openalex_w2066135483_d27",
+            "unit_type": "moment completion",
+            "why_material": "Records the analogous M2 contribution and combines it with M1 to recover Proposition 2.4, including the second symmetry quotient in the final moment."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reorganizing the square-free coefficient pairs exposes a generic convolution lemma; splitting at the taper breakpoint then makes the short range a pole calculation and the long range an integral controlled by the taper's endpoint and derivative conditions.",
+            "limit": "The source evaluates one constrained polynomial family and explicitly leaves optimal mollifier selection unresolved.",
+            "parent_local_unit_ids": [
+              "openalex_w2066135483_d23",
+              "openalex_w2066135483_d24",
+              "openalex_w2066135483_d25",
+              "openalex_w2066135483_d26",
+              "openalex_w2066135483_d27"
+            ],
+            "title": "A mollifier breakpoint turns coefficient design into boundary and derivative data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2427,
+              "line_start": 2426,
+              "reason": "Blank transition to the complementary mollifier range."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d26",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d26",
+          "spontaneous_reading": "Above the mollifier breakpoint, the convolution residue no longer collapses to a constant: its Taylor coefficients expose Q, Q′, and Q′′. Lemma 6.2 converts the resulting γ-sum into a weighted integral N(w); the outer contour reduces this to N(τ) and N(−τ), and integration by parts uses the taper endpoint conditions to remove boundary clutter. Thus the detailed coefficient design survives only through a compact derivative functional of Q."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d26",
+          "source_grounded_mathematics": "For M^{1−b}≤γ≤M, Lemma 6.1 expresses each Q-weighted inner sum as a residue at s=0 plus a decaying error. Expanding G_w(1+s,γ;u,v) divided by two zeta factors gives terms multiplying Q, Q′/log M, and Q′′/log²M; multiplying the δ1 and δ2 versions and applying Lemma 6.2 changes the γ-sum into the integral N(w) in (6.10). The w-contour is then evaluated through N(τ)−(8X/π)^{-2τ}N(−τ). Integration by parts with Q(0)=Q′(0)=0, Q(b)=1, and Q′(b)=0 yields the long-range term, which combines with (6.9) to give the M1 contribution (6.13).",
+          "conceptual_reading": "A local residue expansion translates arithmetic convolution into differential data of the taper. The subsequent summation and contour steps compress a high-dimensional coefficient calculation into two evaluations of one functional, N(±τ). Endpoint constraints are mathematically active: they determine which boundary terms remain, rather than serving as cosmetic smoothness assumptions.",
+          "representation_or_bridge": "The Taylor series at s=0 bridges reciprocal-zeta behavior to the differential operator acting on Q. Lemma 6.2 and a change of variables bridge the discrete square-free γ-range to an integral over x∈[0,b] weighted by M^{-2τ(1−x)}. N(w) packages that integral for the outer contour, while integration by parts exposes the endpoint data and the final square involving Q′ and Q′′/(2δ1 log M).",
+          "boundary_or_failure": "This is a calculation for one constrained polynomial taper and the long range M^{1−b}≤γ≤M; it does not establish optimality of Q or a general variational principle. The error estimates depend on the stated choices of M, contour C, and shift sizes. The reduction also relies on Lemma 6.2 and on exact endpoint identities; without them, extra boundary terms or uncontrolled remainders would remain.",
+          "uncertainty": "Representation dependence is very high. The extracted Taylor-coefficient sentence appears to label the coefficient of the quadratic contribution as a3 where the subsequent Q′′ term suggests a possible formula or OCR ambiguity, and one displayed G_w factor appears with an unexpected argument γ. Exact coefficients, denominators, and signs require scan verification, although the Q/Q′/Q′′ mechanism and N(±τ) reduction are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivation is stated as entirely similar, so this unit supports the resulting term but not an independently detailed proof.",
+      "line_end": 2572,
+      "line_start": 2564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the short final formula is the material content and should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records the analogous M2 contribution and combines it with M1 to recover Proposition 2.4, including the second symmetry quotient in the final moment.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The conjugate residue family completes the explicit near-central moment",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d27.txt",
+      "unit_bytes": 623,
+      "unit_id": "openalex_w2066135483_d27",
+      "unit_sha256": "144d16e665f6eb16c1211eca119eb4b594bd9c405eb84fca2f365054069e589e",
+      "unit_type": "moment completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d27.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2556,
+          "line_end": 2563,
+          "text": "       3ζ(2)                 2τ log M      0                    2δ1 log M\n                           + O(|δ1 |3 M −2τ log2 X + M −2τ (1−b) |δ1 |6 log5 X)\n  Taking this together with (6.9) we have determined the M1 (l) contribution to be\n           2Φ̌(0) \u0010    1 − (8X/π)−2τ b −2τ (1−x) ′            Q′′ (x) 2 \u0011\n                                      Z\n                   1+                    M          Q (x) +             dx\n           3ζ(2)          2τ log M     0                    2δ1 log M\n(6.13)                                    + O(M −2τ (1−b) |δ1 |6 log5 X).\n",
+          "sha256": "d69f0f4c187f3c055d1a14da95af41b17ee07cbcba76b9cf24ac9ef72dc8c769"
+        },
+        "after": {
+          "line_start": 2573,
+          "line_end": 2580,
+          "text": "\n<!-- source-page: 38 -->\n\n38                          J. B. CONREY AND K. SOUNDARARAJAN\n\n                                            References\n[1]  R. Balasubramanian and V. Kumar Murty, Zeros of Dirichlet L-functions, Ann. Scient. École Norm.\n     Sup. 25 (1992), 567-615.\n",
+          "sha256": "468cd9bd9a170a04eb79ddc74e6d72ff21126900f609a1d1e103615660e1e9e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Proof of Proposition 2.4",
+            "line_end": 2577,
+            "line_start": 1997,
+            "mathematical_role": "Inserts the moment formula into the mollified mean, reorganizes the coefficient convolution, evaluates short and long mollifier ranges, and recovers the explicit near-central moment."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2572,
+          "line_start": 2564,
+          "title": "The conjugate residue family completes the explicit near-central moment",
+          "unit_id": "openalex_w2066135483_d27",
+          "unit_type": "moment completion",
+          "why_material": "Records the analogous M2 contribution and combines it with M1 to recover Proposition 2.4, including the second symmetry quotient in the final moment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The derivation is stated as entirely similar, so this unit supports the resulting term but not an independently detailed proof.",
+          "representation_dependency": "High: the short final formula is the material content and should be checked against the scan.",
+          "unit_id": "openalex_w2066135483_d27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2563,
+            "line_start": 2428,
+            "title": "Derivative data of the taper controls the long gamma contribution",
+            "unit_id": "openalex_w2066135483_d26",
+            "unit_type": "long-range boundary calculation",
+            "why_material": "Applies the convolution residue beyond the breakpoint, expands the local analytic factor, converts the gamma sum to an integral involving Q, Q-prime, and Q-double-prime, and uses contour residues plus integration by parts to obtain the explicit long-range term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reorganizing the square-free coefficient pairs exposes a generic convolution lemma; splitting at the taper breakpoint then makes the short range a pole calculation and the long range an integral controlled by the taper's endpoint and derivative conditions.",
+            "limit": "The source evaluates one constrained polynomial family and explicitly leaves optimal mollifier selection unresolved.",
+            "parent_local_unit_ids": [
+              "openalex_w2066135483_d23",
+              "openalex_w2066135483_d24",
+              "openalex_w2066135483_d25",
+              "openalex_w2066135483_d26",
+              "openalex_w2066135483_d27"
+            ],
+            "title": "A mollifier breakpoint turns coefficient design into boundary and derivative data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d27",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d27",
+          "spontaneous_reading": "The final step supplies the companion M2 residue family with the expected symmetry factor and the same taper functional as M1, then inserts both expressions into the earlier decomposition to recover Proposition 2.4. Its mathematical content is completion by a conjugate or functional-equation-side contribution, not a new derivation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d27",
+          "source_grounded_mathematics": "The source states that the M2(l) calculation is entirely similar and records its resulting term: a factor involving (8X/π)^{-τ}, a difference quotient built from (8X/π)^{±δ}, and the integral of M^{-2τ(1−x)}(Q′(x)+Q′′(x)/(2δ1 log M))², with an error of order X^{-τ}M^{-2τ(1−b)}|δ1|^6 log^5X. Substituting this result together with the M1 formula (6.13) into (6.2a) is asserted to yield Proposition 2.4.",
+          "conceptual_reading": "The proof architecture closes by matching two residue families rather than recomputing the whole moment from scratch. The shared integral shows that the same mollifier derivative data controls both sides, while the prefactors encode the symmetry transformation between them.",
+          "representation_or_bridge": "The explicit M2 formula is the bridge from the unshown analogous calculation to the earlier decomposition (6.2a). Its common Q-derivative integral aligns M2 with M1, and the powers of 8X/π together with the δ-difference quotient record the transformed residue contribution needed for the final moment.",
+          "boundary_or_failure": "This narrow unit does not contain the derivation of M2; 'entirely similar' supports the displayed result but not an independent verification of every intermediate step. It also only asserts that substitution recovers Proposition 2.4, whose full statement and algebra are outside this unit.",
+          "uncertainty": "The short displayed formula carries high extraction risk, including signs, exponents, quotient placement, and the boundary between the main term and O-term. The structural completion is clear, but exact reuse of the formula requires scan-level checking."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "e4d2f05882beb1b1f3fd64923afda8a5a952e451cceaf5f7c970d16179e8e2be"
+}

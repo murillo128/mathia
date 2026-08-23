@@ -1,0 +1,178 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2095113110",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2095113110_91250cc8_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The support radius simultaneously governs contour-growth errors, whether a boundary secondary term is visible, and how long the odd character sums become; different analytic inputs therefore buy different support ranges.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2095113110_v2_u08",
+          "openalex_w2095113110_v2_u10",
+          "openalex_w2095113110_v2_u12",
+          "openalex_w2095113110_v2_u13"
+        ],
+        "proposed_limit": "The reported thresholds are method- and family-specific, not intrinsic impossibility boundaries.",
+        "source_id": "openalex_w2095113110",
+        "synthesis_id": "riemann_v2_within_77c6380e6390a26dcf1b7688",
+        "title": "Fourier support is an analytic resource budget"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the auxiliary gamma, zeta, and Paley-Wiener-type bounds needed to justify the shift.",
+          "line_end": 548,
+          "line_start": 404,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent; exact contour coordinates and error exponent should be source-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites the arithmetic factor as a zeta ratio, moves the contour, extracts the pole at the origin as minus one-half g(0), and bounds the residues from critical zeros using Fourier-support growth.",
+          "source_id": "openalex_w2095113110",
+          "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+          "source_page_markers_inside_unit": [
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Shift the remainder contour so poles and zeta zeros separate",
+          "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u08.txt",
+          "unit_bytes": 8986,
+          "unit_id": "openalex_w2095113110_v2_u08",
+          "unit_sha256": "4d3b98210f45fd9ecb7514236b84906ac96b10b04969260c2cb5a378228e8ec7",
+          "unit_type": "contour-residue mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Factorization exposes which singularity carries the universal term and which singularities encode arithmetic fluctuation. Support limits how much exponential growth the test function can acquire during the shift.",
+            "nonparaphrase_operation": "The zeta-ratio identity bridges an Euler product to pole geometry; contour motion bridges poles and zeros to separate contributions; Paley-Wiener-type bounds bridge Fourier support to residue control.",
+            "quality_reason": "The source rewrites A_D as a zeta ratio, shifts the contour, separates the zeta pole at the origin from residues caused by nontrivial denominator zeros, and bounds the latter using support-driven growth, gamma ratios, and zeta estimates under RH. No material unsupported claim; the output avoids fixing the OCR-inconsistent intermediate contour coordinate. The singularity-separation language is common but here is anchored to a specific zeta quotient and residue computation.",
+            "source_support": "The arithmetic Euler product is algebraically identified with zeta(2) divided by a shifted zeta factor. The contour is shifted in an auxiliary real parameter: the zeta pole at the origin contributes minus one-half g(0), while denominator zeros on RH create residues at a later shift. Bounds for the complexified test function, gamma ratios, and zeta factors make those residues and the terminal line small under restricted support.",
+            "speculation_status": "The strongest residue estimate assumes RH, and the exact contour coordinates and support-dependent exponent are essential. High confidence in the separation mechanism; exact shifts, cancellations, and error powers are formula-sensitive. Interpreting factorization as exposing universal-pole versus arithmetic-zero contributions is reasonable. The extracted text is internally inconsistent about one w-value, so exact contour coordinates and error exponents must be source-checked."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Records that this term appears only when Fourier support reaches beyond (-1,1).",
+          "line_end": 689,
+          "line_start": 577,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact coefficient is formula-sensitive; reuse requires checking the displayed expansion.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows that after truncating the rapidly decaying integral, expansions of the gamma ratio, arithmetic factor, zeta pole, and averaged conductor combine into a first 1/log X correction evaluated by the Fourier transform at one.",
+          "source_id": "openalex_w2095113110",
+          "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Taylor-expand every local factor at the support boundary",
+          "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u10.txt",
+          "unit_bytes": 8064,
+          "unit_id": "openalex_w2095113110_v2_u10",
+          "unit_sha256": "c41600bc8db4f792058bcb69243dc0a58f70afd60b23fa7165cba882a242a3fa",
+          "unit_type": "secondary-term extraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Lower-order information is a coherent interference of archimedean, Euler-product, pole, and family-size corrections. None of the local expansions alone is the secondary term.",
+            "nonparaphrase_operation": "Taylor expansion aligns heterogeneous factors on the common 1/log X scale; Fourier transformation converts the residual oscillation into evaluation at frequency one.",
+            "quality_reason": "The proof truncates the tau range, Taylor-expands the gamma ratio, arithmetic factor, zeta Laurent series, and averaged discriminant phase, and shows the first correction is a combined coefficient multiplying the Fourier transform at frequency one. No material unsupported claim; the output keeps normalization dependence and remainder error visible. 'Align heterogeneous factors on one scale' could be generic, but the four displayed expansions and frequency-one evaluation make it specific.",
+            "source_support": "After truncating the rapidly decaying tau-integral, the proof expands the gamma ratio, the arithmetic zeta ratio, zeta's Laurent series at one, and the averaged discriminant phase through first order in 1/log X. The main singular term gives minus one-half g(0); the next constant multiplies the Fourier transform at 1 and therefore appears only when support reaches beyond (-1,1).",
+            "speculation_status": "The coefficient depends on exact normalization, and the calculation is an asymptotic expansion with a controlled but nonzero remainder. The support-boundary mechanism is clear; the exact combined coefficient must be taken from the displayed formula. Describing the lower-order term as interference among several local factors is reasonable because no individual expansion supplies the final coefficient. Every sign and constant in the combined coefficient is formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the self-contained but weaker of the paper's two odd-term methods.",
+          "line_end": 1051,
+          "line_start": 981,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The mechanism is clear; precise logarithmic powers and exponent require checking the displays.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies Jutila's mean-square estimate to nonsquare odd prime powers and Cauchy-Schwarz to obtain a support-dependent power saving.",
+          "source_id": "openalex_w2095113110",
+          "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+          "source_page_markers_inside_unit": [
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A quadratic large-sieve bound controls odd powers",
+          "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u12.txt",
+          "unit_bytes": 4230,
+          "unit_id": "openalex_w2095113110_v2_u12",
+          "unit_sha256": "4c28c1d87650463f7a16a17537b7354ecdf772ca530911b160a5e18bc8036f1f",
+          "unit_type": "character-sum bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Algebraic parity first removes redundant powers, then a black-box average cancellation estimate controls the remaining nonsquare family oscillation.",
+            "nonparaphrase_operation": "Quadraticity bridges all odd powers to one character sum; Jutila's large-sieve-type inequality and Cauchy-Schwarz bridge its second moment to the one-level-density error.",
+            "quality_reason": "Odd quadratic powers reduce to chi_d(p), Jutila's nonsquare mean-square bound applies, and Cauchy-Schwarz yields the displayed support-dependent saving, which disappears as sigma approaches one. No material unsupported claim; the weaker scope relative to Poisson summation is source-stated. The algebra-plus-cancellation template is anchored to odd prime powers being nonsquares and to Jutila's exact input.",
+            "source_support": "The odd contribution reduces to sums of chi_d(p), since odd powers of a quadratic character equal the character. Jutila's mean-square estimate applies to nonsquare arguments p to an odd power. Cauchy-Schwarz combines that estimate with the squared analytic weights to give an error decaying like a support-dependent power of X times logarithms.",
+            "speculation_status": "This self-contained route is weaker than Poisson summation and loses its power saving as support approaches one. The mechanism and comparative weakness are clear; precise logarithmic powers and exponents are display-dependent. Calling parity reduction followed by black-box average cancellation the mechanism is reasonable. The logarithmic powers and X exponent are display-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes why several n-level error terms vanish in the one-level odd case and how parameters are balanced.",
+          "line_end": 1239,
+          "line_start": 1052,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense Gauss-sum and error formulas require source verification; the decomposition is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Smooths the discriminant interval, splits squarefreeness at a parameter Z, applies Poisson summation to the main part, and separates zero, square, and nonsquare dual frequencies to improve the support range.",
+          "source_id": "openalex_w2095113110",
+          "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+          "source_page_markers_inside_unit": [
+            17,
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Smooth, square-split, and dualize the odd character sum",
+          "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u13.txt",
+          "unit_bytes": 11312,
+          "unit_id": "openalex_w2095113110_v2_u13",
+          "unit_sha256": "ad65032722b7952b0d675abe6d6993168150525ecfac06c70abb3f8139a89a3f",
+          "unit_type": "Poisson-summation architecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The long original character sum is difficult because cancellation is hidden. Dualization exposes structural frequency classes, allowing the argument to spend different estimates on genuinely different phenomena.",
+            "nonparaphrase_operation": "Mobius inversion bridges squarefreeness to divisor sums; smoothing enables Poisson summation; Gauss sums bridge discriminant oscillation to dual frequencies; parameter balance converts the decomposition into a support-dependent error.",
+            "quality_reason": "The proof smooths a dyadic discriminant range, splits squarefreeness at Z, applies Poisson summation, and treats zero, square, and nonsquare dual frequencies separately before balancing U, Z, and Y. No material unsupported claim; the output notes family specificity, external lemmas, and that no main term arises here. 'Spend different estimates on different phenomena' could be stylistic, but the three m-classes and distinct bounds make it concrete.",
+            "source_support": "For odd squarefree discriminants in a dyadic interval, the sharp interval is smoothed and the Mobius squarefree expansion is split at Z. Poisson summation transforms the main part into dual Gauss sums indexed by m. The zero frequency vanishes in this odd one-level problem, square frequencies are bounded separately, and nonsquare frequencies receive a refined two-range estimate; parameters U, Z, and the prime cutoff are then balanced.",
+            "speculation_status": "The method is family-specific, inherits several external lemmas, and the dense error bookkeeping is essential; it does not produce a main term here. The decomposition is prose-supported; exact Gauss-sum formulas and optimized exponents require source verification. Saying dualization exposes frequency classes hidden in the original long character sum is reasonable. Gauss-sum normalization, smoothing derivatives, and dense error exponents require display verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_24c7060d7d9a797b70af8b46be6005bbb95b8a86edbb33e2a64b2a8174886dd5",
+        "dossier_sha256": "43cc7f618e25100e0a6b960c17709e125b6e0bad6f14a3e85f42436bc9df9c2a"
+      }
+    }
+  ]
+}

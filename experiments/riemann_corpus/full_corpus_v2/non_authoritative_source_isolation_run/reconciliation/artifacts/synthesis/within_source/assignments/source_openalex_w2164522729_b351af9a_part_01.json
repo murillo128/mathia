@@ -1,0 +1,360 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2164522729",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2164522729_b351af9a_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Eisenstein-series poles transfer to the Mellin transform of a modular constant term; after the string partition function is recognized as a moderate-growth automorphic function, the same zero-indexed powers constrain its graded spectrum.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2164522729_v2_u03",
+          "openalex_w2164522729_v2_u04",
+          "openalex_w2164522729_v2_u07"
+        ],
+        "proposed_limit": "The transfer requires the stated cusp-growth and modular-integrability hypotheses and does not apply generally to tachyonic or unoriented amplitudes.",
+        "source_id": "openalex_w2164522729",
+        "synthesis_id": "riemann_v2_within_68d1ff49ff70d665191d9a14",
+        "title": "Zeta zeros enter through Mellin inversion, not through string-specific dynamics"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This version assumes rapid decay at the cusp.",
+          "line_end": 353,
+          "line_start": 244,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mellin, Eisenstein, and inverse-mapping displays are essential; exact normalizations should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Relates the Eisenstein inner product to the Mellin transform of the constant Fourier term and uses reverse mapping to make nontrivial zeta zeros appear as small-horocycle error exponents.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Rankin-Selberg unfolding turns a modular average into a Mellin singularity expansion",
+          "unit_artifact_relpath": "depth/units/openalex_w2164522729_v2_u03.txt",
+          "unit_bytes": 6010,
+          "unit_id": "openalex_w2164522729_v2_u03",
+          "unit_sha256": "dff947db7530ecb590322606e754343d3a0396ee3f0fb7cad5204c687db1da5e",
+          "unit_type": "transform theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2164522729_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For a smooth modular-invariant function with rapid cusp decay, unfolding identifies its Eisenstein inner product with the Mellin transform of the constant Fourier term. The completed Eisenstein series then constrains that transform's singularities, and reverse Mellin mapping turns the nontrivial zeta zeros into the powers tau_2^(1-rho/2) correcting the leading modular average. Thus the displayed asymptotic is geometrically an equidistribution statement: averages on long horocycles tend to the fundamental-domain average, with zeta-zero-indexed error exponents. This bridge gains a one-dimensional description of a global modular average and its convergence rates, but discards the nonconstant Fourier modes and does not remove the analytic-continuation and reverse-mapping proof burden. Smoothness and rapid decay are essential hypotheses, and display-sensitive normalizations remain scan-level risks.",
+            "nonparaphrase_operation": "Combines the transform identity, singularity structure, inverse mapping, and the source's geometric conclusion into a mechanism map: spectral singularities control the error rates by which a one-dimensional horocycle average approaches a two-dimensional modular average, while identifying what the constant-term representation forgets.",
+            "quality_reason": "The interpretation preserves the exact transform chain, names horocycle equidistribution, removes the critic-identified later-example claim, and states the rapid-decay and smoothness boundary without importing adjacent results.",
+            "source_support": "Equations (2.1)-(2.2) explicitly unfold the Eisenstein inner product to M(tau_2^-1 a_0(tau_2),s); the completed series is stated to be holomorphic except for simple poles at 0 and 1; equations (2.3)-(2.4) apply reverse mapping and give the leading (3/pi) integral plus a sum over nontrivial zeta zeros. The following paragraph explicitly interprets the limit as equidistribution of the cusp-tangent horocycle.",
+            "speculation_status": "Accepted source-grounded interpretation. No claim is made that every zero is observable or that coefficients cannot vanish; those claims are absent from this span. Exact completed-zeta normalizations and pole conventions should be checked against the scan before formula-level reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The theorem does not cover exponential rapid growth caused by tachyons.",
+          "line_end": 442,
+          "line_start": 357,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Power, logarithm, and automorphic-factor formulas are display-dependent but semantically intact.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Subtracts the explicit power-log cusp asymptotic before Mellin transformation, tracks its new poles, and restores a constant equal to the modular average plus zeta-zero corrections.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zagier subtraction extends the zero expansion to moderate cusp growth",
+          "unit_artifact_relpath": "depth/units/openalex_w2164522729_v2_u04.txt",
+          "unit_bytes": 4983,
+          "unit_id": "openalex_w2164522729_v2_u04",
+          "unit_sha256": "5f7b7fa850ee5560d5399900ca0ee72473100163b1f26371c62eb5873a30e1e6",
+          "unit_type": "extension theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2164522729_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Subtraction separates known local cusp behavior from globally informative remainder. It extends the same spectral bridge without confusing predictable power terms with zero-driven errors.",
+            "nonparaphrase_operation": "The regularized constant term a_0-phi and the automorphic factor Psi(alpha_i) bridge moderate growth to a Mellin transform suitable for inversion.",
+            "quality_reason": "The analysis accurately describes subtracting the power-log cusp asymptotic, the added poles, reverse mapping, and the modular-average constant under convergence. No material unsupported extension is claimed; rapid exponential growth is explicitly excluded. The subtraction narrative is specific to a_0-phi, alpha_i, Psi(alpha_i), and the reflected powers.",
+            "source_support": "For automorphic f with moderate power-log growth phi(tau_2), the source defines a Rankin-Selberg transform of a_0-phi. Its continuation has poles from the cusp exponents alpha_i and their reflected values as well as the usual terms, and reverse mapping produces a constant C equal, when convergent, to 3/pi times the modular integral plus deterministic and zeta-zero terms.",
+            "speculation_status": "The theorem excludes exponentially growing cusp behavior associated with tachyons. Convergence of the modular integral and exact power-log hypotheses remain necessary. The semantic extension is clear; power, logarithm, and completed-zeta normalizations are formula-dependent. Separating deterministic cusp terms from zero-driven corrections is a reasonable interpretation of Zagier regularization. Exact power-log and completed-zeta normalizations are display-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Requires absence of both physical and unphysical tachyons so the partition function has moderate cusp behavior.",
+          "line_end": 844,
+          "line_start": 699,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The mass/degree dictionary and cutoff exponents are formula-sensitive; prose fixes their interpretation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies the string partition function's constant term with a level-matched graded state sum, substitutes inverse proper time as a UV cutoff, and obtains the vacuum-energy main term plus zeta-zero powers.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            12,
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A cutoff constant term is a smoothed graded count of physical states",
+          "unit_artifact_relpath": "depth/units/openalex_w2164522729_v2_u07.txt",
+          "unit_bytes": 8350,
+          "unit_id": "openalex_w2164522729_v2_u07",
+          "unit_sha256": "9a5577d63c34864e0d703ea6837f1b09f0c6373b4dafea0ba52860cdd25c9743",
+          "unit_type": "physics-to-number-theory representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2164522729_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The cutoff acts as a smoothing representation that preserves graded spectral information while making a modular integral accessible through a one-parameter state count. Zeta zeros govern the approach, not the underlying state masses individually.",
+            "nonparaphrase_operation": "The constant Fourier term enforces level matching; the proper-time/cutoff dictionary connects conformal dimensions to masses and the modular average to the vacuum-energy main term.",
+            "quality_reason": "The source restricts to absence of physical and unphysical tachyons, identifies the constant term with level-matched signed states, introduces the UV cutoff, and derives vacuum-energy and zero-power terms. No extension to merely finite level-matched amplitudes is made; the pointwise moderate-growth requirement is retained. The bridge description is specific to tau_2=Lambda^{-2}, the Kronecker level-matching condition, and the mass dictionary.",
+            "source_support": "For a partition function with neither physical nor unphysical tachyons, the source applies the moderate-growth theorem. After tau_2=Lambda^{-2}, it defines g(Lambda)=sum d(m^2)exp(-4pi m^2/Lambda^2) and derives an asymptotic with leading term proportional to Omega Lambda^{2-d}, zeta-zero terms C_rho Lambda^{rho-d}, and a massless correction.",
+            "speculation_status": "Both kinds of tachyon must be absent for moderate cusp behavior. A finite vacuum energy after level matching alone is insufficient if unphysical tachyons still spoil the pointwise automorphic theorem. The physical dictionary is stated in prose, but exact cutoff powers and normalization constants are formula-sensitive. Calling the cutoff a smoothing representation that preserves graded spectral data is a reasonable reading of the exponential weight. Exact cutoff exponents and state normalizations are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2fa64cb0304edc1dc1c7819695ff570f6b4a36f25ac268b7a0597277ec1ea955",
+        "dossier_sha256": "bbcb23d294980d4a9046298dd15afe551a23ff58a704123886d17040fb35d22f"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "One automorphic example visibly recovers the first zeta frequencies, whereas another has all zero residues equal to zero and is dominated by a deterministic cusp term.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2164522729_v2_u05",
+          "openalex_w2164522729_v2_u06"
+        ],
+        "proposed_limit": "Failure to observe oscillations in a particular function is therefore not evidence against the zero-controlled theorem or RH.",
+        "source_id": "openalex_w2164522729",
+        "synthesis_id": "riemann_v2_within_ac0e60b355e1eab6f8c1bf88",
+        "title": "The general zero expansion can be silent or masked"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The frequency comparison is numerical evidence within a theorem-governed example, not a proof of RH.",
+          "line_end": 542,
+          "line_start": 454,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Series and asymptotic displays are important; plotted-frequency prose is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies the rapid-decay theorem to the discriminant function and shows that under RH the normalized error is a log-periodic sum whose first observed frequencies match the first zeta zeros.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Ramanujan coefficients expose zeta-zero frequencies in a horocycle error",
+          "unit_artifact_relpath": "depth/units/openalex_w2164522729_v2_u05.txt",
+          "unit_bytes": 4212,
+          "unit_id": "openalex_w2164522729_v2_u05",
+          "unit_sha256": "803d99f3351c7ec1815a2b08d6329bb10f5bc975129f1500b2a0d6094ba08586",
+          "unit_type": "worked example",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2164522729_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "An arithmetic coefficient sequence is reorganized into a horocycle average whose asymptotic error exposes spectral locations. The representation supports inverse recovery of zero frequencies from coefficient data.",
+            "nonparaphrase_operation": "The discriminant constant term and its normalized error bridge Ramanujan coefficients, modular equidistribution, and the zero-indexed Mellin singularities.",
+            "quality_reason": "The source gives the discriminant constant term, the conditional RH cosine expansion, and rough frequencies close to the first two zeta-zero ordinates. No numerical agreement is promoted to an RH proof; its conditional and evidential status is explicit. The 'spectral microphone' metaphor is vivid but is backed by the exact constant term and measured frequency comparison.",
+            "source_support": "The source applies the rapid-decay theorem to f=tau_2^{12}|Delta(tau)|^2, whose constant term is tau_2^{12} times a sum of tau(n)^2 exp(-4pi n tau_2). Under RH the error is tau_2^{3/4} times log-periodic cosine modes; a rough Fourier analysis finds first frequencies close to the first two zeta zeros.",
+            "speculation_status": "The frequency comparison is numerical and the displayed trigonometric form assumes RH. Agreement near the first zeros is not evidence proving all zeros lie on the line. The example and measured frequencies are clear, while series normalization and plotted scaling depend on extracted displays. Viewing the normalized error as enabling inverse frequency recovery from Ramanujan coefficients is reasonable and is suggested by the source. Series normalization and graph scaling depend on display extraction."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Demonstrates that zero-indexed terms in the general expansion need not be observable for every automorphic function.",
+          "line_end": 696,
+          "line_start": 544,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Theta, Poisson, and residue formulas are display-dependent; the vanishing conclusion is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows that a slower deterministic term can dominate and then computes the relevant Rankin-Selberg residue to prove every zeta-zero coefficient vanishes identically.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            10,
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A moderate-growth theta series can have no zeta-zero oscillation coefficients",
+          "unit_artifact_relpath": "depth/units/openalex_w2164522729_v2_u06.txt",
+          "unit_bytes": 7726,
+          "unit_id": "openalex_w2164522729_v2_u06",
+          "unit_sha256": "9ab53e64e0c79d4d5a07af67545ed398a74884b5b4d892f77068c9ec300cab64",
+          "unit_type": "counterexample and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2164522729_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Spectral availability is not spectral observability. The chosen automorphic test function can annihilate all residues at zeta zeros, so representation selection determines whether zero information survives.",
+            "nonparaphrase_operation": "Poisson resummation makes the constant term explicit, while the inverse Mellin representation by Eisenstein series and their orthogonality evaluate the zero coefficients.",
+            "quality_reason": "The span derives the theta constant term, its monotone approach, the deterministic square-root correction, and an explicit source calculation claiming all C_rho vanish. No absence is inferred from the plot alone; the analysis correctly requires the residue calculation. Representation-selection language is concrete because it predicts annihilation of every zero coefficient in this example.",
+            "source_support": "For the modular theta series R Theta(tau,R), Poisson resummation gives moderate square-root cusp growth and an explicit positive constant term approaching R+R^{-1} monotonically. The source identifies a deterministic -sqrt(tau_2) correction and computes C_rho as a Rankin-Selberg residue proportional to [zeta-star(rho)]^2, hence zero.",
+            "speculation_status": "One cannot infer absence of zeta-zero terms merely from monotone plots or domination by a slower deterministic term; here exact residue vanishing supplies the stronger conclusion. Exact theta normalizations are display-sensitive. The vanishing conclusion is explicit, though the formal orthogonality notation and inverse transform should be read with the source's conventions. The distinction between spectral availability and observability is a strong, source-grounded conceptual consequence. The inverse Mellin and Eisenstein orthogonality notation should be retained as the source's formal calculation rather than silently regularized."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2fa64cb0304edc1dc1c7819695ff570f6b4a36f25ac268b7a0597277ec1ea955",
+        "dossier_sha256": "bbcb23d294980d4a9046298dd15afe551a23ff58a704123886d17040fb35d22f"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The modular integral is encoded by a smoothed finite-state sum, but Hagedorn growth makes direct reconstruction require cancellation among enormous terms even when the asymptotic formula is conceptually simple.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2164522729_v2_u08",
+          "openalex_w2164522729_v2_u10",
+          "openalex_w2164522729_v2_u11"
+        ],
+        "proposed_limit": "The practical cutoff estimates are model-dependent and the finite-state approximation can converge too slowly for decisive RH tests.",
+        "source_id": "openalex_w2164522729",
+        "synthesis_id": "riemann_v2_within_3ae99775dd7341c8ab6e0749",
+        "title": "Analytic compression and numerical reconstruction have opposite difficulty profiles"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The authors emphasize that exponentially large bosonic and fermionic contributions must cancel to high accuracy.",
+          "line_end": 905,
+          "line_start": 839,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Cutoff powers depend on displayed formulas; qualitative hierarchy and limitation are prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives asymptotic supersymmetry for more than two noncompact dimensions, identifies log-periodic sign alternation under RH, and inverts the relation into a finite-state approximation with a zeta-zero-controlled error.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH gives the fastest decay but a very slow oscillatory approach to vacuum energy",
+          "unit_artifact_relpath": "depth/units/openalex_w2164522729_v2_u08.txt",
+          "unit_bytes": 3986,
+          "unit_id": "openalex_w2164522729_v2_u08",
+          "unit_sha256": "0816a6c97d7d2f9ba78ca676fa189d4d6022535553674ba9ce6f96da5c62a50b",
+          "unit_type": "asymptotic consequence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2164522729_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The same formula constrains allowed spectra and computes an infrared observable from ultraviolet data. Fastest exponent does not mean fast computation because individual bosonic and fermionic contributions can be exponentially large.",
+            "nonparaphrase_operation": "The smoothed cutoff sum is the bridge in both directions: forward to alternating high-mass imbalance and backward to a finite-state approximation of the modular integral.",
+            "quality_reason": "The span states asymptotic supersymmetry for d>2, gives the conditional RH oscillatory correction, and inverts the asymptotic into a finite smoothed approximation of vacuum energy. No numerical stability is assumed; the analysis retains the source's warning about cancellation of very large contributions. The two-direction bridge language is concrete and retains the distinct forward and inverse claims.",
+            "source_support": "For d>2, the cutoff count g(Lambda) tends to zero, recovering asymptotic supersymmetry. Under RH its correction is a Lambda^{-3/2} log-periodic sum with frequencies gamma_m. Inverting the relation approximates Omega by a finite smoothed sum over graded states with error O(Lambda^{rho_sup-2}).",
+            "speculation_status": "The RH form is conditional, and the formal asymptotic does not guarantee numerically stable reconstruction. The result remains within non-tachyonic oriented vacua and sufficiently large cutoff. The qualitative hierarchy and slow-convergence warning are explicit; displayed powers should be scan-checked before literal reuse. Reading the formula in both constraint and reconstruction directions is directly licensed by the source. The powers and normalization of the error term require scan checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The thermal partition setup immediately before this span supplies the model but not a distinct RH mechanism.",
+          "line_end": 1127,
+          "line_start": 1007,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact thermal constants are formula-heavy; the truncation scaling and cancellation warning are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts a special-function evaluation of finite-temperature vacuum energy with the state-sum approximation and shows Hardy-Ramanujan growth forces truncation near a quartic cutoff and cancellation of huge terms.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Hagedorn growth makes finite-state reconstruction cancellation-limited",
+          "unit_artifact_relpath": "depth/units/openalex_w2164522729_v2_u10.txt",
+          "unit_bytes": 6588,
+          "unit_id": "openalex_w2164522729_v2_u10",
+          "unit_sha256": "be2f24adf2701f8269dc26b167f60eae5245122d87b88687e186b62c7a2a22e5",
+          "unit_type": "computational bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2164522729_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analytic reduction and numerical tractability diverge. Replacing an intertwined integral by coefficients exposes structure, yet the new representation amplifies cancellation and becomes precision-limited.",
+            "nonparaphrase_operation": "The cutoff-weighted graded state sum bridges the special-function modular integral to Taylor coefficients; Hardy-Ramanujan asymptotics diagnose its truncation cost.",
+            "quality_reason": "The source contrasts a low-temperature special-function evaluation with a coefficient cutoff sum, gives Hardy-Ramanujan growth, a quartic level cutoff, and severe boson-fermion cancellation. No naive truncation is treated as reliable evidence; the analysis explicitly warns against it. The symbolic-versus-numerical distinction is tied to Hagedorn growth and N_max of order Lambda^4.",
+            "source_support": "A finite-temperature example has a special-function expression dominated at low temperature by massless states. The alternative cutoff sum uses Taylor coefficients whose Hardy-Ramanujan growth is approximately exponential in sqrt(n); the source estimates that convergence requires levels up to N_max of order 2 Lambda^4 and careful cancellation to recover a small vacuum energy.",
+            "speculation_status": "The thermal setup is inherited from preceding context, and exact constants are formula-heavy. Naive finite truncation can generate wild artifacts and cannot be taken as evidence about the limiting vacuum energy. The quartic cutoff scaling and cancellation warning are explicit, though numerical prefactors and thermal formulas should be scan-verified. Diagnosing the coefficient representation as computationally ill-conditioned despite symbolic simplification is reasonable. The thermal model begins before this unit and exact numerical constants are formula-heavy."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The final consistency statement assumes RH when writing the zero-frequency expansion.",
+          "line_end": 1286,
+          "line_start": 1129,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "SO(8) character and theta-function expansions are display-dependent; the alternating coefficient mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands a non-tachyonic modular partition function into coefficients with alternating graded signs and shows its cutoff sum approaches the vacuum energy with the RH-predicted normalized oscillation exponent.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A rational Scherk-Schwarz spectrum realizes misaligned supersymmetry explicitly",
+          "unit_artifact_relpath": "depth/units/openalex_w2164522729_v2_u11.txt",
+          "unit_bytes": 7669,
+          "unit_id": "openalex_w2164522729_v2_u11",
+          "unit_sha256": "7073b30ec997aa6082dc2b874b2fd804ccc6fd7d9591f26f7f9893ced24a8b76",
+          "unit_type": "model validation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2164522729_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The rational Scherk-Schwarz construction realizes misaligned supersymmetry at coefficient level. Its two theta expansions have equal coefficient magnitudes with parity-dependent signs; after convolution this produces constant-term coefficients c_m^2-(-1)^m b_m^2, for which the tachyon coefficient cancels, the massless graded count is recovered, and bosonic and fermionic signs alternate. The representation gains an explicit algebraic route from the orbifold deformation to graded degeneracies and then, through the constant term, to the modular vacuum energy. It checks consistency of this model with the general cancellation picture, but it neither establishes RH nor guarantees that string examples would detect an RH counterexample. The stated zero-frequency expansion assumes RH, and the dense character/theta displays remain normalization-sensitive.",
+            "nonparaphrase_operation": "Traces the parity sign through theta-series coefficients, convolution, physical graded degeneracies, and the constant-term observable, separating an algebraic cancellation mechanism from the conditional zeta-zero interpretation and from the much weaker hope of finding a counterexample.",
+            "quality_reason": "The revision removes the critic-identified adjacent Figure-5 truncation claim, replaces validation language with a bounded consistency check, and keeps the RH assumption and formula-extraction risk explicit.",
+            "source_support": "The span gives the asymmetric Z2-orbifold partition function, rewrites it in theta functions, defines the b_n and c_n convolutions, derives a_0(tau_2) with coefficients c_m^2-(-1)^m b_m^2, and explicitly checks absence of a physical tachyon and the massless count 128. It reports alternating graded signs and writes the normalized cosine expansion only after assuming rho_m=1/2+i gamma_m under RH.",
+            "speculation_status": "The coefficient identities, tachyon cancellation, massless count, and alternating signs are source claims. Reading the alternation as generated by the theta-function sign structure is a supported interpretation. The zero-frequency form is RH-conditional, and the authors' closing counterexample remark is only a hope, not a detection guarantee."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2fa64cb0304edc1dc1c7819695ff570f6b4a36f25ac268b7a0597277ec1ea955",
+        "dossier_sha256": "bbcb23d294980d4a9046298dd15afe551a23ff58a704123886d17040fb35d22f"
+      }
+    }
+  ]
+}

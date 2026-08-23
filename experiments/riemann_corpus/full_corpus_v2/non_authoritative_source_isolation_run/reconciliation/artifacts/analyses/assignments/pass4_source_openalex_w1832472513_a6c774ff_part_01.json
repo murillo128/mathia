@@ -1,0 +1,179 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1832472513_a6c774ff_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1832472513",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conditional nature is essential: the source says the equality strongly suggests that the selected phase family captures all zeros.",
+      "line_end": 339,
+      "line_start": 306,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact half-jump convention and error term require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the integer label and phase jump to construct N0(T), observes that its displayed asymptotic matches the whole-strip count, and infers no room for additional zeros only under well-definedness and uniqueness of every labeled solution.",
+      "source_id": "openalex_w1832472513",
+      "source_normalized_sha256": "7fac14b7ea910cca76f1af5e3e888c7db965e879c64124741c991bc68d4ffc21",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Turn unique labeled solutions into equality of critical-line and whole-strip counts",
+      "unit_artifact_relpath": "depth/units/openalex_w1832472513_v2_u03.txt",
+      "unit_bytes": 2262,
+      "unit_id": "openalex_w1832472513_v2_u03",
+      "unit_sha256": "16de021dbc15e876f14eb75b01726fd3f20a9d1c7254ddb8f60f40a4cd44d776",
+      "unit_type": "conditional saturation argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1832472513_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1832472513",
+        "title": "Statistical and other properties of Riemann zeros based on an explicit equation for the $n$-th zero on the critical line",
+        "authors": [
+          "Guilherme França",
+          "André LeClair"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 298,
+          "line_end": 305,
+          "text": "\n           yn     \u0010y \u0011       1                            \u0001         11\n                    n                       1\n              log      + lim+ arg ζ         2\n                                              + δ + iyn       =n−          (n = 1, 2, . . . ).   (14)\n           2π      2πe  δ→0 π                                       8\n\nIn short, we have shown that, asymptotically, there are an infinite number of zeros on the\n",
+          "sha256": "61443604163c6eb25b5773d1a2979d6644c12a1f559ceea966de0f52d5c8e0eb"
+        },
+        "after": {
+          "line_start": 340,
+          "line_end": 347,
+          "text": "\n   B.   Exact equation\n\n\n   Let us now reproduce the same analysis discussed previously but without an asymptotic\nexpansion. The exact versions of (6) and (7) are\n                                                              \u0001\n                    A(x, y) = π −x/2 |Γ            1\n",
+          "sha256": "b7a75b57fe410b67067b238c9acb5ca236fd311a31da127b65c97847cfef6edf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6f824c6a4e3832c92101323b19e9cf075ea49706a16ffc72ad6da8c2f8c4f56f",
+        "dossier_sha256": "85db7498d8ca2382e1588c84d4b97a5e341d283ec71018dec84bcf31df412153",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II.A Asymptotic equation",
+            "line_end": 339,
+            "line_start": 175,
+            "mathematical_role": "Uses the completed zeta functional equation and a selected phase condition to derive an asymptotic equation indexed by n, then conditionally turns uniqueness into a critical-line counting formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 339,
+          "line_start": 306,
+          "title": "Turn unique labeled solutions into equality of critical-line and whole-strip counts",
+          "unit_id": "openalex_w1832472513_v2_u03",
+          "unit_type": "conditional saturation argument",
+          "why_material": "Uses the integer label and phase jump to construct N0(T), observes that its displayed asymptotic matches the whole-strip count, and infers no room for additional zeros only under well-definedness and uniqueness of every labeled solution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The conditional nature is essential: the source says the equality strongly suggests that the selected phase family captures all zeros.",
+          "representation_dependency": "Exact half-jump convention and error term require PDF checking.",
+          "unit_id": "openalex_w1832472513_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 305,
+            "line_start": 175,
+            "title": "Select a symmetric phase branch to enumerate critical-line zeros",
+            "unit_id": "openalex_w1832472513_v2_u02",
+            "unit_type": "phase construction",
+            "why_material": "Factors the completed zeta function into magnitude and phase, uses functional-equation symmetry, regularizes the zeta argument from the right, and selects theta equals reflected theta with cosine zero to derive an n-indexed asymptotic equation."
+          },
+          {
+            "line_end": 407,
+            "line_start": 340,
+            "title": "Replace Stirling's phase by theta and expose uniqueness as the RH hinge",
+            "unit_id": "openalex_w1832472513_v2_u04",
+            "unit_type": "exact equation and proof bottleneck",
+            "why_material": "Derives the exact theta-plus-arg-zeta equation, explains how a positive delta gives upward phase jumps, and states explicitly that uniqueness for every n would make its exact count equal the whole-strip count and hence prove RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The selected functional-equation phase branch produces labeled critical-line candidates, and equality with the whole-strip count follows if each label has exactly one well-defined solution; this uniqueness premise is the decisive proof obligation.",
+            "limit": "The source ultimately calls the approach non-rigorous and presents uniqueness as argued or assumed, so count matching cannot be detached from that condition.",
+            "parent_local_unit_ids": [
+              "openalex_w1832472513_v2_u02",
+              "openalex_w1832472513_v2_u03",
+              "openalex_w1832472513_v2_u04",
+              "openalex_w1832472513_v2_u05",
+              "openalex_w1832472513_v2_u12"
+            ],
+            "title": "A phase equation proves RH only if its global uniqueness premise is proved"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1832472513_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w1832472513_v2_u03",
+          "spontaneous_reading": "The saturation argument has a sharp hinge: if every integer label yields exactly one well-defined solution, the resulting on-line staircase matches the known whole-strip count and leaves no numerical room for other zeros."
+        },
+        "directed": {
+          "unit_id": "openalex_w1832472513_v2_u03",
+          "source_grounded_mathematics": "The source replaces the label by a counting variable using the half-jump convention, obtains an asymptotic N0(T), and observes that it has the same expression as the Riemann-von Mangoldt count N(T).",
+          "conceptual_reading": "A local uniqueness premise is amplified into a global classification by count saturation; the counting identity is downstream of that premise, not an independent proof of it.",
+          "representation_or_bridge": "The integer label and the jump of arg ζ form the bridge from individual transcendental equations to a staircase counting function.",
+          "boundary_or_failure": "The conclusion that no additional amplitude-zero or other phase-branch solutions exist is conditional on well-definedness and uniqueness for all labels.",
+          "uncertainty": "The conditional logic is clear, while the exact half-jump convention, error term, and constants should be checked against the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1832472513_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span conditionally converts integer labels into N0(T), obtains the displayed asymptotic staircase, compares it with N(T), and says saturation would leave no additional amplitude-zero or other phase-branch zeros."
+        ],
+        "inference": [
+          "Count saturation is a valid conceptual description of how one-solution-per-label would turn an on-line family into a whole-strip classification."
+        ],
+        "unsupported_or_imported": [
+          "The source's step from a well-defined displaced argument to monotonicity and a unique solution for every n is asserted rather than proved in this span; calling it a merely 'local uniqueness premise' understates that it is a global all-label existence-and-uniqueness assumption."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low otherwise: the analysis distinguishes the conditional hinge from the downstream counting identity instead of restating the formulas."
+        ],
+        "context_or_ocr_risk": [
+          "The half-jump convention, constants, error term, and arg-zeta branch require PDF verification, but the conditional logical structure is readable."
+        ],
+        "missed_mechanism": [
+          "The comparison with N(T) is used both to assert monotonic behavior and later to claim saturation, so the unproved monotonicity/uniqueness step and potential circularity deserve explicit audit."
+        ],
+        "revision_instructions": [
+          "Replace 'local uniqueness premise' with a global existence, well-definedness, monotonicity, and uniqueness assumption for every label; state that the span does not justify this hinge and that count equality follows only after it."
+        ]
+      }
+    }
+  ]
+}

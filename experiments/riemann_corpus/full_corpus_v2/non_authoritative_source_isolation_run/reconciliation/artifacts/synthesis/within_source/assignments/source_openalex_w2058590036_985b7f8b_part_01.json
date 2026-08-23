@@ -1,0 +1,535 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2058590036",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2058590036_985b7f8b_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Residue explicit formulas expose zero phases, while exponential and Riesz smoothing determine which oscillation scale transfers cleanly to sharp counting functions.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2058590036_v2_u04",
+          "openalex_w2058590036_v2_u05",
+          "openalex_w2058590036_v2_u06",
+          "openalex_w2058590036_v2_u20"
+        ],
+        "proposed_limit": "The synthesis is RH-conditional where its parents are, and several exact exponents need scan verification.",
+        "source_id": "openalex_w2058590036",
+        "synthesis_id": "riemann_v2_within_2a0218d73ccc7b5cac60186c",
+        "title": "Smoothing hierarchy for zero-forced arithmetic oscillation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The omitted contour-limit details are explicitly identified as difficult but non-novel; the accepted unit captures the reusable residue architecture rather than pretending those estimates are present.",
+          "line_end": 938,
+          "line_start": 773,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula and scan dependency; residue classes and the final structural formula are prose-recoverable, while coefficients require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The authors move a Mellin contour left, classify residues from the pole, nontrivial zeros, and trivial-zero structure, then subtract a Bernoulli expansion to isolate a zero sum plus analytic remainder.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            17,
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Contour displacement turns a smoothed arithmetic series into a sum over zeta zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u04.txt",
+          "unit_bytes": 6859,
+          "unit_id": "openalex_w2058590036_v2_u04",
+          "unit_sha256": "8bd2b204b13f3ce5e2e38f2b68bf1d358566dc0bcd81c21707b1042815a033c0",
+          "unit_type": "explicit-formula-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Residues make singularity classes separately interpretable, and Bernoulli subtraction removes the regular/trivial part.",
+            "nonparaphrase_operation": "Mellin inversion, contour shift, residue classes, and the Bernoulli series bridge the smoothed von Mangoldt expression to zeta zeros.",
+            "quality_reason": "Source fact: the Mellin contour is displaced, residues are classified at 1, 0, nontrivial zeros, odd negative integers, and even negative integers, and subtracting the Bernoulli expansion isolates the nontrivial-zero sum plus analytic remainder. None identified; the output explicitly says the difficult contour-limit estimates are omitted in the source and does not treat them as proved within the span. The conceptual reading is operationally grounded in residue classification and subtraction.",
+            "source_support": "A Mellin integral with zeta'/zeta is shifted far left. Residues at s=1, s=0, nontrivial zeros, and negative integers are classified; a second contour calculation gives a Bernoulli series whose subtraction leaves sum Gamma(rho)y^{-rho} plus an analytic remainder.",
+            "speculation_status": "The authors omit difficult contour-limit details, so this span is not self-contained evidence for those estimates. Coefficients are unsafe to transcribe, but the residue taxonomy is clear. Reasonable inference: residue classification separates singularity roles and Bernoulli subtraction removes the regular/trivial-zero portion. Coefficients are too damaged for symbolic reuse, and the output correctly limits itself to the stable residue taxonomy."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the stated inability to prove the predicted stronger behavior off RH and the motivating smoothing comparison.",
+          "line_end": 1075,
+          "line_start": 939,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact Omega notation is partly degraded, but the conditionality, two-sided oscillation, and smooth-versus-sharp contrast are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A crude local zero count controls the explicit formula, giving an upper bound and both signs infinitely often; the authors then isolate the obstruction that the corresponding unsmoothed summatory function can be substantially less regular.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            20,
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Under RH the smoothed error has exactly zero-forced scale, unlike the raw summatory error",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u05.txt",
+          "unit_bytes": 6255,
+          "unit_id": "openalex_w2058590036_v2_u05",
+          "unit_sha256": "151212c29755142a494f4e4046e769c3357998768ae0b2aa346d305f10c628c3",
+          "unit_type": "conditional-oscillation-and-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing allows one low frequency to certify oscillation after the tail is bounded.",
+            "nonparaphrase_operation": "The smoothed F(y), zero expansion, local count, and first zero pair bridge RH to oscillation.",
+            "quality_reason": "Source fact: under RH a crude bound on zeros in unit intervals controls the tail, the first conjugate pair is isolated, and Theorem 2.24 states an O bound and both one-sided Omega behaviors at the square-root smoothing scale; the span contrasts this with the rougher sharp summatory error. None identified; stronger off-RH smoothing behavior is explicitly identified as probable but unproved, and the smooth estimate is not transferred unchanged to psi. 'First zero pair forces both signs' is concise but backed by the explicit pair-plus-remainder decomposition and theorem statement.",
+            "source_support": "Writing zeros as 1/2+i gamma under RH, a bound per unit interval controls the tail. Isolating the first pair gives an O bound and infinitely many positive and negative values at y^{-1/2} scale for F(y), with related psi(x)-x Omega statements.",
+            "speculation_status": "The result is RH-conditional; stronger proposed behavior off RH is unproved and the smooth bound does not transfer unchanged to psi. Omega notation is degraded, but conditionality and the smooth/raw contrast are clear. Reasonable inference: a low zero frequency certifies oscillation once the remainder is quantitatively dominated. Omega glyphs are degraded; the output accurately states only direction, conditionality, and scale."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The precise displayed definitions are visually degraded, but the order of construction and comparison is intact.",
+          "line_end": 1169,
+          "line_start": 1084,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent; verify the exact normalization of the Riesz mean from the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The section replaces Cesaro means by formally advantageous Riesz means, derives a zero expansion, and explains the Abelian implications in both directions between the smoothed theorem and the mean theorem.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Riesz means restore the regularity predicted by exponential smoothing",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u06.txt",
+          "unit_bytes": 3322,
+          "unit_id": "openalex_w2058590036_v2_u06",
+          "unit_sha256": "cf038d9cc97b5a76653a42949250bd6f4b47a23ebbf0439e1b2fe1fcaa949166",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Averaging trades local sharpness for transform regularity, and logical direction matters when comparing smoothings.",
+            "nonparaphrase_operation": "Riesz kernels, Mellin integrals, the zero series, and Abelian comparison connect the representations.",
+            "quality_reason": "Source fact: the span defines Riesz means, gives Mellin representations and a zero-series formula, obtains RH-conditional O and two-sided Omega results, and explicitly states different Abelian implication directions between the Riesz and exponential theorems. None identified; the output does not claim a full equivalence or an unsmoothed pointwise bound. 'Restores regularity' is supported by the source's explicit Fourier-series analogy and comparison to the exponential smoothing behavior.",
+            "source_support": "The unit defines Riesz means, writes Mellin integrals, and obtains an absolutely convergent zero series after subtracting a companion mean. Under RH this gives O and two-sided Omega behavior and specifies the Abelian implications between the mean theorem and the exponential theorem.",
+            "speculation_status": "No unsmoothed pointwise estimate is recovered, and the comparison is not asserted as full equivalence. Exact mean normalization is damaged; construction and implication directions are clear. Reasonable inference: averaging trades pointwise sharpness for transform regularity and therefore the direction of comparison matters. The exact Riesz normalization is damaged; the output does not reconstruct it."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the final bridge from the zero-phase oscillation theorem to the stated prime-counting sign changes.",
+          "line_end": 4245,
+          "line_start": 4131,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact iterated-log factors are OCR-degraded; the correction mechanism and one-sided obstruction are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source explains why ordinary partial summation loses the one-sided Omega information, introduces a prime-power corrected counting function, and uses the earlier Riesz-mean bound to show the correction is negligible at the target scale.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            77,
+            78
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Passing from psi oscillation to pi-Li needs smoothing beyond partial summation",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u20.txt",
+          "unit_bytes": 4538,
+          "unit_id": "openalex_w2058590036_v2_u20",
+          "unit_sha256": "121e251b9f0770fb83fc3fb27c4182c2782676032b5285dea4a9d499ce752033",
+          "unit_type": "one-sided-asymptotic-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The corrected function is the natural interface between logarithmic weights and prime counting, and smoothing controls the sign-sensitive remainder.",
+            "nonparaphrase_operation": "Riemann's prime-power count, partial summation, Z(n), and the Riesz estimate bridge psi to pi-Li.",
+            "quality_reason": "Source fact: one-sided Omega transfer from psi to pi-Li is not obtained by coarse partial summation alone; the authors introduce Riemann's prime-power count f, relate it to psi, isolate a cumulative error Z, and use the earlier Riesz-mean bound to make that error lower order before returning to pi. None identified; the output does not claim ordinary partial summation preserves separate right and left Omega relations. 'Natural interface' is justified by the exact partial-summation identity for f rather than pi.",
+            "source_support": "The boundary theorem gives two-sided Omega for psi-x. The authors introduce f(x)=pi(x)+(1/2)pi(sqrt(x))+..., connect it to psi by partial summation, and express f-Li minus (psi-x)/log x via a cumulative error Z(n). The prior Riesz-mean bound makes this error lower order, after which the prime-power correction back to pi is handled.",
+            "speculation_status": "A coarse one-step partial summation cannot preserve separate right and left Omega claims. Iterated-log factors are degraded; the correction mechanism is clear. Reasonable inference: the prime-power-corrected function is the natural intermediate representation for a sign-sensitive transfer between logarithmic and unweighted counts. Iterated-log factors are degraded; the output correctly avoids their exact transcription."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_215b987c9ac48455a02ea15f6e2d602b7b7d5019350a27695deb07d19cf09beb",
+        "dossier_sha256": "bac1f872fa39874fdd9bd7573cf1208413fb75e0592600c10f47577c1f6533ff"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Zero contributions become macroscopic biases only after a convergence-factor or boundary-transfer argument aligns and transports their phases.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2058590036_v2_u07",
+          "openalex_w2058590036_v2_u08",
+          "openalex_w2058590036_v2_u18",
+          "openalex_w2058590036_v2_u19"
+        ],
+        "proposed_limit": "The Dirichlet-L prime-race result assumes its RH analogue; the source does not prove the predicted converse off that hypothesis.",
+        "source_id": "openalex_w2058590036",
+        "synthesis_id": "riemann_v2_within_b37c58a18c125ac5579fddea",
+        "title": "From zero phases to observed prime-race reversals"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Contains the analogue-of-RH assumption and the explicit statement that the result is only conditional.",
+          "line_end": 1396,
+          "line_start": 1176,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Many formulas are OCR-damaged; the product, zero-bound, term-splitting, and sign conclusion are recoverable, while constants require scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof expresses a signed prime-power series by the logarithmic derivative of L(s), uses the functional equation and a canonical product to bound the zero contribution, then separates prime and higher-power terms to obtain a uniform negative main effect.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            24,
+            25,
+            26,
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A completed L-function product bounds zero residues strongly enough to force signed bias",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u07.txt",
+          "unit_bytes": 8236,
+          "unit_id": "openalex_w2058590036_v2_u07",
+          "unit_sha256": "3e4d0c6a772266920b2e7d55f307c0e70629d49d41ada7423901433f80c15145",
+          "unit_type": "conditional-prime-race-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Completion compresses zeros into a positive product identity; exponent decomposition then reveals which arithmetic layer carries bias.",
+            "nonparaphrase_operation": "The logarithmic derivative, completed product, zero residues, and prime-power split form the bridge.",
+            "quality_reason": "Source fact: the logarithmic derivative of the alternating L-function expands into signed prime powers; under the analogue of RH, its completed real-even product bounds the Gamma-weighted zero contribution, and splitting m=1, m=2, and m>=3 forces the prime term negative. None identified; the output retains both the zero hypothesis and the fact that the conclusion at this stage is smoothed and log-weighted. 'Compresses zeros into a positive product identity' is interpretive but refers to the explicit canonical product and real-zero assumption.",
+            "source_support": "For the alternating prime-race L-function, the logarithmic derivative expands into signed prime powers. Assuming its RH analogue, a real even completion and canonical product bound the Gamma-weighted zero sum. Separating m=1, m=2, and m>=3 shows the prime term is eventually negative.",
+            "speculation_status": "The result is conditional and is still log-weighted and smoothed. Formulas are damaged, but the product, split, and conclusion are recoverable. Reasonable inference: the completion aggregates zero information while the exponent split identifies the arithmetic layer carrying the bias. Many formulas are damaged, so the output appropriately relies on the clear product, split, and sign conclusion."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the final caveat that failure of the L-function RH should plausibly reverse the assertion but is not proved.",
+          "line_end": 1558,
+          "line_start": 1403,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The prose identifies both transforms and bounds; exact kernel formulas and exponents should be verified from the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Two integral transforms show how a lower bound for a generating function survives insertion first of n^{-s} and then of 1/log n, completing the passage from a log-weighted prime sum to Tschebyschef's asserted unweighted bias.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            29,
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integral representations transfer divergence through power and logarithmic weights",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u08.txt",
+          "unit_bytes": 5995,
+          "unit_id": "openalex_w2058590036_v2_u08",
+          "unit_sha256": "6f82cd237bb28e19f82fbd7e3f048640425c897a20d3e27e242c18d11174b3f6",
+          "unit_type": "convergence-factor-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A chain of convergence factors preserves sign because singular main regions dominate bounded tails.",
+            "nonparaphrase_operation": "Fractional integration and the auxiliary phi(t) kernel bridge log-weighted to unweighted coefficients.",
+            "quality_reason": "Source fact: a positive fractional integral transfers a lower bound after inserting n^{-s}; a second integral representation inserts 1/log n, and both are applied to carry the conditional smoothed bias to the unweighted prime series. None identified; the output retains the zero hypothesis and labels the proposed reversal when it fails as unproved. 'Remove weights' is concise but concretely identifies the two coefficient multipliers rather than offering a generic convergence-factor slogan.",
+            "source_support": "A fractional integral transfers a lower bound for sum a_n e^{-ny} to coefficients n^{-s}a_n. A second integral representation of 1/log n transfers it again. Applying both proves the smoothed unweighted bias under the same zero hypothesis.",
+            "speculation_status": "The conclusion remains conditional, and the claimed reversal when the hypothesis fails is unproved. Exact kernels are scan-sensitive; the transfer mechanisms are explicit. Reasonable inference: the transfer preserves sign because the singular small-parameter contribution dominates a bounded tail in each integral split. Exact kernels and exponents are scan-sensitive; the output correctly reports only their positivity and transfer role."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the contradiction argument establishing both signs in a semi-infinite strip.",
+          "line_end": 3928,
+          "line_start": 3596,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Some formulas are damaged, but the inverse zero-counting parametrization, finite/tail split, phase alignment, and contradiction scale are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The authors rewrite the prime-counting error as a convergent sine series over zero ordinates, approximate it by a model exponential sum, control the tail, and apply Dirichlet simultaneous approximation to transfer one large value to arbitrarily high phases.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            67,
+            68,
+            69,
+            70,
+            71,
+            72
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Simultaneous approximation aligns finitely many zero phases to force logarithmic oscillation",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u18.txt",
+          "unit_bytes": 13991,
+          "unit_id": "openalex_w2058590036_v2_u18",
+          "unit_sha256": "ee25145a10ffb722c8efbc91d1362fd35858bf65ba8d9c2c8889e176ac810782",
+          "unit_type": "diophantine-phase-alignment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Truncation makes phase alignment finite-dimensional; recurrence transfers interior transform growth to distant boundary oscillation.",
+            "nonparaphrase_operation": "The sine series, inverse zero-counting model, finite/tail split, and simultaneous approximation form the bridge.",
+            "quality_reason": "Source fact: under RH the normalized psi error is expressed as a convergent sine series in zero ordinates; an inverse zero-counting model produces a large damped interior value, the series is split into a finite block and controlled tail, and Dirichlet simultaneous approximation makes the finite phases recur at arbitrarily large parameters. None identified; the output limits the result to sequences and does not claim typical large values. 'Reproducing a large transform value' is a faithful summary of the recurrence estimate, not an unsupported physical analogy.",
+            "source_support": "Under RH, the normalized psi(x)-x error is a convergent sine series over gamma_n. An inverse zero-counting parametrization creates an analytic model F(z) with a large interior value. After truncating and bounding the tail, Dirichlet approximation chooses large eta so the first N phases nearly recur, forcing positive and negative large values.",
+            "speculation_status": "Only finitely many phases align and an independent tail bound is essential; the result is along sequences, not typical behavior. Formulas are damaged, but recurrence and the target scale are readable. Reasonable inference: truncation turns phase alignment into a finite-dimensional problem, while the tail estimate is what permits recurrence to transfer to the full series. Many formulas are damaged, but the finite/tail split, simultaneous approximation, and one-sided arguments are readable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The auxiliary exponential damping and nested-rectangle maximum-principle proof are included.",
+          "line_end": 4130,
+          "line_start": 3929,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mostly prose-stable; exact constants in the growth conditions are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Because the model function is not continuous on the boundary, the authors formulate and prove a strip lemma with local boundary control, global boundary bounds, and interior growth, then apply it contrapositively to transfer the oscillation estimate to the boundary series.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            73,
+            74,
+            75,
+            76
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A modified Lindelof principle moves interior growth to a discontinuous boundary limit",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u19.txt",
+          "unit_bytes": 8003,
+          "unit_id": "openalex_w2058590036_v2_u19",
+          "unit_sha256": "8ed400489a959f6838b934ffe35f85cb2ee509cbbff59496acf864b6f02c4f68",
+          "unit_type": "boundary-transfer-lemma",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Damping repairs behavior at infinity, while the two rectangles replace unavailable uniform boundary continuity.",
+            "nonparaphrase_operation": "The damped function, thin strip, nested rectangles, and boundary limit bridge interior growth to boundary oscillation.",
+            "quality_reason": "Source fact: because F lacks boundary continuity, Lemma 5.61 assumes open-strip analyticity, pointwise boundary limits, local near-boundary control, bounded edges, and interior exponential growth; exponential damping and maximum principles on two rectangles yield the uniform bound used contrapositively. None identified; the output explicitly says ordinary Lindelof is unavailable and retains every hypothesis category. 'Repairs behavior at infinity' and 'nested rectangles' directly describe the proof devices.",
+            "source_support": "Lemma 5.61 assumes strip analyticity, pointwise boundary limits, local near-boundary control, bounded strip edges, and interior exponential growth. Multiplication by exp(-epsilon(-iz)^q), maximum principles on a thin left rectangle and its complement, and epsilon to zero give a uniform bound. Applied contrapositively, it transfers the interior Omega result to the boundary series.",
+            "speculation_status": "Ordinary Lindelof does not apply, and all local, boundary, and growth hypotheses are needed. Exact growth constants are sensitive, but the proof architecture is prose-stable. Reasonable inference: damping controls infinity and the thin-plus-wide rectangle construction substitutes for unavailable uniform boundary continuity. Exact growth constants are formula-sensitive; the proof architecture is stable and the output stays at that level."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_215b987c9ac48455a02ea15f6e2d602b7b7d5019350a27695deb07d19cf09beb",
+        "dossier_sha256": "bac1f872fa39874fdd9bd7573cf1208413fb75e0592600c10f47577c1f6533ff"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Global contour identities become short-interval zero information by discarding controlled edges, localizing the oscillatory phase, and converting a small integral into a sign-change contradiction.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2058590036_v2_u14",
+          "openalex_w2058590036_v2_u15",
+          "openalex_w2058590036_v2_u16",
+          "openalex_w2058590036_v2_u17"
+        ],
+        "proposed_limit": "This captures the strategy, not reliable transcription of OCR-damaged constants or exponents.",
+        "source_id": "openalex_w2058590036",
+        "synthesis_id": "riemann_v2_within_25eccddcb27aed9ed6efedb5",
+        "title": "Contour localization as a reusable proof pattern"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Sets up the contour/stationary-phase proof that follows.",
+          "line_end": 2460,
+          "line_start": 2341,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The theorem's exact exponent is visually degraded; verify it before quantitative use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "After stating the RH-conditional weighted exponential-sum bound, the authors show that the general weight exponent follows from a special case by partial summation, with uniformity in the phase parameter tracked explicitly.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            45,
+            46
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Partial summation reduces a family of weighted zero sums to one endpoint estimate",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u14.txt",
+          "unit_bytes": 4914,
+          "unit_id": "openalex_w2058590036_v2_u14",
+          "unit_sha256": "e45efbdf742e6f6aef8c1eee332347a25036500a6eef0ee55fb5ec5d3c62aa70",
+          "unit_type": "weighted-zero-sum-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Partial summation makes the family of power-weighted zero sums a consequence of cumulative control in the omega=0 case: the weight changes how the endpoint estimate is aggregated, while the genuinely unresolved proof burden is the unweighted oscillatory estimate established in the following span. The displayed formulation assumes RH so that the zeros and bounds take a simpler form, but the authors explicitly say the argument is not essentially dependent on RH and that off-RH results remain meaningful in a less simple formulation.",
+            "nonparaphrase_operation": "Separates the estimate into a hard analytic input and a weight-transfer mechanism: cumulative endpoint control is the reusable representation, and partial summation transports it across weights while preserving theta-uniformity. This gains modularity but does not supply the base contour estimate or a trustworthy transcription of the damaged quantitative exponents.",
+            "quality_reason": "Accepted after restoring the source's RH nuance and retaining the later-span proof dependency; the qualitative reduction and uniformity are clear despite formula-level OCR risk.",
+            "source_support": "The span defines the omega=0 exponential factor and its cumulative sum, applies partial summation to obtain the general theorem, and states that the implied constants are uniform for theta in a fixed positive interval. Its opening paragraph distinguishes assuming RH to simplify the statement from requiring RH for the argument. Exact exponent regimes are not reconstructed because the formulas are OCR-degraded.",
+            "speculation_status": "No cross-source claim is made. Calling the weight bookkeeping is a source-supported interpretation of the explicit reduction, not a claim that the omega=0 estimate itself is easy."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A long span is necessary because the semantic mechanism is the staged localization and error budget, not any isolated displayed estimate.",
+          "line_end": 3182,
+          "line_start": 2461,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extensive OCR damage in formulas; the contour pieces, stationary point, exceptional endpoint convention, and error-sum logic are recoverable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof removes horizontal and local-zero contributions, expands the logarithmic derivative, splits integers by whether the phase has a stationary point, treats tails by first-derivative bounds, and controls the central range by quadratic approximation before summing five errors.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Contour residues are localized to the stationary range and bounded by a five-term error decomposition",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u15.txt",
+          "unit_bytes": 27420,
+          "unit_id": "openalex_w2058590036_v2_u15",
+          "unit_sha256": "432595d27f552bac7162f0de8a7f37e99de49923faf2545d0791995c1faae641",
+          "unit_type": "contour-and-stationary-phase-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Contour displacement changes spectral data to arithmetic frequencies; stationary phase identifies the only coherent range.",
+            "nonparaphrase_operation": "The contour, von Mangoldt series, stationary point, first-derivative lemma, quadratic expansion, and five error sums form the construction.",
+            "quality_reason": "Source fact: a rectangular zeta'/zeta integral produces the zero sum; left and horizontal contributions are bounded, the right edge becomes a von Mangoldt series, integers are split around the stationary point t=xi/e, nonstationary tails use a first-derivative lemma, and the central range uses quadratic expansion followed by five error sums. None identified; endpoint conventions and parameter inequalities are retained rather than silently erased. The staged-localization summary is detailed and source-specific, not a generic 'representation exposes structure' template.",
+            "source_support": "A rectangular integral containing zeta'/zeta yields the zero sum. Left and horizontal pieces are bounded, the right edge expands into a von Mangoldt series, and integers are split by the stationary point t=xi/e. First-derivative estimates control tails, a quadratic approximation treats the center, and five resulting sums meet the parameter budget.",
+            "speculation_status": "Endpoint frequencies need special conventions, and the conclusion depends on the stated parameter inequalities. Exact powers are badly OCR-damaged, but the localization and error ledger are clear. Reasonable inference: stationary phase identifies the only coherent arithmetic-frequency range after the contour changes zeros into prime coefficients. Many powers are OCR-damaged; the output appropriately reports the error ledger without unsafe quantitative transcription."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the choice of a real critical-line transform and the two-stage proof design.",
+          "line_end": 3357,
+          "line_start": 3193,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The transformed function's normalization is formula-sensitive, but real-valuedness, sign-change logic, and contradiction are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "To force a critical-line zero, the authors first reduce sign change to a short-interval integral estimate, then show that constant sign would turn that estimate into an impossible vertical zeta integral with a main term proportional to the interval length.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            60,
+            61,
+            62
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A small signed integral conflicts with constant sign through a second contour evaluation",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u16.txt",
+          "unit_bytes": 6685,
+          "unit_id": "openalex_w2058590036_v2_u16",
+          "unit_sha256": "2b9ad458c8446f5c9fc4c3fe6d48b1d6fb66684c0c9129250d9fa13d55395e0d",
+          "unit_type": "sign-change-proof-architecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The same integral is small by cancellation but cannot cancel under constant sign, creating the contradiction interface.",
+            "nonparaphrase_operation": "The real X(t), short signed integral, constant-sign absolute integral, and second contour bridge analysis to an odd zero.",
+            "quality_reason": "Source fact: the authors define a real critical-line transform X(t), reduce a sign change to a small signed integral, observe that constant sign converts it to an absolute-value integral, and evaluate a related rectangular-contour integral as 2H+O(1), producing a contradiction. None identified; the output correctly says the signed-integral estimate is assumed here and supplied in the next unit. The contradiction-interface language is tightly tied to the two explicit integral evaluations.",
+            "source_support": "The authors define a real critical-line function X(t) and aim to bound its integral on [T,T+H]. If X has constant sign, the signed bound becomes an absolute zeta-integral bound. A second rectangular contour evaluates the related vertical integral as 2H+O(1), contradicting it.",
+            "speculation_status": "This unit assumes the signed-integral estimate, whose proof comes next. Normalization and interval exponents are damaged; the two-stage architecture is explicit. Reasonable inference: the same integral can be small by cancellation but cannot cancel when X has constant sign. Normalization and interval exponents are damaged; the output avoids exact quantitative reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserves the theorem and its counting corollary together with the integral estimate that supports them.",
+          "line_end": 3587,
+          "line_start": 3358,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact short-interval exponent is OCR-fragile; qualitative theorem and proof mechanism are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The remaining integral is expanded and split according to a phase's location relative to the interval; tail estimates and at most one central term complete the sign-change bound, yielding many odd-order zeros on the critical line.",
+          "source_id": "openalex_w2058590036",
+          "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+          "source_page_markers_inside_unit": [
+            63,
+            64,
+            65,
+            66
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Dirichlet-series phase analysis supplies a zero of odd order in every sufficiently long short interval",
+          "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u17.txt",
+          "unit_bytes": 9171,
+          "unit_id": "openalex_w2058590036_v2_u17",
+          "unit_sha256": "af29b784fc2d4f278132bb120552c95c2000326197436fb90b4821e61023f6b1",
+          "unit_type": "critical-line-zero-density",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Frequency localization compresses a large series to one potentially coherent term.",
+            "nonparaphrase_operation": "Stirling reduction, stationary points 2 pi n^2, and the three-way n split bridge the integral to zero counts.",
+            "quality_reason": "Source fact: contour and Stirling estimates reduce the signed X integral to zeta Dirichlet-series phases t log(t/(2 pi n^2)); at most one n has its stationary point in the short interval, while derivative estimates control the two tails and the central terms directly, yielding an odd-order zero and a lower bound for N_0(T). None identified; the output does not promote the many-critical-line-zeros result to RH. 'Compresses a large series' is supported by the explicit three-way n split and at-most-one stationary term.",
+            "source_support": "Contour bounds reduce the X-integral to a vertical integral. Stirling and the zeta Dirichlet series produce phases t log(t/(2 pi n^2)). At most one n has a stationary point in the short interval; below and above tails are bounded by phase derivatives and the central terms directly. This proves an odd-order zero in every stated interval and a lower N_0(T) bound.",
+            "speculation_status": "The theorem proves many critical-line zeros, not RH, and depends on exact interval exponents. Exponents are OCR-fragile; the mechanism and qualitative theorem are clear. Reasonable inference: frequency localization reduces possible coherent contribution to at most one central frequency. The exact short-interval and counting exponents are fragile; the output correctly stays qualitative."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_215b987c9ac48455a02ea15f6e2d602b7b7d5019350a27695deb07d19cf09beb",
+        "dossier_sha256": "bac1f872fa39874fdd9bd7573cf1208413fb75e0592600c10f47577c1f6533ff"
+      }
+    }
+  ]
+}

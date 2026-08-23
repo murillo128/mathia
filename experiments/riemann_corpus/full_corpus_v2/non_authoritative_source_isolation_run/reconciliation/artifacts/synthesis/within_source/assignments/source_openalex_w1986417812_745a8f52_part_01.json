@@ -1,0 +1,135 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1986417812",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1986417812_745a8f52_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Fixed-window zeta maxima distinguish the three-halves centering and predicted density, while partition-function free energy tests the beta=1 freezing plateau directly.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1986417812_v2_u06",
+          "openalex_w1986417812_v2_u07",
+          "openalex_w1986417812_v2_u08"
+        ],
+        "proposed_limit": "Slow convergence, lower-order arithmetic corrections, and two-column extraction prevent the reported agreement from being conclusive.",
+        "source_id": "openalex_w1986417812",
+        "synthesis_id": "riemann_v2_within_e786208900e459d33dfdf748",
+        "title": "Two numerical observables test different parts of the freezing picture"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is empirical support for a model choice, not a theorem about zeta extremes.",
+          "line_end": 227,
+          "line_start": 189,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Two-column extraction interleaves equations from the CUE derivation; the data protocol, alternatives, and conclusion are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Describes the fixed-length zeta computation and compares the observed mean with the c=3/2 log-correlated prediction and the c=1/2 short-range prediction, finding the former substantially closer.",
+          "source_id": "openalex_w1986417812",
+          "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The mean maximum favors the log-correlated three-halves correction",
+          "unit_artifact_relpath": "depth/units/openalex_w1986417812_v2_u06.txt",
+          "unit_bytes": 3559,
+          "unit_id": "openalex_w1986417812_v2_u06",
+          "unit_sha256": "a0392164d7dcb4823c863792369032a11c44b312549100bd92a092dcad257948",
+          "unit_type": "numerical discrimination",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The observed mean local maximum discriminates between two lower-order extreme-value corrections: the log-correlated c=3/2 normalization stays much nearer one than the short-range c=1/2 normalization.",
+            "nonparaphrase_operation": "It recognizes the lower-order correction, rather than leading growth alone, as the statistic capable of separating the candidate correlation classes.",
+            "quality_reason": "Accepted as criticized: the concrete statistic, N approximately log T dependence, sampling design, and numerical epistemic limit are all preserved despite column interleaving.",
+            "source_support": "The computation samples zeta on length-2pi intervals at several heights, sets N to the nearest integer to log T, and reports tabulated mean ratios under the two competing corrections.",
+            "speculation_status": "This is finite-height, protocol-dependent numerical support for a model, not proof of a zeta extreme-value law."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the immutable prediction unit because the source prints theory and evidence in parallel columns.",
+          "line_end": 269,
+          "line_start": 240,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The page layout interleaves theory and experiment, but the caveat and tail discussion are prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Compares the normalized zeta-maximum distribution with the predicted density, emphasizes slow convergence and omitted lower-order arithmetic terms, and rejects treating the agreement as conclusive.",
+          "source_id": "openalex_w1986417812",
+          "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Distributional zeta numerics are supportive but slow and arithmetically incomplete",
+          "unit_artifact_relpath": "depth/units/openalex_w1986417812_v2_u07.txt",
+          "unit_bytes": 3899,
+          "unit_id": "openalex_w1986417812_v2_u07",
+          "unit_sha256": "c92830fcb909335303c8d762a0fac2f233458bb19e7ea643f2df1c1bcf63bcea",
+          "unit_type": "evidence limitation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The centered maximum distribution and its left tail separate a proposed universal log-correlated signature from short-range Gumbel behavior, while slow convergence and omitted arithmetic corrections limit what the numerical match can establish.",
+            "nonparaphrase_operation": "It uses tail shape and convergence rate to distinguish a limiting universality claim from arithmetic finite-height effects and preserves the source's warning about large-deviation extrapolation.",
+            "quality_reason": "Accepted as criticized: no numerical agreement is promoted to verification, and the figure-normalization and lower-order-renormalization dependencies remain visible.",
+            "source_support": "The span gives the CUE-centered law, Bessel density and left tail, contrasts it with the Gumbel tail, and compares normalized zeta maxima near height 10^28 while explicitly calling the agreement supportive but inconclusive.",
+            "speculation_status": "Universality and persistence of the observed tail are heuristic; the source itself calls the large-deviation implication unlikely and the present evidence nonconclusive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exact span necessarily contains figure coordinates and interleaved references because of two-column extraction; the definition at lines 261-269 and result at lines 339-347 are both readable.",
+          "line_end": 347,
+          "line_start": 261,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Strong layout dependency; use the original PDF for the plotted data and exact lower-order renormalization, while the qualitative freezing test is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the fixed-window zeta analogue of the partition function and reports that its normalized free energy follows beta+1/beta below beta=1 and remains near 2 above it.",
+          "source_id": "openalex_w1986417812",
+          "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The zeta partition-function free energy exhibits the predicted freezing plateau",
+          "unit_artifact_relpath": "depth/units/openalex_w1986417812_v2_u08.txt",
+          "unit_bytes": 10158,
+          "unit_id": "openalex_w1986417812_v2_u08",
+          "unit_sha256": "76c382168933a2cf2c907d474dbcbe0998ed33681cf063f00829ea389e26c6a5",
+          "unit_type": "direct model test",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The zeta partition function turns a family of fixed-window values into a normalized free-energy curve; after lower-order subtraction, its reported agreement with beta+1/beta below beta=1 and a plateau near 2 above beta=1 is a numerical freezing diagnostic.",
+            "nonparaphrase_operation": "It identifies the response curve, rather than a single fitted maximum, as the model-discriminating observable and foregrounds that the comparison depends on an externally specified arithmetic renormalization.",
+            "quality_reason": "Accepted after critic revision: the unsupported causal explanation of the plateau was removed, while the qualitative test survives; exact N_T typography and subtraction details require the original PDF.",
+            "source_support": "The source defines z_beta(T) by integrating |zeta(1/2+iy)|^(2 beta) over [T,T+2pi], defines normalized f(beta), averages near 10^28, and reports renormalized data consistent with the stated piecewise curve.",
+            "speculation_status": "A freezing transition for zeta is not established; domination by a few extremes is only an external heuristic and is not asserted as source fact here."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_4d996b78151ce0fd5caf3aa95439151b805a263039a2647003c0d953e4c5a5f3",
+        "dossier_sha256": "2d61875b414eb20d1b2b1536924ad6f66e5731291bf8280d84634e45f22403ed"
+      }
+    }
+  ]
+}

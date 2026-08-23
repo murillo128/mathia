@@ -1,0 +1,359 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1980194296_0962fccd_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1980194296",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Stops before the damaged displayed Schrödinger equation while retaining the explicit transition to symmetry-preserving quantization.",
+      "line_end": 350,
+      "line_start": 340,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact L78 polynomial/exponential formula has dense layout and should be scan-checked; the symmetry list and selection claim are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Instantiates the general multiplier pipeline: the selected linearizing symmetry pair yields a Lagrangian with the maximal five Noether symmetries used to constrain quantization.",
+      "source_id": "openalex_w1980194296",
+      "source_normalized_sha256": "8ff9d24e7f951f6cfea529309e09c0aaa713676c736066aa87b8188f6460fd36",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A multiplier-derived Lagrangian carries five Noether symmetries",
+      "unit_artifact_relpath": "depth/units/openalex_w1980194296_d08.txt",
+      "unit_bytes": 856,
+      "unit_id": "openalex_w1980194296_d08",
+      "unit_sha256": "17bc35be4466943e935025cf892d36b6e141cf311bee015ab13fac12dc2ce4bc",
+      "unit_type": "symmetry-selected variational representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980194296_d08.txt",
+      "source": {
+        "source_id": "openalex_w1980194296",
+        "title": "Spectral realization of the Riemann zeros by quantizing<i>H</i>=<i>w</i>(<i>x</i>)(<i>p</i>+<i>ℓ</i><sup>2</sup><sub><i>p</i></sub>/<i>p</i>): the Lie-Noether symmetry approach",
+        "authors": [
+          "M. C. Nucci"
+        ],
+        "year": 2014,
+        "source_type": "conference-paper",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 332,
+          "line_end": 339,
+          "text": "\n                                     x̃ = 12 exp(−2t)x2 ,              t̃ = exp(2t)                             (23)\n\nand equation (20) is transformed into the free-particle equation, i.e.:\n\n                                                    d2 x̃\n                                                          = 0.                                                  (24)\n                                                    dt̃2\n",
+          "sha256": "86b92f40956d9b2914d0a8f3e6f9957a89277e9b731ccb999774d21708f2d48b"
+        },
+        "after": {
+          "line_start": 351,
+          "line_end": 358,
+          "text": "is obtained:\n\n    4i exp(−2t)x4 Φt + 4 exp(4t)x2 Φxx − 2 exp(−8t)x8 + 4i exp(−2t)x4 + 3 exp(4t) Φ = 0\n                                                                                 \u0001\n                                                                                                                (27)\n2\n  We prefer to cite the original work by Sophus Lie, although many textbooks/papers on Lie symmetries report\nhis findings.\n",
+          "sha256": "1d98d11197fc7e1ab8e4d8d8f8bd65c952a3d31d782b54e7ffacfbcec94e63f8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2a5142745cb49b7bdd29c2da6ff651e91f943be6e63ce7dcbc2b0b98929f36e4",
+        "dossier_sha256": "ef46d67a1cb7e6136485c57aed7061d9af1bb284e3fc1343ee7edf3eee44386b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. The case H = x(p + ell_p^2/p)",
+            "line_end": 510,
+            "line_start": 305,
+            "mathematical_role": "Derives a linearizable second-order equation, contrasts Lagrangians and their Noether algebras, constructs symmetry-preserving quantum equations, reduces them canonically, and diagnoses continuum spectrum; page apparatus and a damaged next-heading fragment are non-mathematical or extraction-defective."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 350,
+          "line_start": 340,
+          "title": "A multiplier-derived Lagrangian carries five Noether symmetries",
+          "unit_id": "openalex_w1980194296_d08",
+          "unit_type": "symmetry-selected variational representation",
+          "why_material": "Instantiates the general multiplier pipeline: the selected linearizing symmetry pair yields a Lagrangian with the maximal five Noether symmetries used to constrain quantization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Stops before the damaged displayed Schrödinger equation while retaining the explicit transition to symmetry-preserving quantization.",
+          "representation_dependency": "The exact L78 polynomial/exponential formula has dense layout and should be scan-checked; the symmetry list and selection claim are readable.",
+          "unit_id": "openalex_w1980194296_d08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 339,
+            "line_start": 305,
+            "title": "An abelian intransitive symmetry subalgebra linearizes the Sierra equation",
+            "unit_id": "openalex_w1980194296_d07",
+            "unit_type": "linearization construction",
+            "why_material": "Uses the eight-dimensional sl(3,R) point-symmetry algebra to select a canonical two-dimensional subalgebra and transform the nonlinear Lagrangian equation to the free-particle equation."
+          },
+          {
+            "line_end": 395,
+            "line_start": 374,
+            "title": "The five-symmetry quantization has continuum spectrum",
+            "unit_id": "openalex_w1980194296_d09",
+            "unit_type": "spectral obstruction and symmetry check",
+            "why_material": "Records the decisive negative result for the first quantization and checks that the resulting equation inherits five Lie symmetries corresponding to the classical Noether generators."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Different Lagrangians for related classical dynamics admit different Noether subalgebras, and preserving those different subalgebras selects different quantum equations even when their canonical reductions remain simple.",
+            "limit": "The source compares particular multiplier-derived and Hamiltonian-derived Lagrangians; it does not exhaust all Lagrangians or quantization prescriptions.",
+            "parent_local_unit_ids": [
+              "openalex_w1980194296_d08",
+              "openalex_w1980194296_d09",
+              "openalex_w1980194296_d10",
+              "openalex_w1980194296_d11",
+              "openalex_w1980194296_d12"
+            ],
+            "title": "Variational representation controls the preserved quantum symmetry interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 355,
+              "line_start": 351,
+              "reason": "Displayed Schrödinger equation (27) has broken grouping/placement in the text layer; it is flagged for scan verification and not reconstructed."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980194296_d08",
+        "spontaneous": {
+          "unit_id": "openalex_w1980194296_d08",
+          "spontaneous_reading": "A particular symmetry pair does more than linearize: Γ₇ and Γ₈ generate a Jacobi multiplier whose integrated Lagrangian admits five Noether symmetries, furnishing the maximal symmetry interface the source then uses to select a quantum equation."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980194296_d08",
+          "source_grounded_mathematics": "Using pairs among the eight point symmetries produces several multipliers and Lagrangians. The source singles out L₇₈, obtained from Γ₇ and Γ₈, and states that it admits five Noether symmetries: Γ₃, (3/2)(Γ₄+Γ₆), Γ₅, Γ₇, and Γ₈. Quantization by preserving these symmetries is then announced.",
+          "conceptual_reading": "The selected variational representative retains a larger Noether subalgebra than other representatives considered later. Thus the choice of multiplier/Lagrangian controls which classical transformations are demanded of the quantum equation.",
+          "representation_or_bridge": "The chain instantiated here is symmetry pair → determinant multiplier → L₇₈ → five Noether generators → symmetry-preserving Schrödinger constraint.",
+          "boundary_or_failure": "The displayed Schrödinger equation lies beyond this unit and is extraction-damaged in nearby context, so it is not reconstructed. Five Noether symmetries do not by themselves imply a desired spectrum or uniqueness of quantization.",
+          "uncertainty": "The symmetry list and selection claim are readable. The dense polynomial/exponential typography of L₇₈ should be scan-verified before exact formula reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1980194296_d08",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states that several symmetry pairs yield JLMs and Lagrangians, that Gamma_7 and Gamma_8 yield L_78, that L_78 admits the five displayed Noether symmetries, and that preserving those symmetries is the announced quantization constraint."
+        ],
+        "inference": [
+          "The multiplier/Lagrangian choice controlling which classical symmetries are imposed on the quantum equation is supported by the final transition sentence."
+        ],
+        "unsupported_or_imported": [
+          "Calling the five-symmetry interface 'maximal' is not supported in this exact span.",
+          "Saying that this representative retains a larger Noether subalgebra than representatives considered later, and that the same pair 'does more than linearize,' imports comparisons or facts from other units."
+        ],
+        "paraphrase_or_style_risk": [
+          "The core chain is concrete, but the comparative framing turns a local construction into a broader hierarchy not established here."
+        ],
+        "context_or_ocr_risk": [
+          "The L_78 formula is dense, and the resulting Schrodinger equation is outside this span and damaged in nearby context; neither should be reconstructed."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish what this span establishes—one selected Lagrangian with five listed symmetries—from later claims of maximality or comparisons with other Lagrangians."
+        ],
+        "revision_instructions": [
+          "Restrict the reading to: among several available JLM/Lagrangian constructions, Gamma_7 and Gamma_8 yield L_78 with the five listed Noether symmetries, whose preservation is then used as a quantization constraint. Remove 'maximal,' the later-representative comparison, and the cross-unit linearization claim, or label them explicitly as outside-span context."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The spectrum conclusion is stated in the final remarks at lines 588-589; this unit contains the construction that conclusion refers to.",
+      "line_end": 493,
+      "line_start": 472,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mixed derivatives and exponential solution factors are readable but exact operator normalization should retain the displayed coefficients.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives a second symmetry-preserving parabolic equation, reduces it by an invariant variable to an ordinary linear equation, matches that form to the classical linearized family, and supplies the second continuum-spectrum route summarized later.",
+      "source_id": "openalex_w1980194296",
+      "source_normalized_sha256": "8ff9d24e7f951f6cfea529309e09c0aaa713676c736066aa87b8188f6460fd36",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three-Noether-symmetry quantization reduces to an ordinary equation and still has continuum spectrum",
+      "unit_artifact_relpath": "depth/units/openalex_w1980194296_d12.txt",
+      "unit_bytes": 1235,
+      "unit_id": "openalex_w1980194296_d12",
+      "unit_sha256": "0c651e63625500d0eab7cbaf1272732cf3ee2c18b2a8151f06d12bddb5372eb1",
+      "unit_type": "canonical reduction and spectral obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980194296_d12.txt",
+      "source": {
+        "source_id": "openalex_w1980194296",
+        "title": "Spectral realization of the Riemann zeros by quantizing<i>H</i>=<i>w</i>(<i>x</i>)(<i>p</i>+<i>ℓ</i><sup>2</sup><sub><i>p</i></sub>/<i>p</i>): the Lie-Noether symmetry approach",
+        "authors": [
+          "M. C. Nucci"
+        ],
+        "year": 2014,
+        "source_type": "conference-paper",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 464,
+          "line_end": 471,
+          "text": "by means of (18), and the Lagrangian\n                                                    p           A\n                                       L58 = −2ℓp    x(x − ẋ) + ℓp x2 ,                                (42)\n                                                                4\nby means of (15). Lagrangian L58 coincides with LS if A = 0, but in this case M58 does not\nexist since in (18) ∆5 8 is equal to zero. This means that the JLM that yields the Lagrangian LS\ndoes not come from the two symmetries Γ5 and Γ8 . If A 6= 0 then L58 admits only two Noether\nsymmetries, namely Γ4 and Γ5 .\n",
+          "sha256": "81b169972a96824634f8e812087d7e3c9ff04e5e6fc5f771f5ccdfad62f20f0e"
+        },
+        "after": {
+          "line_start": 494,
+          "line_end": 501,
+          "text": "5\n    The reality of LS implies that ẋ < x.\n6\n    Also Ψ∂Ψ , ψ(t, x)∂Ψ with ψ any solution of (43).\n\n\n                                                           7\n\n",
+          "sha256": "fe8252976a9b3485d11622abca0d33943d8123a8ada2ad78ba2d3d84f098ec90"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2a5142745cb49b7bdd29c2da6ff651e91f943be6e63ce7dcbc2b0b98929f36e4",
+        "dossier_sha256": "ef46d67a1cb7e6136485c57aed7061d9af1bb284e3fc1343ee7edf3eee44386b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. The case H = x(p + ell_p^2/p)",
+            "line_end": 510,
+            "line_start": 305,
+            "mathematical_role": "Derives a linearizable second-order equation, contrasts Lagrangians and their Noether algebras, constructs symmetry-preserving quantum equations, reduces them canonically, and diagnoses continuum spectrum; page apparatus and a damaged next-heading fragment are non-mathematical or extraction-defective."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 493,
+          "line_start": 472,
+          "title": "Three-Noether-symmetry quantization reduces to an ordinary equation and still has continuum spectrum",
+          "unit_id": "openalex_w1980194296_d12",
+          "unit_type": "canonical reduction and spectral obstruction",
+          "why_material": "Derives a second symmetry-preserving parabolic equation, reduces it by an invariant variable to an ordinary linear equation, matches that form to the classical linearized family, and supplies the second continuum-spectrum route summarized later."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The spectrum conclusion is stated in the final remarks at lines 588-589; this unit contains the construction that conclusion refers to.",
+          "representation_dependency": "Mixed derivatives and exponential solution factors are readable but exact operator normalization should retain the displayed coefficients.",
+          "unit_id": "openalex_w1980194296_d12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 471,
+            "line_start": 444,
+            "title": "The Hamiltonian-derived Lagrangian is not recovered from the indicated symmetry-pair multiplier at the limiting parameter",
+            "unit_id": "openalex_w1980194296_d11",
+            "unit_type": "singular-limit obstruction",
+            "why_material": "Distinguishes the original Sierra Lagrangian from a parameterized multiplier-derived Lagrangian and exposes a singular limit: their formulas coincide at A=0 exactly where the determinant multiplier from the selected pair ceases to exist."
+          },
+          {
+            "line_end": 557,
+            "line_start": 511,
+            "title": "The cosh-weighted model is linearizable, but its natural and multiplier-derived Lagrangians preserve different symmetry counts",
+            "unit_id": "openalex_w1980194296_d13",
+            "unit_type": "method comparison",
+            "why_material": "Transfers the same symmetry analysis to a second proposed Hamiltonian and contrasts a five-Noether-symmetry multiplier-derived Lagrangian with the three-symmetry Hamiltonian-derived Lagrangian, while noting a singular linearizing map."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The large point-symmetry algebra linearizes the classical equation, and alternative symmetry-preserving parabolic equations reduce under invariant-variable changes to members of the same simple linear family.",
+            "limit": "The correspondence is established for the displayed models and changes of variables; it does not by itself determine spectral boundary conditions or self-adjointness.",
+            "parent_local_unit_ids": [
+              "openalex_w1980194296_d07",
+              "openalex_w1980194296_d10",
+              "openalex_w1980194296_d12"
+            ],
+            "title": "Classical linearizability reappears in reduced quantum equations"
+          },
+          {
+            "claim": "Different Lagrangians for related classical dynamics admit different Noether subalgebras, and preserving those different subalgebras selects different quantum equations even when their canonical reductions remain simple.",
+            "limit": "The source compares particular multiplier-derived and Hamiltonian-derived Lagrangians; it does not exhaust all Lagrangians or quantization prescriptions.",
+            "parent_local_unit_ids": [
+              "openalex_w1980194296_d08",
+              "openalex_w1980194296_d09",
+              "openalex_w1980194296_d10",
+              "openalex_w1980194296_d11",
+              "openalex_w1980194296_d12"
+            ],
+            "title": "Variational representation controls the preserved quantum symmetry interface"
+          },
+          {
+            "claim": "For the two symmetry-preserving quantum equations actually analyzed in the first model, symmetry-guided construction does not furnish the desired discrete Riemann-zero spectrum because both are reported to have continuum spectra.",
+            "limit": "This excludes neither other symmetry choices nor other Hamiltonians, and the source does not claim an RH proof or refutation.",
+            "parent_local_unit_ids": [
+              "openalex_w1980194296_d01",
+              "openalex_w1980194296_d09",
+              "openalex_w1980194296_d12",
+              "openalex_w1980194296_d14"
+            ],
+            "title": "Continuum spectrum is the source's bounded negative RH result"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980194296_d12",
+        "spontaneous": {
+          "unit_id": "openalex_w1980194296_d12",
+          "spontaneous_reading": "The three-Noether quantization has a transport-adapted coordinate ξ=xe^{−t} that collapses its mixed-derivative PDE to a constant-coefficient temporal ODE; the same ODE arises from the classical linearized family at b=−5/2, while the source later reports that the resulting spectrum is still continuous."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980194296_d12",
+          "source_grounded_mathematics": "Preserving Γ₄,Γ₅,Γ₈ yields 4Ψ_tt+8xΨ_xt+4x²Ψ_xx−4Ψ_t−3Ψ=0. With x=ξe^t it reduces to 4Ψ_tt−4Ψ_t−3Ψ=0, whose solution is F₁(ξ)e^{3t/2}+F₂(ξ)e^{−t/2}. Substituting b=−5/2 into the classical linear family gives z̈=ż+(3/4)z, matching the canonical equation. The assignment's bounded final-remarks context reports continuum spectrum for this quantization.",
+          "conceptual_reading": "Again, a symmetry-invariant moving coordinate turns spatial structure into a parameter and exposes a simple temporal normal form. Changing from the five- to three-Noether interface changes the PDE and exponents, but does not remove the source's reported continuum-spectrum obstruction.",
+          "representation_or_bridge": "The bridge is ξ=xe^{−t}, relating the parabolic operator to an ODE and then to the b=−5/2 member of the classical transformed family. The three lifted Lie generators check the intended symmetry preservation.",
+          "boundary_or_failure": "The continuum conclusion is source-reported in the bounded final remarks rather than derived in this span. ODE reduction and matching coefficients do not supply a self-adjoint domain, boundary conditions, or an exhaustive statement about other quantizations.",
+          "uncertainty": "The mixed-derivative coefficients and exponential solutions are legible. Exact operator interpretation remains dependent on conventions and analytic data absent from the unit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1980194296_d12",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives equation (43) from preservation of three Noether symmetries, lists its three lifted generators, reduces it with x=xi exp(t), gives the general exponential solution, and matches the reduced equation to the b=-5/2 member of the classical linear family."
+        ],
+        "inference": [
+          "Reading xi as a moving invariant coordinate that turns spatial dependence into arbitrary fiber labels is supported by the displayed reduction and solution."
+        ],
+        "unsupported_or_imported": [
+          "The exact span contains no continuum-spectrum statement, so the spontaneous claim that the spectrum is continuous, the source-grounded sentence attributing that conclusion to final remarks, and the conceptual claim that this branch does not remove the continuum obstruction are imported from later material outside the evidence boundary."
+        ],
+        "paraphrase_or_style_risk": [
+          "Apart from the imported spectral conclusion, the candidate performs a concrete reduction rather than merely restating that a representation exposes structure."
+        ],
+        "context_or_ocr_risk": [
+          "Mixed derivatives and exponent factors are legible, but operator domain, boundary conditions, self-adjointness, and spectral evidence are absent from this unit."
+        ],
+        "missed_mechanism": [
+          "The analysis must keep canonical ODE reduction and coefficient matching separate from any spectral conclusion."
+        ],
+        "revision_instructions": [
+          "Remove every continuum-spectrum claim from this unit's candidate analysis. Retain only the three-symmetry PDE construction, lifted-generator check, xi reduction, exponential solution, and b=-5/2 classical normal-form correspondence; state that no spectral type is established in the span."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "79491a0fea262037b0ce2ba0e6b2a3232c48b2512ed4c36d6204ec3338529f3a"
+}

@@ -1,0 +1,350 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2963782307_76355239_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2963782307",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Control-character line breaks at 1293-1334 fragment several inequality symbols, but the split, choice of epsilon_0, resulting estimate, and endpoint limiting argument remain recoverable.",
+      "line_end": 1459,
+      "line_start": 1287,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Relies on the displayed integral split and asymptotic comparison; endpoint multiplicity is formula sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof combines two bounds on complementary sigma ranges, chooses epsilon_0 proportional to 1/log T to obtain the squared log-log error, and uses T±epsilon comparisons so zeros on the terminal ordinate do not invalidate the theorem.",
+      "source_id": "openalex_w2963782307",
+      "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Split the argument integral, optimize the buffer, and perturb exceptional ordinates",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2963782307_v2u12.txt",
+      "unit_bytes": 10749,
+      "unit_id": "full_openalex_w2963782307_v2u12",
+      "unit_sha256": "11f98bee09b1431f14e9a748239bc068156b4b74a8179186d3e12a5821209052",
+      "unit_type": "buffer optimization and exceptional-height repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2963782307_v2u12.txt",
+      "source": {
+        "source_id": "openalex_w2963782307",
+        "title": "On the zeros of the $k$-th derivative of the Riemann zeta function under the Riemann Hypothesis",
+        "authors": [
+          "Ade Irma Suriajaya"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1279,
+          "line_end": 1286,
+          "text": "place of Lemma 2.6 of [1].                                                 \u0004\nRemark 5. The restrictions of the lower bound of T we gave in Lemmas 2.3, 2.4,\nand 2.5 are not essential, but they are sufficient for our purpose. We may let T be\nany positive number in Lemmas 2.3, 2.4, and 2.5, however in that case, we need\nto modify some calculations in the proofs. Thus we used these restrictions for our\nconvenience.\n\n\n",
+          "sha256": "51a13795b873ae34a459312f64624ab706c017a66c506d24b8282a656b28a0f0"
+        },
+        "after": {
+          "line_start": 1460,
+          "line_end": 1467,
+          "text": "\n<!-- source-page: 22 -->\n\n90      Ade Irma Suriajaya\n\nProof of Corollary 2. This is an immediate consequence of Theorem 1. For the\nproof, refer to [7, p. 58 (the ending part of Section 3)].                \u0004\n\n",
+          "sha256": "f3393ee759555abd15eadfab329f7722374740fe41d2ddd22e2fbe6340d45574"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4c561714e6e9b3228c4532f1b472269a1df15d7f044531af67abf2f5559e98db",
+        "dossier_sha256": "618d904e6c575e5512c20252253214e8b2169425ead0e4ccc60958247cd3d89e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Argument estimates and proof of Theorem 1",
+            "line_end": 1468,
+            "line_start": 1033,
+            "mathematical_role": "Bounds the residual argument integral using Jensen and Cauchy estimates, optimizes the critical-line buffer, and removes exceptional ordinates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1459,
+          "line_start": 1287,
+          "title": "Split the argument integral, optimize the buffer, and perturb exceptional ordinates",
+          "unit_id": "full_openalex_w2963782307_v2u12",
+          "unit_type": "buffer optimization and exceptional-height repair",
+          "why_material": "The proof combines two bounds on complementary sigma ranges, chooses epsilon_0 proportional to 1/log T to obtain the squared log-log error, and uses T±epsilon comparisons so zeros on the terminal ordinate do not invalidate the theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Control-character line breaks at 1293-1334 fragment several inequality symbols, but the split, choice of epsilon_0, resulting estimate, and endpoint limiting argument remain recoverable.",
+          "representation_dependency": "Relies on the displayed integral split and asymptotic comparison; endpoint multiplicity is formula sensitive.",
+          "unit_id": "full_openalex_w2963782307_v2u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1279,
+            "line_start": 1238,
+            "title": "Cauchy differentiation transfers RH growth control from zeta to zeta^(k) and hence arg G_k",
+            "unit_id": "full_openalex_w2963782307_v2u11",
+            "unit_type": "growth-to-argument transfer",
+            "why_material": "A near-critical-line bound for zeta is converted by Cauchy's integral formula into a kth-derivative bound, which is then used as the input to the stated argument estimate for G_k."
+          },
+          {
+            "line_end": 1664,
+            "line_start": 1468,
+            "title": "Rectangle-difference route from weighted beta sums toward an unweighted derivative-zero count",
+            "unit_id": "full_openalex_w2963782307_u04",
+            "unit_type": "argument-principle count for derivative zeros",
+            "why_material": "This immutable v1 unit subtracts two nearby Littlewood rectangles and controls the resulting F, zeta, and correction contributions before taking the strip width to zero."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Jensen/Cauchy bounds deteriorate with distance from the critical line, so splitting the contour and optimizing an explicit buffer converts local analytic growth estimates into the final log-log error scale.",
+            "limit": "The optimized rate is conditional on the cited RH bounds and on this solver's available estimate for arg G_k.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2963782307_v2u10",
+              "full_openalex_w2963782307_v2u11",
+              "full_openalex_w2963782307_v2u12"
+            ],
+            "title": "The critical-line buffer is a tunable bridge between local growth and global contour error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2963782307_v2u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2963782307_v2u12",
+          "spontaneous_reading": "The final error scale comes from gluing two estimates at a tunable buffer from the critical line. The near-line bound is strong over a narrow interval and the Jensen bound handles the rest; choosing epsilon_0=1/(4 log T) balances their costs at O((log log T)^2). A separate T plus-or-minus epsilon comparison repairs the contour when the terminal height contains zeros."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2963782307_v2u12",
+          "source_grounded_mathematics": "The proof splits the integral of arg(G_k/zeta) at sigma=1/2+2epsilon_0. Lemma 2.5 together with an RH bound for arg zeta controls the short near-critical segment, while Lemma 2.3 controls the remaining segment up to a_k. Setting epsilon_0=1/(4 log T) gives an O_{a_k,t_k}((log log T)^2) integral, which inserted into Proposition 2.2 yields the weighted derivative-zero formula with O_k((log log T)^2). For a terminal ordinate containing a zero, the proof compares the formulas at T-epsilon and T+epsilon and absorbs the intervening weighted multiplicity into the same error.",
+          "conceptual_reading": "The critical-line buffer is an optimization parameter connecting two local regimes rather than an arbitrary cutoff. The endpoint perturbation separately distinguishes analytic contour admissibility from the theorem's desired inclusive counting convention.",
+          "representation_or_bridge": "The split contour is the bridge that lets unlike argument estimates cooperate. The two nearby heights T-epsilon and T+epsilon bridge a formula valid on zero-free boundaries to a statement including zeros at height T.",
+          "boundary_or_failure": "All rates are conditional on RH and on the preceding argument lemmas. The perturbation shows the endpoint increment fits the established error; it does not improve that error or locate the terminal zeros.",
+          "uncertainty": "Several inequality signs and the final printed threshold are damaged by control characters, so the exact terminal typography is uncertain. The buffer choice, squared log-log error, and limiting comparison are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2963782307_v2u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly records the split at sigma=1/2+2epsilon_0, the use of Lemmas 2.3 and 2.5 plus the RH arg-zeta bound, the choice epsilon_0=1/(4 log T), the O_k((log log T)^2) result, and the T plus-or-minus epsilon endpoint repair.",
+          "It correctly separates contour admissibility from inclusive endpoint counting."
+        ],
+        "inference": [
+          "Treating the buffer as a parameter connecting two estimate regimes is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says the chosen epsilon_0 balances the two costs, but the span only selects a sufficient admissible value of order 1/log T and does not show comparable or balanced contributions; the near-line contribution and remaining-range bound are not presented as an equality-of-cost optimization."
+        ],
+        "paraphrase_or_style_risk": [
+          "Calling the cutoff optimized without qualification slightly overstates the displayed proof."
+        ],
+        "context_or_ocr_risk": [
+          "Control characters damage several inequalities and the final printed lower threshold, though the split, chosen epsilon_0, error scale, and endpoint comparison are clear."
+        ],
+        "missed_mechanism": [
+          "The conceptual account should say that the chosen buffer satisfies the Lemma 2.3 restriction and makes both integrated bounds fit the target scale, without claiming a demonstrated balance."
+        ],
+        "revision_instructions": [
+          "Replace the balance/optimization claim with: the proof chooses an admissible buffer of order 1/log T, applies the near-line and away-from-line estimates on their respective ranges, and thereby obtains O((log log T)^2); do not assert that the two contributions are balanced unless separately proved."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This exact span supplies the conclusion missing from the carried v1 cut while retaining the estimates that justify the mean-value limit.",
+      "line_end": 1672,
+      "line_start": 1493,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula and limit dependent; b=1/2-delta and b'=1/2-2delta must be distinguished.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof subtracts Littlewood identities at b and b', shows every difference term is O(delta) except the zeta and G_k argument averages, and lets delta tend to zero to obtain the unweighted count.",
+      "source_id": "openalex_w2963782307",
+      "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+      "source_page_markers_inside_unit": [
+        23,
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subtracting adjacent rectangles converts beta weights into boundary argument terms",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2963782307_v2u13.txt",
+      "unit_bytes": 10076,
+      "unit_id": "full_openalex_w2963782307_v2u13",
+      "unit_sha256": "a1fad1e39e0701196738dcdc919f55d9ccd256455c33f18d81ad3a8ee6ee5bc9",
+      "unit_type": "shrinking-strip argument-principle conversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2963782307_v2u13.txt",
+      "source": {
+        "source_id": "openalex_w2963782307",
+        "title": "On the zeros of the $k$-th derivative of the Riemann zeta function under the Riemann Hypothesis",
+        "authors": [
+          "Ade Irma Suriajaya"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1485,
+          "line_end": 1492,
+          "text": "of [1]. We take ak , σk , tk , T , δ, and b as in the beginning of the proof of Proposition\n2.2. We let b0 := 12 − 2δ . Replacing b by b0 in (2.9), we have\n\n            X                                      Z T                                      Z T\n                              (k)     0                               0\n2π                       (β         −b)=                   log |Gk (b + it)|dt −                  log |Gk (ak + it)|dt\n                                                     tk                                      tk\n     ρ(k) =β (k) +iγ (k) ,\n",
+          "sha256": "cd534298e3ce56dffbbc43338de1e1c9bd581cb1648e4b644c0e3ea46addd4b3"
+        },
+        "after": {
+          "line_start": 1673,
+          "line_end": 1680,
+          "text": "Proof of Theorem 3. Firstly we consider for T ⩾ 2 which satisfies ζ (k) (σ+iT ) 6=\n0 and ζ(σ + iT ) 6= 0 for any σ ∈ R. By Lemma 2.5,\n                            \u0012       \u0013      \u0012                 \u0013\n                              1                  log T\n                     arg Gk     + iT = Oak\n                              2              (log log T )1/2\n\nand again from (2.23) of [1, p. 2251], we have\n",
+          "sha256": "3f386a3ba5dbcbf82b9a625984fadf85156f6365f492763360155f7760318835"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4c561714e6e9b3228c4532f1b472269a1df15d7f044531af67abf2f5559e98db",
+        "dossier_sha256": "618d904e6c575e5512c20252253214e8b2169425ead0e4ccc60958247cd3d89e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 3 and comparison with N(T)",
+            "line_end": 1747,
+            "line_start": 1469,
+            "mathematical_role": "Uses a shrinking-strip rectangle difference to obtain the zero count, applies argument bounds, and identifies arg G_k as the limiting error source."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1672,
+          "line_start": 1493,
+          "title": "Subtracting adjacent rectangles converts beta weights into boundary argument terms",
+          "unit_id": "full_openalex_w2963782307_v2u13",
+          "unit_type": "shrinking-strip argument-principle conversion",
+          "why_material": "The proof subtracts Littlewood identities at b and b', shows every difference term is O(delta) except the zeta and G_k argument averages, and lets delta tend to zero to obtain the unweighted count."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This exact span supplies the conclusion missing from the carried v1 cut while retaining the estimates that justify the mean-value limit.",
+          "representation_dependency": "Formula and limit dependent; b=1/2-delta and b'=1/2-2delta must be distinguished.",
+          "unit_id": "full_openalex_w2963782307_v2u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1664,
+            "line_start": 1468,
+            "title": "Rectangle-difference route from weighted beta sums toward an unweighted derivative-zero count",
+            "unit_id": "full_openalex_w2963782307_u04",
+            "unit_type": "argument-principle count for derivative zeros",
+            "why_material": "This immutable v1 unit subtracts two nearby Littlewood rectangles and controls the resulting F, zeta, and correction contributions before taking the strip width to zero."
+          },
+          {
+            "line_end": 1697,
+            "line_start": 1673,
+            "title": "Boundary argument estimates finish the zero count and perturbation removes exceptional heights",
+            "unit_id": "full_openalex_w2963782307_v2u14",
+            "unit_type": "argument-bound theorem completion",
+            "why_material": "Substitution identifies arg G_k as the dominant available error bound and repeats the endpoint perturbation logic to extend the count to every T at least 2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A fixed-width rectangle retains beta weights and exposes an integrated argument error, while subtraction across a vanishing strip cancels those weights and leaves boundary arguments that count zeros.",
+            "limit": "Both conversions depend on admissible zero-free horizontal boundaries and the chosen logarithmic branches.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2963782307_u03",
+              "full_openalex_w2963782307_v2u06",
+              "full_openalex_w2963782307_v2u09",
+              "full_openalex_w2963782307_u04",
+              "full_openalex_w2963782307_v2u13"
+            ],
+            "title": "Wide and thin Littlewood rectangles extract complementary zero statistics"
+          },
+          {
+            "claim": "After exact contour bookkeeping supplies the main asymptotics, progress is controlled by a boundary-argument estimate—especially arg G_k—rather than by further manipulation of the main term.",
+            "limit": "This is a source-specific diagnosis under RH; the paper explicitly lacks quantitative information about the implied constant.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2963782307_v2u09",
+              "full_openalex_w2963782307_v2u13",
+              "full_openalex_w2963782307_v2u14",
+              "full_openalex_w2963782307_v2u15"
+            ],
+            "title": "The formal main term is not the practical bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2963782307_v2u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2963782307_v2u13",
+          "spontaneous_reading": "Subtracting Littlewood identities on two adjacent vertical lines acts like a finite difference in the beta weight. After division by the strip width and letting that width vanish, the weighted statistic becomes the unweighted zero count, while the surviving averages collapse to boundary arguments at sigma=1/2."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2963782307_v2u13",
+          "source_grounded_mathematics": "With b=1/2-delta and b'=1/2-2delta, the proof subtracts the two rectangle formulas to express pi delta times N_k(T)-N_k(t_k) through differences of log|G_k| integrals and short argument integrals. Functional-equation decomposition shows the F, F^(k)/F, correction, and lower-edge differences are O_k(delta), while the main F term and a short arg zeta integral remain. After division by pi delta, delta tends to zero; the mean value theorem turns the short zeta and G_k argument averages into (1/(2pi))arg zeta(1/2+iT) and (1/(2pi))arg G_k(1/2+iT), yielding the stated count formula.",
+          "conceptual_reading": "A shrinking-strip difference differentiates away horizontal displacement weights. Terms smooth across the strip vanish to first order, whereas boundary phase retains the discrete change in the number of enclosed zeros.",
+          "representation_or_bridge": "The pair of adjacent Littlewood rectangles is the bridge from the beta-weighted contour identity to an unweighted count. Mean-value limits convert short spatial averages into critical-line boundary values.",
+          "boundary_or_failure": "The argument requires the previously chosen logarithmic branches and zero-free terminal heights. The artifact begins inside the preceding rectangle identity, so its first displayed fragment depends on that supplied setup; the proof also needs b and b' to remain distinct until the limit.",
+          "uncertainty": "Formula extraction is dense, but the definitions of b and b', O(delta) cancellations, mean-value limits, and final boundary-argument formula are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2963782307_v2u13",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly identifies the exact finite-difference identity: subtracting adjacent Littlewood rectangles converts the beta-weighted sum into delta times the unweighted count, and the short argument averages converge to critical-line boundary values.",
+          "It correctly preserves the branch and zero-free-height dependencies and distinguishes b=1/2-delta from b'=1/2-2delta."
+        ],
+        "inference": [
+          "Describing adjacent rectangles as a bridge from horizontal weighting to counting is a valid conceptual synthesis."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading says terms smooth across the strip vanish to first order. They are O(delta) before normalization, but after division by pi delta they generally yield finite derivative, main-term, or O_k(1) contributions; J12 in particular supplies the displayed main term rather than vanishing."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The artifact begins inside the preceding rectangle identity and its formulas are dense, but the supplied setup and complete subtraction-to-limit calculation support reliable criticism."
+        ],
+        "missed_mechanism": [
+          "The key distinction is between the exact delta factor created in the zero weights, first-order smooth differences that survive after division, and short phase averages that converge to boundary arguments."
+        ],
+        "revision_instructions": [
+          "Revise the conceptual reading to say that finite differencing removes the beta dependence from each zero weight, while division by the strip width turns smooth first-order differences into finite main or bounded contributions; only the short argument averages become the critical-line phase terms."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "db97f7f5c5861097748282c59431816ed235ca05e117c6265f519ab478f6d1c0"
+}

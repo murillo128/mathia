@@ -1,0 +1,418 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1980116773",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1980116773_05838894_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Reliable finite-height verification combines an independent total-zero count, a fast bounded-error location screen, adaptive interval refinement, and a higher-precision fallback for the few cases whose amplitudes lie below the first method's error bound.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1980116773_d02",
+          "openalex_w1980116773_d03",
+          "openalex_w1980116773_d04",
+          "openalex_w1980116773_d07"
+        ],
+        "proposed_limit": "The paper's formulas and plots need scan verification, and the resulting statement remains bounded in height.",
+        "source_id": "openalex_w1980116773",
+        "synthesis_id": "riemann_v2_within_19b4c4d96c731fe5c5cc1a63",
+        "title": "Layered certification pipeline"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes why the Euler-Maclaurin evaluation became computationally expensive at increasing height.",
+          "line_end": 80,
+          "line_start": 26,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Certification logic is prose-supported; Gram-point and Euler-Maclaurin formulas and remainder notation need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Gram-law sign changes locate critical-line zeros, but failures show interval-by-interval sign rules are insufficient. Backlund's rectangle count supplies the independent total, so finding at least that many critical-line zeros excludes additional off-line roots in the bounded region.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Global zero counting closes the gap left by critical-line sign changes",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d02.txt",
+          "unit_bytes": 3306,
+          "unit_id": "openalex_w1980116773_d02",
+          "unit_sha256": "483f9e5357605b65382f899409cfa7e6e145b87c6c45936cfa5b727617a7e73c",
+          "unit_type": "count-versus-location certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Gram's one-zero-per-interval rule fails, while Hutchinson found at least 138 critical-line zeros by sign changes and Backlund's method gave exactly 138 zeros in the stated rectangle. Interpretation: a location lower bound becomes exhaustive only when it matches an independent total count; equality leaves no room for additional off-line zeros inside that rectangle. The gain is completeness in a bounded region, whereas Gram-interval signs alone neither certify the total nor extend beyond the rectangle. Backlund's counting mechanism and exact OCR-damaged formulas remain outside the recoverable evidence.",
+            "nonparaphrase_operation": "Combines a critical-line lower bound with an independent global total to close the completeness gap.",
+            "quality_reason": "Accepted because it preserves the two logically distinct counts and does not invent details of Backlund's method.",
+            "source_support": "The span states Gram's law and its failures, the at-least-138 sign-change count, the exactly-138 rectangle count, and the bounded exclusion of off-line roots; it also describes the order-height Euler–Maclaurin burden.",
+            "speculation_status": "None."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Historical examples show compute access, not just mathematical formulation, controlled which height ranges were certified.",
+          "line_end": 139,
+          "line_start": 81,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Scaling claim and history are readable; the expansion, phase, and remainder formula are OCR-damaged.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replacing Euler-Maclaurin by the Riemann-Siegel expansion drastically reduces the number of terms, enabling punched-card and digital-machine verification at much larger heights while retaining an explicit remainder bound.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [
+            3,
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Riemann-Siegel reduces the evaluation length from order t to order square-root t",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d03.txt",
+          "unit_bytes": 3152,
+          "unit_id": "openalex_w1980116773_d03",
+          "unit_sha256": "6d9955d6c2977743a7580a8439b76bd04372ceb1c9c1e0ed06504690c9ab2e03",
+          "unit_type": "algorithmic representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the Riemann–Siegel expansion evaluates a real critical-line function using roughly the square root of the height many terms and an estimated remainder, enabling substantially higher punched-card and digital computations than the earlier order-height approach. Interpretation: the decisive gain is a shorter representation whose real values support sign-based zero detection while its remainder controls reliability. It relocates the burden to evaluating the shorter oscillatory sum and bounding its remainder; it accelerates finite verification but proves nothing globally. The phase, summation, and remainder formulas are too OCR-damaged for exact reuse.",
+            "nonparaphrase_operation": "Explains how a complexity-reducing real-valued representation changes the feasible range of certified sign tests.",
+            "quality_reason": "Accepted because the gain, retained error obligation, and finite scope are all grounded in the source despite formula-layer damage.",
+            "source_support": "The span explicitly contrasts the term counts, states that the critical-line function is real, records a remainder estimate, and narrates the larger ranges reached by later computation.",
+            "speculation_status": "None."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a reusable staged-verification design rather than a mere list of computed zeros.",
+          "line_end": 176,
+          "line_start": 140,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Decision logic is clear; the omitted displayed evaluation at lines 149-154 and exact error thresholds require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The SWAC evaluates an approximate real-valued critical-line function at Gram points, compares its magnitude with a rigorous remainder estimate, flags uncertain or definite law failures, then subdivides neighboring intervals; only unresolved low-amplitude cases trigger a more expensive method.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Bounded-error screening sends only ambiguous Gram intervals to finer computation",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d04.txt",
+          "unit_bytes": 2045,
+          "unit_id": "openalex_w1980116773_d04",
+          "unit_sha256": "199e4bf8c2e57bc166d8646d6b0916f57575fb88a6600e394e3fdac566e7e6cf",
+          "unit_type": "adaptive computational audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the SWAC evaluates an approximation at Gram points, compares small magnitudes with a remainder estimate, separately flags doubtful signs and proved Gram-law failures, subdivides the two neighboring intervals, and sends the residual ambiguous case to a slower calculation. Interpretation: the approximate value together with its error allowance is a routing certificate: most signs are settled cheaply, while uncertainty concentrates work in the combined neighborhood where a missing root may be compensated next door. If magnitude does not dominate the error, the fast screen cannot determine the local root count and must defer. The omitted evaluation and thresholds are not recoverable from this text layer.",
+            "nonparaphrase_operation": "Turns rigorous approximation uncertainty into an adaptive computational triage rule.",
+            "quality_reason": "Accepted because it distinguishes doubt, proved failure, neighborhood refinement, and resolution rather than treating every anomaly alike.",
+            "source_support": "The span describes both machine flags, eightfold subdivision of adjacent intervals, local compensation, the unresolved low maximum, and the decision to use the smaller-remainder formula.",
+            "speculation_status": "None."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The surrounding Figure 2 is extraction-defective, but the prose reports the procedure, maximum, and two root ordinates.",
+          "line_end": 338,
+          "line_start": 319,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Procedure is recoverable from prose; numerical values, term counts, and plotted geometry require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For the two cases left ambiguous by the Riemann-Siegel remainder, the slower expansion evaluates both real and imaginary parts on a fine mesh with many terms, confirming two roots and quantifying the exceptionally low intervening maximum.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Direct complex evaluation resolves the lowest-maximum close-zero case",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d07.txt",
+          "unit_bytes": 1267,
+          "unit_id": "openalex_w1980116773_d07",
+          "unit_sha256": "436eea9b683f683e51463dbe56509d922ac286aafe92a503aa3aa51ba7b910b1",
+          "unit_type": "precision fallback and witness",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the two cases left uncertain were recomputed with the slower expansion, using 1,500 and 2,000 terms and samples of both real and imaginary parts; the paper reports stable arithmetic, a very low maximum, and two nearby critical-line roots near height 7005. Interpretation: expensive direct evaluation is reserved for the residual ambiguity set, so the overall procedure is adaptive rather than uniformly high precision. This text reports that the cases were resolved but, without the missing figure and a detailed root-location argument, does not explain how the complex samples alone certify those roots. Numerical values remain scan-sensitive.",
+            "nonparaphrase_operation": "Identifies a precision fallback that resolves only the cases not settled by the short approximation.",
+            "quality_reason": "Accepted after revision because it reports the resolution without overstating the evidentiary role of complex samples or the missing figure.",
+            "source_support": "The span states why the last two cases required formula (1), gives term and sample counts, notes round-off stability, and lists the maximum and two root ordinates.",
+            "speculation_status": "None; no inference is made from the unavailable plotted geometry."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+        "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Ordinary one-per-interval behavior is a poor test set: displaced clusters, low extrema, and close pairs expose the assumptions and numerical error margins of the verification procedure.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1980116773_d05",
+          "openalex_w1980116773_d06",
+          "openalex_w1980116773_d07"
+        ],
+        "proposed_limit": "These cases stress the computation but do not by themselves constitute evidence for an off-line zero.",
+        "source_id": "openalex_w1980116773",
+        "synthesis_id": "riemann_v2_within_63f810265620c263e03ba39a",
+        "title": "Failure-driven adversarial sampling"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Frequency rises to roughly 814 flagged failures among the first 10,000 intervals, with a small uncertain subset.",
+          "line_end": 231,
+          "line_start": 182,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Patterns are prose- and table-supported, but several subscripts and interval labels are OCR-degraded and should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The census distinguishes adjacent compensations, two-interval displacements, uncertain endpoint signs, direction of displacement, and multi-failure clusters. It demonstrates why robust verification must count across neighborhoods rather than assume one zero per Gram interval.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gram-law failures are displaced and clustered, not evidence of missing critical-line zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d05.txt",
+          "unit_bytes": 3150,
+          "unit_id": "openalex_w1980116773_d05",
+          "unit_sha256": "17a7ae55b9913a15c36928977a3609a08664cd20fdc6f2aa25b480e5aaf2962e",
+          "unit_type": "computational failure taxonomy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: in this finite census most empty Gram intervals have an extra root in an adjacent interval, fourteen have a displacement one interval farther, shifts occur in both directions, eighteen endpoint signs remain doubtful, and failures sometimes cluster. Interpretation: Gram intervals are useful sampling cells but not reliable containers for individual zeros; the observed occupancy anomalies are often compensated only after nearby intervals are considered. This is a pattern in the reported first 10,000 intervals, not a theorem that a fixed neighborhood always suffices, and neighborhood counts alone do not exclude off-line zeros without an independent total count.",
+            "nonparaphrase_operation": "Reframes interval-level failures as finite neighborhood occupancy patterns while separating that diagnosis from exhaustive zero certification.",
+            "quality_reason": "Accepted after revision because the universal-sounding conservation claim has been removed and the independent-count obligation is explicit.",
+            "source_support": "The source gives the displacement taxonomy, direction counts, uncertainty count, frequency table, and explicit clustered occupancy patterns.",
+            "speculation_status": "No general conservation law is asserted; the interpretation is limited to the reported census."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Identifies five close-pair cases requiring special calculation.",
+          "line_end": 276,
+          "line_start": 263,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Selection rationale is legible; exact interval indices need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The paper reframes anomalies from frequency modulation to amplitude: very low maxima between close roots are the cases most likely to defeat an error-bounded sign screen and therefore deserve targeted fine-mesh computation.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Low extrema and close pairs are stronger stress cases than ordinary Gram failures",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d06.txt",
+          "unit_bytes": 980,
+          "unit_id": "openalex_w1980116773_d06",
+          "unit_sha256": "92d6daf82ee3e6173f2c3ad829097174698fab2bfa3aee652ffbdfcc16293a56",
+          "unit_type": "amplitude-based adversarial selection",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the paper shifts attention from the frequency of Gram-law failures to oscillation amplitude, especially low maxima, high minima, and close root pairs; about twenty-five close pairs are reported, with five requiring a special fine mesh. Interpretation: amplitude selects a sharper stress set than interval occupancy because these cases are closest to making the observed sign structure hard to resolve. Connecting low amplitude to the preceding bounded-error screen's numerical margin is a contextual inference, not a formula established in this slice. The source presents these anomalies as potentially more relevant to RH, but it does not show that they produce an off-line zero.",
+            "nonparaphrase_operation": "Uses extremal amplitude rather than rule violation frequency to select adversarial numerical cases.",
+            "quality_reason": "Accepted after revision because the amplitude insight is retained while the cross-unit error-bound mechanism is clearly labeled as inference.",
+            "source_support": "The span explicitly contrasts frequency modulation with amplitude, identifies nearly coincident roots, and reports the close-pair and fine-mesh counts.",
+            "speculation_status": "The numerical-margin explanation is an inference requiring the preceding approximation context; no RH counterexample is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The surrounding Figure 2 is extraction-defective, but the prose reports the procedure, maximum, and two root ordinates.",
+          "line_end": 338,
+          "line_start": 319,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Procedure is recoverable from prose; numerical values, term counts, and plotted geometry require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For the two cases left ambiguous by the Riemann-Siegel remainder, the slower expansion evaluates both real and imaginary parts on a fine mesh with many terms, confirming two roots and quantifying the exceptionally low intervening maximum.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Direct complex evaluation resolves the lowest-maximum close-zero case",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d07.txt",
+          "unit_bytes": 1267,
+          "unit_id": "openalex_w1980116773_d07",
+          "unit_sha256": "436eea9b683f683e51463dbe56509d922ac286aafe92a503aa3aa51ba7b910b1",
+          "unit_type": "precision fallback and witness",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the two cases left uncertain were recomputed with the slower expansion, using 1,500 and 2,000 terms and samples of both real and imaginary parts; the paper reports stable arithmetic, a very low maximum, and two nearby critical-line roots near height 7005. Interpretation: expensive direct evaluation is reserved for the residual ambiguity set, so the overall procedure is adaptive rather than uniformly high precision. This text reports that the cases were resolved but, without the missing figure and a detailed root-location argument, does not explain how the complex samples alone certify those roots. Numerical values remain scan-sensitive.",
+            "nonparaphrase_operation": "Identifies a precision fallback that resolves only the cases not settled by the short approximation.",
+            "quality_reason": "Accepted after revision because it reports the resolution without overstating the evidentiary role of complex samples or the missing figure.",
+            "source_support": "The span states why the last two cases required formula (1), gives term and sample counts, notes round-off stability, and lists the maximum and two root ordinates.",
+            "speculation_status": "None; no inference is made from the unavailable plotted geometry."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+        "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "As Gram-law failures become more frequent, the source argues for targeting predicted near-cancellation neighborhoods at very large height rather than only extending a contiguous verified prefix.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1980116773_d01",
+          "openalex_w1980116773_d05",
+          "openalex_w1980116773_d08"
+        ],
+        "proposed_limit": "The recurrence-based proposal is informal and does not provide a complete algorithm for locating those neighborhoods.",
+        "source_id": "openalex_w1980116773",
+        "synthesis_id": "riemann_v2_within_481e3ac42b585b58e68cabd6",
+        "title": "Uniform extension versus targeted remote search"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also records the small amount of SWAC time and the possibility of straightforward extension.",
+          "line_end": 25,
+          "line_start": 11,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose is legible; the exact zeta notation and height should be checked against the scan because OCR confuses symbols.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source explicitly scopes its evidence: the first 10,000 zeros are found simple and on the critical line, implying RH only up to a specified height rather than globally.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A zero computation supports only a bounded-height RH statement",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d01.txt",
+          "unit_bytes": 922,
+          "unit_id": "openalex_w1980116773_d01",
+          "unit_sha256": "ec35fa0c51257347e0dc9a6e9a6156dd1e0732e57ba305c48e63b12d258f9c9c",
+          "unit_type": "finite computational certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Lehmer reports that the first 10,000 zeros are simple and lie on the critical line, and therefore states RH only up to the displayed height near 9878.910. Interpretation: ordering a complete reported finite census by height turns many zero locations into one bounded-height statement. The gain is exhaustive coverage of that prefix; it supplies no implication above the cutoff, and this unit does not expose the independent counting mechanism needed to establish completeness. The exact inequality and symbols remain OCR-uncertain.",
+            "nonparaphrase_operation": "Separates finite exhaustive certification from the universal conjecture and identifies height-ordering as the aggregation step.",
+            "quality_reason": "Accepted because the epistemic boundary is explicit and source-specific, while damaged notation is not reconstructed.",
+            "source_support": "The opening paragraph explicitly gives the zero count, simplicity, critical-line location, bounded-height conclusion, limited SWAC time, and possibility of further computation.",
+            "speculation_status": "None; extension of the computation is reported as possible, not promoted to a global mathematical conclusion."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Frequency rises to roughly 814 flagged failures among the first 10,000 intervals, with a small uncertain subset.",
+          "line_end": 231,
+          "line_start": 182,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Patterns are prose- and table-supported, but several subscripts and interval labels are OCR-degraded and should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The census distinguishes adjacent compensations, two-interval displacements, uncertain endpoint signs, direction of displacement, and multi-failure clusters. It demonstrates why robust verification must count across neighborhoods rather than assume one zero per Gram interval.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gram-law failures are displaced and clustered, not evidence of missing critical-line zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d05.txt",
+          "unit_bytes": 3150,
+          "unit_id": "openalex_w1980116773_d05",
+          "unit_sha256": "17a7ae55b9913a15c36928977a3609a08664cd20fdc6f2aa25b480e5aaf2962e",
+          "unit_type": "computational failure taxonomy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: in this finite census most empty Gram intervals have an extra root in an adjacent interval, fourteen have a displacement one interval farther, shifts occur in both directions, eighteen endpoint signs remain doubtful, and failures sometimes cluster. Interpretation: Gram intervals are useful sampling cells but not reliable containers for individual zeros; the observed occupancy anomalies are often compensated only after nearby intervals are considered. This is a pattern in the reported first 10,000 intervals, not a theorem that a fixed neighborhood always suffices, and neighborhood counts alone do not exclude off-line zeros without an independent total count.",
+            "nonparaphrase_operation": "Reframes interval-level failures as finite neighborhood occupancy patterns while separating that diagnosis from exhaustive zero certification.",
+            "quality_reason": "Accepted after revision because the universal-sounding conservation claim has been removed and the independent-count obligation is explicit.",
+            "source_support": "The source gives the displacement taxonomy, direction counts, uncertainty count, frequency table, and explicit clustered occupancy patterns.",
+            "speculation_status": "No general conservation law is asserted; the interpretation is limited to the reported census."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is an informal heuristic, explicitly not a proof; the note added in proof reports another 15,000 on-line roots.",
+          "line_end": 360,
+          "line_start": 339,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Argument is prose-supported, though OCR obscures some signs in the sentence relating extrema to RH.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The concluding interpretation treats the low maximum as a delicate balance of rising and descending Dirichlet terms; invoking recurrence, it predicts such stress cases recur and suggests searching selected remote neighborhoods rather than uniformly extending the zero table.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Near-cancellation among early and late terms motivates targeted searches at immense height",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d08.txt",
+          "unit_bytes": 1907,
+          "unit_id": "openalex_w1980116773_d08",
+          "unit_sha256": "d2455795e84639692cbac99d75a278036d5758cacb7333873f53c9e043e4f647",
+          "unit_type": "heuristic search strategy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: in explicitly informal comments, Lehmer interprets an exceptionally low maximum as delicate cancellation between early rising and later descending terms, invokes Kronecker's theorem for recurrence of this phenomenon, and proposes searches in selected remote neighborhoods; a note reports 15,000 additional on-line roots. Interpretation: the term decomposition turns a local near-cancellation into a heuristic for targeting future stress regions rather than merely extending a contiguous table. Recurrence concerns the cancellation phenomenon, not RH counterexamples, and neither the heuristic nor the extra finite computation licenses a global conclusion. OCR-obscured sign language is not sharpened.",
+            "nonparaphrase_operation": "Converts a cancellation mechanism into a recurrence-guided search heuristic while preserving its epistemic limits.",
+            "quality_reason": "Accepted because fact, strategic suggestion, finite evidence, and unproved global consequence remain visibly separate.",
+            "source_support": "The conclusion explicitly describes the competing terms, states recurrence, proposes distant targeted investigation, labels the discussion informal, and separately records the added finite computation.",
+            "speculation_status": "Explicit heuristic; recurrence of near-cancellation is not recurrence of off-line zeros."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+        "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+      }
+    }
+  ]
+}

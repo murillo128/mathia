@@ -1,0 +1,224 @@
+{
+  "stage": "audit",
+  "task": "fresh-context stratified capability-vs-style and ecosystem audit",
+  "audit_context_group": "source:openalex_w3212690580",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/independent_stratified_audit.md",
+  "prompt_sha256": "01b8ad26214a2c99a0499451602be75e5b1bd4408ec5d01e781c6a32145d9439",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/audit/batches/source_openalex_w3212690580_4ceb8420_part_01.jsonl",
+  "item_count": 3,
+  "items": [
+    {
+      "object_id": "mathia_interpretation_b46a6dc4c88e2c1ca4dee6dda223daf5e6b51adfaf44466506e88d79ae7d18f1",
+      "object_role": "interpretation",
+      "proposed_content": "The span defines Psi(n) = n product_{q | n}(1+1/q), the primorial-type cutoff M_x = product_{q <= x} q, and R(n) = Psi(n)/(n log log n) for n >= 3, then states unconditionally that R(M_x) tends to exp(gamma)/zeta(2). Since M_x is squarefree and has exactly the primes q <= x as divisors, Psi(M_x)/M_x = product_{q <= x}(1+1/q), so substitution into R turns the cutoff-prime representation into a normalized quantity with a stable displayed limit. The normalization removes the explicit n factor and scales the remaining product by log log n. The limit gives neither a convergence rate nor the side of approach, so it cannot alone justify an eventual one-sided inequality when combined with another vanishing error.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_d9687a01731bb50eb0ebcae191404065343c86a48210f3bd834a0b308bad4565",
+          "source_id": "openalex_w3212690580",
+          "source_unit_ids": [
+            "openalex_w3212690580_d04"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w3212690580_d04.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "source_year": 2023,
+          "source_type": "preprint",
+          "viewpoint_tags": [
+            "equivalent-criteria",
+            "reformulation"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d04.txt",
+          "content_sha256": "6edf81a5178ea9905f71a8e178524bdb7c42dfdbb50b24c87ef9fb371ee14eb5",
+          "artifact_sha256": "e4745d230fe19ac0b0564efc524fef49fd00d4bef9957b394dde1aea45bf1488",
+          "artifact_bytes": 1712
+        }
+      ],
+      "audit_context_group": "source:openalex_w3212690580",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "preprint"
+        ],
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 6
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_8e52174d2b0bec6816223b78ff900ff72324a07fa786bb412e5c8241998f27a8",
+      "object_role": "synthesis",
+      "proposed_content": "The three units jointly identify theta as an additive compression of cutoff primes, Nicolas(x) as product_{q <= x} q/(q-1) > exp(gamma) log theta(x), and f(x) as exp(gamma) log theta(x) times the reciprocal product. Thus f is the right-to-left ratio in the Nicolas comparison, so Nicolas(x) is equivalent to f(x) < 1 wherever the displayed quantities are defined. Lemma 2.1 then uses that same normalization at a different threshold: an eventual f(x) <= exp(2/sqrt(x)) envelope conflicts with the cited arbitrarily late positive spikes of log f under false RH. This connects the exact criterion to the sufficient reductio without treating the two bounds as identical.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_b2494da199685194f5adcc8e7032b649ff029e457b4ea99f94d5263d66d71103",
+          "source_id": "openalex_w3212690580",
+          "source_unit_ids": [
+            "openalex_w3212690580_d01"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w3212690580_d01.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "source_year": 2023,
+          "source_type": "preprint",
+          "viewpoint_tags": [
+            "equivalent-criteria",
+            "reformulation"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d01.txt",
+          "content_sha256": "e8fa228667e0b57eb4e4d6876000454eb744349b94bbb15b9b659000e37fb481",
+          "artifact_sha256": "4ebe33108476b0148724c56a088b4937b4b57f9f05542599b6e8e2daa804a4f3",
+          "artifact_bytes": 865
+        },
+        {
+          "source_object_id": "mathia_source_d16e53bcbe2d6f371be17f8b2127cf7cb6037c8368fbfe326c5b10e045fc1e45",
+          "source_id": "openalex_w3212690580",
+          "source_unit_ids": [
+            "openalex_w3212690580_d03"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w3212690580_d03.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "source_year": 2023,
+          "source_type": "preprint",
+          "viewpoint_tags": [
+            "equivalent-criteria",
+            "reformulation"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d03.txt",
+          "content_sha256": "13019b2981a3a038686f43fa6828a1f22e2a6630a1e29c34408cd98d32bf3f76",
+          "artifact_sha256": "f7103c67422ec71b4d79c4e4f8adbcfacbddb10b5240b5e85702bbef10852e7b",
+          "artifact_bytes": 816
+        },
+        {
+          "source_object_id": "mathia_source_40252e7856f9dc5f20bd17cf11bfb12c2b7f9d870eaf488da2266aba69e54e24",
+          "source_id": "openalex_w3212690580",
+          "source_unit_ids": [
+            "openalex_w3212690580_d05"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w3212690580_d05.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "source_year": 2023,
+          "source_type": "preprint",
+          "viewpoint_tags": [
+            "equivalent-criteria",
+            "reformulation"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d05.txt",
+          "content_sha256": "1f7b90f28825ba955d2231588fe6bfd5b6d4f15502aa27d204e3b1ee40d95da1",
+          "artifact_sha256": "5453f057569666911c0a24a9c5c67ee0717f2d8a8a049c8069c5f3366def179b",
+          "artifact_bytes": 3932
+        }
+      ],
+      "audit_context_group": "source:openalex_w3212690580",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "preprint"
+        ],
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 6
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_e6773e833604e77f8f039a6eb95205d9ca73014d6298203997c3b54f5450987d",
+      "object_role": "synthesis",
+      "proposed_content": "The source factors the Lemma 2.1 target into A_x R(M_x) >= exp(gamma), where A_x is exp(2/sqrt(x)) times the finite Euler product through x. Splitting the full Euler product at x and applying the tail bound controls A_x relative to zeta(2), while substituting the primorial M_x into the Dedekind-psi normalization makes R(M_x) tend to exp(gamma)/zeta(2). The constants are complementary, but their product limit is exactly the boundary being sought; without one-sided or rate control on R(M_x), convergence alone does not force the eventual lower inequality asserted in the main proof.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_c5e5fc63bda6d42f5aa66fa4dfc837174c8ef3fe63719a8687f2d5cfa6aaa51e",
+          "source_id": "openalex_w3212690580",
+          "source_unit_ids": [
+            "openalex_w3212690580_d02"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w3212690580_d02.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "source_year": 2023,
+          "source_type": "preprint",
+          "viewpoint_tags": [
+            "equivalent-criteria",
+            "reformulation"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d02.txt",
+          "content_sha256": "d82aa723924a8a1dcc1699d721182aebce7aefe114ba5ffef2324aa619d1f6eb",
+          "artifact_sha256": "5880cd6a9e9e8c2785fbda95038a0b5123aca9d9fc0a00dd822953897aa39983",
+          "artifact_bytes": 1421
+        },
+        {
+          "source_object_id": "mathia_source_d9687a01731bb50eb0ebcae191404065343c86a48210f3bd834a0b308bad4565",
+          "source_id": "openalex_w3212690580",
+          "source_unit_ids": [
+            "openalex_w3212690580_d04"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w3212690580_d04.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "source_year": 2023,
+          "source_type": "preprint",
+          "viewpoint_tags": [
+            "equivalent-criteria",
+            "reformulation"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d04.txt",
+          "content_sha256": "6edf81a5178ea9905f71a8e178524bdb7c42dfdbb50b24c87ef9fb371ee14eb5",
+          "artifact_sha256": "e4745d230fe19ac0b0564efc524fef49fd00d4bef9957b394dde1aea45bf1488",
+          "artifact_bytes": 1712
+        },
+        {
+          "source_object_id": "mathia_source_a3fe536d4042a26bc60354ba0bf0d3a246ccde03bdc58e6a2e6afb89d7036e70",
+          "source_id": "openalex_w3212690580",
+          "source_unit_ids": [
+            "openalex_w3212690580_d06"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w3212690580_d06.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "source_year": 2023,
+          "source_type": "preprint",
+          "viewpoint_tags": [
+            "equivalent-criteria",
+            "reformulation"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d06.txt",
+          "content_sha256": "246800f8d8f8e7c7d32241835598eb65ce63de1050de14d591ef506dc7a9d532",
+          "artifact_sha256": "aaf3f797bb47e38c5ea6ea9e89ad06a3dcf1eabc82b518b0cf1b22e3f35feeda",
+          "artifact_bytes": 3495
+        }
+      ],
+      "audit_context_group": "source:openalex_w3212690580",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "preprint"
+        ],
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 6
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "0e9535251cd69150979257193eade8c78826f1d59c4e1f5ae0f9a53a662db069"
+}

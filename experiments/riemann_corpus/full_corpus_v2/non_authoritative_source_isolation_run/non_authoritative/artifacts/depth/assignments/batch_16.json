@@ -1,0 +1,1669 @@
+{
+  "task": "whole-source quota-free semantic depth planning",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_16.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "arxiv-preprint",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Alain Connes"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 2515,
+      "lineage": "v2-promoted-or-new-discovery",
+      "machine_section_outline": [
+        {
+          "line": 13,
+          "text": "Abstract"
+        },
+        {
+          "line": 36,
+          "text": "Contents"
+        },
+        {
+          "line": 37,
+          "text": "1 Introduction 3"
+        },
+        {
+          "line": 39,
+          "text": "2 Encounter with the Riemann zeta function 6"
+        },
+        {
+          "line": 40,
+          "text": "2.1 Classical Analytic Number Theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6"
+        },
+        {
+          "line": 41,
+          "text": "2.1.1 Prime Number Theorem (PNT): . . . . . . . . . . . . . . . . . . . . . . . . . . 6"
+        },
+        {
+          "line": 42,
+          "text": "2.1.2 Riemann’s formula, von Mangoldt paper . . . . . . . . . . . . . . . . . . . . . 7"
+        },
+        {
+          "line": 43,
+          "text": "2.1.3 Explicit formulas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8"
+        },
+        {
+          "line": 44,
+          "text": "2.1.4 Changes of sign of π ( x) − Li( x) . . . . . . . . . . . . . . . . . . . . . . . . . . 9"
+        },
+        {
+          "line": 45,
+          "text": "2.1.5 Hardy and Littlewood . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9"
+        },
+        {
+          "line": 46,
+          "text": "2.1.6 Selberg’s early contributions (1940s–1950s): . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 47,
+          "text": "2.1.7 Proportion of zeros on the critical line: . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 48,
+          "text": "2.1.8 Zero-free regions and zero-density estimates: . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 49,
+          "text": "2.1.9 The Lindelöf Hypothesis: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 50,
+          "text": "2.2 Theory of Entire and Meromorphic Functions . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 51,
+          "text": "2.2.1 Hadamard factorization theorem . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 52,
+          "text": "2.2.2 Nevanlinna theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11"
+        },
+        {
+          "line": 53,
+          "text": "2.2.3 Average behavior of log |ζ (s)| and zeros of ζ (s) − x . . . . . . . . . . . . . . . 12"
+        },
+        {
+          "line": 54,
+          "text": "2.2.4 Voronin’s Universality Theorem, zeta as a chameleon . . . . . . . . . . . . . . 12"
+        },
+        {
+          "line": 61,
+          "text": "3 A Century and a Half of Theory Building towards RH 13"
+        },
+        {
+          "line": 62,
+          "text": "3.1 Harmonic Analysis and Functional Analysis . . . . . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 63,
+          "text": "3.1.1 Hilbert spaces and spectral theory: . . . . . . . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 64,
+          "text": "3.1.2 Scattering theory and spectral interpretation: . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 65,
+          "text": "3.2 Algebraic and Arithmetic Geometry . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 66,
+          "text": "3.2.1 Weil’s proof for function fields: . . . . . . . . . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 67,
+          "text": "3.2.2 Grothendieck’s schemes and étale cohomology: . . . . . . . . . . . . . . . . . 14"
+        },
+        {
+          "line": 68,
+          "text": "3.2.3 Motives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14"
+        },
+        {
+          "line": 69,
+          "text": "3.3 Automorphic Forms and Representation Theory . . . . . . . . . . . . . . . . . . . . . 15"
+        },
+        {
+          "line": 70,
+          "text": "3.3.1 Langlands Program: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15"
+        },
+        {
+          "line": 71,
+          "text": "3.3.2 Modular forms and L-functions: . . . . . . . . . . . . . . . . . . . . . . . . . . 15"
+        },
+        {
+          "line": 72,
+          "text": "3.3.3 Selberg trace formula and zeta functions: . . . . . . . . . . . . . . . . . . . . . 15"
+        },
+        {
+          "line": 73,
+          "text": "3.4 Random Matrix Theory and Quantum Chaos . . . . . . . . . . . . . . . . . . . . . . . 16"
+        },
+        {
+          "line": 74,
+          "text": "3.4.1 Montgomery’s pair correlation: . . . . . . . . . . . . . . . . . . . . . . . . . . . 16"
+        },
+        {
+          "line": 75,
+          "text": "3.4.2 Odlyzko’s statistics: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16"
+        },
+        {
+          "line": 76,
+          "text": "3.4.3 Quantum chaos: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17"
+        },
+        {
+          "line": 77,
+          "text": "3.4.4 Katz-Sarnak theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17"
+        },
+        {
+          "line": 78,
+          "text": "3.4.5 Moments and unitary matrices (Keating–Snaith): . . . . . . . . . . . . . . . . 17"
+        },
+        {
+          "line": 79,
+          "text": "3.5 Noncommutative Geometry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18"
+        },
+        {
+          "line": 80,
+          "text": "3.5.1 Connes’ trace formula . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18"
+        },
+        {
+          "line": 81,
+          "text": "3.5.2 Knots, primes and class field theory . . . . . . . . . . . . . . . . . . . . . . . . 19"
+        },
+        {
+          "line": 82,
+          "text": "3.6 p-adic and Motivic L-functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19"
+        },
+        {
+          "line": 83,
+          "text": "3.6.1 p-adic L-functions and Iwasawa theory: . . . . . . . . . . . . . . . . . . . . . . 19"
+        },
+        {
+          "line": 84,
+          "text": "3.6.2 Motivic L-functions and Bloch–Kato conjectures: . . . . . . . . . . . . . . . . . 19"
+        },
+        {
+          "line": 85,
+          "text": "3.7 Computational and Experimental Mathematics . . . . . . . . . . . . . . . . . . . . . . 20"
+        },
+        {
+          "line": 86,
+          "text": "3.7.1 High-precision computations . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20"
+        },
+        {
+          "line": 88,
+          "text": "4 Equivalent Formulations 20"
+        },
+        {
+          "line": 89,
+          "text": "4.1 Weil’s Positivity Criterion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20"
+        },
+        {
+          "line": 90,
+          "text": "4.2 Beurling–Nyman criterion: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21"
+        },
+        {
+          "line": 91,
+          "text": "4.3 Li’s criterion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21"
+        },
+        {
+          "line": 92,
+          "text": "4.4 Elementary Number-Theoretic Formulations . . . . . . . . . . . . . . . . . . . . . . . 22"
+        },
+        {
+          "line": 93,
+          "text": "4.4.1 Robin’s Criterion (1984) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+        },
+        {
+          "line": 94,
+          "text": "4.4.2 Lagarias’ Criterion (2002) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+        },
+        {
+          "line": 96,
+          "text": "5 A Letter to Professor Bernhard Riemann 23"
+        },
+        {
+          "line": 98,
+          "text": "6 The strategy and the next small steps 26"
+        },
+        {
+          "line": 99,
+          "text": "6.1 The Fourier transform of θ x has all its zeros on the real line . . . . . . . . . . . . . . . 26"
+        },
+        {
+          "line": 100,
+          "text": "6.2 Riemann’s Ξ function and Hermite functions . . . . . . . . . . . . . . . . . . . . . . . 26"
+        },
+        {
+          "line": 101,
+          "text": "6.3 The prolate wave functions enter the scene . . . . . . . . √ . . . . . . . . . . . . . . . . 27"
+        },
+        {
+          "line": 102,
+          "text": "6.4 The Poisson formula and the approximation kλ of θ x , λ = x. . . . . . . . . . . . . . 28"
+        },
+        {
+          "line": 103,
+          "text": "6.5 Convergence of the Fourier tranforms b kλ → b k . . . . . . . . . . . . . . . . . . . . . . . 29"
+        },
+        {
+          "line": 104,
+          "text": "6.6 Remaining steps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30"
+        },
+        {
+          "line": 106,
+          "text": "7 Geometric Perspectives 30"
+        },
+        {
+          "line": 107,
+          "text": "7.1 Archimedean trace formula . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30"
+        },
+        {
+          "line": 108,
+          "text": "7.2 Archimedean Weil positivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31"
+        },
+        {
+          "line": 109,
+          "text": "7.3 The semilocal adele class space . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31"
+        },
+        {
+          "line": 110,
+          "text": "7.4 The semilocal trace formula . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32"
+        },
+        {
+          "line": 111,
+          "text": "7.5 The infrared and ultraviolet regimes . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32"
+        },
+        {
+          "line": 112,
+          "text": "7.6 The prolate wave operator . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33"
+        },
+        {
+          "line": 114,
+          "text": "8 Conclusion 34"
+        },
+        {
+          "line": 122,
+          "text": "1 Introduction"
+        },
+        {
+          "line": 250,
+          "text": "13 and computing with the method described, one obtains an approximation of the first 50 zeros"
+        },
+        {
+          "line": 289,
+          "text": "1 meaning that the associated eigenfunction is even"
+        },
+        {
+          "line": 327,
+          "text": "2 Encounter with the Riemann zeta function"
+        },
+        {
+          "line": 328,
+          "text": "2.1 Classical Analytic Number Theory"
+        },
+        {
+          "line": 329,
+          "text": "2.1.1 Prime Number Theorem (PNT):"
+        },
+        {
+          "line": 340,
+          "text": "2 log 2 3 log 3 5 log 5 7 log 7"
+        },
+        {
+          "line": 399,
+          "text": "2.1.2 Riemann’s formula, von Mangoldt paper"
+        },
+        {
+          "line": 410,
+          "text": "2 which he sent to Chebyshev"
+        },
+        {
+          "line": 433,
+          "text": "1. If v > 0 , then"
+        },
+        {
+          "line": 439,
+          "text": "2. If v = 0, then"
+        },
+        {
+          "line": 444,
+          "text": "3. If v < 0 , then"
+        },
+        {
+          "line": 458,
+          "text": "2.1.3 Explicit formulas"
+        },
+        {
+          "line": 502,
+          "text": "Z ∞\u0012 \u0013"
+        },
+        {
+          "line": 505,
+          "text": "1 x x − x−1"
+        },
+        {
+          "line": 507,
+          "text": "2.1.4 Changes of sign of π ( x) − Li( x)"
+        },
+        {
+          "line": 514,
+          "text": "B = 1010"
+        },
+        {
+          "line": 522,
+          "text": "2.1.5 Hardy and Littlewood"
+        },
+        {
+          "line": 526,
+          "text": "1 t t"
+        },
+        {
+          "line": 554,
+          "text": "2.1.6 Selberg’s early contributions (1940s–1950s):"
+        },
+        {
+          "line": 566,
+          "text": "2.1.7 Proportion of zeros on the critical line:"
+        },
+        {
+          "line": 576,
+          "text": "2.1.8 Zero-free regions and zero-density estimates:"
+        },
+        {
+          "line": 589,
+          "text": "2.1.9 The Lindelöf Hypothesis:"
+        },
+        {
+          "line": 598,
+          "text": "2.2 Theory of Entire and Meromorphic Functions"
+        },
+        {
+          "line": 599,
+          "text": "2.2.1 Hadamard factorization theorem"
+        },
+        {
+          "line": 641,
+          "text": "Ξ(0) = − √ ∼ 0.497121"
+        },
+        {
+          "line": 646,
+          "text": "2.2.2 Nevanlinna theory"
+        },
+        {
+          "line": 668,
+          "text": "6 The infinite product is defined here as the limit as T → ∞ of the product over ρ with |ρ | < T"
+        },
+        {
+          "line": 670,
+          "text": "7 using the identity 1 − 2 +is = 1− a"
+        },
+        {
+          "line": 682,
+          "text": "2.2.3 Average behavior of log |ζ (s)| and zeros of ζ (s) − x"
+        },
+        {
+          "line": 700,
+          "text": "2.2.4 Voronin’s Universality Theorem, zeta as a chameleon"
+        },
+        {
+          "line": 751,
+          "text": "3 A Century and a Half of Theory Building towards RH"
+        },
+        {
+          "line": 759,
+          "text": "3.1 Harmonic Analysis and Functional Analysis"
+        },
+        {
+          "line": 760,
+          "text": "3.1.1 Hilbert spaces and spectral theory:"
+        },
+        {
+          "line": 767,
+          "text": "3.1.2 Scattering theory and spectral interpretation:"
+        },
+        {
+          "line": 776,
+          "text": "3.2 Algebraic and Arithmetic Geometry"
+        },
+        {
+          "line": 782,
+          "text": "3.2.1 Weil’s proof for function fields:"
+        },
+        {
+          "line": 816,
+          "text": "3.2.2 Grothendieck’s schemes and étale cohomology:"
+        },
+        {
+          "line": 845,
+          "text": "3.2.3 Motives"
+        },
+        {
+          "line": 860,
+          "text": "3.3 Automorphic Forms and Representation Theory"
+        },
+        {
+          "line": 874,
+          "text": "3.3.1 Langlands Program:"
+        },
+        {
+          "line": 886,
+          "text": "3.3.2 Modular forms and L-functions:"
+        },
+        {
+          "line": 903,
+          "text": "3.3.3 Selberg trace formula and zeta functions:"
+        },
+        {
+          "line": 940,
+          "text": "3.4 Random Matrix Theory and Quantum Chaos"
+        },
+        {
+          "line": 941,
+          "text": "3.4.1 Montgomery’s pair correlation:"
+        },
+        {
+          "line": 963,
+          "text": "3.4.2 Odlyzko’s statistics:"
+        },
+        {
+          "line": 1006,
+          "text": "3.4.3 Quantum chaos:"
+        },
+        {
+          "line": 1014,
+          "text": "3.4.4 Katz-Sarnak theory"
+        },
+        {
+          "line": 1033,
+          "text": "3.4.5 Moments and unitary matrices (Keating–Snaith):"
+        },
+        {
+          "line": 1079,
+          "text": "3.5 Noncommutative Geometry"
+        },
+        {
+          "line": 1080,
+          "text": "3.5.1 Connes’ trace formula"
+        },
+        {
+          "line": 1109,
+          "text": "3.5.2 Knots, primes and class field theory"
+        },
+        {
+          "line": 1135,
+          "text": "3.6 p-adic and Motivic L-functions"
+        },
+        {
+          "line": 1136,
+          "text": "3.6.1 p-adic L-functions and Iwasawa theory:"
+        },
+        {
+          "line": 1149,
+          "text": "3.6.2 Motivic L-functions and Bloch–Kato conjectures:"
+        },
+        {
+          "line": 1165,
+          "text": "3.7 Computational and Experimental Mathematics"
+        },
+        {
+          "line": 1166,
+          "text": "3.7.1 High-precision computations"
+        },
+        {
+          "line": 1189,
+          "text": "4 Equivalent Formulations"
+        },
+        {
+          "line": 1199,
+          "text": "4.1 Weil’s Positivity Criterion"
+        },
+        {
+          "line": 1239,
+          "text": "1 x − x−1"
+        },
+        {
+          "line": 1265,
+          "text": "4.2 Beurling–Nyman criterion:"
+        },
+        {
+          "line": 1276,
+          "text": "4.3 Li’s criterion"
+        },
+        {
+          "line": 1289,
+          "text": "4.4 Elementary Number-Theoretic Formulations"
+        },
+        {
+          "line": 1305,
+          "text": "4.4.1 Robin’s Criterion (1984)"
+        },
+        {
+          "line": 1311,
+          "text": "4.4.2 Lagarias’ Criterion (2002)"
+        },
+        {
+          "line": 1349,
+          "text": "5 A Letter to Professor Bernhard Riemann"
+        },
+        {
+          "line": 1362,
+          "text": "T O P ROFESSOR B ERNHARD R IEMANN"
+        },
+        {
+          "line": 1447,
+          "text": "9 The Mellin transform of φ ( u ) is defined as M(φ )( s ) ="
+        },
+        {
+          "line": 1449,
+          "text": "0 u φ(u)du"
+        },
+        {
+          "line": 1450,
+          "text": "10 See §6.1"
+        },
+        {
+          "line": 1451,
+          "text": "11 Which is normalized here as the imaginary line"
+        },
+        {
+          "line": 1474,
+          "text": "D IFFERENCES B ETWEEN VALUES ( USING PRIMES ≤ 13)"
+        },
+        {
+          "line": 1494,
+          "text": "13 here, the corresponding set of zeros will converge towards the zeros of zeta."
+        },
+        {
+          "line": 1508,
+          "text": "13 uniformly on compact subsets"
+        },
+        {
+          "line": 1517,
+          "text": "6 The strategy and the next small steps"
+        },
+        {
+          "line": 1544,
+          "text": "6.1 The Fourier transform of θ x has all its zeros on the real line"
+        },
+        {
+          "line": 1562,
+          "text": "6.2 Riemann’s Ξ function and Hermite functions"
+        },
+        {
+          "line": 1567,
+          "text": "14 It is used for the trigonometric truncation at N = 100 in the computation presented in the letter"
+        },
+        {
+          "line": 1583,
+          "text": "1 dx 2"
+        },
+        {
+          "line": 1593,
+          "text": "Z ∞ Z ∞"
+        },
+        {
+          "line": 1615,
+          "text": "6.3 The prolate wave functions enter the scene"
+        },
+        {
+          "line": 1631,
+          "text": "15 The traditional notation for this function is Ξ ( t ) instead of Riemann’s ξ (t )."
+        },
+        {
+          "line": 1632,
+          "text": "16 C. E. Shannon, Communication in the Presence of Noise, Proc. IRE 37 (1949), 10–21."
+        },
+        {
+          "line": 1633,
+          "text": "17 The normalized Fourier transform is defined by"
+        },
+        {
+          "line": 1689,
+          "text": "6.4 The Poisson formula and the approximation kλ of θ x , λ = x."
+        },
+        {
+          "line": 1708,
+          "text": "18 With our normalization, time duration is T = 2λ and bandlimit is W = λ."
+        },
+        {
+          "line": 1709,
+          "text": "19 see [47], Theorem 1. Note that χ ( λ )2 = λ ( a ) with a ="
+        },
+        {
+          "line": 1756,
+          "text": "6.5 kλ → b"
+        },
+        {
+          "line": 1775,
+          "text": "6.6 Remaining steps"
+        },
+        {
+          "line": 1782,
+          "text": "7 Geometric Perspectives"
+        },
+        {
+          "line": 1806,
+          "text": "7.1 Archimedean trace formula"
+        },
+        {
+          "line": 1813,
+          "text": "\u0010 \u0011 Z"
+        },
+        {
+          "line": 1834,
+          "text": "7.2 Archimedean Weil positivity"
+        },
+        {
+          "line": 1850,
+          "text": "7.3 The semilocal adele class space"
+        },
+        {
+          "line": 1877,
+          "text": "2. The stalk of O ⋊ Gm at the generic point is the global cross product S(AQ ) ⋊ Q× ."
+        },
+        {
+          "line": 1878,
+          "text": "3. The global sections of O ⋊ Gm form the cross product S(R) ⋊ {±1}."
+        },
+        {
+          "line": 1887,
+          "text": "7.4 The semilocal trace formula"
+        },
+        {
+          "line": 1910,
+          "text": "7.5 The infrared and ultraviolet regimes"
+        },
+        {
+          "line": 1961,
+          "text": "1 j 2k"
+        },
+        {
+          "line": 1964,
+          "text": "2 j=0"
+        },
+        {
+          "line": 1978,
+          "text": "7.6 The prolate wave operator"
+        },
+        {
+          "line": 2052,
+          "text": "8 Conclusion"
+        },
+        {
+          "line": 2089,
+          "text": "chapter in this ongoing story."
+        },
+        {
+          "line": 2111,
+          "text": "2 Selberg’s mollifier was of the form"
+        },
+        {
+          "line": 2120,
+          "text": "3 For a meromorphic function f in the complex plane, the Nevanlinna characteristic is defined by"
+        },
+        {
+          "line": 2137,
+          "text": "Z \u0010 \u0011"
+        },
+        {
+          "line": 2147,
+          "text": "4 The theorem states that for fixed σ > 1 / 2, the values"
+        },
+        {
+          "line": 2176,
+          "text": "6 It is of the form"
+        },
+        {
+          "line": 2205,
+          "text": "8 More precisely one has"
+        },
+        {
+          "line": 2224,
+          "text": "11 The module extends to a multiplicative map | • | from the ring A ="
+        },
+        {
+          "line": 2253,
+          "text": "References"
+        },
+        {
+          "line": 2366,
+          "text": "(N.S.) 23 (1990), 147–182."
+        },
+        {
+          "line": 2507,
+          "text": "A LAIN C ONNES"
+        }
+      ],
+      "normalized_bytes": 170695,
+      "normalized_page_count": 42,
+      "normalized_relpath": "normalized/connes2026_rh_past_present_b4257c16f11d.txt",
+      "normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "prior_v1_units": [],
+      "source_id": "connes2026_rh_past_present",
+      "source_type": "survey-with-new-research-program",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "historical-foundational",
+        "weil-positivity",
+        "trace-formula",
+        "speculative-program"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2026,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/connes2026_rh_past_present_b4257c16f11d.txt"
+    },
+    {
+      "acquisition_route": "arxiv-preprint",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Eduardo Duéñez",
+        "David W. Farmer",
+        "Sara Froehlich",
+        "C. P. Hughes",
+        "Francesco Mezzadri",
+        "Toàn Phan"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 1457,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "ROOTS OF THE DERIVATIVE OF THE RIEMANN ZETA FUNCTION"
+        },
+        {
+          "line": 4,
+          "text": "AND OF CHARACTERISTIC POLYNOMIALS"
+        },
+        {
+          "line": 6,
+          "text": "EDUARDO DUEÑEZ, DAVID W. FARMER, SARA FROEHLICH, CHRIS HUGHES,"
+        },
+        {
+          "line": 7,
+          "text": "FRANCESCO MEZZADRI, AND TOAN PHAN"
+        },
+        {
+          "line": 24,
+          "text": "1. Introduction"
+        },
+        {
+          "line": 35,
+          "text": "1 log log T"
+        },
+        {
+          "line": 37,
+          "text": "2 log T"
+        },
+        {
+          "line": 57,
+          "text": "2 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 66,
+          "text": "2. The zeros of ζ 0 (s)."
+        },
+        {
+          "line": 111,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 3"
+        },
+        {
+          "line": 125,
+          "text": "2 log T"
+        },
+        {
+          "line": 130,
+          "text": "T →∞ N1 (T )"
+        },
+        {
+          "line": 149,
+          "text": "3. Zeros of derivatives of polynomials and statement of results"
+        },
+        {
+          "line": 169,
+          "text": "4 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 190,
+          "text": "N 1 T"
+        },
+        {
+          "line": 225,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 5"
+        },
+        {
+          "line": 236,
+          "text": "3 3N 2 45 9N 2 15N 4"
+        },
+        {
+          "line": 240,
+          "text": "315 135N 2 45N 4 189N 6"
+        },
+        {
+          "line": 280,
+          "text": "6 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 302,
+          "text": "4. Comparison with data"
+        },
+        {
+          "line": 317,
+          "text": "5. Proof of theorem 3.1"
+        },
+        {
+          "line": 334,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 7"
+        },
+        {
+          "line": 407,
+          "text": "8 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 443,
+          "text": "2N N2"
+        },
+        {
+          "line": 444,
+          "text": "5.1. Expansion for the roots. Exploiting the symmetry of the j.p.d.f. (3.9) under arbitrary"
+        },
+        {
+          "line": 448,
+          "text": "N −2 \u0012 \u0015 \u0014 \u0013"
+        },
+        {
+          "line": 455,
+          "text": "F0 X 1"
+        },
+        {
+          "line": 472,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 9"
+        },
+        {
+          "line": 490,
+          "text": "1 X 1"
+        },
+        {
+          "line": 505,
+          "text": "1 1 N N"
+        },
+        {
+          "line": 541,
+          "text": "2 A0 b1 A0 1"
+        },
+        {
+          "line": 543,
+          "text": "N 12N 2 12N 3"
+        },
+        {
+          "line": 547,
+          "text": "10 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 555,
+          "text": "1 3 \u0001 A1 A0 1"
+        },
+        {
+          "line": 558,
+          "text": "8 4N 6N 24N 3"
+        },
+        {
+          "line": 566,
+          "text": "5.2. Nearest-neighbor spacing. Proposition 5.1 provides a formula for δ = N (1 − z 0 ),"
+        },
+        {
+          "line": 592,
+          "text": "1 B1 5 3 5B1 B2 1"
+        },
+        {
+          "line": 610,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 11"
+        },
+        {
+          "line": 615,
+          "text": "5.3. Expected value of Aj . We have"
+        },
+        {
+          "line": 677,
+          "text": "12 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 702,
+          "text": "U(N −2) . (5.29)"
+        },
+        {
+          "line": 726,
+          "text": "N4 N2"
+        },
+        {
+          "line": 730,
+          "text": "= CN , (5.31)"
+        },
+        {
+          "line": 734,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 13"
+        },
+        {
+          "line": 742,
+          "text": "U2 (N −2)"
+        },
+        {
+          "line": 748,
+          "text": "= N3 − N2 + N −"
+        },
+        {
+          "line": 756,
+          "text": "Λ U (N −2)"
+        },
+        {
+          "line": 762,
+          "text": "= N2 − N +"
+        },
+        {
+          "line": 765,
+          "text": "Λ0 Λ0"
+        },
+        {
+          "line": 771,
+          "text": "Λ U (N −2)"
+        },
+        {
+          "line": 774,
+          "text": "= − CN 1 +"
+        },
+        {
+          "line": 778,
+          "text": "= N3 − N2 + N − . (5.32)"
+        },
+        {
+          "line": 786,
+          "text": "6. The Riemann zeta-function"
+        },
+        {
+          "line": 810,
+          "text": "14 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 818,
+          "text": "1 1 1 X\u0012 1 1"
+        },
+        {
+          "line": 822,
+          "text": "2 s − ρ− s0 − ρ+ ρ6=ρ s0 − ρ ρ"
+        },
+        {
+          "line": 830,
+          "text": "1 1 8X"
+        },
+        {
+          "line": 857,
+          "text": "2 x +π θ γ"
+        },
+        {
+          "line": 894,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 15"
+        },
+        {
+          "line": 912,
+          "text": "60000. The general shape of the distribution shows a striking similarity with the zeros of"
+        },
+        {
+          "line": 935,
+          "text": "7. Calculation of the 1-level density"
+        },
+        {
+          "line": 939,
+          "text": "1 Y 2"
+        },
+        {
+          "line": 953,
+          "text": "16 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 1008,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 17"
+        },
+        {
+          "line": 1039,
+          "text": "A= B="
+        },
+        {
+          "line": 1040,
+          "text": "2 h− n 2 2 h+n−1"
+        },
+        {
+          "line": 1043,
+          "text": "C= D= ."
+        },
+        {
+          "line": 1044,
+          "text": "2 h− n 2 2 h+n−1"
+        },
+        {
+          "line": 1059,
+          "text": "M →∞ M"
+        },
+        {
+          "line": 1082,
+          "text": "18 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 1091,
+          "text": "8. Appendix: The Domain of Analyticity of the Root of the Derivative"
+        },
+        {
+          "line": 1140,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 19"
+        },
+        {
+          "line": 1147,
+          "text": "F0 X 1"
+        },
+        {
+          "line": 1191,
+          "text": "20 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 1199,
+          "text": "D,F E"
+        },
+        {
+          "line": 1200,
+          "text": "A B,H"
+        },
+        {
+          "line": 1247,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 21"
+        },
+        {
+          "line": 1267,
+          "text": "0. The truth of said statement for Dr is obvious, since each of the terms 1/(z − eN (θj ))"
+        },
+        {
+          "line": 1315,
+          "text": "22 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        },
+        {
+          "line": 1328,
+          "text": "2 N 2 N"
+        },
+        {
+          "line": 1332,
+          "text": "2 N 2 N"
+        },
+        {
+          "line": 1358,
+          "text": "\u0012 0 \u0013 N −2"
+        },
+        {
+          "line": 1372,
+          "text": "N N N"
+        },
+        {
+          "line": 1379,
+          "text": "ROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION 23"
+        },
+        {
+          "line": 1390,
+          "text": "(T ) (T )"
+        },
+        {
+          "line": 1394,
+          "text": "References"
+        },
+        {
+          "line": 1439,
+          "text": "24 DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN"
+        }
+      ],
+      "normalized_bytes": 87582,
+      "normalized_page_count": 24,
+      "normalized_relpath": "normalized/openalex_w2008486284_e6088b872833.txt",
+      "normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "prior_v1_units": [],
+      "source_id": "openalex_w2008486284",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "heuristic-bridge",
+        "partial-results",
+        "random-matrix",
+        "zero-density",
+        "zero-free-region"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2010,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/openalex_w2008486284_e6088b872833.txt"
+    },
+    {
+      "acquisition_route": "arxiv-preprint",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Michael Griffin",
+        "Ken Ono",
+        "Larry Rolen",
+        "Don Zagier"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 669,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "JENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND"
+        },
+        {
+          "line": 4,
+          "text": "OTHER SEQUENCES"
+        },
+        {
+          "line": 6,
+          "text": "MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER"
+        },
+        {
+          "line": 25,
+          "text": "1. Introduction and Statement of Results"
+        },
+        {
+          "line": 35,
+          "text": "2 n=0"
+        },
+        {
+          "line": 63,
+          "text": "2 MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER"
+        },
+        {
+          "line": 113,
+          "text": "JENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES 3"
+        },
+        {
+          "line": 164,
+          "text": "4 MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER"
+        },
+        {
+          "line": 196,
+          "text": "2. Proof of Theorem 3"
+        },
+        {
+          "line": 222,
+          "text": "JENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES 5"
+        },
+        {
+          "line": 251,
+          "text": "3. Proof of Theorem 5"
+        },
+        {
+          "line": 284,
+          "text": "4. Asymptotics for Λ(n) 21"
+        },
+        {
+          "line": 294,
+          "text": "6 MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER"
+        },
+        {
+          "line": 299,
+          "text": "Z ∞ Z ∞"
+        },
+        {
+          "line": 303,
+          "text": "0 s(s − 1) 1 t"
+        },
+        {
+          "line": 333,
+          "text": "+16L +6L+2"
+        },
+        {
+          "line": 361,
+          "text": "JENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES 7"
+        },
+        {
+          "line": 398,
+          "text": "Z ∞ Z ∞ \u0010 \u0011"
+        },
+        {
+          "line": 419,
+          "text": "8 MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER"
+        },
+        {
+          "line": 421,
+          "text": "5. Proof of Theorems 1 and 2"
+        },
+        {
+          "line": 422,
+          "text": "5.1. Proof of Theorem 1. For each d ≥ 1, we employ Theorem 3 with sequences {A(n)} and"
+        },
+        {
+          "line": 461,
+          "text": "2 n−3/4L)(1+L/2)"
+        },
+        {
+          "line": 478,
+          "text": "K·L 2 − 2"
+        },
+        {
+          "line": 500,
+          "text": "1 \u0001L + 1 2L + 2 1"
+        },
+        {
+          "line": 516,
+          "text": "JENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES 9"
+        },
+        {
+          "line": 522,
+          "text": "5.2. Sketch of the Proof of Theorem 2. Let A(n) and δ(n) be as in (18). If we let"
+        },
+        {
+          "line": 556,
+          "text": "6. Examples"
+        },
+        {
+          "line": 564,
+          "text": "2 and 3 partition Jensen polynomials are modeled by H2 (X) = X 2 − 2 and H3 (X) = X 3 − 6X."
+        },
+        {
+          "line": 570,
+          "text": "10 MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER"
+        },
+        {
+          "line": 574,
+          "text": "100 ≈ 0.9993X 2 + 0.0731X − 1.9568 ≈ 0.9981X 3 + 0.2072X 2 − 5.9270X + 1.1420"
+        },
+        {
+          "line": 575,
+          "text": "200 ≈ 0.9997X 2 + 0.0459X − 1.9902 ≈ 0.9993X 3 + 0.1284X 2 − 5.9262X − 1.4818"
+        },
+        {
+          "line": 576,
+          "text": "300 ≈ 0.9998X 2 + 0.0346X − 1.9935 ≈ 0.9996X 3 + 0.0965X 2 − 5.9497X − 1.3790"
+        },
+        {
+          "line": 577,
+          "text": "400 ≈ 0.9999X 2 + 0.0282X − 1.9951 ≈ 0.9998X 3 + 0.0786X 2 − 5.9621X − 1.2747"
+        },
+        {
+          "line": 581,
+          "text": "≈ 0.9999X + 0.0000X − 1.9999 ≈ 0.9999X + 0.0000X 2 − 5.9999X − 0.0529"
+        },
+        {
+          "line": 589,
+          "text": "100 ≈ 0.9896X 2 + 0.3083X − 2.0199 ≈ 0.9769X 3 + 0.7570X 2 − 5.8690X − 1.2661"
+        },
+        {
+          "line": 590,
+          "text": "200 ≈ 0.9943X 2 + 0.2271X − 2.0061 ≈ 0.9872X 3 + 0.5625X 2 − 5.9153X − 0.9159"
+        },
+        {
+          "line": 591,
+          "text": "300 ≈ 0.9960X 2 + 0.1894X − 2.0029 ≈ 0.9911X 3 + 0.4705X 2 − 5.9374X − 0.7580"
+        },
+        {
+          "line": 592,
+          "text": "400 ≈ 0.9969X 2 + 0.1663X − 2.0016 ≈ 0.9931X 3 + 0.4136X 2 − 5.9501X − 0.6623"
+        },
+        {
+          "line": 595,
+          "text": "108 ≈ 0.9999X 2 + 0.0003X − 2.0000 ≈ 0.9999X 3 + 0.0009X 2 − 5.9999X − 0.0014"
+        },
+        {
+          "line": 600,
+          "text": "100 ≈ 0.912X 6 + 3.086X 5 − 24.114X 4 − 55.652X 3 + 133.109X 2 + 151.696X − 85.419"
+        },
+        {
+          "line": 601,
+          "text": "200 ≈ 0.950X 6 + 2.374X 5 − 26.625X 4 − 42.824X 3 + 153.246X 2 + 115.849X − 100.510"
+        },
+        {
+          "line": 602,
+          "text": "300 ≈ 0.965X 6 + 2.011X 5 − 27.608X 4 − 36.282X 3 + 161.084X 2 + 97.843X − 106.295"
+        },
+        {
+          "line": 603,
+          "text": "400 ≈ 0.973X 6 + 1.780X 5 − 28.139X 4 − 32.111X 3 + 165.303X 2 + 86.428X − 109.388"
+        },
+        {
+          "line": 606,
+          "text": "1010 ≈ 0.999X 6 + 0.000X 5 − 29.999X 4 − 0.008X 3 + 179.999X 2 + 0.020X − 119.999"
+        },
+        {
+          "line": 608,
+          "text": "References"
+        },
+        {
+          "line": 627,
+          "text": "JENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES 11"
+        },
+        {
+          "line": 637,
+          "text": "136 no. 2 (1989), 241–260."
+        }
+      ],
+      "normalized_bytes": 47124,
+      "normalized_page_count": 11,
+      "normalized_relpath": "normalized/openalex_w2917089270_711a82de78c1.txt",
+      "normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "prior_v1_units": [],
+      "source_id": "openalex_w2917089270",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "analytic-foundations",
+        "equivalent-criteria",
+        "heuristic-bridge",
+        "pair-correlation",
+        "random-matrix",
+        "reformulation",
+        "zero-statistics",
+        "zeta"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2019,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/openalex_w2917089270_711a82de78c1.txt"
+    },
+    {
+      "acquisition_route": "v1-carry-forward",
+      "artifact_store": "riemann-corpus-v0",
+      "authors": [
+        "Yuanyou Furui Cheng"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [],
+      "line_count": 709,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "ROCKY MOUNTAIN"
+        },
+        {
+          "line": 4,
+          "text": "JOURNAL OF MATHEMATICS"
+        },
+        {
+          "line": 10,
+          "text": "AN EXPLICIT ZERO-FREE REGION"
+        },
+        {
+          "line": 11,
+          "text": "FOR THE RIEMANN ZETA-FUNCTION"
+        },
+        {
+          "line": 13,
+          "text": "YUANYOU CHENG"
+        },
+        {
+          "line": 23,
+          "text": "1. Introduction. It is now well known that the problem involving"
+        },
+        {
+          "line": 51,
+          "text": "1991 AMS Mathematics Subject Classification. 11E01."
+        },
+        {
+          "line": 63,
+          "text": "136 Y. CHENG"
+        },
+        {
+          "line": 110,
+          "text": "AN EXPLICIT ZERO-FREE REGION 137"
+        },
+        {
+          "line": 141,
+          "text": "2. Some estimates on ζ(s) and (ζ \u0003 (s)/ζ(s)). Let us begin with"
+        },
+        {
+          "line": 156,
+          "text": "138 Y. CHENG"
+        },
+        {
+          "line": 216,
+          "text": "AN EXPLICIT ZERO-FREE REGION 139"
+        },
+        {
+          "line": 276,
+          "text": "140 Y. CHENG"
+        },
+        {
+          "line": 285,
+          "text": "3. An analytic tool. Traditionally, for the purpose of connecting"
+        },
+        {
+          "line": 324,
+          "text": "1 r0 1 r0 1 r0 1 1"
+        },
+        {
+          "line": 330,
+          "text": "AN EXPLICIT ZERO-FREE REGION 141"
+        },
+        {
+          "line": 379,
+          "text": "142 Y. CHENG"
+        },
+        {
+          "line": 422,
+          "text": "4 log log t/3 + 2 log A + 0.714"
+        },
+        {
+          "line": 427,
+          "text": "≤ + L1 L2 ."
+        },
+        {
+          "line": 432,
+          "text": "AN EXPLICIT ZERO-FREE REGION 143"
+        },
+        {
+          "line": 451,
+          "text": "(21) −\u0007 ≤ CL1 L2 ;"
+        },
+        {
+          "line": 461,
+          "text": "4. The final step. We should have recourse to a trigonometric"
+        },
+        {
+          "line": 487,
+          "text": "144 Y. CHENG"
+        },
+        {
+          "line": 525,
+          "text": "3 and 4, (22) to −\u0007(ζ \u0003 (σ0 + it0 )/ζ(σ0 + it0 )) and (25), we obtain"
+        },
+        {
+          "line": 528,
+          "text": "− + DL1 L2 ≥ 0,"
+        },
+        {
+          "line": 532,
+          "text": "≤ DL1 L2 + ,"
+        },
+        {
+          "line": 539,
+          "text": "AN EXPLICIT ZERO-FREE REGION 145"
+        },
+        {
+          "line": 578,
+          "text": "C= + + + ,"
+        },
+        {
+          "line": 591,
+          "text": "146 Y. CHENG"
+        },
+        {
+          "line": 601,
+          "text": "951 log (4t + 1/3)(log log(4t + 1/3))1/3"
+        },
+        {
+          "line": 620,
+          "text": "952 log t(log log t)1/3"
+        },
+        {
+          "line": 641,
+          "text": "AN EXPLICIT ZERO-FREE REGION 147"
+        },
+        {
+          "line": 644,
+          "text": "REFERENCES"
+        },
+        {
+          "line": 646,
+          "text": "1. L.V. Ahlfors, Complex analysis, 2nd ed., McGraw-Hill, New York, 1966."
+        },
+        {
+          "line": 647,
+          "text": "2. K. Chandrasekhara, Arithmetical functions, Grundlehren Math. Wiss. 167,"
+        },
+        {
+          "line": 649,
+          "text": "3. J. Chen, The exceptional set of Goldbach numbers (II), Scientia Sinica 26"
+        },
+        {
+          "line": 652,
+          "text": "5. J. Chen and T. Wang, On distribution of primes in an arithmetical progression,"
+        },
+        {
+          "line": 654,
+          "text": "6. Yuanyou (Fred) Chen, An explicit upper bound for the Riemann zeta-function"
+        },
+        {
+          "line": 656,
+          "text": "7. H. Davenport, Multiplicative number theory, 2nd ed., Springer-Verlag, New"
+        },
+        {
+          "line": 658,
+          "text": "8. J. Hadamard, Sur la distribution des zéros de la fonction ζ(s) et ses"
+        },
+        {
+          "line": 660,
+          "text": "9. G.H. Hardy and E.M. Wright, An introduction to the theory of numbers, 5th"
+        },
+        {
+          "line": 662,
+          "text": "10. D.R. Heath-Brown, Zero-free regions of ζ(s) and L(s, χ), Proc. Amalfi Conf."
+        },
+        {
+          "line": 664,
+          "text": "11. D.R. Heath-Brown, personal communication."
+        },
+        {
+          "line": 665,
+          "text": "12. A. Ivic, The Riemann zeta-function, John Wiley & Sons, New York, 1985."
+        },
+        {
+          "line": 666,
+          "text": "13. N.M. Korobov, Exponential sums and their applications, Kluwer Academic"
+        },
+        {
+          "line": 668,
+          "text": "14. H.L. Montgomery, Ten lectures on the interface between analytic number"
+        },
+        {
+          "line": 670,
+          "text": "15. Y. Motohashi, On Vinogradov’s zero-free region for the Riemann zeta-"
+        },
+        {
+          "line": 672,
+          "text": "16. P. Ribenboim, The book of prime number records, 2nd ed.,, Springer-Verlag,"
+        },
+        {
+          "line": 674,
+          "text": "17. B. Riemann, Über die Anzahl der Primzahlen unter einer gegebenen Grs̈se,"
+        },
+        {
+          "line": 677,
+          "text": "18. J.B. Rosser, Explicit bounds for some functions of prime numbers, Amer. J."
+        },
+        {
+          "line": 681,
+          "text": "20. J.B. Rosser and Schoenfeld, Approximate formulas for some functions of"
+        },
+        {
+          "line": 683,
+          "text": "21. E.C. Titchmarsh, The theory of the Riemann Zeta-function, 2nd ed. (D.R."
+        },
+        {
+          "line": 685,
+          "text": "22. J. van de Lune, H.J.J. te Riele and D.T. Winter, On the zeroes of the Riemann"
+        },
+        {
+          "line": 690,
+          "text": "148 Y. CHENG"
+        },
+        {
+          "line": 694,
+          "text": "23. C.-J. de la Vallée Poussin, Recherches analytiques sur la théorie des normbres;"
+        },
+        {
+          "line": 699,
+          "text": "25. I.M. Vinogradov, The method of trigonometrical sums in the theory of"
+        },
+        {
+          "line": 703,
+          "text": "27. H. Weyl, Über die Gleichverteilung von Azhlen mod. Eins., Math. Annal. 77"
+        }
+      ],
+      "normalized_bytes": 30721,
+      "normalized_page_count": 14,
+      "normalized_relpath": "normalized/openalex_w1980950385.txt",
+      "normalized_sha256": "748239d847c5dfeee0017f160f0b794f845a1f7c3b34548e046527f13d5e1fde",
+      "prior_v1_units": [
+        {
+          "line_end": 139,
+          "line_start": 70,
+          "unit_id": "full_openalex_w1980950385_u01",
+          "unit_type": "explicit-zero-free-region theorem"
+        },
+        {
+          "line_end": 271,
+          "line_start": 141,
+          "unit_id": "full_openalex_w1980950385_u02",
+          "unit_type": "elementary zeta estimates"
+        },
+        {
+          "line_end": 459,
+          "line_start": 285,
+          "unit_id": "full_openalex_w1980950385_u03",
+          "unit_type": "circle-method analytic tool"
+        },
+        {
+          "line_end": 632,
+          "line_start": 461,
+          "unit_id": "full_openalex_w1980950385_u04",
+          "unit_type": "trigonometric-polynomial zero-free step"
+        }
+      ],
+      "source_id": "openalex_w1980950385",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "An Explicit Zero-Free Region for the Riemann Zeta-Function",
+      "v1_inspection_decision": "usable",
+      "v1_or_acquisition_reason": "normalized source has coherent mathematical text suitable for semantic segmentation",
+      "viewpoint_tags": [
+        "zero-free-region",
+        "partial-results"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2000,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/normalized/openalex_w1980950385.txt"
+    }
+  ]
+}

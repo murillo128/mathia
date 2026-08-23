@@ -1,0 +1,781 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w3212690580_a628e9fd_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w3212690580",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Line 47 merely completes the preceding historical sentence; lines 48-56 give the definition and its summation range.",
+      "line_end": 56,
+      "line_start": 47,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the displayed summation at lines 49-52; the checked prose at lines 54-55 makes the index and range recoverable despite line-broken extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Supplies the prime-aggregate representation used inside the Nicolas inequality and the auxiliary function f.",
+      "source_id": "openalex_w3212690580",
+      "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Chebyshev function as a prime-log sum",
+      "unit_artifact_relpath": "depth/units/openalex_w3212690580_d01.txt",
+      "unit_bytes": 865,
+      "unit_id": "openalex_w3212690580_d01",
+      "unit_sha256": "4ebe33108476b0148724c56a088b4937b4b57f9f05542599b6e8e2daa804a4f3",
+      "unit_type": "definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d01.txt",
+      "source": {
+        "source_id": "openalex_w3212690580",
+        "title": "On Nicolas Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Frank Vega"
+        ],
+        "year": 2023,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 39,
+          "line_end": 46,
+          "text": "\n\n\n\nhttps://doi.org/10.33774/coe-2023-z1nk1 ORCID: https://orcid.org/0000-0001-8210-4126 Content not peer-reviewed by Cambridge University Press. License: CC BY 4.0\n\n<!-- source-page: 2 -->\n\n",
+          "sha256": "4d28561e59d497afec84bcc3baa6d690b553913a655cd3f31d0a4078ade0cbd0"
+        },
+        "after": {
+          "line_start": 57,
+          "line_end": 64,
+          "text": "\n                                   Proposition 1.1. It is known that[1, (1) pp. 1070]:\n                                                                                             ∞\n                                                                                             Y     qk2   π2\n                                                                                ζ(2) =                 =    ,\n                                                                                                q2 − 1\n                                                                                             k=1 k\n                                                                                                         6\n",
+          "sha256": "14f6ef5905fada0628d07ad74affc2473cdfe34b4754a62d6e81bcf85a82a132"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8af6cccd6e03a13fa6285e596d94c2831a7e8b57c3f7af6ce09de4419a3521c5",
+        "dossier_sha256": "62bde329867f71eb5dd8c691b0e7b97e4731eb87b7a9d65e67048be537d70d8b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and analytic setup",
+            "line_end": 122,
+            "line_start": 28,
+            "mathematical_role": "Defines the Chebyshev, Dedekind-psi, primorial-product, and normalized-ratio objects and states the Euler-product, tail-bound, Nicolas-equivalence, and asymptotic inputs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 56,
+          "line_start": 47,
+          "title": "Chebyshev function as a prime-log sum",
+          "unit_id": "openalex_w3212690580_d01",
+          "unit_type": "definition",
+          "why_material": "Supplies the prime-aggregate representation used inside the Nicolas inequality and the auxiliary function f."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Line 47 merely completes the preceding historical sentence; lines 48-56 give the definition and its summation range.",
+          "representation_dependency": "Depends on the displayed summation at lines 49-52; the checked prose at lines 54-55 makes the index and range recoverable despite line-broken extraction.",
+          "unit_id": "openalex_w3212690580_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 75,
+            "line_start": 58,
+            "title": "Euler product at two and a tail-product upper bound",
+            "unit_id": "openalex_w3212690580_d02",
+            "unit_type": "analytic comparison inputs",
+            "why_material": "Relates the full zeta product to a finite prime product through explicit tail control, which is the comparison mechanism invoked in the main theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source reframes RH through a prime-product inequality encoded by f, then observes that an eventual exp(2/sqrt(x)) envelope would contradict the cited recurring growth behavior under RH failure.",
+            "limit": "This route is conditional: the lemma supplies a sufficient envelope but does not establish it.",
+            "parent_local_unit_ids": [
+              "openalex_w3212690580_d01",
+              "openalex_w3212690580_d03",
+              "openalex_w3212690580_d05"
+            ],
+            "title": "Nicolas criterion through an eventual envelope"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3212690580_d01",
+        "spontaneous": {
+          "unit_id": "openalex_w3212690580_d01",
+          "spontaneous_reading": "The operative move is to compress all primes up to a cutoff into one additive quantity: theta sums their logarithms. Because logarithms turn products into sums, this is also a compact handle on the multiplicative mass of the cutoff prime set."
+        },
+        "directed": {
+          "unit_id": "openalex_w3212690580_d01",
+          "source_grounded_mathematics": "The unit defines the Chebyshev function theta(x) as the sum of log q over primes q less than or equal to x, with log denoting the natural logarithm.",
+          "conceptual_reading": "The definition replaces a varying collection of primes by a scalar aggregate. It preserves their total logarithmic, hence multiplicative, contribution while not retaining the contribution of each prime as a separately accessible object.",
+          "representation_or_bridge": "The bridge is prime cutoff to sum of logarithms to logarithm of the corresponding prime product. This lets a finite prime product be coupled to scalar growth expressions such as the Nicolas inequality and the auxiliary function f identified in the packet.",
+          "boundary_or_failure": "This span is only a definition: it supplies no estimate for theta, no convergence statement, and no RH implication by itself.",
+          "uncertainty": "The displayed sum is line-broken, but the adjacent prose explicitly recovers both the prime index and the range q less than or equal to x. Formula layout still warrants scan checking before exact reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w3212690580_d01",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately states theta(x) as the sum of natural logarithms of primes q at most x.",
+          "It correctly limits the span to a definition and does not claim an estimate, convergence result, or RH implication from the definition alone."
+        ],
+        "inference": [
+          "Exponentiating the displayed logarithmic sum gives the corresponding cutoff prime product, so the additive-to-multiplicative bridge is a valid derivation rather than a restatement.",
+          "Treating theta as a scalar aggregate is a reasonable representational reading, although the source itself does not discuss information loss."
+        ],
+        "unsupported_or_imported": [
+          "The claimed coupling to the Nicolas inequality and auxiliary function f is imported from dossier routing material; neither object occurs in this frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic phrase 'replaces a varying collection by a scalar aggregate' is made substantive by the log-to-product operation, so it is not style-only."
+        ],
+        "context_or_ocr_risk": [
+          "The display is line-broken, but the following prose explicitly fixes the prime index, cutoff q <= x, and natural logarithm; this does not warrant quarantine."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the Nicolas/f downstream-use claim and keep the exact definition, the exponentiation-to-prime-product inference, and the explicit definitional boundary."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Propositions 1.1 and 1.2 form a natural pair: one identifies the full product and the other bounds the omitted factors.",
+      "line_end": 75,
+      "line_start": 58,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the product indexing and fractions are line-broken and the Proposition 1.1 index is visibly extraction-risky, so later use should verify the normalized formula against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates the full zeta product to a finite prime product through explicit tail control, which is the comparison mechanism invoked in the main theorem.",
+      "source_id": "openalex_w3212690580",
+      "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler product at two and a tail-product upper bound",
+      "unit_artifact_relpath": "depth/units/openalex_w3212690580_d02.txt",
+      "unit_bytes": 1421,
+      "unit_id": "openalex_w3212690580_d02",
+      "unit_sha256": "5880cd6a9e9e8c2785fbda95038a0b5123aca9d9fc0a00dd822953897aa39983",
+      "unit_type": "analytic comparison inputs",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d02.txt",
+      "source": {
+        "source_id": "openalex_w3212690580",
+        "title": "On Nicolas Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Frank Vega"
+        ],
+        "year": 2023,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 50,
+          "line_end": 57,
+          "text": "                                                                                                    X\n                                                                                       θ(x) =              log q\n                                                                                                     q≤x\n\n                                   with the sum extending over all prime numbers q that are less than or equal to\n                                   x, where log is the natural logarithm. Leonhard Euler studied the following\n                                   value of the Riemann zeta function (1734).\n\n",
+          "sha256": "b45e89a34ce33134f4eb93c12f9b923f2cedb1ed44458fae0012c7ede65fae3a"
+        },
+        "after": {
+          "line_start": 76,
+          "line_end": 83,
+          "text": "\n                                         We say that Nicolas(x) holds provided that\n                                                                                Y     q\n                                                                                          > eγ · log θ(x),\n                                                                                q≤x\n                                                                                    q − 1\n\n                                   where γ ≈ 0.57721 is the Euler-Mascheroni constant. Next, we have the\n",
+          "sha256": "396979aa5689bc02dce71672f8e7f64c342e54fc303050eb077f5d2133328ba0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8af6cccd6e03a13fa6285e596d94c2831a7e8b57c3f7af6ce09de4419a3521c5",
+        "dossier_sha256": "62bde329867f71eb5dd8c691b0e7b97e4731eb87b7a9d65e67048be537d70d8b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and analytic setup",
+            "line_end": 122,
+            "line_start": 28,
+            "mathematical_role": "Defines the Chebyshev, Dedekind-psi, primorial-product, and normalized-ratio objects and states the Euler-product, tail-bound, Nicolas-equivalence, and asymptotic inputs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 75,
+          "line_start": 58,
+          "title": "Euler product at two and a tail-product upper bound",
+          "unit_id": "openalex_w3212690580_d02",
+          "unit_type": "analytic comparison inputs",
+          "why_material": "Relates the full zeta product to a finite prime product through explicit tail control, which is the comparison mechanism invoked in the main theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Propositions 1.1 and 1.2 form a natural pair: one identifies the full product and the other bounds the omitted factors.",
+          "representation_dependency": "Formula-dependent; the product indexing and fractions are line-broken and the Proposition 1.1 index is visibly extraction-risky, so later use should verify the normalized formula against the scan.",
+          "unit_id": "openalex_w3212690580_d02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 56,
+            "line_start": 47,
+            "title": "Chebyshev function as a prime-log sum",
+            "unit_id": "openalex_w3212690580_d01",
+            "unit_type": "definition",
+            "why_material": "Supplies the prime-aggregate representation used inside the Nicolas inequality and the auxiliary function f."
+          },
+          {
+            "line_end": 87,
+            "line_start": 77,
+            "title": "Nicolas inequality as an RH equivalence",
+            "unit_id": "openalex_w3212690580_d03",
+            "unit_type": "equivalent criterion",
+            "why_material": "Provides the source's central reformulation of RH as a uniform inequality over prime products."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The main proof rewrites the desired f-envelope as a product of an exponentially adjusted finite Euler product and R(M_x), aiming to pair convergence toward zeta(2) with convergence toward e^gamma/zeta(2).",
+            "limit": "From the source's displayed premises alone, asymptotic equivalence of R(M_x) gives neither a rate nor a side of approach, so the claimed eventual lower inequality does not follow as written.",
+            "parent_local_unit_ids": [
+              "openalex_w3212690580_d02",
+              "openalex_w3212690580_d04",
+              "openalex_w3212690580_d06"
+            ],
+            "title": "Euler-tail and Dedekind normalization bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3212690580_d02",
+        "spontaneous": {
+          "unit_id": "openalex_w3212690580_d02",
+          "spontaneous_reading": "The two propositions turn an infinite Euler product into a finite cutoff object with a controlled remainder: zeta(2) fixes the full product, while exp(2/x) caps the factors omitted beyond x."
+        },
+        "directed": {
+          "unit_id": "openalex_w3212690580_d02",
+          "source_grounded_mathematics": "Proposition 1.1 states zeta(2) as the product over primes of q squared divided by q squared minus one, equal to pi squared over 6. Proposition 1.2 states that for x at least 3, the tail product over primes q greater than x is at most exp(2/x).",
+          "conceptual_reading": "This is a decomposition-and-control mechanism. A global Euler product is split at x, and the infinite part that was discarded is represented by a tail with an explicit upper envelope.",
+          "representation_or_bridge": "Writing zeta(2) as finite product times tail and applying the tail bound gives zeta(2) at most exp(2/x) times the finite product over q less than or equal to x. Thus a fixed analytic constant becomes comparable to a finite prime product with quantified slack.",
+          "boundary_or_failure": "The bounds concern only this Euler product. They do not control the Dedekind normalization or by themselves establish the later combined inequality. The propositions are cited rather than proved in the span.",
+          "uncertainty": "The product index and fractions, especially in Proposition 1.1, are visibly line-broken and should be verified against the scan before formal use, although the intended prime-product roles are recoverable from the text."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w3212690580_d02",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately records the Euler product for zeta(2), its value pi^2/6, the x >= 3 hypothesis, and the exp(2/x) upper bound on the prime tail.",
+          "It correctly derives that splitting the full product at x and bounding the tail yields zeta(2) at most exp(2/x) times the finite product."
+        ],
+        "inference": [
+          "Describing the pair as decomposition plus explicit remainder control is a genuine conceptual operation supported by the two propositions."
+        ],
+        "unsupported_or_imported": [
+          "The reference to Dedekind normalization and a later combined inequality is outside this frozen span; it is a dossier-level downstream relation, not source evidence for this unit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The product indices and fractions are visibly line-broken, especially the kth-prime indexing in Proposition 1.1, although the prose and paired formulas support the candidate's mathematical roles."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Delete the named downstream Dedekind/combined-inequality commentary; retain the finite-product/tail split, the quantified x >= 3 bound, and the statement that these propositions alone establish no further result."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uses the Chebyshev function defined at lines 47-56; retain that local definition when presenting this criterion to a consumer lacking prior setup.",
+      "line_end": 87,
+      "line_start": 77,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the displayed prime-product inequality at lines 77-81; its factors and exponentiated Euler constant are readable but formula layout should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides the source's central reformulation of RH as a uniform inequality over prime products.",
+      "source_id": "openalex_w3212690580",
+      "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nicolas inequality as an RH equivalence",
+      "unit_artifact_relpath": "depth/units/openalex_w3212690580_d03.txt",
+      "unit_bytes": 816,
+      "unit_id": "openalex_w3212690580_d03",
+      "unit_sha256": "f7103c67422ec71b4d79c4e4f8adbcfacbddb10b5240b5e85702bbef10852e7b",
+      "unit_type": "equivalent criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d03.txt",
+      "source": {
+        "source_id": "openalex_w3212690580",
+        "title": "On Nicolas Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Frank Vega"
+        ],
+        "year": 2023,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 69,
+          "line_end": 76,
+          "text": "                                                                       !\n                                                           Y q2                \u0012 \u0013\n                                                                                2\n                                                                 2\n                                                                         ≤ exp     .\n                                                           q>x\n                                                               q   − 1          x\n\n",
+          "sha256": "c4d376be330542b8ee36f2602ab44e433680eaa7dfece2e7c35ad6d9755b9a1b"
+        },
+        "after": {
+          "line_start": 88,
+          "line_end": 95,
+          "text": "\n\n\n\n                                                                                                    2\n\n\n\n",
+          "sha256": "b2c08980c3dc50d6d1d93d7f485e3c9bae00f4d55107dd113bd46d7d65c6e9e5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8af6cccd6e03a13fa6285e596d94c2831a7e8b57c3f7af6ce09de4419a3521c5",
+        "dossier_sha256": "62bde329867f71eb5dd8c691b0e7b97e4731eb87b7a9d65e67048be537d70d8b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and analytic setup",
+            "line_end": 122,
+            "line_start": 28,
+            "mathematical_role": "Defines the Chebyshev, Dedekind-psi, primorial-product, and normalized-ratio objects and states the Euler-product, tail-bound, Nicolas-equivalence, and asymptotic inputs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 87,
+          "line_start": 77,
+          "title": "Nicolas inequality as an RH equivalence",
+          "unit_id": "openalex_w3212690580_d03",
+          "unit_type": "equivalent criterion",
+          "why_material": "Provides the source's central reformulation of RH as a uniform inequality over prime products."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uses the Chebyshev function defined at lines 47-56; retain that local definition when presenting this criterion to a consumer lacking prior setup.",
+          "representation_dependency": "Depends on the displayed prime-product inequality at lines 77-81; its factors and exponentiated Euler constant are readable but formula layout should be scan-checked.",
+          "unit_id": "openalex_w3212690580_d03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 75,
+            "line_start": 58,
+            "title": "Euler product at two and a tail-product upper bound",
+            "unit_id": "openalex_w3212690580_d02",
+            "unit_type": "analytic comparison inputs",
+            "why_material": "Relates the full zeta product to a finite prime product through explicit tail control, which is the comparison mechanism invoked in the main theorem."
+          },
+          {
+            "line_end": 120,
+            "line_start": 101,
+            "title": "Dedekind-psi normalization along primorial products",
+            "unit_id": "openalex_w3212690580_d04",
+            "unit_type": "definition-plus-asymptotic",
+            "why_material": "Introduces M_x and R(n) and states the limiting relation used to convert the Nicolas expression into an asymptotic product argument."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source reframes RH through a prime-product inequality encoded by f, then observes that an eventual exp(2/sqrt(x)) envelope would contradict the cited recurring growth behavior under RH failure.",
+            "limit": "This route is conditional: the lemma supplies a sufficient envelope but does not establish it.",
+            "parent_local_unit_ids": [
+              "openalex_w3212690580_d01",
+              "openalex_w3212690580_d03",
+              "openalex_w3212690580_d05"
+            ],
+            "title": "Nicolas criterion through an eventual envelope"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3212690580_d03",
+        "spontaneous": {
+          "unit_id": "openalex_w3212690580_d03",
+          "spontaneous_reading": "Nicolas's criterion replaces RH by a threshold test repeated at every prime cutoff. Its force lies not in a single estimate but in uniform validity of a finite prime-product inequality across all x."
+        },
+        "directed": {
+          "unit_id": "openalex_w3212690580_d03",
+          "source_grounded_mathematics": "Nicolas(x) is defined by the strict inequality product over primes q less than or equal to x of q divided by q minus one greater than e to the gamma times log theta(x). Proposition 1.3 states that this holds for all x at least 2 if and only if RH is true.",
+          "conceptual_reading": "The proposition is an exact reformulation: a global statement about zeta zeros is represented by a universal family of arithmetic inequalities. The universal quantifier is structural and cannot be replaced silently by success at selected cutoffs.",
+          "representation_or_bridge": "The finite Euler-type product measures multiplicative accumulation of the cutoff primes, while theta supplies the additive prime-log aggregate and log theta normalizes its scale. Their ratio against e to the gamma is the bridge object whose crossing of 1 encodes the criterion.",
+          "boundary_or_failure": "The criterion does not prove that the inequalities hold; it only states their equivalence to RH. It also depends on the preceding definition of theta, so the span is not semantically self-contained without that local setup.",
+          "uncertainty": "The factors, strict inequality, and exponentiated Euler constant are readable, but the displayed layout is extraction-sensitive and should be scan-checked for exact transcription."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w3212690580_d03",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate preserves the strict Nicolas inequality, its all-x >= 2 quantifier, and the if-and-only-if direction in Proposition 1.3.",
+          "It correctly emphasizes that checking selected cutoffs cannot replace the stated universal family and that the criterion is an equivalence rather than a proof that the inequalities hold."
+        ],
+        "inference": [
+          "Reading the proposition as an arithmetic reformulation of RH is supported by the explicit biconditional."
+        ],
+        "unsupported_or_imported": [
+          "Calling RH a statement about zeta zeros uses background not stated in this frozen span.",
+          "The proposed 'ratio ... crossing 1' is not uniformly legitimate as written: at x=2, log theta(x) is negative, so division by the right-hand side does not preserve an equivalent threshold test."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The displayed factors and exponentiated Euler constant are extraction-sensitive but readable; theta is used without being defined inside this unit, as the candidate correctly notes."
+        ],
+        "missed_mechanism": [
+          "The direct comparison, rather than an unqualified ratio normalization, is what remains valid over the proposition's full x >= 2 domain."
+        ],
+        "revision_instructions": [
+          "Replace the ratio-crossing description with the exact direct inequality, avoid importing the zeta-zero gloss, and retain the strict sign, universal quantifier, biconditional, and theta-context dependency."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The concluding sentence at line 120 announces the intended synthesis but does not add a premise beyond Proposition 1.4.",
+      "line_end": 120,
+      "line_start": 101,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent: extraction fragments the product defining Psi(n), the quotient defining R(n), and the displayed limit; the surrounding prose recovers their roles but scan verification is warranted before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces M_x and R(n) and states the limiting relation used to convert the Nicolas expression into an asymptotic product argument.",
+      "source_id": "openalex_w3212690580",
+      "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dedekind-psi normalization along primorial products",
+      "unit_artifact_relpath": "depth/units/openalex_w3212690580_d04.txt",
+      "unit_bytes": 1712,
+      "unit_id": "openalex_w3212690580_d04",
+      "unit_sha256": "e4745d230fe19ac0b0564efc524fef49fd00d4bef9957b394dde1aea45bf1488",
+      "unit_type": "definition-plus-asymptotic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d04.txt",
+      "source": {
+        "source_id": "openalex_w3212690580",
+        "title": "On Nicolas Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Frank Vega"
+        ],
+        "year": 2023,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 93,
+          "line_end": 100,
+          "text": "\n\n\n\nhttps://doi.org/10.33774/coe-2023-z1nk1 ORCID: https://orcid.org/0000-0001-8210-4126 Content not peer-reviewed by Cambridge University Press. License: CC BY 4.0\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "df83b9a247092f4a820ec693faae1f659636990d064d3fe7b204c53a55127e27"
+        },
+        "after": {
+          "line_start": 121,
+          "line_end": 128,
+          "text": "\n\n                                   2. Central Lemma\n\n                                         The function f was introduced by Nicolas in his seminal paper [3, Theo-\n                                   rem 3 pp. 376]:\n                                                                                              Y\u0012     1\n                                                                                                       \u0013\n",
+          "sha256": "9e0ca3d3a2b5f416736be74691c61d45d3530a48e3d2e8f427eded62754e3f93"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8af6cccd6e03a13fa6285e596d94c2831a7e8b57c3f7af6ce09de4419a3521c5",
+        "dossier_sha256": "62bde329867f71eb5dd8c691b0e7b97e4731eb87b7a9d65e67048be537d70d8b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and analytic setup",
+            "line_end": 122,
+            "line_start": 28,
+            "mathematical_role": "Defines the Chebyshev, Dedekind-psi, primorial-product, and normalized-ratio objects and states the Euler-product, tail-bound, Nicolas-equivalence, and asymptotic inputs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 120,
+          "line_start": 101,
+          "title": "Dedekind-psi normalization along primorial products",
+          "unit_id": "openalex_w3212690580_d04",
+          "unit_type": "definition-plus-asymptotic",
+          "why_material": "Introduces M_x and R(n) and states the limiting relation used to convert the Nicolas expression into an asymptotic product argument."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The concluding sentence at line 120 announces the intended synthesis but does not add a premise beyond Proposition 1.4.",
+          "representation_dependency": "Strongly formula-dependent: extraction fragments the product defining Psi(n), the quotient defining R(n), and the displayed limit; the surrounding prose recovers their roles but scan verification is warranted before reuse.",
+          "unit_id": "openalex_w3212690580_d04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 87,
+            "line_start": 77,
+            "title": "Nicolas inequality as an RH equivalence",
+            "unit_id": "openalex_w3212690580_d03",
+            "unit_type": "equivalent criterion",
+            "why_material": "Provides the source's central reformulation of RH as a uniform inequality over prime products."
+          },
+          {
+            "line_end": 183,
+            "line_start": 123,
+            "title": "False-RH oscillation versus an eventual envelope for f",
+            "unit_id": "openalex_w3212690580_d05",
+            "unit_type": "conditional implication lemma",
+            "why_material": "Turns a cited recurring lower-growth consequence of RH failure into a sufficient condition: an eventual exp(2/sqrt(x)) upper envelope for f would exclude that failure."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The main proof rewrites the desired f-envelope as a product of an exponentially adjusted finite Euler product and R(M_x), aiming to pair convergence toward zeta(2) with convergence toward e^gamma/zeta(2).",
+            "limit": "From the source's displayed premises alone, asymptotic equivalence of R(M_x) gives neither a rate nor a side of approach, so the claimed eventual lower inequality does not follow as written.",
+            "parent_local_unit_ids": [
+              "openalex_w3212690580_d02",
+              "openalex_w3212690580_d04",
+              "openalex_w3212690580_d06"
+            ],
+            "title": "Euler-tail and Dedekind normalization bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3212690580_d04",
+        "spontaneous": {
+          "unit_id": "openalex_w3212690580_d04",
+          "spontaneous_reading": "The primorial M_x is the useful intermediate object: it encodes the whole prime cutoff as one squarefree integer, allowing the Dedekind psi product to be evaluated along a structured sequence and then normalized to a limiting constant."
+        },
+        "directed": {
+          "unit_id": "openalex_w3212690580_d04",
+          "source_grounded_mathematics": "The unit defines Psi(n) as n times the product over prime divisors q of n of 1 plus 1/q, defines M_x as the product of primes q less than or equal to x, and defines R(n) as Psi(n) divided by n log log n for n at least 3. Proposition 1.4 states unconditionally that R(M_x) tends to e to the gamma divided by zeta(2).",
+          "conceptual_reading": "Passing to M_x aligns the divisors in Psi with exactly the primes below x. Dividing by n removes the trivial size factor, and division by log log n exposes a stable asymptotic scale rather than raw growth.",
+          "representation_or_bridge": "For the squarefree input M_x, Psi(M_x)/M_x becomes the finite product over q less than or equal to x of 1 plus 1/q. R therefore bridges a cutoff prime product and an asymptotic constant involving the same zeta(2) that appears in the Euler-product comparison.",
+          "boundary_or_failure": "A limit identifies neither a rate of convergence nor the side from which R(M_x) approaches its limit. Those missing data are essential if the limit is multiplied by another factor whose surplus over its own limit vanishes.",
+          "uncertainty": "All three defining displays and the limit are fragmented by extraction. Their mathematical roles are supported by the surrounding prose, but exact normalized formulas should be verified against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w3212690580_d04",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately states the definitions of Psi(n), M_x, and R(n), including n >= 3, and the unconditional limit R(M_x) -> e^gamma/zeta(2).",
+          "It validly derives Psi(M_x)/M_x as the finite product of 1+1/q over primes q <= x and correctly observes that a limit alone supplies neither convergence rate nor side of approach."
+        ],
+        "inference": [
+          "Aligning the prime divisors of the squarefree M_x with the cutoff primes is the unit's substantive representation mechanism.",
+          "Interpreting division by n and log log n as normalization toward the displayed stable scale is reasonable and tied to the stated limit."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the same zeta(2) appears in an Euler-product comparison imports another unit; this span contains no Euler-product comparison."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "All defining displays and the limit are fragmented, but their roles remain recoverable from this artifact; exact formula reuse should still be scan-checked."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the cross-unit Euler-product comparison and present the internal bridge as M_x -> its exact prime-divisor product -> the normalized limit, while retaining the rate/one-sidedness limitation as an inference about what the stated limit does not provide."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the definition of f, the lemma statement, the cited Omega-plus premise, its quantified expansion, and the reductio conclusion, so no external reconstruction is needed.",
+      "line_end": 183,
+      "line_start": 123,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on several displays whose superscripts and the threshold on b are flattened by extraction; the quantifier prose and comparison mechanism remain readable, but exact exponents require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns a cited recurring lower-growth consequence of RH failure into a sufficient condition: an eventual exp(2/sqrt(x)) upper envelope for f would exclude that failure.",
+      "source_id": "openalex_w3212690580",
+      "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "False-RH oscillation versus an eventual envelope for f",
+      "unit_artifact_relpath": "depth/units/openalex_w3212690580_d05.txt",
+      "unit_bytes": 3932,
+      "unit_id": "openalex_w3212690580_d05",
+      "unit_sha256": "5453f057569666911c0a24a9c5c67ee0717f2d8a8a049c8069c5f3366def179b",
+      "unit_type": "conditional implication lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_d05.txt",
+      "source": {
+        "source_id": "openalex_w3212690580",
+        "title": "On Nicolas Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Frank Vega"
+        ],
+        "year": 2023,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 115,
+          "line_end": 122,
+          "text": "                                   Proposition 1.4. Unconditionally on Riemann hypothesis, we know that [4,\n                                   Proposition 3. pp. 3]:\n                                                                                                                eγ\n                                                                                     lim R(Mx ) =                   .\n                                                                                    x→∞                        ζ(2)\n                                         Putting all together yields a proof for the Riemann hypothesis.\n\n\n",
+          "sha256": "8e3259c9112865f806d342ad00b242227f6d8dfa2c729800954c315608a26cb0"
+        },
+        "after": {
+          "line_start": 184,
+          "line_end": 191,
+          "text": "\n\n                                   3. Main Theorem\n\n                                         This is the main theorem.\n\n                                   Theorem 3.1. The Riemann hypothesis is true.\n\n",
+          "sha256": "0ad6f274e7009922e01017419017605fc4559d7dc047cb6d566423b7a4db5db3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8af6cccd6e03a13fa6285e596d94c2831a7e8b57c3f7af6ce09de4419a3521c5",
+        "dossier_sha256": "62bde329867f71eb5dd8c691b0e7b97e4731eb87b7a9d65e67048be537d70d8b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Central Lemma",
+            "line_end": 185,
+            "line_start": 123,
+            "mathematical_role": "Defines f and derives a sufficient eventual upper envelope for RH by contraposing a cited positive-oscillation consequence of failure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 183,
+          "line_start": 123,
+          "title": "False-RH oscillation versus an eventual envelope for f",
+          "unit_id": "openalex_w3212690580_d05",
+          "unit_type": "conditional implication lemma",
+          "why_material": "Turns a cited recurring lower-growth consequence of RH failure into a sufficient condition: an eventual exp(2/sqrt(x)) upper envelope for f would exclude that failure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the definition of f, the lemma statement, the cited Omega-plus premise, its quantified expansion, and the reductio conclusion, so no external reconstruction is needed.",
+          "representation_dependency": "Depends on several displays whose superscripts and the threshold on b are flattened by extraction; the quantifier prose and comparison mechanism remain readable, but exact exponents require scan verification.",
+          "unit_id": "openalex_w3212690580_d05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 120,
+            "line_start": 101,
+            "title": "Dedekind-psi normalization along primorial products",
+            "unit_id": "openalex_w3212690580_d04",
+            "unit_type": "definition-plus-asymptotic",
+            "why_material": "Introduces M_x and R(n) and states the limiting relation used to convert the Nicolas expression into an asymptotic product argument."
+          },
+          {
+            "line_end": 240,
+            "line_start": 186,
+            "title": "Finite-product and Dedekind-asymptotic synthesis",
+            "unit_id": "openalex_w3212690580_d06",
+            "unit_type": "claimed synthesis with proof gap",
+            "why_material": "This is the paper's decisive attempted bridge from the conditional lemma to RH and exposes the exact missing control: the source combines a finite-product lower comparison with R(M_x) asymptotic to a constant, but states no convergence rate or one-sided estimate that forces their product to be eventually at least e^gamma."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source reframes RH through a prime-product inequality encoded by f, then observes that an eventual exp(2/sqrt(x)) envelope would contradict the cited recurring growth behavior under RH failure.",
+            "limit": "This route is conditional: the lemma supplies a sufficient envelope but does not establish it.",
+            "parent_local_unit_ids": [
+              "openalex_w3212690580_d01",
+              "openalex_w3212690580_d03",
+              "openalex_w3212690580_d05"
+            ],
+            "title": "Nicolas criterion through an eventual envelope"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3212690580_d05",
+        "spontaneous": {
+          "unit_id": "openalex_w3212690580_d05",
+          "spontaneous_reading": "The lemma is powered by incompatible quantifiers: false RH is said to force arbitrarily late positive spikes of log f, whereas the proposed envelope would impose a ceiling at every sufficiently large input. The contradiction needs no direct control of zeros once both behaviors are granted."
+        },
+        "directed": {
+          "unit_id": "openalex_w3212690580_d05",
+          "source_grounded_mathematics": "The unit defines f(x) as e to the gamma times log theta(x) times the product over primes q less than or equal to x of 1 minus 1/q. Lemma 2.1 claims RH follows if exp(2/sqrt(x)) is at least f(x) for all sufficiently large x. Its proof cites, under false RH, an Omega-plus lower behavior for log f, expands this into arbitrarily late y with log f(y) at least k times a power of y, and compares those values with 2/sqrt(y).",
+          "conceptual_reading": "This is a contrapositive obstruction argument. Instead of deriving RH directly, it proposes to exclude a characteristic failure behavior: recurrent lower excursions cannot coexist with a uniform eventual upper envelope.",
+          "representation_or_bridge": "The normalized product f packages the Nicolas-side quantities into a single positive function, and taking its logarithm puts the cited lower spikes and the logarithm of the proposed exponential ceiling on the same additive scale. The bridge is therefore infinitely often lower growth versus eventual pointwise domination.",
+          "boundary_or_failure": "The lemma is only a sufficient condition and does not establish the envelope it requires. Its validity also depends on the cited Omega-plus result and on the exact exponent threshold; neither is independently proved in this span.",
+          "uncertainty": "Extraction flattens the superscripts and the threshold on b, so the exact power condition cannot be transcribed safely from this artifact alone. The packet supports the comparison mechanism and the 2/sqrt(x) envelope, but exact exponents require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w3212690580_d05",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately records f, the eventual exp(2/sqrt(x)) envelope, the false-RH Omega-plus premise, its arbitrarily-late-witness quantifiers, and the reductio structure.",
+          "It correctly preserves the proof burden: the lemma is only sufficient, does not establish its envelope, and relies on a cited result not proved in the span.",
+          "The uncertainty appropriately refuses to normalize the OCR-damaged exponent and threshold."
+        ],
+        "inference": [
+          "Taking logarithms legitimately places the cited lower witnesses and the exponential ceiling on the same additive scale.",
+          "The contradiction is driven by incompatible quantifiers: arbitrarily late strict violations versus an upper bound at every sufficiently large input."
+        ],
+        "unsupported_or_imported": [
+          "Calling f a package of 'Nicolas-side quantities' imports the earlier Nicolas criterion; this span gives f's formula and citation but does not state that relation."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase 'recurrent lower excursions' reverses the relevant behavior: the proof uses positive upward spikes/lower bounds for log f, not downward excursions."
+        ],
+        "context_or_ocr_risk": [
+          "Superscripts make the printed threshold appear as b < 12 and flatten the powers; exact exponents cannot be safely transcribed, but the quantified comparison mechanism is readable enough that quarantine is unnecessary."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'lower excursions' with arbitrarily late positive spikes or lower-bound witnesses, remove the imported Nicolas label, and keep the exact quantifier conflict while leaving the damaged exponent and threshold unnormalized."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "bed04e2ebb2edc536e57004d15367a70ba553d0691019b9c7d0c7c3fa86fed18"
+}

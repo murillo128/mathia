@@ -1,0 +1,520 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2101929013_7bb7a935_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2101929013",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Conjecture 4, both directions of Theorem 3, the statistical heuristic, and comparison with a stronger Gonek hypothesis.",
+      "line_end": 228,
+      "line_start": 197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exponent extraction is somewhat fragile; theorem directions and qualitative strength comparisons are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3 gives a two-way, though quantitatively asymmetric, bridge: sufficiently small prime-counting errors in short intervals imply the zero exponential-sum conjecture, while that conjecture forces a weaker short-interval estimate. The normal-fluctuation heuristic supplies scale context without being used as proof.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Short-interval prime fluctuations and zero-sum cancellation constrain each other",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_004.txt",
+      "unit_bytes": 1613,
+      "unit_id": "openalex_w2101929013_depth_004",
+      "unit_sha256": "07bb20976a645a7da7828d0b595df0c5ebb336632f8a45a6a5f383777a371fe2",
+      "unit_type": "bidirectional-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_004.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 189,
+          "line_end": 196,
+          "text": "RH, divide both sides of (1.6) by x1/2 to obtain (1.5). Unconditionally,\none can use Selberg’s zero-density estimate to deduce\n                     X                          T log2 (2x)\n                            (xiγ − xρ−1/2 ) ≪               ;\n                                                   log T\n                    0<γ≤T\n                                                       √\nsee e.g. (3.8) of [3]. This gives (1.5) when log x = o( log T ).\n",
+          "sha256": "7fd720c914b2b28818ce989a874dadca7d01357d40b975bb4e46ef2857244fc6"
+        },
+        "after": {
+          "line_start": 229,
+          "line_end": 236,
+          "text": "                                                  P\n    We also want to describe how to bound the sum 0<γ≤T xiγ in terms\nof the pair correlation function\n                                          X           4xi(γ−γ )\n                                                               ′\n\n                        F(x, T ) =                                  .         (1.8)\n                                                    4 + (γ − γ ′ )2\n",
+          "sha256": "a5e67e134c2f4bbbc29f5302da5ad7789a47821391ef304a67918d1165880fe4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and statement of results",
+            "line_end": 267,
+            "line_start": 32,
+            "mathematical_role": "Defines the lower-order density g_alpha and discrepancy, states the exponential-sum, short-interval-prime, and pair-correlation conjectural routes, and records their implication structure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 228,
+          "line_start": 197,
+          "title": "Short-interval prime fluctuations and zero-sum cancellation constrain each other",
+          "unit_id": "openalex_w2101929013_depth_004",
+          "unit_type": "bidirectional-bridge",
+          "why_material": "Theorem 3 gives a two-way, though quantitatively asymmetric, bridge: sufficiently small prime-counting errors in short intervals imply the zero exponential-sum conjecture, while that conjecture forces a weaker short-interval estimate. The normal-fluctuation heuristic supplies scale context without being used as proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Conjecture 4, both directions of Theorem 3, the statistical heuristic, and comparison with a stronger Gonek hypothesis.",
+          "representation_dependency": "Exponent extraction is somewhat fragile; theorem directions and qualitative strength comparisons are explicit in prose.",
+          "unit_id": "openalex_w2101929013_depth_004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 196,
+            "line_start": 158,
+            "title": "Exponential-sum cancellation is the central sharpness criterion",
+            "unit_id": "openalex_w2101929013_depth_003",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Identifies sums of x^{i gamma} over zeros as the Fourier data controlling interval counts. Under RH, uniform o(T) cancellation on a specified x-range implies both sharp distribution conjectures; the Landau formula also explains why prime-power resonance governs small x and why unconditional control survives only in a narrower range."
+          },
+          {
+            "line_end": 263,
+            "line_start": 230,
+            "title": "Strong pair correlation implies the needed exponential cancellation",
+            "unit_id": "openalex_w2101929013_depth_005",
+            "unit_type": "sufficient-condition",
+            "why_material": "Defines the weighted pair-correlation statistic and makes a strengthened, error-sensitive pair-correlation conjecture sufficient for Conjecture 3 and hence sharp fractional-part distribution. The comparison with Montgomery and Chan clarifies that main-term asymptotics alone are not enough for this use."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sums of x^{i gamma} are a common interface: Fourier expansion connects them to fractional-part counts, explicit formulas connect them bidirectionally to local prime fluctuations, and quadratic smoothing connects them to pair correlation and its multiplicative second differences.",
+            "limit": "The implications are conditional and quantitatively asymmetric; they do not make proof-search failure or a weak bound evidence against the underlying conjectures.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_003",
+              "openalex_w2101929013_depth_004",
+              "openalex_w2101929013_depth_005",
+              "openalex_w2101929013_depth_008",
+              "openalex_w2101929013_depth_009",
+              "openalex_w2101929013_depth_010"
+            ],
+            "title": "One exponential-sum interface links three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_004",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_004",
+          "spontaneous_reading": "Local prime error and zero-frequency cancellation constrain one another, but with a loss: the bridge is bidirectional without being an equivalence at the same quantitative strength."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_004",
+          "source_grounded_mathematics": "Under RH, Conjecture 4's short-interval estimate for ψ(x+y)-ψ(x) implies Conjecture 3 and hence the sharp fractional-part conjectures. Conversely, Conjecture 3 yields a weaker short-interval error. The text separately cites a normal-fluctuation heuristic and Gonek's stronger zero-sum hypothesis as scale comparisons.",
+          "conceptual_reading": "The same oscillation can be viewed arithmetically as local prime irregularity or spectrally as cancellation among zeros. Quantitative losses show what each representation forgets when transferred to the other.",
+          "representation_or_bridge": "The explicit formula is the bridge object between ψ(x+y)-ψ(x)-y and sums of x^{iγ}; partial summation and a frequency-range choice mediate the conversion.",
+          "boundary_or_failure": "Both theorem directions assume RH and conjectural input, and the reverse direction is weaker. The probabilistic normality discussion motivates a scale but is not evidence for either implication.",
+          "uncertainty": "The qualitative comparison and theorem directions are clear; exact powers in the short-interval and Gonek bounds are extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2101929013_depth_004",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states under RH that Conjecture 4 implies Conjecture 3 and that RH plus Conjecture 3 gives a quantitatively weaker short-interval prime estimate.",
+          "It clearly separates the normal-fluctuation discussion as a conjectural scale heuristic and presents Gonek's stronger zero-sum hypothesis as a separate comparison."
+        ],
+        "inference": [
+          "Interpreting the two theorem directions as arithmetic and spectral views of related oscillation is reasonable.",
+          "The claim that the transfer loses quantitative strength follows from the two displayed error scales."
+        ],
+        "unsupported_or_imported": [
+          "The candidate says the explicit formula, partial summation, and a frequency-range choice mediate the bridge, but none of those proof mechanisms appears in this frozen span; they are imported from later proof units."
+        ],
+        "paraphrase_or_style_risk": [
+          "What each representation forgets is more rhetorical than the theorem-level evidence warrants unless tied directly to the displayed quantitative loss."
+        ],
+        "context_or_ocr_risk": [
+          "The exact exponents are formula-sensitive, although the implication directions and strength comparison remain legible."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the representation_or_bridge field with a theorem-level account of the bidirectional implication only; do not name the explicit formula, partial summation, or a frequency-range choice.",
+          "Anchor the conceptual loss directly to the stronger forward and weaker reverse error scales, while retaining the heuristic/evidence distinction."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes F(x,T), Conjecture 5, Theorem 4, and the hierarchy of pair-correlation conjectures.",
+      "line_end": 263,
+      "line_start": 230,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The kernel and x-range are formula-dependent but remain readable in the extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the weighted pair-correlation statistic and makes a strengthened, error-sensitive pair-correlation conjecture sufficient for Conjecture 3 and hence sharp fractional-part distribution. The comparison with Montgomery and Chan clarifies that main-term asymptotics alone are not enough for this use.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Strong pair correlation implies the needed exponential cancellation",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_005.txt",
+      "unit_bytes": 1722,
+      "unit_id": "openalex_w2101929013_depth_005",
+      "unit_sha256": "4e7c77582cf2be678649bfccc36d483ed5af25cc82521249829c9076262e1ddf",
+      "unit_type": "sufficient-condition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_005.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 222,
+          "line_end": 229,
+          "text": "<!-- source-page: 5 -->\n\nImaginary parts of zeros of ζ(s), II                                             5\n\n\nholds uniformly for all x, T ≥ 2 and for each fixed ε > 0, then (1.7)\nfollows.\n                                                  P\n",
+          "sha256": "46fad6f15ec0dfcbf8ec61da8fba0701455cc0a2d394b150582b6da342acb5a9"
+        },
+        "after": {
+          "line_start": 264,
+          "line_end": 271,
+          "text": "    In the next section, we prove Theorems 1–4. In section 3 we discuss\nanalogous results for general L-functions.\n\n\n2. Proof of Theorems 1–4\n                                                                 R\nProof of Theorem 1 (i). Let I denote an interval of T for which | I gα (x)dx|\nattains its maximum. Let ǫ be a small positive number, and let hǫ : T →\n",
+          "sha256": "c78d9e1714b9e9254210842e68a523e3ab7152248782422c0c4c92e5e3243b88"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and statement of results",
+            "line_end": 267,
+            "line_start": 32,
+            "mathematical_role": "Defines the lower-order density g_alpha and discrepancy, states the exponential-sum, short-interval-prime, and pair-correlation conjectural routes, and records their implication structure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 263,
+          "line_start": 230,
+          "title": "Strong pair correlation implies the needed exponential cancellation",
+          "unit_id": "openalex_w2101929013_depth_005",
+          "unit_type": "sufficient-condition",
+          "why_material": "Defines the weighted pair-correlation statistic and makes a strengthened, error-sensitive pair-correlation conjecture sufficient for Conjecture 3 and hence sharp fractional-part distribution. The comparison with Montgomery and Chan clarifies that main-term asymptotics alone are not enough for this use."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes F(x,T), Conjecture 5, Theorem 4, and the hierarchy of pair-correlation conjectures.",
+          "representation_dependency": "The kernel and x-range are formula-dependent but remain readable in the extraction.",
+          "unit_id": "openalex_w2101929013_depth_005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 228,
+            "line_start": 197,
+            "title": "Short-interval prime fluctuations and zero-sum cancellation constrain each other",
+            "unit_id": "openalex_w2101929013_depth_004",
+            "unit_type": "bidirectional-bridge",
+            "why_material": "Theorem 3 gives a two-way, though quantitatively asymmetric, bridge: sufficiently small prime-counting errors in short intervals imply the zero exponential-sum conjecture, while that conjecture forces a weaker short-interval estimate. The normal-fluctuation heuristic supplies scale context without being used as proof."
+          },
+          {
+            "line_end": 303,
+            "line_start": 268,
+            "title": "Mollification transfers a smooth bias law into a sharp discrepancy lower bound",
+            "unit_id": "openalex_w2101929013_depth_006",
+            "unit_type": "proof-mechanism",
+            "why_material": "Convolves an extremizing interval indicator with a narrow smooth nonnegative kernel, applies the established smooth asymptotic, and uses boundedness of g_alpha plus averaging to recover a nearby interval with the desired discrepancy. This is a reusable smooth-to-sharp lower-bound move."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sums of x^{i gamma} are a common interface: Fourier expansion connects them to fractional-part counts, explicit formulas connect them bidirectionally to local prime fluctuations, and quadratic smoothing connects them to pair correlation and its multiplicative second differences.",
+            "limit": "The implications are conditional and quantitatively asymmetric; they do not make proof-search failure or a weak bound evidence against the underlying conjectures.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_003",
+              "openalex_w2101929013_depth_004",
+              "openalex_w2101929013_depth_005",
+              "openalex_w2101929013_depth_008",
+              "openalex_w2101929013_depth_009",
+              "openalex_w2101929013_depth_010"
+            ],
+            "title": "One exponential-sum interface links three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_005",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_005",
+          "spontaneous_reading": "A second-order statistic can control a first-order exponential sum only when its error is strong and uniform enough; the usual pair-correlation main term leaves too much room for the intended sharp application."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_005",
+          "source_grounded_mathematics": "F(x,T) is a weighted double sum over zero pairs with kernel 4/(4+(γ-γ')^2). Conjecture 5 requires F(x,T)=N(T) with a small uniform error over a broad x-range, and Theorem 4 shows under RH that this implies Conjecture 3. The text contrasts this with Montgomery's main-term asymptotic and Chan's stronger error estimate.",
+          "conceptual_reading": "Pair correlation supplies quadratic energy for the zero phases. For sharp distribution, knowing the limiting energy is insufficient; one needs quantitative regularity that can force the linear sum to cancel.",
+          "representation_or_bridge": "The kernel-smoothed pair statistic is a quadratic representation of the phases x^{iγ}; a later smoothing inequality turns this energy information into a bound for their first moment.",
+          "boundary_or_failure": "The result is a sufficient conditional route, not an equivalence. Classical pair-correlation asymptotics without the strengthened error do not meet the proof burden.",
+          "uncertainty": "The kernel and logical hierarchy are legible, though the exact lower x-range and error normalization should be checked against the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2101929013_depth_005",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines F(x,T) as a weighted double sum over zero pairs, states the strengthened uniform error in Conjecture 5, and proves only the sufficient implication under RH to Conjecture 3 and then Conjectures 1 and 2.",
+          "It contrasts Conjecture 5 with Montgomery's main-term asymptotic and Chan's stronger conjectural error estimate."
+        ],
+        "inference": [
+          "Interpreting the weighted pair statistic as quadratic phase information is supported by its displayed double-sum form.",
+          "The comparison indicates that a quantitative error rate is material to the route developed here."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous and conceptual readings turn the strong error into a necessity claim by saying control is possible only when, or that one needs, such regularity; the span proves sufficiency, not necessity.",
+          "The claimed later smoothing inequality converting energy into a first-moment bound is not present in this frozen span and is imported from the proof of Theorem 4."
+        ],
+        "paraphrase_or_style_risk": [
+          "Second-order versus first-order language is useful only if kept attached to the displayed pair sum and zero sum, not presented as a general necessity principle."
+        ],
+        "context_or_ocr_risk": [
+          "The exact lower x-range and error normalization are formula-dependent but readable enough for the qualitative audit."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Change only-when/one-needs language to the bounded claim that the strong uniform error is sufficient for this theorem's route and that the weaker main-term statement is not shown here to close that route.",
+          "Remove the later smoothing-inequality mechanism and describe the bridge only as the stated conditional implication from F(x,T) control to the zero exponential sum."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes construction, coefficient bounds, the J0 cutoff, resonant and nonresonant mode analysis, and the final choices of J.",
+      "line_end": 439,
+      "line_start": 305,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense displayed algebra has extraction risk; the prose and intact inequalities preserve the proof architecture, while exact constants should be checked against the PDF before training.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Majorizes and minorizes an interval indicator by optimal degree-J trigonometric polynomials, evaluates low Fourier modes through Landau's formula, isolates exactly the prime-power resonant modes as the g_alpha term, and leaves high modes to Conjecture 3. Choosing the cutoff differently yields the RH bound or the conjectural asymptotic.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Extremal trigonometric brackets isolate resonance and control the unresolved Fourier tail",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_007.txt",
+      "unit_bytes": 6919,
+      "unit_id": "openalex_w2101929013_depth_007",
+      "unit_sha256": "f5a82b6d75472d53f20681a0d82eeb82e8a9d720735e616fa1fc364f016f1e03",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_007.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 297,
+          "line_end": 304,
+          "text": "It follows that for some choice of y ∈ (0, ǫ) one must have\n             X                       Z\n                   1 − N (T )|I| ≥ T    gα (x)dx + o(T ) + O(ǫT ).\n              0<γ≤T                          I\n             {αγ}∈I+y\n\nLetting ǫ → 0, we obtain our lower bound for the discrepancy.\n\n",
+          "sha256": "bc4d4807068fdb745e305e1474f5e1e3b699edbca14d4a18f57ce9fa6252eb85"
+        },
+        "after": {
+          "line_start": 440,
+          "line_end": 447,
+          "text": "\n   Proof of Theorem 3. We first construct a function F which is a good ap-\nproximation of the characteristic function of the interval [0, 1] and whose\nFourier transform is supported on [−K, K], where K is a parameter to\nbe specified later. Consider the entire function\n                  \u0012       \u0013 \u0012∞                 ∞                  \u0013\n                    sin πz 2 X         1       X      1         2\n          H(z) =                            −               +\n",
+          "sha256": "2526e2c93ae91483e054460905365175274af1f351238e619412f5fda5bf05bf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Theorems 1-4",
+            "line_end": 713,
+            "line_start": 268,
+            "mathematical_role": "Implements sharp-to-smooth transfer with mollification and extremal trigonometric polynomials, connects zero sums to local prime fluctuations by a band-limited cutoff and explicit formula, and converts pair-correlation regularity into exponential-sum cancellation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 439,
+          "line_start": 305,
+          "title": "Extremal trigonometric brackets isolate resonance and control the unresolved Fourier tail",
+          "unit_id": "openalex_w2101929013_depth_007",
+          "unit_type": "proof-mechanism",
+          "why_material": "Majorizes and minorizes an interval indicator by optimal degree-J trigonometric polynomials, evaluates low Fourier modes through Landau's formula, isolates exactly the prime-power resonant modes as the g_alpha term, and leaves high modes to Conjecture 3. Choosing the cutoff differently yields the RH bound or the conjectural asymptotic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes construction, coefficient bounds, the J0 cutoff, resonant and nonresonant mode analysis, and the final choices of J.",
+          "representation_dependency": "Dense displayed algebra has extraction risk; the prose and intact inequalities preserve the proof architecture, while exact constants should be checked against the PDF before training.",
+          "unit_id": "openalex_w2101929013_depth_007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 303,
+            "line_start": 268,
+            "title": "Mollification transfers a smooth bias law into a sharp discrepancy lower bound",
+            "unit_id": "openalex_w2101929013_depth_006",
+            "unit_type": "proof-mechanism",
+            "why_material": "Convolves an extremizing interval indicator with a narrow smooth nonnegative kernel, applies the established smooth asymptotic, and uses boundedness of g_alpha plus averaging to recover a nearby interval with the desired discrepancy. This is a reusable smooth-to-sharp lower-bound move."
+          },
+          {
+            "line_end": 577,
+            "line_start": 441,
+            "title": "A band-limited interval cutoff converts zero sums into local prime variation",
+            "unit_id": "openalex_w2101929013_depth_008",
+            "unit_type": "representation-change",
+            "why_material": "Builds a Beurling-Selberg-type approximation to an interval with compact Fourier support, controls its endpoint error, then uses Fourier inversion, integration by parts, and the explicit formula to bound the zero exponential sum by the maximum local variation of G(x)=psi(x)-x. This supplies the forward half of the prime-to-zero bridge."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A prime-power resonance first appears as a smooth lower-order density; mollification and extremal Fourier brackets then turn that density into sharp interval discrepancy information while separating resolved resonant modes from an unresolved high-frequency tail.",
+            "limit": "The full interval asymptotic still depends on uniform zero-sum cancellation, and exact Fourier constants are formula-sensitive in this extraction.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_001",
+              "openalex_w2101929013_depth_002",
+              "openalex_w2101929013_depth_006",
+              "openalex_w2101929013_depth_007"
+            ],
+            "title": "From arithmetic resonance to sharp discrepancy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_007",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_007",
+          "spontaneous_reading": "Extremal trigonometric brackets split the problem cleanly into resolvable low frequencies, where prime-power resonance creates gα, and a high-frequency tail whose cancellation is exactly the missing input."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_007",
+          "source_grounded_mathematics": "Degree-J trigonometric polynomials h-≤1_I≤h+ have optimal constant-term error and Fourier coefficients bounded by 1/|j|. Landau's formula evaluates modes through a cutoff J0: resonant indices yield T∫h±gα, nonresonant low modes are o(T), and modes J0<|j|≤J remain as weighted zero sums. Taking J=J0 gives the RH bound; extending J and invoking Conjecture 3 gives the conjectural asymptotic.",
+          "conceptual_reading": "The proof makes the unresolved content visible rather than hiding it in approximation error. The cutoff is a perspective-selection parameter balancing interval resolution against the range where arithmetic modes are controlled.",
+          "representation_or_bridge": "Beurling-Selberg-type majorants and minorants bridge a discontinuous interval indicator to finitely many characters e^{2πiju}; x_j=e^{2πjα} then connects each character to Landau's zero sum.",
+          "boundary_or_failure": "Optimal bracketing leaves an unavoidable N(T)/(J+1) error, and high modes require conjectural uniform cancellation. Dense extracted algebra prevents safe reliance on exact constants without scan verification.",
+          "uncertainty": "The low/resonant/high decomposition and choices of J are clear; exact displayed coefficients and cutoff formulas are extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2101929013_depth_007",
+        "critic_decision": "revise",
+        "supported": [
+          "The span constructs optimal degree-J trigonometric majorants and minorants, records their constant-term error and coefficient bounds, and sandwiches the interval count.",
+          "It separates resonant low modes yielding the g_alpha integral, nonresonant low modes contributing o(T), and a retained high-mode zero-sum tail; the final choices of J distinguish the two theorem conclusions."
+        ],
+        "inference": [
+          "Treating J as a resolution-versus-control parameter is a source-supported conceptual reading of the approximation error and retained tail.",
+          "The assertion that the proof exposes rather than hides the unresolved high modes is directly reflected by the final displayed remainder."
+        ],
+        "unsupported_or_imported": [
+          "Beurling-Selberg-type is not the source's name for these periodic trigonometric polynomials and is imported terminology.",
+          "The exact span names Theorem 2 but does not restate Conjecture 3; saying explicitly that extending J invokes Conjecture 3 imports the theorem premise from another unit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Dense displayed algebra makes exact constants and cutoff formulas unsafe, as the candidate notes."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Call the bridge the optimal trigonometric majorant/minorant construction used in the span, without importing the Beurling-Selberg label.",
+          "Describe the larger-J conclusion as requiring control of the displayed high-mode tail, or refer only to the hypothesis of Theorem 2, without naming an unstated conjecture from outside the span."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "adb2353aa9290ff866708c62a2a82753c1b29ff54dbabfa14d91aaeeb7851e1b"
+}

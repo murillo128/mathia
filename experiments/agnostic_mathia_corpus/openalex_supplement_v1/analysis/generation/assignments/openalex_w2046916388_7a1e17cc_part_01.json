@@ -1,0 +1,470 @@
+{
+  "expected_analysis_ids": {
+    "agnostic_oa_w2046916388_dual_potentials_and_contact_set": "agnostic_oa_generation_addb956dd0b26dac72ecb0bd625fa913d4731c6578435340010231cd73aa4cf0",
+    "agnostic_oa_w2046916388_graph_concentration_pushforward": "agnostic_oa_generation_b7a87855f31b235f778bd2513fb6ac3584c88bcba0ff1aa241454aa3c8f08a86",
+    "agnostic_oa_w2046916388_multimarginal_extension": "agnostic_oa_generation_7c7ec320d409c8b4b23445d6e0886c9f7f1751d1676c8410a82d7e1376c29b67",
+    "agnostic_oa_w2046916388_null_types_encode_participation": "agnostic_oa_generation_4aa7228f5bf0e39e5f30e63daa2dc68e4b4034398396b424074433f39f5cb68d",
+    "agnostic_oa_w2046916388_numbered_limbs_extremality": "agnostic_oa_generation_2227a629975874ac396c2a2ea2a8cab272fbcb9afb98afbad4c1e73c582be13d",
+    "agnostic_oa_w2046916388_primal_dual_slackness": "agnostic_oa_generation_b71f3624380fd7ee6bcb7e1abf5ce19f826bc9b39eaf241c965e4f1e686e3948",
+    "agnostic_oa_w2046916388_reconstruct_prices_from_duals": "agnostic_oa_generation_8e6344dc702f9b785375f1952fe4932c15e22ed205b3ed5f6db6f82981599fcf",
+    "agnostic_oa_w2046916388_semiconvex_marginal_payoff": "agnostic_oa_generation_3e927877c17209eafd3ec42552f982196b4dd0e91b4d771ba4902b512aa76e9e",
+    "agnostic_oa_w2046916388_stability_as_surplus_optimality": "agnostic_oa_generation_51028b1f0efbd18636b058099578569a9a9761d1dabe97d6119cf74b0ea67047",
+    "agnostic_oa_w2046916388_subtwist_and_branched_support": "agnostic_oa_generation_02f04d284aa7382c132f29de4336e6912fa2f76ecafe6c8a8d04e8291f66156b",
+    "agnostic_oa_w2046916388_three_equivalent_formulations": "agnostic_oa_generation_24c6f8a9cdf431bfdfc620da9f4a5b41f08e1c220ace072266ad16217c6fb1e5",
+    "agnostic_oa_w2046916388_twist_for_graph_support": "agnostic_oa_generation_4cbdc09749f4d3d798ec2f7ed69bdc31ae6d7a07191f58887cc1f3fff0021106",
+    "agnostic_oa_w2046916388_unique_nonpure_circle_example": "agnostic_oa_generation_7b1eb241347e96784186ec88c0472bf4ee99e8d2f9a8cb153990f83ee2656b08",
+    "agnostic_oa_w2046916388_uniqueness_purity_payoff_separation": "agnostic_oa_generation_f01eb9f9ace30b975cb05ecf24cb1955f855d370bba6650b826fb384a6f1bceb"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "interpretation",
+    "nonparaphrase_operation",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Source-grounded interpretations for nearby units from one source only; keep outputs separate and distinguish source fact, inference, representation dependence, and uncertainty.",
+  "model_visible_packet_sha256": "03242037b0d58e6582d514cdff6e6d1b79e25fb37d6356ebfb80e6949e1145d8",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/generation/batches/openalex_w2046916388_7a1e17cc_part_01.jsonl",
+  "source_id": "openalex_w2046916388",
+  "stage": "generation",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_three_equivalent_formulations.txt",
+      "artifact_bytes": 7676,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_three_equivalent_formulations.txt",
+      "artifact_sha256": "04d091bc0f506def7b3378936953b43838c476707504c12406c6cc918647f755",
+      "content_sha256": "2d5992b2abf9de5e8ddd2c9eca932c962ee6dc21a61233f860e24302fc261f3d",
+      "context_note": "The normalized document identifies itself as a 2007 CEMMAP working paper although assignment routing associates it with a 2009 article; version equivalence and novelty were not checked.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_three_equivalent_formulations",
+            "agnostic_oa_w2046916388_reconstruct_prices_from_duals",
+            "agnostic_oa_w2046916388_multimarginal_extension"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a representation-change lens by proving that hedonic prices, stable transferable-utility matching, and optimal transport encode one allocation structure, then carrying the bridge to multiple marginals. This is an assignment-routed lens association; novelty and parent-corpus overlap are unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 177,
+      "line_start": 68,
+      "representation_dependency": "Uses quasilinear hedonic preferences, transferable-utility matching, and Monge-Kantorovich transport as three representations of the same surplus-allocation structure.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Maps market assignments to transport plans, stability to dual feasibility, and equilibrium payoffs to dual potentials, enabling existence and structural results to transfer without conflating domain-specific terminology.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Recognize one allocation problem in three domain languages",
+      "unit_id": "agnostic_oa_w2046916388_three_equivalent_formulations",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_null_types_encode_participation.txt",
+      "artifact_bytes": 8513,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_null_types_encode_participation.txt",
+      "artifact_sha256": "8d00bccdf828a9ea0eab5179a96218562fb5364ff2bc99b79e14b26f7d0b9536",
+      "content_sha256": "b68650c4315d978cb4df1a1f3c49e6fa2f474b25bdb6c73ae440fab2545d1ce9",
+      "context_note": "Many set, inequality, and infinity symbols are damaged by PDF normalization; exact hypotheses and formulas require checking against the typeset working paper.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 330,
+      "line_start": 178,
+      "representation_dependency": "Uses augmented buyer, seller, and contract spaces with isolated null types, balanced marginals, measurable surplus-maximizing contract selection, and price-supported indirect utilities.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Turns unequal populations and nonparticipation into an ordinary balanced coupling problem while preserving outside-option utilities, so feasibility and equilibrium can be expressed with uniform marginal constraints.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Encode optional participation by adjoining null objects",
+      "unit_id": "agnostic_oa_w2046916388_null_types_encode_participation",
+      "unit_type": "modeling-construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_stability_as_surplus_optimality.txt",
+      "artifact_bytes": 5968,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_stability_as_surplus_optimality.txt",
+      "artifact_sha256": "93165625aac73896fe42bc79b9caa20b16d4d5d48c97697903868019a94ee6a0",
+      "content_sha256": "6ad5b381876e1d41ee725eec612766806978172a11f36ed622ccb3c9c0fb06a4",
+      "context_note": "The equivalence of stability and surplus maximization is cited from the matching literature; this span explains the complementary equality logic but is not a new proof of all cited results.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_stability_as_surplus_optimality",
+            "agnostic_oa_w2046916388_primal_dual_slackness",
+            "agnostic_oa_w2046916388_dual_potentials_and_contact_set"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Stability inequalities become dual feasibility, support equality becomes complementary slackness, and dual potentials become domain payoffs. These claims are directly source-grounded, but no comparison with #44 or other sources was performed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 445,
+      "line_start": 331,
+      "representation_dependency": "Uses a pairwise surplus obtained by maximizing over contracts, measures with fixed marginals, payoff functions, and support of a matching.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Replaces blocking-pair reasoning by a pointwise payoff inequality everywhere and equality on matched pairs, making stable matching equivalent to maximizing total surplus over feasible couplings.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Global inequalities plus equality on support characterize stability",
+      "unit_id": "agnostic_oa_w2046916388_stability_as_surplus_optimality",
+      "unit_type": "constraint-translation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_primal_dual_slackness.txt",
+      "artifact_bytes": 3110,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_primal_dual_slackness.txt",
+      "artifact_sha256": "52c6b546d8efe9995f093f3eb1d99d7b801061190767b4212dd5e749ff27a930",
+      "content_sha256": "e9529ab8f1bf96e34caa0e2e37909796837ed3a3e5a48f6ed26da99bcdecb7bb",
+      "context_note": "OCR removes or corrupts several comparison signs and measure symbols; downstream exact extraction must recover the primal/dual displays from the typeset source.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_stability_as_surplus_optimality",
+            "agnostic_oa_w2046916388_primal_dual_slackness",
+            "agnostic_oa_w2046916388_dual_potentials_and_contact_set"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Stability inequalities become dual feasibility, support equality becomes complementary slackness, and dual potentials become domain payoffs. These claims are directly source-grounded, but no comparison with #44 or other sources was performed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 510,
+      "line_start": 447,
+      "representation_dependency": "Uses the Kantorovich primal over couplings, its dual over additive potentials, weak/strong duality, and complementary slackness.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Shows that an economic stability inequality is exactly a linear-program dual constraint, while equality on the support simultaneously certifies primal and dual optimality.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Dual feasibility is stability and tightness selects the assignment",
+      "unit_id": "agnostic_oa_w2046916388_primal_dual_slackness",
+      "unit_type": "duality"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_dual_potentials_and_contact_set.txt",
+      "artifact_bytes": 3620,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_dual_potentials_and_contact_set.txt",
+      "artifact_sha256": "9250d9023e73ff690c0ab362a3c3a4f70b089b0c3cea52078673d014f57232a0",
+      "content_sha256": "a03af69661b824100cf26923f82b20f043e5efc9f8e08ce3a58ed667551d2eb3",
+      "context_note": "Existence and dual attainment are quoted under precise topological and integrability assumptions; they should not be generalized beyond those hypotheses.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_stability_as_surplus_optimality",
+            "agnostic_oa_w2046916388_primal_dual_slackness",
+            "agnostic_oa_w2046916388_dual_potentials_and_contact_set"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Stability inequalities become dual feasibility, support equality becomes complementary slackness, and dual potentials become domain payoffs. These claims are directly source-grounded, but no comparison with #44 or other sources was performed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_dual_potentials_and_contact_set",
+            "agnostic_oa_w2046916388_semiconvex_marginal_payoff",
+            "agnostic_oa_w2046916388_twist_for_graph_support",
+            "agnostic_oa_w2046916388_numbered_limbs_extremality"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source uses surplus-convex transforms, semiconvex differentiability, injectivity of marginal covectors, and extreme-point support geometry to separate existence, identifiability, uniqueness, and purity. The lens label follows assignment routing; novelty remains explicitly unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 574,
+      "line_start": 511,
+      "representation_dependency": "Uses upper semicontinuity, fixed-marginal compactness/duality, surplus-conjugate transforms, and the zero/contact set where the dual gap vanishes.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Replaces arbitrary feasible potentials by mutually surplus-conjugate ones without increasing cost and identifies the equality set as the geometric carrier of every optimal assignment.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Normalize dual potentials and move geometry to their contact set",
+      "unit_id": "agnostic_oa_w2046916388_dual_potentials_and_contact_set",
+      "unit_type": "convex-duality"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_reconstruct_prices_from_duals.txt",
+      "artifact_bytes": 7218,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_reconstruct_prices_from_duals.txt",
+      "artifact_sha256": "7a05ddc636dd0ea07fc679905bda805a888d08868d1418c795fd5f1d15b2c77b",
+      "content_sha256": "9f841ed9219e9ddd73cc75590acf6d3ca7cebbec1c4667178ecb6dc50d5b66a5",
+      "context_note": "Price bounds and equality statements contain damaged inequality glyphs. The equivalence is quasilinear and relies on measurable maximizers of pairwise surplus.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_three_equivalent_formulations",
+            "agnostic_oa_w2046916388_reconstruct_prices_from_duals",
+            "agnostic_oa_w2046916388_multimarginal_extension"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a representation-change lens by proving that hedonic prices, stable transferable-utility matching, and optimal transport encode one allocation structure, then carrying the bridge to multiple marginals. This is an assignment-routed lens association; novelty and parent-corpus overlap are unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 706,
+      "line_start": 575,
+      "representation_dependency": "Uses an optimal coupling, minimizing dual potentials, measurable contract selection, and lower/upper price envelopes induced by sellers and buyers.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Converts a stable optimal coupling back into a hedonic equilibrium by choosing prices between willingness-to-accept and willingness-to-pay envelopes; the reverse direction follows because equilibrium equalities saturate the transport dual.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Reconstruct supporting prices between two dual envelopes",
+      "unit_id": "agnostic_oa_w2046916388_reconstruct_prices_from_duals",
+      "unit_type": "representation-bridge"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_uniqueness_purity_payoff_separation.txt",
+      "artifact_bytes": 5942,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_uniqueness_purity_payoff_separation.txt",
+      "artifact_sha256": "25f24727c1b0f21db93c9d32b4ee242e35b74f40f2db10c423220c25d5b9b4ac",
+      "content_sha256": "9ba4db16237176076c91920cb67c73a9b7556fe82a43e798a07fcb0734f5d980",
+      "context_note": "The low-dimensional numerical examples illustrate but do not define the distinctions; figure-dependent claims later in the source are handled separately.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 800,
+      "line_start": 709,
+      "representation_dependency": "Uses primal assignments, dual payoff potentials, and disintegration of a coupling into conditional choices.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Clarifies that unique dual payoffs need not determine a unique coupling, and a unique coupling need not be concentrated on a graph; each conclusion requires different structural hypotheses.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Separate payoff uniqueness, assignment uniqueness, and purity",
+      "unit_id": "agnostic_oa_w2046916388_uniqueness_purity_payoff_separation",
+      "unit_type": "conceptual-distinction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_semiconvex_marginal_payoff.txt",
+      "artifact_bytes": 10199,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_semiconvex_marginal_payoff.txt",
+      "artifact_sha256": "370473a2230421cbdb29d61b8066043b229fbed98f1f33741ae27ed9131d9fe7",
+      "content_sha256": "448d41df9d4e824b095e9fb35703a38758855e9ee880e98561383a698e462801",
+      "context_note": "Coordinate-free Lipschitz/semiconvex definitions and differentiability exceptions are technical. Exact rectifiability and measure hypotheses need typeset-source verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_dual_potentials_and_contact_set",
+            "agnostic_oa_w2046916388_semiconvex_marginal_payoff",
+            "agnostic_oa_w2046916388_twist_for_graph_support",
+            "agnostic_oa_w2046916388_numbered_limbs_extremality"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source uses surplus-convex transforms, semiconvex differentiability, injectivity of marginal covectors, and extreme-point support geometry to separate existence, identifiability, uniqueness, and purity. The lens label follows assignment routing; novelty remains explicitly unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 954,
+      "line_start": 802,
+      "representation_dependency": "Uses local charts on a type manifold, uniform semiconvexity, surplus-convex dual potentials, differentiability outside negligible hypersurfaces, and equality on the optimal support.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "At differentiability points, complementary equality forces the derivative of any minimizing buyer payoff to equal the surplus derivative along an optimal match, yielding almost-everywhere uniqueness of marginal payoffs even when assignments or payoff constants remain nonunique.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Optimal support pins down marginal payoffs without pinning down levels",
+      "unit_id": "agnostic_oa_w2046916388_semiconvex_marginal_payoff",
+      "unit_type": "identifiability"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_twist_for_graph_support.txt",
+      "artifact_bytes": 5208,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_twist_for_graph_support.txt",
+      "artifact_sha256": "bf0494d07c7ddef5a0e1f30d640c79d49888c6b350dad067d3484b623670be43",
+      "content_sha256": "aff66d90d31b5fd889c0246d7068e80609809a70a69c948868c734dbafd39426",
+      "context_note": "The proof invokes the numbered-limb theorem from the appendix. The twist condition is coordinate-independent but depends on null-set and regularity assumptions.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_dual_potentials_and_contact_set",
+            "agnostic_oa_w2046916388_semiconvex_marginal_payoff",
+            "agnostic_oa_w2046916388_twist_for_graph_support",
+            "agnostic_oa_w2046916388_numbered_limbs_extremality"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source uses surplus-convex transforms, semiconvex differentiability, injectivity of marginal covectors, and extreme-point support geometry to separate existence, identifiability, uniqueness, and purity. The lens label follows assignment routing; novelty remains explicitly unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 1038,
+      "line_start": 955,
+      "representation_dependency": "Uses disjoint superdifferentials of surplus across partner types, differentiability of a dual potential, the contact set, and fixed marginals.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "If two partners cannot share the same marginal surplus covector at a buyer type, equality on the dual contact set selects at most one partner almost everywhere, producing a pure and unique optimal coupling.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "A twist condition turns the contact relation into a graph",
+      "unit_id": "agnostic_oa_w2046916388_twist_for_graph_support",
+      "unit_type": "injectivity-principle"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_subtwist_and_branched_support.txt",
+      "artifact_bytes": 8905,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_subtwist_and_branched_support.txt",
+      "artifact_sha256": "6226e6262264dab67d024ced38efdf6f46b334501c9eadd5e33e0f25cd393832",
+      "content_sha256": "ff7e4afcc0ac8e18a2e8d94c8d4ae96b12ec0227c6b8b4b1431ed607291fd110",
+      "context_note": "The primitive-utility matrix criteria in the intervening lines are supporting examples; this unit begins with the global topological obstruction and uses only the source's stated subtwist theorem.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 1270,
+      "line_start": 1140,
+      "representation_dependency": "Uses compact type-space topology, critical points of differences of surplus functions, cyclical monotonicity, marked/unmarked contact points, and a three-limb support decomposition.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Observes that smooth functions on compact manifolds must have extrema, obstructing a global no-critical-point twist, then replaces graph support by a bounded graph/antigraph limb system while retaining uniqueness but not purity.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "When topology forbids twist, weaken injectivity to controlled branching",
+      "unit_id": "agnostic_oa_w2046916388_subtwist_and_branched_support",
+      "unit_type": "topological-reframing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_unique_nonpure_circle_example.txt",
+      "artifact_bytes": 6893,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_unique_nonpure_circle_example.txt",
+      "artifact_sha256": "a086a636f29ca9d0034fc6bf45e4765e80e8673fc6d58c3ea961b5c3cffe2fd7",
+      "content_sha256": "be256fb26a134f3f184032f9c0fb284fd47e668491d07112a00d8c5a48d8f201",
+      "context_note": "The displayed numerical assignment, densities, and utilities depend on Figures 1–3 and finite-resolution computation; only the qualitative support comparison is retained, not numerical values.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 1377,
+      "line_start": 1271,
+      "representation_dependency": "Uses circular type spaces, a subtwisted distance-based surplus, unequal marginals, and a two-branch graph/antigraph support predicted by the theorem.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Provides a source-grounded counterexample to the inference that uniqueness implies purity: topological and marginal constraints yield one optimal measure whose support is a graph plus an antigraph rather than a single Monge map.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "A unique coupling can require two support branches",
+      "unit_id": "agnostic_oa_w2046916388_unique_nonpure_circle_example",
+      "unit_type": "counterexample"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_multimarginal_extension.txt",
+      "artifact_bytes": 4202,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_multimarginal_extension.txt",
+      "artifact_sha256": "ce8145bf5db4062be61ead5ebd92665ce499ac6e67ac1e44adc21367ccc286af",
+      "content_sha256": "2478cb4cc436013c1ccfae24870628fd22f9b2f7e8f7dd08e7c1121b2daf1f1e",
+      "context_note": "The multi-agent section states that existence, characterization, and marginal-payoff uniqueness extend, while noting the paucity of assignment-uniqueness results; it does not settle that open problem.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_three_equivalent_formulations",
+            "agnostic_oa_w2046916388_reconstruct_prices_from_duals",
+            "agnostic_oa_w2046916388_multimarginal_extension"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a representation-change lens by proving that hedonic prices, stable transferable-utility matching, and optimal transport encode one allocation structure, then carrying the bridge to multiple marginals. This is an assignment-routed lens association; novelty and parent-corpus overlap are unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 1453,
+      "line_start": 1380,
+      "representation_dependency": "Uses contracts requiring multiple agent types, frictionless transfers summing to zero, a joint coupling with prescribed marginals, additive dual potentials, and semiconvexity in one marginal.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Shows that hedonic equilibrium again becomes a multimarginal linear program with additive dual constraints, and that the marginal-payoff identifiability argument transfers even though uniqueness of the joint assignment becomes substantially harder.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "The representation bridge survives additional marginals",
+      "unit_id": "agnostic_oa_w2046916388_multimarginal_extension",
+      "unit_type": "generalization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_graph_concentration_pushforward.txt",
+      "artifact_bytes": 4077,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_graph_concentration_pushforward.txt",
+      "artifact_sha256": "a9f70ff02b833d9cacf9d0fd33441816f0015485a89e65af38abe648c83b1067",
+      "content_sha256": "858a80cbde1ed6b9483e5d1bbe88fd9ad8c7b163789e52c484499aeb5ece6df9",
+      "context_note": "The lemma is measure-theoretic and source-grounded; it requires concentration on a graph in outer-measure sense and Borel subsets of complete separable metric spaces.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 1521,
+      "line_start": 1456,
+      "representation_dependency": "Uses regularity and sigma-compact exhaustion of a finite Borel measure, projection of compact graph pieces, and almost-everywhere measurability.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Bridges a geometric support statement to a functional representation: once a coupling is concentrated on a graph, its marginals determine it and the graphing map is measurable modulo the source marginal.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Graph concentration forces a push-forward representation",
+      "unit_id": "agnostic_oa_w2046916388_graph_concentration_pushforward",
+      "unit_type": "representation-theorem"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_numbered_limbs_extremality.txt",
+      "artifact_bytes": 8797,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_numbered_limbs_extremality.txt",
+      "artifact_sha256": "8d8850166fafe2be10d8b91b6b27de12114f0fcc96c34f78f07468d1e0117717",
+      "content_sha256": "457071d5f2f4818151295e7032ae96df14e9d3e6b67a9cb73419d1fd7cc5fc11",
+      "context_note": "Many indices, unions, marginal recursions, and total-variation estimates are OCR-damaged. Exact limb definitions and formulas must be recovered from the typeset source.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_dual_potentials_and_contact_set",
+            "agnostic_oa_w2046916388_semiconvex_marginal_payoff",
+            "agnostic_oa_w2046916388_twist_for_graph_support",
+            "agnostic_oa_w2046916388_numbered_limbs_extremality"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source uses surplus-convex transforms, semiconvex differentiability, injectivity of marginal covectors, and extreme-point support geometry to separate existence, identifiability, uniqueness, and purity. The lens label follows assignment routing; novelty remains explicitly unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 1675,
+      "line_start": 1526,
+      "representation_dependency": "Uses an alternating countable decomposition into graph and antigraph limbs, nesting of domains/ranges, fixed marginals, regular measure exhaustion, and recursive recovery of limb measures.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Generalizes graph uniqueness: an alternating acyclic limb system lets the marginal constraints recover each component recursively, and yields a necessary-and-sufficient support characterization of extremal doubly stochastic measures.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Support geometry can determine a coupling without graph purity",
+      "unit_id": "agnostic_oa_w2046916388_numbered_limbs_extremality",
+      "unit_type": "support-characterization"
+    }
+  ]
+}

@@ -1,0 +1,1531 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_pugh1998_riemann_siegel_thesis_c94f316b_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "pugh1998_riemann_siegel_thesis",
+  "unit_count": 12,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The later literal coefficient tables instantiate this construction and need not be separate semantic units.",
+      "line_end": 2508,
+      "line_start": 2485,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed function notation is mildly degraded; the Maple preprocessing and truncation rule are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps the analytic coefficient functions to a normalized variable, differentiates symbolically, and truncates coefficient series by magnitude to obtain fast runtime evaluation.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Remainder functions are precompiled into high-precision Taylor coefficients",
+      "unit_artifact_relpath": "depth/units/pugh98_u25.txt",
+      "unit_bytes": 1178,
+      "unit_id": "pugh98_u25",
+      "unit_sha256": "f2e942c4303a991c943e6d883243e6d7d94a8fb657c4e582e636477d26daf7e1",
+      "unit_type": "symbolic-to-numeric-compilation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u25.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2477,
+          "line_end": 2484,
+          "text": "In this section we will examine some of the practical points considered when coding\nthe programs and functions which appear in the Appendices.\n\nEach program and function has a complete description of its use in the header, and\nthe code is heavily commented throughout to permit the user to trace through the\nlogic.\n\n\n",
+          "sha256": "c594a68684611014707b72b159815ca5335e07ab3a10f9f099d9c6da4657c312"
+        },
+        "after": {
+          "line_start": 2509,
+          "line_end": 2516,
+          "text": "\n\n\n\n                                            50\n\n<!-- source-page: 57 -->\n\n",
+          "sha256": "a571aed3be05cd242d5dce59ee54bf1a22959313127ab79ea9d1eea02c3be09d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2508,
+          "line_start": 2485,
+          "title": "Remainder functions are precompiled into high-precision Taylor coefficients",
+          "unit_id": "pugh98_u25",
+          "unit_type": "symbolic-to-numeric-compilation",
+          "why_material": "Maps the analytic coefficient functions to a normalized variable, differentiates symbolically, and truncates coefficient series by magnitude to obtain fast runtime evaluation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The later literal coefficient tables instantiate this construction and need not be separate semantic units.",
+          "representation_dependency": "Displayed function notation is mildly degraded; the Maple preprocessing and truncation rule are clear.",
+          "unit_id": "pugh98_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2464,
+            "line_start": 2438,
+            "title": "Implementation provenance exposes the cost and precision regime of the reported run",
+            "unit_id": "pugh98_u24",
+            "unit_type": "computational-provenance",
+            "why_material": "Records programs, compiler, machine, numeric types, optimization/readability tradeoffs, and wall-clock contrast between exhaustive root counting and the short Turing calculation."
+          },
+          {
+            "line_end": 2527,
+            "line_start": 2519,
+            "title": "Remainder depth is an explicit speed-versus-certainty control",
+            "unit_id": "pugh98_u26",
+            "unit_type": "adaptive-computation",
+            "why_material": "Makes the number of retained remainder terms a runtime parameter because most sign decisions need only two terms while difficult cases justify the full expansion."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2484,
+              "line_start": 2465,
+              "reason": "Page transition and program-section introduction."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This policy is realized as staged fallback in the main program.",
+      "line_end": 2527,
+      "line_start": 2519,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Plain prose is intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Makes the number of retained remainder terms a runtime parameter because most sign decisions need only two terms while difficult cases justify the full expansion.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Remainder depth is an explicit speed-versus-certainty control",
+      "unit_artifact_relpath": "depth/units/pugh98_u26.txt",
+      "unit_bytes": 594,
+      "unit_id": "pugh98_u26",
+      "unit_sha256": "1e0fc1824adf8fdb104a365c1e5417dfc0081ac329f9d65741a2c490a9f9dc4b",
+      "unit_type": "adaptive-computation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u26.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2511,
+          "line_end": 2518,
+          "text": "\n\n                                            50\n\n<!-- source-page: 57 -->\n\nChapter 5. Riemann-Siegel At Work\n\n",
+          "sha256": "84eba23a19d483fbc8556931a77bb872b179aedc66862273f9b0498ed71b24a3"
+        },
+        "after": {
+          "line_start": 2528,
+          "line_end": 2535,
+          "text": "\n\n5.4.3 The Function gram(n)\n\nLet us now move on to the function gram(n), a function which locates the nth Gram\npoint using Newton’s method. The nth Gram point is defined to be the solution to\nthe equation ϑ(t) = nπ, where n ≥ −1 and t > 7. Recall that Newton’s method will\nconverge to a root of a function very quickly provided the function satisfies certain\n",
+          "sha256": "53cb0251d5a6124ba2906b9fd96083d346098062fcfee4f5b30e9cbc15d88cb7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2527,
+          "line_start": 2519,
+          "title": "Remainder depth is an explicit speed-versus-certainty control",
+          "unit_id": "pugh98_u26",
+          "unit_type": "adaptive-computation",
+          "why_material": "Makes the number of retained remainder terms a runtime parameter because most sign decisions need only two terms while difficult cases justify the full expansion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This policy is realized as staged fallback in the main program.",
+          "representation_dependency": "Plain prose is intact.",
+          "unit_id": "pugh98_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2508,
+            "line_start": 2485,
+            "title": "Remainder functions are precompiled into high-precision Taylor coefficients",
+            "unit_id": "pugh98_u25",
+            "unit_type": "symbolic-to-numeric-compilation",
+            "why_material": "Maps the analytic coefficient functions to a normalized variable, differentiates symbolically, and truncates coefficient series by magnitude to obtain fast runtime evaluation."
+          },
+          {
+            "line_end": 2552,
+            "line_start": 2530,
+            "title": "Asymptotic theta supplies a fast Newton initializer for Gram points",
+            "unit_id": "pugh98_u27",
+            "unit_type": "numerical-construction",
+            "why_material": "Derives a cheap scale-appropriate starting approximation from the theta asymptotic and uses Newton iteration for rapid Gram-point location."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The stated initializer is tailored to the tested height range and is not a universal bound.",
+      "line_end": 2552,
+      "line_start": 2530,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The approximate formula is degraded in layout but the initialization logic and convergence observation are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives a cheap scale-appropriate starting approximation from the theta asymptotic and uses Newton iteration for rapid Gram-point location.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Asymptotic theta supplies a fast Newton initializer for Gram points",
+      "unit_artifact_relpath": "depth/units/pugh98_u27.txt",
+      "unit_bytes": 1328,
+      "unit_id": "pugh98_u27",
+      "unit_sha256": "b81d8815f8b362a19b3c04c814fc0684a2a9045d078ec03b24f09d3504b5c26c",
+      "unit_type": "numerical-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u27.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2522,
+          "line_end": 2529,
+          "text": "mula. In this implementation, Z(t,n) takes a long double argument t and an\ninteger argument n. t is simply the real number at which Z is to be evaluated. n is\nthe number of remainder terms to use in the computation. It is particularly useful to\nbe able to vary n since in most cases, only the C0 and C1 term of the remainder are\nnecessary to identify a root, and since Z(t,n) is the core of the main root counting\nprogram, reducing its computation time is an important consideration.\n\n\n",
+          "sha256": "22e6f336782709f73a0472ba3fe31ccc1fd7646cef6e151a012c61c9d28cd656"
+        },
+        "after": {
+          "line_start": 2553,
+          "line_end": 2560,
+          "text": "\n\n\n\n                                           51\n\n<!-- source-page: 58 -->\n\n",
+          "sha256": "038a578f2a7659a4d01993424e1d688704fff2d97f36c96b6c11fab52e8cc5f2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2552,
+          "line_start": 2530,
+          "title": "Asymptotic theta supplies a fast Newton initializer for Gram points",
+          "unit_id": "pugh98_u27",
+          "unit_type": "numerical-construction",
+          "why_material": "Derives a cheap scale-appropriate starting approximation from the theta asymptotic and uses Newton iteration for rapid Gram-point location."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The stated initializer is tailored to the tested height range and is not a universal bound.",
+          "representation_dependency": "The approximate formula is degraded in layout but the initialization logic and convergence observation are explicit.",
+          "unit_id": "pugh98_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2527,
+            "line_start": 2519,
+            "title": "Remainder depth is an explicit speed-versus-certainty control",
+            "unit_id": "pugh98_u26",
+            "unit_type": "adaptive-computation",
+            "why_material": "Makes the number of retained remainder terms a runtime parameter because most sign decisions need only two terms while difficult cases justify the full expansion."
+          },
+          {
+            "line_end": 2590,
+            "line_start": 2563,
+            "title": "Gram-block search refines partitions and escalates precision under an error margin",
+            "unit_id": "pugh98_u28",
+            "unit_type": "adaptive-search-and-certification",
+            "why_material": "Combines bisection-like partition refinement, an expected-root target, two accuracy stages, a hard warning path, and sign tests separated from zero by a justified error tolerance."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Failure to find the expected roots triggers scrutiny rather than a false completeness claim.",
+      "line_end": 2590,
+      "line_start": 2563,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Plain prose is intact; epsilon appears as a degraded glyph but is defined contextually.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines bisection-like partition refinement, an expected-root target, two accuracy stages, a hard warning path, and sign tests separated from zero by a justified error tolerance.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gram-block search refines partitions and escalates precision under an error margin",
+      "unit_artifact_relpath": "depth/units/pugh98_u28.txt",
+      "unit_bytes": 1854,
+      "unit_id": "pugh98_u28",
+      "unit_sha256": "eba31e16a56074d1d0197d4559fe901f5f5707aadaf2b18b22be9dad6cbd08cf",
+      "unit_type": "adaptive-search-and-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u28.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2555,
+          "line_end": 2562,
+          "text": "\n\n                                           51\n\n<!-- source-page: 58 -->\n\nChapter 5. Riemann-Siegel At Work\n\n",
+          "sha256": "006e5823438422e44c2eb01ef94981424ae03365b49ed20e6a49112660c404af"
+        },
+        "after": {
+          "line_start": 2591,
+          "line_end": 2598,
+          "text": "\n\n\n                                          52\n\n<!-- source-page: 59 -->\n\nChapter 5. Riemann-Siegel At Work\n",
+          "sha256": "931d73b8c87953295dd9caeba50c03d1dfcbfceaac52673419efa3b4dace9699"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2590,
+          "line_start": 2563,
+          "title": "Gram-block search refines partitions and escalates precision under an error margin",
+          "unit_id": "pugh98_u28",
+          "unit_type": "adaptive-search-and-certification",
+          "why_material": "Combines bisection-like partition refinement, an expected-root target, two accuracy stages, a hard warning path, and sign tests separated from zero by a justified error tolerance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Failure to find the expected roots triggers scrutiny rather than a false completeness claim.",
+          "representation_dependency": "Plain prose is intact; epsilon appears as a degraded glyph but is defined contextually.",
+          "unit_id": "pugh98_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2552,
+            "line_start": 2530,
+            "title": "Asymptotic theta supplies a fast Newton initializer for Gram points",
+            "unit_id": "pugh98_u27",
+            "unit_type": "numerical-construction",
+            "why_material": "Derives a cheap scale-appropriate starting approximation from the theta asymptotic and uses Newton iteration for rapid Gram-point location."
+          },
+          {
+            "line_end": 2616,
+            "line_start": 2600,
+            "title": "The main counter routes ordinary intervals through Gram's Law and exceptional blocks through adaptive search",
+            "unit_id": "pugh98_u29",
+            "unit_type": "algorithm-composition",
+            "why_material": "Composes Gram-point location, cheap sign tests, precision escalation, and block search into a lower-bound counting pipeline with explicit summary outputs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Its completeness is supplied only after the separate Turing certificate.",
+      "line_end": 2616,
+      "line_start": 2600,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Plain prose is intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Composes Gram-point location, cheap sign tests, precision escalation, and block search into a lower-bound counting pipeline with explicit summary outputs.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The main counter routes ordinary intervals through Gram's Law and exceptional blocks through adaptive search",
+      "unit_artifact_relpath": "depth/units/pugh98_u29.txt",
+      "unit_bytes": 1165,
+      "unit_id": "pugh98_u29",
+      "unit_sha256": "523c03e510b2c536d060dad907b3ab1c3199505709db1391ad56797572be9694",
+      "unit_type": "algorithm-composition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u29.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2592,
+          "line_end": 2599,
+          "text": "\n\n                                          52\n\n<!-- source-page: 59 -->\n\nChapter 5. Riemann-Siegel At Work\n\n",
+          "sha256": "5d6861c0b9a590266ff78ce24292f9241a772844cf878f2645d5738f407e4c2f"
+        },
+        "after": {
+          "line_start": 2617,
+          "line_end": 2624,
+          "text": "\n\n5.4.6 The Turing Method Program\n\nThis last program is used to determine the adjustments hm used in Turing’s method\nfor bounding the function S(t) (see Section 4.3). This program is a type of bisection\nalgorithm which locates the adjustment terms near Gram points by stepping to the left\nor right of the Gram point until the hm satisfying the required conditions are found.\n",
+          "sha256": "18a986b7baf6dbc21f091b8ff33e75e0cec348cf82648e3421671c1313332987"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2616,
+          "line_start": 2600,
+          "title": "The main counter routes ordinary intervals through Gram's Law and exceptional blocks through adaptive search",
+          "unit_id": "pugh98_u29",
+          "unit_type": "algorithm-composition",
+          "why_material": "Composes Gram-point location, cheap sign tests, precision escalation, and block search into a lower-bound counting pipeline with explicit summary outputs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Its completeness is supplied only after the separate Turing certificate.",
+          "representation_dependency": "Plain prose is intact.",
+          "unit_id": "pugh98_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2590,
+            "line_start": 2563,
+            "title": "Gram-block search refines partitions and escalates precision under an error margin",
+            "unit_id": "pugh98_u28",
+            "unit_type": "adaptive-search-and-certification",
+            "why_material": "Combines bisection-like partition refinement, an expected-root target, two accuracy stages, a hard warning path, and sign tests separated from zero by a justified error tolerance."
+          },
+          {
+            "line_end": 2628,
+            "line_start": 2619,
+            "title": "Turing adjustments are found by directional stepping with refinement fallback",
+            "unit_id": "pugh98_u30",
+            "unit_type": "constraint-search",
+            "why_material": "Operationalizes the sign-correction constraints near Gram points and refines the step partition if a required adjustment is not found."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source reports that the selected twenty-point case succeeded at the initial step size.",
+      "line_end": 2628,
+      "line_start": 2619,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Plain prose is intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Operationalizes the sign-correction constraints near Gram points and refines the step partition if a required adjustment is not found.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Turing adjustments are found by directional stepping with refinement fallback",
+      "unit_artifact_relpath": "depth/units/pugh98_u30.txt",
+      "unit_bytes": 667,
+      "unit_id": "pugh98_u30",
+      "unit_sha256": "a1d6f00ad29f8c7297f186d2a17a97ec10eae6dbe141b2957448d9e258de68a8",
+      "unit_type": "constraint-search",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u30.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2611,
+          "line_end": 2618,
+          "text": "\nThe testing of Gram’s Law at each Gram point is a two stage process. The first\nstage is a rough calculation of Z(t) using only the zeroth and first remainder terms.\nA second more accurate calculation of Z(t) is carried out only if Gram’s Law in the\nform (−1)n Z(gn ) > \u000f(gn ) fails at the less accurate value of Z(t) from the first stage.\nThe \u000f(t) function used here is the same as that used in gramblock(n,m,FILE).\n\n\n",
+          "sha256": "10628d9481459a850a7cc77fce66eb16d9b876a695bcc3c22df7dc001711ec9d"
+        },
+        "after": {
+          "line_start": 2629,
+          "line_end": 2636,
+          "text": "\n\n\n                                           53\n\n<!-- source-page: 60 -->\n\nChapter 5. Riemann-Siegel At Work\n",
+          "sha256": "47c05f583aa3e66d3d8698abbcef1761d81ffea7fd5388149a9aa4de540f9f0b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2628,
+          "line_start": 2619,
+          "title": "Turing adjustments are found by directional stepping with refinement fallback",
+          "unit_id": "pugh98_u30",
+          "unit_type": "constraint-search",
+          "why_material": "Operationalizes the sign-correction constraints near Gram points and refines the step partition if a required adjustment is not found."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source reports that the selected twenty-point case succeeded at the initial step size.",
+          "representation_dependency": "Plain prose is intact.",
+          "unit_id": "pugh98_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2616,
+            "line_start": 2600,
+            "title": "The main counter routes ordinary intervals through Gram's Law and exceptional blocks through adaptive search",
+            "unit_id": "pugh98_u29",
+            "unit_type": "algorithm-composition",
+            "why_material": "Composes Gram-point location, cheap sign tests, precision escalation, and block search into a lower-bound counting pipeline with explicit summary outputs."
+          },
+          {
+            "line_end": 2665,
+            "line_start": 2638,
+            "title": "Certified signs can be sound while the sampling process remains incomplete",
+            "unit_id": "pugh98_u31",
+            "unit_type": "obstruction-and-domain-boundary",
+            "why_material": "Separates false-positive protection from false-negative risk, models how input representation and accumulated cosine error grow with height, and defines the practical endpoint by comparison with the analytic tolerance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical crossover is an implementation-specific estimate and the five-term tolerance was not separately established.",
+      "line_end": 2665,
+      "line_start": 2638,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is clear; big-O formulas are mildly degraded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates false-positive protection from false-negative risk, models how input representation and accumulated cosine error grow with height, and defines the practical endpoint by comparison with the analytic tolerance.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Certified signs can be sound while the sampling process remains incomplete",
+      "unit_artifact_relpath": "depth/units/pugh98_u31.txt",
+      "unit_bytes": 2004,
+      "unit_id": "pugh98_u31",
+      "unit_sha256": "5dccf0e68c96844b827849a7707810b4864cd49f6fc4d6fa2d543929c2e07988",
+      "unit_type": "obstruction-and-domain-boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u31.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2630,
+          "line_end": 2637,
+          "text": "\n\n                                           53\n\n<!-- source-page: 60 -->\n\nChapter 5. Riemann-Siegel At Work\n\n",
+          "sha256": "632e9cc29568fe84c6a73d1256a199552140a49550959f42248d860009f05a97"
+        },
+        "after": {
+          "line_start": 2666,
+          "line_end": 2673,
+          "text": "\n\n\n\n                                           54\n\n<!-- source-page: 61 -->\n\n",
+          "sha256": "cc14a56a2cb576083a62714e15caf298a4cc4056c2a1cffa09719a49c2758660"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2665,
+          "line_start": 2638,
+          "title": "Certified signs can be sound while the sampling process remains incomplete",
+          "unit_id": "pugh98_u31",
+          "unit_type": "obstruction-and-domain-boundary",
+          "why_material": "Separates false-positive protection from false-negative risk, models how input representation and accumulated cosine error grow with height, and defines the practical endpoint by comparison with the analytic tolerance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical crossover is an implementation-specific estimate and the five-term tolerance was not separately established.",
+          "representation_dependency": "Prose is clear; big-O formulas are mildly degraded.",
+          "unit_id": "pugh98_u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2628,
+            "line_start": 2619,
+            "title": "Turing adjustments are found by directional stepping with refinement fallback",
+            "unit_id": "pugh98_u30",
+            "unit_type": "constraint-search",
+            "why_material": "Operationalizes the sign-correction constraints near Gram points and refines the step partition if a required adjustment is not found."
+          },
+          {
+            "line_end": 2732,
+            "line_start": 2680,
+            "title": "Batch acceleration does not remove the single-evaluation Dirichlet-sum bottleneck",
+            "unit_id": "pugh98_u32",
+            "unit_type": "future-method-comparison",
+            "why_material": "Distinguishes precomputation-based multiple-evaluation speedups from single-point evaluation, isolates the main cosine/Dirichlet sum as the bottleneck, and proposes matching its approximation error to the Riemann-Siegel remainder."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          },
+          {
+            "claim": "Square-root analytic complexity enables large searches, but phase representation and accumulated summation error eventually dominate; batching accelerates many nearby evaluations while single-value evaluation retains the main Dirichlet-sum bottleneck.",
+            "limit": "All crossover scales are tied to the thesis's late-1990s implementation, numeric types, and reported architectures.",
+            "parent_local_unit_ids": [
+              "pugh98_u01",
+              "pugh98_u17",
+              "pugh98_u24",
+              "pugh98_u31",
+              "pugh98_u32"
+            ],
+            "title": "Precision and throughput bottlenecks determine the meaningful verification frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a prospective research direction, not a demonstrated algorithm in the thesis.",
+      "line_end": 2732,
+      "line_start": 2680,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed real-part identity is formula-risky but recoverable from the surrounding prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Distinguishes precomputation-based multiple-evaluation speedups from single-point evaluation, isolates the main cosine/Dirichlet sum as the bottleneck, and proposes matching its approximation error to the Riemann-Siegel remainder.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        62
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Batch acceleration does not remove the single-evaluation Dirichlet-sum bottleneck",
+      "unit_artifact_relpath": "depth/units/pugh98_u32.txt",
+      "unit_bytes": 3163,
+      "unit_id": "pugh98_u32",
+      "unit_sha256": "f0c0a2d594ea7df6da3e2e561a9496a9be4c5404f8700087d786b64b047665f0",
+      "unit_type": "future-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u32.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2672,
+          "line_end": 2679,
+          "text": "<!-- source-page: 61 -->\n\nChapter 6\nConclusion and Future Work\n\n\n\n\n",
+          "sha256": "fa45c223836bc0be56e9379ec41c9fea4cf300a3615f19ad80130c581bcb030c"
+        },
+        "after": {
+          "line_start": 2733,
+          "line_end": 2740,
+          "text": "\n\n\n\n                                          56\n\n<!-- source-page: 63 -->\n\n",
+          "sha256": "05ac92719b5f2c523ac79e1585871cf12e496a2d10fde07a8832e7ce0b8afbc4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 6: Conclusion and future work",
+            "line_end": 2739,
+            "line_start": 2674,
+            "mathematical_role": "Distinguishes single-value from batched evaluation bottlenecks and proposes approximating the main Dirichlet sum to enable extended-precision verification."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2732,
+          "line_start": 2680,
+          "title": "Batch acceleration does not remove the single-evaluation Dirichlet-sum bottleneck",
+          "unit_id": "pugh98_u32",
+          "unit_type": "future-method-comparison",
+          "why_material": "Distinguishes precomputation-based multiple-evaluation speedups from single-point evaluation, isolates the main cosine/Dirichlet sum as the bottleneck, and proposes matching its approximation error to the Riemann-Siegel remainder."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a prospective research direction, not a demonstrated algorithm in the thesis.",
+          "representation_dependency": "The displayed real-part identity is formula-risky but recoverable from the surrounding prose.",
+          "unit_id": "pugh98_u32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2665,
+            "line_start": 2638,
+            "title": "Certified signs can be sound while the sampling process remains incomplete",
+            "unit_id": "pugh98_u31",
+            "unit_type": "obstruction-and-domain-boundary",
+            "why_material": "Separates false-positive protection from false-negative risk, models how input representation and accumulated cosine error grow with height, and defines the practical endpoint by comparison with the analytic tolerance."
+          },
+          {
+            "line_end": 3040,
+            "line_start": 2979,
+            "title": "The appendix Z routine directly composes phase, main sum, and selectable remainder",
+            "unit_id": "pugh98_u33",
+            "unit_type": "executable-representation",
+            "why_material": "Provides a code-level mapping from the analytic decomposition to finite-precision evaluation, including modular phase reduction and selectable asymptotic depth."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Square-root analytic complexity enables large searches, but phase representation and accumulated summation error eventually dominate; batching accelerates many nearby evaluations while single-value evaluation retains the main Dirichlet-sum bottleneck.",
+            "limit": "All crossover scales are tied to the thesis's late-1990s implementation, numeric types, and reported architectures.",
+            "parent_local_unit_ids": [
+              "pugh98_u01",
+              "pugh98_u17",
+              "pugh98_u24",
+              "pugh98_u31",
+              "pugh98_u32"
+            ],
+            "title": "Precision and throughput bottlenecks determine the meaningful verification frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2753,
+              "line_start": 2740,
+              "reason": "Appendix heading and code-list introduction."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Literal coefficient generation is defined earlier; this span is the runtime evaluator.",
+      "line_end": 3040,
+      "line_start": 2979,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "C text is readable; exact compilation depends on the surrounding appendix declarations and should be checked against the original source file/PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides a code-level mapping from the analytic decomposition to finite-precision evaluation, including modular phase reduction and selectable asymptotic depth.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        69
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The appendix Z routine directly composes phase, main sum, and selectable remainder",
+      "unit_artifact_relpath": "depth/units/pugh98_u33.txt",
+      "unit_bytes": 3476,
+      "unit_id": "pugh98_u33",
+      "unit_sha256": "fc9b71b446762d030938d7806d6239f8cac43599d3dab155dcf3f1f58bff20e4",
+      "unit_type": "executable-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u33.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2971,
+          "line_end": 2978,
+          "text": "\n\n\n\n                                      61\n\n<!-- source-page: 68 -->\n\n",
+          "sha256": "422690e35e024dcd8b298824870ff155b03385eea8232354930c043ad9292f02"
+        },
+        "after": {
+          "line_start": 3041,
+          "line_end": 3048,
+          "text": "\n\n\n\n                                      63\n\n<!-- source-page: 70 -->\n\n",
+          "sha256": "a527bd110ece297afac25a232eec3633797c0ff8c319bfa204ee898d998a4b97"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: C functions",
+            "line_end": 3204,
+            "line_start": 2740,
+            "mathematical_role": "Provides executable theta, Gram-point, coefficient, Z, and adaptive Gram-block routines; most coefficient literals repeat the earlier symbolic construction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3040,
+          "line_start": 2979,
+          "title": "The appendix Z routine directly composes phase, main sum, and selectable remainder",
+          "unit_id": "pugh98_u33",
+          "unit_type": "executable-representation",
+          "why_material": "Provides a code-level mapping from the analytic decomposition to finite-precision evaluation, including modular phase reduction and selectable asymptotic depth."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Literal coefficient generation is defined earlier; this span is the runtime evaluator.",
+          "representation_dependency": "C text is readable; exact compilation depends on the surrounding appendix declarations and should be checked against the original source file/PDF.",
+          "unit_id": "pugh98_u33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2732,
+            "line_start": 2680,
+            "title": "Batch acceleration does not remove the single-evaluation Dirichlet-sum bottleneck",
+            "unit_id": "pugh98_u32",
+            "unit_type": "future-method-comparison",
+            "why_material": "Distinguishes precomputation-based multiple-evaluation speedups from single-point evaluation, isolates the main cosine/Dirichlet sum as the bottleneck, and proposes matching its approximation error to the Riemann-Siegel remainder."
+          },
+          {
+            "line_end": 3196,
+            "line_start": 3051,
+            "title": "The Gram-block routine implements tolerance-gated multistage refinement and warning",
+            "unit_id": "pugh98_u34",
+            "unit_type": "executable-adaptive-search",
+            "why_material": "Instantiates adaptive partition depth, sign margins, two remainder depths, and an explicit unresolved-block warning, exposing the source's executable notion of a certified found root."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The extracted code calls graham at lines 3080 and 3138 although the defined routine is gram; verify the PDF/source before classifying this as an original compile defect.",
+      "line_end": 3196,
+      "line_start": 3051,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly readable C, but broken comment delimiters and the gram/graham mismatch may reflect source or extraction defects.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Instantiates adaptive partition depth, sign margins, two remainder depths, and an explicit unresolved-block warning, exposing the source's executable notion of a certified found root.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        71,
+        72
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Gram-block routine implements tolerance-gated multistage refinement and warning",
+      "unit_artifact_relpath": "depth/units/pugh98_u34.txt",
+      "unit_bytes": 8271,
+      "unit_id": "pugh98_u34",
+      "unit_sha256": "033d5791343005a70a942822e5ccd8c9b4aac1c05129e78218e14a5c735d1229",
+      "unit_type": "executable-adaptive-search",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u34.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3043,
+          "line_end": 3050,
+          "text": "\n\n                                      63\n\n<!-- source-page: 70 -->\n\nAppendix A. C Functions Used in Main Programs\n\n",
+          "sha256": "a0b09b1194885a8242699ce15ace65a61ef1b7bd35f188e81210124f87fea79f"
+        },
+        "after": {
+          "line_start": 3197,
+          "line_end": 3204,
+          "text": "\n\n\n\n                                         66\n\n<!-- source-page: 73 -->\n\n",
+          "sha256": "d7ed22e8d44a436f8274a67869365404c853e6a7da70a5a6778d33010ef46b84"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: C functions",
+            "line_end": 3204,
+            "line_start": 2740,
+            "mathematical_role": "Provides executable theta, Gram-point, coefficient, Z, and adaptive Gram-block routines; most coefficient literals repeat the earlier symbolic construction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3196,
+          "line_start": 3051,
+          "title": "The Gram-block routine implements tolerance-gated multistage refinement and warning",
+          "unit_id": "pugh98_u34",
+          "unit_type": "executable-adaptive-search",
+          "why_material": "Instantiates adaptive partition depth, sign margins, two remainder depths, and an explicit unresolved-block warning, exposing the source's executable notion of a certified found root."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The extracted code calls graham at lines 3080 and 3138 although the defined routine is gram; verify the PDF/source before classifying this as an original compile defect.",
+          "representation_dependency": "Mostly readable C, but broken comment delimiters and the gram/graham mismatch may reflect source or extraction defects.",
+          "unit_id": "pugh98_u34"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3040,
+            "line_start": 2979,
+            "title": "The appendix Z routine directly composes phase, main sum, and selectable remainder",
+            "unit_id": "pugh98_u33",
+            "unit_type": "executable-representation",
+            "why_material": "Provides a code-level mapping from the analytic decomposition to finite-precision evaluation, including modular phase reduction and selectable asymptotic depth."
+          },
+          {
+            "line_end": 3452,
+            "line_start": 3282,
+            "title": "The root-counting program escalates difficult Gram points and delegates exceptional blocks",
+            "unit_id": "pugh98_u35",
+            "unit_type": "executable-lower-bound-pipeline",
+            "why_material": "The program header states lower-bound semantics and uncertain-region warnings; the body implements cheap tests, precise fallback, block delegation, accounting, and progress/result reporting."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The code does not itself establish that all strip zeros were found; that conclusion requires the separate Turing stage.",
+      "line_end": 3452,
+      "line_start": 3282,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "C extraction is readable enough for control flow; exact compilation was not performed and would require the full source environment.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The program header states lower-bound semantics and uncertain-region warnings; the body implements cheap tests, precise fallback, block delegation, accounting, and progress/result reporting.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        76,
+        77,
+        78
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The root-counting program escalates difficult Gram points and delegates exceptional blocks",
+      "unit_artifact_relpath": "depth/units/pugh98_u35.txt",
+      "unit_bytes": 8551,
+      "unit_id": "pugh98_u35",
+      "unit_sha256": "022e0be79361ccea1c7b9b6da0083c01921f63e3f182694a6cb0d6fdfbe76774",
+      "unit_type": "executable-lower-bound-pipeline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u35.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3274,
+          "line_end": 3281,
+          "text": "\n\n\n\n                                        68\n\n<!-- source-page: 75 -->\n\n",
+          "sha256": "37b97733ed225e6564abafe3fff1b76db517d0030400e67960ba49f436183f31"
+        },
+        "after": {
+          "line_start": 3453,
+          "line_end": 3460,
+          "text": "\n\n\n\n                                        72\n\n<!-- source-page: 79 -->\n\n",
+          "sha256": "5449e9621512a1d52ad162d9fc6937883255eecd08e7a76e6020d119a3442ae1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix C: Root-counting program",
+            "line_end": 3460,
+            "line_start": 3282,
+            "mathematical_role": "Implements Gram-law testing, precision escalation, Gram-block fallback, lower-bound accounting, and result reporting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3452,
+          "line_start": 3282,
+          "title": "The root-counting program escalates difficult Gram points and delegates exceptional blocks",
+          "unit_id": "pugh98_u35",
+          "unit_type": "executable-lower-bound-pipeline",
+          "why_material": "The program header states lower-bound semantics and uncertain-region warnings; the body implements cheap tests, precise fallback, block delegation, accounting, and progress/result reporting."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The code does not itself establish that all strip zeros were found; that conclusion requires the separate Turing stage.",
+          "representation_dependency": "C extraction is readable enough for control flow; exact compilation was not performed and would require the full source environment.",
+          "unit_id": "pugh98_u35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3196,
+            "line_start": 3051,
+            "title": "The Gram-block routine implements tolerance-gated multistage refinement and warning",
+            "unit_id": "pugh98_u34",
+            "unit_type": "executable-adaptive-search",
+            "why_material": "Instantiates adaptive partition depth, sign margins, two remainder depths, and an explicit unresolved-block warning, exposing the source's executable notion of a certified found root."
+          },
+          {
+            "line_end": 3603,
+            "line_start": 3461,
+            "title": "The Turing program enforces sign and order constraints while shrinking its adjustment step",
+            "unit_id": "pugh98_u36",
+            "unit_type": "executable-certificate-search",
+            "why_material": "Implements construction of adjusted Gram samples, bidirectional search for sign-certified values, restart on loss of strict ordering, and output of the certificate data."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This executable search constructs inputs to the mathematical bound; it does not by itself prove the bound or verify the reported run.",
+      "line_end": 3603,
+      "line_start": 3461,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "C extraction is largely readable, with formula comments and long lines subject to PDF text-layer risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Implements construction of adjusted Gram samples, bidirectional search for sign-certified values, restart on loss of strict ordering, and output of the certificate data.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        80,
+        81
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Turing program enforces sign and order constraints while shrinking its adjustment step",
+      "unit_artifact_relpath": "depth/units/pugh98_u36.txt",
+      "unit_bytes": 7987,
+      "unit_id": "pugh98_u36",
+      "unit_sha256": "d1915eb6dfa89b9f2656b3aeca59c0bb012ed85840d659d5209d82b12eb5472f",
+      "unit_type": "executable-certificate-search",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u36.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3453,
+          "line_end": 3460,
+          "text": "\n\n\n\n                                        72\n\n<!-- source-page: 79 -->\n\n",
+          "sha256": "5449e9621512a1d52ad162d9fc6937883255eecd08e7a76e6020d119a3442ae1"
+        },
+        "after": {
+          "line_start": 3604,
+          "line_end": 3611,
+          "text": "\n\n                                        75\n\n<!-- source-page: 82 -->\n\nBibliography\n[1] H. M. Edwards, Riemann’s Zeta Function, Academic Press, 1974.\n",
+          "sha256": "bd0d7398e5c44f5e9c68662501fd23c87c2137390554d49380ea70dad044a59b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix D: Turing-adjustment program",
+            "line_end": 3609,
+            "line_start": 3461,
+            "mathematical_role": "Implements the sign and monotonicity constraints on adjusted Gram points with step refinement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3603,
+          "line_start": 3461,
+          "title": "The Turing program enforces sign and order constraints while shrinking its adjustment step",
+          "unit_id": "pugh98_u36",
+          "unit_type": "executable-certificate-search",
+          "why_material": "Implements construction of adjusted Gram samples, bidirectional search for sign-certified values, restart on loss of strict ordering, and output of the certificate data."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This executable search constructs inputs to the mathematical bound; it does not by itself prove the bound or verify the reported run.",
+          "representation_dependency": "C extraction is largely readable, with formula comments and long lines subject to PDF text-layer risk.",
+          "unit_id": "pugh98_u36"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3452,
+            "line_start": 3282,
+            "title": "The root-counting program escalates difficult Gram points and delegates exceptional blocks",
+            "unit_id": "pugh98_u35",
+            "unit_type": "executable-lower-bound-pipeline",
+            "why_material": "The program header states lower-bound semantics and uncertain-region warnings; the body implements cheap tests, precise fallback, block delegation, accounting, and progress/result reporting."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9dd5421a840cc16bf439775c6ae31e8abee8731125db180f27b39f2155c64b50"
+}

@@ -1,0 +1,533 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "connes2026_rh_past_present",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_connes2026_rh_past_present_e4a9faf3_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Compact support localizes Weil positivity to finitely many primes; real-zero extremizers then form plausible approximants to Xi if their transforms and the true minimizers can be shown to converge together.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "connes2026_rh_past_present_v2_u17",
+          "connes2026_rh_past_present_v2_u21",
+          "connes2026_rh_past_present_v2_u22",
+          "connes2026_rh_past_present_v2_u26"
+        ],
+        "proposed_limit": "The source does not prove ground-state simplicity/evenness or convergence of the actual minimizers, so this is not a proof of RH.",
+        "source_id": "connes2026_rh_past_present",
+        "synthesis_id": "riemann_v2_within_492deb5bbcbcc869a12466b4",
+        "title": "Finite-prime positivity as an approximation architecture"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the central localization principle used by the later construction.",
+          "line_end": 1263,
+          "line_start": 1199,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependence; sign conventions and Fourier constraints need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The explicit formula yields a quadratic-form criterion equivalent to RH, while support of the test function cuts off all but finitely many local prime terms; the source also notes that numerically proved archimedean positivity lacks a mechanism known to survive adding primes.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Compact support turns global RH into Weil positivity involving finitely many primes at a time",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u17.txt",
+          "unit_bytes": 4191,
+          "unit_id": "connes2026_rh_past_present_v2_u17",
+          "unit_sha256": "4763af8586b155cc6341b62687507312242c974428b03008781a4cae25d86505",
+          "unit_type": "finite-local-positivity-criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Under the source's W_v convention, RH is equivalent to sum_v W_v(g*g*) <= 0 for every smooth compactly supported g on R_+* satisfying g-hat(+i/2)=g-hat(-i/2)=0. Compact support makes W_p(g*g*) vanish for all sufficiently large p, so each instance uses only finitely many primes, while the universal burden over admissible test functions and support scales remains.",
+            "nonparaphrase_operation": "The reading decomposes a global criterion into finite-prime local instances: support localization removes the infinite Euler product from any one evaluation but does not remove the global universal quantifier. Thus finite computability per instance is separated from proof of the whole criterion.",
+            "quality_reason": "The required inequality direction and transform constraints are explicit under the source convention and are retained. Because extraction of formulas and sign conventions is high-risk, no normalization beyond the displayed W_v convention is inferred.",
+            "source_support": "The span displays the equivalence with the <= 0 direction, the two transform-vanishing constraints, the involution and convolution setup, and the fact that W_p vanishes once the relevant support lies inside (p^{-1},p). It also says the numerical archimedean positivity result supplies no conceptual reason expected to persist when prime terms are added.",
+            "speculation_status": "Finite-prime localization is an exact reformulation, not a proof of RH. The span supplies no mechanism guaranteeing that archimedean positivity survives addition of the prime-local contributions."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span explicitly preserves the unproved convergence gate and proposed Hurwitz passage.",
+          "line_end": 1501,
+          "line_start": 1417,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula and numerical-table dependence; exact values need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Compact support makes the quadratic form computable from finitely many prime powers; existence and a simplicity-evenness condition give an extremizer whose Mellin zeros lie on the critical line, while numerical agreement suggests but does not prove convergence to zeta zeros.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A constrained Weil-form minimizer from finitely many primes produces a transform with line-constrained zeros",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u21.txt",
+          "unit_bytes": 5654,
+          "unit_id": "connes2026_rh_past_present_v2_u21",
+          "unit_sha256": "545fbcca82795f9eb2d82a4c9f45d921a786c7f5706b2d2c7ecc5251bc68885f",
+          "unit_type": "finite-prime-extremal-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u21.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The extremizer compresses finite local arithmetic into one analytic function with an a priori real-zero property, offering a controlled sequence of surrogate spectra.",
+            "nonparaphrase_operation": "The Weil quadratic form, its ground state, Mellin transform, and Hurwitz theorem form the bridge from finite prime data to candidate zeta-zero limits.",
+            "quality_reason": "Finite support through 13, the quadratic form, existence of a minimizer, conditional real-zero theorem, first-fifty numerical agreement, unproved convergence, and proposed Hurwitz passage are explicit. The output repeatedly marks numerical agreement and expected convergence as non-proof.",
+            "source_support": "For functions supported in [1,13], the autocorrelation entering the explicit formula uses only prime powers through 13. A normalized minimizer eta exists; under uniqueness, simplicity, and evenness conditions its Mellin-transform zeros lie on the critical line. Computation reports close agreement of the first fifty such zeros with zeta zeros, and proposes increasing the support followed by Hurwitz.",
+            "speculation_status": "It is unproved that the extremizers or their transforms converge to Xi; the real-zero theorem also needs simplicity and evenness of the minimum. The proposed mechanism and open gate are explicit; numerical values and exact normalization are PDF-dependent. Calling the extremizer a compression of finite arithmetic into a surrogate spectrum is a reasonable conceptual synthesis. Numerical values and normalization are PDF-dependent; simplicity/evenness/uniqueness are indispensable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Simplicity, isolation, and evenness are indispensable hypotheses.",
+          "line_end": 1560,
+          "line_start": 1517,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The interval normalization is formula-sensitive but recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 6.1 supplies the abstract real-zero engine for every finite support scale and explains the finite-matrix self-adjoint approximation and Hurwitz limit used in computation.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A simple even ground state of a translation-kernel quadratic form has a real-zero Fourier transform",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u22.txt",
+          "unit_bytes": 3964,
+          "unit_id": "connes2026_rh_past_present_v2_u22",
+          "unit_sha256": "701fcd2de641b128cebf5f2cd639a74ad19fcafee6d7df4ed994cceaa2ea7bcb",
+          "unit_type": "real-zero-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u22.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Translation structure and ground-state rigidity are converted into zero geometry of a transform; finite self-adjoint approximants make reality stable under passage to the limit.",
+            "nonparaphrase_operation": "The eigenfunction's Fourier transform bridges a variational spectral problem to an entire function with constrained zeros.",
+            "quality_reason": "Theorem 6.1's lower-bounded self-adjoint operator, translation kernel, simple isolated minimum, even eigenfunction, real Fourier zeros, finite matrices, rank-one perturbation, and Hurwitz limit are explicit. The output preserves every crucial hypothesis instead of treating real zeros as automatic.",
+            "source_support": "Theorem 6.1 assumes a lower-bounded self-adjoint operator on a finite interval with kernel D-tilde(x-y), whose spectral minimum is simple and isolated with even eigenfunction eta. It concludes that eta-hat has only real zeros, via special finite matrices, self-adjoint rank-one perturbations, and a Hurwitz limit.",
+            "speculation_status": "Simplicity, isolation, and evenness are indispensable and are not automatically established for the restricted Weil form. The theorem statement and proof outline are clear; interval normalization and finite-matrix details are outside the span. Describing ground-state rigidity as converted into transform zero geometry accurately summarizes the theorem. Interval normalization and finite-matrix construction details are outside the span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserving this separation prevents the convergent model sequence from being mistaken for a proof of RH.",
+          "line_end": 1779,
+          "line_start": 1756,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The strip width and error exponent require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source proves uniform convergence of the candidate transforms on closed substrips, then isolates two missing facts: simplicity/evenness of the restricted Weil ground state and a strong comparison between the candidate and that state.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The prolate candidate converges to Xi, but identification with the true Weil minimizer remains open",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u26.txt",
+          "unit_bytes": 1305,
+          "unit_id": "connes2026_rh_past_present_v2_u26",
+          "unit_sha256": "d6ae480a188d7fc1ef5b2645a9891c50c2b930fc869dcf6418e57509c1bc6a53",
+          "unit_type": "convergence-with-explicit-gap",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u26.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analytic convergence and variational identification are separate links: the first identifies the target function, while the second would transfer the line-zero invariant to the approximants used in the limit.",
+            "nonparaphrase_operation": "Prolate-to-Hermite convergence gives k_lambda-hat to Xi; the missing bridge is k_lambda to the true restricted-Weil ground state theta_x.",
+            "quality_reason": "Uniform convergence on closed substrips and the two remaining facts—simple/even Weil ground state and strong candidate/ground-state comparison—are explicit. The output does not claim candidate convergence alone proves RH; its Hurwitz language is conditioned by the missing real-zero identification.",
+            "source_support": "The source states that the Fourier transforms of k_lambda converge to Xi uniformly on closed substrips of |Im z|<1/2, with an explicit type of boundary-dependent error. To apply the real-zero theorem, it still requires simplicity and evenness of the smallest Weil eigenvector and a sufficiently strong comparison of k_lambda with that eigenvector.",
+            "speculation_status": "The two missing facts are explicit, so convergence of the candidate sequence must not be mistaken for a proof of RH. The logical gap is clear; the exact strip error and scaling lambda=sqrt(x) are formula-sensitive. Separating analytic convergence from variational identification correctly isolates two logically distinct links. The exact strip error and lambda/sqrt(x) scaling are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+        "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The same near intersection of time and frequency subspaces produces localized Hermite replacements, near-null Weil vectors, and trace-formula positivity at archimedean and semilocal scales.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "connes2026_rh_past_present_v2_u23",
+          "connes2026_rh_past_present_v2_u24",
+          "connes2026_rh_past_present_v2_u25",
+          "connes2026_rh_past_present_v2_u27",
+          "connes2026_rh_past_present_v2_u28"
+        ],
+        "proposed_limit": "The bridge supplies structure and numerical approximation, not the missing comparison theorem.",
+        "source_id": "connes2026_rh_past_present",
+        "synthesis_id": "riemann_v2_within_f0db6b6eaeef57cb3fa1d6da",
+        "title": "Prolate waves bridge information theory and Weil positivity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the global model later replaced by prolate-localized modes.",
+          "line_end": 1613,
+          "line_start": 1562,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; the kernel and normalization need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Poisson symmetry and the summation map E convert Xi into the Fourier transform of the unique integral-zero combination of the zeroth and fourth Hermite modes, giving a finite-mode target for localization.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Riemann's Xi kernel is a summation image of a two-Hermite combination",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u23.txt",
+          "unit_bytes": 3036,
+          "unit_id": "connes2026_rh_past_present_v2_u23",
+          "unit_sha256": "e6cb5d655b729c2af0e550e97004e1b42be511fe4bcf1cc575f4d9ea98c44e1b",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u23.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Poisson symmetry and Fourier eigenmodes replace an infinite-looking theta kernel by a low-dimensional source before applying the arithmetic summation map E.",
+            "nonparaphrase_operation": "Hermite modes bridge harmonic-oscillator spectral structure to the theta kernel; E bridges the real-line function h to the multiplicative Xi kernel.",
+            "quality_reason": "Xi as the Fourier transform of k, k=E(h), the harmonic oscillator, Fourier-invariant Hermite modes, and the unique integral-zero h0/h4 combination are explicit. The output does not claim that the representation itself forces real zeros or compact support.",
+            "source_support": "Riemann's theta expression gives Xi as the Fourier transform of an even kernel k. With E(f)(u)=u^{1/2} sum_{n>=1} f(nu), the source writes k=E(h), where h is, up to scale, the unique linear combination of harmonic-oscillator eigenfunctions h0 and h4 having zero integral.",
+            "speculation_status": "This global representation does not by itself give real zeros or a compactly supported vector suitable for finite Weil forms. The representation is clear; exact kernel constants and Fourier normalization require scan verification. Calling this a low-dimensional source before arithmetic summation is a reasonable description of the representation. Kernel constants and Fourier normalization are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The two even modes corresponding to Hermite indices zero and four are the ones used next.",
+          "line_end": 1686,
+          "line_start": 1615,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Operator formulas and eigenvalue indexing are scan-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The commuting prolate differential operator turns two noncommuting projections into a common spectral problem, with exponentially near-one eigenvalues quantifying functions that are almost both time- and band-limited.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prolate eigenfunctions diagonalize the near intersection of time and frequency windows",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u24.txt",
+          "unit_bytes": 4448,
+          "unit_id": "connes2026_rh_past_present_v2_u24",
+          "unit_sha256": "1a8077f18bb359718599f9e4da8b62a44fc0be435bea97baef63a30925b405f0",
+          "unit_type": "time-frequency-localization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u24.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A third commuting operator makes the approximate intersection of two noncommuting constraints spectrally visible and ordered.",
+            "nonparaphrase_operation": "The prolate operator bridges Shannon time-band limitation to localized substitutes for the Hermite modes used in the Xi representation.",
+            "quality_reason": "The noncommuting time/band projections, commuting prolate operator, simple ordered concentration spectrum, prolate eigenfunctions, and exponentially near-one h0/h4 eigenvalues are explicit. The output preserves that exact simultaneous time and band limitation is impossible.",
+            "source_support": "The time projection P_lambda and its Fourier-conjugate band projection do not commute, but the compressed Fourier transform commutes with the prolate differential operator PW_lambda. Its even eigenfunctions h_{2n,lambda} diagonalize P_lambda P-hat_lambda P_lambda; the modes corresponding to h0 and h4 have Fourier eigenvalues tending exponentially to one.",
+            "speculation_status": "Exact simultaneous time and band limitation is impossible for a nonzero function; the construction provides near, not exact, intersection. The operator mechanism is explicit; indexing, signs, and bandwidth normalization are scan-sensitive. Calling the commuting differential operator a way to order the approximate intersection is a faithful synthesis. Indexing, signs, and bandwidth normalization are scan-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a conceptual approximation, calibrated numerically, not yet an eigenvector theorem.",
+          "line_end": 1753,
+          "line_start": 1689,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replacing Hermite modes by localized prolate modes and applying E yields a compactly supported vector; the impossibility of exact simultaneous support explains why it is only near the global radical and why its Weil value is extremely small.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            29
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Poisson duality converts prolate near-intersection into a near-null vector of the restricted Weil form",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u25.txt",
+          "unit_bytes": 4425,
+          "unit_id": "connes2026_rh_past_present_v2_u25",
+          "unit_sha256": "3e877319e778a72f2d403c84e0bab404af9ca4761debeedc187a3b4036fc35af",
+          "unit_type": "near-radical-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u25.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The global radical relation is approximated by the best attainable joint localization; the concentration defect quantitatively measures the obstruction.",
+            "nonparaphrase_operation": "Prolate modes, Poisson duality, and E bridge additive time-frequency localization to multiplicative-support near-null vectors of the Weil form.",
+            "quality_reason": "The restricted Weil operator, numerical eigenvalue comparison, prolate h0/h4 candidate, Poisson identity, support logic, zero exact intersection, and extremely small Weil value are explicit. The output explicitly calls the candidate numerically motivated and not proved to be the true minimizer.",
+            "source_support": "For the restricted Weil operator A_lambda, numerical smallest eigenvalues are compared with prolate concentration defects. The candidate k_lambda=E(h_lambda) uses the integral-zero combination of h0,lambda and h4,lambda. Poisson's formula relates E(f-hat)(x) to E(f)(x^{-1}); near simultaneous support of f and f-hat puts k_lambda in [lambda^{-1},lambda] and makes its Weil value extremely small.",
+            "speculation_status": "The candidate is numerically motivated and not proved to be the true lowest eigenvector; exact projection intersection is zero. The conceptual approximation is well stated, but precise eigenvalue asymptotics and normalizations are formula-dependent. Interpreting the concentration defect as measuring the near-radical obstruction is reasonable and source-aligned. Precise eigenvalue asymptotics and normalizations are formula-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The support and transform-vanishing constraints in Theorem 7.1 are essential.",
+          "line_end": 1849,
+          "line_start": 1782,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; trace signs and projection notation must be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Scaling kernels translate geometric correspondences into operators; the two-cutoff trace formula then exposes the same projections as communication theory, with the Sonin complement providing a positive contribution to the Weil form.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Time and frequency projections rewrite the archimedean explicit formula as a trace identity",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u27.txt",
+          "unit_bytes": 4499,
+          "unit_id": "connes2026_rh_past_present_v2_u27",
+          "unit_sha256": "ff91d59e37f1d074ddac30cda6a205f405fd6f1f2d8684a7c6854e78ae4b209f",
+          "unit_type": "trace-formula-information-bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u27.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Time-frequency exclusion turns an opaque local explicit-formula term into operator geometry; positivity is localized in a subspace avoiding both windows.",
+            "nonparaphrase_operation": "Schwartz kernels bridge geometric correspondences to operators, while the time/frequency projections bridge the trace formula to information-theoretic localization.",
+            "quality_reason": "Scaling kernels, independent time/frequency projections, the archimedean trace identity, Sonin space, and the constrained positivity inequality are explicit. The output preserves the support and transform-vanishing hypotheses and the absence of prime contributions.",
+            "source_support": "Scaling kernels represent Frobenius correspondences on adelic data. On even L2(R), the two-parameter archimedean trace formula writes W_infinity(f) as log(TW)f(1) plus the trace of the scaling action against 1-P_T-P-hat_W. Under compact-support and transform-vanishing hypotheses, a theorem lower-bounds W_infinity(g*g*) by a positive trace through the Sonin projection.",
+            "speculation_status": "The support and Fourier-vanishing constraints are essential, and this archimedean result does not yet include prime contributions. The bridge and positivity source are clear; projection notation and trace signs need scan verification. Describing the Sonin complement as the concrete positivity source is directly supported by the theorem and surrounding prose. Projection notation, trace signs, and transform points require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source proposes this as a route to comparing the true minimizer with the prolate candidate.",
+          "line_end": 1906,
+          "line_start": 1850,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high formula and notation dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Crossed-product sheaves encode the quotient geometry compatibly with Spec Z, and the semilocal trace formula extends the archimedean projection identity by exactly the selected finite set of prime contributions.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Semilocal adele quotients add finitely many prime orbits to the time-frequency trace formula",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u28.txt",
+          "unit_bytes": 3785,
+          "unit_id": "connes2026_rh_past_present_v2_u28",
+          "unit_sha256": "f70f1827bc282473630d767cd483ced571783b30e6135ccfdb4cf7765bf24578",
+          "unit_type": "semilocal-geometric-extension",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u28.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The construction provides a controlled ladder from the archimedean model to arithmetic reality, adding finitely many primes without jumping directly to an uncontrolled global quotient.",
+            "nonparaphrase_operation": "Crossed-product sheaves bridge semilocal quotient geometry to operator algebras; the semilocal trace formula bridges those operators to selected prime terms in the Weil form.",
+            "quality_reason": "The semilocal quotient, S-units, crossed-product sheaf, compatibility with Spec Z, and trace formula adding the selected finite places are explicit. The output keeps the proposed minimizer comparison explicitly unproved.",
+            "source_support": "For a finite S containing infinity, the semilocal adele class space A_S/Gamma_S is encoded by the crossed product of its Bruhat-Schwartz algebra with S-units, organized as a sheaf over Spec Z. The semilocal trace formula replaces the archimedean local term by minus the sum over v in S and uses corresponding time and frequency projections.",
+            "speculation_status": "This is proposed as a route to compare the true minimizer with the prolate candidate; the required comparison is not proved in the span. Very high notation and formula dependence, but the finite-place extension mechanism and its intended role are explicit. Calling the construction a controlled ladder from the archimedean case to finitely many primes is a reasonable synthesis of its stated purpose. The algebra, projection, and sign notation are highly formula-dependent."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+        "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Unfolded GUE statistics describe local correlations, while prolate/Dirac constructions target ultraviolet counting and heat behavior; agreement at one level does not identify a full fixed operator.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "connes2026_rh_past_present_v2_u12",
+          "connes2026_rh_past_present_v2_u13",
+          "connes2026_rh_past_present_v2_u29",
+          "connes2026_rh_past_present_v2_u30"
+        ],
+        "proposed_limit": "Most number-field random-matrix predictions and any exact zeta-spectrum identification remain conjectural.",
+        "source_id": "connes2026_rh_past_present",
+        "synthesis_id": "riemann_v2_within_970619360f95b1e1f53fd698",
+        "title": "Local random-matrix evidence and global spectral models answer different questions"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserves both empirical support and the stated limitation.",
+          "line_end": 1004,
+          "line_start": 940,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Spacing normalizations should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Pair correlation and computations support GUE statistics only after rescaling by the changing zero density; that necessary unfolding rules out interpreting the match as a fixed finite-density operator without further structure.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "GUE agreement requires height-dependent unfolding and is therefore intrinsically local",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u12.txt",
+          "unit_bytes": 4383,
+          "unit_id": "connes2026_rh_past_present_v2_u12",
+          "unit_sha256": "bdd32f20d526d17ccf6d757bdfc8c8866c935e47ff1f6b324dbd6956c615d34c",
+          "unit_type": "random-matrix-localization-limit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Unfolding removes a varying macroscopic density to expose universal local fluctuations; it deliberately forgets global number-theoretic variation.",
+            "nonparaphrase_operation": "The local mean-spacing coordinate is the bridge from zeta ordinates to unit-mean random-matrix eigenvalue spacings.",
+            "quality_reason": "Pair correlation, Odlyzko evidence, increasing zero density, local unfolding, unit-mean spacing, and matrix size near log(T/2pi) are explicit. The span itself concludes that the comparison is local and not a simple fixed spectral operator. The output foregrounds the necessary operation and its information loss rather than merely repeating GUE agreement.",
+            "source_support": "Montgomery's conjectured pair correlation matches the GUE kernel, and Odlyzko's high-zero computations support spacing and higher-correlation predictions. Because zeta-zero density grows like log(T/2pi)/(2pi), spacings near T are rescaled by this factor and compared with matrices of size roughly log(T/2pi).",
+            "speculation_status": "The match is statistical and local. The required rescaling prevents interpreting it as the spectrum of a simple fixed finite-density operator. Empirical support and the limitation are clear; exact spacing normalizations should be scan-checked. Saying unfolding forgets macroscopic arithmetic variation is a reasonable description of normalization by local mean density. Exact spacing normalization should be scan-checked."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Classical number-field predictions remain conjectural.",
+          "line_end": 1031,
+          "line_start": 1014,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The family viewpoint moves beyond one zeta function: arithmetic structure selects unitary, orthogonal, or symplectic statistics, with Frobenius and equidistribution making the finite-field case rigorous.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Katz-Sarnak assigns matrix symmetry by L-function family and proves the finite-field model",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u13.txt",
+          "unit_bytes": 1653,
+          "unit_id": "connes2026_rh_past_present_v2_u13",
+          "unit_sha256": "792273aaa1eee2ea0dc9cdd2c9ac22a3b791105de587ec535750070525074086",
+          "unit_type": "family-symmetry-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The family is the correct comparison object: shared arithmetic structure controls symmetry, while increasing conductor supplies the asymptotic parameter.",
+            "nonparaphrase_operation": "Frobenius conjugacy classes bridge L-function zeros over finite fields to compact-group eigenvalues.",
+            "quality_reason": "Family-dependent unitary/orthogonal/symplectic symmetry, conductor scaling, finite-field Frobenius, and Deligne equidistribution are explicit. The output preserves the proved finite-field versus conjectural number-field split.",
+            "source_support": "Katz-Sarnak predicts normalized low-lying zeros in families to follow scaling limits of classical compact matrix groups, with symmetry type determined by the family. For finite-field families, Frobenius eigenvalues and Deligne equidistribution make this correspondence rigorous.",
+            "speculation_status": "The number-field density conjectures remain conjectural; the proved finite-field model does not itself prove classical RH or its statistics. Low for the stated family principle and finite-field/proved versus number-field/conjectural split. Calling the family the correct comparison object is the source's central conceptual claim."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The heat theorem assumes RH.",
+          "line_end": 1974,
+          "line_start": 1910,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact coefficients are heavily formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Low eigenvalues encode the finite-prime zero approximations, whereas high eigenvalues determine heat asymptotics; the divergent factorial heat expansion warns that ultraviolet agreement is asymptotic rather than a convergent reconstruction.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            33
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Infrared approximants and ultraviolet asymptotics test different parts of a candidate zeta spectrum",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u29.txt",
+          "unit_bytes": 4415,
+          "unit_id": "connes2026_rh_past_present_v2_u29",
+          "unit_sha256": "2183db8f8c25b3d02150abbebeddcecc01b9d179936637ae05aab6a12a1a4fd8",
+          "unit_type": "spectral-regime-separation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u29.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Spectral evidence must be indexed by scale: IR agreement concerns global low modes, whereas UV agreement constrains counting laws and infinitesimal invariants.",
+            "nonparaphrase_operation": "Rank-one perturbation determinants bridge finite-prime approximants to Xi in the IR; the heat trace bridges high eigenvalues to asymptotic spectral invariants in the UV.",
+            "quality_reason": "The IR rank-one models, proposed normalized determinant convergence, RH-conditional UV heat theorem, Bernoulli/Euler coefficients, and factorial divergence are explicit. The output does not promote either regime's agreement to full spectral equality.",
+            "source_support": "The span distinguishes low-lying finite-prime operators and their regularized determinants from a high-energy operator whose heat trace is expanded under RH. The stated heat coefficients involve Bernoulli and Euler numbers and grow factorially, so the heat expansion is asymptotic rather than convergent.",
+            "speculation_status": "The heat theorem assumes RH, factorial divergence prevents convergent reconstruction, and agreement in either regime does not prove equality of spectra. The regime separation is clear; exact heat coefficients are heavily formula-dependent. Reading IR and UV as testing low-mode identity versus high-energy invariants is source-consistent. Exact heat coefficients are heavily formula-dependent, and the heat theorem assumes RH."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The special lambda choices and Darboux deformation are part of the construction.",
+          "line_end": 2024,
+          "line_start": 1978,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; signs, square roots, and parameter values should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Restricting the prolate operator to the Sonin space yields discrete negative spectrum whose square-root Dirac family has the same ultraviolet behavior as zeta zeros, while the source carefully claims asymptotic matching rather than equality of spectra.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            34
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A self-adjoint prolate extension matches the high-energy counting of zeta zeros",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u30.txt",
+          "unit_bytes": 3657,
+          "unit_id": "connes2026_rh_past_present_v2_u30",
+          "unit_sha256": "4f3964f3ed87d8e6bc736a512c55bc2e6e3a80cc9800a9f360130753681ab38d",
+          "unit_type": "ultraviolet-spectral-model",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u30.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The model targets the archimedean contribution at high energy, where matching an asymptotic counting law is a weaker but structurally meaningful invariant.",
+            "nonparaphrase_operation": "The prolate differential operator, Sonin restriction, and Dirac square root bridge time-frequency geometry to a self-adjoint high-energy zeta model.",
+            "quality_reason": "The natural self-adjoint prolate extension, Sonin restriction, discrete negative spectrum, special lambda choices, Dirac/Darboux construction, UV matching, positive/trivial-zero association, and square-root ambiguity are explicit. The output carefully says asymptotic matching rather than identical spectra or a completed Hilbert-Polya construction.",
+            "source_support": "A natural self-adjoint extension of the prolate operator has discrete spectrum and preserves the Sonin space. For special lambda values, the negative eigenvalues of its restriction, after a square-root/Dirac construction and Darboux deformation, have the same ultraviolet behavior as the nontrivial zeta zeros; positive spectrum is associated with trivial-zero behavior.",
+            "speculation_status": "The source claims ultraviolet asymptotic matching, not equality of eigenvalues or a complete Hilbert-Polya operator; the square root has deformation ambiguity. Signs, special lambda choices, and square-root parameters require scan verification; the asymptotic-only epistemic status is explicit. Interpreting the model as targeting an archimedean high-energy component is the source's stated suggestion, not an equality claim. Signs, square roots, special parameters, and deformation details require scan verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+        "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08"
+      }
+    }
+  ]
+}

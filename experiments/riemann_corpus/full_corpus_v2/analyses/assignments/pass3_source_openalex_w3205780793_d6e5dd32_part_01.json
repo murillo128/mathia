@@ -1,0 +1,2721 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w3205780793_d6e5dd32_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w3205780793",
+  "unit_count": 19,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the transform identity, the continuous Nyman-Beurling theorem, and its finite-error formulation; lines 49-97 supply notation only.",
+      "line_end": 125,
+      "line_start": 98,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on equations (1.1)-(1.3), whose mathematical content is readable but whose extracted fractions and braces should be PDF-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The displayed Mellin identity makes dilation multiplicative in the transform variable and turns density of fractional-part dilates in L2 into an RH-equivalent closure problem.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mellin transform turns fractional-part dilation into zeta-weighted approximation",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u001.txt",
+      "unit_bytes": 1858,
+      "unit_id": "openalex_w3205780793_u001",
+      "unit_sha256": "0c79cc3c16e0f8286141dada95b194878001588cebb9df62ea50ddeab81c9a53",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u001.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 90,
+          "line_end": 97,
+          "text": "          (resp. Var(X)). We also set kXkp = (EX p )1/p when X ∈ Lp+ (Ω).\n        • We write X ∼ Γ(β, λ) to mean that the r.v. X is Gamma distributed with parameters\n                                        β                β\n          (β, λ). In that case, EX =       and Var(X) = 2 . The particular case of the exponential\n                                        λ                λ\n          law E(λ) = Γ(1, λ) of parameter λ will be one basic example throughout the paper. Recall\n          that if X ∼ E(1) and λ > 0, then X/λ ∼ E(λ).\n\n",
+          "sha256": "71f1dcc58d9f78ba04c265d93fe1a2b46e02495c8cf10f288470d96e805beac3"
+        },
+        "after": {
+          "line_start": 126,
+          "line_end": 133,
+          "text": "\n<!-- source-page: 3 -->\n\nON PROBABILISTIC NYMAN-BEURLING CRITERIA                                 3\n\n\n   Equation (1.3) is reminiscent to the following convergence result:\n                                    Xn       \u001a \u001b\n",
+          "sha256": "2090f3e429a61a35053b7f025972423e4455e7434ad1875593cc904e348f4100"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deterministic criteria",
+            "line_end": 174,
+            "line_start": 98,
+            "mathematical_role": "Builds the Mellin-transform bridge to zeta, recalls continuous and discrete Nyman-Beurling criteria, and introduces the general strong Muntz-transform criterion and its compact-support obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 125,
+          "line_start": 98,
+          "title": "Mellin transform turns fractional-part dilation into zeta-weighted approximation",
+          "unit_id": "openalex_w3205780793_u001",
+          "unit_type": "equivalent-criterion",
+          "why_material": "The displayed Mellin identity makes dilation multiplicative in the transform variable and turns density of fractional-part dilates in L2 into an RH-equivalent closure problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the transform identity, the continuous Nyman-Beurling theorem, and its finite-error formulation; lines 49-97 supply notation only.",
+          "representation_dependency": "Depends on equations (1.1)-(1.3), whose mathematical content is readable but whose extracted fractions and braces should be PDF-checked.",
+          "unit_id": "openalex_w3205780793_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 155,
+            "line_start": 132,
+            "title": "Reciprocal-integer dilates strengthen the criterion and expose quantitative distance",
+            "unit_id": "openalex_w3205780793_u002",
+            "unit_type": "discretization-and-distance",
+            "why_material": "The move from arbitrary dilations to reciprocal integers yields the Baez-Duarte criterion, an orthogonal-projection distance formulation, conjectural rate information, and a link from approximation error to zero-free regions."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 97,
+              "line_start": 49,
+              "reason": "Definitions and conventions needed to interpret later formulas, but routine as standalone material."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u001",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u001",
+          "spontaneous_reading": "The Mellin transform diagonalizes dilation: each fractional-part function acquires the factor θ^sζ(s)/s, so RH becomes a closure question in L2 rather than a direct assertion about zeros."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u001",
+          "source_grounded_mathematics": "The source states that RH is equivalent to χ lying in the H-closure of the functions ρθ(t)={θ/t}, equivalently to arbitrarily small finite L2 approximation error.",
+          "conceptual_reading": "The criterion replaces zero location by completeness of a dilation-generated family; the transform identity explains why that family retains zeta's zero structure.",
+          "representation_or_bridge": "Mellin transform is the bridge from scale in t to multiplication by θ^s and ζ(s), while Hilbert-space closure converts the criterion into approximation geometry.",
+          "boundary_or_failure": "The span criterion is quoted rather than proved here, and this unit gives no constructive rate or method for finding the coefficients and dilations.",
+          "uncertainty": "The mathematical roles are clear, but the extracted fractions, braces, and the displayed critical-line value require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The failed L2 convergence of the naive Mobius partial sums motivates projection rather than literal series convergence.",
+      "line_end": 155,
+      "line_start": 132,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The criterion and distance discussion are prose-stable; the extracted summation and asymptotic formulas require notation-preserving rendering.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The move from arbitrary dilations to reciprocal integers yields the Baez-Duarte criterion, an orthogonal-projection distance formulation, conjectural rate information, and a link from approximation error to zero-free regions.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reciprocal-integer dilates strengthen the criterion and expose quantitative distance",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u002.txt",
+      "unit_bytes": 1725,
+      "unit_id": "openalex_w3205780793_u002",
+      "unit_sha256": "a985f42a7ada6ccce457e0c2732b91bfab1a0e4f4f4e572596d6896126e384c8",
+      "unit_type": "discretization-and-distance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u002.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 124,
+          "line_end": 131,
+          "text": "                                0                     t\n                                                   k=1\n\n<!-- source-page: 3 -->\n\nON PROBABILISTIC NYMAN-BEURLING CRITERIA                                 3\n\n\n",
+          "sha256": "84ff34bf2b0c5894be9093bc8bcd4b537e956f076d240e849b4501e8f7d09d21"
+        },
+        "after": {
+          "line_start": 156,
+          "line_end": 163,
+          "text": "   A more general criterion has been stated in 2005 by Báez-Duarte, see [BD05]. It is based on\nthe Müntz transform\n                                X           Z\n                                           1 +∞\n(1.6)                 P f (t) =   f (tk) −        f (x)dx, f ∈ L1 (0, ∞),\n                                           t 0\n                                k≥1\n\n",
+          "sha256": "dcce1611e64b613f3b952b15b761931ccc7712f669f66858e9f5d9bb8328444e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deterministic criteria",
+            "line_end": 174,
+            "line_start": 98,
+            "mathematical_role": "Builds the Mellin-transform bridge to zeta, recalls continuous and discrete Nyman-Beurling criteria, and introduces the general strong Muntz-transform criterion and its compact-support obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 155,
+          "line_start": 132,
+          "title": "Reciprocal-integer dilates strengthen the criterion and expose quantitative distance",
+          "unit_id": "openalex_w3205780793_u002",
+          "unit_type": "discretization-and-distance",
+          "why_material": "The move from arbitrary dilations to reciprocal integers yields the Baez-Duarte criterion, an orthogonal-projection distance formulation, conjectural rate information, and a link from approximation error to zero-free regions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The failed L2 convergence of the naive Mobius partial sums motivates projection rather than literal series convergence.",
+          "representation_dependency": "The criterion and distance discussion are prose-stable; the extracted summation and asymptotic formulas require notation-preserving rendering.",
+          "unit_id": "openalex_w3205780793_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 125,
+            "line_start": 98,
+            "title": "Mellin transform turns fractional-part dilation into zeta-weighted approximation",
+            "unit_id": "openalex_w3205780793_u001",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The displayed Mellin identity makes dilation multiplicative in the transform variable and turns density of fractional-part dilates in L2 into an RH-equivalent closure problem."
+          },
+          {
+            "line_end": 174,
+            "line_start": 156,
+            "title": "Muntz-transform criterion isolates compact support as the obstruction to analytic kernels",
+            "unit_id": "openalex_w3205780793_u003",
+            "unit_type": "obstruction-and-extension",
+            "why_material": "The general strong criterion reframes RH through approximation by dilated Muntz transforms and pinpoints why the known converse excludes noncompact analytic kernels, setting up the paper's controlled-tail repair."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Quantitative reciprocal-integer approximants remain effective after sufficiently small random perturbations because variance controls both admissible support and the low-frequency Mellin error, while a tuned frequency cutoff handles the tail.",
+            "limit": "The stated variance rate, mean matching, nondegeneracy, and RH-dependent Lindelof input are essential in the proved result; no generic robustness theorem is shown.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u002",
+              "openalex_w3205780793_u009",
+              "openalex_w3205780793_u010",
+              "openalex_w3205780793_u011"
+            ],
+            "title": "Stability of a discrete RH criterion under concentrated randomization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u002",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u002",
+          "spontaneous_reading": "Restricting dilations to reciprocal integers replaces a misleading pointwise Möbius series by orthogonal projection, making approximation quality a quantitative distance d_n."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u002",
+          "source_grounded_mathematics": "The source states the Báez-Duarte equivalence χ∈closure span{ρ1/n}; with χ_n the projection onto the finite span, RH is equivalent to d_n=||χ-χ_n|| tending to zero.",
+          "conceptual_reading": "Projection extracts the best finite approximant from a discrete dictionary even though the naive Möbius partial sums fail to converge in H.",
+          "representation_or_bridge": "The bridge is from a discrete family of reciprocal-scale fractional parts to Hilbert-space distance; small distance also carries zero-free-region information.",
+          "boundary_or_failure": "The asserted d_n squared asymptotic is conjectural, while the cited lower bound supplies only one constraint; pointwise convergence does not imply H-convergence.",
+          "uncertainty": "The prose-level criterion is stable, but subscripts, sums, and the exact asymptotic typography should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the definition of the Muntz transform, the good-kernel theorem, its Mellin nonvanishing condition, and the stated open limitation.",
+      "line_end": 174,
+      "line_start": 156,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the extracted Muntz formula (1.6) and span statement (1.7); prose resolves their roles, but exact typography should be verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The general strong criterion reframes RH through approximation by dilated Muntz transforms and pinpoints why the known converse excludes noncompact analytic kernels, setting up the paper's controlled-tail repair.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Muntz-transform criterion isolates compact support as the obstruction to analytic kernels",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u003.txt",
+      "unit_bytes": 1396,
+      "unit_id": "openalex_w3205780793_u003",
+      "unit_sha256": "004656981189e73c6b153b23a708558b1b5d0e6fbc99ea46c4121e6722675f8f",
+      "unit_type": "obstruction-and-extension",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u003.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 148,
+          "line_end": 155,
+          "text": "statement is actually conjectured, namely\n                                                  C\n                                          d2n ∼        ,\n                                                log(n)\nwhere C = 2 + γ − log(4π), see [BS04]. Burnol proved the inequality d2n ≥ C+o(1)\n                                                                            log(n) for the same\nconstant C, see [Bur02]. The inequality dn < ε provides zero-free regions for ζ, see [Nik95] for\ndetails when considering NB, and [DFMR13] for more general results on Dirichlet series.\n",
+          "sha256": "984626a940df1c3ca479bd39dab235dc4c5d8863faabb44936c473390a4c0039"
+        },
+        "after": {
+          "line_start": 175,
+          "line_end": 182,
+          "text": "1.3. The probabilistic and general criteria. The basic idea of our work is to randomize the\nvariables θk in NB, i.e. by replacing them by random variables. More precisely:\nDefinition 1. Given a family (Zk,n )n≥1,1≤k≤n of random variables and a family of coefficients\n(ck,n )n≥1,1≤k≤n , we consider the distances\n                                 Z ∞          Xn       \u001a      \u001b!2\n                       2                                 Zk,n\n                     Dn = E            χ(t) −     ck,n            dt (pNB),\n                                  0                        t\n",
+          "sha256": "6241e522c408b0d560294b2df7ab79ca153f88c2f6c4db3fbc4a987adf34deb5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deterministic criteria",
+            "line_end": 174,
+            "line_start": 98,
+            "mathematical_role": "Builds the Mellin-transform bridge to zeta, recalls continuous and discrete Nyman-Beurling criteria, and introduces the general strong Muntz-transform criterion and its compact-support obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 174,
+          "line_start": 156,
+          "title": "Muntz-transform criterion isolates compact support as the obstruction to analytic kernels",
+          "unit_id": "openalex_w3205780793_u003",
+          "unit_type": "obstruction-and-extension",
+          "why_material": "The general strong criterion reframes RH through approximation by dilated Muntz transforms and pinpoints why the known converse excludes noncompact analytic kernels, setting up the paper's controlled-tail repair."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the definition of the Muntz transform, the good-kernel theorem, its Mellin nonvanishing condition, and the stated open limitation.",
+          "representation_dependency": "Depends on the extracted Muntz formula (1.6) and span statement (1.7); prose resolves their roles, but exact typography should be verified.",
+          "unit_id": "openalex_w3205780793_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 155,
+            "line_start": 132,
+            "title": "Reciprocal-integer dilates strengthen the criterion and expose quantitative distance",
+            "unit_id": "openalex_w3205780793_u002",
+            "unit_type": "discretization-and-distance",
+            "why_material": "The move from arbitrary dilations to reciprocal integers yields the Baez-Duarte criterion, an orthogonal-projection distance formulation, conjectural rate information, and a link from approximation error to zero-free regions."
+          },
+          {
+            "line_end": 197,
+            "line_start": 175,
+            "title": "Two inequivalent placements of expectation define pNB and gNB",
+            "unit_id": "openalex_w3205780793_u004",
+            "unit_type": "definition-and-comparison",
+            "why_material": "Placing expectation outside the squared Hilbert error versus inside each random fractional-part function creates distinct criteria, with Jensen's inequality giving pNB implies gNB."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing compact support is made possible by splitting at a moving cutoff and pairing moment control of random dilates with coefficient-weighted rare-tail probabilities, rather than by ignoring the kernel tail.",
+            "limit": "The paper proves sufficiency under condition C; it does not claim C is necessary, and the pNB concentration example explicitly avoids it.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u003",
+              "openalex_w3205780793_u006",
+              "openalex_w3205780793_u013",
+              "openalex_w3205780793_u014",
+              "openalex_w3205780793_u015",
+              "openalex_w3205780793_u016"
+            ],
+            "title": "Coefficient control is a tail-compensation mechanism"
+          },
+          {
+            "claim": "The survival function converts an expected fractional-part dilation into a Muntz transform, so a deterministic strong approximation theorem can construct gNB approximants for X/k.",
+            "limit": "The transfer uses a continuous density to obtain a good kernel and a q-moment with q greater than one to verify coefficient-tail decay.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u003",
+              "openalex_w3205780793_u017",
+              "openalex_w3205780793_u018"
+            ],
+            "title": "Survival functions bridge probabilistic dilation and Muntz approximation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u003",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u003",
+          "spontaneous_reading": "The Müntz transform broadens the dilation dictionary from fractional parts to kernel-dependent functions, while compact support appears as the precise obstruction to using analytic regularizing kernels in the known converse."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u003",
+          "source_grounded_mathematics": "For a good kernel f, RH implies that f lies in the H-closure of the dilates P f(nt); the converse stated here requires compact support and a Mellin transform nonvanishing for one-half<Re(s)<1.",
+          "conceptual_reading": "A kernel can change the approximation representation without discarding the zeta connection, provided its Mellin transform does not introduce zeros in the strip.",
+          "representation_or_bridge": "The Müntz formula links P f to ζ in Mellin space, and dilation of P f supplies the approximation family.",
+          "boundary_or_failure": "This theorem does not cover the converse for noncompact kernels; that omission is explicitly left open and motivates later tail control.",
+          "uncertainty": "The definition of P and the span display are extraction-sensitive, so exact signs, factors, and typography require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the central representation fork for all subsequent arguments.",
+      "line_end": 197,
+      "line_start": 175,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The two nearly identical displayed definitions are vulnerable to extraction loss of distinguishing decorations; verify them against the PDF before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Placing expectation outside the squared Hilbert error versus inside each random fractional-part function creates distinct criteria, with Jensen's inequality giving pNB implies gNB.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two inequivalent placements of expectation define pNB and gNB",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u004.txt",
+      "unit_bytes": 1361,
+      "unit_id": "openalex_w3205780793_u004",
+      "unit_sha256": "7457e2ca677e39e918fc624e065d7fe983fd773286616830812e441917678e54",
+      "unit_type": "definition-and-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u004.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 167,
+          "line_end": 174,
+          "text": "Theorem 3. [BD05, Theorem 1.2] Let f : (0, ∞) → R be a good kernel. If RH holds then\n(1.7)                            f ∈ spanH {t 7→ P f (nt), n ≥ 1} .\nConversely, if (1.7) is satisfied for a good kernel f that is compactly supported and whose Mellin\ntransform has no zeros in the critical strip {1/2 < σ < 1}, then RH holds.\n   The extension of the sufficient criterion for kernels f that are not compactly supported is left\nopen in [BD05]. The compactness assumption prevents from using analytical kernels, which are\ncrucial for regularization and explicit calculations of the Müntz transform. One contribution of\nour paper is the extension of Theorem 3 to a class of non-compactly supported kernels.\n",
+          "sha256": "98a0440c6d2eedb6bdaaaae87718efa676ae3f27c7db984b8d523a720229c59e"
+        },
+        "after": {
+          "line_start": 198,
+          "line_end": 205,
+          "text": "\n\n1.4. Main results and Outline. In Section 2, we show the implication pNB =⇒ RH under an\nassumption (P) that is suited for random variables on (0, 1), but mild enough to be satisfied for\nsome families supported on (0, ∞). The proof of this implication is based on Erdös’ probabilistic\nmethod. In Section 2.3, we study families of random variables that are more and more concentrated\naround 1/k, k ≥ 1. For such families, we prove the equivalence pNB ⇐⇒ RH. The intuitive\nunderlying idea is that the random perturbation around 1/k is sufficiently small to be able to use\n",
+          "sha256": "d80386cc4c63e02bb808cf5dbb280099e1f184f3dfbf957865a4e51908b1e728"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Probabilistic and general criteria; results outline",
+            "line_end": 213,
+            "line_start": 175,
+            "mathematical_role": "Defines pNB and gNB distances, compares them by Jensen, and separates the derandomization, concentration, and controlled-tail proof routes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 197,
+          "line_start": 175,
+          "title": "Two inequivalent placements of expectation define pNB and gNB",
+          "unit_id": "openalex_w3205780793_u004",
+          "unit_type": "definition-and-comparison",
+          "why_material": "Placing expectation outside the squared Hilbert error versus inside each random fractional-part function creates distinct criteria, with Jensen's inequality giving pNB implies gNB."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the central representation fork for all subsequent arguments.",
+          "representation_dependency": "The two nearly identical displayed definitions are vulnerable to extraction loss of distinguishing decorations; verify them against the PDF before reuse.",
+          "unit_id": "openalex_w3205780793_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 174,
+            "line_start": 156,
+            "title": "Muntz-transform criterion isolates compact support as the obstruction to analytic kernels",
+            "unit_id": "openalex_w3205780793_u003",
+            "unit_type": "obstruction-and-extension",
+            "why_material": "The general strong criterion reframes RH through approximation by dilated Muntz transforms and pinpoints why the known converse excludes noncompact analytic kernels, setting up the paper's controlled-tail repair."
+          },
+          {
+            "line_end": 257,
+            "line_start": 214,
+            "title": "Random Beurling functions embed in a product Hilbert space with norm linear in the mean dilation",
+            "unit_id": "openalex_w3205780793_u005",
+            "unit_type": "hilbert-space-construction",
+            "why_material": "The product-space formulation turns random dilates into Hilbert vectors, suggests Gram-determinant structure, and proves that integrability of X suffices with an exact norm proportional to E[X]."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The placement of expectation determines the proof route: pNB supplies a good sample on a positive-probability support event, whereas gNB lacks that samplewise error and instead needs a Mellin argument with explicit tail hypotheses.",
+            "limit": "This comparison is internal to the paper's definitions and assumptions; it does not establish that either route is sharper for arbitrary random families.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u004",
+              "openalex_w3205780793_u007",
+              "openalex_w3205780793_u013"
+            ],
+            "title": "Derandomization versus averaging"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 213,
+              "line_start": 198,
+              "reason": "Outline restates the proof architecture and example classes represented in later exact spans."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u004",
+          "spontaneous_reading": "Moving expectation across the squared Hilbert error creates two genuinely different criteria: pNB controls samplewise error on average, whereas gNB approximates using averaged features."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u004",
+          "source_grounded_mathematics": "pNB places expectation outside the squared norm of χ minus a random fractional-part sum; gNB places expectation on each fractional-part function before taking the deterministic squared norm. Jensen gives pNB implies gNB.",
+          "conceptual_reading": "The placement of averaging determines which information survives: pNB retains realizations and supports derandomization, while gNB retains only mean feature functions.",
+          "representation_or_bridge": "Conditional on the displayed definitions, Jensen's inequality is the bridge between the stronger samplewise representation and the weaker averaged one.",
+          "boundary_or_failure": "No reverse implication is established, and the two criteria should not be conflated merely because their formulas look nearly identical.",
+          "uncertainty": "Extraction can erase the decorations distinguishing the two distances, so the exact displays must be PDF-checked before reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Fubini survival identity and scaling proof that make the random construction rigorous.",
+      "line_end": 257,
+      "line_start": 214,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The norm constant and changes of variables are formula-dependent but recoverable; page-layout artifacts should be checked for exact notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The product-space formulation turns random dilates into Hilbert vectors, suggests Gram-determinant structure, and proves that integrability of X suffices with an exact norm proportional to E[X].",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Random Beurling functions embed in a product Hilbert space with norm linear in the mean dilation",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u005.txt",
+      "unit_bytes": 2918,
+      "unit_id": "openalex_w3205780793_u005",
+      "unit_sha256": "21a11d25b3f2e7e03bb1995edbfe596240cc51e8bd2f21deabfefc0153834455",
+      "unit_type": "hilbert-space-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u005.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 206,
+          "line_end": 213,
+          "text": "a quantitative version of the Báez-Duarte criterion.\n   In Section 3, we prove the implication gNB =⇒ RH under a moment assumption on the sequence\n(Zk,n ). These r.v. may have a non-compact support, but the price to pay is a condition (C) on\nthe growth of the coefficient ck,n . We finally prove the implication RH =⇒ gNB + (C) for dilated\nr.v. using [BD05, Theorem 1.2] and a probabilistic interpretation of the Müntz operator.\n   In Section 4, we illustrate our various criteria with exponential r.v. E(k) (prototype for dilated\nr.v.) and Gamma distribution Γ(k, n) (prototype for concentrated r.v.).\n\n",
+          "sha256": "67f7db56b3ea6d1e1ae1e589529520d35711fb4dd1ab800ae46eaa6b2a99a156"
+        },
+        "after": {
+          "line_start": 258,
+          "line_end": 265,
+          "text": "\n<!-- source-page: 5 -->\n\nON PROBABILISTIC NYMAN-BEURLING CRITERIA                                       5\n\n\nProposition 2.2. Let Z ∈ L2+ (Ω) and α ∈ (0, 1). Then, for any M > 0,\n                      Z ∞ \u001a \u001b2                      Z ∞      \u001a \u001b2\n",
+          "sha256": "ea8166270b03512ecaf9a720053ec1179834483e152323d2cef4e9f4198a3708"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "pNB framework and preliminaries",
+            "line_end": 286,
+            "line_start": 214,
+            "mathematical_role": "Embeds random Beurling functions in a product Hilbert space and supplies exact norm and tail bounds needed for later approximation arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 257,
+          "line_start": 214,
+          "title": "Random Beurling functions embed in a product Hilbert space with norm linear in the mean dilation",
+          "unit_id": "openalex_w3205780793_u005",
+          "unit_type": "hilbert-space-construction",
+          "why_material": "The product-space formulation turns random dilates into Hilbert vectors, suggests Gram-determinant structure, and proves that integrability of X suffices with an exact norm proportional to E[X]."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Fubini survival identity and scaling proof that make the random construction rigorous.",
+          "representation_dependency": "The norm constant and changes of variables are formula-dependent but recoverable; page-layout artifacts should be checked for exact notation.",
+          "unit_id": "openalex_w3205780793_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 197,
+            "line_start": 175,
+            "title": "Two inequivalent placements of expectation define pNB and gNB",
+            "unit_id": "openalex_w3205780793_u004",
+            "unit_type": "definition-and-comparison",
+            "why_material": "Placing expectation outside the squared Hilbert error versus inside each random fractional-part function creates distinct criteria, with Jensen's inequality giving pNB implies gNB."
+          },
+          {
+            "line_end": 285,
+            "line_start": 264,
+            "title": "Moment interpolation controls the L2 tail of a random Beurling function",
+            "unit_id": "openalex_w3205780793_u006",
+            "unit_type": "tail-bound",
+            "why_material": "The proposition converts an L2 moment of Z into a uniform decay estimate beyond a cutoff M, the reusable device later used for noncompact random dilates."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 213,
+              "line_start": 198,
+              "reason": "Outline restates the proof architecture and example classes represented in later exact spans."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u005",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u005",
+          "spontaneous_reading": "Random fractional-part dilates become ordinary vectors in a product Hilbert space, with an exact scaling law reducing their squared norm to a constant times E[X]."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u005",
+          "source_grounded_mathematics": "The source embeds ρ_X(t)={X/t} in L2(Ω×(0,∞)) for nonnegative integrable X and proves ||ρ_X|| squared=(log(2π)-γ)E[X] by scaling and Fubini.",
+          "conceptual_reading": "Randomness is absorbed into Hilbert geometry, so integrability of the dilation parameter is exactly enough for finite energy and makes projection or Gram methods available.",
+          "representation_or_bridge": "The layer-cake identity E[X]=∫P(X≥t)dt and the change t=Xu connect probability, scale, and the deterministic norm of {1/u}.",
+          "boundary_or_failure": "The discussion only proposes structured Gram determinants as a goal; it does not prove that useful laws or calculable determinants always result.",
+          "uncertainty": "The argument is readable, though the norm notation and displayed constant should retain source-verified typography."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof combines scaling, Fubini, Cauchy-Schwarz, Markov, and monotonicity of moments.",
+      "line_end": 285,
+      "line_start": 264,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exponent placement in the extracted inequality is fragile; retain the conceptual bound but verify exact powers from the source PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proposition converts an L2 moment of Z into a uniform decay estimate beyond a cutoff M, the reusable device later used for noncompact random dilates.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Moment interpolation controls the L2 tail of a random Beurling function",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u006.txt",
+      "unit_bytes": 1384,
+      "unit_id": "openalex_w3205780793_u006",
+      "unit_sha256": "21e1fb8b141b59764caab63a7f30f3bf16c3fc9e1af99b096115aefeacf3f5a3",
+      "unit_type": "tail-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u006.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 256,
+          "line_end": 263,
+          "text": "                          0   u          0        t\n                                                                                                     \u0003\n\n<!-- source-page: 5 -->\n\nON PROBABILISTIC NYMAN-BEURLING CRITERIA                                       5\n\n\n",
+          "sha256": "b8f4b2bb4fad6e3bc91ddfceeb667a0b5126539dc46d1f7a480b7ba7bc8afaed"
+        },
+        "after": {
+          "line_start": 286,
+          "line_end": 293,
+          "text": "\n2.2. pNB implies RH under a mild condition.\nDefinition 2. A family (Zk,n )1≤k≤n,n≥1 in L1+ (Ω) is said to satisfy Assumption (P) if\n                             ∃ν > 0 , ∀n ≥ 1 , P(Bn ) > ν,                      (P)\nwhere\n                                              \\\n                                  Bn =               {0 < Zk,n ≤ 1}.\n                                            1≤k≤n\n",
+          "sha256": "893661b0ac0bfc1fc196e4dc8b8dc4f4731c2d31d3ddbf15d309f2725d3aa15e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "pNB framework and preliminaries",
+            "line_end": 286,
+            "line_start": 214,
+            "mathematical_role": "Embeds random Beurling functions in a product Hilbert space and supplies exact norm and tail bounds needed for later approximation arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 285,
+          "line_start": 264,
+          "title": "Moment interpolation controls the L2 tail of a random Beurling function",
+          "unit_id": "openalex_w3205780793_u006",
+          "unit_type": "tail-bound",
+          "why_material": "The proposition converts an L2 moment of Z into a uniform decay estimate beyond a cutoff M, the reusable device later used for noncompact random dilates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof combines scaling, Fubini, Cauchy-Schwarz, Markov, and monotonicity of moments.",
+          "representation_dependency": "The exponent placement in the extracted inequality is fragile; retain the conceptual bound but verify exact powers from the source PDF.",
+          "unit_id": "openalex_w3205780793_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 257,
+            "line_start": 214,
+            "title": "Random Beurling functions embed in a product Hilbert space with norm linear in the mean dilation",
+            "unit_id": "openalex_w3205780793_u005",
+            "unit_type": "hilbert-space-construction",
+            "why_material": "The product-space formulation turns random dilates into Hilbert vectors, suggests Gram-determinant structure, and proves that integrability of X suffices with an exact norm proportional to E[X]."
+          },
+          {
+            "line_end": 347,
+            "line_start": 287,
+            "title": "A positive-probability bounded-support event derandomizes pNB into NB",
+            "unit_id": "openalex_w3205780793_u007",
+            "unit_type": "probabilistic-method",
+            "why_material": "Assumption P ensures a uniform positive chance that every sampled dilation lies in the classical interval; intersecting that event with a small-error event realizes one deterministic NB approximant and hence RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing compact support is made possible by splitting at a moving cutoff and pairing moment control of random dilates with coefficient-weighted rare-tail probabilities, rather than by ignoring the kernel tail.",
+            "limit": "The paper proves sufficiency under condition C; it does not claim C is necessary, and the pNB concentration example explicitly avoids it.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u003",
+              "openalex_w3205780793_u006",
+              "openalex_w3205780793_u013",
+              "openalex_w3205780793_u014",
+              "openalex_w3205780793_u015",
+              "openalex_w3205780793_u016"
+            ],
+            "title": "Coefficient control is a tail-compensation mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 286,
+              "line_start": 286,
+              "reason": "Section spacing between completed preliminary result and the next theorem block."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u006",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u006",
+          "spontaneous_reading": "A cutoff-weighted tail estimate converts a second-moment assumption on Z into uniform decay of the random Beurling function beyond M."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u006",
+          "source_grounded_mathematics": "For Z in L2+ and 0<α<1, the proposition bounds M^α times the tail integral of E[{Z/t} squared] by a finite constant determined by an L2 moment of Z and an integral involving {1/u}.",
+          "conceptual_reading": "The proof interpolates event rarity with magnitude: Markov controls P(uZ≥M), Cauchy-Schwarz controls the retained Z, and scaling exposes a reusable decay exponent.",
+          "representation_or_bridge": "Fubini after t=Zu turns the analytic tail into E[1_{uZ≥M}Z], which probability inequalities can control.",
+          "boundary_or_failure": "The result needs a nonnegative L2 variable and α strictly between zero and one; it is a tail bound, not by itself an approximation or RH criterion.",
+          "uncertainty": "The exact placement of the 1+α and 2α exponents is fragile in extraction and needs PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the exponential-law example and the full Markov-plus-intersection proof, which is the paper's explicit use of Erdos' probabilistic method.",
+      "line_end": 347,
+      "line_start": 287,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The event definitions and probability inequalities are legible; displayed norm notation should be preserved exactly in a typeset representation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Assumption P ensures a uniform positive chance that every sampled dilation lies in the classical interval; intersecting that event with a small-error event realizes one deterministic NB approximant and hence RH.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A positive-probability bounded-support event derandomizes pNB into NB",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u007.txt",
+      "unit_bytes": 3505,
+      "unit_id": "openalex_w3205780793_u007",
+      "unit_sha256": "d23ba41aab08f0d788a0d8a5f4670bdb6e34219ebcb2a1017602e65993959629",
+      "unit_type": "probabilistic-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u007.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 279,
+          "line_end": 286,
+          "text": "But, by the Cauchy-Schwarz and Markov’s inequalities,\n                               p                      uα √\n                  E[1uZ≥M Z] ≤ P(uZ ≥ M )kZk2 ≤ α EZ 2α kZk2 .\n                                                      M\n            √\n                        α        α\nNoting that EZ 2α = kZk2α ≤ kZk2 we obtained the desired result.                                          \u0003\n\n",
+          "sha256": "3c30645c220097f7c03c168c7cb1c2f887f21513f0680c8f21c3f9f83466b76c"
+        },
+        "after": {
+          "line_start": 348,
+          "line_end": 355,
+          "text": "2.2.1. A lower bound. Let (Zk,n ) be a family of r.v. in L2+ (Ω). Set\n                           mn     =      min Zk,n ,\n                                        1≤k≤n\n                           Mn     =      max Zk,n ,\n                                        1≤k≤n\n                                                                    n\n                                                                    X            \u001a          \u001b\n                                                                                     Zk,n\n",
+          "sha256": "cf77c1d6c3b34c24773ac1492dac303c0fae9f7cb453909c0f87e9078deeeb8d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "pNB implies RH and lower bound",
+            "line_end": 398,
+            "line_start": 287,
+            "mathematical_role": "Uses a uniformly positive event to realize a deterministic approximation and derives a minimum-dilation lower bound on attainable pNB error."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 347,
+          "line_start": 287,
+          "title": "A positive-probability bounded-support event derandomizes pNB into NB",
+          "unit_id": "openalex_w3205780793_u007",
+          "unit_type": "probabilistic-method",
+          "why_material": "Assumption P ensures a uniform positive chance that every sampled dilation lies in the classical interval; intersecting that event with a small-error event realizes one deterministic NB approximant and hence RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the exponential-law example and the full Markov-plus-intersection proof, which is the paper's explicit use of Erdos' probabilistic method.",
+          "representation_dependency": "The event definitions and probability inequalities are legible; displayed norm notation should be preserved exactly in a typeset representation.",
+          "unit_id": "openalex_w3205780793_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 285,
+            "line_start": 264,
+            "title": "Moment interpolation controls the L2 tail of a random Beurling function",
+            "unit_id": "openalex_w3205780793_u006",
+            "unit_type": "tail-bound",
+            "why_material": "The proposition converts an L2 moment of Z into a uniform decay estimate beyond a cutoff M, the reusable device later used for noncompact random dilates."
+          },
+          {
+            "line_end": 397,
+            "line_start": 348,
+            "title": "The smallest sampled dilation limits probabilistic approximation quality",
+            "unit_id": "openalex_w3205780793_u008",
+            "unit_type": "lower-bound",
+            "why_material": "A deterministic lower bound at minimum scale transfers through the support event and Cauchy-Schwarz to show that pNB error cannot decay faster than permitted by the logarithmic size of the minimum dilation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The placement of expectation determines the proof route: pNB supplies a good sample on a positive-probability support event, whereas gNB lacks that samplewise error and instead needs a Mellin argument with explicit tail hypotheses.",
+            "limit": "This comparison is internal to the paper's definitions and assumptions; it does not establish that either route is sharper for arbitrary random families.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u004",
+              "openalex_w3205780793_u007",
+              "openalex_w3205780793_u013"
+            ],
+            "title": "Derandomization versus averaging"
+          },
+          {
+            "claim": "Exponential dilates exercise the noncompact Muntz/gNB route, while triangular Gamma variables exercise concentration around reciprocal integers and the samplewise pNB route.",
+            "limit": "The extracted implication diagram and Gamma parameters need scan verification, and the paper leaves their correlation structure unexplored.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u007",
+              "openalex_w3205780793_u009",
+              "openalex_w3205780793_u018",
+              "openalex_w3205780793_u019"
+            ],
+            "title": "Two model families expose complementary mechanisms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 286,
+              "line_start": 286,
+              "reason": "Section spacing between completed preliminary result and the next theorem block."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u007",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u007",
+          "spontaneous_reading": "A uniformly positive event on which every random dilation is admissible lets one select a single outcome that is both admissible and a good deterministic approximation."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u007",
+          "source_grounded_mathematics": "Assumption P gives P(0<Zk,n≤1 for all k)>ν. Small pNB mean-square error and Markov produce an error-at-most-ε event of probability greater than 1-ν; its intersection with the support event is nonempty, yielding an NB approximant and hence RH.",
+          "conceptual_reading": "This is a derandomization step: expectation certifies the existence of one useful realization once admissibility also occupies uniformly positive probability.",
+          "representation_or_bridge": "The probabilistic method bridges product-space approximation to the deterministic Nyman-Beurling criterion by selecting ω in the intersection of two events.",
+          "boundary_or_failure": "Uniform positive support probability is essential; independence is used only in the exponential example, not assumed by the theorem.",
+          "uncertainty": "The event and probability logic are clear; exact displayed norm notation should be preserved from the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This complements the sufficient criterion with a geometric obstruction tied to how close the random family approaches zero.",
+      "line_end": 397,
+      "line_start": 348,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact logarithms, indicators, and squared norms are formula-dependent and should be checked against the retained PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A deterministic lower bound at minimum scale transfers through the support event and Cauchy-Schwarz to show that pNB error cannot decay faster than permitted by the logarithmic size of the minimum dilation.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The smallest sampled dilation limits probabilistic approximation quality",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u008.txt",
+      "unit_bytes": 3239,
+      "unit_id": "openalex_w3205780793_u008",
+      "unit_sha256": "ca521c05c5c5a3bd576f33fda047710594ee71147819c5deb21ed1df3ca89e62",
+      "unit_type": "lower-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u008.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 340,
+          "line_end": 347,
+          "text": "                             X     \u001a \u001b\n                                    θk\n                      χ(t) −    ck           ≤ ε , 0 < θk ≤ 1,                          1 ≤ k ≤ n.\n                                     t\n                                k=1                 H\n\nTherefore, from the classical Nyman-Beurling criterion (Theorem 1), RH holds.                                   \u0003\n\n",
+          "sha256": "fc49bb7832cd3cbd689cfd2f818c67717cb31de490c42a7e8f58c5836a1d02c9"
+        },
+        "after": {
+          "line_start": 398,
+          "line_end": 405,
+          "text": "\n2.3. RH implies pNB under concentration. The goal of this section is to prove the following:\n                                                                                       p\nTheorem 5. For any n ≥ 1, let (Xk,n )1≤k≤n be r.v. in L1+ (Ω) such that, setting Yk,n = Xk,n ,\n                                                              1\n(2.8)                                       E Yk,n         = √ , 1 ≤ k ≤ n,\n                                                                k\n                                                               −3−ϑ\n",
+          "sha256": "d3454673a77cfbbd1dd46938c9915dd5940e50d772066f4d371ea0b1e88bae28"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "pNB implies RH and lower bound",
+            "line_end": 398,
+            "line_start": 287,
+            "mathematical_role": "Uses a uniformly positive event to realize a deterministic approximation and derives a minimum-dilation lower bound on attainable pNB error."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 397,
+          "line_start": 348,
+          "title": "The smallest sampled dilation limits probabilistic approximation quality",
+          "unit_id": "openalex_w3205780793_u008",
+          "unit_type": "lower-bound",
+          "why_material": "A deterministic lower bound at minimum scale transfers through the support event and Cauchy-Schwarz to show that pNB error cannot decay faster than permitted by the logarithmic size of the minimum dilation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This complements the sufficient criterion with a geometric obstruction tied to how close the random family approaches zero.",
+          "representation_dependency": "Exact logarithms, indicators, and squared norms are formula-dependent and should be checked against the retained PDF.",
+          "unit_id": "openalex_w3205780793_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 347,
+            "line_start": 287,
+            "title": "A positive-probability bounded-support event derandomizes pNB into NB",
+            "unit_id": "openalex_w3205780793_u007",
+            "unit_type": "probabilistic-method",
+            "why_material": "Assumption P ensures a uniform positive chance that every sampled dilation lies in the classical interval; intersecting that event with a small-error event realizes one deterministic NB approximant and hence RH."
+          },
+          {
+            "line_end": 440,
+            "line_start": 399,
+            "title": "Concentration near reciprocal integers yields pNB equivalent to RH",
+            "unit_id": "openalex_w3205780793_u009",
+            "unit_type": "equivalence-theorem",
+            "why_material": "The theorem packages mean matching, rapidly shrinking variance, and a nondegeneracy condition into a two-way criterion, explicitly connecting random perturbations to quantitative deterministic approximants."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u008",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u008",
+          "spontaneous_reading": "The minimum sampled dilation acts as a resolution limit: if no basis element reaches sufficiently small scales, the approximation error has a logarithmic lower bound."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u008",
+          "source_grounded_mathematics": "A deterministic bound d(λ) squared≫1/log(2/λ) is applied on the event that all dilations lie in (0,1], with λ=m_n=min_k Zk,n; expectation and Cauchy-Schwarz yield D_n squared≫1/(log 2+E|log m_n|).",
+          "conceptual_reading": "Approximation requires access to fine scales, and the random family's smallest scale controls a geometric obstruction independently of coefficient optimization.",
+          "representation_or_bridge": "Conditioning on the admissible-support event transfers a deterministic distance bound to the probabilistic Hilbert norm.",
+          "boundary_or_failure": "The estimate uses Assumption P and may become vacuous when the logarithmic moment is infinite; it constrains decay but does not establish attainability.",
+          "uncertainty": "Indicators, squared norms, and logarithm placement are extraction-sensitive and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records the two distinct uses of RH: explicit Baez-Duarte approximation and Lindelof growth on the critical line.",
+      "line_end": 440,
+      "line_start": 399,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The square-root change of variables and Gamma parameters are extraction-sensitive; verify conditions (2.8)-(2.10) and the sample law.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem packages mean matching, rapidly shrinking variance, and a nondegeneracy condition into a two-way criterion, explicitly connecting random perturbations to quantitative deterministic approximants.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Concentration near reciprocal integers yields pNB equivalent to RH",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u009.txt",
+      "unit_bytes": 2962,
+      "unit_id": "openalex_w3205780793_u009",
+      "unit_sha256": "a63d0cf5708c0af80815c61fb65321fdf69de44678075a23b4127cde4b6d35a1",
+      "unit_type": "equivalence-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u009.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 391,
+          "line_end": 398,
+          "text": "\nIn particular,\n                                              s            \u0012        \u0013\n                                                                2\n                                        Dn      E log                     ≫ 1,\n                                                               mn\nwhich yields the conclusion by the triangle inequality.                                                         \u0003\n\n",
+          "sha256": "786541f840c44b5b9a8f3b7d975a1eebe8f7303b219fcfcc9193637d1a7c953e"
+        },
+        "after": {
+          "line_start": 441,
+          "line_end": 448,
+          "text": "  We now turn to the proof of Theorem 5.\nProof. To prove that pNB implies RH, by virtue of Theorem 4, it suffices to show that the family\n(Xk,n )1≤k≤n satisfies Assumption (P). First, by union bound and Chebyshev’s inequality, we have\n    n\n                  !      n                 n\n   [                    X                 X Var Yk,n              1       n       12\nP      {Yk,n ≥ 1} ≤         P(Yk,n ≥ 1) ≤            √    ≤         √     3+ϑ\n                                                                              ≤ 2+ϑ −−−−→ 0.\n",
+          "sha256": "577febc1249a0b88f5a1958177d1433ea1440a5070a2fcc04b71888c041aef95"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "RH implies pNB under concentration",
+            "line_end": 556,
+            "line_start": 399,
+            "mathematical_role": "States the concentration equivalence and controls randomized perturbations of explicit Mobius approximants through Mellin-Plancherel estimates, Lindelof growth, and a frequency split."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 440,
+          "line_start": 399,
+          "title": "Concentration near reciprocal integers yields pNB equivalent to RH",
+          "unit_id": "openalex_w3205780793_u009",
+          "unit_type": "equivalence-theorem",
+          "why_material": "The theorem packages mean matching, rapidly shrinking variance, and a nondegeneracy condition into a two-way criterion, explicitly connecting random perturbations to quantitative deterministic approximants."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also records the two distinct uses of RH: explicit Baez-Duarte approximation and Lindelof growth on the critical line.",
+          "representation_dependency": "The square-root change of variables and Gamma parameters are extraction-sensitive; verify conditions (2.8)-(2.10) and the sample law.",
+          "unit_id": "openalex_w3205780793_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 397,
+            "line_start": 348,
+            "title": "The smallest sampled dilation limits probabilistic approximation quality",
+            "unit_id": "openalex_w3205780793_u008",
+            "unit_type": "lower-bound",
+            "why_material": "A deterministic lower bound at minimum scale transfers through the support event and Cauchy-Schwarz to show that pNB error cannot decay faster than permitted by the logarithmic size of the minimum dilation."
+          },
+          {
+            "line_end": 459,
+            "line_start": 442,
+            "title": "Variance concentration recovers the positive-probability support condition",
+            "unit_id": "openalex_w3205780793_u010",
+            "unit_type": "concentration-control",
+            "why_material": "A union bound plus Chebyshev converts uniform small variance around reciprocal means into Assumption P, closing the easy direction from pNB to RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Quantitative reciprocal-integer approximants remain effective after sufficiently small random perturbations because variance controls both admissible support and the low-frequency Mellin error, while a tuned frequency cutoff handles the tail.",
+            "limit": "The stated variance rate, mean matching, nondegeneracy, and RH-dependent Lindelof input are essential in the proved result; no generic robustness theorem is shown.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u002",
+              "openalex_w3205780793_u009",
+              "openalex_w3205780793_u010",
+              "openalex_w3205780793_u011"
+            ],
+            "title": "Stability of a discrete RH criterion under concentrated randomization"
+          },
+          {
+            "claim": "Exponential dilates exercise the noncompact Muntz/gNB route, while triangular Gamma variables exercise concentration around reciprocal integers and the samplewise pNB route.",
+            "limit": "The extracted implication diagram and Gamma parameters need scan verification, and the paper leaves their correlation structure unexplored.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u007",
+              "openalex_w3205780793_u009",
+              "openalex_w3205780793_u018",
+              "openalex_w3205780793_u019"
+            ],
+            "title": "Two model families expose complementary mechanisms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 441,
+              "line_start": 441,
+              "reason": "Transition sentence into the theorem proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u009",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u009",
+          "spontaneous_reading": "Rapid concentration of square-root dilations around reciprocal square roots preserves the discrete Nyman-Beurling signal strongly enough to make pNB equivalent to RH."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u009",
+          "source_grounded_mathematics": "With Xk,n=Yk,n squared, E[Yk,n]=1/√k, uniformly very small variance, and a nondegeneracy bound for Y1,n, Theorem 5 states RH iff the triangular family satisfies pNB.",
+          "conceptual_reading": "The theorem is a stability statement for a specific discrete criterion under quantitatively shrinking random perturbations, not a generic benefit from randomization.",
+          "representation_or_bridge": "Explicit Möbius-weighted Báez-Duarte approximants and RH-implied Lindelöf growth provide the deterministic and frequency-control bridges used in the reverse direction.",
+          "boundary_or_failure": "Mean matching, the stated variance rate, and first-coordinate nondegeneracy are material; the result does not cover arbitrary centered noise or fixed variance.",
+          "uncertainty": "The square-root substitution, rate exponent, and illustrative Gamma parameters should be verified from the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The first coordinate requires a separate nondegeneracy bound while all later coordinates are controlled collectively.",
+      "line_end": 459,
+      "line_start": 442,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the extracted rate calculation, whose final decay order should be PDF-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A union bound plus Chebyshev converts uniform small variance around reciprocal means into Assumption P, closing the easy direction from pNB to RH.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Variance concentration recovers the positive-probability support condition",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u010.txt",
+      "unit_bytes": 1075,
+      "unit_id": "openalex_w3205780793_u010",
+      "unit_sha256": "8e91432c2bd7312e3bae8dc7691ca0645f8e52ece54ad9e6ddf862e81e74697f",
+      "unit_type": "concentration-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u010.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 434,
+          "line_end": 441,
+          "text": "                                                       n→∞              ε→0\n\n   In order to prove Theorem 5, we will use some information about the coefficients in these linear\ncombinations, namely that |µ(n)| ≤ 1. RH will be also used via the Lindelöf hypothesis about the\nrate of growth of the ζ function on the critical line (see [Tit86, p. 336-337]):\nTheorem 7 ([Tit86]). Under RH, the Lindelöf hypothesis holds:\n(2.12)                                         |ζ (1/2 + it)| ≪η tη ,                η > 0.\n  We now turn to the proof of Theorem 5.\n",
+          "sha256": "9ef550fbd48bc6df5752f8543535ff9527b097919822f16a4a0d0526956592e8"
+        },
+        "after": {
+          "line_start": 460,
+          "line_end": 467,
+          "text": "\n  Let us now prove that pNB((Xk,n )) holds under RH. We have\n                       n                2                        n                                 2\n                       X                                         X\n     inf        E χ−         ak ρXk,n          ≤      E χ+             µ(k)k −ε ρXk,n\n  a1 ,··· ,an\n                       k=1              H                        k=1                               H\n                                                                 n                                 n                                      2\n",
+          "sha256": "1810eb579142d4c30c79d488a5a44b94f2995455286df2f58657729f489157b1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "RH implies pNB under concentration",
+            "line_end": 556,
+            "line_start": 399,
+            "mathematical_role": "States the concentration equivalence and controls randomized perturbations of explicit Mobius approximants through Mellin-Plancherel estimates, Lindelof growth, and a frequency split."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 459,
+          "line_start": 442,
+          "title": "Variance concentration recovers the positive-probability support condition",
+          "unit_id": "openalex_w3205780793_u010",
+          "unit_type": "concentration-control",
+          "why_material": "A union bound plus Chebyshev converts uniform small variance around reciprocal means into Assumption P, closing the easy direction from pNB to RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The first coordinate requires a separate nondegeneracy bound while all later coordinates are controlled collectively.",
+          "representation_dependency": "Depends on the extracted rate calculation, whose final decay order should be PDF-checked.",
+          "unit_id": "openalex_w3205780793_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 440,
+            "line_start": 399,
+            "title": "Concentration near reciprocal integers yields pNB equivalent to RH",
+            "unit_id": "openalex_w3205780793_u009",
+            "unit_type": "equivalence-theorem",
+            "why_material": "The theorem packages mean matching, rapidly shrinking variance, and a nondegeneracy condition into a two-way criterion, explicitly connecting random perturbations to quantitative deterministic approximants."
+          },
+          {
+            "line_end": 555,
+            "line_start": 461,
+            "title": "Mellin-Plancherel frequency splitting stabilizes Mobius approximants under random perturbation",
+            "unit_id": "openalex_w3205780793_u011",
+            "unit_type": "proof-mechanism",
+            "why_material": "The proof compares randomized and deterministic fractional-part approximants, transfers their difference to the critical line, bounds low frequencies using concentration plus Lindelof, bounds high frequencies using integrability, and tunes the cutoff so both vanish."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Quantitative reciprocal-integer approximants remain effective after sufficiently small random perturbations because variance controls both admissible support and the low-frequency Mellin error, while a tuned frequency cutoff handles the tail.",
+            "limit": "The stated variance rate, mean matching, nondegeneracy, and RH-dependent Lindelof input are essential in the proved result; no generic robustness theorem is shown.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u002",
+              "openalex_w3205780793_u009",
+              "openalex_w3205780793_u010",
+              "openalex_w3205780793_u011"
+            ],
+            "title": "Stability of a discrete RH criterion under concentrated randomization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 441,
+              "line_start": 441,
+              "reason": "Transition sentence into the theorem proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u010",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u010",
+          "spontaneous_reading": "A union bound packages many coordinatewise concentration estimates into the simultaneous support event required for derandomization."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u010",
+          "source_grounded_mathematics": "Chebyshev bounds P(Yk,n≥1) for k≥2 using the gap between mean 1/√k and 1; summing these probabilities tends to zero, while the separate bound on Y1,n leaves uniformly positive probability that every Yk,n<1.",
+          "conceptual_reading": "Uniform variance control becomes a collective admissibility guarantee, but the coordinate whose mean lies at the boundary cannot be handled by the same gap argument.",
+          "representation_or_bridge": "Union bound plus Chebyshev bridges moment concentration to Assumption P, after which Theorem 4 supplies pNB implies RH.",
+          "boundary_or_failure": "The first coordinate needs its own nondegeneracy hypothesis, and this unit proves only the support-condition direction of the equivalence.",
+          "uncertainty": "The final decay exponent in the extracted rate calculation is formula-sensitive and should be PDF-checked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the substantive RH-to-pNB mechanism and preserves the bounded Mobius coefficients needed for perturbation control.",
+      "line_end": 555,
+      "line_start": 461,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly equation-dependent across (2.13)-(2.18); the prose establishes the split and tuning logic, but exact exponents and Mellin factors require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof compares randomized and deterministic fractional-part approximants, transfers their difference to the critical line, bounds low frequencies using concentration plus Lindelof, bounds high frequencies using integrability, and tunes the cutoff so both vanish.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mellin-Plancherel frequency splitting stabilizes Mobius approximants under random perturbation",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u011.txt",
+      "unit_bytes": 6371,
+      "unit_id": "openalex_w3205780793_u011",
+      "unit_sha256": "392bf811894ee087713faa1a53e6745b9f518167e1df3bd445de7b8b4277bdad",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u011.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 453,
+          "line_end": 460,
+          "text": "                                   n\n                                                !\n                                  [\n                              P      {Yk,n ≥ 1}      ≤ 1 − ν/2,\n                                                k=1\n\nand then, taking the complement, (P) holds.\n\n",
+          "sha256": "f20f035dafb4581fdf1149f0b5e1672923a5d4a90cf9003f783f1faf9d46f35c"
+        },
+        "after": {
+          "line_start": 556,
+          "line_end": 563,
+          "text": "\n                                          3. The gNB criterion\n3.1. Proof of the sufficient part in the deterministic criterion. It is first important to\nwrite a short proof of the sufficient implication in the NB criterion, stated in Theorem 1 since the\nproof of Theorem 8 will follow a similar structure. Let us prove that RH holds if\n(3.19)                                   χ ∈ spanH {ρθ , 0 < θ ≤ 1} ,\nby adapting the original proof, see e.g. [Beu55], with [BDBLS00].\n\n",
+          "sha256": "5a0f182cce58d4663cc9b9b4ddb1b7d550105c071d36d10c092b02f212cc1140"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "RH implies pNB under concentration",
+            "line_end": 556,
+            "line_start": 399,
+            "mathematical_role": "States the concentration equivalence and controls randomized perturbations of explicit Mobius approximants through Mellin-Plancherel estimates, Lindelof growth, and a frequency split."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 555,
+          "line_start": 461,
+          "title": "Mellin-Plancherel frequency splitting stabilizes Mobius approximants under random perturbation",
+          "unit_id": "openalex_w3205780793_u011",
+          "unit_type": "proof-mechanism",
+          "why_material": "The proof compares randomized and deterministic fractional-part approximants, transfers their difference to the critical line, bounds low frequencies using concentration plus Lindelof, bounds high frequencies using integrability, and tunes the cutoff so both vanish."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the substantive RH-to-pNB mechanism and preserves the bounded Mobius coefficients needed for perturbation control.",
+          "representation_dependency": "Highly equation-dependent across (2.13)-(2.18); the prose establishes the split and tuning logic, but exact exponents and Mellin factors require PDF verification.",
+          "unit_id": "openalex_w3205780793_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 459,
+            "line_start": 442,
+            "title": "Variance concentration recovers the positive-probability support condition",
+            "unit_id": "openalex_w3205780793_u010",
+            "unit_type": "concentration-control",
+            "why_material": "A union bound plus Chebyshev converts uniform small variance around reciprocal means into Assumption P, closing the easy direction from pNB to RH."
+          },
+          {
+            "line_end": 626,
+            "line_start": 557,
+            "title": "Vanishing L2 approximation excludes off-critical zeta zeros via a Mellin contradiction",
+            "unit_id": "openalex_w3205780793_u012",
+            "unit_type": "zero-exclusion-template",
+            "why_material": "Assuming an off-critical zero makes the Mellin transform of every approximation error equal a fixed nonzero target term, while splitting at t=1 and using L2 convergence forces that same integral to zero."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Quantitative reciprocal-integer approximants remain effective after sufficiently small random perturbations because variance controls both admissible support and the low-frequency Mellin error, while a tuned frequency cutoff handles the tail.",
+            "limit": "The stated variance rate, mean matching, nondegeneracy, and RH-dependent Lindelof input are essential in the proved result; no generic robustness theorem is shown.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u002",
+              "openalex_w3205780793_u009",
+              "openalex_w3205780793_u010",
+              "openalex_w3205780793_u011"
+            ],
+            "title": "Stability of a discrete RH criterion under concentrated randomization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 556,
+              "line_start": 556,
+              "reason": "Section boundary spacing."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u011",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u011",
+          "spontaneous_reading": "Mellin-Plancherel turns random scale perturbation into a frequency error that can be split: concentration controls low frequencies, integrability controls high frequencies, and a tuned cutoff balances them."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u011",
+          "source_grounded_mathematics": "The proof compares Möbius-weighted ρXk,n with ρ1/k, expresses their L2 difference on Re(s)=1/2, bounds |k^{-s}-Xk,n^s| via square-root deviations, and splits at T_n=n^α so both frequency ranges vanish.",
+          "conceptual_reading": "Stability is obtained by assigning different proof resources to different spectral regimes rather than seeking one uniform perturbation bound.",
+          "representation_or_bridge": "Mellin-Plancherel is the bridge; variance and Lindelöf control the central band, while the |ζ(s)| squared/|s| squared tail estimate controls its complement.",
+          "boundary_or_failure": "RH enters both through the explicit deterministic approximants and Lindelöf, and the argument depends on bounded Möbius coefficients plus the specific variance budget.",
+          "uncertainty": "Equations (2.13)-(2.18), especially powers and transform factors, are extraction-fragile and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The tail estimate exploits the special linear form of fractional-part dilates and is the deterministic template for Theorem 8.",
+      "line_end": 626,
+      "line_start": 557,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Mellin integral and tail identities are formula-sensitive, especially line-broken powers and sums; verify the exact display before training.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Assuming an off-critical zero makes the Mellin transform of every approximation error equal a fixed nonzero target term, while splitting at t=1 and using L2 convergence forces that same integral to zero.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Vanishing L2 approximation excludes off-critical zeta zeros via a Mellin contradiction",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u012.txt",
+      "unit_bytes": 5463,
+      "unit_id": "openalex_w3205780793_u012",
+      "unit_sha256": "dd69d0494bb49cb1c139f356a8f021e27e53d0664ead9c9e8a48eafb0c2d0693",
+      "unit_type": "zero-exclusion-template",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u012.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 549,
+          "line_end": 556,
+          "text": "                        E        Vn (t)dt ≪ n1−α(1−η) log n −−−−→ 0,\n                             |t|≥Tn                                           n→∞\n                              Z Tn\n                           E          Vn (t)dt      ≪ n−ϑ/2 −−−−→ 0.\n                                −Tn                                 n→∞\n\nFinally, we conclude with Theorem 6.                                                              \u0003\n\n",
+          "sha256": "1a03e46986dde46e93f2a9406b4f03d92ca19ad1a55aef044abe962b29640245"
+        },
+        "after": {
+          "line_start": 627,
+          "line_end": 634,
+          "text": "3.2. gNB implies RH under a controlled approximation. We can replace χ in Definition 1\nby a more general function φ. We say that φ : (0, ∞) → R is an admissible target function if\n              Z ∞\n  (T1) b\n       φ(s) =      φ(t)ts−1 dt exists and does not vanish in the strip 21 < σ < 1,\n            \u0012 0Z ∞           \u0013\n                         2\n  (T2) sup M         φ(t) dt < ∞.\n",
+          "sha256": "f33555559ff1f6480b5c4c7ae9a1ebfa65dcdf6b46d54c60591d93f76559519b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deterministic sufficient proof",
+            "line_end": 626,
+            "line_start": 557,
+            "mathematical_role": "Gives the zero-exclusion contradiction template later generalized to averaged random dilates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 626,
+          "line_start": 557,
+          "title": "Vanishing L2 approximation excludes off-critical zeta zeros via a Mellin contradiction",
+          "unit_id": "openalex_w3205780793_u012",
+          "unit_type": "zero-exclusion-template",
+          "why_material": "Assuming an off-critical zero makes the Mellin transform of every approximation error equal a fixed nonzero target term, while splitting at t=1 and using L2 convergence forces that same integral to zero."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The tail estimate exploits the special linear form of fractional-part dilates and is the deterministic template for Theorem 8.",
+          "representation_dependency": "The Mellin integral and tail identities are formula-sensitive, especially line-broken powers and sums; verify the exact display before training.",
+          "unit_id": "openalex_w3205780793_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 555,
+            "line_start": 461,
+            "title": "Mellin-Plancherel frequency splitting stabilizes Mobius approximants under random perturbation",
+            "unit_id": "openalex_w3205780793_u011",
+            "unit_type": "proof-mechanism",
+            "why_material": "The proof compares randomized and deterministic fractional-part approximants, transfers their difference to the critical line, bounds low frequencies using concentration plus Lindelof, bounds high frequencies using integrability, and tunes the cutoff so both vanish."
+          },
+          {
+            "line_end": 658,
+            "line_start": 627,
+            "title": "Admissible targets plus moment and coefficient-tail control suffice for gNB to imply RH",
+            "unit_id": "openalex_w3205780793_u013",
+            "unit_type": "generalized-criterion",
+            "why_material": "Theorem 8 replaces the indicator target by any function with nonvanishing Mellin transform and controlled L2 tail, while explicitly states the moment and coefficient condition that compensate for unbounded random dilations."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 556,
+              "line_start": 556,
+              "reason": "Section boundary spacing."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u012",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u012",
+          "spontaneous_reading": "At a hypothetical off-critical zero, every approximating error has a fixed nonzero Mellin value, while L2 convergence and the special tail form force that value to vanish."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u012",
+          "source_grounded_mathematics": "Assuming χ is approximated in H by finite sums of ρθ with 0<θ≤1, evaluation of the Mellin integral at a zero ζ(s), one-half<Re(s)<1, gives 1/s. Cauchy-Schwarz on (0,1) and a tail estimate on (1,∞) make the same integral tend to zero.",
+          "conceptual_reading": "The proof excludes zeros by constructing an invariant witness: transform evaluation cannot change under the approximants at a zeta zero, yet norm convergence makes it continuous to zero.",
+          "representation_or_bridge": "Splitting physical scale at t=1 bridges global L2 convergence to Mellin convergence; beyond one, {θ/t}=θ/t makes the tail explicitly controllable.",
+          "boundary_or_failure": "The tail argument uses the special fractional-part dilates and θ≤1, so it does not automatically extend to arbitrary features or noncompact kernels.",
+          "uncertainty": "Line-broken powers, sums, and the Mellin identity need source-PDF verification, although the contradiction structure is clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the main noncompact-support sufficient criterion; its proof occupies the following units.",
+      "line_end": 658,
+      "line_start": 627,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Conditions T1, T2, (3.22), gNB, and C are equation-dependent and should be checked for exact quantifiers and exponents.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 8 replaces the indicator target by any function with nonvanishing Mellin transform and controlled L2 tail, while explicitly states the moment and coefficient condition that compensate for unbounded random dilations.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Admissible targets plus moment and coefficient-tail control suffice for gNB to imply RH",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u013.txt",
+      "unit_bytes": 1630,
+      "unit_id": "openalex_w3205780793_u013",
+      "unit_sha256": "e2cd5c23d94416f3c9260fd8cfd21305feb0b87f5f454b78591cc1adff046cc4",
+      "unit_type": "generalized-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u013.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 619,
+          "line_end": 626,
+          "text": "                                    Z ∞                     n\n                                                            X             \u001a        \u001b!\n                                                                              θk\n                                                 χ(t) −              ck                   ts−1 dt           −−−−→ 0,\n                                       0                                       t                             n→∞\n                                                            k=1\n\nwhich contradicts Eq. (3.21).                                                                                                                                    \u0003\n",
+          "sha256": "cc209f1a0332cb59193c931c10d0561f017577ef84885c9c2278812af6951593"
+        },
+        "after": {
+          "line_start": 659,
+          "line_end": 666,
+          "text": "\n<!-- source-page: 10 -->\n\n10                                   SÉBASTIEN DARSES — ERWAN HILLION\n\n\nProof. We first compute the following Mellin transform:\n            Z ∞           n\n",
+          "sha256": "1a66b4c8e819b1275f45772a3e32876615700f1b5ba9cfda17075349facffb12"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "gNB implies RH under controlled approximation",
+            "line_end": 852,
+            "line_start": 627,
+            "mathematical_role": "Introduces admissible targets and proves zero exclusion by splitting the Mellin integral at a moving threshold, with moment and coefficient-tail hypotheses controlling noncompact support."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 658,
+          "line_start": 627,
+          "title": "Admissible targets plus moment and coefficient-tail control suffice for gNB to imply RH",
+          "unit_id": "openalex_w3205780793_u013",
+          "unit_type": "generalized-criterion",
+          "why_material": "Theorem 8 replaces the indicator target by any function with nonvanishing Mellin transform and controlled L2 tail, while explicitly states the moment and coefficient condition that compensate for unbounded random dilations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the main noncompact-support sufficient criterion; its proof occupies the following units.",
+          "representation_dependency": "Conditions T1, T2, (3.22), gNB, and C are equation-dependent and should be checked for exact quantifiers and exponents.",
+          "unit_id": "openalex_w3205780793_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 626,
+            "line_start": 557,
+            "title": "Vanishing L2 approximation excludes off-critical zeta zeros via a Mellin contradiction",
+            "unit_id": "openalex_w3205780793_u012",
+            "unit_type": "zero-exclusion-template",
+            "why_material": "Assuming an off-critical zero makes the Mellin transform of every approximation error equal a fixed nonzero target term, while splitting at t=1 and using L2 convergence forces that same integral to zero."
+          },
+          {
+            "line_end": 702,
+            "line_start": 665,
+            "title": "A moving Mellin cutoff separates approximation error from noncompact tails",
+            "unit_id": "openalex_w3205780793_u014",
+            "unit_type": "moving-cutoff-reduction",
+            "why_material": "At a hypothetical zeta zero the averaged approximation has a fixed nonzero Mellin value; choosing a threshold growing slowly enough makes the lower-range integral vanish by gNB error, reducing the contradiction to tail control."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The placement of expectation determines the proof route: pNB supplies a good sample on a positive-probability support event, whereas gNB lacks that samplewise error and instead needs a Mellin argument with explicit tail hypotheses.",
+            "limit": "This comparison is internal to the paper's definitions and assumptions; it does not establish that either route is sharper for arbitrary random families.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u004",
+              "openalex_w3205780793_u007",
+              "openalex_w3205780793_u013"
+            ],
+            "title": "Derandomization versus averaging"
+          },
+          {
+            "claim": "Removing compact support is made possible by splitting at a moving cutoff and pairing moment control of random dilates with coefficient-weighted rare-tail probabilities, rather than by ignoring the kernel tail.",
+            "limit": "The paper proves sufficiency under condition C; it does not claim C is necessary, and the pNB concentration example explicitly avoids it.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u003",
+              "openalex_w3205780793_u006",
+              "openalex_w3205780793_u013",
+              "openalex_w3205780793_u014",
+              "openalex_w3205780793_u015",
+              "openalex_w3205780793_u016"
+            ],
+            "title": "Coefficient control is a tail-compensation mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 664,
+              "line_start": 659,
+              "reason": "Page boundary and proof transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u013",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u013",
+          "spontaneous_reading": "The generalized criterion identifies the exact compensation for abandoning compact support: target-tail decay, random-dilation moments, and coefficient-weighted rare-event control."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u013",
+          "source_grounded_mathematics": "Theorem 8 assumes an admissible target with nonvanishing Mellin transform in the strip and controlled L2 tail, a summed moment bound on Zk,n, gNB approximation, and condition C requiring Σ|ck,n| squared P(Zk,n≥M_n)→0 for every M_n→∞; these imply RH.",
+          "conceptual_reading": "Noncompactness is not ignored but budgeted: moments control feature tails and condition C prevents large coefficients from amplifying rare large dilations.",
+          "representation_or_bridge": "The target's Mellin transform supplies the zero-exclusion witness, while gNB connects it to averaged random fractional-part features.",
+          "boundary_or_failure": "The theorem gives a sufficient criterion only; it does not claim condition C is necessary or that gNB alone implies RH.",
+          "uncertainty": "The exact quantifiers and powers in T2 and (3.22) are equation-dependent and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cutoff is selected from Dn tending to zero so that its weighted error also tends to zero.",
+      "line_end": 702,
+      "line_start": 665,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The transform identity and cutoff exponent depend on intact formula layout; verify exact powers in (3.24).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "At a hypothetical zeta zero the averaged approximation has a fixed nonzero Mellin value; choosing a threshold growing slowly enough makes the lower-range integral vanish by gNB error, reducing the contradiction to tail control.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A moving Mellin cutoff separates approximation error from noncompact tails",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u014.txt",
+      "unit_bytes": 2630,
+      "unit_id": "openalex_w3205780793_u014",
+      "unit_sha256": "45fdd69e31fb155503b6f1726227fa2a7f473cd6fde7fc00e42b2dceb8f7730d",
+      "unit_type": "moving-cutoff-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u014.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 657,
+          "line_end": 664,
+          "text": "\nThen RH holds.\n\n<!-- source-page: 10 -->\n\n10                                   SÉBASTIEN DARSES — ERWAN HILLION\n\n\n",
+          "sha256": "127bfca9b9b44714af30c60c67853a1817deecd57fe2c3064abb2484c51b8519"
+        },
+        "after": {
+          "line_start": 703,
+          "line_end": 710,
+          "text": "In order to bound |I2,n |, we write\n                               Z ∞                Xn          Z ∞\u001a     \u001b\n                                                                   Zk,n s−1\n                      I2,n =        φ(t)ts−1 dt −      ck,n E            t dt.\n                                 Mn                            Mn   t\n                                                  k=1\n                                  R∞\n    b\n",
+          "sha256": "28f334d204bdd6f2f99879762a484d6e0fea0f282bd2914193f4bee30e98ad9c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "gNB implies RH under controlled approximation",
+            "line_end": 852,
+            "line_start": 627,
+            "mathematical_role": "Introduces admissible targets and proves zero exclusion by splitting the Mellin integral at a moving threshold, with moment and coefficient-tail hypotheses controlling noncompact support."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 702,
+          "line_start": 665,
+          "title": "A moving Mellin cutoff separates approximation error from noncompact tails",
+          "unit_id": "openalex_w3205780793_u014",
+          "unit_type": "moving-cutoff-reduction",
+          "why_material": "At a hypothetical zeta zero the averaged approximation has a fixed nonzero Mellin value; choosing a threshold growing slowly enough makes the lower-range integral vanish by gNB error, reducing the contradiction to tail control."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The cutoff is selected from Dn tending to zero so that its weighted error also tends to zero.",
+          "representation_dependency": "The transform identity and cutoff exponent depend on intact formula layout; verify exact powers in (3.24).",
+          "unit_id": "openalex_w3205780793_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 658,
+            "line_start": 627,
+            "title": "Admissible targets plus moment and coefficient-tail control suffice for gNB to imply RH",
+            "unit_id": "openalex_w3205780793_u013",
+            "unit_type": "generalized-criterion",
+            "why_material": "Theorem 8 replaces the indicator target by any function with nonvanishing Mellin transform and controlled L2 tail, while explicitly states the moment and coefficient condition that compensate for unbounded random dilations."
+          },
+          {
+            "line_end": 760,
+            "line_start": 703,
+            "title": "Rare large dilations are controlled by coefficient-weighted tail probability and moments",
+            "unit_id": "openalex_w3205780793_u015",
+            "unit_type": "tail-decomposition",
+            "why_material": "Splitting each expected fractional part according to whether Z exceeds the moving cutoff isolates a large-dilation term; Cauchy-Schwarz factors it into precisely condition C and the summable moment budget."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing compact support is made possible by splitting at a moving cutoff and pairing moment control of random dilates with coefficient-weighted rare-tail probabilities, rather than by ignoring the kernel tail.",
+            "limit": "The paper proves sufficiency under condition C; it does not claim C is necessary, and the pNB concentration example explicitly avoids it.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u003",
+              "openalex_w3205780793_u006",
+              "openalex_w3205780793_u013",
+              "openalex_w3205780793_u014",
+              "openalex_w3205780793_u015",
+              "openalex_w3205780793_u016"
+            ],
+            "title": "Coefficient control is a tail-compensation mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 664,
+              "line_start": 659,
+              "reason": "Page boundary and proof transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u014",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u014",
+          "spontaneous_reading": "A cutoff M_n chosen to grow slowly relative to the shrinking gNB error makes the local Mellin integral vanish and isolates all noncompact difficulty in the tail."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u014",
+          "source_grounded_mathematics": "At a hypothetical ζ zero in the strip, the Mellin transform of the approximation error equals the fixed nonzero value φ-hat(s). The proof splits at M_n→∞ chosen so M_n^{2Re(s)-1}D_n squared→0; Cauchy-Schwarz then kills the lower-range integral.",
+          "conceptual_reading": "The moving threshold adapts the representation scale to the observed approximation rate, separating what L2 convergence controls from what requires explicit tail hypotheses.",
+          "representation_or_bridge": "Mellin evaluation turns zero exclusion into an integral contradiction, and the adaptive cutoff converts unweighted gNB convergence into weighted local convergence.",
+          "boundary_or_failure": "This reduction does not itself control the upper tail; it relies on the admissible target, moments, and condition C handled subsequently.",
+          "uncertainty": "The transform display and cutoff exponent are extraction-sensitive and should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This explains why coefficient control is the price of allowing noncompact support.",
+      "line_end": 760,
+      "line_start": 703,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The definitions of A and B and estimates (3.25)-(3.28) are layout-fragile; the factorization logic is prose-recoverable but exact exponents need PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splitting each expected fractional part according to whether Z exceeds the moving cutoff isolates a large-dilation term; Cauchy-Schwarz factors it into precisely condition C and the summable moment budget.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rare large dilations are controlled by coefficient-weighted tail probability and moments",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u015.txt",
+      "unit_bytes": 3658,
+      "unit_id": "openalex_w3205780793_u015",
+      "unit_sha256": "624881e64565fc10642ca9cf2eab98fff95e557cc34f223444484e02f147a204",
+      "unit_type": "tail-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u015.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 695,
+          "line_end": 702,
+          "text": "               n→∞\n         • Mn2σ−1 Dn2 −−−−→ 0 (this is possible since we assume Dn → 0).\n                      n→∞\nThe first integral is bounded with the Cauchy-Schwarz inequality:\n                                       Z Mn\n                               2                          M 2σ−1\n                        |I1,n | ≤ Dn2       t2σ−2 dt = Dn2 n     −−−−→ 0.\n                                        0                 2σ − 1 n→∞\n",
+          "sha256": "03f40b8028e44bdcf81066440dcd75cc08ce9466a0a42001933d195b33f7e45d"
+        },
+        "after": {
+          "line_start": 761,
+          "line_end": 768,
+          "text": "                                                   n\n                                                   X\n(2) It remains to bound the term                         ck,n Ak,n . We notice that, for t ≥ Mn ,\n                                                   k=1\n                                                         \u001a          \u001b\n                                                             Zk,n                         Zk,n\n                                        1Zk,n ≤Mn                        = 1Zk,n ≤Mn           ,\n                                                              t                            t\n",
+          "sha256": "106667d3389d541cebb8932b91af903d5c06dfd9779b61300465f318e1de2057"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "gNB implies RH under controlled approximation",
+            "line_end": 852,
+            "line_start": 627,
+            "mathematical_role": "Introduces admissible targets and proves zero exclusion by splitting the Mellin integral at a moving threshold, with moment and coefficient-tail hypotheses controlling noncompact support."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 760,
+          "line_start": 703,
+          "title": "Rare large dilations are controlled by coefficient-weighted tail probability and moments",
+          "unit_id": "openalex_w3205780793_u015",
+          "unit_type": "tail-decomposition",
+          "why_material": "Splitting each expected fractional part according to whether Z exceeds the moving cutoff isolates a large-dilation term; Cauchy-Schwarz factors it into precisely condition C and the summable moment budget."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This explains why coefficient control is the price of allowing noncompact support.",
+          "representation_dependency": "The definitions of A and B and estimates (3.25)-(3.28) are layout-fragile; the factorization logic is prose-recoverable but exact exponents need PDF checking.",
+          "unit_id": "openalex_w3205780793_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 702,
+            "line_start": 665,
+            "title": "A moving Mellin cutoff separates approximation error from noncompact tails",
+            "unit_id": "openalex_w3205780793_u014",
+            "unit_type": "moving-cutoff-reduction",
+            "why_material": "At a hypothetical zeta zero the averaged approximation has a fixed nonzero Mellin value; choosing a threshold growing slowly enough makes the lower-range integral vanish by gNB error, reducing the contradiction to tail control."
+          },
+          {
+            "line_end": 845,
+            "line_start": 761,
+            "title": "Bounded dilations are closed by target decay, gNB error, and the random-Beurling tail estimate",
+            "unit_id": "openalex_w3205780793_u016",
+            "unit_type": "tail-closure",
+            "why_material": "For dilations below the cutoff, the fractional part linearizes on the tail, reducing the remaining integral to a coefficient-weighted first moment; gNB, admissible-target decay, Proposition 2.2, and condition C then force it to zero."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing compact support is made possible by splitting at a moving cutoff and pairing moment control of random dilates with coefficient-weighted rare-tail probabilities, rather than by ignoring the kernel tail.",
+            "limit": "The paper proves sufficiency under condition C; it does not claim C is necessary, and the pNB concentration example explicitly avoids it.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u003",
+              "openalex_w3205780793_u006",
+              "openalex_w3205780793_u013",
+              "openalex_w3205780793_u014",
+              "openalex_w3205780793_u015",
+              "openalex_w3205780793_u016"
+            ],
+            "title": "Coefficient control is a tail-compensation mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u015",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u015",
+          "spontaneous_reading": "Splitting each random dilation by whether it exceeds M_n makes the dangerous tail factor into coefficient-weighted rarity times a moment budget."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u015",
+          "source_grounded_mathematics": "For the upper Mellin tail, the expected fractional part is decomposed into Zk,n≤M_n and Zk,n≥M_n pieces. The large-dilation term is bounded using fractional-part estimates and Cauchy-Schwarz by factors involving P(Zk,n≥M_n) and E[Zk,n^{2Re(s)}].",
+          "conceptual_reading": "Condition C is matched to the proof rather than decorative: it measures exactly whether coefficients amplify rare excursions beyond the moving cutoff.",
+          "representation_or_bridge": "Event decomposition bridges noncompact random features to a product of tail probabilities and moments that the theorem's hypotheses separately control.",
+          "boundary_or_failure": "The conclusion depends on Re(s)>1/2, the summed moment condition, and coefficient-tail control; rarity without coefficient control is insufficient.",
+          "uncertainty": "The A/B definitions and exponents in (3.25)-(3.28) are layout-fragile and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Together with the previous unit this completes the generalized zero-exclusion contradiction.",
+      "line_end": 845,
+      "line_start": 761,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This span is densely formula-dependent and has degraded display ordering; exact inequalities (3.29)-(3.30) and cutoff powers require source-PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For dilations below the cutoff, the fractional part linearizes on the tail, reducing the remaining integral to a coefficient-weighted first moment; gNB, admissible-target decay, Proposition 2.2, and condition C then force it to zero.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bounded dilations are closed by target decay, gNB error, and the random-Beurling tail estimate",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u016.txt",
+      "unit_bytes": 7529,
+      "unit_id": "openalex_w3205780793_u016",
+      "unit_sha256": "762a338f6b7a32ad863ec85f74b06d3a6d5a41cb28016720eec8f8f052a2fa50",
+      "unit_type": "tail-closure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u016.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 753,
+          "line_end": 760,
+          "text": "                       2σ\nLet us notice that EZk,n  = kZk,n k2σ          2σ\n                                   2σ ≤ kZk,n k2 since 2σ ≤ 2. Since 2σ > 1, we can deduce from\n(3.22) and (3.23) that\n                                     Xn\n                                        ck,n Bk,n −−−−→ 0.\n                                                                                n→∞\n                                                     k=1\n",
+          "sha256": "70165b7cbd895f6fc340adbc3b4ba4105cff2b6a6d5c5a9dee1044afc8647ac7"
+        },
+        "after": {
+          "line_start": 846,
+          "line_end": 853,
+          "text": "                     n→∞\n\n<!-- source-page: 12 -->\n\n12                                    SÉBASTIEN DARSES — ERWAN HILLION\n\n\n3.3. RH implies gNB for dilated random variables. The proof of the implication RH =⇒\n",
+          "sha256": "2463495131792cbb2c3b3d871504f89fdb2b1d343725b019941aa5554d6cff48"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "gNB implies RH under controlled approximation",
+            "line_end": 852,
+            "line_start": 627,
+            "mathematical_role": "Introduces admissible targets and proves zero exclusion by splitting the Mellin integral at a moving threshold, with moment and coefficient-tail hypotheses controlling noncompact support."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 845,
+          "line_start": 761,
+          "title": "Bounded dilations are closed by target decay, gNB error, and the random-Beurling tail estimate",
+          "unit_id": "openalex_w3205780793_u016",
+          "unit_type": "tail-closure",
+          "why_material": "For dilations below the cutoff, the fractional part linearizes on the tail, reducing the remaining integral to a coefficient-weighted first moment; gNB, admissible-target decay, Proposition 2.2, and condition C then force it to zero."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Together with the previous unit this completes the generalized zero-exclusion contradiction.",
+          "representation_dependency": "This span is densely formula-dependent and has degraded display ordering; exact inequalities (3.29)-(3.30) and cutoff powers require source-PDF verification.",
+          "unit_id": "openalex_w3205780793_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 760,
+            "line_start": 703,
+            "title": "Rare large dilations are controlled by coefficient-weighted tail probability and moments",
+            "unit_id": "openalex_w3205780793_u015",
+            "unit_type": "tail-decomposition",
+            "why_material": "Splitting each expected fractional part according to whether Z exceeds the moving cutoff isolates a large-dilation term; Cauchy-Schwarz factors it into precisely condition C and the summable moment budget."
+          },
+          {
+            "line_end": 893,
+            "line_start": 853,
+            "title": "Expected fractional parts are negative Muntz transforms of survival functions",
+            "unit_id": "openalex_w3205780793_u017",
+            "unit_type": "representation-change",
+            "why_material": "Writing the survival function of X turns expectation of the random fractional part into a deterministic Muntz transform, furnishing a direct bridge between probability and the general strong criterion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing compact support is made possible by splitting at a moving cutoff and pairing moment control of random dilates with coefficient-weighted rare-tail probabilities, rather than by ignoring the kernel tail.",
+            "limit": "The paper proves sufficiency under condition C; it does not claim C is necessary, and the pNB concentration example explicitly avoids it.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u003",
+              "openalex_w3205780793_u006",
+              "openalex_w3205780793_u013",
+              "openalex_w3205780793_u014",
+              "openalex_w3205780793_u015",
+              "openalex_w3205780793_u016"
+            ],
+            "title": "Coefficient control is a tail-compensation mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 852,
+              "line_start": 846,
+              "reason": "Proof and page transition to the converse direction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u016",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u016",
+          "spontaneous_reading": "On the bounded-dilation branch and beyond the cutoff, fractional parts linearize to Z/t, allowing the remaining tail to be closed by the same gNB error and tail budgets."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u016",
+          "source_grounded_mathematics": "When t≥M_n and Zk,n≤M_n, {Zk,n/t}=Zk,n/t. The resulting coefficient-weighted first moment is related back to the gNB tail, then controlled using D_n, admissible-target decay, Proposition 2.2, and condition C; hence the second Mellin piece vanishes.",
+          "conceptual_reading": "The cutoff creates a region where a nonlinear feature becomes exactly linear, exposing a moment that can be bounded with the theorem's existing hypotheses.",
+          "representation_or_bridge": "Tail linearization links averaged fractional parts to first moments, while the random-Beurling tail estimate reconnects rare-event contributions to L2 control.",
+          "boundary_or_failure": "This is the closure of the preceding decomposition, not a standalone estimate; removing T2, the moment bound, or condition C breaks the stated proof.",
+          "uncertainty": "The display ordering and powers in (3.29)-(3.30) are degraded, so exact inequalities require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof derives the identity first at unit scale and then by dilation, and explains when a continuous density produces a good kernel.",
+      "line_end": 893,
+      "line_start": 853,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The series-integral rearrangement is recoverable, but the Muntz operator's extracted signs and scaling in (3.31)-(3.32) should be verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Writing the survival function of X turns expectation of the random fractional part into a deterministic Muntz transform, furnishing a direct bridge between probability and the general strong criterion.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expected fractional parts are negative Muntz transforms of survival functions",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u017.txt",
+      "unit_bytes": 2816,
+      "unit_id": "openalex_w3205780793_u017",
+      "unit_sha256": "97478ea3d2d19c72b6839eb6008b7a675068f9d8265929f35dd85c6f78034805",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u017.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 845,
+          "line_end": 852,
+          "text": "(3) Hence |I2,n | −−−−→ 0, which concludes the proof.                                                                                                      \u0003\n                     n→∞\n\n<!-- source-page: 12 -->\n\n12                                    SÉBASTIEN DARSES — ERWAN HILLION\n\n\n",
+          "sha256": "17662b3264ad8e75f89fcee44f19939ab37bd128f88d94a75413a36b325d7023"
+        },
+        "after": {
+          "line_start": 894,
+          "line_end": 901,
+          "text": "\nTheorem 9. Let X ∈ Lq+ (Ω), q > 1, be a r.v. with a continuous density.\nIf RH holds, then there exist coefficients ck,n such that\n              Z ∞               Xn          \u001a \u001b2\n          2                                  X\n (gNB) Dn =        P(X ≥ t) −        ck,n E        dt −−−−→ 0 ;\n               0                             kt        n→∞\n                                k=1\n",
+          "sha256": "5c769462eceb298b034a75a7b0b897805164d1b7633e9dd1dfd0c31f3af9b1e8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "RH implies gNB for dilated random variables",
+            "line_end": 937,
+            "line_start": 853,
+            "mathematical_role": "Identifies expected fractional parts with a Muntz transform of a survival function and transfers deterministic strong approximation to random dilates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 893,
+          "line_start": 853,
+          "title": "Expected fractional parts are negative Muntz transforms of survival functions",
+          "unit_id": "openalex_w3205780793_u017",
+          "unit_type": "representation-change",
+          "why_material": "Writing the survival function of X turns expectation of the random fractional part into a deterministic Muntz transform, furnishing a direct bridge between probability and the general strong criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof derives the identity first at unit scale and then by dilation, and explains when a continuous density produces a good kernel.",
+          "representation_dependency": "The series-integral rearrangement is recoverable, but the Muntz operator's extracted signs and scaling in (3.31)-(3.32) should be verified.",
+          "unit_id": "openalex_w3205780793_u017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 845,
+            "line_start": 761,
+            "title": "Bounded dilations are closed by target decay, gNB error, and the random-Beurling tail estimate",
+            "unit_id": "openalex_w3205780793_u016",
+            "unit_type": "tail-closure",
+            "why_material": "For dilations below the cutoff, the fractional part linearizes on the tail, reducing the remaining integral to a coefficient-weighted first moment; gNB, admissible-target decay, Proposition 2.2, and condition C then force it to zero."
+          },
+          {
+            "line_end": 936,
+            "line_start": 895,
+            "title": "Deterministic strong approximation transfers RH to gNB for dilated random variables",
+            "unit_id": "openalex_w3205780793_u018",
+            "unit_type": "transfer-theorem",
+            "why_material": "Under RH, bounded deterministic Baez-Duarte coefficients approximate the indicator; the Muntz bridge transfers this to survival-function approximation by X/k, while a q-moment gives condition C through polynomial tail decay."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The survival function converts an expected fractional-part dilation into a Muntz transform, so a deterministic strong approximation theorem can construct gNB approximants for X/k.",
+            "limit": "The transfer uses a continuous density to obtain a good kernel and a q-moment with q greater than one to verify coefficient-tail decay.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u003",
+              "openalex_w3205780793_u017",
+              "openalex_w3205780793_u018"
+            ],
+            "title": "Survival functions bridge probabilistic dilation and Muntz approximation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 852,
+              "line_start": 846,
+              "reason": "Proof and page transition to the converse direction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u017",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u017",
+          "spontaneous_reading": "The survival function compresses the law of X into a deterministic kernel whose Müntz transform is exactly the negative expected fractional-part dilation."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u017",
+          "source_grounded_mathematics": "For nonnegative integrable X and f(x)=P(X≥x), the lemma derives E[{X/t}]=-P f(t) by a layer-cake formula, a sum over integer intervals, and scaling. A continuous density makes f a good kernel.",
+          "conceptual_reading": "A probabilistic feature family can be represented without samples: the survival function retains precisely the distributional information needed by the averaged fractional part.",
+          "representation_or_bridge": "Layer-cake probability identities bridge expectation to a sum-integral difference, which is the Müntz transform after dilation.",
+          "boundary_or_failure": "Integrability is needed for the identity, while continuous density is invoked for the good-kernel property used later; neither alone proves an approximation criterion.",
+          "uncertainty": "The sign and scaling in (3.31)-(3.32) are readable in prose but should be verified in the source PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the converse construction matching Theorem 8 for a natural dilated family.",
+      "line_end": 936,
+      "line_start": 895,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem's gNB and C displays are clear in intent but exact norm and probability notation should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under RH, bounded deterministic Baez-Duarte coefficients approximate the indicator; the Muntz bridge transfers this to survival-function approximation by X/k, while a q-moment gives condition C through polynomial tail decay.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Deterministic strong approximation transfers RH to gNB for dilated random variables",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u018.txt",
+      "unit_bytes": 2295,
+      "unit_id": "openalex_w3205780793_u018",
+      "unit_sha256": "72130c7cfb76b466d739544b8a8128d2a1e8a220e7882fb6b15869f41ead8f21",
+      "unit_type": "transfer-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u018.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 887,
+          "line_end": 894,
+          "text": "continuously differentiable function on (0, ∞) with 0 |f (t)|dt < ∞ and 0 t|f ′ (t)|dt < ∞. Let\nus notice that if X is a positive integrable r.v. with a continuous density φ then f (t) = P(X ≥ t)\nis a good kernel, and f ′ = −φ. We also obtain the probabilistic interpretation of the formula (2.4)\nin [BD05]:\n               X           Z ∞              Z ∞                  Z ∞\n     P f (t) =    f (kt) −     f (ut)du = t      f ′ (ut){u}du =     {x/t}f ′(x)dx = −E[{X/t}].\n              k≥1             0                        0                          0\n\n",
+          "sha256": "8f232cbef5bc411f781b9efd8f32637ff57cb349467b846da6d5e9815d0debb6"
+        },
+        "after": {
+          "line_start": 937,
+          "line_end": 944,
+          "text": "\n                                               4. Examples\n   To illustrate our theorems, we give two typical examples:\n    (1) Dilation: Let Xk = X/k where X ∼ E(1).√\n                                                     2\n         We have EX q < ∞, q > 1, and kXk k2 =         , so we can apply Theorem 9 and Theorem 8.\n                                                    k      \u0010 4 4\u0011\n    (2) Concentration: Let Zk,n = Yk,n 2\n",
+          "sha256": "171d7b994fe14d3b0d4890cd2730a9d7e714118838e9a72dda9d6a843a79a738"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "RH implies gNB for dilated random variables",
+            "line_end": 937,
+            "line_start": 853,
+            "mathematical_role": "Identifies expected fractional parts with a Muntz transform of a survival function and transfers deterministic strong approximation to random dilates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 936,
+          "line_start": 895,
+          "title": "Deterministic strong approximation transfers RH to gNB for dilated random variables",
+          "unit_id": "openalex_w3205780793_u018",
+          "unit_type": "transfer-theorem",
+          "why_material": "Under RH, bounded deterministic Baez-Duarte coefficients approximate the indicator; the Muntz bridge transfers this to survival-function approximation by X/k, while a q-moment gives condition C through polynomial tail decay."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This supplies the converse construction matching Theorem 8 for a natural dilated family.",
+          "representation_dependency": "The theorem's gNB and C displays are clear in intent but exact norm and probability notation should be checked against the PDF.",
+          "unit_id": "openalex_w3205780793_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 893,
+            "line_start": 853,
+            "title": "Expected fractional parts are negative Muntz transforms of survival functions",
+            "unit_id": "openalex_w3205780793_u017",
+            "unit_type": "representation-change",
+            "why_material": "Writing the survival function of X turns expectation of the random fractional part into a deterministic Muntz transform, furnishing a direct bridge between probability and the general strong criterion."
+          },
+          {
+            "line_end": 983,
+            "line_start": 938,
+            "title": "Exponential dilation and Gamma concentration instantiate different criterion routes",
+            "unit_id": "openalex_w3205780793_u019",
+            "unit_type": "examples-and-comparison",
+            "why_material": "The examples separate a fixed-law dilation family handled through gNB/Muntz transfer from a triangular Gamma family handled through pNB concentration, and the implication map highlights that pNB can imply RH without condition C."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The survival function converts an expected fractional-part dilation into a Muntz transform, so a deterministic strong approximation theorem can construct gNB approximants for X/k.",
+            "limit": "The transfer uses a continuous density to obtain a good kernel and a q-moment with q greater than one to verify coefficient-tail decay.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u003",
+              "openalex_w3205780793_u017",
+              "openalex_w3205780793_u018"
+            ],
+            "title": "Survival functions bridge probabilistic dilation and Muntz approximation"
+          },
+          {
+            "claim": "Exponential dilates exercise the noncompact Muntz/gNB route, while triangular Gamma variables exercise concentration around reciprocal integers and the samplewise pNB route.",
+            "limit": "The extracted implication diagram and Gamma parameters need scan verification, and the paper leaves their correlation structure unexplored.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u007",
+              "openalex_w3205780793_u009",
+              "openalex_w3205780793_u018",
+              "openalex_w3205780793_u019"
+            ],
+            "title": "Two model families expose complementary mechanisms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u018",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u018",
+          "spontaneous_reading": "Deterministic strong approximation transfers through the survival-function/Müntz identity to averaged random dilates X/k, while bounded coefficients and a q-moment discharge the noncompact tail condition."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u018",
+          "source_grounded_mathematics": "If RH holds and X has a continuous density with X∈Lq+ for q>1, bounded Báez-Duarte coefficients yield gNB approximation of f(t)=P(X≥t) by E[{X/(kt)}]; Markov's bound P(X/k≥M_n)≤E[X^q]/(k^qM_n^q) gives condition C.",
+          "conceptual_reading": "The construction reuses a deterministic coefficient sequence after a representation change, and q>1 makes the coefficient-weighted sum of dilation tails summable.",
+          "representation_or_bridge": "The bridge is f→P f→-E[{X/t}], followed by dilation k; it transports deterministic Müntz approximation into the gNB feature space.",
+          "boundary_or_failure": "This theorem proves RH implies gNB plus C for this dilated family; it is not by itself a converse and requires both continuous density and a q-moment above one.",
+          "uncertainty": "The theorem's intent is clear, but exact norm and probability notation should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The final remarks flag unexplored correlation structure and simplified scalar products as possible further structure rather than proved parts of the criteria.",
+      "line_end": 983,
+      "line_start": 938,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Gamma parameterization and implication diagram are substantially degraded by text extraction; verify them against the retained PDF before using the example quantitatively.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The examples separate a fixed-law dilation family handled through gNB/Muntz transfer from a triangular Gamma family handled through pNB concentration, and the implication map highlights that pNB can imply RH without condition C.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponential dilation and Gamma concentration instantiate different criterion routes",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_u019.txt",
+      "unit_bytes": 3202,
+      "unit_id": "openalex_w3205780793_u019",
+      "unit_sha256": "0095804db828614027bfc10adfa9c3671ef6046393f4fb7bc195909b484cc649",
+      "unit_type": "examples-and-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_u019.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 930,
+          "line_end": 937,
+          "text": "Hence using our Lemma 2, we deduce that (gNB) holds for the r.v. X/k and the target function\nf : t 7→ P(X ≥ t), which is a good kernel (see above).\n   Condition (C) then follows from the boundedness of the coefficients ck,n and the inequality\n                                                              EX q\n                                       P(X/k ≥ Mn ) ≤                 ,\n                                                              k q Mnq\nsince q > 1.                                                                                               \u0003\n\n",
+          "sha256": "5aa455667a62baad7dce5f080684423295f3758ba9b13884dcd1c2422a5f872c"
+        },
+        "after": {
+          "line_start": 984,
+          "line_end": 991,
+          "text": "                                          Acknowledgement\n   The authors are very grateful to the anonymous referee for his careful reading, understanding\nand valuable remarks that improved this paper. The first author warmly thanks Michel Balazard\nand Éric Saias for numerous engaging conversations over many years, especially preceding the first\nversion of the paper.\n\n                                               References\n[AS08] N. Alon, J.H. Spencer. The probabilistic method. Third edition. With an appendix on the life and work\n",
+          "sha256": "bcfed1e27ffe734bc6d6be96c670102d16013a59bec71a4143103388cf8bac12"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_41e45d45c025b1857c8f4b7f65d422edba4b6aac648758d57fc1fd71becbf846",
+        "dossier_sha256": "5b715f6b854193b16c840c7da39c013db18661146ed7520ddcd57bdf2dc39ce2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Examples and criterion map",
+            "line_end": 983,
+            "line_start": 938,
+            "mathematical_role": "Checks exponential dilation and Gamma concentration prototypes, summarizes implications, and notes that pNB avoids coefficient condition C in the concentration route."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 983,
+          "line_start": 938,
+          "title": "Exponential dilation and Gamma concentration instantiate different criterion routes",
+          "unit_id": "openalex_w3205780793_u019",
+          "unit_type": "examples-and-comparison",
+          "why_material": "The examples separate a fixed-law dilation family handled through gNB/Muntz transfer from a triangular Gamma family handled through pNB concentration, and the implication map highlights that pNB can imply RH without condition C."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The final remarks flag unexplored correlation structure and simplified scalar products as possible further structure rather than proved parts of the criteria.",
+          "representation_dependency": "The Gamma parameterization and implication diagram are substantially degraded by text extraction; verify them against the retained PDF before using the example quantitatively.",
+          "unit_id": "openalex_w3205780793_u019"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 936,
+            "line_start": 895,
+            "title": "Deterministic strong approximation transfers RH to gNB for dilated random variables",
+            "unit_id": "openalex_w3205780793_u018",
+            "unit_type": "transfer-theorem",
+            "why_material": "Under RH, bounded deterministic Baez-Duarte coefficients approximate the indicator; the Muntz bridge transfers this to survival-function approximation by X/k, while a q-moment gives condition C through polynomial tail decay."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Exponential dilates exercise the noncompact Muntz/gNB route, while triangular Gamma variables exercise concentration around reciprocal integers and the samplewise pNB route.",
+            "limit": "The extracted implication diagram and Gamma parameters need scan verification, and the paper leaves their correlation structure unexplored.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_u007",
+              "openalex_w3205780793_u009",
+              "openalex_w3205780793_u018",
+              "openalex_w3205780793_u019"
+            ],
+            "title": "Two model families expose complementary mechanisms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_u019",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_u019",
+          "spontaneous_reading": "The examples separate two mechanisms: a fixed exponential law under reciprocal dilation uses the Müntz/gNB route, while a concentrating Gamma triangle uses perturbative pNB stability."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_u019",
+          "source_grounded_mathematics": "For X exponential, X/k has all required moments and fits Theorems 9 and 8. A Gamma-based triangular family matches reciprocal-square-root means with shrinking variance and fits Theorem 5; the summary notes that its pNB-to-RH implication does not need condition C.",
+          "conceptual_reading": "The laws are mechanism probes rather than interchangeable examples: one supplies an analytic survival kernel, the other approximates the discrete reciprocal dictionary.",
+          "representation_or_bridge": "Exponential scaling realizes the survival/Müntz bridge, whereas Gamma concentration realizes the variance-controlled perturbation bridge.",
+          "boundary_or_failure": "The correlation structure is explicitly unexplored, and the claimed scalar-product simplification is only cited; the implication diagram does not establish broader optimality.",
+          "uncertainty": "Gamma parameters and the extracted implication diagram are substantially degraded and require PDF verification before quantitative use."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "d8690b1cd91e740b42a6a765dc2fc17059167d42324961a0f3ce95f2314929db"
+}

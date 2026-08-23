@@ -1,0 +1,929 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_atomic_split_approximation_limit": {
+      "boundary_or_failure": "The split uses the total order and quantiles on the real line. The target portion assigned to a single atom is canonical, but recursively processing several atoms can depend on their order; the limiting proof gives existence and compactness, not a canonical or computationally effective coupling for a general source.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_9ced14624858721a044a5fedcf5aa290edee08be520fc03d7eebc7563663e5bd",
+        "agnostic_oa_critic_3453e0ba1c307e2d9224be4fcda534b62328c803980b6a62a7592000e4d282ba"
+      ],
+      "interpretation": "Inference: a global barycenter constraint can be maintained under divide-and-conquer if each atomic demand removes exactly the target mass whose quantile slice has the required mean. Convex order is the invariant that survives both the removal step and the approximation limit.",
+      "nonparaphrase_operation": "Replace a finite source atom by a two-boundary quantile slice of the target having the same mass and barycenter, couple that atom to the slice, subtract both, and repeat. For a nonatomic source, approximate it by interval barycenters ordered increasingly in convex order and pass to an accumulation point while retaining the martingale constraints.",
+      "quality_reason": "The candidate accurately follows the unique quantile-slice allocation for one atom, the convex-order proof for the residual, finite induction, ordered atomic approximation, and compactness passage for a general source.",
+      "source_support": "The source constructs the target portion for an atom from a quantile interval, proves the remainder stays in convex order by linearizing a convex test function across that interval, and iterates over finitely many atoms. It then approximates a general source by atomic measures and uses weak-plus-first-moment compactness of martingale couplings.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Some displayed formulas are degraded by extraction, but the quantile-slice, remainder-invariant, and compactness mechanisms are legible. No quantitative convergence rate is supplied.",
+      "unit_id": "agnostic_oa_atomic_split_approximation_limit"
+    },
+    "agnostic_oa_constructive_variation_spreading": {
+      "boundary_or_failure": "The constructive variational proof assumes a continuous cost, finite improving variation, one-dimensional regular conditional supports, and solvability of the local mass-and-mean balance equations. Positivity survives only for sufficiently small perturbations, and domination is obtained after averaging and scaling. The source explicitly says the method does not readily extend to general product spaces.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_d1fd3c9e9b4499908de35f99ce66acfefdb77cf34ef10abd191a7c94a7ad50d2",
+        "agnostic_oa_critic_a6700f9038b2104640b87f2aa12350618a08829af27335566c2c060077e5c9eb"
+      ],
+      "interpretation": "Inference: a local finite improvement can contradict global optimality only after it is spread over actual mass. Regular nearby fibers provide that mass, bridge operations repair the conditional means after moving support points, and averaging changes pointwise availability into domination by the original coupling.",
+      "nonparaphrase_operation": "Encode a cheaper finite competitor as a signed variation with zero marginals and zero conditional first moments. Replace each positive support point by mass from small target intervals in nearby regular fibers, use rectangular exchanges and bridge chains to restore every local mean constraint, and keep the variation inside a continuity neighborhood where its cost gain remains positive. Average these repaired variations over positive-measure source neighborhoods and scale them until the positive part is dominated by the original plan; subtract it to obtain a global cheaper competitor.",
+      "quality_reason": "The signed-variation constraints, stability of positive cost under small perturbations, movement of positive support through nearby conditional mass, bridge repair of conditional moments, scaling, averaging, domination by the original plan, and final cheaper competitor are faithfully captured.",
+      "source_support": "The source defines the linear constraints for admissible signed variations, proves that cost positivity is stable under small support and mass perturbations, and constructs bridge corrections that move positive support while restoring conditional means. Its proposition supplies variations over nearby regular fibers; averaging them yields a positive variation whose positive part is bounded by the original coupling, proving the finite optimality property without the earlier capacity theorem.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Several long formulas and bridge coefficients are OCR-sensitive, so this record retains the constraint-preserving sequence and stated hypotheses rather than attempting exact numeric reconstruction. The method's lack of a general product-space extension is explicit.",
+      "unit_id": "agnostic_oa_constructive_variation_spreading"
+    },
+    "agnostic_oa_convex_order_feasibility": {
+      "boundary_or_failure": "The equivalence uses finite first moments and the one-dimensional convex order. Affine tests are needed to recover equal mass and barycenter; only after those quantities match may arbitrary convex tests be compressed to the hinge family (x-k)+ for all real k.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_0ede4906344c968a02a99fe5a531c3cbb3b9b9960e96c01f5643751e35df09c0",
+        "agnostic_oa_critic_932b9c47ebc77232783d22dd97e66124345db70fcad0e3ddbed37ece87207f24",
+        "agnostic_oa_revision_5904a5001391962a486c0cc5fa762e49de0b1fea14156ea78984e1ce424687b8"
+      ],
+      "interpretation": "Inference: martingale feasibility can be viewed as an order question rather than as a search through kernels. The preserved conditional barycenter becomes a family of observable convex inequalities, so an existential coupling problem acquires a kernel-independent feasibility test within the one-dimensional convex-order representation.",
+      "nonparaphrase_operation": "Given two candidate marginals, first use affine functions to check equal mass and first moment, then compare their integrals against (x-k)+ for every real k. Interpret failure as a certificate that no barycenter-preserving disintegration exists; interpret success as permission to invoke the stated existence theorem, not as an explicit construction.",
+      "quality_reason": "Accepted after replacing the unsupported representation-independent gloss with the source-bounded kernel-independent reading and adding the exact hinge-family compression available once mass and first moment match.",
+      "source_support": "The source defines martingale transport through conditional barycenters and states that a coupling exists exactly when the source measure is below the target in convex order. It proves necessity by conditional Jensen inequality, states that equal mass and first moment reduce convex-order testing to (x-k)+ for all real k, and defers the constructive sufficiency mechanism to the atomic-splitting argument.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2283275366",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Source-grounded repair using AGENTS.md, the exact SHA-bound revision assignment openalex_w2283275366_404d9508_part_01.json, and only its nine referenced local unit artifacts; no network, OpenAlex/acquisition, issues, unrelated sources, other outputs, novelty comparison, or subdelegation."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The extraction is clear on the equivalence and hinge test, but the sufficiency proof is outside this span, so this record does not claim a new proof or an effective algorithm.",
+      "unit_id": "agnostic_oa_convex_order_feasibility"
+    },
+    "agnostic_oa_cost_curvature_forbidden_rerouting": {
+      "boundary_or_failure": "The rerouting sign uses the stated strict convexity of the derivative of a displacement cost, together with differentiability and finite-cost integrability. It does not apply automatically to an arbitrary convex cost. The product-cost variant has separate monotonicity and strict-convexity hypotheses and should not be conflated with the displacement case.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_c263d0081a7e6b56c42e75d21933e04d79be1d1c3b1a3373dafd1e438bc64672",
+        "agnostic_oa_critic_bc750cd952994306c545a6f952ed752e555f6a1d144f954b4115ed27939dd876"
+      ],
+      "interpretation": "Inference: curvature can select a canonical transport geometry because it assigns a strict sign to a constraint-preserving local exchange. Once every forbidden crossing admits a cheaper rerouting, optimality forces the entire support into the monotone class whose coupling is already rigid.",
+      "nonparaphrase_operation": "Take a local three-branch configuration that violates left monotonicity, solve for an alternative finite measure with the same two marginals and conditional barycenters, and compare the costs by expressing the difference through the curvature of the cost derivative. Use the strict sign to exclude the configuration, then invoke monotone rigidity to identify the optimizer.",
+      "quality_reason": "The three-edge swap, preservation of marginals and conditional barycenters, Jensen sign from strict convexity of h-prime, exclusion of forbidden crossings, and uniqueness through monotone rigidity are faithful. The alternate product-cost proof is also accurately bounded.",
+      "source_support": "For costs of the form h(y-x) with strictly convex h-prime, the source constructs a finite competitor at a forbidden crossing and derives a strict cost improvement, so every optimizer is left-monotone and hence the canonical coupling. It separately treats costs formed as a decreasing source factor times a strictly convex target factor through prefix-shadow comparisons.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. OCR obscures parts of the displayed cost algebra, so this record preserves the qualitative strict-sign mechanism without reconstructing a formula that might be mistranscribed.",
+      "unit_id": "agnostic_oa_cost_curvature_forbidden_rerouting"
+    },
+    "agnostic_oa_finite_competitor_variational_principle": {
+      "boundary_or_failure": "Finite optimality is asserted as a necessary support property of an optimal plan, not as a general sufficient condition in this span. A competitor must preserve both marginals and each conditional barycenter; preserving only total mass or global mean is too weak. The proof also relies on a Kellerer-type dichotomy and measurable selection.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_f14b881df77384f0b6c38395cdab0a24050f1101bc1c282f0a03e4481884dd0c",
+        "agnostic_oa_critic_bf091026483726ea15d15adbced3f5dda6f801d0dc42a0baab8776bffb86c41c",
+        "agnostic_oa_revision_cdfcb0b8aa567292a11152f8e3c9d84e300464bfa1e945887aa0ecb18a48f6b1"
+      ],
+      "interpretation": "Inference: global optimality forbids any finitely supported local rerouting that respects every conserved quantity. This converts an infinite-dimensional optimum into adversarial finite tests on a full-measure support; Kellerer's null-cover versus dominated-positive-family dichotomy and measurable selection supply the local-to-global aggregation.",
+      "nonparaphrase_operation": "Select finitely many support points and formulate a linear program over measures with the same two marginals and the same conditional barycenters. If a cheaper competitor exists, treat it as a local defect; use the Kellerer-type positive-family alternative, rescale it so the averaged bad subplan is dominated by the original optimum, measurably select finite linear-program optimizers, and replace the dominated subplan to contradict optimality.",
+      "quality_reason": "Accepted after identifying the actual Kellerer-type dichotomy and measurable-selection mechanism and preserving the domination-producing rescaling required for the global replacement.",
+      "source_support": "The source states a variational lemma producing a full-measure set on which every finite measure has no cheaper competitor. Its proof applies a Kellerer-type dichotomy: null-coordinate covers dispose of impossible configurations, whereas a positive family is rescaled to have coordinate marginals dominated by the optimum and averaged with measurably selected finite linear-program optimizers to improve the original plan.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2283275366",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Source-grounded repair using AGENTS.md, the exact SHA-bound revision assignment openalex_w2283275366_404d9508_part_01.json, and only its nine referenced local unit artifacts; no network, OpenAlex/acquisition, issues, unrelated sources, other outputs, novelty comparison, or subdelegation."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The imported dichotomy and measurable-selection details are not reconstructed beyond the source's stated use, and no extension beyond the stated martingale setting is inferred.",
+      "unit_id": "agnostic_oa_finite_competitor_variational_principle"
+    },
+    "agnostic_oa_finite_dual_certificate_compactness": {
+      "boundary_or_failure": "The certificate theorem assumes a regular irreducible support and the source's continuity or regularity conditions on the cost. Finite optimality alone does not automatically supply globally integrable potentials. Affine normalization is a gauge choice, and compactness yields existence rather than an efficient algorithm.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_26b0cebcd628f1e205bb0bf89f95533b35312914080076b5fb9e2c809d7e2d1f",
+        "agnostic_oa_critic_3e412756909aff8db29a6608e830a7d18020868e8320d091390bcd9f7943dbda",
+        "agnostic_oa_revision_955b8b0eeb0781a8d55d22c59055bcf78049e1d071b7a1fcb3d026040269002a"
+      ],
+      "interpretation": "Inference: compatible finite dual witnesses can be assembled into a global certificate when irreducibility supplies overlap paths that prevent their normalizations from drifting apart. Compactness then replaces an explicit infinite construction, and an envelope converts pointwise inequalities into regular dual functions.",
+      "nonparaphrase_operation": "For each finite subset of the support, first enlarge it to a finite regular subset and choose a finite martingale measure supported there; use finite optimality and finite linear-program duality to obtain a witness, then restrict it back and normalize its dual variables by an affine gauge. Propagate uniform bounds through overlapping support intervals, regard each finite witness as a constraint on a product of compact coordinate ranges, and use the finite-intersection property to obtain one function valid on every finite subset. Regularize it with the source's convex-envelope construction and recover the remaining dual terms from supporting slopes.",
+      "quality_reason": "Accepted after inserting the necessary regular-enlargement and finite martingale-support construction before LP duality while retaining the source's normalization, overlap bounds, compactness, and envelope recovery.",
+      "source_support": "The source obtains dual inequalities with equality on a finitely optimal regular irreducible set. For each arbitrary finite set it first passes to a finite regular enlargement supporting a martingale measure, then applies finite optimality and linear-program duality. It derives bounds by chaining overlapping intervals furnished by irreducibility, applies product compactness to compatible finite restrictions, and constructs upper-semicontinuous dual functions via envelope operations.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2283275366",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Source-grounded repair using AGENTS.md, the exact SHA-bound revision assignment openalex_w2283275366_404d9508_part_01.json, and only its nine referenced local unit artifacts; no network, OpenAlex/acquisition, issues, unrelated sources, other outputs, novelty comparison, or subdelegation."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The exact envelope signs are partly OCR-degraded, and the resulting functions may require the separate renormalization argument before their integrals are meaningful.",
+      "unit_id": "agnostic_oa_finite_dual_certificate_compactness"
+    },
+    "agnostic_oa_integrability_renormalization_gluing": {
+      "boundary_or_failure": "The renormalization relies on convex order and the martingale Jensen-gap identity. Adding a convex correction is a gauge transformation only when opposite changes are made to the two marginal potentials with consistent signs. The final componentwise-to-global optimality transfer in the span assumes bounded continuous cost and the stated irreducible decomposition.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_6488b1e4a8dd8f4cf385007a710352786d42017e657a11b26c8f51e260346469",
+        "agnostic_oa_critic_26e76a13a1900476fcbf1a7db6fdf62f5309372d3db555667877470093326576",
+        "agnostic_oa_revision_768112054dccf2cab8e15b75f14b9aa077de6b293ac3c982c1aa32fcc026ef23"
+      ],
+      "interpretation": "Inference: a pointwise dual certificate can be made integrable without changing its value on feasible martingale couplings by transferring a convex correction between its marginal terms. This separates algebraic certification from analytic integrability and makes the certificate usable on each irreducible component; the decomposition theorem then transfers componentwise optimality to the full plan.",
+      "nonparaphrase_operation": "Identify a convex or concave function whose Jensen gap depends only on the fixed marginals, use it to shift growth from one dual marginal function to the other, and define the dual value through the invariant marginal difference. Choose the correction as an envelope of affine supports so the shifted functions become bounded or integrable, apply the corrected certificate separately on each irreducible component, and invoke the decomposition's componentwise optimality equivalence for the full plan without constructing or summing a global family of certificates.",
+      "quality_reason": "Accepted after removing the unsupported claim that local certificates are summed and stating the source's actual transfer from renormalized component certificates to global optimality through the decomposition theorem.",
+      "source_support": "The source proves that the Jensen gap of an admissible convex or concave correction is invariant over martingale couplings and uses this fact to define dual integrals even when the original potentials are not separately integrable. It constructs a correction controlling their growth, proves optimality separately on each irreducible component for bounded continuous cost, and invokes the earlier componentwise optimality equivalence to conclude optimality of the full plan.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2283275366",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Source-grounded repair using AGENTS.md, the exact SHA-bound revision assignment openalex_w2283275366_404d9508_part_01.json, and only its nine referenced local unit artifacts; no network, OpenAlex/acquisition, issues, unrelated sources, other outputs, novelty comparison, or subdelegation."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. OCR makes the displayed sign convention for the shifted functions unreliable, so the record states the invariant transfer mechanism without fixing an unsupported sign formula.",
+      "unit_id": "agnostic_oa_integrability_renormalization_gluing"
+    },
+    "agnostic_oa_intersection_complexity_support_bound": {
+      "boundary_or_failure": "The support bound applies at nonatomic source points and assumes the stated smoothness of the displacement cost. It depends on a uniform upper bound on intersections between h-prime and affine functions; atoms are not covered, and a bound on intersections with constants would be the wrong criterion for the martingale problem.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_e13d1640f975910f1ae714253b7d90b67198f93a92b707da2cc569cd3d472eba",
+        "agnostic_oa_critic_ffe5f7d362c7a3a03ccc118f4d9af5c4417aeffb6f037c373ef9b4e500ecc9a2",
+        "agnostic_oa_revision_f68a08d1e817bc2542cacbaa3525cbc66652a78648da6182a087682e463dc0af"
+      ],
+      "interpretation": "Inference: analytic oscillation complexity of a cost controls combinatorial branching of an optimizer. The affine correction records the mass and barycenter constraints, so the number of possible contacts with the corrected derivative limits the number of target points that can coexist in a conditional fiber.",
+      "nonparaphrase_operation": "Assume a conditional fiber contains k+1 ordered target points b0 through bk. Use the affine-intersection bound to choose an interior bi whose h-prime value lies off the affine secant through the endpoint h-prime values, write bi as the corresponding convex combination of b0 and bk, and reproduce bi in a nearby fiber. Form the source's three-edge competitor and choose the nearby source point on the side that fixes the first-order Taylor sign, yielding a cheaper rerouting and contradicting finite optimality.",
+      "quality_reason": "Accepted after replacing the unsupported generic orthogonal-coefficient variation with the source's endpoint interpolation, interior secant failure, nearby-fiber recurrence, and three-edge Taylor-sign mechanism.",
+      "source_support": "The source states that if every affine function intersects h-prime in at most k points, then an optimal martingale disintegration has at most k support points at almost every nonatomic source location. Its proof chooses endpoints and an interior sampled point off their affine secant in h-prime values, invokes nearby support recurrence, and uses a specific three-edge competitor whose first-order cost sign is selected by the side of the nearby source point.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2283275366",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Source-grounded repair using AGENTS.md, the exact SHA-bound revision assignment openalex_w2283275366_404d9508_part_01.json, and only its nine referenced local unit artifacts; no network, OpenAlex/acquisition, issues, unrelated sources, other outputs, novelty comparison, or subdelegation."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The extracted Taylor displays are imperfect, but the affine-intersection hypothesis, endpoint-interpolation mechanism, nonatomic restriction, and support-cardinality conclusion are explicit.",
+      "unit_id": "agnostic_oa_intersection_complexity_support_bound"
+    },
+    "agnostic_oa_irreducible_potential_gap_decomposition": {
+      "boundary_or_failure": "The decomposition uses connected components of a one-dimensional open potential-gap set. Boundary equality prevents martingale mass from crossing components, but the common residual eta need not be mutually singular with a target component nu_k: eta wedge nu_k may be nonzero. Countably many components still require the stated componentwise reduction, and the result is not a generic decomposition for arbitrary partial orders.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_938e219f41c15dc26dbff80c57c723b084590e64a2784cb7ac5c25cdf3ffbe76",
+        "agnostic_oa_critic_c736878daad1b5d482d67a9c57b1ccbeab4039c17ffa5424e9026fbf32e23c5b",
+        "agnostic_oa_revision_eb918324f7743ddbf2caa8dde5d9959ef220e541218c81e8ebcd75d4aa5fa7f0"
+      ],
+      "interpretation": "Inference: before optimizing a coupling, factor out regions where the order constraint is already tight. The positive potential-gap components isolate exactly the domains with transport freedom, while the complement is forced to remain static; optimization then becomes componentwise.",
+      "nonparaphrase_operation": "Compute the two absolute-value potentials, take the open set where the source potential is strictly below the target potential, and split it into connected intervals. Restrict the source to each interval; use equality of the potentials at its boundaries and the resulting no-crossing property to derive a coupling-independent target component. Keep the common residual measure on the diagonal, solve or certify each irreducible component independently, then sum the component plans with the static part.",
+      "quality_reason": "Accepted after replacing the broader unsupported overlap statement with the exact residual-component caveat and making the boundary-equality/no-crossing basis for coupling-independent target pieces explicit.",
+      "source_support": "The source decomposes a pair in convex order into irreducible components indexed by connected components of the strict potential gap plus a common residual measure. Boundary potential equality yields no crossing and makes each target component independent of the coupling. Every martingale coupling splits uniquely into component couplings and an identity coupling, global optimality is equivalent to componentwise optimality, and the source notes that the residual eta may overlap a component nu_k.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2283275366",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Source-grounded repair using AGENTS.md, the exact SHA-bound revision assignment openalex_w2283275366_404d9508_part_01.json, and only its nine referenced local unit artifacts; no network, OpenAlex/acquisition, issues, unrelated sources, other outputs, novelty comparison, or subdelegation."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Some component notation is extraction-sensitive; the gap-set decomposition, no-crossing conclusion, residual-component overlap caveat, and componentwise reduction are explicit, while stronger disjointness claims are not inferred.",
+      "unit_id": "agnostic_oa_irreducible_potential_gap_decomposition"
+    },
+    "agnostic_oa_monotone_coupling_rigidity": {
+      "boundary_or_failure": "The rigidity argument is tied to the source's left-monotone forbidden-crossing condition on the real line. The two-graph conclusion needs an atomless source; atoms can support more complicated conditional fibers. The midpoint argument proves uniqueness only after every coupling in the considered convex set has the two-point fiber property.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_db12ed1c7bf90b91db8ce7a84d7616acb264adbb582f57f34d60d2021a5018ef",
+        "agnostic_oa_critic_8eab672b10f5a537de7bdabfbffc9b0a24933a320e317a766520e8fdb589b4d6"
+      ],
+      "interpretation": "Inference: a qualitative order constraint can become a uniqueness theorem when it fixes every cumulative target allocation. Under non-atomicity, the same local prohibition collapses each conditional support to at most two choices, making convex averaging too rigid to hide distinct solutions.",
+      "nonparaphrase_operation": "Compare the target marginal of each source prefix with its shadow. If they differ, use the signed excess and deficit to construct a forbidden crossing, forcing equality for every prefix and hence equality of couplings. For atomless sources, combine nearby recurrence with the same crossing prohibition to bound fibers by two; then average any two candidates and use the fixed barycenter on a two-point support to force their conditional laws to agree.",
+      "quality_reason": "The prefix-shadow comparison, contradiction from signed excess and forbidden crossing, two-point fiber bound after removing a countable set for continuous source, and half-sum rigidity argument are accurately captured.",
+      "source_support": "The source proves that every left-monotone martingale coupling equals the prefix-shadow construction. It then proves that, for a continuous source, the conditional support has at most two points, and uses convexity of the coupling set plus uniqueness of a probability on two points with a fixed mean to obtain uniqueness in the stated class.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Several support-set arguments rely on measure-theoretic lemmas cited in the span; their hypotheses are retained, and no atomic-source two-graph claim is made.",
+      "unit_id": "agnostic_oa_monotone_coupling_rigidity"
+    },
+    "agnostic_oa_nested_prefix_canonical_coupling": {
+      "boundary_or_failure": "The construction needs a totally ordered source and a nested family that determines its Borel sets. Prescribing shadows for arbitrary, nonnested subsets need not be consistent. The resulting coupling is canonical relative to the chosen left-prefix filtration, not independent of all possible orderings.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_9a773532641a9823bb319a3fa7c0c1638404d8bc326d764800d81fe4c81a3865",
+        "agnostic_oa_critic_6ebfca8a8589da09fc0c0e7be3cfb83f091a6b1701b845704edb80ac74bdf96d"
+      ],
+      "interpretation": "Inference: compatible cumulative constraints can determine a joint object even when individual conditionals are not specified directly. Nested shadows turn each prefix into a consistent target allocation, so additivity and barycenter preservation reconstruct a canonical martingale coupling.",
+      "nonparaphrase_operation": "For every left prefix of the source, compute its shadow in the fixed target and prescribe that as the target marginal of the coupling restricted to the prefix. Use nesting to define a measure consistently on prefix-by-target rectangles, then recover the full coupling and verify the martingale property from the matching barycenters of all prefixes.",
+      "quality_reason": "Prescribing every prefix-to-shadow target marginal, using nesting to obtain a unique product measure, verifying the second marginal and martingale identity, and linking prefix minimality to left monotonicity are all faithful.",
+      "source_support": "The source proves that shadows of increasing left restrictions are nested, uses these restrictions to define a unique product measure, and shows its second marginal and conditional barycenter constraints. It also connects simultaneous prefix optimality for a cost family to the forbidden-crossing geometry called left monotonicity.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The measure-extension details are compressed in the excerpt, and the record makes no claim for partial orders or higher-dimensional prefixes.",
+      "unit_id": "agnostic_oa_nested_prefix_canonical_coupling"
+    },
+    "agnostic_oa_regular_conditional_support_transfer": {
+      "boundary_or_failure": "A point in the support of an arbitrary conditional law need not yield a point in the support of the joint law without selecting regular base points. The argument is one-dimensional, uses quantiles and Lebesgue density, and produces an almost-everywhere set that may depend on the chosen disintegration; it is not pointwise continuity of the kernel.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_3c048a83d64c887f40a1f84c5fbe3abe46b5bf1d266bde4626ee1b12eead1529",
+        "agnostic_oa_critic_20904cfbf473e44ae1ac7628b1d949548608b0d77d9025f8b085479c2ef79d8d"
+      ],
+      "interpretation": "Inference: density regularity can transfer finitely many conditional support events from one fiber to a positive-measure cloud of nearby fibers. This supplies the replication needed to turn a fiberwise configuration into a joint-measure perturbation without pretending that conditional laws vary continuously everywhere.",
+      "nonparaphrase_operation": "Pull a general first marginal back to the unit interval with its quantile map, apply density differentiation simultaneously to a countable family of rational semiopen target intervals, and push the resulting regular set forward. Around a regular base point, choose disjoint rational intervals carrying positive conditional mass; shrink source neighborhoods until a positive-measure set of nearby fibers assigns positive mass to every chosen target interval.",
+      "quality_reason": "Mean differentiation of conditional interval probabilities, quantile transfer to a general first marginal, full-measure regular points, and simultaneous persistence of finitely many positive conditional events on positive nearby mass are all faithful.",
+      "source_support": "The source establishes mean convergence of conditional probabilities on rational semiopen intervals at almost every quantile parameter, transfers it to a full-measure set for a general first marginal, and proves that finitely many positive conditional events persist simultaneously on a positive-measure set of nearby base points. It explicitly warns that conditional support does not automatically imply joint support outside this regular set.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The quantile formulas are partly OCR-degraded, but the atom/nonatom split, averaged convergence, and simultaneous positive-mass conclusion are explicit. No higher-dimensional differentiation analogue is claimed.",
+      "unit_id": "agnostic_oa_regular_conditional_support_transfer"
+    },
+    "agnostic_oa_shadow_associativity_continuity": {
+      "boundary_or_failure": "Associativity concerns allocation into a residual target: the second shadow is taken after subtracting the first. It does not say that labeled sequential allocations commute under arbitrary reordering. Continuity is proved in the weak-plus-first-moment setting and inherits the one-dimensional potential and quantile hypotheses.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_07f495c4a0d3d572d57c84e5a37c9696440e9e55630ee686979b9f2a157a1c4c",
+        "agnostic_oa_critic_82b4200a873926bd97e95903f03f447ff0eb3bec1f12167d09ff648384f37c51"
+      ],
+      "interpretation": "Inference: a canonical projection can support streaming decomposition when projecting a sum agrees with projecting one part and then projecting the remainder. This makes grouping choices harmless while preserving the resource constraint exactly.",
+      "nonparaphrase_operation": "Allocate the first demand by taking its shadow in the target, subtract that allocation, then take the second demand's shadow in the residual. Replace the two-step result by the single shadow of the summed demand when regrouping, and extend finite atomic allocations to general measures by monotone convex-order approximation plus potential convergence.",
+      "quality_reason": "The residual-target direction, feasibility of the second demand, shadow-of-a-sum identity, atomic recurrence, and passage to general measures are represented accurately.",
+      "source_support": "The source proves the shadow identity for a sum and the feasibility of the second demand in the residual target. It establishes the identity first for atoms, controls perturbations in first-moment topology, iterates over finite atomic measures, and then passes to general measures using ordered approximations and convergence of potentials.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Some long displays are OCR-damaged; the residual-target direction and the associativity theorem are clear, while no quantitative stability beyond the source's stated topology is inferred.",
+      "unit_id": "agnostic_oa_shadow_associativity_continuity"
+    },
+    "agnostic_oa_shadow_minimal_feasible_projection": {
+      "boundary_or_failure": "A shadow exists only when the source is below the ambient target in extended convex order. Its minimality is with respect to convex order among target submeasures, not pointwise density or support inclusion. The potential proof and atom formula depend on the one-dimensional order.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_218abbe51c819a0206d0988f41b1313ba7e97c983c757618825d97ac6f9da28d",
+        "agnostic_oa_critic_ead56899c43fa8836668d568c3ed6be46ab3d49c6c310d927a234f6f3af3a79a",
+        "agnostic_oa_revision_81ab0ccdfb279b0e8914931ea7dcd485ecaa35c9990025faf3f46232dc80af1f"
+      ],
+      "interpretation": "Inference: the shadow acts as a canonical projection of a mass-and-barycenter demand into a capacity-constrained target. Canonicality comes from minimizing the convex spread of the selected target portion rather than from minimizing distance in an ambient norm.",
+      "nonparaphrase_operation": "Form the feasible set of target submeasures that dominate the demand in convex order, then select its unique convex-order minimum. For an atomic demand, realize the selection as the target quantile interval with the prescribed mass and barycenter; for a general demand, take the pointwise infimum of feasible potentials, prove it is convex using stability under the convex hull of pairwise minima, and identify that infimum as the minimal feasible potential.",
+      "quality_reason": "Accepted after restoring the source's actual infimum-and-convexity argument instead of applying an unsupported convex envelope to the infimum.",
+      "source_support": "The source defines the feasible class and proves that it has a unique minimum in convex order, called the shadow. It takes the pointwise infimum of feasible potentials and proves its convexity from closure under the convex hull of pairwise minima, then identifies the resulting potential with the minimum; it also identifies the shadow of an atom as a quantile interval whose barycenter matches the atom.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2283275366",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Source-grounded repair using AGENTS.md, the exact SHA-bound revision assignment openalex_w2283275366_404d9508_part_01.json, and only its nine referenced local unit artifacts; no network, OpenAlex/acquisition, issues, unrelated sources, other outputs, novelty comparison, or subdelegation."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The exact displayed formula for the pairwise-minimum operation is partially degraded in extraction; the uniqueness, feasibility, convexity argument, and minimality claims are supported, but no multidimensional analogue is asserted.",
+      "unit_id": "agnostic_oa_shadow_minimal_feasible_projection"
+    }
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w2283275366_404d9508_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_convex_order_feasibility.txt",
+      "artifact_bytes": 7335,
+      "artifact_relpath": "depth/units/agnostic_oa_convex_order_feasibility.txt",
+      "artifact_sha256": "0943271897a54a3fd8906425f7b406dc667f4e78a61a8099e52eb0ba78e3baec",
+      "context_note": "Necessity is the Jensen direction; sufficiency is developed constructively in the following unit. The extraction preserves the logical statement but damages some order symbols and displayed formulas.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_cost_curvature_forbidden_rerouting",
+            "agnostic_oa_intersection_complexity_support_bound",
+            "agnostic_oa_finite_dual_certificate_compactness",
+            "agnostic_oa_integrability_renormalization_gluing"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source internally links convex feasibility tests, pointwise potential geometry, canonical minimal submeasures, local cost separation, support bounds, and dual certificates. This reinforces the routed lens only; novelty relative to the existing corpus was not inspected."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_atomic_split_approximation_limit",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_monotone_coupling_rigidity",
+            "agnostic_oa_regular_conditional_support_transfer",
+            "agnostic_oa_constructive_variation_spreading"
+          ],
+          "identifier": "stochastic_processes",
+          "kind": "reinforced_44_lens",
+          "summary": "The martingale barycenter condition acts simultaneously as a feasibility invariant, a coupling constraint, and a kernel-level support condition. The evidence is for a one-step two-marginal setting and should not be generalized to arbitrary stochastic processes."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 545,
+      "line_start": 413,
+      "representation_dependency": "This criterion depends materially on probability measures on the real line, integrability, convex test functions, and the martingale/barycenter representation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The source identifies a global family of convex test inequalities as both necessary and sufficient for a coupling with the prescribed conditional-barycenter constraint, separating semantic feasibility from any particular construction.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Convex order as the exact feasibility condition for martingale coupling",
+      "unit_id": "agnostic_oa_convex_order_feasibility",
+      "unit_type": "feasibility-criterion"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_atomic_split_approximation_limit.txt",
+      "artifact_bytes": 9639,
+      "artifact_relpath": "depth/units/agnostic_oa_atomic_split_approximation_limit.txt",
+      "artifact_sha256": "d4711cb30071c521293cdf3dd0def059d220f943acc4662098daa358c082862e",
+      "context_note": "This gives a reusable decomposition-plus-limit move rather than merely citing existence. Exact formulas for split measures and order relations should be checked against the PDF.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_atomic_split_approximation_limit",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_monotone_coupling_rigidity",
+            "agnostic_oa_regular_conditional_support_transfer",
+            "agnostic_oa_constructive_variation_spreading"
+          ],
+          "identifier": "stochastic_processes",
+          "kind": "reinforced_44_lens",
+          "summary": "The martingale barycenter condition acts simultaneously as a feasibility invariant, a coupling constraint, and a kernel-level support condition. The evidence is for a one-step two-marginal setting and should not be generalized to arbitrary stochastic processes."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 717,
+      "line_start": 546,
+      "representation_dependency": "The construction uses the total order of the real line, atomic approximants, barycenters, weak convergence, and uniform first-moment control.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "A feasible coupling is built first by recursively allocating the target around source atoms while preserving convex order, then extended to general measures through monotone atomic approximation and a compactness limit.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Existence by atomic splitting, ordered approximation, and compactness",
+      "unit_id": "agnostic_oa_atomic_split_approximation_limit",
+      "unit_type": "constructive-existence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_finite_competitor_variational_principle.txt",
+      "artifact_bytes": 9111,
+      "artifact_relpath": "depth/units/agnostic_oa_finite_competitor_variational_principle.txt",
+      "artifact_sha256": "adcc2d1aaa19b675e262eeb88b25fd5433573af4085866da8564789ebe09215c",
+      "context_note": "The proof uses a null-set versus positive-measure alternative followed by measurable averaging; the brief dual formulation immediately before this span is supporting context, not treated as an additional unit.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_finite_competitor_variational_principle",
+            "agnostic_oa_finite_dual_certificate_compactness",
+            "agnostic_oa_integrability_renormalization_gluing"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Constraint-preserving finite variations provide a primal local test, while finite LP certificates compactify and renormalize into global dual witnesses. The finding is source-internal support, not a corpus-level novelty claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 899,
+      "line_start": 738,
+      "representation_dependency": "Material constraints are equality of both marginals and preservation of the conditional first moment; omitting the barycenter constraint changes the competitor class.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The variational principle turns a global transport optimum into a full-measure local support property: no finite subconfiguration can be rerouted with the same marginals and conditional barycenters at lower cost.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Global optimality forces resistance to finite constraint-preserving competitors",
+      "unit_id": "agnostic_oa_finite_competitor_variational_principle",
+      "unit_type": "local-to-global-optimality"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_shadow_minimal_feasible_projection.txt",
+      "artifact_bytes": 5854,
+      "artifact_relpath": "depth/units/agnostic_oa_shadow_minimal_feasible_projection.txt",
+      "artifact_sha256": "b93eea25a706a377117ddaafb6fc39c9740a90392c47affd0c1bce2ac4e2b3d2",
+      "context_note": "Existence is obtained from an infimum of potentials stabilized by a convex-hull/minimum construction; exact displayed identities are partly damaged but the universal minimality argument is readable.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_cost_curvature_forbidden_rerouting",
+            "agnostic_oa_intersection_complexity_support_bound",
+            "agnostic_oa_finite_dual_certificate_compactness",
+            "agnostic_oa_integrability_renormalization_gluing"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source internally links convex feasibility tests, pointwise potential geometry, canonical minimal submeasures, local cost separation, support bounds, and dual certificates. This reinforces the routed lens only; novelty relative to the existing corpus was not inspected."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_shadow_associativity_continuity",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_irreducible_potential_gap_decomposition"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Potential functions, minimal shadows, nested prefixes, and connected potential-gap components turn measure order and transport constraints into geometric objects that can be constructed and decomposed. No cross-corpus comparison was performed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 1113,
+      "line_start": 1014,
+      "representation_dependency": "The construction depends on the potential representation, extended convex order, and one-dimensional convex envelopes.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The shadow is characterized as the convex-order-minimal target submeasure capable of receiving a given source measure, producing a canonical projection under simultaneous feasibility and domination constraints.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Shadow as the least feasible target submeasure in convex order",
+      "unit_id": "agnostic_oa_shadow_minimal_feasible_projection",
+      "unit_type": "canonical-minimization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_shadow_associativity_continuity.txt",
+      "artifact_bytes": 18270,
+      "artifact_relpath": "depth/units/agnostic_oa_shadow_associativity_continuity.txt",
+      "artifact_sha256": "90087d5d29e9b7cbd3a77ad00756fbe0c71bffc8751d23bc711ef8a5683a3348",
+      "context_note": "The result explains why incremental allocations remain globally canonical and supports the prefix construction that follows. Several formula-heavy recurrences require notation-level verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_shadow_associativity_continuity",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_irreducible_potential_gap_decomposition"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Potential functions, minimal shadows, nested prefixes, and connected potential-gap components turn measure order and transport constraints into geometric objects that can be constructed and decomposed. No cross-corpus comparison was performed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 1421,
+      "line_start": 1114,
+      "representation_dependency": "Associativity uses target subtraction, extended convex order, and the minimality of shadows; continuity is in weak/first-moment topologies.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The shadow of a sum can be computed sequentially by taking the first shadow and then the shadow of the residual source in the residual target; continuity and atomic approximation extend the recurrence to general measures.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Associativity and continuity of sequential shadows",
+      "unit_id": "agnostic_oa_shadow_associativity_continuity",
+      "unit_type": "associative-decomposition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_nested_prefix_canonical_coupling.txt",
+      "artifact_bytes": 4874,
+      "artifact_relpath": "depth/units/agnostic_oa_nested_prefix_canonical_coupling.txt",
+      "artifact_sha256": "dcf38364ee9500709876d264bcce35a8e6e5a27dc3666b880aecc008539811f0",
+      "context_note": "The construction isolates a choice-free object from compatible partial projections. The term left-curtain and the geometric diagram are source-specific labels/illustrations rather than additional mechanisms.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_shadow_associativity_continuity",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_irreducible_potential_gap_decomposition"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Potential functions, minimal shadows, nested prefixes, and connected potential-gap components turn measure order and transport constraints into geometric objects that can be constructed and decomposed. No cross-corpus comparison was performed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_atomic_split_approximation_limit",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_monotone_coupling_rigidity",
+            "agnostic_oa_regular_conditional_support_transfer",
+            "agnostic_oa_constructive_variation_spreading"
+          ],
+          "identifier": "stochastic_processes",
+          "kind": "reinforced_44_lens",
+          "summary": "The martingale barycenter condition acts simultaneously as a feasibility invariant, a coupling constraint, and a kernel-level support condition. The evidence is for a one-step two-marginal setting and should not be generalized to arbitrary stochastic processes."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 1502,
+      "line_start": 1422,
+      "representation_dependency": "The canonical prefix family uses the total order on the source line and shadow associativity; an arbitrary multidimensional family need not have the same nesting or uniqueness.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Assigning every member of a nested generating family of source prefixes to its shadow determines a consistent joint measure whose conditional barycenters give the martingale property; finite rerouting excludes the forbidden crossing geometry.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Canonical coupling from shadows of nested prefixes",
+      "unit_id": "agnostic_oa_nested_prefix_canonical_coupling",
+      "unit_type": "canonical-construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_monotone_coupling_rigidity.txt",
+      "artifact_bytes": 10167,
+      "artifact_relpath": "depth/units/agnostic_oa_monotone_coupling_rigidity.txt",
+      "artifact_sha256": "18e94069bffabef74257b24a3cad568bfd858bb78e2b2b6bfb13694b8256af75",
+      "context_note": "This combines an order-theoretic uniqueness proof with a geometric support argument. Some theorem symbols and the picture of forbidden configurations are degraded in extraction.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_atomic_split_approximation_limit",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_monotone_coupling_rigidity",
+            "agnostic_oa_regular_conditional_support_transfer",
+            "agnostic_oa_constructive_variation_spreading"
+          ],
+          "identifier": "stochastic_processes",
+          "kind": "reinforced_44_lens",
+          "summary": "The martingale barycenter condition acts simultaneously as a feasibility invariant, a coupling constraint, and a kernel-level support condition. The evidence is for a one-step two-marginal setting and should not be generalized to arbitrary stochastic processes."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 1681,
+      "line_start": 1503,
+      "representation_dependency": "The two-graph conclusion uses source continuity and order on the real line; the half-sum argument additionally requires every admissible member considered to have fibers of cardinality at most two.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Prefix-shadow minimality identifies the monotone coupling uniquely; for atomless sources, forbidden support patterns restrict conditional fibers to two graphs, and a convex-set half-sum argument turns that restriction into rigidity.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Prefix minimality and fiber geometry force uniqueness",
+      "unit_id": "agnostic_oa_monotone_coupling_rigidity",
+      "unit_type": "uniqueness-and-rigidity"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_cost_curvature_forbidden_rerouting.txt",
+      "artifact_bytes": 4833,
+      "artifact_relpath": "depth/units/agnostic_oa_cost_curvature_forbidden_rerouting.txt",
+      "artifact_sha256": "9219402ecc3bfb31ba352b1f84d435b44c34fe1ddb7b2f805dd952244a73c147",
+      "context_note": "An alternate proof integrates prefix minimality. The exact sign conventions and derivative formulas are extraction-sensitive and should not be reconstructed from damaged glyphs.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_cost_curvature_forbidden_rerouting",
+            "agnostic_oa_intersection_complexity_support_bound",
+            "agnostic_oa_finite_dual_certificate_compactness",
+            "agnostic_oa_integrability_renormalization_gluing"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source internally links convex feasibility tests, pointwise potential geometry, canonical minimal submeasures, local cost separation, support bounds, and dual certificates. This reinforces the routed lens only; novelty relative to the existing corpus was not inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 1764,
+      "line_start": 1682,
+      "representation_dependency": "The conclusion depends on differentiability and strict convexity in the stated variable, integrability of the cost, and the one-dimensional ordering that defines the forbidden pattern.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Strict convexity of a derivative of the cost makes the forbidden finite support pattern admit a cheaper constraint-preserving competitor, so the variational principle forces monotonicity and selects the canonical optimizer.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Cost curvature converts a forbidden local rerouting into canonical optimality",
+      "unit_id": "agnostic_oa_cost_curvature_forbidden_rerouting",
+      "unit_type": "optimality-certificate"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_intersection_complexity_support_bound.txt",
+      "artifact_bytes": 4554,
+      "artifact_relpath": "depth/units/agnostic_oa_intersection_complexity_support_bound.txt",
+      "artifact_sha256": "9e3dd1be8b627148bdfafc755c4e3c9637ff0959337294e3e0f57672bb0a17e7",
+      "context_note": "The argument is a reusable bridge from analytic complexity of a cost to combinatorial sparsity of an optimizer; exact root-count hypotheses are formula-risk material.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_cost_curvature_forbidden_rerouting",
+            "agnostic_oa_intersection_complexity_support_bound",
+            "agnostic_oa_finite_dual_certificate_compactness",
+            "agnostic_oa_integrability_renormalization_gluing"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source internally links convex feasibility tests, pointwise potential geometry, canonical minimal submeasures, local cost separation, support bounds, and dual certificates. This reinforces the routed lens only; novelty relative to the existing corpus was not inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 1852,
+      "line_start": 1765,
+      "representation_dependency": "It relies on smoothness, a specified intersection-count condition, martingale linear constraints, and support regularity supplied by the variational principle.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "A bound on intersections between a cost derivative and affine functions becomes a bound on the number of points in each conditional support, via the impossibility of an improving local rerouting.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Derivative intersection complexity bounds conditional support",
+      "unit_id": "agnostic_oa_intersection_complexity_support_bound",
+      "unit_type": "complexity-bound"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_irreducible_potential_gap_decomposition.txt",
+      "artifact_bytes": 9405,
+      "artifact_relpath": "depth/units/agnostic_oa_irreducible_potential_gap_decomposition.txt",
+      "artifact_sha256": "29dc87f5ab204999435dbe98518c7a9db5d9fafad3bbec8ed14a6031a783063c",
+      "context_note": "This decomposition exposes where nontrivial motion is possible before optimization. Component and restriction notation is partially degraded, but the uniqueness and reduction logic remain readable.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_shadow_associativity_continuity",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_irreducible_potential_gap_decomposition"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Potential functions, minimal shadows, nested prefixes, and connected potential-gap components turn measure order and transport constraints into geometric objects that can be constructed and decomposed. No cross-corpus comparison was performed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 2332,
+      "line_start": 2159,
+      "representation_dependency": "The construction relies on one-dimensional potential functions, connected components of an open subset of the line, and disintegration/restriction of measures and couplings.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Connected components of the strict gap between source and target potentials determine unique independent transport components plus a static remainder, and global optimality reduces exactly to optimality on each component.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Potential gaps canonically decompose transport into irreducible components",
+      "unit_id": "agnostic_oa_irreducible_potential_gap_decomposition",
+      "unit_type": "canonical-decomposition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_finite_dual_certificate_compactness.txt",
+      "artifact_bytes": 11996,
+      "artifact_relpath": "depth/units/agnostic_oa_finite_dual_certificate_compactness.txt",
+      "artifact_sha256": "454546add858d4f910730fb5327bdbff9449a4e449b7aad0a6ac0d23f1219fa2",
+      "context_note": "This is a distinct local-to-global move from the primal variational principle: finite constraints generate a global dual witness. Long inequalities and envelope formulas need source-image verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_cost_curvature_forbidden_rerouting",
+            "agnostic_oa_intersection_complexity_support_bound",
+            "agnostic_oa_finite_dual_certificate_compactness",
+            "agnostic_oa_integrability_renormalization_gluing"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source internally links convex feasibility tests, pointwise potential geometry, canonical minimal submeasures, local cost separation, support bounds, and dual certificates. This reinforces the routed lens only; novelty relative to the existing corpus was not inspected."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_finite_competitor_variational_principle",
+            "agnostic_oa_finite_dual_certificate_compactness",
+            "agnostic_oa_integrability_renormalization_gluing"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Constraint-preserving finite variations provide a primal local test, while finite LP certificates compactify and renormalize into global dual witnesses. The finding is source-internal support, not a corpus-level novelty claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 2531,
+      "line_start": 2333,
+      "representation_dependency": "The proof uses finite-dimensional LP duality, irreducibility for bounds and normalization, product compactness, and convex-envelope regularization.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Finite optimality yields linear-programming dual certificates on every finite subset; normalization and irreducibility provide compatible bounds, and a finite-intersection compactness argument produces global potentials that are then regularized by a convex envelope.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Finite dual certificates compactify to a global certificate",
+      "unit_id": "agnostic_oa_finite_dual_certificate_compactness",
+      "unit_type": "local-to-global-duality"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_integrability_renormalization_gluing.txt",
+      "artifact_bytes": 5107,
+      "artifact_relpath": "depth/units/agnostic_oa_integrability_renormalization_gluing.txt",
+      "artifact_sha256": "6f0fac026b1d2be03cf110d873289f5c9a79f75dec8dc3d376ac3b9e33dd28cf",
+      "context_note": "The move separates representational pathologies of a certificate from its invariant content. Exact integrability inequalities are formula-sensitive.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_potential_order_representation",
+            "agnostic_oa_shadow_minimal_feasible_projection",
+            "agnostic_oa_cost_curvature_forbidden_rerouting",
+            "agnostic_oa_intersection_complexity_support_bound",
+            "agnostic_oa_finite_dual_certificate_compactness",
+            "agnostic_oa_integrability_renormalization_gluing"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source internally links convex feasibility tests, pointwise potential geometry, canonical minimal submeasures, local cost separation, support bounds, and dual certificates. This reinforces the routed lens only; novelty relative to the existing corpus was not inspected."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_finite_competitor_variational_principle",
+            "agnostic_oa_finite_dual_certificate_compactness",
+            "agnostic_oa_integrability_renormalization_gluing"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Constraint-preserving finite variations provide a primal local test, while finite LP certificates compactify and renormalize into global dual witnesses. The finding is source-internal support, not a corpus-level novelty claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 2631,
+      "line_start": 2532,
+      "representation_dependency": "Invariance relies on the conditional-barycenter identity, while gluing relies on the preceding irreducible decomposition and componentwise dual equality.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Adding and subtracting a convex correction changes dual representatives while leaving their value on every martingale coupling invariant, allowing integrable certificates to be assembled across irreducible components and used for global optimality.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Renormalization makes dual potentials integrable and glues componentwise optimality",
+      "unit_id": "agnostic_oa_integrability_renormalization_gluing",
+      "unit_type": "renormalization-and-gluing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_regular_conditional_support_transfer.txt",
+      "artifact_bytes": 9810,
+      "artifact_relpath": "depth/units/agnostic_oa_regular_conditional_support_transfer.txt",
+      "artifact_sha256": "8bbf35df6558874def06e8a4aed03a346d7cc845e43b06f509b150fe76364328",
+      "context_note": "This technical bridge is material because arbitrary conditional kernels are defined only almost everywhere. Several interval and quantile formulas are extraction-risk points.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_atomic_split_approximation_limit",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_monotone_coupling_rigidity",
+            "agnostic_oa_regular_conditional_support_transfer",
+            "agnostic_oa_constructive_variation_spreading"
+          ],
+          "identifier": "stochastic_processes",
+          "kind": "reinforced_44_lens",
+          "summary": "The martingale barycenter condition acts simultaneously as a feasibility invariant, a coupling constraint, and a kernel-level support condition. The evidence is for a one-step two-marginal setting and should not be generalized to arbitrary stochastic processes."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 2826,
+      "line_start": 2632,
+      "representation_dependency": "The construction uses regular conditional probabilities on the real line, order-based quantiles, density differentiation, and local neighborhoods in the base space.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Lebesgue-density and quantile arguments produce a full-measure set on which points in a conditional support recur jointly over nearby base points with positive mass, bridging fiberwise support statements to configurations usable by a finite variation.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Density and quantile transfer regularize conditional support",
+      "unit_id": "agnostic_oa_regular_conditional_support_transfer",
+      "unit_type": "local-to-global-support"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_constructive_variation_spreading.txt",
+      "artifact_bytes": 18206,
+      "artifact_relpath": "depth/units/agnostic_oa_constructive_variation_spreading.txt",
+      "artifact_sha256": "66d72fd168a22bac6de27e0db060572168e311cf20b0f7d739f1e9c9fed5a834",
+      "context_note": "This is a constructive proof of the variational principle distinct from the earlier descriptive proof route. The source notes that this real-line construction does not readily extend to general product spaces.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_convex_order_feasibility",
+            "agnostic_oa_atomic_split_approximation_limit",
+            "agnostic_oa_nested_prefix_canonical_coupling",
+            "agnostic_oa_monotone_coupling_rigidity",
+            "agnostic_oa_regular_conditional_support_transfer",
+            "agnostic_oa_constructive_variation_spreading"
+          ],
+          "identifier": "stochastic_processes",
+          "kind": "reinforced_44_lens",
+          "summary": "The martingale barycenter condition acts simultaneously as a feasibility invariant, a coupling constraint, and a kernel-level support condition. The evidence is for a one-step two-marginal setting and should not be generalized to arbitrary stochastic processes."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2283275366",
+      "line_end": 3118,
+      "line_start": 2827,
+      "representation_dependency": "It depends on continuity of the cost, one-dimensional regular support transfer, solvability of the local linear constraints, and domination after averaging.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2283275366_404d9508.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "A finite improving variation is perturbed across nearby regular fibers while preserving both marginal and barycenter constraints, then averaged so its positive part is dominated by the original plan, yielding an admissible global competitor and a contradiction.",
+      "source_id": "openalex_w2283275366",
+      "source_normalized_sha256": "f4c75a1f7fd6b73f698d19aef68ce0611f11b3b996f59e4b173708582853b041",
+      "title": "Perturbing and spreading a finite variation contradicts global optimality",
+      "unit_id": "agnostic_oa_constructive_variation_spreading",
+      "unit_type": "constructive-contradiction"
+    }
+  ]
+}

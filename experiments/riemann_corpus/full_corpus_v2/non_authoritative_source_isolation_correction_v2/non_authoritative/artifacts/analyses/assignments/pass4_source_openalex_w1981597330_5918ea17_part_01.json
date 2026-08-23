@@ -1,0 +1,191 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1981597330_5918ea17_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1981597330",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both conditional corollaries and their proof sketches, preserving the caveat that the eighth-moment remainder must also be controlled.",
+      "line_end": 1222,
+      "line_start": 1179,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The phase parameter range, square-root exponent, partial-summation weights, and error-term notation are extraction-sensitive. All consequences remain conditional on Conjecture 3.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conjecture asks an oscillatory unit-interval sum of positive central Hecke weights to save a square root over the best unweighted bound. The paper traces this hypothesis separately to optimal E₂ and eighth-moment bounds, noting an additional spectral-error step needed for the latter.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjecture 3 posits square-root cancellation in unit spectral intervals",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u17.txt",
+      "unit_bytes": 2143,
+      "unit_id": "openalex_w1981597330_v2_u17",
+      "unit_sha256": "1f1dd135f8ed66e475f17cc1e6b1ac2278bf14048ecf33355506887b0effbf6f",
+      "unit_type": "spectral-exponential-sum-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1171,
+          "line_end": 1178,
+          "text": "                                        t−T ε ≤κj ≤t+T ε\n                         5/2\n                     ×         Φ(x)(T x)it−iκj dx.\n                         1/2\n\nThe exponential sum involving αj Hj3 (1/2) then becomes essentially the same\nas the sum in (5.8), if the latter is split into short subsums. Thus it seems\nreasonable to make the following\n",
+          "sha256": "345ce35019883c3b78984254edcbba8b8b5e00fb22068bc886c71be0a751cf25"
+        },
+        "after": {
+          "line_start": 1223,
+          "line_end": 1230,
+          "text": "    A possibility to treat the sum in (5.16) is to use Motohashi’s transfor-\nmation formula (see [15, Lemma 3.8 and the method of evaluating C(K, G)\non p. 127]) for\n                             ∞\n                             X\n(5.17)                             αj Hj3 (1/2)h(κj ),\n                             j=1\n\n",
+          "sha256": "e6a77ea3cd92b8be8a600529d828a4a922808a5ffbcc9f6a7ac9b1a64d6d14e7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Exponential sums with Hecke series",
+            "line_end": 1277,
+            "line_start": 1022,
+            "mathematical_role": "Motivates spectral cancellation, formulates Conjecture 3, derives conditional consequences, discusses a transformation-formula route, and obtains a conditional Dirichlet-polynomial mean value."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1222,
+          "line_start": 1179,
+          "title": "Conjecture 3 posits square-root cancellation in unit spectral intervals",
+          "unit_id": "openalex_w1981597330_v2_u17",
+          "unit_type": "spectral-exponential-sum-conjecture",
+          "why_material": "The conjecture asks an oscillatory unit-interval sum of positive central Hecke weights to save a square root over the best unweighted bound. The paper traces this hypothesis separately to optimal E₂ and eighth-moment bounds, noting an additional spectral-error step needed for the latter."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both conditional corollaries and their proof sketches, preserving the caveat that the eighth-moment remainder must also be controlled.",
+          "representation_dependency": "The phase parameter range, square-root exponent, partial-summation weights, and error-term notation are extraction-sensitive. All consequences remain conditional on Conjecture 3.",
+          "unit_id": "openalex_w1981597330_v2_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1178,
+            "line_start": 1091,
+            "title": "Two zeta problems reduce to the same oscillatory spectral phase",
+            "unit_id": "openalex_w1981597330_v2_u16",
+            "unit_type": "phase-extraction",
+            "why_material": "Both E₂ and the eighth moment are expressed through short spectral sums weighted by central Hecke values. Absolute-value use of the known bound is too weak; Stirling asymptotics of the residue factor exposes an oscillatory phase, revealing that both applications demand essentially the same cancellation problem."
+          },
+          {
+            "line_end": 1248,
+            "line_start": 1223,
+            "title": "Motohashi’s transformation formula offers a smoothed route but not the unsmoothed target",
+            "unit_id": "openalex_w1981597330_v2_u18",
+            "unit_type": "proposed-route-and-obstruction",
+            "why_material": "The author proposes embedding the unit-interval exponential sum in a spectral transformation formula with an even Gaussian-localized test function and adjustable window G. The key obstruction is explicit: progress for the Gaussian-smoothed transform would not automatically control the unsmoothed sum required by the zeta applications."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Residues of Z₂ at spectral poles expose positive central Hecke weights; unweighted estimates saturate, while Stirling analysis reveals an oscillatory phase whose square-root cancellation would simultaneously improve E₂, the eighth moment, and pointwise Z₂.",
+            "limit": "The square-root cancellation is Conjecture 3, and the route from it to all stated applications includes conditional or heuristic steps.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u02",
+              "openalex_w1981597330_v2_u15",
+              "openalex_w1981597330_v2_u16",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u20",
+              "openalex_w1981597330_v2_u22"
+            ],
+            "title": "Spectral poles become a cancellation bottleneck"
+          },
+          {
+            "claim": "The article distinguishes a mean-square conjecture for Z₂, a stronger pointwise Lindelöf analogue, a spectral exponential-sum conjecture, optimal moment statements, and classical RH/Lindelöf; several one-way implications are proved, but equivalence is established only for narrower reformulations.",
+            "limit": "This is a dependency map within the source, not evidence that any of Conjectures 1–3 is true.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u11",
+              "openalex_w1981597330_v2_u12",
+              "openalex_w1981597330_v2_u13",
+              "openalex_w1981597330_v2_u14",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u23"
+            ],
+            "title": "A hierarchy of non-equivalent conjectural strengths"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1981597330_v2_u17",
+        "spontaneous": {
+          "unit_id": "openalex_w1981597330_v2_u17",
+          "spontaneous_reading": "Conjecture 3 asks phase rotation to save a square root in each unit spectral interval; partial summation would then adapt this primitive to both E_2 and the eighth moment."
+        },
+        "directed": {
+          "unit_id": "openalex_w1981597330_v2_u17",
+          "source_grounded_mathematics": "Conjecture 3 bounds the unit-window sum of alpha_j H_j(1/2)^3 exp(i kappa_j log(kappa_j/tau)) by K^{1/2+epsilon} in a stated K/tau range. Corollary 5 conditionally derives square-root E_2 by dyadic splitting, partial summation, and Delta=T^{1/2}. Corollary 6 conditionally derives the optimal eighth moment, with an additional application to the discrete-spectrum part of Delta(T).",
+          "conceptual_reading": "The hypothesis targets coherence rather than coefficient size; the same cancellation primitive is reused with different outer weights.",
+          "representation_or_bridge": "Unit spectral sums -> subdivision/partial summation -> application formulas for E_2 and the eighth moment.",
+          "boundary_or_failure": "Conjecture 3 is unproved, and the eighth-moment consequence contains a separate spectral-error step; optimality is heuristic.",
+          "uncertainty": "The K/tau range, square-root exponent, weights, and I(T,t) display require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1981597330_v2_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "Conjecture 3 asks for a K^(1/2+epsilon) bound on a phase-weighted unit spectral interval in a stated K/tau range.",
+          "The source conditionally derives the E_2 consequence by dyadic subdivision, unit intervals, partial summation, and Delta=T^(1/2).",
+          "For the eighth moment, the source explicitly retains the additional burden of controlling Delta(T) through a discrete-spectrum contribution."
+        ],
+        "inference": [
+          "Interpreting the conjecture as control of phase coherence rather than coefficient size is well grounded."
+        ],
+        "unsupported_or_imported": [
+          "The candidate asserts the extracted display I(T,t) <= t^(1+epsilon) as an exact bound. The sign before the exponent is lost in OCR, and the positive exponent is internally incompatible with the immediately claimed deduction from (5.12); this numerical claim is not usable from the frozen text."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The exponent sign in the I(T,t) display is missing, as are comparison signs in the K/tau range and Delta bound; exact numerical reuse requires the PDF."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish the source's qualitative conditional implication from the unreadable exact intermediate exponent instead of reproducing the corrupt OCR."
+        ],
+        "revision_instructions": [
+          "Replace the exact I(T,t) exponent with a formula-agnostic statement that Conjecture 3 supplies the cancellation estimate needed in (5.12).",
+          "Explicitly mark the intermediate exponent sign as unreadable and PDF-dependent; do not reconstruct the likely sign.",
+          "Retain the separate conditional Delta(T) step and all other supported content."
+        ]
+      }
+    }
+  ]
+}

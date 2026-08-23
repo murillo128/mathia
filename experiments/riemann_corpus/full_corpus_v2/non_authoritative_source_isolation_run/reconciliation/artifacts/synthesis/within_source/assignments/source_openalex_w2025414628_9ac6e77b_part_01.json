@@ -1,0 +1,298 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2025414628",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2025414628_9ac6e77b_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "After chi derivatives are normalized, Littlewood's lemma compares reflected derivative zeros with zeta zeros, so an existing left-zero estimate yields unconditional derivative displacement laws.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2025414628_v2_u01",
+          "openalex_w2025414628_v2_u04",
+          "openalex_w2025414628_v2_u05",
+          "openalex_w2025414628_v2_u06"
+        ],
+        "proposed_limit": "The result controls weighted aggregate displacement, not the location of each derivative zero.",
+        "source_id": "openalex_w2025414628",
+        "synthesis_id": "riemann_v2_within_87c9e98e1744bdc36d08e10f",
+        "title": "Functional-equation reflection turns zeta-zero asymmetry into derivative-zero control"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The interval-length restriction enters Theorems 2 and 3, while Theorem 1 holds for any 0<U<=T.",
+          "line_end": 77,
+          "line_start": 28,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The theorem displays are central but legible; scan-check inequality directions before exact reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States a general comparison between leftward displacement of zeros of zeta derivatives and rightward displacement of zeta zeros, then derives bounded left mass and an m U log log T right-mass asymptotic on long short intervals.",
+          "source_id": "openalex_w2025414628",
+          "source_normalized_sha256": "28d55477f37fdd842d6c1c382cf69fb80e00ef6a1246f16df6fbfe7c47a83b14",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Derivative zeros obey unconditional left-right displacement inequalities",
+          "unit_artifact_relpath": "depth/units/openalex_w2025414628_v2_u01.txt",
+          "unit_bytes": 2170,
+          "unit_id": "openalex_w2025414628_v2_u01",
+          "unit_sha256": "b92ac8c7896f187b789f57959ba4b5cfe650202ded2ad066ef8532f9f3a6ecba",
+          "unit_type": "theorem panel",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Theorem 1 compares aggregate horizontal displacement of zeros of zeta derivatives left of the critical line with displacement of zeta zeros right of it, for every 0<U<=T. Under the longer-interval hypothesis, Theorem 2 bounds the left derivative-zero sum by O(U), while Theorem 3 states the normalized right sum as 2pi times the displacement, with main term mU log log T and error O(U). Interpretation: the critical line turns two zero configurations into direction-sensitive weighted masses, permitting comparison without locating individual zeros. Boundary: this theorem panel does not supply the later Selberg or total-displacement proof route and gives no pointwise location result.",
+            "nonparaphrase_operation": "Separates the three observables and their directions, identifies weighted displacement as the common comparison coordinate, and preserves the normalization needed for the asymptotic.",
+            "quality_reason": "Accepted after revision: it retains the exact theorem-level mechanism, restores the 2pi normalization, and removes imported proof explanation while preserving interval and aggregate-only boundaries.",
+            "source_support": "The three displayed theorems state the opposing left/right sums, their distinct interval hypotheses, the O(U) bound, and the 2pi-normalized asymptotic; the closing note only says they complement earlier results.",
+            "speculation_status": "No new speculation; proof inputs outside this frozen span are omitted, and OCR-damaged fractions and inequality signs are not reconstructed beyond the legible theorem meaning."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lemma 3 is cited from earlier sources; Lemmas 1 and 2 are proved here.",
+          "line_end": 188,
+          "line_start": 131,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula extraction is adequate, though the gamma/sine layout is compressed.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proves uniform logarithmic growth and eventual nonvanishing for derivatives of chi and records the integral inequality used to bound local logarithmic derivatives.",
+          "source_id": "openalex_w2025414628",
+          "source_normalized_sha256": "28d55477f37fdd842d6c1c382cf69fb80e00ef6a1246f16df6fbfe7c47a83b14",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gamma-factor derivatives and sublinear singular integrals control the functional-equation transfer",
+          "unit_artifact_relpath": "depth/units/openalex_w2025414628_v2_u04.txt",
+          "unit_bytes": 2517,
+          "unit_id": "openalex_w2025414628_v2_u04",
+          "unit_sha256": "b3d091b0e3b88989db4b8ee3fc1a099cc3ba92e85db20b3c0ed85c1a12ba71f2",
+          "unit_type": "auxiliary analytic controls",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: in any fixed vertical strip and at sufficiently large height, chi^(m)(s)/chi(s) has dominant size (-log|t|)^m with one lower logarithmic order of error. This yields eventual absence of zeros and poles for chi derivatives there. A separately cited lemma bounds the L^p integral, 0<p<1, of sums of shifted reciprocal terms. Interpretation: the first two lemmas neutralize new gamma-factor singularities under differentiation, while the third turns local pole terms into an integrable aggregate; together they prepare a functional-equation transfer without counting zeta zeros themselves. Boundary: Lemmas 1-2 are proved here, Lemma 3 is imported, and all uniform claims retain their fixed-strip, high-height scope.",
+            "nonparaphrase_operation": "Decomposes the preparatory work by failure mode: gamma-factor zeros or poles versus accumulation of local reciprocal singularities.",
+            "quality_reason": "Accepted: the mechanism is source-specific, preserves proved-versus-cited lineage, and states the assumptions and downstream proof burden accurately.",
+            "source_support": "The induction from Stirling in Lemma 1, the factorization used in Lemma 2, and the stated sublinear-power inequality of Lemma 3 directly support the three controls.",
+            "speculation_status": "No new speculation; exact gamma and sine typography is not reused beyond the prose-secure asymptotic and scope."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The zero-count asymptotic supplies uniform local multiplicity control; exact boundary-error handling is included in the displayed Littlewood formula.",
+          "line_end": 294,
+          "line_start": 189,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense displays and OCR line breaks create formula risk; verify exact combinatorial coefficients from the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Builds J_m so its zeros correspond to reflected derivative zeros, converts zero displacement to a boundary integral, and controls that integral via local partial fractions, a sublinear power, and Holder telescoping.",
+          "source_id": "openalex_w2025414628",
+          "source_normalized_sha256": "28d55477f37fdd842d6c1c382cf69fb80e00ef6a1246f16df6fbfe7c47a83b14",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Differentiate the functional equation, apply Littlewood, and telescope logarithmic derivatives",
+          "unit_artifact_relpath": "depth/units/openalex_w2025414628_v2_u05.txt",
+          "unit_bytes": 6182,
+          "unit_id": "openalex_w2025414628_v2_u05",
+          "unit_sha256": "5f6f3a8a87ce1f57eb1e1b970dd0396467e831903222546c7c2ee4321e3cdd5b",
+          "unit_type": "proof mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: differentiating the functional equation factors reflected derivative zeros through an auxiliary J_m. Littlewood's lemma then converts their horizontal displacement into a boundary integral of J_m/zeta. To control that integral, the proof bounds fractional moments of zeta^(j)/zeta by factoring them into successive derivative ratios, applying local partial fractions, a derivative zero-count estimate, the cited sublinear L^p lemma, and Holder's inequality. Interpretation: reflection changes a left-zero problem into an auxiliary zero problem, Littlewood changes zero geometry into boundary size, and telescoping reduces a high derivative ratio to adjacent ratios with local control. Boundary: the result is aggregate and inherits cited zero-count and partial-fraction inputs.",
+            "nonparaphrase_operation": "Reconstructs the composition of three representation changes and identifies what each step gains and which cited estimate still carries the argument.",
+            "quality_reason": "Accepted: the architecture survives formula extraction and goes beyond paraphrase by explaining why the auxiliary function, boundary integral, and telescoping decomposition are jointly useful.",
+            "source_support": "Equations (3.1)-(3.3), the displayed claim, the local partial-fraction formula, and the final Holder factorization exhibit each stage of the proof chain.",
+            "speculation_status": "No new speculation; OCR-damaged binomial coefficients, exponents, and boundary terms are deliberately not quoted exactly."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source's sentence 'Theorem follows' at line 306 refers to Theorem 2.",
+          "line_end": 322,
+          "line_start": 296,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent but semantically clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines the comparison theorem with Selberg's long-short-interval estimate to prove bounded left displacement and subtracts it from a known total derivative-zero displacement asymptotic.",
+          "source_id": "openalex_w2025414628",
+          "source_normalized_sha256": "28d55477f37fdd842d6c1c382cf69fb80e00ef6a1246f16df6fbfe7c47a83b14",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Selberg's left-zero bound closes the derivative displacement estimates",
+          "unit_artifact_relpath": "depth/units/openalex_w2025414628_v2_u06.txt",
+          "unit_bytes": 1210,
+          "unit_id": "openalex_w2025414628_v2_u06",
+          "unit_sha256": "5771473fa328fbfafc4268b668aefba39742e778c8e04548f165f96632cfdff5",
+          "unit_type": "short-interval deduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Selberg bounds the weighted displacement of zeta zeros left of the critical line by O(U) on the stated long short intervals. Functional-equation symmetry identifies the corresponding right-side zeta mass needed in Theorem 1, so the comparison yields the O(U) left derivative-zero sum of Theorem 2. A cited formula gives a signed, 2pi-normalized total displacement of all derivative zeros; subtracting the controlled left part leaves the right-side main term in Theorem 3. Interpretation: the proof splits a signed total into negative and positive components, but only after symmetry aligns Selberg's side with the comparison theorem. Boundary: the deductions inherit the interval condition and cited total-displacement formula and provide no pointwise locations.",
+            "nonparaphrase_operation": "Makes the omitted symmetry alignment explicit and treats the signed total as a decomposed observable whose main term transfers only after one component is bounded.",
+            "quality_reason": "Accepted after revision: it restores sign and normalization, supplies the necessary symmetry link, and avoids presenting the two source citations as an unqualified immediate subtraction.",
+            "source_support": "The span displays Selberg's left-zeta estimate and the 2pi-weighted signed derivative-zero identity, and explicitly invokes Theorems 1 and 2 for the two deductions.",
+            "speculation_status": "No new speculation; extraction-damaged fractions and secondary terms are retained only at a safe qualitative level."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_320bb8a352d82c4d4e98212b7f1249d8bcaa503f1b5e37b7409a3f89d665caf9",
+        "dossier_sha256": "c2b7d194d9e0af1673cf20edc1eba48c7f4c4aa0c790fbe38d55cab46e3043c6"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Choosing different differential operators inside the same Conrey mean-square framework bounds right-side derivative zeros in one case and excess zeta multiplicity in the other.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2025414628_v2_u02",
+          "openalex_w2025414628_v2_u07",
+          "openalex_w2025414628_v2_u08"
+        ],
+        "proposed_limit": "The numerical constants depend on the available mollifier length and the chosen optimization family.",
+        "source_id": "openalex_w2025414628",
+        "synthesis_id": "riemann_v2_within_09ab15596fdc6dba1e3a330e",
+        "title": "One mollified mean-square theorem drives two different zero proportions"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This paper cites rather than reproves the Kloosterman-sum machinery behind the theorem.",
+          "line_end": 103,
+          "line_start": 78,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The constant c(P,Q,R) is display-heavy; exact normalization should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States Conrey's mean-square theorem with its polynomial differential operator and identifies it as the input for derivative-zero and distinct-zero proportions.",
+          "source_id": "openalex_w2025414628",
+          "source_normalized_sha256": "28d55477f37fdd842d6c1c382cf69fb80e00ef6a1246f16df6fbfe7c47a83b14",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A length-T^(4/7) mollified mean square becomes a zero-counting instrument",
+          "unit_artifact_relpath": "depth/units/openalex_w2025414628_v2_u02.txt",
+          "unit_bytes": 1404,
+          "unit_id": "openalex_w2025414628_v2_u02",
+          "unit_sha256": "051c70c920a74e898089470050469f1c48ebfa727cca11d4ee59d763914291ec",
+          "unit_type": "imported analytic input",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Conrey's cited theorem evaluates the mean square of V(s)B(s) on a shifted critical line, where B is a Mobius-polynomial mollifier of length T^theta with theta<4/7 and V is a polynomial differential operator applied to zeta. The asymptotic constant c(P,Q,R) is an explicit double integral. Interpretation: the theorem replaces pointwise cancellation by an averaged quadratic cost whose dependence on P, Q, and R exposes a variational choice of mollifier shape and derivative combination. Boundary: this span imports the Kloosterman-sum machinery and the mean-square formula alone proves no zero proportion; that requires later zero-counting arguments.",
+            "nonparaphrase_operation": "Recasts the explicit mean-square constant as the optimization interface between an analytic average and later zero-count applications, while isolating the proof burden that remains.",
+            "quality_reason": "Accepted: the conceptual operation is anchored to the parameterized L2 theorem and keeps imported input, formula risk, and absence of a direct zero conclusion explicit.",
+            "source_support": "Theorem A gives B, its length and boundary conditions, the operator V, the shifted-line mean square, and the integral defining c(P,Q,R); the final sentence identifies it only as an input to later results.",
+            "speculation_status": "No new speculation; the optimization reading is interpretive, and exact operator and integral normalization remain subject to scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The continuous sinh choice is justified as an infimum over polynomial approximations; the final epsilon dependence comes from choosing R.",
+          "line_end": 456,
+          "line_start": 324,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Optimization integrals and asymptotic constants are extraction-sensitive; scan verification is advisable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Turns Littlewood's lemma into a mollified L2 bound, replaces J_k by a differential operator V_k, and chooses P and Q_k so the mean-square constant approaches 2, yielding the stated density.",
+          "source_id": "openalex_w2025414628",
+          "source_normalized_sha256": "28d55477f37fdd842d6c1c382cf69fb80e00ef6a1246f16df6fbfe7c47a83b14",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Jensen plus an optimized sinh mollifier gives the right-side derivative-zero proportion",
+          "unit_artifact_relpath": "depth/units/openalex_w2025414628_v2_u07.txt",
+          "unit_bytes": 6183,
+          "unit_id": "openalex_w2025414628_v2_u07",
+          "unit_sha256": "87b33e867bf84b19921d136dc9f15cf175f6b477c3c0946839dcd89d63af44ff",
+          "unit_type": "mollifier optimization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Littlewood's lemma and Jensen bound derivative zeros on or left of the critical line by a mollified mean square of J_k. Integration by parts replaces J_k by the differential operator V_k with Q_k(x)=(1-x)^k, so Conrey's theorem supplies c(P,Q_k,R). Approximating a continuous sinh profile by admissible polynomials and optimizing its parameter makes the infimum of c approach 2, yielding a right-side lower density approaching one with k. Interpretation: a zero count is converted into a variational cost, and concentration of Q_k makes the large-order optimization tractable. Boundary: the sinh profile represents an infimum rather than a literal admissible polynomial, and the conclusion is a density bound, not pointwise location.",
+            "nonparaphrase_operation": "Identifies the admissible relaxation and the sequence of transformations from zero geometry to an explicit functional, including what the optimization does not prove.",
+            "quality_reason": "Accepted: the interpretation is mathematically specific, preserves the admissibility caveat and fixed-R ordering, and retains the lower-density scope.",
+            "source_support": "Equations (4.1)-(4.3), the J_k-to-V_k equivalence, the displayed integrals for the sinh choice, and the final coefficient mu_k show the conversion and optimization.",
+            "speculation_status": "No new speculation; exact optimization constants and extracted powers require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The boundary normalization Q(0)=1 is required for the Littlewood step and fixes the admissible linear polynomial.",
+          "line_end": 524,
+          "line_start": 463,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several H, f, and Q transformations are display-heavy but recoverable; exact numerical c/R should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Constructs f so simple xi zeros are omitted while multiple-zero multiplicity drops by one, uses symmetry and Littlewood-Jensen to bound N-N_d, and imports Conrey's optimized parameters to obtain kappa_d>0.70.",
+          "source_id": "openalex_w2025414628",
+          "source_normalized_sha256": "28d55477f37fdd842d6c1c382cf69fb80e00ef6a1246f16df6fbfe7c47a83b14",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A xi-plus-derivative combination counts excess multiplicity and bounds distinct zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2025414628_v2_u08.txt",
+          "unit_bytes": 3323,
+          "unit_id": "openalex_w2025414628_v2_u08",
+          "unit_sha256": "79f4a87efa604f3ca77a2fbfc17677edd17035f8345af18e294cb688693ed15c",
+          "unit_type": "multiplicity detector",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the auxiliary function f built from xi and xi' is not zero at a simple xi zero, while a zero of multiplicity r survives with multiplicity r-1. Symmetry and Littlewood therefore make zeros of f control N(T)-N_d(T). Jensen reduces the problem to a mollified mean square; rewriting f through a linear differential polynomial Q and importing Conrey's optimized parameters with Q(0)=1 gives kappa_d>0.70. Interpretation: f removes exactly one layer of vanishing, turning excess multiplicity into a zero set accessible to averaged estimates. Boundary: the construction bounds a distinct-zero proportion; it neither locates zeros nor proves simplicity, and Q(0)=1 restricts the admissible optimization.",
+            "nonparaphrase_operation": "Recognizes the xi-plus-derivative combination as a one-layer multiplicity detector and follows how that discrete defect becomes an L2 observable.",
+            "quality_reason": "Accepted: the source contains the complete mechanism, and the interpretation preserves its normalization, imported optimization, and strict distinction from full simplicity.",
+            "source_support": "The prose states the exact multiplicity behavior, equations (4.4) and the Jensen bound connect it to N-N_d, and the final Q normalization and c(P,Q,R) estimate give the numerical conclusion.",
+            "speculation_status": "No new speculation; exact H, f, Q, and numerical parameter formulas remain scan-dependent."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_320bb8a352d82c4d4e98212b7f1249d8bcaa503f1b5e37b7409a3f89d665caf9",
+        "dossier_sha256": "c2b7d194d9e0af1673cf20edc1eba48c7f4c4aa0c790fbe38d55cab46e3043c6"
+      }
+    }
+  ]
+}

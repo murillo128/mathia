@@ -1,0 +1,1103 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2089041583_ad43bbfa_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2089041583",
+  "unit_count": 8,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the zeta/RH setup because the cancellation claim and the meaning of xi zeros would otherwise require reconstruction; page-boundary and classification text inside the span are incidental.",
+      "line_end": 69,
+      "line_start": 31,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The xi product at lines 44-50 has broken superscript/fraction layout; the cancellation, entire-function, zero-set, and functional-equation claims are clear in prose at lines 62-69, but formula-exact reuse should consult the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage relates zeta's nonreal-zero problem to an entire function: the added factors cancel the pole and real zeros, so xi retains precisely the nonreal zeta zeros, while xi(1-s)=xi(s) supplies the symmetry used later.",
+      "source_id": "openalex_w2089041583",
+      "source_normalized_sha256": "40fe094f0980361a6e5c509e0bfa5ab1e96a1aef000ef7da0b6d43e0b94f8387",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Xi as an entire completion with reflection symmetry",
+      "unit_artifact_relpath": "depth/units/openalex_w2089041583_v2_u01.txt",
+      "unit_bytes": 1986,
+      "unit_id": "openalex_w2089041583_v2_u01",
+      "unit_sha256": "62be87267ab53abe9e251dd540cf94150c2ee58be730de9cc832c545ed14634a",
+      "unit_type": "definition-and-structural-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2089041583_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2089041583",
+        "title": "A monotonicity property of Riemann’s xi function and a reformulation of the Riemann hypothesis",
+        "authors": [
+          "Jonathan Sondow",
+          "Cristian Dumitrescu"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 23,
+          "line_end": 30,
+          "text": "   (respectively, left) half-plane. A corollary is a reformulation of the Riemann Hypothesis.\n\n\n\n\n                                        1. Introduction\n\n\n",
+          "sha256": "d3a1b4bf9dfcc28300546d233c55dc954fe955f4207c5491b6a9070fa3110ac2"
+        },
+        "after": {
+          "line_start": 70,
+          "line_end": 77,
+          "text": "\n   We prove the following monotonicity property of ξ ( s) . (Throughout this note,\nincreasing and decreasing will mean strictly so, and a half-line will be a half-infinite line\nnot including its endpoint.)\n\n   THEOREM 1. The xi function is increasing in modulus along every horizontal half-line lying\nin any open right half-plane that contains no xi zeros. Similarly, the modulus decreases on\neach horizontal half-line in any zero-free, open left half-plane.\n",
+          "sha256": "98d87ffe35de1bc48fbfad56e2e9df307d52f47b99090a1420744d0541cc1bf1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cab32b101cca993da85dfd5e472ca42c79f3be2d0b82148795c54fd27b58c08d",
+        "dossier_sha256": "4697f6c60d6895f4810205f10e759a3f9aaf5502942972e450cd99275f1be0fe",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 85,
+            "line_start": 28,
+            "mathematical_role": "Defines the zeta/xi setting, records xi's zeros and functional equation, and states the zero-free-half-plane monotonicity theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 69,
+          "line_start": 31,
+          "title": "Xi as an entire completion with reflection symmetry",
+          "unit_id": "openalex_w2089041583_v2_u01",
+          "unit_type": "definition-and-structural-setup",
+          "why_material": "The passage relates zeta's nonreal-zero problem to an entire function: the added factors cancel the pole and real zeros, so xi retains precisely the nonreal zeta zeros, while xi(1-s)=xi(s) supplies the symmetry used later."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the zeta/RH setup because the cancellation claim and the meaning of xi zeros would otherwise require reconstruction; page-boundary and classification text inside the span are incidental.",
+          "representation_dependency": "The xi product at lines 44-50 has broken superscript/fraction layout; the cancellation, entire-function, zero-set, and functional-equation claims are clear in prose at lines 62-69, but formula-exact reuse should consult the scan.",
+          "unit_id": "openalex_w2089041583_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 83,
+            "line_start": 71,
+            "title": "Zero-free half-planes force horizontal monotonicity of xi modulus",
+            "unit_id": "openalex_w2089041583_v2_u02",
+            "unit_type": "monotonicity-theorem",
+            "why_material": "The theorem converts absence of xi zeros in an open right or left half-plane into strict increase or decrease of modulus on every contained horizontal half-line, with the region outside the critical strip given as an immediate instance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For this xi setting, functional symmetry and the zero-free-half-plane monotonicity theorem turn one-sided horizontal modulus behavior into an equivalent criterion excluding off-critical zeros.",
+            "limit": "The equivalence is conditional on the paper's xi-specific theorem and symmetry; the source does not establish a generic criterion for arbitrary entire functions.",
+            "parent_local_unit_ids": [
+              "openalex_w2089041583_v2_u01",
+              "openalex_w2089041583_v2_u02",
+              "openalex_w2089041583_v2_u03"
+            ],
+            "title": "Horizontal monotonicity as a zero-exclusion certificate"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 23,
+              "line_start": 19,
+              "reason": "Abstract repeats the theorem and corollary at summary level."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 30,
+              "line_start": 24,
+              "reason": "Whitespace and introduction heading orient the mathematical setup."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 74,
+              "line_start": 70,
+              "reason": "Transition and conventions for strict monotonicity and half-lines."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2089041583_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2089041583_v2_u01",
+          "spontaneous_reading": "The decisive move is completion: compensating factors cancel zeta's pole and real zeros, producing an entire xi whose zeros are exactly the nonreal zeta zeros and whose reflection symmetry acts directly on that target set."
+        },
+        "directed": {
+          "unit_id": "openalex_w2089041583_v2_u01",
+          "source_grounded_mathematics": "The passage presents zeta as meromorphic with a simple pole at 1, real zeros at the negative even integers, and nonreal zeros in the critical strip. It defines xi by adjoining polynomial, gamma, and power-of-pi factors; the stated cancellations make xi entire with precisely the nonreal zeta zeros, and xi satisfies xi(1-s)=xi(s).",
+          "conceptual_reading": "Completion is a selective representation change: it removes the pole and the real-zero structure that are irrelevant to RH while preserving the nonreal zero set. The functional equation then exposes a reflection symmetry of the completed object.",
+          "representation_or_bridge": "Xi bridges a meromorphic zeta zero problem to the zero geometry of an entire function. The involution s maps to 1-s is the bridge between the two sides of the critical line.",
+          "boundary_or_failure": "This setup neither locates the nonreal zeros nor proves RH, and it does not establish the cancellation claims inside this span. Incidental classification and page text do no mathematical work.",
+          "uncertainty": "The prose-level entire-function, zero-set, and functional-equation claims are clear. The displayed definition has damaged powers and fractions, so its exact normalization requires the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The local conventions make monotonicity strict and half-lines endpoint-free; the later corollary and proof are intentionally separate units.",
+      "line_end": 83,
+      "line_start": 71,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: the semantic claim is stated in prose; the extracted inequalities in the example are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem converts absence of xi zeros in an open right or left half-plane into strict increase or decrease of modulus on every contained horizontal half-line, with the region outside the critical strip given as an immediate instance.",
+      "source_id": "openalex_w2089041583",
+      "source_normalized_sha256": "40fe094f0980361a6e5c509e0bfa5ab1e96a1aef000ef7da0b6d43e0b94f8387",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-free half-planes force horizontal monotonicity of xi modulus",
+      "unit_artifact_relpath": "depth/units/openalex_w2089041583_v2_u02.txt",
+      "unit_bytes": 860,
+      "unit_id": "openalex_w2089041583_v2_u02",
+      "unit_sha256": "8c949e26e50275a057392e1d4433c25543cfa5a1297340efe8f96d5c1223ded5",
+      "unit_type": "monotonicity-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2089041583_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2089041583",
+        "title": "A monotonicity property of Riemann’s xi function and a reformulation of the Riemann hypothesis",
+        "authors": [
+          "Jonathan Sondow",
+          "Cristian Dumitrescu"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 63,
+          "line_end": 70,
+          "text": "                                                               1\n                                                                  ( )\nreal zeros of sζ ( s) are cancelled by the (simple) poles of Γ 2 s , which never vanishes.\nThus, ξ ( s) is an entire function whose zeros are the nonreal zeros of ζ ( s) (see [1, p. 80]).\nThe xi function satisfies the remarkable functional equation\n\n                                        ξ (1 − s) = ξ ( s) .\n\n",
+          "sha256": "10ed8d4e128ff05369727f21473ed935f21b6671c6357d98d6ed222bfa1443c4"
+        },
+        "after": {
+          "line_start": 84,
+          "line_end": 91,
+          "text": "\n\n                 2. A reformulation of the Riemann Hypothesis\n\n\n   Here is an easy corollary of Theorem 1.\n\n    COROLLARY 1. The following statements are equivalent.\n",
+          "sha256": "4a92d3bdd0caf9869ce90770d264286755bf5e721906c7a5dc74ad2c3fac8178"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cab32b101cca993da85dfd5e472ca42c79f3be2d0b82148795c54fd27b58c08d",
+        "dossier_sha256": "4697f6c60d6895f4810205f10e759a3f9aaf5502942972e450cd99275f1be0fe",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 85,
+            "line_start": 28,
+            "mathematical_role": "Defines the zeta/xi setting, records xi's zeros and functional equation, and states the zero-free-half-plane monotonicity theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 83,
+          "line_start": 71,
+          "title": "Zero-free half-planes force horizontal monotonicity of xi modulus",
+          "unit_id": "openalex_w2089041583_v2_u02",
+          "unit_type": "monotonicity-theorem",
+          "why_material": "The theorem converts absence of xi zeros in an open right or left half-plane into strict increase or decrease of modulus on every contained horizontal half-line, with the region outside the critical strip given as an immediate instance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The local conventions make monotonicity strict and half-lines endpoint-free; the later corollary and proof are intentionally separate units.",
+          "representation_dependency": "Low: the semantic claim is stated in prose; the extracted inequalities in the example are legible.",
+          "unit_id": "openalex_w2089041583_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 69,
+            "line_start": 31,
+            "title": "Xi as an entire completion with reflection symmetry",
+            "unit_id": "openalex_w2089041583_v2_u01",
+            "unit_type": "definition-and-structural-setup",
+            "why_material": "The passage relates zeta's nonreal-zero problem to an entire function: the added factors cancel the pole and real zeros, so xi retains precisely the nonreal zeta zeros, while xi(1-s)=xi(s) supplies the symmetry used later."
+          },
+          {
+            "line_end": 99,
+            "line_start": 86,
+            "title": "RH as two-sided horizontal monotonicity about the critical line",
+            "unit_id": "openalex_w2089041583_v2_u03",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The corollary gives an operational equivalence: strict horizontal monotonicity on either side excludes zeros there, and the functional equation supplies the reflected side; conversely RH makes both open half-planes zero-free so the theorem applies."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For this xi setting, functional symmetry and the zero-free-half-plane monotonicity theorem turn one-sided horizontal modulus behavior into an equivalent criterion excluding off-critical zeros.",
+            "limit": "The equivalence is conditional on the paper's xi-specific theorem and symmetry; the source does not establish a generic criterion for arbitrary entire functions.",
+            "parent_local_unit_ids": [
+              "openalex_w2089041583_v2_u01",
+              "openalex_w2089041583_v2_u02",
+              "openalex_w2089041583_v2_u03"
+            ],
+            "title": "Horizontal monotonicity as a zero-exclusion certificate"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 74,
+              "line_start": 70,
+              "reason": "Transition and conventions for strict monotonicity and half-lines."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 90,
+              "line_start": 84,
+              "reason": "Section transition and introduction to the corollary."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2089041583_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2089041583_v2_u02",
+          "spontaneous_reading": "Zero-freeness is converted into an ordered modulus signal on one-dimensional horizontal slices: moving right inside a zero-free right half-plane strictly raises the modulus, with the reflected directional behavior on the left."
+        },
+        "directed": {
+          "unit_id": "openalex_w2089041583_v2_u02",
+          "source_grounded_mathematics": "The theorem states that |xi| is strictly increasing on every horizontal half-line contained in a zero-free open right half-plane and strictly decreasing on every such half-line in a zero-free open left half-plane. The known zero-free regions outside the critical strip give increase for sigma greater than 1 and decrease for sigma less than 0 at fixed height.",
+          "conceptual_reading": "A two-dimensional exclusion condition is made observable as directional order along horizontal traces. The useful content is not merely nonvanishing but strict monotonic control throughout every eligible half-line.",
+          "representation_or_bridge": "For fixed t, the trace sigma maps to |xi(sigma+it)| bridges planar zero geometry and real-variable monotonicity; the containing half-plane supplies the common geometric hypothesis.",
+          "boundary_or_failure": "At this point the statement is a zero-free-implies-monotone theorem, not a generic converse for arbitrary functions or individual lines. The proof and the RH equivalence occur later, and the result is specific to xi.",
+          "uncertainty": "Low: the theorem and conventions for strictness and endpoint-free half-lines are explicit, and the example inequalities are legible."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The critical line and functional equation were established at lines 42-43 and 67-69; this span contains the full equivalence statement and proof.",
+      "line_end": 99,
+      "line_start": 86,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The extracted one-half bounds appear as spaced digits at lines 92-93, but their role as the previously defined critical-line boundary is recoverable from the checked source context.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The corollary gives an operational equivalence: strict horizontal monotonicity on either side excludes zeros there, and the functional equation supplies the reflected side; conversely RH makes both open half-planes zero-free so the theorem applies.",
+      "source_id": "openalex_w2089041583",
+      "source_normalized_sha256": "40fe094f0980361a6e5c509e0bfa5ab1e96a1aef000ef7da0b6d43e0b94f8387",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH as two-sided horizontal monotonicity about the critical line",
+      "unit_artifact_relpath": "depth/units/openalex_w2089041583_v2_u03.txt",
+      "unit_bytes": 750,
+      "unit_id": "openalex_w2089041583_v2_u03",
+      "unit_sha256": "0a8e42bcde9e67e7d71769092e109f06cbd56e15e99c35142de5c909290b0a37",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2089041583_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2089041583",
+        "title": "A monotonicity property of Riemann’s xi function and a reformulation of the Riemann hypothesis",
+        "authors": [
+          "Jonathan Sondow",
+          "Cristian Dumitrescu"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 78,
+          "line_end": 85,
+          "text": "\n   For example, since ξ ( s) ≠ 0 outside the critical strip, if t is any fixed number, then\nξ (σ + it ) is increasing for 1 < σ < ∞ and decreasing for −∞ < σ < 0 .\n   In the next section, as a corollary of Theorem 1, we give a reformulation of the\nRiemann Hypothesis (a slight improvement of [2, Section 13.2, Exercise 1 (e)]). The\nproof of Theorem 1 is presented in the final section.\n\n\n",
+          "sha256": "4e0759b7418aae75adb6ef698219e1bb2070d91b321a4291fee42c83f7485566"
+        },
+        "after": {
+          "line_start": 100,
+          "line_end": 107,
+          "text": "\n\n                                 3. Proof of Theorem 1\n\n   We prove the first statement. The second then follows, using the functional equation.\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "75238e95170a819e5cba0b08827cc03067c926f1e32a0a5fa34e1b2088d207ad"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cab32b101cca993da85dfd5e472ca42c79f3be2d0b82148795c54fd27b58c08d",
+        "dossier_sha256": "4697f6c60d6895f4810205f10e759a3f9aaf5502942972e450cd99275f1be0fe",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "A reformulation of the Riemann Hypothesis",
+            "line_end": 101,
+            "line_start": 86,
+            "mathematical_role": "States and proves equivalence between RH and two-sided horizontal monotonicity about the critical line."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 99,
+          "line_start": 86,
+          "title": "RH as two-sided horizontal monotonicity about the critical line",
+          "unit_id": "openalex_w2089041583_v2_u03",
+          "unit_type": "equivalent-criterion",
+          "why_material": "The corollary gives an operational equivalence: strict horizontal monotonicity on either side excludes zeros there, and the functional equation supplies the reflected side; conversely RH makes both open half-planes zero-free so the theorem applies."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The critical line and functional equation were established at lines 42-43 and 67-69; this span contains the full equivalence statement and proof.",
+          "representation_dependency": "The extracted one-half bounds appear as spaced digits at lines 92-93, but their role as the previously defined critical-line boundary is recoverable from the checked source context.",
+          "unit_id": "openalex_w2089041583_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 83,
+            "line_start": 71,
+            "title": "Zero-free half-planes force horizontal monotonicity of xi modulus",
+            "unit_id": "openalex_w2089041583_v2_u02",
+            "unit_type": "monotonicity-theorem",
+            "why_material": "The theorem converts absence of xi zeros in an open right or left half-plane into strict increase or decrease of modulus on every contained horizontal half-line, with the region outside the critical strip given as an immediate instance."
+          },
+          {
+            "line_end": 130,
+            "line_start": 102,
+            "title": "Reduce monotonicity to factors in the Hadamard product",
+            "unit_id": "openalex_w2089041583_v2_u04",
+            "unit_type": "representation-change",
+            "why_material": "The proof reduces the left-half-plane statement by the functional equation, fixes a horizontal line inside a zero-free right half-plane, and changes representation to xi's Hadamard product, isolating the negative real exponential constant B from zero-indexed factors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For this xi setting, functional symmetry and the zero-free-half-plane monotonicity theorem turn one-sided horizontal modulus behavior into an equivalent criterion excluding off-critical zeros.",
+            "limit": "The equivalence is conditional on the paper's xi-specific theorem and symmetry; the source does not establish a generic criterion for arbitrary entire functions.",
+            "parent_local_unit_ids": [
+              "openalex_w2089041583_v2_u01",
+              "openalex_w2089041583_v2_u02",
+              "openalex_w2089041583_v2_u03"
+            ],
+            "title": "Horizontal monotonicity as a zero-exclusion certificate"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 90,
+              "line_start": 84,
+              "reason": "Section transition and introduction to the corollary."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2089041583_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2089041583_v2_u03",
+          "spontaneous_reading": "The family of all horizontal modulus traces becomes a zero detector: strict monotonicity prevents an interior zero, and xi's reflection turns one-sided exclusion into the critical-line statement."
+        },
+        "directed": {
+          "unit_id": "openalex_w2089041583_v2_u03",
+          "source_grounded_mathematics": "The corollary makes RH equivalent to strict increase of |xi(sigma+it)| for every fixed t to the right of the critical line, and separately equivalent to strict decrease to its left. A strictly monotone modulus cannot vanish on the relevant half-line; the functional equation supplies the reflected exclusion, while RH makes both open half-planes zero-free and Theorem 1 returns the monotonicity.",
+          "conceptual_reading": "The criterion reframes a global zero-location assertion as a family of one-variable order properties. Strictness is the certificate that converts trace behavior back into zero exclusion, and reflection supplies the missing side.",
+          "representation_or_bridge": "The bridge objects are the horizontal restrictions of |xi|, indexed by height, together with the involution s maps to 1-s. They connect the planar critical-line condition to real-variable monotonicity.",
+          "boundary_or_failure": "This is an equivalent reformulation, not evidence that either monotonicity condition holds. The reverse direction depends on the preceding xi-specific theorem and the forward direction on the functional equation; no analogous claim for arbitrary entire functions is supported.",
+          "uncertainty": "The logical proof is explicit. The extracted one-half bounds are spatially broken, but the embedded setup identifies them as the critical-line boundary."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the setup required by every subsequent factorwise and compensating argument; the page marker at lines 106-110 is incidental.",
+      "line_end": 130,
+      "line_start": 102,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed Hadamard product and explicit value of B are layout-damaged at lines 119-126; their factor roles are recoverable from lines 116-123 and the later prose, but exact exponents/constants require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof reduces the left-half-plane statement by the functional equation, fixes a horizontal line inside a zero-free right half-plane, and changes representation to xi's Hadamard product, isolating the negative real exponential constant B from zero-indexed factors.",
+      "source_id": "openalex_w2089041583",
+      "source_normalized_sha256": "40fe094f0980361a6e5c509e0bfa5ab1e96a1aef000ef7da0b6d43e0b94f8387",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reduce monotonicity to factors in the Hadamard product",
+      "unit_artifact_relpath": "depth/units/openalex_w2089041583_v2_u04.txt",
+      "unit_bytes": 1012,
+      "unit_id": "openalex_w2089041583_v2_u04",
+      "unit_sha256": "f8e90bbf91363b6a870bdb41622511320054f5cad233c23bf42b05bd62000e9e",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2089041583_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2089041583",
+        "title": "A monotonicity property of Riemann’s xi function and a reformulation of the Riemann hypothesis",
+        "authors": [
+          "Jonathan Sondow",
+          "Cristian Dumitrescu"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 94,
+          "line_end": 101,
+          "text": "(iii). The Riemann Hypothesis is true.\n\n    PROOF . If ξ ( s) is increasing along a half-line L (or decreasing on L), then ξ ( s)\ncannot have a zero on L. It follows, using the functional equation, that each of the\nstatements (i) and (ii) implies (iii). Conversely, if (iii) holds, then ξ ( s) ≠ 0 on the right\nand left open half-planes of the critical line, and Theorem 1 implies (i) and (ii).\n\n\n",
+          "sha256": "a3fe5011edd83da7c9d15fafe0302b36ff6d767b37d6420e6558520f41717497"
+        },
+        "after": {
+          "line_start": 131,
+          "line_end": 138,
+          "text": "   We first prove that 1 − (s ρ ) is increasing on L. Since H = {s : ℜ( s) > σ 0 } is zero-free\nand L ⊂ H , we have\n\n                                ℜ( ρ ) ≤ σ 0 < ℜ( s)         ( s ∈ L ).\n\nIt follows that the distance s − ρ and, hence, the modulus 1 − (s ρ ) = s − ρ ρ are\n                                                                                        −1\n\n",
+          "sha256": "81f7a675b8d6724723cf59073bc0c8ee16d8268ebe4cd3e09eb3ee6860fd1300"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cab32b101cca993da85dfd5e472ca42c79f3be2d0b82148795c54fd27b58c08d",
+        "dossier_sha256": "4697f6c60d6895f4810205f10e759a3f9aaf5502942972e450cd99275f1be0fe",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1",
+            "line_end": 211,
+            "line_start": 102,
+            "mathematical_role": "Uses the Hadamard product, factorwise modulus growth, partial-sum regrouping, and a local derivative estimate to prove strict monotonicity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 130,
+          "line_start": 102,
+          "title": "Reduce monotonicity to factors in the Hadamard product",
+          "unit_id": "openalex_w2089041583_v2_u04",
+          "unit_type": "representation-change",
+          "why_material": "The proof reduces the left-half-plane statement by the functional equation, fixes a horizontal line inside a zero-free right half-plane, and changes representation to xi's Hadamard product, isolating the negative real exponential constant B from zero-indexed factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the setup required by every subsequent factorwise and compensating argument; the page marker at lines 106-110 is incidental.",
+          "representation_dependency": "The displayed Hadamard product and explicit value of B are layout-damaged at lines 119-126; their factor roles are recoverable from lines 116-123 and the later prose, but exact exponents/constants require scan verification.",
+          "unit_id": "openalex_w2089041583_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 99,
+            "line_start": 86,
+            "title": "RH as two-sided horizontal monotonicity about the critical line",
+            "unit_id": "openalex_w2089041583_v2_u03",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The corollary gives an operational equivalence: strict horizontal monotonicity on either side excludes zeros there, and the functional equation supplies the reflected side; conversely RH makes both open half-planes zero-free so the theorem applies."
+          },
+          {
+            "line_end": 139,
+            "line_start": 131,
+            "title": "Zero exclusion turns each linear factor into increasing distance",
+            "unit_id": "openalex_w2089041583_v2_u05",
+            "unit_type": "geometric-factor-argument",
+            "why_material": "Because every zero lies on or left of the half-plane boundary while the moving point stays to its right, horizontal motion increases its distance from each zero and hence increases the modulus of each linear Hadamard factor."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A product representation can prove strict modulus growth even with one decreasing global factor: isolate growing zero factors, rewrite the decay as a residual tail tending to zero, and choose the truncation so a positive local distance derivative dominates at each point.",
+            "limit": "The mechanism here relies on the cited B-series identity, the source's constraints on zero real parts, and formula-damaged displays that require scan checking for exact reuse.",
+            "parent_local_unit_ids": [
+              "openalex_w2089041583_v2_u04",
+              "openalex_w2089041583_v2_u05",
+              "openalex_w2089041583_v2_u06",
+              "openalex_w2089041583_v2_u07",
+              "openalex_w2089041583_v2_u08"
+            ],
+            "title": "Factorwise growth plus vanishing-obstruction compensation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2089041583_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2089041583_v2_u04",
+          "spontaneous_reading": "The proof changes from xi as a whole to a Hadamard product whose factors can be tracked under horizontal motion; this exposes both the growing zero factors and the single global obstruction, the negative exponential prefactor."
+        },
+        "directed": {
+          "unit_id": "openalex_w2089041583_v2_u04",
+          "source_grounded_mathematics": "The left-half-plane assertion is reduced to the right-half-plane case by the functional equation. In a zero-free right half-plane H, the proof fixes a horizontal half-line L and writes xi as a Hadamard product over its nonreal zeros, with linear and exponential zero factors and an exponential e^(Bs), where B is a negative real constant.",
+          "conceptual_reading": "Factorization decomposes a global monotonicity question into contributions that can be compared factor by factor. The sign of B immediately identifies why naive factorwise growth will not by itself settle the product.",
+          "representation_or_bridge": "The Hadamard product bridges zero locations to modulus variation: each zero becomes an explicit factor, while B records a global exponential contribution not attached to a single distance factor.",
+          "boundary_or_failure": "This unit only sets up the representation and reduction. It neither justifies convergence or regrouping nor overcomes the decreasing e^(Bs) factor, so strict monotonicity has not yet followed.",
+          "uncertainty": "The factor roles and B<0 are clear from the prose, but the product's exact exponents and the displayed formula for B are layout-damaged and require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uses the fixed zero-free half-plane and horizontal half-line introduced at lines 111-114.",
+      "line_end": 139,
+      "line_start": 131,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The final quotient notation at lines 136-138 is fragmented, but the distance argument and monotonic conclusion are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Because every zero lies on or left of the half-plane boundary while the moving point stays to its right, horizontal motion increases its distance from each zero and hence increases the modulus of each linear Hadamard factor.",
+      "source_id": "openalex_w2089041583",
+      "source_normalized_sha256": "40fe094f0980361a6e5c509e0bfa5ab1e96a1aef000ef7da0b6d43e0b94f8387",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero exclusion turns each linear factor into increasing distance",
+      "unit_artifact_relpath": "depth/units/openalex_w2089041583_v2_u05.txt",
+      "unit_bytes": 416,
+      "unit_id": "openalex_w2089041583_v2_u05",
+      "unit_sha256": "c244048193effa7e970643aa69b9c2c4acc6b2757235cd839f30e1256526cac6",
+      "unit_type": "geometric-factor-argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2089041583_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2089041583",
+        "title": "A monotonicity property of Riemann’s xi function and a reformulation of the Riemann hypothesis",
+        "authors": [
+          "Jonathan Sondow",
+          "Cristian Dumitrescu"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 123,
+          "line_end": 130,
+          "text": "Here the product is over all nonreal zeta zeros ρ , and B is the negative real number\n\n                           B := 2 log 4π − 1 − 2 C = −0.023095 . . . ,\n                                1                  1\n\n\n\nwhere C is Euler's constant.\n",
+          "sha256": "d671b7c31657e24d57783973fc74c43e312c9e9a5d5948bf98bc8526e73cbc59"
+        },
+        "after": {
+          "line_start": 140,
+          "line_end": 147,
+          "text": "   We next show that e s ρ is non-decreasing on L. (In fact, e s ρ is increasing on L, but\nwe do not need this deeper fact.) Let ρ = β + iγ denote a nonreal zeta zero. Since\n β = ℜ( ρ ) ≥ 0 , the modulus\n\n                                                ( βσ +γ t 0 ) ( β 2 +γ 2 )\n                               es ρ = e ( ) = e\n                                       ℜ sρ\n\n",
+          "sha256": "819dc89ce3b9361262da69fa8714d930e6be7909ac7e067c5140f9f3132e2c1d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cab32b101cca993da85dfd5e472ca42c79f3be2d0b82148795c54fd27b58c08d",
+        "dossier_sha256": "4697f6c60d6895f4810205f10e759a3f9aaf5502942972e450cd99275f1be0fe",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1",
+            "line_end": 211,
+            "line_start": 102,
+            "mathematical_role": "Uses the Hadamard product, factorwise modulus growth, partial-sum regrouping, and a local derivative estimate to prove strict monotonicity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 139,
+          "line_start": 131,
+          "title": "Zero exclusion turns each linear factor into increasing distance",
+          "unit_id": "openalex_w2089041583_v2_u05",
+          "unit_type": "geometric-factor-argument",
+          "why_material": "Because every zero lies on or left of the half-plane boundary while the moving point stays to its right, horizontal motion increases its distance from each zero and hence increases the modulus of each linear Hadamard factor."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uses the fixed zero-free half-plane and horizontal half-line introduced at lines 111-114.",
+          "representation_dependency": "The final quotient notation at lines 136-138 is fragmented, but the distance argument and monotonic conclusion are explicit in prose.",
+          "unit_id": "openalex_w2089041583_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 130,
+            "line_start": 102,
+            "title": "Reduce monotonicity to factors in the Hadamard product",
+            "unit_id": "openalex_w2089041583_v2_u04",
+            "unit_type": "representation-change",
+            "why_material": "The proof reduces the left-half-plane statement by the functional equation, fixes a horizontal line inside a zero-free right half-plane, and changes representation to xi's Hadamard product, isolating the negative real exponential constant B from zero-indexed factors."
+          },
+          {
+            "line_end": 150,
+            "line_start": 140,
+            "title": "Hadamard exponential factors are non-decreasing along the half-line",
+            "unit_id": "openalex_w2089041583_v2_u06",
+            "unit_type": "factorwise-monotonicity",
+            "why_material": "Writing a zero as beta+i gamma makes the modulus exponent affine in the horizontal coordinate with nonnegative coefficient beta, so each exponential zero factor is non-decreasing; strict increase is noted as unnecessary."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A product representation can prove strict modulus growth even with one decreasing global factor: isolate growing zero factors, rewrite the decay as a residual tail tending to zero, and choose the truncation so a positive local distance derivative dominates at each point.",
+            "limit": "The mechanism here relies on the cited B-series identity, the source's constraints on zero real parts, and formula-damaged displays that require scan checking for exact reuse.",
+            "parent_local_unit_ids": [
+              "openalex_w2089041583_v2_u04",
+              "openalex_w2089041583_v2_u05",
+              "openalex_w2089041583_v2_u06",
+              "openalex_w2089041583_v2_u07",
+              "openalex_w2089041583_v2_u08"
+            ],
+            "title": "Factorwise growth plus vanishing-obstruction compensation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2089041583_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2089041583_v2_u05",
+          "spontaneous_reading": "Zero exclusion supplies a geometric separation: every zero is on or left of the half-plane boundary, so a point moving right along the chosen line moves strictly farther from every zero."
+        },
+        "directed": {
+          "unit_id": "openalex_w2089041583_v2_u05",
+          "source_grounded_mathematics": "Because the right half-plane Re(s)>sigma_0 is zero-free, every xi zero rho satisfies Re(rho)<=sigma_0. Along L, Re(s)>sigma_0, so horizontal motion to the right strictly increases |s-rho| and therefore increases the modulus of the normalized linear factor 1-s/rho.",
+          "conceptual_reading": "An analytic factor is controlled by elementary geometry once zero-freeness places its center behind a vertical boundary. The half-plane hypothesis becomes a strict sign for change in distance.",
+          "representation_or_bridge": "The identity |1-s/rho|=|s-rho|/|rho| bridges a Hadamard factor to Euclidean distance from the moving point s to the fixed zero rho.",
+          "boundary_or_failure": "The argument controls only the linear zero factors. It does not address the associated exponential factors, the decreasing global prefactor, infinite-product issues, or their combined effect.",
+          "uncertainty": "Low for the distance argument and monotonic conclusion. The quotient notation is fragmented in extraction, but its normalized-distance role is explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This complements the strictly increasing linear factors and deliberately proves only the strength needed for the product argument.",
+      "line_end": 150,
+      "line_start": 140,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed modulus computation at lines 144-147 is typographically scrambled, but beta>=0 and the non-decreasing conclusion are explicit at lines 141-150.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Writing a zero as beta+i gamma makes the modulus exponent affine in the horizontal coordinate with nonnegative coefficient beta, so each exponential zero factor is non-decreasing; strict increase is noted as unnecessary.",
+      "source_id": "openalex_w2089041583",
+      "source_normalized_sha256": "40fe094f0980361a6e5c509e0bfa5ab1e96a1aef000ef7da0b6d43e0b94f8387",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hadamard exponential factors are non-decreasing along the half-line",
+      "unit_artifact_relpath": "depth/units/openalex_w2089041583_v2_u06.txt",
+      "unit_bytes": 422,
+      "unit_id": "openalex_w2089041583_v2_u06",
+      "unit_sha256": "06018179eebf9d2d4e34c613d994a4680cf07408ecebcb5702daecba91c87f73",
+      "unit_type": "factorwise-monotonicity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2089041583_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2089041583",
+        "title": "A monotonicity property of Riemann’s xi function and a reformulation of the Riemann hypothesis",
+        "authors": [
+          "Jonathan Sondow",
+          "Cristian Dumitrescu"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 132,
+          "line_end": 139,
+          "text": "and L ⊂ H , we have\n\n                                ℜ( ρ ) ≤ σ 0 < ℜ( s)         ( s ∈ L ).\n\nIt follows that the distance s − ρ and, hence, the modulus 1 − (s ρ ) = s − ρ ρ are\n                                                                                        −1\n\nincreasing along L.\n",
+          "sha256": "ce1284826d5791ba1208542f87643baaf09d8906694590af371a1d94b1644716"
+        },
+        "after": {
+          "line_start": 151,
+          "line_end": 158,
+          "text": "    It remains to overcome the effect of the Hadamard product factor e Bs , which, since\n B < 0 , is decreasing in modulus on L. We use the following alternate interpretation of the\nconstant B. First, let ρ1, ρ2 , . . . be the zeta zeros with positive imaginary part, and write\n ρn = β n + iγ n , for n ≥ 1. Then B is also given by the formulas [1, p. 82]\n\n                                  ∞                   ∞\n                                       1    1              β\n                            B = −∑         +  = −2 ∑ 2 n 2 .\n",
+          "sha256": "605a7ef95dee5b76da18b1a0b08d020db85cc58edfd4b02b925112136be45111"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cab32b101cca993da85dfd5e472ca42c79f3be2d0b82148795c54fd27b58c08d",
+        "dossier_sha256": "4697f6c60d6895f4810205f10e759a3f9aaf5502942972e450cd99275f1be0fe",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1",
+            "line_end": 211,
+            "line_start": 102,
+            "mathematical_role": "Uses the Hadamard product, factorwise modulus growth, partial-sum regrouping, and a local derivative estimate to prove strict monotonicity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 150,
+          "line_start": 140,
+          "title": "Hadamard exponential factors are non-decreasing along the half-line",
+          "unit_id": "openalex_w2089041583_v2_u06",
+          "unit_type": "factorwise-monotonicity",
+          "why_material": "Writing a zero as beta+i gamma makes the modulus exponent affine in the horizontal coordinate with nonnegative coefficient beta, so each exponential zero factor is non-decreasing; strict increase is noted as unnecessary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This complements the strictly increasing linear factors and deliberately proves only the strength needed for the product argument.",
+          "representation_dependency": "The displayed modulus computation at lines 144-147 is typographically scrambled, but beta>=0 and the non-decreasing conclusion are explicit at lines 141-150.",
+          "unit_id": "openalex_w2089041583_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 139,
+            "line_start": 131,
+            "title": "Zero exclusion turns each linear factor into increasing distance",
+            "unit_id": "openalex_w2089041583_v2_u05",
+            "unit_type": "geometric-factor-argument",
+            "why_material": "Because every zero lies on or left of the half-plane boundary while the moving point stays to its right, horizontal motion increases its distance from each zero and hence increases the modulus of each linear Hadamard factor."
+          },
+          {
+            "line_end": 187,
+            "line_start": 151,
+            "title": "Regroup the negative exponential prefactor through zero partial sums",
+            "unit_id": "openalex_w2089041583_v2_u07",
+            "unit_type": "prefactor-compensation",
+            "why_material": "The sole obstruction is the decreasing factor from B<0. An alternate series for -B yields partial sums S_N with -(B+S_N)>0 tending to zero; combining exponential factors then rewrites xi as a finite zero product, an infinite increasing tail, and a residual factor whose decay can be made arbitrarily small."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A product representation can prove strict modulus growth even with one decreasing global factor: isolate growing zero factors, rewrite the decay as a residual tail tending to zero, and choose the truncation so a positive local distance derivative dominates at each point.",
+            "limit": "The mechanism here relies on the cited B-series identity, the source's constraints on zero real parts, and formula-damaged displays that require scan checking for exact reuse.",
+            "parent_local_unit_ids": [
+              "openalex_w2089041583_v2_u04",
+              "openalex_w2089041583_v2_u05",
+              "openalex_w2089041583_v2_u06",
+              "openalex_w2089041583_v2_u07",
+              "openalex_w2089041583_v2_u08"
+            ],
+            "title": "Factorwise growth plus vanishing-obstruction compensation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2089041583_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2089041583_v2_u06",
+          "spontaneous_reading": "Writing a zero in real and imaginary parts turns the exponential factor's modulus into an exponential with nonnegative horizontal slope, so this part of each zero contribution cannot oppose rightward growth."
+        },
+        "directed": {
+          "unit_id": "openalex_w2089041583_v2_u06",
+          "source_grounded_mathematics": "For rho=beta+i gamma with beta=Re(rho)>=0 and s=sigma+it_0, the modulus exponent of e^(s/rho) is affine in sigma with a nonnegative coefficient. Hence each such exponential factor is non-decreasing along L; the source notes that strict increase is true but unnecessary here.",
+          "conceptual_reading": "Decomposing rho into coordinates isolates the only coefficient relevant to horizontal monotonicity. Proving the weaker non-decrease is sufficient because strict growth is supplied elsewhere.",
+          "representation_or_bridge": "The complex exponential is reduced to its real exponent, bridging modulus behavior to the sign of beta. This complements the distance representation of the linear factor.",
+          "boundary_or_failure": "Non-decrease alone cannot prove strict growth of xi and does not compensate for B<0. The argument also uses the source's beta>=0 constraint for nonreal zeta zeros.",
+          "uncertainty": "The sign and conclusion are explicit, while the displayed modulus computation is typographically scrambled; formula-exact reuse should consult the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the B-series identity, definition and limiting behavior of S_N, finite product P_N, and the regrouped Hadamard product needed for the closing derivative argument.",
+      "line_end": 187,
+      "line_start": 151,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several conjugation bars, fractions, exponents, and product bounds are damaged in lines 156-186. The regrouping mechanism and limiting sign are recoverable from lines 151-154, 162-180, but formula-exact use requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The sole obstruction is the decreasing factor from B<0. An alternate series for -B yields partial sums S_N with -(B+S_N)>0 tending to zero; combining exponential factors then rewrites xi as a finite zero product, an infinite increasing tail, and a residual factor whose decay can be made arbitrarily small.",
+      "source_id": "openalex_w2089041583",
+      "source_normalized_sha256": "40fe094f0980361a6e5c509e0bfa5ab1e96a1aef000ef7da0b6d43e0b94f8387",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Regroup the negative exponential prefactor through zero partial sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2089041583_v2_u07.txt",
+      "unit_bytes": 1943,
+      "unit_id": "openalex_w2089041583_v2_u07",
+      "unit_sha256": "fba64ff0ad5511a0271956f5dee3cd8ad11ef6ea71b98053280983299a9e1813",
+      "unit_type": "prefactor-compensation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2089041583_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2089041583",
+        "title": "A monotonicity property of Riemann’s xi function and a reformulation of the Riemann hypothesis",
+        "authors": [
+          "Jonathan Sondow",
+          "Cristian Dumitrescu"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 143,
+          "line_end": 150,
+          "text": "\n                                                ( βσ +γ t 0 ) ( β 2 +γ 2 )\n                               es ρ = e ( ) = e\n                                       ℜ sρ\n\n\n\nis non-decreasing along L.\n",
+          "sha256": "c9ca3b07ccd118e2c6230825720f9a1b24b864b6638f545ce04d786d261dde16"
+        },
+        "after": {
+          "line_start": 188,
+          "line_end": 195,
+          "text": "   From what we have shown about 1 − (s ρ ) and e s ρ , both PN ( s) and the infinite\nproduct are increasing in modulus along L. To analyze the remaining factors on L, set\ns = σ + it0 and define the function\n\n                                                                        (σ − β1 )2 + (t0 − γ 1 )2 .\n                                                     2\n                          1 ( B + SN )s    s\n                                                         = 4e ( N)\n",
+          "sha256": "b4a7625b50b8aba2d5db49c29aa1b925cd7ffeb112e1cb78e8bd781eeaeb6037"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cab32b101cca993da85dfd5e472ca42c79f3be2d0b82148795c54fd27b58c08d",
+        "dossier_sha256": "4697f6c60d6895f4810205f10e759a3f9aaf5502942972e450cd99275f1be0fe",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1",
+            "line_end": 211,
+            "line_start": 102,
+            "mathematical_role": "Uses the Hadamard product, factorwise modulus growth, partial-sum regrouping, and a local derivative estimate to prove strict monotonicity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 187,
+          "line_start": 151,
+          "title": "Regroup the negative exponential prefactor through zero partial sums",
+          "unit_id": "openalex_w2089041583_v2_u07",
+          "unit_type": "prefactor-compensation",
+          "why_material": "The sole obstruction is the decreasing factor from B<0. An alternate series for -B yields partial sums S_N with -(B+S_N)>0 tending to zero; combining exponential factors then rewrites xi as a finite zero product, an infinite increasing tail, and a residual factor whose decay can be made arbitrarily small."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the B-series identity, definition and limiting behavior of S_N, finite product P_N, and the regrouped Hadamard product needed for the closing derivative argument.",
+          "representation_dependency": "Several conjugation bars, fractions, exponents, and product bounds are damaged in lines 156-186. The regrouping mechanism and limiting sign are recoverable from lines 151-154, 162-180, but formula-exact use requires scan verification.",
+          "unit_id": "openalex_w2089041583_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 150,
+            "line_start": 140,
+            "title": "Hadamard exponential factors are non-decreasing along the half-line",
+            "unit_id": "openalex_w2089041583_v2_u06",
+            "unit_type": "factorwise-monotonicity",
+            "why_material": "Writing a zero as beta+i gamma makes the modulus exponent affine in the horizontal coordinate with nonnegative coefficient beta, so each exponential zero factor is non-decreasing; strict increase is noted as unnecessary."
+          },
+          {
+            "line_end": 209,
+            "line_start": 188,
+            "title": "A vanishing residual decay yields strict local growth at every point",
+            "unit_id": "openalex_w2089041583_v2_u08",
+            "unit_type": "local-to-global-monotonicity-proof",
+            "why_material": "After the finite and infinite zero products are known to increase, the remaining factor f_N has positive derivative when a positive distance ratio exceeds -(B+S_N). At any chosen point, zero exclusion makes that ratio positive and the residual tends to zero, so some N gives positivity on a neighborhood; arbitrariness of the point and horizontal line proves the theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A product representation can prove strict modulus growth even with one decreasing global factor: isolate growing zero factors, rewrite the decay as a residual tail tending to zero, and choose the truncation so a positive local distance derivative dominates at each point.",
+            "limit": "The mechanism here relies on the cited B-series identity, the source's constraints on zero real parts, and formula-damaged displays that require scan checking for exact reuse.",
+            "parent_local_unit_ids": [
+              "openalex_w2089041583_v2_u04",
+              "openalex_w2089041583_v2_u05",
+              "openalex_w2089041583_v2_u06",
+              "openalex_w2089041583_v2_u07",
+              "openalex_w2089041583_v2_u08"
+            ],
+            "title": "Factorwise growth plus vanishing-obstruction compensation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2089041583_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2089041583_v2_u07",
+          "spontaneous_reading": "The negative exponential prefactor is not discarded; it is redistributed through a zero-indexed partial sum so that only a negative residual tending to zero remains, small enough to be paired with a growing distance factor."
+        },
+        "directed": {
+          "unit_id": "openalex_w2089041583_v2_u07",
+          "source_grounded_mathematics": "The source identifies e^(Bs), with B<0, as the remaining decreasing factor. An alternate series for -B over paired zeros defines partial sums S_N for which -(B+S_N)>0 and tends to zero. Combining exponential factors then rewrites xi into a finite zero product P_N, a tail product, and a residual containing e^((B+S_N)s) together with a retained linear factor.",
+          "conceptual_reading": "A fixed global obstruction is converted into an adjustable truncation error. Rather than demand every factor increase, the proof absorbs most exponential decay into finitely many zero contributions and leaves a vanishing deficit for a later local comparison.",
+          "representation_or_bridge": "The identity expressing B as a convergent zero sum bridges the global prefactor and the zero factors. Partial summation is the intermediate representation that exposes the small remainder B+S_N.",
+          "boundary_or_failure": "The residual is still decreasing and this unit does not yet prove that the retained linear factor dominates it. The B-series identity and legitimate product regrouping are used rather than proved here.",
+          "uncertainty": "The limiting sign and regrouping mechanism are clear, but conjugation bars, fractions, exponents, and product bounds are damaged; the exact displayed identities require the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Begins with the factorwise conclusion from the regrouped product and retains the complete choice-of-N, neighborhood, and arbitrary-point closure.",
+      "line_end": 209,
+      "line_start": 188,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The definition of f_N is heavily layout-damaged at lines 192-200, but the derivative criterion, convergence used to choose N, neighborhood conclusion, and theorem closure are explicit at lines 201-209; scan verification is required before reusing the exact formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After the finite and infinite zero products are known to increase, the remaining factor f_N has positive derivative when a positive distance ratio exceeds -(B+S_N). At any chosen point, zero exclusion makes that ratio positive and the residual tends to zero, so some N gives positivity on a neighborhood; arbitrariness of the point and horizontal line proves the theorem.",
+      "source_id": "openalex_w2089041583",
+      "source_normalized_sha256": "40fe094f0980361a6e5c509e0bfa5ab1e96a1aef000ef7da0b6d43e0b94f8387",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A vanishing residual decay yields strict local growth at every point",
+      "unit_artifact_relpath": "depth/units/openalex_w2089041583_v2_u08.txt",
+      "unit_bytes": 1401,
+      "unit_id": "openalex_w2089041583_v2_u08",
+      "unit_sha256": "eb6319e7b9a3584db0767cd8f1d9dba3e8a7eda42ed1c0147a478579430e06d1",
+      "unit_type": "local-to-global-monotonicity-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2089041583_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2089041583",
+        "title": "A monotonicity property of Riemann’s xi function and a reformulation of the Riemann hypothesis",
+        "authors": [
+          "Jonathan Sondow",
+          "Cristian Dumitrescu"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 180,
+          "line_end": 187,
+          "text": "Then by combining exponential factors, we can write the Hadamard product as\n\n                                                              ∞\n                               B + SN )s     s                        s  s ρn   s  s ρn\n              ξ ( s) = 12 e(             1 −     N\n                                                   P ( s )   ∏      1 −  e 1 −  e .\n                                             ρ1          n = N +1    ρn        ρn \n\n",
+          "sha256": "d818e1ba0cae30ca0233851071040d43e400b149e370569a787fa7c673be6b68"
+        },
+        "after": {
+          "line_start": 210,
+          "line_end": 217,
+          "text": "\n\n                                                   References\n\n[1]   H. DAVENPORT, Multiplicative Number Theory, 2nd ed., revised by H. L. Montgomery,\n      Graduate Texts in Mathematics, 74, Springer-Verlag, New York-Berlin, 1980.\n[2] H. L. MONTGOMERY and R. C. VAUGHAN, Multiplicative Number Theory, I,\n    Classical Theory, Cambridge Studies in Advanced Mathematics, 97, Cambridge\n",
+          "sha256": "9ce47eaa028e875b123f937960e34b9a503f7d1aff65624b111c9d473628144f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cab32b101cca993da85dfd5e472ca42c79f3be2d0b82148795c54fd27b58c08d",
+        "dossier_sha256": "4697f6c60d6895f4810205f10e759a3f9aaf5502942972e450cd99275f1be0fe",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1",
+            "line_end": 211,
+            "line_start": 102,
+            "mathematical_role": "Uses the Hadamard product, factorwise modulus growth, partial-sum regrouping, and a local derivative estimate to prove strict monotonicity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 209,
+          "line_start": 188,
+          "title": "A vanishing residual decay yields strict local growth at every point",
+          "unit_id": "openalex_w2089041583_v2_u08",
+          "unit_type": "local-to-global-monotonicity-proof",
+          "why_material": "After the finite and infinite zero products are known to increase, the remaining factor f_N has positive derivative when a positive distance ratio exceeds -(B+S_N). At any chosen point, zero exclusion makes that ratio positive and the residual tends to zero, so some N gives positivity on a neighborhood; arbitrariness of the point and horizontal line proves the theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Begins with the factorwise conclusion from the regrouped product and retains the complete choice-of-N, neighborhood, and arbitrary-point closure.",
+          "representation_dependency": "The definition of f_N is heavily layout-damaged at lines 192-200, but the derivative criterion, convergence used to choose N, neighborhood conclusion, and theorem closure are explicit at lines 201-209; scan verification is required before reusing the exact formula.",
+          "unit_id": "openalex_w2089041583_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 187,
+            "line_start": 151,
+            "title": "Regroup the negative exponential prefactor through zero partial sums",
+            "unit_id": "openalex_w2089041583_v2_u07",
+            "unit_type": "prefactor-compensation",
+            "why_material": "The sole obstruction is the decreasing factor from B<0. An alternate series for -B yields partial sums S_N with -(B+S_N)>0 tending to zero; combining exponential factors then rewrites xi as a finite zero product, an infinite increasing tail, and a residual factor whose decay can be made arbitrarily small."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A product representation can prove strict modulus growth even with one decreasing global factor: isolate growing zero factors, rewrite the decay as a residual tail tending to zero, and choose the truncation so a positive local distance derivative dominates at each point.",
+            "limit": "The mechanism here relies on the cited B-series identity, the source's constraints on zero real parts, and formula-damaged displays that require scan checking for exact reuse.",
+            "parent_local_unit_ids": [
+              "openalex_w2089041583_v2_u04",
+              "openalex_w2089041583_v2_u05",
+              "openalex_w2089041583_v2_u06",
+              "openalex_w2089041583_v2_u07",
+              "openalex_w2089041583_v2_u08"
+            ],
+            "title": "Factorwise growth plus vanishing-obstruction compensation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2089041583_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2089041583_v2_u08",
+          "spontaneous_reading": "At each chosen point, the truncation is taken far enough that the residual decay rate is smaller than the positive distance-growth rate; continuity turns that pointwise dominance into a neighborhood, and arbitrary points close the global monotonicity argument."
+        },
+        "directed": {
+          "unit_id": "openalex_w2089041583_v2_u08",
+          "source_grounded_mathematics": "The previously isolated finite product and infinite tail increase in modulus. For the remaining squared-modulus factor f_N, the derivative is positive when the positive distance ratio involving sigma-beta_1 exceeds -(B+S_N). At any sigma_1>sigma_0, zero exclusion makes that ratio positive, while -(B+S_N) tends to zero, so some N gives f_N'(sigma_1)>0 and hence positivity on a neighborhood. Since sigma_1 and t_0 are arbitrary, xi is increasing along every such L.",
+          "conceptual_reading": "The closing mechanism is adaptive local domination: a genuine positive geometric slope beats an obstruction whose size can be driven to zero. Local neighborhoods then assemble into strict monotonicity over the whole horizontal half-line.",
+          "representation_or_bridge": "The derivative criterion bridges two representations of change: logarithmic distance growth from a zero and exponential decay from the residual coefficient. Choosing N tunes the latter without changing xi.",
+          "boundary_or_failure": "The choice of N is point-dependent, so the argument claims no uniform truncation or global derivative margin. It relies on the prior factorwise monotonicity, the zero-sum limit, continuity, and the validity of the regrouped Hadamard product.",
+          "uncertainty": "The derivative criterion, choice of N, and local-to-global closure are explicit. The definition of f_N is heavily layout-damaged, so its exact normalization and powers require scan verification."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "0214a0f735970615b7096fc0057d980afc8c207b31369384f49c40108ac2658e"
+}

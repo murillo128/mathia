@@ -1,0 +1,2435 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no prior analysis-stage conversation",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_16.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_16.jsonl"
+  },
+  "unit_count": 50,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Soundararajan's limiting distribution formulation and conditional small-gap refinements.",
+      "line_end": 147,
+      "line_start": 24,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several inequality symbols are OCR-damaged, but directions and scales are recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source links zeros left of the critical line to RH, then identifies zeros just to its right as an unavoidable quantitative loss whose abundance is governed by small gaps between zeta zeros.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        2,
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative zeros encode both Speiser's RH criterion and the loss in Levinson's method",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u01.txt",
+      "unit_bytes": 8645,
+      "unit_id": "openalex_w2008486284_v2_u01",
+      "unit_sha256": "f2d5b97719e4bfb1738c8cafa7ab5973af5c68358be15ea6b929f4cc3126fcc5",
+      "unit_type": "derivative-zero-equivalence-and-loss",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source distinguishes the near-circle and far-tail asymptotic regimes.",
+      "line_end": 206,
+      "line_start": 149,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact normalization of S and N versus log T is formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gauss-Lucas and continuity reduce near-boundary derivative roots to close original roots, while matching eigenvalue and zeta-zero densities fixes the CUE size and reproduces the Levinson-Montgomery scale.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Small gaps on the unit circle control derivative roots near the circle",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u02.txt",
+      "unit_bytes": 3933,
+      "unit_id": "openalex_w2008486284_v2_u02",
+      "unit_sha256": "49a8325f3aeae8d55d8a7b92a2479469d22e4e4bae5cf00b95cfc4cee1e45621",
+      "unit_type": "random-matrix-correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem counts the small derivative distances arising from close pairs; the corollary needs a separate argument that all other mechanisms contribute only order s.",
+      "line_end": 300,
+      "line_start": 207,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence, though the pushforward mechanism and caveat are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The CUE joint density gives a small-gap expansion; analytic motion of the corresponding critical point starts quadratically in the gap, yielding the leading s to the one-half density and its correction.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        5,
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A nearest-neighbor spacing expansion pushes forward to a square-root derivative-root density",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u03.txt",
+      "unit_bytes": 6311,
+      "unit_id": "openalex_w2008486284_v2_u03",
+      "unit_sha256": "8c575ee1c2b181470c8388c7f03a4f9a8203e812136876f1e89cc683072d7036",
+      "unit_type": "spacing-to-critical-point-law",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is numerical evidence and the underlying cause is explicitly left open.",
+      "line_end": 315,
+      "line_start": 302,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on figures; captions and prose recover the comparison.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "CUE, COE, independent uniform roots, and zeta-prime data share a second bump at varying locations, demonstrating a robust phenomenon not explained by the small-gap asymptotic alone.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative-root distances show bimodality across distinct root ensembles",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u04.txt",
+      "unit_bytes": 1153,
+      "unit_id": "openalex_w2008486284_v2_u04",
+      "unit_sha256": "91b44f74cae71a85c6585aa3d57cee03044e266236e92609ec549c39b532c2ea",
+      "unit_type": "unexplained-empirical-phenomenon",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The appendix later supplies a uniform domain and uniqueness theorem for the chosen root.",
+      "line_end": 563,
+      "line_start": 317,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; equations 5.8-5.16 should be checked against the PDF before symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factoring off the close pair, expanding the logarithmic derivative, and using symmetry plus the implicit-function theorem gives a correctly rescaled critical point with explicit quadratic and quartic coefficients.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic dependence turns a close root pair into an even power series for the nearby critical point",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u05.txt",
+      "unit_bytes": 13151,
+      "unit_id": "openalex_w2008486284_v2_u05",
+      "unit_sha256": "cb25218561dba8ca633c0890d724d87baa2b74aba34118cd266fbbafac2fd335",
+      "unit_type": "implicit-root-expansion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This justifies averaging B2 rather than assuming exact independence.",
+      "line_end": 612,
+      "line_start": 564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Converting complex displacement to radial displacement and changing variables through the spacing density reveals why the fixed real part B1 is crucial; next-nearest spacing shows B2 depends on the close gap only beyond the retained order.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The radial law requires separating a deterministic leading coefficient from a weakly dependent correction",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u06.txt",
+      "unit_bytes": 3301,
+      "unit_id": "openalex_w2008486284_v2_u06",
+      "unit_sha256": "b35aebb0ceed2e63426f1b949c8b71ea699ff2e3186e0c76778d45494fa10c15",
+      "unit_type": "distribution-pushforward-with-dependence-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The final differentiations were computer-algebra assisted.",
+      "line_end": 779,
+      "line_start": 614,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact ratio derivatives and finite-N coefficients are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The measure-zero conditioning is defined as a close-pair limit, producing an explicit fourth-power weight; known ratios of characteristic polynomials then compute the coefficient expectations required by the density theorem.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coalescing two CUE eigenvalues becomes a lower-dimensional Haar average weighted by |Lambda(1)| to the fourth",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u07.txt",
+      "unit_bytes": 8898,
+      "unit_id": "openalex_w2008486284_v2_u07",
+      "unit_sha256": "c5ab299f53c042200cf651b99c227a9a50965a092c57b85ac77c81a06ae40746",
+      "unit_type": "conditioned-ensemble-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The transfer is explicitly conditional on the random-matrix model; the plotted zeta-prime distribution is empirical.",
+      "line_end": 928,
+      "line_start": 781,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence and some damaged symbols.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expanding the logarithmic derivative around two close zeta zeros produces the same coefficient structure and leading one-fourth term as the polynomial model; assuming CUE spacing and conditioned density gives identical near-line behavior.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta close-pair expansion matches CUE after unfolding and a conditioned one-level average",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u08.txt",
+      "unit_bytes": 7822,
+      "unit_id": "openalex_w2008486284_v2_u08",
+      "unit_sha256": "0e7f22aa89d70887dd5cd48a0d1d1bf092fb14963871fce1b6bef33afbf53adf",
+      "unit_type": "solver-conditional-zeta-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The parameter b drops out of the limiting density near +1.",
+      "line_end": 1083,
+      "line_start": 930,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; Jacobi indices and Bessel normalizations need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Gaudin-Mehta determinant reduces correlations to an orthogonal-polynomial projection kernel; Szego's identity, Jacobi polynomial representation, and microscopic Bessel asymptotics produce the conditioned one-level density used in the zeta transfer.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        16,
+        17,
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A singularly weighted unitary ensemble yields a Bessel one-level density",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u09.txt",
+      "unit_bytes": 9469,
+      "unit_id": "openalex_w2008486284_v2_u09",
+      "unit_sha256": "f211c12f060c9b795c2d4c7bde79e25c22cc5097190d08b821fce52bab0018a4",
+      "unit_type": "orthogonal-polynomial-kernel-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The threshold T less than one over pi and sufficiently large N are essential.",
+      "line_end": 1387,
+      "line_start": 1086,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Geometry is prose-recoverable; exact constants in Lemma 8.3 are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The appendix deforms the disk boundary around possible endpoint multiplicities, compares the logarithmic derivative to the close-pair contribution, preserves winding number under uniform bounds, and obtains analytic dependence by a contour integral.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Argument-principle stability gives a unique analytic derivative root inside the close-pair disk",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u10.txt",
+      "unit_bytes": 18602,
+      "unit_id": "openalex_w2008486284_v2_u10",
+      "unit_sha256": "d894e6ac5cebef2d5895dbf1f56a0a698689573a720fea8bd595e2fe9ba2e438",
+      "unit_type": "analytic-root-localization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Known results and a large finite verification are distinguished from the all-degree equivalence.",
+      "line_end": 58,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The coefficient normalization is formula-sensitive but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Polya's reformulation packages the zero geometry of the completed zeta function into a two-parameter family of finite polynomials, with differentiation showing why the unshifted family would suffice.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH is equivalent to real-rootedness of all Jensen polynomials of central zeta coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u01.txt",
+      "unit_bytes": 3674,
+      "unit_id": "openalex_w2917089270_v2_u01",
+      "unit_sha256": "aad88e84d6648d3a6a1686650dd27a95d29ff9cf994eb181c312b0d4dfdca037",
+      "unit_type": "equivalent-hyperbolicity-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "For zeta this proves fixed-degree, large-shift hyperbolicity, not RH, which requires all shifts and degrees.",
+      "line_end": 118,
+      "line_start": 65,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact scaling in equation 5 is essential and should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3 identifies a reusable local ratio expansion whose quadratic term survives the normalization and whose limit is a Hermite polynomial; simple real Hermite roots then imply eventual hyperbolicity.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic logarithmic growth makes normalized Jensen polynomials converge to Hermite polynomials",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u02.txt",
+      "unit_bytes": 3971,
+      "unit_id": "openalex_w2917089270_v2_u02",
+      "unit_sha256": "3f81b41d445a682f457b4cce6ae789a49e30e02e14289f30159e02db00c1f0fd",
+      "unit_type": "asymptotic-hyperbolicity-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The tabulated partition thresholds are computational conjectures except where separately proved.",
+      "line_end": 187,
+      "line_start": 119,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the conceptual transfer; exact thresholds are table-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source separates the general asymptotic mechanism from its zeta instance and shows how coefficient growth can establish eventual log-concavity/hyperbolicity across enumerative and modular sequences.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Hermite-limit criterion transfers from zeta derivatives to partition and modular-form coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u03.txt",
+      "unit_bytes": 5143,
+      "unit_id": "openalex_w2917089270_v2_u03",
+      "unit_sha256": "6ac74c6409eb8755dcbd0c9140540806f429b7cefe37307d1511915fbef99480",
+      "unit_type": "cross-domain-generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Theorem 6 allows a general formal-series limit, with Hermite as the exponential-quadratic specialization.",
+      "line_end": 249,
+      "line_start": 196,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After binomial recentering, the coefficient of each power becomes a finite difference in the shift j; all lower-degree terms vanish and the first surviving term directly yields the target polynomial.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A finite-difference annihilation identity extracts the limiting polynomial from coefficient ratios",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u04.txt",
+      "unit_bytes": 3482,
+      "unit_id": "openalex_w2917089270_v2_u04",
+      "unit_sha256": "f86f59b23c89905ea181b72982848249e5cd0fef8b2b8d5e46d2198815d87eff",
+      "unit_type": "finite-difference-limit-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is outside the direct RH claim but validates the generality of the mechanism.",
+      "line_end": 282,
+      "line_start": 251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact powers of n and constants need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Circle-method or Poincare-series asymptotics give a full expansion for Fourier coefficients; expanding adjacent coefficient ratios supplies the linear scale and shrinking quadratic scale required by Theorem 3.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bessel asymptotics verify the Hermite criterion for weakly holomorphic modular forms",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u05.txt",
+      "unit_bytes": 2353,
+      "unit_id": "openalex_w2917089270_v2_u05",
+      "unit_sha256": "b1f0fdbb3f9b5510a3f05911242171a2d24c47b4de84b9c1fb1dc0cab6c8d5b3",
+      "unit_type": "modular-coefficient-asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the representation on which the saddle-point proof operates.",
+      "line_end": 323,
+      "line_start": 284,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; derivative indices and powers should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Riemann's theta transformation expresses derivatives of the completed zeta function through a single positive integral F(n), and the Jensen coefficients become a controlled difference of adjacent even moments.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Central zeta derivatives reduce to moments of a theta-tail integral",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u06.txt",
+      "unit_bytes": 2653,
+      "unit_id": "openalex_w2917089270_v2_u06",
+      "unit_sha256": "0472ca7734e1104cdf0f9ef01dd27532640a0d05ee56f933cd7bb8ee1d011dae",
+      "unit_type": "theta-integral-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes numerical calibration showing rapidly improving relative accuracy.",
+      "line_end": 415,
+      "line_start": 324,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence; coefficients b_k require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source locates the unique maximum, expands around it into a Gaussian times computable corrections, truncates with arbitrary precision, and shows the omitted theta terms are smaller than every power near the saddle.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A moving saddle defined by n=L(pi e^L plus three-fourths) gives all-order central-derivative asymptotics",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u07.txt",
+      "unit_bytes": 6537,
+      "unit_id": "openalex_w2917089270_v2_u07",
+      "unit_sha256": "cd258adaed2f7e7ae8a883c87ebc98e56aee0d1704e94e0e8fb2a142fc317514",
+      "unit_type": "all-orders-saddle-point-asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The long calculation verifies Theorem 3 rather than providing a uniform result in degree.",
+      "line_end": 520,
+      "line_start": 421,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; OCR degrades several displayed definitions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Holomorphic variation of the saddle parameter controls all shift derivatives, identifies positive delta tending to zero, and bounds higher logarithmic terms below the required powers, completing eventual fixed-degree hyperbolicity.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ratio expansions of the saddle-point formula satisfy the Hermite-limit conditions for zeta coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u08.txt",
+      "unit_bytes": 7105,
+      "unit_id": "openalex_w2917089270_v2_u08",
+      "unit_sha256": "0f65d1fc4c8365d422deeb5db6b8edbc44e4987c2e70bef347a99e9f07dc877b",
+      "unit_type": "hypothesis-verification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source sketches the effective inequalities and reports the computation; it does not expose a reusable verification artifact here.",
+      "line_end": 553,
+      "line_start": 522,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact epsilon vectors and bounds are formula/table-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof divides the infinite shift range: Hermite's criterion checks shifts through one million, while explicit coefficient-error boxes around the Hermite polynomial cover every larger shift.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Asymptotic neighborhoods plus finite checking prove hyperbolicity through degree eight",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u09.txt",
+      "unit_bytes": 2045,
+      "unit_id": "openalex_w2917089270_v2_u09",
+      "unit_sha256": "f81ae56177014408253cd2b9e2d9d9712234b5ee023a9fb0a241b769e06d7616",
+      "unit_type": "effective-computational-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Illustrative computation supports but is not needed for the asymptotic theorem.",
+      "line_end": 606,
+      "line_start": 556,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Table extraction is readable; scientific exponents should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The tables demonstrate the normalization's behavior across shifts and degrees, including decay of odd coefficients and convergence of even coefficients to the Hermite pattern.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Renormalized partition and zeta Jensen polynomials visibly approach their Hermite models",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u10.txt",
+      "unit_bytes": 3524,
+      "unit_id": "openalex_w2917089270_v2_u10",
+      "unit_sha256": "56a2c0efc2267bacf1a002196ed2f2000bdd8acade9c4a1b395fd90c9904fc6d",
+      "unit_type": "numerical-limit-illustration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The Wiener-Ikehara details supporting the transfer continue at lines 2092-2110.",
+      "line_end": 397,
+      "line_start": 327,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed Chebyshev formulas are readable; exact constants should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The section separates the analytic input from the arithmetic output and identifies Tauberian theory as the conceptual mediator, while contrasting complex-analytic and elementary proofs.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nonvanishing at Re(s)=1 becomes the prime number theorem through a Tauberian bridge",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u01.txt",
+      "unit_bytes": 4731,
+      "unit_id": "connes2026_rh_past_present_v2_u01",
+      "unit_sha256": "9fde20c20304f50393ebe7cb3d1d7f3c9346136a6a7c4d52f26377cf14340f6a",
+      "unit_type": "analytic-to-arithmetic-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u01.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The corrected formula is restated explicitly in note 7 at lines 2182-2204.",
+      "line_end": 505,
+      "line_start": 399,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive text extraction; the prose diagnosis is clear, but branch conventions require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source diagnoses a genuine representation error, restores von Mangoldt's single-valued exponential-integral variable, and then places primes and zeros on opposite sides of the Guinand-Weil test-function formula.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The explicit formula requires rho log x rather than the ambiguous symbol x^rho",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u02.txt",
+      "unit_bytes": 7257,
+      "unit_id": "connes2026_rh_past_present_v2_u02",
+      "unit_sha256": "d9c9539a8d70d48d7750e0ca319a6e7bd232146e363325589cfce11a543591d5",
+      "unit_type": "notation-repair-and-explicit-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u02.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact survey unit; proof details lie in cited work, not this source.",
+      "line_end": 520,
+      "line_start": 507,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; the mechanism is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The historical progression isolates smoothing by a Gaussian kernel as the mechanism that converts an oscillatory explicit formula into effective sign-change bounds.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian averaging makes a remote prime-counting sign change detectable",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u03.txt",
+      "unit_bytes": 998,
+      "unit_id": "connes2026_rh_past_present_v2_u03",
+      "unit_sha256": "4f2b9c327def5770b4c0f88d07ffbd1e10c67ece3801eacd8e45c9d9a09d70c4",
+      "unit_type": "smoothing-and-oscillation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u03.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source gives the conceptual progression rather than full proofs.",
+      "line_end": 574,
+      "line_start": 522,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact mollifier normalization in note 2 is formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Hardy's phase normalization makes sign changes visible, while Selberg and later mollifiers convert averaged inverse-zeta cancellation into positive-proportion results.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Real-valued Z and mollification turn cancellation into lower bounds for critical-line zeros",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u04.txt",
+      "unit_bytes": 3957,
+      "unit_id": "connes2026_rh_past_present_v2_u04",
+      "unit_sha256": "fbc6213438782cf3725fe7fd80f8fc12333e71fe2d5a61cdb2c1edafdedf884f",
+      "unit_type": "critical-line-zero-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u04.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Short survey comparison with current bounds named but not proved.",
+      "line_end": 596,
+      "line_start": 576,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several exponents should be verified from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The section distinguishes exclusion of zeros near one, density control inside the strip, and convex growth control on vertical lines instead of collapsing them into a single approximation to RH.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-free regions, zero density, and Lindelof encode progressively different controls",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u05.txt",
+      "unit_bytes": 1578,
+      "unit_id": "connes2026_rh_past_present_v2_u05",
+      "unit_sha256": "7cb76c380034713e790d29669b8d4db3a4a820b4ccf3fc42ff8c3cfcda028c8c",
+      "unit_type": "growth-convexity-and-zero-density",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u05.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the normalization distinction that explains Riemann's constant-term typo.",
+      "line_end": 644,
+      "line_start": 598,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence but extraction is intelligible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Passing from xi to the even Xi function pairs zeros and removes the canonical-product exponentials, exposing a representation in factors of 1-s squared over alpha squared.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Evenness cancels Hadamard exponential factors in the Xi product",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u06.txt",
+      "unit_bytes": 2864,
+      "unit_id": "connes2026_rh_past_present_v2_u06",
+      "unit_sha256": "819c1463311d20e81edee6df498af5d15e8b202d95684acc0c622ddfa6ebdc5a",
+      "unit_type": "entire-function-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u06.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The limiting-distribution statement is expanded at lines 2120-2165.",
+      "line_end": 698,
+      "line_start": 646,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual contrast is prose-stable; precise asymptotics are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Nevanlinna/Jensen growth language and the Borchsenius-Jessen theorem show that zeros of zeta minus a nonzero constant crowd the right of the critical line, sharply separating the value zero from generic values.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero alignment is exceptional and unstable under nonzero value perturbations",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u07.txt",
+      "unit_bytes": 3728,
+      "unit_id": "connes2026_rh_past_present_v2_u07",
+      "unit_sha256": "ce284153c56a6a8246287586015b9639401f8ebd0ac34ddc9e111cf6283d4cfa",
+      "unit_type": "perturbation-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u07.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the nonvanishing condition needed to take the logarithm of the target.",
+      "line_end": 748,
+      "line_start": 700,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Hilbert-space hypotheses are readable; exact norm notation should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A square-summable but directionally divergent sequence has dense unimodular sums; applied to logarithms of Euler factors, this supplies the approximation engine behind Voronin universality.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hilbert-space rearrangement turns prime Euler factors into universality",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u08.txt",
+      "unit_bytes": 3284,
+      "unit_id": "connes2026_rh_past_present_v2_u08",
+      "unit_sha256": "dd60d17864e0dd289b141817329ff6fab21723201790962d4dec324c06a2b7f0",
+      "unit_type": "universality-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u08.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a strategy comparison, not evidence that the required operator exists.",
+      "line_end": 774,
+      "line_start": 759,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Hilbert-Polya and scattering viewpoints translate critical-line zeros into real spectral data while recording that boundary conditions and rigorous operator realizations remain elusive.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Self-adjoint spectra would force RH, but proposed operators lack a complete construction",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u09.txt",
+      "unit_bytes": 1237,
+      "unit_id": "connes2026_rh_past_present_v2_u09",
+      "unit_sha256": "ede5a938c6ac7c866d74e3a32a2553d6d0e8d4458e66fc768de1ccfe02a9003b",
+      "unit_type": "spectral-strategy-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u09.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the explicit limit of the analogy: the classical arithmetic cohomology remains conjectural.",
+      "line_end": 853,
+      "line_start": 776,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several cohomology subscripts are degraded; scan verification is needed before symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Weil's intersection pairing and the later etale-cohomological determinant representation show how zero location follows from geometric positivity and weight bounds, motivating but not supplying an arithmetic analogue for Spec Z.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Function-field RH becomes a positivity statement on geometry and Frobenius cohomology",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u10.txt",
+      "unit_bytes": 5303,
+      "unit_id": "connes2026_rh_past_present_v2_u10",
+      "unit_sha256": "34a936eda35bda23ce4c148247025692da1b6164bc02e1204f256cd4c7fde36d",
+      "unit_type": "geometric-analogy-and-proof-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u10.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Modular forms provide a concrete local-factor analogue inside the span.",
+      "line_end": 938,
+      "line_start": 860,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed trace terms are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source connects global fields to locally compact adelic companions, automorphic L-functions, and the Selberg trace formula, then identifies the opposite sign of prime terms as a structural obstacle to a direct spectral imitation.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adeles unify global arithmetic, while a sign separates Selberg spectra from zeta absorption",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u11.txt",
+      "unit_bytes": 5308,
+      "unit_id": "connes2026_rh_past_present_v2_u11",
+      "unit_sha256": "0a18244959f157cce345512cfce759bdd2224e951eeb631deb461434b42456ca",
+      "unit_type": "adelic-and-trace-formula-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u11.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves both empirical support and the stated limitation.",
+      "line_end": 1004,
+      "line_start": 940,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Spacing normalizations should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Pair correlation and computations support GUE statistics only after rescaling by the changing zero density; that necessary unfolding rules out interpreting the match as a fixed finite-density operator without further structure.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "GUE agreement requires height-dependent unfolding and is therefore intrinsically local",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u12.txt",
+      "unit_bytes": 4383,
+      "unit_id": "connes2026_rh_past_present_v2_u12",
+      "unit_sha256": "bdd32f20d526d17ccf6d757bdfc8c8866c935e47ff1f6b324dbd6956c615d34c",
+      "unit_type": "random-matrix-localization-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u12.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Classical number-field predictions remain conjectural.",
+      "line_end": 1031,
+      "line_start": 1014,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The family viewpoint moves beyond one zeta function: arithmetic structure selects unitary, orthogonal, or symplectic statistics, with Frobenius and equidistribution making the finite-field case rigorous.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Katz-Sarnak assigns matrix symmetry by L-function family and proves the finite-field model",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u13.txt",
+      "unit_bytes": 1653,
+      "unit_id": "connes2026_rh_past_present_v2_u13",
+      "unit_sha256": "792273aaa1eee2ea0dc9cdd2c9ac22a3b791105de587ec535750070525074086",
+      "unit_type": "family-symmetry-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u13.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Only the first two integer moments are stated as proved.",
+      "line_end": 1077,
+      "line_start": 1033,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact gamma and Euler products require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Keating-Snaith model isolates a universal characteristic-polynomial factor from a family-specific Euler product, a reusable pattern for transferring statistical structure without erasing arithmetic data.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta moment constants split into universal random-matrix and arithmetic Euler factors",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u14.txt",
+      "unit_bytes": 2838,
+      "unit_id": "connes2026_rh_past_present_v2_u14",
+      "unit_sha256": "0ca7de4296fd03c348a226392260cfc3fdb154d9c0741ead709a2813f8950627",
+      "unit_type": "universal-arithmetic-factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u14.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the knots-primes monodromy statement as a geometric refinement.",
+      "line_end": 1133,
+      "line_start": 1079,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: cross products, quotients, and etale maps should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Encoding the ergodic quotient by a crossed-product algebra produces a trace formula whose minus sign is explained by absorption rather than ordinary eigenvalues; periodic prime orbits then acquire a class-field-theoretic interpretation.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The adele-class quotient realizes zeros as an absorption spectrum",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u15.txt",
+      "unit_bytes": 3630,
+      "unit_id": "connes2026_rh_past_present_v2_u15",
+      "unit_sha256": "0c6e0ad8f1487bb761b83282ab38401edb1e8054b4e7088630d1f52422c10838",
+      "unit_type": "noncommutative-spectral-realization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u15.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical height is historical evidence, not a proof of RH.",
+      "line_end": 1186,
+      "line_start": 1165,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low aside from scientific-notation OCR.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The computational history identifies the methodological pair needed for rigorous verification: fast evaluation locates candidates while the Turing method checks that none were missed.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Siegel evaluation plus Turing counting separates computed zeros from certified completeness",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u16.txt",
+      "unit_bytes": 1103,
+      "unit_id": "connes2026_rh_past_present_v2_u16",
+      "unit_sha256": "4be1217514edaa4738d124705de5f935bddf6a68194149e244718d74f3a0ae38",
+      "unit_type": "computational-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u16.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the central localization principle used by the later construction.",
+      "line_end": 1263,
+      "line_start": 1199,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence; sign conventions and Fourier constraints need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The explicit formula yields a quadratic-form criterion equivalent to RH, while support of the test function cuts off all but finitely many local prime terms; the source also notes that numerically proved archimedean positivity lacks a mechanism known to survive adding primes.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Compact support turns global RH into Weil positivity involving finitely many primes at a time",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u17.txt",
+      "unit_bytes": 4191,
+      "unit_id": "connes2026_rh_past_present_v2_u17",
+      "unit_sha256": "4763af8586b155cc6341b62687507312242c974428b03008781a4cae25d86505",
+      "unit_type": "finite-local-positivity-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u17.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The criteria are stated rather than proved.",
+      "line_end": 1316,
+      "line_start": 1265,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact inequalities are readable but formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Beurling-Nyman, Li, Robin, and Lagarias translate zero location into distinct functional-analytic, zero-sum, and elementary-arithmetic representations, illustrating both transfer opportunities and representation-specific costs.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH can be recast as density, coefficient positivity, or divisor-sum inequalities",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u18.txt",
+      "unit_bytes": 3016,
+      "unit_id": "connes2026_rh_past_present_v2_u18",
+      "unit_sha256": "2c02ed2efff3373befd521ff270164179f4d7e282cf8dc35c015a3860cadbaa8",
+      "unit_type": "equivalent-criteria-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u18.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The broad incompleteness claims are motivational prose and should not be read as establishing independence of RH.",
+      "line_end": 1342,
+      "line_start": 1317,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The discussion distinguishes logical equivalence from feasible verification: factorization and unbounded universal quantification prevent direct checking from becoming a proof strategy.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An elementary universal criterion can remain computationally unusable",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u19.txt",
+      "unit_bytes": 2423,
+      "unit_id": "connes2026_rh_past_present_v2_u19",
+      "unit_sha256": "98bc73ad26cbd339f945fddae49d669e36f802d8938287f7cdcec374759dc49f",
+      "unit_type": "verification-limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u19.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the survey treatment because the letter gives the clearest conceptual counterexample.",
+      "line_end": 1416,
+      "line_start": 1364,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Branch cuts and conditional summation are scan-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The letter derives the failure of Li(x to rho) notation from its periodic loss of rho information and shows why the unexponentiated variable restores a meaningful conditional zero sum.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Single-valued Ei of rho log x repairs the traditional statement of Riemann's formula",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u20.txt",
+      "unit_bytes": 3722,
+      "unit_id": "connes2026_rh_past_present_v2_u20",
+      "unit_sha256": "8e83b9aed3ff9e14d66003defe4210d70507833542621ada3b6e5ab1207a93c2",
+      "unit_type": "explicit-formula-variable-repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u20.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span explicitly preserves the unproved convergence gate and proposed Hurwitz passage.",
+      "line_end": 1501,
+      "line_start": 1417,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula and numerical-table dependence; exact values need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compact support makes the quadratic form computable from finitely many prime powers; existence and a simplicity-evenness condition give an extremizer whose Mellin zeros lie on the critical line, while numerical agreement suggests but does not prove convergence to zeta zeros.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A constrained Weil-form minimizer from finitely many primes produces a transform with line-constrained zeros",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u21.txt",
+      "unit_bytes": 5654,
+      "unit_id": "connes2026_rh_past_present_v2_u21",
+      "unit_sha256": "545fbcca82795f9eb2d82a4c9f45d921a786c7f5706b2d2c7ecc5251bc68885f",
+      "unit_type": "finite-prime-extremal-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u21.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Simplicity, isolation, and evenness are indispensable hypotheses.",
+      "line_end": 1560,
+      "line_start": 1517,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The interval normalization is formula-sensitive but recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 6.1 supplies the abstract real-zero engine for every finite support scale and explains the finite-matrix self-adjoint approximation and Hurwitz limit used in computation.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A simple even ground state of a translation-kernel quadratic form has a real-zero Fourier transform",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u22.txt",
+      "unit_bytes": 3964,
+      "unit_id": "connes2026_rh_past_present_v2_u22",
+      "unit_sha256": "701fcd2de641b128cebf5f2cd639a74ad19fcafee6d7df4ed994cceaa2ea7bcb",
+      "unit_type": "real-zero-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u22.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the global model later replaced by prolate-localized modes.",
+      "line_end": 1613,
+      "line_start": 1562,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; the kernel and normalization need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Poisson symmetry and the summation map E convert Xi into the Fourier transform of the unique integral-zero combination of the zeroth and fourth Hermite modes, giving a finite-mode target for localization.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann's Xi kernel is a summation image of a two-Hermite combination",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u23.txt",
+      "unit_bytes": 3036,
+      "unit_id": "connes2026_rh_past_present_v2_u23",
+      "unit_sha256": "e6cb5d655b729c2af0e550e97004e1b42be511fe4bcf1cc575f4d9ea98c44e1b",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u23.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two even modes corresponding to Hermite indices zero and four are the ones used next.",
+      "line_end": 1686,
+      "line_start": 1615,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Operator formulas and eigenvalue indexing are scan-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The commuting prolate differential operator turns two noncommuting projections into a common spectral problem, with exponentially near-one eigenvalues quantifying functions that are almost both time- and band-limited.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        28
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prolate eigenfunctions diagonalize the near intersection of time and frequency windows",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u24.txt",
+      "unit_bytes": 4448,
+      "unit_id": "connes2026_rh_past_present_v2_u24",
+      "unit_sha256": "1a8077f18bb359718599f9e4da8b62a44fc0be435bea97baef63a30925b405f0",
+      "unit_type": "time-frequency-localization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u24.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a conceptual approximation, calibrated numerically, not yet an eigenvector theorem.",
+      "line_end": 1753,
+      "line_start": 1689,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing Hermite modes by localized prolate modes and applying E yields a compactly supported vector; the impossibility of exact simultaneous support explains why it is only near the global radical and why its Weil value is extremely small.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson duality converts prolate near-intersection into a near-null vector of the restricted Weil form",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u25.txt",
+      "unit_bytes": 4425,
+      "unit_id": "connes2026_rh_past_present_v2_u25",
+      "unit_sha256": "3e877319e778a72f2d403c84e0bab404af9ca4761debeedc187a3b4036fc35af",
+      "unit_type": "near-radical-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u25.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserving this separation prevents the convergent model sequence from being mistaken for a proof of RH.",
+      "line_end": 1779,
+      "line_start": 1756,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The strip width and error exponent require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source proves uniform convergence of the candidate transforms on closed substrips, then isolates two missing facts: simplicity/evenness of the restricted Weil ground state and a strong comparison between the candidate and that state.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The prolate candidate converges to Xi, but identification with the true Weil minimizer remains open",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u26.txt",
+      "unit_bytes": 1305,
+      "unit_id": "connes2026_rh_past_present_v2_u26",
+      "unit_sha256": "d6ae480a188d7fc1ef5b2645a9891c50c2b930fc869dcf6418e57509c1bc6a53",
+      "unit_type": "convergence-with-explicit-gap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u26.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The support and transform-vanishing constraints in Theorem 7.1 are essential.",
+      "line_end": 1849,
+      "line_start": 1782,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; trace signs and projection notation must be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Scaling kernels translate geometric correspondences into operators; the two-cutoff trace formula then exposes the same projections as communication theory, with the Sonin complement providing a positive contribution to the Weil form.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Time and frequency projections rewrite the archimedean explicit formula as a trace identity",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u27.txt",
+      "unit_bytes": 4499,
+      "unit_id": "connes2026_rh_past_present_v2_u27",
+      "unit_sha256": "ff91d59e37f1d074ddac30cda6a205f405fd6f1f2d8684a7c6854e78ae4b209f",
+      "unit_type": "trace-formula-information-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u27.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source proposes this as a route to comparing the true minimizer with the prolate candidate.",
+      "line_end": 1906,
+      "line_start": 1850,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula and notation dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Crossed-product sheaves encode the quotient geometry compatibly with Spec Z, and the semilocal trace formula extends the archimedean projection identity by exactly the selected finite set of prime contributions.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Semilocal adele quotients add finitely many prime orbits to the time-frequency trace formula",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u28.txt",
+      "unit_bytes": 3785,
+      "unit_id": "connes2026_rh_past_present_v2_u28",
+      "unit_sha256": "f70f1827bc282473630d767cd483ced571783b30e6135ccfdb4cf7765bf24578",
+      "unit_type": "semilocal-geometric-extension",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u28.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The heat theorem assumes RH.",
+      "line_end": 1974,
+      "line_start": 1910,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact coefficients are heavily formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Low eigenvalues encode the finite-prime zero approximations, whereas high eigenvalues determine heat asymptotics; the divergent factorial heat expansion warns that ultraviolet agreement is asymptotic rather than a convergent reconstruction.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Infrared approximants and ultraviolet asymptotics test different parts of a candidate zeta spectrum",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u29.txt",
+      "unit_bytes": 4415,
+      "unit_id": "connes2026_rh_past_present_v2_u29",
+      "unit_sha256": "2183db8f8c25b3d02150abbebeddcecc01b9d179936637ae05aab6a12a1a4fd8",
+      "unit_type": "spectral-regime-separation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u29.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The special lambda choices and Darboux deformation are part of the construction.",
+      "line_end": 2024,
+      "line_start": 1978,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; signs, square roots, and parameter values should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Restricting the prolate operator to the Sonin space yields discrete negative spectrum whose square-root Dirac family has the same ultraviolet behavior as zeta zeros, while the source carefully claims asymptotic matching rather than equality of spectra.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A self-adjoint prolate extension matches the high-energy counting of zeta zeros",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u30.txt",
+      "unit_bytes": 3657,
+      "unit_id": "connes2026_rh_past_present_v2_u30",
+      "unit_sha256": "4f3964f3ed87d8e6bc736a512c55bc2e6e3a80cc9800a9f360130753681ab38d",
+      "unit_type": "ultraviolet-spectral-model",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u30.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    }
+  ]
+}

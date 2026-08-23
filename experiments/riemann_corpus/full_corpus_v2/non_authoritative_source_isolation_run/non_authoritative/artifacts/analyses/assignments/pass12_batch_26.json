@@ -1,0 +1,2316 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated generation context",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_26.jsonl",
+  "prior_output_paths": {},
+  "unit_count": 50,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the deliberate choice to keep the auxiliary constant B fixed so most of Schoenfeld's numerical proof can be reused.",
+      "line_end": 97,
+      "line_start": 34,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact decimal constants, logarithm placement, and range endpoints are formula-sensitive but cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper fixes the scale parameter used in Schoenfeld's explicit formula by solving where Kadiri's zero-free region becomes stronger than a verified RH height, yielding a new all-height zero-free region and explicit theta and psi errors.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [
+        2,
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite RH verification and an asymptotic zero-free region can be joined at an optimized height",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u01.txt",
+      "unit_bytes": 3346,
+      "unit_id": "openalex_w1978559180_v2_u01",
+      "unit_sha256": "71aed5575bd816fd843a08c65474cd7a8863ceeef808a196efb6c649dbf25719",
+      "unit_type": "verified-height-zero-free-splice",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the decomposition of psi minus theta used to transfer finite-range control.",
+      "line_end": 146,
+      "line_start": 99,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low to moderate; numerical constants and interval endpoints should be preserved exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The large-x argument is patched through successively stronger explicit psi estimates, monotonicity of the error envelope, elementary theta and psi inequalities, and finally direct verification below 599, making the theorem genuinely explicit rather than asymptotic.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Published finite-range bounds and a short terminal computation extend an asymptotic estimate down to small x",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u02.txt",
+      "unit_bytes": 2376,
+      "unit_id": "openalex_w1978559180_v2_u02",
+      "unit_sha256": "1bf336975785ec67206eeea00f38ba9851bb1c611ecaece9338302594e36270b",
+      "unit_type": "analytic-computational-range-bridging",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Mathematica evaluation at x0 equals 10 to the eighth and the finite prime-step maximization.",
+      "line_end": 230,
+      "line_start": 149,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive constants and exponents are legible; computation provenance is described but no executable artifact is included.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An exact partial-summation identity separates the endpoint and integrated theta errors; choosing a comparison function that dominates the integrand, evaluating the low range by summation over primes, and checking prime intervals extends the resulting bound to x at least 229.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial summation turns a theta error into a pi minus li bound with a computable splice point",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u03.txt",
+      "unit_bytes": 4258,
+      "unit_id": "openalex_w1978559180_v2_u03",
+      "unit_sha256": "710782fe6a221486e7f2c203814239c4b132e9ece4c36a1d0bba31f65937e124",
+      "unit_type": "chebyshev-to-prime-count-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The combinatorial proof itself is cited; this source contributes the analytic threshold substitution.",
+      "line_end": 273,
+      "line_start": 244,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The interval-width constant and exponential scale are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The improved theta bound supplies a prime in a specifically sized interval, which can replace the prior interval estimate in Ford's proof and lower the threshold for maximal intersecting families of arithmetic progressions.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A shorter guaranteed prime interval lowers a combinatorial classification threshold",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u04.txt",
+      "unit_bytes": 1581,
+      "unit_id": "openalex_w1978559180_v2_u04",
+      "unit_sha256": "e2fc39e47e8cc702e2fd15d2e4fd2f7b4ba1e96b9fc4f71d1db7ef20c708fb6b",
+      "unit_type": "downstream-threshold-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the coefficient-sensitivity discussion and comparison with an alternative additive-style interval.",
+      "line_end": 399,
+      "line_start": 280,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical table entries, gap thresholds, and the final exhaustive-search boundary must be retained exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A piecewise table of psi bounds proves a simple theta error envelope, positivity then guarantees a prime in a multiplicative interval above e to the thirty-fifth, and successive maximal-gap certificates lower the remaining threshold until exhaustive computation is practical.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A global short-interval theorem is bootstrapped from asymptotics to millions by certified prime gaps",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u05.txt",
+      "unit_bytes": 6298,
+      "unit_id": "openalex_w1978559180_v2_u05",
+      "unit_sha256": "d9c832b18b114e5dd40dfd7f9b597177d336f21ff34a306091f29101de860be8",
+      "unit_type": "analytic-bound-and-prime-gap-bootstrap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definition of P-integers, the positivity criterion, and the announced independent completion of the conjecture.",
+      "line_end": 465,
+      "line_start": 401,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High dependence on exact nested logarithms and decimal coefficients; verify before computational reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 is inserted into an existing criterion expressed through f0 and a finite sum of fn; a verified range of the auxiliary truncation L excludes every k at least 10 to the 1805, while coefficient sensitivity shows simple asymptotic refinements would barely change the exponent.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replacing one prime-count error inside a finite positivity test sharply reduces the P-integer range",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u06.txt",
+      "unit_bytes": 3079,
+      "unit_id": "openalex_w1978559180_v2_u06",
+      "unit_sha256": "240517973db9f7a3488fcb8163904c790212e7d188537b6df759299fc615e19a",
+      "unit_type": "explicit-criterion-parameter-update",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is in the cited Dudek-Platt work, so this unit records a downstream consequence rather than a derivation.",
+      "line_end": 481,
+      "line_start": 467,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The inequality and thresholds are clearly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The short application records how the new estimate enters a concrete nonlinear prime-counting inequality and makes the gap between a finite RH-conditional threshold and a much larger unconditional exponential threshold explicit.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same explicit theta input yields radically different thresholds for Ramanujan's inequality with and without RH",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u07.txt",
+      "unit_bytes": 660,
+      "unit_id": "openalex_w1978559180_v2_u07",
+      "unit_sha256": "0cc78ec9eaccc3f674c37f721aba92bd3674850a9c36eafad34cc338f4cecd07",
+      "unit_type": "conditional-unconditional-threshold-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Compact source-specific limitation and future-work map.",
+      "line_end": 495,
+      "line_start": 484,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conclusion distinguishes four ways to improve the explicit result and notes that merely extending RH verification has only mild leverage, preventing compute scale from being confused with the dominant analytic constants.",
+      "source_id": "openalex_w1978559180",
+      "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Verified height, zero-free geometry, finite psi bounds, and proof reoptimization are independent improvement levers",
+      "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u08.txt",
+      "unit_bytes": 786,
+      "unit_id": "openalex_w1978559180_v2_u08",
+      "unit_sha256": "727f6178fa39e50eadedf1ebba8f1c500572acd242fc590da72b9d40be8ab4dc",
+      "unit_type": "error-bound-improvement-map",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1978559180",
+        "title": "Updating the error term in the prime number theorem",
+        "authors": [
+          "Tim Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the proof roadmap through difference indexing, Poisson summation, Voronoi continuation, and the saddle-point method.",
+      "line_end": 110,
+      "line_start": 10,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Severe OCR damage in the theorem display; the two-group structure and method are prose-recoverable, but every exact phase, amplitude, limit, and error needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source frames the mean square as the analogue of the divisor summatory error and states an approximate functional equation with two growing oscillatory sums, one locally approximating Voronoi terms and the other arising from a formally integrated product of functional equations.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        2,
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta mean-square error admits two complementary oscillatory expansions",
+      "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u01.txt",
+      "unit_bytes": 5298,
+      "unit_id": "openalex_w1984368160_v2_u01",
+      "unit_sha256": "d4756114562cfd9cd6817444bab7bdb15db71b7aec0b345f93bdeeb5cb9eccd1",
+      "unit_type": "divisor-problem-analogy-and-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the pole cancellation needed for the critical specialization.",
+      "line_end": 238,
+      "line_start": 115,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula extraction is heavily degraded; the prose establishes the representation change and continuation domain, while identities require the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The diagonal term is split from the double Dirichlet series, the off-diagonal terms are indexed by their difference, and Poisson summation plus convergence estimates continue the resulting two-variable function into the critical strip, including the exceptional hyperplane u plus v equals one.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        4,
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Indexing by m minus n converts the zeta product into a Poisson-summable auxiliary series",
+      "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u02.txt",
+      "unit_bytes": 5606,
+      "unit_id": "openalex_w1984368160_v2_u02",
+      "unit_sha256": "dec01a07f6d783eda04ba949ed389c3fb85de2a7183e96e0e9ab16c7bd934569",
+      "unit_type": "off-diagonal-analytic-continuation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the derivation of the more explicit fourth-integral representation and the restriction that the truncation length be comparable to T.",
+      "line_end": 519,
+      "line_start": 239,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely OCR-sensitive; exact Voronoi coefficients and definitions of I1 through I4 must be verified from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The divisor summatory function is split into its smooth main part and oscillatory remainder, partial summation continues the auxiliary function, and integration on the critical line produces four pieces whose later saddle analyses have distinct roles.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Voronoi summation continues the critical off-diagonal function and decomposes its mean integral",
+      "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u03.txt",
+      "unit_bytes": 13008,
+      "unit_id": "openalex_w1984368160_v2_u03",
+      "unit_sha256": "1c49bee6f1bb05a2a7c7136e38e7a3778d31938495881477894b8a97e21e4c42",
+      "unit_type": "voronoi-representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The whole proof is retained because its error bookkeeping is what permits later summation over many frequencies.",
+      "line_end": 693,
+      "line_start": 525,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Severe formula dependency and OCR loss; exact hypotheses, main phase factor, and errors require scan verification, though the contour mechanism is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 1 packages the analytic hypotheses needed for a uniform saddle estimate, deforms the interval into five contour pieces, obtains exponential decay away from the stationary point, and evaluates the central piece by a controlled Taylor-Gaussian expansion.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        11,
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour deformation separates endpoint decay, nonstationary paths, and a local Gaussian saddle",
+      "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u04.txt",
+      "unit_bytes": 7724,
+      "unit_id": "openalex_w1984368160_v2_u04",
+      "unit_sha256": "14a502dea494f127b53d34ef4be2897b3b533f452fbfe0bd51bf2f676eb753ce",
+      "unit_type": "uniform-contour-saddle-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes endpoint and error-integral estimates showing the stated errors dominate all discarded contour pieces.",
+      "line_end": 850,
+      "line_start": 695,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact phases, powers, and frequency bounds are unreadable in places and must be recovered from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializing the general lemma locates the saddle through a quadratic relation, rewrites its phase with an inverse hyperbolic sine, and gives different uniform remainders below and above the natural frequency scale T.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        14,
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The mean-square phase has an explicit hyperbolic stationary point and two frequency regimes",
+      "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u05.txt",
+      "unit_bytes": 7196,
+      "unit_id": "openalex_w1984368160_v2_u05",
+      "unit_sha256": "bc6e8c10a941e2e8ac605d8fea192f54f29841e50cdcd80ebc4322cdde944826",
+      "unit_type": "specialized-saddle-evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the first direct assembly step from the abstract saddle lemma to the theorem.",
+      "line_end": 885,
+      "line_start": 852,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sum display is materially corrupted; scan verification is mandatory for symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Letting the specialized saddle bounds cover the full range converts I1 into the first explicit oscillatory sum with truncation length comparable to T, while the divisor-error bound makes I2 lower order.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The direct oscillatory integrals yield a Voronoi-like finite sum while the companion term is negligible",
+      "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u06.txt",
+      "unit_bytes": 1647,
+      "unit_id": "openalex_w1984368160_v2_u06",
+      "unit_sha256": "3cdee3e67a4e21bb0dc0d8a5a5acdea1266cc7028fb137de862784fb86c9306f",
+      "unit_type": "first-sum-extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the explicit reason different ranges require different tools rather than one global oscillatory estimate.",
+      "line_end": 1063,
+      "line_start": 886,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Most integrands and the constant term are OCR-damaged; prose supports the range strategy but exact values need the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The small-y range is controlled by repeated mean-value arguments, the remaining first component by the specialized saddle lemma without retaining its main term, and the second component is split again to isolate a constant contribution and prove all tails smaller.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        17,
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Splitting I3 at phase-transition scales combines monotonicity with stationary phase",
+      "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u07.txt",
+      "unit_bytes": 7661,
+      "unit_id": "openalex_w1984368160_v2_u07",
+      "unit_sha256": "c8d5ea33f4fcc510aa2f45e5a517570c75abdceab7f762cbf2bbba7f9f548e3a",
+      "unit_type": "transition-scale-integral-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the admissible stationary range, endpoint exclusion, and replacement of the derived cutoff by the theorem's stated cutoff.",
+      "line_end": 1350,
+      "line_start": 1064,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely formula-dependent and substantially extraction-defective at symbol level; all coefficients, limits, phases, and final identities require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The inner integral is first evaluated by the specialized saddle lemma, the Voronoi expansion changes the outer variable to expose another stationary phase, Lemma 3 identifies when that saddle exists, and partial summation controls all frequency tails before the theorem is reassembled.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A second saddle transformation of the Voronoi remainder produces the complementary oscillatory sum",
+      "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u08.txt",
+      "unit_bytes": 11723,
+      "unit_id": "openalex_w1984368160_v2_u08",
+      "unit_sha256": "b11f14efff06ec9982634ba51ee6301ef742bffd8fd8fc026a21938d7b4a0afd",
+      "unit_type": "dual-saddle-and-truncation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The long span is necessary because the final height tk must satisfy all five mutually dependent conditions.",
+      "line_end": 578,
+      "line_start": 238,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependency; ratios, parity-dependent angle intervals, and zero-free thresholds require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 2.1 combines far-right normalization, far-left functional-equation estimates, eventual absence of off-line derivative zeros, and telescoping argument bounds to make the three logarithms used later holomorphic and uniformly bounded on one region.",
+      "source_id": "openalex_w2963782307",
+      "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+      "source_page_markers_inside_unit": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Asymptotic derivative ratios and RH build a connected region with controlled logarithmic branches",
+      "unit_artifact_relpath": "depth/units/openalex_w2963782307_v2_u01.txt",
+      "unit_bytes": 18533,
+      "unit_id": "openalex_w2963782307_v2_u01",
+      "unit_sha256": "88831a1e524ab80832e274bd0f9d02fe6144af11780cf04fca48e460b4323605",
+      "unit_type": "zero-free-branch-scaffolding",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2963782307_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2963782307",
+        "title": "On the zeros of the $k$-th derivative of the Riemann zeta function under the Riemann Hypothesis",
+        "authors": [
+          "Ade Irma Suriajaya"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Begins by completing the decomposition needed by the carried contour unit.",
+      "line_end": 804,
+      "line_start": 643,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely formula-sensitive; exact Stirling errors and constants need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposing the boundary integral isolates the gamma-factor derivative ratio, and a branch-aware Stirling expansion integrates its real logarithm to produce the T log log T term and the subtractive logarithmic integral.",
+      "source_id": "openalex_w2963782307",
+      "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+      "source_page_markers_inside_unit": [
+        11,
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A refined Stirling expansion converts the differentiated gamma factor into the logarithmic-integral main term",
+      "unit_artifact_relpath": "depth/units/openalex_w2963782307_v2_u02.txt",
+      "unit_bytes": 8878,
+      "unit_id": "openalex_w2963782307_v2_u02",
+      "unit_sha256": "bdd5d79783ef26df7b7feeb3b6dc1021ffb4de114b95c0ec8bdd3434b9ba8eea",
+      "unit_type": "gamma-factor-saddle-asymptotic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2963782307_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2963782307",
+        "title": "On the zeros of the $k$-th derivative of the Riemann zeta function under the Riemann Hypothesis",
+        "authors": [
+          "Ade Irma Suriajaya"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the connected-region constant-integer argument that reconciles independently chosen logarithms.",
+      "line_end": 1027,
+      "line_start": 805,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; contours, orientations, and the branch identity are OCR-fragile.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The higher-derivative remainder is shown nonzero on overlapping regions, assigned a branch tending to zero on the far left, and integrated around a trapezoid; coordinated branch choices then bound its top-edge argument despite its not being a logarithmic derivative.",
+      "source_id": "openalex_w2963782307",
+      "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A trapezoidal contour makes the non-logarithmic functional-equation remainder bounded",
+      "unit_artifact_relpath": "depth/units/openalex_w2963782307_v2_u03.txt",
+      "unit_bytes": 13397,
+      "unit_id": "openalex_w2963782307_v2_u03",
+      "unit_sha256": "81ec25043288f012d0410961c201c6ffbdd64c9d8b83a540be31f8380ff6f5de",
+      "unit_type": "branch-compatible-contour-cancellation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2963782307_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2963782307",
+        "title": "On the zeros of the $k$-th derivative of the Riemann zeta function under the Riemann Hypothesis",
+        "authors": [
+          "Ade Irma Suriajaya"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the source's explicit diagnosis that this unestimated fourth boundary term is where improvement must occur.",
+      "line_end": 1351,
+      "line_start": 1033,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependency, with six embedded logical separators in this region; the splitlines-based assigned numbering has been preserved exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remaining argument is bounded first to the right of a buffered critical line using a symmetrized auxiliary function and Jensen's theorem, then near the line using RH growth plus Cauchy's formula; balancing the buffer yields the squared log-log error.",
+      "source_id": "openalex_w2963782307",
+      "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+      "source_page_markers_inside_unit": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Jensen zero counts and Cauchy derivative bounds control the last Littlewood boundary term",
+      "unit_artifact_relpath": "depth/units/openalex_w2963782307_v2_u04.txt",
+      "unit_bytes": 16438,
+      "unit_id": "openalex_w2963782307_v2_u04",
+      "unit_sha256": "aa1e80c23b120194db945c4a1101f4cd7cf465d3d5b9de395789b8beaaa85ec7",
+      "unit_type": "argument-integral-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2963782307_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2963782307",
+        "title": "On the zeros of the $k$-th derivative of the Riemann zeta function under the Riemann Hypothesis",
+        "authors": [
+          "Ade Irma Suriajaya"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the bounded-height patch and multiplicity-sensitive jump estimate.",
+      "line_end": 1466,
+      "line_start": 1353,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense displayed differences are formula-sensitive but the limiting mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof compares the formula at T plus and minus a small zero-free perturbation, shows the possible jump from zeros exactly at T fits the existing error, and obtains the theorem without a generic-height restriction; the short-interval corollary then follows by subtraction.",
+      "source_id": "openalex_w2963782307",
+      "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two-sided height perturbation extends the zero sum from generic ordinates to every T",
+      "unit_artifact_relpath": "depth/units/openalex_w2963782307_v2_u05.txt",
+      "unit_bytes": 7935,
+      "unit_id": "openalex_w2963782307_v2_u05",
+      "unit_sha256": "0193288cd80b5669be1603a0ba8f5fcaa88724c32d2d5968005df2eac7ba1edf",
+      "unit_type": "exceptional-height-stability",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2963782307_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2963782307",
+        "title": "On the zeros of the $k$-th derivative of the Riemann zeta function under the Riemann Hypothesis",
+        "authors": [
+          "Ade Irma Suriajaya"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes perturbation at exceptional ordinates and the source's explicit best-known limitation.",
+      "line_end": 1746,
+      "line_start": 1665,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Argument branch normalizations and error scales are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Completing Proposition 3.1 expresses the zero count through two critical-line arguments; RH bounds make the normalized derivative term larger, and the final comparison with the classical S(T) formula identifies both the quantitative bottleneck and the unknown implied constant.",
+      "source_id": "openalex_w2963782307",
+      "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The normalized derivative argument, not the zeta argument, sets the present counting error",
+      "unit_artifact_relpath": "depth/units/openalex_w2963782307_v2_u06.txt",
+      "unit_bytes": 4547,
+      "unit_id": "openalex_w2963782307_v2_u06",
+      "unit_sha256": "f4ae04c581cbad584cdcdde44c123ec51d6087a918421ed5de9b2d67d16ca0f8",
+      "unit_type": "zero-count-error-bottleneck",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2963782307_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2963782307",
+        "title": "On the zeros of the $k$-th derivative of the Riemann zeta function under the Riemann Hypothesis",
+        "authors": [
+          "Ade Irma Suriajaya"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the density-theorem, subconvexity, and function-field comparisons that motivate the definition.",
+      "line_end": 53,
+      "line_start": 23,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; the central-point fractions are extraction-degraded but the conceptual contrast is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The opening distinguishes high-zero universality from low-zero family dependence and motivates a working number-field family notion by the analytic tools that can actually isolate and average its members.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Deformation in a family turns inaccessible individual L-functions into statistical objects",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u01.txt",
+      "unit_bytes": 3703,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u01",
+      "unit_sha256": "c550c3e99ff2f9fe8cdf960c39988e4e886971af95f6eb295fd88f637b495c1c",
+      "unit_type": "family-formation-motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u01.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the measure-level response to nonconjugate subgroups with identical dimension data.",
+      "line_end": 136,
+      "line_start": 63,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed trace integrals are formula-sensitive but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Analytic conductor orders complexity, contragredience distinguishes self-duality, poles of symmetric or exterior square factors distinguish orthogonal from symplectic type, and prime-local equidistribution packages the horizontal data as a measure rather than a possibly nonunique group.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conductor, duality, Sato-Tate measure, and pairing sign form the individual input",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u02.txt",
+      "unit_bytes": 5410,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u02",
+      "unit_sha256": "5db40f7e6cfb3295e2e999b0215147c3a79b1149c8dbc95eab5225d32db2171c",
+      "unit_type": "individual-l-function-invariant-package",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u02.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes ordering gauges, family products, intersection hazards, and the unitarizing cohomological twist.",
+      "line_end": 223,
+      "line_start": 137,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High dependence on Langlands-dual and cohomology notation; exact twists should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Harmonic families arise by isolating spectra and applying an L-group representation, while geometric families specialize a smooth proper scheme and invoke modularity; the comparison cleanly separates parameter space from the resulting automorphic image.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        4,
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Trace-formula transfer and cohomological specialization provide two family factories",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u03.txt",
+      "unit_bytes": 5999,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u03",
+      "unit_sha256": "b4d4ea4233604caba5f71edbeffe83f69bbe3944511d50f315c3cbb363501ac3",
+      "unit_type": "dual-family-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u03.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the distinction between conductor balls, practical gauge functions, and thinner shells.",
+      "line_end": 269,
+      "line_start": 224,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponents and uniformity in the coefficient index are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source makes infinitude and finite counting structural requirements, then states a quantitative vertical limit whose main terms can be interpreted prime by prime and whose uniform error controls later zero statistics.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-to-one conductor ordering makes local coefficient averages into family densities",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u04.txt",
+      "unit_bytes": 3091,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u04",
+      "unit_sha256": "fc8a8c7d856493211bf751255ca9f80ed156c92f7164cb01d77215537ad5889e",
+      "unit_type": "family-ordering-and-vertical-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u04.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the tempered-support caveat and the suggested decomposition into product-measure subfamilies.",
+      "line_end": 386,
+      "line_start": 275,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence; integrals, prime averaging, and indicator signs are legible but should be preserved exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Conjecture 1 lifts vertical p-adic equidistribution to a family Sato-Tate measure; three compact-group indicators then recover cuspidality, self-duality, and Frobenius-Schur sign and determine the unique type proportions even when the underlying group decomposition is nonunique.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three trace moments decompose a family into unitary, orthogonal, and symplectic mass",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u05.txt",
+      "unit_bytes": 6372,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u05",
+      "unit_sha256": "ebbc3e6910fbe67b600e7b0376854e3125d0c9399d2e98e06080304aab5d97fc",
+      "unit_type": "sato-tate-family-conjecture-and-indicators",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u05.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Nagao-Tate interpretation and Chowla-type obstruction.",
+      "line_end": 451,
+      "line_start": 395,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The rank limit and Mobius polynomial sum are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The rank is encoded in the next term of local coefficient convergence and is removed before studying fluctuations, whereas the symplectic root-number split depends on ramified local signs and Mobius cancellation; neither is determined by the leading Sato-Tate measure.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Persistent central zeros and functional-equation parity require independent family refinements",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u06.txt",
+      "unit_bytes": 3322,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u06",
+      "unit_sha256": "450f41f6535fa3929edfeed45df8116b27ff64803e67bf97aa13cd30f90f05a9",
+      "unit_type": "rank-and-root-number-separation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u06.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes mixed-family weighting, conditional analytic-continuation dependence, function-field spectral support, and the odd-degree orthogonal corollary.",
+      "line_end": 570,
+      "line_start": 452,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Density kernels are referenced rather than fully reproduced; the type table is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After conductor scaling, the universality conjecture maps unitary families to unitary statistics, orthogonal families to symplectic statistics, and symplectic sign subfamilies to even or odd orthogonal statistics, while explicitly omitting forced central zeros.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Homogeneity type reverses into the low-zero random-matrix symmetry class",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u07.txt",
+      "unit_bytes": 7073,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u07",
+      "unit_sha256": "0b04a1f95e2e6c1bbfefb771ce1b74589a90060e47ecb2266d558b3985e48ba2",
+      "unit_type": "low-zero-universality-map",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u07.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the r-level density definition and the progression of support ranges.",
+      "line_end": 655,
+      "line_start": 577,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High dependence on determinant kernels, support inequalities, and OCR-sensitive summation notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The quadratic family has an explicit product local measure and symplectic low-zero prediction; restricted-support theorems and a function-field comparison show how matching finite-field densities can certify otherwise difficult combinatorial identities over the rationals.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic characters calibrate the entire family-to-density interface",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u08.txt",
+      "unit_bytes": 4917,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u08",
+      "unit_sha256": "cc51bcad1371d527f2b09b752b2d9b66a14370fba7caa545478487d61bc3ce38",
+      "unit_type": "quadratic-character-calibration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u08.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the discriminant-ordering caveat and the binary-cubic fundamental-domain example.",
+      "line_end": 733,
+      "line_start": 656,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Group actions and discriminant formulas are extraction-sensitive but semantically recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Hilbert irreducibility supplies generic fibers with fixed Galois group, finite-field point counting supplies vertical limits, and geometry-of-numbers orbit parametrizations turn cubic through quintic fields into conductor-ordered families whose symmetry is read from the standard symmetric-group representation.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Generic specialization transfers a finite Galois representation into a family Sato-Tate law",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u09.txt",
+      "unit_bytes": 5563,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u09",
+      "unit_sha256": "928d0aed1d696da68e7cca9f093480dc9b3a55288d0bd26809804e7919369f37",
+      "unit_type": "artin-family-parametrization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u09.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes conductor-versus-height sieving and unconditional low-degree Mobius cancellation examples.",
+      "line_end": 813,
+      "line_start": 736,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Curve equations and numerical exponents should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Monodromy fixes the leading symplectic type, the Tate conjecture connects the family rank to an elliptic surface, and multiplicative-fiber polynomials govern average root signs; explicit examples show rank and root number can vary independently.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Height, generic rank, and average root number probe different mechanisms in elliptic families",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u10.txt",
+      "unit_bytes": 5286,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u10",
+      "unit_sha256": "433f5c71002b55028e38a0afd3e3a97aea9a948edc79bf51fc0e13a305d9d526",
+      "unit_type": "elliptic-family-invariant-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u10.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the group action used to isolate the cohomological summand and the discriminant controlling ramification.",
+      "line_end": 880,
+      "line_start": 815,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependency; dimensions, invariant superscripts, and parity conventions require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An invariant cohomological summand gives a fixed-degree automorphic family; even n yields full symplectic monodromy and a mixture of orthogonal zero laws, while odd n yields orthogonal monodromy and symplectic zero statistics.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dwork parity changes the monodromy pairing and therefore the predicted zero symmetry",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u11.txt",
+      "unit_bytes": 4344,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u11",
+      "unit_sha256": "b1856083cc04a4d2307d900097e2639519cf4398a7880323e96433dcc8b93f2a",
+      "unit_type": "monodromy-to-symmetry-example",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u11.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes weight and level aspects and the continuous-spectrum obstruction for higher-rank Maass forms.",
+      "line_end": 963,
+      "line_start": 881,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The asymptotic error and test-function normalization are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Quantitative trace-formula equidistribution identifies each local family measure as a functorial pushforward of Plancherel measure; uniform control of nonidentity orbital integrals is exactly what makes the prime and family parameters usable together.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        17,
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The identity orbital term creates Plancherel mass and all other orbits control the error",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u12.txt",
+      "unit_bytes": 5475,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u12",
+      "unit_sha256": "f7ae0446717ac75241a7485057e1d137e967e5f3a7249c43a20e8b1f6538005c",
+      "unit_type": "trace-formula-equidistribution-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u12.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes root-number difficulty, restricted-support dependence on the quantitative error, and robustness under finite local constraints.",
+      "line_end": 1033,
+      "line_start": 964,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact local pole-free regions and coefficient estimates depend on displayed formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Macdonald's Plancherel formula turns representation-theoretic irreducibility, self-duality, and pairing sign into the three family indicators and gives a smaller next-order coefficient that makes the harmonic rank vanish; the partial-L formulation also insulates low zeros from uncertain ramified factors.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An irreducible L-group representation determines harmonic homogeneity and forces rank zero",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u13.txt",
+      "unit_bytes": 4976,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u13",
+      "unit_sha256": "b27a75a256423484bf500fb7f90f8380295ff0d30eb37b9f762dd194a488939e",
+      "unit_type": "harmonic-invariant-computation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u13.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the explicit conductor scale and restricted-support conditional improvement.",
+      "line_end": 1103,
+      "line_start": 1036,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Root-number and density formulas are OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The PGL(2) family has the classical SU(2) Sato-Tate measure and symplectic homogeneity; local Steinberg alternatives split root signs equally, and extending Fourier support beyond one is what separates even-orthogonal, odd-orthogonal, and symplectic one-level laws.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Petersson equidistribution separates modular forms by root sign before zero statistics can distinguish them",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u14.txt",
+      "unit_bytes": 4330,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u14",
+      "unit_sha256": "3d4eefbcb1520dc759fc42ffe03fa0a0550b3f3b8ec5abea2940692daffd4837",
+      "unit_type": "classical-modular-form-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u14.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the thin-family warning that the individual Sato-Tate problem remains embedded in the family group.",
+      "line_end": 1183,
+      "line_start": 1104,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Pushforward measures and trace integrals are formula-dependent but clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Quadratic twists average a measure with its negative and retain the seed representation's pairing type, whereas all character twists add a full central circle, force both self-duality indicators to vanish, and yield unitary symmetry independently of the seed.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Twisting averages an individual Sato-Tate measure and can erase self-duality",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u15.txt",
+      "unit_bytes": 5155,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u15",
+      "unit_sha256": "8ccc4ec0f5a4d5b398899b34a602d4ad5f46b070c65dc00c833c74eee02271b5",
+      "unit_type": "twist-induced-representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u15.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes unconditional restricted-support checks and the split-group adjoint generalization.",
+      "line_end": 1243,
+      "line_start": 1184,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tensor embeddings and indicator identities should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A GL(2) by symmetric-square family has fixed even sign yet orthogonal-matrix zero statistics, and the general tensor-product rule predicts the product type by multiplying pairing indicators; adjoint families give a broad orthogonal-to-symplectic example.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Frobenius-Schur indicators multiply under products even when root signs alone do not explain symmetry",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u16.txt",
+      "unit_bytes": 4102,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u16",
+      "unit_sha256": "082082ce189ef7535c3102d00afdc92ac364fffeeb2d7fbda844a897a28e753a",
+      "unit_type": "rankin-selberg-symmetry-composition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u16.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the negligible Saito-Kurokawa exceptional subset and parity-dependent root sign.",
+      "line_end": 1279,
+      "line_start": 1244,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High dependence on spin-representation notation; the confound is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The spin family of Siegel forms has a representation-theoretically fixed symplectic type, but central-value weights introduced by the available Petersson formula carry enough fluctuation to alter the observed density, isolating weighting as an evaluation confound.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Natural trace-formula weights can manufacture a misleading symmetry type",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u17.txt",
+      "unit_bytes": 2257,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u17",
+      "unit_sha256": "376897a8b4ebc36deddf0c8f760d783e79c6b14a9fcb0c3ef162143041583500",
+      "unit_type": "weighting-confound-example",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u17.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the explicit GL(1) mixture as calibration.",
+      "line_end": 1302,
+      "line_start": 1280,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The local Plancherel combination is formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Plancherel slices predict local measures for the universal family, yet irregular level sequences destroy the simple vertical limit while low-zero universality is still expected, separating the two conjectural channels.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Universal conductor families can retain zero universality when local Sato-Tate limits fail",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u18.txt",
+      "unit_bytes": 1463,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u18",
+      "unit_sha256": "82af573840daa0b735cef144fb82e88dd9741ad2db15aca90c902fe52dc60882",
+      "unit_type": "universal-family-boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u18.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the role of affine bases, sector restrictions, and natural parameter multiplicities.",
+      "line_end": 1379,
+      "line_start": 1303,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Weil-Deligne and Dirac-measure formulas are highly notation-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Good reduction makes the unramified conjugacy class depend only on the parameter modulo p, integer-point equidistribution converges to the uniform finite-field sum, and the discriminant locus has negligible mass, reducing the family problem to finite fields.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reducing parameters modulo p turns local family statistics into a finite atomic measure",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u19.txt",
+      "unit_bytes": 4944,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u19",
+      "unit_sha256": "d7c5dec62ac50881e4a9394026bf7d75f2d512e18f184d328a55bdf5c40b01b3",
+      "unit_type": "geometric-localization-step",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u19.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes p-independence of geometric monodromy, examples, the natural choice of family group, and the warning that arbitrary bases break the family conjectures.",
+      "line_end": 1463,
+      "line_start": 1388,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high dependence on sheaf, fundamental-group, and normalization notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The lisse cohomology sheaf supplies arithmetic and geometric monodromy groups, purity places normalized Frobenius in a compact group, and Deligne-Katz equidistribution makes its Haar pushforward the family Sato-Tate law.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Geometric monodromy converts finite-field Frobenius samples into Haar Sato-Tate measure",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u20.txt",
+      "unit_bytes": 5161,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u20",
+      "unit_sha256": "59ef5d8b180c8f57776f46aa712dd4d8a5f167273e63aed30a348c758d87ceee",
+      "unit_type": "deligne-katz-monodromy-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u20.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes strong Hardy-Littlewood behavior as the kind of replacement hypothesis that would restore analyzability.",
+      "line_end": 1510,
+      "line_start": 1471,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low apart from the quadratic-character construction's extracted radicals.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Allowing a general integral base or forming an intersection introduces an unrestricted Diophantine parameter set; a recursive-set construction shows that even basic counting limits can then fail, justifying the deliberately narrow family definition.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        28
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Intersections of benign families can encode arbitrary Diophantine sets and lose all statistics",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u21.txt",
+      "unit_bytes": 2737,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u21",
+      "unit_sha256": "65b7c1b13ff07677684a72b8a655c1d8466dbc38b2fcec00cb8c69004e3b6368",
+      "unit_type": "diophantine-family-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u21.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes finiteness results, CM examples, and the unresolved criterion for infinitude.",
+      "line_end": 1577,
+      "line_start": 1511,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Cohomological degrees and Hodge-number notation require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source relates rational-coefficient weight-two forms to elliptic curves, proposes higher-weight Calabi-Yau realizations, and shows that infinitude is a substantive gate; rationality-bounded spectral subsets cannot simply be treated as ordinary harmonic families.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bounding fields of rationality may secretly select geometric families or finite sets",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u22.txt",
+      "unit_bytes": 4849,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u22",
+      "unit_sha256": "6c314c05f0ba863da30c6c81e41101cd063372d2ea0ec807b0fad22ed47b6cb0",
+      "unit_type": "rationality-constrained-family-question",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u22.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes weight-one and eigenvalue-one-quarter examples and the analogous finite-place question.",
+      "line_end": 1616,
+      "line_start": 1579,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some cohomological notation is extraction-degraded; the obstruction is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Fixing a cohomological or algebraic archimedean component may define a natural family, but zero Plancherel mass makes even its conductor count hard and removes the isolation mechanism used for harmonic equidistribution.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Plancherel-null local condition defeats the trace formula before symmetry can be tested",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u23.txt",
+      "unit_bytes": 2535,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u23",
+      "unit_sha256": "a321773ec4684904865617f79f65fc26f820976b7c7f65ce6b17cdb4f3827e1a",
+      "unit_type": "measure-zero-isolation-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u23.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes finite cyclic and dihedral cases where restricted-support symmetry is accessible.",
+      "line_end": 1665,
+      "line_start": 1618,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; group labels are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A universal type family would require both defining the individual group and recognizing its members, problems as hard as individual Langlands classification; geometric specialization and class field theory yield tractable subfamilies without solving the universal problem.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Specifying an H-type is conceptually natural but analytically circular",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u24.txt",
+      "unit_bytes": 3396,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u24",
+      "unit_sha256": "c413102320ed4bc7c1d42ddbb5eef6b24cd909476bb59127517fcd4a55bd9661",
+      "unit_type": "universal-type-construction-and-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u24.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes conductor-shell and prime-conductor restrictions as technically harder but conceptually compatible variants.",
+      "line_end": 1693,
+      "line_start": 1667,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Induction degrees and dual-group notation are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The construction varies number fields, applies an L-group representation over each, and induces back to the rationals, showing how geometric and spectral parameters can be composed while common L-factors and mixed Galois types require explicit handling.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Automorphic induction combines varying fields with harmonic data beyond the basic formation",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u25.txt",
+      "unit_bytes": 2171,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u25",
+      "unit_sha256": "2e281e61f9c06b7a8a7506d01f5bcdb9e0671a84142415677042e0ba964901d4",
+      "unit_type": "hybrid-family-extension",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u25.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes archimedean completion and the nonabelian reciprocity interpretation.",
+      "line_end": 1797,
+      "line_start": 1695,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely formula-dependent; conductors, invariants, twists, and Frobenius conventions require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The appendix defines conductor and local L-factor from inertia and monodromy, assembles them for algebraic l-adic representations, and formulates geometry as a cohomological source, providing the exact interface used by geometric families.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        32,
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil-Deligne representations make ramified geometric local factors comparable to automorphic ones",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u26.txt",
+      "unit_bytes": 6666,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u26",
+      "unit_sha256": "00f430b1b674d7a5b57b02184ab715e094c77b88321da56d814bddc78c184dfb",
+      "unit_type": "local-global-l-function-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u26.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes known modularity cases and the uniqueness consequences of multiplicity one and Chebotarev.",
+      "line_end": 1875,
+      "line_start": 1798,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Twist conventions are delicate and should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The two conjectural formulations distinguish existence of an automorphic realization from a bijective algebraic correspondence with local-global compatibility; Deligne weights explain the precise twist making good-reduction local components unitary and identify weight-monodromy as the bad-reduction gate.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        34,
+        35
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Modularity matches geometric Galois data to automorphic data and the weight twist restores unitarity",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u27.txt",
+      "unit_bytes": 5223,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u27",
+      "unit_sha256": "b62322a68bbac6815ebb8332bf99957a2b9375df1400e3188df5d9b999c93ab6",
+      "unit_type": "geometric-modularity-correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u27.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposition is unconditional as a criticality statement but its supplied proof explicitly assumes motivic and automorphic conjectures.",
+      "line_end": 1940,
+      "line_start": 1876,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Hodge indices and pairing twists are OCR-sensitive, and one displayed Hodge pair appears duplicated; verify from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under the stated motivic correspondences, parity of the motivic weight first restricts criticality to even rank and a sign theorem then makes the l-adic pairing symplectic, contradicting orthogonal type; the examples distinguish Dirichlet and elliptic behavior.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        36
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A critical center would force a symplectic pairing, excluding regular algebraic orthogonal forms",
+      "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u28.txt",
+      "unit_bytes": 4310,
+      "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u28",
+      "unit_sha256": "7dedf0f44f41a62488de759ccc6512081c4a958ff925e817ec6ee6134cdda0e7",
+      "unit_type": "criticality-pairing-sign-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u28.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    }
+  ]
+}

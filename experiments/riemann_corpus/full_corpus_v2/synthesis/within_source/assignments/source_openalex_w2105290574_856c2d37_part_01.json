@@ -1,0 +1,138 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2105290574",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2105290574_856c2d37_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The slow generic finite-difference computation, despite severe precision cost, does not assume RH and therefore controls fast explicit zero-based calculations and sign-change diagnostics that do use stronger assumptions or approximations.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2105290574_u05",
+          "full_openalex_w2105290574_u06",
+          "full_openalex_w2105290574_u09"
+        ],
+        "proposed_limit": "Agreement over computed ranges validates numerical implementation conditionally; it neither proves the asymptotic criterion nor excludes later violations.",
+        "source_id": "openalex_w2105290574",
+        "synthesis_id": "riemann_v2_within_afb3b8248c1e4b4110f9dcb5",
+        "title": "Assumption-independent computation as a control"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span crosses the Computer Experiments heading and a page boundary so that the partial-sum evidence, PARI/GP procedure, failure example, precision rule, and methodological comparison remain together.",
+          "line_end": 207,
+          "line_start": 94,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate to high: the prose and precision mechanism are clear, while table exponents, code layout, and finite-difference notation remain vulnerable to extraction errors.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Direct evaluation combines enormous alternating partial sums to obtain tiny c_k values. The paper turns that instability into a concrete precision rule, requiring enough digits to distinguish 1 from 1+2^{-k}, and uses the generic formula as a slow computation that does not assume RH, hence as an independent check on fast zero-based formulas.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Catastrophic cancellation forces precision linear in the sequence index",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u05.txt",
+          "unit_bytes": 12261,
+          "unit_id": "full_openalex_w2105290574_u05",
+          "unit_sha256": "e83097c9be63d79f7a0e9d85aeb6e031e627366bef071a1897331d3ce010ffac",
+          "unit_type": "computational obstruction and validation protocol",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit identifies numerical conditioning as part of the mathematical interface, not a mere implementation detail. A tiny finite difference forgets almost all of the large component values through cancellation, so reliable recovery requires retaining proportionally more information as the index grows.",
+            "nonparaphrase_operation": "The alternating partial-sum table exposes the hidden scale separation between intermediate terms and the final residual. Arbitrary-precision direct evaluation then serves as a bridge from the definition of c_k to an independent validation channel for faster zero-based representations.",
+            "quality_reason": "The source explicitly attributes direct-sum failure to zeta values becoming numerically indistinguishable from 1 while large alternating binomial terms cancel, and Table 1 displays enormous partial sums leaving a tiny c_12000 residual. The reported practical precision rule is at least k log10(2) decimal digits, motivated by distinguishing 1 from 1+2^{-k}; Table 2 supplies a catastrophic insufficient-precision example. The source explicitly contrasts slow definition-based calculations, which do not assume RH, with fast formulas and presents comparison as their principal benefit. The candidate goes beyond generic instability language by naming the scale separation, the precision growth rule, and the assumption-independent control.",
+            "source_support": "In the defining binomial sum, ζ(2j+2) rapidly becomes numerically indistinguishable from 1 while middle binomial coefficients are enormous. Table 1 shows huge partial sums canceling to a tiny c_12000. Fixed insufficient precision can produce values wrong by very large powers of ten, and the reported practical rule is at least k log10(2) decimal digits, enough to distinguish 1 from 1+2^{-k}. The direct formula is slow but, unlike the fast formulas discussed next, does not assume RH.",
+            "speculation_status": "The k log10(2) rule is an empirical confidence rule, not a proved forward-error bound. The fixed-precision PARI/GP procedure is expensive and can fail catastrophically without signaling mathematical failure. Agreement with a fast method validates computations only on the checked range; it neither proves RH nor guarantees later behavior. High confidence in the cancellation mechanism, linear precision rule, and control role stated in prose. Exact table exponents and code formatting are extraction-sensitive and should not be treated as a clean machine-readable benchmark. Calling conditioning part of the mathematical interface and saying the finite difference forgets large component values are defensible interpretations of the displayed cancellation mechanism. Treating the direct computation as an independent validation channel is supported methodologically, although the source reports comparison rather than a formal validation protocol. Table exponents and code layout are damaged by two-column extraction, but the prose states both the catastrophic error and precision rule clearly enough for the candidate's non-numeric claims."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 199-207 also contain the final interleaved computer-experiment paragraph; retaining them supplies the method comparison that motivates the explicit-formula section.",
+          "line_end": 267,
+          "line_start": 199,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: equations (10)-(11), the beta/gamma ratios, primes on zeta, and zero indexing require scan verification before exact computational use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The explicit formulas recast c_k as a trend plus an oscillatory sum over nontrivial zeta zeros, state the simple-zero assumption, and contrast the fast assumption-dependent route with the generic formula. The unexpectedly good small-k agreement is used only as numerical evidence that omitted integrals decay rapidly.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Separating a rapidly decaying trend from zero-driven oscillation",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u06.txt",
+          "unit_bytes": 6613,
+          "unit_id": "full_openalex_w2105290574_u06",
+          "unit_sha256": "1dc3ded9fac13c6342cb336c52984acb698f3728a288fafaa9ff454c13de43f5",
+          "unit_type": "explicit zero-sum decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The decomposition reframes one opaque sequence into components with different mathematical causes: a regular background and zero-driven fluctuations. This supports separate asymptotic analysis of the envelope, coefficients, and frequencies instead of treating c_k as an undifferentiated numerical signal.",
+            "nonparaphrase_operation": "Beta and gamma functions connect the sequence index to a spectral sum over zeta zeros, while ζ′ at a zero supplies the residue-like weight. The slow definition-based computation is the external bridge used to check the faster assumption-dependent representation.",
+            "quality_reason": "The span decomposes c_k into a rapidly decreasing trend and an oscillatory sum over all nontrivial zeros, expresses both with beta/gamma factors, and explicitly assumes simple zeros. It contrasts the slow generic computation with the fast assumption-dependent formulas and reports close small-k agreement whose improvement suggests that omitted J_k integrals decrease rapidly. The candidate correctly limits that agreement to numerical evidence and notes that the displayed formula is theoretically a large-k formula. The 'different mathematical causes' wording is interpretive, but it is made operational by the explicit trend/oscillation decomposition and distinct beta-series and zero-sum representations.",
+            "source_support": "The source writes c_k as the sum of a trend term and an oscillating term. The trend is given by a beta-function series, while the oscillatory term is a sum over nontrivial zeros ρ with beta/gamma factors and 1/ζ′(1-ρ); simplicity of the zeros is explicitly assumed. The source contrasts these fast explicit calculations with the slow generic formula and reports unexpectedly close agreement even at small k, interpreting the improving agreement as evidence that omitted integrals J_k decrease rapidly.",
+            "speculation_status": "The zero formula explicitly needs simple zeros, and the source presents the fast route as assumption-dependent in contrast with the generic sum. Its validity is asymptotic; close small-k agreement is numerical evidence for small omitted terms, not a proof of that decay or of the criterion. Exact beta/gamma arguments and zero indexing are text-layer fragile. High confidence in the trend/oscillation split, simple-zero condition, and methodological comparison; moderate confidence in exact displayed factors because equations (10)-(11) require scan verification. Calling 1/zeta'(1-rho) residue-like and treating the decomposition as separating background from spectral fluctuation are mathematically apt readings of the displayed formulas. Using the slow definition-based values as an external check is a methodological inference directly motivated by the source's stated comparison benefit. Bars, tildes, beta/gamma arguments, zeta primes, and zero indexing are formula-layer fragile; the candidate avoids relying on exact typography and calls for scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The normalized two-column page interleaves the wave derivation, transformed formula, and sign-change table. Keeping the full span preserves both the proposed diagnostic and the author's explicit independence requirement.",
+          "line_end": 457,
+          "line_start": 390,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: formula (26), phase conventions, the ratio in formula (25), and table columns are extraction-sensitive; the stated log-periodic mechanism and independence condition are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The first-zero truncation rewrites k^{3/4}c_k as a single phase-shifted sinusoid with constant wavelength on a logarithmic k-axis. Consecutive sign changes then estimate the first zero's ordinate, while a Mobius-sum transform supplies the independent c_k calculation required for that check.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "First-zero dominance turns the normalized sequence into a log-periodic sine",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u09.txt",
+          "unit_bytes": 7381,
+          "unit_id": "full_openalex_w2105290574_u09",
+          "unit_sha256": "0fd86fc74889ed899e6bf6c7d131005a9a7e6921567bfc645dc60d0c13da4cb6",
+          "unit_type": "dominant-mode reduction and cross-check",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The first spectral mode is a low-dimensional surrogate that turns a complicated sequence into amplitude, phase, and log-frequency. Sign-change spacing discards amplitude and retains frequency, so it can test whether the proposed spectral interpretation captures the geometry of the oscillation.",
+            "nonparaphrase_operation": "The trigonometric identity merges α_1 and β_1 into amplitude-phase form; log(k) turns multiplicative spacing into a constant wavelength. The independent Möbius representation of c_k bridges the original sequence to sign locations without reusing the first-zero approximation, which is essential to avoid circular validation.",
+            "quality_reason": "The span retains only the first zero, combines its sine and cosine terms into amplitude-phase form, and obtains a k^{-3/4} envelope with phase linear in log(k+1). It derives a consecutive-zero spacing estimator for gamma_1, explicitly requires an independent fast calculation of c_k, supplies the Mobius-sum transform, searches to k=10^9, and linearly extrapolates zero locations from integer samples. Table 5 supports the candidate's cautious description of estimates fluctuating around the known ordinate rather than converging monotonically. The low-dimensional-surrogate language is grounded in the explicit reduction to amplitude, phase, log-frequency, and sign spacing.",
+            "source_support": "Keeping only the first zero combines the cosine and sine coefficients into one amplitude and phase, yielding c_k approximately equal to a k^{-3/4} envelope times a sinusoid in log(k+1). The source relates consecutive zeros of c_k to γ_1 through their logarithmic spacing. To make that check independent, it uses a Möbius-sum transform of the defining sequence to search for sign changes up to k=10^9, linearly interpolates their locations, and reports γ_1 estimates that fluctuate around the known value rather than converging monotonically.",
+            "speculation_status": "The diagnostic inherits the asymptotic, RH, simple-zero, and first-mode approximations. Integer sampling plus linear interpolation limits zero-location accuracy, and the reported estimates fluctuate. Without an independent computation of c_k the sign-spacing check would be circular. Formula (25)'s ratio and phase conventions are extraction-sensitive. High confidence in the log-periodic mechanism and independence requirement; moderate confidence in exact phase, envelope constants, and spacing formula typography because the two-column extraction interleaves formulas and the table. Describing sign spacing as discarding amplitude while retaining frequency is a valid non-paraphrase operation on the displayed sinusoid. Calling the check noncircular is justified by the source's explicit insistence that c_k be computed independently of equation (23). RH and simple-zero dependence are inherited from the referenced preceding spectral formula rather than restated in this exact span; the candidate correctly presents them as limitations, not new results. Two-column interleaving makes the ratio in equation (25), phase conventions, and table columns unsafe for exact transcription, while the prose-supported diagnostic and independence requirement remain clear."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_6a48445e7c4716d439fa49fa535c131c243cb9acccbf6e2935de148536818933",
+        "dossier_sha256": "eb8defbc33c638d853c08a619396c4973bba048aaa776fb6790aa7db6d358061"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "d1c29e54683a850877b6a80a5dd18b4728aa5dab62187a9a5de115cdc40a7322"
+}

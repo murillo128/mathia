@@ -1,0 +1,648 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2612271026_fc345a7d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2612271026",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The old v1 identity span at 336-386 requires this residue and transformation setup; the unit stops after explaining why Theorem 1 is the analytic one-swap prototype.",
+      "line_end": 353,
+      "line_start": 200,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several characters and subscripts carry extraction noise, but the residue replacement and comparison mechanism are explicit in prose; scan-check exact formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Packages shifted divisor correlations by their near-one residues, conjecturally replaces them with Ramanujan-sum local data, and follows the Perron and Mellin transformations to the analytic shifted-divisor identity.",
+      "source_id": "openalex_w2612271026",
+      "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+      "source_page_markers_inside_unit": [
+        4,
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A delta-method pole conjecture converts shifted correlations into a one-swap identity",
+      "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u02.txt",
+      "unit_bytes": 9365,
+      "unit_id": "openalex_w2612271026_v2_u02",
+      "unit_sha256": "dbfeb01273c7b6a0c3e681c7aa1490dcb271945e26fba1cd73766184bc330fb4",
+      "unit_type": "conjecture-to-identity bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2612271026",
+        "title": "Moments of zeta and correlations of divisor-sums: IV",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 192,
+          "line_end": 199,
+          "text": "                                                                                   ψ\n                       Our principal aim in this series of papers is to evaluate IA,B (T ; X) directly using a con-\n                     jecture for the correlations of τA (n) and then to compare with the above formula coming\n                     from the recipe of [3]. In [5] and [7] we considered the situation of 0 swaps which leads\n                     to the usual “diagonal” terms and 1 swap which corresponds to the usual “shifted divisor”\n                     problem. In [6] we considered a special case of 2 swaps. Now we look at the general case\n                     of two swaps. This means that we are interested in the terms for which X > T 2 and for\n                     which |U | = |V | = 2.\n",
+          "sha256": "b4a39b89f7aabf3df67a33682e41040bccbceb29965ba78350d55c5177bffb76"
+        },
+        "after": {
+          "line_start": 354,
+          "line_end": 361,
+          "text": "                     The key theorem is a convolution identity\n\n                     Theorem 2\n                                                                             \u0006        μ(q1 )μ(q2 )d1z1 +w1 −1 d2z2 +w2 −1\n                                  Res     ζ (w1 + z1 − 1)ζ (w2 + z2 − 1)\n                               w1 =1−α1                                                    M z1 +w2 −1 N w1 +z2 −1\n                               z1 =1−β1                                    (M,N )=1\n                               w2 =1−α2                                      d1 ,d2\n",
+          "sha256": "6e9e4dbdd4a3eaea5805c0321066b33aeb8a5406f71342932a101203d7938baa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_dbfbea0eacf6a05d1efae68fb6de3001c46e426ffd100143fd2f9f18378fd9db",
+        "dossier_sha256": "2db442a864c71333f5bb27301d5a4b73a674e6b20d0372778d97c386b5d27da2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Background and 2. Shifted moments",
+            "line_end": 394,
+            "line_start": 32,
+            "mathematical_role": "Defines shifted moments, generalized divisor coefficients, swap terms, the length cutoff, the shifted-correlation conjecture, and the convolution theorem to be proved."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 353,
+          "line_start": 200,
+          "title": "A delta-method pole conjecture converts shifted correlations into a one-swap identity",
+          "unit_id": "openalex_w2612271026_v2_u02",
+          "unit_type": "conjecture-to-identity bridge",
+          "why_material": "Packages shifted divisor correlations by their near-one residues, conjecturally replaces them with Ramanujan-sum local data, and follows the Perron and Mellin transformations to the analytic shifted-divisor identity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The old v1 identity span at 336-386 requires this residue and transformation setup; the unit stops after explaining why Theorem 1 is the analytic one-swap prototype.",
+          "representation_dependency": "Several characters and subscripts carry extraction noise, but the residue replacement and comparison mechanism are explicit in prose; scan-check exact formulas.",
+          "unit_id": "openalex_w2612271026_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 199,
+            "line_start": 32,
+            "title": "Swap cardinality is selected by Dirichlet-polynomial length",
+            "unit_id": "openalex_w2612271026_v2_u01",
+            "unit_type": "moment-recipe framework",
+            "why_material": "Defines shifted zeta and polynomial moments, factors their diagonal series into singular zeta and regular arithmetic parts, and shows through Perron variables that terms with more swaps than the length scale permits vanish after contour displacement."
+          },
+          {
+            "line_end": 386,
+            "line_start": 354,
+            "title": "Two multiplicative factors split one off-diagonal equation into two rationally coupled shifts",
+            "unit_id": "openalex_w2612271026_v2_u03",
+            "unit_type": "central theorem and construction",
+            "why_material": "States the convolution identity for two shifted divisor sums and isolates the paper's new structural move: introduce coprime M,N so m1m2-n1n2=h becomes two additive equations around a common rational ratio."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2612271026_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2612271026_v2_u02",
+          "spontaneous_reading": "The delta-method conjecture replaces an inaccessible shifted-divisor correlation by its predicted pole data, and residues then propagate through Perron and Fourier transforms into exactly the one-swap arithmetic factor."
+        },
+        "directed": {
+          "unit_id": "openalex_w2612271026_v2_u02",
+          "source_grounded_mathematics": "The unit defines shifted-correlation series S_{A,B}, their near-one residue sum R_{A,B}, additive twists, and a Ramanujan-sum model R*_{A,B}. Conjecture 1 equates their pole data. Substitution, divisor expansion of Ramanujan sums, contour integrals, and the zeta functional equation lead to Theorem 1, the analytic one-swap identity.",
+          "conceptual_reading": "Only polar structure is retained from the correlation, because those residues determine the main term. The calculation tests whether the local delta-method model and the global moment recipe encode the same singular data.",
+          "representation_or_bridge": "Ramanujan sums and additive twists bridge shifted correlations to local arithmetic; Perron/Cauchy transforms and the functional equation bridge residues to swapped zeta factors.",
+          "boundary_or_failure": "The key correlation continuation and equality R=R* are conjectural. Matching main poles does not establish all error terms or the original moment asymptotic.",
+          "uncertainty": "The replacement and comparison mechanism are explicit, but several symbols and subscripts require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2612271026_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The unit defines the correlation series, near-one residues, additive twists, Ramanujan model, and conjectural equality R=R*, then carries substitution, divisor expansion, contour manipulation, and transform steps to the one-swap identity."
+        ],
+        "inference": [
+          "Saying the main-term calculation retains polar data and tests agreement between correlation and recipe singularities is appropriate."
+        ],
+        "unsupported_or_imported": [
+          "The directed reading says 'the zeta functional equation' leads to Theorem 1, but this span only displays a chi transform factor and cites a prior identity/singular-part result; it does not explicitly invoke or derive the zeta functional equation at that step."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low otherwise: residue replacement and one-swap comparison are concrete."
+        ],
+        "context_or_ocr_risk": [
+          "Several symbols, subscripts, and exact contour factors are extraction-noisy."
+        ],
+        "missed_mechanism": [
+          "The actual final justification cited in the span is the earlier identity plus the singular part of additive twists, which should not be replaced by a familiar functional-equation narrative."
+        ],
+        "revision_instructions": [
+          "Remove the functional-equation attribution unless verified from the cited derivation; describe the chi/Mellin transform and the stated singular-part identity exactly."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the section roadmap distinguishing heuristic matching, automorphism accounting, and the later rigorous local proof.",
+      "line_end": 386,
+      "line_start": 354,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem display is formula-sensitive, while the M/N splitting is fully prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the convolution identity for two shifted divisor sums and isolates the paper's new structural move: introduce coprime M,N so m1m2-n1n2=h becomes two additive equations around a common rational ratio.",
+      "source_id": "openalex_w2612271026",
+      "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two multiplicative factors split one off-diagonal equation into two rationally coupled shifts",
+      "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u03.txt",
+      "unit_bytes": 2873,
+      "unit_id": "openalex_w2612271026_v2_u03",
+      "unit_sha256": "fbe75eb9078a758b629638f70fc46d4a2119fb55eceb7ef1499bc0304313326b",
+      "unit_type": "central theorem and construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2612271026",
+        "title": "Moments of zeta and correlations of divisor-sums: IV",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 346,
+          "line_end": 353,
+          "text": "                                       \u000e\n\n\n                       Theorem 1 follows from the identity stated at the end of Sect. 3 of [7] and the fact that\n                     the singular part of DA (s, e( q1 )) is the same as q −s α∈A ζ (s + α)GA (s, q), as proved in [4].\n                       We call this theorem the “analytic version of the general shifted divisor sum.” In this\n                     paper we prove an identity that is an analogue of Theorem 1 but for a convolution of two\n                     shifted divisor sums. This is a step forward in this process of understanding moments.\n",
+          "sha256": "9e94d99f95a0ef922716f212cd75f5955ab6028beaee573858897e147583a239"
+        },
+        "after": {
+          "line_start": 387,
+          "line_end": 394,
+          "text": "\n<!-- source-page: 6 -->\n\nConrey and Keating Res. Number Theory42:2)6102(                                                                  Page 6 of 24\n\n\n\n\n",
+          "sha256": "256508017ea7d23d3d3779f6e320af907c67d26528e3a666ac5f55d76e0573a6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_dbfbea0eacf6a05d1efae68fb6de3001c46e426ffd100143fd2f9f18378fd9db",
+        "dossier_sha256": "2db442a864c71333f5bb27301d5a4b73a674e6b20d0372778d97c386b5d27da2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Background and 2. Shifted moments",
+            "line_end": 394,
+            "line_start": 32,
+            "mathematical_role": "Defines shifted moments, generalized divisor coefficients, swap terms, the length cutoff, the shifted-correlation conjecture, and the convolution theorem to be proved."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 386,
+          "line_start": 354,
+          "title": "Two multiplicative factors split one off-diagonal equation into two rationally coupled shifts",
+          "unit_id": "openalex_w2612271026_v2_u03",
+          "unit_type": "central theorem and construction",
+          "why_material": "States the convolution identity for two shifted divisor sums and isolates the paper's new structural move: introduce coprime M,N so m1m2-n1n2=h becomes two additive equations around a common rational ratio."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the section roadmap distinguishing heuristic matching, automorphism accounting, and the later rigorous local proof.",
+          "representation_dependency": "The theorem display is formula-sensitive, while the M/N splitting is fully prose-supported.",
+          "unit_id": "openalex_w2612271026_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 353,
+            "line_start": 200,
+            "title": "A delta-method pole conjecture converts shifted correlations into a one-swap identity",
+            "unit_id": "openalex_w2612271026_v2_u02",
+            "unit_type": "conjecture-to-identity bridge",
+            "why_material": "Packages shifted divisor correlations by their near-one residues, conjecturally replaces them with Ramanujan-sum local data, and follows the Perron and Mellin transformations to the analytic shifted-divisor identity."
+          },
+          {
+            "line_end": 440,
+            "line_start": 395,
+            "title": "Farey cells turn the Type II off-diagonal into paired shifted-convolution constraints",
+            "unit_id": "openalex_w2612271026_v2_u04",
+            "unit_type": "circle-method decomposition",
+            "why_material": "Uses convolution factorizations of tau_A and tau_B, localizes m1/n1 near reduced M/N, defines h1 and h2, and linearizes the logarithmic phase into a sum governed by the two shifts."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Perron contour decay selects the number of allowed swaps, while Farey localization realizes the two-swap case as two additive correlations coupled through one rational approximation.",
+            "limit": "The correlation replacement is conjectural at the analytic stage, so the synthesis describes the paper's matching mechanism rather than an unconditional moment theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2612271026_v2_u01",
+              "openalex_w2612271026_v2_u03",
+              "openalex_w2612271026_v2_u04",
+              "openalex_w2612271026_v2_u08"
+            ],
+            "title": "Polynomial length, Farey rank, and swap depth are three views of one complexity threshold"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2612271026_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2612271026_v2_u03",
+          "spontaneous_reading": "The new idea is to split one multiplicative near-diagonal equation into two coupled additive shift equations around a reduced rational ratio, making a two-swap convolution accessible to circle-method tools."
+        },
+        "directed": {
+          "unit_id": "openalex_w2612271026_v2_u03",
+          "source_grounded_mathematics": "Theorem 2 states a residue identity for two additive-twist correlation factors, summed over coprime M,N and local parameters, equaling the B factor with two signed swaps. The source explains that M,N arise by replacing m1m2-n1n2=h with equations Nm1-Mn1=h1 and Mm2-Nn2=h2 near a common ratio.",
+          "conceptual_reading": "Factorization introduces extra variables, but rational localization turns their multiplicative coupling into a pair of linear constraints. The resulting redundancy is later handled by automorphisms.",
+          "representation_or_bridge": "Coprime rational approximants M/N and paired additive shifts bridge a product constraint to convolution identities; local power series later certify the arithmetic equality.",
+          "boundary_or_failure": "This unit states the key identity and roadmap rather than proving it. Its use still depends on the shifted-correlation heuristic behind the setup.",
+          "uncertainty": "The fundamental split and target are clear; dense residue notation is formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2612271026_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The source states the two-swap residue identity, explains that coprime M,N arise by splitting a multiplicative near-diagonal equation into paired linear equations near a rational ratio, and gives the proof roadmap."
+        ],
+        "inference": [
+          "The general claim that rational localization makes multiplicative coupling accessible to convolution methods is sound."
+        ],
+        "unsupported_or_imported": [
+          "The pass supplies exact coefficient placements for the two shift equations despite a notational inconsistency in this span, and says the redundancy is later handled by automorphisms although that fact is not stated in the selected text."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: the 'extra variables/redundancy' story becomes generic unless kept to the displayed M,N split and local identity."
+        ],
+        "context_or_ocr_risk": [
+          "Dense residue notation is formula-sensitive, and the prose split should be scan-checked before exact transcription."
+        ],
+        "missed_mechanism": [
+          "The key supported novelty is the common rational ratio and paired additive constraints; multiplicity correction belongs to a later unit."
+        ],
+        "revision_instructions": [
+          "Avoid exact shift equations unless scan-verified, and delete the automorphism claim from this unit; retain the rational-splitting mechanism and stated roadmap."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The appendix proof of the remaining local factor is selected separately as u11-u12.",
+      "line_end": 790,
+      "line_start": 664,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent with text-layer alignment risk; the conclusion and role of the unresolved Dirichlet series are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Repeats the semi-diagonal transformation with q,d gcd factors intact, isolates the remaining Euler product, and states that its resolution plus the h1=0 and h2=0 terms accounts for every one-swap contribution.",
+      "source_id": "openalex_w2612271026",
+      "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Restoring local gcd and Ramanujan factors preserves the semi-diagonal one-swap match",
+      "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u07.txt",
+      "unit_bytes": 10317,
+      "unit_id": "openalex_w2612271026_v2_u07",
+      "unit_sha256": "f20bd04c9b995dcd8f118b1accf06cd1bfc540f3e57202db1a7f7a914b6d9d53",
+      "unit_type": "arithmetic completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2612271026",
+        "title": "Moments of zeta and correlations of divisor-sums: IV",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 656,
+          "line_end": 663,
+          "text": "                                  ×                       Tt\n                                                                  A(A\u000e ∪ {−β − s}, Bs\u000e ∪ {−α})Z(A\u000es , B\u000e )ζ (1 − α − β − s) ds.\n                                    2πi          \u0007s=4     s\n                     The only diﬀerences are that so far we have ignored the arithmetic factors and that in the\n                     expression we just derived we have the restrictions α ∈ A1 and β ∈ B1 . But as A1 and\n                     B1 vary through subsets of A and B every possible α and β will appear. Also, we have the\n                     terms where M > N and those with h1 = 0.\n\n",
+          "sha256": "4da3cc394f7308ed0ec71524bef12253bb7bafadf062db5d096f478c8ae7bf12"
+        },
+        "after": {
+          "line_start": 791,
+          "line_end": 798,
+          "text": "\n                     7 h1 h2 \u0002= 0\n                     Now we come to the crux of the paper, the terms where neither h1 nor h2 are 0; we need\n                     to match these up with the two swap terms.\n                       In the formula (3) above we replace the convolution sums by their averages, i.e.\n\n                          \u0002\u0002                                                                           \u0003                        \u0004\n                                                                                                            Th1      Th2            du1 du2\n",
+          "sha256": "f49d9e0ae1556c03d49b8505546a8152cafacc7cf17a803daf2f3aaa97456a83"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_dbfbea0eacf6a05d1efae68fb6de3001c46e426ffd100143fd2f9f18378fd9db",
+        "dossier_sha256": "2db442a864c71333f5bb27301d5a4b73a674e6b20d0372778d97c386b5d27da2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4-6. Semi-diagonal calculation",
+            "line_end": 791,
+            "line_start": 442,
+            "mathematical_role": "Evaluates the case with one vanishing shift first without and then with arithmetic Euler factors, recovering one-swap terms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 790,
+          "line_start": 664,
+          "title": "Restoring local gcd and Ramanujan factors preserves the semi-diagonal one-swap match",
+          "unit_id": "openalex_w2612271026_v2_u07",
+          "unit_type": "arithmetic completion",
+          "why_material": "Repeats the semi-diagonal transformation with q,d gcd factors intact, isolates the remaining Euler product, and states that its resolution plus the h1=0 and h2=0 terms accounts for every one-swap contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The appendix proof of the remaining local factor is selected separately as u11-u12.",
+          "representation_dependency": "Highly formula-dependent with text-layer alignment risk; the conclusion and role of the unresolved Dirichlet series are explicit.",
+          "unit_id": "openalex_w2612271026_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 663,
+            "line_start": 501,
+            "title": "Suppressing arithmetic factors reveals how a semi-diagonal term becomes the one-swap recipe",
+            "unit_id": "openalex_w2612271026_v2_u06",
+            "unit_type": "simplified derivation",
+            "why_material": "Temporarily drops q>1 and replaces G by divisor coefficients, then uses a change of variables, Perron summation, Mellin inversion, and zeta's functional equation to assemble exactly the singular factors of a one-swap term."
+          },
+          {
+            "line_end": 956,
+            "line_start": 792,
+            "title": "Four sign choices and two Mellin transforms produce the genuine two-swap polar structure",
+            "unit_id": "openalex_w2612271026_v2_u08",
+            "unit_type": "two-swap matching mechanism",
+            "why_material": "For h1h2 nonzero, inserts both shifted-correlation averages, sums all sign combinations through Fourier inversion, applies the functional equation twice, and computes Euler polar factors that combine into the recipe's two-element swap."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Mellin and functional-equation manipulations already determine the shifted singular factors; the appendical C/F algebra verifies that restoring gcd and Ramanujan data changes only the regular arithmetic factor in precisely the recipe-prescribed way.",
+            "limit": "Exact local factors are formula-sensitive and must be checked against the scan before computational reuse.",
+            "parent_local_unit_ids": [
+              "openalex_w2612271026_v2_u06",
+              "openalex_w2612271026_v2_u07",
+              "openalex_w2612271026_v2_u10",
+              "openalex_w2612271026_v2_u12"
+            ],
+            "title": "The arithmetic-free diversion predicts the exact role of the local Euler-factor proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2612271026_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2612271026_v2_u07",
+          "spontaneous_reading": "Restoring gcd, Möbius, and Ramanujan factors leaves the global one-swap mechanism intact but concentrates the remaining proof burden into a single local Dirichlet-series identity."
+        },
+        "directed": {
+          "unit_id": "openalex_w2612271026_v2_u07",
+          "source_grounded_mathematics": "The source repeats the semi-diagonal variable change and Perron/Fourier calculation with all local factors present. Summing h1 produces ζ(s+α+β), the v integral and functional equation produce ζ(1-s-α-β), and the unresolved M,N,d,q Dirichlet series is delegated to the appendix. Both zero-shift orientations account for all one-swap terms.",
+          "conceptual_reading": "Global analysis and local arithmetic decouple: the same analytic transform fixes the swap shape, while an Euler-factor proof certifies that gcd corrections produce the required arithmetic multiplier.",
+          "representation_or_bridge": "The remaining Dirichlet series is the bridge between the correlation-side local data and the recipe's A factor.",
+          "boundary_or_failure": "Agreement is incomplete until the appendix identity and multiplicity accounting are proved. Formula extraction is too risky for exact local exponents.",
+          "uncertainty": "The conclusion and unresolved proof obligation are explicit; exact factors require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2612271026_v2_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The source repeats the semi-diagonal transform with local factors, obtains zeta(s+alpha+beta) and its functional-equation partner, isolates a remaining M,N,d,q Dirichlet series, and sends that factor and multiplicities to later sections."
+        ],
+        "inference": [
+          "Separating global transform architecture from a prime-local arithmetic obligation is a useful reading."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading says an Euler-factor proof 'certifies' the required multiplier, but within this span that proof is only a delegated future obligation."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low otherwise: the remaining Dirichlet series is a concrete bridge, not a generic local/global slogan."
+        ],
+        "context_or_ocr_risk": [
+          "Local exponents and alignments are too risky for exact use."
+        ],
+        "missed_mechanism": [
+          "The unit's key boundary is incompleteness pending both the appendix identity and multiplicity accounting."
+        ],
+        "revision_instructions": [
+          "Change 'certifies' to 'must certify' and keep the conclusion conditional until the selected appendix units are considered."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the apparent mismatch that the correlation calculation first chooses one shift from each partition, which motivates automorphism accounting.",
+      "line_end": 956,
+      "line_start": 792,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Euler table and shifted-set formulas require scan verification for exact transcription, but the matching argument is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For h1h2 nonzero, inserts both shifted-correlation averages, sums all sign combinations through Fourier inversion, applies the functional equation twice, and computes Euler polar factors that combine into the recipe's two-element swap.",
+      "source_id": "openalex_w2612271026",
+      "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+      "source_page_markers_inside_unit": [
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Four sign choices and two Mellin transforms produce the genuine two-swap polar structure",
+      "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u08.txt",
+      "unit_bytes": 13769,
+      "unit_id": "openalex_w2612271026_v2_u08",
+      "unit_sha256": "ff8b81df67b9df341a3c711dc4a3d8fd1e93a81e6b418f656a903acc789ba8fe",
+      "unit_type": "two-swap matching mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2612271026",
+        "title": "Moments of zeta and correlations of divisor-sums: IV",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 784,
+          "line_end": 791,
+          "text": "                                              ×GA1        1 − α,            GB1 1 − β,\n                                                                 (qd, N )              (qd, M)\n\n                       See the appendix for the resolution of this arithmetic factor.\n                       Regarding multiplicities, see the section on automorphisms at the end of the paper.\n                       Taking account of the terms with h1 = 0 and h2 = 0 we ﬁnd that we have now accounted\n                     for all of the one-swap terms from the semi-diagonal contributions.\n\n",
+          "sha256": "5dd10ff719cbdeb70c57b6a4402dac2401f0fca4d819b7524a0a75cd86270ac6"
+        },
+        "after": {
+          "line_start": 957,
+          "line_end": 964,
+          "text": "\n                     8 Automorphisms\n                     The ﬁnal step of this paper is to explain the apparent over-counting that has occurred.\n                     The explanation is that there are automorphisms that have to be taken into account. In\n                     this section we explain these multiplicities.\n\n<!-- source-page: 13 -->\n\n",
+          "sha256": "2f0af49d0e05ee14042d5abaa77fc0e6a07c0a89d4165512ac6581669226aa32"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_dbfbea0eacf6a05d1efae68fb6de3001c46e426ffd100143fd2f9f18378fd9db",
+        "dossier_sha256": "2db442a864c71333f5bb27301d5a4b73a674e6b20d0372778d97c386b5d27da2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Nonzero paired shifts",
+            "line_end": 957,
+            "line_start": 792,
+            "mathematical_role": "Evaluates the genuinely Type II case and identifies the polar factors with the recipe's two-swap terms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 956,
+          "line_start": 792,
+          "title": "Four sign choices and two Mellin transforms produce the genuine two-swap polar structure",
+          "unit_id": "openalex_w2612271026_v2_u08",
+          "unit_type": "two-swap matching mechanism",
+          "why_material": "For h1h2 nonzero, inserts both shifted-correlation averages, sums all sign combinations through Fourier inversion, applies the functional equation twice, and computes Euler polar factors that combine into the recipe's two-element swap."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the apparent mismatch that the correlation calculation first chooses one shift from each partition, which motivates automorphism accounting.",
+          "representation_dependency": "The Euler table and shifted-set formulas require scan verification for exact transcription, but the matching argument is prose-supported.",
+          "unit_id": "openalex_w2612271026_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 790,
+            "line_start": 664,
+            "title": "Restoring local gcd and Ramanujan factors preserves the semi-diagonal one-swap match",
+            "unit_id": "openalex_w2612271026_v2_u07",
+            "unit_type": "arithmetic completion",
+            "why_material": "Repeats the semi-diagonal transformation with q,d gcd factors intact, isolates the remaining Euler product, and states that its resolution plus the h1=0 and h2=0 terms accounts for every one-swap contribution."
+          },
+          {
+            "line_end": 1003,
+            "line_start": 958,
+            "title": "Factorization automorphisms cancel partition overcounting",
+            "unit_id": "openalex_w2612271026_v2_u09",
+            "unit_type": "multiplicity correction",
+            "why_material": "Constructs divisor-rescaling automorphisms of the paired shift equations and counts them, then independently counts the partitions producing a fixed two-swap term and shows the multiplicities agree."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Perron contour decay selects the number of allowed swaps, while Farey localization realizes the two-swap case as two additive correlations coupled through one rational approximation.",
+            "limit": "The correlation replacement is conjectural at the analytic stage, so the synthesis describes the paper's matching mechanism rather than an unconditional moment theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2612271026_v2_u01",
+              "openalex_w2612271026_v2_u03",
+              "openalex_w2612271026_v2_u04",
+              "openalex_w2612271026_v2_u08"
+            ],
+            "title": "Polynomial length, Farey rank, and swap depth are three views of one complexity threshold"
+          },
+          {
+            "claim": "The extra copies created by splitting A,B and the integer factorizations correspond to explicit automorphisms of the paired shift equations, so quotienting by that symmetry recovers one copy of each two-swap term.",
+            "limit": "The count is established for this two-factor Type II construction and is not by itself a general higher-swap automorphism theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2612271026_v2_u08",
+              "openalex_w2612271026_v2_u09"
+            ],
+            "title": "Partition overcounting is structural symmetry rather than a normalization accident"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2612271026_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2612271026_v2_u08",
+          "spontaneous_reading": "When both shifts are nonzero, summing four sign choices and applying two transform identities creates two functional-equation flips, exactly the analytic signature of a two-element swap."
+        },
+        "directed": {
+          "unit_id": "openalex_w2612271026_v2_u08",
+          "source_grounded_mathematics": "The unit inserts average formulas for both shifted correlations, changes to v1,v2, applies Perron to the product cutoff, sums the four signs through Fourier inversion, and uses two Mellin transforms and two zeta functional equations. Prime-local polar factors combine into Z((A-S)_s+T^-, B-T+(S_s)^-) for |S|=|T|=2.",
+          "conceptual_reading": "Swap cardinality corresponds to the number of genuinely nonzero correlation directions and functional-equation conversions. The apparent restriction to one chosen shift from each partition creates a multiplicity issue rather than a different term.",
+          "representation_or_bridge": "Paired shifted-divisor averages bridge Type II correlations to two Mellin variables; Euler polar tables bridge local configurations to the recipe's swapped Z product.",
+          "boundary_or_failure": "The calculation relies on conjectural correlation averages, leaves exact arithmetic factors to later sections, and initially overcounts through partitions.",
+          "uncertainty": "The matching architecture is prose-supported, but Euler tables and shifted-set formulas need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2612271026_v2_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The span inserts two correlation averages, changes to v1,v2, applies a product cutoff, sums four sign choices, performs two transform/functional-equation conversions, and obtains the two-swap Z-factor shape."
+        ],
+        "inference": [
+          "Relating two genuinely nonzero shift directions to two swapped elements is a strong source-specific interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The boundary says the calculation 'initially overcounts through partitions'; this unit only identifies an apparent range/multiplicity mismatch between partitions and arbitrary two-element subsets, leaving its nature to later sections."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the four-sign and two-transform mechanism is detailed and non-generic."
+        ],
+        "context_or_ocr_risk": [
+          "Euler tables, set shifts, and exact local factors require scan verification."
+        ],
+        "missed_mechanism": [
+          "The remaining obligations are the exact arithmetic factor and resolution of the partition multiplicity, not yet a proved overcount."
+        ],
+        "revision_instructions": [
+          "Replace 'initially overcounts' with 'leaves an unresolved multiplicity mismatch associated with the chosen partitions'; retain the two-swap transform mechanism."
+        ]
+      }
+    }
+  ]
+}

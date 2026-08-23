@@ -1,0 +1,694 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1964245943_99cd568c_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1964245943",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The same criterion is said to extend to Dedekind zeta functions; the exact displayed definitions are not safely readable in OCR.",
+      "line_end": 52,
+      "line_start": 20,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Scan verification required for the completed-function normalization, derivative formula, zero-sum summand, and convergence convention.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction states that positivity of a derivative-defined sequence is equivalent to RH and rewrites the same coefficients as a symmetrically interpreted sum over nontrivial zeros, establishing the two representations studied in the paper.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Li coefficients encode the Riemann Hypothesis",
+      "unit_artifact_relpath": "depth/units/bl_01.txt",
+      "unit_bytes": 830,
+      "unit_id": "bl_01",
+      "unit_sha256": "ec2f193a86b3ab961babc135fc23d3cc5dbec81f9fccfba44b20a2182346d9ea",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_01.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 12,
+          "line_end": 19,
+          "text": "zeros of the Riemann zeta function. We show that Li’s criterion follows as a consequence of\na general set of inequalities for an arbitrary multiset of complex numbers p and therefore\nis not specific to zeta functions. We also give an arithmetic formula for the numbers An\nin Li’s paper, via the Guinand-Weil explicit formula and relate the conjectural positivity\nof An to Weil’s criterion for the Riemann Hypothesis.\n\n1990 Mathematics Subject Classification 11M26, 11R42.\n\n",
+          "sha256": "1f947f5b817d61c48cc53aac479daa466a1716064b0ddf7315f8597b91f2c02b"
+        },
+        "after": {
+          "line_start": 53,
+          "line_end": 60,
+          "text": "\n<!-- source-page: 2 -->\n\n2 BOMBIERI AND LAGARIAS\n\nLi’s proof uses the positivity of certain numbers aj and 6,, (sce [3, formulae (1.6)\nand (3.5)] obtained from an appropriate integral representation of the zeta function\nand one may wonder to what extent Li’s criterion is specific for zeta functions and\n",
+          "sha256": "c0b13b7dd9b2bc80388ff81ef589c8693fd5f7d8515f725ee73251e43bbb6e10"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_70c4747d3c0ea9b7538a40c4bdab3af5e25e7af907041408316253a5aad78e1e",
+        "dossier_sha256": "f3347e7e2fb261261edfd2c4da19b80297cbda517432a4468c0271f7a86b4dc8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 75,
+            "line_start": 20,
+            "mathematical_role": "States Li's coefficient criterion, asks what is zeta-specific, and previews the general and arithmetic answers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 52,
+          "line_start": 20,
+          "title": "Li coefficients encode the Riemann Hypothesis",
+          "unit_id": "bl_01",
+          "unit_type": "equivalent-criterion",
+          "why_material": "The introduction states that positivity of a derivative-defined sequence is equivalent to RH and rewrites the same coefficients as a symmetrically interpreted sum over nontrivial zeros, establishing the two representations studied in the paper."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The same criterion is said to extend to Dedekind zeta functions; the exact displayed definitions are not safely readable in OCR.",
+          "representation_dependency": "Scan verification required for the completed-function normalization, derivative formula, zero-sum summand, and convergence convention.",
+          "unit_id": "bl_01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 74,
+            "line_start": 58,
+            "title": "Separating the general inequality mechanism from zeta-specific arithmetic",
+            "unit_id": "bl_02",
+            "unit_type": "method-comparison-and-scope",
+            "why_material": "The authors contrast Li's use of zeta-integral positivity with their plan: first a criterion for arbitrary multisets, then an explicit-formula arithmetic expression and comparison with Weil's criterion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same coefficients defined from the completed function and its zeros arise by inserting a specially constructed inverse-Mellin family into the explicit formula, after a cutoff and a prime-number-theorem justification of the limit.",
+            "limit": "The OCR supports the representation bridge and proof architecture, not the exact coefficient formula or normalization.",
+            "parent_local_unit_ids": [
+              "bl_01",
+              "bl_07",
+              "bl_08",
+              "bl_09",
+              "bl_10"
+            ],
+            "title": "Li's coefficients are both zero-geometric and arithmetic test-function data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 19,
+              "line_start": 8,
+              "reason": "Abstract and classification summarize later units."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "directed": {
+          "boundary_or_failure": "The criterion requires all coefficients, so positivity of a finite prefix is not RH. The symmetric convergence prescription is part of the mathematical statement, not optional notation.",
+          "conceptual_reading": "The coefficient sequence compresses an infinite geometric condition on zeros into countably many scalar tests. The derivative and zero-sum formulas expose analytic-local and spectral-global interpretations of the same quantities.",
+          "representation_or_bridge": "The Li coefficients are the bridge between the completed function near a distinguished point and the distribution of all nontrivial zeros.",
+          "source_grounded_mathematics": "The introduction defines a sequence from derivatives of the logarithm of the completed zeta function, states that RH is equivalent to positivity of all its terms, and rewrites each term as a symmetrically interpreted sum over nontrivial zeros. It also says the criterion extends to Dedekind zeta functions.",
+          "uncertainty": "The completed-function normalization, derivative formula, transformed summand, and exact limiting convention are not safely readable in OCR and require scan verification.",
+          "unit_id": "bl_01"
+        },
+        "spontaneous": {
+          "spontaneous_reading": "Li's coefficients provide two views of the same criterion: local derivatives of a completed zeta function and symmetric transformed sums over its nontrivial zeros, with positivity of every coefficient encoding RH.",
+          "unit_id": "bl_01"
+        },
+        "unit_id": "bl_01"
+      },
+      "critic_findings": {
+        "context_or_ocr_risk": [
+          "The completion normalization, derivative order, transformed summand, and symmetric cutoff convention are unreadable and must be scan-checked."
+        ],
+        "critic_decision": "revise",
+        "inference": [
+          "Calling the sequence a countable scalar encoding of the zero-location condition and contrasting local coefficient data with a global zero-set sum are reasonable conceptual readings."
+        ],
+        "missed_mechanism": [
+          "The analysis retains the essential convergence prescription but should avoid attaching a spectral interpretation not developed in the unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: the dual-view description is useful, but 'analytic-local and spectral-global' has polished symmetry that can obscure the precise derivative and symmetric-summation mechanisms."
+        ],
+        "revision_instructions": [
+          "Replace 'spectral-global' with 'global zero-set' and keep the exact derivative/zero-sum duality, all-coefficients quantifier, and symmetric convergence caveat."
+        ],
+        "supported": [
+          "The introduction defines Li's coefficients through logarithmic derivatives of a completed zeta function, states equivalence of positivity for all coefficients with RH, supplies a symmetrically interpreted zero-sum form, and mentions the Dedekind-zeta extension."
+        ],
+        "unit_id": "bl_01",
+        "unsupported_or_imported": [
+          "Calling the zero-sum view 'spectral-global' imports spectral terminology that this span does not use or justify; 'zero-set-global' would be exact. The claim about a finite positive prefix not proving RH is a valid logical consequence, not an additional source theorem."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical caveat separates formal and hypothesis-dependent formulations from the version used here.",
+      "line_end": 250,
+      "line_start": 231,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primarily prose-recoverable; bibliographic formula numbering and the quoted historical wording should be checked against the scan if cited exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes an earlier self-reciprocal-transform viewpoint from Weil's arithmetic emphasis and explains why it restates the explicit formula in Mellin-transform language.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Guinand self-reciprocity versus Weil arithmetic in explicit formulas",
+      "unit_artifact_relpath": "depth/units/bl_06.txt",
+      "unit_bytes": 1438,
+      "unit_id": "bl_06",
+      "unit_sha256": "a49ea5fe6a52a5b97f4da5db4da82daf9b7c81003f0bfa326cc0713954dde8a7",
+      "unit_type": "historical-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_06.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 223,
+          "line_end": 230,
+          "text": "\nProof: Conditions (ii) and (iii) ensure that the sums in (b) and (c) are *-convergent\nand real and \\, = A_, for n = 1,2,3,.... The proof is completed by applying\nTheorem 1 to R and to 1—R.\n\nRemark, Condition (iii) can be relaxed to })1/(1+ |p|)? < +00; we leave the\ndetails to the reader.\n\n",
+          "sha256": "08ee18a5523d2fae6aeb2fbea90ff36e4be0f6237edcecd7db7a79f428428123"
+        },
+        "after": {
+          "line_start": 251,
+          "line_end": 258,
+          "text": "\nConsider functions f(x) on the positive half-line (0,00) such that:\n\n(A) f(x) is continuous and continuously differentiable everywhere except at\nfinitely many points a;, in which both f(x) and f'(x) have at most a disconti-\nnuity of the first kind, and in which one sets\n\nf(ai) = ; [fai + 0) + f(a; —0)];\n",
+          "sha256": "6b233eb3307a809d19b43dc5d713c14ed909889025be78c1fcbd83a6a31d13b1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_70c4747d3c0ea9b7538a40c4bdab3af5e25e7af907041408316253a5aad78e1e",
+        "dossier_sha256": "f3347e7e2fb261261edfd2c4da19b80297cbda517432a4468c0271f7a86b4dc8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. An arithmetic interpretation",
+            "line_end": 531,
+            "line_start": 231,
+            "mathematical_role": "Restates the explicit formula in Mellin language, constructs inverse-Mellin test functions for Li coefficients, and controls a truncation limit by prime-number estimates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 250,
+          "line_start": 231,
+          "title": "Guinand self-reciprocity versus Weil arithmetic in explicit formulas",
+          "unit_id": "bl_06",
+          "unit_type": "historical-method-comparison",
+          "why_material": "The source distinguishes an earlier self-reciprocal-transform viewpoint from Weil's arithmetic emphasis and explains why it restates the explicit formula in Mellin-transform language."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The historical caveat separates formal and hypothesis-dependent formulations from the version used here.",
+          "representation_dependency": "Primarily prose-recoverable; bibliographic formula numbering and the quoted historical wording should be checked against the scan if cited exactly.",
+          "unit_id": "bl_06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 229,
+            "line_start": 203,
+            "title": "Functional-equation symmetry upgrades the half-plane test to a critical-line test",
+            "unit_id": "bl_05",
+            "unit_type": "symmetry-reduction",
+            "why_material": "For a multiset invariant under conjugation and reflection across the functional-equation center, applying the general theorem to the multiset and its reflection makes the transformed sums real and equates coefficient positivity with every element lying on the critical line."
+          },
+          {
+            "line_end": 361,
+            "line_start": 252,
+            "title": "Mellin test functions translate zero sums into prime and archimedean terms",
+            "unit_id": "bl_07",
+            "unit_type": "representation-change-and-explicit-formula",
+            "why_material": "Regularity and decay conditions define a test-function class with an involution and Mellin transform; the explicit formula then represents a symmetric sum over zeros by arithmetic prime-power terms and continuous correction terms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 230,
+              "line_start": 230,
+              "reason": "Blank section transition."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 251,
+              "line_start": 251,
+              "reason": "Blank transition to test-function assumptions."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "directed": {
+          "boundary_or_failure": "The earlier Guinand statement is described as formal and subject to case-by-case justification, and a wider test-function class in another formulation may use RH. These caveats prevent treating all versions as equally unconditional.",
+          "conceptual_reading": "Historical comparison reveals that an explicit formula is not a single representation: it can be organized around symmetry of transforms or around arithmetic prime data. Choosing Mellin coordinates prepares a direct interface with the test functions for Li's criterion.",
+          "representation_or_bridge": "Mellin transformation is the bridge aligning the explicit formula's zero sum, multiplicative arithmetic, and Li's rational functions of the spectral variable.",
+          "source_grounded_mathematics": "The source recalls Weil's general explicit formula and an earlier Riemann-zeta formula of Guinand, noting where RH entered Guinand's later formulation. It also cites an earlier formal Mellin-transform version without RH and distinguishes Guinand's transform-reciprocity emphasis from Weil's arithmetic emphasis before restating Weil's formula for zeta in Mellin form.",
+          "uncertainty": "The prose distinction is reliable, but bibliographic formula references and any exact quotation should be checked on the scan.",
+          "unit_id": "bl_06"
+        },
+        "spontaneous": {
+          "spontaneous_reading": "The same explicit-formula territory admits two emphases: Guinand's self-reciprocal-transform summation viewpoint and Weil's arithmetic viewpoint; the authors choose Mellin language to connect these to Li's coefficients.",
+          "unit_id": "bl_06"
+        },
+        "unit_id": "bl_06"
+      },
+      "critic_findings": {
+        "context_or_ocr_risk": [
+          "The prose is mostly recoverable; exact bibliographic numbering and quoted wording should be scan-checked, and the asterisk's explanatory footnote is outside this unit boundary."
+        ],
+        "critic_decision": "revise",
+        "inference": [
+          "Saying that Mellin coordinates are chosen to prepare a later interface with Li coefficients is plausible from the paper's section context, but it is an interpretation rather than a statement in this span."
+        ],
+        "missed_mechanism": [
+          "The strongest local mechanism is a change in organizing viewpoint, not yet the explicit-formula translation itself; the revision should preserve that narrower scope."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: the symmetry-versus-arithmetic comparison is source-specific, but the three-way 'zeros, arithmetic, and Li' bridge overstates what this local historical paragraph itself establishes."
+        ],
+        "revision_instructions": [
+          "Keep the Guinand self-reciprocity versus Weil arithmetic comparison and the move to Mellin form; mark the Li connection as forward-looking inference and remove the adjacent-footnote claim from the source-grounded boundary."
+        ],
+        "supported": [
+          "The span distinguishes Weil's general arithmetic emphasis from Guinand's self-reciprocal-transform emphasis, records which Guinand formulations assumed RH or were only formal, and announces a Mellin-form restatement of Weil's zeta explicit formula."
+        ],
+        "unit_id": "bl_06",
+        "unsupported_or_imported": [
+          "The boundary claim that RH was used only for a wider test-function class comes from the footnote preserved in the next unit, not this frozen span. The reference to Li's rational functions of a spectral variable is likewise not present here."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The construction is conceptually recoverable from the prose and support cases even though the polynomial display is lost.",
+      "line_end": 386,
+      "line_start": 362,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact polynomial coefficients, endpoint value, support inequalities, and transform identity require the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors identify an inverse Mellin transform supported on one side of the multiplicative identity and express it through an explicit polynomial, producing the test function later inserted into the explicit formula.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Li's transformed summand has a concrete inverse-Mellin test function",
+      "unit_artifact_relpath": "depth/units/bl_08.txt",
+      "unit_bytes": 397,
+      "unit_id": "bl_08",
+      "unit_sha256": "31216ff34210189905d2cd2cd1c9896981656388ddfb719c58d291a6a737759a",
+      "unit_type": "test-function-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_08.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 354,
+          "line_end": 361,
+          "text": "= (—log2+ 9) (1) + lim, [ro “a {ye\n\n= (log? +7)f(0) +f {te+ie-3\n\n1\n\nbecause here we may interchange the limit and the integral. By (3.1), this completes\nthe proof of the Explicit Formula.\n",
+          "sha256": "33165f3fc07f0db9321700a83608d741890bb0cd80f30b5191c986d503ec5167"
+        },
+        "after": {
+          "line_start": 387,
+          "line_end": 394,
+          "text": "\nTheorem 2. For n= 1,2,3,... we have\n\nDh -1/0)\"] =\n\n- 1 ai A(m)(logm)!* Lagat ys\nae y(\") Gay ae, LS, = 5\" 1g 1/e)\n\n",
+          "sha256": "726270b20dbadf1e36a9f96e8b84dac42f38dc14b14d3d69efc127ed7de08157"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_70c4747d3c0ea9b7538a40c4bdab3af5e25e7af907041408316253a5aad78e1e",
+        "dossier_sha256": "f3347e7e2fb261261edfd2c4da19b80297cbda517432a4468c0271f7a86b4dc8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. An arithmetic interpretation",
+            "line_end": 531,
+            "line_start": 231,
+            "mathematical_role": "Restates the explicit formula in Mellin language, constructs inverse-Mellin test functions for Li coefficients, and controls a truncation limit by prime-number estimates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 386,
+          "line_start": 362,
+          "title": "Li's transformed summand has a concrete inverse-Mellin test function",
+          "unit_id": "bl_08",
+          "unit_type": "test-function-construction",
+          "why_material": "The authors identify an inverse Mellin transform supported on one side of the multiplicative identity and express it through an explicit polynomial, producing the test function later inserted into the explicit formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The construction is conceptually recoverable from the prose and support cases even though the polynomial display is lost.",
+          "representation_dependency": "Exact polynomial coefficients, endpoint value, support inequalities, and transform identity require the scan.",
+          "unit_id": "bl_08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 361,
+            "line_start": 252,
+            "title": "Mellin test functions translate zero sums into prime and archimedean terms",
+            "unit_id": "bl_07",
+            "unit_type": "representation-change-and-explicit-formula",
+            "why_material": "Regularity and decay conditions define a test-function class with an involution and Mellin transform; the explicit formula then represents a symmetric sum over zeros by arithmetic prime-power terms and continuous correction terms."
+          },
+          {
+            "line_end": 479,
+            "line_start": 388,
+            "title": "Truncating the Li test function exposes an arithmetic coefficient formula",
+            "unit_id": "bl_09",
+            "unit_type": "arithmetic-formula-via-regularization",
+            "why_material": "Because the raw inverse-Mellin function violates the decay hypothesis, the proof truncates it, applies the explicit formula to the admissible approximation, and sends the cutoff to zero after evaluating prime and continuous terms, yielding an arithmetic expression for the Li coefficients."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same coefficients defined from the completed function and its zeros arise by inserting a specially constructed inverse-Mellin family into the explicit formula, after a cutoff and a prime-number-theorem justification of the limit.",
+            "limit": "The OCR supports the representation bridge and proof architecture, not the exact coefficient formula or normalization.",
+            "parent_local_unit_ids": [
+              "bl_01",
+              "bl_07",
+              "bl_08",
+              "bl_09",
+              "bl_10"
+            ],
+            "title": "Li's coefficients are both zero-geometric and arithmetic test-function data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 387,
+              "line_start": 387,
+              "reason": "Blank theorem transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "directed": {
+          "boundary_or_failure": "The raw function's support does not guarantee the decay condition needed by the explicit formula near the other endpoint; later truncation is necessary. The lost polynomial formula prevents exact computation from this OCR span.",
+          "conceptual_reading": "An abstract function of the spectral variable is converted into a localized physical-space test function. One-sided support makes its prime-power evaluations explicit and sets up the arithmetic coefficient formula.",
+          "representation_or_bridge": "The inverse Mellin function g_n is the bridge object inserted into the explicit formula to turn Li's zero sum into arithmetic and continuous terms.",
+          "source_grounded_mathematics": "The lemma identifies the inverse Mellin transform of the rational expression defining a Li summand. The resulting function vanishes beyond the multiplicative identity, is polynomial in log x on the other side, and has a separately prescribed value at the endpoint. The proof expands the transform algebraically.",
+          "uncertainty": "Polynomial coefficients, support inequalities, endpoint normalization, and the exact transform identity are OCR-damaged and require scan verification.",
+          "unit_id": "bl_08"
+        },
+        "spontaneous": {
+          "spontaneous_reading": "Li's transformed summand has a concrete inverse Mellin representative: a polynomial in the logarithm supported on one side of the multiplicative identity, with a special boundary value.",
+          "unit_id": "bl_08"
+        },
+        "unit_id": "bl_08"
+      },
+      "critic_findings": {
+        "context_or_ocr_risk": [
+          "The artifact is very short and loses the polynomial display, coefficients, support inequalities, endpoint normalization, and exact transform identity; formula-level reconstruction is impossible without the scan."
+        ],
+        "critic_decision": "revise",
+        "inference": [
+          "Reading this as localization from the transform variable to a physical-space test function and anticipating explicit prime-power evaluation are reasonable forward interpretations."
+        ],
+        "missed_mechanism": [
+          "Within the span, the key mechanism is inverse Mellin construction by expansion; admissibility and regularization belong to a later unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: 'localized physical-space test function' has value only if tied to the one-sided support, polynomial in log x, and endpoint prescription."
+        ],
+        "revision_instructions": [
+          "Keep the one-sided inverse-Mellin bridge and explicit uncertainty, but move the inadmissibility/truncation statement to inference or omit it as adjacent-unit content."
+        ],
+        "supported": [
+          "The lemma identifies the inverse Mellin transform of the Li summand as a one-sided, logarithmic-polynomial function with a separately defined endpoint value, and the proof uses an algebraic transform expansion."
+        ],
+        "unit_id": "bl_08",
+        "unsupported_or_imported": [
+          "The claim that the raw function fails the explicit formula's decay condition and therefore requires later truncation is stated only in the next unit, not in this frozen span. It should not be presented here as source-grounded boundary content."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distinction is coverage: Weil uses a broad positivity class, whereas Li provides a concrete countable family whose sufficiency was established by the multiset theorem.",
+      "line_end": 563,
+      "line_start": 532,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact conjugation convention, convolution, transform identity, and test-function equality require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Multiplicative convolution turns into product under Mellin transform; self-convolution therefore gives a transform positive on the critical line. A source-stated identity shows the Li test functions fit this pattern, so their positivity has Weil's meaning while requiring only a simple explicit family.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Li positivity is an explicit test-function slice of Weil positivity",
+      "unit_artifact_relpath": "depth/units/bl_11.txt",
+      "unit_bytes": 1324,
+      "unit_id": "bl_11",
+      "unit_sha256": "e1d488e48d7bffc5d0062007eeebd14dddd35f109e32d16f7595b889998993f7",
+      "unit_type": "criterion-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_11.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 524,
+          "line_end": 531,
+          "text": "Pp Pp\n\n= iy! — 2 log 2a — Flog(1 —<7)} + O(e-“' VRE)\n= O(c? Vee)\n\nby the classical explicit formula for u(a), the Prime Number Theorem with error\nterm* and by (3.9). This proves what we want.\n\n",
+          "sha256": "04496a93203ae96a15b27cbe2c79b6a80bdacc0e454be50f74f9f314b2265842"
+        },
+        "after": {
+          "line_start": 564,
+          "line_end": 571,
+          "text": "The numbers\n\nmn = (-y\" lim > A(m)(logm)”\" 4 (logx)\"*? (4.1)\n\nnl f-r00 m n+l\nméar\n\nwhich appear in Theorem 2 are analogous to the Stieltjes constants\n",
+          "sha256": "2f97f08008afcdf279d5321edfee0041064ed05d0533775e3873c53424a3db16"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_70c4747d3c0ea9b7538a40c4bdab3af5e25e7af907041408316253a5aad78e1e",
+        "dossier_sha256": "f3347e7e2fb261261edfd2c4da19b80297cbda517432a4468c0271f7a86b4dc8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Concluding remarks",
+            "line_end": 618,
+            "line_start": 532,
+            "mathematical_role": "Identifies Li positivity with a simple test-function subfamily of Weil positivity and relates the arithmetic constants to Stieltjes-type constants and power series."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 563,
+          "line_start": 532,
+          "title": "Li positivity is an explicit test-function slice of Weil positivity",
+          "unit_id": "bl_11",
+          "unit_type": "criterion-bridge",
+          "why_material": "Multiplicative convolution turns into product under Mellin transform; self-convolution therefore gives a transform positive on the critical line. A source-stated identity shows the Li test functions fit this pattern, so their positivity has Weil's meaning while requiring only a simple explicit family."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The distinction is coverage: Weil uses a broad positivity class, whereas Li provides a concrete countable family whose sufficiency was established by the multiset theorem.",
+          "representation_dependency": "Exact conjugation convention, convolution, transform identity, and test-function equality require scan verification.",
+          "unit_id": "bl_11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 530,
+            "line_start": 480,
+            "title": "Prime-number estimates justify removal of the test-function cutoff",
+            "unit_id": "bl_10",
+            "unit_type": "limit-justification",
+            "why_material": "The remaining zero-side limit is controlled using the prime number theorem with error term and a classical zero-free region, which make the discarded contributions decay faster than any negative power of the logarithmic cutoff."
+          },
+          {
+            "line_end": 617,
+            "line_start": 564,
+            "title": "Stieltjes-type constants give a second route to the Li coefficients",
+            "unit_id": "bl_12",
+            "unit_type": "alternative-arithmetic-representation",
+            "why_material": "The arithmetic constants from the explicit-formula expression are compared with Stieltjes constants, related through generating-series expansions, and said to yield coefficient formulas directly after the same conformal change of variable, without invoking the explicit formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The multiset theorem supplies sufficiency for a concrete sequence of Li test functions, while convolution and Mellin positivity explain why their sign condition has the same critical-line meaning as Weil's broader criterion.",
+            "limit": "This does not say the Li family exhausts Weil's admissible test functions; exact identities are scan-dependent.",
+            "parent_local_unit_ids": [
+              "bl_04",
+              "bl_05",
+              "bl_11"
+            ],
+            "title": "Li gives a simple sufficient subfamily inside Weil's positivity framework"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 531,
+              "line_start": 531,
+              "reason": "Blank section transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "directed": {
+          "boundary_or_failure": "Sharing the same positivity meaning does not mean the test families have equal coverage by inspection: Weil uses a broad class, whereas Li's restricted family is sufficient only because of the separate coefficient theorem.",
+          "conceptual_reading": "The convolution square is a positivity certificate transported across the Mellin transform. Li's criterion selects a simple explicit countable family of these certificates, while the earlier multiset theorem supplies the nontrivial sufficiency of that restricted family.",
+          "representation_or_bridge": "Multiplicative self-convolution and its Mellin product are the bridge from Li test functions to Weil's positive test-function framework.",
+          "source_grounded_mathematics": "The source defines multiplicative convolution and notes that Mellin transformation converts it to multiplication. Convolving a function with its conjugate-reflected partner gives a transform real and positive on the critical line. Weil's criterion tests explicit-formula positivity on this broad class. An inverse Mellin identity expresses the symmetrized Li test function as such a convolution, relating Li coefficient positivity to Weil positivity.",
+          "uncertainty": "The exact conjugation convention, convolution measure, transform identity, and test-function equality require scan verification due to OCR damage.",
+          "unit_id": "bl_11"
+        },
+        "spontaneous": {
+          "spontaneous_reading": "Mellin convolution explains why Li positivity has Weil's meaning: self-convolution produces a transform nonnegative on the critical line, and a source-stated identity places the explicit Li test family inside that positive-convolution pattern.",
+          "unit_id": "bl_11"
+        },
+        "unit_id": "bl_11"
+      },
+      "critic_findings": {
+        "context_or_ocr_risk": [
+          "The conjugation/reflection convention, convolution measure, transform product, and inverse-Mellin identity are corrupt and require the scan."
+        ],
+        "critic_decision": "revise",
+        "inference": [
+          "Calling convolution a positivity certificate transported by Mellin transform and contrasting Weil's broad class with Li's explicit family are reasonable interpretations of the concluding remarks."
+        ],
+        "missed_mechanism": [
+          "The local mechanism is the symmetrized test-function identity plus invariance of the explicit formula under the involution; that should remain distinct from the separate proof that Li's countable family characterizes RH."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: 'same positivity meaning' is source language made useful by the concrete convolution identity, but coverage claims should not be expanded beyond the span."
+        ],
+        "revision_instructions": [
+          "Retain the convolution-square positivity bridge and broad-versus-explicit-family contrast, but remove or explicitly label the earlier-multiset-theorem attribution as imported context."
+        ],
+        "supported": [
+          "The span defines multiplicative convolution, states that Mellin transform converts convolution to product, obtains a transform real and positive on the critical line from a conjugate-reflected convolution, recalls Weil's necessity and sufficiency, and gives an identity placing the symmetrized Li test function in this pattern."
+        ],
+        "unit_id": "bl_11",
+        "unsupported_or_imported": [
+          "The claim that 'the earlier multiset theorem supplies the nontrivial sufficiency of that restricted family' imports an attribution from earlier units; this span says Li's family is sufficient for verification but does not give that proof mechanism here."
+        ]
+      }
+    }
+  ]
+}

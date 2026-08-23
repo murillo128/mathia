@@ -1,0 +1,503 @@
+{
+  "stage": "whole-source-depth",
+  "task": "whole-source quota-free semantic depth planning (late lawful recovery)",
+  "context_policy": "one source deep-read once; no unrelated source batching",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_144.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "v1-carry-forward",
+      "artifact_store": "riemann-corpus-v0",
+      "authors": [
+        "Andrew Odlyzko"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [],
+      "line_count": 1046,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "J OURNAL DE T HÉORIE DES N OMBRES DE B ORDEAUX"
+        },
+        {
+          "line": 8,
+          "text": "A. M. O DLYZKO"
+        },
+        {
+          "line": 58,
+          "text": "1. Introduction."
+        },
+        {
+          "line": 171,
+          "text": "2. Lovver bounds for discriminants."
+        },
+        {
+          "line": 263,
+          "text": "(B12~."
+        },
+        {
+          "line": 380,
+          "text": "3. Elkies’ GRH bound for discriminants"
+        },
+        {
+          "line": 440,
+          "text": "4. Prime ideals of small norms"
+        },
+        {
+          "line": 496,
+          "text": "5. Minkowski constants and regulators"
+        },
+        {
+          "line": 594,
+          "text": "6. Low zeros of Dedekind zeta functions"
+        },
+        {
+          "line": 741,
+          "text": "REFERENCES"
+        },
+        {
+          "line": 752,
+          "text": "1. W. NARKIEWICZ, Elementary and Analytic Theory of Algebraic Numbers, PWN-"
+        },
+        {
+          "line": 755,
+          "text": "2. L. C. WASHINGTON, Introduction to Cyclotomic Fields, Springer. 1982. MR 85g :"
+        },
+        {
+          "line": 757,
+          "text": "3. J. MARTINET, Méthodes géométriques dans la recherche des petits discriminants."
+        },
+        {
+          "line": 764,
+          "text": "1. H.M. STARK, Some effective cases of the Brauer-Siegel theorem, Invent. math. 23"
+        },
+        {
+          "line": 765,
+          "text": "(1974), 135-152. MR 49 # 7218."
+        },
+        {
+          "line": 766,
+          "text": "2. H.M. STARK, The analytic theory of algebraic numbers, Bull. Am. Math. Soc. 81"
+        },
+        {
+          "line": 767,
+          "text": "(1975), 961-972. MR 56 # 2961."
+        },
+        {
+          "line": 768,
+          "text": "3. A.M. ODLYZKO, Some analytic estimates of class numbers and discriminants,"
+        },
+        {
+          "line": 770,
+          "text": "4. A.M. ODLYZKO, Lower bounds. for discriminants of number fields, Acta Arith."
+        },
+        {
+          "line": 771,
+          "text": "29 (1976), 275-297. MR 53 # 5531."
+        },
+        {
+          "line": 773,
+          "text": "5. A.M. ODLYZKO, Lower bounds for discriminants of number fields. II. MR 56 #"
+        },
+        {
+          "line": 775,
+          "text": "6. A.M. ODLYZKO, On conductors and discriminants. pp. 377-407, Algebraic Num-"
+        },
+        {
+          "line": 777,
+          "text": "MR 56 #11961."
+        },
+        {
+          "line": 778,
+          "text": "7. J.-P. SERRE, Minorations de discriminants. note of October 1975, published on"
+        },
+        {
+          "line": 780,
+          "text": "8. A.M. ODLYZKO, Discriminant bounds. tables dated Nov. 29, 1976 (unpublished)."
+        },
+        {
+          "line": 782,
+          "text": "9. G. POITOU, Minorations de discriminants (d’après A.M. Odlyzko), Séminaire"
+        },
+        {
+          "line": 785,
+          "text": "10. G. POITOU, Sur les petits discriminants, Séminaire Delange-Pisot-Poitou. 18e"
+        },
+        {
+          "line": 794,
+          "text": "11. F. DIAZ Y DIAZ, Tables minorant la racine n-ième du discriminant d’un corps"
+        },
+        {
+          "line": 798,
+          "text": "12. J. MARTINET, Petits discriminants des corps de nombres. pp. 151-193, Jour-"
+        },
+        {
+          "line": 806,
+          "text": "1. H.W. LENSTRA, Euclidean number fields of large degree, Invent. math. 38 (1977),"
+        },
+        {
+          "line": 807,
+          "text": "237-254. MR 55 # 2836."
+        },
+        {
+          "line": 808,
+          "text": "2. J. MARTINET, Tours de corps de classes et estimations de discriminants, Invent."
+        },
+        {
+          "line": 810,
+          "text": "3. J. MARTINET, Petits discriminants, Ann. Inst. Fourier (Grenoble) 29, no 1"
+        },
+        {
+          "line": 812,
+          "text": "4. R. SCHOOF, Infinite class field towers of quadratic fields, J. reine angew. Math."
+        },
+        {
+          "line": 819,
+          "text": "1. J.M. MASLEY, Odlyzko bounds and class number problems. pp. 465-474, Algebraic"
+        },
+        {
+          "line": 821,
+          "text": "1977. MR 56 # 5493."
+        },
+        {
+          "line": 822,
+          "text": "2. J.M. MASLEY, Class numbers of real cyclic number fields with small conductor,"
+        },
+        {
+          "line": 824,
+          "text": "3. J.M. MASLEY, Where are number fields with small class numbers ?. pp. 221-242,"
+        },
+        {
+          "line": 827,
+          "text": "4. J. HOFFSTEIN, Some analytic bounds for zeta functions and class numbers, In-"
+        },
+        {
+          "line": 829,
+          "text": "5. J.M. MASLEY, Class groups of abelian number fields. pp. 475-497, Proc. Queen’s"
+        },
+        {
+          "line": 832,
+          "text": "6. J. MARTINET, Sur la constante de Lenstra des corps de nombres, Sém. Theorie"
+        },
+        {
+          "line": 835,
+          "text": "7. F.J. van der LINDEN, Class number computations of real abelian number fields,"
+        },
+        {
+          "line": 843,
+          "text": "8. A. LEUTBECHER and J. MARTINET, Lenstra’s constant and Euclidean number"
+        },
+        {
+          "line": 845,
+          "text": "9. A. LEUTBECHER, Euclidean fields having a large Lenstra constant, Ann. Inst."
+        },
+        {
+          "line": 847,
+          "text": "10. J. HOFFSTEIN and N. JOCHNOWITZ, On Artin’s conjecture and the class num-"
+        },
+        {
+          "line": 849,
+          "text": "11. J. HOFFSTEIN and N. JOCHNOWITZ, On Artin’s conjecture and the class num-"
+        },
+        {
+          "line": 856,
+          "text": "1. M. POHST, Regulatorabschätzungen für total reelle algebraische Zahlkörper, J."
+        },
+        {
+          "line": 858,
+          "text": "2. G. GRAS and M.-N. GRAS, Calcul du nombre de classes et des unités des exten-"
+        },
+        {
+          "line": 861,
+          "text": "3. M. POHST, Eine Regulatorabschätzung, Abh. Math. Sem. Univ. Hamburg 47"
+        },
+        {
+          "line": 862,
+          "text": "(1978), 95-106. MR 58 # 16596."
+        },
+        {
+          "line": 863,
+          "text": "4. R. ZIMMERT, Ideale kleiner Norm in Idealklassen und eine"
+        },
+        {
+          "line": 865,
+          "text": "5. G. POITOU, Le théorème des classes jumelles de R. Zimmert, Sém. de Théorie"
+        },
+        {
+          "line": 868,
+          "text": "6. J. OESTERLÉ, Le théorème des classes jumelles de Zimmert et les formules ex-"
+        },
+        {
+          "line": 871,
+          "text": "7. J. SILVERMAN, An inequality connecting the regulator and the discriminant of a"
+        },
+        {
+          "line": 873,
+          "text": "8. T.W. CUSICK, Lower bounds for regulators. pp. 63-73 in Number Theory, Noord-"
+        },
+        {
+          "line": 876,
+          "text": "9. A.-M. BERGÉ and J. MARTINET, Sur les minorations géométriques des régu-"
+        },
+        {
+          "line": 879,
+          "text": "10. E. FRIEDMAN, Analytic formulas for regulators of number fields, Invent. math."
+        },
+        {
+          "line": 881,
+          "text": "11. M. POHST and H. ZASSENHAUS, Algorithmic Algebraic Number Theory, Cam-"
+        },
+        {
+          "line": 883,
+          "text": "12. R. SCHOOF and L.C. WASHINGTON, Quintic polynomials and real cyclotomic"
+        },
+        {
+          "line": 885,
+          "text": "13. A.-M. BERGÉ and J. MARTINET, Notions relatives de régulateurs et de hauteurs,"
+        },
+        {
+          "line": 893,
+          "text": "14. A.-M. BERGÉ and J. MARTINET, Minorations de hauteurs et petits régulateurs"
+        },
+        {
+          "line": 896,
+          "text": "15. A. COSTA and E. FRIEDMAN, Ratios of regulators in totally real extensions of"
+        },
+        {
+          "line": 898,
+          "text": "16. E. FRIEDMAN and N.-P. SKORUPPA, Explicit formulas for regulators and ratios"
+        },
+        {
+          "line": 900,
+          "text": "17. T. W. CUSICK, The : egulator spectrum of totally real cubic fields. to appear."
+        },
+        {
+          "line": 905,
+          "text": "1. P. CARTIER and Y. ROY, On the enumeration of quintic fields with small dis-"
+        },
+        {
+          "line": 907,
+          "text": "2. M. POHST, Berechnung kleiner Diskriminanten total reeller algebraischer"
+        },
+        {
+          "line": 909,
+          "text": "3. M. POHST, The minimum discriminant of seventh degree totally real algebraic"
+        },
+        {
+          "line": 912,
+          "text": "4. J. LIANG and H. ZASSENHAUS, The minimum discriminant of sixth degree to-"
+        },
+        {
+          "line": 915,
+          "text": "5. M. POHST, On the computation of number fields of small discriminants including"
+        },
+        {
+          "line": 918,
+          "text": "6. M. POHST, P. WEILER, and H. ZASSENHAUS, On effective computation of"
+        },
+        {
+          "line": 920,
+          "text": "7. D.G. RISH, On algebraic number fields of degree five, Vestnik Moskov. Univ. Ser. I"
+        },
+        {
+          "line": 925,
+          "text": "9. F. DIAZ Y DIAZ, Valeurs minima du discriminant pour certains types de corps"
+        },
+        {
+          "line": 927,
+          "text": "10. K. TAKEUCHI, Totally real algebraic number fields of degree 5 and 6 with small"
+        },
+        {
+          "line": 929,
+          "text": "11. H.J. GODWIN, On quartic fields of signature one with small discriminant. II,"
+        },
+        {
+          "line": 932,
+          "text": "12. F. DIAZ Y DIAZ, Petits discriminants des corps de nombres totalement imagi-"
+        },
+        {
+          "line": 934,
+          "text": "13. S.-H. KWON and J. MARTINET, Sur les corps résolubles de degré premier,"
+        },
+        {
+          "line": 942,
+          "text": "14. F. DIAZ Y DIAZ, Discriminants minima et petits discriminants des corps de"
+        },
+        {
+          "line": 945,
+          "text": "15. J. BUCHMANN and D. FORD, On the computation of totally real quartic fields"
+        },
+        {
+          "line": 947,
+          "text": "16. S.-H. KWON, Sur les discriminants minimaux des corps quaternioniens. preprint"
+        },
+        {
+          "line": 949,
+          "text": "17. P. LLORENTE and J. QUER, On totally real cubic fields with discriminant D 107,"
+        },
+        {
+          "line": 951,
+          "text": "18. J. BUCHMANN, M. POHST and J. v. SCHMETTOW, On the computation of"
+        },
+        {
+          "line": 954,
+          "text": "19. A.-M. BERGÉ, J. MARTINET and M. OLIVIER, The computation of sextic fields"
+        },
+        {
+          "line": 956,
+          "text": "20. F. DIAZ Y DIAZ, Table de corps quintiques totalement réels. Université de"
+        },
+        {
+          "line": 958,
+          "text": "21. M. POHST, J. MARTINET and F. DIAZ Y DIAZ, The minimum discriminant of"
+        },
+        {
+          "line": 963,
+          "text": "1. J. HOFFSTEIN, Some results related to minimal discriminants. pp. 185-194, Num-"
+        },
+        {
+          "line": 966,
+          "text": "2. A. NEUGEBAUER, On zeros of zeta functions in low rectangles in the critical"
+        },
+        {
+          "line": 968,
+          "text": "3. A. NEUGEBAUER, On the zeros of the Dedekind zeta-function near the real axis,"
+        },
+        {
+          "line": 970,
+          "text": "4. A. NEUGEBAUER, Every Dedekind zeta-function has a zero in the rectangle"
+        },
+        {
+          "line": 972,
+          "text": "5. A.M. ODLYZKO, Low zeros of Dedekind zeta function. manuscript in preparation."
+        },
+        {
+          "line": 977,
+          "text": "1. J.-F. MESTRE, Formules explicites et minorations de conducteurs de variétés"
+        },
+        {
+          "line": 979,
+          "text": "2. E. FRIEDMAN, The zero near 1 of an ideal class zeta function, J. London Math."
+        },
+        {
+          "line": 981,
+          "text": "3. E. FRIEDMAN, Hecke’s integral formula, Sém. Théorie des Nombres de Bordeaux"
+        },
+        {
+          "line": 991,
+          "text": "1. E. LANDAU, Zur Theorie der Heckeschen Zetafunktionen, welche komplexen"
+        },
+        {
+          "line": 995,
+          "text": "2. E. LANDAU, Einführung in die elementare und analytische Theorie der algebrais-"
+        },
+        {
+          "line": 998,
+          "text": "3. R. REMAK, Über die Abschätzung des absoluten Betrages des Regulators eines"
+        },
+        {
+          "line": 1000,
+          "text": "4. R.P. BOAS and M. KAC, Inequalities for Fourier transforms of positive functions,"
+        },
+        {
+          "line": 1004,
+          "text": "6. A.P. GUINAND, Fourier reciprocities and the Riemann zeta- function, Proc. Lon-"
+        },
+        {
+          "line": 1006,
+          "text": "7. A. WEIL, Sur les \"formules explicites\" de la théorie des nombres premiers, Comm."
+        },
+        {
+          "line": 1008,
+          "text": "8. R. REMAK, Über Grössenbeziehungen zwischen Diskriminante und Regulator eines"
+        },
+        {
+          "line": 1010,
+          "text": "9. R. REMAK, Über algebraische Zahlkörper mit schwachem Einheitsdefekt, Compos."
+        },
+        {
+          "line": 1012,
+          "text": "10. A. WEIL, Sur les formules explicites de la théorie des nombres, Izv. Akad. Nauk"
+        },
+        {
+          "line": 1015,
+          "text": "11. H.-J. BESENFELDER, Die Weilsche \"Explizite Formel\" und temperierte Distri-"
+        },
+        {
+          "line": 1017,
+          "text": "12. J.-P. SERRE. note on p. 710 in vol. 3 of Jean-Pierre SERRE, Collected Papers,"
+        },
+        {
+          "line": 1019,
+          "text": "13. H. COHEN and H. W. LENSTRA Jr., Heuristics on class groups of number fields."
+        },
+        {
+          "line": 1022,
+          "text": "14. J.-P. SERRE, Sur le nombre des points rationnels d’une courbe algébrique sur"
+        },
+        {
+          "line": 1026,
+          "text": "15. A.M. ODLYZKO and H.J.J. te RIELE, Disproof of the Mertens conjecture, J. reine"
+        },
+        {
+          "line": 1028,
+          "text": "16. J.-M. FONTAINE, Il n’y a pas de variété abélienne sur Z, Invent. math. 81 (1985),"
+        },
+        {
+          "line": 1030,
+          "text": "17. H. COHEN and J. MARTINET, Etude heuristique des groupes de classes des corps"
+        },
+        {
+          "line": 1038,
+          "text": "18. A. BOREL and G. PRASAD, Finiteness theorems for discrete subgroups of"
+        },
+        {
+          "line": 1046,
+          "text": "U.S.A."
+        }
+      ],
+      "normalized_bytes": 46912,
+      "normalized_page_count": 24,
+      "normalized_relpath": "normalized/openalex_w2010828369.txt",
+      "normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "prior_v1_units": [
+        {
+          "line_end": 438,
+          "line_start": 380,
+          "unit_id": "full_openalex_w2010828369_u01",
+          "unit_type": "GRH discriminant bound proof sketch"
+        },
+        {
+          "line_end": 245,
+          "line_start": 171,
+          "unit_id": "full_openalex_w2010828369_u02",
+          "unit_type": "explicit-formula kernel optimization"
+        },
+        {
+          "line_end": 697,
+          "line_start": 648,
+          "unit_id": "full_openalex_w2010828369_u03",
+          "unit_type": "zeros versus prime-ideal contributions"
+        }
+      ],
+      "source_id": "openalex_w2010828369",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+      "v1_inspection_decision": "usable",
+      "v1_or_acquisition_reason": "normalized source has coherent mathematical text suitable for semantic segmentation",
+      "viewpoint_tags": [
+        "computation",
+        "explicit-formula",
+        "numerical-evidence",
+        "primes-zeros"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 1990,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/normalized/openalex_w2010828369.txt"
+    }
+  ],
+  "model_visible_packet_sha256": "62612cb6ba9b34e0dbc754f285e3374db95abea827c37a62353f00858c76ee15"
+}

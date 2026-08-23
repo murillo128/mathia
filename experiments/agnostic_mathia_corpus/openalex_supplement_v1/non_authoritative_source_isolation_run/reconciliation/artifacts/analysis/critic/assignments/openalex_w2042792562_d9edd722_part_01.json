@@ -1,0 +1,560 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_hidden_thickening_detection": {
+      "analysis_id": "agnostic_oa_generation_6db2398ab76ab8ede4087d313e97f9a6b269d5e25d53160d4ca5d44d294aa82f",
+      "boundary_or_failure": "The detection is demonstrated for one explicit moduli problem. A tangent-space jump signals non-smooth or nonreduced structure but does not by itself determine the full scheme-theoretic thickening. The localization sign uses isolated torus-fixed points and the stated obstruction-theory setup; comparing with a predicted invariant is a consistency check, not an independent proof of the scheme structure.",
+      "interpretation": "Inference: identifying the reduced parameter space can miss infinitesimal directions supported on a special locus. Tangent dimensions and equivariant localization are complementary probes: the first finds the hidden direction, while the second shows that it changes an invariant even though the underlying closed points look unchanged.",
+      "nonparaphrase_operation": "Construct the apparent reduced family and identify its special degeneracy locus. Compute Zariski tangent spaces both generically and along that locus; interpret a persistent one-dimensional jump with no higher deformations as a first-order thickening candidate. Locate torus-fixed points, evaluate their virtual-localization signs using the actual tangent parity, and compare the resulting count with the count obtained from the reduced space to test whether the nilpotent direction is enumeratively visible.",
+      "source_support": "The source describes a family whose closed points glue to a projective three-space with a quadric special locus, then states that the true moduli space has a first-order thickening along that quadric. It reports tangent dimension four there versus three elsewhere and no further deformations. All four torus-fixed points lie on the thickened locus, so their localization signs produce the opposite count from the naive reduced-space calculation and match the cited prediction.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The deformation computation is summarized rather than shown in the span, and the numerical example is not promoted to a general thickening criterion.",
+      "unit_id": "agnostic_oa_hidden_thickening_detection"
+    },
+    "agnostic_oa_isolated_support_locality": {
+      "analysis_id": "agnostic_oa_generation_e9163093d23be20e8487cab123276715d5583f06ee3fa2fca6099e07158b4db8",
+      "boundary_or_failure": "The locality statement assumes a nonsingular embedded curve that is infinitesimally isolated after any imposed incidence conditions. Pure rank-one sheaves on that smooth curve are line bundles, allowing the symmetric-product description. The Calabi-Yau obstruction is self-dual, while the Fano calculation uses a separate exact sequence and isolation vanishing; arbitrary moving or singular curves are not covered.",
+      "interpretation": "Inference: when the primary support cannot deform, the moduli problem factorizes onto finite divisors intrinsic to that support. Ambient geometry then enters only through the restricted normal and canonical data controlling the obstruction bundle, producing a genuinely local contribution.",
+      "nonparaphrase_operation": "Fix an isolated smooth support curve and classify a stable pair by the effective divisor measuring the section's finite cokernel, thereby identify the degree-d locus with the symmetric product of the curve. Compute its obstruction bundle from trace-free self-Ext: use cotangent self-duality in the Calabi-Yau case or the exact sequence separating normal deformations from divisor-supported terms in the Fano case. Kill the normal term by infinitesimal isolation and integrate the top Chern class of the resulting tautological bundle over the symmetric product.",
+      "source_support": "The source proves that stable pairs supported on the isolated smooth curve are line bundles with canonical divisor sections and identifies their moduli with symmetric powers of the curve, open and closed under isolation. It gives the self-dual Calabi-Yau obstruction calculation and a canonical exact sequence for the general obstruction space, then uses isolation to reduce to a tautological bundle and derives the local generating function depending on genus and the ambient first-Chern degree along the curve.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Several displayed binomial and Chern-root calculations are OCR-sensitive; the symmetric-product reduction, obstruction exact sequence, and isolation boundary are explicit.",
+      "unit_id": "agnostic_oa_isolated_support_locality"
+    },
+    "agnostic_oa_lossless_derived_encoding": {
+      "analysis_id": "agnostic_oa_generation_bfd4b17c89e06b145d2caff234c7ec7e729971e16ee4fa0e8018209fea1ce3ee",
+      "boundary_or_failure": "Losslessness is proved for complexes arising from stable pairs with the source's purity and codimension hypotheses. It uses vanishing of negative Ext and one-dimensionality of the global Hom from the complex to the structure sheaf. An arbitrary quasi-isomorphic two-term complex need not carry a recoverable distinguished section without these properties.",
+      "interpretation": "Inference: passing to a derived object need not forget presentation data when the object has a canonical map characterized uniquely by its Hom space. The cone of that map reconstructs the target sheaf, and the induced degree-zero map reconstructs the section.",
+      "nonparaphrase_operation": "Encode the pair as the complex with the structure sheaf in degree zero. Prove negative self-Ext vanishing and show that maps from the complex to the structure sheaf form a one-dimensional space generated by the canonical projection. Choose its nonzero generator, take its mapping cone to recover the sheaf up to quasi-isomorphism, and extract the original section from the induced degree-zero map. Use this reconstruction to test whether quasi-isomorphic complexes represent isomorphic pairs.",
+      "source_support": "The source supplies two exact triangles for the pair complex, uses codimension and purity to prove vanishing of negative Ext and scalar endomorphisms, and obtains a unique nonzero global map from the complex to the structure sheaf up to scalar. It reconstructs the sheaf as the mapping cone and the section from cohomology, concluding that two stable pairs are isomorphic exactly when their complexes are quasi-isomorphic.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Several Ext computations use the ambient codimension-two support of the source setting; the record does not generalize the faithful encoding to arbitrary complexes.",
+      "unit_id": "agnostic_oa_lossless_derived_encoding"
+    },
+    "agnostic_oa_obstruction_theory_transfer": {
+      "analysis_id": "agnostic_oa_generation_82733b163f3fd8691fb15230f5c3f9763d2e388f951bffbeb4f02b42aa287d8e",
+      "boundary_or_failure": "The transfer is for stable-pair complexes on a smooth projective threefold and deformations with fixed trivial determinant. It depends on purity, codimension bounds, nilpotent-thickening flatness, rank one, and trace-free Ext. The two-term perfect obstruction theory is not obtained merely from object-level equivalence; all-order deformation equivalence and degree concentration are essential.",
+      "interpretation": "Inference: an awkward moduli problem can inherit a tractable obstruction theory from a richer category if its encoding is not only lossless on objects but also stable under every infinitesimal thickening. Trace removal then separates determinant motion from the intrinsic deformations.",
+      "nonparaphrase_operation": "Map a pair deformation to the deformation of its two-term complex and fixed determinant. For a deformation over a nilpotent thickening, trim a locally free representative by base change and Nakayama arguments, prove the surviving sheaf is pure with finite higher cohomology support, recover a rank-one ideal from its double dual, and splice the extension class to reconstruct a flat pair. Having established all-order equivalence, split identity from trace in derived endomorphisms, use duality to concentrate trace-free Ext in degrees one and two, and apply the universal Atiyah class to obtain the obstruction map.",
+      "source_support": "The source contrasts pair tangent-obstruction groups with trace-free self-Ext groups, proves every fixed-determinant deformation of the complex over a nilpotent thickening is again a flat pair complex, and concludes the two deformation functors agree to all orders. It constructs a universal complex, proves its trace-free derived endomorphisms are represented by two locally free terms, and uses the Atiyah class and relative duality to state a perfect obstruction theory, virtual class, and deformation invariance.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Several foundational obstruction-theory compatibilities are cited to prior work, and OCR obscures some degree shifts; the hypotheses, reconstruction sequence, and degree-one/two concentration are explicit.",
+      "unit_id": "agnostic_oa_obstruction_theory_transfer"
+    },
+    "agnostic_oa_partition_basis_reconstruction": {
+      "analysis_id": "agnostic_oa_generation_ad2f00a8756155243713c6ac9f92764b969defd55a899fcf904f056eedfbe38b",
+      "boundary_or_failure": "The unique Laurent-series expansion in powers of the stated symmetric function is unconditional, but finite effective reconstruction of the enumerative series from a small coefficient window uses the conjectured vanishing of negative-genus terms. The divisibility recursion assumes curve classes are tracked in a torsion-free quotient or that the more careful torsion sum described by the source is retained.",
+      "interpretation": "Inference: choose basis elements whose leading pole or zero orders are distinct, and coefficient recovery becomes triangular. When multiple-cover terms are ordered by class divisibility, the same triangularity extends to a recursive reconstruction across labels.",
+      "nonparaphrase_operation": "Expand a Laurent series in powers of the inversion-symmetric generator. Determine positive powers from the finite polar part, then determine nonpositive powers successively from their strictly increasing zero orders. For class-indexed series, subtract contributions from proper divisors of the class using already reconstructed coefficients and apply the one-variable expansion to the remainder. Only after imposing the stated vanishing conjecture may one truncate to the finite basis and reconstruct from the bounded coefficient range.",
+      "source_support": "The source proves that every Laurent series has a unique expansion in powers of its symmetric generator by comparing pole and zero orders. It extends uniqueness to class-indexed coefficients by induction on divisibility and proves vanishing for sufficiently large genus. It then states a separate conjecture excluding negative genus and, conditional on it, derives membership in a finite-dimensional span and effective reconstruction from finitely many coefficients with a locality statement in effective summand classes.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The source explicitly marks the finite effectivity lemmas with a conjectural asterisk; only the basis uniqueness and divisibility induction are treated as proved here.",
+      "unit_id": "agnostic_oa_partition_basis_reconstruction"
+    },
+    "agnostic_oa_purity_finite_defect_classification": {
+      "analysis_id": "agnostic_oa_generation_a66fdb92c22d3dbd041a28dee4617cfd234cec7c6743d2f791024a636cf2d1d6",
+      "boundary_or_failure": "The classification fixes a Cohen-Macaulay support curve and a finite set containing the reduced zero locus. It uses purity repeatedly to kill maps from zero-dimensional modules and to turn generic isomorphisms into injections. The exponent r must be sufficiently large, and the direct limit is generally quasi-coherent rather than a single finite ambient sheaf.",
+      "interpretation": "Inference: a rank-one object with finite defect can be classified by embedding it into a universal fractional enlargement of its pure support. Dualizing reverses the original extension and converts the defect into a finite coherent submodule of a fixed quotient.",
+      "nonparaphrase_operation": "From a pure sheaf generated away from finitely many points, identify the image of the section with the structure sheaf of its support and write the kernel-cokernel exact sequence. Dualize the finite extension into the support's structure sheaf to obtain an ideal, dualize again to embed the original sheaf into the ideal's dual, then enlarge that dual into Hom of a high power of the finite-point ideal. Classify the pair by the resulting finite submodule modulo the canonical structure-sheaf section, and recover it by inverse image.",
+      "source_support": "The source proves that the section image has the same support as the pure sheaf and hence is the structure sheaf of a Cohen-Macaulay curve. It derives the exact sequence with zero-dimensional cokernel and proves that stable pairs with fixed support and bounded zero locus are equivalent to coherent subsheaves of Hom of a high ideal power modulo the curve structure sheaf, or of the corresponding direct limit.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The classification is local-algebraic and support-dependent; no claim is made that the direct-limit description is finite-dimensional before imposing equivariance or bounded numerical data.",
+      "unit_id": "agnostic_oa_purity_finite_defect_classification"
+    },
+    "agnostic_oa_stable_pair_compactification": {
+      "analysis_id": "agnostic_oa_generation_bbd0b6e867185e5ce941bdb4fc5dce0cede25167854ca3be4beee995853b2303",
+      "boundary_or_failure": "The compactification fixes one-dimensional support and admits only zero-dimensional failure of the section to generate the sheaf. Purity excludes embedded zero-dimensional subsheaves but allows nonreduced Cohen-Macaulay curves. The projective moduli construction is stated generally, while the two-term perfect obstruction theory and virtual class require the smooth projective threefold setting; the proposed equivalences with other counting theories remain conjectural.",
+      "interpretation": "Inference: a useful compactification can be designed by allowing defects only in a controlled codimension and anchoring them to the primary geometric object. Here a section stabilizes a pure sheaf and turns otherwise roaming point data into a finite decoration constrained to the supporting curve.",
+      "nonparaphrase_operation": "Replace an embedded curve by a pair consisting of a pure one-dimensional sheaf and a section whose cokernel is zero-dimensional. Recover the underlying curve from the kernel or scheme-theoretic support, interpret the cokernel as a finite on-curve defect, and package the pair as a two-term complex. Use projective moduli for compactness, then invoke the fixed-determinant derived obstruction theory only in the threefold regime where it truncates correctly.",
+      "source_support": "The source compares several curve compactifications and defines stable pairs by purity of the sheaf and zero-dimensional cokernel of the section. It explains that purity makes the support Cohen-Macaulay, that the complex consists of the structure sheaf mapping to the pair sheaf, and that finite defects lie on the curve. It states projectivity via GIT and constructs a virtual class for threefolds from a fixed-determinant obstruction theory of the complex.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The introduction labels agreement with Gromov-Witten and reduced Donaldson-Thomas theories as conjectural, and it warns that embedded curves need not be dense in these compactifications.",
+      "unit_id": "agnostic_oa_stable_pair_compactification"
+    },
+    "agnostic_oa_toric_partition_module_translation": {
+      "analysis_id": "agnostic_oa_generation_e31810eb667a083c85d01c334b01031423725f9961070b6a1fd3c0eb650debbe",
+      "boundary_or_failure": "The translation is local to torus-fixed objects on affine three-space. Monomial ideals yield isolated fixed subschemes for the DT side, but stable-pair fixed loci can be positive-dimensional products of projective lines and must be weighted by Euler characteristic. Equality of the normalized DT and stable-pair vertices is explicitly a conjecture in the source.",
+      "interpretation": "Inference: equivariance can convert geometric objects into finite combinatorial boundary data plus a finite-defect module. Different compactifications then appear as different ways of filling the same asymptotic partitions: adding boxes to an ideal versus choosing finite-length submodules of a canonical quotient.",
+      "nonparaphrase_operation": "Encode a torus-fixed monomial ideal by a three-dimensional partition and read its three outgoing two-dimensional partitions by localization along coordinate axes. For fixed outgoing data, construct the unique minimal Cohen-Macaulay curve. On the ideal-sheaf side, enumerate finite box additions above that minimum; on the stable-pair side, form the sum of the three localized leg modules modulo the diagonal curve module and enumerate its finite-length torus-fixed submodules. Weight isolated ideals individually, but weight positive-dimensional submodule components by their topological Euler characteristics.",
+      "source_support": "The source identifies torus-fixed subschemes with monomial ideals and three-dimensional partitions, defines outgoing partitions and the unique minimal Cohen-Macaulay curve, and expresses the DT vertex through finite colength above it after normalization. Using the stable-pair classification, it identifies fixed pairs with finite-length invariant submodules of a localized module quotient, describes their components as products of projective lines, and defines the corresponding Euler-weighted vertex before conjecturing equality.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The box-indexing strategy is cited rather than included, signs and renormalized volumes are extraction-sensitive, and the final vertex correspondence is retained strictly as conjectural.",
+      "unit_id": "agnostic_oa_toric_partition_module_translation"
+    },
+    "agnostic_oa_unimodular_integrality_transfer": {
+      "analysis_id": "agnostic_oa_generation_b423a581463fa0111ea5e1abd8188e3569cefbc6a385a1b695070755db0b9b62",
+      "boundary_or_failure": "The integrality equivalence concerns the source's exponential multiple-cover transform and class grading. It uses a degree induction in which all non-leading factors involve strictly lower effective degree, and the basis change has integer entries with unit diagonal. Rational transforms without this unimodularity need not preserve integrality in both directions.",
+      "interpretation": "Inference: integrality is invariant under a recursive coordinate change when its new-label contribution is related by a unitriangular integer matrix and every nonlinear correction depends only on previously settled labels. Unimodularity, not just invertibility over the rationals, is the decisive property.",
+      "nonparaphrase_operation": "Order nonzero labels by a positive degree. At minimal degree, isolate the primitive single-cover term and expand each basis element into monomials; verify the coefficient matrix is triangular with diagonal one, so integrality is equivalent in both coordinate systems. At the induction step, factor the exponential contributions from lower-degree labels into products with integer exponents, subtract their already integral coefficient, and apply the same unitriangular test to the remaining current-label term.",
+      "source_support": "The source expands powers of the symmetric generator with integer coefficients and leading coefficient one, proves the minimal-degree case through the resulting triangular transformation, and rewrites all lower-class exponential terms as products of factors with integer exponents. Induction on ample degree then proves that all stable-pair coefficients are integral exactly when all transformed counts are integral, without using the separate negative-genus vanishing conjecture.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Formal products are interpreted coefficientwise in the class and series grading; no analytic convergence is asserted.",
+      "unit_id": "agnostic_oa_unimodular_integrality_transfer"
+    },
+    "agnostic_oa_wall_crossing_extension_reversal": {
+      "analysis_id": "agnostic_oa_generation_8c2309f6236b1d550ae35a97fdabe8479d2d327048ed52585349787343400d76",
+      "boundary_or_failure": "The entire wall-crossing interpretation is explicitly conjectural in the source: the required Bridgeland stability condition was not established there for compact threefolds, general derived counting invariants and virtual-class wall crossing were unavailable, and automorphism factors for length-m point sheaves required a predicted correction. The exact triangles themselves are valid, but their enumerative interpretation is conditional.",
+      "interpretation": "Inference: crossing a stability wall can replace an object assembled by one extension direction with objects assembled from the same factors in the opposite direction. A maximal zero-dimensional subobject isolates the entire destabilizing piece, turning wall crossing into extension reversal plus a count over all defect lengths.",
+      "nonparaphrase_operation": "Extract the maximal zero-dimensional subsheaf from the quotient represented by an ideal sheaf and remove it to form the residual ideal. Express the original object as an exact triangle with the shifted defect mapping into it. At the putative phase-alignment wall, reverse the triangle so the residual ideal maps into a new complex whose quotient is the shifted defect, and classify the new objects by the corresponding second Ext group. Sum contributions by defect length while retaining stabilizer weights rather than treating semistable point sheaves as ordinary points.",
+      "source_support": "The source identifies free and embedded points with exact sequences and a maximal triangle from a shifted zero-dimensional sheaf to an ideal sheaf and its point-free residual. It proposes that after crossing a phase wall the stable objects are opposite-direction extensions, recognizes their form as stable-pair complexes, and interprets the convolution formula by the length of the zero-dimensional factor and a predicted automorphism correction.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. This record preserves the source's repeated conjectural qualifications and does not report the proposed wall crossing or counting identity as established mathematics.",
+      "unit_id": "agnostic_oa_wall_crossing_extension_reversal"
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_hidden_thickening_detection": "agnostic_oa_critic_8274e439a34c55e51507e9e0849f00ef5a34291ca2999991d20372e6ddddd2d8",
+    "agnostic_oa_isolated_support_locality": "agnostic_oa_critic_90f957bfd65dcfab769b604b634d479d7c12647a51c775af8affdea222ba21fa",
+    "agnostic_oa_lossless_derived_encoding": "agnostic_oa_critic_8a1ba5893a40071f1561de7f27c0779fde6aaa136119892eccf63eb1ed76efad",
+    "agnostic_oa_obstruction_theory_transfer": "agnostic_oa_critic_0ab32962cd1209dbcf7a4b953da9930b9934546b7856104a1eb4304f7e761110",
+    "agnostic_oa_partition_basis_reconstruction": "agnostic_oa_critic_41c9cb5e84eed83353eb3ec4e8f2f4fc8f2adf4e1be83b3d0671330fa2e35d2c",
+    "agnostic_oa_purity_finite_defect_classification": "agnostic_oa_critic_0615fc798146a17e73c2fa6c26c5dd2a09d5601dbde35f4b7ad500a981397140",
+    "agnostic_oa_stable_pair_compactification": "agnostic_oa_critic_368d69d4c85ac6a24afa59c5066455a45ac4dccde0222a3812389c6ea26f0e7a",
+    "agnostic_oa_toric_partition_module_translation": "agnostic_oa_critic_19a13864ef4c93fa2f70dda6bb2583926399f373a8ae68d25ff195bb07444e8f",
+    "agnostic_oa_unimodular_integrality_transfer": "agnostic_oa_critic_b72978d8f56316260c8e8942e39cc0ac0240bf721f0ab1289d4bc4e97645b8e5",
+    "agnostic_oa_wall_crossing_extension_reversal": "agnostic_oa_critic_c96274fb0ffa21b59818380f18de59cef6deb82ae7050281f6efdfd3feec4b0c"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "context_risk",
+    "critic_provenance",
+    "decision",
+    "faithfulness",
+    "missed_mechanism",
+    "paraphrase_risk",
+    "revision_instructions",
+    "unit_id",
+    "unsupported_or_imported"
+  ],
+  "isolation_requirement": "Fresh critic context for nearby units from one source only; see exact units and compact candidates, not teacher reasoning or unrelated analyses.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/critic/batches/openalex_w2042792562_d9edd722_part_01.jsonl",
+  "source_id": "openalex_w2042792562",
+  "stage": "critic",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_stable_pair_compactification.txt",
+      "artifact_bytes": 7654,
+      "artifact_relpath": "depth/units/agnostic_oa_stable_pair_compactification.txt",
+      "artifact_sha256": "dee4113172d00ef36695bac8e81be7ef71a8b4cd1445a099899a515f79b803f9",
+      "content_sha256": "50c165f0f60774f7971bb8098be630a897591e5d407afbafad39f936f632c72c",
+      "context_note": "Source-grounded in the introduction. The stable-pair definition and claimed virtual-class construction are developed later; equivalence with GW and reduced DT theories is explicitly conjectural. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_stable_pair_compactification",
+            "agnostic_oa_lossless_derived_encoding",
+            "agnostic_oa_partition_basis_reconstruction",
+            "agnostic_oa_toric_partition_module_translation"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Canonicality is operational in the source: defects are constrained to their natural support, the original pair is recovered from a unique map out of its complex, series coefficients are forced by triangular asymptotics, and outgoing partitions determine a unique minimal support. This strengthens a source-only saturation probe for uniqueness-through-reconstruction. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 197,
+      "line_start": 69,
+      "representation_dependency": "Extraction limit: arrows, subscripts, and displayed complexes have PDF-to-text damage, so exact formulas require the preserved PDF. Representation limit: the mechanism is expressed with sheaves, sections, supports, and two-term complexes, not as a representation-free theorem. Applicability limit: the virtual-class motivation is specific to nonsingular projective threefolds and purity of one-dimensional sheaves; arbitrary moduli problems need not admit the same repair.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The source compares representations by what pathology each introduces, then replaces freely wandering zero-dimensional structure with a finite cokernel forced to lie on a pure one-dimensional support. This is a reusable semantic move: preserve the main object, expose the defect as separate data, and constrain that defect to the locus where it belongs rather than canceling it only at the generating-function level.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Design a compactification by localizing the discarded defect",
+      "unit_id": "agnostic_oa_stable_pair_compactification",
+      "unit_type": "conceptual-mechanism"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_purity_finite_defect_classification.txt",
+      "artifact_bytes": 5034,
+      "artifact_relpath": "depth/units/agnostic_oa_purity_finite_defect_classification.txt",
+      "artifact_sha256": "42509dd3310443106960070135a77d7fe72217730c9e9435a3cc424b0139a7e0",
+      "content_sha256": "caecdac92bdb8634209c18bf61c5aa392919638b7f8232f06aaa033e7e9be7f5",
+      "context_note": "The limiting criterion, support result, exact sequence, and fixed-support characterization are proved in the source. The characterization depends on a Cohen-Macaulay curve and ideals supported at finitely many points. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_purity_finite_defect_classification",
+            "agnostic_oa_partition_basis_reconstruction",
+            "agnostic_oa_unimodular_integrality_transfer",
+            "agnostic_oa_toric_partition_module_translation"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Within this source, decomposition appears in several materially different roles: carrier versus finite defect, polar versus regular series data, primitive versus lower-degree contributions, and minimal toric support versus finite-length deviation. This strengthens the source-only case that decomposition/canonical-form probes should test what the pieces mean and why reconstruction is unique. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 400,
+      "line_start": 302,
+      "representation_dependency": "Extraction limit: several inclusions, direct limits, and Hom expressions are visibly damaged; their exact types should be checked against the PDF before reuse. Representation limit: the proof uses coherent sheaves, annihilators, purity, dual Hom, and inverse images. Applicability limit: the argument requires purity and Cohen-Macaulay one-dimensional support; without them, lower-dimensional subobjects can survive and the injections or reconstruction can fail.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "Large-parameter stability collapses to two semantic conditions: purity of the carrier and a section with zero-dimensional cokernel. Purity then forbids a hidden lower-dimensional subobject, forces the section and sheaf to have the same support, and makes dualization plus inverse image a classification/reconstruction procedure. The reusable pattern is to combine generic agreement with exclusion of lower-dimensional defects to upgrade generic data to global structural control.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Use purity to turn generic generation into support equality and finite-defect reconstruction",
+      "unit_id": "agnostic_oa_purity_finite_defect_classification",
+      "unit_type": "proof-pattern"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_lossless_derived_encoding.txt",
+      "artifact_bytes": 3068,
+      "artifact_relpath": "depth/units/agnostic_oa_lossless_derived_encoding.txt",
+      "artifact_sha256": "7ae84be82cca01c4d664155fb48e2141e60e91ea30a8ead600d90f372e736461",
+      "content_sha256": "8c2aadf60333f26d4f87cfa30536ae60185e2f70745bcc13b5726d47ff8f958d",
+      "context_note": "Proposition 1.21 is proved from exact triangles, Ext-sheaf vanishing, and the uniqueness up to scalars of the relevant map. No information-loss claim beyond the stated stable-pair setting is made. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_lossless_derived_encoding",
+            "agnostic_oa_obstruction_theory_transfer",
+            "agnostic_oa_wall_crossing_extension_reversal"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "saturation_probe_strengthened",
+          "summary": "The source ties equivalence of representations to exact triangles and then exploits that derived representation to control deformations, split trace directions, shorten obstruction amplitude, and conjecturally reverse extensions across a wall. This is source-grounded support for testing obstruction as a property changed or exposed by representation, not merely a named formalism. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_stable_pair_compactification",
+            "agnostic_oa_lossless_derived_encoding",
+            "agnostic_oa_partition_basis_reconstruction",
+            "agnostic_oa_toric_partition_module_translation"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Canonicality is operational in the source: defects are constrained to their natural support, the original pair is recovered from a unique map out of its complex, series coefficients are forced by triangular asymptotics, and outgoing partitions determine a unique minimal support. This strengthens a source-only saturation probe for uniqueness-through-reconstruction. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 453,
+      "line_start": 401,
+      "representation_dependency": "Extraction limit: triangle arrows and Ext superscripts are partially degraded, though the proposition and reconstruction narrative remain readable. Representation limit: losslessness is only up to isomorphism/quasi-isomorphism and depends on the standard structure sheaf term and cohomological placement. Applicability limit: arbitrary complexes or pairs outside the purity/codimension hypotheses need not admit a unique recovery map or a sheaf-valued cone.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The pair is encoded as a two-term complex, but the source does not merely assert that the new representation is convenient: it proves a unique canonical map to the structure sheaf, recovers the cone and the original section, and concludes that quasi-isomorphism exactly matches pair isomorphism. This is a reusable standard for abstraction: before exploiting a richer representation, prove that the intended object can be canonically reconstructed from it.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Prove a richer derived encoding is lossless by canonical recovery",
+      "unit_id": "agnostic_oa_lossless_derived_encoding",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_obstruction_theory_transfer.txt",
+      "artifact_bytes": 21004,
+      "artifact_relpath": "depth/units/agnostic_oa_obstruction_theory_transfer.txt",
+      "artifact_sha256": "599dd34fcccc7ed154eca1899bdbb368a000cb0415de95c2575b49b90c544544",
+      "content_sha256": "078e164b7134d07b10148ed24604542377eaf48010a54c375c1666ce8c99bf27",
+      "context_note": "The all-order deformation equivalence, two-term trace-free complex, perfect obstruction theory, virtual class, and deformation invariance are presented as proved results, with cited foundational inputs. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_lossless_derived_encoding",
+            "agnostic_oa_obstruction_theory_transfer",
+            "agnostic_oa_wall_crossing_extension_reversal"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "saturation_probe_strengthened",
+          "summary": "The source ties equivalence of representations to exact triangles and then exploits that derived representation to control deformations, split trace directions, shorten obstruction amplitude, and conjecturally reverse extensions across a wall. This is source-grounded support for testing obstruction as a property changed or exposed by representation, not merely a named formalism. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 850,
+      "line_start": 455,
+      "representation_dependency": "Extraction limit: long derived formulas, degree shifts, trace-free notation, and a diagram are degraded; exact proof reuse requires the PDF and cited foundations. Representation limit: the transfer uses perfect complexes, fixed determinant, trace splitting at rank one, Serre duality, and Atiyah/Kodaira-Spencer classes. Applicability limit: it relies on threefold dimension, codimension support, trivial determinant, fineness of the moduli problem, and absence of nontrivial automorphisms; higher-rank variants are explicitly said not to follow immediately.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The direct deformation theory of pairs is not suitable for a virtual class, while the lossless fixed-determinant complex representation has trace-free deformation data. The source proves agreement of deformations to all nilpotent orders, reconstructs every fixed-determinant deformation as a pair, removes scalar directions by trace, and uses duality to concentrate the relevant complex in two degrees. The generic move is to transport a moduli problem to an equivalent representation where nuisance symmetries split off and obstruction amplitude becomes manageable.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Change representation to shorten deformation-obstruction amplitude",
+      "unit_id": "agnostic_oa_obstruction_theory_transfer",
+      "unit_type": "structural-transfer"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_wall_crossing_extension_reversal.txt",
+      "artifact_bytes": 4262,
+      "artifact_relpath": "depth/units/agnostic_oa_wall_crossing_extension_reversal.txt",
+      "artifact_sha256": "1cb31e2d3ee4a45effebde2f311fbbacf96055515bffcd59bcaa45920a64a72d",
+      "content_sha256": "1f9ee017c1508c30fc3a9cb15fe5b9956b982d0b91f4bc7c9695a79febadd6d2",
+      "context_note": "The entire wall-crossing interpretation is explicitly conjectural: the required general counting theory and stability conditions were not available in the stated setting. The exact triangles are source-grounded strategic evidence, not a proved correspondence. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_lossless_derived_encoding",
+            "agnostic_oa_obstruction_theory_transfer",
+            "agnostic_oa_wall_crossing_extension_reversal"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "saturation_probe_strengthened",
+          "summary": "The source ties equivalence of representations to exact triangles and then exploits that derived representation to control deformations, split trace directions, shorten obstruction amplitude, and conjecturally reverse extensions across a wall. This is source-grounded support for testing obstruction as a property changed or exposed by representation, not merely a named formalism. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 1050,
+      "line_start": 975,
+      "representation_dependency": "Extraction limit: phase formulas, triangles, and Euler-pairing notation are partially damaged but the extension reversal is readable. Representation limit: the account is phrased in a derived category with shifted zero-dimensional sheaves and stability phases. Applicability limit: it assumes the postulated stability condition, primitive distinct classes, suitable virtual counts, and control of automorphisms; it must not be presented as established wall crossing for arbitrary categories.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The source decomposes an object into a curve-bearing piece and a maximal finite-support piece, observes that one extension direction destabilizes at a phase wall, and proposes that the reverse extension direction describes the stable objects on the other side. This gives a compact structural explanation for a convolution formula: enumerate all ways the same stable factors can be reassembled after their phase order changes.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Model wall crossing as reversal of extension direction",
+      "unit_id": "agnostic_oa_wall_crossing_extension_reversal",
+      "unit_type": "conjectural-strategy"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_partition_basis_reconstruction.txt",
+      "artifact_bytes": 8134,
+      "artifact_relpath": "depth/units/agnostic_oa_partition_basis_reconstruction.txt",
+      "artifact_sha256": "bc86a71b582cfb3259b736259d3162004c618f53d60a560d7b7717fc64f4fadd",
+      "content_sha256": "a5230d42079953e3c6f96c32a6455d7c0e0a28dd155f6c6e94fae0d414bbb455",
+      "context_note": "Existence, uniqueness, and high-index vanishing of the formal coefficients are proved. The stronger negative-genus vanishing and the resulting finite-effectivity statements are explicitly conjectural/conditional, marked by the source. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_purity_finite_defect_classification",
+            "agnostic_oa_partition_basis_reconstruction",
+            "agnostic_oa_unimodular_integrality_transfer",
+            "agnostic_oa_toric_partition_module_translation"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Within this source, decomposition appears in several materially different roles: carrier versus finite defect, polar versus regular series data, primitive versus lower-degree contributions, and minimal toric support versus finite-length deviation. This strengthens the source-only case that decomposition/canonical-form probes should test what the pieces mean and why reconstruction is unique. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_stable_pair_compactification",
+            "agnostic_oa_lossless_derived_encoding",
+            "agnostic_oa_partition_basis_reconstruction",
+            "agnostic_oa_toric_partition_module_translation"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Canonicality is operational in the source: defects are constrained to their natural support, the original pair is recovered from a unique map out of its complex, series coefficients are forced by triangular asymptotics, and outgoing partitions determine a unique minimal support. This strengthens a source-only saturation probe for uniqueness-through-reconstruction. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 1241,
+      "line_start": 1084,
+      "representation_dependency": "Extraction limit: the basis formulas and indices suffer superscript and layout damage; exact coefficients require PDF verification. Representation limit: the mechanism depends on a chosen Laurent-series coordinate, inversion symmetry, and divisibility-indexed multiple-cover basis. Applicability limit: unique formal expansion alone does not prove geometric meaning, integrality, negative-index vanishing, or rationality; finite reconstruction here depends on the separate vanishing conjecture.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "A Laurent series is uniquely decomposed in a structured basis by using positive-index terms to match the finite polar part and nonpositive-index terms with successively increasing vanishing order to recover the regular part. An induction on divisibility then removes multiple-cover contributions before applying the same decomposition. This is a generic canonicalization move: split qualitatively different asymptotic data, use a triangular basis on each part, and recurse along a well-founded structural measure.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Recover an expansion by separating polar data from regular coefficients",
+      "unit_id": "agnostic_oa_partition_basis_reconstruction",
+      "unit_type": "canonical-decomposition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_unimodular_integrality_transfer.txt",
+      "artifact_bytes": 4500,
+      "artifact_relpath": "depth/units/agnostic_oa_unimodular_integrality_transfer.txt",
+      "artifact_sha256": "c4eabb7a8b1116caedc5ee36d8bf3e9b0e7bc602afb489b938e23566080c8da4",
+      "content_sha256": "54b501ddaa693ad91053b30c1aaa29c19aeab6ad9e6315fbd6722def51bc2d2c",
+      "context_note": "The equivalence of integrality is Theorem 3.20 and does not require the negative-genus vanishing conjecture. Its later interpretation as matching Gromov-Witten/BPS integrality additionally invokes conjectural correspondences. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_purity_finite_defect_classification",
+            "agnostic_oa_partition_basis_reconstruction",
+            "agnostic_oa_unimodular_integrality_transfer",
+            "agnostic_oa_toric_partition_module_translation"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Within this source, decomposition appears in several materially different roles: carrier versus finite defect, polar versus regular series data, primitive versus lower-degree contributions, and minimal toric support versus finite-length deviation. This strengthens the source-only case that decomposition/canonical-form probes should test what the pieces mean and why reconstruction is unique. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 1335,
+      "line_start": 1242,
+      "representation_dependency": "Extraction limit: exponent, product, and coefficient notation is damaged in places; the triangular/unit-diagonal proof remains textually clear but exact series identities need checking. Representation limit: the proof uses formal exponentials, Laurent coefficients, a very-ample-degree filtration, and the chosen basis. Applicability limit: integrality transfer requires integer off-diagonal coefficients, unit diagonal, finite dependence at each filtered stage, and a well-founded degree; those properties cannot be assumed for an arbitrary basis change.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The source relates counting coefficients to proposed BPS coefficients by an integer triangular transformation whose diagonal entries are one, giving equivalence of integrality at minimal degree. It then isolates the current-class contribution and treats all other factors by induction on degree. This is a reusable semantic principle: a unitriangular integral coordinate change preserves integral structure, and a filtration lets nonlinear lower-order contributions be discharged inductively.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Transfer integrality through a unitriangular change of coordinates",
+      "unit_id": "agnostic_oa_unimodular_integrality_transfer",
+      "unit_type": "proof-pattern"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_hidden_thickening_detection.txt",
+      "artifact_bytes": 2050,
+      "artifact_relpath": "depth/units/agnostic_oa_hidden_thickening_detection.txt",
+      "artifact_sha256": "6ce55c21ec2e8f208ec2ab45dbe937aed766e08c88d32c8f9c6d14e8931dbd0b",
+      "content_sha256": "583f32825b541e34798134f708f6c8b05c2218325c9d540bb1e4fbcaf2748a87",
+      "context_note": "This is a concrete local-curve calculation, not a general theorem about all moduli spaces. The source reports the deformation and localization computation as established in the example. Novelty unconfirmed.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 1596,
+      "line_start": 1560,
+      "representation_dependency": "Extraction limit: some projective-space and series coefficients are garbled, so numerical reproduction requires the PDF. Representation limit: detection uses Zariski tangent dimensions and torus-fixed virtual localization, not merely topology. Applicability limit: a discrepancy in an invariant is only a prompt to inspect nonreduced structure; localization conclusions require the stated torus action, isolated fixed points, and the relevant obstruction theory.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "A moduli space appears set-theoretically to be a familiar smooth space, but the predicted invariant has the wrong sign. The source identifies a first-order thickening along a locus, verifies larger tangent spaces there, and shows that localization weights detect the extra infinitesimal dimension. The reusable diagnostic is that agreement of points and strata does not determine scheme structure; tangent data and invariant-sensitive probes can expose nilpotent directions.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Detect hidden nonreduced structure through tangent and localization behavior",
+      "unit_id": "agnostic_oa_hidden_thickening_detection",
+      "unit_type": "diagnostic-example"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_isolated_support_locality.txt",
+      "artifact_bytes": 10177,
+      "artifact_relpath": "depth/units/agnostic_oa_isolated_support_locality.txt",
+      "artifact_sha256": "75524cee594f4d013cedbbd26adb65b71591a140c88eb126fdf25704ed1c356d",
+      "content_sha256": "546e950c51982cf1303a56af3921682304c63bea57943e35d17b17247af7900c",
+      "context_note": "The local contribution is calculated for a nonsingular embedded curve under infinitesimal isolation and stated to agree with the predicted enumerative correspondence. The locality claim is conditional on those geometric hypotheses, not universal. Novelty unconfirmed.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 1799,
+      "line_start": 1597,
+      "representation_dependency": "Extraction limit: the obstruction exact sequence, diagram, Chern-root products, and generating formulas are degraded; precise calculations require PDF consultation. Representation limit: the mechanism uses symmetric powers, obstruction bundles, Serre duality, and virtual localization/intersection theory. Applicability limit: smoothness, rank-one local freeness on the curve, incidence isolation, and vanishing of the relevant normal deformation space are essential; singular or moving supports may not localize this way.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "For an infinitesimally isolated support, stable pairs reduce to divisors on that support and their obstruction bundle is expressed in intrinsic and restricted ambient data, producing a contribution valid across ambient geometries satisfying the same isolation condition. The contrast with ideal-sheaf theory identifies why locality fails there: zero-dimensional pieces can roam throughout the ambient space. The generic move is to locate exactly which degrees of freedom remain attached to the support and which probe the ambient object.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Separate support-local contributions from ambient roaming defects",
+      "unit_id": "agnostic_oa_isolated_support_locality",
+      "unit_type": "local-global-principle"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_toric_partition_module_translation.txt",
+      "artifact_bytes": 7831,
+      "artifact_relpath": "depth/units/agnostic_oa_toric_partition_module_translation.txt",
+      "artifact_sha256": "91664eeb58714452ad1b2e31da43aa0d4a747339ed311c59309ae9adc9597f0f",
+      "content_sha256": "5348cffd02558f7d9717d75c56f6922cef63830514f6fdd6a9e541764e3e8131",
+      "context_note": "The monomial/partition dictionary, minimal support, and module characterization are presented as source-grounded. Equality of normalized DT and stable-pair vertices is explicitly conjectural in the three-leg case, with proofs only noted for one- and two-leg cases. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_purity_finite_defect_classification",
+            "agnostic_oa_partition_basis_reconstruction",
+            "agnostic_oa_unimodular_integrality_transfer",
+            "agnostic_oa_toric_partition_module_translation"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Within this source, decomposition appears in several materially different roles: carrier versus finite defect, polar versus regular series data, primitive versus lower-degree contributions, and minimal toric support versus finite-length deviation. This strengthens the source-only case that decomposition/canonical-form probes should test what the pieces mean and why reconstruction is unique. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_stable_pair_compactification",
+            "agnostic_oa_lossless_derived_encoding",
+            "agnostic_oa_partition_basis_reconstruction",
+            "agnostic_oa_toric_partition_module_translation"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Canonicality is operational in the source: defects are constrained to their natural support, the original pair is recovered from a unique map out of its complex, series coefficients are forced by triangular asymptotics, and outgoing partitions determine a unique minimal support. This strengthens a source-only saturation probe for uniqueness-through-reconstruction. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 1992,
+      "line_start": 1811,
+      "representation_dependency": "Extraction limit: partition arrows, quotient modules, and vertex formulas are heavily damaged; exact algebra and normalization require the PDF. Representation limit: the translation depends on a diagonal torus action, monomial ideals, coordinate localizations, and finite-length invariant submodules. Applicability limit: non-toric geometries or non-fixed objects lack this partition model, and counting components by Euler characteristic does not by itself prove the conjectural vertex correspondence.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "Torus-fixed subschemes become monomial ideals and three-dimensional partitions; outgoing two-dimensional partitions determine a unique minimal Cohen-Macaulay support, while extra finite length measures deviation from it. Stable pairs with that support are then recast as finite-length invariant submodules of an explicit quotient module. The comparison reveals a structural change: combinatorial fixed subschemes are isolated, but fixed submodules can form positive-dimensional components whose Euler characteristics enter the count.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Translate torus-fixed geometry into asymptotic partitions and finite-length module subobjects",
+      "unit_id": "agnostic_oa_toric_partition_module_translation",
+      "unit_type": "representation-translation"
+    }
+  ]
+}

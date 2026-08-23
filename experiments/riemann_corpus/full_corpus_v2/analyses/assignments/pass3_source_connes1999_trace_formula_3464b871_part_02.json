@@ -1,0 +1,2686 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_connes1999_trace_formula_3464b871_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "connes1999_trace_formula",
+  "unit_count": 18,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact but nonredundant bridge between two appearances of the same operator spectrum.",
+      "line_end": 2465,
+      "line_start": 2448,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Notation-heavy and formula-dependent; prose states the relationship.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates eigenvalues of the projector-angle/time-frequency operator to the Fredholm-product description of large-matrix eigenvalue counts, linking the cutoff construction back to zero statistics.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The cutoff angle spectrum also governs random-matrix gap probabilities",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u27_angle_random_matrix_link.txt",
+      "unit_bytes": 1135,
+      "unit_id": "connes1999_v2_u27_angle_random_matrix_link",
+      "unit_sha256": "84c88f3eaaf9267bea91143da29be19a77808dd0585e13d63735bcf539d6426c",
+      "unit_type": "cross-connection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u27_angle_random_matrix_link.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2440,
+          "line_end": 2447,
+          "text": "                                             n∈Z\n\n                                                       R\nwhere we assume the additional conditions ξ(0) =           ξ(x)dx = 0.\n     A finer analysis, which is just what the trace formula is doing, would yield\nthe additional terms 7/8 + o(1) + Nosc (E). The above discussion yields an\nexplicit construction of a large matrix whose spectrum approaches the zeros\nof zeta as Λ → ∞.\n",
+          "sha256": "aebc5cf7fad09515251d9f3590383d5df44b8ad5b9788abeff008f130bc04afc"
+        },
+        "after": {
+          "line_start": 2466,
+          "line_end": 2473,
+          "text": "\nGeneral remarks.\n      a) There is a close analogy between the construction of the Hilbert space\n  2\nL (X) in section III, and the construction of the physical Hilbert space ([S]\ntheorem 2.1) in constructive quantum field theory, in the case of gauge theo-\nries. In both cases the action of the invariance group (the group k ∗ = GL1 (k)\nin our case, the gauge group in the case of gauge theories) is wiped out by\n",
+          "sha256": "e853e36b30bd018349b92b8d4a561a6a935cefd62e655fb0bf8e80ca7aed3e9c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VIII Global trace and elimination of delta",
+            "line_end": 2538,
+            "line_start": 1854,
+            "mathematical_role": "Defines the delta-free cutoff, relates its trace formula to positivity and RH, treats resonances and the Archimedean cutoff, and returns to zero counting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2465,
+          "line_start": 2448,
+          "title": "The cutoff angle spectrum also governs random-matrix gap probabilities",
+          "unit_id": "connes1999_v2_u27_angle_random_matrix_link",
+          "unit_type": "cross-connection",
+          "why_material": "Relates eigenvalues of the projector-angle/time-frequency operator to the Fredholm-product description of large-matrix eigenvalue counts, linking the cutoff construction back to zero statistics."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A compact but nonredundant bridge between two appearances of the same operator spectrum.",
+          "representation_dependency": "Notation-heavy and formula-dependent; prose states the relationship.",
+          "unit_id": "connes1999_v2_u27_angle_random_matrix_link"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2447,
+            "line_start": 2351,
+            "title": "Zero counting appears as a deficit of cutoff states",
+            "unit_id": "connes1999_v2_u26_semiclassical_absorption_count",
+            "unit_type": "semiclassical-interpretation",
+            "why_material": "Counts the phase-space region for the scaling Hamiltonian under simultaneous position, momentum, and energy cutoffs, recovering the smooth zero-counting term with the negative sign appropriate to an absorption spectrum and interpreting it as failure of surjectivity of the orbit-sum map."
+          },
+          {
+            "line_end": 2475,
+            "line_start": 2467,
+            "title": "Quotienting through the inner product as gauge removal",
+            "unit_id": "connes1999_v2_u28_gauge_quotient_analogy",
+            "unit_type": "structural-analogy",
+            "why_material": "Compares the Adele-class completion with construction of physical Hilbert spaces in gauge theory: invariance directions disappear in the seminorm rather than by selecting representatives."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At real places, prolate-spheroidal concentration supplies an approximate joint cutoff whose effective dimension matches phase-space area; the deficit realizes the smooth zero count and the same angle spectrum connects to random-matrix gaps.",
+            "limit": "The semiclassical count does not by itself recover the oscillatory zero term or prove spectral convergence.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u25_archimedean_prolate_cutoff",
+              "connes1999_v2_u26_semiclassical_absorption_count",
+              "connes1999_v2_u27_angle_random_matrix_link"
+            ],
+            "title": "Time-frequency concentration replaces impossible Archimedean compact support"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u27_angle_random_matrix_link",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u27_angle_random_matrix_link",
+          "spontaneous_reading": "The concentration-operator eigenvalues serve as a shared coordinate for two otherwise different objects: the cutoff angle construction and random-matrix interval-count probabilities."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u27_angle_random_matrix_link",
+          "source_grounded_mathematics": "The large-matrix probability E(n,s) is recovered from Taylor coefficients at z=1 of the product over 1-z lambda_j(s), where lambda_j(s) are eigenvalues of the time-frequency product P^c_pi P_t. The text notes that spectra of P^c_a P_b depend only on ab, which connects these lambda_j to the previously defined angle operator Theta.",
+          "conceptual_reading": "Operator angles compress the interaction of two cutoffs into a spectrum that can be reused in a probabilistic eigenvalue-counting formula. The useful move is to compare constructions through a common spectral invariant rather than through their ambient interpretations.",
+          "representation_or_bridge": "The bridge object is the product of a position projection with a Fourier-conjugated projection; its eigenvalue product is a generating function for random-matrix gap counts and its spectrum is related to Theta by the ab scaling invariance.",
+          "boundary_or_failure": "This short link does not establish convergence of the constructed large matrix to zeta zeros or derive random-matrix statistics from the Adele-class model; it identifies a common operator spectrum.",
+          "uncertainty": "Moderate: the projection subscripts and product display are extraction-sensitive, although the prose-level spectral relationship is explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Short general remark with a reusable quotient mechanism.",
+      "line_end": 2475,
+      "line_start": 2467,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares the Adele-class completion with construction of physical Hilbert spaces in gauge theory: invariance directions disappear in the seminorm rather than by selecting representatives.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quotienting through the inner product as gauge removal",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u28_gauge_quotient_analogy.txt",
+      "unit_bytes": 518,
+      "unit_id": "connes1999_v2_u28_gauge_quotient_analogy",
+      "unit_sha256": "d88a903d4daaef5d744a9648c53f8aac9d44821267ac2ef8bebb06ad08088bd7",
+      "unit_type": "structural-analogy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u28_gauge_quotient_analogy.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2459,
+          "line_end": 2466,
+          "text": "ζs (z) = (1 − zλj (s)), where λj (s) are the eigenvalues of the operator Pcπ Pt .\n         1\n(Here we denote by Pcλ = F Pλ F −1 , and F denotes the Fourier transform,\n         R ixu\nF ξ(u) = e ξ(x)dx. Note also that the eigenvalues of P    ca Pb only depend\nupon the product ab so that the relation with the eigenvalues of Θ should be\nclear.)\n\n",
+          "sha256": "fb1b15f27a73e0ba6eed49ded5df3db5c57c9284c501b68c0346cddf3e10bd5c"
+        },
+        "after": {
+          "line_start": 2476,
+          "line_end": 2483,
+          "text": "\n                                       49\n\n<!-- source-page: 50 -->\n\nb) For global fields of zero characteristic, the Idele class group has a non\ntrivial connected component of the identity and this connected group has so\nfar received no interpretation from Galois theory (cf [W4]). The occurence\n",
+          "sha256": "c6bf5b524d30940d7a24318d874afa9d561927696ca1404a2664be251f299e9d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VIII Global trace and elimination of delta",
+            "line_end": 2538,
+            "line_start": 1854,
+            "mathematical_role": "Defines the delta-free cutoff, relates its trace formula to positivity and RH, treats resonances and the Archimedean cutoff, and returns to zero counting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2475,
+          "line_start": 2467,
+          "title": "Quotienting through the inner product as gauge removal",
+          "unit_id": "connes1999_v2_u28_gauge_quotient_analogy",
+          "unit_type": "structural-analogy",
+          "why_material": "Compares the Adele-class completion with construction of physical Hilbert spaces in gauge theory: invariance directions disappear in the seminorm rather than by selecting representatives."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Short general remark with a reusable quotient mechanism.",
+          "representation_dependency": "Prose-only.",
+          "unit_id": "connes1999_v2_u28_gauge_quotient_analogy"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2465,
+            "line_start": 2448,
+            "title": "The cutoff angle spectrum also governs random-matrix gap probabilities",
+            "unit_id": "connes1999_v2_u27_angle_random_matrix_link",
+            "unit_type": "cross-connection",
+            "why_material": "Relates eigenvalues of the projector-angle/time-frequency operator to the Fredholm-product description of large-matrix eigenvalue counts, linking the cutoff construction back to zero statistics."
+          },
+          {
+            "line_end": 2501,
+            "line_start": 2481,
+            "title": "Noncommutative Adele classes as an Archimedean Frobenius setting",
+            "unit_id": "connes1999_v2_u29_frobenius_type_iii_geometry",
+            "unit_type": "geometric-synthesis",
+            "why_material": "Connects the idele connected component to type-III factor structure, emphasizes that quotienting destroys linear dimension products in favor of sums, and identifies the idele action on Adele classes as the class-field-theoretic analogue of Frobenius."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u28_gauge_quotient_analogy",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u28_gauge_quotient_analogy",
+          "spontaneous_reading": "The quotient is implemented metrically: invariant directions become null in the inner product, so no choice of orbit representatives is needed."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u28_gauge_quotient_analogy",
+          "source_grounded_mathematics": "The construction of L2(X) is compared with the physical Hilbert space of a gauge theory. In both cases the invariance group, k* in the Adele setting and the gauge group in the comparison, is removed by the definition of the inner product.",
+          "conceptual_reading": "A seminorm can perform quotienting intrinsically by forgetting symmetry directions. This reframes gauge removal as completion after identifying null directions rather than as an external gauge-fixing operation.",
+          "representation_or_bridge": "The bridge is the inner product itself: its null space encodes the group orbits and the separated Hilbert completion realizes the quotient.",
+          "boundary_or_failure": "The passage states an analogy, not an equivalence of the Adele-class construction with constructive gauge theory, and supplies no transfer theorem between them.",
+          "uncertainty": "Low: the unit is prose-only and its limited comparative claim is clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Clearly presented as a proposed interpretation, not an established proof mechanism.",
+      "line_end": 2501,
+      "line_start": 2481,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects the idele connected component to type-III factor structure, emphasizes that quotienting destroys linear dimension products in favor of sums, and identifies the idele action on Adele classes as the class-field-theoretic analogue of Frobenius.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Noncommutative Adele classes as an Archimedean Frobenius setting",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u29_frobenius_type_iii_geometry.txt",
+      "unit_bytes": 1541,
+      "unit_id": "connes1999_v2_u29_frobenius_type_iii_geometry",
+      "unit_sha256": "562368073a8a4c8aa1b5d13f5ea83252151c4589e840116e676975f7aa243740",
+      "unit_type": "geometric-synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u29_frobenius_type_iii_geometry.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2473,
+          "line_end": 2480,
+          "text": "in our case, the gauge group in the case of gauge theories) is wiped out by\nthe very definition of the inner product. Compare the comment after III (9)\nwith ([S]) top of page 17.\n\n                                       49\n\n<!-- source-page: 50 -->\n\n",
+          "sha256": "aab82d85185aa1bacedaea84fd411d5a105511d2ce172e615e72ad6fbc7891ae"
+        },
+        "after": {
+          "line_start": 2502,
+          "line_end": 2509,
+          "text": "     d) There is a superficial resemblance between the way the function N (E)\nappears in the last computation of section VIII and the discussion in [BK],\ndirectly inspired from [Co]. It is amusing to note that the computation of [BK]\nis actually coincidental, the two rectangles are eliminated for no reason, which\nchanges appropriately the sign of the term in E. What [BK] had not taken\ninto account is that the spectral interpretation of [Co] is as an absorption\nspectrum rather than an emission spectrum.\n     d) There is an even more superficial resemblance with the work of D.\n",
+          "sha256": "ca8bb6f6e1603d4cf013ed32a9e62fdb912e3d78dad256434c4ded536c0361a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VIII Global trace and elimination of delta",
+            "line_end": 2538,
+            "line_start": 1854,
+            "mathematical_role": "Defines the delta-free cutoff, relates its trace formula to positivity and RH, treats resonances and the Archimedean cutoff, and returns to zero counting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2501,
+          "line_start": 2481,
+          "title": "Noncommutative Adele classes as an Archimedean Frobenius setting",
+          "unit_id": "connes1999_v2_u29_frobenius_type_iii_geometry",
+          "unit_type": "geometric-synthesis",
+          "why_material": "Connects the idele connected component to type-III factor structure, emphasizes that quotienting destroys linear dimension products in favor of sums, and identifies the idele action on Adele classes as the class-field-theoretic analogue of Frobenius."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Clearly presented as a proposed interpretation, not an established proof mechanism.",
+          "representation_dependency": "Prose-dominant.",
+          "unit_id": "connes1999_v2_u29_frobenius_type_iii_geometry"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2475,
+            "line_start": 2467,
+            "title": "Quotienting through the inner product as gauge removal",
+            "unit_id": "connes1999_v2_u28_gauge_quotient_analogy",
+            "unit_type": "structural-analogy",
+            "why_material": "Compares the Adele-class completion with construction of physical Hilbert spaces in gauge theory: invariance directions disappear in the seminorm rather than by selecting representatives."
+          },
+          {
+            "line_end": 2517,
+            "line_start": 2502,
+            "title": "Why state counting and imported positivity can miss absorption",
+            "unit_id": "connes1999_v2_u30_absorption_vs_inner_product",
+            "unit_type": "method-critique",
+            "why_material": "Critiques routes that obtain the sign by deleting regions or define an inner product directly from the Weil distribution, distinguishing explanation of the distribution from merely assuming its positivity."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u29_frobenius_type_iii_geometry",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u29_frobenius_type_iii_geometry",
+          "spontaneous_reading": "Quotienting the Adele space is proposed as the operation that replaces linear geometry by a noncommutative geometry in which the idele action can play the role of Frobenius."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u29_frobenius_type_iii_geometry",
+          "source_grounded_mathematics": "The text proposes hyperfinite type III factors as an Archimedean interpretation of the connected component of the idele class group, notes their classification by closed virtual subgroups of the positive reals, and compares the idele-class action on Adele classes, after quotienting by the maximal compact subgroup, with Frobenius on a curve. It also stresses that division by k* destroys linear structure and changes dimension formulas from products to sums.",
+          "conceptual_reading": "The intended geometry is created by quotienting rather than inherited from the linear Adele space. Losing linear structure is productive here because it makes an orbit-space dynamics available as an analogue of arithmetic Frobenius.",
+          "representation_or_bridge": "Type III factors, the quotient A/k*, the further maximal-compact quotient, and the idele-class action are the proposed bridge objects between Archimedean noncommutative geometry and the class-field-theoretic Frobenius picture.",
+          "boundary_or_failure": "These are research interpretations and analogies. The unit does not construct the missing Galois interpretation, prove the relation to Deninger's arithmetic site, or turn the Frobenius analogy into a theorem.",
+          "uncertainty": "Low about the stated proposals; high about their mathematical realization, which the source explicitly leaves to clarification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Useful negative evidence about circular or sign-mismatched formulations.",
+      "line_end": 2517,
+      "line_start": 2502,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Critiques routes that obtain the sign by deleting regions or define an inner product directly from the Weil distribution, distinguishing explanation of the distribution from merely assuming its positivity.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why state counting and imported positivity can miss absorption",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u30_absorption_vs_inner_product.txt",
+      "unit_bytes": 1125,
+      "unit_id": "connes1999_v2_u30_absorption_vs_inner_product",
+      "unit_sha256": "80a1bb1a0ae44f57b6a72e85709330ed6a7b98c18ec54182a65fc2e76b6248e2",
+      "unit_type": "method-critique",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u30_absorption_vs_inner_product.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2494,
+          "line_end": 2501,
+          "text": "[D]. Note that the division of A by k ∗ eliminates the linear structure of A and\nthat it transforms drastically the formulas for dimensions of function spaces,\nreplacing products by sums (cf. theorem 4 of section VII). It should be clear\nto the reader that the action of the Idele class group on the space of Adele\nclasses is the analogue (through the usual dictionnary of class field theory) of\nthe action of the Frobenius on the curve. (To be more specific one needs to\ndivide first the space X of Adele classes by the action of the maximal compact\nsubgroup of the Idele class group).\n",
+          "sha256": "3597eb35eb7dec73595e15bf9bf4520f2c107f39c88bc4de5ae6177e8f3de707"
+        },
+        "after": {
+          "line_start": 2518,
+          "line_end": 2525,
+          "text": "\n                                       50\n\n<!-- source-page: 51 -->\n\ne) The above framework extends naturally from the case of GL(1) to\nthe case of GL(n) where the Adele class space is replaced by the quotient of\nMn (A) by the action on the right of GLn (k). Preliminary work of C. Soule\n",
+          "sha256": "c45f4770f36406bd341a7f6b643993545066bca56edde4aa49022a3a9c74cf80"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VIII Global trace and elimination of delta",
+            "line_end": 2538,
+            "line_start": 1854,
+            "mathematical_role": "Defines the delta-free cutoff, relates its trace formula to positivity and RH, treats resonances and the Archimedean cutoff, and returns to zero counting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2517,
+          "line_start": 2502,
+          "title": "Why state counting and imported positivity can miss absorption",
+          "unit_id": "connes1999_v2_u30_absorption_vs_inner_product",
+          "unit_type": "method-critique",
+          "why_material": "Critiques routes that obtain the sign by deleting regions or define an inner product directly from the Weil distribution, distinguishing explanation of the distribution from merely assuming its positivity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Useful negative evidence about circular or sign-mismatched formulations.",
+          "representation_dependency": "Prose-only.",
+          "unit_id": "connes1999_v2_u30_absorption_vs_inner_product"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2501,
+            "line_start": 2481,
+            "title": "Noncommutative Adele classes as an Archimedean Frobenius setting",
+            "unit_id": "connes1999_v2_u29_frobenius_type_iii_geometry",
+            "unit_type": "geometric-synthesis",
+            "why_material": "Connects the idele connected component to type-III factor structure, emphasizes that quotienting destroys linear dimension products in favor of sums, and identifies the idele action on Adele classes as the class-field-theoretic analogue of Frobenius."
+          },
+          {
+            "line_end": 2527,
+            "line_start": 2523,
+            "title": "Proposed extension from GL(1) to matrix Adele classes",
+            "unit_id": "connes1999_v2_u31_gln_extension",
+            "unit_type": "generalization-proposal",
+            "why_material": "Suggests replacing the Adele-class space by matrices modulo GL_n(k), reports only preliminary spectral evidence, and correctly leaves the higher-rank Lefschetz formula as the next unresolved step."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u30_absorption_vs_inner_product",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u30_absorption_vs_inner_product",
+          "spontaneous_reading": "A sign and a positivity statement are diagnostic only if the construction explains them; deleting phase-space regions or inserting the Weil distribution into an inner product can manufacture the desired feature without its mechanism."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u30_absorption_vs_inner_product",
+          "source_grounded_mathematics": "The author argues that the Berry-Keating-style removal of two rectangles produces the desired sign coincidentally because the relevant spectral interpretation is absorptive rather than emissive. A separate construction defining an inner product from the Weil distribution has positivity equivalent to RH, but assumes that distribution in the definition.",
+          "conceptual_reading": "The methodological distinction is between deriving an invariant and encoding it. Correct sign or positivity is weak evidence when it enters through an unexplained deletion or through the very object whose positivity is at issue.",
+          "representation_or_bridge": "The contrast is between absorption as a cokernel or missing-state mechanism and emission-style state counting, and between an independently constructed Hilbert form and an inner product defined directly from the Weil distribution.",
+          "boundary_or_failure": "This is a critique of explanatory adequacy, not a disproof of the cited approaches and not a proof of positivity or RH.",
+          "uncertainty": "Low: the objections and their limited scope are stated directly in prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retained as a bounded research direction, not a completed generalization.",
+      "line_end": 2527,
+      "line_start": 2523,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Suggests replacing the Adele-class space by matrices modulo GL_n(k), reports only preliminary spectral evidence, and correctly leaves the higher-rank Lefschetz formula as the next unresolved step.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Proposed extension from GL(1) to matrix Adele classes",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u31_gln_extension.txt",
+      "unit_bytes": 365,
+      "unit_id": "connes1999_v2_u31_gln_extension",
+      "unit_sha256": "776f56e618f884e500d04a4b217d3e0048fbfba2f33f1e43fc9731ec6c054dbe",
+      "unit_type": "generalization-proposal",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u31_gln_extension.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2515,
+          "line_end": 2522,
+          "text": "(except for a nice observation at the Archimedean place) for what the Weil\ndistribution is, since it is introduced by hands in the formula for the inner\nproduct.\n\n                                       50\n\n<!-- source-page: 51 -->\n\n",
+          "sha256": "f0f6faf61077fe923ac5317a5078d264113046f6145434c324b3689e138c4d2a"
+        },
+        "after": {
+          "line_start": 2528,
+          "line_end": 2535,
+          "text": "    f) I have been told by P. Sarnak and E. Bombieri that Paul Cohen has\nconsidered the space of Adele classes in connection with RH, but never got\nany detail of his unpublished ideas.\n     All the results of the present paper have been announced in the September\n98 conference on the Riemann hypothesis held in the Schrodinger Institute in\nVienna and have been published as a preprint of the Schrodinger Institute.\nWe are grateful to the American Institute of Mathematics for its sponsoring\nof the conference.\n",
+          "sha256": "3f46536931dceb73bbe62f24aebb11273eb94be2a8101195da87496c23104239"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VIII Global trace and elimination of delta",
+            "line_end": 2538,
+            "line_start": 1854,
+            "mathematical_role": "Defines the delta-free cutoff, relates its trace formula to positivity and RH, treats resonances and the Archimedean cutoff, and returns to zero counting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2527,
+          "line_start": 2523,
+          "title": "Proposed extension from GL(1) to matrix Adele classes",
+          "unit_id": "connes1999_v2_u31_gln_extension",
+          "unit_type": "generalization-proposal",
+          "why_material": "Suggests replacing the Adele-class space by matrices modulo GL_n(k), reports only preliminary spectral evidence, and correctly leaves the higher-rank Lefschetz formula as the next unresolved step."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retained as a bounded research direction, not a completed generalization.",
+          "representation_dependency": "Prose-only.",
+          "unit_id": "connes1999_v2_u31_gln_extension"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2517,
+            "line_start": 2502,
+            "title": "Why state counting and imported positivity can miss absorption",
+            "unit_id": "connes1999_v2_u30_absorption_vs_inner_product",
+            "unit_type": "method-critique",
+            "why_material": "Critiques routes that obtain the sign by deleting regions or define an inner product directly from the Weil distribution, distinguishing explanation of the distribution from merely assuming its positivity."
+          },
+          {
+            "line_end": 2735,
+            "line_start": 2539,
+            "title": "L-functions normalize global homogeneous distributions",
+            "unit_id": "connes1999_v2_u32_homogeneous_distributions_lfactor",
+            "unit_type": "analytic-factorization",
+            "why_material": "Builds local homogeneous distributions, normalizes unramified factors, forms their restricted tensor product, and shows that the Euler-product L-function is exactly the scalar relating the convergent global integral to the holomorphic normalized distribution."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u31_gln_extension",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u31_gln_extension",
+          "spontaneous_reading": "The rank-one mechanism suggests a higher-rank replacement of Adele classes by matrix Adeles modulo a rational general linear action, but the trace formula is the unresolved load-bearing step."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u31_gln_extension",
+          "source_grounded_mathematics": "For GL(n), the proposed space is M_n(A) modulo the right action of GL_n(k). Preliminary work is reported to preserve an analogue of theorem III.1, while an analogue of the Lefschetz trace formula remains to be worked out.",
+          "conceptual_reading": "The proposed generalization preserves the quotient-and-spectrum architecture while changing the basic representation from scalars to matrices. The source correctly separates survival of a spectral statement from survival of the trace mechanism.",
+          "representation_or_bridge": "The concrete bridge is M_n(A)/GL_n(k); the missing bridge is a higher-rank Lefschetz trace formula linking its dynamics to spectral data.",
+          "boundary_or_failure": "This is explicitly a programmatic extension supported only by preliminary evidence for one analogue. No higher-rank trace formula or completed GL(n) theory is supplied.",
+          "uncertainty": "Low: the claim is short, prose-only, and carefully qualified by the source."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the analytic factorization later used to turn zeros of L into annihilators of the orbit-sum range.",
+      "line_end": 2735,
+      "line_start": 2539,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Long and formula-dense; local normalization and Euler-factor displays require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds local homogeneous distributions, normalizes unramified factors, forms their restricted tensor product, and shows that the Euler-product L-function is exactly the scalar relating the convergent global integral to the holomorphic normalized distribution.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        52,
+        53,
+        54,
+        55
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "L-functions normalize global homogeneous distributions",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u32_homogeneous_distributions_lfactor.txt",
+      "unit_bytes": 7551,
+      "unit_id": "connes1999_v2_u32_homogeneous_distributions_lfactor",
+      "unit_sha256": "14c7bfda4ea1cda00eca54bed3a3ebf365478dba4351c571de5cafc1e4c2821d",
+      "unit_type": "analytic-factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u32_homogeneous_distributions_lfactor.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2531,
+          "line_end": 2538,
+          "text": "     All the results of the present paper have been announced in the September\n98 conference on the Riemann hypothesis held in the Schrodinger Institute in\nVienna and have been published as a preprint of the Schrodinger Institute.\nWe are grateful to the American Institute of Mathematics for its sponsoring\nof the conference.\n\n\n\n",
+          "sha256": "cf4d44aae9474046ca273cc6b35432f64f44ee33313b930969419a9fd1e09824"
+        },
+        "after": {
+          "line_start": 2736,
+          "line_end": 2743,
+          "text": "     We let as above k be a global field, we fix a non trivial additive character\nα of A, trivial on k,\n\n(27)           α(x + y) = α(x) α(y) ∈ U (1) , α(q) = 1 ∀ q ∈ k .\n\nWe then identify the dual of the locally compact additive group A with A\nitself by the pairing,\n\n",
+          "sha256": "6b32296dba0068d3263abcadad6e99cc291c8dd42d0a3de648c27c49d2140fbc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix I Proof of theorem 1",
+            "line_end": 3424,
+            "line_start": 2539,
+            "mathematical_role": "Supplies homogeneous-distribution, Poisson-summation, Sobolev, and cokernel-annihilator machinery underlying the spectral theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2735,
+          "line_start": 2539,
+          "title": "L-functions normalize global homogeneous distributions",
+          "unit_id": "connes1999_v2_u32_homogeneous_distributions_lfactor",
+          "unit_type": "analytic-factorization",
+          "why_material": "Builds local homogeneous distributions, normalizes unramified factors, forms their restricted tensor product, and shows that the Euler-product L-function is exactly the scalar relating the convergent global integral to the holomorphic normalized distribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides the analytic factorization later used to turn zeros of L into annihilators of the orbit-sum range.",
+          "representation_dependency": "Long and formula-dense; local normalization and Euler-factor displays require scan verification.",
+          "unit_id": "connes1999_v2_u32_homogeneous_distributions_lfactor"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2527,
+            "line_start": 2523,
+            "title": "Proposed extension from GL(1) to matrix Adele classes",
+            "unit_id": "connes1999_v2_u31_gln_extension",
+            "unit_type": "generalization-proposal",
+            "why_material": "Suggests replacing the Adele-class space by matrices modulo GL_n(k), reports only preliminary spectral evidence, and correctly leaves the higher-rank Lefschetz formula as the next unresolved step."
+          },
+          {
+            "line_end": 2925,
+            "line_start": 2736,
+            "title": "Poisson summation gives inversion and rapid decay of the orbit sum",
+            "unit_id": "connes1999_v2_u33_poisson_rapid_decay",
+            "unit_type": "functional-equation-mechanism",
+            "why_material": "Uses self-duality of the global-field lattice to derive E(f)(x)=E(f-hat)(1/x) on the two-vanishing-condition space, then proves rapid decay at both ends and extends the L-factor identity into the half-plane."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Poisson summation and homogeneous distributions factor the orbit-sum Mellin transform by L; band-limited approximation then makes zeros, their orders, and allowed distribution derivatives precisely characterize the cokernel spectrum and trace.",
+            "limit": "The Sobolev exponent truncates observed multiplicity and this appendix result is the preliminary critical-line model, not the later delta-free global theorem.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u32_homogeneous_distributions_lfactor",
+              "connes1999_v2_u33_poisson_rapid_decay",
+              "connes1999_v2_u34_sobolev_approximate_units",
+              "connes1999_v2_u35_spectral_cokernel_proof",
+              "connes1999_v2_u36_trace_class_corollary"
+            ],
+            "title": "Analytic continuation becomes a spectral annihilator condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u32_homogeneous_distributions_lfactor",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u32_homogeneous_distributions_lfactor",
+          "spontaneous_reading": "The Euler product is recast as a mismatch of normalizations between a global homogeneous integral and a restricted tensor product of locally normalized distributions."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u32_homogeneous_distributions_lfactor",
+          "source_grounded_mathematics": "A quasi-character X=X_0|.|^s is decomposed into local factors. At unramified finite places a homogeneous distribution is normalized on the maximal compact ring, the local relation contributes 1-X_{0,v}(pi_v)q_v^{-s}, and the restricted tensor product Delta'_s is defined. For Re(s)>1 the convergent global integral Delta_s satisfies Delta_s=L(X_0,s)Delta'_s, while Delta'_s is holomorphic for Re(s)>0.",
+          "conceptual_reading": "Local normalization isolates the universal Euler factors from a holomorphic distributional remainder. This factorization makes an analytic scalar, the L-function, available as an obstruction to the range of a later transform.",
+          "representation_or_bridge": "Homogeneous local distributions and their restricted tensor product bridge multiplicative character data on ideles with an additive distribution on the Adele ring; L(X_0,s) is exactly the global normalization scalar.",
+          "boundary_or_failure": "The unit establishes the factorization in its convergence region and the holomorphic normalized family, but it does not by itself identify a Hilbert-space spectrum or infer anything about zero locations.",
+          "uncertainty": "Moderate: the local Euler-factor displays are formula-dense and extraction-sensitive, so exact constants and exponents require source-image verification before computational reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the exact bridge from Tate–Iwasawa analysis to a Hilbert-space range condition.",
+      "line_end": 2925,
+      "line_start": 2736,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Poisson and Mellin formulas are central; prose supplies the convergence argument.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses self-duality of the global-field lattice to derive E(f)(x)=E(f-hat)(1/x) on the two-vanishing-condition space, then proves rapid decay at both ends and extends the L-factor identity into the half-plane.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson summation gives inversion and rapid decay of the orbit sum",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u33_poisson_rapid_decay.txt",
+      "unit_bytes": 7962,
+      "unit_id": "connes1999_v2_u33_poisson_rapid_decay",
+      "unit_sha256": "471bc6c1cbd6726cbfb77d9b611913ffe0fde7af2877b3e06b847c2587bf6e8b",
+      "unit_type": "functional-equation-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u33_poisson_rapid_decay.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2728,
+          "line_end": 2735,
+          "text": "       Thus one gets ∆s =    (1 − X0,v (π) qv−s )−1  ∆′s = L(X0 , s) ∆′s.\n                               v finite\n                                v/∈P\n\n\n     By construction ∆′s makes sense whenever σ > 0 and is a holomorphic\nfunction of s (for fixed f ). Let us review biefly (cf [W2]) how to extend the\ndefinition of ∆s .\n",
+          "sha256": "2248947c362a1f8594ad14d834d8c68aabd3dd08f48b7d5a7a6f7af82a224c18"
+        },
+        "after": {
+          "line_start": 2926,
+          "line_end": 2933,
+          "text": "\n\n\nApproximate units in the Sobolev spaces L2δ (Ck )\n    We first consider, for δ > 1, the Hilbert space L2δ (R) of functions ξ(u),\nu ∈ R with square norm given by\n                          Z\n(1)                          |ξ(u)|2 (1 + u2 )δ/2 du .\n",
+          "sha256": "b313a88a541452786c79b0468c41a1b11872dc3a146b271c1ff9afe02b7bb81b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix I Proof of theorem 1",
+            "line_end": 3424,
+            "line_start": 2539,
+            "mathematical_role": "Supplies homogeneous-distribution, Poisson-summation, Sobolev, and cokernel-annihilator machinery underlying the spectral theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2925,
+          "line_start": 2736,
+          "title": "Poisson summation gives inversion and rapid decay of the orbit sum",
+          "unit_id": "connes1999_v2_u33_poisson_rapid_decay",
+          "unit_type": "functional-equation-mechanism",
+          "why_material": "Uses self-duality of the global-field lattice to derive E(f)(x)=E(f-hat)(1/x) on the two-vanishing-condition space, then proves rapid decay at both ends and extends the L-factor identity into the half-plane."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the exact bridge from Tate–Iwasawa analysis to a Hilbert-space range condition.",
+          "representation_dependency": "Poisson and Mellin formulas are central; prose supplies the convergence argument.",
+          "unit_id": "connes1999_v2_u33_poisson_rapid_decay"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2735,
+            "line_start": 2539,
+            "title": "L-functions normalize global homogeneous distributions",
+            "unit_id": "connes1999_v2_u32_homogeneous_distributions_lfactor",
+            "unit_type": "analytic-factorization",
+            "why_material": "Builds local homogeneous distributions, normalizes unramified factors, forms their restricted tensor product, and shows that the Euler-product L-function is exactly the scalar relating the convergent global integral to the holomorphic normalized distribution."
+          },
+          {
+            "line_end": 3040,
+            "line_start": 2929,
+            "title": "Band-limited approximate units in weighted regular representations",
+            "unit_id": "connes1999_v2_u34_sobolev_approximate_units",
+            "unit_type": "functional-analysis-tool",
+            "why_material": "Constructs uniformly bounded approximate identities with compact Fourier support in weighted translation spaces and transports them to the idele class group, allowing the cokernel analysis to reduce to compact spectral support."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Poisson summation and homogeneous distributions factor the orbit-sum Mellin transform by L; band-limited approximation then makes zeros, their orders, and allowed distribution derivatives precisely characterize the cokernel spectrum and trace.",
+            "limit": "The Sobolev exponent truncates observed multiplicity and this appendix result is the preliminary critical-line model, not the later delta-free global theorem.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u32_homogeneous_distributions_lfactor",
+              "connes1999_v2_u33_poisson_rapid_decay",
+              "connes1999_v2_u34_sobolev_approximate_units",
+              "connes1999_v2_u35_spectral_cokernel_proof",
+              "connes1999_v2_u36_trace_class_corollary"
+            ],
+            "title": "Analytic continuation becomes a spectral annihilator condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u33_poisson_rapid_decay",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u33_poisson_rapid_decay",
+          "spontaneous_reading": "Two vanishing moments remove the defect terms in Poisson summation, turning the orbit sum into an inversion-symmetric, rapidly decaying object whose Mellin transform can be continued safely."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u33_poisson_rapid_decay",
+          "source_grounded_mathematics": "For f in S(A)_0 with f(0)=0 and integral f=0, the orbit sum E(f)(g)=|g|^{1/2} sum_{q in k*} f(qg) converges absolutely. Self-duality of the lattice k in A and Poisson summation give E(f)(x)=E(f-hat)(1/x). A lattice estimate gives rapid decay for large module, inversion gives decay at the other end, and consequently the Mellin pairing equals a nonzero constant times L(X_0,s)Delta'_s(f) for Re(s)>0.",
+          "conceptual_reading": "The functional equation is realized before the L-function appears: Poisson duality acts directly on the orbit-sum representation. Cancellation conditions remove boundary modes, and rapid decay converts the formal symmetry into an analytic tool.",
+          "representation_or_bridge": "The orbit-sum map E is the bridge from Bruhat-Schwartz functions on A to functions on C_k; its Mellin transform factors through the normalized homogeneous distribution and L(X_0,s).",
+          "boundary_or_failure": "Both vanishing conditions are essential to remove the Poisson defect. The detailed decay proof is presented for number fields with the general case declared similar, and the Haar-normalization constant remains unspecified.",
+          "uncertainty": "Moderate: the prose and main identities are coherent, but several Fourier symbols and layout-sensitive formulas are degraded in extraction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the dual weighted-space pairing and growth bound needed for the later distribution argument.",
+      "line_end": 3040,
+      "line_start": 2929,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Estimate-dependent but extraction is sufficiently coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs uniformly bounded approximate identities with compact Fourier support in weighted translation spaces and transports them to the idele class group, allowing the cokernel analysis to reduce to compact spectral support.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        60,
+        61
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Band-limited approximate units in weighted regular representations",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u34_sobolev_approximate_units.txt",
+      "unit_bytes": 4042,
+      "unit_id": "connes1999_v2_u34_sobolev_approximate_units",
+      "unit_sha256": "629d3312f824515babd0880dbb1b4b7f7965b735c3ef6c68fa66d60ce25c66d8",
+      "unit_type": "functional-analysis-tool",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u34_sobolev_approximate_units.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2921,
+          "line_end": 2928,
+          "text": "measure d∗ x on Ck .\nProof. For σ = Re(s) > 1, the equality follows from lemma 1, but since both\nsides are analytic in s it holds in general.\n    As in lemma 1, we shall continue to use the notation ∆s (f ) for σ =\nRe(s) > 0.\n\n\n\n",
+          "sha256": "931429f15593bee24f49028b23b2833df60e01cf9601560a16208ec51c975504"
+        },
+        "after": {
+          "line_start": 3041,
+          "line_end": 3048,
+          "text": "\n\n\nProof of theorem III 1\n    We first consider the subspace of codimension 2 of S(A) given by\n                                       Z\n(1)                        f (0) = 0 ,   f dx = 0 .\n\n",
+          "sha256": "77a702873fe468f4eed68d22d5db579fdfc0853f8e49a59614ef3df26620b6df"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix I Proof of theorem 1",
+            "line_end": 3424,
+            "line_start": 2539,
+            "mathematical_role": "Supplies homogeneous-distribution, Poisson-summation, Sobolev, and cokernel-annihilator machinery underlying the spectral theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3040,
+          "line_start": 2929,
+          "title": "Band-limited approximate units in weighted regular representations",
+          "unit_id": "connes1999_v2_u34_sobolev_approximate_units",
+          "unit_type": "functional-analysis-tool",
+          "why_material": "Constructs uniformly bounded approximate identities with compact Fourier support in weighted translation spaces and transports them to the idele class group, allowing the cokernel analysis to reduce to compact spectral support."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the dual weighted-space pairing and growth bound needed for the later distribution argument.",
+          "representation_dependency": "Estimate-dependent but extraction is sufficiently coherent.",
+          "unit_id": "connes1999_v2_u34_sobolev_approximate_units"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2925,
+            "line_start": 2736,
+            "title": "Poisson summation gives inversion and rapid decay of the orbit sum",
+            "unit_id": "connes1999_v2_u33_poisson_rapid_decay",
+            "unit_type": "functional-equation-mechanism",
+            "why_material": "Uses self-duality of the global-field lattice to derive E(f)(x)=E(f-hat)(1/x) on the two-vanishing-condition space, then proves rapid decay at both ends and extends the L-factor identity into the half-plane."
+          },
+          {
+            "line_end": 3374,
+            "line_start": 3044,
+            "title": "Zeros characterize the annihilator of the orbit-sum range",
+            "unit_id": "connes1999_v2_u35_spectral_cokernel_proof",
+            "unit_type": "proof-of-spectral-identification",
+            "why_material": "Decomposes the dual by compact characters, Mellin-transforms annihilators of Im(E), uses L(1/2+it) times the transformed distribution equals zero, and identifies the allowed delta derivatives with zero multiplicity and Sobolev order, yielding the cokernel generator's Jordan spectrum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Poisson summation and homogeneous distributions factor the orbit-sum Mellin transform by L; band-limited approximation then makes zeros, their orders, and allowed distribution derivatives precisely characterize the cokernel spectrum and trace.",
+            "limit": "The Sobolev exponent truncates observed multiplicity and this appendix result is the preliminary critical-line model, not the later delta-free global theorem.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u32_homogeneous_distributions_lfactor",
+              "connes1999_v2_u33_poisson_rapid_decay",
+              "connes1999_v2_u34_sobolev_approximate_units",
+              "connes1999_v2_u35_spectral_cokernel_proof",
+              "connes1999_v2_u36_trace_class_corollary"
+            ],
+            "title": "Analytic continuation becomes a spectral annihilator condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u34_sobolev_approximate_units",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u34_sobolev_approximate_units",
+          "spontaneous_reading": "Uniformly bounded approximate identities with expanding compact Fourier support let the proof localize spectra without losing control in a weighted, nonunitary representation."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u34_sobolev_approximate_units",
+          "source_grounded_mathematics": "For delta>1, weighted L2_delta(R) supports translations with norm bounded by the weight. Rescaling a Schwartz function whose Fourier transform is compactly supported and equals one near zero gives f_n with uniformly bounded V(f_n), compact Fourier support, and strong convergence V(f_n) to the identity. Decomposition of C_k into its compact kernel and module range transports the construction to L2_delta(C_k), whose dual is L2_{-delta}(C_k).",
+          "conceptual_reading": "Compact spectral localization is made compatible with a nonunitary weighted action by combining strong approximation with a uniform operator bound. This permits later annihilator arguments to start on band-limited vectors and extend by density.",
+          "representation_or_bridge": "The approximate units bridge the physical weighted translation representation and compact support on the character-frequency side; the L2_delta/L2_{-delta} pairing carries orthogonality to the orbit-sum range.",
+          "boundary_or_failure": "The construction assumes delta>1 and a quasicompact modulated group. It supplies localization and density, not the zero-spectrum identification itself.",
+          "uncertainty": "Moderate: the norm-growth line for translations is visibly damaged in extraction, though the preceding estimate and approximate-unit conclusion are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the converse construction from derivatives of homogeneous distributions, so the spectral characterization is bidirectional.",
+      "line_end": 3374,
+      "line_start": 3044,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely formula-sensitive; the distribution-support logic is clear, but multiplicity bounds should be verified from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes the dual by compact characters, Mellin-transforms annihilators of Im(E), uses L(1/2+it) times the transformed distribution equals zero, and identifies the allowed delta derivatives with zero multiplicity and Sobolev order, yielding the cokernel generator's Jordan spectrum.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeros characterize the annihilator of the orbit-sum range",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u35_spectral_cokernel_proof.txt",
+      "unit_bytes": 13547,
+      "unit_id": "connes1999_v2_u35_spectral_cokernel_proof",
+      "unit_sha256": "4d2038f7a552359bfa6c4f969098b58b5cbead894b126789f0d04e8bfd35e553",
+      "unit_type": "proof-of-spectral-identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u35_spectral_cokernel_proof.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3036,
+          "line_end": 3043,
+          "text": "Lemma 5. There exists an approximate unit fn ∈ S(Ck ), such that fbn has\ncompact support, kV (fn )k ≤ C ∀ n, and\n\n                        V (fn ) → 1 strongly in L2δ (Ck ) .\n\n\n\n\n",
+          "sha256": "8b72e54f383351f32fb901af7870d469e5e6eb8657bb5b9ac49aa7abc0cce5b5"
+        },
+        "after": {
+          "line_start": 3375,
+          "line_end": 3382,
+          "text": "    Let us now prove the corollary. Let us fix h0 ∈ S(Ck ) such that b  h0 has\n                                            b\ncompact support contained in {X0 } × R and h0 (X0 , s) = 1 for s small.\n    Let then hs be given by hs (g) = h0 (g) |g|is. The Fourier transform b\n                                                                         hs is\nthen the translate of b\n                      h0 , and one can choose h0 such that,\n                                X\n",
+          "sha256": "6a86f62ed1084ec9e3da9bec1bbda29ee8ba9e2b05c5c6b9ac9afd7b81aaaa09"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix I Proof of theorem 1",
+            "line_end": 3424,
+            "line_start": 2539,
+            "mathematical_role": "Supplies homogeneous-distribution, Poisson-summation, Sobolev, and cokernel-annihilator machinery underlying the spectral theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3374,
+          "line_start": 3044,
+          "title": "Zeros characterize the annihilator of the orbit-sum range",
+          "unit_id": "connes1999_v2_u35_spectral_cokernel_proof",
+          "unit_type": "proof-of-spectral-identification",
+          "why_material": "Decomposes the dual by compact characters, Mellin-transforms annihilators of Im(E), uses L(1/2+it) times the transformed distribution equals zero, and identifies the allowed delta derivatives with zero multiplicity and Sobolev order, yielding the cokernel generator's Jordan spectrum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the converse construction from derivatives of homogeneous distributions, so the spectral characterization is bidirectional.",
+          "representation_dependency": "Extremely formula-sensitive; the distribution-support logic is clear, but multiplicity bounds should be verified from the scan.",
+          "unit_id": "connes1999_v2_u35_spectral_cokernel_proof"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3040,
+            "line_start": 2929,
+            "title": "Band-limited approximate units in weighted regular representations",
+            "unit_id": "connes1999_v2_u34_sobolev_approximate_units",
+            "unit_type": "functional-analysis-tool",
+            "why_material": "Constructs uniformly bounded approximate identities with compact Fourier support in weighted translation spaces and transports them to the idele class group, allowing the cokernel analysis to reduce to compact spectral support."
+          },
+          {
+            "line_end": 3421,
+            "line_start": 3375,
+            "title": "Schwartz convolution is trace class with zero sum trace",
+            "unit_id": "connes1999_v2_u36_trace_class_corollary",
+            "unit_type": "spectral-trace-consequence",
+            "why_material": "Uses compact Fourier localization and zero-density growth to show Schwartz averages of the cokernel representation are trace class and computes their trace as the critical-zero sum with theorem-controlled multiplicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Poisson summation and homogeneous distributions factor the orbit-sum Mellin transform by L; band-limited approximation then makes zeros, their orders, and allowed distribution derivatives precisely characterize the cokernel spectrum and trace.",
+            "limit": "The Sobolev exponent truncates observed multiplicity and this appendix result is the preliminary critical-line model, not the later delta-free global theorem.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u32_homogeneous_distributions_lfactor",
+              "connes1999_v2_u33_poisson_rapid_decay",
+              "connes1999_v2_u34_sobolev_approximate_units",
+              "connes1999_v2_u35_spectral_cokernel_proof",
+              "connes1999_v2_u36_trace_class_corollary"
+            ],
+            "title": "Analytic continuation becomes a spectral annihilator condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u35_spectral_cokernel_proof",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u35_spectral_cokernel_proof",
+          "spontaneous_reading": "Zeros become spectral data because annihilating the orbit-sum range forces a compactly supported Mellin distribution to be killed by multiplication by L; such distributions can live only at zeros, with derivatives recording Jordan depth."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u35_spectral_cokernel_proof",
+          "source_grounded_mathematics": "The orbit-sum map E embeds the separated completion isometrically into L2_delta(C_k), intertwining the C_k action with a half-module twist. The orthogonal complement of Im(E) is decomposed by compact characters. After band limitation, Mellin transformation turns orthogonality into L(X_0,1/2+it) times psi-hat(t)=0. Distribution theory then makes psi-hat a finite combination of delta derivatives at zeros; zero order and Sobolev membership bound the derivative order. Conversely, derivatives of homogeneous distributions at a zero annihilate Im(E), and the induced action is triangular, producing the stated Jordan spectrum.",
+          "conceptual_reading": "The cokernel changes analytic vanishing into linear-algebraic failure of surjectivity. Multiplicity is not merely repeated eigenvalue counting: derivatives supported at a zero supply generalized eigenvectors and hence Jordan structure.",
+          "representation_or_bridge": "The decisive bridge chain is E-range to annihilator, compact-character decomposition to Mellin distributions, multiplication by L to support at its zeros, and delta derivatives to generalized eigenvectors of the transposed representation.",
+          "boundary_or_failure": "The result concerns the preliminary weighted cokernel model and observes only multiplicity allowed by the Sobolev exponent. It relies on compact spectral support, growth bounds for L, and the two defining cancellations in S(A)_0; it is not the later delta-free global trace theorem.",
+          "uncertainty": "Moderate to high for exact bounds: the extracted Sobolev inequality near the delta-derivative condition is internally garbled, so the precise cutoff must be checked against the source image; the support-at-zeros mechanism is clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the proof package for the preliminary spectral interpretation.",
+      "line_end": 3421,
+      "line_start": 3375,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula and multiplicity notation are essential.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses compact Fourier localization and zero-density growth to show Schwartz averages of the cokernel representation are trace class and computes their trace as the critical-zero sum with theorem-controlled multiplicity.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        68
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Schwartz convolution is trace class with zero sum trace",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u36_trace_class_corollary.txt",
+      "unit_bytes": 1948,
+      "unit_id": "connes1999_v2_u36_trace_class_corollary",
+      "unit_sha256": "bfd3e7bea09b6eb5acc801fdb4e698cd64d16822ba30803fac4b1c07c2be5ab1",
+      "unit_type": "spectral-trace-consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u36_trace_class_corollary.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3367,
+          "line_end": 3374,
+          "text": "L X0 , 12 + is 6= 0 then is does not belong to the spectrum of DX\n                                                                t\n                                                                  0\n                                                                    .\n                                                    t\n    This determines the spectrum of the operator DX   0\n                                                        and hence of its trans-\npose DX0 as indicated in Theorem 1 and ends the proof of theorem 1.\n",
+          "sha256": "5f9460726e86a100f16f12a6ac46b7974684f04c2da791cff4a0cffa7e5e4c46"
+        },
+        "after": {
+          "line_start": 3422,
+          "line_end": 3429,
+          "text": "\n\n\nAppendix II. Explicit formulas\n      Let us first recall the Weil explicit formulas ([W3]). One lets k be a global\nfield. One identifies the quotient Ck /Ck,1 with the range of the module,\n\n(1)                        N = {|g| ; g ∈ Ck } ⊂ R∗+ .\n",
+          "sha256": "2a03f0347de5bd0b1823a4c47c120efc9e6c0647a85ef54c82e4a6a2a7a1d714"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix I Proof of theorem 1",
+            "line_end": 3424,
+            "line_start": 2539,
+            "mathematical_role": "Supplies homogeneous-distribution, Poisson-summation, Sobolev, and cokernel-annihilator machinery underlying the spectral theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3421,
+          "line_start": 3375,
+          "title": "Schwartz convolution is trace class with zero sum trace",
+          "unit_id": "connes1999_v2_u36_trace_class_corollary",
+          "unit_type": "spectral-trace-consequence",
+          "why_material": "Uses compact Fourier localization and zero-density growth to show Schwartz averages of the cokernel representation are trace class and computes their trace as the critical-zero sum with theorem-controlled multiplicity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Completes the proof package for the preliminary spectral interpretation.",
+          "representation_dependency": "Formula and multiplicity notation are essential.",
+          "unit_id": "connes1999_v2_u36_trace_class_corollary"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3374,
+            "line_start": 3044,
+            "title": "Zeros characterize the annihilator of the orbit-sum range",
+            "unit_id": "connes1999_v2_u35_spectral_cokernel_proof",
+            "unit_type": "proof-of-spectral-identification",
+            "why_material": "Decomposes the dual by compact characters, Mellin-transforms annihilators of Im(E), uses L(1/2+it) times the transformed distribution equals zero, and identifies the allowed delta derivatives with zero multiplicity and Sobolev order, yielding the cokernel generator's Jordan spectrum."
+          },
+          {
+            "line_end": 3518,
+            "line_start": 3425,
+            "title": "Weil distribution as global term minus local principal values",
+            "unit_id": "connes1999_v2_u37_weil_distribution_principal_values",
+            "unit_type": "explicit-formula-foundation",
+            "why_material": "Defines the zero sum and Weil distribution, decomposes it into discriminant, global, and placewise local terms, and records the normalized local principal values whose positivity is equivalent to RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Poisson summation and homogeneous distributions factor the orbit-sum Mellin transform by L; band-limited approximation then makes zeros, their orders, and allowed distribution derivatives precisely characterize the cokernel spectrum and trace.",
+            "limit": "The Sobolev exponent truncates observed multiplicity and this appendix result is the preliminary critical-line model, not the later delta-free global theorem.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u32_homogeneous_distributions_lfactor",
+              "connes1999_v2_u33_poisson_rapid_decay",
+              "connes1999_v2_u34_sobolev_approximate_units",
+              "connes1999_v2_u35_spectral_cokernel_proof",
+              "connes1999_v2_u36_trace_class_corollary"
+            ],
+            "title": "Analytic continuation becomes a spectral annihilator condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u36_trace_class_corollary",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u36_trace_class_corollary",
+          "spontaneous_reading": "A compact-frequency partition plus local zero-count growth upgrades the spectral identification into a trace-class functional calculus whose trace is the zero sum."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u36_trace_class_corollary",
+          "source_grounded_mathematics": "Translated test functions h_s provide a compact-Fourier-support partition. The ranges of the localized transposed operators have dimension of order log|s|, matching the number of relevant L-function zeros in translated bounded intervals. Schwartz decay and polynomial representation growth then make W^t(h), hence W(h), trace class, and triangularity gives Trace W(h) as the sum of h-hat(X,rho) over zeros L(X,1/2+rho)=0 on rho in iR, with theorem-controlled multiplicity.",
+          "conceptual_reading": "Localization turns a discrete spectral description into a summable trace formula. The trace forgets nilpotent off-diagonal Jordan data while retaining eigenvalues with the multiplicities permitted by the Sobolev model.",
+          "representation_or_bridge": "The bridge objects are the Fourier-localized convolution operators W(h*h_n), whose finite-dimensional ranges tile frequency space and whose traces assemble into the critical-zero sum.",
+          "boundary_or_failure": "Trace class depends on Schwartz decay, polynomial action growth, and local zero-density estimates. The corollary is tied to the preliminary critical-line cokernel representation and does not assert that all nontrivial zeros lie there.",
+          "uncertainty": "Moderate: the trace formula is readable, but character extensions, half-shifts, and multiplicity notation are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the test-function growth hypotheses and field-dependent normalization context.",
+      "line_end": 3518,
+      "line_start": 3425,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dense and sensitive to Archimedean principal-value conventions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the zero sum and Weil distribution, decomposes it into discriminant, global, and placewise local terms, and records the normalized local principal values whose positivity is equivalent to RH.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        69,
+        70
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil distribution as global term minus local principal values",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u37_weil_distribution_principal_values.txt",
+      "unit_bytes": 3880,
+      "unit_id": "connes1999_v2_u37_weil_distribution_principal_values",
+      "unit_sha256": "c6cb27712e34b780672ad17b44827b65427cd8dd977be42a155a81d99639e254",
+      "unit_type": "explicit-formula-foundation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u37_weil_distribution_principal_values.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3417,
+          "line_end": 3424,
+          "text": "                                 Z\n(38)                  b\n                      h(X , ρ) =   h(u) Xe(u) |u|ρ d∗ u .\n                                   Ck\n\n\n\n\n",
+          "sha256": "5418b57ea16b6b69de018ddd6f4959e01c33cc7a84ae817d5aae2aad3b639d0c"
+        },
+        "after": {
+          "line_start": 3519,
+          "line_end": 3526,
+          "text": "       Let us make the following change of variables,\n\n(12)                         |g|−1/2 h(g −1 ) = F (|g|) X0 (g) ,\n\nand rewrite the above equality in terms of h.\n       By (3) one has,\n                             \u0012            \u0013       Z\n                                 1\n",
+          "sha256": "71eb6ae82536332e799cf5690801ed02b03b3e309474ee553492e701407bfbfd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix II Explicit formulas",
+            "line_end": 4060,
+            "line_start": 3425,
+            "mathematical_role": "Rewrites Weil's explicit formula in trace notation and proves agreement of local principal-value normalizations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3518,
+          "line_start": 3425,
+          "title": "Weil distribution as global term minus local principal values",
+          "unit_id": "connes1999_v2_u37_weil_distribution_principal_values",
+          "unit_type": "explicit-formula-foundation",
+          "why_material": "Defines the zero sum and Weil distribution, decomposes it into discriminant, global, and placewise local terms, and records the normalized local principal values whose positivity is equivalent to RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the test-function growth hypotheses and field-dependent normalization context.",
+          "representation_dependency": "Formula-dense and sensitive to Archimedean principal-value conventions.",
+          "unit_id": "connes1999_v2_u37_weil_distribution_principal_values"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3421,
+            "line_start": 3375,
+            "title": "Schwartz convolution is trace class with zero sum trace",
+            "unit_id": "connes1999_v2_u36_trace_class_corollary",
+            "unit_type": "spectral-trace-consequence",
+            "why_material": "Uses compact Fourier localization and zero-density growth to show Schwartz averages of the cokernel representation are trace class and computes their trace as the critical-zero sum with theorem-controlled multiplicity."
+          },
+          {
+            "line_end": 3617,
+            "line_start": 3519,
+            "title": "Rewriting Weil's explicit formula in trace-test notation",
+            "unit_id": "connes1999_v2_u38_explicit_formula_rewriting",
+            "unit_type": "representation-change",
+            "why_material": "Changes variables from radial F to the trace test function h, identifies Mellin transforms with character Fourier transforms, and rewrites the zero sum as trivial terms minus placewise fixed-point integrals, valid initially on the stated test class and unconditionally when h(1)=0."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Fourier-vanishing local principal value chosen by the operator cutoff agrees place by place with Weil's normalization, while additive-character shifts account exactly for the differential-idele term in the global formula.",
+            "limit": "Several constants are formula-layer sensitive and require scan verification before exact computational reuse.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u12_local_cutoff_trace_theorem",
+              "connes1999_v2_u37_weil_distribution_principal_values",
+              "connes1999_v2_u38_explicit_formula_rewriting",
+              "connes1999_v2_u39_local_principal_value_identification",
+              "connes1999_v2_u40_character_shift_global_formula",
+              "connes1999_v2_u41_modulated_haar_normalization"
+            ],
+            "title": "Cutoff normalization exactly matches the number-theoretic explicit formula"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u37_weil_distribution_principal_values",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u37_weil_distribution_principal_values",
+          "spontaneous_reading": "The explicit formula packages zeros into a single global distribution whose nontrivial arithmetic content is the subtraction of one normalized singular local distribution at every place."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u37_weil_distribution_principal_values",
+          "source_grounded_mathematics": "For a test function F on the module range with stated two-sided growth, Phi is its Mellin transform and S(X,F) sums Phi(rho) with L-zero orders in the open critical strip. Weil's distribution is Delta=log|d^{-1}| delta_1+D-sum_v D_v. The global term D integrates against |w|^{1/2}+|w|^{-1/2}; each D_v is a pushforward from k_v* of a singular kernel |u|^{1/2}/|1-u| using a prescribed local principal value.",
+          "conceptual_reading": "The explicit formula is a decomposition of a global spectral distribution into an identity contribution, a smooth global term, and renormalized local fixed-point terms. The principal-value convention is part of the mathematics, not removable notation.",
+          "representation_or_bridge": "Delta bridges the zero sum S(X,F) with placewise distributions on local multiplicative groups embedded in C_k. The differential idele and normalized Haar measures coordinate the local pieces globally.",
+          "boundary_or_failure": "The formula requires the stated test-function growth and place-specific principal-value normalizations. This unit states the distributional formula; it does not yet prove that the cutoff-selected local prescription is the same one.",
+          "uncertainty": "Moderate: Archimedean principal-value constants and several displayed exponents are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the exact algebraic bridge between the number-theoretic explicit formula and the geometric trace expression.",
+      "line_end": 3617,
+      "line_start": 3519,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Inversion and half-power conventions are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Changes variables from radial F to the trace test function h, identifies Mellin transforms with character Fourier transforms, and rewrites the zero sum as trivial terms minus placewise fixed-point integrals, valid initially on the stated test class and unconditionally when h(1)=0.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        71
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rewriting Weil's explicit formula in trace-test notation",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u38_explicit_formula_rewriting.txt",
+      "unit_bytes": 3916,
+      "unit_id": "connes1999_v2_u38_explicit_formula_rewriting",
+      "unit_sha256": "4fc48edd62ea8da946f175e74cc54eb9ac3e755f78c98f8655a6edcedd0cf2f6",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u38_explicit_formula_rewriting.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3511,
+          "line_end": 3518,
+          "text": "\n           f0 (ν) = inf(ν 1/2 , ν −1/2 )              ∀ ν ∈ R∗+ ,       f1 = f0−1 − f0 .\n\nThe Weil explicit formula is then,\nTheorem 1. ([W]) With the above notations one has S(X , F ) = ∆(F (|w|)\nX (w)).\n     We shall now elaborate on this formula and in particular compare the\nprincipal values P f w with those of theorem V.3.\n",
+          "sha256": "0fd915afcd4a9d5c7f661a25273096b65cacf183bdb869629fbc9be5ab251992"
+        },
+        "after": {
+          "line_start": 3618,
+          "line_end": 3625,
+          "text": "    Let us now compare the Weil Principal values, with those dictated by\ntheorem V.3. We first work with a local field K and compare (9), (10) with\n\n                                                   71\n\n<!-- source-page: 72 -->\n\nour prescription. Let first K be non Archimedean. Let α be a character of K\n",
+          "sha256": "c8fc274f42613b1ce89a7d8ff1c88045dd017ebce81602d90e65f5f307f50623"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix II Explicit formulas",
+            "line_end": 4060,
+            "line_start": 3425,
+            "mathematical_role": "Rewrites Weil's explicit formula in trace notation and proves agreement of local principal-value normalizations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3617,
+          "line_start": 3519,
+          "title": "Rewriting Weil's explicit formula in trace-test notation",
+          "unit_id": "connes1999_v2_u38_explicit_formula_rewriting",
+          "unit_type": "representation-change",
+          "why_material": "Changes variables from radial F to the trace test function h, identifies Mellin transforms with character Fourier transforms, and rewrites the zero sum as trivial terms minus placewise fixed-point integrals, valid initially on the stated test class and unconditionally when h(1)=0."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the exact algebraic bridge between the number-theoretic explicit formula and the geometric trace expression.",
+          "representation_dependency": "Inversion and half-power conventions are formula-sensitive.",
+          "unit_id": "connes1999_v2_u38_explicit_formula_rewriting"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3518,
+            "line_start": 3425,
+            "title": "Weil distribution as global term minus local principal values",
+            "unit_id": "connes1999_v2_u37_weil_distribution_principal_values",
+            "unit_type": "explicit-formula-foundation",
+            "why_material": "Defines the zero sum and Weil distribution, decomposes it into discriminant, global, and placewise local terms, and records the normalized local principal values whose positivity is equivalent to RH."
+          },
+          {
+            "line_end": 3903,
+            "line_start": 3618,
+            "title": "Local cutoff principal values agree with Weil's",
+            "unit_id": "connes1999_v2_u39_local_principal_value_identification",
+            "unit_type": "normalization-proof",
+            "why_material": "Checks non-Archimedean, real, and complex local fields separately, using normalized basic characters and Fourier transforms of −log|u| to show that the cutoff-selected principal value is exactly Weil's local prescription."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Fourier-vanishing local principal value chosen by the operator cutoff agrees place by place with Weil's normalization, while additive-character shifts account exactly for the differential-idele term in the global formula.",
+            "limit": "Several constants are formula-layer sensitive and require scan verification before exact computational reuse.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u12_local_cutoff_trace_theorem",
+              "connes1999_v2_u37_weil_distribution_principal_values",
+              "connes1999_v2_u38_explicit_formula_rewriting",
+              "connes1999_v2_u39_local_principal_value_identification",
+              "connes1999_v2_u40_character_shift_global_formula",
+              "connes1999_v2_u41_modulated_haar_normalization"
+            ],
+            "title": "Cutoff normalization exactly matches the number-theoretic explicit formula"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u38_explicit_formula_rewriting",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u38_explicit_formula_rewriting",
+          "spontaneous_reading": "A carefully chosen inversion and half-density twist converts Weil's radial test function into the same character-Fourier coordinates used by the trace representation."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u38_explicit_formula_rewriting",
+          "source_grounded_mathematics": "The substitution |g|^{-1/2}h(g^{-1})=F(|g|)X_0(g) identifies Phi(1/2+is) with the character Mellin transform h-hat(X_0,1/2+is) and confines Fourier support to the X_0 component. Evaluating the discriminant, global, and local terms rewrites Weil's equality as h-hat(0)+h-hat(1) minus the zero sum equals log|d|h(1) plus the sum of placewise principal-value integrals of h(u^{-1})/|1-u|.",
+          "conceptual_reading": "The representation change aligns number-theoretic and operator-trace test functions. Inversion exchanges the local argument, while the half-power twist centers spectral parameters at the critical line.",
+          "representation_or_bridge": "The bridge is the transformed test function h and its character Mellin transform; it carries Phi-values at L-function zeros directly into trace-test notation while preserving the local singular kernels.",
+          "boundary_or_failure": "The derivation initially covers finite linear combinations of tests of the displayed form; the text says this suffices when h(1)=0. Exact inversion and half-power conventions cannot be altered without changing the formula.",
+          "uncertainty": "Moderate: the algebraic route is explicit, but formula layout and character subscripts are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the complex-plane area computation because it closes the last normalization case rather than merely asserting agreement.",
+      "line_end": 3903,
+      "line_start": 3618,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Constant-heavy and OCR-sensitive; all exact constants require scan verification before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Checks non-Archimedean, real, and complex local fields separately, using normalized basic characters and Fourier transforms of −log|u| to show that the cutoff-selected principal value is exactly Weil's local prescription.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        72,
+        73,
+        74,
+        75,
+        76
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local cutoff principal values agree with Weil's",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u39_local_principal_value_identification.txt",
+      "unit_bytes": 13256,
+      "unit_id": "connes1999_v2_u39_local_principal_value_identification",
+      "unit_sha256": "229cecec6d4ad060d8723601a2c5f66a8cf1bc7dbce5bdcb78c8613a498d0edc",
+      "unit_type": "normalization-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u39_local_principal_value_identification.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3610,
+          "line_end": 3617,
+          "text": "\n                               X               Z\n                                                   h(u−1 ) ∗\n                                         Pfw               d u.\n                                 v             kv∗ |1 − u|\n\nWhich now holds for finite linear combinations of functions h of the form (12).\n       This is enough to conclude when h(1) = 0.\n",
+          "sha256": "9c123f6896233467bcc8da0fbf6c32e7f2f8b37f7ee110ab0c24b9a301188fb4"
+        },
+        "after": {
+          "line_start": 3904,
+          "line_end": 3911,
+          "text": "\nLemma 3. Let K be a local field, α0 a normalized character as above and α,\n                                                     R′\nα(x) = α0 (λx) an arbitrary character of K. Let         be defined as in theorem\nV.3 relative to α, then, for any test function f ,\n        Z ′                                          Z\n                     1     ∗                                    1\n            f (u)         d u = log |λ| f (1) + P f w f (u)         d∗ u .\n",
+          "sha256": "e4c22e9e4b27706666b23b24726cd1fb2b4b9573d2bba38cd5de502394960fde"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix II Explicit formulas",
+            "line_end": 4060,
+            "line_start": 3425,
+            "mathematical_role": "Rewrites Weil's explicit formula in trace notation and proves agreement of local principal-value normalizations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3903,
+          "line_start": 3618,
+          "title": "Local cutoff principal values agree with Weil's",
+          "unit_id": "connes1999_v2_u39_local_principal_value_identification",
+          "unit_type": "normalization-proof",
+          "why_material": "Checks non-Archimedean, real, and complex local fields separately, using normalized basic characters and Fourier transforms of −log|u| to show that the cutoff-selected principal value is exactly Weil's local prescription."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the complex-plane area computation because it closes the last normalization case rather than merely asserting agreement.",
+          "representation_dependency": "Constant-heavy and OCR-sensitive; all exact constants require scan verification before reuse.",
+          "unit_id": "connes1999_v2_u39_local_principal_value_identification"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3617,
+            "line_start": 3519,
+            "title": "Rewriting Weil's explicit formula in trace-test notation",
+            "unit_id": "connes1999_v2_u38_explicit_formula_rewriting",
+            "unit_type": "representation-change",
+            "why_material": "Changes variables from radial F to the trace test function h, identifies Mellin transforms with character Fourier transforms, and rewrites the zero sum as trivial terms minus placewise fixed-point integrals, valid initially on the stated test class and unconditionally when h(1)=0."
+          },
+          {
+            "line_end": 3980,
+            "line_start": 3905,
+            "title": "Changing the additive character shifts only the identity term",
+            "unit_id": "connes1999_v2_u40_character_shift_global_formula",
+            "unit_type": "normalization-covariance",
+            "why_material": "Shows how rescaling the basic additive character changes the selfdual Fourier transform and adds log|lambda| at the identity; summing local differential-idele shifts cancels the discriminant term and yields the global explicit formula in the cutoff normalization."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Fourier-vanishing local principal value chosen by the operator cutoff agrees place by place with Weil's normalization, while additive-character shifts account exactly for the differential-idele term in the global formula.",
+            "limit": "Several constants are formula-layer sensitive and require scan verification before exact computational reuse.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u12_local_cutoff_trace_theorem",
+              "connes1999_v2_u37_weil_distribution_principal_values",
+              "connes1999_v2_u38_explicit_formula_rewriting",
+              "connes1999_v2_u39_local_principal_value_identification",
+              "connes1999_v2_u40_character_shift_global_formula",
+              "connes1999_v2_u41_modulated_haar_normalization"
+            ],
+            "title": "Cutoff normalization exactly matches the number-theoretic explicit formula"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u39_local_principal_value_identification",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u39_local_principal_value_identification",
+          "spontaneous_reading": "The cutoff's apparently analytic regularization is pinned down arithmetically by a Fourier normalization condition, and separate computations show that this condition selects Weil's principal value at every kind of local field."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u39_local_principal_value_identification",
+          "source_grounded_mathematics": "For a normalized additive character and selfdual Haar measure, the cutoff prescription is the extension of 1/|1-u| whose Fourier transform vanishes at one. In the non-Archimedean case Parseval and the transform of the unit group show its value on the normalized test is zero, matching Weil. For R and C, Fourier transforms of -log|u| supply the finite-part constants; the complex case closes with an area asymptotic j(epsilon)=2pi log(1/epsilon)+o(1). Thus the two principal values agree for all local-field types treated.",
+          "conceptual_reading": "A normalization ambiguity in a singular distribution is resolved by Fourier duality. Agreement is structural only after the field-dependent selfdual measure and basic additive character are fixed.",
+          "representation_or_bridge": "The bridge object is the Fourier transform of -log|u|: it converts the vanishing-at-one normalization into the finite-part prescriptions used in Weil's local terms. The real and complex Gaussian tests determine the constants.",
+          "boundary_or_failure": "The proof is case-by-case and normalization-dependent. It identifies two regularizations; it does not make the singular integral ordinary or allow constants to be transferred across different additive-character conventions.",
+          "uncertainty": "High for exact constants in the extracted formulas, especially the Archimedean gamma and area computations; the conclusion and proof architecture are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends with Theorem 6, the precise global formula required by the main trace discussion.",
+      "line_end": 3980,
+      "line_start": 3905,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent, especially selfdual-measure scaling and the final zero sum.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how rescaling the basic additive character changes the selfdual Fourier transform and adds log|lambda| at the identity; summing local differential-idele shifts cancels the discriminant term and yields the global explicit formula in the cutoff normalization.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        77,
+        78
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Changing the additive character shifts only the identity term",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u40_character_shift_global_formula.txt",
+      "unit_bytes": 3328,
+      "unit_id": "connes1999_v2_u40_character_shift_global_formula",
+      "unit_sha256": "3256364841d11ff0bf245f43eda00959288b2fd2872e2eec61af41e420e085b2",
+      "unit_type": "normalization-covariance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u40_character_shift_global_formula.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3897,
+          "line_end": 3904,
+          "text": "so that j(ε) = 2π log(1/ε) + o(1) when ε → 0.\n     Thus we can assert that with the above choice of basic characters for\nlocal fields one has, for any test function f ,\n                Z ′                          Z\n                             1     ∗                   1\n(54)                f (u)         d u = P f w f (u)         d∗ u .\n                  K       |1 − u|                   |1 − u|\n\n",
+          "sha256": "f6a1472222bf3ea7bb9d6e4ad77b08ecc55d2ae8ee7bf83bb164f5b00ab861d0"
+        },
+        "after": {
+          "line_start": 3981,
+          "line_end": 3988,
+          "text": "Normalization of Haar measure on modulated group\n      We let G be a locally compact abelian group with a proper morphism,\n\n(1)                                   g → |g| , G → R∗+\n\nwhose range is cocompact in R∗+ .\n    There exists a unique Haar measure d∗ g on G such that\n                 Z\n",
+          "sha256": "69a1b6bbb7ea7053b8ccf7984bd7000370094c1e2d8e6391f1e4ad9f4a37afb8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix II Explicit formulas",
+            "line_end": 4060,
+            "line_start": 3425,
+            "mathematical_role": "Rewrites Weil's explicit formula in trace notation and proves agreement of local principal-value normalizations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3980,
+          "line_start": 3905,
+          "title": "Changing the additive character shifts only the identity term",
+          "unit_id": "connes1999_v2_u40_character_shift_global_formula",
+          "unit_type": "normalization-covariance",
+          "why_material": "Shows how rescaling the basic additive character changes the selfdual Fourier transform and adds log|lambda| at the identity; summing local differential-idele shifts cancels the discriminant term and yields the global explicit formula in the cutoff normalization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Ends with Theorem 6, the precise global formula required by the main trace discussion.",
+          "representation_dependency": "Formula-dependent, especially selfdual-measure scaling and the final zero sum.",
+          "unit_id": "connes1999_v2_u40_character_shift_global_formula"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3903,
+            "line_start": 3618,
+            "title": "Local cutoff principal values agree with Weil's",
+            "unit_id": "connes1999_v2_u39_local_principal_value_identification",
+            "unit_type": "normalization-proof",
+            "why_material": "Checks non-Archimedean, real, and complex local fields separately, using normalized basic characters and Fourier transforms of −log|u| to show that the cutoff-selected principal value is exactly Weil's local prescription."
+          },
+          {
+            "line_end": 4057,
+            "line_start": 3981,
+            "title": "Canonical Haar measure for modulated groups",
+            "unit_id": "connes1999_v2_u41_modulated_haar_normalization",
+            "unit_type": "measure-normalization",
+            "why_material": "Derives the unique Haar normalization from logarithmic growth of the module range, treats continuous and discrete ranges, and proves compatibility with quotienting by compact subgroups."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Fourier-vanishing local principal value chosen by the operator cutoff agrees place by place with Weil's normalization, while additive-character shifts account exactly for the differential-idele term in the global formula.",
+            "limit": "Several constants are formula-layer sensitive and require scan verification before exact computational reuse.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u12_local_cutoff_trace_theorem",
+              "connes1999_v2_u37_weil_distribution_principal_values",
+              "connes1999_v2_u38_explicit_formula_rewriting",
+              "connes1999_v2_u39_local_principal_value_identification",
+              "connes1999_v2_u40_character_shift_global_formula",
+              "connes1999_v2_u41_modulated_haar_normalization"
+            ],
+            "title": "Cutoff normalization exactly matches the number-theoretic explicit formula"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u40_character_shift_global_formula",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u40_character_shift_global_formula",
+          "spontaneous_reading": "Changing the additive character perturbs each local regularization only at the identity, so the differential idele can gather those local shifts and cancel the discriminant term globally."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u40_character_shift_global_formula",
+          "source_grounded_mathematics": "If alpha(x)=alpha_0(lambda x), the selfdual measure and Fourier transform rescale, and the local cutoff principal value changes by log|lambda| f(1). Globally, a character of A/k has local factors alpha_v(x)=alpha_{0,v}(d_v x) for a differential idele d. Summing the log|d_v| identity shifts absorbs the discriminant contribution and yields Theorem 6: for compactly supported h, h-hat(0)+h-hat(1) minus the L-zero sum equals the sum of locally normalized singular integrals.",
+          "conceptual_reading": "Normalization covariance is concentrated in a one-dimensional defect supported at the identity. The product formula for the differential idele makes these local defects assemble into the exact global correction rather than an arbitrary constant.",
+          "representation_or_bridge": "The differential idele d and selfdual local Fourier measures bridge arbitrary global additive characters to the normalized local principal values, producing the cutoff-normalized global explicit formula.",
+          "boundary_or_failure": "The theorem assumes a nontrivial character of A/k, its associated local normalizations, and compact support of h. A different normalization changes identity terms, so the displayed global cancellation is not convention-free.",
+          "uncertainty": "Moderate: the rescaling mechanism is explicit, but selfdual-measure powers and the final zero-sum layout are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the common normalization silently used for local isotropy and global idele-class measures.",
+      "line_end": 4057,
+      "line_start": 3981,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Elementary formulas are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the unique Haar normalization from logarithmic growth of the module range, treats continuous and discrete ranges, and proves compatibility with quotienting by compact subgroups.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        79
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Canonical Haar measure for modulated groups",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u41_modulated_haar_normalization.txt",
+      "unit_bytes": 3052,
+      "unit_id": "connes1999_v2_u41_modulated_haar_normalization",
+      "unit_sha256": "13d1f3bd3c15d7b4af2b6a7ca32d340c557a0709a03de4c72671fd6313ef5843",
+      "unit_type": "measure-normalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u41_modulated_haar_normalization.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3973,
+          "line_end": 3980,
+          "text": "where the normalization of            is given by αv as in theorem V.3, and b\n                                                                            h(X , z) =\nR\n  h(u) X (u) |u|z d∗ u.\n                                                                                        P\nProof. This follows from formula (21), lemma 3 and the equality log |d| =\n                                                                                        v\nlog |dv |.\n",
+          "sha256": "6c431a274edd34bc09ca72d8c95a535a3df10e8f7bbcf6418a91c116cd61e587"
+        },
+        "after": {
+          "line_start": 4058,
+          "line_end": 4065,
+          "text": "\n\n\nAppendix III. Distribution trace formulas\nIn this appendix we recall for the convenience of the reader the coordinate free\ntreatment of distributions of [GS] and give the details of the transversality\nconditions.\n       Given a vector space E over R, dim E = n, a density is a map, ρ ∈ |E|,\n",
+          "sha256": "a9691af7e5380d4092bfb2157f52609a88a66a22b8613e87ee27144e192ecd69"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix II Explicit formulas",
+            "line_end": 4060,
+            "line_start": 3425,
+            "mathematical_role": "Rewrites Weil's explicit formula in trace notation and proves agreement of local principal-value normalizations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4057,
+          "line_start": 3981,
+          "title": "Canonical Haar measure for modulated groups",
+          "unit_id": "connes1999_v2_u41_modulated_haar_normalization",
+          "unit_type": "measure-normalization",
+          "why_material": "Derives the unique Haar normalization from logarithmic growth of the module range, treats continuous and discrete ranges, and proves compatibility with quotienting by compact subgroups."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides the common normalization silently used for local isotropy and global idele-class measures.",
+          "representation_dependency": "Elementary formulas are legible.",
+          "unit_id": "connes1999_v2_u41_modulated_haar_normalization"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3980,
+            "line_start": 3905,
+            "title": "Changing the additive character shifts only the identity term",
+            "unit_id": "connes1999_v2_u40_character_shift_global_formula",
+            "unit_type": "normalization-covariance",
+            "why_material": "Shows how rescaling the basic additive character changes the selfdual Fourier transform and adds log|lambda| at the identity; summing local differential-idele shifts cancels the discriminant term and yields the global explicit formula in the cutoff normalization."
+          },
+          {
+            "line_end": 4180,
+            "line_start": 4061,
+            "title": "Densities, delta sections, and transverse pullback",
+            "unit_id": "connes1999_v2_u42_distribution_pullback_foundations",
+            "unit_type": "microlocal-foundation",
+            "why_material": "Defines generalized bundle sections, pushforward and pullback, states the wave-front transversality condition, and shows that a delta section on a submanifold pulls back to the delta section on its transverse inverse image."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Fourier-vanishing local principal value chosen by the operator cutoff agrees place by place with Weil's normalization, while additive-character shifts account exactly for the differential-idele term in the global formula.",
+            "limit": "Several constants are formula-layer sensitive and require scan verification before exact computational reuse.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u12_local_cutoff_trace_theorem",
+              "connes1999_v2_u37_weil_distribution_principal_values",
+              "connes1999_v2_u38_explicit_formula_rewriting",
+              "connes1999_v2_u39_local_principal_value_identification",
+              "connes1999_v2_u40_character_shift_global_formula",
+              "connes1999_v2_u41_modulated_haar_normalization"
+            ],
+            "title": "Cutoff normalization exactly matches the number-theoretic explicit formula"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u41_modulated_haar_normalization",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u41_modulated_haar_normalization",
+          "spontaneous_reading": "Logarithmic growth along the module fixes the otherwise scalar ambiguity of Haar measure and does so uniformly for continuous and discrete module ranges."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u41_modulated_haar_normalization",
+          "source_grounded_mathematics": "For a locally compact abelian G with proper module map and cocompact range N in the positive reals, Haar measure is uniquely normalized by the mass of 1<=|g|<=Lambda being asymptotic to log Lambda. After giving the compact kernel mass one, the induced measure is d lambda/lambda when N is continuous and assigns weight log mu to each point mu^n when N=mu^Z. The same normalization is compatible with integration over any compact subgroup H and the probability Haar measure on G/H.",
+          "conceptual_reading": "An asymptotic condition at large scale selects a canonical local measure. Passing to a compact quotient preserves that selection because translations alter only a negligible boundary layer of the logarithmic window.",
+          "representation_or_bridge": "The module map separates compact directions from the one-dimensional growth direction; normalized Haar disintegration over the compact kernel or another compact subgroup reconnects them without a free scalar.",
+          "boundary_or_failure": "Properness of the module map, cocompactness of its range, and compactness of the subgroup are essential hypotheses. The result normalizes measures but supplies no trace formula on its own.",
+          "uncertainty": "Low: the continuous and discrete cases and the quotient compatibility argument are legible."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Supplies the coordinate-free legality of restricting a trace kernel to a diagonal.",
+      "line_end": 4180,
+      "line_start": 4061,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Geometric bundle notation is extraction-sensitive but prose is coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines generalized bundle sections, pushforward and pullback, states the wave-front transversality condition, and shows that a delta section on a submanifold pulls back to the delta section on its transverse inverse image.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        80,
+        81,
+        82
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Densities, delta sections, and transverse pullback",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u42_distribution_pullback_foundations.txt",
+      "unit_bytes": 5100,
+      "unit_id": "connes1999_v2_u42_distribution_pullback_foundations",
+      "unit_sha256": "aa29b865015f8fab81117710b96bbb59ed2a2c2a61ebd48ae8fc578e681acde1",
+      "unit_type": "microlocal-foundation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u42_distribution_pullback_foundations.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4053,
+          "line_end": 4060,
+          "text": "uniformly on compact sets of y ∈ G, thus\n              Z \u0012Z             \u0013\n                             ∗\n(12)               ρΛ (hy) d h d0 y → 1                  when Λ → ∞ .\n\n\n\n\n",
+          "sha256": "19acde69b15efb4a0a54e84a88baecca7a8629d6cb60e496b7313319f2d9ecc6"
+        },
+        "after": {
+          "line_start": 4181,
+          "line_end": 4188,
+          "text": "     Let us now formulate the Schwartz kernel theorem. One considers a\ncontinuous linear map,\n\n(17)                        T : Cc∞ (Y ) → C −∞ (X) ,\n\nthe statement is that one can write it as\n                                    Z\n(18)                    (T ξ) (x) = k(x, y) ξ(y) dy\n",
+          "sha256": "047088e01308f6d835113118583ca5a714c390990f2f95ad618ced1a05200a6c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix III Distribution trace formulas",
+            "line_end": 4408,
+            "line_start": 4061,
+            "mathematical_role": "Provides coordinate-free density, wave-front, kernel, transversality, and pushforward foundations for the flow trace formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4180,
+          "line_start": 4061,
+          "title": "Densities, delta sections, and transverse pullback",
+          "unit_id": "connes1999_v2_u42_distribution_pullback_foundations",
+          "unit_type": "microlocal-foundation",
+          "why_material": "Defines generalized bundle sections, pushforward and pullback, states the wave-front transversality condition, and shows that a delta section on a submanifold pulls back to the delta section on its transverse inverse image."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Supplies the coordinate-free legality of restricting a trace kernel to a diagonal.",
+          "representation_dependency": "Geometric bundle notation is extraction-sensitive but prose is coherent.",
+          "unit_id": "connes1999_v2_u42_distribution_pullback_foundations"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4057,
+            "line_start": 3981,
+            "title": "Canonical Haar measure for modulated groups",
+            "unit_id": "connes1999_v2_u41_modulated_haar_normalization",
+            "unit_type": "measure-normalization",
+            "why_material": "Derives the unique Haar normalization from logarithmic growth of the module range, treats continuous and discrete ranges, and proves compatibility with quotienting by compact subgroups."
+          },
+          {
+            "line_end": 4227,
+            "line_start": 4181,
+            "title": "A pullback operator has the graph delta as kernel",
+            "unit_id": "connes1999_v2_u43_graph_delta_kernel",
+            "unit_type": "kernel-identification",
+            "why_material": "Applies the Schwartz kernel theorem to a smooth map and canonically identifies the symbol of its graph-supported delta distribution, justifying the familiar kernel delta(y−f(x)) without coordinates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Wave-front-safe pullback of the graph delta to the diagonal is valid exactly when one minus the Poincaré return map is invertible, and its symbol produces the determinant and covolume weights in the flow trace.",
+            "limit": "The derivation assumes the stated transversality and excludes the identity-time singularity by requiring the test function to vanish at zero.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u42_distribution_pullback_foundations",
+              "connes1999_v2_u43_graph_delta_kernel",
+              "connes1999_v2_u44_flow_transversality_contributions",
+              "connes1999_v2_u10_flow_trace_formula"
+            ],
+            "title": "Microlocal transversality is the rigorous source of orbit weights"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u42_distribution_pullback_foundations",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u42_distribution_pullback_foundations",
+          "spontaneous_reading": "Wave-front transversality is the legality test that allows a singular delta section to be restricted along a map while carrying its geometric symbol to the inverse-image submanifold."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u42_distribution_pullback_foundations",
+          "source_grounded_mathematics": "The unit defines densities, generalized bundle sections, proper pushforward, fiber integration, and distributional pullback. A pullback phi* f is allowed when no covector in WF(f) is killed by d phi*. A submanifold Z with symbol in L tensor the dual density of its normal bundle defines a delta section; when phi is transverse to Z, phi^{-1}(Z) is a submanifold with canonically identified normal bundle and phi*delta_{Z,sigma}=delta_{phi^{-1}(Z),phi*sigma}.",
+          "conceptual_reading": "Singular restriction is controlled by directions, not merely by set-theoretic intersection. The wave-front set records forbidden cotangent directions, while the normal-density symbol preserves the Jacobian information needed after pullback.",
+          "representation_or_bridge": "Conormal bundles and density-valued symbols bridge coordinate-free geometry with distribution operations. Transversality converts the abstract wave-front condition into a geometric normal-bundle isomorphism.",
+          "boundary_or_failure": "Without the wave-front condition the pullback need not exist. Properness is required for the stated general pushforward, and the delta pullback conclusion assumes genuine transversality rather than only a clean set intersection.",
+          "uncertainty": "Moderate: the prose is coherent, but stars on tangent maps and dual normal-bundle density notation are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact foundation for every later fixed-point trace restriction.",
+      "line_end": 4227,
+      "line_start": 4181,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on conormal-bundle notation and the displayed kernel identity.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies the Schwartz kernel theorem to a smooth map and canonically identifies the symbol of its graph-supported delta distribution, justifying the familiar kernel delta(y−f(x)) without coordinates.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        83
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A pullback operator has the graph delta as kernel",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u43_graph_delta_kernel.txt",
+      "unit_bytes": 1711,
+      "unit_id": "connes1999_v2_u43_graph_delta_kernel",
+      "unit_sha256": "48bf881e9d80cff442ef4095dcc56bda30afe62fd5c665687ef1b3a2ceb5c7e5",
+      "unit_type": "kernel-identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u43_graph_delta_kernel.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4173,
+          "line_end": 4180,
+          "text": "using the isomorphism (15) i.e. Nx∗ ≃ Nϕ(x)\n                                       ∗\n                                            .\nNow for any δ-section associated to Z, σ, the wave front set is contained in\nthe conormal bundle of the submanifold Z which shows that if ϕ is transverse\nto Z the pull back ϕ∗ δZ,σ of the distribution on Y associated to Z, σ makes\nsense ,it is equal to δϕ−1 (Z),ϕ∗ (σ) .\n\n",
+          "sha256": "2df369a532904ef69f72eb73b05cb087ecc2e9528fe13765097332a2a9f26b15"
+        },
+        "after": {
+          "line_start": 4228,
+          "line_end": 4235,
+          "text": "\nLet us now consider a manifold M with a flow Ft\n\n(26)                 Ft (x) = exp(t v) x        v ∈ C ∞ (M, TM )\n\nand the corresponding map f ,\n\n(27)                   f : M × R → M , f (x, t) = Ft (x) .\n",
+          "sha256": "77f6ee2fe46e4a5c198edbc53e0829089612184661c79952a72dc8a1dbf3fc11"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix III Distribution trace formulas",
+            "line_end": 4408,
+            "line_start": 4061,
+            "mathematical_role": "Provides coordinate-free density, wave-front, kernel, transversality, and pushforward foundations for the flow trace formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4227,
+          "line_start": 4181,
+          "title": "A pullback operator has the graph delta as kernel",
+          "unit_id": "connes1999_v2_u43_graph_delta_kernel",
+          "unit_type": "kernel-identification",
+          "why_material": "Applies the Schwartz kernel theorem to a smooth map and canonically identifies the symbol of its graph-supported delta distribution, justifying the familiar kernel delta(y−f(x)) without coordinates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A compact foundation for every later fixed-point trace restriction.",
+          "representation_dependency": "Depends on conormal-bundle notation and the displayed kernel identity.",
+          "unit_id": "connes1999_v2_u43_graph_delta_kernel"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4180,
+            "line_start": 4061,
+            "title": "Densities, delta sections, and transverse pullback",
+            "unit_id": "connes1999_v2_u42_distribution_pullback_foundations",
+            "unit_type": "microlocal-foundation",
+            "why_material": "Defines generalized bundle sections, pushforward and pullback, states the wave-front transversality condition, and shows that a delta section on a submanifold pulls back to the delta section on its transverse inverse image."
+          },
+          {
+            "line_end": 4403,
+            "line_start": 4229,
+            "title": "Poincaré transversality yields periodic-orbit and zero contributions",
+            "unit_id": "connes1999_v2_u44_flow_transversality_contributions",
+            "unit_type": "derivation",
+            "why_material": "Derives that diagonal/graph transversality is invertibility of one minus the transverse return map, computes the pulled-back symbol, and pushes it to time to obtain covolume-weighted periodic-orbit terms and determinant-weighted fixed-zero terms in a single isotropy formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Wave-front-safe pullback of the graph delta to the diagonal is valid exactly when one minus the Poincaré return map is invertible, and its symbol produces the determinant and covolume weights in the flow trace.",
+            "limit": "The derivation assumes the stated transversality and excludes the identity-time singularity by requiring the test function to vanish at zero.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u42_distribution_pullback_foundations",
+              "connes1999_v2_u43_graph_delta_kernel",
+              "connes1999_v2_u44_flow_transversality_contributions",
+              "connes1999_v2_u10_flow_trace_formula"
+            ],
+            "title": "Microlocal transversality is the rigorous source of orbit weights"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u43_graph_delta_kernel",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u43_graph_delta_kernel",
+          "spontaneous_reading": "The familiar kernel delta(y-f(x)) is not merely formal notation: it is the canonical density-valued delta section on the graph of f."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u43_graph_delta_kernel",
+          "source_grounded_mathematics": "The Schwartz kernel theorem represents a continuous map from compactly supported smooth functions on Y to distributions on X by a generalized section on X times Y. For the pullback operator f*, the support is Graph(f). The conormal relation identifies a covector eta on Y with (-df^t eta,eta), yielding a canonical symbol |j^{-1}|; integrating the resulting graph delta against xi gives xi(f(x)).",
+          "conceptual_reading": "Graph support turns composition with a map into a geometric correspondence. The density-valued symbol is what makes the coordinate expression delta(y-f(x)) invariant under changes of coordinates.",
+          "representation_or_bridge": "The graph of f, its conormal bundle, and the canonical density isomorphism bridge an operator f* with its distribution kernel.",
+          "boundary_or_failure": "This unit identifies the kernel but does not yet justify restricting it to a diagonal; that later operation requires the separate transversality condition.",
+          "uncertainty": "Moderate: the canonical conormal construction is clear, although transpose and density notation in the display are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This appendix derivation independently certifies the main Section IV formula under its exact hypotheses.",
+      "line_end": 4403,
+      "line_start": 4229,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula- and geometry-dependent; text is coherent though several displays are layout-damaged.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives that diagonal/graph transversality is invertibility of one minus the transverse return map, computes the pulled-back symbol, and pushes it to time to obtain covolume-weighted periodic-orbit terms and determinant-weighted fixed-zero terms in a single isotropy formula.",
+      "source_id": "connes1999_trace_formula",
+      "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+      "source_page_markers_inside_unit": [
+        84,
+        85,
+        86
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poincaré transversality yields periodic-orbit and zero contributions",
+      "unit_artifact_relpath": "depth/units/connes1999_v2_u44_flow_transversality_contributions.txt",
+      "unit_bytes": 6629,
+      "unit_id": "connes1999_v2_u44_flow_transversality_contributions",
+      "unit_sha256": "27419538768a5e9dbd29c5858b8fefb2aee5add23a02d242e38b6cc8747c0a53",
+      "unit_type": "derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u44_flow_transversality_contributions.txt",
+      "source": {
+        "source_id": "connes1999_trace_formula",
+        "title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 1999,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "hilbert-polya",
+          "l-functions",
+          "noncommutative-geometry",
+          "numerical-evidence",
+          "pair-correlation",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "spectral",
+          "zero-density",
+          "zero-statistics",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4221,
+          "line_end": 4228,
+          "text": "\n(24)                       k(x, y) dy = δ(y − f (x)) dy .\n\nOne then checks the formula,\n            Z\n(25)           δ(y − f (x)) ξ(y) dy = ξ(f (x))            ∀ ξ ∈ Cc∞ (Y ) .\n\n\n",
+          "sha256": "c41901ecde886f4f0564a461e9cf093dda3b9c2da0b9657dcf4b41e8a37552cf"
+        },
+        "after": {
+          "line_start": 4404,
+          "line_end": 4411,
+          "text": "\n                                            86\n\n<!-- source-page: 87 -->\n\nBibliography.\n\n [AB] M.F. Atiyah and R. Bott, A Lefchetz fixed point formula for elliptic\n",
+          "sha256": "a8cce2f19c9f7df2f3b59b0aaa8909fd0c5b4407d0d38ad20abed16e4768217e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+        "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix III Distribution trace formulas",
+            "line_end": 4408,
+            "line_start": 4061,
+            "mathematical_role": "Provides coordinate-free density, wave-front, kernel, transversality, and pushforward foundations for the flow trace formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4403,
+          "line_start": 4229,
+          "title": "Poincaré transversality yields periodic-orbit and zero contributions",
+          "unit_id": "connes1999_v2_u44_flow_transversality_contributions",
+          "unit_type": "derivation",
+          "why_material": "Derives that diagonal/graph transversality is invertibility of one minus the transverse return map, computes the pulled-back symbol, and pushes it to time to obtain covolume-weighted periodic-orbit terms and determinant-weighted fixed-zero terms in a single isotropy formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This appendix derivation independently certifies the main Section IV formula under its exact hypotheses.",
+          "representation_dependency": "Formula- and geometry-dependent; text is coherent though several displays are layout-damaged.",
+          "unit_id": "connes1999_v2_u44_flow_transversality_contributions"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4227,
+            "line_start": 4181,
+            "title": "A pullback operator has the graph delta as kernel",
+            "unit_id": "connes1999_v2_u43_graph_delta_kernel",
+            "unit_type": "kernel-identification",
+            "why_material": "Applies the Schwartz kernel theorem to a smooth map and canonically identifies the symbol of its graph-supported delta distribution, justifying the familiar kernel delta(y−f(x)) without coordinates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Wave-front-safe pullback of the graph delta to the diagonal is valid exactly when one minus the Poincaré return map is invertible, and its symbol produces the determinant and covolume weights in the flow trace.",
+            "limit": "The derivation assumes the stated transversality and excludes the identity-time singularity by requiring the test function to vanish at zero.",
+            "parent_local_unit_ids": [
+              "connes1999_v2_u42_distribution_pullback_foundations",
+              "connes1999_v2_u43_graph_delta_kernel",
+              "connes1999_v2_u44_flow_transversality_contributions",
+              "connes1999_v2_u10_flow_trace_formula"
+            ],
+            "title": "Microlocal transversality is the rigorous source of orbit weights"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes1999_v2_u44_flow_transversality_contributions",
+        "spontaneous": {
+          "unit_id": "connes1999_v2_u44_flow_transversality_contributions",
+          "spontaneous_reading": "The periodic-orbit denominator is the Jacobian of a legal diagonal pullback: invertibility of one minus the transverse return map both permits the restriction and determines its weight."
+        },
+        "directed": {
+          "unit_id": "connes1999_v2_u44_flow_transversality_contributions",
+          "source_grounded_mathematics": "For the flow map f(x,t)=F_t(x), pulling its graph delta back by the diagonal is transverse at F_t(x)=x exactly when 1-P is invertible on T_xM/Rv_x. The inverse normal map determines the pulled-back symbol. Pushing to time gives, for a periodic orbit, its primitive length or isotropy covolume times h(T)/|1-P_T|. At an isolated zero of the vector field it gives the integral of h(t)/|1-(F_t)_*|. These are combined as an isotropy-group integral over transverse determinants.",
+          "conceptual_reading": "Existence and weight have the same source: the failure of fixed directions transverse to the orbit. Quotienting out the flow direction exposes the Poincare return map, and its determinant measures the density distortion of the graph-diagonal intersection.",
+          "representation_or_bridge": "The graph delta, diagonal pullback, normal-bundle map, Poincare return map, and pushforward to the time axis form the bridge from flow geometry to periodic-orbit and fixed-zero trace contributions.",
+          "boundary_or_failure": "The derivation assumes the stated transversality, a nonvanishing vector field along periodic orbits, isolated zeros in the fixed-zero case, and a test function h vanishing at zero. Degenerate fixed sets or the identity-time singularity are excluded.",
+          "uncertainty": "Moderate: the geometric derivation is coherent, but several determinant, density, and quotient-space displays are layout-damaged."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "bc64244ac2c2980c72ca380f9ec1782abd58a85ffb31a1893303fe41df3dbb52"
+}

@@ -1,0 +1,792 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_rodgers_tao2020_newman_7e18d13b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "rodgers_tao2020_newman",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the section objective, all three estimates, and the methodological limitation that determines the large imaginary-height regime.",
+      "line_end": 424,
+      "line_start": 371,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed estimates (7)–(9) depend on recovered formula layout; the prose clearly fixes z=x−iκ log_+x and the roles of the bounds.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 4 isolates exactly the upper, lower-scale, and logarithmic-derivative information about H_t needed by the next section and explains why t<0 lacks the useful Dirichlet-series access available at t=0.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Complex-height control as the interface to zero counting",
+      "unit_artifact_relpath": "depth/units/rt2020_d01_complex_height_control.txt",
+      "unit_bytes": 3218,
+      "unit_id": "rt2020_d01_complex_height_control",
+      "unit_sha256": "ef68100efdf50b912602968a09e3ee65c9d5cafe13114414cf4787f63e89e0d0",
+      "unit_type": "analytic-bound-and-interface",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d01_complex_height_control.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 363,
+          "line_end": 370,
+          "text": "record the index being summed and use a colon to indicate its range; e.g. we\n       P\nwrite j: j,k to indicate that the summation is over j, and j is to not equal k\n(where k is fixed outside the sum). Semicolons are used to separate additional\nconditions.\n    We use the phrase for almost every t throughout this paper to denote that a\nrelation holds for all t except a set of null Lebesgue measure.\n\n",
+          "sha256": "ec5b9b1267994052e68c95cc69c2bd50ffeedb786c60ba6ac450434b57cfd66d"
+        },
+        "after": {
+          "line_start": 425,
+          "line_end": 432,
+          "text": "    We begin by treating the easy case t = 0, in which we can exploit the identity\n(1). We have the very crude bound\n                              ζ(σ + iτ) ≪ (1 + |τ|)O(1)                          (10)\nwhenever σ ≥ 1/2 and τ ∈ R (this follows for instance from [30, Theorem\n4.11]). In the region σ ≥ 1/4, we also have the Stirling approximation (see e.g.\n[1, 6.1.41])\n                                                           √\n                             !                                                !!\n",
+          "sha256": "e1bd3240c56d10a1d68c7d3eec48d66d2b2c1ab0e6ce6a2c3efebbc1eeb88fb4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Asymptotics of H_t",
+            "line_end": 1019,
+            "line_start": 371,
+            "mathematical_role": "Obtains complex-height bounds and logarithmic-derivative asymptotics through heat-kernel transfer, saddle-point recentering, Stirling analysis, and dominance of the first Fourier mode."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 424,
+          "line_start": 371,
+          "title": "Complex-height control as the interface to zero counting",
+          "unit_id": "rt2020_d01_complex_height_control",
+          "unit_type": "analytic-bound-and-interface",
+          "why_material": "Lemma 4 isolates exactly the upper, lower-scale, and logarithmic-derivative information about H_t needed by the next section and explains why t<0 lacks the useful Dirichlet-series access available at t=0."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the section objective, all three estimates, and the methodological limitation that determines the large imaginary-height regime.",
+          "representation_dependency": "Displayed estimates (7)–(9) depend on recovered formula layout; the prose clearly fixes z=x−iκ log_+x and the roles of the bounds.",
+          "unit_id": "rt2020_d01_complex_height_control"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 538,
+            "line_start": 425,
+            "title": "Transfer from H_0 to negative-time H_t by Gaussian convolution",
+            "unit_id": "rt2020_d02_heat_kernel_transfer",
+            "unit_type": "representation-change",
+            "why_material": "The backward-heat family is rewritten as a Gaussian average of H_0, allowing classical ξ and Γ estimates to supply a robust upper bound for negative time."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sharp control of H_t away from the real axis can be compressed into both macroscopic and mesoscopic zero-density information, with compactness recovering the finer scale that direct argument estimates do not.",
+            "limit": "The transfer is proved only under Λ<t≤0 and at the logarithmic height/resolution supported by the saddle estimates; it is not a general zero-counting principle for arbitrary entire functions.",
+            "parent_local_unit_ids": [
+              "rt2020_d01_complex_height_control",
+              "rt2020_d06_dominant_fourier_mode",
+              "rt2020_d08_deformed_zero_counts",
+              "rt2020_d10_compactness_local_count"
+            ],
+            "title": "Complex-height asymptotics as a zero-density transfer channel"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 370,
+              "line_start": 314,
+              "reason": "Contradiction assumption, zero indexing, asymptotic conventions, nearby relation, and principal-value notation used throughout."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "rt2020_d01_complex_height_control",
+        "spontaneous": {
+          "unit_id": "rt2020_d01_complex_height_control",
+          "spontaneous_reading": "The lemma packages exactly the off-real-axis information needed downstream: a broad decay bound, a sharper magnitude scale at logarithmic depth, and a logarithmic-derivative asymptotic. The real work is choosing a height where negative-time H_t becomes accurately computable despite lacking a useful Dirichlet series."
+        },
+        "directed": {
+          "unit_id": "rt2020_d01_complex_height_control",
+          "source_grounded_mathematics": "For z=x-iκ log_+ x and Λ<t≤0, Lemma 4 bounds H_t by exp(-πx/8+O_C(log_+^2 x)); for sufficiently large κ it gives the matching exponential scale and an asymptotic for H_t'/H_t with error O_C(log_+ x/x).",
+          "conceptual_reading": "Three levels of complex-height control are compressed into an interface: growth controls contours, magnitude prevents degeneracy, and the logarithmic derivative carries zero-density information.",
+          "representation_or_bridge": "Evaluating H_t on a logarithmically lowered contour bridges entire-function asymptotics to the argument-principle zero counts announced for the next section.",
+          "boundary_or_failure": "For t<0 the source identifies no usable series for 1/H_t or H_t'/H_t at substantially smaller imaginary height; the precision regime therefore requires y to be a large multiple of log_+ x. The application still assumes Λ<t even though part of the analytic estimate can extend further.",
+          "uncertainty": "The mathematical roles and regimes are clear; exact displayed constants and formula layout carry text-extraction risk, as the assignment notes."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "rt2020_d01_complex_height_control",
+        "critic_decision": "revise",
+        "supported": [
+          "Lemma 4 states the broad upper bound, the sharper exponential-scale estimate for sufficiently large kappa, and the logarithmic-derivative asymptotic on z=x-i kappa log_+ x.",
+          "Remark 5 explicitly records the t<0 series limitation, the resulting logarithmic-height requirement, and the distinction between the analytic extension in t and the later Lambda<t application."
+        ],
+        "inference": [
+          "Treating the three estimates as a downstream analytic interface is a reasonable reading of the stated role in the next section."
+        ],
+        "unsupported_or_imported": [
+          "The span announces Riemann-von Mangoldt type asymptotics but does not say that the bridge is specifically an argument-principle count or assign contour control, nondegeneracy, and zero density one-to-one to (7), (8), and (9)."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Displayed formulas (7)-(9) are layout-sensitive, although their regimes and qualitative content are recoverable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the explicit argument-principle and per-estimate role claims with the source's narrower statement that these estimates are key inputs to the next section's Riemann-von Mangoldt type asymptotics."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the t=0 ξ-function estimates, the heat-kernel identity, and the deduction of (7).",
+      "line_end": 538,
+      "line_start": 425,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several Γ and integral displays are layout-sensitive, but the convolution identity (15) and bounding logic are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The backward-heat family is rewritten as a Gaussian average of H_0, allowing classical ξ and Γ estimates to supply a robust upper bound for negative time.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Transfer from H_0 to negative-time H_t by Gaussian convolution",
+      "unit_artifact_relpath": "depth/units/rt2020_d02_heat_kernel_transfer.txt",
+      "unit_bytes": 6270,
+      "unit_id": "rt2020_d02_heat_kernel_transfer",
+      "unit_sha256": "d87935979dd7b72a0e79abfbc0191814f9bb9b1afcbd7a23f28c02d0edf72f67",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d02_heat_kernel_transfer.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 417,
+          "line_end": 424,
+          "text": "series expansions for H01(z) or H00 (z) which allow one to also obtain bounds such\nas (8) or (9) when the imaginary part of z is much smaller than log+ x. However,\nin the t < 0 case there does not appear to be any usable series expansions for\n 1         Ht′\n Ht (z) or Ht (z) that could be used to prove (8) or (9). Instead, we will prove these\nestimates by computing Ht (z) to a high degree of accuracy, which we can only\ndo when y is greater than or equal to a large multiple of log+ x in order to ensure\nthat the series expansions we have for Ht (z) converge rapidly.\n",
+          "sha256": "bd11e3a31834ee72311517ad4a70c4ba45af70e74fd097028366d0f5a1c200ce"
+        },
+        "after": {
+          "line_start": 539,
+          "line_end": 546,
+          "text": "    To prove the remaining two bounds (8), (9), it is convenient to cancel off the\nt = 0 case that has already been established, and reduce to showing that\n                             Ht             \u0010            \u0011\n                                 (z) = exp OC (log2+ x) ,                        (16)\n                             H0\nand\n                            Ht′         H′          log+ x\n                                 (z) − 0 (z) ≪C            ,                     (17)\n",
+          "sha256": "6eae7c407415dff6f24a69339b38f4b53bf05d82c7ed2989c5d3622a7c633c46"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Asymptotics of H_t",
+            "line_end": 1019,
+            "line_start": 371,
+            "mathematical_role": "Obtains complex-height bounds and logarithmic-derivative asymptotics through heat-kernel transfer, saddle-point recentering, Stirling analysis, and dominance of the first Fourier mode."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 538,
+          "line_start": 425,
+          "title": "Transfer from H_0 to negative-time H_t by Gaussian convolution",
+          "unit_id": "rt2020_d02_heat_kernel_transfer",
+          "unit_type": "representation-change",
+          "why_material": "The backward-heat family is rewritten as a Gaussian average of H_0, allowing classical ξ and Γ estimates to supply a robust upper bound for negative time."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the t=0 ξ-function estimates, the heat-kernel identity, and the deduction of (7).",
+          "representation_dependency": "Several Γ and integral displays are layout-sensitive, but the convolution identity (15) and bounding logic are recoverable.",
+          "unit_id": "rt2020_d02_heat_kernel_transfer"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 424,
+            "line_start": 371,
+            "title": "Complex-height control as the interface to zero counting",
+            "unit_id": "rt2020_d01_complex_height_control",
+            "unit_type": "analytic-bound-and-interface",
+            "why_material": "Lemma 4 isolates exactly the upper, lower-scale, and logarithmic-derivative information about H_t needed by the next section and explains why t<0 lacks the useful Dirichlet-series access available at t=0."
+          },
+          {
+            "line_end": 595,
+            "line_start": 539,
+            "title": "Contour recentering converts oscillation into a stationary integral",
+            "unit_id": "rt2020_d03_saddle_recentring",
+            "unit_type": "analytic-construction",
+            "why_material": "Because heat-kernel transfer loses precision under oscillation, the proof expands H_t into oscillatory integrals and shifts each contour to a point w_0 solving a nonlinear stationarity equation."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "rt2020_d02_heat_kernel_transfer",
+        "spontaneous": {
+          "unit_id": "rt2020_d02_heat_kernel_transfer",
+          "spontaneous_reading": "The negative-time upper bound is transported from classical t=0 estimates by expressing backward heat flow as a Gaussian average of spatial translates of H_0. This avoids needing a new pointwise theory for H_t when only robust growth control is required."
+        },
+        "directed": {
+          "unit_id": "rt2020_d02_heat_kernel_transfer",
+          "source_grounded_mathematics": "At t=0, zeta bounds and Stirling estimates give exponential decay for H_0 and sharper large-height information. For t<0, the Gaussian identity H_t(z)=(4π)^(-1/2)∫e^(-r^2/4)H_0(z+r|t|^(1/2))dr transfers the crude bound to H_t; Gaussian decay absorbs the translate-dependent errors when y=O(log_+ x).",
+          "conceptual_reading": "The heat-kernel representation preserves enough exponential decay under averaging even though it loses the phase precision needed for sharper asymptotics.",
+          "representation_or_bridge": "The convolution formula is the bridge from the arithmetic representation of H_0 through ξ, Γ, and ζ to an analytic estimate for the deformed family H_t.",
+          "boundary_or_failure": "Triangle inequality through the Gaussian average proves only the upper bound; significant oscillation makes this representation unsuitable for the later ratio and logarithmic-derivative estimates. The deduction also uses Λ<t≤0 for uniform control.",
+          "uncertainty": "Low for the convolution mechanism and bounding logic; several Γ and integral displays are layout-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "rt2020_d02_heat_kernel_transfer",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives t=0 bounds from zeta and Gamma estimates, proves the Gaussian identity for H_t, and uses triangle inequality plus Gaussian domination to obtain (7) for t<0.",
+          "The convolution genuinely transfers an H_0 estimate to the deformed family without requiring a separate direct bound for H_t."
+        ],
+        "inference": [
+          "Describing the convolution as preserving robust exponential decay under averaging is a faithful conceptual compression of the calculation."
+        ],
+        "unsupported_or_imported": [
+          "The claim that significant oscillation makes the heat-kernel representation unsuitable for the later ratio and logarithmic-derivative estimates is stated only in the following unit, not in this frozen span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Gamma, Gaussian, and integral displays are extraction-sensitive but the convolution and bounding chain are readable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the limitation to the observed fact that this span uses the representation to prove only the upper bound (7); remove the imported explanation about oscillation and later estimates."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the repaired proof note, construction of the Gaussian measure, Stirling treatment of the bulk, tail domination, and the shifted-saddle consequence (31).",
+      "line_end": 835,
+      "line_start": 728,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The leading square-root factor and error order are display-dependent; the Gamma-transform and bulk-tail method remain readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 7 replaces direct Laplace analysis by Gaussian averaging and a Gamma integral, with a bulk-tail split that gives a uniform stationary asymptotic for complex b.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Stationary integral evaluated through a Gamma representation",
+      "unit_artifact_relpath": "depth/units/rt2020_d05_gamma_stationary_asymptotic.txt",
+      "unit_bytes": 5516,
+      "unit_id": "rt2020_d05_gamma_stationary_asymptotic",
+      "unit_sha256": "793eefdc72b084bf78a130b74d9889db0f5cce7459593b82d3b41b7f69533996",
+      "unit_type": "asymptotic-evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d05_gamma_stationary_asymptotic.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 720,
+          "line_end": 727,
+          "text": "                                        1/2\nUnder the hypothesis b > x exp( x|t| ), so that 1/|t| and x are O(b1/10) (say), so\nboth options force −α ≥ 18 log b as claimed.\n\n<!-- source-page: 15 -->\n\nThe De Bruijn-Newman constant is non-negative                            15\n\n",
+          "sha256": "1ea8109cd85935348284bd5e815584a04bc5dde92ec78324c08bb2290aa4a4d9"
+        },
+        "after": {
+          "line_start": 836,
+          "line_end": 843,
+          "text": "    Now we can control the sum (18). As before we assume that z = x − iy where\ny = κ log+ x for some C ′ ≤ κ ≤ C. From (18) one has\n                                                         ∞\n                                                     1X\n                                       Ht (x − iy) =       Qt,n                                 (32)\n                                                     2 n=1\n\n<!-- source-page: 17 -->\n",
+          "sha256": "3126530bf9fed5c55bec8361dcb6eba91b34c21d9e462053d8657323f9c93186"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Asymptotics of H_t",
+            "line_end": 1019,
+            "line_start": 371,
+            "mathematical_role": "Obtains complex-height bounds and logarithmic-derivative asymptotics through heat-kernel transfer, saddle-point recentering, Stirling analysis, and dominance of the first Fourier mode."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 835,
+          "line_start": 728,
+          "title": "Stationary integral evaluated through a Gamma representation",
+          "unit_id": "rt2020_d05_gamma_stationary_asymptotic",
+          "unit_type": "asymptotic-evaluation",
+          "why_material": "Lemma 7 replaces direct Laplace analysis by Gaussian averaging and a Gamma integral, with a bulk-tail split that gives a uniform stationary asymptotic for complex b."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the repaired proof note, construction of the Gaussian measure, Stirling treatment of the bulk, tail domination, and the shifted-saddle consequence (31).",
+          "representation_dependency": "The leading square-root factor and error order are display-dependent; the Gamma-transform and bulk-tail method remain readable.",
+          "unit_id": "rt2020_d05_gamma_stationary_asymptotic"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 722,
+            "line_start": 595,
+            "title": "Unique saddle in a strip with separate medium- and huge-mode controls",
+            "unit_id": "rt2020_d04_stationary_point_control",
+            "unit_type": "existence-uniqueness-and-asymptotics",
+            "why_material": "Lemma 6 turns contour selection into a controlled analytic object: argument-principle geometry gives a unique saddle, while real-imaginary equations yield precision for contributing modes and decay for huge modes."
+          },
+          {
+            "line_end": 1018,
+            "line_start": 836,
+            "title": "First-mode dominance yields sharp H_t asymptotics",
+            "unit_id": "rt2020_d06_dominant_fourier_mode",
+            "unit_type": "dominant-term-and-tail-argument",
+            "why_material": "The saddle estimates separate medium and huge n, show the n=1 contribution dominates the Fourier expansion, control both tails, and then use holomorphy to recover the logarithmic derivative."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "rt2020_d05_gamma_stationary_asymptotic",
+        "spontaneous": {
+          "unit_id": "rt2020_d05_gamma_stationary_asymptotic",
+          "spontaneous_reading": "Instead of performing Laplace analysis directly, the stationary integral is randomized by a Gaussian representation of e^(tw^2), converted exactly to a Gamma integral, and then controlled by a bulk-tail split. This supplies a uniform asymptotic in a form ready to compose with the saddle shift."
+        },
+        "directed": {
+          "unit_id": "rt2020_d05_gamma_stationary_asymptotic",
+          "source_grounded_mathematics": "For complex b with Re b≥1, Lemma 7 evaluates I_t(b,4b) as a leading exp(-b)/sqrt(b) term plus O(|b|^(-3/2)). The proof averages shifted Gamma integrals against a Gaussian measure, applies Stirling in the bulk, and uses Gaussian domination for the tail; combining this with the contour-shift identity yields formula (31) for general ζ and its saddle w_0.",
+          "conceptual_reading": "A difficult stationary integral is transferred into a special-function representation whose asymptotics and tails are separately controllable.",
+          "representation_or_bridge": "Gaussian averaging bridges the quadratic heat factor to Γ, and the resulting stationary estimate composes with w_0 to return a modewise asymptotic for H_t.",
+          "boundary_or_failure": "The estimate requires Re b≥1 and the later composition requires the saddle hypotheses. Compactness handles bounded |b| rather than furnishing an explicit uniform calculation there.",
+          "uncertainty": "The transform and bulk-tail mechanism are clear; the leading square-root normalization and exact error order are the most layout-dependent details."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "rt2020_d05_gamma_stationary_asymptotic",
+        "critic_decision": "revise",
+        "supported": [
+          "Lemma 7 represents the quadratic factor by Gaussian averaging, converts the inner integral to Gamma, applies Stirling on a bulk region, and dominates the Gaussian tail.",
+          "Formula (31) correctly composes Lemma 7 with the preceding saddle shift to give a general asymptotic for I_t(b,zeta)."
+        ],
+        "inference": [
+          "The special-function transfer is a faithful conceptual account of why the stationary integral becomes controllable."
+        ],
+        "unsupported_or_imported": [
+          "The representation-or-bridge sentence says this span returns a modewise asymptotic for H_t, but the exact span establishes an asymptotic for I_t; identifying it as an H_t mode requires the earlier Fourier decomposition."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The square-root normalization and error term in (30)-(31) are display-sensitive but readable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'modewise asymptotic for H_t' with 'general saddle-point asymptotic for I_t'; leave the later insertion into H_t to the next unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes nearby relation, H-tilde_T, L and its regimes, pairwise H-tilde_jk, and the nonnegative representation of the aggregate.",
+      "line_end": 2296,
+      "line_start": 2250,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The cutoffs and formulas (69)–(71) are display-dependent; the equilibrium-defect meaning is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Hamiltonian is both smoothly truncated and restricted to nearby pairs, then renormalized by a convex nonnegative function L that vanishes precisely at reference spacing.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        43
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A convex logarithmic defect measures displacement from equilibrium",
+      "unit_artifact_relpath": "depth/units/rt2020_d21_reference_renormalized_hamiltonian.txt",
+      "unit_bytes": 2540,
+      "unit_id": "rt2020_d21_reference_renormalized_hamiltonian",
+      "unit_sha256": "49b14053a43b4726b54d5bdc4b6e0c3276bc26d59048b5976c9be6f09462a1a7",
+      "unit_type": "renormalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d21_reference_renormalized_hamiltonian.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2242,
+          "line_end": 2249,
+          "text": "                     (ξk − ξ j )3    (4π)3 (k − j)3      j(k − j)2\nand similarly                                            !\n                                                 |k − j|\n                           ψT (k) = ψT ( j) + Õ           ,\n                                                    T\nand the claim follows by direct computation using the fact that k 7→ k−1 j is odd\naround j.\n\n",
+          "sha256": "cf0fdfce114d436cbcbd5ad41d52a99fbfdc5b9c82009799ae26776833e66db9"
+        },
+        "after": {
+          "line_start": 2297,
+          "line_end": 2304,
+          "text": "\n\nProof. From (71) one has\n                                                        1        (x j (t) − ξ j ) − (xk (t) − ξk )\n              H̃ jk (t) = H jk (t) − log                       −\n                                                   |ξ j − ξk |               ξ j − ξk\nso by (69) it suffices to show that\n            X                            (x j (t) − ξ j ) − (xk (t) − ξk )\n",
+          "sha256": "d00ba2fac35d67d887626fd88363cbde66f622a0b67fe80d83ee6cb07c67876b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Strong control on integrated energy",
+            "line_end": 3017,
+            "line_start": 2037,
+            "mathematical_role": "Renormalizes energy and Hamiltonian relative to classical locations, localizes them smoothly, proves an approximate dissipation identity with negligible errors, establishes coercivity, and derives strong integrated-energy decay."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2296,
+          "line_start": 2250,
+          "title": "A convex logarithmic defect measures displacement from equilibrium",
+          "unit_id": "rt2020_d21_reference_renormalized_hamiltonian",
+          "unit_type": "renormalization",
+          "why_material": "The Hamiltonian is both smoothly truncated and restricted to nearby pairs, then renormalized by a convex nonnegative function L that vanishes precisely at reference spacing."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes nearby relation, H-tilde_T, L and its regimes, pairwise H-tilde_jk, and the nonnegative representation of the aggregate.",
+          "representation_dependency": "The cutoffs and formulas (69)–(71) are display-dependent; the equilibrium-defect meaning is explicit.",
+          "unit_id": "rt2020_d21_reference_renormalized_hamiltonian"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2248,
+            "line_start": 2152,
+            "title": "Smooth weights turn the strong integrated-energy goal into an absolutely convergent quantity",
+            "unit_id": "rt2020_d20_smooth_localization_strong_target",
+            "unit_type": "smooth-truncation",
+            "why_material": "Theorem 17 is reduced to a smoothly localized renormalized energy; Fubini becomes legal and another odd-kernel estimate controls the linear correction under slowly varying weights."
+          },
+          {
+            "line_end": 2418,
+            "line_start": 2299,
+            "title": "Macroscopic location control becomes decay of renormalized pair interactions",
+            "unit_id": "rt2020_d22_multiscale_long_range_decay",
+            "unit_type": "multiscale-estimate",
+            "why_material": "After removing a nearly odd linear term, Lemma 20 splits far, intermediate, and very near index separations and converts zero-location accuracy into quadratic decay of the convex Hamiltonian defect."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The formal gradient-flow intuition becomes rigorous after subtracting the slowly varying classical lattice, smoothly truncating interactions, proving approximate dissipation, and coupling it with coercivity.",
+            "limit": "The reference lattice is not an exact equilibrium and the conclusion depends on a tailored nearby-pair cutoff and error scale; no unqualified global convexity theorem is established.",
+            "parent_local_unit_ids": [
+              "rt2020_d11_zero_flow_relaxation_scale",
+              "rt2020_d12_gradient_flow_energy",
+              "rt2020_d18_reference_renormalized_energy",
+              "rt2020_d21_reference_renormalized_hamiltonian",
+              "rt2020_d24_renormalized_dissipation_identity",
+              "rt2020_d26_coercivity_energy_from_hamiltonian",
+              "rt2020_d27_finite_time_decay_and_strong_bound"
+            ],
+            "title": "From repulsive zero flow to localized equilibrium dissipation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "rt2020_d21_reference_renormalized_hamiltonian",
+        "spontaneous": {
+          "unit_id": "rt2020_d21_reference_renormalized_hamiltonian",
+          "spontaneous_reading": "The Hamiltonian is renormalized in parallel with the energy: only smoothly weighted nearby pairs are kept, and a convex logarithmic defect records how far each normalized gap is from reference spacing. This creates a nonnegative Lyapunov candidate with a genuine zero state."
+        },
+        "directed": {
+          "unit_id": "rt2020_d21_reference_renormalized_hamiltonian",
+          "source_grounded_mathematics": "The source defines a symmetric nearby relation j∼_T k and a smoothly truncated Hamiltonian subtracting log(1/|ξ_j-ξ_k|). It introduces L(x)=log(1/|x|)+|x|-1, a convex nonnegative function vanishing at |x|=1 with collapse, quadratic, and large-distortion regimes, and defines H̃_{jk}=L((x_j-x_k)/(ξ_j-ξ_k)). Lemma 19 states that H̃_T equals the weighted sum of these pair defects up to o(T log_+^3 T).",
+          "conceptual_reading": "The functional forgets the infinite reference background but preserves a calibrated measure of displacement from local equilibrium.",
+          "representation_or_bridge": "The dimensionless gap ratio bridges the logarithmic particle Hamiltonian to the classical lattice, while nearby and smooth cutoffs make the aggregate finite.",
+          "boundary_or_failure": "Only nearby pairs enter H̃_T, and Lemma 19's aggregate representation is stated rather than proved in this span. Nonnegativity is relative to reference spacing, not a global convexity theorem for the full infinite system.",
+          "uncertainty": "The equilibrium-defect meaning is clear; exact cutoffs and formulas (69)-(71) are display-dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "rt2020_d21_reference_renormalized_hamiltonian",
+        "critic_decision": "revise",
+        "supported": [
+          "The source defines the symmetric nearby relation, the smoothly truncated reference-subtracted Hamiltonian, the convex nonnegative pair potential L, and normalized pair defects that vanish exactly at reference spacing.",
+          "Lemma 19 states that the aggregate Hamiltonian equals a weighted sum of nonnegative pair defects only up to o(T log_+^3 T)."
+        ],
+        "inference": [
+          "Viewing the construction as a candidate Lyapunov functional is motivated by the Hamiltonian context but is not established by this span alone."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the smoothly truncated aggregate itself nonnegative with a genuine zero state; the span gives exact nonnegativity only for each pair defect and an asymptotic, error-bearing representation for the aggregate.",
+          "Lyapunov monotonicity is not proved in this unit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Cutoffs and formulas (69)-(71) are display-sensitive but their definitions are recoverable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "State that the pair defects are exactly nonnegative and vanish at reference spacing, while the aggregate is represented by their weighted sum only up to o(T log_+^3 T); describe Lyapunov behavior as a later proof obligation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes boundary selection, persistence via the virial identity, internal energy monotonicity, boundary-scale decomposition, and conversion back to renormalized energy.",
+      "line_end": 3217,
+      "line_start": 3107,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The cross-term bounds are formula-dense and some symbols are extraction-sensitive; the conservation-with-buffer mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A Bourgain-style argument chooses boundary gaps that remain separated over a short interval, applies the finite-subsystem energy identity, and bounds cross-environment terms by the previously selected multiscale interval averages.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        58
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Boundary-gap pigeonholing controls environmental energy influx",
+      "unit_artifact_relpath": "depth/units/rt2020_d29_local_energy_propagation.txt",
+      "unit_bytes": 6848,
+      "unit_id": "rt2020_d29_local_energy_propagation",
+      "unit_sha256": "4928a66eac1b0c0138ed2fab5d54269fda5cdf7008acc31c19e20711cba1f9c6",
+      "unit_type": "localized-monotonicity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d29_local_energy_propagation.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3099,
+          "line_end": 3106,
+          "text": "\nThe De Bruijn-Newman constant is non-negative                             57\n\nfor some interval [I− , I+ ]Z∗ containing [T log T, 2T log T ]Z∗ and contained in\n[0.5T log T, 3T log T ]Z∗ . Since Ẽ I (0) is monotone in I, Proposition 26 follows.\n    It remains to establish Proposition 28. We use an argument due to Bourgain\n[2, §4] that combines local conservation laws (or, in this case, local monotonicity\nformulae) with the pigeonhole principle.\n",
+          "sha256": "24a3f64c4fba784ec75b310f8ea94e5d46ffc6aedbd72844822cff48259a89fd"
+        },
+        "after": {
+          "line_start": 3218,
+          "line_end": 3225,
+          "text": "\n<!-- source-page: 59 -->\n\nThe De Bruijn-Newman constant is non-negative                                   59\n\n                           9. Contradicting pair correlation\n   It remains to see that Proposition 26 is in contradiction with results that are\nknown to be the case for the points x j (0). Note in particular that\n",
+          "sha256": "f8949a4e0742441bf72e4e23f02fa4ed60c527819c91c13df15eb31c9035ddf8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Controlling the energy at time 0",
+            "line_end": 3222,
+            "line_start": 3018,
+            "mathematical_role": "Finds a good spatial interval and applies a Bourgain-style local propagation inequality over short time steps to turn averaged energy control into time-zero control."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3217,
+          "line_start": 3107,
+          "title": "Boundary-gap pigeonholing controls environmental energy influx",
+          "unit_id": "rt2020_d29_local_energy_propagation",
+          "unit_type": "localized-monotonicity",
+          "why_material": "A Bourgain-style argument chooses boundary gaps that remain separated over a short interval, applies the finite-subsystem energy identity, and bounds cross-environment terms by the previously selected multiscale interval averages."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes boundary selection, persistence via the virial identity, internal energy monotonicity, boundary-scale decomposition, and conversion back to renormalized energy.",
+          "representation_dependency": "The cross-term bounds are formula-dense and some symbols are extraction-sensitive; the conservation-with-buffer mechanism is clear.",
+          "unit_id": "rt2020_d29_local_energy_propagation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3106,
+            "line_start": 3018,
+            "title": "A good interval and short-time propagation transfer average control to time zero",
+            "unit_id": "rt2020_d28_time_zero_energy_strategy",
+            "unit_type": "average-to-endpoint-transfer",
+            "why_material": "Theorem 17 first supplies a good time and a multiscale-good spatial interval; Proposition 28 is then iterated over O(log^2 T) short steps while shrinking only polylogarithmically, yielding time-zero energy control on the target block."
+          },
+          {
+            "line_end": 3271,
+            "line_start": 3223,
+            "title": "Equilibrium gap concentration contradicts known positive small-gap density",
+            "unit_id": "rt2020_d30_pair_correlation_contradiction",
+            "unit_type": "final-obstruction",
+            "why_material": "Time-zero renormalized energy forces almost every normalized consecutive gap to approach one, while a known zeta-zero gap result supplies a positive proportion bounded strictly below mean spacing."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth time-averaged energy control can be transferred to a terminal local block by selecting buffered spatial boundaries and iterating short-time monotonicity, after which nearest-neighbor statistics provide the contradiction.",
+            "limit": "The final obstruction uses an external theorem about zeta-zero gaps under the already implied Riemann hypothesis; this source does not reprove that statistical result.",
+            "parent_local_unit_ids": [
+              "rt2020_d20_smooth_localization_strong_target",
+              "rt2020_d28_time_zero_energy_strategy",
+              "rt2020_d29_local_energy_propagation",
+              "rt2020_d30_pair_correlation_contradiction"
+            ],
+            "title": "Average dissipation reaches a statistical obstruction through buffered propagation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "rt2020_d29_local_energy_propagation",
+        "spontaneous": {
+          "unit_id": "rt2020_d29_local_energy_propagation",
+          "spontaneous_reading": "The local propagation estimate is protected by manufactured boundaries: pigeonholing finds gaps at the terminal time, a virial bound keeps them open backward across the short interval, and those persistent gaps limit energy exchange between the finite interior subsystem and its environment. The remaining leakage is charged to preselected multiscale boundary-energy budgets."
+        },
+        "directed": {
+          "unit_id": "rt2020_d29_local_energy_propagation",
+          "source_grounded_mathematics": "Indices j_- and j_+ are chosen inside the log^3 T buffers so their exterior gaps at t2 are at least 1/log T. Lemma 12(iv) and the short time-step restriction keep these gaps comparable throughout [t1,t2]. For K=[j_-,j_+], Lemma 12 bounds the derivative of the unnormalized internal energy by cross-environment terms. Splitting internal pairs according to whether |x_k-x_k'| is at least one bounds the first class directly and the short-pair class by dyadic boundary energies from Proposition 27 plus the ambient energy from Theorem 17. Integration gives E_K(t2) <= E_K(t1) plus the endpoint-displacement cost; monotonicity and Lemma 16 convert this to the claimed renormalized-energy inequality on the shrunken interval.",
+          "conceptual_reading": "Approximate locality is not assumed; it is created by selecting and preserving buffer gaps. Once the finite subsystem is separated, its failure to be closed is quantified as boundary flux, and a scale decomposition matches that flux to the previously prepared boundary certificate.",
+          "representation_or_bridge": "The finite-subsystem energy E_K is the bridge object: it has a usable differential inequality even though the desired renormalized energy is localized and reference-subtracted. Persistent boundary gaps connect particle geometry to small environmental flux, while Lemma 16 reconnects E_K to E-tilde on the interior interval.",
+          "boundary_or_failure": "This is only short-time, approximate local monotonicity. It requires the pigeonholed gaps, the virial persistence estimate, the multiscale-good interval, global integrated-energy control, and a shrunken output interval. Without a buffer, cross-environment denominators can become large and the argument supplies no comparable propagation bound.",
+          "uncertainty": "The conservation-with-buffer mechanism and final inequality are explicit. The cross-term displays are formula-dense and extraction-sensitive, so exact index restrictions, signs, and dyadic coefficients should be verified before formal or numerical use."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "rt2020_d29_local_energy_propagation",
+        "critic_decision": "revise",
+        "supported": [
+          "The source chooses j_- and j_+ in the log^3 T boundary buffers with exterior gaps at t2 at least 1/log T, then uses Lemma 12(iv) and the short time step to preserve comparable gaps throughout [t1,t2].",
+          "The finite-subsystem energy E_K and its differential upper bound by cross-environment terms are accurately identified as the bridge used to prove local propagation.",
+          "The candidate correctly describes the split at |x_k-x_k'|=1, the dyadic boundary-energy control from Proposition 27, the ambient contribution from Theorem 17, and subsequent time integration.",
+          "Monotonicity and Lemma 16 do convert the unnormalized finite-subsystem estimate back to the renormalized estimate on the shrunken interval."
+        ],
+        "inference": [
+          "Saying approximate locality is manufactured by persistent buffer gaps is a faithful interpretation of the boundary selection and virial-persistence steps.",
+          "Describing the cross-environment contribution as boundary flux is interpretive but grounded in the displayed differential inequality."
+        ],
+        "unsupported_or_imported": [
+          "The boundary sentence reverses the dangerous regime: large cross-environment denominators suppress the reciprocal cross terms; without a buffer the problem is that separations, hence the denominators, may become small and the reciprocal terms may become large."
+        ],
+        "paraphrase_or_style_risk": [
+          "The conservation language should remain one-sided: the proof establishes an upper bound on energy growth, not a two-sided approximate conservation law, although the candidate's detailed account mostly respects this distinction."
+        ],
+        "context_or_ocr_risk": [
+          "The cross-term displays and some index decorations are formula-dense and extraction-sensitive; the persistent-gap, scale-splitting, and integrated upper-bound mechanism is still explicit."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'cross-environment denominators can become large' with 'cross-environment separations (the denominators) can become small, causing the reciprocal cross terms to become large.'",
+          "Keep the locality/conservation description explicitly one-sided: the buffered argument controls possible growth of the internal energy over the short interval."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ef96a7218ec926571a6bcd55551721cc592251a66752397d19d90ac7dd072828"
+}

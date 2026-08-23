@@ -1,0 +1,140 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2282130622",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2282130622_8f75b7e7_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The proved conditional monotonicity and the computed one-step exponent, spacing, ratio, and composition patterns suggest a coordinated local rigidity program for consecutive XA numbers.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2282130622_u20",
+          "full_openalex_w2282130622_u21",
+          "full_openalex_w2282130622_u23"
+        ],
+        "proposed_limit": "Most parents here are finite computations with fixed cutoffs and external-list dependence; they are hypothesis generators, not universal evidence.",
+        "source_id": "openalex_w2282130622",
+        "synthesis_id": "riemann_v2_within_5db4b9a24154b3176acd392f",
+        "title": "Finite XA regularity as a falsifiable conjecture family"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source reports that the hypotheses were checked only through the 8150th XA element; that finite observation is not part of the theorem's proof.",
+          "line_end": 1585,
+          "line_start": 1521,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The multi-line lower-bound chain is OCR-fragile and must be checked against the typeset formula before exact reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines XA record growth, explicit product estimates, a prime-gap bound, and a lower spacing assumption to prove monotonicity of a mixed divisor-totient statistic for consecutive XA numbers.",
+          "source_id": "openalex_w2282130622",
+          "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+          "source_page_markers_inside_unit": [
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A spacing condition makes (sigma+phi)/n increase along XA",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2282130622_u20.txt",
+          "unit_bytes": 3539,
+          "unit_id": "full_openalex_w2282130622_u20",
+          "unit_sha256": "f807a3f534608fa5a8fcdf1179f8463201a97d0db093992a1a3d6815008feb91",
+          "unit_type": "conditional XA monotonicity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2282130622_u20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The mixed statistic has competing components. Record growth helps sigma/n, while admitting a new prime can decrease phi/n; the spacing hypothesis is a quantitative budget ensuring the first effect dominates the second.",
+            "nonparaphrase_operation": "The difference of the two g-values is decomposed into a log-log growth term and an Euler product over prime support. Mertens and prime-gap estimates translate those components to the common largest-prime scale.",
+            "quality_reason": "The theorem explicitly assumes consecutive large XA terms, nondecreasing largest prime, and log(n'/n)>1/log p, and concludes increase of (sigma+phi)/n. The proof uses the XA lower margin above 1.75, the logarithmic inequality, effective p-versus-log n control, Mertens-product bounds, and the consecutive-prime estimate to obtain a positive lower bound. The candidate correctly separates the finite check through the 8150th XA element from the proof and preserves the eventual, conditional status. The competing-components description is anchored in the exact two summands and analytic estimates.",
+            "source_support": "For consecutive large XA numbers n,n' with nondecreasing largest prime and log(n'/n)>1/log p, Theorem 4.35 proves that (sigma(n)+phi(n))/n increases. The proof lower-bounds the change using XA growth of sigma/(n log log n), the numerical margin above 1.75, explicit Euler-product estimates, a consecutive-prime bound, and effective control relating log n' to p'. The final lower bound is positive.",
+            "speculation_status": "The theorem is conditional on two hypotheses and only eventual. The reported check through the 8150th XA element is finite evidence for the hypotheses, not part of the proof or a universal result. The long inequality chain is OCR-sensitive. The dominance structure and conditional conclusion are clear; exact intermediate exponents and constants should be checked in the typeset source. Describing the proof as a budget between sigma gain and phi loss is a faithful decomposition of the displayed difference. The multiline lower-bound chain is extraction-sensitive; the candidate appropriately requires typeset verification for exact constants and exponents."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "All claims are empirical within the stated C1 cutoff and rely on an external list of SA numbers; they must not be promoted to universal theorems.",
+          "line_end": 1647,
+          "line_start": 1588,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Primorial factorizations and exponent notation are recoverable but should retain typeset structure.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Records finite-range relations among adjacent prime-power blocks, one-step exponent changes between consecutive XA numbers, monotone largest-prime and divisor-count observations, and counterexamples showing these patterns do not automatically characterize highly composite or SA behavior.",
+          "source_id": "openalex_w2282130622",
+          "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Observed local rigidity of XA exponent vectors",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2282130622_u21.txt",
+          "unit_bytes": 2539,
+          "unit_id": "full_openalex_w2282130622_u21",
+          "unit_sha256": "02e57e8374a2ab719bf7c92903c28853d4da968f0d1ecb336dc2ae35c8cbb352",
+          "unit_type": "finite XA structural observations",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2282130622_u21.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Within the reported finite computation, consecutive XA factorizations can be viewed as states in exponent-vector space: Property 5.3 bounds every listed coordinate change to {-1,0,1}, while Property 5.4 reports nondecreasing largest prime and divisor count; Property 5.1 supplies additional narrow prime-power relations. Together these observations suggest a locally rigid path as a falsifiable finite-data hypothesis, not a theorem. The representation gains transition structure from static factorizations, but loses universality at the C1 cutoff and depends on the external SA list. The examples also control overreach: the divisor-count pattern does not make XA highly composite, and the two monotonicities do not transfer to SA. Property 5.2 reports a finite bound on the largest prime of exponent two, but its radical endpoints remain excluded pending rendered-formula verification.",
+            "nonparaphrase_operation": "Convert the finite table-like properties into a constrained-transition model and use the supplied counterexamples as scope controls. This organizes the observations into a conjecture generator while separating robust qualitative transitions from formula-level content damaged by extraction.",
+            "quality_reason": "Accepted after removing the OCR-fragile radical transcription, preserving the finite cutoff and provenance, and retaining the readable coordinate, monotonicity, and counterexample mechanisms without promoting them to theorems.",
+            "source_support": "The section explicitly describes numerical results for XA through its 13770th element below C1=s_500000 using T. D. Noe's SA list. Properties 5.1, 5.3, and 5.4 state the prime-power relations, coordinate changes in {-1,0,1}, and finite monotonicity observations. Remarks 5.5 and 5.6 provide counterexamples to highly-composite and SA-transfer inferences. The normalized radical display in Property 5.2 is not safe for exact transcription.",
+            "speculation_status": "All positive regularities are empirical only for the stated range and external-list computation. 'Locally rigid path' is a hypothesis-generating synthesis; no asymptotic or universal XA claim is made, and the exact Property 5.2 endpoints remain quarantined from reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Every property is bounded by C2 or an explicitly stated domain; the source gives observations, not proofs, and the table immediately before this span is only illustrative data.",
+          "line_end": 1784,
+          "line_start": 1701,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Many floor, composition, and exponent displays are extraction-sensitive; exact formulas require typeset verification before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Provides a concentrated bank of finite-range structural hypotheses on consecutive SA/XA spacing and on monotonicity of composed arithmetic functions, suitable for later falsification or theorem selection.",
+          "source_id": "openalex_w2282130622",
+          "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+          "source_page_markers_inside_unit": [
+            29
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Computed spacing, ratio, and composition monotonicities",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2282130622_u23.txt",
+          "unit_bytes": 3509,
+          "unit_id": "full_openalex_w2282130622_u23",
+          "unit_sha256": "1a74e140be62205b00b59807a21fdb24005fd71cb58aa504096d437bc73be5c0",
+          "unit_type": "finite monotonicity conjecture bank",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2282130622_u23.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The properties probe whether extremal sequences impose coordinated regularity across otherwise different arithmetic summaries. Spacing estimates are especially useful because they could provide the quantitative slack needed to prove some of the observed composition monotonicities.",
+            "nonparaphrase_operation": "Consecutive-term ratios supply local transition coordinates, while composition with floor, phi, sigma, Psi, d, and omega tests whether record structure survives nonlinear changes of representation.",
+            "quality_reason": "The span reports the consecutive-SA ratio bound, two consecutive-XA spacing bounds, the f-ratio bound, and the finite increase of n/omega(n). It then lists finite-cutoff monotonicity observations for the named floor compositions and arithmetic-function combinations, plus the comparison with f(lcm(1,...,p)) on its stated SA range. The candidate consistently identifies these as computed hypotheses with explicit cutoffs and extra hypotheses, not universal theorems. The conjecture-bank framing is appropriate because the candidate names the concrete ratios and compositions instead of treating all monotonicities as one phenomenon.",
+            "source_support": "Within C2, the source reports an upper bound for consecutive SA growth of sigma(n)/n, two lower spacing bounds and an upper f-ratio bound for consecutive XA terms, and derives increase of n/omega(n). It also lists finite-range monotonicity observations for floor-based compositions and combinations of sigma, phi, Psi, d, and omega, plus a comparison between f(n) and f(lcm(1,...,p)) on a stated SA range.",
+            "speculation_status": "All properties are reported only below explicit cutoffs, with no proofs, and some have additional domain or largest-prime hypotheses. The many floors, compositions, and superscripts are extraction-sensitive; none is universal evidence as stated. High confidence that this is finite hypothesis-generating evidence; moderate confidence in exact symbolic transcription without checking the rendered formulas. The suggestion that spacing estimates might supply slack for future proofs is explicitly prospective and is supported by their quantitative form. Floor, composition, and superscript placement are extraction-sensitive; the candidate correctly lowers confidence in exact symbolic transcription."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_876cfd4a3fea9ae94b1c34f4089832b4368c51418d8101cb44abaf41234ceaf5",
+        "dossier_sha256": "bfa90d1b16f70b21886dec98e236624bd9e652df621beebeae486f7071ce4442"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "49f2f23cebbe4fda07703307f502f9d87cb02c32326152c12cea5ff082ffd155"
+}

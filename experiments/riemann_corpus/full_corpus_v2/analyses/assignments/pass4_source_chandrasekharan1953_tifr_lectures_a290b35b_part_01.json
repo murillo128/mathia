@@ -1,0 +1,641 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_chandrasekharan1953_tifr_lectures_a290b35b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "chandrasekharan1953_tifr_lectures",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the derivation from the product formula and all stated uniform corollaries.",
+      "line_end": 2877,
+      "line_start": 2666,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This span contains many severely fragmented displays; the remainder method and sector are recoverable from prose, but exact main terms and errors must be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites log Gamma as a main term plus an integral of the bounded sawtooth remainder, integrates by parts, and obtains uniform sectorial asymptotics and log-derivative consequences.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        66,
+        67,
+        68
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform complex Stirling formula from a bounded periodic remainder",
+      "unit_artifact_relpath": "depth/units/ch53_u23.txt",
+      "unit_bytes": 9943,
+      "unit_id": "ch53_u23",
+      "unit_sha256": "9457a2e27333734b51cf1233078d4b3a7ca76307af681065fba0a07560a87e13",
+      "unit_type": "asymptotic method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u23.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2658,
+          "line_end": 2665,
+          "text": "                      p           p\n     For p = 2 and p = 3 we get:\n        \u0012 x\u0013 x + 1!      √          \u0012 x\u0013 x + 1! x + 2!\n                          π                               2π\n      Γ     Γ         = x−1 Γ(x); Γ     Γ      Γ       =      1\n                                                                Γ(x).\n          2      2      2             3    3      3      3 x− 2\n\n",
+          "sha256": "af978ce60748028a689bac4887909823fbe94c02a657d757141ba1947d84289b"
+        },
+        "after": {
+          "line_start": 2878,
+          "line_end": 2885,
+          "text": "\n<!-- source-page: 69 -->\n\nLecture 8\n\nThe Zeta Function of\nRiemann\n\n",
+          "sha256": "9db8759cbd91232c554983cc509b56eb65af5ebe7a584e3ca30955848f6eec42"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 7: The Gamma Function (continued)",
+            "line_end": 2880,
+            "line_start": 2470,
+            "mathematical_role": "Log-convex uniqueness, multiplication formula, and uniform complex Stirling asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2877,
+          "line_start": 2666,
+          "title": "Uniform complex Stirling formula from a bounded periodic remainder",
+          "unit_id": "ch53_u23",
+          "unit_type": "asymptotic method",
+          "why_material": "Rewrites log Gamma as a main term plus an integral of the bounded sawtooth remainder, integrates by parts, and obtains uniform sectorial asymptotics and log-derivative consequences."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the derivation from the product formula and all stated uniform corollaries.",
+          "representation_dependency": "This span contains many severely fragmented displays; the remainder method and sector are recoverable from prose, but exact main terms and errors must be scan-verified.",
+          "unit_id": "ch53_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2664,
+            "line_start": 2589,
+            "title": "Gauss multiplication formula from Gamma uniqueness",
+            "unit_id": "ch53_u22",
+            "unit_type": "functional identity",
+            "why_material": "Constructs a product of shifted Gamma factors satisfying the same recurrence and log convexity, invokes uniqueness up to scale, and determines the scale asymptotically."
+          },
+          {
+            "line_end": 2962,
+            "line_start": 2886,
+            "title": "Euler product and zero-freeness for Re(s)>1",
+            "unit_id": "ch53_u24",
+            "unit_type": "arithmetic factorization",
+            "why_material": "Justifies the prime-factor product by finite truncation and unique factorization, making the prime connection exact and proving nonvanishing in the absolute-convergence half-plane."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "ch53_u23",
+        "spontaneous": {
+          "unit_id": "ch53_u23",
+          "spontaneous_reading": "The discrepancy between a sum and its integral is encoded by a sawtooth term whose bounded periodic primitive makes the Stirling remainder uniformly controllable."
+        },
+        "directed": {
+          "unit_id": "ch53_u23",
+          "source_grounded_mathematics": "The logarithm of Gamma's product is rearranged into its main terms plus an integral involving [u]-u+1/2; integrating through the bounded primitive of this periodic remainder gives O(1/|z|) uniformly in sectors away from the negative axis.",
+          "conceptual_reading": "Oscillatory discretization error becomes harmless after one antiderivative, separating universal asymptotic growth from a controlled remainder.",
+          "representation_or_bridge": "The product formula, a sum-integral remainder, its bounded periodic primitive, and sectorial geometry bridge discrete factorial data to complex uniform asymptotics.",
+          "boundary_or_failure": "Uniformity excludes a fixed wedge around the negative real axis, where the denominator approaches the Gamma poles and branch cut.",
+          "uncertainty": "Many displays are severely fragmented; the remainder method and sector are reliable, but exact main terms and derivative errors need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "ch53_u23",
+        "critic_decision": "revise",
+        "supported": [
+          "The span rewrites log Gamma as its main terms plus an integral of [u]-u+1/2 over u+z.",
+          "The primitive of this zero-mean periodic remainder is bounded, and integration by parts changes the denominator to (u+z)^2, yielding O(1/|z|) uniformly for |arg z|<=pi-epsilon.",
+          "The conceptual claim that one antiderivative controls oscillatory discretization error is source-grounded."
+        ],
+        "inference": [
+          "Calling the remainder a sum-integral discrepancy and emphasizing sectorial geometry are faithful interpretations of the displayed derivation."
+        ],
+        "unsupported_or_imported": [
+          "The boundary statement says the denominator approaches the Gamma poles. The span proves only loss of the uniform sectorial estimate as arg z approaches pi; u+z can approach zero along the whole negative axis, not specifically at Gamma poles."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Many main-term and corollary displays are severely fragmented, so the candidate is right to reserve exact formulas and derivative errors for scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the pole-based rationale in boundary_or_failure with the source-grounded statement that uniformity is proved only for sectors |arg z|<=pi-epsilon because the integral estimate for 1/(u+z)^2 loses a uniform lower bound as z approaches the negative real axis; retain the principal-log/scan caveat without attributing the denominator to Gamma poles."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These linked formulas show several interchangeable encodings of multiplicative structure.",
+      "line_end": 3056,
+      "line_start": 2963,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some primes and minus signs are OCR-corrupted; definitions in prose make the coefficient meanings recoverable, exact signs need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms the Euler product into a prime-counting integral, prime-power logarithmic series, von Mangoldt logarithmic derivative, and Möbius reciprocal series.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        71,
+        72
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime data encoded by log zeta and its logarithmic derivative",
+      "unit_artifact_relpath": "depth/units/ch53_u25.txt",
+      "unit_bytes": 4001,
+      "unit_id": "ch53_u25",
+      "unit_sha256": "8399879e5ca6907e5086e9f2d30ac4a60921920d160658c25f4a535dc3840267",
+      "unit_type": "representation bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u25.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2955,
+          "line_end": 2962,
+          "text": "                                           (P + 1)σ (P + 2)σ\n\n\n     → 0, as P → ∞, if σ > 1.\n         Hence (1.2) has been established for σ > 1, on the basis of (1.1).\n     As an immediate consequence of (1.2) we observe that ζ(s) has no zeros\n     for σ > 1, since a convergent infinite product of non-zero factors is\n     non-zero.\n",
+          "sha256": "2377b6fe53c952f62edacdf5d3b550c71d67a916d26bdd39eecf6a8349cc8e77"
+        },
+        "after": {
+          "line_start": 3057,
+          "line_end": 3064,
+          "text": "         We also have\n                                       ∞\n                                      X d(n)\n                            ζ 2 (s) =         , σ>1\n                                      n=1\n                                          ns\n     where d(n) denotes the number of divisors of n, including 1 and n. For\n                                  ∞             ∞              ∞\n",
+          "sha256": "dfeca6344898ae1f902251d9897c9baf84ad5ec4f71e8aa98372c00e9ef43e05"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 8: Elementary properties of zeta",
+            "line_end": 3212,
+            "line_start": 2881,
+            "mathematical_role": "Euler product, prime connection, logarithmic derivatives, and multiplicative coefficient identities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3056,
+          "line_start": 2963,
+          "title": "Prime data encoded by log zeta and its logarithmic derivative",
+          "unit_id": "ch53_u25",
+          "unit_type": "representation bridge",
+          "why_material": "Transforms the Euler product into a prime-counting integral, prime-power logarithmic series, von Mangoldt logarithmic derivative, and Möbius reciprocal series."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These linked formulas show several interchangeable encodings of multiplicative structure.",
+          "representation_dependency": "Some primes and minus signs are OCR-corrupted; definitions in prose make the coefficient meanings recoverable, exact signs need scan verification.",
+          "unit_id": "ch53_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2962,
+            "line_start": 2886,
+            "title": "Euler product and zero-freeness for Re(s)>1",
+            "unit_id": "ch53_u24",
+            "unit_type": "arithmetic factorization",
+            "why_material": "Justifies the prime-factor product by finite truncation and unique factorization, making the prime connection exact and proving nonvanishing in the absolute-convergence half-plane."
+          },
+          {
+            "line_end": 3209,
+            "line_start": 3057,
+            "title": "Zeta products generate divisor and shifted-divisor coefficients",
+            "unit_id": "ch53_u26",
+            "unit_type": "Dirichlet-convolution identities",
+            "why_material": "Uses multiplication of absolutely convergent Dirichlet series and Euler factors to derive divisor-count, divisor-sum, and squared shifted-divisor identities later reused in a zero-free-line proof."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "ch53_u25",
+        "spontaneous": {
+          "unit_id": "ch53_u25",
+          "spontaneous_reading": "One Euler product is unfolded into several prime statistics: cumulative prime counts, prime-power weights, and squarefree inclusion-exclusion each expose a different operation on the same multiplicative data."
+        },
+        "directed": {
+          "unit_id": "ch53_u25",
+          "source_grounded_mathematics": "For Re(s)>1 the text expands log zeta over prime powers, uses summation by parts to express it through pi(x), differentiates to obtain a Dirichlet series supported on prime powers, and expands 1/zeta with Möbius coefficients.",
+          "conceptual_reading": "Taking a logarithm converts independent Euler factors into additive prime events; differentiation weights those events by log p, while reciprocation records exclusion among distinct primes.",
+          "representation_or_bridge": "The bridge runs from Euler factors to log-series coefficients, the cumulative function pi(x), the von Mangoldt support pattern, and Möbius inversion.",
+          "boundary_or_failure": "Every manipulation is confined to absolute convergence in Re(s)>1; these identities alone give neither continuation nor prime-counting asymptotics.",
+          "uncertainty": "OCR corrupts some signs, primes, and exponents, so the structural identities and prose definitions are reliable but exact displayed signs require the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "ch53_u25",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives the prime-counting integral for log zeta, the prime-power expansion, the logarithmic-derivative coefficients supported on prime powers, and the reciprocal series with Möbius coefficients.",
+          "The Re(s)>1 boundary and formula-level OCR warning are accurate."
+        ],
+        "inference": [
+          "Describing logarithms as making Euler factors additive and reciprocation as squarefree inclusion-exclusion is a reasonable conceptual reading of the displayed operations."
+        ],
+        "unsupported_or_imported": [
+          "The phrase 'Möbius inversion' names an inversion operation not actually performed in this span; the source only expands 1/zeta with Möbius coefficients."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "OCR drops or corrupts minus signs, prime symbols, and exponents, so exact signed identities cannot be certified from the text layer alone."
+        ],
+        "missed_mechanism": [
+          "The reciprocal product records both squarefree support and parity of the number of distinct prime factors through the definition of mu."
+        ],
+        "revision_instructions": [
+          "Replace 'Möbius inversion' with 'the reciprocal Euler product and its Möbius-coefficient expansion'; keep the remaining analysis unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the general coefficient products and the positive-coefficient identity with conjugate shifts.",
+      "line_end": 3209,
+      "line_start": 3057,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Multiple Euler-factor displays are heavily fragmented; the coefficient interpretations are stated in prose, exact parameter placement requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses multiplication of absolutely convergent Dirichlet series and Euler factors to derive divisor-count, divisor-sum, and squared shifted-divisor identities later reused in a zero-free-line proof.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        73,
+        74
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta products generate divisor and shifted-divisor coefficients",
+      "unit_artifact_relpath": "depth/units/ch53_u26.txt",
+      "unit_bytes": 7244,
+      "unit_id": "ch53_u26",
+      "unit_sha256": "15d6034845587bd3baff1a4306555015e1abd6e87fb2089703d77196f2ce9e1b",
+      "unit_type": "Dirichlet-convolution identities",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u26.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3049,
+          "line_end": 3056,
+          "text": "                                          ∞\n                                          X µ(n)\n                                      =                  ,     σ>1                 (1.6)\n                                          n=1\n                                                    ns\n\n     (1.6) where µ(1) = 1, µ(n) = (−1)k if n is the product of k different\n     primes, µ(n) = 0 if n contains a factor to a power higher than the first.\n",
+          "sha256": "41c76a0f5db44a00afc9d51a649f890647d053024d2bc4a1dbe0c85099464096"
+        },
+        "after": {
+          "line_start": 3210,
+          "line_end": 3217,
+          "text": "\n<!-- source-page: 75 -->\n\nLecture 9\n\nThe Zeta Function of\nRiemann (Contd.)\n\n",
+          "sha256": "b655de3cc1529d33e8075250403f4d6f1f8715ef8c62ae68cd4178b8e7267fe3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 8: Elementary properties of zeta",
+            "line_end": 3212,
+            "line_start": 2881,
+            "mathematical_role": "Euler product, prime connection, logarithmic derivatives, and multiplicative coefficient identities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3209,
+          "line_start": 3057,
+          "title": "Zeta products generate divisor and shifted-divisor coefficients",
+          "unit_id": "ch53_u26",
+          "unit_type": "Dirichlet-convolution identities",
+          "why_material": "Uses multiplication of absolutely convergent Dirichlet series and Euler factors to derive divisor-count, divisor-sum, and squared shifted-divisor identities later reused in a zero-free-line proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the general coefficient products and the positive-coefficient identity with conjugate shifts.",
+          "representation_dependency": "Multiple Euler-factor displays are heavily fragmented; the coefficient interpretations are stated in prose, exact parameter placement requires scan verification.",
+          "unit_id": "ch53_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3056,
+            "line_start": 2963,
+            "title": "Prime data encoded by log zeta and its logarithmic derivative",
+            "unit_id": "ch53_u25",
+            "unit_type": "representation bridge",
+            "why_material": "Transforms the Euler product into a prime-counting integral, prime-power logarithmic series, von Mangoldt logarithmic derivative, and Möbius reciprocal series."
+          },
+          {
+            "line_end": 3373,
+            "line_start": 3218,
+            "title": "Partial summation and half-planes of Dirichlet-series convergence",
+            "unit_id": "ch53_u27",
+            "unit_type": "general theory",
+            "why_material": "Derives the summation-by-parts integral, uses it to prove angular uniform convergence, and thereby explains why convergence regions are half-planes supporting analytic termwise differentiation."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "ch53_u26",
+        "spontaneous": {
+          "unit_id": "ch53_u26",
+          "spontaneous_reading": "Multiplying shifted zeta functions acts as an arithmetic feature constructor: coefficient convolution produces divisor sums, and conjugate shifts turn them into manifest squares."
+        },
+        "directed": {
+          "unit_id": "ch53_u26",
+          "source_grounded_mathematics": "The unit derives coefficients of zeta powers as ordered factorization counts, coefficients of zeta(s)zeta(s-a) as divisor-power sums, and a four-shift Euler-product quotient whose coefficients include d(n)^2 and |sigma_{i alpha}(n)|^2.",
+          "conceptual_reading": "Products of Dirichlet series synthesize multiplicative statistics by convolution, while conjugation is used to manufacture coefficientwise positivity for later analytic obstruction arguments.",
+          "representation_or_bridge": "Local prime-power Euler factors are matched with global Dirichlet coefficients such as d_k(n), sigma_a(n), and positive squared shifted-divisor sums.",
+          "boundary_or_failure": "The identities require their stated absolute-convergence half-planes and do not by themselves justify continuation or a zero-free boundary.",
+          "uncertainty": "Several Euler factors and parameter placements are fragmented; coefficient meanings are prose-supported, but exact shifted formulas need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "ch53_u26",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives ordered-factorization coefficients for zeta powers, divisor-power sums for shifted products, and the d(n)^2 and absolute-square coefficient identities.",
+          "Local Euler factors are explicitly matched to global Dirichlet coefficients under stated absolute-convergence conditions."
+        ],
+        "inference": [
+          "Calling products of Dirichlet series arithmetic feature constructors is a modern but concrete description of coefficient convolution.",
+          "The conjugate shifts do visibly produce nonnegative absolute-square coefficients."
+        ],
+        "unsupported_or_imported": [
+          "The claim that conjugation manufactures positivity 'for later analytic obstruction arguments' imports a downstream use not stated in this frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Feature constructor' is stylistic, but it is unpacked by the actual convolution operation and is not content-free."
+        ],
+        "context_or_ocr_risk": [
+          "Several Euler factors and parameter placements are fragmented, so exact shifted formulas require scan verification."
+        ],
+        "missed_mechanism": [
+          "Positivity comes from specializing the two parameters to conjugates in the already-derived coefficient identity, not from conjugation in isolation."
+        ],
+        "revision_instructions": [
+          "Delete the downstream-purpose clause and state only that conjugate specialization turns the coefficients into absolute squares; preserve the convergence caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the residue pair calculation, analytic continuation step, Gamma identities, and completed symmetry.",
+      "line_end": 4339,
+      "line_start": 4220,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The contour diagram is absent and phase factors are fragmented; the residue mechanism and final symmetry are clear, exact constants need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands the Hankel contour across the lattice of kernel poles, lets a square contour escape, and packages the result into the symmetric completed zeta and xi function.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        97,
+        98
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "First functional equation by summing contour residues",
+      "unit_artifact_relpath": "depth/units/ch53_u33.txt",
+      "unit_bytes": 5412,
+      "unit_id": "ch53_u33",
+      "unit_sha256": "c82d5d884929dca0f157bc91f2edd670815e037fd378d20c70e6ebb58099124b",
+      "unit_type": "functional-equation proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u33.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4212,
+          "line_end": 4219,
+          "text": "               1                                (−1)m Bm\n       ζ(0) = − , ζ(−2m) = 0, ζ(1 − 2m) =                   , m = 1, 2, 3, . . .\n               2                                   2m\n\n<!-- source-page: 96 -->\n\n90                            11. The Zeta Function of Riemann (Contd)\n\n",
+          "sha256": "a6274cd0bc5e594c6888749290aa4451508310665c35693b19e91957674a6deb"
+        },
+        "after": {
+          "line_start": 4340,
+          "line_end": 4347,
+          "text": "\n\n     5 Functional Equation (Second Method) [16, p.13]\n     Consider the lemma given in Lecture 9, and write λn = n, an = 1,\n     φ(x) = x−s in it. We then get\n                          ZX\n          X\n                −s             [x]       [X]\n",
+          "sha256": "3c6b8dbf8fd4fc0127bf979f48217b3c323352885637999dff0e2e803c691d80"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 11: Continuation and functional equations",
+            "line_end": 4594,
+            "line_start": 4077,
+            "mathematical_role": "Contour and fractional-part continuations of zeta and two proofs of its functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4339,
+          "line_start": 4220,
+          "title": "First functional equation by summing contour residues",
+          "unit_id": "ch53_u33",
+          "unit_type": "functional-equation proof",
+          "why_material": "Expands the Hankel contour across the lattice of kernel poles, lets a square contour escape, and packages the result into the symmetric completed zeta and xi function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the residue pair calculation, analytic continuation step, Gamma identities, and completed symmetry.",
+          "representation_dependency": "The contour diagram is absent and phase factors are fragmented; the residue mechanism and final symmetry are clear, exact constants need scan verification.",
+          "unit_id": "ch53_u33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4214,
+            "line_start": 4082,
+            "title": "Hankel-contour continuation of zeta",
+            "unit_id": "ch53_u32",
+            "unit_type": "analytic continuation",
+            "why_material": "Mellin-transforms the geometric series, wraps the kernel around its branch point, and expresses zeta as Gamma times an entire contour integral, exposing the pole at one and special values."
+          },
+          {
+            "line_end": 4591,
+            "line_start": 4342,
+            "title": "Second functional equation from the fractional-part Fourier series",
+            "unit_id": "ch53_u34",
+            "unit_type": "functional-equation proof",
+            "why_material": "Continues zeta using the bounded sawtooth error, repeatedly integrates its primitive to extend the domain, and inserts its Fourier series to derive the functional equation through sine Mellin transforms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Contour residues expose the pole lattice, fractional-part Fourier analysis exposes periodic error, and theta-Mellin splitting exposes self-reciprocity; each reaches the same completed symmetry through a different representation.",
+            "limit": "Equivalence is only at the final zeta identity; intermediate hypotheses and analytic continuations differ materially.",
+            "parent_local_unit_ids": [
+              "ch53_u32",
+              "ch53_u33",
+              "ch53_u34",
+              "ch53_u36",
+              "ch53_u37"
+            ],
+            "title": "Three functional-equation routes expose complementary structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "ch53_u33",
+        "spontaneous": {
+          "unit_id": "ch53_u33",
+          "spontaneous_reading": "Expanding the contour across the periodic pole lattice makes the dual zeta series appear as a residue sum, and completion compresses the resulting factors into reflection symmetry."
+        },
+        "directed": {
+          "unit_id": "ch53_u33",
+          "source_grounded_mathematics": "The Hankel contour is enlarged across poles at plus and minus 2 pi i m; paired residues yield a multiple of zeta(1-s), the outer square vanishes for Re(s)<0, and Gamma identities recast the result as xi(s)=xi(1-s).",
+          "conceptual_reading": "The functional equation is a duality exposed by summing a symmetric pole lattice, with completion absorbing scale, Gamma, pole, and zero artifacts.",
+          "representation_or_bridge": "Contour residues bridge the kernel 1/(e^z-1) to the Dirichlet series at 1-s, then the completed xi function turns the identity into a simple reflection.",
+          "boundary_or_failure": "Contour decay is first proved only for Re(s)<0 and the all-plane identity then uses analytic continuation; the argument does not locate nontrivial zeros.",
+          "uncertainty": "The absent contour diagram and corrupted phase factors make exact constants scan-dependent, although the residue mechanism and completed symmetry are clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "ch53_u33",
+        "critic_decision": "revise",
+        "supported": [
+          "The contour is enlarged over the symmetric pole lattice at plus and minus 2 pi i m, and paired residues produce zeta(1-s).",
+          "Decay of the outer square is proved first for Re(s)<0, followed by analytic continuation.",
+          "Gamma identities yield the completed reflection xi(s)=xi(1-s)."
+        ],
+        "inference": [
+          "Calling the residue series dual and saying completion absorbs scale, Gamma, and pole factors is a defensible conceptual compression."
+        ],
+        "unsupported_or_imported": [
+          "The phrase 'zero artifacts' is neither defined nor supported in this span's derivation of the completed symmetry."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Zero artifacts' is vague enough to suggest a mechanism beyond the displayed factor rearrangement."
+        ],
+        "context_or_ocr_risk": [
+          "The absent diagram and corrupted phases make exact constants scan-dependent, though the residue pairing and final symmetry are clear."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'pole, and zero artifacts' with 'pole-cancelling polynomial factors' or simply say that completion packages the scale, Gamma, and pole factors."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "11850bcd7496bf4e72d7c45736b1431f9a08921dac940911d3d6d7e82ce3fbde"
+}

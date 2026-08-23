@@ -1,0 +1,282 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_arias_de_reyna2003_zeta_xray_10c9d7ea_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "arias_de_reyna2003_zeta_xray",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact order of crossings is asserted from the plotted counterexample and should be scan-verified if used as item-level evidence.",
+      "line_end": 1511,
+      "line_start": 1495,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong figure dependency for the concrete crossing order; the quadrant-transition calculation is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A large value of S is read as repeated real/imaginary curve crossings along a horizontal segment; tracking quadrant transitions reconstructs an argument change consistent with the numerical discrepancy.",
+      "source_id": "arias_de_reyna2003_zeta_xray",
+      "source_normalized_sha256": "9f68472afb9124482de96314298e5b552fae572138f2a23492d43dd5fd0c8790",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Horizontal X-ray crossings encode the argument discrepancy",
+      "unit_artifact_relpath": "depth/units/arias_xray_u25.txt",
+      "unit_bytes": 1188,
+      "unit_id": "arias_xray_u25",
+      "unit_sha256": "9dfaf2b564cde4c61e3a9de3b446f04c8bb24619af96ac07bfa38318c0deb002",
+      "unit_type": "geometric-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/arias_xray_u25.txt",
+      "source": {
+        "source_id": "arias_de_reyna2003_zeta_xray",
+        "title": "X-Ray of Riemann's Zeta-Function",
+        "authors": [
+          "Juan Arias de Reyna"
+        ],
+        "year": 2003,
+        "source_type": "visual-mathematical-exposition",
+        "viewpoint_tags": [
+          "representation-change",
+          "value-distribution",
+          "universality",
+          "visualization"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1487,
+          "line_end": 1494,
+          "text": "\nFigure 19. First counterexample to Rosser’s law.\n\n<!-- source-page: 32 -->\n\n32                             J. ARIAS-DE-REYNA\n\n\n",
+          "sha256": "5297e72d684e32b34f93ca90902baf5b9809a883a848e8977b8f660f41316d42"
+        },
+        "after": {
+          "line_start": 1512,
+          "line_end": 1519,
+          "text": "\n\n\n\n                                                              σ + it0\n\n\n\n",
+          "sha256": "1fce7cac6dac9fd9505df12d01009dc15577f72dd856f5f5a0958a7cffea3839"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3b90db587af7178a5e017a422f73652deecac5787bba31bd167e9d8d6f8dab9a",
+        "dossier_sha256": "a963e5fd6206bb1c58ae06241af1b43686fbc29597b5a75ddbd5ee5e78e83805",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Rosser law and the argument discrepancy S(t)",
+            "line_end": 1600,
+            "line_start": 1411,
+            "mathematical_role": "Connects Gram blocks and failures of Rosser's law to S(t), horizontal curve crossings, and increasingly complex coils."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1511,
+          "line_start": 1495,
+          "title": "Horizontal X-ray crossings encode the argument discrepancy",
+          "unit_id": "arias_xray_u25",
+          "unit_type": "geometric-interpretation",
+          "why_material": "A large value of S is read as repeated real/imaginary curve crossings along a horizontal segment; tracking quadrant transitions reconstructs an argument change consistent with the numerical discrepancy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact order of crossings is asserted from the plotted counterexample and should be scan-verified if used as item-level evidence.",
+          "representation_dependency": "Strong figure dependency for the concrete crossing order; the quadrant-transition calculation is explicit in prose.",
+          "unit_id": "arias_xray_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1450,
+            "line_start": 1411,
+            "title": "Rosser blocks and S(t) quantify stronger failures of zero separation",
+            "unit_id": "arias_xray_u24",
+            "unit_type": "hierarchy-of-failure",
+            "why_material": "Good and bad Gram points form blocks whose expected zero count is Rosser's law; the discrepancy S(t) measures departure from the smooth zero count, with thresholds explaining when Gram's and Rosser's rules can fail."
+          },
+          {
+            "line_end": 1591,
+            "line_start": 1585,
+            "title": "Unbounded S predicts arbitrarily many-line coils",
+            "unit_id": "arias_xray_u26",
+            "unit_type": "generalization",
+            "why_material": "The source converts Selberg's unbounded discrepancy result into a qualitative prediction that higher X rays contain coils involving arbitrarily many level curves."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gram signs give local brackets, paired exceptions preserve nearby total counts, Rosser blocks weaken the regularity claim, and S(t) measures when increasingly elaborate crossing coils defeat each level.",
+            "limit": "Historical computations are pretraining-familiar and solver-independent mathematical novelty must not be inferred from reproducing this narrative.",
+            "parent_local_unit_ids": [
+              "arias_xray_u16",
+              "arias_xray_u21",
+              "arias_xray_u22",
+              "arias_xray_u24",
+              "arias_xray_u25",
+              "arias_xray_u26"
+            ],
+            "title": "Zero-separation laws form a controlled hierarchy of breakdown"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1494,
+              "line_start": 1451,
+              "reason": "Figure 19 and its page labels do not preserve the underlying curves."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1584,
+              "line_start": 1512,
+              "reason": "Figures 20-22 are dominated by image labels without recoverable curve paths."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an extrapolated geometric expectation from the cited growth result, not direct observed evidence at all scales.",
+      "line_end": 1591,
+      "line_start": 1585,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-complete; Figures 20 and 22 provide only the finite analogies.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source converts Selberg's unbounded discrepancy result into a qualitative prediction that higher X rays contain coils involving arbitrarily many level curves.",
+      "source_id": "arias_de_reyna2003_zeta_xray",
+      "source_normalized_sha256": "9f68472afb9124482de96314298e5b552fae572138f2a23492d43dd5fd0c8790",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unbounded S predicts arbitrarily many-line coils",
+      "unit_artifact_relpath": "depth/units/arias_xray_u26.txt",
+      "unit_bytes": 478,
+      "unit_id": "arias_xray_u26",
+      "unit_sha256": "fb069c34e85581b92e84bd090a7562d81d87975e75d65e66b5977af44ec3cb89",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/arias_xray_u26.txt",
+      "source": {
+        "source_id": "arias_de_reyna2003_zeta_xray",
+        "title": "X-Ray of Riemann's Zeta-Function",
+        "authors": [
+          "Juan Arias de Reyna"
+        ],
+        "year": 2003,
+        "source_type": "visual-mathematical-exposition",
+        "viewpoint_tags": [
+          "representation-change",
+          "value-distribution",
+          "universality",
+          "visualization"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1577,
+          "line_end": 1584,
+          "text": "\n\n                                                      g30 930 926\n\n\n\n\n                      Figure 22. Detail of the last figure.\n",
+          "sha256": "862c07f36ef45d85ad393f95d4668766b2be3867e1e8eaa80e28c70253843f6c"
+        },
+        "after": {
+          "line_start": 1592,
+          "line_end": 1599,
+          "text": "     Watching the preceding figures one may wonder if the thin lines do\nnot cross the line σ = 0. This is not true, by a theorem of Bohr (see\n[19] p. 300) the function ζ(s) takes every value 6= 0 infinitely often in the\nhalfplane Re(s) > 1. In fact Van de Lune [13] has shown that σ0 = sup{σ ∈\nR : Re ζ(σ + P it) < 0 for some t ∈ R} is given by the unique solution of\nthe equation p arcsin(p−σ ) = π/2, σ > 1. Brent and Van de Lune have\ncomputed σ0 = 1.1923473371861932 . . . with more than 400 decimal digits.\n     We finish with three figures of the zeta-function near a thousand mil-\n",
+          "sha256": "12dbc45f56e1fb3c854851c67698e38c363c13272c39c5d8b779d62b5ec9a8be"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3b90db587af7178a5e017a422f73652deecac5787bba31bd167e9d8d6f8dab9a",
+        "dossier_sha256": "a963e5fd6206bb1c58ae06241af1b43686fbc29597b5a75ddbd5ee5e78e83805",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Rosser law and the argument discrepancy S(t)",
+            "line_end": 1600,
+            "line_start": 1411,
+            "mathematical_role": "Connects Gram blocks and failures of Rosser's law to S(t), horizontal curve crossings, and increasingly complex coils."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1591,
+          "line_start": 1585,
+          "title": "Unbounded S predicts arbitrarily many-line coils",
+          "unit_id": "arias_xray_u26",
+          "unit_type": "generalization",
+          "why_material": "The source converts Selberg's unbounded discrepancy result into a qualitative prediction that higher X rays contain coils involving arbitrarily many level curves."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an extrapolated geometric expectation from the cited growth result, not direct observed evidence at all scales.",
+          "representation_dependency": "Prose-complete; Figures 20 and 22 provide only the finite analogies.",
+          "unit_id": "arias_xray_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1511,
+            "line_start": 1495,
+            "title": "Horizontal X-ray crossings encode the argument discrepancy",
+            "unit_id": "arias_xray_u25",
+            "unit_type": "geometric-interpretation",
+            "why_material": "A large value of S is read as repeated real/imaginary curve crossings along a horizontal segment; tracking quadrant transitions reconstructs an argument change consistent with the numerical discrepancy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gram signs give local brackets, paired exceptions preserve nearby total counts, Rosser blocks weaken the regularity claim, and S(t) measures when increasingly elaborate crossing coils defeat each level.",
+            "limit": "Historical computations are pretraining-familiar and solver-independent mathematical novelty must not be inferred from reproducing this narrative.",
+            "parent_local_unit_ids": [
+              "arias_xray_u16",
+              "arias_xray_u21",
+              "arias_xray_u22",
+              "arias_xray_u24",
+              "arias_xray_u25",
+              "arias_xray_u26"
+            ],
+            "title": "Zero-separation laws form a controlled hierarchy of breakdown"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1584,
+              "line_start": 1512,
+              "reason": "Figures 20-22 are dominated by image labels without recoverable curve paths."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 1600,
+              "line_start": 1599,
+              "reason": "Introduces the final random high-height figures."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "b9c5a741ae49848777340fbf5f3b700e10af8902672f5e310f2993568b05a293"
+}

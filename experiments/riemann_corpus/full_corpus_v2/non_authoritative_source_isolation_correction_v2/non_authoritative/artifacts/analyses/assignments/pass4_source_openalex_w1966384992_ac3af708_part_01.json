@@ -1,0 +1,499 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1966384992_ac3af708_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1966384992",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep the full introductory comparison and announced results; it supplies the reason for the representation rather than merely historical decoration.",
+      "line_end": 42,
+      "line_start": 23,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: prose-supported; no exact formula is needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction identifies the structural tradeoff behind the construction: quaternions avoid zero divisors but are noncommutative, whereas bicomplex numbers are commutative but have zero divisors. This predicts both the ease of defining powers/products and the later need to track a singular divisor.",
+      "source_id": "openalex_w1966384992",
+      "source_normalized_sha256": "1bcf5dd612b58675500362264d419fdff264792037d2bd26b5085804d94f3518",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Commutativity versus zero divisors in choosing a hypercomplex zeta setting",
+      "unit_artifact_relpath": "depth/units/openalex_w1966384992_u01.txt",
+      "unit_bytes": 1626,
+      "unit_id": "openalex_w1966384992_u01",
+      "unit_sha256": "a318da3685c5361979118158c09b7ae947f64b6ac8cedc5765f6c331b1d05980",
+      "unit_type": "motivation-and-design-tradeoff",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1966384992_u01.txt",
+      "source": {
+        "source_id": "openalex_w1966384992",
+        "title": "A Bicomplex Riemann Zeta Function",
+        "authors": [
+          "Dominic Rochon"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 15,
+          "line_end": 22,
+          "text": "\n     Abstract. In this work we use a commutative generalization of complex numbers, called bicomplex numbers,\nto introduce a holomorphic Riemann zeta function of two complex variables satisfying the complexified Cauchy-\nRiemann equations. Furthermore, we establish a bicomplex Riemann hypothesis equivalent to the complex Riemann\nhypothesis of one variable and we obtain a bicomplex Euler Product.\n\n\n\n",
+          "sha256": "2019e4ebf17025026ffa15709c1c9793ba33d744da217db761f75e0c8759f707"
+        },
+        "after": {
+          "line_start": 43,
+          "line_end": 50,
+          "text": "\nReceived June 16, 2003\nResearch supported by CRSNG (Canada)\nKey words. Bicomplex numbers, Hyperbolic numbers, Bicomplex analysis, Riemann zeta function.\nAMS subject classification: 30G, 30G35, 32A, 32A30.\n\n358                                             DOMINIC ROCHON\n\n",
+          "sha256": "b29f29c88122614d1d1711935b8343acff100cc32723c0dd248d3999dfd90d9a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1dcecbf873fc3bdd673c29f4ce4742b298d4eb9695caa60c1f0cf8244158168d",
+        "dossier_sha256": "eefc8829b2abfe57ebd2b54f92b3ba6f37babd8f978b014c6dc9d3133da9bf00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 50,
+            "line_start": 23,
+            "mathematical_role": "Motivates bicomplex numbers as a commutative four-dimensional setting whose zero divisors replace the quaternionic noncommutativity obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 42,
+          "line_start": 23,
+          "title": "Commutativity versus zero divisors in choosing a hypercomplex zeta setting",
+          "unit_id": "openalex_w1966384992_u01",
+          "unit_type": "motivation-and-design-tradeoff",
+          "why_material": "The introduction identifies the structural tradeoff behind the construction: quaternions avoid zero divisors but are noncommutative, whereas bicomplex numbers are commutative but have zero divisors. This predicts both the ease of defining powers/products and the later need to track a singular divisor."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep the full introductory comparison and announced results; it supplies the reason for the representation rather than merely historical decoration.",
+          "representation_dependency": "Low: prose-supported; no exact formula is needed.",
+          "unit_id": "openalex_w1966384992_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 73,
+            "line_start": 51,
+            "title": "Bicomplex algebra and its noninvertible locus",
+            "unit_id": "openalex_w1966384992_u02",
+            "unit_type": "definition-and-obstruction",
+            "why_material": "The four-dimensional commutative algebra is represented as z1+z2 i2 over C(i1), and noninvertibility is characterized by two component conditions. This is the algebraic obstruction governing differentiation, poles, and product convergence later in the source."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1966384992_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w1966384992_u01",
+          "spontaneous_reading": "The choice of scalar algebra trades one obstruction for another: bicomplex commutativity makes powers and products tractable, but zero divisors must remain visible throughout the analysis."
+        },
+        "directed": {
+          "unit_id": "openalex_w1966384992_u01",
+          "source_grounded_mathematics": "The introduction contrasts noncommutative quaternions without zero divisors with commutative bicomplex numbers that have zero divisors, then announces a bicomplex holomorphic zeta, an RH-equivalent conjecture, an Euler product, and a hyperbolic specialization.",
+          "conceptual_reading": "The algebra is selected for the operations the construction needs, while its loss of invertibility predicts the later exceptional sets and strengthened convergence notions.",
+          "representation_or_bridge": "Bicomplex numbers provide a commutative four-real-dimensional setting in which the Dirichlet-series and Euler-product syntax can be retained.",
+          "boundary_or_failure": "This unit is motivation and a roadmap, not a proof of the announced claims. Equivalence to classical RH would be a reformulation, not independent evidence for RH.",
+          "uncertainty": "The argument is prose-supported and carries low formula risk."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1966384992_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly contrasts noncommutative quaternions without zero divisors with commutative bicomplex numbers having zero divisors.",
+          "It announces a bicomplex holomorphic zeta, an RH-equivalent conjecture, an Euler product, and a hyperbolic specialization, and the candidate correctly labels these as roadmap claims rather than proofs.",
+          "The warning that equivalence would not independently support RH is an appropriate epistemic boundary."
+        ],
+        "inference": [
+          "Selecting a commutative algebra because powers and products are easier to retain is a reasonable reading of the stated contrast, but the introduction does not prove that this is the unique or decisive design criterion."
+        ],
+        "unsupported_or_imported": [
+          "The claim that loss of invertibility predicts later exceptional sets and especially 'strengthened convergence notions' imports mechanisms not present in this introductory span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The spontaneous 'trades one obstruction for another' formulation is useful compression, but the directed conceptual sentence becomes a forward-looking template rather than source-local analysis."
+        ],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [
+          "The source also notes that a quaternionic Dirichlet-series definition already exists despite noncommutativity; this limits any implication that commutativity is necessary for defining a hypercomplex zeta."
+        ],
+        "revision_instructions": [
+          "Retain the commutativity/zero-divisor tradeoff and roadmap status, but remove predictions about exceptional sets and convergence definitions. Explicitly note that the span presents bicomplex numbers as one tractable setting, not as the only setting supporting a zeta construction."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the multiplication rules, C2 viewpoint, and Proposition 1 so the zero-divisor locus is not detached from its algebra.",
+      "line_end": 73,
+      "line_start": 51,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: multiplication and coordinate equations are readable, but exact symbols should be checked against the PDF before faithful quotation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The four-dimensional commutative algebra is represented as z1+z2 i2 over C(i1), and noninvertibility is characterized by two component conditions. This is the algebraic obstruction governing differentiation, poles, and product convergence later in the source.",
+      "source_id": "openalex_w1966384992",
+      "source_normalized_sha256": "1bcf5dd612b58675500362264d419fdff264792037d2bd26b5085804d94f3518",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bicomplex algebra and its noninvertible locus",
+      "unit_artifact_relpath": "depth/units/openalex_w1966384992_u02.txt",
+      "unit_bytes": 1318,
+      "unit_id": "openalex_w1966384992_u02",
+      "unit_sha256": "1cef65de5ff942dec448a56cc7124654ddad0a28555dfa4824983a100cce3311",
+      "unit_type": "definition-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1966384992_u02.txt",
+      "source": {
+        "source_id": "openalex_w1966384992",
+        "title": "A Bicomplex Riemann Zeta Function",
+        "authors": [
+          "Dominic Rochon"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 43,
+          "line_end": 50,
+          "text": "\nReceived June 16, 2003\nResearch supported by CRSNG (Canada)\nKey words. Bicomplex numbers, Hyperbolic numbers, Bicomplex analysis, Riemann zeta function.\nAMS subject classification: 30G, 30G35, 32A, 32A30.\n\n358                                             DOMINIC ROCHON\n\n",
+          "sha256": "b29f29c88122614d1d1711935b8343acff100cc32723c0dd248d3999dfd90d9a"
+        },
+        "after": {
+          "line_start": 74,
+          "line_end": 81,
+          "text": "      It is also possible to define differentiability of a function at a point of T [7]:\n     D EFINITION 1. Let U be an open set of T and w0 ∈ U . Then, f : U ⊆ T → T is said\nto be T-differentiable at w0 with derivative equal to f \u0004 (w0 ) ∈ T if\n\n                                              f (w) − f (w0 )\n                                   lim                        = f \u0004 (w0 ) .\n                                  w→w0           w − w0\n                                (w−w0 inv.)\n",
+          "sha256": "2c4f61d0cea8012fce28fc3f6368bbed810621e78ceaf336f3aa3cad987d72c7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1dcecbf873fc3bdd673c29f4ce4742b298d4eb9695caa60c1f0cf8244158168d",
+        "dossier_sha256": "eefc8829b2abfe57ebd2b54f92b3ba6f37babd8f978b014c6dc9d3133da9bf00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Preliminaries",
+            "line_end": 158,
+            "line_start": 51,
+            "mathematical_role": "Defines the bicomplex algebra, invertibility, differentiability, complexified Cauchy-Riemann equations, idempotent coordinates, and componentwise holomorphic representation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 73,
+          "line_start": 51,
+          "title": "Bicomplex algebra and its noninvertible locus",
+          "unit_id": "openalex_w1966384992_u02",
+          "unit_type": "definition-and-obstruction",
+          "why_material": "The four-dimensional commutative algebra is represented as z1+z2 i2 over C(i1), and noninvertibility is characterized by two component conditions. This is the algebraic obstruction governing differentiation, poles, and product convergence later in the source."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the multiplication rules, C2 viewpoint, and Proposition 1 so the zero-divisor locus is not detached from its algebra.",
+          "representation_dependency": "Medium: multiplication and coordinate equations are readable, but exact symbols should be checked against the PDF before faithful quotation.",
+          "unit_id": "openalex_w1966384992_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 42,
+            "line_start": 23,
+            "title": "Commutativity versus zero divisors in choosing a hypercomplex zeta setting",
+            "unit_id": "openalex_w1966384992_u01",
+            "unit_type": "motivation-and-design-tradeoff",
+            "why_material": "The introduction identifies the structural tradeoff behind the construction: quaternions avoid zero divisors but are noncommutative, whereas bicomplex numbers are commutative but have zero divisors. This predicts both the ease of defining powers/products and the later need to track a singular divisor."
+          },
+          {
+            "line_end": 120,
+            "line_start": 74,
+            "title": "Bicomplex differentiability as coupled complex holomorphicity",
+            "unit_id": "openalex_w1966384992_u03",
+            "unit_type": "equivalent-characterization",
+            "why_material": "The source turns a difference-quotient notion that excludes noninvertible increments into ordinary holomorphicity of two complex-variable components plus complexified Cauchy-Riemann equations. This is a reusable bridge from an algebra-valued analytic notion to familiar component conditions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The idempotents created by zero divisors make componentwise analysis possible, while the same noninvertibility forces a translated polar divisor and a stronger definition of product convergence.",
+            "limit": "The exact norm and product formulas are extraction-risky and need PDF confirmation.",
+            "parent_local_unit_ids": [
+              "openalex_w1966384992_u02",
+              "openalex_w1966384992_u04",
+              "openalex_w1966384992_u08",
+              "openalex_w1966384992_u11"
+            ],
+            "title": "Zero divisors are both the enabling representation and the analytic obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1966384992_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w1966384992_u02",
+          "spontaneous_reading": "Writing a bicomplex number as a pair of complex coordinates exposes noninvertibility as the vanishing of one hidden component rather than as an opaque four-dimensional condition."
+        },
+        "directed": {
+          "unit_id": "openalex_w1966384992_u02",
+          "source_grounded_mathematics": "The source defines the commutative unital bicomplex ring T generated by two commuting square roots of −1 and their product j with j²=1. It writes w=z1+z2i2 over C(i1) and characterizes noninvertible elements by two coordinate conditions in the real coefficients.",
+          "conceptual_reading": "The C² viewpoint compresses multiplication and isolates the zero-divisor locus that will govern division, poles, and products.",
+          "representation_or_bridge": "The coordinates z1 and z2 bridge the real four-coordinate algebra to two-complex-variable analysis; the noninvertibility criterion is the algebraic obstruction carried forward.",
+          "boundary_or_failure": "Commutativity does not make T a field: division and difference quotients fail along the zero-divisor set.",
+          "uncertainty": "The algebraic presentation is readable, but exact multiplication symbols and coordinate equations should be checked against the PDF before verbatim use."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1966384992_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The source defines the commuting generators, the four-real-coordinate ring, the z1+z2i2 complex-coordinate view, and the two explicit real-coordinate conditions for noninvertibility.",
+          "The candidate correctly preserves that commutativity does not make T a field and warns against exact transcription of damaged notation."
+        ],
+        "inference": [
+          "Rewriting the two real conditions as vanishing of z1-z2i1 or z1+z2i1 is mathematically natural, but those projected/idempotent components are not introduced in this frozen span."
+        ],
+        "unsupported_or_imported": [
+          "Claims that the C² viewpoint already isolates the locus governing poles and products import later uses of the zero-divisor set.",
+          "The spontaneous reading says the span exposes noninvertibility as vanishing of a hidden component, whereas the span itself states only the real-coordinate alternatives."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Compresses multiplication and isolates the obstruction carried forward' is generic unless tied to the explicit two coordinate conditions."
+        ],
+        "context_or_ocr_risk": [
+          "The multiplication table is readable but symbol-damaged; the candidate appropriately avoids relying on a reconstructed exact display."
+        ],
+        "missed_mechanism": [
+          "The exact source-local operation is the equivalence between algebraic noninvertibility and two alternatives among a,b,c,d, not yet idempotent diagonalization."
+        ],
+        "revision_instructions": [
+          "State the two real-coordinate alternatives as the supported criterion. If mentioning projected component vanishing, label it as an inference awaiting the later idempotent definition; remove claims about future poles and products from source-grounded fields."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the equivalence, Theorem 9, its coordinate derivation, and Definition 6.",
+      "line_end": 335,
+      "line_start": 314,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium-high: the simultaneous-zero criterion is clear, but the coordinate lattice calculation at lines 321-328 has line-order and fraction noise.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Orthogonal idempotent components force zeta(w)=0 precisely when both scalar zeta values vanish. Applying the classical trivial-zero set then produces a two-parameter lattice of trivial bicomplex zeros.",
+      "source_id": "openalex_w1966384992",
+      "source_normalized_sha256": "1bcf5dd612b58675500362264d419fdff264792037d2bd26b5085804d94f3518",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bicomplex zeros require simultaneous component zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w1966384992_u09.txt",
+      "unit_bytes": 1573,
+      "unit_id": "openalex_w1966384992_u09",
+      "unit_sha256": "a30ee5dbbcfa2716dc61561897c2194fabdaa318cbdb786cd448b8977c0b8dcd",
+      "unit_type": "zero-classification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1966384992_u09.txt",
+      "source": {
+        "source_id": "openalex_w1966384992",
+        "title": "A Bicomplex Riemann Zeta Function",
+        "authors": [
+          "Dominic Rochon"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 306,
+          "line_end": 313,
+          "text": "                                                          |ζ (z1 − z2 i1 )|2 + |ζ (z1 + z2 i1 )|2\n                                    =      lim\n                                          w→w0                               2\n                                         (w\u0005∈1+O2 )\n\n                                    = ∞.                                                                   2\n\n\n",
+          "sha256": "d1aa32ce791315202fd185d57d1fde74a11a05368f06c64185af2b9073c4b693"
+        },
+        "after": {
+          "line_start": 336,
+          "line_end": 343,
+          "text": "\n364                                             DOMINIC ROCHON\n\n      5. Bicomplex Riemann hypothesis\n\n      Let us recall the Riemann hypothesis.\n      Riemann hypothesis:\n      The nontrivial zeros of ζ(s) have real part equal to 12 .\n",
+          "sha256": "87409e844477a06a661cd78caecb5d685d4d89ca5b4c8ff01a00d52080084ff9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1dcecbf873fc3bdd673c29f4ce4742b298d4eb9695caa60c1f0cf8244158168d",
+        "dossier_sha256": "eefc8829b2abfe57ebd2b54f92b3ba6f37babd8f978b014c6dc9d3133da9bf00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Zeros of zeta(w)",
+            "line_end": 338,
+            "line_start": 314,
+            "mathematical_role": "Reduces bicomplex zeros to simultaneous zeros of both complex idempotent components and identifies the trivial-zero lattice."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 335,
+          "line_start": 314,
+          "title": "Bicomplex zeros require simultaneous component zeros",
+          "unit_id": "openalex_w1966384992_u09",
+          "unit_type": "zero-classification",
+          "why_material": "Orthogonal idempotent components force zeta(w)=0 precisely when both scalar zeta values vanish. Applying the classical trivial-zero set then produces a two-parameter lattice of trivial bicomplex zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the equivalence, Theorem 9, its coordinate derivation, and Definition 6.",
+          "representation_dependency": "Medium-high: the simultaneous-zero criterion is clear, but the coordinate lattice calculation at lines 321-328 has line-order and fraction noise.",
+          "unit_id": "openalex_w1966384992_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 311,
+            "line_start": 275,
+            "title": "The complex pole lifts to an entire translated zero-divisor polar set",
+            "unit_id": "openalex_w1966384992_u08",
+            "unit_type": "maximal-domain-obstruction",
+            "why_material": "Approaching any point where either idempotent coordinate equals the classical pole forces the bicomplex norm to diverge. Thus the excluded set is not an arbitrary technical domain restriction but the maximal obstruction inherited componentwise."
+          },
+          {
+            "line_end": 400,
+            "line_start": 339,
+            "title": "A bicomplex zero-coordinate condition equivalent to classical RH",
+            "unit_id": "openalex_w1966384992_u10",
+            "unit_type": "equivalent-conjecture",
+            "why_material": "The proposed bicomplex condition encodes the possibilities in which both idempotent coordinates are zeta zeros, allowing trivial/nontrivial mixtures as well as two nontrivial components. Classical RH implies the listed coordinate loci; conversely a hypothetical off-critical classical zero embeds diagonally as a bicomplex zero that violates them."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once bicomplex objects split into two orthogonal complex components, convergence, holomorphic continuation, zeros, and Euler factorization are transported by applying the classical construction separately and recombining.",
+            "limit": "This is a within-source structural synthesis, not evidence that every complex-analytic property transfers; zero divisors and domain topology create explicit failures.",
+            "parent_local_unit_ids": [
+              "openalex_w1966384992_u04",
+              "openalex_w1966384992_u06",
+              "openalex_w1966384992_u07",
+              "openalex_w1966384992_u09",
+              "openalex_w1966384992_u11",
+              "openalex_w1966384992_u12"
+            ],
+            "title": "Idempotent decomposition as a transport functor for zeta structure"
+          },
+          {
+            "claim": "A classical off-critical zero can be embedded with equal idempotent coordinates, turning any violation of classical RH into a violation of the proposed bicomplex coordinate condition.",
+            "limit": "The exact forward coordinate loci in the bicomplex conjecture require scan verification; only the converse mechanism is transcription-stable.",
+            "parent_local_unit_ids": [
+              "openalex_w1966384992_u09",
+              "openalex_w1966384992_u10"
+            ],
+            "title": "Classical RH is recovered by a diagonal bicomplex embedding"
+          },
+          {
+            "claim": "When idempotent arguments are restricted from complex to real values, simultaneous zeta zeros can only use real trivial zeros, so the nontrivial-zero question disappears rather than yielding a new RH analogue.",
+            "limit": "This conclusion concerns the source's chosen hyperbolic restriction and definition, not every possible hyperbolic zeta construction.",
+            "parent_local_unit_ids": [
+              "openalex_w1966384992_u09",
+              "openalex_w1966384992_u13",
+              "openalex_w1966384992_u15"
+            ],
+            "title": "Restricting the representation can collapse the target phenomenon"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1966384992_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w1966384992_u09",
+          "spontaneous_reading": "Bicomplex vanishing is conjunctive: both scalar channels must vanish, so pairing classical trivial zeros produces a two-parameter lattice rather than merely copying a one-dimensional zero set."
+        },
+        "directed": {
+          "unit_id": "openalex_w1966384992_u09",
+          "source_grounded_mathematics": "Orthogonality of e1,e2 gives ζ(w)=0 exactly when ζ(z1−z2i1)=0 and ζ(z1+z2i1)=0. Setting both scalar arguments to negative even integers and solving for the bicomplex coordinates yields the stated lattice of trivial bicomplex zeros.",
+          "conceptual_reading": "The decomposition distinguishes an actual bicomplex zero from a noninvertible value with only one zero component; zero classification therefore requires simultaneous scalar evidence.",
+          "representation_or_bridge": "The two projected arguments convert pairs of classical zeta zeros into bicomplex zeros, and the inverse coordinate transform turns the product of trivial-zero sets into a lattice.",
+          "boundary_or_failure": "A zero of only one scalar component does not make ζ(w) equal to zero; it makes the value a zero divisor. The unit classifies paired trivial zeros, not all nontrivial pairs.",
+          "uncertainty": "The simultaneous-zero criterion is clear, but the lattice calculation has line-order and fraction noise and exact coordinates require PDF checking."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1966384992_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly states ζ(w)=0 if and only if both projected scalar zeta values vanish.",
+          "Theorem 9 substitutes two negative even integers and solves for the stated two-parameter lattice, which Definition 6 names the trivial bicomplex zeros.",
+          "The candidate correctly limits the theorem to paired trivial zeros and flags the damaged coordinate calculation."
+        ],
+        "inference": [
+          "Viewing the result as a Cartesian product of scalar zero sets followed by an inverse coordinate transform is a useful and faithful reconstruction of the calculation.",
+          "A value with exactly one vanishing component is noninvertible under earlier bicomplex algebra, but that consequence is not stated within this frozen span."
+        ],
+        "unsupported_or_imported": [
+          "The source-grounded field attributes the simultaneous-zero equivalence to orthogonality of e1,e2, a justification imported from the earlier algebra rather than present here.",
+          "The boundary asserts that one scalar zero makes ζ(w) a zero divisor; correct in the broader construction, but outside the exact span's stated conclusions."
+        ],
+        "paraphrase_or_style_risk": [
+          "The spontaneous reading adds a non-paraphrase operation by contrasting conjunctive vanishing with a one-dimensional zero set."
+        ],
+        "context_or_ocr_risk": [
+          "The inverse coordinate algebra is visibly reordered and fraction-damaged, so exact lattice typography must remain qualified."
+        ],
+        "missed_mechanism": [
+          "The strongest span-local mechanism is simultaneous scalar vanishing followed by solving two linear coordinate equations; this can be stated without importing orthogonality or the one-component zero-divisor consequence."
+        ],
+        "revision_instructions": [
+          "Rewrite source-grounded mathematics to say that the source states the simultaneous-zero criterion, then derives the lattice by setting both projected arguments to negative even integers. Move the zero-divisor consequence to a clearly labeled inference or omit it; retain the OCR caveat."
+        ]
+      }
+    }
+  ]
+}

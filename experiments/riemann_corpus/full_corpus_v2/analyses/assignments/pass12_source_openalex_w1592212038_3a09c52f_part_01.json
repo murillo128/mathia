@@ -1,0 +1,2994 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1592212038_3a09c52f_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1592212038",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the displayed A6 expression, the comparison with the earlier A5 input, and the forward references to Theorems 1 and 2.",
+      "line_end": 43,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the extracted display (0.1), whose exponents are recoverable from the formula and surrounding prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction identifies the essentially sharp A6 mean-value estimate as the paper's objective and states that it will be obtained from a curve-decoupling theorem, clarifying both the target quantity and the intended analytical bridge.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sharp sixth moment as the decoupling target",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u001.txt",
+      "unit_bytes": 2184,
+      "unit_id": "openalex_w1592212038_u001",
+      "unit_sha256": "094b729660804faf8e50c73b9f8d0a0b3d4ddcc209323fc849330263b33a7e44",
+      "unit_type": "motivation-and-roadmap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u001.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 17,
+          "line_end": 24,
+          "text": "                                                                                                        Abstract\n\n                                                         We establish a new decoupling inequality for curves in the spirit of [B-D1],[B-D2] which implies a new mean\n                                                   value theorem for certain exponential sums crucial to the Bombieri-Iwaniec method as developed further in [H].\n                                                   In particular, this leads to an improved bound |ζ( 12 + it)| ≪ t13/84+ε for the zeta function on the critical line.\n\n\n\n",
+          "sha256": "f07e91d8ae9c3bf8915b3ea52bb08e80e8b097cf7942d1cf5b4048e18304a3cb"
+        },
+        "after": {
+          "line_start": 44,
+          "line_end": 51,
+          "text": "                                              ∗ This work was partially supported by NSF grants DMS-1301619\n\n\n\n\n                                                                                                              1\n\n<!-- source-page: 2 -->\n",
+          "sha256": "f55f6c49c3dc021ba3e11b4e74ee2a5b5207df5d7fef3254cd24fa677bbfa47f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter, abstract, introduction, and method map",
+            "line_end": 121,
+            "line_start": 1,
+            "mathematical_role": "States the sharp A6 target, the 13/84 zeta consequence, and the first-spacing/second-spacing decomposition of the Bombieri-Iwaniec method."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 43,
+          "line_start": 25,
+          "title": "Sharp sixth moment as the decoupling target",
+          "unit_id": "openalex_w1592212038_u001",
+          "unit_type": "motivation-and-roadmap",
+          "why_material": "The introduction identifies the essentially sharp A6 mean-value estimate as the paper's objective and states that it will be obtained from a curve-decoupling theorem, clarifying both the target quantity and the intended analytical bridge."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the displayed A6 expression, the comparison with the earlier A5 input, and the forward references to Theorems 1 and 2.",
+          "representation_dependency": "Depends on the extracted display (0.1), whose exponents are recoverable from the formula and surrounding prose.",
+          "unit_id": "openalex_w1592212038_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 95,
+            "line_start": 53,
+            "title": "Bombieri-Iwaniec first- and second-spacing architecture",
+            "unit_id": "openalex_w1592212038_u002",
+            "unit_type": "method-decomposition",
+            "why_material": "The source decomposes the zeta-function route into short cubic-phase sums, a first-spacing distribution of (h,h^2,h^(3/2),h^(1/2)), a second-spacing distribution of interval-dependent phase vectors, and a double-large-sieve interface. It explicitly limits the paper's new input to the first spacing problem."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The passage also explains why an r-fold convolution turns the first spacing distribution into the mean value studied later and states that external second-spacing estimates remain necessary.",
+      "line_end": 95,
+      "line_start": 53,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual split is prose-grounded; the four-coordinate vectors and short-sum phase require formulas (0.2)-(0.4).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source decomposes the zeta-function route into short cubic-phase sums, a first-spacing distribution of (h,h^2,h^(3/2),h^(1/2)), a second-spacing distribution of interval-dependent phase vectors, and a double-large-sieve interface. It explicitly limits the paper's new input to the first spacing problem.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bombieri-Iwaniec first- and second-spacing architecture",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u002.txt",
+      "unit_bytes": 2774,
+      "unit_id": "openalex_w1592212038_u002",
+      "unit_sha256": "ec192c3f86fd8a05be41f892374f9ffbe338f4fe296caef3ad38c647b57b2337",
+      "unit_type": "method-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u002.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 45,
+          "line_end": 52,
+          "text": "\n\n\n\n                                                                                                              1\n\n<!-- source-page: 2 -->\n\n",
+          "sha256": "5606c51000346a8f639d87b3efd7a62eada7fa0d6820668b5728f56406fb8183"
+        },
+        "after": {
+          "line_start": 96,
+          "line_end": 103,
+          "text": "                                                                                            \u0001          9\n      Recall that the original Bombieri-Iwaniec argument provided the estimate ζ 21 + it                       9\n                                                                                                ≪ |t| 56 +ε , 56 =\n0, 16071 (see [B-I1] [B-I2]). The work of Huxley in [H1] (resp. [H2]) produced the exponents\n                                     89                   32\n                                         = 0.15614... and     = 0.15609..., resp\n                                     570                  205\n\n",
+          "sha256": "01e86fdcb215336b5084e35b8b2e31bda3665ffb692a35c4d85cf4f296fae18c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter, abstract, introduction, and method map",
+            "line_end": 121,
+            "line_start": 1,
+            "mathematical_role": "States the sharp A6 target, the 13/84 zeta consequence, and the first-spacing/second-spacing decomposition of the Bombieri-Iwaniec method."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 95,
+          "line_start": 53,
+          "title": "Bombieri-Iwaniec first- and second-spacing architecture",
+          "unit_id": "openalex_w1592212038_u002",
+          "unit_type": "method-decomposition",
+          "why_material": "The source decomposes the zeta-function route into short cubic-phase sums, a first-spacing distribution of (h,h^2,h^(3/2),h^(1/2)), a second-spacing distribution of interval-dependent phase vectors, and a double-large-sieve interface. It explicitly limits the paper's new input to the first spacing problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The passage also explains why an r-fold convolution turns the first spacing distribution into the mean value studied later and states that external second-spacing estimates remain necessary.",
+          "representation_dependency": "The conceptual split is prose-grounded; the four-coordinate vectors and short-sum phase require formulas (0.2)-(0.4).",
+          "unit_id": "openalex_w1592212038_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 43,
+            "line_start": 25,
+            "title": "Sharp sixth moment as the decoupling target",
+            "unit_id": "openalex_w1592212038_u001",
+            "unit_type": "motivation-and-roadmap",
+            "why_material": "The introduction identifies the essentially sharp A6 mean-value estimate as the paper's objective and states that it will be obtained from a curve-decoupling theorem, clarifying both the target quantity and the intended analytical bridge."
+          },
+          {
+            "line_end": 172,
+            "line_start": 122,
+            "title": "Multilinear decoupling for even-dimensional nondegenerate curves",
+            "unit_id": "openalex_w1592212038_u003",
+            "unit_type": "theorem",
+            "why_material": "Theorem 1 gives the central scale-sensitive decoupling inequality for separated arcs of an even-dimensional curve under a Wronskian nondegeneracy condition, reducing an L^(3d) multilinear quantity to L^6 pieces on N^(-1/2) parameter intervals."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the averaged norm convention, the exact hypotheses, and the suppressed weighted-norm technicality.",
+      "line_end": 172,
+      "line_start": 122,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent: the exponents, interval scale, and norm normalization are essential; the extraction is fragmented typographically but recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 gives the central scale-sensitive decoupling inequality for separated arcs of an even-dimensional curve under a Wronskian nondegeneracy condition, reducing an L^(3d) multilinear quantity to L^6 pieces on N^(-1/2) parameter intervals.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Multilinear decoupling for even-dimensional nondegenerate curves",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u003.txt",
+      "unit_bytes": 3089,
+      "unit_id": "openalex_w1592212038_u003",
+      "unit_sha256": "81d391895361c8c6b83432f557336a4285cdc1aa7a75bcaee5afadbb4c9b91bd",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u003.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 114,
+          "line_end": 121,
+          "text": "    The author is grateful to C. Demeter for various comments leading to simplification of an earlier version.\nMost importantly, he is greatly indebted to one of the referees for clarifying several matters related to the ‘second\nspacing problem’ and providing an alternative treatment of Section 3 in the original manuscript that moreover leads\nto an improved exponent in Theorem 5. The presentation of the last 3 sections of the paper follows closely his\nsuggestions.\n\n\n\n",
+          "sha256": "385580ac5bab493ed4697f5829d1d7881a8008048a89918d43902c6b4797a971"
+        },
+        "after": {
+          "line_start": 173,
+          "line_end": 180,
+          "text": "\n                                                                     3\n\n<!-- source-page: 4 -->\n\nLet us say a few words about the role of Theorem 1 in the proof of Theorem 2 stated below. First, the inequality\nin Theorem 2 can be rewritten as\n                                                                        1/12\n",
+          "sha256": "ae7415c731f6f9b996371826cec2469963e781bd6c94ec12bea8ec091470572f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 A decoupling inequality for curves",
+            "line_end": 541,
+            "line_start": 122,
+            "mathematical_role": "Formulates the even-dimensional multilinear decoupling theorem, relates it to known endpoints, derives transversality, and proves it by quadratic factorization and scale iteration."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 172,
+          "line_start": 122,
+          "title": "Multilinear decoupling for even-dimensional nondegenerate curves",
+          "unit_id": "openalex_w1592212038_u003",
+          "unit_type": "theorem",
+          "why_material": "Theorem 1 gives the central scale-sensitive decoupling inequality for separated arcs of an even-dimensional curve under a Wronskian nondegeneracy condition, reducing an L^(3d) multilinear quantity to L^6 pieces on N^(-1/2) parameter intervals."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the averaged norm convention, the exact hypotheses, and the suppressed weighted-norm technicality.",
+          "representation_dependency": "Formula-dependent: the exponents, interval scale, and norm normalization are essential; the extraction is fragmented typographically but recoverable.",
+          "unit_id": "openalex_w1592212038_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 95,
+            "line_start": 53,
+            "title": "Bombieri-Iwaniec first- and second-spacing architecture",
+            "unit_id": "openalex_w1592212038_u002",
+            "unit_type": "method-decomposition",
+            "why_material": "The source decomposes the zeta-function route into short cubic-phase sums, a first-spacing distribution of (h,h^2,h^(3/2),h^(1/2)), a second-spacing distribution of interval-dependent phase vectors, and a double-large-sieve interface. It explicitly limits the paper's new input to the first spacing problem."
+          },
+          {
+            "line_end": 209,
+            "line_start": 178,
+            "title": "Two gaps from bilinear decoupling to the A6 mean value",
+            "unit_id": "openalex_w1592212038_u004",
+            "unit_type": "bridge",
+            "why_material": "The source isolates two distinct obstacles between Theorem 1 and Theorem 2: replacing ball averages by a smaller anisotropic periodic region, and converting a bilinear estimate into a linear one. This is a reusable decomposition of the proof burden."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across both the abstract curve theorem and its arithmetic specialization, the recurring mechanism is to localize in scale, Taylor-normalize separated pieces, use transversality and periodicity to factor the phase into lower-dimensional pieces, decouple those pieces, and close a larger-scale statement by iteration or broad/narrow decomposition.",
+            "limit": "The synthesis is conditional on the stated Wronskian and derivative nondegeneracy, even dimension for Theorem 1, and the specialized arithmetic curve; it does not assert the mechanism for arbitrary curves or odd dimensions.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u003",
+              "openalex_w1592212038_u005",
+              "openalex_w1592212038_u007",
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u009",
+              "openalex_w1592212038_u010",
+              "openalex_w1592212038_u011",
+              "openalex_w1592212038_u014"
+            ],
+            "title": "Multiscale factorization engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The specialized curve and target region are stated before the two remedies are assigned to the two halves of Section 2.",
+      "line_end": 209,
+      "line_start": 178,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses the displayed anisotropic box and specialized curve coordinates; the two-obstacle analysis is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source isolates two distinct obstacles between Theorem 1 and Theorem 2: replacing ball averages by a smaller anisotropic periodic region, and converting a bilinear estimate into a linear one. This is a reusable decomposition of the proof burden.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two gaps from bilinear decoupling to the A6 mean value",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u004.txt",
+      "unit_bytes": 2077,
+      "unit_id": "openalex_w1592212038_u004",
+      "unit_sha256": "d71c88acd3b6895548b7cf9987f78db8e77f8476a97ab0cb782d90d4b4ff2c44",
+      "unit_type": "bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u004.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 170,
+          "line_end": 177,
+          "text": "                                                                      , supp w\n                                                                             bN ⊂ B N1 (cf. [B-D1] and\n[B-D2]). For simplicity, this technical point will be ignored here and in the sequel.\n\n                                                                     3\n\n<!-- source-page: 4 -->\n\n",
+          "sha256": "38caa358f0d5c9ac1d3ffd283fd15718d9d1d74ca8753d11aea8ec0d8edd52b4"
+        },
+        "after": {
+          "line_start": 210,
+          "line_end": 217,
+          "text": "\nRemarks.\n\n(1.3) Obviously (1.2) implies the same inequality for BN replaced by any translate.\n\n(1.4) The case d = 2 is an immediate consequence of te L6 -decoupling inequality for planar curves Γ of non-\n        vanishing curvature\n                        Z 1                                              \u0010X Z                                    \u0011 21\n",
+          "sha256": "686d9370e2da4708d41d467f3b1aa08bb02cba7e25717c36e0811bf4638c4c13"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 A decoupling inequality for curves",
+            "line_end": 541,
+            "line_start": 122,
+            "mathematical_role": "Formulates the even-dimensional multilinear decoupling theorem, relates it to known endpoints, derives transversality, and proves it by quadratic factorization and scale iteration."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 209,
+          "line_start": 178,
+          "title": "Two gaps from bilinear decoupling to the A6 mean value",
+          "unit_id": "openalex_w1592212038_u004",
+          "unit_type": "bridge",
+          "why_material": "The source isolates two distinct obstacles between Theorem 1 and Theorem 2: replacing ball averages by a smaller anisotropic periodic region, and converting a bilinear estimate into a linear one. This is a reusable decomposition of the proof burden."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The specialized curve and target region are stated before the two remedies are assigned to the two halves of Section 2.",
+          "representation_dependency": "Uses the displayed anisotropic box and specialized curve coordinates; the two-obstacle analysis is explicit in prose.",
+          "unit_id": "openalex_w1592212038_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 172,
+            "line_start": 122,
+            "title": "Multilinear decoupling for even-dimensional nondegenerate curves",
+            "unit_id": "openalex_w1592212038_u003",
+            "unit_type": "theorem",
+            "why_material": "Theorem 1 gives the central scale-sensitive decoupling inequality for separated arcs of an even-dimensional curve under a Wronskian nondegeneracy condition, reducing an L^(3d) multilinear quantity to L^6 pieces on N^(-1/2) parameter intervals."
+          },
+          {
+            "line_end": 239,
+            "line_start": 211,
+            "title": "Planar L6 decoupling as the operative lower-dimensional input",
+            "unit_id": "openalex_w1592212038_u005",
+            "unit_type": "analytical-input",
+            "why_material": "The remarks identify planar nonzero-curvature L6 decoupling, including its discrete coefficient form, as the main analytical input for the higher-dimensional theorem."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span also records translation invariance of the main estimate, which is used when localizing to cubes.",
+      "line_end": 239,
+      "line_start": 211,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires formulas (1.5) and its discrete version for the precise norm and scale; prose makes the input role clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remarks identify planar nonzero-curvature L6 decoupling, including its discrete coefficient form, as the main analytical input for the higher-dimensional theorem.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Planar L6 decoupling as the operative lower-dimensional input",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u005.txt",
+      "unit_bytes": 1656,
+      "unit_id": "openalex_w1592212038_u005",
+      "unit_sha256": "872d81604da6564ba6515cd102cbe1de43a5994217902f8d1579c6391de295e5",
+      "unit_type": "analytical-input",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u005.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 203,
+          "line_end": 210,
+          "text": "\nThis estimate is weaker than the one in Theorem 2 in two regards. First, in Theorem 2 one is interested in averages\nover the smaller region Ω̃. This issue is dealt with in the first half of Section 2, by using two further standard 2D\ndecouplings and exploiting periodicity.\n      The second difference between Theorems 1 and 2 is that the former produces a bilinear estimate, while the\nlatter requires a linear estimate. This issue is addressed in the second part of Section 2, and relies on a variant of\nthe induction on scales from [B-G].\n\n",
+          "sha256": "f6fc1fa303e4cc49c570987b2b69434b801d74169b730f5d3c14d16fc0188c62"
+        },
+        "after": {
+          "line_start": 240,
+          "line_end": 247,
+          "text": "\n(1.6) In the language of [B-D1], [B-D2], (1.2) may be reformulated as follows. Let Γ1 , . . . , Γd/2 ⊂ Γ be O(1)-\n      separated arcs and f1 , . . . , f d ∈ L1 (Rd ) satisfy supp fbj ⊂ Γj + B N1 . Denote fτ = (fˆ|Φ(Iτ )+B 1 )∨ the\n                                        2                                                                   N\n                                          1          1      1\n      Fourier restriction of f to the       × ···×      × √N tube Φ(Iτ ) + B N1 .\n                                         |N   {z N}\n                                                        d−1\n",
+          "sha256": "b463527ee2904219a17086415b23951a0b175a1a2ac6f8123543ccbabb025143"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 A decoupling inequality for curves",
+            "line_end": 541,
+            "line_start": 122,
+            "mathematical_role": "Formulates the even-dimensional multilinear decoupling theorem, relates it to known endpoints, derives transversality, and proves it by quadratic factorization and scale iteration."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 239,
+          "line_start": 211,
+          "title": "Planar L6 decoupling as the operative lower-dimensional input",
+          "unit_id": "openalex_w1592212038_u005",
+          "unit_type": "analytical-input",
+          "why_material": "The remarks identify planar nonzero-curvature L6 decoupling, including its discrete coefficient form, as the main analytical input for the higher-dimensional theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span also records translation invariance of the main estimate, which is used when localizing to cubes.",
+          "representation_dependency": "Requires formulas (1.5) and its discrete version for the precise norm and scale; prose makes the input role clear.",
+          "unit_id": "openalex_w1592212038_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 209,
+            "line_start": 178,
+            "title": "Two gaps from bilinear decoupling to the A6 mean value",
+            "unit_id": "openalex_w1592212038_u004",
+            "unit_type": "bridge",
+            "why_material": "The source isolates two distinct obstacles between Theorem 1 and Theorem 2: replacing ball averages by a smaller anisotropic periodic region, and converting a bilinear estimate into a linear one. This is a reusable decomposition of the proof burden."
+          },
+          {
+            "line_end": 306,
+            "line_start": 241,
+            "title": "Positioning the new inequality between multilinear endpoints",
+            "unit_id": "openalex_w1592212038_u006",
+            "unit_type": "method-comparison",
+            "why_material": "The Fourier-support reformulation relates the theorem to known d-linear and (d-1)-linear decouplings, and shows that the latter exponent pair is obtained by interpolation between the elementary Parseval endpoint and the new (3d,6) endpoint."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across both the abstract curve theorem and its arithmetic specialization, the recurring mechanism is to localize in scale, Taylor-normalize separated pieces, use transversality and periodicity to factor the phase into lower-dimensional pieces, decouple those pieces, and close a larger-scale statement by iteration or broad/narrow decomposition.",
+            "limit": "The synthesis is conditional on the stated Wronskian and derivative nondegeneracy, even dimension for Theorem 1, and the specialized arithmetic curve; it does not assert the mechanism for arbitrary curves or odd dimensions.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u003",
+              "openalex_w1592212038_u005",
+              "openalex_w1592212038_u007",
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u009",
+              "openalex_w1592212038_u010",
+              "openalex_w1592212038_u011",
+              "openalex_w1592212038_u014"
+            ],
+            "title": "Multiscale factorization engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The discussion also explains why even dimension is built into the result and why d=4 is the application-relevant case.",
+      "line_end": 306,
+      "line_start": 241,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent because the endpoint pairs and Fourier-tube geometry carry the comparison; the prose supplies the interpolation claim.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Fourier-support reformulation relates the theorem to known d-linear and (d-1)-linear decouplings, and shows that the latter exponent pair is obtained by interpolation between the elementary Parseval endpoint and the new (3d,6) endpoint.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positioning the new inequality between multilinear endpoints",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u006.txt",
+      "unit_bytes": 5176,
+      "unit_id": "openalex_w1592212038_u006",
+      "unit_sha256": "30e105ecc775b683d5ce21c806ab49d2067431b657afd5b38b6663f85c2dc293",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u006.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 233,
+          "line_end": 240,
+          "text": "\n\n                                                                     4\n\n<!-- source-page: 5 -->\n\nfor each complex coefficients an .\n\n",
+          "sha256": "8dcd231fa1b83f49a4ddfe493c853658b8cd1fc520f63065070971cbdf9c5c24"
+        },
+        "after": {
+          "line_start": 307,
+          "line_end": 314,
+          "text": "   Before passing to the proof of Theorem 1, we make a few preliminary observations.\n   Note that in the setting of Theorem 1, (1.9) also implies the inequality\n                                             d/2\n                                             Y   X                        \u0001 2/d\n                                                            aj (t)e x.Φ(t) dt                                 ≤\n                                                                                                 Ld\n                                                                                                  # (BN )\n                                             j=1       Ij\n",
+          "sha256": "9008d5ac742ee13f472c6c27570a7568018de18dfe2ad67f204e6e2ab7249bb7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 A decoupling inequality for curves",
+            "line_end": 541,
+            "line_start": 122,
+            "mathematical_role": "Formulates the even-dimensional multilinear decoupling theorem, relates it to known endpoints, derives transversality, and proves it by quadratic factorization and scale iteration."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 306,
+          "line_start": 241,
+          "title": "Positioning the new inequality between multilinear endpoints",
+          "unit_id": "openalex_w1592212038_u006",
+          "unit_type": "method-comparison",
+          "why_material": "The Fourier-support reformulation relates the theorem to known d-linear and (d-1)-linear decouplings, and shows that the latter exponent pair is obtained by interpolation between the elementary Parseval endpoint and the new (3d,6) endpoint."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The discussion also explains why even dimension is built into the result and why d=4 is the application-relevant case.",
+          "representation_dependency": "Strongly formula-dependent because the endpoint pairs and Fourier-tube geometry carry the comparison; the prose supplies the interpolation claim.",
+          "unit_id": "openalex_w1592212038_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 239,
+            "line_start": 211,
+            "title": "Planar L6 decoupling as the operative lower-dimensional input",
+            "unit_id": "openalex_w1592212038_u005",
+            "unit_type": "analytical-input",
+            "why_material": "The remarks identify planar nonzero-curvature L6 decoupling, including its discrete coefficient form, as the main analytical input for the higher-dimensional theorem."
+          },
+          {
+            "line_end": 401,
+            "line_start": 307,
+            "title": "Preliminary interpolation bound and paired-tangent transversality",
+            "unit_id": "openalex_w1592212038_u007",
+            "unit_type": "lemma-chain",
+            "why_material": "An L^d estimate derived by randomization and a trivial L-infinity bound are interpolated via wave packets to a preliminary L^(3d)-L6 inequality. The Wronskian condition is then converted into the wedge-product transversality of paired first and second derivatives needed for factorization."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the local K-cube version and explains that its coarse K^(1/3) loss is only a bootstrap seed.",
+      "line_end": 401,
+      "line_start": 307,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on equations (1.12)-(1.17), especially the interval scale and wedge determinant; extracted prose preserves the logical transitions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An L^d estimate derived by randomization and a trivial L-infinity bound are interpolated via wave packets to a preliminary L^(3d)-L6 inequality. The Wronskian condition is then converted into the wedge-product transversality of paired first and second derivatives needed for factorization.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Preliminary interpolation bound and paired-tangent transversality",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u007.txt",
+      "unit_bytes": 7059,
+      "unit_id": "openalex_w1592212038_u007",
+      "unit_sha256": "e638e8233f1b7d9b393bb0d5e1327c497820eddec3fe9ae19a7e07a90a816882",
+      "unit_type": "lemma-chain",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u007.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 299,
+          "line_end": 306,
+          "text": "                                                                                   j=1       τ              L#d−1 (BN )\n\n                                                             \u0001\nand one observes, for d even, that the pair 2(d + 1), 2(d+1)\n                                                       d−1)    in (1.11) is obtained by interpolation between the\npairs (2d, 2) from (1.9) and (3d, 6) from (1.7). The issue of what’s the analogue of Theorem 1 for odd d will not\nbe considered here. In fact, our main interest is d = 4, which provides the required ingredient for the exponential\nsum application.\n",
+          "sha256": "1ef7bd253930b540f584c3909679c5478df009bb6111fa94586114f195100135"
+        },
+        "after": {
+          "line_start": 402,
+          "line_end": 409,
+          "text": "\n                                                                                    6\n\n<!-- source-page: 7 -->\n\nProof of Theorem 1.\n    Introduce numbers b(N ) > 0 for which the inequality, with arbitrary {aj },\n                                      d/2 Z\n",
+          "sha256": "9c1c6af3ae33393e908bcdc7a456e05cff65115c2168e437ec77ce5af0ebffe9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 A decoupling inequality for curves",
+            "line_end": 541,
+            "line_start": 122,
+            "mathematical_role": "Formulates the even-dimensional multilinear decoupling theorem, relates it to known endpoints, derives transversality, and proves it by quadratic factorization and scale iteration."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 401,
+          "line_start": 307,
+          "title": "Preliminary interpolation bound and paired-tangent transversality",
+          "unit_id": "openalex_w1592212038_u007",
+          "unit_type": "lemma-chain",
+          "why_material": "An L^d estimate derived by randomization and a trivial L-infinity bound are interpolated via wave packets to a preliminary L^(3d)-L6 inequality. The Wronskian condition is then converted into the wedge-product transversality of paired first and second derivatives needed for factorization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the local K-cube version and explains that its coarse K^(1/3) loss is only a bootstrap seed.",
+          "representation_dependency": "Depends on equations (1.12)-(1.17), especially the interval scale and wedge determinant; extracted prose preserves the logical transitions.",
+          "unit_id": "openalex_w1592212038_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 306,
+            "line_start": 241,
+            "title": "Positioning the new inequality between multilinear endpoints",
+            "unit_id": "openalex_w1592212038_u006",
+            "unit_type": "method-comparison",
+            "why_material": "The Fourier-support reformulation relates the theorem to known d-linear and (d-1)-linear decouplings, and shows that the latter exponent pair is obtained by interpolation between the elementary Parseval endpoint and the new (3d,6) endpoint."
+          },
+          {
+            "line_end": 538,
+            "line_start": 407,
+            "title": "Bootstrap by quadratic normal forms and product factorization",
+            "unit_id": "openalex_w1592212038_u008",
+            "unit_type": "proof-strategy",
+            "why_material": "The proof partitions the large ball into K-cubes, Taylor-expands each separated arc to quadratic order, uses transversality to turn the ambient integral into a product of planar factors, applies planar decoupling after rescaling, and obtains b(N) bounded by b(N^(2/3)) up to N^epsilon."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across both the abstract curve theorem and its arithmetic specialization, the recurring mechanism is to localize in scale, Taylor-normalize separated pieces, use transversality and periodicity to factor the phase into lower-dimensional pieces, decouple those pieces, and close a larger-scale statement by iteration or broad/narrow decomposition.",
+            "limit": "The synthesis is conditional on the stated Wronskian and derivative nondegeneracy, even dimension for Theorem 1, and the specialized arithmetic curve; it does not assert the mechanism for arbitrary curves or odd dimensions.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u003",
+              "openalex_w1592212038_u005",
+              "openalex_w1592212038_u007",
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u009",
+              "openalex_w1592212038_u010",
+              "openalex_w1592212038_u011",
+              "openalex_w1592212038_u014"
+            ],
+            "title": "Multiscale factorization engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The scale restriction N=o(K^(3/2)) and the harmless-multiplier treatment of the Taylor remainder are included because they justify the iteration.",
+      "line_end": 538,
+      "line_start": 407,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent: the quadratic phase, change of variables, scale relation, and recurrence are essential, though their role is explicitly narrated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof partitions the large ball into K-cubes, Taylor-expands each separated arc to quadratic order, uses transversality to turn the ambient integral into a product of planar factors, applies planar decoupling after rescaling, and obtains b(N) bounded by b(N^(2/3)) up to N^epsilon.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bootstrap by quadratic normal forms and product factorization",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u008.txt",
+      "unit_bytes": 8130,
+      "unit_id": "openalex_w1592212038_u008",
+      "unit_sha256": "396d30ddc981fe3222a02afa32b6b12eb9714743ce05711f93b261d5d676f354",
+      "unit_type": "proof-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u008.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 399,
+          "line_end": 406,
+          "text": "\n\nholds.\n\n                                                                                    6\n\n<!-- source-page: 7 -->\n\n",
+          "sha256": "8fbf95cc84d6cd90d4d9673d897152e59a7325657f7a9772e08694a6ac1574f9"
+        },
+        "after": {
+          "line_start": 539,
+          "line_end": 546,
+          "text": "\n\n\n2     A mean value theorem\nFrom now on, we focus on d = 4 (in view of the application to exponential sums) and consider Φ : [0, 1] → Γ ⊂ R4\nsatisfying (1.1). If I1 , I2 ⊂ {1, . . . , N } are ∼ N separated, we get from Theorem 1\n                                    2\n                                    Y X                       \u0010 \u0010 n \u0011 \u0011 12\n",
+          "sha256": "11f433d61b943e6374fc9429117c84ece7361971de548533b86c056a1a3555df"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 A decoupling inequality for curves",
+            "line_end": 541,
+            "line_start": 122,
+            "mathematical_role": "Formulates the even-dimensional multilinear decoupling theorem, relates it to known endpoints, derives transversality, and proves it by quadratic factorization and scale iteration."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 538,
+          "line_start": 407,
+          "title": "Bootstrap by quadratic normal forms and product factorization",
+          "unit_id": "openalex_w1592212038_u008",
+          "unit_type": "proof-strategy",
+          "why_material": "The proof partitions the large ball into K-cubes, Taylor-expands each separated arc to quadratic order, uses transversality to turn the ambient integral into a product of planar factors, applies planar decoupling after rescaling, and obtains b(N) bounded by b(N^(2/3)) up to N^epsilon."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The scale restriction N=o(K^(3/2)) and the harmless-multiplier treatment of the Taylor remainder are included because they justify the iteration.",
+          "representation_dependency": "Formula-dependent: the quadratic phase, change of variables, scale relation, and recurrence are essential, though their role is explicitly narrated.",
+          "unit_id": "openalex_w1592212038_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 401,
+            "line_start": 307,
+            "title": "Preliminary interpolation bound and paired-tangent transversality",
+            "unit_id": "openalex_w1592212038_u007",
+            "unit_type": "lemma-chain",
+            "why_material": "An L^d estimate derived by randomization and a trivial L-infinity bound are interpolated via wave packets to a preliminary L^(3d)-L6 inequality. The Wronskian condition is then converted into the wedge-product transversality of paired first and second derivatives needed for factorization."
+          },
+          {
+            "line_end": 620,
+            "line_start": 542,
+            "title": "Specializing decoupling to d=4 and an anisotropic intermediate box",
+            "unit_id": "openalex_w1592212038_u009",
+            "unit_type": "specialization",
+            "why_material": "Section 2 specializes the curve, imposes the derivative condition needed by the application, enlarges the averaging domain to an anisotropic box, partitions it into N-cubes, and transfers Theorem 1 to a bilinear discrete estimate prepared for a second decoupling."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across both the abstract curve theorem and its arithmetic specialization, the recurring mechanism is to localize in scale, Taylor-normalize separated pieces, use transversality and periodicity to factor the phase into lower-dimensional pieces, decouple those pieces, and close a larger-scale statement by iteration or broad/narrow decomposition.",
+            "limit": "The synthesis is conditional on the stated Wronskian and derivative nondegeneracy, even dimension for Theorem 1, and the specialized arithmetic curve; it does not assert the mechanism for arbitrary curves or odd dimensions.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u003",
+              "openalex_w1592212038_u005",
+              "openalex_w1592212038_u007",
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u009",
+              "openalex_w1592212038_u010",
+              "openalex_w1592212038_u011",
+              "openalex_w1592212038_u014"
+            ],
+            "title": "Multiscale factorization engine"
+          },
+          {
+            "claim": "Scale parameters are not bookkeeping: K enables contraction in decoupling and bilinear-to-linear bootstraps, while N and V balance first-spacing strength, second-spacing resolution, and admissibility constraints in the exponential-sum application.",
+            "limit": "The specific exponents and optimizers belong to this proof's inequalities and should not be generalized without re-deriving the competing terms.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u014",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022"
+            ],
+            "title": "Intermediate scale choice as an interface between analytic modules"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the first half of the domain-shape repair announced in lines 204-206.",
+      "line_end": 620,
+      "line_start": 542,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires formulas (2.1)-(2.4), the coordinate choices, and box dimensions; several display lines are fragmented but reconstructible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Section 2 specializes the curve, imposes the derivative condition needed by the application, enlarges the averaging domain to an anisotropic box, partitions it into N-cubes, and transfers Theorem 1 to a bilinear discrete estimate prepared for a second decoupling.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Specializing decoupling to d=4 and an anisotropic intermediate box",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u009.txt",
+      "unit_bytes": 4056,
+      "unit_id": "openalex_w1592212038_u009",
+      "unit_sha256": "00f579b3546e6139044d727a35ff5539f74bd47018c784546e62ff86cd05dc62",
+      "unit_type": "specialization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u009.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 534,
+          "line_end": 541,
+          "text": "\nRecalling (1.22), one may conclude that\n                                                             b(N ) ≪ b(N 2/3 )N ε\n\nand Theorem 1 follows by iteration.\n\n\n\n",
+          "sha256": "36a8edf01ce05455b635da09c75788b921b3553676b1344d55ebf85abddedf38"
+        },
+        "after": {
+          "line_start": 621,
+          "line_end": 628,
+          "text": "\n                           1                           1\nLet J1 = [h1 , h1 + N 2 ], J2 = [h2 , h2 + N 2 ] with h1 − h2 ≍ N . Write for n ∈ J1 , n = h1 + m, recalling (2.2)\n           \u0010n\u0011                  \u0010h \u0011\n                                   1\n       Φ         .(x + z) =Φ          .(x + z)+\n             N                    N\n                               m \u0010              h1              \u0010h \u0011                 \u0010h \u0011          \u0011\n",
+          "sha256": "a02b6c95137e4a529465b96b6815ed82e140eca3b95d3779f6fd78a580eac7fe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 A mean value theorem",
+            "line_end": 1005,
+            "line_start": 542,
+            "mathematical_role": "Specializes to the four-coordinate curve, repairs domain shape and bilinear/linear gaps, proves the sharp twelfth moment, and records its anisotropic A6 corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 620,
+          "line_start": 542,
+          "title": "Specializing decoupling to d=4 and an anisotropic intermediate box",
+          "unit_id": "openalex_w1592212038_u009",
+          "unit_type": "specialization",
+          "why_material": "Section 2 specializes the curve, imposes the derivative condition needed by the application, enlarges the averaging domain to an anisotropic box, partitions it into N-cubes, and transfers Theorem 1 to a bilinear discrete estimate prepared for a second decoupling."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the first half of the domain-shape repair announced in lines 204-206.",
+          "representation_dependency": "Requires formulas (2.1)-(2.4), the coordinate choices, and box dimensions; several display lines are fragmented but reconstructible.",
+          "unit_id": "openalex_w1592212038_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 538,
+            "line_start": 407,
+            "title": "Bootstrap by quadratic normal forms and product factorization",
+            "unit_id": "openalex_w1592212038_u008",
+            "unit_type": "proof-strategy",
+            "why_material": "The proof partitions the large ball into K-cubes, Taylor-expands each separated arc to quadratic order, uses transversality to turn the ambient integral into a product of planar factors, applies planar decoupling after rescaling, and obtains b(N) bounded by b(N^(2/3)) up to N^epsilon."
+          },
+          {
+            "line_end": 704,
+            "line_start": 622,
+            "title": "Taylor-periodicity normal form for separated short intervals",
+            "unit_id": "openalex_w1592212038_u010",
+            "unit_type": "representation-change",
+            "why_material": "For two separated length-N^(1/2) intervals, Taylor expansion plus periodic changes of variables converts the coupled phases into independent planar quadratic phases. Planar decoupling then refines the interval scale to N^(1/4), with an explanation of why a residual term can be absorbed."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across both the abstract curve theorem and its arithmetic specialization, the recurring mechanism is to localize in scale, Taylor-normalize separated pieces, use transversality and periodicity to factor the phase into lower-dimensional pieces, decouple those pieces, and close a larger-scale statement by iteration or broad/narrow decomposition.",
+            "limit": "The synthesis is conditional on the stated Wronskian and derivative nondegeneracy, even dimension for Theorem 1, and the specialized arithmetic curve; it does not assert the mechanism for arbitrary curves or odd dimensions.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u003",
+              "openalex_w1592212038_u005",
+              "openalex_w1592212038_u007",
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u009",
+              "openalex_w1592212038_u010",
+              "openalex_w1592212038_u011",
+              "openalex_w1592212038_u014"
+            ],
+            "title": "Multiscale factorization engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The separation and third-derivative hypotheses are used to make the x2,x3 change of variables nondegenerate.",
+      "line_end": 704,
+      "line_start": 622,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The mechanism depends on expansions (2.5), normal forms (2.6), factorization (2.7), and estimate (2.8); prose checks the discarded-term change of variables.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For two separated length-N^(1/2) intervals, Taylor expansion plus periodic changes of variables converts the coupled phases into independent planar quadratic phases. Planar decoupling then refines the interval scale to N^(1/4), with an explanation of why a residual term can be absorbed.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Taylor-periodicity normal form for separated short intervals",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u010.txt",
+      "unit_bytes": 5402,
+      "unit_id": "openalex_w1592212038_u010",
+      "unit_sha256": "70cbe1d6b6fbebc4860b47fd5047ab16bcc06cb1c8aabe7143ed20ebc5e03c8e",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u010.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 614,
+          "line_end": 621,
+          "text": "    N 6 +ε             \n       dzdz ′ \n dx   an e Φ    .(x + z)     an e Φ   (x + z ′ )         .\n                                                    N                      N\n             J1 ⊂I1 B ×B                Ω       n∈J1                                  n∈J2\n             J2 ⊂I2 N   N\n\n\n",
+          "sha256": "dd3bcbd6849229115ec0e095bf8bce45ed7148e626c085c204d43a1b85e8ac4a"
+        },
+        "after": {
+          "line_start": 705,
+          "line_end": 712,
+          "text": "    If instead we consider a translate Ω + y of Ω, the expression (2.8) needs to be modified replacing an by\n         n\n               \u0001\nan e Φ( N   ).y .\n      Finally, consider the domain (according to Huxley’s A6 -problem)\n\n                                                   Ω̃ = [0, N ] × [0, N 2 ] × [0, N 2 ] × [0, N ]\n\n",
+          "sha256": "da8ca52ae37026ea5910e783c68697064aa422e8606632c6fabf534686620443"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 A mean value theorem",
+            "line_end": 1005,
+            "line_start": 542,
+            "mathematical_role": "Specializes to the four-coordinate curve, repairs domain shape and bilinear/linear gaps, proves the sharp twelfth moment, and records its anisotropic A6 corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 704,
+          "line_start": 622,
+          "title": "Taylor-periodicity normal form for separated short intervals",
+          "unit_id": "openalex_w1592212038_u010",
+          "unit_type": "representation-change",
+          "why_material": "For two separated length-N^(1/2) intervals, Taylor expansion plus periodic changes of variables converts the coupled phases into independent planar quadratic phases. Planar decoupling then refines the interval scale to N^(1/4), with an explanation of why a residual term can be absorbed."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The separation and third-derivative hypotheses are used to make the x2,x3 change of variables nondegenerate.",
+          "representation_dependency": "The mechanism depends on expansions (2.5), normal forms (2.6), factorization (2.7), and estimate (2.8); prose checks the discarded-term change of variables.",
+          "unit_id": "openalex_w1592212038_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 620,
+            "line_start": 542,
+            "title": "Specializing decoupling to d=4 and an anisotropic intermediate box",
+            "unit_id": "openalex_w1592212038_u009",
+            "unit_type": "specialization",
+            "why_material": "Section 2 specializes the curve, imposes the derivative condition needed by the application, enlarges the averaging domain to an anisotropic box, partitions it into N-cubes, and transfers Theorem 1 to a bilinear discrete estimate prepared for a second decoupling."
+          },
+          {
+            "line_end": 803,
+            "line_start": 705,
+            "title": "Aggregation over translated boxes and final bilinear estimate",
+            "unit_id": "openalex_w1592212038_u011",
+            "unit_type": "scale-refinement",
+            "why_material": "The argument tiles the larger Huxley box by translated intermediate boxes, carries the phase translation into coefficients, and repeats the periodic/Taylor normalization at the N^(1/4) scale. Planar L6 control then yields the decisive bilinear L12 estimate on the full anisotropic domain."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across both the abstract curve theorem and its arithmetic specialization, the recurring mechanism is to localize in scale, Taylor-normalize separated pieces, use transversality and periodicity to factor the phase into lower-dimensional pieces, decouple those pieces, and close a larger-scale statement by iteration or broad/narrow decomposition.",
+            "limit": "The synthesis is conditional on the stated Wronskian and derivative nondegeneracy, even dimension for Theorem 1, and the specialized arithmetic curve; it does not assert the mechanism for arbitrary curves or odd dimensions.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u003",
+              "openalex_w1592212038_u005",
+              "openalex_w1592212038_u007",
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u009",
+              "openalex_w1592212038_u010",
+              "openalex_w1592212038_u011",
+              "openalex_w1592212038_u014"
+            ],
+            "title": "Multiscale factorization engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact derivative determinant condition for the specialized curve is recorded at the end of the span.",
+      "line_end": 803,
+      "line_start": 705,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the anisotropic regions and formulas (2.9)-(2.11); the factorization steps remain intelligible despite display fragmentation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The argument tiles the larger Huxley box by translated intermediate boxes, carries the phase translation into coefficients, and repeats the periodic/Taylor normalization at the N^(1/4) scale. Planar L6 control then yields the decisive bilinear L12 estimate on the full anisotropic domain.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Aggregation over translated boxes and final bilinear estimate",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u011.txt",
+      "unit_bytes": 5279,
+      "unit_id": "openalex_w1592212038_u011",
+      "unit_sha256": "9921ec65ef569dc6fd1fac8d2e32ccf1579ff3b66ea0711a24444c15fae426b7",
+      "unit_type": "scale-refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u011.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 697,
+          "line_end": 704,
+          "text": "  h2     2hm\n              \u0001                                                                      2h\n                                                                                           \u0001\n N 1/2\n       +N  1/2 w + O(1), which permits us to replace in (2.7) the argument by m u + N 1/2 w and hence mu by\n\n\nchange of variable.\n",
+          "sha256": "6b167ae3f1674eeaf34670e1ab6e6d80451d657cb8aa47a16bfd8006e755d1ef"
+        },
+        "after": {
+          "line_start": 804,
+          "line_end": 811,
+          "text": "\nTheorem 2.\n     Z 1Z 1Z 1 Z 1              X                                                                  12\n                                                                        1             1   1\n                                      e(nx1 + n2 x2 + N 2 n3/2 x3 + N 2 n 2 x4 )                        dx1 dx2 dx3 dx4 ≪ N 6+ε .   (2.12)\n          0   0   −1    −1      n≤N\n\n\n",
+          "sha256": "bb3904ac6e4e89e02daf4888357a6c1d2f3cc09caf9b239514191f6a792f5dcd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 A mean value theorem",
+            "line_end": 1005,
+            "line_start": 542,
+            "mathematical_role": "Specializes to the four-coordinate curve, repairs domain shape and bilinear/linear gaps, proves the sharp twelfth moment, and records its anisotropic A6 corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 803,
+          "line_start": 705,
+          "title": "Aggregation over translated boxes and final bilinear estimate",
+          "unit_id": "openalex_w1592212038_u011",
+          "unit_type": "scale-refinement",
+          "why_material": "The argument tiles the larger Huxley box by translated intermediate boxes, carries the phase translation into coefficients, and repeats the periodic/Taylor normalization at the N^(1/4) scale. Planar L6 control then yields the decisive bilinear L12 estimate on the full anisotropic domain."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact derivative determinant condition for the specialized curve is recorded at the end of the span.",
+          "representation_dependency": "Depends on the anisotropic regions and formulas (2.9)-(2.11); the factorization steps remain intelligible despite display fragmentation.",
+          "unit_id": "openalex_w1592212038_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 704,
+            "line_start": 622,
+            "title": "Taylor-periodicity normal form for separated short intervals",
+            "unit_id": "openalex_w1592212038_u010",
+            "unit_type": "representation-change",
+            "why_material": "For two separated length-N^(1/2) intervals, Taylor expansion plus periodic changes of variables converts the coupled phases into independent planar quadratic phases. Planar decoupling then refines the interval scale to N^(1/4), with an explanation of why a residual term can be absorbed."
+          },
+          {
+            "line_end": 810,
+            "line_start": 803,
+            "title": "Essentially sharp A6 mean value theorem",
+            "unit_id": "openalex_w1592212038_u012",
+            "unit_type": "theorem",
+            "why_material": "Theorem 2 states the twelfth-moment bound N^(6+epsilon) for the four-coordinate exponential sum that supplies the optimal first-spacing input."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across both the abstract curve theorem and its arithmetic specialization, the recurring mechanism is to localize in scale, Taylor-normalize separated pieces, use transversality and periodicity to factor the phase into lower-dimensional pieces, decouple those pieces, and close a larger-scale statement by iteration or broad/narrow decomposition.",
+            "limit": "The synthesis is conditional on the stated Wronskian and derivative nondegeneracy, even dimension for Theorem 1, and the specialized arithmetic curve; it does not assert the mechanism for arbitrary curves or odd dimensions.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u003",
+              "openalex_w1592212038_u005",
+              "openalex_w1592212038_u007",
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u009",
+              "openalex_w1592212038_u010",
+              "openalex_w1592212038_u011",
+              "openalex_w1592212038_u014"
+            ],
+            "title": "Multiscale factorization engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem is stated immediately after deriving the applicable bilinear curve estimate.",
+      "line_end": 810,
+      "line_start": 803,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Entirely tied to display (2.12); the four phase coordinates and twelfth power define the result.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 states the twelfth-moment bound N^(6+epsilon) for the four-coordinate exponential sum that supplies the optimal first-spacing input.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Essentially sharp A6 mean value theorem",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u012.txt",
+      "unit_bytes": 463,
+      "unit_id": "openalex_w1592212038_u012",
+      "unit_sha256": "4a8247a90c3dba9029fd26ddcf1c37f341124f93dfeabc553c548a9e79f1fe5a",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u012.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 795,
+          "line_end": 802,
+          "text": "\n                                                                             φ′′′\n                                                                              3 (s)       φ′′′\n                                                                                           4 (s)\n                      φ1 (t) = t, φ2 (t) = t2 , |φ′′3 | > c and                                         > c for s, t ∈ [0, 1].      (2.11)\n                                                                             φ′′′′   ′′′′\n                                                                              3 (t) φ4 (t)\n\n",
+          "sha256": "52a7ef26097a1a824eedbf103de11e5f0e0652573b9ec902660567936ac18701"
+        },
+        "after": {
+          "line_start": 811,
+          "line_end": 818,
+          "text": "\n\n                                                                            11\n\n<!-- source-page: 12 -->\n\nProof. Let I ⊂ [1, N ] be an interval of the form [N0 , N0 + M ], 100M < N0 ≤ N , and assume I1 , I2 ⊂ I\nsubintervals of size ∼ M that are ∼ M -separated.\n",
+          "sha256": "65bbfd2ee325f8457b6b344e344e6db5804f42306f661603612031431be01489"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 A mean value theorem",
+            "line_end": 1005,
+            "line_start": 542,
+            "mathematical_role": "Specializes to the four-coordinate curve, repairs domain shape and bilinear/linear gaps, proves the sharp twelfth moment, and records its anisotropic A6 corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 810,
+          "line_start": 803,
+          "title": "Essentially sharp A6 mean value theorem",
+          "unit_id": "openalex_w1592212038_u012",
+          "unit_type": "theorem",
+          "why_material": "Theorem 2 states the twelfth-moment bound N^(6+epsilon) for the four-coordinate exponential sum that supplies the optimal first-spacing input."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem is stated immediately after deriving the applicable bilinear curve estimate.",
+          "representation_dependency": "Entirely tied to display (2.12); the four phase coordinates and twelfth power define the result.",
+          "unit_id": "openalex_w1592212038_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 803,
+            "line_start": 705,
+            "title": "Aggregation over translated boxes and final bilinear estimate",
+            "unit_id": "openalex_w1592212038_u011",
+            "unit_type": "scale-refinement",
+            "why_material": "The argument tiles the larger Huxley box by translated intermediate boxes, carries the phase translation into coefficients, and repeats the periodic/Taylor normalization at the N^(1/4) scale. Planar L6 control then yields the decisive bilinear L12 estimate on the full anisotropic domain."
+          },
+          {
+            "line_end": 903,
+            "line_start": 817,
+            "title": "Encoding moment solutions by a normalized nondegenerate curve",
+            "unit_id": "openalex_w1592212038_u013",
+            "unit_type": "proof-reduction",
+            "why_material": "The proof interprets a localized bilinear moment as a solution count, expands the fractional powers around a base point, uses the first two exact moment equations to cancel low-order terms, and packages the remaining constraints into a curve satisfying the earlier derivative condition. The bilinear estimate then bounds the localized count."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span retains the system of equations, Taylor normalizations, and the resulting bound N^(4+epsilon)M^2.",
+      "line_end": 903,
+      "line_start": 817,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent; the prose and numbered expansions (2.14)-(2.23) make the cancellations and rescaling recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof interprets a localized bilinear moment as a solution count, expands the fractional powers around a base point, uses the first two exact moment equations to cancel low-order terms, and packages the remaining constraints into a curve satisfying the earlier derivative condition. The bilinear estimate then bounds the localized count.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Encoding moment solutions by a normalized nondegenerate curve",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u013.txt",
+      "unit_bytes": 4575,
+      "unit_id": "openalex_w1592212038_u013",
+      "unit_sha256": "a8aed508bf14922098344958ae2269c615a4fbae06461fd9363070b0f3fade21",
+      "unit_type": "proof-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u013.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 809,
+          "line_end": 816,
+          "text": "          0   0   −1    −1      n≤N\n\n\n\n                                                                            11\n\n<!-- source-page: 12 -->\n\n",
+          "sha256": "a7209f1e65ef68ac02eeb2f5d74ff52c9c54e9a890ec83d5f2b287540ca990c4"
+        },
+        "after": {
+          "line_start": 904,
+          "line_end": 911,
+          "text": "                                          N 2M        N M3\n\n                                                                    12\n\n<!-- source-page: 13 -->\n\nReturning to (2.12), let b(N )N 6 be a bound on the left hand side We use the same reduction procedure to multi-\nlinear (here bi-linear) inequalities as in [B], [B-D2] (and originating from [B-G]). Denote K a large constant and\n",
+          "sha256": "cd53b529591fe9e2f2f02a7d83c5c58ed50173251adb910d96cb698db614ba48"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 A mean value theorem",
+            "line_end": 1005,
+            "line_start": 542,
+            "mathematical_role": "Specializes to the four-coordinate curve, repairs domain shape and bilinear/linear gaps, proves the sharp twelfth moment, and records its anisotropic A6 corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 903,
+          "line_start": 817,
+          "title": "Encoding moment solutions by a normalized nondegenerate curve",
+          "unit_id": "openalex_w1592212038_u013",
+          "unit_type": "proof-reduction",
+          "why_material": "The proof interprets a localized bilinear moment as a solution count, expands the fractional powers around a base point, uses the first two exact moment equations to cancel low-order terms, and packages the remaining constraints into a curve satisfying the earlier derivative condition. The bilinear estimate then bounds the localized count."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span retains the system of equations, Taylor normalizations, and the resulting bound N^(4+epsilon)M^2.",
+          "representation_dependency": "Highly formula-dependent; the prose and numbered expansions (2.14)-(2.23) make the cancellations and rescaling recoverable.",
+          "unit_id": "openalex_w1592212038_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 810,
+            "line_start": 803,
+            "title": "Essentially sharp A6 mean value theorem",
+            "unit_id": "openalex_w1592212038_u012",
+            "unit_type": "theorem",
+            "why_material": "Theorem 2 states the twelfth-moment bound N^(6+epsilon) for the four-coordinate exponential sum that supplies the optimal first-spacing input."
+          },
+          {
+            "line_end": 991,
+            "line_start": 910,
+            "title": "Bilinear-to-linear conversion by recursive interval decomposition",
+            "unit_id": "openalex_w1592212038_u014",
+            "unit_type": "induction-on-scales",
+            "why_material": "A Bourgain-Guth style broad/narrow decomposition recursively partitions the summation interval, controls separated pairs with the localized bilinear estimate, and derives a contraction recurrence for the linear twelfth moment."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The decreasing-rearrangement dichotomy underlying the pointwise split and the summability of scale contributions are both included.",
+      "line_end": 991,
+      "line_start": 910,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires formulas (2.24)-(2.27) for coefficients and contraction; the proof architecture is also stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A Bourgain-Guth style broad/narrow decomposition recursively partitions the summation interval, controls separated pairs with the localized bilinear estimate, and derives a contraction recurrence for the linear twelfth moment.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bilinear-to-linear conversion by recursive interval decomposition",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u014.txt",
+      "unit_bytes": 5434,
+      "unit_id": "openalex_w1592212038_u014",
+      "unit_sha256": "de104f37995c1261b227d6c30f5526127ad19a6a9ed7061970b8c2db8e04934f",
+      "unit_type": "induction-on-scales",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u014.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 902,
+          "line_end": 909,
+          "text": "                                          N            N0\n                                 M 6+ε 1 + 10      1 + 1/2     ≪ N 4+ε M 2 .                            (2.23)\n                                          N 2M        N M3\n\n                                                                    12\n\n<!-- source-page: 13 -->\n\n",
+          "sha256": "9bf763f29190337fce4a26d069ec8d32944cc5bfa7961dd9d642fe1e12165baf"
+        },
+        "after": {
+          "line_start": 992,
+          "line_end": 999,
+          "text": "\n     Using the notation from [H], Theorem 2 implies\n\nCorollary 3. Let N12 ≤ δ ≤ 1, N1 ≤ ∆ ≤ 1. Then\n                     Z 1Z 1Z 1 Z 1       X \u0010              1 \u0010 n \u00113/2      1 \u0010 n \u00111/2 \u0011 12\n    A6 (N, δ, ∆) =                        e nx1 + n2 x2 +            x3 +           x4    dx ≪ δ∆N 9+ε .\n                      0   0   −1   −1                     δ N             ∆ N\n                                        n≤N\n",
+          "sha256": "5bd96b90e1219334aea19abca0c91cd0ada8668d206a1c35f608a19d5d7eb077"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 A mean value theorem",
+            "line_end": 1005,
+            "line_start": 542,
+            "mathematical_role": "Specializes to the four-coordinate curve, repairs domain shape and bilinear/linear gaps, proves the sharp twelfth moment, and records its anisotropic A6 corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 991,
+          "line_start": 910,
+          "title": "Bilinear-to-linear conversion by recursive interval decomposition",
+          "unit_id": "openalex_w1592212038_u014",
+          "unit_type": "induction-on-scales",
+          "why_material": "A Bourgain-Guth style broad/narrow decomposition recursively partitions the summation interval, controls separated pairs with the localized bilinear estimate, and derives a contraction recurrence for the linear twelfth moment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The decreasing-rearrangement dichotomy underlying the pointwise split and the summability of scale contributions are both included.",
+          "representation_dependency": "Requires formulas (2.24)-(2.27) for coefficients and contraction; the proof architecture is also stated in prose.",
+          "unit_id": "openalex_w1592212038_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 903,
+            "line_start": 817,
+            "title": "Encoding moment solutions by a normalized nondegenerate curve",
+            "unit_id": "openalex_w1592212038_u013",
+            "unit_type": "proof-reduction",
+            "why_material": "The proof interprets a localized bilinear moment as a solution count, expands the fractional powers around a base point, uses the first two exact moment equations to cancel low-order terms, and packages the remaining constraints into a curve satisfying the earlier derivative condition. The bilinear estimate then bounds the localized count."
+          },
+          {
+            "line_end": 1002,
+            "line_start": 993,
+            "title": "Anisotropically rescaled first-spacing estimate",
+            "unit_id": "openalex_w1592212038_u015",
+            "unit_type": "corollary",
+            "why_material": "Corollary 3 converts Theorem 2 into Huxley's A6(N,delta,Delta) notation and supplies the delta*Delta*N^(9+epsilon) bound later inserted directly into the large sieve."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across both the abstract curve theorem and its arithmetic specialization, the recurring mechanism is to localize in scale, Taylor-normalize separated pieces, use transversality and periodicity to factor the phase into lower-dimensional pieces, decouple those pieces, and close a larger-scale statement by iteration or broad/narrow decomposition.",
+            "limit": "The synthesis is conditional on the stated Wronskian and derivative nondegeneracy, even dimension for Theorem 1, and the specialized arithmetic curve; it does not assert the mechanism for arbitrary curves or odd dimensions.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u003",
+              "openalex_w1592212038_u005",
+              "openalex_w1592212038_u007",
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u009",
+              "openalex_w1592212038_u010",
+              "openalex_w1592212038_u011",
+              "openalex_w1592212038_u014"
+            ],
+            "title": "Multiscale factorization engine"
+          },
+          {
+            "claim": "Scale parameters are not bookkeeping: K enables contraction in decoupling and bilinear-to-linear bootstraps, while N and V balance first-spacing strength, second-spacing resolution, and admissibility constraints in the exponential-sum application.",
+            "limit": "The specific exponents and optimizers belong to this proof's inequalities and should not be generalized without re-deriving the competing terms.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u014",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022"
+            ],
+            "title": "Intermediate scale choice as an interface between analytic modules"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source notes that the major-arc contribution makes the estimate essentially best possible.",
+      "line_end": 1002,
+      "line_start": 993,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula (2.28) is essential because the two anisotropic scale parameters define the later identification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Corollary 3 converts Theorem 2 into Huxley's A6(N,delta,Delta) notation and supplies the delta*Delta*N^(9+epsilon) bound later inserted directly into the large sieve.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Anisotropically rescaled first-spacing estimate",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u015.txt",
+      "unit_bytes": 665,
+      "unit_id": "openalex_w1592212038_u015",
+      "unit_sha256": "ebd40581d9b0f0dc003e66b19829690c749b942d8bcd8aafe7f780a505adddba",
+      "unit_type": "corollary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u015.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 985,
+          "line_end": 992,
+          "text": "\nOn the l.h.s. of (2.24). Therefore\n                                                                   \u0010 100N \u0011\n                                        b(N ) ≤ 212 1006 K −6 b                       + Cε N ε\n                                                                       K\n\nimplying b(N ) ≪ N ε and Theorem 2.\n\n",
+          "sha256": "14f6b0f914164425047f8a28a7c91ed2127dad9da37c991b19480af561d1a5ad"
+        },
+        "after": {
+          "line_start": 1003,
+          "line_end": 1010,
+          "text": "\n\n\n3     Applications to exponential sums\nLet F be a smooth function on [ 21 , 1] satisfying, for some constant c ∈ (0, 1], the condition\n\n                                                                           ′′′′\n                                         min{|F ′′ (x)|, |F ′′′ (x)|, |F          (x)|} > c.                   (3.1)\n",
+          "sha256": "4bc12510ff15b62f5f4f3204a23be7a503ff94116af6cdaa87dd1ea74072f0e8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 A mean value theorem",
+            "line_end": 1005,
+            "line_start": 542,
+            "mathematical_role": "Specializes to the four-coordinate curve, repairs domain shape and bilinear/linear gaps, proves the sharp twelfth moment, and records its anisotropic A6 corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1002,
+          "line_start": 993,
+          "title": "Anisotropically rescaled first-spacing estimate",
+          "unit_id": "openalex_w1592212038_u015",
+          "unit_type": "corollary",
+          "why_material": "Corollary 3 converts Theorem 2 into Huxley's A6(N,delta,Delta) notation and supplies the delta*Delta*N^(9+epsilon) bound later inserted directly into the large sieve."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source notes that the major-arc contribution makes the estimate essentially best possible.",
+          "representation_dependency": "Formula (2.28) is essential because the two anisotropic scale parameters define the later identification.",
+          "unit_id": "openalex_w1592212038_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 991,
+            "line_start": 910,
+            "title": "Bilinear-to-linear conversion by recursive interval decomposition",
+            "unit_id": "openalex_w1592212038_u014",
+            "unit_type": "induction-on-scales",
+            "why_material": "A Bourgain-Guth style broad/narrow decomposition recursively partitions the summation interval, controls separated pairs with the localized bilinear estimate, and derives a contraction recurrence for the linear twelfth moment."
+          },
+          {
+            "line_end": 1059,
+            "line_start": 1006,
+            "title": "Reduction of smooth exponential sums to interval phase vectors",
+            "unit_id": "openalex_w1592212038_u016",
+            "unit_type": "reduction",
+            "why_material": "The application fixes derivative nondegeneracy, introduces the intermediate scales N and R, and cites the established Bombieri-Iwaniec reduction that bounds the original sum using short sums indexed by minor-arc intervals and four-dimensional phase vectors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly declines to reproduce the second-spacing map and identifies it with prior work, so this unit records a dependency rather than an internally proved step.",
+      "line_end": 1059,
+      "line_start": 1006,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses formulas (3.1)-(3.4) and the coordinate ranges; the construction of x(I) is intentionally external.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The application fixes derivative nondegeneracy, introduces the intermediate scales N and R, and cites the established Bombieri-Iwaniec reduction that bounds the original sum using short sums indexed by minor-arc intervals and four-dimensional phase vectors.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reduction of smooth exponential sums to interval phase vectors",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u016.txt",
+      "unit_bytes": 3929,
+      "unit_id": "openalex_w1592212038_u016",
+      "unit_sha256": "db0086a2cedf023956d65dff3b7b793ed454e428332395329655e6152dad4a48",
+      "unit_type": "reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u016.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 998,
+          "line_end": 1005,
+          "text": "                      0   0   −1   −1                     δ N             ∆ N\n                                        n≤N\n                                                                                                              (2.28)\n\n     Considering the major arc contribution, (2.28) is clearly seen to be essentially best possible.\n\n\n\n",
+          "sha256": "d44747a24a85f7ee8ad96f9fa728d52b9c4b5b08a59e132a2808b4dd97a265eb"
+        },
+        "after": {
+          "line_start": 1060,
+          "line_end": 1067,
+          "text": "   By an appropriate application of [H-W], Lemma 2.1, one finds that\n                                           2\n                                           X                   M R2   R2   M R2\n                                                 |I(Q, ℓ)| ≪        +    ≍      .\n                                                               N Q2   Q    N Q2\n                                           ℓ=0\n\nGiven this estimate, that in (3.4) and the trivial upper bound for the modulus of the sum over h in (3.4), it follows\n",
+          "sha256": "35dafc2666b0a62ff45ce43638ee3a704b9969d5b548fef0cf4dcaaf4beed0ca"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Applications to exponential sums",
+            "line_end": 1280,
+            "line_start": 1006,
+            "mathematical_role": "Inserts the new first-spacing bound into a double-large-sieve framework, combines it with imported second-spacing estimates, and optimizes scales to prove Theorem 4."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1059,
+          "line_start": 1006,
+          "title": "Reduction of smooth exponential sums to interval phase vectors",
+          "unit_id": "openalex_w1592212038_u016",
+          "unit_type": "reduction",
+          "why_material": "The application fixes derivative nondegeneracy, introduces the intermediate scales N and R, and cites the established Bombieri-Iwaniec reduction that bounds the original sum using short sums indexed by minor-arc intervals and four-dimensional phase vectors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly declines to reproduce the second-spacing map and identifies it with prior work, so this unit records a dependency rather than an internally proved step.",
+          "representation_dependency": "Uses formulas (3.1)-(3.4) and the coordinate ranges; the construction of x(I) is intentionally external.",
+          "unit_id": "openalex_w1592212038_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1002,
+            "line_start": 993,
+            "title": "Anisotropically rescaled first-spacing estimate",
+            "unit_id": "openalex_w1592212038_u015",
+            "unit_type": "corollary",
+            "why_material": "Corollary 3 converts Theorem 2 into Huxley's A6(N,delta,Delta) notation and supplies the delta*Delta*N^(9+epsilon) bound later inserted directly into the large sieve."
+          },
+          {
+            "line_end": 1085,
+            "line_start": 1060,
+            "title": "Holder reduction to a sixfold first-spacing distribution",
+            "unit_id": "openalex_w1592212038_u017",
+            "unit_type": "dichotomy",
+            "why_material": "An interval-count estimate, the preliminary sum bound, and sixth-power Holder produce a dichotomy: either a direct bound holds or the problem reduces to a bilinear sum coupling interval phase vectors with a sixfold convolution of the first-spacing curve."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the admissible Q range and the definition of the six-coordinate aggregate y(h).",
+      "line_end": 1085,
+      "line_start": 1060,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on equations (3.5)-(3.7) and the displayed y(h) vector.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An interval-count estimate, the preliminary sum bound, and sixth-power Holder produce a dichotomy: either a direct bound holds or the problem reduces to a bilinear sum coupling interval phase vectors with a sixfold convolution of the first-spacing curve.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Holder reduction to a sixfold first-spacing distribution",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u017.txt",
+      "unit_bytes": 1666,
+      "unit_id": "openalex_w1592212038_u017",
+      "unit_sha256": "ecbe3f27b2b209d0c2efef2f4064bca20895254333812ad5eb00d0e6b1de4c26",
+      "unit_type": "dichotomy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u017.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1052,
+          "line_end": 1059,
+          "text": "                                 X1 = X2 =      and X3 = X4 =                H 1/2 ,\n                                              2                       Q\nwhile I(Q, ℓ) is the set of those I ∈ {[kN, N + kN ] : k ∈ N and M/(2N ) ≤ k ≤ (M − 3N )/N } that, via the\nprocedures set out in [H-W], §4, Step 1, are associated with a reduced rational a/q ∈ J(I) that happens to satisfy\nQ ≤ q < 2Q and Q ≡ ±ℓ(mod 4) (in the terminology of [H-W], §4, Step 1, these I’s are ‘minor arcs’). The\ndetails of the ‘second spacing problem’ are not amongst the main points of interest in this paper, so we skip the\ndefinition of x(I) and mention only that this element of R4 is essentially identical to the vector y = y(k) defined\nin [H-W], §4 Step 4 (the index ‘k ′ there corresponds to our ‘I’).\n",
+          "sha256": "013cced9ead7e6ee866a53db9158251a4647b6c94889aa5029ea91eb33549cf5"
+        },
+        "after": {
+          "line_start": 1086,
+          "line_end": 1093,
+          "text": "\n\n                                                                 15\n\n<!-- source-page: 16 -->\n\nwhile ω is a certain complex-valued function that takes values that are (without exception) of modulus not exceed-\ning unity, as does Ω(h) (which is equal to αy1 (h) if hj ≤ H for j = 1, . . . , 6, and is zero otherwise).\n",
+          "sha256": "9ea9b895bff8b97cba0ce16fbcdd57122e59a040b312869db743f2bc15137a0a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Applications to exponential sums",
+            "line_end": 1280,
+            "line_start": 1006,
+            "mathematical_role": "Inserts the new first-spacing bound into a double-large-sieve framework, combines it with imported second-spacing estimates, and optimizes scales to prove Theorem 4."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1085,
+          "line_start": 1060,
+          "title": "Holder reduction to a sixfold first-spacing distribution",
+          "unit_id": "openalex_w1592212038_u017",
+          "unit_type": "dichotomy",
+          "why_material": "An interval-count estimate, the preliminary sum bound, and sixth-power Holder produce a dichotomy: either a direct bound holds or the problem reduces to a bilinear sum coupling interval phase vectors with a sixfold convolution of the first-spacing curve."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the admissible Q range and the definition of the six-coordinate aggregate y(h).",
+          "representation_dependency": "Depends on equations (3.5)-(3.7) and the displayed y(h) vector.",
+          "unit_id": "openalex_w1592212038_u017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1059,
+            "line_start": 1006,
+            "title": "Reduction of smooth exponential sums to interval phase vectors",
+            "unit_id": "openalex_w1592212038_u016",
+            "unit_type": "reduction",
+            "why_material": "The application fixes derivative nondegeneracy, introduces the intermediate scales N and R, and cites the established Bombieri-Iwaniec reduction that bounds the original sum using short sums indexed by minor-arc intervals and four-dimensional phase vectors."
+          },
+          {
+            "line_end": 1120,
+            "line_start": 1092,
+            "title": "Double large sieve separates the two spacing problems",
+            "unit_id": "openalex_w1592212038_u018",
+            "unit_type": "factorization",
+            "why_material": "The double large sieve bounds the coupled phase sum by the geometric mean of a first-spacing count A and a second-spacing count B1, times coordinate-volume factors, cleanly isolating what the new mean-value theorem can control from what must be imported."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explains that two coordinates of the approximate first-spacing conditions are actually integer equalities.",
+      "line_end": 1120,
+      "line_start": 1092,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires formulas (3.8)-(3.9) and the definitions of A and B1; the conceptual separation is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The double large sieve bounds the coupled phase sum by the geometric mean of a first-spacing count A and a second-spacing count B1, times coordinate-volume factors, cleanly isolating what the new mean-value theorem can control from what must be imported.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Double large sieve separates the two spacing problems",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u018.txt",
+      "unit_bytes": 2557,
+      "unit_id": "openalex_w1592212038_u018",
+      "unit_sha256": "32c77009261aaafb5bb96785d2311edf5bb630e4474c86b3fa1962350e6e95d2",
+      "unit_type": "factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u018.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1084,
+          "line_end": 1091,
+          "text": "                   y(h) =         (hj , h2j , hj , hj ) = (h1 + · · · + h6 , . . . , h1    + · · · + h 6 ) ∈ R4 ,\n                            j=1\n\n\n                                                                 15\n\n<!-- source-page: 16 -->\n\n",
+          "sha256": "758daf91d0bb1d41690c4f5beb8a79e49746543c91c92cda1139e19d15482e2a"
+        },
+        "after": {
+          "line_start": 1121,
+          "line_end": 1128,
+          "text": "           \u0010 π 2 \u00114 \u0010     1      \u0011 Z X1 Z X2 Z X3 Z X4                                 X                                       \u00012\n  0≤A≤                                                                                              e(y(h) · (z1 , . . . , z4 ) dz1 dz2 dz3 dz4\n             2        X1 · · · X4 −X1 −X2 −X3 −X4\n                                                                                      h∈N6\n                                                                                 hj ≤H(j=1,...,6)\n                      Z 1 Z 1 Z R2 √2H Z R2 √2H                   X\n             π 8 Q4                 Q                Q                                                               \u0001 12\n           =                                                            e (h, h2 , h3/2 , h1/2 ) · (z1 , . . . , z4 )     dz1 dz2 dz3 dz4\n",
+          "sha256": "419d86a8c731b0d5b59d8c27fa9eb9a700e31679f47060e44ee46005aad5902a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Applications to exponential sums",
+            "line_end": 1280,
+            "line_start": 1006,
+            "mathematical_role": "Inserts the new first-spacing bound into a double-large-sieve framework, combines it with imported second-spacing estimates, and optimizes scales to prove Theorem 4."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1120,
+          "line_start": 1092,
+          "title": "Double large sieve separates the two spacing problems",
+          "unit_id": "openalex_w1592212038_u018",
+          "unit_type": "factorization",
+          "why_material": "The double large sieve bounds the coupled phase sum by the geometric mean of a first-spacing count A and a second-spacing count B1, times coordinate-volume factors, cleanly isolating what the new mean-value theorem can control from what must be imported."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explains that two coordinates of the approximate first-spacing conditions are actually integer equalities.",
+          "representation_dependency": "Requires formulas (3.8)-(3.9) and the definitions of A and B1; the conceptual separation is explicit.",
+          "unit_id": "openalex_w1592212038_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1085,
+            "line_start": 1060,
+            "title": "Holder reduction to a sixfold first-spacing distribution",
+            "unit_id": "openalex_w1592212038_u017",
+            "unit_type": "dichotomy",
+            "why_material": "An interval-count estimate, the preliminary sum bound, and sixth-power Holder produce a dichotomy: either a direct bound holds or the problem reduces to a bilinear sum coupling interval phase vectors with a sixfold convolution of the first-spacing curve."
+          },
+          {
+            "line_end": 1144,
+            "line_start": 1121,
+            "title": "First-spacing count identified with A6",
+            "unit_id": "openalex_w1592212038_u019",
+            "unit_type": "identification",
+            "why_material": "Fourier localization turns the first-spacing count A into a scaled A6 integral with delta=Q^2/(H^2R^2), after which Corollary 3 yields A bounded by delta^2 H^(10+epsilon). This is the direct causal interface from decoupling to the large sieve."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The admissibility check 1/H <= H*delta <= Q/N <= 1 is included before applying the corollary.",
+      "line_end": 1144,
+      "line_start": 1121,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent: the Fourier integral, rescaling, and delta identification are the substance of the unit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Fourier localization turns the first-spacing count A into a scaled A6 integral with delta=Q^2/(H^2R^2), after which Corollary 3 yields A bounded by delta^2 H^(10+epsilon). This is the direct causal interface from decoupling to the large sieve.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "First-spacing count identified with A6",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u019.txt",
+      "unit_bytes": 1828,
+      "unit_id": "openalex_w1592212038_u019",
+      "unit_sha256": "d81300010ec41cef7f397b7885d94432e11c71bd1be48826f72b7a55b292f591",
+      "unit_type": "identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u019.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1113,
+          "line_end": 1120,
+          "text": "                                            \u0001                       \u0001\nequality of the ordered pairs y1 (h), y2 (h) and y1 (h′ ), y2 (h′ ) (both of which lie in Z2 ): hence the traditional\ndefinition of the ‘first spacing problem’ as a question concerning the order of magnitude of the number of solutions\nin integers h1 , h′1 , . . . , hr , h′r ∈ (0, H] of a certain system of two equations and two inequalities see for example\n                             \u0001\n[H], (11.1.1)-(11.1.5) . Given that |y − y ′ | < 2X       1\n                                                             implies |y − y ′ | < X1 (whenever X, y, y ′ ∈ R), it is a corollary\nof [H], Lemma 5.6.5 (for example) that we have here:\n",
+          "sha256": "539692c8b53b4f2381311cdf2a1594e595ba99e84a0248deaa32e3d03effa899"
+        },
+        "after": {
+          "line_start": 1145,
+          "line_end": 1152,
+          "text": "\nWith regard to the ‘second spacing problem’ one uses the treatment of the second spacing problem in [H-W], rather\nthan the more advanced treatment in [H1]). One obtains\n                                             \u0010 M \u00112 \u0010 Q \u00114\n                                B1 ≪ ∆1 ∆2                 if N = M T −2/7\n                                                N      R\n\n                                                                            16\n",
+          "sha256": "77934d78ac1012a15f106d29fd5788248719da8a603d7e4cbf4ebaf806190d40"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Applications to exponential sums",
+            "line_end": 1280,
+            "line_start": 1006,
+            "mathematical_role": "Inserts the new first-spacing bound into a double-large-sieve framework, combines it with imported second-spacing estimates, and optimizes scales to prove Theorem 4."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1144,
+          "line_start": 1121,
+          "title": "First-spacing count identified with A6",
+          "unit_id": "openalex_w1592212038_u019",
+          "unit_type": "identification",
+          "why_material": "Fourier localization turns the first-spacing count A into a scaled A6 integral with delta=Q^2/(H^2R^2), after which Corollary 3 yields A bounded by delta^2 H^(10+epsilon). This is the direct causal interface from decoupling to the large sieve."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The admissibility check 1/H <= H*delta <= Q/N <= 1 is included before applying the corollary.",
+          "representation_dependency": "Formula-dependent: the Fourier integral, rescaling, and delta identification are the substance of the unit.",
+          "unit_id": "openalex_w1592212038_u019"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1120,
+            "line_start": 1092,
+            "title": "Double large sieve separates the two spacing problems",
+            "unit_id": "openalex_w1592212038_u018",
+            "unit_type": "factorization",
+            "why_material": "The double large sieve bounds the coupled phase sum by the geometric mean of a first-spacing count A and a second-spacing count B1, times coordinate-volume factors, cleanly isolating what the new mean-value theorem can control from what must be imported."
+          },
+          {
+            "line_end": 1178,
+            "line_start": 1146,
+            "title": "Combining first and baseline second spacing bounds",
+            "unit_id": "openalex_w1592212038_u020",
+            "unit_type": "application",
+            "why_material": "An imported second-spacing estimate for B1 is combined with the new A bound and the large-sieve reduction; choosing N=M*T^(-2/7) yields the exponential-sum estimate with exponent 13/84 over its initial M range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The provenance of the B1 estimate is explicit and the scale conditions R<=N<=R^2 are checked for the stated range.",
+      "line_end": 1178,
+      "line_start": 1146,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on formulas (3.11)-(3.13) and the parameter relation (3.3); the second-spacing ingredient is not proved here.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An imported second-spacing estimate for B1 is combined with the new A bound and the large-sieve reduction; choosing N=M*T^(-2/7) yields the exponential-sum estimate with exponent 13/84 over its initial M range.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Combining first and baseline second spacing bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u020.txt",
+      "unit_bytes": 2093,
+      "unit_id": "openalex_w1592212038_u020",
+      "unit_sha256": "8d1c38fca61fda4ef9e081efb526e27d537d504d41ce8b25e4469f44b3d184d3",
+      "unit_type": "application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u020.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1138,
+          "line_end": 1145,
+          "text": "with A6 (L; γ, Γ) defined according to (2.28), and with\n                                                                             Q2\n                                                                      δ=\n                                                                            H 2 R2\nso that 1/H ≤ Hδ ≤ Q/N ≤ 1. Therefore it follows by Corollary 3 that we have\n\n                                                                   A ≪ δ 2 H 10+ε .                                                         (3.10)\n\n",
+          "sha256": "41f610fb7210b9d43b18a79e0ed6c3363e5a86a39355eaa2a35a1c27f1dc5e4b"
+        },
+        "after": {
+          "line_start": 1179,
+          "line_end": 1186,
+          "text": "\n     The M -range for which the bound (3.13) holds may be extended by invoking the treatment in [H1] which we\ndiscuss next.\n     It was observed by Huxley, at the start of §7 in [H1], that for an arbitrary V ≥ 1 the structure of the Bombieri-\nIwaniec ‘double large sieve’ implies that if the factor X2 Y2 +1 on the right-hand side of the bound (3.8) is increased\nto X2 Y2 V + 1 ≤ (X2 Y2 + 1)V then the adjacent term B1 may be replaced by a term BV ≤ B1 , the definition\n                                         \u0001\nof which differs from that of B1 in (3.9) only insofar as it involves an upper bound on |x2 (I) − x2 (I ′ )| that\n",
+          "sha256": "c566c3737a13920577df21fcc782b5d6b519c496002d8fa3ade3eb679392c5e3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Applications to exponential sums",
+            "line_end": 1280,
+            "line_start": 1006,
+            "mathematical_role": "Inserts the new first-spacing bound into a double-large-sieve framework, combines it with imported second-spacing estimates, and optimizes scales to prove Theorem 4."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1178,
+          "line_start": 1146,
+          "title": "Combining first and baseline second spacing bounds",
+          "unit_id": "openalex_w1592212038_u020",
+          "unit_type": "application",
+          "why_material": "An imported second-spacing estimate for B1 is combined with the new A bound and the large-sieve reduction; choosing N=M*T^(-2/7) yields the exponential-sum estimate with exponent 13/84 over its initial M range."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The provenance of the B1 estimate is explicit and the scale conditions R<=N<=R^2 are checked for the stated range.",
+          "representation_dependency": "Depends on formulas (3.11)-(3.13) and the parameter relation (3.3); the second-spacing ingredient is not proved here.",
+          "unit_id": "openalex_w1592212038_u020"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1144,
+            "line_start": 1121,
+            "title": "First-spacing count identified with A6",
+            "unit_id": "openalex_w1592212038_u019",
+            "unit_type": "identification",
+            "why_material": "Fourier localization turns the first-spacing count A into a scaled A6 integral with delta=Q^2/(H^2R^2), after which Corollary 3 yields A bounded by delta^2 H^(10+epsilon). This is the direct causal interface from decoupling to the large sieve."
+          },
+          {
+            "line_end": 1214,
+            "line_start": 1180,
+            "title": "Resonance-curve tightening of the second-spacing window",
+            "unit_id": "openalex_w1592212038_u021",
+            "unit_type": "refinement",
+            "why_material": "The source introduces a tunable factor V that narrows one coordinate window in the second-spacing count while enlarging the adjacent volume factor, allowing Huxley's resonance-curve estimate for BV to replace the baseline B1 bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This refinement is used specifically to extend the M range; its imported status and alternative choices of V are retained.",
+      "line_end": 1214,
+      "line_start": 1180,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires formulas (3.14)-(3.15), the modified spacing window, and the Delta parameters.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source introduces a tunable factor V that narrows one coordinate window in the second-spacing count while enlarging the adjacent volume factor, allowing Huxley's resonance-curve estimate for BV to replace the baseline B1 bound.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Resonance-curve tightening of the second-spacing window",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u021.txt",
+      "unit_bytes": 2674,
+      "unit_id": "openalex_w1592212038_u021",
+      "unit_sha256": "8c7bca58f6dc20268959c9276d9cd39907a2070501d819626aacc752bff084b3",
+      "unit_type": "refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u021.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1172,
+          "line_end": 1179,
+          "text": "                                           N3         M3              N 3/2\n     √\nIf       T ≥ M ≥ cT 3/7 (where c is the positive constant in (3.1) and (3.3)) then the conditions N ∈ (1, M ) and\nR ≤ N ≤ R2 are satisfied, with N = M T −2/7 and R as in (3.3). That is, we have:\n\n                                                  1                 √\n                                       |S| ≪ M 2 T ε+13/84 for       T ≥ M ≥ cT 3/7 .                            (3.13)\n\n",
+          "sha256": "64934bd491b3482533e11ee3c8a4624e13799fde0aeefb7c7cc3421f1bc388dc"
+        },
+        "after": {
+          "line_start": 1215,
+          "line_end": 1222,
+          "text": "\n                        \u0010 M 5+ε R4 N \u0011\u0010 n\u0010 N \u00111/2 R2 o\u0010 M \u00111/2 \u0010 Q \u00111/3 \u0010 R \u00117/3 \u0010 M \u0011\u0011\n               |S|6 ≪                       min  ,             +\n                          Q7               Q       N      N       R       N        N\n                    \u0010 M 5+ε N \u0011\u0010     n\u0010 N \u00111/2 R2 o\u0010 M \u00111/2 \u0010 R \u00117/3 \u0010 M \u0011\u0011\n                  ≤              min          ,             +                                   (3.16)\n                        R3              R       N     N         N      N\n                        n M ε+11/2 N M ε+11/2 o \u0010 M 6+ε \u0011\u0010 N \u00112/3\n",
+          "sha256": "0cae0d55c67bf3bc9ae4d2f2970df976ce1acbca67b1469915b260cbd8231dd0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Applications to exponential sums",
+            "line_end": 1280,
+            "line_start": 1006,
+            "mathematical_role": "Inserts the new first-spacing bound into a double-large-sieve framework, combines it with imported second-spacing estimates, and optimizes scales to prove Theorem 4."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1214,
+          "line_start": 1180,
+          "title": "Resonance-curve tightening of the second-spacing window",
+          "unit_id": "openalex_w1592212038_u021",
+          "unit_type": "refinement",
+          "why_material": "The source introduces a tunable factor V that narrows one coordinate window in the second-spacing count while enlarging the adjacent volume factor, allowing Huxley's resonance-curve estimate for BV to replace the baseline B1 bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This refinement is used specifically to extend the M range; its imported status and alternative choices of V are retained.",
+          "representation_dependency": "Requires formulas (3.14)-(3.15), the modified spacing window, and the Delta parameters.",
+          "unit_id": "openalex_w1592212038_u021"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1178,
+            "line_start": 1146,
+            "title": "Combining first and baseline second spacing bounds",
+            "unit_id": "openalex_w1592212038_u020",
+            "unit_type": "application",
+            "why_material": "An imported second-spacing estimate for B1 is combined with the new A bound and the large-sieve reduction; choosing N=M*T^(-2/7) yields the exponential-sum estimate with exponent 13/84 over its initial M range."
+          },
+          {
+            "line_end": 1266,
+            "line_start": 1214,
+            "title": "Optimizing the resonance bound across scale regimes",
+            "unit_id": "openalex_w1592212038_u022",
+            "unit_type": "parameter-optimization",
+            "why_material": "Combining the refined large-sieve and second-spacing bounds produces a minimum of competing terms. Optimizing N, then switching to N comparable to R^2 when the first optimizer violates a scale constraint, yields piecewise bounds that extend the desired estimate down to M>=T^(17/42)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          },
+          {
+            "claim": "Scale parameters are not bookkeeping: K enables contraction in decoupling and bilinear-to-linear bootstraps, while N and V balance first-spacing strength, second-spacing resolution, and admissibility constraints in the exponential-sum application.",
+            "limit": "The specific exponents and optimizers belong to this proof's inequalities and should not be generalized without re-deriving the competing terms.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u014",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022"
+            ],
+            "title": "Intermediate scale choice as an interface between analytic modules"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span preserves the regime boundaries and explicitly explains the constraint-driven switch of scale.",
+      "line_end": 1266,
+      "line_start": 1214,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent: equations (3.16)-(3.18) and the N,R relations determine the optimization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combining the refined large-sieve and second-spacing bounds produces a minimum of competing terms. Optimizing N, then switching to N comparable to R^2 when the first optimizer violates a scale constraint, yields piecewise bounds that extend the desired estimate down to M>=T^(17/42).",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Optimizing the resonance bound across scale regimes",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u022.txt",
+      "unit_bytes": 3784,
+      "unit_id": "openalex_w1592212038_u022",
+      "unit_sha256": "9b25e8b7f55ef62964abc63dc06e4a19a518349f3506339835d335c5e0a980e2",
+      "unit_type": "parameter-optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u022.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1206,
+          "line_end": 1213,
+          "text": "                                                              17\n\n<!-- source-page: 18 -->\n\nwhere ∆1 , ∆2 are as above, while\n                                                     1       Q2    Q\n                                             ∆4 =         =       < .\n                                                    X4 Y4   6R2 H  N\n",
+          "sha256": "38db2a368e51d63eb4dca898b2a36e89198c8f1013607431a1e215d3876958b0"
+        },
+        "after": {
+          "line_start": 1267,
+          "line_end": 1274,
+          "text": "\n                                                         18\n\n<!-- source-page: 19 -->\n\nTheorem 4. With the above notation, one has that\n\n                                                                        1     log M    17\n",
+          "sha256": "2eb41aaf6aedcf76f3ff38981a82e2f2551f2d5592d81d36ef090e4741b559a4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Applications to exponential sums",
+            "line_end": 1280,
+            "line_start": 1006,
+            "mathematical_role": "Inserts the new first-spacing bound into a double-large-sieve framework, combines it with imported second-spacing estimates, and optimizes scales to prove Theorem 4."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1266,
+          "line_start": 1214,
+          "title": "Optimizing the resonance bound across scale regimes",
+          "unit_id": "openalex_w1592212038_u022",
+          "unit_type": "parameter-optimization",
+          "why_material": "Combining the refined large-sieve and second-spacing bounds produces a minimum of competing terms. Optimizing N, then switching to N comparable to R^2 when the first optimizer violates a scale constraint, yields piecewise bounds that extend the desired estimate down to M>=T^(17/42)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span preserves the regime boundaries and explicitly explains the constraint-driven switch of scale.",
+          "representation_dependency": "Formula-dependent: equations (3.16)-(3.18) and the N,R relations determine the optimization.",
+          "unit_id": "openalex_w1592212038_u022"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1214,
+            "line_start": 1180,
+            "title": "Resonance-curve tightening of the second-spacing window",
+            "unit_id": "openalex_w1592212038_u021",
+            "unit_type": "refinement",
+            "why_material": "The source introduces a tunable factor V that narrows one coordinate window in the second-spacing count while enlarging the adjacent volume factor, allowing Huxley's resonance-curve estimate for BV to replace the baseline B1 bound."
+          },
+          {
+            "line_end": 1276,
+            "line_start": 1272,
+            "title": "Uniform exponential-sum estimate in the large-alpha range",
+            "unit_id": "openalex_w1592212038_u023",
+            "unit_type": "theorem",
+            "why_material": "Theorem 4 packages the preceding parameter analysis into the estimate |S| bounded by M^(1/2)T^(13/84+epsilon) for log M/log T between 17/42 and 1/2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          },
+          {
+            "claim": "Scale parameters are not bookkeeping: K enables contraction in decoupling and bilinear-to-linear bootstraps, while N and V balance first-spacing strength, second-spacing resolution, and admissibility constraints in the exponential-sum application.",
+            "limit": "The specific exponents and optimizers belong to this proof's inequalities and should not be generalized without re-deriving the competing terms.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u008",
+              "openalex_w1592212038_u014",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022"
+            ],
+            "title": "Intermediate scale choice as an interface between analytic modules"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the internal exponential-sum output later combined with complementary known estimates.",
+      "line_end": 1276,
+      "line_start": 1272,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The short theorem is defined by display (3.19), including its alpha range.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 4 packages the preceding parameter analysis into the estimate |S| bounded by M^(1/2)T^(13/84+epsilon) for log M/log T between 17/42 and 1/2.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform exponential-sum estimate in the large-alpha range",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u023.txt",
+      "unit_bytes": 356,
+      "unit_id": "openalex_w1592212038_u023",
+      "unit_sha256": "4fa0dd9808362f4d53f1e1967e173a5b22f33818e9f1a5edecc3fa11651301c3",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u023.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1264,
+          "line_end": 1271,
+          "text": "                                                                    ), one verifies that the bound on |S| in (3.13)\n        √\nholds if T ≥ M ≥ T 17/42 . Thus we establish\n\n                                                         18\n\n<!-- source-page: 19 -->\n\n",
+          "sha256": "75f99b68626c1492f2c2712541e650ed2f1ed005c5b9266df0727b33d2ccc24c"
+        },
+        "after": {
+          "line_start": 1277,
+          "line_end": 1284,
+          "text": "\n\n\n\n4    Bounding the zeta-function on the critical line\nFor the application to |ζ(1/2 + it)| one wants to show that (3.19) also holds when 17/42 > α ≥ 0. The cases with\n0 ≤ α ≤ 13/42 are trivial (there one can just use |S| ≤ M ), so all that remains to be done is establishing that\n(3.19) holds when α lies in the interval (13/42, 17/42). To achieve this one can employ the bound\n",
+          "sha256": "7e3fa5f59d60d8477f775a83969e0ce98813b319b27f8f07f282c9ffef63669d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Applications to exponential sums",
+            "line_end": 1280,
+            "line_start": 1006,
+            "mathematical_role": "Inserts the new first-spacing bound into a double-large-sieve framework, combines it with imported second-spacing estimates, and optimizes scales to prove Theorem 4."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1276,
+          "line_start": 1272,
+          "title": "Uniform exponential-sum estimate in the large-alpha range",
+          "unit_id": "openalex_w1592212038_u023",
+          "unit_type": "theorem",
+          "why_material": "Theorem 4 packages the preceding parameter analysis into the estimate |S| bounded by M^(1/2)T^(13/84+epsilon) for log M/log T between 17/42 and 1/2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the internal exponential-sum output later combined with complementary known estimates.",
+          "representation_dependency": "The short theorem is defined by display (3.19), including its alpha range.",
+          "unit_id": "openalex_w1592212038_u023"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1266,
+            "line_start": 1214,
+            "title": "Optimizing the resonance bound across scale regimes",
+            "unit_id": "openalex_w1592212038_u022",
+            "unit_type": "parameter-optimization",
+            "why_material": "Combining the refined large-sieve and second-spacing bounds produces a minimum of competing terms. Optimizing N, then switching to N comparable to R^2 when the first optimizer violates a scale constraint, yields piecewise bounds that extend the desired estimate down to M>=T^(17/42)."
+          },
+          {
+            "line_end": 1314,
+            "line_start": 1281,
+            "title": "Covering complementary scales and transferring to zeta",
+            "unit_id": "openalex_w1592212038_u024",
+            "unit_type": "application",
+            "why_material": "Two external exponential-sum bounds cover the alpha range below Theorem 4, with an overlap calculation ensuring full coverage. For the logarithmic phase relevant to zeta, the approximate functional equation, partial summation, and dyadic dissection then transfer the uniform short-sum estimate to the critical-line bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          },
+          {
+            "claim": "A strong estimate on one natural scale range becomes a reusable exponent-pair result only after complementary estimates cover missing ranges, the B-process handles dual large scales, and a controlled phase extension removes the full-interval assumption.",
+            "limit": "Several steps are cited from established exponent-pair theory and the construction assumes its derivative and monomial-approximation hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024",
+              "openalex_w1592212038_u026",
+              "openalex_w1592212038_u027"
+            ],
+            "title": "From a bounded-range estimate to an exponent-pair statement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source flags additional hypotheses on the general phase and explains why log x satisfies them; the final transfer is summarized rather than reproved.",
+      "line_end": 1314,
+      "line_start": 1281,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses inequalities (4.1)-(4.3), interval arithmetic for alpha, and the approximate-functional-equation display.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two external exponential-sum bounds cover the alpha range below Theorem 4, with an overlap calculation ensuring full coverage. For the logarithmic phase relevant to zeta, the approximate functional equation, partial summation, and dyadic dissection then transfer the uniform short-sum estimate to the critical-line bound.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Covering complementary scales and transferring to zeta",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u024.txt",
+      "unit_bytes": 2671,
+      "unit_id": "openalex_w1592212038_u024",
+      "unit_sha256": "cfe349ed7e574ac13d53311207d06589d61cc237b7a69c00e6167727d3ee48b7",
+      "unit_type": "application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u024.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1273,
+          "line_end": 1280,
+          "text": "\n                                                                        1     log M    17\n                                    |S| ≪ M 1/2 T ε+13/84 if              ≥α=        ≥    .                    (3.19)\n                                                                        2      log T   42\n\n\n\n\n",
+          "sha256": "0341e4be584b7c090b465e57732d5e8a4a93ace2d7f15ddceab31e2a74064398"
+        },
+        "after": {
+          "line_start": 1315,
+          "line_end": 1322,
+          "text": "\nRemark.\n    Bombieri and Iwaniec achieved the exponent 9/56 = (1 − 1/28)/6 using an essentially optimal bound on\n                                                                                                             \u0001\nA4 (δ, Hδ), so that the exponent 13/84 = (1−1/14)/6 achieved with an essentially optimal bound for A6 (δ, Hδ)\n\n                                                                   19\n\n",
+          "sha256": "cda7ccac05c470b7384090a02e584cf34bd5c6d2f5d4f4cb44ebe725973f09fc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Bounding the zeta-function on the critical line",
+            "line_end": 1331,
+            "line_start": 1281,
+            "mathematical_role": "Covers the remaining short-sum ranges with known estimates, applies the approximate functional equation, and interprets the resulting saving."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1314,
+          "line_start": 1281,
+          "title": "Covering complementary scales and transferring to zeta",
+          "unit_id": "openalex_w1592212038_u024",
+          "unit_type": "application",
+          "why_material": "Two external exponential-sum bounds cover the alpha range below Theorem 4, with an overlap calculation ensuring full coverage. For the logarithmic phase relevant to zeta, the approximate functional equation, partial summation, and dyadic dissection then transfer the uniform short-sum estimate to the critical-line bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source flags additional hypotheses on the general phase and explains why log x satisfies them; the final transfer is summarized rather than reproved.",
+          "representation_dependency": "Uses inequalities (4.1)-(4.3), interval arithmetic for alpha, and the approximate-functional-equation display.",
+          "unit_id": "openalex_w1592212038_u024"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1276,
+            "line_start": 1272,
+            "title": "Uniform exponential-sum estimate in the large-alpha range",
+            "unit_id": "openalex_w1592212038_u023",
+            "unit_type": "theorem",
+            "why_material": "Theorem 4 packages the preceding parameter analysis into the estimate |S| bounded by M^(1/2)T^(13/84+epsilon) for log M/log T between 17/42 and 1/2."
+          },
+          {
+            "line_end": 1328,
+            "line_start": 1316,
+            "title": "Moment order and the doubling of the critical-line saving",
+            "unit_id": "openalex_w1592212038_u025",
+            "unit_type": "method-comparison",
+            "why_material": "The remark compares essentially optimal A4, A5, and A6 inputs and interprets the 13/84 exponent as exactly doubling the original Bombieri-Iwaniec saving over 1/6."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sharp A6 estimate controls exactly the first-spacing count A in the double large sieve; when paired with separately sourced second-spacing bounds and optimized intermediate scales, it improves smooth exponential sums, and complementary range estimates plus the approximate functional equation transfer that improvement to the critical line.",
+            "limit": "The source does not derive the second-spacing estimates, the complementary Huxley/exponent-pair bounds, or the approximate functional equation; the final implication is therefore a composite result rather than decoupling alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u015",
+              "openalex_w1592212038_u016",
+              "openalex_w1592212038_u017",
+              "openalex_w1592212038_u018",
+              "openalex_w1592212038_u019",
+              "openalex_w1592212038_u020",
+              "openalex_w1592212038_u021",
+              "openalex_w1592212038_u022",
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024"
+            ],
+            "title": "Causal chain from first-spacing decoupling to the zeta exponent"
+          },
+          {
+            "claim": "A strong estimate on one natural scale range becomes a reusable exponent-pair result only after complementary estimates cover missing ranges, the B-process handles dual large scales, and a controlled phase extension removes the full-interval assumption.",
+            "limit": "Several steps are cited from established exponent-pair theory and the construction assumes its derivative and monomial-approximation hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024",
+              "openalex_w1592212038_u026",
+              "openalex_w1592212038_u027"
+            ],
+            "title": "From a bounded-range estimate to an exponent-pair statement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "36195522a80e8ec15a206bb226b4179f1f2e4d69031afdb478bccffe648d4d62"
+}

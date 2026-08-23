@@ -1,0 +1,2516 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no prior analysis-stage conversation",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_34.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_34.jsonl"
+  },
+  "unit_count": 54,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes historical threshold comparisons and the conditional theorem statement.",
+      "line_end": 67,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "OCR distorts powers of ten; exact thresholds should be verified against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why GRH makes the asymptotic threshold computationally bridgeable and states the three-part decomposition needed to cover every odd input without conflating analytic and computational evidence.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Close a global additive theorem by joining asymptotics to finite verification",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_v2_u01.txt",
+      "unit_bytes": 2600,
+      "unit_id": "openalex_w1647755162_v2_u01",
+      "unit_sha256": "bd77ed2d12b26b0096e022a5c3efbb27556c8130b2976ffe093eb0b6be2548eb",
+      "unit_type": "conditional proof architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source is an announcement and refers elsewhere for full details; this unit retains only the outlined mechanism and stated lemma.",
+      "line_end": 145,
+      "line_start": 69,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent OCR is poor; arc endpoints, Q/r/w constants, and the bound for S(a) require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a weighted ternary prime count, converts it to an exponential-sum integral, refines the arc subdivision, and invokes a zero-sum GRH bound to prove positivity above the explicit threshold.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shrink the major arcs so a GRH remainder bound falls below the circle-method main term",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_v2_u02.txt",
+      "unit_bytes": 3331,
+      "unit_id": "openalex_w1647755162_v2_u02",
+      "unit_sha256": "fcfeb406b971f5914e192f96f8c1d76ce128c08cf68d44e63561af96ec880433",
+      "unit_type": "major-minor arc mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the comparison showing the nominally sharper one-log estimate has a worse constant at the relevant finite scale.",
+      "line_end": 175,
+      "line_start": 146,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Inequalities, theta notation, and the 1.615e12 constant need scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that every n below the asymptotic threshold has a prime p close enough that n-p lies inside the computational two-prime range, thereby matching two proof regimes with an explicit interface bound.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Use a GRH Chebyshev bound to leave a small even remainder",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_v2_u03.txt",
+      "unit_bytes": 1602,
+      "unit_id": "openalex_w1647755162_v2_u03",
+      "unit_sha256": "d8a86d274949890f32abf1c45cc61448b1dab9cb5e6e13a3cd66a3ed47159f95",
+      "unit_type": "analytic-computational bridge lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes why regenerating all primes in each interval dominates cost.",
+      "line_end": 196,
+      "line_start": 176,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Set symbols and index notation are OCR-degraded but recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the verified even range and formalizes the conventional interval-by-interval search as union coverage Q(a,b)+p_i, making exhaustive verification a set-coverage problem.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reduce binary Goldbach verification to coverage by shifted prime sets",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_v2_u04.txt",
+      "unit_bytes": 1501,
+      "unit_id": "openalex_w1647755162_v2_u04",
+      "unit_sha256": "254172cafc340093f45a5d45955d5ab6243c1ee9ab73ac2c75280e13d98d5bb6",
+      "unit_type": "finite verification reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes density-based sizing of the number of shifts, fixed interval length, and the tradeoff that the found representation need not use an extremal prime.",
+      "line_end": 231,
+      "line_start": 197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical density and interval parameters should be verified against the scan; the algorithmic change is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reverses the conventional search: instead of testing small p against primes near e, it fixes consecutive q near a and covers all e using a reusable bitset P+q, dramatically reducing repeated prime generation.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Precompute a small-prime bitset and shift it by primes near the interval base",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_v2_u05.txt",
+      "unit_bytes": 2392,
+      "unit_id": "openalex_w1647755162_v2_u05",
+      "unit_sha256": "58ee10e78ac4b2250ef4998bddebb59e8be6ed9eba99282119590fe164ef99e4",
+      "unit_type": "computational representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is computational evidence conditional on the described implementation and thresholds, distinct from the analytic GRH assumptions.",
+      "line_end": 251,
+      "line_start": 232,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact pseudoprime bounds, runtime figures, and example integers require source-image verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records how candidate primes were certified in the relevant ranges, how shifted OR operations represented coverage, and the hardware/time/extreme-case evidence supporting the exhaustive claim.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Combine bounded pseudoprime tests with vectorized bitset unions",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_v2_u06.txt",
+      "unit_bytes": 1563,
+      "unit_id": "openalex_w1647755162_v2_u06",
+      "unit_sha256": "8ae314d3910ef6fe63fe5ec1f7d3e1b0a4e9427a68c276f185f7c73cd00a9a57",
+      "unit_type": "computational certification evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the authors' statement that identifying the system would prove RH and their navigation of the review's evidential layers.",
+      "line_end": 70,
+      "line_start": 38,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only and self-contained.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Frames the unknown spectral realization as a bridge among eigenvalue asymptotics, dynamical chaos, and primes while explicitly distinguishing fruitful consequences from an actual construction.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Use a three-way analogy as a constraint generator, not an identified operator",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u01.txt",
+      "unit_bytes": 2156,
+      "unit_id": "openalex_w1991057622_v2_u01",
+      "unit_sha256": "cea06523fdee75ebc386838b04d88c8476e8f9af16928f697c07fe2402faefc9",
+      "unit_type": "heuristic research program",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the practical warning that directly hearing the lowest frequency requires an enormous prime range and the Hilbert-Polya self-adjointness motivation.",
+      "line_end": 170,
+      "line_start": 71,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Figure 1 is dispensable; exact explicit-formula weights and the transformed signal require formula checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moves from the prime staircase to Riemann's zero expansion, then changes variables from x to log x so RH becomes the claim that the prime-derived signal has discrete undamped frequencies.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Straighten prime-density oscillations into candidate spectral frequencies",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u02.txt",
+      "unit_bytes": 5590,
+      "unit_id": "openalex_w1991057622_v2_u02",
+      "unit_sha256": "cd720bee859eae554bae697a60d543906b6984475403b881ba4ad1f05750d8c6",
+      "unit_type": "explicit-formula spectral reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the definitions of local averaging, mean spacing, and phase jumps together.",
+      "line_end": 255,
+      "line_start": 196,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants in the Riemann-von Mangoldt term should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes the zero counting staircase into a smooth gamma-factor term and the argument of zeta, clarifying the local averaging scale and why the fluctuation has zero mean.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Separate spectral mean density from prime-generated fluctuations",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u03.txt",
+      "unit_bytes": 3119,
+      "unit_id": "openalex_w1991057622_v2_u03",
+      "unit_sha256": "08c7fb566bfee38f784a8dbf553392fd3e7fefde58c8536a3e7c0dcf57d08722",
+      "unit_type": "counting-function decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the classical Hamiltonian setup, action/period/stability data, and the coherent-factor argument for broken time reversal.",
+      "line_end": 401,
+      "line_start": 256,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; exact amplitudes, Maslov phases, and determinant asymptotics require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares the divergent Euler-product fluctuation series with the chaotic periodic-orbit trace formula to infer periods log p, uniform instability, scaling, and absence of time-reversal symmetry.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Read primes as primitive periodic orbits and prime powers as repetitions",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u04.txt",
+      "unit_bytes": 9198,
+      "unit_id": "openalex_w1991057622_v2_u04",
+      "unit_sha256": "3fc84b5ac983c764409be7c161d560d88be36cf861285610f86fbb61ddfae995",
+      "unit_type": "trace-formula dictionary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the density version of the trace formula and the long-orbit resolution scale.",
+      "line_end": 464,
+      "line_start": 402,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact normalization of amplitudes and TH is formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that resolving individual levels requires orbits up to the Heisenberg time and records two mismatches: Riemann amplitudes have exact exponential decay, and a universal negative phase conflicts with repetition of Maslov indices.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Heisenberg-time resolution exposes two discordant orbit features",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u05.txt",
+      "unit_bytes": 3533,
+      "unit_id": "openalex_w1991057622_v2_u05",
+      "unit_sha256": "6e27985b39a405d7ccb5a0735d4425421bde93d95ad65449bfb6f651f0f603a7",
+      "unit_type": "analogy stress test",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Perron-Frobenius interpretation and the inference from long classical orbits to short-range spectral universality.",
+      "line_end": 526,
+      "line_start": 471,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact dynamical-zeta product and sum-rule normalization need checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects the prime number theorem to exponential orbit proliferation and explains how the Hannay-Ozorio sum rule, invariant measure, and dynamical-zeta pole erase system-specific detail at long times.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Orbit proliferation cancels instability decay in a universal sum rule",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u06.txt",
+      "unit_bytes": 3466,
+      "unit_id": "openalex_w1991057622_v2_u06",
+      "unit_sha256": "8bb3bdbfdf0e837570f77f5995addab14d5231274c9ebfd35d1c519c6ff6ffac",
+      "unit_type": "ergodic universality mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the predicted Riemann-zero breakdown scale from the shortest period log 2 and its comparison with computation.",
+      "line_end": 567,
+      "line_start": 534,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The scaling argument is clear; exact separation count should be formula-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why individual-system averaging can yield GUE statistics locally while short system-specific orbits force deviations at separations growing with the asymptotic parameter.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shortest orbits set the nonuniform breakdown scale of random-matrix behavior",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u07.txt",
+      "unit_bytes": 2715,
+      "unit_id": "openalex_w1991057622_v2_u07",
+      "unit_sha256": "2853e1ddb4221dd40b8ce786795cdcea6e0142840d346b61a1c6cd99e7b6ea49",
+      "unit_type": "universality boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes mean-spacing normalization and the distributional subtraction of self-correlation.",
+      "line_end": 632,
+      "line_start": 568,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Fourier conventions and delta terms require source verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines three interchangeable bilinear statistics whose domains emphasize separation, scaled time, and counting rigidity, providing the interface between orbit sums and zero data.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair correlation, form factor, and number variance are Fourier-linked views",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u08.txt",
+      "unit_bytes": 3394,
+      "unit_id": "openalex_w1991057622_v2_u08",
+      "unit_sha256": "e65c832f984856196ff87e6ce2bb83a59f77dbd29b64544c661b6ffd834dc721",
+      "unit_type": "statistical representation toolkit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Montgomery's theorem/conjecture comparison and the orbit-proliferation reason near-degenerate actions become unavoidable.",
+      "line_end": 730,
+      "line_start": 633,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact scaling and form-factor formulas are display-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses action averaging and the universal orbit sum rule to obtain K(tau)=|tau|, then shows discreteness forces off-diagonal coherent cancellation for larger tau rather than random-phase disappearance.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The diagonal orbit sum gives GUE only before the Heisenberg time",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u09.txt",
+      "unit_bytes": 5085,
+      "unit_id": "openalex_w1991057622_v2_u09",
+      "unit_sha256": "38465abc110915ea764221100cae4d9cfcf97fac825699e6d76c418948576542",
+      "unit_type": "diagonal approximation and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the prime-pair conjecture, its averaged correction, and the short-orbit replacement that begins the nonuniversal approximation.",
+      "line_end": 791,
+      "line_start": 731,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; Euler products and cutoff regime require checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that pairwise-random prime periods would give zero off-diagonal contribution, whereas the Hardy-Littlewood singular series has just the averaged defect needed to recover the long-time GUE form factor.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hardy-Littlewood prime-pair structure supplies the missing orbit coherence",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u10.txt",
+      "unit_bytes": 3276,
+      "unit_id": "openalex_w1991057622_v2_u10",
+      "unit_sha256": "3aec5e2732d58b6bba883ba4d4969d6c1e3e40b8ec536a38435dae2a2e599d44",
+      "unit_type": "arithmetic off-diagonal mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the scale distinction between universal oscillations and system-specific structure plus the generic chaotic-system analogue.",
+      "line_end": 909,
+      "line_start": 810,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Figures 3-5 are useful but dispensable; exact differentiated zeta and Euler-product terms require source-image checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Computes the first correction to GUE from primitive prime orbits and repetitions and interprets singularities of zeta, or of a dynamical zeta function, as resonances in high-level pair statistics.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Short prime orbits make low zeros reappear inside high-zero correlations",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u11.txt",
+      "unit_bytes": 5599,
+      "unit_id": "openalex_w1991057622_v2_u11",
+      "unit_sha256": "dade93ac9b3d310c50e456f826619999f708c59f893050c11959c5d25c715fe5",
+      "unit_type": "nonuniversal resonance formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Explicitly records why the derivation cannot be copied to generic chaotic systems without an analogue of prime-pair correlations.",
+      "line_end": 992,
+      "line_start": 930,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Figure 6 is supporting evidence; exact product b(xi) and coefficients need verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Refines the limiting off-diagonal replacement by retaining full Hardy-Littlewood arithmetic, producing a small oscillatory correction that matches numerical number variance.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Use the unsmoothed singular series to recover the tiny arithmetic oscillations",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u12.txt",
+      "unit_bytes": 3681,
+      "unit_id": "openalex_w1991057622_v2_u12",
+      "unit_sha256": "2a405c5229ed43604d97511099bff6b754ff52f56bd3d6ae4e2a69bde742fa17",
+      "unit_type": "finite-parameter off-diagonal correction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the limit that the backward argument predicts only universal action correlations, not system-specific deviations without more input.",
+      "line_end": 1044,
+      "line_start": 998,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The hypergeometric product is formula-sensitive; the conceptual two-observation construction is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines approximate eigenvalues from a Heisenberg-time-truncated counting function and uses short-time diagonal dominance to compute their correlations, reproducing the arithmetic result and suggesting a reverse route from quantum spectra to classical action statistics.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncate the trace formula, quantize its staircase, and infer orbit correlations backwards",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u13.txt",
+      "unit_bytes": 3109,
+      "unit_id": "openalex_w1991057622_v2_u13",
+      "unit_sha256": "2e669f2a13251c4dd1e14c9afa04ca348bf4407d23c5610dfb1e4c271f7084f9",
+      "unit_type": "self-consistent spectral reconstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates proved diagonal results, conjectural arithmetic inputs, and calculated deviations.",
+      "line_end": 1081,
+      "line_start": 1045,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact determinant kernel and normalization require checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records that higher zero correlations match the GUE determinant after diagonal theorems and generalized Hardy-Littlewood off-diagonal calculations, with analogous nonuniversal zeta corrections.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The diagonal/off-diagonal program extends from pairs to determinant n-point laws",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u14.txt",
+      "unit_bytes": 2037,
+      "unit_id": "openalex_w1991057622_v2_u14",
+      "unit_sha256": "668e623c3306da60ec2599601729ed327a99de75fd57c9bce7a03ebd3bc35c7b",
+      "unit_type": "higher-correlation extension",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the important warning that zeros of partial main sums are not spectra of Hermitian approximants because they can be complex.",
+      "line_end": 1138,
+      "line_start": 1082,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The truncation location and phase convention are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how the functional equation turns a nonconvergent, non-real Dirichlet series into a finite real sum cut at stationary phase, with early terms giving mean density and later terms adding spectral fluctuations.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Riemann-Siegel main sum pairs a divergent tail with its conjugate beginning",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u15.txt",
+      "unit_bytes": 3722,
+      "unit_id": "openalex_w1991057622_v2_u15",
+      "unit_sha256": "4f67b9771e84423e555e037f7b44bb6b8c7008b733ec837cf88ca18aba5d3051",
+      "unit_type": "functional-equation resummation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the fractional-cutoff coordinate and initial recurrence examples; the giant later coefficient is not selected separately.",
+      "line_end": 1189,
+      "line_start": 1139,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact recurrence coefficients and derivatives need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains how expansion about the moving cutoff repairs discontinuities and organizes the Riemann-Siegel corrections through derivatives of a single transition function.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Correct the discontinuous main sum with local transition coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u16.txt",
+      "unit_bytes": 2738,
+      "unit_id": "openalex_w1991057622_v2_u16",
+      "unit_sha256": "e4d752f15f10f6e3b8683b211047499a574f6ddfb06b9051fbde963aee342fd9",
+      "unit_type": "asymptotic repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The intervening explicit twentieth coefficient is routine illustration rather than a separate mechanism.",
+      "line_end": 1303,
+      "line_start": 1254,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact factorial normalization, oscillatory decoration, and error exponent require source checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compresses high-order Riemann-Siegel coefficients into a decorated factorial law and uses Borel/least-term reasoning to locate optimal truncation and its exponentially small error.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Factorial coefficient growth determines the least-term accuracy barrier",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u17.txt",
+      "unit_bytes": 2675,
+      "unit_id": "openalex_w1991057622_v2_u17",
+      "unit_sha256": "cce7bfec3fc07d4972266c80513a31b27159a03cc9826c7f591b177daa538a02",
+      "unit_type": "optimal truncation and remainder",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the central limitation: exponential orbit proliferation makes the quantum sum impractical at high energy, and no direct correction series removes its discontinuities.",
+      "line_end": 1410,
+      "line_start": 1304,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact determinant regularization and pseudo-orbit amplitudes are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands a spectral determinant over composite pseudo-orbits, truncates at half the Heisenberg time, and pairs long contributions with conjugates of short ones to obtain a finite real lookalike.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Transfer Riemann-Siegel duality to the quantum spectral determinant",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u18.txt",
+      "unit_bytes": 6179,
+      "unit_id": "openalex_w1991057622_v2_u18",
+      "unit_sha256": "e6348a5d99f21f84f0183a158eea9150115310adbd86bddd42fe95ea2c3a305e",
+      "unit_type": "pseudo-orbit resummation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the improved representation, successful hyperbola-billiard test, and explicitly speculative instanton reading together.",
+      "line_end": 1466,
+      "line_start": 1416,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Erfc arguments and correction scales require checking; the complex-orbit inference is heuristic.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces abrupt truncation by an error-function transition with better exponential accuracy, transfers it to quantum determinants, and interprets the residual exp(-pi t) scale as a possible complex periodic orbit of period i pi.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth the cutoff to improve accuracy and expose an imaginary-period contribution",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u19.txt",
+      "unit_bytes": 3319,
+      "unit_id": "openalex_w1991057622_v2_u19",
+      "unit_sha256": "e1f87267c6512cbe6fb55d811d84b8dfbbf7360c750a7cfb1a33db1a89b2240a",
+      "unit_type": "smooth resummation and complex-orbit clue",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are inferred desiderata, not established properties of an existing operator.",
+      "line_end": 1506,
+      "line_start": 1467,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Collects chaos, broken time reversal, homogeneous instability, prime-log periods, anomalous phases, complex orbits, exact leading semiclassics, quasi-one-dimensional growth, and functional-equation reality into a joint target rather than isolated analogies.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "List what a Riemann dynamics would have to explain simultaneously",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u20.txt",
+      "unit_bytes": 2624,
+      "unit_id": "openalex_w1991057622_v2_u20",
+      "unit_sha256": "f77cd36731119493b291ca5b0c2f71fb6d042553bf4c4045ed4b2d5aab0d4f9a",
+      "unit_type": "constraint inventory",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u20.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the decisive defect that unbounded XP has no discrete spectrum before a yet-unknown compactification.",
+      "line_end": 1569,
+      "line_start": 1507,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Figure 7 is useful for the cutoff geometry; exact 7/8 term and operator conventions need checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that classical XP is uniformly unstable and non-time-reversible, while a cutoff phase-space area reproduces the smooth zero count and symmetric quantization places power-law eigenfunctions on the critical line.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "XP fits scaling and mean counting only after an ad hoc phase-space cutoff",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u21.txt",
+      "unit_bytes": 3651,
+      "unit_id": "openalex_w1991057622_v2_u21",
+      "unit_sha256": "b2e1d95131827fdfc784c318616f3eb89cff52cc166b7c5d10ffbb36efb9b6ed",
+      "unit_type": "candidate Hamiltonian and regularization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u21.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends at the explicit statement that effective self-adjoint boundary conditions remain missing.",
+      "line_end": 1602,
+      "line_start": 1576,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact gamma ratio and normalization are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Computes momentum-space power laws and identifies their phase ratio with the theta function in zeta's functional equation, converting analytic reflection into position-momentum reversal.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier duality of XP eigenfunctions recovers the theta phase",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u22.txt",
+      "unit_bytes": 1571,
+      "unit_id": "openalex_w1991057622_v2_u22",
+      "unit_sha256": "1a19ab4bf3ebbac3dfcdb6d0642c5c513e6d8441328b7f0aab9935d64e65b44b",
+      "unit_type": "functional-equation representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u22.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the complex-period motivation for identifying X with -X.",
+      "line_end": 1629,
+      "line_start": 1603,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and short formulas are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Tests identification of opposite positions and integer dilation superpositions, then records why the proposal fails: integer dilations lack inverses and no boundary principle forces zeta zeros.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dilation symmetry produces zeta as a factor but not its vanishing condition",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u23.txt",
+      "unit_bytes": 1777,
+      "unit_id": "openalex_w1991057622_v2_u23",
+      "unit_sha256": "4db8becea6b472044a2c143328990569ecf96620cc98523e670c93d0ddc15cc6",
+      "unit_type": "failed symmetry route",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u23.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a conjectural boundary-condition analogy, not a constructed extension.",
+      "line_end": 1657,
+      "line_start": 1630,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula for the Dirichlet series is readable; operator-domain details are absent from the source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates multiplicative residue-class characters to discrete boundary phases, proposing different extensions for different L-functions while stating why the Bloch-Floquet analogy is imperfect.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [
+        28
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Character-weighted dilation classes suggest self-adjoint extensions for Dirichlet L-functions",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u24.txt",
+      "unit_bytes": 1807,
+      "unit_id": "openalex_w1991057622_v2_u24",
+      "unit_sha256": "614cc16d34ce4fadb4be61d444b9ba7b5e729a142dd6f380aaa519e72280b370",
+      "unit_type": "L-function generalization attempt",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u24.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the authors' final audit of which desired properties XP does and does not satisfy.",
+      "line_end": 1687,
+      "line_start": 1658,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact canonical transformation and identity require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explores reinjection between asymptotic position and momentum, derives a functional-equation identity, and isolates the sign, prime-period, boundedness, and Maslov-phase defects still unsolved.",
+      "source_id": "openalex_w1991057622",
+      "source_normalized_sha256": "3c5523f5e696edf9597d935edeb1c8d9f5813c8bb6b46b488830120de973e6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Position-momentum exchange nearly yields a zero condition but with the wrong sign",
+      "unit_artifact_relpath": "depth/units/openalex_w1991057622_v2_u25.txt",
+      "unit_bytes": 2063,
+      "unit_id": "openalex_w1991057622_v2_u25",
+      "unit_sha256": "e66721b0111567f72f96704b23e4cb46ed32e02ebc8f5fbe78588fba1950a7bf",
+      "unit_type": "boundary-condition obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1991057622_v2_u25.txt",
+      "source": {
+        "source_id": "openalex_w1991057622",
+        "title": "The Riemann Zeros and Eigenvalue Asymptotics",
+        "authors": [
+          "Michael Berry",
+          "Jonathan P. Keating"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contrast between detailed moment recipes and conventional approximate-Parseval/divisor-correlation methods.",
+      "line_end": 64,
+      "line_start": 21,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only; moment-order and polynomial-length claims are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the impossible negative prediction for moments above the eighth as a falsifier and proposes the second/fourth moments with overlong polynomials as controlled cases for locating omitted terms.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Long polynomial moment heuristics turn negative when correlation classes are missing",
+      "unit_artifact_relpath": "depth/units/openalex_w2076917652_v2_u05.txt",
+      "unit_bytes": 4482,
+      "unit_id": "openalex_w2076917652_v2_u05",
+      "unit_sha256": "2be0c489fd51f6ffd27c1f8db6e222c8897ca644811dc11719c958fc66e0904e",
+      "unit_type": "method failure diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2076917652_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes pointwise approximation by a polynomial longer than T and the unshifted limiting identity.",
+      "line_end": 134,
+      "line_start": 66,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact errors, transforms, and scale y require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares Ingham's shifted second moment with Goldston-Gonek coefficient correlations and isolates a precise identity between the weight and its Fourier transform that makes the two representations agree.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The long-polynomial second moment works only through a hidden Fourier identity",
+      "unit_artifact_relpath": "depth/units/openalex_w2076917652_v2_u06.txt",
+      "unit_bytes": 3915,
+      "unit_id": "openalex_w2076917652_v2_u06",
+      "unit_sha256": "7bb081c6a0f42873b3c32f0abb9c299283a591c7321c2d89f68212989e409d82",
+      "unit_type": "exact compatibility condition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2076917652_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is retained because the authors explicitly need a mechanism that can be imitated at higher moments, where it becomes conjectural.",
+      "line_end": 243,
+      "line_start": 135,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour orientation, chi factor, and residue signs are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces shifts, applies Perron inversion to the floor sum, rotates the positive-frequency integrals, invokes zeta's functional equation, and obtains the desired two residues after moving the Mellin contour.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [
+        4,
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional-equation contour rotation proves the shifted Fourier identity",
+      "unit_artifact_relpath": "depth/units/openalex_w2076917652_v2_u07.txt",
+      "unit_bytes": 6058,
+      "unit_id": "openalex_w2076917652_v2_u07",
+      "unit_sha256": "d48e4dd56f134b00c8e8bd3c511691c1b9ecc865c71fd64a8a92fc73eacee0d9",
+      "unit_type": "Mellin-contour proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2076917652_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the epistemic warning that the full theorem is not written down in detail in the cited form.",
+      "line_end": 317,
+      "line_start": 245,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The six zeta-factor terms and shift placements require source checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the fourth-moment recipe, packages shifted divisor coefficients, defines its length-X polynomial mean square, and asks how that mean approaches the zeta moment without an approximate functional equation.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Express the shifted fourth moment as a six-term target for a long divisor polynomial",
+      "unit_artifact_relpath": "depth/units/openalex_w2076917652_v2_u08.txt",
+      "unit_bytes": 4521,
+      "unit_id": "openalex_w2076917652_v2_u08",
+      "unit_sha256": "5b1e9e65b9320540e6732c51e1dc330dd88ee643ab52650f31a8880d83282e51",
+      "unit_type": "higher-moment setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2076917652_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Lindelof/RH upper-bound landscape, unconditional lower bounds, and the full local-max conjecture before the theorem statement.",
+      "line_end": 94,
+      "line_start": 23,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is clear; exact exponents and constants in the displayed bounds should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts the large gap in global maximal-order bounds with the sharper Fyodorov-Hiary-Keating distributional conjecture on random bounded intervals, making randomness of interval location the tractable source of averaging.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace the disputed global maximum by a typical local maximum",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u04.txt",
+      "unit_bytes": 5729,
+      "unit_id": "openalex_w2566344843_v2_u04",
+      "unit_sha256": "4a7faa807cf034c22e3f3081cc363557d1c1a1a8e467b68325e5e28f149b9e2a",
+      "unit_type": "problem reframing and conjectural target",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the discard of exceptional first/last blocks, the one- versus two-point event strategy, the tree construction, and methodological provenance.",
+      "line_end": 341,
+      "line_start": 231,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual covariance dichotomy is clear; Figure 1 is useful but dispensable, and exact thresholds require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why equal-variance prime blocks are nearly independent across scales yet remain correlated across nearby points, and encodes that covariance by a coarse tree whose branching time is determined by separation.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        5,
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime size becomes generation and spatial separation becomes shared ancestry",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u05.txt",
+      "unit_bytes": 7470,
+      "unit_id": "openalex_w2566344843_v2_u05",
+      "unit_sha256": "e7fdb9d920e75938d6f57c183c96a3ffd54d62465209497185c96e9164470587",
+      "unit_type": "branching-random-walk representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the analytic inequality, probabilistic Chebyshev step, and moment inputs together.",
+      "line_end": 440,
+      "line_start": 373,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The mechanism is prose-supported; exact inequality formatting and powers need checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bounds a continuum supremum by endpoint values and an integral of f'f, allowing classical second moments of zeta and zeta-prime to prove the upper half of the theorem without a fine net.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Sobolev inequality converts pointwise moments into a typical interval maximum",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u06.txt",
+      "unit_bytes": 3809,
+      "unit_id": "openalex_w2566344843_v2_u06",
+      "unit_sha256": "f01560a1e89a06a3553d6d09ca7008909c4a9e8cc4649707dc1ed8ce15716ad3",
+      "unit_type": "local-supremum bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes definitions of X, sigma_0, J_j, P_j, variance estimates, both propositions, and their composition.",
+      "line_end": 535,
+      "line_start": 442,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent; block endpoints, sigma_0, and constants require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses logarithmic prime ranges so interior blocks have comparable variance, omits the anomalous largest and overly correlated smallest blocks, and states the two propositions whose composition yields the lower bound.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Equalize prime-block variance and isolate the blocks with usable correlation",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u07.txt",
+      "unit_bytes": 5529,
+      "unit_id": "openalex_w2566344843_v2_u07",
+      "unit_sha256": "6acc18314ca2b0b715b67493b4bab90d2af65411ea980d4bb04d26ae9155db30",
+      "unit_type": "multiscale decomposition and proposition interface",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Lemmas 3.3-3.5 and the diagonal-combinatorial reason odd moments vanish.",
+      "line_end": 640,
+      "line_start": 536,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dense and extraction-sensitive; exact coefficients and admissible ranges must be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how mean-value diagonals and multiplicativity turn moments of prime-supported polynomials into Bessel-product/Gaussian moments, with a high-moment bound for later tail control.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dirichlet-polynomial diagonals reproduce Gaussian prime-sum moments",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u08.txt",
+      "unit_bytes": 5627,
+      "unit_id": "openalex_w2566344843_v2_u08",
+      "unit_sha256": "77f9840254202ca07c9b927b5ee4a2b9b31f5c838dd5cc57c8ad71d8e9fda82d",
+      "unit_type": "moment-comparison toolkit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes why direct inversion is moved off the zero-rich critical line and why the prime-factor-count cutoff makes the polynomial short.",
+      "line_end": 900,
+      "line_start": 727,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The argument is recoverable from prose, but exact Euler factors and error powers are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a finite Dirichlet polynomial from smooth-number Mobius coefficients, then uses a twisted second-moment formula and Euler-product tail estimates to prove L2 inversion of zeta on the shifted line.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncate the Mobius inverse so zeta times the mollifier is almost one",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u09.txt",
+      "unit_bytes": 9479,
+      "unit_id": "openalex_w2566344843_v2_u09",
+      "unit_sha256": "9955f0a702184533786f9673da1004e5183e2fcaa994d0a74e56efa4fbe8ae4a",
+      "unit_type": "mollifier construction and mean-square inversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes derivative-moment control and explicitly identifies the reuse of the upper-bound mechanism.",
+      "line_end": 950,
+      "line_start": 901,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact fourth-moment bounds and logarithmic powers require checking, but the upgrade mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies the same Sobolev-Chebyshev-Cauchy-Schwarz pattern to zeta times the mollifier, turning an averaged inverse into a uniform short-interval inverse for almost every center.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Upgrade mean-square mollification to every point of a short interval",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u10.txt",
+      "unit_bytes": 2535,
+      "unit_id": "openalex_w2566344843_v2_u10",
+      "unit_sha256": "3ecdd8e23c9b1400ac019f888217980b3c23adad8be3f3b731c6e7a6adbaf82f",
+      "unit_type": "uniformization mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the prime-power correction, tail cutoff, coefficient mismatch analysis, and interval-uniform conclusion together.",
+      "line_end": 1138,
+      "line_start": 951,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy; signs, cutoffs, and error exponents should be source-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates harmless prime powers, controls every block on the interval, truncates the exponential, and compares coefficients in mean square to identify M with exp(-sum P_j).",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace the mollifier by the exponential of prime-block logarithms",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u11.txt",
+      "unit_bytes": 10018,
+      "unit_id": "openalex_w2566344843_v2_u11",
+      "unit_sha256": "1cbb0fd96dc7622b332a07fcf3afa10ea1d8f9e0ad6cd894cf69091e9d120db7",
+      "unit_type": "Euler-product representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the interface theorem that prevents the three analytic reductions from becoming disconnected lemmas.",
+      "line_end": 1165,
+      "line_start": 1140,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact thresholds are display-dependent; the implication chain is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows explicitly how a large interior-block sum yields a small mollifier, hence a large shifted zeta value and finally a large critical-line value, while the discarded blocks cost only lower-order terms.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Compose transfer, inversion, and prime-block approximation",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u12.txt",
+      "unit_bytes": 1444,
+      "unit_id": "openalex_w2566344843_v2_u12",
+      "unit_sha256": "99877b76137f94a9eed962062c634c0ff1e15e1cbfbd7fdb104f6d5d0fa5684e",
+      "unit_type": "proof-chain assembly",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes prime-number-theorem covariance regimes and explains why the smallest block is excluded.",
+      "line_end": 1283,
+      "line_start": 1171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact moment range, covariance constants, and remainder require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Evaluates mixed moments at two nearby points and identifies their variance/covariance matrix, making the branching correlation law an analytic consequence of prime sums rather than only an analogy.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Match two-point prime-block moments to a block-diagonal Gaussian law",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u13.txt",
+      "unit_bytes": 6771,
+      "unit_id": "openalex_w2566344843_v2_u13",
+      "unit_sha256": "ad8d69f0b5cf6e1f1951c1fb8a08ec4a4bfc2103713f73160a679c4be7ee7860",
+      "unit_type": "Gaussian moment matching",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the exceptional-set moment bound, the translate B(tau), and the restricted-to-unrestricted moment comparison.",
+      "line_end": 1438,
+      "line_start": 1284,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The construction is clear; cutoff exponents and transform domains require source checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces a high-probability bounded set so rare prime-sum values cannot dominate exponential moments, then uses Taylor truncation to obtain one- and two-point Gaussian Fourier-Laplace transforms.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cut off rare extremes before promoting moment matching to Laplace transforms",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u14.txt",
+      "unit_bytes": 8840,
+      "unit_id": "openalex_w2566344843_v2_u14",
+      "unit_sha256": "4488c6335c42abdd388e94ad24b05bc7a4a3bc5cfdea62c100e6ce7f54fd8ed7",
+      "unit_type": "truncated transform control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the transition from the crude bound to the need for precise inversion at larger separations.",
+      "line_end": 1512,
+      "line_start": 1439,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact indexing of the split generation and constants is formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bounds a simultaneous high event by choosing exponential tilts according to the separation-dependent covariance: correlated early generations pay one shared cost, while later independent generations pay two.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Charge shared early blocks once and decorrelated late blocks twice",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u15.txt",
+      "unit_bytes": 4715,
+      "unit_id": "openalex_w2566344843_v2_u15",
+      "unit_sha256": "e9b2613fdc49d22cd30627c4c56a329d5ff462b3f0bba80ebaa473bddb20d8ff",
+      "unit_type": "correlation-sensitive large-deviation bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes tail truncation of the contour, comparison with independent Gaussian integrals, and the two-point cross-term estimate.",
+      "line_end": 1709,
+      "line_start": 1518,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very formula-dense; contours, smoothing scale, and errors need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a smoothed indicator and contour inversion to prove product Gaussian tail asymptotics, including asymptotic independence once all prime blocks decorrelate.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Recover precise one- and two-point Gaussian tails from the truncated transforms",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u16.txt",
+      "unit_bytes": 12084,
+      "unit_id": "openalex_w2566344843_v2_u16",
+      "unit_sha256": "f7fa5f2e0fc1d04490d065789754b35d59046763348692fc2375f57e2aff25bf",
+      "unit_type": "Fourier-Laplace inversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the one-point tail, far-pair factorization, near-pair multiscale bound, and final Cauchy-Schwarz conclusion together.",
+      "line_end": 1817,
+      "line_start": 1711,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponents are degraded in extraction and must be checked; the far/near pair strategy is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Places log T candidates in the interval, shows their expected number diverges, and splits the pair sum into decorrelated typical pairs and correlated nearby pairs whose contribution is negligible.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A grid plus Paley-Zygmund turns rare high points into a typical maximum",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u17.txt",
+      "unit_bytes": 6101,
+      "unit_id": "openalex_w2566344843_v2_u17",
+      "unit_sha256": "8680590a967fad08305809ccb81e270ba9ff4468674ec0e3fbb0b37fcfc32bdc",
+      "unit_type": "second-moment existence argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the distinction between Caputo and later Grunwald-Letnikov representations and the paper's computational motivation.",
+      "line_end": 160,
+      "line_start": 40,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Definition, phase branch, and convergence boundary are formula-sensitive and need source verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces the nonunique fractional-calculus setting, defines zeta's fractional derivative by a log-power Dirichlet series, and shows that its direct convergence half-plane moves from Re(s)>1 to Re(s)>1+alpha.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        2,
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional differentiation replaces integer log powers by real log powers",
+      "unit_artifact_relpath": "depth/units/openalex_w2955372169_v2_u06.txt",
+      "unit_bytes": 9513,
+      "unit_id": "openalex_w2955372169_v2_u06",
+      "unit_sha256": "fa00d55186ed2ccb0c865c1aff04b90e9759ac60583909cbae68c5594e0f4597",
+      "unit_type": "definition and convergence shift",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2955372169_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends where the source explains why the Caputo operator cannot practically differentiate this product.",
+      "line_end": 198,
+      "line_start": 162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact gamma factors and pole statement should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Sets the asymmetric, completed symmetric, and Xi-function versions side by side, providing the target against which the later fractional equation is judged.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Classical completion converts zeta's reflection into exact s-to-1-s symmetry",
+      "unit_artifact_relpath": "depth/units/openalex_w2955372169_v2_u07.txt",
+      "unit_bytes": 1975,
+      "unit_id": "openalex_w2955372169_v2_u07",
+      "unit_sha256": "fe0e38b62d7e0a1dba1d4b4039e5dbfef6047351cadd31bdf6bcb92c6f71e1de",
+      "unit_type": "symmetry baseline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2955372169_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the eta-zeta relation and the alpha-to-zero recovery of the classical strip.",
+      "line_end": 320,
+      "line_start": 247,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Figure 1 is useful but dispensable; exact series relation requires formula checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the differing convergence domains of eta^(alpha) and zeta^(alpha) to define (alpha,1+alpha) as a translated counterpart of the critical strip and makes explicit that invariance of zero properties under that translation is only a possible scenario.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Eta continuation suggests a fractional strip translated by alpha",
+      "unit_artifact_relpath": "depth/units/openalex_w2955372169_v2_u08.txt",
+      "unit_bytes": 3816,
+      "unit_id": "openalex_w2955372169_v2_u08",
+      "unit_sha256": "45dcdf68f1bf7f49a84b25a82bd8e66faf1e1860a2d234e3b83bc4ac7eb23740",
+      "unit_type": "shifted-domain proposal",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2955372169_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the comparison template for Theorem 3.3 rather than a standalone new zeta result.",
+      "line_end": 357,
+      "line_start": 329,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient arrays and trigonometric factors are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Presents the higher-integer-derivative functional equation and identifies the exponential factorization that will collapse three infinite summations to one.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rewrite the classical functional equation in exponential product form before fractionalizing",
+      "unit_artifact_relpath": "depth/units/openalex_w2955372169_v2_u09.txt",
+      "unit_bytes": 2034,
+      "unit_id": "openalex_w2955372169_v2_u09",
+      "unit_sha256": "edc323b5b380e0558dd0127caf2a88b2b5cede67e24b0a4e3111b90589deef78",
+      "unit_type": "integer-order template",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2955372169_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Theorem 3.4 and its short trigonometric proof.",
+      "line_end": 569,
+      "line_start": 526,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The two coefficient sums and phase conventions need checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives a trigonometric form of the fractional functional equation and identifies it as potentially useful for harmonic analysis, separating representational convenience from the prior computational simplification.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expand the simplified equation into sine and cosine channels",
+      "unit_artifact_relpath": "depth/units/openalex_w2955372169_v2_u10.txt",
+      "unit_bytes": 2378,
+      "unit_id": "openalex_w2955372169_v2_u10",
+      "unit_sha256": "1f1d2ba518e639964e908f9f2395826a3a0b3ecb25f7caaee6d8eabf1cd90725",
+      "unit_type": "alternative harmonic representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2955372169_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    }
+  ]
+}

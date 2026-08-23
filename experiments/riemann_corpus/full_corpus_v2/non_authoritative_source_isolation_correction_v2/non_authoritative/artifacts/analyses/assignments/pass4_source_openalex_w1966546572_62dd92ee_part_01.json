@@ -1,0 +1,336 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1966546572_62dd92ee_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1966546572",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposed shift by one half and the interpretation of zeros as a spectrum are motivated by the Riemann hypothesis; lines 72-75 correctly present the later equivalence as conditional rather than evidence for the hypothesis.",
+      "line_end": 75,
+      "line_start": 32,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on distinguishing a formal product over primes, the Euler product in its valid domain, and substitution of the d'Alembertian into an analytic symbol. The displayed one-half shift is vertically split; verify equations (1)-(3) against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction begins with prime-indexed kinetic operators, observes that their naive adelic product lacks an evident mathematical meaning, and uses the Euler product as motivation for a single pseudodifferential symbol built from zeta. This is a clear bridge-construction move from an unusable factor-level expression to a globally defined analytic object.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace an undefined prime-wise operator product by an analytic zeta symbol",
+      "unit_artifact_relpath": "depth/units/w1966546572_adelic_product_to_zeta_symbol.txt",
+      "unit_bytes": 2999,
+      "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+      "unit_sha256": "37d5e38462cdf3dad0c89728929c4e815fb1762d5dabd150f30e577cfe14de8a",
+      "unit_type": "motivation_and_reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_adelic_product_to_zeta_symbol.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 24,
+          "line_end": 31,
+          "text": "                                     dealing with the cosmological constant problem. Possible cosmological applications of\n                                     the zeta-function field theory are discussed.\n\n\n\n\n                                                                               1\n\n",
+          "sha256": "83f7748ea62f9c1d2b0696342095ae8c14072b418778f0fcd3ba9a0db67f497a"
+        },
+        "after": {
+          "line_start": 76,
+          "line_end": 83,
+          "text": "\n                                                   2\n\n    An approach to the derivation of the mass spectrum of elementary particles by using\nsolutions of the Klein-Gordon equation with finite action is considered in [11].\n    We can quantize not only the Riemann zeta-function but also more general L-functions.\nQuantization of the mathematics of Fermat-Wiles [12] and the Langlands program [13] is\nindicated.\n",
+          "sha256": "5f35ff2c4b6228f522468f8e73e40ea5b339124496aec43d5d587ca10a0f9c79"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and adelic motivation",
+            "line_end": 92,
+            "line_start": 32,
+            "mathematical_role": "motivates replacing an undefined prime-indexed operator product by a zeta-based symbol and previews conditional spectral claims"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 75,
+          "line_start": 32,
+          "title": "Replace an undefined prime-wise operator product by an analytic zeta symbol",
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "unit_type": "motivation_and_reframing",
+          "why_material": "The introduction begins with prime-indexed kinetic operators, observes that their naive adelic product lacks an evident mathematical meaning, and uses the Euler product as motivation for a single pseudodifferential symbol built from zeta. This is a clear bridge-construction move from an unusable factor-level expression to a globally defined analytic object."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proposed shift by one half and the interpretation of zeros as a spectrum are motivated by the Riemann hypothesis; lines 72-75 correctly present the later equivalence as conditional rather than evidence for the hypothesis.",
+          "representation_dependency": "Depends on distinguishing a formal product over primes, the Euler product in its valid domain, and substitution of the d'Alembertian into an analytic symbol. The displayed one-half shift is vertically split; verify equations (1)-(3) against the PDF.",
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 180,
+            "line_start": 93,
+            "title": "Completion turns zeta into an entire critical-line-real function encoded by its nontrivial zeros",
+            "unit_id": "w1966546572_xi_completion_and_zero_data",
+            "unit_type": "representation_change_and_structural_background",
+            "why_material": "The section moves from the Dirichlet/Euler representations to the theta-Mellin completion xi, whose entire continuation, functional equation, critical-line reality, zero symmetries, and Hadamard product make it a more suitable operator symbol. The product representation exposes zeros as factor data for the subsequent field decomposition."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 92,
+              "line_start": 76,
+              "reason": "Related-work remarks and paper roadmap."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+        "spontaneous": {
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "spontaneous_reading": "The useful move is a reframing, not an operator identity: an undefined product of prime-indexed kinetic operators is abandoned in favor of one analytic symbol motivated by the Euler product. This replaces unusable factor-level notation with a candidate pseudodifferential operator whose zeros can later be discussed spectrally."
+        },
+        "directed": {
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "source_grounded_mathematics": "The article starts from p-adic kinetic factors p^□ and notes that their formal product over primes has no obvious mathematical meaning. The Euler product for ζ(s) motivates the symbols ζ(1/2+i□) and, in the Euclidean version, ζ(1/2+iΔ). It says the later decomposition into Klein-Gordon terms with masses from critical-line zeros is obtained under the Riemann hypothesis; a different spectrum is expected otherwise.",
+          "conceptual_reading": "A global analytic function is used as a compression of prime-indexed motivation. The shift to the critical line is chosen to expose zero data, but this makes the proposed spectral interpretation conditional on the zero geometry rather than evidence for that geometry.",
+          "representation_or_bridge": "The bridge is formal prime product → Euler-product analogy → a single zeta-valued Fourier symbol → proposed zero-derived spectrum. The Euler product motivates the symbol but does not define the original operator product.",
+          "boundary_or_failure": "The Euler product has its own domain of validity, while substituting □ into ζ requires a separate functional calculus and domain. Universality and adelic analogy do not prove physical naturalness, and the mass claim is explicitly RH-conditional.",
+          "uncertainty": "Low uncertainty about the reframing and conditionality; high uncertainty about operator meaning, normalization, and spectral interpretation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly presents prime-indexed operators, says their formal product has no obvious mathematical meaning, and uses the Euler product as motivation for proposing zeta of a shifted d'Alembertian.",
+          "It explicitly makes the later Klein-Gordon decomposition conditional on RH and says a different spectrum is expected otherwise.",
+          "The candidate correctly distinguishes motivational analogy from an operator identity and notes that the Euler product has a restricted domain."
+        ],
+        "inference": [
+          "Calling the zeta function a compression of prime-indexed motivation is a useful reframing, not an equality derived in the span.",
+          "Interpreting the one-half shift as chosen to expose zero data is consistent with the source's RH motivation but remains a design reading rather than a uniqueness argument."
+        ],
+        "unsupported_or_imported": [
+          "The representation chain calls the proposed operator a `Fourier symbol`, but the Fourier multiplier definition occurs only in the later assigned unit, not in this frozen span.",
+          "The Euler factors (1-p^{-s})^{-1} do not algebraically identify the undefined product of p^box operators with the proposed zeta operator; the candidate mostly states this, but the bridge wording should not blur it.",
+          "No spectrum, functional calculus, operator domain, or physical naturalness result is established here."
+        ],
+        "paraphrase_or_style_risk": [
+          "`Replace unusable factor-level notation with a global analytic object` risks a generic representation-exposes-structure template unless the missing algebraic link between the two products remains foregrounded."
+        ],
+        "context_or_ocr_risk": [
+          "The one-half shift is vertically split and exact sign or normalization in equations (1)-(3) requires page-image verification.",
+          "The span calls the object pseudodifferential without defining it; importing the later definition would violate the unit boundary."
+        ],
+        "missed_mechanism": [
+          "The critique-worthy mechanism is not merely product-to-function compression but a heuristic swap between two inequivalent prime-indexed expressions, followed by an independently required operator calculus."
+        ],
+        "revision_instructions": [
+          "Retain the formal-product obstruction, Euler-product motivation, and RH conditionality.",
+          "Replace `Fourier symbol` with `proposed pseudodifferential expression` and defer any operational definition to the later unit.",
+          "State explicitly that the Euler product motivates but neither defines nor approximates the original p^box product."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a compact historical/background statement of the modularity theorem and its implication for Fermat's Last Theorem, not a proof or a developed quantization mechanism.",
+      "line_end": 489,
+      "line_start": 477,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the exact weight-two normalization and Mellin-transform functional equation, neither of which is displayed in full. The extracted Fourier exponent may be missing the imaginary unit; verify against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage states the elliptic-curve/modular-form bridge in analytic terms: Fourier coefficients define a Dirichlet L-series, and holomorphic continuation plus a functional equation characterize its modular role. It situates L-functions as representation-independent carriers of arithmetic structure before operator substitution.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Mellin-transformed Dirichlet series certifies modular origin through continuation and functional equation",
+      "unit_artifact_relpath": "depth/units/w1966546572_modularity_as_l_function_certificate.txt",
+      "unit_bytes": 836,
+      "unit_id": "w1966546572_modularity_as_l_function_certificate",
+      "unit_sha256": "94b9919f6145cd0d126faf71e6974b5755b0250defacc90cd76ef3f73a248744",
+      "unit_type": "structural_bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_modularity_as_l_function_certificate.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 469,
+          "line_end": 476,
+          "text": "distributed about the critical line σ = 1/2. It is important to notice that unless χ is real the\nzeros will not necessary be symmetric about the real line. Therefore if we quantize the L-\nfunction by considering the pseudodifferential operator\n                                          1\n                                        L( + i✷, χ) ,\n                                          2\nthen we could avoid the appearance of tachyons and/or ghosts by choosing an appropriate\ncharacter χ.\n",
+          "sha256": "7b3e3f7315aa0bcc4873332e9d8235cda7bec672c42e3814b16a40bd5dc0b177"
+        },
+        "after": {
+          "line_start": 490,
+          "line_end": 497,
+          "text": "   Let E be an elliptic curve defined over Q, and L(s) = LK (s, E) be the L-function of E\nover the field K. The Birch and Swinnerton-Dyer conjecture asserts that\n\n                                       ords=1L(s) = r ,\n\n                                              10\n\nwhere r is the rank of the group E(K) of points of E defined over K. The quantum L-function\n",
+          "sha256": "499aa1a69f4c40124fd9d826c1ed4095417b5fa564bf436d68c0801f6b9c1d65"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Dirichlet, elliptic-curve, Artin, and automorphic L-functions",
+            "line_end": 526,
+            "line_start": 446,
+            "mathematical_role": "extends the symbol proposal, relates zero symmetries and vanishing order to mode structure, and then becomes speculative"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 489,
+          "line_start": 477,
+          "title": "A Mellin-transformed Dirichlet series certifies modular origin through continuation and functional equation",
+          "unit_id": "w1966546572_modularity_as_l_function_certificate",
+          "unit_type": "structural_bridge",
+          "why_material": "The passage states the elliptic-curve/modular-form bridge in analytic terms: Fourier coefficients define a Dirichlet L-series, and holomorphic continuation plus a functional equation characterize its modular role. It situates L-functions as representation-independent carriers of arithmetic structure before operator substitution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a compact historical/background statement of the modularity theorem and its implication for Fermat's Last Theorem, not a proof or a developed quantization mechanism.",
+          "representation_dependency": "Depends on the exact weight-two normalization and Mellin-transform functional equation, neither of which is displayed in full. The extracted Fourier exponent may be missing the imaginary unit; verify against the PDF.",
+          "unit_id": "w1966546572_modularity_as_l_function_certificate"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 476,
+            "line_start": 446,
+            "title": "Changing the L-function character changes zero symmetries and therefore the proposed mode pairing",
+            "unit_id": "w1966546572_character_symmetry_controls_mode_pairing",
+            "unit_type": "generalization_and_counterfactual",
+            "why_material": "For primitive Dirichlet characters the completed L-function again has an entire-product representation, but non-real characters need not have zeros symmetric about the real axis. The authors use this contrast to suggest that symbol choice can alter the paired spectrum and its ghost/tachyon interpretation."
+          },
+          {
+            "line_end": 500,
+            "line_start": 490,
+            "title": "An arithmetic vanishing order becomes the leading multiplicity of the substituted operator",
+            "unit_id": "w1966546572_vanishing_order_to_operator_multiplicity",
+            "unit_type": "speculative_translation",
+            "why_material": "The article pairs the Birch-Swinnerton-Dyer statement that the order of vanishing at one equals the elliptic-curve rank with the formal expansion of L(1+i box), in which the same order becomes the leading power of the differential operator. This is a concise example of translating analytic multiplicity into operator multiplicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modularity packages arithmetic data into an analytically continued L-function, while a zero of order r at a distinguished point formally becomes a leading operator power of order r after symbol substitution.",
+            "limit": "The relevant arithmetic statements include conjectural cases, and the formal operator series does not by itself yield observable states, masses, or cosmological constants.",
+            "parent_local_unit_ids": [
+              "w1966546572_modularity_as_l_function_certificate",
+              "w1966546572_vanishing_order_to_operator_multiplicity"
+            ],
+            "title": "Analytic multiplicities can carry arithmetic information into an operator expansion without validating the physical interpretation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_modularity_as_l_function_certificate",
+        "spontaneous": {
+          "unit_id": "w1966546572_modularity_as_l_function_certificate",
+          "spontaneous_reading": "The passage treats the L-function as the analytic carrier linking two representations of the same arithmetic object: Fourier coefficients of a weight-two modular form become a Dirichlet series, while continuation and a functional equation certify the modular structure associated with an elliptic curve."
+        },
+        "directed": {
+          "unit_id": "w1966546572_modularity_as_l_function_certificate",
+          "source_grounded_mathematics": "The text states the elliptic-curve/modular-form correspondence, writes a weight-two cusp form through Fourier coefficients a_n, and forms the Dirichlet series L(s,f)=Σa_n n^(−s). It says holomorphic continuation and a functional equation characterize the modular role and identifies the resulting L-series with that of the elliptic curve. It notes the semistable result of Wiles and Taylor and its implication for Fermat's Last Theorem.",
+          "conceptual_reading": "Fourier and Dirichlet expansions expose different operations on the same coefficients, while analytic continuation and the functional equation provide representation-independent structure. The L-function serves as a bridge object rather than merely another series.",
+          "representation_or_bridge": "The bridge is elliptic curve → modular cusp form → Fourier coefficients → Mellin/Dirichlet L-series → analytic continuation and functional equation.",
+          "boundary_or_failure": "This is compact historical background, not a proof or a developed quantization mechanism. Exact weight, Fourier exponent, Mellin normalization, and converse hypotheses are not fully displayed and need verification.",
+          "uncertainty": "Low uncertainty about the broad modularity bridge; moderate uncertainty about the source's compressed analytic characterization and exact formulas."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w1966546572_modularity_as_l_function_certificate",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states an elliptic-curve to weight-two cusp-form correspondence, uses the same coefficients in a Fourier expansion and a Dirichlet L-series, and mentions holomorphic continuation and a functional equation.",
+          "It identifies an elliptic-curve L-series and gives a compact historical statement about the semistable theorem and Fermat's Last Theorem.",
+          "The candidate correctly says this is background rather than a proof or quantization mechanism and flags the damaged Fourier exponent and missing normalization."
+        ],
+        "inference": [
+          "Treating the L-function as a bridge object between Fourier and Dirichlet representations is a sound conceptual reading of the shared coefficients.",
+          "Calling continuation and functional equation representation-independent structure is reasonable but does not supply the omitted converse theorem hypotheses."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that continuation and a functional equation `certify` modular structure is too strong for the compressed statement: conductor, gamma factors, growth conditions, normalization and exact converse hypotheses are absent.",
+          "The source's phrase `if and only if` is itself presented without the data needed to apply a converse theorem, so the candidate cannot turn it into a self-contained certificate.",
+          "No Mellin integral, exact functional equation, or full modularity theorem statement is available in the frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "`Representation-independent carrier` risks generic bridge language unless tied to the same coefficient sequence and the explicitly incomplete analytic conditions."
+        ],
+        "context_or_ocr_risk": [
+          "The Fourier exponential appears to have lost the imaginary unit, and weight, level, conductor, gamma normalization and functional equation are not fully displayed.",
+          "The very narrow historical span cannot support a proof-level or executable modularity criterion."
+        ],
+        "missed_mechanism": [
+          "The analysis should distinguish packaging the coefficients into an L-series from the much stronger converse problem of recognizing modular origin from analytic properties."
+        ],
+        "revision_instructions": [
+          "Keep the shared-coefficient Fourier-to-Dirichlet bridge and historical boundary.",
+          "Replace `certify` with `the source presents as a compressed criterion` and state that the omitted converse hypotheses prevent standalone use.",
+          "Do not call the L-function representation-independent without naming the normalization and analytic data that are missing."
+        ]
+      }
+    }
+  ]
+}

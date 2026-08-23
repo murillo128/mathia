@@ -1,0 +1,432 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1988856634",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1988856634_b18de98d_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Approximate functional equations permit different complementary lengths, so a valid long-polynomial moment formula must combine to the same zeta moment for every allowed split; the sixth-moment weight passes this invariance test.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1988856634_v2_u02",
+          "openalex_w1988856634_v2_u04",
+          "openalex_w1988856634_v2_u12",
+          "openalex_w1988856634_v2_u13"
+        ],
+        "proposed_limit": "The argument remains conditional on conjectural additive-divisor asymptotics and endpoint extrapolation.",
+        "source_id": "openalex_w1988856634",
+        "synthesis_id": "riemann_v2_within_6835e7276c517156875e8ddc",
+        "title": "High moments become a consistency problem across polynomial factorizations"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the reason ordinary approximate-functional-equation error estimates fail for k at least three.",
+          "line_end": 177,
+          "line_start": 77,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The stationary phase and length constraint depend on exact displayed normalizations.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Stationary-phase analysis suggests the cross term is lower order, leading to a mean-square decomposition whose polynomial lengths multiply to the conductor scale and whose known validity boundary exposes the central extrapolation.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two complementary Dirichlet polynomials are conjectured to carry the full zeta moment",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u02.txt",
+          "unit_bytes": 5898,
+          "unit_id": "openalex_w1988856634_v2_u02",
+          "unit_sha256": "448230a1df7a5b5b025a0ce46c08576f9e6bde3427f950f9a7a529bee0b5e613",
+          "unit_type": "approximate-functional-equation-splitting-conjecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is decomposition by functional duality: the functional equation assigns complementary ranges to two finite coefficient models, and the moment problem is reduced to controlling each model plus their interaction.",
+            "nonparaphrase_operation": "The bridge is the pair of Dirichlet polynomials linked by χ(s)^k and the length constraint MN at conductor scale; stationary phase is the mechanism proposed to decouple them in mean square.",
+            "quality_reason": "The span explicitly gives the two Dirichlet polynomials, the conductor-scale relation between their lengths, the mixed term, and the stationary-phase motivation for neglecting it. It directly states the low-k validity cases and that known error bounds and mixed-term control fail for k at least three. The phrase 'formal split is extrapolated to full length' is interpretive wording, but the extrapolation from a sub-conductor product to the conductor-scale product is explicitly present. No claim that stationary phase actually proves decoupling should be inferred; the output correctly avoids that claim. The spontaneous reading is compact and mechanism-specific rather than a generic representation-change template.",
+            "source_support": "For zeta(s)^k the source writes an approximate functional equation with polynomials D_{k,N} and D_{k,M}, MN approximately (t/2π)^k, plus an error. On the critical line, stationary-phase reasoning suggests the mixed integral is lower order, leading to Conjecture 2 that the zeta moment is the sum of the two polynomial mean squares.",
+            "speculation_status": "For k at least three, known error estimates are too large and the cross term is not proved negligible. The move from MN below T^{k-ε} to MN at T^k is explicitly an extrapolation. Conjecture 2 is proved only in the low-k/short-length regimes described by the source. Formula normalizations and the stationary point are PDF-sensitive, so the semantic split is safer than exact transcription. Describing the construction as decomposition by functional duality is a reasonable conceptual reading of the functional equation and complementary length relation. Exact chi-factor, stationary point, and length normalization are formula-sensitive, as the output notes. The span itself supplies enough context to identify the conjecture and its proof burden."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the proved bound on the local main-term coefficient and the source's warning that endpoint extrapolation is still needed.",
+          "line_end": 390,
+          "line_start": 308,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Definitions of f_k, P_k, G_k, and gamma_k are densely displayed and require scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Conjecture 3 specifies a smooth shifted-divisor main term and error, while Conjecture 4 turns that input into an explicit length-dependent moment weight w_k, creating a falsifiable bridge from additive correlations to zeta moments.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A delta-method main term plus square-root error predicts long divisor-polynomial moments",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u04.txt",
+          "unit_bytes": 4329,
+          "unit_id": "openalex_w1988856634_v2_u04",
+          "unit_sha256": "6e4ab6cea15e75a0cd12161d098f11fd64fb5eebde3a7806e4c5ad590caeb29a",
+          "unit_type": "additive-divisor-and-long-mean-conjectures",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a compositional conjecture: local additive correlations are summarized into m'_k, and a long-polynomial theorem transports that summary to a global moment law. The explicit η-dependence permits consistency checks at different representations of the same zeta moment.",
+            "nonparaphrase_operation": "The bridge chain is shifted divisor sum → divisor-indexed density f_k → contour residue P_k → length weight w_k. It converts arithmetic in the shift h into a controllable mean-square parameter.",
+            "quality_reason": "The output accurately separates the conjectured shifted-divisor main term and square-root error from the proved bound on f_k. The span directly carries the conjectural input into an explicit eta-dependent mean-square weight w_k and states that the eta endpoint still requires extrapolation. Calling the package 'falsifiable' is an inference from its explicit formulas and later consistency uses, not a word used by the source. The output does not incorrectly present the proved f_k bound as proving Conjecture 3. The bridge chain is formula-specific and avoids the generic claim that a representation merely 'exposes structure.'",
+            "source_support": "Conjecture 3 writes D_k(x,h) as m_k(x,h)+O(x^{1/2+ε}) uniformly for h up to x^{1/2}, with m'_k assembled from f_k(x,d) over divisors d of h and P_k/G_k contour expressions. Conjecture 4 then predicts the mean square of D_{k,N} for N=T^{1+η} through a stated weight w_k(η).",
+            "speculation_status": "The square-root error, its uniformity, and the endpoint η=1 are not proved. The stated bound for f_k is proved, but it does not supply the whole conjectural error package. The epistemic split between a proved local bound and Conjectures 3 and 4 is essential. Definitions of f_k, P_k, G_k, and γ_k are extraction-sensitive and need the retained scan for exact use. Treating the sequence from shifted sums through f_k, P_k, and w_k as a compositional bridge is a reasonable mechanism-level interpretation. The definitions of f_k, P_k, G_k, and gamma_k are dense and extraction-sensitive, which the output explicitly records. The unit includes enough conjecture statements to support its epistemic distinctions."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the preceding unit at the generating-function insertion point because that representation change is shared.",
+          "line_end": 1518,
+          "line_start": 1313,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependency; residue contours, multinomial coefficients, and the polynomial w_k require PDF checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The generating function is inserted into the fractional-part integral, leading Laurent terms are isolated, changes of variables reduce the result to residues gamma_k(n), and diagonal plus off-diagonal pieces assemble into Conjecture 4.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            21,
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Laurent extraction turns the surviving off diagonal into the explicit weight w_k(eta)",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u12.txt",
+          "unit_bytes": 10382,
+          "unit_id": "openalex_w1988856634_v2_u12",
+          "unit_sha256": "750bc1e1079d7f049c0b6ba42917d579df92b5e05d38f1de266070e1b5fb1da9",
+          "unit_type": "contour-to-length-polynomial-evaluation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Laurent coefficients serve as sufficient statistics for the main asymptotic. The length parameter becomes a coordinate on competing diagonal/off-diagonal contributions rather than merely a cutoff.",
+            "nonparaphrase_operation": "The bridge runs from the three-variable Euler product through its leading poles to contour residues γ_k(n), and finally to the finite polynomial w_k(η).",
+            "quality_reason": "The span inserts F_k into the remaining integral, keeps leading Laurent terms, rescales contours, introduces eta, extracts gamma_k residues, and derives w_k. It directly combines diagonal and off-diagonal contributions into Conjecture 4. Calling Laurent coefficients 'sufficient statistics' must remain local to the conjectural leading asymptotic; the source does not prove sufficiency after discarded terms. No exact computation should be inferred from the extracted formulas without checking contours, signs, and multinomial coefficients. The output identifies two concrete compressions and their output polynomial, so it is mechanism-specific.",
+            "source_support": "The source inserts F_k into the fractional-part integral, retains leading Laurent terms, rescales contour variables, and writes N=T^{1+η}. Expanding the resulting kernel yields residues γ_k(n); integrating in the scale variable and adding diagonal and off-diagonal differences produces the explicit w_k(η) and Conjecture 4.",
+            "speculation_status": "Discarding nonleading Laurent terms and the preceding correlation substitutions require error control not supplied in this unit. The conclusion remains the conjectural mean-value formula. Residue contours, multinomial coefficients, and signs in w_k are highly extraction-sensitive; semantic use is supported, exact computation requires checking the PDF. Interpreting the leading Laurent coefficients as main-term summary data and eta as tracking diagonal/off-diagonal trade is reasonable within this derivation. The unit is highly formula-dependent and overlaps the preceding representation-change point, but it retains the entire residue derivation. Control of nonleading Laurent terms is absent rather than lost at the unit boundary."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the alternative finite expression for a_k used in both moment constants.",
+          "line_end": 1586,
+          "line_start": 1520,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The explicit polynomials are extraction-sensitive but legible enough for semantic use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The identity w_3(eta)+w_3(1-eta)=42 makes every permissible approximate-functional-equation split agree, while k=4 admits only the symmetric endpoint and produces 24024, providing internal checks stronger than a single fitted length.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Complementary polynomial lengths erase eta from the sixth moment but force the eighth-moment constant",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u13.txt",
+          "unit_bytes": 3698,
+          "unit_id": "openalex_w1988856634_v2_u13",
+          "unit_sha256": "4f8f19659f8373827f4794a4743a5323b33266ad0e3fa532fa54936fb25de55c",
+          "unit_type": "split-invariance-consistency-check",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "An arbitrary representation choice should not change the represented zeta moment. Independence from η is therefore an internal coherence condition that strongly constrains the heuristic.",
+            "nonparaphrase_operation": "The bridge is complementary polynomial length under the approximate functional equation, with w_k encoding each side's contribution.",
+            "quality_reason": "The source explicitly computes the complementary sixth-moment weights and their eta-independent sum 42. It also states that the eighth-moment construction forces the symmetric split and yields two equal contributions totaling 24024. Consistency does not prove either conjecture; the output explicitly states this. The suggested possibilities for correlated errors are adversarial speculation, not source content, but they are clearly used as limits rather than asserted facts. The output performs a concrete invariance analysis rather than merely celebrating agreement.",
+            "source_support": "Using the alternate finite Euler-product form of a_k, the source applies Conjectures 2 and 4 to lengths T^{1+η} and T^{2-η} for the sixth moment. It computes w_3(η)+w_3(1-η)=42 identically; for k=4, the allowed construction forces η=1 and w_4(1)=12012, so the two equal pieces give 24024.",
+            "speculation_status": "This consistency does not prove Conjectures 2 or 4; correlated errors could preserve the identity or change both pieces. For k=4 there is no interval of split choices, so the check is weaker. The polynomial identities are explicit in the source but extraction-sensitive. Their evidential force is conditional on the underlying conjectural decomposition. Treating invariance under the permissible sixth-moment split as an internal consistency condition is a reasonable interpretation of the authors' claim that it is compelling evidence. The polynomial coefficients and finite Euler-product identity are extraction-sensitive. For k=4 there is no family of allowed splits, so the output correctly calls that check weaker."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_30d87f516b48caab1d551240d77796b35c99ae51cb2846d2e1f4948a40d6243a",
+        "dossier_sha256": "5ee2efbe9b9c0d2d67900efe298537ef6e6ac93c886c57bda5ced7aa22454c04"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "When the conjectured shifted-divisor error is pushed beyond its natural length range, the resulting k=2 moment exceeds a theorem, proving that apparently lower-order correlation errors collectively carry an omitted main term.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1988856634_v2_u03",
+          "openalex_w1988856634_v2_u04",
+          "openalex_w1988856634_v2_u05"
+        ],
+        "proposed_limit": "The paper diagnoses but does not compute that additional main term.",
+        "source_id": "openalex_w1988856634",
+        "synthesis_id": "riemann_v2_within_b5ace7702b4a3fb8e449ada3",
+        "title": "A failed extrapolation localizes a hidden main term"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the expected error uniformity and its translation into an admissible polynomial length.",
+          "line_end": 302,
+          "line_start": 183,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Length exponents and correlation ranges are formula-dependent but prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The Montgomery-Vaughan theorem explains the short-polynomial regime; beyond length T, the problem becomes estimating coefficient sums and additive correlations, reducing high zeta moments to an unproved additive divisor problem.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Long Dirichlet-polynomial moments are controlled by shifted coefficient correlations, not diagonal orthogonality alone",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u03.txt",
+          "unit_bytes": 5984,
+          "unit_id": "openalex_w1988856634_v2_u03",
+          "unit_sha256": "ff84e497cdbfaaf00cf8b58a6b563cd1314dd7e62b7c8149300c536d327f5b62",
+          "unit_type": "long-polynomial-bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit exposes a regime change. Diagonal orthogonality compresses short means, whereas long means retain additive structure and require a new invariant: uniform shifted correlation.",
+            "nonparaphrase_operation": "The bridge objects are A(x,h)=Σ_{n≤x}a(n)a(n+h), their smooth main terms, and the exponents governing errors and shift range; these translate additive-divisor information into an admissible polynomial length.",
+            "quality_reason": "The Montgomery-Vaughan formula and its loss of usefulness when N exceeds T are directly in the span. The source explicitly replaces diagonal coefficient control by A(x), shifted correlations A(x,h), error exponents, and shift-uniformity, and says the required d_k correlations are unknown for k at least three. The term 'new invariant' is conceptual terminology rather than source language, but it refers specifically to the displayed uniform shifted correlation and is not an unsupported analogy. The output performs a real compression by identifying the changed controlling object; it is not merely a friendlier restatement.",
+            "source_support": "Montgomery-Vaughan gives the short-polynomial mean square from the weighted coefficient square sum. When N exceeds T the error dominates, and Goldston-Gonek's framework instead requires asymptotics for A(x) and A(x,h), with uniform error control; for a(n)=d_k(n), the needed additive divisor asymptotics are unknown for k at least three.",
+            "speculation_status": "Even an asymptotic for Σ d_3(n)d_3(n+1) is stated as unknown. Better average error cancellation could extend lengths, but it is an additional input rather than a consequence of the mean-value theorem. The short-polynomial statements are standard results; the high-k extension depends on unproved additive-divisor estimates. Several exponent ranges are formula-dependent but the bottleneck is explicit in prose. Calling this a regime change from coefficient norms to additive correlations is a precise reasonable inference from the displayed mean-value discussion. Some admissible-length exponents are display-dependent, but the bottleneck and its unproved status are explicit in prose. The historical assertion that even the unit-shift ternary divisor asymptotic was unknown is source-dated and should not be silently updated into a present-day claim."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the proved bound on the local main-term coefficient and the source's warning that endpoint extrapolation is still needed.",
+          "line_end": 390,
+          "line_start": 308,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Definitions of f_k, P_k, G_k, and gamma_k are densely displayed and require scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Conjecture 3 specifies a smooth shifted-divisor main term and error, while Conjecture 4 turns that input into an explicit length-dependent moment weight w_k, creating a falsifiable bridge from additive correlations to zeta moments.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A delta-method main term plus square-root error predicts long divisor-polynomial moments",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u04.txt",
+          "unit_bytes": 4329,
+          "unit_id": "openalex_w1988856634_v2_u04",
+          "unit_sha256": "6e4ab6cea15e75a0cd12161d098f11fd64fb5eebde3a7806e4c5ad590caeb29a",
+          "unit_type": "additive-divisor-and-long-mean-conjectures",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a compositional conjecture: local additive correlations are summarized into m'_k, and a long-polynomial theorem transports that summary to a global moment law. The explicit η-dependence permits consistency checks at different representations of the same zeta moment.",
+            "nonparaphrase_operation": "The bridge chain is shifted divisor sum → divisor-indexed density f_k → contour residue P_k → length weight w_k. It converts arithmetic in the shift h into a controllable mean-square parameter.",
+            "quality_reason": "The output accurately separates the conjectured shifted-divisor main term and square-root error from the proved bound on f_k. The span directly carries the conjectural input into an explicit eta-dependent mean-square weight w_k and states that the eta endpoint still requires extrapolation. Calling the package 'falsifiable' is an inference from its explicit formulas and later consistency uses, not a word used by the source. The output does not incorrectly present the proved f_k bound as proving Conjecture 3. The bridge chain is formula-specific and avoids the generic claim that a representation merely 'exposes structure.'",
+            "source_support": "Conjecture 3 writes D_k(x,h) as m_k(x,h)+O(x^{1/2+ε}) uniformly for h up to x^{1/2}, with m'_k assembled from f_k(x,d) over divisors d of h and P_k/G_k contour expressions. Conjecture 4 then predicts the mean square of D_{k,N} for N=T^{1+η} through a stated weight w_k(η).",
+            "speculation_status": "The square-root error, its uniformity, and the endpoint η=1 are not proved. The stated bound for f_k is proved, but it does not supply the whole conjectural error package. The epistemic split between a proved local bound and Conjectures 3 and 4 is essential. Definitions of f_k, P_k, G_k, and γ_k are extraction-sensitive and need the retained scan for exact use. Treating the sequence from shifted sums through f_k, P_k, and w_k as a compositional bridge is a reasonable mechanism-level interpretation. The definitions of f_k, P_k, G_k, and gamma_k are dense and extraction-sensitive, which the output explicitly records. The unit includes enough conjecture statements to support its epistemic distinctions."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the sixth-moment length flexibility and the forced symmetric eighth-moment split.",
+          "line_end": 443,
+          "line_start": 391,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Polynomial weights and constants are formula-sensitive; the contradiction is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The k=2 specialization contradicts Ingham if the conjectured error remains negligible past eta=1, so the paper diagnoses an accumulated error main term and restricts its high-moment construction to k at most four.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Beyond length T squared, additive-divisor errors must create a new main term",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u05.txt",
+          "unit_bytes": 3243,
+          "unit_id": "openalex_w1988856634_v2_u05",
+          "unit_sha256": "1c03cc2abf53b4ec9c595854ef3eaf4cafb17ca8e8840445fdb2f6d74210f576",
+          "unit_type": "heuristic-failure-boundary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The useful move is calibration against a solved special case. Failure identifies the missing structural contribution and locates the valid regime rather than merely lowering confidence in every component.",
+            "nonparaphrase_operation": "The bridge is w_2(η): it transports a local correlation hypothesis to an observable moment constant, where Ingham's theorem supplies an exact boundary check.",
+            "quality_reason": "The source explicitly computes that w_2(eta) exceeds the known fourth-moment constant beyond eta=1 and uses the contradiction to locate failure among the assumptions. It directly says the authors retain the approximate-functional-equation conditions, attribute failure to accumulated shifted-divisor errors, and infer a new main term. The source does not derive the mysterious main term, and the output correctly refuses to supply a mechanism for it. Attributing failure uniquely to Conjecture 3 is the authors' stated belief rather than a logical consequence; the output marks this distinction. The analysis adds non-paraphrase value by identifying solved-case calibration as a method for locating a validity boundary.",
+            "source_support": "For k=2, the polynomial w_2(η) exceeds 2 when η>1, so Conjectures 2, 3, and the length relation would contradict Ingham if the shifted-divisor error remained negligible there. The authors retain the approximate-functional-equation split and conclude that the Conjecture 3 error accumulates; the N≤T^2 boundary then limits their construction to k≤4.",
+            "speculation_status": "The source does not derive the mysterious new main term; it infers its necessity from incompatibility. Sixth- and eighth-moment conclusions still depend on endpoint extrapolation and Conjecture 2. The contradiction with the known fourth moment is firm conditional reasoning, while the attribution of failure specifically to Conjecture 3 reflects the authors' stated belief. Exact polynomial coefficients are formula-sensitive. Characterizing the known fourth moment as an adversarial calibration is a sound conceptual interpretation of the source's conditional contradiction. Exact coefficients of w_2 are formula-sensitive but legible enough for the qualitative contradiction. The span contains the relevant Ingham comparison and does not require adjacent context for the logic."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_30d87f516b48caab1d551240d77796b35c99ae51cb2846d2e1f4948a40d6243a",
+        "dossier_sha256": "5ee2efbe9b9c0d2d67900efe298537ef6e6ac93c886c57bda5ced7aa22454c04"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The arithmetic Euler product suppresses moments at the k-squared log-log-k scale, while the universal factor g_k restores part of that growth; their balance determines the predicted maximal order of zeta.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1988856634_v2_u06",
+          "openalex_w1988856634_v2_u07",
+          "openalex_w1988856634_v2_u14"
+        ],
+        "proposed_limit": "Uniformity for k growing with T is assumed, not established.",
+        "source_id": "openalex_w1988856634",
+        "synthesis_id": "riemann_v2_within_77e4bfb6f97fd1417fd3d451",
+        "title": "Arithmetic and universal growth affect extremes in different ways"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes integral and nonintegral moment evidence and the meromorphic-interpolation motivation.",
+          "line_end": 556,
+          "line_start": 444,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Large-k asymptotics and normalizations are display-dependent but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Known lower-bound methods, the long-polynomial conjecture, and the expectation that diagonals dominate yield broad order-two growth bounds for g_k; the Keating-Snaith product gives a sharper asymptotic lying within them.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Diagonal size brackets the unknown moment constant and random matrices choose the intermediate scale",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u06.txt",
+          "unit_bytes": 6511,
+          "unit_id": "openalex_w1988856634_v2_u06",
+          "unit_sha256": "7ac5979f6fb6b40cff94229e141b6e24ba03f73c672c653852b0f4cb3b6e7f62",
+          "unit_type": "moment-constant-growth-analysis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Promoting k to a variable exposes regularity invisible in individual moments. The diagonal is used as a coarse comparison object, and the random-matrix formula acts as an interpolation principle for the sequence of constants.",
+            "nonparaphrase_operation": "The normalized factor g_k separates universal gamma and logarithmic growth from arithmetic a_k; auxiliary moments, long Dirichlet polynomials, and a Barnes-G limit provide three routes to constrain it.",
+            "quality_reason": "The span defines g_k(T), inventories conditional and unconditional finite-k lower bounds, and discusses integer and nonintegral k. It gives heuristic order-two bounds from long-polynomial/diagonal reasoning and the sharper Keating-Snaith large-k asymptotic. Calling the random-matrix expression an 'interpolation principle' is conceptual shorthand; meromorphic interpolation is only proposed conditionally, not established. The diagonal comparison is heuristic and even has a nonstandard direction here; the output correctly labels it as such. The separation among a_k, gamma/logarithmic growth, and g_k is mathematically specific rather than generic explanatory prose.",
+            "source_support": "The source normalizes I_k(T) by a_k T log^{k^2}T/Γ(1+k^2) to define g_k(T), reviews unconditional and conditional lower bounds, and uses Conjectures 2 and 4 plus diagonal comparisons to suggest order-two lower and upper growth bounds for g_k. The Keating-Snaith product gives a sharper large-k asymptotic between those bounds.",
+            "speculation_status": "Existence or meromorphic continuation of g_k is not established, and several lower bounds rely on Lindelöf or extrapolating polynomial lengths. The claim that the diagonal bounds the entire long mean is heuristic. Known finite-k bounds, conjectural long-polynomial implications, and the Keating-Snaith asymptotic have different statuses. Exact exponents and normalizations should be checked in the PDF. Viewing k as a variable that exposes structure hidden in isolated moment constants is a reasonable interpretation supported by the source's explicit large-k discussion. Several normalization and exponent formulas require PDF checking. The unit is broad but contains the statuses needed to distinguish known bounds, conjectural long-polynomial consequences, and random-matrix prediction."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the proposition for log a_k and analogous implications for S(T) and L(1,chi).",
+          "line_end": 693,
+          "line_start": 562,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Optimization constants and the refined Bessel-integral expansion are formula-sensitive; the qualitative dichotomy is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Optimizing the elementary moment lower bound using asymptotics for the arithmetic factor shows that exponential-in-k and random-matrix-scale g_k lead to different maximal-order regimes, reversing the usual preference for known lower bounds.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The growth law of moment constants determines which maximal-order bound should be sharp",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u07.txt",
+          "unit_bytes": 6707,
+          "unit_id": "openalex_w1988856634_v2_u07",
+          "unit_sha256": "e82df0f614beb5ba03844021ee04ed6693ce40a73b46234789d8bd0b45567ed5",
+          "unit_type": "moments-to-extreme-values-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a transfer from distribution tails to extremes with the moment order as a tunable scale. Large-k asymptotics are not secondary constants: they select which rare events the moment inequality can detect.",
+            "nonparaphrase_operation": "The bridge objects are the arithmetic factor a_k, the normalized moment constant g_k, and optimization over k in the moment-to-maximum inequality.",
+            "quality_reason": "The moment-to-maximum inequality, the proposition for log a_k, and the two optimizations under different assumed g_k growth laws are all in the span. The source explicitly extends the same conditional comparison to S(T), zeta on the one-line, and L(1,chi). The conclusions require moment asymptotics uniform for growing k; the output correctly identifies that this is far beyond the fixed-k conjectures rather than silently importing it. The analogous conclusions for the other functions are source heuristics, not proved transfers. The output identifies the actual tunable parameter and competing scales, so it does more than paraphrase the displayed lower bound.",
+            "source_support": "The source combines m_T≥(T^{-1}I_k(T))^{1/(2k)} with an asymptotic for log a_k and an assumed lower form for g_k. Optimization gives a square-root exponential regime when an exponential-in-k-squared contribution is present, but a log-T/log-log-T exponential regime for Keating-Snaith-type growth; analogous consequences are proposed for S(T), zeta on the 1-line, and L(1,χ).",
+            "speculation_status": "The transfer requires moment asymptotics uniform for k growing roughly as far as log T, far beyond the fixed-k conjectures stated earlier. The analogous conclusions do not follow without that uniformity. The optimization is conditional on assumed growth and uniformity. The qualitative dichotomy is prose-stable, while constants and the Bessel-integral refinement are formula-sensitive. Saying the growth class of g_k selects which rare events the moment bound detects is a reasonable interpretation of optimization over k. Optimization constants and the refined Bessel formula are extraction-sensitive, while the qualitative dichotomy is prose-supported. No important boundary context is lost in the chosen span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains both upper and lower product comparisons.",
+          "line_end": 1739,
+          "line_start": 1588,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "OCR degrades several exponents; the cutoff mechanism is clear, but exact inequalities need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Small primes supply the dominant Mertens factor, while elementary binomial bounds show the large-prime tail contributes only o(k squared) logarithmically, proving log a_k equals minus k squared times log of 2 e-gamma log k to leading order.",
+          "source_id": "openalex_w1988856634",
+          "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+          "source_page_markers_inside_unit": [
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Splitting primes at k squared gives matching upper and lower asymptotics for the arithmetic factor",
+          "unit_artifact_relpath": "depth/units/openalex_w1988856634_v2_u14.txt",
+          "unit_bytes": 7837,
+          "unit_id": "openalex_w1988856634_v2_u14",
+          "unit_sha256": "f3303e7fec4a296f622bd91255f353b6c2a0b1fc3d03b5cbcb63fd94ad0817bc",
+          "unit_type": "arithmetic-factor-asymptotic-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1988856634_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The source's chosen split at primes up to or above 2k squared turns the Euler product into a leading block and a controlled remainder. Mertens' theorem gives matching leading behavior for the small-prime block, while elementary factor bounds reduce the large-prime lower estimate to a convergent p^-2 tail whose logarithmic cost is o(k squared); the upper estimate is at most 1. Thus the tail cannot change the proved leading logarithmic asymptotic for a_k. This identifies the role of each prime range in this Euler product without claiming that the threshold is optimal or that the mechanism generalizes automatically.",
+            "nonparaphrase_operation": "Recast the proof as an error-budget decomposition tied to its actual inequalities: the small-prime block fixes the main logarithmic scale, and the p^-2 tail calculation certifies that the omitted block is subleading. This explains what the prime-by-prime representation gains while treating 2k squared only as the threshold used by the source to obtain matching bounds, not as an optimized balance point.",
+            "quality_reason": "Accepted after bounded revision: the full proof span contains both product comparisons, the Mertens contribution, and the concrete tail lower-bound mechanism. The unsupported cutoff-optimization story was removed, the conclusion is limited to the leading asymptotic, and OCR risk is explicitly bounded.",
+            "source_support": "The proof writes a_k as the product of factors over primes at most 2k squared and over primes greater than 2k squared. It applies Mertens' product estimate to bound the first part above and below. For the tail it uses a binomial-coefficient comparison for the upper bound and (1-x)^n at each prime, followed by a p^-2 tail estimate, for the lower bound. The resulting upper and lower bounds match at the stated leading scale, yielding a_k=(e^-gamma/(2 log k))^(k squared) times e^(o(k squared)).",
+            "speculation_status": "The leading asymptotic is proved in the span, but no refined lower-order expansion or optimality of the cutoff is established. Several displayed exponents are OCR-degraded, so exact quantitative transcription beyond the clearly stated conclusion requires the retained scan."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_30d87f516b48caab1d551240d77796b35c99ae51cb2846d2e1f4948a40d6243a",
+        "dossier_sha256": "5ee2efbe9b9c0d2d67900efe298537ef6e6ac93c886c57bda5ced7aa22454c04"
+      }
+    }
+  ]
+}

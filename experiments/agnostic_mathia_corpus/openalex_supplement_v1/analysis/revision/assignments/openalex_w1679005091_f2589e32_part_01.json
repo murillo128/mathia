@@ -1,0 +1,90 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_point_object_faithfulness_test": {
+      "analysis_id": "agnostic_oa_generation_4234419bd30a28210dd4a6e17b8f3d1f2dadb9ae51de1188e6ccdea9ce9f18da",
+      "boundary_or_failure": "Boundary: the equivalence criterion concerns a kernel-represented functor between the stated smooth varieties and uses closed-point skyscraper sheaves; the later noncommutative-moduli construction is an expectation, not a consequence proved here. Representation dependence: the probes and their tests are formulated in homological grading.",
+      "interpretation": "Inference: a canonical family of atomic objects can act as a diagnostic basis for a global mapping property: separation of distinct probes checks that the functor does not collapse points, while controlled self-interaction checks that each probe retains its local homological shape.",
+      "nonparaphrase_operation": "Reusable operation: choose an intrinsically meaningful probe family, test pairwise separation and prescribed self-behavior on that family, and promote those local tests to a global faithfulness conclusion only when an explicit criterion licenses the promotion.",
+      "source_support": "Source fact: the stated if-and-only-if criterion tests full faithfulness by homological orthogonality of images of distinct closed-point skyscraper sheaves together with specified self-Hom and degree-amplitude conditions. The passage then presents moduli of pairwise orthogonal objects as a principle motivating a fully faithful module-category embedding and merely indicates a differential-graded extension without orthogonality.",
+      "uncertainty": "Uncertainty: normalized subscripts and degree-range notation are damaged, so the exact symbolic conditions are intentionally not reproduced; the broader moduli and differential-graded claims remain prospective.",
+      "unit_id": "agnostic_oa_point_object_faithfulness_test"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_point_object_faithfulness_test": {
+      "critic_sha256": "6be8a762ee27d39f6a117fd1e042d62d419cc51edcbd769f26b1b3d5044bf432",
+      "generation_sha256": "58131a27e9978d578936fb0d0281e2f97f4db91017c83e92d3b2fe222650ec11"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_point_object_faithfulness_test": {
+      "analysis_id": "agnostic_oa_critic_fae822b4a60b987ff67bb79e3cc8fdde28cfa4bdc2cbd52645b7e6a6c3f15b13",
+      "context_risk": "OCR displacement affects the notation for the allowed degree interval, but the formula still clearly states vanishing for distinct points in every degree, scalar degree-zero endomorphisms, and vanishing self-Homs outside the interval; quarantine is unwarranted.",
+      "decision": "revise",
+      "faithfulness": "The candidate correctly presents the conditions as an if-and-only-if full-faithfulness test on closed-point skyscraper sheaves and correctly separates that theorem from the subsequent expected noncommutative-moduli principle.",
+      "missed_mechanism": "The candidate blurs the criterion's asymmetric self-test: it fixes Hom in degree zero and excludes self-Homs outside degrees zero through dim M, but it does not prescribe the positive self-Ext groups inside that interval or prove preservation of a complete local homological shape.",
+      "paraphrase_risk": "Low: reducing a global mapping property to licensed tests on a canonical probe family is a substantive non-paraphrase operation, provided the self-test is stated precisely.",
+      "revision_instructions": "Replace 'retains its local homological shape' and 'prescribed self-behavior' with 'has scalar degree-zero endomorphisms and no self-Homs outside the allowed degree range'; explicitly avoid implying that all in-range self-Ext groups are determined, while retaining the expectation status of the moduli discussion.",
+      "unit_id": "agnostic_oa_point_object_faithfulness_test",
+      "unsupported_or_imported": "The phrases 'retains its local homological shape' and 'prescribed self-behavior' overstate the span: the theorem supplies simplicity and an Ext-amplitude bound, not an identification of the full self-Ext profile with that of a point."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_point_object_faithfulness_test": "agnostic_oa_revision_4f534890689bcbc25f421231ebf093fb4276974afd9233ef228925dabdd80515"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "493891171718d4df5e6cbe974ae6716e5d75433d7e6cad041d6a1cb38c56fcb9",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w1679005091_f2589e32_part_01.jsonl",
+  "source_id": "openalex_w1679005091",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_point_object_faithfulness_test.txt",
+      "artifact_bytes": 1259,
+      "artifact_relpath": "depth/units/agnostic_oa_point_object_faithfulness_test.txt",
+      "artifact_sha256": "69f77fcd8c7225f01e24f8b45c39c06502767d47cd641c80842c30660b3edf71",
+      "content_sha256": "b39c5fc8736eb5bc1c56cb71a728f0201307d0065763c3f2609f76166c2f5806",
+      "context_note": "Theorem 3.3 gives the iff criterion under its stated hypotheses. The subsequent claim about moduli spaces with sheaves of noncommutative algebras is called an important principle and an expectation; the DG extension is only indicated. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_serre_reconstruction",
+            "agnostic_oa_functor_kernel_representation",
+            "agnostic_oa_point_object_faithfulness_test",
+            "agnostic_oa_categorical_desingularization"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Canonicality is operationalized through intrinsic point recognition, uniqueness of a functor kernel, a spanning-family criterion, and a conjectural minimal-resolution comparison by embeddings. The last is explicitly not established, so the source strengthens both positive tests and proof-status discipline for universal-property probes. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1679005091",
+      "line_end": 204,
+      "line_start": 179,
+      "representation_dependency": "Extraction limit: degree ranges and point subscripts are OCR-damaged in places, so the exact Ext conditions require typeset checking. Representation limit: the test uses closed-point skyscraper sheaves and a functor already represented by a kernel. Scope limit: the criterion assumes the stated smooth varieties and derived setting; the broader noncommutative moduli construction is not proved by the criterion and loss of orthogonality requires additional DG structure.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, cited underlying paper, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "Instead of comparing every pair of objects, the source tests a kernel functor on skyscraper sheaves of closed points: distinct points must map to homologically orthogonal objects, while each image must have the prescribed self-Hom and Ext amplitude. This compresses a global functor property into pairwise tests on a canonical family and motivates constructing embeddings from moduli of orthogonal objects.",
+      "source_id": "openalex_w1679005091",
+      "source_normalized_sha256": "202995498141ba09fe25d8b6f4e364f4cd5368bd727e8cfa37e520e488f98c26",
+      "title": "Test full faithfulness on a spanning family of point objects",
+      "unit_id": "agnostic_oa_point_object_faithfulness_test",
+      "unit_type": "local-to-global-criterion"
+    }
+  ]
+}

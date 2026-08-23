@@ -1,0 +1,91 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_filtered_functorial_persistence": {
+      "analysis_id": "agnostic_oa_generation_85a5250ecdcd5a4678c227835d4eaec48b5c51654069d10b4f1f9cc6f00ff7be",
+      "boundary_or_failure": "The construction in the artifact uses a finite, totally ordered filtration by inclusions and homology over a field; it does not by itself prove recovery of an underlying space or robustness to perturbations, and a single-scale snapshot cannot supply the cross-scale relations being retained.",
+      "interpretation": "Persistent homology is best understood here as coherence across scale, not as a collection of unrelated homology computations. The induced maps identify which information can be transported between stages, and functorial composition makes transport through intermediate stages agree with direct transport; thus persistence records the evolution of structure while avoiding commitment to one privileged scale.",
+      "nonparaphrase_operation": "Replace an arbitrary parameter choice by an ordered diagram of representations, apply an invariant at every stage, and retain the induced morphisms plus their composition laws so that continuity of structure can be reasoned about across the parameter.",
+      "source_support": "The artifact states that increasing the scale adds simplices, defines a filtered complex as nested subcomplexes, applies homology to each stage, and records inclusion-induced linear maps satisfying a composition identity. It explicitly says that the vector spaces together with these maps give more refined information than the homology of the stages separately.",
+      "uncertainty": "The text is expository and invokes topological inference as a goal rather than establishing a recovery theorem in this unit. Several scale glyphs are damaged in normalization, so no exact scale formula or constant is used in this interpretation.",
+      "unit_id": "agnostic_oa_filtered_functorial_persistence"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_filtered_functorial_persistence": {
+      "critic_sha256": "31a8a21c191f0fb0179da5d118a4083d16e8348e8660c16ad9d1d109b70c45be",
+      "generation_sha256": "8871ad719bd306913ff0f1bb08186a0a6cbd6c4643af9fea769c47426d3b7db1"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_filtered_functorial_persistence": {
+      "analysis_id": "agnostic_oa_critic_582b437c41e9176533f7153d61f4c47f61a63257cd02aa11d1264a683ecfea03",
+      "context_risk": "The span is sufficient for the finite filtration, induced-map, and composition mechanism, but it only motivates topological recovery and robustness and does not prove either; damaged scale glyphs also make exact parameter formulas unsafe.",
+      "decision": "revise",
+      "faithfulness": "The candidate faithfully identifies the source's main mechanism: nested complexes yield homology vector spaces connected by inclusion-induced maps, and functorial composition makes the cross-stage data more informative than isolated homology groups.",
+      "missed_mechanism": "The candidate captures the induced maps and their composition law; the only material miss is terminological, because the finite diagram establishes compatibility of transport through intermediate indices rather than continuity in a mathematical sense.",
+      "paraphrase_risk": "Low: the ordered-diagram operation is a reusable abstraction rather than a restatement, although the phrase 'continuity of structure' adds an unsupported generic flourish.",
+      "revision_instructions": "Replace 'so that continuity of structure can be reasoned about across the parameter' with 'so that transport through intermediate stages agrees with direct transport across the finite ordered parameter'; retain the remaining interpretation and caveats.",
+      "unit_id": "agnostic_oa_filtered_functorial_persistence",
+      "unsupported_or_imported": "The phrase 'continuity of structure' is not established by the span, which gives a finite totally ordered filtration and a functorial composition identity but no continuity claim; no other material import was detected."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_filtered_functorial_persistence": "agnostic_oa_revision_12036153a1e3bc873c3128027764b92dc7cb25ecc2b2a3cc9917ff0c28e68b17"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "e0ce1a09b73423782670f50bf160370ac99a67ad15f17453604bb5ce1ed44783",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w3098455240_9a7d39d0_part_01.jsonl",
+  "source_id": "openalex_w3098455240",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_filtered_functorial_persistence.txt",
+      "artifact_bytes": 4274,
+      "artifact_relpath": "depth/units/agnostic_oa_filtered_functorial_persistence.txt",
+      "artifact_sha256": "fbaf1b8161887ceb612f1e9ed58d64933938c03415c5adca1f40af88e9cb3aeb",
+      "content_sha256": "774af2c1a188681068158fe1aa47f6e4913c0b8c54625c49b482bfbf3f39b172",
+      "context_note": "This is expository synthesis, not a source-original theorem. The persistence-module terminology and its interval consequences are attributed to the established literature; the unit records the semantic mechanism only.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_filtered_functorial_persistence",
+            "agnostic_oa_barcode_classification_caveat",
+            "agnostic_oa_diagram_comparison_and_stability",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the existing lens by showing a chain from a functorial multiscale invariant to interval classification and equivalent summaries, together with explicit hypotheses and a multiparameter boundary. This is source-level reinforcement only; novelty against the frozen corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 579,
+      "line_start": 520,
+      "representation_dependency": "Moderate. The mechanism depends on treating the nested complexes and induced maps as one ordered diagram; exact normalized formulas and field notation should be checked against the PDF before symbolic reuse.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "The source turns an arbitrary scale choice into a structured family: nested representations induce homology objects and composition-compatible maps, so information is tracked across all scales rather than read from one snapshot. This is a reusable move from parameterized representations to a functorial invariant.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "A filtration becomes a persistent invariant through compatible induced maps",
+      "unit_id": "agnostic_oa_filtered_functorial_persistence",
+      "unit_type": "conceptual_mechanism"
+    }
+  ]
+}

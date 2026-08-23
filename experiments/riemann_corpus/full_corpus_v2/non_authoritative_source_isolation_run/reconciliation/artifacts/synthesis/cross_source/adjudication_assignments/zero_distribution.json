@@ -1,0 +1,1031 @@
+{
+  "task": "fresh cross-source synthesis adjudication",
+  "panel_id": "zero_distribution",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/cross_source_synthesis_adjudication.md",
+  "prompt_sha256": "3a3b0c632deb38c2892216040a977cb4e03403623e5dab1171c374d42948c48d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/cross_source/adjudication_batches/zero_distribution.jsonl",
+  "candidate_count": 8,
+  "candidates": [
+    {
+      "candidate": {
+        "claim": "Both arguments combine logarithmic-derivative values with a nonnegative trigonometric weight so that the Euler-product side is nonnegative while a hypothesized nearby zero contributes a reciprocal-distance term. Stechkin symmetrization sharpens this architecture by pairing each zero with its functional-equation partner and shifting the logarithmic derivative, which makes noncandidate zero pairs discardable before the candidate is bounded.",
+        "generation_panel": "zero_distribution",
+        "historical_or_program_relation": "The Stechkin–Kadiri framework refines the classical positivity proof of zero repulsion by adding a symmetry-aware shifted comparison rather than changing the underlying prime-side positivity mechanism.",
+        "limits": "The two units use different growth inputs, radii, normalizations, and admissible weights; they establish zero-free boundaries near the one-line, not critical-line location or RH, and neither unit alone supplies a globally optimal boundary.",
+        "parent_unit_ids": [
+          "openalex_w2031421669_v2_u03",
+          "harper2014_zeta_course_part1_v2_u13"
+        ],
+        "synthesis_id": "riemann_v2_cross_zero_distribution_positivity_zero_repulsion",
+        "title": "Positive trigonometric averages turn a nearby zero into a one-sided obstruction"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The lemma, symmetry pairing, shifted combination, and resulting zero-free consequence form one indivisible mechanism.",
+          "line_end": 231,
+          "line_start": 154,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several fractions and the factor involving a square root are visually degraded, including 1/2-like terms; use the raw PDF for coefficients, while the prose-supported pairing and discard operation are reliable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The zero symmetries ρ̄ and 1−ρ̄ are paired with a shifted logarithmic derivative so all nonexceptional contributions have a controlled sign, improving the constant available from the raw positivity argument.",
+          "source_id": "openalex_w2031421669",
+          "source_normalized_sha256": "542ddf7a082b1007e452f959966b9f3cd08ef3cb79ec9f89a45a9730ef04df2a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Stechkin symmetrization makes paired zero contributions discardable",
+          "unit_artifact_relpath": "depth/units/openalex_w2031421669_v2_u03.txt",
+          "unit_bytes": 4102,
+          "unit_id": "openalex_w2031421669_v2_u03",
+          "unit_sha256": "b322b9e0a5d5421fde3dc748eaf9a970f0caee1b99e63d5badd3525f608a32d6",
+          "unit_type": "symmetry-and-discarding-mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031421669_v2_u03.txt",
+          "source_title": "A NOTE ON KADIRI'S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA FUNCTION",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit exploits an involution to choose the correct composite object before estimating. Pairwise symmetrization supplies sign control that is absent term by term, and the shifted evaluation pays for the cancellation.",
+            "nonparaphrase_operation": "The bridge object is the paired kernel attached to rho and 1-conjugate(rho), coupled to a shifted logarithmic derivative. It translates functional-equation symmetry into an inequality compatible with the positive trigonometric average.",
+            "quality_reason": "The source states Stechkin's reciprocal-kernel inequality with β,σ,τ hypotheses and explicitly invokes the zero symmetry ρ↦1-conjugate(ρ). It combines logarithmic derivatives at σ and σ+δ, obtains a nonnegative prime-side weighted sum, and discards all paired zero contributions except the distinguished pair. The candidate keeps the cited constants separate from the paper's final bound and warns that exact coefficients are essential. The answer identifies shifted symmetrization as a less lossy replacement for termwise positivity rather than repeating the lemma.",
+            "source_support": "Using the symmetry rho -> 1-conjugate(rho), Stechkin's lemma compares reciprocal terms at sigma and at a shifted point tau=sigma+delta. The corresponding combination of logarithmic derivatives has a nonnegative prime-side expression. All paired zero contributions except the distinguished pair can then be discarded, yielding a wider zero-free region.",
+            "speculation_status": "The span establishes the discard mechanism and cites resulting constants, but does not carry the estimates to the paper's final bound. Exact coefficients in the reciprocal kernel matter and cannot be inferred from the prose alone. The symmetry and sign logic are reliable; several fractions, square-root factors, and 1/2-like terms are extraction-sensitive and require PDF verification. Describing the involution-paired kernel as the correct composite object is a faithful explanation of why sign control appears only after pairing. Square-root factors and half-like fractions are visibly degraded; the candidate appropriately avoids reconstructing them."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0c30f8d3d216e26962f8fc57ed11604dbcbf8f7268e06c8cfb6167e990c6e81f",
+            "dossier_sha256": "a1fbca5df3a70ba4061405c250c6587a3b8776a05cddb8246a08471fd165a7ad"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the parameter choice r=1/w and the estimate of the normalization denominator.",
+          "line_end": 1334,
+          "line_start": 1239,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "A few inequalities are badly line-wrapped, but the two-sided squeeze and final scale are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The three-height logarithmic-derivative identity supplies a lower bound, while the local factorization lemma makes an assumed zero contribute a positive reciprocal-distance term; choosing the disc radius from the available growth strip yields the exclusion.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Euler-product positivity and local zero terms force any nearby zero left of a quantitative boundary",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u13.txt",
+          "unit_bytes": 6914,
+          "unit_id": "harper2014_zeta_course_part1_v2_u13",
+          "unit_sha256": "e0a3c1b7ad00209e98eaca63eb931f5fc3dfc441f3cc35bc8cae758406dfc78d",
+          "unit_type": "zero-repulsion-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u13.txt",
+          "source_title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof converts a zero into an unavoidable local signal in zeta'/zeta, then uses positivity to cap how large that signal can be. Radius and normalization are selected so analytic growth cannot hide the reciprocal-distance contribution.",
+            "nonparaphrase_operation": "The local discs connect global strip growth to the factorization lemma; the three-height logarithmic derivative connects Euler arithmetic to the local zero term.",
+            "quality_reason": "The three-height logarithmic-derivative positivity, Lemma 5.4 applications, candidate-zero reciprocal term, two cases, and final r,M choices are explicit. No hypothesis of Theorem 5.1 is dropped. The response identifies the exact squeeze and parameter normalization rather than only saying positivity exposes zeros.",
+            "source_support": "For sigma'>1 the nonnegative three-height von-Mangoldt combination relates logarithmic derivatives at sigma', sigma'+it, and sigma'+2it. The pole at one bounds the height-zero term, while Lemma 5.4 bounds the other terms through log M/r and exposes a hypothesized zero sigma+it through 1/(sigma'-sigma). Choosing sigma'=1+c min(1,r/log M) yields a two-case exclusion. Setting r=1/w(2t+1) and M=exp(C phi(2t+1)), justified by the theorem's growth hypothesis and Euler-product lower bounds at the disc centers, gives the Landau region.",
+            "speculation_status": "Both the assumed growth strip and the positivity identity are essential. If the candidate zero lies outside the half-radius disc, the first case handles it geometrically; otherwise the reciprocal term handles it analytically. Some inequalities are line-wrapped, but the two-case squeeze, parameter choices, and final scale are clear. Describing the argument as converting a zero into an unavoidable local signal is a precise reasonable inference. Some inequalities are line-wrapped but the logic is recoverable."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b9e34f30763dcfcde09aee26f1afd5a229a680397241442f65077ccb0f4e4c1d",
+            "dossier_sha256": "1f008d9af1896099c86b26c9c3e2a9020084bb666e844a4b9034699232fee72b"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Across kernel and trigonometric-polynomial searches, the candidate representation is useful only after it is mapped through the full certified zero-free argument: kernel conditions and monotonicity are rechecked for each h-family, while an autocorrelation factorization makes trigonometric nonnegativity automatic. The observed reversal between Landau's surrogate ranking and the finite R0 ranking shows why admissibility-preserving search must be followed by task-specific evaluation.",
+        "generation_panel": "zero_distribution",
+        "historical_or_program_relation": "The program evolves from comparing a few explicit test kernels, through large surrogate-guided polynomial searches with downstream reranking, to a factorized search coordinate that enforces positivity identically.",
+        "limits": "The 2014 and 2015 units optimize a classical logarithmic region constant, whereas the 2024 autocorrelation unit targets an asymptotic Vinogradov–Korobov constant; their numerical objectives are not interchangeable, and heuristic or local search does not certify a global optimum.",
+        "parent_unit_ids": [
+          "openalex_w2031421669_v2_u09",
+          "openalex_w1486331565_v2_u08",
+          "openalex_w4390813842_v2_u12"
+        ],
+        "synthesis_id": "riemann_v2_cross_zero_distribution_admissible_object_optimization",
+        "title": "Zero-free optimization must preserve admissibility and score the actual region objective"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The repeated proof structure is grouped into one comparative unit; splitting each proposition would mostly duplicate the same mechanism.",
+          "line_end": 630,
+          "line_start": 536,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Kernel formulas are extraction-sensitive, π/2 is degraded at lines 536 and 619, and two proofs are omitted by the paper itself; reported parameter choices and resulting constants are readable, but exact kernel definitions require the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Propositions 6-9 hold the analytic framework fixed while changing kernel representations, numerically maximizing their objective, rechecking admissibility, correction negativity, and monotonicity, and comparing the resulting constants.",
+          "source_id": "openalex_w2031421669",
+          "source_normalized_sha256": "542ddf7a082b1007e452f959966b9f3cd08ef3cb79ec9f89a45a9730ef04df2a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Four admissible kernels are compared under the same certification pipeline",
+          "unit_artifact_relpath": "depth/units/openalex_w2031421669_v2_u09.txt",
+          "unit_bytes": 5421,
+          "unit_id": "openalex_w2031421669_v2_u09",
+          "unit_sha256": "a31ceaa95fba9234e91c6c534f5b249085250b08d53a9bd47d457080a71c3c25",
+          "unit_type": "controlled-kernel-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031421669_v2_u09.txt",
+          "source_title": "A NOTE ON KADIRI'S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA FUNCTION",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Holding the analytic skeleton fixed exposes which kernel representation actually improves the bound. The invariant obligations prevent an optimizer from trading mathematical validity for a better numerical objective.",
+            "nonparaphrase_operation": "Each h-family maps through f(t)=eta h(eta t) to a kernel functional K and then to R0. The normalized objective K(1,parameter)/(A h(0)) supplies a common comparison coordinate across differently shaped kernels.",
+            "quality_reason": "Propositions 6-9 define four kernel families and report their optimized parameters and resulting constants. For the first two the span describes endpoint checks, four iterations, δ,κ,C(η), negativity, monotonicity, and application of the scalar inequality. It explicitly omits proofs for the final two as analogous, and the candidate records that omission and lack of reproducibility. The response names every invariant certification obligation, preventing a purely leaderboard-style reading of the close constants.",
+            "source_support": "Propositions 6-9 define four rescaled kernel families and report optimized parameters and constants near 5.68372, 5.68483, 5.68484, and 5.68486. For the first two, the text describes four iterations, determination of delta, kappa, and C(eta), checks C(eta)<0 and partial K/partial omega>0, and applies the scalar inequality; proofs of the last two are omitted as analogous.",
+            "speculation_status": "The numerical optimizer, precision controls, and iteration trace are absent, and two proofs are explicitly omitted. Reported proximity of constants is not independently reproducible from this unit alone. The common pipeline and reported outcomes are readable; several supports, pi/2 bounds, and formulas are extraction-sensitive and need PDF verification. Calling this an ablation of kernel representation is accurate because the analytic pipeline and output metric are held fixed across the four proposals. Supports, π/2 bounds, formulas, optimizer precision, and iteration traces are unavailable or extraction-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0c30f8d3d216e26962f8fc57ed11604dbcbf8f7268e06c8cfb6167e990c6e81f",
+            "dossier_sha256": "a1fbca5df3a70ba4061405c250c6587a3b8776a05cddb8246a08471fd165a7ad"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is an empirical optimization result, not a theorem that degree 16 is globally optimal.",
+          "line_end": 834,
+          "line_start": 747,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Large coefficient tables are formula-dependent; the comparison is stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Degree-40 searches improve the asymptotic Landau bound, but Kadiri evaluation favors smaller degree; retesting many near-optimal surrogate candidates and locally refining the true objective produces the degree-16 polynomial used for the best R0.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Optimizing Landau's constant and optimizing the finite zero-free constant select different polynomials",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u08.txt",
+          "unit_bytes": 6893,
+          "unit_id": "openalex_w1486331565_v2_u08",
+          "unit_sha256": "204dfb4ef3901b667fc3453baa2e6dcc08938fb9caf99287395b8180048bf7a5",
+          "unit_type": "surrogate-objective diagnosis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u08.txt",
+          "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Landau's inexpensive objective and Kadiri's full R0 calculation order the same admissible polynomials differently, so surrogate optimization is followed by task-specific reranking rather than assumed to transfer. Among the record-V_n polynomials in the table, degree 12 gives the best Kadiri result; a separate, wider pass evaluates several hundred thousand near-best Landau candidates and finds a better degree-16 candidate, after which further annealing from that starting point yields F16. F16's Landau score is worse than the degree-16 record even though it supports the paper's stronger finite R0 result. Keeping diverse near-surrogate-optima therefore gains downstream options, but neither selection stage proves a global optimum.",
+            "nonparaphrase_operation": "Separates the degree-12 winner among record-surrogate polynomials from the degree-16 winner in the expanded candidate pool, using their contrary rankings to diagnose a bounded surrogate mismatch.",
+            "quality_reason": "Preserves both selection stages, removes the unsupported final-annealing objective, and ties the abstraction directly to the two numerical evaluations and their observed reversal.",
+            "source_support": "The span reports V_n records through degree 40, tabulates the contrary Kadiri ordering with the best listed R0 at degree 12, describes reranking many other strong Landau candidates to find degree 16 with R0<5.57353, and reports further annealing from it before using F16 in Theorem 1. The objective of that final annealing is not specified in this span.",
+            "speculation_status": "Surrogate mismatch and the value of candidate diversity are supported inferences from explicit contrary rankings. The final annealing is not labeled optimization of the true objective, and no reported polynomial, degree, or value is claimed globally optimal; large tables and exact evaluations remain provenance-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_d5e59f93dd7cff681f557fddde51b920d2e5d9067069faf97ec91635f9c99d1e",
+            "dossier_sha256": "1747c1e9e54165a44fecbbf41abec31a2c5b57b468b8b32a1bc31955ad6041d1"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the key representation choice behind the numerical optimization.",
+          "line_end": 1420,
+          "line_start": 1331,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate; the squared-modulus and autocorrelation normalizations should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reparameterizes the polynomial as the squared modulus of a finite Fourier sum so each Fourier coefficient is an autocorrelation, turning a global nonnegativity constraint into a construction invariant and leaving a computable scalar objective.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Autocorrelation parameters make trigonometric nonnegativity automatic during search",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u12.txt",
+          "unit_bytes": 6380,
+          "unit_id": "openalex_w4390813842_v2_u12",
+          "unit_sha256": "eef90328aa6c5fb87996b006113bde0d71e55b3f517d9485c0011fe4c1ce9ee7",
+          "unit_type": "positivity-preserving representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u12.txt",
+          "source_title": "Explicit zero-free regions for the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a constraint-preserving reparameterization: instead of testing nonnegativity over a continuum, the search moves within a factorized representation where it holds identically. A hard global condition is exchanged for simpler algebraic side constraints on autocorrelations.",
+            "nonparaphrase_operation": "The spectral factor g and autocorrelation map c↦b bridge unconstrained finite coefficients to an admissible nonnegative trigonometric polynomial and then to the scalar region objective R2.",
+            "quality_reason": "The span defines R2, factors PK as a normalized squared modulus, derives b0=1 and autocorrelation coefficients, initializes positive c values, and retains b1>b0 as a test. The output correctly warns that squared-modulus form alone does not guarantee bk>=0 for arbitrary signed c and does not certify a global optimum. The invariant language is grounded by the identity PK=|g|^2/sum cj^2.",
+            "source_support": "The source gives the asymptotic zero-free objective R2 in terms of polynomial aggregates and θ. To search degrees above four, it represents g(x)=∑c_k e^{ikx} and sets PK(x)=|g(x)|²/∑c_j². Thus b0=1 and each b_k is a scaled kth autocorrelation of the c sequence, guaranteeing PK(x)≥0. Initial nonnegative c_k also give b_k≥0, and candidates are restarted unless b1>b0.",
+            "speculation_status": "Squared-modulus form guarantees PK≥0 but not b_k≥0 or b1>b0 for arbitrary signed c, so those remain explicit rejection tests. The parameterization and normalization may introduce redundant states and do not guarantee access to a global optimum. The representation logic is clear; exact normalization and the R2 formula should be scan-checked before implementation. Calling the factorization a constraint-preserving reparameterization is a direct and useful inference. Exact normalization and R2 formula should be scan-checked."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3cc70af17f27148aa41a09a3d13ea5d4522e80a1f47fc726114ddf4927bc4318",
+            "dossier_sha256": "692ed8e3088b91cf9ea8c9e7401d24477267b6401d1b357f4483bd82de478b48"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "A verified low-zero range removes candidate zeros below a cutoff so the rescaled positivity argument can be uniform above it; complementary reciprocal-square or zero-count estimates compress the unenumerated zeros into a controlled aggregate tail. Thus finite computation and global analysis meet at an explicit cutoff rather than one replacing the other.",
+        "generation_panel": "zero_distribution",
+        "historical_or_program_relation": "The newer explicit-region pipeline updates the finite verification anchor, while later treatments retain the same splice and strengthen the analytic side with uniform N(T) error bounds for remote-zero detector terms.",
+        "limits": "Finite verification below T0 is an external dependency and does not prove RH beyond that height; aggregate tail bounds do not locate individual zeros, and every cutoff, completeness claim, test-function hypothesis, and height range must remain attached to its source.",
+        "parent_unit_ids": [
+          "openalex_w2031421669_v2_u05",
+          "openalex_w1486331565_v2_u05",
+          "openalex_w4390813842_v2_u04"
+        ],
+        "synthesis_id": "riemann_v2_cross_zero_distribution_finite_certificate_tail_control",
+        "title": "Explicit zero-free proofs splice a finite zero certificate to analytic tail control"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The definitions of η, r, σ, ω, T0, and the positivity condition on Re(F) must remain together to expose the analytic/computational division of labor.",
+          "line_end": 386,
+          "line_start": 319,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The extraction renders 1/2 as 21 at line 352 and disrupts several ratios; the numerical cutoff and parameter relations are prose-supported, but exact inequalities require the raw PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The method wraps the explicit formula in a positive trigonometric polynomial, parameterizes distance from the line Re(s)=1, and uses a finite verified-height boundary so the remaining analytic argument only addresses higher zeros.",
+          "source_id": "openalex_w2031421669",
+          "source_normalized_sha256": "542ddf7a082b1007e452f959966b9f3cd08ef3cb79ec9f89a45a9730ef04df2a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Positivity parameters are rescaled around a candidate zero and anchored by verified low zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2031421669_v2_u05.txt",
+          "unit_bytes": 3346,
+          "unit_id": "openalex_w2031421669_v2_u05",
+          "unit_sha256": "057732931877222f3cf596b9ff960c56f0d3dc3eec7c37d62a6c2c47eee1404a",
+          "unit_type": "analytic-computational-boundary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031421669_v2_u05.txt",
+          "source_title": "A NOTE ON KADIRI'S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA FUNCTION",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Normalization separates scale from shape: eta carries the shrinking distance to one, while omega records the relative placement of sigma. The finite certificate below T0 lets the remaining proof reason uniformly only about higher zeros.",
+            "nonparaphrase_operation": "The variables eta, r, sigma, and omega compress height-dependent inequalities to a bounded parameter domain. T0 is the bridge between external numerical verification and the analytic continuation of the zero-free claim.",
+            "quality_reason": "The span inserts a specified nonnegative quartic cosine polynomial into the shifted explicit formula. It defines η=1-β0, r, σ, and ω, assumes γ0 above the explicit cited verification height T0, and derives fixed bounds η≤η0 and ω0≤ω<1. It imposes Re F(z)≥0 on the right half-plane; the candidate correctly treats this as a proof obligation, not a consequence of f≥0. The dependency on the external low-zero verification is explicitly acknowledged. The response distinguishes computational coverage from the analytic high-zero argument instead of treating them as one validation signal.",
+            "source_support": "A nonnegative quartic cosine polynomial is inserted into the shifted explicit formula. The unit sets eta=1-beta0=1/(r log gamma0), defines sigma from a current constant R and omega=(1-sigma)/eta, assumes gamma0 above a cited RH-verification height T0, derives fixed bounds eta<=eta0 and omega0<=omega<1, and imposes Re F(z)>=0 on the right half-plane.",
+            "speculation_status": "The low-zero certificate is cited, not embedded, so this unit records a dependency rather than an independently reproducible verification. Transform positivity is an imposed proof obligation, not an automatic consequence of f being positive. The rescaling and analytic/computational split are clear; extracted ratios include a known 1/2 defect, so exact inequalities and constants require the PDF. Viewing η and ω as separating scale from relative position faithfully explains why the resulting checks occur on a bounded parameter range. A known 1/2 extraction defect and disrupted ratios require PDF verification; the candidate flags them."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0c30f8d3d216e26962f8fc57ed11604dbcbf8f7268e06c8cfb6167e990c6e81f",
+            "dossier_sha256": "a1fbca5df3a70ba4061405c250c6587a3b8776a05cddb8246a08471fd165a7ad"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Numerical validity depends on the cited verified zero data and chosen cutoff.",
+          "line_end": 491,
+          "line_start": 430,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The tail sum and constants are formula-sensitive but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For zero height the total reciprocal-square sum minus verified zeros gives a tight remainder; at positive shifts a monotone test function in Lehman's explicit zero-sum estimate controls both tails beyond the exclusion window.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Direct low-zero data plus Lehman's formula replaces a generic zero-count error estimate",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u05.txt",
+          "unit_bytes": 3615,
+          "unit_id": "openalex_w1486331565_v2_u05",
+          "unit_sha256": "cb06824940316ca8d642693bd89f2980d553eb90e9d7dfeaa311518af7a6c191",
+          "unit_type": "verified-zero tail bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u05.txt",
+          "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reciprocal-square tail sum supports two different certification mechanisms. At t=0 it is exactly rewritten as twice the difference between the full positive-zero sum and the finite sum through t0, after which a cited upper bound on the full sum and computed low zeros give the stated tail bound. At positive shifts, the sum is recast through a positive decreasing reciprocal-square test function so Lehman's formula controls the unenumerated tail by an integral and endpoint terms. This bridge gains a tighter aggregate remainder estimate but does not locate individual zeros and is only as sound as the cited global bound, verified-zero completeness, and Lehman hypotheses.",
+            "nonparaphrase_operation": "Distinguishes equality in the finite-data decomposition from the inequality used for the global input, and compares subtraction from an upper bound with test-function transport as two complementary tail-control representations.",
+            "quality_reason": "Implements the critic's exact-versus-upper-bound repair while retaining both height regimes, their assumptions, and the limitation to aggregate tail control.",
+            "source_support": "The span defines C3 and Sigma(t,t0), gives the equality for Sigma(0,t0), cites only an upper bound of 0.023105 for the full positive-zero sum, subtracts zeros through 10^5 to state c30(0,10^5)=0.00027, and applies Lehman's estimate for a continuous positive decreasing test function when t>0.",
+            "speculation_status": "The finite-data/analytic-tail bridge is supported inference. The global reciprocal-square quantity is not called an exact evaluated budget, and the final integral and numerical constant remain dependent on formula extraction and external zero-data provenance."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_d5e59f93dd7cff681f557fddde51b920d2e5d9067069faf97ec91635f9c99d1e",
+            "dossier_sha256": "1747c1e9e54165a44fecbbf41abec31a2c5b57b468b8b32a1bc31955ad6041d1"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Brief input unit whose role becomes explicit in Lemmas 4.5 and 4.6.",
+          "line_end": 303,
+          "line_start": 292,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High for the extracted absolute-value display; exact constants require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies the explicit estimate for N(T) used to improve the tail sum over zeros and states why sharper special-height bounds are unnecessary for this proof.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A uniform zero-counting error bound controls the detector's remote-zero tail",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u04.txt",
+          "unit_bytes": 1004,
+          "unit_id": "openalex_w4390813842_v2_u04",
+          "unit_sha256": "cae082172c51347640a0e9883edb09c64a9578254cb6ebff008ccb2319d8c239",
+          "unit_type": "explicit-zero-count input",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u04.txt",
+          "source_title": "Explicit zero-free regions for the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A counting theorem is repurposed from global zero statistics to a local detector error budget. Uniform availability across the entire required height range is more valuable here than a sharper estimate with restricted coverage.",
+            "nonparaphrase_operation": "N(T) and its explicit remainder bridge a discrete sum over distant zeros to integrable/countable tail bounds in Lemmas 4.5–4.6.",
+            "quality_reason": "The exact N(T) remainder bound, its T>=e domain, and the comparison with restricted-range improvements are explicit. The output correctly says this imported counting estimate alone is not a zero-free theorem. The bookkeeping description is grounded by the explicit uniform remainder rather than a generic analogy.",
+            "source_support": "The source quotes an explicit inequality bounding the error in the standard main term for N(T) by a linear combination of log T, log log T, and a constant for T≥e. It notes sharper bounds in ranges where RH is verified or at intermediate heights, but chooses this uniform bound because it remains the best stated input at very large height and suffices for later lemmas.",
+            "speculation_status": "The inequality is an imported input and does not itself yield a zero-free region. Restricted-height improvements cannot be substituted without rechecking every height used by the detector. The intended use is clear; exact absolute-value layout and constants in the extracted display should be verified before numerical certification. Its use to control remote-zero tails is reasonable contextual inference: the span says the estimate is required and the assignment boundary identifies later lemmas, while the output does not claim the unit proves that conversion. The absolute-value layout and numerical constants need scan verification before certification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3cc70af17f27148aa41a09a3d13ea5d4522e80a1f47fc726114ddf4927bc4318",
+            "dossier_sha256": "692ed8e3088b91cf9ea8c9e7401d24477267b6401d1b357f4483bd82de478b48"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The boundary of a zero-free region is a reusable input to the prime-number-theorem contour: a classical width 1/(R log t) yields square-root-exponential decay whose constants improve with R, while the wider Vinogradov–Korobov boundary yields the different exponent exp(-c(log x)^(3/5)/(log log x)^(1/5)) after optimizing contour height.",
+        "generation_panel": "zero_distribution",
+        "historical_or_program_relation": "Explicit classical-region work progressively improves finite constants and downstream explicit inequalities, whereas the Vinogradov–Korobov program changes the asymptotic shape of the available contour shift by importing exponential-sum cancellation.",
+        "limits": "The sources use different prime-counting functions, explicit ranges, and auxiliary estimates, so constants cannot be transferred by substitution without rechecking those inputs; improving classical R does not by itself improve the Vinogradov–Korobov exponent, and neither error term implies RH-scale square-root cancellation.",
+        "parent_unit_ids": [
+          "openalex_w2031421669_v2_u01",
+          "openalex_w1486331565_v2_u10",
+          "harper2014_zeta_course_part2_v2_u12"
+        ],
+        "synthesis_id": "riemann_v2_cross_zero_distribution_region_to_prime_error",
+        "title": "Contour optimization transports zero-free geometry into distinct prime-counting error scales"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keep the historical progression and theorem statement together because the claimed improvement is meaningful only relative to the prior constant and its proof interface.",
+          "line_end": 78,
+          "line_start": 25,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The displayed Li integral and error-term formula at lines 28-39 have degraded layout; the prose and direction of dependence are recoverable, but exact typography requires the raw PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The introduction makes the causal bridge from excluding zeros near one to an exponential error estimate for prime counting, then identifies which proof components are being changed and which numerical result is imported.",
+          "source_id": "openalex_w2031421669",
+          "source_normalized_sha256": "542ddf7a082b1007e452f959966b9f3cd08ef3cb79ec9f89a45a9730ef04df2a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero-free geometry as an explicit prime-counting error control",
+          "unit_artifact_relpath": "depth/units/openalex_w2031421669_v2_u01.txt",
+          "unit_bytes": 3214,
+          "unit_id": "openalex_w2031421669_v2_u01",
+          "unit_sha256": "2835c91c77f7cc073711e7682fdbfa41e025bb8e11635373b8fa5876198748cf",
+          "unit_type": "motivation-and-method-map",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031421669_v2_u01.txt",
+          "source_title": "A NOTE ON KADIRI'S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA FUNCTION",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A zero-free region near Re(s)=1 is compressed into the scalar R0 and then transported into an exponential error estimate for prime counting. The introduction treats this scalar as a stable proof interface: retain the explicit-formula and Stechkin framework, vary the test function, and replace the cited numerical RH input to improve R0 from 5.69693 toward 5.68371. Platt's verification is only an external dependency here; this span gives no cutoff or explicit computational boundary.",
+            "nonparaphrase_operation": "The interpretation turns the introduction into a typed dependency interface: zero geometry enters through R0, analytic and numerical components constrain that scalar, and prime-counting error consumes it. This identifies which proof components are varied while preserving that the output constant has not yet been established in the span.",
+            "quality_reason": "Accepted after removing the unsupported finite-height boundary while retaining numerical RH verification as an unspecified cited dependency and preserving the roadmap-not-proof status.",
+            "source_support": "The span displays the zero-free-region shape, states its implication for the error in pi(x)-Li(x), reviews historical constants, quotes Kadiri's R0=5.69693, and announces 5.68371. It attributes the method to Weil's explicit formula, a Stechkin generalization, different test functions, and Platt's numerical verification, without reproducing those inputs or proving the new constant.",
+            "speculation_status": "The historical region, direction to the error estimate, and announced target are prose-grounded. The numerical verification is cited external evidence with unspecified range here; exact Li and error-term typography are extraction-damaged."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0c30f8d3d216e26962f8fc57ed11604dbcbf8f7268e06c8cfb6167e990c6e81f",
+            "dossier_sha256": "a1fbca5df3a70ba4061405c250c6587a3b8776a05cddb8246a08471fd165a7ad"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The corollary proofs rely on cited prior arguments and verified finite ranges.",
+          "line_end": 1000,
+          "line_start": 948,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Thresholds and constants are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The new constant is inserted into an offset logarithmic zero-free region and then into established contour arguments, improving explicit bounds for theta, psi, and pi minus li and identifying further applications that inherit the change.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A wider zero-free strip sharpens explicit prime-number-theorem errors",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u10.txt",
+          "unit_bytes": 3005,
+          "unit_id": "openalex_w1486331565_v2_u10",
+          "unit_sha256": "06012dc6876811c76419eeef0292674715b2434a6cfa66bf35f7d2bce8fb6047",
+          "unit_type": "analytic-number-theory transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u10.txt",
+          "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The zero-free region functions as an analytic interface: downstream contour estimates depend on its width and can inherit an improvement modularly, provided their other finite-range ingredients remain valid.",
+            "nonparaphrase_operation": "The offset logarithmic strip with constants R and B is the bridge between spectral exclusion for zeta and decay terms in explicit prime-number-theorem estimates.",
+            "quality_reason": "The shifted-log zero-free region, two explicit prime-number-theorem corollaries, finite-range theta input, and named further applications are all in the span. No downstream proof is claimed to be reproduced; the output correctly confines itself to inherited input substitution. 'Modular transfer' is generic vocabulary, but the exact constants, functions, and cited proof dependencies make it specific.",
+            "source_support": "The source inserts Theorem 1 into a region sigma>=1-1/(6.315 log|t/17|) for t>=24, then invokes prior arguments to state explicit bounds for |theta(x)-x| and |psi(x)-x| with stated thresholds. A second corollary bounds |pi(x)-li(x)| using the improved 6.315 constant and a sharper leading coefficient, with finite-range input theta(t)<t. It also names two further prior bounds that can be updated with the smaller R0.",
+            "speculation_status": "The corollaries rely on cited arguments and verified finite ranges not reproduced here. They inherit only the improved zero-free input; the span does not re-establish every downstream constant from first principles. Thresholds, radicals, and exponents are formula-sensitive in extraction. The transfer mechanism is clear, but exact reuse requires the PDF and cited proofs. Calling the zero-free region an analytic interface consumed by prior contour arguments is a source-specific and useful conceptual reading. Thresholds, radicals, offsets, and exponent formatting are extraction-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_d5e59f93dd7cff681f557fddde51b920d2e5d9067069faf97ec91635f9c99d1e",
+            "dossier_sha256": "1747c1e9e54165a44fecbbf41abec31a2c5b57b468b8b32a1bc31955ad6041d1"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the closing assessment because it separates a best-known unconditional bound from the conjectural critical-line scale.",
+          "line_end": 1325,
+          "line_start": 1264,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The contour details are omitted by the source; stated error exponents and optimization are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shifts the prime-counting contour into the new zero-free region, optimizes its height, and explains why the improved error encodes genuine Fourier cancellation while remaining far from the square-root error predicted by RH.",
+          "source_id": "harper2014_zeta_course_part2",
+          "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+          "source_page_markers_inside_unit": [
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Contour optimization converts the zero-free region into the PNT error term",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_v2_u12.txt",
+          "unit_bytes": 3923,
+          "unit_id": "harper2014_zeta_course_part2_v2_u12",
+          "unit_sha256": "30b31238243a7e07e025b0a77df0dd6b122eb6d2ed2f1aabc53573bd44d4f183",
+          "unit_type": "prime-counting-consequence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_v2_u12.txt",
+          "source_title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The standard prime-number-theorem contour is shifted into the wider zero-free region, with a ζ'/ζ bound, and its height is optimized between the displayed competing errors to give the Vinogradov–Korobov remainder. As cross-unit interpretation explicitly licensed by the source, the error's shape records the upstream short-sum cancellation translated through ζ to primes, while remaining far from the square-root-scale consequence of RH.",
+            "nonparaphrase_operation": "Interprets contour height as an optimization bridge from zero-free geometry to prime-counting error and separates qualitative mathematical content from distance to the conjectural optimum.",
+            "quality_reason": "Accepted because the source itself supplies both the transfer and its epistemic limitations; exact error exponents, height, and constants remain formula-sensitive.",
+            "source_support": "The corollary, omitted-proof warning, competing-error display, optimized height, smooth-number discussion, link back to Theorem 10.1, and RH comparison all occur in the span.",
+            "speculation_status": "The full contour proof is not local and is treated as stated rather than reconstructed; the upstream chain is labeled cross-unit interpretation, not fresh proof."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_75575a35782ebc282be710e07b19235f64236506c5b3e3f58029534bf2c5fc56",
+            "dossier_sha256": "6437ac2bbbcc60311bf6d5e2404bc4f823e4c850ec3decf6ef80cefdbe01234e"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Taylor polynomialization, Hölder amplification, and Vinogradov mean values produce cancellation in short sums of n^(-it); blockwise Abel summation then transfers that local cancellation to a bound for zeta near the one-line. The resulting input supports a Vinogradov–Korobov boundary, which is naturally compared with classical regions as a height-dependent envelope rather than by a constant alone.",
+        "generation_panel": "zero_distribution",
+        "historical_or_program_relation": "This identifies the analytic route behind the asymptotic-shape improvement: exponential-sum structure changes the zeta growth bound, and only then changes the zero-free envelope used in later explicit comparisons.",
+        "limits": "The lecture-note estimate suppresses explicit constants, while an asymptotically superior envelope can lose on finite height ranges; the chain supplies no zero-free continuation to the critical line and gives no RH inference.",
+        "parent_unit_ids": [
+          "harper2014_zeta_course_part2_v2_u08",
+          "harper2014_zeta_course_part2_v2_u10",
+          "openalex_w4390813842_v2_u01"
+        ],
+        "synthesis_id": "riemann_v2_cross_zero_distribution_exponential_sums_to_envelope",
+        "title": "Exponential-sum cancellation changes the asymptotic zero-free envelope through a zeta bound"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the point where all local mechanisms become the global Vinogradov-Korobov bound.",
+          "line_end": 1059,
+          "line_start": 905,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent; optimization roles are clear, exact constants and powers require scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Composes the three earlier reductions, chooses k proportional to r squared, constructs rational approximants for a band of polynomial coefficients, and balances mean-value loss against coordinatewise savings to prove the exponential zeta-sum estimate.",
+          "source_id": "harper2014_zeta_course_part2",
+          "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+          "source_page_markers_inside_unit": [
+            16,
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Optimized degree, moment order, and rational denominators produce zeta-sum cancellation",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_v2_u08.txt",
+          "unit_bytes": 9348,
+          "unit_id": "harper2014_zeta_course_part2_v2_u08",
+          "unit_sha256": "cd1334852282cf0c005b120f89340e91cb84ac5a507feb20241c6ebd06315d7a",
+          "unit_type": "parameter-assembly",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_v2_u08.txt",
+          "source_title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The short-sum estimate is assembled from Taylor polynomialization, Hölder duplication, and Vinogradov mean-value control. After disposing of the small-N range trivially, the proof sets k proportional to r-squared and, only on a middle band of coefficient indices, constructs denominators q_j directly from the explicit α_j formula; Lemma 8.2 supplies coordinate savings that outweigh the Hölder and mean-value losses in the final exponent balance.",
+            "nonparaphrase_operation": "Explains how three dependent parameter choices cooperate and why saving in a subset of coordinates suffices, rather than attributing the result to generic rational approximation.",
+            "quality_reason": "Accepted after removing the later calibration and preserving the small-N and middle-band qualifications.",
+            "source_support": "Theorem 10.1's reduction, k choice, explicit q_j construction, middle j-band, parameter balance, and final estimate are all in the span.",
+            "speculation_status": "No comparison with square-root cancellation is made here; exact optimization constants remain source-formula dependent."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_75575a35782ebc282be710e07b19235f64236506c5b3e3f58029534bf2c5fc56",
+            "dossier_sha256": "6437ac2bbbcc60311bf6d5e2404bc4f823e4c850ec3decf6ef80cefdbe01234e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The two sigma regimes are parts of one transfer because they prove a single uniform Richert bound.",
+          "line_end": 1232,
+          "line_start": 1086,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Block endpoints and exponents are formula-sensitive; the decomposition and optimization are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Splits the Hardy-Littlewood Dirichlet polynomial into exponential blocks, applies Abel summation and the zeta-sum estimate, and chooses the initial cutoff differently according to distance from the one-line.",
+          "source_id": "harper2014_zeta_course_part2",
+          "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Blockwise Abel summation turns short-sum cancellation into a zeta bound near one",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_v2_u10.txt",
+          "unit_bytes": 7875,
+          "unit_id": "harper2014_zeta_course_part2_v2_u10",
+          "unit_sha256": "883631f043fd046abac57bb23c52c027dc3e27332ce73b047c1fcecca5eeedcb",
+          "unit_type": "sum-to-function-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_v2_u10.txt",
+          "source_title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Hardy–Littlewood polynomial is divided into exponential blocks, and Abel summation inserts the slowly varying n^{-σ} weight while preserving maximal cancellation of n^{-it}. The initial cutoff is optimized differently near the one-line and farther left: below it trivial mass is affordable, while above it Theorem 10.1's block saving defeats the amplitude growth, producing Richert's bound.",
+            "nonparaphrase_operation": "Identifies the cutoff as the interface matching a local unweighted cancellation theorem to a global weighted Dirichlet polynomial.",
+            "quality_reason": "Accepted because the transfer mechanism and two regimes are explicit; the damaged second cutoff and exact constants are not reconstructed.",
+            "source_support": "The two σ cases, exponential block decomposition, Abel step, maximal short-sum estimate, and block summation are in the span.",
+            "speculation_status": "No RH-strength calibration or stronger critical-strip claim is needed."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_75575a35782ebc282be710e07b19235f64236506c5b3e3f58029534bf2c5fc56",
+            "dossier_sha256": "6437ac2bbbcc60311bf6d5e2404bc4f823e4c850ec3decf6ef80cefdbe01234e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Stops before the immutable comparison span, whose opening depends on this Ford-region setup.",
+          "line_end": 76,
+          "line_start": 36,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low; the two scale formulas and constants are readable, with exact powers worth scan-checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Distinguishes the classical logarithmic region from the asymptotically wider Vinogradov-Korobov scale and introduces the prior explicit constants against which every later improvement is measured.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Explicit zero-free regions are competing height-dependent envelopes, not one uniformly best formula",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u01.txt",
+          "unit_bytes": 3888,
+          "unit_id": "openalex_w4390813842_v2_u01",
+          "unit_sha256": "6346cdce9680377436a5425e80ef67967f96549f997a94ad6ff6e059e1cbfda3",
+          "unit_type": "scale-and-envelope framing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u01.txt",
+          "source_title": "Explicit zero-free regions for the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Comparing regions requires comparing functions over a height range rather than ranking constants in isolation. A formula with better asymptotic shape or constant may still lose on the finite interval relevant to an all-height theorem.",
+            "nonparaphrase_operation": "The boundary function 1-1/f(t) is the common representation that makes differently shaped zero-free regions comparable as envelopes.",
+            "quality_reason": "The span defines the classical and Vinogradov-Korobov boundary shapes and quotes Ford's 57.54 all-height and 49.13 sufficiently-large-height constants. The output correctly notes that the onset for the latter is absent and that neither result approaches RH. The envelope language is concretized by the common boundary function 1-1/f(t).",
+            "source_support": "The introduction defines zero-free regions of the form σ≥1-1/f(|t|), contrasts the classical choice f(t)=R0 log t with the Vinogradov–Korobov scale R1(log t)^{2/3}(log log t)^{1/3}, and records Ford's explicit constants 57.54 for |t|≥3 and 49.13 for sufficiently large t.",
+            "speculation_status": "The quoted Ford bounds are prior inputs and the sufficiently-large threshold for the sharper constant is not supplied here. Neither region approaches RH's critical line claim. The two scales and reported constants are readable, though exact powers should be scan-checked if reproduced formally. Viewing the regions as competing height-dependent envelopes and warning against ranking constants alone is a reasonable inference from the two domains and shapes. Exact powers are legible but worth scan checking."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3cc70af17f27148aa41a09a3d13ea5d4522e80a1f47fc726114ddf4927bc4318",
+            "dossier_sha256": "692ed8e3088b91cf9ea8c9e7401d24477267b6401d1b357f4483bd82de478b48"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "A zero is first converted into a large Dirichlet-polynomial value, with powering used to match the witness length to a Halász–Montgomery, reflection, and fourth-moment large-value theorem; the resulting density estimate can then bound contaminated t-blocks. Excising those blocks creates long retained intervals where a logarithmic branch exists and a Mellin-smoothed Dirichlet polynomial recovers mean-square coefficient mass.",
+        "generation_panel": "zero_distribution",
+        "historical_or_program_relation": "The density theorem is not merely an endpoint count: in the mean-value argument it becomes an upstream resource that converts sparse zero information into a geometric domain on which finite polynomial approximation is valid.",
+        "limits": "The producer treats families of L-functions while the consumer is formulated for a particular Dirichlet-series setting, so exponents and hypotheses are not directly transferable; excision loses bad blocks and edge regions, gives no everywhere-in-t zero-free region, and the scanned formulas are too damaged to support new exact constants.",
+        "parent_unit_ids": [
+          "openalex_w343820166_v2_u04",
+          "openalex_w343820166_v2_u05",
+          "openalex_w2591008310_v2_u04",
+          "openalex_w2591008310_v2_u05"
+        ],
+        "synthesis_id": "riemann_v2_cross_zero_distribution_density_producer_consumer",
+        "title": "Zero-detecting polynomials produce density bounds that later create usable zero-free intervals"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Accepted as architecture only; displayed estimates (3.1)-(3.2) and exponents need scan reconstruction.",
+          "line_end": 363,
+          "line_start": 319,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Essential original scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The prose-supported proof chooses separated systems, applies the Halasz-Montgomery inequality, substitutes the reflected representation, uses Holder and Lemmas 2-3, and treats the remaining theorem cases by analogy and subdivision.",
+          "source_id": "openalex_w343820166",
+          "source_normalized_sha256": "78ea8b4f00151929ba31b34cbd8de150610eb778c21eaf39b43da9501a66a6b4",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Halasz-Montgomery plus reflection and fourth moments closes the large-value estimate",
+          "unit_artifact_relpath": "depth/units/openalex_w343820166_v2_u04.txt",
+          "unit_bytes": 1094,
+          "unit_id": "openalex_w343820166_v2_u04",
+          "unit_sha256": "6907f65cc94b9535541584b0eab6372e6d89ab3a9f91c4f3ddd6586fc97f8658",
+          "unit_type": "proof assembly",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w343820166_v2_u04.txt",
+          "source_title": "Zero-density estimates for L-functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Each lemma addresses a distinct bottleneck—dependence among points, excessive polynomial length, and family size—so the proof is assembly rather than one dominant inequality.",
+            "nonparaphrase_operation": "Correlation bounds bridge pointwise largeness to mean values; functional-equation reflection and fourth moments make those means controllable.",
+            "quality_reason": "The readable proof architecture applies Halasz-Montgomery, substitutes Lemma 1, uses Holder, invokes Lemmas 2-3, treats one case analogously, and uses Huxley subdivision for another. The output does not reconstruct the unreadable estimates or exponents. The four-control chain is substantive because every link is named in the source.",
+            "source_support": "For a separated system the source applies the Halasz-Montgomery inequality, substitutes the representation from Lemma 1, applies Holder's inequality, and then invokes Lemmas 2 and 3 to obtain the desired large-value estimate. The analogous theorem case is treated similarly, and another case uses Huxley's subdivision before optimizing an auxiliary height.",
+            "speculation_status": "The OCR does not safely preserve estimates (3.1)-(3.2), exponents, or parameter ranges. Some theorem cases are only described by analogy. Accepted as proof architecture only; scan reconstruction is essential. Assigning distinct bottlenecks to dependence, polynomial length, and family mean values is a reasonable architecture-level reading. Equations (3.1)-(3.2), parameter ranges, and quantitative conclusions require the scan."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_c3b2c6a75c114b4f5876c1071e43c4dc4c4029b264a7790c9c64fe0b98d730b4",
+            "dossier_sha256": "349c3ddd1b47232d82f40c81d705e190d5d74424294c85827a3bf02e71ee4b33"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source intentionally gives only a sketch.",
+          "line_end": 383,
+          "line_start": 367,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Essential scan verification for the length windows and resulting exponents.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Sketches the standard deduction: select zeros with a large short polynomial, raise it to an integral power to reach a chosen length window, apply the corresponding large-moduli estimate, and optimize that length to obtain the corollary.",
+          "source_id": "openalex_w343820166",
+          "source_normalized_sha256": "78ea8b4f00151929ba31b34cbd8de150610eb778c21eaf39b43da9501a66a6b4",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Powering a zero-detecting polynomial tunes its length to the large-value theorem",
+          "unit_artifact_relpath": "depth/units/openalex_w343820166_v2_u05.txt",
+          "unit_bytes": 867,
+          "unit_id": "openalex_w343820166_v2_u05",
+          "unit_sha256": "81000595d3b79a91b248d5a165968241d88f3732e6584c8ebe4dfab0d44943f1",
+          "unit_type": "zero-detection transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w343820166_v2_u05.txt",
+          "source_title": "Zero-density estimates for L-functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Powering is a scale-matching operation: it preserves detectability of a zero while moving the witness into the admissible length regime of a stronger theorem.",
+            "nonparaphrase_operation": "A zero-detection lemma bridges zeros to large polynomial values, and length optimization bridges the large-value estimate back to density.",
+            "quality_reason": "The proof sketch explicitly selects zeros detected by a short polynomial, raises to an integral power, places the resulting length in a chosen window, applies a large-value estimate, and optimizes the length. The output makes no quantitative claim from the corrupted length windows. The bridge terminology is anchored to the zero detector and optimization sequence.",
+            "source_support": "The proof sketch restricts to zeros for which a short character polynomial is large, raises that inequality to a suitable integer power so the resulting polynomial lies in a prescribed interval around a freely chosen Z, applies estimate (1.2) or (1.3), and chooses Z to minimize the resulting bound. Parallel arguments give the other corollary estimates.",
+            "speculation_status": "The source intentionally gives only a sketch, and the OCR does not preserve safe length windows or exponents. Original-scan verification is essential for every quantitative claim. Calling powering a scale-matching operation is a faithful conceptual reading. Every exponent and length window requires original-scan verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_c3b2c6a75c114b4f5876c1071e43c4dc4c4029b264a7790c9c64fe0b98d730b4",
+            "dossier_sha256": "349c3ddd1b47232d82f40c81d705e190d5d74424294c85827a3bf02e71ee4b33"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes immutable v1 unit full_openalex_w2591008310_u02 as the central density/asymptotic lemma package.",
+          "line_end": 382,
+          "line_start": 282,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "OCR is poor around all exponents and interval widths; use the scan for exact constants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Jensen bounds zeros in unit-height boxes, a zero-detecting reciprocal Dirichlet polynomial gives a density estimate, and removing neighborhoods of the few bad boxes leaves most of the interval inside zero-free strips suitable for approximation.",
+          "source_id": "openalex_w2591008310",
+          "source_normalized_sha256": "5a5f1a1501bb024c6914b57527e53ec2abe88a0a6b503715b904db6bc80ced4c",
+          "source_page_markers_inside_unit": [
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero density carves the t-interval into long regions where a logarithmic branch is controllable",
+          "unit_artifact_relpath": "depth/units/openalex_w2591008310_v2_u04.txt",
+          "unit_bytes": 4555,
+          "unit_id": "openalex_w2591008310_v2_u04",
+          "unit_sha256": "22f156766ca52b5f1fda75314b35b65fbf231b69221d04a0058e77148bb7d3e8",
+          "unit_type": "zero-excision-and-density-package",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2591008310_v2_u04.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof converts zero control into a usable domain in three stages: Jensen's inequality bounds zeros in unit-height disks; the truncated Dirichlet series M_H for F^{-1} enters through F(s)M_H(s)-1 as a zero detector yielding a density estimate; then logarithmic t-blocks containing zeros, together with neighboring margins, are deleted to form the retained set I_3. The key conceptual operation is therefore not a topological removal but a quantitative pipeline from an analytic detector to a count and then to a geometric restriction of the integration domain. It gains zero-free regions on which the subsequent coefficient asymptotic is posed, while losing bad blocks and edge regions and giving no everywhere-in-t conclusion.",
+            "nonparaphrase_operation": "Factors the construction by function: reciprocal-polynomial truncation detects zeros, density bounds limit contaminated blocks, and block excision converts that count into a restricted analytic domain. This also makes explicit the tradeoff between a coherent good set and the loss of uniform coverage.",
+            "quality_reason": "Accepted because the Jensen, reciprocal-polynomial detector, block deletion, and I_3 mechanisms are directly identifiable. The revision removes unsupported topological language and limits quantitative claims to the qualitative size-loss structure warranted by the OCR-degraded span.",
+            "source_support": "Lemmas 3–5 state a Jensen zero count and progressively stronger qualitative density bounds. Lemma 4 explicitly identifies F(s)M_H(s)-1, with M_H the first H terms of the Dirichlet series for F^{-1}, as the zero-detecting function and says Lemma 1 is used. The span then partitions the t-interval, removes zero-containing blocks and margins, names the remaining intervals I_3, and states Lemma 6's asymptotic over I_3. Exact exponents, widths, and discarded-length bounds are OCR-unsafe.",
+            "speculation_status": "The sparse-defect description is only a qualitative compression of the stated density-and-excision construction. No numerical density exponent, block width, measure loss, or branch parameter is recovered from the damaged formulas; all such quantities require scan verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_014149a945b0ab5cbd2ae21583b50fe7ceb50207a7f4733ae4ed8872ef4b0ec4",
+            "dossier_sha256": "cf4d07fef877769a8969d9b2958b4e5e13e23a9cb647ff514a29358029985ab1"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the missing proof continuation for Lemma 6 in the carried v1 package.",
+          "line_end": 460,
+          "line_start": 383,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The contour and smoothing formula are heavily damaged, but the approximation/error/diagonal sequence is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "On good intervals the chosen branch of F to the k is represented by a smoothed Dirichlet polynomial plus a shifted-contour error; second- and fourth-moment bounds control replacement errors, leaving the diagonal coefficient sum.",
+          "source_id": "openalex_w2591008310",
+          "source_normalized_sha256": "5a5f1a1501bb024c6914b57527e53ec2abe88a0a6b503715b904db6bc80ced4c",
+          "source_page_markers_inside_unit": [
+            9,
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Mellin-smoothed Dirichlet polynomial recovers the coefficient square mass on zero-free intervals",
+          "unit_artifact_relpath": "depth/units/openalex_w2591008310_v2_u05.txt",
+          "unit_bytes": 3501,
+          "unit_id": "openalex_w2591008310_v2_u05",
+          "unit_sha256": "c3e619d0a55eb6db68df9fb1e1c47dc2cfa57235aa86560e69db6944fe226644",
+          "unit_type": "dirichlet-polynomial-asymptotic-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2591008310_v2_u05.txt",
+          "source_title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing and zero excision together create a finite representation that retains the mean-square mass but forgets analytically awkward branch behavior. The diagonal coefficient norm becomes the sufficient statistic.",
+            "nonparaphrase_operation": "Mellin inversion bridges F^k to P(t), and mean-square orthogonality bridges P to its coefficient-square sum.",
+            "quality_reason": "The span gives the missing continuation of Lemma 6: a smoothed Dirichlet polynomial plus contour error on I_3, moment bounds for the error, restoration of excised intervals, and diagonal mean-value evaluation. The output correctly limits the result to a mean asymptotic on good regions rather than pointwise approximation. The phrase 'sufficient statistic' is interpretive and must remain local to this mean-square calculation. Exact contour, smoothing, truncation, and error claims cannot be transcribed safely from the OCR. The output identifies both representation replacement and the estimates that justify it, so it is not paraphrase-only.",
+            "source_support": "The proof of Lemma 6 writes F(s_0)^k=P(t)+E on I_3 using a smoothed finite sum of coefficients d_k(n) and a shifted-contour integral. A bound for E plus second and fourth moments controls replacing |F^k|² by |P|² and restoring the excised interval. A standard Dirichlet-polynomial mean value then gives H times Σ|d_k(n)|²n^{-2α}, with truncation errors bounded by the chosen X.",
+            "speculation_status": "The approximation depends on zero-free intervals, contour-error estimates, and selected smoothing length. It recovers an asymptotic mean on the good set, not pointwise approximation everywhere. The proof sequence is explicit in prose, but the contour, smoothing factor, and powers are heavily OCR-damaged. Treating the coefficient-square diagonal as the retained summary after smoothing is a reasonable conceptual interpretation of the proof. The formulas are heavily damaged, but the approximation-error-diagonal sequence is explicit in prose and displayed structure. The good set I_3 is defined in the preceding unit, which this unit intentionally continues; that lineage should remain linked."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_014149a945b0ab5cbd2ae21583b50fe7ceb50207a7f4733ae4ed8872ef4b0ec4",
+            "dossier_sha256": "cf4d07fef877769a8969d9b2958b4e5e13e23a9cb647ff514a29358029985ab1"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The argument principle and Littlewood's lemma replace direct critical-line zero counting by a shifted mean square of a mollified differential combination. In the earlier formulation this mean becomes a quadratic functional whose relaxed optimizer solves an Euler–Lagrange boundary problem; the later three-piece mollifier expands the same optimization interface into six diagonal and cross moments and compresses them to a scalar c governing the proportion bound.",
+        "generation_panel": "zero_distribution",
+        "historical_or_program_relation": "The later construction refines the admissible mollifier representation and moment bookkeeping while preserving the earlier proof architecture from argument variation to mollified norm to numerical optimization.",
+        "limits": "The two mean-value theorems have different length restrictions, smoothing steps, and multiplicity conventions; polynomial approximation and displayed numerical witnesses do not prove global optimality, and a positive critical-line proportion is not RH.",
+        "parent_unit_ids": [
+          "conrey1989_two_fifths_v2_u03",
+          "conrey1989_two_fifths_v2_u05",
+          "openalex_w1640512387_v2_u01"
+        ],
+        "synthesis_id": "riemann_v2_cross_zero_distribution_critical_line_mollifier_refinement",
+        "title": "Critical-line proportions are optimized only after zero counting is compressed to a mollified mean square"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the choice of shift, mollifier length, and the passage from a zero count to a logarithm of an average squared modulus.",
+          "line_end": 325,
+          "line_start": 189,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Severe formula loss affects eta, V, and the precise inequality. The reduction direction and role of each object are prose-recoverable, but exact reuse requires the original scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reality parity of xi derivatives turns zeta zeros into sign changes of the real part of eta; the argument principle and Littlewood's lemma then bound missing changes through the mean square of a shifted mollified approximation.",
+          "source_id": "conrey1989_two_fifths",
+          "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+          "source_page_markers_inside_unit": [
+            5,
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Critical-line zero counting is reduced to zeros of a mollified differential combination",
+          "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u03.txt",
+          "unit_bytes": 4784,
+          "unit_id": "conrey1989_two_fifths_v2_u03",
+          "unit_sha256": "477cc14d6e6948d661b038c5ef23dd2fc4885ade3eb2c90d756135682cd31f64",
+          "unit_type": "argument-principle-to-mean-square-reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u03.txt",
+          "source_title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reduction replaces direct critical-line zero counting by a chain of representations: parity of completed-zeta derivatives makes zeros of the completed function on the line equivalent, under the stated construction, to zeros of Re eta; argument variation detects such real-part zeros; an approximation V and mollifier B then enlarge the count to zeros of VB; and Littlewood's lemma bounds that count through a shifted mollified mean square. The bookkeeping is not interchangeable: zeros on the critical line carry half weight in the intermediate V and VB counts, whereas the Littlewood count is stated without that convention. Treating the shift and mollifier length as optimization parameters is an inference, not part of the recovered formulas.",
+            "nonparaphrase_operation": "Organizes the proof as a typed reduction and uses the differing multiplicity conventions to show what each bridge gains: tractability is purchased by moving from a boundary real-part zero count to a two-dimensional auxiliary zero count and finally an integral norm.",
+            "quality_reason": "Accepted because the architecture and counting conventions are prose-visible and support a concrete conceptual reduction without repairing damaged formulas.",
+            "source_support": "The span states the real/pure-imaginary parity, the equivalence between a completed-zeta zero and Re eta=0 on the line, the argument-variation zero count, the approximation by V, the mollifier B with a free shift and eventual length choice, the inequality from the V count to the VB count, and the Littlewood mean-square reduction. It explicitly records half-weight conventions and a separate no-half-weight convention.",
+            "speculation_status": "Only the parameter-control reading is inferential. The normalization imposed on Q is preserved merely as an OCR-garbled required condition; exact definitions, equivalences, constants, and the final inequality require the scan. No real-part zero is called a sign change."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_680ec8a2d63a66b65ca52e5b6fbbedb6c2073be4dea285bea058e12a6d77b6e6",
+            "dossier_sha256": "019b08297ba6840f6aea043d643f9db2483eb2d43151d91c451e7b1dd6091cb9"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the separate linear-Q optimization for simple zeros and the numerical parameter selection.",
+          "line_end": 555,
+          "line_start": 398,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Many formulas, including the full theorem statement and functional, are badly OCR-damaged. The variational structure, boundary conditions, and reported numerical output are prose-supported; exact coefficients require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2 supplies the asymptotic for mollifiers shorter than T^(4/7); its main term is organized into a quadratic functional of P, whose boundary-constrained Euler-Lagrange solution gives the optimized numerical proportions.",
+          "source_id": "conrey1989_two_fifths",
+          "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+          "source_page_markers_inside_unit": [
+            9,
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The mollified mean square becomes a quadratic functional minimized by an Euler-Lagrange equation",
+          "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u05.txt",
+          "unit_bytes": 4033,
+          "unit_id": "conrey1989_two_fifths_v2_u05",
+          "unit_sha256": "129f2e9dfa43e907cc2c82e0e6cb97c7bc6de00400ac672271837c01e3cc70b6",
+          "unit_type": "mean-value-and-variational-optimization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u05.txt",
+          "source_title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The mean-value result supplies, for mollifiers in the stated sub-4/7 range, a main term that the source reorganizes as a quadratic functional of the mollifier profile P. With P(0)=0 and P(1)=1, Euler–Lagrange variation yields a linear second-order boundary-value equation. Its optimizer is not itself a polynomial, so the explicit statement that it can be uniformly approximated by polynomials of the required kind is the step that closes the gap between the variational solution and the admissible mollifier family. The degree-one restriction on Q for simple zeros leaves less freedom than the separate choice used for the total critical-line proportion.",
+            "nonparaphrase_operation": "Identifies the admissibility closure in the optimization: arithmetic analysis first makes a functional available, the ODE solves its relaxed problem, and polynomial approximation returns that solution to the permitted coefficient class. The precise optimum still depends on the damaged mean-value formula.",
+            "quality_reason": "Accepted because the variational architecture and polynomial-approximation caveat are explicitly recoverable and yield a concrete mechanism beyond restatement, with formula-level claims withheld.",
+            "source_support": "The span states Theorem 2 with theta<4/7, displays a quadratic expression involving P, P', and coefficients A, B, C, gives the Euler–Lagrange ODE and endpoint data, notes uniform approximation of the nonpolynomial solution by suitable polynomials, and reports the 0.4013 and 0.4077 numerical outcomes for distinct Q choices.",
+            "speculation_status": "Calling the quadratic functional an energy and P's interior a control is an inference. Exact theorem coefficients, weight definitions, functional factors, and numerical reproduction are scan-dependent and are not transcribed from the OCR."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_680ec8a2d63a66b65ca52e5b6fbbedb6c2073be4dea285bea058e12a6d77b6e6",
+            "dossier_sha256": "019b08297ba6840f6aea043d643f9db2483eb2d43151d91c451e7b1dd6091cb9"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the end of the immutable mollifier span because its theorem is the bridge to numerical evaluation.",
+          "line_end": 165,
+          "line_start": 132,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact polynomial coefficients and exponents require scan checking; the optimization pipeline is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the smoothing conditions and mean-value theorem, removes the weight at acceptable error, substitutes the constant into Littlewood's inequality, and gives polynomial choices optimizing total and simple-zero proportions.",
+          "source_id": "openalex_w1640512387",
+          "source_normalized_sha256": "00da2de1c962d1e06f32b470216857444e907e2312f28434c77a1dc7571b8268",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A smoothed seven-term mean-value constant becomes an unsmoothed zero-proportion objective",
+          "unit_artifact_relpath": "depth/units/openalex_w1640512387_v2_u01.txt",
+          "unit_bytes": 2002,
+          "unit_id": "openalex_w1640512387_v2_u01",
+          "unit_sha256": "6c54928f03c242b9c647be547a9979b5c85b45e3be13c84fb62185554e0c5bf8",
+          "unit_type": "smoothing-to-optimization pipeline",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1640512387_v2_u01.txt",
+          "source_title": "Critical zeros of the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing acts here as a removable analytic interface: subject to ϑ₁<4/7, ϑ₂<1/2, and ϑ₃<1/4, the weighted mean square is compressed into the scalar c=c₁+c₂+c₃+2c₁₂+2c₂₃+2c₃₁, comprising six diagonal/cross components with the three cross terms doubled. Standard unsmoothing preserves that leading coefficient, so choosing Q, R, and P₁,P₂,P₃ becomes a length-constrained numerical search through κ≥1−(log c)/R+o(1). This compression gains a finite objective for comparing polynomial witnesses but loses the internal provenance of each moment contribution; the formulas (4)–(9), the unsmoothing deduction, and admissibility at the stated length bounds remain analytic proof burdens, while the displayed witnesses do not certify global optimality.",
+            "nonparaphrase_operation": "The interpretation factors the displayed argument into a representation bridge (weighted to unweighted mean square) followed by constrained objective compression (six moment components to c, then c to a zero-proportion bound), and identifies what information that compression discards and which obligations it leaves unresolved.",
+            "quality_reason": "Accepted because the exact span supports the full mechanism and concrete bounds, while the revision corrects the component count, avoids importing a name absent from the slice, and preserves the scan sensitivity of exact exponents and polynomial coefficients by treating them only as reported witnesses.",
+            "source_support": "The slice states the weight support and derivative conditions, Theorem 2.1 with error Oε(TL⁻¹⁺ε) under the three separate ϑ-bounds, the six-term expression for c, the unsmoothed integral with the same main coefficient and error order, and the resulting κ inequality. It reports Mathematica choices giving κ>0.410918 and a separate choice giving κ*>0.40589.",
+            "speculation_status": "Source facts are the hypotheses, estimates, decomposition, inequality, and reported numerical witnesses. The removable-interface and constrained-search descriptions are corpus-local interpretations of that pipeline. No cross-source claim or named contextual attribution is asserted; global optimality is explicitly not inferred."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_33e0b34027707f846d2a9f7a1d931dacf740d5443bf643c6a21058dcee130ce1",
+            "dossier_sha256": "0e1ee5bcd0884ee7567c8420fff372a401a4bd262be02a3eb2188918f1f2b09b"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Sign changes of the real critical-line Z-function provide local lower bounds on critical-line zeros, while an independent argument-principle count supplies the total number of zeros in a bounded rectangle. Equality of those counts closes the location gap; later Gram-block search strategies reduce the cost of finding the required sign changes without changing that proof object.",
+        "generation_panel": "zero_distribution",
+        "historical_or_program_relation": "The computational program separates certification from search efficiency: early work combined sign changes with Backlund counting, and later work optimized where Z is evaluated while retaining the need for a sufficient count.",
+        "limits": "Gram's one-zero-per-interval law has failures and is not itself a completeness theorem; the conclusion is bounded by the certified height and rectangle, depends on rigorous sign and total-count error control, and cannot be extrapolated to global RH.",
+        "parent_unit_ids": [
+          "openalex_w1980116773_d02",
+          "openalex_w2116781013_v2_u01"
+        ],
+        "synthesis_id": "riemann_v2_cross_zero_distribution_finite_critical_line_completeness",
+        "title": "Critical-line sign changes become a finite completeness certificate only when matched to a total zero count"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes why the Euler-Maclaurin evaluation became computationally expensive at increasing height.",
+          "line_end": 80,
+          "line_start": 26,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Certification logic is prose-supported; Gram-point and Euler-Maclaurin formulas and remainder notation need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Gram-law sign changes locate critical-line zeros, but failures show interval-by-interval sign rules are insufficient. Backlund's rectangle count supplies the independent total, so finding at least that many critical-line zeros excludes additional off-line roots in the bounded region.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Global zero counting closes the gap left by critical-line sign changes",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d02.txt",
+          "unit_bytes": 3306,
+          "unit_id": "openalex_w1980116773_d02",
+          "unit_sha256": "483f9e5357605b65382f899409cfa7e6e145b87c6c45936cfa5b727617a7e73c",
+          "unit_type": "count-versus-location certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d02.txt",
+          "source_title": "On the roots of the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Gram's one-zero-per-interval rule fails, while Hutchinson found at least 138 critical-line zeros by sign changes and Backlund's method gave exactly 138 zeros in the stated rectangle. Interpretation: a location lower bound becomes exhaustive only when it matches an independent total count; equality leaves no room for additional off-line zeros inside that rectangle. The gain is completeness in a bounded region, whereas Gram-interval signs alone neither certify the total nor extend beyond the rectangle. Backlund's counting mechanism and exact OCR-damaged formulas remain outside the recoverable evidence.",
+            "nonparaphrase_operation": "Combines a critical-line lower bound with an independent global total to close the completeness gap.",
+            "quality_reason": "Accepted because it preserves the two logically distinct counts and does not invent details of Backlund's method.",
+            "source_support": "The span states Gram's law and its failures, the at-least-138 sign-change count, the exactly-138 rectangle count, and the bounded exclusion of off-line roots; it also describes the order-height Euler–Maclaurin burden.",
+            "speculation_status": "None."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+            "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Introduces both the search objective and the reason Z-evaluation dominates runtime.",
+          "line_end": 103,
+          "line_start": 81,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The OCR degrades notation but the certification direction is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The paper separates the mathematical certificate from implementation speed: sign changes of real Z(t) locate critical-line zeros, and a zero-counting theorem certifies completeness once sufficiently many have been separated.",
+          "source_id": "openalex_w2116781013",
+          "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite RH verification reduces to enough rigorously signed changes of a real critical-line function",
+          "unit_artifact_relpath": "depth/units/openalex_w2116781013_v2_u01.txt",
+          "unit_bytes": 1822,
+          "unit_id": "openalex_w2116781013_v2_u01",
+          "unit_sha256": "e514b6ec8fabb7c6cab6aac148bf907100ab5d5c0bf1e879cfd84866829b38c4",
+          "unit_type": "finite-rh-certification-architecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_v2_u01.txt",
+          "source_title": "On the zeros of the Riemann zeta function in the critical strip. II",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof object and optimization target are cleanly separated: sign changes provide local zero certificates, while search order affects only the cost of finding them. Empirical block structure guides an adaptive query policy.",
+            "nonparaphrase_operation": "Hardy's real Z function bridges complex critical-line zeros to sign determination on the real t-axis. Gram blocks provide the discrete search representation in which evaluation strategies can be compared.",
+            "quality_reason": "The source says finite verification in a range consists of separating zeros of the real Z(t), equivalently finding sufficiently many sign changes, and then focuses on reducing Z evaluations in Gram blocks. It reports the evaluation averages, the empirical lower floor for programs evaluating every Gram point in the stated range, the 98 percent runtime share, and the machine comparison. Adaptive query policy is modern terminology, but it refers concretely to the source's refined ordering of Z evaluations.",
+            "source_support": "The authors state that finite verification of RH over a range amounts to separating zeros of the real-valued Z(t), equivalently finding sufficiently many sign changes. Their programs modify the Rosser-Lehmer Gram-block method. Brent required about 1.41 Z evaluations per separated zero, while the Lune-Riele-Winter strategy reduced this to about 1.21 and later 1.185; statistics imply a floor near 1.135 for any program evaluating every Gram point in the cited range. About 98 percent of runtime was Z evaluation, motivating a refined search strategy for blocks of length at least two.",
+            "speculation_status": "A sign change certifies an odd number of zeros across an interval, but completeness still requires an external count/argument not developed in this exact span. Faster search does not strengthen the mathematical certificate, and the evaluation averages are machine- and range-specific. OCR damages Gram-index notation, but the sign-change objective and runtime figures are explicit. The zero-counting theorem mentioned in assignment metadata is not stated within this artifact. Separating the certificate object from search-order cost is a valid conceptual reading. The caution that completeness needs the sufficiently-many count beyond an individual sign change is mathematically reasonable and the output explicitly notes that the counting argument is not developed in this span. Gram indices are OCR-damaged, and the assignment's zero-counting theorem is not stated in the exact artifact."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_d80dc2eb44a53993555a68b71112b597aba228b48738480acb1f6aca5ce97454",
+            "dossier_sha256": "4c2139a79487a3e3af07477c656c19c0da4e333abf74c90896222dc1c2379d2f"
+          }
+        }
+      ]
+    }
+  ]
+}

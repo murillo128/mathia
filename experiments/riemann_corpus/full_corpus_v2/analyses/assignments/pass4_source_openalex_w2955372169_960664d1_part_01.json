@@ -1,0 +1,353 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2955372169_960664d1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2955372169",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Self-contained with the local definitions; later operator replacement is deliberately separated into the carried u02 unit.",
+      "line_end": 160,
+      "line_start": 111,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the displayed Caputo integral and log-weighted Dirichlet series; the convergence and specialization claims are clear in prose, but exact phases and indices should be scan-checked before formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The span distinguishes a complex-plane Caputo construction from the resulting log-weighted Dirichlet series and shows that fractional order shifts the pointwise convergence boundary from Re(s)>1 to Re(s)>1+alpha while recovering integer derivatives.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional zeta as a shifted-convergence Dirichlet series",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u06.txt",
+      "unit_bytes": 3319,
+      "unit_id": "full_openalex_w2955372169_u06",
+      "unit_sha256": "6c93b98848b835919f4567adca2dd1f4300d39a629349e2ad13bd90be68f610d",
+      "unit_type": "definition-and-convergence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u06.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 103,
+          "line_end": 110,
+          "text": "\n                  2 Notations and preliminary results\n                  For the purposes of this paper α and k are always elements of R and N0 , respectively,\n                  where N0 = N ∪ {0}. A generic complex variable is denoted by s and the imaginary unit\n                  by i. Moreover, for every x ∈ R and n ∈ N0 , the symbol xn indicates the so-called falling\n                  factorial [19].\n\n\n",
+          "sha256": "38b160edbc6224ae8e54d9ce669a560d473050ed886cd6ed00447895a0e2be65"
+        },
+        "after": {
+          "line_start": 161,
+          "line_end": 168,
+          "text": "\n                  2.2 Functional equation of ζ (α )\n                  The Riemann ζ function, introduced in 1859 [22], is characterized by the following func-\n                  tional equation:\n\n                                                                           πs\n                        ζ (s) = 2(2π)s–1 Γ (1 – s)ζ (1 – s) sin               ,   for any s ∈ C,               (2.3)\n                                                                           2\n",
+          "sha256": "562f06aa9ab2e7cfefe0686061d86380c24d6848b82eb4e03cc58eb10b9d08fa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.1 Fractional calculus and zeta^(alpha)",
+            "line_end": 161,
+            "line_start": 111,
+            "mathematical_role": "Introduces the complex Caputo derivative, the fractional Dirichlet-series representation of zeta, its shifted convergence half-plane, and its integer-order specialization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 160,
+          "line_start": 111,
+          "title": "Fractional zeta as a shifted-convergence Dirichlet series",
+          "unit_id": "full_openalex_w2955372169_u06",
+          "unit_type": "definition-and-convergence",
+          "why_material": "The span distinguishes a complex-plane Caputo construction from the resulting log-weighted Dirichlet series and shows that fractional order shifts the pointwise convergence boundary from Re(s)>1 to Re(s)>1+alpha while recovering integer derivatives."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Self-contained with the local definitions; later operator replacement is deliberately separated into the carried u02 unit.",
+          "representation_dependency": "Depends on the displayed Caputo integral and log-weighted Dirichlet series; the convergence and specialization claims are clear in prose, but exact phases and indices should be scan-checked before formula-level reuse.",
+          "unit_id": "full_openalex_w2955372169_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 190,
+            "line_start": 162,
+            "title": "Asymmetric reflection, symmetric completion, and Xi invariance",
+            "unit_id": "full_openalex_w2955372169_u07",
+            "unit_type": "equivalent-functional-equations",
+            "why_material": "The same zeta reflection law is reframed from asymmetric formulas to a completed symmetric form and then compressed into xi(s)=xi(1-s), providing the classical representation target for the fractional construction."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper's simplification is driven by a representation/operator match: the forward difference operator supplies generalized Leibniz and a simple action on exponentials, allowing the reflection formula to be repackaged from three infinite sums to one.",
+            "limit": "The source asserts reduced computational cost and reports overflow for approximations of (2.7), but provides no benchmark data; exact phase and convergence details remain formula-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u02",
+              "full_openalex_w2955372169_u09",
+              "full_openalex_w2955372169_u03",
+              "full_openalex_w2955372169_u10",
+              "full_openalex_w2955372169_u11"
+            ],
+            "title": "Operator choice as tractability control"
+          },
+          {
+            "claim": "The one-unit mismatch between eta^(alpha) and zeta^(alpha) convergence motivates the translated strip, while generalized Leibniz expresses the eta side through zeta derivatives and reduces correctly at integer orders.",
+            "limit": "Calling (alpha,1+alpha) a fractional critical strip is an analogy based on convergence translation; the source does not prove a corresponding zero theorem or fractional Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u08",
+              "full_openalex_w2955372169_u05",
+              "full_openalex_w2955372169_u14"
+            ],
+            "title": "Convergence boundaries organize the shifted-strip eta bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 110,
+              "line_start": 40,
+              "reason": "General motivation, paper roadmap, computational problem statement, and notation support later units without adding an independent mechanism beyond them."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u06",
+          "spontaneous_reading": "Fractional differentiation is made concrete by reweighting the zeta Dirichlet coefficients with fractional powers of logarithms. The order is therefore not merely a label: it moves the pointwise convergence boundary from Re(s)>1 to Re(s)>1+alpha, while integer orders return the familiar derivative series."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u06",
+          "source_grounded_mathematics": "The span gives a complex-plane Caputo derivative, recalls the Dirichlet series for zeta and its analytic continuation, states pointwise convergence of the associated alpha-order series for Re(s)>1+alpha, and gives the kth derivative as a phase times a log^k(n)-weighted Dirichlet series.",
+          "conceptual_reading": "The logarithmic weight records how differentiation acts coefficientwise on n^{-s}; fractional order continuously changes both that weight and the domain where the series representation is directly valid. Recovery of integer derivatives is a structural consistency check on the extension.",
+          "representation_or_bridge": "The bridge runs from an integral definition of a fractional derivative on holomorphic functions to a log-weighted Dirichlet-series representation. This coefficient representation exposes the shifted abscissa of convergence and links fractional and ordinary derivatives.",
+          "boundary_or_failure": "Convergence of the displayed series in a half-plane is not analytic continuation of that series to all s, and the span does not establish a fractional functional equation or any result about zeros. Agreement at integer orders does not by itself validate all noninteger-order properties.",
+          "uncertainty": "The prose-level convergence and specialization claims are clear, but the Caputo kernel, phases, and exact summation details are formula- and branch-sensitive in the extracted text and require scan verification before symbolic reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2955372169_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines a complex-plane Caputo derivative under m-1<alpha<m and states that the series associated with zeta^(alpha) converges pointwise for Re(s)>1+alpha.",
+          "It displays the ordinary kth derivative as a phased log^k(n)-weighted Dirichlet series and calls the fractional construction a generalization of it."
+        ],
+        "inference": [
+          "Treating integer-order agreement as a structural consistency check is reasonable.",
+          "Separating pointwise convergence of a displayed/associated series from analytic continuation is a sound caution."
+        ],
+        "unsupported_or_imported": [
+          "Equation (1.1) is not present in this frozen span, so the candidate's explicit fractional log^alpha coefficient reweighting and coefficientwise bridge are imported rather than visible here.",
+          "The claim that fractional order continuously changes the logarithmic weight is not established by the formulas in this span; only dependence of the convergence half-plane on alpha is explicit."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase that the coefficient representation 'exposes' the shifted abscissa is generic and overstates a fractional coefficient representation absent from the evidence boundary."
+        ],
+        "context_or_ocr_risk": [
+          "The Caputo kernel, phase, indices, and noninteger-power branches are formula-sensitive; the candidate already notes this risk."
+        ],
+        "missed_mechanism": [
+          "The safe local mechanism is narrower: the integral operator defines the fractional construction, the source reports its associated convergence boundary, and the integer log-weighted series supplies a comparison rather than a displayed noninteger coefficient formula."
+        ],
+        "revision_instructions": [
+          "Remove or qualify every assertion that the frozen span displays log^alpha reweighting of zeta coefficients or coefficientwise fractional differentiation.",
+          "Retain the reported half-plane shift, the displayed integer-order log^k series, the consistency-check interpretation, and the existing analytic-continuation and formula-risk boundaries."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps carried u05 at its theorem conclusion and supplies the repair context beyond the original line 839 endpoint.",
+      "line_end": 881,
+      "line_start": 801,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact signs, phases, and derivative superscripts are formula-dependent and OCR-sensitive; the finite-versus-infinite truncation distinction is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The alpha-to-zero comparison and explicit first-, second-, and m-th-order identities show how the infinite fractional series reduces to ordinary finite Leibniz expansions, furnishing a structural consistency check rather than numerical evidence.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional eta-zeta expansion truncates to finite Leibniz sums at integer order",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u14.txt",
+      "unit_bytes": 3826,
+      "unit_id": "full_openalex_w2955372169_u14",
+      "unit_sha256": "3e3516d2f008f6516d33af1f42797b41504f723942d2f25b666070e4d981f611",
+      "unit_type": "integer-order-consistency-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u14.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 793,
+          "line_end": 800,
+          "text": "                                                               e log 2ζ     (s).                            (4.4)\n                                                             k\n                                                          k=0\n\n\n                  Combining (4.3) and (4.4) gives the ﬁrst part of Theorem 4.1. Finally, comparison of (2.9)2\n                  and (4.1) completes the proof.                                                           \u0002\n\n",
+          "sha256": "4a7e6a01af730e8b7a2369d601d48c6bac1044df389221bf21ff562a087d54a3"
+        },
+        "after": {
+          "line_start": 882,
+          "line_end": 889,
+          "text": "\n                  4.2 The role of ζ (α ) in the distribution of prime numbers\n                  The Euler product in (2.8) cannot be used to investigate the link between ζ (α) and the\n                  distribution of prime numbers due to the nonmultiplicativity of logα . In addition, the in-\n                  troduction of the strip (α, 1 + α) raises more delicate problems, such as the fractional gen-\n                  eralization of both the Riemann hypothesis and the critical line Re s = 1/2. According to\n                  the approach given in [18], the principal candidate for this role is the line Re s = 1/2 + α.\n                    Unfortunately, the zeros of ζ (α) represent a major challenge. In fact, even now the zeros\n",
+          "sha256": "7f6e532aba78aea24480c6f600762e5b1e352bbe71c51cf531e8892619a14274"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4.1 Eta in terms of zeta^(alpha)",
+            "line_end": 882,
+            "line_start": 758,
+            "mathematical_role": "Uses the generalized Leibniz rule to express eta^(alpha) and the even-index Dirichlet series through derivatives of zeta, including finite integer-order checks."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 881,
+          "line_start": 801,
+          "title": "Fractional eta-zeta expansion truncates to finite Leibniz sums at integer order",
+          "unit_id": "full_openalex_w2955372169_u14",
+          "unit_type": "integer-order-consistency-check",
+          "why_material": "The alpha-to-zero comparison and explicit first-, second-, and m-th-order identities show how the infinite fractional series reduces to ordinary finite Leibniz expansions, furnishing a structural consistency check rather than numerical evidence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps carried u05 at its theorem conclusion and supplies the repair context beyond the original line 839 endpoint.",
+          "representation_dependency": "Exact signs, phases, and derivative superscripts are formula-dependent and OCR-sensitive; the finite-versus-infinite truncation distinction is explicit.",
+          "unit_id": "full_openalex_w2955372169_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 839,
+            "line_start": 753,
+            "title": "Generalized Leibniz expansion links eta^(alpha) to zeta derivatives",
+            "unit_id": "full_openalex_w2955372169_u05",
+            "unit_type": "eta-zeta fractional link",
+            "why_material": "Differentiating eta=(1-2^(1-s))zeta with the generalized Leibniz rule expresses eta^(alpha) and the even-index log-weighted series as an infinite combination of lower fractional derivatives of zeta, with finite truncation at integer order."
+          },
+          {
+            "line_end": 899,
+            "line_start": 883,
+            "title": "Nonmultiplicativity and unknown derivative zeros block the direct prime route",
+            "unit_id": "full_openalex_w2955372169_u15",
+            "unit_type": "obstruction",
+            "why_material": "The source states why differentiating the Euler product is unavailable for log^alpha weights and why known information about zeros of integer zeta derivatives is insufficient to justify a fractional critical-line analogue, motivating a weaker left-half-plane link."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The one-unit mismatch between eta^(alpha) and zeta^(alpha) convergence motivates the translated strip, while generalized Leibniz expresses the eta side through zeta derivatives and reduces correctly at integer orders.",
+            "limit": "Calling (alpha,1+alpha) a fractional critical strip is an analogy based on convergence translation; the source does not prove a corresponding zero theorem or fractional Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u08",
+              "full_openalex_w2955372169_u05",
+              "full_openalex_w2955372169_u14"
+            ],
+            "title": "Convergence boundaries organize the shifted-strip eta bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u14",
+          "spontaneous_reading": "The fractional eta-zeta relation is checked at its classical boundaries: alpha tending to zero recovers eta=(1-2^{1-s})zeta, and positive integer alpha=m collapses the generalized infinite Leibniz expansion to a finite binomial sum. The explicit first and second cases make truncation, not numerical agreement, the key evidence."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u14",
+          "source_grounded_mathematics": "Under the stated convergence condition Re(s)>alpha, the span takes alpha to zero in the fractional relation and obtains the classical eta-zeta factorization. Corollary 4.2 expresses the even-index log^alpha-weighted Dirichlet series through derivatives of zeta; its upper index is alpha for integer alpha and infinity otherwise. Cases m=1, m=2, and general positive integer m reproduce finite Leibniz sums.",
+          "conceptual_reading": "Integer-order truncation is a structural falsification test for the proposed fractional expansion: generalized binomial coefficients must eliminate all terms beyond m and recover the ordinary product rule. The alpha-to-zero limit separately checks compatibility with the undifferentiated identity.",
+          "representation_or_bridge": "The bridge connects the alternating eta representation, its even-index correction, and derivatives of zeta via generalized Leibniz. At integer order the nonlocal infinite representation compresses back to the local finite derivative algebra.",
+          "boundary_or_failure": "These consistency checks do not prove the noninteger expansion outside its convergence domain, establish analytic continuation, or provide evidence about zeros or primes. A correct integer restriction is necessary but not sufficient for a sound fractional theory.",
+          "uncertainty": "The finite-versus-infinite distinction is explicit, but exact phases, signs, derivative superscripts, and the notation for the truncation index are formula-sensitive and should be scan-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2955372169_u14",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states convergence under Re(s)>alpha, records an alpha-to-zero recovery of the classical eta-zeta factorization, and gives Corollary 4.2 with a finite upper index for integer alpha and an infinite one otherwise.",
+          "The first-, second-, and general mth-order formulas support the candidate's finite-Leibniz consistency-check interpretation."
+        ],
+        "inference": [
+          "Treating integer-order truncation and the undifferentiated limit as separate structural checks is substantive and appropriately weaker than validation of the full fractional theory.",
+          "The candidate correctly preserves limits concerning analytic continuation, zeros, primes, and noninteger convergence."
+        ],
+        "unsupported_or_imported": [
+          "The source specifies alpha tending to zero from above, alpha->0+, whereas the candidate repeatedly says only 'alpha tending to zero'; this drops the direction of the stated limit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact phases, signs, derivative superscripts, and the truncation-index notation are OCR-sensitive; the candidate already flags this."
+        ],
+        "missed_mechanism": [
+          "The one-sided alpha->0+ hypothesis must be retained alongside Re(s)>alpha when describing the classical-boundary check."
+        ],
+        "revision_instructions": [
+          "Change both spontaneous and directed descriptions of the zero-order check to the one-sided limit alpha->0+.",
+          "Keep the finite-versus-infinite truncation mechanism and all existing proof-boundary cautions unchanged."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "0d956ebfce7462ab08ca7736845d38d272163fd989b997ac491fd30cf836c5c7"
+}

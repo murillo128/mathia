@@ -1,0 +1,431 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_bimodule_from_commuting_endpoint_actions": {
+      "analysis_id": "agnostic_oa_generation_abfbf0cdd8a083ffafd8f969238005bae1752d31f7533d69c2248ac68eef6f84",
+      "boundary_or_failure": "The realization comes from two open-string endpoints in a zero-slope torus construction. Reversing boundary orientation changes one multiplication to the opposite algebra, so left/right conventions carry mathematical content rather than being removable notation.",
+      "interpretation": "Source fact: the artifact constructs distinct endpoint algebras A and A' acting on the same ground states and explicitly identifies the resulting carrier as an A×A' bimodule. Reusable inference: spatially separated commuting actions naturally define compatible left and right module structures once orientation is accounted for.",
+      "nonparaphrase_operation": "Endpoint-to-bimodule conversion: assign one endpoint action L_a and the oppositely oriented endpoint action R_b, replace the latter algebra by its opposite when needed, and verify L_aR_b=R_bL_a together with each action's associativity. The shared state space then carries an (A,A')-bimodule rather than two unrelated representations.",
+      "source_support": "The excerpt separately builds the operator algebra at σ=0 and the algebra at σ=π, describes the latter through the invariant orbifold subalgebra, and states that quantized strings supply the A×A' bimodule.",
+      "uncertainty": "The physical construction is one realization of the algebraic pattern; the exact commuting-action proof and orientation convention are summarized by the bound context and should be checked before transporting the displayed phases or generators.",
+      "unit_id": "agnostic_oa_bimodule_from_commuting_endpoint_actions"
+    },
+    "agnostic_oa_chart_breakdown_detected_by_poles": {
+      "analysis_id": "agnostic_oa_generation_1b132a376ae4d2d2d13ef673143d34ca1ff323f46c1285ddbc8d2427e5b2b215",
+      "boundary_or_failure": "The displayed solution is the rank-one constant-curvature case. A pole certifies failure of that coordinate expression where its denominator is noninvertible; it does not by itself certify that the represented field configuration or theory is singular.",
+      "interpretation": "Source fact: the curvature transport reduces to δF̂=-F̂δθF̂ and has the fractional solution F̂=(1+Fθ)^{-1}F. Reusable inference: equivalence maps should be treated as charts with explicit invertibility domains rather than as globally valid identifications.",
+      "nonparaphrase_operation": "Denominator-domain audit: factor the transport through inversion of 1+Fθ, declare its noninvertibility locus to be outside the forward chart, and separately inspect the inverse presentation's denominator before inferring an intrinsic singularity. This turns a pole into a chart-selection test.",
+      "source_support": "The artifact gives the constant-curvature differential equation, its boundary condition at θ=0, and the reciprocal solution whose existence requires the matrix denominator to be invertible; the assignment-bound context identifies the corresponding presentation-dependent pole interpretation.",
+      "uncertainty": "No general higher-rank or varying-curvature chart theorem is proved in this span, and the extracted fraction should be checked against the typeset equation before symbolic deployment.",
+      "unit_id": "agnostic_oa_chart_breakdown_detected_by_poles"
+    },
+    "agnostic_oa_distinguish_field_redefinition_from_duality": {
+      "analysis_id": "agnostic_oa_generation_faa5cfc480b1351cc3f1f0ab71a52347994582c47af38ea61f86e5cc127e36cf",
+      "boundary_or_failure": "The duality formulas are zero-slope, torus, and domain sensitive; rational deformation permits a commutative dual, while singular group elements fail to act regularly. The same-space field redefinition is broader in θ but replaces a simple action by a complicated one.",
+      "interpretation": "Source fact: rational T-duality can change torus volume and the effective rank while carrying a simple theory to a simple commutative one, whereas the earlier field redefinition works on the same torus without changing rank and complicates the action. Reusable inference: two transformations called equivalences are distinct when their preservation signatures differ.",
+      "nonparaphrase_operation": "Preservation-signature classification: label each map by its action on space, volume, rank, deformation parameter, and action form. The field redefinition has signature (fixed, fixed, fixed, changed presentation, simple→nonpolynomial), while the rational duality changes geometric/module data but preserves a simple-action form; therefore neither should be substituted for the other.",
+      "source_support": "The excerpt derives fractional T-duality transformations, identifies rational cases mapping to a smaller commutative torus, notes singular transformations, and explicitly stresses that this is unrelated to the earlier same-torus, same-rank change of variables.",
+      "uncertainty": "The exact transformation laws are formula-sensitive and OCR-damaged, and the excerpt does not justify a new general duality family outside the stated torus and scaling regime.",
+      "unit_id": "agnostic_oa_distinguish_field_redefinition_from_duality"
+    },
+    "agnostic_oa_measure_and_center_constraints_on_background_change": {
+      "analysis_id": "agnostic_oa_generation_bccc44d9db7291eafb18b2388ff45f33769818f648493fc88857d4e13174315d",
+      "boundary_or_failure": "Invariance of the displayed density is insufficient for invariance of the action: the integration measure and coupling must transform too. For degenerate deformation data, admissible changes must also avoid altering rank and central directions, so the invertible-case argument cannot simply be continued through rank change.",
+      "interpretation": "Source fact: fixing local-frame C components makes the contracted curvature expression invariant, but the source then separately requires the measure to be background independent and uses that requirement to constrain the Yang-Mills coupling. The assignment-bound source context adds that degeneracy makes rank and algebraic center structural constraints. Reusable inference: an invariance demand must be propagated through every dependent layer, not checked only on the integrand.",
+      "nonparaphrase_operation": "Dependency-closure audit: start from the proposed background change and traverse its dependence graph through frame, metric contraction, coordinate Jacobian, measure, coupling, rank, and center. Reject the change at the first node that is not preserved or supplied with a compensating transformation.",
+      "source_support": "The exact artifact distinguishes invariance of Q and the contracted density from invariance of the full action, explicitly isolates the measure, and says its invariance determines the coupling transformation; the bound unit metadata records the additional rank-and-center restriction in the degenerate case.",
+      "uncertainty": "The visible excerpt ends during the measure conversion, so the exact coupling law and the degenerate rank/center derivation are not independently recoverable from that excerpt alone and should be checked in the typeset source before formula-level use.",
+      "unit_id": "agnostic_oa_measure_and_center_constraints_on_background_change"
+    },
+    "agnostic_oa_moduli_space_vs_representatives": {
+      "analysis_id": "agnostic_oa_generation_57fd6c991822b897e648299d6087ad57ee6fb39b9c53c05cf672000dc66e9602",
+      "boundary_or_failure": "The exact excerpt is a specialized noncommutative-instanton/FI analysis and directly establishes a parameterized zero locus, not a general theorem that all moduli spaces forget every parameter retained by representatives. The representative-level algebra dependence is supplied by the bound context rather than derived in the visible calculation.",
+      "interpretation": "Source fact: the potential's zero set is identified as the instanton moduli space, the origin is excluded when ζ is nonzero, and ζ is related to a deformation-dependent combination. Reusable inference: classification can factor through a compressed parameter such as ζ even while concrete representatives still inhabit structures depending on the fuller deformation data.",
+      "nonparaphrase_operation": "Parameter-factorization test: factor the construction as full deformation data → ζ → equations → quotient zero locus, identify parameter directions invisible after the first arrow, and keep those directions attached to the representative algebra rather than erasing them globally. This separates invariance of the moduli classification from comparability of individual representatives.",
+      "source_support": "The artifact displays the ζ-dependent potential, explains that its zero space excludes the pointlike origin for ζ≠0, identifies ζ with a deformation combination, and calls the zero space the noncommutative-instanton moduli space; the assignment metadata records the fuller representative-algebra dependence.",
+      "uncertainty": "The spectral discussion includes stated belief and physical analogy, and the stronger quotient-versus-representative conclusion is an inference unless the omitted typeset context establishing dependence on the full parameter pair is checked.",
+      "unit_id": "agnostic_oa_moduli_space_vs_representatives"
+    },
+    "agnostic_oa_perturbative_transport_between_deformations": {
+      "analysis_id": "agnostic_oa_generation_107aee026efa0b5ff8955544c20f3fadd564cc9edc13a51931089d7491241614",
+      "boundary_or_failure": "The transport uses the displayed associative star-product family and controls every finite formal order, not convergence, path independence for arbitrary deformation families, or a global equivalence across singular parameter values.",
+      "interpretation": "Source fact: a first-order compatibility solution for fields and gauge parameters is reinterpreted at an arbitrary θ, and the variation identity for the star product yields differential equations transporting equivalent gauge data to θ+δθ. Reusable inference: an infinitesimal equivalence can be promoted to a formal finite-order transport when the defining product varies coherently and associativity persists.",
+      "nonparaphrase_operation": "Infinitesimal-to-formal transport: regard the first-order correction as a connection along deformation-parameter space, impose preservation of gauge-equivalence classes at each step, and recursively integrate its coefficient equations order by order. The operation converts a local compatibility calculation into a generator for an entire formal family.",
+      "source_support": "The excerpt derives first-order formulas for Â and the transformed parameter, observes that the product-variation identity holds at any θ, and then writes differential equations that it says generate the change of variables to all finite orders.",
+      "uncertainty": "The source explicitly leaves convergence beyond scope, and dense OCR in the tensor-index formulas makes their exact coefficients unsafe to reuse without the typeset original.",
+      "unit_id": "agnostic_oa_perturbative_transport_between_deformations"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_bimodule_from_commuting_endpoint_actions": {
+      "critic_sha256": "aa3dc344aab553ab5903192c156a889e81b8dfc69096a27bc488bc95aa0591e6",
+      "generation_sha256": "cd073ce4147e586aeb721ce5101f08b55f9daab722352970957b5111ed6715c9"
+    },
+    "agnostic_oa_chart_breakdown_detected_by_poles": {
+      "critic_sha256": "ecb48ed354079f1a0482c74106bd2b7af71a65f1759e3f6f5736d2c0422adde6",
+      "generation_sha256": "9d03d6fb3bbc7edb1a311b91be8dc01bd2373e6ef0ddc321278758c4c402faba"
+    },
+    "agnostic_oa_distinguish_field_redefinition_from_duality": {
+      "critic_sha256": "45a8f7246cb45721cf115422b754759bce4f91f3cd8323964f9bf33c841c9bd3",
+      "generation_sha256": "e106f51cb174a02c751282255fbc7d052cc616d1ba4a0461b6bd35ecd36b5fd9"
+    },
+    "agnostic_oa_measure_and_center_constraints_on_background_change": {
+      "critic_sha256": "2ea253d6de08a616a9f008e8f91ea285171588a662c575bf89fedc733ae7d14d",
+      "generation_sha256": "230639d9d6240aaefdfdb24570c9d7b83b7b8ea5829c7ec7d0b699820e5c5824"
+    },
+    "agnostic_oa_moduli_space_vs_representatives": {
+      "critic_sha256": "c2f8100f94686b45c489a8d18b5d9d3c2ba28040e5853bc0e7a474d9dc80b980",
+      "generation_sha256": "63de1d8dc57278c5332498de605e34f9267eee34e12c6746a51f3c1a978d1923"
+    },
+    "agnostic_oa_perturbative_transport_between_deformations": {
+      "critic_sha256": "b56b796ba9499d99ebf687b8dad651090de9c9414d388adc9df9628ef184e394",
+      "generation_sha256": "d8d7bccedcc31bdcae90560e953e4934b683b5de9a69a2a64ccd0f28280858f4"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_bimodule_from_commuting_endpoint_actions": {
+      "analysis_id": "agnostic_oa_critic_7c642d0379c5d1b22b5d0aa530f666f773d0afed572cad4ebf4d27972ee2a576",
+      "context_risk": "The artifact begins mid-construction and gives endpoint algebras plus the stated A by A-prime bimodule conclusion, but it does not explicitly derive cross-end commutation or an opposite-algebra orientation convention.",
+      "decision": "revise",
+      "faithfulness": "The candidate correctly reports that separate endpoint operator algebras act on the quantized open-string ground states and that the source calls the result an A by A-prime bimodule. Its detailed commuting-action and orientation proof is not contained in this span.",
+      "missed_mechanism": "The exact mechanism shown is construction of the two endpoint algebras followed by assertion of their bimodule carrier. The verification L_a R_b=R_b L_a and the reason one multiplication is opposite must be marked as algebraic unpacking or supplied by additional evidence.",
+      "paraphrase_risk": "Low to moderate: endpoint-to-bimodule conversion is useful, but presenting standard bimodule axioms as if this physical excerpt proves them hides the source boundary.",
+      "revision_instructions": "Retain the source-grounded endpoint-algebra construction and stated bimodule conclusion. Recast commuting left/right actions and opposite multiplication as conditions to verify, not observed source facts, and remove the claim that boundary-orientation reversal is demonstrated here.",
+      "unit_id": "agnostic_oa_bimodule_from_commuting_endpoint_actions",
+      "unsupported_or_imported": "Explicit cross-end commutation, associativity checks, and orientation reversal to the opposite algebra are not stated in this artifact; they are standard algebraic context rather than bound evidence."
+    },
+    "agnostic_oa_chart_breakdown_detected_by_poles": {
+      "analysis_id": "agnostic_oa_critic_ba08541bcbfbb79338afcc16d01d758b5b68f47df2279efa62625531ce23bc20",
+      "context_risk": "The matrix fraction is OCR-sensitive but readable enough for a domain condition; the span contains no explicit discussion of poles, inverse charts, or the status of the underlying field configuration at a singular denominator.",
+      "decision": "revise",
+      "faithfulness": "The candidate correctly identifies the constant-curvature equation and its fractional solution, so requiring invertibility of the displayed denominator is source-grounded; interpreting every failure as a chart transition rather than merely an undefined formula goes beyond the span.",
+      "missed_mechanism": "The exact evidence supports only a denominator-domain audit of the displayed solution. It does not supply a second presentation that covers the excluded locus or demonstrate that the physical object remains nonsingular there.",
+      "paraphrase_risk": "Low as an operation, but the chart-selection framing acquires unsupported force when it is presented as a conclusion rather than a cautious diagnostic.",
+      "revision_instructions": "State only that the formula F-hat=(1+F theta)^{-1}F requires an invertible denominator and therefore has a limited algebraic domain. Treat chart breakdown, an inverse denominator, and absence of intrinsic singularity as hypotheses requiring separately bound evidence.",
+      "unit_id": "agnostic_oa_chart_breakdown_detected_by_poles",
+      "unsupported_or_imported": "The inverse-presentation audit, the claim that a pole certifies only coordinate-chart failure, and the assurance that the represented field or theory need not be singular are not present in this artifact."
+    },
+    "agnostic_oa_distinguish_field_redefinition_from_duality": {
+      "analysis_id": "agnostic_oa_critic_f864cf1b16f43d747def1e4230c4a96cbe666f6b95e6dd6e7f5d5b2c72ce8b8d",
+      "context_risk": "The fractional transformation formulas are OCR-sensitive and the span ends midway through the final comparison, but the rational-domain, singularity, volume, same-torus, and action-complexity distinctions are explicit.",
+      "decision": "revise",
+      "faithfulness": "The candidate faithfully separates rational torus T-duality from the section-3 field redefinition by domain, torus geometry, and action form. It overstates the exact span by assigning a demonstrated effective-rank change to the duality side.",
+      "missed_mechanism": "The source's strongest bound discriminator is that rational T-duality can reach a smaller commutative torus, whereas the field redefinition exists for any theta on the same space and turns a simple quadratic action into a complicated nonpolynomial one; those facts suffice without the unshown rank signature.",
+      "paraphrase_risk": "Low: a preservation-signature table is a concrete disambiguation operation, though each signature component must be restricted to what the span actually states.",
+      "revision_instructions": "Keep the signature comparison for deformation domain, torus volume/space, and action form. Remove the claim that this artifact proves the duality changes effective rank; it only explicitly says the field redefinition does not change rank before the span cuts off.",
+      "unit_id": "agnostic_oa_distinguish_field_redefinition_from_duality",
+      "unsupported_or_imported": "A duality-induced effective-rank change and the full continuation of the final contrast are not present in the bound artifact; no new general duality family is established."
+    },
+    "agnostic_oa_measure_and_center_constraints_on_background_change": {
+      "analysis_id": "agnostic_oa_critic_4a93d0a8e062cd35446e5934fa4bb120af8c2e735fe6109a61587e94469438e3",
+      "context_risk": "The unit begins from the preceding density result and ends during the measure conversion. It states that measure invariance determines the coupling transformation but does not display that law or discuss degenerate theta, rank, or the algebraic center.",
+      "decision": "revise",
+      "faithfulness": "The integrand-versus-action distinction is faithful: the source explicitly says density invariance is insufficient and separately requires the measure divided by the Yang-Mills coupling to be background independent. The candidate's rank-and-center extension is not faithful to this exact span.",
+      "missed_mechanism": "The bounded mechanism is propagation from density to measure and coupling, with a coordinate conversion to y variables. The candidate replaces the unfinished measure calculation with a broader dependency graph whose rank and center branches are absent.",
+      "paraphrase_risk": "Moderate: dependency-closure is a real reusable operation, but adding frame, rank, and center nodes not evidenced here makes it resemble a generic completeness checklist.",
+      "revision_instructions": "Retain only the audit from invariant density to integration measure, coordinate Jacobian, and compensating coupling transformation. Remove rank and center constraints and do not state an exact coupling law, since this artifact ends before those results.",
+      "unit_id": "agnostic_oa_measure_and_center_constraints_on_background_change",
+      "unsupported_or_imported": "Degenerate-deformation restrictions, preservation of rank and central directions, and any completed coupling formula are imported from outside the bound artifact; the preceding detailed frame construction also is only referenced, not re-established here."
+    },
+    "agnostic_oa_moduli_space_vs_representatives": {
+      "analysis_id": "agnostic_oa_critic_7c86aeee35925b1661c70106bb30d27916e5dfb97a775428ad63aa8b9f9557ac",
+      "context_risk": "The artifact mixes a conjectural spectral analogy with an explicit FI-potential calculation. It establishes a zeta-parameterized zero locus but contains no comparison of representative algebras across a full parameter pair.",
+      "decision": "revise",
+      "faithfulness": "The source supports the facts that the displayed potential depends on zeta, its zero space is identified as an instanton moduli space, and the origin is excluded for nonzero zeta. The candidate's claim that representatives retain fuller deformation data is not supported here.",
+      "missed_mechanism": "The usable mechanism is parameter compression from the displayed deformation-dependent combination to zeta and then to the zero-locus equations. The separate representative-level dependence needed for a quotient-versus-representative contrast is missing.",
+      "paraphrase_risk": "Moderate: the factorization test is substantive when limited to zeta, but attaching invisible parameter directions to an unshown representative algebra turns it into an imported general template.",
+      "revision_instructions": "Limit the candidate to the observation that the displayed zero-locus equations factor through zeta and that nonzero zeta removes the origin. Remove all claims about the full parameter pair, representative algebras, or direct comparison of representatives unless separately bound source text establishes them.",
+      "unit_id": "agnostic_oa_moduli_space_vs_representatives",
+      "unsupported_or_imported": "Dependence of individual representatives on both deformation components, obstruction to comparing them, and the assertion that the moduli classification forgets directions retained by their coefficient algebra are absent from this artifact."
+    },
+    "agnostic_oa_perturbative_transport_between_deformations": {
+      "analysis_id": "agnostic_oa_critic_30dc752f28767dcd24a4c996cd173e44b13fb68c248523aca89afb68cce455b1",
+      "context_risk": "The assigned span is formula-dense and terminates while announcing the differential equation; it does not contain the displayed transport equation or the later statement that it generates all finite orders.",
+      "decision": "revise",
+      "faithfulness": "The first-order compatibility formulas and the observation that the star-product variation identity holds at arbitrary theta support an infinitesimal nearby-deformation construction, but the candidate overstates what this exact span displays and proves.",
+      "missed_mechanism": "The candidate fails to distinguish the source-grounded first-order solution and arbitrary-theta product identity from the merely announced, not yet displayed, recursive transport and all-finite-orders conclusion.",
+      "paraphrase_risk": "Moderate: the connection-on-parameter-space language is a useful abstraction, but in this packet it can mask that path independence, recursion, and the actual differential generator are absent.",
+      "revision_instructions": "Restrict the source fact and operation to reusing the first-order compatibility calculation at an arbitrary theta to motivate infinitesimal transport. Remove the claims that this span writes the differential equations, recursively integrates them, or establishes an entire formal family unless the unit is rebound to include that evidence.",
+      "unit_id": "agnostic_oa_perturbative_transport_between_deformations",
+      "unsupported_or_imported": "The displayed differential transport equations, their all-finite-orders generating property, recursive integration, and connection terminology are not established within the bound artifact; convergence and path independence are also unavailable."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_bimodule_from_commuting_endpoint_actions": "agnostic_oa_revision_24970d75f43dbfa942cba405e87aa94295745756fce5ca05eafaf4a6734de62f",
+    "agnostic_oa_chart_breakdown_detected_by_poles": "agnostic_oa_revision_c710ee60b904b4e37c2043079c82fdeabb3f6de969eae85f8acfbb48ee4ba3e3",
+    "agnostic_oa_distinguish_field_redefinition_from_duality": "agnostic_oa_revision_3f59d998bbc2b952bb536aac4f6ad66bff031402a418055e384db5f7b7855dea",
+    "agnostic_oa_measure_and_center_constraints_on_background_change": "agnostic_oa_revision_2e83bef2ff8316fdbac9ad95dea1f27a64fa199852cd028682fa5f7b663c299e",
+    "agnostic_oa_moduli_space_vs_representatives": "agnostic_oa_revision_354cb82baed5b013222ac4abe1467d945e109bf5e35145fd182f2ba92a844ad5",
+    "agnostic_oa_perturbative_transport_between_deformations": "agnostic_oa_revision_7c2f63746fd8280b34a406449c1213de076056183a33b68042ba8d5ba5e3e63d"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "80fb3f25094f63759e4780aed90aa0b46facd48730334d43d1b745cb48ffc4c1",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w1968388660_21e824e9_part_01.jsonl",
+  "source_id": "openalex_w1968388660",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_perturbative_transport_between_deformations.txt",
+      "artifact_bytes": 6697,
+      "artifact_relpath": "depth/units/agnostic_oa_perturbative_transport_between_deformations.txt",
+      "artifact_sha256": "e6cdf0586a8a9b3971da1974c140476220386a07b7a418cf59bbf293418ae776",
+      "content_sha256": "31dd07dc8c1e443ef8400fa883f556c240cbef4fbf73fb38b11f565743d0a20f",
+      "context_note": "All-finite-orders is formal perturbative control, not convergence or a global nonperturbative equivalence; the source explicitly places convergence beyond scope. Formula extraction is dense and must be source-verified before exact symbolic use.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_regulator_dependent_presentations",
+            "agnostic_oa_equivalence_relation_without_group_isomorphism",
+            "agnostic_oa_perturbative_transport_between_deformations",
+            "agnostic_oa_chart_breakdown_detected_by_poles",
+            "agnostic_oa_background_invariant_recombination",
+            "agnostic_oa_equivalence_modulo_declared_approximation",
+            "agnostic_oa_moduli_space_vs_representatives",
+            "agnostic_oa_distinguish_field_redefinition_from_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly separates invariant or quotient-level content from regulator-, coordinate-, background-, and representative-dependent descriptions, while recording approximation and domain boundaries. This supports the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 1459,
+      "line_start": 1357,
+      "representation_dependency": "The transport uses the explicit star-product family and its associativity; changing the deformation product or coordinate conventions can change the displayed map while retaining the quotient-preservation goal.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source turns a first-order compatibility calculation into a differential equation transporting fields and parameters between nearby associative products, yielding a systematic all-finite-orders construction.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "Generate a change of variables by differential transport in the deformation parameter",
+      "unit_id": "agnostic_oa_perturbative_transport_between_deformations",
+      "unit_type": "deformation_transport"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_chart_breakdown_detected_by_poles.txt",
+      "artifact_bytes": 2688,
+      "artifact_relpath": "depth/units/agnostic_oa_chart_breakdown_detected_by_poles.txt",
+      "artifact_sha256": "49beb36925ed9fe7370fbf03ec15cf25688aa063ec30103cc7323c00a50c7bf4",
+      "content_sha256": "a57fdabf468819c58f0a9ce6ea73c47d5243509751e741b6db956171e9dce07a",
+      "context_note": "The demonstration is a rank-one constant-curvature special case. A pole is evidence of description breakdown, not by itself evidence that the underlying object or theory is singular.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_regulator_dependent_presentations",
+            "agnostic_oa_equivalence_relation_without_group_isomorphism",
+            "agnostic_oa_perturbative_transport_between_deformations",
+            "agnostic_oa_chart_breakdown_detected_by_poles",
+            "agnostic_oa_background_invariant_recombination",
+            "agnostic_oa_equivalence_modulo_declared_approximation",
+            "agnostic_oa_moduli_space_vs_representatives",
+            "agnostic_oa_distinguish_field_redefinition_from_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly separates invariant or quotient-level content from regulator-, coordinate-, background-, and representative-dependent descriptions, while recording approximation and domain boundaries. This supports the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 1502,
+      "line_start": 1460,
+      "representation_dependency": "The singular sets depend on which of F or its transformed counterpart is used as coordinate; only the invariant combination B+F explains the boundary in the ordinary presentation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "Solving the transport for constant curvature exposes reciprocal formulas whose poles distinguish failure of the noncommutative chart from failure of the commutative chart. This is a reusable warning that an equivalence map can be locally meaningful while individual representations have different domains.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "Poles delimit where one representation ceases to exist",
+      "unit_id": "agnostic_oa_chart_breakdown_detected_by_poles",
+      "unit_type": "domain_boundary"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_measure_and_center_constraints_on_background_change.txt",
+      "artifact_bytes": 3112,
+      "artifact_relpath": "depth/units/agnostic_oa_measure_and_center_constraints_on_background_change.txt",
+      "artifact_sha256": "f49e25741f02f3e2636771bcdc412e4b4002680a091f01e3caaa51ca456c2dcb",
+      "content_sha256": "7ab5890c30f8a0d323184cf212ee2fe9d2c751d80e36245efb6ebab369831856",
+      "context_note": "The transformation law is derived in a specific action and torus/noncommutative-space setting. It should be reused as a structural pattern—propagate an invariance demand through all dependent data—not as a domain-free formula.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_measure_and_center_constraints_on_background_change",
+            "agnostic_oa_distinguish_field_redefinition_from_duality",
+            "agnostic_oa_bimodule_from_commuting_endpoint_actions",
+            "agnostic_oa_projectivity_and_topological_invariants",
+            "agnostic_oa_morita_transport_by_balanced_tensor_product"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies concrete duality objects—bimodules, commutants, balanced tensor products, projective modules—and explicit constraints on rank, center, measure, and transformation domain. This reinforces the assignment-proposed lens without asserting a new family or independent mathematical novelty."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 1883,
+      "line_start": 1833,
+      "representation_dependency": "The allowed background variation depends on whether theta is invertible. When it is degenerate, central coordinates and rank become structural data that the comparison must preserve.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source shows that invariance of an integrand is insufficient: the integration measure forces a coupling transformation, while degeneracy of the deformation tensor restricts admissible changes to those preserving rank and algebraic center.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "Preserving an action propagates invariance requirements to measures, couplings, rank, and center",
+      "unit_id": "agnostic_oa_measure_and_center_constraints_on_background_change",
+      "unit_type": "constraint_propagation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_moduli_space_vs_representatives.txt",
+      "artifact_bytes": 4438,
+      "artifact_relpath": "depth/units/agnostic_oa_moduli_space_vs_representatives.txt",
+      "artifact_sha256": "1d841c75e8b5506cde776032c92c87f334bb0dfe7e367b88a8aa97713f561515",
+      "content_sha256": "3ff08221250c5a6f55c02477a035c96f69a88299fe276f8a2117221c3a586087",
+      "context_note": "The argument specializes the noncommutative ADHM construction and explicitly builds on cited prior work; independent novelty is unconfirmed. The physical instanton interpretation is not required for the quotient-versus-representative distinction.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_regulator_dependent_presentations",
+            "agnostic_oa_equivalence_relation_without_group_isomorphism",
+            "agnostic_oa_perturbative_transport_between_deformations",
+            "agnostic_oa_chart_breakdown_detected_by_poles",
+            "agnostic_oa_background_invariant_recombination",
+            "agnostic_oa_equivalence_modulo_declared_approximation",
+            "agnostic_oa_moduli_space_vs_representatives",
+            "agnostic_oa_distinguish_field_redefinition_from_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly separates invariant or quotient-level content from regulator-, coordinate-, background-, and representative-dependent descriptions, while recording approximation and domain boundaries. This supports the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 3143,
+      "line_start": 3074,
+      "representation_dependency": "The moduli equations depend only on the sum of two deformation components, but the algebra in which each connection takes values depends on both, obstructing direct comparison of representatives across parameter choices.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source separates dependence of the classified moduli space on a parameter combination from dependence of individual solutions on the full parameter pair because their coefficient algebra still changes. This is a strong generic example of quotienting forgetting information that representatives retain.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "A moduli space can forget parameters retained by its representatives",
+      "unit_id": "agnostic_oa_moduli_space_vs_representatives",
+      "unit_type": "quotient_vs_representative"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_distinguish_field_redefinition_from_duality.txt",
+      "artifact_bytes": 6097,
+      "artifact_relpath": "depth/units/agnostic_oa_distinguish_field_redefinition_from_duality.txt",
+      "artifact_sha256": "97d355b787de34d18e8618562201b5cbbbf71e08717a7b587d8543d418ff9d1d",
+      "content_sha256": "8ff36acbb1ba41166ec42d7fbef518cffc177b4bbb2ade3313a620c7066a8a9e",
+      "context_note": "The transformation laws arise from torus T-duality and are formula-sensitive. The reusable content is the explicit comparison of what each equivalence preserves, changes, and where it becomes singular; it does not establish a new general duality family.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_regulator_dependent_presentations",
+            "agnostic_oa_equivalence_relation_without_group_isomorphism",
+            "agnostic_oa_perturbative_transport_between_deformations",
+            "agnostic_oa_chart_breakdown_detected_by_poles",
+            "agnostic_oa_background_invariant_recombination",
+            "agnostic_oa_equivalence_modulo_declared_approximation",
+            "agnostic_oa_moduli_space_vs_representatives",
+            "agnostic_oa_distinguish_field_redefinition_from_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly separates invariant or quotient-level content from regulator-, coordinate-, background-, and representative-dependent descriptions, while recording approximation and domain boundaries. This supports the assignment-proposed lens; novelty relative to #44 was not checked."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_measure_and_center_constraints_on_background_change",
+            "agnostic_oa_distinguish_field_redefinition_from_duality",
+            "agnostic_oa_bimodule_from_commuting_endpoint_actions",
+            "agnostic_oa_projectivity_and_topological_invariants",
+            "agnostic_oa_morita_transport_by_balanced_tensor_product"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies concrete duality objects—bimodules, commutants, balanced tensor products, projective modules—and explicit constraints on rank, center, measure, and transformation domain. This reinforces the assignment-proposed lens without asserting a new family or independent mathematical novelty."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 3370,
+      "line_start": 3280,
+      "representation_dependency": "The field redefinition works for arbitrary deformation on the same torus and rank but complicates the action; the rational duality changes torus volume and rank while mapping a simple action to another simple action. Singular transformations restrict the effective action of the nominal duality group.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source tracks the domain of a fractional transformation, identifies rational cases that become commutative, records singular group elements, and then distinguishes this duality from a different change of variables that leaves the space and rank fixed.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "Disambiguate same-space field redefinition from space-changing duality",
+      "unit_id": "agnostic_oa_distinguish_field_redefinition_from_duality",
+      "unit_type": "equivalence_disambiguation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_bimodule_from_commuting_endpoint_actions.txt",
+      "artifact_bytes": 3993,
+      "artifact_relpath": "depth/units/agnostic_oa_bimodule_from_commuting_endpoint_actions.txt",
+      "artifact_sha256": "cc9bf4774da027f64ed1d6f5a77c23fcd3328815e9bcf01f6bc7124ab93044f7",
+      "content_sha256": "05a36410d11d748b24f38a474c378008d6bb2312e516ee5c4d97371febe2753e",
+      "context_note": "The realization uses open-string boundary states and a zero-slope limit; the algebraic conclusion is generic, but the physical construction is only one source of commuting actions.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_measure_and_center_constraints_on_background_change",
+            "agnostic_oa_distinguish_field_redefinition_from_duality",
+            "agnostic_oa_bimodule_from_commuting_endpoint_actions",
+            "agnostic_oa_projectivity_and_topological_invariants",
+            "agnostic_oa_morita_transport_by_balanced_tensor_product"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies concrete duality objects—bimodules, commutants, balanced tensor products, projective modules—and explicit constraints on rank, center, measure, and transformation domain. This reinforces the assignment-proposed lens without asserting a new family or independent mathematical novelty."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 3429,
+      "line_start": 3371,
+      "representation_dependency": "Choosing one endpoint as left and the other as right determines the action conventions; reversing the boundary orientation replaces the product by its opposite, which is essential rather than superficial notation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source makes the bimodule mechanism concrete: operators acting at opposite boundaries commute, orientation reverses multiplication on one side, and ground states therefore carry compatible left and right actions. Varying one boundary produces a family of modules.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "Two commuting actions induce left-right bimodule structure",
+      "unit_id": "agnostic_oa_bimodule_from_commuting_endpoint_actions",
+      "unit_type": "bimodule_construction"
+    }
+  ]
+}

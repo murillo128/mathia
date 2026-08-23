@@ -1,0 +1,2969 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1981597330_5918ea17_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1981597330",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the operator/eigenbasis definitions and Hecke-series normalization needed for every later spectral formula.",
+      "line_end": 46,
+      "line_start": 14,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Operator sums, eigenvalue normalization, and Dirichlet-series ranges are formula-sensitive and vertically fragmented; verify exact normalizations from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper fixes Laplacian eigenvalues, simultaneous Hecke eigenforms, parity, and their Hecke series, creating the spectral coordinates later visible as poles and exponential sums. This setup explains why central Hecke values, rather than arbitrary coefficients, control fourth-moment phenomena.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Maass spectral data packages central Hecke values into a positive weighted family",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u01.txt",
+      "unit_bytes": 1856,
+      "unit_id": "openalex_w1981597330_v2_u01",
+      "unit_sha256": "e697d7eefbba5f653e55641314620d6672c7058908fde9c49a1dbdcca2858cc1",
+      "unit_type": "spectral-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 6,
+          "line_end": 13,
+          "text": "\n               On some conjectures and results\n       for the Riemann zeta-function and Hecke series\n                                          by\n\n                        Aleksandar Ivić (Beograd)\n\n\n",
+          "sha256": "054cad4f7ad47d9763d7d264dfe3ce595f180b130f5eea7454c50a14ffc9f121"
+        },
+        "after": {
+          "line_start": 47,
+          "line_end": 54,
+          "text": "\n   2000 Mathematics Subject Classification: Primary 11M06; Secondary 11F72.\n\n                                         [115]\n\n116                                       A. Ivić\n\nand which can be continued to an entire function. As usual we put\n",
+          "sha256": "97a0a469dba2e25e480dc685b1dc9a2cd9ea39f16170c9a90b7b11ddf1b33914"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Spectral theory and Z₂(s)",
+            "line_end": 92,
+            "line_start": 14,
+            "mathematical_role": "Defines the Maass/Hecke spectral data and Z₂, records its singularities and spectral residues, and maps the article’s program."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 46,
+          "line_start": 14,
+          "title": "Maass spectral data packages central Hecke values into a positive weighted family",
+          "unit_id": "openalex_w1981597330_v2_u01",
+          "unit_type": "spectral-setup",
+          "why_material": "The paper fixes Laplacian eigenvalues, simultaneous Hecke eigenforms, parity, and their Hecke series, creating the spectral coordinates later visible as poles and exponential sums. This setup explains why central Hecke values, rather than arbitrary coefficients, control fourth-moment phenomena."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the operator/eigenbasis definitions and Hecke-series normalization needed for every later spectral formula.",
+          "representation_dependency": "Operator sums, eigenvalue normalization, and Dirichlet-series ranges are formula-sensitive and vertically fragmented; verify exact normalizations from the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 91,
+            "line_start": 54,
+            "title": "Poles of Z₂ encode the hyperbolic spectrum and central Hecke values",
+            "unit_id": "openalex_w1981597330_v2_u02",
+            "unit_type": "spectral-transform-bridge",
+            "why_material": "The modified Mellin transform of the fourth zeta moment has a meromorphic continuation whose off-real poles occur at spectral parameters, with residues weighted by cubes of central Hecke values; additional poles track zeta zeros. This makes Z₂ a bridge between moment errors and spectral cancellation."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the positivity/average input, definition, singularity list, residue description, and the author’s section roadmap.",
+      "line_end": 91,
+      "line_start": 54,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The transform definition is clear, but residue gamma factors, multiplicities, conjugations, and comparison symbols are damaged; exact residue use requires PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The modified Mellin transform of the fourth zeta moment has a meromorphic continuation whose off-real poles occur at spectral parameters, with residues weighted by cubes of central Hecke values; additional poles track zeta zeros. This makes Z₂ a bridge between moment errors and spectral cancellation.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poles of Z₂ encode the hyperbolic spectrum and central Hecke values",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u02.txt",
+      "unit_bytes": 2106,
+      "unit_id": "openalex_w1981597330_v2_u02",
+      "unit_sha256": "ad44de41a7c6be4958dd50e618ef720bfbbeaa1c3ca8eba728a1abbe06352d5e",
+      "unit_type": "spectral-transform-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 46,
+          "line_end": 53,
+          "text": "which we call the Hecke series associated with the Maass wave form ψj (z),\n\n   2000 Mathematics Subject Classification: Primary 11M06; Secondary 11F72.\n\n                                         [115]\n\n116                                       A. Ivić\n\n",
+          "sha256": "c49bc60ad9d03aa870c2812db5821d94dad4e0f11acab53971741fa3b02988e1"
+        },
+        "after": {
+          "line_start": 92,
+          "line_end": 99,
+          "text": "\n    2. The modified Mellin transform. The function Z2 (s) represents\na sort of a modified Mellin transform of |ζ(1/2 + ix)|4 , where the Mellin\ntransform of an integrable function f (x) is commonly defined as\n                                      ∞\n              M[f (x)] = F (s) =          xs−1 f (x) dx       (s = σ + it).\n                                      0\nMellin transforms play an important rôle in Analytic Number Theory. By a\n",
+          "sha256": "5698b8968a3a9c9b846d42c013cb00a36ca977aa5f1b04caa2e1f499fdd2f9b4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Spectral theory and Z₂(s)",
+            "line_end": 92,
+            "line_start": 14,
+            "mathematical_role": "Defines the Maass/Hecke spectral data and Z₂, records its singularities and spectral residues, and maps the article’s program."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 91,
+          "line_start": 54,
+          "title": "Poles of Z₂ encode the hyperbolic spectrum and central Hecke values",
+          "unit_id": "openalex_w1981597330_v2_u02",
+          "unit_type": "spectral-transform-bridge",
+          "why_material": "The modified Mellin transform of the fourth zeta moment has a meromorphic continuation whose off-real poles occur at spectral parameters, with residues weighted by cubes of central Hecke values; additional poles track zeta zeros. This makes Z₂ a bridge between moment errors and spectral cancellation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the positivity/average input, definition, singularity list, residue description, and the author’s section roadmap.",
+          "representation_dependency": "The transform definition is clear, but residue gamma factors, multiplicities, conjugations, and comparison symbols are damaged; exact residue use requires PDF verification.",
+          "unit_id": "openalex_w1981597330_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 46,
+            "line_start": 14,
+            "title": "Maass spectral data packages central Hecke values into a positive weighted family",
+            "unit_id": "openalex_w1981597330_v2_u01",
+            "unit_type": "spectral-setup",
+            "why_material": "The paper fixes Laplacian eigenvalues, simultaneous Hecke eigenforms, parity, and their Hecke series, creating the spectral coordinates later visible as poles and exponential sums. This setup explains why central Hecke values, rather than arbitrary coefficients, control fourth-moment phenomena."
+          },
+          {
+            "line_end": 196,
+            "line_start": 93,
+            "title": "Modified Mellin inversion avoids the origin while retaining ordinary Mellin structure",
+            "unit_id": "openalex_w1981597330_v2_u03",
+            "unit_type": "transform-framework",
+            "why_material": "A reflection-and-truncation device identifies the modified transform over [1,∞) with an ordinary Mellin transform, transferring Fourier/Mellin inversion to recover the original function under explicit integrability and continuity conditions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Residues of Z₂ at spectral poles expose positive central Hecke weights; unweighted estimates saturate, while Stirling analysis reveals an oscillatory phase whose square-root cancellation would simultaneously improve E₂, the eighth moment, and pointwise Z₂.",
+            "limit": "The square-root cancellation is Conjecture 3, and the route from it to all stated applications includes conditional or heuristic steps.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u02",
+              "openalex_w1981597330_v2_u15",
+              "openalex_w1981597330_v2_u16",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u20",
+              "openalex_w1981597330_v2_u22"
+            ],
+            "title": "Spectral poles become a cancellation bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 92,
+              "line_start": 92,
+              "reason": "Whitespace before Section 2."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the ordinary Fourier correspondence, inversion/Parseval context, modified definition, and proof of the first inversion lemma.",
+      "line_end": 196,
+      "line_start": 93,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour notation, powers, Lᵖ conditions, and reflected arguments are displaced in extraction. The functional relationship is readable, but exact hypotheses and inversion powers require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A reflection-and-truncation device identifies the modified transform over [1,∞) with an ordinary Mellin transform, transferring Fourier/Mellin inversion to recover the original function under explicit integrability and continuity conditions.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Modified Mellin inversion avoids the origin while retaining ordinary Mellin structure",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u03.txt",
+      "unit_bytes": 5158,
+      "unit_id": "openalex_w1981597330_v2_u03",
+      "unit_sha256": "e9d277ff52ec73edce6f2ef6029f017a85e200b59dc857b2cd4b0d9ce424e5b7",
+      "unit_type": "transform-framework",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 85,
+          "line_end": 92,
+          "text": "fourth moment of |ζ(1/2 + ix)| and αj Hj3 (1/2). The plan of the paper is as\nfollows: in Section 2 the modified Mellin transform is studied and five lemmas\nneeded in what follows are proved. Mean square results on Z2 (s) are studied\nin Section 3, and two conjectures on Z2 (s) and their corollaries are given in\nSection 4. In Section 5 a conjecture on exponential sums with αj Hj3 (1/2) is\nmade. A new pointwise bound for Z2 (s) is obtained in Section 6. Finally in\nSection 7 the general function Zk (s) is studied.\n\n",
+          "sha256": "c926d6afeb88486cda56e1adbad1c1e942d3452e24a0d3452503a0e0e722f0d2"
+        },
+        "after": {
+          "line_start": 197,
+          "line_end": 204,
+          "text": "    Lemma 2. If F ∗ (s) = m[f (x)], G∗ (s) = m[g(x)], and f (x), g(x) are\nreal-valued , continuous functions for x > 1, such that\n              x1/2−c f (x) ∈ L2 (1, ∞),          xc−1/2−σ g(x) ∈ L2 (1, ∞),\nthen\n                                    1\n(2.8)            m[f (x)g(x)] =                F ∗ (w)G∗ (s + 1 − w) dw.\n                                   2πi\n                                         (c)\n",
+          "sha256": "cca356856e3e58081dffc441400eea4412d3c87f9112f128ea95a808c65f83c5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Modified Mellin transform",
+            "line_end": 415,
+            "line_start": 93,
+            "mathematical_role": "Relates modified and ordinary Mellin transforms and proves inversion, convolution, Parseval, and localized mean-square transfer lemmas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 196,
+          "line_start": 93,
+          "title": "Modified Mellin inversion avoids the origin while retaining ordinary Mellin structure",
+          "unit_id": "openalex_w1981597330_v2_u03",
+          "unit_type": "transform-framework",
+          "why_material": "A reflection-and-truncation device identifies the modified transform over [1,∞) with an ordinary Mellin transform, transferring Fourier/Mellin inversion to recover the original function under explicit integrability and continuity conditions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the ordinary Fourier correspondence, inversion/Parseval context, modified definition, and proof of the first inversion lemma.",
+          "representation_dependency": "Contour notation, powers, Lᵖ conditions, and reflected arguments are displaced in extraction. The functional relationship is readable, but exact hypotheses and inversion powers require PDF checking.",
+          "unit_id": "openalex_w1981597330_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 91,
+            "line_start": 54,
+            "title": "Poles of Z₂ encode the hyperbolic spectrum and central Hecke values",
+            "unit_id": "openalex_w1981597330_v2_u02",
+            "unit_type": "spectral-transform-bridge",
+            "why_material": "The modified Mellin transform of the fourth zeta moment has a meromorphic continuation whose off-real poles occur at spectral parameters, with residues weighted by cubes of central Hecke values; additional poles track zeta zeros. This makes Z₂ a bridge between moment errors and spectral cancellation."
+          },
+          {
+            "line_end": 262,
+            "line_start": 197,
+            "title": "Products in the original variable become transform convolution and Parseval identities",
+            "unit_id": "openalex_w1981597330_v2_u04",
+            "unit_type": "convolution-and-parseval-calculus",
+            "why_material": "Two lemmas transfer the ordinary Mellin product formula and Parseval identity to the modified transform, supplying both a convolution law and an exact weighted L² identity. These become the algebraic engine for later moment and recurrence arguments."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified Mellin inversion and Parseval make three forms of control mutually informative: analytic/mean-square bounds for Z₂, size of the fourth-moment error E₂, and higher zeta moments. Smoothing and polar subtraction determine which implications are exact, conditional, or lossy.",
+            "limit": "The arrows are not all equivalences: the paper explicitly identifies gaps, and exact exponent transfer depends on formula-sensitive hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u03",
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u06",
+              "openalex_w1981597330_v2_u07",
+              "openalex_w1981597330_v2_u11"
+            ],
+            "title": "The transform–error–moment triangle"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 92,
+              "line_start": 92,
+              "reason": "Whitespace before Section 2."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proofs are retained because the shift s+1−w and weight x^{1−2σ} arise from the reflection defining the modified transform.",
+      "line_end": 262,
+      "line_start": 197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several conjugation bars, line integrals, weights, and L² conditions are not reliably placed; all exact identities and domains should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two lemmas transfer the ordinary Mellin product formula and Parseval identity to the modified transform, supplying both a convolution law and an exact weighted L² identity. These become the algebraic engine for later moment and recurrence arguments.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Products in the original variable become transform convolution and Parseval identities",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u04.txt",
+      "unit_bytes": 3205,
+      "unit_id": "openalex_w1981597330_v2_u04",
+      "unit_sha256": "945d8000c4000a9886e724eb08d7f44cb78b1081ca6027858fc3ed0ef6567e4c",
+      "unit_type": "convolution-and-parseval-calculus",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 189,
+          "line_end": 196,
+          "text": "                                        1    1\n                                y σ−1     f     dy < ∞,\n                            0\n                                        y    y\n\nand making the change of variable y = 1/x, we deduce that the last condition\nis equivalent to x−σ f (x) ∈ L1 (1, ∞). Changing x to 1/x in (2.7) we then\nobtain (2.6).\n",
+          "sha256": "e598f78667ae75e943e7b089a140620f956ee27c36f8a986534d6c24d77c7811"
+        },
+        "after": {
+          "line_start": 263,
+          "line_end": 270,
+          "text": "\n120                                                       A. Ivić\n\n    Lemma 3, in the special case f (x) = g(x), is a natural tool for investigat-\ning mean square formulas connected with the modified Mellin transform. In\nparticular, it offers the possibility to obtain mean square estimates of f (x)\nfrom the mean square estimates of m[f (x)], provided we have adequate ana-\nlytic information about the latter. A result in this direction, which is useful\n",
+          "sha256": "836759a00dbfc3130b8b598db7e4c5f44912cf369439aabe7ba9f7fe2191f28b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Modified Mellin transform",
+            "line_end": 415,
+            "line_start": 93,
+            "mathematical_role": "Relates modified and ordinary Mellin transforms and proves inversion, convolution, Parseval, and localized mean-square transfer lemmas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 262,
+          "line_start": 197,
+          "title": "Products in the original variable become transform convolution and Parseval identities",
+          "unit_id": "openalex_w1981597330_v2_u04",
+          "unit_type": "convolution-and-parseval-calculus",
+          "why_material": "Two lemmas transfer the ordinary Mellin product formula and Parseval identity to the modified transform, supplying both a convolution law and an exact weighted L² identity. These become the algebraic engine for later moment and recurrence arguments."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proofs are retained because the shift s+1−w and weight x^{1−2σ} arise from the reflection defining the modified transform.",
+          "representation_dependency": "Several conjugation bars, line integrals, weights, and L² conditions are not reliably placed; all exact identities and domains should be checked against the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 196,
+            "line_start": 93,
+            "title": "Modified Mellin inversion avoids the origin while retaining ordinary Mellin structure",
+            "unit_id": "openalex_w1981597330_v2_u03",
+            "unit_type": "transform-framework",
+            "why_material": "A reflection-and-truncation device identifies the modified transform over [1,∞) with an ordinary Mellin transform, transferring Fourier/Mellin inversion to recover the original function under explicit integrability and continuity conditions."
+          },
+          {
+            "line_end": 414,
+            "line_start": 266,
+            "title": "Localization and contour shifting transfer transform mean squares back to the source function",
+            "unit_id": "openalex_w1981597330_v2_u05",
+            "unit_type": "mean-square-transfer",
+            "why_material": "A localized Parseval inequality bounds the mean square of a truncated modified transform by a weighted source norm. A converse-style lemma then smooths a dyadic source interval, shifts past the transform’s polar part, truncates by repeated integration by parts, and uses Cauchy–Schwarz plus Parseval to control the source mean square by the transform mean square."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The convolution law makes Z_{k+l} compositional in Z_k and Z_l, while localized inversion reveals coupled spectral frequencies; this lets low-order transform information diagnose both higher moments and the plausible optimal scale of spectral cancellation.",
+            "limit": "Convergence contours and pointwise inputs are essential, and the final optimality argument is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u04",
+              "openalex_w1981597330_v2_u23",
+              "openalex_w1981597330_v2_u24",
+              "openalex_w1981597330_v2_u25",
+              "openalex_w1981597330_v2_u26"
+            ],
+            "title": "A recursive calculus for moment transforms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines Lemmas 4–5 because the later lower-bound argument uses their forward/backward transfer as one mechanism.",
+      "line_end": 414,
+      "line_start": 266,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula risk: missing comparison symbols, shifted integration limits, contour indentation, polynomial degree wording, derivative indices, and T-exponents make exact bounds unsafe without the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A localized Parseval inequality bounds the mean square of a truncated modified transform by a weighted source norm. A converse-style lemma then smooths a dyadic source interval, shifts past the transform’s polar part, truncates by repeated integration by parts, and uses Cauchy–Schwarz plus Parseval to control the source mean square by the transform mean square.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Localization and contour shifting transfer transform mean squares back to the source function",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u05.txt",
+      "unit_bytes": 7725,
+      "unit_id": "openalex_w1981597330_v2_u05",
+      "unit_sha256": "f435c3b88a2990c310888e4e9f8f40807834331308439872b8e16702715dd8b7",
+      "unit_type": "mean-square-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 258,
+          "line_end": 265,
+          "text": "                                                           (σ)\nif\n                          F (s) = M[f (x)],      G(s) = M[g(x)],\n               xσ−1/2 f (x) ∈ L2 (0, ∞),         xσ−1/2 g(x) ∈ L2 (0, ∞).\nThe last relation follows e.g. from [16, Theorem 72] by a change of variable.\n\n120                                                       A. Ivić\n\n",
+          "sha256": "9fc5d4d0c7264336fb92fdc3c85ca7fc3924bde33eeb997576ed34f9aef2fd29"
+        },
+        "after": {
+          "line_start": 415,
+          "line_end": 422,
+          "text": "\n   3. The mean square of Z2 (s). Mean square problems involving Z2 (s)\nare naturally of interest. They were investigated in [8], where it was shown\nthat\n            T\n(3.1)            |Z2 (σ + it)|2 dt \n T (10−8σ)/3 logC T                                 (1/2 < σ < 1, C > 0).\n            0\n",
+          "sha256": "bc06696b560d2f12b3063760982b87357394bec988698aa7f0132c2e0d2fcd0c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Modified Mellin transform",
+            "line_end": 415,
+            "line_start": 93,
+            "mathematical_role": "Relates modified and ordinary Mellin transforms and proves inversion, convolution, Parseval, and localized mean-square transfer lemmas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 414,
+          "line_start": 266,
+          "title": "Localization and contour shifting transfer transform mean squares back to the source function",
+          "unit_id": "openalex_w1981597330_v2_u05",
+          "unit_type": "mean-square-transfer",
+          "why_material": "A localized Parseval inequality bounds the mean square of a truncated modified transform by a weighted source norm. A converse-style lemma then smooths a dyadic source interval, shifts past the transform’s polar part, truncates by repeated integration by parts, and uses Cauchy–Schwarz plus Parseval to control the source mean square by the transform mean square."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Combines Lemmas 4–5 because the later lower-bound argument uses their forward/backward transfer as one mechanism.",
+          "representation_dependency": "Very high formula risk: missing comparison symbols, shifted integration limits, contour indentation, polynomial degree wording, derivative indices, and T-exponents make exact bounds unsafe without the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 262,
+            "line_start": 197,
+            "title": "Products in the original variable become transform convolution and Parseval identities",
+            "unit_id": "openalex_w1981597330_v2_u04",
+            "unit_type": "convolution-and-parseval-calculus",
+            "why_material": "Two lemmas transfer the ordinary Mellin product formula and Parseval identity to the modified transform, supplying both a convolution law and an exact weighted L² identity. These become the algebraic engine for later moment and recurrence arguments."
+          },
+          {
+            "line_end": 468,
+            "line_start": 416,
+            "title": "Fourth-moment error bounds set the attainable scale for Z₂ mean squares",
+            "unit_id": "openalex_w1981597330_v2_u06",
+            "unit_type": "error-term-baseline",
+            "why_material": "The section defines E₂(T), inventories its mean-square, pointwise, omega, and integral behavior, and records how an assumed pointwise exponent for E₂ feeds an existing Z₂ mean-square estimate. This establishes the unconditional baseline and identifies which scales are already essentially optimal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified Mellin inversion and Parseval make three forms of control mutually informative: analytic/mean-square bounds for Z₂, size of the fourth-moment error E₂, and higher zeta moments. Smoothing and polar subtraction determine which implications are exact, conditional, or lossy.",
+            "limit": "The arrows are not all equivalences: the paper explicitly identifies gaps, and exact exponent transfer depends on formula-sensitive hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u03",
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u06",
+              "openalex_w1981597330_v2_u07",
+              "openalex_w1981597330_v2_u11"
+            ],
+            "title": "The transform–error–moment triangle"
+          },
+          {
+            "claim": "Smooth cutoffs enable contour shifts, frequency truncation, and saddle estimates throughout the paper, yet the proposed spectral transformation illustrates that a Gaussian-smoothed bound need not transfer to the unsmoothed unit-window sum actually required.",
+            "limit": "The boundary between removable smoothing and essential unsmoothed control is source-specific and depends on unverified dense formulas.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u09",
+              "openalex_w1981597330_v2_u18",
+              "openalex_w1981597330_v2_u21"
+            ],
+            "title": "Smoothing creates tractability but can hide the target oscillation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 415,
+              "line_start": 415,
+              "reason": "Whitespace before Section 3."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the fourth-moment polynomial definition and all compared estimates because later conjectures are calibrated against them.",
+      "line_end": 468,
+      "line_start": 416,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Many big-O/omega/comparison glyphs are absent, and logarithmic powers and exponent ranges drift. Exact bound directions and constants require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The section defines E₂(T), inventories its mean-square, pointwise, omega, and integral behavior, and records how an assumed pointwise exponent for E₂ feeds an existing Z₂ mean-square estimate. This establishes the unconditional baseline and identifies which scales are already essentially optimal.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourth-moment error bounds set the attainable scale for Z₂ mean squares",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u06.txt",
+      "unit_bytes": 2422,
+      "unit_id": "openalex_w1981597330_v2_u06",
+      "unit_sha256": "1e0f7fbcd791b981395f1286cb7341e17c2dd553f1aaf535409db1b783a0c6b5",
+      "unit_type": "error-term-baseline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 408,
+          "line_end": 415,
+          "text": "                               5T /2                                   \u0010 T 1+ε                                    \u00111/2\n I2 \n log        l−1\n                       T·              ϕ(x)|f (x)| dx +                          |F ∗ (u + iv)|2 dv · T 2u−1 I2          ,\n                                T /2                                       0\n\nwhich easily gives (2.11) with σ = u.\n\n",
+          "sha256": "4680778909248ed7e89424d6bf7852d46a9a10386b97a8a507218ab05f98508a"
+        },
+        "after": {
+          "line_start": 469,
+          "line_end": 476,
+          "text": "  We can derive a mean square result on Z2 (s) by the use of Lemma 3.\nNamely from (3.2) we obtain, by integration by parts, the representation\n                             ∞\n(3.9)           Z2 (s) =         (P4 (log x) + P40 (log x) + E20 (x))x−s dx\n                             1\n                             5\n                             X                             ∞\n                         =         cj (s − 1)−j + s            E2 (x)x−s−1 dx.\n",
+          "sha256": "422642679d6dcde27b0ccf97d9de202c97cfcbf01e9e8930949d4f7a8234d7ec"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Mean square of Z₂(s)",
+            "line_end": 869,
+            "line_start": 416,
+            "mathematical_role": "Connects Z₂ mean squares to E₂, proves a lower bound, establishes vertical-line propagation bounds, and improves the known range near σ=1."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 468,
+          "line_start": 416,
+          "title": "Fourth-moment error bounds set the attainable scale for Z₂ mean squares",
+          "unit_id": "openalex_w1981597330_v2_u06",
+          "unit_type": "error-term-baseline",
+          "why_material": "The section defines E₂(T), inventories its mean-square, pointwise, omega, and integral behavior, and records how an assumed pointwise exponent for E₂ feeds an existing Z₂ mean-square estimate. This establishes the unconditional baseline and identifies which scales are already essentially optimal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the fourth-moment polynomial definition and all compared estimates because later conjectures are calibrated against them.",
+          "representation_dependency": "Many big-O/omega/comparison glyphs are absent, and logarithmic powers and exponent ranges drift. Exact bound directions and constants require PDF verification.",
+          "unit_id": "openalex_w1981597330_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 414,
+            "line_start": 266,
+            "title": "Localization and contour shifting transfer transform mean squares back to the source function",
+            "unit_id": "openalex_w1981597330_v2_u05",
+            "unit_type": "mean-square-transfer",
+            "why_material": "A localized Parseval inequality bounds the mean square of a truncated modified transform by a weighted source norm. A converse-style lemma then smooths a dyadic source interval, shifts past the transform’s polar part, truncates by repeated integration by parts, and uses Cauchy–Schwarz plus Parseval to control the source mean square by the transform mean square."
+          },
+          {
+            "line_end": 571,
+            "line_start": 469,
+            "title": "Removing the polar part makes E₂ and Z₂ mean squares Parseval dual",
+            "unit_id": "openalex_w1981597330_v2_u07",
+            "unit_type": "parseval-equivalence-chain",
+            "why_material": "Integration by parts decomposes Z₂ into an explicit pole at one plus the transform of E₂. After subtracting the polar part, Parseval gives an exact weighted identity; contour propagation then shows that a boundary Z₂ mean-square bound recovers the best known E₂ and twelfth-moment estimates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified Mellin inversion and Parseval make three forms of control mutually informative: analytic/mean-square bounds for Z₂, size of the fourth-moment error E₂, and higher zeta moments. Smoothing and polar subtraction determine which implications are exact, conditional, or lossy.",
+            "limit": "The arrows are not all equivalences: the paper explicitly identifies gaps, and exact exponent transfer depends on formula-sensitive hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u03",
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u06",
+              "openalex_w1981597330_v2_u07",
+              "openalex_w1981597330_v2_u11"
+            ],
+            "title": "The transform–error–moment triangle"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 415,
+              "line_start": 415,
+              "reason": "Whitespace before Section 3."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the reverse implication and consequences to show why Z₂ mean-square control is not merely a reformulation but a high-leverage target.",
+      "line_end": 571,
+      "line_start": 469,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Polar coefficients, gamma-kernel contour, rectangle vertices, and several T/X exponents are extraction-sensitive. Verify exact equivalences and allowable σ-ranges from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integration by parts decomposes Z₂ into an explicit pole at one plus the transform of E₂. After subtracting the polar part, Parseval gives an exact weighted identity; contour propagation then shows that a boundary Z₂ mean-square bound recovers the best known E₂ and twelfth-moment estimates.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Removing the polar part makes E₂ and Z₂ mean squares Parseval dual",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u07.txt",
+      "unit_bytes": 4388,
+      "unit_id": "openalex_w1981597330_v2_u07",
+      "unit_sha256": "de93432e41b9d49eca1e705e3463186df0502b5ee4eec3ad0fcd1a96e1d9d3a7",
+      "unit_type": "parseval-equivalence-chain",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 461,
+          "line_end": 468,
+          "text": "(3.7)                                    E2 (T ) \nε T c+ε ,\nthen (3.5) implies that one must have 1/2 ≤ c ≤ 2/3. It was proved in [8]\nthat, besides (3.1), one also has\n          T\n(3.8)         |Z2 (σ + it)|2 dt \nε T ε (T + T (2−2σ)/(1−c) )                   (1/2 < σ < 1).\n          0\n",
+          "sha256": "afcd6c43c5542c9fd5cf07df5d9e866dd7e13bf2fee29a08bf52fae5b025e725"
+        },
+        "after": {
+          "line_start": 572,
+          "line_end": 579,
+          "text": "    A natural problem is to ask: what is the true order of magnitude of\n                                T\n(3.17)            Iσ (T ) :=        |Z2 (σ + it)|2 dt       (σ > 1/2)?\n                                1\n\nIt seems very hard to speculate what the shape of the asymptotic formula\nfor Iσ (T ) ought to be for fixed σ > 1/2, not to mention values like σ =\n1/2 + 1/log T (in view of the poles s = 1/2 ± iκj of Z2 (s)) etc. The lower\n",
+          "sha256": "8c39b383c94f1e0c227b95cc7b26c7eadbe17a741a52c5cf3d4e8c7121394005"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Mean square of Z₂(s)",
+            "line_end": 869,
+            "line_start": 416,
+            "mathematical_role": "Connects Z₂ mean squares to E₂, proves a lower bound, establishes vertical-line propagation bounds, and improves the known range near σ=1."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 571,
+          "line_start": 469,
+          "title": "Removing the polar part makes E₂ and Z₂ mean squares Parseval dual",
+          "unit_id": "openalex_w1981597330_v2_u07",
+          "unit_type": "parseval-equivalence-chain",
+          "why_material": "Integration by parts decomposes Z₂ into an explicit pole at one plus the transform of E₂. After subtracting the polar part, Parseval gives an exact weighted identity; contour propagation then shows that a boundary Z₂ mean-square bound recovers the best known E₂ and twelfth-moment estimates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the reverse implication and consequences to show why Z₂ mean-square control is not merely a reformulation but a high-leverage target.",
+          "representation_dependency": "Polar coefficients, gamma-kernel contour, rectangle vertices, and several T/X exponents are extraction-sensitive. Verify exact equivalences and allowable σ-ranges from the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 468,
+            "line_start": 416,
+            "title": "Fourth-moment error bounds set the attainable scale for Z₂ mean squares",
+            "unit_id": "openalex_w1981597330_v2_u06",
+            "unit_type": "error-term-baseline",
+            "why_material": "The section defines E₂(T), inventories its mean-square, pointwise, omega, and integral behavior, and records how an assumed pointwise exponent for E₂ feeds an existing Z₂ mean-square estimate. This establishes the unconditional baseline and identifies which scales are already essentially optimal."
+          },
+          {
+            "line_end": 658,
+            "line_start": 572,
+            "title": "A source-to-transform transfer forces a lower bound for every interior Z₂ mean square",
+            "unit_id": "openalex_w1981597330_v2_u08",
+            "unit_type": "omega-lower-bound",
+            "why_material": "Theorem 1 applies the mean-square transfer lemma to Hardy’s real Z-function: a known lower bound for the eighth zeta moment cannot be supported unless the Z₂ transform has at least the stated mean-square size. This supplies evidence that the later conjectured exponent is sharp from below."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified Mellin inversion and Parseval make three forms of control mutually informative: analytic/mean-square bounds for Z₂, size of the fourth-moment error E₂, and higher zeta moments. Smoothing and polar subtraction determine which implications are exact, conditional, or lossy.",
+            "limit": "The arrows are not all equivalences: the paper explicitly identifies gaps, and exact exponent transfer depends on formula-sensitive hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u03",
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u06",
+              "openalex_w1981597330_v2_u07",
+              "openalex_w1981597330_v2_u11"
+            ],
+            "title": "The transform–error–moment triangle"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the derivative control needed to verify the transfer lemma’s hypotheses and the substitution converting the long transform interval to the theorem’s scale.",
+      "line_end": 658,
+      "line_start": 572,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Riemann–Siegel derivative formula and the final exponents contain severe layout loss. The logic is recoverable, but the exact lower bound, ε placement, and log powers require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 applies the mean-square transfer lemma to Hardy’s real Z-function: a known lower bound for the eighth zeta moment cannot be supported unless the Z₂ transform has at least the stated mean-square size. This supplies evidence that the later conjectured exponent is sharp from below.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A source-to-transform transfer forces a lower bound for every interior Z₂ mean square",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u08.txt",
+      "unit_bytes": 4424,
+      "unit_id": "openalex_w1981597330_v2_u08",
+      "unit_sha256": "eac78c95c5098cbc548669dd23fb58cdc2eec54bbd8d5a28108035fb21f4c843",
+      "unit_type": "omega-lower-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 564,
+          "line_end": 571,
+          "text": "(3.16)       E2 (T ) \nε T    2/3+ε\n                                     ,           |ζ(1/2 + it)|12 dt \nε T 2+ε ,\n                                             0\n\nand both of these estimates are best known up to “ε”. This shows the\nstrength and importance of mean square estimates for Z2 (s) (see also (3.29)).\n",
+          "sha256": "f4adf06741aaed5d6eb07c593a69be7d81a5827c645cc474d9ece6d8e78fe8e9"
+        },
+        "after": {
+          "line_start": 659,
+          "line_end": 666,
+          "text": "\n      The mean square of Z2 (s) has a convexity property, embodied in\n\n               Some results for the Riemann zeta-function and Hecke series                     127\n\n   Theorem 2. For fixed c, σ such that 1/2 < c ≤ σ and t ≥ T ≥ 3 we have\n          2T\n(3.23)          |Z2 (σ + it)|2 dt\n",
+          "sha256": "41615b5694d88e17ed7c747833466defe2d2764021ac00bac6dcf0dd2b20eda2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Mean square of Z₂(s)",
+            "line_end": 869,
+            "line_start": 416,
+            "mathematical_role": "Connects Z₂ mean squares to E₂, proves a lower bound, establishes vertical-line propagation bounds, and improves the known range near σ=1."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 658,
+          "line_start": 572,
+          "title": "A source-to-transform transfer forces a lower bound for every interior Z₂ mean square",
+          "unit_id": "openalex_w1981597330_v2_u08",
+          "unit_type": "omega-lower-bound",
+          "why_material": "Theorem 1 applies the mean-square transfer lemma to Hardy’s real Z-function: a known lower bound for the eighth zeta moment cannot be supported unless the Z₂ transform has at least the stated mean-square size. This supplies evidence that the later conjectured exponent is sharp from below."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the derivative control needed to verify the transfer lemma’s hypotheses and the substitution converting the long transform interval to the theorem’s scale.",
+          "representation_dependency": "The Riemann–Siegel derivative formula and the final exponents contain severe layout loss. The logic is recoverable, but the exact lower bound, ε placement, and log powers require PDF checking.",
+          "unit_id": "openalex_w1981597330_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 571,
+            "line_start": 469,
+            "title": "Removing the polar part makes E₂ and Z₂ mean squares Parseval dual",
+            "unit_id": "openalex_w1981597330_v2_u07",
+            "unit_type": "parseval-equivalence-chain",
+            "why_material": "Integration by parts decomposes Z₂ into an explicit pole at one plus the transform of E₂. After subtracting the polar part, Parseval gives an exact weighted identity; contour propagation then shows that a boundary Z₂ mean-square bound recovers the best known E₂ and twelfth-moment estimates."
+          },
+          {
+            "line_end": 853,
+            "line_start": 660,
+            "title": "A smoothed Mellin decomposition propagates Z₂ control between vertical lines",
+            "unit_id": "openalex_w1981597330_v2_u09",
+            "unit_type": "vertical-line-propagation",
+            "why_material": "Theorem 2 partitions the transform into low, middle, and tail ranges, handles the tail via E₂ and localized Parseval, reinserts Z₂ by Mellin inversion on the middle range, and truncates the resulting convolution by repeated integration by parts. The result is a convexity-type mean-square and pointwise transfer from a line c to a line σ."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The long proof is retained as a reusable analytic mechanism: smooth partition, polar subtraction, contour displacement, frequency localization, then Cauchy–Schwarz.",
+      "line_end": 853,
+      "line_start": 660,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely formula-dependent: cutoff supports, line shifts, nested integration limits, maxima over dyadic K, and exponents are heavily fragmented. Only the strategy is safe until formulas (3.23)–(3.28) are checked from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 partitions the transform into low, middle, and tail ranges, handles the tail via E₂ and localized Parseval, reinserts Z₂ by Mellin inversion on the middle range, and truncates the resulting convolution by repeated integration by parts. The result is a convexity-type mean-square and pointwise transfer from a line c to a line σ.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A smoothed Mellin decomposition propagates Z₂ control between vertical lines",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u09.txt",
+      "unit_bytes": 8935,
+      "unit_id": "openalex_w1981597330_v2_u09",
+      "unit_sha256": "bf30eaf0ee2fbfc819ace6079406c666dd7c8b2419279445eaf8952c30d98467",
+      "unit_type": "vertical-line-propagation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 652,
+          "line_end": 659,
+          "text": "                                                      T 1+ε\n                              16              2σ−1\n(3.22)                T log        T \nε T                     |Z2 (σ + it)|2 dt.\n                                                          0\n\nThe lower bound in (3.20) then follows if we substitute T for T 1+ε in (3.22).\n\n",
+          "sha256": "a1516323583ceb0411396853a28039ee363e0d0207dcec63cffa81bb4dd9e02f"
+        },
+        "after": {
+          "line_start": 854,
+          "line_end": 861,
+          "text": "      Corollary 1. For any given ε > 0 we have\n                2T\n(3.29)               |Z2 (σ + it)|2 dt \nε T −1 + T 8/3−2σ+ε              (σ ≥ 5/6).\n                T\n\n      Proof. From (3.8) (with c = 2/3) we have\n                 2T\n",
+          "sha256": "1317c5b1a39c2c2c12b5544d6cc5920940065c310ffa1e935b0d4e4fc0b6329c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Mean square of Z₂(s)",
+            "line_end": 869,
+            "line_start": 416,
+            "mathematical_role": "Connects Z₂ mean squares to E₂, proves a lower bound, establishes vertical-line propagation bounds, and improves the known range near σ=1."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 853,
+          "line_start": 660,
+          "title": "A smoothed Mellin decomposition propagates Z₂ control between vertical lines",
+          "unit_id": "openalex_w1981597330_v2_u09",
+          "unit_type": "vertical-line-propagation",
+          "why_material": "Theorem 2 partitions the transform into low, middle, and tail ranges, handles the tail via E₂ and localized Parseval, reinserts Z₂ by Mellin inversion on the middle range, and truncates the resulting convolution by repeated integration by parts. The result is a convexity-type mean-square and pointwise transfer from a line c to a line σ."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The long proof is retained as a reusable analytic mechanism: smooth partition, polar subtraction, contour displacement, frequency localization, then Cauchy–Schwarz.",
+          "representation_dependency": "Extremely formula-dependent: cutoff supports, line shifts, nested integration limits, maxima over dyadic K, and exponents are heavily fragmented. Only the strategy is safe until formulas (3.23)–(3.28) are checked from the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 658,
+            "line_start": 572,
+            "title": "A source-to-transform transfer forces a lower bound for every interior Z₂ mean square",
+            "unit_id": "openalex_w1981597330_v2_u08",
+            "unit_type": "omega-lower-bound",
+            "why_material": "Theorem 1 applies the mean-square transfer lemma to Hardy’s real Z-function: a known lower bound for the eighth zeta moment cannot be supported unless the Z₂ transform has at least the stated mean-square size. This supplies evidence that the later conjectured exponent is sharp from below."
+          },
+          {
+            "line_end": 868,
+            "line_start": 854,
+            "title": "Bootstrapping the propagation theorem sharpens mean-square bounds near σ=1",
+            "unit_id": "openalex_w1981597330_v2_u10",
+            "unit_type": "unconditional-improvement",
+            "why_material": "Feeding a previously known estimate on one vertical line into Theorem 2 yields an improved exponent for σ at least 5/6, demonstrating how the transfer inequality can bootstrap existing information."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth cutoffs enable contour shifts, frequency truncation, and saddle estimates throughout the paper, yet the proposed spectral transformation illustrates that a Gaussian-smoothed bound need not transfer to the unsmoothed unit-window sum actually required.",
+            "limit": "The boundary between removable smoothing and essential unsmoothed control is source-specific and depends on unverified dense formulas.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u09",
+              "openalex_w1981597330_v2_u18",
+              "openalex_w1981597330_v2_u21"
+            ],
+            "title": "Smoothing creates tractability but can hide the target oscillation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the comparison with the prior bound to make the region of genuine improvement explicit.",
+      "line_end": 868,
+      "line_start": 854,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The σ thresholds and exponents are readable but densely typeset; verify their exact values and ε terms from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Feeding a previously known estimate on one vertical line into Theorem 2 yields an improved exponent for σ at least 5/6, demonstrating how the transfer inequality can bootstrap existing information.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bootstrapping the propagation theorem sharpens mean-square bounds near σ=1",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u10.txt",
+      "unit_bytes": 536,
+      "unit_id": "openalex_w1981597330_v2_u10",
+      "unit_sha256": "2cac9bad68b5d7bfa8a272476f0de8a3662fc56a05eab069f4e9edb3dab7b0de",
+      "unit_type": "unconditional-improvement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 846,
+          "line_end": 853,
+          "text": "                                           T\n\n130                                               A. Ivić\n\nwhere we used the bound Z2 (σ + it) \nε t1−σ+ε (see Theorem 3), whose\nproof is independent of the present theorem. Collecting the above bounds\nwe obtain (3.23).\n",
+          "sha256": "1e779d189d7406002799d8444fe0a15e3706298df4fb950c1bcff050816cd10d"
+        },
+        "after": {
+          "line_start": 869,
+          "line_end": 876,
+          "text": "\n   4. The conjectures on Z2 (s). It seems reasonable that the lower\nbound (3.20) of Theorem 1 is essentially of the correct order of magnitude.\nTherefore we formulate the following\n      Conjecture 1. For any given ε > 0, 1/2 < σ < 1 and T \n 1 we have\n                            T\n(4.1)                            |Z2 (σ + it)|2 dt \n",
+          "sha256": "cbe0ede4e35246dcdcfe482cca704f3d217c6d78fae34c2f22eadde088d5dcbd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Mean square of Z₂(s)",
+            "line_end": 869,
+            "line_start": 416,
+            "mathematical_role": "Connects Z₂ mean squares to E₂, proves a lower bound, establishes vertical-line propagation bounds, and improves the known range near σ=1."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 868,
+          "line_start": 854,
+          "title": "Bootstrapping the propagation theorem sharpens mean-square bounds near σ=1",
+          "unit_id": "openalex_w1981597330_v2_u10",
+          "unit_type": "unconditional-improvement",
+          "why_material": "Feeding a previously known estimate on one vertical line into Theorem 2 yields an improved exponent for σ at least 5/6, demonstrating how the transfer inequality can bootstrap existing information."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the comparison with the prior bound to make the region of genuine improvement explicit.",
+          "representation_dependency": "The σ thresholds and exponents are readable but densely typeset; verify their exact values and ε terms from the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 853,
+            "line_start": 660,
+            "title": "A smoothed Mellin decomposition propagates Z₂ control between vertical lines",
+            "unit_id": "openalex_w1981597330_v2_u09",
+            "unit_type": "vertical-line-propagation",
+            "why_material": "Theorem 2 partitions the transform into low, middle, and tail ranges, handles the tail via E₂ and localized Parseval, reinserts Z₂ by Mellin inversion on the middle range, and truncates the resulting convolution by repeated integration by parts. The result is a convexity-type mean-square and pointwise transfer from a line c to a line σ."
+          },
+          {
+            "line_end": 940,
+            "line_start": 870,
+            "title": "Conjecture 1 posits the lower-bound scale and would optimize E₂ and the eighth moment",
+            "unit_id": "openalex_w1981597330_v2_u11",
+            "unit_type": "mean-square-conjecture-and-consequences",
+            "why_material": "The proposed Z₂ mean-square bound matches Theorem 1’s scale up to ε. A smoothed inverse-transform argument would then give square-root-size E₂, while the earlier transfer inequality would give the conjecturally optimal eighth moment."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 869,
+              "line_start": 869,
+              "reason": "Whitespace before Section 4."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both corollary proofs so the conditional arrows are explicit rather than inferred from similarity of exponents.",
+      "line_end": 940,
+      "line_start": 870,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Smoothing supports, contour truncation, H choice, and exact exponent arithmetic are extraction-sensitive. These are conditional deductions, not observed evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proposed Z₂ mean-square bound matches Theorem 1’s scale up to ε. A smoothed inverse-transform argument would then give square-root-size E₂, while the earlier transfer inequality would give the conjecturally optimal eighth moment.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjecture 1 posits the lower-bound scale and would optimize E₂ and the eighth moment",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u11.txt",
+      "unit_bytes": 3036,
+      "unit_id": "openalex_w1981597330_v2_u11",
+      "unit_sha256": "398a0b51247630cfb9f1175599debedc826fddab9abdfbc4c2cbab880879b82a",
+      "unit_type": "mean-square-conjecture-and-consequences",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 862,
+          "line_end": 869,
+          "text": "                        |Z2 (σ + it)|2 dt \nε T 1+ε           (5/6 ≤ σ ≤ 1),\n                    T\n\nhence (3.29) follows from (3.23) (with c = 5/6) since 5 − 6σ ≤ 8/3 − 2σ\nfor σ ≥ 7/12. Note that (3.29) sharpens (3.8) (with the best known value\nc = 2/3) for σ ≥ 5/6.\n\n",
+          "sha256": "0090fdef098149d6e968f9dc6c7cb3a1b8777bc3e31d13951f080374bcb4af11"
+        },
+        "after": {
+          "line_start": 941,
+          "line_end": 948,
+          "text": "    It is plausible that Conjecture 1 is equivalent to Corollary 3. We can\nprove something a little weaker. Namely if (4.3) holds, then by the above\nmethod one can sharpen (3.29) to\n             2T                     \u001a 4−4σ+ε\n                             2       T                (1/2 < σ ≤ 1),\n(4.8)           |Z2 (σ + it)| dt \nε    2−2σ+ε\n                                     T        +T −1\n",
+          "sha256": "1adc2a08d8fa3e72bb7b5f5b70fb12f1d40eea8b86a0b0b7f9e66f660481d564"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjectures on Z₂(s)",
+            "line_end": 1021,
+            "line_start": 870,
+            "mathematical_role": "States mean-square and pointwise conjectures, proves their consequences and reformulations, and separates them from RH and Lindelöf implications."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 940,
+          "line_start": 870,
+          "title": "Conjecture 1 posits the lower-bound scale and would optimize E₂ and the eighth moment",
+          "unit_id": "openalex_w1981597330_v2_u11",
+          "unit_type": "mean-square-conjecture-and-consequences",
+          "why_material": "The proposed Z₂ mean-square bound matches Theorem 1’s scale up to ε. A smoothed inverse-transform argument would then give square-root-size E₂, while the earlier transfer inequality would give the conjecturally optimal eighth moment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both corollary proofs so the conditional arrows are explicit rather than inferred from similarity of exponents.",
+          "representation_dependency": "Smoothing supports, contour truncation, H choice, and exact exponent arithmetic are extraction-sensitive. These are conditional deductions, not observed evidence.",
+          "unit_id": "openalex_w1981597330_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 868,
+            "line_start": 854,
+            "title": "Bootstrapping the propagation theorem sharpens mean-square bounds near σ=1",
+            "unit_id": "openalex_w1981597330_v2_u10",
+            "unit_type": "unconditional-improvement",
+            "why_material": "Feeding a previously known estimate on one vertical line into Theorem 2 yields an improved exponent for σ at least 5/6, demonstrating how the transfer inequality can bootstrap existing information."
+          },
+          {
+            "line_end": 953,
+            "line_start": 941,
+            "title": "The eighth-moment conjecture is equivalent to a weaker piecewise Z₂ mean-square bound",
+            "unit_id": "openalex_w1981597330_v2_u12",
+            "unit_type": "conditional-equivalence",
+            "why_material": "The paper cannot prove equivalence with Conjecture 1 itself, but shows that the optimal eighth moment yields a piecewise transform estimate and that the near-one portion of that estimate recovers the eighth moment. This precisely locates the gap between a desired conjecture and a provably equivalent surrogate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified Mellin inversion and Parseval make three forms of control mutually informative: analytic/mean-square bounds for Z₂, size of the fourth-moment error E₂, and higher zeta moments. Smoothing and polar subtraction determine which implications are exact, conditional, or lossy.",
+            "limit": "The arrows are not all equivalences: the paper explicitly identifies gaps, and exact exponent transfer depends on formula-sensitive hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u03",
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u06",
+              "openalex_w1981597330_v2_u07",
+              "openalex_w1981597330_v2_u11"
+            ],
+            "title": "The transform–error–moment triangle"
+          },
+          {
+            "claim": "The article distinguishes a mean-square conjecture for Z₂, a stronger pointwise Lindelöf analogue, a spectral exponential-sum conjecture, optimal moment statements, and classical RH/Lindelöf; several one-way implications are proved, but equivalence is established only for narrower reformulations.",
+            "limit": "This is a dependency map within the source, not evidence that any of Conjectures 1–3 is true.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u11",
+              "openalex_w1981597330_v2_u12",
+              "openalex_w1981597330_v2_u13",
+              "openalex_w1981597330_v2_u14",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u23"
+            ],
+            "title": "A hierarchy of non-equivalent conjectural strengths"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 869,
+              "line_start": 869,
+              "reason": "Whitespace before Section 4."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the author’s explicit weakening to avoid overstating the conjectural relationship.",
+      "line_end": 953,
+      "line_start": 941,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The piecewise cases and their σ ranges are visually compressed; exact exponents must be PDF-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper cannot prove equivalence with Conjecture 1 itself, but shows that the optimal eighth moment yields a piecewise transform estimate and that the near-one portion of that estimate recovers the eighth moment. This precisely locates the gap between a desired conjecture and a provably equivalent surrogate.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The eighth-moment conjecture is equivalent to a weaker piecewise Z₂ mean-square bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u12.txt",
+      "unit_bytes": 596,
+      "unit_id": "openalex_w1981597330_v2_u12",
+      "unit_sha256": "3efe11533bd5e2ef1339c4692642fc89449e81c9e5491aa6369c1cbe7ec51261",
+      "unit_type": "conditional-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 933,
+          "line_end": 940,
+          "text": "   Proof of Corollary 3. From (3.21) we have\n        2T                                        T 1+ε\n                             8             2σ−1\n(4.7)        |ζ(1/2 + it)| dt \n T                          |Z2 (σ + it)|2 dt   (1/2 < σ < 1),\n        T                                             0\n\nso that (4.3) follows from (4.1) and (4.7).\n",
+          "sha256": "fd9b7885ae05922af5605c140794e56df60a3e1189fb09ac574216579c5210b0"
+        },
+        "after": {
+          "line_start": 954,
+          "line_end": 961,
+          "text": "   In view of the discussion on the true order of Iσ (T ), it seems in place\nto discuss also the problem of the order of Z2 (σ + it), t ≥ t0 > 0 and\n1/2 < σ < 1. Conjecture 1 says that Z2 (σ + it) is small in mean square.\nPerhaps it is even also small pointwise, so the following conjecture is now\nproposed.\n   Conjecture 2. For any given ε > 0 we have\n(4.9)                        Z2 (σ + it) \nε |t|ε              (σ > 1/2).\n",
+          "sha256": "d40a19fef881ddce8ec348ea6974bfcbb7eee2ec69fe5e105bf290c00e066164"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjectures on Z₂(s)",
+            "line_end": 1021,
+            "line_start": 870,
+            "mathematical_role": "States mean-square and pointwise conjectures, proves their consequences and reformulations, and separates them from RH and Lindelöf implications."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 953,
+          "line_start": 941,
+          "title": "The eighth-moment conjecture is equivalent to a weaker piecewise Z₂ mean-square bound",
+          "unit_id": "openalex_w1981597330_v2_u12",
+          "unit_type": "conditional-equivalence",
+          "why_material": "The paper cannot prove equivalence with Conjecture 1 itself, but shows that the optimal eighth moment yields a piecewise transform estimate and that the near-one portion of that estimate recovers the eighth moment. This precisely locates the gap between a desired conjecture and a provably equivalent surrogate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the author’s explicit weakening to avoid overstating the conjectural relationship.",
+          "representation_dependency": "The piecewise cases and their σ ranges are visually compressed; exact exponents must be PDF-verified.",
+          "unit_id": "openalex_w1981597330_v2_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 940,
+            "line_start": 870,
+            "title": "Conjecture 1 posits the lower-bound scale and would optimize E₂ and the eighth moment",
+            "unit_id": "openalex_w1981597330_v2_u11",
+            "unit_type": "mean-square-conjecture-and-consequences",
+            "why_material": "The proposed Z₂ mean-square bound matches Theorem 1’s scale up to ε. A smoothed inverse-transform argument would then give square-root-size E₂, while the earlier transfer inequality would give the conjecturally optimal eighth moment."
+          },
+          {
+            "line_end": 1013,
+            "line_start": 954,
+            "title": "Conjecture 2 is a Lindelöf-type pointwise claim equivalent to vertical decay",
+            "unit_id": "openalex_w1981597330_v2_u13",
+            "unit_type": "pointwise-conjecture-and-self-improvement",
+            "why_material": "A pointwise subpower conjecture for Z₂ is reformulated as the stronger-looking decay t^{1/2−σ+ε}. The proof shows self-improvement: smooth truncation, contour shift to near the critical line, and a second integral representation convert the original uniform bound into decay across the strip."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The article distinguishes a mean-square conjecture for Z₂, a stronger pointwise Lindelöf analogue, a spectral exponential-sum conjecture, optimal moment statements, and classical RH/Lindelöf; several one-way implications are proved, but equivalence is established only for narrower reformulations.",
+            "limit": "This is a dependency map within the source, not evidence that any of Conjectures 1–3 is true.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u11",
+              "openalex_w1981597330_v2_u12",
+              "openalex_w1981597330_v2_u13",
+              "openalex_w1981597330_v2_u14",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u23"
+            ],
+            "title": "A hierarchy of non-equivalent conjectural strengths"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the analogy with classical Lindelöf and the full equivalence argument; it also records that Conjecture 2 immediately implies Conjecture 1.",
+      "line_end": 1013,
+      "line_start": 954,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Cutoff derivatives, contour L, maximum ranges, and final exponent balancing are badly line-broken. Verify the exact scope, especially distance from poles and σ ranges, from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A pointwise subpower conjecture for Z₂ is reformulated as the stronger-looking decay t^{1/2−σ+ε}. The proof shows self-improvement: smooth truncation, contour shift to near the critical line, and a second integral representation convert the original uniform bound into decay across the strip.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjecture 2 is a Lindelöf-type pointwise claim equivalent to vertical decay",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u13.txt",
+      "unit_bytes": 2811,
+      "unit_id": "openalex_w1981597330_v2_u13",
+      "unit_sha256": "38ee69c8374314cd85e89b7c60f94da49c11e5286b0f8d2bbe2703a4d4e4a8f6",
+      "unit_type": "pointwise-conjecture-and-self-improvement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 946,
+          "line_end": 953,
+          "text": "(4.8)           |Z2 (σ + it)| dt \nε    2−2σ+ε\n                                     T        +T −1\n                                                      (σ ≥ 1).\n               T\n\nConversely, (4.8) (with σ = 1 − ε) implies (4.3) by (4.7), so that (4.3) and\n(4.8) are equivalent.\n",
+          "sha256": "8947a1a165258fa23d612916ed51250aba5987468d841082bf24869993eac7f6"
+        },
+        "after": {
+          "line_start": 1014,
+          "line_end": 1021,
+          "text": "    In concluding, note that (4.2) and (4.3) do not seem to imply each other.\nIt seems even that the Riemann hypothesis (that all complex zeros of ζ(s)\nhave real parts equal to 1/2) does not imply (4.2). On the other hand,\n(4.3) is a trivial consequence of the Lindelöf hypothesis (4.2) (which is a\nconsequence of the Riemann hypothesis; see [2] and [17]).\n\n            Some results for the Riemann zeta-function and Hecke series     133\n\n",
+          "sha256": "e54ba880a0fce14d5e2b45bc269f9a6efeedb3295fa30458065734411a9d5af3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjectures on Z₂(s)",
+            "line_end": 1021,
+            "line_start": 870,
+            "mathematical_role": "States mean-square and pointwise conjectures, proves their consequences and reformulations, and separates them from RH and Lindelöf implications."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1013,
+          "line_start": 954,
+          "title": "Conjecture 2 is a Lindelöf-type pointwise claim equivalent to vertical decay",
+          "unit_id": "openalex_w1981597330_v2_u13",
+          "unit_type": "pointwise-conjecture-and-self-improvement",
+          "why_material": "A pointwise subpower conjecture for Z₂ is reformulated as the stronger-looking decay t^{1/2−σ+ε}. The proof shows self-improvement: smooth truncation, contour shift to near the critical line, and a second integral representation convert the original uniform bound into decay across the strip."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the analogy with classical Lindelöf and the full equivalence argument; it also records that Conjecture 2 immediately implies Conjecture 1.",
+          "representation_dependency": "Cutoff derivatives, contour L, maximum ranges, and final exponent balancing are badly line-broken. Verify the exact scope, especially distance from poles and σ ranges, from the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 953,
+            "line_start": 941,
+            "title": "The eighth-moment conjecture is equivalent to a weaker piecewise Z₂ mean-square bound",
+            "unit_id": "openalex_w1981597330_v2_u12",
+            "unit_type": "conditional-equivalence",
+            "why_material": "The paper cannot prove equivalence with Conjecture 1 itself, but shows that the optimal eighth moment yields a piecewise transform estimate and that the near-one portion of that estimate recovers the eighth moment. This precisely locates the gap between a desired conjecture and a provably equivalent surrogate."
+          },
+          {
+            "line_end": 1018,
+            "line_start": 1014,
+            "title": "RH, Lindelöf, E₂, and eighth-moment implications are not interchangeable",
+            "unit_id": "openalex_w1981597330_v2_u14",
+            "unit_type": "logical-separation",
+            "why_material": "The author explicitly warns that the optimal E₂ bound and eighth-moment bound do not appear to imply one another, and that RH does not apparently yield the former even though Lindelöf yields the latter. This prevents collapsing distinct conjectural channels."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The article distinguishes a mean-square conjecture for Z₂, a stronger pointwise Lindelöf analogue, a spectral exponential-sum conjecture, optimal moment statements, and classical RH/Lindelöf; several one-way implications are proved, but equivalence is established only for narrower reformulations.",
+            "limit": "This is a dependency map within the source, not evidence that any of Conjectures 1–3 is true.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u11",
+              "openalex_w1981597330_v2_u12",
+              "openalex_w1981597330_v2_u13",
+              "openalex_w1981597330_v2_u14",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u23"
+            ],
+            "title": "A hierarchy of non-equivalent conjectural strengths"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1021,
+              "line_start": 1019,
+              "reason": "Whitespace and running page header before Section 5."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retained as a high-value logical boundary; the line’s internal reference to Lindelöf is typographically ambiguous, so only the prose distinction is used.",
+      "line_end": 1018,
+      "line_start": 1014,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "A cross-reference appears inconsistent in the extraction. Verify the cited equation number from the PDF before quoting; do not treat the passage as a new proof.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author explicitly warns that the optimal E₂ bound and eighth-moment bound do not appear to imply one another, and that RH does not apparently yield the former even though Lindelöf yields the latter. This prevents collapsing distinct conjectural channels.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH, Lindelöf, E₂, and eighth-moment implications are not interchangeable",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u14.txt",
+      "unit_bytes": 360,
+      "unit_id": "openalex_w1981597330_v2_u14",
+      "unit_sha256": "d53e2a680e22c75c48d4b9ca3a83cf5c7cfe877bc3b6aa4b12d015a2b10d9550",
+      "unit_type": "logical-separation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1006,
+          "line_end": 1013,
+          "text": "t         +t                \nt\nif 1 < σ < 3/2 and δ > 0 is sufficiently small. Finally we use (3.13), (4.9)\n(with σ = 1/2 + ε) and (4.13) (with σ = 1 + ε) to deduce that\n               Z2 (s) \nε X 1/2−σ tε + X 1−σ tε−1/2 \n tε+1/2−σ\nfor X = t. This finishes the proof of Corollary 4.\n",
+          "sha256": "56d614c3e92e064858d6eedac5849ead5d01481a3a3c8cc2cc4dcb794614b37b"
+        },
+        "after": {
+          "line_start": 1019,
+          "line_end": 1026,
+          "text": "\n            Some results for the Riemann zeta-function and Hecke series     133\n\n    5. The conjecture on exponential sums with Hecke series. We\nnow pass to a conjecture involving exponential sums with the Hecke series\nHj3 (1/2), which will have applications to Z2 (s) and to ζ(s). The Lindelöf hy-\npothesis (4.10) can be recast (by using the approximate functional equation\nfor ζ(s) and the Perron inversion formula [2, (A.10)]) in the form involving\n",
+          "sha256": "6397b06baaed51c49926f9a5821e62667d1ff5520bf474e4f1d5b1e161a85326"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjectures on Z₂(s)",
+            "line_end": 1021,
+            "line_start": 870,
+            "mathematical_role": "States mean-square and pointwise conjectures, proves their consequences and reformulations, and separates them from RH and Lindelöf implications."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1018,
+          "line_start": 1014,
+          "title": "RH, Lindelöf, E₂, and eighth-moment implications are not interchangeable",
+          "unit_id": "openalex_w1981597330_v2_u14",
+          "unit_type": "logical-separation",
+          "why_material": "The author explicitly warns that the optimal E₂ bound and eighth-moment bound do not appear to imply one another, and that RH does not apparently yield the former even though Lindelöf yields the latter. This prevents collapsing distinct conjectural channels."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retained as a high-value logical boundary; the line’s internal reference to Lindelöf is typographically ambiguous, so only the prose distinction is used.",
+          "representation_dependency": "A cross-reference appears inconsistent in the extraction. Verify the cited equation number from the PDF before quoting; do not treat the passage as a new proof.",
+          "unit_id": "openalex_w1981597330_v2_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1013,
+            "line_start": 954,
+            "title": "Conjecture 2 is a Lindelöf-type pointwise claim equivalent to vertical decay",
+            "unit_id": "openalex_w1981597330_v2_u13",
+            "unit_type": "pointwise-conjecture-and-self-improvement",
+            "why_material": "A pointwise subpower conjecture for Z₂ is reformulated as the stronger-looking decay t^{1/2−σ+ε}. The proof shows self-improvement: smooth truncation, contour shift to near the critical line, and a second integral representation convert the original uniform bound into decay across the strip."
+          },
+          {
+            "line_end": 1090,
+            "line_start": 1022,
+            "title": "Central Hecke values require cancellation beyond positive short-interval bounds",
+            "unit_id": "openalex_w1981597330_v2_u15",
+            "unit_type": "spectral-cancellation-motivation",
+            "why_material": "The section compares Lindelöf-type cancellation in ordinary Dirichlet sums with central Hecke-value sums. Known positivity gives strong average and pointwise bounds but cannot improve an unweighted unit spectral interval; inserting an oscillatory phase is therefore identified as the missing source of square-root cancellation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The article distinguishes a mean-square conjecture for Z₂, a stronger pointwise Lindelöf analogue, a spectral exponential-sum conjecture, optimal moment statements, and classical RH/Lindelöf; several one-way implications are proved, but equivalence is established only for narrower reformulations.",
+            "limit": "This is a dependency map within the source, not evidence that any of Conjectures 1–3 is true.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u11",
+              "openalex_w1981597330_v2_u12",
+              "openalex_w1981597330_v2_u13",
+              "openalex_w1981597330_v2_u14",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u23"
+            ],
+            "title": "A hierarchy of non-equivalent conjectural strengths"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1021,
+              "line_start": 1019,
+              "reason": "Whitespace and running page header before Section 5."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the ordinary exponential-sum analogy, conjectural Hecke size, known short-interval theorem, and the transition from unweighted to weighted sums.",
+      "line_end": 1090,
+      "line_start": 1022,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several comparison signs and exponents in (5.1)–(5.7) are missing or displaced. Exact known and conjectural strengths require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The section compares Lindelöf-type cancellation in ordinary Dirichlet sums with central Hecke-value sums. Known positivity gives strong average and pointwise bounds but cannot improve an unweighted unit spectral interval; inserting an oscillatory phase is therefore identified as the missing source of square-root cancellation.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Central Hecke values require cancellation beyond positive short-interval bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u15.txt",
+      "unit_bytes": 2741,
+      "unit_id": "openalex_w1981597330_v2_u15",
+      "unit_sha256": "1cf40f1491369611d3403e7bf4660404c664ffc012464980e7c2d44e63289d38",
+      "unit_type": "spectral-cancellation-motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1014,
+          "line_end": 1021,
+          "text": "    In concluding, note that (4.2) and (4.3) do not seem to imply each other.\nIt seems even that the Riemann hypothesis (that all complex zeros of ζ(s)\nhave real parts equal to 1/2) does not imply (4.2). On the other hand,\n(4.3) is a trivial consequence of the Lindelöf hypothesis (4.2) (which is a\nconsequence of the Riemann hypothesis; see [2] and [17]).\n\n            Some results for the Riemann zeta-function and Hecke series     133\n\n",
+          "sha256": "e54ba880a0fce14d5e2b45bc269f9a6efeedb3295fa30458065734411a9d5af3"
+        },
+        "after": {
+          "line_start": 1091,
+          "line_end": 1098,
+          "text": "    In applications an exponential sum with αj Hj3 (1/2) has occurred on at\nleast two important occassions. First, we have (Ivić–Motohashi [10])\n(5.8)      E2 (T ) \n ∆ logc T\n                        X                                              \u0012             \u0012     \u00132 \u0013\n                                                             −3/2               κj     ∆κj\n      + T 1/2 sup                           αj Hj3 (1/2)κj          exp iκj log    −\n             τ \u0010T                                                               τ       T\n",
+          "sha256": "90b5ceb5f7df4cb4fa0b213713a177345ff9c56b07802c436bb1a094dca58cf3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Exponential sums with Hecke series",
+            "line_end": 1277,
+            "line_start": 1022,
+            "mathematical_role": "Motivates spectral cancellation, formulates Conjecture 3, derives conditional consequences, discusses a transformation-formula route, and obtains a conditional Dirichlet-polynomial mean value."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1090,
+          "line_start": 1022,
+          "title": "Central Hecke values require cancellation beyond positive short-interval bounds",
+          "unit_id": "openalex_w1981597330_v2_u15",
+          "unit_type": "spectral-cancellation-motivation",
+          "why_material": "The section compares Lindelöf-type cancellation in ordinary Dirichlet sums with central Hecke-value sums. Known positivity gives strong average and pointwise bounds but cannot improve an unweighted unit spectral interval; inserting an oscillatory phase is therefore identified as the missing source of square-root cancellation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the ordinary exponential-sum analogy, conjectural Hecke size, known short-interval theorem, and the transition from unweighted to weighted sums.",
+          "representation_dependency": "Several comparison signs and exponents in (5.1)–(5.7) are missing or displaced. Exact known and conjectural strengths require PDF verification.",
+          "unit_id": "openalex_w1981597330_v2_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1018,
+            "line_start": 1014,
+            "title": "RH, Lindelöf, E₂, and eighth-moment implications are not interchangeable",
+            "unit_id": "openalex_w1981597330_v2_u14",
+            "unit_type": "logical-separation",
+            "why_material": "The author explicitly warns that the optimal E₂ bound and eighth-moment bound do not appear to imply one another, and that RH does not apparently yield the former even though Lindelöf yields the latter. This prevents collapsing distinct conjectural channels."
+          },
+          {
+            "line_end": 1178,
+            "line_start": 1091,
+            "title": "Two zeta problems reduce to the same oscillatory spectral phase",
+            "unit_id": "openalex_w1981597330_v2_u16",
+            "unit_type": "phase-extraction",
+            "why_material": "Both E₂ and the eighth moment are expressed through short spectral sums weighted by central Hecke values. Absolute-value use of the known bound is too weak; Stirling asymptotics of the residue factor exposes an oscillatory phase, revealing that both applications demand essentially the same cancellation problem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Residues of Z₂ at spectral poles expose positive central Hecke weights; unweighted estimates saturate, while Stirling analysis reveals an oscillatory phase whose square-root cancellation would simultaneously improve E₂, the eighth moment, and pointwise Z₂.",
+            "limit": "The square-root cancellation is Conjecture 3, and the route from it to all stated applications includes conditional or heuristic steps.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u02",
+              "openalex_w1981597330_v2_u15",
+              "openalex_w1981597330_v2_u16",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u20",
+              "openalex_w1981597330_v2_u22"
+            ],
+            "title": "Spectral poles become a cancellation bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1021,
+              "line_start": 1019,
+              "reason": "Whitespace and running page header before Section 5."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains both application formulas, the failed absolute estimate, and phase extraction so the conjecture that follows is problem-driven rather than decorative.",
+      "line_end": 1178,
+      "line_start": 1091,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This span is highly formula-sensitive: Gaussian weights, supremum ranges, residue gamma factors, support intervals, and oscillatory phases are degraded. Exact reductions require checking formulas (5.8)–(5.15) in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Both E₂ and the eighth moment are expressed through short spectral sums weighted by central Hecke values. Absolute-value use of the known bound is too weak; Stirling asymptotics of the residue factor exposes an oscillatory phase, revealing that both applications demand essentially the same cancellation problem.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two zeta problems reduce to the same oscillatory spectral phase",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u16.txt",
+      "unit_bytes": 4563,
+      "unit_id": "openalex_w1981597330_v2_u16",
+      "unit_sha256": "d66be9d0a4dfc0d0c652b03c869b04010874e9ebbaa223f56bc9e56c460cff61",
+      "unit_type": "phase-extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1083,
+          "line_end": 1090,
+          "text": "is weighted by a suitable exponential factor, one expects additional cancel-\nlation to take place, just like when instead of the sum\n                 X\n                        1 = N 0 − N + O(1) (N < N 0 ≤ 2N )\n                    N <n≤N 0\n\nwe consider the sum in (5.1), which is weighted by the exponential factor\nexp(−it log n).\n",
+          "sha256": "3aa0c38a54c53bdc42e0f2af4c0214e0367d4207199f6e928d5a417b10515092"
+        },
+        "after": {
+          "line_start": 1179,
+          "line_end": 1186,
+          "text": "    Conjecture 3. For τ δ \n K \n τ 1+δ (0 < δ < 1) we have\n                X                      \u0012           \u0013\n                            3                   κj\n(5.16)                  αj Hj (1/2) exp iκj log      \nε K 1/2+ε .\n                                                τ\n",
+          "sha256": "f594141537e036bc77f741ce906926ecab57924025f2136cc3c7617078c327a0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Exponential sums with Hecke series",
+            "line_end": 1277,
+            "line_start": 1022,
+            "mathematical_role": "Motivates spectral cancellation, formulates Conjecture 3, derives conditional consequences, discusses a transformation-formula route, and obtains a conditional Dirichlet-polynomial mean value."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1178,
+          "line_start": 1091,
+          "title": "Two zeta problems reduce to the same oscillatory spectral phase",
+          "unit_id": "openalex_w1981597330_v2_u16",
+          "unit_type": "phase-extraction",
+          "why_material": "Both E₂ and the eighth moment are expressed through short spectral sums weighted by central Hecke values. Absolute-value use of the known bound is too weak; Stirling asymptotics of the residue factor exposes an oscillatory phase, revealing that both applications demand essentially the same cancellation problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains both application formulas, the failed absolute estimate, and phase extraction so the conjecture that follows is problem-driven rather than decorative.",
+          "representation_dependency": "This span is highly formula-sensitive: Gaussian weights, supremum ranges, residue gamma factors, support intervals, and oscillatory phases are degraded. Exact reductions require checking formulas (5.8)–(5.15) in the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1090,
+            "line_start": 1022,
+            "title": "Central Hecke values require cancellation beyond positive short-interval bounds",
+            "unit_id": "openalex_w1981597330_v2_u15",
+            "unit_type": "spectral-cancellation-motivation",
+            "why_material": "The section compares Lindelöf-type cancellation in ordinary Dirichlet sums with central Hecke-value sums. Known positivity gives strong average and pointwise bounds but cannot improve an unweighted unit spectral interval; inserting an oscillatory phase is therefore identified as the missing source of square-root cancellation."
+          },
+          {
+            "line_end": 1222,
+            "line_start": 1179,
+            "title": "Conjecture 3 posits square-root cancellation in unit spectral intervals",
+            "unit_id": "openalex_w1981597330_v2_u17",
+            "unit_type": "spectral-exponential-sum-conjecture",
+            "why_material": "The conjecture asks an oscillatory unit-interval sum of positive central Hecke weights to save a square root over the best unweighted bound. The paper traces this hypothesis separately to optimal E₂ and eighth-moment bounds, noting an additional spectral-error step needed for the latter."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Residues of Z₂ at spectral poles expose positive central Hecke weights; unweighted estimates saturate, while Stirling analysis reveals an oscillatory phase whose square-root cancellation would simultaneously improve E₂, the eighth moment, and pointwise Z₂.",
+            "limit": "The square-root cancellation is Conjecture 3, and the route from it to all stated applications includes conditional or heuristic steps.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u02",
+              "openalex_w1981597330_v2_u15",
+              "openalex_w1981597330_v2_u16",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u20",
+              "openalex_w1981597330_v2_u22"
+            ],
+            "title": "Spectral poles become a cancellation bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both conditional corollaries and their proof sketches, preserving the caveat that the eighth-moment remainder must also be controlled.",
+      "line_end": 1222,
+      "line_start": 1179,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The phase parameter range, square-root exponent, partial-summation weights, and error-term notation are extraction-sensitive. All consequences remain conditional on Conjecture 3.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conjecture asks an oscillatory unit-interval sum of positive central Hecke weights to save a square root over the best unweighted bound. The paper traces this hypothesis separately to optimal E₂ and eighth-moment bounds, noting an additional spectral-error step needed for the latter.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjecture 3 posits square-root cancellation in unit spectral intervals",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u17.txt",
+      "unit_bytes": 2143,
+      "unit_id": "openalex_w1981597330_v2_u17",
+      "unit_sha256": "1f1dd135f8ed66e475f17cc1e6b1ac2278bf14048ecf33355506887b0effbf6f",
+      "unit_type": "spectral-exponential-sum-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1171,
+          "line_end": 1178,
+          "text": "                                        t−T ε ≤κj ≤t+T ε\n                         5/2\n                     ×         Φ(x)(T x)it−iκj dx.\n                         1/2\n\nThe exponential sum involving αj Hj3 (1/2) then becomes essentially the same\nas the sum in (5.8), if the latter is split into short subsums. Thus it seems\nreasonable to make the following\n",
+          "sha256": "345ce35019883c3b78984254edcbba8b8b5e00fb22068bc886c71be0a751cf25"
+        },
+        "after": {
+          "line_start": 1223,
+          "line_end": 1230,
+          "text": "    A possibility to treat the sum in (5.16) is to use Motohashi’s transfor-\nmation formula (see [15, Lemma 3.8 and the method of evaluating C(K, G)\non p. 127]) for\n                             ∞\n                             X\n(5.17)                             αj Hj3 (1/2)h(κj ),\n                             j=1\n\n",
+          "sha256": "e6a77ea3cd92b8be8a600529d828a4a922808a5ffbcc9f6a7ac9b1a64d6d14e7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Exponential sums with Hecke series",
+            "line_end": 1277,
+            "line_start": 1022,
+            "mathematical_role": "Motivates spectral cancellation, formulates Conjecture 3, derives conditional consequences, discusses a transformation-formula route, and obtains a conditional Dirichlet-polynomial mean value."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1222,
+          "line_start": 1179,
+          "title": "Conjecture 3 posits square-root cancellation in unit spectral intervals",
+          "unit_id": "openalex_w1981597330_v2_u17",
+          "unit_type": "spectral-exponential-sum-conjecture",
+          "why_material": "The conjecture asks an oscillatory unit-interval sum of positive central Hecke weights to save a square root over the best unweighted bound. The paper traces this hypothesis separately to optimal E₂ and eighth-moment bounds, noting an additional spectral-error step needed for the latter."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both conditional corollaries and their proof sketches, preserving the caveat that the eighth-moment remainder must also be controlled.",
+          "representation_dependency": "The phase parameter range, square-root exponent, partial-summation weights, and error-term notation are extraction-sensitive. All consequences remain conditional on Conjecture 3.",
+          "unit_id": "openalex_w1981597330_v2_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1178,
+            "line_start": 1091,
+            "title": "Two zeta problems reduce to the same oscillatory spectral phase",
+            "unit_id": "openalex_w1981597330_v2_u16",
+            "unit_type": "phase-extraction",
+            "why_material": "Both E₂ and the eighth moment are expressed through short spectral sums weighted by central Hecke values. Absolute-value use of the known bound is too weak; Stirling asymptotics of the residue factor exposes an oscillatory phase, revealing that both applications demand essentially the same cancellation problem."
+          },
+          {
+            "line_end": 1248,
+            "line_start": 1223,
+            "title": "Motohashi’s transformation formula offers a smoothed route but not the unsmoothed target",
+            "unit_id": "openalex_w1981597330_v2_u18",
+            "unit_type": "proposed-route-and-obstruction",
+            "why_material": "The author proposes embedding the unit-interval exponential sum in a spectral transformation formula with an even Gaussian-localized test function and adjustable window G. The key obstruction is explicit: progress for the Gaussian-smoothed transform would not automatically control the unsmoothed sum required by the zeta applications."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Residues of Z₂ at spectral poles expose positive central Hecke weights; unweighted estimates saturate, while Stirling analysis reveals an oscillatory phase whose square-root cancellation would simultaneously improve E₂, the eighth moment, and pointwise Z₂.",
+            "limit": "The square-root cancellation is Conjecture 3, and the route from it to all stated applications includes conditional or heuristic steps.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u02",
+              "openalex_w1981597330_v2_u15",
+              "openalex_w1981597330_v2_u16",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u20",
+              "openalex_w1981597330_v2_u22"
+            ],
+            "title": "Spectral poles become a cancellation bottleneck"
+          },
+          {
+            "claim": "The article distinguishes a mean-square conjecture for Z₂, a stronger pointwise Lindelöf analogue, a spectral exponential-sum conjecture, optimal moment statements, and classical RH/Lindelöf; several one-way implications are proved, but equivalence is established only for narrower reformulations.",
+            "limit": "This is a dependency map within the source, not evidence that any of Conjectures 1–3 is true.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u11",
+              "openalex_w1981597330_v2_u12",
+              "openalex_w1981597330_v2_u13",
+              "openalex_w1981597330_v2_u14",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u23"
+            ],
+            "title": "A hierarchy of non-equivalent conjectural strengths"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the test-function design and the failure-of-transfer warning as a concrete research route with a stated limitation.",
+      "line_end": 1248,
+      "line_start": 1223,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The test function’s polynomial prefactor, phase, Gaussian windows, and admissible strip are densely damaged; exact implementation requires the PDF and cited transformation formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author proposes embedding the unit-interval exponential sum in a spectral transformation formula with an even Gaussian-localized test function and adjustable window G. The key obstruction is explicit: progress for the Gaussian-smoothed transform would not automatically control the unsmoothed sum required by the zeta applications.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Motohashi’s transformation formula offers a smoothed route but not the unsmoothed target",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u18.txt",
+      "unit_bytes": 1332,
+      "unit_id": "openalex_w1981597330_v2_u18",
+      "unit_sha256": "79b37ada8097546b35c0976caf8a1fc99ea5dc681c6ff15b5470e14393ba138b",
+      "unit_type": "proposed-route-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1215,
+          "line_end": 1222,
+          "text": "∆(T ) \nε T 1+ε in (5.12). This can be achieved by noting that the main\ncontribution to ∆(T ) comes from the bound of the portion of Z21 (s) (see\n(6.7)) coming from the discrete spectrum at σ = −ε, when we shift the line\nof integration in the relevant part of (5.10) to a = −ε. Then the relevant\nexpression will be an exponential sum with αj Hj3 (1/2) to which (5.16) may\nbe applied. This will lead to ∆(T ) \nε T 1+ε .\n",
+          "sha256": "9023f6636a6c039ae156ebba67d16d988892426e570a0ef6d99ad7e31f02953e"
+        },
+        "after": {
+          "line_start": 1249,
+          "line_end": 1256,
+          "text": "   It may also be remarked that either of the conjectures may be used to\nderive a mean value result for Dirichlet polynomials. This is\n\n             Some results for the Riemann zeta-function and Hecke series                137\n\n   Corollary 7. If either Conjecture 1, 2 or 3 holds, 1 \n N \n T 2 and\n",
+          "sha256": "15b8b679cdd528e80ba24313ad481c3066bd2f1db316e39cfe00049956449c6e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Exponential sums with Hecke series",
+            "line_end": 1277,
+            "line_start": 1022,
+            "mathematical_role": "Motivates spectral cancellation, formulates Conjecture 3, derives conditional consequences, discusses a transformation-formula route, and obtains a conditional Dirichlet-polynomial mean value."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1248,
+          "line_start": 1223,
+          "title": "Motohashi’s transformation formula offers a smoothed route but not the unsmoothed target",
+          "unit_id": "openalex_w1981597330_v2_u18",
+          "unit_type": "proposed-route-and-obstruction",
+          "why_material": "The author proposes embedding the unit-interval exponential sum in a spectral transformation formula with an even Gaussian-localized test function and adjustable window G. The key obstruction is explicit: progress for the Gaussian-smoothed transform would not automatically control the unsmoothed sum required by the zeta applications."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the test-function design and the failure-of-transfer warning as a concrete research route with a stated limitation.",
+          "representation_dependency": "The test function’s polynomial prefactor, phase, Gaussian windows, and admissible strip are densely damaged; exact implementation requires the PDF and cited transformation formula.",
+          "unit_id": "openalex_w1981597330_v2_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1222,
+            "line_start": 1179,
+            "title": "Conjecture 3 posits square-root cancellation in unit spectral intervals",
+            "unit_id": "openalex_w1981597330_v2_u17",
+            "unit_type": "spectral-exponential-sum-conjecture",
+            "why_material": "The conjecture asks an oscillatory unit-interval sum of positive central Hecke weights to save a square root over the best unweighted bound. The paper traces this hypothesis separately to optimal E₂ and eighth-moment bounds, noting an additional spectral-error step needed for the latter."
+          },
+          {
+            "line_end": 1277,
+            "line_start": 1249,
+            "title": "Any one of the three conjectures yields a strengthened zeta-weighted Dirichlet-polynomial mean value",
+            "unit_id": "openalex_w1981597330_v2_u19",
+            "unit_type": "conditional-weighted-mean-value",
+            "why_material": "The paper identifies a shared downstream inequality for arbitrary Dirichlet coefficients and compares it with prior unconditional bounds, showing that the conjectures control more than the motivating E₂ and moment problems."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth cutoffs enable contour shifts, frequency truncation, and saddle estimates throughout the paper, yet the proposed spectral transformation illustrates that a Gaussian-smoothed bound need not transfer to the unsmoothed unit-window sum actually required.",
+            "limit": "The boundary between removable smoothing and essential unsmoothed control is source-specific and depends on unverified dense formulas.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u09",
+              "openalex_w1981597330_v2_u18",
+              "openalex_w1981597330_v2_u21"
+            ],
+            "title": "Smoothing creates tractability but can hide the target oscillation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the comparison and Selberg-eigenvalue caveat to distinguish the conditional improvement from the known method’s limit.",
+      "line_end": 1277,
+      "line_start": 1249,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The N/T range, coefficient norm, and competing exponents are line-broken; verify the exact statement of (5.18) before use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper identifies a shared downstream inequality for arbitrary Dirichlet coefficients and compares it with prior unconditional bounds, showing that the conjectures control more than the motivating E₂ and moment problems.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Any one of the three conjectures yields a strengthened zeta-weighted Dirichlet-polynomial mean value",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u19.txt",
+      "unit_bytes": 1332,
+      "unit_id": "openalex_w1981597330_v2_u19",
+      "unit_sha256": "e764841ce5b2cb3771fdd0c2a3e25f0df8ea8a0114abddc0769a6c365e91be57",
+      "unit_type": "conditional-weighted-mean-value",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1241,
+          "line_end": 1248,
+          "text": "                         4         2         CT\n                     \u001a    \u0012 \u0012           \u00132 \u0013       \u0012 \u0012      \u00132 \u0013\u001b\n                                 r−K                   r+K\n                   × exp −                   + exp −              .\n                                   G                    G\nThis is a difficult problem, and even if some progress with the sum (5.17)\ncould be made, this would not automatically imply any result concerning\nthe sum (5.15), where there is no Gaussian exponential factor.\n",
+          "sha256": "66687a071c303d515c1ea8b59feb0aecf2a64fd2a4348e83b829f6c7ff0c2417"
+        },
+        "after": {
+          "line_start": 1278,
+          "line_end": 1285,
+          "text": "    6. A new bound for Z2 (s). We have seen that both Conjecture 2 and\nConjecture 3 imply the important bounds (4.2) and (4.3) in zeta-function\ntheory. Thus the question naturally arises: is there any connection between\nConjecture 2 and Conjecture 3? Does one of them imply the other? They\nappear to be both of the same level of difficulty, and it will now be shown\nheuristically that Conjecture 3 implies Conjecture 2. We start from (3.13)\nand replace the left side of D by the line Re w = −ε. Then we expect that\nthe major contribution should come from the poles at w = 1/2 ± iκj − s. In\n",
+          "sha256": "18a7e6bf40f5e37ad40f8b657cdea1e7f7595d88e4df81f8aa6ac9c2a0bfa01e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Exponential sums with Hecke series",
+            "line_end": 1277,
+            "line_start": 1022,
+            "mathematical_role": "Motivates spectral cancellation, formulates Conjecture 3, derives conditional consequences, discusses a transformation-formula route, and obtains a conditional Dirichlet-polynomial mean value."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1277,
+          "line_start": 1249,
+          "title": "Any one of the three conjectures yields a strengthened zeta-weighted Dirichlet-polynomial mean value",
+          "unit_id": "openalex_w1981597330_v2_u19",
+          "unit_type": "conditional-weighted-mean-value",
+          "why_material": "The paper identifies a shared downstream inequality for arbitrary Dirichlet coefficients and compares it with prior unconditional bounds, showing that the conjectures control more than the motivating E₂ and moment problems."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the comparison and Selberg-eigenvalue caveat to distinguish the conditional improvement from the known method’s limit.",
+          "representation_dependency": "The N/T range, coefficient norm, and competing exponents are line-broken; verify the exact statement of (5.18) before use.",
+          "unit_id": "openalex_w1981597330_v2_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1248,
+            "line_start": 1223,
+            "title": "Motohashi’s transformation formula offers a smoothed route but not the unsmoothed target",
+            "unit_id": "openalex_w1981597330_v2_u18",
+            "unit_type": "proposed-route-and-obstruction",
+            "why_material": "The author proposes embedding the unit-interval exponential sum in a spectral transformation formula with an even Gaussian-localized test function and adjustable window G. The key obstruction is explicit: progress for the Gaussian-smoothed transform would not automatically control the unsmoothed sum required by the zeta applications."
+          },
+          {
+            "line_end": 1305,
+            "line_start": 1278,
+            "title": "Spectral residues heuristically link Conjecture 3 to Conjecture 2 and motivate a new unconditional bound",
+            "unit_id": "openalex_w1981597330_v2_u20",
+            "unit_type": "heuristic-to-theorem-transition",
+            "why_material": "Shifting a contour across Z₂’s spectral poles predicts a short residue sum. Ignoring its oscillation and using only the known average gives t^{1−σ+ε}; using Conjecture 3 would give the pointwise conjecture. The article then isolates the former as a theorem away from poles."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Explicitly separates the heuristic residue calculation from the rigorously stated Theorem 3.",
+      "line_end": 1305,
+      "line_start": 1278,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Residue kernels, localization width, X powers, and the meaning of ‘well separated’ are not quantified reliably in extraction; consult the PDF and cited source for the exact hypothesis.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shifting a contour across Z₂’s spectral poles predicts a short residue sum. Ignoring its oscillation and using only the known average gives t^{1−σ+ε}; using Conjecture 3 would give the pointwise conjecture. The article then isolates the former as a theorem away from poles.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Spectral residues heuristically link Conjecture 3 to Conjecture 2 and motivate a new unconditional bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u20.txt",
+      "unit_bytes": 1464,
+      "unit_id": "openalex_w1981597330_v2_u20",
+      "unit_sha256": "618141b25e20b45574976fc41cf5478cf9e6f2f58d79ce25da9504aea983d3df",
+      "unit_type": "heuristic-to-theorem-transition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u20.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1270,
+          "line_end": 1277,
+          "text": "≥ 1/4, the Deshouillers–Iwaniec proof shows that the term T 3/4 N 5/4 in\nthe above factor may be discarded. This is the limit of the Deshouillers–\nIwaniec method. N. Watt [18] showed that the left-hand side of (5.18) is\n\nε T ε (T + T 1/2 N 2 )N maxN <n≤2N |an |2 , which improves the Deshouillers–\nIwaniec bound if an \nε nε .\n\n",
+          "sha256": "2546e0a7cac5554cdadefdc99b83bb5e93aea5539ad437f969a7ddc189d5711e"
+        },
+        "after": {
+          "line_start": 1306,
+          "line_end": 1313,
+          "text": "138                                         A. Ivić\n\n    Proof. From the bounds [8, (4.13) and (4.29)] we have, under the above\nhypotheses,\n                                        X\n(6.4) Z2 (σ + it) \nε t(1−σ)/(1−ξ)+ε +         αj Hj3 (1/2)t(ξ−2σ)/(2−2ξ)+ε ,\n                                                 |t−κj |≤tε\n",
+          "sha256": "54e8a87fe6398071b70493a9376a3709bf015e9dcb0788f69de002f97d2819b6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "New pointwise bound for Z₂(s)",
+            "line_end": 1494,
+            "line_start": 1278,
+            "mathematical_role": "Relates spectral cancellation heuristically to the pointwise conjecture and proves an unconditional bound by relaxing a smoothing-width restriction through saddle-phase analysis."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1305,
+          "line_start": 1278,
+          "title": "Spectral residues heuristically link Conjecture 3 to Conjecture 2 and motivate a new unconditional bound",
+          "unit_id": "openalex_w1981597330_v2_u20",
+          "unit_type": "heuristic-to-theorem-transition",
+          "why_material": "Shifting a contour across Z₂’s spectral poles predicts a short residue sum. Ignoring its oscillation and using only the known average gives t^{1−σ+ε}; using Conjecture 3 would give the pointwise conjecture. The article then isolates the former as a theorem away from poles."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Explicitly separates the heuristic residue calculation from the rigorously stated Theorem 3.",
+          "representation_dependency": "Residue kernels, localization width, X powers, and the meaning of ‘well separated’ are not quantified reliably in extraction; consult the PDF and cited source for the exact hypothesis.",
+          "unit_id": "openalex_w1981597330_v2_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1277,
+            "line_start": 1249,
+            "title": "Any one of the three conjectures yields a strengthened zeta-weighted Dirichlet-polynomial mean value",
+            "unit_id": "openalex_w1981597330_v2_u19",
+            "unit_type": "conditional-weighted-mean-value",
+            "why_material": "The paper identifies a shared downstream inequality for arbitrary Dirichlet coefficients and compares it with prior unconditional bounds, showing that the conjectures control more than the motivating E₂ and moment problems."
+          },
+          {
+            "line_end": 1478,
+            "line_start": 1308,
+            "title": "Oscillation removes an artificial smoothing-width restriction in the pointwise bound",
+            "unit_id": "openalex_w1981597330_v2_u21",
+            "unit_type": "saddle-refinement",
+            "why_material": "The proof revisits a spectral decomposition based on a Gaussian-smoothed fourth moment. A previous saddle estimate required ξ≥1/3; expanding the saddle more accurately, isolating the phase derivative, and applying a first-derivative test controls the formerly troublesome contribution for every positive ξ, permitting ξ≈0 and yielding the claimed pointwise exponent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Residues of Z₂ at spectral poles expose positive central Hecke weights; unweighted estimates saturate, while Stirling analysis reveals an oscillatory phase whose square-root cancellation would simultaneously improve E₂, the eighth moment, and pointwise Z₂.",
+            "limit": "The square-root cancellation is Conjecture 3, and the route from it to all stated applications includes conditional or heuristic steps.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u02",
+              "openalex_w1981597330_v2_u15",
+              "openalex_w1981597330_v2_u16",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u20",
+              "openalex_w1981597330_v2_u22"
+            ],
+            "title": "Spectral poles become a cancellation bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the alternative route through Motohashi’s kernel, the chosen direct modification, saddle expansion, phase-derivative argument, pole-separation use, and extension of the σ-range.",
+      "line_end": 1478,
+      "line_start": 1308,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extreme formula risk: the hypergeometric kernel, saddle equation, z₀ expansion, G(z₀), phase derivatives, and integration ranges contain missing symbols and displaced powers. The conceptual correction is recoverable, but the proof cannot be reconstructed safely without the PDF and cited predecessor.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof revisits a spectral decomposition based on a Gaussian-smoothed fourth moment. A previous saddle estimate required ξ≥1/3; expanding the saddle more accurately, isolating the phase derivative, and applying a first-derivative test controls the formerly troublesome contribution for every positive ξ, permitting ξ≈0 and yielding the claimed pointwise exponent.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Oscillation removes an artificial smoothing-width restriction in the pointwise bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u21.txt",
+      "unit_bytes": 8245,
+      "unit_id": "openalex_w1981597330_v2_u21",
+      "unit_sha256": "0ad36da8cad70fdf393d962118e56b6418a8ea1ccc1802afb430e4e299604434",
+      "unit_type": "saddle-refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u21.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1300,
+          "line_end": 1307,
+          "text": "prove\n    Theorem 3. If s = σ + it is well separated from the poles of Z2 (s), then\nfor 0 < σ < 1, t ≥ t0 > 0 we have\n(6.3)                          Z2 (σ + it) \nε t1−σ+ε .\n\n138                                         A. Ivić\n\n",
+          "sha256": "19ab43263b2136d5e169b7cec66f015c66ec1970e261a72ffea9d9a7c232227a"
+        },
+        "after": {
+          "line_start": 1479,
+          "line_end": 1486,
+          "text": "    We note that the bound\n                                                √\n(6.14)                     Z2 (1/2 + ε + it) \n t,\nwhich follows from (6.3), implies the mean square bound (3.15), therefore\nalso (3.16) and (3.19). More generally, if we assume that\n                                   Z2 (1/2 + ε + it) \n t%\n",
+          "sha256": "c5069495c733303d664826b9e69eb638b6968164617eafc97e08ebd4facd0d62"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "New pointwise bound for Z₂(s)",
+            "line_end": 1494,
+            "line_start": 1278,
+            "mathematical_role": "Relates spectral cancellation heuristically to the pointwise conjecture and proves an unconditional bound by relaxing a smoothing-width restriction through saddle-phase analysis."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1478,
+          "line_start": 1308,
+          "title": "Oscillation removes an artificial smoothing-width restriction in the pointwise bound",
+          "unit_id": "openalex_w1981597330_v2_u21",
+          "unit_type": "saddle-refinement",
+          "why_material": "The proof revisits a spectral decomposition based on a Gaussian-smoothed fourth moment. A previous saddle estimate required ξ≥1/3; expanding the saddle more accurately, isolating the phase derivative, and applying a first-derivative test controls the formerly troublesome contribution for every positive ξ, permitting ξ≈0 and yielding the claimed pointwise exponent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the alternative route through Motohashi’s kernel, the chosen direct modification, saddle expansion, phase-derivative argument, pole-separation use, and extension of the σ-range.",
+          "representation_dependency": "Extreme formula risk: the hypergeometric kernel, saddle equation, z₀ expansion, G(z₀), phase derivatives, and integration ranges contain missing symbols and displaced powers. The conceptual correction is recoverable, but the proof cannot be reconstructed safely without the PDF and cited predecessor.",
+          "unit_id": "openalex_w1981597330_v2_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1305,
+            "line_start": 1278,
+            "title": "Spectral residues heuristically link Conjecture 3 to Conjecture 2 and motivate a new unconditional bound",
+            "unit_id": "openalex_w1981597330_v2_u20",
+            "unit_type": "heuristic-to-theorem-transition",
+            "why_material": "Shifting a contour across Z₂’s spectral poles predicts a short residue sum. Ignoring its oscillation and using only the known average gives t^{1−σ+ε}; using Conjecture 3 would give the pointwise conjecture. The article then isolates the former as a theorem away from poles."
+          },
+          {
+            "line_end": 1493,
+            "line_start": 1479,
+            "title": "Any pointwise improvement for Z₂ propagates quantitatively to E₂ and zeta moments",
+            "unit_id": "openalex_w1981597330_v2_u22",
+            "unit_type": "bound-to-consequence-map",
+            "why_material": "The theorem’s boundary value recovers known mean-square and moment bounds; more generally, a hypothetical exponent ρ for Z₂ gives an explicit improved exponent for E₂. This quantifies why spectral exponential-sum progress is the bottleneck."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth cutoffs enable contour shifts, frequency truncation, and saddle estimates throughout the paper, yet the proposed spectral transformation illustrates that a Gaussian-smoothed bound need not transfer to the unsmoothed unit-window sum actually required.",
+            "limit": "The boundary between removable smoothing and essential unsmoothed control is source-specific and depends on unverified dense formulas.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u09",
+              "openalex_w1981597330_v2_u18",
+              "openalex_w1981597330_v2_u21"
+            ],
+            "title": "Smoothing creates tractability but can hide the target oscillation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the parametric exponent relation rather than only the special current bound.",
+      "line_end": 1493,
+      "line_start": 1479,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The square-root display, ρ notation, and rational exponent are extraction-sensitive; verify formula (6.15) exactly from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem’s boundary value recovers known mean-square and moment bounds; more generally, a hypothetical exponent ρ for Z₂ gives an explicit improved exponent for E₂. This quantifies why spectral exponential-sum progress is the bottleneck.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Any pointwise improvement for Z₂ propagates quantitatively to E₂ and zeta moments",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u22.txt",
+      "unit_bytes": 732,
+      "unit_id": "openalex_w1981597330_v2_u22",
+      "unit_sha256": "caf1ddb8fd28d639cc2ec0f884d0ad4d8e5eece73ef148422601dd3a97fa5986",
+      "unit_type": "bound-to-consequence-map",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u22.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1471,
+          "line_end": 1478,
+          "text": "note that one can extend the validity of (6.3) to the half-plane σ > −1/2,\nsince in [8] it was shown that (6.4) holds for\n                                         σ > max(2ξ − 1, −1/2).\n\n             Some results for the Riemann zeta-function and Hecke series                141\n\nIn the other direction (6.3) holds at least for 1 ≤ σ ≤ 2, which follows from\n(3.24).\n",
+          "sha256": "f7ece17404eed82f632707fb5af92bd79cef922927f24c32beb8d8c9493b8888"
+        },
+        "after": {
+          "line_start": 1494,
+          "line_end": 1501,
+          "text": "\n   7. The function Zk (s). The function Z2 (s) is a special case of the\nfunction\n                     ∞\n(7.1)    Zk (s) :=       |ζ(1/2 + ix)|2k x−s dx            (s = σ + it; σ, t ∈ R, k ∈ N),\n                     1\nintroduced in [10], where the cases k = 1, 2 were extensively investigated.\nOne of the possible applications of Zk (s) consists of the following. If F (s) is\n",
+          "sha256": "61c5c12f3f4a3484dd2a4a0324ac4d9b0c58b6fbcfa304447d10c4c13abbc7f8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "New pointwise bound for Z₂(s)",
+            "line_end": 1494,
+            "line_start": 1278,
+            "mathematical_role": "Relates spectral cancellation heuristically to the pointwise conjecture and proves an unconditional bound by relaxing a smoothing-width restriction through saddle-phase analysis."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1493,
+          "line_start": 1479,
+          "title": "Any pointwise improvement for Z₂ propagates quantitatively to E₂ and zeta moments",
+          "unit_id": "openalex_w1981597330_v2_u22",
+          "unit_type": "bound-to-consequence-map",
+          "why_material": "The theorem’s boundary value recovers known mean-square and moment bounds; more generally, a hypothetical exponent ρ for Z₂ gives an explicit improved exponent for E₂. This quantifies why spectral exponential-sum progress is the bottleneck."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the parametric exponent relation rather than only the special current bound.",
+          "representation_dependency": "The square-root display, ρ notation, and rational exponent are extraction-sensitive; verify formula (6.15) exactly from the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1478,
+            "line_start": 1308,
+            "title": "Oscillation removes an artificial smoothing-width restriction in the pointwise bound",
+            "unit_id": "openalex_w1981597330_v2_u21",
+            "unit_type": "saddle-refinement",
+            "why_material": "The proof revisits a spectral decomposition based on a Gaussian-smoothed fourth moment. A previous saddle estimate required ξ≥1/3; expanding the saddle more accurately, isolating the phase derivative, and applying a first-derivative test controls the formerly troublesome contribution for every positive ξ, permitting ξ≈0 and yielding the claimed pointwise exponent."
+          },
+          {
+            "line_end": 1543,
+            "line_start": 1495,
+            "title": "Analytic continuation of every Z_k is equivalent to the Lindelöf moment hierarchy",
+            "unit_id": "openalex_w1981597330_v2_u23",
+            "unit_type": "moment-transform-equivalence",
+            "why_material": "Mellin inversion converts smoothed 2k-th zeta moments into contour integrals of Z_k. Regular polynomial-growth continuation just beyond σ=1 implies all Lindelöf-strength moments, while integration by parts gives the converse; taken over all k, this is equivalent to Lindelöf."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Residues of Z₂ at spectral poles expose positive central Hecke weights; unweighted estimates saturate, while Stirling analysis reveals an oscillatory phase whose square-root cancellation would simultaneously improve E₂, the eighth moment, and pointwise Z₂.",
+            "limit": "The square-root cancellation is Conjecture 3, and the route from it to all stated applications includes conditional or heuristic steps.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u02",
+              "openalex_w1981597330_v2_u15",
+              "openalex_w1981597330_v2_u16",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u20",
+              "openalex_w1981597330_v2_u22"
+            ],
+            "title": "Spectral poles become a cancellation bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1494,
+              "line_start": 1494,
+              "reason": "Whitespace before Section 7."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both directions and the quantification over k so a weak single-k statement is not mistaken for full equivalence.",
+      "line_end": 1543,
+      "line_start": 1495,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Order of integration, smoothing assumptions, contour position, and σ inequalities are partially scrambled. The equivalence claim is readable but exact analytic hypotheses require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Mellin inversion converts smoothed 2k-th zeta moments into contour integrals of Z_k. Regular polynomial-growth continuation just beyond σ=1 implies all Lindelöf-strength moments, while integration by parts gives the converse; taken over all k, this is equivalent to Lindelöf.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic continuation of every Z_k is equivalent to the Lindelöf moment hierarchy",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u23.txt",
+      "unit_bytes": 2293,
+      "unit_id": "openalex_w1981597330_v2_u23",
+      "unit_sha256": "2937894715bffa2829cf54068f6ef7d5f4aa5bb0232f6da6aa7c767683091192",
+      "unit_type": "moment-transform-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u23.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1487,
+          "line_end": 1494,
+          "text": "with some 0 < % ≤ 1/2, then from (4.6) we obtain\n(6.15)                          E2 (T ) \nε T (2%+1)/(2+2%)+ε .\nThe bound (6.15) shows that any improvement of (6.3) would have far-\nreaching consequences in zeta-function theory. It also transpires that essen-\ntially progress on bounds for E2 (T ) and the eighth moment of |ζ(1/2 + it)|\nfollows from new bounds for the exponential sums appearing in (5.16).\n\n",
+          "sha256": "b5001e86fc8cc534d65596256530b86932dcceb672cda3b13bb575b0d6d0f051"
+        },
+        "after": {
+          "line_start": 1544,
+          "line_end": 1551,
+          "text": "    In [8] it was shown that\n                    T\n(7.4)                    |Z1 (σ + it)|2 dt \nε T 2−2σ+ε                     (1/2 ≤ σ ≤ 1).\n                     1\n\nBy arguments analogous to the ones used in the proof of Theorem 1 it can\nbe shown that (7.4) is essentially best possible, namely that the integral in\n",
+          "sha256": "c4c7b230025f345cd974aaa340683101b0e2ef523ae4ab882867ec690422b3f4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General functions Z_k(s)",
+            "line_end": 1650,
+            "line_start": 1495,
+            "mathematical_role": "Recasts moment bounds as analytic-continuation statements, gives a convolution recurrence, and uses the framework to argue heuristic optimality of the spectral conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1543,
+          "line_start": 1495,
+          "title": "Analytic continuation of every Z_k is equivalent to the Lindelöf moment hierarchy",
+          "unit_id": "openalex_w1981597330_v2_u23",
+          "unit_type": "moment-transform-equivalence",
+          "why_material": "Mellin inversion converts smoothed 2k-th zeta moments into contour integrals of Z_k. Regular polynomial-growth continuation just beyond σ=1 implies all Lindelöf-strength moments, while integration by parts gives the converse; taken over all k, this is equivalent to Lindelöf."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both directions and the quantification over k so a weak single-k statement is not mistaken for full equivalence.",
+          "representation_dependency": "Order of integration, smoothing assumptions, contour position, and σ inequalities are partially scrambled. The equivalence claim is readable but exact analytic hypotheses require PDF verification.",
+          "unit_id": "openalex_w1981597330_v2_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1493,
+            "line_start": 1479,
+            "title": "Any pointwise improvement for Z₂ propagates quantitatively to E₂ and zeta moments",
+            "unit_id": "openalex_w1981597330_v2_u22",
+            "unit_type": "bound-to-consequence-map",
+            "why_material": "The theorem’s boundary value recovers known mean-square and moment bounds; more generally, a hypothetical exponent ρ for Z₂ gives an explicit improved exponent for E₂. This quantifies why spectral exponential-sum progress is the bottleneck."
+          },
+          {
+            "line_end": 1564,
+            "line_start": 1544,
+            "title": "Z₁ satisfies the conjectured mean-square scale but not the pointwise analogue",
+            "unit_id": "openalex_w1981597330_v2_u24",
+            "unit_type": "base-case-calibration",
+            "why_material": "The k=1 transform already has the mean-square exponent conjectured for Z₂ and a dyadic refinement, yet its Lindelöf-type pointwise bound remains out of reach. This demonstrates that mean-square success does not automatically resolve pointwise control even in the simpler case."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The article distinguishes a mean-square conjecture for Z₂, a stronger pointwise Lindelöf analogue, a spectral exponential-sum conjecture, optimal moment statements, and classical RH/Lindelöf; several one-way implications are proved, but equivalence is established only for narrower reformulations.",
+            "limit": "This is a dependency map within the source, not evidence that any of Conjectures 1–3 is true.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u11",
+              "openalex_w1981597330_v2_u12",
+              "openalex_w1981597330_v2_u13",
+              "openalex_w1981597330_v2_u14",
+              "openalex_w1981597330_v2_u17",
+              "openalex_w1981597330_v2_u23"
+            ],
+            "title": "A hierarchy of non-equivalent conjectural strengths"
+          },
+          {
+            "claim": "The convolution law makes Z_{k+l} compositional in Z_k and Z_l, while localized inversion reveals coupled spectral frequencies; this lets low-order transform information diagnose both higher moments and the plausible optimal scale of spectral cancellation.",
+            "limit": "Convergence contours and pointwise inputs are essential, and the final optimality argument is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u04",
+              "openalex_w1981597330_v2_u23",
+              "openalex_w1981597330_v2_u24",
+              "openalex_w1981597330_v2_u25",
+              "openalex_w1981597330_v2_u26"
+            ],
+            "title": "A recursive calculus for moment transforms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1494,
+              "line_start": 1494,
+              "reason": "Whitespace before Section 7."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the lower-bound optimality comment and the sharper dyadic form as calibration for Conjectures 1–2.",
+      "line_end": 1564,
+      "line_start": 1544,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The σ ranges, plus T⁻¹ term, and comparison directions require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The k=1 transform already has the mean-square exponent conjectured for Z₂ and a dyadic refinement, yet its Lindelöf-type pointwise bound remains out of reach. This demonstrates that mean-square success does not automatically resolve pointwise control even in the simpler case.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Z₁ satisfies the conjectured mean-square scale but not the pointwise analogue",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u24.txt",
+      "unit_bytes": 896,
+      "unit_id": "openalex_w1981597330_v2_u24",
+      "unit_sha256": "5fb3814e77dca3c809a6ee55bed08b5129edc56675727b105a4cf1f3f26e6222",
+      "unit_type": "base-case-calibration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u24.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1536,
+          "line_end": 1543,
+          "text": "regular for σ > 1 and in this half-plane satisfies Zk (s) \nσ |t|. Thus the\n2kth moment estimate (7.3) has an equivalent formulation in terms of the\nanalytic behaviour of Zk (s). Moreover (7.3) is equivalent (for example, by\nLemma 7.1 of [3]) to the Lindelöf hypothesis. Hence the Lindelöf hypothesis\nis equivalent to the following statement: given ε > 0, for every k ∈ N the\nfunction Zk (s) can be analytically continued to the half-plane σ ≥ 1 + ε,\nwhere it is of polynomial growth in |t|.\n",
+          "sha256": "b847dfd10c8dbe8f94fba4dd095ea6a3ecd1ffcb9682b881f57de3b1cdc12fbb"
+        },
+        "after": {
+          "line_start": 1565,
+          "line_end": 1572,
+          "text": "    One can directly estimate the 2mth moment of |ζ(1/2 + ix)| by Zm (s)\nas follows. Let m = k + l, k, l ∈ N. Then by Lemma 1 we obtain, provided\nc and d are sufficiently large,\n        5T /2\n(7.6)           ϕ(x)|ζ(1/2 + ix)|2m dx\n         T /2\n                                                    5T /2\n                             1\n",
+          "sha256": "d67afaafbf53d1c526cc02f5e898152c3f30f06cc12cded7a2bc0fdd5afe717b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General functions Z_k(s)",
+            "line_end": 1650,
+            "line_start": 1495,
+            "mathematical_role": "Recasts moment bounds as analytic-continuation statements, gives a convolution recurrence, and uses the framework to argue heuristic optimality of the spectral conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1564,
+          "line_start": 1544,
+          "title": "Z₁ satisfies the conjectured mean-square scale but not the pointwise analogue",
+          "unit_id": "openalex_w1981597330_v2_u24",
+          "unit_type": "base-case-calibration",
+          "why_material": "The k=1 transform already has the mean-square exponent conjectured for Z₂ and a dyadic refinement, yet its Lindelöf-type pointwise bound remains out of reach. This demonstrates that mean-square success does not automatically resolve pointwise control even in the simpler case."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the lower-bound optimality comment and the sharper dyadic form as calibration for Conjectures 1–2.",
+          "representation_dependency": "The σ ranges, plus T⁻¹ term, and comparison directions require PDF checking.",
+          "unit_id": "openalex_w1981597330_v2_u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1543,
+            "line_start": 1495,
+            "title": "Analytic continuation of every Z_k is equivalent to the Lindelöf moment hierarchy",
+            "unit_id": "openalex_w1981597330_v2_u23",
+            "unit_type": "moment-transform-equivalence",
+            "why_material": "Mellin inversion converts smoothed 2k-th zeta moments into contour integrals of Z_k. Regular polynomial-growth continuation just beyond σ=1 implies all Lindelöf-strength moments, while integration by parts gives the converse; taken over all k, this is equivalent to Lindelöf."
+          },
+          {
+            "line_end": 1605,
+            "line_start": 1565,
+            "title": "Products of zeta moments induce a convolution recurrence among Z_k",
+            "unit_id": "openalex_w1981597330_v2_u25",
+            "unit_type": "recursive-transform-calculus",
+            "why_material": "Double Mellin inversion expresses a 2(k+l)-th moment through Z_k and Z_l with frequency coupling, while the modified-transform convolution lemma gives a direct recurrence Z_{k+l} as a vertical convolution. This suggests building higher-moment information compositionally from lower transforms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The convolution law makes Z_{k+l} compositional in Z_k and Z_l, while localized inversion reveals coupled spectral frequencies; this lets low-order transform information diagnose both higher moments and the plausible optimal scale of spectral cancellation.",
+            "limit": "Convergence contours and pointwise inputs are essential, and the final optimality argument is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u04",
+              "openalex_w1981597330_v2_u23",
+              "openalex_w1981597330_v2_u24",
+              "openalex_w1981597330_v2_u25",
+              "openalex_w1981597330_v2_u26"
+            ],
+            "title": "A recursive calculus for moment transforms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "16046f818177cc24a19419c01c3e03950699a56280704dd1e7f212eda91f7a33"
+}

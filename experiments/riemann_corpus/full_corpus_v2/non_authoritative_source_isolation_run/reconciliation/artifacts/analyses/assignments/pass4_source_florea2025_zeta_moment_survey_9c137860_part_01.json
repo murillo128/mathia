@@ -1,0 +1,177 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_florea2025_zeta_moment_survey_9c137860_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "florea2025_zeta_moment_survey",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Kept separate from its motivation so conjecture status remains explicit.",
+      "line_end": 314,
+      "line_start": 299,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Barnes G ratio and integer product should be PDF-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States a uniform positive-real-k conjecture whose constant factors through the Barnes G-function and specializes to explicit integer combinatorics.",
+      "source_id": "florea2025_zeta_moment_survey",
+      "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Keating-Snaith's full moment constant",
+      "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey_v2u06.txt",
+      "unit_bytes": 889,
+      "unit_id": "florea2025_zeta_moment_survey_v2u06",
+      "unit_sha256": "9a5803fc66ddb9e7ba4ff4b6652ceb6f6620bbb9bf22d702ca28fb8bdc6e1be7",
+      "unit_type": "random-matrix-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey_v2u06.txt",
+      "source": {
+        "source_id": "florea2025_zeta_moment_survey",
+        "title": "A Survey of Moment Bounds for Zeta(s): From Heath-Brown's Work to the Present",
+        "authors": [
+          "Alexandra Florea"
+        ],
+        "year": 2025,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "mean-values-moments",
+          "partial-results",
+          "conditional-vs-unconditional"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 291,
+          "line_end": 298,
+          "text": "gk ak /Γ(k 2 +1), and further proposed that gk might be an integer when k is an integer. Other\nthan the values of g1 and g2 (known to be g1 = 1 from [HL16] and g2 = 2 from [Ing26]), no\nplausible conjecture for the value of gk (or, equivalently, Ck ) was put forward until the work\nof Conrey and Ghosh [CG98] who conjectured that g3 = 42. Further work of Conrey and\nGonek [CG01] recovered the conjecture for g3 and predicted that g4 = 24024. Extending\nthe Conrey and Gonek heuristic arguments to higher moments did not yield conjectures for\nk > 4. The breakthrough work of Keating and Snaith [KS00b], based on analogies with\nrandom matrix theory, produced the following very general conjecture.\n",
+          "sha256": "ed69735a32fd212c8b6634133d80709d12e0e18d843eb53edde5f2adc2b1ca6f"
+        },
+        "after": {
+          "line_start": 315,
+          "line_end": 322,
+          "text": "   The main idea behind the Keating and Snaith conjecture was to model ζ(s) by the char-\nacteristic polynomial of random unitary matrices. Denote by 1/2 + itn the non-trivial zeros\nof ζ(s). Under RH, it follows that tn ∈ R. The motivation behind the Keating-Snaith con-\njecture stands in Montgomery’s conjecture [Mon73] that the two-point correlations between\nthe heights tn of the non-trivial zeros of ζ(s), as n → ∞, are the same as those between the\neigenvalues of random complex hermitian matrices as the size of the matrix goes to infinity.\nThese matrices form the Gaussian Unitary Ensemble (GUE) in random matrix theory, and\ntheir eigenvalues have the same local statistics as the unitary matrices in the limit as the\n",
+          "sha256": "5700e2723841e884f9c3df76c0c1355af2a49eea0bb88b4e86a673482fb23594"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_32cd8f90d8cee5f1e765a7ef4fe88e2a3eca7baf5985890a0353c83431930246",
+        "dossier_sha256": "4dd60d12bcc5b13743392859c5cc949c5621666a9658b6d0713a94e1637ba7ef",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjectures for moments",
+            "line_end": 377,
+            "line_start": 240,
+            "mathematical_role": "derives heuristic growth, states the Keating-Snaith constant, and explains the random-matrix/arithmetic factor split"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 314,
+          "line_start": 299,
+          "title": "Keating-Snaith's full moment constant",
+          "unit_id": "florea2025_zeta_moment_survey_v2u06",
+          "unit_type": "random-matrix-conjecture",
+          "why_material": "States a uniform positive-real-k conjecture whose constant factors through the Barnes G-function and specializes to explicit integer combinatorics."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Kept separate from its motivation so conjecture status remains explicit.",
+          "representation_dependency": "Exact Barnes G ratio and integer product should be PDF-checked.",
+          "unit_id": "florea2025_zeta_moment_survey_v2u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 298,
+            "line_start": 240,
+            "title": "Arithmetic truncation and Gaussian log-values predict the same moment exponent",
+            "unit_id": "florea2025_zeta_moment_survey_v2u05",
+            "unit_type": "dual-heuristic",
+            "why_material": "Derives the k^2 logarithmic exponent from two distinct representations: divisor-coefficient diagonal sums and a Gaussian model for log|ζ|, while isolating an arithmetic Euler factor from an unknown global factor."
+          },
+          {
+            "line_end": 376,
+            "line_start": 315,
+            "title": "Match zero density to matrix size, then restore prime arithmetic",
+            "unit_id": "florea2025_zeta_moment_survey_v2u07",
+            "unit_type": "model-transfer",
+            "why_material": "Explains the transfer from GUE/CUE zero statistics to characteristic-polynomial moments via N≈log(T/2π), identifies what random matrices recover, and notes that the arithmetic factor must be supplied or recovered by hybrid models."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Diagonal divisor sums supply the prime Euler factor a_k, while characteristic-polynomial moments supply the global Barnes-G factor g_k; hybrid models are needed to recover both.",
+            "limit": "This is a conjectural asymptotic architecture for higher moments, not a proof of the full constants.",
+            "parent_local_unit_ids": [
+              "florea2025_zeta_moment_survey_v2u05",
+              "florea2025_zeta_moment_survey_v2u06",
+              "florea2025_zeta_moment_survey_v2u07"
+            ],
+            "title": "Arithmetic and random-matrix factors are complementary, not interchangeable"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "florea2025_zeta_moment_survey_v2u06",
+        "spontaneous": {
+          "unit_id": "florea2025_zeta_moment_survey_v2u06",
+          "spontaneous_reading": "Keating-Snaith completes the predicted leading constant by multiplying the arithmetic Euler factor with a Barnes-G random-matrix factor valid for positive real k."
+        },
+        "directed": {
+          "unit_id": "florea2025_zeta_moment_survey_v2u06",
+          "source_grounded_mathematics": "The unit states the conjectural limit for I_k(T)/[T(log T)^{k^2}], with a_k from the prior Euler product and g_k expressed through Barnes G; integer k gives a factorial product.",
+          "conceptual_reading": "The constant factorizes into local arithmetic and universal spectral-statistical components, making explicit what each model contributes.",
+          "representation_or_bridge": "Barnes G compresses the unitary characteristic-polynomial moment constant, while a_k retains prime-specific information.",
+          "boundary_or_failure": "This is explicitly a conjecture, not a proved asymptotic, even though its specializations match known cases.",
+          "uncertainty": "The exact Barnes-G ratio and integer product should be checked in the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "florea2025_zeta_moment_survey_v2u06",
+        "critic_decision": "revise",
+        "supported": [
+          "This narrow span states the Keating-Snaith conjectural limit for positive real k, references a_k from equation (9), gives g_k through Barnes G, and gives the integer specialization.",
+          "The output correctly labels the asymptotic as conjectural."
+        ],
+        "inference": [
+          "Interpreting the two factors as arithmetic and random-matrix components is consistent with the adjacent survey discussion."
+        ],
+        "unsupported_or_imported": [
+          "Within this frozen unit alone, Barnes G is not derived from characteristic-polynomial moments and a_k's prime-local role is only referenced, not shown.",
+          "The claim of a 'universal spectral-statistical component' imports the motivation from the following unit and should not be recorded as source fact for this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The compact factorization story is attractive enough to hide the unit boundary and provenance dependency."
+        ],
+        "context_or_ocr_risk": [
+          "The exact Barnes-G ratio and factorial product should be PDF-checked."
+        ],
+        "missed_mechanism": [
+          "The unit deliberately separates the conjecture statement from its motivation, so it contains no mechanism explaining why the factors arise."
+        ],
+        "revision_instructions": [
+          "Keep the exact conjecture and conjectural status; label arithmetic/random-matrix roles as adjacent-context interpretation or move them to the next unit rather than attributing them to this span."
+        ]
+      }
+    }
+  ]
+}

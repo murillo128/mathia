@@ -1,0 +1,1279 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1971669581_ab81a06d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1971669581",
+  "unit_count": 11,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the moment problem, conjectural polynomial degree, and the definition of the series; the displayed formulas are readable despite stray extraction glyphs.",
+      "line_end": 54,
+      "line_start": 14,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on viewing a family average as coefficients of a Dirichlet series in the discriminant variable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The discriminant exponent becomes a complex variable w, so moment asymptotics can be studied through the singularities of Z(s,w); this is the central representation change driving the paper.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Encode the cubic moment as a two-variable Dirichlet series",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u03.txt",
+      "unit_bytes": 2341,
+      "unit_id": "full_openalex_w1971669581_u03",
+      "unit_sha256": "e0d89f8720529f095e88bf3dfa866e84b6369c04f6811c57403dd71448af66cc",
+      "unit_type": "motivation and generating-series construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u03.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 6,
+          "line_end": 13,
+          "text": "   ON THE CUBIC MOMENT OF QUADRATIC DIRICHLET\n                  L-FUNCTIONS\n\n\n                                      Qiao Zhang\n\n\n\n",
+          "sha256": "37372f7ed9951d2a1d68d4790f76f66e2799406bab71036c3731a1aa64ccc44b"
+        },
+        "after": {
+          "line_start": 55,
+          "line_end": 62,
+          "text": "\n  Received November 17, 2003.\n\n                                             413\n\n<!-- source-page: 2 -->\n\n414                                               QIAO ZHANG\n",
+          "sha256": "4fcb41d3dcb487c3a9a01f3e06f51ba5a441d4a52dd3e0d95a921820dccbdc1b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and main results",
+            "line_end": 173,
+            "line_start": 14,
+            "mathematical_role": "Frames quadratic Dirichlet moments, introduces the multiple-series encoding, states the conditional pole and secondary-term results, and explains their significance and dependencies."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 54,
+          "line_start": 14,
+          "title": "Encode the cubic moment as a two-variable Dirichlet series",
+          "unit_id": "full_openalex_w1971669581_u03",
+          "unit_type": "motivation and generating-series construction",
+          "why_material": "The discriminant exponent becomes a complex variable w, so moment asymptotics can be studied through the singularities of Z(s,w); this is the central representation change driving the paper."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the moment problem, conjectural polynomial degree, and the definition of the series; the displayed formulas are readable despite stray extraction glyphs.",
+          "representation_dependency": "Depends on viewing a family average as coefficients of a Dirichlet series in the discriminant variable.",
+          "unit_id": "full_openalex_w1971669581_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 99,
+            "line_start": 65,
+            "title": "Möbius expansion transfers continuation from square-divisible auxiliary series",
+            "unit_id": "full_openalex_w1971669581_u04",
+            "unit_type": "analytic-continuation mechanism",
+            "why_material": "The expansion over r explains how controlled auxiliary series recover the desired squarefree family and why absolute convergence of that outer expansion sets the accessible w-region and the previous error exponent."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The definitions (1.4)-(1.6), the continuation region, and its consequence for the cubic moment are kept together.",
+      "line_end": 99,
+      "line_start": 65,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the squarefree restriction being represented by a Möbius-weighted sum of series with r^2 dividing the index.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The expansion over r explains how controlled auxiliary series recover the desired squarefree family and why absolute convergence of that outer expansion sets the accessible w-region and the previous error exponent.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Möbius expansion transfers continuation from square-divisible auxiliary series",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u04.txt",
+      "unit_bytes": 1969,
+      "unit_id": "full_openalex_w1971669581_u04",
+      "unit_sha256": "4ab517b5e87576046f1986628772b593eb57a37b5550e3d12690fc9c89a365b3",
+      "unit_type": "analytic-continuation mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u04.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 57,
+          "line_end": 64,
+          "text": "\n                                             413\n\n<!-- source-page: 2 -->\n\n414                                               QIAO ZHANG\n\n\n",
+          "sha256": "c0c80527f999a1d499d303b12d45db06df59a94754fdd4ea2f41bc6da931b7d8"
+        },
+        "after": {
+          "line_start": 100,
+          "line_end": 107,
+          "text": "   The present paper continues the study of analytic\u0005 properties\n                                                         \u0006        for Z(s, w).\nUnder certain technical assumptions, we ﬁnd that Z 12 , w has a simple pole\nat w = 34 and its residue is explicitly computed. More precisely, we have the\nfollowing result.\nTheorem 1. Let σ0 ∈ ( 12 , 34 ) be a constant. Assume that, for s in a neigh-\nborhood of 12 , every Z(s, w; a, b) has a meromorphic continuation to \u0007w > σ0 ,\nand that the series expansion (1.6) is valid in this region. Then Z( 12 , w) can\n",
+          "sha256": "4735eba859227c6d9b5d19f89914bf48a0d46a498546f6d3c1ce664a5243194c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and main results",
+            "line_end": 173,
+            "line_start": 14,
+            "mathematical_role": "Frames quadratic Dirichlet moments, introduces the multiple-series encoding, states the conditional pole and secondary-term results, and explains their significance and dependencies."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 99,
+          "line_start": 65,
+          "title": "Möbius expansion transfers continuation from square-divisible auxiliary series",
+          "unit_id": "full_openalex_w1971669581_u04",
+          "unit_type": "analytic-continuation mechanism",
+          "why_material": "The expansion over r explains how controlled auxiliary series recover the desired squarefree family and why absolute convergence of that outer expansion sets the accessible w-region and the previous error exponent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The definitions (1.4)-(1.6), the continuation region, and its consequence for the cubic moment are kept together.",
+          "representation_dependency": "Depends on the squarefree restriction being represented by a Möbius-weighted sum of series with r^2 dividing the index.",
+          "unit_id": "full_openalex_w1971669581_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 54,
+            "line_start": 14,
+            "title": "Encode the cubic moment as a two-variable Dirichlet series",
+            "unit_id": "full_openalex_w1971669581_u03",
+            "unit_type": "motivation and generating-series construction",
+            "why_material": "The discriminant exponent becomes a complex variable w, so moment asymptotics can be studied through the singularities of Z(s,w); this is the central representation change driving the paper."
+          },
+          {
+            "line_end": 172,
+            "line_start": 100,
+            "title": "A transported pole predicts an exceptional cubic-moment term",
+            "unit_id": "full_openalex_w1971669581_u01",
+            "unit_type": "main result statement",
+            "why_material": "The two conditional theorems connect a nonzero simple pole at w=3/4 to an x^(3/4) secondary term, state the necessary continuation and growth hypotheses, and distinguish the structural phenomenon from what remains analytically out of reach."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The reach of meromorphic continuation and the vertical growth exponent jointly determine whether a transported pole can be separated from the contour error in an unweighted moment asymptotic.",
+            "limit": "The desired stronger growth estimate is suggested by symmetry and Phragmen-Lindelof reasoning but is not obtained here.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u04",
+              "full_openalex_w1971669581_u01",
+              "full_openalex_w1971669581_u13"
+            ],
+            "title": "Analytic boundary quality controls observable moment precision"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The prose and definitions (2.1)-(2.5) are recoverable; individual symbols suffer minor font-extraction substitutions.",
+      "line_end": 217,
+      "line_start": 174,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on prime-local factorization and parity-sensitive archimedean gamma factors.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factoring each integer into a squarefree kernel and square part, then separating Euler factors at a chosen modulus, supplies the bookkeeping needed to move between primitive characters, imprimitive indices, and completed L-functions.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Separate squarefree kernels and bad Euler factors",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u05.txt",
+      "unit_bytes": 2166,
+      "unit_id": "full_openalex_w1971669581_u05",
+      "unit_sha256": "08de494867055eea45ec1ec36e4b86ebc34fd62f2687248211b177243aa102ca",
+      "unit_type": "notation and local-factor setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u05.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 166,
+          "line_end": 173,
+          "text": "tion 3 introduces a family of multiple Dirichlet series ZM (s, w; a, b) as well as\ntheir analytic properties, especially their functional equations. These functional\nequations readily imply the appearance of the pole for Z( 12 , w) at w = 34 ; c.f.\nthe remarks following Proposition 2. In Section 4, the functional equations are\napplied to compute the residues of ZM (s, w; a, b) along \u0005some \u0006polar lines, which\nin turn leads to the determination of the residue of Z 12 , w at w = 34 . This\nproves Theorem 1. Finally, Theorem 2 is proved in Section 5.\n\n",
+          "sha256": "8ab75c3d0d80dc0f45a1d9d42da82ddd93a66c2eca158c8fb1986a01b9ac9b64"
+        },
+        "after": {
+          "line_start": 218,
+          "line_end": 225,
+          "text": "   Finally, for reference we list some functions that will be used extensively in\nour future discussions.\n                    \u0007\u0003         3     9      3       3     9      3      1\n                                                                          \u0004\n(2.6)    Bm (s) =        1 + 2−2s − − 3−2s + 2s + 2 − 1+2s − 3 ,\n                            p        p p           p     p     p       p\n                       p|m\n\n",
+          "sha256": "193c2786d8c3d517bffaee7506472b79e4f6a2d04d319db5695cce7a441bcb00"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Symbols and notations",
+            "line_end": 272,
+            "line_start": 174,
+            "mathematical_role": "Defines squarefree-kernel notation, partial Euler factors, gamma factors, and finite local correction products used to complete and compare the series."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 217,
+          "line_start": 174,
+          "title": "Separate squarefree kernels and bad Euler factors",
+          "unit_id": "full_openalex_w1971669581_u05",
+          "unit_type": "notation and local-factor setup",
+          "why_material": "Factoring each integer into a squarefree kernel and square part, then separating Euler factors at a chosen modulus, supplies the bookkeeping needed to move between primitive characters, imprimitive indices, and completed L-functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The prose and definitions (2.1)-(2.5) are recoverable; individual symbols suffer minor font-extraction substitutions.",
+          "representation_dependency": "Depends on prime-local factorization and parity-sensitive archimedean gamma factors.",
+          "unit_id": "full_openalex_w1971669581_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 172,
+            "line_start": 100,
+            "title": "A transported pole predicts an exceptional cubic-moment term",
+            "unit_id": "full_openalex_w1971669581_u01",
+            "unit_type": "main result statement",
+            "why_material": "The two conditional theorems connect a nonzero simple pole at w=3/4 to an x^(3/4) secondary term, state the necessary continuation and growth hypotheses, and distinguish the structural phenomenon from what remains analytically out of reach."
+          },
+          {
+            "line_end": 267,
+            "line_start": 218,
+            "title": "Package finite-prime corrections for residue transport",
+            "unit_id": "full_openalex_w1971669581_u06",
+            "unit_type": "local correction construction",
+            "why_material": "The B, A, E, and R factors compress the exceptional-prime algebra into multiplicative objects later recognized inside residue sums, enabling a global Euler-product computation rather than repeated casewise expansions."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span is heavily formula-dependent; its structural role and named definitions are recoverable, but exact reuse requires checking the rendered source.",
+      "line_end": 267,
+      "line_start": 218,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong dependence on exact Euler factors, character values, and superscript/subscript placement; scan verification is advisable for coefficients.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The B, A, E, and R factors compress the exceptional-prime algebra into multiplicative objects later recognized inside residue sums, enabling a global Euler-product computation rather than repeated casewise expansions.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Package finite-prime corrections for residue transport",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u06.txt",
+      "unit_bytes": 2460,
+      "unit_id": "full_openalex_w1971669581_u06",
+      "unit_sha256": "e80e2b309709ca62208eb1607650c03f3de9acf4ebd92262bf91834dcea84d31",
+      "unit_type": "local correction construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u06.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 210,
+          "line_end": 217,
+          "text": "  For \u0019 = ±1, we write\n\n                                         s                      ΓR (s),     if \u0019 = 1;\n             ΓR (s) = π − 2 Γ\n                               s\n(2.5)                                      ,         Γ\u0005 (s) =\n                                         2                      ΓR (s + 1), if \u0019 = −1.\n\n",
+          "sha256": "384ec7a17d5c9b63e27b2f2c7a0722675545868a39d0b878525f9fb03011f391"
+        },
+        "after": {
+          "line_start": 268,
+          "line_end": 275,
+          "text": "<!-- source-page: 5 -->\n\nON THE CUBIC MOMENT OF QUADRATIC DIRICHLET L-FUNCTIONS                                       417\n\n\n                               3. Functional Equations\n   Let M be a positive squarefree even integer and a, b its (positive or negative)\ncoprime divisors, then [1] shows that, for every integers d, n coprime to N , there\n",
+          "sha256": "332574a2cdbd8eda9b216a8e6d986d1d5737e98234ecc5185146e8167b658a91"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Symbols and notations",
+            "line_end": 272,
+            "line_start": 174,
+            "mathematical_role": "Defines squarefree-kernel notation, partial Euler factors, gamma factors, and finite local correction products used to complete and compare the series."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 267,
+          "line_start": 218,
+          "title": "Package finite-prime corrections for residue transport",
+          "unit_id": "full_openalex_w1971669581_u06",
+          "unit_type": "local correction construction",
+          "why_material": "The B, A, E, and R factors compress the exceptional-prime algebra into multiplicative objects later recognized inside residue sums, enabling a global Euler-product computation rather than repeated casewise expansions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span is heavily formula-dependent; its structural role and named definitions are recoverable, but exact reuse requires checking the rendered source.",
+          "representation_dependency": "Strong dependence on exact Euler factors, character values, and superscript/subscript placement; scan verification is advisable for coefficients.",
+          "unit_id": "full_openalex_w1971669581_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 217,
+            "line_start": 174,
+            "title": "Separate squarefree kernels and bad Euler factors",
+            "unit_id": "full_openalex_w1971669581_u05",
+            "unit_type": "notation and local-factor setup",
+            "why_material": "Factoring each integer into a squarefree kernel and square part, then separating Euler factors at a chosen modulus, supplies the bookkeeping needed to move between primitive characters, imprimitive indices, and completed L-functions."
+          },
+          {
+            "line_end": 318,
+            "line_start": 273,
+            "title": "Choose correction polynomials so two summation orders satisfy reciprocal identities",
+            "unit_id": "full_openalex_w1971669581_u07",
+            "unit_type": "completed-family construction",
+            "why_material": "The polynomials P and Q complete the coefficients so that summing first in d or n yields the same object; the resulting Z_M admits global meromorphic continuation and exposes its candidate polar lines."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Packaging congruence and bad-prime corrections multiplicatively makes the final residue a comparison of Euler-product pole orders, turning many elaborate intermediate terms into zero unless all characters are principal.",
+            "limit": "Exact coefficients and several case formulas are extraction-sensitive, and the paper explicitly computes only representative congruence cases in detail.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u06",
+              "full_openalex_w1971669581_u08",
+              "full_openalex_w1971669581_u09",
+              "full_openalex_w1971669581_u12"
+            ],
+            "title": "Local factors as a global selection rule"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains the defining reciprocity identity, the completed series, and the initial pole classification; exact polynomial formulas are extraction-sensitive but the construction is clear.",
+      "line_end": 318,
+      "line_start": 273,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on a two-variable multiple Dirichlet series completed by finite Dirichlet polynomials at nonsquarefree and bad-prime data.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The polynomials P and Q complete the coefficients so that summing first in d or n yields the same object; the resulting Z_M admits global meromorphic continuation and exposes its candidate polar lines.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Choose correction polynomials so two summation orders satisfy reciprocal identities",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u07.txt",
+      "unit_bytes": 2768,
+      "unit_id": "full_openalex_w1971669581_u07",
+      "unit_sha256": "d664f5de913f1cb9f7241d7c262c299e2644919b2d77b3073cef02287522ca5e",
+      "unit_type": "completed-family construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u07.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 265,
+          "line_end": 272,
+          "text": "(2.11)                         RM (s) =                                    .\n                                                ζM (1)ζM (2s)3 ζM (6s − 1)\n\n<!-- source-page: 5 -->\n\nON THE CUBIC MOMENT OF QUADRATIC DIRICHLET L-FUNCTIONS                                       417\n\n\n",
+          "sha256": "4d1b31abcf6e4d35ef7faf6145c7ac57388172a9d3ab1d07978528e2480402b9"
+        },
+        "after": {
+          "line_start": 319,
+          "line_end": 326,
+          "text": "Proposition 1. The function ZM (s, w; a, b) satisﬁes a functional equation\n                                    \u0003                     \u0004\n                                                        3\n                          (s, w) → 1 − s, w + 3s −          ;\n                                                        2\nmore precisely, we have\n                          ζ M (2 − 2s)3 Γδa (1 − s)3 \u0002 τ3 (u; M ; µ)τ3 (v; M )\n                                                                 a           a\n",
+          "sha256": "5aab9be6b44f606708a23d9d1c46a43bb8c7e01b2f35580a5756ad71a739c805"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Functional equations",
+            "line_end": 400,
+            "line_start": 273,
+            "mathematical_role": "Constructs the completed two-variable family, states its two generating functional equations, and traces the unique candidate pole to (1/2,3/4)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 318,
+          "line_start": 273,
+          "title": "Choose correction polynomials so two summation orders satisfy reciprocal identities",
+          "unit_id": "full_openalex_w1971669581_u07",
+          "unit_type": "completed-family construction",
+          "why_material": "The polynomials P and Q complete the coefficients so that summing first in d or n yields the same object; the resulting Z_M admits global meromorphic continuation and exposes its candidate polar lines."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contains the defining reciprocity identity, the completed series, and the initial pole classification; exact polynomial formulas are extraction-sensitive but the construction is clear.",
+          "representation_dependency": "Depends on a two-variable multiple Dirichlet series completed by finite Dirichlet polynomials at nonsquarefree and bad-prime data.",
+          "unit_id": "full_openalex_w1971669581_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 267,
+            "line_start": 218,
+            "title": "Package finite-prime corrections for residue transport",
+            "unit_id": "full_openalex_w1971669581_u06",
+            "unit_type": "local correction construction",
+            "why_material": "The B, A, E, and R factors compress the exceptional-prime algebra into multiplicative objects later recognized inside residue sums, enabling a global Euler-product computation rather than repeated casewise expansions."
+          },
+          {
+            "line_end": 406,
+            "line_start": 319,
+            "title": "Functional-equation orbit carries the original pole to w=3/4",
+            "unit_id": "full_openalex_w1971669581_u02",
+            "unit_type": "multiple-dirichlet functional equations",
+            "why_material": "Two affine transformations of (s,w), arising respectively from the L-function functional equation and quadratic reciprocity, carry the simple pole at (1/4,1) through (3/4,1/4) to (1/2,3/4) and show that no other transformed original pole can account for that candidate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "One may enlarge a difficult squarefree family to a completed multivariable family with usable symmetries, perform analytic work there, and then return through congruence decomposition and Möbius sieving.",
+            "limit": "The construction is tailored to quadratic characters and its correction polynomials; no general transfer principle is established.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u07",
+              "full_openalex_w1971669581_u10",
+              "full_openalex_w1971669581_u11"
+            ],
+            "title": "Auxiliary completion followed by arithmetic projection"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof works out one congruence case and states that the remaining cases are analogous; the semantic mechanism is intact although exact case coefficients need rendered-formula checking.",
+      "line_end": 496,
+      "line_start": 407,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on gamma-factor parity cases and multiplicative local corrections E and D.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 3 evaluates the residue on the first transformed polar line by inserting the known w=1 residue into the first functional equation and collapsing divisor sums into previously defined finite Euler factors.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pull the w=1 residue across the first symmetry",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u08.txt",
+      "unit_bytes": 4834,
+      "unit_id": "full_openalex_w1971669581_u08",
+      "unit_sha256": "8abbd305a7cf825a4ddf51534827304e777469d5a74f26d90fd086d14c1855d9",
+      "unit_type": "residue propagation through first functional equation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u08.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 399,
+          "line_end": 406,
+          "text": "nonzero.\n\n                                      4. Computation of Residues\n   In this section, we apply the above functional equations to compute the\n                                   3−3s\nresidue\n    \u0005 1 of ZM\u0006(s, w; a, b) at w =\u0005 1 2 \u0006; in particular, this gives the residue of\nZM 2 , w; a, b , and so that of Z 2 , w , at w = 34 .\n",
+          "sha256": "4b683cf3e8f61383d28a1c8db6b321f804646c7b54bd0f280f6e1802db1878d0"
+        },
+        "after": {
+          "line_start": 497,
+          "line_end": 504,
+          "text": "\n   To determine the residues along the polar line w = 3−3s\n                                                       2 , we apply Proposition\n2 upon Proposition 3.\n\nProposition 4. We have\n                                                                                     \u0003          \u0004\n                                                    ζ M (3s − 1)          s              2−s\n",
+          "sha256": "bc8ada3b8ff720f4ea4e3e5dd37a7824f277dfe061180baca6138196c6139fdf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computation of residues",
+            "line_end": 776,
+            "line_start": 401,
+            "mathematical_role": "Propagates residues through the functional equations, resolves local factors, relates auxiliary series to the original discriminant series, sieves square factors, and isolates the nonzero residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 496,
+          "line_start": 407,
+          "title": "Pull the w=1 residue across the first symmetry",
+          "unit_id": "full_openalex_w1971669581_u08",
+          "unit_type": "residue propagation through first functional equation",
+          "why_material": "Proposition 3 evaluates the residue on the first transformed polar line by inserting the known w=1 residue into the first functional equation and collapsing divisor sums into previously defined finite Euler factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof works out one congruence case and states that the remaining cases are analogous; the semantic mechanism is intact although exact case coefficients need rendered-formula checking.",
+          "representation_dependency": "Depends on gamma-factor parity cases and multiplicative local corrections E and D.",
+          "unit_id": "full_openalex_w1971669581_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 406,
+            "line_start": 319,
+            "title": "Functional-equation orbit carries the original pole to w=3/4",
+            "unit_id": "full_openalex_w1971669581_u02",
+            "unit_type": "multiple-dirichlet functional equations",
+            "why_material": "Two affine transformations of (s,w), arising respectively from the L-function functional equation and quadratic reciprocity, carry the simple pole at (1/4,1) through (3/4,1/4) to (1/2,3/4) and show that no other transformed original pole can account for that candidate."
+          },
+          {
+            "line_end": 645,
+            "line_start": 498,
+            "title": "Move the residue onto the line w=(3-3s)/2",
+            "unit_id": "full_openalex_w1971669581_u09",
+            "unit_type": "residue propagation through second functional equation",
+            "why_material": "Combining the second functional equation with Proposition 3 produces an explicit residue on the polar line that contains (1/2,3/4), while the proof shows how a divisor sum factors into an A-factor and a small 2-adic correction."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Packaging congruence and bad-prime corrections multiplicatively makes the final residue a comparison of Euler-product pole orders, turning many elaborate intermediate terms into zero unless all characters are principal.",
+            "limit": "Exact coefficients and several case formulas are extraction-sensitive, and the paper explicitly computes only representative congruence cases in detail.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u06",
+              "full_openalex_w1971669581_u08",
+              "full_openalex_w1971669581_u09",
+              "full_openalex_w1971669581_u12"
+            ],
+            "title": "Local factors as a global selection rule"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposition, piecewise local factor, and representative b congruent to 1 mod 4 computation form one coherent derivation; other cases are explicitly omitted by the source.",
+      "line_end": 645,
+      "line_start": 498,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly depends on exact gamma ratios, congruence cases, and 2-adic Euler factors; use the source rendering for literal formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combining the second functional equation with Proposition 3 produces an explicit residue on the polar line that contains (1/2,3/4), while the proof shows how a divisor sum factors into an A-factor and a small 2-adic correction.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Move the residue onto the line w=(3-3s)/2",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u09.txt",
+      "unit_bytes": 7863,
+      "unit_id": "full_openalex_w1971669581_u09",
+      "unit_sha256": "a1dbb1c91b1557411fdaef48a95056895a07895ca5e801e31fa27829718ed8c7",
+      "unit_type": "residue propagation through second functional equation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u09.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 490,
+          "line_end": 497,
+          "text": "                                                       (s; b)                   23−6s\n            =                                                                                 + δb χ−1 (|b|) .\n                2|a| 3s− 3\n                         2  Γδa (s) 3     ζa (2 − 2s) 3                   ζ2 (2 − 2s)3 B2 (s)\n\n This proves the proposition in the present case. The other cases can be studied\nsimilarly, so we omit the details.\n\n",
+          "sha256": "3647abe229ff27adefc3a2ec0e7bf599ae13b26981996f4d15d77306c719c788"
+        },
+        "after": {
+          "line_start": 646,
+          "line_end": 653,
+          "text": "\n  To compute the residue of Z( 12 , w) at w = 34 , the last ingredient is the relation\nbetween ZM (s, w; a, b) and Z(s, w).\n\n<!-- source-page: 9 -->\n\nON THE CUBIC MOMENT OF QUADRATIC DIRICHLET L-FUNCTIONS                                       421\n\n",
+          "sha256": "cf0e2f5fdb492449005a94cc331b047160484d6a81ae35d443782a5cb26783b4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computation of residues",
+            "line_end": 776,
+            "line_start": 401,
+            "mathematical_role": "Propagates residues through the functional equations, resolves local factors, relates auxiliary series to the original discriminant series, sieves square factors, and isolates the nonzero residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 645,
+          "line_start": 498,
+          "title": "Move the residue onto the line w=(3-3s)/2",
+          "unit_id": "full_openalex_w1971669581_u09",
+          "unit_type": "residue propagation through second functional equation",
+          "why_material": "Combining the second functional equation with Proposition 3 produces an explicit residue on the polar line that contains (1/2,3/4), while the proof shows how a divisor sum factors into an A-factor and a small 2-adic correction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proposition, piecewise local factor, and representative b congruent to 1 mod 4 computation form one coherent derivation; other cases are explicitly omitted by the source.",
+          "representation_dependency": "Strongly depends on exact gamma ratios, congruence cases, and 2-adic Euler factors; use the source rendering for literal formulas.",
+          "unit_id": "full_openalex_w1971669581_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 496,
+            "line_start": 407,
+            "title": "Pull the w=1 residue across the first symmetry",
+            "unit_id": "full_openalex_w1971669581_u08",
+            "unit_type": "residue propagation through first functional equation",
+            "why_material": "Proposition 3 evaluates the residue on the first transformed polar line by inserting the known w=1 residue into the first functional equation and collapsing divisor sums into previously defined finite Euler factors."
+          },
+          {
+            "line_end": 676,
+            "line_start": 647,
+            "title": "Recover the original discriminant series by sign and mod-8 classes",
+            "unit_id": "full_openalex_w1971669581_u10",
+            "unit_type": "arithmetic decomposition",
+            "why_material": "Proposition 5 expresses Z as a fixed linear combination of auxiliary sign/parity series, making explicit how the prime 2 and the classification of fundamental discriminants mediate the return from Z_M-like objects to the original moment series."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Packaging congruence and bad-prime corrections multiplicatively makes the final residue a comparison of Euler-product pole orders, turning many elaborate intermediate terms into zero unless all characters are principal.",
+            "limit": "Exact coefficients and several case formulas are extraction-sensitive, and the paper explicitly computes only representative congruence cases in detail.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u06",
+              "full_openalex_w1971669581_u08",
+              "full_openalex_w1971669581_u09",
+              "full_openalex_w1971669581_u12"
+            ],
+            "title": "Local factors as a global selection rule"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof identifies the mechanism as a case split by sign and residue class modulo 8.",
+      "line_end": 676,
+      "line_start": 647,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the local Euler factor at 2 and the classification of fundamental discriminants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 5 expresses Z as a fixed linear combination of auxiliary sign/parity series, making explicit how the prime 2 and the classification of fundamental discriminants mediate the return from Z_M-like objects to the original moment series.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Recover the original discriminant series by sign and mod-8 classes",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u10.txt",
+      "unit_bytes": 1512,
+      "unit_id": "full_openalex_w1971669581_u10",
+      "unit_sha256": "54703b64104f2b2917e78610eb233969f0a320b6ed3630c0c8bb01c16c598879",
+      "unit_type": "arithmetic decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u10.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 639,
+          "line_end": 646,
+          "text": "\n                                      2      + 23s−4 − 26s−5        1\n      = χa (|b|)A M (s, 1; a)Gδa (s)                             +      .\n                  2b                     ζ2 (s)3 B2 (1 − 2s )       2\n\nHence the proposition is proved in the case that b ≡ 1 (mod 4) and 2 \u0003 a. The\nother cases can be proved similarly.\n\n",
+          "sha256": "334d6ace41b2fd92911b94d13a99c1768ed1d70924c768beba9b0ecd7b353fc0"
+        },
+        "after": {
+          "line_start": 677,
+          "line_end": 684,
+          "text": "\nProposition 6. Let a, b ∈ Z with ab = ±1, ±2, and assume that the conditions\nin Theorem 1 are satisﬁed. Then\n(4.3)\n           \u0003              \u0004 \u0002 ∞       \u0002      \u0002 χb (δ)ζ (1)3 \u0002 τ3 (m; )χaδ (m0 )\n               1                                       δ            δ\n Res3 Z          , w; a, b =     µ(r)   µ(\u001a)          3               1\n w= 4          2                                    δ 4              m2\n",
+          "sha256": "942db53c2fabf6bd4f1d33a01f12741686f1e947133fdf0c9ac9cde3578ce8a9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computation of residues",
+            "line_end": 776,
+            "line_start": 401,
+            "mathematical_role": "Propagates residues through the functional equations, resolves local factors, relates auxiliary series to the original discriminant series, sieves square factors, and isolates the nonzero residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 676,
+          "line_start": 647,
+          "title": "Recover the original discriminant series by sign and mod-8 classes",
+          "unit_id": "full_openalex_w1971669581_u10",
+          "unit_type": "arithmetic decomposition",
+          "why_material": "Proposition 5 expresses Z as a fixed linear combination of auxiliary sign/parity series, making explicit how the prime 2 and the classification of fundamental discriminants mediate the return from Z_M-like objects to the original moment series."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof identifies the mechanism as a case split by sign and residue class modulo 8.",
+          "representation_dependency": "Depends on the local Euler factor at 2 and the classification of fundamental discriminants.",
+          "unit_id": "full_openalex_w1971669581_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 645,
+            "line_start": 498,
+            "title": "Move the residue onto the line w=(3-3s)/2",
+            "unit_id": "full_openalex_w1971669581_u09",
+            "unit_type": "residue propagation through second functional equation",
+            "why_material": "Combining the second functional equation with Proposition 3 produces an explicit residue on the polar line that contains (1/2,3/4), while the proof shows how a divisor sum factors into an A-factor and a small 2-adic correction."
+          },
+          {
+            "line_end": 712,
+            "line_start": 678,
+            "title": "Remove square factors through a Möbius-weighted residue identity",
+            "unit_id": "full_openalex_w1971669581_u11",
+            "unit_type": "sieving identity",
+            "why_material": "Proposition 6 turns the assumed expansion over r into an exact expression for the desired residue in terms of residues of the M=2 completed family, preserving the squarefree constraint while exposing multiplicative factors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "One may enlarge a difficult squarefree family to a completed multivariable family with usable symmetries, perform analytic work there, and then return through congruence decomposition and Möbius sieving.",
+            "limit": "The construction is tailored to quadratic characters and its correction polynomials; no general transfer principle is established.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u07",
+              "full_openalex_w1971669581_u10",
+              "full_openalex_w1971669581_u11"
+            ],
+            "title": "Auxiliary completion followed by arithmetic projection"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The displayed identity has OCR symbol damage, but the Möbius-sieve structure and its derivation from (1.6) and the cited decomposition are clear.",
+      "line_end": 712,
+      "line_start": 678,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Möbius inversion, squarefree kernels, and character twists; exact summation indices require rendered-source verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 6 turns the assumed expansion over r into an exact expression for the desired residue in terms of residues of the M=2 completed family, preserving the squarefree constraint while exposing multiplicative factors.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Remove square factors through a Möbius-weighted residue identity",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u11.txt",
+      "unit_bytes": 2057,
+      "unit_id": "full_openalex_w1971669581_u11",
+      "unit_sha256": "4388a6ee84bd5e3c5c5f99c1aa2721601829868649df7ad2790146d3fbc7e93b",
+      "unit_type": "sieving identity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u11.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 670,
+          "line_end": 677,
+          "text": "                                                           χD (2)            L2 (s, χD )3\n                   Z(s, w) =                            1−                                .\n                                                            2s                  |D|w\n                                   D fund. disc.\n\nNow (4.2) follows easily from a case-by-case study for the sums over fundamental\ndiscriminants D with given sign and given congruence class modulo 8.\n\n",
+          "sha256": "2ba8a2660d1f2e385fab18f78eb52894fb821d8e646371f4602c713da6a2ddfd"
+        },
+        "after": {
+          "line_start": 713,
+          "line_end": 720,
+          "text": "\n  Finally, we are ready to explicitly compute the residue of Z( 12 , w) at w = 34 .\n\n<!-- source-page: 10 -->\n\n422                                   QIAO ZHANG\n\n\n",
+          "sha256": "2915a78cca8c1b30cc007093fae6eff5da2db1928309f325e87f7faaae6fb0da"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computation of residues",
+            "line_end": 776,
+            "line_start": 401,
+            "mathematical_role": "Propagates residues through the functional equations, resolves local factors, relates auxiliary series to the original discriminant series, sieves square factors, and isolates the nonzero residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 712,
+          "line_start": 678,
+          "title": "Remove square factors through a Möbius-weighted residue identity",
+          "unit_id": "full_openalex_w1971669581_u11",
+          "unit_type": "sieving identity",
+          "why_material": "Proposition 6 turns the assumed expansion over r into an exact expression for the desired residue in terms of residues of the M=2 completed family, preserving the squarefree constraint while exposing multiplicative factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The displayed identity has OCR symbol damage, but the Möbius-sieve structure and its derivation from (1.6) and the cited decomposition are clear.",
+          "representation_dependency": "Depends on Möbius inversion, squarefree kernels, and character twists; exact summation indices require rendered-source verification.",
+          "unit_id": "full_openalex_w1971669581_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 676,
+            "line_start": 647,
+            "title": "Recover the original discriminant series by sign and mod-8 classes",
+            "unit_id": "full_openalex_w1971669581_u10",
+            "unit_type": "arithmetic decomposition",
+            "why_material": "Proposition 5 expresses Z as a fixed linear combination of auxiliary sign/parity series, making explicit how the prime 2 and the classification of fundamental discriminants mediate the return from Z_M-like objects to the original moment series."
+          },
+          {
+            "line_end": 775,
+            "line_start": 714,
+            "title": "Only the principal-character Euler product survives the limiting residue",
+            "unit_id": "full_openalex_w1971669581_u12",
+            "unit_type": "nonvanishing and residue computation",
+            "why_material": "The proof reduces all residue contributions to Euler products R(chi,chi',chi''), shows via orders of L- and zeta-factors that every contribution with a nontrivial character vanishes, and retains the principal-character term to obtain the explicit nonzero residue."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "One may enlarge a difficult squarefree family to a completed multivariable family with usable symmetries, perform analytic work there, and then return through congruence decomposition and Möbius sieving.",
+            "limit": "The construction is tailored to quadratic characters and its correction polynomials; no general transfer principle is established.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u07",
+              "full_openalex_w1971669581_u10",
+              "full_openalex_w1971669581_u11"
+            ],
+            "title": "Auxiliary completion followed by arithmetic projection"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the decisive cancellation/nonvanishing mechanism rather than routine constant arithmetic; some character decorations are blurred but the selection argument is explicit in prose.",
+      "line_end": 775,
+      "line_start": 714,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Euler-product factorization and comparing pole orders at 1; the final numeric and gamma-factor constant is formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof reduces all residue contributions to Euler products R(chi,chi',chi''), shows via orders of L- and zeta-factors that every contribution with a nontrivial character vanishes, and retains the principal-character term to obtain the explicit nonzero residue.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Only the principal-character Euler product survives the limiting residue",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u12.txt",
+      "unit_bytes": 3603,
+      "unit_id": "full_openalex_w1971669581_u12",
+      "unit_sha256": "39021a0bd289cd1e8d87382f6a05d5647aa65e09bffbeb223c2703fcb5b4778f",
+      "unit_type": "nonvanishing and residue computation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u12.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 706,
+          "line_end": 713,
+          "text": "                                                                         m|( δ )\n                             \u0002 1 + \u0019χ−1 (m0 )\n                       ×                                   Z2 (s, w; aδ, \u0019bm0 ).\n                             \u0005=±1\n                                            2\n\nCombining this with (4.4) gives the proposition.\n\n",
+          "sha256": "7e4c0f61c69a13e17689d6a36c5bf780aa8afca337b312bef01cc31bde1951c5"
+        },
+        "after": {
+          "line_start": 776,
+          "line_end": 783,
+          "text": "\n                              5. Proof of Theorem 2\n   Finally, we are ready to prove our Theorem 2.\n\nProof of Theorem 2. By [4], we see that Z( 12 , w)   1 if \u0007w > 1, so\n                 \u0003        \u0004        \u0013            \u0005    \u0006            \u0003 1+\u0005 \u0004\n         \u0002         1\n                            3\n",
+          "sha256": "e8066490734d0648a1dc29846808fc41ad81def8bba5587b1183fe54c0d8851f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computation of residues",
+            "line_end": 776,
+            "line_start": 401,
+            "mathematical_role": "Propagates residues through the functional equations, resolves local factors, relates auxiliary series to the original discriminant series, sieves square factors, and isolates the nonzero residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 775,
+          "line_start": 714,
+          "title": "Only the principal-character Euler product survives the limiting residue",
+          "unit_id": "full_openalex_w1971669581_u12",
+          "unit_type": "nonvanishing and residue computation",
+          "why_material": "The proof reduces all residue contributions to Euler products R(chi,chi',chi''), shows via orders of L- and zeta-factors that every contribution with a nontrivial character vanishes, and retains the principal-character term to obtain the explicit nonzero residue."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the decisive cancellation/nonvanishing mechanism rather than routine constant arithmetic; some character decorations are blurred but the selection argument is explicit in prose.",
+          "representation_dependency": "Depends on Euler-product factorization and comparing pole orders at 1; the final numeric and gamma-factor constant is formula-sensitive.",
+          "unit_id": "full_openalex_w1971669581_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 712,
+            "line_start": 678,
+            "title": "Remove square factors through a Möbius-weighted residue identity",
+            "unit_id": "full_openalex_w1971669581_u11",
+            "unit_type": "sieving identity",
+            "why_material": "Proposition 6 turns the assumed expansion over r into an exact expression for the desired residue in terms of residues of the M=2 completed family, preserving the squarefree constraint while exposing multiplicative factors."
+          },
+          {
+            "line_end": 830,
+            "line_start": 777,
+            "title": "Convert the w=3/4 pole into an x^(3/4) secondary main term",
+            "unit_id": "full_openalex_w1971669581_u13",
+            "unit_type": "contour-shift transfer",
+            "why_material": "Perron inversion, shifting from Re(w)>1 to Re(w)=sigma_0+epsilon, and balancing the vertical-growth and truncation errors show exactly how the order-seven pole at 1 yields xR_3(log x) while the simple pole at 3/4 yields the exceptional secondary term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A functional-equation orbit can reveal a hidden polar contribution, but it becomes a genuine secondary term only after nonvanishing survives arithmetic projection and contour shifting is controlled.",
+            "limit": "This source proves the residue computation conditionally on continuation assumptions and derives the unweighted asymptotic only under a separate growth bound.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u02",
+              "full_openalex_w1971669581_u12",
+              "full_openalex_w1971669581_u13"
+            ],
+            "title": "Pole orbit to secondary asymptotic"
+          },
+          {
+            "claim": "Packaging congruence and bad-prime corrections multiplicatively makes the final residue a comparison of Euler-product pole orders, turning many elaborate intermediate terms into zero unless all characters are principal.",
+            "limit": "Exact coefficients and several case formulas are extraction-sensitive, and the paper explicitly computes only representative congruence cases in detail.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u06",
+              "full_openalex_w1971669581_u08",
+              "full_openalex_w1971669581_u09",
+              "full_openalex_w1971669581_u12"
+            ],
+            "title": "Local factors as a global selection rule"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument is conditional on the stated boundary growth estimate and uses a sharp cutoff; its prose and exponent balancing are recoverable despite formula glyph noise.",
+      "line_end": 830,
+      "line_start": 777,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Mellin/Perron inversion, pole-to-asymptotic correspondence, and the chosen truncation height T.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Perron inversion, shifting from Re(w)>1 to Re(w)=sigma_0+epsilon, and balancing the vertical-growth and truncation errors show exactly how the order-seven pole at 1 yields xR_3(log x) while the simple pole at 3/4 yields the exceptional secondary term.",
+      "source_id": "openalex_w1971669581",
+      "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convert the w=3/4 pole into an x^(3/4) secondary main term",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1971669581_u13.txt",
+      "unit_bytes": 2266,
+      "unit_id": "full_openalex_w1971669581_u13",
+      "unit_sha256": "95fe9718efac3b98361bff873d8fed3272bd3bce9934c880fcb7cb6e6e652253",
+      "unit_type": "contour-shift transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1971669581_u13.txt",
+      "source": {
+        "source_id": "openalex_w1971669581",
+        "title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+        "authors": [
+          "Qiao Zhang"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 769,
+          "line_end": 776,
+          "text": "safely discarding those terms which will introduce nontrivial characters to the\nsummation. A direct computation, combined with (4.2), shows that\n            \u0003     \u0004       √         \u0003                                  \u0004\n              1       223 2 − 253     ΓR ( 14 )4   ΓR ( 14 )ΓR ( 54 )3\n     Res Z      ,w =              P              +                       ≈ −0.162.\n     w= 34    2            256        ΓR ( 34 )4   ΓR ( 34 )ΓR ( 74 )3\nThis completes the proof.\n\n",
+          "sha256": "94842d41cf60d69bf57bf1db50ed8ade3c0b2a9d7d0d7bc16710a0a380ef5e93"
+        },
+        "after": {
+          "line_start": 831,
+          "line_end": 838,
+          "text": "\n                                 Acknowledgements\n   The author would like to thank Dorian Goldfeld for his guidance and support\nthroughout this work, and Adrian Diaconu for many inspiring discussions and\nsuggestions. He would also like to thank Solomon Friedberg, Jeﬀrey Hoﬀstein,\nStephen Miller and Michael Rubinstein for their helpful comments on this work.\n\n                                       References\n",
+          "sha256": "3163cf30014b9eda220e7c69b9267c53cdc901198c5b986a4409c89e7147742d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae39fa56f33ad52c968ddab9470897319ce0553b91cb08535b8f6b9a417e8bcb",
+        "dossier_sha256": "65478967341cf856b3c56f6577f2a2d52b3705bd28a97fcd56c98c6944929e49",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the moment asymptotic",
+            "line_end": 831,
+            "line_start": 777,
+            "mathematical_role": "Uses Perron inversion and a contour shift to turn the poles at 1 and 3/4 into the polynomial main term and exceptional secondary term under the assumed growth bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 830,
+          "line_start": 777,
+          "title": "Convert the w=3/4 pole into an x^(3/4) secondary main term",
+          "unit_id": "full_openalex_w1971669581_u13",
+          "unit_type": "contour-shift transfer",
+          "why_material": "Perron inversion, shifting from Re(w)>1 to Re(w)=sigma_0+epsilon, and balancing the vertical-growth and truncation errors show exactly how the order-seven pole at 1 yields xR_3(log x) while the simple pole at 3/4 yields the exceptional secondary term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The argument is conditional on the stated boundary growth estimate and uses a sharp cutoff; its prose and exponent balancing are recoverable despite formula glyph noise.",
+          "representation_dependency": "Depends on Mellin/Perron inversion, pole-to-asymptotic correspondence, and the chosen truncation height T.",
+          "unit_id": "full_openalex_w1971669581_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 775,
+            "line_start": 714,
+            "title": "Only the principal-character Euler product survives the limiting residue",
+            "unit_id": "full_openalex_w1971669581_u12",
+            "unit_type": "nonvanishing and residue computation",
+            "why_material": "The proof reduces all residue contributions to Euler products R(chi,chi',chi''), shows via orders of L- and zeta-factors that every contribution with a nontrivial character vanishes, and retains the principal-character term to obtain the explicit nonzero residue."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A functional-equation orbit can reveal a hidden polar contribution, but it becomes a genuine secondary term only after nonvanishing survives arithmetic projection and contour shifting is controlled.",
+            "limit": "This source proves the residue computation conditionally on continuation assumptions and derives the unweighted asymptotic only under a separate growth bound.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u02",
+              "full_openalex_w1971669581_u12",
+              "full_openalex_w1971669581_u13"
+            ],
+            "title": "Pole orbit to secondary asymptotic"
+          },
+          {
+            "claim": "The reach of meromorphic continuation and the vertical growth exponent jointly determine whether a transported pole can be separated from the contour error in an unweighted moment asymptotic.",
+            "limit": "The desired stronger growth estimate is suggested by symmetry and Phragmen-Lindelof reasoning but is not obtained here.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1971669581_u04",
+              "full_openalex_w1971669581_u01",
+              "full_openalex_w1971669581_u13"
+            ],
+            "title": "Analytic boundary quality controls observable moment precision"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "baca96ac6e267ebc41bcf99439d29d89b33b42dfc5ffbbafaf968d5fde53f445"
+}

@@ -1,0 +1,107 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1507181162",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1507181162_453d8cc1_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Short blocks suffice to recover the conjectured logarithmic exponent, but the inability to control the longer optimally chosen polynomial causes catastrophic k-dependent constant loss.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1507181162_v2_u03",
+          "openalex_w1507181162_v2_u06"
+        ],
+        "proposed_limit": "The optimized long-polynomial calculation is a Gaussian heuristic and does not rigorously recover the arithmetic factor.",
+        "source_id": "openalex_w1507181162",
+        "synthesis_id": "riemann_v2_within_433cac97b68238e94ed12eb3",
+        "title": "Polynomial length separates sharp order from sharp constant"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The detailed combinatorics are retained because the square-supported reassembly is the central rigorous surrogate for Gaussian independence.",
+          "line_end": 778,
+          "line_start": 502,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense formula extraction; exact truncation constants and combinatorial factors require scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "On the good set each exponential series is truncated at a block-specific degree, squared to preserve positivity when extending the integration domain, expanded through Proposition 2, and reassembled using multiplicativity; square support then yields exp(k^2 sum 1/p), hence the sharp logarithmic order.",
+          "source_id": "openalex_w1507181162",
+          "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+          "source_page_markers_inside_unit": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Positivity and square support turn truncated block exponentials into the Gaussian moment scale",
+          "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u03.txt",
+          "unit_bytes": 18393,
+          "unit_id": "openalex_w1507181162_v2_u03",
+          "unit_sha256": "658951f50bf11db3fd479b5aeae3bad8376a047ebf1af093aac116da9cdaba13",
+          "unit_type": "truncated-exponential-moment-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof constructs a positivity-preserving finite surrogate for the exponential moment. Truncation makes the object algebraic, the length bound makes it observable by time orthogonality, and prime pairing turns it back into the Gaussian variance exponential.",
+            "nonparaphrase_operation": "The bridge chain is block exponentials -> squared Taylor polynomials -> weighted cosine monomials -> the multiplicative square-supported function f -> an Euler-type exponential bound. It preserves an upper bound and prime-pairing structure while discarding precise local coefficients when C is replaced by D and factorial factors are bounded.",
+            "quality_reason": "The span explicitly squares truncated exponentials to obtain a positive integrand, enlarges the good-set integral to [T,2T], and verifies the expanded prime product is short enough for Proposition 2. It replaces detailed coefficients by a majorant, uses nonnegative multiplicative square support, and reassembles the expansion into an exponential bounded by T(log T)^(k^2), with the orthogonality error shown negligible. Gaussian moment scale is interpretive terminology, but the exact exp(k^2 sum 1/p) mechanism supports it.",
+            "source_support": "On the set where every block F_i has bounded real part, each exp(k Re F_i) is truncated at degree about 100k beta_i^(-3/4), squared, and integrated over all [T,2T]. Expanding gives cosine products whose prime product is at most a small power of T, so Proposition 2 applies. Its nonnegative multiplicative f permits coefficient majorization and blockwise reassembly; f's square support reduces to even degrees and bounds the main term by T exp(k^2 sum_{p<=T^{beta_I}}1/p), hence T(log T)^{k^2}, with a negligible orthogonality error.",
+            "speculation_status": "Every step depends on the good-set bounds and on beta_I being small enough that all expanded monomials remain short. Coefficient relaxations are adequate for logarithmic order but lose arithmetic and k-dependent constants. The qualitative chain and final scale are clear. OCR makes several exponents, truncation constants, and intermediate combinatorial ratios unsuitable for exact reuse without checking the scan. Calling positivity an enabling representation change is justified because the source expressly says positivity is why the exponential was written as a square. The bridge from Taylor polynomials through cosine moments and square support to the variance exponential faithfully compresses the proof. Several exponents and combinatorial ratios are OCR-sensitive; the output appropriately limits exact quantitative reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source also explains why careless treatment of small primes loses the arithmetic factor.",
+          "line_end": 1371,
+          "line_start": 1226,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The comparison is partly heuristic and depends on exact asymptotic products; quantitative reuse requires formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Tracking constants identifies the need to choose beta_I exponentially small in k as the source of a doubly exponential loss; allowing a conjecturally longer Gaussian prime polynomial and optimizing its length recovers an exp(-k^2 log k+O(k^2)) factor close to random matrix theory.",
+          "source_id": "openalex_w1507181162",
+          "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+          "source_page_markers_inside_unit": [
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The rigorous short-polynomial constraint explains the poor constant, while Gaussian optimization predicts the random-matrix scale",
+          "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u06.txt",
+          "unit_bytes": 9641,
+          "unit_id": "openalex_w1507181162_v2_u06",
+          "unit_sha256": "18ec6904b1d897f481b088d9454b491faffe4f0af1ca6ad52b59ac542dbb4445",
+          "unit_type": "constant-loss-diagnosis-and-heuristic-optimization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Parameter optimization exposes which limitation is structural and which is technical: the predicted scale is already encoded by the Euler-product variance, while current high-moment control forbids the optimizing polynomial length. The gap points specifically to longer-polynomial control in the exceptional-set lemma.",
+            "nonparaphrase_operation": "The random Euler-product/Gaussian variable is a heuristic bridge from a weighted prime sum to an optimizable scalar variance. Tracking small primes separately would be needed to retain the arithmetic factor a(k); Gaussianizing them erases that local information.",
+            "quality_reason": "The source traces the proved doubly exponential constant to beta_I being comparable to exp(-1000k), forced by the exceptional-set summation, and identifies the main contribution containing exp(2k/beta_I). It then explicitly models the longer weighted prime sum as a centered Gaussian of variance one-half log log x plus O(1), optimizes at log x=2 log T/k, and obtains the conjectural exp(-k^2 log k+O(k^2)) factor. The source says this argument ignores zeros, loses the small-prime arithmetic factor, and cannot be made rigorous without handling length T^(2/k) in Lemma 2. Operational bottleneck and scalar variance are compact interpretive phrases, but the concrete parameter optimization prevents them from becoming content-free templates.",
+            "source_support": "The rigorous lemmas yield a dominant constant exp(O(k)/beta_I), and beta_I is constrained to be comparable to exp(-1000k), producing a doubly exponential dependence. Heuristically treating the longer prime polynomial in the zeta upper bound as a centered Gaussian of variance (1/2)log log x+O(1) gives a moment factor exp(k^2 log log x+O(k^2)). Optimizing the competing terms at log x=2 log T/k yields exp(-k^2 log k+O(k^2)) T(log T)^{k^2}.",
+            "speculation_status": "The optimized conclusion is conjectural and neglects zeta zeros as well as non-Gaussian small-prime effects. The author explicitly cannot make the needed length T^(2/k) polynomial estimate rigorous, so this does not improve the proved theorem. The source clearly distinguishes the rigorous constant audit from the Gaussian extrapolation. Exact product asymptotics and constants should be verified from the typeset formulas before quantitative reuse. Treating the comparison as a diagnosis of current proof reach rather than evidence against the Euler-product heuristic is reasonable and clearly marked as heuristic. The suggestion that small primes require separate care follows directly from the author's explanation of the lost arithmetic factor. Exact asymptotic products and constants remain formula-dependent, as acknowledged."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_7648c7f53f14814d7ee6e346ee78fae22d1a9c22bb3a7f5b3274ed8691398ec7",
+        "dossier_sha256": "98a989e4039283c4e83471e7f9903050a7b013a5a892bc5ba948f6b50271bc35"
+      }
+    }
+  ]
+}

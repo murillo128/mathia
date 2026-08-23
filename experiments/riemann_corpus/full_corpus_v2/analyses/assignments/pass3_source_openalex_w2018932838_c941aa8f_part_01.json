@@ -1,0 +1,2101 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2018932838_c941aa8f_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2018932838",
+  "unit_count": 15,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Self-contained introductory direction from primes to zeros; it explicitly marks the Hamiltonian as unknown.",
+      "line_end": 49,
+      "line_start": 36,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the trace-formula vocabulary of density of states, actions, and periodic orbits, but the correspondence is stated in recoverable prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The text maps the oscillatory density of zeta zeros to a Gutzwiller-like orbit sum whose actions are logarithms of prime powers, making a precise structural analogy between arithmetic and spectral representations.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime logarithms as periodic-orbit data for the zero spectrum",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u03.txt",
+      "unit_bytes": 1263,
+      "unit_id": "full_openalex_w2018932838_u03",
+      "unit_sha256": "8091d10700ba49f8abd90fb150150fd30777ddeede031b32f27363ce2e9719c7",
+      "unit_type": "representation bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u03.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 28,
+          "line_end": 35,
+          "text": "\n                                             Typeset by REVTEX                              1\n\n<!-- source-page: 2 -->\n\nI.    INTRODUCTION\n\n\n",
+          "sha256": "fa83e759572c5713412113b71c1bc822517f07cc1fdddddb6d1129995c3127b8"
+        },
+        "after": {
+          "line_start": 50,
+          "line_end": 57,
+          "text": "     Conversely, one could ask whether it is also possible to calculate the prime number se-\nquence from a sum of oscillatory terms, with one term for every zero of the zeta function.\nAlthough less widely-known, such a series was actually given by Riemann himself [6]. Rie-\nmann derived an exact formula for the density of the primes (and their integer powers) that\ncan be expressed as the sum of a smooth function and an infinite series of oscillatory terms\ninvolving the complex zeros of the zeta function. The smooth part has been thoroughly\nstudied in the context of the prime number theorem whereas the oscillatory part has been\nlargely ignored. Interestingly, it is the latter that contains the essential information about\n",
+          "sha256": "46493aa98c92a1404d1a98e3bffd0ba79da8c832f481fa31e51ee9cf559a5017"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. Introduction",
+            "line_end": 93,
+            "line_start": 33,
+            "mathematical_role": "Sets up the two directions between zeros and prime powers, the correlation contrast, the trace-formula question, and the finite-truncation resolution problem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 49,
+          "line_start": 36,
+          "title": "Prime logarithms as periodic-orbit data for the zero spectrum",
+          "unit_id": "full_openalex_w2018932838_u03",
+          "unit_type": "representation bridge",
+          "why_material": "The text maps the oscillatory density of zeta zeros to a Gutzwiller-like orbit sum whose actions are logarithms of prime powers, making a precise structural analogy between arithmetic and spectral representations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Self-contained introductory direction from primes to zeros; it explicitly marks the Hamiltonian as unknown.",
+          "representation_dependency": "Depends on the trace-formula vocabulary of density of states, actions, and periodic orbits, but the correspondence is stated in recoverable prose.",
+          "unit_id": "full_openalex_w2018932838_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 64,
+            "line_start": 50,
+            "title": "Correlated zeros interfere to locate nearly uncorrelated prime powers",
+            "unit_id": "full_openalex_w2018932838_u04",
+            "unit_type": "inverse representation mechanism",
+            "why_material": "The reverse direction is conceptually nontrivial: an infinite oscillatory series indexed by highly correlated zeros reconstructs the locally irregular prime-power sequence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Shared phase/oscillation structure gives meaningful two-way prime/zero representations, while missing orbit repetitions, index-independent amplitudes, and the trivial-zero smooth term prevent upgrading that resemblance to a Hamiltonian trace formula.",
+            "limit": "The obstruction applies to Riemann's formula as written and does not rule out a different trace formula or Hamiltonian for the prime spectrum.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u03",
+              "full_openalex_w2018932838_u04",
+              "full_openalex_w2018932838_u05",
+              "full_openalex_w2018932838_u12",
+              "full_openalex_w2018932838_u15",
+              "full_openalex_w2018932838_u17"
+            ],
+            "title": "The same zero data support an arithmetic bridge but not the proposed dynamics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 35,
+              "line_start": 33,
+              "reason": "Introduction heading and spacing."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u03",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u03",
+          "spontaneous_reading": "The mathematical work is done by recoding each prime power as an oscillatory contribution to the zero density, with its logarithm playing the role of an orbit action; multiplicative arithmetic thereby becomes visible in spectral language."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u03",
+          "source_grounded_mathematics": "The source describes the oscillatory density of the Riemann zeros as a Gutzwiller-like sum with one periodic term for every integer power of a prime, and identifies the corresponding actions with logarithms of primes and prime powers.",
+          "conceptual_reading": "This representation compresses the prime-power hierarchy into action labels for spectral oscillations. It suggests that a discrete arithmetic structure can organize a putative quantum spectrum without exposing a Hamiltonian in dynamical variables.",
+          "representation_or_bridge": "The bridge maps prime powers to periodic terms, logarithms of prime powers to classical actions, and zeta zeros to a candidate energy spectrum.",
+          "boundary_or_failure": "GUE-like statistics and a Gutzwiller-like expansion do not construct the Hamiltonian or prove that genuine classical periodic orbits exist; the source explicitly says the Hamiltonian is unknown.",
+          "uncertainty": "Low for the stated formal correspondence; high for the dynamical-existence inference, which remains heuristic in this span."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contrasts the GUE-like zero sequence with Poisson-like prime spacings without claiming their statistics are identical.",
+      "line_end": 64,
+      "line_start": 50,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses density decomposition into smooth and oscillatory parts; no unreadable display is required.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The reverse direction is conceptually nontrivial: an infinite oscillatory series indexed by highly correlated zeros reconstructs the locally irregular prime-power sequence.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Correlated zeros interfere to locate nearly uncorrelated prime powers",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u04.txt",
+      "unit_bytes": 1365,
+      "unit_id": "full_openalex_w2018932838_u04",
+      "unit_sha256": "c0cd12c4e6bcfac18f62aa310c31b06633404561f9dfa497fbadb1366a9591d4",
+      "unit_type": "inverse representation mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u04.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 42,
+          "line_end": 49,
+          "text": "quantum chaotic system comes from Gutzwiller’s pioneering work [3], that expresses the\noscillatory part of the quantum density of states as a sum over classical periodic orbits.\n(Such sums are now referred to as trace formulas.) It is well-known that the oscillatory part\nof the density of the Riemann zeros is given by a Gutzwiller-like sum, with one periodic term\nfor every integer power of a prime number [4]. (A smoothed density of the Riemann zeros\nhas also been studied in Ref. [5].) From this perspective, one can infer that a spectrum\nconsisting of the Riemann zeros is generated by a Hamiltonian (albeit unknown) whose\nclassical orbits have actions that are logarithms of primes and integer powers of primes.\n",
+          "sha256": "2f5066cdd7b1e79b93686d5bff86218c7ec0824e37545beaa0dfa66bb5b5c74a"
+        },
+        "after": {
+          "line_start": 65,
+          "line_end": 72,
+          "text": "     As mentioned above, from the perspective of semiclassical periodic orbit theory, the\n\n\n                                              2\n\n<!-- source-page: 3 -->\n\ndensity of the Riemann zeros has the structure of a dynamical trace formula with periodic\n",
+          "sha256": "97021d887a93757d895f708c719ab69aca5629c0d3dbbae8b8291873f902258f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. Introduction",
+            "line_end": 93,
+            "line_start": 33,
+            "mathematical_role": "Sets up the two directions between zeros and prime powers, the correlation contrast, the trace-formula question, and the finite-truncation resolution problem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 64,
+          "line_start": 50,
+          "title": "Correlated zeros interfere to locate nearly uncorrelated prime powers",
+          "unit_id": "full_openalex_w2018932838_u04",
+          "unit_type": "inverse representation mechanism",
+          "why_material": "The reverse direction is conceptually nontrivial: an infinite oscillatory series indexed by highly correlated zeros reconstructs the locally irregular prime-power sequence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contrasts the GUE-like zero sequence with Poisson-like prime spacings without claiming their statistics are identical.",
+          "representation_dependency": "Uses density decomposition into smooth and oscillatory parts; no unreadable display is required.",
+          "unit_id": "full_openalex_w2018932838_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 49,
+            "line_start": 36,
+            "title": "Prime logarithms as periodic-orbit data for the zero spectrum",
+            "unit_id": "full_openalex_w2018932838_u03",
+            "unit_type": "representation bridge",
+            "why_material": "The text maps the oscillatory density of zeta zeros to a Gutzwiller-like orbit sum whose actions are logarithms of prime powers, making a precise structural analogy between arithmetic and spectral representations."
+          },
+          {
+            "line_end": 79,
+            "line_start": 65,
+            "title": "Why the inverse oscillatory formula need not be a dynamical trace formula",
+            "unit_id": "full_openalex_w2018932838_u05",
+            "unit_type": "analogy limit",
+            "why_material": "It distinguishes formal oscillatory resemblance from dynamical origin and explains what a separate trace formula for primes would and would not imply."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Shared phase/oscillation structure gives meaningful two-way prime/zero representations, while missing orbit repetitions, index-independent amplitudes, and the trivial-zero smooth term prevent upgrading that resemblance to a Hamiltonian trace formula.",
+            "limit": "The obstruction applies to Riemann's formula as written and does not rule out a different trace formula or Hamiltonian for the prime spectrum.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u03",
+              "full_openalex_w2018932838_u04",
+              "full_openalex_w2018932838_u05",
+              "full_openalex_w2018932838_u12",
+              "full_openalex_w2018932838_u15",
+              "full_openalex_w2018932838_u17"
+            ],
+            "title": "The same zero data support an arithmetic bridge but not the proposed dynamics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u04",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u04",
+          "spontaneous_reading": "A highly correlated family of zero-indexed oscillations can interfere to synthesize the sparse, locally irregular support of the prime powers, so the useful mechanism is collective phase cancellation and reinforcement rather than similarity of the two spacing statistics."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u04",
+          "source_grounded_mathematics": "Riemann's exact prime-power density is presented as a smooth term plus an infinite oscillatory series indexed by complex zeta zeros. The source says the oscillatory part contains the prime locations and that correlated zeros interfere to generate the almost-uncorrelated prime-power sequence.",
+          "conceptual_reading": "The smooth component carries global regularity, while the oscillatory component restores local arithmetic detail. Strong correlations in the representing coordinates need not survive in the represented support.",
+          "representation_or_bridge": "The explicit-formula bridge runs from zero frequencies and phases to a distribution supported at primes and their powers; interference is the reconstruction mechanism.",
+          "boundary_or_failure": "The contrast between GUE-like zero spacings and Poisson-like prime spacings is not an identity of statistics, and exact recovery by an infinite series does not by itself control a finite truncation.",
+          "uncertainty": "Low for the source's stated decomposition and qualitative mechanism; the statistical descriptions are reported background claims rather than derived here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an early conceptual warning later justified by structural obstructions at lines 610-625.",
+      "line_end": 79,
+      "line_start": 65,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends only on the stated contrast between oscillatory sums and periodic-orbit dynamics.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It distinguishes formal oscillatory resemblance from dynamical origin and explains what a separate trace formula for primes would and would not imply.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why the inverse oscillatory formula need not be a dynamical trace formula",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u05.txt",
+      "unit_bytes": 864,
+      "unit_id": "full_openalex_w2018932838_u05",
+      "unit_sha256": "f47092d91dc59fe66e415790561fc68118a7d0061c4cc900c69c07a78b958245",
+      "unit_type": "analogy limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u05.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 57,
+          "line_end": 64,
+          "text": "largely ignored. Interestingly, it is the latter that contains the essential information about\nthe location of the primes, as shown below. There is a vast literature on the distribution\nof the prime numbers. It is recognized that their distribution exhibits global regularity and\nlocal irregularity [7]. The nearest-neighbour spacings (NNS) of the primes is known to be\nPoisson-like [8], corresponding to an almost uncorrelated random distribution. This is very\ndifferent in character from the Gaussian Unitary Ensemble (GUE) distribution of the Rie-\nmann zeros. Nevertheless, it is possible to generate the almost-uncorrelated sequence of all\ninteger powers of primes from the interference of the highly-correlated Riemann zeros.\n",
+          "sha256": "9b735ab250d85c19523e8696a5126014a926627362f75db280936304366a5df3"
+        },
+        "after": {
+          "line_start": 80,
+          "line_end": 87,
+          "text": "      The purpose of this paper is to study the density of the primes from the perspective of\nnumerical semiclassics. To our knowledge, Riemann’s series has not been studied numeri-\ncally. We first verify that Riemann’s formula does produce spectral lines at the positions\nof the primes and their powers, even when the series is truncated. This is not completely\nunexpected since Riemann’s series converges conditionally to the exact density which is a\nset of δ-function spikes. However, the δ functions arise from the entire series. The truncated\nseries is an approximation to the exact density. It does not yield spikes, but rather lines of\nvarious widths, heights and (unknown) shapes and it is not at all obvious that the relative\n",
+          "sha256": "ac4ab88d077dca4f1d1a94fab861c9a0dacae40c6b20492be7d246aa57506f27"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. Introduction",
+            "line_end": 93,
+            "line_start": 33,
+            "mathematical_role": "Sets up the two directions between zeros and prime powers, the correlation contrast, the trace-formula question, and the finite-truncation resolution problem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 79,
+          "line_start": 65,
+          "title": "Why the inverse oscillatory formula need not be a dynamical trace formula",
+          "unit_id": "full_openalex_w2018932838_u05",
+          "unit_type": "analogy limit",
+          "why_material": "It distinguishes formal oscillatory resemblance from dynamical origin and explains what a separate trace formula for primes would and would not imply."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an early conceptual warning later justified by structural obstructions at lines 610-625.",
+          "representation_dependency": "Depends only on the stated contrast between oscillatory sums and periodic-orbit dynamics.",
+          "unit_id": "full_openalex_w2018932838_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 64,
+            "line_start": 50,
+            "title": "Correlated zeros interfere to locate nearly uncorrelated prime powers",
+            "unit_id": "full_openalex_w2018932838_u04",
+            "unit_type": "inverse representation mechanism",
+            "why_material": "The reverse direction is conceptually nontrivial: an infinite oscillatory series indexed by highly correlated zeros reconstructs the locally irregular prime-power sequence."
+          },
+          {
+            "line_end": 91,
+            "line_start": 80,
+            "title": "Truncation turns exact spikes into lines with unknown shape and resolution",
+            "unit_id": "full_openalex_w2018932838_u06",
+            "unit_type": "finite-approximation problem",
+            "why_material": "It identifies the central finite-information problem: conditional convergence to delta spikes does not guarantee that a truncated sum has correct widths, shapes, or relative intensities, motivating both numerical and analytic controls."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Shared phase/oscillation structure gives meaningful two-way prime/zero representations, while missing orbit repetitions, index-independent amplitudes, and the trivial-zero smooth term prevent upgrading that resemblance to a Hamiltonian trace formula.",
+            "limit": "The obstruction applies to Riemann's formula as written and does not rule out a different trace formula or Hamiltonian for the prime spectrum.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u03",
+              "full_openalex_w2018932838_u04",
+              "full_openalex_w2018932838_u05",
+              "full_openalex_w2018932838_u12",
+              "full_openalex_w2018932838_u15",
+              "full_openalex_w2018932838_u17"
+            ],
+            "title": "The same zero data support an arithmetic bridge but not the proposed dynamics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u05",
+          "spontaneous_reading": "Oscillatory syntax alone does not supply dynamical semantics: a sum may resemble a trace formula while lacking the structural content needed to represent classical motion."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u05",
+          "source_grounded_mathematics": "The source distinguishes the dynamical trace-formula structure of the zero density from Riemann's oscillatory formula for the primes, asserting that the latter is not of dynamical origin while leaving open the existence of some other prime trace formula.",
+          "conceptual_reading": "This is an analogy audit: shared surface form is only a candidate bridge, and the dynamical interpretation requires additional structure beyond oscillation.",
+          "representation_or_bridge": "The proposed bridge compares the prime density with a density of states and its zero-indexed oscillations with orbit contributions.",
+          "boundary_or_failure": "Rejecting Riemann's formula as a dynamical trace formula neither rules out every Hamiltonian with prime spectrum nor identifies such a Hamiltonian. The detailed structural obstruction lies outside this narrow span.",
+          "uncertainty": "Low for the stated limitation; the possible alternative trace formula is explicitly speculative."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Defines the paper's operative questions rather than asserting that truncation already solves them.",
+      "line_end": 91,
+      "line_start": 80,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires distinguishing the infinite distributional density from a finite oscillatory approximation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It identifies the central finite-information problem: conditional convergence to delta spikes does not guarantee that a truncated sum has correct widths, shapes, or relative intensities, motivating both numerical and analytic controls.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncation turns exact spikes into lines with unknown shape and resolution",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u06.txt",
+      "unit_bytes": 1112,
+      "unit_id": "full_openalex_w2018932838_u06",
+      "unit_sha256": "8b69d30f7734fbfa78d05fd8bc073d6bf7f51ae775014f93959a7f4f75476895",
+      "unit_type": "finite-approximation problem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u06.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 72,
+          "line_end": 79,
+          "text": "density of the Riemann zeros has the structure of a dynamical trace formula with periodic\norbits. It is natural to ask whether Riemann’s formula is a trace formula for the primes.\nDespite having the oscillatory terms, as discussed below, Riemann’s formula is not a trace\nformula of dynamical origin. But, this does not preclude the existence of a trace formula\nfor the primes. If one does exist, then this would support the notion that there exists a\nHamiltonian system whose quantum spectrum is the primes. In any case, the exclusion\nof Riemann’s formula as a trace formula suggests that there would be no correspondence\nbetween the classical dynamics and the Riemann zeros for this system.\n",
+          "sha256": "59b396952ba404b4dd16367409ce31572110491721d3a639a2c41239ca338317"
+        },
+        "after": {
+          "line_start": 92,
+          "line_end": 99,
+          "text": "\n\nII.     RIEMANN’S FORMULA\n\n\n      We start from the Euler product formula\n                                        Y\n                               ζ(β) =    (1 − p−β )−1 ,     Re β > 1,                          (1)\n",
+          "sha256": "7d53c28ae5bf39be47cc40b1b8b2551f18b8ab05c5e9241bea3ca5220f3fdbb5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. Introduction",
+            "line_end": 93,
+            "line_start": 33,
+            "mathematical_role": "Sets up the two directions between zeros and prime powers, the correlation contrast, the trace-formula question, and the finite-truncation resolution problem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 91,
+          "line_start": 80,
+          "title": "Truncation turns exact spikes into lines with unknown shape and resolution",
+          "unit_id": "full_openalex_w2018932838_u06",
+          "unit_type": "finite-approximation problem",
+          "why_material": "It identifies the central finite-information problem: conditional convergence to delta spikes does not guarantee that a truncated sum has correct widths, shapes, or relative intensities, motivating both numerical and analytic controls."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Defines the paper's operative questions rather than asserting that truncation already solves them.",
+          "representation_dependency": "Requires distinguishing the infinite distributional density from a finite oscillatory approximation.",
+          "unit_id": "full_openalex_w2018932838_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 79,
+            "line_start": 65,
+            "title": "Why the inverse oscillatory formula need not be a dynamical trace formula",
+            "unit_id": "full_openalex_w2018932838_u05",
+            "unit_type": "analogy limit",
+            "why_material": "It distinguishes formal oscillatory resemblance from dynamical origin and explains what a separate trace formula for primes would and would not imply."
+          },
+          {
+            "line_end": 138,
+            "line_start": 97,
+            "title": "Euler product to the oscillatory prime-power density",
+            "unit_id": "full_openalex_w2018932838_u01",
+            "unit_type": "explicit-formula mechanism",
+            "why_material": "The Euler product is logarithmically expanded, inverse-Laplace transformed into a weighted prime-power count, differentiated, and rewritten under RH as a smooth density plus cosine terms indexed by zeros; the text identifies interference of those terms as the source of prime-power spikes."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 96,
+              "line_start": 92,
+              "reason": "Section transition and heading."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u06",
+          "spontaneous_reading": "The operative object is the finite oscillatory approximation, whose broadened lines have their own widths, shapes, and intensities; distributional convergence to delta spikes does not answer whether those finite features are faithful."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u06",
+          "source_grounded_mathematics": "The full series conditionally converges to delta spikes at primes and prime powers, whereas a truncation yields finite lines of varying width, height, and unknown shape. The source poses numerical and analytic questions about relative intensities, resolvable range, the required largest zero, and truncation error.",
+          "conceptual_reading": "Truncation changes the representation from exact support to finite-resolution evidence. Location, shape, intensity, and error must therefore be separated rather than treating every visible line as an exact spike.",
+          "representation_or_bridge": "Numerical semiclassics connects a finite initial segment of zeros to a coarse spectral picture, while later analytic bounds are intended to connect the zero cutoff to spatial resolution.",
+          "boundary_or_failure": "Conditional convergence of the complete series does not guarantee correct finite line intensities or uniform resolution; this span states the program and reported aim, not the promised controls themselves.",
+          "uncertainty": "Low; the finite-versus-infinite distinction and the unresolved proof burdens are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records the historical finite-zero computation and why the authors choose the direct density formula.",
+      "line_end": 165,
+      "line_start": 139,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the readable step-weight description and Möbius-inversion display; the historical Gram-series detail is supporting context.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The step function assigns reciprocal-power weights and Möbius inversion recovers the prime-counting function, clarifying why the density of all prime powers retains more direct information than a prime-only density.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weighted prime-power counts versus prime-only counts",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u07.txt",
+      "unit_bytes": 1753,
+      "unit_id": "full_openalex_w2018932838_u07",
+      "unit_sha256": "dfb4b70893baf32f0aa48043fb6aa3887dbda0927c4b9120642fc078defd48b1",
+      "unit_type": "representation comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u07.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 131,
+          "line_end": 138,
+          "text": "has been made to reduce the summation to cosine functions. A generalized version of the\nRiemann formula, where the zeros may lie anywhere in the critical strip is given in Ref. [9].\nWe shall denote the sum over the oscillatory terms on the RHS of Eq. (3) as ρ̃(x). Since\nEq. (3) is exact, it is clear that the δ-function spikes of ρ(x) must be generated from the\ninterference of the terms in ρ̃(x). From our experience in periodic orbit quantization [10],\nwe know that a coarse-grained version of the exact density of states can be reproduced even\nfrom a truncated periodic orbit sum. Therefore, in the following section, we focus on the\nnumerical analysis of the truncated series.\n",
+          "sha256": "57ac8c9fd2b7dcea3305d7e9fda7a7ce0865ef7ea1b3bb0b6d9fbf22fd9c6e5b"
+        },
+        "after": {
+          "line_start": 166,
+          "line_end": 173,
+          "text": "\n\nIII.    NUMERICS\n\n\n   Numerically, we can only evaluate a finite number of terms from Riemann’s infinite series.\nAlthough it would seem by inspection that all terms of the series are equally important and\nthat there is no optimal ordering of the terms, Riemann states that the series is conditionally\n",
+          "sha256": "46f1960648f127a302d98e4124704dac70e2e2c5353a51573ea78b5d8d2efd8b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. Riemann's Formula",
+            "line_end": 167,
+            "line_start": 94,
+            "mathematical_role": "Derives the prime-power counting and density representations from the Euler product and relates them to prime counting by Möbius inversion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 165,
+          "line_start": 139,
+          "title": "Weighted prime-power counts versus prime-only counts",
+          "unit_id": "full_openalex_w2018932838_u07",
+          "unit_type": "representation comparison",
+          "why_material": "The step function assigns reciprocal-power weights and Möbius inversion recovers the prime-counting function, clarifying why the density of all prime powers retains more direct information than a prime-only density."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also records the historical finite-zero computation and why the authors choose the direct density formula.",
+          "representation_dependency": "Depends on the readable step-weight description and Möbius-inversion display; the historical Gram-series detail is supporting context.",
+          "unit_id": "full_openalex_w2018932838_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 138,
+            "line_start": 97,
+            "title": "Euler product to the oscillatory prime-power density",
+            "unit_id": "full_openalex_w2018932838_u01",
+            "unit_type": "explicit-formula mechanism",
+            "why_material": "The Euler product is logarithmically expanded, inverse-Laplace transformed into a weighted prime-power count, differentiated, and rewritten under RH as a smooth density plus cosine terms indexed by zeros; the text identifies interference of those terms as the source of prime-power spikes."
+          },
+          {
+            "line_end": 181,
+            "line_start": 171,
+            "title": "Conditional convergence selects increasing-zero order",
+            "unit_id": "full_openalex_w2018932838_u08",
+            "unit_type": "convergence constraint",
+            "why_material": "The finite computation is not permutation invariant: summing zeros in increasing imaginary part is the required natural order, while other selection rules can drive incorrect finite values."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 170,
+              "line_start": 166,
+              "reason": "Section transition and heading."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u07",
+          "spontaneous_reading": "Keeping all prime powers with reciprocal-exponent weights is an information-rich lift of prime counting; projecting back to primes alone requires Möbius inversion and adds computational structure."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u07",
+          "source_grounded_mathematics": "The step function f, also denoted J, has jumps of size 1/n at each p^n. The prime-counting function is recovered by Möbius inversion, π(x)=sum over n of μ(n)f(x^(1/n))/n, and the source prefers the direct prime-power density because it retains more information.",
+          "conceptual_reading": "Prime-power density preserves both base-prime support and exponent multiplicity in the jump weights. Prime-only counting is a derived projection whose inversion requires the Möbius function.",
+          "representation_or_bridge": "The bridge is f or J to π by Möbius inversion; differentiation then compares the density of weighted prime powers with a prime-only density.",
+          "boundary_or_failure": "The historical computation using finitely many zero pairs only showed approximate early steps, and the extracted display should be scan-checked before exact symbolic reuse. More information in the source's sense does not mean easier recovery at every finite cutoff.",
+          "uncertainty": "Moderate for typography of the displayed inversion formula; low for the reciprocal-step semantics and the comparison stated in prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The authors report numerical checks of this ordering sensitivity but do not supply a separate proof here.",
+      "line_end": 181,
+      "line_start": 171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No formula reconstruction is needed; the convergence constraint is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The finite computation is not permutation invariant: summing zeros in increasing imaginary part is the required natural order, while other selection rules can drive incorrect finite values.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conditional convergence selects increasing-zero order",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u08.txt",
+      "unit_bytes": 1015,
+      "unit_id": "full_openalex_w2018932838_u08",
+      "unit_sha256": "31082893ad39f1e32bf7998ca5e2cbfa9644b12502262bd5636189c9af382279",
+      "unit_type": "convergence constraint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u08.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 163,
+          "line_end": 170,
+          "text": "\nthan the formula for the density of the primes (no powers) which can be obtained from the\nderivative of π(x).\n\n\nIII.    NUMERICS\n\n\n",
+          "sha256": "74e1ca76194b9339090ec7502cabf31cedcd2916d3e221adc5b07dfc2af47755"
+        },
+        "after": {
+          "line_start": 182,
+          "line_end": 189,
+          "text": "\n\n   A.    Line Intensities of the Truncated Series\n\n\n   We first computed Eq. (3) using the first 104 zeros and observed lines at the positions\nof the primes and their powers for x < 5000. However, for x > 2000, many lines cannot\nbe fully resolved and the signal eventually dies out. This is due to truncation since only a\n",
+          "sha256": "210544167347f85ef08f625560522b106c30f0da4a2055f0e6b53b011c3f9d6a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III. Numerics: ordering",
+            "line_end": 183,
+            "line_start": 168,
+            "mathematical_role": "Fixes increasing-zero order as essential for conditional convergence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 181,
+          "line_start": 171,
+          "title": "Conditional convergence selects increasing-zero order",
+          "unit_id": "full_openalex_w2018932838_u08",
+          "unit_type": "convergence constraint",
+          "why_material": "The finite computation is not permutation invariant: summing zeros in increasing imaginary part is the required natural order, while other selection rules can drive incorrect finite values."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The authors report numerical checks of this ordering sensitivity but do not supply a separate proof here.",
+          "representation_dependency": "No formula reconstruction is needed; the convergence constraint is explicit in prose.",
+          "unit_id": "full_openalex_w2018932838_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 165,
+            "line_start": 139,
+            "title": "Weighted prime-power counts versus prime-only counts",
+            "unit_id": "full_openalex_w2018932838_u07",
+            "unit_type": "representation comparison",
+            "why_material": "The step function assigns reciprocal-power weights and Möbius inversion recovers the prime-counting function, clarifying why the density of all prime powers retains more direct information than a prime-only density."
+          },
+          {
+            "line_end": 316,
+            "line_start": 272,
+            "title": "Gaussian convolution makes line heights comparable while exposing a resolution limit",
+            "unit_id": "full_openalex_w2018932838_u02",
+            "unit_type": "convolution-based extraction",
+            "why_material": "Convolving the truncated density with an unnormalized Gaussian replaces sufficiently narrow peaks by nearly uniform Gaussian responses whose heights encode pre-convolution areas, avoiding oscillatory-tail integration errors and yielding an explicit width-versus-spacing resolution criterion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source turns an ordering-sensitive distributional identity into a usable finite diagnostic by smoothing peaks into a common response, which exponentially damps high-zero contributions and makes the reliable x-range and boundary error explicit.",
+            "limit": "The Gaussian sum rule uses local amplitude and first-order phase approximations, and the resulting control is for the smoothed density under the chosen sigma and epsilon, not direct unconditional control of the original spike series.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u01",
+              "full_openalex_w2018932838_u08",
+              "full_openalex_w2018932838_u02",
+              "full_openalex_w2018932838_u10",
+              "full_openalex_w2018932838_u11"
+            ],
+            "title": "From conditional explicit formula to controlled coarse-grained reconstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 170,
+              "line_start": 166,
+              "reason": "Section transition and heading."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 199,
+              "line_start": 182,
+              "reason": "Subsection heading and numerical diagnosis of nonuniform raw line shapes motivating convolution."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u08",
+          "spontaneous_reading": "For a conditionally convergent zero sum, ordering is part of the mathematical representation: the increasing-height prefix is a canonical exhaustion, not a replaceable implementation detail."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u08",
+          "source_grounded_mathematics": "The source states that the zero series must be summed in increasing imaginary part alpha. Because convergence is conditional, other orderings can produce different values, and the authors report that finite zero sets selected by other rules give incorrect numerical results.",
+          "conceptual_reading": "A finite approximation inherits meaning from how it approaches the infinite object. Selecting the same terms under a different order or non-prefix rule can change the limit semantics rather than merely the convergence speed.",
+          "representation_or_bridge": "Increasing-alpha truncation bridges the infinite explicit formula to finite computation by preserving Riemann's specified natural order.",
+          "boundary_or_failure": "The reported numerical checks are not a separate proof of the ordering theorem, and the correct order alone supplies neither a convergence rate nor a resolved-x guarantee.",
+          "uncertainty": "Low; the convergence constraint is explicit and does not depend on damaged formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The plot interior is not selected; the caption supplies the recoverable result and parameters.",
+      "line_end": 364,
+      "line_start": 362,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the Gaussian-convolution construction and on accepting the figure caption as reported numerical evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The checked caption states that prime powers p^n appear at height 1/n after convolution, directly validating the relative-intensity semantics rather than mere peak location.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convolved line heights recover reciprocal prime-power multiplicities",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u09.txt",
+      "unit_bytes": 270,
+      "unit_id": "full_openalex_w2018932838_u09",
+      "unit_sha256": "00136dafb16cc19664392c59425668687e9013dc1ad39089d45a03459f5a2879",
+      "unit_type": "numerical validation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u09.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 354,
+          "line_end": 361,
+          "text": "\n                                         0\n\n                                          50   55   60   65   70   75   80   85   90   95   100\n                                                                   x\n\n\n\n",
+          "sha256": "7afe983ee73d21c339b7cfca82a48577b74a1b9636467b4ec853f38752b4be66"
+        },
+        "after": {
+          "line_start": 365,
+          "line_end": 372,
+          "text": "\n\n   B.   Sum Rule and Numerical Convergence\n\n\n   The convergence of the series can be examined using a more controlled application of\nthe convolution procedure described above. The general idea is to construct a series (“sum\nrule”) that absolutely converges to a “coarse-grained” version of the exact density. This\n",
+          "sha256": "97d5a8eaf6cb107236eae0e151c4aa4e3f17e1b05523d67f7dce0c037ebfdb8b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III.A. Line Intensities of the Truncated Series",
+            "line_end": 366,
+            "line_start": 184,
+            "mathematical_role": "Diagnoses nonuniform raw line shapes and constructs Gaussian convolution as an intensity-preserving, uniform-response extraction method with a resolution constraint."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 364,
+          "line_start": 362,
+          "title": "Convolved line heights recover reciprocal prime-power multiplicities",
+          "unit_id": "full_openalex_w2018932838_u09",
+          "unit_type": "numerical validation",
+          "why_material": "The checked caption states that prime powers p^n appear at height 1/n after convolution, directly validating the relative-intensity semantics rather than mere peak location."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The plot interior is not selected; the caption supplies the recoverable result and parameters.",
+          "representation_dependency": "Depends on the Gaussian-convolution construction and on accepting the figure caption as reported numerical evidence.",
+          "unit_id": "full_openalex_w2018932838_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 316,
+            "line_start": 272,
+            "title": "Gaussian convolution makes line heights comparable while exposing a resolution limit",
+            "unit_id": "full_openalex_w2018932838_u02",
+            "unit_type": "convolution-based extraction",
+            "why_material": "Convolving the truncated density with an unnormalized Gaussian replaces sufficiently narrow peaks by nearly uniform Gaussian responses whose heights encode pre-convolution areas, avoiding oscillatory-tail integration errors and yielding an explicit width-versus-spacing resolution criterion."
+          },
+          {
+            "line_end": 440,
+            "line_start": 367,
+            "title": "Gaussian smoothing converts the conditional explicit formula into a damped sum rule",
+            "unit_id": "full_openalex_w2018932838_u10",
+            "unit_type": "coarse-graining derivation",
+            "why_material": "The source reframes convergence control as reproduction of a coarse-grained density, convolves each oscillatory term, locally freezes the slow amplitude and linearizes phase, and obtains an exponential damping factor in zero height."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The reported off-critical perturbation, read beside the reciprocal-power intensity check, suggests that imaginary parts control the interference locations whereas real parts control the reconstructed weights.",
+            "limit": "This is solver- and experiment-conditional evidence reported by the paper, not a proof that arbitrary zero perturbations preserve every peak or that RH follows from correct intensities.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u01",
+              "full_openalex_w2018932838_u09",
+              "full_openalex_w2018932838_u14"
+            ],
+            "title": "Frequency fixes locations while amplitude fixes weights"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 361,
+              "line_start": 317,
+              "reason": "Page furniture and Figure 3 plot interior; exact plotted samples are unavailable from the text layer."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 366,
+              "line_start": 365,
+              "reason": "Whitespace before the next subsection."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u09",
+          "spontaneous_reading": "After Gaussian convolution, peak height becomes a readable exponent marker: a line at p^n has height 1/n, so smoothing preserves the weighted prime-power semantics rather than only the locations."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u09",
+          "source_grounded_mathematics": "The figure caption reports that the convolved computation with sigma 0.05 produces subunit lines at prime powers p^n with height 1/n, including the displayed sixth-power example.",
+          "conceptual_reading": "The convolution converts heterogeneous raw peaks into a common response whose height exposes the reciprocal multiplicity weight. This tests intensity semantics, not just detection of support.",
+          "representation_or_bridge": "The bridge maps weighted delta mass at p^n to a Gaussian-shaped line centered there with reported height 1/n.",
+          "boundary_or_failure": "Only the caption is recoverable; the plot interior is unavailable as exact data, so this is reported numerical validation rather than an independently inspectable derivation or error analysis.",
+          "uncertainty": "Moderate because superscripts in the extracted zero count and numerical example are text-layer fragile; the stated 1/n height relation is clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conceptual derivation is readable despite damaged intermediate display layout; the leading-order nature of the amplitude and phase approximations is explicit.",
+      "line_end": 440,
+      "line_start": 367,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive: relies on S_alpha(x)=alpha log x, a slowly varying amplitude, narrow Gaussian support, first-order phase expansion, and the Gaussian integral; scan verification would be prudent before exact symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source reframes convergence control as reproduction of a coarse-grained density, convolves each oscillatory term, locally freezes the slow amplitude and linearizes phase, and obtains an exponential damping factor in zero height.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian smoothing converts the conditional explicit formula into a damped sum rule",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u10.txt",
+      "unit_bytes": 5227,
+      "unit_id": "full_openalex_w2018932838_u10",
+      "unit_sha256": "2be0986c0e70de36923138a1444c145ebf4d292d58307f09bff5effd946547e4",
+      "unit_type": "coarse-graining derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u10.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 359,
+          "line_end": 366,
+          "text": "\n\n\nFIG. 3: The result of computing Eq. (5) using the first 104 zeros and σ = 0.05. The range is the\nsame as in Fig. 1. Note that lines with height less than unity occur at powers of primes pn and\nhave height 1/n (for example, the line at 26 = 64 has height 1/6 = 0.16̇).\n\n\n",
+          "sha256": "3983ab117ab598c6241caa7f32d60bdeb6f42b2c111d346516fa160996a209aa"
+        },
+        "after": {
+          "line_start": 441,
+          "line_end": 448,
+          "text": "by an exponential factor. This factor essentially controls the convergence of the series for\n\n                                                       9\n\n<!-- source-page: 10 -->\n\nall values of x. Although the orginal series is only conditionally convergent, as long as the\ncorrect ordering is used, this sum rule is also absolutely convergent. As stated above, we seek\n",
+          "sha256": "fe5fdd3b16ff1dcb65da770b6fddab1bae58df2312e143e4adf40d809e9aaabf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III.B. Sum Rule and Numerical Convergence",
+            "line_end": 529,
+            "line_start": 367,
+            "mathematical_role": "Derives the Gaussian-damped absolutely convergent sum rule and converts its damping threshold into a maximum-resolvable-x and truncation-error rule."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 440,
+          "line_start": 367,
+          "title": "Gaussian smoothing converts the conditional explicit formula into a damped sum rule",
+          "unit_id": "full_openalex_w2018932838_u10",
+          "unit_type": "coarse-graining derivation",
+          "why_material": "The source reframes convergence control as reproduction of a coarse-grained density, convolves each oscillatory term, locally freezes the slow amplitude and linearizes phase, and obtains an exponential damping factor in zero height."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The conceptual derivation is readable despite damaged intermediate display layout; the leading-order nature of the amplitude and phase approximations is explicit.",
+          "representation_dependency": "Formula-sensitive: relies on S_alpha(x)=alpha log x, a slowly varying amplitude, narrow Gaussian support, first-order phase expansion, and the Gaussian integral; scan verification would be prudent before exact symbolic reuse.",
+          "unit_id": "full_openalex_w2018932838_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 364,
+            "line_start": 362,
+            "title": "Convolved line heights recover reciprocal prime-power multiplicities",
+            "unit_id": "full_openalex_w2018932838_u09",
+            "unit_type": "numerical validation",
+            "why_material": "The checked caption states that prime powers p^n appear at height 1/n after convolution, directly validating the relative-intensity semantics rather than mere peak location."
+          },
+          {
+            "line_end": 483,
+            "line_start": 447,
+            "title": "Exponential damping translates a zero cutoff into a controlled x range",
+            "unit_id": "full_openalex_w2018932838_u11",
+            "unit_type": "resolution and error criterion",
+            "why_material": "Absolute convergence of the smoothed rule permits a threshold epsilon that relates alpha_max, sigma, and x_max; omitted terms are largest near the boundary and exponentially smaller below it, making resolution and truncation error tunable."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source turns an ordering-sensitive distributional identity into a usable finite diagnostic by smoothing peaks into a common response, which exponentially damps high-zero contributions and makes the reliable x-range and boundary error explicit.",
+            "limit": "The Gaussian sum rule uses local amplitude and first-order phase approximations, and the resulting control is for the smoothed density under the chosen sigma and epsilon, not direct unconditional control of the original spike series.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u01",
+              "full_openalex_w2018932838_u08",
+              "full_openalex_w2018932838_u02",
+              "full_openalex_w2018932838_u10",
+              "full_openalex_w2018932838_u11"
+            ],
+            "title": "From conditional explicit formula to controlled coarse-grained reconstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 361,
+              "line_start": 317,
+              "reason": "Page furniture and Figure 3 plot interior; exact plotted samples are unavailable from the text layer."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 366,
+              "line_start": 365,
+              "reason": "Whitespace before the next subsection."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 446,
+              "line_start": 441,
+              "reason": "Sentence continuation and page furniture around the convergence discussion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u10",
+          "spontaneous_reading": "Gaussian smoothing is simultaneously a resolution choice and a spectral filter: it replaces unattainable spikes by controlled peaks and suppresses high-zero oscillations through an explicit exponential factor."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u10",
+          "source_grounded_mathematics": "The source convolves the oscillatory prime-power density term by term with a Gaussian. With S_alpha(x)=alpha log x and slowly varying amplitude A(x), it freezes A locally and linearizes S_alpha over the narrow Gaussian window, obtaining a factor exp(-sigma^2 alpha^2/(2x^2)) multiplying cos(alpha log x).",
+          "conceptual_reading": "Coarse-graining forgets structure below the chosen width but exposes a stable density that finite sums can reproduce. The Fourier decay of the smoothing kernel turns zero height into a controllable attenuation parameter.",
+          "representation_or_bridge": "Gaussian convolution and its cosine transform bridge the distributional explicit formula to a damped sum rule for smooth prime-power peaks.",
+          "boundary_or_failure": "The displayed sum rule uses local slow-amplitude and first-order phase approximations, with a narrow-kernel condition. It controls the smoothed representation, not the original delta series, and formula typography should be scan-checked before exact reuse.",
+          "uncertainty": "Moderate: the conceptual derivation and damping dependence are recoverable, but intermediate display layout is extraction-sensitive and the result is explicitly leading order."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical examples are presented as checks of the threshold relation, not a universal precision theorem; epsilon is chosen operationally.",
+      "line_end": 483,
+      "line_start": 447,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (10) is formula-dependent but readable. Exact constants and the inflection-point restriction should be scan-checked before computational reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Absolute convergence of the smoothed rule permits a threshold epsilon that relates alpha_max, sigma, and x_max; omitted terms are largest near the boundary and exponentially smaller below it, making resolution and truncation error tunable.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponential damping translates a zero cutoff into a controlled x range",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u11.txt",
+      "unit_bytes": 2987,
+      "unit_id": "full_openalex_w2018932838_u11",
+      "unit_sha256": "580c28bc8f1ae5a134843fca505e143898c82dcbbc5e9fb1a120de2ff058c747",
+      "unit_type": "resolution and error criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u11.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 439,
+          "line_end": 446,
+          "text": "\nThis sum rule explicitly shows the effect of convolution on the series; each term is modulated\nby an exponential factor. This factor essentially controls the convergence of the series for\n\n                                                       9\n\n<!-- source-page: 10 -->\n\n",
+          "sha256": "9d7036b6a92ee24326082e4f8a1226a11f9b6c9d550853f77c70f491ee9ad18c"
+        },
+        "after": {
+          "line_start": 484,
+          "line_end": 491,
+          "text": "\n\n                                             10\n\n<!-- source-page: 11 -->\n\n1\n\n",
+          "sha256": "6ef08cdf66c231806eea8252b35b4c7314a17eb7b4e63914382cb89070743c56"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III.B. Sum Rule and Numerical Convergence",
+            "line_end": 529,
+            "line_start": 367,
+            "mathematical_role": "Derives the Gaussian-damped absolutely convergent sum rule and converts its damping threshold into a maximum-resolvable-x and truncation-error rule."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 483,
+          "line_start": 447,
+          "title": "Exponential damping translates a zero cutoff into a controlled x range",
+          "unit_id": "full_openalex_w2018932838_u11",
+          "unit_type": "resolution and error criterion",
+          "why_material": "Absolute convergence of the smoothed rule permits a threshold epsilon that relates alpha_max, sigma, and x_max; omitted terms are largest near the boundary and exponentially smaller below it, making resolution and truncation error tunable."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical examples are presented as checks of the threshold relation, not a universal precision theorem; epsilon is chosen operationally.",
+          "representation_dependency": "Equation (10) is formula-dependent but readable. Exact constants and the inflection-point restriction should be scan-checked before computational reuse.",
+          "unit_id": "full_openalex_w2018932838_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 440,
+            "line_start": 367,
+            "title": "Gaussian smoothing converts the conditional explicit formula into a damped sum rule",
+            "unit_id": "full_openalex_w2018932838_u10",
+            "unit_type": "coarse-graining derivation",
+            "why_material": "The source reframes convergence control as reproduction of a coarse-grained density, convolves each oscillatory term, locally freezes the slow amplitude and linearizes phase, and obtains an exponential damping factor in zero height."
+          },
+          {
+            "line_end": 539,
+            "line_start": 533,
+            "title": "The phase of zeta links zero locations and prime density",
+            "unit_id": "full_openalex_w2018932838_u12",
+            "unit_type": "phase bridge",
+            "why_material": "The phase jumps at zeros, its derivative contributes the oscillatory zero density, and a contour integral of log zeta yields the prime-power density, locating the bridge in a shared representation rather than in statistical similarity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source turns an ordering-sensitive distributional identity into a usable finite diagnostic by smoothing peaks into a common response, which exponentially damps high-zero contributions and makes the reliable x-range and boundary error explicit.",
+            "limit": "The Gaussian sum rule uses local amplitude and first-order phase approximations, and the resulting control is for the smoothed density under the chosen sigma and epsilon, not direct unconditional control of the original spike series.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u01",
+              "full_openalex_w2018932838_u08",
+              "full_openalex_w2018932838_u02",
+              "full_openalex_w2018932838_u10",
+              "full_openalex_w2018932838_u11"
+            ],
+            "title": "From conditional explicit formula to controlled coarse-grained reconstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 446,
+              "line_start": 441,
+              "reason": "Sentence continuation and page furniture around the convergence discussion."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 521,
+              "line_start": 484,
+              "reason": "Page furniture and Figure 4 plot interior are not recoverable as exact plotted data."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u11",
+          "spontaneous_reading": "An exponential threshold converts a spectral budget into a spatial trust region: the largest included zero sets an x boundary, and omitted contributions are most dangerous near that boundary."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u11",
+          "source_grounded_mathematics": "For the Gaussian-damped sum, the source relates alpha_max, sigma, a threshold epsilon, and the resolvable boundary by x_max=sigma alpha_max/sqrt(-2 log epsilon). Terms above the cutoff are exponentially suppressed for x at or below that boundary; the authors estimate excluded contributions as order epsilon near x_max and exponentially smaller farther below it.",
+          "conceptual_reading": "The damping envelope makes truncation error nonuniform but predictable. Precision, smoothing width, zero cutoff, and usable x range become explicit tradeoffs rather than an undiagnosed loss of signal.",
+          "representation_or_bridge": "The bridge is a thresholded exponential envelope that maps a zero cutoff to a coarse-density resolution window and localizes the largest truncation risk.",
+          "boundary_or_failure": "Epsilon is an operational choice, the bound inherits the approximations of the smoothed sum rule, and the numerical examples check rather than universally prove the proposed precision relation. It does not control unsmoothed spikes.",
+          "uncertainty": "Moderate for exact constants and superscripted numerical examples in the text layer; low for the threshold mechanism and boundary-local error claim."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a conceptual synthesis stated by the authors; it does not construct the unknown Hamiltonian.",
+      "line_end": 539,
+      "line_start": 533,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses phase and logarithmic-derivative language; the prose is recoverable without the cited derivation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The phase jumps at zeros, its derivative contributes the oscillatory zero density, and a contour integral of log zeta yields the prime-power density, locating the bridge in a shared representation rather than in statistical similarity.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The phase of zeta links zero locations and prime density",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u12.txt",
+      "unit_bytes": 656,
+      "unit_id": "full_openalex_w2018932838_u12",
+      "unit_sha256": "a9679859af8d3a974c319a71664f0ec17125181a9190c9233fea2ea7a5708313",
+      "unit_type": "phase bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u12.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 525,
+          "line_end": 532,
+          "text": "all lines should be resolved and intensities should have errors less than σ 2 = 0.01.\n\nobvious what the errors are, but they can be determined through more elaborate analysis.\n\n\nIV.   DISCUSSION AND CONCLUSION\n\n\n",
+          "sha256": "650ab80a4be58f4500bedb7a2465489c81ada0e37f5157aebff7425a679b1ef1"
+        },
+        "after": {
+          "line_start": 540,
+          "line_end": 547,
+          "text": "   As mentioned above, if the series is truncated, the signal gradually dies out as x increases.\nThis can be understood by noting that due to the logarithmic dependence, each term pro-\n\n\n                                                       11\n\n<!-- source-page: 12 -->\n\n",
+          "sha256": "422d7ac9cbde671fe0542bbbae39af065aa1c60ed0876cf8d58a19aa90fb2217"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "IV. Discussion and Conclusion",
+            "line_end": 648,
+            "line_start": 530,
+            "mathematical_role": "Interprets phase, frequency, amplitude, scaling, off-critical perturbations, statistical contrast, and the obstruction to treating the formula as a dynamical trace formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 539,
+          "line_start": 533,
+          "title": "The phase of zeta links zero locations and prime density",
+          "unit_id": "full_openalex_w2018932838_u12",
+          "unit_type": "phase bridge",
+          "why_material": "The phase jumps at zeros, its derivative contributes the oscillatory zero density, and a contour integral of log zeta yields the prime-power density, locating the bridge in a shared representation rather than in statistical similarity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a conceptual synthesis stated by the authors; it does not construct the unknown Hamiltonian.",
+          "representation_dependency": "Uses phase and logarithmic-derivative language; the prose is recoverable without the cited derivation.",
+          "unit_id": "full_openalex_w2018932838_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 483,
+            "line_start": 447,
+            "title": "Exponential damping translates a zero cutoff into a controlled x range",
+            "unit_id": "full_openalex_w2018932838_u11",
+            "unit_type": "resolution and error criterion",
+            "why_material": "Absolute convergence of the smoothed rule permits a threshold epsilon that relates alpha_max, sigma, and x_max; omitted terms are largest near the boundary and exponentially smaller below it, making resolution and truncation error tunable."
+          },
+          {
+            "line_end": 594,
+            "line_start": 540,
+            "title": "Resolution at large x requires increasingly high zeros",
+            "unit_id": "full_openalex_w2018932838_u13",
+            "unit_type": "scaling obstruction",
+            "why_material": "Logarithmic phase makes fixed terms oscillate more slowly and decay as x grows, so constructive interference at larger prime powers requires higher-frequency zeros; conditional convergence prevents replacing the natural initial segment by high zeros alone, leading to impractical scaling."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Shared phase/oscillation structure gives meaningful two-way prime/zero representations, while missing orbit repetitions, index-independent amplitudes, and the trivial-zero smooth term prevent upgrading that resemblance to a Hamiltonian trace formula.",
+            "limit": "The obstruction applies to Riemann's formula as written and does not rule out a different trace formula or Hamiltonian for the prime spectrum.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u03",
+              "full_openalex_w2018932838_u04",
+              "full_openalex_w2018932838_u05",
+              "full_openalex_w2018932838_u12",
+              "full_openalex_w2018932838_u15",
+              "full_openalex_w2018932838_u17"
+            ],
+            "title": "The same zero data support an arithmetic bridge but not the proposed dynamics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 529,
+              "line_start": 522,
+              "reason": "Figure 4 caption reports a numerical boundary check and completes the preceding error comparison."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 532,
+              "line_start": 530,
+              "reason": "Discussion heading and spacing."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 579,
+              "line_start": 543,
+              "reason": "Page furniture and Figure 5 plot interior interrupt the prose and do not expose exact plotted samples."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u12",
+          "spontaneous_reading": "The phase of zeta is the shared intermediate object: its jumps register zeros, while derivative and contour operations turn the same logarithmic data toward zero density and prime-power density."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u12",
+          "source_grounded_mathematics": "Writing zeta as modulus times exp(-i theta), the source says theta jumps by pi at zeros, the derivative of the imaginary part of log zeta contributes the oscillatory zero density, and an appropriate contour integral of log zeta yields the prime-power density.",
+          "conceptual_reading": "Zeros and primes are linked through two transformations of a common analytic representation rather than through matching local statistics. Phase records discrete zero events, while differentiation and contour integration expose different distributions.",
+          "representation_or_bridge": "The bridge object is log zeta and especially its phase; phase differentiation points to zero density, whereas contour integration points to the weighted prime-power density.",
+          "boundary_or_failure": "This synthesis supplies neither normalization and branch details nor the cited derivations, and it does not construct the unknown Hamiltonian.",
+          "uncertainty": "Moderate: the prose-level bridge is clear, but exact analytic hypotheses and constants are outside the bounded span."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit's prose is interrupted by the page-12 Figure 5 plot at lines 548-583; the sentence resumes at line 585 and remains recoverable, while the caption independently confirms the predicted boundary.",
+      "line_end": 594,
+      "line_start": 540,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the phase alpha log x, the natural-order constraint, and equation (10); the embedded plot interior is extraction-defective and is not used for exact values beyond its caption.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Logarithmic phase makes fixed terms oscillate more slowly and decay as x grows, so constructive interference at larger prime powers requires higher-frequency zeros; conditional convergence prevents replacing the natural initial segment by high zeros alone, leading to impractical scaling.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Resolution at large x requires increasingly high zeros",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u13.txt",
+      "unit_bytes": 2532,
+      "unit_id": "full_openalex_w2018932838_u13",
+      "unit_sha256": "1424e19a33fd3e980231fcf27bd227393694229d510251fa34721b98eb9e847c",
+      "unit_type": "scaling obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u13.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 532,
+          "line_end": 539,
+          "text": "\n   By writing ζ(γ + it) = |ζ(γ + it)| exp(−iθγ (t)), we see that all the information about the\nzeros along the t−axis is contained in the phase θγ (t). This has to jump by π to accomodate\nthe sign change in ζ at every zero, and it can be shown that the oscillating part of the\ndensity of the zeros on the critical line is proportional to the derivative of the imaginry part\nof ln ζ(t) with respect to t [10]. On the other hand, we see from Eq. (2) that the appropriate\ncontour integral over ln ζ(β) also yields ρ(x) relating to the primes. Thus, the phase of the\nzeta function, as defined above, connects the Riemann zeros to the primes.\n",
+          "sha256": "130947df9eb5af0cd87e2a4c39880e4cc5ba740f014f575953f125deb4763b1d"
+        },
+        "after": {
+          "line_start": 595,
+          "line_end": 602,
+          "text": "   We emphasize that Riemann’s formula, is only correct if the Riemann hypothesis is true.\nOtherwise, if a pair of zeros occur at β± = γ ± iα, the factor x1/2 in the denominator of\nthe oscillating term of Eq. (3) should be replaced by x(1−γ) [9]. An interesting numerical\n\n\n                                                        12\n\n<!-- source-page: 13 -->\n",
+          "sha256": "2872c998bb73f986cffbe3f1cedbd87a79b102e458fc9f8e7bcdf5f7c69a5a60"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "IV. Discussion and Conclusion",
+            "line_end": 648,
+            "line_start": 530,
+            "mathematical_role": "Interprets phase, frequency, amplitude, scaling, off-critical perturbations, statistical contrast, and the obstruction to treating the formula as a dynamical trace formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 594,
+          "line_start": 540,
+          "title": "Resolution at large x requires increasingly high zeros",
+          "unit_id": "full_openalex_w2018932838_u13",
+          "unit_type": "scaling obstruction",
+          "why_material": "Logarithmic phase makes fixed terms oscillate more slowly and decay as x grows, so constructive interference at larger prime powers requires higher-frequency zeros; conditional convergence prevents replacing the natural initial segment by high zeros alone, leading to impractical scaling."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit's prose is interrupted by the page-12 Figure 5 plot at lines 548-583; the sentence resumes at line 585 and remains recoverable, while the caption independently confirms the predicted boundary.",
+          "representation_dependency": "Depends on the phase alpha log x, the natural-order constraint, and equation (10); the embedded plot interior is extraction-defective and is not used for exact values beyond its caption.",
+          "unit_id": "full_openalex_w2018932838_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 539,
+            "line_start": 533,
+            "title": "The phase of zeta links zero locations and prime density",
+            "unit_id": "full_openalex_w2018932838_u12",
+            "unit_type": "phase bridge",
+            "why_material": "The phase jumps at zeros, its derivative contributes the oscillatory zero density, and a contour integral of log zeta yields the prime-power density, locating the bridge in a shared representation rather than in statistical similarity."
+          },
+          {
+            "line_end": 609,
+            "line_start": 595,
+            "title": "Moving zeros off the critical line separates peak location from intensity",
+            "unit_id": "full_openalex_w2018932838_u14",
+            "unit_type": "counterfactual perturbation",
+            "why_material": "The source changes the real parts of zeros while retaining imaginary parts and reports that prime-power peak locations persist but relative intensities fail, distinguishing frequency/phase control from amplitude control."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 532,
+              "line_start": 530,
+              "reason": "Discussion heading and spacing."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 579,
+              "line_start": 543,
+              "reason": "Page furniture and Figure 5 plot interior interrupt the prose and do not expose exact plotted samples."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 583,
+              "line_start": 580,
+              "reason": "Figure 5 caption supplies the reported numerical resolution-bound check."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u13",
+          "spontaneous_reading": "Because alpha log x oscillates ever more slowly as x grows, local reconstruction at large x demands larger alpha; conditional convergence then forces payment for the whole lower-zero prefix rather than allowing a high-frequency shortcut."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u13",
+          "source_grounded_mathematics": "The source explains that each fixed-alpha term has increasing period and decaying amplitude as x increases, so constructive interference at larger prime powers requires higher zeros. Since the series is conditionally convergent and terms are taken in natural order, using only high-frequency terms is not valid; reported computations agree with the predicted resolution boundary.",
+          "conceptual_reading": "The local frequency scale is alpha/x, so fixed spectral data lose resolving power with x. Ordering converts this analytic resolution demand into a severe cumulative data requirement.",
+          "representation_or_bridge": "The phase alpha log x links zero height to spatial oscillation scale, while the increasing-alpha prefix constraint links desired prime range to the number of required zeros.",
+          "boundary_or_failure": "This is a practical scaling obstruction, not an impossibility theorem for prime finding or for other representations. The embedded plot is not recoverable as exact data, and the large-prime extrapolation is an estimate.",
+          "uncertainty": "Moderate for quantitative extrapolation and caption numerics; low for the qualitative phase-scaling and ordering mechanism."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is reported numerical evidence and does not establish RH; the generalized off-line factor is attributed to a reference.",
+      "line_end": 609,
+      "line_start": 595,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive: the replacement amplitude x^(1-gamma) is legible in prose/display, but exact generalized-formula use would require the cited source or scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source changes the real parts of zeros while retaining imaginary parts and reports that prime-power peak locations persist but relative intensities fail, distinguishing frequency/phase control from amplitude control.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Moving zeros off the critical line separates peak location from intensity",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u14.txt",
+      "unit_bytes": 920,
+      "unit_id": "full_openalex_w2018932838_u14",
+      "unit_sha256": "2f42de6db76e6e6212545bd3ed2d58810f8894a0d20c0031a1a13333bc272c80",
+      "unit_type": "counterfactual perturbation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u14.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 587,
+          "line_end": 594,
+          "text": "This explains the fact that lines at small values of x are resolved more quickly than at larger\nvalues. Although the higher frequency terms are responsible for short-range oscillations\nand one could imagine exclusive use of those terms rather than lower frequency terms, the\ndifficulty is the conditional convergence of the series and the fact that all of the terms are\nequally important. Unfortunately, this implies that Riemann’s formula is impractical for\nresolving lines at large primes. This is also consistent with Eq. (10). If one is interested\nin using Riemann’s series to find (new) large primes, for example, on the order of 10250,000 ,\nthen one requires an accurate knowledge of roughly the same number of zeros.\n",
+          "sha256": "1144007e72e6147ad495a1a5dc7ae4b15c1c508239bd437df052a5df36690c19"
+        },
+        "after": {
+          "line_start": 610,
+          "line_end": 617,
+          "text": "   It is natural to compare the oscillating part of the density ρ̃(x) with the semiclassical\ntrace formula [3, 16] of a dynamical system. One could identify α as an orbit label, one\nfor each zero of the zeta function and x as the single-particle energy variable. Then, ρ(x)\nin Eq. (3) may be interpreted as the density of states as a function of energy with the first\nterm on the RHS corresponding to the smooth Thomas-Fermi (TF) contribution [17]. In the\noscillating part, the argument α ln x of the cosine term should then correspond to the action\nSα (x) of the orbit α. Note however that there are no implicit repetition indices in Eq. (3)\nthereby implying that even if one gives a dynamical interpretation to ρ̃(x), the orbits are\n",
+          "sha256": "7367f1e5976bc59fff7731bf15a65714ff83710d5cf1a843c145b0ce97b1eb34"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "IV. Discussion and Conclusion",
+            "line_end": 648,
+            "line_start": 530,
+            "mathematical_role": "Interprets phase, frequency, amplitude, scaling, off-critical perturbations, statistical contrast, and the obstruction to treating the formula as a dynamical trace formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 609,
+          "line_start": 595,
+          "title": "Moving zeros off the critical line separates peak location from intensity",
+          "unit_id": "full_openalex_w2018932838_u14",
+          "unit_type": "counterfactual perturbation",
+          "why_material": "The source changes the real parts of zeros while retaining imaginary parts and reports that prime-power peak locations persist but relative intensities fail, distinguishing frequency/phase control from amplitude control."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is reported numerical evidence and does not establish RH; the generalized off-line factor is attributed to a reference.",
+          "representation_dependency": "Formula-sensitive: the replacement amplitude x^(1-gamma) is legible in prose/display, but exact generalized-formula use would require the cited source or scan verification.",
+          "unit_id": "full_openalex_w2018932838_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 594,
+            "line_start": 540,
+            "title": "Resolution at large x requires increasingly high zeros",
+            "unit_id": "full_openalex_w2018932838_u13",
+            "unit_type": "scaling obstruction",
+            "why_material": "Logarithmic phase makes fixed terms oscillate more slowly and decay as x grows, so constructive interference at larger prime powers requires higher-frequency zeros; conditional convergence prevents replacing the natural initial segment by high zeros alone, leading to impractical scaling."
+          },
+          {
+            "line_end": 625,
+            "line_start": 610,
+            "title": "Missing repetitions and orbit-dependent amplitudes block a dynamical trace-formula reading",
+            "unit_id": "full_openalex_w2018932838_u15",
+            "unit_type": "structural obstruction",
+            "why_material": "The proposed orbit identification fails because there are no repetition indices, the implied trajectories are not periodic, amplitudes lack zero-index dependence, and a single Hamiltonian is unlikely to reproduce both oscillatory and smooth energy dependence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The reported off-critical perturbation, read beside the reciprocal-power intensity check, suggests that imaginary parts control the interference locations whereas real parts control the reconstructed weights.",
+            "limit": "This is solver- and experiment-conditional evidence reported by the paper, not a proof that arbitrary zero perturbations preserve every peak or that RH follows from correct intensities.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u01",
+              "full_openalex_w2018932838_u09",
+              "full_openalex_w2018932838_u14"
+            ],
+            "title": "Frequency fixes locations while amplitude fixes weights"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u14",
+          "spontaneous_reading": "The off-line perturbation separates roles inside the explicit formula: imaginary parts set oscillatory phase and hence reconstructed locations, while real parts rescale amplitudes and hence reconstructed weights."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u14",
+          "source_grounded_mathematics": "The source states that for zeros gamma plus or minus i alpha off the critical line, the critical-line denominator must be replaced by x^(1-gamma). In a numerical experiment that changes real parts while retaining imaginary parts, lines remain at primes and prime powers but their relative intensities become incorrect.",
+          "conceptual_reading": "This counterfactual perturbation probes which coordinates control which observable. Stable support with changed weights suggests a phase-location versus amplitude-intensity decomposition.",
+          "representation_or_bridge": "The generalized oscillatory term bridges alpha to frequency and peak location, and gamma to x-dependent amplitude and relative line intensity.",
+          "boundary_or_failure": "The experiment does not prove the Riemann hypothesis, nor does it establish perfect role separation for arbitrary perturbations or every peak. Exact use of the generalized factor depends on the cited formula and scan verification.",
+          "uncertainty": "Moderate: the reported numerical outcome is clear, but it is experiment-conditional and the generalized formula is only quoted in this span."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the detailed justification for the earlier analogy limit at lines 65-79.",
+      "line_end": 625,
+      "line_start": 610,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses semiclassical trace-formula expectations as comparison criteria; footnote 17 separately corrects which smooth term could count as Thomas-Fermi.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proposed orbit identification fails because there are no repetition indices, the implied trajectories are not periodic, amplitudes lack zero-index dependence, and a single Hamiltonian is unlikely to reproduce both oscillatory and smooth energy dependence.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Missing repetitions and orbit-dependent amplitudes block a dynamical trace-formula reading",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u15.txt",
+      "unit_bytes": 1448,
+      "unit_id": "full_openalex_w2018932838_u15",
+      "unit_sha256": "fafd86914a7a03716b99f6a96fe6ae95f4f36506b9c2a4b56e58881b92cf6365",
+      "unit_type": "structural obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u15.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 602,
+          "line_end": 609,
+          "text": "<!-- source-page: 13 -->\n\nexperiment is to move the zeros off the critical line, that is, to arbitrarily change their real\nparts. We find this still produces lines at the primes and their powers, but the relative\nintensities are incorrect. This is interesting since it demonstrates that the location of the\nprimes depends only on the imaginary part of the zero. The real part only affects the\nintensities which are anyway not evident from a direct evaluation of the series. This provides\nanother motivation for the numerical and analytical procedures described in this paper.\n",
+          "sha256": "4aca87373aa59db845ca627284ad3e3e451da3931c0f483b44cd9f833fd69623"
+        },
+        "after": {
+          "line_start": 626,
+          "line_end": 633,
+          "text": "   With regard to spectral statistics, it is well known that nearest-neighbour spacings (NNS)\n[19] of the Riemann zeros obey the GUE distribution of Random Matrix Theory, character-\nistic of a chaotic quantum system without time-reversal symmetry [20, 21]. The same zeros\nalso generate the spectrum of the primes and their powers through Riemann’s formula (3).\nAs mentioned earlier, the NNS distribution of the primes is Poisson-like [8], with some level\nrepulsion, which, if at all of dynamic origin, hints only to near-integrability [1]. Thus, it is\nquite remarkable that the highly-correlated sequence of the zeros can (through Riemann’s\nformula) interfere to produce the almost-uncorrelated sequence of the primes.\n",
+          "sha256": "41a2ad05fdcb22e730671b1f166cf91c0e8b8c654613332dfd5ab3ac966d1e2e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "IV. Discussion and Conclusion",
+            "line_end": 648,
+            "line_start": 530,
+            "mathematical_role": "Interprets phase, frequency, amplitude, scaling, off-critical perturbations, statistical contrast, and the obstruction to treating the formula as a dynamical trace formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 625,
+          "line_start": 610,
+          "title": "Missing repetitions and orbit-dependent amplitudes block a dynamical trace-formula reading",
+          "unit_id": "full_openalex_w2018932838_u15",
+          "unit_type": "structural obstruction",
+          "why_material": "The proposed orbit identification fails because there are no repetition indices, the implied trajectories are not periodic, amplitudes lack zero-index dependence, and a single Hamiltonian is unlikely to reproduce both oscillatory and smooth energy dependence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This supplies the detailed justification for the earlier analogy limit at lines 65-79.",
+          "representation_dependency": "Uses semiclassical trace-formula expectations as comparison criteria; footnote 17 separately corrects which smooth term could count as Thomas-Fermi.",
+          "unit_id": "full_openalex_w2018932838_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 609,
+            "line_start": 595,
+            "title": "Moving zeros off the critical line separates peak location from intensity",
+            "unit_id": "full_openalex_w2018932838_u14",
+            "unit_type": "counterfactual perturbation",
+            "why_material": "The source changes the real parts of zeros while retaining imaginary parts and reports that prime-power peak locations persist but relative intensities fail, distinguishing frequency/phase control from amplitude control."
+          },
+          {
+            "line_end": 702,
+            "line_start": 698,
+            "title": "Small-x behavior refines the inflection-point upper bound",
+            "unit_id": "full_openalex_w2018932838_u16",
+            "unit_type": "parameter-regime refinement",
+            "why_material": "The technical note records a more accurate small-x inflection bound and warns that including the logarithmic amplitude changes the inflection condition to a transcendental equation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Shared phase/oscillation structure gives meaningful two-way prime/zero representations, while missing orbit repetitions, index-independent amplitudes, and the trivial-zero smooth term prevent upgrading that resemblance to a Hamiltonian trace formula.",
+            "limit": "The obstruction applies to Riemann's formula as written and does not rule out a different trace formula or Hamiltonian for the prime spectrum.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u03",
+              "full_openalex_w2018932838_u04",
+              "full_openalex_w2018932838_u05",
+              "full_openalex_w2018932838_u12",
+              "full_openalex_w2018932838_u15",
+              "full_openalex_w2018932838_u17"
+            ],
+            "title": "The same zero data support an arithmetic bridge but not the proposed dynamics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u15",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u15",
+          "spontaneous_reading": "The trace-formula analogy fails a structural audit: an action-like phase is not enough without repetition structure, orbit-dependent amplitudes, and a single dynamics that consistently generates both smooth and oscillatory energy dependence."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u15",
+          "source_grounded_mathematics": "The source tests the identifications of alpha as an orbit label, x as energy, and alpha log x as an action. It rejects a dynamical trace-formula reading because there are no repetition indices, the implied orbits are not periodic, amplitudes have no alpha dependence, and one Hamiltonian is unlikely to generate both the oscillatory denominator and smooth term consistently.",
+          "conceptual_reading": "A valid representation bridge must preserve the compositional structure of its target, not merely its cosine form. Periodic-orbit semantics require primitive orbits and repetitions, stability-sensitive weights, and compatible smooth and fluctuating components.",
+          "representation_or_bridge": "The candidate bridge maps zero-indexed oscillations to trajectory contributions in a density of states; missing dynamical invariants provide the obstruction.",
+          "boundary_or_failure": "The conclusion rules out Riemann's formula as a trace formula of dynamical origin under these criteria, not every possible Hamiltonian with prime spectrum. A separate footnote also limits which smooth term could be Thomas-Fermi data.",
+          "uncertainty": "Low for the source's explicit structural objections; the claim that no fortuitous cancellation can repair all energy dependence is argued as unlikely rather than formally impossible."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a bounded refinement of the convergence criterion, not a replacement for equation (10).",
+      "line_end": 702,
+      "line_start": 698,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The radical expression is text-layer fragile and requires scan verification before exact reuse; the qualitative refinement is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The technical note records a more accurate small-x inflection bound and warns that including the logarithmic amplitude changes the inflection condition to a transcendental equation.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Small-x behavior refines the inflection-point upper bound",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u16.txt",
+      "unit_bytes": 362,
+      "unit_id": "full_openalex_w2018932838_u16",
+      "unit_sha256": "3b604e4ff5288a5f80d3eb03df7a9d42fdba451547fb5e52fd5354e66a5c2fb7",
+      "unit_type": "parameter-regime refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u16.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 690,
+          "line_end": 697,
+          "text": "[14] −∞ e−ax +bx dx′ =   ae              (a > 0). It is not necessary to evaluate the convolution in-\n     tegral over the interval (1, ∞). If one insisted on doing so, the integral at the end is rather\n     R ∞ −ax′2 +bx′ ′ p π b2 /4a        \u0010\n                                             b    √ \u0011\n      1  e         dx  =    4a e   erfc   −  √\n                                            2 a\n                                                +   a . The resulting sum rule is slightly more com-\n     plicated, but the difference is insignificant since σ is small.\n",
+          "sha256": "4017446c82c1648a377f0e00f3666bb27c4cf699888218c4df3f356f1c8d74b7"
+        },
+        "after": {
+          "line_start": 703,
+          "line_end": 710,
+          "text": "[16] M. C. Gutzwiller, Chaos in Classical and Quantum Mechanics (Springer-Verlag, New York,\n     1990).\n[17] The second smooth term on the RHS of Eq. (3) arises from the trivial zeros, and may not be\n     taken as part of a TF term.\n[18] R. Aurich, T. Hesse, and F. Steiner, Phys. Rev. Lett. 74, 22 (1995); W. Zheng, Phys. Rev.\n     E 60, 2845 (1999); D. Biswas, Phys. Rev. E 61, 5129 (2000); D. Biswas, Phys. Rev. E 63,\n     016213 (2001).\n[19] O. Bohigas, M. J. Giannoni, and C. Schmit, Phys. Rev. Lett. 52, 1 (1984).\n",
+          "sha256": "584208d9bd709c82c17cc4a6d765f6ed066090e9e496504e0c7056d768303585"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Acknowledgments, references, and technical notes",
+            "line_end": 717,
+            "line_start": 649,
+            "mathematical_role": "Mostly nonmathematical back matter, with bounded caveats on convolution limits, a small-x inflection bound, and the trivial-zero smooth term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 702,
+          "line_start": 698,
+          "title": "Small-x behavior refines the inflection-point upper bound",
+          "unit_id": "full_openalex_w2018932838_u16",
+          "unit_type": "parameter-regime refinement",
+          "why_material": "The technical note records a more accurate small-x inflection bound and warns that including the logarithmic amplitude changes the inflection condition to a transcendental equation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a bounded refinement of the convergence criterion, not a replacement for equation (10).",
+          "representation_dependency": "The radical expression is text-layer fragile and requires scan verification before exact reuse; the qualitative refinement is recoverable from prose.",
+          "unit_id": "full_openalex_w2018932838_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 625,
+            "line_start": 610,
+            "title": "Missing repetitions and orbit-dependent amplitudes block a dynamical trace-formula reading",
+            "unit_id": "full_openalex_w2018932838_u15",
+            "unit_type": "structural obstruction",
+            "why_material": "The proposed orbit identification fails because there are no repetition indices, the implied trajectories are not periodic, amplitudes lack zero-index dependence, and a single Hamiltonian is unlikely to reproduce both oscillatory and smooth energy dependence."
+          },
+          {
+            "line_end": 706,
+            "line_start": 705,
+            "title": "The trivial-zero smooth term is not Thomas-Fermi data",
+            "unit_id": "full_openalex_w2018932838_u17",
+            "unit_type": "interpretive caveat",
+            "why_material": "This corrects the dynamical analogy by excluding the second smooth term of equation (3), which arises from trivial zeros, from the proposed Thomas-Fermi contribution."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 697,
+              "line_start": 689,
+              "reason": "Technical note explains that integrating only from 1 changes the small-sigma convolution insignificantly; useful qualification but not a distinct reusable mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u16",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u16",
+          "spontaneous_reading": "The simple cutoff geometry changes in the small-x regime once the slowly varying amplitude is retained: its envelope has a refined inflection boundary, and restoring the logarithmic factor destroys the elementary closed form."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u16",
+          "source_grounded_mathematics": "The technical note gives a more accurate small-x upper bound from the inflection point of x^(-1/2) exp(-sigma^2 alpha^2/(2x^2)), proportional to sigma alpha, and states that including the logarithmic amplitude makes the inflection points roots of a transcendental equation.",
+          "conceptual_reading": "A leading damping estimate is regime-dependent. Factors treated as slowly varying can change the boundary condition when x is small, so refinement turns a simple algebraic threshold into an implicit problem.",
+          "representation_or_bridge": "The inflection point of the full amplitude-damping envelope bridges the asymptotic cutoff rule to a small-x resolution criterion.",
+          "boundary_or_failure": "This note refines rather than replaces the earlier threshold relation. The radical coefficient is text-layer fragile, and no solution or uniqueness statement is supplied for the transcendental equation.",
+          "uncertainty": "High for the exact extracted radical coefficient; low for the qualitative small-x refinement and transcendental-equation warning."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A concise footnote tied directly to the trace-formula interpretation at lines 610-625.",
+      "line_end": 706,
+      "line_start": 705,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on equation (3)'s decomposition and semiclassical Thomas-Fermi terminology; no damaged formula is needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This corrects the dynamical analogy by excluding the second smooth term of equation (3), which arises from trivial zeros, from the proposed Thomas-Fermi contribution.",
+      "source_id": "openalex_w2018932838",
+      "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The trivial-zero smooth term is not Thomas-Fermi data",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2018932838_u17.txt",
+      "unit_bytes": 129,
+      "unit_id": "full_openalex_w2018932838_u17",
+      "unit_sha256": "9d8d3db9bebb91d24cf3a35209d8179795c7c01ce00b334a39bf5d78ab713291",
+      "unit_type": "interpretive caveat",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2018932838_u17.txt",
+      "source": {
+        "source_id": "openalex_w2018932838",
+        "title": "Zeta function zeros, powers of primes, and quantum chaos",
+        "authors": [
+          "Jamal Sakhr",
+          "Rajat K. Bhaduri",
+          "Brandon P. van Zyl"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 697,
+          "line_end": 704,
+          "text": "     plicated, but the difference is insignificant since σ is small.\n[15] For smaller values of x, a more accurate upper bound is given by the inflection point of\n                                   √       √\n       −1/2  −σ 2 α2 /2x2            2(12−3 13)\n     x      e             which is       3      σα. If the logarithmic term is also included, the inflection\n     points are roots of a transcendental equation.\n[16] M. C. Gutzwiller, Chaos in Classical and Quantum Mechanics (Springer-Verlag, New York,\n     1990).\n",
+          "sha256": "bf878bc1fc534949fd3d7c8f544c891b665e2a5c63acbe2d86cb24098937b477"
+        },
+        "after": {
+          "line_start": 707,
+          "line_end": 714,
+          "text": "[18] R. Aurich, T. Hesse, and F. Steiner, Phys. Rev. Lett. 74, 22 (1995); W. Zheng, Phys. Rev.\n     E 60, 2845 (1999); D. Biswas, Phys. Rev. E 61, 5129 (2000); D. Biswas, Phys. Rev. E 63,\n     016213 (2001).\n[19] O. Bohigas, M. J. Giannoni, and C. Schmit, Phys. Rev. Lett. 52, 1 (1984).\n[20] A. M. Odlyzko, Math. Comput. 48, 273 (1987).\n[21] M. L. Mehta, Random Matrices (Academic Press, New York, 1991).\n\n\n",
+          "sha256": "505c468b21a6f3c07e2d0a115d22e4b216634ceed00541843c0d8c69f8a110b4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_11d351a62906a6221fcd17264bc050cfc50decc1f03d0d22790640e0c903c691",
+        "dossier_sha256": "2d1fd6058de7bf81eb97ad491c449f4f3276a7fd51cec1f2f74835cc81c9e96d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Acknowledgments, references, and technical notes",
+            "line_end": 717,
+            "line_start": 649,
+            "mathematical_role": "Mostly nonmathematical back matter, with bounded caveats on convolution limits, a small-x inflection bound, and the trivial-zero smooth term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 706,
+          "line_start": 705,
+          "title": "The trivial-zero smooth term is not Thomas-Fermi data",
+          "unit_id": "full_openalex_w2018932838_u17",
+          "unit_type": "interpretive caveat",
+          "why_material": "This corrects the dynamical analogy by excluding the second smooth term of equation (3), which arises from trivial zeros, from the proposed Thomas-Fermi contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A concise footnote tied directly to the trace-formula interpretation at lines 610-625.",
+          "representation_dependency": "Depends on equation (3)'s decomposition and semiclassical Thomas-Fermi terminology; no damaged formula is needed.",
+          "unit_id": "full_openalex_w2018932838_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 702,
+            "line_start": 698,
+            "title": "Small-x behavior refines the inflection-point upper bound",
+            "unit_id": "full_openalex_w2018932838_u16",
+            "unit_type": "parameter-regime refinement",
+            "why_material": "The technical note records a more accurate small-x inflection bound and warns that including the logarithmic amplitude changes the inflection condition to a transcendental equation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Shared phase/oscillation structure gives meaningful two-way prime/zero representations, while missing orbit repetitions, index-independent amplitudes, and the trivial-zero smooth term prevent upgrading that resemblance to a Hamiltonian trace formula.",
+            "limit": "The obstruction applies to Riemann's formula as written and does not rule out a different trace formula or Hamiltonian for the prime spectrum.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2018932838_u03",
+              "full_openalex_w2018932838_u04",
+              "full_openalex_w2018932838_u05",
+              "full_openalex_w2018932838_u12",
+              "full_openalex_w2018932838_u15",
+              "full_openalex_w2018932838_u17"
+            ],
+            "title": "The same zero data support an arithmetic bridge but not the proposed dynamics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 697,
+              "line_start": 689,
+              "reason": "Technical note explains that integrating only from 1 changes the small-sigma convolution insignificantly; useful qualification but not a distinct reusable mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2018932838_u17",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2018932838_u17",
+          "spontaneous_reading": "Smoothness does not determine dynamical provenance: the smooth contribution created by trivial zeta zeros cannot simply be relabeled as Thomas-Fermi background."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2018932838_u17",
+          "source_grounded_mathematics": "The footnote states that the second smooth term on the right-hand side of equation (3) arises from the trivial zeros and may not be included in a Thomas-Fermi term.",
+          "conceptual_reading": "Components should be classified by how they arise, not only by their visual regularity. Analytic zero data and semiclassical mean-density data carry different semantics even when both are smooth in x.",
+          "representation_or_bridge": "The equation's smooth part must be decomposed by provenance: the trivial-zero contribution is separated from any candidate Thomas-Fermi contribution.",
+          "boundary_or_failure": "The note excludes one smooth term from the Thomas-Fermi interpretation; it does not prove that the remaining smooth term is generated by a Hamiltonian or repair the broader trace-formula analogy.",
+          "uncertainty": "Low; the caveat is explicit and independent of damaged formula layout."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "b7cccb79d63ce592217cbd1c00ffaa333db98dc37713698bc58b0e94d1e9ef03"
+}

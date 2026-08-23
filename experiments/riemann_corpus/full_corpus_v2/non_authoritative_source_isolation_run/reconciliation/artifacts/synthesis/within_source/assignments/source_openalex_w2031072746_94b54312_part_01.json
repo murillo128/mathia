@@ -1,0 +1,402 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2031072746",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2031072746_94b54312_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "When numerical evaluation reveals only net zero counts, positivity against known-entire monomial representations and indecomposability in the character cone can recover the hidden zero/pole decomposition.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2031072746_v2_u01",
+          "openalex_w2031072746_v2_u03",
+          "openalex_w2031072746_v2_u04"
+        ],
+        "proposed_limit": "The result is conditional on the locally tested isolation hypothesis and fails for some groups.",
+        "source_id": "openalex_w2031072746",
+        "synthesis_id": "riemann_v2_within_4890d7562e2dfdc4926c9b0c",
+        "title": "Group theory resolves an analytic observability defect"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the motivating obstruction; the group-theoretic repair is developed in Section 2.",
+          "line_end": 94,
+          "line_start": 69,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low; prose carries the argument.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source isolates the obstacle to a finite verification algorithm: Brauer gives a ratio of entire functions, numerical zero locations remain uncertain, and a pole with a nearby canceling zero can evade naive comparison.",
+          "source_id": "openalex_w2031072746",
+          "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Net-zero observations cannot by themselves certify Artin holomorphy",
+          "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u01.txt",
+          "unit_bytes": 2233,
+          "unit_id": "openalex_w2031072746_v2_u01",
+          "unit_sha256": "b7aa64b6a45e6726bcf84b9667badad7cc208bbca95f56ae0c854881a9072d72",
+          "unit_type": "effective-decidability diagnosis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The key distinction is between falsifiability and positive certification. Observing a net divisor is a lossy measurement; additional algebraic constraints are needed to reconstruct its positive and negative parts.",
+            "nonparaphrase_operation": "Brauer's quotient is both the computational bridge and the source of ambiguity: it makes evaluation possible while collapsing separate numerator zeros and denominator zeros into net order.",
+            "quality_reason": "The finite-decision question, ineffective infinitely-many-poles result for a restricted case, Brauer quotient access, residue/proximity ambiguity, announced bounded-height criterion, and partial pole information are supported. The output does not pretend the criterion itself is in the span and labels the constrained local-order reconstruction as intended remedy. 'Lossy measurement' is abstract language, but it is anchored to numerator-minus-denominator zero counts and nearby cancellation.",
+            "source_support": "The source asks whether holomorphy of L(s,rho) can be decided in finite time. A prior theorem says a non-automorphic two-dimensional representation would give infinitely many poles, but ineffectively: it does not bound the first pole. Since computation accesses the critical strip through Brauer's ratio, numerical proximity alone cannot certify cancellation without residue information. Section 2 is announced to give a criterion for finite-height verification and, when it fails, bounds on possible poles.",
+            "speculation_status": "The cited infinitely-many-poles theorem is ineffective and restricted in scope. The proposed criterion verifies only bounded regions when its group-theoretic hypotheses and runtime observations hold. This motivating span states the obstruction and intended remedy but not the criterion itself; no quantitative residue bound is supplied here. Framing the issue as falsifiability versus positive certification and net order as lossy measurement is a precise conceptual reading. This is a motivating prose span with low OCR risk; the absent quantitative residue bound remains a context limit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The central point requires the parity-modified condition stated in the span.",
+          "line_end": 318,
+          "line_start": 217,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Character and order formulas are legible but formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Factoring monomial L-functions and Dedekind zeta functions constrains every possible zero or pole through nonnegative pairings; under the tested simple-distinct-zero hypothesis, indecomposability of an irreducible character forces observed net counts to be actual counts.",
+          "source_id": "openalex_w2031072746",
+          "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Heilbronn characters convert pole cancellation into cone constraints",
+          "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u03.txt",
+          "unit_bytes": 6619,
+          "unit_id": "openalex_w2031072746_v2_u03",
+          "unit_sha256": "243b43df2ff81f05c382ffd69d7e716b19032fb56721431f65fe7c3a36fbfed9",
+          "unit_type": "local-count reconstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analytic ambiguity is converted into finite convex-lattice ambiguity. The method does not locate zeros more accurately; it proves that the lossy net observation has a unique nonnegative explanation under the tested spectral pattern.",
+            "nonparaphrase_operation": "The Heilbronn character is the bridge from local orders to character geometry; monomial pairings define the feasibility cone used for reconstruction.",
+            "quality_reason": "Brauer net counts, uncertain zero locations, monomial factor constraints, Heilbronn character and nonnegative pairings, Dedekind-zeta support, tested simple/distinct pattern, indecomposability condition, and central parity modification are supported. The output does not promote the runtime working hypothesis to a theorem and preserves the special central-point failure mode. 'Lossy observation has a unique explanation' is specific because the decomposition Tr rho=chi1+chi2 and monomial pairings are retained.",
+            "source_support": "Brauer gives numerator and denominator zero counts but only their difference near uncertain locations. The source defines the Heilbronn virtual character theta_s0=sum ord_s0 L(s,rho) Tr rho and shows its pairing with every monomial representation is nonnegative because those L-functions are holomorphic. Zeros and poles lie among zeros of the Dedekind zeta function. If a small neighborhood has the tested pattern of one simple distinct irreducible zero, then ruling out a decomposition Tr rho=chi1+chi2 by two nonzero cone-dual virtual characters forces one actual zero and no hidden cancellation; the central point requires a parity-modified decomposition.",
+            "speculation_status": "The simple, distinct-zero pattern is a runtime working hypothesis, not a proved general fact. Forced central vanishing needs the separate parity condition, and a multiple zero may remain indistinguishable from failure. Character/order formulas are clear in structure but formula-sensitive; the conclusion is conditional on both group geometry and observed isolation. Viewing the problem as unique reconstruction in a finite character cone is a strong mathematical interpretation of the explicit inequalities. Orders, pairings, and parity sums are formula-sensitive but legible."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The definition deliberately keeps the exceptional central-point condition separate.",
+          "line_end": 417,
+          "line_start": 313,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The geometric interpretation is prose-stable; exact GAP vectors and inequalities are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The definition turns analytic certification into finite character-lattice geometry; quotient/product stability and the GAP basis-and-inequality computation show how the condition can be proved for concrete groups such as A5 and S5.",
+          "source_id": "openalex_w2031072746",
+          "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+          "source_page_markers_inside_unit": [
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Almost monomiality is an indecomposability test in a dual character cone",
+          "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u04.txt",
+          "unit_bytes": 7491,
+          "unit_id": "openalex_w2031072746_v2_u04",
+          "unit_sha256": "b50e019b0a931fdeea57464baa411a266576f3bf292b16a57d59162f2df03ae8",
+          "unit_type": "group-theoretic criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The cone exposes exactly what information induced entire L-functions preserve. Certification becomes the question whether coordinate rays remain atoms after enlarging the ordinary character monoid to the cone-dual lattice.",
+            "nonparaphrase_operation": "Monomial multiplicity vectors, their Gram matrix, and the finite inequality system are the bridge from representation theory to an executable holomorphy criterion.",
+            "quality_reason": "Almost monomiality, lattice/cone picture, quotient/product stability, named examples, central condition, A5 GAP basis, and finite inequality enumeration are all in the span. No universal group claim or automatic central-point certification is imported. The cone language comes from the source itself; the output remains specific through the Gram/pairing computation.",
+            "source_support": "A group is defined to be almost monomial when no irreducible character decomposes nontrivially into two virtual characters pairing nonnegatively with every monomial representation. The source interprets this in a lattice/cone picture, proves stability under quotients and products with monomial groups, and states that SL2(F3), A5, and S5 satisfy it and the central parity condition. For A5, GAP enumerates monomial representation vectors, chooses a Z-basis, and checks bounded integral solutions to pairing inequalities.",
+            "speculation_status": "Almost monomiality deliberately omits the distinct central-point condition, which must be checked separately. Sign changes alone handle central multiplicity only under the stated small-order condition. The geometric idea and algorithm are stable, but exact GAP vectors, matrices, and inequalities are extraction-sensitive and should be taken from the scan or code. Describing irreducible coordinate rays as atoms in an enlarged feasible monoid is a faithful geometric restatement with non-paraphrase value. Exact GAP vectors and inequalities require the scan/code, despite a stable algorithmic outline."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_12ea07471b1c12856b3a4e30a12339d46f2d65e36587617c4f206e65e348135d",
+        "dossier_sha256": "1a9d1a21f812079eb4fc4aab2c423254f74a064c9e7f56eb1a523f09fc325657"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The explicit formula cheaply predicts and cross-checks zeros, while Turing's mean argument bound certifies completeness from sign changes produced by a rigorously bounded evaluator.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2031072746_v2_u06",
+          "openalex_w2031072746_v2_u08",
+          "openalex_w2031072746_v2_u14"
+        ],
+        "proposed_limit": "The explicit-formula minimization itself assumes RH and therefore is not the final RH certificate.",
+        "source_id": "openalex_w2031072746",
+        "synthesis_id": "riemann_v2_within_5b6b60ba810d414264b25e61",
+        "title": "Fast estimation and formal certification have complementary roles"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The positivity argument assumes RH for the L-function under examination.",
+          "line_end": 563,
+          "line_start": 481,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; Fourier conventions, support, and quadratic-form construction require scan verification for reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Weil's explicit formula evaluates bandlimited spectral probes from finitely many coefficients; positivity and normalization at a test ordinate turn the best probe into a computable infimum whose value below one rules out a zero.",
+          "source_id": "openalex_w2031072746",
+          "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A constrained quadratic-form minimum becomes a zero-exclusion certificate",
+          "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u06.txt",
+          "unit_bytes": 5487,
+          "unit_id": "openalex_w2031072746_v2_u06",
+          "unit_sha256": "483e3d51d21a99c2e94f6e97d9585e95c530b27c2d2bc6088adadd23d5046c8c",
+          "unit_type": "positive explicit-formula localization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Bandlimiting makes the arithmetic input finite, while positivity turns a global trace identity into localization. The optimization does not guess a zero; it asks for the cheapest nonnegative spectral mass compatible with unit weight at t0.",
+            "nonparaphrase_operation": "The explicit-formula quadratic form and its inverse are the bridge from coefficient data to a rapidly evaluable localization function FX.",
+            "quality_reason": "The explicit formula, finite coefficient dependence under compact support, RH-dependent positive test class, definition of F_X, exclusion implication, squared ansatz, quadratic form, and constrained matrix minimum are supported. No unconditional existence claim is made; the output correctly warns that a spike is not itself an unconditional proof. Bandlimit/localization language is mathematically specific through support X, h(t0)=1, and the threshold F_X<1.",
+            "source_support": "The source defines logarithmic-derivative coefficients cn and states Weil's explicit formula relating sums h(gamma_n) to conductor, gamma, pole, and finite coefficient terms when the Fourier transform g has compact support. Assuming RH, it defines nonnegative bandlimited h with h(t0)=1 and FX(t0) as the infimum of the spectral sum; FX(t0)<1 excludes t0 as a zero ordinate. A squared trigonometric ansatz for h corresponds to g=f*f and makes the zero sum a positive-definite quadratic form whose constrained minimum follows from a matrix inverse.",
+            "speculation_status": "The positivity interpretation assumes RH for the L-function under examination, and finite support limits resolution. A value below one excludes an ordinate; a spike near one is not alone an unconditional existence proof. Fourier conventions, pole corrections, and the exact test-function normalization are formula-critical and require scan verification. The 'cheapest nonnegative spectral mass' interpretation accurately explains the optimization without pretending it predicts a zero. Fourier conventions, pole corrections, and ansatz powers are formula-critical."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Applies directly when the relevant zeros are simple; central multiple-zero handling is discussed earlier.",
+          "line_end": 714,
+          "line_start": 595,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Contour orientations and endpoint conventions are formula-sensitive but the proof architecture is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The argument principle separates the explicit gamma phase from S(t); integrating one-sided sign-change counts near endpoints and using the mean-zero behavior of S determines the missing integer offset, while the bulk needs only observed sign changes.",
+          "source_id": "openalex_w2031072746",
+          "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+          "source_page_markers_inside_unit": [
+            14,
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Turing's method upgrades sign changes by recovering an absolute zero count",
+          "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u08.txt",
+          "unit_bytes": 8305,
+          "unit_id": "openalex_w2031072746_v2_u08",
+          "unit_sha256": "b9d00c1da50946ee1ee114a9c7dae36608d317ad063794b303ad674edc1c53a8",
+          "unit_type": "zero-count certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A local detector is calibrated by a global conservation law. Averaging S suppresses oscillation enough to identify the otherwise unknown integer offset, converting incomplete sign information into completeness certification.",
+            "nonparaphrase_operation": "Phi+S is the counting representation; the endpoint step functions and integrated S bounds bridge numerical sign brackets to an absolute argument-principle count.",
+            "quality_reason": "The argument-principle count, gamma phase Phi, S(t), sign-change brackets, one-sided step functions, integrated endpoint inequalities, mean-zero strategy, endpoint precision tradeoff, and bulk sign-change sufficiency are supported. The missed-even-multiplicity warning is a reasonable mathematical consequence, not presented as a direct quotation, and the output keeps simple-zero scope. 'Global conservation law' is metaphorical, but the exact integer count and integrated S bounds prevent it from becoming content-free.",
+            "source_support": "The argument principle and functional equation yield N(t1,t2)=Phi(t2)-Phi(t1)+S(t2)-S(t1), with explicit gamma phase Phi. Observed sign-change brackets define one-sided step counts around an endpoint t0. Integrating their inequalities over windows of length h and bounding the integral of S traps the integer N(t0); doing this at both endpoints determines the total net zero count. Precise zero brackets are needed only near endpoints, while bulk zeros require sign changes.",
+            "speculation_status": "The version here applies to simple zeros and requires separate pole contributions. Central multiple zeros and endpoint conventions need special handling, and a missed even-multiplicity zero is not exposed by a sign change alone. Contour orientations, branches, and upper-semicontinuous endpoint conventions are formula-sensitive, though the certification architecture is explicit. Calling this calibration of a local detector by a global count law is a useful conceptual reading. Branches, contour orientations, pole contributions, and upper-semicontinuous endpoints are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The numerical results establish finite-height evidence, not Artin's conjecture or RH in general.",
+          "line_end": 1924,
+          "line_start": 1703,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Tables and numerical parameters are readable but exact values remain PDF-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The implementation chooses damping from a rigorous error budget, computes local factors efficiently, uses explicit-formula spikes both as zero estimates and coefficient checks, evaluates the FFT with interval arithmetic, compares two independent zero locators, and finishes with Turing certification.",
+          "source_id": "openalex_w2031072746",
+          "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+          "source_page_markers_inside_unit": [
+            32,
+            33,
+            34
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Independent spectral estimates, interval arithmetic, and Turing counts triangulate the zero computation",
+          "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u14.txt",
+          "unit_bytes": 12233,
+          "unit_id": "openalex_w2031072746_v2_u14",
+          "unit_sha256": "4b4bb34b6be9ecc19fbe46ba12111fc20c898ed2c926e53574f8904f82552825",
+          "unit_type": "computational certification pipeline",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The computation is a chain of partly redundant checks with shared arithmetic inputs, not independent triangulation. Ramified-prime data from Dedekind-zeta identities and unramified Frobenius classes inferred from modular factorization produce the Dirichlet coefficients. Explicit-formula F_X spikes then estimate low zeros and their near-unit heights provide diagnostic evidence about those coefficients; a Taylor-tabulated kernel, convolution, and FFT produce interval-enclosed Z-values, whose zero locations are compared with F_X as another diagnostic. Because both views depend on the same L-function data, their agreement does not certify correctness by itself. Certification is reserved for rigorous interval control of the analytic computation together with Turing's completeness count, within the paper's verified zero-isolation working condition and its group/representation reconstruction of the target factors. The resulting conclusions remain finite-height statements, not proofs of Artin's conjecture or RH in general.",
+            "nonparaphrase_operation": "Classifies the pipeline by dependency and proof strength: coefficient construction feeds two partially shared spectral views, their agreement diagnoses failures, and only interval enclosures plus the global Turing count promote located sign changes to a completeness result under the representation and isolation conditions.",
+            "quality_reason": "Accepted after replacing 'independent triangulation' and 'audit' language with a shared-input dependency account, while preserving concrete computational mechanisms and reserving certification for interval arithmetic, Turing counting, and the stated group-theoretic runtime conditions.",
+            "source_support": "The span describes the error-budget choice of damping and precision, the two local-factor routes, F_X spike estimates and their evidential language, MPFI interval arithmetic for the numerical stages and Turing analysis, the Taylor/convolution/FFT evaluation, Z/F_X zero-location agreement as evidence, and the final Turing step verifying the working hypothesis that irreducible zeros can be isolated. The bounded preceding context supplies the representation-theoretic reduction to the tested L-functions.",
+            "speculation_status": "No independence claim is retained. F_X spike height and F_X/Z agreement are treated only as diagnostics; extraction-sensitive parameter exponents are not used to strengthen the conclusion, and all theorem-level claims are limited to the tested height."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_12ea07471b1c12856b3a4e30a12339d46f2d65e36587617c4f206e65e348135d",
+        "dossier_sha256": "1a9d1a21f812079eb4fc4aab2c423254f74a064c9e7f56eb1a523f09fc325657"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Transforming completed L-values into a coefficient convolution against a gamma-only kernel allows expensive rigorous work to be reused for every L-function with the same archimedean factor.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2031072746_v2_u10",
+          "openalex_w2031072746_v2_u11",
+          "openalex_w2031072746_v2_u12"
+        ],
+        "proposed_limit": "The gain is for many values or family members; isolated high-precision points may favor approximate functional equations.",
+        "source_id": "openalex_w2031072746",
+        "synthesis_id": "riemann_v2_within_360570b241082869012a598f",
+        "title": "One shared kernel amortizes rigorous evaluation across a family"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Pole residues and aliasing tails must be supplied separately, as the span notes.",
+          "line_end": 1179,
+          "line_start": 1067,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; exponential signs and FFT normalizations are formula-critical.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Fourier transforming a damped completed L-function converts its values into a Dirichlet-coefficient sum against one kernel G; Poisson summation then makes periodized samples a discrete Fourier pair, replacing a two-parameter integral family by one reusable transform.",
+          "source_id": "openalex_w2031072746",
+          "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+          "source_page_markers_inside_unit": [
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A single Mellin transform supports many rigorous critical-line values",
+          "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u10.txt",
+          "unit_bytes": 6947,
+          "unit_id": "openalex_w2031072746_v2_u10",
+          "unit_sha256": "d92f0aeaf31b0b604dcfd812458fd10e1d32423a16941bb4866e4895dbae0e36",
+          "unit_type": "FFT representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The representation change amortizes special-function work across all heights and coefficients. The FFT is effective because the continuous transform is first organized into a reusable translation kernel and only then discretized.",
+            "nonparaphrase_operation": "G is the reusable bridge between Dirichlet coefficients and transformed critical-line values; Poisson periodization is the bridge from the continuous Fourier relation to a finite DFT.",
+            "quality_reason": "Damped critical-line F, contour shift, pole residues, Dirichlet expansion, single Mellin kernel G, Poisson summation, DFT pair, and separate alias/tail obligations are supported. No error term is claimed to vanish automatically; all four residual obligations are acknowledged. 'Bridge' and 'representation change' remain specific through the displayed G translation and A,B,q periodization.",
+            "source_support": "The source defines F(t)=Lambda(1/2+it) times exponential damping and computes its inverse Fourier transform by shifting to Re(s)=2. After subtracting residues of poles, expanding L as a Dirichlet series yields F-hat(x)=epsilon sum a_n/sqrt(n) G(x+log(n/sqrt N)) for a single Mellin kernel G determined by eta and the gamma parameters. Choosing A,B with q=AB integral and applying Poisson summation makes periodized samples of F and F-hat a q-point discrete Fourier transform pair. Separate estimates are reserved for pole residues and aliases on both sides.",
+            "speculation_status": "Pole residues, Dirichlet truncation, Fourier-side aliases, and periodized critical-line tails are not automatically removed and need independent rigorous bounds. The method targets many moderate-precision values, not necessarily isolated high-precision points. Exponential signs, damping normalization, and FFT scale factors are formula-critical and must be checked against the scan. Amortization through one translated kernel before discretization is a precise explanation of why the FFT helps. Damping signs, residue conventions, Fourier normalization, and FFT scales are formula-critical."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Large positive kernel arguments suffer cancellation, motivating precomputation rather than direct repeated evaluation.",
+          "line_end": 1385,
+          "line_start": 1181,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; pole classes, recurrence factors, and error terms must be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contour shifting gives a power-log residue series, gamma recurrence bounds and propagates its tail, derivative identities create certified local Taylor expansions, and a second convolution accelerates all coefficient sums for a shared gamma factor.",
+          "source_id": "openalex_w2031072746",
+          "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+          "source_page_markers_inside_unit": [
+            24,
+            25,
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Residue recursion and local Taylor tables make the Mellin kernel recyclable",
+          "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u11.txt",
+          "unit_bytes": 11896,
+          "unit_id": "openalex_w2031072746_v2_u11",
+          "unit_sha256": "6c39683f94d93bb5c7851d2769ed318d9127ef0cd23a525a17847201846a679f",
+          "unit_type": "rigorous kernel precomputation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Recurrence converts an infinite analytic object into certified finite state that can be propagated. Local approximation is essential because the exact residue series is numerically ill-conditioned in the range where repeated evaluation would be most costly.",
+            "nonparaphrase_operation": "Polar-part coefficient vectors, derivative-shift identities, and stored Taylor jets are the bridge from contour theory to stable lookup; convolution then bridges lookup values to all coefficient sums simultaneously.",
+            "quality_reason": "Contour-shift residue series, explicit gamma expansions, equivalence classes modulo two, recurrence tail bound, derivative shift, Taylor remainder, cancellation warning, sample tables, and convolution/FFT acceleration are supported. 'Catastrophic' strengthens the source's statement that high precision is needed due to cancellation, but does not change the mathematical claim. 'Reusable infrastructure' could be generic; the exact same-gamma-family reuse and second convolution keep it specific.",
+            "source_support": "Shifting the G-contour left expresses it as a sum over gamma poles of polynomials times exponentials. The source gives expansions for Gamma_R(s) and Gamma_R(s+1) in the 0/1 gamma-parameter case. Grouping mu values modulo 2, Lemma 5.1 uses the gamma recurrence to show that after a stated condition the residues from successive poles shrink geometrically and their tail is bounded by the last polar coefficients. Derivative identities shift a gamma parameter by two, supporting Taylor expansions with a contour-derived remainder. Aligning sample grids rewrites the coefficient sum as convolutions evaluable by FFT.",
+            "speculation_status": "Large positive arguments cause catastrophic cancellation, so naive residue summation can lose precision. Tail conditions, Taylor radius, derivative order, and interval bounds must all be enforced. Pole classes, recurrence constants, and error formulas are highly scan-dependent. The reusable-precomputation strategy is explicit, but implementation details require exact transcription. Viewing polar coefficient vectors and Taylor jets as reusable certified state is a meaningful conceptual operation. Pole orders, recurrence constants, derivative identities, and remainder conditions are highly formula-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Parameter choice retains a practical precision-versus-coefficient tradeoff.",
+          "line_end": 1652,
+          "line_start": 1387,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high formula dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source selects damping and FFT dimensions to match the target height, derives stationary-phase-scale kernel decay, and separately bounds the Dirichlet tail, Fourier-side aliases, and critical-line periodization errors.",
+          "source_id": "openalex_w2031072746",
+          "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+          "source_page_markers_inside_unit": [
+            27,
+            28,
+            29,
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Truncation and two aliasing directions are bounded at conductor-scale complexity",
+          "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u12.txt",
+          "unit_bytes": 15562,
+          "unit_id": "openalex_w2031072746_v2_u12",
+          "unit_sha256": "5c577dc3cab23f4069ca7c0262228138b25d81f4a98f1d540d8bb7ace8ecfc8e",
+          "unit_type": "end-to-end error certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Complexity and rigor are co-designed: the same decay geometry that predicts work also partitions the total numerical error. Each alias direction is a distinct proof obligation and cannot be hidden in an empirical FFT accuracy claim.",
+            "nonparaphrase_operation": "The damping parameter, stationary-phase variable X, and explicit tail lemmas bridge analytic-conductor asymptotics to finite FFT dimensions and interval error bounds.",
+            "quality_reason": "Damping/height choices, square-root conductor-scale coefficient count, A/B roles, asymptotic G bound, Dirichlet-tail lemma, transform-alias lemma with residues, and critical-line periodization bound are supported. No unique optimal parameter choice is asserted; the trial-and-error tradeoff and family dependence are preserved. 'Three proof obligations' is abstract language, but it maps exactly to the three stated tail/alias classes.",
+            "source_support": "The source chooses damping eta near one at scale 1/T, B proportional to target height, and A proportional to local zero density, giving roughly square-root analytic-conductor coefficient cost. It states a contour-shift asymptotic bound for G, derives Lemma 5.3 for truncating the Dirichlet sum under |a_n|<=C n^alpha, sums Fourier-side G aliases with pole residues in Lemma 5.4, and uses the convexity bound plus gamma decay in Lemma 5.5 to control periodized F tails. Parameters trade coefficient count against precision.",
+            "speculation_status": "Parameter choice is practical and family-dependent, not uniquely optimal. All coefficient growth assumptions, pole terms, sign conditions, and height inequalities must hold for the stated estimates. The detailed constants and domains are very formula-sensitive; exact implementation must use the PDF and rigorous arithmetic rather than the extracted display alone. Saying complexity and rigor are co-designed by the same decay geometry is a source-specific synthesis of Sections 5.2–5.3. Constants, sign conditions, coefficient-growth hypotheses, and domains are extremely formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_12ea07471b1c12856b3a4e30a12339d46f2d65e36587617c4f206e65e348135d",
+        "dossier_sha256": "1a9d1a21f812079eb4fc4aab2c423254f74a064c9e7f56eb1a523f09fc325657"
+      }
+    }
+  ]
+}

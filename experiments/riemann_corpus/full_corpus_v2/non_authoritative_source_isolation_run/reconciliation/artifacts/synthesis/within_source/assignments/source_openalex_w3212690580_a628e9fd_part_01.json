@@ -1,0 +1,101 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w3212690580",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w3212690580_a628e9fd_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Because both normalized factors tend to one, the desired eventual product inequality requires a lower error bound on R(M_x) whose deficit is dominated by the explicit Euler-tail surplus.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w3212690580_v2_u02",
+          "openalex_w3212690580_v2_u03"
+        ],
+        "proposed_limit": "The source gives only an unsigned asymptotic equivalence, so the claimed theorem remains unproved.",
+        "source_id": "openalex_w3212690580",
+        "synthesis_id": "riemann_v2_within_e6d7a42f78e2c1b55e6c0c4e",
+        "title": "The missing ingredient is signed effective convergence, not another limit identity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The limiting proposition is cited rather than proved here.",
+          "line_end": 120,
+          "line_start": 101,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The extracted Dedekind-psi product is layout-degraded but its factors and normalization are recoverable from the checked prose and later algebra.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines M_x and R(M_x) so the Nicolas target can be rewritten using a normalized arithmetic function with unconditional limiting value e^gamma divided by zeta(2).",
+          "source_id": "openalex_w3212690580",
+          "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The primorial Dedekind-psi ratio packages the target prime product",
+          "unit_artifact_relpath": "depth/units/openalex_w3212690580_v2_u02.txt",
+          "unit_bytes": 1712,
+          "unit_id": "openalex_w3212690580_v2_u02",
+          "unit_sha256": "e4745d230fe19ac0b0564efc524fef49fd00d4bef9957b394dde1aea45bf1488",
+          "unit_type": "representation bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the unit defines the primorial M_x, Dedekind's psi function, and the normalized ratio R(n), then cites the unconditional two-sided limit R(M_x)→e^γ/ζ(2). Conceptual interpretation: evaluating an arithmetic function on a primorial packages factors indexed by primes into one quantity, but this unit supplies no one-sided sign or effective convergence rate. Relating that package algebraically to the Nicolas target is a cross-unit inference supported by the later proof span, not direct content here. The cited limit therefore cannot by itself establish the eventual Nicolas inequality, and the extracted psi product is layout-degraded.",
+            "nonparaphrase_operation": "Extracts the information lost by replacing a finite inequality with a two-sided limit—namely sign and rate—while labeling the Nicolas bridge as cross-unit context.",
+            "quality_reason": "Accepted after removing the imported factorization from direct source support and centering the reliable definitions, cited limit, and missing one-sided information.",
+            "source_support": "This narrow span directly contains only the three definitions, the cited limiting proposition, and the author's claim that a proof will follow.",
+            "speculation_status": "The limit is a cited source claim; the announced RH conclusion is not supported by this unit and no repair is proposed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The conclusion does not follow from the cited facts: R(M_x)/(e^gamma/zeta(2)) may approach one from below with an error larger than the known surplus. An effective one-sided rate strong enough to dominate that deficit is missing.",
+          "line_end": 240,
+          "line_start": 186,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The equivalence and products are formula-dependent but sufficiently legible; the obstruction is a quantifier/rate issue visible from the source's own statements.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites the lemma's hypothesis as a product of an explicit Euler-tail surplus and R(M_x), then exposes the attempted last step from a partial-product comparison and R(M_x) asymptotics.",
+          "source_id": "openalex_w3212690580",
+          "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two convergences to one do not provide the required eventual one-sided product bound",
+          "unit_artifact_relpath": "depth/units/openalex_w3212690580_v2_u03.txt",
+          "unit_bytes": 3495,
+          "unit_id": "openalex_w3212690580_v2_u03",
+          "unit_sha256": "aaf3f797bb47e38c5ea6ea9e89ad06a3dcf1eabc82b518b0cf1b22e3f35feeda",
+          "unit_type": "failed proof route",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the claimed proof rewrites its target as an explicit exponential/Euler-tail factor times R(M_x) being at least e^γ, argues that the first factor lies above its limiting ζ(2) value, and uses only the asymptotic equivalence R(M_x)∼e^γ/ζ(2). Conceptual interpretation: the final implication fails because two-sided convergence loses sign and rate. R(M_x)/(e^γ/ζ(2)) could approach one from below with a deficit larger than the explicit surplus, so an effective one-sided comparison strong enough to dominate that deficit is required. The source provides no such estimate; its imprecise 'much greater than' notation does not repair the quantifier gap. This diagnoses a failed proof route and asserts nothing about the truth or falsity of RH.",
+            "nonparaphrase_operation": "Supplies a precise surplus-versus-deficit counterpattern that isolates why the source's limit argument cannot license its eventual inequality.",
+            "quality_reason": "Accepted as a negative training example because the quantifier failure is mathematically specific, legible despite formula damage, and clearly separated from any claim about RH itself.",
+            "source_support": "The final proof span visibly combines the explicit factor with the cited asymptotic and immediately concludes an eventual one-sided inequality, with no rate comparison between the two errors.",
+            "speculation_status": "The missing-rate diagnosis is a logical audit of the displayed implication. No alternative RH proof, counterexample to RH, or unsupported repair is proposed."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_83981b6472e6d08f0c31848ceea394f1fe68958f4d33f9522606f67493364c94",
+        "dossier_sha256": "c693c368cb8331985072e3b8b102453b5a959269e6195d6d04fba8b492d1f6b0"
+      }
+    }
+  ]
+}

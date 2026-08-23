@@ -1,0 +1,258 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_keating_snaith2000_rmt_49a8e274_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "keating_snaith2000_rmt",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a formula-level refinement of the symmetry-class generalization.",
+      "line_end": 1697,
+      "line_start": 1630,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The source is heavily formula-dependent here and the ensemble parameter is partly lost; use the prose pole/zero and rationality statements, and scan-verify every exact special-function formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives symplectic leading coefficients for modulus and phase generators, identifies the moment subsequence yielding rational values, and checks pole and zero multiplicities against the finite-N products.",
+      "source_id": "keating_snaith2000_rmt",
+      "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "CSE leading moment coefficients have distinct gamma/Barnes G and zero structures",
+      "unit_artifact_relpath": "depth/units/keating2000_v2_u27_cse_leading_coefficients.txt",
+      "unit_bytes": 4041,
+      "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+      "unit_sha256": "598bdf6bf59c14187f990e9a1b00a4cd26540bef6c15a4dd6a0fc559cf803331",
+      "unit_type": "symmetry-specific-special-function-asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u27_cse_leading_coefficients.txt",
+      "source": {
+        "source_id": "keating_snaith2000_rmt",
+        "title": "Random Matrix Theory and zeta(1/2+it)",
+        "authors": [
+          "J. P. Keating",
+          "N. C. Snaith"
+        ],
+        "year": 2000,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1622,
+          "line_end": 1629,
+          "text": "                                                                            ;2)=2\n                                                                                  N=2 ; k A\n                = 12 @ N2 (1) (1) + N2 (1) (1=2) ; 4(N=\n                                                  k=1 (2k ; 1)                       k2\n                                                                   2\n                                                                            k=1\n                = log N + 1 + ; 34 \u0010 (2) + O(N ;1 ):                                              (120)\nThe calculation for odd N is very similar and the result is the same. Once again Q12 (N ) = R21 (N ).\n",
+          "sha256": "8142049bf0b70cf6adeb8e93582b7b7357722442e478f4a49e85753757d8b048"
+        },
+        "after": {
+          "line_start": 1698,
+          "line_end": 1705,
+          "text": "       Moving on to the COE, we have in this case that\n\n           MN (1; s) = exp\n                                       \u0012                 \u0013 2 X   1        ;\n       lim\n      N !1 N s2 =2\n                                        1 + ; 34 \u0010 (2) s2 + (;1)n 2n;1 \u0010 (n ; 1) ; \u0010 (n ; 1)\n                                                                n=3 \u0013 \u0013\n",
+          "sha256": "3124c6407548d5c0abe7f70597eb5eac555d06501edaff4401cd8371afe62638"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 COE and CSE Results",
+            "line_end": 1754,
+            "line_start": 1479,
+            "mathematical_role": "Extends generating functions, cumulants, Gaussian limits, variances, and leading moment coefficients across circular symmetry classes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1697,
+          "line_start": 1630,
+          "title": "CSE leading moment coefficients have distinct gamma/Barnes G and zero structures",
+          "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+          "unit_type": "symmetry-specific-special-function-asymptotics",
+          "why_material": "Derives symplectic leading coefficients for modulus and phase generators, identifies the moment subsequence yielding rational values, and checks pole and zero multiplicities against the finite-N products."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a formula-level refinement of the symmetry-class generalization.",
+          "representation_dependency": "The source is heavily formula-dependent here and the ensemble parameter is partly lost; use the prose pole/zero and rationality statements, and scan-verify every exact special-function formula.",
+          "unit_id": "keating2000_v2_u27_cse_leading_coefficients"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1629,
+            "line_start": 1580,
+            "title": "COE and CSE change the variance scale and constant term",
+            "unit_id": "keating2000_v2_u26_symmetry_specific_variance_constants",
+            "unit_type": "parameter-sensitive-asymptotics",
+            "why_material": "Computes the next variance asymptotics separately for symplectic and orthogonal ensembles, including the even/odd matrix-size issue, while retaining equality of real and imaginary variances."
+          },
+          {
+            "line_end": 1753,
+            "line_start": 1698,
+            "title": "COE leading coefficients shift the moment subsequence and pole/zero pattern",
+            "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+            "unit_type": "symmetry-specific-special-function-asymptotics",
+            "why_material": "Provides the orthogonal analogue, with different normalization, rational moment subsequence, and analytic pole/zero structure for modulus and phase generators."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Orthogonal, unitary, and symplectic models share logarithmic variance plus bounded higher cumulants, yet differ in variance constants, admissible rational moment subsequences, and pole/zero patterns.",
+            "limit": "Applying a non-CUE class to an L-function requires an independently justified family-symmetry assignment, and exact special-function formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "keating2000_v2_u06_family_symmetry_selects_model",
+              "keating2000_v2_u25_beta_ensemble_gaussian_universality",
+              "keating2000_v2_u26_symmetry_specific_variance_constants",
+              "keating2000_v2_u27_cse_leading_coefficients",
+              "keating2000_v2_u28_coe_leading_coefficients"
+            ],
+            "title": "Symmetry class changes constants without changing the Gaussian mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Together with the CSE unit, this shows that Gaussian universality does not imply identical moment constants.",
+      "line_end": 1753,
+      "line_start": 1698,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact gamma/Barnes G formulas and multiplicities are formula-sensitive; all should be verified against the scan before symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides the orthogonal analogue, with different normalization, rational moment subsequence, and analytic pole/zero structure for modulus and phase generators.",
+      "source_id": "keating_snaith2000_rmt",
+      "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "COE leading coefficients shift the moment subsequence and pole/zero pattern",
+      "unit_artifact_relpath": "depth/units/keating2000_v2_u28_coe_leading_coefficients.txt",
+      "unit_bytes": 2972,
+      "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+      "unit_sha256": "83db1177af94a6d81b67275ef3b5a7c60e2b4bc9fd0d97ae2fc5e208cb7bdaac",
+      "unit_type": "symmetry-specific-special-function-asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u28_coe_leading_coefficients.txt",
+      "source": {
+        "source_id": "keating_snaith2000_rmt",
+        "title": "Random Matrix Theory and zeta(1/2+it)",
+        "authors": [
+          "J. P. Keating",
+          "N. C. Snaith"
+        ],
+        "year": 2000,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1690,
+          "line_end": 1697,
+          "text": "                                          ;       2n \u0010 (2n ; 1) + 22n \u0010 (2n) ; 42n \u0010 (2n) 2n ;\n                                            n=2 2\nand the expansions of the gamma and G-functions allow us to show that\n                                                   s\n          lim L (4; s) \u0002 N s2 =8       = 2;s2 =8       G(1 + s=2)G(1 ; s=2);(1 + s=4);(1 ; s=4) ;   (127)\n         N !1 N                                                  ;(1 + s=2);(1 ; s=2)\nwhich has zeros of order k at \u0006(4k ; 2) and also kth order zeros at \u00064k, k = 1; 2; 3 : : : , just as an\nexamination of LN (4; s) indicates it should.\n",
+          "sha256": "53dca479edb3cecad93e37268f6b003edcb5705de7a1d9d4ff65cb79b1fb4f25"
+        },
+        "after": {
+          "line_start": 1754,
+          "line_end": 1761,
+          "text": "\nAcknowledgements\nWe are grateful to Peter Sarnak, for a number of very helpful suggestions, to Brian Conrey, for\nseveral stimulating discussions, and, in particular, to Andrew Odlyzko, for giving us access to his\nnumerical data. NCS also wishes to acknowledge generous funding from NSERC and the CFUW\nin Canada.\n\n\n",
+          "sha256": "38349b595a8a038d56337b68d0c3edd4e0d8c26cb79fb0a6f9f464ed3fce8af2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 COE and CSE Results",
+            "line_end": 1754,
+            "line_start": 1479,
+            "mathematical_role": "Extends generating functions, cumulants, Gaussian limits, variances, and leading moment coefficients across circular symmetry classes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1753,
+          "line_start": 1698,
+          "title": "COE leading coefficients shift the moment subsequence and pole/zero pattern",
+          "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+          "unit_type": "symmetry-specific-special-function-asymptotics",
+          "why_material": "Provides the orthogonal analogue, with different normalization, rational moment subsequence, and analytic pole/zero structure for modulus and phase generators."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Together with the CSE unit, this shows that Gaussian universality does not imply identical moment constants.",
+          "representation_dependency": "Exact gamma/Barnes G formulas and multiplicities are formula-sensitive; all should be verified against the scan before symbolic use.",
+          "unit_id": "keating2000_v2_u28_coe_leading_coefficients"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1697,
+            "line_start": 1630,
+            "title": "CSE leading moment coefficients have distinct gamma/Barnes G and zero structures",
+            "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+            "unit_type": "symmetry-specific-special-function-asymptotics",
+            "why_material": "Derives symplectic leading coefficients for modulus and phase generators, identifies the moment subsequence yielding rational values, and checks pole and zero multiplicities against the finite-N products."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Orthogonal, unitary, and symplectic models share logarithmic variance plus bounded higher cumulants, yet differ in variance constants, admissible rational moment subsequences, and pole/zero patterns.",
+            "limit": "Applying a non-CUE class to an L-function requires an independently justified family-symmetry assignment, and exact special-function formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "keating2000_v2_u06_family_symmetry_selects_model",
+              "keating2000_v2_u25_beta_ensemble_gaussian_universality",
+              "keating2000_v2_u26_symmetry_specific_variance_constants",
+              "keating2000_v2_u27_cse_leading_coefficients",
+              "keating2000_v2_u28_coe_leading_coefficients"
+            ],
+            "title": "Symmetry class changes constants without changing the Gaussian mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "447baefe72e2720a232c4c14be7941086836b156b7beb7bf03f4e1e4810344e7"
+}

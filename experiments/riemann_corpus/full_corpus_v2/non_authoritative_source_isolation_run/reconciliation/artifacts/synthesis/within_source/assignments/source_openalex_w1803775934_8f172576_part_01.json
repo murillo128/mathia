@@ -1,0 +1,640 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1803775934",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1803775934_8f172576_part_01.jsonl",
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The explicit formula reconstructs primes from collective zero oscillations, while Hilbert-Polya seeks a spectral object whose reality would first constrain those zeros; GUE statistics narrow the symmetry class of such an object.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1803775934_v2_u02",
+          "openalex_w1803775934_v2_u08",
+          "openalex_w1803775934_v2_u09"
+        ],
+        "proposed_limit": "Statistical agreement does not construct a self-adjoint operator or prove that its spectrum exhausts all zeros.",
+        "source_id": "openalex_w1803775934",
+        "synthesis_id": "riemann_v2_within_2cb034bf9c26600477f259e7",
+        "title": "The explicit formula and Hilbert-Polya reverse the same prime-zero bridge"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The prime-power weighting and branch convention are included so the explicit formula is not reduced to a slogan.",
+          "line_end": 341,
+          "line_start": 202,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Display-heavy but prose supports every transformation; exact integral correction terms need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the weighted prime-power counter J, inverts it to pi, replaces J by a sum over zeros, handles logarithmic branches, and uses the functional equation to explain trivial zeros and the quartet symmetry of nontrivial zeros.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            5,
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Möbius inversion and zeta zeros reconstruct the prime staircase",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u02.txt",
+          "unit_bytes": 8321,
+          "unit_id": "openalex_w1803775934_v2_u02",
+          "unit_sha256": "60205ceec6517c05a46a9bc0fd6b7a7dd6604f6ec1cebdfcdbfee008f3563768",
+          "unit_type": "explicit-formula representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The prime staircase is reconstructed indirectly: prime powers regularize the combinatorics, zeros encode the oscillatory correction, and Möbius inversion removes repeated powers. Each layer has a distinct logical job.",
+            "nonparaphrase_operation": "J is the bridge between prime counting and analytic zero data; Möbius inversion connects weighted prime powers back to primes. The functional equation supplies the symmetry that organizes the zero contribution.",
+            "quality_reason": "The source defines the weighted prime-power counter J, finite Möbius inversion, the explicit zero formula, the midpoint convention, the logarithmic branch convention, trivial zeros, and zero symmetries. No material imported conclusion is asserted; convergence of the zero sum is explicitly left unresolved. Low: the analysis performs a non-paraphrase decomposition of the reconstruction into three source-specific operations.",
+            "source_support": "J(x) counts prime powers with reciprocal exponent weights, and finite Möbius inversion recovers pi(x). The source states an explicit formula expressing J through Li and zeta zeros, fixes the complex logarithm convention for Li(x^rho), and uses the functional equation to identify trivial zeros and the quartet symmetry of nontrivial zeros.",
+            "speculation_status": "The displayed explicit correction terms are extraction-sensitive, and the formula requires a consistent logarithmic branch and midpoint convention at jumps. The span does not justify convergence of the zero sum; that issue is deferred. The transformations and roles are prose-supported, but exact integral corrections and typographic factors should be checked against the scan. Calling J an intermediate bridge and assigning distinct jobs to prime-power weighting, zeros, and Möbius inversion is a faithful conceptual synthesis. Exact correction integrals and several displayed factors are extraction-sensitive and require the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Weyl-law historical motivation and the required one-to-one spectral correspondence.",
+          "line_end": 707,
+          "line_start": 691,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only and well extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains the proposed mechanism: identify zero ordinates as eigenvalues of a Hermitian physical problem so their reality forces critical-line location.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Hilbert-Polya would replace a location theorem by self-adjoint spectral reality",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u08.txt",
+          "unit_bytes": 1398,
+          "unit_id": "openalex_w1803775934_v2_u08",
+          "unit_sha256": "6f796a89280a75eeeb7b944232b4c9472947b2c7b400bbec920d0485038b5c51",
+          "unit_type": "spectral reframing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Hilbert-Polya proposal reframes critical-line location as a spectral-reality problem: if the relevant transformed nontrivial-zero data were identified exactly and exhaustively with the eigenvalues of a Hermitian physical problem, real eigenvalues would supply the desired location conclusion. Hermiticity gives the spectral consequence, but the exact identification, its direction, and its exhaustiveness remain obligations; this span constructs none of them.",
+            "nonparaphrase_operation": "Separates the automatic implication supplied by Hermitian spectral reality from the missing bridge conditions needed to turn the historical proposal into a proof mechanism.",
+            "quality_reason": "Accepted after treating exact zero-to-eigenvalue identification and exhaustiveness as additional proof burdens rather than facts established by the historical sketch.",
+            "source_support": "The source quotes Polya's proposal that RH be equivalent to reality of the eigenvalues of a connected physical problem, notes that Hermitian operators have real eigenvalues, and describes a possible one-to-one correspondence between critical-line zero ordinates and energy levels, with Weyl's counting work offered as historical motivation.",
+            "speculation_status": "Programmatic source proposal plus explicit critic inference about its obligations; no operator, exhaustive correspondence, or proof of RH is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Extends the old v1 span through the model construction and time-reversal conclusion needed to make the historical comparison coherent.",
+          "line_end": 835,
+          "line_start": 708,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The pair-correlation and spacing displays are formula-dependent, while the universality comparison is clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects zero repulsion to Hermitian random-matrix eigenvalue repulsion, defines unfolding, distinguishes symmetry universality classes, and reports how high-zero computations support the GUE rather than Poisson/GOE/GSE model.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Montgomery pair correlation and GUE universality constrain the hidden spectral system",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u09.txt",
+          "unit_bytes": 8368,
+          "unit_id": "openalex_w1803775934_v2_u09",
+          "unit_sha256": "989618a71e087a56020f69b4af8ec655c52d6e552f5f4e242038d2300a644f3e",
+          "unit_type": "statistical transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Unfolding removes the deterministic counting trend to expose universal local fluctuations. The match transfers constraints—level repulsion, chaotic behavior, and broken time reversal—to a candidate spectral model without identifying a unique operator.",
+            "nonparaphrase_operation": "Normalized spacings and pair correlation bridge zeta zeros to random-matrix eigenvalues; universality classes connect statistical laws to Hamiltonian symmetries.",
+            "quality_reason": "The span states pair correlation, unfolding, GUE comparison, numerical agreement, level repulsion, and the source's time-reversal-class conclusion. No material unsupported conclusion is presented; the analysis expressly denies that statistics construct an operator or prove RH. Low: the gain from unfolding and the limit of universality-class transfer are both specified.",
+            "source_support": "The source states Montgomery's pair-correlation prediction under RH, explains unfolding of zero gaps, compares the resulting statistics with random Hermitian matrices, and reports numerical agreement with GUE rather than Poisson, GOE, or GSE behavior.",
+            "speculation_status": "Statistical agreement neither proves RH nor constructs the Hilbert–Pólya operator. Pair-correlation displays and normalizations are formula-sensitive, and finite high-zero computations test only selected ranges. The comparison and symmetry conclusion are prose-supported; exact formulas and claimed convergence rates should be scan-checked. Using local statistics to constrain rather than identify a hypothetical spectral model is a careful and useful inference. Spacing displays are formula-sensitive, one OCR exponent is suspect, and finite numerical samples cover selected ranges only."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Zeta can be represented as a partition function or in billiard survival, but a proof route requires more than equality of formulas: a circle theorem must apply to the actual interaction class, or an asymptotic equivalence must be independently established.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1803775934_v2_u15",
+          "openalex_w1803775934_v2_u16",
+          "openalex_w1803775934_v2_u19"
+        ],
+        "proposed_limit": "The survey reports proposed models and equivalences at expository depth and does not validate their cited derivations.",
+        "source_id": "openalex_w1803775934",
+        "synthesis_id": "riemann_v2_within_27eaca9a22c05b339621880d",
+        "title": "Physical translations succeed only when their theorem hypotheses survive the encoding"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the thermodynamic setup so the zeta equality is a derived representation, not a formal relabeling.",
+          "line_end": 1057,
+          "line_start": 1026,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The temperature-to-s parameter formula is readable; physical realizability of the Hamiltonian remains assumed.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses prime-labeled one-particle states, unique factorization, and additive logarithmic energy to construct composite states whose Boltzmann sum is the zeta Dirichlet series.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Logarithmic integer energies make the canonical partition function equal zeta",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u15.txt",
+          "unit_bytes": 2424,
+          "unit_id": "openalex_w1803775934_v2_u15",
+          "unit_sha256": "1100af927c7c5369399f1f6618e4c15c9de5013d6b6138b69f480ed0b5b97500",
+          "unit_type": "partition-function construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The logarithm is the essential representation change: it linearizes multiplicative composition. The partition function then preserves the integer multiplicities while exposing them as thermodynamic state composition.",
+            "nonparaphrase_operation": "Unique factorization and log(ab)=log a+log b bridge the multiplicative monoid of integers to an additive energy spectrum; the Boltzmann weight converts energy back to n^{-s}.",
+            "quality_reason": "The source assumes prime-labeled logarithmic energies, uses unique factorization to obtain E log n for composite states, and derives the zeta Dirichlet series as the partition function. No material unsupported physical claim is endorsed; Hamiltonian realizability and analytic-continuation zeros remain outside the derivation. Low: the interpretation names the homomorphism log(ab)=log a+log b and its precise thermodynamic consequence.",
+            "source_support": "Prime-labeled one-particle states have energies E log p. A composite state indexed by n has additive energy E log n by unique factorization, and summing exp(-E log n/k_BT) over n gives zeta(s) with s=E/k_BT.",
+            "speculation_status": "The mathematical equality assumes the proposed spectrum and does not establish physical realizability or constrain analytically continued zeros. Partition-function zero claims lie beyond the positive-temperature Dirichlet-series region. The construction is explicit, but realization of the Hamiltonian is assumed rather than derived. Identifying the logarithm as linearizing multiplication and the Boltzmann weight as reversing the encoding is exact and reusable. The proposed spectrum is assumed rather than constructed; positive-temperature equality does not by itself control complex-temperature zeros."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This records both the bridge and its precise failure point.",
+          "line_end": 1108,
+          "line_start": 1058,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Some duality-variable layout is formula-sensitive; the model-class obstruction is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Compares zeta's functional equation with Kramers-Wannier duality, maps the critical line to the unit circle, and outlines a Lee-Yang route before identifying that Knauf's zeta-ratio spin interaction does not satisfy the hypotheses of available circle theorems.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional-equation duality suggests a circle theorem, but the zeta spin model lies outside the proven class",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u16.txt",
+          "unit_bytes": 3760,
+          "unit_id": "openalex_w1803775934_v2_u16",
+          "unit_sha256": "29e23921dabbae5744b7c4af54bf5dbc95cb9d967e2f4daf149353d89caf4613",
+          "unit_type": "analogy and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The statistical-mechanics analogy supplies two formal bridges—functional-equation duality and a Mobius transformation sending the critical line to the unit circle—but those bridges do not authorize a circle-theorem conclusion. Knauf's zeta-ratio partition function comes from an interaction outside the cases for which the cited circle theorem was proved, so applicability to this model remains the proof burden; the span does not identify which particular interaction hypothesis fails.",
+            "nonparaphrase_operation": "Tests a proposed theorem transfer by separating coordinate-level and duality-level resemblance from membership in the theorem's proved model class.",
+            "quality_reason": "Accepted after removing the unsupported positivity example and locating the failure precisely at unestablished applicability of the circle theorem to the zeta spin interaction.",
+            "source_support": "The span compares zeta's functional equation with Kramers-Wannier duality, maps s=1/2+it to |u|=1 using u=s/(1-s), sketches the Lee-Yang route, gives Knauf's partition function as zeta(s-1)/zeta(s), and explicitly says its spin interaction is not among the cases covered by proved circle theorems.",
+            "speculation_status": "Source-grounded analogy and obstruction; no positivity condition or other unshown theorem hypothesis is supplied from outside the span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source reports no experiment had been performed and extends only by citation to spherical billiards.",
+          "line_end": 1208,
+          "line_start": 1184,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The order of limits and exponent delta are formula-sensitive but readable; use the scan for exact experimental design.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Relates circular-billiard survival probability to zeta, states an RH-equivalent double limit, and identifies how a slower-than-square-root small-hole law could experimentally refute RH.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Open-billiard escape asymptotics translate RH into a measurable survival limit",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u19.txt",
+          "unit_bytes": 1578,
+          "unit_id": "openalex_w1803775934_v2_u19",
+          "unit_sha256": "a8b261a1036753598ed3b6f7430223029a35d030894e9e88528b7bb3e1199b66",
+          "unit_type": "physical equivalence criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The representation turns an analytic location statement into a dynamical decay threshold. Its value lies in making the critical exponent observable, while retaining a delicate asymptotic order.",
+            "nonparaphrase_operation": "Open-billiard survival probability is the bridge object; the one-half critical-line location appears as the limiting epsilon exponent.",
+            "quality_reason": "The source states a zeta-related billiard survival probability, an RH-equivalent nested limit for every delta>-1/2, a possible refutation behavior, and that no experiment had been performed. No material unsupported experimental validation is claimed; finite precision is correctly distinguished from the universal limit. Low: the analysis names the survival observable, exponent, and order of limits.",
+            "source_support": "For a circular billiard with a small hole, the source states an exact survival probability related to zeta and an RH-equivalent double limit involving t→∞ followed by hole size epsilon→0 for every delta>-1/2. Slower-than-square-root small-hole behavior could refute the criterion.",
+            "speculation_status": "No experiment is reported, finite precision cannot realize the nested limits, and an experimental match over bounded scales would not prove the universal asymptotic. The stated equivalence is source-grounded, but the exact limit order and exponent are formula-sensitive and should be scan-checked. Interpreting the construction as converting zero location into a scale-sensitive decay threshold is faithful. The exact nested-limit order and exponent are formula-sensitive and need scan verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A counting-law match, an inverse spectral realization, or an explicit operator for the trivial zeros can all reproduce spectral data without supplying the self-adjoint chaotic mechanism needed for the nontrivial zeros.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1803775934_v2_u10",
+          "openalex_w1803775934_v2_u12",
+          "openalex_w1803775934_v2_u13"
+        ],
+        "proposed_limit": "This is a comparison of source-reported obstructions, not a no-go theorem against every spectral approach.",
+        "source_id": "openalex_w1803775934",
+        "synthesis_id": "riemann_v2_within_173609d800e9b0871f7caa09",
+        "title": "Matching a spectrum is weaker than explaining its critical-line location"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The isospectral-drum caution prevents treating a matching leading staircase as operator identification.",
+          "line_end": 871,
+          "line_start": 844,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant; exact counting formula is readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Lists the desired Hermitian chaotic system, motivates H=xp by its matching leading counting law, and then records fatal issues: special regularization, disagreement of lower terms, continuous spectrum, and integrability.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The xp counting law matches the zero staircase but fails the operator requirements",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u10.txt",
+          "unit_bytes": 2290,
+          "unit_id": "openalex_w1803775934_v2_u10",
+          "unit_sha256": "01795ed4730e8085192779d6d286b368b27d2d562466ec16c95c268999e42ed0",
+          "unit_type": "candidate-and-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A macroscopic asymptotic is a weak invariant: many inequivalent systems can share it. The decisive obligations are spectral discreteness, correct lower-order data, self-adjoint realization, and dynamics consistent with the observed statistics.",
+            "nonparaphrase_operation": "Phase-space state counting bridges a classical Hamiltonian to the zero-count asymptotic, while isospectral examples show why the bridge is non-injective.",
+            "quality_reason": "The source motivates H=xp by a matching counting law, then records special regularization, lower-term mismatch, continuous spectrum, integrability, and failure of chaotic dynamics. No material unsupported claim is asserted; the analysis does not elevate modified xp proposals beyond the span. Low: the account names four concrete failure tests instead of using a generic 'representation is insufficient' template.",
+            "source_support": "Berry and Keating's H=xp is motivated by a regularized state count matching the leading Riemann-von Mangoldt staircase. The source records dependence on special regularization, disagreement in lower terms, continuous rather than discrete spectrum on the positive axis, and integrability rather than chaos.",
+            "speculation_status": "The stated xp realization does not meet the required operator properties and therefore does not establish a zero correspondence or RH. The obstruction list is clear; the exact counting formula and regularization details should be checked before technical reuse. Calling the leading counting law a weak invariant and separating it from operator-level obligations is directly responsive to the isospectral caution. The precise state-count regularization and displayed asymptotic should be checked before technical reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Separates existence of a system with a desired spectrum from a mechanism proving all zeros are accounted for.",
+          "line_end": 976,
+          "line_start": 944,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only with minor OCR noise.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Notes that many integrable Hamiltonians can realize any suitably growing spectrum, then explains how Connes's trace formula and Okubo's boundary condition leave an equally hard completeness/normalizability problem.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Spectral realization alone is underdetermined, and proposed operators relocate rather than remove RH's difficulty",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u12.txt",
+          "unit_bytes": 2500,
+          "unit_id": "openalex_w1803775934_v2_u12",
+          "unit_sha256": "186a224a5fb0f98ff91513008d3e0631150b13c3dfa8c8c3cc71b06f655a534b",
+          "unit_type": "spectral obstruction survey",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Prescribing spectral data is weaker than explaining why those data exhaust the zeta zeros. Crehan's existence result is applied to a sequence already selected from zeros on the critical line, so it cannot by itself exclude additional off-line zeros. In the source's survey, Connes's construction still faces a trace-formula obligation, while Okubo's boundary-conditioned construction yields nonnormalizable eigenfunctions; viewing these as relocated proof or admissibility burdens is an interpretation of the reported limitations, not a theorem proved in the span.",
+            "nonparaphrase_operation": "Compares three operator bridges by isolating the missing sufficiency condition in each, especially the distinction between realizing a chosen critical-line sequence and proving that it is complete.",
+            "quality_reason": "Accepted after attributing the Connes assessment to the source, preserving Crehan's preselected-sequence limitation, and avoiding claims that the trace-formula or normalizability defects are formally equivalent to RH without further argument.",
+            "source_support": "The span reports infinitely many integrable Hamiltonians for broad prescribed sequences and applies this to imaginary parts of zeros on the critical line; it says Connes accounts for critical-line zeros but must rule out unaccounted off-line zeros and attributes to common opinion the assessment that a trace-formula problem remains; it also reports that Okubo uses a zeta-zero boundary condition and obtains nonnormalizable eigenfunctions.",
+            "speculation_status": "Source-grounded survey facts with clearly marked critic interpretation; the cited constructions, their hypotheses, and categorical admissibility conclusions are not independently established here."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This realizes only the trivial zeros and supplies no route to RH.",
+          "line_end": 1005,
+          "line_start": 977,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Differential-operator signs are formula-sensitive but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the harmonic-oscillator eigenproblem to construct an explicit differential operator whose eigenvalues are the evenly spaced trivial zeros, providing a controlled contrast with the nontrivial-zero problem.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Trivial zeta zeros are realized by a shifted inverted oscillator operator",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u13.txt",
+          "unit_bytes": 1340,
+          "unit_id": "openalex_w1803775934_v2_u13",
+          "unit_sha256": "7dc3e6cd7839aba85709c70b4676157581429a7fc85f6b69ae6418150c25b525",
+          "unit_type": "worked spectral construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The trivial zeros are reproduced by an affine algebraic transformation of the familiar harmonic-oscillator eigen-equation: multiplying by -2 and rearranging gives the displayed differential operator d^2/dx^2 - x^2 + 1 acting on the same Hermite functions with eigenvalues -2n. The construction exploits the constant spacing of the trivial-zero sequence; it says nothing about the irregular nontrivial zeros or RH, and the span supplies no operator-domain or self-adjointness analysis.",
+            "nonparaphrase_operation": "Extracts the mechanism as an affine transformation of a standard equally spaced eigen-equation and uses it as a bounded contrast between easy spectral reproduction and the unresolved nontrivial-zero problem.",
+            "quality_reason": "Accepted after replacing imported inverted-oscillator and self-adjoint terminology with the displayed differential operator and its exact trivial-zero-only boundary.",
+            "source_support": "The span displays the harmonic-oscillator equation, its Hermite-function eigenvectors, the multiplication-and-rearrangement step, and the resulting differential operator with eigenvalues -2n, explicitly identifying these as the trivial zeta zeros.",
+            "speculation_status": "Source-grounded algebraic interpretation; no physical Hamiltonian classification, self-adjointness conclusion, operator-domain claim, or implication for RH is added."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Prime-error bounds, heat-flow transition, divisor inequalities, and Möbius growth translate RH into very different observables, yet remote counterexamples and tiny margins make finite confirmation structurally insufficient.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1803775934_v2_u06",
+          "openalex_w1803775934_v2_u07",
+          "openalex_w1803775934_v2_u17",
+          "openalex_w1803775934_v2_u24"
+        ],
+        "proposed_limit": "Several numerical records and bounds are historical to the source and should not be reported as current.",
+        "source_id": "openalex_w1803775934",
+        "synthesis_id": "riemann_v2_within_291986b365f5d3a50b1d0d7f",
+        "title": "Equivalent criteria expose different failure witnesses but remain globally hard"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the source's 'barely true' interpretation as a statement about the then-known lower bound, not a timeless numerical record.",
+          "line_end": 624,
+          "line_start": 566,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Fourier-transform definitions and constants are legible; exact numerical bound is historically dated.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Pairs the von Koch/Schoenfeld prime-error equivalence with the de Bruijn-Newman deformation, where a monotone real-zero property compresses RH into the sign of one transition constant.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH appears both as a prime-counting error threshold and as the zero time of a real-zero heat flow",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u06.txt",
+          "unit_bytes": 3658,
+          "unit_id": "openalex_w1803775934_v2_u06",
+          "unit_sha256": "1b9b2970ae76cea930647b52e5444d6c5570ea530c7266f08158abd986057313",
+          "unit_type": "equivalent-criteria comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Equivalent criteria relocate the same universal claim into different observables: arithmetic error size versus stability under a heat-like deformation. The deformation turns infinitely many location conditions into one transition parameter, without making its sign easy to prove.",
+            "nonparaphrase_operation": "The explicit-formula error bridge connects zero real parts to pi(x)-Li(x); the Fourier kernel and lambda deformation bridge zeta-zero geometry to a real-rootedness flow.",
+            "quality_reason": "The span states the prime-error equivalence, defines the de Bruijn-Newman deformation, gives monotonic real-rootedness and a transition constant, and identifies RH with Lambda<=0. No material imported theorem is asserted; the historical numerical lower bound is not treated as proof. Low: the compression language is tied to the explicit monotone-threshold theorem rather than generic rhetoric.",
+            "source_support": "The source states the von Koch/Schoenfeld equivalence between RH and a prime-counting error bound. It defines a Fourier-transform family H(z,lambda), states monotonic persistence of real zeros above a threshold Lambda, and identifies RH with Lambda<=0.",
+            "speculation_status": "A narrow numerical lower bound on Lambda is not a proof of its sign. The source's 'barely true' language reflects the then-known bound, not a timeless mathematical conclusion. Equivalence and monotonic-threshold roles are readable, but constants and the historical numerical estimate should be checked and dated before exact reuse. Viewing the two criteria as relocating RH into an arithmetic error threshold and a deformation threshold is faithful; noting that one parameter does not make the sign easy is reasonable. Constants, transform normalization, and the dated Lambda estimate require verification before exact citation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The small observed margins illustrate sensitivity but do not constitute evidence of likely failure.",
+          "line_end": 677,
+          "line_start": 625,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Some integral typography is damaged; equivalence status and divisor inequalities are readable, exact kernels need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Places Volchkov-type integral criteria beside Lagarias and Robin inequalities, showing that equivalent statements can expose either global analytic cancellation or a single integer counterexample while remaining computationally delicate.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integral equalities and divisor-sum inequalities encode RH with very different falsification interfaces",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u07.txt",
+          "unit_bytes": 2806,
+          "unit_id": "openalex_w1803775934_v2_u07",
+          "unit_sha256": "be68e289c5ac264487479faf50e914765c5b89ede2f3a4e9dc50ceaf100dcf3e",
+          "unit_type": "criterion survey",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Logical equivalence does not mean practical equivalence. Each criterion preserves truth value while exposing different structure, numerical sensitivity, and falsification interfaces.",
+            "nonparaphrase_operation": "Weighted integrals compress global behavior of log|zeta|; divisor sums and harmonic numbers translate RH into discrete inequalities over integers.",
+            "quality_reason": "The source states integral criteria and the Lagarias and Robin divisor inequalities, including that one violating integer refutes RH and that huge-scale verification is difficult. No material unsupported generalization is made; small margins are correctly not treated as predictive. Low: the analysis distinguishes global integral control from a discrete counterexample witness.",
+            "source_support": "The span states integral equalities equivalent to RH and the Lagarias and Robin divisor-sum inequalities. For the latter, a single violating integer would refute RH, though checking huge candidates with adequate accuracy can be difficult.",
+            "speculation_status": "Small observed margins do not predict a counterexample, and finite verification cannot establish a universal inequality. The integral kernels are damaged in extraction and cannot safely be reconstructed from context. The equivalence status and divisor inequalities are clear; exact integral formulas require scan verification. Comparing their falsification interfaces and saying logical equivalence need not mean practical equivalence is a substantive, source-grounded interpretation. The integral kernels are damaged and must not be reconstructed from memory; divisor inequalities are more readable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The derivation is included so the distinction between a failed sufficient conjecture and RH itself is explicit.",
+          "line_end": 1162,
+          "line_start": 1111,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The summation-by-parts display has OCR compression but the analytic continuation argument is recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Interprets Möbius signs as walk increments, derives boundedness of 1/zeta to the right of one-half from the Mertens bound, records its computational disproof, and states the weaker Littlewood equivalence.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Random-walk intuition motivates Mertens, but the strong bound fails while an epsilon-weakened form remains equivalent to RH",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u17.txt",
+          "unit_bytes": 3199,
+          "unit_id": "openalex_w1803775934_v2_u17",
+          "unit_sha256": "1a470d19df2b5da49d5ed09760775727a8ef21c8f88e6d54171a1a687e6c1de4",
+          "unit_type": "failed sufficient condition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The partial-sum representation converts cancellation in Möbius values into analytic nonvanishing. The example separates the robust exponent threshold from an over-sharp constant-level heuristic.",
+            "nonparaphrase_operation": "Mertens partial sums bridge local Möbius signs to the Dirichlet series for 1/ζ; integration by parts transports growth bounds into a zero-free region.",
+            "quality_reason": "The source presents the random-walk heuristic, the summation-by-parts bridge from Mertens growth to 1/zeta, the disproof of the sharp square-root bound, and the epsilon-weakened RH equivalence. No material unsupported probability claim is adopted; the source's 'probability 1' remark is appropriately omitted. Low: the analysis identifies exactly which heuristic prediction fails and which weakened statement survives.",
+            "source_support": "The source treats nonzero Möbius values as signed walk increments, defines M(x), and uses summation by parts to show that |M(x)|<sqrt(x) would bound 1/ζ(s) to the right of one-half. It records the disproof of that strong bound and Littlewood's equivalence M(x)=O(x^{1/2+epsilon}) with RH.",
+            "speculation_status": "The simple square-root inequality is false, so random-walk language is not a proof and its strongest prediction cannot be used as a criterion. The epsilon-weakened statement has a different logical status. The analytic-continuation argument is recoverable, but the OCR-compressed summation-by-parts display should be scan-checked. Distinguishing the exponent threshold from the false constant-level prediction is a valuable, source-grounded counterfactual lesson. The summation-by-parts display is compressed, and the source's probabilistic language is heuristic rather than rigorous independence."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The numerical bounds are source-era estimates; the reusable content is the evidence warning.",
+          "line_end": 1361,
+          "line_start": 1324,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant with large-exponent OCR layout risk.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the eventual sign change of pi-Li and the false Mertens conjecture to show why enormous verified ranges cannot exclude a remote off-line zeta zero.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite confirmation can coexist with remote counterexamples",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u24.txt",
+          "unit_bytes": 3170,
+          "unit_id": "openalex_w1803775934_v2_u24",
+          "unit_sha256": "a6f3c087c868d3cde160c53166d34aa95ad90f1e91600266dafb62d03e6b8b24",
+          "unit_type": "epistemic counterexample",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u24.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite verification samples an initial segment, whereas the claims concern unbounded behavior. Nearby true statements and global oscillation mechanisms can make early evidence systematically misleading.",
+            "nonparaphrase_operation": "Skewes-type bounds and Mertens partial sums serve as counterexample witnesses separating finite evidence from universal quantification.",
+            "quality_reason": "The source uses Littlewood's sign changes and the false Mertens bound to show that extensive initial agreement can coexist with remote counterexamples. No material inference that RH is false is made; all enormous numerical bounds are kept historical. Low: the epistemic warning is supported by two concrete number-theoretic mechanisms rather than generic skepticism about computation.",
+            "source_support": "The source uses Littlewood's theorem that π(x)-Li(x) changes sign infinitely often and the disproof of the Mertens conjecture to contrast long numerical agreement with remote counterexamples. Historical upper bounds illustrate how inaccessible a first failure can be.",
+            "speculation_status": "The examples do not show RH is false; they only block an inference from large verified ranges to universality. The reported numerical bounds are source-era values. The reusable logical warning is clear; large exponents suffer OCR layout risk and should not be quoted exactly without the scan. The finite-prefix versus universal-quantifier distinction is the correct reusable lesson. Large nested exponents are OCR-fragile and must not be quoted exactly without the scan."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "GUE universality simultaneously explains local zero repulsion and supplies universal moment constants when combined with zeta's arithmetic factor.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1803775934_v2_u09",
+          "openalex_w1803775934_v2_u11"
+        ],
+        "proposed_limit": "Both transfers model critical-line behavior and do not exclude zeros off the line.",
+        "source_id": "openalex_w1803775934",
+        "synthesis_id": "riemann_v2_within_8de212bd1589693b3963caf4",
+        "title": "Random-matrix input is predictive for moments but not independently validating for RH"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Extends the old v1 span through the model construction and time-reversal conclusion needed to make the historical comparison coherent.",
+          "line_end": 835,
+          "line_start": 708,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The pair-correlation and spacing displays are formula-dependent, while the universality comparison is clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects zero repulsion to Hermitian random-matrix eigenvalue repulsion, defines unfolding, distinguishes symmetry universality classes, and reports how high-zero computations support the GUE rather than Poisson/GOE/GSE model.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Montgomery pair correlation and GUE universality constrain the hidden spectral system",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u09.txt",
+          "unit_bytes": 8368,
+          "unit_id": "openalex_w1803775934_v2_u09",
+          "unit_sha256": "989618a71e087a56020f69b4af8ec655c52d6e552f5f4e242038d2300a644f3e",
+          "unit_type": "statistical transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Unfolding removes the deterministic counting trend to expose universal local fluctuations. The match transfers constraints—level repulsion, chaotic behavior, and broken time reversal—to a candidate spectral model without identifying a unique operator.",
+            "nonparaphrase_operation": "Normalized spacings and pair correlation bridge zeta zeros to random-matrix eigenvalues; universality classes connect statistical laws to Hamiltonian symmetries.",
+            "quality_reason": "The span states pair correlation, unfolding, GUE comparison, numerical agreement, level repulsion, and the source's time-reversal-class conclusion. No material unsupported conclusion is presented; the analysis expressly denies that statistics construct an operator or prove RH. Low: the gain from unfolding and the limit of universality-class transfer are both specified.",
+            "source_support": "The source states Montgomery's pair-correlation prediction under RH, explains unfolding of zero gaps, compares the resulting statistics with random Hermitian matrices, and reports numerical agreement with GUE rather than Poisson, GOE, or GSE behavior.",
+            "speculation_status": "Statistical agreement neither proves RH nor constructs the Hilbert–Pólya operator. Pair-correlation displays and normalizations are formula-sensitive, and finite high-zero computations test only selected ranges. The comparison and symmetry conclusion are prose-supported; exact formulas and claimed convergence rates should be scan-checked. Using local statistics to constrain rather than identify a hypothetical spectral model is a careful and useful inference. Spacing displays are formula-sensitive, one OCR exponent is suspect, and finite numerical samples cover selected ranges only."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The result applied to zeta is a modeled prediction, not a proof of the zeta asymptotics.",
+          "line_end": 943,
+          "line_start": 872,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moment constants and Euler products are display-heavy but identifiable; scan-check exact factors.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Moves from known second and fourth moments to the Keating-Snaith GUE characteristic-polynomial theorem and shows how its universal factor combines with an arithmetic Euler product to predict all fixed moments.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Characteristic-polynomial moments supply the missing constants in zeta moment conjectures",
+          "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u11.txt",
+          "unit_bytes": 3747,
+          "unit_id": "openalex_w1803775934_v2_u11",
+          "unit_sha256": "a0ce977d331fbc5c07c5c34c844a987ae0ea8ddf0fd4e5694ef1a529559e5e52",
+          "unit_type": "random-matrix prediction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The prediction decomposes moment constants into universal spectral statistics and problem-specific prime arithmetic. Agreement at known low moments calibrates the model but does not prove its higher-moment transfer.",
+            "nonparaphrase_operation": "Characteristic polynomials model zeta values; GUE supplies f_k, and the Euler product a(k) restores local arithmetic factors absent from the random-matrix ensemble.",
+            "quality_reason": "The source reviews known low moments, conjectured higher moments, a random-matrix moment theorem, and the modeled zeta constant as f_k times the arithmetic product a(k). No material unsupported transfer is endorsed; application to zeta is explicitly called conjectural. Low: the interpretation predicts exactly which factor each representation supplies.",
+            "source_support": "After recalling known second and fourth zeta moments and conjectured sixth and eighth moments, the source states the Keating–Snaith characteristic-polynomial moment result and the modeled zeta formula with a Barnes-G universal factor f_k multiplied by an arithmetic Euler product a(k).",
+            "speculation_status": "Applying the random-matrix theorem to zeta is conjectural. It predicts asymptotics but supplies neither a proof nor uniformity outside the stated fixed-moment setting. The factorization of roles is clear, but exact gamma, Barnes-G, and Euler-product factors are display-heavy and require scan verification. Decomposing the prediction into a universal random-matrix factor and prime-specific arithmetic factor is precise and source-supported. Gamma, Barnes-G, and Euler-product normalizations are display-heavy and require the scan."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783"
+      }
+    }
+  ]
+}

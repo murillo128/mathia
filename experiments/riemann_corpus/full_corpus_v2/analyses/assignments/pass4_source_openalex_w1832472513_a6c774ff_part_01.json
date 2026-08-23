@@ -1,0 +1,165 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1832472513_a6c774ff_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1832472513",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supports the earlier factorization choice but is a local algebraic constraint, not a proof that the selected phase branch captures all zeros.",
+      "line_end": 1198,
+      "line_start": 1193,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy endnote with degraded primes and inequalities; exact derivation requires PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Endnote [32] checks a generalized coefficient in the symmetric phase combination and reports that the real-imaginary compatibility condition leaves only the symmetric choice.",
+      "source_id": "openalex_w1832472513",
+      "source_normalized_sha256": "7fac14b7ea910cca76f1af5e3e888c7db965e879c64124741c991bc68d4ffc21",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Alternative symmetric phase combinations are constrained",
+      "unit_artifact_relpath": "depth/units/openalex_w1832472513_u23.txt",
+      "unit_bytes": 569,
+      "unit_id": "openalex_w1832472513_u23",
+      "unit_sha256": "7472147b0fb7f70392ad84de2fc423347180db55418256f3d66b0a31471dc5df",
+      "unit_type": "technical-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1832472513_u23.txt",
+      "source": {
+        "source_id": "openalex_w1832472513",
+        "title": "Statistical and other properties of Riemann zeros based on an explicit equation for the $n$-th zero on the critical line",
+        "authors": [
+          "Guilherme França",
+          "André LeClair"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1185,
+          "line_end": 1192,
+          "text": "\n                                               25\n\n<!-- source-page: 26 -->\n\n[30] A. M. Odlyzko, On the Distribution of Spacings Between Zeros of the Zeta Function, Math.\n    of Computation 177 (1987) 273.\n[31] G. França and A. LeClair, On the zeros of L-functions, arXiv:1309.7019 [math.NT].\n",
+          "sha256": "b016d961a3ad3b14f122686c6068e60a41f1c463abd101fd8806506358b93128"
+        },
+        "after": {
+          "line_start": 1199,
+          "line_end": 1206,
+          "text": "[33] Some care must be taken in numerically evaluating Li(xρ ) since Li has a branch point. It is\n                                                         R∞\n     more properly defined as Ei(ρ log x) where Ei(z) = − −z dt e−t /t is the exponential integral\n    function.\n[34] The Mathematica notebook we used to carry out these computations has only a few dozen\n    lines of code and is available on the arXiv in math.NT as an auxiliary file to this submission.\n[35] Computing this number to 500 digit accuracy took a few minutes on a standard 8 GB RAM\n    laptop using Mathematica. It only takes a few seconds to obtain 100 digit accuracy.\n",
+          "sha256": "afc8a500adbfe5ee3ce38ac23b80b8c59684bf94025c9a78d3ada3b7d2295bb2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ab369b4ca7a155972c2c388b520bdd0daae8e3568cd522e0d840fdfd0d5a7ee1",
+        "dossier_sha256": "3690403ee361cdbf0101592cc98493086a391b450ec12f43a53e56ac419a6f2c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "References and technical endnotes",
+            "line_end": 1211,
+            "line_start": 1121,
+            "mathematical_role": "Mostly bibliography, with two usable qualifications on symmetric phase combinations and branch-aware evaluation of the logarithmic integral."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1198,
+          "line_start": 1193,
+          "title": "Alternative symmetric phase combinations are constrained",
+          "unit_id": "openalex_w1832472513_u23",
+          "unit_type": "technical-obstruction",
+          "why_material": "Endnote [32] checks a generalized coefficient in the symmetric phase combination and reports that the real-imaginary compatibility condition leaves only the symmetric choice."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This supports the earlier factorization choice but is a local algebraic constraint, not a proof that the selected phase branch captures all zeros.",
+          "representation_dependency": "Formula-heavy endnote with degraded primes and inequalities; exact derivation requires PDF verification.",
+          "unit_id": "openalex_w1832472513_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1097,
+            "line_start": 1067,
+            "title": "The source's final conditional claim and proof disclaimer",
+            "unit_id": "openalex_w1832472513_u22",
+            "unit_type": "epistemic-limitation",
+            "why_material": "Concisely states the claimed chain from exact phase equation through continuity and uniqueness to counting saturation, while explicitly acknowledging that the approach is not a rigorous proof and separating numerical support from proof."
+          },
+          {
+            "line_end": 1202,
+            "line_start": 1199,
+            "title": "Branch-aware evaluation of the logarithmic integral",
+            "unit_id": "openalex_w1832472513_u24",
+            "unit_type": "computational-caveat",
+            "why_material": "Warns that numerical evaluation of Li(x^rho) crosses a branch-sensitive complex function and recommends the exponential-integral representation."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1832472513_u23",
+        "spontaneous": {
+          "unit_id": "openalex_w1832472513_u23",
+          "spontaneous_reading": "A generalized coefficient in the symmetric phase combination is constrained by simultaneous real and imaginary cancellation, making the equal-weight choice structurally special within the stated family."
+        },
+        "directed": {
+          "unit_id": "openalex_w1832472513_u23",
+          "source_grounded_mathematics": "For B=exp(i theta)+b exp(-i theta-prime), the endnote sets real and imaginary parts to zero, combines the equations to obtain cos(theta+theta-prime)=-(b+1/b)/2, and concludes that only b=1 admits solutions under its coefficient assumptions.",
+          "conceptual_reading": "Compatibility of two real constraints can eliminate apparently free representation choices and single out the symmetric normalization.",
+          "representation_or_bridge": "Separating B=0 into real and imaginary equations bridges complex cancellation to a scalar feasibility bound.",
+          "boundary_or_failure": "This is a local algebraic constraint on one coefficient family, not evidence that the chosen phase branch captures all zeta zeros; the stated inequality also depends on an unstated domain for b in this narrow span.",
+          "uncertainty": "Primes, inequalities, and coefficient notation are extraction-damaged, so the exact derivation and assumptions on b require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1832472513_u23",
+        "critic_decision": "revise",
+        "supported": [
+          "The endnote explicitly separates B=0 into real and imaginary equations and reports cos(theta+theta-prime)=-(b+1/b)/2.",
+          "The candidate correctly says this local coefficient calculation does not establish completeness of the chosen phase branch.",
+          "It notices that the conclusion depends on an unstated domain for b."
+        ],
+        "inference": [
+          "A feasibility bound can constrain coefficient choices once a domain such as positive real b is supplied."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that b=1 is structurally singled out within the stated family is too broad: the span says only 'some constant b' but uses b+1/b>1, which is not valid for arbitrary real or complex b; for example b=-1 is not excluded by that inequality and makes the displayed cosine right-hand side equal to 1."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Prime marks and coefficient notation are damaged, so the exact algebra still requires PDF verification."
+        ],
+        "missed_mechanism": [
+          "The admissible domain and normalization of b must be stated before the scalar feasibility argument supports uniqueness of b=1."
+        ],
+        "revision_instructions": [
+          "Condition the conclusion explicitly on a verified admissible domain for b, such as positive real b if that is what the PDF establishes; otherwise report only the displayed compatibility equation and say the packet does not justify uniqueness of b=1."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "23b96db2a78ac8eb472e10cc6b316404bd83d0ba6459f0752244b717718e576a"
+}

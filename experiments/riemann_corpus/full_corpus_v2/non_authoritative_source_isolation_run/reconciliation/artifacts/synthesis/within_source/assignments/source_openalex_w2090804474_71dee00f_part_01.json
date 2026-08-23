@@ -1,0 +1,475 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2090804474",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2090804474_71dee00f_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Increasing X transfers explanatory work from nearby zeros to primes, while the prime and zero moment factors carry reciprocal X-dependence that cancels in the zeta moment.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2090804474_v2_u02",
+          "openalex_w2090804474_v2_u03",
+          "openalex_w2090804474_v2_u06",
+          "openalex_w2090804474_v2_u07"
+        ],
+        "proposed_limit": "Moment splitting is conjectural in general and proved here only for k=1 and k=2 in the stated range.",
+        "source_id": "openalex_w2090804474",
+        "synthesis_id": "riemann_v2_within_19ec3eb1f2fcf9481ce2f4b3",
+        "title": "The cutoff is a movable interface between arithmetic and spectral information"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the unconditional theorem, the smoothed-prime variant, the RH-based local interpretation, and the prime-zero tradeoff.",
+          "line_end": 185,
+          "line_start": 127,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependency; exact error terms, smoothing kernel, and branch conventions should be checked against the retained PDF before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 1 represents zeta as a partial Euler product times a smoothed partial Hadamard product and explains how the parameter X trades prime information against the number of local zeros while requiring an intermediate regime.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A smoothed explicit formula splits zeta between short primes and nearby zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u02.txt",
+          "unit_bytes": 4240,
+          "unit_id": "openalex_w2090804474_v2_u02",
+          "unit_sha256": "ebe60a8cb5f2bed57f4b4d87cdd49367fb6147472617fbcb1e48a65220bc4211",
+          "unit_type": "hybrid-factorization-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a tunable dual representation: X moves information between arithmetic and spectral factors while their product preserves zeta. The cutoff is a gauge-like choice whose cancellation becomes a model check.",
+            "nonparaphrase_operation": "A smoothed explicit formula is the bridge. The exponential integral localizes zeros, while the von Mangoldt sum approximates a finite Euler product.",
+            "quality_reason": "The unconditional theorem, definitions of P_X and Z_X, explicit errors, and the RH-conditional local-zero interpretation are all in the span. The source explicitly describes X as trading prime information against the number of nearby zeros and requires an intermediate regime. The 'gauge-like choice' phrase is an analogy, not source terminology, and should not imply exact invariance because the factorization has errors. The rough finite-zero product and localization claim use RH and asymptotics of the smoothing kernel, not the unconditional theorem alone. The analysis is specific about the two factors and the error-sensitive range; the gauge metaphor is the only notable style risk.",
+            "source_support": "The unconditional theorem writes ζ(s)=P_X(s)Z_X(s) times explicit errors for σ≥0 and |t|≥2, with P_X an exponential sum over Λ(n) up to X and Z_X a smoothed exponential over nontrivial zeros. Under RH on the critical line, Z_X is effectively a product over zeros within distance about 1/log X, and increasing X trades fewer zeros for more primes.",
+            "speculation_status": "The rough product interpretation invokes RH, and the theorem's error must be small relative to the main product. Taking X too small or too large defeats the intended two-factor approximation. The theorem is stated as unconditional, whereas the local-zero explanation is conditional and heuristic. Kernel, branches, and exact errors require PDF verification. Calling X a tunable dual-representation parameter is a reasonable conceptual compression of the source's tradeoff. Kernel, branch conventions, and exact errors need PDF verification. The span contains both theorem and conditional explanatory passage, so their statuses can be separated reliably."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the X-range assumptions and the observation that all X-dependence must cancel in the combined moment.",
+          "line_end": 276,
+          "line_start": 191,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact asymptotic constants and parameter ranges are display-dependent but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The splitting conjecture, rigorous prime-factor moment, random-matrix zero-factor conjecture, and proved k=1,2 calibration form a complete causal test of whether the hybrid representation reproduces zeta moments without ad hoc arithmetic insertion.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Moment splitting makes arithmetic and random-matrix constants cancel their shared cutoff",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u03.txt",
+          "unit_bytes": 5849,
+          "unit_id": "openalex_w2090804474_v2_u03",
+          "unit_sha256": "85d2afd3b5bdf60070b81b4ff4d88b61467116552881fe32e2b7b37b61b5d7a5",
+          "unit_type": "moment-splitting-program-and-calibration",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The hybrid model is overdetermined: each component has independently prescribed asymptotics, and cutoff cancellation is a necessary compatibility condition. Low moments serve as causal calibration of the splitting mechanism.",
+            "nonparaphrase_operation": "The bridge is moment factorization between P_X and Z_X, with a(k) carried by primes and the Barnes-G factor carried by zero statistics.",
+            "quality_reason": "The splitting conjecture, rigorous prime-factor theorem, random-matrix zero-factor conjecture, and cancellation of their X-dependent powers are directly in the span. Theorem 3 and its corollary explicitly establish the k=1 and k=2 calibration in the stated ranges. Calling low moments 'causal calibration' is interpretive language; the theorems establish asymptotics, not causal identification in an experimental sense. General-k independence and the Z_X random-matrix transfer remain conjectural. The output identifies the overdetermined factor-by-factor test rather than merely restating final constants.",
+            "source_support": "Conjecture 2 splits the zeta moment into the product of P_X and Z_X moments for X up to a stated polylogarithmic range. Theorem 2 evaluates the prime-factor moment, Conjecture 3 predicts the zero-factor moment from random matrices with scale log T/(e^γ log X), and their X-dependent factors cancel to recover Keating-Snaith. Theorem 3 and its corollary establish the relevant statements for k=1 and 2.",
+            "speculation_status": "Independence of the two factors is conjectural for general k, as is the random-matrix estimate for Z_X. The allowed X range is limited and the source expects but does not establish a larger one. The k=1,2 calibration is proved within the source's stated ranges; general k remains conjectural. Exact uniformity assumptions are display-dependent. Viewing cutoff cancellation as an internal conservation/compatibility check is a reasonable inference from the source's statement that all X-dependence must cancel. Exact X ranges and uniformity assumptions are display-dependent. The unit supplies full statements needed to separate theorems from conjectures."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Lemmas 3 and 4 because their combination explains both the admissible polynomial length and the critical-line logarithmic factor.",
+          "line_end": 840,
+          "line_start": 561,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy but semantically recoverable; exact uniformity exponents and Euler factors need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof truncates the tailored Euler product to a short smooth-number Dirichlet polynomial, controls the tail from the allowed X-range, applies Montgomery-Vaughan mean-square orthogonality, and separates the arithmetic factor from the universal Mertens/exponential-integral scale.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            10,
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Smooth-number truncation and mean-square orthogonality reduce prime moments to an Euler product",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u06.txt",
+          "unit_bytes": 16771,
+          "unit_id": "openalex_w2090804474_v2_u06",
+          "unit_sha256": "9e7c600d78a8bda2d3597483079ebacc091d403899050718db7ff66c4dedd9f6",
+          "unit_type": "prime-factor-moment-evaluation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Support structure converts a global analytic mean into local multiplicative data. The factorization distinguishes source-specific arithmetic from a universal density/cutoff contribution.",
+            "nonparaphrase_operation": "The bridge objects are α_k, the short smooth-number polynomial, its diagonal coefficient norm, and the resulting Euler product.",
+            "quality_reason": "The proof expands the corrected product in smooth-number coefficients, truncates it to a short polynomial, bounds the tail using the X range, and applies Montgomery-Vaughan mean-square orthogonality. It extends the diagonal coefficient sum to an Euler product and separates a(k,sigma) from F_X, using Mertens or the prime number theorem. The label 'universal cutoff contribution' is interpretive and should be limited to the explicit F_X factor in this family. The method depends on fixed real k and the stated polylogarithmic X range; it is not a general smooth-number orthogonality theorem. The two compressions are concrete and source-specific, not generic claims about support and factorization.",
+            "source_support": "The proof expands P_X^*(s)^k with coefficients α_k supported on X-smooth numbers, bounds the tail beyond T^θ using the allowed X range, and applies Montgomery-Vaughan mean-square orthogonality to the truncation. Extending the coefficient-square sum back to all smooth numbers gives an Euler product; local comparisons isolate a(k,σ), while Mertens and the prime number theorem evaluate the remaining product as F_X(k,σ), including (e^γ log X)^{k²} on σ=1/2.",
+            "speculation_status": "The tail estimate requires X to grow only within the stated polylogarithmic range and k to be fixed real. Mean-square orthogonality works because the polynomial was first made short. Lemmas 3 and 4 are proved in the source, but exact uniformity exponents and local factors are formula-sensitive. Describing support as the resource that converts the analytic mean into local multiplicative data is a reasonable reading of the proof sequence. Uniformity exponents and local factors require PDF verification. Combining Lemmas 3 and 4 in one unit preserves the complete factor-moment mechanism."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the periodicization error and the interpretation of matrix size through rescaled eigenangle density.",
+          "line_end": 920,
+          "line_start": 843,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The kernel definition and effective-dimension constant are display-dependent; qualitative localization is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Decay of the cosine-integral kernel localizes the statistic to nearby zeros, periodicization makes it compatible with eigenangles, and mean-density matching explains why the hybrid zero factor behaves like a smaller characteristic polynomial.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The smoothed zero factor is a local statistic with effective matrix size log T divided by e-gamma log X",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u07.txt",
+          "unit_bytes": 5018,
+          "unit_id": "openalex_w2090804474_v2_u07",
+          "unit_sha256": "ec7070a55b6782b5e5933e3ca432416186bc18afbe355215b51b7afa75d1b278",
+          "unit_type": "zeros-to-random-matrix-localization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Under RH, the cosine-integral weighting turns the zero-factor moment into a statistic concentrated on ordinates near t. Periodicization gains compatibility with unitary eigenangles while the nonzero images alter the symbol only by O_k(1/log X). The subsequent zero-to-eigenangle substitution is nevertheless heuristic: matching mean spacing selects the effective dimension M approximately log T/(e^gamma log X), whereas a conjectural match of local correlations is the additional bridge needed to transfer the statistic. Thus rescaling fixes the local density parameter but does not by itself prove a random-matrix model for zeta zeros or preserve global arithmetic information.",
+            "nonparaphrase_operation": "Separates two logically different roles that the source's heuristic compresses: mean-density matching determines the effective matrix size, while local-correlation matching supplies the unproved distributional transfer; it also identifies periodicization as a controlled representation change rather than the justification for that transfer.",
+            "quality_reason": "Accepted after repair because the unit supports a concrete localization-periodization-density mechanism and the interpretation now preserves RH, normalization sensitivity, and the distinct conjectural local-statistics input without upgrading the heuristic to a proved universality claim.",
+            "source_support": "Equation (19) and the following prose attribute locality to decay as |gamma_n-t| grows. Equations (20)-(21) periodicize the test function and state that j != 0 images contribute at most a k-dependent inverse-log-X term. Theorem 4 and its remark identify the same asymptotic as a characteristic polynomial of dimension M=N/(e^gamma log X), while the source explicitly introduces replacement by Haar-unitary eigenangles as a model supported by evidence rather than as a theorem about zeta zeros.",
+            "speculation_status": "The localization statement, periodic-image estimate as invoked from Lemma 6, and unitary-matrix asymptotic are source-grounded (with RH assumed for the zeta-side rewrite). The replacement of zero ordinates by eigenangles and the required local-correlation correspondence are conjectural; mean-spacing agreement alone is not sufficient."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_51fd6c6b1390aa508faeca1bc1b4678508dfe10a5fec01f9286374065de070ec",
+        "dossier_sha256": "293d26d7b86c0acb9b7cfb363a2f97e542da87d849f1ca5834cfbd9c9fe13013"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Smoothing localizes the Hadamard factor, rescaling changes its mean zero density, and Fisher-Hartwig asymptotics then reproduce the same universal constant as a characteristic polynomial of the corresponding effective dimension.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2090804474_v2_u07",
+          "openalex_w2090804474_v2_u08",
+          "openalex_w2090804474_v2_u09"
+        ],
+        "proposed_limit": "The transfer from zeta zeros to Haar-unitary eigenangles assumes RH and the conjectural local-statistics correspondence.",
+        "source_id": "openalex_w2090804474",
+        "synthesis_id": "riemann_v2_within_182100b9fe3a7a705f1e4942",
+        "title": "Local zero density is the bridge from explicit formulas to random matrices"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the periodicization error and the interpretation of matrix size through rescaled eigenangle density.",
+          "line_end": 920,
+          "line_start": 843,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The kernel definition and effective-dimension constant are display-dependent; qualitative localization is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Decay of the cosine-integral kernel localizes the statistic to nearby zeros, periodicization makes it compatible with eigenangles, and mean-density matching explains why the hybrid zero factor behaves like a smaller characteristic polynomial.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The smoothed zero factor is a local statistic with effective matrix size log T divided by e-gamma log X",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u07.txt",
+          "unit_bytes": 5018,
+          "unit_id": "openalex_w2090804474_v2_u07",
+          "unit_sha256": "ec7070a55b6782b5e5933e3ca432416186bc18afbe355215b51b7afa75d1b278",
+          "unit_type": "zeros-to-random-matrix-localization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Under RH, the cosine-integral weighting turns the zero-factor moment into a statistic concentrated on ordinates near t. Periodicization gains compatibility with unitary eigenangles while the nonzero images alter the symbol only by O_k(1/log X). The subsequent zero-to-eigenangle substitution is nevertheless heuristic: matching mean spacing selects the effective dimension M approximately log T/(e^gamma log X), whereas a conjectural match of local correlations is the additional bridge needed to transfer the statistic. Thus rescaling fixes the local density parameter but does not by itself prove a random-matrix model for zeta zeros or preserve global arithmetic information.",
+            "nonparaphrase_operation": "Separates two logically different roles that the source's heuristic compresses: mean-density matching determines the effective matrix size, while local-correlation matching supplies the unproved distributional transfer; it also identifies periodicization as a controlled representation change rather than the justification for that transfer.",
+            "quality_reason": "Accepted after repair because the unit supports a concrete localization-periodization-density mechanism and the interpretation now preserves RH, normalization sensitivity, and the distinct conjectural local-statistics input without upgrading the heuristic to a proved universality claim.",
+            "source_support": "Equation (19) and the following prose attribute locality to decay as |gamma_n-t| grows. Equations (20)-(21) periodicize the test function and state that j != 0 images contribute at most a k-dependent inverse-log-X term. Theorem 4 and its remark identify the same asymptotic as a characteristic polynomial of dimension M=N/(e^gamma log X), while the source explicitly introduces replacement by Haar-unitary eigenangles as a model supported by evidence rather than as a theorem about zeta zeros.",
+            "speculation_status": "The localization statement, periodic-image estimate as invoked from Lemma 6, and unitary-matrix asymptotic are source-grounded (with RH assumed for the zeta-side rewrite). The replacement of zero ordinates by eigenangles and the required local-correlation correspondence are conjectural; mean-spacing agreement alone is not sufficient."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Lemmas 5 and 6 and the density-based comparison with the original characteristic-polynomial model.",
+          "line_end": 1017,
+          "line_start": 922,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High dependence on Toeplitz-symbol, Fourier-coefficient, and Barnes-G normalizations; verify against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Heine's identity converts the matrix expectation to a Toeplitz determinant, the zero at one is factored as a Fisher-Hartwig singularity, and Fourier coefficients plus the regular symbol value produce the Barnes-G constant and cutoff scale.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            14,
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Fisher-Hartwig singularity evaluates the unitary moment of the zero factor",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u08.txt",
+          "unit_bytes": 5752,
+          "unit_id": "openalex_w2090804474_v2_u08",
+          "unit_sha256": "e72258cd56c867782db98fb30329a63321356d8d76bdf927ee78e033edb8468a",
+          "unit_type": "toeplitz-fisher-hartwig-evaluation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The singular behavior carries the universal random-matrix exponent and constant, while the smooth remainder carries the representation-specific cutoff. Separating them makes their roles independently calculable.",
+            "nonparaphrase_operation": "The periodic zero kernel becomes a Toeplitz symbol; Fisher-Hartwig theory bridges its local singularity to determinant asymptotics.",
+            "quality_reason": "Heine's identity, the Toeplitz determinant, factorization of the zero at one into a Fisher-Hartwig singularity, and Basor's asymptotic are directly in the span. The source states the Barnes-G factor and uses the regular symbol's value and Fourier coefficients to obtain the cutoff scale. The theorem evaluates a random-matrix expectation, not a zeta moment; the output correctly separates the later transfer. The source theorem's order of limits/fixed-X condition must not be silently converted into uniform joint X,N asymptotics. The analysis specifies the singular factor and determinant machinery, so it is not just 'representation exposes structure.'",
+            "source_support": "The expected product of φ over Haar-unitary eigenangles equals a Toeplitz determinant. Writing φ(θ)=b(θ)(2-2cos θ)^k isolates the singularity; Basor's Fisher-Hartwig asymptotic gives N^{k²}, a Barnes-G ratio, and a constant determined by b(0) and Fourier coefficients of log b. Lemmas 5 and 6 evaluate those quantities and yield the moment scale (N/(e^γ log X))^{k²} for fixed k>-1/2.",
+            "speculation_status": "The theorem concerns the random-matrix expectation, not zeta itself, and assumes fixed X and k as N grows in the stated theorem. The regularity and nonvanishing of b are essential. The matrix evaluation is source-grounded; transferring it to Z_X remains conjectural. Fourier and Barnes-G normalizations are formula-sensitive. Separating universal singular behavior from the smooth cutoff-dependent remainder is a reasonable interpretation of the explicit symbol factorization. Toeplitz, Fourier, and Barnes-G normalizations are formula-sensitive. The unit ends at the start of the lemma proof but contains all theorem statements needed for this reading."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This supplies the analytic justification behind the random-matrix asymptotic rather than treating periodicization as cosmetic.",
+          "line_end": 1154,
+          "line_start": 1018,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Integral identities and Fourier conventions are formula-sensitive, but cancellation and error roles are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof computes the regular symbol's Fourier coefficients, uses the small-argument cosine-integral expansion to cancel the characteristic-polynomial logarithm, and shows nonzero periodic images contribute only inverse-logarithm error.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fourier analysis cancels the logarithmic singularity and bounds periodic images",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u09.txt",
+          "unit_bytes": 8745,
+          "unit_id": "openalex_w2090804474_v2_u09",
+          "unit_sha256": "ceed6b463b82ee80dd97a925e458f848a83c1d5f2291bd14430694d9cc0ea762",
+          "unit_type": "singularity-cancellation-and-periodization-control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For this specific smoothing function u and Fourier convention, the regular symbol is created by two controlled cancellations. Near theta=0, the j=0 cosine-integral expansion cancels the logarithmic characteristic-polynomial singularity and leaves b(0)=exp(2k(log log X+gamma)) times 1+O_k(1/log X); the j != 0 periodic images contribute uniformly only O(1/log X). Meanwhile the nonzero Fourier coefficients k v(exp(n/log X))/n encode a smoothed transition for n of order log X, not a hard cutoff, and the zeroth coefficient vanishes, so the Szego exponential receives no term linear in N from the mean of log b. Periodization therefore gains Toeplitz compatibility with a quantified loss only for the stated kernel and support assumptions.",
+            "nonparaphrase_operation": "Interprets the calculation as a regularization budget: singularity cancellation fixes the local symbol value, zero average removes an N-linear Szego contribution, and the u-dependent Fourier multiplier provides a smooth spectral transition rather than a sharp truncation.",
+            "quality_reason": "Accepted after repair because it retains both proved cancellations, replaces the misleading sharp-cutoff claim with the u-dependent smoothed transition, and makes the zeroth-coefficient mechanism and representation-specific scope explicit.",
+            "source_support": "The proof of Lemma 5 derives the zero Fourier coefficient as 0 and the positive-n coefficient as k v(exp(n/log X))/n using the cosine-integral identity. The proof of Lemma 6 uses Ci(x)=gamma+log x+O(x^2), unit mass and support of u, and integration by parts plus bounded convergence to obtain the finite b(0) scale and the uniform O(1/log X) contribution of nonzero periodic images.",
+            "speculation_status": "The coefficient, cancellation, and error statements are proved in the displayed lemmas for the stated u, kernel, support, and normalization. Their extension to another smoothing, kernel, or Fourier convention is not established here; exact quantitative reuse remains formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_51fd6c6b1390aa508faeca1bc1b4678508dfe10a5fec01f9286374065de070ec",
+        "dossier_sha256": "293d26d7b86c0acb9b7cfb363a2f97e542da87d849f1ca5834cfbd9c9fe13013"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "After inverse-prime mollification, diagonal multiplicativity gives the predicted main factor, while the hard task is proving structured off-diagonal correlations are smaller.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2090804474_v2_u10",
+          "openalex_w2090804474_v2_u11",
+          "openalex_w2090804474_v2_u12",
+          "openalex_w2090804474_v2_u13"
+        ],
+        "proposed_limit": "The fourth-moment proof relies on a specialized twisted mean-value formula and does not supply a general-k method.",
+        "source_id": "openalex_w2090804474",
+        "synthesis_id": "riemann_v2_within_631d49a5a1d4b3b9e7be2c27",
+        "title": "Low-moment proofs identify where splitting can fail"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes extension from finite truncations to all smooth numbers and the final control of approximation cross terms.",
+          "line_end": 1434,
+          "line_start": 1163,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact truncation exponents and gcd sums are densely displayed and require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The inverse prime factor is truncated to a Möbius-like smooth-number polynomial, a twisted zeta second-moment formula turns the integral into gcd-weighted sums, and multiplicativity evaluates the diagonal as 1 over e-gamma log X.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            18,
+            19,
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A short inverse prime product exposes the second-moment diagonal as a local Euler product",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u10.txt",
+          "unit_bytes": 18324,
+          "unit_id": "openalex_w2090804474_v2_u10",
+          "unit_sha256": "8cfd994e96beee32482a8f1b7d9b416a7ca1f99ae62adfe391023fc52683ff51",
+          "unit_type": "second-moment-splitting-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "An approximate inverse removes the short-prime content from zeta, leaving a residual whose mean is identifiable with the modeled zero factor. The diagonal is not merely selected; its multiplicative structure is explicitly evaluated.",
+            "nonparaphrase_operation": "The bridge is P_X^{*-1}'s Möbius-like smooth coefficients, the twisted second-moment identity, and gcd decomposition into local Euler factors.",
+            "quality_reason": "The span truncates the inverse corrected prime product, applies a twisted zeta second-moment formula, controls errors and tails, and rewrites the diagonal as an Euler product. The local product is explicitly evaluated as the inverse e-gamma log X factor, with cross terms controlled at the end. The proof establishes only k=1 in the stated X range; the output correctly avoids general independence claims. 'Approximate inverse' is accurate, but should not imply pointwise inversion beyond the quantified truncation. The analysis names the twisted moment, gcd weights, and multiplicative diagonal, supplying genuine mechanism.",
+            "source_support": "The source replaces P_X^{-1} by the corrected product and truncates its α_{-1} smooth-number series. A twisted zeta second-moment formula converts the squared integral into finite gcd-weighted sums; error and tail estimates extend these sums to all X-smooth numbers. Euler-product evaluation gives the main factor (e^γ log X)^{-1}, and Cauchy-Schwarz controls the approximation cross terms, yielding log T/(e^γ log X).",
+            "speculation_status": "The proof uses a short truncation and the stated X=O((log T)^{2-ε}) regime. It proves the k=1 case only, not general splitting independence. The conclusion is proved in the source's range. Numerous truncation exponents and gcd sums are formula-dense and need the PDF for exact replication. Interpreting the inverse prime product as removing short-prime content and exposing the residual zero-factor mean is a reasonable reading of the theorem's design. Truncation exponents and gcd sums are dense and formula-sensitive. The long span contains the complete proof chain and avoids importing a missing conclusion."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the coefficient support and the precise role of Gaggero's mean-value formula.",
+          "line_end": 1544,
+          "line_start": 1435,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Severe formula dependency; the decomposition is recoverable, but exact summation constraints need the original PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A short inverse-square prime product is inserted into a twisted fourth-moment formula, which separates the target into T1, T2, and T3 and makes the remaining difficulty explicit rather than hiding it in a generic error term.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The fourth-moment case reduces to one diagonal term and two structured off-diagonal sums",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u11.txt",
+          "unit_bytes": 7993,
+          "unit_id": "openalex_w2090804474_v2_u11",
+          "unit_sha256": "74c49476661964d5ffd9abdc1e4ea6357c4b01a8579ee840e9ad5547d174a0df",
+          "unit_type": "fourth-moment-long-polynomial-reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A difficult integral is reframed as a finite arithmetic accounting problem with a named main component and two explicit correction channels. This prevents off-diagonal difficulty from being hidden in an undifferentiated error.",
+            "nonparaphrase_operation": "The bridge is the α_{-2} Dirichlet polynomial inserted into the twisted fourth-moment identity; cube-free support later makes its local combinatorics finite.",
+            "quality_reason": "The source specifies the alpha_-2 prime and prime-square coefficients, cube-free support, short truncation, and Gaggero's twisted fourth-moment formula. It explicitly decomposes the target into T1, T2, and T3 and has not evaluated them within this unit. Calling T1 'diagonal' is supported by its gcd structure and later use, but its dominance is not yet established here. The source openly glosses over approximation steps by analogy with k=1; the output correctly treats this as a proof burden. The output does more than rename terms by explaining why explicit off diagonals are preferable to a generic error.",
+            "source_support": "The source replaces P_X^{-2} by P_X^{*-2}, truncates its α_{-2} coefficients, and records their prime and prime-square values and cube-free support. Gaggero's twisted fourth-moment formula applied to the short polynomial decomposes the target into T1, containing a δ-weighted gcd diagonal, and two d,u,v constrained sums T2 and T3.\n",
+            "speculation_status": "The formula requires a very short Y=T^θ and the source explicitly glosses over some approximation steps by analogy with k=1. At this point neither T1 nor the off diagonals has yet been evaluated. The reduction is source-grounded, but exact summation constraints and constants are severely formula-sensitive. Treating the decomposition as exposing distinct main and correction channels is a reasonable mechanism-level interpretation. Summation constraints and constants are severely extraction-sensitive. The unit stops exactly after the reduction, so evaluation claims must come only from later units."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The long span preserves the sequence of divisor decompositions needed to see why the global sum factorizes.",
+          "line_end": 1834,
+          "line_start": 1551,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extremely formula-sensitive; use only as a semantic map until all local factors are checked from the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The diagonal gcd sum is reorganized by square-free and square parts, coprimality constraints are absorbed into multiplicative functions, and the resulting prime-by-prime calculation yields the fourth power of the Mertens cutoff factor.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            23,
+            24,
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Cube-free support and nested multiplicativity collapse the fourth-moment diagonal to local factors",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u12.txt",
+          "unit_bytes": 18519,
+          "unit_id": "openalex_w2090804474_v2_u12",
+          "unit_sha256": "a03ba36c673a0d81667e5a13b51c0cf00e7bd8f0d5679d12ba88e5c317d1d86e",
+          "unit_type": "multiplicative-diagonal-factorization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Support restrictions turn combinatorial complexity into local state spaces. Naming intermediate multiplicative transforms is a factorization strategy: each removes one layer of dependence until only Euler factors remain.",
+            "nonparaphrase_operation": "The square-free/square decomposition, functions A–F, and primewise products bridge the gcd diagonal to the Mertens scale.",
+            "quality_reason": "The source uses cube-free support to write gcd variables in square-free/square form, repeatedly resolves coprimality, and defines multiplicative functions A through F. The primewise calculation explicitly yields S1 and then T1 with the fourth power of the Mertens cutoff factor and the stated constant. The analysis correctly limits the result to T1; it does not claim the full fourth moment until T2 and T3 are controlled. The named transforms are proof bookkeeping specific to this coefficient system, not a general canonical factorization. The output is highly mechanism-specific and avoids vague multiplicativity rhetoric.",
+            "source_support": "The source groups T1's sum by g=(m,n), writes cube-free g uniquely as g1 g2², and refines n and m by their gcds with g. After extending smooth sums with negligible error, it introduces multiplicative functions A through F to evaluate nested coprimality sums. The local calculation differs for p≤√X and √X<p≤X but combines to S1∼(π²/6)(e^γ log X)^{-4}, hence T1∼(1/12)(log T/(e^γ log X))^4.\n",
+            "speculation_status": "The argument evaluates only the diagonal T1; the full moment still requires T2 and T3 to be negligible. Several extensions to all smooth numbers are justified by analogy and small error estimates. The final constant and mechanism are stated as proved, but the nested local factors are extremely extraction-sensitive. Describing the finite local state space from cube-free support as the reason nested global dependence becomes multiplicative is a reasonable conceptual compression. The nested local factors are extremely formula-sensitive. The long unit preserves all decompositions needed to support the final diagonal evaluation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the source's explicit observation that T3 follows by the same mechanism as T2.",
+          "line_end": 2247,
+          "line_start": 1835,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The argument is OCR-fragile and formula-dense; exact constants, ranges, and local functions G, H, I require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Two elementary harmonic-sum lemmas feed the structured off-diagonal terms, after which cube-free support forces vanishing for incompatible square parts and Euler-product bounds make T2 and T3 negligible relative to the diagonal.",
+          "source_id": "openalex_w2090804474",
+          "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+          "source_page_markers_inside_unit": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Coprime harmonic sums and local-factor cancellation keep both fourth-moment off diagonals below scale",
+          "unit_artifact_relpath": "depth/units/openalex_w2090804474_v2_u13.txt",
+          "unit_bytes": 27982,
+          "unit_id": "openalex_w2090804474_v2_u13",
+          "unit_sha256": "89d7f47f99f7c74e1e94493a17c4c096e47c49cc3f0bf3a194b2eb7c505afa27",
+          "unit_type": "off-diagonal-control-package",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "With Y=T^epsilon_1 and epsilon_1 restricted to the stated small range, Lemmas 7 and 8 convert the coprime harmonic sums in T2 into logarithmic factors, after which cube-free coefficient support supplies algebraic sparsity: writing (d,P^2)=D1 D2^2 makes S(d) vanish when D2 is incompatible with the small-prime block, while the surviving cases factor through the local functions G, H, and I. The resulting Euler-product estimates give T2 << epsilon_1^2 (log T/log X)^4. The source then asserts, rather than rederives in this span, that an almost identical treatment gives the same bound for T3. Only after these asymptotic estimates are in place is epsilon_1 taken arbitrarily small to make the off-diagonal contribution negligible relative to the diagonal; this is a small epsilon_1-squared multiplier, not a power saving in Y.",
+            "nonparaphrase_operation": "Decomposes off-diagonal control into an analytic stage that supplies the global logarithmic scale and an algebraic stage that kills incompatible local configurations, then isolates the order-of-parameters step that converts an epsilon_1-dependent estimate into negligibility.",
+            "quality_reason": "Accepted after repair because the record replaces the false power-saving description with the displayed bound, distinguishes proved T2 control from the asserted analogous T3 treatment, and retains the necessary order-of-limits and formula-extraction caveats.",
+            "source_support": "Lemmas 7-8 establish the single and double coprime harmonic-sum estimates. Equations (48)-(51) reorganize S(d), prove exact vanishing unless D2 divides P2, and express surviving terms via G and H; equation (52) and the following local-factor bounds yield T2 << epsilon_1^2 (log T/log X)^4. The final paragraph says the treatment of T3 is almost identical and leads to the same bound before epsilon_1 is taken as small as desired.",
+            "speculation_status": "The T2 derivation and its epsilon_1-squared bound are proved in the span. The equal T3 bound is an explicit author assertion by analogy, not an independently displayed derivation here. Exact ranges, constants, and G/H/I formulas remain OCR-sensitive, and the mechanism depends on the specialized cube-free coefficients rather than furnishing a general off-diagonal principle."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_51fd6c6b1390aa508faeca1bc1b4678508dfe10a5fec01f9286374065de070ec",
+        "dossier_sha256": "293d26d7b86c0acb9b7cfb363a2f97e542da87d849f1ca5834cfbd9c9fe13013"
+      }
+    }
+  ]
+}

@@ -1,0 +1,500 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "harper2014_zeta_course_part1",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_harper2014_zeta_course_part1_c31ad953_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Perron inversion fixes the interface; widening the zero-free region changes only how far the contour can move and therefore changes the optimized prime-error scale.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "harper2014_zeta_course_part1_v2_u04",
+          "harper2014_zeta_course_part1_v2_u05",
+          "harper2014_zeta_course_part1_v2_u10",
+          "harper2014_zeta_course_part1_v2_u15"
+        ],
+        "proposed_limit": "The transfer is conditional on matching bounds for zeta'/zeta and does not approach the critical line.",
+        "source_id": "harper2014_zeta_course_part1",
+        "synthesis_id": "riemann_v2_within_a84459486464d3ff6612a055",
+        "title": "Analytic information propagates to prime-counting error through a fixed contour interface"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the half-weight convention at a jump and the smooth-weight improvement remark.",
+          "line_end": 418,
+          "line_start": 273,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Contour orientations and the near-diagonal logarithmic denominator are formula-sensitive but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Residue evaluation of y^s/s constructs an approximate step function; summing it against arbitrary coefficients yields an inversion formula whose error shrinks as the vertical frequency window widens.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A truncated Perron kernel approximately inverts a Dirichlet series with frequency-controlled error",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u04.txt",
+          "unit_bytes": 8637,
+          "unit_id": "harper2014_zeta_course_part1_v2_u04",
+          "unit_sha256": "5d8260df24aeefebe96a623372b2a1ce95db7e455cde1359f9b9b293af2dcbe8",
+          "unit_type": "truncated-transform-inversion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite frequency information cannot sharply resolve a jump; the factor 1/(T|log(x/n)|) quantifies that uncertainty near n=x. The half-weight is the canonical Fourier inversion value at a discontinuity.",
+            "nonparaphrase_operation": "The Perron kernel y^s/s bridges a Dirichlet series to its cumulative coefficients; contour residues implement the step selector and T is the resolution budget.",
+            "quality_reason": "The step kernel, contour cases, half-weight, pointwise error and truncated Perron summation with absolute-convergence justification are explicit. No unsupported smooth-weight theorem is supplied; it is only noted as a boundary. The response grounds Fourier-resolution language in the actual 1/(T|log(x/n)|) error.",
+            "source_support": "Lemma 2.3 compares the vertical integral of y^s/s on Re(s)=c, |Im(s)|<=T, with the step function delta(y), including half-weight at y=1. Residue contours on the appropriate side give errors depending on y^c, T, and |log y|. Applying this pointwise to y=x/n and using absolute convergence yields Lemma 2.4: a truncated Perron formula for partial coefficient sums with an explicit near-diagonal error. Increasing T reduces this truncation error.",
+            "speculation_status": "Interchanging sum and integral needs absolute convergence on Re(s)=c. Terms extremely close to x dominate the truncation error, and sharp cutoffs are less forgiving than the smooth-weight variant mentioned by the source. Contour orientations and the near-diagonal denominator are formula-sensitive but legible. Viewing T as a resolution budget and the near-diagonal denominator as jump uncertainty is a precise reasonable inference. Contour orientation and denominator are legible but formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The text explicitly contrasts direct evaluation on the one-line with the later contour-deformation strategy.",
+          "line_end": 480,
+          "line_start": 436,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact logarithmic powers in the error are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Choosing the line just right of one controls the truncation error and leaves an integral whose poles after continuation will encode the main term and zero contributions.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Perron inversion reduces Psi to a contour integral of the logarithmic derivative",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u05.txt",
+          "unit_bytes": 3422,
+          "unit_id": "harper2014_zeta_course_part1_v2_u05",
+          "unit_sha256": "4d5f2c4d0d2bde0e4436084e9d9ef7ef29427de9931954f55e846b241127d551",
+          "unit_type": "prime-counting-transform-pipeline",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The transform pipeline turns arithmetic summation into singularity accounting. The initial vertical line is selected for coefficient convergence, but analytic continuation is valuable because it permits moving to a representation where pole and zero contributions become explicit.",
+            "nonparaphrase_operation": "Perron's integral is the bridge from -zeta'/zeta to Psi; the factors x^s/s weight singularities into arithmetic-scale contributions.",
+            "quality_reason": "The Perron substitution, explicit truncation error, choice c=1+1/log x and announced continuation/contour strategy are all explicit. The response correctly says the displayed formula alone does not prove PNT. The line-choice and future poles keep the bridge specific.",
+            "source_support": "Applying truncated Perron to Lambda and bounding the coefficient error gives Psi(x) as the integral of -(zeta'/zeta)(s)x^s/s on Re(s)=c plus errors. Taking c=1+1/log x makes x^c comparable to x and reduces the error to O(x log^2(2x)/T). The source contrasts direct estimation near Re(s)=1 with the classical plan: continue zeta leftward, study its zeros, and deform the contour so poles contribute residues.",
+            "speculation_status": "The displayed formula alone does not yield PNT; it needs continuation, zero information, bounds on the deformed contour, and a suitable choice of T. Exact logarithmic powers in the truncation error are formula-dependent. The strategic contrast and parameter choice are clear; exact error terms should be preserved from the source. Calling the pipeline singularity accounting is a faithful conceptual description of the source's stated next step. Exact logarithmic powers are formula-dependent but readable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the later absorption of logarithmic factors into a smaller exponential constant.",
+          "line_end": 1040,
+          "line_start": 926,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense contour displays are extraction-sensitive; the segment-by-segment error budget is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Moving Perron's contour left crosses only the pole at one; bounds on the two horizontal and one vertical segments produce competing errors, and optimizing the height gives the final subexponential decay.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The weak zero-free region yields PNT by balancing shifted-contour decay against truncation",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u10.txt",
+          "unit_bytes": 7213,
+          "unit_id": "harper2014_zeta_course_part1_v2_u10",
+          "unit_sha256": "c25b67b9886553251a41c7459729ba6b278a186c5c44ca0840678a0e1f7a435d",
+          "unit_type": "contour-shift-and-error-balance",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Contour displacement converts zero exclusion into arithmetic decay, while T controls two opposing costs: greater height improves inversion but narrows the available zero-free shift. Optimization selects the scale where neither dominates.",
+            "nonparaphrase_operation": "The rectangular contour is the bridge from analytic geometry to Psi; the pole residue is the main term, and the segment-wise error budget records the cost of avoiding zeros.",
+            "quality_reason": "The rectangular contour, sole pole residue, three segment estimates, combined errors, T choice and absorption of log powers are all explicit. No zero residues or stronger region are silently introduced. The response tracks the exact segment-wise budget, avoiding generic contour prose.",
+            "source_support": "The proof starts from the truncated Perron integral for Psi on Re(s)=1+1/log x. It moves to Re(s)=1-c/log^9(T+2), where Theorem 4.3 guarantees no enclosed zeta zeros, so the only crossed singularity contributes residue x. Bounds for zeta', 1/zeta, x^s, and 1/s control the two horizontal and one vertical segments. Together with Perron truncation they give an error combining x exp(-c log x/log^9(T+2)) and x/T times logarithms. Taking T=exp(log^{1/10}x) and absorbing log powers proves Theorem 4.1.",
+            "speculation_status": "The argument needs uniform logarithmic-derivative bounds on every new segment and no crossed zeros. The final exponent is limited by the weak strip's ninth logarithmic power, not by Perron inversion alone. Dense contour estimates are extraction-sensitive, but the residue, three segment bounds, balancing choice, and absorption step are explicit. Interpreting T as balancing inversion improvement against available shift width is a direct reasonable inference. Dense formulas are extraction-sensitive but the proof architecture is clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Useful as a controlled comparison showing exactly where stronger analytic input changes the arithmetic output.",
+          "line_end": 1450,
+          "line_start": 1395,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact constants are suppressed; the scale transfer is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Repeating the earlier Perron contour proof with a 1/log T shift and the new logarithmic-derivative bound changes the optimization to T=exp(sqrt(log x)), producing the classical error term.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The classical zero-free scale propagates directly to the classical PNT error scale",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u15.txt",
+          "unit_bytes": 3407,
+          "unit_id": "harper2014_zeta_course_part1_v2_u15",
+          "unit_sha256": "04e90a3291e18b154e5ee039ca67e9cc8be1f56116e334d087f51550a4cadaca",
+          "unit_type": "improved-contour-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof is a controlled transfer law: improving zero-free width changes the optimization equation and therefore the arithmetic error scale, while the rest of the contour architecture remains fixed.",
+            "nonparaphrase_operation": "The shifted Perron contour carries the zero-free geometry into prime-counting decay; T is the balancing parameter between horizontal truncation and vertical displacement.",
+            "quality_reason": "The wider contour shift, logarithmic-derivative bounds, combined errors and T=exp(sqrt(log x)) balance are explicit. The response correctly notes that the strip alone is insufficient without Lemma 5.5. The fixed contour architecture and changed optimization equation make the transfer claim concrete.",
+            "source_support": "The truncated Perron contour moves from Re(s)=1+1/log x to Re(s)=1-c/log(T+2), crossing the pole at one and producing main term x. Lemma 5.5 bounds zeta'/zeta by a logarithm on the horizontal and vertical pieces. Their contributions, together with Perron truncation, give x log^2 x times the sum of exp(-c log x/log(T+2)) and exp(-log T). Choosing T=exp(sqrt(log x)) balances the terms and proves Psi(x)=x+O(x exp(-c sqrt(log x))).",
+            "speculation_status": "The conclusion also needs the logarithmic-derivative estimate, not merely the wider strip. Exact constants are suppressed and small-height or near-pole points require the stated auxiliary handling. The scale transfer and balancing choice are clear; constants are intentionally implicit. Calling the argument a scale transfer from zero-free width to PNT error is a faithful conceptual compression. Constants are intentionally implicit but no material formula is lost."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b9e34f30763dcfcde09aee26f1afd5a229a680397241442f65077ccb0f4e4c1d",
+        "dossier_sha256": "1f008d9af1896099c86b26c9c3e2a9020084bb666e844a4b9034699232fee72b"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A positive trigonometric combination constrains logarithmic derivatives to the right of one, while local zero factorization transports that constraint across the boundary and quantifies how close a zero could lie.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "harper2014_zeta_course_part1_v2_u09",
+          "harper2014_zeta_course_part1_v2_u11",
+          "harper2014_zeta_course_part1_v2_u12",
+          "harper2014_zeta_course_part1_v2_u13"
+        ],
+        "proposed_limit": "The resulting classical region is far weaker than RH and depends on the supplied growth bound.",
+        "source_id": "harper2014_zeta_course_part1",
+        "synthesis_id": "riemann_v2_within_2e4c7f4c6bbd35f5efeb505a",
+        "title": "Euler-product positivity becomes zero exclusion only after complex-analytic localization"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the reusable de la Vallée Poussin positivity mechanism.",
+          "line_end": 921,
+          "line_start": 848,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact logarithmic exponents are proof-specific and should be preserved from the displayed formulas.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The identity 3+4 cos(theta)+cos(2 theta)>=0 couples zeta at three heights; pole growth and vertical bounds then force a quantitative lower bound that transfers a short distance left of one.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A nonnegative trigonometric combination of Euler products prevents zeta from becoming too small near one",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u09.txt",
+          "unit_bytes": 4544,
+          "unit_id": "harper2014_zeta_course_part1_v2_u09",
+          "unit_sha256": "e8888db2652868da6c91ed002e5f45d94c32670171b83333e7dda3110af6729c",
+          "unit_type": "positive-trigonometric-zero-free-method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The positive polynomial is a certificate that combines several phases without cancellation. It exports the rigid pole at height zero into nonvanishing information at height t, and local derivative control supplies stability under horizontal perturbation.",
+            "nonparaphrase_operation": "The three-height Euler-product combination is the positivity bridge; zeta' bounds bridge the safe line sigma'>1 to the target point left of one.",
+            "quality_reason": "The three-height Euler-product identity, pole and vertical bounds, horizontal integration of zeta prime, parameter choices and weak strip conclusion are explicit. No range beyond the proved short transfer is claimed. The phase coupling and exact balance keep the conceptual language specific.",
+            "source_support": "For sigma'>1, taking real logarithms of Euler products and using 3+4cos(theta)+cos(2theta)=2(1+cos theta)^2>=0 gives zeta(sigma')^3|zeta(sigma'+it)|^4|zeta(sigma'+2it)|>=1. Pole growth at one and the logarithmic vertical bound at 2t yield a lower bound for |zeta(sigma'+it)|. Integrating the zeta' bound from sigma' to sigma transfers it to sigma as close as c/log^9(|t|+2) left of one, proving the reciprocal estimate and weak zero-free region.",
+            "speculation_status": "The argument only transfers over a very short width because the lower bound and derivative error must balance. The exact exponents depend on the pole and logarithmic estimates and are proof-specific. The positivity identity and mechanism are clear; exact logarithmic powers should be preserved from the source. Calling the nonnegative trigonometric polynomial a positivity certificate is accurate. Logarithmic exponents are proof-specific but legible."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the concrete parameter choice and symmetry extension to negative heights.",
+          "line_end": 1150,
+          "line_start": 1055,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "No serious extraction defect; constants are implicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The result abstracts the widening step: analytic size control across width 1/w(t) plus the Euler-product positivity identity excludes zeros at scale 1/(phi w), immediately yielding the classical 1/log t region.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Landau's theorem converts moderate growth in a left neighborhood into a narrower zero-free region",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u11.txt",
+          "unit_bytes": 6222,
+          "unit_id": "harper2014_zeta_course_part1_v2_u11",
+          "unit_sha256": "bc7d82a287c16e6087eb833379c4696cc61be48e92f8bf728862ba6d0df9ef3f",
+          "unit_type": "growth-to-zero-free-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The result transfers size information across a thick analytic region into location information for zeros. The penalty phi measures growth and w measures available width, making the narrower zero-free scale an explicit cost of the transfer.",
+            "nonparaphrase_operation": "The abstract functions phi and w parameterize growth and neighborhood width; the zeta Dirichlet-polynomial approximation supplies the concrete growth input.",
+            "quality_reason": "Landau's hypotheses and conclusion, the concrete w=2 and phi=log t choice, polynomial growth input, bounded-height handling and conjugation are explicit. No zero-free strip is claimed without the input neighborhood. The abstract parameter interpretation is grounded in the exact formula 1/(phi w).",
+            "source_support": "Theorem 5.1 assumes nondecreasing phi,w, w=O(exp(phi/2)), and |zeta(sigma+it)|=O(exp(phi(t))) throughout 1-1/w(t)<=sigma<=2. It concludes nonvanishing for sigma at least 1-c/[phi(2t+1)w(2t+1)]. For zeta, Theorem 3.3 with x=t gives a polynomial growth bound for sigma>=1/2. Taking w=2 and phi=log t yields the classical zero-free region sigma>=1-c/log(|t|+2), with bounded heights handled separately and negative heights by conjugation.",
+            "speculation_status": "The theorem does not create a strip without a pre-existing growth neighborhood, and the conclusion is narrower by the factor phi. Low heights and conjugate symmetry need separate bookkeeping. No serious extraction defect appears; constants are implicit and depend on the hypotheses. Interpreting phi and w as growth and width costs is a faithful abstraction of the theorem. No serious extraction defect appears."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Provides the complex-analytic engine used in the Landau theorem.",
+          "line_end": 1236,
+          "line_start": 1156,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The real-part inequalities are legible; exact numerical constants are nonessential to the mechanism.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A local product divides out zeros, Borel-Caratheodory controls the logarithm of the zero-free remainder, and Cauchy's formula converts that size bound into a logarithmic-derivative inequality with explicit positive zero terms.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Removing nearby zeros and bounding the remaining logarithm controls f'/f",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u12.txt",
+          "unit_bytes": 5014,
+          "unit_id": "harper2014_zeta_course_part1_v2_u12",
+          "unit_sha256": "1a61ea04c08edd2b8c7f07ef8449872017900687bf2ed79eb16e4f6fd97ca5de",
+          "unit_type": "local-zero-factorization-lemma",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local factorization separates discrete singular geometry from a smooth analytic remainder. Complex-analytic size control then turns into a derivative estimate, while positivity of left-zero terms prevents their effect from cancelling.",
+            "nonparaphrase_operation": "The zero-removed function g and its logarithm h bridge a modulus bound to f'/f; reciprocal distances encode each nearby zero quantitatively.",
+            "quality_reason": "Zero removal, maximum modulus, holomorphic logarithm, Borel-Caratheodory, Cauchy differentiation and positive left-zero terms are all proved in the span. The response does not apply the lemma to zeta without the external hypotheses. The bridge objects g and h and reciprocal-distance terms make the analysis concrete.",
+            "source_support": "For holomorphic f on a disc, bounded relative size M, and no zeros in the right half, the proof forms g by dividing f by all zeros in the half-radius disc. Maximum modulus bounds g/f(z0); a holomorphic logarithm h of g/g(z0) on the smaller disc has real part at most log M. Borel-Caratheodory bounds h, Cauchy's formula bounds h'(z0), and logarithmic differentiation yields f'/f=h'+sum 1/(z0-rho). Zeros left of z0 contribute positive real parts, giving the stated lower bounds.",
+            "speculation_status": "The zero-free right-half-disc assumption fixes the sign of zero contributions. The constants and half-radius choices are local, and the lemma alone does not locate zeta zeros without external growth and Euler-product input. Real-part inequalities and proof structure are clear; numerical constants are not conceptually essential but are explicitly stated. Calling this separation of discrete zero geometry from a smooth remainder is an accurate conceptual reading. No material extraction defect appears."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the parameter choice r=1/w and the estimate of the normalization denominator.",
+          "line_end": 1334,
+          "line_start": 1239,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "A few inequalities are badly line-wrapped, but the two-sided squeeze and final scale are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The three-height logarithmic-derivative identity supplies a lower bound, while the local factorization lemma makes an assumed zero contribute a positive reciprocal-distance term; choosing the disc radius from the available growth strip yields the exclusion.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Euler-product positivity and local zero terms force any nearby zero left of a quantitative boundary",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u13.txt",
+          "unit_bytes": 6914,
+          "unit_id": "harper2014_zeta_course_part1_v2_u13",
+          "unit_sha256": "e0a3c1b7ad00209e98eaca63eb931f5fc3dfc441f3cc35bc8cae758406dfc78d",
+          "unit_type": "zero-repulsion-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof converts a zero into an unavoidable local signal in zeta'/zeta, then uses positivity to cap how large that signal can be. Radius and normalization are selected so analytic growth cannot hide the reciprocal-distance contribution.",
+            "nonparaphrase_operation": "The local discs connect global strip growth to the factorization lemma; the three-height logarithmic derivative connects Euler arithmetic to the local zero term.",
+            "quality_reason": "The three-height logarithmic-derivative positivity, Lemma 5.4 applications, candidate-zero reciprocal term, two cases, and final r,M choices are explicit. No hypothesis of Theorem 5.1 is dropped. The response identifies the exact squeeze and parameter normalization rather than only saying positivity exposes zeros.",
+            "source_support": "For sigma'>1 the nonnegative three-height von-Mangoldt combination relates logarithmic derivatives at sigma', sigma'+it, and sigma'+2it. The pole at one bounds the height-zero term, while Lemma 5.4 bounds the other terms through log M/r and exposes a hypothesized zero sigma+it through 1/(sigma'-sigma). Choosing sigma'=1+c min(1,r/log M) yields a two-case exclusion. Setting r=1/w(2t+1) and M=exp(C phi(2t+1)), justified by the theorem's growth hypothesis and Euler-product lower bounds at the disc centers, gives the Landau region.",
+            "speculation_status": "Both the assumed growth strip and the positivity identity are essential. If the candidate zero lies outside the half-radius disc, the first case handles it geometrically; otherwise the reciprocal term handles it analytically. Some inequalities are line-wrapped, but the two-case squeeze, parameter choices, and final scale are clear. Describing the argument as converting a zero into an unavoidable local signal is a precise reasonable inference. Some inequalities are line-wrapped but the logic is recoverable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b9e34f30763dcfcde09aee26f1afd5a229a680397241442f65077ccb0f4e4c1d",
+        "dossier_sha256": "1f008d9af1896099c86b26c9c3e2a9020084bb666e844a4b9034699232fee72b"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The Euler product supplies prime structure, the fractional-part or completed representations supply continuation, and logarithmic derivatives plus Perron inversion transmit zeros back to prime counts.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "harper2014_zeta_course_part1_v2_u02",
+          "harper2014_zeta_course_part1_v2_u03",
+          "harper2014_zeta_course_part1_v2_u06",
+          "harper2014_zeta_course_part1_v2_u16"
+        ],
+        "proposed_limit": "The notes state rather than prove the final global completion and explicit formula.",
+        "source_id": "harper2014_zeta_course_part1",
+        "synthesis_id": "riemann_v2_within_f843229dc58eb59abf00a342",
+        "title": "Three representations divide the work among arithmetic, continuation, and inversion"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the convergence justification rather than using the product formally.",
+          "line_end": 196,
+          "line_start": 124,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "No material extraction defect.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Finite products of geometric series enumerate exactly the integers with bounded prime factors; a convergent tail estimate then passes to the infinite Euler product and separates arithmetic from analytic representations.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Absolute convergence and unique factorization turn the integer series into a prime product",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u02.txt",
+          "unit_bytes": 4221,
+          "unit_id": "harper2014_zeta_course_part1_v2_u02",
+          "unit_sha256": "8918619dcaeff07b0bb57ee41d22ba81736a7980a8ccaacb6b394045390ac101",
+          "unit_type": "euler-product-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Unique factorization is converted into an analytic identity only after convergence legitimizes rearrangement. The coefficient indicator c_P makes the passage from finite combinatorics to the global product auditable.",
+            "nonparaphrase_operation": "The finite Euler product bridges multiplicative prime data to additive integer coefficients; the tail bound bridges finite products to their infinite limit.",
+            "quality_reason": "Finite prime products, geometric series, unique factorization, the coefficient indicator c_P and the convergent tail passage are explicit. No formal product use outside Re(s)>1 is licensed. The finite-to-infinite bridge is described concretely.",
+            "source_support": "For Re(s)>1, each factor (1-p^{-s})^{-1} is an absolutely convergent geometric series. Multiplying factors for p<=P gives sum c_P(n)n^{-s}, where c_P identifies integers whose prime factors are all at most P. Unique prime factorization gives this exact enumeration, and the difference from zeta is bounded by the convergent tail over n>P, which vanishes as P grows.",
+            "speculation_status": "The argument is confined to Re(s)>1. Formal factor expansion outside absolute convergence would not inherit the rearrangement proof or nonvanishing conclusion. No material extraction defect is present; the proof and convergence boundary are explicit. Describing c_P as making the limit auditable is a useful reasonable interpretation. No material extraction defect appears."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the comparison of Psi with the unweighted prime count.",
+          "line_end": 270,
+          "line_start": 202,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The series manipulations rely on absolute and uniform convergence, which the text explicitly checks.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The von Mangoldt function absorbs all powers of a prime so that differentiation of the logarithm of each Euler factor gives one simple Dirichlet series, making zeros analytically relevant to prime counts.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime-power weights are selected because their Dirichlet series is -zeta'/zeta",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u03.txt",
+          "unit_bytes": 3595,
+          "unit_id": "harper2014_zeta_course_part1_v2_u03",
+          "unit_sha256": "65349d7e7ec84f5c73edf421e5ed23f8081cfd83421c02117840b9e7e944f393",
+          "unit_type": "weight-selection-and-logarithmic-derivative",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The von Mangoldt weight is a representation choice matched to logarithmic differentiation: differentiating the logarithm of the Euler product naturally enumerates every prime power with coefficient log p, so the resulting Dirichlet series is exactly -zeta'(s)/zeta(s), while summing those coefficients gives the arithmetic observable Psi. This gains an exact analytic interface at the cost of counting prime powers rather than primes alone; the source separately controls that cost by Psi(x)=sum_{p<=x} log p+O(sqrt(x) log^2 x). The match and zero-freeness are established only for Re(s)>1, where absolute and uniform convergence justify the manipulations. That zeros should later appear as poles of the logarithmic derivative is a downstream inference prompted by the truncated remark, not a mechanism developed in this span.",
+            "nonparaphrase_operation": "Relates the coefficient choice to the operation that generates it, then separates the exact representation gain from the controlled arithmetic discrepancy introduced by including higher prime powers.",
+            "quality_reason": "Accepted after bounded revision: it preserves the convergence hypotheses and concrete error term, gives the previously underemphasized prime-power approximation its own role, and does not present the truncated downstream zero mechanism as established here.",
+            "source_support": "The unit defines Lambda(n)=log p on prime powers and zero otherwise, defines Psi, gives the prime-power error O(sqrt(x) log^2 x), justifies interchanging differentiation and summation for Re(s)>1, derives sum Lambda(n)n^{-s}=-zeta'(s)/zeta(s), and proves zeta(s) is nonzero there from its absolutely convergent nonvanishing Euler product.",
+            "speculation_status": "The coefficient/logarithmic-derivative match and prime-power approximation are source facts. Interpreting Lambda as an interface design choice is supported conceptual analysis. Zero-as-pole behavior is explicitly marked as downstream inference because the frozen span only begins a remark on vanishing."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps well-definedness and the resulting analytic estimates together.",
+          "line_end": 605,
+          "line_start": 484,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several long derivative displays are line-broken but the integral representation and bounds are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replacing the integer-counting function by w minus its fractional part isolates an integral convergent for Re(s)>0, proves independence of the truncation point, and gives vertical bounds for zeta and its derivative near the one-line.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The fractional-part discrepancy extends zeta while preserving the finite-sum approximation",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u06.txt",
+          "unit_bytes": 6952,
+          "unit_id": "harper2014_zeta_course_part1_v2_u06",
+          "unit_sha256": "d2434d4a2b47455178fffea7bbbe36085954f2e10a9b4d74779eae0245772879",
+          "unit_type": "analytic-continuation-by-discrepancy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The bounded discrepancy {w} is what remains after extracting the continuum approximation. Removing the leading linear growth extends the transform's convergence without changing the finite-sum representation.",
+            "nonparaphrase_operation": "The fractional-part integral bridges integer discreteness to analytic continuation; cutoff independence lets x be chosen adaptively to the height t for estimates.",
+            "quality_reason": "The fractional-part formula, cutoff independence, continuation to Re(s)>0, pole at one and zeta/zeta-prime bounds near the one-line are explicit. No extension farther left or stronger zero information is claimed. The response explains precisely what the representation preserves and gains.",
+            "source_support": "Definition 3.1 writes zeta as a finite Dirichlet sum, x^{1-s}/(s-1), a fractional-part boundary term, and an integral of {w}w^{-s-1}. The integral is convergent for Re(s)>0 and the right side is holomorphic there except for a simple pole at one. The source verifies independence of x by comparing with the next integer cutoff and analytic continuation. Choosing x=|t| gives zeta=O(log|t|) and, after differentiating the formula, zeta'=O(log^2|t|) slightly left of Re(s)=1.",
+            "speculation_status": "This continuation reaches only Re(s)>0 and does not give strong information far left of the one-line. Derivative bounds require differentiating every term and retaining logarithmic weights. Long derivative displays are line-broken, but the integral representation, pole, cutoff-independence, and stated bounds are clear. Interpreting the bounded fractional part as the discrepancy left after removing continuum growth is reasonable. Derivative displays are crowded but conclusions are clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "These results are stated without proof and should be treated as orientation for later course material.",
+          "line_end": 1515,
+          "line_start": 1453,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The functional equation and explicit formula are cleanly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Completion extends zeta to the whole plane, explains the trivial zeros and critical-line reflection, and permits Perron's contour to move far enough left that nontrivial zero residues appear explicitly in the prime count.",
+          "source_id": "harper2014_zeta_course_part1",
+          "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+          "source_page_markers_inside_unit": [
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The functional equation completes the zero geometry and supports a direct zero-sum formula for Psi",
+          "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u16.txt",
+          "unit_bytes": 3539,
+          "unit_id": "harper2014_zeta_course_part1_v2_u16",
+          "unit_sha256": "af8061e4f8c94e04b5a5bf376d1b62976fe21735f083ff9420354a8a1c9cb26c",
+          "unit_type": "global-symmetry-and-explicit-formula",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Completion separates forced archimedean zeros from the nontrivial divisor and exposes a global involution. The explicit formula makes zero location causally visible in arithmetic error rather than merely geometrically symmetric.",
+            "nonparaphrase_operation": "The completed functional equation bridges left and right half-planes; the shifted Perron contour bridges singularities of -zeta'/zeta to the zero sum in Psi.",
+            "quality_reason": "The whole-plane functional equation, trivial zeros, speculative RH remark, explicit formula and contour-residue proof sketch are explicitly stated. The response does not treat functional-equation symmetry or Euler-product speculation as proof of RH. The distinct roles of completion and shifted Perron contour make the analysis non-paraphrastic.",
+            "source_support": "Theorem 6.1 states the gamma-completed functional equation relating s and 1-s and explains continuation to all of C. Poles of Gamma(s/2) force zeta zeros at the negative even integers, called trivial. The unit distinguishes speculative intuition combining Euler-product influence with functional-equation symmetry from proved results. Theorem 6.5 states a truncated explicit formula Psi(x)=x-sum_{|Im rho|<=T}x^rho/rho+O(x log^2 x/T), obtained by shifting Perron's contour far left, collecting zero residues, and using the functional equation to bound the new line.",
+            "speculation_status": "The results are stated without proof in this unit. Functional-equation symmetry does not force zeros onto its fixed line, and the Euler-product explanation of RH is explicitly speculation. The truncated zero sum and error depend on T. The functional equation and explicit formula are cleanly extracted; their omitted proofs mean this unit serves as orientation rather than self-contained derivation. Saying completion separates forced archimedean zeros and makes zero location visible in arithmetic error is a sound conceptual synthesis. Theorems are stated without proof, so the unit is correctly treated as orientation."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b9e34f30763dcfcde09aee26f1afd5a229a680397241442f65077ccb0f4e4c1d",
+        "dossier_sha256": "1f008d9af1896099c86b26c9c3e2a9020084bb666e844a4b9034699232fee72b"
+      }
+    }
+  ]
+}

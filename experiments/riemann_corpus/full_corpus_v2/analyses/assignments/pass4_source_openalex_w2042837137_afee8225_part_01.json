@@ -1,0 +1,707 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2042837137_afee8225_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2042837137",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span crosses a page footer; Theorem 3.2 is only cited, so the logical conversion cannot be reconstructed from this source alone.",
+      "line_end": 66,
+      "line_start": 29,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Gram-index subscripts are OCR-noisy, but the prose, interval endpoints, five-block continuation, and final claim are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The claim is not presented as a raw count: distinct machine runs cover adjacent Gram-index ranges, five further blocks beyond the target satisfy Rosser's rule, and an imported theorem converts that coverage into the stated critical-line and simplicity result.",
+      "source_id": "openalex_w2042837137",
+      "source_normalized_sha256": "7a4e793dc533c3ee253d9530401cd318c37c7548f1b08760cd7610e2900a431f",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite zero verification assembled from separated ranges and a boundary overrun",
+      "unit_artifact_relpath": "depth/units/openalex_w2042837137_d001.txt",
+      "unit_bytes": 2421,
+      "unit_id": "openalex_w2042837137_d001",
+      "unit_sha256": "e83f4d6bccb5c6c63c68c7a2446207120501d138c0ef7666425882aa76ddd64b",
+      "unit_type": "computational-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d001.txt",
+      "source": {
+        "source_id": "openalex_w2042837137",
+        "title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+        "authors": [
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1986,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 21,
+          "line_end": 28,
+          "text": "     to \"Rosser's rule\" of various types (including some formerly unobserved types). Graphs of the\n     function Z( t) are given near five rarely occurring exceptions to Rosser's rule, near the first\n     Gram block of length 9, near the clpsest observed pair of zeros of the Riemann zeta function,\n     and near the largest (positive and negative) found values of Z(t) at Gram points. Finally, a\n     number of references are given to various number-theoretical implications.\n\n\n\n",
+          "sha256": "1af2a286db900913425fc4dc4a284b2a1fd692a6a9d0d7f97cb57cbf6e6f7fb7"
+        },
+        "after": {
+          "line_start": 67,
+          "line_end": 74,
+          "text": "   During the computations in the interval [g156 ,800,000 , g2oo,ooo,ooo) reported on in [2],\nthe counts of the number of Gram blocks and of the number of Gram intervals with\nO, 1,... zeros were not exact, since small shifts were made in the argument\nof ZA(t) in case the value of ZA(t) in a Gram point gn was too small to yield\nthe correct sign of Z(gn) with certainty. Since all subsequent computations were\ncarried out without shifts, i.e., Z 8 (gn) was computed immediately in case ZA(gn)\nwas too small, we have rerun and verified our computations in the interval\n[g 156 .x00.000 , g 200 ,000 ,000 ) on the CYBER 205. The total amount of CYBER 205 CPU\n",
+          "sha256": "1cf7dddc800ca0807a9fc983ff10b9871121108ec2de9080012d563a645d0dd8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and computational provenance",
+            "line_end": 82,
+            "line_start": 29,
+            "mathematical_role": "Defines the verified range, continuation condition, machine partition, reruns, and cross-platform checks underlying the certificate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 66,
+          "line_start": 29,
+          "title": "Finite zero verification assembled from separated ranges and a boundary overrun",
+          "unit_id": "openalex_w2042837137_d001",
+          "unit_type": "computational-certification",
+          "why_material": "The claim is not presented as a raw count: distinct machine runs cover adjacent Gram-index ranges, five further blocks beyond the target satisfy Rosser's rule, and an imported theorem converts that coverage into the stated critical-line and simplicity result."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span crosses a page footer; Theorem 3.2 is only cited, so the logical conversion cannot be reconstructed from this source alone.",
+          "representation_dependency": "Gram-index subscripts are OCR-noisy, but the prose, interval endpoints, five-block continuation, and final claim are recoverable.",
+          "unit_id": "openalex_w2042837137_d001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 80,
+            "line_start": 67,
+            "title": "Rerun design removes sign-shift contamination and supplies independent agreement checks",
+            "unit_id": "openalex_w2042837137_d002",
+            "unit_type": "audit-method",
+            "why_material": "Earlier counts were inexact because uncertain Gram-point signs triggered argument shifts; recomputation evaluates a higher-accuracy method immediately, while two other ranges are rerun and agree exactly. This is reusable computational-audit logic rather than mere provenance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Range partition, deliberate overrun beyond the target, corrected sign handling, cross-machine reruns, and conservative evaluation bounds form complementary layers of a finite zero-separation certificate.",
+            "limit": "The decisive separation theorem and detailed error derivations are imported, so the source alone does not reproduce the full proof chain.",
+            "parent_local_unit_ids": [
+              "openalex_w2042837137_d001",
+              "openalex_w2042837137_d002",
+              "openalex_w2042837137_d003",
+              "openalex_w2042837137_d004"
+            ],
+            "title": "Layered finite-verification certificate"
+          },
+          {
+            "claim": "A rigorously certified finite critical-line range can strengthen the parameter in other conditional number-theoretic results while remaining logically distinct from a proof of the Riemann hypothesis.",
+            "limit": "The downstream results are only referenced, and their quantitative improvements are not worked out in this source.",
+            "parent_local_unit_ids": [
+              "openalex_w2042837137_d001",
+              "openalex_w2042837137_d004",
+              "openalex_w2042837137_d015"
+            ],
+            "title": "Finite computation as a conditional analytic resource"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 25,
+              "line_start": 14,
+              "reason": "Abstract summarizes the verified range, census, rare examples, and implications developed in the accepted units."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2042837137_d001",
+        "spontaneous": {
+          "unit_id": "openalex_w2042837137_d001",
+          "spontaneous_reading": "The mathematical work is a stitched finite certificate: three adjacent computational ranges are joined, then the computation deliberately overruns the nominal endpoint by five Rosser-valid Gram blocks so that an imported separation theorem can close the boundary."
+        },
+        "directed": {
+          "unit_id": "openalex_w2042837137_d001",
+          "source_grounded_mathematics": "Programs on two machines separated zeros of Z(t) over adjacent Gram-index ranges ending at g_1,500,000,000. A further run produced blocks of lengths 1, 1, 2, 1, and 1 through g_1,500,000,006, all satisfying Rosser's rule; Theorem 3.2 of the cited earlier paper is then invoked to conclude that the first 1,500,000,001 complex zeros are simple and have real part 1/2.",
+          "conceptual_reading": "Range-wise certificates compose only after their interfaces and terminal condition are covered. The extra blocks are not surplus data; they discharge an endpoint dependency required by the theorem converting local zero separation into a finite global count.",
+          "representation_or_bridge": "Gram indices provide a common coordinate system across machine runs, while Z(t), Gram blocks, and Rosser's rule bridge numerical sign/separation data to a statement about zeros of the zeta function.",
+          "boundary_or_failure": "The conclusion is finite, confined to the stated rectangle, and is not a proof of the global Riemann hypothesis. The decisive conversion is delegated to Theorem 3.2 rather than reproduced here.",
+          "uncertainty": "The interval subscripts are OCR-noisy, but the adjacent range partition, five-block overrun, and final finite claim are clear. The exact logical hypotheses of the cited theorem cannot be checked from this unit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2042837137_d001",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly partitions the new computation across adjacent Gram-index ranges on two machines, continues beyond the nominal endpoint through five Rosser-valid blocks, and then invokes Theorem 3.2 for the finite simplicity and critical-line conclusion.",
+          "The candidate correctly limits the conclusion to the stated finite rectangle and notes that the cited theorem is not reproduced."
+        ],
+        "inference": [
+          "Reading the five-block overrun as an endpoint obligation for the cited theorem is a strong inference from narrative order, but the theorem's exact hypotheses are unavailable in the span."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Gram subscripts are OCR-noisy, and the imported theorem prevents reconstruction of the full proof burden from this packet."
+        ],
+        "missed_mechanism": [
+          "The first-zero conclusion also depends on the inherited computations through g_300,000,000 named at the start; the candidate's stitched-certificate account foregrounds only the three new ranges."
+        ],
+        "revision_instructions": [
+          "Add the previously verified prefix through g_300,000,000 as an explicit dependency, then retain the three-range extension, overrun, theorem invocation, and finite-scope caveat; present the overrun's endpoint role as inferred rather than theorem-verified."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact functional form of the displayed bounds is OCR-sensitive, but the safe and implemented bounds and the no-failure observation are explicit.",
+      "line_end": 129,
+      "line_start": 116,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires scan verification before reusing the exponents or displayed inequality verbatim; qualitative certification logic is text-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Analytic error bounds are reduced to fixed, deliberately looser operational thresholds, and the high-accuracy fallback determines every Gram-point sign encountered. This connects numerical approximation to the discrete sign evidence needed by the separation procedure.",
+      "source_id": "openalex_w2042837137",
+      "source_normalized_sha256": "7a4e793dc533c3ee253d9530401cd318c37c7548f1b08760cd7610e2900a431f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conservative error bounds turn computed Gram-point values into certified signs",
+      "unit_artifact_relpath": "depth/units/openalex_w2042837137_d004.txt",
+      "unit_bytes": 974,
+      "unit_id": "openalex_w2042837137_d004",
+      "unit_sha256": "ff62144692cf67ff444ff1753ba5f5d1ccd3ee1a622c3a9fbcbfea6de3cc254e",
+      "unit_type": "computational-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d004.txt",
+      "source": {
+        "source_id": "openalex_w2042837137",
+        "title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+        "authors": [
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1986,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 108,
+          "line_end": 115,
+          "text": "depend on the computer used. The other, nondominant, terms are quite small\ncompared with the dominant terms. For both our CYBER 205 and our CYBER\n\n<!-- source-page: 3 -->\n\nZEROS OF THE RIEMAN N ZETA FUNCTI ON\n                                                                                                669\n\n",
+          "sha256": "b5ec4ec9ef429663e3dbe7045692b9f3413d7d6633050199e69b17abe174ab45"
+        },
+        "after": {
+          "line_start": 130,
+          "line_end": 137,
+          "text": "    3. Statisti cs. Here we present, for the whole interva l [g , g ,\n                                                                      0   1 500 ,000 ,000 ), some\n statistics concer ning Gram blocks, the numbe r of zeros in Gram\n                                                                          intervals and the\n exceptions to Rosser's rule (summarizing the statistics up to g ,ooo,ooo\n                                                                      300          given in [l],\n [2] and [7]). As stated already in Section 1, the counts given here are\n                                                                              exact, since no\n",
+          "sha256": "18cf050d68470dabc44ccfe3d60f854d6301ed7f8d43d23ca2a43ee8b93d965c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computation of Z(t) and error analysis",
+            "line_end": 129,
+            "line_start": 83,
+            "mathematical_role": "Describes vectorized evaluation, arithmetic error modeling, dominant approximation errors, conservative bounds, and sign resolution."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 129,
+          "line_start": 116,
+          "title": "Conservative error bounds turn computed Gram-point values into certified signs",
+          "unit_id": "openalex_w2042837137_d004",
+          "unit_type": "computational-certification",
+          "why_material": "Analytic error bounds are reduced to fixed, deliberately looser operational thresholds, and the high-accuracy fallback determines every Gram-point sign encountered. This connects numerical approximation to the discrete sign evidence needed by the separation procedure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact functional form of the displayed bounds is OCR-sensitive, but the safe and implemented bounds and the no-failure observation are explicit.",
+          "representation_dependency": "Requires scan verification before reusing the exponents or displayed inequality verbatim; qualitative certification logic is text-recoverable.",
+          "unit_id": "openalex_w2042837137_d004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 110,
+            "line_start": 83,
+            "title": "Vectorized Z(t) evaluation preserves a hierarchy of approximation and arithmetic errors",
+            "unit_id": "openalex_w2042837137_d003",
+            "unit_type": "error-analysis",
+            "why_material": "The source distinguishes speedup in the dominant summation from correctness analysis, extends the analyzed height range, models truncated single/double precision explicitly, and identifies interpolation and Riemann-Siegel truncation as machine-independent dominant terms."
+          },
+          {
+            "line_end": 198,
+            "line_start": 130,
+            "title": "Exact Gram-block census reveals slow redistribution toward longer blocks",
+            "unit_id": "openalex_w2042837137_d005",
+            "unit_type": "empirical-pattern",
+            "why_material": "Unshifted sign computation makes the counts exact, and equal-sized Gram-index windows show length-one blocks decreasing while lengths at least two increase; the total census anchors later distributional claims."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Range partition, deliberate overrun beyond the target, corrected sign handling, cross-machine reruns, and conservative evaluation bounds form complementary layers of a finite zero-separation certificate.",
+            "limit": "The decisive separation theorem and detailed error derivations are imported, so the source alone does not reproduce the full proof chain.",
+            "parent_local_unit_ids": [
+              "openalex_w2042837137_d001",
+              "openalex_w2042837137_d002",
+              "openalex_w2042837137_d003",
+              "openalex_w2042837137_d004"
+            ],
+            "title": "Layered finite-verification certificate"
+          },
+          {
+            "claim": "A rigorously certified finite critical-line range can strengthen the parameter in other conditional number-theoretic results while remaining logically distinct from a proof of the Riemann hypothesis.",
+            "limit": "The downstream results are only referenced, and their quantitative improvements are not worked out in this source.",
+            "parent_local_unit_ids": [
+              "openalex_w2042837137_d001",
+              "openalex_w2042837137_d004",
+              "openalex_w2042837137_d015"
+            ],
+            "title": "Finite computation as a conditional analytic resource"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2042837137_d004",
+        "spontaneous": {
+          "unit_id": "openalex_w2042837137_d004",
+          "spontaneous_reading": "The error analysis becomes operational through deliberately loose fixed radii: a fast evaluation is accepted when its margin is safe, and a higher-accuracy fallback resolves every Gram-point sign encountered."
+        },
+        "directed": {
+          "unit_id": "openalex_w2042837137_d004",
+          "source_grounded_mathematics": "The source states safe error bounds of 3×10^-5 for method A and 2.1×10^-11 for method B, while the program uses the more conservative fixed bounds 10^-4 and 2.5×10^-7. It reports that method B determined the sign of Z(t) at every Gram point for which it was needed.",
+          "conceptual_reading": "A continuous approximation is converted into discrete certified sign data by comparing it with an error enclosure. Conservative thresholds create slack against underestimated errors, and the fallback method handles points too close to zero for the first method.",
+          "representation_or_bridge": "An interval centered at the computed value with the certified error radius is the bridge object. When that interval excludes zero, the sign is controlled; the resulting sign sequence feeds the Gram-block separation procedure.",
+          "boundary_or_failure": "Certified signs at the encountered Gram points are one layer of the zero-separation certificate, not a standalone proof that all relevant zeros have been found. The displayed functional bounds are not safely reusable from this OCR.",
+          "uncertainty": "The exact exponents and layout of the displayed inequality require scan verification. The fixed operational bounds and the no-failure observation for method B are explicit in prose."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2042837137_d004",
+        "critic_decision": "revise",
+        "supported": [
+          "The safe bounds, deliberately looser implemented bounds, and the observation that method B determined every encountered Gram-point sign are explicit and accurately reported.",
+          "Interpreting an error enclosure that excludes zero as sign evidence is mathematically appropriate."
+        ],
+        "inference": [
+          "The interval-enclosure bridge from an approximate value to a certified sign is inferred from the error-bound purpose rather than spelled out in this span."
+        ],
+        "unsupported_or_imported": [
+          "The fast-first acceptance rule, fallback routing from method A to method B, and claim that method B handles points too close to zero are imported from another unit rather than stated within this unit's evidence boundary."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The displayed functional inequality is OCR-sensitive, though the safe and implemented fixed bounds are readable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the numerical bounds, conservative slack, enclosure-to-sign inference, and observed method-B success; remove the fast-path/fallback execution story or explicitly mark it as unavailable within this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The displayed counting identity at line 346 is corrupted in extraction; its endpoint conditions and combinatorial purpose are stated in prose.",
+      "line_end": 348,
+      "line_start": 245,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Do not reuse the OCR form of the identity without scan verification; Table 5 totals and trends also require layout-aware parsing for exact numbers.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source adjusts window boundaries away from bad Gram points and gives a conservation relation between empty and multiply occupied intervals when no missing pair crosses an endpoint. The same exact census shows one-zero intervals declining as zero-, two-, three-, and four-zero intervals rise.",
+      "source_id": "openalex_w2042837137",
+      "source_normalized_sha256": "7a4e793dc533c3ee253d9530401cd318c37c7548f1b08760cd7610e2900a431f",
+      "source_page_markers_inside_unit": [
+        5,
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-count balance checks interval censuses and exposes systematic occupancy drift",
+      "unit_artifact_relpath": "depth/units/openalex_w2042837137_d008.txt",
+      "unit_bytes": 6743,
+      "unit_id": "openalex_w2042837137_d008",
+      "unit_sha256": "2b9523f7fec2ac2eaff4aaa3a73cfc44bf3b523531a18965d63d9fe61eda102e",
+      "unit_type": "consistency-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d008.txt",
+      "source": {
+        "source_id": "openalex_w2042837137",
+        "title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+        "authors": [
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1986,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 237,
+          "line_end": 244,
+          "text": " which seems to be fairly well reached in the third string. For Gram blocks of length\n  ~ 7, however, our numbers are probably still too small to supply any evidence for\n the existence of a limit distribution (although we are tempted to believe that such\n distributions exist for Gram blocks of all lengths).\n    Table 4 (which partly summarizes previous such tables in [1] and [2]) gives the first\n occurrences of the various types of Gram blocks which have been found. Note the\n rather \"late\" first occurrence of type (8, 4) and (8, 5) Gram blocks and the absence\nof type (8, 1) and (8, 8) blocks and of blocks of length 9 of various types.\n",
+          "sha256": "63e9dec1e46400ff65a9bf66ece41d2525210a7d485afa64669daad88e713b98"
+        },
+        "after": {
+          "line_start": 349,
+          "line_end": 356,
+          "text": "    We have found 3055 exceptions to Rosser's rule (2973 of length 2 and 82 of length\n3), including some formerly unknown types. Table 6 surveys the various types of\nexceptions which have been found so far (note that a length 2, type 10 exception has\nbeen defined, but not yet found). For all 3055 exceptions, the missing two zeros were\nlocated either in the preceding or in the succeeding Gram block (which always had\nlength ~ 3). Our main separation program did not search for the missing two zeros\nin adjacent Gram blocks: this was done afterwards with an interactive program.\nFuture investigators may find it useful to implement this search in their main\n",
+          "sha256": "8948941acf52ea729b81128001883f2eec5d6c84d5ea86c977189458ea471a23"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Block-type distributions, first occurrences, and interval counts",
+            "line_end": 348,
+            "line_start": 231,
+            "mathematical_role": "Compares distributions across height, states finite-sample cautions, records rare first occurrences, and supplies a counting consistency check."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 348,
+          "line_start": 245,
+          "title": "Zero-count balance checks interval censuses and exposes systematic occupancy drift",
+          "unit_id": "openalex_w2042837137_d008",
+          "unit_type": "consistency-check",
+          "why_material": "The source adjusts window boundaries away from bad Gram points and gives a conservation relation between empty and multiply occupied intervals when no missing pair crosses an endpoint. The same exact census shows one-zero intervals declining as zero-, two-, three-, and four-zero intervals rise."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The displayed counting identity at line 346 is corrupted in extraction; its endpoint conditions and combinatorial purpose are stated in prose.",
+          "representation_dependency": "Do not reuse the OCR form of the identity without scan verification; Table 5 totals and trends also require layout-aware parsing for exact numbers.",
+          "unit_id": "openalex_w2042837137_d008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 316,
+            "line_start": 231,
+            "title": "Height comparison and first-occurrence data separate apparent convergence from rarity",
+            "unit_id": "openalex_w2042837137_d007",
+            "unit_type": "finite-sample-diagnostic",
+            "why_material": "Three separated windows suggest stabilization for block lengths three through six, while sparse longer blocks are explicitly withheld from that conclusion; first-occurrence data show that nonobservation and late appearance are material sampling effects."
+          },
+          {
+            "line_end": 361,
+            "line_start": 349,
+            "title": "Post-hoc recovery of missing zero pairs suggests an integrated search and its first failure mode",
+            "unit_id": "openalex_w2042837137_d009",
+            "unit_type": "search-strategy-obstruction",
+            "why_material": "Every observed Rosser-rule exception is repaired by finding the missing pair in an adjacent block, motivating integration into the main separation program; the authors then construct the simplest neighboring-block pattern where that local strategy would fail."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Exact block and interval censuses show height-dependent redistribution and apparent stabilization for adequately sampled lengths, motivating a block-length-conditioned distribution rather than a height-invariant Gram-law heuristic.",
+            "limit": "Long blocks remain too sparse, observed trends are finite-range, and no probabilistic mechanism is derived.",
+            "parent_local_unit_ids": [
+              "openalex_w2042837137_d005",
+              "openalex_w2042837137_d006",
+              "openalex_w2042837137_d007",
+              "openalex_w2042837137_d008",
+              "openalex_w2042837137_d014"
+            ],
+            "title": "From occupancy drift to a length-conditioned probabilistic model"
+          },
+          {
+            "claim": "Rosser-rule exceptions simultaneously test census conservation, require local recovery of displaced zero pairs, and reveal hypothetical patterns where an adjacent-block repair would be insufficient.",
+            "limit": "All observed exceptions were locally repaired; the failure configuration is proposed but unobserved.",
+            "parent_local_unit_ids": [
+              "openalex_w2042837137_d008",
+              "openalex_w2042837137_d009",
+              "openalex_w2042837137_d010",
+              "openalex_w2042837137_d011"
+            ],
+            "title": "Exceptions as stress tests for both counting and search locality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2042837137_d008",
+        "spontaneous": {
+          "unit_id": "openalex_w2042837137_d008",
+          "spontaneous_reading": "The occupancy table carries its own conservation check, but only after boundaries are chosen so displaced zero pairs do not leak across them. This turns endpoint hygiene into part of the mathematics of the census."
+        },
+        "directed": {
+          "unit_id": "openalex_w2042837137_d008",
+          "source_grounded_mathematics": "Table 5 counts Gram intervals containing 0, 1, 2, 3, or 4 zeros in successive windows. Windows ending at a bad Gram point are extended to the next good point. Under the stated condition that missing pairs associated with Rosser-rule exceptions cross neither endpoint, a simple zero-counting relation balances empty against multiply occupied intervals. The source reports one-zero intervals decreasing while the other listed occupancies increase.",
+          "conceptual_reading": "The balance relation is an internal consistency invariant for the census, not merely another empirical trend. Adjusting endpoints preserves the preconditions under which total intervals and total zeros can be compared without boundary leakage.",
+          "representation_or_bridge": "The occupancy vector indexed by the number of zeros per Gram interval compresses the zero sequence. Its conservation relation bridges local categories to the fixed total number of zeros in the window.",
+          "boundary_or_failure": "The check fails without the endpoint/no-crossing conditions and does not independently certify the locations of all zeros. The height trend is observational and finite-range.",
+          "uncertainty": "The displayed identity is corrupted in extraction and is therefore not reconstructed here. Its combinatorial role and boundary conditions, plus the direction of the occupancy drift, are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2042837137_d008",
+        "critic_decision": "revise",
+        "supported": [
+          "The source explicitly extends windows ending at bad Gram points to the next good point, states a counting relation under a no-crossing condition for missing zero pairs, and reports decreasing one-zero occupancy with increases in the other listed occupancies.",
+          "The candidate correctly treats the relation as an internal census check and does not reconstruct the corrupted identity."
+        ],
+        "inference": [
+          "Representing the occupancy counts as a vector constrained by total intervals and total zeros is a sound combinatorial reading."
+        ],
+        "unsupported_or_imported": [
+          "The candidate conflates extension to a good Gram point with prevention of missing-pair boundary crossing; the source states these as separate conditions.",
+          "Saying the check fails without the endpoint conditions is too strong: the displayed relation is merely not justified or applicable without them."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The counting identity is corrupt in extraction and exact table cells need layout-aware verification."
+        ],
+        "missed_mechanism": [
+          "The good-Gram-point adjustment ensures a suitable string boundary, whereas the no-crossing condition is an additional hypothesis and should remain separate."
+        ],
+        "revision_instructions": [
+          "Separate the good-endpoint adjustment from the independent no-crossing hypothesis, and replace 'the check fails' with 'the stated relation cannot be applied or justified without those hypotheses.'"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The plots cannot display every zero at printed scale; the authors state that magnification is required, so the captions are evidence summaries rather than direct visual certification.",
+      "line_end": 438,
+      "line_start": 424,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The normalized-spacing formula is readable but typographically degraded; plot-based details require the retained page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The selected graphs realize newly observed exception types, and the closest observed pair is compared using mean local spacing, turning an absolute gap into a scale-free local statistic.",
+      "source_id": "openalex_w2042837137",
+      "source_normalized_sha256": "7a4e793dc533c3ee253d9530401cd318c37c7548f1b08760cd7610e2900a431f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rare exception plots and normalized spacing expose local zero geometry beyond block labels",
+      "unit_artifact_relpath": "depth/units/openalex_w2042837137_d012.txt",
+      "unit_bytes": 1031,
+      "unit_id": "openalex_w2042837137_d012",
+      "unit_sha256": "9e3e9d41145f47aeced25813131e8886286bf13e06264741edc5e0c11aff608e",
+      "unit_type": "geometric-example",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d012.txt",
+      "source": {
+        "source_id": "openalex_w2042837137",
+        "title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+        "authors": [
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1986,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 416,
+          "line_end": 423,
+          "text": "\n     ( 1)                   1,070,232,754                    1,368,002,233\n     ( 2)                     526,196,236                      750,375,860                1,209,834,868\n     ( 3)                     983,377,342                    1,257,209,100\n     ( 4)                     744,719,566\n     ( 5)                     368,714,780                         437,953,501                 958,241,934                 1,003,780,082\n\n\n",
+          "sha256": "e2e63118aaae4a8b96b5b600370ad4fc3cb8412d89e30cf96c0d18e796f95a69"
+        },
+        "after": {
+          "line_start": 439,
+          "line_end": 446,
+          "text": "<!-- source-page: 8 -->\n\n674                     J. VAN DE LUNE, H.J. J. TE RIELE AND D. T. WINTER\n\n\n                                             TABLE 7\n                     Number of exceptions to Rosser' s rule in the intervals\n                   [gn, gn+lOO,ooo,ooo) for n = 0(100,000,000)1,400,000,000\n",
+          "sha256": "832e3447a5751f2079ce0e89f3087558389bee40ca1443d799e61d44d1c4da92"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c940508e9890801dc1cad1293b3290f4bf3a61cc2a12485d55b5dfac4df80aef",
+        "dossier_sha256": "f4d759c5d407f4b14607c2b11b078c860d03e41ed38e5995d20e0556c3c6fe19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Rosser-rule exceptions and local-extreme statistics",
+            "line_end": 533,
+            "line_start": 349,
+            "mathematical_role": "Classifies exceptions, explains recovery of missing zero pairs, studies local extrema of S(t), and relates unusual zero geometry to large values of Z(t)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 438,
+          "line_start": 424,
+          "title": "Rare exception plots and normalized spacing expose local zero geometry beyond block labels",
+          "unit_id": "openalex_w2042837137_d012",
+          "unit_type": "geometric-example",
+          "why_material": "The selected graphs realize newly observed exception types, and the closest observed pair is compared using mean local spacing, turning an absolute gap into a scale-free local statistic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The plots cannot display every zero at printed scale; the authors state that magnification is required, so the captions are evidence summaries rather than direct visual certification.",
+          "representation_dependency": "The normalized-spacing formula is readable but typographically degraded; plot-based details require the retained page image.",
+          "unit_id": "openalex_w2042837137_d012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 515,
+            "line_start": 362,
+            "title": "Exception frequencies and local extrema of S(t) show a slowly thickening tail",
+            "unit_id": "openalex_w2042837137_d011",
+            "unit_type": "distributional-tail-evidence",
+            "why_material": "Counts by successive Gram-index windows suggest growth in common exception types, every exception is paired with a local-extreme computation, threshold exceedances are cataloged, and three successive groups suggest a very slow increase in extreme magnitudes."
+          },
+          {
+            "line_end": 533,
+            "line_start": 518,
+            "title": "Extreme Gram-point values of Z(t) occur beside atypically wide local zero gaps",
+            "unit_id": "openalex_w2042837137_d013",
+            "unit_type": "extremal-configuration",
+            "why_material": "The largest observed positive and negative Gram-point values are linked to explicit neighboring block patterns, and in both cases the adjacent zeros are separated by several local Gram-interval lengths, connecting amplitude extremes to local spacing geometry."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Normalized close-pair spacing, local extrema of S(t), and large Gram-point values of Z(t) provide complementary scale-aware views of rare local zero configurations beyond categorical block types.",
+            "limit": "The examples and tail summaries are observational and plot extraction is incomplete, so they do not establish a universal relation among amplitude, spacing, and exception class.",
+            "parent_local_unit_ids": [
+              "openalex_w2042837137_d011",
+              "openalex_w2042837137_d012",
+              "openalex_w2042837137_d013"
+            ],
+            "title": "Local amplitude, spacing, and exception geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2042837137_d012",
+        "spontaneous": {
+          "unit_id": "openalex_w2042837137_d012",
+          "spontaneous_reading": "Normalizing a zero gap by the local mean spacing turns a visually close pair into a scale-free geometric outlier, so it can be compared across heights rather than judged from an absolute distance."
+        },
+        "directed": {
+          "unit_id": "openalex_w2042837137_d012",
+          "source_grounded_mathematics": "The figures depict first examples of several rare Rosser-rule exception types and the first observed length-nine Gram block. A length-two block of type (2,1) contains the closest zero pair observed by the authors, with normalized spacing (t_{n+1}-t_n)log(t_n)/(2π) reported as 0.00034.",
+          "conceptual_reading": "Block labels identify combinatorial occupancy, whereas normalized spacing resolves finer local geometry within a block. The two views are complementary: the same type may contain configurations with very different internal distances.",
+          "representation_or_bridge": "Graphs of Z(t) supply the local geometric picture, and division by the natural local spacing 2π/log(t) removes the leading height scale.",
+          "boundary_or_failure": "At printed scale the graphs do not visibly resolve every zero, so they are not direct visual certificates. One closest observed pair does not establish a distribution of small gaps.",
+          "uncertainty": "The normalized formula is typographically degraded but recoverable; plot-level details require the retained page image or magnification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2042837137_d012",
+        "critic_decision": "revise",
+        "supported": [
+          "The first plotted rare exception types, first observed length-nine block, closest observed zero pair, and normalized spacing value 0.00034 are explicit.",
+          "The candidate correctly notes that printed graphs do not resolve every zero and that one pair establishes no small-gap distribution."
+        ],
+        "inference": [
+          "Dividing by 2π/log(t) to remove the leading local height scale and obtain a cross-height spacing statistic is supported by the source's description of that quantity as the natural local distance scale."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the same block type may contain configurations with very different internal distances is not evidenced by this single close-pair example.",
+          "The detailed semantic contrast between block labels and occupancy geometry relies on the imported type definition, which this span does not supply."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The normalized formula is typographically degraded and the plot traces are not present in the linearized artifact."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the named examples and normalized-gap mechanism, but remove the within-type variability claim; state only that the normalized spacing adds a local geometric statistic to this example, and flag the type semantics as imported."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "593427a95cb24920249093fae1f2132cc74296bfdefc09e55913bec4c188fd67"
+}

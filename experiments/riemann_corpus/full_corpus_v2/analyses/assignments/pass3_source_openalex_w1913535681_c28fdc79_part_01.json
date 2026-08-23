@@ -1,0 +1,2306 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1913535681_c28fdc79_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1913535681",
+  "unit_count": 14,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The prose is coherent; the displayed bound and square-root expression are layout-degraded, so their exact typography and constants require the retained PDF.",
+      "line_end": 37,
+      "line_start": 16,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the conceptual comparison is prose-grounded, but exact asymptotic formulas depend on scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction distinguishes improvement of constants from improvement of asymptotic form and presents the explicit-formula plus optimal-majorant/minorant treatment of S(t) as the methodological benchmark for a zeta-value bound.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conditional-bound landscape and the S(t) extremal analogy",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u001.txt",
+      "unit_bytes": 2647,
+      "unit_id": "openalex_w1913535681_u001",
+      "unit_sha256": "ebb95d8362ec610f23f8e46051ba2fd8ef6f5656d5e5961d7c3d29e0e4dda0f0",
+      "unit_type": "motivation-and-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u001.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 8,
+          "line_end": 15,
+          "text": "\n\n                                                                                 1. Introduction\n\n\n\n\narXiv:0908.2008v1 [math.NT] 14 Aug 2009\n",
+          "sha256": "74b96e5f9a30d9d5319a6da9aaeeb4028e30da193ac065b14ed79310f661e11e"
+        },
+        "after": {
+          "line_start": 38,
+          "line_end": 45,
+          "text": "                                             In [10] Soundararajan asked for a corresponding treatment for |ζ( 21 + it)| which would\n                                          represent the limit of existing methods for bounding |ζ( 12 + it)| on RH. In this note we\n                                          present such an approach. Using Hadamard’s factorization formula and the explicit formula,\n                                          we show how the problem of bounding |ζ( 21 + it)| may be framed in terms of minorizing the\n                                                             2\n                                          function log 4+xx2\n                                                               by functions whose Fourier transforms are supported in a given interval,\n                                          and drawing upon recent work of Carneiro and Vaaler [1] we find the optimal such minorant.\n",
+          "sha256": "0c9f2a290c8e28914c7d4cb5789619f5a8ee5bc89a6801eae51a2b0f936acce3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 59,
+            "line_start": 1,
+            "mathematical_role": "Historical conditional bounds, analogy with S(t), the bandlimited-minorant program, main result, and the stated gap to conjectural and known extreme sizes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 37,
+          "line_start": 16,
+          "title": "Conditional-bound landscape and the S(t) extremal analogy",
+          "unit_id": "openalex_w1913535681_u001",
+          "unit_type": "motivation-and-method-comparison",
+          "why_material": "The introduction distinguishes improvement of constants from improvement of asymptotic form and presents the explicit-formula plus optimal-majorant/minorant treatment of S(t) as the methodological benchmark for a zeta-value bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The prose is coherent; the displayed bound and square-root expression are layout-degraded, so their exact typography and constants require the retained PDF.",
+          "representation_dependency": "Moderate: the conceptual comparison is prose-grounded, but exact asymptotic formulas depend on scan verification.",
+          "unit_id": "openalex_w1913535681_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 55,
+            "line_start": 38,
+            "title": "Bounding zeta becomes bandlimited minorization of a logarithmic kernel",
+            "unit_id": "openalex_w1913535681_u002",
+            "unit_type": "problem-reframing",
+            "why_material": "The authors explicitly reframe the value-bound problem as minorizing a specific logarithmic function by functions with prescribed Fourier support, link the route to an optimal extremal construction, state the resulting theorem, and contrast it with conjectural and known extreme-value scales."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 21,
+              "line_start": 18,
+              "reason": "Displayed bound has fragmented fraction and layout; quarantined for exact use."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 44,
+              "line_start": 42,
+              "reason": "Target logarithmic kernel is split across malformed display lines."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u001",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u001",
+          "spontaneous_reading": "The mathematical work is the diagnosis of a method plateau: RH-conditional bounds for both the critical-line zeta value and S(t) retain the same asymptotic form while only constants improve. The S(t) result suggests that explicit formulas paired with extremal majorants or minorants can locate the ceiling of a proof technology even when the expected true extremal scale is smaller."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u001",
+          "source_grounded_mathematics": "Under RH, Littlewood's bound for |ζ(1/2+it)| has an exponential log t/log log t scale, with later work improving its constant. The source compares this with S(t), where Goldston and Gonek combine the explicit formula with Selberg's optimal extremal functions to sharpen the constant on the same log t/log log t scale.",
+          "conceptual_reading": "The comparison separates optimization within a representation from a change in asymptotic mechanism. It motivates transferring a successful extremal-function treatment from a zero-counting statistic to zeta values while warning that a method-optimal estimate can remain far from the expected truth.",
+          "representation_or_bridge": "The bridge is the shared explicit-formula architecture: encode the target through a statistic of zeros, replace a difficult kernel or indicator by a one-sided extremal approximation, and transfer spectral control to arithmetic information.",
+          "boundary_or_failure": "Calling the S(t) result the limit of existing methods is a methodological judgment, not an impossibility theorem, and the conjectured smaller scale is not established here.",
+          "uncertainty": "The prose comparison is clear, but the extracted displays for constants and square-root scales are layout-damaged; exact formulas require the retained PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The mathematical program is explicit in lines 38-45. The kernel and quantitative bounds occupy fragmented display lines, so the unit does not silently repair their typesetting.",
+      "line_end": 55,
+      "line_start": 38,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for exact formulas; low for the source-stated bridge from zeta bounds to Fourier-supported minorization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors explicitly reframe the value-bound problem as minorizing a specific logarithmic function by functions with prescribed Fourier support, link the route to an optimal extremal construction, state the resulting theorem, and contrast it with conjectural and known extreme-value scales.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bounding zeta becomes bandlimited minorization of a logarithmic kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u002.txt",
+      "unit_bytes": 1965,
+      "unit_id": "openalex_w1913535681_u002",
+      "unit_sha256": "c6913047b648955af745d425352db368bfe0901d01388bcd3ebc7a88aba5e039",
+      "unit_type": "problem-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u002.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 30,
+          "line_end": 37,
+          "text": "                                          this bound has not been improved except for the size of the implied constant. Recently\n                                          Goldston and Gonek [5] gave an elegant argument leading to the bound |S(t)| ≤ ( 12 +\n                                          o(1)) log t/ log log t. Their method used the explicit formula together with certain optimal\n                                          majorants and minorants of characteristic functions of intervals that were constructed by\n                                          Selberg. The Goldston-Gonek result may reasonably be thought of as having attained the\n                                          limit of existing methods of bounding S(t),\n                                                                                   √ although it seems likely that the true maximal\n                                          size of S(t) is even smaller, perhaps ≪ log t log log t (see [4]).\n",
+          "sha256": "1416ee057d70029703c1e60bffc5d7da15b580695ed2aa73d5b52dd366ac2cdf"
+        },
+        "after": {
+          "line_start": 56,
+          "line_end": 63,
+          "text": "\n                                            The authors are partially supported by a grant from the NSF (DMS-0500711).\n                                                                                           1\n\n<!-- source-page: 2 -->\n\n2                        VORRAPAN CHANDEE AND K. SOUNDARARAJAN\n\n",
+          "sha256": "2ad4d8c252b967a45b2074d8183f7fc8456cbbc867ca05f8614d21242e4c76af"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 59,
+            "line_start": 1,
+            "mathematical_role": "Historical conditional bounds, analogy with S(t), the bandlimited-minorant program, main result, and the stated gap to conjectural and known extreme sizes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 55,
+          "line_start": 38,
+          "title": "Bounding zeta becomes bandlimited minorization of a logarithmic kernel",
+          "unit_id": "openalex_w1913535681_u002",
+          "unit_type": "problem-reframing",
+          "why_material": "The authors explicitly reframe the value-bound problem as minorizing a specific logarithmic function by functions with prescribed Fourier support, link the route to an optimal extremal construction, state the resulting theorem, and contrast it with conjectural and known extreme-value scales."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The mathematical program is explicit in lines 38-45. The kernel and quantitative bounds occupy fragmented display lines, so the unit does not silently repair their typesetting.",
+          "representation_dependency": "High for exact formulas; low for the source-stated bridge from zeta bounds to Fourier-supported minorization.",
+          "unit_id": "openalex_w1913535681_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 37,
+            "line_start": 16,
+            "title": "Conditional-bound landscape and the S(t) extremal analogy",
+            "unit_id": "openalex_w1913535681_u001",
+            "unit_type": "motivation-and-method-comparison",
+            "why_material": "The introduction distinguishes improvement of constants from improvement of asymptotic form and presents the explicit-formula plus optimal-majorant/minorant treatment of S(t) as the methodological benchmark for a zeta-value bound."
+          },
+          {
+            "line_end": 100,
+            "line_start": 65,
+            "title": "Hadamard factorization converts a zeta value into a statistic of zero displacements",
+            "unit_id": "openalex_w1913535681_u003",
+            "unit_type": "representation-change",
+            "why_material": "Taking a ratio of two values of the completed zeta function, using RH to write zeros on the critical line, and then applying the functional equation and Stirling transforms log absolute zeta into a deterministic term minus a sum of a logarithmic kernel over t minus each zero ordinate. This is the bridge that makes a pointwise value accessible to the explicit formula."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 44,
+              "line_start": 42,
+              "reason": "Target logarithmic kernel is split across malformed display lines."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 55,
+              "line_start": 47,
+              "reason": "Main, conjectural, and lower-bound displays have degraded radicals, fractions, and line order; surrounding comparison only is used."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u002",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u002",
+          "spontaneous_reading": "The key move is a one-sided, bandlimited surrogate for a singular logarithmic kernel. Hadamard factorization exposes that kernel, the explicit formula rewards compact Fourier support, and optimal minorization makes the analytic loss as small as possible within the chosen bandwidth."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u002",
+          "source_grounded_mathematics": "Assuming RH, the authors use Hadamard factorization and the explicit formula to recast an upper bound for |ζ(1/2+it)| as the problem of minorizing log((4+x^2)/x^2) by functions with Fourier transform supported in a prescribed interval. They invoke Carneiro-Vaaler to choose the optimal minorant and state a conditional upper bound, while noting conjectural and known extreme-value scales below it.",
+          "conceptual_reading": "A hard value estimate becomes an extremal approximation problem with an explicit resource parameter, the spectral bandwidth. One-sidedness preserves the direction of the desired inequality, while optimality compresses the analytic part of the proof to a best-possible approximation within that class.",
+          "representation_or_bridge": "Hadamard factorization bridges zeta values to a zero-displacement kernel; compact Fourier support then lets the explicit formula bridge the minorized zero statistic to a controlled prime expression.",
+          "boundary_or_failure": "Optimality is relative to the stated minorant class and bandwidth, not a proof that the resulting zeta bound is globally sharp. The gap to expected extreme sizes remains.",
+          "uncertainty": "The source-stated bridge is reliable, but the kernel and quantitative displays are fragmented; their exact typography, constants, and asymptotic terms need scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The surrounding prose states every transition, but equations (2) and (3) and the product quotient should be checked in the retained PDF before exact symbolic reuse.",
+      "line_end": 100,
+      "line_start": 65,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the mechanism is source-grounded in prose, while the normalized product and displayed identities have disrupted fraction and product layout.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Taking a ratio of two values of the completed zeta function, using RH to write zeros on the critical line, and then applying the functional equation and Stirling transforms log absolute zeta into a deterministic term minus a sum of a logarithmic kernel over t minus each zero ordinate. This is the bridge that makes a pointwise value accessible to the explicit formula.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hadamard factorization converts a zeta value into a statistic of zero displacements",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u003.txt",
+      "unit_bytes": 2242,
+      "unit_id": "openalex_w1913535681_u003",
+      "unit_sha256": "ae7e0631beabe2438c8b412edd443834ab40ec1a24ca0c4df88cd365276aa6d5",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u003.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 57,
+          "line_end": 64,
+          "text": "                                            The authors are partially supported by a grant from the NSF (DMS-0500711).\n                                                                                           1\n\n<!-- source-page: 2 -->\n\n2                        VORRAPAN CHANDEE AND K. SOUNDARARAJAN\n\n                                 2. Proof of Theorem 1.1\n",
+          "sha256": "d68a55fc43e426fadc09c1091b8ac654d2113a2ade0f849e9ba76f94a4300a80"
+        },
+        "after": {
+          "line_start": 101,
+          "line_end": 108,
+          "text": "Proposition 2.1. Let ∆ denote a positive real number. There is an entire function g∆ which\nsatisfies the following properties:\n(i). For all real x we have\n                                       1\n                                  −C        ≤ g∆ (x) ≤ f (x),\n                                     1 + x2\nfor some positive constant C. For any complex number x + iy we have\n                                                     ∆2\n",
+          "sha256": "5412f7659adab11512d2aea04ee3fa31017e1b5192fd311b1ed90b2c00c03a8e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1.1",
+            "line_end": 176,
+            "line_start": 60,
+            "mathematical_role": "Hadamard-factorization reduction to a zero sum, the extremal-minorant contract, explicit-formula transfer, and bandwidth choice."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 100,
+          "line_start": 65,
+          "title": "Hadamard factorization converts a zeta value into a statistic of zero displacements",
+          "unit_id": "openalex_w1913535681_u003",
+          "unit_type": "representation-change",
+          "why_material": "Taking a ratio of two values of the completed zeta function, using RH to write zeros on the critical line, and then applying the functional equation and Stirling transforms log absolute zeta into a deterministic term minus a sum of a logarithmic kernel over t minus each zero ordinate. This is the bridge that makes a pointwise value accessible to the explicit formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The surrounding prose states every transition, but equations (2) and (3) and the product quotient should be checked in the retained PDF before exact symbolic reuse.",
+          "representation_dependency": "High: the mechanism is source-grounded in prose, while the normalized product and displayed identities have disrupted fraction and product layout.",
+          "unit_id": "openalex_w1913535681_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 55,
+            "line_start": 38,
+            "title": "Bounding zeta becomes bandlimited minorization of a logarithmic kernel",
+            "unit_id": "openalex_w1913535681_u002",
+            "unit_type": "problem-reframing",
+            "why_material": "The authors explicitly reframe the value-bound problem as minorizing a specific logarithmic function by functions with prescribed Fourier support, link the route to an optimal extremal construction, state the resulting theorem, and contrast it with conjectural and known extreme-value scales."
+          },
+          {
+            "line_end": 123,
+            "line_start": 101,
+            "title": "The minorant is specified by order, spectral support, and exact approximation loss",
+            "unit_id": "openalex_w1913535681_u004",
+            "unit_type": "extremal-function-contract",
+            "why_material": "Proposition 2.1 packages precisely the properties later consumed by the proof: pointwise minorization with real-axis lower control and complex growth, compact Fourier support with bounded transform, and an explicit L1 deficit. It separates the analytic approximation problem from the number-theoretic transfer."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Hadamard factorization represents the value through a zero-displacement kernel; a bandwidth-controlled minorant makes the explicit formula convert that statistic into a truncated prime expression, and dilation plus bandwidth choice controls the approximation cost.",
+            "limit": "This is an RH-conditional, solver-specific analytic pipeline; the exact equations and constants are formula-dependent and need scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u003",
+              "openalex_w1913535681_u004",
+              "openalex_w1913535681_u005",
+              "openalex_w1913535681_u011"
+            ],
+            "title": "From value to zeros to primes through spectral localization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 85,
+              "line_start": 68,
+              "reason": "Hadamard product and quotient displays are substantially fragmented; prose-grounded transformation retained only at conceptual level."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 87,
+              "line_start": 86,
+              "reason": "Blank separation within the proof."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 91,
+              "line_start": 89,
+              "reason": "Equation (2) is formula-layout dependent."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 92,
+              "line_start": 92,
+              "reason": "Blank separator."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 96,
+              "line_start": 94,
+              "reason": "Kernel fraction is split vertically and requires the scan."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 106,
+              "line_start": 104,
+              "reason": "Pointwise estimate display is layout-sensitive."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 110,
+              "line_start": 108,
+              "reason": "Complex bound display is fragmented."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u003",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u003",
+          "spontaneous_reading": "Hadamard's product turns a pointwise zeta value into an aggregate of distances from t to zero ordinates. This is the decisive representation change: instead of attacking ζ directly, the proof controls a translated logarithmic kernel summed over zeros, an object the explicit formula can later recognize."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u003",
+          "source_grounded_mathematics": "The source forms a ratio of completed zeta values in Hadamard's factorization, writes each nontrivial zero as 1/2+iγ under RH, and uses the functional equation and Stirling's formula. It obtains log|ζ(1/2+it)| as a deterministic logarithmic term plus bounded error minus one half of a sum of f(t-γ), with f the displayed logarithmic ratio.",
+          "conceptual_reading": "A multiplicative entire-function product is compressed by logarithms into an additive displacement statistic. Because the zero sum enters with a minus sign, a lower approximation to f becomes an upper bound for the original zeta value.",
+          "representation_or_bridge": "The completed function ξ supplies the value-to-zeros bridge, the translated kernel f(t-γ) is the intermediate object, and its eventual bandlimited minorant is designed for the zeros-to-primes explicit formula.",
+          "boundary_or_failure": "The reduction is RH-conditional and depends on the chosen quotient, gamma factors, and normalization. This unit sets up the minorization step but does not itself perform the explicit-formula transfer.",
+          "uncertainty": "The prose establishes the mechanism, but the Hadamard quotient and equations (2)-(3) have disrupted product and fraction layout; exact symbolic reuse requires the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The three-part proposition is legible in prose, but the bound and integral displays are formula-risk and need scan verification for exact constants.",
+      "line_end": 123,
+      "line_start": 101,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for constants and normalization conventions; low for the three-property architecture.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 2.1 packages precisely the properties later consumed by the proof: pointwise minorization with real-axis lower control and complex growth, compact Fourier support with bounded transform, and an explicit L1 deficit. It separates the analytic approximation problem from the number-theoretic transfer.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The minorant is specified by order, spectral support, and exact approximation loss",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u004.txt",
+      "unit_bytes": 1253,
+      "unit_id": "openalex_w1913535681_u004",
+      "unit_sha256": "0ce437c9c0871e051fe6196176ce46e38ea213d08d39b7e218a20e4e1ec0a830",
+      "unit_type": "extremal-function-contract",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u004.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 93,
+          "line_end": 100,
+          "text": "where we have set\n                                                      4 + x2\n(3)                                     f (x) = log          .\n                                                        x2\n  The proof of Theorem 1.1 now proceeds by replacing f (t−γ) by a carefully chosen function\nthat minorizes it, and then invoking the explicit formula. The properties of the appropriate\nminorant function are detailed in the following Proposition which we shall demonstrate in\nthe next section.\n",
+          "sha256": "b2a03183fd34eb35b880bd51f2fbf0de688dc697a877c466869f140df17b5612"
+        },
+        "after": {
+          "line_start": 124,
+          "line_end": 131,
+          "text": "<!-- source-page: 3 -->\n\nBOUNDING |ζ( 21 + it)| ON THE RIEMANN HYPOTHESIS                          3\n\n  Returning to (2), we have for any positive ∆\n                               X              X\n(4)                               f (t − γ) ≥   g∆ (t − γ).\n                                  γ               γ\n",
+          "sha256": "90ca402376e8847d2dfacff383fa3be0fba91c9a6a406ca854aa559c9e813978"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1.1",
+            "line_end": 176,
+            "line_start": 60,
+            "mathematical_role": "Hadamard-factorization reduction to a zero sum, the extremal-minorant contract, explicit-formula transfer, and bandwidth choice."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 123,
+          "line_start": 101,
+          "title": "The minorant is specified by order, spectral support, and exact approximation loss",
+          "unit_id": "openalex_w1913535681_u004",
+          "unit_type": "extremal-function-contract",
+          "why_material": "Proposition 2.1 packages precisely the properties later consumed by the proof: pointwise minorization with real-axis lower control and complex growth, compact Fourier support with bounded transform, and an explicit L1 deficit. It separates the analytic approximation problem from the number-theoretic transfer."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The three-part proposition is legible in prose, but the bound and integral displays are formula-risk and need scan verification for exact constants.",
+          "representation_dependency": "High for constants and normalization conventions; low for the three-property architecture.",
+          "unit_id": "openalex_w1913535681_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 100,
+            "line_start": 65,
+            "title": "Hadamard factorization converts a zeta value into a statistic of zero displacements",
+            "unit_id": "openalex_w1913535681_u003",
+            "unit_type": "representation-change",
+            "why_material": "Taking a ratio of two values of the completed zeta function, using RH to write zeros on the critical line, and then applying the functional equation and Stirling transforms log absolute zeta into a deterministic term minus a sum of a logarithmic kernel over t minus each zero ordinate. This is the bridge that makes a pointwise value accessible to the explicit formula."
+          },
+          {
+            "line_end": 175,
+            "line_start": 128,
+            "title": "The explicit formula trades the minorized zero sum for a short prime expression",
+            "unit_id": "openalex_w1913535681_u005",
+            "unit_type": "theorem-proof-mechanism",
+            "why_material": "After replacing the zero kernel by the minorant, the explicit formula moves the problem from zeros to primes. Fourier support truncates the arithmetic side, the L1 deficit controls the archimedean contribution, and the bandwidth is chosen to balance the main loss, the prime sum, and the growth error, yielding the theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Hadamard factorization represents the value through a zero-displacement kernel; a bandwidth-controlled minorant makes the explicit formula convert that statistic into a truncated prime expression, and dilation plus bandwidth choice controls the approximation cost.",
+            "limit": "This is an RH-conditional, solver-specific analytic pipeline; the exact equations and constants are formula-dependent and need scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u003",
+              "openalex_w1913535681_u004",
+              "openalex_w1913535681_u005",
+              "openalex_w1913535681_u011"
+            ],
+            "title": "From value to zeros to primes through spectral localization"
+          },
+          {
+            "claim": "The same minorant and scaling architecture carries to completed L-functions under GRH, but the final conductor-scale bound changes according to whether Ramanujan-type coefficient control or only the weaker Euler-product consequence is available.",
+            "limit": "The generalized formulas are heavily extraction-sensitive, and the claimed dependence should not be detached from the paper's stated analytic assumptions.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u004",
+              "openalex_w1913535681_u011",
+              "openalex_w1913535681_u014"
+            ],
+            "title": "Coefficient control determines the strength of the L-function extension"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 96,
+              "line_start": 94,
+              "reason": "Kernel fraction is split vertically and requires the scan."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 106,
+              "line_start": 104,
+              "reason": "Pointwise estimate display is layout-sensitive."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 110,
+              "line_start": 108,
+              "reason": "Complex bound display is fragmented."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 115,
+              "line_start": 113,
+              "reason": "Fourier integral display requires exact typesetting."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 123,
+              "line_start": 118,
+              "reason": "Exact L1-distance display has broken alignment."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 131,
+              "line_start": 129,
+              "reason": "Minorized zero-sum inequality is display-dependent."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u004",
+          "spontaneous_reading": "Proposition 2.1 is an interface specification for the proof. Pointwise order preserves the inequality, complex growth makes the test function admissible, spectral support limits the arithmetic side, and the exact L1 deficit prices the approximation."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u004",
+          "source_grounded_mathematics": "For each positive bandwidth Δ, the proposition asserts an entire minorant g_Δ of f with a decaying real-axis lower bound and controlled complex growth, a real Fourier transform vanishing outside |ξ|<Δ with uniform size control, and an explicit integral of f-g_Δ.",
+          "conceptual_reading": "The construction is modularized by downstream obligations rather than by its formula. The three clauses respectively certify safe substitution, compatibility and truncation under the explicit formula, and the quantitative loss introduced by replacing f.",
+          "representation_or_bridge": "The entire-function representation couples complex exponential type to finite Fourier bandwidth, while the L1 comparison turns approximation quality into the archimedean contribution later appearing in the zeta estimate.",
+          "boundary_or_failure": "This proposition states existence and properties, not their derivation. Its usefulness depends on all clauses simultaneously; spectral localization without pointwise order or error control would not suffice.",
+          "uncertainty": "The three-property architecture is clear, but exact constants, denominator powers, Fourier endpoint conventions, and the displayed L1 value are formula-sensitive and need scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The application and final bandwidth choice are explicit in prose. The extracted explicit formula and inequalities are not safe for verbatim symbolic reconstruction.",
+      "line_end": 175,
+      "line_start": 128,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact coefficients, transforms, and error terms require comparison with the PDF; only the stated transfer-and-balance mechanism is accepted directly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After replacing the zero kernel by the minorant, the explicit formula moves the problem from zeros to primes. Fourier support truncates the arithmetic side, the L1 deficit controls the archimedean contribution, and the bandwidth is chosen to balance the main loss, the prime sum, and the growth error, yielding the theorem.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The explicit formula trades the minorized zero sum for a short prime expression",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u005.txt",
+      "unit_bytes": 3160,
+      "unit_id": "openalex_w1913535681_u005",
+      "unit_sha256": "bd6e8635785e5acda25497fd20435f1f07cec98dbf18745c8930c9870d6e135a",
+      "unit_type": "theorem-proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u005.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 120,
+          "line_end": 127,
+          "text": "                                                                            \u0011\n                        (f (x) − g∆ (x))dx =     2 log 2 − 2 log(1 + e     ) .\n                     −∞                      ∆\n\n<!-- source-page: 3 -->\n\nBOUNDING |ζ( 21 + it)| ON THE RIEMANN HYPOTHESIS                          3\n\n",
+          "sha256": "ce5da6ed6acdfc692315434d70013017851294b86a3d1c36493a1f3d27b60597"
+        },
+        "after": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "\n       3. Proof of Proposition 2.1: The work of Carneiro and Vaaler\nGiven a function from R to R Carneiro and Vaaler consider the problem of finding optimal\nmajorants and minorants for this function, with the additional property that the majorants\nand minorants are restrictions to the real axis of complex analytic functions of exponential\ntype at most 2π. The majorants and minorants are to be optimal in the sense of minimizing\nthe L1 distance from the given function. This problem has a long history, going back to\nwork of Beurling for the signum function which was rediscovered and used by Selberg to\n",
+          "sha256": "0403c7ad672e07eadcde97744e2d7db456cc77b61c60ccbfb1a20b6165167b2b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1.1",
+            "line_end": 176,
+            "line_start": 60,
+            "mathematical_role": "Hadamard-factorization reduction to a zero sum, the extremal-minorant contract, explicit-formula transfer, and bandwidth choice."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 175,
+          "line_start": 128,
+          "title": "The explicit formula trades the minorized zero sum for a short prime expression",
+          "unit_id": "openalex_w1913535681_u005",
+          "unit_type": "theorem-proof-mechanism",
+          "why_material": "After replacing the zero kernel by the minorant, the explicit formula moves the problem from zeros to primes. Fourier support truncates the arithmetic side, the L1 deficit controls the archimedean contribution, and the bandwidth is chosen to balance the main loss, the prime sum, and the growth error, yielding the theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The application and final bandwidth choice are explicit in prose. The extracted explicit formula and inequalities are not safe for verbatim symbolic reconstruction.",
+          "representation_dependency": "High: exact coefficients, transforms, and error terms require comparison with the PDF; only the stated transfer-and-balance mechanism is accepted directly.",
+          "unit_id": "openalex_w1913535681_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 123,
+            "line_start": 101,
+            "title": "The minorant is specified by order, spectral support, and exact approximation loss",
+            "unit_id": "openalex_w1913535681_u004",
+            "unit_type": "extremal-function-contract",
+            "why_material": "Proposition 2.1 packages precisely the properties later consumed by the proof: pointwise minorization with real-axis lower control and complex growth, compact Fourier support with bounded transform, and an explicit L1 deficit. It separates the analytic approximation problem from the number-theoretic transfer."
+          },
+          {
+            "line_end": 215,
+            "line_start": 177,
+            "title": "A measure representation generates an optimal entire minorant",
+            "unit_id": "openalex_w1913535681_u006",
+            "unit_type": "general-construction",
+            "why_material": "The cited extremal framework starts from a nonnegative measure satisfying an integrability condition, represents a real function as a mixture of exponential kernels, and supplies an interpolation-series entire minorant of exponential type that minimizes L1 distance. This is a reusable construction principle rather than a source-specific calculation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Hadamard factorization represents the value through a zero-displacement kernel; a bandwidth-controlled minorant makes the explicit formula convert that statistic into a truncated prime expression, and dilation plus bandwidth choice controls the approximation cost.",
+            "limit": "This is an RH-conditional, solver-specific analytic pipeline; the exact equations and constants are formula-dependent and need scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u003",
+              "openalex_w1913535681_u004",
+              "openalex_w1913535681_u005",
+              "openalex_w1913535681_u011"
+            ],
+            "title": "From value to zeros to primes through spectral localization"
+          },
+          {
+            "claim": "Once the extremal minorant sharpens the zero-side approximation, estimating the resulting prime sum becomes the stated barrier to better pointwise bounds, while studying how often it is large can still support moment analysis.",
+            "limit": "The paper identifies the barrier in this method; it does not prove that no other method can improve the bound.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u005",
+              "openalex_w1913535681_u012"
+            ],
+            "title": "Analytic approximation gain exposes an arithmetic bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 123,
+              "line_start": 118,
+              "reason": "Exact L1-distance display has broken alignment."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 131,
+              "line_start": 129,
+              "reason": "Minorized zero-sum inequality is display-dependent."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 132,
+              "line_start": 132,
+              "reason": "Blank separator."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 148,
+              "line_start": 137,
+              "reason": "Hypothesis continuation and explicit formula are merged and fragmented by extraction."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 149,
+              "line_start": 149,
+              "reason": "Blank separator."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 160,
+              "line_start": 152,
+              "reason": "Merged prose and archimedean integral evaluation have disrupted equation layout."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 174,
+              "line_start": 163,
+              "reason": "Main inequality and prime-sum estimate are formula-fragmented."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 176,
+              "line_start": 176,
+              "reason": "Blank separator."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u005",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u005",
+          "spontaneous_reading": "The proof now cashes in the minorant contract: order moves from f to g_Δ on the zero side, the explicit formula exchanges zeros for primes, compact spectral support shortens the prime contribution, and Δ is tuned so approximation loss, prime growth, and complex-evaluation error coexist at the desired scale."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u005",
+          "source_grounded_mathematics": "The inequality g_Δ≤f is summed over zero displacements and Lemma 2.2 is applied to h(z)=g_Δ(t-z). The explicit formula produces gamma-factor terms and a von Mangoldt weighted prime expression involving the Fourier transform of g_Δ. The proposition's growth, support, and L1 clauses bound the remaining terms, after which a logarithmic choice of πΔ yields Theorem 1.1.",
+          "conceptual_reading": "The argument decomposes the final bound into an approximation cost, an arithmetic prime sum, and an admissibility or growth error. Bandwidth is a balancing variable: increasing it improves the surrogate but expands or enlarges the arithmetic burden.",
+          "representation_or_bridge": "The translated minorant is the bridge object accepted by both representations: it compares to the zero kernel pointwise and its Fourier transform is read by the explicit formula as prime data.",
+          "boundary_or_failure": "The final estimate still relies on bounding the prime sum rather than eliminating it, and the chosen Δ is tailored to this error balance. The unit does not show that this balance is optimal among all proof methods.",
+          "uncertainty": "The application and qualitative balance are explicit, but the extracted explicit formula, transform arguments, coefficients, and error terms are unsafe for exact reconstruction without the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The optimality and minorization statements are clear in lines 211-215; the measure and interpolation formulas are extraction-fragmented and should be checked at the scan.",
+      "line_end": 215,
+      "line_start": 177,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate to high: the semantic measure-to-extremizer map is recoverable, while the exact series indexing and normalization are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The cited extremal framework starts from a nonnegative measure satisfying an integrability condition, represents a real function as a mixture of exponential kernels, and supplies an interpolation-series entire minorant of exponential type that minimizes L1 distance. This is a reusable construction principle rather than a source-specific calculation.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A measure representation generates an optimal entire minorant",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u006.txt",
+      "unit_bytes": 2332,
+      "unit_id": "openalex_w1913535681_u006",
+      "unit_sha256": "53f081b00ad1246dedb7b5dcd1641c319353ae3c9c07018feb348061c59e0e61",
+      "unit_type": "general-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u006.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 169,
+          "line_end": 176,
+          "text": "                                                               2          2π          1 + ∆t\n  Since                           ∞\n                                 X   Λ(n)  \u0010 log n \u0011\n                                     √ ĝ∆           ≪ eπ∆ ,\n                                 n=2\n                                       n      2π\ntaking π∆ = log log t − 3 log log log t in (5) we obtain our Theorem.\n\n",
+          "sha256": "40f79d1de562941d1c12c2afefbb3accf28dc1526db6834a0864c7350f5a75e8"
+        },
+        "after": {
+          "line_start": 216,
+          "line_end": 223,
+          "text": "  Let ∆ be a given positive real number, and consider the measure\n                                                2(1 − cos(2∆λ))\n                                 dµ∆ (λ) =                      dλ.\n                                                       λ\nThis measure satisfies (6), and moreover\n         Z ∞                                          \u0010 4∆2 + x2 \u0011\n                             2(1 − cos(2∆λ))\n(7)          (e−λ|x| − e−λ )                 dλ = log       2\n",
+          "sha256": "6279491214ce3c291aef064b1c0d32614640cc26ed1af250968ce1f075677363"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Proposition 2.1",
+            "line_end": 340,
+            "line_start": 177,
+            "mathematical_role": "Carneiro-Vaaler extremal framework, source-specific measure, interpolation bounds, Fourier support, L1 error, and rescaling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 215,
+          "line_start": 177,
+          "title": "A measure representation generates an optimal entire minorant",
+          "unit_id": "openalex_w1913535681_u006",
+          "unit_type": "general-construction",
+          "why_material": "The cited extremal framework starts from a nonnegative measure satisfying an integrability condition, represents a real function as a mixture of exponential kernels, and supplies an interpolation-series entire minorant of exponential type that minimizes L1 distance. This is a reusable construction principle rather than a source-specific calculation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The optimality and minorization statements are clear in lines 211-215; the measure and interpolation formulas are extraction-fragmented and should be checked at the scan.",
+          "representation_dependency": "Moderate to high: the semantic measure-to-extremizer map is recoverable, while the exact series indexing and normalization are formula-dependent.",
+          "unit_id": "openalex_w1913535681_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 175,
+            "line_start": 128,
+            "title": "The explicit formula trades the minorized zero sum for a short prime expression",
+            "unit_id": "openalex_w1913535681_u005",
+            "unit_type": "theorem-proof-mechanism",
+            "why_material": "After replacing the zero kernel by the minorant, the explicit formula moves the problem from zeros to primes. Fourier support truncates the arithmetic side, the L1 deficit controls the archimedean contribution, and the bandwidth is chosen to balance the main loss, the prime sum, and the growth error, yielding the theorem."
+          },
+          {
+            "line_end": 237,
+            "line_start": 216,
+            "title": "A tailored measure realizes the scaled logarithmic kernel",
+            "unit_id": "openalex_w1913535681_u007",
+            "unit_type": "kernel-realization",
+            "why_material": "The authors choose a concrete nonnegative measure, identify its exponential-mixture integral with a scaled and shifted version of the target logarithmic kernel, and thereby obtain the corresponding optimal Carneiro-Vaaler function. This connects the abstract extremal theorem to the zeta kernel."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The measure-based Carneiro-Vaaler construction supplies an L1-optimal minorant for the represented kernel class, whereas the convolution-style construction is nonoptimal but reaches related shifted logarithmic kernels outside that framework.",
+            "limit": "The source gives this comparison for the displayed examples; it does not establish a universal superiority criterion for all kernels or downstream bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u006",
+              "openalex_w1913535681_u007",
+              "openalex_w1913535681_u010",
+              "openalex_w1913535681_u013"
+            ],
+            "title": "Optimality versus kernel-class flexibility"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 174,
+              "line_start": 163,
+              "reason": "Main inequality and prime-sum estimate are formula-fragmented."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 176,
+              "line_start": 176,
+              "reason": "Blank separator."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 191,
+              "line_start": 187,
+              "reason": "Measure integrability condition is split across display lines."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 210,
+              "line_start": 197,
+              "reason": "Exponential-mixture definition and interpolation series have degraded ordering and fractions."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 225,
+              "line_start": 217,
+              "reason": "Chosen measure and kernel-realization identity require the original display."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u006",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u006",
+          "spontaneous_reading": "The reusable construction is to encode a target function by a nonnegative measure mixing elementary exponentials, then let a cardinal interpolation series produce its best entire minorant. A function-specific extremal problem is thereby reduced to finding the right measure representation."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u006",
+          "source_grounded_mathematics": "Carneiro and Vaaler's framework begins with a nonnegative measure μ satisfying an integrability condition and defines f_μ as an integral mixture of e^{-λ|x|}-e^{-λ}. An interpolation series G_μ converges locally uniformly to an entire function of exponential type at most 2π, lies below f_μ on the real axis, and minimizes L1 distance among minorants of that type.",
+          "conceptual_reading": "The measure acts as a latent coordinate system for a class of kernels. Linearity of the mixture permits synthesis from elementary pieces, while the extremal theorem turns this representation into a canonical best approximation under a fixed spectral-complexity constraint.",
+          "representation_or_bridge": "The chain is nonnegative measure to exponential-mixture kernel to interpolation entire function to L1-optimal minorant; the next unit specializes the measure so this abstract chain reaches the zeta kernel.",
+          "boundary_or_failure": "The result is imported from Carneiro-Vaaler and applies only to the represented function class under its integrability hypothesis and fixed exponential type. No universal extremizer for arbitrary kernels is claimed.",
+          "uncertainty": "The measure-to-extremizer semantics and optimality statement are clear, while the exact integrability condition, indexing, derivatives, and normalization of the interpolation series require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The prose explains the identity check through agreement at x=1, matching derivatives, and continuity at x=0. Exact displayed formulas remain scan-dependent.",
+      "line_end": 237,
+      "line_start": 216,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for the measure density, scaling, and interpolation series; the realization strategy is prose-grounded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors choose a concrete nonnegative measure, identify its exponential-mixture integral with a scaled and shifted version of the target logarithmic kernel, and thereby obtain the corresponding optimal Carneiro-Vaaler function. This connects the abstract extremal theorem to the zeta kernel.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A tailored measure realizes the scaled logarithmic kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u007.txt",
+      "unit_bytes": 1457,
+      "unit_id": "openalex_w1913535681_u007",
+      "unit_sha256": "ee33cd6039c9f8b58f6ac81c799c900c778f352b334d06b57ff8a2d71166a096",
+      "unit_type": "kernel-realization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u007.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 208,
+          "line_end": 215,
+          "text": "                         N →∞        π      n=−N\n                                                      (z − n + 12 )2 (z − n + 12 )\n\nTheorem 1.1 of Carneiro and Vaaler then demonstrates that Gµ (z) converges uniformly on\ncompact subsets of C, defines an entire function of exponential type at most 2π, and that for\nreal x we have Gµ (x) ≤ fµ (x). Moreover they show that Gµ minimizes the L1 distance from\nfµ (in particular fµ − Gµ is integrable) among all minorants of fµ with exponential type at\nmost 2π.\n",
+          "sha256": "cc079b301965bfbaab6b4b384b4b117ea38c6876839ba7d1ea306a2c24d25431"
+        },
+        "after": {
+          "line_start": 238,
+          "line_end": 245,
+          "text": "  First we record an upper bound for G∆ (z). By an application of the Poisson summation\nformula we see that\n                           ∞                   ∞ \u0010\n              \u0010 cos πz \u00112 X        1          X    sin(π(z − n + 21 )) \u00112\n                                       1 2 =                    1         = 1,\n                  π      n=−∞\n                              (z − n + 2\n                                         )   n=−∞\n",
+          "sha256": "d545c85f3b66a6fa21ad0dd16027d8041af39e3610000959f5d688bd73637b77"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Proposition 2.1",
+            "line_end": 340,
+            "line_start": 177,
+            "mathematical_role": "Carneiro-Vaaler extremal framework, source-specific measure, interpolation bounds, Fourier support, L1 error, and rescaling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 237,
+          "line_start": 216,
+          "title": "A tailored measure realizes the scaled logarithmic kernel",
+          "unit_id": "openalex_w1913535681_u007",
+          "unit_type": "kernel-realization",
+          "why_material": "The authors choose a concrete nonnegative measure, identify its exponential-mixture integral with a scaled and shifted version of the target logarithmic kernel, and thereby obtain the corresponding optimal Carneiro-Vaaler function. This connects the abstract extremal theorem to the zeta kernel."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The prose explains the identity check through agreement at x=1, matching derivatives, and continuity at x=0. Exact displayed formulas remain scan-dependent.",
+          "representation_dependency": "High for the measure density, scaling, and interpolation series; the realization strategy is prose-grounded.",
+          "unit_id": "openalex_w1913535681_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 215,
+            "line_start": 177,
+            "title": "A measure representation generates an optimal entire minorant",
+            "unit_id": "openalex_w1913535681_u006",
+            "unit_type": "general-construction",
+            "why_material": "The cited extremal framework starts from a nonnegative measure satisfying an integrability condition, represents a real function as a mixture of exponential kernels, and supplies an interpolation-series entire minorant of exponential type that minimizes L1 distance. This is a reusable construction principle rather than a source-specific calculation."
+          },
+          {
+            "line_end": 261,
+            "line_start": 238,
+            "title": "Interpolation and Poisson summation give the required complex-plane bound",
+            "unit_id": "openalex_w1913535681_u008",
+            "unit_type": "growth-control",
+            "why_material": "A cardinal-interpolation identity obtained via Poisson summation rewrites the extremal function so elementary decay estimates on the target kernel and its derivative yield the exponential-type growth bound needed by the explicit formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The measure-based Carneiro-Vaaler construction supplies an L1-optimal minorant for the represented kernel class, whereas the convolution-style construction is nonoptimal but reaches related shifted logarithmic kernels outside that framework.",
+            "limit": "The source gives this comparison for the displayed examples; it does not establish a universal superiority criterion for all kernels or downstream bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u006",
+              "openalex_w1913535681_u007",
+              "openalex_w1913535681_u010",
+              "openalex_w1913535681_u013"
+            ],
+            "title": "Optimality versus kernel-class flexibility"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 210,
+              "line_start": 197,
+              "reason": "Exponential-mixture definition and interpolation series have degraded ordering and fractions."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 225,
+              "line_start": 217,
+              "reason": "Chosen measure and kernel-realization identity require the original display."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 236,
+              "line_start": 229,
+              "reason": "Specialized interpolation series is severely fragmented."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 261,
+              "line_start": 240,
+              "reason": "Cardinal identity, interpolation formula, and growth estimates are display-heavy with broken alignment."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u007",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u007",
+          "spontaneous_reading": "A carefully chosen oscillatory measure realizes the scaled logarithmic kernel inside the general extremal framework. The identity is checked structurally by anchoring both sides at one point, matching derivatives, and handling the singular point by continuity, rather than by treating the integral as a black-box coincidence."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u007",
+          "source_grounded_mathematics": "For positive Δ the source chooses a nonnegative measure with density built from 1-cos(2Δλ). Its exponential-mixture integral is identified with f(x/Δ)-f(1/Δ), a scaled and shifted version f_Δ of the target logarithmic kernel. The corresponding Carneiro-Vaaler interpolation function G_Δ is then the optimal minorant for f_Δ.",
+          "conceptual_reading": "The main design step is representation selection: choose a measure whose mixture algebra matches the target after scaling and offset. This converts a source-specific kernel into an instance of a general extremal theorem.",
+          "representation_or_bridge": "The tailored measure bridges the logarithmic zeta kernel to the abstract μ-indexed family, while scaling and the additive offset align the target with the framework's normalization.",
+          "boundary_or_failure": "The identity needs special care at x=0 and its success is specific to this represented kernel. The unit does not yet transport G_Δ back to the final bandwidth-Δ minorant.",
+          "uncertainty": "The derivative-based verification strategy is prose-grounded, but the measure density, integral identity, scale factors, and specialized interpolation display are extraction-sensitive and need the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span is display-heavy and extraction order is unreliable. Accept only the stated use of Poisson summation and the prose-described deduction; verify equations (8) and (9) against the PDF.",
+      "line_end": 261,
+      "line_start": 238,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the derivation depends on the exact interpolation identity and complex bound.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A cardinal-interpolation identity obtained via Poisson summation rewrites the extremal function so elementary decay estimates on the target kernel and its derivative yield the exponential-type growth bound needed by the explicit formula.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Interpolation and Poisson summation give the required complex-plane bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u008.txt",
+      "unit_bytes": 1413,
+      "unit_id": "openalex_w1913535681_u008",
+      "unit_sha256": "fee4ddc3cd2637f3f3f77fd48684cefad41be29f22e000ce3fe23e212542669d",
+      "unit_type": "growth-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u008.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 230,
+          "line_end": 237,
+          "text": "                             \u0010 cos πz \u00112 X   f (n − 1 )\n                                                      ∆      2\n                                                                    f∆′ (n − 12 ) \u0011\n                  G∆ (z) =                                        +\n                                 π         n=−∞\n                                                    (z − n + 12 )2 (z − n + 12 )\n\ndenote the corresponding optimal function of Carneiro and Vaaler.\n",
+          "sha256": "3d8265b963e645178d06281a3099b0e2806ab73c7797ed327a3d48c32cbd3e58"
+        },
+        "after": {
+          "line_start": 262,
+          "line_end": 269,
+          "text": " We now cull from Theorem 1.1 of Carneiro and Vaaler [1] various facts about the function\nG∆ (z). This function is entire of exponential type at most 2π, and for real x we have that\nG∆ (x) ≤ f∆ (x). We expect that G∆ (x) + f (1/∆) is non-negative for all real x, but for our\n\n<!-- source-page: 5 -->\n\nBOUNDING |ζ( 21 + it)| ON THE RIEMANN HYPOTHESIS                         5\n\n",
+          "sha256": "a2796090449e82dcd7815d72b12c19ca3e64a686d46953bd79d4ce0105ef2952"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Proposition 2.1",
+            "line_end": 340,
+            "line_start": 177,
+            "mathematical_role": "Carneiro-Vaaler extremal framework, source-specific measure, interpolation bounds, Fourier support, L1 error, and rescaling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 261,
+          "line_start": 238,
+          "title": "Interpolation and Poisson summation give the required complex-plane bound",
+          "unit_id": "openalex_w1913535681_u008",
+          "unit_type": "growth-control",
+          "why_material": "A cardinal-interpolation identity obtained via Poisson summation rewrites the extremal function so elementary decay estimates on the target kernel and its derivative yield the exponential-type growth bound needed by the explicit formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span is display-heavy and extraction order is unreliable. Accept only the stated use of Poisson summation and the prose-described deduction; verify equations (8) and (9) against the PDF.",
+          "representation_dependency": "High: the derivation depends on the exact interpolation identity and complex bound.",
+          "unit_id": "openalex_w1913535681_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 237,
+            "line_start": 216,
+            "title": "A tailored measure realizes the scaled logarithmic kernel",
+            "unit_id": "openalex_w1913535681_u007",
+            "unit_type": "kernel-realization",
+            "why_material": "The authors choose a concrete nonnegative measure, identify its exponential-mixture integral with a scaled and shifted version of the target logarithmic kernel, and thereby obtain the corresponding optimal Carneiro-Vaaler function. This connects the abstract extremal theorem to the zeta kernel."
+          },
+          {
+            "line_end": 288,
+            "line_start": 262,
+            "title": "Pairing symmetric interpolation nodes yields sufficient real-axis lower control",
+            "unit_id": "openalex_w1913535681_u009",
+            "unit_type": "lower-bound-technique",
+            "why_material": "Although global nonnegativity of the shifted extremizer is only expected, the proof pairs positive and reflected interpolation terms, uses positivity and oddness of the derivative, and derives the weaker decaying lower bound actually needed. This is a useful example of proving only the structural estimate the downstream argument consumes."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 236,
+              "line_start": 229,
+              "reason": "Specialized interpolation series is severely fragmented."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 261,
+              "line_start": 240,
+              "reason": "Cardinal identity, interpolation formula, and growth estimates are display-heavy with broken alignment."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u008",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u008",
+          "spontaneous_reading": "Poisson summation supplies a partition-of-unity-like identity for the cardinal weights. That identity rewrites the extremizer so decay estimates for the kernel and its derivative propagate from real interpolation data to a global complex-plane growth bound."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u008",
+          "source_grounded_mathematics": "The source applies Poisson summation to a squared sinc interpolation sum and obtains an identity used to rewrite G_Δ plus its offset. Elementary bounds for f, f', and the complex squared-sinc factor then imply exponential growth in |Im z| multiplied by rational decay in |z|, with Δ-dependent size.",
+          "conceptual_reading": "Interpolation exposes an entire function through discrete samples and derivatives of the target. A normalization identity controls the combined weights, allowing local decay information at lattice nodes to certify the global analytic behavior required downstream.",
+          "representation_or_bridge": "The bridge runs from real-variable decay of f and f' through cardinal interpolation and Poisson summation to a complex entire-function estimate admissible in the explicit formula.",
+          "boundary_or_failure": "This is a growth certificate, not the minorization or Fourier-support proof. Its validity depends on the exact interpolation identity and correct ordering of the display-heavy terms.",
+          "uncertainty": "The source explicitly states the Poisson-summation use and deduction, but equations (8)-(9) are extraction-disordered and must be checked against the retained PDF before symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The pairing rationale and resulting existence of a constant are explicit in prose; the intervening series display is not symbolically reliable in normalized text.",
+      "line_end": 288,
+      "line_start": 262,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate to high: the proof idea is readable, while the paired summand and scaled denominator require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Although global nonnegativity of the shifted extremizer is only expected, the proof pairs positive and reflected interpolation terms, uses positivity and oddness of the derivative, and derives the weaker decaying lower bound actually needed. This is a useful example of proving only the structural estimate the downstream argument consumes.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pairing symmetric interpolation nodes yields sufficient real-axis lower control",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u009.txt",
+      "unit_bytes": 1600,
+      "unit_id": "openalex_w1913535681_u009",
+      "unit_sha256": "fc8bffe00cfc98535cd3f01bfc0232225c9fc63d817c115af0a2db78c2de3253",
+      "unit_type": "lower-bound-technique",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u009.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 254,
+          "line_end": 261,
+          "text": "                                  π(z − n + 2\n                                              )             ∆           ∆              ∆\n\nFor any complex number ξ we have (sin(πξ)/(πξ))2 ≪ e2π|Im ξ| /(1 + |ξ|2), and further f (x) ≤\n4/x2 and |f ′(x)| ≤ 8/(|x|(4 + x2 )), whence we deduce that\n                                                              ∆2\n(9)                      |G∆ (x + iy) + f (1/∆)| ≪                     e2π|y| .\n                                                          1 + |x + iy|\n",
+          "sha256": "eb46ede86930f77f8d104a0874dee2466688817bcf23545e27c368583a481f5d"
+        },
+        "after": {
+          "line_start": 289,
+          "line_end": 296,
+          "text": "  By part (v) of Theorem 1.1 of [1] we have\n     Z ∞\n(11)      (f (x/∆) − (G∆ (x) + f (1/∆)))e−2πitx dx\n      −∞\n                       Z ∞\u0010\n                                 2λ                  \u0011 2(1 − cos(2∆λ))\n                    =                     − L̂(λ, t)                   dλ,\n                        0    λ2 + 4π 2 t2                     λ\n",
+          "sha256": "99cb15e054f8d6297bc85b2f96fe9ab15eca560fa49cd55e4e35681805cd3020"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Proposition 2.1",
+            "line_end": 340,
+            "line_start": 177,
+            "mathematical_role": "Carneiro-Vaaler extremal framework, source-specific measure, interpolation bounds, Fourier support, L1 error, and rescaling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 288,
+          "line_start": 262,
+          "title": "Pairing symmetric interpolation nodes yields sufficient real-axis lower control",
+          "unit_id": "openalex_w1913535681_u009",
+          "unit_type": "lower-bound-technique",
+          "why_material": "Although global nonnegativity of the shifted extremizer is only expected, the proof pairs positive and reflected interpolation terms, uses positivity and oddness of the derivative, and derives the weaker decaying lower bound actually needed. This is a useful example of proving only the structural estimate the downstream argument consumes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The pairing rationale and resulting existence of a constant are explicit in prose; the intervening series display is not symbolically reliable in normalized text.",
+          "representation_dependency": "Moderate to high: the proof idea is readable, while the paired summand and scaled denominator require scan verification.",
+          "unit_id": "openalex_w1913535681_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 261,
+            "line_start": 238,
+            "title": "Interpolation and Poisson summation give the required complex-plane bound",
+            "unit_id": "openalex_w1913535681_u008",
+            "unit_type": "growth-control",
+            "why_material": "A cardinal-interpolation identity obtained via Poisson summation rewrites the extremal function so elementary decay estimates on the target kernel and its derivative yield the exponential-type growth bound needed by the explicit formula."
+          },
+          {
+            "line_end": 329,
+            "line_start": 289,
+            "title": "The extremal theorem certifies Fourier support and exact L1 loss",
+            "unit_id": "openalex_w1913535681_u010",
+            "unit_type": "spectral-and-error-certification",
+            "why_material": "The Carneiro-Vaaler transform formula makes the shifted extremizer integrable, supported in the desired base frequency interval, and uniformly controlled; subtracting it from the scaled kernel then yields the exact L1 approximation error. These are the two certificates that determine arithmetic truncation and analytic loss."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 261,
+              "line_start": 240,
+              "reason": "Cardinal identity, interpolation formula, and growth estimates are display-heavy with broken alignment."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 284,
+              "line_start": 272,
+              "reason": "Paired interpolation calculation is not reliably ordered in extracted text."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 296,
+              "line_start": 290,
+              "reason": "Transform-difference identity is display-fragmented."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u009",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u009",
+          "spontaneous_reading": "The proof deliberately avoids an attractive but unproved global nonnegativity claim. By pairing reflected interpolation nodes and exploiting positivity of f with oddness of f', it derives only the decaying lower bound actually consumed later."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u009",
+          "source_grounded_mathematics": "The Carneiro-Vaaler theorem gives that G_Δ is entire of type at most 2π and minorizes f_Δ. The authors say they expect G_Δ+f(1/Δ) to be nonnegative, but instead pair indices n and 1-n in the interpolation formula. Using f≥0 and f'(-x)=-f'(x), they obtain a lower bound of rational decay, together with the existing upper bound by f(x/Δ).",
+          "conceptual_reading": "Symmetry pairing converts a globally delicate sign question into termwise controlled contributions. The strategic lesson is proof-economy: replace a stronger conjectural property with the weakest robust inequality satisfying the downstream interface.",
+          "representation_or_bridge": "Reflection symmetry of interpolation nodes is the bridge from parity properties of the source kernel to a two-sided real-axis estimate for the extremizer.",
+          "boundary_or_failure": "Global nonnegativity remains only an expectation and is not used as if proved. The resulting lower bound is sufficient but cruder, and its exact summand algebra is not reliable in the extracted text.",
+          "uncertainty": "The pairing rationale and existence of a constant C are clear in prose; the paired series, denominators, and precise Δ scaling require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The support statement is present in prose around the displayed transform formula. Exact transform expressions and the evaluated integral in (15) are quarantined pending scan verification.",
+      "line_end": 329,
+      "line_start": 289,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for exact normalization and error value; low for the support-plus-L1 certification roles.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Carneiro-Vaaler transform formula makes the shifted extremizer integrable, supported in the desired base frequency interval, and uniformly controlled; subtracting it from the scaled kernel then yields the exact L1 approximation error. These are the two certificates that determine arithmetic truncation and analytic loss.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The extremal theorem certifies Fourier support and exact L1 loss",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u010.txt",
+      "unit_bytes": 2387,
+      "unit_id": "openalex_w1913535681_u010",
+      "unit_sha256": "00579d045baf9cd4c98eb9c93e36b0d7a000d898a0e541439c8b9da994185838",
+      "unit_type": "spectral-and-error-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u010.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 281,
+          "line_end": 288,
+          "text": "                            n=1\n                                    π(x           2\n                                                             ∆             ∆\n\nand from this we may easily deduce that there is a constant C such that\n                              ∆2\n(10)                     −C          ≤ G∆ (x) + f (1/∆) ≤ f (x/∆).\n                           ∆2 + x2\n",
+          "sha256": "85db7eb7678c7f1ceeec9bfad351a5449b4e10f9fc9f953481aab4ce8a7f1abc"
+        },
+        "after": {
+          "line_start": 330,
+          "line_end": 337,
+          "text": "  We are now in a position to prove Proposition 2.1. We take g∆ (z) = G∆ (z∆) + f (1/∆),\nso that for real x we have g∆ (x) = G∆ (x∆) + f (1/∆) ≤ f∆ (x∆) + f (1/∆) = f (x). Since G∆\nhas exponential type at most 2π, we see that g∆ has exponential type at most 2π∆. Further,\n\n<!-- source-page: 6 -->\n\n6                        VORRAPAN CHANDEE AND K. SOUNDARARAJAN\n\n",
+          "sha256": "20a893acb63a11e5d5a4156320a42d3f8ad2b48b934df233c69b7f3f8d7131a1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Proposition 2.1",
+            "line_end": 340,
+            "line_start": 177,
+            "mathematical_role": "Carneiro-Vaaler extremal framework, source-specific measure, interpolation bounds, Fourier support, L1 error, and rescaling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 329,
+          "line_start": 289,
+          "title": "The extremal theorem certifies Fourier support and exact L1 loss",
+          "unit_id": "openalex_w1913535681_u010",
+          "unit_type": "spectral-and-error-certification",
+          "why_material": "The Carneiro-Vaaler transform formula makes the shifted extremizer integrable, supported in the desired base frequency interval, and uniformly controlled; subtracting it from the scaled kernel then yields the exact L1 approximation error. These are the two certificates that determine arithmetic truncation and analytic loss."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The support statement is present in prose around the displayed transform formula. Exact transform expressions and the evaluated integral in (15) are quarantined pending scan verification.",
+          "representation_dependency": "High for exact normalization and error value; low for the support-plus-L1 certification roles.",
+          "unit_id": "openalex_w1913535681_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 288,
+            "line_start": 262,
+            "title": "Pairing symmetric interpolation nodes yields sufficient real-axis lower control",
+            "unit_id": "openalex_w1913535681_u009",
+            "unit_type": "lower-bound-technique",
+            "why_material": "Although global nonnegativity of the shifted extremizer is only expected, the proof pairs positive and reflected interpolation terms, uses positivity and oddness of the derivative, and derives the weaker decaying lower bound actually needed. This is a useful example of proving only the structural estimate the downstream argument consumes."
+          },
+          {
+            "line_end": 340,
+            "line_start": 330,
+            "title": "Dilation turns the base extremizer into the bandwidth-Delta minorant",
+            "unit_id": "openalex_w1913535681_u011",
+            "unit_type": "scaling-argument",
+            "why_material": "Defining the final minorant by dilating the Carneiro-Vaaler function and adding the offset transports pointwise minorization, doubles the exponential-type scale to the requested bandwidth, rescales the Fourier transform, and assembles the three proposition clauses from the preceding estimates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The measure-based Carneiro-Vaaler construction supplies an L1-optimal minorant for the represented kernel class, whereas the convolution-style construction is nonoptimal but reaches related shifted logarithmic kernels outside that framework.",
+            "limit": "The source gives this comparison for the displayed examples; it does not establish a universal superiority criterion for all kernels or downstream bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u006",
+              "openalex_w1913535681_u007",
+              "openalex_w1913535681_u010",
+              "openalex_w1913535681_u013"
+            ],
+            "title": "Optimality versus kernel-class flexibility"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 284,
+              "line_start": 272,
+              "reason": "Paired interpolation calculation is not reliably ordered in extracted text."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 296,
+              "line_start": 290,
+              "reason": "Transform-difference identity is display-fragmented."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 298,
+              "line_start": 297,
+              "reason": "Blank separator."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 304,
+              "line_start": 300,
+              "reason": "Piecewise transform formula has broken fraction layout."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 314,
+              "line_start": 306,
+              "reason": "Fourier-transform identities depend on exact nested integral layout."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 322,
+              "line_start": 316,
+              "reason": "Transform bounds and resulting estimate are displayed with fragmented denominators."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 323,
+              "line_start": 323,
+              "reason": "Blank separator."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 329,
+              "line_start": 325,
+              "reason": "Exact error integral and evaluation require scan verification."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u010",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u010",
+          "spontaneous_reading": "The extremal theorem yields two operational certificates: a compactly supported Fourier transform and an exact integral deficit. These quantify different downstream effects of the same surrogate—how much arithmetic data survives and how much analytic mass is lost."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u010",
+          "source_grounded_mathematics": "A Carneiro-Vaaler transform identity is used to show that G_Δ plus its offset is integrable and has Fourier transform supported in the base interval |t|≤1. Bounds on the displayed transform give uniform control, while integrating the difference f_Δ-G_Δ yields an explicitly evaluated L1 error.",
+          "conceptual_reading": "Spectral support and approximation error form a paired complexity-quality certificate. The former truncates the explicit formula's prime frequencies; the latter determines the archimedean penalty for replacing the original kernel.",
+          "representation_or_bridge": "The transform formula bridges the measure-built extremizer to frequency space, and the difference integral bridges optimal approximation back to a scalar loss that can enter the zeta bound.",
+          "boundary_or_failure": "Support and L1 control do not themselves prove the final proposition until rescaling and the real-axis bounds are assembled. Endpoint conventions and exact normalization matter for quantitative reuse.",
+          "uncertainty": "The support role is prose-grounded, but formulas (11)-(15), the transform kernel, uniform constants, and evaluated error are display-fragmented and need PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The rescaling and dependency on equations (9)-(15) are plainly stated; exact Fourier-transform normalization should still be checked in the PDF.",
+      "line_end": 340,
+      "line_start": 330,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the representation change is clear, but its precise scale factors are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defining the final minorant by dilating the Carneiro-Vaaler function and adding the offset transports pointwise minorization, doubles the exponential-type scale to the requested bandwidth, rescales the Fourier transform, and assembles the three proposition clauses from the preceding estimates.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dilation turns the base extremizer into the bandwidth-Delta minorant",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u011.txt",
+      "unit_bytes": 554,
+      "unit_id": "openalex_w1913535681_u011",
+      "unit_sha256": "7f5f98932cb1f2b9eb11aceb02f659eaad3e128430c27b11496b9d170915f0cd",
+      "unit_type": "scaling-argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u011.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 322,
+          "line_end": 329,
+          "text": "                                −∞\n\n  Moreover from (11) and a little calculus we find that\n         Z ∞                            Z ∞\u0010\n                                              2        1  \u0011 2(1 − cos(2∆x))\n              (f∆ (x) − G∆ (x))dx =             −                           dx\n           −∞                            0    x sinh(x/2)          x\n(15)                                     = 2 log 2 − 2 log(1 + e−4π∆ ).\n",
+          "sha256": "2589d00ea0b250e6d858ee88e22937c9663c53c76713f5a175850da88158608b"
+        },
+        "after": {
+          "line_start": 341,
+          "line_end": 348,
+          "text": "                                         4. Discussion\nThe estimate (5) gives a variant of the main Proposition of [10] which states that for large t,\n               1\n                             X         Λ(n)       log(x/n) (1 + λ) log t     \u0010 1 \u0011\n       log |ζ( 2 + it)| ≤ Re                              +              +O           ,\n                                   1\n                                     + λ +it\n                             n≤x n\n",
+          "sha256": "c204e2c69be7c496dfd204af99ec63ecf895939c728696ff635a92777a43fe2e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Proposition 2.1",
+            "line_end": 340,
+            "line_start": 177,
+            "mathematical_role": "Carneiro-Vaaler extremal framework, source-specific measure, interpolation bounds, Fourier support, L1 error, and rescaling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 340,
+          "line_start": 330,
+          "title": "Dilation turns the base extremizer into the bandwidth-Delta minorant",
+          "unit_id": "openalex_w1913535681_u011",
+          "unit_type": "scaling-argument",
+          "why_material": "Defining the final minorant by dilating the Carneiro-Vaaler function and adding the offset transports pointwise minorization, doubles the exponential-type scale to the requested bandwidth, rescales the Fourier transform, and assembles the three proposition clauses from the preceding estimates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The rescaling and dependency on equations (9)-(15) are plainly stated; exact Fourier-transform normalization should still be checked in the PDF.",
+          "representation_dependency": "Moderate: the representation change is clear, but its precise scale factors are formula-sensitive.",
+          "unit_id": "openalex_w1913535681_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 329,
+            "line_start": 289,
+            "title": "The extremal theorem certifies Fourier support and exact L1 loss",
+            "unit_id": "openalex_w1913535681_u010",
+            "unit_type": "spectral-and-error-certification",
+            "why_material": "The Carneiro-Vaaler transform formula makes the shifted extremizer integrable, supported in the desired base frequency interval, and uniformly controlled; subtracting it from the scaled kernel then yields the exact L1 approximation error. These are the two certificates that determine arithmetic truncation and analytic loss."
+          },
+          {
+            "line_end": 355,
+            "line_start": 342,
+            "title": "The remaining obstruction is estimating the prime sum, not constructing the minorant",
+            "unit_id": "openalex_w1913535681_u012",
+            "unit_type": "obstruction-and-workaround",
+            "why_material": "The discussion compares the new inequality with an earlier proposition, states that good pointwise estimates of the prime sum are difficult and block better zeta bounds, and notes that frequency information about large prime sums can instead support moment estimates. This separates an analytic approximation gain from the surviving arithmetic bottleneck."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Hadamard factorization represents the value through a zero-displacement kernel; a bandwidth-controlled minorant makes the explicit formula convert that statistic into a truncated prime expression, and dilation plus bandwidth choice controls the approximation cost.",
+            "limit": "This is an RH-conditional, solver-specific analytic pipeline; the exact equations and constants are formula-dependent and need scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u003",
+              "openalex_w1913535681_u004",
+              "openalex_w1913535681_u005",
+              "openalex_w1913535681_u011"
+            ],
+            "title": "From value to zeros to primes through spectral localization"
+          },
+          {
+            "claim": "The same minorant and scaling architecture carries to completed L-functions under GRH, but the final conductor-scale bound changes according to whether Ramanujan-type coefficient control or only the weaker Euler-product consequence is available.",
+            "limit": "The generalized formulas are heavily extraction-sensitive, and the claimed dependence should not be detached from the paper's stated analytic assumptions.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u004",
+              "openalex_w1913535681_u011",
+              "openalex_w1913535681_u014"
+            ],
+            "title": "Coefficient control determines the strength of the L-function extension"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 322,
+              "line_start": 316,
+              "reason": "Transform bounds and resulting estimate are displayed with fragmented denominators."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 323,
+              "line_start": 323,
+              "reason": "Blank separator."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 329,
+              "line_start": 325,
+              "reason": "Exact error integral and evaluation require scan verification."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 350,
+              "line_start": 343,
+              "reason": "Earlier proposition is represented by a heavily fragmented display."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u011",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u011",
+          "spontaneous_reading": "A single dilation converts the base-scale extremizer into the proof's requested bandwidth family. The earlier estimates are modular: scaling transports order and growth, rescales Fourier support, and converts the base L1 computation into the final proposition."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u011",
+          "source_grounded_mathematics": "The authors define g_Δ(z)=G_Δ(zΔ)+f(1/Δ). This gives g_Δ≤f on the real axis, raises exponential type from at most 2π to at most 2πΔ, and yields the Fourier scaling relation ĝ_Δ(t)=Δ^{-1}Ĝ_Δ(t/Δ). They then cite the preceding estimates to obtain all three clauses of Proposition 2.1.",
+          "conceptual_reading": "Dilation is a transport operation: prove a normalized theorem once, then expose bandwidth as an explicit parameter without rebuilding the extremizer. The final proof is synthesis of independently certified properties.",
+          "representation_or_bridge": "Scaling bridges the base frequency interval of G_Δ to the target support interval for g_Δ and simultaneously aligns the scaled logarithmic kernel with f.",
+          "boundary_or_failure": "The assembly depends on equations (9)-(15); dilation cannot repair any missing support, order, or error certificate. Precise Fourier conventions control the scale factor.",
+          "uncertainty": "The rescaling mechanism is plainly stated, but exact notation and Fourier normalization remain formula-sensitive and should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The comparative conclusion is prose-grounded; the displayed earlier inequality and its exact parameter threshold are formula-risk.",
+      "line_end": 355,
+      "line_start": 342,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the obstruction and frequency-workaround claim; high for exact comparison of displayed constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The discussion compares the new inequality with an earlier proposition, states that good pointwise estimates of the prime sum are difficult and block better zeta bounds, and notes that frequency information about large prime sums can instead support moment estimates. This separates an analytic approximation gain from the surviving arithmetic bottleneck.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The remaining obstruction is estimating the prime sum, not constructing the minorant",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u012.txt",
+      "unit_bytes": 955,
+      "unit_id": "openalex_w1913535681_u012",
+      "unit_sha256": "9b2a16a2d62a5a381f514ad8f712cdccd37d9401a6e95dbd10a9ca6fa93d599f",
+      "unit_type": "obstruction-and-workaround",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u012.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 334,
+          "line_end": 341,
+          "text": "<!-- source-page: 6 -->\n\n6                        VORRAPAN CHANDEE AND K. SOUNDARARAJAN\n\nĝ∆ (t) = ∆−1 Ĝ∆ (t/∆). Thus part (i) of Proposition 2.1 follows from (9) and (10), part (ii)\nfrom (12), (13) and (14), and part (iii) from (15).\n\n                                         4. Discussion\n",
+          "sha256": "6364b69cd263f28c72d5e4d09ef850ff1f82d97ca96edfc65af6e39d624b6dc2"
+        },
+        "after": {
+          "line_start": 356,
+          "line_end": 363,
+          "text": "   In light of our work we can view the Proposition in [10] as constructing a different minorant\nof our function f (x). We start with (for positive α and x real)\n                       Z ∆\u0010\n                                  |t| \u0011 −2πα|t|−2πitx         2α       1     1 − e−2π∆(α+ix)\n        K∆ (α, x) = 2π       1−        e              dt = 2        −     Re                 .\n                         −∆       ∆                        α + x2 π∆            (α + ix)2\nIntegrating both sides from α0 > 0 to 2 we obtain\n       Z 2                                                       Z 2 −2π∆α\n",
+          "sha256": "8b10b377a61d8e75f76dca6b793b21debad8f9198160f491cf25b71ff6b0ff0c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Discussion",
+            "line_end": 447,
+            "line_start": 341,
+            "mathematical_role": "Comparison with an earlier minorant, the prime-sum obstruction, a flexible convolution construction, and the general L-function extension."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 355,
+          "line_start": 342,
+          "title": "The remaining obstruction is estimating the prime sum, not constructing the minorant",
+          "unit_id": "openalex_w1913535681_u012",
+          "unit_type": "obstruction-and-workaround",
+          "why_material": "The discussion compares the new inequality with an earlier proposition, states that good pointwise estimates of the prime sum are difficult and block better zeta bounds, and notes that frequency information about large prime sums can instead support moment estimates. This separates an analytic approximation gain from the surviving arithmetic bottleneck."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The comparative conclusion is prose-grounded; the displayed earlier inequality and its exact parameter threshold are formula-risk.",
+          "representation_dependency": "Low for the obstruction and frequency-workaround claim; high for exact comparison of displayed constants.",
+          "unit_id": "openalex_w1913535681_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 340,
+            "line_start": 330,
+            "title": "Dilation turns the base extremizer into the bandwidth-Delta minorant",
+            "unit_id": "openalex_w1913535681_u011",
+            "unit_type": "scaling-argument",
+            "why_material": "Defining the final minorant by dilating the Carneiro-Vaaler function and adding the offset transports pointwise minorization, doubles the exponential-type scale to the requested bandwidth, rescales the Fourier transform, and assembles the three proposition clauses from the preceding estimates."
+          },
+          {
+            "line_end": 397,
+            "line_start": 356,
+            "title": "A nonoptimal convolution minorant sacrifices sharpness for a wider kernel class",
+            "unit_id": "openalex_w1913535681_u013",
+            "unit_type": "alternative-construction-and-scope-tradeoff",
+            "why_material": "An integral kernel with compactly supported Fourier transform is assembled into another minorant. The authors identify it with the construction underlying the earlier proposition, explicitly note that it is not optimal, and emphasize that it applies to related shifted logarithmic kernels outside the Carneiro-Vaaler framework. This exposes a sharpness-versus-generality tradeoff."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once the extremal minorant sharpens the zero-side approximation, estimating the resulting prime sum becomes the stated barrier to better pointwise bounds, while studying how often it is large can still support moment analysis.",
+            "limit": "The paper identifies the barrier in this method; it does not prove that no other method can improve the bound.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u005",
+              "openalex_w1913535681_u012"
+            ],
+            "title": "Analytic approximation gain exposes an arithmetic bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 350,
+              "line_start": 343,
+              "reason": "Earlier proposition is represented by a heavily fragmented display."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 361,
+              "line_start": 358,
+              "reason": "Definition and evaluated form of the alternative kernel have broken layout."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 366,
+              "line_start": 363,
+              "reason": "Integrated inequality is display-fragmented."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u012",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u012",
+          "spontaneous_reading": "After optimizing the analytic surrogate, the obstruction moves rather than disappears: the remaining prime Dirichlet sum is hard to control pointwise. The same object can still be useful distributionally, because the frequency with which it becomes large informs moment estimates."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u012",
+          "source_grounded_mathematics": "The discussion compares estimate (5) with an earlier bound expressing log|ζ(1/2+it)| through a truncated von Mangoldt weighted sum and logarithmic error terms. It states that good estimates for this prime sum at large t are difficult and block better pointwise zeta bounds, while information about how often such sums are large can be used to study moments of ζ.",
+          "conceptual_reading": "Improving one component of a proof pipeline exposes the next bottleneck. When worst-case pointwise control is inaccessible, reframing the same arithmetic statistic distributionally changes the attainable target from maxima to moments.",
+          "representation_or_bridge": "The bandlimited minorant transfers the original zero-side problem into a prime polynomial; frequency-of-large-values information then bridges that prime statistic to moment questions.",
+          "boundary_or_failure": "The barrier is asserted for this method and prime-sum representation, not as a theorem excluding other approaches. Moment information does not by itself yield the desired pointwise bound.",
+          "uncertainty": "The obstruction and workaround are clear in prose, but the earlier displayed inequality, constants, and admissible parameter threshold are formula-risk and need scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The qualitative comparison and extended applicability are explicit in lines 393-397. The chain of inequalities and the exact admissible parameter condition are fragmented and require scan verification.",
+      "line_end": 397,
+      "line_start": 356,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for the displayed construction; low for the source-stated optimality and applicability comparison.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An integral kernel with compactly supported Fourier transform is assembled into another minorant. The authors identify it with the construction underlying the earlier proposition, explicitly note that it is not optimal, and emphasize that it applies to related shifted logarithmic kernels outside the Carneiro-Vaaler framework. This exposes a sharpness-versus-generality tradeoff.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A nonoptimal convolution minorant sacrifices sharpness for a wider kernel class",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u013.txt",
+      "unit_bytes": 3112,
+      "unit_id": "openalex_w1913535681_u013",
+      "unit_sha256": "3bd6788c60ec56ec017f73fdc28fff422a1cab3ba3f6e27deb38fc4fbc69e831",
+      "unit_type": "alternative-construction-and-scope-tradeoff",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u013.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 348,
+          "line_end": 355,
+          "text": "                             n≤x n\n                                   2 log x   log n log x       2 log x         log x\n\nwhere 2 ≤ x ≤ t2 , and λ ≥ λ0 = 0.4912 . . . where λ0 denotes the unique positive real number\nsatisfying e−λ0 = λ0 + λ20 /2. For large t it is difficult to give good estimates for the sum over\nn above (or in (5)) and this is the barrier to establishing better estimates for |ζ( 12 + it)|.\nHowever one can study the frequency with which such sums get large, and this information\nis used in [10] to understand the size of moments of ζ( 12 + it).\n",
+          "sha256": "eb40f65cf9a017a74fc570eaa95f17f8e78ecd5cc13f9e7b53002d9deeecd707"
+        },
+        "after": {
+          "line_start": 398,
+          "line_end": 405,
+          "text": "   Theorem 1.1 may be extended to general L-functions. To be concrete, consider the frame-\nwork described in Chapter 5 of [7]. Thus we consider L-functions given in Re s > 1 by the\n\n<!-- source-page: 7 -->\n\nBOUNDING |ζ( 21 + it)| ON THE RIEMANN HYPOTHESIS                                   7\n\nabsolutely convergent series and product\n",
+          "sha256": "6a469d4f3e345046498f4b7a4196e736a1ba768aa14011a1b3b3322dbb76838a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Discussion",
+            "line_end": 447,
+            "line_start": 341,
+            "mathematical_role": "Comparison with an earlier minorant, the prime-sum obstruction, a flexible convolution construction, and the general L-function extension."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 397,
+          "line_start": 356,
+          "title": "A nonoptimal convolution minorant sacrifices sharpness for a wider kernel class",
+          "unit_id": "openalex_w1913535681_u013",
+          "unit_type": "alternative-construction-and-scope-tradeoff",
+          "why_material": "An integral kernel with compactly supported Fourier transform is assembled into another minorant. The authors identify it with the construction underlying the earlier proposition, explicitly note that it is not optimal, and emphasize that it applies to related shifted logarithmic kernels outside the Carneiro-Vaaler framework. This exposes a sharpness-versus-generality tradeoff."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The qualitative comparison and extended applicability are explicit in lines 393-397. The chain of inequalities and the exact admissible parameter condition are fragmented and require scan verification.",
+          "representation_dependency": "High for the displayed construction; low for the source-stated optimality and applicability comparison.",
+          "unit_id": "openalex_w1913535681_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 355,
+            "line_start": 342,
+            "title": "The remaining obstruction is estimating the prime sum, not constructing the minorant",
+            "unit_id": "openalex_w1913535681_u012",
+            "unit_type": "obstruction-and-workaround",
+            "why_material": "The discussion compares the new inequality with an earlier proposition, states that good pointwise estimates of the prime sum are difficult and block better zeta bounds, and notes that frequency information about large prime sums can instead support moment estimates. This separates an analytic approximation gain from the surviving arithmetic bottleneck."
+          },
+          {
+            "line_end": 447,
+            "line_start": 398,
+            "title": "The minorant-explicit-formula pipeline extends to general L-functions",
+            "unit_id": "openalex_w1913535681_u014",
+            "unit_type": "generalization",
+            "why_material": "The paper specifies a standard Dirichlet-series, Euler-product, completed-function, functional-equation, GRH, and analytic-conductor setting, then states the analogous minorant bound. Trivial estimation gives a stronger conductor-scale constant under Ramanujan-type coefficient control and a weaker one using only absolute Euler-product convergence, showing exactly where coefficient information enters the method."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The measure-based Carneiro-Vaaler construction supplies an L1-optimal minorant for the represented kernel class, whereas the convolution-style construction is nonoptimal but reaches related shifted logarithmic kernels outside that framework.",
+            "limit": "The source gives this comparison for the displayed examples; it does not establish a universal superiority criterion for all kernels or downstream bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u006",
+              "openalex_w1913535681_u007",
+              "openalex_w1913535681_u010",
+              "openalex_w1913535681_u013"
+            ],
+            "title": "Optimality versus kernel-class flexibility"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 350,
+              "line_start": 343,
+              "reason": "Earlier proposition is represented by a heavily fragmented display."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 361,
+              "line_start": 358,
+              "reason": "Definition and evaluated form of the alternative kernel have broken layout."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 366,
+              "line_start": 363,
+              "reason": "Integrated inequality is display-fragmented."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 374,
+              "line_start": 368,
+              "reason": "Rearranged bound has disrupted fractions and line order."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 381,
+              "line_start": 376,
+              "reason": "Resulting lower bound is formula-layout dependent."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 387,
+              "line_start": 384,
+              "reason": "Simplified minorant display requires the scan."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 392,
+              "line_start": 391,
+              "reason": "Correction inequality and assembled minorant are merged by extraction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u013",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u013",
+          "spontaneous_reading": "A convolution-style construction gives up L1 optimality to gain a broader domain of kernels. Compact Fourier support is built directly into K_Δ, integration over a parameter assembles a minorant, and corrective terms preserve the one-sided inequality; this less sharp tool also handles shifted logarithmic ratios outside the Carneiro-Vaaler representation."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u013",
+          "source_grounded_mathematics": "The source defines a compact-frequency kernel K_Δ(α,x), integrates it over α, and derives a lower approximation to f after choosing a positive cutoff and controlling correction terms. It identifies the resulting construction with an alternative proof of an earlier proposition. The authors explicitly call the convolution-based minorants nonoptimal but note that they apply to log((4+x^2)/(α^2+x^2)), relevant to shifted critical-line zeta values and outside the Carneiro-Vaaler framework.",
+          "conceptual_reading": "There is a sharpness-versus-generality tradeoff between a canonical optimal extremizer for a representable class and a compositional filter construction that reaches more targets. A nonoptimal representation can be strategically preferable when it preserves the required order and spectral support across a wider family.",
+          "representation_or_bridge": "Convolution with kernels having compactly supported transforms builds spectral localization directly; integration over α bridges elementary rational kernels to logarithmic ratios and then to the explicit formula.",
+          "boundary_or_failure": "The source provides particular related kernels, not a universal criterion that convolution is preferable or works for every target. The construction retains correction terms and weaker sharpness.",
+          "uncertainty": "The qualitative comparison and wider applicability are explicit, but the integral identities, inequalities, cutoff condition, and corrective constants are heavily fragmented and require the retained PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The generalization and the distinction between the two coefficient assumptions are explicit in prose. Extracted completion, conjugation, coefficient, conductor, and final-bound formulas must be verified from the PDF before formal reuse.",
+      "line_end": 447,
+      "line_start": 398,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for all exact formulas and constants; moderate for the structural dependence on GRH and coefficient bounds.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper specifies a standard Dirichlet-series, Euler-product, completed-function, functional-equation, GRH, and analytic-conductor setting, then states the analogous minorant bound. Trivial estimation gives a stronger conductor-scale constant under Ramanujan-type coefficient control and a weaker one using only absolute Euler-product convergence, showing exactly where coefficient information enters the method.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The minorant-explicit-formula pipeline extends to general L-functions",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u014.txt",
+      "unit_bytes": 3468,
+      "unit_id": "openalex_w1913535681_u014",
+      "unit_sha256": "0f86a54150cab5396eba4db0c3c279712bc7412559815ca17236317c3dbc9f2b",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u014.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 390,
+          "line_end": 397,
+          "text": "transform; for example, assuming that 2π∆ ≥ 2 say, weRcan see from the definition of K∆ that\n                                                           2\n2/(4 + x2 ) ≥ 21 K∆ (2, x)(1 − 1/2π∆)−1 , so that f (x) ≥ α0 K∆ (α, x)dα − K∆ (2, x)/(2π∆ − 1).\nUsing the explicit formula with such a minorant gives an alternative proof of the Proposition\nin [10]. Although the construction of minorants given above (which amounts to taking\nconvolutions with functions whose Fourier transforms have desired compact support) is not\noptimal, the method works for related functions such as log((4 + x2 )/(α2 + x2 )) (this arises\nin bounding log |ζ( 21 + α + it)|) which do not fit the framework of Carneiro and Vaaler.\n",
+          "sha256": "22561c99950e90ba06d0796a606775afa4c4c879f06f142368d40656c89baeba"
+        },
+        "after": {
+          "line_start": 448,
+          "line_end": 455,
+          "text": "                                                References\n   [1] E. Carneiro and J. D. Vaaler, Some Extremal Functions in Fourier Analysis II, to appear in Trans.\n       Amer. Math. Soc, available online at http://arxiv.org//abs/0809.4050v1.\n   [2] V. Chandee, Explicit upper bound for L-functions on the critical line, to appear in Proceedings of the\n       AMS , available online at http://arXiv.org//abs/0906.4177v1.\n   [3] H. Davenport, Multiplicative number theory, Graduate Texts in Math. 74, (Third Edition), Springer\n       (2000).\n   [4] D.W. Farmer, S.M. Gonek, and C.P. Hughes, The maximum size of L-functions, J. Reine Angew.\n",
+          "sha256": "c112b348c3e5be213dd82840275dd52d65ee1756ee12fe51159046955998bd24"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Discussion",
+            "line_end": 447,
+            "line_start": 341,
+            "mathematical_role": "Comparison with an earlier minorant, the prime-sum obstruction, a flexible convolution construction, and the general L-function extension."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 447,
+          "line_start": 398,
+          "title": "The minorant-explicit-formula pipeline extends to general L-functions",
+          "unit_id": "openalex_w1913535681_u014",
+          "unit_type": "generalization",
+          "why_material": "The paper specifies a standard Dirichlet-series, Euler-product, completed-function, functional-equation, GRH, and analytic-conductor setting, then states the analogous minorant bound. Trivial estimation gives a stronger conductor-scale constant under Ramanujan-type coefficient control and a weaker one using only absolute Euler-product convergence, showing exactly where coefficient information enters the method."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The generalization and the distinction between the two coefficient assumptions are explicit in prose. Extracted completion, conjugation, coefficient, conductor, and final-bound formulas must be verified from the PDF before formal reuse.",
+          "representation_dependency": "High for all exact formulas and constants; moderate for the structural dependence on GRH and coefficient bounds.",
+          "unit_id": "openalex_w1913535681_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 397,
+            "line_start": 356,
+            "title": "A nonoptimal convolution minorant sacrifices sharpness for a wider kernel class",
+            "unit_id": "openalex_w1913535681_u013",
+            "unit_type": "alternative-construction-and-scope-tradeoff",
+            "why_material": "An integral kernel with compactly supported Fourier transform is assembled into another minorant. The authors identify it with the construction underlying the earlier proposition, explicitly note that it is not optimal, and emphasize that it applies to related shifted logarithmic kernels outside the Carneiro-Vaaler framework. This exposes a sharpness-versus-generality tradeoff."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same minorant and scaling architecture carries to completed L-functions under GRH, but the final conductor-scale bound changes according to whether Ramanujan-type coefficient control or only the weaker Euler-product consequence is available.",
+            "limit": "The generalized formulas are heavily extraction-sensitive, and the claimed dependence should not be detached from the paper's stated analytic assumptions.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u004",
+              "openalex_w1913535681_u011",
+              "openalex_w1913535681_u014"
+            ],
+            "title": "Coefficient control determines the strength of the L-function extension"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 392,
+              "line_start": 391,
+              "reason": "Correction inequality and assembled minorant are merged by extraction."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 411,
+              "line_start": 406,
+              "reason": "Series and Euler-product display is fragmented."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 418,
+              "line_start": 414,
+              "reason": "Completed L-function display has broken superscripts and products."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 434,
+              "line_start": 426,
+              "reason": "Product residue and generalized explicit bound have disrupted coefficient and transform layout."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 441,
+              "line_start": 439,
+              "reason": "First final conductor bound is display-dependent."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 447,
+              "line_start": 445,
+              "reason": "Second final conductor bound is display-dependent."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u014",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u014",
+          "spontaneous_reading": "The zeta argument is really a pipeline for completed L-functions: functional equation and GRH expose zeros, the same minorant transfers them through an explicit formula, and analytic conductor replaces t as the scale. What changes materially is the arithmetic coefficient control, which determines how costly the resulting prime sum is."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u014",
+          "source_grounded_mathematics": "The source specifies L-functions with an absolutely convergent Dirichlet series and Euler product, a completed function with gamma factors and functional equation, and GRH, using the analytic conductor C(f) as size. A modified minorant argument yields a conductor-dependent bound containing logarithmic-derivative coefficients. Trivial estimation under Ramanujan-type coefficient bounds gives the stronger stated conductor scale, whereas using only the consequence of absolute Euler-product convergence gives a weaker bound and a different bandwidth choice.",
+          "conceptual_reading": "The method generalizes because its interface depends on structural data—completion, symmetry, zero location, conductor, and explicit-formula coefficients—rather than on ζ alone. The strength of the coefficient hypothesis enters at the arithmetic endpoint, revealing precisely which module controls the loss in generalization.",
+          "representation_or_bridge": "The completed L-function and analytic conductor bridge the global functional equation to a normalized zero statistic; the common minorant and explicit formula bridge zeros to logarithmic-derivative coefficients, whose bounds set the final scale.",
+          "boundary_or_failure": "The extension is conditional on the stated analytic framework and GRH, with distinct outcomes depending on Ramanujan control. It is not a result for arbitrary Dirichlet series, and weaker coefficient information visibly degrades the conclusion.",
+          "uncertainty": "The structural dependence is clear in prose, but the completion, conjugation, coefficient formulas, conductor normalization, constants, and final displayed bounds are extraction-sensitive and require PDF verification."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ea7ce6d78986f129e7c934b37cec303b98cbb2f8fefbec5a86066964dfbfc7ee"
+}

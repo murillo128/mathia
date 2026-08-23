@@ -1,0 +1,664 @@
+{
+  "stage": "audit",
+  "task": "fresh-context stratified capability-vs-style and ecosystem audit",
+  "audit_context_group": "source:openalex_w2042837137",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/independent_stratified_audit.md",
+  "prompt_sha256": "01b8ad26214a2c99a0499451602be75e5b1bd4408ec5d01e781c6a32145d9439",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/audit/batches/source_openalex_w2042837137_e8fda753_part_01.jsonl",
+  "item_count": 6,
+  "items": [
+    {
+      "object_id": "mathia_interpretation_923aba45cc96cb05bff6b80240105515582d781e378eee3b4f56e5b75132aff7",
+      "object_role": "interpretation",
+      "proposed_content": "The computation turns approximate values of Z(t) into usable sign evidence by pairing each value with a conservative error allowance: the source gives safe bounds of 3×10^-5 and 2.1×10^-11 for methods A and B but says the program used the looser fixed bounds 10^-4 and 2.5×10^-7. Interpreted as an enclosure, a computed value whose error interval excludes zero has a controlled sign; the reported success of method B at every Gram point where it was needed supplies the observed sign-resolution fact. This representation gains robust discrete signs from continuous approximations but discards magnitude information and does not by itself certify that all zeros were found.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_ba575672de8ac2925456b81097e4acd8a96bc366292f58c13b150403299227bb",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d004"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d004.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d004.txt",
+          "content_sha256": "67f0581621730ae565eab0f950be7b834ea0190c3a82f5c755ae908943914870",
+          "artifact_sha256": "ff62144692cf67ff444ff1753ba5f5d1ccd3ee1a622c3a9fbcbfea6de3cc254e",
+          "artifact_bytes": 974
+        }
+      ],
+      "audit_context_group": "source:openalex_w2042837137",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 15
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_135e1f367346497c75f8cf77eb10c409143d4d6bc54937e8e9ad1b9ec8ec10ab",
+      "object_role": "synthesis",
+      "proposed_content": "The source augments categorical Gram-block geometry with several numerical coordinates on rare local configurations: a nearby extremum of S(t) orders exception intensity, division by the natural local zero spacing makes a close-pair gap comparable across height, and large sampled values of Z(t) are located at joined occupancy patterns whose flanking gaps are measured in local Gram-interval lengths. Together these representations preserve information that a block-type label alone discards, without establishing that the coordinates are universally correlated.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_bd33d8c76e5f1055ea8639d11229a884e2dcb03309d2359758b0ff24ec2b4fdd",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d011"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d011.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d011.txt",
+          "content_sha256": "a458b46b050a784e1ed6a2782ce6a766a32bb385366d0fe9eaf45b1f78d7418f",
+          "artifact_sha256": "da3a17558a667a1f378e46b10cc454318beb82ede5cd581895f07bb785218896",
+          "artifact_bytes": 11145
+        },
+        {
+          "source_object_id": "mathia_source_0c8653e2e7bc8d420501619f342b02c404c3668351d81e7c51f5982714495c80",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d012"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d012.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d012.txt",
+          "content_sha256": "1903e7e13648e7566ec762346f4c44da1d3f409ebf137c6cf7084d0941e7a1a4",
+          "artifact_sha256": "9e3e9d41145f47aeced25813131e8886286bf13e06264741edc5e0c11aff608e",
+          "artifact_bytes": 1031
+        },
+        {
+          "source_object_id": "mathia_source_8202330d91550776cf711b3a18b0630f37010fabf0f9bee1f57f73c150894eb1",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d013"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d013.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d013.txt",
+          "content_sha256": "9c8e12228056ca8174533566363afafcb8bfd4d8ee8dcd68ff5af1560c8e9655",
+          "artifact_sha256": "fee0a3d40cef3249c5bd3e2b918f45472220aec46a3ec6836dc167da2159a4f0",
+          "artifact_bytes": 1115
+        }
+      ],
+      "audit_context_group": "source:openalex_w2042837137",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 15
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_1d74a11c58014cc9b4ad3599b789953e6ac04ad4668392d096af939ef63679f9",
+      "object_role": "synthesis",
+      "proposed_content": "The source supports a layered finite-verification architecture with a logical chain and a separate audit track. Error-bounded evaluations yield usable Gram-point signs; avoiding argument shifts preserves a fixed Gram-indexed census; adjacent machine-computed ranges and the inherited prefix supply continuous coverage; and five further Rosser-valid blocks precede application of the imported separation theorem. Targeted reruns and exact cross-machine agreement audit this chain without replacing its analytic obligations.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_c9c89699f05856e37d77b7849a195227a57eb417e2314b29747304e0b9b0b9c2",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d001"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d001.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d001.txt",
+          "content_sha256": "f9168789f13df5c210ecda5449e27e2a98a7da9d66daf5bbf0745e29fe70d17f",
+          "artifact_sha256": "e83f4d6bccb5c6c63c68c7a2446207120501d138c0ef7666425882aa76ddd64b",
+          "artifact_bytes": 2421
+        },
+        {
+          "source_object_id": "mathia_source_35fa58eca0d7d060bb7c0086abf437b1a22ed194b96ecd88da8b81841e4666a0",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d002"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d002.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d002.txt",
+          "content_sha256": "9c1f0b7392a89ecf9559f18f932f3fd595e432b120a9fac3a34c7f4256ec93ab",
+          "artifact_sha256": "678d7a283647b11c0a9170ab057943e61ee70f8bb8c10d5ba8d58153ea31a3d5",
+          "artifact_bytes": 1084
+        },
+        {
+          "source_object_id": "mathia_source_c784642f1cd839d7ec455ad1918986b4934bdd432a92364db1a8a68a92b38358",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d003"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d003.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d003.txt",
+          "content_sha256": "2dc74677e7279ed0e277d79f9f4be6086518785bd515edbf422bfb9bd6870c1d",
+          "artifact_sha256": "f0537ba69e98f988d3ae60034a3916c70494a6d99f7466cc3a7fa9c37cc25710",
+          "artifact_bytes": 2134
+        },
+        {
+          "source_object_id": "mathia_source_ba575672de8ac2925456b81097e4acd8a96bc366292f58c13b150403299227bb",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d004"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d004.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d004.txt",
+          "content_sha256": "67f0581621730ae565eab0f950be7b834ea0190c3a82f5c755ae908943914870",
+          "artifact_sha256": "ff62144692cf67ff444ff1753ba5f5d1ccd3ee1a622c3a9fbcbfea6de3cc254e",
+          "artifact_bytes": 974
+        }
+      ],
+      "audit_context_group": "source:openalex_w2042837137",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 15
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_ba5e5bbd0cc84f63e8c70449a86ce96c48d1283a731faa2d3f2c3360ccacfa05",
+      "object_role": "synthesis",
+      "proposed_content": "The joint censuses support a two-level statistical description: the marginal abundance of block lengths and interval occupancies drifts with height, while type frequencies conditioned on a fixed block length appear to stabilize for adequately sampled lengths. This makes a length-indexed family of empirical type distributions a more faithful modeling target than pooling all blocks, and the source itself proposes an unknown discrete convex distribution depending on block length.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_ab459498bbad59f7f9cc133415a06c72647174112b71264a4cfd1676edd69db2",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d005"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d005.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d005.txt",
+          "content_sha256": "eb94cd3b7f4f620a880a5ab6e6d117bff0ab5f8a288ad6eab87bc90e126e08e7",
+          "artifact_sha256": "303559ff7f7adf1625ec3a8ca50649b602c0a62718f7f19ea1e37ef8b084941e",
+          "artifact_bytes": 5373
+        },
+        {
+          "source_object_id": "mathia_source_bdef3a0c9c26b42efbdb19407c041eb553e53e055da2f8ef3c5fc275ce9182b2",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d006"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d006.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d006.txt",
+          "content_sha256": "9ae10e3371a3f7d952ac5c70ee889871d03430017112e0d1d2ba5b814b3346d6",
+          "artifact_sha256": "4ea3a9cddd5cb3bc65e15f41df99bcedc6b0e73e1e67cfa58eac4c88f38e2523",
+          "artifact_bytes": 6597
+        },
+        {
+          "source_object_id": "mathia_source_c084c6f636e12f0093799f0c1c32c879f4db51829d620c6871ca7a7a39ba716b",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d007"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d007.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d007.txt",
+          "content_sha256": "b78356a596d8be914c93f94c7dfddb2c7cfe7cb7dcc68f331f0db4daeb63c1aa",
+          "artifact_sha256": "505345378092a9d5734bff3b5ffb4fce3b90d2953475644b26f36d5fdb300651",
+          "artifact_bytes": 5813
+        },
+        {
+          "source_object_id": "mathia_source_2450038235e6d31079a7c6b09c74177f2a60f039bcfce3932a6c5c30bcd6c06c",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d008"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d008.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d008.txt",
+          "content_sha256": "a2e1c1fc28f738c4f8ca5a088226728dd465414ff6123618d385524ccabf6115",
+          "artifact_sha256": "2b9523f7fec2ac2eaff4aaa3a73cfc44bf3b523531a18965d63d9fe61eda102e",
+          "artifact_bytes": 6743
+        },
+        {
+          "source_object_id": "mathia_source_fba9cc659e5ffeb9badbf2687818489b059aa44f3c2eb47b2f8944adbf89a880",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d014"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d014.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d014.txt",
+          "content_sha256": "b5c5e909ff7aef60d50a07926e017824c79b9c2f85c72da9555b90614ef6975a",
+          "artifact_sha256": "69fbccd3722a354d2a20bb6381b586939eae9e970f7473ed959bcb045eaa5ed9",
+          "artifact_bytes": 505
+        }
+      ],
+      "audit_context_group": "source:openalex_w2042837137",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 15
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_ddfdfbfd35e93ca56eca36b01f8d303f61815691abeb25f1407c5157b03e0f66",
+      "object_role": "synthesis",
+      "proposed_content": "A finite critical-line computation can be packaged as a parameterized interface for other theorems: the computational and analytic chain certifies that all relevant zeros below a larger height A lie on the critical line, and literature results conditional on such an A may then consume the improved bound. This makes bounded verification mathematically reusable while leaving it logically distinct from the unbounded Riemann hypothesis.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_c9c89699f05856e37d77b7849a195227a57eb417e2314b29747304e0b9b0b9c2",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d001"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d001.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d001.txt",
+          "content_sha256": "f9168789f13df5c210ecda5449e27e2a98a7da9d66daf5bbf0745e29fe70d17f",
+          "artifact_sha256": "e83f4d6bccb5c6c63c68c7a2446207120501d138c0ef7666425882aa76ddd64b",
+          "artifact_bytes": 2421
+        },
+        {
+          "source_object_id": "mathia_source_ba575672de8ac2925456b81097e4acd8a96bc366292f58c13b150403299227bb",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d004"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d004.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d004.txt",
+          "content_sha256": "67f0581621730ae565eab0f950be7b834ea0190c3a82f5c755ae908943914870",
+          "artifact_sha256": "ff62144692cf67ff444ff1753ba5f5d1ccd3ee1a622c3a9fbcbfea6de3cc254e",
+          "artifact_bytes": 974
+        },
+        {
+          "source_object_id": "mathia_source_146e558abf1aeaa740b9d27c019d0d244944b41621ac8e9b8fca126599708704",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d015"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d015.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d015.txt",
+          "content_sha256": "73870b2e96236b05c26e58fc34515dee4f45797ecb1eb5b6d2ec4fe08b71d0ba",
+          "artifact_sha256": "582657dc30bf2612949eda3124a42fc998129687bb2020595af58d9227592024",
+          "artifact_bytes": 713
+        }
+      ],
+      "audit_context_group": "source:openalex_w2042837137",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 15
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_f82e76e0b6ac1bed3639a00cdf8ddc7c918968ebd3260720162e191e8c6af0d3",
+      "object_role": "synthesis",
+      "proposed_content": "Rosser-rule exceptions connect an aggregate census audit to a local search-radius obligation. The interval-count relation is applicable only when no displaced missing pair crosses the chosen endpoints; operationally, every observed exception was repaired by finding that pair in an immediately preceding or succeeding block. The proposed 0 0 1 3 pattern and its reversal then expose why an adjacent-block-only repair is a heuristic rather than a complete search rule, while the exception taxonomy records which local displacement geometries have actually occurred.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_2450038235e6d31079a7c6b09c74177f2a60f039bcfce3932a6c5c30bcd6c06c",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d008"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d008.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d008.txt",
+          "content_sha256": "a2e1c1fc28f738c4f8ca5a088226728dd465414ff6123618d385524ccabf6115",
+          "artifact_sha256": "2b9523f7fec2ac2eaff4aaa3a73cfc44bf3b523531a18965d63d9fe61eda102e",
+          "artifact_bytes": 6743
+        },
+        {
+          "source_object_id": "mathia_source_ef5bb543c4d768e3c1eb5db8e523c28f2613e4131b9c89bddb6202e114f7b84d",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d009"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d009.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d009.txt",
+          "content_sha256": "6148c2fe0112d007fcc2310d1ad3432e8c78455a237bd934a15ca36f712cd485",
+          "artifact_sha256": "051609c4d7fbfc8d10689fbbb1524cfe62dadd4901318eaa4bf765450f20e6ba",
+          "artifact_bytes": 1036
+        },
+        {
+          "source_object_id": "mathia_source_e951e177c744eebaf4f2430abd5a6c5efc0e29f240fa9738887bff7cf2ec7564",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d010"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d010.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d010.txt",
+          "content_sha256": "72709359d6b9dc5e2ba6fd7ebcd753b239293c96d3ccb3d714958a5444ba914a",
+          "artifact_sha256": "f28313ebdcca4ce195062d7d1cdbe362d9b4f8e046a67faf0b9bc6878be200d2",
+          "artifact_bytes": 6020
+        },
+        {
+          "source_object_id": "mathia_source_bd33d8c76e5f1055ea8639d11229a884e2dcb03309d2359758b0ff24ec2b4fdd",
+          "source_id": "openalex_w2042837137",
+          "source_unit_ids": [
+            "openalex_w2042837137_d011"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2042837137_d011.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "source_year": 1986,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "analytic-foundations",
+            "computation",
+            "critical-strip",
+            "numerical-evidence",
+            "zeros",
+            "zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_d011.txt",
+          "content_sha256": "a458b46b050a784e1ed6a2782ce6a766a32bb385366d0fe9eaf45b1f78d7418f",
+          "artifact_sha256": "da3a17558a667a1f378e46b10cc454318beb82ede5cd581895f07bb785218896",
+          "artifact_bytes": 11145
+        }
+      ],
+      "audit_context_group": "source:openalex_w2042837137",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros",
+          "zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 15
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "e2b1fabb2665970ba63488a2f6b42b84ea9d3329745c1e73be0c91dfa3335d48"
+}

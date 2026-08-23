@@ -1,0 +1,604 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2023889974_c8d61721_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2023889974",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the family definition and both theorem statements; later sections supply the analytic mechanisms.",
+      "line_end": 41,
+      "line_start": 15,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: prose is clear, while OCR has dropped some comparison symbols in displayed bounds.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects arithmetic questions about twisted elliptic curves to central vanishing of their L-functions and states the two family-level outcomes whose proof mechanisms organize the paper.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic-twist family targets: nonvanishing and average analytic rank",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u01.txt",
+      "unit_bytes": 1614,
+      "unit_id": "full_openalex_w2023889974_v2u01",
+      "unit_sha256": "3a318e78a5f6ccafad929f4417f82d6979c5333861888af82598f18ce5a19e2f",
+      "unit_type": "problem setup and theorem targets",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u01.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 7,
+          "line_end": 14,
+          "text": "\n\n              Averages of twisted elliptic L-functions\n                                      by\n\n           A. Perelli (Genova) and J. Pomykała (Warszawa)\n\n\n",
+          "sha256": "1783248030806dfa26f8691f0ba6f0ce04459220c24d28ed668919c4a3ecd292"
+        },
+        "after": {
+          "line_start": 42,
+          "line_end": 49,
+          "text": "\n   1991 Mathematics Subject Classification: 11F67, 11M41.\n   Research partially supported by the EEC grant CIPA-CT92-4022 (DG 12 HSMU).\n\n                                     [149]\n\n<!-- source-page: 2 -->\n\n",
+          "sha256": "22578176249d6834e18594c4fecbfc3816b40f799fc59102e81e34d2904fd1f8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and quantitative targets",
+            "line_end": 79,
+            "line_start": 15,
+            "mathematical_role": "Defines the quadratic-twist family, states nonvanishing and average-rank results, and identifies the large-sieve loss as their quantitative bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 41,
+          "line_start": 15,
+          "title": "Quadratic-twist family targets: nonvanishing and average analytic rank",
+          "unit_id": "full_openalex_w2023889974_v2u01",
+          "unit_type": "problem setup and theorem targets",
+          "why_material": "Connects arithmetic questions about twisted elliptic curves to central vanishing of their L-functions and states the two family-level outcomes whose proof mechanisms organize the paper."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the family definition and both theorem statements; later sections supply the analytic mechanisms.",
+          "representation_dependency": "Medium: prose is clear, while OCR has dropped some comparison symbols in displayed bounds.",
+          "unit_id": "full_openalex_w2023889974_v2u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 79,
+            "line_start": 52,
+            "title": "Large-sieve loss controls the strength of both conclusions",
+            "unit_id": "full_openalex_w2023889974_v2u02",
+            "unit_type": "method bottleneck and counterfactual improvement",
+            "why_material": "Makes an explicit sensitivity claim: replacing the D-epsilon loss in the family estimates by logarithmic loss would simultaneously sharpen nonvanishing density and average rank."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same family-estimate loss propagates through two distinct interfaces: Cauchy-Schwarz turns it into a nonvanishing-density loss, while zero density plus an explicit formula turns it into an average-rank loss.",
+            "limit": "This is a within-paper sensitivity mechanism for one fixed elliptic curve's quadratic twists, not a universal equivalence between moment quality and rank statistics.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_v2u01",
+              "full_openalex_w2023889974_v2u02",
+              "full_openalex_w2023889974_u02"
+            ],
+            "title": "Moment quality as a shared family-level bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u01",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u01",
+          "spontaneous_reading": "Quadratic twisting is the compression doing the work: one fixed elliptic curve supplies the coefficients, while fundamental discriminants index a family whose central derivative nonvanishing and analytic ranks can be studied statistically."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u01",
+          "source_grounded_mathematics": "For a fixed modular elliptic curve E of conductor N, each fundamental discriminant d coprime to N defines a twist E_d and twists L(s,E) by the real primitive character chi_d. The unit defines N(D) through nonvanishing of the displayed central L0 quantity and states a D^(1-epsilon)-scale lower bound, together with sum*_{d<=D} rank(E_d)=o(D log D).",
+          "conceptual_reading": "The family viewpoint replaces isolated arithmetic questions by distributions of central analytic behavior. Two observables are separated: a count of twists with a nonvanishing central derivative-like quantity and the total order of central vanishing.",
+          "representation_or_bridge": "The bridge is E_d -> L(s,E_d)=character twist of a fixed L-function; analytic rank then represents central vanishing, allowing arithmetic questions to enter family-level analytic estimates.",
+          "boundary_or_failure": "The arithmetic interpretation invokes conjectural BSD context, and the stated theorems are only targets here; this span does not supply their analytic mechanisms. It also concerns one fixed curve's quadratic-twist family, not arbitrary elliptic-curve families.",
+          "uncertainty": "OCR drops comparison glyphs and renders the prime/derivative notation as L0, so the direction and exact typography of the first bound should be checked against the scan before quotation; the prose and exponents still support the qualitative reading."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2023889974_v2u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span fixes a modular elliptic curve, defines its quadratic twists and twisted L-functions, links analytic rank and central nonvanishing to arithmetic questions, and states the two family results.",
+          "The candidate correctly separates the nonvanishing count from the summed order of central vanishing and appropriately flags the damaged derivative and comparison glyphs."
+        ],
+        "inference": [
+          "Describing quadratic twisting as compression into a statistically accessible family is a defensible conceptual reading because the fixed coefficients are varied by the characters chi_d."
+        ],
+        "unsupported_or_imported": [
+          "Calling the theorem statements 'only targets here' misstates their status: the paper presents them as results, although this span does not contain their proofs."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "OCR renders derivative notation as L0 and drops comparison symbols, so exact symbolic quotation remains unsafe without the scan."
+        ],
+        "missed_mechanism": [
+          "The boundary should distinguish absence of proof in this unit from the theorem statements' status as the paper's results."
+        ],
+        "revision_instructions": [
+          "Replace 'the stated theorems are only targets here' with 'the span states the results but does not supply their proofs or analytic mechanisms'; retain the family limitation and OCR caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The starred-family convention is included because it fixes the averaging domain.",
+      "line_end": 79,
+      "line_start": 52,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the counterfactual rates are readable, but exact inequality glyphs should be checked against the scan for quotation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Makes an explicit sensitivity claim: replacing the D-epsilon loss in the family estimates by logarithmic loss would simultaneously sharpen nonvanishing density and average rank.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Large-sieve loss controls the strength of both conclusions",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u02.txt",
+      "unit_bytes": 1291,
+      "unit_id": "full_openalex_w2023889974_v2u02",
+      "unit_sha256": "48e2f9352c02cfa71bc43f02b2df5956046833a5996c244d8a874f6e18226c71",
+      "unit_type": "method bottleneck and counterfactual improvement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u02.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 44,
+          "line_end": 51,
+          "text": "   Research partially supported by the EEC grant CIPA-CT92-4022 (DG 12 HSMU).\n\n                                     [149]\n\n<!-- source-page: 2 -->\n\n150                        A. Perelli and J. Pomykała\n\n",
+          "sha256": "1b16ca7c0ae394e26fc07a3cae93432f0513afc77e6447b6b2c2f9e251ae28e6"
+        },
+        "after": {
+          "line_start": 80,
+          "line_end": 87,
+          "text": "\n   2. Outline of the proofs. In this section we outline the basic ingredi-\nents of the proofs. The main tool is\n      Theorem 3. Let ε > 0 and τ = |t| + 1. Then\n                        X∗\n                             |L0 (1, Ed )|2 \nε D1+ε\n                           d≤D\n",
+          "sha256": "e6fa72d30324bed69461aba717037e731284d4636b051298acc6d1599634484d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and quantitative targets",
+            "line_end": 79,
+            "line_start": 15,
+            "mathematical_role": "Defines the quadratic-twist family, states nonvanishing and average-rank results, and identifies the large-sieve loss as their quantitative bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 79,
+          "line_start": 52,
+          "title": "Large-sieve loss controls the strength of both conclusions",
+          "unit_id": "full_openalex_w2023889974_v2u02",
+          "unit_type": "method bottleneck and counterfactual improvement",
+          "why_material": "Makes an explicit sensitivity claim: replacing the D-epsilon loss in the family estimates by logarithmic loss would simultaneously sharpen nonvanishing density and average rank."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The starred-family convention is included because it fixes the averaging domain.",
+          "representation_dependency": "Medium: the counterfactual rates are readable, but exact inequality glyphs should be checked against the scan for quotation.",
+          "unit_id": "full_openalex_w2023889974_v2u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 41,
+            "line_start": 15,
+            "title": "Quadratic-twist family targets: nonvanishing and average analytic rank",
+            "unit_id": "full_openalex_w2023889974_v2u01",
+            "unit_type": "problem setup and theorem targets",
+            "why_material": "Connects arithmetic questions about twisted elliptic curves to central vanishing of their L-functions and states the two family-level outcomes whose proof mechanisms organize the paper."
+          },
+          {
+            "line_end": 143,
+            "line_start": 76,
+            "title": "Moment and zero-density reductions for the two average results",
+            "unit_id": "full_openalex_w2023889974_u02",
+            "unit_type": "zero-density-to-rank strategy",
+            "why_material": "Carried v1 unit linking a second moment plus a first moment to nonvanishing and linking average zero density to a general average-rank theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same family-estimate loss propagates through two distinct interfaces: Cauchy-Schwarz turns it into a nonvanishing-density loss, while zero density plus an explicit formula turns it into an average-rank loss.",
+            "limit": "This is a within-paper sensitivity mechanism for one fixed elliptic curve's quadratic twists, not a universal equivalence between moment quality and rank statistics.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_v2u01",
+              "full_openalex_w2023889974_v2u02",
+              "full_openalex_w2023889974_u02"
+            ],
+            "title": "Moment quality as a shared family-level bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u02",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u02",
+          "spontaneous_reading": "A single quantitative defect in the real-character large sieve propagates into both headline results, making the D^epsilon loss a shared bottleneck rather than two unrelated weaknesses."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u02",
+          "source_grounded_mathematics": "Starred sums range over fundamental discriminants d coprime to N. The authors attribute the quality of both results to Heath-Brown's large-sieve estimates and state that replacing the D^epsilon factor in later Theorems 3 and 4 by a power of log D would improve the nonvanishing count to a D times logarithmic-factor scale and the rank sum to a D log log D scale.",
+          "conceptual_reading": "This is a sensitivity analysis: an upstream family-estimate loss is tracked through two downstream conclusions. It identifies where stronger input would matter without changing the proof architecture.",
+          "representation_or_bridge": "The common interface is averaging over the starred discriminant family; later moment and zero-density estimates are the bridge objects through which the large-sieve loss reaches nonvanishing and average rank.",
+          "boundary_or_failure": "The improvements are counterfactual and conditional on a stronger large-sieve input. The span does not prove such an input or establish a universal relation between moment quality and rank statistics.",
+          "uncertainty": "Several inequality symbols are absent in OCR, so exact bound directions and the sign of the logarithmic power should not be quoted solely from this text; the stated dependence on replacing D^epsilon is clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2023889974_v2u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly attributes the quality of both headline results to Heath-Brown's large-sieve estimates and gives the two conditional improvements obtained if D^epsilon were replaced by a logarithmic loss.",
+          "The candidate preserves the starred-family convention, the counterfactual status, and the OCR warning on exact inequality directions."
+        ],
+        "inference": [
+          "Treating the shared D^epsilon loss as one upstream bottleneck for two downstream conclusions is a substantive, source-supported sensitivity reading."
+        ],
+        "unsupported_or_imported": [
+          "The claim that 'later moment and zero-density estimates are the bridge objects' is not present in this frozen span; those mechanisms occur on later pages and should not be asserted here as source-grounded detail."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Missing comparison glyphs make the precise bound directions and logarithmic power sign unsafe to quote from OCR alone."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the specific moment/zero-density bridge from this unit or label it explicitly as later-context information; keep the span-grounded claim that improved large-sieve input would improve both stated outcomes."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The elliptic curve is fixed, and all implicit constants may depend on it.",
+      "line_end": 187,
+      "line_start": 162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: degree-two expansions and the completed-function normalization are formula-dependent but legible enough for semantic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Collects exactly the coefficient control, analytic continuation, and reflection symmetry that enable smoothing, large-sieve estimation, contour shifting, and zero symmetry.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dirichlet-series and functional-equation data for the twist family",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u03.txt",
+      "unit_bytes": 1350,
+      "unit_id": "full_openalex_w2023889974_v2u03",
+      "unit_sha256": "80cc17697638bb7dfe25d1ab8617bd29d37ce1c01a2b92bacbb95a824d644716",
+      "unit_type": "analytic family specification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u03.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 154,
+          "line_end": 161,
+          "text": "at once from Theorems 4 and 5, since we can choose L(D) = Dε . Observe\nthat the Riemann Hypothesis for the functions L(s, Ed ) allows, in particular,\nthe choice L(D) = 2.\n\n<!-- source-page: 4 -->\n\n152                           A. Perelli and J. Pomykała\n\n",
+          "sha256": "22c82d31f5b206f65220e0d95aa4154005d3808ea9b40a64c82198486f87ced3"
+        },
+        "after": {
+          "line_start": 188,
+          "line_end": 195,
+          "text": "\n     3. Proof of Theorem 3. We first state the basic tool of our paper,\ni.e., Corollary 3 of Heath-Brown [6]. Denoting by S(Q) the set of all real\nprimitive characters of modulus at most Q, we state Corollary 3 of [6] as\n\n    Proposition 1. Let Q, N be positive integers and a1 , . . . , aN ∈ C. Then\nfor every ε > 0,\n             X   X           2\n",
+          "sha256": "530928667438f3aadf27eb705bdbae4160d4c10d729698959f15e9d1f085529b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analytic data for the twist family",
+            "line_end": 187,
+            "line_start": 157,
+            "mathematical_role": "Records Dirichlet expansions, coefficient bounds, entire continuation, and the functional equation used later."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 187,
+          "line_start": 162,
+          "title": "Dirichlet-series and functional-equation data for the twist family",
+          "unit_id": "full_openalex_w2023889974_v2u03",
+          "unit_type": "analytic family specification",
+          "why_material": "Collects exactly the coefficient control, analytic continuation, and reflection symmetry that enable smoothing, large-sieve estimation, contour shifting, and zero symmetry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The elliptic curve is fixed, and all implicit constants may depend on it.",
+          "representation_dependency": "High: degree-two expansions and the completed-function normalization are formula-dependent but legible enough for semantic use.",
+          "unit_id": "full_openalex_w2023889974_v2u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 143,
+            "line_start": 76,
+            "title": "Moment and zero-density reductions for the two average results",
+            "unit_id": "full_openalex_w2023889974_u02",
+            "unit_type": "zero-density-to-rank strategy",
+            "why_material": "Carried v1 unit linking a second moment plus a first moment to nonvanishing and linking average zero density to a general average-rank theorem."
+          },
+          {
+            "line_end": 249,
+            "line_start": 189,
+            "title": "Mellin truncation plus the real-character large sieve",
+            "unit_id": "full_openalex_w2023889974_v2u04",
+            "unit_type": "mean-square construction",
+            "why_material": "Shows how an analytic family moment is converted into smoothed character polynomials, truncated dyadically, and bounded by a large-sieve input while a reflected moment is retained for bootstrapping."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u03",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u03",
+          "spontaneous_reading": "The unit packages the twist family into three compatible Dirichlet expansions plus a reflection law: coefficient bounds make the series estimable, while the completed functional equation makes values on opposite sides of the central line interchangeable."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u03",
+          "source_grounded_mathematics": "For real part s greater than 3/2, L(s,E_d), its reciprocal, and the displayed logarithmic-derivative quantity have Dirichlet series with chi_d-twisted coefficients bounded respectively by n^(1/2) times divisor, divisor, or von Mangoldt factors. The completed function, formed using d, N, Gamma(s), and L(s,E_d), is entire of controlled order and satisfies Lambda(s,E_d)=w_d Lambda(2-s,E_d), with |w_d|=1.",
+          "conceptual_reading": "Coefficient control and analytic symmetry are complementary resources: the first enables finite or smoothed polynomial estimates, and the second transports those estimates across the central point.",
+          "representation_or_bridge": "Dirichlet coefficients expose character orthogonality and large-sieve access; the completed L-function absorbs conductor and Gamma factors so the involution s -> 2-s becomes explicit.",
+          "boundary_or_failure": "These data enable later smoothing, contour shifts, and zero symmetry but do not themselves yield a moment or density bound. All constants may depend on the fixed curve E.",
+          "uncertainty": "The displayed degree-two series and completed normalization are OCR-sensitive, and L0/L likely represents a derivative quotient; symbolic reuse should be scan-checked even though the structural roles are legible."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2023889974_v2u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives Dirichlet expansions for L, its reciprocal, and its logarithmic derivative, followed by entire continuation, finite order, the completed-function normalization, and reflection s to 2-s.",
+          "The candidate correctly identifies coefficient access and functional-equation symmetry as complementary analytic resources and states that constants may depend on the fixed curve."
+        ],
+        "inference": [
+          "Character twisting suggests later orthogonality or large-sieve use, while the completed normalization makes reflection across the central point explicit."
+        ],
+        "unsupported_or_imported": [
+          "The coefficient-bound sentence is inaccurate or materially ambiguous: the source bounds both a(n) and b(n) by n^(1/2) tau(n), and bounds e_d(n) by n^(1/2) Lambda(n) tau(n), not respectively by the shortened three-factor list given."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The logarithmic-derivative typography and completed normalization are OCR-sensitive, although their structural roles are legible."
+        ],
+        "missed_mechanism": [
+          "The distinct coefficient bounds for all three series must be preserved exactly because they control later admissible estimates."
+        ],
+        "revision_instructions": [
+          "Rewrite the coefficient sentence to state |a(n)|,|b(n)| <= n^(1/2) tau(n) and |e_d(n)| <= n^(1/2) Lambda(n) tau(n); leave the remaining interpretation unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the closure step for Theorem 3 and depends on the setup in lines 189-249.",
+      "line_end": 288,
+      "line_start": 251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: parameter exponents and range splits are essential; scan verification is advisable for exact constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses different reflected lines on the two sigma ranges to force the moment-loss exponent to zero, then turns a neighborhood bound for L into a central derivative bound using Cauchy's integral formula.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional-equation exponent bootstrap and derivative control",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u05.txt",
+      "unit_bytes": 1740,
+      "unit_id": "full_openalex_w2023889974_v2u05",
+      "unit_sha256": "bbc9de9bf292092a6b94db2cc473fc1a32f629faa4145408b2defffd34c37ac1",
+      "unit_type": "self-improving exponent argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u05.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 243,
+          "line_end": 250,
+          "text": "the right hand side of (4) is negligible. We split the remaining part of that\nsum into sub-sums where n runs over intervals of the type M < n ≤ 2M ,\nand applying Proposition 1 to each sub-sum we see that\n          X∗     X∞                        2\n(5)                  a(n)χd (n)n−s e−n/X \n (D + X 3−2σ )(Dτ X)ε .\n         D<d≤2D     n=1\n\n",
+          "sha256": "44511080c4d497c539d9993e80e36c816266b9149658adfa677dcb3c16116555"
+        },
+        "after": {
+          "line_start": 289,
+          "line_end": 296,
+          "text": "\n   4. Proof of Theorem 4. Here we follow the zero-detecting method of\nChapter 12 of Montgomery [12], as presented in the proof of Theorem 3 of [6].\nLet R = R(D, T, σ, t) be the number of d ≤ D, d fundamental discriminant\nwith (d, N ) = 1, for which L(s, Ed ) has a zero in the square\n(7)         σ ≤ Re s < σ + (log DT )−1 ,        t ≤ Im s < t + (log DT )−1\nwith 1 ≤ σ ≤ 3/2 and |t| ≤ T , and let Y \n X \n",
+          "sha256": "ee7644665192d0a5c8ebee759c83000d6445234aa17db4bc35c6b6cad90d1b5c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 3",
+            "line_end": 288,
+            "line_start": 188,
+            "mathematical_role": "Derives the family mean-square estimate by Mellin smoothing, a real-character large sieve, functional-equation reflection, and an exponent bootstrap; then obtains the derivative moment by Cauchy's formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 288,
+          "line_start": 251,
+          "title": "Functional-equation exponent bootstrap and derivative control",
+          "unit_id": "full_openalex_w2023889974_v2u05",
+          "unit_type": "self-improving exponent argument",
+          "why_material": "Chooses different reflected lines on the two sigma ranges to force the moment-loss exponent to zero, then turns a neighborhood bound for L into a central derivative bound using Cauchy's integral formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the closure step for Theorem 3 and depends on the setup in lines 189-249.",
+          "representation_dependency": "High: parameter exponents and range splits are essential; scan verification is advisable for exact constants.",
+          "unit_id": "full_openalex_w2023889974_v2u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 249,
+            "line_start": 189,
+            "title": "Mellin truncation plus the real-character large sieve",
+            "unit_id": "full_openalex_w2023889974_v2u04",
+            "unit_type": "mean-square construction",
+            "why_material": "Shows how an analytic family moment is converted into smoothed character polynomials, truncated dyadically, and bounded by a large-sieve input while a reflected moment is retained for bootstrapping."
+          },
+          {
+            "line_end": 376,
+            "line_start": 266,
+            "title": "Carried zero-detection argument through its first alternative",
+            "unit_id": "full_openalex_w2023889974_u03",
+            "unit_type": "zero-detecting density argument",
+            "why_material": "Carried v1 unit preserving the transition from the mean-square theorem into a mollified zero detector and the Cauchy-Schwarz estimate for its first alternative."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u05",
+          "spontaneous_reading": "The proof closes by choosing the reflected line differently in two sigma ranges, forcing any admissible loss exponent to improve toward zero; a small complex neighborhood then converts value control into derivative control by Cauchy's formula."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u05",
+          "source_grounded_mathematics": "For sigma at least 1+delta the choices alpha=2-sigma and X=(D tau)^(1+delta) yield an inequality comparing nu(sigma) with max(delta,nu(sigma)-4 delta(sigma-1)) plus epsilon losses. Near sigma=1 the proof instead takes alpha=1-delta and imports the bound at 1+delta. Letting epsilon and delta shrink gives the asserted second-moment estimate; the functional equation extends it to a small circle around 1, and Cauchy's integral formula bounds the central derivative moment.",
+          "conceptual_reading": "This is a self-improving exponent argument: assume only that a loss exponent is admissible, reflect and smooth to produce a strictly better admissible exponent, and use the infimum definition to close the loop.",
+          "representation_or_bridge": "The range split is the bridge between a symmetric reflection argument away from the center and local transfer near the center; the Cauchy circle bridges uniform function values to derivatives.",
+          "boundary_or_failure": "The closure depends on the setup and estimates (3)-(5) from the preceding unit and on uniform functional-equation control. It provides family-average bounds, not pointwise control of each twist.",
+          "uncertainty": "OCR makes some square-root and epsilon/delta typography ambiguous, so exact constants and exponents should be checked against the scan; the two-range bootstrap and Cauchy step are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2023889974_v2u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The span uses different alpha choices in the ranges sigma >= 1+delta and 1 <= sigma <= 1+delta, obtains vanishing loss, extends the moment bound to a neighborhood of 1 by the functional equation, and applies Cauchy's formula for the derivative moment.",
+          "The candidate correctly identifies an exponent-improvement loop and distinguishes family-average from pointwise control."
+        ],
+        "inference": [
+          "Describing the range split as a bridge between reflection away from the center and local transfer near it is a defensible summary."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Several displayed square roots and epsilon/delta exponents are OCR-fragile."
+        ],
+        "missed_mechanism": [
+          "The candidate replaces the explicit coordinated choice delta=sqrt(epsilon) by the vaguer statement that epsilon and delta shrink; that relation is part of how the accumulated losses are forced to zero."
+        ],
+        "revision_instructions": [
+          "State explicitly that the proof chooses delta=sqrt(epsilon), uses the resulting bound at 1+delta in the near-central range, and then lets epsilon tend to zero; retain the Cauchy-circle conclusion."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "8d3dd7adf7919d87534d98a551c0df56f05d8b27f46c47d874c586ff49bbc736"
+}

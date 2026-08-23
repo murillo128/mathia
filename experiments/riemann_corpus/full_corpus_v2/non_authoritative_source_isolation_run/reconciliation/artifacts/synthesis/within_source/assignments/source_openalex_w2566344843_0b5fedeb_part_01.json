@@ -1,0 +1,377 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2566344843",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2566344843_0b5fedeb_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Logarithmic prime blocks act as generations: nearby evaluation points share the small-prime generations, while sufficiently separated points decorrelate across all retained blocks, exactly the structure needed to control the second moment of high-point counts.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2566344843_v2_u05",
+          "openalex_w2566344843_v2_u07",
+          "openalex_w2566344843_v2_u13",
+          "openalex_w2566344843_v2_u14",
+          "openalex_w2566344843_v2_u15",
+          "openalex_w2566344843_v2_u16",
+          "openalex_w2566344843_v2_u17"
+        ],
+        "proposed_limit": "This is a coarse finite-K approximation sufficient for leading order, not a proof that zeta is literally a branching random walk or a derivation of the full limiting law.",
+        "source_id": "openalex_w2566344843",
+        "synthesis_id": "riemann_v2_within_ab98cc51887990e0e5a0f2f9",
+        "title": "Branching structure is encoded by prime scale and spatial separation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the discard of exceptional first/last blocks, the one- versus two-point event strategy, the tree construction, and methodological provenance.",
+          "line_end": 341,
+          "line_start": 231,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The conceptual covariance dichotomy is clear; Figure 1 is useful but dispensable, and exact thresholds require formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains why equal-variance prime blocks are nearly independent across scales yet remain correlated across nearby points, and encodes that covariance by a coarse tree whose branching time is determined by separation.",
+          "source_id": "openalex_w2566344843",
+          "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+          "source_page_markers_inside_unit": [
+            5,
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime size becomes generation and spatial separation becomes shared ancestry",
+          "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u05.txt",
+          "unit_bytes": 7470,
+          "unit_id": "openalex_w2566344843_v2_u05",
+          "unit_sha256": "e7fdb9d920e75938d6f57c183c96a3ffd54d62465209497185c96e9164470587",
+          "unit_type": "branching-random-walk representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The stated two-regime covariance is encoded by a coarse Gaussian tree: nearby grid points share early modeled increments and cease sharing them after a separation-dependent generation. This organizes the pair probabilities in the grid second-moment argument by common-ancestry depth rather than treating every pair uniformly.",
+            "nonparaphrase_operation": "Translate a spatial covariance rule into an ancestry rule that exposes which pair separations require correlated estimates. The representation gains a usable multiscale bookkeeping device for the second moment, but loses analytic detail and does not identify zeta literally with a branching random walk.",
+            "quality_reason": "Accepted with the analysis restricted to the covariance, grid, and tree mechanisms independently present in the frozen span, repairing its context-defective opening without importing adjacent definitions.",
+            "source_support": "The span states the covariance dichotomy for P_j at two locations, discards the exceptional first and last blocks, splits grid pairs into far and near regimes, and constructs a K-level Gaussian tree whose leaves share increments up to a distance-dependent cutoff. It says the match is approximate for the Dirichlet polynomials and exact for the model.",
+            "speculation_status": "The tree is a source-proposed approximation, not an exact model of the Dirichlet polynomials. Because this artifact omits the definitions and prime supports of P_j, no claim is made here that prime size itself creates the generations; exact cutoffs are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes definitions of X, sigma_0, J_j, P_j, variance estimates, both propositions, and their composition.",
+          "line_end": 535,
+          "line_start": 442,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent; block endpoints, sigma_0, and constants require PDF checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Chooses logarithmic prime ranges so interior blocks have comparable variance, omits the anomalous largest and overly correlated smallest blocks, and states the two propositions whose composition yields the lower bound.",
+          "source_id": "openalex_w2566344843",
+          "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Equalize prime-block variance and isolate the blocks with usable correlation",
+          "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u07.txt",
+          "unit_bytes": 5529,
+          "unit_id": "openalex_w2566344843_v2_u07",
+          "unit_sha256": "6acc18314ca2b0b715b67493b4bab90d2af65411ea980d4bb04d26ae9155db30",
+          "unit_type": "multiscale decomposition and proposition interface",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof interface uses interior prime blocks with roughly matched variances to turn the lower bound into a simultaneous multiscale event. Proposition 3.1 compares a critical-line zeta maximum with a maximum of the interior-block sum, while Proposition 3.2 supplies a nearby point where every retained block clears its threshold; composing them yields the desired summed lower bound.",
+            "nonparaphrase_operation": "Factor the proof burden into an analytic comparison and a probabilistic simultaneous-lower-bound module. Matching interior variances makes their thresholds commensurate and prevents the interface from relying on one anomalous edge block; the cost is discarding blocks whose correlation or variance violates that common design.",
+            "quality_reason": "Accepted after replacing imported tree and Euler-product language with the two-proposition interface actually established by the span.",
+            "source_support": "The span defines X, sigma_0, the ranges J_j and polynomials P_j, derives roughly equal variances for j through K-3, explains why P_0 and P_{K-2} are omitted, states Propositions 3.1 and 3.2, and explicitly combines their inequalities.",
+            "speculation_status": "No Euler-product or branching-process interpretation is asserted in this unit. The implication chain is explicit, while block endpoints, sigma_0, variances, and thresholds are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes prime-number-theorem covariance regimes and explains why the smallest block is excluded.",
+          "line_end": 1283,
+          "line_start": 1171,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact moment range, covariance constants, and remainder require formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Evaluates mixed moments at two nearby points and identifies their variance/covariance matrix, making the branching correlation law an analytic consequence of prime sums rather than only an analogy.",
+          "source_id": "openalex_w2566344843",
+          "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Match two-point prime-block moments to a block-diagonal Gaussian law",
+          "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u13.txt",
+          "unit_bytes": 6771,
+          "unit_id": "openalex_w2566344843_v2_u13",
+          "unit_sha256": "ad8d69f0b5cf6e1f1951c1fb8a08ec4a4bfc2103713f73160a679c4be7ee7860",
+          "unit_type": "Gaussian moment matching",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The branching law is derived, not assumed: multiplicative diagonal combinatorics yields Gaussian moments, and oscillation cos(tau log p) controls when two points cease to share a scale. Different j blocks decouple in the limiting covariance.",
+            "nonparaphrase_operation": "The covariance matrix bridges arithmetic prime sums to the Gaussian/tree model used by the large-deviation analysis.",
+            "quality_reason": "The bounded mixed moments, odd/even split, Gaussian variance/covariance formula, prime-number-theorem variance and decorrelation regimes, exclusion of P0, and diagonal/Bessel proof are explicit. Calling this a branching law is interpretive terminology, but it accurately summarizes the explicitly derived scale-dependent covariance and is not presented as an exact tree identity. Low: the analysis explains how the covariance is derived rather than merely naming a tree analogy.",
+            "source_support": "Proposition 5.1 evaluates moments of linear combinations of P_j(t) and P_j(t+tau): odd moments have negligible main terms, and even moments equal those of jointly Gaussian variables with variances s_j^2 and covariances rho_j(tau). Prime sums show equal block variances and give regimes where rho_j is full-sized or small according to tau and j.",
+            "speculation_status": "Moment matching is restricted to bounded orders and parameters. The smallest block remains correlated too far and is excluded from the proposition. Moment ranges, covariance constants, and error terms require formula verification; the Gaussian matching mechanism is explicit. Viewing cos(tau log p) as the analytic source of shared-versus-decorrelated scales and the covariance matrix as the bridge to the Gaussian model is well supported. Moment ranges, covariance thresholds, constants, and errors require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the exceptional-set moment bound, the translate B(tau), and the restricted-to-unrestricted moment comparison.",
+          "line_end": 1438,
+          "line_start": 1284,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The construction is clear; cutoff exponents and transform domains require source checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introduces a high-probability bounded set so rare prime-sum values cannot dominate exponential moments, then uses Taylor truncation to obtain one- and two-point Gaussian Fourier-Laplace transforms.",
+          "source_id": "openalex_w2566344843",
+          "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+          "source_page_markers_inside_unit": [
+            20,
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Cut off rare extremes before promoting moment matching to Laplace transforms",
+          "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u14.txt",
+          "unit_bytes": 8840,
+          "unit_id": "openalex_w2566344843_v2_u14",
+          "unit_sha256": "4488c6335c42abdd388e94ad24b05bc7a4a3bc5cfdea62c100e6ce7f54fd8ed7",
+          "unit_type": "truncated transform control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Truncation restores uniform integrability: distributional moment agreement alone does not control an exponentially sensitive observable. The bounded event makes Taylor approximation and exceptional-set removal compatible.",
+            "nonparaphrase_operation": "The high-probability cutoff bridges finite moment information to Laplace transforms, which later encode large-deviation probabilities.",
+            "quality_reason": "The bounded event B, exponentially small complement, translate B(tau), Taylor truncation, comparison of restricted and unrestricted moments, and one-/two-point Gaussian transforms are explicit. No material unsupported claim is present; the analysis retains the parameter and cutoff ranges. Low: rare-event domination, Taylor degree, and exceptional-set removal are concrete proof burdens.",
+            "source_support": "The set B bounds every interior P_j by a power of log T, and high-moment estimates show its complement has exponentially small probability. On B and its translate B(tau), exponential functions are approximated by a Taylor polynomial whose moments are evaluated by Proposition 5.1; restricted and unrestricted moments differ negligibly, giving Gaussian Fourier-Laplace transforms with covariance rho_j(tau).",
+            "speculation_status": "Without the cutoff, rare values may invalidate the transform approximation. The result holds only within specified transform-parameter and moment ranges. Cutoff exponents, Taylor degree, and errors are formula-sensitive; the necessity and role of B are explicit. Uniform-integrability language is a reasonable explanation for why rare values must be removed before exponentiating finite moment information. Cutoff exponents, Taylor degree, transform domain, and errors are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the transition from the crude bound to the need for precise inversion at larger separations.",
+          "line_end": 1512,
+          "line_start": 1439,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact indexing of the split generation and constants is formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Bounds a simultaneous high event by choosing exponential tilts according to the separation-dependent covariance: correlated early generations pay one shared cost, while later independent generations pay two.",
+          "source_id": "openalex_w2566344843",
+          "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Charge shared early blocks once and decorrelated late blocks twice",
+          "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u15.txt",
+          "unit_bytes": 4715,
+          "unit_id": "openalex_w2566344843_v2_u15",
+          "unit_sha256": "e9b2613fdc49d22cd30627c4c56a329d5ff462b3f0bba80ebaa473bddb20d8ff",
+          "unit_type": "correlation-sensitive large-deviation bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For the simultaneous high event at two locations, the exponential tilt converts the separation-dependent covariance split into a once-versus-twice quadratic cost. Blocks up to the cutoff m use the shared cost x_j^2/(2s_j^2), while later blocks, whose covariance is only bounded by a small error here, incur twice that single-point cost in the resulting upper bound.",
+            "nonparaphrase_operation": "Interpret covariance as a cost-accounting rule: shared fluctuations are paid for once, whereas weakly correlated late fluctuations contribute the doubled quadratic term. This gains a bound adapted to nearby pairs but does not yield a product law or an asymptotic probability.",
+            "quality_reason": "Accepted after replacing the unsupported independence wording with the precise covariance-sensitive upper-bound mechanism and reserving factorization for the next unit.",
+            "source_support": "Proposition 5.4 defines m from the separation, applies positive tilts to A intersect A(tau), bounds covariance by s_j^2 for j at most m and by O(1) afterward, and optimizes beta_j to obtain the two sums in the exponent. The text calls this bound crude and says sharper large-separation estimates require later Fourier inversion.",
+            "speculation_status": "No independence or factorization is claimed for the late blocks in this proposition; only the doubled cost in an upper bound is retained. Exact split indices, cutoff inequalities, tilts, and constants are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes tail truncation of the contour, comparison with independent Gaussian integrals, and the two-point cross-term estimate.",
+          "line_end": 1709,
+          "line_start": 1518,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very formula-dense; contours, smoothing scale, and errors need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a smoothed indicator and contour inversion to prove product Gaussian tail asymptotics, including asymptotic independence once all prime blocks decorrelate.",
+          "source_id": "openalex_w2566344843",
+          "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+          "source_page_markers_inside_unit": [
+            24,
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Recover precise one- and two-point Gaussian tails from the truncated transforms",
+          "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u16.txt",
+          "unit_bytes": 12084,
+          "unit_id": "openalex_w2566344843_v2_u16",
+          "unit_sha256": "f7fa5f2e0fc1d04490d065789754b35d59046763348692fc2375f57e2aff25bf",
+          "unit_type": "Fourier-Laplace inversion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A smoothed threshold kernel and multidimensional contour inversion convert controlled Fourier-Laplace transforms on the required contour range into precise one-point Gaussian tail products. For separated points, the covariance cross terms are explicitly negligible on those contours, leaving two copies of the one-point Gaussian integral and hence asymptotic factorization.",
+            "nonparaphrase_operation": "Translate transform control into rare-event probabilities by combining smoothing, optimized nonzero contour placement, and tail estimates; then read decorrelation as the disappearance of cross terms in the Gaussian exponent. The gain is asymptotic tail and product formulas, while the loss is validity outside the specified parameter and separation ranges.",
+            "quality_reason": "Accepted after replacing the inaccurate near-zero slogan with the actual contour-range mechanism and retaining the explicit cross-term estimate needed for factorization.",
+            "source_support": "The proof defines the piecewise-linear g_delta by a contour identity, places contours at beta_j=x_j/s_j^2, truncates large imaginary parts, substitutes Proposition 5.3 on its stated growing range, extends the controlled integrals, identifies them with independent Gaussian tails, and proves that rho_j(tau)w_jw_j' is negligible beyond the stated separation scale.",
+            "speculation_status": "The argument uses controlled transforms over a growing contour range, not merely local information near zero. Factorization is conditional on the stated decorrelation scale and contour-error bounds; kernel parameters and error exponents are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps the one-point tail, far-pair factorization, near-pair multiscale bound, and final Cauchy-Schwarz conclusion together.",
+          "line_end": 1817,
+          "line_start": 1711,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact exponents are degraded in extraction and must be checked; the far/near pair strategy is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Places log T candidates in the interval, shows their expected number diverges, and splits the pair sum into decorrelated typical pairs and correlated nearby pairs whose contribution is negligible.",
+          "source_id": "openalex_w2566344843",
+          "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A grid plus Paley-Zygmund turns rare high points into a typical maximum",
+          "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u17.txt",
+          "unit_bytes": 6101,
+          "unit_id": "openalex_w2566344843_v2_u17",
+          "unit_sha256": "8680590a967fad08305809ccb81e270ba9ff4468674ec0e3fbb0b37fcfc32bdc",
+          "unit_type": "second-moment existence argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Existence is obtained by balancing abundance against dependence. The grid is dense enough to provide many trials but its correlation geometry is explicitly accounted for rather than treated as independence.",
+            "nonparaphrase_operation": "The second moment of the success count bridges local large-deviation estimates to a typical maximum; the far/near split maps directly to the tree representation.",
+            "quality_reason": "The log-T grid, common threshold event, one-point Gaussian tails, divergent expected count for lambda<1, Cauchy-Schwarz/Paley-Zygmund step, far-pair factorization, near-pair multiscale bound, and negligible near contribution are explicit. No material unsupported claim is present; the analysis does not treat grid points as independent. Low: the far/near decomposition and exact reason first moment is insufficient are specific.",
+            "source_support": "The interval is discretized into about log T points and A(tau_l) requires every interior block to exceed a common threshold. One-point Gaussian tails make the expected number of successful points diverge for lambda<1. The pair sum is split at the decorrelation distance: Proposition 5.5 handles far pairs by product probabilities, Proposition 5.4 bounds near pairs by their branching depth, and Cauchy-Schwarz yields probability 1+o(1) of at least one success.",
+            "speculation_status": "A first-moment count alone would not rule out clustering. The conclusion depends on lambda<1, fixed coarse-graining K, and exact dominance of the near-pair sum. Some extracted exponents are degraded and require checking; the Paley-Zygmund and pair-splitting argument is explicit. Balancing abundance against dependence and interpreting the second moment as the bridge from local tails to existence are faithful conceptual summaries. Several extracted exponents and inequality symbols are degraded and require source-image checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_565578d5dd4ea9d1ae647ce6b53adc1431d368796371d682258bf034ec17bd2a",
+        "dossier_sha256": "cb363490cadadcf73e42c536aaca2b896b6f7c4c7d594f4533fe5c8589cf18d8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The same deterministic supremum inequality converts integrated moment information into interval-uniform statements first for zeta and later for the mollified product.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2566344843_v2_u06",
+          "openalex_w2566344843_v2_u10"
+        ],
+        "proposed_limit": "The required derivative moments are specific to each analytic object, so the reuse is structural rather than a black-box theorem for arbitrary approximations.",
+        "source_id": "openalex_w2566344843",
+        "synthesis_id": "riemann_v2_within_95beb1fef7cea1fc96f54001",
+        "title": "One Sobolev bridge serves both the upper bound and mollifier uniformity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps the analytic inequality, probabilistic Chebyshev step, and moment inputs together.",
+          "line_end": 440,
+          "line_start": 373,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The mechanism is prose-supported; exact inequality formatting and powers need checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Bounds a continuum supremum by endpoint values and an integral of f'f, allowing classical second moments of zeta and zeta-prime to prove the upper half of the theorem without a fine net.",
+          "source_id": "openalex_w2566344843",
+          "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Sobolev inequality converts pointwise moments into a typical interval maximum",
+          "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u06.txt",
+          "unit_bytes": 3809,
+          "unit_id": "openalex_w2566344843_v2_u06",
+          "unit_sha256": "f01560a1e89a06a3553d6d09ca7008909c4a9e8cc4649707dc1ed8ce15716ad3",
+          "unit_type": "local-supremum bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Differentiability is the bridge from pointwise continuity to averaged control: the derivative pays for movement between sampled endpoints and every interior point. This yields a coarse upper bound adequate for typical maxima.",
+            "nonparaphrase_operation": "The Sobolev inequality converts spatial supremum information into integrals accessible to classical zeta moment estimates.",
+            "quality_reason": "The Sobolev inequality, endpoint and derivative-product bound, Chebyshev step, zeta/zeta-prime second moments, Cauchy-Schwarz, and O(V^-2) probability conclusion are explicit. No material unsupported claim is present; the analysis does not suggest a sharp lower bound or the conjectural maximum scale follows. Low: it identifies a precise continuum-to-integral reduction.",
+            "source_support": "The source proves an inequality bounding max |f|^2 on [-1,1] by endpoint squares plus the integral of |f'f|. Applied to zeta, Chebyshev and Cauchy-Schwarz together with second-moment bounds for zeta and zeta-prime show that the short-interval maximum exceeds V log T with probability O(V^{-2}).",
+            "speculation_status": "The bound is deliberately coarse and does not give the sharp conjectural maximum or lower bound. It requires derivative moments and typicality over the random center. Exact powers in the displayed estimates should be checked, but the Sobolev-Chebyshev-Cauchy-Schwarz mechanism is explicit. Reading differentiability as the bridge that prevents an interior supremum from escaping averaged control is source-faithful. Squares, derivative notation, and logarithmic powers are extraction-sensitive, while the proof chain is clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes derivative-moment control and explicitly identifies the reuse of the upper-bound mechanism.",
+          "line_end": 950,
+          "line_start": 901,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact fourth-moment bounds and logarithmic powers require checking, but the upgrade mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies the same Sobolev-Chebyshev-Cauchy-Schwarz pattern to zeta times the mollifier, turning an averaged inverse into a uniform short-interval inverse for almost every center.",
+          "source_id": "openalex_w2566344843",
+          "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+          "source_page_markers_inside_unit": [
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Upgrade mean-square mollification to every point of a short interval",
+          "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u10.txt",
+          "unit_bytes": 2535,
+          "unit_id": "openalex_w2566344843_v2_u10",
+          "unit_sha256": "3ecdd8e23c9b1400ac019f888217980b3c23adad8be3f3b731c6e7a6adbaf82f",
+          "unit_type": "uniformization mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Uniformization converts a statement true for most individual points into one true throughout most short windows. The price is control of derivatives, which prevents a narrow bad spike from escaping the mean-square estimate.",
+            "nonparaphrase_operation": "The Sobolev inequality bridges L2 mollification to short-interval sup norm; derivative moments are the continuity certificate.",
+            "quality_reason": "The L2 precursor, interval Sobolev bound for zeta M-1, Chebyshev, repeated Cauchy-Schwarz, fourth-moment inputs, and vanishing exceptional probability are explicit. No material unsupported claim is present; the analysis correctly retains probabilistic rather than deterministic scope. Low: this is a precise reuse of a prior analytic mechanism on a new product.",
+            "source_support": "Starting from the L2 estimate for zeta M-1, the proof applies the interval Sobolev inequality to this product, then Chebyshev and Cauchy-Schwarz. Fourth-moment bounds for zeta and its derivative and mean-value bounds for M and M-prime control the derivative term, yielding a vanishing exceptional probability for the interval supremum.",
+            "speculation_status": "The conclusion remains probabilistic over interval centers and applies on the shifted line. It relies on strong moment inputs and does not give deterministic pointwise inversion. Exact fourth-moment powers are formula-sensitive; the reused upgrade mechanism is clear. Calling derivative control a continuity certificate that rules out narrow bad spikes is a faithful explanation of the uniformization step. Fourth-moment exponents, primes on derivatives, and logarithmic powers require checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_565578d5dd4ea9d1ae647ce6b53adc1431d368796371d682258bf034ec17bd2a",
+        "dossier_sha256": "cb363490cadadcf73e42c536aaca2b896b6f7c4c7d594f4533fe5c8589cf18d8"
+      }
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1567978841",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1567978841_a66ab4c0_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A logarithmic-derivative sign estimate controls the critical-strip side while Rouché counting controls the far-left trivial-zero geometry, leaving only a bounded residual region.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1567978841_d02",
+          "openalex_w1567978841_d03"
+        ],
+        "proposed_limit": "The exact inequalities are OCR-fragile, RH is used for the critical-strip component, and the bounded residual calculation is not executed here.",
+        "source_id": "openalex_w1567978841",
+        "synthesis_id": "riemann_v2_within_1f38ae4c0e50b383ff949c99",
+        "title": "Complementary global control from sign and counting arguments"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 183-197 are essential completion context for the immutable v1 span ending at line 182: they finish the parameter range and explain how the earlier computation and reflected bound supply the theorem's first conclusion and reduce the second.",
+          "line_end": 197,
+          "line_start": 49,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The strategic chain is clear in prose; equations (1)-(13), constants, inequalities, and variable ranges are OCR-fragile and must be checked against page images before exact mathematical reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof applies the functional equation to a reflected logarithmic derivative, uses RH to make each zero contribution have the needed real-part sign, controls gamma and trigonometric terms explicitly, and combines the resulting positivity with a finite prior calculation to exclude derivative zeros in the open left half of the critical strip.",
+          "source_id": "openalex_w1567978841",
+          "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+          "source_page_markers_inside_unit": [
+            2,
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH turns zero symmetry into a zero-free region for the first derivative",
+          "unit_artifact_relpath": "depth/units/openalex_w1567978841_d02.txt",
+          "unit_bytes": 5399,
+          "unit_id": "openalex_w1567978841_d02",
+          "unit_sha256": "ac334cfe0c4420f6aa358eb1f9f434dc437f0bbbe8018d61b4ca8fea5a0c1be2",
+          "unit_type": "RH-conditional logarithmic-derivative sign proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof represents RH zero geometry as an additive sign certificate: after functional-equation reflection, RH gives every term in a zero-sum logarithmic derivative the required positive real part, while gamma, tangent, pole, and remainder terms consume an explicit error budget. Once the resulting reflected quotient has positive real part and its denominator is known nonzero in the relevant region, its numerator cannot vanish. A cited finite computation supplies the bounded complement, so the method gains open-strip nonvanishing from one scalar inequality but still leaves a width-four strip around the negative real axis and depends on unreplicated computation.",
+            "nonparaphrase_operation": "Compresses global zero placement into a scalar real-part invariant and separates its proof obligations into favorable zero terms, an auxiliary-factor error budget, denominator nonvanishing, and finite residual certification.",
+            "quality_reason": "Accepted because the interpretation preserves the concrete sign mechanism and its limitations. The revision adds the denominator condition required for quotient-to-nonvanishing, deletes the cross-span Rouché claim, and does not promote OCR-damaged constants to reliable data.",
+            "source_support": "The span displays the functional equation, a logarithmic-derivative expansion over zeta zeros, the termwise RH sign argument, and bounds for the auxiliary analytic terms. It combines them into positivity in a large-parameter range, invokes an earlier calculation for the complementary bounded range, concludes the theorem's first part, and says the closed-left-half-plane conclusion remains unresolved in a strip of width four. The displayed signs, quotient orientation, constants, cutoffs, and parameter ranges are OCR-fragile.",
+            "speculation_status": "The mathematical claims are source-stated and RH-conditional; the scalar-certificate and error-budget language is interpretive. Exact numerical thresholds and formula orientation are withheld pending scan verification, and no Rouché mechanism is imported from the next span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the complementary mechanism completing the closed-left-half-plane conclusion outside a bounded region and should not be severed from the rectangle definition, domination condition, and realness argument.",
+          "line_end": 250,
+          "line_start": 198,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The factorization and argument are legible from prose, but signs, rectangle vertices, bounds (15)-(17), and the reflected coordinate convention require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The differentiated functional equation is split into a dominant factor and an error term; explicit boundary estimates establish Rouché domination on a family of rectangles, transferring the cosine-factor zero count, while conjugate pairing forces the unique zero to be real.",
+          "source_id": "openalex_w1567978841",
+          "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Boundary domination and conjugate pairing force one real zero per far-left rectangle",
+          "unit_artifact_relpath": "depth/units/openalex_w1567978841_d03.txt",
+          "unit_bytes": 2359,
+          "unit_id": "openalex_w1567978841_d03",
+          "unit_sha256": "8b849adbb8b742ba8fa287cf5b90c7bedc92d01194ed57160cca4fa7a930716f",
+          "unit_type": "Rouché zero-counting construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The far-left argument changes the invariant from pointwise sign to boundary zero count. A differentiated functional equation is split into a dominant factor and an error; boundary estimates on a family of rectangles establish strict domination, so Rouché transfers the dominant factor's zero count to the full expression. The gamma-derivative component of the dominant factor is separately shown nonvanishing in each rectangle, leaving the cosine component to contribute exactly one zero. Conjugation symmetry then forces that unique zero to be real. This representation gains stable counting from boundary control, but it applies only beyond a far-left threshold and leaves the intervening bounded region unresolved.",
+            "nonparaphrase_operation": "Reframes localization as a two-stage invariant argument: analytic boundary domination preserves a model zero count, then auxiliary-factor nonvanishing and conjugation symmetry refine count into real-axis location.",
+            "quality_reason": "Accepted because it performs a supported conceptual change of representation while preserving every essential proof burden. The revision explicitly restores auxiliary-factor nonvanishing before assigning the unique dominant zero to the cosine factor.",
+            "source_support": "The span defines a decomposition f+g, states the boundary domination condition, derives qualitative bounds for the gamma logarithmic derivative, zeta logarithmic derivative, and tangent term, and applies Rouché on rectangles. It uses positivity of an earlier gamma-factor bound to exclude zeros of the auxiliary gamma-derivative factor, attributes the remaining single dominant zero to the cosine factor, and uses conjugate pairing to prove realness. OCR damage affects the factorization, rectangle vertices, signs, bounds, reflection convention, and exact threshold.",
+            "speculation_status": "The mechanism is source-supported; describing Rouché counting as a boundary invariant is interpretation rather than a new claim. Rectangle geometry and numerical thresholds remain qualitative until the scan resolves the formulas."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Explicit domination bounds turn a global zero-location question into a finite set of regions whose numerical treatment changes with the stable local representation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1567978841_d03",
+          "openalex_w1567978841_d04"
+        ],
+        "proposed_limit": "This source argues feasibility and cites earlier computation but does not supply a new auditable table of computed values.",
+        "source_id": "openalex_w1567978841",
+        "synthesis_id": "riemann_v2_within_ff2c09286432727e0e4c755e",
+        "title": "Analytic reduction paired with region-specific computation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the complementary mechanism completing the closed-left-half-plane conclusion outside a bounded region and should not be severed from the rectangle definition, domination condition, and realness argument.",
+          "line_end": 250,
+          "line_start": 198,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The factorization and argument are legible from prose, but signs, rectangle vertices, bounds (15)-(17), and the reflected coordinate convention require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The differentiated functional equation is split into a dominant factor and an error term; explicit boundary estimates establish Rouché domination on a family of rectangles, transferring the cosine-factor zero count, while conjugate pairing forces the unique zero to be real.",
+          "source_id": "openalex_w1567978841",
+          "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Boundary domination and conjugate pairing force one real zero per far-left rectangle",
+          "unit_artifact_relpath": "depth/units/openalex_w1567978841_d03.txt",
+          "unit_bytes": 2359,
+          "unit_id": "openalex_w1567978841_d03",
+          "unit_sha256": "8b849adbb8b742ba8fa287cf5b90c7bedc92d01194ed57160cca4fa7a930716f",
+          "unit_type": "Rouché zero-counting construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The far-left argument changes the invariant from pointwise sign to boundary zero count. A differentiated functional equation is split into a dominant factor and an error; boundary estimates on a family of rectangles establish strict domination, so Rouché transfers the dominant factor's zero count to the full expression. The gamma-derivative component of the dominant factor is separately shown nonvanishing in each rectangle, leaving the cosine component to contribute exactly one zero. Conjugation symmetry then forces that unique zero to be real. This representation gains stable counting from boundary control, but it applies only beyond a far-left threshold and leaves the intervening bounded region unresolved.",
+            "nonparaphrase_operation": "Reframes localization as a two-stage invariant argument: analytic boundary domination preserves a model zero count, then auxiliary-factor nonvanishing and conjugation symmetry refine count into real-axis location.",
+            "quality_reason": "Accepted because it performs a supported conceptual change of representation while preserving every essential proof burden. The revision explicitly restores auxiliary-factor nonvanishing before assigning the unique dominant zero to the cosine factor.",
+            "source_support": "The span defines a decomposition f+g, states the boundary domination condition, derives qualitative bounds for the gamma logarithmic derivative, zeta logarithmic derivative, and tangent term, and applies Rouché on rectangles. It uses positivity of an earlier gamma-factor bound to exclude zeros of the auxiliary gamma-derivative factor, attributes the remaining single dominant zero to the cosine factor, and uses conjugate pairing to prove realness. OCR damage affects the factorization, rectangle vertices, signs, bounds, reflection convention, and exact threshold.",
+            "speculation_status": "The mechanism is source-supported; describing Rouché counting as a boundary invariant is interpretation rather than a new claim. Rectangle geometry and numerical thresholds remain qualitative until the scan resolves the formulas."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This span presents feasibility rather than completed certification; it preserves the region partition and the rationale for changing computational representation.",
+          "line_end": 276,
+          "line_start": 251,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The method comparison is prose-stable, while exact region inequalities, derivative notation, and recurrence signs need the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The paper converts the analytic bounds into three bounded uncertainty regions and assigns distinct numerical representations: Euler-Maclaurin in the central region, the asymptotic gamma logarithmic derivative farther left, recurrence translations near the origin, and Euler-Maclaurin again for zeta terms.",
+          "source_id": "openalex_w1567978841",
+          "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A three-region decomposition makes the unresolved zero search finite and representation-aware",
+          "unit_artifact_relpath": "depth/units/openalex_w1567978841_d04.txt",
+          "unit_bytes": 1365,
+          "unit_id": "openalex_w1567978841_d04",
+          "unit_sha256": "b3b628efb3c4fdff5c4a3a6e4abb2fc1eb34b04769d7a5d5729c16fd80507e5e",
+          "unit_type": "computational certification plan",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analytic estimates perform a global compression: an unbounded zero search becomes finite. The remaining computation is then decomposed by numerical conditioning, recognizing that no single representation is uniformly effective across the geometry of the residual set.",
+            "nonparaphrase_operation": "The bridge objects are the three uncertainty regions and the alternative but equivalent formulas connected by the functional equation and gamma recurrence. Their role is operational: they expose rapidly convergent quantities in different parts of the plane.",
+            "quality_reason": "The span partitions the remaining uncertainty into three bounded regions and assigns different computational representations by region. It proposes Euler-Maclaurin evaluation in region III and near the origin, an asymptotic gamma logarithmic-derivative representation farther left, recurrence translations near the origin, and Euler-Maclaurin for the zeta terms. It explicitly says the differentiated functional-equation form is impractical because of large factors and presents feasibility rather than a completed computation. The candidate preserves the absence of an auditable value table, error analysis, or final numerical exclusion.",
+            "source_support": "The prior domination bound further confines possible derivative zeros to three bounded regions. The source proposes Euler–Maclaurin evaluation in the central or higher-imaginary region and near the origin, an asymptotic expansion for the gamma logarithmic derivative in more negative real parts, and recurrence translations to accelerate convergence near the origin; zeta terms in the functional-equation form would again be evaluated by Euler–Maclaurin.",
+            "speculation_status": "This is a feasibility plan, not a completed numerical certificate. It offers no new auditable value table, error analysis, or final exclusion result for the three regions, and it explicitly notes that some otherwise natural differentiated formulas become impractical because of large factors. The method selection is prose-stable, but OCR obscures exact region inequalities, derivative notation, and recurrence signs. Those details must be recovered from the scan before implementing the proposed computation. The language of numerical conditioning and global compression is interpretive, but it accurately captures the source's comparison of difficult, impractical, reasonable, and rapidly convergent representations. Exact region inequalities, derivative notation, and recurrence signs are OCR-unsafe and must be recovered from the scan before implementation."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The same real-part sign controlling derivative zeros also describes horizontal growth of the derivative modulus and supports an RH-equivalent formulation at sufficient height.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1567978841_d02",
+          "openalex_w1567978841_d06"
+        ],
+        "proposed_limit": "The height threshold and exact notation must be recovered from the scan; the criterion is not asserted uniformly at every height.",
+        "source_id": "openalex_w1567978841",
+        "synthesis_id": "riemann_v2_within_11a3b27009ab1346f59166cd",
+        "title": "The proof estimate as a geometric monotonicity criterion"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 183-197 are essential completion context for the immutable v1 span ending at line 182: they finish the parameter range and explain how the earlier computation and reflected bound supply the theorem's first conclusion and reduce the second.",
+          "line_end": 197,
+          "line_start": 49,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The strategic chain is clear in prose; equations (1)-(13), constants, inequalities, and variable ranges are OCR-fragile and must be checked against page images before exact mathematical reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof applies the functional equation to a reflected logarithmic derivative, uses RH to make each zero contribution have the needed real-part sign, controls gamma and trigonometric terms explicitly, and combines the resulting positivity with a finite prior calculation to exclude derivative zeros in the open left half of the critical strip.",
+          "source_id": "openalex_w1567978841",
+          "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+          "source_page_markers_inside_unit": [
+            2,
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH turns zero symmetry into a zero-free region for the first derivative",
+          "unit_artifact_relpath": "depth/units/openalex_w1567978841_d02.txt",
+          "unit_bytes": 5399,
+          "unit_id": "openalex_w1567978841_d02",
+          "unit_sha256": "ac334cfe0c4420f6aa358eb1f9f434dc437f0bbbe8018d61b4ca8fea5a0c1be2",
+          "unit_type": "RH-conditional logarithmic-derivative sign proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof represents RH zero geometry as an additive sign certificate: after functional-equation reflection, RH gives every term in a zero-sum logarithmic derivative the required positive real part, while gamma, tangent, pole, and remainder terms consume an explicit error budget. Once the resulting reflected quotient has positive real part and its denominator is known nonzero in the relevant region, its numerator cannot vanish. A cited finite computation supplies the bounded complement, so the method gains open-strip nonvanishing from one scalar inequality but still leaves a width-four strip around the negative real axis and depends on unreplicated computation.",
+            "nonparaphrase_operation": "Compresses global zero placement into a scalar real-part invariant and separates its proof obligations into favorable zero terms, an auxiliary-factor error budget, denominator nonvanishing, and finite residual certification.",
+            "quality_reason": "Accepted because the interpretation preserves the concrete sign mechanism and its limitations. The revision adds the denominator condition required for quotient-to-nonvanishing, deletes the cross-span Rouché claim, and does not promote OCR-damaged constants to reliable data.",
+            "source_support": "The span displays the functional equation, a logarithmic-derivative expansion over zeta zeros, the termwise RH sign argument, and bounds for the auxiliary analytic terms. It combines them into positivity in a large-parameter range, invokes an earlier calculation for the complementary bounded range, concludes the theorem's first part, and says the closed-left-half-plane conclusion remains unresolved in a strip of width four. The displayed signs, quotient orientation, constants, cutoffs, and parameter ranges are OCR-fragile.",
+            "speculation_status": "The mathematical claims are source-stated and RH-conditional; the scalar-certificate and error-budget language is interpretive. Exact numerical thresholds and formula orientation are withheld pending scan verification, and no Rouché mechanism is imported from the next span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Include the conjectured bound, the weaker proved constant, the derivative identity, and the converse together so the criterion is not mistaken for a one-way corollary.",
+          "line_end": 301,
+          "line_start": 281,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The prose supports the direction and equivalence, but OCR loss affects the function symbol, constants, real-part inequalities, and precise height/strip ranges.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The earlier logarithmic-derivative estimate is reinterpreted as a sign for the horizontal derivative of log modulus, yielding leftward monotonic growth in the indicated regions; in the critical strip the paper states both the RH implication and the converse.",
+          "source_id": "openalex_w1567978841",
+          "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Leftward growth of the derivative's modulus is equivalent to RH at sufficient height",
+          "unit_artifact_relpath": "depth/units/openalex_w1567978841_d06.txt",
+          "unit_bytes": 1032,
+          "unit_id": "openalex_w1567978841_d06",
+          "unit_sha256": "024b1fd265f38b0cef38c541e60e4c3740b827e0550e830389a40c8ddd9e1737",
+          "unit_type": "equivalent monotonicity criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The span gives the same real-part inequality a geometric semantics: through the displayed logarithmic-derivative identity, its sign is the horizontal derivative of log modulus, so the sign supplied by equation (13) makes the derivative's modulus increase as the real part moves left. At sufficiently large height in the critical strip, the source states both directions: RH yields this monotonicity, and the indicated monotonicity implies RH. The representation gains a geometric characterization rather than a one-way bound, but it loses uniformity at low height, retains a weaker constant than the earlier conjecture, and leaves the briefly stated converse's proof burden outside the span.",
+            "nonparaphrase_operation": "Reinterprets an analytic sign as a directional growth law and identifies when that law changes logical status from conditional consequence to high-height characterization of RH.",
+            "quality_reason": "Accepted because the sign-to-monotonicity bridge and converse are explicit and mathematically substantive. The revision confines the sign's provenance to equation (13), retains the high-height and weaker-constant limitations, and removes cross-unit mechanism claims.",
+            "source_support": "The span compares a conjectured real-part bound with an RH-conditional version having a larger constant, cites equation (13) for the relevant sign, displays the identity between the real part of a logarithmic derivative and a horizontal derivative of log modulus, infers leftward increase in the indicated regions, and explicitly states the critical-strip converse. Function symbols, constants, inequality directions, strip variables, and height restrictions are OCR-damaged.",
+            "speculation_status": "The implication and converse are source-stated with high-parameter restrictions; the geometric-law language is interpretive. No functional-equation derivation or prior nonvanishing use is attributed to this span, and exact constants and notation require scan verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The functional-equation/logarithmic-derivative architecture may transfer to Dirichlet L-functions because a conductor term strengthens the key inequality, shifting the bottleneck to origin data.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1567978841_d02",
+          "openalex_w1567978841_d07"
+        ],
+        "proposed_limit": "This is a proposed extension, not a proved result in the source, and its exact normalization is OCR-unsafe.",
+        "source_id": "openalex_w1567978841",
+        "synthesis_id": "riemann_v2_within_445e22194ff8a92c73bced4c",
+        "title": "Conditional transfer through a changed arithmetic term"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 183-197 are essential completion context for the immutable v1 span ending at line 182: they finish the parameter range and explain how the earlier computation and reflected bound supply the theorem's first conclusion and reduce the second.",
+          "line_end": 197,
+          "line_start": 49,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The strategic chain is clear in prose; equations (1)-(13), constants, inequalities, and variable ranges are OCR-fragile and must be checked against page images before exact mathematical reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof applies the functional equation to a reflected logarithmic derivative, uses RH to make each zero contribution have the needed real-part sign, controls gamma and trigonometric terms explicitly, and combines the resulting positivity with a finite prior calculation to exclude derivative zeros in the open left half of the critical strip.",
+          "source_id": "openalex_w1567978841",
+          "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+          "source_page_markers_inside_unit": [
+            2,
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH turns zero symmetry into a zero-free region for the first derivative",
+          "unit_artifact_relpath": "depth/units/openalex_w1567978841_d02.txt",
+          "unit_bytes": 5399,
+          "unit_id": "openalex_w1567978841_d02",
+          "unit_sha256": "ac334cfe0c4420f6aa358eb1f9f434dc437f0bbbe8018d61b4ca8fea5a0c1be2",
+          "unit_type": "RH-conditional logarithmic-derivative sign proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof represents RH zero geometry as an additive sign certificate: after functional-equation reflection, RH gives every term in a zero-sum logarithmic derivative the required positive real part, while gamma, tangent, pole, and remainder terms consume an explicit error budget. Once the resulting reflected quotient has positive real part and its denominator is known nonzero in the relevant region, its numerator cannot vanish. A cited finite computation supplies the bounded complement, so the method gains open-strip nonvanishing from one scalar inequality but still leaves a width-four strip around the negative real axis and depends on unreplicated computation.",
+            "nonparaphrase_operation": "Compresses global zero placement into a scalar real-part invariant and separates its proof obligations into favorable zero terms, an auxiliary-factor error budget, denominator nonvanishing, and finite residual certification.",
+            "quality_reason": "Accepted because the interpretation preserves the concrete sign mechanism and its limitations. The revision adds the denominator condition required for quotient-to-nonvanishing, deletes the cross-span Rouché claim, and does not promote OCR-damaged constants to reliable data.",
+            "source_support": "The span displays the functional equation, a logarithmic-derivative expansion over zeta zeros, the termwise RH sign argument, and bounds for the auxiliary analytic terms. It combines them into positivity in a large-parameter range, invokes an earlier calculation for the complementary bounded range, concludes the theorem's first part, and says the closed-left-half-plane conclusion remains unresolved in a strip of width four. The displayed signs, quotient orientation, constants, cutoffs, and parameter ranges are OCR-fragile.",
+            "speculation_status": "The mathematical claims are source-stated and RH-conditional; the scalar-certificate and error-budget language is interpretive. Exact numerical thresholds and formula orientation are withheld pending scan verification, and no Rouché mechanism is imported from the next span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 312-313 complete the sentence begun before the page break and are needed to state the actual reduction rather than only the speculative analogy.",
+          "line_end": 313,
+          "line_start": 302,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The qualitative obstruction and reduction are readable; exact L-function normalization, conductor notation, and the exceptional zero-at-origin parenthetical require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The closing paragraph records a negative method boundary for higher zeta derivatives and a positive transfer hypothesis for Dirichlet L-functions, where a conductor term may help; it isolates estimation of the logarithmic derivative at the origin as the remaining bottleneck.",
+          "source_id": "openalex_w1567978841",
+          "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The method resists higher zeta derivatives but suggests a conductor-assisted Dirichlet-L transfer",
+          "unit_artifact_relpath": "depth/units/openalex_w1567978841_d07.txt",
+          "unit_bytes": 565,
+          "unit_id": "openalex_w1567978841_d07",
+          "unit_sha256": "e6196df0691fd1725420fb7a76d6d66baa42f267365e1e43426d2dac35b43f9a",
+          "unit_type": "extension diagnosis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The closing paragraph audits transfer by asking how the controlling estimate changes. The preceding results are said not to extend readily to higher zeta derivatives, whereas for Dirichlet L-functions a log-conductor term may provide favorable slack; after a proposed normalization in the zero-at-origin case, an origin estimate depending on the conductor becomes the remaining bottleneck. This comparison gains a concrete criterion for judging an analogue, but supplies neither the conjectured conductor-uniform bound nor a derivation of the reduction, and the exact origin quantity is unreadable enough that it cannot be safely reconstructed.",
+            "nonparaphrase_operation": "Performs a term-level transfer diagnosis: it separates an unfavorable higher-derivative direction from a plausible L-function direction, identifies the conductor contribution as added estimate margin, and isolates origin control as the new unresolved obligation.",
+            "quality_reason": "Accepted because the span supports a useful bounded extension diagnosis with concrete gains and unresolved burdens. The revision removes the claimed failed extension and imported shared architecture, and it avoids repeating the internally unsafe apparent origin ratio.",
+            "source_support": "The span says the results do not appear easily extendable to higher derivatives, suggests they may carry over to Dirichlet L-functions, identifies a log-conductor term as assisting the inequality, and speculates that the inequality may hold throughout the left half of the critical strip for sufficiently large conductor. It mentions replacing L(s) by L(s)/s in a zero-at-origin case and reduces the issue to an origin estimate depending on the conductor, but OCR makes the exact ratio, normalization, derivative index, and conductor notation unsafe.",
+            "speculation_status": "The Dirichlet-L extension is explicitly speculative, not a proved theorem, and the higher-derivative statement reports difficulty rather than failure. The normalization's mechanism and exact origin expression are not asserted beyond the OCR-safe source wording."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "87e4c4fe906bf90ee7dd68cf94aa37574f0e659c1b8dfe6f226fd9097018d957"
+}

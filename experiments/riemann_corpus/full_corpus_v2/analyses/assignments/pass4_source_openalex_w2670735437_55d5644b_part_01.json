@@ -1,0 +1,970 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2670735437_55d5644b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2670735437",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the asymptotic-character condition on the Gram truncation and the critical-line efficiency comparison; exact displayed formulas are not needed for the qualitative cutoff claim.",
+      "line_end": 52,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on asymptotic-order and cutoff notation; the prose is recoverable, but scan verification is required for exact formulas (1.1)-(1.2).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper frames computational strength through the number of retained Dirichlet terms: Euler-Maclaurin asymptotics force a Gram-scale O(|t|) main sum, while the Riemann-Siegel formula uses about O(sqrt(t)) terms. This supplies the baseline criterion later used to classify smoothed expansions.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gram and Riemann-Siegel formulas separate by cutoff scale",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_d01.txt",
+      "unit_bytes": 1895,
+      "unit_id": "openalex_w2670735437_d01",
+      "unit_sha256": "8e13652611c8cb97bab2d8dbfc030c0996405e3ec3c0f1b9adf444d84858981f",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_d01.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 17,
+          "line_end": 24,
+          "text": "        smoothed by an exponential factor. It is found that in the critical strip 0 < a < 1\n        when \\t\\ ^> 1, the \"cut-off\" in this smoothed sum occurs after 0(|£|) terms, so\n        that the expansion can be said to be of Gram type. Numerical examples are given\n        to illustrate the accuracy of the expansion.\n\n\n\n\n",
+          "sha256": "d4e40d4b817e11aabd65679c6088b2d2a2313f8c2afc5c6e0085f11e39489468"
+        },
+        "after": {
+          "line_start": 53,
+          "line_end": 60,
+          "text": "   Recently, some new asymptotic formulas for Z(t) have been developed in which\nthe terms in the original Dirichlet series J2^Li n~s are smoothed by a function which\n\n  Received March 16, 1996, revised May 20, 1997.\n\n                                               326\n\n<!-- source-page: 2 -->\n",
+          "sha256": "9ab31e41384eabb39b87b836f9ffa640ccd1b9ac2a42861a3414bde49105b215"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4a777e3d978ebe89829e7fd65dc31d30f763426d1e2f6e20a8ce4b00d995d4e7",
+        "dossier_sha256": "96faab9ac3c6871114bc701cfb5deb4913fe2e1db2b04311769930462bf1e6c6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 102,
+            "line_start": 25,
+            "mathematical_role": "Compares Gram, Riemann-Siegel, and smoothed formulas; identifies cutoff scale, smoothing shape, discontinuity removal, and the paper's simple-smoothing-versus-efficiency tradeoff."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 52,
+          "line_start": 25,
+          "title": "Gram and Riemann-Siegel formulas separate by cutoff scale",
+          "unit_id": "openalex_w2670735437_d01",
+          "unit_type": "method-comparison",
+          "why_material": "The paper frames computational strength through the number of retained Dirichlet terms: Euler-Maclaurin asymptotics force a Gram-scale O(|t|) main sum, while the Riemann-Siegel formula uses about O(sqrt(t)) terms. This supplies the baseline criterion later used to classify smoothed expansions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the asymptotic-character condition on the Gram truncation and the critical-line efficiency comparison; exact displayed formulas are not needed for the qualitative cutoff claim.",
+          "representation_dependency": "Depends on asymptotic-order and cutoff notation; the prose is recoverable, but scan verification is required for exact formulas (1.1)-(1.2).",
+          "unit_id": "openalex_w2670735437_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 90,
+            "line_start": 53,
+            "title": "Complementary-error smoothing removes the discrete-cutoff discontinuity",
+            "unit_id": "openalex_w2670735437_d02",
+            "unit_type": "representation-change",
+            "why_material": "Two convergent/smoothed representations replace the sharp Riemann-Siegel upper limit by a complementary-error transition that is near one below the cutoff and decays above it. The text explicitly connects smoothing to continuity in t while retaining the Riemann-Siegel-scale cutoff."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 24,
+              "line_start": 15,
+              "reason": "Abstract summarizes the source scope and principal cutoff conclusion but is represented in fuller units below."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2670735437_d01",
+        "spontaneous": {
+          "unit_id": "openalex_w2670735437_d01",
+          "spontaneous_reading": "The operative distinction is the admissible cutoff scale: Euler-Maclaurin asymptotics require a Gram main sum with order-t terms on the critical line, whereas Riemann-Siegel reaches the same computational target with order-sqrt(t) terms."
+        },
+        "directed": {
+          "unit_id": "openalex_w2670735437_d01",
+          "source_grounded_mathematics": "The Gram expansion uses N as its asymptotic parameter and requires N>|s|/(2 pi) for initially decreasing correction terms; on the critical line its finite Dirichlet sum is therefore O(t), while the Riemann-Siegel main sum has about sqrt(t/(2 pi)) terms.",
+          "conceptual_reading": "Computational class is encoded by how asymptotic validity constrains the representation's truncation point, not merely by the existence of an expansion.",
+          "representation_or_bridge": "The cutoff length bridges an analytic condition on correction terms to a direct work estimate for evaluating zeta on the critical line.",
+          "boundary_or_failure": "The efficiency comparison is stated for large positive t on the critical line and does not by itself compare errors, constants, or off-line performance.",
+          "uncertainty": "The qualitative cutoff orders are clear, but OCR damage makes the exact displayed formulas and notation unsafe to transcribe without the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2670735437_d01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span contrasts a Gram/Euler-Maclaurin main sum of order t on the critical line with a Riemann-Siegel main sum of order square root of t for large positive t.",
+          "It explicitly links the Gram truncation to initial decrease of the correction terms and identifies the Riemann-Siegel formula as computationally more efficient."
+        ],
+        "inference": [
+          "Using cutoff length as a bridge from asymptotic admissibility to computational work is a faithful conceptual interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The cleaned constants in N>|s|/(2 pi) and sqrt(t/(2 pi)) are reconstructed from damaged formula OCR even though the candidate says exact notation is unsafe without the scan."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Displays (1.1)-(1.2), the critical-line notation, and the cutoff constants are OCR-damaged."
+        ],
+        "missed_mechanism": [
+          "The source qualifies the Riemann-Siegel formula as only '(probably) asymptotic'; the candidate should preserve that proof-status qualification if characterizing the formula itself."
+        ],
+        "revision_instructions": [
+          "Retain the qualitative O(t) versus O(sqrt(t)) comparison and the initial-decrease criterion, but remove the exact 2 pi normalizations unless scan-verified and preserve the source's qualification about asymptotic status."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 303-314 complete the sentence and table interpretation severed by the v1 endpoint at line 298.",
+      "line_end": 314,
+      "line_start": 291,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The qualitative growth regime is clear in prose and Table 1; the exact bound (3.8), exponent formatting, and tabulated symbols require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The derived critical-strip bound isolates a computable coefficient G_p(M;t). The reported values agree with its fixed-M asymptotic behavior at low M but show that it ceases to be order one once M exceeds an approximate (t/2)^(2/3)/p scale, foreshadowing why the bound deteriorates well before optimal truncation.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The final bound has a coefficient that loses moderate size beyond an M-scale",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_d08.txt",
+      "unit_bytes": 1100,
+      "unit_id": "openalex_w2670735437_d08",
+      "unit_sha256": "eca4fca6529a0ce175dec5b757b75697a776b4c231a989537c9fa692d68ca5ef",
+      "unit_type": "regime-diagnostic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_d08.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 283,
+          "line_end": 290,
+          "text": "                                                    = 2\"-2'                  (3-5)\nwhere\n  Cp(M;t) = Gp(M;t){e-x smhX + X-Nr(N + l,X)coshX},                 X = irt/4p.   (3.6)\nWe note that the expression in braces in (3.6) tends to unity as X —>> oo for fixed iV.\nFor M and t values such that X > N (> 0), use of the well-known bound for the\nincomplete gamma function, given by X~Nr(N-t-1, X) < e~x/(I - N/X), yields the\nsimpler result\n           Cp(M\\t) < Gp(M;*){l + e-xcoshX/((X/N) - 1)},             X > N.        (3.7)\n",
+          "sha256": "c98346860b5aa7acba501fd5e025617e46d071c46dddb624a48679f25455f943"
+        },
+        "after": {
+          "line_start": 315,
+          "line_end": 322,
+          "text": "\n\n\n                   4. An exponentially-smoothed main sum\nIn the remainder of this paper, we shall put a = 1, since Q(l, z) = e~z, and let if be a\nreal positive parameter. This choice results in the main sum in (2.8) being smoothed\nby the real exponential factor exp[— (n/K)2p]. We note that the integral (2.1) in this\ncase is equivalent to that given in [9, §9.43] for a general Dirichlet series.\n",
+          "sha256": "21c5acacb9d82c0dca875b803dfe9a93ed4e2ea0115703dd68dc7a96cb1cbd40"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4a777e3d978ebe89829e7fd65dc31d30f763426d1e2f6e20a8ce4b00d995d4e7",
+        "dossier_sha256": "96faab9ac3c6871114bc701cfb5deb4913fe2e1db2b04311769930462bf1e6c6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. A bound on R_M when a > 0",
+            "line_end": 317,
+            "line_start": 209,
+            "mathematical_role": "Reduces the remainder integral to gamma-ratio estimates, uses monotonicity and incomplete-gamma bounds, and diagnoses the parameter range in which the bound coefficient remains moderate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 314,
+          "line_start": 291,
+          "title": "The final bound has a coefficient that loses moderate size beyond an M-scale",
+          "unit_id": "openalex_w2670735437_d08",
+          "unit_type": "regime-diagnostic",
+          "why_material": "The derived critical-strip bound isolates a computable coefficient G_p(M;t). The reported values agree with its fixed-M asymptotic behavior at low M but show that it ceases to be order one once M exceeds an approximate (t/2)^(2/3)/p scale, foreshadowing why the bound deteriorates well before optimal truncation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 303-314 complete the sentence and table interpretation severed by the v1 endpoint at line 298.",
+          "representation_dependency": "The qualitative growth regime is clear in prose and Table 1; the exact bound (3.8), exponent formatting, and tabulated symbols require scan verification.",
+          "unit_id": "openalex_w2670735437_d08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 290,
+            "line_start": 264,
+            "title": "Monotonicity turns the remainder integral into an incomplete-gamma bound",
+            "unit_id": "openalex_w2670735437_d07",
+            "unit_type": "bounding-mechanism",
+            "why_material": "The integral is split at t, monotonic bounds on the scaled gamma ratio control the tails, and the remaining integral is evaluated as an incomplete gamma function. A standard incomplete-gamma inequality then gives a simpler explicit estimate when X exceeds N."
+          },
+          {
+            "line_end": 350,
+            "line_start": 318,
+            "title": "Exponential smoothing inherits a forced Gram-scale cutoff",
+            "unit_id": "openalex_w2670735437_d09",
+            "unit_type": "specialization",
+            "why_material": "Choosing a=1 converts the incomplete-gamma kernel to a real exponential and integer p simplifies the correction coefficients. Large-order behavior of those corrections imposes K > t/(2 pi), so the nominal switch-off near n approximately K necessarily retains O(t) terms and the formula is Gram-type."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Scaling a gamma ratio and proving monotonicity makes an explicit remainder certificate possible, but the absolute monotone majorization discards oscillation and produces a coefficient that grows too early, explaining why the rigorous bound can be realistic for practical truncations yet useless near optimal truncation.",
+            "limit": "The source proposes oscillation-aware refinement but neither supplies it nor proves asymptoticity at optimal truncation.",
+            "parent_local_unit_ids": [
+              "openalex_w2670735437_d06",
+              "openalex_w2670735437_d07",
+              "openalex_w2670735437_d08",
+              "openalex_w2670735437_d12",
+              "openalex_w2670735437_d16",
+              "openalex_w2670735437_d19",
+              "openalex_w2670735437_d20",
+              "openalex_w2670735437_d21"
+            ],
+            "title": "Monotone majorants enable certification but can erase oscillatory accuracy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 300,
+              "line_start": 299,
+              "reason": "Page marker and blank line within the continuing remainder discussion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2670735437_d08",
+        "spontaneous": {
+          "unit_id": "openalex_w2670735437_d08",
+          "spontaneous_reading": "The computable factor G_p(M;t) diagnoses where the remainder certificate stops behaving uniformly: it is near one at low truncation orders but grows rapidly once M crosses an indicated t-dependent scale."
+        },
+        "directed": {
+          "unit_id": "openalex_w2670735437_d08",
+          "source_grounded_mathematics": "The final critical-strip bound isolates G_p(M;t); Table 1 for a=p=1 at t=50 and 100 agrees with its fixed-M asymptotic behavior for small M and shows loss of order-one size beyond a scale described as roughly (t/2)^(2/3)/p.",
+          "conceptual_reading": "A bound's auxiliary coefficient can serve as a regime detector, revealing where an asymptotic simplification ceases to be uniform in a second parameter.",
+          "representation_or_bridge": "G_p packages the gamma-ratio dependence on M and t, translating special-function growth into a directly computable warning about the bound.",
+          "boundary_or_failure": "The table samples only two t values and one parameter choice, so it illustrates rather than universally establishes the transition.",
+          "uncertainty": "The qualitative growth and table trend are clear; the exact bound, threshold typography, and numerical symbols remain scan-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2670735437_d08",
+        "critic_decision": "revise",
+        "supported": [
+          "The bound isolates a computable coefficient G_p(M;t), and Table 1 shows it near one at low M and growing strongly at larger M for the displayed parameter choices.",
+          "Treating this coefficient as a diagnostic for loss of uniform moderate size is supported."
+        ],
+        "inference": [
+          "The table can illustrate a transition regime, but it does not alone prove a universal sharp threshold."
+        ],
+        "unsupported_or_imported": [
+          "The candidate gives the threshold as roughly (t/2)^(2/3)/p even though the normalized threshold typography is damaged and the assignment requires scan verification for its exact exponent and normalization."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The final bound and printed M-threshold are formula-OCR sensitive; only the qualitative loss of order-one behavior is secure."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the cleaned threshold formula by a scan-safe statement that G_p ceases to remain order one beyond the source's indicated t-dependent M scale; retain the two-t, a=p=1 limitation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the principal specialization of the general construction and directly establishes the advertised smoothing-versus-efficiency tradeoff.",
+      "line_end": 350,
+      "line_start": 318,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the exponential kernel, coefficient sequence, and asymptotic-character criterion; scan verification is required for exact equations (4.1)-(4.3).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Choosing a=1 converts the incomplete-gamma kernel to a real exponential and integer p simplifies the correction coefficients. Large-order behavior of those corrections imposes K > t/(2 pi), so the nominal switch-off near n approximately K necessarily retains O(t) terms and the formula is Gram-type.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponential smoothing inherits a forced Gram-scale cutoff",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_d09.txt",
+      "unit_bytes": 2175,
+      "unit_id": "openalex_w2670735437_d09",
+      "unit_sha256": "639b7e86df13ebc7b5064029f7d7df5de985851c73a2b424866fb31ef10dada1",
+      "unit_type": "specialization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_d09.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 310,
+          "line_end": 317,
+          "text": "                             15 5.99574    1.62045\n                             20 48.5599    2.98869\n                             25 1042.88    7.82060\n        TABLE 1. Values of the coefficient Gp(M]t) when a — 1, p = 1 for\n        t = 50 and t = 100.\n\n\n\n",
+          "sha256": "c6b86b77d60f4dc9e9f7a1d64253466d585aee2fc84936c2d8b272fd74f09312"
+        },
+        "after": {
+          "line_start": 351,
+          "line_end": 358,
+          "text": "<!-- source-page: 7 -->\n\n332                                   PARIS AND GANG\n\nfirst will decrease to a minimum value at m = MQ, before finally diverging in typical\nasymptotic fashion. The optimal truncation point MQ is given approximately by\n                                  Mo ~ (t/2\\p)2ptt2p-V                                (4.4)\nwhen A = t/27rK = 0(1).\n",
+          "sha256": "843774a3933da15aadeb8bf3abbb8301d03d3a84e82b4e6c0b3bb9a2874c8640"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4a777e3d978ebe89829e7fd65dc31d30f763426d1e2f6e20a8ce4b00d995d4e7",
+        "dossier_sha256": "96faab9ac3c6871114bc701cfb5deb4913fe2e1db2b04311769930462bf1e6c6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. An exponentially-smoothed main sum",
+            "line_end": 496,
+            "line_start": 318,
+            "mathematical_role": "Specializes to exponential smoothing, derives the forced Gram-scale cutoff and optimal truncation, analyzes the free smoothing parameter, and compares actual numerical error with the rigorous remainder bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 350,
+          "line_start": 318,
+          "title": "Exponential smoothing inherits a forced Gram-scale cutoff",
+          "unit_id": "openalex_w2670735437_d09",
+          "unit_type": "specialization",
+          "why_material": "Choosing a=1 converts the incomplete-gamma kernel to a real exponential and integer p simplifies the correction coefficients. Large-order behavior of those corrections imposes K > t/(2 pi), so the nominal switch-off near n approximately K necessarily retains O(t) terms and the formula is Gram-type."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the principal specialization of the general construction and directly establishes the advertised smoothing-versus-efficiency tradeoff.",
+          "representation_dependency": "Depends on the exponential kernel, coefficient sequence, and asymptotic-character criterion; scan verification is required for exact equations (4.1)-(4.3).",
+          "unit_id": "openalex_w2670735437_d09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 314,
+            "line_start": 291,
+            "title": "The final bound has a coefficient that loses moderate size beyond an M-scale",
+            "unit_id": "openalex_w2670735437_d08",
+            "unit_type": "regime-diagnostic",
+            "why_material": "The derived critical-strip bound isolates a computable coefficient G_p(M;t). The reported values agree with its fixed-M asymptotic behavior at low M but show that it ceases to be order one once M exceeds an approximate (t/2)^(2/3)/p scale, foreshadowing why the bound deteriorates well before optimal truncation."
+          },
+          {
+            "line_end": 369,
+            "line_start": 351,
+            "title": "Optimal truncation and sharper smoothing pull accuracy in opposite directions",
+            "unit_id": "openalex_w2670735437_d10",
+            "unit_type": "parameter-tradeoff",
+            "why_material": "The correction series initially decreases and then diverges, with an estimated optimal index depending sensitively on p and the scale ratio. Increasing p suppresses the main-sum tail and makes shifted zeta values easier, but eventually destroys asymptotic character and raises the least correction term, limiting attainable accuracy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Both exponential and erfc kernels can remove a sharp cutoff, yet fixed-order simple kernels remain Gram-type because their correction asymptotics force K=O(t); a logarithmic or s-dependent kernel geometry can instead retain the Riemann-Siegel O(sqrt(t)) transition.",
+            "limit": "The source demonstrates selected fixed-order and s/2 choices and explicitly leaves the intervening a-domain unexplored, so it does not establish a general classification theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2670735437_d02",
+              "openalex_w2670735437_d03",
+              "openalex_w2670735437_d09",
+              "openalex_w2670735437_d14",
+              "openalex_w2670735437_d15"
+            ],
+            "title": "Smoothing geometry, not smoothness alone, determines computational class"
+          },
+          {
+            "claim": "A parameter that makes the smoothed main sum decay faster can simultaneously shorten or degrade the useful asymptotic correction series, while enlarging the scale K improves accuracy only by increasing main-sum work; useful tuning must balance both series rather than optimize the smoother alone.",
+            "limit": "The numerical comparison is restricted to the source's stated critical-line parameter choices and capped truncations.",
+            "parent_local_unit_ids": [
+              "openalex_w2670735437_d09",
+              "openalex_w2670735437_d10",
+              "openalex_w2670735437_d11",
+              "openalex_w2670735437_d13"
+            ],
+            "title": "Tail suppression competes with correction-series fertility"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2670735437_d09",
+        "spontaneous": {
+          "unit_id": "openalex_w2670735437_d09",
+          "spontaneous_reading": "Setting a=1 makes the smoothing maximally transparent, Q(1,z)=exp(-z), but the large-order correction sequence then forces K beyond t/(2 pi), so the effective cutoff n approximately K is unavoidably Gram-scale."
+        },
+        "directed": {
+          "unit_id": "openalex_w2670735437_d09",
+          "source_grounded_mathematics": "With a=1 the main Dirichlet sum is weighted by exp(-(n/K)^(2p)); for integer p the correction coefficients simplify, and their large-m behavior requires K>t/(2 pi) for an asymptotic character, giving O(t) effective terms.",
+          "conceptual_reading": "A representation can simplify its visible kernel while preserving a hidden complexity constraint imposed by the correction series.",
+          "representation_or_bridge": "The specialization Q(1,z)=exp(-z) bridges the general incomplete-gamma construction to an elementary exponential smoother, while large-m correction terms connect K to cutoff class.",
+          "boundary_or_failure": "The conclusion concerns this fixed-order specialization and its stated asymptotic criterion; it does not show that every exponentially expressed transformation must be Gram-type.",
+          "uncertainty": "The prose cutoff argument is strong, but exact equations (4.1)-(4.3) and coefficient powers require the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2670735437_d09",
+        "critic_decision": "revise",
+        "supported": [
+          "Setting a=1 yields the elementary weight exp(-(n/K)^(2p)), and integer p simplifies the correction coefficients.",
+          "Large-order correction behavior constrains K to be of order t, so the effective cutoff near K contains O(t) terms and the specialization is Gram-type."
+        ],
+        "inference": [
+          "The visible simplicity of the exponential kernel can coexist with a correction-series complexity constraint."
+        ],
+        "unsupported_or_imported": [
+          "The exact inequality K>t/(2 pi) is reconstructed from damaged OCR despite the candidate's own warning that equations (4.1)-(4.3) require scan verification."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The cutoff constant and coefficient powers in (4.1)-(4.3) are extraction-damaged."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "State only that asymptotic character forces K to a t-scale lower bound and hence an O(t) cutoff, unless the exact constant is checked against the scan."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Tables 2-3 support a truncation-strategy claim rather than serving as standalone numerical training material.",
+      "line_end": 419,
+      "line_start": 370,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the critical-line phase and exact expansion (4.5); numeric conclusions are readable, but exact formulas, exponents, and table values require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For p=1 and K=t/(2 pi), the paper specializes the expansion and remainder bound on the critical line, then shows numerically that optimal truncation can be enormous while much smaller, deliberately suboptimal truncations already deliver high accuracy for larger t. The t=10 case also shows that optimal truncation need not imply uniformly spectacular accuracy at modest height.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line specialization separates optimal from practically sufficient truncation",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_d11.txt",
+      "unit_bytes": 2773,
+      "unit_id": "openalex_w2670735437_d11",
+      "unit_sha256": "b2690a776c61b7036738dd3d1ee54e5932bdfa749dde38d7d1f6f20ec0444ed1",
+      "unit_type": "computational-demonstration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_d11.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 362,
+          "line_end": 369,
+          "text": "the critical strip. Secondly, it is clear that increasing p will be of computational\nadvantage since (a) the terms in the smoothed main sum will decay more rapidly for\nn > n*, and (b) the value of ((1 — s + 2pm) will approach the limiting value unity\nmore rapidly as m increases and consequently will be easier to compute. However,\nthis enhancement is offset by the fact that the sequence in (4.3) ultimately will lose\nits asymptotic character for fixed t if p becomes too large. In addition, the value of\nthe minimum term of the asymptotic sum in (4.2) at optimal truncation will increase\nas p increases, thereby limiting the attainable accuracy.\n",
+          "sha256": "7907a0c0006a37339f96237ccbf393c284bb6f0048cbca1fdaeb4a1aa023ad5f"
+        },
+        "after": {
+          "line_start": 420,
+          "line_end": 427,
+          "text": "\n\n\n                                 t = 50     Mo = 625\n                          a= l                           a = 1/2\n         M    \\Z - Zapproxl      \\RM\\          \\Z — Zapproxl      |-RM|\n         5    1.366 xlO-3    4.047 xlO-3       8.053 xlO\"4    2.284 xlO-3\n         10   4.588 xHT8     2.070 xlO\"7       2.411 xlO-8    1.100 xlO\"7\n",
+          "sha256": "79d6355f1063dde988db5d6f6f35dcee1df2864ebdc49b6763373b8f3ab91cf4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4a777e3d978ebe89829e7fd65dc31d30f763426d1e2f6e20a8ce4b00d995d4e7",
+        "dossier_sha256": "96faab9ac3c6871114bc701cfb5deb4913fe2e1db2b04311769930462bf1e6c6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. An exponentially-smoothed main sum",
+            "line_end": 496,
+            "line_start": 318,
+            "mathematical_role": "Specializes to exponential smoothing, derives the forced Gram-scale cutoff and optimal truncation, analyzes the free smoothing parameter, and compares actual numerical error with the rigorous remainder bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 419,
+          "line_start": 370,
+          "title": "Critical-line specialization separates optimal from practically sufficient truncation",
+          "unit_id": "openalex_w2670735437_d11",
+          "unit_type": "computational-demonstration",
+          "why_material": "For p=1 and K=t/(2 pi), the paper specializes the expansion and remainder bound on the critical line, then shows numerically that optimal truncation can be enormous while much smaller, deliberately suboptimal truncations already deliver high accuracy for larger t. The t=10 case also shows that optimal truncation need not imply uniformly spectacular accuracy at modest height."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Tables 2-3 support a truncation-strategy claim rather than serving as standalone numerical training material.",
+          "representation_dependency": "Depends on the critical-line phase and exact expansion (4.5); numeric conclusions are readable, but exact formulas, exponents, and table values require scan verification.",
+          "unit_id": "openalex_w2670735437_d11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 369,
+            "line_start": 351,
+            "title": "Optimal truncation and sharper smoothing pull accuracy in opposite directions",
+            "unit_id": "openalex_w2670735437_d10",
+            "unit_type": "parameter-tradeoff",
+            "why_material": "The correction series initially decreases and then diverges, with an estimated optimal index depending sensitively on p and the scale ratio. Increasing p suppresses the main-sum tail and makes shifted zeta values easier, but eventually destroys asymptotic character and raises the least correction term, limiting attainable accuracy."
+          },
+          {
+            "line_end": 470,
+            "line_start": 423,
+            "title": "The rigorous remainder bound is realistic only far below optimal truncation",
+            "unit_id": "openalex_w2670735437_d12",
+            "unit_type": "bound-audit",
+            "why_material": "Direct comparison of actual Z(t) error with the proved bound shows close tracking for modest M, followed by rapid deterioration around M proportional to t and uselessness at optimal truncation. This distinguishes true expansion accuracy from sharpness of the available proof technique."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A parameter that makes the smoothed main sum decay faster can simultaneously shorten or degrade the useful asymptotic correction series, while enlarging the scale K improves accuracy only by increasing main-sum work; useful tuning must balance both series rather than optimize the smoother alone.",
+            "limit": "The numerical comparison is restricted to the source's stated critical-line parameter choices and capped truncations.",
+            "parent_local_unit_ids": [
+              "openalex_w2670735437_d09",
+              "openalex_w2670735437_d10",
+              "openalex_w2670735437_d11",
+              "openalex_w2670735437_d13"
+            ],
+            "title": "Tail suppression competes with correction-series fertility"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2670735437_d11",
+        "spontaneous": {
+          "unit_id": "openalex_w2670735437_d11",
+          "spontaneous_reading": "The numerical experiment separates formal optimal truncation from sufficient truncation: M_0 grows roughly quadratically in t, yet at larger sampled heights far smaller M already achieves the requested precision, while modest t does not inherit the spectacular least-term estimates suggested asymptotically."
+        },
+        "directed": {
+          "unit_id": "openalex_w2670735437_d11",
+          "source_grounded_mathematics": "On the critical line with p=1 and K=t/(2 pi), the paper specializes the expansion and remainder bound; Tables 2-3 report M_0 approximately t^2/4 and show 25-decimal computations for t=20 through 50 using suboptimal M, whereas optimal truncation at t=10 gives only about five decimals.",
+          "conceptual_reading": "An asymptotic optimum is not automatically the practical operating point: target accuracy can be reached much earlier, and small-parameter behavior can remain qualitatively different.",
+          "representation_or_bridge": "The real critical-line function Z(t), its phase relation to zeta, and the least correction term turn the complex expansion into a measurable truncation experiment.",
+          "boundary_or_failure": "These are selected computations, not a uniform accuracy theorem, and the reported truncations depend on the fixed p and K choices.",
+          "uncertainty": "The prose conclusions and scale are readable; exact phases, exponents, and individual table entries remain vulnerable to scan/OCR errors."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2670735437_d11",
+        "critic_decision": "revise",
+        "supported": [
+          "The critical-line specialization fixes p and K, reports optimal indices and least terms, and shows that the requested 25-decimal accuracy at the larger sampled t values is reached with highly suboptimal truncation.",
+          "The t=10 example explicitly reports only about five correct decimals at the displayed optimal truncation."
+        ],
+        "inference": [
+          "The distinction between formal least-term truncation and a practically sufficient truncation is directly supported by the tables and prose."
+        ],
+        "unsupported_or_imported": [
+          "The directed analysis states the cleaned formula M_0 approximately t^2/4 even though the optimal-truncation display and exponent formatting are marked as requiring scan verification."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The phase, formula (4.5), exact least-term exponents, and optimal-index formula are scan-sensitive; the qualitative table comparison is readable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Describe the reported optimal index as growing quadratically across the displayed t values unless the exact normalization is scan-verified; retain the explicit selected-computation and fixed-parameter limits."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This provides a controlled sibling representation to the a=1 specialization rather than a new general expansion.",
+      "line_end": 521,
+      "line_start": 497,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Q(1/2,z^2)=erfc(z) and the displayed critical-line expansion; exact equations (5.1)-(5.2) require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Selecting a=1/2 changes the kernel from an exponential to erfc while leaving the correction-series asymptotic constraint intact. With p=1 on the critical line, K must again be of order t/(2 pi), so changing the simple smoothing function alone does not recover Riemann-Siegel efficiency.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Complementary-error-function smoothing is simple but remains Gram-type",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_d14.txt",
+      "unit_bytes": 1478,
+      "unit_id": "openalex_w2670735437_d14",
+      "unit_sha256": "37f50cb969b03078447a9b95048de0acca1a37e83d7792f3964562d83ea67efb",
+      "unit_type": "alternative-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_d14.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 489,
+          "line_end": 496,
+          "text": "\n\ncost of increasing the effective cut-off point n* ~ K of the smoothed infinite sum.\nSecondly, although increasing p results in a more rapid decay of this latter sum from\nthe exponential factor exp[— (27rn/t)2p], the overall attainable accuracy nevertheless\nis reduced on account of the decrease in the optimal truncation point of the finite\nseries (see (4.4)) and the resultant reduction in the least term.\n\n",
+          "sha256": "ae3cb8d044c70ee584bacfcae0f50f8968296caf6f1f48a055a63fdbdbdcd3f7"
+        },
+        "after": {
+          "line_start": 522,
+          "line_end": 529,
+          "text": "   The Berry-Keating formula, for which the leading term is given by (1.3), also in-\nvolves the main sum smoothed by a complementary error function whose argument\ndepends logarithmically on n/Nt. This difference in the n-dependence of the er-\nror function argument, however, results in the main sum cutting off after roughly\nn* ~ iVt ~ (£/27r)2 terms, so that their formula is of the more powerful Riemann-\nSiegel type. The expansion (2.8) has been shown to produce a Gram-type expansion\n\n<!-- source-page: 10 -->\n",
+          "sha256": "1fd7713b838db819b947ba0c27ad83d45bbdcc26426a890df2e0bc284abe520d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4a777e3d978ebe89829e7fd65dc31d30f763426d1e2f6e20a8ce4b00d995d4e7",
+        "dossier_sha256": "96faab9ac3c6871114bc701cfb5deb4913fe2e1db2b04311769930462bf1e6c6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Concluding remarks",
+            "line_end": 547,
+            "line_start": 497,
+            "mathematical_role": "Contrasts the complementary-error-function specialization with Berry-Keating smoothing, identifies a possible transition in the free parameter, and isolates the non-sharp remainder analysis as the main unresolved bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 521,
+          "line_start": 497,
+          "title": "Complementary-error-function smoothing is simple but remains Gram-type",
+          "unit_id": "openalex_w2670735437_d14",
+          "unit_type": "alternative-representation",
+          "why_material": "Selecting a=1/2 changes the kernel from an exponential to erfc while leaving the correction-series asymptotic constraint intact. With p=1 on the critical line, K must again be of order t/(2 pi), so changing the simple smoothing function alone does not recover Riemann-Siegel efficiency."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This provides a controlled sibling representation to the a=1 specialization rather than a new general expansion.",
+          "representation_dependency": "Depends on Q(1/2,z^2)=erfc(z) and the displayed critical-line expansion; exact equations (5.1)-(5.2) require scan verification.",
+          "unit_id": "openalex_w2670735437_d14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 495,
+            "line_start": 471,
+            "title": "Increasing K buys accuracy with more main-sum work, while increasing p can reduce accuracy",
+            "unit_id": "openalex_w2670735437_d13",
+            "unit_type": "parameter-comparison",
+            "why_material": "The controlled computation separates two knobs: increasing K raises attainable accuracy at the cost of moving the effective cutoff outward, whereas increasing p sharpens exponential tail decay but lowers the optimal correction-series truncation and worsens its least term. This is a concrete multi-objective design constraint."
+          },
+          {
+            "line_end": 535,
+            "line_start": 522,
+            "title": "The argument geometry of the smoothing kernel controls the cutoff class",
+            "unit_id": "openalex_w2670735437_d15",
+            "unit_type": "mechanism-comparison",
+            "why_material": "The Berry-Keating error-function argument depends logarithmically on n/N_t and cuts off at Riemann-Siegel scale, whereas the paper's fixed-order incomplete-gamma choices yield Gram scale. The contrast motivates the proposed transition study between a=O(1) and the s-dependent choice a=s/2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Both exponential and erfc kernels can remove a sharp cutoff, yet fixed-order simple kernels remain Gram-type because their correction asymptotics force K=O(t); a logarithmic or s-dependent kernel geometry can instead retain the Riemann-Siegel O(sqrt(t)) transition.",
+            "limit": "The source demonstrates selected fixed-order and s/2 choices and explicitly leaves the intervening a-domain unexplored, so it does not establish a general classification theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2670735437_d02",
+              "openalex_w2670735437_d03",
+              "openalex_w2670735437_d09",
+              "openalex_w2670735437_d14",
+              "openalex_w2670735437_d15"
+            ],
+            "title": "Smoothing geometry, not smoothness alone, determines computational class"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 496,
+              "line_start": 496,
+              "reason": "Blank separator before the conclusion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2670735437_d14",
+        "spontaneous": {
+          "unit_id": "openalex_w2670735437_d14",
+          "spontaneous_reading": "Replacing the exponential by the equally simple erfc kernel changes the visual shape of smoothing but not the asymptotic bottleneck: the finite corrections again require K of order t, leaving a Gram-type expansion."
+        },
+        "directed": {
+          "unit_id": "openalex_w2670735437_d14",
+          "source_grounded_mathematics": "Choosing a=1/2 uses Q(1/2,z^2)=erfc(z); with p=1 on the critical line, the resulting finite correction sum requires K approximately t/(2 pi) for asymptotic character, so the effective main sum remains O(t).",
+          "conceptual_reading": "Changing the named kernel is insufficient when the argument scaling and coupled correction constraints are preserved.",
+          "representation_or_bridge": "The identity between the half-order incomplete gamma function and erfc supplies a controlled sibling representation of the a=1 exponential case.",
+          "boundary_or_failure": "This specialization does not rule out erfc-based Riemann-Siegel formulas with different argument geometry; it establishes only the class of the displayed construction.",
+          "uncertainty": "The kernel identity and Gram-scale conclusion are clear, while equations (5.1)-(5.2) need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2670735437_d14",
+        "critic_decision": "revise",
+        "supported": [
+          "The a=1/2 specialization uses the identity between the half-order incomplete gamma function and erfc.",
+          "The displayed correction series again forces a t-scale K and therefore an O(t), Gram-type main sum; the result does not rule out differently scaled erfc formulas."
+        ],
+        "inference": [
+          "Changing the kernel name or visible smoothing shape is insufficient when its argument scaling and correction constraint are retained."
+        ],
+        "unsupported_or_imported": [
+          "The cleaned normalization K approximately t/(2 pi) is reconstructed from the damaged line even though the candidate reserves equations (5.1)-(5.2) for scan verification."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The half-order symbols, exact critical-line formula, bound, and K normalization are OCR-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the erfc identity and qualitative t-scale/Gram-type conclusion, but omit the 2 pi normalization unless scan-verified."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a limitation and research direction; it does not establish the conjectured asymptotic behavior.",
+      "line_end": 543,
+      "line_start": 536,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; its quantitative reference to Table 2 inherits that table's scan-verification requirement.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper identifies the failure of its remainder estimate past moderate M as an artifact of crude inequalities and proposes analysis that retains integrand oscillation. It carefully separates an unproved assumption of asymptoticity from numerical indications of potentially enormous accuracy at optimal truncation.",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Crude absolute bounds conceal possible optimal-truncation accuracy",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_d16.txt",
+      "unit_bytes": 609,
+      "unit_id": "openalex_w2670735437_d16",
+      "unit_sha256": "c793d6286aeb3b9b04e1540b7530d5749f87ec115aa1d0c8513d9811ef13ec30",
+      "unit_type": "methodological-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_d16.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 528,
+          "line_end": 535,
+          "text": "\n<!-- source-page: 10 -->\n\nAN EXPONENTIALLY-SMOOTHED GRAM-TYPE FORMULA                                     335\n\nwhen a = 0(1), but it is a Riemann-Siegel-type expansion (see [8]) when a = ^s. It\nwould be of interest to explore the domain of a values corresponding to the transition\nbetween these two categories of expansion.\n",
+          "sha256": "118b85840c98efa4d2544d49871686fc08e25b459462389751a9d105b5ddce48"
+        },
+        "after": {
+          "line_start": 544,
+          "line_end": 551,
+          "text": "\nAcknowledgement. One of the authors (S. C.) wishes to acknowledge the financial\nsupport of a Research Studentship at the University of Abertay Dundee.\n\n     Appendix A. The relation between the expansions (1.4) and (2.2)\nWe demonstrate how the result in (2.2) contains the expansion (1.4) as a special case.\nTo see this, we let a = ^s and p = 1 in (2.2) and (2.3) to find\n\n",
+          "sha256": "c81136a413e6276335cadada576d50f3cb4a1a5ea789fad3ce10e80b9833d8f2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4a777e3d978ebe89829e7fd65dc31d30f763426d1e2f6e20a8ce4b00d995d4e7",
+        "dossier_sha256": "96faab9ac3c6871114bc701cfb5deb4913fe2e1db2b04311769930462bf1e6c6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Concluding remarks",
+            "line_end": 547,
+            "line_start": 497,
+            "mathematical_role": "Contrasts the complementary-error-function specialization with Berry-Keating smoothing, identifies a possible transition in the free parameter, and isolates the non-sharp remainder analysis as the main unresolved bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 543,
+          "line_start": 536,
+          "title": "Crude absolute bounds conceal possible optimal-truncation accuracy",
+          "unit_id": "openalex_w2670735437_d16",
+          "unit_type": "methodological-obstruction",
+          "why_material": "The paper identifies the failure of its remainder estimate past moderate M as an artifact of crude inequalities and proposes analysis that retains integrand oscillation. It carefully separates an unproved assumption of asymptoticity from numerical indications of potentially enormous accuracy at optimal truncation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a limitation and research direction; it does not establish the conjectured asymptotic behavior.",
+          "representation_dependency": "Prose-grounded; its quantitative reference to Table 2 inherits that table's scan-verification requirement.",
+          "unit_id": "openalex_w2670735437_d16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 535,
+            "line_start": 522,
+            "title": "The argument geometry of the smoothing kernel controls the cutoff class",
+            "unit_id": "openalex_w2670735437_d15",
+            "unit_type": "mechanism-comparison",
+            "why_material": "The Berry-Keating error-function argument depends logarithmically on n/N_t and cuts off at Riemann-Siegel scale, whereas the paper's fixed-order incomplete-gamma choices yield Gram scale. The contrast motivates the proposed transition study between a=O(1) and the s-dependent choice a=s/2."
+          },
+          {
+            "line_end": 570,
+            "line_start": 548,
+            "title": "Trivial-zero cancellation transforms the generalized formula into its symmetric special case",
+            "unit_id": "openalex_w2670735437_d17",
+            "unit_type": "special-case-derivation",
+            "why_material": "Setting a=s/2 and p=1 leaves a single contour pole because other gamma poles cancel against zeta's trivial zeros. After the functional equation and a variable reversal, the residual integral matches the original Mellin form with transformed s and reciprocal scale, revealing a dual smoothed sum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Scaling a gamma ratio and proving monotonicity makes an explicit remainder certificate possible, but the absolute monotone majorization discards oscillation and produces a coefficient that grows too early, explaining why the rigorous bound can be realistic for practical truncations yet useless near optimal truncation.",
+            "limit": "The source proposes oscillation-aware refinement but neither supplies it nor proves asymptoticity at optimal truncation.",
+            "parent_local_unit_ids": [
+              "openalex_w2670735437_d06",
+              "openalex_w2670735437_d07",
+              "openalex_w2670735437_d08",
+              "openalex_w2670735437_d12",
+              "openalex_w2670735437_d16",
+              "openalex_w2670735437_d19",
+              "openalex_w2670735437_d20",
+              "openalex_w2670735437_d21"
+            ],
+            "title": "Monotone majorants enable certification but can erase oscillatory accuracy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2670735437_d16",
+        "spontaneous": {
+          "unit_id": "openalex_w2670735437_d16",
+          "spontaneous_reading": "The obstruction is methodological: absolute and monotone majorants erase the remainder integrand's oscillation, so the available bound becomes unrealistic even though numerical least terms suggest that optimal truncation could be extremely accurate."
+        },
+        "directed": {
+          "unit_id": "openalex_w2670735437_d16",
+          "source_grounded_mathematics": "The source reports that its remainder bound fails beyond moderate M, attributes this to crude inequalities in the earlier integral estimate, and proposes an analysis retaining oscillation; it states optimal-truncation accuracy only conditionally on unproved asymptoticity.",
+          "conceptual_reading": "A certification method can be the bottleneck when it forgets cancellation that is central to the represented object.",
+          "representation_or_bridge": "The original contour integral for R_M is the bridge back from the loose absolute bound to a prospective oscillation-aware estimate.",
+          "boundary_or_failure": "Neither asymptoticity at optimal truncation nor the proposed sharper remainder analysis is proved in this span; numerical indication is not a substitute.",
+          "uncertainty": "The limitation is prose-grounded, while its quantitative table reference inherits scan/OCR uncertainty."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2670735437_d16",
+        "critic_decision": "revise",
+        "supported": [
+          "The source says the remainder bound becomes unrealistic beyond moderate M, attributes this to crude earlier bounds, and proposes a refined analysis that might account for integrand oscillation.",
+          "It makes the claimed optimal-truncation accuracy conditional on assuming an asymptotic property that has not been established."
+        ],
+        "inference": [
+          "Loss of oscillatory cancellation is a plausible explanation for why an absolute-style estimate may be loose, but the source presents oscillation-aware refinement only as a possibility."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading asserts that 'absolute and monotone majorants erase' oscillation as the established obstruction; those specific earlier bounding operations are not in this frozen span, and the source does not prove that causal diagnosis here."
+        ],
+        "paraphrase_or_style_risk": [
+          "The categorical phrase 'the obstruction is methodological' is stronger than the source's attribution and proposed future analysis."
+        ],
+        "context_or_ocr_risk": [
+          "The quantitative M threshold and Table 2 values remain scan-sensitive, though the epistemic limitation is clear in prose."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Soften the spontaneous claim to say that the authors attribute deterioration to crude bounds and suggest, without establishing, that retaining oscillation may improve the estimate; keep optimal-truncation accuracy explicitly conditional."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9bb50a9b0ff338ac7043c0a8285c44dee81ef97ecd842cc709306c815a7be9f5"
+}

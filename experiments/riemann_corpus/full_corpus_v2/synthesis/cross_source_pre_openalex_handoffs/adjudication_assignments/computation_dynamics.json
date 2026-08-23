@@ -1,0 +1,1162 @@
+{
+  "task": "fresh cross-source synthesis adjudication",
+  "panel_id": "computation_dynamics",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/cross_source_synthesis_adjudication.md",
+  "prompt_sha256": "3a3b0c632deb38c2892216040a977cb4e03403623e5dab1171c374d42948c48d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/cross_source/adjudication_batches/computation_dynamics.jsonl",
+  "candidate_count": 9,
+  "candidates": [
+    {
+      "candidate": {
+        "claim": "Critical-line sign changes provide a lower count of zeros with the desired location, while an argument-principle-style global count supplies the exhaustive total; equality closes the off-line completeness gap. Once that equality is the proof target, a computation may retain certified sign-change counts without refining and storing every zero ordinate.",
+        "generation_panel": "computation_dynamics",
+        "historical_or_program_relation": "The early Hutchinson-Backlund pattern of matching located witnesses to a rectangle-wide count is the same certificate architecture later made scalable by count-only verification: algorithmic savings come from discarding location detail that the final count comparison does not use.",
+        "limits": "Sign changes alone are not exhaustive, and the count-only unit does not itself contain its surrounding global completeness proof. The conclusion remains bounded by the certified height or rectangle, and none of these units turns finite agreement into RH at all heights.",
+        "parent_unit_ids": [
+          "b25_bombieri2000_u05",
+          "openalex_w1980116773_d02",
+          "platt_trudgian2021_verification_v2_u03"
+        ],
+        "synthesis_id": "riemann_v2_cross_computation_dynamics_count_match_certificate",
+        "title": "Finite RH verification composes witness counts with an independent total"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Certification is finite in height; large verified ranges and spacing agreement are evidence, not global proof.",
+          "line_end": 311,
+          "line_start": 259,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; the contour count and exact integer-rounding condition are essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Gives a finite-range proof protocol: compute the argument-principle zero count exactly, detect real xi sign changes, and conclude that the counted zeros are simple and on the line when the totals agree.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count all zeros, then match critical-line sign changes",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u05.txt",
+          "unit_bytes": 3514,
+          "unit_id": "b25_bombieri2000_u05",
+          "unit_sha256": "f66bfd19ee66d18e3c0215cba733b6522372896a6fb19f4aa2eccb371fa5ba2d",
+          "unit_type": "computational certification logic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u05.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is certificate composition: one method supplies exhaustive cardinality and another supplies witnesses with the desired property. Their agreement upgrades numerical detection to a finite-range proof.",
+            "nonparaphrase_operation": "The argument principle turns a two-dimensional zero set into an integer contour invariant, and ξ turns critical-line zeros into real sign changes. Exact integer rounding bridges numerical evaluation to a certified count only when the numerical error is controlled.",
+            "quality_reason": "The span explicitly combines an argument-principle total zero count with critical-line sign changes of real continuous xi and states that equality certifies all counted zeros as simple and on the line. The output correctly limits the certificate to a finite height and distinguishes spacing evidence from certification.",
+            "source_support": "The contour integral of ζ′/ζ gives the total number N(T) of zeros in a prescribed rectangle, adjusted for the pole. Since ξ is continuous and real on the real t-axis, sign changes locate odd-order zeros there; if their number equals N(T), every zero in the region is accounted for and is simple and on the critical line.",
+            "speculation_status": "The certificate is bounded by height and cannot imply global RH. A sign-change list without an independent total count can miss even-multiplicity or off-line zeros, while spacing agreement is additional evidence rather than certification. Historical verified heights and counts are source-era figures. The span asserts arbitrary-precision computation and rounding but does not give a modern interval-arithmetic implementation. 'Certificate composition' accurately names the non-paraphrase operation of matching an exhaustive multiplicity count to distinct sign-change witnesses. The source asserts arbitrary-precision computation and integer rounding but supplies no interval-error implementation; the output preserves that limitation and treats historical heights as source-era facts."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes why the Euler-Maclaurin evaluation became computationally expensive at increasing height.",
+          "line_end": 80,
+          "line_start": 26,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Certification logic is prose-supported; Gram-point and Euler-Maclaurin formulas and remainder notation need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Gram-law sign changes locate critical-line zeros, but failures show interval-by-interval sign rules are insufficient. Backlund's rectangle count supplies the independent total, so finding at least that many critical-line zeros excludes additional off-line roots in the bounded region.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Global zero counting closes the gap left by critical-line sign changes",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d02.txt",
+          "unit_bytes": 3306,
+          "unit_id": "openalex_w1980116773_d02",
+          "unit_sha256": "483f9e5357605b65382f899409cfa7e6e145b87c6c45936cfa5b727617a7e73c",
+          "unit_type": "count-versus-location certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d02.txt",
+          "source_title": "On the roots of the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Gram's one-zero-per-interval rule fails, while Hutchinson found at least 138 critical-line zeros by sign changes and Backlund's method gave exactly 138 zeros in the stated rectangle. Interpretation: a location lower bound becomes exhaustive only when it matches an independent total count; equality leaves no room for additional off-line zeros inside that rectangle. The gain is completeness in a bounded region, whereas Gram-interval signs alone neither certify the total nor extend beyond the rectangle. Backlund's counting mechanism and exact OCR-damaged formulas remain outside the recoverable evidence.",
+            "nonparaphrase_operation": "Combines a critical-line lower bound with an independent global total to close the completeness gap.",
+            "quality_reason": "Accepted because it preserves the two logically distinct counts and does not invent details of Backlund's method.",
+            "source_support": "The span states Gram's law and its failures, the at-least-138 sign-change count, the exactly-138 rectangle count, and the bounded exclusion of off-line roots; it also describes the order-height Euler–Maclaurin burden.",
+            "speculation_status": "None."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+            "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the carried unit to complete the optimization that begins at line 82.",
+          "line_end": 97,
+          "line_start": 77,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only; the reported sampling success rate is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replaces full high-precision zero isolation with sufficient lattice sampling and one-bit sign-change counts, relying on Turing completeness for the global certificate and avoiding unnecessary zooming and storage.",
+          "source_id": "platt_trudgian2021_verification",
+          "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count-only certification saves storage and precision without weakening completeness",
+          "unit_artifact_relpath": "depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "unit_bytes": 1448,
+          "unit_id": "platt_trudgian2021_verification_v2_u03",
+          "unit_sha256": "2f5a9167a55ae6252eb1c721fd2de2db6afc57fc44cb9cca467f1df3704b5e80",
+          "unit_type": "computational tradeoff",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The implementation changes its retained object from a high-precision zero database to the minimum local information needed for counting: after detecting a sign change, it does not zoom in with Shannon–Whittaker–Nyquist machinery or store a refined zero. Arb also reduces memory relative to MPFI, and the default lattice empirically isolates nearly all zeros directly. This span supports the efficiency tradeoff only; it does not contain the surrounding global completeness argument, so sign changes alone must not be described here as a complete certificate.",
+            "nonparaphrase_operation": "It identifies which witness detail the implementation discards for its count-oriented objective while explicitly separating that optimization from an absent global completeness proof.",
+            "quality_reason": "Accepted after revision because the computational design insight remains substantive once the imported certification claim is removed.",
+            "source_support": "The artifact states the MPFI-to-Arb switch, approximate memory benefit, omission of high-precision isolation and storage, sign-change counting, and empirical sampling success rate. It begins after the certification setup and overlaps a footnote.",
+            "speculation_status": "No speculation; Turing-style completeness is treated as unavailable outside-span context and is not used to justify the unit."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_82664c80fe0ad0bffd1db6c0e56c3a583b2dec706594a951a52fab9acf5c3b90",
+            "dossier_sha256": "85da34a9f43fedd9446b875f1dc463c4b89a9d2516b6e44469e6a3653b5f44fa"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "A computed Hardy-Z value yields a rigorous sign only when its magnitude exceeds a method-specific absolute-error envelope. This inequality naturally triages the computation: certify large-margin samples cheaply, and route small-margin cases to slower evaluation or shifted sampling, while recording that shifting changes the measurement protocol and subsequent aggregation.",
+        "generation_panel": "computation_dynamics",
+        "historical_or_program_relation": "Lehmer's SWAC-era remainder-aware screening anticipates later range computations that budget interpolation, analytic truncation, and machine arithmetic separately; later shifted-point runs make explicit that numerical stabilization also creates a bookkeeping confound.",
+        "limits": "The cited error bounds are tied to particular formulas, machines, and height ranges. Shifted evaluation is not an independent implementation, a stable-looking sign is not a rigorous sign without its bound, and certified sample signs do not by themselves certify that all zeros were counted.",
+        "parent_unit_ids": [
+          "openalex_w1980116773_d04",
+          "openalex_w2042837137_v2_u02",
+          "openalex_w2116781013_v2_u02"
+        ],
+        "synthesis_id": "riemann_v2_cross_computation_dynamics_error_directed_evaluation",
+        "title": "An error envelope turns uncertain samples into an adaptive evaluation policy"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a reusable staged-verification design rather than a mere list of computed zeros.",
+          "line_end": 176,
+          "line_start": 140,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Decision logic is clear; the omitted displayed evaluation at lines 149-154 and exact error thresholds require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The SWAC evaluates an approximate real-valued critical-line function at Gram points, compares its magnitude with a rigorous remainder estimate, flags uncertain or definite law failures, then subdivides neighboring intervals; only unresolved low-amplitude cases trigger a more expensive method.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Bounded-error screening sends only ambiguous Gram intervals to finer computation",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d04.txt",
+          "unit_bytes": 2045,
+          "unit_id": "openalex_w1980116773_d04",
+          "unit_sha256": "199e4bf8c2e57bc166d8646d6b0916f57575fb88a6600e394e3fdac566e7e6cf",
+          "unit_type": "adaptive computational audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d04.txt",
+          "source_title": "On the roots of the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the SWAC evaluates an approximation at Gram points, compares small magnitudes with a remainder estimate, separately flags doubtful signs and proved Gram-law failures, subdivides the two neighboring intervals, and sends the residual ambiguous case to a slower calculation. Interpretation: the approximate value together with its error allowance is a routing certificate: most signs are settled cheaply, while uncertainty concentrates work in the combined neighborhood where a missing root may be compensated next door. If magnitude does not dominate the error, the fast screen cannot determine the local root count and must defer. The omitted evaluation and thresholds are not recoverable from this text layer.",
+            "nonparaphrase_operation": "Turns rigorous approximation uncertainty into an adaptive computational triage rule.",
+            "quality_reason": "Accepted because it distinguishes doubt, proved failure, neighborhood refinement, and resolution rather than treating every anomaly alike.",
+            "source_support": "The span describes both machine flags, eightfold subdivision of adjacent intervals, local compensation, the unresolved low maximum, and the decision to use the smaller-remainder formula.",
+            "speculation_status": "None."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+            "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Detailed derivation is omitted by the paper and referred to earlier work; this unit captures only the checked error interface stated here.",
+          "line_end": 129,
+          "line_start": 83,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula OCR is degraded, but prose and numerical bounds recover the comparison; scan-check exact exponents before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates interpolation error from truncated Riemann-Siegel error, incorporates machine precision, and uses fixed bounds substantially larger than the derived upper bounds.",
+          "source_id": "openalex_w2042837137",
+          "source_normalized_sha256": "7a4e793dc533c3ee253d9530401cd318c37c7548f1b08760cd7610e2900a431f",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Method-specific dominant errors yield conservative sign certification for Z at Gram points",
+          "unit_artifact_relpath": "depth/units/openalex_w2042837137_v2_u02.txt",
+          "unit_bytes": 3271,
+          "unit_id": "openalex_w2042837137_v2_u02",
+          "unit_sha256": "a565767e44598dbe443fa2d6f20895160661398385565ada9d77b8846d778260",
+          "unit_type": "numerical error control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_v2_u02.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the authors extend a prior rigorous error analysis to the larger height range and account for the CYBER 205's truncated 47- and 94-bit arithmetic. Interpolation dominates the error of method A, while truncation of the two-term Riemann-Siegel expansion dominates method B; other hardware terms are smaller. The fixed bounds actually used are deliberately larger than the derived safe bounds, and method B determines every needed Gram-point sign. Interpretation: an approximation plus an absolute-error envelope is the interface from floating-point output to a certified exact sign. Boundary: the detailed derivation is referred to earlier work, and the stated bounds apply to these methods, machines, and range.",
+            "nonparaphrase_operation": "Separates analytic truncation, interpolation, and arithmetic errors, then explains why a margin converts their combined envelope into a sign certificate.",
+            "quality_reason": "Accepted: the computational proof interface is concrete and source-grounded, with omitted derivation and implementation scope retained.",
+            "source_support": "Section 2 names the bit widths, dominant sources, derived safe bounds, more conservative operational bounds, and the absence of an unresolved method-B sign.",
+            "speculation_status": "No new speculation; OCR-damaged exponents are not reproduced exactly."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3893e8ab57d96d314362079057b509db992badf001aeeba989720f17a55d5a81",
+            "dossier_sha256": "18ca56793e200bb5627a66e0d24467ad1c8f8cfe6cfd4033cd50241c13035e46"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source verifies cross-program agreement on an overlap to bound concern without claiming exact statistical identity.",
+          "line_end": 209,
+          "line_start": 184,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Counts are legible, though table labels and symbols are OCR-degraded.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "When a computed value is too small, argument shifts precede the expensive fallback; this changes the literal sampling points, so statistics cannot be combined naively and some Rosser-rule exceptions may be reclassified or missed.",
+          "source_id": "openalex_w2116781013",
+          "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Shifted Gram points improve robustness but complicate aggregation and exception counts",
+          "unit_artifact_relpath": "depth/units/openalex_w2116781013_v2_u02.txt",
+          "unit_bytes": 2071,
+          "unit_id": "openalex_w2116781013_v2_u02",
+          "unit_sha256": "f44e5a37db17d1184a1d440ecaf737527a37204b21c80252f5a7acd5f6aa2d24",
+          "unit_type": "computational-confound-audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_v2_u02.txt",
+          "source_title": "On the zeros of the Riemann zeta function in the critical strip. II",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Numerical stabilization changes the measurement protocol. The source explicitly audits this intervention as a confound instead of treating the resulting table as exchangeable with an unshifted run.",
+            "nonparaphrase_operation": "Shifted evaluation points bridge ambiguous low-magnitude evaluations to rigorously signed values, while overlapping independent runs provide a limited empirical check on classification drift.",
+            "quality_reason": "The source says method A's ambiguous small values trigger several shifted evaluations before method B, quantifies the rarity of shifts, and warns that shifted sampling prevents strict accumulation with Brent's statistics. It acknowledges possible missed or reclassified Rosser-rule exceptions and reports exact exception agreement over an overlapping earlier interval.",
+            "source_support": "When method A returns a Z(t) value too small for a rigorous sign, the Lune-Riele-Winter program tries several small shifts before invoking method B. Fewer than 370 shifts occurred per 2.5 million-zero run at the stated method-A error bound, mostly inside Gram blocks. Because some evaluated points approximate rather than equal Gram points, the authors warn that their statistics cannot strictly be accumulated with Brent's. They list 104 Rosser-rule exceptions through the specified height, acknowledge possible missed or reclassified exceptions after index 156,800,000, and report exact agreement with Brent on exceptions in a shared earlier interval.",
+            "speculation_status": "Cross-program agreement on one interval bounds concern but does not prove equivalence of the two sampling protocols. Rare shifts can still alter exception types, and absence of a detected type is not certified absence. Counts and the qualitative warning are legible, though OCR degrades symbols, range endpoints, and table/type notation. Calling the stabilization a measurement-protocol confound is a precise conceptual characterization. The output correctly limits overlap agreement to an empirical check rather than proof of protocol equivalence. Range endpoints, table notation, and some counts are OCR-degraded."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_d80dc2eb44a53993555a68b71112b597aba228b48738480acb1f6aca5ce97454",
+            "dossier_sha256": "4c2139a79487a3e3af07477c656c19c0da4e333abf74c90896222dc1c2379d2f"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Choosing the Riemann-Siegel saddle scale reduces a critical-line evaluation to a square-root-length cosine sum with correction terms; precomputed Taylor tables can make those corrections cheap across repeated calls. For the fast representation to support proof, its series truncation, interpolation, coefficient truncation, and floating-point or interval errors must still be converted into a conservative sign margin.",
+        "generation_panel": "computation_dynamics",
+        "historical_or_program_relation": "The computational program progresses by moving work from runtime into analytic specialization and symbolic preprocessing, then by restoring epistemic control through explicit method-specific error accounting; rigorous multiprecision therefore changes both throughput and what the output certifies.",
+        "limits": "The Taylor-table unit does not provide a uniform bound for its coefficient cutoff, and the later error envelopes apply to their stated implementations rather than automatically validating Pugh's tables. Cross-machine or GHz-hour rates are not comparable without accounting for sampling density, hardware, precision, and rigor.",
+        "parent_unit_ids": [
+          "pugh1998_depth_u05",
+          "pugh1998_depth_u15",
+          "openalex_w2042837137_v2_u02",
+          "platt_trudgian2021_verification_v2_u04"
+        ],
+        "synthesis_id": "riemann_v2_cross_computation_dynamics_riemann_siegel_cost_ladder",
+        "title": "Riemann-Siegel speedups form a ladder from analytic compression to certified arithmetic"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The formula is presented before its derivation so implementation and accuracy roles are visible together.",
+          "line_end": 964,
+          "line_start": 842,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Coefficient formulas are highly layout-dependent and should be checked against the scan before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the specialized critical-line formula, its square-root-length cosine sum, fractional saddle parameter, computable correction hierarchy, and truncated Stirling phase.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            21,
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Riemann-Siegel main sum plus asymptotic remainder",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u05.txt",
+          "unit_bytes": 5428,
+          "unit_id": "pugh1998_depth_u05",
+          "unit_sha256": "4c65745beca2cf73bf03986649f02774ef8decc46f377570b6ee5251f40b76d5",
+          "unit_type": "formula-and-complexity-interface",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u05.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Choosing N at the saddle scale compresses critical-line evaluation to order sqrt(t). The remainder representation exposes a controllable accuracy ladder rather than one opaque approximation error.",
+            "nonparaphrase_operation": "The real Z representation, saddle parameter p, correction functions C_j, and Stirling phase connect analytic contour structure to an implementable cosine sum.",
+            "quality_reason": "The span contrasts Euler-Maclaurin and Riemann-Siegel, states the critical-line formula, square-root main sum, fractional parameter p, correction hierarchy, and truncated Stirling phase. No material unsupported claim; the output acknowledges separate errors and does not copy coefficients from OCR. 'Accuracy ladder' is explanatory style, but the selectable C_j hierarchy is explicit.",
+            "source_support": "For N=floor(sqrt(t/(2pi))) and fractional part p, the source states Z(t) as twice a sum of n^(-1/2)cos(theta(t)-t log n) for n<=N plus R. R is approximated by powers of t^(-1/2) with coefficient functions C_j built from derivatives of Psi(p), and theta(t) has a truncated Stirling expansion.",
+            "speculation_status": "The formula is specialized to the critical line in this presentation, and truncating theta or the correction series introduces separate errors. Exact coefficient expressions are too layout-sensitive to copy from extraction. The formula's architecture and complexity are clear; coefficient typography and powers require the original scan before implementation. Describing speed and accuracy as modular is a reasonable interpretation of the separated main sum and remainder terms. Coefficient functions and powers are highly layout-dependent; implementation requires the scan."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+            "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is an implementation representation choice, not a new analytic approximation theorem.",
+          "line_end": 2508,
+          "line_start": 2485,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact polynomial coefficients live in the appendix and are code/scan-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Transforms the correction function to a centered variable, symbolically derives coefficient series, and truncates only after high-precision coefficients fall below a specified threshold.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Taylor-polynomial remainder coefficients trade symbolic preprocessing for fast evaluation",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u15.txt",
+          "unit_bytes": 1178,
+          "unit_id": "pugh1998_depth_u15",
+          "unit_sha256": "f2e942c4303a991c943e6d883243e6d7d94a8fb657c4e582e636477d26daf7e1",
+          "unit_type": "numerical-representation-design",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u15.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The implementation changes variables by p=(z+1)/2, writes Psi(p)=Phi(z), and uses the exact scaling Psi^(n)(p)=2^n Phi^(n)(z) to convert the analytic correction functions C_0 through C_4 into Taylor polynomials in z. Maple generates thirty-digit coefficients offline, and each stored list is cut off once coefficient magnitude falls below 10^-20; the span does not show that centering improves conditioning or that this cutoff gives a uniform remainder bound.",
+            "nonparaphrase_operation": "The derivative scaling is the concrete representation bridge from formulas involving Psi derivatives to reusable polynomial tables. This trades one-time symbolic differentiation and coefficient generation for repeated polynomial evaluation, but it does not by itself certify runtime error or numerical conditioning.",
+            "quality_reason": "Accepted after replacing generic improvement language with the exact derivative scaling and preserving the missing-remainder-bound caveat. Reproduction still requires the appendix coefficient tables and code outside this unit.",
+            "source_support": "The unit gives the p-to-z substitution, the displayed Phi(z), the derivative scaling, substitution into C_n for n=0,...,4, thirty-digit Maple coefficient generation, and coefficient-list truncation below 10^-20 for the C(n,z) implementation.",
+            "speculation_status": "Amortized preprocessing is a bounded implementation interpretation. No conditioning improvement or uniform accuracy theorem is claimed."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+            "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Detailed derivation is omitted by the paper and referred to earlier work; this unit captures only the checked error interface stated here.",
+          "line_end": 129,
+          "line_start": 83,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula OCR is degraded, but prose and numerical bounds recover the comparison; scan-check exact exponents before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates interpolation error from truncated Riemann-Siegel error, incorporates machine precision, and uses fixed bounds substantially larger than the derived upper bounds.",
+          "source_id": "openalex_w2042837137",
+          "source_normalized_sha256": "7a4e793dc533c3ee253d9530401cd318c37c7548f1b08760cd7610e2900a431f",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Method-specific dominant errors yield conservative sign certification for Z at Gram points",
+          "unit_artifact_relpath": "depth/units/openalex_w2042837137_v2_u02.txt",
+          "unit_bytes": 3271,
+          "unit_id": "openalex_w2042837137_v2_u02",
+          "unit_sha256": "a565767e44598dbe443fa2d6f20895160661398385565ada9d77b8846d778260",
+          "unit_type": "numerical error control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2042837137_v2_u02.txt",
+          "source_title": "On the Zeros of the Riemann Zeta Function in the Critical Strip. IV",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the authors extend a prior rigorous error analysis to the larger height range and account for the CYBER 205's truncated 47- and 94-bit arithmetic. Interpolation dominates the error of method A, while truncation of the two-term Riemann-Siegel expansion dominates method B; other hardware terms are smaller. The fixed bounds actually used are deliberately larger than the derived safe bounds, and method B determines every needed Gram-point sign. Interpretation: an approximation plus an absolute-error envelope is the interface from floating-point output to a certified exact sign. Boundary: the detailed derivation is referred to earlier work, and the stated bounds apply to these methods, machines, and range.",
+            "nonparaphrase_operation": "Separates analytic truncation, interpolation, and arithmetic errors, then explains why a margin converts their combined envelope into a sign certificate.",
+            "quality_reason": "Accepted: the computational proof interface is concrete and source-grounded, with omitted derivation and implementation scope retained.",
+            "source_support": "Section 2 names the bit widths, dominant sources, derived safe bounds, more conservative operational bounds, and the absence of an unresolved method-B sign.",
+            "speculation_status": "No new speculation; OCR-damaged exponents are not reproduced exactly."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3893e8ab57d96d314362079057b509db992badf001aeeba989720f17a55d5a81",
+            "dossier_sha256": "18ca56793e200bb5627a66e0d24467ad1c8f8cfe6cfd4033cd50241c13035e46"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Performance figures are evidence about the experiment, not part of the mathematical completeness proof.",
+          "line_end": 115,
+          "line_start": 98,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and numerical comparisons are legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Records compute provenance and compares FFT-based acceleration, sampling density, multiprecision ball arithmetic, hardware floating point, and hyper-threading, showing why raw zero-per-hour records are not comparable without certification and precision context.",
+          "source_id": "platt_trudgian2021_verification",
+          "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The cost of rigor is separated from algorithmic and hardware throughput",
+          "unit_artifact_relpath": "depth/units/platt_trudgian2021_verification_v2_u04.txt",
+          "unit_bytes": 1595,
+          "unit_id": "platt_trudgian2021_verification_v2_u04",
+          "unit_sha256": "883568697e7d026b0ed24111db960b8ebf60fbc070b3e5a7049adbcc5786c4eb",
+          "unit_type": "rigorous-computation comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u04.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reported metric is processed length of the critical half-line per GHz-hour, not zeros per hour. Even that normalization leaves major task differences: FFT acceleration versus direct Riemann–Siegel evaluation, samples per zero, multiprecision rigorous arithmetic versus hardware floating point, bound and parameter tuning, and modest hyper-threading gains. Throughput is therefore not a single invariant of an algorithm; precision, sampling, and rigor define materially different computations.",
+            "nonparaphrase_operation": "It audits a performance comparison by decomposing the normalized number into algorithmic, hardware, sampling, and epistemic components it does not normalize away.",
+            "quality_reason": "Accepted after revision because it corrects the critic-identified metric error and preserves the source's concrete cost explanations.",
+            "source_support": "The source records clusters, core hours and rates, the half-line-length metric, a roughly fifteen-percent hyper-threading gain, a gamma-bound improvement, height tuning, and attributed speed differences. These are historical provenance figures.",
+            "speculation_status": "No speculation and no inference to current hardware or mathematical completeness."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_82664c80fe0ad0bffd1db6c0e56c3a583b2dec706594a951a52fab9acf5c3b90",
+            "dossier_sha256": "85da34a9f43fedd9446b875f1dc463c4b89a9d2516b6e44469e6a3653b5f44fa"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "An FFT-based method can accelerate a long batch without improving the latency of one adaptively requested Z evaluation, while a processed-height-per-GHz-hour metric can hide the number of samples, precision, and proof obligations per unit height. Computational design must therefore match the cost metric to contiguous verification or sparse exception resolution.",
+        "generation_panel": "computation_dynamics",
+        "historical_or_program_relation": "Large verification campaigns favor amortized batch transforms, whereas exception-driven searches expose the remaining cost of an individual Dirichlet sum; the later rigorous-computation comparison shows why hardware-normalized throughput still does not erase this objective split.",
+        "limits": "The units do not provide a controlled head-to-head benchmark or select a universally superior algorithm. The conclusion concerns optimization objectives, not mathematical correctness, and any proposed low-latency approximation would still need to fit the existing analytic error budget.",
+        "parent_unit_ids": [
+          "pugh1998_depth_u19",
+          "platt_trudgian2021_verification_v2_u04"
+        ],
+        "synthesis_id": "riemann_v2_cross_computation_dynamics_throughput_latency_separation",
+        "title": "Batch throughput and single-point latency are different optimization targets"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a source-specific future-work proposal, not a demonstrated algorithm.",
+          "line_end": 2732,
+          "line_start": 2680,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant with one displayed reformulation of the main sum.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies the main cosine sum as the cost center, distinguishes precomputation-amortized multiple evaluation from singleton evaluation, and proposes a target approximation accurate to the formula's own error scale.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            62
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Batch acceleration does not automatically accelerate a single Z evaluation",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u19.txt",
+          "unit_bytes": 3163,
+          "unit_id": "pugh1998_depth_u19",
+          "unit_sha256": "f0c0a2d594ea7df6da3e2e561a9496a9be4c5404f8700087d786b64b047665f0",
+          "unit_type": "throughput-bottleneck-and-future-route",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u19.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Throughput and latency are distinct complexity objectives. An approximation calibrated to the existing analytic error budget could be useful even if it does not recover the main sum to arbitrary precision.",
+            "nonparaphrase_operation": "The complex Dirichlet-sum form separates an easy phase factor from the labor-intensive partial sum, suggesting where an alternative approximation must act.",
+            "quality_reason": "The source identifies the main cosine sum as the cost center, describes precomputation-based batch acceleration, denies a singleton gain, rewrites the target as a complex Dirichlet sum, and proposes matching the existing error scale. No material unsupported claim; the proposed singleton approximation is correctly labeled future work without construction or proof. 'Accuracy need only match the formula tolerance' is strategic language but is explicitly the source's proposed target.",
+            "source_support": "The source identifies sum_{n<=N} n^(-1/2)cos(theta(t)-t log n) as the dominant cost. Odlyzko-style methods split it into direct and approximated parts after precomputation and accelerate batches, but are said not to improve a single evaluation. Rewriting the cosine sum as the real part of e^(i theta(t)) sum_{n<=N}(1/n)^(1/2+it) isolates the target for a future approximation at comparable error scale.",
+            "speculation_status": "The proposed faster singleton method is future work, not a demonstrated algorithm or bound. Batch precomputation gains do not transfer automatically to isolated evaluations. The bottleneck analysis is prose-supported; no construction or proof of the proposed approximation is supplied. The throughput-versus-single-evaluation-latency distinction is a faithful conceptual synthesis. This is a future-work discussion; reported limits and comparison to Odlyzko are historical, not newly verified evidence."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+            "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Performance figures are evidence about the experiment, not part of the mathematical completeness proof.",
+          "line_end": 115,
+          "line_start": 98,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and numerical comparisons are legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Records compute provenance and compares FFT-based acceleration, sampling density, multiprecision ball arithmetic, hardware floating point, and hyper-threading, showing why raw zero-per-hour records are not comparable without certification and precision context.",
+          "source_id": "platt_trudgian2021_verification",
+          "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The cost of rigor is separated from algorithmic and hardware throughput",
+          "unit_artifact_relpath": "depth/units/platt_trudgian2021_verification_v2_u04.txt",
+          "unit_bytes": 1595,
+          "unit_id": "platt_trudgian2021_verification_v2_u04",
+          "unit_sha256": "883568697e7d026b0ed24111db960b8ebf60fbc070b3e5a7049adbcc5786c4eb",
+          "unit_type": "rigorous-computation comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u04.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reported metric is processed length of the critical half-line per GHz-hour, not zeros per hour. Even that normalization leaves major task differences: FFT acceleration versus direct Riemann–Siegel evaluation, samples per zero, multiprecision rigorous arithmetic versus hardware floating point, bound and parameter tuning, and modest hyper-threading gains. Throughput is therefore not a single invariant of an algorithm; precision, sampling, and rigor define materially different computations.",
+            "nonparaphrase_operation": "It audits a performance comparison by decomposing the normalized number into algorithmic, hardware, sampling, and epistemic components it does not normalize away.",
+            "quality_reason": "Accepted after revision because it corrects the critic-identified metric error and preserves the source's concrete cost explanations.",
+            "source_support": "The source records clusters, core hours and rates, the half-line-length metric, a roughly fifteen-percent hyper-threading gain, a gamma-bound improvement, height tuning, and attributed speed differences. These are historical provenance figures.",
+            "speculation_status": "No speculation and no inference to current hardware or mathematical completeness."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_82664c80fe0ad0bffd1db6c0e56c3a583b2dec706594a951a52fab9acf5c3b90",
+            "dossier_sha256": "85da34a9f43fedd9446b875f1dc463c4b89a9d2516b6e44469e6a3653b5f44fa"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Near-cancellation in a critical-line evaluation can guide a targeted search toward an unusually close zero pair, but raw closeness is only discovery evidence. After rescaling ordinates into the heat-family coordinates, separately rounded bounds for the pair's surrounding zero interactions must compose into the scalar Lehmer inequality before the pair has dynamical significance.",
+        "generation_panel": "computation_dynamics",
+        "historical_or_program_relation": "Lehmer's recurrence-guided proposal to inspect remote stress regions develops into a discovery-to-certificate loop: broad computation finds a candidate, high precision is concentrated in its window, and analytic local, intermediate, and tail bounds qualify it for a de Bruijn-Newman lower bound.",
+        "limits": "Recurrence of a cancellation pattern is not recurrence of RH counterexamples, the targeted window is not an exhaustive optimum search, and the certificate concerns the selected pair and a lower bound for Lambda rather than RH or the global distribution of close gaps.",
+        "parent_unit_ids": [
+          "openalex_w1980116773_d08",
+          "cosv93_u06_close_pair_provenance_and_search_limits",
+          "cosv93_u11_combined_lehmer_certificate"
+        ],
+        "synthesis_id": "riemann_v2_cross_computation_dynamics_close_pair_discovery_to_certificate",
+        "title": "A cancellation heuristic becomes useful only after a global-interaction certificate"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is an informal heuristic, explicitly not a proof; the note added in proof reports another 15,000 on-line roots.",
+          "line_end": 360,
+          "line_start": 339,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Argument is prose-supported, though OCR obscures some signs in the sentence relating extrema to RH.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The concluding interpretation treats the low maximum as a delicate balance of rising and descending Dirichlet terms; invoking recurrence, it predicts such stress cases recur and suggests searching selected remote neighborhoods rather than uniformly extending the zero table.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Near-cancellation among early and late terms motivates targeted searches at immense height",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d08.txt",
+          "unit_bytes": 1907,
+          "unit_id": "openalex_w1980116773_d08",
+          "unit_sha256": "d2455795e84639692cbac99d75a278036d5758cacb7333873f53c9e043e4f647",
+          "unit_type": "heuristic search strategy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d08.txt",
+          "source_title": "On the roots of the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: in explicitly informal comments, Lehmer interprets an exceptionally low maximum as delicate cancellation between early rising and later descending terms, invokes Kronecker's theorem for recurrence of this phenomenon, and proposes searches in selected remote neighborhoods; a note reports 15,000 additional on-line roots. Interpretation: the term decomposition turns a local near-cancellation into a heuristic for targeting future stress regions rather than merely extending a contiguous table. Recurrence concerns the cancellation phenomenon, not RH counterexamples, and neither the heuristic nor the extra finite computation licenses a global conclusion. OCR-obscured sign language is not sharpened.",
+            "nonparaphrase_operation": "Converts a cancellation mechanism into a recurrence-guided search heuristic while preserving its epistemic limits.",
+            "quality_reason": "Accepted because fact, strategic suggestion, finite evidence, and unproved global consequence remain visibly separate.",
+            "source_support": "The conclusion explicitly describes the competing terms, states recurrence, proposes distant targeted investigation, labels the discussion informal, and separately records the added finite computation.",
+            "speculation_status": "Explicit heuristic; recurrence of near-cancellation is not recurrence of off-line zeros."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+            "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Finite verification of many real zeros and high-window searches are provenance for pair selection; they do not prove RH or global optimality.",
+          "line_end": 272,
+          "line_start": 246,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Check K, both gamma/x values, gap, verified-zero count, recomputation scope, and the high-zero index against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies the selected pair among verified critical-line zeros, explains why nearby zeros were recomputed accurately to estimate the global interaction, and explicitly distinguishes a plausible search-completeness judgment from a proof that no better pair was missed.",
+          "source_id": "openalex_w1224069186",
+          "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A spectacular gap motivates a targeted high-precision window, not a claim of exhaustive optimality",
+          "unit_artifact_relpath": "depth/units/cosv93_u06_close_pair_provenance_and_search_limits.txt",
+          "unit_bytes": 2038,
+          "unit_id": "cosv93_u06_close_pair_provenance_and_search_limits",
+          "unit_sha256": "b9315ab0f29a1e6aea2a5fff5d24017750182be16a255b426d3f396385beafe7",
+          "unit_type": "computational-evidence-and-epistemic-boundary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/cosv93_u06_close_pair_provenance_and_search_limits.txt",
+          "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The pair is a computationally discovered witness whose relevance depends on a later global-interaction certificate. High precision is allocated locally where the nonlinear criterion is sensitive, while search-completeness uncertainty remains explicit.",
+            "nonparaphrase_operation": "The scaling x=2 gamma connects zeta ordinates to H_0 coordinates; the selected window connects a broad numerical search to the analytic Lehmer-pair test.",
+            "quality_reason": "The span identifies the indexed consecutive pair and gap, scales its ordinates to H_0 zeros, reports the finite verification and local high-precision recomputation, and explicitly says the search does not conclusively exclude a closer pair. The candidate does not turn finite verification into RH or the search heuristic into global optimality; its reference to a later certificate is appropriately framed as relevance rather than a result of this span. 'Targeted certification' slightly anticipates the next lemma, but the concrete distinction between selected witness, local recomputation, and non-exhaustive search prevents style-only content.",
+            "source_support": "The span identifies a consecutive critical-line pair at a specified high index, converts its ordinates to H_0 zero coordinates, reports prior verification of many real zeros, and explains why nearby zeros were recomputed accurately to estimate g_K(0). It says a better missed pair is unlikely under the search method, not impossible.",
+            "speculation_status": "Finite verification does not prove RH, and a search heuristic does not prove global optimality of the pair. The tiny gap itself is not yet a Lambda bound. The index K, ordinates, gap, verified-zero count, recomputation scope, and powers of ten should be checked against the PDF before numerical reuse. Separating computational candidate discovery from the later need to estimate g_K is justified by the source's stated reason for recomputing nearby zeros. Several powers of ten are flattened in extraction, including the very high comparison index, so none of the printed numerical values should be reused without PDF verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_10880e273da2b706bad58f0586e390d38da0f87927b4b3c5d253f10fb7dcf965",
+            "dossier_sha256": "f81b36445778fd2074a72a1d94c2c6609a960c83ef2ffb206b99589ae5de708a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The margin is large, but the result is still a conditional branch of the proof under Lambda<0; if Lambda>=0 the final lower bound is already trivial.",
+          "line_end": 463,
+          "line_start": 444,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Verify g_K<24058, Delta_K, their product, exponent, and comparison with 4/5 against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Adds the local-window, distant-block, and outer-tail bounds to enclose g_K(0), combines that with the measured gap, and verifies Delta_K squared times g_K(0) is far below 4/5.",
+          "source_id": "openalex_w1224069186",
+          "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Three upward-rounded bounds certify the selected pair as Lehmer",
+          "unit_artifact_relpath": "depth/units/cosv93_u11_combined_lehmer_certificate.txt",
+          "unit_bytes": 820,
+          "unit_id": "cosv93_u11_combined_lehmer_certificate",
+          "unit_sha256": "ae5d66d4953e7b2e89848dc36d1bbb3b7b5f249d3c0b70e714c21084155af668",
+          "unit_type": "computational-certification-closure",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/cosv93_u11_combined_lehmer_certificate.txt",
+          "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is compositional certification: separately auditable upper bounds are added, then tested against a dimensionless threshold. The normalized product reveals why a spectacularly small gap can tolerate crude environmental estimates.",
+            "nonparaphrase_operation": "The scalar g_K enclosure bridges the three evidence types to the Lehmer definition; upward-rounded components preserve the logical direction through numerical composition.",
+            "quality_reason": "The span adds the three prior one-sided bounds to obtain g_K(0)<24058, computes Delta_K from the ordinate gap, verifies Delta_K^2 g_K(0)<1.134321...x10^-3<4/5, and concludes the pair satisfies Definition 1.1. The candidate does not infer RH, Lambda's sign, or global optimality from the Lehmer certificate. The 'three evidence types' wording is abstract, but the scalar addition, normalized product, and preserved upper-bound direction provide the required non-paraphrase mechanism.",
+            "source_support": "The local, distant-block, and outer-tail bounds give g_K(0)<24058. The measured ordinate gap gives Delta_K, and the product Delta_K squared times g_K(0) is bounded by about 1.134321 times 10^-3, below 4/5, so the pair satisfies Definition 1.1.",
+            "speculation_status": "The conclusion is that this pair is Lehmer under the stated proof branch, not that RH holds or that the pair is globally best. A wrong gap scale or any non-upward component would invalidate the certificate. The combined bound, Delta_K value, exponent, product, and comparison with 4/5 should be verified against the corrected PDF. Calling this compositional certification and observing that the large numerical margin tolerates coarse component bounds are faithful consequences of the displayed addition and threshold comparison. The exponent and decimal typography are formula-sensitive; the candidate identifies the exact quantities needing corrected-PDF verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_10880e273da2b706bad58f0586e390d38da0f87927b4b3c5d253f10fb7dcf965",
+            "dossier_sha256": "f81b36445778fd2074a72a1d94c2c6609a960c83ef2ffb206b99589ae5de708a"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The Lehmer-pair criterion refuses to treat an adjacent gap in isolation: its static certificate normalizes the gap by an interaction term involving the remaining zeros. Heat-flow analysis supplies the dynamical counterpart, an inverse-distance evolution in which every real zero moves under the surrounding configuration; only after the environmental term is uniformly controlled can a vanishing-gap sequence drive phase-boundary bounds toward zero.",
+        "generation_panel": "computation_dynamics",
+        "historical_or_program_relation": "Pair-based lower bounds turn exceptional static configurations into finite instability certificates, while the later interacting-particle reframing explains why gap relaxation and near-lattice behavior are inherently nonlocal rather than properties of two ordinates alone.",
+        "limits": "The static Lehmer criterion and the heat-flow ODE are distinct results, and this relation does not derive either from the other. The particle relaxation and unrenormalized Hamiltonian discussion is heuristic at this stage, while the infinite-pair conclusion is conditional on an infinite sequence of certified pairs with the required controlled parameters.",
+        "parent_unit_ids": [
+          "cosv93_u03_lehmer_criterion_and_pair_bound",
+          "csv94_u14_infinite_pair_limit",
+          "rodgers_tao2020_v2_u09"
+        ],
+        "synthesis_id": "riemann_v2_cross_computation_dynamics_gap_environment_to_zero_flow",
+        "title": "A close gap is dynamically meaningful only relative to the other zeros"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The theorem is imported from the distinct 1994 Csordas-Smith-Varga work and is the engine applied here; no part of its longer proof is inferred into this source.",
+          "line_end": 178,
+          "line_start": 130,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Verify index exclusions, both denominators, convergence, lambda_k formula, signs, strictness, and the inequality lambda_k <= Lambda against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines Delta_k, the primed global reciprocal-square interaction g_k(0), and the 4/5 Lehmer criterion, then states the sign split and explicit pair-specific lambda_k guaranteed not to exceed the de Bruijn-Newman boundary.",
+          "source_id": "openalex_w1224069186",
+          "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A close gap qualifies only after normalization by all other zeros, then yields a lower bound for Lambda",
+          "unit_artifact_relpath": "depth/units/cosv93_u03_lehmer_criterion_and_pair_bound.txt",
+          "unit_bytes": 2115,
+          "unit_id": "cosv93_u03_lehmer_criterion_and_pair_bound",
+          "unit_sha256": "e796effabe6a90b5b78992f2a4bdbc8266d987f17a2b7297e577a740c1f1dc79",
+          "unit_type": "definition-and-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/cosv93_u03_lehmer_criterion_and_pair_bound.txt",
+          "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The criterion normalizes an exceptional local gap by its global environment, preventing raw closeness from being mistaken for dynamical significance. The pair-specific lambda_k is a certificate that compresses infinite zero geometry into a scalar lower bound.",
+            "nonparaphrase_operation": "The bridge object is g_k(0): it couples two adjacent zeros to the full signed zero configuration and connects a static H_0 snapshot to the heat-flow threshold.",
+            "quality_reason": "The span defines the consecutive-pair gap, the primed all-other-zero interaction, convergence, the strict Delta_k^2 g_k(0)<4/5 criterion, the g_k<=0 branch, and the positive-g_k scalar lambda_k with lambda_k<=Lambda. No proof of the imported theorem is attributed to this source, and the candidate does not reconstruct the OCR-damaged lambda_k formula. The word 'field' is metaphorical but is immediately grounded in the explicit reciprocal-square interaction over every other signed zero.",
+            "source_support": "For consecutive simple positive zeros, the span defines the gap Delta_k and an all-other-zero interaction g_k(0), whose convergence follows from reciprocal-square summability. A Lehmer pair satisfies Delta_k squared times g_k(0) below 4/5; the imported theorem treats nonpositive g_k separately and, for positive g_k, defines lambda_k with lambda_k at most Lambda.",
+            "speculation_status": "This unit imports the theorem from another work and does not prove its dynamics. A small Delta_k alone is insufficient, and a computed g_k must include certified control of the infinite tail. Index exclusions, both reciprocal-square denominators, the 4/5 condition, signs, strict inequalities, and the exact lambda_k formula require PDF verification. Describing the criterion as a local-gap versus global-environment normalization and lambda_k as a scalar certificate is a direct structural reading of the displayed definitions and theorem. Equation (1.13) is visibly damaged in extraction, especially the 5/4 factor and 4/5 exponent; the candidate safely reports only the sign split, inequalities, and role while requiring PDF verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_10880e273da2b706bad58f0586e390d38da0f87927b4b3c5d253f10fb7dcf965",
+            "dossier_sha256": "f81b36445778fd2074a72a1d94c2c6609a960c83ef2ffb206b99589ae5de708a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This proves only the conditional corollary; the source does not establish infinitely many Lehmer pairs.",
+          "line_end": 791,
+          "line_start": 770,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Check t_i definition, monotonicity formula, limiting constant, and all indices/signs in (3.8)-(3.9) against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reparameterizes the Lehmer inequality, proves the pair-specific lower-bound expression tends to zero exactly when the squared gap does, and combines infinitely many such lower bounds to derive Lambda at least zero.",
+          "source_id": "openalex_w2080252578",
+          "source_normalized_sha256": "fabf574e671488bd7a1a6ef630b6f0e2928bd89a73852342d131d8aebaa88e78",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The pair formula is asymptotically controlled by gap squared, so vanishing certified gaps drive bounds to zero",
+          "unit_artifact_relpath": "depth/units/csv94_u14_infinite_pair_limit.txt",
+          "unit_bytes": 696,
+          "unit_id": "csv94_u14_infinite_pair_limit",
+          "unit_sha256": "32359211c445d4bb3555399497134d43bbe696a331393357c638ca59536384c3",
+          "unit_type": "limit-argument-and-conditional-consequence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/csv94_u14_infinite_pair_limit.txt",
+          "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reparameterization separates a vanishing geometric scale from a uniformly controlled environmental correction. This makes the limiting mechanism transparent without claiming the environment disappears from finite certification.",
+            "nonparaphrase_operation": "The dimensionless Lehmer parameter bridges heterogeneous pairs to one compact domain, and monotonicity transfers the gap limit to the phase-boundary bounds.",
+            "quality_reason": "The proof introduces a dimensionless parameter in (0,1), rewrites the pair-specific bound as gap squared times a monotone controlled factor, proves equivalence of the two limits, and combines all pair bounds to conclude Lambda is at least zero. The candidate explicitly preserves the infinite certified-pair hypothesis and does not claim such a family exists. No material unsupported claim is present; the stated if-and-only-if limit is in the span. The 'bridge' phrasing is modestly generic but the dimensionless parameter and monotonic limit transfer make it specific.",
+            "source_support": "The proof reparameterizes the normalized product Delta_k squared g_k(0) by a variable in (0,1), rewrites lambda_k as the gap squared times a monotone bounded factor, and concludes lambda_{k_i} tends to zero if and only if the squared gaps do. Since every lambda_{k_i} is at most Lambda, the infinite-family hypothesis gives Lambda at least zero.",
+            "speculation_status": "The result is entirely conditional on infinitely many certified Lehmer pairs with the stated limit; the source does not establish such a family. The reparameterization, monotone function, constants, inequality signs, and index notation are OCR-degraded and must be checked against the scan. The stated equivalence of limits is the reliable prose-level result. Separating the vanishing geometric scale from a uniformly controlled environmental correction is an accurate conceptual interpretation of the reparameterization. Calling the compact parameter domain a way to compare heterogeneous pairs is a reasonable abstraction of the proof. The parameter definition, monotone function, constants, signs, and indices are OCR-degraded; only the prose-visible limit argument is safe without the scan."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0c453c69d60c0eea40fdd6f87092ebe7e129477417c483866713003fa96683f5",
+            "dossier_sha256": "1030792b0620fa523251b9a9184c8fbed51f3900f933a98d180a0e81a946c647"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The heuristic scale calculation shows why the available mesoscopic count is only barely sufficient.",
+          "line_end": 1486,
+          "line_start": 1387,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The ODE and formal Hamiltonian are formula-dependent; the physical and scaling interpretation is clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the principal-value zero ODE, interprets arithmetic progressions as equilibrium, estimates the relaxation time of a density fluctuation, and reframes the flow as gradient descent for a convex logarithmic Hamiltonian.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Inverse-distance zero motion relaxes spacing fluctuations toward a local lattice",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u09.txt",
+          "unit_bytes": 5864,
+          "unit_id": "rodgers_tao2020_v2_u09",
+          "unit_sha256": "0fb88b4e28226b4600a1389489263979024247b943e5ecbe7269870fbedafe47",
+          "unit_type": "dynamical-reframing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u09.txt",
+          "source_title": "The De Bruijn-Newman constant is non-negative",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Backward heat evolution induces a principal-value inverse-distance ODE for the real zeros. The source-authored heuristic views local arithmetic progressions as equilibria and estimates how spacing fluctuations might relax over the available time; it then introduces a logarithmic Hamiltonian and inverse-square energy only formally, since the infinite sums are not absolutely convergent.",
+            "nonparaphrase_operation": "Reframes analytic zero motion as an interacting-particle problem and separates the rigorous ODE from the heuristic relaxation and formal convexity machinery.",
+            "quality_reason": "Accepted after removing later renormalization and coercivity claims; principal-value conventions and scale constants remain formula-sensitive.",
+            "source_support": "Theorem 11, the local-equilibrium heuristic, the back-of-envelope time scale, the formal gradient-flow formula, and its divergence warning are present.",
+            "speculation_status": "The relaxation rate and Hamiltonian dissipation are explicitly heuristic/formal here; no mean-density renormalization is claimed in this unit."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_09a93da01136a6e23b8407dbcf034e0a98e973ce697ae25aee6426576f68b324",
+            "dossier_sha256": "91188f1f0c4774c4fbf82f0c2825e3ca51c1aeeea80382dea612d152d9ab3d9f"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "A verified-height RH computation becomes an upper bound for the de Bruijn-Newman constant only through a threshold theorem, whereas a certified close-pair configuration becomes a lower bound through a pair-specific instability formula. The phase boundary therefore accepts two different computational inputs with opposite inequality directions: exhaustive coverage below a height and an exceptional local witness.",
+        "generation_panel": "computation_dynamics",
+        "historical_or_program_relation": "Extending zero verification improves a globally transferred upper bound, while searching later ranges for stronger certified gaps improves lower bounds; together they turn computation from undirected RH evidence into two theorem-mediated boundary-measurement programs.",
+        "limits": "The inputs, transfer theorems, and inequality directions must not be conflated. The stated verified height licenses Lambda at most 0.2 but not the next threshold or RH, and any finite close-pair result supplies only its stated lower bound; neither computation alone pins the boundary at zero.",
+        "parent_unit_ids": [
+          "platt_trudgian2021_verification_v2_u05",
+          "csv94_u05_pair_bound_and_barely_so_limit",
+          "csv94_u22_stronger_bound_and_continuation"
+        ],
+        "synthesis_id": "riemann_v2_cross_computation_dynamics_two_sided_lambda_interfaces",
+        "title": "Finite computations constrain Lambda through two logically opposite interfaces"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source calls the improvement mild and notes that the next published threshold lies above the achieved height.",
+          "line_end": 224,
+          "line_start": 203,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The heat-kernel formula is dense, but the definition, equivalence, threshold, and corollary are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the heat-flow family and constant, distinguishes RH's equivalent upper sign from the proved lower sign, and plugs the new verified height into a prior threshold calculation to improve the unconditional upper bound to 0.2.",
+          "source_id": "platt_trudgian2021_verification",
+          "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A verified-height threshold yields an unconditional de Bruijn–Newman bound",
+          "unit_artifact_relpath": "depth/units/platt_trudgian2021_verification_v2_u05.txt",
+          "unit_bytes": 1563,
+          "unit_id": "platt_trudgian2021_verification_v2_u05",
+          "unit_sha256": "57e14b7cc28e050db31fce77a4b7cdefa8f17e33f9f6be87550b7581fda285ff",
+          "unit_type": "threshold transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u05.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A finite verified-height result becomes an unconditional global bound only through a previously proved threshold theorem for the de Bruijn–Newman heat-flow family. The source defines Lambda, distinguishes RH's equivalent upper sign Lambda<=0 from the proved lower sign Lambda>=0, and inserts the achieved height into a published threshold to obtain Lambda<=0.2. The next threshold is not reached, so neither Lambda<0.19 nor RH is licensed.",
+            "nonparaphrase_operation": "It separates a finite computational premise from the analytic transfer theorem and calculates the exact epistemic reach of their composition.",
+            "quality_reason": "Accepted because it preserves the concrete threshold mechanism, sign discipline, and unattained next claim.",
+            "source_support": "The span defines H_t and Lambda, states both logical signs, cites the threshold above 2.51e12 and Corollary 2, and notes that the next tabulated height exceeds the computation. The heat-kernel display is dense but the logic is clear.",
+            "speculation_status": "No speculation; the improvement is explicitly mild and is not promoted to Lambda<=0 or RH."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_82664c80fe0ad0bffd1db6c0e56c3a583b2dec706594a951a52fab9acf5c3b90",
+            "dossier_sha256": "85da34a9f43fedd9446b875f1dc463c4b89a9d2516b6e44469e6a3653b5f44fa"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The infinite-pair hypothesis is conditional and the decimal bounds are numerical outputs whose exact exponents are unreliable in OCR.",
+          "line_end": 259,
+          "line_start": 215,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Scan verification required for lambda_k in (1.13), all signs/strictness, Corollary 1 hypotheses, and the exponents in (1.15)-(1.16).",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the source's main pair-to-Lambda map, handles the sign of g_k, derives the infinite-family consequence, explains why that would make RH only barely true rather than disprove it, and previews the two computed lower bounds.",
+          "source_id": "openalex_w2080252578",
+          "source_normalized_sha256": "fabf574e671488bd7a1a6ef630b6f0e2928bd89a73852342d131d8aebaa88e78",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Each certified pair yields a phase-boundary lower bound; an infinite vanishing-gap family would pin it at zero",
+          "unit_artifact_relpath": "depth/units/csv94_u05_pair_bound_and_barely_so_limit.txt",
+          "unit_bytes": 1773,
+          "unit_id": "csv94_u05_pair_bound_and_barely_so_limit",
+          "unit_sha256": "76e7040ccba8b7d27f41ede087ddbb64395a43443678b9822113d45fb2683176",
+          "unit_type": "theorem-corollary-and-epistemic-interpretation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/csv94_u05_pair_bound_and_barely_so_limit.txt",
+          "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A recurring local instability is accumulated into a global phase conclusion. The limit argument reframes 'barely true' as the boundary being pinned at the undeformed time, not as a disproof of RH.",
+            "nonparaphrase_operation": "The pair formula is the bridge from normalized zero geometry to heat time; an infinite sequence of such scalar bounds bridges local certificates to an asymptotic boundary statement.",
+            "quality_reason": "The source states the sign split for g_k(0), defines a negative pair-specific candidate when g_k(0)>0, bounds Lambda below by it, and conditionally derives Lambda at least zero from an infinite vanishing-gap family. The prose explicitly says the conditional conclusion would not disprove RH and explains Newman's 'barely so' interpretation; the candidate preserves that distinction. No material unsupported claim is present; the candidate explicitly treats infinitude as unproved and numerical previews as uncertified within this span. The phrase 'recurring local instability' is interpretive, but it is anchored to the repeated pair-specific bounds and does not replace their hypotheses.",
+            "source_support": "The span states a sign split for g_k(0), defines a negative pair-specific lambda_k when g_k(0)>0, and asserts lambda_k at most Lambda. Its corollary conditionally derives Lambda at least zero from infinitely many Lehmer pairs with squared gaps tending to zero, then previews two computed lower bounds.",
+            "speculation_status": "The source does not prove infinitely many Lehmer pairs, and the corollary would not itself prove or disprove RH. Numerical preview values are not independent evidence without their certificates. The exact lambda_k formula, signs, strictness, hypotheses, and decimal exponents are OCR-damaged and require the scan. The theorem/corollary architecture and conditional epistemic interpretation are clear. Describing an infinite sequence of local certificates as pinning the phase boundary at the undeformed time if RH also holds is the correct combined interpretation of the corollary and RH inequality. Calling the pair formula a bridge from zero geometry to heat time is a concrete conceptual restatement of the theorem architecture. The lambda_k formula, inequality strictness, signs, corollary indices, and decimal exponents are OCR-damaged and cannot be used exactly; the candidate confines itself to the readable theorem structure."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0c453c69d60c0eea40fdd6f87092ebe7e129477417c483866713003fa96683f5",
+            "dossier_sha256": "1030792b0620fa523251b9a9184c8fbed51f3900f933a98d180a0e81a946c647"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The concluding forecast is source speculation; neither infinitude nor convergence of future bounds is established here.",
+          "line_end": 1231,
+          "line_start": 1203,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Check Theorem 3, exact sign and exponent of the bound, leading-term comparison, indices, and wording of Lehmer's prediction against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies the pair theorem to obtain the paper's final lower bound, compares it with the leading gap-squared approximation to explain robustness, and marks the prediction of infinitely many extremely close/Lehmer pairs as a future computational route rather than a theorem.",
+          "source_id": "openalex_w2080252578",
+          "source_normalized_sha256": "fabf574e671488bd7a1a6ef630b6f0e2928bd89a73852342d131d8aebaa88e78",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The later certified gap yields a stronger lower bound and motivates extending zero computations",
+          "unit_artifact_relpath": "depth/units/csv94_u22_stronger_bound_and_continuation.txt",
+          "unit_bytes": 1169,
+          "unit_id": "csv94_u22_stronger_bound_and_continuation",
+          "unit_sha256": "2301321f87d48468ab6bcb4468744b83bd717d89863ea52846489948b5a81cd9",
+          "unit_type": "theorem-asymptotic-explanation-and-speculation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/csv94_u22_stronger_bound_and_continuation.txt",
+          "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The result closes a discovery-to-certificate loop: search finds a candidate, analytic enclosures qualify it, and a stable scalar map yields a phase-boundary bound. Leading-term analysis then informs the next search round.",
+            "nonparaphrase_operation": "The pair theorem bridges the certified static configuration to Lambda, while the asymptotic expansion bridges the proof result to a continuation heuristic.",
+            "quality_reason": "The span applies the pair theorem to the completed criterion, states a rounded and more precise lower bound, and compares it with the leading minus-gap-squared-over-eight value to discuss insensitivity. It attributes to Lehmer a prediction of infinitely many extremely close pairs, explicitly interprets rather than proves their being Lehmer pairs, and proposes extended computation as a likely source of improved bounds. No material unsupported claim is present; infinitude and future improvement are consistently labeled forecast or probability rather than theorem. The loop and bridge language is somewhat schematic but grounded in the explicit sequence of candidate search, pair certification, theorem application, and continuation proposal.",
+            "source_support": "The span applies Theorem 1 to the completed pair criterion, states the resulting rounded lower bound and a more precise internal value, and compares it with -Delta_K squared/8. It attributes to Lehmer a prediction of infinitely many extremely close pairs and suggests extended zero calculations may improve bounds.",
+            "speculation_status": "Neither infinitely many close pairs nor infinitely many Lehmer pairs is proved, and continued computation is not a route to RH without further analysis. The bound remains one-sided. The theorem's sign, exponent, precise decimal, indices, leading-term value, and wording of the forecast are OCR-sensitive and require scan verification. The discovery-to-certificate loop and use of leading-term analysis to guide another search round accurately synthesize the source's completed calculation and conclusion. The candidate's statement that continued computation alone is not an RH proof correctly protects the one-sided and speculative limits of the span. Theorem 3's sign, exponent, decimal, indices, leading-term value, and precise forecast wording are OCR-sensitive and require scan verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0c453c69d60c0eea40fdd6f87092ebe7e129477417c483866713003fa96683f5",
+            "dossier_sha256": "1030792b0620fa523251b9a9184c8fbed51f3900f933a98d180a0e81a946c647"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Both finite RH verification and the Jensen-polynomial obstruction search avoid approximating every complex root, but their count logic is dual. For zeta, an on-line witness count matching an independent total excludes additional off-line zeros in a bounded region; for a Jensen polynomial, a complete real-root count below the degree establishes that some roots are nonreal and hence supplies an existential obstruction.",
+        "generation_panel": "computation_dynamics",
+        "historical_or_program_relation": "The older contour-count-plus-sign-change architecture and the later Sturm-chain computation share a decision-oriented compression of root data, yet one proves absence by equality while the other proves existence by deficit.",
+        "limits": "A Sturm theorem for exact coefficients is distinct from floating-point Sturm-sign evaluation, so interval coverage and sign stability remain separate obligations. The zeta count is analytic and region-bounded, the Jensen count is algebraic and polynomial-specific, and the analogy transfers certificate logic rather than either theorem's hypotheses.",
+        "parent_unit_ids": [
+          "b25_bombieri2000_u05",
+          "openalex_w2146492295_v2_u02",
+          "openalex_w2146492295_v2_u05"
+        ],
+        "synthesis_id": "riemann_v2_cross_computation_dynamics_root_count_polarity",
+        "title": "Root counting replaces root location with opposite logical polarity in two programs"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Certification is finite in height; large verified ranges and spacing agreement are evidence, not global proof.",
+          "line_end": 311,
+          "line_start": 259,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; the contour count and exact integer-rounding condition are essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Gives a finite-range proof protocol: compute the argument-principle zero count exactly, detect real xi sign changes, and conclude that the counted zeros are simple and on the line when the totals agree.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count all zeros, then match critical-line sign changes",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u05.txt",
+          "unit_bytes": 3514,
+          "unit_id": "b25_bombieri2000_u05",
+          "unit_sha256": "f66bfd19ee66d18e3c0215cba733b6522372896a6fb19f4aa2eccb371fa5ba2d",
+          "unit_type": "computational certification logic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u05.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is certificate composition: one method supplies exhaustive cardinality and another supplies witnesses with the desired property. Their agreement upgrades numerical detection to a finite-range proof.",
+            "nonparaphrase_operation": "The argument principle turns a two-dimensional zero set into an integer contour invariant, and ξ turns critical-line zeros into real sign changes. Exact integer rounding bridges numerical evaluation to a certified count only when the numerical error is controlled.",
+            "quality_reason": "The span explicitly combines an argument-principle total zero count with critical-line sign changes of real continuous xi and states that equality certifies all counted zeros as simple and on the line. The output correctly limits the certificate to a finite height and distinguishes spacing evidence from certification.",
+            "source_support": "The contour integral of ζ′/ζ gives the total number N(T) of zeros in a prescribed rectangle, adjusted for the pole. Since ξ is continuous and real on the real t-axis, sign changes locate odd-order zeros there; if their number equals N(T), every zero in the region is accounted for and is simple and on the critical line.",
+            "speculation_status": "The certificate is bounded by height and cannot imply global RH. A sign-change list without an independent total count can miss even-multiplicity or off-line zeros, while spacing agreement is additional evidence rather than certification. Historical verified heights and counts are source-era figures. The span asserts arbitrary-precision computation and rounding but does not give a modern interval-arithmetic implementation. 'Certificate composition' accurately names the non-paraphrase operation of matching an exhaustive multiplicity count to distinct sign-change witnesses. The source asserts arbitrary-precision computation and integer rounding but supplies no interval-error implementation; the output preserves that limitation and treats historical heights as source-era facts."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The decisive witness is a deficit in the count of real roots; the Newton root approximation is corroboration rather than the sole certificate.",
+          "line_end": 195,
+          "line_start": 137,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Sturm recurrence and sign-variation theorem are clear in prose; polynomial symbols suffer minor OCR substitutions.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts coefficient-error certification of computed roots with a Sturm-chain decision procedure that counts real zeros on a containing interval, then uses a continued complex root and local extremum only as an independent cross-check.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count all real roots instead of approximating every polynomial zero",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u02.txt",
+          "unit_bytes": 3921,
+          "unit_id": "openalex_w2146492295_v2_u02",
+          "unit_sha256": "b978660dfbd82970346ddc8a1c90a477ecccf2ff270c48da807c73a5ff830a3f",
+          "unit_type": "computational certification design",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u02.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: for an exact polynomial with the stated simple-root condition, a Sturm chain turns endpoint sign-variation differences into the number of real roots on [a,b]. The reported algorithm applies this to successive Jensen polynomials and uses Newton continuation only to approximate a complex root as a check. Conceptual interpretation: the computation is reframed from locating every root to deciding whether all roots are real. A root-count deficit supports the desired conclusion only when the interval contains every real root and the numerically evaluated Sturm signs are validated; floating-point sign computation is a separate obligation from the exact Sturm theorem. Uncertainty: interval and precision details continue in later units, and minor OCR substitutions affect polynomial notation.",
+            "nonparaphrase_operation": "Separates an exact algebraic decision procedure from its floating-point realization and exposes interval completeness and sign correctness as independent proof obligations.",
+            "quality_reason": "Accepted after revising the earlier certificate language: the decision-problem insight is source-specific, while Newton is kept as corroboration and chaotic-sign diagnostics are not promoted to rigorous error control.",
+            "source_support": "The exact Sturm recurrence and sign-variation theorem, the successive Jensen-polynomial search, and the Newton cross-check are explicit in lines 137–195.",
+            "speculation_status": "No speculation is introduced; the interpretation is conditional on the theorem's simple-root hypothesis, a containing interval, and correct sign evaluations."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b9c2239b8a83eb428136b8de747984dee6d69dd6522a91074cc84a9fb90b9479",
+            "dossier_sha256": "286deaecf58d93a993c71f7f002a0a3fe24ccc474f84040570cb0bd4e4fb23c9"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "At lambda=-5 the interval [-5000,0] is reported sufficient; explicitly finding the conjugate roots via a local extremum and Newton iteration is an extra check.",
+          "line_end": 350,
+          "line_start": 306,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The coefficient recurrences are OCR-fragile, while the interval strategy, sign diagnostic, and certification logic are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes the Sturm sequence coefficientwise, chooses an interval known to contain all negative real roots and enlarges it when necessary, detects inadequate precision through chaotic deviations in successive sign patterns, and restores the expected degree or degree-minus-two count by increasing precision.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Sturm sign stability and a global root interval complete the certificate",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u05.txt",
+          "unit_bytes": 2364,
+          "unit_id": "openalex_w2146492295_v2_u05",
+          "unit_sha256": "3b931136c54c0b84f30cc3a4ff2e61d27829fa5042bc8432065082544cde15dc",
+          "unit_type": "precision and completeness checks",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u05.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the paper generates the Sturm sequence coefficientwise, counts on [a,0] because real roots are known to be negative, enlarges the interval when an apparent deficit is not accompanied by a located complex root, and reports that [-5000,0] sufficed at λ=-5. Abrupt anomalous count drops disappeared when precision was raised, restoring the degree or degree-minus-two pattern; an explicitly computed complex root remained an extra check. Conceptual interpretation: interval coverage and numerical sign stability diagnose two distinct failure modes—a real root outside the window and incorrect floating-point signs. Together they form the paper's reported checking strategy, but restored expected counts are not an independent exact-arithmetic certificate.",
+            "nonparaphrase_operation": "Separates geometric completeness from arithmetic reliability and identifies the expected count pattern as a diagnostic rather than proof by itself.",
+            "quality_reason": "Accepted after downgrading 'complete the certificate' to 'reported checking strategy'; exact recurrence reuse remains unsafe because of OCR damage and absent forward-error bounds.",
+            "source_support": "Lines 306–350 explicitly describe the coefficient recurrence, interval enlargement, λ=-5 interval, precision-restoration behavior, and Newton/local-extremum cross-check.",
+            "speculation_status": "No speculative mathematical claim is added; the adequacy of the reported finite-precision checks is described only as the source's computational practice."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b9c2239b8a83eb428136b8de747984dee6d69dd6522a91074cc84a9fb90b9479",
+            "dossier_sha256": "286deaecf58d93a993c71f7f002a0a3fe24ccc474f84040570cb0bd4e4fb23c9"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Landau's inexpensive polynomial score can rank candidates differently from the full finite zero-free-region constant, just as an outer-first Gram-block search policy tuned to common short blocks loses efficiency on rare long blocks. In both cases, the cheap stage should generate or order candidates, while task-specific evaluation or a conditional branch determines the final choice.",
+        "generation_panel": "computation_dynamics",
+        "historical_or_program_relation": "The zero-free-region search retains diverse near-optimal surrogate polynomials and reruns the expensive R0 calculation; the zero-verification search uses empirical block type and length to identify where a once-effective query order should branch. Both are corrections to optimizing a proxy as though its ranking were invariant.",
+        "limits": "This is a shared computational-design relation, not a claim that polynomial optimization and zero search have the same mathematics. Neither source proves a global optimizer: the polynomial pool is finite and expanded heuristically, while the Gram-block distributions and strategy crossover are empirical and range-dependent.",
+        "parent_unit_ids": [
+          "openalex_w1486331565_v2_u08",
+          "openalex_w2116781013_v2_u03"
+        ],
+        "synthesis_id": "riemann_v2_cross_computation_dynamics_surrogate_policy_reranking",
+        "title": "Cheap computational surrogates must be reranked against the downstream objective"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is an empirical optimization result, not a theorem that degree 16 is globally optimal.",
+          "line_end": 834,
+          "line_start": 747,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Large coefficient tables are formula-dependent; the comparison is stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Degree-40 searches improve the asymptotic Landau bound, but Kadiri evaluation favors smaller degree; retesting many near-optimal surrogate candidates and locally refining the true objective produces the degree-16 polynomial used for the best R0.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Optimizing Landau's constant and optimizing the finite zero-free constant select different polynomials",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u08.txt",
+          "unit_bytes": 6893,
+          "unit_id": "openalex_w1486331565_v2_u08",
+          "unit_sha256": "204dfb4ef3901b667fc3453baa2e6dcc08938fb9caf99287395b8180048bf7a5",
+          "unit_type": "surrogate-objective diagnosis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u08.txt",
+          "source_title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Landau's inexpensive objective and Kadiri's full R0 calculation order the same admissible polynomials differently, so surrogate optimization is followed by task-specific reranking rather than assumed to transfer. Among the record-V_n polynomials in the table, degree 12 gives the best Kadiri result; a separate, wider pass evaluates several hundred thousand near-best Landau candidates and finds a better degree-16 candidate, after which further annealing from that starting point yields F16. F16's Landau score is worse than the degree-16 record even though it supports the paper's stronger finite R0 result. Keeping diverse near-surrogate-optima therefore gains downstream options, but neither selection stage proves a global optimum.",
+            "nonparaphrase_operation": "Separates the degree-12 winner among record-surrogate polynomials from the degree-16 winner in the expanded candidate pool, using their contrary rankings to diagnose a bounded surrogate mismatch.",
+            "quality_reason": "Preserves both selection stages, removes the unsupported final-annealing objective, and ties the abstraction directly to the two numerical evaluations and their observed reversal.",
+            "source_support": "The span reports V_n records through degree 40, tabulates the contrary Kadiri ordering with the best listed R0 at degree 12, describes reranking many other strong Landau candidates to find degree 16 with R0<5.57353, and reports further annealing from it before using F16 in Theorem 1. The objective of that final annealing is not specified in this span.",
+            "speculation_status": "Surrogate mismatch and the value of candidate diversity are supported inferences from explicit contrary rankings. The final annealing is not labeled optimization of the true objective, and no reported polynomial, degree, or value is claimed globally optimal; large tables and exact evaluations remain provenance-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_d5e59f93dd7cff681f557fddde51b920d2e5d9067069faf97ec91635f9c99d1e",
+            "dossier_sha256": "1747c1e9e54165a44fecbbf41abec31a2c5b57b468b8b32a1bc31955ad6041d1"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes comparison with a targeted exception-search method and independent-program counts over a shared range.",
+          "line_end": 397,
+          "line_start": 275,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Tables are partially degraded; qualitative comparisons and the cited counts should be scan-checked before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Block-length and type counts validate the strategy for moderate lengths, but show that for longer blocks the missing pair increasingly moves inward; only one length-seven block placed it in an outer interval, exposing a concrete distribution shift in the heuristic.",
+          "source_id": "openalex_w2116781013",
+          "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+          "source_page_markers_inside_unit": [
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gram-block statistics reveal where the outer-first search heuristic ceases to be efficient",
+          "unit_artifact_relpath": "depth/units/openalex_w2116781013_v2_u03.txt",
+          "unit_bytes": 7698,
+          "unit_id": "openalex_w2116781013_v2_u03",
+          "unit_sha256": "3e225bd55f2633185890de56e2230d022e655b9874987e93d9f7024cd564d4e7",
+          "unit_type": "empirical-strategy-evaluation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_v2_u03.txt",
+          "source_title": "On the zeros of the Riemann zeta function in the critical strip. II",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Empirical conditional structure should determine search order: a heuristic optimized on common short blocks undergoes a distribution shift on rare long blocks. The block-type table identifies where an adaptive strategy should branch.",
+            "nonparaphrase_operation": "Gram-block length and type compress a continuous zero-search problem into a finite positional pattern. Independent-program overlap and targeted exception searches provide separate empirical views of that pattern distribution.",
+            "quality_reason": "The artifact gives the targeted exception-search comparison, cross-program block-count comparison, average block length, and the block-length/type tables. It expressly says the strategy succeeds for lengths two through five, that at length at least six the missing zeros tend toward next-to-outer intervals, and that only one of 93 length-seven blocks places them in an outer interval. Falsify a uniform heuristic is slightly strong wording, but the claim is limited to efficiency and the exact table comparison supports it.",
+            "source_support": "A targeted method by Karkoschka and Werner found all nine known Rosser-rule exceptions in one range and six of nine in another. The authors compare two independent programs over a shared ten-million-index interval: their length-one through length-three block counts differ only slightly and counts for lengths at least four agree. Up to index 200 million the average Gram-block length is reported as 1.1951 and six blocks of length eight occur. Table 6 gives block types in the final range and shows the Lune-Riele-Winter strategy succeeds for lengths two through five, whereas for length at least six missing zeros tend toward the next-to-outer intervals; only one of 93 length-seven blocks has them in an outer interval.",
+            "speculation_status": "The tables are observational and partly affected by shifted Gram evaluations; rare type counts may be missed or reclassified. The source supports changing the search heuristic, not a new zero theorem or a guaranteed optimal policy. Qualitative comparisons and cited counts are readable, but OCR-degraded tables and labels require scan verification before exact quantitative reuse. Interpreting the long-block behavior as a distribution shift that should alter search order is a reasonable empirical strategy conclusion. The output correctly refuses to turn observational tables into a zero theorem or guaranteed optimal policy. Shifted Gram evaluations and degraded table labels limit exact aggregation and quantitative reuse."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_d80dc2eb44a53993555a68b71112b597aba228b48738480acb1f6aca5ce97454",
+            "dossier_sha256": "4c2139a79487a3e3af07477c656c19c0da4e333abf74c90896222dc1c2379d2f"
+          }
+        }
+      ]
+    }
+  ]
+}

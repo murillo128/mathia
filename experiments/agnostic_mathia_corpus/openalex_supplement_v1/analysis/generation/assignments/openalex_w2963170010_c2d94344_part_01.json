@@ -1,0 +1,769 @@
+{
+  "expected_analysis_ids": {
+    "agnostic_oa_diffusion_entropy_action_equivalence": "agnostic_oa_generation_ff935557947e4eb4dbddac0e2642528a4d2d6e3d5d569885a7699bb3efcbddb4",
+    "agnostic_oa_entropic_interpolation_curvature": "agnostic_oa_generation_b5cf0d777a7e09a2999006bc56c85b56ed88510a05abdd4536bf782166a6a303",
+    "agnostic_oa_entropy_chain_rule_bridge_preservation": "agnostic_oa_generation_897b01da5511fc69373353bad03201e0f062db26183b63841876f4c4f8a3af4b",
+    "agnostic_oa_gamma_limit_entropy_selection": "agnostic_oa_generation_79eb5f07796d9cfc515b2a0eec94da13ebe256e76d83b202f5ec7b68b54ab83c",
+    "agnostic_oa_generator_transform_carre_du_champ": "agnostic_oa_generation_7d8b52c98daaad47d3f3bbb2f362342ac65bda9746009330d0221f07ad53c4e4",
+    "agnostic_oa_graph_jump_action_analogue": "agnostic_oa_generation_de674971de76790c5441124ce88b4bbf5d02800cda0ea7bf76c02e9f0018c9de",
+    "agnostic_oa_marginal_constraints_convex_duality": "agnostic_oa_generation_06360e61cfd790666cb867399963fa9787d0c12a7fdb94111a94909483760b3d",
+    "agnostic_oa_markov_endpoint_factorization": "agnostic_oa_generation_d1b62d4bd5e1f0e5c6c01c9b4af27e241406fc5063456df05c0e1622accbf241",
+    "agnostic_oa_markov_recombination_entropy_projection": "agnostic_oa_generation_fa0672ef92dffd7414c2db4f1f9cd8d0055c7dc0f88b6ca3b1b952dec4f34be9",
+    "agnostic_oa_path_marginal_information_hierarchy": "agnostic_oa_generation_04c0fd5163b55956b51bff46fbbd3967377edc1c55fb9cc97a8d4f2318fc5869",
+    "agnostic_oa_product_factorization_obstructions": "agnostic_oa_generation_087f782bf242e57e7e34d9caf8891330ef809705859b7f033c5a406eaa337a47",
+    "agnostic_oa_rare_event_entropy_projection": "agnostic_oa_generation_f97e354e7de7eb9a7ec0a3396ffbc83d0dd657268e199c4bdf2ec5a039f7fc30",
+    "agnostic_oa_reciprocal_conditional_structure": "agnostic_oa_generation_976dc6c403167f3c14e7bac4cb707b3e7d66d6939e2736b9e8424eaebdc772b4",
+    "agnostic_oa_reference_tilt_compact_existence": "agnostic_oa_generation_caa8fa042ba95d76d1d9ef57b45a9279a82d3543e9e8751bfefe61fb46d0d229",
+    "agnostic_oa_slowing_large_deviation_dual_limit": "agnostic_oa_generation_e904d6395ff3d94e1fb759a2a1e9be78ef41c40b4a4811f6ff01be9bab7c4dce",
+    "agnostic_oa_two_sided_transform_factorization": "agnostic_oa_generation_af4ad41521d5ecf112c3217e85d74baaa0af02245bf279d995585746df2b912a"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "interpretation",
+    "nonparaphrase_operation",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Source-grounded interpretations for nearby units from one source only; keep outputs separate and distinguish source fact, inference, representation dependence, and uncertainty.",
+  "model_visible_packet_sha256": "908492ece0f634d980000a2fcff402b9dff66623dcc6613aa366616f25c8f446",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/generation/batches/openalex_w2963170010_c2d94344_part_01.jsonl",
+  "source_id": "openalex_w2963170010",
+  "stage": "generation",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_path_marginal_information_hierarchy.txt",
+      "artifact_bytes": 2923,
+      "artifact_relpath": "depth/units/agnostic_oa_path_marginal_information_hierarchy.txt",
+      "artifact_sha256": "7acb92c912c1ec35b1fabbcb6164525f34f4d35cf06018ae8f7ac13e9667b9ea",
+      "content_sha256": "7c5b2a19393436da77cb8912b3273f02032ffa03c312039fb5aa1079e6794c8b",
+      "context_note": "This is foundational notation rather than a new theorem, but it is a reusable semantic account of projection, information loss, and disintegration.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_path_marginal_information_hierarchy",
+            "agnostic_oa_two_sided_transform_factorization",
+            "agnostic_oa_generator_transform_carre_du_champ",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_entropic_interpolation_curvature",
+            "agnostic_oa_reciprocal_conditional_structure"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The same constrained object is represented as a path law, endpoint coupling plus bridges, two-sided Markov transform, generator/PDE system, continuous or jump action, and curvature-sensitive interpolation. These are representation-dependent correspondences and were not compared with #44 records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 359,
+      "line_start": 321,
+      "representation_dependency": "The decomposition requires Polish path and state spaces so regular conditional bridge measures exist; time marginals alone cannot recover cross-time correlations.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The source distinguishes a full path law from its one-time flow and endpoint joint law, then reconstructs it as a mixture of conditional bridges. This makes explicit which correlations a projection forgets and which conditional object must be retained for reconstruction.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Path measures, time marginals, endpoint laws, and bridges retain different information",
+      "unit_id": "agnostic_oa_path_marginal_information_hierarchy",
+      "unit_type": "representation-hierarchy"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_entropy_chain_rule_bridge_preservation.txt",
+      "artifact_bytes": 3337,
+      "artifact_relpath": "depth/units/agnostic_oa_entropy_chain_rule_bridge_preservation.txt",
+      "artifact_sha256": "55d6d461b0b9c15f2951415fc36724d4e8722e59b08057644e1b765b85bc0aba",
+      "content_sha256": "9a2c947cda8d6392eb0dd7023a09d8f6959542fed1057f3d05d68edf541c126f",
+      "context_note": "Strict convexity supplies at-most-one solutions. The proof is explicit and should be kept distinct from the introductory summary of the same result.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_rare_event_entropy_projection",
+            "agnostic_oa_stochastic_control_transport_bridge",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint constraints appear equivalently through bridge disintegration, additive dual potentials, product-density obstructions, rate functions, and controlled dynamics. The finding records convergent descriptions, not a novelty or completeness claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 439,
+      "line_start": 390,
+      "representation_dependency": "The reduction depends on conditioning by the endpoint map, the additive entropy formula on Polish spaces, finite entropy for the equality case, and fixed endpoint marginals.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Disintegrating relative entropy into endpoint entropy plus expected conditional bridge entropy proves equality of the static and dynamic infima and shows that the optimizer changes only the endpoint coupling while keeping every reference bridge unchanged.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "The entropy chain rule reduces path optimization to endpoints and preserves reference bridges",
+      "unit_id": "agnostic_oa_entropy_chain_rule_bridge_preservation",
+      "unit_type": "decomposition-and-reduction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_reference_tilt_compact_existence.txt",
+      "artifact_bytes": 3895,
+      "artifact_relpath": "depth/units/agnostic_oa_reference_tilt_compact_existence.txt",
+      "artifact_sha256": "7ff77a4fb4c2651959a98ca5026f2e4fbb76dd87260fc5358bdb78344eea7c9c",
+      "content_sha256": "7fabc8c49622273fd5b174b2d96c4a391b4c4b986c9f6d73c747f656747d7c7e",
+      "context_note": "The source also gives practical sufficient marginal and integrability conditions. Several weights and integrals are typographically damaged, so exact hypotheses need PDF verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 498,
+      "line_start": 440,
+      "representation_dependency": "The argument uses tightness of fixed-marginal couplings on Polish spaces, a coercive integrable weight, lower semicontinuity of entropy, and invariance of the objective up to a constraint-dependent constant.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "An unbounded reference is exponentially tilted to a probability reference; on the fixed-marginal constraint set the correction is constant, so lower semicontinuity and compactness reduce existence to the presence of one finite-entropy feasible point.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Reference tilting and compactness give an existence criterion for unbounded entropy projections",
+      "unit_id": "agnostic_oa_reference_tilt_compact_existence",
+      "unit_type": "existence-by-renormalization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_marginal_constraints_convex_duality.txt",
+      "artifact_bytes": 2384,
+      "artifact_relpath": "depth/units/agnostic_oa_marginal_constraints_convex_duality.txt",
+      "artifact_sha256": "e9cf3d3ecd3a7aa80178f64e800cdf89b7f0589259198baa59bd9c8882dff340",
+      "content_sha256": "2427efda6a66c91a2b12cfd873b9a411c5b3956534fff419ab9e3a29d57e50db",
+      "context_note": "Dual equality is cited in the stated function spaces, while dual attainment is explicitly not guaranteed in general; the product-density conclusion is conditional on attainment and positivity.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_rare_event_entropy_projection",
+            "agnostic_oa_stochastic_control_transport_bridge",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint constraints appear equivalently through bridge disintegration, additive dual potentials, product-density obstructions, rate functions, and controlled dynamics. The finding records convergent descriptions, not a novelty or completeness claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 532,
+      "line_start": 499,
+      "representation_dependency": "The dual variables live in weighted continuous-function spaces, and the tensor-sum form follows specifically from two coordinate marginal constraints and the variational representation of entropy.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The fixed marginal constraints are recognized exactly by test functions that split over the two coordinates, yielding a convex dual problem whose attained equality exposes an exponential density for the optimizer.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Additive endpoint potentials dualize fixed-marginal entropy minimization",
+      "unit_id": "agnostic_oa_marginal_constraints_convex_duality",
+      "unit_type": "convex-duality"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_product_factorization_obstructions.txt",
+      "artifact_bytes": 9829,
+      "artifact_relpath": "depth/units/agnostic_oa_product_factorization_obstructions.txt",
+      "artifact_sha256": "05a054d9e26bbb04234063a9363907fe75ce81157bd1ac16ff750088792ed0e0",
+      "content_sha256": "628e6d455ee466e6af25244e9458f71c8cf339aabee86feddceca4d8fea9da60",
+      "context_note": "The resulting theorem gives sufficient, not necessary, conditions for a measurable product density and a coupled marginal system. It explicitly warns that outside the internal regime the density can be structurally more complex.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_rare_event_entropy_projection",
+            "agnostic_oa_stochastic_control_transport_bridge",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint constraints appear equivalently through bridge disintegration, additive dual potentials, product-density obstructions, rate functions, and controlled dynamics. The finding records convergent descriptions, not a novelty or completeness claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 686,
+      "line_start": 533,
+      "representation_dependency": "Factorization depends on support relative to the reference, intrinsic-core placement of the constraint, and comparison between the endpoint reference and a product of its marginals; it is not a consequence of formal algebra alone.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The source identifies two independent failures of a formal exponential product representation: the optimizer may live on a nonrectangular support, and a jointly measurable tensor sum need not have separately measurable factors. Intrinsic-core perturbation and absolute-continuity hypotheses repair the respective failures.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Support geometry and measurability obstruct naive product factorization",
+      "unit_id": "agnostic_oa_product_factorization_obstructions",
+      "unit_type": "obstruction-and-repair"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_markov_recombination_entropy_projection.txt",
+      "artifact_bytes": 5502,
+      "artifact_relpath": "depth/units/agnostic_oa_markov_recombination_entropy_projection.txt",
+      "artifact_sha256": "a180103c8f532e319d59a3bb6bbbd20f387abdeb14031f412c04d7d6b48ef1ff",
+      "content_sha256": "f647dc8f4a9bae0121078d5069ce6c06109d796c6f050b454b2374d052bfb3e6",
+      "context_note": "The proof uses entropy disintegration and Jensen equality, providing a concrete local repair rather than relying on intuition that the optimum should inherit Markovity.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 773,
+      "line_start": 696,
+      "representation_dependency": "The reference itself must be Markov, conditional measures must be well-defined through a sigma-finite time marginal, and the competitor class fixes both conditional halves and the cut-time marginal.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "At any cut time, fixing the present distribution and the conditional past and future laws, the entropy-minimizing recombination makes past and future conditionally independent. Replacing a non-Markov candidate by this recombination preserves all time marginals while strictly lowering entropy.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Entropy-minimizing recombination forces the Markov property",
+      "unit_id": "agnostic_oa_markov_recombination_entropy_projection",
+      "unit_type": "conditional-independence-projection"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_markov_endpoint_factorization.txt",
+      "artifact_bytes": 3499,
+      "artifact_relpath": "depth/units/agnostic_oa_markov_endpoint_factorization.txt",
+      "artifact_sha256": "3492ae7653228659eec86e8f226d432b5dfddc9c34a7f0050b00f5e9646d5f1d",
+      "content_sha256": "c9f002464ec50f8b2bea73f4d6ad988ae8b6abab0b82bfec10be251f6f7ed646",
+      "context_note": "The theorem records explicit regenerative and absolute-continuity hypotheses; it is a conditional structural result, not a universal factorization statement.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 840,
+      "line_start": 781,
+      "representation_dependency": "The upgrade uses a Markov reference, a bridge-density representation, a support/regeneration condition, common endpoint reference marginals, and the stated entropy-integrability assumptions.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "When both the reference and entropy optimizer are Markov and the endpoint density is sufficiently supported, a density depending jointly on the two endpoints factorizes into a nonnegative initial factor times a final factor, even without an internal constraint.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Markovity upgrades an endpoint density into a two-sided product transform",
+      "unit_id": "agnostic_oa_markov_endpoint_factorization",
+      "unit_type": "structural-factorization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_two_sided_transform_factorization.txt",
+      "artifact_bytes": 6184,
+      "artifact_relpath": "depth/units/agnostic_oa_two_sided_transform_factorization.txt",
+      "artifact_sha256": "b7c58864ab8eb6a94413898a05a3519f4b23b5e1520b571374aab8e8da65a90e",
+      "content_sha256": "d6266b8976dfe057ff1799e481bf6e9c5a232921a38b2095ff0f5c670823cb89",
+      "context_note": "The source distinguishes sufficient finite-entropy conditions from the broader transform definition and notes that nonrectangular-support optimizers need not belong to this class.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_path_marginal_information_hierarchy",
+            "agnostic_oa_two_sided_transform_factorization",
+            "agnostic_oa_generator_transform_carre_du_champ",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_entropic_interpolation_curvature",
+            "agnostic_oa_reciprocal_conditional_structure"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The same constrained object is represented as a path law, endpoint coupling plus bridges, two-sided Markov transform, generator/PDE system, continuous or jump action, and curvature-sensitive interpolation. These are representation-dependent correspondences and were not compared with #44 records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 930,
+      "line_start": 844,
+      "representation_dependency": "The factorization of the intermediate density uses the Markov property of the reference and positive conditional integration; the forward and backward factors depend on opposite endpoint filtrations.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Weighting a reversible Markov law by one initial and one final factor yields a time-symmetric transform whose intermediate density splits into a backward conditional expectation and a forward conditional expectation; conditional independence proves the transformed law remains Markov.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "A two-sided endpoint transform factorizes every intermediate marginal and preserves Markovity",
+      "unit_id": "agnostic_oa_two_sided_transform_factorization",
+      "unit_type": "time-symmetric-transform"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_generator_transform_carre_du_champ.txt",
+      "artifact_bytes": 9089,
+      "artifact_relpath": "depth/units/agnostic_oa_generator_transform_carre_du_champ.txt",
+      "artifact_sha256": "207be354a0fe5d7d7248cadb2dbb2cd6908f641d12d80641aef240e203871d04",
+      "content_sha256": "fa457f4f3063cdc9697baf85313c507b501f2c99316ecaa2354a63bed0568703",
+      "context_note": "The source labels the general generator formula informal and points to a separate rigorous treatment; the derivation is an idea-of-proof, while standard diffusion and graph cases are said to follow rigorously under regularity.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_path_marginal_information_hierarchy",
+            "agnostic_oa_two_sided_transform_factorization",
+            "agnostic_oa_generator_transform_carre_du_champ",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_entropic_interpolation_curvature",
+            "agnostic_oa_reciprocal_conditional_structure"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The same constrained object is represented as a path law, endpoint coupling plus bridges, two-sided Markov transform, generator/PDE system, continuous or jump action, and curvature-sensitive interpolation. These are representation-dependent correspondences and were not compared with #44 records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 1070,
+      "line_start": 931,
+      "representation_dependency": "The formulas require a Markov generator, functions in its and the carré-du-champ domains, positive intermediate densities, and sufficient regularity; exact arrows and multiline equations are damaged in extraction.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The forward and backward stochastic generators of a two-sided transform are obtained by adding carré-du-champ corrections determined by opposite conditional factors; logarithms of those factors convert linear heat equations into nonlinear Hamilton-Jacobi-type equations.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Carré-du-champ corrections translate endpoint weights into forward and backward dynamics",
+      "unit_id": "agnostic_oa_generator_transform_carre_du_champ",
+      "unit_type": "operator-representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_diffusion_entropy_action_equivalence.txt",
+      "artifact_bytes": 6109,
+      "artifact_relpath": "depth/units/agnostic_oa_diffusion_entropy_action_equivalence.txt",
+      "artifact_sha256": "b71f91a9ebb7a5f2c7eaca05eab1af2adb40210b92eaf79cc248b41acfe1fafd",
+      "content_sha256": "70fe7d7d5961912745848172c83b6f8a671923c1e8823151792066db00736b7f",
+      "context_note": "The proposition is stated for Brownian reference under finite moment and entropy assumptions. Displayed PDE and integral notation needs exact-source verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_path_marginal_information_hierarchy",
+            "agnostic_oa_two_sided_transform_factorization",
+            "agnostic_oa_generator_transform_carre_du_champ",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_entropic_interpolation_curvature",
+            "agnostic_oa_reciprocal_conditional_structure"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The same constrained object is represented as a path law, endpoint coupling plus bridges, two-sided Markov transform, generator/PDE system, continuous or jump action, and curvature-sensitive interpolation. These are representation-dependent correspondences and were not compared with #44 records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 1221,
+      "line_start": 1128,
+      "representation_dependency": "This equivalence depends on diffusion noise, quadratic drift cost, the weak Fokker-Planck constraint, Girsanov theory, and a superposition theorem; it is not a representation-free identity.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Girsanov's entropy identity and a superposition result convert path-space entropy minimization into a constrained minimal-action problem for marginal flows and drift fields; uniqueness of the path optimizer and an orthogonal-projection argument determine the optimal drift.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Finite entropy becomes kinetic drift action for diffusions",
+      "unit_id": "agnostic_oa_diffusion_entropy_action_equivalence",
+      "unit_type": "variational-equivalence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_graph_jump_action_analogue.txt",
+      "artifact_bytes": 8157,
+      "artifact_relpath": "depth/units/agnostic_oa_graph_jump_action_analogue.txt",
+      "artifact_sha256": "e9da20396d31b87bf782f53605d57a15630132c59880e2359bfea51f6e0da6dc",
+      "content_sha256": "ff09ccffd492f89f2280a2c45c9151702305dfbf161eaf77837db9a862c1a0cb",
+      "context_note": "The graph proposition follows the diffusion proof scheme and makes the representation change explicit; the statement contains a likely source typo in the displayed state-space label and formula extraction damage.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_path_marginal_information_hierarchy",
+            "agnostic_oa_two_sided_transform_factorization",
+            "agnostic_oa_generator_transform_carre_du_champ",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_entropic_interpolation_curvature",
+            "agnostic_oa_reciprocal_conditional_structure"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The same constrained object is represented as a path law, endpoint coupling plus bridges, two-sided Markov transform, generator/PDE system, continuous or jump action, and curvature-sensitive interpolation. These are representation-dependent correspondences and were not compared with #44 records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 1363,
+      "line_start": 1222,
+      "representation_dependency": "The analogue uses a countable locally finite connected graph, bounded total jump rates, a reversible measure, edge currents, and the convex pair associated with exponential rate changes.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Replacing the Laplacian by a reversible graph jump generator turns gradient drifts into multiplicative edge-rate tilts and quadratic action into the convex conjugate of exponential increments, while preserving the same marginal-flow optimization pattern.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Convex jump action is the graph analogue of diffusion kinetic action",
+      "unit_id": "agnostic_oa_graph_jump_action_analogue",
+      "unit_type": "discrete-continuous-transfer"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_slowing_large_deviation_dual_limit.txt",
+      "artifact_bytes": 8226,
+      "artifact_relpath": "depth/units/agnostic_oa_slowing_large_deviation_dual_limit.txt",
+      "artifact_sha256": "c185ef9caf2730c3cd1f4e08b04517e5c40a0345f79b5cd1afdd4afb85bc853c",
+      "content_sha256": "bcc400ca5c5d7a1a6bd26c3e4fce4a4607cb1b700f7309cafdb894fa0bb2a04e",
+      "context_note": "The source repeatedly labels this presentation heuristic or informal and refers elsewhere for rigorous Gamma-convergence. The mechanism is retained as an asymptotic derivation, not asserted here as a proved theorem under unspecified hypotheses.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_rare_event_entropy_projection",
+            "agnostic_oa_stochastic_control_transport_bridge",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint constraints appear equivalently through bridge disintegration, additive dual potentials, product-density obstructions, rate functions, and controlled dynamics. The finding records convergent descriptions, not a novelty or completeness claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 1493,
+      "line_start": 1364,
+      "representation_dependency": "The limit requires a specified speed and path-space rate function, suitable Laplace-Varadhan hypotheses, contraction to an endpoint cost, and compactness/equicoercivity beyond pointwise dual convergence.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A large-deviation principle for a slowed Markov reference and the Laplace-Varadhan lemma transform log-integral dual objectives into a supremal path constraint; contraction over endpoint-fixed paths yields the transport cost and Kantorovich dual constraint.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Slowing a reference process converts entropic duality into transport duality",
+      "unit_id": "agnostic_oa_slowing_large_deviation_dual_limit",
+      "unit_type": "asymptotic-translation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_gamma_limit_entropy_selection.txt",
+      "artifact_bytes": 5462,
+      "artifact_relpath": "depth/units/agnostic_oa_gamma_limit_entropy_selection.txt",
+      "artifact_sha256": "3bdb62d5745ba5d5f4eeb9ccdc134b1c89220bf383f5bad8e199fc76bec59724",
+      "content_sha256": "b55b46fdda1f72ba5a3b52599239d7d4ccd65b7413eae54f67bc7e4e20f40d46",
+      "context_note": "The general Gamma-convergence facts are standard context, while the graph theorem is cited as a rigorous result. Selection is solver/reference conditional, not intrinsic uniqueness of the unregularized transport problem.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_path_marginal_information_hierarchy",
+            "agnostic_oa_two_sided_transform_factorization",
+            "agnostic_oa_generator_transform_carre_du_champ",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_entropic_interpolation_curvature",
+            "agnostic_oa_reciprocal_conditional_structure"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The same constrained object is represented as a path law, endpoint coupling plus bridges, two-sided Markov transform, generator/PDE system, continuous or jump action, and curvature-sensitive interpolation. These are representation-dependent correspondences and were not compared with #44 records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 1582,
+      "line_start": 1494,
+      "representation_dependency": "The transfer uses narrow topology, equicoercivity, a slowed graph walk with its large-deviation rate, and a residual reference measure supported on geodesic paths.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Equicoercive Gamma convergence carries optimal values and minimizers to the limiting transport problem; in the graph case, the entropic sequence further selects a unique path law among infinitely many geodesic-path minimizers through a secondary entropy minimization.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Gamma convergence transfers minima and entropic regularization selects a unique transport limit",
+      "unit_id": "agnostic_oa_gamma_limit_entropy_selection",
+      "unit_type": "limit-and-selection"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_rare_event_entropy_projection.txt",
+      "artifact_bytes": 10922,
+      "artifact_relpath": "depth/units/agnostic_oa_rare_event_entropy_projection.txt",
+      "artifact_sha256": "461c429de43f361b67ba422f3d98ca5f9d8b6e2698b0915f0abb109e6b7988f3",
+      "content_sha256": "93c3a5709f344f0d978109ecc0a30865b7c0a6b96f1d72da485bb0ce72595fe8",
+      "context_note": "The derivation is explicitly informal and cites rigorous large-deviation results. The finite three-point calculation is only an illustration of the rate function and is not treated as model-visible arithmetic.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_rare_event_entropy_projection",
+            "agnostic_oa_stochastic_control_transport_bridge",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint constraints appear equivalently through bridge disintegration, additive dual potentials, product-density obstructions, rate functions, and controlled dynamics. The finding records convergent descriptions, not a novelty or completeness claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 1752,
+      "line_start": 1583,
+      "representation_dependency": "The interpretation depends on independent particles, an empirical-measure large-deviation principle, compact entropy sublevels, strict convexity, and the order of the large-population and shrinking-neighborhood limits.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Large deviations of empirical path measures turn conditioning on an atypical final marginal into minimization of relative entropy under endpoint constraints; shrinking the conditioning neighborhood then concentrates on the unique entropy projection.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Rare-event conditioning selects the entropy projection",
+      "unit_id": "agnostic_oa_rare_event_entropy_projection",
+      "unit_type": "probabilistic-interpretation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_entropic_interpolation_curvature.txt",
+      "artifact_bytes": 4130,
+      "artifact_relpath": "depth/units/agnostic_oa_entropic_interpolation_curvature.txt",
+      "artifact_sha256": "8ab3e8ae473ea7ae1521db5c329d25a74041c035abd389e8f59a5497716297d0",
+      "content_sha256": "73b33a16e738e5a475ff35ca7b2985871301994a47c13c9cb91bcc53af87184e",
+      "context_note": "The Riemannian transport formula is described as arising from Otto's heuristic calculus; the entropic formulas are attributed to a cited work and one graph-curvature implication remains an expectation, not an established conclusion here.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_path_marginal_information_hierarchy",
+            "agnostic_oa_two_sided_transform_factorization",
+            "agnostic_oa_generator_transform_carre_du_champ",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_entropic_interpolation_curvature",
+            "agnostic_oa_reciprocal_conditional_structure"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The same constrained object is represented as a path law, endpoint coupling plus bridges, two-sided Markov transform, generator/PDE system, continuous or jump action, and curvature-sensitive interpolation. These are representation-dependent correspondences and were not compared with #44 records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 1818,
+      "line_start": 1763,
+      "representation_dependency": "The identities depend on differentiability of entropy along the chosen interpolation, reversible generator calculus, regular two-sided potentials, and the diffusion-specific reduction from the generalized operator to the usual iterated carré du champ.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The source contrasts heuristic entropy convexity along transport geodesics with a rigorous second-derivative formula along entropic interpolations, expressing curvature information through forward and backward potentials and an iterated generator operator.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Second entropy variation links entropic interpolation to curvature operators",
+      "unit_id": "agnostic_oa_entropic_interpolation_curvature",
+      "unit_type": "geometric-bridge"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_reciprocal_conditional_structure.txt",
+      "artifact_bytes": 1587,
+      "artifact_relpath": "depth/units/agnostic_oa_reciprocal_conditional_structure.txt",
+      "artifact_sha256": "2497033d076937ec84173221f5d510812b6ede663d5adca400d74a48c2deb499",
+      "content_sha256": "f0b24c789ef7ff815b66ecc15223f105a97dd3574be02ceff0f517210aab959d",
+      "context_note": "This mathematical distinction appears inside a historical survey and is retained because it clarifies the structural role of the stronger Markov conclusion for entropy optimizers.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_path_marginal_information_hierarchy",
+            "agnostic_oa_two_sided_transform_factorization",
+            "agnostic_oa_generator_transform_carre_du_champ",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_entropic_interpolation_curvature",
+            "agnostic_oa_reciprocal_conditional_structure"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The same constrained object is represented as a path law, endpoint coupling plus bridges, two-sided Markov transform, generator/PDE system, continuous or jump action, and curvature-sensitive interpolation. These are representation-dependent correspondences and were not compared with #44 records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 1927,
+      "line_start": 1909,
+      "representation_dependency": "Both notions are formulated on path segments and conditional laws; reciprocity depends on two boundary states, whereas Markovity depends on one separating present state.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The source distinguishes conditioning the path interior on its two boundary states from conditioning future and past on a single present state, showing a strict hierarchy: every Markov law is reciprocal, but not conversely.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Reciprocity weakens Markov conditional independence while preserving time symmetry",
+      "unit_id": "agnostic_oa_reciprocal_conditional_structure",
+      "unit_type": "conditional-independence-comparison"
+    }
+  ]
+}

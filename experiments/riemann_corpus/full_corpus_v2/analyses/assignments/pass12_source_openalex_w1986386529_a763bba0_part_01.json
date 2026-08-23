@@ -1,0 +1,1741 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1986386529_a763bba0_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1986386529",
+  "unit_count": 13,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with lines 79-96 for the RH-dependent upper-bound objective; the span itself preserves the conjectural and historical setup.",
+      "line_end": 77,
+      "line_start": 45,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is recoverable; displayed powers and comparison symbols are formula-layer dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts precise moment conjectures and known lower bounds with the scarcity of asymptotic formulae, motivating a one-sided upper-bound strategy.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjectural moment scale and the upper-bound bottleneck",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u04.txt",
+      "unit_bytes": 1915,
+      "unit_id": "full_openalex_w1986386529_u04",
+      "unit_sha256": "571f7cc1d3b1356bb9eb9f444684b89eb6cd248c464fbae290a98ec6b67b97ce",
+      "unit_type": "problem landscape",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u04.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 37,
+          "line_end": 44,
+          "text": "\n    Assuming the Riemann hypothesis, we obtain an upper bound for the moments\nof the Riemann zeta function on the critical line. Our bound is nearly as sharp as\nthe conjectured asymptotic formulae for these moments. The method extends to\nmoments in other families of L-functions.\n\n                                       1. Introduction\n\n",
+          "sha256": "4763236369cdba967bf9550da83e66c8f5857ea12b7a1b37626928656e60b83f"
+        },
+        "after": {
+          "line_start": 78,
+          "line_end": 85,
+          "text": "bounds of the conjectured order are known (see [16] and [17]).\n      Here we study the problem of obtaining upper bounds for Mk .T /. When\n0 \u0014 k \u0014 2, Ramachandra, in [13] and [14], and Heath-Brown, in [6] and [7], showed,\n                                             2\nassuming RH, that Mk .T / \n T .log T /k . The Lindelöf hypothesis is equivalent to\nthe estimate Mk .T / \nk;\" T 1C\" for all natural numbers k. Thus, for k larger than\n",
+          "sha256": "a679aba330d76206992905f29fe4511b790bc3fb5485b492336b466a9f73a72a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 269,
+            "line_start": 43,
+            "mathematical_role": "Sets the moment problem, reduces moments to large-value frequencies, states the three-regime tail theorem and prime-sum proposition, and derives the moment and concentration corollaries."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 77,
+          "line_start": 45,
+          "title": "Conjectural moment scale and the upper-bound bottleneck",
+          "unit_id": "full_openalex_w1986386529_u04",
+          "unit_type": "problem landscape",
+          "why_material": "Contrasts precise moment conjectures and known lower bounds with the scarcity of asymptotic formulae, motivating a one-sided upper-bound strategy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with lines 79-96 for the RH-dependent upper-bound objective; the span itself preserves the conjectural and historical setup.",
+          "representation_dependency": "The prose is recoverable; displayed powers and comparison symbols are formula-layer dependent.",
+          "unit_id": "full_openalex_w1986386529_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 170,
+            "line_start": 78,
+            "title": "From zeta moments to a three-regime large-value problem",
+            "unit_id": "full_openalex_w1986386529_u01",
+            "unit_type": "large-values-to-moments reduction",
+            "why_material": "Introduces the large-value set and layer-cake integral, connects a Gaussian tail heuristic to conjectural moment size, and begins the theorem that supplies usable tail bounds."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 42,
+              "line_start": 36,
+              "reason": "Abstract summarizes the article but adds no mechanism beyond selected units."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the missing continuation needed to interpret the carried tail-reduction unit without truncating its theorem.",
+      "line_end": 201,
+      "line_start": 171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several bounds are formula-layer dependent, but the regime comparisons and unconditional contrast are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Completes the theorem's largest-value regime and contrasts it with Jutila's range and a complementary unconditional lower bound, making the strength and RH dependence of the result legible.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Large-value regime comparisons and the unconditional boundary",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u05.txt",
+      "unit_bytes": 1674,
+      "unit_id": "full_openalex_w1986386529_u05",
+      "unit_sha256": "0f975720d55223d9c6910742c56aa2db073f5d32cfb5e63384a6e3d768609d82",
+      "unit_type": "method comparison and limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u05.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 163,
+          "line_end": 170,
+          "text": "S.T; V / be as defined above. If 10log log T \u0014 V \u0014 log log T , then\n                               V                 V2              4\n                                            \u0010           \u0010            \u0011\u0011\n        meas.S.T; V // \n T p            exp              1              I\n                             log log T        log log T       log3 T\n\nif log log T < V \u0014 12 .log log T / log3 T , then\n",
+          "sha256": "94303ad820c7e95706c4d980bfa9ec8fd11fe80d8c22e3eb7a5557c723a1b06b"
+        },
+        "after": {
+          "line_start": 202,
+          "line_end": 209,
+          "text": "\n<!-- source-page: 6 -->\n\n984                             KANNAN SOUNDARARAJAN\n\n\n      As mentioned already, we build on Selberg’s work on the distribution of\nlog \u0010. 12 C i t /. Selberg computed the moments of the real and imaginary parts of\n",
+          "sha256": "9593a87d628481fb461bb437269de8d3ad86e210684e910772f534f40b91d6e0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 269,
+            "line_start": 43,
+            "mathematical_role": "Sets the moment problem, reduces moments to large-value frequencies, states the three-regime tail theorem and prime-sum proposition, and derives the moment and concentration corollaries."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 201,
+          "line_start": 171,
+          "title": "Large-value regime comparisons and the unconditional boundary",
+          "unit_id": "full_openalex_w1986386529_u05",
+          "unit_type": "method comparison and limitation",
+          "why_material": "Completes the theorem's largest-value regime and contrasts it with Jutila's range and a complementary unconditional lower bound, making the strength and RH dependence of the result legible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the missing continuation needed to interpret the carried tail-reduction unit without truncating its theorem.",
+          "representation_dependency": "Several bounds are formula-layer dependent, but the regime comparisons and unconditional contrast are explicit in prose.",
+          "unit_id": "full_openalex_w1986386529_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 170,
+            "line_start": 78,
+            "title": "From zeta moments to a three-regime large-value problem",
+            "unit_id": "full_openalex_w1986386529_u01",
+            "unit_type": "large-values-to-moments reduction",
+            "why_material": "Introduces the large-value set and layer-cake integral, connects a Gaussian tail heuristic to conjectural moment size, and begins the theorem that supplies usable tail bounds."
+          },
+          {
+            "line_end": 245,
+            "line_start": 206,
+            "title": "One-sided prime-sum majorant for log|zeta|",
+            "unit_id": "full_openalex_w1986386529_u02",
+            "unit_type": "prime-sum upper bound",
+            "why_material": "States the central move: for an upper bound, nearby zeros are benign and log|zeta| can be majorized by a weighted short von Mangoldt sum plus an explicit length penalty."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 205,
+              "line_start": 202,
+              "reason": "Unconditional-method limitation and running page matter support the transition."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uses the large-value set and moment identity defined earlier; no additional source context is needed beyond that linked unit.",
+      "line_end": 268,
+      "line_start": 249,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponents are displayed-formula dependent; the prose clearly states the two tail regimes and concentration conclusion.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how crude forms of the tail theorem inserted into the layer-cake identity give the upper moment bound and how removing unusually small or large values leaves the dominant moment contribution.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tail bounds yield moments and locate the dominant value band",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u06.txt",
+      "unit_bytes": 1056,
+      "unit_id": "full_openalex_w1986386529_u06",
+      "unit_sha256": "dbb9024196d814174142895cc06641f90a8bf9f1b4fc5275b37f2fa250e86aa1",
+      "unit_type": "tail integration and concentration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u06.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 241,
+          "line_end": 248,
+          "text": "                                1C\u00150           log t             3 log t\n                             \u0010\u0010            \u0011           \u0011       \u0010             \u0011\n        j\u0010. 21 C i t /j \u0014 exp        C o.1/              \u0014 exp                 :\n                                  4          log log t           8 log log t\n     The method developed here is robust and applies equally well to moments in\nfamilies of L-functions; we discuss this briefly in Section 4 below. We end the\nintroduction by deriving Corollaries A and B.\n\n",
+          "sha256": "6c7cb81c2c8552b604d57df389f250b0945e702b40b935f315b75824d3add70e"
+        },
+        "after": {
+          "line_start": 269,
+          "line_end": 276,
+          "text": "\n                             2. Proof of the main proposition\n\n     In proving our proposition we may suppose that t does not coincide with the\nordinate of a zero of \u0010.s/. Letting \u001a D 12 C i run over the nontrivial zeros of \u0010.s/,\nwe define\n                             X 1          X        \u001b 1=2\n                 F .s/ D Re            D                          :\n",
+          "sha256": "23fad399b9eb8aa838df8dab1d6f64a7dd9c062a3a9948a66235835cb401dae5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 269,
+            "line_start": 43,
+            "mathematical_role": "Sets the moment problem, reduces moments to large-value frequencies, states the three-regime tail theorem and prime-sum proposition, and derives the moment and concentration corollaries."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 268,
+          "line_start": 249,
+          "title": "Tail bounds yield moments and locate the dominant value band",
+          "unit_id": "full_openalex_w1986386529_u06",
+          "unit_type": "tail integration and concentration",
+          "why_material": "Shows how crude forms of the tail theorem inserted into the layer-cake identity give the upper moment bound and how removing unusually small or large values leaves the dominant moment contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uses the large-value set and moment identity defined earlier; no additional source context is needed beyond that linked unit.",
+          "representation_dependency": "Exact exponents are displayed-formula dependent; the prose clearly states the two tail regimes and concentration conclusion.",
+          "unit_id": "full_openalex_w1986386529_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 245,
+            "line_start": 206,
+            "title": "One-sided prime-sum majorant for log|zeta|",
+            "unit_id": "full_openalex_w1986386529_u02",
+            "unit_type": "prime-sum upper bound",
+            "why_material": "States the central move: for an upper bound, nearby zeros are benign and log|zeta| can be majorized by a weighted short von Mangoldt sum plus an explicit length penalty."
+          },
+          {
+            "line_end": 312,
+            "line_start": 272,
+            "title": "Integrating the logarithmic derivative turns zeros into a nonnegative control term",
+            "unit_id": "full_openalex_w1986386529_u07",
+            "unit_type": "zero-term sign construction",
+            "why_material": "Defines a nonnegative zero sum under RH, derives it from Hadamard factorization, and integrates in the real direction to compare the critical-line value with an off-line value plus a signed zero contribution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Under RH, a favorable-sign zero term permits a short-prime majorant for log|zeta|; high-moment concentration for two prime scales then controls upper tails strongly enough that layer-cake integration yields near-conjectural moments.",
+            "limit": "This is a one-sided, RH-conditional mechanism; it does not provide moment asymptotics or an unconditional replacement for zero control.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u01",
+              "full_openalex_w1986386529_u07",
+              "full_openalex_w1986386529_u08",
+              "full_openalex_w1986386529_u09",
+              "full_openalex_w1986386529_u10",
+              "full_openalex_w1986386529_u11",
+              "full_openalex_w1986386529_u03",
+              "full_openalex_w1986386529_u12",
+              "full_openalex_w1986386529_u06"
+            ],
+            "title": "One-sided zero control becomes a moment bound"
+          },
+          {
+            "claim": "A regime-matched upper-tail estimate not only bounds a moment integral but shows that values far below or above the natural logarithmic scale contribute negligibly to that moment.",
+            "limit": "The concentration statement uses the cited lower moment bound together with the paper's RH-conditional upper-tail theorem and does not assert a pointwise typical-value law.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u01",
+              "full_openalex_w1986386529_u03",
+              "full_openalex_w1986386529_u12",
+              "full_openalex_w1986386529_u06"
+            ],
+            "title": "Tail estimates identify the moment-bearing value band"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 270,
+              "line_start": 269,
+              "reason": "Section transition and heading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the first half of the main proposition proof and supplies the semantic reason nearby zeros help a one-sided upper bound.",
+      "line_end": 312,
+      "line_start": 272,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The identities (4) and (5) and the definition of F(s) are formula-image sensitive, though their sign and integration roles are explicit in checked prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a nonnegative zero sum under RH, derives it from Hadamard factorization, and integrates in the real direction to compare the critical-line value with an off-line value plus a signed zero contribution.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integrating the logarithmic derivative turns zeros into a nonnegative control term",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u07.txt",
+      "unit_bytes": 2444,
+      "unit_id": "full_openalex_w1986386529_u07",
+      "unit_sha256": "902036e08bf4d36756de4210e138c09f57a8e9d8e53c93aeff5aa02d7ea44376",
+      "unit_type": "zero-term sign construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u07.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 264,
+          "line_end": 271,
+          "text": "             2                                                                    2\no.T .log T /k /. Combining this with the lower bound Mk .T / \nk T .log T /k we\nobtain the lower bound for the measure implicit in Corollary B. The upper bound\nimplicit there follows from our theorem.                                             \u0003\n\n                             2. Proof of the main proposition\n\n",
+          "sha256": "222fadb8da3b0e6ce5ffd27c5252063f69260598e9e224d88a7f79bdaaa4a321"
+        },
+        "after": {
+          "line_start": 313,
+          "line_end": 320,
+          "text": "     L EMMA 1. Unconditionally, for any s not coinciding with 1 or a zero of \u0010.s/\nand for any x \u0015 2, we have\n        \u00100                                               1 X x\u001a s\n                 X ƒ.n/ log.x=n/           \u0010 0 \u00110\n                                       1    \u0010\n           .s/ D                  C            .s/  C\n        \u0010             ns   log x     log x \u0010           log x\n                                                              \u001a\n",
+          "sha256": "31207417133a5d52c63aed478405e8c7adfef4c61dc14fc6d2748645f3673e8c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Proof of the main proposition",
+            "line_end": 425,
+            "line_start": 270,
+            "mathematical_role": "Uses Hadamard factorization, an integrated logarithmic-derivative identity, and a parameter choice that makes the zero term nonpositive."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 312,
+          "line_start": 272,
+          "title": "Integrating the logarithmic derivative turns zeros into a nonnegative control term",
+          "unit_id": "full_openalex_w1986386529_u07",
+          "unit_type": "zero-term sign construction",
+          "why_material": "Defines a nonnegative zero sum under RH, derives it from Hadamard factorization, and integrates in the real direction to compare the critical-line value with an off-line value plus a signed zero contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the first half of the main proposition proof and supplies the semantic reason nearby zeros help a one-sided upper bound.",
+          "representation_dependency": "The identities (4) and (5) and the definition of F(s) are formula-image sensitive, though their sign and integration roles are explicit in checked prose.",
+          "unit_id": "full_openalex_w1986386529_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 268,
+            "line_start": 249,
+            "title": "Tail bounds yield moments and locate the dominant value band",
+            "unit_id": "full_openalex_w1986386529_u06",
+            "unit_type": "tail integration and concentration",
+            "why_material": "Shows how crude forms of the tail theorem inserted into the layer-cake identity give the upper moment bound and how removing unusually small or large values leaves the dominant moment contribution."
+          },
+          {
+            "line_end": 358,
+            "line_start": 313,
+            "title": "Selberg-type smoothed explicit formula from contour shifting",
+            "unit_id": "full_openalex_w1986386529_u08",
+            "unit_type": "explicit-formula construction",
+            "why_material": "Derives a finite von Mangoldt sum plus zero, pole, and trivial-zero terms by integrating a logarithmic derivative kernel and shifting the contour, furnishing the algebraic bridge to primes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Under RH, a favorable-sign zero term permits a short-prime majorant for log|zeta|; high-moment concentration for two prime scales then controls upper tails strongly enough that layer-cake integration yields near-conjectural moments.",
+            "limit": "This is a one-sided, RH-conditional mechanism; it does not provide moment asymptotics or an unconditional replacement for zero control.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u01",
+              "full_openalex_w1986386529_u07",
+              "full_openalex_w1986386529_u08",
+              "full_openalex_w1986386529_u09",
+              "full_openalex_w1986386529_u10",
+              "full_openalex_w1986386529_u11",
+              "full_openalex_w1986386529_u03",
+              "full_openalex_w1986386529_u12",
+              "full_openalex_w1986386529_u06"
+            ],
+            "title": "One-sided zero control becomes a moment bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 270,
+              "line_start": 269,
+              "reason": "Section transition and heading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is self-contained at the mechanism level and feeds directly into the integrated estimate that follows.",
+      "line_end": 358,
+      "line_start": 313,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Residue terms and kernel powers are OCR-sensitive; contour-shift and term-matching logic are recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives a finite von Mangoldt sum plus zero, pole, and trivial-zero terms by integrating a logarithmic derivative kernel and shifting the contour, furnishing the algebraic bridge to primes.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Selberg-type smoothed explicit formula from contour shifting",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u08.txt",
+      "unit_bytes": 2427,
+      "unit_id": "full_openalex_w1986386529_u08",
+      "unit_sha256": "efb920b698faab03d434e459917da1708da08d69223177e1737cf68ecde0fcbd",
+      "unit_type": "explicit-formula construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u08.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 305,
+          "line_end": 312,
+          "text": "                                                                             .t   /2\n\nSince log.1 C x 2 / \u0015 x 2 =.1 C x 2 /, we deduce that\n                                                      1 1                         1\n       logj\u0010. 21 C i t /j\n                                                                                          \u0001\n(5)                           logj\u0010.s0 /j \u0014 .\u001b0       2 / 2 log T C O.1/          2 F .s0 / :\n\n",
+          "sha256": "74b820b8e4e6552e30e6f9d712082ba7474339d301302c7ba6965f4a821d5ade"
+        },
+        "after": {
+          "line_start": 359,
+          "line_end": 366,
+          "text": "\n     Take s D \u001b C i t in Lemma 1, extract the real parts of both sides, and integrate\nover \u001b from \u001b0 to 1. Thus, for 2 \u0014 x \u0014 T 2 ,\n                                               1 \u00100\n                \u0012X\n                         ƒ.n/ log.x=n/\nlogj\u0010.s0 /j D Re                                     .s /\n                       ns0 log n log x      log x \u0010 0\n",
+          "sha256": "4bf6300a97be5a25448ea3b37e5970c5dc3feb71dedbfa4f111d15cc140214d6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Proof of the main proposition",
+            "line_end": 425,
+            "line_start": 270,
+            "mathematical_role": "Uses Hadamard factorization, an integrated logarithmic-derivative identity, and a parameter choice that makes the zero term nonpositive."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 358,
+          "line_start": 313,
+          "title": "Selberg-type smoothed explicit formula from contour shifting",
+          "unit_id": "full_openalex_w1986386529_u08",
+          "unit_type": "explicit-formula construction",
+          "why_material": "Derives a finite von Mangoldt sum plus zero, pole, and trivial-zero terms by integrating a logarithmic derivative kernel and shifting the contour, furnishing the algebraic bridge to primes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof is self-contained at the mechanism level and feeds directly into the integrated estimate that follows.",
+          "representation_dependency": "Residue terms and kernel powers are OCR-sensitive; contour-shift and term-matching logic are recoverable from prose.",
+          "unit_id": "full_openalex_w1986386529_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 312,
+            "line_start": 272,
+            "title": "Integrating the logarithmic derivative turns zeros into a nonnegative control term",
+            "unit_id": "full_openalex_w1986386529_u07",
+            "unit_type": "zero-term sign construction",
+            "why_material": "Defines a nonnegative zero sum under RH, derives it from Hadamard factorization, and integrates in the real direction to compare the critical-line value with an off-line value plus a signed zero contribution."
+          },
+          {
+            "line_end": 424,
+            "line_start": 360,
+            "title": "Choose the horizontal shift so the zero contribution cancels",
+            "unit_id": "full_openalex_w1986386529_u09",
+            "unit_type": "parameter cancellation",
+            "why_material": "Integrates the explicit formula, bounds its zero contribution by F(s0), combines it with the earlier critical-line comparison, and chooses the shift parameter so the remaining F(s0) coefficient is nonpositive."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Under RH, a favorable-sign zero term permits a short-prime majorant for log|zeta|; high-moment concentration for two prime scales then controls upper tails strongly enough that layer-cake integration yields near-conjectural moments.",
+            "limit": "This is a one-sided, RH-conditional mechanism; it does not provide moment asymptotics or an unconditional replacement for zero control.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u01",
+              "full_openalex_w1986386529_u07",
+              "full_openalex_w1986386529_u08",
+              "full_openalex_w1986386529_u09",
+              "full_openalex_w1986386529_u10",
+              "full_openalex_w1986386529_u11",
+              "full_openalex_w1986386529_u03",
+              "full_openalex_w1986386529_u12",
+              "full_openalex_w1986386529_u06"
+            ],
+            "title": "One-sided zero control becomes a moment bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the proof-level explanation missing from the carried prime-sum proposition.",
+      "line_end": 424,
+      "line_start": 360,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The cancellation threshold and coefficients rely on equations (6) and (7); the checked final prose explicitly states the negative-contribution criterion.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integrates the explicit formula, bounds its zero contribution by F(s0), combines it with the earlier critical-line comparison, and chooses the shift parameter so the remaining F(s0) coefficient is nonpositive.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Choose the horizontal shift so the zero contribution cancels",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u09.txt",
+      "unit_bytes": 3691,
+      "unit_id": "full_openalex_w1986386529_u09",
+      "unit_sha256": "db2cee7412e8fecb71cd136074b57a7482b92cf7600ef3878e86e61693f89cd6",
+      "unit_type": "parameter cancellation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u09.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 352,
+          "line_end": 359,
+          "text": "                                                   C                                    :\n          \u0010               \u0010\n                                          \u001a\n                                            .\u001a s/    .1 s/2                  .2k Cs/2\n                                                                       kD1\n\nEquating these two expressions we obtain the lemma.                                              \u0003\n\n",
+          "sha256": "a1484cb1517c606df2faa979897ffccbaa4bd251a8c1e28ff448868b28d5882b"
+        },
+        "after": {
+          "line_start": 425,
+          "line_end": 432,
+          "text": "\n                             3. Proof of the theorem\n\n    Our proof of the theorem rests upon our main proposition. We begin by\nshowing that the sum over prime powers appearing there may be restricted just to\nprimes.\n\n     L EMMA 2. Assume RH. Let T \u0014 t \u0014 2T , let 2 \u0014 x \u0014 T 2 , and let \u001b \u0015 12 . Then\n",
+          "sha256": "c5c5cb42ca7c9fed6dab4dcd04d9e5e1dbd4f87ff8164bb474e14c3b1d307b65"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Proof of the main proposition",
+            "line_end": 425,
+            "line_start": 270,
+            "mathematical_role": "Uses Hadamard factorization, an integrated logarithmic-derivative identity, and a parameter choice that makes the zero term nonpositive."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 424,
+          "line_start": 360,
+          "title": "Choose the horizontal shift so the zero contribution cancels",
+          "unit_id": "full_openalex_w1986386529_u09",
+          "unit_type": "parameter cancellation",
+          "why_material": "Integrates the explicit formula, bounds its zero contribution by F(s0), combines it with the earlier critical-line comparison, and chooses the shift parameter so the remaining F(s0) coefficient is nonpositive."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Completes the proof-level explanation missing from the carried prime-sum proposition.",
+          "representation_dependency": "The cancellation threshold and coefficients rely on equations (6) and (7); the checked final prose explicitly states the negative-contribution criterion.",
+          "unit_id": "full_openalex_w1986386529_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 358,
+            "line_start": 313,
+            "title": "Selberg-type smoothed explicit formula from contour shifting",
+            "unit_id": "full_openalex_w1986386529_u08",
+            "unit_type": "explicit-formula construction",
+            "why_material": "Derives a finite von Mangoldt sum plus zero, pole, and trivial-zero terms by integrating a logarithmic derivative kernel and shifting the contour, furnishing the algebraic bridge to primes."
+          },
+          {
+            "line_end": 460,
+            "line_start": 428,
+            "title": "Reduce the von Mangoldt polynomial to primes",
+            "unit_id": "full_openalex_w1986386529_u10",
+            "unit_type": "prime-power pruning",
+            "why_material": "Separates higher prime powers, controls prime squares via an RH explicit-formula estimate and partial summation, and shows their total cost is only logarithmic at the third iterated scale."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Under RH, a favorable-sign zero term permits a short-prime majorant for log|zeta|; high-moment concentration for two prime scales then controls upper tails strongly enough that layer-cake integration yields near-conjectural moments.",
+            "limit": "This is a one-sided, RH-conditional mechanism; it does not provide moment asymptotics or an unconditional replacement for zero control.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u01",
+              "full_openalex_w1986386529_u07",
+              "full_openalex_w1986386529_u08",
+              "full_openalex_w1986386529_u09",
+              "full_openalex_w1986386529_u10",
+              "full_openalex_w1986386529_u11",
+              "full_openalex_w1986386529_u03",
+              "full_openalex_w1986386529_u12",
+              "full_openalex_w1986386529_u06"
+            ],
+            "title": "One-sided zero control becomes a moment bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 427,
+              "line_start": 425,
+              "reason": "Proof terminator, section heading, and transition."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the approximation needed before probabilistic high-moment control can be applied to a prime polynomial.",
+      "line_end": 460,
+      "line_start": 428,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prime-square bound is display-dependent and OCR-risky; the decomposition and partial-summation route are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates higher prime powers, controls prime squares via an RH explicit-formula estimate and partial summation, and shows their total cost is only logarithmic at the third iterated scale.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reduce the von Mangoldt polynomial to primes",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u10.txt",
+      "unit_bytes": 1267,
+      "unit_id": "full_openalex_w1986386529_u10",
+      "unit_sha256": "1651182f31aed1a1d3a20333c7aedf719f560368725d15cd5c0190f98dd84673",
+      "unit_type": "prime-power pruning",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u10.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 420,
+          "line_end": 427,
+          "text": "MOMENTS OF THE RIEMANN ZETA FUNCTION                       987\n\nWe choose \u001b0 D 12 C \u0015=log x, where \u0015 \u0015 \u00150 . This restriction on \u0015 ensures that the\nterm involving F .s0 / in (7) makes a negative contribution, and may therefore be\nomitted. The proposition follows.                                               \u0003\n\n                             3. Proof of the theorem\n\n",
+          "sha256": "f9dd1031af8c9aa854f9a60e78f35f678c649858e4965d9fffd95344838b0f11"
+        },
+        "after": {
+          "line_start": 461,
+          "line_end": 468,
+          "text": "\n    We also need a standard mean value estimate whose proof we include for\ncompleteness.\n\n     L EMMA 3. Let T be large, and let 2 \u0014 x \u0014 T . Let k be a natural number such\nthat x k \u0014 T = log T . For any complex numbers a.p/ we have\n                 Z 2T ˇ X                          \u0010 X ja.p/j2 \u0011k\n                               a.p/ ˇˇ2k\n",
+          "sha256": "bfba08f0df3399719b051bb7c929023e2e492e52f1d09424e5a422e69d6c4c46"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proof of the theorem",
+            "line_end": 666,
+            "line_start": 426,
+            "mathematical_role": "Removes prime powers, proves a high-moment mean-value estimate, splits the prime polynomial by scale, and optimizes tail bounds in the required regimes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 460,
+          "line_start": 428,
+          "title": "Reduce the von Mangoldt polynomial to primes",
+          "unit_id": "full_openalex_w1986386529_u10",
+          "unit_type": "prime-power pruning",
+          "why_material": "Separates higher prime powers, controls prime squares via an RH explicit-formula estimate and partial summation, and shows their total cost is only logarithmic at the third iterated scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides the approximation needed before probabilistic high-moment control can be applied to a prime polynomial.",
+          "representation_dependency": "The prime-square bound is display-dependent and OCR-risky; the decomposition and partial-summation route are explicit.",
+          "unit_id": "full_openalex_w1986386529_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 424,
+            "line_start": 360,
+            "title": "Choose the horizontal shift so the zero contribution cancels",
+            "unit_id": "full_openalex_w1986386529_u09",
+            "unit_type": "parameter cancellation",
+            "why_material": "Integrates the explicit formula, bounds its zero contribution by F(s0), combines it with the earlier critical-line comparison, and chooses the shift parameter so the remaining F(s0) coefficient is nonpositive."
+          },
+          {
+            "line_end": 560,
+            "line_start": 462,
+            "title": "High moments are controlled by diagonal combinatorics",
+            "unit_id": "full_openalex_w1986386529_u11",
+            "unit_type": "Dirichlet-polynomial mean value",
+            "why_material": "Expands a prime Dirichlet polynomial to the kth power, separates diagonal from off-diagonal terms, uses the length constraint to absorb the latter, and bounds the diagonal by k! times the coefficient variance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Under RH, a favorable-sign zero term permits a short-prime majorant for log|zeta|; high-moment concentration for two prime scales then controls upper tails strongly enough that layer-cake integration yields near-conjectural moments.",
+            "limit": "This is a one-sided, RH-conditional mechanism; it does not provide moment asymptotics or an unconditional replacement for zero control.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u01",
+              "full_openalex_w1986386529_u07",
+              "full_openalex_w1986386529_u08",
+              "full_openalex_w1986386529_u09",
+              "full_openalex_w1986386529_u10",
+              "full_openalex_w1986386529_u11",
+              "full_openalex_w1986386529_u03",
+              "full_openalex_w1986386529_u12",
+              "full_openalex_w1986386529_u06"
+            ],
+            "title": "One-sided zero control becomes a moment bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 427,
+              "line_start": 425,
+              "reason": "Proof terminator, section heading, and transition."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This lemma is the reusable concentration engine for both short and long prime blocks.",
+      "line_end": 560,
+      "line_start": 462,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Multinomial coefficients and off-diagonal estimates are formula-heavy; the expansion, diagonal split, and length condition are readable in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands a prime Dirichlet polynomial to the kth power, separates diagonal from off-diagonal terms, uses the length constraint to absorb the latter, and bounds the diagonal by k! times the coefficient variance.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "High moments are controlled by diagonal combinatorics",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u11.txt",
+      "unit_bytes": 4647,
+      "unit_id": "full_openalex_w1986386529_u11",
+      "unit_sha256": "6dcc6199747ec67258b4c500536163ab9d9217a385a102b44fd511fef27ac26a",
+      "unit_type": "Dirichlet-polynomial mean value",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u11.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 454,
+          "line_end": 461,
+          "text": "                                       p\n                    X        1     log. x=p/\n                           2\u001bC2i t\n                                         p   \n log log log T:                 \u0003\n                     p p             log x\n                    p\u0014 x\n\n",
+          "sha256": "69b54026f9552b3127358e98d82df697ef28dfa5421516c9fcaaeef797f8ffbc"
+        },
+        "after": {
+          "line_start": 561,
+          "line_end": 568,
+          "text": "        In proving our theorem, we may assume that\n\n                        10 log log T \u0014 V \u0014 38 log T = log log T:\n                          p\n\n\nWe also keep in mind that T is large. We define a parameter A by\n              81\n",
+          "sha256": "d313576bdd87b10cab5be540b35883c07919dc747ce624cd8221e5d92fa2b671"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proof of the theorem",
+            "line_end": 666,
+            "line_start": 426,
+            "mathematical_role": "Removes prime powers, proves a high-moment mean-value estimate, splits the prime polynomial by scale, and optimizes tail bounds in the required regimes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 560,
+          "line_start": 462,
+          "title": "High moments are controlled by diagonal combinatorics",
+          "unit_id": "full_openalex_w1986386529_u11",
+          "unit_type": "Dirichlet-polynomial mean value",
+          "why_material": "Expands a prime Dirichlet polynomial to the kth power, separates diagonal from off-diagonal terms, uses the length constraint to absorb the latter, and bounds the diagonal by k! times the coefficient variance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This lemma is the reusable concentration engine for both short and long prime blocks.",
+          "representation_dependency": "Multinomial coefficients and off-diagonal estimates are formula-heavy; the expansion, diagonal split, and length condition are readable in prose.",
+          "unit_id": "full_openalex_w1986386529_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 460,
+            "line_start": 428,
+            "title": "Reduce the von Mangoldt polynomial to primes",
+            "unit_id": "full_openalex_w1986386529_u10",
+            "unit_type": "prime-power pruning",
+            "why_material": "Separates higher prime powers, controls prime squares via an RH explicit-formula estimate and partial summation, and shows their total cost is only logarithmic at the third iterated scale."
+          },
+          {
+            "line_end": 625,
+            "line_start": 534,
+            "title": "Split the prime polynomial into short and long scales",
+            "unit_id": "full_openalex_w1986386529_u03",
+            "unit_type": "large-value measure decomposition",
+            "why_material": "Carries the v1 scale-decomposition unit linking the proposition and mean-value lemma to two alternative large-deviation events for a point in S(T,V)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Under RH, a favorable-sign zero term permits a short-prime majorant for log|zeta|; high-moment concentration for two prime scales then controls upper tails strongly enough that layer-cake integration yields near-conjectural moments.",
+            "limit": "This is a one-sided, RH-conditional mechanism; it does not provide moment asymptotics or an unconditional replacement for zero control.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u01",
+              "full_openalex_w1986386529_u07",
+              "full_openalex_w1986386529_u08",
+              "full_openalex_w1986386529_u09",
+              "full_openalex_w1986386529_u10",
+              "full_openalex_w1986386529_u11",
+              "full_openalex_w1986386529_u03",
+              "full_openalex_w1986386529_u12",
+              "full_openalex_w1986386529_u06"
+            ],
+            "title": "One-sided zero control becomes a moment bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the carried decomposition where necessary and supplies its missing endpoint through both optimized estimates.",
+      "line_end": 660,
+      "line_start": 561,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The piecewise A, moment choices, and estimates (8)-(9) are formula-layer dependent; prose securely supports the two-block optimization mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses scale parameters, converts membership in the large-value set into one of two prime-block deviations, applies the mean-value lemma with different moment choices, and combines their bounds to prove the theorem.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Optimize high moments separately for the long and short prime blocks",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u12.txt",
+      "unit_bytes": 4176,
+      "unit_id": "full_openalex_w1986386529_u12",
+      "unit_sha256": "6680c2c01fff853dec697e703d0eb60b26225b149956aa40ff42d1b8086dda06",
+      "unit_type": "large-deviation optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u12.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 553,
+          "line_end": 560,
+          "text": "                                                                                       1\n                                         P\n                                             ˛i Dk\n                             \u0010 X ja.p/j2 \u0011k\n                      D kŠ                     :                                                        \u0003\n                              p\u0014x\n                                       p\n\n",
+          "sha256": "0fe0f17bcb5a34cf3d9daf9ac327bfdf8e1b3bd66086ceefa83467119040e8a4"
+        },
+        "after": {
+          "line_start": 661,
+          "line_end": 668,
+          "text": "\n<!-- source-page: 12 -->\n\n990                                 KANNAN SOUNDARARAJAN\n\n\n                         4. Moments of L-functions in families\n\n",
+          "sha256": "a0b1d4fb0883ec2ec3b93bdcf60635b8714b268cb2ed9b1414778bfccb171081"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proof of the theorem",
+            "line_end": 666,
+            "line_start": 426,
+            "mathematical_role": "Removes prime powers, proves a high-moment mean-value estimate, splits the prime polynomial by scale, and optimizes tail bounds in the required regimes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 660,
+          "line_start": 561,
+          "title": "Optimize high moments separately for the long and short prime blocks",
+          "unit_id": "full_openalex_w1986386529_u12",
+          "unit_type": "large-deviation optimization",
+          "why_material": "Chooses scale parameters, converts membership in the large-value set into one of two prime-block deviations, applies the mean-value lemma with different moment choices, and combines their bounds to prove the theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps the carried decomposition where necessary and supplies its missing endpoint through both optimized estimates.",
+          "representation_dependency": "The piecewise A, moment choices, and estimates (8)-(9) are formula-layer dependent; prose securely supports the two-block optimization mechanism.",
+          "unit_id": "full_openalex_w1986386529_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 625,
+            "line_start": 534,
+            "title": "Split the prime polynomial into short and long scales",
+            "unit_id": "full_openalex_w1986386529_u03",
+            "unit_type": "large-value measure decomposition",
+            "why_material": "Carries the v1 scale-decomposition unit linking the proposition and mean-value lemma to two alternative large-deviation events for a point in S(T,V)."
+          },
+          {
+            "line_end": 683,
+            "line_start": 669,
+            "title": "Unitary-family transfer replaces time averaging by character orthogonality",
+            "unit_id": "full_openalex_w1986386529_u13",
+            "unit_type": "family transfer",
+            "why_material": "Identifies the sole structural modification for primitive characters: character orthogonality controls the analogue of the off-diagonal terms in the mean-value lemma."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Under RH, a favorable-sign zero term permits a short-prime majorant for log|zeta|; high-moment concentration for two prime scales then controls upper tails strongly enough that layer-cake integration yields near-conjectural moments.",
+            "limit": "This is a one-sided, RH-conditional mechanism; it does not provide moment asymptotics or an unconditional replacement for zero control.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u01",
+              "full_openalex_w1986386529_u07",
+              "full_openalex_w1986386529_u08",
+              "full_openalex_w1986386529_u09",
+              "full_openalex_w1986386529_u10",
+              "full_openalex_w1986386529_u11",
+              "full_openalex_w1986386529_u03",
+              "full_openalex_w1986386529_u12",
+              "full_openalex_w1986386529_u06"
+            ],
+            "title": "One-sided zero control becomes a moment bound"
+          },
+          {
+            "claim": "A regime-matched upper-tail estimate not only bounds a moment integral but shows that values far below or above the natural logarithmic scale contribute negligibly to that moment.",
+            "limit": "The concentration statement uses the cited lower moment bound together with the paper's RH-conditional upper-tail theorem and does not assert a pointwise typical-value law.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u01",
+              "full_openalex_w1986386529_u03",
+              "full_openalex_w1986386529_u12",
+              "full_openalex_w1986386529_u06"
+            ],
+            "title": "Tail estimates identify the moment-bearing value band"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 668,
+              "line_start": 661,
+              "reason": "Page furniture and family-section heading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a sketch rather than a full derivation and remains GRH-conditional.",
+      "line_end": 683,
+      "line_start": 669,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The moment exponents are displayed-formula dependent; the replacement of the averaging mechanism is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies the sole structural modification for primitive characters: character orthogonality controls the analogue of the off-diagonal terms in the mean-value lemma.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unitary-family transfer replaces time averaging by character orthogonality",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u13.txt",
+      "unit_bytes": 838,
+      "unit_id": "full_openalex_w1986386529_u13",
+      "unit_sha256": "54a6c4b68016890a224c31d919c4eaee4118e8bc286ca42dd7bde9d2069ae563",
+      "unit_type": "family transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u13.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 661,
+          "line_end": 668,
+          "text": "\n<!-- source-page: 12 -->\n\n990                                 KANNAN SOUNDARARAJAN\n\n\n                         4. Moments of L-functions in families\n\n",
+          "sha256": "a0b1d4fb0883ec2ec3b93bdcf60635b8714b268cb2ed9b1414778bfccb171081"
+        },
+        "after": {
+          "line_start": 684,
+          "line_end": 691,
+          "text": "      More interesting is the case of quadratic Dirichlet L-functions. In [17] Rudnick\nand Soundararajan showed that for rational numbers k \u0015 1\n                       X[\n                             L. 12 ; \u001fd /k \nk X.log X /k.kC1/=2 ;\n                         jd j\u0014X\n\nwhere the sum is over fundamental discriminants d , and \u001fd denotes the associated\n",
+          "sha256": "88fc44cf2c7fcbe49d5d4e36f991d3554bcd8bb3be34145ea9a710df64951921"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Moments of L-functions in families",
+            "line_end": 805,
+            "line_start": 667,
+            "mathematical_role": "Transfers the method to unitary, symplectic, and orthogonal families and isolates the prime-square contribution that shifts the Gaussian center."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 683,
+          "line_start": 669,
+          "title": "Unitary-family transfer replaces time averaging by character orthogonality",
+          "unit_id": "full_openalex_w1986386529_u13",
+          "unit_type": "family transfer",
+          "why_material": "Identifies the sole structural modification for primitive characters: character orthogonality controls the analogue of the off-diagonal terms in the mean-value lemma."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a sketch rather than a full derivation and remains GRH-conditional.",
+          "representation_dependency": "The moment exponents are displayed-formula dependent; the replacement of the averaging mechanism is explicit in prose.",
+          "unit_id": "full_openalex_w1986386529_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 660,
+            "line_start": 561,
+            "title": "Optimize high moments separately for the long and short prime blocks",
+            "unit_id": "full_openalex_w1986386529_u12",
+            "unit_type": "large-deviation optimization",
+            "why_material": "Chooses scale parameters, converts membership in the large-value set into one of two prime-block deviations, applies the mean-value lemma with different moment choices, and combines their bounds to prove the theorem."
+          },
+          {
+            "line_end": 727,
+            "line_start": 684,
+            "title": "Prime squares shift the center for quadratic Dirichlet L-values",
+            "unit_id": "full_openalex_w1986386529_u14",
+            "unit_type": "symmetry-sensitive family transfer",
+            "why_material": "Shows that prime squares are no longer negligible, contribute half a log-log term, and force a shifted large-value threshold before reciprocity and Polya-Vinogradov provide the mean-value analogue."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same prime-polynomial architecture transfers across families, while the negligible, positive, or negative prime-square term tracks the unitary, symplectic, or orthogonal shift in the expected Gaussian center.",
+            "limit": "The family arguments are sketches under GRH, exact constants are formula-sensitive, and the stronger Selberg analogues additionally require control of near-central zeros.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u13",
+              "full_openalex_w1986386529_u14",
+              "full_openalex_w1986386529_u15",
+              "full_openalex_w1986386529_u16"
+            ],
+            "title": "Prime-square mass predicts the family-dependent center"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 668,
+              "line_start": 661,
+              "reason": "Page furniture and family-section heading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is intentionally sketched; the stated tail and moment bounds are conditional on GRH and the named family-specific averaging tools.",
+      "line_end": 727,
+      "line_start": 684,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact shifts and exponents are formula-sensitive; the prime-square cause and shifted threshold are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that prime squares are no longer negligible, contribute half a log-log term, and force a shifted large-value threshold before reciprocity and Polya-Vinogradov provide the mean-value analogue.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime squares shift the center for quadratic Dirichlet L-values",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u14.txt",
+      "unit_bytes": 2262,
+      "unit_id": "full_openalex_w1986386529_u14",
+      "unit_sha256": "8cf5df23e78b36f911f18df0636459a05f5883a46d7dff174fbff667853531ae",
+      "unit_type": "symmetry-sensitive family transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u14.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 676,
+          "line_end": 683,
+          "text": "                            \u001f .mod q/\n\nwhere the sum is over primitive characters \u001f. The argument given here carries\n                                                  2\nover to obtain the upper bound \nk;\" q.log q/k C\" for all positive real k. The only\ndifference is that one uses the orthogonality relations of the characters .mod q/ to\ntreat nondiagonal terms in the analogue of Lemma 3.\n",
+          "sha256": "e8d8f812bcc2107e5520ffb4659d0a9b43d9e0e5ce433b96b87f756e7d1b55ef"
+        },
+        "after": {
+          "line_start": 728,
+          "line_end": 735,
+          "text": "<!-- source-page: 13 -->\n\nMOMENTS OF THE RIEMANN ZETA FUNCTION                            991\n\n     As a last example consider the family of quadratic twists of a given elliptic\ncurve E. We write the L-function for E as L.E; s/ D 1                   s\n                                                          P\n                                                             nD1 a.n/n , where\n",
+          "sha256": "2ba3d2e1b3d66e38165e7e59d8d904e1ceda34cf3eab8e669ac5a23a4ba114d2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Moments of L-functions in families",
+            "line_end": 805,
+            "line_start": 667,
+            "mathematical_role": "Transfers the method to unitary, symplectic, and orthogonal families and isolates the prime-square contribution that shifts the Gaussian center."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 727,
+          "line_start": 684,
+          "title": "Prime squares shift the center for quadratic Dirichlet L-values",
+          "unit_id": "full_openalex_w1986386529_u14",
+          "unit_type": "symmetry-sensitive family transfer",
+          "why_material": "Shows that prime squares are no longer negligible, contribute half a log-log term, and force a shifted large-value threshold before reciprocity and Polya-Vinogradov provide the mean-value analogue."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof is intentionally sketched; the stated tail and moment bounds are conditional on GRH and the named family-specific averaging tools.",
+          "representation_dependency": "Exact shifts and exponents are formula-sensitive; the prime-square cause and shifted threshold are explicit.",
+          "unit_id": "full_openalex_w1986386529_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 683,
+            "line_start": 669,
+            "title": "Unitary-family transfer replaces time averaging by character orthogonality",
+            "unit_id": "full_openalex_w1986386529_u13",
+            "unit_type": "family transfer",
+            "why_material": "Identifies the sole structural modification for primitive characters: character orthogonality controls the analogue of the off-diagonal terms in the mean-value lemma."
+          },
+          {
+            "line_end": 778,
+            "line_start": 732,
+            "title": "Prime squares shift the center oppositely for elliptic-curve twists",
+            "unit_id": "full_openalex_w1986386529_u15",
+            "unit_type": "symmetry-sensitive family transfer",
+            "why_material": "Repeats the explicit-formula architecture with elliptic-curve coefficients and finds a negative half-log-log prime-square contribution, producing the orthogonal-family moment exponent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same prime-polynomial architecture transfers across families, while the negligible, positive, or negative prime-square term tracks the unitary, symplectic, or orthogonal shift in the expected Gaussian center.",
+            "limit": "The family arguments are sketches under GRH, exact constants are formula-sensitive, and the stronger Selberg analogues additionally require control of near-central zeros.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u13",
+              "full_openalex_w1986386529_u14",
+              "full_openalex_w1986386529_u15",
+              "full_openalex_w1986386529_u16"
+            ],
+            "title": "Prime-square mass predicts the family-dependent center"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A method sketch only; it records the structural difference rather than a complete family proof.",
+      "line_end": 778,
+      "line_start": 732,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Euler-factor coefficients, signs, and threshold formulas need scan verification; the prose recovers the prime-square shift and resulting tail route.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Repeats the explicit-formula architecture with elliptic-curve coefficients and finds a negative half-log-log prime-square contribution, producing the orthogonal-family moment exponent.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime squares shift the center oppositely for elliptic-curve twists",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u15.txt",
+      "unit_bytes": 2343,
+      "unit_id": "full_openalex_w1986386529_u15",
+      "unit_sha256": "7aa8400a9fb4115dcd02d18a56554eb293d66b3c153e8b905c2fe4940d9e0908",
+      "unit_type": "symmetry-sensitive family transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u15.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 724,
+          "line_end": 731,
+          "text": "   1 Since we are assuming GRH we know that L. 1 ; \u001f / \u0015 0.            If L. 12 ; \u001fd / D 0 we interpret\n                                                         2    d\nlog L. 12 ; \u001fd / as 1 so that the claimed inequality is still valid.\n\n<!-- source-page: 13 -->\n\nMOMENTS OF THE RIEMANN ZETA FUNCTION                            991\n\n",
+          "sha256": "67d26c7d97dce31454179cc0bcb3e7b267d64bf67dc72c9b7516d0c3d97335d4"
+        },
+        "after": {
+          "line_start": 779,
+          "line_end": 786,
+          "text": "      Our work above is in keeping with conjectures of Keating and Snaith [10]\n(see (51) and (79) there) that an analogue of Selberg’s result holds in families\nof L-functions. Thus in the unitary family of \u001f .mod q/, we expect that the\ndistribution of logjL. 12 ; \u001f/j is Gaussian with mean 0 and variance \u0018 12 log log q.\nIn the symplectic family of quadratic Dirichlet characters, we expect that the\ndistribution of log L. 12 ; \u001fd / is Gaussian with mean \u0018 12 log logjd j and variance\n\u0018 log logjd j. Thus most values of L. 21 ; \u001fd / are quite large. In the orthogonal family\nof quadratic twists of an elliptic curve, first we must restrict to those twists with\n",
+          "sha256": "2413990e4d608c5b3a5653a4766d73f4a6c54c09f4f18b8e4a1b444a9a85dde5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Moments of L-functions in families",
+            "line_end": 805,
+            "line_start": 667,
+            "mathematical_role": "Transfers the method to unitary, symplectic, and orthogonal families and isolates the prime-square contribution that shifts the Gaussian center."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 778,
+          "line_start": 732,
+          "title": "Prime squares shift the center oppositely for elliptic-curve twists",
+          "unit_id": "full_openalex_w1986386529_u15",
+          "unit_type": "symmetry-sensitive family transfer",
+          "why_material": "Repeats the explicit-formula architecture with elliptic-curve coefficients and finds a negative half-log-log prime-square contribution, producing the orthogonal-family moment exponent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A method sketch only; it records the structural difference rather than a complete family proof.",
+          "representation_dependency": "Euler-factor coefficients, signs, and threshold formulas need scan verification; the prose recovers the prime-square shift and resulting tail route.",
+          "unit_id": "full_openalex_w1986386529_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 727,
+            "line_start": 684,
+            "title": "Prime squares shift the center for quadratic Dirichlet L-values",
+            "unit_id": "full_openalex_w1986386529_u14",
+            "unit_type": "symmetry-sensitive family transfer",
+            "why_material": "Shows that prime squares are no longer negligible, contribute half a log-log term, and force a shifted large-value threshold before reciprocity and Polya-Vinogradov provide the mean-value analogue."
+          },
+          {
+            "line_end": 804,
+            "line_start": 779,
+            "title": "Gaussian centers distinguish unitary, symplectic, and orthogonal families",
+            "unit_id": "full_openalex_w1986386529_u16",
+            "unit_type": "symmetry-type synthesis and obstruction",
+            "why_material": "Synthesizes the three transfers as common Gaussian variance with symmetry-dependent means and identifies zeros near the central point as the extra obstacle to recovering full Selberg-type analogues."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same prime-polynomial architecture transfers across families, while the negligible, positive, or negative prime-square term tracks the unitary, symplectic, or orthogonal shift in the expected Gaussian center.",
+            "limit": "The family arguments are sketches under GRH, exact constants are formula-sensitive, and the stronger Selberg analogues additionally require control of near-central zeros.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u13",
+              "full_openalex_w1986386529_u14",
+              "full_openalex_w1986386529_u15",
+              "full_openalex_w1986386529_u16"
+            ],
+            "title": "Prime-square mass predicts the family-dependent center"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distribution statements are conjectural comparisons; the fixed-deviation upper bound is GRH-conditional and the stronger analogue needs an additional zero-avoidance assumption.",
+      "line_end": 804,
+      "line_start": 779,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mean and variance constants are display/OCR sensitive, but their signs, family ordering, and zero-proximity limitation are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Synthesizes the three transfers as common Gaussian variance with symmetry-dependent means and identifies zeros near the central point as the extra obstacle to recovering full Selberg-type analogues.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian centers distinguish unitary, symplectic, and orthogonal families",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u16.txt",
+      "unit_bytes": 1558,
+      "unit_id": "full_openalex_w1986386529_u16",
+      "unit_sha256": "6a4e3df1a38e1d1e95f4f5d6b2ddb6bfcde8980d26e377bcd2e5e6e065b7d6d0",
+      "unit_type": "symmetry-type synthesis and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u16.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 771,
+          "line_end": 778,
+          "text": "when log log X \u0014 V D o..log log X / log3 X /; when V \u0015 .log log X / log3 X this\nnumber is \n X exp. cV log V / for some positive constant c. This leads to the\nupper bound\n                   X[\n                        L.E ˝ \u001fd ; 12 /k \n X.log X /k.k 1/=2C\" :\n                   jd j\u0014X\n",
+          "sha256": "61c942e2f35393b54c7f9436b09d45aa3f02ef3aff5c8a8449c77e93522e3d97"
+        },
+        "after": {
+          "line_start": 805,
+          "line_end": 812,
+          "text": "\n                                          Acknowledgments\n\n    I am grateful to Mike Rubinstein for some helpful remarks, and to Brian\nConrey for his encouragement.\n\n                                               References\n[1]     J. B. C ONREY, D. W. FARMER, J. P. K EATING, M. O. RUBINSTEIN, and N. C. S NAITH,\n",
+          "sha256": "49b01540dd9a9a84f9ef95e230b66b25bc27ab48c627bd55d3d74496493f6238"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Moments of L-functions in families",
+            "line_end": 805,
+            "line_start": 667,
+            "mathematical_role": "Transfers the method to unitary, symplectic, and orthogonal families and isolates the prime-square contribution that shifts the Gaussian center."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 804,
+          "line_start": 779,
+          "title": "Gaussian centers distinguish unitary, symplectic, and orthogonal families",
+          "unit_id": "full_openalex_w1986386529_u16",
+          "unit_type": "symmetry-type synthesis and obstruction",
+          "why_material": "Synthesizes the three transfers as common Gaussian variance with symmetry-dependent means and identifies zeros near the central point as the extra obstacle to recovering full Selberg-type analogues."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The distribution statements are conjectural comparisons; the fixed-deviation upper bound is GRH-conditional and the stronger analogue needs an additional zero-avoidance assumption.",
+          "representation_dependency": "Mean and variance constants are display/OCR sensitive, but their signs, family ordering, and zero-proximity limitation are readable.",
+          "unit_id": "full_openalex_w1986386529_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 778,
+            "line_start": 732,
+            "title": "Prime squares shift the center oppositely for elliptic-curve twists",
+            "unit_id": "full_openalex_w1986386529_u15",
+            "unit_type": "symmetry-sensitive family transfer",
+            "why_material": "Repeats the explicit-formula architecture with elliptic-curve coefficients and finds a negative half-log-log prime-square contribution, producing the orthogonal-family moment exponent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same prime-polynomial architecture transfers across families, while the negligible, positive, or negative prime-square term tracks the unitary, symplectic, or orthogonal shift in the expected Gaussian center.",
+            "limit": "The family arguments are sketches under GRH, exact constants are formula-sensitive, and the stronger Selberg analogues additionally require control of near-central zeros.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u13",
+              "full_openalex_w1986386529_u14",
+              "full_openalex_w1986386529_u15",
+              "full_openalex_w1986386529_u16"
+            ],
+            "title": "Prime-square mass predicts the family-dependent center"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "16003d253a62db06cbe24fd9379c0cc39c9310dd04a446d72e012e4552261c01"
+}

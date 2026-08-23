@@ -1,0 +1,172 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2023889974",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2023889974_c8d61721_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The kernel is designed backward from three downstream jobs--functional-equation symmetry, horizontal contour decay, and positivity for central multiplicity--then realized by infinite convolution and a positivity-preserving transform factor.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2023889974_v2u08",
+          "full_openalex_w2023889974_v2u09",
+          "full_openalex_w2023889974_v2u12",
+          "full_openalex_w2023889974_v2u13"
+        ],
+        "proposed_limit": "The construction proves existence with sufficient decay and positivity; it does not claim optimality or uniqueness.",
+        "source_id": "openalex_w2023889974",
+        "synthesis_id": "riemann_v2_within_c06402b6cae3480216d933ed",
+        "title": "Test-function design as interface matching"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The later construction in lines 695-794 is selected separately from this interface-level specification.",
+          "line_end": 448,
+          "line_start": 421,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: conditions (14)-(16) are the unit's contract and are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains why classical test functions are unsuitable and specifies a smooth compactly supported kernel whose transform decays off center, has nonnegative real part in a strip, and is symmetric about the central point after scaling.",
+          "source_id": "openalex_w2023889974",
+          "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A nonclassical kernel matched to decay, symmetry, and positivity needs",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u08.txt",
+          "unit_bytes": 1551,
+          "unit_id": "full_openalex_w2023889974_v2u08",
+          "unit_sha256": "5bb27acaf7ba46d850c854db7e2da927fe950bb29a218c16fd4232289494eadf",
+          "unit_type": "test-function design specification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is an interface specification: spatial support, transform decay, positivity, and reflection symmetry are co-designed because each property serves a distinct step of the explicit-formula argument.",
+            "nonparaphrase_operation": "The centered, scaled Laplace transform bridges a real compactly supported kernel to a spectral weight on zeros; evenness becomes symmetry about the central point.",
+            "quality_reason": "The span explains that the later explicit formula needs a nonclassical test function and specifies evenness, nonnegativity, smooth compact support, normalization, transform decay, strip nonnegativity, scaling, and reflection about s=1. The candidate correctly assigns distinct downstream roles to support, decay, positivity, and symmetry while noting that construction is postponed.",
+            "source_support": "Proposition 2 asks for an even, nonnegative C-infinity function f, normalized by f(0)=1 and compactly supported in [-B,B]. Its Laplace transform F must have subexponential decay of the displayed |s|^(3/4) form, up to growth in |Re s|, and satisfy Re F(s)>=0 for |Re s|<1. Scaling f by lambda gives phi_lambda(s)=lambda F(lambda(s-1)) and phi_lambda(s)=phi_lambda(2-s).",
+            "speculation_status": "The unit states existence and required properties but postpones construction. It does not claim the kernel is unique, optimal, or interchangeable with classical test functions. Conditions (14)-(16) are formula-dependent, but their signs, strip, symmetry, and qualitative decay are legible; exact constants c3,c4 and typography should be scan-checked before reuse. Calling this a backward-designed interface is a substantive reading of the explicit statement that the requirements rule out classical test functions. The precise constants and inequality typography in (14)-(16) remain formula-sensitive, but the candidate does not overclaim them."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the analytic bridge from a kernel to a weighted zero sum; evaluation of the vertical integral follows in the next unit.",
+          "line_end": 518,
+          "line_start": 454,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: contour orientation, transforms, and error decay depend on displayed formulas (17)-(19).",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a zero-avoiding rectangle, log-derivative bounds, functional-equation antisymmetry, and kernel symmetry to replace a finite contour by an infinite vertical integral plus a tunable small error.",
+          "source_id": "openalex_w2023889974",
+          "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Symmetric contour formula with controlled horizontal tails",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u09.txt",
+          "unit_bytes": 3145,
+          "unit_id": "full_openalex_w2023889974_v2u09",
+          "unit_sha256": "ef8d49bb20ff89afe782254e47a262c04eccee7d65627905486b7bb69182dd86",
+          "unit_type": "explicit-formula contour reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry is used as a computational quotient: two contour sides carrying mirrored information collapse to one. The kernel's decay then controls exactly the part discarded when the finite contour is extended.",
+            "nonparaphrase_operation": "The logarithmic derivative converts zeros into residues, and the test kernel converts the raw zero multiset into a weighted statistic that can later be expressed through conductor and prime terms.",
+            "quality_reason": "The span chooses zero-avoiding contours with logarithmic-derivative control, converts zeros to residues, uses functional-equation and kernel symmetry to combine vertical sides, and controls horizontal and infinite-tail errors by transform decay. The candidate correctly stops at the infinite vertical integral and retains the d-dependent contour height and tail error.",
+            "source_support": "For each d, a height T_d near a common T is chosen so the rectangle boundary avoids poles of Lambda'/Lambda and obeys a log-squared bound. Cauchy's theorem equates the contour integral of (Lambda'/Lambda)phi_lambda to the sum of phi_lambda over nontrivial zeros inside. The functional equation and phi_lambda(s)=phi_lambda(2-s) combine the vertical sides, while the transform decay bounds horizontal sides and replaces the finite vertical segment by the full line with an explicit exponentially decaying error.",
+            "speculation_status": "This unit reaches the infinite vertical integral but does not evaluate it or yet isolate central multiplicity. The chosen T_d varies with d, and all claims retain the displayed tail error. Contour orientation and constants in (17)-(19) are OCR-sensitive; the residue identity, symmetry reduction, and qualitative error dependence are nevertheless explicit. Describing symmetry as quotienting two mirrored contour sides into one is a faithful conceptual compression of the displayed calculation. Contour orientation and constants in (17)-(19) are OCR-sensitive, which the candidate explicitly acknowledges."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The final multiplication by a hyperbolic-secant factor preserves the needed spatial properties and strengthens the decay condition.",
+          "line_end": 768,
+          "line_start": 695,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: derivative and Laplace-transform estimates (30)-(32) require formula recovery; prose preserves the construction.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Constructs a smooth even nonnegative compactly supported function from scaled tents, derives factorial-logarithmic derivative bounds, and optimizes repeated integration by parts to obtain the required transform decay.",
+          "source_id": "openalex_w2023889974",
+          "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Infinite convolution gives compact support and subexponential transform decay",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u12.txt",
+          "unit_bytes": 3633,
+          "unit_id": "full_openalex_w2023889974_v2u12",
+          "unit_sha256": "0d967179ce805272f9c81a379d885e5b826f4bec947309f4af399a6002d82fdc",
+          "unit_type": "smooth kernel construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothness and decay are traded quantitatively: the chosen scale sequence controls derivative growth, and optimizing the number of integrations by parts converts that growth profile into the transform exponent.",
+            "nonparaphrase_operation": "Infinite convolution bridges local tent kernels to a compactly supported smooth positive object; Fourier/Laplace transformation and optimized derivative estimates bridge regularity to spectral decay.",
+            "quality_reason": "The span constructs psi as an infinite convolution of scaled tents, obtains compact support, smoothness, evenness, nonnegativity and positive Fourier transform, proves derivative bounds, and optimizes repeated integration by parts for transform decay. The candidate correctly states that multiplication by the hyperbolic-secant-type factor produces f with the required spatial properties and stronger decay, while positivity is deferred.",
+            "source_support": "Scaled tents g_n use a_n=n(log+ n)^omega with 1<omega<=2, and their convolutions converge uniformly to an even, nonnegative C-infinity function psi supported in [-B,B], where B is the convergent sum of a_n^(-1). The Fourier transform remains positive and psi is normalized at zero. Differentiating the convolution gives |psi^(k)| bounded by a factorial times (log k)^(k omega); repeated integration by parts and an optimized k yield subexponential decay for its Laplace transform. Multiplying by a normalized hyperbolic-secant-type factor h preserves the spatial properties and strengthens the required decay for f=psi h.",
+            "speculation_status": "This span proves the construction and decay side of Proposition 2 but leaves strip positivity to the subsequent transform-convolution argument. It gives a sufficient kernel, not an optimality result. Equations (30)-(32) and the OCR rendering of h are formula-sensitive; the scale a_n, convolution construction, support argument, and optimization mechanism are clear from the prose. The stated trade between derivative growth and transform decay is exactly the mechanism of choosing k to minimize the integration-by-parts bound. The derivative/Laplace estimates and the formula for h are OCR-sensitive, as the candidate notes."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This completes Proposition 2 and closes the dependency introduced by the explicit-formula interface.",
+          "line_end": 794,
+          "line_start": 769,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: formula (33) is OCR-fragile, but the convolution and positivity logic are recoverable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Represents the final kernel transform as a convolution with the hyperbolic-secant transform and uses positivity of the first Fourier factor plus the sign of the real part of the second to prove the strip condition.",
+          "source_id": "openalex_w2023889974",
+          "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Strip positivity obtained through a transform convolution",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u13.txt",
+          "unit_bytes": 1126,
+          "unit_id": "full_openalex_w2023889974_v2u13",
+          "unit_sha256": "43a525d72d8ca236f54e4e1363a2d6333c0258b2ee991e8273563709a35d0166",
+          "unit_type": "transform positivity argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Positivity is proved by factorization rather than direct estimation of F: one convolution factor supplies a nonnegative measure-like weight, and the other supplies the pointwise sign in the required strip.",
+            "nonparaphrase_operation": "The product f=psi h becomes convolution after transformation, bridging separately engineered spatial smoothness/compactness and strip-sign control into one test function.",
+            "quality_reason": "The span expresses the transform of f=psi h as a convolution of the positive Fourier transform of psi with the transform of h, computes the relevant real-part sign, and concludes Re F(s)>=0 for |Re s|<1. The candidate correctly limits the result to nonnegativity in the stated strip and does not claim uniqueness, strict positivity, or optimality.",
+            "source_support": "Let H be the Laplace transform of the auxiliary factor h. Because f=psi h, formula (33) expresses F(sigma+it) as a convolution involving the Fourier transform of psi and H(sigma+ix). The text computes the real part of the relevant hyperbolic-secant expression from cos, sin, cosh, and sinh components; since the Fourier transform of psi is positive on the real axis, the convolution has Re F(s)>=0 for |sigma|<1, completing Proposition 2.",
+            "speculation_status": "The argument establishes nonnegativity only in the stated strip and only for this constructed kernel. It does not show strict positivity, uniqueness, or optimal decay. Formula (33) and the explicit transform H are OCR-fragile, but the convolution identity and the sign argument using positive Fourier transform are recoverable from the source prose. Describing the factorization as assigning nonnegative weighting to one factor and strip-sign control to the other is a faithful mechanism-level interpretation. Formula (33) and the explicit hyperbolic-secant transform are OCR-fragile, but the prose supports the convolution-sign argument."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "bba95fe58599b7e59d511f61cf571b25cab2fe67d3643d41c45b85fb8064fb96"
+}

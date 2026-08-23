@@ -1,0 +1,170 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2950846448",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2950846448_f5d569cb_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "After separating family arithmetic and conductor scaling, g_k simultaneously measures failure of a single length-T Dirichlet polynomial to capture zeta moments and arises as a symmetry-specific characteristic-polynomial limit.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2950846448_u07",
+          "full_openalex_w2950846448_u08",
+          "full_openalex_w2950846448_u09",
+          "full_openalex_w2950846448_u10"
+        ],
+        "proposed_limit": "This is a conceptual identification supported by matching conjectures; it is not an equality derived between the two models in the source.",
+        "source_id": "openalex_w2950846448",
+        "synthesis_id": "riemann_v2_within_c701ce1957867fb8736ebf8d",
+        "title": "The universal moment constant bridges Dirichlet polynomials and random matrices"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the moment normalization, the Montgomery-Vaughan length restriction, and the comparison polynomial; these are all needed for the interpretation.",
+          "line_end": 123,
+          "line_start": 31,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: key formulas are text-layer readable, while some typography should be checked against the scan before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates the arithmetic Euler-product factor a_k from g_k and gives g_k an operational meaning as how many length-T polynomial approximations are needed to capture the moment.",
+          "source_id": "openalex_w2950846448",
+          "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The universal factor g_k measures the gap beyond a length-T Dirichlet polynomial",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u07.txt",
+          "unit_bytes": 6196,
+          "unit_id": "full_openalex_w2950846448_u07",
+          "unit_sha256": "ad4a826f184df840b645fef3f32d4a3fe4b3860f0ea118d41293127d47ef1798",
+          "unit_type": "moment decomposition and operational interpretation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The moment normalization separates the arithmetic Euler-product factor a_k from g_k, then gives g_k an operational meaning by comparing the full zeta moment with the mean square of the length-T Dirichlet polynomial built from the coefficients of zeta(s)^k. Thus g_k measures the gap between one such comparison polynomial and the conjectured full moment, without being a proved count of literal polynomial pieces.",
+            "nonparaphrase_operation": "Factor the moment into an arithmetic baseline and a residual multiplier, then compare two representations of zeta(s)^k: the full analytic object and its coefficient truncation. The comparison makes g_k diagnostically meaningful but does not identify a literal decomposition or the analytic correlations responsible for the gap.",
+            "quality_reason": "Accepted after distinguishing the N much smaller than T regime from the separately chosen length-T comparison and removing the unsupported label 'global correlation factor'; the interpretation retains the concrete normalization and comparison mechanism.",
+            "source_support": "The span states the conjectural formula I_k(T) asymptotic to g_k a_k/Gamma(1+k^2) times log(T)^(k^2), defines d_k(n) through zeta(s)^k, recalls that standard asymptotic use of Montgomery-Vaughan usually needs N much smaller than T, and separately evaluates the chosen length-T comparison polynomial with the same a_k/Gamma normalization but without g_k.",
+            "speculation_status": "The general zeta-moment asymptotic and most values of g_k are conjectural; the source presents the length-T polynomial comparison as easy to show and the 'how many polynomials' phrase as intuition. Exact display typography remains unsafe to reuse without scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The preceding small-k examples motivate the abstraction; the span ends before specializing to a symmetry class.",
+          "line_end": 155,
+          "line_start": 129,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: the template formula has extraction noise, but every parameter's role is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Distinguishes symmetry-controlled g_k and B(k), family-specific arithmetic a_k, and functional-equation scaling A in a reusable family template.",
+          "source_id": "openalex_w2950846448",
+          "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A parameter dictionary for family mean-value conjectures",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u08.txt",
+          "unit_bytes": 1782,
+          "unit_id": "full_openalex_w2950846448_u08",
+          "unit_sha256": "1fb49408e49e3c498628f91317fe9725075a6592bcbda2692de7ec8c6bc672dd",
+          "unit_type": "family moment template",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The family moment template is a parameter dictionary rather than a single undifferentiated conjecture: symmetry type supplies the observable V, exponent B(k), and universal factor g_k; family arithmetic supplies a_k; conductor supplies the ordering variable Q; and the scale exponent A depends on symmetry type together with the degree of the functional equation in the relevant parameter.",
+            "nonparaphrase_operation": "Decompose a family average into observable, universal symmetry, local arithmetic, and scaling components. This supports comparisons that hold some components fixed while varying others, but it does not show that these parameters exhaust every possible family effect.",
+            "quality_reason": "Accepted after correcting the determinant of A: Q is the conductor-ordering variable, whereas A depends on symmetry and functional-equation degree. The explicit factorization supplies a substantive comparison operation beyond paraphrase.",
+            "source_support": "The span orders a family by conductor c(f), counts members up to Q by Q-star, normalizes L-functions around the critical value 1/2, and explicitly assigns V, B(k), g_k, a_k, and A to the roles described. It states that g_k and B(k) depend only on symmetry type and that a_k depends on the family.",
+            "speculation_status": "The displayed family mean value is a template for conjectures, and the span states rather than proves the claimed integrality of the symmetry parameters. The parameter roles are prose-supported, while exact placement of symbols in the extracted formula remains layout-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also separates the family arithmetic factor from the still-mysterious g_k and introduces the random-matrix route.",
+          "line_end": 290,
+          "line_start": 257,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: prose fixes the comparison despite imperfect product-formula extraction.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Completes the symmetry trichotomy with |L|^{2k}, B(k)=k^2, doubled conductor scaling, and the interpretation of zeta shifts as a unitary family.",
+          "source_id": "openalex_w2950846448",
+          "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Unitary moments complete the O-Sp-U parameter comparison",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u09.txt",
+          "unit_bytes": 2179,
+          "unit_id": "full_openalex_w2950846448_u09",
+          "unit_sha256": "e7abf07596597b0da96826aa5844d74a48977dc95672939eb66c429edef6ed49",
+          "unit_type": "symmetry comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unitary entry in the common moment scheme uses the absolute-square observable and exponent k^2, with the scale doubled relative to the relevant functional-equation degree. Dirichlet-character families instantiate the entry, while vertical shifts of zeta are offered as an analogous one-object unitary family; this analogy bridges t-averaging and family averaging without making them literally the same construction.",
+            "nonparaphrase_operation": "Transport the unitary family template from conductor-ordered characters to vertical zeta averages and isolate which roles are symmetry-controlled versus family-specific. This gains a route for comparing the two averaging settings but loses literal conductor variation in the zeta-shift analogy.",
+            "quality_reason": "Accepted after restricting the grounded claim to the unitary entry, qualifying the wider trichotomy as context, and avoiding reconstruction of OCR-sensitive scale notation and Euler-product typography.",
+            "source_support": "The span explicitly gives V(z)=|z|^2 and B(k)=k^2 for unitary families, describes the conductor scale in prose as twice the relevant degree, presents Dirichlet characters as the example, and says zeta shifts may be thought of as their own unitary family. It also separates a family-specific a_k from the still-mysterious g_k and announces random-matrix conjectures for g_k.",
+            "speculation_status": "The mean values and random-matrix values of g_k are conjectural apart from selected small-k cases. Completion of the wider orthogonal-symplectic-unitary comparison is contextual inference, and the doubled-scale relation is retained only at prose level because the extracted symbols collide."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The GUE motivation and three parallel limit formulas form one comparison unit.",
+          "line_end": 350,
+          "line_start": 308,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: exact product factors depend on displayed formulas and require scan verification, but the transfer and normalization rationale are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Maps each symmetry type to a large-rank Gamma-product limit and explains why the Gamma(1+B(lambda)) normalization is retained to preserve arithmetic meaning and integral special values.",
+          "source_id": "openalex_w2950846448",
+          "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Characteristic-polynomial limits predict the universal constants",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u10.txt",
+          "unit_bytes": 3176,
+          "unit_id": "full_openalex_w2950846448_u10",
+          "unit_sha256": "99bcdfefa992a88a105108a67e6b2576486bd6c7bd5f2008b5e7dec8bac9bd4b",
+          "unit_type": "random-matrix transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Random-matrix theory supplies three symmetry-indexed large-rank Gamma-product limits as conjectural representations of the constants g_lambda. The GUE analogy for zeros motivates the approach, but it is logically separate from the announced constant formulas. Keeping Gamma(1+B(lambda)) outside the normalized limit preserves the arithmetic interpretation and positive-integer integrality of g_k.",
+            "nonparaphrase_operation": "Separate motivation from transfer, arrange the three Gamma-product limits by symmetry class, and compare their normalization with arithmetic moment conventions. The random-matrix representation makes symmetry dependence calculable, but it does not derive L-function moments or the constants from the GUE zero analogy.",
+            "quality_reason": "Accepted after replacing the unsupported characteristic-polynomial language with the source-bounded Gamma-product description and keeping the GUE motivation distinct from the formulas it inspires.",
+            "source_support": "The span first describes the zeros/eigenvalues GUE conjecture and its computational corroboration, then records separate unitary, orthogonal, and symplectic Gamma-product limit conjectures with their B-functions. It says the formulas agree with known and conjectured integer values and explicitly explains why the Gamma normalization is not absorbed into g_lambda.",
+            "speculation_status": "All three g_lambda transfers are presented as conjectures; agreement with known or conjectured g_k values is calibration rather than proof. The existence and roles of the parallel limits are readable, but their exact product factors require page-image verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a815a2f61d5a267e0ce5805f404786cc9ddb807ad079ef894d10129bd83fc18a"
+}

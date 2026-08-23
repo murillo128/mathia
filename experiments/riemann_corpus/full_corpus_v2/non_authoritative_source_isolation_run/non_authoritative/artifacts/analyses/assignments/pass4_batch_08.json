@@ -1,0 +1,3182 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated generation context",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_batch_08.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_08.jsonl",
+    "pass3": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_08.jsonl"
+  },
+  "unit_count": 69,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The displayed product for p_N ends exactly at line 113, immediately before the immutable v1 comparison unit.",
+      "line_end": 113,
+      "line_start": 90,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Two-column layout interleaves prose and formulas, but the characteristic-polynomial definition and scale match are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the CUE characteristic polynomial, fixes the local interval correspondence, and explains why N is matched with log T through zero and eigenvalue densities.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mean-density matching identifies the CUE scale for local zeta values",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_v2_u04.txt",
+      "unit_bytes": 2679,
+      "unit_id": "openalex_w1986417812_v2_u04",
+      "unit_sha256": "6aa6bc441b3bd5e7f445b1ae36d3e1a8db2717f41fcdffdd3a1184e488c692ea",
+      "unit_type": "model setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source's two columns interleave the derivation with the beginning of the zeta numerical discussion; both are source-visible but the left-column mathematical chain is coherent.",
+      "line_end": 240,
+      "line_start": 172,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent and column-interleaved; verify exact Barnes-function constants and convergence thresholds against the PDF before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expresses integer moments of the CUE partition function through Toeplitz determinants, applies their asymptotics, and obtains the same moment form as the periodic one-over-f noise model.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Toeplitz moments identify the circular logarithmic partition function",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_v2_u05.txt",
+      "unit_bytes": 6208,
+      "unit_id": "openalex_w1986417812_v2_u05",
+      "unit_sha256": "99095871ef7450a6abc155a3196ecd9f7548f606b5b8da25f32e7c01fb3085fa",
+      "unit_type": "moment bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is empirical support for a model choice, not a theorem about zeta extremes.",
+      "line_end": 227,
+      "line_start": 189,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Two-column extraction interleaves equations from the CUE derivation; the data protocol, alternatives, and conclusion are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Describes the fixed-length zeta computation and compares the observed mean with the c=3/2 log-correlated prediction and the c=1/2 short-range prediction, finding the former substantially closer.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The mean maximum favors the log-correlated three-halves correction",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_v2_u06.txt",
+      "unit_bytes": 3559,
+      "unit_id": "openalex_w1986417812_v2_u06",
+      "unit_sha256": "a0392164d7dcb4823c863792369032a11c44b312549100bd92a092dcad257948",
+      "unit_type": "numerical discrimination",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the immutable prediction unit because the source prints theory and evidence in parallel columns.",
+      "line_end": 269,
+      "line_start": 240,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The page layout interleaves theory and experiment, but the caveat and tail discussion are prose-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares the normalized zeta-maximum distribution with the predicted density, emphasizes slow convergence and omitted lower-order arithmetic terms, and rejects treating the agreement as conclusive.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Distributional zeta numerics are supportive but slow and arithmetically incomplete",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_v2_u07.txt",
+      "unit_bytes": 3899,
+      "unit_id": "openalex_w1986417812_v2_u07",
+      "unit_sha256": "c92830fcb909335303c8d762a0fac2f233458bb19e7ea643f2df1c1bcf63bcea",
+      "unit_type": "evidence limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact span necessarily contains figure coordinates and interleaved references because of two-column extraction; the definition at lines 261-269 and result at lines 339-347 are both readable.",
+      "line_end": 347,
+      "line_start": 261,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong layout dependency; use the original PDF for the plotted data and exact lower-order renormalization, while the qualitative freezing test is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the fixed-window zeta analogue of the partition function and reports that its normalized free energy follows beta+1/beta below beta=1 and remains near 2 above it.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta partition-function free energy exhibits the predicted freezing plateau",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_v2_u08.txt",
+      "unit_bytes": 10158,
+      "unit_id": "openalex_w1986417812_v2_u08",
+      "unit_sha256": "76c382168933a2cf2c907d474dbcbe0998ed33681cf063f00829ea389e26c6a5",
+      "unit_type": "direct model test",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Reference text is interleaved in the right column, but the conclusion runs continuously in the left column.",
+      "line_end": 360,
+      "line_start": 349,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is recoverable despite column interleaving.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Concludes that the random-energy, CUE, and zeta connection is speculative and promises fuller calculations rather than presenting the numerical comparisons as proof.",
+      "source_id": "openalex_w1986417812",
+      "source_normalized_sha256": "341e08b757e8a1b07c32df6680bd736855339e81e112122cb97f44876adedd19",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Freezing is proposed as a shared explanatory model, not established for zeta",
+      "unit_artifact_relpath": "depth/units/openalex_w1986417812_v2_u09.txt",
+      "unit_bytes": 1746,
+      "unit_id": "openalex_w1986417812_v2_u09",
+      "unit_sha256": "f97f3538ddbe1e42b5e8da6e4242db25e1a88c6dffa162bc95c27df8218b3b90",
+      "unit_type": "epistemic conclusion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986417812_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w1986417812",
+        "title": "Freezing Transition, Characteristic Polynomials of Random Matrices, and the Riemann Zeta Function",
+        "authors": [
+          "Yan V. Fyodorov",
+          "Ghaith A. Hiary",
+          "Jonathan P. Keating"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "heuristic-bridge",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the mediant structure and cardinality only insofar as they fix the normalized sequence being studied.",
+      "line_end": 90,
+      "line_start": 16,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several summation formulas are extracted cleanly; the exact pi factor in the asymptotic is not material to the mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines Farey fractions and their normalized deviations, then places the program beside the equivalent Mertens and Chebyshev square-root error estimates.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Farey discrepancy connects point distribution to two classical RH errors",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u05.txt",
+      "unit_bytes": 4023,
+      "unit_id": "openalex_w3021765094_v2_u05",
+      "unit_sha256": "d6e88f70406e705cb5e7340e24a120a8aaf21851eb8aafc42d9104d73f459f45",
+      "unit_type": "problem representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This motivates, rather than proves, the later equivalences.",
+      "line_end": 127,
+      "line_start": 94,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Weyl-limit and error-sum notation are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives equidistribution by Farey counting and defines full- and short-interval errors whose direct control might encode RH for broad function classes.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform distribution errors become a possible RH interface",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u06.txt",
+      "unit_bytes": 1938,
+      "unit_id": "openalex_w3021765094_v2_u06",
+      "unit_sha256": "88f470061902885699ab5356bec922b9d974c0b99b614fcd6714ce4e418a17fb",
+      "unit_type": "research program",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The forward direction uses analytic continuation of the partial-summation integral; the reverse invokes the Mertens formulation.",
+      "line_end": 293,
+      "line_start": 231,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dirichlet-series and partial-summation formulas are central and legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines S_s as a convolution, identifies its Dirichlet series as zeta(z+s)/zeta(z), and proves the square-root estimate is equivalent to the absence of zeta zeros to the right of one half.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Mobius convolution has RH exactly when its Dirichlet quotient is zero-free",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u07.txt",
+      "unit_bytes": 2782,
+      "unit_id": "openalex_w3021765094_v2_u07",
+      "unit_sha256": "691104685de15bbd6043abe66c5d21b6845b77d03e74bdad074634f7e903fcc7",
+      "unit_type": "analytic equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the counting specialization and the S_{-1}, S_0 identities.",
+      "line_end": 343,
+      "line_start": 294,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Nested sums are readable; proof is routine but the transform is highly reusable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites any Farey sum below xi as a convolution of M(x/n) with an unrestricted inner sum V_xi(n), creating the common arithmetic interface used throughout the paper.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mobius inversion removes Farey coprimality",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u08.txt",
+      "unit_bytes": 2463,
+      "unit_id": "openalex_w3021765094_v2_u08",
+      "unit_sha256": "52bd933ebf33c4b39eff8f820fb467321207eabaf84d2a86de654d2eb1718764",
+      "unit_type": "combinatorial transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The general formula is retained because it explains why the classical criteria are not isolated coincidences.",
+      "line_end": 434,
+      "line_start": 347,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dense but coherent; exact Bernoulli indices are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands truncated power sums via Bernoulli polynomials and shows that the centered full second and third moments reduce to S(x), hence each gives an RH-equivalent bound.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bernoulli expansion makes power moments linear in RH-sensitive S_s",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u09.txt",
+      "unit_bytes": 3966,
+      "unit_id": "openalex_w3021765094_v2_u09",
+      "unit_sha256": "90f988d1836f56da94c3927e88da752b6b9f2e7daef5b1ebc611059a6c21deb5",
+      "unit_type": "moment decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This lemma is the transfer engine behind all fixed rational short-interval criteria.",
+      "line_end": 518,
+      "line_start": 471,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Signs and scale factors are formula-dependent but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splits S_s into divisible residue components and gives telescoping series that reconstruct the full sum from a difference at scales x and x/N, with an analogous Chebyshev statement.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nondivisible and odd parts retain the same growth information",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u10.txt",
+      "unit_bytes": 2734,
+      "unit_id": "openalex_w3021765094_v2_u10",
+      "unit_sha256": "861ef1c6223b37d2b9af4ac5d51bb3f6e0c7c46ee5c2f7aa9c88a7cd5a254f22",
+      "unit_type": "reconstruction lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also explains why the bounded error should not be casually improved to o(1).",
+      "line_end": 608,
+      "line_start": 557,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One identity has crowded nested sums but prose preserves the equivalence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Makes the O(1) remainder explicit, relates cumulative delta_nu to the centered short-interval sum, and invokes Landau's maximal discrepancy theorem to recover an RH equivalence.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial Farey discrepancy is the cumulative centered-sum statistic",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u11.txt",
+      "unit_bytes": 2341,
+      "unit_id": "openalex_w3021765094_v2_u11",
+      "unit_sha256": "57589295fb9f85dc6f982c01bb1486953923015b59594c686ea1bc2bfc0b5f34",
+      "unit_type": "equivalence bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the proof mechanism completing the preceding immutable v1 statement.",
+      "line_end": 693,
+      "line_start": 664,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Congruence-indexed sums are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Computes T(1/3,x) by residue classes and identifies it with S(x)-S(x/3)/3, after which the telescoping lemma transfers the RH estimate.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residues modulo three explain the one-third criterion",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u12.txt",
+      "unit_bytes": 1240,
+      "unit_id": "openalex_w3021765094_v2_u12",
+      "unit_sha256": "88bbd3cae962d9b274fdca619381c27b3dd2ffc13d9a968a0f3856642017c20e",
+      "unit_type": "congruence decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A negative result about the naive statistic, not a failure of the centered criteria.",
+      "line_end": 795,
+      "line_start": 730,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Residue-class formulas are dense but the stated inability to treat the remaining term is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Computes h(1/3) and h(1/4) down to unresolved residue-restricted Mobius sums, showing why subtracting a raw one-third or one-quarter bulk term loses a subtle arithmetic component.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The correct centering cannot generally be replaced by the interval length",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u13.txt",
+      "unit_bytes": 3196,
+      "unit_id": "openalex_w3021765094_v2_u13",
+      "unit_sha256": "ad65cdc880f974d5370075b12dff6ca5edf34270c78a441d71b951bd6b31cf49",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The page break interrupts the displayed identity but its variables and conclusion are recoverable.",
+      "line_end": 829,
+      "line_start": 798,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate PDF formula risk at the page break; prose and the full identity remain legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines K_s by its distribution relation and records bases by polylogarithms or Hurwitz zeta functions together with the extension to R/Z.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kubert identities create a two-dimensional parity-controlled function space",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u14.txt",
+      "unit_bytes": 1798,
+      "unit_id": "openalex_w3021765094_v2_u14",
+      "unit_sha256": "ddfc612181648b8a080ad3055636e94e03f54bcc6e3472cca5459da1d5f08251",
+      "unit_type": "function-class definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof uses both the Kubert identity at zero and the general coprimality-removal lemma.",
+      "line_end": 943,
+      "line_start": 830,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several gcd and double-sum displays are formula-dependent but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives single- and double-Farey-sum formulas for any extended Kubert function and identifies the logarithmic sine case with Chebyshev's function.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kubert distribution turns Farey sums into gcd-weighted Mobius sums",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u15.txt",
+      "unit_bytes": 5184,
+      "unit_id": "openalex_w3021765094_v2_u15",
+      "unit_sha256": "4c26ffbfbdc0b7fb14f7613e24a550f9872400d95b8bc426b1a073baa48af9ff",
+      "unit_type": "summation transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exclusion of odd functions is essential because their symmetric full-interval sum vanishes identically.",
+      "line_end": 1095,
+      "line_start": 944,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Fourier and special-function formulas are dense; theorem status and parameter restrictions are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializes the Kubert transform, proves the nonodd K_s criterion for real part at least three halves, and translates it into several familiar functional bases.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        17,
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Polylogarithm, Hurwitz-zeta, Bernoulli, and Clausen sums all encode RH",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u16.txt",
+      "unit_bytes": 7163,
+      "unit_id": "openalex_w3021765094_v2_u16",
+      "unit_sha256": "a5100f3dfe8b7fe42c7fd02a4230860a71870be45367fdfb191ce9b55540fbb0",
+      "unit_type": "family of equivalent criteria",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Cotangent is noted as an immediate analogue rather than a separate mechanism.",
+      "line_end": 1151,
+      "line_start": 1096,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Product formulas and logarithmic sums are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses finite tangent products and Mobius inversion to express the Farey sum as one half of psi(x)-psi(x/2), producing another RH-equivalent estimate.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A half-interval log-tangent sum is a Chebyshev difference",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u17.txt",
+      "unit_bytes": 2444,
+      "unit_id": "openalex_w3021765094_v2_u17",
+      "unit_sha256": "d9ae576ade6111af72c14203837aacfeadaab588c9085938cb109c24dcf7da58",
+      "unit_type": "trigonometric criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is lengthy because it audits integral and nonintegral cases; those cases are part of the exact correction term.",
+      "line_end": 1283,
+      "line_start": 1155,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This is the most formula-sensitive span; the mathematics is recoverable, but scan verification is advisable before quoting exact signs or gcd coefficients.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the modified generalized Dedekind sum, proves its cyclic three-term relation with gcd corrections, and prepares the symmetrization needed for Franel's identity.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A three-term generalized Dedekind relation controls pairwise Bernoulli sums",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u18.txt",
+      "unit_bytes": 7013,
+      "unit_id": "openalex_w3021765094_v2_u18",
+      "unit_sha256": "1115b2e9b51fa5e0fe6127e585265ea37bd44c9989b90ca6cf2c6adc5f15e955",
+      "unit_type": "structural identity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This explains the origin of the formula rather than merely restating its RH consequence.",
+      "line_end": 1435,
+      "line_start": 1284,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense triple sums are text-layer recoverable with formula risk; the proof's transformation sequence is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands each Farey deviation using Bernoulli sums, applies the Dedekind relation cyclically, and reduces the resulting gcd sums to the exact Franel formula.",
+      "source_id": "openalex_w3021765094",
+      "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+      "source_page_markers_inside_unit": [
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Franel's quadratic discrepancy comes from cyclic Dedekind symmetrization",
+      "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u19.txt",
+      "unit_bytes": 7003,
+      "unit_id": "openalex_w3021765094_v2_u19",
+      "unit_sha256": "998f46fe892bdfa0f6d32224e75f18b76abf1cc0efc8eb025e575a2787668e16",
+      "unit_type": "identity derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w3021765094",
+        "title": "Farey series and the Riemann hypothesis",
+        "authors": [
+          "Shigeru Kanemitsu",
+          "Masato Yoshimoto"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "grh",
+          "l-functions",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes rationality and the functional equation because the converse point-count argument uses reciprocal roots.",
+      "line_end": 116,
+      "line_start": 36,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but cleanly extracted; exact Euler factors, inverse-root convention, and point-count identity are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns the function-field zeta function into the curve generating function, factors its numerator, and proves equivalence between root modulus q^(1/2) and square-root cancellation in every extension-field point count.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Curve zeta zeros are Frobenius weights and point-count errors",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u01.txt",
+      "unit_bytes": 4986,
+      "unit_id": "milne2015_rh_finite_fields_v2_u01",
+      "unit_sha256": "a42b44a5c1f04008c6d939c84c7fcf8e1ef9211da3472a61f47a474bb2459e95",
+      "unit_type": "equivalent reformulation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u01.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical transition into the proof is retained so the role of the endomorphism ring is explicit.",
+      "line_end": 172,
+      "line_start": 123,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses Tate modules, determinants, and degree formulas; extraction is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Encodes an endomorphism by its Tate-module characteristic polynomial and obtains the discriminant inequality from nonnegativity of degrees of m-n alpha, then applies it to Frobenius.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Degree positivity proves the elliptic-curve bound",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u02.txt",
+      "unit_bytes": 2831,
+      "unit_id": "milne2015_rh_finite_fields_v2_u02",
+      "unit_sha256": "38d9b34b1cc0cbc2e1b806e90f948e7a4fcf070a6804a374e4da77a4fef0ff3a",
+      "unit_type": "prototype proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u02.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the conceptual entry to Weil's correspondence method rather than a complete proof.",
+      "line_end": 218,
+      "line_start": 182,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One fixed-point formula carries the mechanism; prose fixes all roles.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Recasts Hurwitz's coincidence formula as diagonal intersection equal to an alternating trace and identifies the missing algebraic object in positive characteristic as the trace on first homology.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coincidence counts become traces of correspondences",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u03.txt",
+      "unit_bytes": 2204,
+      "unit_id": "milne2015_rh_finite_fields_v2_u03",
+      "unit_sha256": "42e43e1e78bfd8afd67601d1388172fbfd8e3d0e5a39fe16aa08e6d269a9d123",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u03.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical quotations are retained because they identify exactly why the representation was changed.",
+      "line_end": 327,
+      "line_start": 219,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; trace and defect formulas are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts Weil's 1940 torsion/Jacobian heuristic with the 1941 definition of trace by fixed points and the realization that the needed positivity could be proved on the product surface.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        5,
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From torsion trace to intersection positivity on C times C",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u04.txt",
+      "unit_bytes": 7472,
+      "unit_id": "milne2015_rh_finite_fields_v2_u04",
+      "unit_sha256": "40693de818d7ade5460928213a8c9aa9938930b80fc17f46c53ba99b5d8210bb",
+      "unit_type": "method evolution",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u04.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The setup is included because severing it would leave the numerical intersection space and positivity index undefined.",
+      "line_end": 480,
+      "line_start": 329,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense divisor notation is readable; no scan-only figure is required.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Develops divisors, intersection products, surface Riemann-Roch, and the contrapositive proof that classes orthogonal to a hyperplane have nonpositive square.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        7,
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Roch yields the Hodge index negativity mechanism",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u05.txt",
+      "unit_bytes": 7781,
+      "unit_id": "milne2015_rh_finite_fields_v2_u05",
+      "unit_sha256": "ece05279cdfcbf9fc16897fe0bec3140435b69f4f9dd29ff63847880d8447eea",
+      "unit_type": "geometric foundation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u05.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the exact positivity instrument consumed by the curve proof.",
+      "line_end": 544,
+      "line_start": 483,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Intersection formulas are central and cleanly recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies index-one intersection geometry on a product of curves to derive D squared at most 2d1d2 and its Cauchy-Schwarz-type defect inequality, including the graph computation.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Hodge index theorem produces the Castelnuovo-Severi defect",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u06.txt",
+      "unit_bytes": 2442,
+      "unit_id": "milne2015_rh_finite_fields_v2_u06",
+      "unit_sha256": "75cc6239e952fb3b49a1acf16c42a06cf1d83b279079c8b0bdc22f9cec926c9c",
+      "unit_type": "inequality derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u06.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The aside clarifies that finite-field arithmetic enters only at the final identification after a geometric proof over the algebraic closure.",
+      "line_end": 559,
+      "line_start": 545,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Short formula-dependent span; exact bound and graph count are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Substitutes the diagonal and Frobenius graph into the defect inequality to obtain the 2g q^(1/2) point-count bound.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Frobenius graph intersection gives the curve Riemann hypothesis",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u07.txt",
+      "unit_bytes": 812,
+      "unit_id": "milne2015_rh_finite_fields_v2_u07",
+      "unit_sha256": "5550f679c0206061641cde8821eaaff0358a1b086649c17890642aeccb6e47b7",
+      "unit_type": "proof completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u07.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Shows that two apparently different proofs use the same positive quantity.",
+      "line_end": 601,
+      "line_start": 561,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Composition and intersection notation are essential but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines composition in the correspondence ring and computes sigma(D composed with D transpose) as the nonnegative defect, unifying the trace and intersection formulations.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Correspondence trace positivity is the equivalence defect",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u08.txt",
+      "unit_bytes": 1771,
+      "unit_id": "milne2015_rh_finite_fields_v2_u08",
+      "unit_sha256": "07029310e75500aecdd4283d539ddf6ca0d5f8315720f51a76a62fce15be7425",
+      "unit_type": "structural identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u08.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span preserves the hypotheses and the distinction between the direct inequality and later cohomological treatment of Artin L-series.",
+      "line_end": 668,
+      "line_start": 604,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some determinant typography is imperfect, but prose determines zeros, poles, and bounds.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Sketches Weil's direct proof by representing a multivalued correspondence, using a determinant to compare coincidence zeros with canonical-divisor poles, and descending from a finite Galois cover.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A determinant of differentials proves strict correspondence positivity",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u09.txt",
+      "unit_bytes": 3527,
+      "unit_id": "milne2015_rh_finite_fields_v2_u09",
+      "unit_sha256": "74f16372977b77fd25edaf386a57612c02efe61037f21aec2cfe96a70689a2f1",
+      "unit_type": "alternative proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u09.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exponential-sum paragraph records the major downstream use rather than another proof of the same theorem.",
+      "line_end": 740,
+      "line_start": 670,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only historical and methodological comparison.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares characteristic-zero origins, Riemann-Roch/Hodge simplification, elementary-intersection variants, double-field methods, and the realization of exponential sums as Frobenius traces.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Proof variants expose what geometry is actually required",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u10.txt",
+      "unit_bytes": 4585,
+      "unit_id": "milne2015_rh_finite_fields_v2_u10",
+      "unit_sha256": "66cfb903d637c2022def04826838f4861b1688b8ba689fb70ac51f46eab97a25",
+      "unit_type": "method comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u10.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Material as a causal account of a mathematical representation change, not as biography alone.",
+      "line_end": 816,
+      "line_start": 757,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why constructing the Jacobian and validating intersections in arbitrary characteristic required abstract varieties and local intersection theory, and why those foundations were later replaced.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The RH proof forced a representation-independent algebraic geometry",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u11.txt",
+      "unit_bytes": 4511,
+      "unit_id": "milne2015_rh_finite_fields_v2_u11",
+      "unit_sha256": "7f560fb7bc208f6d16da129c7e231ed67b77225a0f449fe9be070d3508d7879d",
+      "unit_type": "foundational consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u11.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also situates the theorem among arithmetic developments enabled by Weil's abelian-variety theory.",
+      "line_end": 891,
+      "line_start": 819,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The local invariant formula is dense but the classification mechanism is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects Weil numbers, Tate's injectivity, Honda's surjectivity, and the endomorphism algebra invariants into a classification controlled by Frobenius.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Frobenius weights classify finite-field abelian varieties up to isogeny",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u12.txt",
+      "unit_bytes": 4778,
+      "unit_id": "milne2015_rh_finite_fields_v2_u12",
+      "unit_sha256": "3f91959bbb90a4dcd97c3d20e4f5cbdd2c0c94ae124b21ce1bec7780f75aee7f",
+      "unit_type": "classification bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u12.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A historical strategic analogy, not a theorem identifying zeta zeros.",
+      "line_end": 907,
+      "line_start": 893,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Quoted prose only.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transfers the function-field picture of Frobenius acting on divisor classes to a projective limit of number-field class groups under adjoining roots of unity.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Constant-field extensions foreshadow an Iwasawa operator",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u13.txt",
+      "unit_bytes": 1067,
+      "unit_id": "milne2015_rh_finite_fields_v2_u13",
+      "unit_sha256": "a94d8d16de588685c70870ad438f2c67406259d635245cd4e6d8955dad64e44f",
+      "unit_type": "analogy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u13.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes completeness and Picard/Albanese aftermath only as immediate scope notes.",
+      "line_end": 999,
+      "line_start": 908,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Divisor-class and rational-map notation is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses symmetric powers and Riemann-Roch uniqueness to create a birational group, then invokes Weil's extension theorem to obtain the group variety without first finding a projective embedding.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        17,
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A local partial group law constructs the Jacobian",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u14.txt",
+      "unit_bytes": 5893,
+      "unit_id": "milne2015_rh_finite_fields_v2_u14",
+      "unit_sha256": "c2e6c284202e19efc19aefeeed74c36db291292bbfd00317407e69fff5a6a4a3",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u14.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem-of-the-cube calculation supplies the polynomiality needed for the construction.",
+      "line_end": 1077,
+      "line_start": 1001,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact leading terms and degrees are formula-dependent but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces unavailable complex homology by the polynomial degree function alpha maps to deg(n-alpha), proving existence, integrality, and the intrinsic trace definition.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Degree evaluations determine an endomorphism's characteristic polynomial",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u15.txt",
+      "unit_bytes": 4806,
+      "unit_id": "milne2015_rh_finite_fields_v2_u15",
+      "unit_sha256": "87ed3d2a652aa14309ee0dc3f36a8874939164276569f03bd337e0058db492c4",
+      "unit_type": "intrinsic construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u15.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies coefficient independence and makes cohomological Frobenius roots intrinsic.",
+      "line_end": 1160,
+      "line_start": 1083,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "l-adic notation is central; extraction preserves the argument.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves finite rank and divisibility control for homomorphisms, then identifies the degree polynomial with the characteristic polynomial on T_l A using determinant norms.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The intrinsic polynomial equals every prime-to-p Tate-module polynomial",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u16.txt",
+      "unit_bytes": 3900,
+      "unit_id": "milne2015_rh_finite_fields_v2_u16",
+      "unit_sha256": "ba91227060ae688d154d38dab720efe0ebb7cd3c5193d0f5d4ade5cfc5a49d82",
+      "unit_type": "representation theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u16.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends with the abelian-variety summary that transfers the result to curve Jacobians.",
+      "line_end": 1267,
+      "line_start": 1163,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Pairing, adjoint, and complex-embedding formulas are necessary and readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs the positive involution from a polarization, proves positivity by intersections, derives absolute values from alpha alpha-dagger=q, and verifies that identity for Frobenius via the Weil pairing.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rosati positivity forces Frobenius eigenvalues onto the Weil circle",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u17.txt",
+      "unit_bytes": 5929,
+      "unit_id": "milne2015_rh_finite_fields_v2_u17",
+      "unit_sha256": "47f037e0fe6ee7d615ae7f5e14059aff4f38b344f7826e54aeb748e2861c0eeb",
+      "unit_type": "positivity-to-weight argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u17.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps W1-W5 distinct; only the curve and abelian examples are established here.",
+      "line_end": 1363,
+      "line_start": 1270,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several generating-function displays are dense, but all conjectures are textually explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives Weil's five conjectures from diagonal hypersurface examples and explains the fixed-point/cohomology heuristic for rationality and the functional equation.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Point-count generating functions predict cohomological weights",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u18.txt",
+      "unit_bytes": 5545,
+      "unit_id": "milne2015_rh_finite_fields_v2_u18",
+      "unit_sha256": "28333b8da7708eaa6303027cbc79f8b733675cfebd5462a52ef664b0f9a9f157",
+      "unit_type": "conjectural architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u18.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The pushforward is derived from the nondegenerate pairing so later trace formulas have a complete interface.",
+      "line_end": 1474,
+      "line_start": 1395,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Axiom-heavy formulas are cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the finite-dimensional graded functor, Poincare duality, Kunneth isomorphism, and functorial cycle map that make geometric intersections act linearly.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil cohomology packages duality, products, and cycle classes",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u19.txt",
+      "unit_bytes": 4871,
+      "unit_id": "milne2015_rh_finite_fields_v2_u19",
+      "unit_sha256": "0fc4d945e08c466e56fb2be38db40471a4f295b4e2cebe1afd7bc8a92b0780cd",
+      "unit_type": "axiomatic framework",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u19.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the linear-algebra engine behind zeta rationality.",
+      "line_end": 1516,
+      "line_start": 1481,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Sign conventions and basis displays matter but are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses dual Kunneth bases to expand graph and diagonal classes and proves the Lefschetz trace formula in the axiomatic setting.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The diagonal class converts fixed points into alternating cohomological traces",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u20.txt",
+      "unit_bytes": 2112,
+      "unit_id": "milne2015_rh_finite_fields_v2_u20",
+      "unit_sha256": "70ce3906a2dcba3b57065fc41504e6a7b16a20bd0d9676303730798de41036dd",
+      "unit_type": "trace formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u20.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The obstruction leaves l-adic coefficients for l not p and Witt-fraction coefficients possible.",
+      "line_end": 1532,
+      "line_start": 1518,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and algebra dimensions are sufficient.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that a coefficient field must split the endomorphism division algebra, and a supersingular elliptic curve supplies precisely the nonsplitting obstruction.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Endomorphism algebras forbid Q, Qp, and real Weil coefficients",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u21.txt",
+      "unit_bytes": 1250,
+      "unit_id": "milne2015_rh_finite_fields_v2_u21",
+      "unit_sha256": "83139cdb5b5832791a7caa06b465bb98759ce45356c10a476ddcfefda9e47829",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u21.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Explicitly records the remaining cancellation problem and why weight separation would also prove W4.",
+      "line_end": 1648,
+      "line_start": 1539,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Determinant and reciprocal-root formulas are central and readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines fixed-point traces with log determinants for rationality, arithmetic power-series arguments for integral reduced factors, and duality for reciprocal eigenvalues and the functional equation.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Any Weil cohomology proves rationality, integrality, and the functional equation",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u22.txt",
+      "unit_bytes": 5781,
+      "unit_id": "milne2015_rh_finite_fields_v2_u22",
+      "unit_sha256": "dd77434c1dceccf2a7e3a25b375d010cac37f4110300d454ddc64d6fd98c3152",
+      "unit_type": "deduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u22.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the categorical finiteness later used for numerical motives.",
+      "line_end": 1748,
+      "line_start": 1655,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Composition, transpose, and trace equations are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows numerical cycle spaces are finite-dimensional and kills the radical of the correspondence algebra by lifting it to cohomology, where nilpotence forces every trace pairing to vanish.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cohomological traces make numerical correspondences semisimple",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u23.txt",
+      "unit_bytes": 4751,
+      "unit_id": "milne2015_rh_finite_fields_v2_u23",
+      "unit_sha256": "c6b8a8fc9010e6457f16bfe0825c38a84b4536273510eed03b871073bd9af1be",
+      "unit_type": "structural consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u23.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical detail is retained where it explains why higher cohomology, not just H1, works.",
+      "line_end": 1907,
+      "line_start": 1751,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose with one sheaf equalizer; no image dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Tracks the failure of Zariski-local triviality, Serre's locally isotrivial coverings, Grothendieck topologies, sheaf derived functors, and Artin's comparison with singular cohomology.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        32,
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Etale cohomology arises by enlarging what counts as a local cover",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u24.txt",
+      "unit_bytes": 10030,
+      "unit_id": "milne2015_rh_finite_fields_v2_u24",
+      "unit_sha256": "3e4d92eda1e719d43b7e2c8c2cc5fb1504c429a3467798c47ba01d076d731c34",
+      "unit_type": "foundational construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u24.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates existence of W1-W3 from the still-unproved weight statement at this stage.",
+      "line_end": 1924,
+      "line_start": 1908,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Inverse limits and determinant products are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Passes from torsion etale groups to Q_l, states the compact-support determinant formula for arbitrary varieties, and invokes smooth-proper comparison for Betti numbers.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Inverse-limit etale cohomology supplies a Weil theory and local factorization",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u25.txt",
+      "unit_bytes": 1270,
+      "unit_id": "milne2015_rh_finite_fields_v2_u25",
+      "unit_sha256": "a483d8528a76d8102e2ab796a563c93c2bd693a91f2484b28ad1b5dc0ee31b6f",
+      "unit_type": "cohomological realization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u25.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The comparison is embedding-dependent only in scalar extension, not in the algebraic definition.",
+      "line_end": 1952,
+      "line_start": 1926,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Complex and hypercohomology notation is legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines hypercohomology of algebraic differentials and uses Grothendieck's comparison theorem to make it a characteristic-zero Weil cohomology.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Algebraic de Rham cohomology recovers complex topology",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u26.txt",
+      "unit_bytes": 1638,
+      "unit_id": "milne2015_rh_finite_fields_v2_u26",
+      "unit_sha256": "c58a60c938fad8c8dc47d7d9af6965dca6a874df22ebb7ff212ec02e988d2826",
+      "unit_type": "comparison construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u26.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Distinguishes coefficient-characteristic failure from later successful characteristic-zero Witt coefficients.",
+      "line_end": 2009,
+      "line_start": 1959,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant with a short complex display.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why coherent and Witt-vector sheaf attempts were insufficient, how divided-power thickenings produce the crystalline site, and how de Rham-Witt realizes a computable p-adic theory.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Crystalline cohomology repairs characteristic-p de Rham failures",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u27.txt",
+      "unit_bytes": 3864,
+      "unit_id": "milne2015_rh_finite_fields_v2_u27",
+      "unit_sha256": "c7c1fc727aba59ad2031ccbb54b38e993a5f7211983c6b8dbec7a83020342c95",
+      "unit_type": "failed routes and repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u27.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly presents this as the model for the standard-conjecture route in finite characteristic.",
+      "line_end": 2210,
+      "line_start": 2020,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Hodge types and sign formulas are dense; the positivity and unitary conclusion are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds the Kahler analogue, primitive decomposition, star operator, and positive Hermitian form, then proves the Frobenius-shaped eigenvalue bound for polarized complex endomorphisms.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        37,
+        38,
+        39
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hard Lefschetz and Hodge positivity make normalized maps unitary",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u28.txt",
+      "unit_bytes": 10667,
+      "unit_id": "milne2015_rh_finite_fields_v2_u28",
+      "unit_sha256": "676f1d028f7f1b9ff7f2f2a309bd4f58e02890663ea61ff0c49e5025677e3f5d",
+      "unit_type": "analogue proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u28.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Avoids pretending that a real coefficient field or literal unitary Frobenius exists in characteristic p.",
+      "line_end": 2269,
+      "line_start": 2213,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Bilinear-form and adjoint notation is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines an adjoint-stable positive trace form on one cohomological degree and shows it implies semisimplicity and absolute-value control for algebraic correspondences.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        40
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil forms isolate the positivity needed for weights",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u29.txt",
+      "unit_bytes": 3325,
+      "unit_id": "milne2015_rh_finite_fields_v2_u29",
+      "unit_sha256": "6db500d33d14b131767f0834292570c5eafd97c2dac2b1635c2b97a15fc4e023",
+      "unit_type": "abstraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u29.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Known cases and the dependence on a Weil theory are retained as limits.",
+      "line_end": 2377,
+      "line_start": 2272,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Operator and primitive-cycle formulas are central but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States A, B, C, their implications, and the Hodge-type positive form, precisely identifying which Kahler mechanisms must be algebraic.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        41,
+        42
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The standard conjectures algebraize Lefschetz decomposition and Hodge positivity",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u30.txt",
+      "unit_bytes": 5610,
+      "unit_id": "milne2015_rh_finite_fields_v2_u30",
+      "unit_sha256": "aadf3845eea62a318f3f3b3242a8e3afe03ea927484412cf1440f3cc16fd36b5",
+      "unit_type": "conjectural package",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u30.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records the stronger conditional semisimplicity conclusion and its lack of progress.",
+      "line_end": 2410,
+      "line_start": 2379,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Short proof with exact weight formula; readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses nondegeneracy of algebraic intersections to construct the star correspondence, obtains a Weil form, and applies it to a polarized endomorphism such as Frobenius.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Standard conjectures imply Weil forms and the finite-field Riemann hypothesis",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u31.txt",
+      "unit_bytes": 1968,
+      "unit_id": "milne2015_rh_finite_fields_v2_u31",
+      "unit_sha256": "bfa67c5007ed149eb609526c6ee1f30c48eaaf726bd66ce43d59c19b1c274ff0",
+      "unit_type": "conditional proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u31.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposed smash-nilpotent reformulation is presented as a possible cohomology-independent route.",
+      "line_end": 2453,
+      "line_start": 2421,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and a single implication chain.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Orders rational, algebraic, homological, and numerical equivalence, gives the Griffiths obstruction, and explains why standard conjectures would identify homological with numerical equivalence.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cycle equivalences locate the unresolved algebraicity gap",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u32.txt",
+      "unit_bytes": 2507,
+      "unit_id": "milne2015_rh_finite_fields_v2_u32",
+      "unit_sha256": "f35263d9f2a50b7eb38e1d665dcba03166b5b98b75cc52a2a638f21136948fbb",
+      "unit_type": "equivalence hierarchy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u32.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "All implications remain explicitly conjectural where stated.",
+      "line_end": 2502,
+      "line_start": 2456,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Galois-fixed subspace notation is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the Hodge and Tate conjectures and sketches implications from full Tate through abelian motives and specialization to the Hodge standard conjecture in characteristic p.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        44
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hodge and Tate conjectures are intertwined with standard positivity",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u33.txt",
+      "unit_bytes": 3199,
+      "unit_id": "milne2015_rh_finite_fields_v2_u33",
+      "unit_sha256": "8607e0271bbcb00a0f66c0eabeb80353dd2e86a6c551c024ffcc04c3cf2ba101",
+      "unit_type": "conjecture comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u33.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The need to leave ordinary Q-vector spaces is tied back to the coefficient obstruction.",
+      "line_end": 2582,
+      "line_start": 2505,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Category and Hom formulas are dense but coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds the correspondence category, adds idempotent summands, and formally inverts the Lefschetz object to obtain a rigid setting through which Weil cohomologies factor.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        45
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Motives factor all compatible Weil cohomologies through correspondences",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u34.txt",
+      "unit_bytes": 4576,
+      "unit_id": "milne2015_rh_finite_fields_v2_u34",
+      "unit_sha256": "0e2a08874a158048db0712a715c3e9efbe836c3a9490fd8803e08390476eb0a4",
+      "unit_type": "universal construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u34.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Conditional dependencies on Kunneth projectors and standard conjectures are explicit.",
+      "line_end": 2656,
+      "line_start": 2585,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Category-theoretic notation is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records semisimplicity, duality, grading, fibre-functor interpretation of Weil cohomologies, and the standard-conjecture polarization.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        46,
+        47
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Numerical motives turn positivity into semisimple Tannakian structure",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u35.txt",
+      "unit_bytes": 3836,
+      "unit_id": "milne2015_rh_finite_fields_v2_u35",
+      "unit_sha256": "2427619351bef8420a586ca4169e74899cd44b3d332f17d2029418c94d26897f",
+      "unit_type": "categorical consequences",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u35.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Existence of a good rational-Tate theory is not claimed; uniqueness and consequences are separated.",
+      "line_end": 2726,
+      "line_start": 2659,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose; the almost-algebraic definition uses a family diagram that is textually recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains Deligne's embedding-independent classes, their success for abelian varieties, the mixed-characteristic rational-Tate proposal, and almost-algebraic specialization.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        48
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Absolute Hodge and rational Tate classes weaken literal algebraicity",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u36.txt",
+      "unit_bytes": 4468,
+      "unit_id": "milne2015_rh_finite_fields_v2_u36",
+      "unit_sha256": "bb19266cedb8973789a334f30e7fb9eedf4908b765076fc7fde2b6c6449efc19",
+      "unit_type": "alternative program",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u36.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A research program, not an established construction in this source.",
+      "line_end": 2744,
+      "line_start": 2728,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates three required generalizations: mixed motives with weight filtrations, triangulated complexes with a t-structure, and motives over Z.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pure motives point toward weights, complexes, and arithmetic bases",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u37.txt",
+      "unit_bytes": 1240,
+      "unit_id": "milne2015_rh_finite_fields_v2_u37",
+      "unit_sha256": "68316e2bf4664338907f5f27f227b6af2c4225dede7f26174d380d2dafb94dc1",
+      "unit_type": "scope extension",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u37.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The interview keeps discovery history distinct from the later proof details.",
+      "line_end": 2822,
+      "line_start": 2754,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Documents the decisive cross-field observation that nonnegative Dirichlet coefficients can turn global pole information, already available cohomologically, into local eigenvalue bounds.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        50
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Deligne replaces unavailable cycle positivity with Rankin-Landau pole control",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u38.txt",
+      "unit_bytes": 4800,
+      "unit_id": "milne2015_rh_finite_fields_v2_u38",
+      "unit_sha256": "c605a2bbee97df7cd64162272e30ad768a39feee5588bbcaac1a5a09d571b24f",
+      "unit_type": "strategy selection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u38.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the basic analytic extraction step used after tensoring.",
+      "line_end": 2840,
+      "line_start": 2825,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Euler product and convergence half-plane are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States that a nonnegative Dirichlet series must be singular at its abscissa of absolute convergence and derives a uniform bound on every local factor.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Landau positivity bounds Euler-factor roots",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u39.txt",
+      "unit_bytes": 883,
+      "unit_id": "milne2015_rh_finite_fields_v2_u39",
+      "unit_sha256": "1d83c23cdd7505e92fafab1c8a8e42a5eb128b06a7cca763d78892449c23293a",
+      "unit_type": "analytic lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u39.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The automorphic statement is conditional on analyticity of the relevant family of L-functions.",
+      "line_end": 2937,
+      "line_start": 2841,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Representation characters and Euler factors are dense but the power-amplification logic is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moves from Rankin's squared coefficients to Langlands's rho tensor rho-bar positivity, then uses arbitrary multiples of a weight and m-th roots to force equality rather than a fixed coarse bound.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        51,
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tensor powers sharpen a coarse local bound to exact modulus one",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u40.txt",
+      "unit_bytes": 5401,
+      "unit_id": "milne2015_rh_finite_fields_v2_u40",
+      "unit_sha256": "1e5183697a8c15f8cef2f41875102ccac1c165657d536a05fcbb9e06ade44766",
+      "unit_type": "amplification mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u40.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The affine-curve specialization isolates the pole contribution from geometric coinvariants.",
+      "line_end": 3010,
+      "line_start": 2940,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Determinant products and compact-support notation are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Associates local systems with fundamental-group representations and turns the product of local Frobenius determinants into determinants on compact-support cohomology.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        53
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Grothendieck's trace formula globalizes local systems",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u41.txt",
+      "unit_bytes": 4291,
+      "unit_id": "milne2015_rh_finite_fields_v2_u41",
+      "unit_sha256": "acbb1a84f4a4cbe8570ef930949bdcf0ab7c3250d057e688d459c0cc7f62accb",
+      "unit_type": "local-global bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u41.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Duality supplies the reverse inequality; the family and rationality hypotheses are included.",
+      "line_end": 3098,
+      "line_start": 3013,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Two-column-free formulas are readable, though invariant-tensor indexing is dense.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Places a hypersurface in a family, uses symplectic monodromy to compute invariant tensor quotients, makes coefficients nonnegative by even tensor powers, and lets the power grow to remove the Landau slack.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        54
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Big monodromy and invariant tensors prove weights for odd-dimensional hypersurfaces",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u42.txt",
+      "unit_bytes": 5411,
+      "unit_id": "milne2015_rh_finite_fields_v2_u42",
+      "unit_sha256": "ec0f3089df15b59fe0280007254d5cd5fcf4f6e1e74e25e9f801317f6fba1358",
+      "unit_type": "proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u42.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The skew form and openness hypotheses are essential; this is not a statement about arbitrary local systems.",
+      "line_end": 3140,
+      "line_start": 3107,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The hypotheses and bounds are cleanly stated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Extracts the hypersurface proof into a reusable local-system criterion yielding exact fibre weights and a controlled compact-support cohomology bound.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The main lemma packages rationality, pairing, and big monodromy",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u43.txt",
+      "unit_bytes": 1615,
+      "unit_id": "milne2015_rh_finite_fields_v2_u43",
+      "unit_sha256": "b9d22d4fed715ce8d3dd5cabebc764ec3b237eb5201e40adb03e78ac2127575d",
+      "unit_type": "abstracted lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u43.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a separate amplification from the local-system tensoring, though structurally analogous.",
+      "line_end": 3174,
+      "line_start": 3143,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Power and degree formulas are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Raises an eigenvalue to arbitrarily large even powers on product varieties, takes roots to collapse a coarse interval, and uses top-degree classes or duality to transfer from middle to all degrees.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        56
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kunneth powers turn a half-unit window into exact weights in every degree",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u44.txt",
+      "unit_bytes": 1814,
+      "unit_id": "milne2015_rh_finite_fields_v2_u44",
+      "unit_sha256": "41e0d88c0fe3a96183ad7fc387b0e2b2fb5dfe0c6036e030da7d90a9728ad252",
+      "unit_type": "amplification reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u44.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The survey sketches rather than reproduces the full SGA 7 machinery.",
+      "line_end": 3239,
+      "line_start": 3177,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Spectral-sequence terms and inequalities are legible; omitted machinery is explicitly acknowledged.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses vanishing cycles and the Leray spectral sequence to isolate the middle direct image, checks the main lemma by induction, intersection pairing, and monodromy, then recovers both bounds by duality.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        57
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lefschetz pencils reduce a general variety to the main lemma",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u45.txt",
+      "unit_bytes": 3726,
+      "unit_id": "milne2015_rh_finite_fields_v2_u45",
+      "unit_sha256": "134209ad80dd88cfed421f9ead4866a9b040d2a8af7cff61edd33d7f4ad0b55f",
+      "unit_type": "inductive completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u45.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Bad and infinite factors are described abstractly; analytic continuation remains conjectural in general.",
+      "line_end": 3294,
+      "line_start": 3251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Euler product and functional equation are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines good-prime local zeta factors, uses the proven finite-field weights for a convergence half-plane, and states the completed meromorphic continuation and functional equation conjecture.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        58
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-field weights make the Hasse-Weil Euler product convergent",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u46.txt",
+      "unit_bytes": 2157,
+      "unit_id": "milne2015_rh_finite_fields_v2_u46",
+      "unit_sha256": "5a54cacdbcb13fdb08961ced27724f311e12e38451dc9c682a19442900749ba6",
+      "unit_type": "local-global construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u46.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Langlands's optimism is reported as a conjectural program, not general proof.",
+      "line_end": 3368,
+      "line_start": 3296,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Surveys proven identifications in CM and modular cases and explains Langlands's proposal that motivic L-functions become automorphic, with functoriality potentially feeding back into cycles and motives.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        59
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Automorphic identification is the proposed route to global continuation",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u47.txt",
+      "unit_bytes": 5031,
+      "unit_id": "milne2015_rh_finite_fields_v2_u47",
+      "unit_sha256": "dc0f2006f19202f3eb97d4ae309daf9fcd7b510d6f7869e035e5bc9981d09c18",
+      "unit_type": "method comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u47.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A second example of automorphic ideas informing motive structure; no general cycle conjecture is concluded.",
+      "line_end": 3454,
+      "line_start": 3370,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Group-extension and Shimura-datum notation are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reframes full Galois action on CM abelian varieties as an extension of the Galois group by the Serre group and identifies Langlands's cocycle with the motivic construction through Shimura conjugation.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        60,
+        61
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Taniyama group links CM motives to conjugate Shimura varieties",
+      "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u48.txt",
+      "unit_bytes": 5670,
+      "unit_id": "milne2015_rh_finite_fields_v2_u48",
+      "unit_sha256": "95d36f0ca09f3e9d2aba7e299b2b2258b1f48e418de6424444b2709b4c9442e5",
+      "unit_type": "bridge construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u48.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    }
+  ]
+}

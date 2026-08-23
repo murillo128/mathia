@@ -1,0 +1,232 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_curvature_functional_inequality_chain": {
+      "analysis_id": "agnostic_oa_generation_63e4a78d41c0b48e1ef9f237e2800db272456adcb1697a981f5888e57eeeadad",
+      "boundary_or_failure": "Boundary and representation dependence: Coercive log-Sobolev and Talagrand constants require a positive infinite-dimensional curvature lower bound; the HWI input initially assumes positive Lipschitz densities and the source uses approximation for the displayed corollary. Poincaré is obtained by a small equilibrium perturbation. The stronger implications labeled Theorem 6.22 are announced as work shown elsewhere and are not treated here as internally proved consequences.",
+      "interpretation": "Inference: The functional inequalities are different projections of one curved energy landscape. HWI retains distance, energy, and slope simultaneously; optimizing away distance yields log-Sobolev, dropping the slope side yields transport control, and infinitesimal linearization near the reference turns nonlinear entropy control into a quadratic spectral inequality.",
+      "nonparaphrase_operation": "Operation: Specialize the general geodesic HWI bound to entropy, optimize its quadratic expression in Wasserstein distance for log-Sobolev, retain the opposite side for Talagrand, regularize square densities where needed, and insert a normalized small perturbation of the constant density to extract Poincaré from the second-order term.",
+      "source_support": "Source fact: Theorem 6.1 states the entropy transport and information inequalities under the curvature hypotheses and justifies absolute continuity of the selected geodesic. Definitions 6.6 identify LSI, Talagrand, and Poincaré; Corollary 6.12 gives the explicit log-Sobolev form, and Theorem 6.18 proves LSI implies Poincaré by Taylor expansion around equilibrium.",
+      "uncertainty": "High confidence in the internally proved implication chain. Formula typography and normalization constants are extraction-sensitive, and no independent support is assigned to the explicitly deferred stronger cross-implications.",
+      "unit_id": "agnostic_oa_curvature_functional_inequality_chain"
+    },
+    "agnostic_oa_proper_pointed_curvature_stability": {
+      "analysis_id": "agnostic_oa_generation_f33bd640ec01f07ab6094c43e77869fa5124ec69f2e56eb5faa8325b5838e047",
+      "boundary_or_failure": "The main stability theorem assumes complete pointed measured locally compact length spaces, finite dimension parameter, nonnegative synthetic Ricci curvature, proper coarse control of comparison maps, and weighted measured convergence. The weaker pointed corollary and tangent-cone application require the stated dimension range above the borderline case, volume-growth control, subsequences, and a normalized limiting reference measure; they do not imply a unique tangent cone.",
+      "interpretation": "Pointed convergence must control not only what happens on each bounded ball but also how comparison maps treat infinity. The added properness and weighted-measure conditions prevent distant mass from folding into bounded regions or disappearing from the dual topology. Once that escape channel is closed, compactly supported approximations reduce the limit argument to compact Wasserstein subsets, and tail estimates extend it to arbitrary endpoints.",
+      "nonparaphrase_operation": "Strengthen the convergence interface until it preserves the objects used by the proof: impose upper growth to transport finite moments, lower proper growth to control inverse images of bounded sets, and weighted weak convergence for the reference measures. Prove transfer first on compactly supported continuous densities inside a common bounded arena, then diagonalize truncations and mollifications using uniform moment tails; finally apply the mechanism to rescaled subsequential limits.",
+      "source_support": "Definitions E.37 and E.39 introduce proper pointed control and weighted measured convergence. Theorem E.40 proves stability by localizing transported geodesics for compactly supported endpoints and then using truncation, mollification, and uniform tail estimates for general endpoints. Corollary E.44 uses volume growth to upgrade pointed measured convergence in the declared dimension range, and Example E.45 applies it to subsequential measured tangent cones.",
+      "uncertainty": "The theorem and dimension-restricted corollary are proved as stated. The source flags the borderline two-dimensional integrability case for further study, so this row does not extrapolate stability there or from subsequential tangent-cone inheritance to uniqueness.",
+      "unit_id": "agnostic_oa_proper_pointed_curvature_stability"
+    },
+    "agnostic_oa_synthetic_structure_transfer_smooth_limits": {
+      "analysis_id": "agnostic_oa_generation_6dff11c9f78009d30201345c32dd85d7953c284c9cd21d48e1f262f5812e62c4",
+      "boundary_or_failure": "The transfer back to tensor curvature requires a smooth weighted limit, while the limit theorem requires measured rather than bare metric convergence. Quotient and submersion transfer additionally depend on invariant conditional fiber measures and horizontal lifts preserving transport length and entropy densities. The warped-product partial converses are cited, and the stated Alexandrov extension is only expected.",
+      "interpretation": "The proved mechanism is a commuting change of representation: encode a smooth tensor bound as displacement convexity, move that convexity through a measured limit or a faithful lift, and decode it as curvature on the target. This explains why quotient singularities and smooth bases can inherit curvature without comparing their tensors pointwise; the invariant transport geometry carries the information.",
+      "nonparaphrase_operation": "Factor a curvature-transfer question into encode, transport, and decode stages, then identify the exact structure each stage must preserve. For a submersion, lift a base Wasserstein geodesic with its invariant vertical conditional measure, use equality of the lifted and base energies, and descend convexity before invoking the smooth equivalence.",
+      "source_support": "The source proves smooth-limit implications by combining measured-limit stability with the smooth tensor equivalence; it proves compact-group quotient preservation and proves the stated submersion result by horizontally lifting optimal Monge transports. It separately labels the finite-dimensional converse as coming from a cited warped-product construction and the broader Alexandrov statement as an expectation.",
+      "uncertainty": "There is low uncertainty about the proved forward transfers within their hypotheses. The artifact does not independently establish the cited warped-product construction, and it gives no proof of the conjectural Alexandrov extension, so neither is treated as part of the proved mechanism.",
+      "unit_id": "agnostic_oa_synthetic_structure_transfer_smooth_limits"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_curvature_functional_inequality_chain": {
+      "critic_sha256": "bc85008e3f8a7c40281a919a8f9c5d8de845eb6d03f97e6375d8ad24a426aec1",
+      "generation_sha256": "b1203aed28f97b36aa03a78ff9947ef74ebea8a8bdf72455ea5bb9764aea61b4"
+    },
+    "agnostic_oa_proper_pointed_curvature_stability": {
+      "critic_sha256": "52930a2115b459a7e6b95c30838c44a8bc997a4d9cec12a5dd3b44234cbe1963",
+      "generation_sha256": "ee886f81df63ca1a1be8f15af5f2ec1210ff28cfb826e0f6d22011c0a5beef18"
+    },
+    "agnostic_oa_synthetic_structure_transfer_smooth_limits": {
+      "critic_sha256": "dcb5b967b0ce64df3508c800176cbc486873bbd532e55e5eeae729e4552058ce",
+      "generation_sha256": "fc3c68401c7297011c6d0201e2e0a7d0ebe9a05dd1b55da543fd0dbe64b86c68"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_curvature_functional_inequality_chain": {
+      "analysis_id": "agnostic_oa_critic_12849342bfb8cb26d633cf5570ed1e1cced7fc45e2675ee475a596b84a645184",
+      "context_risk": "The main HWI, log-Sobolev, Talagrand, and Poincare derivations are present, while Theorem 6.22 is explicitly deferred; exact normalization formulas remain OCR-sensitive.",
+      "decision": "revise",
+      "faithfulness": "The candidate otherwise faithfully separates the HWI optimization, transport lower bound, regularization of square densities, and perturbative LSI-to-Poincare argument, and correctly excludes deferred stronger implications from internal proof status.",
+      "missed_mechanism": "The main mechanism is present, but the boundary should distinguish a sufficient curvature hypothesis for this derivation from a necessary condition for the functional inequalities themselves.",
+      "paraphrase_risk": "Low: viewing the inequalities as projections or linearizations of the same energy-distance-slope relation is a substantive synthesis supported by the displayed arguments.",
+      "revision_instructions": "Replace the claim that coercive log-Sobolev and Talagrand constants require positive infinite-dimensional curvature with the narrower statement that Theorem 6.1 derives the stated constants under K greater than zero; do not imply the source proves positive curvature is necessary for either inequality. Retain the existing regularity, approximation, perturbation, and deferred-Theorem-6.22 qualifications.",
+      "unit_id": "agnostic_oa_curvature_functional_inequality_chain",
+      "unsupported_or_imported": "The word 'require' overstates the implication direction: the packet proves positive synthetic curvature is sufficient for these constants, not that such curvature is necessary whenever LSI or Talagrand holds."
+    },
+    "agnostic_oa_proper_pointed_curvature_stability": {
+      "analysis_id": "agnostic_oa_critic_a47a70a970fcd50ae84082401a6bb0c22d8708896d7f83f74803546d4ffa064d",
+      "context_risk": "The packet clearly separates Theorem E.40, Corollary E.44, and Example E.45. Formula extraction is imperfect but does not obscure that proper weighted convergence belongs to the main theorem, N greater than two belongs to the weaker corollary, and subsequential rescaling plus normalization belongs to the tangent-cone example.",
+      "decision": "revise",
+      "faithfulness": "The candidate accurately explains why upper radial growth transports finite moments, lower proper growth prevents distant points from mapping into bounded sets, weighted reference convergence controls the dual topology, compactly supported density endpoints create a common compact arena, and truncation, mollification, and moment-tail bounds extend the stability proof to general endpoints.",
+      "missed_mechanism": "The mechanism itself is complete, but the boundary fails to assign hypotheses to the right result: Corollary E.44 derives the needed weighted convergence from pointed measured convergence and Bishop-Gromov growth for N greater than two, while subsequential tangent-cone selection and normalization of the limit measure occur only in Example E.45.",
+      "paraphrase_risk": "Low: strengthening the convergence interface to preserve proof objects and then localizing the limit proof is a concrete structural operation; the needed repair is scope attribution, not lack of conceptual content.",
+      "revision_instructions": "Rewrite the boundary in three clauses. Attribute proper pointed weighted convergence and finite N to Theorem E.40; attribute N in (2,infinity) and Bishop-Gromov volume control to Corollary E.44; attribute rescaling, passage to subsequences, normalization of the limiting reference measure on the unit ball, and nonuniqueness of tangent cones only to Example E.45. Leave the compact-support and tail mechanism unchanged.",
+      "unit_id": "agnostic_oa_proper_pointed_curvature_stability",
+      "unsupported_or_imported": "The candidate's joint statement makes subsequences and a normalized limiting reference measure sound like assumptions of the general pointed corollary. In the source those features belong to the tangent-cone application, not to Corollary E.44 itself."
+    },
+    "agnostic_oa_synthetic_structure_transfer_smooth_limits": {
+      "analysis_id": "agnostic_oa_critic_a69241a837c21d3dc75eaad1c60ae9ec7d9bfa3c433f2cfd332f802b72782087",
+      "context_risk": "The artifact states compact-group quotient preservation only by invoking Theorem 5.35, while it gives the invariant-fiber and horizontal-lift proof in detail only for the Riemannian-submersion corollary; the unavailable proof of Theorem 5.35 cannot be reconstructed from this packet.",
+      "decision": "revise",
+      "faithfulness": "The candidate accurately separates proved smooth-limit implications from cited partial converses and a conjectural Alexandrov extension, and it correctly describes the explicit submersion proof via invariant vertical conditionals, horizontal Monge lifts, equality of density energies, descent of displacement convexity, and the smooth tensor equivalence.",
+      "missed_mechanism": "The main missed distinction is that the compact quotient and Riemannian submersion are separate transfer results in this span: the quotient conclusion is delegated to an earlier theorem, whereas the fiber-disintegration and horizontal-lift mechanism is proved here for the submersion.",
+      "paraphrase_risk": "Low overall: the encode-transfer-decode framing and lifted-geodesic operation are substantive, but bundling quotient and submersion under one unspecified faithful-lift mechanism obscures which operation the packet actually demonstrates.",
+      "revision_instructions": "Split the quotient and submersion claims. State that compact-group quotient preservation is asserted here through Theorem 5.35 without importing its proof mechanism; reserve invariant conditional fiber measures, horizontal lifts, preserved Wasserstein length, and equality of entropy densities for Corollary 7.52. Keep the smooth-limit, cited warped-product, and conjectural-status qualifications unchanged.",
+      "unit_id": "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+      "unsupported_or_imported": "The boundary sentence attributes invariant conditional fiber measures and horizontal lifts jointly to quotient and submersion transfer. This packet supports those dependencies for the submersion proof only; treating them as the quotient mechanism imports detail not present in the frozen span."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_curvature_functional_inequality_chain": "agnostic_oa_revision_02b8ddc07a6227c0f9f916741edc44a5ebbc1c8f3139d7811c2a0f7980777ebb",
+    "agnostic_oa_proper_pointed_curvature_stability": "agnostic_oa_revision_9bb34c901b2db532c9257056acca7527559eca8ae4cb37b14e468d5b0b83da32",
+    "agnostic_oa_synthetic_structure_transfer_smooth_limits": "agnostic_oa_revision_caaf9f4ac0b10c1b9e6b73df61d94e9bb146d44c397649b0e95bada715b27fa9"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "4456123c0a235b8ace60b64b395ba723884ca2c99e6cfaa721c2ab1adc3cb16f",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w1968781546_32987cbd_part_01.jsonl",
+  "source_id": "openalex_w1968781546",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_curvature_functional_inequality_chain.txt",
+      "artifact_bytes": 9178,
+      "artifact_relpath": "depth/units/agnostic_oa_curvature_functional_inequality_chain.txt",
+      "artifact_sha256": "f38b05e64ac484e41aee4bb3da6a7a291648cc8861e7623628fbc7a6bb92bc68",
+      "content_sha256": "4f05f4c18f0475f1d6c199767dc3bc55b655ff3535e91296afce845aa28d0012",
+      "context_note": "The main implications and perturbative proof are internal. Some stronger cross-implications are explicitly announced for other work and remain cited/background rather than established here.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2369,
+      "line_start": 2194,
+      "representation_dependency": "The chain uses positive curvature for coercive constants, Lipschitz positive densities for Fisher information, the descending gradient norm, and a Taylor expansion near equilibrium.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The general geodesic HWI estimate is specialized using curvature-selected entropy and absolute continuity, yielding log-Sobolev and Talagrand inequalities; a small perturbation around the reference measure linearizes log-Sobolev into Poincaré.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Synthetic curvature propagates through HWI to log-Sobolev, transport, and Poincaré bounds",
+      "unit_id": "agnostic_oa_curvature_functional_inequality_chain",
+      "unit_type": "analytic-consequence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_synthetic_structure_transfer_smooth_limits.txt",
+      "artifact_bytes": 10146,
+      "artifact_relpath": "depth/units/agnostic_oa_synthetic_structure_transfer_smooth_limits.txt",
+      "artifact_sha256": "232dd183285e44c26215594cc95d9e407b789bdb0a1b16ec8d44fe285e04c720",
+      "content_sha256": "dc005c0e767d466db35275a27b93b2d650c091ed20872bd4715b2dbf5f5965ad",
+      "context_note": "Some partial converses use a cited warped-product construction, and one Alexandrov extension is explicitly conjectural; those statuses are retained rather than folded into the proved transfer mechanism.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 3021,
+      "line_start": 2833,
+      "representation_dependency": "The deductions require smoothness when returning to tensors, measured rather than bare metric convergence, invariant fiber measures, and horizontal lifts preserving Wasserstein length and entropy densities.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Combining synthetic limit closure with smooth tensor equivalence characterizes smooth measured limits; invariant and horizontally lifted transport geodesics then transfer entropy convexity, hence curvature, through compact quotients and suitable Riemannian submersions.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Limit stability and lifted geodesics transfer smooth and quotient curvature structure",
+      "unit_id": "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+      "unit_type": "structural-transfer"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_proper_pointed_curvature_stability.txt",
+      "artifact_bytes": 11658,
+      "artifact_relpath": "depth/units/agnostic_oa_proper_pointed_curvature_stability.txt",
+      "artifact_sha256": "7e7313634323099676e12b81dc4cb0349d51f0197952fc619c9770f8ad9528f8",
+      "content_sha256": "67c226c0356c778edd56a9f11756250b0134921b66def9e9031e750b3b5eb56b",
+      "context_note": "The stability theorem is proved for finite dimension under the stated proper topology; the tangent-cone corollary additionally uses volume growth and requires the declared dimension range.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 4729,
+      "line_start": 4536,
+      "representation_dependency": "The result depends on proper coarse bounds for comparison maps, weighted measured convergence, compactly supported density approximation, uniform second-moment tails, finite-dimensional volume growth, and subsequential pointed limits.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A strengthened pointed convergence condition prevents mass from escaping through the comparison maps and supplies weighted reference convergence; compactly supported endpoint approximations and uniform moment tails recover a compact arena for the earlier limit proof, after which rescaling passes curvature to measured tangent cones.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Proper pointed control extends curvature stability and passes it to tangent cones",
+      "unit_id": "agnostic_oa_proper_pointed_curvature_stability",
+      "unit_type": "pointed-limit-transfer"
+    }
+  ]
+}

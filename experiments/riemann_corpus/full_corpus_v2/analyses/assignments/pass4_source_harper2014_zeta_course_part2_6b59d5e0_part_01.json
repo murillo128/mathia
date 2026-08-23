@@ -1,0 +1,1361 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_harper2014_zeta_course_part2_6b59d5e0_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "harper2014_zeta_course_part2",
+  "unit_count": 8,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact exponents in the shift and truncation error are inessential according to the source; the degree-to-scale relation is essential.",
+      "line_end": 130,
+      "line_start": 63,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence for constants and errors, but the shift–Taylor mechanism and degree obstruction are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Averaging n by shifts xy creates a small ratio xy/n, so a controlled Taylor truncation converts the unstructured logarithmic phase into a polynomial in xy. The required degree grows like log t/log N, explicitly exposing the method's later capacity bottleneck.",
+      "source_id": "harper2014_zeta_course_part2",
+      "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Small bilinear shifts polynomialize the logarithmic phase",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_u02.txt",
+      "unit_bytes": 4611,
+      "unit_id": "harper2014_zeta_course_part2_u02",
+      "unit_sha256": "9885dce45cf0e5bc62824f191d619805bfeb4a5e8dbd2efa9ad2e6da17895e9d",
+      "unit_type": "construction-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_u02.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part2",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "exponential-sums",
+          "vinogradov-korobov",
+          "zero-free-regions",
+          "prime-number-theorem"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 55,
+          "line_end": 62,
+          "text": "is to introduce some polynomial structure using Taylor expansion.\nDate: 18th March 2014.\n                                                  1\n\n<!-- source-page: 2 -->\n\n2                                              ADAM J HARPER\n\n",
+          "sha256": "9b0e3940798dfb32da4b195f3a21598484c96c2056d38953b737d1a6fab1730f"
+        },
+        "after": {
+          "line_start": 131,
+          "line_end": 138,
+          "text": "\nRemark 7.3. It may seem strange that we introduced the two shift parameters x, y in\nLemma 7.1, since we could have performed Taylor expansion in the same way with just\none. However, it turns out that introducing a pair of independent variables is very often\na very good idea, and we shall explore this next.\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "a6ac5b6bbb35c8603a07066723fe35786f877e9161bc7705a8317f5a99db0164"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b52c2f4de5a7d3224b8db5fe274e07962c1803649902cdd7270aa7dda4ea446",
+        "dossier_sha256": "d30a3dd536de087881efc0c3fa40048b4a414a0262d68f9303dacba64ccf6e28",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. First thoughts on estimating zeta sums",
+            "line_end": 136,
+            "line_start": 19,
+            "mathematical_role": "Reduces zeta control to short oscillatory sums and inserts a polynomial phase by averaging small bilinear shifts and Taylor expanding."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 130,
+          "line_start": 63,
+          "title": "Small bilinear shifts polynomialize the logarithmic phase",
+          "unit_id": "harper2014_zeta_course_part2_u02",
+          "unit_type": "construction-and-obstruction",
+          "why_material": "Averaging n by shifts xy creates a small ratio xy/n, so a controlled Taylor truncation converts the unstructured logarithmic phase into a polynomial in xy. The required degree grows like log t/log N, explicitly exposing the method's later capacity bottleneck."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact exponents in the shift and truncation error are inessential according to the source; the degree-to-scale relation is essential.",
+          "representation_dependency": "High formula dependence for constants and errors, but the shift–Taylor mechanism and degree obstruction are explicit in prose.",
+          "unit_id": "harper2014_zeta_course_part2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 55,
+            "line_start": 21,
+            "title": "Zeta control becomes a short oscillatory-sum problem",
+            "unit_id": "harper2014_zeta_course_part2_u01",
+            "unit_type": "motivation-and-reduction",
+            "why_material": "It identifies the causal entry point of the method: a bound left of the one-line feeds Landau's theorem, while partial summation reduces the needed zeta estimate to sums of n^{-it} even at scales much shorter than t, where integral approximation fails."
+          },
+          {
+            "line_end": 135,
+            "line_start": 132,
+            "title": "Two independent shifts create reorderable bilinear structure",
+            "unit_id": "harper2014_zeta_course_part2_u03",
+            "unit_type": "strategic-design-choice",
+            "why_material": "The source isolates a reusable design principle: introduce two independent variables even when one suffices for Taylor expansion, because later inequalities can alternately complete and move either variable family inside absolute values."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Small bilinear shifts turn the logarithmic phase into a bounded-degree polynomial; independent variable families can then be duplicated until sparse curve data is expressed through mean-value counts and rational-spacing sums, whose combined savings return a nontrivial original zeta-sum bound.",
+            "limit": "The synthesis is conditional on the source's scale and parameter regime; it does not claim square-root cancellation or applicability to arbitrary phases.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part2_u02",
+              "harper2014_zeta_course_part2_u03",
+              "harper2014_zeta_course_part2_u05",
+              "harper2014_zeta_course_part2_u06",
+              "harper2014_zeta_course_part2_u07",
+              "harper2014_zeta_course_part2_u08",
+              "harper2014_zeta_course_part2_u15"
+            ],
+            "title": "Polynomialize, duplicate, count, and recover cancellation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 142,
+              "line_start": 136,
+              "reason": "Page marker, running header, section heading, and introduction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part2_u02",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part2_u02",
+          "spontaneous_reading": "Averaging by small product shifts xy turns the resistant logarithmic phase into a polynomial phase, but the required Taylor degree records exactly how the method deteriorates as N becomes short relative to t."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part2_u02",
+          "source_grounded_mathematics": "With x,y≤N^{2/5}, the shift xy is small relative to n≈N; Taylor expansion of log(1+xy/n) through r=floor(5.01 log t/log N) replaces the averaged shifted zeta sum by U(n)=ΣxΣy e(Σ_{j≤r} α_j x^j y^j), up to the displayed N^{4/5} and t^{-1/500} errors.",
+          "conceptual_reading": "The shift is useful not merely as smoothing: it manufactures bounded-degree algebraic structure from a non-polynomial phase while exposing degree as the resource cost.",
+          "representation_or_bridge": "The small ratio xy/n bridges the logarithmic representation to a bilinear polynomial phase whose coefficient vectors can be attacked by Hölder duplication and mean-value estimates.",
+          "boundary_or_failure": "The exact shift exponents are inessential according to the source, but r asymptotic to log t/log N is essential; if that degree is too large relative to N, the later machinery cannot recover useful cancellation.",
+          "uncertainty": "The extraction crowds several displayed exponents and error terms, though the shift–Taylor mechanism, coefficient definition, and degree obstruction are clear; exact constants warrant the retained source PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The averaging identity, the smallness of xy/n, the Taylor truncation, the polynomial phase U(n), and the essential growth r asymptotic to log t/log N are all present.",
+          "Interpreting degree as the resource cost of manufacturing polynomial structure is supported by Remark 7.2."
+        ],
+        "inference": [
+          "Calling the shift more than smoothing is a reasonable synthesis of the exact construction."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the coefficient vectors can be attacked by Hölder duplication and mean-value estimates imports later machinery not contained in this frozen span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Several displayed exponents and error terms are crowded; the candidate appropriately marks exact constants as formula-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the forward Hölder/mean-value claim with a span-local bridge: the shift converts log(1+xy/n) into a polynomial in the product xy whose degree grows like log t/log N."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Its payoff is demonstrated in Lemma 8.3 and Remark 8.4, so this short span should be interpreted with that forward link.",
+      "line_end": 135,
+      "line_start": 132,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only and robust to notation changes.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source isolates a reusable design principle: introduce two independent variables even when one suffices for Taylor expansion, because later inequalities can alternately complete and move either variable family inside absolute values.",
+      "source_id": "harper2014_zeta_course_part2",
+      "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two independent shifts create reorderable bilinear structure",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_u03.txt",
+      "unit_bytes": 308,
+      "unit_id": "harper2014_zeta_course_part2_u03",
+      "unit_sha256": "1049d7186fadf229ec6cad373bb14b26206b834125d5c85209a79fdc45dac129",
+      "unit_type": "strategic-design-choice",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_u03.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part2",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "exponential-sums",
+          "vinogradov-korobov",
+          "zero-free-regions",
+          "prime-number-theorem"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 124,
+          "line_end": 131,
+          "text": "remembering that e(z) := e2πiz . The conclusion of the lemma follows immediately.                                   \u0003\n\nRemark 7.2. The exact choice of many of the parameters in the proof of Lemma 7.1\n(e.g. the exponents 2/5 in the shifts) is not important. Something that is important is\nthe fact that the degree r of the polynomial in the exponent is \u0010 (log t)/ log N . It will\nturn out that we can only handle the case where the degree isn’t too large relative to\nN , and this will ultimately set the limit of the Vinogradov–Korobov method.\n\n",
+          "sha256": "2d34a51e3f0564561161ed2af687ae20c32a9e599d352cffcc194f3f6984ea54"
+        },
+        "after": {
+          "line_start": 136,
+          "line_end": 143,
+          "text": "\n<!-- source-page: 3 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 2                             3\n\n                                    8. Bilinear forms\n\n  In this section we will think about the general problem of bounding\n",
+          "sha256": "c23ee8115677ecfaee741c19248fd73d08ab8ba44800196b9fbb46a925db301c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b52c2f4de5a7d3224b8db5fe274e07962c1803649902cdd7270aa7dda4ea446",
+        "dossier_sha256": "d30a3dd536de087881efc0c3fa40048b4a414a0262d68f9303dacba64ccf6e28",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. First thoughts on estimating zeta sums",
+            "line_end": 136,
+            "line_start": 19,
+            "mathematical_role": "Reduces zeta control to short oscillatory sums and inserts a polynomial phase by averaging small bilinear shifts and Taylor expanding."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 135,
+          "line_start": 132,
+          "title": "Two independent shifts create reorderable bilinear structure",
+          "unit_id": "harper2014_zeta_course_part2_u03",
+          "unit_type": "strategic-design-choice",
+          "why_material": "The source isolates a reusable design principle: introduce two independent variables even when one suffices for Taylor expansion, because later inequalities can alternately complete and move either variable family inside absolute values."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Its payoff is demonstrated in Lemma 8.3 and Remark 8.4, so this short span should be interpreted with that forward link.",
+          "representation_dependency": "Prose-only and robust to notation changes.",
+          "unit_id": "harper2014_zeta_course_part2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 130,
+            "line_start": 63,
+            "title": "Small bilinear shifts polynomialize the logarithmic phase",
+            "unit_id": "harper2014_zeta_course_part2_u02",
+            "unit_type": "construction-and-obstruction",
+            "why_material": "Averaging n by shifts xy creates a small ratio xy/n, so a controlled Taylor truncation converts the unstructured logarithmic phase into a polynomial in xy. The required degree grows like log t/log N, explicitly exposing the method's later capacity bottleneck."
+          },
+          {
+            "line_end": 229,
+            "line_start": 143,
+            "title": "Bilinear completion trades a sparse prime sum for an integer correlation sum",
+            "unit_id": "harper2014_zeta_course_part2_u04",
+            "unit_type": "method-example",
+            "why_material": "The toy proposition exhibits the basic move: complete one side of a bilinear sum, apply Cauchy–Schwarz, expand a square into differences, and bound the resulting geometric progressions by distance to the nearest integer."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Small bilinear shifts turn the logarithmic phase into a bounded-degree polynomial; independent variable families can then be duplicated until sparse curve data is expressed through mean-value counts and rational-spacing sums, whose combined savings return a nontrivial original zeta-sum bound.",
+            "limit": "The synthesis is conditional on the source's scale and parameter regime; it does not claim square-root cancellation or applicability to arbitrary phases.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part2_u02",
+              "harper2014_zeta_course_part2_u03",
+              "harper2014_zeta_course_part2_u05",
+              "harper2014_zeta_course_part2_u06",
+              "harper2014_zeta_course_part2_u07",
+              "harper2014_zeta_course_part2_u08",
+              "harper2014_zeta_course_part2_u15"
+            ],
+            "title": "Polynomialize, duplicate, count, and recover cancellation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 142,
+              "line_start": 136,
+              "reason": "Page marker, running header, section heading, and introduction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part2_u03",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part2_u03",
+          "spontaneous_reading": "The extra shift variable is deliberate slack: two independent index families can later exchange inside and outside roles under absolute values, something a one-variable Taylor expansion would forfeit."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part2_u03",
+          "source_grounded_mathematics": "The source observes that one shift would suffice for Taylor expansion but retains independent x and y and points forward to their use in the bilinear argument.",
+          "conceptual_reading": "Redundant-looking degrees of freedom can be structurally productive when later inequalities need alternative summation orders and independent duplication.",
+          "representation_or_bridge": "The pair (x,y) equips the polynomialized phase with a bilinear factorization, enabling either variable family to be completed while the other remains protected by an absolute value.",
+          "boundary_or_failure": "This short remark states a design choice rather than proving its payoff; that payoff is supplied only by the later duplication lemma and its discussion.",
+          "uncertainty": "No material textual uncertainty; the interpretation relies only on the explicitly assigned forward link to Lemma 8.3 and Remark 8.4."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states that one shift variable would suffice for Taylor expansion but that retaining two independent variables is deliberately useful later."
+        ],
+        "inference": [
+          "Treating the second variable as strategically redundant-looking freedom is a reasonable interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The precise account in terms of exchanging inside/outside roles, completion, and absolute values comes from the later duplication argument, not from this four-line source span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The semantic unit is too narrow to support the candidate's detailed account of the later payoff; it supports only the design choice and forward promise."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the contrast between one-variable sufficiency and two-variable strategic choice, but state the later payoff only as an unresolved forward link rather than describing its mechanism."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposition's prime variables are illustrative; the reusable content is the completion–correlation–spacing pipeline.",
+      "line_end": 229,
+      "line_start": 143,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate formula dependence; exact inequalities require the displayed sums, while the transformation is explained in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The toy proposition exhibits the basic move: complete one side of a bilinear sum, apply Cauchy–Schwarz, expand a square into differences, and bound the resulting geometric progressions by distance to the nearest integer.",
+      "source_id": "harper2014_zeta_course_part2",
+      "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bilinear completion trades a sparse prime sum for an integer correlation sum",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_u04.txt",
+      "unit_bytes": 4348,
+      "unit_id": "harper2014_zeta_course_part2_u04",
+      "unit_sha256": "2dad6d7d95aad5cfde6c22cda3c66bd1b96edd9c074f1105bc87341e7cd206e2",
+      "unit_type": "method-example",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_u04.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part2",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "exponential-sums",
+          "vinogradov-korobov",
+          "zero-free-regions",
+          "prime-number-theorem"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 135,
+          "line_end": 142,
+          "text": "a very good idea, and we shall explore this next.\n\n<!-- source-page: 3 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 2                             3\n\n                                    8. Bilinear forms\n\n",
+          "sha256": "ef5efd76b7b709e7fa64932edc2a7e4db223452d0a1f54f151cccdc7aee53621"
+        },
+        "after": {
+          "line_start": 230,
+          "line_end": 237,
+          "text": "\nProof of Lemma 8.2. It will suffice to show that\n                       X                   1\n                              min{U,              } \n (U + q log q),\n                                       ||αn + β||\n                     −q/2<n≤q/2\n\n",
+          "sha256": "855818f3c3292f02ffe496f5b51864c12abd790b88e681885a2ef0d0e07ae9d8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b52c2f4de5a7d3224b8db5fe274e07962c1803649902cdd7270aa7dda4ea446",
+        "dossier_sha256": "d30a3dd536de087881efc0c3fa40048b4a414a0262d68f9303dacba64ccf6e28",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Bilinear forms",
+            "line_end": 438,
+            "line_start": 137,
+            "mathematical_role": "Develops completion, rational-spacing bounds, and repeated Hölder duplication as a way to turn sparse polynomial-curve sums into mean-value counts and one-dimensional geometric sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 229,
+          "line_start": 143,
+          "title": "Bilinear completion trades a sparse prime sum for an integer correlation sum",
+          "unit_id": "harper2014_zeta_course_part2_u04",
+          "unit_type": "method-example",
+          "why_material": "The toy proposition exhibits the basic move: complete one side of a bilinear sum, apply Cauchy–Schwarz, expand a square into differences, and bound the resulting geometric progressions by distance to the nearest integer."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proposition's prime variables are illustrative; the reusable content is the completion–correlation–spacing pipeline.",
+          "representation_dependency": "Moderate formula dependence; exact inequalities require the displayed sums, while the transformation is explained in prose.",
+          "unit_id": "harper2014_zeta_course_part2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 135,
+            "line_start": 132,
+            "title": "Two independent shifts create reorderable bilinear structure",
+            "unit_id": "harper2014_zeta_course_part2_u03",
+            "unit_type": "strategic-design-choice",
+            "why_material": "The source isolates a reusable design principle: introduce two independent variables even when one suffices for Taylor expansion, because later inequalities can alternately complete and move either variable family inside absolute values."
+          },
+          {
+            "line_end": 264,
+            "line_start": 231,
+            "title": "Rational approximation distributes phases into controlled spacing bins",
+            "unit_id": "harper2014_zeta_course_part2_u05",
+            "unit_type": "counting-lemma",
+            "why_material": "Coprimality permutes residue classes, and a small perturbation from a/q places only O(1) phases in each interval of width 1/q; isolating the near-zero bin and harmonically summing the rest yields the key min(U,1/||·||) bound."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 142,
+              "line_start": 136,
+              "reason": "Page marker, running header, section heading, and introduction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part2_u04",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part2_u04",
+          "spontaneous_reading": "Completion converts a sparse prime-indexed bilinear sum into an integer correlation problem, after which phase differences and geometric-series bounds expose Diophantine spacing as the controlling object."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part2_u04",
+          "source_grounded_mathematics": "For α=a/q+θ/q², the toy prime sum ΣpΣp' e(αpp') is completed in one variable, bounded by Cauchy–Schwarz, expanded into differences p−p', and reduced to Σ_{n≤N} min(N,1/||αn||), which Lemma 8.2 controls in terms of q.",
+          "conceptual_reading": "The proof trades sparsity for correlations: losing the prime restriction makes the domain regular, while squaring replaces the original phase by a difference phase that can be summed explicitly.",
+          "representation_or_bridge": "The bridge objects are the completed integer sum, the difference multiplicities, and the reciprocal-distance kernel min(N,1/||αn||) produced by a finite geometric progression.",
+          "boundary_or_failure": "The proposition is illustrative and beats the trivial prime bound only when q is neither too small nor too large; replacing primes by integers is affordable here but not for the much sparser polynomial curves used later.",
+          "uncertainty": "Some inequality symbols are degraded in extraction, but the completion–Cauchy–correlation–spacing pipeline and its hypotheses are unambiguous."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part2_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The toy proposition completes one prime sum to integers, applies Cauchy–Schwarz, expands the square into difference phases, and bounds geometric progressions by reciprocal distance to the nearest integer.",
+          "The stated q-dependent spacing estimate and the restriction that the result improves on triviality only for an intermediate q range are present."
+        ],
+        "inference": [
+          "The description as trading a sparse restriction for a regular correlation problem accurately captures the displayed operation."
+        ],
+        "unsupported_or_imported": [
+          "The statement that integer completion is unaffordable for the much sparser polynomial curves used later is not established in this span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Some inequality glyphs are degraded, but the transformation sequence is recoverable from prose and displays."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the comparison with later polynomial curves; retain the span-supported limitation that the toy estimate is nontrivial only for q neither too small nor too large."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The long derivation is retained because switching summation order, bounding shifted counts, and duplicating the second variable are jointly the mechanism rather than routine algebra.",
+      "line_end": 429,
+      "line_start": 266,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence for exponents and ranges; prose clearly states why duplication improves coverage and why two independent families matter.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The sparse vectors (x,x²,…,x^r) cannot simply be completed to a box. Two Hölder steps duplicate each variable family, turn sums of curve points into difference coordinates, dominate shifted counts by the central Vinogradov mean value, and finally factor the phase into estimable one-dimensional sums.",
+      "source_id": "harper2014_zeta_course_part2",
+      "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+      "source_page_markers_inside_unit": [
+        5,
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Repeated Hölder duplication regularizes sparse polynomial-curve vectors",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_u06.txt",
+      "unit_bytes": 11759,
+      "unit_id": "harper2014_zeta_course_part2_u06",
+      "unit_sha256": "a3162f4d3808fe4f353b5cbf583d2b9e41ec62113943c692410cc4cffbc34362",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_u06.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part2",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "exponential-sums",
+          "vinogradov-korobov",
+          "zero-free-regions",
+          "prime-number-theorem"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 258,
+          "line_end": 265,
+          "text": "                         min{U,            }\nU+               \n U + q log q,\n                                ||αn + β||                  r\n              −q/2<n≤q/2                                     1≤r≤q/2\n\nas claimed.                                                                                      \u0003\n\n",
+          "sha256": "33890efa73d286378dd1442f6eeb4dd6db373ffb9b5fcd3a812d2a34bc787230"
+        },
+        "after": {
+          "line_start": 430,
+          "line_end": 437,
+          "text": "\n    In order to obtain a useful bound from Lemma 8.3, we need to give a non-trivial\nbound for the product over j appearing there (which will be an easy calculation using\nLemma 8.2), and we need a good bound for Jk,r (N 2/5 ). We also cannot succeed unless\nk is chosen suitably large, since the applications of Hölder’s inequality in the proof\nof Lemma 8.3 are very inefficient unless Jk,r (λ1 , ..., λr ; N 2/5 ) ≈ Jk,r (N 2/5 ) for most\nλ1 , ..., λr , which can only happen if k is large in terms of r. In the next section we will\nstudy Jk,r (N 2/5 ), and this will occupy most of the rest of Chapter 2.\n",
+          "sha256": "6c3fcbc137ba2359e43fc624e87fbd98e2073e3f46709c9201b141a458f424f7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b52c2f4de5a7d3224b8db5fe274e07962c1803649902cdd7270aa7dda4ea446",
+        "dossier_sha256": "d30a3dd536de087881efc0c3fa40048b4a414a0262d68f9303dacba64ccf6e28",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Bilinear forms",
+            "line_end": 438,
+            "line_start": 137,
+            "mathematical_role": "Develops completion, rational-spacing bounds, and repeated Hölder duplication as a way to turn sparse polynomial-curve sums into mean-value counts and one-dimensional geometric sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 429,
+          "line_start": 266,
+          "title": "Repeated Hölder duplication regularizes sparse polynomial-curve vectors",
+          "unit_id": "harper2014_zeta_course_part2_u06",
+          "unit_type": "representation-change",
+          "why_material": "The sparse vectors (x,x²,…,x^r) cannot simply be completed to a box. Two Hölder steps duplicate each variable family, turn sums of curve points into difference coordinates, dominate shifted counts by the central Vinogradov mean value, and finally factor the phase into estimable one-dimensional sums."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The long derivation is retained because switching summation order, bounding shifted counts, and duplicating the second variable are jointly the mechanism rather than routine algebra.",
+          "representation_dependency": "High formula dependence for exponents and ranges; prose clearly states why duplication improves coverage and why two independent families matter.",
+          "unit_id": "harper2014_zeta_course_part2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 264,
+            "line_start": 231,
+            "title": "Rational approximation distributes phases into controlled spacing bins",
+            "unit_id": "harper2014_zeta_course_part2_u05",
+            "unit_type": "counting-lemma",
+            "why_material": "Coprimality permutes residue classes, and a small perturbation from a/q places only O(1) phases in each interval of width 1/q; isolating the near-zero bin and harmonically summing the rest yields the key min(U,1/||·||) bound."
+          },
+          {
+            "line_end": 490,
+            "line_start": 439,
+            "title": "Diagonal and volume counts predict the Vinogradov mean-value threshold",
+            "unit_id": "harper2014_zeta_course_part2_u07",
+            "unit_type": "conjectural-scale-analysis",
+            "why_material": "Two structurally different lower bounds—diagonal solutions and average occupancy of difference boxes—motivate a two-term conjecture. Their crossover explains why k at least about r(r+1)/2 is the regime needed for near-uniform behavior."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Small bilinear shifts turn the logarithmic phase into a bounded-degree polynomial; independent variable families can then be duplicated until sparse curve data is expressed through mean-value counts and rational-spacing sums, whose combined savings return a nontrivial original zeta-sum bound.",
+            "limit": "The synthesis is conditional on the source's scale and parameter regime; it does not claim square-root cancellation or applicability to arbitrary phases.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part2_u02",
+              "harper2014_zeta_course_part2_u03",
+              "harper2014_zeta_course_part2_u05",
+              "harper2014_zeta_course_part2_u06",
+              "harper2014_zeta_course_part2_u07",
+              "harper2014_zeta_course_part2_u08",
+              "harper2014_zeta_course_part2_u15"
+            ],
+            "title": "Polynomialize, duplicate, count, and recover cancellation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 265,
+              "line_start": 265,
+              "reason": "Blank separator."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 438,
+              "line_start": 430,
+              "reason": "Transition identifying the mean-value estimate and large-k requirement for the next section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part2_u06",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part2_u06",
+          "spontaneous_reading": "Two rounds of Hölder duplication regularize the sparse moment-curve indices without falsely completing them to a box, ultimately separating arithmetic multiplicity from one-dimensional phase spacing."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part2_u06",
+          "source_grounded_mathematics": "Writing Z=N^{2/5}, the proof applies Hölder with exponent 2k first to duplicate y and encode power-sum differences by J_{k,r}(λ;Z), bounds every shifted count by J_{k,r}(0;Z), then duplicates x; expansion yields J_{k,r}(Z)^2 times a product over j of sums min(3kZ^j,1/||α_j μ_j||), followed by a 1/(4k²) root.",
+          "conceptual_reading": "Duplication replaces sparse curve points by their additive energy: enough sums and differences populate coordinate boxes more evenly while the central mean value measures the remaining concentration.",
+          "representation_or_bridge": "The bridge is the Vinogradov count J_{k,r}(λ;Z), which factors the polynomial curve's combinatorics away from coordinatewise geometric sums controlled by Diophantine spacing.",
+          "boundary_or_failure": "Hölder is inefficient unless k is large relative to r and shifted counts are typically comparable to the central count; the tiny 1/(4k²) exponent dilutes every saving.",
+          "uncertainty": "The extracted displays crowd ranges and exponents, but the two duplications, Cauchy bound J_{k,r}(λ)≤J_{k,r}(0), final product, and stated dependence are clear; exact numerical reuse should consult the original PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly explains why the sparse moment-curve vectors cannot simply be treated like the toy prime case and applies Hölder twice to duplicate y and then x.",
+          "The shifted counts J_{k,r}(λ;Z), their Cauchy bound by J_{k,r}(0;Z), and the final product of one-dimensional reciprocal-distance sums are displayed.",
+          "Remark 8.4 explicitly connects two independent variable families with repeated order switching and completion."
+        ],
+        "inference": [
+          "Interpreting the central Vinogradov count as additive concentration and the final formula as separating multiplicity from phase spacing is supported."
+        ],
+        "unsupported_or_imported": [
+          "The boundary claim that success requires shifted counts to be typically comparable with the central count and k large relative to r occurs only in the following context, outside the exact span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Formula extraction is dense, but the two-duplication mechanism and final factorization are reliable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the span-local inefficiency warning to the visible 1/(4k²) root, or simply omit the typical-shifted-count/large-k claim from this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem is weaker than the conjectural optimum but is asserted to be sufficient for the later zeta estimate.",
+      "line_end": 506,
+      "line_start": 492,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence for the stated exponent and delta; the induction architecture is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem gives the explicit loss parameter governing the application, and the proof preview identifies the core architecture: fix degree, induct in variable count, reduce modulo a scale-matched prime, and invoke Linnik's lemma.",
+      "source_id": "harper2014_zeta_course_part2",
+      "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A quantitative mean-value bound is organized as induction through congruences",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_u08.txt",
+      "unit_bytes": 928,
+      "unit_id": "harper2014_zeta_course_part2_u08",
+      "unit_sha256": "dae7c5ca7dc4a7a7fde798e48348e1ac514723247e02ef1bb81ba5df88215908",
+      "unit_type": "theorem-and-proof-architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_u08.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part2",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "exponential-sums",
+          "vinogradov-korobov",
+          "zero-free-regions",
+          "prime-number-theorem"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 484,
+          "line_end": 491,
+          "text": "the first, so the conjecture says that the behaviour is roughly uniform. This is exactly\nwhat we would like to substitute into Lemma 8.3 to obtain a good bound for zeta sums.\nFor us it will also be important to understand how the implicit constant depends on\nk, r, since we have r \u0010 (log t)/ log N possibly tending to infinity along with Z = N 2/5 .\n   Recently Wooley [3, 4] has proved Conjecture 9.1 for k ≥ r2 − 1 (and, jointly with\nFord, for some smaller k as well). We shall not prove this great result, but we shall\nprove an older bound that seems just as good for our application to the zeta function.\n\n",
+          "sha256": "cffd842ea0cae072b1dea3811b47e957e400ad2f3c60351d006062e6c2ba0dee"
+        },
+        "after": {
+          "line_start": 507,
+          "line_end": 514,
+          "text": "\nLemma 9.4 (Linnik’s Lemma, 1942–1943). Let r ≥ 1 be a natural number. Also let A\nand m ≥ 1 be integers, let p > r be prime, and let λ1 , ..., λr be any integers. Then the\n\n<!-- source-page: 9 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 2                                  9\n\n",
+          "sha256": "9ef3e10bd8fa525cc0ae4f4f7983b0b66d8e9f39ec3a0796e2ea165d6a403ae0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b52c2f4de5a7d3224b8db5fe274e07962c1803649902cdd7270aa7dda4ea446",
+        "dossier_sha256": "d30a3dd536de087881efc0c3fa40048b4a414a0262d68f9303dacba64ccf6e28",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9. Vinogradov's Mean Value Theorem",
+            "line_end": 904,
+            "line_start": 439,
+            "mathematical_role": "Introduces the mean value, compares diagonal and volume lower bounds, proves the congruence and translation tools, and executes a scale-reducing induction with nonsingular and singular residue branches."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 506,
+          "line_start": 492,
+          "title": "A quantitative mean-value bound is organized as induction through congruences",
+          "unit_id": "harper2014_zeta_course_part2_u08",
+          "unit_type": "theorem-and-proof-architecture",
+          "why_material": "The theorem gives the explicit loss parameter governing the application, and the proof preview identifies the core architecture: fix degree, induct in variable count, reduce modulo a scale-matched prime, and invoke Linnik's lemma."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem is weaker than the conjectural optimum but is asserted to be sufficient for the later zeta estimate.",
+          "representation_dependency": "High formula dependence for the stated exponent and delta; the induction architecture is prose-stable.",
+          "unit_id": "harper2014_zeta_course_part2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 490,
+            "line_start": 439,
+            "title": "Diagonal and volume counts predict the Vinogradov mean-value threshold",
+            "unit_id": "harper2014_zeta_course_part2_u07",
+            "unit_type": "conjectural-scale-analysis",
+            "why_material": "Two structurally different lower bounds—diagonal solutions and average occupancy of difference boxes—motivate a two-term conjecture. Their crossover explains why k at least about r(r+1)/2 is the regime needed for near-uniform behavior."
+          },
+          {
+            "line_end": 568,
+            "line_start": 508,
+            "title": "Power sums plus distinct residues rigidify a tuple modulo a prime power",
+            "unit_id": "harper2014_zeta_course_part2_u09",
+            "unit_type": "congruence-lifting-lemma",
+            "why_material": "Congruences at different powers are first lifted to a common modulus. Newton identities convert power sums into elementary symmetric data, so the associated monic polynomials agree modulo p; distinct roots then force tuples to agree up to permutation modulo p^r."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Small bilinear shifts turn the logarithmic phase into a bounded-degree polynomial; independent variable families can then be duplicated until sparse curve data is expressed through mean-value counts and rational-spacing sums, whose combined savings return a nontrivial original zeta-sum bound.",
+            "limit": "The synthesis is conditional on the source's scale and parameter regime; it does not claim square-root cancellation or applicability to arbitrary phases.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part2_u02",
+              "harper2014_zeta_course_part2_u03",
+              "harper2014_zeta_course_part2_u05",
+              "harper2014_zeta_course_part2_u06",
+              "harper2014_zeta_course_part2_u07",
+              "harper2014_zeta_course_part2_u08",
+              "harper2014_zeta_course_part2_u15"
+            ],
+            "title": "Polynomialize, duplicate, count, and recover cancellation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 507,
+              "line_start": 507,
+              "reason": "Blank separator."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part2_u08",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part2_u08",
+          "spontaneous_reading": "The usable mean-value theorem is organized less as an isolated estimate than as a scale-aware induction: choose a prime matched to the variable range, split residue behavior, and descend in k through Linnik rigidity."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part2_u08",
+          "source_grounded_mathematics": "For k≥r², Theorem 9.2 bounds J_{k,r}(Z) by an explicit factor (4r)^{4kF} times Z^{2k-(1-δ)r(r+1)/2}, with F and δ parameterized by k and r; the proof preview fixes r, inducts on k, reduces the power-sum system modulo a suitably chosen prime, and invokes Linnik's lemma.",
+          "conceptual_reading": "The result packages the cost of repeated scale descent into δ, making parameter dependence visible enough to decide whether the later Hölder losses can be overcome.",
+          "representation_or_bridge": "Congruence classes at a scale-matched prime connect the global integer solution count to rigid nonsingular fibers and smaller-variable or smaller-scale mean values.",
+          "boundary_or_failure": "This classical estimate is weaker than the preceding conjectural optimum but claimed sufficient for the zeta application; the span gives only the proof architecture, not the induction details.",
+          "uncertainty": "Superscripting in the extracted definitions of F and δ is formula-sensitive, so this record preserves their role rather than attempting to repair the exact typography from memory."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part2_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The theorem states the quantitative mean-value bound for k≥r² with explicit F and δ, and the proof preview says to fix r, induct on k, examine the system modulo a suitably chosen prime, and apply Linnik's lemma.",
+          "The surrounding assigned context says the older bound is sufficient for the intended zeta application."
+        ],
+        "inference": [
+          "Reading the explicit loss parameter as making the theorem's quantitative cost visible is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous description of splitting residue behavior, descending through Linnik rigidity, and choosing a prime matched to the variable range is more detailed than this proof preview.",
+          "The bridge through nonsingular fibers and smaller-scale mean values is imported from the later induction proof."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Superscripts in F and δ are extraction-sensitive; the candidate correctly avoids silently repairing them."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Restrict the architecture to what the span states: fixed-r induction on k, congruence examination modulo a suitable prime, and use of Linnik's lemma. Remove the nonsingular-fiber and scale-matched-prime details."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof uses the entire hierarchy of equations through degree r, not only the top-degree relation.",
+      "line_end": 611,
+      "line_start": 569,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate formula dependence; the semantic invariance is explicit and notation-robust.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Subtracting a common center preserves every balanced power-sum equation because each binomial coefficient term is itself a lower-degree balanced equation. This permits residue classes to be normalized before scale reduction.",
+      "source_id": "harper2014_zeta_course_part2",
+      "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The power-sum system is translation invariant",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_u10.txt",
+      "unit_bytes": 2127,
+      "unit_id": "harper2014_zeta_course_part2_u10",
+      "unit_sha256": "0e44d3c54bb3a085f6a236b85a3b049ed13ba7dff5963d853b17db3d524822ae",
+      "unit_type": "invariance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_u10.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part2",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "exponential-sums",
+          "vinogradov-korobov",
+          "zero-free-regions",
+          "prime-number-theorem"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 561,
+          "line_end": 568,
+          "text": "                                 Y\n                     Q(xj ) =      (xj − yi ) ≡ 0 mod pr              ∀1 ≤ j ≤ r.\n                                 i=1\n\nIf the yi are distinct modulo p this implies that xj is congruent to one of the yi modulo\npr , and so (since the xj are also distinct modulo p) the xj are forced to be a permutation\nof the yj modulo pr . This implies that there are at most (r!)mr possible solution vectors\n(x1 , ..., xr ).                                                                          \u0003\n",
+          "sha256": "98fa1e85290db89384f35b8a5c60b6c9008ebc28abd2e7590052360a9328c662"
+        },
+        "after": {
+          "line_start": 612,
+          "line_end": 619,
+          "text": "\n   Now we shall use Linnik’s Lemma to set up an induction on the number of variables\nk. Unfortunately the proof of this Induction Lemma is very long, but it does split up\ninto several distinct parts.\n\nLemma 9.6 (Induction Lemma). Let r ≥ 2, and suppose that Z ≥ (2r)3r and k ≥ r2 +r.\nThen\n                   Jk,r (Z) ≤ 42k Z 2k/r+(3r−5)/2 Jk−r,r (4Z (r−1)/r ).\n",
+          "sha256": "f26212eb7c3e37d23fe45d0f040e0053c24dddeefdfe5551768fba89a174b541"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b52c2f4de5a7d3224b8db5fe274e07962c1803649902cdd7270aa7dda4ea446",
+        "dossier_sha256": "d30a3dd536de087881efc0c3fa40048b4a414a0262d68f9303dacba64ccf6e28",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9. Vinogradov's Mean Value Theorem",
+            "line_end": 904,
+            "line_start": 439,
+            "mathematical_role": "Introduces the mean value, compares diagonal and volume lower bounds, proves the congruence and translation tools, and executes a scale-reducing induction with nonsingular and singular residue branches."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 611,
+          "line_start": 569,
+          "title": "The power-sum system is translation invariant",
+          "unit_id": "harper2014_zeta_course_part2_u10",
+          "unit_type": "invariance",
+          "why_material": "Subtracting a common center preserves every balanced power-sum equation because each binomial coefficient term is itself a lower-degree balanced equation. This permits residue classes to be normalized before scale reduction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof uses the entire hierarchy of equations through degree r, not only the top-degree relation.",
+          "representation_dependency": "Moderate formula dependence; the semantic invariance is explicit and notation-robust.",
+          "unit_id": "harper2014_zeta_course_part2_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 568,
+            "line_start": 508,
+            "title": "Power sums plus distinct residues rigidify a tuple modulo a prime power",
+            "unit_id": "harper2014_zeta_course_part2_u09",
+            "unit_type": "congruence-lifting-lemma",
+            "why_material": "Congruences at different powers are first lifted to a common modulus. Newton identities convert power sums into elementary symmetric data, so the associated monic polynomials agree modulo p; distinct roots then force tuples to agree up to permutation modulo p^r."
+          },
+          {
+            "line_end": 751,
+            "line_start": 617,
+            "title": "The nonsingular residue branch freezes a class and applies Linnik at the matched scale",
+            "unit_id": "harper2014_zeta_course_part2_u11",
+            "unit_type": "inductive-construction",
+            "why_material": "Choosing p approximately Z^{1/r} matches Linnik's p^r range to the variable scale. Solutions with enough distinct residues are symmetrized, most residue classes are frozen using an integral/Hölder argument, translated to zero, and bounded by Linnik times a lower-variable mean value."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Distinct residues give prime-power rigidity through symmetric polynomials, while too few residues reduce pattern entropy; common translation and division by the matched prime convert both branches into smaller-scale mean values.",
+            "limit": "This describes the architecture of the stated classical induction and does not substitute for its formula-sensitive exponent bookkeeping.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part2_u09",
+              "harper2014_zeta_course_part2_u10",
+              "harper2014_zeta_course_part2_u11",
+              "harper2014_zeta_course_part2_u12",
+              "harper2014_zeta_course_part2_u13"
+            ],
+            "title": "Translation-invariant scale descent handles both regular and degenerate residues"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 616,
+              "line_start": 612,
+              "reason": "Transition into the long induction lemma."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part2_u10",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part2_u10",
+          "spontaneous_reading": "The full hierarchy of balanced power sums makes common translation invisible, permitting a residue class to be moved to zero before division and scale reduction."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part2_u10",
+          "source_grounded_mathematics": "If the two k-tuples have equal sums of jth powers for every 1≤j≤r, then subtracting any common x preserves every equality: the binomial expansion at degree j is a linear combination of the already balanced power sums of degrees at most j, including equal constant terms.",
+          "conceptual_reading": "Translation invariance is a normalization symmetry of the entire system, not of the top-degree equation alone; it removes an arbitrary center without discarding moment information.",
+          "representation_or_bridge": "Centering all variables at a chosen residue representative turns congruence-class concentration into common divisibility by p, which later permits division by p and passage to a smaller range.",
+          "boundary_or_failure": "The argument would fail if only the highest-degree relation were known, because its binomial cross-terms require all lower-degree balanced equations.",
+          "uncertainty": "No material uncertainty; the binomial proof and the scope of the invariance are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part2_u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The binomial expansion proves that common translation preserves the balanced power-sum system because all lower-degree equalities and equal constant terms are available.",
+          "The warning that the whole hierarchy, rather than only the top-degree equation, is required is source-grounded."
+        ],
+        "inference": [
+          "Calling common translation a normalization symmetry is a precise conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "The claim that centering a residue class exposes common divisibility by p and enables division and scale reduction describes a later application absent from this exact span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the later residue-class application with the span-local bridge from binomial expansion to invariance of the complete system, or mark future use only as unspecified."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This interprets rather than strengthens Theorem 10.1 and makes its operative range explicit.",
+      "line_end": 1080,
+      "line_start": 1062,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate formula dependence; qualitative scale distinctions are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For N=t^theta the estimate gives a power saving, while below every fixed power it remains nontrivial only down to an exponential-in-log(t) threshold. The source contrasts this with the square-root cancellation heuristic.",
+      "source_id": "harper2014_zeta_course_part2",
+      "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta-sum bound's strength is diagnosed by the N-versus-t scale",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_u16.txt",
+      "unit_bytes": 1066,
+      "unit_id": "harper2014_zeta_course_part2_u16",
+      "unit_sha256": "241f3dc1c4b2bb13ff901ef306f9babee6ff95897636a52157cd19442ac34118",
+      "unit_type": "scale-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_u16.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part2",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "exponential-sums",
+          "vinogradov-korobov",
+          "zero-free-regions",
+          "prime-number-theorem"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1054,
+          "line_end": 1061,
+          "text": "                8Ckr     2 r −(1/20)((log t)/ log N )2 4k2         8C 2 r3     2 4 r −(1/20)(log t/ log N )2\n        ≤  (4r)      (Dk  ) N                              =   (4r)        (DC  r ) N                                      .\n N 4/5\n                                                                                    2\nThe dominant term inside the bracket is N −(1/20)(log t/ log N ) , and so the conclusion of\nthe theorem follows.                                                                     \u0003\n\n\n",
+          "sha256": "b6b826c43d0888c9d9046196d3cdbee17fb8ecd4841816edfc89bdf31123fc32"
+        },
+        "after": {
+          "line_start": 1081,
+          "line_end": 1088,
+          "text": "\n<!-- source-page: 18 -->\n\n18                                                    ADAM J HARPER\n\n                             11. Some spectacular (?) consequences\n\n  Using our zeta sum estimate (Theorem 10.1) we can deduce the promised upper\n",
+          "sha256": "b487857ebc0b2edab1ec637a3077de8c44cfddf13ac9b351bcacbe3b5690a8d0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b52c2f4de5a7d3224b8db5fe274e07962c1803649902cdd7270aa7dda4ea446",
+        "dossier_sha256": "d30a3dd536de087881efc0c3fa40048b4a414a0262d68f9303dacba64ccf6e28",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "10. Second thoughts on estimating zeta sums",
+            "line_end": 1085,
+            "line_start": 905,
+            "mathematical_role": "Combines the preceding reductions, chooses parameters, exploits rational approximation in a useful degree window, and obtains a nontrivial zeta-sum estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1080,
+          "line_start": 1062,
+          "title": "The zeta-sum bound's strength is diagnosed by the N-versus-t scale",
+          "unit_id": "harper2014_zeta_course_part2_u16",
+          "unit_type": "scale-interpretation",
+          "why_material": "For N=t^theta the estimate gives a power saving, while below every fixed power it remains nontrivial only down to an exponential-in-log(t) threshold. The source contrasts this with the square-root cancellation heuristic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This interprets rather than strengthens Theorem 10.1 and makes its operative range explicit.",
+          "representation_dependency": "Moderate formula dependence; qualitative scale distinctions are clear.",
+          "unit_id": "harper2014_zeta_course_part2_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1059,
+            "line_start": 936,
+            "title": "A rational-approximation degree window converts mean-value savings into zeta-sum cancellation",
+            "unit_id": "harper2014_zeta_course_part2_u15",
+            "unit_type": "parameter-balanced-estimate",
+            "why_material": "After setting k proportional to r², the mean-value theorem supplies a global negative exponent. For degrees in a selected window, the explicit Taylor coefficients admit rational approximants with denominators in a favorable range, giving extra spacing savings; choosing the proportionality constant controls delta and makes the negative term dominate losses."
+          },
+          {
+            "line_end": 1232,
+            "line_start": 1086,
+            "title": "Block decomposition transfers short-sum cancellation to a near-one-line zeta bound",
+            "unit_id": "harper2014_zeta_course_part2_u17",
+            "unit_type": "transfer-theorem",
+            "why_material": "The Hardy–Littlewood approximation is split into exponentially sized blocks; Abel summation imports the zeta-sum estimate into each weighted block, and a second grouping makes the block series summable. A different splitting point handles sigma farther from one."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The theorem's mathematical content is exposed by how far below fixed powers of t it controls zeta sums; improving that range would widen zero-free regions, while the current range remains structurally remote from the critical-line prediction.",
+            "limit": "The source offers no plausible route from this method to RH and explicitly frames the gap as unresolved.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part2_u15",
+              "harper2014_zeta_course_part2_u16",
+              "harper2014_zeta_course_part2_u20"
+            ],
+            "title": "The useful diagnostic is the cancellation range, not only the final error's shape"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1092,
+              "line_start": 1081,
+              "reason": "Page marker, section heading, introductory sentence, and spacing."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part2_u16",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part2_u16",
+          "spontaneous_reading": "The right diagnostic for the theorem is its cancellation range: fixed-power blocks receive a power saving, while subpower blocks retain only a weaker nontrivial gain down to the method's exponential threshold."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part2_u16",
+          "source_grounded_mathematics": "Setting M=N=t^θ in Theorem 10.1 turns its exponential factor into N^{-cθ²}, hence a bound N^{1-cθ²}; when N is smaller than every fixed power of t but exceeds exp(C(log t)^{2/3}), the theorem is still nontrivial but no longer gives a power saving.",
+          "conceptual_reading": "Scale interpretation distinguishes the strength of cancellation from the mere existence of a bound and locates where the degree growth of the earlier polynomialization begins to dominate.",
+          "representation_or_bridge": "The substitution N=t^θ translates an exponential expression in log N and log t into an ordinary power exponent, making the theorem comparable with the square-root-cancellation benchmark.",
+          "boundary_or_failure": "The result remains far above the heuristic N^{1/2+o(1)} square-root scale, and below the stated threshold the N^{4/5} term prevents this argument from providing the claimed nontrivial control.",
+          "uncertainty": "The qualitative scale distinction is explicit; constants in the lower threshold are not resolved in this short interpretive span."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part2_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "For M=N=t^θ the source obtains N^{1-cθ²}, hence a power saving at every fixed positive θ.",
+          "It contrasts this with the N^{1/2+o(1)} random-oscillation benchmark and says that a subpower but above-threshold range still receives a nontrivial, non-power saving."
+        ],
+        "inference": [
+          "Substituting N=t^θ is correctly identified as the representation change that turns the logarithmic exponential into an ordinary power."
+        ],
+        "unsupported_or_imported": [
+          "The statement that this scale transition locates where degree growth from polynomialization begins to dominate is imported from earlier mechanism rather than stated in this span.",
+          "The claim that the N^{4/5} remainder prevents nontrivial control below the threshold gives the wrong obstruction: that term is itself smaller than N; the span merely makes no nontrivial-range claim below the threshold, while the exponential saving becomes too weak."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The threshold constant is not resolved in this short span."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the degree-growth attribution and do not blame the N^{4/5} remainder. State only that the source asserts nontriviality above exp(C(log t)^{2/3}) and supplies no comparable conclusion below it."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The contour-shift details are omitted in the source, so this unit supports the optimization logic but not a self-contained proof.",
+      "line_end": 1284,
+      "line_start": 1264,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence; exact error terms and the optimal T are displayed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shifting the prime-number-theorem contour into the new zero-free region creates two competing error contributions; choosing the truncation height T to balance them yields the characteristic 3/5 and 1/5 exponents.",
+      "source_id": "harper2014_zeta_course_part2",
+      "source_normalized_sha256": "d8175b7c229e64655d31a2da5cf4380bc984c6cea67b2c57ec5c7fed17a42814",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour truncation is balanced against the zero-free decay to optimize the PNT error",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part2_u19.txt",
+      "unit_bytes": 1200,
+      "unit_id": "harper2014_zeta_course_part2_u19",
+      "unit_sha256": "5b4a1e7e63afd45c2b76666dd2d2f1f24cdf9ae8c32abad6e74775bd61cbdc11",
+      "unit_type": "optimization-consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part2_u19.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part2",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 2",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "exponential-sums",
+          "vinogradov-korobov",
+          "zero-free-regions",
+          "prime-number-theorem"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1256,
+          "line_end": 1263,
+          "text": "σ ≥ 1−                        = 1−                 2/3\n                                                                                 ,   t ≥ t0 .\n        φ(2t + 1)w(2t + 1)            (C + 2/3) log (2t + 1)(log log(2t + 1))1/3\nBy relabelling the constants, this gives the assertion of the corollary when t ≥ t0 .\n   One can obtain the analogous result for t < t0 using the known zero-free regions and\nusing symmetry, exactly as in the proof of Corollary 5.2.                             \u0003\n\n\n",
+          "sha256": "3b0ae1a1c7c1415216c6e5f4c7ae10718e92fb64bff977f5992c3faaf1ad004e"
+        },
+        "after": {
+          "line_start": 1285,
+          "line_end": 1292,
+          "text": "\n\nRemark 11.5. In our first proof of the Prime Number Theorem we obtained an error\n                           1/10\nterm of the form O(xe−c log x ). After a great deal of hard work (which took more than\nsixty years to complete in real time), this was improved to the Vinogradov–Korobov\n                      3/5           1/5\nerror term O(xe−c(log x)/(log log x) ). This error term is certainly much smaller, but it\n",
+          "sha256": "36a3e733ea2a4afad70daab176ae31d89ca8023700d30577f4c13e440f648605"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b52c2f4de5a7d3224b8db5fe274e07962c1803649902cdd7270aa7dda4ea446",
+        "dossier_sha256": "d30a3dd536de087881efc0c3fa40048b4a414a0262d68f9303dacba64ccf6e28",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "11. Some spectacular (?) consequences",
+            "line_end": 1326,
+            "line_start": 1086,
+            "mathematical_role": "Transfers zeta-sum cancellation to a near-one-line zeta bound, a zero-free region, and the optimized prime-number-theorem error term, then explains the remaining gap to RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1284,
+          "line_start": 1264,
+          "title": "Contour truncation is balanced against the zero-free decay to optimize the PNT error",
+          "unit_id": "harper2014_zeta_course_part2_u19",
+          "unit_type": "optimization-consequence",
+          "why_material": "Shifting the prime-number-theorem contour into the new zero-free region creates two competing error contributions; choosing the truncation height T to balance them yields the characteristic 3/5 and 1/5 exponents."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The contour-shift details are omitted in the source, so this unit supports the optimization logic but not a self-contained proof.",
+          "representation_dependency": "High formula dependence; exact error terms and the optimal T are displayed.",
+          "unit_id": "harper2014_zeta_course_part2_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1261,
+            "line_start": 1234,
+            "title": "A controlled growth strip feeds Landau's theorem to widen the zero-free region",
+            "unit_id": "harper2014_zeta_course_part2_u18",
+            "unit_type": "consequence-transfer",
+            "why_material": "The zeta bound is rewritten in exponential form on a restricted strip, matched to Landau's phi and width functions, and converted into the Vinogradov–Korobov zero-free boundary."
+          },
+          {
+            "line_end": 1325,
+            "line_start": 1287,
+            "title": "The error term encodes deep cancellation yet remains far from the RH scale",
+            "unit_id": "harper2014_zeta_course_part2_u20",
+            "unit_type": "limitation-and-significance",
+            "why_material": "The closing discussion separates qualitative applications of sharper errors from mere numerical refinement, identifies the zeta-sum estimate as the Fourier-analytic content transported to primes, and states that wider cancellation ranges would widen zero-free regions without providing a route to the critical line."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The short-sum estimate is transferred by partial/Abel summation to zeta growth, then by Landau's theorem to a zero-free strip, and finally by contour shifting and truncation optimization to a prime-number-theorem error term.",
+            "limit": "Several interface theorems and contour details are referenced from earlier notes rather than proved here, so the chain is source-supported but not self-contained.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part2_u14",
+              "harper2014_zeta_course_part2_u15",
+              "harper2014_zeta_course_part2_u17",
+              "harper2014_zeta_course_part2_u18",
+              "harper2014_zeta_course_part2_u19"
+            ],
+            "title": "Local cancellation propagates through analytic interfaces to prime distribution"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1286,
+              "line_start": 1285,
+              "reason": "Blank transition to the closing interpretive remark."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "harper2014_zeta_course_part2_u19",
+        "spontaneous": {
+          "unit_id": "harper2014_zeta_course_part2_u19",
+          "spontaneous_reading": "The characteristic prime-number-theorem exponent is an optimization residue: contour depth improves with truncation height while truncation error worsens, and their balance fixes the 3/5 and 1/5 powers."
+        },
+        "directed": {
+          "unit_id": "harper2014_zeta_course_part2_u19",
+          "source_grounded_mathematics": "Repeating the prime-number-theorem contour shift inside the Vinogradov–Korobov zero-free region yields competing terms involving decay exp(-c log x/[log^{2/3}T (log log T)^{1/3}]) and truncation decay exp(-log T). Choosing T=exp((log x)^{3/5}/(log log x)^{1/5}) balances them and gives Ψ(x)=x+O(x exp(-c(log x)^{3/5}/(log log x)^{1/5})).",
+          "conceptual_reading": "The final exponents do not enter independently; they are forced by balancing the geometry of the zero-free boundary against the cost of truncating the contour.",
+          "representation_or_bridge": "A zero-free region becomes allowable contour displacement, while T is the bridge parameter coupling horizontal analytic decay to the finite truncation remainder.",
+          "boundary_or_failure": "The contour-shift proof and the required ζ'/ζ bound are omitted and referenced to earlier material, so this span supports the optimization logic and conclusion but is not a self-contained proof.",
+          "uncertainty": "The extracted error display is typographically crowded, but the two competing decays, optimal T, and stated corollary are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "harper2014_zeta_course_part2_u19",
+        "critic_decision": "revise",
+        "supported": [
+          "The source states the zero-free-region contour transfer, displays the two T-dependent error contributions, and selects T=exp((log x)^{3/5}/(log log x)^{1/5}) to obtain the corollary.",
+          "It explicitly omits the contour-shift and ζ'/ζ details, so the candidate's self-containment limitation is correct."
+        ],
+        "inference": [
+          "The 3/5 and 1/5 exponents can fairly be described as arising from balancing the displayed terms."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading reverses both monotonic effects: as T increases, the zero-free-region decay term weakens because its denominator grows, while the truncation term e^{-log T}=1/T improves, not vice versa."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The error display is crowded but its T-dependence and the selected optimizer are explicit."
+        ],
+        "missed_mechanism": [
+          "The candidate should state the correct opposing directions of the two T-dependent errors."
+        ],
+        "revision_instructions": [
+          "Rewrite the spontaneous reading so increasing T improves truncation error but weakens the contour-displacement decay; their balance yields the displayed optimizer and exponents."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ee6a8be9e0360946486186157ba1842e535838131d6f49fcdfccb8a929d66dcd"
+}

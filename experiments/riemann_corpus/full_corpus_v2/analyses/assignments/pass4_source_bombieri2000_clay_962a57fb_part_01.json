@@ -1,0 +1,799 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_bombieri2000_clay_962a57fb_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "bombieri2000_clay",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The prose supports the transformation and zero-location roles. Exact displays should be checked against the scan before formula-level reuse.",
+      "line_end": 46,
+      "line_start": 8,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-bearing: extraction loses the real-part glyph and visually collapses 1/2 in several places; do not normalize those formulas from memory.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Places RH inside analytic continuation, the functional equation, the xi transformation, and the separation of trivial from nontrivial zeros, so the conjecture is a structural location statement rather than an isolated slogan.",
+      "source_id": "bombieri2000_clay",
+      "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The analytic zeta package and the critical-line statement",
+      "unit_artifact_relpath": "depth/units/bombieri2000_clay_d01_zeta_rh_package.txt",
+      "unit_bytes": 2635,
+      "unit_id": "bombieri2000_clay_d01_zeta_rh_package",
+      "unit_sha256": "83794fecd0a008702f669e19f2ff00c82dfd22d807cd1fa2630852bbce0014dc",
+      "unit_type": "definition-and-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d01_zeta_rh_package.txt",
+      "source": {
+        "source_id": "bombieri2000_clay",
+        "title": "Problems of the Millennium: The Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri"
+        ],
+        "year": 2000,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "overview",
+          "history",
+          "explicit-formula",
+          "l-functions",
+          "finite-fields",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1,
+          "line_end": 7,
+          "text": "<!-- source-page: 1 -->\n\nProblems of the Millennium: the Riemann Hypothesis\n\n                                         E. Bombieri\n\n\n",
+          "sha256": "202ebdbef93bfd9534479105290c7867d2388fb906e94bad017b1a6704b530ce"
+        },
+        "after": {
+          "line_start": 47,
+          "line_end": 54,
+          "text": "\nII. History and significance of the Riemann hypothesis. For references\npertaining to the early history of zeta functions and the theory of prime numbers,\nwe refer to Landau [La] and Edwards [Ed].\n    1 We denote by \u0001(s) and \u0002(s) the real and imaginary part of the complex variable s . The use\n\nof the variable s is already in Dirichlet’s famous work of 1837 on primes in arithmetic progression.\n\n",
+          "sha256": "4e09fd7a55060e0ae679b73e075359eefb25b25eb6c824a61433a518b72684e4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. The problem",
+            "line_end": 46,
+            "line_start": 1,
+            "mathematical_role": "Defines the analytic zeta package, xi reformulation, trivial/nontrivial zeros, and the Riemann hypothesis."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 46,
+          "line_start": 8,
+          "title": "The analytic zeta package and the critical-line statement",
+          "unit_id": "bombieri2000_clay_d01_zeta_rh_package",
+          "unit_type": "definition-and-equivalence",
+          "why_material": "Places RH inside analytic continuation, the functional equation, the xi transformation, and the separation of trivial from nontrivial zeros, so the conjecture is a structural location statement rather than an isolated slogan."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The prose supports the transformation and zero-location roles. Exact displays should be checked against the scan before formula-level reuse.",
+          "representation_dependency": "Formula-bearing: extraction loses the real-part glyph and visually collapses 1/2 in several places; do not normalize those formulas from memory.",
+          "unit_id": "bombieri2000_clay_d01_zeta_rh_package"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 69,
+            "line_start": 59,
+            "title": "Euler product turns zeta into a prime-distribution object",
+            "unit_id": "bombieri2000_clay_d02_euler_product_prime_bridge",
+            "unit_type": "structural-bridge",
+            "why_material": "The product factorization is the basic semantic bridge from an analytic function to prime-local factors and motivates later logarithmic and explicit-formula transforms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 58,
+              "line_start": 47,
+              "reason": "Section transition, historical routing, notation footnote, and page furniture."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bombieri2000_clay_d01_zeta_rh_package",
+        "spontaneous": {
+          "unit_id": "bombieri2000_clay_d01_zeta_rh_package",
+          "spontaneous_reading": "The decisive move is to package zeta with its pole-removing and gamma factors into an even entire function, so a statement about scattered nontrivial zeros becomes a geometric reality statement for the transformed variable."
+        },
+        "directed": {
+          "unit_id": "bombieri2000_clay_d01_zeta_rh_package",
+          "source_grounded_mathematics": "The source defines zeta by a convergent Dirichlet series, continues it meromorphically with a simple pole, states its functional equation, introduces the even entire xi function, separates trivial from nontrivial zeros, and states RH as the location of all nontrivial zeros on the symmetry line.",
+          "conceptual_reading": "Analytic continuation enlarges the domain while the xi normalization compresses the pole, gamma factor, and functional symmetry into a cleaner zero-location problem. The conjecture is thereby reframed as a structural constraint imposed by symmetry, not merely a claim about individual roots.",
+          "representation_or_bridge": "The bridge is the change from the s-plane zeta function to the t-variable xi function: nontrivial zeta zeros correspond to xi zeros, and the functional equation becomes evenness. This exposes the critical-line geometry while separating the known trivial zeros.",
+          "boundary_or_failure": "The span states rather than proves the analytic continuation, zero count, and RH, and it provides no route to establishing the reality of every xi zero. The normalization does not remove the central proof burden.",
+          "uncertainty": "The prose-level roles are clear, but the extraction collapses the real-part glyph and several one-half expressions; exact formulas require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bombieri2000_clay_d01_zeta_rh_package",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately inventories the Dirichlet-series definition, meromorphic continuation and pole, functional equation, xi normalization, trivial/nontrivial-zero distinction, and the two equivalent RH formulations.",
+          "It correctly preserves the fact that the span states these results and does not prove RH, and it explicitly warns against exact reuse of damaged formulas."
+        ],
+        "inference": [
+          "Describing the normalization as compressing the pole, gamma factor, and functional symmetry is a useful conceptual reading of the displayed construction.",
+          "Viewing the s-to-t change as a representation bridge is supported, provided evenness is treated as symmetry of the zero problem rather than evidence that all zeros are real."
+        ],
+        "unsupported_or_imported": [
+          "The phrase 'a structural constraint imposed by symmetry' overstates what the span supplies: the functional equation/evenness gives reflection symmetry but does not itself impose reality of every xi zero."
+        ],
+        "paraphrase_or_style_risk": [
+          "The analysis is mechanism-bearing rather than a mere restatement, but 'exposes structure' language should remain tied to the explicit s-to-t correspondence."
+        ],
+        "context_or_ocr_risk": [
+          "The real-part glyph and several one-half expressions are collapsed, so formula-level normalization or exact transcription is unsafe without the scan."
+        ],
+        "missed_mechanism": [
+          "The candidate should explicitly distinguish symmetry of the zero set from the stronger critical-line/reality assertion that remains the conjectural burden."
+        ],
+        "revision_instructions": [
+          "Replace 'imposed by symmetry' with language saying that normalization expresses RH relative to a symmetric zero problem; add that evenness/reflection symmetry alone does not force the zeros to be real. Preserve the existing OCR and proof-burden caveats."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conclusion is explicitly provisional: greater generality and new ideas may be necessary.",
+      "line_end": 257,
+      "line_start": 239,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed Dirichlet-series summation mark is lost near lines 249-250; use only the prose-supported eigenvalue-series role pending scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Primitive Maass waveforms produce Euler-product L-functions expected to satisfy RH-like statements despite lacking a direct arithmetic or geometric origin, motivating a genuinely general solution route.",
+      "source_id": "bombieri2000_clay",
+      "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Maass L-functions block a purely arithmetic-geometric framing",
+      "unit_artifact_relpath": "depth/units/bombieri2000_clay_d09_maass_non_geometric_scope.txt",
+      "unit_bytes": 1514,
+      "unit_id": "bombieri2000_clay_d09_maass_non_geometric_scope",
+      "unit_sha256": "a203c6412ff1087bce0bdc2070a29a68d1c1f238cf1fdab8d1bec79191faabfb",
+      "unit_type": "obstruction-and-generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d09_maass_non_geometric_scope.txt",
+      "source": {
+        "source_id": "bombieri2000_clay",
+        "title": "Problems of the Millennium: The Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri"
+        ],
+        "year": 2000,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "overview",
+          "history",
+          "explicit-formula",
+          "l-functions",
+          "finite-fields",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 231,
+          "line_end": 238,
+          "text": "\n<!-- source-page: 5 -->\n\nPROBLEMS OF THE MILLENNIUM: THE RIEMANN HYPOTHESIS                         5\n\nof Wiles [Wi] and Taylor and Wiles [TW] leading to the solution of Fermat’s Last\nTheorem, and then in the general case in a recent preprint by Breuil, Conrad,\nDiamond and Taylor.\n",
+          "sha256": "1da8cfcbd923477463e205d8c74100c0212a2ac6f8bfe65bd110932b772aff97"
+        },
+        "after": {
+          "line_start": 258,
+          "line_end": 265,
+          "text": "\nIII. Evidence for the Riemann hypothesis. Notwithstanding some skepticism\nvoiced in the past, based perhaps more on the number of failed attempts to a\nproof rather than on solid heuristics, it is fair to say that today there is quite a\nbit of evidence in its favor. We have already emphasized that the general Riemann\nhypothesis is consistent with our present knowledge of number theory. There is\nalso speciﬁc evidence of a more direct nature, which we shall now examine.\n   First, strong numerical evidence.\n",
+          "sha256": "af72b33aa962852794213f3748205aa83506e854124d2c3f3120fd299a5b2ede"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. History and significance",
+            "line_end": 258,
+            "line_start": 47,
+            "mathematical_role": "Traces the Euler-product, Chebyshev, and Riemann transform mechanisms, identifies the prime-counting error meaning of RH, and broadens the problem to global L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 257,
+          "line_start": 239,
+          "title": "Maass L-functions block a purely arithmetic-geometric framing",
+          "unit_id": "bombieri2000_clay_d09_maass_non_geometric_scope",
+          "unit_type": "obstruction-and-generalization",
+          "why_material": "Primitive Maass waveforms produce Euler-product L-functions expected to satisfy RH-like statements despite lacking a direct arithmetic or geometric origin, motivating a genuinely general solution route."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The conclusion is explicitly provisional: greater generality and new ideas may be necessary.",
+          "representation_dependency": "The displayed Dirichlet-series summation mark is lost near lines 249-250; use only the prose-supported eigenvalue-series role pending scan verification.",
+          "unit_id": "bombieri2000_clay_d09_maass_non_geometric_scope"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 238,
+            "line_start": 219,
+            "title": "For elliptic-curve L-functions, modularity supplies the analytic package that direct analysis cannot",
+            "unit_id": "bombieri2000_clay_d08_modularity_as_analytic_continuation_obstruction",
+            "unit_type": "method-comparison",
+            "why_material": "The passage isolates a major bottleneck: functional equations may be equivalent to geometric/modular parametrization, shifting the hard work from analytic manipulation to proving modularity."
+          },
+          {
+            "line_end": 295,
+            "line_start": 259,
+            "title": "Independent zero counting plus critical-line sign changes certifies a finite RH window",
+            "unit_id": "bombieri2000_clay_d10_certified_finite_window_test",
+            "unit_type": "computational-certification-logic",
+            "why_material": "The protocol separates a total zero count obtained from the argument principle from detected odd-order critical-line zeros; equality certifies completeness in the rectangle rather than merely sampling apparent zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The common L-function package pushes toward a general structural theory, but the modularity bottleneck and non-geometric Maass examples show that importing finite-field geometry alone cannot be assumed sufficient.",
+            "limit": "The source poses this as motivation and obstruction, not as a settled architecture for a proof.",
+            "parent_local_unit_ids": [
+              "bombieri2000_clay_d07_global_l_function_prototype",
+              "bombieri2000_clay_d08_modularity_as_analytic_continuation_obstruction",
+              "bombieri2000_clay_d09_maass_non_geometric_scope",
+              "bombieri2000_clay_d16_missing_global_geometry"
+            ],
+            "title": "Why the solution may need a general theory without being purely geometric"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bombieri2000_clay_d09_maass_non_geometric_scope",
+        "spontaneous": {
+          "unit_id": "bombieri2000_clay_d09_maass_non_geometric_scope",
+          "spontaneous_reading": "Maass waveforms are the stress test: simultaneous spectral and Hecke eigenfunctions still generate Euler-product L-functions with functional equations and expected RH, despite lacking the direct arithmetic-geometric origin used in modularity arguments."
+        },
+        "directed": {
+          "unit_id": "bombieri2000_clay_d09_maass_non_geometric_scope",
+          "source_grounded_mathematics": "The source describes Maass waveforms on arithmetic hyperbolic surfaces as simultaneous eigenfunctions of the Laplacian and Hecke operators, defines primitivity by non-induction from lower level, and uses Hecke eigenvalues as coefficients of an L-function with an Euler product and functional equation. An RH analogue is expected for it.",
+          "conceptual_reading": "The example separates the reusable L-function package from a specifically algebraic-geometric origin. It suggests that a successful mechanism may need to operate at the level of spectral and local-global structure rather than depend on one provenance story.",
+          "representation_or_bridge": "Hecke eigenvalues bridge a waveform to a Dirichlet-series L-function, while simultaneous spectral and arithmetic actions organize those coefficients. Primitivity removes induced objects so the L-function represents an irreducible source rather than inherited lower-level data.",
+          "boundary_or_failure": "The expectation of RH is not evidence of a proof, and the source's conclusion that more general problems and new ideas may be necessary is provisional. The example obstructs a purely geometric framing but does not specify a replacement theory.",
+          "uncertainty": "The summation sign in the displayed Dirichlet series is lost, so only the prose-supported role of the Hecke eigenvalues is safe; the rest of the selected mechanism is readable."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bombieri2000_clay_d09_maass_non_geometric_scope",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly reports the simultaneous Laplacian/Hecke eigenfunction description, the source's definition of primitivity by non-induction from lower level, the Hecke-eigenvalue L-function, its Euler product and functional equation, and expected RH.",
+          "It appropriately treats the call for greater generality and new ideas as provisional and does not propose a replacement theory."
+        ],
+        "inference": [
+          "Using the Maass example as a stress test for provenance-specific approaches and suggesting attention to spectral plus local-global structure are reasonable conceptual deductions."
+        ],
+        "unsupported_or_imported": [
+          "The statement that primitivity makes the L-function represent an 'irreducible source' is not established by the span; non-induction from lower level is the only definition supplied, and irreducibility is a stronger imported characterization."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low apart from the unjustified irreducibility gloss; the eigenvalue-to-series bridge is concrete."
+        ],
+        "context_or_ocr_risk": [
+          "The Dirichlet-series summation mark is lost, so exact series transcription is unsafe, while the coefficient role remains readable in prose."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Delete the 'irreducible source' characterization. State only that primitivity excludes waveforms induced from a proper lower level, while leaving any stronger representation-theoretic interpretation unasserted."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The semantic distinction between density control and exclusion of every exception is essential.",
+      "line_end": 326,
+      "line_start": 312,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-sensitive: 1/2 and 3/4 are collapsed and exponents are layout-dependent; no exact bound should be copied without scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Counting zeros to the right of a movable boundary yields progressively sublinear density estimates with arithmetic consequences, furnishing graded evidence short of pointwise RH.",
+      "source_id": "bombieri2000_clay",
+      "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-density bounds quantify how rare off-line exceptions must be",
+      "unit_artifact_relpath": "depth/units/bombieri2000_clay_d12_zero_density_rarity.txt",
+      "unit_bytes": 1164,
+      "unit_id": "bombieri2000_clay_d12_zero_density_rarity",
+      "unit_sha256": "7759019cdd8beecbdb8a7df48810697cb8c665526da8afccf933a31450fe4137",
+      "unit_type": "partial-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d12_zero_density_rarity.txt",
+      "source": {
+        "source_id": "bombieri2000_clay",
+        "title": "Problems of the Millennium: The Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri"
+        ],
+        "year": 2000,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "overview",
+          "history",
+          "explicit-formula",
+          "l-functions",
+          "finite-fields",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 304,
+          "line_end": 311,
+          "text": "the Riemann hypothesis holds for over 3 × 108 zeros at heights up to6 2 × 1020 .\nThese calculations also strongly support independent conjectures by Dyson and\nMontgomery [Mo] concerning the distribution of spacings between zeros.\n   Computing zeros of L -functions is more diﬃcult, but this has been done in sev-\neral cases, which include examples of Dirichlet L -functions, L -functions of elliptic\ncurves, Maass L -functions and nonabelian Artin L -functions arising from number\nﬁelds of small degree. No exception to a generalized Riemann hypothesis has been\nfound in this way.\n",
+          "sha256": "dec465c264ae154f93c3850f0df6fce5d19e0ea79e9eaab0f3eac5c7eada8748"
+        },
+        "after": {
+          "line_start": 327,
+          "line_end": 334,
+          "text": "   Third, it is known that more than 40 % of nontrivial zeros of ζ(s) are simple and\nsatisfy the Riemann hypothesis (Selberg [Sel], Levinson [Le], Conrey [Conr]). Most\nof these results have been extended to other L -functions, including all Dirichlet\nL -functions and L -functions associated to modular forms or Maass waveforms.\n\nIV. Further evidence: varieties over finite fields. It may be said that the\nbest evidence in favor of the Riemann hypothesis derives from the corresponding\ntheory which has been developed in the context of algebraic varieties over ﬁnite\n",
+          "sha256": "3922a187cc2c26f54cd7ec865390997658c0de3b784b59a4134c2a648a376bf7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III. Evidence for the Riemann hypothesis",
+            "line_end": 331,
+            "line_start": 259,
+            "mathematical_role": "Separates finite-range numerical certification, zero-density bounds, and positive-proportion critical-line results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 326,
+          "line_start": 312,
+          "title": "Zero-density bounds quantify how rare off-line exceptions must be",
+          "unit_id": "bombieri2000_clay_d12_zero_density_rarity",
+          "unit_type": "partial-result",
+          "why_material": "Counting zeros to the right of a movable boundary yields progressively sublinear density estimates with arithmetic consequences, furnishing graded evidence short of pointwise RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The semantic distinction between density control and exclusion of every exception is essential.",
+          "representation_dependency": "Highly formula-sensitive: 1/2 and 3/4 are collapsed and exponents are layout-dependent; no exact bound should be copied without scan verification.",
+          "unit_id": "bombieri2000_clay_d12_zero_density_rarity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 311,
+            "line_start": 296,
+            "title": "Target difficult heights and broaden L-function families without mistaking finite evidence for proof",
+            "unit_id": "bombieri2000_clay_d11_targeted_numerical_and_family_evidence",
+            "unit_type": "evidence-and-limitation",
+            "why_material": "The passage combines an extrema reformulation, a heuristic for where counterexamples might hide, high-altitude spot checks, spacing evidence, and tests in other L-function families while preserving their finite empirical status."
+          },
+          {
+            "line_end": 330,
+            "line_start": 327,
+            "title": "A positive proportion of simple critical-line zeros transfers across major L-function classes",
+            "unit_id": "bombieri2000_clay_d13_positive_proportion_and_transfer",
+            "unit_type": "partial-result",
+            "why_material": "This is a qualitatively different partial result from density bounds: it proves many zeros lie simply on the target line and notes extension to Dirichlet, modular, and Maass settings."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Finite-window certification, density control of possible exceptions, and positive-proportion critical-line theorems constrain RH in logically different ways and should not be collapsed into a single confidence score.",
+            "limit": "None excludes every off-line zero; finite computations and partial theorems remain bounded evidence.",
+            "parent_local_unit_ids": [
+              "bombieri2000_clay_d10_certified_finite_window_test",
+              "bombieri2000_clay_d12_zero_density_rarity",
+              "bombieri2000_clay_d13_positive_proportion_and_transfer"
+            ],
+            "title": "Three non-interchangeable evidence channels"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bombieri2000_clay_d12_zero_density_rarity",
+        "spontaneous": {
+          "unit_id": "bombieri2000_clay_d12_zero_density_rarity",
+          "spontaneous_reading": "A movable-boundary counting function replaces the impossible pointwise question by a graded one: how many zeros can persist increasingly far from the symmetry line as height grows?"
+        },
+        "directed": {
+          "unit_id": "bombieri2000_clay_d12_zero_density_rarity",
+          "source_grounded_mathematics": "The passage defines a count of zeros in a rectangle to the right of a parameterized vertical boundary and reports successively sharper upper bounds. A sublinear exponent in height implies that possible off-line zeros in the specified region have zero density relative to the main zero population and yields arithmetic applications such as results on primes in short intervals.",
+          "conceptual_reading": "Density estimates measure rarity without asserting absence. Varying the boundary gives a profile of how exceptional zeros are constrained as one moves away from the critical line, providing quantitative partial progress that is logically distinct from checking individual zeros.",
+          "representation_or_bridge": "The two-dimensional zero set is compressed into the statistic N(alpha,T). The boundary parameter records horizontal displacement and the height parameter records scale, making asymptotic counting estimates available for arithmetic transfer.",
+          "boundary_or_failure": "A density-zero exceptional set may still be infinite, so no bound reported here excludes every off-line zero or proves RH. Fixed-boundary estimates also do not automatically control behavior as the boundary approaches the critical line.",
+          "uncertainty": "The semantic distinction between rarity and exclusion is secure, but one-half, three-quarters, and several exponents are collapsed in extraction; exact inequalities must be verified against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bombieri2000_clay_d12_zero_density_rarity",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately describes the parameterized right-hand rectangle, successively sharper bounds, the importance of an exponent below one, and the cited arithmetic application to primes in short intervals.",
+          "It correctly emphasizes that density control does not exclude every exception and that a fixed-boundary result does not automatically control a boundary approaching the critical line."
+        ],
+        "inference": [
+          "Treating the two parameters as horizontal displacement and height, and the bounds as a graded rarity profile, is a source-aligned conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "Within this exact span, 'zero density relative to the main zero population' imports the asymptotic scale of the total zero count; the unit states a sublinear-in-T exponent and calls exceptions rare but does not supply that comparison baseline."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the movable-boundary statistic is a concrete compression, not a generic structure-exposure template."
+        ],
+        "context_or_ocr_risk": [
+          "One-half, three-quarters, and exponent layout are damaged; exact inequalities cannot be safely copied."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "In source-grounded mathematics, state only that for fixed alpha in the reported range the improved exponent can be strictly below one and thus gives sublinear-in-T control. If zero density relative to all zeros is retained, label it explicitly as an inference requiring a separate total-zero-count baseline not present in this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source reports the then-known proportion and extensions; it does not imply that all zeros lie on the line.",
+      "line_end": 330,
+      "line_start": 327,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; the percentage is readable, with bibliographic verification available only outside this bounded task.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This is a qualitatively different partial result from density bounds: it proves many zeros lie simply on the target line and notes extension to Dirichlet, modular, and Maass settings.",
+      "source_id": "bombieri2000_clay",
+      "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A positive proportion of simple critical-line zeros transfers across major L-function classes",
+      "unit_artifact_relpath": "depth/units/bombieri2000_clay_d13_positive_proportion_and_transfer.txt",
+      "unit_bytes": 330,
+      "unit_id": "bombieri2000_clay_d13_positive_proportion_and_transfer",
+      "unit_sha256": "fb68e9c1307370ff2435695e7ebefb6eae449ba11e99e6d67f7197167dcb2e54",
+      "unit_type": "partial-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d13_positive_proportion_and_transfer.txt",
+      "source": {
+        "source_id": "bombieri2000_clay",
+        "title": "Problems of the Millennium: The Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri"
+        ],
+        "year": 2000,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "overview",
+          "history",
+          "explicit-formula",
+          "l-functions",
+          "finite-fields",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 319,
+          "line_end": 326,
+          "text": "here is strictly less than 1 is important for arithmetic applications, for example\nin the study of primes in short intervals. The exponent in Carlson’s theorem has\ngone through several successive reﬁnements for various ranges of α , in particular\nin the range 34 < α < 1 . Curiously enough, the best exponent known up to date\nin the range 12 < α ≤ 34 remains Ingham’s exponent 3(1 − α)/(2 − α), obtained in\n1940. For references to these results, the reader may consult the recent revision by\nHeath-Brown of the classical monograph of Titchmarsh [Ti], and the book by Ivic\n[Iv].\n",
+          "sha256": "ff187855576d69d3a1375f289748fe6f0b54dadb48ea8d02e0c32e265b1265dd"
+        },
+        "after": {
+          "line_start": 331,
+          "line_end": 338,
+          "text": "\nIV. Further evidence: varieties over finite fields. It may be said that the\nbest evidence in favor of the Riemann hypothesis derives from the corresponding\ntheory which has been developed in the context of algebraic varieties over ﬁnite\nﬁelds. The simplest situation is as follows.\n   Let C be a nonsingular projective curve over a ﬁnite ﬁeld Fq with q = pa\nelements, of characteristic p. Let Div(C) be the additive group of divisors on C\n    6 The most recent calculations by Odlyzko, which are approaching completion, will explore\n",
+          "sha256": "19a7cd2ea73ef464271819e1d033ced481ad3b780231baf0c8d4fb7c21f37dce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III. Evidence for the Riemann hypothesis",
+            "line_end": 331,
+            "line_start": 259,
+            "mathematical_role": "Separates finite-range numerical certification, zero-density bounds, and positive-proportion critical-line results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 330,
+          "line_start": 327,
+          "title": "A positive proportion of simple critical-line zeros transfers across major L-function classes",
+          "unit_id": "bombieri2000_clay_d13_positive_proportion_and_transfer",
+          "unit_type": "partial-result",
+          "why_material": "This is a qualitatively different partial result from density bounds: it proves many zeros lie simply on the target line and notes extension to Dirichlet, modular, and Maass settings."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source reports the then-known proportion and extensions; it does not imply that all zeros lie on the line.",
+          "representation_dependency": "Prose-dominant; the percentage is readable, with bibliographic verification available only outside this bounded task.",
+          "unit_id": "bombieri2000_clay_d13_positive_proportion_and_transfer"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 326,
+            "line_start": 312,
+            "title": "Zero-density bounds quantify how rare off-line exceptions must be",
+            "unit_id": "bombieri2000_clay_d12_zero_density_rarity",
+            "unit_type": "partial-result",
+            "why_material": "Counting zeros to the right of a movable boundary yields progressively sublinear density estimates with arithmetic consequences, furnishing graded evidence short of pointwise RH."
+          },
+          {
+            "line_end": 517,
+            "line_start": 480,
+            "title": "The algebraic index theorem supplies the geometric negativity mechanism",
+            "unit_id": "bombieri2000_clay_d14_geometric_index_negativity",
+            "unit_type": "proof-mechanism-analogy",
+            "why_material": "For curves over finite fields, the source identifies the negativity needed by the preceding explicit-formula criterion as a consequence of a negative-semidefinite divisor intersection form, and explains the algebraic and Hodge-theoretic proof landscape."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Finite-window certification, density control of possible exceptions, and positive-proportion critical-line theorems constrain RH in logically different ways and should not be collapsed into a single confidence score.",
+            "limit": "None excludes every off-line zero; finite computations and partial theorems remain bounded evidence.",
+            "parent_local_unit_ids": [
+              "bombieri2000_clay_d10_certified_finite_window_test",
+              "bombieri2000_clay_d12_zero_density_rarity",
+              "bombieri2000_clay_d13_positive_proportion_and_transfer"
+            ],
+            "title": "Three non-interchangeable evidence channels"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bombieri2000_clay_d13_positive_proportion_and_transfer",
+        "spontaneous": {
+          "unit_id": "bombieri2000_clay_d13_positive_proportion_and_transfer",
+          "spontaneous_reading": "This result controls the zero set from the opposite direction to density bounds: it proves that a substantial positive share of zeros are both simple and on the target line, and the method's scope extends across major L-function classes."
+        },
+        "directed": {
+          "unit_id": "bombieri2000_clay_d13_positive_proportion_and_transfer",
+          "source_grounded_mathematics": "The source reports that more than forty percent of nontrivial zeta zeros are simple and satisfy RH, and says that most such results extend to Dirichlet L-functions and L-functions of modular forms or Maass waveforms.",
+          "conceptual_reading": "A positive-proportion theorem establishes abundant correct behavior rather than merely bounding bad behavior away from the line. Transfer across families suggests that the underlying analytic method uses common L-function structure.",
+          "representation_or_bridge": "The proportion of simple critical-line zeros is a coarse population statistic that permits comparison between zeta and other L-function families without matching individual zeros.",
+          "boundary_or_failure": "A positive proportion, even a large one, leaves an uncontrolled complementary set and does not imply that all zeros lie on the line. Cross-family extension does not make the conclusion uniform over every L-function.",
+          "uncertainty": "The percentage is readable and the claim is prose-dominant, but it is a source-era report whose bibliographic details cannot be checked inside this bounded packet."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bombieri2000_clay_d13_positive_proportion_and_transfer",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately reports the source-era result that more than forty percent of nontrivial zeta zeros are simple and satisfy RH and that most such results extend to the named L-function classes.",
+          "It correctly explains that a positive proportion leaves an uncontrolled complement and that the extension is not a uniform theorem for every L-function."
+        ],
+        "inference": [
+          "Contrasting abundant verified behavior with bounds on bad behavior and using the proportion as a coarse cross-family statistic are reasonable readings of the unit and bounded nearby context."
+        ],
+        "unsupported_or_imported": [
+          "The claim that cross-family extension shows the 'underlying analytic method uses common L-function structure' is stronger than the span, which reports extension of results but does not identify or compare their methods."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the population-statistic comparison is specific and preserves the partial-result boundary."
+        ],
+        "context_or_ocr_risk": [
+          "The prose and percentage are readable, but the cited source-era result is not independently bibliographically checked inside this packet."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the method claim with the narrower observation that similar positive-proportion conclusions occur across the listed families; describe common-structure or common-method explanations only as hypotheses not established by this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The passage supplies compatibility and analogy, not construction of the operator or proof of RH.",
+      "line_end": 508,
+      "line_start": 496,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant and readable; named results are used only as source-reported evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Observed and conjectured zero-spacing universality aligns L-function families with random-matrix spectra and the Hilbert-Polya operator viewpoint, while finite-field family results provide an unconditional analogue.",
+      "source_id": "bombieri2000_clay",
+      "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Universal spacing statistics motivate a self-adjoint spectral model",
+      "unit_artifact_relpath": "depth/units/bombieri2000_clay_d15_spectral_statistics_operator_hint.txt",
+      "unit_bytes": 1080,
+      "unit_id": "bombieri2000_clay_d15_spectral_statistics_operator_hint",
+      "unit_sha256": "3572153adbf7c5f1553e96b96bcab07b4b081504dc00ed642b3f84b64ccda354",
+      "unit_type": "cross-domain-analogy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bombieri2000_clay_d15_spectral_statistics_operator_hint.txt",
+      "source": {
+        "source_id": "bombieri2000_clay",
+        "title": "Problems of the Millennium: The Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri"
+        ],
+        "year": 2000,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "overview",
+          "history",
+          "explicit-formula",
+          "l-functions",
+          "finite-fields",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 488,
+          "line_end": 495,
+          "text": "of families of curves on X of a given degree; no other proof by algebraic methods is\nknown up to now, although much later several authors independently rediscovered\nSeveri’s argument.\n   The algebraic index theorem for nonsingular projective varieties of even dimen-\nsion over the complex numbers was ﬁrst formulated and proved by Hodge, as a\nconsequence of his theory of harmonic forms. No algebraic proof of Hodge’s theo-\nrem is known, and it remains a fundamental open problem to extend it to the case\nof varieties over ﬁelds of positive characteristic.\n",
+          "sha256": "5297869a5bf9ca08c3e02fb04d076b68d52251c5b6e7c62bff776cb70fc0e856"
+        },
+        "after": {
+          "line_start": 509,
+          "line_end": 516,
+          "text": "   All this leads to several basic questions.\n   Is there a theory in the global case, playing the same role as cohomology does\nfor Zeta functions of varieties over a ﬁeld of positive characteristic? Is there an\nanalogue of a Frobenius automorphism in the classical case? Is there a general\nindex theorem by which one can prove the classical Riemann hypothesis? We are\n   8 Severi showed that a divisor D on X is algebraically equivalent to 0 up to torsion, if it has\n\ndegree 0 and (D · D) = 0 . His proof holds, without modifications, under the weaker assumption\n",
+          "sha256": "f167ebed17c5ea685a9e0a4ef4143c36ef490717779cd8d2f2bef7ea54a09d66"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_118091419e4ea9f9dd6ec0c548f421881589a04f7ff9cd51c2335ee3402372e4",
+        "dossier_sha256": "19103c9e06a6551c8a0b4ff35c4209ed545c9cbfd85ee932c42fa84c28da0041",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "V. Explicit formula and prospective mechanisms",
+            "line_end": 534,
+            "line_start": 412,
+            "mathematical_role": "Gives the carried v1 explicit trace dictionary, then develops an OCR-sensitive negativity criterion, the readable algebraic index mechanism, spectral statistics, and missing global analogues."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 508,
+          "line_start": 496,
+          "title": "Universal spacing statistics motivate a self-adjoint spectral model",
+          "unit_id": "bombieri2000_clay_d15_spectral_statistics_operator_hint",
+          "unit_type": "cross-domain-analogy",
+          "why_material": "Observed and conjectured zero-spacing universality aligns L-function families with random-matrix spectra and the Hilbert-Polya operator viewpoint, while finite-field family results provide an unconditional analogue."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The passage supplies compatibility and analogy, not construction of the operator or proof of RH.",
+          "representation_dependency": "Prose-dominant and readable; named results are used only as source-reported evidence.",
+          "unit_id": "bombieri2000_clay_d15_spectral_statistics_operator_hint"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 517,
+            "line_start": 480,
+            "title": "The algebraic index theorem supplies the geometric negativity mechanism",
+            "unit_id": "bombieri2000_clay_d14_geometric_index_negativity",
+            "unit_type": "proof-mechanism-analogy",
+            "why_material": "For curves over finite fields, the source identifies the negativity needed by the preceding explicit-formula criterion as a consequence of a negative-semidefinite divisor intersection form, and explains the algebraic and Hodge-theoretic proof landscape."
+          },
+          {
+            "line_end": 530,
+            "line_start": 509,
+            "title": "The classical case lacks global analogues of cohomology, Frobenius, and the index theorem",
+            "unit_id": "bombieri2000_clay_d16_missing_global_geometry",
+            "unit_type": "open-obstruction",
+            "why_material": "The survey distills the analogy into concrete missing structures and then stress-tests it with Maass L-functions, for which no guiding geometric model is available."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The finite-field index theorem supplies a positivity/negativity mechanism while spacing universality suggests self-adjoint spectrality; the classical problem is precisely that the corresponding global objects and theorem remain unidentified.",
+            "limit": "The analytic criterion immediately preceding the index discussion is extraction-defective, and neither clue constructs the missing classical structure.",
+            "parent_local_unit_ids": [
+              "bombieri2000_clay_d14_geometric_index_negativity",
+              "bombieri2000_clay_d15_spectral_statistics_operator_hint",
+              "bombieri2000_clay_d16_missing_global_geometry"
+            ],
+            "title": "Geometric negativity and spectrality as complementary clues"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bombieri2000_clay_d15_spectral_statistics_operator_hint",
+        "spontaneous": {
+          "unit_id": "bombieri2000_clay_d15_spectral_statistics_operator_hint",
+          "spontaneous_reading": "Universal zero-spacing statistics recode zeros as a spectral point process, aligning L-function families with random-matrix symmetry classes and making a self-adjoint operator model structurally plausible."
+        },
+        "directed": {
+          "unit_id": "bombieri2000_clay_d15_spectral_statistics_operator_hint",
+          "source_grounded_mathematics": "The source reports work and conjectures suggesting universal spacing correlations within L-function families, matching limiting eigenvalue statistics of orthogonal, unitary, or symplectic random-matrix families. It notes compatibility with the Hilbert-Polya self-adjoint-operator idea and an unconditional finite-field family theory due to Katz and Sarnak using Deligne's methods.",
+          "conceptual_reading": "Spacing laws reveal organization invisible in the statement that zeros lie on a line. Treating zeros as eigenvalue-like data suggests that family symmetry determines collective statistics and that self-adjointness could explain real spectral parameters.",
+          "representation_or_bridge": "Normalized zero spacings bridge analytic zeros to random-matrix spectra; the proposed self-adjoint operator would bridge zero locations to spectral reality. Finite-field families provide an established comparison setting rather than a construction in the classical case.",
+          "boundary_or_failure": "Matching correlations does not construct an operator, prove self-adjointness, or imply RH. Random-matrix universality and the finite-field theory are compatibility evidence, and their transfer to an individual classical L-function remains unproved here.",
+          "uncertainty": "The passage is prose-dominant and readable, but all named results and conjectural correspondences are used only at the epistemic status reported by the source."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bombieri2000_clay_d15_spectral_statistics_operator_hint",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately reports source-described work and conjectures on universal spacing correlations, their match with limiting orthogonal/unitary/symplectic random-matrix eigenvalue statistics, compatibility with Hilbert-Polya, and the unconditional finite-field family theory.",
+          "It correctly states that correlation matching constructs no operator, proves no self-adjointness or RH, and supplies comparison rather than a classical construction."
+        ],
+        "inference": [
+          "Using spacing statistics as a bridge to spectral comparison and noting that self-adjointness would explain real spectral parameters are reasonable conceptual deductions when kept hypothetical."
+        ],
+        "unsupported_or_imported": [
+          "Saying that family symmetry 'determines' collective statistics is stronger than the source's reported grouping and conjectural matching.",
+          "Saying the statistics 'recode zeros as a spectral point process' risks converting an analogy of correlations into an identification that the span does not make."
+        ],
+        "paraphrase_or_style_risk": [
+          "The analysis is specific, but the spectral-point-process phrasing makes the analogy sound more established than its stated compatibility status."
+        ],
+        "context_or_ocr_risk": [
+          "The prose is readable; the principal risk is epistemic inflation of conjectural correspondences, not OCR reconstruction."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'recode' with 'motivate comparison of' and replace 'family symmetry determines' with language saying the conjectured statistics are organized by or matched to random-matrix symmetry classes. Preserve the explicit no-construction/no-proof boundary."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "b99a4235e2c7221ddbb113a6e090a716a53b7ab6d0a4652d41594eacf7929633"
+}

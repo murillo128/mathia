@@ -1,0 +1,2131 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated generation context",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_batch_10.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_10.jsonl",
+    "pass3": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_10.jsonl"
+  },
+  "unit_count": 48,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivation is introductory and informal but supplies the representations used throughout the review.",
+      "line_end": 147,
+      "line_start": 111,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed factors are extraction-degraded; exact normalizations require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates the Dirichlet series to a product over primes, analytically continues it, and uses the functional equation and Gamma poles to distinguish trivial zeros, the critical strip, and symmetry about the critical line.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler product and functional symmetry constrain the zero geometry",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u01.txt",
+      "unit_bytes": 3808,
+      "unit_id": "openalex_w1869326093_v2_u01",
+      "unit_sha256": "cf2a05941213aa8b96a7a27eb9d590f9193d4cb5ff2f01c120aa43807424cd34",
+      "unit_type": "analytic representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The perturbative language is an analogy; knowing all zero data determines prime distribution, but truncated plots do not prove RH.",
+      "line_end": 212,
+      "line_start": 153,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose and roles are clear; the nested sums and integral terms should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States RH and the PNT boundary criterion, then presents the explicit formula in which zero terms refine the logarithmic-integral approximation to prime counting.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime counting is a smooth term corrected by nontrivial zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u02.txt",
+      "unit_bytes": 6139,
+      "unit_id": "openalex_w1869326093_v2_u02",
+      "unit_sha256": "bb5ad5f48ef5875a5fc2ae84acdc396848161567f1f8963b1f14e7597f956bc4",
+      "unit_type": "explicit-formula prime-zero linkage",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the central formal template for the later trace-formula comparison.",
+      "line_end": 330,
+      "line_start": 283,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prime-power coefficients and asymptotic constants are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes zero density into an average logarithmic term and an oscillatory sum indexed by primes and repetitions, then changes variables so zero counts and chaotic periodic-orbit counts share exponential growth.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta-zero density splits into a smooth count and prime-power oscillations",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u03.txt",
+      "unit_bytes": 6192,
+      "unit_id": "openalex_w1869326093_v2_u03",
+      "unit_sha256": "d2aefa14bce143ec874c26215ef9ae78cc5f4fe5ae13190de97d511133e785da",
+      "unit_type": "density decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The circular billiard is a controlled model preparing the arithmetic escape calculation.",
+      "line_end": 389,
+      "line_start": 345,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; map notation is recoverable with minor layout risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains action-angle solvability, the dimensional obstruction to autonomous one-dimensional chaos, and how billiard boundary geometry changes periodicity, mixing, and escape behavior.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integrability confines trajectories to tori while billiard geometry can create chaos",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u04.txt",
+      "unit_bytes": 4825,
+      "unit_id": "openalex_w1869326093_v2_u04",
+      "unit_sha256": "6e6dd71ff0426bb09401bb547420db022983f145d62ba1ba47f9889aab8674a0",
+      "unit_type": "dynamical contrast",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposed experiment could substantiate asymptotics but finite measurements cannot prove the limiting statement.",
+      "line_end": 475,
+      "line_start": 400,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Two-column OCR damages several exponents; the coprimality-to-zeta mechanism is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Classifies long-lived periodic trajectories by coprime pairs, converts their sums to Euler-totient and Ramanujan-Moebius terms, Mellin transforms the escape probability, and states RH-equivalent second-order asymptotics.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Open-billiard escape corrections encode totients, Moebius sums, and zeta zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u05.txt",
+      "unit_bytes": 7956,
+      "unit_id": "openalex_w1869326093_v2_u05",
+      "unit_sha256": "629925aa38a3e0414e5bd1fe0c6987ffea09b6fc20de72e3068a7847c10590b6",
+      "unit_type": "equivalent physical asymptotic criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Exponential proliferation of unstable periodic orbits distinguishes chaotic from integrable dynamics and motivates quantization by orbit data.",
+      "line_end": 539,
+      "line_start": 481,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The trace formula's exact determinant conventions need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expresses the evolution-operator trace as a sum over primitive periodic orbits and repetitions weighted by monodromy determinants, establishing the classical precursor of quantum trace formulas.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A flow trace turns global evolution spectrum into periodic-orbit data",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u06.txt",
+      "unit_bytes": 6966,
+      "unit_id": "openalex_w1869326093_v2_u06",
+      "unit_sha256": "27b55b9a7695b3a88ed47df95b57b692763468982a09c4e0b3551f88f38d488b",
+      "unit_type": "classical trace mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The chaotic trace formula is semiclassical, unlike the exact Selberg formula later surveyed.",
+      "line_end": 615,
+      "line_start": 545,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-rich span; the smooth/oscillatory roles are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates smooth Thomas-Fermi density from orbit-dependent oscillations and presents Gutzwiller's Green-function trace as a quantization route when Bohr-Sommerfeld action variables are unavailable.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gutzwiller replaces invariant-torus quantization by an unstable-orbit expansion",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u07.txt",
+      "unit_bytes": 7596,
+      "unit_id": "openalex_w1869326093_v2_u07",
+      "unit_sha256": "aa47a7e061709aebc2870ef1b6b00f06d433f07e56f8eacbef19c1404dd20a27",
+      "unit_type": "semiclassical bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The dictionary constrains a hypothetical Hamiltonian but does not construct one; the source notes nonunique Maslov and stability mappings.",
+      "line_end": 675,
+      "line_start": 620,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Table text is legible though alignment and factors are extraction-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps primes to primitive orbits, logarithms of primes to periods, and prime powers to stability factors, then infers scale invariance, instability, broken time reversal, and quasi-one-dimensionality.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Matching trace formulas predicts the qualitative Riemann dynamics",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u08.txt",
+      "unit_bytes": 5337,
+      "unit_id": "openalex_w1869326093_v2_u08",
+      "unit_sha256": "2d32c6a7aa84b0a165f1c129b470508265591f45d41b0b944712d6168bf8ee04",
+      "unit_type": "structural dictionary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a conditional proof strategy, not evidence that the required operator exists.",
+      "line_end": 713,
+      "line_start": 678,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains that realizing nontrivial zeros as eigenvalues of a self-adjoint Hamiltonian would force their ordinates to be real and separates scattering-state from bound-state model families.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hilbert-Polya turns RH into self-adjoint spectral reality",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u09.txt",
+      "unit_bytes": 3474,
+      "unit_id": "openalex_w1869326093_v2_u09",
+      "unit_sha256": "17ffc6bd5f3b4191f257dd4523976404fa7f6d4f25d3287c686f6e036e505e8a",
+      "unit_type": "spectral strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The route naturally contains zeta but the survey reports that it produced no further insight into zero locations.",
+      "line_end": 775,
+      "line_start": 719,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact S-matrix and trace coefficients are OCR-risky; the exact-versus-semiclassical distinction is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects compact negative-curvature chaos to an exact density-of-states trace formula and, for a noncompact surface, places zeta factors and nontrivial zeros in the scattering matrix.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Negative curvature yields an exact Selberg orbit expansion and zeta scattering poles",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u10.txt",
+      "unit_bytes": 4954,
+      "unit_id": "openalex_w1869326093_v2_u10",
+      "unit_sha256": "4c1d5995c9c389495500486b59326f9a876c7221e6ec85a2bb453ca689ea3796",
+      "unit_type": "exact trace comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source labels several mappings artificial or approximate and notes geometric mismatches, preventing the analogy from becoming a proof.",
+      "line_end": 849,
+      "line_start": 776,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is usable; figure geometry and boundary-condition formulas depend on the retained scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps Jost zeros to the critical line, surveys coupling-constant and redundant-pole constructions, and compares the phase of zeta with scattering Argand diagrams.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Jost and phase-shift analogies realize zero data but do not explain RH",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u11.txt",
+      "unit_bytes": 7177,
+      "unit_id": "openalex_w1869326093_v2_u11",
+      "unit_sha256": "47477af8ff42b16f09740e31b4b9ccc633fd90dc0dcd27697599f9fc0272f91d",
+      "unit_type": "scattering-model audit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Integer dilations fail to form a group, higher Landau-level fluctuations are speculative, and Sierra explicitly cannot exclude off-line zeros.",
+      "line_end": 929,
+      "line_start": 850,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Hamiltonians and transformations are formula-sensitive but the success/failure split is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows an inverted oscillator reproducing the oscillatory zeta phase, while a regularized xp Hamiltonian reproduces the smooth zero count and satisfies several predicted symmetries; dilation and canonical-exchange ideas expose the unresolved boundary/compactification problem.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Inverted oscillators and xp recover separate zeta components but boundary conditions remain decisive",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u12.txt",
+      "unit_bytes": 8297,
+      "unit_id": "openalex_w1869326093_v2_u12",
+      "unit_sha256": "6d5031f2f6f3b83cd1ecedd863313b92731e2720ecc55a0c7de1acb57f09dca6",
+      "unit_type": "model construction and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source reports competing dimension estimates and supports 1.5 after controlling the input spectrum and inversion method.",
+      "line_end": 1044,
+      "line_start": 950,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The implicit potential formula is degraded; reconstruction logic is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Abel-type semiclassical inversion for the mean count, then compares variational, dressing, and inverse-scattering reconstructions of exact low zeros to separate method artifacts from long-range-correlation-driven fractality.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth zero counts invert to smooth potentials, but exact zeros force fractal structure",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u13.txt",
+      "unit_bytes": 7928,
+      "unit_id": "openalex_w1869326093_v2_u13",
+      "unit_sha256": "165d6451e4352c8da3e076fb08930e07f06f69a49c5a41e19d7b9e026e27028d",
+      "unit_type": "inverse spectral reconstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span overlaps inverse-potential conclusions because the extracted two-column page interleaves topics.",
+      "line_end": 1063,
+      "line_start": 1035,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the negative oscillatory sign to motivate Connes's gap interpretation and contrasts highly correlated zeta zeros with nearly Poisson primes despite their explicit-formula interconversion.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The trace-formula sign suggests zeros are missing lines rather than emitted levels",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u14.txt",
+      "unit_bytes": 3142,
+      "unit_id": "openalex_w1869326093_v2_u14",
+      "unit_sha256": "ae92532699e89501423d35bebe07fd3ba9e971c581711b7a23b5df325e7d3eab",
+      "unit_type": "alternative spectral interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Asymptotic GUE behavior suggests broken time reversal; it neither identifies the Hamiltonian nor controls all finite statistics.",
+      "line_end": 1146,
+      "line_start": 1070,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Pair-correlation formula is readable; exact scale thresholds are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives Poisson spacing for uncorrelated spectra, identifies Montgomery's pair correlation with GUE, extends the comparison to higher correlations, and explains finite-height long-range deviations through system-specific shortest orbits.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "GUE agreement fixes symmetry class but short orbits break universality at long range",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u15.txt",
+      "unit_bytes": 8269,
+      "unit_id": "openalex_w1869326093_v2_u15",
+      "unit_sha256": "9334f0722b61181dcb92920461c2816a39c2ed1b2f111378fd389210fe305bd1",
+      "unit_type": "universality with finite-scale limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The review contrasts existence with a physically or mathematically explanatory construction.",
+      "line_end": 1166,
+      "line_start": 1147,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reports a nonconstructive theorem producing infinitely many integrable Hamiltonians for any bounded spectrum, including zeta zeros, showing that mere spectral realization is too weak without a natural mechanism.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arbitrary-spectrum Hamiltonians make naturality essential",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u16.txt",
+      "unit_bytes": 2343,
+      "unit_id": "openalex_w1869326093_v2_u16",
+      "unit_sha256": "aa8c309893576471889b3ab3f1272f51011b182dff6d5f91eed2c7406f53c4bc",
+      "unit_type": "existence-versus-construction warning",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a useful counterexample to transferring Riemann-zeta intuition solely from a functional equation and lattice representation.",
+      "line_end": 1264,
+      "line_start": 1195,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Two-column extraction interleaves derivation; quadratic forms and constants require scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds Madelung energies from conditionally convergent lattice quadratic forms, represents them by Epstein zeta functions with functional symmetry, and records that suitable forms in every dimension violate the tempting generalized RH.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lattice energy leads to Epstein zeta functions whose RH analogue can fail",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u17.txt",
+      "unit_bytes": 7800,
+      "unit_id": "openalex_w1869326093_v2_u17",
+      "unit_sha256": "e6be4c1755ecd52fd19c9002d9c26cfcd61601415947cbc3a036b6912861398f",
+      "unit_type": "generalized-zeta counterexample mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The physical zero-free strip adds no stronger restriction than known mathematics but independently illustrates the mechanism.",
+      "line_end": 1350,
+      "line_start": 1272,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Two distinct columns are interleaved; exact transforms and dimensional constants are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Moebius/Laplace inversion to recover phonon density from specific heat and interprets its admissible exponent strip as zero-free, while the Bose-gas particle integral uses zeta's sign and pole to exclude homogeneous condensation below three dimensions.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Thermal observables turn zeta analytic structure into density and phase-transition constraints",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u18.txt",
+      "unit_bytes": 7657,
+      "unit_id": "openalex_w1869326093_v2_u18",
+      "unit_sha256": "aa8580fa3481c1208a29928b3ebe61d05029fe4d47da9a9a82e48c2909b5ed5c",
+      "unit_type": "physical inversion and pole criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The physical and combinatorial interpretations concern the zeta function broadly, not a proof of RH.",
+      "line_end": 1423,
+      "line_start": 1356,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The contour integral and piecewise exponents require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Represents condensate fluctuations by a Mellin integral involving spectral and Riemann zeta functions, with leading poles controlling bulk behavior and next poles finite-size corrections, then translates a harmonic trap into an asymptotic partition statistic.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Spectral-zeta poles separate thermodynamic limits from finite-size corrections",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u19.txt",
+      "unit_bytes": 6908,
+      "unit_id": "openalex_w1869326093_v2_u19",
+      "unit_sha256": "aa3c1af33959cf5e72ae288ac920ebefd3a5384521b618d060896d92e2d1c359",
+      "unit_type": "pole-dominance asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The page also interleaves integer-partition fluctuation results, another instance of physical combinatorics feeding number theory.",
+      "line_end": 1498,
+      "line_start": 1429,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose mapping is robust; thermodynamic derivatives are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses unique factorization to biject bosonic occupation vectors with positive integers, so total energy is logarithmic and the canonical partition function is zeta; its pole becomes a Hagedorn temperature.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Log-prime energies make the bosonic partition function exactly zeta",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u20.txt",
+      "unit_bytes": 7254,
+      "unit_id": "openalex_w1869326093_v2_u20",
+      "unit_sha256": "54b943615f4ebd66b04419ce529d672559bbe3e8f344092e49b49b25d82c64c3",
+      "unit_type": "unique-factorization statistical model",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u20.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The algebraic identities are model semantics; continuation across divergent temperatures is speculative physics.",
+      "line_end": 1571,
+      "line_start": 1457,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Long two-column span; convolution identities are legible but should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns Pauli exclusion into square-free state counting and a zeta(s)/zeta(2s) partition function, generalizes occupancy through parafermions, and uses twisted Dirichlet convolution to equate interacting boson mixing with decoupled fermion-boson gases.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exclusion and Dirichlet convolution generate zeta ratios and particle transmutation",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u21.txt",
+      "unit_bytes": 11720,
+      "unit_id": "openalex_w1869326093_v2_u21",
+      "unit_sha256": "69f0d437faa53c13c20f6d400ee77ba575f5c89eaee391823b7b158ed1659685",
+      "unit_type": "statistics-to-arithmetic algebra",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u21.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The review explicitly identifies the premise that interactions must modify the leading thermodynamics as an assumption, so the route is not a proof.",
+      "line_end": 1656,
+      "line_start": 1577,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Interleaved with Brownian-motion material; kernel and potential exponents are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs energy-dependent scattering kernels and a quasiperiodic potential across the critical strip, then argues physical thermodynamic quantities forbid off-line zeros.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A finite-temperature interaction argument reaches RH only by assuming its decisive nonvanishing behavior",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u22.txt",
+      "unit_bytes": 6514,
+      "unit_id": "openalex_w1869326093_v2_u22",
+      "unit_sha256": "22f0e54a58becdfa6c8c3ffe5415bfa7e5e88473828e265b96af811a1ecf5298",
+      "unit_type": "failed proof route",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u22.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The example is an explicit warning against promoting long finite computations to asymptotic truth.",
+      "line_end": 1656,
+      "line_start": 1620,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Plot data are unnecessary; prose and inequalities are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Interprets the Mertens sum as a walk, recalls the square-root bound as sufficient for RH, and records its indirect disproof only at an enormous scale while explaining that this does not refute RH.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Moebius random walk shows why vast numerical agreement can mislead",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u23.txt",
+      "unit_bytes": 3833,
+      "unit_id": "openalex_w1869326093_v2_u23",
+      "unit_sha256": "3085125e2a9e8fe3f747378e950931362c665bf1481deadc0312216b3b3199e9",
+      "unit_type": "failed equivalent-bound heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u23.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The closing column also surveys certified zero computation and stresses that checked height cannot exclude a much higher counterexample.",
+      "line_end": 1709,
+      "line_start": 1658,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The limiting integral is formula-sensitive; the probabilistic mechanism is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a factorization-driven walk and uses the Erdos-Kac limit theorem to show that the number of distinct prime factors has Gaussian fluctuations about log log N.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-factor counts become Gaussian through a Brownian-motion viewpoint",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_v2_u24.txt",
+      "unit_bytes": 5380,
+      "unit_id": "openalex_w1869326093_v2_u24",
+      "unit_sha256": "ef04335e8339c29f563160bb8af99c09c13141970d256513230e52fac924224d",
+      "unit_type": "probabilistic transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_v2_u24.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The three later criteria are explicitly weaker sufficient conditions for this exact equivalence.",
+      "line_end": 67,
+      "line_start": 27,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is coherent; inner-product notation is legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the weighted Hilbert space criterion, its characteristic-function form, Baez-Duarte's restriction to integer scales, and the plan to reduce RH to basis-coordinate convergence plus a square-summable dominator.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nyman-Beurling becomes approximation of one indicator by integer fractional parts",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u01.txt",
+      "unit_bytes": 2771,
+      "unit_id": "openalex_w2019321946_v2_u01",
+      "unit_sha256": "0e4ef5e2d21c9ea2e7f7d18206123fc314640be46688db620badf7ccdb61956d",
+      "unit_type": "equivalent-criterion setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The family is not complete in the ambient Hilbert space, motivating the restricted space HP.",
+      "line_end": 126,
+      "line_start": 70,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed integrals are readable with moderate OCR risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Evaluates the weighted sine-product integral by a min formula and uses four cancellations to prove orthonormality, then defines the two symmetry constraints of the closed span.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adjacent sine differences form an orthonormal family",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u02.txt",
+      "unit_bytes": 2830,
+      "unit_id": "openalex_w2019321946_v2_u02",
+      "unit_sha256": "451be9a434e76a107cb113561bcb37c21b9daccd061a10f9c4a9c05b5f750e4d",
+      "unit_type": "orthonormal construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The transformation is an isometric isomorphism and makes coordinates explicit.",
+      "line_end": 211,
+      "line_start": 126,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The weight-folding formulas are dense but the Fourier conclusion is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves completeness in HP by folding the weighted norm to the unit interval, multiplying by a sine factor, and identifying the transformed basis with the canonical odd-frequency cosine basis.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Periodic antisymmetry turns HP into an odd-cosine Fourier space",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u03.txt",
+      "unit_bytes": 4346,
+      "unit_id": "openalex_w2019321946_v2_u03",
+      "unit_sha256": "172c29f311047c86c63b22dc838bbf4ca4cf7b7b9164b1cf8595e7c876d1a7e8",
+      "unit_type": "Hilbert-space representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The explicit proof supplies an approximation sequence and rate that the abstract Wiener theorem does not.",
+      "line_end": 273,
+      "line_start": 214,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several folded-integral displays require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs periodic-antisymmetric approximants for compactly supported functions, bounds their norm, and rescales them to convergence; it also contrasts this quantitative construction with Wiener's Mellin-transform criterion.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dilates of the first basis vector are dense in the ambient Hilbert space",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u04.txt",
+      "unit_bytes": 3529,
+      "unit_id": "openalex_w2019321946_v2_u04",
+      "unit_sha256": "0887129f0549354a143c0d409762fc9c1de63b5f48c7447b0d40d13d9318b35b",
+      "unit_type": "density construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The correction uses symmetry to control the sum of coefficients, making the smaller-space formulation exact rather than merely sufficient.",
+      "line_end": 331,
+      "line_start": 274,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose fixes the equivalence; a few norms and coefficient sums are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transfers the standard Nyman-Beurling/Baez-Duarte statement through a known isometry and proves that any fractional-part approximation can be corrected to one using eq(t)={qt}-{t} without losing convergence.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH is equivalent to approximating E1 by fractional-part differences inside HP",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u05.txt",
+      "unit_bytes": 3355,
+      "unit_id": "openalex_w2019321946_v2_u05",
+      "unit_sha256": "a800737f19b7a73b786e2e7d8a0b4144e9445487a378502f32bf9133252e2c24",
+      "unit_type": "equivalent RH criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the core representation change from functions to explicit arithmetic sequences.",
+      "line_end": 388,
+      "line_start": 335,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integration-by-parts chain is OCR-dense; endpoint formula is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Computes the exact coordinates of each eq by converting fractional-part integrals into harmonic sums over p/q at most k below p, enabling all later approximation calculations.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A basis coordinate is a logarithm minus a short harmonic interval",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u06.txt",
+      "unit_bytes": 2750,
+      "unit_id": "openalex_w2019321946_v2_u06",
+      "unit_sha256": "d05a8db8cfc2c21efd1317d20096506928569ef07ac0f4380a75f3cc379c21e1",
+      "unit_type": "coordinate formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The later sections mainly use coordinates, but this identity exposes the autocorrelation structure of the generators.",
+      "line_end": 419,
+      "line_start": 392,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact gcd and cotangent arguments should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expresses inner products of ep and eq through logarithms and cotangent Vassiounine sums, giving an alternative arithmetic handle on norm calculations.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Vassiounine sums encode pairwise geometry of fractional-part differences",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u07.txt",
+      "unit_bytes": 1455,
+      "unit_id": "openalex_w2019321946_v2_u07",
+      "unit_sha256": "41effcaaeb1229e0c5d8bc2ee80f4e260cd265064d1b1f810d6be07b3f15bd27",
+      "unit_type": "inner-product bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The finite exact cancellation motivates both the coefficient choice and the later natural approximation.",
+      "line_end": 593,
+      "line_start": 424,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient formulas are extraction-sensitive but the cancellation system is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Moebius-weighted coefficients plus two boundary corrections to solve a triangular coordinate system, leaving an explicit tail beginning at n+1 and proving every fixed coordinate has the target limit.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite coefficients cancel the first n basis errors exactly",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u08.txt",
+      "unit_bytes": 7196,
+      "unit_id": "openalex_w2019321946_v2_u08",
+      "unit_sha256": "10682125376abb742fdc113f1096b39d2843c933c13c0d49a1ed870265cac67e",
+      "unit_type": "triangular interpolation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Coordinatewise convergence alone is insufficient; this criterion makes the missing domination precise.",
+      "line_end": 641,
+      "line_start": 594,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Asymptotic symbols are slightly degraded; range and mechanism are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves a far-tail bound of order n squared over p log n and isolates the only uncontrolled indices, n+1 through n to the fourth, where a common square-summable bound along infinitely many n would imply RH.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The triangular tail reduces RH to uniform control on a moving intermediate range",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u09.txt",
+      "unit_bytes": 2217,
+      "unit_id": "openalex_w2019321946_v2_u09",
+      "unit_sha256": "709eb6b1bce4dd7f81aeb41ce1bf77399dc0a779a35979bef6346e88300a45f1",
+      "unit_type": "dominated-convergence criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source calls these simultaneous conditions difficult and invokes a square-root Omega obstruction for the summatory Moebius function.",
+      "line_end": 779,
+      "line_start": 645,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact squared-norm identity is formula-heavy; its stated consequence is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves the natural Moebius approximation has the right coordinate limits and a controllable far tail, states its RH criterion, then computes the low-mode squared mass and shows domination would require simultaneous strong bounds on two Moebius sums.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Moebius/q coefficients converge coordinatewise but force restrictive low-mode sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u10.txt",
+      "unit_bytes": 6201,
+      "unit_id": "openalex_w2019321946_v2_u10",
+      "unit_sha256": "85b0d6413b378b2319b9f1fa5b094e600a2b98d0887b6ed51a7a02cd6240d465",
+      "unit_type": "natural approximation and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The paper establishes the criterion as sufficient; the cited converse-rate result under RH does not itself furnish an unconditional proof.",
+      "line_end": 869,
+      "line_start": 781,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The epsilon glyph is corrupted in extraction but assumptions and tail estimates are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Adds q to the minus-epsilon damping, chooses epsilon at least twice log log n over log n, controls the omitted Dirichlet-series tails directly, and states a square-summable criterion known under RH to hold for a slower explicit epsilon.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A vanishing exponent regularizes the Moebius tail without changing coordinate limits",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u11.txt",
+      "unit_bytes": 4439,
+      "unit_id": "openalex_w2019321946_v2_u11",
+      "unit_sha256": "fbc2db739eb34e380777307b389286878324da1dd933632c6bf46afda3bea25c",
+      "unit_type": "smoothed approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem concerns finite-dimensional convergence and applies more broadly to Selberg-class L-functions as stated in the front matter.",
+      "line_end": 137,
+      "line_start": 61,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some inequality glyphs are degraded; theorem roles and limiting kernel remain recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Extends Selberg's CLT to several nearby evaluations and shows that logarithmic relative separation produces covariance 1 wedged with the separation exponent, with normalization changing at the 1/log t scale.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Relative shift exponents determine a hierarchical Gaussian covariance",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u01.txt",
+      "unit_bytes": 4397,
+      "unit_id": "openalex_w2134478378_v2_u01",
+      "unit_sha256": "0a19240d2bbcc8a2711c88a83f87a2649b1da070c3a1f46d794c85e2348813f1",
+      "unit_type": "mesoscopic fluctuation theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies operational meaning for the abstract covariance exponent.",
+      "line_end": 172,
+      "line_start": 138,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Normalization displays are OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializes to two points, decomposes the limit into a shared Gaussian plus independent noise, and contrasts vanishing shifts, critical-axis scaling, and fixed distinct shifts.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Correlation decays continuously from identity to independence across mesoscopic shifts",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u02.txt",
+      "unit_bytes": 2100,
+      "unit_id": "openalex_w2134478378_v2_u02",
+      "unit_sha256": "436182767411bc62ada06700fffed8307eed6da3bba9b4feab8a96231a4cdf52",
+      "unit_type": "scale illustration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Only finite-dimensional distributions are asserted, which the nonmeasurability argument makes essential.",
+      "line_end": 207,
+      "line_start": 181,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and covariance are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs the limiting process as a sum of Brownian and coordinatewise independent Gaussian components and proves it has no measurable version.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Brownian motion plus total disorder realizes the log-zeta kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u03.txt",
+      "unit_bytes": 1542,
+      "unit_id": "openalex_w2134478378_v2_u03",
+      "unit_sha256": "e353862f6987840424f4f48d0fee04f6eb1ad1b44eb2568035958110b6e6acf2",
+      "unit_type": "Gaussian-process representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The result describes mesoscopic repulsion, distinct from microscopic Montgomery-Odlyzko statistics.",
+      "line_end": 291,
+      "line_start": 210,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The case table is visually degraded but its endpoint-difference construction fixes the semantics.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the Riemann-von Mangoldt formula to center zero counts and obtains a Gaussian interval process whose covariance is determined solely by coincident endpoints, including negative covariance for adjoining intervals.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Argument fluctuations turn mesoscopic zero counts into endpoint noise",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u04.txt",
+      "unit_bytes": 4361,
+      "unit_id": "openalex_w2134478378_v2_u04",
+      "unit_sha256": "891f626bca190f5fad4f7b07a4202a27762d1be034854d0036ec7947a69bf834",
+      "unit_type": "zero-counting fluctuation corollary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "More general unequal adjacent exponents produce a less simple correlation function.",
+      "line_end": 356,
+      "line_start": 294,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Characteristic-polynomial displays are readable with minor symbol risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the unitary characteristic-polynomial CLT with the same covariance and derives Gaussian eigenvalue-count fluctuations, matching zeta abscissa shifts to radius shifts and ordinate shifts to angles.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The n to log t correspondence survives radial and angular mesoscopic shifts",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u05.txt",
+      "unit_bytes": 3174,
+      "unit_id": "openalex_w2134478378_v2_u05",
+      "unit_sha256": "aa3a92eaa3b1e7d69bbcb51a881923c692a477be19cd2a0661f8ffa2e09b8c15",
+      "unit_type": "random-matrix analogue",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the random-matrix proof template later mirrored by prime sums.",
+      "line_end": 471,
+      "line_start": 430,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact array conditions are formula-dependent but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States a Gaussian limit theorem for triangular arrays of trace powers and explains that expanding log characteristic polynomials in this basis leaves only a variance limit and a short-tail condition.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Diaconis-Evans reduces class-function CLTs to weighted trace variance and tail checks",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u06.txt",
+      "unit_bytes": 1943,
+      "unit_id": "openalex_w2134478378_v2_u06",
+      "unit_sha256": "78d404ae44e8ede404e07a441d877a49e797afa697ab551f3bee4b0aabcbe65d",
+      "unit_type": "trace-expansion central limit method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The remaining tail is killed by choosing a truncation o(n) with logarithm asymptotically close to log n.",
+      "line_end": 645,
+      "line_start": 474,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dense proof; the scale comparison cases are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies Cramer-Wold to the trace expansion and proves that damped harmonic sums converge to the relative-shift exponent capped at one, yielding the theorem's covariance in the regime outside the unit circle by more than 1/n.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A truncated logarithmic series converts relative angular scale into a min-kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u07.txt",
+      "unit_bytes": 9043,
+      "unit_id": "openalex_w2134478378_v2_u07",
+      "unit_sha256": "cee81da1ae5747d0d8f1f460cbd948eeda1fd91af3ae50f720ca3198b50e502a",
+      "unit_type": "covariance asymptotic lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the strict random-matrix counterpart of the later critical zeta-scale lemma.",
+      "line_end": 807,
+      "line_start": 648,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several extracted subscripts are missing; proof cases remain reconstructable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows radial damping can be removed when epsilon is at most order 1/n and proves the same capped exponent limit for undamped harmonic sums, treating vanishing and nonvanishing angular scales separately.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-sum and summation-by-parts arguments handle shifts at the 1/n scale",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u08.txt",
+      "unit_bytes": 8112,
+      "unit_id": "openalex_w2134478378_v2_u08",
+      "unit_sha256": "385629f1b151c02436ce7073b42c1dceb9cf117ef1d9e46e8ef48a0dd391b315",
+      "unit_type": "critical-scale covariance lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Almost-sure Euler-product equality on the half-plane would require RH; the proof needs only normalized L2 approximation.",
+      "line_end": 921,
+      "line_start": 810,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The smoothed von Mangoldt formula is OCR-degraded; the approximation statement is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains the independent-prime heuristic, then uses an absolutely convergent smoothed explicit formula and Selberg's mean bound to make the replacement without assuming RH after normalization.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Selberg's smoothed explicit formula replaces log zeta by a short prime sum in L2",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u09.txt",
+      "unit_bytes": 5997,
+      "unit_id": "openalex_w2134478378_v2_u09",
+      "unit_sha256": "f6cfbeca653ac075542fab006f42667f9aa97c6748eea04a53aab4d7b6b92773",
+      "unit_type": "unconditional short-prime approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The condition log m/log t tending to zero is weaker than the naive n to log t translation would predict.",
+      "line_end": 1168,
+      "line_start": 934,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moment and Fourier bounds are formula-heavy; the proof architecture is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves a prime analogue of Diaconis-Evans: Montgomery-Vaughan removes large primes, an independent-phase CLT handles the truncated model, and unique factorization quantitatively controls the difference between time and torus moments as the number of primes grows slowly.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        15,
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "L2 tail control plus slow torus equidistribution yields a Gaussian prime sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u10.txt",
+      "unit_bytes": 12751,
+      "unit_id": "openalex_w2134478378_v2_u10",
+      "unit_sha256": "30b104c9bdd8989de16d5108055150bc58b816c9e4fd44c3a7d774ff49434ae4",
+      "unit_type": "prime-sum gaussian approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The PNT controls the omitted prime tail; exact covariance is read from zeta(1+x) asymptotics.",
+      "line_end": 1273,
+      "line_start": 1171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prime sums and normalizations require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Checks the prime-sum theorem's tail condition and turns the normalized prime covariance into log zeta near its pole, giving the same capped relative-shift exponent when epsilon exceeds 1/log t.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta-pole logarithm evaluates covariance away from the critical scale",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u11.txt",
+      "unit_bytes": 5018,
+      "unit_id": "openalex_w2134478378_v2_u11",
+      "unit_sha256": "f3af4ca8851673ef31392f77441951a849f4123da9e314b5d689f5b7dcbfd3ae",
+      "unit_type": "prime covariance limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This completes the proof of the main theorem on and extremely near the critical axis.",
+      "line_end": 1365,
+      "line_start": 1276,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula extraction loses some delta symbols; limiting cases are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Removes the small abscissa damping and evaluates the oscillatory prime harmonic sum through partial summation and the PNT, with separate scale cases matching the unitary-matrix lemma.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial summation and PNT reproduce the min-kernel at epsilon of order 1/log t",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u12.txt",
+      "unit_bytes": 4521,
+      "unit_id": "openalex_w2134478378_v2_u12",
+      "unit_sha256": "5a88dbe04075c29b962fc9b2cfedd667e05278681594e56e805c1d74d811d21d",
+      "unit_type": "critical-scale prime covariance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The construction explains why the covariance matrix is positive semidefinite rather than merely inheriting positivity from the theorem.",
+      "line_end": 1469,
+      "line_start": 1374,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tree relations are prose-stable; a few indices are degraded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies the covariance as the height of the most recent common ancestor, relates it to Brownian diffusion on Le Gall's continuum tree, and gives a discrete independent-increment construction.",
+      "source_id": "openalex_w2134478378",
+      "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ancestor trees make the minimum covariance positive and constructive",
+      "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u13.txt",
+      "unit_bytes": 4487,
+      "unit_id": "openalex_w2134478378_v2_u13",
+      "unit_sha256": "e464f1d97867c85d8dd810bd358ce47609fc9586b2e5322dcb26b7c46f274c3f",
+      "unit_type": "branching representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2134478378",
+        "title": "Mesoscopic fluctuations of the zeta zeros",
+        "authors": [
+          "Paul Bourgade"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "explicit-formula",
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "pair-correlation",
+          "primes-zeros",
+          "random-matrix",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w1975718627_causal_localization": {
+      "analysis_id": "agnostic_oa_generation_0c0bdc3419f7a5e22ddccc64d48279817773a59605e1dd1fd57be28accf190a0",
+      "boundary_or_failure": "The construction is perturbative and formal: it does not establish convergence to a full quantum field theory. Localization uses compactly supported interactions on a globally hyperbolic Lorentzian spacetime and causal separation by Cauchy surfaces. The adiabatic limit may fail because of infrared behavior, so global scattering is not part of the local result.",
+      "interpretation": "Inference: when global symmetries and preferred states are unavailable, causal factorization can replace translation invariance as the organizing principle. Relative functionals then isolate how an observable changes under a compactly supported perturbation and automatically expose locality.",
+      "nonparaphrase_operation": "Encode a localized interaction by a compactly supported test function and require a three-input factorization identity whenever the first and third supports are causally ordered. From any solution, form the relative functional by dividing out the background interaction. Apply the factorization identity twice to show that relative insertions with spacelike-separated supports commute, and use these relative functionals as local generators without first removing the cutoff globally.",
+      "source_support": "The source motivates replacing translation-based perturbation theory by a local formulation on curved globally hyperbolic spacetimes. It states the causal functional equation for local S-matrices, defines relative S-matrices, derives commutativity for spacelike-separated insertions, and explains that local properties survive even when the adiabatic limit is unclear or infrared-divergent.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The introduction's classification claim is later proved only within the stated polynomial scalar perturbative framework; physical success and full-theory existence are explicitly outside scope.",
+      "unit_id": "agnostic_oa_w1975718627_causal_localization"
+    },
+    "agnostic_oa_w1975718627_directional_singularities": {
+      "analysis_id": "agnostic_oa_generation_e291f39f4da4a8ffca6fa84b586d80f532f524823e494bb03075aaf703af6381",
+      "boundary_or_failure": "Wavefront-set criteria are sufficient typing conditions, not automatic existence results. A product fails the stated test when opposite covectors at the same base point sum to zero, and restriction fails when the wavefront set meets the submanifold's conormal bundle. Hadamard and Feynman wavefront descriptions rely on the globally hyperbolic Klein-Gordon setting.",
+      "interpretation": "Inference: singularity is not merely a set of bad points but a set of bad cotangent directions. Tracking directions makes multiplication and restriction decidable even when singular supports overlap, and it reveals why diagonal propagator products require extension rather than ordinary multiplication.",
+      "nonparaphrase_operation": "Localize a distribution near each base point, inspect the conic directions in which its Fourier transform fails rapid decay, and assemble those directions into its wavefront set. Before multiplying two distributions, add all same-base covectors and reject the product if zero can occur. Before restricting to a submanifold, intersect the wavefront set with its conormal bundle. Carry convergence in a topology that controls both weak distributional limits and rapid decay outside the allowed cone.",
+      "source_support": "The source defines the smooth wavefront set through localized Fourier decay and states its coordinate-invariant manifold version. It gives the multiplication criterion and resulting wavefront bound, the microlocal convergence topology, and the trace criterion for submanifolds. It states the causal wavefront sets of the commutator, Hadamard two-point function, and Feynman propagator, noting that the propagator's diagonal covectors cause naive products to violate the multiplication criterion.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The source cites foundational microlocal results rather than proving them; this row retains their stated sufficient conditions and does not treat failure of the criterion as proof that no alternative extension exists.",
+      "unit_id": "agnostic_oa_w1975718627_directional_singularities"
+    },
+    "agnostic_oa_w1975718627_surface_extension_threshold": {
+      "analysis_id": "agnostic_oa_generation_1f621b52a12ca2cfeb85e2a4567e64163d25bb52d260220d096634c38f2fc73d",
+      "boundary_or_failure": "The extension's wavefront closure must remain orthogonal to the submanifold tangent. The threshold is codimension, not ambient dimension: it is the dimension of each transverse fiber. Below codimension the extension is unique; at finite degree above it, complementary normal jets create ambiguity. The theorem does not cover infinite degree.",
+      "interpretation": "Inference: extension across a submanifold is a smoothly parameterized family of point-extension problems in normal directions. Uniform microlocal control is what lets fiberwise extensions assemble into one distribution rather than an unrelated choice at every base point.",
+      "nonparaphrase_operation": "Choose a tubular fibration by transverse fibers and compute the scaling degree under normal dilation. Compare it with the submanifold codimension. Below threshold, apply the shrinking-cutoff construction simultaneously on all fibers. Above threshold but finite, subtract the normal Taylor jet through degree scaling-minus-codimension using smooth fiberwise basis functions, extend the vanishing-jet remainder, and specify the complementary jet values as distributions along the submanifold. Verify convergence in a cone-controlled topology so the extended wavefront set stays normal to the submanifold.",
+      "source_support": "The source states the submanifold extension theorem with uniqueness below codimension and finite-dimensional normal-jet freedom at finite degree above codimension. Its proof fibers a neighborhood transversely, performs cutoff and Taylor-subtraction constructions along fibers, and uses Fourier estimates from microlocal scaling to obtain uniform distributional and wavefront-controlled convergence.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Stability of scaling degree after extension is stated with its proof omitted as a combination of earlier arguments; this row reports the theorem, not an independent completion of that proof.",
+      "unit_id": "agnostic_oa_w1975718627_surface_extension_threshold"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_w1975718627_causal_localization": {
+      "analysis_id": "agnostic_oa_critic_f692cb247cc37404aecdcf119aa90a39003ceabae968a3b43246c36560d088f7",
+      "context_risk": "Medium. The selected span is partly introductory and distinguishes the local formal construction from the later microlocal replacement for translation covariance, from the adiabatic limit, and from any nonperturbative existence claim. The candidate records the latter two boundaries but blurs the first distinction in its interpretation.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w1975718627",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh isolated critic review using only AGENTS.md, the SHA-bound assignment, the local critic schema/prompt contract, and this exact unit artifact; no network, other sources, issues, or analysis outputs."
+      },
+      "decision": "revise",
+      "faithfulness": "The causal functional equation, relative S-matrix construction, spacelike commutativity, compact-support localization, formal-power-series status, and infrared/adiabatic-limit boundary are accurately grounded. The interpretation is too broad when it says causal factorization replaces translation invariance: in this span factorization organizes locality, while the paper explicitly says further work and microlocal singularity control are needed to replace other roles of translation covariance.",
+      "missed_mechanism": "The operational row does capture the decisive algebraic mechanism: form S_f(g)=S(f)^{-1}S(f+g) and use causal factorization to derive locality. What is missed is a clean separation between that local causal mechanism and the later graph/wavefront condition that replaces translation-covariant spectral control.",
+      "paraphrase_risk": "Low. The operation is an executable abstraction rather than a sentence-level restatement, and it preserves the order condition and relative-functional construction.",
+      "revision_instructions": "Revise the interpretation to say that causal factorization supplies an organizing equation that does not require global translation invariance, rather than saying it replaces translation invariance wholesale. Explicitly reserve replacement of translation-covariant spectral control for the later microlocal condition. Keep the operation, source support, and perturbative/adiabatic boundaries otherwise unchanged.",
+      "unit_id": "agnostic_oa_w1975718627_causal_localization",
+      "unsupported_or_imported": "No external mathematical content is imported, but the claim that causal factorization itself can replace translation invariance compresses several distinct source mechanisms into one and is not supported at that breadth. The source states that translation invariance still plays important roles and that microlocal analysis is required to carry through the program."
+    },
+    "agnostic_oa_w1975718627_directional_singularities": {
+      "analysis_id": "agnostic_oa_critic_8cd885cc1e79442257ca08c36ce8d4a8e53ec56d911e92563f4c4ac5e37a70fc",
+      "context_risk": "Medium. Several cone and zero-section glyphs are extraction-damaged, but the prose statements of M1, M2, M3 and the diagonal obstruction are readable. Exact wavefront formulas should remain tied to the preserved PDF rather than reconstructed from this text.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w1975718627",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh isolated critic review using only AGENTS.md, the SHA-bound assignment, the local critic schema/prompt contract, and this exact unit artifact; no network, other sources, issues, or analysis outputs."
+      },
+      "decision": "revise",
+      "faithfulness": "The definition by localized Fourier decay, invariant cotangent formulation, product and trace criteria, cone-controlled convergence, and the propagator diagonal obstruction are faithful. However, the interpretation calls multiplication and restriction decidable and the operation says to reject a product when a zero sum occurs. The source supplies sufficient criteria; failure of M1 does not prove that no product, renormalized extension, or alternative construction exists.",
+      "missed_mechanism": "The candidate correctly identifies directional noncancellation and conormal transversality as the mechanism. It needs the additional decision boundary that these tests authorize the standard pointwise product or trace when satisfied but only withhold that authorization when they fail.",
+      "paraphrase_risk": "Low. The localization, Fourier-direction, covector-sum, and conormal tests form a reusable procedure rather than merely mirroring the source exposition.",
+      "revision_instructions": "Replace 'makes multiplication and restriction decidable' with 'gives actionable sufficient conditions for the standard product and trace.' In the operation, replace 'reject the product' with 'do not authorize the ordinary pointwise product by M1; require a separately justified extension or construction.' Preserve the existing boundary and uncertainty statements that criterion failure is not nonexistence.",
+      "unit_id": "agnostic_oa_w1975718627_directional_singularities",
+      "unsupported_or_imported": "The only unsupported strengthening is the necessity/decidability implication. All named objects and stated sufficient wavefront conditions occur in the artifact, and the candidate otherwise avoids importing exact OCR-fragile cone notation."
+    },
+    "agnostic_oa_w1975718627_surface_extension_threshold": {
+      "analysis_id": "agnostic_oa_critic_dd706272b8ef6c546b02a59dc62ba2f5e151987e9dc8a3144b46f945d86d9689",
+      "context_risk": "High. The normal Taylor formulas are OCR-sensitive and the proof of stability of scaling degree is omitted in the artifact as a combination of earlier arguments. More importantly, a finite normal jet order over a positive-dimensional submanifold does not make the global ambiguity finite-dimensional.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w1975718627",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh isolated critic review using only AGENTS.md, the SHA-bound assignment, the local critic schema/prompt contract, and this exact unit artifact; no network, other sources, issues, or analysis outputs."
+      },
+      "decision": "revise",
+      "faithfulness": "The codimension threshold, fiberwise cutoff/Taylor construction, cone-controlled convergence, and normal wavefront boundary are faithful. The source-support sentence incorrectly calls the above-threshold freedom finite-dimensional, and the interpretation's 'smoothly parameterized family' is stronger than the theorem. The source characterizes extensions by a finite order of normal jets whose coefficients may vary distributionally along N; that space is generally not finite-dimensional.",
+      "missed_mechanism": "The candidate includes the essential uniform microlocal mechanism that lets fiber constructions assemble into a distribution. What it misses is the precise structure of the ambiguity: finite jet order in normal directions, with coefficient distributions along the submanifold, not a finite set of scalar parameters or necessarily smooth fiberwise choices.",
+      "paraphrase_risk": "Low. The operation is a reusable fiberwise extension scheme. The problematic language is a conceptual overcompression from the point case, not source-like phrasing.",
+      "revision_instructions": "Replace 'finite-dimensional normal-jet freedom' with 'finite normal-jet order, with coefficient distributions along the submanifold.' Rewrite 'smoothly parameterized family of point-extension problems' as a uniformly controlled fiberwise extension problem whose choices must assemble distributionally and satisfy the conic wavefront bound. If specifying the subtraction order, use the integer floor of scaling degree minus codimension. Retain the note that scaling-degree stability is stated but its proof is omitted here.",
+      "unit_id": "agnostic_oa_w1975718627_surface_extension_threshold",
+      "unsupported_or_imported": "The global finite-dimensionality claim and necessary smoothness of the fiber parameterization are not supported and are generally false for a positive-dimensional N. The candidate's own operation more accurately says the complementary jet values are distributions along the submanifold."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w1975718627_causal_localization": "agnostic_oa_revision_7ecd3e80577b0b0395d18c7f898295df54904f295895e54c3139938981b36106",
+    "agnostic_oa_w1975718627_directional_singularities": "agnostic_oa_revision_7d895991ca1b69b345554a0e7248f5c271cfdc3219e1931e251eb7467453421f",
+    "agnostic_oa_w1975718627_surface_extension_threshold": "agnostic_oa_revision_05e5c08e220b7d1205fca28711849e0b9805a26929f90be6a34723d193c32d42"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w1975718627_03680462_part_01.jsonl",
+  "source_id": "openalex_w1975718627",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_causal_localization.txt",
+      "artifact_bytes": 16571,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_causal_localization.txt",
+      "artifact_sha256": "1a35c0a35ef591d3a7badbb9f20797f39e24eda946ec605d565c1137c60a0d3b",
+      "content_sha256": "b869a2ac5a7a489acb757fe8702b68759ef2264d229918a1da502a5cb325d599",
+      "context_note": "The paper is explicitly perturbative and formal: it does not establish convergence to a nonperturbative theory, treats polynomial scalar interactions without derivative terms in the proved construction, and defers finite renormalizations.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 300,
+      "line_start": 77,
+      "representation_dependency": "Uses globally hyperbolic causal order, compactly supported interaction cutoffs, formal power series, and relative S-matrices; historical and physical examples are context rather than proof.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Recasts perturbation theory around a causal factorization identity for localized interactions. Relative S-matrices then generate local observables and commute at spacelike separation, separating local ultraviolet construction from any global adiabatic limit.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Localize the interaction so causality replaces global asymptotics",
+      "unit_id": "agnostic_oa_w1975718627_causal_localization",
+      "unit_type": "reframing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_directional_singularities.txt",
+      "artifact_bytes": 14809,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_directional_singularities.txt",
+      "artifact_sha256": "68af05d9fee78b0c760cc852bde3ccdad43015c6767dce5f1731b99664525b2a",
+      "content_sha256": "ac0cc92aecbc84a4e60d7afaca5c238e29b94bf9415c8b2ba72f50bdd87090a3",
+      "context_note": "PDF conversion damages zero-section notation, arrows, cone symbols, and several displayed formulas; exact covector sets must be checked against the preserved PDF.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1975718627_directional_singularities",
+            "agnostic_oa_w1975718627_submanifold_blowup",
+            "agnostic_oa_w1975718627_surface_extension_threshold",
+            "agnostic_oa_w1975718627_diagonal_renormalization"
+          ],
+          "identifier": "partial_differential_equations",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a PDE lens through Green functions, directional singularities of distributional solutions, conormal restriction criteria, and invariant extension across characteristic coincidence loci. This is an assignment-routed association only; no frozen-parent comparison or novelty determination was performed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1975718627_directional_singularities",
+            "agnostic_oa_w1975718627_graph_wavefront_bookkeeping",
+            "agnostic_oa_w1975718627_causal_spectral_axioms",
+            "agnostic_oa_w1975718627_scaling_invariance_calculus"
+          ],
+          "identifier": "transforms_and_spectralization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source replaces unavailable global Fourier spectral data by localized Fourier decay and cotangent cones, then composes those directional data through graph immersions and scaling. The lens mapping follows the assignment and is source-grounded, but novelty relative to #44 or any other corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 514,
+      "line_start": 303,
+      "representation_dependency": "Requires smooth globally hyperbolic Lorentzian geometry, distributional Fourier decay in charts, cotangent bundles, conormal bundles, and Hadamard two-point functions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Refines singular support by cotangent direction and converts existence of products and restrictions into noncancellation and transversality tests. This supplies an invariant local spectral condition when global translation invariance is unavailable.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Wave front sets turn singular operations into directional geometry",
+      "unit_id": "agnostic_oa_w1975718627_directional_singularities",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1975718627_surface_extension_threshold.txt",
+      "artifact_bytes": 6183,
+      "artifact_relpath": "depth/units/agnostic_oa_w1975718627_surface_extension_threshold.txt",
+      "artifact_sha256": "dcfab3b70a8d473871caca6e423ff50a9df9be49a97f19649c3f94ad53d01789",
+      "content_sha256": "973120cf0ed307ce9363438aa94a8cd9827784a6ecaa70398f326a477b99dbed",
+      "context_note": "The theorem assumes finite scaling degree and conormal wave-front control; formulas for Taylor subtraction and Fourier estimates require PDF checking.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1975718627_directional_singularities",
+            "agnostic_oa_w1975718627_submanifold_blowup",
+            "agnostic_oa_w1975718627_surface_extension_threshold",
+            "agnostic_oa_w1975718627_diagonal_renormalization"
+          ],
+          "identifier": "partial_differential_equations",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a PDE lens through Green functions, directional singularities of distributional solutions, conormal restriction criteria, and invariant extension across characteristic coincidence loci. This is an assignment-routed association only; no frozen-parent comparison or novelty determination was performed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1975718627",
+      "line_end": 1804,
+      "line_start": 1715,
+      "representation_dependency": "Uses a normal fibration, fiberwise point-extension theorems, Taylor-jet subtraction along fibers, conormal wave-front bounds, and codimension.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w1975718627_03680462.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Generalizes the point threshold invariantly: scaling degree below codimension gives a unique extension, while degree at or above codimension leaves finite jet data along the submanifold as the local ambiguity.",
+      "source_id": "openalex_w1975718627",
+      "source_normalized_sha256": "d8a0773450f04e5a5e287af5a5a1bba198e608f62463acdd52919439918d7e80",
+      "title": "Codimension controls extension across a singular surface",
+      "unit_id": "agnostic_oa_w1975718627_surface_extension_threshold",
+      "unit_type": "extension-principle"
+    }
+  ]
+}

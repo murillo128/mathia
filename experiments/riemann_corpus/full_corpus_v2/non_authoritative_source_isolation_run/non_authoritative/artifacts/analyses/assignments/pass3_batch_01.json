@@ -1,0 +1,1439 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no prior analysis-stage conversation",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_01.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_01.jsonl"
+  },
+  "unit_count": 31,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "OCR confuses L with Z and character symbols, but the prose definitions and inequalities determine the intended comparative roles.",
+      "line_end": 45,
+      "line_start": 11,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is recoverable; exact Greek symbols and subscripts should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates three notions that could otherwise be conflated: shared zeros with multiplicity, existence of a second-family zero between consecutive first-family zeros, and the integer displacement locating one sequence inside the other.",
+      "source_id": "openalex_w2050389282",
+      "source_normalized_sha256": "1aa993e32aac7783e3dc4dc4e80b3b79c25b66dfe2dd866dae5e6a00f2b0784e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Compare two zero sequences through coincidence, interlacing, and index displacement",
+      "unit_artifact_relpath": "depth/units/openalex_w2050389282_v2_u04.txt",
+      "unit_bytes": 1218,
+      "unit_id": "openalex_w2050389282_v2_u04",
+      "unit_sha256": "3e5581627645eb759efd70342482f7fe626603274580a19e13583559457fc995",
+      "unit_type": "problem formulation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2050389282_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2050389282",
+        "title": "On the zeros of Dirichlet L-functions (V)",
+        "authors": [
+          "Akio Fujii"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the proof mechanism completing the theorem stated in the prior v1 unit rather than a restatement of its conclusion.",
+      "line_end": 348,
+      "line_start": 278,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and inequality structure are recoverable, but thresholds, exponents, and constants must be verified from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splits the interval at a threshold, combines even and higher moments with Holder-type bounds, and obtains positive-measure sets on which the relative zero count has either sign, yielding gaps without a zero of the other L-function.",
+      "source_id": "openalex_w2050389282",
+      "source_normalized_sha256": "1aa993e32aac7783e3dc4dc4e80b3b79c25b66dfe2dd866dae5e6a00f2b0784e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "High moments force positive-measure positive and negative zero-count deviations",
+      "unit_artifact_relpath": "depth/units/openalex_w2050389282_v2_u05.txt",
+      "unit_bytes": 1294,
+      "unit_id": "openalex_w2050389282_v2_u05",
+      "unit_sha256": "dd25ea6b0e7780b64d0118f9e3f1de443e9d729a73559636f25a342204a5dcb1",
+      "unit_type": "moment-to-measure argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2050389282_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2050389282",
+        "title": "On the zeros of Dirichlet L-functions (V)",
+        "authors": [
+          "Akio Fujii"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The preceding formula-heavy derivation at lines 354-421 is not silently reconstructed; this unit begins where the normalized counting variable and limiting-moment argument are stated.",
+      "line_end": 461,
+      "line_start": 422,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose identifies a Gaussian distribution and the almost-all conclusion; normalization constants and moment formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Normalizes the displacement by the square-root log-log scale, identifies convergence of its moments with a Gaussian law, and concludes that any diverging multiple of that scale is exceeded only exceptionally.",
+      "source_id": "openalex_w2050389282",
+      "source_normalized_sha256": "1aa993e32aac7783e3dc4dc4e80b3b79c25b66dfe2dd866dae5e6a00f2b0784e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-index displacement has Gaussian scale and an almost-all envelope",
+      "unit_artifact_relpath": "depth/units/openalex_w2050389282_v2_u06.txt",
+      "unit_bytes": 590,
+      "unit_id": "openalex_w2050389282_v2_u06",
+      "unit_sha256": "b4d5a549843f893611da9e594c03870f5dfd979932a01f81f861333bbd0a3dbd",
+      "unit_type": "distributional consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2050389282_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2050389282",
+        "title": "On the zeros of Dirichlet L-functions (V)",
+        "authors": [
+          "Akio Fujii"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This applies to the separation theorem, not automatically to every displacement statement in the paper.",
+      "line_end": 475,
+      "line_start": 467,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Conclusion is prose-supported; the displayed replacement inequality is OCR-damaged.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Removes an apparent structural hypothesis by explaining that the zero-count comparison changes only through the two moduli in the deterministic logarithmic term.",
+      "source_id": "openalex_w2050389282",
+      "source_normalized_sha256": "1aa993e32aac7783e3dc4dc4e80b3b79c25b66dfe2dd866dae5e6a00f2b0784e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zero-separation argument does not require equal moduli",
+      "unit_artifact_relpath": "depth/units/openalex_w2050389282_v2_u07.txt",
+      "unit_bytes": 340,
+      "unit_id": "openalex_w2050389282_v2_u07",
+      "unit_sha256": "058742589fdab053ab81b2cfebbdb7c28dd0e73cbe2f7d230ca62e1e3306d9e6",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2050389282_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2050389282",
+        "title": "On the zeros of Dirichlet L-functions (V)",
+        "authors": [
+          "Akio Fujii"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the historical alternatives of normalization, shrinking the neighborhood, or weakening regularity and the scope of the random-matrix analogy.",
+      "line_end": 202,
+      "line_start": 75,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; scale terminology and cited comparisons are recoverable from the text layer.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts fixed, mesoscopic, and microscopic neighborhoods and explains why critical-line statistics require generalized functions and why log-correlation suggests multiplicative chaos.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        3,
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Scale determines the admissible limiting object",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u01.txt",
+      "unit_bytes": 10141,
+      "unit_id": "openalex_w2515894720_v2_u01",
+      "unit_sha256": "eae744f9d05a57623311565cb4df46129f6e81e491c599c3bfeeae39b0527c47",
+      "unit_type": "conceptual synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The special complex field is not one of the two standard complex-chaos models reviewed immediately before it.",
+      "line_end": 333,
+      "line_start": 220,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on covariance and exponential formulas; the prose preserves the mechanism, while exact displayed normalizations inherit PDF formula typography.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives the approximation-independent chaos construction, the subcritical/critical threshold, and the special real-imaginary covariance whose nonintegrable two-point function becomes a Hilbert-transform kernel.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Real and complex chaos, thresholds, and the singular-integral rescue",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u02.txt",
+      "unit_bytes": 8070,
+      "unit_id": "openalex_w2515894720_v2_u02",
+      "unit_sha256": "c3c639ceb5bb99c1a7fd7061eaf32a577615368eac97e47497d14c9ed3ccc111",
+      "unit_type": "definition and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The Sobolev setup is included so the topology and test-function interface do not need reconstruction.",
+      "line_end": 389,
+      "line_start": 334,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires Sobolev and covariance notation; exact alpha threshold and zeta covariance are legible in the text layer.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States both convergence of weighted shifts in W^{-alpha,2} and factorization of the limit into a nowhere-zero smooth random multiplier and complex chaos.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Global critical-line shifts converge as negative-Sobolev distributions",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u03.txt",
+      "unit_bytes": 3604,
+      "unit_id": "openalex_w2515894720_v2_u03",
+      "unit_sha256": "3c97939e5388a029c7761f919f7175d0e0716bd3850dfcab20a62eaec36f11d1",
+      "unit_type": "limit theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains the matched zeta and Haar-unitary statements and explains why their functional statistics coincide only after accounting for scalar factors.",
+      "line_end": 526,
+      "line_start": 390,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on stochastic-integral, Wasserstein, and quotient-space displays; prose and formulas jointly determine the decomposition.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that dilation splits a log-correlated field into a divergent scalar Gaussian mode and a universal spatial chaos, and formalizes the stable object projectively modulo nonzero constants.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mesoscopic zero-mode extraction and quotient by scalars",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u04.txt",
+      "unit_bytes": 8803,
+      "unit_id": "openalex_w2515894720_v2_u04",
+      "unit_sha256": "bf6d8cb34666e8e417d1e0711ce56bce13e2ab10fe8cd6a91b0e71218e0edd7a",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records that the limit is genuinely more singular than a function or measure, explaining the failure of continuous functional limits.",
+      "line_end": 618,
+      "line_start": 534,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some Euler-product displays are formula-dependent, but the staged approximation mechanism is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Organizes the proof around truncated Euler products, explicit two-point limits, Hilbert-transform estimates, negative-Sobolev tightness, randomized prime phases, and a Gaussian-plus-smooth logarithmic decomposition.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From shifted zeta to a randomized Euler-product boundary distribution",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u05.txt",
+      "unit_bytes": 5860,
+      "unit_id": "openalex_w2515894720_v2_u05",
+      "unit_sha256": "bc57cae8d057ffa35d778586d1e2a25985674eb0fff6fd6ed62599e4662d2c8b",
+      "unit_type": "method architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates proved randomized-Euler-product results from conjectures for zeta and notes the additional zero-sensitivity of the imaginary logarithm.",
+      "line_end": 757,
+      "line_start": 624,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moment normalizations and beta thresholds are formula-dependent but readable; conjectural status is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States subcritical and critical chaos limits for the randomized model, then isolates precise zeta moment and correlation asymptotics as the obstacle to transferring them to actual shifts.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        13,
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Real and critical chaos predictions versus unavailable zeta moments",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u06.txt",
+      "unit_bytes": 9280,
+      "unit_id": "openalex_w2515894720_v2_u06",
+      "unit_sha256": "4b563b2ce791fa83f2032de5bb642cceec63b0222e7f055e3938c2e42adf167e",
+      "unit_type": "theorem and research obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This converts arithmetic spectral samples at log n into a functional-analytic test interface used throughout the convergence proof.",
+      "line_end": 903,
+      "line_start": 768,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Relies on Fourier sampling and Sobolev formulas; exact constants are inessential to the mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces the V and Z norms and proves that logarithmically sampled Fourier values are controlled by a weighted L2 norm through a point-mass-to-interval estimate in W^{-1,2}.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A discrete Fourier-sampling norm embeds weighted test functions",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u07.txt",
+      "unit_bytes": 8261,
+      "unit_id": "openalex_w2515894720_v2_u07",
+      "unit_sha256": "9da7ec7bb683b5cbb38f5fd9015d27e0e9388fb8dd48c70ebdae3687222e9bd5",
+      "unit_type": "analytic construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the weighted uniform bound needed later for dominated convergence.",
+      "line_end": 1075,
+      "line_start": 904,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent but text extraction retains the transform, kernel, and limiting identities; check the scan if exact signs or 2pi factors are reused.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Computes a distributional Fourier transform and uses it to identify the Z inner product with a shifted zeta kernel whose pole produces the singular-integral term while the oscillatory remainder vanishes.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta boundary kernel equals the discrete norm in the oscillatory limit",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u08.txt",
+      "unit_bytes": 10244,
+      "unit_id": "openalex_w2515894720_v2_u08",
+      "unit_sha256": "fa6e9fffdf1af98904b0a3a7b7b6f1578050f8c8005af895a60c2783b0e7768d",
+      "unit_type": "kernel identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The mixed zeta/truncated kernels are essential; controlling only the two pure second moments would not yield the approximation estimate.",
+      "line_end": 1277,
+      "line_start": 1076,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on extracted complex-conjugation and error-term formulas; the surrounding prose makes the role of each kernel unambiguous.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns Ingham-Bettin-type two-point asymptotics into uniform second-moment bounds and proves that zeta and its truncated Euler product become close for fixed weighted test functions.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted two-point asymptotics control Euler-product approximation for every test function",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u09.txt",
+      "unit_bytes": 11286,
+      "unit_id": "openalex_w2515894720_v2_u09",
+      "unit_sha256": "d714a254a1abad363f046d51c8f26387c647c6e463a2492b4755e5f90aebc1af",
+      "unit_type": "mean-value transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes equidistribution of prime phases from unique factorization and distinguishes almost-sure N convergence from in-law T convergence.",
+      "line_end": 1479,
+      "line_start": 1278,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Sobolev norms, martingale convergence, and limit order are representation-critical and legible in the source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integrates Fourier-mode estimates to get W^{-alpha,2} approximation, constructs the randomized Euler product as an L2-bounded Hilbert-space martingale, and closes the T then N approximation by Wasserstein triangles.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lift scalar test estimates to Sobolev convergence and close the two-limit diagram",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u10.txt",
+      "unit_bytes": 11427,
+      "unit_id": "openalex_w2515894720_v2_u10",
+      "unit_sha256": "7d710c2e380664df6a7a3571e66240ac59ee317873a2e601129cdf5b574a013c",
+      "unit_type": "proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a genuine method comparison, not a repetition of the main proof.",
+      "line_end": 1577,
+      "line_start": 1485,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour-shift formulas carry exact exponents; the comparative conclusion is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides a second proof route using finite Dirichlet polynomials and cross moments, clarifying which quantitative approximation strength is lost when explicit truncated-product two-point estimates are avoided.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite Dirichlet polynomials bypass mixed Euler-product estimates",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u11.txt",
+      "unit_bytes": 5408,
+      "unit_id": "openalex_w2515894720_v2_u11",
+      "unit_sha256": "d91b714c595afe793ad3d372a9915ab2765448781b9422b800a441acc007f968",
+      "unit_type": "alternative route",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Connects interior analyticity with strictly distributional boundary regularity rather than conflating them.",
+      "line_end": 1707,
+      "line_start": 1578,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses Euler-product and Paley-Zygmund displays; the blow-up-to-nonmeasure implication is fully explained in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Poisson extension and local uniform Euler-product convergence to obtain a zero-free random analytic function for sigma>1/2, then proves boundary blow-up almost everywhere and excludes measure-valued boundary restrictions.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        28,
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic continuation exists off the line, but the boundary is not locally a measure",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u12.txt",
+      "unit_bytes": 7553,
+      "unit_id": "openalex_w2515894720_v2_u12",
+      "unit_sha256": "90ee420fa539c5225024544cc973360418db9e1e5bf119efddc7465c2c6bb503",
+      "unit_type": "boundary obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This lemma supplies regularity control for all subsequent error fields.",
+      "line_end": 1829,
+      "line_start": 1715,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly standard function-space notation; no source-external reconstruction is needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Packages Sobolev embedding, Levy maximal inequalities, Borel-Cantelli, and concentration into a reusable criterion for smooth random-series limits with exponential norm moments.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        30,
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform convergence and exponential regularity for random function series",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u13.txt",
+      "unit_bytes": 6874,
+      "unit_id": "openalex_w2515894720_v2_u13",
+      "unit_sha256": "2c436ffae4e95a90bcda15e0e6f533c84b815389d593e6a03d9888969a42ed0d",
+      "unit_type": "probabilistic lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The freezing and Gaussianization errors are kept distinct so their different summability conditions can be audited.",
+      "line_end": 2038,
+      "line_start": 1830,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Block indices, covariance normalization, and coupling bounds depend on displayed formulas; exact notation is recoverable with minor PDF layout risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows higher Euler-product powers are smooth, groups first-order prime terms into slowly varying blocks, freezes phases within blocks, and couples each block to an isotropic Gaussian with quantitative error.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        32,
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Separate smooth higher prime powers and Gaussianize frozen prime blocks",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u14.txt",
+      "unit_bytes": 12011,
+      "unit_id": "openalex_w2515894720_v2_u14",
+      "unit_sha256": "628ba15b8da205614b4fec622cc2cfee1aaf50adc39ff1b2ccad619feef0aec7",
+      "unit_type": "Gaussian coupling construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the quantitative bridge from blockwise coupling to a field-level approximation for every truncation index.",
+      "line_end": 2388,
+      "line_start": 2039,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact summability exponents and the block sequence are formula-dependent; scan verification is advisable before reusing constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives separate summability criteria, selects an explicit superpolynomial block sequence, controls incomplete blocks, and obtains a full Gaussian-plus-smooth decomposition with exponential C^ell bounds.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Choose block growth so coupling and freezing errors converge smoothly",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u15.txt",
+      "unit_bytes": 18890,
+      "unit_id": "openalex_w2515894720_v2_u15",
+      "unit_sha256": "0aceadf7c4e580d2384d107150a1e0a8464b54d40667f84fcb67ad5ddcfc9769",
+      "unit_type": "error analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The multiplication argument includes the local Sobolev continuity needed to justify the limiting identity.",
+      "line_end": 2472,
+      "line_start": 2390,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on complex-Gaussian exponential identities and Sobolev multiplication; formulas are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs the Gaussian exponential as a Hilbert-space martingale and passes the logarithmic Gaussian approximation through test functions to identify zeta_rand=e^E nu.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        40
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Complex chaos is an L2 Sobolev martingale and the residual error is a smooth multiplier",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u16.txt",
+      "unit_bytes": 5102,
+      "unit_id": "openalex_w2515894720_v2_u16",
+      "unit_sha256": "8b2aa6dbf905953459439ef3a928476501705e2471089d3f7aab0f9ae27d0b58",
+      "unit_type": "multiplicative-chaos identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the key reason an apparently nonintegrable complex two-point function still supports L2 chaos theory.",
+      "line_end": 2695,
+      "line_start": 2488,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour boundary values and stochastic-integral normalizations are formula-sensitive; the singular-integral mechanism is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Represents Gaussian fields by Brownian Fourier integrals and obtains a uniform second moment for exponential high frequencies by analytic continuation, the Plemelj formula, and L2 boundedness of the Hilbert transform.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        42,
+        43
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Construct high-frequency complex chaos through analytic boundary values",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u17.txt",
+      "unit_bytes": 11872,
+      "unit_id": "openalex_w2515894720_v2_u17",
+      "unit_sha256": "55b7523a1facb4513eda596e0fb6f6b402db0ef4fef57c2ada5dd3eaf3866d95",
+      "unit_type": "singular-integral construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Each replacement has a separately summable error, preserving provenance of the final field representation.",
+      "line_end": 2834,
+      "line_start": 2696,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires Li inverse, Brownian increments, and change-of-variable displays; exact endpoints depend on formula rendering.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the prime number theorem and Ito isometry through three controlled approximations to transform the prime-indexed Gaussian field into an integral with u^{-1/2} spectral weight plus a smooth error.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        44,
+        45,
+        46
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace Gaussian prime sums by a Brownian logarithmic-frequency integral",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u18.txt",
+      "unit_bytes": 8693,
+      "unit_id": "openalex_w2515894720_v2_u18",
+      "unit_sha256": "f6260d9d3f1f0fc6c48e7291033fa8ff1cac4ea9526a6d3a917a4324906724b1",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also explains why projectivizing removes the divergent scalar and yields a genuine mesoscopic limit.",
+      "line_end": 2982,
+      "line_start": 2836,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The frequency-splitting formulas are essential; prose validates the limiting roles and dependence claims.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes the dilated Brownian integral at frequencies delta, 1, and delta times the cutoff, proves the chaos law is independent of delta, and transfers the result back to zeta by a diagonal choice of scales.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        47,
+        48
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mesoscopic dilation factors into smooth correction, divergent zero mode, and scale-invariant chaos",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u19.txt",
+      "unit_bytes": 9240,
+      "unit_id": "openalex_w2515894720_v2_u19",
+      "unit_sha256": "e2f1d3239f1f5737b00b4d375b213cc138f7f6a9c42d68974957397fe16c20d2",
+      "unit_type": "scaling decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The one-half coefficient explains the critical beta rescaling and is not cosmetic.",
+      "line_end": 3246,
+      "line_start": 2984,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prime-sum-to-integral asymptotics and the Euler-product identification are formula-dependent but intact enough for semantic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the Gaussian-chaos convergence criterion and proves that the real Gaussian prime field has covariance one-half log(1/|x-y|) plus a smooth term, uniformly controlled near the diagonal.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime covariance is logarithmic up to a smooth remainder",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u20.txt",
+      "unit_bytes": 15950,
+      "unit_id": "openalex_w2515894720_v2_u20",
+      "unit_sha256": "9cef5b1354911b00513bd38b453196c6a909dec6f559799204c7ceff2a3c9e82",
+      "unit_type": "criterion verification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u20.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates existence of the measure from moment-range statements and from the beta-at-or-above-critical zero limit.",
+      "line_end": 3351,
+      "line_start": 3247,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Beta exponents and normalizer products rely on formulas; status and proof logic are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows the true exponential normalizer is uniformly comparable to the Gaussian one, then uses Lp martingale bounds and the smooth coupling error to prove nontrivial subcritical convergence and supercritical degeneration.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        53
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Comparable normalizers and smooth errors transfer subcritical chaos to the randomized zeta model",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u21.txt",
+      "unit_bytes": 6497,
+      "unit_id": "openalex_w2515894720_v2_u21",
+      "unit_sha256": "b59b10d401be73d0af8a6696fa8eaab584ddaf896661f2d77f94b4641cd4f068",
+      "unit_type": "normalization transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u21.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This demonstrates that exact approximation details can be discarded only after covariance comparison hypotheses are checked.",
+      "line_end": 3641,
+      "line_start": 3357,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Critical renormalization and covariance matching are display-heavy; exact constants should be scan-checked if operationalized.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses a reference white-noise approximation with known critical convergence, reshapes the spectral weight to match its covariance, verifies bounded/off-diagonal covariance differences, and transfers convergence back through smooth independent factors.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        55,
+        56,
+        57,
+        58
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Construct the critical measure by bounded covariance comparison",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u22.txt",
+      "unit_bytes": 17268,
+      "unit_id": "openalex_w2515894720_v2_u22",
+      "unit_sha256": "f7752dd82a9a6add466636d286c340ebe64028f5f539c9add80fe3044d4cb162",
+      "unit_type": "universality transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u22.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the arithmetic engine rather than merely citing the Ingham-Bettin result.",
+      "line_end": 4077,
+      "line_start": 3643,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense formula extraction carries sign and exponent risk; verify the PDF scan before using exact error terms.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives shifted divisor-sum asymptotics from effective Perron inversion, contour movement, zeta growth, and the functional equation, including the classical second moment as the zero-shift limit.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Perron and the functional equation yield uniform shifted divisor-sum moments",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u23.txt",
+      "unit_bytes": 26223,
+      "unit_id": "openalex_w2515894720_v2_u23",
+      "unit_sha256": "daa3bbfc9fe790a5d22eef325f5c5be836d4fafe07c1582d53c4ffbad08cf6d5",
+      "unit_type": "analytic-number-theory derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u23.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Closes the exact estimate consumed by the Sobolev convergence proof.",
+      "line_end": 4191,
+      "line_start": 4078,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact error bounds and conjugations are formula-dependent; the case split and transfer mechanism are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splits large and bounded shifts, symmetrizes the integration interval, applies the functional equation, and handles the truncated-truncated term by finite expansion and phase equidistribution.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        66
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Translate contour moments into uniform two-point kernels",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u24.txt",
+      "unit_bytes": 6553,
+      "unit_id": "openalex_w2515894720_v2_u24",
+      "unit_sha256": "e9e926585230f729ed931e6940e1f9a2cab465e71c55f30ec3cef1a3949096db",
+      "unit_type": "proof fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u24.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This generic probabilistic component is reusable beyond the zeta application and records the bounded-variable improvement.",
+      "line_end": 4562,
+      "line_start": 4197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Matrix inequalities and exponents are dense; semantic strategy is clear, exact rates require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bounds W1 by local Fourier-density discrepancy and tails, smooths a normalized sum by a small Gaussian, treats nearly degenerate covariance directions separately, and upgrades mean coupling error to exponential moments.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth Fourier comparison converts a CLT into a quantitative coupling with exponential error",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u25.txt",
+      "unit_bytes": 21312,
+      "unit_id": "openalex_w2515894720_v2_u25",
+      "unit_sha256": "da229d54b02f93cd739f3f9a62678cdd032636607da60216564176152e715a78",
+      "unit_type": "coupling theorem proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u25.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof makes explicit which zeta ingredients are replaced by random-matrix moment technology.",
+      "line_end": 4895,
+      "line_start": 4564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Toeplitz symbols and Fourier coefficients are formula-dependent; uniformity claims are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Toeplitz/Fisher-Hartwig and strong Szego asymptotics to control truncation in negative Sobolev norm, then combines Gaussian trace limits and martingale convergence to identify the same exponential Gaussian boundary field.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Haar characteristic polynomials share the global chaos boundary law",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u26.txt",
+      "unit_bytes": 20094,
+      "unit_id": "openalex_w2515894720_v2_u26",
+      "unit_sha256": "60a8a8ccc30c4262cd7c5270b007246fcd8b9ee08dbaa5355efbe2e667d7123a",
+      "unit_type": "model comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u26.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This completes the zeta/RMT comparison while leaving stronger purely Gaussian refinements outside scope.",
+      "line_end": 5290,
+      "line_start": 4899,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Discrete-to-continuum coupling and normalization are display-heavy; scan-check exact indexing if reused.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Controls Sobolev dilation of circle distributions, removes low-frequency scalar modes, couples discrete Gaussian sums to Brownian integrals, and proves second-moment convergence to the mesoscopic chaos.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Discrete Gaussian modes converge to the same mesoscopic Brownian chaos",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_v2_u27.txt",
+      "unit_bytes": 23574,
+      "unit_id": "openalex_w2515894720_v2_u27",
+      "unit_sha256": "002626628f7919e8d27c6c663f596c83f47f23890a2876772b8b14a9169aa3de",
+      "unit_type": "model comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_v2_u27.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    }
+  ]
+}

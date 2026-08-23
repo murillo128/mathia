@@ -1,0 +1,980 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2015511182_8133e43a_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2015511182",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the spectral motivation and the exact point at which inversion is proposed; later lines supply the construction.",
+      "line_end": 56,
+      "line_start": 35,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low formula risk: the decisive strategy is explicit in prose; xp and 1/xp notation is legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source isolates the failure point of the formal Berry–Keating proposal and makes the central representation move: quantize 1/(xp) on a lattice, where the inverse momentum has a tractable Green kernel, rather than impose an unestablished direct quantization of xp.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Invert xp before quantizing it",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_depth_u01.txt",
+      "unit_bytes": 1976,
+      "unit_id": "openalex_w2015511182_depth_u01",
+      "unit_sha256": "115edd0d0ff9fafec66effab9f59bbba30d2e9f9d6248a7afc4903e5c68c450e",
+      "unit_type": "motivation-and-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_depth_u01.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 27,
+          "line_end": 34,
+          "text": "\n                                                                                           1\n\n<!-- source-page: 2 -->\n\nI.    INTRODUCTION\n\n\n",
+          "sha256": "2986e0aa916c313360fcb11fc3acfe29212fc5329380b07c3b260e5b16008ebf"
+        },
+        "after": {
+          "line_start": 57,
+          "line_end": 64,
+          "text": "     The idea that the RG may have limit cycles was first considered by Wilson in 1971 [16],\nhowever at the time no models with this behavior were known. In the last few years limit cy-\ncles in the RG have been discovered in various models in several physical contexts, including\nnuclear physics [17], quantum field theory [18, 19], quantum mechanics [20], superconductiv-\nity [21, 22], Bose-Einstein condensation [23], effective low energy QCD [24], S-matrix models\n[25, 26], few body systems and Efimov states [17, 27], etc (for a review of see [27]). The sub-\nject of duality cascades in supersymmetric gauge theory [28] is also suggestive of limit-cycle\nbehavior. The possibility of chaotic flows has also been recently considered [20, 29].\n",
+          "sha256": "e52ac7988905ff83230a681e7ccfd782cdff9485be01cc02e7d4a54e65f05636"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b8d491e6f5ecc1303c717166b9751948ab84c7cd91f173d308dd50773d9b5ec0",
+        "dossier_sha256": "341a1075160ff297a5136a9ee9cafddccb77d93e80e67155c62c5cc99eb63ae0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. Introduction",
+            "line_end": 114,
+            "line_start": 32,
+            "mathematical_role": "Sets the Hilbert–Pólya/Berry–Keating target, distinguishes smooth and fluctuating spectral information, and motivates the inverse-Hamiltonian bridge to the Russian-doll model."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 56,
+          "line_start": 35,
+          "title": "Invert xp before quantizing it",
+          "unit_id": "openalex_w2015511182_depth_u01",
+          "unit_type": "motivation-and-strategy",
+          "why_material": "The source isolates the failure point of the formal Berry–Keating proposal and makes the central representation move: quantize 1/(xp) on a lattice, where the inverse momentum has a tractable Green kernel, rather than impose an unestablished direct quantization of xp."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the spectral motivation and the exact point at which inversion is proposed; later lines supply the construction.",
+          "representation_dependency": "Low formula risk: the decisive strategy is explicit in prose; xp and 1/xp notation is legible.",
+          "unit_id": "openalex_w2015511182_depth_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 99,
+            "line_start": 71,
+            "title": "Cyclic RG suggests a Russian-doll bridge, but exponent and energy roles must be repaired",
+            "unit_id": "openalex_w2015511182_depth_u02",
+            "unit_type": "structural-analogy",
+            "why_material": "Compares scale-related RD bound states and Dirichlet-like wavefunctions with Berry–Keating dilation eigenfunctions, identifies two mismatches, and proposes the inverse Hamiltonian as the mechanism that resolves them rather than treating surface resemblance as an equivalence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Passing to the inverse converts a problematic dilation Hamiltonian into a Green-kernel lattice operator; the RD threshold map then supplies exact solution machinery, while the continuum limit recovers the original generalized BK wavefunctions.",
+            "limit": "The map is state-dependent and nonunitary, and recovery of formal wavefunctions does not establish that Riemann zeros are eigenvalues.",
+            "parent_local_unit_ids": [
+              "openalex_w2015511182_depth_u01",
+              "openalex_w2015511182_depth_u07",
+              "openalex_w2015511182_depth_u09",
+              "openalex_w2015511182_depth_u10"
+            ],
+            "title": "Inversion as a quantization bridge rather than a spectral equivalence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 34,
+              "line_start": 32,
+              "reason": "Section heading and spacing."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_depth_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_depth_u01",
+          "spontaneous_reading": "The decisive move is to invert the formal dilation Hamiltonian before quantizing: the inverse momentum has a simple one-dimensional Green kernel that can be put on a lattice."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_depth_u01",
+          "source_grounded_mathematics": "The source starts from the formal Berry–Keating Hamiltonian xp, which reproduces the smooth zero count semiclassically, and proposes a lattice quantum model of 1/(xp) related to cyclic RG models.",
+          "conceptual_reading": "Inversion changes an obstructed operator-realization problem into a tractable kernel problem while preserving a route back to the intended dilation dynamics.",
+          "representation_or_bridge": "The bridge object is the inverse operator 1/(xp), with p⁻¹ represented by a one-dimensional Green function and then discretized.",
+          "boundary_or_failure": "This motivation neither constructs the later operator nor establishes a Riemann-zero spectrum; xp itself remains without a consistent quantization at this point.",
+          "uncertainty": "Low for the strategic move; the spectral motivation is conjectural rather than proof of RH."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_depth_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span says formal HBK=xp reproduces the smooth zero count semiclassically but lacks a consistent quantization.",
+          "It explicitly proposes defining xp on a lattice by working with its inverse 1/(xp), related to cyclic-RG models."
+        ],
+        "inference": [
+          "Inversion is a proposed workaround for the obstructed direct quantization."
+        ],
+        "unsupported_or_imported": [
+          "The simple one-dimensional Green kernel for p^-1 and its tractable lattice discretization are supplied only in later construction, not in this span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The strategic prose is legible; xp notation has low extraction risk."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the inversion-before-quantization strategy and the smooth-count/formal-operator limitation, but defer all p^-1 Green-kernel mechanics to the later supporting unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Self-contained motivation for why the superconducting model enters; the exact map is established later.",
+      "line_end": 99,
+      "line_start": 71,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate formula risk: exponents and scaling factors are text-extracted but supported by adjacent prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares scale-related RD bound states and Dirichlet-like wavefunctions with Berry–Keating dilation eigenfunctions, identifies two mismatches, and proposes the inverse Hamiltonian as the mechanism that resolves them rather than treating surface resemblance as an equivalence.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cyclic RG suggests a Russian-doll bridge, but exponent and energy roles must be repaired",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_depth_u02.txt",
+      "unit_bytes": 2567,
+      "unit_id": "openalex_w2015511182_depth_u02",
+      "unit_sha256": "184a625ee5bc90fb0a15503a15ca539306d6769ac47443495ad6e337bdf596a4",
+      "unit_type": "structural-analogy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_depth_u02.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 63,
+          "line_end": 70,
+          "text": "ject of duality cascades in supersymmetric gauge theory [28] is also suggestive of limit-cycle\nbehavior. The possibility of chaotic flows has also been recently considered [20, 29].\n\n\n                                               2\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "c552e535745e165c89d15b4a6461ed13bf41ace81ecef556c7b7d299f208a5f0"
+        },
+        "after": {
+          "line_start": 100,
+          "line_end": 107,
+          "text": "   The organization of the paper is as follows. In section II we review the BK and the RD\nmodels. We also define the inverse model based on 1/xp and discuss its relation with the\nprevious ones. In section III we solve the inverse model in the continuum limit. In section\nIV we study its renormalization showing the existence of RG cycles and their connection\n\n                                                3\n\n<!-- source-page: 4 -->\n",
+          "sha256": "0aa4d5b85dd341707e04238270d07db5a7e41fecf6b7e882234ad993e661a791"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b8d491e6f5ecc1303c717166b9751948ab84c7cd91f173d308dd50773d9b5ec0",
+        "dossier_sha256": "341a1075160ff297a5136a9ee9cafddccb77d93e80e67155c62c5cc99eb63ae0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. Introduction",
+            "line_end": 114,
+            "line_start": 32,
+            "mathematical_role": "Sets the Hilbert–Pólya/Berry–Keating target, distinguishes smooth and fluctuating spectral information, and motivates the inverse-Hamiltonian bridge to the Russian-doll model."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 99,
+          "line_start": 71,
+          "title": "Cyclic RG suggests a Russian-doll bridge, but exponent and energy roles must be repaired",
+          "unit_id": "openalex_w2015511182_depth_u02",
+          "unit_type": "structural-analogy",
+          "why_material": "Compares scale-related RD bound states and Dirichlet-like wavefunctions with Berry–Keating dilation eigenfunctions, identifies two mismatches, and proposes the inverse Hamiltonian as the mechanism that resolves them rather than treating surface resemblance as an equivalence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Self-contained motivation for why the superconducting model enters; the exact map is established later.",
+          "representation_dependency": "Moderate formula risk: exponents and scaling factors are text-extracted but supported by adjacent prose.",
+          "unit_id": "openalex_w2015511182_depth_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 56,
+            "line_start": 35,
+            "title": "Invert xp before quantizing it",
+            "unit_id": "openalex_w2015511182_depth_u01",
+            "unit_type": "motivation-and-strategy",
+            "why_material": "The source isolates the failure point of the formal Berry–Keating proposal and makes the central representation move: quantize 1/(xp) on a lattice, where the inverse momentum has a tractable Green kernel, rather than impose an unestablished direct quantization of xp."
+          },
+          {
+            "line_end": 169,
+            "line_start": 126,
+            "title": "BK→I→RD as a regularization, RG, and threshold-state pipeline",
+            "unit_id": "openalex_w2015511182_depth_u03",
+            "unit_type": "model-architecture",
+            "why_material": "Separates the roles of the three models: BK supplies the dilation target, I supplies a finite-dimensional regularization with a running boundary coupling, and RD supplies cyclic RG and threshold states corresponding to I eigenstates."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 114,
+              "line_start": 100,
+              "reason": "Paper roadmap and page furniture."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_depth_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_depth_u02",
+          "spontaneous_reading": "The Russian-doll analogy becomes useful only after naming its two mismatches with Berry–Keating—real exponent and fixed coupling versus half exponent and energy-dependent phase—and assigning their repair to the inverse model."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_depth_u02",
+          "source_grounded_mathematics": "RD bound-state energies and sizes scale exponentially with the RG period, and its zero-energy wavefunction behaves like n^{-(1-ih)}; the BK eigenfunction behaves like x^{-(1/2-iE)}, so both the real exponent and imaginary parameter differ.",
+          "conceptual_reading": "The source uses structural comparison diagnostically: resemblance to Dirichlet powers is insufficient until the exponent and the role of the spectral parameter are reconciled.",
+          "representation_or_bridge": "The proposed bridge is the intermediate classical Hamiltonian 1/(xp), later intended to map BK energies to RD couplings at a threshold state.",
+          "boundary_or_failure": "No equivalence follows from the displayed power laws alone, and the exact state map is deferred.",
+          "uncertainty": "Moderate formula-extraction risk for exponents and scale factors, but the two mismatches and proposed repair are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_depth_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span compares exponentially scaled RD bound states and the E=0 power n^{-(1-ih)} with the BK power x^{-(1/2-iE)}.",
+          "It explicitly identifies both the real-exponent mismatch and fixed-h versus energy-dependent-imaginary-part mismatch, then proposes 1/(xp) as an intermediate model."
+        ],
+        "inference": [
+          "The analogy is diagnostic only after its mismatches are made explicit."
+        ],
+        "unsupported_or_imported": [
+          "A threshold-state map in which BK energy becomes an RD coupling is not established in this span; that exact mechanism appears later."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Extracted exponents and scale factors have moderate formula risk, though the prose states both mismatches."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Describe 1/(xp) only as the proposed repair in this unit and defer the threshold-state and coupling identifications."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Requires the monotone positive v(x) assumptions stated at the start of the span.",
+      "line_end": 349,
+      "line_start": 326,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: exact integral placement is formula-dependent but legible enough to recover the representation change.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Generalizes xp to v(x)p and gives both its cutoff count and formal eigenfunction in the integrated coordinate ∫dx/v(x), anticipating the later coordinate that turns the inverse-model spectrum into free motion.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace x by a velocity profile v(x) without losing adapted plane-wave structure",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_depth_u06.txt",
+      "unit_bytes": 1424,
+      "unit_id": "openalex_w2015511182_depth_u06",
+      "unit_sha256": "8fa794eed7936dbcba9eb5ad9194260abb789c5787fb34700856683ebdad51e4",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_depth_u06.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 318,
+          "line_end": 325,
+          "text": "                                     ψE (x) =                 .                         (13)\n                                                 x1/2−iE/~\nAs noticed by BK, the wave function contains the power x−s which appears in the Dirichlet\nseries for ζ(s) and the Euler product, although those formulas are convergent only in the\nregion Re(s) > 1, while in eq.(13) s = 1/2 − iE/~, which lies outside. The rest of the BK\npaper discusses possible quantum boundary conditions that could generate the Riemann\nzeros. The guiding idea is that xp is the generator of the scale transformations in phase\nspace, a fact that also plays a role in Connes’s work.\n",
+          "sha256": "bc3afba4f7d70a8bc0f5a043a063e2566d2c546b65d5e0191cac17bcdb10b410"
+        },
+        "after": {
+          "line_start": 350,
+          "line_end": 357,
+          "text": "\n\n\n\n                                             8\n\n<!-- source-page: 9 -->\n\n",
+          "sha256": "734736f911510d122ca202f63fbdd8eb7dc4b1283a48ba5cee3d1677459899dc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b8d491e6f5ecc1303c717166b9751948ab84c7cd91f173d308dd50773d9b5ec0",
+        "dossier_sha256": "341a1075160ff297a5136a9ee9cafddccb77d93e80e67155c62c5cc99eb63ae0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. Hamiltonians: overview and Berry–Keating model",
+            "line_end": 357,
+            "line_start": 115,
+            "mathematical_role": "Defines the BK→I→RD architecture, contrasts Berry–Keating and Connes regularizations, and generalizes xp to v(x)p."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 349,
+          "line_start": 326,
+          "title": "Replace x by a velocity profile v(x) without losing adapted plane-wave structure",
+          "unit_id": "openalex_w2015511182_depth_u06",
+          "unit_type": "generalization",
+          "why_material": "Generalizes xp to v(x)p and gives both its cutoff count and formal eigenfunction in the integrated coordinate ∫dx/v(x), anticipating the later coordinate that turns the inverse-model spectrum into free motion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Requires the monotone positive v(x) assumptions stated at the start of the span.",
+          "representation_dependency": "Moderate: exact integral placement is formula-dependent but legible enough to recover the representation change.",
+          "unit_id": "openalex_w2015511182_depth_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 325,
+            "line_start": 243,
+            "title": "Connes cutoff reverses emission into missing states",
+            "unit_id": "openalex_w2015511182_depth_u05",
+            "unit_type": "spectral-interpretation",
+            "why_material": "Contrasts a large phase-space cutoff with Berry–Keating's Planck cell: the divergent continuum count contains the Riemann smooth term with the opposite sign, motivating zeros as absences in a continuum rather than emitted eigenlines; it also ties the formal xp eigenfunctions to scale generation."
+          },
+          {
+            "line_end": 405,
+            "line_start": 361,
+            "title": "Finite lattice Green kernel regularizes the inverse Berry–Keating operator",
+            "unit_id": "openalex_w2015511182_depth_u07",
+            "unit_type": "construction",
+            "why_material": "Uses the one-dimensional Green function for p⁻¹ to define a finite Hermitian matrix with weights f_n and an additional coupling g_I, then defines the regularized BK Hamiltonian by matrix inversion."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 360,
+              "line_start": 350,
+              "reason": "Page furniture and inverse-Hamiltonian subsection transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_depth_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_depth_u06",
+          "spontaneous_reading": "Replacing x by a positive velocity profile v(x) preserves solvability because integrating 1/v builds the coordinate in which the eigenfunction is a plane wave."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_depth_u06",
+          "source_grounded_mathematics": "For positive increasing v, the symmetrized Hamiltonian built from v(x)p has a cutoff count involving ∫dx/v(x) and formal eigenfunctions v(x)^{-1/2} exp((iE/ℏ)∫dx/v(x)); v(x)=x recovers the BK case.",
+          "conceptual_reading": "The integrated travel-time coordinate isolates universal translation-like phase evolution from the model-specific velocity amplitude.",
+          "representation_or_bridge": "q(x)=∫dx/v(x) converts generalized dilation flow into plane-wave phase, anticipating the inverse-model spectral coordinate.",
+          "boundary_or_failure": "The construction assumes v is positive and monotone on the half-line and remains a formal continuum eigenfunction statement.",
+          "uncertainty": "Moderate for exact integral placement, low for the representation change and specialization to v=x."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_depth_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "For positive monotone v on x>0, the symmetrized v(x)p operator has formal eigenfunctions with amplitude v^{-1/2} and phase integral int dx/v.",
+          "The specialization v(x)=x recovers the displayed BK eigenfunction."
+        ],
+        "inference": [
+          "Using the integrated travel-time variable makes the phase plane-wave-like while leaving v in the amplitude."
+        ],
+        "unsupported_or_imported": [
+          "The claim that this coordinate anticipates the later inverse-model spectral coordinate imports a relation not stated in this span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact integral placement has moderate formula-extraction risk, but the representation change is legible."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the adapted-coordinate interpretation internal to the generalized v(x)p eigenfunction and remove the forward reference to the inverse model."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The extra coupling is retained because later RG elimination generates it; the pure BK choice is its zero value.",
+      "line_end": 405,
+      "line_start": 361,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: matrix entries and normal ordering depend on extracted equations, but surrounding prose fixes their meaning.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the one-dimensional Green function for p⁻¹ to define a finite Hermitian matrix with weights f_n and an additional coupling g_I, then defines the regularized BK Hamiltonian by matrix inversion.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite lattice Green kernel regularizes the inverse Berry–Keating operator",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_depth_u07.txt",
+      "unit_bytes": 2322,
+      "unit_id": "openalex_w2015511182_depth_u07",
+      "unit_sha256": "4a67e767725392968815dc708f8031cb503bdb2896b2b1093b8f9bf9d5c19d76",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_depth_u07.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 353,
+          "line_end": 360,
+          "text": "\n                                             8\n\n<!-- source-page: 9 -->\n\nB.   The inverse Hamiltonian\n\n\n",
+          "sha256": "27cfffb9804076703467ff3ca92b04f86c68631bc658dfc43db3e0dc463300ff"
+        },
+        "after": {
+          "line_start": 406,
+          "line_end": 413,
+          "text": "                                                                2~\n\n                                                 9\n\n<!-- source-page: 10 -->\n\n11\n\n",
+          "sha256": "200a4f2b273929aa3b607efe97754721013d31f77dd4442f7e26f1b87f37213d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b8d491e6f5ecc1303c717166b9751948ab84c7cd91f173d308dd50773d9b5ec0",
+        "dossier_sha256": "341a1075160ff297a5136a9ee9cafddccb77d93e80e67155c62c5cc99eb63ae0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II.B. Inverse Hamiltonian",
+            "line_end": 519,
+            "line_start": 358,
+            "mathematical_role": "Constructs the finite lattice inverse operator, explains the renormalization coupling and boundary-condition role, and checks continuum recovery despite finite-dimensional commutator defects."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 405,
+          "line_start": 361,
+          "title": "Finite lattice Green kernel regularizes the inverse Berry–Keating operator",
+          "unit_id": "openalex_w2015511182_depth_u07",
+          "unit_type": "construction",
+          "why_material": "Uses the one-dimensional Green function for p⁻¹ to define a finite Hermitian matrix with weights f_n and an additional coupling g_I, then defines the regularized BK Hamiltonian by matrix inversion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The extra coupling is retained because later RG elimination generates it; the pure BK choice is its zero value.",
+          "representation_dependency": "Moderate: matrix entries and normal ordering depend on extracted equations, but surrounding prose fixes their meaning.",
+          "unit_id": "openalex_w2015511182_depth_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 349,
+            "line_start": 326,
+            "title": "Replace x by a velocity profile v(x) without losing adapted plane-wave structure",
+            "unit_id": "openalex_w2015511182_depth_u06",
+            "unit_type": "generalization",
+            "why_material": "Generalizes xp to v(x)p and gives both its cutoff count and formal eigenfunction in the integrated coordinate ∫dx/v(x), anticipating the later coordinate that turns the inverse-model spectrum into free motion."
+          },
+          {
+            "line_end": 466,
+            "line_start": 445,
+            "title": "Finite matrices violate the canonical commutator yet recover it spectrally in the continuum",
+            "unit_id": "openalex_w2015511182_depth_u08",
+            "unit_type": "obstruction-and-limit",
+            "why_material": "Makes the finite-dimensional obstruction explicit through the trace of [X,P], then uses convergence of most commutator eigenvalues to justify continuum recovery; it also clarifies that the RG coupling is classically invisible but quantum-mechanically fixes boundary conditions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Passing to the inverse converts a problematic dilation Hamiltonian into a Green-kernel lattice operator; the RD threshold map then supplies exact solution machinery, while the continuum limit recovers the original generalized BK wavefunctions.",
+            "limit": "The map is state-dependent and nonunitary, and recovery of formal wavefunctions does not establish that Riemann zeros are eigenvalues.",
+            "parent_local_unit_ids": [
+              "openalex_w2015511182_depth_u01",
+              "openalex_w2015511182_depth_u07",
+              "openalex_w2015511182_depth_u09",
+              "openalex_w2015511182_depth_u10"
+            ],
+            "title": "Inversion as a quantization bridge rather than a spectral equivalence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 360,
+              "line_start": 350,
+              "reason": "Page furniture and inverse-Hamiltonian subsection transition."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 444,
+              "line_start": 406,
+              "reason": "Page break and plot interior whose mathematical takeaway is recoverable from its later caption."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_depth_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_depth_u07",
+          "spontaneous_reading": "The sign kernel of p⁻¹ turns inverse Berry–Keating quantization into an explicit finite Hermitian matrix, and the apparently extra scalar coupling is retained because coarse-graining will generate it."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_depth_u07",
+          "source_grounded_mathematics": "Normal ordering gives H_BK⁻¹=v^{-1/2}p⁻¹v^{-1/2}; on N sites its matrix entries are proportional to f_n(gI+ihI sign(n-m))f_m with f_n=1/√v_n and hI=1/ℏ, and the regularized BK Hamiltonian is HI⁻¹.",
+          "conceptual_reading": "Inversion exposes a simple nonlocal kernel that admits finite regularization, while closure under RG determines the necessary parameter family.",
+          "representation_or_bridge": "The Green kernel sign(n-m), weighted by f_n, is the concrete bridge from a differential inverse to a finite matrix; matrix inversion returns the regularized target Hamiltonian.",
+          "boundary_or_failure": "The pure BK choice gI=0 is not closed under later RG, and finite matrix inversion alone does not establish canonical commutation or a Riemann spectrum.",
+          "uncertainty": "Moderate equation-extraction risk, but matrix roles and the reason for gI are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_depth_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "Normal ordering gives v^{-1/2}p^{-1}v^{-1/2}, and the sign Green function yields the displayed finite Hermitian matrix with weights fn and couplings gI,hI.",
+          "The regularized BK Hamiltonian is defined by matrix inversion, and the span explicitly says gI is needed for renormalization while gI=0 is the pure BK case."
+        ],
+        "inference": [
+          "The inverse representation exposes a finite nonlocal kernel and the stated need for gI identifies the parameter family to retain for later RG."
+        ],
+        "unsupported_or_imported": [
+          "The finite-dimensional canonical-commutator defect and its continuum behavior are not discussed until the next unit.",
+          "Failure to establish a Riemann spectrum is a prudent global caveat but is not a mechanism analyzed in this construction span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Matrix entries and normal ordering have moderate formula risk, though their roles are clear."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Limit the boundary statement to what this span establishes: a finite inverse-kernel regularization with an RG-required extra coupling; defer commutator and spectral diagnostics."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both attempted modifications, their asymptotic effects, and the mechanism-level reason for failure.",
+      "line_end": 1516,
+      "line_start": 1478,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the modified Gamma formula is fragile, but the negative findings and smooth-superposition obstruction are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records two negative routes—algebraic corrections to levels and deleting prime-indexed levels—and explains their common obstruction: sums of smoothly varying arctangent contributions resist producing the irregular interpolant required by the zeros.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Level perturbations and prime deletion cannot synthesize zero-scale randomness from smooth phase steps",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_depth_u22.txt",
+      "unit_bytes": 2788,
+      "unit_id": "openalex_w2015511182_depth_u22",
+      "unit_sha256": "325de5bef6e76bd63d52442550fe98cc78d87aad1915eec56904fe0d85f8c4a0",
+      "unit_type": "failed-route-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_depth_u22.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1470,
+          "line_end": 1477,
+          "text": "\nFIG. 6: Deviation of the first 40 zeros. The mean and square mean of n − Nsm − 1/2 are given by\n-0.003825 and 0.188102 respectively.\n\n\n   The oscillations in n − Nsm (En ) − 1/2 are randomly distributed due to its relation to\nζ(1/2 + iE). This fact implies that the uniform I-model, eventhough describes the smooth\npart of the Riemann’s zeros, does not explain the origin of their randomness.\n",
+          "sha256": "02d68d3fb56255445ae5d379122b5e9e6c50d264a8731c854692a60856f7bb14"
+        },
+        "after": {
+          "line_start": 1517,
+          "line_end": 1524,
+          "text": "\n\nVI.    THE I± MODELS\n\n\n   The couplings gI,D have so far played an auxiliary role in the construction of the I\nmodel. They appear in the renormalization and the exact solution, but they did not take\npart in the dynamics except for setting the boundary conditions. This suggests that gI,D\n",
+          "sha256": "3c7dfb33d483ba00eac6b1adc37713905afeb786f529d71020ebc466f88526fd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b8d491e6f5ecc1303c717166b9751948ab84c7cd91f173d308dd50773d9b5ec0",
+        "dossier_sha256": "341a1075160ff297a5136a9ee9cafddccb77d93e80e67155c62c5cc99eb63ae0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "V. Exact solution",
+            "line_end": 1518,
+            "line_start": 1088,
+            "mathematical_role": "Derives the discrete recursion and product quantization, proves completeness, extracts the Gamma-function finite count, compares regulators, and audits failed attempts to model zero fluctuations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1516,
+          "line_start": 1478,
+          "title": "Level perturbations and prime deletion cannot synthesize zero-scale randomness from smooth phase steps",
+          "unit_id": "openalex_w2015511182_depth_u22",
+          "unit_type": "failed-route-and-obstruction",
+          "why_material": "Records two negative routes—algebraic corrections to levels and deleting prime-indexed levels—and explains their common obstruction: sums of smoothly varying arctangent contributions resist producing the irregular interpolant required by the zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both attempted modifications, their asymptotic effects, and the mechanism-level reason for failure.",
+          "representation_dependency": "Moderate: the modified Gamma formula is fragile, but the negative findings and smooth-superposition obstruction are explicit.",
+          "unit_id": "openalex_w2015511182_depth_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1477,
+            "line_start": 1417,
+            "title": "A half-cycle offset improves smooth zero locations but leaves random fluctuations unexplained",
+            "unit_id": "openalex_w2015511182_depth_u21",
+            "unit_type": "computational-check",
+            "why_material": "The finite numerical check compares the smooth count at known zeros and finds a half-unit offset consistent with completed RG cycles; the remaining deviations track the oscillatory zeta contribution, so the uniform model is explicitly limited to the smooth component."
+          },
+          {
+            "line_end": 1601,
+            "line_start": 1522,
+            "title": "Only two level-dependent coupling patterns preserve the simple antisymmetric interaction under RG",
+            "unit_id": "openalex_w2015511182_depth_u23",
+            "unit_type": "renormalizable-generalization",
+            "why_material": "Promotes the scalar g coupling to a structured matrix and identifies max-index and min-index patterns I+ and I− as the two choices that keep the h interaction invariant. Their elimination directions are opposite, and the exact I↔RD threshold-state map survives levelwise."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth arctangent contributions explain why perturbing or deleting levels fails to model irregular zero fluctuations; imposing RG closure instead selects two level-dependent coupling patterns whose gradients become partner scattering potentials.",
+            "limit": "The source proposes the scattering connection but gives neither discrete exact eigenvalue equations for I± nor a construction reproducing the zeros.",
+            "parent_local_unit_ids": [
+              "openalex_w2015511182_depth_u22",
+              "openalex_w2015511182_depth_u23",
+              "openalex_w2015511182_depth_u24",
+              "openalex_w2015511182_depth_u25"
+            ],
+            "title": "The failure of level engineering motivates coupling-derived scattering potentials"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1521,
+              "line_start": 1517,
+              "reason": "I± section transition and heading."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_depth_u22",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_depth_u22",
+          "spontaneous_reading": "Both perturbing levels and deleting prime-indexed levels fail for the same structural reason: the counting function remains a superposition of smooth arctangent steps and cannot readily form the required irregular curve."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_depth_u22",
+          "source_grounded_mathematics": "Changing ε_n to n+a+c/n replaces the single Gamma factor by a product of two and loses the smooth-Riemann match; removing prime levels changes log N to log(N/log N) but does not improve zero locations.",
+          "conceptual_reading": "The negative experiments identify a representation bottleneck: modifying the level list changes smooth density but not the smooth character of each phase contribution.",
+          "representation_or_bridge": "The exact arctangent counting formula exposes the shared mechanism behind both failures and motivates moving from level engineering to coupling structure.",
+          "boundary_or_failure": "These are reported negative routes, not impossibility theorems; higher corrections behave similarly within the explored family.",
+          "uncertainty": "Moderate for the modified Gamma expression, low for the failures and smooth-superposition explanation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_depth_u22",
+        "critic_decision": "revise",
+        "supported": [
+          "Adding c/n to the uniform levels produces two Gamma factors and loses the earlier smooth-Riemann match; higher algebraic corrections are reported to behave similarly.",
+          "Deleting prime-indexed levels changes the logarithmic asymptotic but does not improve zero locations.",
+          "The source explains both failures through the smooth arctangent contributions in the exact counting formula and presents them as negative experiments, not impossibility theorems."
+        ],
+        "inference": [
+          "Changing the level list alters smooth density without overcoming the smooth-superposition bottleneck."
+        ],
+        "unsupported_or_imported": [
+          "The candidate's claim that the mechanism specifically motivates a move to coupling structure imports the nature of the next generalization; this span says only that a further generalization follows."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The modified Gamma formula is extraction-sensitive, but the two failures and their common smoothness mechanism are explicit."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the concrete negative routes and arctangent-smoothness obstruction, but end with the source's nonspecific motivation for further generalization rather than naming the later coupling construction."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Useful guardrail against promoting one-particle exact solvability into a broader result.",
+      "line_end": 1776,
+      "line_start": 1760,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: the limitation is stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Limits the exact correspondence: multiple rapidities obstruct a direct many-body I→RD map, and level-dependent boundary couplings suggest a more complicated transfer-matrix structure rather than an established integrable theory.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Statewise solvability does not automatically extend to many-body integrability",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_depth_u26.txt",
+      "unit_bytes": 1039,
+      "unit_id": "openalex_w2015511182_depth_u26",
+      "unit_sha256": "c3784e2f66f8ef671fa66e6a19175fa206c30f588f0318ba8280aa04a8845126",
+      "unit_type": "open-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_depth_u26.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1752,
+          "line_end": 1759,
+          "text": "problem is a possible strategy to find the correct choice of the discrete couplings gn leading\nto the precise location of the Riemann zeros.\n   On more general grounds, let us recall that one of the motivations to consider the Hamil-\ntonian xp was the breaking of time reversal symmetry, which should be related to the GUE\nstatistics of the zeros. This Hamiltonian gives an accurate semiclassical description of them\nbut not of their fluctuations. The I± models break time reversal, but they also break the\nreversal of the RG time direction. Could this additional breaking be related to the GUE\nstatistics of the zeros?\n",
+          "sha256": "c8a3e34c610532adbda4715f687d134764c58c2b59a722d940d23c38e4379ecb"
+        },
+        "after": {
+          "line_start": 1777,
+          "line_end": 1784,
+          "text": "\n\nVII.   CONCLUSIONS AND PROSPECTS\n\n\n   We have shown in this paper that the Berry and Keating Hamiltonian can be quantized\nin a consistent way on a lattice. This quantization has been achieved thanks to the relation\nof the BK Hamiltonian to two QM models which have a cyclic RG, specially the RD model\n",
+          "sha256": "fff094a7ab155fd65c223a30e78b61d26d3d49e718c8474e2a03d34da18a6158"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b8d491e6f5ecc1303c717166b9751948ab84c7cd91f173d308dd50773d9b5ec0",
+        "dossier_sha256": "341a1075160ff297a5136a9ee9cafddccb77d93e80e67155c62c5cc99eb63ae0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VI. The I± models",
+            "line_end": 1778,
+            "line_start": 1519,
+            "mathematical_role": "Introduces the two RG-stable level-dependent coupling patterns and derives their continuum partner-potential representations and open scattering/integrability questions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1776,
+          "line_start": 1760,
+          "title": "Statewise solvability does not automatically extend to many-body integrability",
+          "unit_id": "openalex_w2015511182_depth_u26",
+          "unit_type": "open-obstruction",
+          "why_material": "Limits the exact correspondence: multiple rapidities obstruct a direct many-body I→RD map, and level-dependent boundary couplings suggest a more complicated transfer-matrix structure rather than an established integrable theory."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Useful guardrail against promoting one-particle exact solvability into a broader result.",
+          "representation_dependency": "Low: the limitation is stated in prose.",
+          "unit_id": "openalex_w2015511182_depth_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1759,
+            "line_start": 1719,
+            "title": "I− supplies the opposite derivative potential and a constrained route to oscillatory scattering data",
+            "unit_id": "openalex_w2015511182_depth_u25",
+            "unit_type": "partner-model-and-prospect",
+            "why_material": "The companion construction gives V−=−(1/2)dg_D/dq with reversed boundary placement. The source then proposes, without claiming success, that scattering from these potentials or discrete couplings might carry the oscillatory count and perhaps connect RG-time asymmetry to GUE behavior."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Threshold-state correspondence and discrete recursion make the one-particle inverse model exactly solvable, but the mechanism relies on a single spectral parameter and does not directly survive multiple rapidities.",
+            "limit": "Many-body integrability of I or I± remains an open question rather than an inherited consequence of RD integrability.",
+            "parent_local_unit_ids": [
+              "openalex_w2015511182_depth_u09",
+              "openalex_w2015511182_depth_u16",
+              "openalex_w2015511182_depth_u26"
+            ],
+            "title": "Exact one-particle structure carries an explicit many-body boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1781,
+              "line_start": 1777,
+              "reason": "Conclusion section transition and heading."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_depth_u26",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_depth_u26",
+          "spontaneous_reading": "The I→RD solution mechanism does not automatically scale from a state described by one spectral parameter to a many-body state with several rapidities. Level-dependent couplings therefore point not to inherited integrability but to a hypothetical transfer matrix with multiple boundary operators."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_depth_u26",
+          "source_grounded_mathematics": "The source states that the RD model, including its many-body version, is Bethe-solvable and integrable, and that the I→RD map solved the I model and regularized BK model. It says several rapidity variables obstruct an evident many-body extension of that map. The I± quantum-mechanical models are called renormalizable and exactly solvable, with a more complex Bethe analogue. In RD, g_D parameterizes a boundary operator of an inhomogeneous vertex-model transfer matrix; the family g_{D,n} suggests that an I± transfer matrix, if one exists, would use more than one boundary operator.",
+          "conceptual_reading": "Exact solvability transported through a correspondence is conditional on the representation used by that correspondence. Replacing a single spectral parameter by several rapidities changes the interface enough that many-body integrability cannot simply be inherited. The boundary-operator viewpoint makes the obstruction concrete: one boundary coupling becomes a level-dependent family requiring additional structure.",
+          "representation_or_bridge": "The I→RD map is the established bridge for the solved model, but no many-body version is given. A transfer matrix recodes the RD coupling as boundary data; extending that representation to several g_{D,n} suggests a possible intermediate object with multiple boundary operators and associated conserved quantities. Both that object and its commuting structure remain unconstructed.",
+          "boundary_or_failure": "The span provides no many-body I→RD map, transfer matrix for I or I±, Bethe equations for the many-body case, or infinite family of conserved quantities. Exact solvability of the stated quantum-mechanical I± models therefore does not establish their many-body integrability. The phrase ‘if it exists’ explicitly marks the proposed transfer matrix as conjectural.",
+          "uncertainty": "The obstruction is clear in prose. The narrow span does not elaborate the scope of the I± exact-solvability claim or the complex Bethe analogue, so it should not be extended to a many-body result. The multiple-boundary transfer-matrix picture is a source-stated suggestion, not a construction."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_depth_u26",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states that many-body RD is Bethe-solvable and integrable, that the I-to-RD map solved I and the regularized BK model, and that several rapidities make a many-body extension of that map non-obvious.",
+          "It carefully limits renormalizability and exact solvability to the quantum-mechanical I+/- models and says only that their Bethe analogue is more complex.",
+          "It explicitly makes the transfer matrix conjectural: g_D parameterizes one RD boundary operator, while several g_D,n merely suggest that a corresponding transfer matrix, if it exists, has more than one boundary operator.",
+          "The candidate correctly refuses to infer a many-body map, transfer matrix, Bethe system, conserved-quantity family, or many-body integrability result."
+        ],
+        "inference": [
+          "The general lesson that solvability transported through a correspondence need not survive a changed representation is a grounded abstraction of the stated many-rapidity obstruction.",
+          "Treating the level-dependent coupling family as requiring additional boundary structure is a restrained restatement of the source's multiple-boundary-operator suggestion."
+        ],
+        "unsupported_or_imported": [
+          "The candidate repeatedly characterizes the solved side as a state with a single spectral parameter; this contrast is plausible but the frozen span states only that the many-body case has several rapidity variables.",
+          "The proposed transfer matrix is said to have 'associated conserved quantities' and an unconstructed 'commuting structure'; neither consequence is stated in the span, which supplies only the multiple-boundary-operator suggestion and the conditional phrase 'if it exists'."
+        ],
+        "paraphrase_or_style_risk": [
+          "The representation-interface language is useful only while anchored to the concrete rapidity and boundary-operator obstruction; by itself it would be a generic transfer template."
+        ],
+        "context_or_ocr_risk": [
+          "The prose is clear despite line-break hyphenation and a page marker; no formula reconstruction is needed.",
+          "The narrow span does not specify the detailed I+/- Bethe analogue, so it cannot support extrapolation from quantum-mechanical exact solvability to a many-body construction."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace every single-spectral-parameter claim with the source-bounded statement that several rapidities make the many-body I-to-RD extension non-obvious.",
+          "Remove 'associated conserved quantities' and 'commuting structure' from the hypothetical transfer-matrix discussion; retain only the conditional suggestion of more than one boundary operator.",
+          "Preserve the distinction between exact solvability of the quantum-mechanical I+/- models and the unresolved many-body integrability question."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "f06c21f11d29dcd74cfbd8a2c63ddfe744343c136a62ca6ba7de375750fd225a"
+}

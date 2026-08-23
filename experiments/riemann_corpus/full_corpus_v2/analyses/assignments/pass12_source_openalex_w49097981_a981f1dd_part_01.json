@@ -1,0 +1,887 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w49097981_a981f1dd_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w49097981",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 44-55 supply Eq. (1.1), the alternating-series starting representation; lines 102-107 give the residue evaluation selected by this design.",
+      "line_end": 101,
+      "line_start": 61,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent: the powers of x and n, the x^4+n^2 denominator, and the complex-parameter range in Eqs. (2.1)-(2.3) must be checked against the scan before formula-exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source makes kernel choice a two-constraint design problem: residues must reproduce the n-dependent power in the alternating zeta term, while the resulting rational function of n must still have a usable series sum. It explicitly rejects the x^2+n route as awkward for the later summation and selects x^4+n^2.",
+      "source_id": "openalex_w49097981",
+      "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Choose a residue kernel that exposes the series index in a summable form",
+      "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u01_953b17ffd3a5.txt",
+      "unit_bytes": 2939,
+      "unit_id": "openalex_w49097981_v2_u01",
+      "unit_sha256": "953b17ffd3a5e3bd419efd246ed8987588d9c17cd75b8f381f4a4bd4c40c7a19",
+      "unit_type": "representation-design heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u01_953b17ffd3a5.txt",
+      "source": {
+        "source_id": "openalex_w49097981",
+        "title": "A new integral representation for the Riemann Zeta function",
+        "authors": [
+          "Sandeep Tyagi",
+          "Christian Holm"
+        ],
+        "year": 2007,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 53,
+          "line_end": 60,
+          "text": "lies at s = 1. The ζ (s) has a number of integral representations; a comprehensive list can\nbe obtained from the mathworld website2 . Our aim in this paper is to derive a new integral\nrepresentation and obtain new functional identity using it.\n\n\nII.     A NEW REPRESENTATION\n\n\n",
+          "sha256": "dee002cb90865c04b16f5c73acb04a2981a4b751fbd98feb86ac99c98878d560"
+        },
+        "after": {
+          "line_start": 102,
+          "line_end": 109,
+          "text": "The integral can be performed to yield\n       Z +∞ 2 −2ib\n             xx           π n−ib     \u0010π            \u0011\n              4    2\n                     dx =   √    csc    (1/2 + ib)                − 3/2 < Im [b] < 1/2.             (2.3)\n        −∞ x + n          2 n         2\nCombining Eq. (2.1) and (2.3) we obtain\n\n",
+          "sha256": "7556b59cbdfae94d5ff5ba75c8fd3e1fb65fcd087192e10d6cd668b9a6e54d80"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2823b38d2c56e1bbfe1d2c25003833b8c7aec821e0ca0bc3dc34abbc80835cb4",
+        "dossier_sha256": "0e97d1e88b99b570e80f8f2ed53ec2181dce404eb0bca2ee146fce0636c85a18",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. A New Representation",
+            "line_end": 200,
+            "line_start": 58,
+            "mathematical_role": "Constructs the residue kernel, performs the summable series transformation, extends the parameter domain, compares other integral forms, and records an alternative residue view."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 101,
+          "line_start": 61,
+          "title": "Choose a residue kernel that exposes the series index in a summable form",
+          "unit_id": "openalex_w49097981_v2_u01",
+          "unit_type": "representation-design heuristic",
+          "why_material": "The source makes kernel choice a two-constraint design problem: residues must reproduce the n-dependent power in the alternating zeta term, while the resulting rational function of n must still have a usable series sum. It explicitly rejects the x^2+n route as awkward for the later summation and selects x^4+n^2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 44-55 supply Eq. (1.1), the alternating-series starting representation; lines 102-107 give the residue evaluation selected by this design.",
+          "representation_dependency": "Formula-dependent: the powers of x and n, the x^4+n^2 denominator, and the complex-parameter range in Eqs. (2.1)-(2.3) must be checked against the scan before formula-exact reuse.",
+          "unit_id": "openalex_w49097981_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 136,
+            "line_start": 102,
+            "title": "Evaluate the kernel and interchange summation with integration",
+            "unit_id": "openalex_w49097981_v2_u02",
+            "unit_type": "integral-series transformation",
+            "why_material": "The evaluated residue integral replaces each alternating-series term by an integral, after which the source interchanges sum and integral and applies a closed alternating rational-series formula to produce Eq. (2.6). This is the operational bridge from the engineered kernel to the new integral representation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within this source, a kernel is chosen first for residue behavior and series summability, then reparametrized across a strip, and finally expanded into moments that generate a Gamma-weighted shifted-zeta relation.",
+            "limit": "This is a source-internal mechanism chain; convergence justifications are terse and formula-exact claims remain conditional on scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u02",
+              "openalex_w49097981_v2_u03",
+              "openalex_w49097981_v2_u06",
+              "openalex_w49097981_v2_u07"
+            ],
+            "title": "Kernel engineering to shifted-zeta identity"
+          },
+          {
+            "claim": "The source first uses residues to manufacture each alternating-series term and later interprets the final sinh kernel through its alternating pole lattice and removal of the origin pole.",
+            "limit": "Only the first route receives a displayed calculation; the second is a three-line heuristic with no contour argument.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u02",
+              "openalex_w49097981_v2_u05"
+            ],
+            "title": "Two residue-theorem views of the same representation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 57,
+              "line_start": 37,
+              "reason": "The defining and alternating-series formulas, pole statement, and aim provide the explicit launch context for the carried and v2 derivations."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 76-101 explain why this kernel was chosen; lines 141-170 interpret symmetry and the domain of the resulting integral.",
+      "line_end": 136,
+      "line_start": 102,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent: Eq. (2.3), prefactors in Eq. (2.4), the summation identity Eq. (2.5), and the integrand in Eq. (2.6) have fragile two-dimensional text layout and require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The evaluated residue integral replaces each alternating-series term by an integral, after which the source interchanges sum and integral and applies a closed alternating rational-series formula to produce Eq. (2.6). This is the operational bridge from the engineered kernel to the new integral representation.",
+      "source_id": "openalex_w49097981",
+      "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Evaluate the kernel and interchange summation with integration",
+      "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u02.txt",
+      "unit_bytes": 1918,
+      "unit_id": "openalex_w49097981_v2_u02",
+      "unit_sha256": "f8fa31ab594a35a1188c628e4685c0c4e27aa5c1135ed402a12ae37c99c50002",
+      "unit_type": "integral-series transformation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w49097981",
+        "title": "A new integral representation for the Riemann Zeta function",
+        "authors": [
+          "Sandeep Tyagi",
+          "Christian Holm"
+        ],
+        "year": 2007,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 94,
+          "line_end": 101,
+          "text": "                                                                     √\nThis integral has been chosen such that when x2 is substituted by n, then the x2 in the\nnumerator will be cancelled by a term arising in the denominator and the x−2ib would give\n                                √\nrise to n−ib . Finally a term of n would arise as a result of the other residue. The integral\nin Eq. (2.3) can be easily evaluated using the complex residue theorem by choosing an\nappropriate contour. Even though we have assumed b to be real when writing the integral in\nEq. (2.3), it turns out that the integral is defined for all b in the range of −3/2 < Im [b] < 1/2.\n",
+          "sha256": "c0fd8fddf3395bc181495b65e8af8fe159465418182c2ba9506118e6e8c73cf1"
+        },
+        "after": {
+          "line_start": 137,
+          "line_end": 144,
+          "text": "                                                 3\n\n<!-- source-page: 4 -->\n\nNote that the integral is symmetrical and for this reason we have written\n                                Z +∞            Z +∞\n                                      ...dx = 2       ...dx.\n                                           −∞                0\n",
+          "sha256": "886252d767a41927b91a9966cf51e7e966c90d092439c5567f6488180e18ecc4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2823b38d2c56e1bbfe1d2c25003833b8c7aec821e0ca0bc3dc34abbc80835cb4",
+        "dossier_sha256": "0e97d1e88b99b570e80f8f2ed53ec2181dce404eb0bca2ee146fce0636c85a18",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. A New Representation",
+            "line_end": 200,
+            "line_start": 58,
+            "mathematical_role": "Constructs the residue kernel, performs the summable series transformation, extends the parameter domain, compares other integral forms, and records an alternative residue view."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 136,
+          "line_start": 102,
+          "title": "Evaluate the kernel and interchange summation with integration",
+          "unit_id": "openalex_w49097981_v2_u02",
+          "unit_type": "integral-series transformation",
+          "why_material": "The evaluated residue integral replaces each alternating-series term by an integral, after which the source interchanges sum and integral and applies a closed alternating rational-series formula to produce Eq. (2.6). This is the operational bridge from the engineered kernel to the new integral representation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 76-101 explain why this kernel was chosen; lines 141-170 interpret symmetry and the domain of the resulting integral.",
+          "representation_dependency": "Strongly formula-dependent: Eq. (2.3), prefactors in Eq. (2.4), the summation identity Eq. (2.5), and the integrand in Eq. (2.6) have fragile two-dimensional text layout and require scan verification.",
+          "unit_id": "openalex_w49097981_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 101,
+            "line_start": 61,
+            "title": "Choose a residue kernel that exposes the series index in a summable form",
+            "unit_id": "openalex_w49097981_v2_u01",
+            "unit_type": "representation-design heuristic",
+            "why_material": "The source makes kernel choice a two-constraint design problem: residues must reproduce the n-dependent power in the alternating zeta term, while the resulting rational function of n must still have a usable series sum. It explicitly rejects the x^2+n route as awkward for the later summation and selects x^4+n^2."
+          },
+          {
+            "line_end": 170,
+            "line_start": 130,
+            "title": "Complexify b to turn the critical-line parametrization into a strip representation",
+            "unit_id": "openalex_w49097981_v2_u03",
+            "unit_type": "parameter reinterpretation and domain extension",
+            "why_material": "Starting from Eq. (2.6), the source uses evenness to restrict the integral to the positive half-line and writes b=b'+iq so that s=1/2+ib has real part 1/2-q. This reframes the initial line parametrization as a representation on 0<Re(s)<2, with an explicit caveat at the pole s=1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within this source, a kernel is chosen first for residue behavior and series summability, then reparametrized across a strip, and finally expanded into moments that generate a Gamma-weighted shifted-zeta relation.",
+            "limit": "This is a source-internal mechanism chain; convergence justifications are terse and formula-exact claims remain conditional on scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u02",
+              "openalex_w49097981_v2_u03",
+              "openalex_w49097981_v2_u06",
+              "openalex_w49097981_v2_u07"
+            ],
+            "title": "Kernel engineering to shifted-zeta identity"
+          },
+          {
+            "claim": "The source first uses residues to manufacture each alternating-series term and later interprets the final sinh kernel through its alternating pole lattice and removal of the origin pole.",
+            "limit": "Only the first route receives a displayed calculation; the second is a three-line heuristic with no contour argument.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u02",
+              "openalex_w49097981_v2_u05"
+            ],
+            "title": "Two residue-theorem views of the same representation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The overlap at lines 130-136 retains the actual integral being reparametrized; line 170 is necessary to complete the pole-domain caveat split by the prior v1 endpoint.",
+      "line_end": 170,
+      "line_start": 130,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent: the b-domain, substitution s=1/2+ib, changes of variables, strip bounds, and Eqs. (2.6)-(2.8) require scan verification because superscripts and denominators are layout-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starting from Eq. (2.6), the source uses evenness to restrict the integral to the positive half-line and writes b=b'+iq so that s=1/2+ib has real part 1/2-q. This reframes the initial line parametrization as a representation on 0<Re(s)<2, with an explicit caveat at the pole s=1.",
+      "source_id": "openalex_w49097981",
+      "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Complexify b to turn the critical-line parametrization into a strip representation",
+      "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u03.txt",
+      "unit_bytes": 2084,
+      "unit_id": "openalex_w49097981_v2_u03",
+      "unit_sha256": "653bbad06c1b59304fb50a03c4420b2615b09e8eefe0545b87ffa3b8c0d1da14",
+      "unit_type": "parameter reinterpretation and domain extension",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w49097981",
+        "title": "A new integral representation for the Riemann Zeta function",
+        "authors": [
+          "Sandeep Tyagi",
+          "Christian Holm"
+        ],
+        "year": 2007,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 122,
+          "line_end": 129,
+          "text": "                                   (−1)n\n                                 ∞\n                                 X               πx2 csc (πx2 ) − 1\n                                      4 + n2\n                                             =                      ,                               (2.5)\n                                 n=1\n                                     x                  2x4\n\n",
+          "sha256": "4c46e13c6f02a6514974e5a7dfdcfe43aebc686310654645872ee245a018ec18"
+        },
+        "after": {
+          "line_start": 171,
+          "line_end": 178,
+          "text": "   There are two formulas in the literature that resemble our formula in Eq. (2.8). The first\none is\n\n                      2s−1\n                                  Z ∞\n                                            exp (−y)\n         ζ (s) =       1−s\n                                      y s−1          dy                    Re [s] > 0          (2.9)\n",
+          "sha256": "91e898f8cbc35e882a17c872b3f6f978319c425fa2b2d5cbceb736efc9d5b2f7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2823b38d2c56e1bbfe1d2c25003833b8c7aec821e0ca0bc3dc34abbc80835cb4",
+        "dossier_sha256": "0e97d1e88b99b570e80f8f2ed53ec2181dce404eb0bca2ee146fce0636c85a18",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. A New Representation",
+            "line_end": 200,
+            "line_start": 58,
+            "mathematical_role": "Constructs the residue kernel, performs the summable series transformation, extends the parameter domain, compares other integral forms, and records an alternative residue view."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 170,
+          "line_start": 130,
+          "title": "Complexify b to turn the critical-line parametrization into a strip representation",
+          "unit_id": "openalex_w49097981_v2_u03",
+          "unit_type": "parameter reinterpretation and domain extension",
+          "why_material": "Starting from Eq. (2.6), the source uses evenness to restrict the integral to the positive half-line and writes b=b'+iq so that s=1/2+ib has real part 1/2-q. This reframes the initial line parametrization as a representation on 0<Re(s)<2, with an explicit caveat at the pole s=1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The overlap at lines 130-136 retains the actual integral being reparametrized; line 170 is necessary to complete the pole-domain caveat split by the prior v1 endpoint.",
+          "representation_dependency": "Formula-dependent: the b-domain, substitution s=1/2+ib, changes of variables, strip bounds, and Eqs. (2.6)-(2.8) require scan verification because superscripts and denominators are layout-sensitive.",
+          "unit_id": "openalex_w49097981_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 136,
+            "line_start": 102,
+            "title": "Evaluate the kernel and interchange summation with integration",
+            "unit_id": "openalex_w49097981_v2_u02",
+            "unit_type": "integral-series transformation",
+            "why_material": "The evaluated residue integral replaces each alternating-series term by an integral, after which the source interchanges sum and integral and applies a closed alternating rational-series formula to produce Eq. (2.6). This is the operational bridge from the engineered kernel to the new integral representation."
+          },
+          {
+            "line_end": 190,
+            "line_start": 171,
+            "title": "Place the new hyperbolic-kernel integral beside two related zeta representations",
+            "unit_id": "openalex_w49097981_v2_u04",
+            "unit_type": "method comparison",
+            "why_material": "The source compares Eq. (2.8) with one cosh or Fermi-type integral and a Ramanujan integral involving the logarithmic derivative of Gamma, making the choice of kernel and stated domains directly comparable rather than presenting the new formula in isolation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within this source, a kernel is chosen first for residue behavior and series summability, then reparametrized across a strip, and finally expanded into moments that generate a Gamma-weighted shifted-zeta relation.",
+            "limit": "This is a source-internal mechanism chain; convergence justifications are terse and formula-exact claims remain conditional on scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u02",
+              "openalex_w49097981_v2_u03",
+              "openalex_w49097981_v2_u06",
+              "openalex_w49097981_v2_u07"
+            ],
+            "title": "Kernel engineering to shifted-zeta identity"
+          },
+          {
+            "claim": "The source places its 1/y-1/sinh(y) kernel beside other hyperbolic and Gamma-based zeta integrals, then exploits the same sinh structure by a power-series expansion to obtain shifted zeta values.",
+            "limit": "The neighboring formulas are presented as resembling the new one, not proved equivalent to it.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u03",
+              "openalex_w49097981_v2_u04",
+              "openalex_w49097981_v2_u06"
+            ],
+            "title": "Hyperbolic-kernel comparison and transformation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Eq. (2.8), the comparison target, appears at lines 161-170; the source gives formulas and domains but no detailed equivalence derivation.",
+      "line_end": 190,
+      "line_start": 171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent: Eqs. (2.9)-(2.11), especially powers, Gamma factors, and stated domains, should be verified from the scan before exact mathematical use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source compares Eq. (2.8) with one cosh or Fermi-type integral and a Ramanujan integral involving the logarithmic derivative of Gamma, making the choice of kernel and stated domains directly comparable rather than presenting the new formula in isolation.",
+      "source_id": "openalex_w49097981",
+      "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Place the new hyperbolic-kernel integral beside two related zeta representations",
+      "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u04.txt",
+      "unit_bytes": 1077,
+      "unit_id": "openalex_w49097981_v2_u04",
+      "unit_sha256": "796939299a26f4e15509cf749c9b6edbcba9a6e9c74c48e406a164114aa3805b",
+      "unit_type": "method comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w49097981",
+        "title": "A new integral representation for the Riemann Zeta function",
+        "authors": [
+          "Sandeep Tyagi",
+          "Christian Holm"
+        ],
+        "year": 2007,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 163,
+          "line_end": 170,
+          "text": "               π s−1        \u0010 πs \u0011 Z ∞      \u0012            \u0013\n                                         −s   1    1\n    ζ (s) =             sin            y        −          dy              0 < Re [s] < 2.     (2.8)\n            (1 − 21−s )       2     0         y sinh (y)\n\nNote that Eqs. (2.7) and (2.8) are valid for 0 < Re [s] < 2. However, the Riemann zeta\nfunction has a simple pole on s = 1. Thus, these equations make sense only when Im[s] 6= 0\nfor Re[s] = 1.\n",
+          "sha256": "dbd773be6526a3c3493b1f4fe13fd9f1d361ec6894b1a5c1185d187a9796a7c7"
+        },
+        "after": {
+          "line_start": 191,
+          "line_end": 198,
+          "text": "\n   There is another way to view 2.8. The sinh(y) in denominstor will lead to poles at integers\nwith residues (−1)n . The presence of 1/y is basically to remove the pole at n = 0. Thus 2.8\ncan be derived using residue theorem as well.\n\n\n                                                       4\n\n",
+          "sha256": "dfb971e503788d4224758d3d17596af7e4d10250d2974682f08fb70049f82d7f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2823b38d2c56e1bbfe1d2c25003833b8c7aec821e0ca0bc3dc34abbc80835cb4",
+        "dossier_sha256": "0e97d1e88b99b570e80f8f2ed53ec2181dce404eb0bca2ee146fce0636c85a18",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. A New Representation",
+            "line_end": 200,
+            "line_start": 58,
+            "mathematical_role": "Constructs the residue kernel, performs the summable series transformation, extends the parameter domain, compares other integral forms, and records an alternative residue view."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 190,
+          "line_start": 171,
+          "title": "Place the new hyperbolic-kernel integral beside two related zeta representations",
+          "unit_id": "openalex_w49097981_v2_u04",
+          "unit_type": "method comparison",
+          "why_material": "The source compares Eq. (2.8) with one cosh or Fermi-type integral and a Ramanujan integral involving the logarithmic derivative of Gamma, making the choice of kernel and stated domains directly comparable rather than presenting the new formula in isolation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Eq. (2.8), the comparison target, appears at lines 161-170; the source gives formulas and domains but no detailed equivalence derivation.",
+          "representation_dependency": "Formula-dependent: Eqs. (2.9)-(2.11), especially powers, Gamma factors, and stated domains, should be verified from the scan before exact mathematical use.",
+          "unit_id": "openalex_w49097981_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 170,
+            "line_start": 130,
+            "title": "Complexify b to turn the critical-line parametrization into a strip representation",
+            "unit_id": "openalex_w49097981_v2_u03",
+            "unit_type": "parameter reinterpretation and domain extension",
+            "why_material": "Starting from Eq. (2.6), the source uses evenness to restrict the integral to the positive half-line and writes b=b'+iq so that s=1/2+ib has real part 1/2-q. This reframes the initial line parametrization as a representation on 0<Re(s)<2, with an explicit caveat at the pole s=1."
+          },
+          {
+            "line_end": 194,
+            "line_start": 192,
+            "title": "Read the sinh kernel as an alternating pole lattice with the origin removed",
+            "unit_id": "openalex_w49097981_v2_u05",
+            "unit_type": "alternative residue interpretation",
+            "why_material": "The source supplies a second conceptual derivation route: poles of the sinh denominator at integers carry alternating residues, while the 1/y term removes the pole at the origin. This exposes the structural role of the subtraction in Eq. (2.8)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source places its 1/y-1/sinh(y) kernel beside other hyperbolic and Gamma-based zeta integrals, then exploits the same sinh structure by a power-series expansion to obtain shifted zeta values.",
+            "limit": "The neighboring formulas are presented as resembling the new one, not proved equivalent to it.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u03",
+              "openalex_w49097981_v2_u04",
+              "openalex_w49097981_v2_u06"
+            ],
+            "title": "Hyperbolic-kernel comparison and transformation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a brief heuristic tied to Eq. (2.8) at lines 163-166; the source does not provide the contour or residue computation.",
+      "line_end": 194,
+      "line_start": 192,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose-grounded but notation-dependent: the alternating residue sign and the exact role of 1/y should be scan-checked; the source only sketches, rather than proves, this route.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source supplies a second conceptual derivation route: poles of the sinh denominator at integers carry alternating residues, while the 1/y term removes the pole at the origin. This exposes the structural role of the subtraction in Eq. (2.8).",
+      "source_id": "openalex_w49097981",
+      "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Read the sinh kernel as an alternating pole lattice with the origin removed",
+      "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u05.txt",
+      "unit_bytes": 236,
+      "unit_id": "openalex_w49097981_v2_u05",
+      "unit_sha256": "f97f7be5ed7fe1c42eabaf686d8cae0af83f66b63117e332ef38160e0f556e11",
+      "unit_type": "alternative residue interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w49097981",
+        "title": "A new integral representation for the Riemann Zeta function",
+        "authors": [
+          "Sandeep Tyagi",
+          "Christian Holm"
+        ],
+        "year": 2007,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 184,
+          "line_end": 191,
+          "text": "\nwhere Γ stands for the Gamma function. The second formula is due to Ramanujan1 and it\nis given by\n                                 Z ∞            \u0012                 \u0013\n                      sin (πs)             −s              Γ′ (y)\n              ζ (s) =                  y         log (y) −          dy   0 ≤ Re [s] < 1.      (2.11)\n                          π      0                         Γ (y)\n\n",
+          "sha256": "69325986f0b3b588497538623f85345a8b4c7bf7060fd2366bdabf873a04869f"
+        },
+        "after": {
+          "line_start": 195,
+          "line_end": 202,
+          "text": "\n\n                                                       4\n\n<!-- source-page: 5 -->\n\nIII.   NEW FUNCTIONAL IDENTITY\n\n",
+          "sha256": "9399acaa55b23579ca5e3a63a5a3a207ef0b3395a413e67b8c492b894ea7c2e5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2823b38d2c56e1bbfe1d2c25003833b8c7aec821e0ca0bc3dc34abbc80835cb4",
+        "dossier_sha256": "0e97d1e88b99b570e80f8f2ed53ec2181dce404eb0bca2ee146fce0636c85a18",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. A New Representation",
+            "line_end": 200,
+            "line_start": 58,
+            "mathematical_role": "Constructs the residue kernel, performs the summable series transformation, extends the parameter domain, compares other integral forms, and records an alternative residue view."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 194,
+          "line_start": 192,
+          "title": "Read the sinh kernel as an alternating pole lattice with the origin removed",
+          "unit_id": "openalex_w49097981_v2_u05",
+          "unit_type": "alternative residue interpretation",
+          "why_material": "The source supplies a second conceptual derivation route: poles of the sinh denominator at integers carry alternating residues, while the 1/y term removes the pole at the origin. This exposes the structural role of the subtraction in Eq. (2.8)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a brief heuristic tied to Eq. (2.8) at lines 163-166; the source does not provide the contour or residue computation.",
+          "representation_dependency": "Mostly prose-grounded but notation-dependent: the alternating residue sign and the exact role of 1/y should be scan-checked; the source only sketches, rather than proves, this route.",
+          "unit_id": "openalex_w49097981_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 190,
+            "line_start": 171,
+            "title": "Place the new hyperbolic-kernel integral beside two related zeta representations",
+            "unit_id": "openalex_w49097981_v2_u04",
+            "unit_type": "method comparison",
+            "why_material": "The source compares Eq. (2.8) with one cosh or Fermi-type integral and a Ramanujan integral involving the logarithmic derivative of Gamma, making the choice of kernel and stated domains directly comparable rather than presenting the new formula in isolation."
+          },
+          {
+            "line_end": 241,
+            "line_start": 204,
+            "title": "Expand sinh(y)-y and convert its moments into shifted zeta values",
+            "unit_id": "openalex_w49097981_v2_u06",
+            "unit_type": "functional-identity derivation",
+            "why_material": "The source rewrites the Eq. (2.8) kernel using the odd-power expansion of sinh(y)-y, exchanges the resulting sum with an integral, and applies a hyperbolic-sine moment formula. The result is a Gamma-weighted series of shifted zeta values in Eq. (3.5)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source first uses residues to manufacture each alternating-series term and later interprets the final sinh kernel through its alternating pole lattice and removal of the origin pole.",
+            "limit": "Only the first route receives a displayed calculation; the second is a three-line heuristic with no contour argument.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u02",
+              "openalex_w49097981_v2_u05"
+            ],
+            "title": "Two residue-theorem views of the same representation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The input representation Eq. (2.8) is at lines 161-170 and is therefore declared as needed context for the carried v1 identity unit; lines 243-268 continue by analytically extracting part of this series.",
+      "line_end": 241,
+      "line_start": 204,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent: the conventional functional equation, moment identity, series indices, factorials, powers, and Eq. (3.5) must be verified against the scan before formula-exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source rewrites the Eq. (2.8) kernel using the odd-power expansion of sinh(y)-y, exchanges the resulting sum with an integral, and applies a hyperbolic-sine moment formula. The result is a Gamma-weighted series of shifted zeta values in Eq. (3.5).",
+      "source_id": "openalex_w49097981",
+      "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expand sinh(y)-y and convert its moments into shifted zeta values",
+      "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u06.txt",
+      "unit_bytes": 2352,
+      "unit_id": "openalex_w49097981_v2_u06",
+      "unit_sha256": "44f967d07ed462eed402bf7a14a32e2ccd1bdc4c1790c67fee581c5395a7405f",
+      "unit_type": "functional-identity derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w49097981",
+        "title": "A new integral representation for the Riemann Zeta function",
+        "authors": [
+          "Sandeep Tyagi",
+          "Christian Holm"
+        ],
+        "year": 2007,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 196,
+          "line_end": 203,
+          "text": "\n                                                       4\n\n<!-- source-page: 5 -->\n\nIII.   NEW FUNCTIONAL IDENTITY\n\n\n",
+          "sha256": "b8e7e920270e14a56461fb68a5b83454c265978b9b23e9fd477c683fbf522034"
+        },
+        "after": {
+          "line_start": 242,
+          "line_end": 249,
+          "text": "\nA part of the series in Eq. (3.5) can be summed up analytically:\n                ∞\n                X (2 − 2−2n+s )\n                                  Γ (2n − s + 1) = [−1 + 3s + s (2s − 2)] Γ (−s)\n                n=1\n                      (2n + 1)!\n                                                       √        Γ (1 − s) Γ (s)\n",
+          "sha256": "4b7fc1bcb0fe99d113a330cee33319b89458bc2e9b47a7f28c18a3b2f0d83476"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2823b38d2c56e1bbfe1d2c25003833b8c7aec821e0ca0bc3dc34abbc80835cb4",
+        "dossier_sha256": "0e97d1e88b99b570e80f8f2ed53ec2181dce404eb0bca2ee146fce0636c85a18",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III. New Functional Identity",
+            "line_end": 273,
+            "line_start": 201,
+            "mathematical_role": "Combines a hyperbolic-sine expansion with a zeta integral moment and an analytically summed component to derive shifted-zeta identities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 241,
+          "line_start": 204,
+          "title": "Expand sinh(y)-y and convert its moments into shifted zeta values",
+          "unit_id": "openalex_w49097981_v2_u06",
+          "unit_type": "functional-identity derivation",
+          "why_material": "The source rewrites the Eq. (2.8) kernel using the odd-power expansion of sinh(y)-y, exchanges the resulting sum with an integral, and applies a hyperbolic-sine moment formula. The result is a Gamma-weighted series of shifted zeta values in Eq. (3.5)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The input representation Eq. (2.8) is at lines 161-170 and is therefore declared as needed context for the carried v1 identity unit; lines 243-268 continue by analytically extracting part of this series.",
+          "representation_dependency": "Strongly formula-dependent: the conventional functional equation, moment identity, series indices, factorials, powers, and Eq. (3.5) must be verified against the scan before formula-exact reuse.",
+          "unit_id": "openalex_w49097981_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 194,
+            "line_start": 192,
+            "title": "Read the sinh kernel as an alternating pole lattice with the origin removed",
+            "unit_id": "openalex_w49097981_v2_u05",
+            "unit_type": "alternative residue interpretation",
+            "why_material": "The source supplies a second conceptual derivation route: poles of the sinh denominator at integers carry alternating residues, while the 1/y term removes the pole at the origin. This exposes the structural role of the subtraction in Eq. (2.8)."
+          },
+          {
+            "line_end": 268,
+            "line_start": 236,
+            "title": "Sum the zeta-free component and isolate a shifted zeta-minus-one tail",
+            "unit_id": "openalex_w49097981_v2_u07",
+            "unit_type": "series decomposition and functional identity",
+            "why_material": "The source separates the series in Eq. (3.5) into a component that can be summed analytically and a remainder containing zeta(2n-s+1)-1, yielding the claimed functional relation Eq. (3.7). This is a reusable decomposition move that distinguishes a closed Gamma contribution from the residual shifted-zeta series."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within this source, a kernel is chosen first for residue behavior and series summability, then reparametrized across a strip, and finally expanded into moments that generate a Gamma-weighted shifted-zeta relation.",
+            "limit": "This is a source-internal mechanism chain; convergence justifications are terse and formula-exact claims remain conditional on scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u02",
+              "openalex_w49097981_v2_u03",
+              "openalex_w49097981_v2_u06",
+              "openalex_w49097981_v2_u07"
+            ],
+            "title": "Kernel engineering to shifted-zeta identity"
+          },
+          {
+            "claim": "The source places its 1/y-1/sinh(y) kernel beside other hyperbolic and Gamma-based zeta integrals, then exploits the same sinh structure by a power-series expansion to obtain shifted zeta values.",
+            "limit": "The neighboring formulas are presented as resembling the new one, not proved equivalent to it.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u03",
+              "openalex_w49097981_v2_u04",
+              "openalex_w49097981_v2_u06"
+            ],
+            "title": "Hyperbolic-kernel comparison and transformation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The overlap at lines 236-241 retains Eq. (3.5), whose decomposition is being performed; the source states that Eq. (3.7) appears new but supplies no independent verification of novelty.",
+      "line_end": 268,
+      "line_start": 236,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent: the closed form in Eq. (3.6) and Gamma ratios and parentheses in Eq. (3.7) are visibly fragile in the normalized text and require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source separates the series in Eq. (3.5) into a component that can be summed analytically and a remainder containing zeta(2n-s+1)-1, yielding the claimed functional relation Eq. (3.7). This is a reusable decomposition move that distinguishes a closed Gamma contribution from the residual shifted-zeta series.",
+      "source_id": "openalex_w49097981",
+      "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sum the zeta-free component and isolate a shifted zeta-minus-one tail",
+      "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u07.txt",
+      "unit_bytes": 1956,
+      "unit_id": "openalex_w49097981_v2_u07",
+      "unit_sha256": "d9c5b32154d6fe301ddcb4a972ea11d5c12f7724b2245511ff45898d05f66d7a",
+      "unit_type": "series decomposition and functional identity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w49097981",
+        "title": "A new integral representation for the Riemann Zeta function",
+        "authors": [
+          "Sandeep Tyagi",
+          "Christian Holm"
+        ],
+        "year": 2007,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 228,
+          "line_end": 235,
+          "text": "                                            ∞\n                        π s−1\n                                                          Z ∞         \u0012 (2n+1) \u0013\n                                     \u0010 πs \u0011 X       1            −s−1   y\n                  =         1−s\n                                 sin                           y                 dy.        (3.4)\n                     (1 − 2 )           2 n=1 (2n + 1)! 0              sinh (y)\n\n",
+          "sha256": "b8b2cfba67fc089b304ab3770393cc676366c062471cac6a582794137ed03ff3"
+        },
+        "after": {
+          "line_start": 269,
+          "line_end": 276,
+          "text": "\n                                               5\n\n<!-- source-page: 6 -->\n\nIV.     CONCLUSION\n\n\n",
+          "sha256": "a0e3479d4ea75435f08b98a9f0bcbb0a340452d58beb8df6941fd54771241b95"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2823b38d2c56e1bbfe1d2c25003833b8c7aec821e0ca0bc3dc34abbc80835cb4",
+        "dossier_sha256": "0e97d1e88b99b570e80f8f2ed53ec2181dce404eb0bca2ee146fce0636c85a18",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III. New Functional Identity",
+            "line_end": 273,
+            "line_start": 201,
+            "mathematical_role": "Combines a hyperbolic-sine expansion with a zeta integral moment and an analytically summed component to derive shifted-zeta identities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 268,
+          "line_start": 236,
+          "title": "Sum the zeta-free component and isolate a shifted zeta-minus-one tail",
+          "unit_id": "openalex_w49097981_v2_u07",
+          "unit_type": "series decomposition and functional identity",
+          "why_material": "The source separates the series in Eq. (3.5) into a component that can be summed analytically and a remainder containing zeta(2n-s+1)-1, yielding the claimed functional relation Eq. (3.7). This is a reusable decomposition move that distinguishes a closed Gamma contribution from the residual shifted-zeta series."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The overlap at lines 236-241 retains Eq. (3.5), whose decomposition is being performed; the source states that Eq. (3.7) appears new but supplies no independent verification of novelty.",
+          "representation_dependency": "Strongly formula-dependent: the closed form in Eq. (3.6) and Gamma ratios and parentheses in Eq. (3.7) are visibly fragile in the normalized text and require scan verification.",
+          "unit_id": "openalex_w49097981_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 241,
+            "line_start": 204,
+            "title": "Expand sinh(y)-y and convert its moments into shifted zeta values",
+            "unit_id": "openalex_w49097981_v2_u06",
+            "unit_type": "functional-identity derivation",
+            "why_material": "The source rewrites the Eq. (2.8) kernel using the odd-power expansion of sinh(y)-y, exchanges the resulting sum with an integral, and applies a hyperbolic-sine moment formula. The result is a Gamma-weighted series of shifted zeta values in Eq. (3.5)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within this source, a kernel is chosen first for residue behavior and series summability, then reparametrized across a strip, and finally expanded into moments that generate a Gamma-weighted shifted-zeta relation.",
+            "limit": "This is a source-internal mechanism chain; convergence justifications are terse and formula-exact claims remain conditional on scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u02",
+              "openalex_w49097981_v2_u03",
+              "openalex_w49097981_v2_u06",
+              "openalex_w49097981_v2_u07"
+            ],
+            "title": "Kernel engineering to shifted-zeta identity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "5f9823cab7be0e0e042ab22fe4d3b00fcc0a0e15e9ae03601750d98d55881697"
+}

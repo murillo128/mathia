@@ -1,0 +1,92 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_collared_cycle_scale_annihilation": {
+      "analysis_id": "agnostic_oa_generation_9492c63307b9ce2c1aaef3a90f5bd0247700ed710a2993dc4012acbb564b7e22",
+      "boundary_or_failure": "Dependency: annihilation is conditional on a bounded product-like collar, Euclidean ball covers, nullhomology in that collar, and a sufficiently enlarged scale. It does not say that every collar-supported cycle dies, nor that death implies nullhomology in the underlying shell.",
+      "interpretation": "Bounded collar thickness turns geometric nullhomology into a finite-scale death guarantee. The argument connects transverse geometry to topology: if a supposedly surviving cycle were already null in the shell, duality would produce an excluded point whose short transverse segment must cross covered material in an impossible way.",
+      "nonparaphrase_operation": "Localize a cycle to a controlled collar, assume it is null in the collar but survives combinatorially, factor through the nerve of enlarged balls, and use a transverse-segment contradiction to force its death after scale inflation.",
+      "source_support": "Source fact: lines 1–4 define the thickened hypersurface and its bounded fibers; lines 12–20 state that a Rips cycle null in the shell becomes null at a larger scale. Lines 22–35 route the proof through enlarged coverage, the Rips–Čech inclusions, the nerve theorem, Alexander duality, and a short segment joining the collar boundaries. Inference: collar geometry supplies a quantitative bridge from ambient nullhomology to combinatorial annihilation.",
+      "uncertainty": "The scale formula is extraction-damaged, so this analysis preserves only the controlled-enlargement relation and not its exact symbolic threshold.",
+      "unit_id": "agnostic_oa_collared_cycle_scale_annihilation"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_collared_cycle_scale_annihilation": {
+      "critic_sha256": "6935bd2f6e8abac96baaadfc2c52f9dadf144b7466d35732553387d6b188bfb0",
+      "generation_sha256": "a61354b6ee4c4296696a188df0c73d3e12378392e7b030979f01e3da216ea249"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_collared_cycle_scale_annihilation": {
+      "analysis_id": "agnostic_oa_critic_0956859df10034d5914c3d2e830df58fb6182ce1d9eaa2835d5f4bb9b613ae7c",
+      "context_risk": "The exact enlarged-scale formula is extraction-damaged, but the hypotheses, Rips–Čech factorization, duality step, and transverse-segment contradiction are legible; exact constants must remain excluded.",
+      "decision": "revise",
+      "faithfulness": "The candidate captures the core conditional result that a cycle already contained in a bounded thickened hypersurface and nullhomologous there must die in a suitably enlarged Rips complex, as well as the duality-and-transverse-segment contradiction.",
+      "missed_mechanism": "It turns containment in the collar from a stated premise into an operation to 'localize' the cycle, and it compresses the quantitative bridge: a neighborhood U of the realized cycle is shown to lie in the enlarged vertex-ball union U' before duality supplies a point outside U'.",
+      "paraphrase_risk": "Low to moderate: the geometric-nullhomology-to-finite-scale-death abstraction is substantive, but the abbreviated operation hides the premise and the two distinct covered sets that make the contradiction work.",
+      "revision_instructions": "Replace 'Localize a cycle' with 'Start with a cycle already contained in the bounded collar.' Then state that the simplex bound plus Pythagoras gives U contained in the enlarged ball union U'; assuming survival yields, via the Rips–Čech factorization, nerve theorem, and duality, a point outside U' enclosed by the cycle, while a transverse segment through that point must cross U on both sides, contradicting the collar thickness.",
+      "unit_id": "agnostic_oa_collared_cycle_scale_annihilation",
+      "unsupported_or_imported": "The only unsupported step is the claimed localization operation: this span assumes collar containment and does not derive it. The remaining qualitative mechanism is source-grounded."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_collared_cycle_scale_annihilation": "agnostic_oa_revision_2397e855dbaaa991c82566d8abad4a2bc62f75c389631c95c1080b0e4d7fc566"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "bb4d2c94eebe7c1b715be3b977d85f151d819c560bbd5679db1709514af020f5",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2153986241_0aaee4c9_part_01.jsonl",
+  "source_id": "openalex_w2153986241",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_collared_cycle_scale_annihilation.txt",
+      "artifact_bytes": 2026,
+      "artifact_relpath": "depth/units/agnostic_oa_collared_cycle_scale_annihilation.txt",
+      "artifact_sha256": "126f5174bd2a033425ecb755b961863500c7d42713b96064e7b524b04ae5ce90",
+      "content_sha256": "df48cde62cc83b4b5528fe948b0658f3c683d7e05a745f1f773eba53c7bbc690",
+      "context_note": "This is a conditional deterministic lemma. The proof uses a thickened hypersurface model and Alexander duality; the exact scale formula is extraction-damaged and should not be reused without the typeset source.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_observable_proxy_for_inaccessible_nerve",
+            "agnostic_oa_rips_cech_rips_sandwich",
+            "agnostic_oa_simplex_realization_inside_cover",
+            "agnostic_oa_collared_cycle_scale_annihilation",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the lens through nerve equivalence, controlled proxy factorization, duality, exactness, and explicit phantom-class obstructions. This isolated review does not establish a new family or a new geometry dependency relative to prior records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2153986241",
+      "line_end": 576,
+      "line_start": 541,
+      "representation_dependency": "High. The claim relies on the collar being a manifold-times-interval with bounded thickness, on Euclidean ball covers, and on the precise relation between the two scales.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2153986241 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, simulations, or other sources were used."
+      },
+      "selection_reason": "The lemma combines bounded collar thickness, a Rips-Cech factorization, the nerve theorem, and duality to show that a cycle trivial in the underlying shell becomes trivial in a larger-scale Rips complex. It is the geometric mechanism that prevents a boundary artifact from persisting indefinitely.",
+      "source_id": "openalex_w2153986241",
+      "source_normalized_sha256": "91ae04314873f004fe54387a4f54cb8944bb17b6c67f930e054ac5bdec716083",
+      "title": "A null cycle in a bounded collar dies after a controlled scale increase",
+      "unit_id": "agnostic_oa_collared_cycle_scale_annihilation",
+      "unit_type": "geometric_annihilation_lemma"
+    }
+  ]
+}

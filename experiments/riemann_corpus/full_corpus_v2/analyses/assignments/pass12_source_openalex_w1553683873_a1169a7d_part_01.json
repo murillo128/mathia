@@ -1,0 +1,1813 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1553683873_a1169a7d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1553683873",
+  "unit_count": 15,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definitions of Δ, Φ, the argument condition, and the decomposition of the intersection count; the exponent notation at line 99 is text-layer damaged but its role is fixed by lines 66-86.",
+      "line_end": 100,
+      "line_start": 56,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on complex conjugation, the functional equation, and the unit-circle representation of Δ; retain displayed equations (1)-(2) and verify exponent glyphs against the scan before formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The functional equation and unit-modulus phase factor turn the geometric condition that zeta lies on eiφR into a root condition for Φ, while separating zeta zeros from roots of a rotating phase equation; this is the paper's reusable bridge from planar value distribution to discrete sampling.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Phase roots encode intersections with any line through the origin",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u03.txt",
+      "unit_bytes": 2660,
+      "unit_id": "full_openalex_w1553683873_u03",
+      "unit_sha256": "3791dabf60ccc73ed5d3656808f133486108056ab9607b6b92b2da7f64b442ce",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u03.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 48,
+          "line_end": 55,
+          "text": "                                            Date: May 2009.\n                                                                                         1\n\n<!-- source-page: 2 -->\n\n2                            JUSTAS KALPOKAS, JÖRN STEUDING\n\n\n",
+          "sha256": "1ded468f5440489bd1384cba74a4c9574f8a188aa2f0b5d4de5192f0a428051f"
+        },
+        "after": {
+          "line_start": 101,
+          "line_end": 108,
+          "text": "to see that all roots counted by Nφ∆ are simple (see (7)). By a deep result of Conrey\n\n<!-- source-page: 3 -->\n\nVALUE-DISTRIBUTION OF THE ZETA-FUNCTION ON THE CRITICAL LINE                               3\n\n\n[2] (building on work of Levinson [14]), more than two fifths of the zeros of ζ(s) lie\n",
+          "sha256": "44fc8a4b6570bfb58b59b0d2a309a6916b88b38d27dc56e95378fa99c1f7b103"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and main results",
+            "line_end": 274,
+            "line_start": 27,
+            "mathematical_role": "Defines the phase/intersection representation, counting functions, main counting and moment theorems, directional corollaries, and an equidistribution obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 100,
+          "line_start": 56,
+          "title": "Phase roots encode intersections with any line through the origin",
+          "unit_id": "full_openalex_w1553683873_u03",
+          "unit_type": "representation change",
+          "why_material": "The functional equation and unit-modulus phase factor turn the geometric condition that zeta lies on eiφR into a root condition for Φ, while separating zeta zeros from roots of a rotating phase equation; this is the paper's reusable bridge from planar value distribution to discrete sampling."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the definitions of Δ, Φ, the argument condition, and the decomposition of the intersection count; the exponent notation at line 99 is text-layer damaged but its role is fixed by lines 66-86.",
+          "representation_dependency": "Depends on complex conjugation, the functional equation, and the unit-circle representation of Δ; retain displayed equations (1)-(2) and verify exponent glyphs against the scan before formula-level reuse.",
+          "unit_id": "full_openalex_w1553683873_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 170,
+            "line_start": 117,
+            "title": "Counting and moment laws for directional critical-line intersections",
+            "unit_id": "full_openalex_w1553683873_u01",
+            "unit_type": "value-distribution theorem",
+            "why_material": "Gives the phase-root counting asymptotic and the first two discrete moments of zeta over intersections with eiφR, including the structural contrast that the leading second moment is direction-independent while the first varies as eiφ cos φ."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A unit-modulus functional-equation factor can discretize intersections of an analytic value curve with a chosen direction, after which winding counts and logarithmic-derivative residues provide matched cardinality and sampled-value statistics.",
+            "limit": "Established here only for the stated zeta/Δ setting; shared phase structure and suitable analytic control must be rechecked for any transfer.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u03",
+              "full_openalex_w1553683873_u01",
+              "full_openalex_w1553683873_u05",
+              "full_openalex_w1553683873_u06"
+            ],
+            "title": "Phase discretization as a bridge from curve geometry to analytic sampling"
+          },
+          {
+            "claim": "Specializing the phase to the real axis makes negative intersections equivalent to failures of the normalized Gram sign rule, while the same discrete moments impose aggregate growth constraints on Hardy Z values at Gram points.",
+            "limit": "The source does not determine whether negative real intersections have unbounded magnitude, and aggregate moments do not restore pointwise Gram interlacing.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u03",
+              "full_openalex_w1553683873_u14",
+              "full_openalex_w1553683873_u15"
+            ],
+            "title": "Gram-law failure and Gram-point moments are two views of real-axis phase sampling"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 55,
+              "line_start": 27,
+              "reason": "Motivates critical-line value distribution and states the paper's program before the formal construction."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 116,
+              "line_start": 101,
+              "reason": "Page header and known critical-line zero-count lower bound needed to interpret later unconditional normalization."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The figure at lines 245-248 is illustrative context; the semantic core is Corollary 5 and the explicit statement of why the purely imaginary case remains unresolved.",
+      "line_end": 267,
+      "line_start": 235,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the exact exclusion ζ(1/2+it)≠0 and on a formula whose extracted exponent spacing is fragile; scan verification is needed for the numerical lower-bound constant.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates phase roots that coincide with zeta zeros from genuine nonzero intersections, gives a directional lower bound away from φ=π/2, and identifies Fujii's proposed equidistribution of zero phases as a route to information in the exceptional direction.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nonzero phase crossings and the missing imaginary-axis bound",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u04.txt",
+      "unit_bytes": 1360,
+      "unit_id": "full_openalex_w1553683873_u04",
+      "unit_sha256": "cfd5eb91e5085ed4d47c066c86fa2bffe8c5b59a866a97e48c24599bbac04b4d",
+      "unit_type": "obstruction and equivalent criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u04.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 227,
+          "line_end": 234,
+          "text": "more precisely, any interval (T, 2T ] with sufficiently large T contains such a value\nt. In the purely imaginary case (φ = π2 ) there exist also values t → +∞ such that\n                                                               1\n                                  iζ( 12 + it) ≥ (log t) 2 .\n\nIn particular, ζ( 12 + it) assumes arbitrarily large real values. To the best knowledge\nof the authors the various Ω-results for the zeta-function in the literature so far\n(e.g. Soundararajan [16]) do not imply this corollary.\n",
+          "sha256": "a6e7dd56314f8d08ba70dba5307c07f409f96af1dd52820e7758e337654b75ec"
+        },
+        "after": {
+          "line_start": 268,
+          "line_end": 275,
+          "text": "\n  The remaining parts of this article are organized as follows. The next two sec-\ntions contain the proofs of Theorem 1 and Theorem 2. For the sake of completeness\nwe give the proofs of the corollaries in the fourth section. In the last but one sec-\ntion we discuss the special case φ = 0 and how our results provide new information\nabout Gram points. Finally, we conclude with some remarks on the shape of the\ncurve t 7→ ζ( 21 + it) and further applications of our method.\n\n",
+          "sha256": "a72eee2f05143159627363da943aaf0450830038ff19db6a261217dd25c586a2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and main results",
+            "line_end": 274,
+            "line_start": 27,
+            "mathematical_role": "Defines the phase/intersection representation, counting functions, main counting and moment theorems, directional corollaries, and an equidistribution obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 267,
+          "line_start": 235,
+          "title": "Nonzero phase crossings and the missing imaginary-axis bound",
+          "unit_id": "full_openalex_w1553683873_u04",
+          "unit_type": "obstruction and equivalent criterion",
+          "why_material": "Separates phase roots that coincide with zeta zeros from genuine nonzero intersections, gives a directional lower bound away from φ=π/2, and identifies Fujii's proposed equidistribution of zero phases as a route to information in the exceptional direction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The figure at lines 245-248 is illustrative context; the semantic core is Corollary 5 and the explicit statement of why the purely imaginary case remains unresolved.",
+          "representation_dependency": "Depends on the exact exclusion ζ(1/2+it)≠0 and on a formula whose extracted exponent spacing is fragile; scan verification is needed for the numerical lower-bound constant.",
+          "unit_id": "full_openalex_w1553683873_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 234,
+            "line_start": 178,
+            "title": "Directional means and arbitrarily large values on half-lines",
+            "unit_id": "full_openalex_w1553683873_u02",
+            "unit_type": "directional value-distribution consequences",
+            "why_material": "Translates the counting and moment laws into conditional directional means, an unconditional zero mean on the imaginary axis, positivity of real components, and unconditional arbitrarily large values on prescribed right-half-plane half-lines."
+          },
+          {
+            "line_end": 325,
+            "line_start": 281,
+            "title": "Monotone phase rotation converts root counts to a winding number",
+            "unit_id": "full_openalex_w1553683873_u05",
+            "unit_type": "counting proof mechanism",
+            "why_material": "Uses the logarithmic derivative asymptotic to show that Δ rotates monotonically with increasing speed, identifies roots of a prescribed phase with a winding number, integrates the rotation rate, and removes a convenient endpoint assumption with a controlled error."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The temporary endpoint condition Δ(1/2+iT)=1 is only a proof device and is explicitly removed at lines 323-325.",
+      "line_end": 325,
+      "line_start": 281,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the orientation/sign of the winding integral and the asymptotic for Δ'/Δ; displayed integral typography should be scan-checked for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the logarithmic derivative asymptotic to show that Δ rotates monotonically with increasing speed, identifies roots of a prescribed phase with a winding number, integrates the rotation rate, and removes a convenient endpoint assumption with a controlled error.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Monotone phase rotation converts root counts to a winding number",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u05.txt",
+      "unit_bytes": 2287,
+      "unit_id": "full_openalex_w1553683873_u05",
+      "unit_sha256": "e4add04e79842b0698c5f934c2998e631fe72c6fda9b4e9751b4fb33ff8ab26a",
+      "unit_type": "counting proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u05.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 273,
+          "line_end": 280,
+          "text": "about Gram points. Finally, we conclude with some remarks on the shape of the\ncurve t 7→ ζ( 21 + it) and further applications of our method.\n\n<!-- source-page: 6 -->\n\n6                         JUSTAS KALPOKAS, JÖRN STEUDING\n\n\n",
+          "sha256": "847526ddfd28c510748db71c57b69958c2f8171754e85893cec61b05a83e7d45"
+        },
+        "after": {
+          "line_start": 326,
+          "line_end": 333,
+          "text": "\n\n                             3. Proof of Theorem 2\n\n    The proof relies on a new variation of the method of Conrey, Ghosh & Gonek\n(see, e.g., [3]); for our purpose we shall work with the logarithmic derivative of\n∆(s) − e2iφ , before only logarithmic derivatives of Dirichlet series were treated.\n\n",
+          "sha256": "82a6d2c7ac8f3b83384e87bd04174234b4cbb2c9d6db77d35ec8e80ea495e910"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1",
+            "line_end": 327,
+            "line_start": 275,
+            "mathematical_role": "Counts phase roots through monotone rotation and a winding-number integral."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 325,
+          "line_start": 281,
+          "title": "Monotone phase rotation converts root counts to a winding number",
+          "unit_id": "full_openalex_w1553683873_u05",
+          "unit_type": "counting proof mechanism",
+          "why_material": "Uses the logarithmic derivative asymptotic to show that Δ rotates monotonically with increasing speed, identifies roots of a prescribed phase with a winding number, integrates the rotation rate, and removes a convenient endpoint assumption with a controlled error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The temporary endpoint condition Δ(1/2+iT)=1 is only a proof device and is explicitly removed at lines 323-325.",
+          "representation_dependency": "Depends on the orientation/sign of the winding integral and the asymptotic for Δ'/Δ; displayed integral typography should be scan-checked for exact reuse.",
+          "unit_id": "full_openalex_w1553683873_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 267,
+            "line_start": 235,
+            "title": "Nonzero phase crossings and the missing imaginary-axis bound",
+            "unit_id": "full_openalex_w1553683873_u04",
+            "unit_type": "obstruction and equivalent criterion",
+            "why_material": "Separates phase roots that coincide with zeta zeros from genuine nonzero intersections, gives a directional lower bound away from φ=π/2, and identifies Fujii's proposed equidistribution of zero phases as a route to information in the exceptional direction."
+          },
+          {
+            "line_end": 382,
+            "line_start": 328,
+            "title": "Residues sample zeta at phase roots under a separated endpoint choice",
+            "unit_id": "full_openalex_w1553683873_u06",
+            "unit_type": "contour construction",
+            "why_material": "Introduces a variation of the Conrey-Ghosh-Gonek method in which the logarithmic derivative of Δ-e^{2iφ} provides poles at the desired sampling ordinates, chooses an endpoint separated from them, and expresses the first discrete moment as four contour contributions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A unit-modulus functional-equation factor can discretize intersections of an analytic value curve with a chosen direction, after which winding counts and logarithmic-derivative residues provide matched cardinality and sampled-value statistics.",
+            "limit": "Established here only for the stated zeta/Δ setting; shared phase structure and suitable analytic control must be rechecked for any transfer.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u03",
+              "full_openalex_w1553683873_u01",
+              "full_openalex_w1553683873_u05",
+              "full_openalex_w1553683873_u06"
+            ],
+            "title": "Phase discretization as a bridge from curve geometry to analytic sampling"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the bounded treatment of low/off-line roots and the T-dependent narrow rectangle; later units determine which contour sides contribute main terms.",
+      "line_end": 382,
+      "line_start": 328,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the rectangle geometry, residue multiplicities, and the denominator Δ(s)-e^{2iφ}; preserve contour orientation and the endpoint separation bound.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces a variation of the Conrey-Ghosh-Gonek method in which the logarithmic derivative of Δ-e^{2iφ} provides poles at the desired sampling ordinates, chooses an endpoint separated from them, and expresses the first discrete moment as four contour contributions.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residues sample zeta at phase roots under a separated endpoint choice",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u06.txt",
+      "unit_bytes": 2988,
+      "unit_id": "full_openalex_w1553683873_u06",
+      "unit_sha256": "1a44d67ffa5e2250d68ba36f24a182ac7191869085db23b51d8ef496622598f5",
+      "unit_type": "contour construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u06.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 320,
+          "line_end": 327,
+          "text": "                   = O(1) +             − log    + O((λT ) ) dλ.\n                              2π 1/T          2π\n\nHence, the asymptotic formula for Nφ∆ (T ) follows by integration; however, to get\nrid of our assumption (8) on T , by (7) we may substitute this by any T at the\nexpense of an error O(log T ). This proves Theorem 1.\n\n\n",
+          "sha256": "219d6edc27b51b8fe5a2e3ec40888a444659933d8c3fab58273bf344faa3ce55"
+        },
+        "after": {
+          "line_start": 383,
+          "line_end": 390,
+          "text": "  First we consider I1 . It is well-known that\n                           \u0012         \u0013 1 −σ−it\n                               |t|     2\n(10)        ∆(σ + it) =                           exp(i(t + π4 ))(1 + O(|t|−1 ))                for       |t| ≥ 1\n                               2π\nuniformly for any σ from a bounded interval. Hence,\n                                                                                ∞\n                                                                                                          !\n",
+          "sha256": "4a079e35a5c0a17a2c08d175dbd84ced7fba03a4a2919ef6b1c941b585d47348"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: first moment",
+            "line_end": 547,
+            "line_start": 328,
+            "mathematical_role": "Transforms the discrete line-intersection sum into contour residues and extracts its main term using the functional equation and Gonek's lemma."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 382,
+          "line_start": 328,
+          "title": "Residues sample zeta at phase roots under a separated endpoint choice",
+          "unit_id": "full_openalex_w1553683873_u06",
+          "unit_type": "contour construction",
+          "why_material": "Introduces a variation of the Conrey-Ghosh-Gonek method in which the logarithmic derivative of Δ-e^{2iφ} provides poles at the desired sampling ordinates, chooses an endpoint separated from them, and expresses the first discrete moment as four contour contributions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the bounded treatment of low/off-line roots and the T-dependent narrow rectangle; later units determine which contour sides contribute main terms.",
+          "representation_dependency": "Depends on the rectangle geometry, residue multiplicities, and the denominator Δ(s)-e^{2iφ}; preserve contour orientation and the endpoint separation bound.",
+          "unit_id": "full_openalex_w1553683873_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 325,
+            "line_start": 281,
+            "title": "Monotone phase rotation converts root counts to a winding number",
+            "unit_id": "full_openalex_w1553683873_u05",
+            "unit_type": "counting proof mechanism",
+            "why_material": "Uses the logarithmic derivative asymptotic to show that Δ rotates monotonically with increasing speed, identifies roots of a prescribed phase with a winding number, integrates the rotation rate, and removes a convenient endpoint assumption with a controlled error."
+          },
+          {
+            "line_end": 460,
+            "line_start": 383,
+            "title": "Suppress three contour sides and reflect the main side",
+            "unit_id": "full_openalex_w1553683873_u07",
+            "unit_type": "analytic decomposition",
+            "why_material": "Uses rapid geometric-series expansions and growth bounds to make the right, top, and bottom sides negligible, then reflects the left side through s↦1-s and the functional equation so its integrand becomes a tractable Dirichlet-series kernel."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A unit-modulus functional-equation factor can discretize intersections of an analytic value curve with a chosen direction, after which winding counts and logarithmic-derivative residues provide matched cardinality and sampled-value statistics.",
+            "limit": "Established here only for the stated zeta/Δ setting; shared phase structure and suitable analytic control must be rechecked for any transfer.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u03",
+              "full_openalex_w1553683873_u01",
+              "full_openalex_w1553683873_u05",
+              "full_openalex_w1553683873_u06"
+            ],
+            "title": "Phase discretization as a bridge from curve geometry to analytic sampling"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends at the decomposition I3=J1+J2+error; the subsequent evaluation is kept in a separate unit.",
+      "line_end": 460,
+      "line_start": 383,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on half-plane size comparisons for Δ, the critical-line separation estimate, conjugation/reflection, and geometric-series convergence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses rapid geometric-series expansions and growth bounds to make the right, top, and bottom sides negligible, then reflects the left side through s↦1-s and the functional equation so its integrand becomes a tractable Dirichlet-series kernel.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Suppress three contour sides and reflect the main side",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u07.txt",
+      "unit_bytes": 4507,
+      "unit_id": "full_openalex_w1553683873_u07",
+      "unit_sha256": "28759d227b18092f09406eb2477263111723f6c668328468a8b0572e57d584ff",
+      "unit_type": "analytic decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u07.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 375,
+          "line_end": 382,
+          "text": "           2πi      2+i         2+iT               1−a+iT           1−a+i             ∆(s) − e2iφ\n           4\n           X\n       =         Ii + O(1),\n           i=1\n\nsay. The bounded error term O(1) results from at most finitely many possible\nresidues outside C, resp. contributions ζ( 12 + itφn ) with 0 < tn ≤ 1.\n",
+          "sha256": "29b112f1b17e15588391b1c68a3f22bd3d9fd20d9c52618b627a616ca3369c83"
+        },
+        "after": {
+          "line_start": 461,
+          "line_end": 468,
+          "text": "\nsay. First we consider J1 . According to (7) we have\n               Z T\u0012              \u0012 \u0013\u0013 \u0012         Z a+iτ                \u0013\n                          τ        1         1\n          J1 =       log     +O         d              ζ(s)∆(1 − s) ds .\n                 1       2π        τ        2πi a+i\nFor the inner integral we use Gonek’s lemma:\n\n",
+          "sha256": "b496a29c44e1c68d0868a97c8c94b3771a8485fdaf6d0ddd6d62c796b3b92e51"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: first moment",
+            "line_end": 547,
+            "line_start": 328,
+            "mathematical_role": "Transforms the discrete line-intersection sum into contour residues and extracts its main term using the functional equation and Gonek's lemma."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 460,
+          "line_start": 383,
+          "title": "Suppress three contour sides and reflect the main side",
+          "unit_id": "full_openalex_w1553683873_u07",
+          "unit_type": "analytic decomposition",
+          "why_material": "Uses rapid geometric-series expansions and growth bounds to make the right, top, and bottom sides negligible, then reflects the left side through s↦1-s and the functional equation so its integrand becomes a tractable Dirichlet-series kernel."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Ends at the decomposition I3=J1+J2+error; the subsequent evaluation is kept in a separate unit.",
+          "representation_dependency": "Depends on half-plane size comparisons for Δ, the critical-line separation estimate, conjugation/reflection, and geometric-series convergence.",
+          "unit_id": "full_openalex_w1553683873_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 382,
+            "line_start": 328,
+            "title": "Residues sample zeta at phase roots under a separated endpoint choice",
+            "unit_id": "full_openalex_w1553683873_u06",
+            "unit_type": "contour construction",
+            "why_material": "Introduces a variation of the Conrey-Ghosh-Gonek method in which the logarithmic derivative of Δ-e^{2iφ} provides poles at the desired sampling ordinates, chooses an endpoint separated from them, and expresses the first discrete moment as four contour contributions."
+          },
+          {
+            "line_end": 541,
+            "line_start": 462,
+            "title": "Gonek's lemma isolates the two components of the first moment",
+            "unit_id": "full_openalex_w1553683873_u08",
+            "unit_type": "main-term extraction",
+            "why_material": "Evaluates the reflected contour's two principal pieces: Gonek's lemma extracts the diagonal-scale term from ζ(s)Δ(1-s), while direct integration of ζ(s) supplies the phase-weighted companion; their combination yields 1+e^{2iφ}=2e^{iφ}cosφ."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof depends not merely on a functional equation but on phase-factor expansions and Dirichlet-series kernels whose main terms remain tractable; factorization supplies that tractability in the cited quadratic Dedekind case.",
+            "limit": "The paper states difficulty for higher degree and one successful factored case, not a necessary-and-sufficient transfer criterion.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u07",
+              "full_openalex_w1553683873_u08",
+              "full_openalex_w1553683873_u09",
+              "full_openalex_w1553683873_u10",
+              "full_openalex_w1553683873_u17"
+            ],
+            "title": "The contour method's portability is governed by structural factorization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The extension from separated endpoints to arbitrary T is included and uses a pointwise zeta bound to absorb the final sample.",
+      "line_end": 541,
+      "line_start": 462,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the exact transform kernel in Lemma 6, the phase factor, and partial integration; formula glyphs are recoverable but should be scan-verified before executable use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Evaluates the reflected contour's two principal pieces: Gonek's lemma extracts the diagonal-scale term from ζ(s)Δ(1-s), while direct integration of ζ(s) supplies the phase-weighted companion; their combination yields 1+e^{2iφ}=2e^{iφ}cosφ.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gonek's lemma isolates the two components of the first moment",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u08.txt",
+      "unit_bytes": 4036,
+      "unit_id": "full_openalex_w1553683873_u08",
+      "unit_sha256": "7dcbb47258d7f2abe46cee2cb2d9b05c3e262144f30f57c0156dd92225ebafcc",
+      "unit_type": "main-term extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u08.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 454,
+          "line_end": 461,
+          "text": "                                                            −2kiφ     k\n     I3 = −              ζ(s)∆ (1 − s) 1 +          +      e      ∆(s)    ds\n              2πi a+i                      ∆(1 − s)\n                                                       k=2\n                         \u0010 1 \u0011\n                             +ǫ\n(13)    = J1 + J2 + O T 2        ,\n\n",
+          "sha256": "70d268e8f8fe044f610b560f1593d2c7edf3cd2d6d9d54bc5a3d73091eb01ac9"
+        },
+        "after": {
+          "line_start": 542,
+          "line_end": 549,
+          "text": "\n<!-- source-page: 10 -->\n\n10                                    JUSTAS KALPOKAS, JÖRN STEUDING\n\n\n3.2. Proof of the second moment. We can procced in a rather similar way.\nAssuming the same as for the first moment, we have\n",
+          "sha256": "5b0485e30a1f939e58fcaeb2b453e4fbb20fdae41c9d3f3a96cd3d9dcd4307a9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: first moment",
+            "line_end": 547,
+            "line_start": 328,
+            "mathematical_role": "Transforms the discrete line-intersection sum into contour residues and extracts its main term using the functional equation and Gonek's lemma."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 541,
+          "line_start": 462,
+          "title": "Gonek's lemma isolates the two components of the first moment",
+          "unit_id": "full_openalex_w1553683873_u08",
+          "unit_type": "main-term extraction",
+          "why_material": "Evaluates the reflected contour's two principal pieces: Gonek's lemma extracts the diagonal-scale term from ζ(s)Δ(1-s), while direct integration of ζ(s) supplies the phase-weighted companion; their combination yields 1+e^{2iφ}=2e^{iφ}cosφ."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The extension from separated endpoints to arbitrary T is included and uses a pointwise zeta bound to absorb the final sample.",
+          "representation_dependency": "Depends on the exact transform kernel in Lemma 6, the phase factor, and partial integration; formula glyphs are recoverable but should be scan-verified before executable use.",
+          "unit_id": "full_openalex_w1553683873_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 460,
+            "line_start": 383,
+            "title": "Suppress three contour sides and reflect the main side",
+            "unit_id": "full_openalex_w1553683873_u07",
+            "unit_type": "analytic decomposition",
+            "why_material": "Uses rapid geometric-series expansions and growth bounds to make the right, top, and bottom sides negligible, then reflects the left side through s↦1-s and the functional equation so its integrand becomes a tractable Dirichlet-series kernel."
+          },
+          {
+            "line_end": 608,
+            "line_start": 548,
+            "title": "The first-moment contour architecture lifts to the square",
+            "unit_id": "full_openalex_w1553683873_u09",
+            "unit_type": "method transfer",
+            "why_material": "Shows how the same phase-root residue kernel is reused for ζ(s)ζ(1-s), with one contour side now contributing a phase-dependent lower-order term and the reflected side producing ζ(s)^2Δ'(1-s)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof depends not merely on a functional equation but on phase-factor expansions and Dirichlet-series kernels whose main terms remain tractable; factorization supplies that tractability in the cited quadratic Dedekind case.",
+            "limit": "The paper states difficulty for higher degree and one successful factored case, not a necessary-and-sufficient transfer criterion.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u07",
+              "full_openalex_w1553683873_u08",
+              "full_openalex_w1553683873_u09",
+              "full_openalex_w1553683873_u10",
+              "full_openalex_w1553683873_u17"
+            ],
+            "title": "The contour method's portability is governed by structural factorization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span records the changed integrand and decomposition rather than repeating all earlier side estimates, making the method comparison explicit.",
+      "line_end": 608,
+      "line_start": 548,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the functional equation converting ζ(s)ζ(1-s), the same contour and geometric-series regime, and exact phase exponents.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how the same phase-root residue kernel is reused for ζ(s)ζ(1-s), with one contour side now contributing a phase-dependent lower-order term and the reflected side producing ζ(s)^2Δ'(1-s).",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The first-moment contour architecture lifts to the square",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u09.txt",
+      "unit_bytes": 3289,
+      "unit_id": "full_openalex_w1553683873_u09",
+      "unit_sha256": "455af27dc60541272f1a3b327238894c50d9aa45d4baaf60d7c2f2efe9badb2a",
+      "unit_type": "method transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u09.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 540,
+          "line_end": 547,
+          "text": "the latter estimate is a trivial consequence of the Phragmén-Lindelöf principle\napplied to the functional equation. This proves formula (5).\n\n<!-- source-page: 10 -->\n\n10                                    JUSTAS KALPOKAS, JÖRN STEUDING\n\n\n",
+          "sha256": "98c631bdef0e225c8dfbc45aa06e74810ca37c0c1ec292c3293c044c72b49adc"
+        },
+        "after": {
+          "line_start": 609,
+          "line_end": 616,
+          "text": "\nWe start with J1 . According to (7) we have\n                      Z T\u0012                       \u0012 \u0013\u0013 \u0012    Z a+iτ                  \u0013\n                                       τ          1      1\n               J1 =             log      +O          d            ζ(s)2 ∆(1 − s) ds .\n                        1             2π          τ     2πi a+i\n\n<!-- source-page: 11 -->\n",
+          "sha256": "aa19a1712e5819fcb740b78dd9ca7884b8b0ec3d84e030dcca6864a0ecdc8e74"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: second moment",
+            "line_end": 665,
+            "line_start": 548,
+            "mathematical_role": "Repeats the contour architecture for the square and obtains the leading logarithmic terms through a divisor-sum asymptotic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 608,
+          "line_start": 548,
+          "title": "The first-moment contour architecture lifts to the square",
+          "unit_id": "full_openalex_w1553683873_u09",
+          "unit_type": "method transfer",
+          "why_material": "Shows how the same phase-root residue kernel is reused for ζ(s)ζ(1-s), with one contour side now contributing a phase-dependent lower-order term and the reflected side producing ζ(s)^2Δ'(1-s)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span records the changed integrand and decomposition rather than repeating all earlier side estimates, making the method comparison explicit.",
+          "representation_dependency": "Depends on the functional equation converting ζ(s)ζ(1-s), the same contour and geometric-series regime, and exact phase exponents.",
+          "unit_id": "full_openalex_w1553683873_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 541,
+            "line_start": 462,
+            "title": "Gonek's lemma isolates the two components of the first moment",
+            "unit_id": "full_openalex_w1553683873_u08",
+            "unit_type": "main-term extraction",
+            "why_material": "Evaluates the reflected contour's two principal pieces: Gonek's lemma extracts the diagonal-scale term from ζ(s)Δ(1-s), while direct integration of ζ(s) supplies the phase-weighted companion; their combination yields 1+e^{2iφ}=2e^{iφ}cosφ."
+          },
+          {
+            "line_end": 663,
+            "line_start": 610,
+            "title": "A divisor-sum diagonal produces the second moment's leading square logarithm",
+            "unit_id": "full_openalex_w1553683873_u10",
+            "unit_type": "second-moment extraction",
+            "why_material": "Applies Gonek's lemma to ζ(s)^2Δ(1-s), converts the result to a divisor summatory asymptotic, and combines it with the phase-dependent companion term to obtain the second-moment expansion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof depends not merely on a functional equation but on phase-factor expansions and Dirichlet-series kernels whose main terms remain tractable; factorization supplies that tractability in the cited quadratic Dedekind case.",
+            "limit": "The paper states difficulty for higher degree and one successful factored case, not a necessary-and-sufficient transfer criterion.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u07",
+              "full_openalex_w1553683873_u08",
+              "full_openalex_w1553683873_u09",
+              "full_openalex_w1553683873_u10",
+              "full_openalex_w1553683873_u17"
+            ],
+            "title": "The contour method's portability is governed by structural factorization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The leading term is independent of direction; φ enters at lower order through the second principal piece.",
+      "line_end": 663,
+      "line_start": 610,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the Dirichlet divisor estimate, Euler's constant, and displayed logarithmic coefficients; scan verification is needed before coefficient-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies Gonek's lemma to ζ(s)^2Δ(1-s), converts the result to a divisor summatory asymptotic, and combines it with the phase-dependent companion term to obtain the second-moment expansion.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A divisor-sum diagonal produces the second moment's leading square logarithm",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u10.txt",
+      "unit_bytes": 2990,
+      "unit_id": "full_openalex_w1553683873_u10",
+      "unit_sha256": "8eb77731353ae63570511deaca03afb3527b1b2a4f0fd24faabe057329998095",
+      "unit_type": "second-moment extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u10.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 602,
+          "line_end": 609,
+          "text": "         I3 = −         ζ(s) ∆ (1 − s) 1 +   ′\n                                                    +     e−2kiφ ∆(s)k                              ds\n                2πia+i                     ∆(1 − s)\n                                                      k=2\n                        \u0010 1 \u0011\n                             +ǫ\n           = J1 + J2 + O T 2    .\n\n",
+          "sha256": "a7caa58adbea683eec49aabeb5b0a4ed5c5332f9b4892315776e48d9ed2030b7"
+        },
+        "after": {
+          "line_start": 664,
+          "line_end": 671,
+          "text": "\n\n                                   4. Proof of the corollaries\n\n4.1. Proof of Corollary 3. If the Riemann hypothesis is true, Nφ (T ) ∼ Tπ log T\nby (4), hence the existence and the formula for the mean-value follows immediately\nfrom (5). If φ = π2 the main term of (5) vanishes and, using the unconditional\nbound Nφ (T ) ≥ Nφ∆ (T ) in place of the unproved Riemann hypothesis, we get in\n",
+          "sha256": "a952d8499cb8ada9b3183d0c44f699fcec83e6f933ee3e72a16487656dff3043"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: second moment",
+            "line_end": 665,
+            "line_start": 548,
+            "mathematical_role": "Repeats the contour architecture for the square and obtains the leading logarithmic terms through a divisor-sum asymptotic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 663,
+          "line_start": 610,
+          "title": "A divisor-sum diagonal produces the second moment's leading square logarithm",
+          "unit_id": "full_openalex_w1553683873_u10",
+          "unit_type": "second-moment extraction",
+          "why_material": "Applies Gonek's lemma to ζ(s)^2Δ(1-s), converts the result to a divisor summatory asymptotic, and combines it with the phase-dependent companion term to obtain the second-moment expansion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The leading term is independent of direction; φ enters at lower order through the second principal piece.",
+          "representation_dependency": "Depends on the Dirichlet divisor estimate, Euler's constant, and displayed logarithmic coefficients; scan verification is needed before coefficient-level reuse.",
+          "unit_id": "full_openalex_w1553683873_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 608,
+            "line_start": 548,
+            "title": "The first-moment contour architecture lifts to the square",
+            "unit_id": "full_openalex_w1553683873_u09",
+            "unit_type": "method transfer",
+            "why_material": "Shows how the same phase-root residue kernel is reused for ζ(s)ζ(1-s), with one contour side now contributing a phase-dependent lower-order term and the reflected side producing ζ(s)^2Δ'(1-s)."
+          },
+          {
+            "line_end": 683,
+            "line_start": 668,
+            "title": "Conditional and unconditional denominators yield different mean-value conclusions",
+            "unit_id": "full_openalex_w1553683873_u11",
+            "unit_type": "normalization comparison",
+            "why_material": "Makes explicit that the same first-moment numerator becomes a full directional mean under RH through Nφ(T) asymptotics, while the imaginary-axis zero mean follows unconditionally because its main term vanishes and the phase-root count supplies a sufficient denominator."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof depends not merely on a functional equation but on phase-factor expansions and Dirichlet-series kernels whose main terms remain tractable; factorization supplies that tractability in the cited quadratic Dedekind case.",
+            "limit": "The paper states difficulty for higher degree and one successful factored case, not a necessary-and-sufficient transfer criterion.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u07",
+              "full_openalex_w1553683873_u08",
+              "full_openalex_w1553683873_u09",
+              "full_openalex_w1553683873_u10",
+              "full_openalex_w1553683873_u17"
+            ],
+            "title": "The contour method's portability is governed by structural factorization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records how the known positive proportion of critical-line zeros yields only liminf/limsup bounds in general.",
+      "line_end": 683,
+      "line_start": 668,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on distinguishing Nφ from NφΔ and on preserving the RH and φ=π/2 branches.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Makes explicit that the same first-moment numerator becomes a full directional mean under RH through Nφ(T) asymptotics, while the imaginary-axis zero mean follows unconditionally because its main term vanishes and the phase-root count supplies a sufficient denominator.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conditional and unconditional denominators yield different mean-value conclusions",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u11.txt",
+      "unit_bytes": 1040,
+      "unit_id": "full_openalex_w1553683873_u11",
+      "unit_sha256": "d9ead9201124b31f7fccf42e9e14687aa0be903de32be8050a15a8c69b960306",
+      "unit_type": "normalization comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u11.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 660,
+          "line_end": 667,
+          "text": "                                                 log\n                                              2π     2πe\nCollecting together, formula (6) of the theorem follows in just the same way as the\nfirst moment asymptotics. This finishes the proof of Theorem 2.\n\n\n                                   4. Proof of the corollaries\n\n",
+          "sha256": "b20f4982d5497592b0b3de878a4857b0d1d8ae91e5c27326ecd62f15aaf62ac6"
+        },
+        "after": {
+          "line_start": 684,
+          "line_end": 691,
+          "text": "\n<!-- source-page: 12 -->\n\n12                             JUSTAS KALPOKAS, JÖRN STEUDING\n\n\n4.2. Proof of Corollary 4. By Theorem 1 and 2,\n                                                                        T\n",
+          "sha256": "dc2d5dc5bd78cdcdde7162c918e83efb4fbdd669f949d4aa697af4396763980f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of corollaries",
+            "line_end": 721,
+            "line_start": 666,
+            "mathematical_role": "Converts counting and moment asymptotics into mean values, large directional values, and a lower bound for nonzero phase crossings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 683,
+          "line_start": 668,
+          "title": "Conditional and unconditional denominators yield different mean-value conclusions",
+          "unit_id": "full_openalex_w1553683873_u11",
+          "unit_type": "normalization comparison",
+          "why_material": "Makes explicit that the same first-moment numerator becomes a full directional mean under RH through Nφ(T) asymptotics, while the imaginary-axis zero mean follows unconditionally because its main term vanishes and the phase-root count supplies a sufficient denominator."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also records how the known positive proportion of critical-line zeros yields only liminf/limsup bounds in general.",
+          "representation_dependency": "Depends on distinguishing Nφ from NφΔ and on preserving the RH and φ=π/2 branches.",
+          "unit_id": "full_openalex_w1553683873_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 663,
+            "line_start": 610,
+            "title": "A divisor-sum diagonal produces the second moment's leading square logarithm",
+            "unit_id": "full_openalex_w1553683873_u10",
+            "unit_type": "second-moment extraction",
+            "why_material": "Applies Gonek's lemma to ζ(s)^2Δ(1-s), converts the result to a divisor summatory asymptotic, and combines it with the phase-dependent companion term to obtain the second-moment expansion."
+          },
+          {
+            "line_end": 712,
+            "line_start": 690,
+            "title": "Second-moment mass forces a large value in every dyadic interval",
+            "unit_id": "full_openalex_w1553683873_u12",
+            "unit_type": "moment-to-extreme-value argument",
+            "why_material": "Compares the number of phase samples in (T,2T] with their second-moment mass to rule out a uniform sub-square-root-log bound, then uses the signed first moment to force the desired half-line sign; the exceptional imaginary direction uses its zero-mean relation to obtain both signs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sample count normalizes a first moment into a directional mean, the second moment forces large samples, and the signed first moment or a zero-mean symmetry is separately needed to place those samples on a desired half-line.",
+            "limit": "General directional normalization is conditional on RH or almost-all critical-line zeros, while the imaginary-axis branch has a distinct unconditional argument.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u01",
+              "full_openalex_w1553683873_u02",
+              "full_openalex_w1553683873_u11",
+              "full_openalex_w1553683873_u12",
+              "full_openalex_w1553683873_u13"
+            ],
+            "title": "Moments become geometric information only after the correct count and sign controls"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the proof mechanism behind the large-value statement already carried in u02.",
+      "line_end": 712,
+      "line_start": 690,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on dyadic restriction, moment exponents, and oriented values e^{-iφ}ζ; the sign conclusion is not supplied by the second moment alone.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares the number of phase samples in (T,2T] with their second-moment mass to rule out a uniform sub-square-root-log bound, then uses the signed first moment to force the desired half-line sign; the exceptional imaginary direction uses its zero-mean relation to obtain both signs.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Second-moment mass forces a large value in every dyadic interval",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u12.txt",
+      "unit_bytes": 1561,
+      "unit_id": "full_openalex_w1553683873_u12",
+      "unit_sha256": "bcd86f7d6e78f41101b743f7663d847fbeafac8eeff40b2f443a98d55b5f03a9",
+      "unit_type": "moment-to-extreme-value argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u12.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 682,
+          "line_end": 689,
+          "text": "consequently, the mean-value is zero for φ = π2 . Unconditionally, one has to use\n(3) to derive the bounds for lim inf and lim sup as in the corollary.\n\n<!-- source-page: 12 -->\n\n12                             JUSTAS KALPOKAS, JÖRN STEUDING\n\n\n",
+          "sha256": "365a852e58addc06206af49b89000f74643206bbaf569c9b1b124a1c34c49802"
+        },
+        "after": {
+          "line_start": 713,
+          "line_end": 720,
+          "text": "\n4.3. Proof of Corollary 5. Applying the Cauchy-Schwarz inequality,\n      X                \u0001 2 \u0010       X           \u0011\u0010    X                \u0001 \u0011\n             ζ 12 + it    ≤                   1             |ζ 21 + it |2 .\n           0<t≤T                                 0<t≤T                            0<t≤T\n     ζ( 21 +it)∈eiφ R                  ∆( 21 +it)=e2iφ ,ζ( 12 +it)6=0       ζ( 12 +it)∈eiφ R\n\nInserting the asymptotic formulae of Theorem 2 yields the assertion of the corollary.\n",
+          "sha256": "4e12fd6dd298cf12f1cdca63e2f5e6a0bce6e47ef959d40f4a9d98b1de2871f5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of corollaries",
+            "line_end": 721,
+            "line_start": 666,
+            "mathematical_role": "Converts counting and moment asymptotics into mean values, large directional values, and a lower bound for nonzero phase crossings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 712,
+          "line_start": 690,
+          "title": "Second-moment mass forces a large value in every dyadic interval",
+          "unit_id": "full_openalex_w1553683873_u12",
+          "unit_type": "moment-to-extreme-value argument",
+          "why_material": "Compares the number of phase samples in (T,2T] with their second-moment mass to rule out a uniform sub-square-root-log bound, then uses the signed first moment to force the desired half-line sign; the exceptional imaginary direction uses its zero-mean relation to obtain both signs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the proof mechanism behind the large-value statement already carried in u02.",
+          "representation_dependency": "Depends on dyadic restriction, moment exponents, and oriented values e^{-iφ}ζ; the sign conclusion is not supplied by the second moment alone.",
+          "unit_id": "full_openalex_w1553683873_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 683,
+            "line_start": 668,
+            "title": "Conditional and unconditional denominators yield different mean-value conclusions",
+            "unit_id": "full_openalex_w1553683873_u11",
+            "unit_type": "normalization comparison",
+            "why_material": "Makes explicit that the same first-moment numerator becomes a full directional mean under RH through Nφ(T) asymptotics, while the imaginary-axis zero mean follows unconditionally because its main term vanishes and the phase-root count supplies a sufficient denominator."
+          },
+          {
+            "line_end": 720,
+            "line_start": 714,
+            "title": "Cauchy-Schwarz turns moments into a count of nonzero phase crossings",
+            "unit_id": "full_openalex_w1553683873_u13",
+            "unit_type": "inequality transfer",
+            "why_material": "Relates the squared first moment to the product of the nonzero-sample count and second moment, yielding the lower bound for genuine line crossings after inserting the two moment asymptotics."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sample count normalizes a first moment into a directional mean, the second moment forces large samples, and the signed first moment or a zero-mean symmetry is separately needed to place those samples on a desired half-line.",
+            "limit": "General directional normalization is conditional on RH or almost-all critical-line zeros, while the imaginary-axis branch has a distinct unconditional argument.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u01",
+              "full_openalex_w1553683873_u02",
+              "full_openalex_w1553683873_u11",
+              "full_openalex_w1553683873_u12",
+              "full_openalex_w1553683873_u13"
+            ],
+            "title": "Moments become geometric information only after the correct count and sign controls"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Short but reusable bridge: it explains both the origin and the directional degeneration of Corollary 5.",
+      "line_end": 720,
+      "line_start": 714,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on excluding zero zeta values in the counting factor and on the exact first-moment directional coefficient.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates the squared first moment to the product of the nonzero-sample count and second moment, yielding the lower bound for genuine line crossings after inserting the two moment asymptotics.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cauchy-Schwarz turns moments into a count of nonzero phase crossings",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u13.txt",
+      "unit_bytes": 507,
+      "unit_id": "full_openalex_w1553683873_u13",
+      "unit_sha256": "eb05d12590e2e1445c25bb9dad9213f7a25293db36d3c32d10b569b4bf8a4d7b",
+      "unit_type": "inequality transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u13.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 706,
+          "line_end": 713,
+          "text": "                                                             2π\nIn order to have no contradiction with the right-hand side of (16), we find α ≤ 21 .\nConsequently, in any interval (T, 2T ] for sufficiently large T , there exists a value t\n                                                                    1\nsuch that ζ( 12 + it) ∈ eiφ R and |ζ( 12 + it)| ≥ (log t) 2 . If all those values e−iφ ζ( 12 + it)\nwould be negative, we would get a contradiction to (5). In the purely imaginary\ncase we get large values with both signs according to (15). This proves the corollary.\n\n",
+          "sha256": "8dcaa2026c9a88b8301218081fe8b25356f4991c4db72a8e983ac53a56648ac2"
+        },
+        "after": {
+          "line_start": 721,
+          "line_end": 728,
+          "text": "\n                                         5. Gram points\n\n     The roots of the equation ∆( 12 + it) = 1 constitute the so-called Gram points tn\nwhich are usually defined by the roots of the equation ϑ(t) = πn for n ∈ N, where\n                               1\nexp(iϑ(t)) = ∆( 12 + it)− 2 . The function\n\n",
+          "sha256": "717e1d007da64dae2e0d68e3c06a1ecb31aa8451257ed8bbd88cbd417799aa57"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of corollaries",
+            "line_end": 721,
+            "line_start": 666,
+            "mathematical_role": "Converts counting and moment asymptotics into mean values, large directional values, and a lower bound for nonzero phase crossings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 720,
+          "line_start": 714,
+          "title": "Cauchy-Schwarz turns moments into a count of nonzero phase crossings",
+          "unit_id": "full_openalex_w1553683873_u13",
+          "unit_type": "inequality transfer",
+          "why_material": "Relates the squared first moment to the product of the nonzero-sample count and second moment, yielding the lower bound for genuine line crossings after inserting the two moment asymptotics."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Short but reusable bridge: it explains both the origin and the directional degeneration of Corollary 5.",
+          "representation_dependency": "Depends on excluding zero zeta values in the counting factor and on the exact first-moment directional coefficient.",
+          "unit_id": "full_openalex_w1553683873_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 712,
+            "line_start": 690,
+            "title": "Second-moment mass forces a large value in every dyadic interval",
+            "unit_id": "full_openalex_w1553683873_u12",
+            "unit_type": "moment-to-extreme-value argument",
+            "why_material": "Compares the number of phase samples in (T,2T] with their second-moment mass to rule out a uniform sub-square-root-log bound, then uses the signed first moment to force the desired half-line sign; the exceptional imaginary direction uses its zero-mean relation to obtain both signs."
+          },
+          {
+            "line_end": 755,
+            "line_start": 722,
+            "title": "Gram points recast real-axis intersections and expose failures of sign alternation",
+            "unit_id": "full_openalex_w1553683873_u14",
+            "unit_type": "specialization and obstruction",
+            "why_material": "Specializes the phase roots to Gram points, introduces the real Hardy Z-function, relates sign changes to critical-line zeros, and interprets failures of Gram's law as negative real-axis intersections whose unbounded magnitude remains open."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sample count normalizes a first moment into a directional mean, the second moment forces large samples, and the signed first moment or a zero-mean symmetry is separately needed to place those samples on a desired half-line.",
+            "limit": "General directional normalization is conditional on RH or almost-all critical-line zeros, while the imaginary-axis branch has a distinct unconditional argument.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u01",
+              "full_openalex_w1553683873_u02",
+              "full_openalex_w1553683873_u11",
+              "full_openalex_w1553683873_u12",
+              "full_openalex_w1553683873_u13"
+            ],
+            "title": "Moments become geometric information only after the correct count and sign controls"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 721,
+              "line_start": 721,
+              "reason": "Blank separator before the Gram-point section."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical claims serve the mathematical obstruction: matching counts do not guarantee persistent interlacing or sign alternation.",
+      "line_end": 755,
+      "line_start": 722,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the phase convention for θ and the sign normalization (-1)^nZ(tn); retain those conventions when comparing formulations.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializes the phase roots to Gram points, introduces the real Hardy Z-function, relates sign changes to critical-line zeros, and interprets failures of Gram's law as negative real-axis intersections whose unbounded magnitude remains open.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gram points recast real-axis intersections and expose failures of sign alternation",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u14.txt",
+      "unit_bytes": 1805,
+      "unit_id": "full_openalex_w1553683873_u14",
+      "unit_sha256": "70eb3c74c43f2acbe134f368cf8f113466b32670a2ae50a32299e163bc9ce095",
+      "unit_type": "specialization and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u14.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 714,
+          "line_end": 721,
+          "text": "4.3. Proof of Corollary 5. Applying the Cauchy-Schwarz inequality,\n      X                \u0001 2 \u0010       X           \u0011\u0010    X                \u0001 \u0011\n             ζ 12 + it    ≤                   1             |ζ 21 + it |2 .\n           0<t≤T                                 0<t≤T                            0<t≤T\n     ζ( 21 +it)∈eiφ R                  ∆( 21 +it)=e2iφ ,ζ( 12 +it)6=0       ζ( 12 +it)∈eiφ R\n\nInserting the asymptotic formulae of Theorem 2 yields the assertion of the corollary.\n\n",
+          "sha256": "fa86c5b8dd5755186e3ec1c394010795db10e89b8dba44348aeaa22a24da2dda"
+        },
+        "after": {
+          "line_start": 756,
+          "line_end": 763,
+          "text": "  Our results have also an impact on previous research on Gram points. Titch-\nmarsh [18] proved\n                          N\n                          X\n                                 Z(tn )Z(tn+1 ) ∼ −2(c + 1)N\n                        n=M +1\n\nfor any M as N → ∞, which implies already the existence of infinitely many\n",
+          "sha256": "a39f83ec4b41fb0952b9b8266150370e70ceec3dfddcc10a516a267ed5bda7af"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Gram points",
+            "line_end": 803,
+            "line_start": 722,
+            "mathematical_role": "Reinterprets the phase-zero specialization through Hardy's Z-function, failures of Gram's law, and moment bounds at Gram points."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 755,
+          "line_start": 722,
+          "title": "Gram points recast real-axis intersections and expose failures of sign alternation",
+          "unit_id": "full_openalex_w1553683873_u14",
+          "unit_type": "specialization and obstruction",
+          "why_material": "Specializes the phase roots to Gram points, introduces the real Hardy Z-function, relates sign changes to critical-line zeros, and interprets failures of Gram's law as negative real-axis intersections whose unbounded magnitude remains open."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Historical claims serve the mathematical obstruction: matching counts do not guarantee persistent interlacing or sign alternation.",
+          "representation_dependency": "Depends on the phase convention for θ and the sign normalization (-1)^nZ(tn); retain those conventions when comparing formulations.",
+          "unit_id": "full_openalex_w1553683873_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 720,
+            "line_start": 714,
+            "title": "Cauchy-Schwarz turns moments into a count of nonzero phase crossings",
+            "unit_id": "full_openalex_w1553683873_u13",
+            "unit_type": "inequality transfer",
+            "why_material": "Relates the squared first moment to the product of the nonzero-sample count and second moment, yielding the lower bound for genuine line crossings after inserting the two moment asymptotics."
+          },
+          {
+            "line_end": 797,
+            "line_start": 756,
+            "title": "Directional moments imply lower growth of fourth moments at Gram points",
+            "unit_id": "full_openalex_w1553683873_u15",
+            "unit_type": "moment specialization",
+            "why_material": "Translates the paper's first and second moment asymptotics into sums over Gram points and combines the second moment with Cauchy-Schwarz to force a fourth-moment lower bound, complementing prior upper-bound work."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Specializing the phase to the real axis makes negative intersections equivalent to failures of the normalized Gram sign rule, while the same discrete moments impose aggregate growth constraints on Hardy Z values at Gram points.",
+            "limit": "The source does not determine whether negative real intersections have unbounded magnitude, and aggregate moments do not restore pointwise Gram interlacing.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u03",
+              "full_openalex_w1553683873_u14",
+              "full_openalex_w1553683873_u15"
+            ],
+            "title": "Gram-law failure and Gram-point moments are two views of real-axis phase sampling"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 721,
+              "line_start": 721,
+              "reason": "Blank separator before the Gram-point section."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The earlier neighboring-product results motivate the question but are distinct from the derived single-point fourth-moment lower bound.",
+      "line_end": 797,
+      "line_start": 756,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the asymptotic relation between Gram index and ordinate and on the Hardy Z normalization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Translates the paper's first and second moment asymptotics into sums over Gram points and combines the second moment with Cauchy-Schwarz to force a fourth-moment lower bound, complementing prior upper-bound work.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Directional moments imply lower growth of fourth moments at Gram points",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u15.txt",
+      "unit_bytes": 1804,
+      "unit_id": "full_openalex_w1553683873_u15",
+      "unit_sha256": "bff1d599562fc05aeb83503ae6249ddf86aefcfe9371f8b6be52a26eaa181757",
+      "unit_type": "moment specialization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u15.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 748,
+          "line_end": 755,
+          "text": "\nrecently, Trudgian [19] has proved that it fails for a postive proportion of values of\nn as n → ∞. Since ζ( 12 + it) < 0 if and only if t is a Gram point for which Gram’s\nlaw is not true, it follows that there exist infinitely many intersections of the curve\nt 7→ ζ( 21 + it) with the negative real axis and we may ask whether those points all\nlie in a bounded interval or not. This seems to be a difficult question which is of\nparticular interest with respect to the conjectured denseness of ζ( 21 + iR) in the\ncomplex plane.\n",
+          "sha256": "4de74a339cb231c77bca55f55983329bc69e46e294be1514140b93b3f962cf2e"
+        },
+        "after": {
+          "line_start": 798,
+          "line_end": 805,
+          "text": "\n<!-- source-page: 14 -->\n\n14                           JUSTAS KALPOKAS, JÖRN STEUDING\n\n\n                                 6. Concluding Remarks\n\n",
+          "sha256": "ee9b90f0e6089cf781570066fa609911de2e5a23285003b22fee773cec997330"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Gram points",
+            "line_end": 803,
+            "line_start": 722,
+            "mathematical_role": "Reinterprets the phase-zero specialization through Hardy's Z-function, failures of Gram's law, and moment bounds at Gram points."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 797,
+          "line_start": 756,
+          "title": "Directional moments imply lower growth of fourth moments at Gram points",
+          "unit_id": "full_openalex_w1553683873_u15",
+          "unit_type": "moment specialization",
+          "why_material": "Translates the paper's first and second moment asymptotics into sums over Gram points and combines the second moment with Cauchy-Schwarz to force a fourth-moment lower bound, complementing prior upper-bound work."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The earlier neighboring-product results motivate the question but are distinct from the derived single-point fourth-moment lower bound.",
+          "representation_dependency": "Depends on the asymptotic relation between Gram index and ordinate and on the Hardy Z normalization.",
+          "unit_id": "full_openalex_w1553683873_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 755,
+            "line_start": 722,
+            "title": "Gram points recast real-axis intersections and expose failures of sign alternation",
+            "unit_id": "full_openalex_w1553683873_u14",
+            "unit_type": "specialization and obstruction",
+            "why_material": "Specializes the phase roots to Gram points, introduces the real Hardy Z-function, relates sign changes to critical-line zeros, and interprets failures of Gram's law as negative real-axis intersections whose unbounded magnitude remains open."
+          },
+          {
+            "line_end": 851,
+            "line_start": 804,
+            "title": "Averaging directional means suggests a small-versus-large intersection split",
+            "unit_id": "full_openalex_w1553683873_u16",
+            "unit_type": "geometric synthesis",
+            "why_material": "Integrates the conditional means e^{iφ}cosφ over direction to obtain 1/2, relates that value to a separate a-point derivative phenomenon, and proposes the heuristic that each directional intersection set divides roughly equally between very small and large magnitudes around its mean."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Specializing the phase to the real axis makes negative intersections equivalent to failures of the normalized Gram sign rule, while the same discrete moments impose aggregate growth constraints on Hardy Z values at Gram points.",
+            "limit": "The source does not determine whether negative real intersections have unbounded magnitude, and aggregate moments do not restore pointwise Gram interlacing.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u03",
+              "full_openalex_w1553683873_u14",
+              "full_openalex_w1553683873_u15"
+            ],
+            "title": "Gram-law failure and Gram-point moments are two views of real-axis phase sampling"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The final small/large split is explicitly heuristic; the mean statements retain their RH qualification where stated.",
+      "line_end": 851,
+      "line_start": 804,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on viewing directions modulo π, the identity 2e^{iφ}cosφ=1+e^{2iφ}, and the comparison with the stated a-point asymptotic.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integrates the conditional means e^{iφ}cosφ over direction to obtain 1/2, relates that value to a separate a-point derivative phenomenon, and proposes the heuristic that each directional intersection set divides roughly equally between very small and large magnitudes around its mean.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Averaging directional means suggests a small-versus-large intersection split",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u16.txt",
+      "unit_bytes": 3383,
+      "unit_id": "full_openalex_w1553683873_u16",
+      "unit_sha256": "ba39366eb145b37738b15b100a74a8eeb86cd2fb5330fd0bf7db762ad3e7f8b7",
+      "unit_type": "geometric synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u16.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 796,
+          "line_end": 803,
+          "text": "                               Z(tn )4 ≥ (1 + o(1))N (log N )2 .\n                         n≤N\n\n<!-- source-page: 14 -->\n\n14                           JUSTAS KALPOKAS, JÖRN STEUDING\n\n\n",
+          "sha256": "86d8fcfea8bcc82f136b5c45929fb652f75d884eadcb87baccd38d74290d0f13"
+        },
+        "after": {
+          "line_start": 852,
+          "line_end": 859,
+          "text": "\n     It is easy to extend the obtained results to Dirichlet L-functions (with very\nsimilar results), whereas the case of higher degree L-functions seems to be rather\ndifficult to handle. This is already visible in the case of Dedekind zeta-functions\nζK to quadratic number fields for which Conrey, Ghosh & Gonek [3] succeeded to\nprove the existence of infinitely many simple zeros by factoring ζK = ζL, where\n\n<!-- source-page: 15 -->\n",
+          "sha256": "a5759e15ed336594cde1987938235eb8bcdd4cf8c2eb3b4d6e6d333222108fcb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Concluding remarks",
+            "line_end": 866,
+            "line_start": 804,
+            "mathematical_role": "Synthesizes geometric meaning, averages directional means, proposes a small/large-value split, and identifies the extension boundary for other L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 851,
+          "line_start": 804,
+          "title": "Averaging directional means suggests a small-versus-large intersection split",
+          "unit_id": "full_openalex_w1553683873_u16",
+          "unit_type": "geometric synthesis",
+          "why_material": "Integrates the conditional means e^{iφ}cosφ over direction to obtain 1/2, relates that value to a separate a-point derivative phenomenon, and proposes the heuristic that each directional intersection set divides roughly equally between very small and large magnitudes around its mean."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The final small/large split is explicitly heuristic; the mean statements retain their RH qualification where stated.",
+          "representation_dependency": "Depends on viewing directions modulo π, the identity 2e^{iφ}cosφ=1+e^{2iφ}, and the comparison with the stated a-point asymptotic.",
+          "unit_id": "full_openalex_w1553683873_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 797,
+            "line_start": 756,
+            "title": "Directional moments imply lower growth of fourth moments at Gram points",
+            "unit_id": "full_openalex_w1553683873_u15",
+            "unit_type": "moment specialization",
+            "why_material": "Translates the paper's first and second moment asymptotics into sums over Gram points and combines the second moment with Cauchy-Schwarz to force a fourth-moment lower bound, complementing prior upper-bound work."
+          },
+          {
+            "line_end": 865,
+            "line_start": 853,
+            "title": "The method extends to Dirichlet L-functions but encounters higher-degree factorization barriers",
+            "unit_id": "full_openalex_w1553683873_u17",
+            "unit_type": "generalization boundary",
+            "why_material": "Records that the mechanism transfers easily to Dirichlet L-functions but becomes difficult for higher-degree L-functions, with quadratic Dedekind zeta treated only by exploiting the factorization ζK=ζL and zero symmetry."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The family e^{iφ}cosφ traces a circle of conditional directional means and averages to 1/2, offering a geometric account of the positive-real tendency and a heuristic small/large split.",
+            "limit": "Neither the mean circle nor the heuristic split proves density of critical-line zeta values in the complex plane.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u02",
+              "full_openalex_w1553683873_u16"
+            ],
+            "title": "Directional means form a coherent planar picture but not a density theorem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a scope/obstruction statement rather than a proved universal impossibility.",
+      "line_end": 865,
+      "line_start": 853,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the availability of a suitable factorization and compatible functional-equation symmetry.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records that the mechanism transfers easily to Dirichlet L-functions but becomes difficult for higher-degree L-functions, with quadratic Dedekind zeta treated only by exploiting the factorization ζK=ζL and zero symmetry.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The method extends to Dirichlet L-functions but encounters higher-degree factorization barriers",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1553683873_u17.txt",
+      "unit_bytes": 652,
+      "unit_id": "full_openalex_w1553683873_u17",
+      "unit_sha256": "85922ed3308e92d6e9f9cb709cb3ce1ed145c39ce7acf48724c55853ff01542b",
+      "unit_type": "generalization boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1553683873_u17.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 845,
+          "line_end": 852,
+          "text": "     1\nT 2 +ǫ . For a = 21 the main term is of lower order which is related to the curve t 7→\nζ( 21 + it) not passing as often as for any other value of a through the point 21 in the\ncomplex plane. Roughly speaking, it seems that for any φ the set ζ( 12 + iR) ∩ eiφ R\nsplits up into two subsets of approximately equal size consisting of elements having\neither very small or large absolute value; the mean eiφ cos φ separates these sets\nand the quantity 12 is the average over all these mean-values.\n\n",
+          "sha256": "d2ed2e637774347e0ce470af30a8a59f40e4e05f290074e21dd84cb7770ef428"
+        },
+        "after": {
+          "line_start": 866,
+          "line_end": 873,
+          "text": "\nAcknowledgements. The first named author was supported by an STIBET\nContact Fellowship of the Graduate Schools at Würzburg University; he is grateful\nfor this encouragement and wants to thank in particular Dr. Stephan Schröder-\nKöhne.\n\n\n                                         References\n",
+          "sha256": "361f28c93ca28f70bea613643ab3d45f3e4cddf8adb8553527ae4cd0710d5800"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eb6c282f00c86c91ba1b3e4a0ec5194b687e1d1e1b1ae35137a1b9bd74b17019",
+        "dossier_sha256": "0964d9506ce9afb13ae29baf2977eb02cb33f35fd2c41cc36976acd9daddbfec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Concluding remarks",
+            "line_end": 866,
+            "line_start": 804,
+            "mathematical_role": "Synthesizes geometric meaning, averages directional means, proposes a small/large-value split, and identifies the extension boundary for other L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 865,
+          "line_start": 853,
+          "title": "The method extends to Dirichlet L-functions but encounters higher-degree factorization barriers",
+          "unit_id": "full_openalex_w1553683873_u17",
+          "unit_type": "generalization boundary",
+          "why_material": "Records that the mechanism transfers easily to Dirichlet L-functions but becomes difficult for higher-degree L-functions, with quadratic Dedekind zeta treated only by exploiting the factorization ζK=ζL and zero symmetry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a scope/obstruction statement rather than a proved universal impossibility.",
+          "representation_dependency": "Depends on the availability of a suitable factorization and compatible functional-equation symmetry.",
+          "unit_id": "full_openalex_w1553683873_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 851,
+            "line_start": 804,
+            "title": "Averaging directional means suggests a small-versus-large intersection split",
+            "unit_id": "full_openalex_w1553683873_u16",
+            "unit_type": "geometric synthesis",
+            "why_material": "Integrates the conditional means e^{iφ}cosφ over direction to obtain 1/2, relates that value to a separate a-point derivative phenomenon, and proposes the heuristic that each directional intersection set divides roughly equally between very small and large magnitudes around its mean."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof depends not merely on a functional equation but on phase-factor expansions and Dirichlet-series kernels whose main terms remain tractable; factorization supplies that tractability in the cited quadratic Dedekind case.",
+            "limit": "The paper states difficulty for higher degree and one successful factored case, not a necessary-and-sufficient transfer criterion.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1553683873_u07",
+              "full_openalex_w1553683873_u08",
+              "full_openalex_w1553683873_u09",
+              "full_openalex_w1553683873_u10",
+              "full_openalex_w1553683873_u17"
+            ],
+            "title": "The contour method's portability is governed by structural factorization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "c0fd01b9ba690c07ad8393a1e1e7f3c2af8c402a5d16bd367d559f54d6ee0cb9"
+}

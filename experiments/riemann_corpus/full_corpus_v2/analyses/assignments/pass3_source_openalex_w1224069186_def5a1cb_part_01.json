@@ -1,0 +1,2355 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1224069186_def5a1cb_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1224069186",
+  "unit_count": 16,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the definition-to-equivalence chain; the later flow threshold in u002 supplies the dynamical interpretation.",
+      "line_end": 53,
+      "line_start": 28,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed formulas (1.1)-(1.3) have extraction-layout damage. Only the prose-supported transform relation, the H_0/xi scaling, and the real-zero equivalence are accepted; verify the original scan before reusing exact kernels or normalizations.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces the deformation family H_t and records that H_0 is a rescaled xi-function, so RH can be viewed as a statement about the zero geometry of one member of a continuous transform family. This is the representation on which every later threshold and close-pair argument operates.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Heat-deformed cosine transform turns RH into a real-zero condition",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u001.txt",
+      "unit_bytes": 1179,
+      "unit_id": "openalex_w1224069186_u001",
+      "unit_sha256": "109804dcd3b3f0f9863241d4b34e64f0db338effb02ead2e3d2c848ff50b53a7",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u001.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 20,
+          "line_end": 27,
+          "text": "This is done with the help of a spectacularly close pair of consecutive zeros of the Riemann zeta\nfunction.\n\n     Key words. Lehmer pairs of zeros, de Bruijn-Newman constant, Riemann Hypothesis.\n\n     AMS subject classifications. 30D10, 30D15, 65E05.\n\n\n",
+          "sha256": "84dad945203dfc023d5448da769cc286fee282791d16e0281dc9ff1aaae9156a"
+        },
+        "after": {
+          "line_start": 54,
+          "line_end": 61,
+          "text": "\n      In 1950, De Bruijn [2] established that\n\n   ∗ Received November 24, 1993. Accepted for publication December 13, 1993. Communicated\n\nby A. Ruttan. Corrected June 29, 1994. The original manuscript is stored in vol.1.1993/pp104-\n111.dir/pp104-111orig.ps\n   † Department of Mathematics, University of Hawaii, Honolulu, HI 96822, USA. (e-mail:\n",
+          "sha256": "217ba93816c59d64bc3b7c6c6bb306c82a266bf28e11fac88be369a167d25006"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 180,
+            "line_start": 28,
+            "mathematical_role": "Defines the heat-deformed cosine-transform family, relates its zero geometry to RH and the de Bruijn-Newman threshold, represents the family through its zeros, and states the Lehmer-pair lower-bound criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 53,
+          "line_start": 28,
+          "title": "Heat-deformed cosine transform turns RH into a real-zero condition",
+          "unit_id": "openalex_w1224069186_u001",
+          "unit_type": "representation-change",
+          "why_material": "Introduces the deformation family H_t and records that H_0 is a rescaled xi-function, so RH can be viewed as a statement about the zero geometry of one member of a continuous transform family. This is the representation on which every later threshold and close-pair argument operates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the definition-to-equivalence chain; the later flow threshold in u002 supplies the dynamical interpretation.",
+          "representation_dependency": "Displayed formulas (1.1)-(1.3) have extraction-layout damage. Only the prose-supported transform relation, the H_0/xi scaling, and the real-zero equivalence are accepted; verify the original scan before reusing exact kernels or normalizations.",
+          "unit_id": "openalex_w1224069186_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 98,
+            "line_start": 83,
+            "title": "Monotone real-zero flow and the de Bruijn-Newman threshold",
+            "unit_id": "openalex_w1224069186_u002",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Combines persistence of real zeros under increasing deformation time with a sharp threshold Λ, identifies RH with Λ at most zero, and explains Newman's opposite inequality as the claim that RH is at the boundary of instability under perturbation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The heat-deformation representation turns RH into a threshold question, while the Lehmer criterion converts an unusually small local zero gap, after global-background certification, into a quantitative obstruction to pushing the all-real-zero regime too far below time zero.",
+            "limit": "The conclusion is a solver- and pair-specific lower bound for Λ under an explicit case split; it neither proves RH nor establishes Λ≥0.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u001",
+              "openalex_w1224069186_u002",
+              "openalex_w1224069186_u004",
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014"
+            ],
+            "title": "Close-pair geometry as a heat-flow obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 25,
+              "line_start": 16,
+              "reason": "Abstract and indexing summarize the target bound and close-pair method but are represented in fuller source-local units below."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u001",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u001",
+          "spontaneous_reading": "The operative move is to place the Riemann ξ-function at time zero inside a continuously parameterized cosine-transform family, so its zero question can be studied as one slice of a deformation rather than as an isolated function."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u001",
+          "source_grounded_mathematics": "The unit defines H_t from Φ by a t-dependent exponential weighting in a cosine integral, states H_0(x)=ξ(x/2)/8, and therefore identifies RH with the assertion that every zero of H_0 is real.",
+          "conceptual_reading": "Embedding ξ in H_t reframes a static location-of-zeros assertion as zero geometry attached to a parameterized family. The deformation creates room for later monotonicity and threshold arguments, although those are not yet established here.",
+          "representation_or_bridge": "The scaling identity between H_0 and ξ is the bridge from the classical formulation to the transform family; the parameter t is the prospective bridge from function theory to zero motion.",
+          "boundary_or_failure": "This span alone gives neither persistence of real zeros nor a critical time, and it does not prove RH. The displayed kernel and normalization have extraction-layout damage and must not be reconstructed beyond the prose-supported relations.",
+          "uncertainty": "The H_0/ξ relation and real-zero equivalence are explicit, but exact kernel typography and normalization require verification against the original scan before symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with the H_t definition and H_0 equivalence in u001; line 55 attributes the two opening properties to de Bruijn but intervening lines are publication footnotes and page furniture.",
+      "line_end": 98,
+      "line_start": 83,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose and threshold statement are legible in the normalized text; no formula reconstruction is needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines persistence of real zeros under increasing deformation time with a sharp threshold Λ, identifies RH with Λ at most zero, and explains Newman's opposite inequality as the claim that RH is at the boundary of instability under perturbation.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Monotone real-zero flow and the de Bruijn-Newman threshold",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u002.txt",
+      "unit_bytes": 813,
+      "unit_id": "openalex_w1224069186_u002",
+      "unit_sha256": "65ac50279ec3042e9562795c12d97c81c7fcd9280f83b23a4198e81ca67ff3dd",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u002.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 75,
+          "line_end": 82,
+          "text": "ETNA\n                                                                          Kent State University\n                                                                           etna@mcs.kent.edu\n\n\n\n                                       G. Csordas et. al.                                  105\n\n",
+          "sha256": "79bbafe8ab017daf48bd5cd6d96a94796a02f62f5d7ac53bd1c10230b451598e"
+        },
+        "after": {
+          "line_start": 99,
+          "line_end": 106,
+          "text": "     There has been extensive recent research activity in finding lower bounds for\nΛ, and these results have been summarized in Csordas, Smith, and Varga [4]. In\nparticular, the best lower bound for Λ in that paper was\n\n(1.6)                                −4.379 · 10−6 < Λ.\n\n    It is known (cf. Csordas, Norfolk, and Varga [3]) that Ht , defined in (1.3), is an\neven real entire function of order 1 and maximal type, for each real t. Thus, from the\n",
+          "sha256": "284d3c17c6007ef18fd342381f0b5f5e9798c3a89e14ad98d7767b03fc7d6276"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 180,
+            "line_start": 28,
+            "mathematical_role": "Defines the heat-deformed cosine-transform family, relates its zero geometry to RH and the de Bruijn-Newman threshold, represents the family through its zeros, and states the Lehmer-pair lower-bound criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 98,
+          "line_start": 83,
+          "title": "Monotone real-zero flow and the de Bruijn-Newman threshold",
+          "unit_id": "openalex_w1224069186_u002",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Combines persistence of real zeros under increasing deformation time with a sharp threshold Λ, identifies RH with Λ at most zero, and explains Newman's opposite inequality as the claim that RH is at the boundary of instability under perturbation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with the H_t definition and H_0 equivalence in u001; line 55 attributes the two opening properties to de Bruijn but intervening lines are publication footnotes and page furniture.",
+          "representation_dependency": "The prose and threshold statement are legible in the normalized text; no formula reconstruction is needed.",
+          "unit_id": "openalex_w1224069186_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 53,
+            "line_start": 28,
+            "title": "Heat-deformed cosine transform turns RH into a real-zero condition",
+            "unit_id": "openalex_w1224069186_u001",
+            "unit_type": "representation-change",
+            "why_material": "Introduces the deformation family H_t and records that H_0 is a rescaled xi-function, so RH can be viewed as a statement about the zero geometry of one member of a continuous transform family. This is the representation on which every later threshold and close-pair argument operates."
+          },
+          {
+            "line_end": 128,
+            "line_start": 105,
+            "title": "Hadamard product encodes H_t by a summable symmetric zero set",
+            "unit_id": "openalex_w1224069186_u003",
+            "unit_type": "representation-change",
+            "why_material": "Re-expresses the entire function as a product over squared zero locations, records inverse-square summability, and fixes an even indexing convention. This converts an analytic-function question into controllable geometry and sums over zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The heat-deformation representation turns RH into a threshold question, while the Lehmer criterion converts an unusually small local zero gap, after global-background certification, into a quantitative obstruction to pushing the all-real-zero regime too far below time zero.",
+            "limit": "The conclusion is a solver- and pair-specific lower bound for Λ under an explicit case split; it neither proves RH nor establishes Λ≥0.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u001",
+              "openalex_w1224069186_u002",
+              "openalex_w1224069186_u004",
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014"
+            ],
+            "title": "Close-pair geometry as a heat-flow obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u002",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u002",
+          "spontaneous_reading": "Upward persistence of real zeros compresses the whole deformation into a single transition value Λ, making the boundary of the real-zero regime the central object."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u002",
+          "source_grounded_mathematics": "The source states that H_t has only real zeros for t at least 1/2, that this property persists for larger t once it holds, and that a real Λ exists with all zeros real exactly when t≥Λ. It records RH as Λ≤0 and Newman's conjecture as Λ≥0.",
+          "conceptual_reading": "A monotone property along t naturally becomes a threshold problem. Under both conjectured inequalities, time zero lies exactly at the transition, which explains the claim that RH would be stable only on one side of arbitrarily small perturbations.",
+          "representation_or_bridge": "Λ is an order parameter connecting the deformation variable to the binary zero-geometry property; it converts questions about every H_t into inequalities for one constant.",
+          "boundary_or_failure": "The threshold theorem does not establish either Λ≤0 or Λ≥0. The 'barely true' interpretation is conditional on Newman's conjecture together with RH.",
+          "uncertainty": "The prose-level threshold, persistence, and equivalences are clear in the extracted span; no damaged display is needed for this reading."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the convergence and indexing infrastructure required by the Lehmer interaction quantity in u004 and its later decomposition.",
+      "line_end": 128,
+      "line_start": 105,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The product layout is somewhat displaced but the prose, product factors, summability statement, and symmetry convention remain readable; scan verification is advisable for exact factor typography.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Re-expresses the entire function as a product over squared zero locations, records inverse-square summability, and fixes an even indexing convention. This converts an analytic-function question into controllable geometry and sums over zeros.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hadamard product encodes H_t by a summable symmetric zero set",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u003.txt",
+      "unit_bytes": 1182,
+      "unit_id": "openalex_w1224069186_u003",
+      "unit_sha256": "b7dbbcf65ce22b0aedd2756c1ceb87b6f5b75789bfe22920eb01d2152d4b5e84",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u003.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 97,
+          "line_end": 104,
+          "text": "so, as even slight perturbations of the zeta function give rise to zeros that are not on\nthe critical line.\n     There has been extensive recent research activity in finding lower bounds for\nΛ, and these results have been summarized in Csordas, Smith, and Varga [4]. In\nparticular, the best lower bound for Λ in that paper was\n\n(1.6)                                −4.379 · 10−6 < Λ.\n\n",
+          "sha256": "a8519afd8009fb04db6405bd6baab1219bd9da6e9f3ba901b6e20e8e05cb8c86"
+        },
+        "after": {
+          "line_start": 129,
+          "line_end": 136,
+          "text": "\n    Following Csordas, Smith, and Varga [4], we make the following\n\n     Definition 1.1. With k a positive integer, let xk (0) and xk+1 (0) (with 0 <\nxk (0) < xk+1 (0)) be two consecutive simple positive zeros of H0 , and set\n\n(1.10)                             ∆k := xk+1 (0) − xk (0).\n\n",
+          "sha256": "dae39087601548e6c2ed550871d3d15310d796400012d611f8cb4dc31e10a10b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 180,
+            "line_start": 28,
+            "mathematical_role": "Defines the heat-deformed cosine-transform family, relates its zero geometry to RH and the de Bruijn-Newman threshold, represents the family through its zeros, and states the Lehmer-pair lower-bound criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 128,
+          "line_start": 105,
+          "title": "Hadamard product encodes H_t by a summable symmetric zero set",
+          "unit_id": "openalex_w1224069186_u003",
+          "unit_type": "representation-change",
+          "why_material": "Re-expresses the entire function as a product over squared zero locations, records inverse-square summability, and fixes an even indexing convention. This converts an analytic-function question into controllable geometry and sums over zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides the convergence and indexing infrastructure required by the Lehmer interaction quantity in u004 and its later decomposition.",
+          "representation_dependency": "The product layout is somewhat displaced but the prose, product factors, summability statement, and symmetry convention remain readable; scan verification is advisable for exact factor typography.",
+          "unit_id": "openalex_w1224069186_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 98,
+            "line_start": 83,
+            "title": "Monotone real-zero flow and the de Bruijn-Newman threshold",
+            "unit_id": "openalex_w1224069186_u002",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Combines persistence of real zeros under increasing deformation time with a sharp threshold Λ, identifies RH with Λ at most zero, and explains Newman's opposite inequality as the claim that RH is at the boundary of instability under perturbation."
+          },
+          {
+            "line_end": 167,
+            "line_start": 130,
+            "title": "Lehmer pairs compare a tiny gap with interaction from all other zeros",
+            "unit_id": "openalex_w1224069186_u004",
+            "unit_type": "definition",
+            "why_material": "Defines a Lehmer pair by multiplying the squared gap between consecutive simple positive zeros by an interaction sum over every other signed zero. The criterion compresses a global zero configuration into one local-gap-versus-background test."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u003",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u003",
+          "spontaneous_reading": "Hadamard factorization replaces the entire function by a symmetric, inverse-square-summable zero configuration, exposing the data later interaction estimates actually use."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u003",
+          "source_grounded_mathematics": "For real t, H_t is stated to be an even real entire function of order one and maximal type, with H_t(0)>0. It is represented by a product over factors involving x²/x_j(t)², and the inverse squares of its zeros are summable; at t=0 the positive-side indexing is extended by x_{-j}=-x_j.",
+          "conceptual_reading": "The factorization compresses analytic-function information into zero locations while evenness removes redundant sign data. Summability is what makes later global interaction sums controllable rather than merely formal.",
+          "representation_or_bridge": "The Hadamard product bridges an entire function to a discrete point configuration, and the signed indexing bridges even symmetry to sums over all nonzero integer indices.",
+          "boundary_or_failure": "This representation does not by itself show that the relevant zeros are real or simple, nor does it supply the later Lehmer inequality. Exact product-factor typography is representation-sensitive.",
+          "uncertainty": "The prose, symmetry convention, and inverse-square convergence are legible; the exact displayed factor should be scan-checked before formula-level reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The inverse-square convergence in u003 explains why the interaction sum is well-defined; the running header at lines 141-149 is inert page furniture inside the continued definition.",
+      "line_end": 167,
+      "line_start": 130,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The summation formula is readable apart from ordinary PDF layout artifacts; its excluded indices and signed-zero range are clarified in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a Lehmer pair by multiplying the squared gap between consecutive simple positive zeros by an interaction sum over every other signed zero. The criterion compresses a global zero configuration into one local-gap-versus-background test.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lehmer pairs compare a tiny gap with interaction from all other zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u004.txt",
+      "unit_bytes": 1517,
+      "unit_id": "openalex_w1224069186_u004",
+      "unit_sha256": "a3dd83285ce859fd4df4a12a609fd66bcd87a7b2403f25dc579aa75cd10b3f9a",
+      "unit_type": "definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u004.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 122,
+          "line_end": 129,
+          "text": "\n\nIt is convenient to order the zeros of H0 , {xj (0)}∞\n                                                    j=1 , in Re z > 0 according to\nincreasing modulus, and, from the evenness of H0 , we set\n\n(1.9)                        x−j (0) := −xj (0)      (j = 1, 2, · · ·).\n\n",
+          "sha256": "9573c76930eb6af93a92dfb96917ad4803add626aa8480a382695a9eff95c2a4"
+        },
+        "after": {
+          "line_start": 168,
+          "line_end": 175,
+          "text": "     With Definition 1.1, we further have from Csordas, Smith, and Varga [4] the\nfollowing result.\n     Theorem 1.1. Let {xk (0); xk+1 (0)} be a Lehmer pair of zeros of H0 . If (cf.\n(1.12)) gk (0) ≤ 0, then Λ > 0. If gk (0) > 0, set\n\n                                           (1 − 54 ∆2k · gk (0))4/5 − 1\n(1.13)                          λk :=                                   ,\n                                                      8gk (0)\n",
+          "sha256": "fbcc1702b8bd8daada77116b3ca757e0460d54d02f532be8d50274f070818687"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 180,
+            "line_start": 28,
+            "mathematical_role": "Defines the heat-deformed cosine-transform family, relates its zero geometry to RH and the de Bruijn-Newman threshold, represents the family through its zeros, and states the Lehmer-pair lower-bound criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 167,
+          "line_start": 130,
+          "title": "Lehmer pairs compare a tiny gap with interaction from all other zeros",
+          "unit_id": "openalex_w1224069186_u004",
+          "unit_type": "definition",
+          "why_material": "Defines a Lehmer pair by multiplying the squared gap between consecutive simple positive zeros by an interaction sum over every other signed zero. The criterion compresses a global zero configuration into one local-gap-versus-background test."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The inverse-square convergence in u003 explains why the interaction sum is well-defined; the running header at lines 141-149 is inert page furniture inside the continued definition.",
+          "representation_dependency": "The summation formula is readable apart from ordinary PDF layout artifacts; its excluded indices and signed-zero range are clarified in prose.",
+          "unit_id": "openalex_w1224069186_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 128,
+            "line_start": 105,
+            "title": "Hadamard product encodes H_t by a summable symmetric zero set",
+            "unit_id": "openalex_w1224069186_u003",
+            "unit_type": "representation-change",
+            "why_material": "Re-expresses the entire function as a product over squared zero locations, records inverse-square summability, and fixes an even indexing convention. This converts an analytic-function question into controllable geometry and sums over zeros."
+          },
+          {
+            "line_end": 178,
+            "line_start": 168,
+            "title": "A Lehmer pair yields a quantitative lower bound for Λ",
+            "unit_id": "openalex_w1224069186_u005",
+            "unit_type": "theorem",
+            "why_material": "States the bridge from static zero geometry to heat-flow obstruction: nonpositive interaction would force Λ positive, while positive interaction produces an explicit negative λ_k bounded above by Λ."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The heat-deformation representation turns RH into a threshold question, while the Lehmer criterion converts an unusually small local zero gap, after global-background certification, into a quantitative obstruction to pushing the all-real-zero regime too far below time zero.",
+            "limit": "The conclusion is a solver- and pair-specific lower bound for Λ under an explicit case split; it neither proves RH nor establishes Λ≥0.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u001",
+              "openalex_w1224069186_u002",
+              "openalex_w1224069186_u004",
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014"
+            ],
+            "title": "Close-pair geometry as a heat-flow obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u004",
+          "spontaneous_reading": "A Lehmer pair is detected by comparing one exceptionally small consecutive gap with the accumulated inverse-square influence of every other signed zero, compressing local and global geometry into one dimensionless test."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u004",
+          "source_grounded_mathematics": "For consecutive simple positive zeros x_k and x_{k+1}, the source defines their gap Δ_k and an interaction g_k(0) summing reciprocal squared distances from both endpoints to all other positive and negative indexed zeros. The pair is Lehmer when Δ_k²g_k(0)<4/5, and convergence follows from inverse-square summability.",
+          "conceptual_reading": "The criterion measures whether the close pair is isolated strongly enough relative to the background zero configuration. A tiny local scale alone is insufficient; it must be certified against the full environment.",
+          "representation_or_bridge": "The scalar product Δ_k²g_k(0) bridges local spacing and a global zero-field, providing the intermediate object later fed into the heat-flow theorem.",
+          "boundary_or_failure": "The definition requires consecutiveness, simplicity, positivity, and the stated exclusions in the signed sum. It neither certifies a particular pair nor gives a bound for Λ without the subsequent theorem.",
+          "uncertainty": "The excluded indices and signed range are prose-clear, while exact summation typography should be checked against the scan before implementation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Depends on the gap and interaction definitions in u004 and is instantiated only after u013 certifies the selected pair.",
+      "line_end": 178,
+      "line_start": 168,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The case split and bound are prose-clear; verify the exact exponent and normalization in formula (1.13) against the scan before symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the bridge from static zero geometry to heat-flow obstruction: nonpositive interaction would force Λ positive, while positive interaction produces an explicit negative λ_k bounded above by Λ.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Lehmer pair yields a quantitative lower bound for Λ",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u005.txt",
+      "unit_bytes": 598,
+      "unit_id": "openalex_w1224069186_u005",
+      "unit_sha256": "06a0e730e81c2a7875610a67f848861829b7fce66ecd3a31b2964d150a8306d8",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u005.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 160,
+          "line_end": 167,
+          "text": "here (and in what follows), the prime in the above summation means that j 6= 0,\nso that the above summation extends over all positive and negative integers with\nj 6= k, k + 1, 0.\n     We remark that the convergence of the sum in (1.12) is guaranteed by the con-\n                    ∞\n                    X\nvergence of the sum     |xj (0)|−2 (cf. (1.8)).\n                          j=1\n",
+          "sha256": "feeb1f368257ba5c0296410b589ff8db17c147ff29c78acf3f29bd314a9169a7"
+        },
+        "after": {
+          "line_start": 179,
+          "line_end": 186,
+          "text": "\n\n    2. Application of Theorem 1.1. For our applications below, let N (T ) denote\nthe number of zeros of the Riemann zeta function ζ(s), with s = σ + it, in the rect-\nangle 0 ≤ σ ≤ 1 and 0 ≤ t ≤ T . The following result was proved by Backlund [1].\n\n      Theorem 2.1. N (T ) satisfies\n                                                \u0012        \u0013\n",
+          "sha256": "979be107b3d3478b34345c119308d20e02dc9cbe79c913db3614f1ff6f41a23d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 180,
+            "line_start": 28,
+            "mathematical_role": "Defines the heat-deformed cosine-transform family, relates its zero geometry to RH and the de Bruijn-Newman threshold, represents the family through its zeros, and states the Lehmer-pair lower-bound criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 178,
+          "line_start": 168,
+          "title": "A Lehmer pair yields a quantitative lower bound for Λ",
+          "unit_id": "openalex_w1224069186_u005",
+          "unit_type": "theorem",
+          "why_material": "States the bridge from static zero geometry to heat-flow obstruction: nonpositive interaction would force Λ positive, while positive interaction produces an explicit negative λ_k bounded above by Λ."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Depends on the gap and interaction definitions in u004 and is instantiated only after u013 certifies the selected pair.",
+          "representation_dependency": "The case split and bound are prose-clear; verify the exact exponent and normalization in formula (1.13) against the scan before symbolic reuse.",
+          "unit_id": "openalex_w1224069186_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 167,
+            "line_start": 130,
+            "title": "Lehmer pairs compare a tiny gap with interaction from all other zeros",
+            "unit_id": "openalex_w1224069186_u004",
+            "unit_type": "definition",
+            "why_material": "Defines a Lehmer pair by multiplying the squared gap between consecutive simple positive zeros by an interaction sum over every other signed zero. The criterion compresses a global zero configuration into one local-gap-versus-background test."
+          },
+          {
+            "line_end": 200,
+            "line_start": 181,
+            "title": "Backlund zero counting gives a unit-interval density bound",
+            "unit_id": "openalex_w1224069186_u006",
+            "unit_type": "computational-certification",
+            "why_material": "Turns a global zero-counting formula with explicit error control into the local estimate N(T+1)-N(T) at most log T above a fixed height. This supplies a coarse but certified density envelope for uncomputed zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The heat-deformation representation turns RH into a threshold question, while the Lehmer criterion converts an unusually small local zero gap, after global-background certification, into a quantitative obstruction to pushing the all-real-zero regime too far below time zero.",
+            "limit": "The conclusion is a solver- and pair-specific lower bound for Λ under an explicit case split; it neither proves RH nor establishes Λ≥0.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u001",
+              "openalex_w1224069186_u002",
+              "openalex_w1224069186_u004",
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014"
+            ],
+            "title": "Close-pair geometry as a heat-flow obstruction"
+          },
+          {
+            "claim": "Once the gap-interaction product is tiny, the leading gap-squared contribution controls the Lehmer lower bound, making the final Λ estimate insensitive to coarse upper control of the background interaction.",
+            "limit": "The full Taylor expansion is extraction-damaged, and the stability conclusion is local to the small-product regime documented for this pair.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014",
+              "openalex_w1224069186_u015"
+            ],
+            "title": "Why a conservative global estimate still yields a sharp lower bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u005",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u005",
+          "spontaneous_reading": "The theorem is the decisive bridge: a certified close-pair interaction becomes an obstruction to extending the all-real-zero regime too far backward in deformation time."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u005",
+          "source_grounded_mathematics": "For a Lehmer pair, the theorem splits on g_k(0): a nonpositive value implies Λ>0, while a positive value defines a negative λ_k by formula (1.13) and guarantees λ_k≤Λ.",
+          "conceptual_reading": "Static zero geometry yields dynamical information because the gap-and-background statistic controls how far the real-zero configuration can persist under reverse deformation. The case split isolates a stronger positive-Λ conclusion from an explicit negative lower bound.",
+          "representation_or_bridge": "λ_k is the numerical bridge from the pair statistic to the global threshold Λ; the Lehmer condition is the admissibility gate for applying it.",
+          "boundary_or_failure": "The result is conditional on having a Lehmer pair and supplies only a lower bound for Λ. It does not prove RH, Newman's conjecture, or the sign of Λ in the positive-g case.",
+          "uncertainty": "The logical case split and λ_k≤Λ conclusion are clear, but the exact exponent and normalization in the extracted formula (1.13) require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The appendix proof is retained separately as u016; u007 consumes this local density bound to control an inverse-square tail.",
+      "line_end": 200,
+      "line_start": 181,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The principal zero-count formula has minor layout damage, but its role and the explicit error and unit-interval bounds are legible; exact constants should be scan-checked before recomputation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns a global zero-counting formula with explicit error control into the local estimate N(T+1)-N(T) at most log T above a fixed height. This supplies a coarse but certified density envelope for uncomputed zeros.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Backlund zero counting gives a unit-interval density bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u006.txt",
+      "unit_bytes": 945,
+      "unit_id": "openalex_w1224069186_u006",
+      "unit_sha256": "ffa223112d1c9a9439c2c8e351d44ea349d8f42dee26e0a4c992893a4957cab6",
+      "unit_type": "computational-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u006.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 173,
+          "line_end": 180,
+          "text": "                                           (1 − 54 ∆2k · gk (0))4/5 − 1\n(1.13)                          λk :=                                   ,\n                                                      8gk (0)\nso that −1/[8gk (0)] < λk < 0. Then, the de Bruijn-Newman constant Λ satisfies\n\n(1.14)                                           λk ≤ Λ.\n\n\n",
+          "sha256": "f9cfd68c446846d5bf7642655b8d2a265191bcde0d94a0ef7d19520998ea5fa2"
+        },
+        "after": {
+          "line_start": 201,
+          "line_end": 208,
+          "text": "\n    This brings us to\n    Lemma 2.2. . Suppose Λ < 0, so that all zeros, xj := xj (0), of H0 are real (cf.\n(1.5)) and recall that xj = 2γj , where 12 + iγj is the associated zero of ζ(s). Then,\n\n                    X∞\n                        1    log([γm ] − 1) + 1\n(2.4)\n",
+          "sha256": "f25ff0aee09f52fed9dd9f0e98b036b8a87c9a0ddc084fd3fef0c529c37d3dc0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 200,
+          "line_start": 181,
+          "title": "Backlund zero counting gives a unit-interval density bound",
+          "unit_id": "openalex_w1224069186_u006",
+          "unit_type": "computational-certification",
+          "why_material": "Turns a global zero-counting formula with explicit error control into the local estimate N(T+1)-N(T) at most log T above a fixed height. This supplies a coarse but certified density envelope for uncomputed zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The appendix proof is retained separately as u016; u007 consumes this local density bound to control an inverse-square tail.",
+          "representation_dependency": "The principal zero-count formula has minor layout damage, but its role and the explicit error and unit-interval bounds are legible; exact constants should be scan-checked before recomputation.",
+          "unit_id": "openalex_w1224069186_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 178,
+            "line_start": 168,
+            "title": "A Lehmer pair yields a quantitative lower bound for Λ",
+            "unit_id": "openalex_w1224069186_u005",
+            "unit_type": "theorem",
+            "why_material": "States the bridge from static zero geometry to heat-flow obstruction: nonpositive interaction would force Λ positive, while positive interaction produces an explicit negative λ_k bounded above by Λ."
+          },
+          {
+            "line_end": 245,
+            "line_start": 202,
+            "title": "Convert local zero counts into an inverse-square tail bound",
+            "unit_id": "openalex_w1224069186_u007",
+            "unit_type": "proof-fragment",
+            "why_material": "Groups zeros into unit-height bins, bounds each bin using u006, and compares the resulting logarithm-weighted reciprocal-square series with an integral. This is a reusable route from density control to a summable global tail estimate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global sum over all zeros can be certified from finitely many accurate local zeros by partitioning it into regions, using nearest-endpoint domination on finite blocks, and applying a zero-density-derived inverse-square bound to the infinite tail.",
+            "limit": "This certificate uses the Λ<0 real-zero branch and contains formula-sensitive tail steps that require the original scan before exact replay.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u009",
+              "openalex_w1224069186_u010",
+              "openalex_w1224069186_u011",
+              "openalex_w1224069186_u012",
+              "openalex_w1224069186_u013"
+            ],
+            "title": "Finite-window certificate for a global zero interaction"
+          },
+          {
+            "claim": "An explicit global counting formula can be converted into unit-interval density control and then into a convergent inverse-square tail estimate, providing analytic coverage beyond the computed zero window.",
+            "limit": "The constants and threshold are those stated in this source, and the appendix's formula-damaged main-term algebra needs scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u016"
+            ],
+            "title": "Zero counting as the analytic backstop for computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u006",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u006",
+          "spontaneous_reading": "An explicit global zero-count formula is converted into a coarse unit-height density envelope, giving certified control where individual zeros will not be computed."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u006",
+          "source_grounded_mathematics": "The source defines N(T) as the number of zeta zeros in the critical rectangle up to height T, states Backlund's main-term formula with an explicit error bound, and derives N(T+1)-N(T)≤log T for T≥3·10^8.",
+          "conceptual_reading": "Taking a finite difference turns global asymptotic counting information into local occupancy control. Precision is deliberately traded for a uniform bound suitable for summing contributions from an uncomputed tail.",
+          "representation_or_bridge": "N(T+1)-N(T) bridges continuous height ranges to counts in unit bins, which can later weight reciprocal-square estimates.",
+          "boundary_or_failure": "The density bound applies only above the stated threshold and is coarse; it does not locate zeros or certify individual ordinates. Exact constants in the extracted counting display should not be recomputed without the scan.",
+          "uncertainty": "The role and final unit-interval inequality are explicit, while minor layout damage makes scan verification appropriate for exact numerical replay."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Assumes Λ<0 so the H_0 zeros are real and correspond to zeta ordinates; the bound is later applied at the far-window endpoint in u012.",
+      "line_end": 245,
+      "line_start": 202,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Summation alignment in lines 225-237 is degraded, but the binning, appeal to Lemma 2.1, integral comparison, and resulting bound are recoverable from checked prose. Verify the scan before formula-level extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Groups zeros into unit-height bins, bounds each bin using u006, and compares the resulting logarithm-weighted reciprocal-square series with an integral. This is a reusable route from density control to a summable global tail estimate.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convert local zero counts into an inverse-square tail bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u007.txt",
+      "unit_bytes": 2002,
+      "unit_id": "openalex_w1224069186_u007",
+      "unit_sha256": "f657eb060553a15c01a32526601027cb4f0243dbff25dc680ae6c6e8e62a6bc4",
+      "unit_type": "proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u007.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 194,
+          "line_end": 201,
+          "text": "\n   A straightforward calculation, based on (2.1) and (2.2), gives the following result,\nwhose proof is given (for completeness) in the Appendix.\n   Lemma 2.1. N (T ) satisfies\n\n(2.3)                     N (T + 1) − N (T ) ≤ log T               (T ≥ 3 · 108 ).\n\n\n",
+          "sha256": "9ddbdc95df0730b39b8fce22956e66336bdbbe9c6a4198caf99b374b48a41741"
+        },
+        "after": {
+          "line_start": 246,
+          "line_end": 253,
+          "text": "     In their important numerical study of the zeros of the Riemann ζ-function on the\ncritical line, van de Lune, te Riele, and Winter [5] found a spectacularly close pair of\nconsecutive simple zeros, namely, 12 + iγK and 12 + iγK+1 , for which (cf. (2.8))\n               γK+1 − γK = 0.000 108 569 6            (K := 1, 048, 449, 114).\nThen, 2γK and 2γK+1 are zeros of the function H0 , so that (cf. (1.4))\n      \u001a\n              xK := xK (0) = 2γK = 7.777 177 720 045 702 406 · 108 , and\n(2.5)\n",
+          "sha256": "e447073ea9b7b4fc58c74a9efe5468a9ac5268133e789f25b5f12f4c468f660f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 245,
+          "line_start": 202,
+          "title": "Convert local zero counts into an inverse-square tail bound",
+          "unit_id": "openalex_w1224069186_u007",
+          "unit_type": "proof-fragment",
+          "why_material": "Groups zeros into unit-height bins, bounds each bin using u006, and compares the resulting logarithm-weighted reciprocal-square series with an integral. This is a reusable route from density control to a summable global tail estimate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Assumes Λ<0 so the H_0 zeros are real and correspond to zeta ordinates; the bound is later applied at the far-window endpoint in u012.",
+          "representation_dependency": "Summation alignment in lines 225-237 is degraded, but the binning, appeal to Lemma 2.1, integral comparison, and resulting bound are recoverable from checked prose. Verify the scan before formula-level extraction.",
+          "unit_id": "openalex_w1224069186_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 200,
+            "line_start": 181,
+            "title": "Backlund zero counting gives a unit-interval density bound",
+            "unit_id": "openalex_w1224069186_u006",
+            "unit_type": "computational-certification",
+            "why_material": "Turns a global zero-counting formula with explicit error control into the local estimate N(T+1)-N(T) at most log T above a fixed height. This supplies a coarse but certified density envelope for uncomputed zeros."
+          },
+          {
+            "line_end": 270,
+            "line_start": 246,
+            "title": "Targeted high-precision computation around an exceptional close pair",
+            "unit_id": "openalex_w1224069186_u008",
+            "unit_type": "computational-certification",
+            "why_material": "Explains why a known close consecutive pair was recomputed with many neighbors at high precision, why only a relatively small local window may suffice for the global interaction estimate, and why the search evidence does not establish that the pair is globally optimal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global sum over all zeros can be certified from finitely many accurate local zeros by partitioning it into regions, using nearest-endpoint domination on finite blocks, and applying a zero-density-derived inverse-square bound to the infinite tail.",
+            "limit": "This certificate uses the Λ<0 real-zero branch and contains formula-sensitive tail steps that require the original scan before exact replay.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u009",
+              "openalex_w1224069186_u010",
+              "openalex_w1224069186_u011",
+              "openalex_w1224069186_u012",
+              "openalex_w1224069186_u013"
+            ],
+            "title": "Finite-window certificate for a global zero interaction"
+          },
+          {
+            "claim": "An explicit global counting formula can be converted into unit-interval density control and then into a convergent inverse-square tail estimate, providing analytic coverage beyond the computed zero window.",
+            "limit": "The constants and threshold are those stated in this source, and the appendix's formula-damaged main-term algebra needs scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u016"
+            ],
+            "title": "Zero counting as the analytic backstop for computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u007",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u007",
+          "spontaneous_reading": "The proof bins zeros by unit height, replaces each bin by its worst reciprocal-square weight, and then replaces the remaining series by an integral, turning density control into a tail certificate."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u007",
+          "source_grounded_mathematics": "Assuming Λ<0, the H_0 zeros are real and satisfy x_j=2γ_j. The proof groups ordinates into unit intervals, bounds each group using N(j+1)-N(j)≤log j, and compares the resulting logarithm-weighted reciprocal-square series with an integral to obtain the stated tail bound.",
+          "conceptual_reading": "This is a reusable count-to-mass conversion: local cardinality bounds control a global summable quantity when paired with a decaying weight. It supplies analytic coverage beyond any finite computed window.",
+          "representation_or_bridge": "The chain is zero ordinates → unit-bin counts → a weighted series → an integral bound; x_j=2γ_j transfers the result back to H_0's zero representation.",
+          "boundary_or_failure": "The argument is on the Λ<0 branch and requires the starting height to exceed the density threshold. It bounds an aggregate tail, not individual zeros, and some summation alignment is extraction-damaged.",
+          "uncertainty": "The binning and integral-comparison mechanism is prose-supported, but the exact displayed indices and factors should be verified from the original scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Supplies the empirical target and search limitations for the analytic decomposition beginning in u009; it distinguishes verified local computation from heuristic confidence that no better early pair was missed.",
+      "line_end": 270,
+      "line_start": 246,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The decimal zero data and index are legible, but any numerical replay should use the retained original rather than retyped extracted typography.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why a known close consecutive pair was recomputed with many neighbors at high precision, why only a relatively small local window may suffice for the global interaction estimate, and why the search evidence does not establish that the pair is globally optimal.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Targeted high-precision computation around an exceptional close pair",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u008.txt",
+      "unit_bytes": 1942,
+      "unit_id": "openalex_w1224069186_u008",
+      "unit_sha256": "742eceb40cbc5db91d2b0410eb1f629fe46a42eb6a818c2723ac7dd44a75faa7",
+      "unit_type": "computational-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u008.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 238,
+          "line_end": 245,
+          "text": "\nthe last inequality following from (2.3) of Lemma 2.1. But, this last sum is bounded\nabove by\n                          Z\n                         1 ∞       log u du   log([γm ] − 1) + 1\n                                            =                    ,\n                         4 [γm ]−1    u2         4([γm ] − 1)\nwhich is the desired result of (2.4). 2\n",
+          "sha256": "c56df1d1b02896098b578654843ea835303e64ce243337b9788baa53170b1302"
+        },
+        "after": {
+          "line_start": 271,
+          "line_end": 278,
+          "text": "     The proof of the next lemma is patterned after Lemma 5.1 of Csordas, Smith,\nand Varga [4].\n     Lemma 2.3. Suppose Λ < 0. Then, the pair of consecutive simple positive zeros\n{xK (0); xK+1 (0)} in (2.5) is a Lehmer pair of zeros of H0 .\nProof. We first establish an upper bound for gK (0) of (1.12) for K := 1, 048, 449, 114.\nWriting for convenience xj := xj (0), gK (0) can be expressed as the sum of the fol-\nlowing three terms:\n(2.6)         gK (0) = MK,n + IK,n+1 + RK,K+n+2 , where n := 9, 998,\n",
+          "sha256": "7283db010505b6d3afa95be236bb1b95f261a86651fc11ac8852954581933e26"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 270,
+          "line_start": 246,
+          "title": "Targeted high-precision computation around an exceptional close pair",
+          "unit_id": "openalex_w1224069186_u008",
+          "unit_type": "computational-certification",
+          "why_material": "Explains why a known close consecutive pair was recomputed with many neighbors at high precision, why only a relatively small local window may suffice for the global interaction estimate, and why the search evidence does not establish that the pair is globally optimal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Supplies the empirical target and search limitations for the analytic decomposition beginning in u009; it distinguishes verified local computation from heuristic confidence that no better early pair was missed.",
+          "representation_dependency": "The decimal zero data and index are legible, but any numerical replay should use the retained original rather than retyped extracted typography.",
+          "unit_id": "openalex_w1224069186_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 245,
+            "line_start": 202,
+            "title": "Convert local zero counts into an inverse-square tail bound",
+            "unit_id": "openalex_w1224069186_u007",
+            "unit_type": "proof-fragment",
+            "why_material": "Groups zeros into unit-height bins, bounds each bin using u006, and compares the resulting logarithm-weighted reciprocal-square series with an integral. This is a reusable route from density control to a summable global tail estimate."
+          },
+          {
+            "line_end": 315,
+            "line_start": 271,
+            "title": "Partition the global interaction into local, intermediate, and remote blocks",
+            "unit_id": "openalex_w1224069186_u009",
+            "unit_type": "decomposition",
+            "why_material": "Decomposes g_K into a finite block centered on the close pair, a large asymmetric intermediate block, and a remote two-sided tail. The partition lets each region be controlled by the information best suited to it rather than demanding all zeros at equal precision."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Targeted high-precision computation around a spectacularly close pair supports a rigorously derived improved Λ bound even though the broader search procedure does not conclusively rule out a better pair among the zeros considered.",
+            "limit": "The source reports limited search completeness and therefore supports the achieved bound, not global optimality of the selected pair.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u008",
+              "openalex_w1224069186_u014"
+            ],
+            "title": "Strong numerical evidence without an optimality claim"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u008",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u008",
+          "spontaneous_reading": "The computation concentrates precision around an already exceptional close pair because that local feature has disproportionate leverage on the global interaction test, while analytic bounds can cover the distant zeros."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u008",
+          "source_grounded_mathematics": "The source identifies consecutive zeta zeros at index K with a very small ordinate gap, transfers them to consecutive H_0 zeros by x=2γ, and reports high-precision recomputation of many neighboring zeros to estimate g_K(0). It also states that earlier computations established realness for the first 1.5·10^9 zeros without accurate values.",
+          "conceptual_reading": "The strategy is targeted computation: spend numerical precision near a high-leverage anomaly and use coarser certification elsewhere. The source explicitly separates evidence for a strong pair from evidence that the pair is globally best.",
+          "representation_or_bridge": "Doubling the ordinates bridges critical-line zeta zeros to H_0 zeros; the local high-precision window then supplies inputs to a statistic whose definition is global.",
+          "boundary_or_failure": "The searches do not conclusively exclude a closer or more effective pair among the ranges considered, so no optimality claim follows. The reported computation is evidence supplied by the source, not reproduced in this span.",
+          "uncertainty": "The qualitative computation and search limitations are clear; decimal ordinates and gaps should be taken from the retained original for numerical replay."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Sets n=9998 and defines the three quantities bounded independently in u010-u012; the running header at lines 280-288 does not alter the definitions.",
+      "line_end": 315,
+      "line_start": 271,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The three displayed sums are sufficiently readable together with the prose, though their exact index endpoints should be checked against the scan before implementation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes g_K into a finite block centered on the close pair, a large asymmetric intermediate block, and a remote two-sided tail. The partition lets each region be controlled by the information best suited to it rather than demanding all zeros at equal precision.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partition the global interaction into local, intermediate, and remote blocks",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u009.txt",
+      "unit_bytes": 2162,
+      "unit_id": "openalex_w1224069186_u009",
+      "unit_sha256": "fdcd15352b01ddf16f8e552154511860792ad06399e0e52eb9c77b411c152e9f",
+      "unit_type": "decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u009.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 263,
+          "line_end": 270,
+          "text": "for Λ that are even closer to 0 (see the discussion in Csordas, Smith, and Varga [4]\nand Odlyzko [8]). However, at this time we do not know of another pair that is likely\nto produce a better bound. The computations of van de Lune, te Riele, and Winter\n[5] do not prove conclusively that there is no closer pair among the first 1.5 · 109 zeros\nof the zeta function. However, given the search method used, it seems unlikely that\nsuch a pair was missed. The computations of Odlyzko [8] near the zero 12 + iγm of the\nζ-function, with m = 1020 , as well as in some other high intervals, did find some close\nLehmer pairs, but none of them seem to lead to results as good as we obtain here.\n",
+          "sha256": "6c887530a58e23c8a700254a4ba6f86945d0d6d03050915d12fae6e96e577b81"
+        },
+        "after": {
+          "line_start": 316,
+          "line_end": 323,
+          "text": "    Consider first MK,n . Since Λ < 0 by hypothesis, it follows that all the zeros of H0\nare real and simple (cf. Lemma 2.2 of Csordas, Smith, and Varga [4]). Hence, from\nthe definition of MK,n ,\n\n                             X\n                            K+n+1        \u001a                                                  \u001b\n                                                  1                1\n             MK,n      <                                   +\n",
+          "sha256": "aac63672bbc19b691346365457155feba4971b6277432ce01986006578c560d9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 315,
+          "line_start": 271,
+          "title": "Partition the global interaction into local, intermediate, and remote blocks",
+          "unit_id": "openalex_w1224069186_u009",
+          "unit_type": "decomposition",
+          "why_material": "Decomposes g_K into a finite block centered on the close pair, a large asymmetric intermediate block, and a remote two-sided tail. The partition lets each region be controlled by the information best suited to it rather than demanding all zeros at equal precision."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Sets n=9998 and defines the three quantities bounded independently in u010-u012; the running header at lines 280-288 does not alter the definitions.",
+          "representation_dependency": "The three displayed sums are sufficiently readable together with the prose, though their exact index endpoints should be checked against the scan before implementation.",
+          "unit_id": "openalex_w1224069186_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 270,
+            "line_start": 246,
+            "title": "Targeted high-precision computation around an exceptional close pair",
+            "unit_id": "openalex_w1224069186_u008",
+            "unit_type": "computational-certification",
+            "why_material": "Explains why a known close consecutive pair was recomputed with many neighbors at high precision, why only a relatively small local window may suffice for the global interaction estimate, and why the search evidence does not establish that the pair is globally optimal."
+          },
+          {
+            "line_end": 351,
+            "line_start": 316,
+            "title": "Bound the finite local block by the two adjacent outer gaps",
+            "unit_id": "openalex_w1224069186_u010",
+            "unit_type": "proof-fragment",
+            "why_material": "Uses realness and simplicity under the Λ<0 branch to dominate every term in the local computed block by distances to the nearest zero outside the close pair, reducing thousands of terms to two measured neighboring gaps and an explicit conservative bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global sum over all zeros can be certified from finitely many accurate local zeros by partitioning it into regions, using nearest-endpoint domination on finite blocks, and applying a zero-density-derived inverse-square bound to the infinite tail.",
+            "limit": "This certificate uses the Λ<0 real-zero branch and contains formula-sensitive tail steps that require the original scan before exact replay.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u009",
+              "openalex_w1224069186_u010",
+              "openalex_w1224069186_u011",
+              "openalex_w1224069186_u012",
+              "openalex_w1224069186_u013"
+            ],
+            "title": "Finite-window certificate for a global zero interaction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u009",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u009",
+          "spontaneous_reading": "The global interaction is partitioned into local, intermediate, and remote blocks so that measured gaps, worst-case endpoint bounds, and analytic tail decay can each be used where they are strongest."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u009",
+          "source_grounded_mathematics": "Under Λ<0 and with n=9998, the proof writes g_K(0)=M_{K,n}+I_{K,n+1}+R_{K,K+n+2}. The three sums cover a finite window around the pair, a large remaining inner-side range, and the two-sided remote tail, and are to be bounded separately.",
+          "conceptual_reading": "Decomposition aligns heterogeneous evidence with heterogeneous regions. It avoids demanding equally accurate knowledge of every zero while preserving a certificate for the original global sum.",
+          "representation_or_bridge": "The partition bridges one infinite interaction quantity to three subproblems: local numerical geometry, an endpoint-count estimate, and a density-controlled tail.",
+          "boundary_or_failure": "This span defines the proof architecture but supplies none of the three component bounds. It is conditional on the Λ<0 branch, and exact index endpoints should be scan-checked before implementation.",
+          "uncertainty": "The three-block role and n value are clear from prose and displays; ordinary PDF layout artifacts leave formula-level endpoint transcription somewhat sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the local contribution M_K,n in u009; its numerical inputs are the four consecutive ordinates displayed in (2.8).",
+      "line_end": 351,
+      "line_start": 316,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The inequality chain and ordinates are readable. Exact upward rounding and decimal values remain representation-sensitive and should be checked against the original for numerical reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses realness and simplicity under the Λ<0 branch to dominate every term in the local computed block by distances to the nearest zero outside the close pair, reducing thousands of terms to two measured neighboring gaps and an explicit conservative bound.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bound the finite local block by the two adjacent outer gaps",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u010.txt",
+      "unit_bytes": 1832,
+      "unit_id": "openalex_w1224069186_u010",
+      "unit_sha256": "7339f836ac72d49e35905792cad9aaf0dfdf04bd464d61f1c851eda86a808f42",
+      "unit_type": "proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u010.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 308,
+          "line_end": 315,
+          "text": "and\n                                     X            \u001a                                     \u001b\n                                                          1              1\n              RK,K+n+2 :=                                         +                         .\n                                                      (xK − xj )2   (xK+1 − xj )2\n                              |j|≥K+n+2\n\nWe separately bound the sums MK,n , IK,n+1 , and RK,K+n+2 .\n",
+          "sha256": "8786716bb7ecfb814bc28db6be920896cd7d2539976372cc043b16e0b8bb049e"
+        },
+        "after": {
+          "line_start": 352,
+          "line_end": 359,
+          "text": "\n      We next bound above IK,n+1 by\n\n                                                   X\n                                                  K−n−1\n                                                                     1\n                                                          0\n(2.10)                 IK,n+1     <2\n",
+          "sha256": "92a706e3a115b8a226f47d6fd108979c613790f08f3d75fc403080870a5afb1b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 351,
+          "line_start": 316,
+          "title": "Bound the finite local block by the two adjacent outer gaps",
+          "unit_id": "openalex_w1224069186_u010",
+          "unit_type": "proof-fragment",
+          "why_material": "Uses realness and simplicity under the Λ<0 branch to dominate every term in the local computed block by distances to the nearest zero outside the close pair, reducing thousands of terms to two measured neighboring gaps and an explicit conservative bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the local contribution M_K,n in u009; its numerical inputs are the four consecutive ordinates displayed in (2.8).",
+          "representation_dependency": "The inequality chain and ordinates are readable. Exact upward rounding and decimal values remain representation-sensitive and should be checked against the original for numerical reuse.",
+          "unit_id": "openalex_w1224069186_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 315,
+            "line_start": 271,
+            "title": "Partition the global interaction into local, intermediate, and remote blocks",
+            "unit_id": "openalex_w1224069186_u009",
+            "unit_type": "decomposition",
+            "why_material": "Decomposes g_K into a finite block centered on the close pair, a large asymmetric intermediate block, and a remote two-sided tail. The partition lets each region be controlled by the information best suited to it rather than demanding all zeros at equal precision."
+          },
+          {
+            "line_end": 385,
+            "line_start": 353,
+            "title": "Bound the intermediate block by its nearest endpoint distance",
+            "unit_id": "openalex_w1224069186_u011",
+            "unit_type": "proof-fragment",
+            "why_material": "Controls the many remaining inner-side terms by a common worst-case separation and the number of terms, replacing a large uncomputed block by one computed endpoint ordinate and yielding a small explicit contribution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global sum over all zeros can be certified from finitely many accurate local zeros by partitioning it into regions, using nearest-endpoint domination on finite blocks, and applying a zero-density-derived inverse-square bound to the infinite tail.",
+            "limit": "This certificate uses the Λ<0 real-zero branch and contains formula-sensitive tail steps that require the original scan before exact replay.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u009",
+              "openalex_w1224069186_u010",
+              "openalex_w1224069186_u011",
+              "openalex_w1224069186_u012",
+              "openalex_w1224069186_u013"
+            ],
+            "title": "Finite-window certificate for a global zero interaction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u010",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u010",
+          "spontaneous_reading": "Monotonicity of inverse-square distance lets thousands of local terms be dominated by just the two gaps immediately outside the target pair, a sharp compression of the needed numerical data."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u010",
+          "source_grounded_mathematics": "Assuming Λ<0 makes the H_0 zeros real and simple. The proof bounds every term in M_{K,n} using the separations to x_{K-1} and x_{K+2}, rewrites these through four neighboring zeta ordinates, and with n=9998 obtains the upward-rounded estimate M_{K,n}<23642.",
+          "conceptual_reading": "Ordered real zeros make the nearest admissible outer points worst cases for reciprocal-square distances. This converts a finite but large sum into a count times two boundary contributions.",
+          "representation_or_bridge": "The ordering of zeros bridges individual denominators to adjacent-gap bounds, and x=2γ bridges those gaps to the computed ordinate data.",
+          "boundary_or_failure": "The compression depends on realness, simplicity, correct ordering, and the reported high-precision ordinates. It is conservative and addresses only the local M block.",
+          "uncertainty": "The inequality chain is readable, but exact decimals and upward rounding should be verified against the original scan before numerical reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the I_K,n+1 contribution from u009 and complements the local-gap bound u010 and remote-tail bound u012.",
+      "line_end": 385,
+      "line_start": 353,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The extracted display is vertically fragmented but the endpoint-distance bound, substituted ordinate, and final value are readable; confirm exact factors from the scan before calculation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Controls the many remaining inner-side terms by a common worst-case separation and the number of terms, replacing a large uncomputed block by one computed endpoint ordinate and yielding a small explicit contribution.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bound the intermediate block by its nearest endpoint distance",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u011.txt",
+      "unit_bytes": 1410,
+      "unit_id": "openalex_w1224069186_u011",
+      "unit_sha256": "17e1d7aad068992f4cb7907d64e017a098bce16c7c3e0803a8739013d4f8a2c6",
+      "unit_type": "proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u011.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 345,
+          "line_end": 352,
+          "text": "                 \n                   γK+2 = 3.888 588 866 907 450 543 · 108 .\n\nThus, with the above numbers and with n := 9, 998, the upper bound of (2.7), when\nrounded upward to the next integer, becomes\n\n(2.9)                                    MK,n < 23, 642.\n\n",
+          "sha256": "410786a9dfa886ffaaf4d8111cbd22b260d43dba843f910a9e79afd89b21377a"
+        },
+        "after": {
+          "line_start": 386,
+          "line_end": 393,
+          "text": "\n    Finally, we bound above RK,K+n+2 . Since H0 is an even function, we have (cf.\n(1.9)) x−j (0) = −xj (0), so that RK,K+n+2 can be expressed as\n\n(2.12)    RK,K+n+2 =\n          X∞    \u001a                                                           \u001b\n                      1              1              1              1\n                              +               +             +                 .\n",
+          "sha256": "deb379dafca1b661e5a7e3fbe0155b73beee0d5d3d13a90b00674e0f54c29df2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 385,
+          "line_start": 353,
+          "title": "Bound the intermediate block by its nearest endpoint distance",
+          "unit_id": "openalex_w1224069186_u011",
+          "unit_type": "proof-fragment",
+          "why_material": "Controls the many remaining inner-side terms by a common worst-case separation and the number of terms, replacing a large uncomputed block by one computed endpoint ordinate and yielding a small explicit contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the I_K,n+1 contribution from u009 and complements the local-gap bound u010 and remote-tail bound u012.",
+          "representation_dependency": "The extracted display is vertically fragmented but the endpoint-distance bound, substituted ordinate, and final value are readable; confirm exact factors from the scan before calculation.",
+          "unit_id": "openalex_w1224069186_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 351,
+            "line_start": 316,
+            "title": "Bound the finite local block by the two adjacent outer gaps",
+            "unit_id": "openalex_w1224069186_u010",
+            "unit_type": "proof-fragment",
+            "why_material": "Uses realness and simplicity under the Λ<0 branch to dominate every term in the local computed block by distances to the nearest zero outside the close pair, reducing thousands of terms to two measured neighboring gaps and an explicit conservative bound."
+          },
+          {
+            "line_end": 442,
+            "line_start": 387,
+            "title": "Use evenness, monotone distance ratios, and zero density to bound the remote tail",
+            "unit_id": "openalex_w1224069186_u012",
+            "unit_type": "proof-fragment",
+            "why_material": "Folds the negative and positive remote zeros together using evenness, factors remote denominators into endpoint-dependent ratios times inverse-square zero weights, and invokes u007 to control the infinite remainder. This closes a finite-computation certificate for a genuinely global interaction sum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global sum over all zeros can be certified from finitely many accurate local zeros by partitioning it into regions, using nearest-endpoint domination on finite blocks, and applying a zero-density-derived inverse-square bound to the infinite tail.",
+            "limit": "This certificate uses the Λ<0 real-zero branch and contains formula-sensitive tail steps that require the original scan before exact replay.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u009",
+              "openalex_w1224069186_u010",
+              "openalex_w1224069186_u011",
+              "openalex_w1224069186_u012",
+              "openalex_w1224069186_u013"
+            ],
+            "title": "Finite-window certificate for a global zero interaction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u011",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u011",
+          "spontaneous_reading": "A large intermediate block is replaced by its cardinality times one worst-case endpoint separation, showing that extensive uncomputed detail can contribute only a small certified amount."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u011",
+          "source_grounded_mathematics": "The proof dominates I_{K,n+1} by a common reciprocal-square distance involving x_K and x_{K-n-1}, reduces the bound to K divided by the corresponding squared ordinate separation, and substitutes the computed γ_{K-9999} to obtain I_{K,n+1}<86 after upward rounding.",
+          "conceptual_reading": "Order and monotonicity support a worst-case envelope: count all terms but evaluate only the nearest endpoint. The small result shows why detailed computation of this whole block is unnecessary.",
+          "representation_or_bridge": "The block's many denominators are bridged to a single endpoint distance plus a term count; the H_0-to-zeta scaling supplies the numerical endpoint.",
+          "boundary_or_failure": "This is only the intermediate I contribution and relies on the same real ordered-zero branch as the decomposition. The extracted display is vertically fragmented, so exact factors are not secure from layout alone.",
+          "uncertainty": "The endpoint mechanism, substituted ordinate, and final bound are clear; formula-level replay requires confirmation from the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the R_K,K+n+2 term from u009 and uses the computed far endpoint together with the analytic inverse-square tail bound.",
+      "line_end": 442,
+      "line_start": 387,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Lines 397-401 are formula-damaged and quarantined in coverage: the exact monotonic-ratio expression is not reconstructed. The surrounding prose and formulas (2.12)-(2.15) support the qualitative bounding mechanism and final bound, but scan verification is required before exact derivation or training use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Folds the negative and positive remote zeros together using evenness, factors remote denominators into endpoint-dependent ratios times inverse-square zero weights, and invokes u007 to control the infinite remainder. This closes a finite-computation certificate for a genuinely global interaction sum.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Use evenness, monotone distance ratios, and zero density to bound the remote tail",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u012.txt",
+      "unit_bytes": 2834,
+      "unit_id": "openalex_w1224069186_u012",
+      "unit_sha256": "97bc4f69d7b4b1aef38e145c6de89e5f44eeb9cb006c570fda1d637334baf110",
+      "unit_type": "proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u012.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 379,
+          "line_end": 386,
+          "text": "With the value of γK from (2.8) and with our calculated value of\n\n                γK−n−1 = γK−9999 = 3.888 553 840 902 274 209 · 108 ,\n\nthe upper bound of (2.10), when rounded upward to the next integer, is\n\n(2.11)                               IK,n+1 < 86.\n\n",
+          "sha256": "8e86bba1c70e465d7120676ba8102232cd055962009d6d3a833b40324362e655"
+        },
+        "after": {
+          "line_start": 443,
+          "line_end": 450,
+          "text": "\n    Combining the upper estimates of (2.9), (2.11), and (2.15) gives\n\n(2.16)                             gK (0) < 24, 058.\n\n<!-- source-page: 7 -->\n\nETNA\n",
+          "sha256": "ba9f3f0435c39fd9694743e432ff4f496e9d014060264d110166f3c10db13f44"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 442,
+          "line_start": 387,
+          "title": "Use evenness, monotone distance ratios, and zero density to bound the remote tail",
+          "unit_id": "openalex_w1224069186_u012",
+          "unit_type": "proof-fragment",
+          "why_material": "Folds the negative and positive remote zeros together using evenness, factors remote denominators into endpoint-dependent ratios times inverse-square zero weights, and invokes u007 to control the infinite remainder. This closes a finite-computation certificate for a genuinely global interaction sum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the R_K,K+n+2 term from u009 and uses the computed far endpoint together with the analytic inverse-square tail bound.",
+          "representation_dependency": "Lines 397-401 are formula-damaged and quarantined in coverage: the exact monotonic-ratio expression is not reconstructed. The surrounding prose and formulas (2.12)-(2.15) support the qualitative bounding mechanism and final bound, but scan verification is required before exact derivation or training use.",
+          "unit_id": "openalex_w1224069186_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 385,
+            "line_start": 353,
+            "title": "Bound the intermediate block by its nearest endpoint distance",
+            "unit_id": "openalex_w1224069186_u011",
+            "unit_type": "proof-fragment",
+            "why_material": "Controls the many remaining inner-side terms by a common worst-case separation and the number of terms, replacing a large uncomputed block by one computed endpoint ordinate and yielding a small explicit contribution."
+          },
+          {
+            "line_end": 463,
+            "line_start": 444,
+            "title": "Aggregate the three bounds to certify the close pair as Lehmer",
+            "unit_id": "openalex_w1224069186_u013",
+            "unit_type": "computational-certification",
+            "why_material": "Adds the independently controlled interaction blocks, combines the resulting global upper bound with the accurately measured tiny gap, and verifies the Lehmer inequality by a wide margin."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global sum over all zeros can be certified from finitely many accurate local zeros by partitioning it into regions, using nearest-endpoint domination on finite blocks, and applying a zero-density-derived inverse-square bound to the infinite tail.",
+            "limit": "This certificate uses the Λ<0 real-zero branch and contains formula-sensitive tail steps that require the original scan before exact replay.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u009",
+              "openalex_w1224069186_u010",
+              "openalex_w1224069186_u011",
+              "openalex_w1224069186_u012",
+              "openalex_w1224069186_u013"
+            ],
+            "title": "Finite-window certificate for a global zero interaction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 401,
+              "line_start": 397,
+              "reason": "The pivotal monotonic-ratio formula is scrambled across lines and is not safely reconstructable from the normalized layer alone."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u012",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u012",
+          "spontaneous_reading": "Evenness folds the remote two-sided interaction into positive zeros, after which monotone distance ratios factor the geometry into an endpoint multiplier times an inverse-square tail already controlled by zero density."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u012",
+          "source_grounded_mathematics": "The proof uses x_{-j}=-x_j to express the remote R block over positive indices with four reciprocal-square terms. It bounds endpoint-dependent distance ratios at j=K+n+2, applies the inverse-square tail estimate from Lemma 2.2 at the computed far ordinate, and reports R_{K,K+n+2}<330 after upward rounding.",
+          "conceptual_reading": "Symmetry, monotone comparison, and density control together close an infinite remainder using one computed boundary point. This is the analytic backstop that makes a finite numerical window sufficient for a global interaction certificate.",
+          "representation_or_bridge": "Evenness bridges negative and positive tails; ratio factorization bridges shifted reciprocal distances to raw inverse-square zero weights; the counting lemma then bridges those weights to an explicit bound.",
+          "boundary_or_failure": "The argument remains conditional on Λ<0 and on the reported far-endpoint computation. The pivotal monotone-ratio display is extraction-defective, so the exact derivation must not be reconstructed from this text layer.",
+          "uncertainty": "The qualitative mechanism and final stated bound are supported by surrounding prose and legible formulas, but original-scan verification is required before exact derivation or training use."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Consumes the decomposition u009 and component bounds u010-u012; it is the certificate needed before applying the abstract theorem u005.",
+      "line_end": 463,
+      "line_start": 444,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The aggregate bounds, gap value, and Lehmer comparison are legible; numerical transcription should still be verified from the original scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Adds the independently controlled interaction blocks, combines the resulting global upper bound with the accurately measured tiny gap, and verifies the Lehmer inequality by a wide margin.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Aggregate the three bounds to certify the close pair as Lehmer",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u013.txt",
+      "unit_bytes": 820,
+      "unit_id": "openalex_w1224069186_u013",
+      "unit_sha256": "ae5d66d4953e7b2e89848dc36d1bbb3b7b5f249d3c0b70e714c21084155af668",
+      "unit_type": "computational-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u013.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 436,
+          "line_end": 443,
+          "text": "                    x2j      4([γK+n+2 ] − 1)\n          j=K+n+2\n\nSubstituting in the right side of (2.13) then gives, on rounding upward to the next\ninteger,\n\n(2.15)                             RK,K+n+2 < 330.\n\n",
+          "sha256": "a86c3316535ef433f95fbc082fc5613b959b009cd148f85931ec589794027fee"
+        },
+        "after": {
+          "line_start": 464,
+          "line_end": 471,
+          "text": "     Finally, we establish our new result, Theorem 2.2 below. If Λ ≥ 0, the lower\nbound of (2.18) is trivially true. Hence, assume, as in Lemmas 2.2 and 2.3, that\nΛ < 0. We note that λk , as defined in (1.13), is a monotone decreasing function of\ngk (0) (if ∆2k · gk (0) < 4/5). Hence the upper bound for gK (0) in (2.16), when used to\ndetermine λk in (1.13), gives the lower bound −5.895 · 10−9 of (2.18) for Λ, as claimed\nin the Abstract above.\n     Theorem 2.2. A lower bound for the de Bruijn-Newman constant Λ is\n(2.18)                                           −5.895 · 10−9 < Λ.\n",
+          "sha256": "190d18e99c9bbea9f3bb2e05aace03fb5db998317023dd4a0cff07d00a20aa90"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 463,
+          "line_start": 444,
+          "title": "Aggregate the three bounds to certify the close pair as Lehmer",
+          "unit_id": "openalex_w1224069186_u013",
+          "unit_type": "computational-certification",
+          "why_material": "Adds the independently controlled interaction blocks, combines the resulting global upper bound with the accurately measured tiny gap, and verifies the Lehmer inequality by a wide margin."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Consumes the decomposition u009 and component bounds u010-u012; it is the certificate needed before applying the abstract theorem u005.",
+          "representation_dependency": "The aggregate bounds, gap value, and Lehmer comparison are legible; numerical transcription should still be verified from the original scan.",
+          "unit_id": "openalex_w1224069186_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 442,
+            "line_start": 387,
+            "title": "Use evenness, monotone distance ratios, and zero density to bound the remote tail",
+            "unit_id": "openalex_w1224069186_u012",
+            "unit_type": "proof-fragment",
+            "why_material": "Folds the negative and positive remote zeros together using evenness, factors remote denominators into endpoint-dependent ratios times inverse-square zero weights, and invokes u007 to control the infinite remainder. This closes a finite-computation certificate for a genuinely global interaction sum."
+          },
+          {
+            "line_end": 471,
+            "line_start": 464,
+            "title": "Monotonicity converts a conservative interaction bound into the new Λ bound",
+            "unit_id": "openalex_w1224069186_u014",
+            "unit_type": "theorem-application",
+            "why_material": "Handles the Λ≥0 branch trivially, then under Λ<0 uses monotonic decrease of λ_k with the interaction value to feed the certified upper bound into the Lehmer theorem and obtain the stated lower bound for Λ."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The heat-deformation representation turns RH into a threshold question, while the Lehmer criterion converts an unusually small local zero gap, after global-background certification, into a quantitative obstruction to pushing the all-real-zero regime too far below time zero.",
+            "limit": "The conclusion is a solver- and pair-specific lower bound for Λ under an explicit case split; it neither proves RH nor establishes Λ≥0.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u001",
+              "openalex_w1224069186_u002",
+              "openalex_w1224069186_u004",
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014"
+            ],
+            "title": "Close-pair geometry as a heat-flow obstruction"
+          },
+          {
+            "claim": "A global sum over all zeros can be certified from finitely many accurate local zeros by partitioning it into regions, using nearest-endpoint domination on finite blocks, and applying a zero-density-derived inverse-square bound to the infinite tail.",
+            "limit": "This certificate uses the Λ<0 real-zero branch and contains formula-sensitive tail steps that require the original scan before exact replay.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u009",
+              "openalex_w1224069186_u010",
+              "openalex_w1224069186_u011",
+              "openalex_w1224069186_u012",
+              "openalex_w1224069186_u013"
+            ],
+            "title": "Finite-window certificate for a global zero interaction"
+          },
+          {
+            "claim": "Once the gap-interaction product is tiny, the leading gap-squared contribution controls the Lehmer lower bound, making the final Λ estimate insensitive to coarse upper control of the background interaction.",
+            "limit": "The full Taylor expansion is extraction-damaged, and the stability conclusion is local to the small-product regime documented for this pair.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014",
+              "openalex_w1224069186_u015"
+            ],
+            "title": "Why a conservative global estimate still yields a sharp lower bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u013",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u013",
+          "spontaneous_reading": "Independent regional bounds are recombined with the measured tiny gap, and the resulting product clears the Lehmer threshold by a wide margin, turning a distributed estimate into a single certificate."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u013",
+          "source_grounded_mathematics": "Adding the prior component estimates gives g_K(0)<24058. The source computes Δ_K=2(γ_{K+1}-γ_K)=2.171392…·10^-4 and concludes Δ_K²g_K(0)<1.134321…·10^-3<4/5, so the selected consecutive H_0 zeros form a Lehmer pair.",
+          "conceptual_reading": "The proof is modular: separate conservative controls can be aggregated because the final admissibility test depends only on their total and the local gap. The large slack makes the classification robust to modest looseness in the background estimate.",
+          "representation_or_bridge": "The sum M+I+R reconstructs the global interaction, while the dimensionless gap-interaction product bridges that global bound to Definition 1.1's Lehmer certificate.",
+          "boundary_or_failure": "The component bounds inherit the Λ<0 assumption and their numerical inputs. Certifying the pair as Lehmer is not yet the final Λ bound and does not prove RH.",
+          "uncertainty": "The aggregate values and comparison are legible, though numerical transcription should be checked against the retained original before replay."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Makes the proof's assumption fork explicit and depends on u005 and u013; it is a lower-bound result, not a proof of either RH or Newman's conjecture.",
+      "line_end": 471,
+      "line_start": 464,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The logical case split, monotonicity statement, and final numerical bound are prose-clear and do not require restoring a damaged formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Handles the Λ≥0 branch trivially, then under Λ<0 uses monotonic decrease of λ_k with the interaction value to feed the certified upper bound into the Lehmer theorem and obtain the stated lower bound for Λ.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Monotonicity converts a conservative interaction bound into the new Λ bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u014.txt",
+      "unit_bytes": 608,
+      "unit_id": "openalex_w1224069186_u014",
+      "unit_sha256": "190d18e99c9bbea9f3bb2e05aace03fb5db998317023dd4a0cff07d00a20aa90",
+      "unit_type": "theorem-application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u014.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 456,
+          "line_end": 463,
+          "text": "110                      A Lower Bound for the de Bruijn-Newman Constant Λ\n\n\nBut ∆K := xK+1 − xK = 2 (γK+1 − γK ), so (2.8) gives\n(2.17)                                 ∆K = 2.171 392 . . . · 10−4 ,\nand with (2.16), we then have\n                              ∆2K · gK (0) < 1.134 321 . . . · 10−3 < 4/5.\nThus from (1.11) of Definition 1.1, {xK ; xK+1 } is a Lehmer pair of zeros of H0 .2\n",
+          "sha256": "95d5792d3021af1cebdeeeb8cfa959c0ac9b241430f903beff2a0d72939b95e6"
+        },
+        "after": {
+          "line_start": 472,
+          "line_end": 479,
+          "text": "\n    As remarked in Csordas, Smith, and Varga [4], the lower bound for Λ in (2.18)\nis quite insensitive to upper estimates of gK (0). This can be seen from the following\nTaylor series of λK of (1.13), in terms of ∆2K gK (0) and its powers:\n                    ∆2K    ∆4 gK (0) ∆6K gK    2\n                                                 (0) 11∆8K gK 3\n                                                                 (0)\n(2.19)        λK = −    − K           −             −                − ··· ,\n",
+          "sha256": "7f4d67cdcbf3823d4e5a608f8bd0bd6ec2bf56e51f909a3315821008dc0f29f9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 471,
+          "line_start": 464,
+          "title": "Monotonicity converts a conservative interaction bound into the new Λ bound",
+          "unit_id": "openalex_w1224069186_u014",
+          "unit_type": "theorem-application",
+          "why_material": "Handles the Λ≥0 branch trivially, then under Λ<0 uses monotonic decrease of λ_k with the interaction value to feed the certified upper bound into the Lehmer theorem and obtain the stated lower bound for Λ."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Makes the proof's assumption fork explicit and depends on u005 and u013; it is a lower-bound result, not a proof of either RH or Newman's conjecture.",
+          "representation_dependency": "The logical case split, monotonicity statement, and final numerical bound are prose-clear and do not require restoring a damaged formula.",
+          "unit_id": "openalex_w1224069186_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 463,
+            "line_start": 444,
+            "title": "Aggregate the three bounds to certify the close pair as Lehmer",
+            "unit_id": "openalex_w1224069186_u013",
+            "unit_type": "computational-certification",
+            "why_material": "Adds the independently controlled interaction blocks, combines the resulting global upper bound with the accurately measured tiny gap, and verifies the Lehmer inequality by a wide margin."
+          },
+          {
+            "line_end": 485,
+            "line_start": 473,
+            "title": "The close-pair gap dominates sensitivity to the interaction estimate",
+            "unit_id": "openalex_w1224069186_u015",
+            "unit_type": "robustness-analysis",
+            "why_material": "Explains through a small-parameter expansion that the leading gap-squared term already nearly equals the reported Λ bound, so substantial conservatism in the global interaction estimate has little effect. This clarifies why the certification can succeed without highly accurate knowledge of every zero."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The heat-deformation representation turns RH into a threshold question, while the Lehmer criterion converts an unusually small local zero gap, after global-background certification, into a quantitative obstruction to pushing the all-real-zero regime too far below time zero.",
+            "limit": "The conclusion is a solver- and pair-specific lower bound for Λ under an explicit case split; it neither proves RH nor establishes Λ≥0.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u001",
+              "openalex_w1224069186_u002",
+              "openalex_w1224069186_u004",
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014"
+            ],
+            "title": "Close-pair geometry as a heat-flow obstruction"
+          },
+          {
+            "claim": "Once the gap-interaction product is tiny, the leading gap-squared contribution controls the Lehmer lower bound, making the final Λ estimate insensitive to coarse upper control of the background interaction.",
+            "limit": "The full Taylor expansion is extraction-damaged, and the stability conclusion is local to the small-product regime documented for this pair.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014",
+              "openalex_w1224069186_u015"
+            ],
+            "title": "Why a conservative global estimate still yields a sharp lower bound"
+          },
+          {
+            "claim": "Targeted high-precision computation around a spectacularly close pair supports a rigorously derived improved Λ bound even though the broader search procedure does not conclusively rule out a better pair among the zeros considered.",
+            "limit": "The source reports limited search completeness and therefore supports the achieved bound, not global optimality of the selected pair.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u008",
+              "openalex_w1224069186_u014"
+            ],
+            "title": "Strong numerical evidence without an optimality claim"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u014",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u014",
+          "spontaneous_reading": "A clean assumption fork makes the lower bound unconditional: it is immediate if Λ is nonnegative, while the negative branch activates the certified Lehmer pair and monotonicity in the interaction estimate."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u014",
+          "source_grounded_mathematics": "If Λ≥0, the claimed negative lower bound is immediate. Assuming Λ<0, the source uses that λ_k from formula (1.13) decreases with g_k(0) in the Lehmer regime, substitutes the certified upper bound for g_K(0), and concludes -5.895·10^-9<Λ.",
+          "conceptual_reading": "The case split prevents the numerical argument from presupposing the unknown sign it seeks to constrain. Monotonicity converts a conservative upper estimate of the background interaction into a valid lower estimate for the deformation threshold.",
+          "representation_or_bridge": "The certified scalar g_K(0) is passed through λ_K and Theorem 1.1 to bridge finite zero data to the global constant Λ.",
+          "boundary_or_failure": "The theorem establishes only this lower bound. It proves neither Λ≥0 nor Λ≤0 and hence neither Newman's conjecture nor RH.",
+          "uncertainty": "The logical fork, monotonicity statement, and final bound are prose-clear; exact recomputation of λ_K would still depend on scan-verified formula (1.13)."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Interprets the numerical stability of the u014 conclusion after u013 shows the gap-interaction product is very small.",
+      "line_end": 485,
+      "line_start": 473,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Taylor-series typography in lines 476-485 is damaged. Only the prose-supported insensitivity claim and the separately legible leading-term magnitude are retained; verify the full expansion and signs in the original scan before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains through a small-parameter expansion that the leading gap-squared term already nearly equals the reported Λ bound, so substantial conservatism in the global interaction estimate has little effect. This clarifies why the certification can succeed without highly accurate knowledge of every zero.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The close-pair gap dominates sensitivity to the interaction estimate",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u015.txt",
+      "unit_bytes": 817,
+      "unit_id": "openalex_w1224069186_u015",
+      "unit_sha256": "42f60793846ae1abeb402540ae13b2a90f86c3c2ed73f877590bbdf659a67c10",
+      "unit_type": "robustness-analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u015.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 465,
+          "line_end": 472,
+          "text": "bound of (2.18) is trivially true. Hence, assume, as in Lemmas 2.2 and 2.3, that\nΛ < 0. We note that λk , as defined in (1.13), is a monotone decreasing function of\ngk (0) (if ∆2k · gk (0) < 4/5). Hence the upper bound for gK (0) in (2.16), when used to\ndetermine λk in (1.13), gives the lower bound −5.895 · 10−9 of (2.18) for Λ, as claimed\nin the Abstract above.\n     Theorem 2.2. A lower bound for the de Bruijn-Newman constant Λ is\n(2.18)                                           −5.895 · 10−9 < Λ.\n\n",
+          "sha256": "84953cc74f727a6bcc6559a803ac7482e1a16019724463c92097e10a22fa1f85"
+        },
+        "after": {
+          "line_start": 486,
+          "line_end": 493,
+          "text": "     3. Appendix: Proof of Lemma 2.1. By (2.1), we can write N (T ) = s(T ) +\ne(T ), where\n                         \u0012 \u0013      \u0012 \u0013\n                          T        T      T        7\n(3.1)           s(T ) :=      log      −      +          (T ≥ 2).\n                          2π       2π     2π 8\nThen\n                          \u0012          \u0013           \u0012          \u0013       \u0012          \u0013        \u0012        \u0013         \u0012        \u0013       \u0012        \u0013\n",
+          "sha256": "fb3845cbaeb74e101d3b804d23e4cdc9554f332782c971c871c9b7dfbc50f3e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Application of Theorem 1.1",
+            "line_end": 485,
+            "line_start": 181,
+            "mathematical_role": "Builds a zero-density tail estimate, identifies and computes around the close pair, decomposes and bounds the global interaction sum, certifies the Lehmer condition, and derives and interprets the new lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 485,
+          "line_start": 473,
+          "title": "The close-pair gap dominates sensitivity to the interaction estimate",
+          "unit_id": "openalex_w1224069186_u015",
+          "unit_type": "robustness-analysis",
+          "why_material": "Explains through a small-parameter expansion that the leading gap-squared term already nearly equals the reported Λ bound, so substantial conservatism in the global interaction estimate has little effect. This clarifies why the certification can succeed without highly accurate knowledge of every zero."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Interprets the numerical stability of the u014 conclusion after u013 shows the gap-interaction product is very small.",
+          "representation_dependency": "The Taylor-series typography in lines 476-485 is damaged. Only the prose-supported insensitivity claim and the separately legible leading-term magnitude are retained; verify the full expansion and signs in the original scan before reuse.",
+          "unit_id": "openalex_w1224069186_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 471,
+            "line_start": 464,
+            "title": "Monotonicity converts a conservative interaction bound into the new Λ bound",
+            "unit_id": "openalex_w1224069186_u014",
+            "unit_type": "theorem-application",
+            "why_material": "Handles the Λ≥0 branch trivially, then under Λ<0 uses monotonic decrease of λ_k with the interaction value to feed the certified upper bound into the Lehmer theorem and obtain the stated lower bound for Λ."
+          },
+          {
+            "line_end": 566,
+            "line_start": 486,
+            "title": "Explicit error absorption proves the unit-interval zero-count certificate",
+            "unit_id": "openalex_w1224069186_u016",
+            "unit_type": "proof-fragment",
+            "why_material": "Separates the smooth main term from the zero-counting error, bounds the main-term increment using a logarithmic expansion, and absorbs logarithmic-error and constant terms into fractions of log T above the stated threshold, establishing the local density estimate used in u007."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once the gap-interaction product is tiny, the leading gap-squared contribution controls the Lehmer lower bound, making the final Λ estimate insensitive to coarse upper control of the background interaction.",
+            "limit": "The full Taylor expansion is extraction-damaged, and the stability conclusion is local to the small-product regime documented for this pair.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u005",
+              "openalex_w1224069186_u013",
+              "openalex_w1224069186_u014",
+              "openalex_w1224069186_u015"
+            ],
+            "title": "Why a conservative global estimate still yields a sharp lower bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 523,
+              "line_start": 493,
+              "reason": "The appendix's displayed main-term increment and logarithmic expansion are severely reordered; exact algebra is quarantined pending scan verification."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u015",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u015",
+          "spontaneous_reading": "A small-parameter expansion shows that the close-pair gap already fixes the leading scale of the Λ bound, so coarse knowledge of the background interaction affects only corrections."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u015",
+          "source_grounded_mathematics": "The source expands λ_K in powers of Δ_K²g_K(0) and notes that the first term, -Δ_K²/8, equals approximately -5.893679·10^-9, already close to the reported lower bound.",
+          "conceptual_reading": "The expansion is a sensitivity analysis: when the dimensionless gap-interaction product is tiny, dependence on g_K enters beyond the leading gap-squared scale. This explains why conservative global estimates can still yield a sharp result.",
+          "representation_or_bridge": "The Taylor representation bridges the nonlinear λ_K formula to a hierarchy of leading and corrective contributions, separating local-gap control from background sensitivity.",
+          "boundary_or_failure": "The conclusion is local to the documented small-product regime and does not say background interactions are irrelevant in general. The full series typography is damaged and must not be inferred term by term.",
+          "uncertainty": "The prose-supported insensitivity claim and leading term are legible; coefficients and signs of the remaining expansion require the original scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the source's internal certificate for u006 and therefore closes the analytic dependency behind the remote-tail calculation.",
+      "line_end": 566,
+      "line_start": 486,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Lines 493-523 contain severe formula-layout damage and are quarantined rather than reconstructed. Prose at lines 524-525 identifies the alternating-series bound, and lines 525-566 preserve the subsequent explicit inequalities, but the entire derivation requires original-scan verification before formula-level use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the smooth main term from the zero-counting error, bounds the main-term increment using a logarithmic expansion, and absorbs logarithmic-error and constant terms into fractions of log T above the stated threshold, establishing the local density estimate used in u007.",
+      "source_id": "openalex_w1224069186",
+      "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit error absorption proves the unit-interval zero-count certificate",
+      "unit_artifact_relpath": "depth/units/openalex_w1224069186_u016.txt",
+      "unit_bytes": 4616,
+      "unit_id": "openalex_w1224069186_u016",
+      "unit_sha256": "23ba8e46666197f8c7266637ee4b3399b5a48a035221c8c91e4b43c3003ffd7c",
+      "unit_type": "proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1224069186_u016.txt",
+      "source": {
+        "source_id": "openalex_w1224069186",
+        "title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+        "authors": [
+          "George Csordás",
+          "Andrew Odlyzko",
+          "Wayne Smith",
+          "R. S. Varga"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 478,
+          "line_end": 485,
+          "text": "                                                                 (0)\n(2.19)        λK = −    − K           −             −                − ··· ,\n                     8         64            128           2048\nwhere we note, from (2.17), that just the first term of (2.19) is\n                          ∆2K\n                              = − 5.893 679 . . . · 10−9 .\n                                  −\n                           8\n",
+          "sha256": "54b6e99e9ae83f5364b7e9e18e00f5570859254a4a9975c207c0588b75e1b15f"
+        },
+        "after": {
+          "line_start": 567,
+          "line_end": 574,
+          "text": "\nAcknowledgement. The authors are grateful to H. J. J. te Riele for pointing out\nthe errors contained in the original version of this manuscript.\n\n                                        REFERENCES\n\n [1] R. J. Backlund,Über die Nullstellen der Riemannschen Zetafunktion,Acta Math. 41 (1918),\n         pp. 345-375.\n",
+          "sha256": "4ee2076ab19ab931b4ea1235948e618241cbc076673d12b30e860ccfc4cba453"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c20a3c0ed8d8bf215c4f40d252130e4568c8f8336c086b717bb5f551d9ecbf18",
+        "dossier_sha256": "dd4b2cf77b0b9283dfd3bb3f06925752c210d57ed19eb9ba91439e620498ec85",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Appendix and acknowledgement",
+            "line_end": 570,
+            "line_start": 486,
+            "mathematical_role": "Supplies the quantitative proof of the unit-interval zero-count bound used in the tail estimate; the final acknowledgement is nonmathematical."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 566,
+          "line_start": 486,
+          "title": "Explicit error absorption proves the unit-interval zero-count certificate",
+          "unit_id": "openalex_w1224069186_u016",
+          "unit_type": "proof-fragment",
+          "why_material": "Separates the smooth main term from the zero-counting error, bounds the main-term increment using a logarithmic expansion, and absorbs logarithmic-error and constant terms into fractions of log T above the stated threshold, establishing the local density estimate used in u007."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the source's internal certificate for u006 and therefore closes the analytic dependency behind the remote-tail calculation.",
+          "representation_dependency": "Lines 493-523 contain severe formula-layout damage and are quarantined rather than reconstructed. Prose at lines 524-525 identifies the alternating-series bound, and lines 525-566 preserve the subsequent explicit inequalities, but the entire derivation requires original-scan verification before formula-level use.",
+          "unit_id": "openalex_w1224069186_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 485,
+            "line_start": 473,
+            "title": "The close-pair gap dominates sensitivity to the interaction estimate",
+            "unit_id": "openalex_w1224069186_u015",
+            "unit_type": "robustness-analysis",
+            "why_material": "Explains through a small-parameter expansion that the leading gap-squared term already nearly equals the reported Λ bound, so substantial conservatism in the global interaction estimate has little effect. This clarifies why the certification can succeed without highly accurate knowledge of every zero."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An explicit global counting formula can be converted into unit-interval density control and then into a convergent inverse-square tail estimate, providing analytic coverage beyond the computed zero window.",
+            "limit": "The constants and threshold are those stated in this source, and the appendix's formula-damaged main-term algebra needs scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1224069186_u006",
+              "openalex_w1224069186_u007",
+              "openalex_w1224069186_u016"
+            ],
+            "title": "Zero counting as the analytic backstop for computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 523,
+              "line_start": 493,
+              "reason": "The appendix's displayed main-term increment and logarithmic expansion are severely reordered; exact algebra is quarantined pending scan verification."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1224069186_u016",
+        "spontaneous": {
+          "unit_id": "openalex_w1224069186_u016",
+          "spontaneous_reading": "The appendix proves the local density certificate by budgeting a smooth main-term increment and explicit error terms separately, then absorbing every remainder into fixed fractions of log T above a finite threshold."
+        },
+        "directed": {
+          "unit_id": "openalex_w1224069186_u016",
+          "source_grounded_mathematics": "Writing N(T)=s(T)+e(T), the proof bounds s(T+1)-s(T) using a logarithmic expansion and controls the two error terms by the stated Backlund estimate. For T≥3·10^8 it bounds the log-log and constant contributions by α log T and β log T, obtaining N(T+1)-N(T)<log T.",
+          "conceptual_reading": "An asymptotic counting formula becomes a uniform local statement through explicit error absorption. The proof exposes how a threshold is chosen so lower-order terms fit inside the slack left beneath the target coefficient of log T.",
+          "representation_or_bridge": "The decomposition N=s+e bridges a global main term plus error to a unit-step count; the α and β inequalities bridge heterogeneous lower-order terms to a common log T budget used by the tail argument.",
+          "boundary_or_failure": "This certificate uses source-specific constants and the threshold T≥3·10^8. The central displayed algebra in lines 493-523 is severely reordered by extraction and cannot safely support exact formula reconstruction.",
+          "uncertainty": "The later explicit inequalities and final conclusion are legible, but the full main-term increment derivation requires verification against the original scan before formula-level reuse."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "bee0172ad4b07ffd574bc074f88edb9380e1474057edfb75350e3837a2fd3045"
+}

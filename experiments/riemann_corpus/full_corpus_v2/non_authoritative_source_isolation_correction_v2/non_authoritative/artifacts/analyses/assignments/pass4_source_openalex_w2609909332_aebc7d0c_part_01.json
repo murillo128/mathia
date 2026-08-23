@@ -1,0 +1,330 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2609909332_aebc7d0c_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2609909332",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem's exact square-root scale and allowed constant depend on beta. Lines 52-62 give the causal explanation for the gain rather than merely announcing a stronger estimate.",
+      "line_end": 62,
+      "line_start": 24,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem display has split radicals, iterated logarithms, and OCR punctuation. Verify the exact exponent, constant restriction, interval, and approximation (2) against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 improves the leading constant in the extreme-value lower bound. The source identifies the mechanism precisely: instead of a truncated pointwise approximation whose explicit pole contribution is troublesome on short lower ranges, convolve zeta with a suitable smooth kernel so that the pole becomes harmless for every beta below one.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth convolution avoids the pole term that limits a classical pointwise approximation",
+      "unit_artifact_relpath": "depth/units/w2609909332_smoothing_removes_pole_obstruction.txt",
+      "unit_bytes": 3251,
+      "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+      "unit_sha256": "e533ddc01930af0e9fa5c4b9e088d97d6998eea351ab69673ebf1fd71cb462ae",
+      "unit_type": "result_and_method_comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_smoothing_removes_pole_obstruction.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 16,
+          "line_end": 23,
+          "text": "                                                   the Riemann hypothesis, the maximum of |S(t )| is at least c log T log log log T / log log T and\n                                                                                           p\n                                                   the maximum of S 1 (t ) is at least c 1 log T log log log T /(log log T )3 on the interval T β ≤ t ≤ T\n                                                   whenever 0 ≤ β < 1.\n\n\n\n\n",
+          "sha256": "109c560f5d70f01cd3c6a5986dfb6c57b0274240a386d952ff519d3160652c30"
+        },
+        "after": {
+          "line_start": 63,
+          "line_end": 70,
+          "text": "    We next turn to our results for the functions\n\n                                                                     Zt\n                               1\n                       S(t ) := Im log ζ(1/2 + i t ) and S 1 (t ) :=    S(τ)d τ.\n                               π                                      0\n\n\n",
+          "sha256": "b7c8b50c21ed9e1ea1d8e196bd71acea5bcf466db0bc1d92edc47df7ffac9a42"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 204,
+            "line_start": 24,
+            "mathematical_role": "states extreme-value results, introduces S and S1, explains smoothing, methodological tradeoffs, conditionality, and sign obstruction"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 62,
+          "line_start": 24,
+          "title": "Smooth convolution avoids the pole term that limits a classical pointwise approximation",
+          "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+          "unit_type": "result_and_method_comparison",
+          "why_material": "Theorem 1 improves the leading constant in the extreme-value lower bound. The source identifies the mechanism precisely: instead of a truncated pointwise approximation whose explicit pole contribution is troublesome on short lower ranges, convolve zeta with a suitable smooth kernel so that the pole becomes harmless for every beta below one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem's exact square-root scale and allowed constant depend on beta. Lines 52-62 give the causal explanation for the gain rather than merely announcing a stronger estimate.",
+          "representation_dependency": "The theorem display has split radicals, iterated logarithms, and OCR punctuation. Verify the exact exponent, constant restriction, interval, and approximation (2) against the PDF.",
+          "unit_id": "w2609909332_smoothing_removes_pole_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 140,
+            "line_start": 63,
+            "title": "S and its primitive isolate the fluctuating remainder in zero counting",
+            "unit_id": "w2609909332_argument_functions_encode_zero_fluctuation",
+            "unit_type": "definition_and_result_boundary",
+            "why_material": "The paper fixes the branch and jump convention for the argument of zeta, places S directly in the Riemann-von Mangoldt formula, and contrasts unconditional and RH-conditional upper and lower bounds. Theorem 2 then states improved conditional extremes for both S and S1 on a movable interval."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 43,
+              "line_start": 31,
+              "reason": "Theorem 1 and its comparison constant are mathematically recoverable from prose and abstract, but radicals and iterated-log fractions are spatially fragmented; exact statement needs the PDF."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+        "spontaneous": {
+          "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+          "spontaneous_reading": "The decisive move is to replace a pointwise truncated zeta approximation by a smooth convolution. The truncation's explicit pole term grows troublesome below the square-root time scale, whereas smoothing turns the pole into a separately controllable residue and leaves a Fourier-filtered Dirichlet series for resonance."
+        },
+        "directed": {
+          "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+          "source_grounded_mathematics": "Theorem 1 asserts unconditionally that for fixed 0 <= beta < 1 and positive c below sqrt(1-beta), sufficiently large T contains t in [T^beta,T] with an exponential lower bound for |zeta(1/2+it)|. The stated improvement in the leading constant is attributed to convolving zeta with a suitable smooth kernel instead of using the classical truncation whose pole term obstructs beta < 1/2.",
+          "conceptual_reading": "Smoothing changes the representation of the target without discarding the coefficient structure needed by the resonator: the global analytic obstruction is isolated as a residue rather than mixed into the main approximation. This exposes a proof-design principle in which the transform is chosen to make a singular contribution harmless over the desired localization range.",
+          "representation_or_bridge": "The bridge is pointwise zeta -> kernel convolution -> Fourier-selected Dirichlet series plus a pole contribution. The later resonance argument can act on the selected coefficients while the pole is estimated separately.",
+          "boundary_or_failure": "This span gives an existence lower bound, not a frequency or measure estimate, and does not establish optimality. It announces rather than proves the convolution control. The result for zeta is unconditional, unlike the later claims for S and S1.",
+          "uncertainty": "The PDF text layer breaks the radical and nested logarithms in the theorem display. The exact constant, exponent, and endpoints should be checked against the PDF before formula-level reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w2609909332_smoothing_removes_pole_obstruction",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the unconditional extreme-value theorem and explicitly attributes the improved range to replacing the classical pointwise approximation by convolution with a smooth kernel.",
+          "It expressly identifies the pole term in the classical approximation as troublesome when beta is below one half and says smoothing makes the pole's influence essentially harmless for every fixed beta below one."
+        ],
+        "inference": [
+          "Treating smoothing as a representation change designed around a singular obstruction is a faithful conceptual abstraction of the comparison."
+        ],
+        "unsupported_or_imported": [
+          "The claims that convolution turns the pole into a separately controlled residue and leaves a Fourier-filtered Dirichlet series for resonance come from the later convolution identity, not from this exact introductory span.",
+          "The assertion that the transform preserves the precise coefficient structure needed by the resonator is announced only indirectly here and is not established in the unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic proof-design principle is useful only after the later algebraic mechanism is established; here it makes an announced method sound derived."
+        ],
+        "context_or_ocr_risk": [
+          "The theorem's radical, nested logarithms, leading constant, and interval endpoints are spatially fragmented and require PDF verification."
+        ],
+        "missed_mechanism": [
+          "The candidate should keep the exact local comparison in view: the explicit second term of the classical approximation causes the beta below one-half restriction, whereas the source only announces that smooth convolution removes that restriction."
+        ],
+        "revision_instructions": [
+          "Restrict this unit's mechanism to the stated pointwise-approximation versus smooth-convolution comparison. Move residue separation, Fourier filtering, and resonator-ready coefficients to the later convolution-identity unit or label them explicitly as later-source context rather than evidence from this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly presents the missing measure estimate as an impasse and connects it to the inability to make some conditional results unconditional.",
+      "line_end": 204,
+      "line_start": 176,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primarily prose-based; exact comparisons to prior quantitative results remain citation-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors contrast resonance with high moments and with earlier shorter resonators. Larger primes and a longer Dirichlet polynomial improve the detectable maximum, but currently yield a much larger interval and no comparable measure estimate. Because all coefficients are nonnegative, the construction detects large positive real parts and cannot symmetrically force both signs.",
+      "source_id": "openalex_w2609909332",
+      "source_normalized_sha256": "e2905c682dc26455b65d503e992768f45d91171ca107ddd3e83c91e4697e0825",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Longer positive resonators improve amplitude but enlarge the location interval and lose sign flexibility",
+      "unit_artifact_relpath": "depth/units/w2609909332_resonance_tradeoffs_and_sign_obstruction.txt",
+      "unit_bytes": 2444,
+      "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+      "unit_sha256": "08424a2e00fde20504e38a4f6f1b838a1ca1fdef2c45b6ffc9e390ea485fdba7",
+      "unit_type": "method_comparison_and_limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w2609909332_resonance_tradeoffs_and_sign_obstruction.txt",
+      "source": {
+        "source_id": "openalex_w2609909332",
+        "title": "Extreme values of the Riemann zeta function and its argument",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 168,
+          "line_end": 175,
+          "text": "                                                          −3/2\n                           max |S 1 (t )| ≥ c1 (log log T )          log T log log log T\n                      T 1/2 ≤t≤T\n\n\n\n\nfor all large enough T .\n",
+          "sha256": "1be641881acf0fc91a8e8d8e56f44eb482dc81c7e3003859ea0c7385ffdadf35"
+        },
+        "after": {
+          "line_start": 205,
+          "line_end": 212,
+          "text": "\n\n                        2. C ONVOLUTION FORMULAS FOR ζ(s) AND log ζ(s)\n\n  We define the Fourier transform Kb of K on R as\n                                           Z∞\n                                 Kb (ξ) :=    K (x)e −i xξ d x.\n                                                  −∞\n",
+          "sha256": "7cb9c6288ebc5e7d46517b5fab9420ca48fa90b056b4d33d23e9faa1557093c8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ee741712c3d46e2d7dff9f306aa0297823486bd9228c681ae3b6b893bbbd9dab",
+        "dossier_sha256": "7483a3615b20b6fe913fbcded8287d172d4efe1fb579afb60690539ccbe327bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 204,
+            "line_start": 24,
+            "mathematical_role": "states extreme-value results, introduces S and S1, explains smoothing, methodological tradeoffs, conditionality, and sign obstruction"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 204,
+          "line_start": 176,
+          "title": "Longer positive resonators improve amplitude but enlarge the location interval and lose sign flexibility",
+          "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+          "unit_type": "method_comparison_and_limitation",
+          "why_material": "The authors contrast resonance with high moments and with earlier shorter resonators. Larger primes and a longer Dirichlet polynomial improve the detectable maximum, but currently yield a much larger interval and no comparable measure estimate. Because all coefficients are nonnegative, the construction detects large positive real parts and cannot symmetrically force both signs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly presents the missing measure estimate as an impasse and connects it to the inability to make some conditional results unconditional.",
+          "representation_dependency": "Primarily prose-based; exact comparisons to prior quantitative results remain citation-dependent.",
+          "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 175,
+            "line_start": 142,
+            "title": "A Cauchy-kernel formula transfers large log-zeta values into lower bounds for the primitive S1",
+            "unit_id": "w2609909332_s1_controls_log_zeta",
+            "unit_type": "integration_by_parts_bridge",
+            "why_material": "Starting from a conditional integral representation of log absolute zeta in terms of S, integration by parts replaces S with S1 and an explicit signed kernel. Choosing sigma just to the right of the critical line then imports an earlier large-value result to obtain a preliminary conditional S1 bound."
+          },
+          {
+            "line_end": 245,
+            "line_start": 207,
+            "title": "Contour shifting turns a smoothed zeta value into a weighted Dirichlet series plus an explicit pole residue",
+            "unit_id": "w2609909332_zeta_convolution_identity",
+            "unit_type": "lemma_plus_contour_proof",
+            "why_material": "Lemma 1 shifts a contour from the critical strip to an absolutely convergent line, expands zeta there, and shifts each kernel integral back. The result cleanly separates Fourier-selected Dirichlet coefficients from the residue of the zeta pole."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Longer resonators built from larger primes improve the lower-bound scale, while the proof must work on a larger interval and currently gives no comparable estimate for how often the extreme values occur.",
+            "limit": "The source proves existence of a large value only; it explicitly leaves measure estimates and several opposite-sign bounds unresolved.",
+            "parent_local_unit_ids": [
+              "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+              "w2609909332_theorem1_kernel_and_localization"
+            ],
+            "title": "Improved amplitude trades against localization and prevalence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 206,
+              "line_start": 205,
+              "reason": "Blank transition to convolution formulas."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+        "spontaneous": {
+          "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+          "spontaneous_reading": "Using larger primes and a longer resonator increases the detectable Dirichlet-series amplitude, but weakens localization and currently loses control of how often the extremes occur. More fundamentally, nonnegative resonator coefficients make the method a positive-real-part selector, so they do not recover both signs the way high moments can."
+        },
+        "directed": {
+          "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+          "source_grounded_mathematics": "The source contrasts its resonance method with Selberg-Tsang high moments and with an earlier shorter resonator. Larger primes and a longer Dirichlet polynomial improve maxima but require substantially larger intervals and have not produced a reasonable measure estimate for the large-value set. It states that nonnegative coefficients allow the resonator to catch large positive real parts, obstructing improved conditional Omega-plus/minus results for S and an improved Omega-minus result for S1.",
+          "conceptual_reading": "The resonator architecture fixes both sensitivity and blind spots: support length controls amplitude versus localization, while coefficient positivity supplies monotonicity at the cost of sign symmetry. These are structural tradeoffs, not merely loose constants.",
+          "representation_or_bridge": "Resonance bridges a Dirichlet series to a weighted mean dominated by chosen multiplicative correlations; high moments provide the comparison bridge that can detect either sign and support measure estimates.",
+          "boundary_or_failure": "The claimed adaptability of an earlier measure result and Tsang's proof is mentioned without proof. No stronger measure theorem is supplied, so an unconditional version of the later S1 result remains a hope. Positivity explicitly blocks the missing sign results.",
+          "uncertainty": "The methodological claims and stated obstruction are clear in the text; quantitative comparisons with the cited works cannot be independently assessed from this span."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w2609909332_resonance_tradeoffs_and_sign_obstruction",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose explicitly says that larger primes and a longer resonator improve the detected maxima at the price of a substantially larger interval and no comparable measure estimate.",
+          "It also explicitly identifies nonnegative coefficients as the reason this resonance method catches positive real parts and cannot deliver the missing opposite-sign results."
+        ],
+        "inference": [
+          "Treating length as an amplitude-versus-localization tradeoff and positivity as monotonicity-versus-sign-symmetry is a faithful structural synthesis."
+        ],
+        "unsupported_or_imported": [
+          "The representation section says high moments support measure estimates, but the span attributes the relevant prior measure result to Soundararajan's resonance work; high moments are invoked separately for detecting either sign."
+        ],
+        "paraphrase_or_style_risk": [
+          "Combining distinct comparisons into one polished 'high moments' bridge obscures which predecessor supplies sign flexibility and which supplies a measure estimate."
+        ],
+        "context_or_ocr_risk": [
+          "The qualitative claims are clear, but quantitative comparisons with cited prior work are not independently established in this span."
+        ],
+        "missed_mechanism": [
+          "The candidate should preserve the source's three-way comparison among this longer resonator, Soundararajan's earlier resonator and measure result, and Selberg-Tsang high moments."
+        ],
+        "revision_instructions": [
+          "Separate the sign comparison from the prevalence comparison: attribute either-sign detection to high moments, and attribute the cited comparable measure estimate to the earlier Soundararajan resonance result. Keep the source's 'mentioned without proof' status for the proposed adaptation."
+        ]
+      }
+    }
+  ]
+}

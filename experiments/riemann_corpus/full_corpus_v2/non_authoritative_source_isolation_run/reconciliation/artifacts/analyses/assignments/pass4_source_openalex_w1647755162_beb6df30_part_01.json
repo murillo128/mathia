@@ -1,0 +1,349 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1647755162_beb6df30_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1647755162",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes density-based sizing of the number of shifts, fixed interval length, and the tradeoff that the found representation need not use an extremal prime.",
+      "line_end": 231,
+      "line_start": 197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical density and interval parameters should be verified against the scan; the algorithmic change is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reverses the conventional search: instead of testing small p against primes near e, it fixes consecutive q near a and covers all e using a reusable bitset P+q, dramatically reducing repeated prime generation.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Precompute a small-prime bitset and shift it by primes near the interval base",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_v2_u05.txt",
+      "unit_bytes": 2392,
+      "unit_id": "openalex_w1647755162_v2_u05",
+      "unit_sha256": "58ee10e78ac4b2250ef4998bddebb59e8be6ed9eba99282119590fe164ef99e4",
+      "unit_type": "computational representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 189,
+          "line_end": 196,
+          "text": "&o C £1 s:;; £2 s:;; · • · , defined by &o = 0,\n                         &i+1 = ei U (Q(a, b) + Pi+1), i = 0, 1, ... , 1\nuntil &j covers all the even numbers in the interval [a, b] for some j. The set Q(a, b)\nis generated with the sieve of Eratosthenes: this is the most time-consuming part\nof the computation. For the choice of Ea it is sufficient that Ea exceeds the largest\nodd prime used in the generation of the sets &; . In the computations checking the\nGoldbach conjecture up to 4 x 10 11 [14], the largest small odd prime needed was\np445 = 3163 (this is the smallest prime p for which 244885595672 - p is prime).\n",
+          "sha256": "3aed45c399608533c3ed33cafa53b4d883f3c2ebf476ec79aa3cfed7e7dc436d"
+        },
+        "after": {
+          "line_start": 232,
+          "line_end": 239,
+          "text": "   For the actual generation of k primes close to a we have used Jaeschke's compu-\ntational results [8], stating that if a positive integer n < 2152302898747 is a strong\npseudoprime with respect to the first five primes 2, 3, 5, 7, 11, then n is prime;\ncorresponding bounds for the first six and seven primes are 3474749660383 and\n341550071728321, respectively.\n   We have implemented the second approach on a Cray C98 vector computer and\nverified the Goldbach conjecture for all even numbers > 4 x 10 11 and :S 10 13 .\nAfter the generation of k primes near a, the actual verification was carried out by\n",
+          "sha256": "06f44281ed13ed48c738738502067150ce0d162607cd0ebef4f257ad6dd4a0d1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_85cbc06c7fcf3f0cbf56b9c3a7eeeea1dab4711bc56402dada853610627a79d2",
+        "dossier_sha256": "3239edb127c97750c673cdd15496bdba7cc4e5bcdae68c69d4885ce961a8e722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The computer search for 2-primes representations",
+            "line_end": 252,
+            "line_start": 176,
+            "mathematical_role": "States the verified binary Goldbach range, redesigns the sieve as bitset coverage by shifted prime sets, and records primality certification and runtime evidence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 231,
+          "line_start": 197,
+          "title": "Precompute a small-prime bitset and shift it by primes near the interval base",
+          "unit_id": "openalex_w1647755162_v2_u05",
+          "unit_type": "computational representation change",
+          "why_material": "Reverses the conventional search: instead of testing small p against primes near e, it fixes consecutive q near a and covers all e using a reusable bitset P+q, dramatically reducing repeated prime generation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes density-based sizing of the number of shifts, fixed interval length, and the tradeoff that the found representation need not use an extremal prime.",
+          "representation_dependency": "Numerical density and interval parameters should be verified against the scan; the algorithmic change is clear.",
+          "unit_id": "openalex_w1647755162_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 196,
+            "line_start": 176,
+            "title": "Reduce binary Goldbach verification to coverage by shifted prime sets",
+            "unit_id": "openalex_w1647755162_v2_u04",
+            "unit_type": "finite verification reduction",
+            "why_material": "States the verified even range and formalizes the conventional interval-by-interval search as union coverage Q(a,b)+p_i, making exhaustive verification a set-coverage problem."
+          },
+          {
+            "line_end": 251,
+            "line_start": 232,
+            "title": "Combine bounded pseudoprime tests with vectorized bitset unions",
+            "unit_id": "openalex_w1647755162_v2_u06",
+            "unit_type": "computational certification evidence",
+            "why_material": "Records how candidate primes were certified in the relevant ranges, how shifted OR operations represented coverage, and the hardware/time/extreme-case evidence supporting the exhaustive claim."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Viewing all even targets in an interval as a bitset union of P+q shifts replaces repeated sieving of large intervals by one reusable small-prime sieve plus cheap vector operations.",
+            "limit": "The efficiency figures are tied to the selected interval size, machine architecture, primality bounds, and 1997 implementation; they are evidence for that run rather than a general complexity theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_v2_u04",
+              "openalex_w1647755162_v2_u05",
+              "openalex_w1647755162_v2_u06"
+            ],
+            "title": "A representation change makes exhaustive coverage feasible"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1647755162_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w1647755162_v2_u05",
+          "spontaneous_reading": "The computation reverses which primes are reusable: precompute one bitset of small primes and repeatedly shift it by a modest list of primes near the interval base, avoiding regeneration of every prime inside each large target interval."
+        },
+        "directed": {
+          "unit_id": "openalex_w1647755162_v2_u05",
+          "source_grounded_mathematics": "For each even e in a fixed-length interval [a,b], the method seeks a prime q near a such that e-q belongs to a precomputed set P of odd primes up to roughly b-a. Cumulative unions P+q_i are formed until they cover the interval; density estimates motivate the number of q_i, and the paper reports that k=360 sufficed.",
+          "conceptual_reading": "The representation change trades a large per-interval sieve for a one-time reusable table plus cheap translations. It exploits the fact that existence of some decomposition is enough, so neither summand needs to be extremal.",
+          "representation_or_bridge": "The bitset P is the reusable intermediate object, and translation by q_i converts membership in P into simultaneous Goldbach witnesses throughout [a,b].",
+          "boundary_or_failure": "Uniform-prime-density reasoning only sizes the search heuristically; actual coverage must still be checked. The method does not return the smallest or largest possible prime summand.",
+          "uncertainty": "The algorithmic contrast is explicit, but OCR-sensitive density figures, interval lengths, and size estimates should be verified before numerical reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1647755162_v2_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The source explicitly reverses the search, precomputes a large set P of small odd primes once, shifts it by consecutive primes q_i near a, uses density only to size k heuristically, and sacrifices extremal witnesses."
+        ],
+        "inference": [
+          "The one-time-table versus per-interval-sieve tradeoff and simultaneous-witness interpretation are reasonable conceptual deductions."
+        ],
+        "unsupported_or_imported": [
+          "Calling P a bitset in the spontaneous reading imports the storage representation from the following unit; this span calls it a set and describes its sieve construction only."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low after removing the bitset import: reusability and translation are concrete properties of this algorithm."
+        ],
+        "context_or_ocr_risk": [
+          "The density, interval length, prime counts, and size estimates are extraction-sensitive, but the search reversal is secure."
+        ],
+        "missed_mechanism": [
+          "The analysis should distinguish the heuristic independence calculation used to choose k from the actual exhaustive coverage test more prominently."
+        ],
+        "revision_instructions": [
+          "Replace 'bitset' with 'precomputed prime set' in this unit, retain the heuristic-versus-certified distinction, and leave the word-level implementation to u06."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is computational evidence conditional on the described implementation and thresholds, distinct from the analytic GRH assumptions.",
+      "line_end": 251,
+      "line_start": 232,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact pseudoprime bounds, runtime figures, and example integers require source-image verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records how candidate primes were certified in the relevant ranges, how shifted OR operations represented coverage, and the hardware/time/extreme-case evidence supporting the exhaustive claim.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Combine bounded pseudoprime tests with vectorized bitset unions",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_v2_u06.txt",
+      "unit_bytes": 1563,
+      "unit_id": "openalex_w1647755162_v2_u06",
+      "unit_sha256": "8ae314d3910ef6fe63fe5ec1f7d3e1b0a4e9427a68c276f185f7c73cd00a9a57",
+      "unit_type": "computational certification evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 224,
+          "line_end": 231,
+          "text": "   In the first approach, a small set of small primes up to 5000, say, has to be\navailable, and for each interval [a, b] to be treated, all the primes in [a, b] have to be\ngenerated. In the second approach, a large set of small primes up to about 108 +10 4\nhas to be generated (only once), and for each interval (a, b] to be treated, one has to\nfind the largest k primes ::::; a. Of course, this is much cheaper than to find all the\nprimes in the interval [a, b]. The price to pay is that for each e E [a, b] some prime\np is found for which e - p is prime, but in general this p is neither the smallest nor\nthe largest such prime.\n",
+          "sha256": "8bac5e324bad7258d7617628919aaad645e0937e18108d35d24eb4b4e27c616c"
+        },
+        "after": {
+          "line_start": 252,
+          "line_end": 259,
+          "text": "\n                                   ACKNOWLEDGMENT\n\n   The second author wishes to thank Paul T. Bateman and Marshall Ash for\nhelpful correspondences on this topic.\n\n                                       REFERENCES\n\n",
+          "sha256": "787d827e86e845682481861e0c25b2cb217de0c7fb792e1f880e9802c2498cfc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_85cbc06c7fcf3f0cbf56b9c3a7eeeea1dab4711bc56402dada853610627a79d2",
+        "dossier_sha256": "3239edb127c97750c673cdd15496bdba7cc4e5bcdae68c69d4885ce961a8e722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The computer search for 2-primes representations",
+            "line_end": 252,
+            "line_start": 176,
+            "mathematical_role": "States the verified binary Goldbach range, redesigns the sieve as bitset coverage by shifted prime sets, and records primality certification and runtime evidence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 251,
+          "line_start": 232,
+          "title": "Combine bounded pseudoprime tests with vectorized bitset unions",
+          "unit_id": "openalex_w1647755162_v2_u06",
+          "unit_type": "computational certification evidence",
+          "why_material": "Records how candidate primes were certified in the relevant ranges, how shifted OR operations represented coverage, and the hardware/time/extreme-case evidence supporting the exhaustive claim."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is computational evidence conditional on the described implementation and thresholds, distinct from the analytic GRH assumptions.",
+          "representation_dependency": "Exact pseudoprime bounds, runtime figures, and example integers require source-image verification.",
+          "unit_id": "openalex_w1647755162_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 231,
+            "line_start": 197,
+            "title": "Precompute a small-prime bitset and shift it by primes near the interval base",
+            "unit_id": "openalex_w1647755162_v2_u05",
+            "unit_type": "computational representation change",
+            "why_material": "Reverses the conventional search: instead of testing small p against primes near e, it fixes consecutive q near a and covers all e using a reusable bitset P+q, dramatically reducing repeated prime generation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The asymptotic theorem covers large odd n, the nearby-prime lemma maps each remaining n to an even m below a fixed threshold, and exhaustive binary Goldbach verification supplies m=p1+p2, yielding n=p+p1+p2.",
+            "limit": "The global conclusion remains conditional on GRH, and the announcement delegates full analytic and computational details to cited work.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_v2_u01",
+              "openalex_w1647755162_v2_u02",
+              "openalex_w1647755162_v2_u03",
+              "openalex_w1647755162_v2_u04",
+              "openalex_w1647755162_v2_u06"
+            ],
+            "title": "Three bounded regimes compose into the conditional theorem"
+          },
+          {
+            "claim": "Viewing all even targets in an interval as a bitset union of P+q shifts replaces repeated sieving of large intervals by one reusable small-prime sieve plus cheap vector operations.",
+            "limit": "The efficiency figures are tied to the selected interval size, machine architecture, primality bounds, and 1997 implementation; they are evidence for that run rather than a general complexity theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_v2_u04",
+              "openalex_w1647755162_v2_u05",
+              "openalex_w1647755162_v2_u06"
+            ],
+            "title": "A representation change makes exhaustive coverage feasible"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1647755162_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w1647755162_v2_u06",
+          "spontaneous_reading": "The finite claim is supported by a layered computational certificate: bounded deterministic-style pseudoprime criteria produce the needed nearby primes, while vectorized OR operations on shifted primality bitsets establish exhaustive interval coverage."
+        },
+        "directed": {
+          "unit_id": "openalex_w1647755162_v2_u06",
+          "source_grounded_mathematics": "The authors use cited strong-pseudoprime bounds to certify candidate primes in specified ranges, represent odd primality by bits in a long array, and generate each new covered set by OR-ing the accumulated array with a shifted prime bitset. They report hardware, timing, the entire verified range, and an extreme case requiring 328 nearby primes.",
+          "conceptual_reading": "Logical completeness comes from covering every target bit, while performance comes from aligning the certificate with word-level vector operations. The reported timings and extreme witness make the exhaustive claim inspectable but do not replace the underlying primality and coverage logic.",
+          "representation_or_bridge": "A bit is simultaneously a primality fact and, after shifting, a representation witness; the final union is the finite certificate consumed by the analytic-computational proof chain.",
+          "boundary_or_failure": "This is computational evidence conditional on the stated code, bounds, and hardware execution. It proves only the reported finite range and is distinct from the GRH-dependent analytic steps.",
+          "uncertainty": "Exact pseudoprime thresholds, numerical examples, and runtimes are extraction-sensitive and need source-image verification; the bitset-union mechanism is clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1647755162_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The cited bounded strong-pseudoprime criteria, 64-bit primality array, shifted OR operations, reported verified range, hardware/timing data, and 328-prime extreme case are explicit."
+        ],
+        "inference": [
+          "Separating logical coverage from vectorized performance is a reasonable interpretation of the implementation description."
+        ],
+        "unsupported_or_imported": [
+          "The analyses overstate the output as an inspectable or retained 'certificate': this span reports that a computation ran but supplies neither code, logs, replay evidence, nor a saved final bitset."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: phrases such as 'layered computational certificate' can make reported execution sound independently auditable when the frozen span provides only a narrative report."
+        ],
+        "context_or_ocr_risk": [
+          "Pseudoprime thresholds, runtimes, endpoints, and example integers are formula-sensitive and require the scan."
+        ],
+        "missed_mechanism": [
+          "The epistemic gap between deterministic bounded primality implications and unverified implementation/execution provenance should be explicit."
+        ],
+        "revision_instructions": [
+          "Describe this as reported exhaustive computational evidence, not an independently inspectable certificate; preserve the distinct assumptions behind primality tests, coverage logic, and execution claims."
+        ]
+      }
+    }
+  ]
+}

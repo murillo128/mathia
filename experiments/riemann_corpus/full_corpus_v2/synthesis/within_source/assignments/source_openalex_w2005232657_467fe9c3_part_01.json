@@ -1,0 +1,331 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2005232657",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2005232657_467fe9c3_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Integration by parts, pole cancellation, the zero-counting function, and the integrated argument transform the same contour information among weighted arg-zeta integrals, log-modulus integrals, and sums over zeros, explaining the correspondence among named criteria.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2005232657_u07",
+          "full_openalex_w2005232657_u09",
+          "full_openalex_w2005232657_u11",
+          "full_openalex_w2005232657_u12",
+          "full_openalex_w2005232657_u14"
+        ],
+        "proposed_limit": "Each transformation carries distinct convergence, principal-value, branch, or quoted-theorem assumptions; equivalence of representations does not make them equally tractable numerically or analytically.",
+        "source_id": "openalex_w2005232657",
+        "synthesis_id": "riemann_v2_within_1f5af4793cb94a2571fd96f1",
+        "title": "Argument, modulus, and zero sums are linked representations"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The derivation assumes RH temporarily to obtain the clean identity and then restores the general zero terms by differentiating their contribution.",
+          "line_end": 541,
+          "line_start": 466,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on boundary-term decay, parameter differentiation under the integral, and an earlier identity quoted in the source; exact formulas need scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source derives the same second-family equality by integrating the complex argument integral by parts and differentiating an earlier log-modulus identity with respect to b, showing two representations of the same zero correction.",
+          "source_id": "openalex_w2005232657",
+          "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integration by parts links argument criteria to differentiated modulus identities",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2005232657_u07.txt",
+          "unit_bytes": 4572,
+          "unit_id": "full_openalex_w2005232657_u07",
+          "unit_sha256": "eefa39a9e246df9fd1dca0d96e2018cf5a8a6e9cd58bc6ddd19c98ef6bf32154",
+          "unit_type": "method comparison and alternate derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2005232657_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Parameter differentiation is a representation change, not merely an algebraic shortcut: displacement of the vertical line converts modulus information into a logarithmic-derivative response, and integration by parts converts that response into phase information.",
+            "nonparaphrase_operation": "The bridge chain is weighted arg-zeta integral to Re(zeta'/zeta) by integration by parts, then to a b-derivative of a log-modulus identity, with derivatives of explicit zero factors carrying the off-line corrections through the chain.",
+            "quality_reason": "The source integrates the complex weighted log-zeta integral by parts and obtains the phase integral in terms of Re(zeta'/zeta), including the b<1 boundary contribution. Under a temporary RH assumption it differentiates a quoted weighted log-modulus theorem with respect to b, substitutes the result, and then says that differentiating and pairing the explicit zero terms restores general identity (7). The representation-chain description is substantive because it names the two actual operations and the zero-term transport.",
+            "source_support": "Integrating 2 times the complex integral of t log(zeta(b+it))/(a^2+t^2)^2 by parts expresses its imaginary part through an integral of Re(zeta'/zeta)/(a^2+t^2), including the b<1 boundary term. Assuming RH temporarily, the source differentiates a quoted weighted log-modulus identity in b and substitutes the result to obtain equation (13); differentiating the earlier zero-correction sum and pairing conjugates restores the general identity (7).",
+            "speculation_status": "This route requires decay of the integration-by-parts boundary term, differentiation under an improper integral, and validity of a theorem quoted from the previous note. The temporary RH assumption produces only the clean case; restoring explicit zero terms is essential and is summarized rather than independently justified here. The equivalence of mechanisms is well supported by the span, but analytic interchange conditions and exact formula normalization remain dependent on the quoted result and OCR-sensitive displays. Reading b-differentiation as the response to moving the vertical line and integration by parts as a phase/logarithmic-derivative bridge accurately interprets the operations shown. The span does not establish differentiation under the improper integral, boundary decay, or the prior theorem, and its displayed normalizations are OCR-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The equality is defined with an explicit Cauchy principal value around x equals one and is proposed as numerically suitable.",
+          "line_end": 647,
+          "line_start": 562,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on the pole-cancelling factor, the geometry of a figure-defined semi-contour, Laurent behavior at one, and OCR-sensitive integral limits.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replacing zeta by zeta times z minus one removes the simple pole from the logarithm, and a semi-indented contour relates a vertical critical-line modulus integral to a real-axis principal-value integral.",
+          "source_id": "openalex_w2005232657",
+          "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Cancelling the zeta pole converts a vertical argument setup into a modulus identity",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2005232657_u09.txt",
+          "unit_bytes": 4966,
+          "unit_id": "full_openalex_w2005232657_u09",
+          "unit_sha256": "3216ed1bd633e0e54e862360a6b46c3175703d3ebc83344fcd96d432226c35d6",
+          "unit_type": "pole cancellation and contour reframing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2005232657_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Pole cancellation separates the singularity of the represented function from singularities intentionally introduced by the kernel. This analytic regularization permits the same contour data to be recast on two geometrically different boundaries.",
+            "nonparaphrase_operation": "The factor z-1 bridges from a meromorphic zeta logarithm to a locally regular product logarithm; the semi-indented contour then bridges the vertical line to the real half-axis, with principal value preserving the contribution across x=1.",
+            "quality_reason": "The span explicitly replaces log zeta by log(zeta(z)(z-1)), states that this cancels the zeta pole, and uses the Laurent behavior at z=1 to compute the remaining kernel residue. The semi-indented contour at b=1/2 yields equation (14), relating a vertical-line log-modulus integral to a real-axis log-modulus integral that is explicitly defined as a Cauchy principal value. The two-boundary 'bridge' language is backed by the displayed equality and principal-value definition.",
+            "source_support": "The source replaces log zeta(z) by log(zeta(z)(z-1)) and studies a rationally weighted contour at b=1/2. The Laurent expansion log(zeta(1+delta)delta)=gamma delta+... leaves a computable simple-pole residue from the kernel. A semi-contour indenting z=1 yields equation (14), equating a weighted vertical integral of log|zeta(1/2+it)(-1/2+it)| with a real-axis integral of log|zeta(x)(x-1)| explicitly defined in the Cauchy principal-value sense.",
+            "speculation_status": "The exact semi-contour geometry is figure-dependent, the branch of the logarithm and Laurent normalization matter, and the real-axis side is not an ordinary absolutely interpreted integral. Integral limits and kernel powers are OCR-sensitive. The pole-cancellation and principal-value mechanism are explicit, but the full contour justification and numerical conditioning cannot be certified from this span alone. The factor z-1 can accurately be described as local analytic regularization before the contour boundary is changed. The semi-contour geometry is delegated to a figure, while logarithm branches, integral limits, and kernel powers remain formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The sum comparison uses a known closed form quoted by the source and presumes the relevant Stieltjes integrals and boundary terms exist.",
+          "line_end": 747,
+          "line_start": 678,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on the normalization and branch of the zero-counting formula, Stieltjes integration by parts, and formula extraction of G and its derivative.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The zero-counting formula identifies arg-zeta as the fluctuating term in N(x); choosing a weight G and integrating against dN converts a sum over zero ordinates into a weighted argument integral and recovers Volchkov's RH criterion as the b equals one-half case of Theorem 2a.",
+          "source_id": "openalex_w2005232657",
+          "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Stieltjes integration maps arg-zeta weights to sums over zero ordinates",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2005232657_u11.txt",
+          "unit_bytes": 3697,
+          "unit_id": "full_openalex_w2005232657_u11",
+          "unit_sha256": "14ca12e3d747754490dcaad4d09e5e3c7298280d5796a22b35a470d4ef5b8224",
+          "unit_type": "zero-counting reinterpretation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2005232657_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The counting measure compresses the zero set into a distribution that can be probed by kernels. Selecting G chooses which spectral statistic is visible, and the phase term records the deviation of actual zero counts from the smooth main term.",
+            "nonparaphrase_operation": "Stieltjes integration bridges discrete zero ordinates and continuous N(x); the explicit formula for N then bridges the zero sum to a weighted arg-zeta integral plus computable smooth terms.",
+            "quality_reason": "The span writes N(x) as smooth terms plus arg zeta divided by pi, states that integrating G against dN sums G over zero ordinates, and gives the Stieltjes integration-by-parts step. For Volchkov's reciprocal-quadratic G it compares the resulting ordinate sum with a quoted reciprocal-zero sum and derives equation (16), which it identifies with the b=1/2 case of Theorem 2a. The counting-measure language adds a concrete operation—testing dN by G—rather than merely renaming the formulas.",
+            "source_support": "The source writes N(x) as smooth elementary and log-Gamma terms plus arg(zeta(1/2+ix))/pi. For suitable G, the Stieltjes integral of G against dN equals the sum of G(t_k) and integration by parts expresses it through G' times N. With G(x)=1/(1/4+x^2), Volchkov compares the ordinate-weighted sum with the known real sum over reciprocal zeros; equality holds exactly under RH and termwise evaluation yields the weighted arg-zeta equality (16), identified with the b=1/2 specialization of Theorem 2a.",
+            "speculation_status": "The argument normalization in N, existence of the Stieltjes integral, vanishing boundary terms, multiplicities, and the quoted closed form for the reciprocal-zero sum are required. The comparison uses ordinate data and needs the stated iff argument to recover information about real parts. High confidence in the counting-measure bridge and its identification of Volchkov as a special kernel; exact constants and branch conventions remain source- and typography-dependent. Describing G as a probe of the zero-counting measure and arg zeta as its fluctuating component is a faithful interpretation of equation (15). Branch normalization, multiplicities, Stieltjes existence, boundary terms, and the quoted closed form for the reciprocal-zero sum remain assumptions."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source treats the constant horizontal term as vanishing after differentiation and states equation 17 as RH-equivalent.",
+          "line_end": 810,
+          "line_start": 749,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on the growth estimate for S1, a quoted Littlewood relation, interchange of integrations, and heavily fragmented nested-integral typography.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introducing the integrated argument S1, applying integration by parts, and using a Littlewood relation expresses the argument criterion through horizontal integrals of log-modulus; the source notes this representation is harder to handle but generalizes it to its other equality.",
+          "source_id": "openalex_w2005232657",
+          "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integrated argument converts Volchkov's criterion into a two-dimensional log-modulus criterion",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2005232657_u12.txt",
+          "unit_bytes": 3062,
+          "unit_id": "full_openalex_w2005232657_u12",
+          "unit_sha256": "76fd80aae43dd5dc9fbd2d27a23538ad50f0027cc592772f530da3dab1875ce3",
+          "unit_type": "equivalent representation transform",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2005232657_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Cumulative integration smooths phase fluctuations and makes a bridge to a two-dimensional modulus field. The transformation preserves the criterion in principle while worsening the analytic object that must be controlled, separating representational equivalence from practical usefulness.",
+            "nonparaphrase_operation": "Integration by parts maps arg zeta to S1, and the rectangular-contour Littlewood relation maps S1 to horizontal log-modulus integrals across sigma. Interchanging the resulting integrations produces the displayed nested criterion.",
+            "quality_reason": "The source defines S1 as the integrated argument, invokes S1(x)=O(log x), integrates by parts, and quotes a Littlewood relation expressing S1 by horizontal log-modulus integrals. It obtains a nested modulus criterion, says the S1 representation is difficult to handle, applies the transform to another equality, and states equation (17) is RH-equivalent. The representation account identifies integration by parts and the horizontal Littlewood integral, so it is not content-free restatement.",
+            "source_support": "Using S1(x)=integral from 0 to x of arg(zeta(1/2+it))dt and the bound S1(x)=O(log x), the source integrates the Volchkov expression by parts. It invokes a Littlewood relation expressing S1(x) as the integral over sigma from 1/2 to infinity of log|zeta(sigma+ix)|-log|zeta(sigma)|. The x-independent horizontal term drops under the differentiated weight, yielding a double-integral modulus form; applying the same transform to another equality gives equation (17), stated to be RH-equivalent.",
+            "speculation_status": "The move requires the quoted growth bound, vanishing boundary terms, a valid Littlewood relation, and justified interchange of improper integrations. The nested typography is heavily fragmented, and the source itself says S1 is difficult to handle. The transformation chain and its stated limitation are clear; the exact kernel in equation (17) and the claimed equivalence require formula-level checking beyond this OCR span. Calling S1 a smoother cumulative phase object and distinguishing formal equivalence from analytic tractability accurately reflects the operations and the authors' stated limitation. The nested display is heavily fragmented, and boundary decay, the quoted Littlewood formula, and interchange of improper integrations are not justified here."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The prior theorem is reproduced in the span, but its original proof is not part of this source.",
+          "line_end": 867,
+          "line_start": 843,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on the validity of the quoted earlier theorem and the representation transformations developed in lines 466-541 and 749-810.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "By tracing the argument criterion back to a differentiated prior log-modulus theorem, the source argues that the Volchkov and Balazard-Saias-Yor equalities are the same underlying criterion written in different integral representations.",
+          "source_id": "openalex_w2005232657",
+          "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Volchkov and Balazard-Saias-Yor are two representations of one contour criterion",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2005232657_u14.txt",
+          "unit_bytes": 1962,
+          "unit_id": "full_openalex_w2005232657_u14",
+          "unit_sha256": "5212839fccd9087e9603536d872312e51fcbcd2cc504d3d831eb9e6eb225d0a0",
+          "unit_type": "criterion unification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2005232657_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The remark treats Volchkov's and Balazard-Saias-Yor's RH criteria as representation-level variants because the current equality (6) is asserted to follow directly from a reproduced earlier weighted log-modulus identity, and the current and earlier formulas specialize at b=1/2 to the two named criteria. The shared content is therefore best understood conditionally as a common zero-sensitive criterion presented through different integrals, not as identity of the integrands or of their analytic and numerical behavior. The prior theorem's proof and the derivation of the direct consequence remain outside this span.",
+            "nonparaphrase_operation": "Factors the claimed equivalence through the reproduced parent identity and its off-line-zero correction, separating invariant diagnostic content from representation-specific integral form while preserving the conditional nature of the source's assertion.",
+            "quality_reason": "Accepted because the textual relation among the parent identity, direct consequence, and two b=1/2 criteria is explicit and supports a nontrivial representation analysis. The fragmented Volchkov display and absent prior proof preclude reconstructing the exact transform or claiming unconditional analytic equivalence.",
+            "source_support": "The span reproduces the earlier identity with a weighted log|zeta(b+it)| integral and an explicit sum over zeros with real part greater than b, states that equality (6) is its direct consequence, identifies the b=1/2 specializations with the Volchkov and Balazard-Saias-Yor criteria, and explicitly calls them the same criterion differently written.",
+            "speculation_status": "The common-zero-diagnostic reading is supported by the reproduced zero sum but remains conditional on the quoted theorem and asserted direct-consequence relation. No differentiation, integration-by-parts, or Littlewood transformation chain is attributed to this span."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ada439971a71ca6f572e0ceed2f90428e47d8df790d4e41b779d7a160e569e65",
+        "dossier_sha256": "4bb3050f3b654f6d36a6a6fb249af339878dac05ab45b4bf2b6a83cbc1e21f39"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The general recipe of choosing a contour kernel is useful only when remote edges vanish, residues and zero corrections are computable, and the resulting correction is identifiable; the failed modulus transfer illustrates a concrete tractability boundary.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2005232657_u04",
+          "full_openalex_w2005232657_u08",
+          "full_openalex_w2005232657_u16"
+        ],
+        "proposed_limit": "The conclusion offers a search heuristic, not evidence that some kernel from this class can prove or disprove RH.",
+        "source_id": "openalex_w2005232657",
+        "synthesis_id": "riemann_v2_within_6fac29d98198d6611e0f9987",
+        "title": "Criterion construction is constrained by tractable kernels"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exact branch convention is supplied in lines 114-116 inside the first construction.",
+          "line_end": 68,
+          "line_start": 31,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on complex-log branch choice, contour orientation, decay on remote edges, and OCR-fragmented displayed kernels.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The introduction isolates the reusable design move: choose a rational weight on a rectangular contour, discard remote sides, and use parity to target the imaginary rather than real part of log-zeta.",
+          "source_id": "openalex_w2005232657",
+          "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Rectangular contour weights turn log-zeta into argument integrals",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2005232657_u04.txt",
+          "unit_bytes": 2418,
+          "unit_id": "full_openalex_w2005232657_u04",
+          "unit_sha256": "27220807dc6e5b6810fd5dfcdbe8d9b66df7202131fb664867086fe73b62ae95",
+          "unit_type": "method motivation and representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2005232657_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The introduction motivates a representation change within the same rectangular-contour architecture: the earlier rationally weighted log-zeta integral has vanishing remote-edge contributions and is evaluated by residue and generalized Littlewood methods, while the new program asks for rationally weighted integrals of t arg(zeta(b+it)). The supported design lesson is conditional: a useful new weight must retain sufficient decay while making phase, rather than log-modulus, accessible on the vertical boundary. This span announces that target but does not supply the new weight, the component-selection calculation, the logarithm branch, or the needed parameter and convergence checks.",
+            "nonparaphrase_operation": "Extracts a constrained transfer principle from modulus to phase: preserve the contour-decay mechanism, but treat phase projection as a separate obligation that the later kernel construction must establish; this distinguishes inherited machinery from the new proof burden.",
+            "quality_reason": "Accepted because the contour mechanism and the phase-integral target are explicit enough to support the constrained transfer reading. OCR fragmentation prevents exact reuse of the displayed target kernels, and the missing branch convention and derivation remain material limitations.",
+            "source_support": "The span gives g(z)=1/(a^2-(z-b)^2), identifies the left-edge weighted log-zeta integral, states that the other three rectangular edges vanish as X tends to infinity, and invokes residue and generalized Littlewood analysis. It then explicitly announces two rationally weighted t arg(zeta(b+it)) integral families.",
+            "speculation_status": "The joint decay-and-observable role of kernel choice is a bounded conceptual inference. Oddness, altered pole structure, and an actual imaginary-part derivation are not established here and are withheld rather than reconstructed from later context or memory."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a bounded negative result about method transfer, not a proof that no alternative treatment exists.",
+          "line_end": 560,
+          "line_start": 543,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on the displayed antiderivative and on the authors' tractability assessment.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A partial-fraction antiderivative would require a log-modulus integral with an extra logarithmic kernel, for which the authors identify no tractable route, motivating direct contour analysis instead.",
+          "source_id": "openalex_w2005232657",
+          "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The modulus-differentiation route does not transfer cleanly to the two-scale kernel",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2005232657_u08.txt",
+          "unit_bytes": 1124,
+          "unit_id": "full_openalex_w2005232657_u08",
+          "unit_sha256": "af8b3d704868dfc208ded26ac8e9585cb593f2e564da62e4f382ddb704ebd074",
+          "unit_type": "method obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2005232657_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Equivalent starting integrals need not yield equally usable intermediate representations. A transformation is valuable only if the new bridge object has controllable analytic structure; here partial fractions exchange a rational kernel for a more difficult logarithmic one.",
+            "nonparaphrase_operation": "Integration by parts would bridge the argument integral to a weighted modulus integral, but the bridge object contains log((d^2+t^2)/(c^2+t^2)) and lacks the closed-form machinery available for the single-scale kernel.",
+            "quality_reason": "The displayed antiderivative replaces the two-scale rational weight by a logarithmic ratio, and the source says the preceding route would require analyzing log|zeta(b+it)| against that ratio. The authors explicitly state that they do not see how to proceed and retain the direct approach for this case. The candidate avoids turning the local failure into a generic claim that equivalent representations are always analytically unequal.",
+            "source_support": "The source notes that an antiderivative of t/((c^2+t^2)(d^2+t^2)) is proportional to log((d^2+t^2)/(c^2+t^2)). Applying the preceding method would therefore first require analysis of the integral of log|zeta(b+it)| times this logarithmic ratio, for which the authors say it is unclear how to proceed; they retain the direct contour approach.",
+            "speculation_status": "This is a local tractability obstruction, not a proof that the auxiliary integral or every indirect method is impossible. The conclusion rests on the displayed antiderivative and the authors' assessment that no route is clear. High confidence that the proposed transfer stalls at the stated auxiliary integral; no evidence here rules out a different transform or later technique. The obstruction is loss of tractability in the intermediate representation, not failure of formal integration by parts itself. The conclusion depends on the OCR-sensitive antiderivative and is an authorial tractability assessment rather than an impossibility result."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a design heuristic and aspiration; the source does not establish that a practically decisive kernel exists.",
+          "line_end": 942,
+          "line_start": 928,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on admissible decay, singularity control, branch conventions, and sign or identifiability of the resulting zero corrections.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The conclusion abstracts the paper's mechanism into selecting g, evaluating the log-zeta contour, and seeking an equality whose omitted zero contributions are diagnostic of RH.",
+          "source_id": "openalex_w2005232657",
+          "source_normalized_sha256": "bf471b6a058dc570effc0b91fc98de2ad325b5568c8d86a2ac0e8f6fe072debe",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Kernel selection plus generalized Littlewood supplies a criterion-design template",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2005232657_u16.txt",
+          "unit_bytes": 946,
+          "unit_id": "full_openalex_w2005232657_u16",
+          "unit_sha256": "a807c7a2ca0d8c583a3522ce9e5f3af86a44b7365d864e1bd83c6ec1b91a5f0d",
+          "unit_type": "general construction principle",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2005232657_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a criterion-design template rather than a particular theorem: kernel choice jointly determines boundary decay, sampled zeta data, residue terms, and the visibility of off-line zeros. Productive search must optimize all of these constraints together.",
+            "nonparaphrase_operation": "The generalized Littlewood contour formula is the bridge from a chosen vertical-line functional to poles and zero contributions; an RH criterion emerges only if the clean baseline is computable and the omitted-zero correction is sign-definite or otherwise identifiable.",
+            "quality_reason": "The conclusion explicitly proposes constructing many criteria by selecting g and evaluating a weighted log-zeta contour with the generalized Littlewood theorem. It presents practical usefulness for proving or disproving RH only as a hope, not as an existence or success claim. The candidate avoids treating the broad kernel-search template as a proved search theorem and ties the abstraction to explicit analytic obligations.",
+            "source_support": "The authors state that many criteria of the form integral along Re z=b of g(z)log(zeta(z)) equals an explicit f(b) can be constructed by selecting g and evaluating a contour integral with the generalized Littlewood theorem. They present earlier log-zeta criteria as special cases and express the hope that some member may be practically useful for deciding RH.",
+            "speculation_status": "The span gives no existence result for a decisive kernel and no search or completeness theorem. Admissible decay, singularity placement, logarithm branches, convergence, and noncancellation of zero corrections remain proof burdens for every proposed g. High confidence in the stated construction heuristic; no evidence in this conclusion supports the aspiration that one of these criteria can practically prove or disprove RH. Decay, singularity control, computability of residues, and identifiable off-line-zero contributions are reasonable proof obligations for turning the stated contour recipe into an iff criterion, but they are conditions inferred from the method rather than results established in this conclusion. The conclusion supplies no admissible class of g, branch convention, convergence theorem, or noncancellation result."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ada439971a71ca6f572e0ceed2f90428e47d8df790d4e41b779d7a160e569e65",
+        "dossier_sha256": "4bb3050f3b654f6d36a6a6fb249af339878dac05ab45b4bf2b6a83cbc1e21f39"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "b35fe2b05d7e9ea6331f19678e19a0a5316c9dd0d4d60c13a072b85556c86644"
+}

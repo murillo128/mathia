@@ -1,0 +1,330 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1984368160_e4a0f5ae_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1984368160",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical formulas and claimed prior error exponents are partially degraded, but the analogy and research objective are explicit in prose.",
+      "line_end": 34,
+      "line_start": 10,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the conceptual analogy; scan verification is needed for exact exponents and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source identifies the structural target: refine the classical mean-value asymptotic in the way Voronoi refinement improves the divisor summatory formula, rather than merely sharpen an undifferentiated error term.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta second moment as a divisor-problem analogue",
+      "unit_artifact_relpath": "depth/units/atkinson_motivation_divisor_analogy.txt",
+      "unit_bytes": 1360,
+      "unit_id": "atkinson_motivation_divisor_analogy",
+      "unit_sha256": "fbe9bb39f50be75e0df418f0038da8e6d5b721e5379c7108b889e82e3572719d",
+      "unit_type": "motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_motivation_divisor_analogy.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2,
+          "line_end": 9,
+          "text": "\nTHE MEAN-VALUE OF THE RIEMANN ZETA FUNCTION,\n                                                               BY\n\n                                              F. V. ATKINSON\n                                              Of ]BADAN, N I G E R I A .\n\n\n",
+          "sha256": "07fb02f474bea536fa43a75f18aed95317272b730b2ae26db2811f00b1c5d195"
+        },
+        "after": {
+          "line_start": 35,
+          "line_end": 42,
+          "text": "     1 G. H. HARDY and J. E. LITTLEWOOD, Aeta math. 4I 0918), t 1 9 - - I 9 6 .\n        J. E, LITTLEWOOD, Proc. London Math. Soc. (2), 2o ([922), Records, X X I I - - X X V I I I .\n     8 A. E. INGHAM, Proe. London Math. Soc. (2), 27 (I926), 273--3oo.\n     4 E. C. TITCHMARSH, Quart. J. of Math. (Oxford), 5 (1934), I95--21~\n      s The connection is to some e x t e n t apparent in my paper, Quart. J. of Math, (Oxford), IO\n0939), 122--128. I hope to go in this question more deeply in a subsequent paper.\n   45--48173.     Aeta mathematica.   81.    lmprim6 le 1 juillet 1949.\n\n",
+          "sha256": "871c2ee65d2144857ec9d201a45f7035bd175c4a01c9684f1e5c7337f2c8759a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Statement, divisor analogy, and proof overview",
+            "line_end": 114,
+            "line_start": 10,
+            "mathematical_role": "Places the zeta second moment beside the divisor problem, states the two-family approximate formula, and outlines the shifted-series-to-saddle-point route."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 34,
+          "line_start": 10,
+          "title": "The zeta second moment as a divisor-problem analogue",
+          "unit_id": "atkinson_motivation_divisor_analogy",
+          "unit_type": "motivation",
+          "why_material": "The source identifies the structural target: refine the classical mean-value asymptotic in the way Voronoi refinement improves the divisor summatory formula, rather than merely sharpen an undifferentiated error term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The historical formulas and claimed prior error exponents are partially degraded, but the analogy and research objective are explicit in prose.",
+          "representation_dependency": "Low for the conceptual analogy; scan verification is needed for exact exponents and constants.",
+          "unit_id": "atkinson_motivation_divisor_analogy"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 70,
+            "line_start": 47,
+            "title": "An approximate formula with two distinct oscillatory groups",
+            "unit_id": "atkinson_two_oscillatory_group_theorem",
+            "unit_type": "theorem-plus-interpretation",
+            "why_material": "The theorem organizes the mean-value remainder into two finite oscillatory families, one asymptotic to low-index Voronoi terms and another formally associated with the functional-equation product. This is the paper's central representational claim."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_motivation_divisor_analogy",
+        "spontaneous": {
+          "unit_id": "atkinson_motivation_divisor_analogy",
+          "spontaneous_reading": "The mathematical work is the choice of analogue: the zeta second moment should be refined from a main term plus undifferentiated error into an explicit oscillatory expansion, just as Voronoi refines the divisor summatory formula."
+        },
+        "directed": {
+          "unit_id": "atkinson_motivation_divisor_analogy",
+          "source_grounded_mathematics": "The span recalls the classical critical-line mean-value asymptotic and later refinements, then compares the remaining problem with the summatory divisor problem and states the objective of finding the zeta-mean-value counterpart of Voronoi summation.",
+          "conceptual_reading": "The analogy is structural rather than decorative: it predicts that arithmetic oscillation hidden in an error term can be exposed as organized secondary terms.",
+          "representation_or_bridge": "The bridge object is the divisor summatory function, whose Voronoi representation supplies a model for reorganizing the second-moment remainder.",
+          "boundary_or_failure": "The analogy does not identify the two problems or supply a derivation. It motivates a target representation; it does not transfer coefficients, phases, or error exponents by itself.",
+          "uncertainty": "High confidence in the stated analogy and objective. The OCR-corrupted historical formulas and exponents are not reliable enough for exact quotation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "atkinson_motivation_divisor_analogy",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the classical critical-line mean-value asymptotic, later refinements, and that the problem has more than superficial affinities with the divisor summatory problem.",
+          "It explicitly calls the displayed mean-value formula an analogue of Dirichlet's classical divisor formula and its refinements."
+        ],
+        "inference": [
+          "The comparison reasonably suggests looking for a stronger representation of the mean-value remainder rather than only another exponent improvement."
+        ],
+        "unsupported_or_imported": [
+          "The exact span ends mid-sentence after 'My object in this paper is to establish what corresponds, in the case' and does not itself state that the target is a zeta counterpart of Voronoi summation.",
+          "An explicit organized oscillatory expansion is imported from the following theorem span or prior knowledge of Voronoi, not established inside this unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "Calling the analogy a prediction of hidden organized secondary terms upgrades a partly stated motivation into a mechanism without a source-internal operation."
+        ],
+        "context_or_ocr_risk": [
+          "The historical error exponents and formulas are OCR-unsafe, and the semantic boundary truncates the final objective sentence."
+        ],
+        "missed_mechanism": [
+          "The safe mechanism in this span is the staged analogy: the known mean-value formula is placed in the role of Dirichlet's divisor formula, leaving the stronger corresponding object unspecified at this boundary."
+        ],
+        "revision_instructions": [
+          "Retain the classical-formula/divisor-problem analogy and the expectation of a stronger refinement, but remove the claims that this span explicitly states a Voronoi counterpart or an oscillatory expansion; note that the objective sentence is incomplete and avoid exact historical exponents."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The inference and I2 bound are readable, but the I1 displayed amplitude and phase are substantially corrupted.",
+      "line_end": 885,
+      "line_start": 852,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; use the scan for the exact first-family formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying the specialized lemma uniformly and letting auxiliary integration limits tend to their endpoints produces the I1 finite oscillatory sum for N comparable with T, while I2 is reduced to a smaller divisor-error contribution.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The first saddle contribution yields the Voronoi-like oscillatory family",
+      "unit_artifact_relpath": "depth/units/atkinson_first_oscillatory_group.txt",
+      "unit_bytes": 1647,
+      "unit_id": "atkinson_first_oscillatory_group",
+      "unit_sha256": "3cdee3e67a4e21bb0dc0d8a5a5acdea1266cc7028fb137de862784fb86c9306f",
+      "unit_type": "theorem-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_first_oscillatory_group.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 844,
+          "line_end": 851,
+          "text": "\nso t h a t in this case the error term gives us\n\n                                                         0 (r-t-~/~-~).\n\n         This completes the proof of L e m m a 2 for k >-- I.                                          For k ~     --    I the argu-\nm e n t differs only in that' the terms in x o do n o t occur.\n\n",
+          "sha256": "9f2b01275f968ae126152586f2c249b30440d7c0d28d288dae2aca5d20f2951b"
+        },
+        "after": {
+          "line_start": 886,
+          "line_end": 893,
+          "text": "         8.       Estimation of I3.\n         W e write (4.7) in the form\n\n                                                        log X + 2                         i\n                                            13= --2                      7/.~, +\n\nand consider first I8,. We divide the range of integration at Y, where Y = ( 2 X ) - I .\nThe integral over (o, Y) gives\n",
+          "sha256": "a9b3046da8fb9c7b6363fb32982dad890b5b23282cdb2223b1e897ffa4ca7f3d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Estimates of I1 and I2",
+            "line_end": 885,
+            "line_start": 852,
+            "mathematical_role": "Extracts the first finite oscillatory family and bounds the companion term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 885,
+          "line_start": 852,
+          "title": "The first saddle contribution yields the Voronoi-like oscillatory family",
+          "unit_id": "atkinson_first_oscillatory_group",
+          "unit_type": "theorem-derivation",
+          "why_material": "Applying the specialized lemma uniformly and letting auxiliary integration limits tend to their endpoints produces the I1 finite oscillatory sum for N comparable with T, while I2 is reduced to a smaller divisor-error contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The inference and I2 bound are readable, but the I1 displayed amplitude and phase are substantially corrupted.",
+          "representation_dependency": "High; use the scan for the exact first-family formula.",
+          "unit_id": "atkinson_first_oscillatory_group"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 850,
+            "line_start": 695,
+            "title": "Specialize the saddle lemma to the logarithmic mean-value phase",
+            "unit_id": "atkinson_log_phase_stationary_formula",
+            "unit_type": "application",
+            "why_material": "The specialization solves the stationary equation explicitly through variables U and V, separates positive and negative frequency behavior, and derives different remainder regimes for k below or above T. This turns a general contour lemma into the phase calculus used by the theorem."
+          },
+          {
+            "line_end": 1062,
+            "line_start": 886,
+            "title": "Range splitting isolates the nonoscillatory contribution of I3",
+            "unit_id": "atkinson_I3_range_decomposition",
+            "unit_type": "estimation",
+            "why_material": "The source splits the kernel at its natural scale and again at y=1, using monotonicity plus the second mean-value theorem on the smallest range, the saddle lemma on the tail, and contour estimates on the remaining terms. The pieces combine to a constant contribution with a controlled error."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first family comes from direct saddle evaluation of a mean-value kernel, whereas the second appears only after inserting the Voronoi divisor oscillation and applying the saddle criterion again.",
+            "limit": "The distinction is supported by the paper's derivation, but exact amplitudes, signs, phases, and cutoff equivalence require original-scan verification.",
+            "parent_local_unit_ids": [
+              "atkinson_two_oscillatory_group_theorem",
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_first_oscillatory_group",
+              "atkinson_I4_voronoi_reduction",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "One saddle engine generates two structurally different oscillatory families"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 851,
+              "line_start": 851,
+              "reason": "Section transition blank line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_first_oscillatory_group",
+        "spontaneous": {
+          "unit_id": "atkinson_first_oscillatory_group",
+          "spontaneous_reading": "A direct application of the logarithmic-phase lemma converts I1 into the first finite Voronoi-like oscillatory family, while its companion I2 is shown to be genuinely lower order."
+        },
+        "directed": {
+          "unit_id": "atkinson_first_oscillatory_group",
+          "source_grounded_mathematics": "With endpoint limits taken uniformly and N constrained between constant multiples of T, substitution into I1 yields a finite divisor-weighted oscillatory sum. The neighboring component I2 is bounded by O(T^{-1/2} log T) using the divisor-error estimate at X=N+1/2.",
+          "conceptual_reading": "The decomposition now pays off: one component carries a structured main oscillation, and another can be discharged without contaminating that signal.",
+          "representation_or_bridge": "The specialized saddle parameters translate each divisor index into an amplitude and phase, producing the first family already compared in the theorem statement with low-index Voronoi terms.",
+          "boundary_or_failure": "The extracted I1 display is too corrupted to support its exact amplitude, sign, phase, or endpoint convention. Only the finite-family derivation and the I2 order are safe here.",
+          "uncertainty": "High confidence in the role of I1 and the stated I2 bound; low confidence in the OCR-rendered first-family formula."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "atkinson_first_oscillatory_group",
+        "critic_decision": "revise",
+        "supported": [
+          "Within AT<N<A'T, the span applies the specialized lemma uniformly and substitutes into I1 to obtain a finite divisor-weighted oscillatory sum.",
+          "The companion estimate I2=O(T^{-1/2} log T) is legible and is tied to the divisor-error bound at X=N+1/2."
+        ],
+        "inference": [
+          "The specialized saddle parameters can be read as translating divisor indices into a finite family of stationary contributions, although the exact translation is formula-unsafe."
+        ],
+        "unsupported_or_imported": [
+          "Calling this family Voronoi-like and saying it was compared with Voronoi in the theorem statement imports evidence from a different unit; this exact source span makes no such comparison.",
+          "The corrupted I1 display cannot independently support exact amplitude, sign, phase, or endpoint details."
+        ],
+        "paraphrase_or_style_risk": [
+          "The statement that the decomposition 'pays off' is generic unless retained alongside the concrete contrast between the I1 stationary sum and the I2 bound."
+        ],
+        "context_or_ocr_risk": [
+          "The central I1 formula is substantially corrupted, whereas the existence of the finite sum, the N regime, and the I2 order remain readable."
+        ],
+        "missed_mechanism": [
+          "The unit's self-contained contrast is between extracting the I1 stationary contribution and bounding I2; the external thematic classification of that contribution is not needed."
+        ],
+        "revision_instructions": [
+          "Remove the Voronoi label and all references to a comparison made in another theorem span. Keep only the finite I1 saddle-sum derivation, the AT<N<A'T condition, the I2 bound, and the explicit warning that formula-level details require the scan."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ebfc595468e946c2fb2799ec5ff23337646cf59ec3fdb8f4f714750b73d4c1ec"
+}

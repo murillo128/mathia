@@ -1,0 +1,502 @@
+{
+  "expected_analysis_ids": {
+    "agnostic_oa_balanced_hypersurfaces": "agnostic_oa_generation_ab6d1916b14febe7950ee989aee9a7b32fabae0f5c4ce7a85286c18bf65ca342",
+    "agnostic_oa_complex_enumerative_correspondence": "agnostic_oa_generation_e3641b2ebbc7f6289ac31370047c4cc22cffb7ac8d798679ebbb9860e22ef593",
+    "agnostic_oa_contraction_models": "agnostic_oa_generation_65b5580af95d86aee69d63ce11cd8415e062b97feaae690c70e3e5e1f246efa4",
+    "agnostic_oa_curve_jacobians_and_divisors": "agnostic_oa_generation_16377f2c853f0e5f8f483bd57f3056ce3a9d27c00ca73b74b40f23417fb9966f",
+    "agnostic_oa_curves_as_metric_graphs": "agnostic_oa_generation_7b0fbe96648f69f9ecd47ba1c0680ce43be32a231dd9b7d1f9a1069acea11b76",
+    "agnostic_oa_deformation_and_divisor_intersection": "agnostic_oa_generation_f997c867e1e43cbaec6300a7990023577ce9753515317ac1cb7e0a208d240c76",
+    "agnostic_oa_phases_and_realizability": "agnostic_oa_generation_29468224f98815a71a6a81461005ad32cd2b4c032212cafc24593f6700549a57",
+    "agnostic_oa_signed_real_enumerative_correspondence": "agnostic_oa_generation_1a1dba8c9df781d67180e3dc4849266b9757f12a2e63ba57291245c173a0d732",
+    "agnostic_oa_stable_cycle_intersection": "agnostic_oa_generation_90ad8dcc385945f25468c8c0ffc42d9cae2605b4df6faf5fc8c1bc9bee974d01",
+    "agnostic_oa_tropical_curve_moduli": "agnostic_oa_generation_14a728485c92998f608fbf322af363529c8b29f6c7051c02d70f21a8310a3a6f",
+    "agnostic_oa_tropical_dequantization": "agnostic_oa_generation_efc36f1d96727df8b8e990359ac49875575c969224994da1dab7f7cef367e72c",
+    "agnostic_oa_tropical_polynomial_representation": "agnostic_oa_generation_894d7209c7a944ddcfa82bde4adb2c01d127d689b8880d6c592932dfbc8232d2",
+    "agnostic_oa_tropical_varieties_and_equivalence": "agnostic_oa_generation_44232ada1e17b103a1d20b0a4a79f059577809cdba6273991bdb9124d2e0a7af",
+    "agnostic_oa_virtual_dimension_and_superabundance": "agnostic_oa_generation_53d13176671cbf57e8eb1c9f7576d351438edfcbe8408dd98aeee22c22491680"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "interpretation",
+    "nonparaphrase_operation",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Source-grounded interpretations for nearby units from one source only; keep outputs separate and distinguish source fact, inference, representation dependence, and uncertainty.",
+  "model_visible_packet_sha256": "fa244148b5c52c98091d41b7bf47a036714d55fb9976a547375fbb0d5bd5a143",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/generation/batches/openalex_w2171942149_6f9f4019_part_01.jsonl",
+  "source_id": "openalex_w2171942149",
+  "stage": "generation",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tropical_dequantization.txt",
+      "artifact_bytes": 3073,
+      "artifact_relpath": "depth/units/agnostic_oa_tropical_dequantization.txt",
+      "artifact_sha256": "c3aa63455fc4049699184aa536713afdc518576ce666e3f7f449600206be6703",
+      "content_sha256": "3b094113ead50d1ca4a2a216739c9366e1fb189b3ce45c54bb951176978fb330",
+      "context_note": "The source gives the max-plus operations, their semifield laws, a logarithmic limiting argument, and the valuation analogy. Some normalized operation signs are typographically fragile, so downstream use should preserve the exact span and avoid reconstructing formulas from OCR alone.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tropical_dequantization",
+            "agnostic_oa_tropical_polynomial_representation",
+            "agnostic_oa_balanced_hypersurfaces",
+            "agnostic_oa_contraction_models",
+            "agnostic_oa_tropical_varieties_and_equivalence",
+            "agnostic_oa_phases_and_realizability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Within this source, the proposed lens receives several distinct mechanisms: algebraic dequantization, passage from functions to balanced loci, auxiliary-coordinate contractions, equivalence of presentations, and enrichment by phases before lifting. This is source-level reinforcement only; comparison with the frozen parent and novelty remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 80,
+      "line_start": 41,
+      "representation_dependency": "The mechanism is expressed in max-plus notation and logarithmic coordinates, but its reusable content is the controlled degeneration of one algebraic representation into an idempotent one while tracking which laws survive exactly or asymptotically.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It supports a generic representation-change move: replace ordinary addition by a limiting maximum operation, distinguish exact preservation from bounded approximation, and connect the resulting structure to non-Archimedean valuations.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Dequantization from classical arithmetic to the tropical semifield",
+      "unit_id": "agnostic_oa_tropical_dequantization",
+      "unit_type": "rigorous_conceptual_foundation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tropical_polynomial_representation.txt",
+      "artifact_bytes": 3217,
+      "artifact_relpath": "depth/units/agnostic_oa_tropical_polynomial_representation.txt",
+      "artifact_sha256": "151e331ab70d6b08e25f437af1db4d8c8c1cae9869cbdbefb76e1a9f74126187",
+      "content_sha256": "af204ec31778f348c7a791b25032b7c85837caceca747ef3c4cfd579fb70a79d",
+      "context_note": "The discussion includes nonessential monomials, Legendre recovery of maximal coefficients, rational functions, local regularity, and the structure sheaf. Formula typography is imperfect but the surrounding definitions are legible.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tropical_dequantization",
+            "agnostic_oa_tropical_polynomial_representation",
+            "agnostic_oa_balanced_hypersurfaces",
+            "agnostic_oa_contraction_models",
+            "agnostic_oa_tropical_varieties_and_equivalence",
+            "agnostic_oa_phases_and_realizability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Within this source, the proposed lens receives several distinct mechanisms: algebraic dequantization, passage from functions to balanced loci, auxiliary-coordinate contractions, equivalence of presentations, and enrichment by phases before lifting. This is source-level reinforcement only; comparison with the frozen parent and novelty remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 131,
+      "line_start": 81,
+      "representation_dependency": "The details use tropical polynomials and the Legendre transform; the broader semantic point is that different presentations can denote the same function and a canonical maximal presentation can recover stable information.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It separates a mathematical object from a nonunique syntax for it, identifies inessential terms, and uses duality to recover a maximal representative before defining local regularity and a sheaf of functions.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Nonunique tropical polynomial presentations and canonical recovery",
+      "unit_id": "agnostic_oa_tropical_polynomial_representation",
+      "unit_type": "rigorous_definition_and_representation_analysis"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_balanced_hypersurfaces.txt",
+      "artifact_bytes": 4465,
+      "artifact_relpath": "depth/units/agnostic_oa_balanced_hypersurfaces.txt",
+      "artifact_sha256": "50bebbeeef5f963b0d5cfff12ddd778c85c6eb6b782c9c470cb325a45cdec4a9",
+      "content_sha256": "fac1c7462fc4e7ba28ec056372bdcdfb8dd3febc37433481a51308ea3619ade7",
+      "context_note": "The span defines tropical hypersurfaces as nonregular loci, assigns lattice-derived facet weights, and generalizes the local balancing condition to integer polyhedral complexes. Figures are not needed for the stated mechanism.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tropical_dequantization",
+            "agnostic_oa_tropical_polynomial_representation",
+            "agnostic_oa_balanced_hypersurfaces",
+            "agnostic_oa_contraction_models",
+            "agnostic_oa_tropical_varieties_and_equivalence",
+            "agnostic_oa_phases_and_realizability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Within this source, the proposed lens receives several distinct mechanisms: algebraic dequantization, passage from functions to balanced loci, auxiliary-coordinate contractions, equivalence of presentations, and enrichment by phases before lifting. This is source-level reinforcement only; comparison with the frozen parent and novelty remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 213,
+      "line_start": 132,
+      "representation_dependency": "The construction depends on piecewise-linear polyhedral realizations and integer lattices; balancing is the coordinate-level compatibility condition that lets the pieces function as a geometric whole.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It gives a reusable local-to-global consistency pattern: singular loci of piecewise-linear functions acquire integer weights, and a codimension-one balancing equation constrains how facets may glue.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Weighted hypersurfaces and the balancing condition",
+      "unit_id": "agnostic_oa_balanced_hypersurfaces",
+      "unit_type": "rigorous_geometric_definition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_contraction_models.txt",
+      "artifact_bytes": 3103,
+      "artifact_relpath": "depth/units/agnostic_oa_contraction_models.txt",
+      "artifact_sha256": "4d096b596f6463c9f0c0d6709b4c3953e21c08c8602fd02183af075ad862bc85",
+      "content_sha256": "f7b48da6437d361be01939f567fa728dff92ff1dfe01a989b40ee5f6a9928c29",
+      "context_note": "The source builds full graphs over tropical functions, iterates projections, interprets zeros and poles, and uses contractions for principal open sets. Several displayed expressions are OCR-fragile, so the prose and exact lines should anchor later analysis.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tropical_dequantization",
+            "agnostic_oa_tropical_polynomial_representation",
+            "agnostic_oa_balanced_hypersurfaces",
+            "agnostic_oa_contraction_models",
+            "agnostic_oa_tropical_varieties_and_equivalence",
+            "agnostic_oa_phases_and_realizability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Within this source, the proposed lens receives several distinct mechanisms: algebraic dequantization, passage from functions to balanced loci, auxiliary-coordinate contractions, equivalence of presentations, and enrichment by phases before lifting. This is source-level reinforcement only; comparison with the frozen parent and novelty remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 268,
+      "line_start": 214,
+      "representation_dependency": "The move is native to tropical graph embeddings and coordinate projections, while its generic value lies in adding auxiliary coordinates to make a relation geometric and then forgetting them through a controlled map.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It turns a function into a balanced graph-like variety, uses projection as a controlled forgetting operation, and shows how iterated auxiliary-coordinate constructions furnish local models without treating presentation as intrinsic geometry.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Contractions as controlled changes of tropical presentation",
+      "unit_id": "agnostic_oa_contraction_models",
+      "unit_type": "rigorous_construction_and_local_model"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tropical_varieties_and_equivalence.txt",
+      "artifact_bytes": 7875,
+      "artifact_relpath": "depth/units/agnostic_oa_tropical_varieties_and_equivalence.txt",
+      "artifact_sha256": "4ada6b20db3fc461ac7eea9caa2eefafad90e52ac874f1dabe7324d1590b1872",
+      "content_sha256": "43b32716242e8f2938ed4edeaa33613fe5aa025a1bf7bc857ac8f3239791b65c",
+      "context_note": "This span defines tropical atlases, structure sheaves, products, linear and regular morphisms, contraction-based equivalence, morphism linearization after changing presentation, and invariant forms. The cubic example illustrates that equivalence can forget embedding shape while preserving intrinsic metric data.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tropical_dequantization",
+            "agnostic_oa_tropical_polynomial_representation",
+            "agnostic_oa_balanced_hypersurfaces",
+            "agnostic_oa_contraction_models",
+            "agnostic_oa_tropical_varieties_and_equivalence",
+            "agnostic_oa_phases_and_realizability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Within this source, the proposed lens receives several distinct mechanisms: algebraic dequantization, passage from functions to balanced loci, auxiliary-coordinate contractions, equivalence of presentations, and enrichment by phases before lifting. This is source-level reinforcement only; comparison with the frozen parent and novelty remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 387,
+      "line_start": 269,
+      "representation_dependency": "The formulation is chart- and contraction-dependent, but explicitly distinguishes these presentations from invariants such as intrinsic cycle length and global forms.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It supplies a precise presentation-versus-object distinction: compatible local contraction charts define a variety, regular maps can be made linear after a controlled representation change, and equivalence preserves selected intrinsic information.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Tropical varieties, morphisms, and equivalence by contraction",
+      "unit_id": "agnostic_oa_tropical_varieties_and_equivalence",
+      "unit_type": "rigorous_structural_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_stable_cycle_intersection.txt",
+      "artifact_bytes": 4868,
+      "artifact_relpath": "depth/units/agnostic_oa_stable_cycle_intersection.txt",
+      "artifact_sha256": "f097210ac71c78b6a383ffb0f6b9657ccd1a5741bbf7edf0baaf54b5aaa32e14",
+      "content_sha256": "c4dbd8fe68e7d456aceff0d0529a5164f26c57a01ef597c146c8ce56eb74d39d",
+      "context_note": "The source defines balanced cycles, pushforward, transverse lattice-index multiplicities, and stable intersection by generic translation. Propositions are stated in survey form rather than proved in this text.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 462,
+      "line_start": 388,
+      "representation_dependency": "The construction uses integral polyhedral complexes and perturbations in tropical charts; its generic semantic role is to replace an unstable set-theoretic overlap by a perturbation-stable weighted operation.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It explains why raw geometric intersection is insufficient, how lattice indices and weights retain multiplicity, and how generic perturbation produces a well-defined commutative and associative cycle product.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Stable weighted intersection of tropical cycles",
+      "unit_id": "agnostic_oa_stable_cycle_intersection",
+      "unit_type": "rigorous_survey_definition_and_theorem"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_deformation_and_divisor_intersection.txt",
+      "artifact_bytes": 4209,
+      "artifact_relpath": "depth/units/agnostic_oa_deformation_and_divisor_intersection.txt",
+      "artifact_sha256": "4b5bcd14ed715af1bc0730c2162f1dd9f9714845bf526b8fb42377cccb1f4f1f",
+      "content_sha256": "e752adf997fce0f732bb0c25ccf32f025a87dc6520b50c00ac0b2664ad645e54",
+      "context_note": "This span develops graph-defined pullback, algebraic deformation, degree invariance for compact zero-cycles, tropical Bezout examples, and Cartier-divisor intersection. The examples support the mechanism but some formulas are normalization-sensitive.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 531,
+      "line_start": 463,
+      "representation_dependency": "The reasoning is expressed through tropical cycles, graph intersections, and regular local functions, yet the transferable structure is preservation of weighted degree under deformation and functorial intersection through a graph.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It combines several generic moves: define pullback by intersecting with a graph, compare cycles through a parameterized family, and use compactness plus multiplicity to obtain an invariant total even when individual intersections move or merge.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Pullback, deformation invariance, and divisor intersection",
+      "unit_id": "agnostic_oa_deformation_and_divisor_intersection",
+      "unit_type": "rigorous_survey_calculus"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_curves_as_metric_graphs.txt",
+      "artifact_bytes": 3096,
+      "artifact_relpath": "depth/units/agnostic_oa_curves_as_metric_graphs.txt",
+      "artifact_sha256": "22e669a7179721cc3b745f487e5d656869061a67654254d94009ee7298cf0288",
+      "content_sha256": "9eaf0972aecbe0a24c2c6f83940cddce1deac727dcca9391a4ce831ffe39dfdb",
+      "context_note": "The source identifies compact tropical curves with metric graphs, defines regular maps by integral edge dilations, assigns genus by first Betti number, and describes genus-two families through edge lengths and contractions.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_curves_as_metric_graphs",
+            "agnostic_oa_virtual_dimension_and_superabundance",
+            "agnostic_oa_tropical_curve_moduli"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "The source relates discrete combinatorial types, continuous edge lengths, expected deformation dimension, compactification, and stable-map evaluation in one tropical setting. This supports the assignment-routed lens without claiming that any item is new relative to the frozen parent corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 590,
+      "line_start": 532,
+      "representation_dependency": "The unit relies on the metric-graph representation, whose edge lengths expose moduli that are invisible in the underlying combinatorial graph alone.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It shows how a geometric category can be recoded as finite combinatorics plus continuous parameters, clarifies which contractions preserve equivalence, and makes degeneration visible as edge length approaching a boundary value.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Tropical curves as metric graphs with explicit moduli",
+      "unit_id": "agnostic_oa_curves_as_metric_graphs",
+      "unit_type": "rigorous_geometric_classification"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_curve_jacobians_and_divisors.txt",
+      "artifact_bytes": 3568,
+      "artifact_relpath": "depth/units/agnostic_oa_curve_jacobians_and_divisors.txt",
+      "artifact_sha256": "981605a20720f38cc069fbd233005bb4c7a73b4c2ab7c58b93dfb194f72ed100",
+      "content_sha256": "147a1a362ce229ff53cac6150a24ae30a61174ceec098c431b1db1b982fa0113",
+      "context_note": "This survey span defines forms, divisors, principal equivalence, the Jacobian period quotient, Abel-Jacobi, the theta locus, and a Riemann-Roch inequality. The propositions are stated without full proofs here.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 654,
+      "line_start": 591,
+      "representation_dependency": "The constructions use cycles and path integration on metric graphs; their semantic force is quotienting local divisor data by principal transformations and encoding global obstruction in a period space.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It links local chip-like divisor data to global equivalence classes, exhibits a canonical parameter space through periods, and provides a lower bound that constrains when effective representatives must exist.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Divisors, Jacobians, and Riemann-Roch on metric graphs",
+      "unit_id": "agnostic_oa_curve_jacobians_and_divisors",
+      "unit_type": "rigorous_survey_structure_and_bounds"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_virtual_dimension_and_superabundance.txt",
+      "artifact_bytes": 3363,
+      "artifact_relpath": "depth/units/agnostic_oa_virtual_dimension_and_superabundance.txt",
+      "artifact_sha256": "ca704aaba5cad8ca09f8fb776c98295971eb97ed7883b3db28be0c63db41e1b1",
+      "content_sha256": "3e7195b132244268df1057272cfed0cfef947c4c7116eb4e2a2cf8451b899f97",
+      "context_note": "The source sketches Chern and canonical cycles, an adjunction formula, a lower bound called virtual dimension, and the regular/superabundant distinction. These are compact survey statements with no self-contained derivations in the span.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_curves_as_metric_graphs",
+            "agnostic_oa_virtual_dimension_and_superabundance",
+            "agnostic_oa_tropical_curve_moduli"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "The source relates discrete combinatorial types, continuous edge lengths, expected deformation dimension, compactification, and stable-map evaluation in one tropical setting. This supports the assignment-routed lens without claiming that any item is new relative to the frozen parent corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 705,
+      "line_start": 655,
+      "representation_dependency": "The criteria depend on tropical intersection data and affine placement of loops; they compare a global expected dimension with the locally observed deformation space.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It provides a generic diagnostic move: compute an expected parameter count from invariants, compare it with actual local freedom, and treat excess dimension as evidence of a geometric dependency or obstruction rather than ordinary behavior.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Expected deformation dimension and superabundance",
+      "unit_id": "agnostic_oa_virtual_dimension_and_superabundance",
+      "unit_type": "rigorous_survey_diagnostic"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tropical_curve_moduli.txt",
+      "artifact_bytes": 5224,
+      "artifact_relpath": "depth/units/agnostic_oa_tropical_curve_moduli.txt",
+      "artifact_sha256": "5daa41bba7ed015b8e20ac822eafe4e360452bbfb3d3f5552e32c19a725fc1c5",
+      "content_sha256": "3ae536877558d3ed5ac79ac567fceb1816e5eaa4c8a37c2c0f9547a0c6561b6d",
+      "context_note": "The span parameterizes marked curves by combinatorial type and edge lengths, embeds the genus-zero space using pairwise path lengths, compactifies by infinite lengths, and introduces stable maps, evaluation, forgetting, and intersection on their moduli. Higher-genus and stable-map compactifications are presented with qualifications.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_curves_as_metric_graphs",
+            "agnostic_oa_virtual_dimension_and_superabundance",
+            "agnostic_oa_tropical_curve_moduli"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "The source relates discrete combinatorial types, continuous edge lengths, expected deformation dimension, compactification, and stable-map evaluation in one tropical setting. This supports the assignment-routed lens without claiming that any item is new relative to the frozen parent corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 798,
+      "line_start": 706,
+      "representation_dependency": "Metric graphs and their combinatorial types provide local coordinates; compactification changes the represented object by splitting it into finite-distance components while retaining a controlled boundary interpretation.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It turns variation of objects into a parameter space, separates discrete combinatorial type from continuous edge lengths, and shows how boundary points encode degenerations rather than being discarded.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Moduli and compactification of marked tropical curves",
+      "unit_id": "agnostic_oa_tropical_curve_moduli",
+      "unit_type": "rigorous_survey_moduli_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_phases_and_realizability.txt",
+      "artifact_bytes": 4516,
+      "artifact_relpath": "depth/units/agnostic_oa_phases_and_realizability.txt",
+      "artifact_sha256": "d702b798c0102c475edb8a5883d14ee749a027a4cc97f316cfa62dd9e8e4e863",
+      "content_sha256": "29922eeee41c062bff6e2012c0b6ff3f3eeb47351dd2a702a3f1f7b11cccbc6c",
+      "context_note": "The source defines classical realizability, local phases and compatibility, states realizability for regular phased tropical curves, and records superabundance as a genuine obstruction. The theorem is cited rather than proved in this survey.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tropical_dequantization",
+            "agnostic_oa_tropical_polynomial_representation",
+            "agnostic_oa_balanced_hypersurfaces",
+            "agnostic_oa_contraction_models",
+            "agnostic_oa_tropical_varieties_and_equivalence",
+            "agnostic_oa_phases_and_realizability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Within this source, the proposed lens receives several distinct mechanisms: algebraic dequantization, passage from functions to balanced loci, auxiliary-coordinate contractions, equivalence of presentations, and enrichment by phases before lifting. This is source-level reinforcement only; comparison with the frozen parent and novelty remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 867,
+      "line_start": 799,
+      "representation_dependency": "The bridge depends on logarithmic amoebas, local pair-of-pants models, and phase data that supplement the underlying tropical curve; the tropical skeleton alone is explicitly insufficient.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It exposes a useful bridge-construction principle: enrich a coarse piecewise-linear limit with compatible local phase data, then ask whether the enriched object lifts to a classical family; regularity marks the stated success boundary.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Phases, amoebas, and realizability of tropical curves",
+      "unit_id": "agnostic_oa_phases_and_realizability",
+      "unit_type": "rigorous_survey_correspondence_theorem"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_complex_enumerative_correspondence.txt",
+      "artifact_bytes": 3789,
+      "artifact_relpath": "depth/units/agnostic_oa_complex_enumerative_correspondence.txt",
+      "artifact_sha256": "ae806158e38a239edef6a03f21a4d2533add92abef0484c5ff33fcfa051136fd",
+      "content_sha256": "b02fdffb2d2660e9cc23434c9177023ece174f49624bdd24036ed774d06aa479",
+      "context_note": "This is an applications section. It states, rather than proves, a correspondence between classical and tropical plane-curve counts and illustrates why local intersection multiplicities are essential when the number of visible tropical curves changes with the configuration.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 944,
+      "line_start": 879,
+      "representation_dependency": "The account depends on tropical moduli, stable intersection, and a cited correspondence theorem. Its conceptual value is the weighted-count mechanism, not an independent derivation of the enumerative result.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It shows how a simpler piecewise-linear problem can stand in for a classical one only after solutions receive intrinsic multiplicities, so invariant totals survive changes that alter the unweighted solution set.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Weighted tropical counts in complex enumerative geometry",
+      "unit_id": "agnostic_oa_complex_enumerative_correspondence",
+      "unit_type": "application_level_correspondence_statement"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_signed_real_enumerative_correspondence.txt",
+      "artifact_bytes": 2962,
+      "artifact_relpath": "depth/units/agnostic_oa_signed_real_enumerative_correspondence.txt",
+      "artifact_sha256": "d487f9ae96d65f6534598e92f63cc28711929c4e24433f15d37a35571b01d8d6",
+      "content_sha256": "20d4822feb76f84da44d8af2293ec928164936dd9bbedf6a4c311037464a0ec2",
+      "context_note": "This is also application-level survey material. It defines signed real multiplicities and states a cited equality with Welschinger invariants; it does not supply a self-contained proof or a general-purpose construction beyond the enumerative setting.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 990,
+      "line_start": 945,
+      "representation_dependency": "The mechanism depends on parity, lattice-triangle data, and a classical-to-tropical correspondence specific to real curve counts; it should not be generalized beyond that setting without further evidence.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It gives a second, distinct invariance mechanism: individual real solution counts vary, but local signs and zero contributions compress geometric behavior into a deformation-stable total.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Signed multiplicities for invariant real curve counts",
+      "unit_id": "agnostic_oa_signed_real_enumerative_correspondence",
+      "unit_type": "application_level_correspondence_statement"
+    }
+  ]
+}

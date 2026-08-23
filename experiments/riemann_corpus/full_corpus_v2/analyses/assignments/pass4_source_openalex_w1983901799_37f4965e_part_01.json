@@ -1,0 +1,825 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1983901799_37f4965e_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1983901799",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with the normalization and boundary-integral derivation in lines 240-475.",
+      "line_end": 76,
+      "line_start": 66,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the identity is visibly OCR-corrupted and requires scan verification for constants and endpoints.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3 packages the aggregate horizontal displacement of zeros of the kth derivative over a height interval into an explicit asymptotic, a stronger semantic statistic than a raw count.",
+      "source_id": "openalex_w1983901799",
+      "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Signed first moment of higher-derivative zero displacement",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1983901799_u06.txt",
+      "unit_bytes": 561,
+      "unit_id": "full_openalex_w1983901799_u06",
+      "unit_sha256": "e253721b310003f66ea8eda4063bd809aecc4b331a379fdc05258b209b797199",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1983901799_u06.txt",
+      "source": {
+        "source_id": "openalex_w1983901799",
+        "title": "Zeros of the derivatives of the Riemann zeta-function",
+        "authors": [
+          "Norman Levinson",
+          "Hugh L. Montgomery"
+        ],
+        "year": 1974,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "partial-results",
+          "zero-density",
+          "zero-free-region",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 58,
+          "line_end": 65,
+          "text": "\nHence most of the zeros of ~(~(s) are clustered around a-=89 It was proved by Spira [8]\nthat most of the zeros of $~k~(s) lie in 0~<a< 89                      for 6>0.\n     In proving Theorem 2 it will also be seen that the corresponding result is valid in\nT < t < T + U where U > T 1/2. A consequence of this is that if w(t) ~ oo as t ~ 0% then most\nof the zeros of r         lie in\n                                               l a - 89 < w(t) log log t/log t.\n\n",
+          "sha256": "c574c79df7cdbbdc9c7da51f38c9bb0e865831bfe6694e5d8d098040cad56811"
+        },
+        "after": {
+          "line_start": 77,
+          "line_end": 84,
+          "text": "\n     THEOREM 4. Let U >log T. Then\n\n                              T<7\"< T + U\n                                                (89            7.\n                                                             T<F<T+U\n                                                                        (89\n                                 /3<1/2                       fl<l/2\n",
+          "sha256": "206b9fef22c79d0e94ca0aeb9d97277a5997c1ae68f1ad72f40c18cf7944984d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a34bd090bbe6cf13e8213e9fb4102121bb685d0489596721a0225196d3e3f10",
+        "dossier_sha256": "0fc91c3e7a2ce0a597153f111b6ebeaf9847c8027b0af7fc32e342bdfb98b869",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and some results",
+            "line_end": 142,
+            "line_start": 12,
+            "mathematical_role": "States zero-count, clustering, moment, left-right comparison, density, inheritance, and RH-conditional results for derivatives of zeta."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 76,
+          "line_start": 66,
+          "title": "Signed first moment of higher-derivative zero displacement",
+          "unit_id": "full_openalex_w1983901799_u06",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Theorem 3 packages the aggregate horizontal displacement of zeros of the kth derivative over a height interval into an explicit asymptotic, a stronger semantic statistic than a raw count."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with the normalization and boundary-integral derivation in lines 240-475.",
+          "representation_dependency": "Formula-dependent; the identity is visibly OCR-corrupted and requires scan verification for constants and endpoints.",
+          "unit_id": "full_openalex_w1983901799_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 64,
+            "line_start": 12,
+            "title": "Zero counts, Speiser equivalence, and derivative-zero concentration",
+            "unit_id": "full_openalex_w1983901799_u01",
+            "unit_type": "zero-count theorem-cluster",
+            "why_material": "Connects the count of zeta-prime zeros left of the critical line to the zeta zero count, records the RH equivalence, and places higher-derivative zeros in a shrinking neighborhood of the critical line."
+          },
+          {
+            "line_end": 100,
+            "line_start": 78,
+            "title": "Left-right displacement comparison and right-side mass",
+            "unit_id": "full_openalex_w1983901799_u07",
+            "unit_type": "method-comparison",
+            "why_material": "Theorems 4 and 5 compare the total leftward displacement of zeta-prime zeros with rightward displacement of zeta zeros and then determine the right-side first moment, exposing a transfer mechanism across the critical line."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1983901799_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1983901799_u06",
+          "spontaneous_reading": "Theorem 3 compresses the horizontal geometry of all nonreal zeros of the kth zeta derivative in a height window into one signed first moment about the critical line. That statistic retains direction and aggregate displacement, unlike a zero count, and is therefore suited to later separating left and right contributions."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1983901799_u06",
+          "source_grounded_mathematics": "For 0<U<T, the unit states an asymptotic for the sum of beta^(k)-1/2 over zeros rho^(k)=beta^(k)+i gamma^(k) with T<gamma^(k)<T+U. The displayed main terms involve U log log T and k-dependent constants, with errors of the shown forms O(U^2/(T log T)) and O(log T).",
+          "conceptual_reading": "The move is to replace individual zero locations by a signed moment. Centering at 1/2 makes cancellation meaningful: zeros on opposite sides contribute with opposite signs, so the formula measures net horizontal bias rather than dispersion.",
+          "representation_or_bridge": "The bridge object is the centered sum over derivative-zero real parts. It connects a geometric distribution in the strip to boundary-integral asymptotics developed later via Littlewood's lemma.",
+          "boundary_or_failure": "A signed first moment alone cannot determine how many zeros lie on either side or how far individual zeros stray; large opposing tails may cancel. Concentration needs additional absolute-moment or one-sided estimates.",
+          "uncertainty": "The identity is visibly OCR-corrupted, including its normalization, coefficient, and possibly summation typography. Only the centered-moment structure, parameter range, qualitative main terms, and displayed error shapes are safe without scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1983901799_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span visibly states Theorem 3 for 0<U<T as an asymptotic centered sum over nonreal zeros of the kth derivative in a height window.",
+          "The displayed remainder visibly contains terms of the forms O(U^2/(T log T)) and O(log T)."
+        ],
+        "inference": [
+          "Reading the centered sum as a signed first moment and observing that opposite-side contributions can cancel is a legitimate conceptual inference."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the statistic is suited to a later left-right separation and the attribution of its derivation to Littlewood's lemma are imported from outside this span.",
+          "The exact normalization and main-term coefficients cannot be safely recovered from the damaged display."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase 'compresses the horizontal geometry' is stylistic but is anchored by the concrete operation of summing centered real parts."
+        ],
+        "context_or_ocr_risk": [
+          "The summation factor, coefficient, and parts of the main term and indices are OCR-corrupted."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish the source-visible centered-sum operation from any later proof or one-sided decomposition that is not present here."
+        ],
+        "revision_instructions": [
+          "Retain only the centered signed-moment reading, the visible parameter range and error shapes, and the cancellation limitation; remove the later-use and Littlewood-lemma claims and state that all exact constants require scan verification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The box-chain proof and the second comparison are supplied by the carried u04 span plus new unit u18.",
+      "line_end": 127,
+      "line_start": 107,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong formula dependence with damaged fractions and exponents; use the prose only for qualitative semantics until scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 6 bounds the weighted population of derivative zeros well left of the critical line and states a local comparison with right-side zeta zeros, yielding the qualitative conclusion that almost all complex zeta-prime zeros lie just to the right of the line at a slowly shrinking scale.",
+      "source_id": "openalex_w1983901799",
+      "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quantitative left tail for zeros of zeta prime",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1983901799_u08.txt",
+      "unit_bytes": 1028,
+      "unit_id": "full_openalex_w1983901799_u08",
+      "unit_sha256": "a9f010ddfffba554d383042b4a3aca3b47c98e14281d75bd8effc90f98e2d144",
+      "unit_type": "zero-density bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1983901799_u08.txt",
+      "source": {
+        "source_id": "openalex_w1983901799",
+        "title": "Zeros of the derivatives of the Riemann zeta-function",
+        "authors": [
+          "Norman Levinson",
+          "Hugh L. Montgomery"
+        ],
+        "year": 1974,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "partial-results",
+          "zero-density",
+          "zero-free-region",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 99,
+          "line_end": 106,
+          "text": "                               T<~7\"<~T+U\n                                     fl'>l/2\n\n<!-- source-page: 3 -->\n\nZEROS OF THE DERIVATIVES OF THE RIEMANN ZETA-FUNCTION                                                      51\n\n\n",
+          "sha256": "a2de6b74377e0b07d02128a51dbed95c59b942b2d44c359ff92c982d88ca3178"
+        },
+        "after": {
+          "line_start": 128,
+          "line_end": 135,
+          "text": "\n      THEOREM 7. Let m>~O. I / ~(m~(s) has only a finite number o/non-real zeros in a< 89\nthen $(\"+J)(s) has the same property/or ] ~ 1.\n\n      COROLLARY. The R.H. implies that ~(k~(s) has at most a finite number o/ non.real\nzeros in a < 89     k >~1.\n\n      THEOR~.M 8. The R.H. implies that\n",
+          "sha256": "38f4007235138b039cdd60e45dbe333e26d8bf1ebe551f07b2920c730d06e750"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a34bd090bbe6cf13e8213e9fb4102121bb685d0489596721a0225196d3e3f10",
+        "dossier_sha256": "0fc91c3e7a2ce0a597153f111b6ebeaf9847c8027b0af7fc32e342bdfb98b869",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and some results",
+            "line_end": 142,
+            "line_start": 12,
+            "mathematical_role": "States zero-count, clustering, moment, left-right comparison, density, inheritance, and RH-conditional results for derivatives of zeta."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 127,
+          "line_start": 107,
+          "title": "Quantitative left tail for zeros of zeta prime",
+          "unit_id": "full_openalex_w1983901799_u08",
+          "unit_type": "zero-density bound",
+          "why_material": "Theorem 6 bounds the weighted population of derivative zeros well left of the critical line and states a local comparison with right-side zeta zeros, yielding the qualitative conclusion that almost all complex zeta-prime zeros lie just to the right of the line at a slowly shrinking scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The box-chain proof and the second comparison are supplied by the carried u04 span plus new unit u18.",
+          "representation_dependency": "Strong formula dependence with damaged fractions and exponents; use the prose only for qualitative semantics until scan verification.",
+          "unit_id": "full_openalex_w1983901799_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 100,
+            "line_start": 78,
+            "title": "Left-right displacement comparison and right-side mass",
+            "unit_id": "full_openalex_w1983901799_u07",
+            "unit_type": "method-comparison",
+            "why_material": "Theorems 4 and 5 compare the total leftward displacement of zeta-prime zeros with rightward displacement of zeta zeros and then determine the right-side first moment, exposing a transfer mechanism across the critical line."
+          },
+          {
+            "line_end": 140,
+            "line_start": 129,
+            "title": "Differentiation inheritance and RH-conditional higher-derivative moment",
+            "unit_id": "full_openalex_w1983901799_u09",
+            "unit_type": "inheritance theorem-cluster",
+            "why_material": "Theorem 7 says finiteness of nonreal zeros left of the critical line propagates to every later derivative; its corollary and Theorem 8 turn RH into a higher-derivative location statement and explicit moment formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Boxes around right-side zeta zeros identify where logarithmic-derivative positivity can fail; chaining overlapping protruding boxes and applying Littlewood's lemma only on those rectangles converts a density estimate for zeta zeros into quantitative and qualitative scarcity of far-left zeta-prime zeros.",
+            "limit": "The result is conditional on the cited density input and source ranges; formula OCR prevents safe reuse of exact numerical exponents without the scan.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1983901799_u08",
+              "full_openalex_w1983901799_u04",
+              "full_openalex_w1983901799_u18"
+            ],
+            "title": "Right-side zeta density controls the left tail of zeta-prime zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1983901799_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1983901799_u08",
+          "spontaneous_reading": "Theorem 6 treats far-left zeta-prime zeros as a weighted tail rather than merely counting them. A second comparison on selected nearby endpoints relates an even farther-left derivative tail to right-side zeta displacement, and a slowly widening logarithmic scale converts these bounds into a majority-in-a-shrinking-strip statement."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1983901799_u08",
+          "source_grounded_mathematics": "For U=T^a and a displacement delta larger than C/log T, the first assertion bounds the sum of 1/2-delta-beta' over zeta-prime zeros with beta'<1/2-delta in T<gamma'<T+U. The theorem also selects U1 and U2 between U/4 and U/2 for a comparison between a farther-left zeta-prime displacement sum and a right-side zeta displacement sum. With delta=w(T)/log T and w(T) tending to infinity, the corollary says most complex zeta-prime zeros lie to the right of the corresponding line.",
+          "conceptual_reading": "Weighting each exceptional zero by its excess distance makes distant failures cost more and interfaces naturally with rectangle identities. Choosing a threshold that shrinks while its logarithmic multiple grows extracts qualitative concentration from a quantitative tail estimate.",
+          "representation_or_bridge": "The weighted tail sum bridges zero-density input for zeta, chain-of-box contour estimates, and a statement about the proportion of zeta-prime zeros in a shrinking neighborhood of the critical line.",
+          "boundary_or_failure": "The theorem does not say every zeta-prime zero is near or to the right of 1/2, and a vanishing weighted tail does not by itself exclude zeros arbitrarily close to the cutoff. The second comparison uses selected endpoints rather than every interval.",
+          "uncertainty": "Fractions, powers, summation limits, and the exact exponent in the bound are OCR-damaged. The qualitative tail-control and shrinking-strip conclusions are prose-supported; numerical exponents and normalizations must be scan-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1983901799_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 6 visibly uses a displacement threshold larger than C/log T, U=T^a, a weighted far-left zeta-prime sum, and selected U1,U2 in [U/4,U/2].",
+          "The prose explicitly concludes that most complex zeta-prime zeros lie to the right of a shrinking line when the logarithmic scale factor tends to infinity."
+        ],
+        "inference": [
+          "Weighting an exceptional zero by excess distance is a valid tail-sensitive operation, and a moving threshold can convert such control into a prevalence statement when normalized by a total count."
+        ],
+        "unsupported_or_imported": [
+          "The chain-of-box contour mechanism and the asserted bridge from zeta density are not contained in this span.",
+          "Exact powers, cutoffs, and the normalization of the corollary are too damaged to support the candidate's formula-level wording."
+        ],
+        "paraphrase_or_style_risk": [
+          "The weighted-tail interpretation is non-paraphrastic, but the bridge paragraph becomes a generic mechanism summary once the external box argument is removed."
+        ],
+        "context_or_ocr_risk": [
+          "Fractions, exponents, comparison signs, and most of equation (1.7) are OCR-corrupted."
+        ],
+        "missed_mechanism": [
+          "The candidate does not clearly separate the theorem-visible weighted comparisons from the external proof mechanism supplied elsewhere."
+        ],
+        "revision_instructions": [
+          "Keep the qualitative weighted-tail, selected-endpoint, and shrinking-line majority claims; remove the chain-of-box and density-input account and avoid exact thresholds or exponents pending scan verification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Proofs occur in lines 814-861; the moment also depends on Theorem 10.",
+      "line_end": 140,
+      "line_start": 129,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The inheritance statement is prose-grounded; the displayed moment is OCR-damaged and needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 7 says finiteness of nonreal zeros left of the critical line propagates to every later derivative; its corollary and Theorem 8 turn RH into a higher-derivative location statement and explicit moment formula.",
+      "source_id": "openalex_w1983901799",
+      "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Differentiation inheritance and RH-conditional higher-derivative moment",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1983901799_u09.txt",
+      "unit_bytes": 543,
+      "unit_id": "full_openalex_w1983901799_u09",
+      "unit_sha256": "8cd13266b16ed6e656cb5e685752a272ced3ed1ed50f817478715efee13d111c",
+      "unit_type": "inheritance theorem-cluster",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1983901799_u09.txt",
+      "source": {
+        "source_id": "openalex_w1983901799",
+        "title": "Zeros of the derivatives of the Riemann zeta-function",
+        "authors": [
+          "Norman Levinson",
+          "Hugh L. Montgomery"
+        ],
+        "year": 1974,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "partial-results",
+          "zero-density",
+          "zero-free-region",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 121,
+          "line_end": 128,
+          "text": "                               fi'<1/2-2~                                 fl~>1/2+~\n\n      COROLLARY. I / O=w(T)/log T where w(T)-~ ~ as T ~ r then\n\n          ~V~( 89189                                                                                                       (1.7)\n\nThus most of the complex zeros of $'(s) lie to the right of a= 89                                        t if w(t)-> ~ .\n\n",
+          "sha256": "1a2f629ed0af1ed11d07a2533c2004360b7c13530234ca9fabafd48e4befc98e"
+        },
+        "after": {
+          "line_start": 141,
+          "line_end": 148,
+          "text": "\n\n                                               2. Proof of Theorem 1\n      With {~} the zeros of r in the critical strip\n\n               Re ~ (s) = -- Re s - 1 + 89log ~ - 89Re g\n                  ,                 ,                                             ,s~ + 1   +Re7   J _     .               (2.1)\n\n",
+          "sha256": "57be37d15713cd9e96db1ce674c5f299bcc8af792568b8c6724608d71d769a8b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a34bd090bbe6cf13e8213e9fb4102121bb685d0489596721a0225196d3e3f10",
+        "dossier_sha256": "0fc91c3e7a2ce0a597153f111b6ebeaf9847c8027b0af7fc32e342bdfb98b869",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and some results",
+            "line_end": 142,
+            "line_start": 12,
+            "mathematical_role": "States zero-count, clustering, moment, left-right comparison, density, inheritance, and RH-conditional results for derivatives of zeta."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 140,
+          "line_start": 129,
+          "title": "Differentiation inheritance and RH-conditional higher-derivative moment",
+          "unit_id": "full_openalex_w1983901799_u09",
+          "unit_type": "inheritance theorem-cluster",
+          "why_material": "Theorem 7 says finiteness of nonreal zeros left of the critical line propagates to every later derivative; its corollary and Theorem 8 turn RH into a higher-derivative location statement and explicit moment formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Proofs occur in lines 814-861; the moment also depends on Theorem 10.",
+          "representation_dependency": "The inheritance statement is prose-grounded; the displayed moment is OCR-damaged and needs scan verification.",
+          "unit_id": "full_openalex_w1983901799_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 127,
+            "line_start": 107,
+            "title": "Quantitative left tail for zeros of zeta prime",
+            "unit_id": "full_openalex_w1983901799_u08",
+            "unit_type": "zero-density bound",
+            "why_material": "Theorem 6 bounds the weighted population of derivative zeros well left of the critical line and states a local comparison with right-side zeta zeros, yielding the qualitative conclusion that almost all complex zeta-prime zeros lie just to the right of the line at a slowly shrinking scale."
+          },
+          {
+            "line_end": 201,
+            "line_start": 143,
+            "title": "Boundary sign of the logarithmic derivative controls zero-count equality",
+            "unit_id": "full_openalex_w1983901799_u02",
+            "unit_type": "argument-principle proof of theorem 1",
+            "why_material": "Pairs functional-equation zeros, shows the real part of zeta-prime over zeta is negative on an indented half-strip boundary, and converts zero-count comparison into an argument-principle statement; failure of a favorable top boundary itself forces many left-side zeta zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "If one derivative has only finitely many nonreal zeros left of the critical line, the increasingly negative contribution from its real zeros forces the next logarithmic derivative to be nonzero there at large height; induction propagates the property, and the signed moment formula then becomes a one-sided RH-conditional asymptotic.",
+            "limit": "This records the article's conditional inheritance mechanism and does not establish RH or verify the partial-fraction formula independently.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1983901799_u09",
+              "full_openalex_w1983901799_u05",
+              "full_openalex_w1983901799_u14"
+            ],
+            "title": "RH information propagates through the derivative tower"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1983901799_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1983901799_u09",
+          "spontaneous_reading": "The key structural claim is inheritance under differentiation: once a derivative has only finitely many nonreal zeros left of the critical line, every later derivative inherits that finiteness. Under RH this converts information about the initial function into a whole derivative tower, after which the signed moment becomes effectively one-sided."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1983901799_u09",
+          "source_grounded_mathematics": "Theorem 7 states that if zeta^(m) has only finitely many nonreal zeros with real part below 1/2, then zeta^(m+j) has the same property for every j at least 1. The corollary applies this under RH to all derivatives zeta^(k), k at least 1. Theorem 8 then states an RH-conditional asymptotic for the right-of-line centered first moment of zeros of zeta^(k), involving T log log T, a logarithmic-integral term, k-dependent constants, and O(log T).",
+          "conceptual_reading": "Differentiation is being used as a property-propagating operation, but the preserved property is carefully limited to finiteness of a class of nonreal left-side zeros. Once the left side contributes only finitely, a signed global moment can be read as a right-side moment up to lower-order effects.",
+          "representation_or_bridge": "The bridge is the derivative tower together with a one-sided zero-finiteness invariant; Theorem 10's signed moment supplies the quantitative endpoint.",
+          "boundary_or_failure": "Inheritance does not assert that derivatives are zero-free on the left, nor does the unit prove RH. The moment formula remains conditional and does not locate individual zeros.",
+          "uncertainty": "The inheritance statements are clear in prose. The Theorem 8 display is heavily damaged, so its exact coefficients, summation range, and logarithmic-integral argument require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1983901799_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 7 clearly states propagation from finiteness of nonreal left-half zeros of one derivative to every later derivative.",
+          "The corollary clearly applies RH to all positive derivative orders, and Theorem 8 visibly gives an RH-conditional right-of-line centered moment with T log log T, a logarithmic-integral term, k-dependent terms, and O(log T)."
+        ],
+        "inference": [
+          "Once only finitely many nonreal left-side zeros remain, interpreting a cumulative signed moment as effectively one-sided up to bounded contributions is a reasonable inference."
+        ],
+        "unsupported_or_imported": [
+          "Theorem 10 and its role as the quantitative bridge are outside the exact span.",
+          "The exact coefficients, summation range, and logarithmic-integral argument in Theorem 8 are not recoverable from this OCR."
+        ],
+        "paraphrase_or_style_risk": [
+          "The property-propagation reading identifies a real operation and does not merely restate the theorem."
+        ],
+        "context_or_ocr_risk": [
+          "Theorem 8's display is heavily damaged, whereas the inheritance prose is reliable."
+        ],
+        "missed_mechanism": [
+          "The candidate should keep the source-visible inheritance statement separate from the unshown proof and moment derivation."
+        ],
+        "revision_instructions": [
+          "Remove the Theorem 10 attribution, retain the bounded inheritance and conditional one-sided interpretation, and describe Theorem 8 only qualitatively until its formula is scan-verified."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the omitted conclusion of the carried u03 proof setup.",
+      "line_end": 451,
+      "line_start": 393,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The logic is recoverable from prose and labeled equations, but displayed powers and constants require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses an approximate formula and mean-square bound on the critical line to control the total absolute displacement of derivative zeros, then combines it with the far-left weighted count to bound zeros on both sides beyond a fixed offset; a short-interval approximate functional equation extends the result to windows longer than square-root height.",
+      "source_id": "openalex_w1983901799",
+      "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mean-square control converts horizontal moments into concentration near the critical line",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1983901799_u13.txt",
+      "unit_bytes": 2434,
+      "unit_id": "full_openalex_w1983901799_u13",
+      "unit_sha256": "5a492aa7b15f0e5b40f7a4643ac5318cb371be9c2606513cfb9a4198d38e340e",
+      "unit_type": "zero-concentration proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1983901799_u13.txt",
+      "source": {
+        "source_id": "openalex_w1983901799",
+        "title": "Zeros of the derivatives of the Riemann zeta-function",
+        "authors": [
+          "Norman Levinson",
+          "Hugh L. Montgomery"
+        ],
+        "year": 1974,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "partial-results",
+          "zero-density",
+          "zero-free-region",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 385,
+          "line_end": 392,
+          "text": "            1< ~k < r                          2~                  2xt\n                               -T( 89                                                                (3.12)\n\nIf Nk(T ) is the number of non-real of ~(k~(s) with 0 < t < T                 then increasing b to b + l in\n(3.12) and subtracting the ease b from b + 1 gives [1]\n\n                              N~(T)=T        (l~ T -      l - l~ 2) + O(l~                           (3.13)\n\n",
+          "sha256": "2ad6e21cbcd36da3a0088332109067d8e5a9f80e2679671473d3f387560d4681"
+        },
+        "after": {
+          "line_start": 452,
+          "line_end": 459,
+          "text": "\n<!-- source-page: 10 -->\n\n58                       NORMAN LEVINSON AND HUGH L. MONTGOMERY\n\n\n      If 2g(b + 89 k (T), given in (3.13), is subtracted from (3.12) then we obtain.\n      THEOREM     10.\n",
+          "sha256": "a656cd81e7f0b34c43faa4b2035fd51c29e801495fd661966bfdfd070993e004"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a34bd090bbe6cf13e8213e9fb4102121bb685d0489596721a0225196d3e3f10",
+        "dossier_sha256": "0fc91c3e7a2ce0a597153f111b6ebeaf9847c8027b0af7fc32e342bdfb98b869",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proofs of Theorems 2 and 3",
+            "line_end": 476,
+            "line_start": 240,
+            "mathematical_role": "Normalizes higher derivatives, applies Littlewood's lemma, evaluates the far-left boundary via the functional equation and Stirling asymptotics, and derives total counts, concentration, and signed first moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 451,
+          "line_start": 393,
+          "title": "Mean-square control converts horizontal moments into concentration near the critical line",
+          "unit_id": "full_openalex_w1983901799_u13",
+          "unit_type": "zero-concentration proof",
+          "why_material": "Uses an approximate formula and mean-square bound on the critical line to control the total absolute displacement of derivative zeros, then combines it with the far-left weighted count to bound zeros on both sides beyond a fixed offset; a short-interval approximate functional equation extends the result to windows longer than square-root height."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the omitted conclusion of the carried u03 proof setup.",
+          "representation_dependency": "The logic is recoverable from prose and labeled equations, but displayed powers and constants require scan verification.",
+          "unit_id": "full_openalex_w1983901799_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 391,
+            "line_start": 347,
+            "title": "Far-left functional-equation asymptotics yield the higher-derivative zero count",
+            "unit_id": "full_openalex_w1983901799_u12",
+            "unit_type": "boundary-integral evaluation",
+            "why_material": "Evaluates the Littlewood boundary integral by separating Stirling, reflected-zeta, and correction-factor terms; subtracting two rectangle widths removes the horizontal moment and produces the asymptotic total number of nonreal zeros of the kth derivative."
+          },
+          {
+            "line_end": 475,
+            "line_start": 458,
+            "title": "Subtract total counts to isolate signed horizontal displacement",
+            "unit_id": "full_openalex_w1983901799_u14",
+            "unit_type": "moment identity derivation",
+            "why_material": "Theorem 10 is obtained by subtracting the known total zero count from the weighted Littlewood identity, and elementary interval differencing then turns the global formula into Theorem 3's local signed moment."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Normalization at the right boundary and functional-equation asymptotics at the left turn Littlewood's lemma into both a total count and a signed horizontal moment; mean-square control on the critical line then upgrades those averaged identities to two-sided concentration and local-window versions.",
+            "limit": "The exact constants, exponents, and uniformity ranges are formula-dependent and should not be exported before scan verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1983901799_u03",
+              "full_openalex_w1983901799_u12",
+              "full_openalex_w1983901799_u13",
+              "full_openalex_w1983901799_u14"
+            ],
+            "title": "From rectangle averages to concentration of derivative zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1983901799_u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1983901799_u13",
+          "spontaneous_reading": "An analytic mean-square estimate on the critical line is converted into geometric concentration of derivative zeros. Littlewood's lemma turns control of log|zeta^(k)| into an absolute horizontal moment, which, combined with the earlier weighted identity and total count, bounds both left and right exceptional populations."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1983901799_u13",
+          "source_grounded_mathematics": "Cauchy's integral formula transfers an approximate formula for zeta to zeta^(k), yielding a critical-line mean-square bound and then an O(T log log T) integral of log|zeta^(k)(1/2+it)|. Littlewood's lemma gives an O(T log log T) sum of absolute rightward displacements. Combining this with the far-left weighted identity and N_k(T) bounds the numbers of zeros with beta^(k) at most 1/2-delta and at least 1/2+delta by O(T log log T/delta). A short-interval approximate functional equation extends the reasoning to T<t<T+U when U exceeds the square-root scale.",
+          "conceptual_reading": "This is a norm-to-tail conversion: an L2 analytic bound controls an L1 logarithmic boundary quantity, which becomes a spatial first moment, and a first moment bounds exceptional counts beyond any fixed offset.",
+          "representation_or_bridge": "The chain is approximate Dirichlet representation to mean square to logarithmic integral to Littlewood displacement sum to one-sided zero counts.",
+          "boundary_or_failure": "First-moment control yields concentration in proportion, not a zero-free strip or pointwise locations. The local extension has a lower bound on U and depends on a crude approximate functional equation.",
+          "uncertainty": "The prose and labeled implication chain are recoverable, but many displayed exponents, constants, and summation marks are OCR-damaged. Exact rates and uniformity should be scan-verified."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1983901799_u13",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives a critical-line mean-square estimate, then a logarithmic integral bound, and then a rightward displacement sum by Littlewood's lemma.",
+          "It combines that bound with earlier weighted and count identities to control left and right exceptional counts, and it states a short-window extension for U above the square-root scale."
+        ],
+        "inference": [
+          "The norm-to-log-integral-to-moment-to-tail chain is a valid conceptual account of the displayed reasoning."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that Littlewood's lemma directly yields a total absolute horizontal moment is too strong: equation (3.14) directly controls the rightward positive displacement, while left-tail control requires the separate weighted identity and count.",
+          "Exact rates beyond the visible O(T log log T) structure are unsafe where factors and exponents are damaged."
+        ],
+        "paraphrase_or_style_risk": [
+          "The norm-to-tail description is substantive, but 'absolute horizontal moment' blurs two distinct one-sided mechanisms."
+        ],
+        "context_or_ocr_risk": [
+          "Several powers, summation indices, and the short-interval mean-square display are OCR-damaged."
+        ],
+        "missed_mechanism": [
+          "The candidate should preserve the asymmetry: direct moment control handles the right tail, whereas the left tail is obtained only after combining with the far-left weighted identity and N_k(T)."
+        ],
+        "revision_instructions": [
+          "Replace 'total absolute displacement' with 'rightward displacement moment,' then state separately how the earlier weighted identity and total count control the left tail; retain the local-window limitation and OCR caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the two-part theorem and corollary after the carried u04 endpoint.",
+      "line_end": 811,
+      "line_start": 771,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose supports the refinement and limiting choice; exact weighted inequalities and normalization require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces the high-moment estimate on the rectangles' left sides by an L2 bound, obtains the second comparison in Theorem 6, and chooses a slowly growing displacement scale to show that almost all complex zeta-prime zeros lie to the right of the corresponding shrinking line.",
+      "source_id": "openalex_w1983901799",
+      "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Second chain estimate and shrinking-strip majority corollary",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1983901799_u18.txt",
+      "unit_bytes": 1639,
+      "unit_id": "full_openalex_w1983901799_u18",
+      "unit_sha256": "84f9f619f873053906c303bb1713e5ac903ca9e85fce1f7aaa695139610e5e21",
+      "unit_type": "method-refinement-and-corollary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1983901799_u18.txt",
+      "source": {
+        "source_id": "openalex_w1983901799",
+        "title": "Zeros of the derivatives of the Riemann zeta-function",
+        "authors": [
+          "Norman Levinson",
+          "Hugh L. Montgomery"
+        ],
+        "year": 1974,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "partial-results",
+          "zero-density",
+          "zero-free-region",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 763,
+          "line_end": 770,
+          "text": "and by (5.10), with e = 1/log H,\n\n                                                   (89- d - fl')< (1 - (~log U) 2 U 1-(2-11a)~14.\n                         T-U,<7\"<T+U~\n                              ~'<1/2-~\n\n\nSeveral applications of the above yields the first result of Theorem 6.\n",
+          "sha256": "11b00b2a5650c00bebdefca7544167280ecf64d8d5c4c3c148660e8fb96c98c0"
+        },
+        "after": {
+          "line_start": 812,
+          "line_end": 819,
+          "text": "\n\n                                  6. Proofs of Theorems 7 and 8\n\n     For fixed m denote the real zeros of ~(m)(s) by - - a ? Spira [7] showed that aj = 2?\"+ 0(1).\nI t was also shown [7] t h a t there exists an Ak such that ~(k)(s) has no non-real zeros for\n [al >Ak. Denote the non-real zeros of ~(m)(s) b y p~+_iqj,qj>0. Then\n\n",
+          "sha256": "0ba6a23f73bb018e7a02c97d2a80d8c19ad85eeb436d9417e4a09d68f16a695c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a34bd090bbe6cf13e8213e9fb4102121bb685d0489596721a0225196d3e3f10",
+        "dossier_sha256": "0fc91c3e7a2ce0a597153f111b6ebeaf9847c8027b0af7fc32e342bdfb98b869",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorem 6",
+            "line_end": 813,
+            "line_start": 598,
+            "mathematical_role": "Builds boxes around right-side zeta zeros, groups protruding boxes into chains, applies Littlewood's lemma on chain rectangles, and converts Selberg-type density input into left-tail bounds for zeta-prime zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 811,
+          "line_start": 771,
+          "title": "Second chain estimate and shrinking-strip majority corollary",
+          "unit_id": "full_openalex_w1983901799_u18",
+          "unit_type": "method-refinement-and-corollary",
+          "why_material": "Replaces the high-moment estimate on the rectangles' left sides by an L2 bound, obtains the second comparison in Theorem 6, and chooses a slowly growing displacement scale to show that almost all complex zeta-prime zeros lie to the right of the corresponding shrinking line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Completes the two-part theorem and corollary after the carried u04 endpoint.",
+          "representation_dependency": "Prose supports the refinement and limiting choice; exact weighted inequalities and normalization require scan verification.",
+          "unit_id": "full_openalex_w1983901799_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 770,
+            "line_start": 598,
+            "title": "Chains of zero-centered boxes localize the left tail of zeta-prime zeros",
+            "unit_id": "full_openalex_w1983901799_u04",
+            "unit_type": "chain-of-boxes zero-distribution mechanism",
+            "why_material": "Rewrites the logarithmic-derivative sign in terms of right-side zeta zeros, surrounds them by boxes, chains overlapping protruding boxes, chooses chain-free endpoints through a density estimate, and applies Littlewood's lemma on chain rectangles to bound derivative zeros reflected far left."
+          },
+          {
+            "line_end": 861,
+            "line_start": 814,
+            "title": "Logarithmic-derivative negativity propagates left-side zero finiteness",
+            "unit_id": "full_openalex_w1983901799_u05",
+            "unit_type": "higher-derivative inheritance theorem",
+            "why_material": "Expands a derivative's logarithmic derivative over real and nonreal zeros, observes that only finitely many left-side nonreal terms are bounded while the real-zero sum becomes logarithmically negative, excludes new far-left nonreal zeros of the next derivative, and iterates; under RH this closes the higher-derivative moment formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Boxes around right-side zeta zeros identify where logarithmic-derivative positivity can fail; chaining overlapping protruding boxes and applying Littlewood's lemma only on those rectangles converts a density estimate for zeta zeros into quantitative and qualitative scarcity of far-left zeta-prime zeros.",
+            "limit": "The result is conditional on the cited density input and source ranges; formula OCR prevents safe reuse of exact numerical exponents without the scan.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1983901799_u08",
+              "full_openalex_w1983901799_u04",
+              "full_openalex_w1983901799_u18"
+            ],
+            "title": "Right-side zeta density controls the left tail of zeta-prime zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1983901799_u18",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1983901799_u18",
+          "spontaneous_reading": "The chain-of-boxes argument is refined by replacing the earlier left-boundary estimate with an L2 control of the reflected auxiliary quotient. Jensen-type logarithmic control on each protruding rectangle scales with its horizontal reach; summing those costs yields the second comparison, and choosing a slowly growing logarithmic threshold turns it into a majority statement."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1983901799_u18",
+          "source_grounded_mathematics": "Using the auxiliary relation around (4.1), the unit obtains an L2 integral bound for J or the relevant quotient along each left side of the chain rectangles. This bounds the corresponding integral of its logarithm by the rectangle height times log(1/delta), and summing over protruding boxes gives a comparison between far-left zeta-prime displacement and right-side zeta displacement, completing the second assertion of Theorem 6. For the corollary, replacing delta by delta-1/log U and then setting delta=w(T)/log T bounds the number of zeta-prime zeros beyond the shrinking cutoff; comparison with the total window count makes that exceptional proportion negligible.",
+          "conceptual_reading": "The refinement matches analytic norm to geometric decomposition: local L2 control pays in proportion to each chain rectangle's extent, so only regions forced by right-side zeta zeros contribute. A moving threshold then converts weighted geometric control into asymptotic prevalence.",
+          "representation_or_bridge": "Protruding zero-centered box chains localize the contours, while the reflected quotient's L2 norm supplies the per-rectangle cost. The total zero count normalizes the final tail bound into a majority conclusion.",
+          "boundary_or_failure": "The estimate applies to selected chain-free endpoints and aggregate exceptional counts, not every individual interval or zero. It also inherits the density input and parameter restrictions of Theorem 6.",
+          "uncertainty": "A formula immediately after the opening sentence is absent, and the weighted inequalities and normalization are OCR-damaged. The L2 replacement, logarithmic bound, threshold choice, and qualitative corollary are prose-supported; exact constants and exponents require the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1983901799_u18",
+        "critic_decision": "revise",
+        "supported": [
+          "The span replaces an earlier left-side estimate by an integral bound for a reflected-function quotient, converts it to a logarithmic bound proportional to rectangle extent, and sums over protruding rectangles to obtain the second result of Theorem 6.",
+          "The corollary visibly shifts the threshold, sets it to w(T)/log T, and compares the exceptional count with the total window count to obtain a majority statement."
+        ],
+        "inference": [
+          "Matching a local analytic bound to the protruding-rectangle decomposition and normalizing a tail count by the total count are legitimate conceptual readings."
+        ],
+        "unsupported_or_imported": [
+          "Calling the opening estimate an L2 bound is not secure from the frozen artifact: the crucial preceding display is absent and the surviving exponent is OCR-ambiguous.",
+          "The density-input provenance and full chain-of-box construction are outside this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The local-cost interpretation is substantive, but the candidate over-specifies the norm and imports the broader proof narrative."
+        ],
+        "context_or_ocr_risk": [
+          "The opening formula is missing, the quotient exponent and weighted comparison are damaged, and the final normalization contains corrupted constants."
+        ],
+        "missed_mechanism": [
+          "The candidate should describe only an OCR-uncertain integral or fractional-moment bound unless the scan establishes that it is genuinely L2."
+        ],
+        "revision_instructions": [
+          "Replace 'L2' with a neutral description of the source-visible integral bound, remove the external density and full box-chain claims, and retain the per-rectangle logarithmic cost and moving-threshold majority argument with exact constants withheld."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "43026abce3eae53e817b3999105d9e4782c41d6b95c3eb44774f6016bfdc9de6"
+}

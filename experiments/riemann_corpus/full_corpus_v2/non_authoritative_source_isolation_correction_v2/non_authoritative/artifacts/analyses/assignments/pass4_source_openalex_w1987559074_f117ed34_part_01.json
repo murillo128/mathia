@@ -1,0 +1,346 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1987559074_f117ed34_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1987559074",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof begins at line 635. The examples are evidence about approximation behavior, not verification of the theorem.",
+      "line_end": 516,
+      "line_start": 489,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The scientific-notation exponents and truncation counts are visibly mangled in extraction, especially lines 507-515. The qualitative contrast is recoverable, but all numerical values require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 asserts convergence for every complex s except the pole. The numerical examples contrast benign convergence at s=1/2 with enormous truncation sensitivity near the first non-trivial zero, preserving an important distinction between analytic convergence and practical numerical conditioning.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pointwise convergence to zeta can coexist with severe finite-sum instability near a zero",
+      "unit_artifact_relpath": "depth/units/w1987559074_global_limit_and_numerical_conditioning.txt",
+      "unit_bytes": 1685,
+      "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+      "unit_sha256": "970fd5d4e8290ce581b047bac7edda571e3ce3fcab40cfbdd2a2f335071fed5a",
+      "unit_type": "theorem_statement_with_diagnostic_examples",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_global_limit_and_numerical_conditioning.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 481,
+          "line_end": 488,
+          "text": "                                 Fq (t) :=         Bm (q)\n                                             m=0\n                                                             m!\n\nsatisfies the relation\n                                 Fq (qt) = et Fq (t) − tet .\nThe q-Bernoulli numbers defined here are essentially (i.e. up to the factor (−1)m ) the\nsame as those introduced by Tsumura [8].\n",
+          "sha256": "33a8711649d3c7fe5060a9dac8bbf5dd30b8a9bfb7d3d5fe85793ec90311aa72"
+        },
+        "after": {
+          "line_start": 517,
+          "line_end": 524,
+          "text": "C OROLLARY. For each non-negative integer m, we have\n                                                                 Bm+1\n              ‘1m + 2m + 3m + 4m + 5m + · · · ’ = ζ (−m) = −          .\n                                                                 m+1\n\nRemarks. (1) We can also define a q-analogue of the Hurwitz zeta function\n                                               \u0001\n                                               ∞\n",
+          "sha256": "560e6e88e6c45875a100907b6aec589b54c38095b5feee412bb6a9b993823fe5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Bernoulli limit and q-Bernoulli structure",
+            "line_end": 491,
+            "line_start": 333,
+            "mathematical_role": "finite-difference proof of the classical Bernoulli values, closed q-Bernoulli formulas, recursion, and generating relation"
+          },
+          {
+            "label": "Global classical limit, numerical behavior, and Hurwitz extension",
+            "line_end": 557,
+            "line_start": 492,
+            "mathematical_role": "statement of convergence for all s except 1, numerical diagnostics, corollary, and extension boundary"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 516,
+          "line_start": 489,
+          "title": "Pointwise convergence to zeta can coexist with severe finite-sum instability near a zero",
+          "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+          "unit_type": "theorem_statement_with_diagnostic_examples",
+          "why_material": "Theorem 2 asserts convergence for every complex s except the pole. The numerical examples contrast benign convergence at s=1/2 with enormous truncation sensitivity near the first non-trivial zero, preserving an important distinction between analytic convergence and practical numerical conditioning."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof begins at line 635. The examples are evidence about approximation behavior, not verification of the theorem.",
+          "representation_dependency": "The scientific-notation exponents and truncation counts are visibly mangled in extraction, especially lines 507-515. The qualitative contrast is recoverable, but all numerical values require PDF verification.",
+          "unit_id": "w1987559074_global_limit_and_numerical_conditioning"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 488,
+            "line_start": 443,
+            "title": "Negative q-zeta values generate q-Bernoulli numbers with both a binomial recursion and a dilation equation",
+            "unit_id": "w1987559074_q_bernoulli_recurrence",
+            "unit_type": "derived_structure",
+            "why_material": "The source packages the negative-integer values into q-Bernoulli numbers, derives a closed formula including the r=0 limiting convention, and shows that the coefficient recursion is equivalently encoded by F_q(qt)=e^t F_q(t)-t e^t."
+          },
+          {
+            "line_end": 557,
+            "line_start": 522,
+            "title": "Adding a shift parameter transports the q-limit and Bernoulli-value mechanism to Hurwitz zeta",
+            "unit_id": "w1987559074_hurwitz_extension",
+            "unit_type": "generalization",
+            "why_material": "The remark shows that the same construction extends from n to n+a, with the classical limit becoming Hurwitz zeta and the negative-integer limit becoming a Bernoulli polynomial. It also records the deliberate scope boundary: the paper does not develop the resulting q-Bernoulli polynomials."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof establishes pointwise classical convergence, yet the near-zero examples show that enormous truncations can remain badly conditioned before eventual convergence. A valid deformation can therefore be conceptually exact while computationally ineffective in sensitive regions.",
+            "limit": "The numerical figures are illustrative and extraction-damaged; they do not provide a quantitative conditioning theorem or uniform convergence rate.",
+            "parent_local_unit_ids": [
+              "w1987559074_global_limit_and_numerical_conditioning",
+              "w1987559074_limit_matches_classical_remainder"
+            ],
+            "title": "Analytic convergence and numerical usefulness are distinct properties of a deformation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 521,
+              "line_start": 517,
+              "reason": "Corollary restates the combined negative-integer conclusion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+        "spontaneous": {
+          "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+          "spontaneous_reading": "The theorem's pointwise q-to-1 convergence does not imply a numerically useful truncation. The examples converge reasonably at s=1/2 but exhibit huge transient partial sums near a nontrivial zero, where cancellation makes finite approximations severely ill-conditioned."
+        },
+        "directed": {
+          "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+          "source_grounded_mathematics": "Theorem 2 states that zeta_q(s) tends to zeta(s) as q increases to 1 for every complex s other than 1. Numerical examples from the continued expansion compare moderate approximation at s=1/2 with enormous sensitivity to truncation count and q near the first nontrivial zero before small values eventually emerge. The proof of the theorem occurs later and is not contained here.",
+          "conceptual_reading": "Analytic validity and computational conditioning are separate properties. Near a zero, the target is much smaller than intermediate contributions, so pointwise convergence can coexist with catastrophic cancellation and an impractical pre-asymptotic regime.",
+          "representation_or_bridge": "The q-family bridges finite-q meromorphic functions to zeta by a pointwise limit; partial sums provide a computational representation that reveals conditioning not visible in the limit theorem.",
+          "boundary_or_failure": "The examples illustrate behavior but do not prove the theorem, a convergence rate, lack of uniform convergence, or a quantitative condition number. The result excludes the pole s=1.",
+          "uncertainty": "Scientific-notation exponents and truncation counts are visibly mangled, especially in the near-zero examples. Only the qualitative contrast is reliable without the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+        "critic_decision": "revise",
+        "supported": [
+          "The theorem statement gives a global q-to-1 limit, and the numerical examples show partial sums with very large intermediate magnitudes compared with a near-zero target.",
+          "The analysis appropriately notes that the examples do not establish a quantitative condition number or uniform convergence rate."
+        ],
+        "inference": [
+          "The examples support severe truncation sensitivity or a long pre-asymptotic regime near the illustrated zero."
+        ],
+        "unsupported_or_imported": [
+          "Calling the observed behavior 'catastrophic cancellation' identifies a specific numerical mechanism that the span does not establish.",
+          "Calling the finite-q computation broadly impractical extrapolates beyond the two reported examples."
+        ],
+        "paraphrase_or_style_risk": [
+          "The polished numerical-conditioning vocabulary risks making an empirical contrast sound like a proved diagnostic."
+        ],
+        "context_or_ocr_risk": [
+          "Several exponents, truncation indices, and numerical values are OCR-mangled, so only the qualitative size contrast is dependable from the packet."
+        ],
+        "missed_mechanism": [
+          "The critique should distinguish the proved global limit from the limited numerical evidence about finite truncations."
+        ],
+        "revision_instructions": [
+          "Replace 'catastrophic cancellation' and the general impracticality claim with the narrower observation that these examples exhibit large transient partial sums and severe truncation sensitivity, while leaving the responsible numerical mechanism unestablished."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a stated extension without proof in this source, so it should not be represented as independently derived here.",
+      "line_end": 557,
+      "line_start": 522,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the shifted q-integer and Bernoulli-polynomial generating series. The extraction of equation (7) is compressed and needs PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remark shows that the same construction extends from n to n+a, with the classical limit becoming Hurwitz zeta and the negative-integer limit becoming a Bernoulli polynomial. It also records the deliberate scope boundary: the paper does not develop the resulting q-Bernoulli polynomials.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adding a shift parameter transports the q-limit and Bernoulli-value mechanism to Hurwitz zeta",
+      "unit_artifact_relpath": "depth/units/w1987559074_hurwitz_extension.txt",
+      "unit_bytes": 1762,
+      "unit_id": "w1987559074_hurwitz_extension",
+      "unit_sha256": "62791471f553215a97cb34176f9784202f171c52ed6b541e3dce6e51b67e7bf4",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_hurwitz_extension.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 514,
+          "line_end": 521,
+          "text": "give −0.000 031 064 · · ·+0.000 081 2513 · · ·i.     (The actual value is ζ (1/2 +\n14.134725i) = 0.000 000 017 674 · · ·−0.000 000 111 02 · · ·i.)\n      Combining Theorems 1 and 2, we readily obtain the following.\nC OROLLARY. For each non-negative integer m, we have\n                                                                 Bm+1\n              ‘1m + 2m + 3m + 4m + 5m + · · · ’ = ζ (−m) = −          .\n                                                                 m+1\n\n",
+          "sha256": "5fd162736f973e208e26cca32d74e80e2c9e90745b0752181bbb61bcb90dc793"
+        },
+        "after": {
+          "line_start": 558,
+          "line_end": 565,
+          "text": "    (2) It is interesting to note that the limit\n                           \u0001\n                           ∞\n                               nk−1 q n\n             lim(1 − q)k                = (k − 1)!ζ (k)      (∀k ≥ 2, k ∈ Z)        (8)\n             q↑1\n                           n=1\n                               1 − qn\n",
+          "sha256": "544c2ca68db5ae0a28fb6ac249c40eef62974a0a02352f10555b1d844275d142"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Global classical limit, numerical behavior, and Hurwitz extension",
+            "line_end": 557,
+            "line_start": 492,
+            "mathematical_role": "statement of convergence for all s except 1, numerical diagnostics, corollary, and extension boundary"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 557,
+          "line_start": 522,
+          "title": "Adding a shift parameter transports the q-limit and Bernoulli-value mechanism to Hurwitz zeta",
+          "unit_id": "w1987559074_hurwitz_extension",
+          "unit_type": "generalization",
+          "why_material": "The remark shows that the same construction extends from n to n+a, with the classical limit becoming Hurwitz zeta and the negative-integer limit becoming a Bernoulli polynomial. It also records the deliberate scope boundary: the paper does not develop the resulting q-Bernoulli polynomials."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a stated extension without proof in this source, so it should not be represented as independently derived here.",
+          "representation_dependency": "Depends on the shifted q-integer and Bernoulli-polynomial generating series. The extraction of equation (7) is compressed and needs PDF checking.",
+          "unit_id": "w1987559074_hurwitz_extension"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 516,
+            "line_start": 489,
+            "title": "Pointwise convergence to zeta can coexist with severe finite-sum instability near a zero",
+            "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+            "unit_type": "theorem_statement_with_diagnostic_examples",
+            "why_material": "Theorem 2 asserts convergence for every complex s except the pole. The numerical examples contrast benign convergence at s=1/2 with enormous truncation sensitivity near the first non-trivial zero, preserving an important distinction between analytic convergence and practical numerical conditioning."
+          },
+          {
+            "line_end": 597,
+            "line_start": 558,
+            "title": "Integer specialization turns the q-zeta limit into a hierarchy of Lambert-series asymptotics",
+            "unit_id": "w1987559074_lambert_sum_transfer",
+            "unit_type": "specialization_and_asymptotic_transfer",
+            "why_material": "At positive integer s=k, the continued expansion reorganizes as a Lambert series with a binomial polynomial weight. Comparing its leading degree with lower-degree terms and using induction transfers zeta_q convergence into the stated asymptotic involving zeta(k)."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 521,
+              "line_start": 517,
+              "reason": "Corollary restates the combined negative-integer conclusion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_hurwitz_extension",
+        "spontaneous": {
+          "unit_id": "w1987559074_hurwitz_extension",
+          "spontaneous_reading": "Replacing n by n+a transports the same q-deformation to Hurwitz zeta, and the negative-integer limit correspondingly upgrades Bernoulli numbers to Bernoulli polynomials. The paper marks this as a viable extension but deliberately leaves the induced q-Bernoulli polynomials undeveloped."
+        },
+        "directed": {
+          "unit_id": "w1987559074_hurwitz_extension",
+          "source_grounded_mathematics": "A remark defines a shifted series zeta_q(s;a) using q^{(n+a)(s-1)} and [n+a]_q^{-s}, and states that it tends to the Hurwitz zeta zeta(s;a) for s not equal to 1. It also states the corresponding values at negative integers in terms of B_{m+1}(a)/(m+1) and recalls the Bernoulli-polynomial generating series. No proof is given in this span.",
+          "conceptual_reading": "The shift parameter shows that the mechanism depends on the additive lattice structure rather than specifically on the origin n=1. Bernoulli polynomials are the natural shifted boundary data, just as Bernoulli numbers encode the unshifted case.",
+          "representation_or_bridge": "The bridge is n -> n+a simultaneously in the q-exponential and q-integer, followed by q->1. The Bernoulli-polynomial generating function packages the shifted negative-integer limits.",
+          "boundary_or_failure": "This is a stated extension without proof, and the paper explicitly declines to develop the q-Bernoulli polynomials. The admissible domain of a is not specified in this unit, so none should be inferred.",
+          "uncertainty": "The extracted integer condition next to zeta_q(-m;a) appears internally inconsistent, and equation (7) has a broken numerator glyph. The intended range and exact generating function require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w1987559074_hurwitz_extension",
+        "critic_decision": "revise",
+        "supported": [
+          "The span formally shifts the summation variable by a parameter a and states q-to-1 and negative-integer Bernoulli-polynomial limits.",
+          "The analysis correctly flags that the admissible domain of a and analytic details are not supplied in this short span."
+        ],
+        "inference": [
+          "The shifted summation pattern suggests an extension from the unshifted case, but no broader structural theorem is proved here."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the mechanism depends on additive-lattice structure rather than the origin is a plausible generalization, not a statement established by the span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The additive-lattice formulation is elegant but risks replacing the actual formal shift with a generic abstraction."
+        ],
+        "context_or_ocr_risk": [
+          "The stated range for the integer parameter appears internally inconsistent with the displayed index, and the Bernoulli-polynomial generating function is OCR-corrupted."
+        ],
+        "missed_mechanism": [
+          "The analysis should foreground the internal sign or range ambiguity instead of presenting the negative-integer specialization as fully secure."
+        ],
+        "revision_instructions": [
+          "Restrict the conceptual reading to the formal n-to-n+a shift and the two limits explicitly claimed; remove the additive-lattice generalization and state that the integer range/sign and exact generating function require PDF verification."
+        ]
+      }
+    }
+  ]
+}

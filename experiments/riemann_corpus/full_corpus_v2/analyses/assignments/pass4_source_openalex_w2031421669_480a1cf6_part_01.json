@@ -1,0 +1,518 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2031421669_480a1cf6_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2031421669",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Definitions of F, D, Δ1, Δ2, T1, and T2 are kept with the resulting identity because later bounds refer to this complete decomposition.",
+      "line_end": 318,
+      "line_start": 249,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The contour integral and transforms are split across lines and have superscript/subscript loss; exact symbolic transcription requires the PDF, but the decomposition and roles of its terms are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source introduces an admissible test function and Laplace transform, then forms a shifted difference that decomposes the positive prime sum into archimedean, pole, zero, and remainder terms.",
+      "source_id": "openalex_w2031421669",
+      "source_normalized_sha256": "542ddf7a082b1007e452f959966b9f3cd08ef3cb79ec9f89a45a9730ef04df2a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A compactly supported test function turns Weil's formula into four controllable contribution classes",
+      "unit_artifact_relpath": "depth/units/openalex_w2031421669_v2_u04.txt",
+      "unit_bytes": 3613,
+      "unit_id": "openalex_w2031421669_v2_u04",
+      "unit_sha256": "7ce77a7830965df5669fc9d576aeefb496c6b2ad4073a1f1f2f1c68f7e7477b7",
+      "unit_type": "explicit-formula-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031421669_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2031421669",
+        "title": "A NOTE ON KADIRI'S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Woo Jin Jang",
+          "Soun-Hi Kwon"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 241,
+          "line_end": 248,
+          "text": "Brown gave several functions for f (t). Using this explicit formula Heath-Brown\nimproved zero-free regions for Dirichlet L-functions (see [6]). In 2005 Kadiri\ngeneralized Stechkin’s work and used it together with Weil’s explicit formula\nfor ζ(s). We will describe Kadiri’s method in the next section.\n\n      A NOTE ON KADIRI’S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA 1295\n\n\n",
+          "sha256": "a9e25febfb843b415479a581d55d5ac1b67eae17bf5b361dd3a381c6484ce7f4"
+        },
+        "after": {
+          "line_start": 319,
+          "line_end": 326,
+          "text": "Then\n               X                      \u0012       \u0013 K\n                                 Λ(n)      κ X\n                     f (log n)         1 −        ak cos(kγ0 log n) ≥ 0,\n                                  nσ       nδ\n               n≥1                              k=0\n        PK\nwhere      k=0 ak cos(kv) ≥ 0 with ak ≥ 0. In view of (2) we get\n",
+          "sha256": "7807aadacb52db8b8cc5d28bf1fbeed42e430708b8ac4654804cd1bd64d43d71"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0c30f8d3d216e26962f8fc57ed11604dbcbf8f7268e06c8cfb6167e990c6e81f",
+        "dossier_sha256": "a1fbca5df3a70ba4061405c250c6587a3b8776a05cddb8246a08471fd165a7ad",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kadiri's method",
+            "line_end": 508,
+            "line_start": 245,
+            "mathematical_role": "Builds the smoothed explicit formula, decomposes its contributions, controls zero classes and errors, and reduces the proof to an iterated scalar kernel inequality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 318,
+          "line_start": 249,
+          "title": "A compactly supported test function turns Weil's formula into four controllable contribution classes",
+          "unit_id": "openalex_w2031421669_v2_u04",
+          "unit_type": "explicit-formula-decomposition",
+          "why_material": "The source introduces an admissible test function and Laplace transform, then forms a shifted difference that decomposes the positive prime sum into archimedean, pole, zero, and remainder terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Definitions of F, D, Δ1, Δ2, T1, and T2 are kept with the resulting identity because later bounds refer to this complete decomposition.",
+          "representation_dependency": "The contour integral and transforms are split across lines and have superscript/subscript loss; exact symbolic transcription requires the PDF, but the decomposition and roles of its terms are recoverable.",
+          "unit_id": "openalex_w2031421669_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 231,
+            "line_start": 154,
+            "title": "Stechkin symmetrization makes paired zero contributions discardable",
+            "unit_id": "openalex_w2031421669_v2_u03",
+            "unit_type": "symmetry-and-discarding-mechanism",
+            "why_material": "The zero symmetries ρ̄ and 1−ρ̄ are paired with a shifted logarithmic derivative so all nonexceptional contributions have a controlled sign, improving the constant available from the raw positivity argument."
+          },
+          {
+            "line_end": 386,
+            "line_start": 319,
+            "title": "Positivity parameters are rescaled around a candidate zero and anchored by verified low zeros",
+            "unit_id": "openalex_w2031421669_v2_u05",
+            "unit_type": "analytic-computational-boundary",
+            "why_material": "The method wraps the explicit formula in a positive trigonometric polynomial, parameterizes distance from the line Re(s)=1, and uses a finite verified-height boundary so the remaining analytic argument only addresses higher zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof is a staged compression: positivity of a weighted prime sum feeds an explicit formula, symmetry removes most zero contributions, a geometric partition budgets the rest, verified low zeros close the finite range, and rescaling reduces everything to a monotone scalar kernel inequality.",
+            "limit": "Several component estimates are cited from Kadiri rather than proved here, and exact displayed formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "openalex_w2031421669_v2_u02",
+              "openalex_w2031421669_v2_u03",
+              "openalex_w2031421669_v2_u04",
+              "openalex_w2031421669_v2_u05",
+              "openalex_w2031421669_v2_u06",
+              "openalex_w2031421669_v2_u07"
+            ],
+            "title": "From prime-side positivity to a scalar zero-free inequality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 248,
+              "line_start": 232,
+              "reason": "Brief lineage from Heath-Brown's Dirichlet-L explicit formula to Kadiri's adaptation, followed by page and section transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031421669_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2031421669_v2_u04",
+          "spontaneous_reading": "A compactly supported smooth test function turns Weil's explicit formula into a ledger of pole, zero, archimedean, and remainder contributions; a shifted transform difference then makes those classes separately tunable and boundable."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031421669_v2_u04",
+          "source_grounded_mathematics": "For positive compactly supported f with endpoint derivative conditions, the Laplace transform F enters Weil's explicit formula for a smoothed von Mangoldt sum. Multiplication by 1-κ/n^δ introduces D(s)=Re F(s)-κ Re F(s+δ) and corresponding Δ1,Δ2 terms. A nonnegative trigonometric polynomial then yields the master nonnegative identity (3), decomposed into archimedean, pole, zero, and remainder pieces.",
+          "conceptual_reading": "Smoothing is representation selection: it replaces raw zero influence by a tunable response kernel. The shifted difference modularizes the proof, allowing distinct estimates to be designed for contributions with different analytic behavior.",
+          "representation_or_bridge": "The chain is f to Laplace transform F, smoothed prime sum to the zero sum via Weil's formula, and then D, Δ1, and Δ2 to a finite error-budget interface.",
+          "boundary_or_failure": "The explicit formula is imported from Kadiri and no component bounds are proved in this unit. The contour integral and transforms suffer superscript/subscript and line-break loss, so exact symbolic reuse is unsafe.",
+          "uncertainty": "High confidence in the decomposition and roles of its terms; medium confidence in exact contour and transform typography without the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2031421669_v2_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the admissible compactly supported f, its Laplace transform F, Weil's explicit formula, and the shifted objects D, Delta1, Delta2, T1, and T2.",
+          "It then applies a nonnegative cosine polynomial and separates pole, zero, archimedean, and remainder contributions for later bounds."
+        ],
+        "inference": [
+          "Treating smoothing and the shifted difference as a modular error-budget interface is a useful source-grounded interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The directed analysis calls equation (3) a 'master nonnegative identity'; the source derives a >=0 inequality from prime-side positivity, so its direction and status must not be weakened to an identity."
+        ],
+        "paraphrase_or_style_risk": [
+          "The representation-selection language is acceptable because it names the concrete operation f -> F -> D rather than merely saying that a representation exposes structure."
+        ],
+        "context_or_ocr_risk": [
+          "Contour and transform typography has line-break and super/subscript loss; the candidate appropriately warns against exact symbolic reuse."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'master nonnegative identity (3)' with 'master nonnegative inequality (3)' and preserve that it follows from the weighted prime-side nonnegativity."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The kernel definition, monotonicity condition, numerical parameter choice, and six-step update are retained as one strategic unit.",
+      "line_end": 507,
+      "line_start": 460,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The support endpoint and explicit hθ formula are badly line-broken, so the exact kernel needs PDF verification; the rescaling, monotonicity, and iterative-bootstrap logic are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Scaling f by η collapses the proof to a kernel functional K(ω,θ); negativity of the correction and monotonicity in ω yield a scalar inequality that can be iterated to improve R.",
+      "source_id": "openalex_w2031421669",
+      "source_normalized_sha256": "542ddf7a082b1007e452f959966b9f3cd08ef3cb79ec9f89a45a9730ef04df2a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kernel rescaling converts the master inequality into an iterative bound on the zero-free constant",
+      "unit_artifact_relpath": "depth/units/openalex_w2031421669_v2_u07.txt",
+      "unit_bytes": 2650,
+      "unit_id": "openalex_w2031421669_v2_u07",
+      "unit_sha256": "2e1321d040f23b95aeacfd033988aa69d9d0640e9b6c47e8b5b7c59b9d6a2772",
+      "unit_type": "rescaling-and-iterative-bootstrap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031421669_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2031421669",
+        "title": "A NOTE ON KADIRI'S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Woo Jin Jang",
+          "Soun-Hi Kwon"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 452,
+          "line_end": 459,
+          "text": "bounds for |Re ΓΓ (z)| and observed in detail how behave the Laplace transform\nF (s).\n   Gathering together (3) and Propositions 2-5 we obtained that\n              A\n(5)      0≤     (1 − κ)f (0) log γ0 + a0 F (σ − 1) − a1 F (σ − β0 ) + C(η),\n              2\nwhere\n                       C(η) = C1 (η) + C2 (η) + C3 (η) + C4 (η).\n",
+          "sha256": "9a0fece5f5f93831b78fc8d34fd7007ca1198b189ef58e2ebeb1865fba349eea"
+        },
+        "after": {
+          "line_start": 508,
+          "line_end": 515,
+          "text": "\n       4. Various choices for f (t) and trigonometric inequalities\n   In this Section we will apply Kadiri’s methods to various functions and\nreduce R0 . Heath-Brown proposed several functions for f (t) in Lemmas 7.1-\n7.4 of [6]. Kadiri used the function given in Lemma 7.4 of [6]. We will use the\nfunctions given in Lemmas 7.1-7.4 of [6] in Propositions 6-9 below, respectively.\nMoreover, Heath-Brown mentioned a suggestion for optimizing f (t) that would\nlead a possible improvement in Section 16 of [6]. Following this idea Xylouris\n",
+          "sha256": "d34957fe66fa4c6c9e3723c2492c874291f8e3d740f6cb42bc2228d17f3de8bb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0c30f8d3d216e26962f8fc57ed11604dbcbf8f7268e06c8cfb6167e990c6e81f",
+        "dossier_sha256": "a1fbca5df3a70ba4061405c250c6587a3b8776a05cddb8246a08471fd165a7ad",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kadiri's method",
+            "line_end": 508,
+            "line_start": 245,
+            "mathematical_role": "Builds the smoothed explicit formula, decomposes its contributions, controls zero classes and errors, and reduces the proof to an iterated scalar kernel inequality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 507,
+          "line_start": 460,
+          "title": "Kernel rescaling converts the master inequality into an iterative bound on the zero-free constant",
+          "unit_id": "openalex_w2031421669_v2_u07",
+          "unit_type": "rescaling-and-iterative-bootstrap",
+          "why_material": "Scaling f by η collapses the proof to a kernel functional K(ω,θ); negativity of the correction and monotonicity in ω yield a scalar inequality that can be iterated to improve R."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The kernel definition, monotonicity condition, numerical parameter choice, and six-step update are retained as one strategic unit.",
+          "representation_dependency": "The support endpoint and explicit hθ formula are badly line-broken, so the exact kernel needs PDF verification; the rescaling, monotonicity, and iterative-bootstrap logic are clear in prose.",
+          "unit_id": "openalex_w2031421669_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 459,
+            "line_start": 387,
+            "title": "Exceptional-zero isolation and geometric partition reduce the proof to signed error budgets",
+            "unit_id": "openalex_w2031421669_v2_u06",
+            "unit_type": "bound-assembly-and-zero-partition",
+            "why_material": "The candidate zero is separated, the remaining zeros are partitioned into a sign-discardable class and a density-controlled class, and four auxiliary estimates are assembled into one master inequality with a single correction term C(η)."
+          },
+          {
+            "line_end": 535,
+            "line_start": 509,
+            "title": "Test-function and trigonometric families define a constrained representation search",
+            "unit_id": "openalex_w2031421669_v2_u08",
+            "unit_type": "representation-search-design",
+            "why_material": "The authors vary both the smoothing kernel and the positive cosine polynomial while preserving the same proof interface, reject empirically worse polynomial forms, and update the verified-height cutoff before optimization."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof is a staged compression: positivity of a weighted prime sum feeds an explicit formula, symmetry removes most zero contributions, a geometric partition budgets the rest, verified low zeros close the finite range, and rescaling reduces everything to a monotone scalar kernel inequality.",
+            "limit": "Several component estimates are cited from Kadiri rather than proved here, and exact displayed formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "openalex_w2031421669_v2_u02",
+              "openalex_w2031421669_v2_u03",
+              "openalex_w2031421669_v2_u04",
+              "openalex_w2031421669_v2_u05",
+              "openalex_w2031421669_v2_u06",
+              "openalex_w2031421669_v2_u07"
+            ],
+            "title": "From prime-side positivity to a scalar zero-free inequality"
+          },
+          {
+            "claim": "Finite computation certifies all zeros below a frozen height, while the analytic kernel argument controls every higher candidate and iteratively improves the global constant.",
+            "limit": "The numerical RH certificate is cited rather than embedded, so the source records dependence on verification but does not itself reproduce it.",
+            "parent_local_unit_ids": [
+              "openalex_w2031421669_v2_u05",
+              "openalex_w2031421669_v2_u07",
+              "openalex_w2031421669_v2_u10"
+            ],
+            "title": "A clean analytic-computational division of labor"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 508,
+              "line_start": 508,
+              "reason": "Blank separator before Section 4."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031421669_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2031421669_v2_u07",
+          "spontaneous_reading": "Scaling f(t)=ηhθ(ηt) collapses the master inequality to a scalar kernel K(ω,θ); negativity of the correction and monotonicity in ω allow an endpoint bound, which is fed back as a better R and iterated."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031421669_v2_u07",
+          "source_grounded_mathematics": "For Kadiri's chosen compactly supported hθ, the source reports C(η)<0 and rewrites a1F(σ-β0)-a0F(σ-1) as K(ω,θ). Inequality (6) bounds η log γ0 by K divided by 2(1-κ)hθ(0). A numerical choice makes K increasing for ω≥ω0, produces an improved reciprocal bound, and six updates of R yield R0=5.69693.",
+          "conceptual_reading": "Nondimensionalization turns a many-term analytic proof into a one-variable monotone comparison. The repeated update is a bootstrap or fixed-point computation: each certified region tightens the parameter range used to certify the next.",
+          "representation_or_bridge": "K is the sufficient scalar summary of the test function for the final step; monotonicity bridges all admissible ω to the endpoint ω0, and the resulting inequality bridges back to a new global zero-free constant.",
+          "boundary_or_failure": "The hθ display is badly line-broken, while correction negativity, monotonicity, and iteration are reported numerically without a reproducible certificate here. This recovers Kadiri's constant, not yet the paper's new one.",
+          "uncertainty": "High confidence in the rescaling/iteration mechanism; medium confidence in the exact kernel formula and numerical certification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2031421669_v2_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The span scales f(t)=eta h_theta(eta t), defines K(omega,theta), reports C(eta)<0 and monotonicity in omega, derives inequality (6), and iterates the improved bound six times to R0=5.69693.",
+          "Interpreting the repeated certified update as a bootstrap is supported by the explicit instruction to repeat the same calculations with the new R."
+        ],
+        "inference": [
+          "The one-variable monotone comparison is a valid conceptual compression of the endpoint argument."
+        ],
+        "unsupported_or_imported": [
+          "Calling K alone 'the sufficient scalar summary of the test function for the final step' loses required normalization: inequality (6) also contains h_theta(0), A, and kappa, while admissibility and C(eta)<0 remain proof obligations."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Fixed-point computation' is a reasonable analogy, but the source only reports a finite six-step iteration and does not establish convergence or a fixed-point theorem."
+        ],
+        "context_or_ocr_risk": [
+          "The h_theta formula and support endpoint are badly line-broken; the candidate correctly marks their exact form as unsafe."
+        ],
+        "missed_mechanism": [
+          "The final comparison depends on the normalized ratio K/[2(1-kappa)h_theta(0)] multiplied by A, not on K in isolation."
+        ],
+        "revision_instructions": [
+          "Replace the claim that K is sufficient by saying that K together with h_theta(0), A, kappa, admissibility, and correction negativity forms the scalar final-step interface; describe the iteration as bootstrap-like without implying proved fixed-point convergence."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The statement that Mathematica was used is retained because the printed paper does not otherwise provide a reproducible numerical-search implementation.",
+      "line_end": 695,
+      "line_start": 683,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The alternative kernel formula is readable but typography-sensitive; exact reproduction requires the PDF and an independently specified computation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remarks show that nearby parameterizations reproduce the best constant while a different hyperbolic-trigonometric construction performs slightly worse, providing both robustness evidence and a negative comparison.",
+      "source_id": "openalex_w2031421669",
+      "source_normalized_sha256": "542ddf7a082b1007e452f959966b9f3cd08ef3cb79ec9f89a45a9730ef04df2a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Parameter nonuniqueness and a structurally different kernel family test representation sensitivity",
+      "unit_artifact_relpath": "depth/units/openalex_w2031421669_v2_u11.txt",
+      "unit_bytes": 831,
+      "unit_id": "openalex_w2031421669_v2_u11",
+      "unit_sha256": "0313c636cb27f136b9005b595be0439643f729227e1dfb9e1c5e279baac94a7d",
+      "unit_type": "robustness-and-negative-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031421669_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2031421669",
+        "title": "A NOTE ON KADIRI'S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Woo Jin Jang",
+          "Soun-Hi Kwon"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 675,
+          "line_end": 682,
+          "text": "             η log γ0 ≥ A                              ≥         .\n                        2 (1 − 0.439672)h5,0.509607(0)\n                                                         5.68371\nWe conclude that R0 = 5.68371.                                               \u0003\n\n     A NOTE ON KADIRI’S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA 1303\n\n\n",
+          "sha256": "bcf11c28d27f1b85e359343d3394f33f32fa2b5ef7dfafb18b77df13d0a175b9"
+        },
+        "after": {
+          "line_start": 696,
+          "line_end": 703,
+          "text": "\n                                       References\n [1] K. Ford, Vinogradov’s integral and bounds for the Riemann zeta function, Proc. London\n     Math. Soc. (3) 85 (2002), no. 3, 565–633.\n [2]         , Zero-free regions for the Riemann zeta function, dans: Number Theory for the\n     Millenium, II (Urbana, IL, 2000), 25–56, A K Peters, 2002.\n [3] X. Gourdon, The 1013 first zeros of the Riemann zeta function, and zeros computa-\n     tion at very large height, http://numbers.computation.free.fr/Constants/Miscellaneous/\n",
+          "sha256": "44880f2cf5ac61940defc38e906ea08a5ac7756bebbcb3b1370c69ed15dba6e6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0c30f8d3d216e26962f8fc57ed11604dbcbf8f7268e06c8cfb6167e990c6e81f",
+        "dossier_sha256": "a1fbca5df3a70ba4061405c250c6587a3b8776a05cddb8246a08471fd165a7ad",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Test functions and trigonometric inequalities",
+            "line_end": 695,
+            "line_start": 509,
+            "mathematical_role": "Compares admissible kernel families, optimizes trigonometric weights, certifies error and monotonicity conditions, and obtains the improved constant."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 695,
+          "line_start": 683,
+          "title": "Parameter nonuniqueness and a structurally different kernel family test representation sensitivity",
+          "unit_id": "openalex_w2031421669_v2_u11",
+          "unit_type": "robustness-and-negative-result",
+          "why_material": "The remarks show that nearby parameterizations reproduce the best constant while a different hyperbolic-trigonometric construction performs slightly worse, providing both robustness evidence and a negative comparison."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The statement that Mathematica was used is retained because the printed paper does not otherwise provide a reproducible numerical-search implementation.",
+          "representation_dependency": "The alternative kernel formula is readable but typography-sensitive; exact reproduction requires the PDF and an independently specified computation.",
+          "unit_id": "openalex_w2031421669_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 678,
+            "line_start": 635,
+            "title": "Autocorrelation builds an admissible kernel whose optimization gives the best bound",
+            "unit_id": "openalex_w2031421669_v2_u10",
+            "unit_type": "positivity-preserving-kernel-construction",
+            "why_material": "A compactly supported nonnegative even function is convolved with itself, automatically satisfying the needed endpoint and transform-positivity constraints; the same numerical certification pipeline then yields the best reported constant."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Different kernels and positive trigonometric polynomials can be searched as interchangeable representations provided each candidate preserves admissibility, correction negativity, transform positivity, and monotonicity; quality is then measured by the resulting zero-free constant.",
+            "limit": "The numerical optimization is only summarized, uses Mathematica, and lacks enough implementation detail for independent reproduction from this text alone.",
+            "parent_local_unit_ids": [
+              "openalex_w2031421669_v2_u08",
+              "openalex_w2031421669_v2_u09",
+              "openalex_w2031421669_v2_u10",
+              "openalex_w2031421669_v2_u11"
+            ],
+            "title": "Optimization over representations with invariant proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031421669_v2_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w2031421669_v2_u11",
+          "spontaneous_reading": "The best constant is attained by more than one nearby parameterization, while a structurally different generator gives a slightly worse value; this separates robustness of the achieved certificate from uniqueness of its parameters."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031421669_v2_u11",
+          "source_grounded_mathematics": "Proposition 11 records R0=5.68371. The remarks give another parameter tuple producing the same reported value, then test a different cosh-cos plus sinh-sin generator and report R0=5.68383 for one example. The authors state that Mathematica was used for the computations.",
+          "conceptual_reading": "The result is insensitive to at least some parameter changes but remains sensitive to the representation family. Equal rounded output does not identify a unique optimizer, and one negative family comparison provides only local evidence about design quality.",
+          "representation_or_bridge": "Alternative parameterizations and generator families are compared through the same downstream scalar R0, making the final certificate a representation-sensitivity probe.",
+          "boundary_or_failure": "A few examples do not map the robustness basin or prove global optimality. Software version, code, precision, search domain, and certification details are absent, and exact reproduction also depends on typography-sensitive formulas.",
+          "uncertainty": "High confidence in the reported comparison and use of Mathematica; low confidence in reproducibility, optimizer uniqueness, or general claims beyond the listed examples."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2031421669_v2_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "Proposition 11 reports R0=5.68371; the remarks give a different parameter tuple with the same reported rounded value and one example from another generator form with R0=5.68383.",
+          "The source states that Mathematica was used and supplies no code, version, precision, domain, or certification details."
+        ],
+        "inference": [
+          "Equal rounded outputs show non-identifiability at the reported precision, and the single alternative-family example is only local evidence; the directed analysis appropriately states both limits."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous analysis says the best constant is 'attained' by more than one 'nearby' parameterization. The source reports numerical outputs, not certified attainment, and the second tuple changes several parameters substantially, so 'nearby' is not source-supported."
+        ],
+        "paraphrase_or_style_risk": [
+          "Calling the final scalar a representation-sensitivity probe is useful only with the directed analysis's qualification that one example cannot establish family-wide sensitivity."
+        ],
+        "context_or_ocr_risk": [
+          "The alternative formula is typography-sensitive and the computation is not reproducible from the span; the candidate records this."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Rewrite the spontaneous reading to say that materially different reported parameter tuples yield the same rounded R0, while one tested alternative generator example yields a slightly worse reported value; do not claim rigorous attainment, proximity, uniqueness, or a mapped robustness basin."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "75bf6decb944aa04101b949cace7360c2896d60dad50c7c8d01cef7e904ea35c"
+}

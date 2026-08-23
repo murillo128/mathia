@@ -1,0 +1,513 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "pugh1998_riemann_siegel_thesis",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_pugh1998_riemann_siegel_thesis_c94f316b_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The phase-normalized real function supplies local sign evidence, while Turing's independent global count upgrades that evidence into an exhaustive finite-height certificate.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "pugh1998_depth_u04",
+          "pugh1998_depth_u11",
+          "pugh1998_depth_u13",
+          "pugh1998_depth_u14"
+        ],
+        "proposed_limit": "Only certifies the tested finite range and inherits the stated numerical sign/error assumptions.",
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "synthesis_id": "riemann_v2_within_2f7919dae6a2a2ceb4d4fda0",
+        "title": "From analytic symmetry to finite RH certification"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This representation change is the bridge from complex analysis to the later real-variable computation.",
+          "line_end": 826,
+          "line_start": 744,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Phase and Gamma-factor formulas are OCR-risk; the real-valuedness and sign correspondence are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Packages zeta into entire xi, exploits s-to-1-s symmetry and conjugation, and factors the critical-line phase to define real Z(t), reducing root location to certified sign changes.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional symmetry turns critical-line zeros into sign changes of a real function",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u04.txt",
+          "unit_bytes": 4002,
+          "unit_id": "pugh1998_depth_u04",
+          "unit_sha256": "356a87efe6e05abbd14019472d8f0c7f8b5c0b9bcbde74c8c403c84cde1b798c",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry selects the critical line as a fixed locus where a complex analytic problem admits a real coordinate. Removing the known phase preserves zero locations while exposing the order structure needed for sign tests.",
+            "nonparaphrase_operation": "Xi absorbs the pole and functional factors; theta(t) absorbs zeta's phase. Z(t) is the computational bridge from complex evaluation to real root bracketing.",
+            "quality_reason": "The source defines xi, states xi(s)=xi(1-s), derives reality on the critical line, factors a negative real term, and defines real Z(t) with corresponding sign changes. No material unsupported claim so long as sampled sign changes are not treated as exhaustive, which the analysis explicitly prevents. 'Symmetry selects a real coordinate' is polished but tied to the exact functional/reflection identities.",
+            "source_support": "The source states the zeta functional equation, defines an entire xi(s) with xi(s)=xi(1-s), and argues that xi(1/2+it) is real. It factors xi on the critical line and defines Z(t)=e^(i theta(t))zeta(1/2+it), a real-valued function whose sign changes correspond to those of xi and hence locate critical-line zeros.",
+            "speculation_status": "A sign change certifies at least one odd-multiplicity critical-line zero, but absence of a sampled sign change does not exclude zeros or even-multiplicity contacts. This unit does not supply exhaustive global counting. Real-valuedness and sign correspondence are prose-explicit; Gamma/phase formulas are OCR-sensitive and should be scan-checked. The fixed-locus and phase-removal interpretation is reasonable; odd-multiplicity certification from a sign change is standard inference, not source wording. Gamma and theta displays are OCR-sensitive; the real-valuedness and sign correspondence are prose-explicit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The text is careful that sign alternation yields only a lower bound until Turing certification is applied.",
+          "line_end": 1992,
+          "line_start": 1820,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Plots are image-dependent; definitions and limitations are recoverable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives the expected alternation from the phase factor, explicitly notes failures and multiple-zero intervals, and replaces a universal law with good/bad Gram points and exceptional Gram blocks requiring deeper search.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            41,
+            42,
+            43,
+            44
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gram's empirical law becomes a block-based lower-bound search",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u11.txt",
+          "unit_bytes": 6364,
+          "unit_id": "pugh1998_depth_u11",
+          "unit_sha256": "8a95474a882dd430a429425467523204f68cc8a1c5170054e3d8c6cf10f61141",
+          "unit_type": "heuristic-to-search-strategy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "An unreliable regularity can still guide an efficient adaptive algorithm if failures are detected rather than assumed away. The method concentrates work where the heuristic's expected alternation breaks.",
+            "nonparaphrase_operation": "The phase theta creates an approximately uniform index grid, and Z turns critical-line roots into sign events. Gram blocks package consecutive heuristic failures into bounded search regions.",
+            "quality_reason": "The source defines Gram points and Gram's Law, gives its heuristic motivation, states infinite failure and possible multiple roots, labels it empirical, and defines good/bad points and Gram blocks. No material unsupported claim; the need for a later upper count is explicit in the span. 'Package failures into bounded regions' is explanatory, but it is exactly what Gram blocks do.",
+            "source_support": "Gram points g_n satisfy theta(g_n)=n pi, and Gram's Law is (-1)^n Z(g_n)>0. The source motivates it heuristically from the tendency of Re zeta to be positive and the first Riemann-Siegel summand, explicitly notes that it fails infinitely often and that multiple roots can occur between Gram points, and defines good/bad points and Gram blocks for root searching.",
+            "speculation_status": "Gram's Law is empirical and cannot certify uniqueness or completeness; even two good endpoints guarantee only at least one odd sign crossing. A later upper/global count is indispensable. Definitions and limitations are prose-explicit; plotted examples are illustrative and not required for the mechanism. Demoting the law to an adaptive search heuristic and concentrating work on failures is a faithful conceptual reading. Plots are unnecessary sidecars for this mechanism; definitions and limitations are textually complete."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the source's central separation between finding critical-line zeros and certifying that none are missing off the line.",
+          "line_end": 2282,
+          "line_start": 2088,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Step-function diagrams are image-dependent; inequalities and certification logic remain recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses parity at good Gram points, off-line zero pairing, adjusted sample points, step-count lower bounds, and an integral bound for S(t) to turn finitely many sign evaluations into a rigorous bound on N(gm).",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            47,
+            48,
+            49,
+            50
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Turing's averaged bound converts adjusted sign samples into an exact global root count",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u13.txt",
+          "unit_bytes": 7837,
+          "unit_id": "pugh1998_depth_u13",
+          "unit_sha256": "083f50a9d0454090a705ea82ee5feb3120870b5558be438e246f41ae12c4b335",
+          "unit_type": "computational-certification-logic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The certificate combines three weak ingredients—parity, witnesses, and an average discrepancy bound—into an exact finite count. Averaging avoids the fragile endpoint contour condition while discreteness converts a non-sharp real bound into a sharp integer conclusion.",
+            "nonparaphrase_operation": "Adjusted sign samples form L(t), a certified lower-count staircase; L_1(t) and theta track the expected count; S(t) measures their global discrepancy.",
+            "quality_reason": "The source proves even parity of S(g_m), defines ordered adjusted points and lower-count staircases, compares them with theta/Gram counting, integrates using Turing's bound, and derives the under-2 criterion. No material unsupported claim; completeness is explicitly conditioned on the observed lower count meeting the derived upper count. 'Discreteness converts a nonsharp real bound into an exact conclusion' is polished but exactly describes even-integer S(g_m)<2.",
+            "source_support": "At a good Gram point g_m, sign parity and functional-equation pairing of off-line zeros imply S(g_m) is even. For subsequent Gram points, small ordered adjustments h_j are chosen so (-1)^j Z(g_j+h_j)>0. Their sign changes give a step-function lower bound for N(t); comparison with the Gram counting function and integration, using Turing's bound on integral S(t)dt, yields an explicit upper bound on S(g_m). If it is below 2, parity gives S(g_m)<=0 and hence N(g_m)<=m+1.",
+            "speculation_status": "The method needs certified signs, strict ordering of adjusted points, and a small enough total adjustment. It gives completeness only when the observed lower count reaches the derived global upper count. The certification logic is explicit, but diagram geometry and numerical constants in Turing's quoted bound should be checked in the scan. Characterizing the certificate as parity plus witnesses plus averaged discrepancy is an accurate synthesis. Step-function diagrams and numerical constants are scan-dependent, while the inequalities are readable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is historical computational evidence conditional on the stated implementation and error controls, not evidence for all heights.",
+          "line_end": 2430,
+          "line_start": 2319,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Tabulated values are text-extracted; exact decimals should be checked against the original before reproduction.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines the reported critical-line count, adjusted endpoint samples, and a computed S(gm)<2 bound to conclude equality of local and global counts over the tested height range.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            53,
+            54
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A numerical lower count plus Turing upper bound closes the finite verification",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u14.txt",
+          "unit_bytes": 5279,
+          "unit_id": "pugh1998_depth_u14",
+          "unit_sha256": "c514571dbdeb11f15ff66fac18b37929de46638520f14de78f4bcb318557a377",
+          "unit_type": "worked-certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Witness detection becomes exhaustive only when paired with an independent global upper bound. The adjusted samples are a compact certificate that the local search count saturates the total possible count.",
+            "nonparaphrase_operation": "The numerical table feeds the abstract Turing inequality; the integer/parity step converts the decimal upper bound into an exact count comparison.",
+            "quality_reason": "The source reports the critical-line lower count, twenty adjusted samples, zero adjustment sum, S(g_m)<=1.469<2, the global upper count, and equality implying simple on-line zeros in the finite range. No material unsupported claim; the analysis treats the data as historical reported evidence rather than independently rerun computation. 'Compact certificate' is explanatory language but names the concrete twenty-row table and inequality.",
+            "source_support": "The source reports m=12,193,873, at least m+1 detected critical-line zeros through g_m near height six million, and twenty adjusted Gram samples through g_{m+19}. Their adjustments sum to zero in the bound, producing S(g_m)<=1.469<2; the parity argument gives N(g_m)<=m+1. Since m+1 critical-line zeros were located, the source concludes exactly that many strip zeros occur in the range, all simple and on the line.",
+            "speculation_status": "This is finite historical computational evidence and depends on the implementation's sign/error controls and reported data. It licenses no claim above the tested height or about RH globally. The logical arithmetic is visible, but exact tabulated decimals and reproduced implementation results should be checked against the original artifact before replication. Calling equality of independently produced lower and upper counts the certificate is a faithful inference. Exact decimals and program correctness are not independently verified by this span and need original artifacts for replication."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+        "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Keeping the contour decomposition exact until the saddle is chosen makes each later approximation error attributable to a distinct transformation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "pugh1998_depth_u06",
+          "pugh1998_depth_u07",
+          "pugh1998_depth_u08",
+          "pugh1998_depth_u10"
+        ],
+        "proposed_limit": "Several exact formulas and constants remain scan-dependent because of OCR.",
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "synthesis_id": "riemann_v2_within_09193891cd5c8fc9bd1afc67",
+        "title": "Exact decomposition before approximation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "No approximation occurs until after this unit; that boundary is important for error provenance.",
+          "line_end": 1285,
+          "line_start": 976,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Contour drawings and dense equations are scan-dependent, but the deformation/residue/symmetrization sequence is textually recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands the contour across paired poles, invokes the functional factors, restricts to the critical line, and obtains the exact SN+RN decomposition from which approximation begins.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Residue expansion isolates a computable symmetric sum and one contour remainder",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u06.txt",
+          "unit_bytes": 11720,
+          "unit_id": "pugh1998_depth_u06",
+          "unit_sha256": "0af55f3c0418c8b1cf57bece9708b16264a53d0c2cebdfdcca95785b1321049f",
+          "unit_type": "exact-decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Residue extraction isolates a cheaply computable symmetric component without yet spending approximation error. This exact boundary makes later error provenance local to R_N.",
+            "nonparaphrase_operation": "Contour poles encode the finite Dirichlet sums; the functional equation pairs s and 1-s; critical-line conjugation converts the pair into the real cosine sum.",
+            "quality_reason": "The source subtracts N exponential terms, deforms across paired poles, computes residues, continues analytically, applies functional factors, restricts to the critical line, and obtains exact Z=S_N+R_N. No material unsupported claim; no approximation is assigned before the retained remainder is later changed. 'Cheaply computable symmetric component' is explanatory, but the finite cosine sum and source's 'readily computable' statement support it.",
+            "source_support": "Starting from the global contour formula, the source subtracts the first N exponential terms, enlarges the contour across poles at plus or minus 2pi i through plus or minus 2N pi i, and evaluates their residues. After analytic continuation, multiplication by the xi factors, and restriction to s=1/2+it, conjugate sums combine into 2 sum_{n<=N} n^(-1/2)cos(theta(t)-t log n). The result is the exact decomposition Z(t)=S_N+R_N.",
+            "speculation_status": "The decomposition is exact only with the remainder contour retained. Dropping or approximating it belongs to later steps, and the argument depends on contour deformation avoiding singularities. The residue/deformation sequence is clear, but contour drawings, orientations, and dense prefactors should be checked against the scan. Calling the split an error-provenance boundary is a useful and justified interpretation. Contour orientation and dense prefactors require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The plotted t=100 surface is illustrative only; the reusable move is contour selection by the saddle geometry.",
+          "line_end": 1399,
+          "line_start": 1288,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The contour and surface plots are image-dependent; the saddle location and error claim are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Selects N=floor(sqrt(t/2pi)), moves the contour near the saddle, explains concentration along the steepest-descent segment, and bounds discarded contour pieces exponentially.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            29,
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Choosing N and deforming through steepest descent concentrates the remainder",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u07.txt",
+          "unit_bytes": 3598,
+          "unit_id": "pugh1998_depth_u07",
+          "unit_sha256": "d8da6c8201b760447999c085a2a28d96db4a2d72d6d6bab166ef452c407f0003",
+          "unit_type": "saddle-point-reframing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Contour choice is an algorithmic representation choice: it moves mass into a short region where local expansion is accurate. The value is deformation-invariant before pieces are discarded, but the new geometry exposes a rigorous smallness bound.",
+            "nonparaphrase_operation": "The saddle location and steepest-descent segment bridge exact contour integration to a local asymptotic remainder. N is selected to align the discrete truncation scale with that saddle.",
+            "quality_reason": "The source chooses N and a, deforms through a near saddle, identifies L1 as steepest descent, then discards L0,L2,L3 with a cited exp(-t/11) bound for t>100. No material unsupported claim; the plot is correctly treated as illustration and the bound as cited. 'Global to local concentration' is standard saddle-point rhetoric, but it matches the exact path selection and error statement.",
+            "source_support": "For given t the source sets N=floor(sqrt(t/(2pi))) and a=i sqrt(2pi t), deforms the remainder contour into four pieces, and identifies a nearby saddle of the numerator. The segment L1 follows the steepest-descent direction; the first approximation keeps only its integral and cites an error at most exp(-t/11) for t>100.",
+            "speculation_status": "The plotted t=100 surface is illustrative, not proof. The exponential discarded-path bound is cited from Edwards and applies under a stated t threshold. The saddle and error claim are explicit; exact contour geometry is image-dependent and should be checked in the original. Viewing contour selection as an algorithmic representation choice is reasonable. Contour geometry is image-dependent; the saddle and threshold are explicit in prose."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The successive approximations are kept together so their distinct error sources are not collapsed.",
+          "line_end": 1527,
+          "line_start": 1402,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact integrands and contours require scan verification; the approximation order is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Changes variables around the saddle, factors the dominant exponential, expands a rapidly convergent residual function, identifies truncation as the dominant approximation error, and enables termwise integration by extending the path.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            31,
+            32,
+            33
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Factor dominant saddle behavior, rescale, truncate, and extend the path",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u08.txt",
+          "unit_bytes": 5046,
+          "unit_id": "pugh1998_depth_u08",
+          "unit_sha256": "0fae0854998ea1e20222008fb7ff54b61fa1ae8722c54e24e3ed96e730cfee20",
+          "unit_type": "local-expansion-and-truncation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The remainder is reorganized by factoring the dominant terms near a=i sqrt(2 pi t), introducing the rapidly convergent residual g(x-a), then recentering exactly with x=u+2 pi i N and p=sqrt(t/(2 pi))-N. Truncating the g-series at K is the source-identified dominant approximation; extending Gamma_1 to Gamma is a later approximation that enables termwise integration and the finite sum of b_n c_n, but this span supplies no separate bound for that extension.",
+            "nonparaphrase_operation": "The sequence exposes which structure is exact and which is approximate: factorization and recentering isolate local correction data, series truncation reduces that data to finitely many terms, and path extension changes their evaluation into reusable coefficient integrals. The gain is a computable correction sum; the remaining burdens are the truncation analysis and the unquantified path-extension error in this span.",
+            "quality_reason": "Accepted after recording the exact recentering and assigning dominance only to the g-series truncation. Formula-level coefficient reconstruction is avoided because the integrands and contour figures are scan-dependent.",
+            "source_support": "The span defines p as the fractional part of sqrt(t/(2 pi)), factors the numerator into explicit exponential terms and g(x-a), makes the change x=u+2 pi i N, truncates the residual series at K, and says that truncation introduces the dominant error. It then extends the path so terms can be integrated separately and obtains a finite sum with b_0=1 and c_0=Psi(p).",
+            "speculation_status": "Separating the dominant saddle contribution from residual correction data is an interpretation confined to this derivation. No universal saddle claim or audited path-extension bound is inferred."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The error hierarchy prevents treating an approximate value as an automatically certified sign.",
+          "line_end": 1771,
+          "line_start": 1694,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant; numerical constants and exponents should be checked against the original PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates discarded-contour, truncated-series, and machine-arithmetic errors, gives usable bounds for retained corrections, and explains why sign certainty rather than high-precision value recovery is the operational target.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            37,
+            38
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Analytic truncation error and floating-point phase loss serve different certification roles",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u10.txt",
+          "unit_bytes": 4127,
+          "unit_id": "pugh1998_depth_u10",
+          "unit_sha256": "8143d022fb25cf5a7247582f55ecf83bbda910397e042c8061b34d003c972aa2",
+          "unit_type": "error-budget",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analytic approximation improves with height while machine representation degrades, so an algorithm can have an intermediate effective domain despite a good asymptotic formula. A certified sign requires |computed Z| to exceed the total error budget.",
+            "nonparaphrase_operation": "The explicit decomposition of Z into main sum and correction terms localizes analytic error; the error margin converts an approximate numerical value into a root-bracketing certificate.",
+            "quality_reason": "The source names discarded-contour, g-series truncation, and floating-point errors; gives cited analytic bounds; explains large phase reduction and accumulation over about sqrt(t) terms; and makes sign determination the operational target. No material unsupported claim; the analysis does not confuse a sign witness with exhaustive root counting. 'Intermediate effective domain' is interpretive but follows from analytic improvement versus machine-error growth.",
+            "source_support": "The source identifies three error sources: discarded contour pieces with cited O(exp(-t/11)) behavior, truncated g-series corrections with explicit one- or two-term bounds from Titchmarsh/Gabcke, and fixed-precision arithmetic. The cosine phase has size O(t log t), so range reduction loses digits as t grows, and errors accumulate over about sqrt(t) summands.",
+            "speculation_status": "High numerical precision of the returned decimal is not the same as a certified sign, and a certified sign change is not yet exhaustive root counting. Variable precision extends reliability but may destroy throughput. The hierarchy is prose-clear; numerical constants and exponents in quoted error theorems should be checked against the original. Requiring the computed value to clear a total error margin is the appropriate certification inference. Quoted constants/exponents and hardware precision are historical and should be checked before reproduction."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+        "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Cheap low-order evaluations can handle ordinary intervals, while ambiguous signs trigger more corrections, finer partitions, or stronger precision; batch precomputation addresses a different cost regime.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "pugh1998_depth_u15",
+          "pugh1998_depth_u16",
+          "pugh1998_depth_u18",
+          "pugh1998_depth_u19"
+        ],
+        "proposed_limit": "The historical C implementation is not independently validated here.",
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "synthesis_id": "riemann_v2_within_0edbf184c68b8d3a1ec2cdde",
+        "title": "Adaptive cost follows epistemic need"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is an implementation representation choice, not a new analytic approximation theorem.",
+          "line_end": 2508,
+          "line_start": 2485,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact polynomial coefficients live in the appendix and are code/scan-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Transforms the correction function to a centered variable, symbolically derives coefficient series, and truncates only after high-precision coefficients fall below a specified threshold.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Taylor-polynomial remainder coefficients trade symbolic preprocessing for fast evaluation",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u15.txt",
+          "unit_bytes": 1178,
+          "unit_id": "pugh1998_depth_u15",
+          "unit_sha256": "f2e942c4303a991c943e6d883243e6d7d94a8fb657c4e582e636477d26daf7e1",
+          "unit_type": "numerical-representation-design",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The implementation changes variables by p=(z+1)/2, writes Psi(p)=Phi(z), and uses the exact scaling Psi^(n)(p)=2^n Phi^(n)(z) to convert the analytic correction functions C_0 through C_4 into Taylor polynomials in z. Maple generates thirty-digit coefficients offline, and each stored list is cut off once coefficient magnitude falls below 10^-20; the span does not show that centering improves conditioning or that this cutoff gives a uniform remainder bound.",
+            "nonparaphrase_operation": "The derivative scaling is the concrete representation bridge from formulas involving Psi derivatives to reusable polynomial tables. This trades one-time symbolic differentiation and coefficient generation for repeated polynomial evaluation, but it does not by itself certify runtime error or numerical conditioning.",
+            "quality_reason": "Accepted after replacing generic improvement language with the exact derivative scaling and preserving the missing-remainder-bound caveat. Reproduction still requires the appendix coefficient tables and code outside this unit.",
+            "source_support": "The unit gives the p-to-z substitution, the displayed Phi(z), the derivative scaling, substitution into C_n for n=0,...,4, thirty-digit Maple coefficient generation, and coefficient-list truncation below 10^-20 for the C(n,z) implementation.",
+            "speculation_status": "Amortized preprocessing is a bounded implementation interpretation. No conditioning improvement or uniform accuracy theorem is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The later appendix is a routine code realization of this described mechanism.",
+          "line_end": 2616,
+          "line_start": 2519,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and pseudocode-level behavior are clear; exact C contains apparent typographic defects and should not be treated as verified software.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Couples a tunable number of Riemann-Siegel correction terms with Newton Gram-point location, adaptive bisection of bad blocks, and error-margined sign tests; expensive evaluations occur only after the cheap stage is inconclusive.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            58,
+            59
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Cheap-first, accurate-second Gram-block search with sign margins",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u16.txt",
+          "unit_bytes": 5165,
+          "unit_id": "pugh1998_depth_u16",
+          "unit_sha256": "1b009d001b1653e4c0f74ecf39843a89fb2f64986e01abf5f7adfd32f2a2c858",
+          "unit_type": "adaptive-search-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Adaptive precision directs computation to epistemically ambiguous cases instead of evaluating every point at maximum cost. The stopping rule is coupled to the mathematical certificate, not just numerical convergence.",
+            "nonparaphrase_operation": "Gram indexing proposes likely brackets; Z(t,n) exposes an accuracy/cost knob; error-margined bisection converts evaluated values into certified sign-change witnesses.",
+            "quality_reason": "The source exposes a selectable correction count, Newton Gram-point search, two-stage block bisection with depth limits, error-margined signs, warnings on failure, and cheap-first main-loop reevaluation. No material unsupported claim; the analysis correctly says a depth-limit warning is not proof of absence and the code is unverified. 'Epistemically ambiguous cases' is stylistic but maps directly to failure to clear the sign/error test.",
+            "source_support": "Z(t,n) lets the caller choose the number of Riemann-Siegel remainder terms. Gram points are located by Newton iteration from an asymptotic initial guess. The Gram-block routine bisects until it finds the expected number of sign changes, first using C_0,C_1 to depth ten and then all five corrections to depth sixteen, with signs accepted only beyond epsilon(t)=0.053t^(-5/4). The main program applies the same cheap-first logic at successive Gram points and sends failures to block search.",
+            "speculation_status": "Reaching maximum partition depth without the expected count produces a warning, not a proof of absence. The quoted tolerance is based on a specific correction truncation, and the appendix C code is noted elsewhere to contain possible defects. The algorithmic behavior is clear at pseudocode level; exact implementation and typographic code should not be treated as verified from this prose alone. Adaptive precision as cost directed toward ambiguous cases is a well-supported conceptual reading. Pseudocode behavior is clear, while the appendix C implementation and any typographic defects are outside the trusted boundary."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The conservative two-term tolerance is retained even when five correction terms are evaluated.",
+          "line_end": 2665,
+          "line_start": 2638,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Asymptotic error exponents are formula-dependent and should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates soundness of error-margined sign changes from completeness when Z barely crosses zero, then estimates when fixed-precision phase error overtakes the analytic tolerance.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Certified detected roots need not imply exhaustive detection without a global count",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u18.txt",
+          "unit_bytes": 2004,
+          "unit_id": "pugh1998_depth_u18",
+          "unit_sha256": "5dccf0e68c96844b827849a7707810b4864cd49f6fc4d6fa2d543929c2e07988",
+          "unit_type": "epistemic-limit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The source separates two limitations. Under its explicit idealization of infinite-precision arithmetic and untruncated C(n,z) Taylor series, roots counted on the critical line are genuine, yet local sampling can still miss crossings that remain within the tolerance between nearby zeros. In the actual twenty-digit implementation, input/phase error and accumulation over the main cosine sum grow with t; the quoted crossover near 6.5 million is an assumption-based estimate, not a certified or universal limit.",
+            "nonparaphrase_operation": "The mechanism decomposes reliability into idealized soundness of reported crossings, incompleteness of finite sampling, and eventual finite-precision degradation. Comparing machine-error growth with the analytic tolerance supplies a provisional operating boundary, while this span itself supplies no global completeness repair and extra correction terms do not resolve an undetermined floating-point bound.",
+            "quality_reason": "Accepted after narrowing soundness to infinite precision with untruncated coefficients and marking the crossover as heuristic. Quantitative reuse of the OCR-sensitive exponents and threshold requires scan verification.",
+            "source_support": "The span conditions absolute correctness of counted roots on infinite precision and untruncated Taylor series, then describes potentially undetected shallow crossings. It estimates input representation error as O(10^-20 t), accumulated main-sum error as O(10^-20 t^(3/2)), and—assuming equality with that estimate—matches the conservative tolerance near 6.5x10^6. It notes that the tolerance comes from two of five remainder terms and that no five-term tolerance was determined.",
+            "speculation_status": "The soundness claim is retained only under the source's exact idealization. The finite-precision crossover is labeled a historical implementation-specific estimate, and any Turing-based completeness claim is excluded as prior context."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a source-specific future-work proposal, not a demonstrated algorithm.",
+          "line_end": 2732,
+          "line_start": 2680,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant with one displayed reformulation of the main sum.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies the main cosine sum as the cost center, distinguishes precomputation-amortized multiple evaluation from singleton evaluation, and proposes a target approximation accurate to the formula's own error scale.",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+          "source_page_markers_inside_unit": [
+            62
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Batch acceleration does not automatically accelerate a single Z evaluation",
+          "unit_artifact_relpath": "depth/units/pugh1998_depth_u19.txt",
+          "unit_bytes": 3163,
+          "unit_id": "pugh1998_depth_u19",
+          "unit_sha256": "f0c0a2d594ea7df6da3e2e561a9496a9be4c5404f8700087d786b64b047665f0",
+          "unit_type": "throughput-bottleneck-and-future-route",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Throughput and latency are distinct complexity objectives. An approximation calibrated to the existing analytic error budget could be useful even if it does not recover the main sum to arbitrary precision.",
+            "nonparaphrase_operation": "The complex Dirichlet-sum form separates an easy phase factor from the labor-intensive partial sum, suggesting where an alternative approximation must act.",
+            "quality_reason": "The source identifies the main cosine sum as the cost center, describes precomputation-based batch acceleration, denies a singleton gain, rewrites the target as a complex Dirichlet sum, and proposes matching the existing error scale. No material unsupported claim; the proposed singleton approximation is correctly labeled future work without construction or proof. 'Accuracy need only match the formula tolerance' is strategic language but is explicitly the source's proposed target.",
+            "source_support": "The source identifies sum_{n<=N} n^(-1/2)cos(theta(t)-t log n) as the dominant cost. Odlyzko-style methods split it into direct and approximated parts after precomputation and accelerate batches, but are said not to improve a single evaluation. Rewriting the cosine sum as the real part of e^(i theta(t)) sum_{n<=N}(1/n)^(1/2+it) isolates the target for a future approximation at comparable error scale.",
+            "speculation_status": "The proposed faster singleton method is future work, not a demonstrated algorithm or bound. Batch precomputation gains do not transfer automatically to isolated evaluations. The bottleneck analysis is prose-supported; no construction or proof of the proposed approximation is supplied. The throughput-versus-single-evaluation-latency distinction is a faithful conceptual synthesis. This is a future-work discussion; reported limits and comparison to Odlyzko are historical, not newly verified evidence."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+        "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec"
+      }
+    }
+  ]
+}

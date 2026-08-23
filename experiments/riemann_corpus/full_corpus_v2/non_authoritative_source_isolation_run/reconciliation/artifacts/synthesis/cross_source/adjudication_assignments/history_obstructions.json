@@ -1,0 +1,1844 @@
+{
+  "task": "fresh cross-source synthesis adjudication",
+  "panel_id": "history_obstructions",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/cross_source_synthesis_adjudication.md",
+  "prompt_sha256": "3a3b0c632deb38c2892216040a977cb4e03403623e5dab1171c374d42948c48d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/cross_source/adjudication_batches/history_obstructions.jsonl",
+  "candidate_count": 15,
+  "candidates": [
+    {
+      "candidate": {
+        "claim": "Riemann's prime-counting formula already required the zero terms to be ordered by magnitude because rearrangement can change the value; the later Delsarte-Weil formulation relocates the same prime-zero duality into a distribution evaluated on test functions, where the summation convention, contour decay, and admissible function class become explicit parts of the interface.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The proof burden changes from interpreting one conditionally ordered explicit sum to proving a distributional identity and then establishing a uniform positivity property on a controlled class of tests.",
+        "limits": "The distributional reformulation does not make every raw zero sum absolutely convergent and does not supply Weil positivity or prove RH. The two units support a representation change, not a claim that the later formalism was derived specifically to repair the quoted ordering warning.",
+        "parent_unit_ids": [
+          "riemann1859_wilkins_v2_u06",
+          "perezmarco2017_rh_notes_v2_u13"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_ordered_zero_sum_to_test_functions",
+        "title": "From a conditionally ordered zero sum to a distributional test-function interface"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a material convergence constraint on the explicit formula, not merely notation.",
+          "line_end": 455,
+          "line_start": 420,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The limiting-order statement is prose-recoverable; the displayed paired Li terms need formula checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Specifies pairing and ordering of zero contributions by magnitude, relates that ordering to the limiting vertical contour integral, and warns that arbitrary rearrangement can change the real value.",
+          "source_id": "riemann1859_wilkins",
+          "source_normalized_sha256": "2c7131128e275cd149b7b8923c5f38ffb74c236fe3dd5b4a736dbf81fe6c77a1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The zero sum has a canonical magnitude ordering but is not freely rearrangeable",
+          "unit_artifact_relpath": "depth/units/riemann1859_wilkins_v2_u06.txt",
+          "unit_bytes": 1910,
+          "unit_id": "riemann1859_wilkins_v2_u06",
+          "unit_sha256": "773e323f1ccdb522ddce36d5a9c2812315f2db52311c120bfb645c60467cf576",
+          "unit_type": "conditional-summation-warning",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/riemann1859_wilkins_v2_u06.txt",
+          "source_title": "On the Number of Primes Less Than a Given Magnitude",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The paired zero contribution is meaningful only under the ordering induced by the vertically truncated contour. Increasing contour height corresponds to ordering positive ξ-roots by magnitude, while arbitrary rearrangement can change the resulting real value, so the summation prescription is part of the spectral expansion rather than a dispensable proof convention.",
+            "nonparaphrase_operation": "Extracts a structural consequence of conditional convergence: an unordered formal sum loses information that the contour prescription preserves.",
+            "quality_reason": "Accepted because the ordering mechanism is unambiguous despite formula-sensitive Li arguments and the narrow slice's inherited f notation.",
+            "source_support": "The magnitude ordering, paired Li terms, vertical-contour limit, and explicit rearrangement warning are all stated.",
+            "speculation_status": "No convergence rate or uniqueness beyond this particular prescription is claimed."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_41d6b83f3774608d829beea293682841edc97a418cfe1a197e9b9a3e46b1a23d",
+            "dossier_sha256": "53c606b832885576c9768c6789f07cb6d52ac4fa910d0073c8ad60cdf41c4805"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Groups related interpretations without asserting that any proposed trace formula has been proved for zeta.",
+          "line_end": 1238,
+          "line_start": 1116,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Delsarte distribution is formula-heavy and should be scan-verified before symbolic use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contour integration and test functions produce a distributional prime-zero identity; Weil positivity, Selberg trace analogies, and Connes's proposal show how the same bridge can be recast as spectral or positivity structure.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            21,
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Distributional explicit formulas turn prime-zero duality into trace and positivity criteria",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u13.txt",
+          "unit_bytes": 6669,
+          "unit_id": "perezmarco2017_rh_notes_v2_u13",
+          "unit_sha256": "7e1bae22929ba0b7f12af5bab6a3f3191fac314ed8db5f72ca4921635d96585e",
+          "unit_type": "explicit-formula-and-positivity-framework",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u13.txt",
+          "source_title": "Notes on the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The test function is a perspective selector: the same prime-zero distributional identity yields different observables when probed differently. Prime-power resonance shows the duality has exact arithmetic frequencies, not just a loose spectral metaphor.",
+            "nonparaphrase_operation": "The distributional explicit formula is the central bridge; zeta'/zeta supplies its contour integrand, Fourier transform couples prime logarithms to zero ordinates, and positivity is a proposed criterion on the resulting functional.",
+            "quality_reason": "The Riemann and Landau formulas, contour architecture, Delsarte distribution, Weil positivity criterion and trace/spectral proposals are all reported in the span. The response does not claim a zeta operator or proved Connes trace formula and preserves the test-class qualification for positivity. Prime-power resonance and the named distribution keep the duality analysis mathematically specific.",
+            "source_support": "The unit gives a Riemann explicit formula for sum_{n<=x}Lambda(n), Landau's resonance distinction when x is or is not a prime power, and Cramer's continued zero exponential sum. It explains the standard rectangular-contour computation of zeta'/zeta using residues at zeros, the functional equation, and the Euler product. Delsarte's distributional formula expresses zero masses as Fourier-transformed prime-power masses plus an archimedean distribution. It reports Weil's RH positivity criterion and analogies or proposals involving Selberg, trace formulas, de Branges, and Connes.",
+            "speculation_status": "Trace-formula interpretations do not establish a zeta operator, and Connes's reduction is reported as a proposal rather than a proved trace identity here. Positivity equivalence depends on a suitable test-function class. The Delsarte formula is dense and formula-sensitive. Historical interpretations are clear, but exact distribution normalizations require the scan. Calling test functions perspective selectors is a reasonable interpretation of a distributional formula generating multiple identities. The Delsarte formula is formula-heavy and exact normalization requires the scan."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_1d2789ec08be333bcdb037dff6e3061d99bae8e591ec425750538a92f7fa9fa1",
+            "dossier_sha256": "78f068d380efaf66ebbebfc9cc212c5e46a033869ef57e88397fb0d551ab1c86"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Hardy's Fourier-and-moment sign argument forces infinitely many critical-line zeros but does not exhaust the zeros below a height; Hutchinson and Lehmer closed that gap by matching critical-line sign changes to a global zero count, and the modern count-only design preserves this completeness logic while declining to refine each ordinate beyond what counting needs.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The computational burden moved from producing critical-line existence witnesses, to proving equality between witness and total counts, to minimizing precision and storage without weakening that count equality.",
+        "limits": "Every computational conclusion remains bounded by its certified height. Sign changes alone can miss even-multiplicity zeros, while a total count alone does not locate zeros on the line; the certificate depends on composing both sides with controlled numerical error.",
+        "parent_unit_ids": [
+          "chandrasekharan1953_tifr_lectures_v2_u34",
+          "openalex_w1980116773_d02",
+          "platt_trudgian2021_verification_v2_u03"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_sign_changes_to_complete_counts",
+        "title": "Critical-line witnesses became finite-range certificates only after global counting"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Contains the local inversion hypotheses, differentiation under the integral, moment dominance, and theta-based boundary decay required for Hardy's contradiction.",
+          "line_end": 5931,
+          "line_start": 5757,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "OCR confuses Xi and kernel glyphs, but prose and equation numbering preserve the logical chain; scan-check exact factors.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A proved Fourier inversion criterion recovers the kernel from xi; if xi had only finitely many real zeros, its eventual constant sign would make all high even moments share a sign, forcing monotonic derivatives incompatible with their vanishing at the analytic-strip boundary.",
+          "source_id": "chandrasekharan1953_tifr_lectures",
+          "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+          "source_page_markers_inside_unit": [
+            130,
+            131,
+            132
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fourier inversion and moment signs force infinitely many critical-line zeros",
+          "unit_artifact_relpath": "depth/units/chandrasekharan1953_tifr_lectures_v2_u34.txt",
+          "unit_bytes": 8998,
+          "unit_id": "chandrasekharan1953_tifr_lectures_v2_u34",
+          "unit_sha256": "154a04114c0c2eb0f5e1155ba15a1c20cb41afa6e2d4d9d8921277a7105bd02f",
+          "unit_type": "sign-change proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chandrasekharan1953_tifr_lectures_v2_u34.txt",
+          "source_title": "Lectures on the Riemann Zeta-Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Fourier inversion recovers the theta kernel from Xi, and exponential decay permits repeated differentiation, identifying even derivatives with moments of Xi. If Xi had only finitely many real zeros, eventual constant sign would dominate compact initial contributions in high even moments and produce a stable derivative-sign/monotonicity pattern. The span then proves through theta identities that the kernel and all derivatives vanish at the edge of its analytic strip. Interpretation: moment amplification converts eventual sign into local analytic rigidity. The intended contradiction with boundary vanishing, and thus the explicit infinite-sign-change conclusion, lies beyond this frozen span. Boundary: exact derivative indices and factors require the scan.",
+            "nonparaphrase_operation": "Exposes the tail-sign to moments to derivatives chain and marks the precise unit-boundary gap.",
+            "quality_reason": "Accepted after revision: the span has a substantive auditable mechanism without overclaiming its endpoint.",
+            "source_support": "Fourier inversion, differentiation, moment formulas, tail dominance, stated derivative monotonicity, and boundary vanishing are present; the last contradiction is not.",
+            "speculation_status": "The final contradiction and infinitely-many-zero conclusion are labeled inferred continuation, not source fact here."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_a8b055442c3fc5ca045684a7537a7581a542577b9ce0217f2bb7b271cded5be1",
+            "dossier_sha256": "1691daaa38d918c198d33715f9fd97004eed4e5410fb76a8188a02c6400ea3c4"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes why the Euler-Maclaurin evaluation became computationally expensive at increasing height.",
+          "line_end": 80,
+          "line_start": 26,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Certification logic is prose-supported; Gram-point and Euler-Maclaurin formulas and remainder notation need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Gram-law sign changes locate critical-line zeros, but failures show interval-by-interval sign rules are insufficient. Backlund's rectangle count supplies the independent total, so finding at least that many critical-line zeros excludes additional off-line roots in the bounded region.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Global zero counting closes the gap left by critical-line sign changes",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d02.txt",
+          "unit_bytes": 3306,
+          "unit_id": "openalex_w1980116773_d02",
+          "unit_sha256": "483f9e5357605b65382f899409cfa7e6e145b87c6c45936cfa5b727617a7e73c",
+          "unit_type": "count-versus-location certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d02.txt",
+          "source_title": "On the roots of the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Gram's one-zero-per-interval rule fails, while Hutchinson found at least 138 critical-line zeros by sign changes and Backlund's method gave exactly 138 zeros in the stated rectangle. Interpretation: a location lower bound becomes exhaustive only when it matches an independent total count; equality leaves no room for additional off-line zeros inside that rectangle. The gain is completeness in a bounded region, whereas Gram-interval signs alone neither certify the total nor extend beyond the rectangle. Backlund's counting mechanism and exact OCR-damaged formulas remain outside the recoverable evidence.",
+            "nonparaphrase_operation": "Combines a critical-line lower bound with an independent global total to close the completeness gap.",
+            "quality_reason": "Accepted because it preserves the two logically distinct counts and does not invent details of Backlund's method.",
+            "source_support": "The span states Gram's law and its failures, the at-least-138 sign-change count, the exactly-138 rectangle count, and the bounded exclusion of off-line roots; it also describes the order-height Euler–Maclaurin burden.",
+            "speculation_status": "None."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+            "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the carried unit to complete the optimization that begins at line 82.",
+          "line_end": 97,
+          "line_start": 77,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only; the reported sampling success rate is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replaces full high-precision zero isolation with sufficient lattice sampling and one-bit sign-change counts, relying on Turing completeness for the global certificate and avoiding unnecessary zooming and storage.",
+          "source_id": "platt_trudgian2021_verification",
+          "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count-only certification saves storage and precision without weakening completeness",
+          "unit_artifact_relpath": "depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "unit_bytes": 1448,
+          "unit_id": "platt_trudgian2021_verification_v2_u03",
+          "unit_sha256": "2f5a9167a55ae6252eb1c721fd2de2db6afc57fc44cb9cca467f1df3704b5e80",
+          "unit_type": "computational tradeoff",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The implementation changes its retained object from a high-precision zero database to the minimum local information needed for counting: after detecting a sign change, it does not zoom in with Shannon–Whittaker–Nyquist machinery or store a refined zero. Arb also reduces memory relative to MPFI, and the default lattice empirically isolates nearly all zeros directly. This span supports the efficiency tradeoff only; it does not contain the surrounding global completeness argument, so sign changes alone must not be described here as a complete certificate.",
+            "nonparaphrase_operation": "It identifies which witness detail the implementation discards for its count-oriented objective while explicitly separating that optimization from an absent global completeness proof.",
+            "quality_reason": "Accepted after revision because the computational design insight remains substantive once the imported certification claim is removed.",
+            "source_support": "The artifact states the MPFI-to-Arb switch, approximate memory benefit, omission of high-precision isolation and storage, sign-change counting, and empirical sampling success rate. It begins after the certification setup and overlaps a footnote.",
+            "speculation_status": "No speculation; Turing-style completeness is treated as unavailable outside-span context and is not used to justify the unit."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_82664c80fe0ad0bffd1db6c0e56c3a583b2dec706594a951a52fab9acf5c3b90",
+            "dossier_sha256": "85da34a9f43fedd9446b875f1dc463c4b89a9d2516b6e44469e6a3653b5f44fa"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The Gram test supplied cheap critical-line intervals, but empty intervals were compensated by extra zeros nearby and failures clustered; Lehmer therefore used an explicit remainder bound to route ambiguous or failed intervals to subdivision and a sharper formula, while modern verification stops refining a zero as soon as a rigorous sign-change count is secured.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "A presumed one-zero-per-cell rule was replaced by bounded-error screening plus targeted fallback, and later by a certificate objective that spends precision on completeness rather than on uniformly accurate ordinates.",
+        "limits": "The modern count-only unit does not claim to reuse Lehmer's exact Gram-point screening algorithm. Local compensation patterns are empirical failure taxonomy, not a theorem that every future Gram failure is nearby, so an independent global count remains necessary.",
+        "parent_unit_ids": [
+          "moree2018_computational_history_v2_u13",
+          "openalex_w1980116773_d04",
+          "openalex_w1980116773_d05",
+          "platt_trudgian2021_verification_v2_u03"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_gram_failures_to_adaptive_audit",
+        "title": "Failures of Gram's local rule forced an exception-driven audit architecture"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A sign change proves an odd number of roots in the interval, while absence of a sign change alone does not prove no root.",
+          "line_end": 586,
+          "line_start": 551,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Definitions of Z(t), theta(t), and its asymptotic are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Phase rotation makes critical-line zeta real, asymptotic phase monotonicity defines Gram points, and endpoint signs bracket zeros; empty intervals paired with neighboring double intervals show how the rule can fail locally without defeating computation.",
+          "source_id": "moree2018_computational_history",
+          "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Hardy Z-function turns critical zeros into real sign changes sampled at Gram points",
+          "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u13.txt",
+          "unit_bytes": 2760,
+          "unit_id": "moree2018_computational_history_v2_u13",
+          "unit_sha256": "8b81839274972d15e2ccb5b022062d0bcaa7b10b7bd291ea7ee2430451ddc96f",
+          "unit_type": "sign-change zero localization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u13.txt",
+          "source_title": "A Computational History of Prime Numbers and Riemann Zeros",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A phase normalization turns a complex root-finding problem into real sign geometry, but the convenient sampling rule is only a detector, not a completeness theorem.",
+            "nonparaphrase_operation": "The gamma-derived phase theta bridges zeta to Hardy Z, preserving critical zeros while discarding irrelevant complex phase; Gram points align the phase for sign tests.",
+            "quality_reason": "The source defines Hardy Z and theta, proves Z is real with the same critical zeros, defines Gram points, explains the sign test and gives empty/double interval failures.",
+            "source_support": "The source defines real-valued Z(t)=e^{i theta(t)}zeta(1/2+it), whose zeros are critical zeros, defines Gram points by theta(g_n)=n pi, and explains when endpoint signs force a zero in a Gram interval; Hutchinson's empty and double neighboring intervals illustrate failures of the simplest pattern.",
+            "speculation_status": "Gram's test can fail through empty or multiple-zero intervals, and sign changes alone neither find even-multiplicity zeros nor certify all strip zeros. The Z and theta formulas and asymptotic constants should be PDF-checked. Phase normalization turning complex root localization into real sign geometry is directly supported. Definitions and asymptotic constants require formula checking."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_065b29a5a4b7e51f865e9a9b5b0513eab2fb69db35f52784636d5d02936fbf0c",
+            "dossier_sha256": "0be11683ac0e8053245b1784efa4e5ec48bc871789597863db158d257361e21e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a reusable staged-verification design rather than a mere list of computed zeros.",
+          "line_end": 176,
+          "line_start": 140,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Decision logic is clear; the omitted displayed evaluation at lines 149-154 and exact error thresholds require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The SWAC evaluates an approximate real-valued critical-line function at Gram points, compares its magnitude with a rigorous remainder estimate, flags uncertain or definite law failures, then subdivides neighboring intervals; only unresolved low-amplitude cases trigger a more expensive method.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Bounded-error screening sends only ambiguous Gram intervals to finer computation",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d04.txt",
+          "unit_bytes": 2045,
+          "unit_id": "openalex_w1980116773_d04",
+          "unit_sha256": "199e4bf8c2e57bc166d8646d6b0916f57575fb88a6600e394e3fdac566e7e6cf",
+          "unit_type": "adaptive computational audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d04.txt",
+          "source_title": "On the roots of the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the SWAC evaluates an approximation at Gram points, compares small magnitudes with a remainder estimate, separately flags doubtful signs and proved Gram-law failures, subdivides the two neighboring intervals, and sends the residual ambiguous case to a slower calculation. Interpretation: the approximate value together with its error allowance is a routing certificate: most signs are settled cheaply, while uncertainty concentrates work in the combined neighborhood where a missing root may be compensated next door. If magnitude does not dominate the error, the fast screen cannot determine the local root count and must defer. The omitted evaluation and thresholds are not recoverable from this text layer.",
+            "nonparaphrase_operation": "Turns rigorous approximation uncertainty into an adaptive computational triage rule.",
+            "quality_reason": "Accepted because it distinguishes doubt, proved failure, neighborhood refinement, and resolution rather than treating every anomaly alike.",
+            "source_support": "The span describes both machine flags, eightfold subdivision of adjacent intervals, local compensation, the unresolved low maximum, and the decision to use the smaller-remainder formula.",
+            "speculation_status": "None."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+            "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Frequency rises to roughly 814 flagged failures among the first 10,000 intervals, with a small uncertain subset.",
+          "line_end": 231,
+          "line_start": 182,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Patterns are prose- and table-supported, but several subscripts and interval labels are OCR-degraded and should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The census distinguishes adjacent compensations, two-interval displacements, uncertain endpoint signs, direction of displacement, and multi-failure clusters. It demonstrates why robust verification must count across neighborhoods rather than assume one zero per Gram interval.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gram-law failures are displaced and clustered, not evidence of missing critical-line zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d05.txt",
+          "unit_bytes": 3150,
+          "unit_id": "openalex_w1980116773_d05",
+          "unit_sha256": "17a7ae55b9913a15c36928977a3609a08664cd20fdc6f2aa25b480e5aaf2962e",
+          "unit_type": "computational failure taxonomy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d05.txt",
+          "source_title": "On the roots of the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: in this finite census most empty Gram intervals have an extra root in an adjacent interval, fourteen have a displacement one interval farther, shifts occur in both directions, eighteen endpoint signs remain doubtful, and failures sometimes cluster. Interpretation: Gram intervals are useful sampling cells but not reliable containers for individual zeros; the observed occupancy anomalies are often compensated only after nearby intervals are considered. This is a pattern in the reported first 10,000 intervals, not a theorem that a fixed neighborhood always suffices, and neighborhood counts alone do not exclude off-line zeros without an independent total count.",
+            "nonparaphrase_operation": "Reframes interval-level failures as finite neighborhood occupancy patterns while separating that diagnosis from exhaustive zero certification.",
+            "quality_reason": "Accepted after revision because the universal-sounding conservation claim has been removed and the independent-count obligation is explicit.",
+            "source_support": "The source gives the displacement taxonomy, direction counts, uncertainty count, frequency table, and explicit clustered occupancy patterns.",
+            "speculation_status": "No general conservation law is asserted; the interpretation is limited to the reported census."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+            "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the carried unit to complete the optimization that begins at line 82.",
+          "line_end": 97,
+          "line_start": 77,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only; the reported sampling success rate is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replaces full high-precision zero isolation with sufficient lattice sampling and one-bit sign-change counts, relying on Turing completeness for the global certificate and avoiding unnecessary zooming and storage.",
+          "source_id": "platt_trudgian2021_verification",
+          "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count-only certification saves storage and precision without weakening completeness",
+          "unit_artifact_relpath": "depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "unit_bytes": 1448,
+          "unit_id": "platt_trudgian2021_verification_v2_u03",
+          "unit_sha256": "2f5a9167a55ae6252eb1c721fd2de2db6afc57fc44cb9cca467f1df3704b5e80",
+          "unit_type": "computational tradeoff",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The implementation changes its retained object from a high-precision zero database to the minimum local information needed for counting: after detecting a sign change, it does not zoom in with Shannon–Whittaker–Nyquist machinery or store a refined zero. Arb also reduces memory relative to MPFI, and the default lattice empirically isolates nearly all zeros directly. This span supports the efficiency tradeoff only; it does not contain the surrounding global completeness argument, so sign changes alone must not be described here as a complete certificate.",
+            "nonparaphrase_operation": "It identifies which witness detail the implementation discards for its count-oriented objective while explicitly separating that optimization from an absent global completeness proof.",
+            "quality_reason": "Accepted after revision because the computational design insight remains substantive once the imported certification claim is removed.",
+            "source_support": "The artifact states the MPFI-to-Arb switch, approximate memory benefit, omission of high-precision isolation and storage, sign-change counting, and empirical sampling success rate. It begins after the certification setup and overlaps a footnote.",
+            "speculation_status": "No speculation; Turing-style completeness is treated as unavailable outside-span context and is not used to justify the unit."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_82664c80fe0ad0bffd1db6c0e56c3a583b2dec706594a951a52fab9acf5c3b90",
+            "dossier_sha256": "85da34a9f43fedd9446b875f1dc463c4b89a9d2516b6e44469e6a3653b5f44fa"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The 1990 certificate searched for a nonreal zero of a Jensen polynomial for a chosen heat parameter, but its required degree and precision exploded as the parameter approached zero; the 1993 Lehmer-pair certificate instead used a consecutive pair of zeros of H0 whose squared gap is small relative to a rigorously bounded inverse-square interaction with all other zeros.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The lower-bound program changed its witness from high-degree global root geometry under heat deformation to a local close pair normalized by a global interaction term, making a spectacular small gap useful only after the surrounding-zero burden was certified.",
+        "limits": "A close gap by itself is not a Lehmer certificate, and the pair method still requires consecutiveness and tail bounds over all other zeros. Both methods yield lower bounds for Lambda; neither supplies the RH-equivalent upper bound Lambda <= 0.",
+        "parent_unit_ids": [
+          "openalex_w2146492295_v2_u01",
+          "openalex_w2146492295_v2_u03",
+          "cosv93_u03_lehmer_criterion_and_pair_bound",
+          "cosv93_u11_combined_lehmer_certificate"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_jensen_to_lehmer_witness",
+        "title": "The de Bruijn-Newman lower-bound witness shifted from a global polynomial to a normalized zero pair"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The report relies heavily on a cited predecessor for the criterion and several analytic facts; it is not a self-contained derivation of the de Bruijn-Newman theory.",
+          "line_end": 136,
+          "line_start": 68,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The defining integral for H_lambda is lost or unreadable at line 72 and the Jensen formulas are OCR-degraded; the prose supports the criterion and direction of implication, but exact normalizations require the scan or cited source.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the real-zero transition parameter for the entire family H_lambda, records that RH would force the threshold at most zero, and states the constructive criterion that a nonreal zero of some associated Jensen polynomial at lambda forces lambda below the threshold.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A nonreal Jensen zero certifies a lower bound for the de Bruijn-Newman constant",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u01.txt",
+          "unit_bytes": 2990,
+          "unit_id": "openalex_w2146492295_v2_u01",
+          "unit_sha256": "76b5d81dbd6dec2cf1d3ba3e67c7bd8c298d606ee3a02c8d50ef3c0f4e74812d",
+          "unit_type": "criterion and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u01.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the note defines a threshold Λ separating parameters for which H_λ has only real zeros from those with nonreal zeros, records that RH would imply Λ≤0, and cites [2] for the implication that a nonreal zero of a Jensen polynomial G_m(·;λ) gives λ<Λ. Conceptual interpretation: passing from H_λ through its moments to a finite Jensen polynomial changes a global real-rootedness question into an existential obstruction search: one valid nonreal root suffices, whereas failure to find one proves nothing. The remaining burden is reliable nonreal-root certification, not merely numerical approximation. Uncertainty: the defining integral and exact Jensen normalization are OCR-damaged, and the criterion is cited rather than derived in this span.",
+            "nonparaphrase_operation": "Identifies a change in proof burden—from global real-rootedness to a finite existential obstruction—and states what a negative search cannot establish.",
+            "quality_reason": "Accepted at mechanism level because the finite-obstruction interpretation is specific and supported; exact formulas and any derivation of the cited criterion are deliberately excluded because of missing/OCR-damaged evidence.",
+            "source_support": "The threshold, the RH implication, the moment/Jensen construction, and the one-way nonreal-zero criterion are explicit in lines 68–136; the note also says it relies heavily on [2].",
+            "speculation_status": "No new conjecture is added. Newman's Λ≥0 claim remains a source-attributed conjecture, while RH⇒Λ≤0 and the Jensen implication are reported source claims with the latter attributed to [2]."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b9c2239b8a83eb428136b8de747984dee6d69dd6522a91074cc84a9fb90b9479",
+            "dossier_sha256": "286deaecf58d93a993c71f7f002a0a3fe24ccc474f84040570cb0bd4e4fb23c9"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This supports A>-5 and the report's warning that further improvement with the same algorithm would be formidable; it does not imply an asymptotic law for witness degrees.",
+          "line_end": 235,
+          "line_start": 196,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The table is readable despite OCR noise; decimal root values and the precision labels should be verified against the scan before exact quotation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reports minimal degrees with nonreal roots across lambda=-50 through -5, culminating in degree 406 with 404 real roots at -5 using 250 digits, while the imaginary part of the exhibited conjugate pair shrinks toward zero.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Witness degree and required precision explode as lambda approaches zero",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u03.txt",
+          "unit_bytes": 2504,
+          "unit_id": "openalex_w2146492295_v2_u03",
+          "unit_sha256": "25fa26b496e6d9c8c406bb5a2efb0d4308f216b1288316981a351a4590591dd0",
+          "unit_type": "computational evidence and bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u03.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the finite table reports minimal obstructing Jensen degrees rising from 16 at λ=-50 to 41 at -20, 97 at -10, and 406 at -5; each listed polynomial has degree minus two real roots, the -5 run used 250-digit working precision, and the displayed conjugate pair moves closer to the real axis as λ increases. Conceptual interpretation: this is a sharp finite-sample escalation for this particular obstruction-search algorithm—higher-degree polynomials and less-separated nonreal roots accompany the approach toward zero. The Sturm count supplies the reported nonreal-root conclusion; the tabulated complex pair is an additional approximation. The data support Λ>-5 and a practical warning, not a phase transition, asymptotic degree law, universal hardness claim, or certified error bound equal to the working precision.",
+            "nonparaphrase_operation": "Extracts an algorithm-specific difficulty indicator while sharply limiting what a finite computational table licenses.",
+            "quality_reason": "Accepted after replacing rhetorical phase-change language with a bounded finite-table inference and preserving the hierarchy between Sturm counts, approximated roots, and working precision.",
+            "source_support": "Lines 196–235 state the reported pattern, degree-minus-two counts, table entries, working precisions, and shrinking displayed imaginary parts.",
+            "speculation_status": "The source's suggestion that improvement by the same algorithm is formidable is empirical. No asymptotic or universal computational conjecture is asserted here."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b9c2239b8a83eb428136b8de747984dee6d69dd6522a91074cc84a9fb90b9479",
+            "dossier_sha256": "286deaecf58d93a993c71f7f002a0a3fe24ccc474f84040570cb0bd4e4fb23c9"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The theorem is imported from the distinct 1994 Csordas-Smith-Varga work and is the engine applied here; no part of its longer proof is inferred into this source.",
+          "line_end": 178,
+          "line_start": 130,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Verify index exclusions, both denominators, convergence, lambda_k formula, signs, strictness, and the inequality lambda_k <= Lambda against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines Delta_k, the primed global reciprocal-square interaction g_k(0), and the 4/5 Lehmer criterion, then states the sign split and explicit pair-specific lambda_k guaranteed not to exceed the de Bruijn-Newman boundary.",
+          "source_id": "openalex_w1224069186",
+          "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A close gap qualifies only after normalization by all other zeros, then yields a lower bound for Lambda",
+          "unit_artifact_relpath": "depth/units/cosv93_u03_lehmer_criterion_and_pair_bound.txt",
+          "unit_bytes": 2115,
+          "unit_id": "cosv93_u03_lehmer_criterion_and_pair_bound",
+          "unit_sha256": "e796effabe6a90b5b78992f2a4bdbc8266d987f17a2b7297e577a740c1f1dc79",
+          "unit_type": "definition-and-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/cosv93_u03_lehmer_criterion_and_pair_bound.txt",
+          "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The criterion normalizes an exceptional local gap by its global environment, preventing raw closeness from being mistaken for dynamical significance. The pair-specific lambda_k is a certificate that compresses infinite zero geometry into a scalar lower bound.",
+            "nonparaphrase_operation": "The bridge object is g_k(0): it couples two adjacent zeros to the full signed zero configuration and connects a static H_0 snapshot to the heat-flow threshold.",
+            "quality_reason": "The span defines the consecutive-pair gap, the primed all-other-zero interaction, convergence, the strict Delta_k^2 g_k(0)<4/5 criterion, the g_k<=0 branch, and the positive-g_k scalar lambda_k with lambda_k<=Lambda. No proof of the imported theorem is attributed to this source, and the candidate does not reconstruct the OCR-damaged lambda_k formula. The word 'field' is metaphorical but is immediately grounded in the explicit reciprocal-square interaction over every other signed zero.",
+            "source_support": "For consecutive simple positive zeros, the span defines the gap Delta_k and an all-other-zero interaction g_k(0), whose convergence follows from reciprocal-square summability. A Lehmer pair satisfies Delta_k squared times g_k(0) below 4/5; the imported theorem treats nonpositive g_k separately and, for positive g_k, defines lambda_k with lambda_k at most Lambda.",
+            "speculation_status": "This unit imports the theorem from another work and does not prove its dynamics. A small Delta_k alone is insufficient, and a computed g_k must include certified control of the infinite tail. Index exclusions, both reciprocal-square denominators, the 4/5 condition, signs, strict inequalities, and the exact lambda_k formula require PDF verification. Describing the criterion as a local-gap versus global-environment normalization and lambda_k as a scalar certificate is a direct structural reading of the displayed definitions and theorem. Equation (1.13) is visibly damaged in extraction, especially the 5/4 factor and 4/5 exponent; the candidate safely reports only the sign split, inequalities, and role while requiring PDF verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_10880e273da2b706bad58f0586e390d38da0f87927b4b3c5d253f10fb7dcf965",
+            "dossier_sha256": "f81b36445778fd2074a72a1d94c2c6609a960c83ef2ffb206b99589ae5de708a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The margin is large, but the result is still a conditional branch of the proof under Lambda<0; if Lambda>=0 the final lower bound is already trivial.",
+          "line_end": 463,
+          "line_start": 444,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Verify g_K<24058, Delta_K, their product, exponent, and comparison with 4/5 against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Adds the local-window, distant-block, and outer-tail bounds to enclose g_K(0), combines that with the measured gap, and verifies Delta_K squared times g_K(0) is far below 4/5.",
+          "source_id": "openalex_w1224069186",
+          "source_normalized_sha256": "6f717a9199a226596f4f56f8792b60ff664d7c51def7d02fb7f5218bdc52bfa9",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Three upward-rounded bounds certify the selected pair as Lehmer",
+          "unit_artifact_relpath": "depth/units/cosv93_u11_combined_lehmer_certificate.txt",
+          "unit_bytes": 820,
+          "unit_id": "cosv93_u11_combined_lehmer_certificate",
+          "unit_sha256": "ae5d66d4953e7b2e89848dc36d1bbb3b7b5f249d3c0b70e714c21084155af668",
+          "unit_type": "computational-certification-closure",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/cosv93_u11_combined_lehmer_certificate.txt",
+          "source_title": "A NEW LEHMER PAIR OF ZEROS AND A NEW LOWER BOUND FOR THE DE BRUIJN-NEWMAN CONSTANT",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is compositional certification: separately auditable upper bounds are added, then tested against a dimensionless threshold. The normalized product reveals why a spectacularly small gap can tolerate crude environmental estimates.",
+            "nonparaphrase_operation": "The scalar g_K enclosure bridges the three evidence types to the Lehmer definition; upward-rounded components preserve the logical direction through numerical composition.",
+            "quality_reason": "The span adds the three prior one-sided bounds to obtain g_K(0)<24058, computes Delta_K from the ordinate gap, verifies Delta_K^2 g_K(0)<1.134321...x10^-3<4/5, and concludes the pair satisfies Definition 1.1. The candidate does not infer RH, Lambda's sign, or global optimality from the Lehmer certificate. The 'three evidence types' wording is abstract, but the scalar addition, normalized product, and preserved upper-bound direction provide the required non-paraphrase mechanism.",
+            "source_support": "The local, distant-block, and outer-tail bounds give g_K(0)<24058. The measured ordinate gap gives Delta_K, and the product Delta_K squared times g_K(0) is bounded by about 1.134321 times 10^-3, below 4/5, so the pair satisfies Definition 1.1.",
+            "speculation_status": "The conclusion is that this pair is Lehmer under the stated proof branch, not that RH holds or that the pair is globally best. A wrong gap scale or any non-upward component would invalidate the certificate. The combined bound, Delta_K value, exponent, product, and comparison with 4/5 should be verified against the corrected PDF. Calling this compositional certification and observing that the large numerical margin tolerates coarse component bounds are faithful consequences of the displayed addition and threshold comparison. The exponent and decimal typography are formula-sensitive; the candidate identifies the exact quantities needing corrected-PDF verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_10880e273da2b706bad58f0586e390d38da0f87927b4b3c5d253f10fb7dcf965",
+            "dossier_sha256": "f81b36445778fd2074a72a1d94c2c6609a960c83ef2ffb206b99589ae5de708a"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The 1994 route would force Lambda >= 0 from an infinite family of certified Lehmer pairs with vanishing gaps, whereas the 2020 route assumes Lambda < 0, derives that almost all heat-flow zeros must approach a local lattice, and contradicts the known positive proportion of zeta gaps strictly below mean spacing.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The decisive witness changed from locating infinitely many exceptional close pairs one by one to proving that the negative-Lambda dynamics would suppress a population-level spacing fluctuation that is already known to occur.",
+        "limits": "The two arguments use different gap hypotheses and are not interchangeable: an arbitrary small gap need not be a Lehmer pair, and the Rodgers-Tao contradiction uses the consequences of the assumption Lambda < 0 together with external spacing results. Lambda >= 0 alone does not prove RH.",
+        "parent_unit_ids": [
+          "csv94_u14_infinite_pair_limit",
+          "rodgers_tao2020_v2_u18"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_special_pairs_to_gap_distribution",
+        "title": "Newman's lower bound escaped the search for exceptional pairs through gap distribution"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This proves only the conditional corollary; the source does not establish infinitely many Lehmer pairs.",
+          "line_end": 791,
+          "line_start": 770,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Check t_i definition, monotonicity formula, limiting constant, and all indices/signs in (3.8)-(3.9) against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reparameterizes the Lehmer inequality, proves the pair-specific lower-bound expression tends to zero exactly when the squared gap does, and combines infinitely many such lower bounds to derive Lambda at least zero.",
+          "source_id": "openalex_w2080252578",
+          "source_normalized_sha256": "fabf574e671488bd7a1a6ef630b6f0e2928bd89a73852342d131d8aebaa88e78",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The pair formula is asymptotically controlled by gap squared, so vanishing certified gaps drive bounds to zero",
+          "unit_artifact_relpath": "depth/units/csv94_u14_infinite_pair_limit.txt",
+          "unit_bytes": 696,
+          "unit_id": "csv94_u14_infinite_pair_limit",
+          "unit_sha256": "32359211c445d4bb3555399497134d43bbe696a331393357c638ca59536384c3",
+          "unit_type": "limit-argument-and-conditional-consequence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/csv94_u14_infinite_pair_limit.txt",
+          "source_title": "Lehmer pairs of zeros, the de Bruijn-Newman constant ?, and the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reparameterization separates a vanishing geometric scale from a uniformly controlled environmental correction. This makes the limiting mechanism transparent without claiming the environment disappears from finite certification.",
+            "nonparaphrase_operation": "The dimensionless Lehmer parameter bridges heterogeneous pairs to one compact domain, and monotonicity transfers the gap limit to the phase-boundary bounds.",
+            "quality_reason": "The proof introduces a dimensionless parameter in (0,1), rewrites the pair-specific bound as gap squared times a monotone controlled factor, proves equivalence of the two limits, and combines all pair bounds to conclude Lambda is at least zero. The candidate explicitly preserves the infinite certified-pair hypothesis and does not claim such a family exists. No material unsupported claim is present; the stated if-and-only-if limit is in the span. The 'bridge' phrasing is modestly generic but the dimensionless parameter and monotonic limit transfer make it specific.",
+            "source_support": "The proof reparameterizes the normalized product Delta_k squared g_k(0) by a variable in (0,1), rewrites lambda_k as the gap squared times a monotone bounded factor, and concludes lambda_{k_i} tends to zero if and only if the squared gaps do. Since every lambda_{k_i} is at most Lambda, the infinite-family hypothesis gives Lambda at least zero.",
+            "speculation_status": "The result is entirely conditional on infinitely many certified Lehmer pairs with the stated limit; the source does not establish such a family. The reparameterization, monotone function, constants, inequality signs, and index notation are OCR-degraded and must be checked against the scan. The stated equivalence of limits is the reliable prose-level result. Separating the vanishing geometric scale from a uniformly controlled environmental correction is an accurate conceptual interpretation of the reparameterization. Calling the compact parameter domain a way to compare heterogeneous pairs is a reasonable abstraction of the proof. The parameter definition, monotone function, constants, signs, and indices are OCR-degraded; only the prose-visible limit argument is safe without the scan."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0c453c69d60c0eea40fdd6f87092ebe7e129477417c483866713003fa96683f5",
+            "dossier_sha256": "1030792b0620fa523251b9a9184c8fbed51f3900f933a98d180a0e81a946c647"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This closes the contradiction under Lambda<0 and therefore proves non-negativity.",
+          "line_end": 3271,
+          "line_start": 3223,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The prose and logical contradiction are clear; normalization constants are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Turns vanishing average convex spacing defect into normalized consecutive gaps converging to one for almost every index, then contradicts an established positive proportion of gaps below any fixed admissible fraction of the mean.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Near-lattice energy contradicts a positive proportion of small zeta gaps",
+          "unit_artifact_relpath": "depth/units/rodgers_tao2020_v2_u18.txt",
+          "unit_bytes": 3078,
+          "unit_id": "rodgers_tao2020_v2_u18",
+          "unit_sha256": "bb647df04cbc16e91a7ab8a82a4b888ae48708776e9db97fb8c2e90e548d80e8",
+          "unit_type": "terminal-contradiction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rodgers_tao2020_v2_u18.txt",
+          "source_title": "The De Bruijn-Newman constant is non-negative",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Small time-zero renormalized energy bounds the sum of V over consecutive normalized gaps. Nonnegativity plus Markov's inequality forces a 1-o(1) fraction of these ratios toward one, but the cited theorem of Conrey and collaborators supplies a positive proportion of gaps below a fixed fraction of mean spacing under the relevant hypothesis, contradicting the assumed negative Λ.",
+            "nonparaphrase_operation": "Converts aggregate convex energy into a typical-gap rigidity statement and contrasts that deterministic consequence with an external proved abundance of smaller gaps.",
+            "quality_reason": "Accepted because the terminal contradiction is complete relative to its cited input and avoids empirical wording; mean-spacing constants and index windows are not repaired.",
+            "source_support": "The consecutive-gap energy inequality, Markov step, conversion through V, relation to zeta-zero ordinates, and cited positive-proportion small-gap theorem are explicit.",
+            "speculation_status": "Montgomery's pair-correlation implication is discussed, but the usable written theorem is specifically attributed to Conrey et al.; this span does not reprove it."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_09a93da01136a6e23b8407dbcf034e0a98e973ce697ae25aee6426576f68b324",
+            "dossier_sha256": "91188f1f0c4774c4fbf82f0c2825e3ca51c1aeeea80382dea612d152d9ab3d9f"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The classical numerical certificate compares the total zero count with critical-line sign changes to prove RH only below a height H; the 2021 computation reuses such an exact height as an input to a separate heat-flow theorem, where exceeding 2.51e12 yields the unconditional upper bound Lambda <= 0.2.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "Finite verification acquired a second role: besides enlarging the checked RH range, its precise endpoint now discharges a threshold assumption in a global de Bruijn-Newman estimate.",
+        "limits": "The transfer gives only the stated upper bound on Lambda, not Lambda <= 0 or RH, and its numerical value depends on the external threshold table. Selected high zeros or an uncertified record count would not satisfy the required finite-height premise.",
+        "parent_unit_ids": [
+          "b25_bombieri2000_u05",
+          "platt_trudgian2021_verification_v2_u05"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_verified_height_to_heat_bound",
+        "title": "A finite RH certificate became an input threshold for a heat-flow bound"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Certification is finite in height; large verified ranges and spacing agreement are evidence, not global proof.",
+          "line_end": 311,
+          "line_start": 259,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; the contour count and exact integer-rounding condition are essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Gives a finite-range proof protocol: compute the argument-principle zero count exactly, detect real xi sign changes, and conclude that the counted zeros are simple and on the line when the totals agree.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count all zeros, then match critical-line sign changes",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u05.txt",
+          "unit_bytes": 3514,
+          "unit_id": "b25_bombieri2000_u05",
+          "unit_sha256": "f66bfd19ee66d18e3c0215cba733b6522372896a6fb19f4aa2eccb371fa5ba2d",
+          "unit_type": "computational certification logic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u05.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is certificate composition: one method supplies exhaustive cardinality and another supplies witnesses with the desired property. Their agreement upgrades numerical detection to a finite-range proof.",
+            "nonparaphrase_operation": "The argument principle turns a two-dimensional zero set into an integer contour invariant, and ξ turns critical-line zeros into real sign changes. Exact integer rounding bridges numerical evaluation to a certified count only when the numerical error is controlled.",
+            "quality_reason": "The span explicitly combines an argument-principle total zero count with critical-line sign changes of real continuous xi and states that equality certifies all counted zeros as simple and on the line. The output correctly limits the certificate to a finite height and distinguishes spacing evidence from certification.",
+            "source_support": "The contour integral of ζ′/ζ gives the total number N(T) of zeros in a prescribed rectangle, adjusted for the pole. Since ξ is continuous and real on the real t-axis, sign changes locate odd-order zeros there; if their number equals N(T), every zero in the region is accounted for and is simple and on the critical line.",
+            "speculation_status": "The certificate is bounded by height and cannot imply global RH. A sign-change list without an independent total count can miss even-multiplicity or off-line zeros, while spacing agreement is additional evidence rather than certification. Historical verified heights and counts are source-era figures. The span asserts arbitrary-precision computation and rounding but does not give a modern interval-arithmetic implementation. 'Certificate composition' accurately names the non-paraphrase operation of matching an exhaustive multiplicity count to distinct sign-change witnesses. The source asserts arbitrary-precision computation and integer rounding but supplies no interval-error implementation; the output preserves that limitation and treats historical heights as source-era facts."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source calls the improvement mild and notes that the next published threshold lies above the achieved height.",
+          "line_end": 224,
+          "line_start": 203,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The heat-kernel formula is dense, but the definition, equivalence, threshold, and corollary are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the heat-flow family and constant, distinguishes RH's equivalent upper sign from the proved lower sign, and plugs the new verified height into a prior threshold calculation to improve the unconditional upper bound to 0.2.",
+          "source_id": "platt_trudgian2021_verification",
+          "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A verified-height threshold yields an unconditional de Bruijn–Newman bound",
+          "unit_artifact_relpath": "depth/units/platt_trudgian2021_verification_v2_u05.txt",
+          "unit_bytes": 1563,
+          "unit_id": "platt_trudgian2021_verification_v2_u05",
+          "unit_sha256": "57e14b7cc28e050db31fce77a4b7cdefa8f17e33f9f6be87550b7581fda285ff",
+          "unit_type": "threshold transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u05.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A finite verified-height result becomes an unconditional global bound only through a previously proved threshold theorem for the de Bruijn–Newman heat-flow family. The source defines Lambda, distinguishes RH's equivalent upper sign Lambda<=0 from the proved lower sign Lambda>=0, and inserts the achieved height into a published threshold to obtain Lambda<=0.2. The next threshold is not reached, so neither Lambda<0.19 nor RH is licensed.",
+            "nonparaphrase_operation": "It separates a finite computational premise from the analytic transfer theorem and calculates the exact epistemic reach of their composition.",
+            "quality_reason": "Accepted because it preserves the concrete threshold mechanism, sign discipline, and unattained next claim.",
+            "source_support": "The span defines H_t and Lambda, states both logical signs, cites the threshold above 2.51e12 and Corollary 2, and notes that the next tabulated height exceeds the computation. The heat-kernel display is dense but the logic is clear.",
+            "speculation_status": "No speculation; the improvement is explicitly mild and is not promoted to Lambda<=0 or RH."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_82664c80fe0ad0bffd1db6c0e56c3a583b2dec706594a951a52fab9acf5c3b90",
+            "dossier_sha256": "85da34a9f43fedd9446b875f1dc463c4b89a9d2516b6e44469e6a3653b5f44fa"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The 1936 higher-genus program replaced elliptic endomorphisms by self-correspondences but still lacked a theory of differentials and a norm generalization leading to positive definiteness; the mature finite-field picture forces the equivalent sign through an intersection-form index theorem, while the classical problem still lacks corresponding cohomology, Frobenius, and an index theorem.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The burden moved from constructing the right correspondence ring to finding a geometric pairing whose sign is forced; success of that mechanism in positive characteristic sharpened, rather than removed, the question of what could play the same role for classical zeta.",
+        "limits": "Hasse's missing norm step is not identified with the later classical missing index theorem, and the units do not establish a transfer from finite-field divisors to classical test functions. Bombieri also notes that Maass L-functions may have no guiding algebraic-geometric model.",
+        "parent_unit_ids": [
+          "oort_schappacher2016_positive_characteristic_history_v2_u15",
+          "b25_bombieri2000_u07",
+          "b25_bombieri2000_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_correspondences_to_missing_classical_geometry",
+        "title": "Correspondences exposed a positivity mechanism and the geometry still missing classically"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The authors state that the second component of Hasse's program was never supplied, making this a documented obstruction rather than a completed proof route.",
+          "line_end": 1281,
+          "line_start": 1170,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Long quoted prose is clear; the function-field correspondence notation should be source-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines Deuring's higher-genus move from an endomorphism ring to a ring of curve correspondences, algebraizes the construction in function-field language, and explicitly lists differential action and a generalized norm/positivity statement as the two missing components.",
+          "source_id": "oort_schappacher2016_positive_characteristic_history",
+          "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+          "source_page_markers_inside_unit": [
+            24,
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Replace elliptic endomorphisms by self-correspondences, but the norm generalization remains absent",
+          "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history_v2_u15.txt",
+          "unit_bytes": 6992,
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u15",
+          "unit_sha256": "b992ab6511379d02b3841221eacd45b3f5e39b1b3344ea3d3e2bbb2f35baa195",
+          "unit_type": "higher-genus construction and missing step",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history_v2_u15.txt",
+          "source_title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The analogue succeeds at constructing the right algebraic carrier but fails at transferring the positivity mechanism that made the elliptic argument work.",
+            "nonparaphrase_operation": "The self-correspondence ring bridges higher-genus curves to the elliptic endomorphism model; action on differentials and a norm/positive-definite form are the missing bridge pieces.",
+            "quality_reason": "The span replaces elliptic endomorphisms by a ring of self-correspondences, algebraizes them via function-field embeddings, quotes the missing differential and norm generalizations, and states that the generalized norm was never supplied. The analysis does not report contemporary confidence as a completed higher-genus proof. Low: the constructed correspondence ring and two named missing components make the failure analysis specific.",
+            "source_support": "The source describes algebraizing correspondences through function-field embeddings, forming their ring as the higher-genus analogue of an endomorphism ring, and quotes Hasse's list of two missing components; it states that the generalized norm step was never supplied.",
+            "speculation_status": "This is a documented obstruction, not a completed higher-genus proof, despite contemporary claims that the foundations were in place. The missing-step evidence is clear in prose; detailed function-field correspondence notation should be checked. Saying the carrier generalized while the decisive positivity/norm mechanism did not is a faithful conceptual account of the documented obstruction. Long prose is clear; exact function-field and extension notation should be source-checked."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_123145797b5f3ea76b71c21d016ee6b58fed2056f4050a635051b9985b847ace",
+            "dossier_sha256": "c21f02f08981e0ee405cd2c55ed7619c7ab1fef9315c88a4307c6c12229d18c8"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source emphasizes that a suitable algebraic proof in broader settings is missing.",
+          "line_end": 495,
+          "line_start": 468,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; test-function constraints and the sign convention are essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Recasts RH as a sign condition for convolution-type test functions and explains why the finite-field case follows from the negative-semidefinite intersection form supplied by an algebraic index theorem.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH becomes negativity of an explicit-formula quadratic form",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u07.txt",
+          "unit_bytes": 1743,
+          "unit_id": "b25_bombieri2000_u07",
+          "unit_sha256": "16abd3bf16215187a027a512dc0555e4a60bc0699e3e898ab1615ff26da7366b",
+          "unit_type": "equivalent positivity criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u07.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Within the visible boundary, RH is recast as a uniform negativity requirement over a restricted family built from g, rather than as separate assertions about individual zeros. The finite-field case supplies a comparison mechanism: an algebraic index theorem forces negative semidefiniteness of the self-intersection form on degree-zero divisors. This gains a structural sign target and shows how geometry can force the analogous sign, but it does not identify the missing classical right-hand side or establish a transfer from divisor intersections to the classical problem. The remaining burden is to recover the omitted quadratic expression from a wider span and prove its negativity for every admissible function, with the two vanishing-integral constraints, the function class W, and the sign convention intact.",
+            "nonparaphrase_operation": "Abstracts only the source-visible common proof obligation—a sign condition—and compares an asserted classical uniform-negativity criterion with a geometrically forced finite-field sign, while auditing which part of the classical representation is absent.",
+            "quality_reason": "Accepted as a bounded structural interpretation because the test-function restrictions, equivalence claim, and finite-field intersection-form mechanism are explicit. Its use is deliberately limited: the unit begins mid-reference and cannot support an exact reconstruction of the classical right-hand side.",
+            "source_support": "The span claims equivalence between RH and negativity of an already-referenced right-hand side for all displayed convolution-type f built from g∈W satisfying ∫g(x)dx/x=0 and ∫g(x)dx=0. It then states that, for curves over finite fields, the analogous negativity follows from the algebraic index theorem, whose visible statement makes divisor self-intersection negative semidefinite on degree-zero divisors.",
+            "speculation_status": "The identification of the omitted right-hand side with a prime-side explicit formula is withheld. The displayed product/convolution may have extraction damage, and any exact classical quadratic criterion or geometric transfer claim requires a wider source span or scan check."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proposed structures are open questions, not asserted objects.",
+          "line_end": 530,
+          "line_start": 496,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low; the argument is conceptual prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects universal zero spacings and Hilbert-Polya to the unconditional finite-field theory, then isolates the absent global structures and warns that nongeometric Maass L-functions may require new ideas beyond geometric analogy.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Random-matrix spectra point toward a missing classical cohomology, Frobenius, and index theorem",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u08.txt",
+          "unit_bytes": 2316,
+          "unit_id": "b25_bombieri2000_u08",
+          "unit_sha256": "6031caeb95cd7257330c28d2adc7322fad342e36c66f4f417b9d35856544ccbd",
+          "unit_type": "research obstruction and bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u08.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The analogy is useful when it predicts structural obligations rather than merely matching distributions. It suggests that self-adjointness or geometric negativity could explain zero location, while the nongeometric cases indicate that the sought structure may need a broader form.",
+            "nonparaphrase_operation": "Spacing correlations bridge L-function zeros to random-matrix eigenvalues; finite-field cohomology and Frobenius provide a working model for how spectral data can arise from geometry.",
+            "quality_reason": "The source connects zero-spacing correlations to orthogonal, unitary, and symplectic random-matrix limits, mentions Hilbert-Polya, contrasts the unconditional finite-field theory, and explicitly asks for cohomology, Frobenius, and index-theorem analogues. The output correctly marks these global structures as questions and Maass L-functions as a boundary of a purely geometric analogy.",
+            "source_support": "Bombieri connects zero-spacing work with orthogonal, unitary, and symplectic random-matrix limits and with the Hilbert–Pólya proposal of a self-adjoint operator. He contrasts this heuristic with Katz–Sarnak's unconditional finite-field theory and asks for classical analogues of cohomology, Frobenius, and an index theorem.",
+            "speculation_status": "Matching local statistics does not construct an operator or prove RH. The proposed global structures are explicitly questions, and Maass L-functions mark a concrete limit of a purely geometric transfer. This unit is deliberately speculative; only the cited correlations and finite-field comparison are presented as established background. Saying a useful analogy supplies structural obligations rather than merely a distributional match is a reasonable conceptual interpretation. The source itself labels the global discussion conjectural and speculative; the output preserves that epistemic status."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Semi-local scaling operators canonically reproduce finite local terms of the explicit formula, but the proposed Hardy-space proof fails because local-factor ratios can have unit modulus on the critical line without being bounded, and the resulting sign inequality is false; the authors identify the omitted global Poisson normalization as essential, in contrast with the finite-field setting where an intersection theorem forces the sign.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The analytic program narrowed its obstruction from constructing relevant operators to controlling principal-value normalizations globally enough to prove Weil positivity, while geometry remains the comparison case in which the required sign has a structural source.",
+        "limits": "Failure of this inner-function inequality does not refute Weil positivity or all operator-theoretic approaches. The finite-field intersection form is only a comparison mechanism here; no map to the semi-local Hilbert spaces or a classical index theorem is supplied.",
+        "parent_unit_ids": [
+          "connes_consani2019_scaling_hamiltonian_v2_u01",
+          "connes_consani2019_scaling_hamiltonian_v2_u08",
+          "connes_consani2019_scaling_hamiltonian_v2_u13",
+          "b25_bombieri2000_u07"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_semilocal_normalization_blocks_positivity",
+        "title": "Canonical local terms did not remove the global normalization burden in Weil positivity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the section-by-section statement of what is proved, what fails, and what remains conjectural.",
+          "line_end": 107,
+          "line_start": 30,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mostly prose-stable; the group of S-units is formula-dependent but clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The introduction distinguishes an artificial global spectral realization from canonical finite-place operators, identifies normalization as the likely missing ingredient in a failed local argument, and bounds the paper's analytic proposal against the established geometric program.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            2,
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Canonical semi-local operators motivate reopening an analytic route to Weil positivity",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u01.txt",
+          "unit_bytes": 5540,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u01",
+          "unit_sha256": "5f7963d8fe841bccf1827ea50af557a7e672b9cff14be4f7ab1d1420f016dc88",
+          "unit_type": "analytic-geometric-boundary-and-roadmap",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u01.txt",
+          "source_title": "The Scaling Hamiltonian",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The methodological move is to preserve canonical local constructions while identifying what cannot be localized: compatible principal-value normalizations. Failure becomes a boundary map between analytic and geometric representations.",
+            "nonparaphrase_operation": "Semi-local adèle-class Hilbert spaces and the Riemann-Weil explicit formula bridge operator traces to local number-theoretic terms; the global Poisson formula is proposed to coordinate their normalizations.",
+            "quality_reason": "The introduction explicitly contrasts an artificial Sobolev-dependent global realization with canonical semi-local operators, reviews the failed Li route, and proposes a conjectural semi-local program. It directly identifies global Poisson normalization and principal values as missing from naive finite-place truncation and retains the Scaling Site as the geometric program. No RH proof or settled architecture is claimed; the output correctly preserves proved, failed, and conjectural statuses. The claim that Poisson normalization is the missing ingredient is the authors' diagnosis, not independently verified evidence. The analysis is specific about canonical operators, principal-value normalization, and the failed inner-function condition rather than generic failure-as-learning prose.",
+            "source_support": "The introduction contrasts the Sobolev-dependent global Hilbert space of earlier work with canonical semi-local operators on finite sets of places. It relates the scaling/PQ Hamiltonian to absorption and emission counts, announces a semi-local trace formula, analyzes Li's failed positive-operator proposal, and conjectures a support-local semi-local route while retaining the global Scaling Site as the geometric program.",
+            "speculation_status": "No RH proof is claimed. The direct Li route fails, the global analytic realization remains artificial, and the new semi-local positivity claim is only a conjectural program. The unit is mostly a roadmap and accurately labels proved, failed, and conjectural components. Exact S-unit notation is formula-sensitive but clear. Reading the failed positivity route as a map of the analytic/geometric boundary is a reasonable conceptual synthesis of the roadmap. S-unit notation is formula-sensitive but readable. As an introduction this span is a roadmap, so it supports program/status analysis more strongly than technical derivation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+            "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Separates failure of the proof device from direct falsity of the unrestricted inequality.",
+          "line_end": 797,
+          "line_start": 718,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The final counterexample uses Figure 8; exact gamma-factor ratios and pole locations should be checked from the source.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Both finite-prime and archimedean ratios are holomorphic on the relevant right half-plane yet unbounded, so they are not inner; moreover the desired inequality would force monotonicity of the Riemann-Siegel phase, which its graph contradicts.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Local factor ratios have unit boundary modulus without Hardy boundedness",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u08.txt",
+          "unit_bytes": 4205,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u08",
+          "unit_sha256": "df1fb538d35bb77ac46f08619de9764abe0aa23b65d5d0243218ebe367277a94",
+          "unit_type": "obstruction-and-counterexample",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u08.txt",
+          "source_title": "The Scaling Hamiltonian",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit separates a boundary symmetry from the interior norm control needed for operator positivity. A concrete phase counterexample shows that the failure is not merely a missing proof technique.",
+            "nonparaphrase_operation": "Hardy-space boundedness bridges analytic continuation of local factors to invariant-subspace sign; the Riemann-Siegel phase translates the archimedean logarithmic derivative into a testable monotonicity condition.",
+            "quality_reason": "The finite-prime and archimedean ratios are explicitly shown to have unit boundary modulus and be holomorphic but unbounded in the relevant right half-plane. The source separately proves that the unrestricted inequality would force monotonicity of the Riemann-Siegel phase and cites its graph as a counterexample. The graph-dependent nonmonotonicity is reported by the source but cannot be independently checked from the text slice alone. Failure of the unrestricted inequality does not refute corrected inequalities with test-function constraints or global normalization; the output correctly preserves this boundary. The output grounds the obstruction in explicit growth and phase monotonicity, so it is not a generic 'boundary data are insufficient' slogan.",
+            "source_support": "For a finite prime, the ratio (1-p^{-(1-z)})/(1-p^{-z}) has unit boundary modulus and is holomorphic in the right half-plane, but grows like -p^{z-1} on positive real z. The archimedean gamma-factor ratio likewise has unit critical-line modulus and is holomorphic but unbounded, with explicit large even-integer values. Thus neither multiplier is inner. Moreover, the proposed inequality for the single archimedean place would make the Riemann-Siegel angular function monotone, contradicted by its graph.",
+            "speculation_status": "The unrestricted local inequality is false, but this does not rule out a corrected inequality using the missing test-function conditions or global normalization. The unboundedness calculations are explicit. The final nonmonotonicity evidence depends on Figure 8 for its visual witness, and exact gamma ratios are formula-sensitive. The distinction between boundary symmetry and interior Hardy boundedness is a precise conceptual reading of why innerness fails. Gamma ratios, pole locations, and Figure 8 require the retained source for exact verification. The span deliberately separates failure of the proof device from direct falsity of the unrestricted inequality."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+            "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Explicitly marks the proposal's limit rather than converting it into a settled architecture.",
+          "line_end": 999,
+          "line_start": 987,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The conclusion keeps the semi-local operator conjecture alive but emphasizes that principal-value choices make an analytic proof fragile, whereas the global Scaling Site interprets scaling as Frobenius and exposes structure absent semi-locally.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The analytic route is normalization-sensitive while geometry supplies global conceptual structure",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u13.txt",
+          "unit_bytes": 995,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u13",
+          "unit_sha256": "670aad8655231aac35bff170feb0d4e397c9756c585d42d2963663de00350891",
+          "unit_type": "method-comparison-and-risk",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u13.txt",
+          "source_title": "The Scaling Hamiltonian",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The conclusion presents two differently constrained research routes, not a verdict between them. The analytic route has a concrete first handle—use the support condition in the one-place case—but Weil positivity is sensitive to principal-value choices and hence exposed to computational error. The global geometric route instead makes the adèle-class space into the points of the Scaling Site and interprets scaling as Frobenius, supplying conceptual structure absent from the semi-local presentation. Neither route is completed here, and the comparison establishes no superiority or likely success.",
+            "nonparaphrase_operation": "Reframes the comparison by the kind of control each method currently offers: a local analytic constraint that is operational but normalization-sensitive versus a global geometric interpretation that changes what scaling means. This identifies the remaining burdens—correct principal values and a solution of the conjecture on one side, conversion of structural meaning into a proof on the other—without turning methodological contrast into an outcome claim.",
+            "quality_reason": "Accepted after restoring the support condition as the analytic mechanism and sharply separating the authors' risk comparison from unsupported claims that global geometry immunizes calculations or is superior.",
+            "source_support": "The authors explicitly retain the possibility of attacking Conjecture 4.1 first at one place via the test-function support condition, warn that principal-value choices make the analytic strategy vulnerable to computational mistakes, and contrast it with a global geometry in which the adèle-class space and scaling-as-Frobenius interpretation are revealed.",
+            "speculation_status": "The support-based one-place proposal, principal-value vulnerability, Scaling Site, and Frobenius interpretation are source-grounded. The tradeoff between operational directness and structural meaning is an explicit inference. Any claim that geometry prevents normalization errors, makes compatibility intrinsically correct, proves superiority, or advances an RH proof is excluded as unsupported speculation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+            "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source emphasizes that a suitable algebraic proof in broader settings is missing.",
+          "line_end": 495,
+          "line_start": 468,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; test-function constraints and the sign convention are essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Recasts RH as a sign condition for convolution-type test functions and explains why the finite-field case follows from the negative-semidefinite intersection form supplied by an algebraic index theorem.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH becomes negativity of an explicit-formula quadratic form",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u07.txt",
+          "unit_bytes": 1743,
+          "unit_id": "b25_bombieri2000_u07",
+          "unit_sha256": "16abd3bf16215187a027a512dc0555e4a60bc0699e3e898ab1615ff26da7366b",
+          "unit_type": "equivalent positivity criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u07.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Within the visible boundary, RH is recast as a uniform negativity requirement over a restricted family built from g, rather than as separate assertions about individual zeros. The finite-field case supplies a comparison mechanism: an algebraic index theorem forces negative semidefiniteness of the self-intersection form on degree-zero divisors. This gains a structural sign target and shows how geometry can force the analogous sign, but it does not identify the missing classical right-hand side or establish a transfer from divisor intersections to the classical problem. The remaining burden is to recover the omitted quadratic expression from a wider span and prove its negativity for every admissible function, with the two vanishing-integral constraints, the function class W, and the sign convention intact.",
+            "nonparaphrase_operation": "Abstracts only the source-visible common proof obligation—a sign condition—and compares an asserted classical uniform-negativity criterion with a geometrically forced finite-field sign, while auditing which part of the classical representation is absent.",
+            "quality_reason": "Accepted as a bounded structural interpretation because the test-function restrictions, equivalence claim, and finite-field intersection-form mechanism are explicit. Its use is deliberately limited: the unit begins mid-reference and cannot support an exact reconstruction of the classical right-hand side.",
+            "source_support": "The span claims equivalence between RH and negativity of an already-referenced right-hand side for all displayed convolution-type f built from g∈W satisfying ∫g(x)dx/x=0 and ∫g(x)dx=0. It then states that, for curves over finite fields, the analogous negativity follows from the algebraic index theorem, whose visible statement makes divisor self-intersection negative semidefinite on degree-zero divisors.",
+            "speculation_status": "The identification of the omitted right-hand side with a prime-side explicit formula is withheld. The displayed product/convolution may have extraction damage, and any exact classical quadratic criterion or geometric transfer claim requires a wider source span or scan check."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Hilbert-Polya requires a natural Hermitian operator whose eigenvalues are the zero ordinates, whereas the Veneziano construction supplies an equivalent integral identity and only conjectures an effective Riemann string; independently, a quantum-state overlap can approximate zeta accurately even when its Hamiltonian fails termwise to approximate the intended logarithmic spectrum.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "These later physical representations shift attention from spectral realization to amplitude, phase, or aggregate overlap, but thereby expose a stricter proof burden: reproducing a function-level observable is not the same as realizing its nontrivial zeros as a self-adjoint spectrum.",
+        "limits": "The string amplitude and Jaynes-Cummings overlap are distinct models and are not evidence against each other. Neither an equivalent RH criterion nor aggregate numerical agreement constructs the required operator, proves self-adjointness, or forces zero ordinates to be real eigenvalues.",
+        "parent_unit_ids": [
+          "conrey2003_notices_v2_u06",
+          "openalex_w1885957460_v2_u04",
+          "openalex_w1885957460_v2_u12",
+          "b25_openalex_w1978698814_u12"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_physical_identity_is_not_spectrum",
+        "title": "Physical reformulations preserve zeta data without meeting the Hilbert-Polya burden"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly says the approach has been tried repeatedly and does not identify the operator.",
+          "line_end": 310,
+          "line_start": 298,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Compresses RH into a representation problem: find a natural self-adjoint operator whose real spectrum is exactly the nontrivial zero ordinates.",
+          "source_id": "conrey2003_notices",
+          "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Hilbert–Pólya would prove RH by making ordinates eigenvalues of a Hermitian operator",
+          "unit_artifact_relpath": "depth/units/conrey2003_notices_v2_u06.txt",
+          "unit_bytes": 1177,
+          "unit_id": "conrey2003_notices_v2_u06",
+          "unit_sha256": "46cce07c383fc4206c6d92d243220c88e821c397784b0fd7bb04ec62b81d191c",
+          "unit_type": "spectral strategy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_notices_v2_u06.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Hilbert–Pólya is an informal representation proposal, not a completed implication as literally phrased in the survey. A valid route would require a natural self-adjoint operator whose real spectrum corresponds, after the appropriate parametrization, to every nontrivial zeta zero, together with proof that the correspondence leaves no off-line zeros. Self-adjointness would then force the relevant spectral parameters to be real. Merely matching zeros already written as zeta(1/2+it) would be circular and would not prove RH.",
+            "nonparaphrase_operation": "It audits the proposed spectral reduction for circularity and identifies the exact correspondence needed before spectral reality can constrain all zeros.",
+            "quality_reason": "Accepted after revision because it preserves the strategic representation change while correcting the survey's informal circular phrasing as required by the critic.",
+            "source_support": "The span reports the Hilbert–Pólya proposal, reality of Hermitian spectra, and repeated attempts, but constructs no operator. Its wording presupposes critical-line parametrization, so the all-zero correspondence is an explicit additional proof obligation rather than a source achievement.",
+            "speculation_status": "The operator is hypothetical; no construction or spectral theorem for zeta is claimed."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_537f2623cffc553e88123d65d9b2083a8ccce1cf4210c036140db308b1285764",
+            "dossier_sha256": "30f3851f8971a92f6a4b762bb98572e50faf81c1a9bc59c7e0eafee6839e47c1"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the adelic motivation, prior attempts, and the authors' claim that the connection to elementary integral criteria is the new target.",
+          "line_end": 111,
+          "line_start": 76,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-supported; no exact formula is required.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates the unknown Hilbert-Polya operator problem from the paper's more modest route: rewrite a familiar string amplitude and ask whether known RH criteria become natural phase statements.",
+          "source_id": "openalex_w1885957460",
+          "source_normalized_sha256": "26f58d181a09cceb38e67c7fc79044b16d5c2c8216323627598039ffce35a9dc",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Use an amplitude identity as a representation bridge rather than a spectral solution",
+          "unit_artifact_relpath": "depth/units/openalex_w1885957460_v2_u04.txt",
+          "unit_bytes": 2660,
+          "unit_id": "openalex_w1885957460_v2_u04",
+          "unit_sha256": "4545529c7a58ae2d964e8d046c5e4ef16a2e2a71ff1cf3b65e81888eabb2ccb5",
+          "unit_type": "physical-mathematical framing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1885957460_v2_u04.txt",
+          "source_title": "From Veneziano to Riemann: A string theory statement of the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proposed advance is representational naturalness: an equivalent RH criterion may expose different structure when embedded in a familiar physical formalism.",
+            "nonparaphrase_operation": "The Freund-Witten adelic/amplitude identity is the announced bridge from string scattering to zeta ratios, with phase rather than spectrum as the eventual carrier.",
+            "quality_reason": "The span contrasts the unknown Hilbert-Polya operator with a proposed relation between equivalent integral criteria and the Veneziano amplitude, and presents the Freund-Witten identity as the starting point. The analysis does not treat the physical framing as independent validation or as a constructed Hermitian operator. Low: representational naturalness is tied to a specific amplitude and phase-integral programme, not used as a free-standing slogan.",
+            "source_support": "The source contrasts the unknown Hermitian operator route with rewriting the crossing-symmetric Veneziano amplitude and studying integrals of log ζ or arg ζ on the critical line.",
+            "speculation_status": "No spectral realization or proof is supplied here, and the physical connection is a framing for equivalent criteria rather than independent validation. Low uncertainty because the unit is prose-level framing and makes no formula-dependent claim beyond the stated program. Calling the result a change of mathematical language rather than the missing spectral construction is a justified critical interpretation of what the span actually supplies. Low formula dependence in this framing unit; its claimed novelty and scope are clear in prose."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_47c2e1cf7256e538656e09f75864b6930d0f9617cb4c01b309a07339fb4d40ab",
+            "dossier_sha256": "9b5fdc229053b1e7461ffa7e7dfba9b13976489736a96e1dde1914e9fa8da521"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the Friedel-sum-rule analogy, effective nonlocal action, possible xi-amplitude replacement, and the explicit no-solution disclaimer.",
+          "line_end": 1196,
+          "line_start": 1045,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The path-integral formulas are extraction-sensitive; the evidential status is clear in prose and must remain conjectural.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Turns the proven phase equality into a concrete but explicitly formal path-integral proposal, identifies the argument of the generating functional as the technical bottleneck, and inventories holographic and nonlocal representations without claiming a proof.",
+          "source_id": "openalex_w1885957460",
+          "source_normalized_sha256": "26f58d181a09cceb38e67c7fc79044b16d5c2c8216323627598039ffce35a9dc",
+          "source_page_markers_inside_unit": [
+            19,
+            20,
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Reverse the order of momentum and worldsheet integration to propose a Riemann string",
+          "unit_artifact_relpath": "depth/units/openalex_w1885957460_v2_u12.txt",
+          "unit_bytes": 10595,
+          "unit_id": "openalex_w1885957460_v2_u12",
+          "unit_sha256": "225c7099e33ab390026f821a5599d5f22c502b8bcd77ca945ebfd15ac6f2ac31",
+          "unit_type": "speculative physical interpretation and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1885957460_v2_u12.txt",
+          "source_title": "From Veneziano to Riemann: A string theory statement of the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proposal is bridge construction at a speculative level: an equivalent scalar criterion is recast as a property of an effective physical theory to seek new tools.",
+            "nonparaphrase_operation": "The Veneziano generating functional, its complex argument, momentum integration, and a proposed holographic effective action are the bridge objects.",
+            "quality_reason": "The span relates the phase criterion to a tachyon path integral, proposes reversing momentum and worldsheet integration, sketches a nonlocal effective action and holographic alternatives, and explicitly disclaims solving RH. The analysis does not present the Riemann string, interchange of integrals, or holographic action as mathematically constructed or justified. Low: the speculative status is tied to a specific reversal of integration and the unresolved argument-of-generating-functional operation.",
+            "source_support": "The source relates the Volchkov-Veneziano phase integral to a four-tachyon path integral, formally proposes integrating over momentum first, sketches a nonlocal effective worldsheet action and holographic alternatives, and explicitly disclaims a solution of RH.",
+            "speculation_status": "Taking the argument of a path integral is the stated technical bottleneck; complex momenta, nonlocality, and the proposed ξ-amplitude remain formal and conjectural. The evidential status is unambiguous, while path-integral formulas and measures are extraction-sensitive. Calling this speculative bridge construction is appropriate because the source repeatedly uses conditional language and labels the xi-amplitude idea purely conjectural. Path-integral measures, complex momenta, regularization, and nonlocal action formulas are extraction-sensitive and formal."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_47c2e1cf7256e538656e09f75864b6930d0f9617cb4c01b309a07339fb4d40ab",
+            "dossier_sha256": "9b5fdc229053b1e7461ffa7e7dfba9b13976489736a96e1dde1914e9fa8da521"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The displayed polynomial example is heuristic and the parameter optimization is explicitly left open.",
+          "line_end": 1542,
+          "line_start": 1392,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; perturbative coefficients, selected parameters, and plotted comparisons are needed for reproduction.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives a perturbative Jaynes-Cummings-like Hamiltonian and explains three error-averaging mechanisms: phases only matter modulo 2 pi, high-number terms are suppressed, and errors cancel in the total overlap.",
+          "source_id": "openalex_w1978698814",
+          "source_normalized_sha256": "4b439449b69111407798a77a0e21eababafd70ccf65bc531c57e06e78f9adf58",
+          "source_page_markers_inside_unit": [
+            29,
+            30,
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Aggregate overlap can approximate zeta without termwise Hamiltonian matching",
+          "unit_artifact_relpath": "depth/units/b25_openalex_w1978698814_u12.txt",
+          "unit_bytes": 8947,
+          "unit_id": "b25_openalex_w1978698814_u12",
+          "unit_sha256": "9130fc79ad1fe7dc3fca5e9c6132645631b8b97b0bda69aef17ee13be7ff5758",
+          "unit_type": "effective-model approximation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w1978698814_u12.txt",
+          "source_title": "Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is task-aware approximation: preserve the final linear functional rather than every internal component. Errors that are large locally may be nearly invisible after periodic phase reduction and weighted aggregation.",
+            "nonparaphrase_operation": "The overlap is the bridge from approximate dynamics to ζ; it compresses many phase errors into one weighted sum.",
+            "quality_reason": "The source derives a second-order effective Hamiltonian, states three aggregate-error mechanisms, and gives a selected polynomial-coupling example comparing the resulting modulus with zeta. The output correctly identifies the absence of uniform error bounds, parameter optimization, and zero-preservation certification.",
+            "source_support": "Second-order perturbation produces an effective Jaynes–Cummings-like Hamiltonian with number-dependent coefficients Fn and Cn. The source proposes a polynomial field coupling and reports a numerical example where the resulting overlap tracks |ζ(2,τ)| despite exponent ratios far from one, attributing this to phases modulo 2π, n^(−σ) weighting, and sum-level compensation.",
+            "speculation_status": "The example is heuristic, uses selected coefficients, compares magnitudes, and leaves optimization open. Aggregate agreement over a plot is not a certified uniform or zero-preserving approximation. Parameter values and perturbative formulas are extraction-sensitive, and no rigorous error bounds accompany the numerical comparison. Calling this task-aware approximation of the final overlap rather than termwise spectrum matching is a concrete synthesis of the source's three stated mechanisms. Perturbative coefficients and numerical parameters are extraction-sensitive, and the evidence is plot-based."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_8e8d30dfc824b711558a966dfce547c96090dd6714cf81f93816e8aa04be06e6",
+            "dossier_sha256": "c0fb0e1cc93059d760bbca191151a2650a3325b8c85d9b45e200d3a2d009ff8b"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The self-adjoint prolate extension has a discrete negative spectrum with the same ultraviolet behavior as squared zeta-zero ordinates and is interpreted as capturing the archimedean contribution, but a finite RH certificate separately needs an exhaustive total-zero count and equally many critical-line witnesses.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The spectral program can match the leading high-energy counting architecture before it has identified the individual zeta spectrum; the older certification logic makes precise why matching density or asymptotics alone leaves the location burden untouched.",
+        "limits": "The prolate unit claims ultraviolet similarity, not equality of spectra, and explicitly narrows the interpretation to an archimedean contribution. The finite certificate is bounded-height and does not prove that no future refinement of the prolate model could recover more information.",
+        "parent_unit_ids": [
+          "connes2026_rh_past_present_v2_u30",
+          "b25_bombieri2000_u05"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_ultraviolet_counting_is_not_zero_location",
+        "title": "Ultraviolet spectral agreement captures a counting scale, not critical-line location"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The special lambda choices and Darboux deformation are part of the construction.",
+          "line_end": 2024,
+          "line_start": 1978,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; signs, square roots, and parameter values should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Restricting the prolate operator to the Sonin space yields discrete negative spectrum whose square-root Dirac family has the same ultraviolet behavior as zeta zeros, while the source carefully claims asymptotic matching rather than equality of spectra.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            34
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A self-adjoint prolate extension matches the high-energy counting of zeta zeros",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u30.txt",
+          "unit_bytes": 3657,
+          "unit_id": "connes2026_rh_past_present_v2_u30",
+          "unit_sha256": "4f3964f3ed87d8e6bc736a512c55bc2e6e3a80cc9800a9f360130753681ab38d",
+          "unit_type": "ultraviolet-spectral-model",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u30.txt",
+          "source_title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The model targets the archimedean contribution at high energy, where matching an asymptotic counting law is a weaker but structurally meaningful invariant.",
+            "nonparaphrase_operation": "The prolate differential operator, Sonin restriction, and Dirac square root bridge time-frequency geometry to a self-adjoint high-energy zeta model.",
+            "quality_reason": "The natural self-adjoint prolate extension, Sonin restriction, discrete negative spectrum, special lambda choices, Dirac/Darboux construction, UV matching, positive/trivial-zero association, and square-root ambiguity are explicit. The output carefully says asymptotic matching rather than identical spectra or a completed Hilbert-Polya construction.",
+            "source_support": "A natural self-adjoint extension of the prolate operator has discrete spectrum and preserves the Sonin space. For special lambda values, the negative eigenvalues of its restriction, after a square-root/Dirac construction and Darboux deformation, have the same ultraviolet behavior as the nontrivial zeta zeros; positive spectrum is associated with trivial-zero behavior.",
+            "speculation_status": "The source claims ultraviolet asymptotic matching, not equality of eigenvalues or a complete Hilbert-Polya operator; the square root has deformation ambiguity. Signs, special lambda choices, and square-root parameters require scan verification; the asymptotic-only epistemic status is explicit. Interpreting the model as targeting an archimedean high-energy component is the source's stated suggestion, not an equality claim. Signs, square roots, special parameters, and deformation details require scan verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+            "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Certification is finite in height; large verified ranges and spacing agreement are evidence, not global proof.",
+          "line_end": 311,
+          "line_start": 259,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; the contour count and exact integer-rounding condition are essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Gives a finite-range proof protocol: compute the argument-principle zero count exactly, detect real xi sign changes, and conclude that the counted zeros are simple and on the line when the totals agree.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count all zeros, then match critical-line sign changes",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u05.txt",
+          "unit_bytes": 3514,
+          "unit_id": "b25_bombieri2000_u05",
+          "unit_sha256": "f66bfd19ee66d18e3c0215cba733b6522372896a6fb19f4aa2eccb371fa5ba2d",
+          "unit_type": "computational certification logic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u05.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is certificate composition: one method supplies exhaustive cardinality and another supplies witnesses with the desired property. Their agreement upgrades numerical detection to a finite-range proof.",
+            "nonparaphrase_operation": "The argument principle turns a two-dimensional zero set into an integer contour invariant, and ξ turns critical-line zeros into real sign changes. Exact integer rounding bridges numerical evaluation to a certified count only when the numerical error is controlled.",
+            "quality_reason": "The span explicitly combines an argument-principle total zero count with critical-line sign changes of real continuous xi and states that equality certifies all counted zeros as simple and on the line. The output correctly limits the certificate to a finite height and distinguishes spacing evidence from certification.",
+            "source_support": "The contour integral of ζ′/ζ gives the total number N(T) of zeros in a prescribed rectangle, adjusted for the pole. Since ξ is continuous and real on the real t-axis, sign changes locate odd-order zeros there; if their number equals N(T), every zero in the region is accounted for and is simple and on the critical line.",
+            "speculation_status": "The certificate is bounded by height and cannot imply global RH. A sign-change list without an independent total count can miss even-multiplicity or off-line zeros, while spacing agreement is additional evidence rather than certification. Historical verified heights and counts are source-era figures. The span asserts arbitrary-precision computation and rounding but does not give a modern interval-arithmetic implementation. 'Certificate composition' accurately names the non-paraphrase operation of matching an exhaustive multiplicity count to distinct sign-change witnesses. The source asserts arbitrary-precision computation and integer rounding but supplies no interval-error implementation; the output preserves that limitation and treats historical heights as source-era facts."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Voronin universality approximates nonvanishing holomorphic targets on compact subsets of 1/2 < Re(s) < 1 by vertical zeta shifts, while Borchsenius-Jessen shows that every nonzero value x is assumed infinitely often arbitrarily close to the critical line from the right; together they isolate zero alignment as a property not preserved by generic value-distribution flexibility.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The almost-periodic and universality programs reveal enormous orbit density, but the proof burden for RH remains tied to the exceptional target value zero rather than to approximation of generic nonzero functions or values.",
+        "limits": "The universality theorem and the a-point theorem have different quantifiers and regions, and neither is derived from the other in these units. Uniform approximation on compacta does not determine the global zero set, and the off-line solutions of zeta(s)=x for x != 0 do not imply an off-line zero of zeta.",
+        "parent_unit_ids": [
+          "matsumoto2014_universality_survey_v2_u01",
+          "connes2026_rh_past_present_v2_u07"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_universality_does_not_preserve_zero_alignment",
+        "title": "Universality's flexible approximation stops exactly at the exceptional zero value"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the modern positive-lower-density statement and proof skeleton, not a full proof.",
+          "line_end": 150,
+          "line_start": 56,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed formulas are partly degraded; exact normalizations require the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Mean approximation by truncated Euler products combines with rational independence of prime logarithms and Kronecker-Weyl phase control; Mergelyan and rearrangement tools complete target approximation.",
+          "source_id": "matsumoto2014_universality_survey",
+          "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite Euler products and independent prime phases create dense function-space orbits",
+          "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u01.txt",
+          "unit_bytes": 4849,
+          "unit_id": "matsumoto2014_universality_survey_v2_u01",
+          "unit_sha256": "fe70bc8e58bbaf9caf35d5a37ebb7751e12b6caf54034ffb0ed2a0db19f9454c",
+          "unit_type": "proof architecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u01.txt",
+          "source_title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "An infinite-dimensional approximation problem is split into analytic truncation and finite-dimensional phase synthesis: first justify a finite surrogate, then tune its local factors.",
+            "nonparaphrase_operation": "The finite Euler product bridges zeta and a prime-indexed torus; Kronecker-Weyl turns vertical translation into independent phase control, while Mergelyan bridges general targets to approximants accessible to the construction.",
+            "quality_reason": "The source states positive-lower-density universality, finite Euler-product mean approximation, independence of log p and Kronecker-Weyl control, and names Pecherskii, Mergelyan and probabilistic proof tools.",
+            "source_support": "The source states modern positive-lower-density universality for nonvanishing holomorphic targets on suitable compact subsets of the strip. Its proof skeleton combines mean approximation by finite Euler products, rational independence of log p and Kronecker-Weyl phase control, with Pecherskii, Mergelyan, or probabilistic machinery.",
+            "speculation_status": "Ordinary zeta universality requires nonvanishing targets and the stated compact-set geometry; the unit gives a proof architecture, not the estimates establishing each step. Displayed normalizations and formula layout are partly degraded and should be checked against the PDF. Analytic truncation followed by finite-dimensional phase synthesis is a faithful proof-architecture compression. Exact normalizations and compact-set hypotheses must remain attached; the output preserves nonvanishing and connected-complement conditions."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_56440dcf8fcc4d03723ec842e948405528437b17c5f6fc5694efa3fcf2b909cb",
+            "dossier_sha256": "59c21c3855d5d26e6870944a191ced27a092021f20601baf00082ae3da12adfa"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The limiting-distribution statement is expanded at lines 2120-2165.",
+          "line_end": 698,
+          "line_start": 646,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The conceptual contrast is prose-stable; precise asymptotics are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Nevanlinna/Jensen growth language and the Borchsenius-Jessen theorem show that zeros of zeta minus a nonzero constant crowd the right of the critical line, sharply separating the value zero from generic values.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero alignment is exceptional and unstable under nonzero value perturbations",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u07.txt",
+          "unit_bytes": 3728,
+          "unit_id": "connes2026_rh_past_present_v2_u07",
+          "unit_sha256": "ce284153c56a6a8246287586015b9639401f8ebd0ac34ddc9e111cf6283d4cfa",
+          "unit_type": "perturbation-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u07.txt",
+          "source_title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Value distribution reframes zero alignment as an exceptional fiber of a meromorphic map rather than behavior stable under small target perturbation.",
+            "nonparaphrase_operation": "Nevanlinna characteristic decomposes growth into proximity and counting terms, linking mean boundary behavior to distributions of a-points.",
+            "quality_reason": "The Nevanlinna/Jensen framework, nonzero a-point abundance to the right, N_x(T)/T tending to infinity, and continuous limiting distribution are stated. The output explicitly says this does not refute RH, avoiding an analogy-driven overreach.",
+            "source_support": "Nevanlinna/Jensen theory relates boundary growth to zero or pole counts. The Borchsenius-Jessen theorem is stated as giving infinitely many solutions of zeta(s)=x in every right-adjacent strip for x nonzero, with N_x(T)/T tending to infinity and a continuous limiting distribution for log zeta.",
+            "speculation_status": "The contrast does not refute RH at x=0 or transfer line alignment to nearby values; it instead shows that a perturbative proof route faces a structural obstruction. The qualitative theorem is explicit, while precise limiting asymptotics are deferred outside the span. Calling zero an exceptional fiber and a perturbative route obstructed is a reasonable reading of the contrast. Precise limiting asymptotics are deferred outside the span."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+            "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Lehmer proposed targeting immense heights where early and late Riemann-Siegel terms nearly cancel, but later computational history warns that repeated-logarithm effects can remain invisible on every feasible range; a 2024 zero-free-region bootstrap now requires rigorous exclusion of zeros in 355 prescribed boxes at heights from about exp(40000) to exp(5e7), beyond current raw computation and zero-density estimates.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The numerical burden changed from searching selectively for a possible counterexample-like witness to certifying absence uniformly in tiny, predetermined high-altitude regions needed to close an analytic induction.",
+        "limits": "Slow asymptotic visibility does not prove that computation can never reach a useful regime, and Lehmer's cancellation heuristic does not target the 2024 boxes. The envelope construction is conditional future work, not an achieved zero-free region or an RH proof.",
+        "parent_unit_ids": [
+          "openalex_w1980116773_d08",
+          "moree2018_computational_history_v2_u31",
+          "openalex_w4390813842_v2_u15"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_targeted_search_to_unreachable_exclusion_boxes",
+        "title": "High-altitude computation changed from targeted witness search to an exclusion bottleneck"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is an informal heuristic, explicitly not a proof; the note added in proof reports another 15,000 on-line roots.",
+          "line_end": 360,
+          "line_start": 339,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Argument is prose-supported, though OCR obscures some signs in the sentence relating extrema to RH.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The concluding interpretation treats the low maximum as a delicate balance of rising and descending Dirichlet terms; invoking recurrence, it predicts such stress cases recur and suggests searching selected remote neighborhoods rather than uniformly extending the zero table.",
+          "source_id": "openalex_w1980116773",
+          "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Near-cancellation among early and late terms motivates targeted searches at immense height",
+          "unit_artifact_relpath": "depth/units/openalex_w1980116773_d08.txt",
+          "unit_bytes": 1907,
+          "unit_id": "openalex_w1980116773_d08",
+          "unit_sha256": "d2455795e84639692cbac99d75a278036d5758cacb7333873f53c9e043e4f647",
+          "unit_type": "heuristic search strategy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_d08.txt",
+          "source_title": "On the roots of the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: in explicitly informal comments, Lehmer interprets an exceptionally low maximum as delicate cancellation between early rising and later descending terms, invokes Kronecker's theorem for recurrence of this phenomenon, and proposes searches in selected remote neighborhoods; a note reports 15,000 additional on-line roots. Interpretation: the term decomposition turns a local near-cancellation into a heuristic for targeting future stress regions rather than merely extending a contiguous table. Recurrence concerns the cancellation phenomenon, not RH counterexamples, and neither the heuristic nor the extra finite computation licenses a global conclusion. OCR-obscured sign language is not sharpened.",
+            "nonparaphrase_operation": "Converts a cancellation mechanism into a recurrence-guided search heuristic while preserving its epistemic limits.",
+            "quality_reason": "Accepted because fact, strategic suggestion, finite evidence, and unproved global consequence remain visibly separate.",
+            "source_support": "The conclusion explicitly describes the competing terms, states recurrence, proposes distant targeted investigation, labels the discussion informal, and separately records the added finite computation.",
+            "speculation_status": "Explicit heuristic; recurrence of near-cancellation is not recurrence of off-line zeros."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2a284db6837822e4f8257d867d10b43836936d2827b4d0bac297d8b739a4b5d9",
+            "dossier_sha256": "839bc3e90b41dd91cb1a8ec6c9dbf6dfe658be9bd9f2665263e74f0d000af14a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Mertens is an example of the danger, not evidence that every numerically motivated conjecture fails.",
+          "line_end": 1294,
+          "line_start": 1287,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The warning explains a concrete mechanism behind false computational conjectures: asymptotically unbounded functions such as iterated logarithms can remain visually flat, so numerics need theoretical or heuristic support.",
+          "source_id": "moree2018_computational_history",
+          "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Iterated logarithms can make divergent behavior look bounded on every feasible computation",
+          "unit_artifact_relpath": "depth/units/moree2018_computational_history_v2_u31.txt",
+          "unit_bytes": 670,
+          "unit_id": "moree2018_computational_history_v2_u31",
+          "unit_sha256": "2250e28541705230b9a10543d7e778303fcab7b255d6a39873f89036142454c6",
+          "unit_type": "numerical epistemic obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_v2_u31.txt",
+          "source_title": "A Computational History of Prime Numbers and Riemann Zeros",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Computational scale and asymptotic scale can be radically misaligned; slow divergence is an epistemic obstruction, not mere lack of more data.",
+            "nonparaphrase_operation": "Iterated logarithms bridge formal unboundedness and practical visual flatness, explaining why theory or a structural heuristic must accompany numerical evidence.",
+            "quality_reason": "The source explicitly explains that iterated logarithmic growth can look bounded computationally and cites Mertens as a warning against unsupported extrapolation.",
+            "source_support": "The warning notes that analytic-number-theory asymptotics often involve repeated logarithms and that a function growing like log log log x looks bounded computationally, citing the Mertens conjecture as a caution against unsupported numerical extrapolation.",
+            "speculation_status": "Mertens is an example of the danger, not evidence that every numerically motivated conjecture fails. No material formula uncertainty is present. Mismatch between computational and asymptotic scales is the precise epistemic mechanism in the passage."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_065b29a5a4b7e51f865e9a9b5b0513eab2fb69db35f52784636d5d02936fbf0c",
+            "dossier_sha256": "0be11683ac0e8053245b1784efa4e5ec48bc871789597863db158d257361e21e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Presented as future work, not an established improvement.",
+          "line_end": 1751,
+          "line_start": 1703,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate; the family formula and height scales are readable but exact numerical claims should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes the main proof into an induction over differently shaped regions, quantifies a prospective improvement using 355 pieces, and isolates the present obstruction: excluding zeros in narrow finite regions at enormous heights.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "An envelope of finite zero-free regions could bootstrap a stronger global region if tiny high-altitude gaps were certifiable",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u15.txt",
+          "unit_bytes": 3805,
+          "unit_id": "openalex_w4390813842_v2_u15",
+          "unit_sha256": "84e47b6a252d43c840350080a0d0aec75644cd9c56e3b9d00d7d04fd5939b34a",
+          "unit_type": "proposed bootstrap and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u15.txt",
+          "source_title": "Explicit zero-free regions for the Riemann zeta-function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a proof-by-continuation design: local certificates are composed so each supplies the precondition for the next. It also identifies the missing capability precisely—finite high-altitude zero exclusion—rather than treating the global analytic inequality as the remaining bottleneck.",
+            "nonparaphrase_operation": "The family of boundary functions ν_j and their upper envelope bridge finite region certificates to a global zero-free region. The narrow gap (10.1) is the interface obligation between consecutive stages.",
+            "quality_reason": "The source explicitly proposes the nu_j induction, envelope over finite intervals, 355-piece prospective constant 52.74, and conditional gap exclusions at heights from about exp(40000) to exp(5*10^7). The output clearly labels the plan future work and the numerical gain conditional rather than established. The bootstrap metaphor is source-grounded by the successive-region construction.",
+            "source_support": "The source proposes a sequence of zero-free boundaries ν_j(t)=1/[r_j(log t)^{φ_j}(log log t)^{1-φ_j}] with φ_j>2/3. Each established region would exclude zeros in the finite strip needed to apply the next detector, and their union would form an envelope up to a large T0 before the standard argument covers all larger heights. A calculation suggests 355 pieces could improve the constant to 52.74, conditional on excluding zeros in narrow gaps at heights from about exp(40000) to exp(5·10^7), beyond current computation and zero-density tools.",
+            "speculation_status": "The construction is proposed future work, not an established improvement. Its numerical gain is conditional on 355 unresolved gap certificates, and the source states conventional computation and zero-density estimates are presently insufficient. The bootstrap mechanism and obstruction are explicit; exact family parameters and prospective constants should be treated as source-reported calculations, not independently verified here. Calling it proof-by-continuation and identifying the gap certificate as the interface obligation are faithful conceptual descriptions of the stated induction. Exact family parameters and prospective constants remain source-reported calculations."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3cc70af17f27148aa41a09a3d13ea5d4522e80a1f47fc726114ddf4927bc4318",
+            "dossier_sha256": "692ed8e3088b91cf9ea8c9e7401d24477267b6401d1b357f4483bd82de478b48"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "After arithmetic factors were scaled out, characteristic-polynomial moments predicted the previously missing constants in zeta moments; the later analogy audit separates leading ensemble agreement, arithmetic corrections, and deterministic unitary polynomials that can violate the zeta-side expectation despite having all zeros on the unit circle.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "The program advanced from empirical zero-spacing analogy to quantitative moment prediction, while its validation burden became explicit: choose the correct random ensemble, restore arithmetic factors, and control whether deterministic counterexamples are statistically negligible at the matched scale.",
+        "limits": "The zeta moment formulas remain conjectural in the stated generality, and rarity under Haar measure is not a deterministic theorem about zeta. Statistical success does not construct a Hilbert-Polya operator, force RH, or transfer every property of unitary polynomials.",
+        "parent_unit_ids": [
+          "conrey2003_notices_v2_u12",
+          "openalex_w4309805140_v2_u17"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_random_matrix_prediction_needs_ensemble_and_arithmetic",
+        "title": "Random matrices predicted missing moment constants but only at a statistical interface"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Arithmetic factors must first be separated; random matrices model the remaining universal component.",
+          "line_end": 658,
+          "line_start": 613,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The moment-factor formula is readable, though superscripts and factorials should be verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses exact Haar averages of unitary characteristic polynomials to supply the previously unexplained combinatorial factors in all even moments of zeta, including agreement with independently conjectured low moments.",
+          "source_id": "conrey2003_notices",
+          "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Characteristic-polynomial moments predict the missing constants in zeta moments",
+          "unit_artifact_relpath": "depth/units/conrey2003_notices_v2_u12.txt",
+          "unit_bytes": 4340,
+          "unit_id": "conrey2003_notices_v2_u12",
+          "unit_sha256": "347b81bfccb796ddd2aed0ae754affbfb3e23b677229763ed87de19c842ab7ce",
+          "unit_type": "model-based prediction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_notices_v2_u12.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "After source-specific arithmetic factors are separated from zeta moments, exact Haar averages of unitary characteristic polynomials supply the previously unexplained combinatorial factors. The solvable matrix ensemble therefore models a putatively universal fluctuation component while leaving arithmetic outside the model. Agreement with known and independently conjectured low moments supports predictions for higher constants but does not prove the corresponding zeta asymptotics.",
+            "nonparaphrase_operation": "It decomposes the prediction into arithmetic and ensemble components and identifies which factor the random-matrix representation can and cannot supply.",
+            "quality_reason": "Accepted because it preserves the concrete moment mechanism and does not promote model agreement to a theorem about zeta.",
+            "source_support": "The source defines the even moments, identifies the arithmetic part and factors g_k, and states that Keating–Snaith's exact unitary averages reproduce low values and predict all g_k. Product typography and factorials require scan checking.",
+            "speculation_status": "Higher zeta-moment formulas are model-based conjectures; exact Haar calculations are proved only on the matrix side."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_537f2623cffc553e88123d65d9b2083a8ccce1cf4210c036140db308b1285764",
+            "dossier_sha256": "30f3851f8971a92f6a4b762bb98572e50faf81c1a9bc59c7e0eafee6839e47c1"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The conclusion is probabilistic and model-conditional; the recipe supersedes RMT for precise arithmetic terms.",
+          "line_end": 1912,
+          "line_start": 1823,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "One ratios display is formula-heavy; the case distinction is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Classifies exact leading agreement, arithmetic-factor agreement, and deterministic failure, then shows why exponentially rare counterexamples need not occur in the prescribed random sample.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Statistical rarity rescues predictions even when deterministic unitary analogues fail",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u17.txt",
+          "unit_bytes": 5132,
+          "unit_id": "openalex_w4309805140_v2_u17",
+          "unit_sha256": "aeeb44fc159d352b5514fa4490cdc2d97824d87d09058104f58347a0bf6e2099",
+          "unit_type": "analogy audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u17.txt",
+          "source_title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: RMT comparisons may agree to leading order, agree after an arithmetic factor, or fail for deterministic unitary polynomials. The span gives matching leading ratio expressions and a density-one linear-combination result, but also unitary polynomials violating the Lindelof analogue. Configurations with all zeros in a fixed semicircle or a fixed empty arc have qualitative probability exp(-cN^2), negligible among the exp(N)-scale sample prescribed by the model. Interpretation: the transferable object is the probability law together with its sampling regime, not every member of the deterministic model class. Boundary: the rarity calculation is model-conditional, and recipes or ratios conjectures are preferred for precise arithmetic terms.",
+            "nonparaphrase_operation": "Tests a deterministic counterexample against the modeled sampling scale, distinguishing logical possibility from statistical relevance.",
+            "quality_reason": "Accepted: the two exponential scales make the conceptual operation concrete, falsifiable, and correctly scoped.",
+            "source_support": "The three-case classification, explicit counterexamples, CUE product-density estimate, and comparison with the Keating-Snaith sample count state the mechanism.",
+            "speculation_status": "The rarity argument remains qualitative and conditional on the Haar model; no claim is made about impossible configurations."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_957abe1b5bed7c84f514bbcd4385c34857ec01ec74c9ef4ec51c791ed028a257",
+            "dossier_sha256": "65eff416d28fabfebe521e5b0920bcb30105a3053c5c10ca887dd51def8a64cc"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Bombieri argues that zeta is a prototype and that functional equations and Euler products often come from modular parametrization or simultaneous Laplacian-Hecke eigenstructure, with establishing those sources already difficult; the Selberg class abstracts the shared analytic package and primitive factorization, but leaves the tasks of proving its members arithmetic and proving prime-coefficient orthogonality or a prime number theorem.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "Enlarging the problem exposes reusable structure, yet transfers the proof burden from analyzing zeta in isolation to recognizing which analytic objects genuinely arise arithmetically and controlling their primitive interactions.",
+        "limits": "Selberg-class axioms do not prove that every member is arithmetic, do not supply the conjectured orthogonality, and do not imply RH. The abstraction also does not resolve Bombieri's warning that some Maass L-functions lack a direct geometric origin.",
+        "parent_unit_ids": [
+          "b25_bombieri2000_u04",
+          "aim2004_resource_v2u05"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_generalization_moves_burden_to_membership",
+        "title": "Generalizing zeta moved the obstruction from one function to class membership and orthogonality"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the significance unit because the generalization is both a consequence and a methodological obstruction.",
+          "line_end": 257,
+          "line_start": 197,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low to medium; mostly prose with one Hecke-series definition.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates arithmetic, automorphic, and Maass L-functions, emphasizes that even analytic continuation may encode deep modularity, and argues that no known RH instance makes classical zeta evidently easier.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zeta is a prototype, and solving it may require the general L-function problem",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u04.txt",
+          "unit_bytes": 4562,
+          "unit_id": "b25_bombieri2000_u04",
+          "unit_sha256": "2868d4a36af596c44cfaf00d5b4253ce29cbf0fbac96942125f64888b00e94d2",
+          "unit_type": "scope and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u04.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Generalization is not only enlargement of scope; it can expose the missing invariant. The analytic package shared by L-functions may be easier to understand through its sources—geometry, automorphy, Hecke action—even though proving membership in that package is itself difficult.",
+            "nonparaphrase_operation": "Modular parametrization bridges elliptic curves to functional equations, while simultaneous Laplacian and Hecke eigenfunctions bridge Maass waveforms to Euler products. These bridges preserve arithmetic structure but relocate the burden to modularity or spectral theory.",
+            "quality_reason": "The span distinguishes arithmetic or geometric global L-functions from Maass-form L-functions, connects elliptic-curve functional equations to modularity, and defines Maass L-functions through simultaneous Laplacian and Hecke eigenfunctions. It explicitly says zeta does not appear easier than Dirichlet L-functions and may require more general problems and new ideas. The phrase 'missing invariant' is interpretive, but the output supplies the concrete candidates geometry, automorphy, and Hecke action and preserves the Maass boundary.",
+            "source_support": "The source distinguishes global L-functions attached to arithmetic or automorphic objects from Maass-form L-functions that lack an evident geometric origin. It notes that analytic continuation and functional equations are known only in special cases, illustrates their link to modularity for elliptic curves, and says no L-function RH instance was then known to be proved or disproved.",
+            "speculation_status": "The analogy with geometric L-functions has a sharp boundary at nongeometric Maass forms. The source offers a strategic diagnosis, not a theorem that classical ζ can only be solved through the general theory. The Hecke-series typography is degraded, but the source's scope claim and its warning that entirely new ideas may be needed are clear and historically dated. Treating generalization as a search for shared structure rather than mere scope enlargement is a reasonable strategic inference. The Hecke-series extraction is damaged, and the output correctly avoids formula-level reliance."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the implication from primitive orthogonality to prime-number theorems and uniqueness.",
+          "line_end": 666,
+          "line_start": 571,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact axiom notation and prime sums should be checked against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Packages Dirichlet series, continuation, reflection, Euler product, and Ramanujan growth into an axiomatic class, then explains primitive factorization and conjectural orthogonality.",
+          "source_id": "aim2004_resource",
+          "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+          "source_page_markers_inside_unit": [
+            12,
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Selberg-class axioms, primitive factorization, and orthogonality conjectures",
+          "unit_artifact_relpath": "depth/units/aim2004_resource_v2u05.txt",
+          "unit_bytes": 4313,
+          "unit_id": "aim2004_resource_v2u05",
+          "unit_sha256": "0dd9b27957652e17f9012c080c0d17ba06a9d13eb6d2e95138bcef8ba2dae0b7",
+          "unit_type": "axiomatic-classification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u05.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Axiomatization separates the proposed essence of an arithmetic L-function from its construction, and primitive factorization supplies a candidate irreducible vocabulary.",
+            "nonparaphrase_operation": "Prime-coefficient inner products bridge analytic functions to an orthogonality geometry that would force uniqueness and prime-number theorems.",
+            "quality_reason": "The span states the five Selberg-class axioms and Selberg's prime-coefficient conjectures for primitive elements. It states the orthonormal-system interpretation and consequences for uniqueness, Artin holomorphy, and a shifted prime-number theorem. No conjectural orthogonality consequence is mislabeled as proved. The abstraction is source-specific because it depends on the listed axioms, primitive factors, and prime-coefficient sums.",
+            "source_support": "The class requires a Dirichlet series, controlled continuation, a completed functional equation, an Euler product, and Ramanujan-type coefficient growth; Selberg then conjectures prime-coefficient orthogonality for primitives.",
+            "speculation_status": "The identification of the Selberg class with arithmetic or automorphic L-functions and the orthogonality consequences remain conjectural in this span. Exact axiom notation and prime sums are OCR-sensitive and should be checked before quotation. Calling primitive functions candidate atoms of a product-stable class is a reasonable abstraction of the source's primitive-factor language. Exact axiom and prime-sum notation is degraded, but the prose status of the conjectures is clear."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+            "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "In the de Branges route, xi supplies several required entire-function and monotonicity features but the decisive shifted-inner-product positivity condition is false; in the semi-local Hardy route, local-factor ratios have unit modulus on the critical line but fail boundedness and the proposed sign inequality is false.",
+        "generation_panel": "history_obstructions",
+        "historical_or_program_relation": "Both episodes isolate the same proof-design error at different analytic interfaces: attractive symmetry or boundary behavior does not automatically extend to the global positivity/boundedness needed to force zero location.",
+        "limits": "The de Branges space condition and the local-factor Hardy condition concern different functions, spaces, and inequalities, so this is a shared obstruction pattern rather than one counterexample or theorem. Neither failure rules out other Hilbert-space or positivity formulations of RH.",
+        "parent_unit_ids": [
+          "aim2004_resource_v2u19",
+          "connes_consani2019_scaling_hamiltonian_v2_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_history_obstructions_boundary_structure_without_global_sign",
+        "title": "Two Hilbert-space routes failed at the extra global property their boundary structure suggested"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserves the exact epistemic status: the implications to RH are valid, but the antecedents are false.",
+          "line_end": 1569,
+          "line_start": 1515,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The de Branges kernel and inner-product formulas require scan checking, while the refutation statements are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts Turán's zero-free Dirichlet-polynomial condition and de Branges-space positivity with results showing each proposed sufficient condition fails.",
+          "source_id": "aim2004_resource",
+          "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+          "source_page_markers_inside_unit": [
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two attractive RH routes blocked by counterexamples",
+          "unit_artifact_relpath": "depth/units/aim2004_resource_v2u19.txt",
+          "unit_bytes": 3349,
+          "unit_id": "aim2004_resource_v2u19",
+          "unit_sha256": "921e4f97d18e5b381e69e19da6d76c51319204ce78ebcc9b2b3c352d526fe06b",
+          "unit_type": "refuted-sufficient-condition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u19.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The counterexamples separate an attractive representation from the extra positivity or zero-free property one hoped it possessed.",
+            "nonparaphrase_operation": "Dirichlet partial sums approximate zeta, while de Branges reproducing-kernel spaces translate zero-line conclusions into a Hilbert-space positivity condition.",
+            "quality_reason": "The span states Turan's sufficient zero-free conditions for zeta partial sums and Montgomery's zeros contradicting them. It states a de Branges-space positivity condition that would imply the desired zero-line conclusion and reports that the condition is not satisfied. No weakened replacement condition is claimed to work. The output performs nontrivial logical diagnosis and does not merely repeat 'unsuccessful attack.'",
+            "source_support": "Turán's zero-free condition for partial zeta sums would imply RH, but Montgomery proves such sums have forbidden zeros; a de Branges-space positivity condition would also imply RH, but is shown false.",
+            "speculation_status": "The antecedents, not the implications, are refuted; weakening them would require a new argument showing enough force remains. The de Branges formulas need scan checking, while the refutation statements are clear. Interpreting each failure as refuting the hoped-for antecedent rather than the implication is exactly the useful epistemic distinction. The de Branges kernel and inner-product formulas are extraction-sensitive, but the refutations are clear."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+            "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Separates failure of the proof device from direct falsity of the unrestricted inequality.",
+          "line_end": 797,
+          "line_start": 718,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The final counterexample uses Figure 8; exact gamma-factor ratios and pole locations should be checked from the source.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Both finite-prime and archimedean ratios are holomorphic on the relevant right half-plane yet unbounded, so they are not inner; moreover the desired inequality would force monotonicity of the Riemann-Siegel phase, which its graph contradicts.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Local factor ratios have unit boundary modulus without Hardy boundedness",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u08.txt",
+          "unit_bytes": 4205,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u08",
+          "unit_sha256": "df1fb538d35bb77ac46f08619de9764abe0aa23b65d5d0243218ebe367277a94",
+          "unit_type": "obstruction-and-counterexample",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u08.txt",
+          "source_title": "The Scaling Hamiltonian",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit separates a boundary symmetry from the interior norm control needed for operator positivity. A concrete phase counterexample shows that the failure is not merely a missing proof technique.",
+            "nonparaphrase_operation": "Hardy-space boundedness bridges analytic continuation of local factors to invariant-subspace sign; the Riemann-Siegel phase translates the archimedean logarithmic derivative into a testable monotonicity condition.",
+            "quality_reason": "The finite-prime and archimedean ratios are explicitly shown to have unit boundary modulus and be holomorphic but unbounded in the relevant right half-plane. The source separately proves that the unrestricted inequality would force monotonicity of the Riemann-Siegel phase and cites its graph as a counterexample. The graph-dependent nonmonotonicity is reported by the source but cannot be independently checked from the text slice alone. Failure of the unrestricted inequality does not refute corrected inequalities with test-function constraints or global normalization; the output correctly preserves this boundary. The output grounds the obstruction in explicit growth and phase monotonicity, so it is not a generic 'boundary data are insufficient' slogan.",
+            "source_support": "For a finite prime, the ratio (1-p^{-(1-z)})/(1-p^{-z}) has unit boundary modulus and is holomorphic in the right half-plane, but grows like -p^{z-1} on positive real z. The archimedean gamma-factor ratio likewise has unit critical-line modulus and is holomorphic but unbounded, with explicit large even-integer values. Thus neither multiplier is inner. Moreover, the proposed inequality for the single archimedean place would make the Riemann-Siegel angular function monotone, contradicted by its graph.",
+            "speculation_status": "The unrestricted local inequality is false, but this does not rule out a corrected inequality using the missing test-function conditions or global normalization. The unboundedness calculations are explicit. The final nonmonotonicity evidence depends on Figure 8 for its visual witness, and exact gamma ratios are formula-sensitive. The distinction between boundary symmetry and interior Hardy boundedness is a precise conceptual reading of why innerness fails. Gamma ratios, pole locations, and Figure 8 require the retained source for exact verification. The span deliberately separates failure of the proof device from direct falsity of the unrestricted inequality."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+            "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6"
+          }
+        }
+      ]
+    }
+  ]
+}

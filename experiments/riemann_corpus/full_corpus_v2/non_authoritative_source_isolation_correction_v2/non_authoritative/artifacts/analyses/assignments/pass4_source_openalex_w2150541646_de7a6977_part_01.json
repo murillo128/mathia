@@ -1,0 +1,194 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2150541646_de7a6977_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2150541646",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines Lemmas 4–6 because the final rate depends on the preceding uniqueness, geometry, and contour-selection claims rather than on a formal stationary-phase substitution alone.",
+      "line_end": 373,
+      "line_start": 302,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Substantial diagram/contour and formula dependence: the deformation description contains broken radicals and isolated artifacts, and the root condition and rate formula have damaged exponents. Verify exact paths, hypotheses, and constants from the PDF; the qualitative selection mechanism is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under an explicit root-separation condition, the paper classifies all relevant real and complex saddle solutions on a closed level curve, deforms contours through them, applies Laplace asymptotics, and shows that only the outer admissible frequencies determine the exponential rate of the linear form.",
+      "source_id": "openalex_w2150541646",
+      "source_normalized_sha256": "de5f2bb0634f28b4efd76c05ad7052a27edea4604fe8d6d45f6dcdee697584f2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Saddle geometry selects the unique dominant exponential rate of the linear forms",
+      "unit_artifact_relpath": "depth/units/openalex_w2150541646_v2_u07.txt",
+      "unit_bytes": 4491,
+      "unit_id": "openalex_w2150541646_v2_u07",
+      "unit_sha256": "be75b8b952012f5b9c24b74da12dcfdd131ab7a74607b9605d83ed4fdc6d17bf",
+      "unit_type": "saddle-selection-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2150541646_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2150541646",
+        "title": "Irrationality of values of the Riemann zeta function",
+        "authors": [
+          "Wadim Zudilin"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 294,
+          "line_end": 301,
+          "text": "                                   f ′ (τ ) = λπi,         λ ∈ R.                          (17)\n  It follows easily that the polynomial\n                         (τ + c)b (τ − 1)a+b − (τ − c)b (τ + 1)a+b                         (18)\nhas at least one real root on the interval (c, +∞); by µ1 denote such the root nearest\nto τ = c.\n\n6                                       W. ZUDILIN\n\n",
+          "sha256": "fcd92c628a31e59146904088f3a7e0ce8e674c939ff3171b596818e09a5ceb1e"
+        },
+        "after": {
+          "line_start": 374,
+          "line_end": 381,
+          "text": "     5. Estimates for coefficients of linear forms. The values Bk,j , k = 0, ±1,\n. . . , ±n, j = 0, 1, . . . , a − 1, defined in (9) satisfy inequalities\n                           \u0001j                                                  \u0001j (cn)!2b (2n)!a+b−bc\n|Bk,j | ≤ 2(a + bc − b)n        ·       max         |Bk,0 | = 2(a + bc − b)n     ·                    .\n                                    k=0,±1,...,±n                                      n!2(a+b)\nUsing relations (10) and Stirling’s formula, we then get\n   Lemma 7. For the coefficients As = As,n of the linear forms (5) there holds the\nestimate\n",
+          "sha256": "43146bab75a16ea10d262bc4e41812c86e5687a696a662a359d0eba664303b80"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5aa394d34b8393af6219345c335b33149cb0259171b3e2b3982177be4ff753d1",
+        "dossier_sha256": "c248512f5d61c90cb64e303c0654be6cc041605fe225392d6e7a2c26ef057308",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "English contour representation and saddle asymptotics",
+            "line_end": 373,
+            "line_start": 204,
+            "mathematical_role": "Transforms the sums into cotangent contour integrals, scales them to phase-amplitude form, analyzes saddle geometry, and identifies the dominant exponential rate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 373,
+          "line_start": 302,
+          "title": "Saddle geometry selects the unique dominant exponential rate of the linear forms",
+          "unit_id": "openalex_w2150541646_v2_u07",
+          "unit_type": "saddle-selection-mechanism",
+          "why_material": "Under an explicit root-separation condition, the paper classifies all relevant real and complex saddle solutions on a closed level curve, deforms contours through them, applies Laplace asymptotics, and shows that only the outer admissible frequencies determine the exponential rate of the linear form."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Combines Lemmas 4–6 because the final rate depends on the preceding uniqueness, geometry, and contour-selection claims rather than on a formal stationary-phase substitution alone.",
+          "representation_dependency": "Substantial diagram/contour and formula dependence: the deformation description contains broken radicals and isolated artifacts, and the root condition and rate formula have damaged exponents. Verify exact paths, hypotheses, and constants from the PDF; the qualitative selection mechanism is recoverable.",
+          "unit_id": "openalex_w2150541646_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 299,
+            "line_start": 240,
+            "title": "Stirling scaling separates phase and amplitude and decomposes the integral by frequencies",
+            "unit_id": "openalex_w2150541646_v2_u06",
+            "unit_type": "asymptotic-representation-change",
+            "why_material": "After scaling by n and applying Stirling’s formula, the contour integral is expressed through an exponential phase and amplitude. A polynomial identity for the trigonometric factor decomposes it into frequency-indexed integrals whose saddle equation becomes an algebraic root problem."
+          },
+          {
+            "line_end": 405,
+            "line_start": 374,
+            "title": "A second saddle regime sharpens coefficient growth estimates",
+            "unit_id": "openalex_w2150541646_v2_u08",
+            "unit_type": "coefficient-growth-bound",
+            "why_material": "Crude derivative bounds first control all rational coefficients, then auxiliary horizontal contour integrals and a saddle associated with a minimal imaginary root sharpen their exponential growth rate. This supplies the coefficient-size budget required by the later independence criterion and distinguishes it from the saddle controlling linear-form smallness."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof strategy is a tunable balance among prime-adic denominator saving, exponential smallness of the linear form, and exponential growth of its coefficients; irrationality or dimension gain appears only when the combined rate crosses the criterion’s strict threshold.",
+            "limit": "This is a structural synthesis of the paper’s dependency chain, not an independently verified general criterion; exact rates and signs remain scan/PDF dependent.",
+            "parent_local_unit_ids": [
+              "openalex_w2150541646_v2_u04",
+              "openalex_w2150541646_v2_u06",
+              "openalex_w2150541646_v2_u07",
+              "openalex_w2150541646_v2_u08",
+              "openalex_w2150541646_v2_u09"
+            ],
+            "title": "The three-budget irrationality engine"
+          },
+          {
+            "claim": "The saddle selected for decay of the linear form and the imaginary-root saddle used to bound coefficient growth encode distinct sides of the same construction, making their rate comparison more informative than either asymptotic in isolation.",
+            "limit": "The relationship is supported within this source’s construction; it should not be generalized to other irrationality methods without separate evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2150541646_v2_u06",
+              "openalex_w2150541646_v2_u07",
+              "openalex_w2150541646_v2_u08"
+            ],
+            "title": "Different saddle geometries govern usefulness and cost"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 301,
+              "line_start": 300,
+              "reason": "Page header and whitespace before Lemma 4."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2150541646_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2150541646_v2_u07",
+          "spontaneous_reading": "Stationary points do not contribute equally. A root-separation hypothesis classifies the admissible saddles on a closed level curve, contour deformation places each frequency integral through its unique saddle, and Laplace asymptotics reduce the competition to the outer relevant modes; their maximal real phase determines the exponential decay rate of the original linear forms."
+        },
+        "directed": {
+          "unit_id": "openalex_w2150541646_v2_u07",
+          "source_grounded_mathematics": "Under condition (19) on the nearest real root μ_1 beyond c, Lemma 4 lists all solutions of f′(τ)=λπi in the right half-plane and places them on a smooth closed curve defined by Re(f′)=0, with sign information inside and outside. The contours M_λ are deformed through the corresponding saddles. Lemma 5 applies Laplace's method to give the exponential magnitude of J_{n,λ}; Lemma 6 then identifies the limsup rate κ of I_n and explains which outer odd-frequency modes govern it.",
+          "conceptual_reading": "The geometry supplies both admissibility and selection: it proves uniqueness along each frequency and orders saddle contributions by real phase. Dominance is therefore a consequence of the level-curve structure, not simply choosing the visually largest stationary point.",
+          "representation_or_bridge": "The bridge is root condition → saddle classification and level curve → contour deformation → Laplace estimate for each J_{n,λ} → maximization over the modes actually present in the decomposition → exponential rate κ for the linear form.",
+          "boundary_or_failure": "The root-separation inequality, contour shapes, radicals, phase normalization, dominant indices, and rate formula are diagram- and formula-sensitive. The qualitative selection mechanism is reliable, but exact hypotheses and constants require the PDF.",
+          "uncertainty": "Moderate uncertainty about geometric details and dominant-mode indexing; high uncertainty about the exact rate expression."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2150541646_v2_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "Under condition (19) on the nearest real root beyond c, Lemma 4 classifies all right-half-plane solutions of f'(tau)=lambda pi i, places them on a smooth closed level curve, and gives sign information inside and outside it.",
+          "The source deforms each mode contour through its corresponding unique saddle and applies Laplace's method in Lemma 5.",
+          "Lemma 6 identifies the limsup exponential magnitude rate kappa of I_n and shows that the outer modes actually present—lambda=±1 when b=1 and lambda=±(b-2) when b>1—control the result."
+        ],
+        "inference": [
+          "The candidate accurately explains that the level-curve geometry establishes admissibility, uniqueness, and ordering rather than allowing a saddle to be selected heuristically.",
+          "Maximization of the real phase among modes present in the cosine-polynomial decomposition is the correct selection mechanism."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls kappa an 'exponential decay rate' of the original linear forms, but Lemma 6 establishes an exponential magnitude rate; it need not represent decay before the normalization and denominator balance imposed in the final argument."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Outer relevant modes' is acceptable only with the explicit qualification that the top formal coefficient c_b vanishes for b>1, leaving ±(b-2) as the outer modes actually present."
+        ],
+        "context_or_ocr_risk": [
+          "The root-separation inequality, level-curve geometry, contour parametrization, dominant indices, and rate formula are highly diagram- and formula-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'exponential decay rate' with 'exponential magnitude rate'.",
+          "State separately that effective smallness is obtained only after combining this rate with denominator saving and normalization in the final criterion."
+        ]
+      }
+    }
+  ]
+}

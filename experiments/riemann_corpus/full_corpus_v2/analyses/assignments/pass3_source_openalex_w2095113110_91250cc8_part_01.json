@@ -1,0 +1,2392 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2095113110_91250cc8_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2095113110",
+  "unit_count": 17,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The preceding lines supply general random-matrix background; this span contains the source-specific motivation and heuristic mechanism.",
+      "line_end": 144,
+      "line_start": 84,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual claims are prose-recoverable; the displayed ratio at lines 104–121 is formula-layout-dependent and should be scan-checked before formula-exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source separates two research directions—larger Fourier support and lower-order terms—and explains that universal leading behavior can hide family arithmetic. It also records the Ratios recipe of keeping and completing diagonal pieces and differentiating uniformly, together with its strategic value in suggesting how apparently different answers should be grouped.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lower-order terms as arithmetic fingerprints and the Ratios heuristic",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u04.txt",
+      "unit_bytes": 3925,
+      "unit_id": "full_openalex_w2095113110_u04",
+      "unit_sha256": "cff837d40069e1a45b761217de2edb2bd905be8db22a914c2346e7d76a1554b5",
+      "unit_type": "motivation-and-heuristic-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u04.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 76,
+          "line_end": 83,
+          "text": "   For families of L-functions over function fields, the corresponding classical compact\ngroup can be identified through the monodromy. While the situation is less clear for L-\nfunctions over number fields, there has been some recent progress. Dueñez and Miller\n[DM2] show that for sufficiently nice families and sufficiently small support, the main\nterm in the 1-level density is determined by the first and second moments of the Satake\nparameters, and a symmetry constant (which identifies the corresponding classical com-\npact group) may be associated to any nice family such that the symmetry constant of the\nRankin-Selberg convolution of two families is the product of the symmetry constants.\n",
+          "sha256": "fabc42865d24399f0304f632b259aafcfdedf7087fd3c438e3193cae96c327d6"
+        },
+        "after": {
+          "line_start": 145,
+          "line_end": 152,
+          "text": "   Our goal in this paper is to test the predictions of the Ratios Conjecture for a specific\nfamily, that of quadratic Dirichlet characters. We let d be a fundamental discriminant.\nThis means (see §5 of [Da]) that either d is a square-free number congruent to 1 mod-\nulo 4, or d/4 is square-free and congruent to 2 or 3 modulo 4. If χd is the quadratic\ncharacter associated to the fundamental discriminant d, then if χd (−1) = 1 (resp., −1)\nwe say d is even (resp., odd). If d is a fundamental discriminant then it is even (resp.,\nodd) if d > 0 (resp., d < 0). We concentrate on even fundamental discriminants below,\nthough with very few changes our arguments hold for odd discriminants (for example,\n",
+          "sha256": "f5bc6baebaf46a8a372633c2c3ecff9b560f4f8d6c55d2b49d5c81649c016a41"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 315,
+            "line_start": 31,
+            "mathematical_role": "Motivates lower-order terms as arithmetic information, states the Ratios prediction and number-theory comparison, and introduces the explicit-formula reduction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 144,
+          "line_start": 84,
+          "title": "Lower-order terms as arithmetic fingerprints and the Ratios heuristic",
+          "unit_id": "full_openalex_w2095113110_u04",
+          "unit_type": "motivation-and-heuristic-method",
+          "why_material": "The source separates two research directions—larger Fourier support and lower-order terms—and explains that universal leading behavior can hide family arithmetic. It also records the Ratios recipe of keeping and completing diagonal pieces and differentiating uniformly, together with its strategic value in suggesting how apparently different answers should be grouped."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The preceding lines supply general random-matrix background; this span contains the source-specific motivation and heuristic mechanism.",
+          "representation_dependency": "The conceptual claims are prose-recoverable; the displayed ratio at lines 104–121 is formula-layout-dependent and should be scan-checked before formula-exact reuse.",
+          "unit_id": "full_openalex_w2095113110_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 224,
+            "line_start": 155,
+            "title": "Ratios-Conjecture prediction for the symplectic one-level density",
+            "unit_id": "full_openalex_w2095113110_u01",
+            "unit_type": "conjecture-vs-density comparison",
+            "why_material": "Defines the averaging conventions and states the conditional one-level-density formula, its arithmetic Euler factor, and its reduction to the USp scaling-limit density. This is the prediction against which the rest of the source is organized."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A detailed heuristic prediction becomes testable by translating zeros to prime powers, splitting by parity, recognizing even terms as the predicted zeta and arithmetic factors, and proving that the odd remainder is below the desired scale.",
+            "limit": "The agreement is family-, support-, and error-budget-specific; it does not prove the Ratios Conjecture in general.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u04",
+              "full_openalex_w2095113110_u01",
+              "full_openalex_w2095113110_u06",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u02",
+              "full_openalex_w2095113110_u03",
+              "full_openalex_w2095113110_u12",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Prediction-to-proof matching pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 83,
+              "line_start": 31,
+              "reason": "General random-matrix and family-symmetry background needed to orient the one-level statistic."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 154,
+              "line_start": 145,
+              "reason": "Defines the quadratic-character family and parity convention for the carried theorem unit."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u04",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u04",
+          "spontaneous_reading": "The Ratios recipe acts as a conjectural compression device: discard off-diagonal pieces, complete the retained diagonal contribution, and obtain a detailed target whose lower-order terms expose family arithmetic hidden by the universal leading density."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u04",
+          "source_grounded_mathematics": "The source contrasts enlarging Fourier support with extracting lower-order one-level-density terms, attributes the universal main term to first and second Satake-parameter moments, and describes a ratios-of-shifted-L-functions heuristic based on approximate functional equations, retained diagonal terms, completion, and uniform differentiation.",
+          "conceptual_reading": "The useful decomposition is universal symmetry data versus arithmetic fingerprints: a common leading law can coexist with family-specific convergence corrections, so the lower-order expansion is the discriminating object.",
+          "representation_or_bridge": "A shifted-ratio family average is differentiated into a one-level-density prediction; that predicted normal form then guides regrouping of number-theoretic terms that initially look unlike their random-matrix counterparts.",
+          "boundary_or_failure": "The Ratios Conjecture is explicitly a prediction rather than a proof, and retaining only diagonal pieces could omit information even when the completed expression is strikingly accurate.",
+          "uncertainty": "The prose mechanism is clear, but the displayed ratio, parameter ranges, and exact error normalization are formula-layout-sensitive and require scan verification before literal reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Continues the prediction in u01 and records both the tested accuracy and a source-specific arithmetic interpretation of a lower-order term.",
+      "line_end": 275,
+      "line_start": 225,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and error exponents are readable, but the exact displayed integral at lines 225–238 should be checked against the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects Fourier-support width to the conditional residue error, states the unconditional agreement theorem for two quadratic-character families, and identifies a lower-order term whose behavior is controlled by nontrivial zeros of the zeta function.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Support controls the comparison error, while zeta zeros enter a lower-order term",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u05.txt",
+      "unit_bytes": 3605,
+      "unit_id": "full_openalex_w2095113110_u05",
+      "unit_sha256": "ed400887efc34671e57edc536672723f1464c5fd1f2bb4150f212019638ffdd2",
+      "unit_type": "support-sensitive-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u05.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 217,
+          "line_end": 224,
+          "text": "   1 XX           log X                  sin(2πx)              1\n             g γd         =     g(x) 1 −            dx + O           , (1.5)\n  X ∗ d≤X γ         2π       −∞             2πx              log X\n             d\n\n\nwhich is the 1-level density for the scaling limit of USp(2N). If supp(b     g ) ⊂ (−1, 1),\nthen the integral of g(x) against − sin(2πx)/2πx is −g(0)/2.\n",
+          "sha256": "5a6ab373318f461b934255a1feed2b7eac50d32323c6d3ff6dcdf02ff4fbf9ae"
+        },
+        "after": {
+          "line_start": 276,
+          "line_end": 283,
+          "text": "  The proof of Theorem 1.2 starts with the Explicit Formula, which relates sums over\nzeros to sums over primes (for completeness a proof is given in Appendix A). For\nconvenience to researchers interested in odd fundamental discriminants, we state it in\nmore generality than we need.\nTheorem 1.5 (Explicit Formula for a family of Quadratic Dirichlet Characters). Let g\nbe an even Schwartz test function such that gb has finite support. For d a fundamental\ndiscriminant let a(χd ) = 0 if d is even (χd (−1) = 1) and 1 otherwise. Consider a\nfamily F (X) of fundamental discriminants at most X in absolute value. We have\n",
+          "sha256": "fef171905a2c540157ae6dc959526bc50eb1a22dea01261e613de96057bb4274"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 315,
+            "line_start": 31,
+            "mathematical_role": "Motivates lower-order terms as arithmetic information, states the Ratios prediction and number-theory comparison, and introduces the explicit-formula reduction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 275,
+          "line_start": 225,
+          "title": "Support controls the comparison error, while zeta zeros enter a lower-order term",
+          "unit_id": "full_openalex_w2095113110_u05",
+          "unit_type": "support-sensitive-comparison",
+          "why_material": "Connects Fourier-support width to the conditional residue error, states the unconditional agreement theorem for two quadratic-character families, and identifies a lower-order term whose behavior is controlled by nontrivial zeros of the zeta function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Continues the prediction in u01 and records both the tested accuracy and a source-specific arithmetic interpretation of a lower-order term.",
+          "representation_dependency": "Prose and error exponents are readable, but the exact displayed integral at lines 225–238 should be checked against the page image.",
+          "unit_id": "full_openalex_w2095113110_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 224,
+            "line_start": 155,
+            "title": "Ratios-Conjecture prediction for the symplectic one-level density",
+            "unit_id": "full_openalex_w2095113110_u01",
+            "unit_type": "conjecture-vs-density comparison",
+            "why_material": "Defines the averaging conventions and states the conditional one-level-density formula, its arithmetic Euler factor, and its reduction to the USp scaling-limit density. This is the prediction against which the rest of the source is organized."
+          },
+          {
+            "line_end": 314,
+            "line_start": 276,
+            "title": "The explicit formula converts a zero statistic into conductor and prime-power terms",
+            "unit_id": "full_openalex_w2095113110_u06",
+            "unit_type": "representation-bridge",
+            "why_material": "States the family explicit formula and explains the comparison architecture: conductor and Gamma terms already match, quadraticity reduces prime powers to the behaviors of χ_d(p) and χ_d(p)^2, and the Ratios answer suggests non-obvious simplifications of those number-theory sums."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u05",
+          "spontaneous_reading": "Fourier support is the adjustable resolution knob: widening it exposes more arithmetic but weakens the controlled comparison error, while a particular lower-order channel records the nontrivial zeros of ζ."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u05",
+          "source_grounded_mathematics": "Under stated support restrictions, the source compares one-level densities for two quadratic-character families with the Ratios prediction, attaining square-root-scale agreement in the second family when σ is below one third; it also identifies a ζ′/ζ term whose behavior is controlled by nontrivial ζ-zeros.",
+          "conceptual_reading": "Support is simultaneously observational bandwidth and proof budget: it decides which frequencies can be seen and how much power saving survives in the remainder.",
+          "representation_or_bridge": "The one-level statistic packages low-lying L-function zeros into a test-function integral, and the logarithmic derivative ζ′/ζ imports the zero set of ζ into a family-specific secondary term.",
+          "boundary_or_failure": "The agreement is family- and support-dependent; it supports the Ratios Conjecture at the tested error scale but does not establish that conjecture generally.",
+          "uncertainty": "The theorem’s qualitative comparisons and support thresholds are readable, while the opening integral and exact exponents should be checked against the page image."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the principal bridge from spectral zeros to arithmetic character sums.",
+      "line_end": 314,
+      "line_start": 276,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The bridge is prose-recoverable; the displayed explicit formula is dense and requires scan verification for exact normalization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the family explicit formula and explains the comparison architecture: conductor and Gamma terms already match, quadraticity reduces prime powers to the behaviors of χ_d(p) and χ_d(p)^2, and the Ratios answer suggests non-obvious simplifications of those number-theory sums.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The explicit formula converts a zero statistic into conductor and prime-power terms",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u06.txt",
+      "unit_bytes": 2619,
+      "unit_id": "full_openalex_w2095113110_u06",
+      "unit_sha256": "99809cf253c52aa07486b1ccea0f48943123b925f65d4dcd9ea19b2dc254086e",
+      "unit_type": "representation-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u06.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 268,
+          "line_end": 275,
+          "text": "Remark 1.4 (Influence of zeros of ζ(s) on lower order terms). From the expansion\nin (1.3) we see that one of the lower order terms (arising from the integral of g(τ )\nagainst ζ ′ (1 + 4πiτ / log X)/ζ(1 + 4πiτ / log X)) in the 1-level density for the family\nof quadratic Dirichlet characters is controlled by the non-trivial zeros of ζ(s). This\nphenomenon has been noted by other researchers (Bogomolny, Conrey, Keating, Ru-\nbinstein, Snaith); see [CS1, BoKe, HKS, Rub2] for more details, especially [Rub2] for\na plot of the influence of zeros of ζ(s) on zeros of L-functions of quadratic Dirichlet\ncharacters.\n",
+          "sha256": "95b346ab09a2a234554c8e60169a7a6f17ae3549d22908d6620fe8f4bb8fa020"
+        },
+        "after": {
+          "line_start": 315,
+          "line_end": 322,
+          "text": "\n          2. A NALYSIS OF THE TERMS FROM THE R ATIOS C ONJECTURE .\n   We analyze the terms in the 1-level density from the Ratios Conjecture (Theorem\n1.1). The first piece (involving log(d/π) and Γ′ /Γ factors) is already matched with the\nterms in the Explicit Formula arising from the conductors and Γ-factors in the functional\nequation. In §3 we match the next two terms (the integral of g(τ ) against ζ ′/ζ and A′D )\nto the contributions from the sum over χd (p)k for k even; we do this for test functions\nwith arbitrary support. The number theory is almost equal to this; the difference is the\n",
+          "sha256": "53b35530bb8a31f287a2e6d7e0751977964ac3ecc0cca209a66f50ce40031c4b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 315,
+            "line_start": 31,
+            "mathematical_role": "Motivates lower-order terms as arithmetic information, states the Ratios prediction and number-theory comparison, and introduces the explicit-formula reduction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 314,
+          "line_start": 276,
+          "title": "The explicit formula converts a zero statistic into conductor and prime-power terms",
+          "unit_id": "full_openalex_w2095113110_u06",
+          "unit_type": "representation-bridge",
+          "why_material": "States the family explicit formula and explains the comparison architecture: conductor and Gamma terms already match, quadraticity reduces prime powers to the behaviors of χ_d(p) and χ_d(p)^2, and the Ratios answer suggests non-obvious simplifications of those number-theory sums."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the principal bridge from spectral zeros to arithmetic character sums.",
+          "representation_dependency": "The bridge is prose-recoverable; the displayed explicit formula is dense and requires scan verification for exact normalization.",
+          "unit_id": "full_openalex_w2095113110_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 275,
+            "line_start": 225,
+            "title": "Support controls the comparison error, while zeta zeros enter a lower-order term",
+            "unit_id": "full_openalex_w2095113110_u05",
+            "unit_type": "support-sensitive-comparison",
+            "why_material": "Connects Fourier-support width to the conditional residue error, states the unconditional agreement theorem for two quadratic-character families, and identifies a lower-order term whose behavior is controlled by nontrivial zeros of the zeta function."
+          },
+          {
+            "line_end": 364,
+            "line_start": 316,
+            "title": "Isolating the unmatched Ratios term and forecasting two odd-sum error routes",
+            "unit_id": "full_openalex_w2095113110_u07",
+            "unit_type": "proof-architecture-and-obstruction",
+            "why_material": "Decomposes the Ratios-side expression into already matched pieces and a hardest residual integral R(g;X), identifies its pole contribution, and relates its RH-dependent support error to the weaker Jutila route and the stronger Poisson route on the number-theory side."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A detailed heuristic prediction becomes testable by translating zeros to prime powers, splitting by parity, recognizing even terms as the predicted zeta and arithmetic factors, and proving that the odd remainder is below the desired scale.",
+            "limit": "The agreement is family-, support-, and error-budget-specific; it does not prove the Ratios Conjecture in general.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u04",
+              "full_openalex_w2095113110_u01",
+              "full_openalex_w2095113110_u06",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u02",
+              "full_openalex_w2095113110_u03",
+              "full_openalex_w2095113110_u12",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Prediction-to-proof matching pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u06",
+          "spontaneous_reading": "The explicit formula is the decisive change of coordinates: it replaces a spectral sum over zeros by conductor, Gamma, and prime-power terms, after which quadraticity collapses the unresolved arithmetic to even-versus-odd character behavior."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u06",
+          "source_grounded_mathematics": "For an even Schwartz test function with compactly supported Fourier transform, Theorem 1.5 expresses the averaged scaled-zero sum through conductor and Gamma-factor integrals plus sums of χ_d(p)^k log p weighted at prime powers.",
+          "conceptual_reading": "A hard comparison becomes modular once already-matching archimedean and conductor contributions are separated from the genuinely arithmetic prime-power contribution.",
+          "representation_or_bridge": "The explicit formula bridges spectral zeros and primes; because χ_d is quadratic, even powers reduce to χ_d(p)^2 and odd powers to χ_d(p), creating the parity split used later.",
+          "boundary_or_failure": "The identity reorganizes the problem but does not itself bound the character sums or prove agreement with the conjectural expression.",
+          "uncertainty": "The bridge and parity reduction are clear; exact scaling, Fourier normalization, and displayed coefficients are dense and require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Sets the agenda for both the contour analysis and the later parity split.",
+      "line_end": 364,
+      "line_start": 316,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The decomposition and comparison are clear in prose; R(g;X), its Euler product, and exact exponents are formula-layout-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes the Ratios-side expression into already matched pieces and a hardest residual integral R(g;X), identifies its pole contribution, and relates its RH-dependent support error to the weaker Jutila route and the stronger Poisson route on the number-theory side.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Isolating the unmatched Ratios term and forecasting two odd-sum error routes",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u07.txt",
+      "unit_bytes": 3506,
+      "unit_id": "full_openalex_w2095113110_u07",
+      "unit_sha256": "f07f3eec77b5823ef27177cd458218b364c6f8d8cfc9df7be26729233cbe259d",
+      "unit_type": "proof-architecture-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u07.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 308,
+          "line_end": 315,
+          "text": "\nwith the remaining terms in the Ratios Conjecture. As our characters are quadratic, this\nreduces to understanding sums of χd (p) and χd (p)2 . We first analyze the terms from\nthe Ratios Conjecture in §2 and then we analyze the character sums in §3. We proceed\nin this order as one of the main uses of the Ratios Conjecture is in predicting simple\nforms of the answer; in particular, it suggests non-obvious simplifications of the number\ntheory sums.\n\n",
+          "sha256": "b30d354c71c09d78c35fd9d0bf624417d0594ee168623b2426222cf56eb5cff5"
+        },
+        "after": {
+          "line_start": 365,
+          "line_end": 372,
+          "text": "\n<!-- source-page: 7 -->\n\nA SYMPLECTIC TEST OF THE L-FUNCTIONS RATIOS CONJECTURE                      7\n\nRemark 2.3. The proof of Lemma 2.1 follows from shifting contours and keeping\ntrack of poles of ratios of Gamma and zeta functions. We can prove a related result with\nsignificantly less work. Specifically, if for supp(b\n",
+          "sha256": "f057b835ab9899e3d5f45da988991d1c4b65a28402cd1f5f1c4836a98b250a58"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Analysis of the terms from the Ratios Conjecture",
+            "line_end": 691,
+            "line_start": 316,
+            "mathematical_role": "Matches conductor and even-prime-power pieces, isolates the difficult oscillatory term, evaluates it by contour shifting, and extracts its support-sensitive secondary term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 364,
+          "line_start": 316,
+          "title": "Isolating the unmatched Ratios term and forecasting two odd-sum error routes",
+          "unit_id": "full_openalex_w2095113110_u07",
+          "unit_type": "proof-architecture-and-obstruction",
+          "why_material": "Decomposes the Ratios-side expression into already matched pieces and a hardest residual integral R(g;X), identifies its pole contribution, and relates its RH-dependent support error to the weaker Jutila route and the stronger Poisson route on the number-theory side."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Sets the agenda for both the contour analysis and the later parity split.",
+          "representation_dependency": "The decomposition and comparison are clear in prose; R(g;X), its Euler product, and exact exponents are formula-layout-dependent.",
+          "unit_id": "full_openalex_w2095113110_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 314,
+            "line_start": 276,
+            "title": "The explicit formula converts a zero statistic into conductor and prime-power terms",
+            "unit_id": "full_openalex_w2095113110_u06",
+            "unit_type": "representation-bridge",
+            "why_material": "States the family explicit formula and explains the comparison architecture: conductor and Gamma terms already match, quadraticity reduces prime powers to the behaviors of χ_d(p) and χ_d(p)^2, and the Ratios answer suggests non-obvious simplifications of those number-theory sums."
+          },
+          {
+            "line_end": 403,
+            "line_start": 370,
+            "title": "Fourier support annihilates the asymptotic tail and exposes finite-size corrections",
+            "unit_id": "full_openalex_w2095113110_u08",
+            "unit_type": "compact-support-annihilation",
+            "why_material": "Gives a lower-cost alternative mechanism: truncate by Schwartz decay, Taylor-expand fixedly many factors, and interpret the resulting integrals as Fourier transforms of derivatives evaluated outside support. It also explains why the first 1/log X term matters for finite matrix-size modeling."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A detailed heuristic prediction becomes testable by translating zeros to prime powers, splitting by parity, recognizing even terms as the predicted zeta and arithmetic factors, and proving that the odd remainder is below the desired scale.",
+            "limit": "The agreement is family-, support-, and error-budget-specific; it does not prove the Ratios Conjecture in general.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u04",
+              "full_openalex_w2095113110_u01",
+              "full_openalex_w2095113110_u06",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u02",
+              "full_openalex_w2095113110_u03",
+              "full_openalex_w2095113110_u12",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Prediction-to-proof matching pipeline"
+          },
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u07",
+          "spontaneous_reading": "After easy terms are matched, the proof is organized around a single residual integral R(g;X): its zeta pole supplies the symmetry term, while every stronger error claim is pushed onto contour control and the odd-character bottleneck."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u07",
+          "source_grounded_mathematics": "The source matches conductor and Gamma terms directly, assigns the ζ′/ζ and arithmetic-factor derivative to even prime powers, and isolates a remaining Ratios integral R(g;X) whose pole contributes −g(0)/2; under RH its error improves with restricted support.",
+          "conceptual_reading": "The residual is a proof-organizing obstruction: isolating it prevents already-understood structure from being repeatedly reanalyzed and makes the needed analytic input explicit.",
+          "representation_or_bridge": "The Ratios-side contour problem is paired with two number-theory routes for odd powers—Jutila’s mean-square estimate and a sharper Poisson-shortening argument—through their support-dependent error scales.",
+          "boundary_or_failure": "The strongest residual estimate is RH-dependent, while the unconditional replacement is weaker; the Poisson route also requires substantially more technical bookkeeping.",
+          "uncertainty": "The decomposition is clear in prose, but R(g;X), its Euler product, pole signs, and precise powers are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A methodological remark rather than the sharp contour proof; it clarifies what compact support is doing structurally.",
+      "line_end": 403,
+      "line_start": 370,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The three-step mechanism is prose-recoverable; the intermediate expansion at lines 382–391 should be scan-checked if used literally.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives a lower-cost alternative mechanism: truncate by Schwartz decay, Taylor-expand fixedly many factors, and interpret the resulting integrals as Fourier transforms of derivatives evaluated outside support. It also explains why the first 1/log X term matters for finite matrix-size modeling.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier support annihilates the asymptotic tail and exposes finite-size corrections",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u08.txt",
+      "unit_bytes": 2481,
+      "unit_id": "full_openalex_w2095113110_u08",
+      "unit_sha256": "b063b8020b62783a9373ab07d734f7679d297f661f319e65de00621f3993c8b7",
+      "unit_type": "compact-support-annihilation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u08.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 362,
+          "line_end": 369,
+          "text": "                    3\nbound of O(X −(1− 2 σ) ) by using Poisson summation to convert long character sums to\nshorter ones (see §3.2.2).\n\n<!-- source-page: 7 -->\n\nA SYMPLECTIC TEST OF THE L-FUNCTIONS RATIOS CONJECTURE                      7\n\n",
+          "sha256": "f89ffc51877de92e1f2049433e29322a967ed42b0cdac823205a044809bf6d76"
+        },
+        "after": {
+          "line_start": 404,
+          "line_end": 411,
+          "text": "2.1. Analysis of R(g; X). Before proving Lemma 2.1 we collect several useful facts.\nLemma 2.4. In all statements below r = 2πiτ / log X and supp(b       g ) ⊂ (−σ, σ) ⊂\n(−1, 1).\n   (1) AD (−r, r) = ζ(2)/ζ(2 − 2r).\n   (2) If |r| ≥ ǫ then |ζ(−3 − 2r)/ζ(−2 − 2r)| ≪ǫ (1 + |r|).\n                                 \u0001                          \u0001−B\n   (3) For w ≥ 0, g τ − iw log2πX ≪ X σw τ 2 + (w log2πX )2     for any B ≥ 0.\n   (4) For 0 < a < b we have |Γ(a ± iy)/Γ(b ± iy)| = Oa,b (1).\n",
+          "sha256": "03d825e280238fd5995ce37ce4b470dd8f4577b4ec06d2472fa13e77c1603067"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Analysis of the terms from the Ratios Conjecture",
+            "line_end": 691,
+            "line_start": 316,
+            "mathematical_role": "Matches conductor and even-prime-power pieces, isolates the difficult oscillatory term, evaluates it by contour shifting, and extracts its support-sensitive secondary term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 403,
+          "line_start": 370,
+          "title": "Fourier support annihilates the asymptotic tail and exposes finite-size corrections",
+          "unit_id": "full_openalex_w2095113110_u08",
+          "unit_type": "compact-support-annihilation",
+          "why_material": "Gives a lower-cost alternative mechanism: truncate by Schwartz decay, Taylor-expand fixedly many factors, and interpret the resulting integrals as Fourier transforms of derivatives evaluated outside support. It also explains why the first 1/log X term matters for finite matrix-size modeling."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A methodological remark rather than the sharp contour proof; it clarifies what compact support is doing structurally.",
+          "representation_dependency": "The three-step mechanism is prose-recoverable; the intermediate expansion at lines 382–391 should be scan-checked if used literally.",
+          "unit_id": "full_openalex_w2095113110_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 364,
+            "line_start": 316,
+            "title": "Isolating the unmatched Ratios term and forecasting two odd-sum error routes",
+            "unit_id": "full_openalex_w2095113110_u07",
+            "unit_type": "proof-architecture-and-obstruction",
+            "why_material": "Decomposes the Ratios-side expression into already matched pieces and a hardest residual integral R(g;X), identifies its pole contribution, and relates its RH-dependent support error to the weaker Jutila route and the stronger Poisson route on the number-theory side."
+          },
+          {
+            "line_end": 548,
+            "line_start": 404,
+            "title": "Contour shifting separates the symmetry residue from zeta-zero errors",
+            "unit_id": "full_openalex_w2095113110_u09",
+            "unit_type": "contour-shift-and-residue-analysis",
+            "why_material": "Simplifies the arithmetic factor to a zeta ratio, supplies complex-shift decay and Gamma-ratio controls, and shifts the residual integral across the pole giving −g(0)/2 and the poles induced by zeta zeros. The support of the Fourier transform then determines the power saving, while the shifted contour is negligible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u08",
+          "spontaneous_reading": "Compact Fourier support does more than truncate frequencies: after a finite Taylor expansion it annihilates every derivative-transform term evaluated near frequency one, turning a complicated tail into arbitrarily high logarithmic saving."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u08",
+          "source_grounded_mathematics": "The alternative argument replaces the discriminant average, restricts |τ| using Schwartz decay, Taylor-expands all factors except g to a fixed finite order, extends the integral back to ℝ, and identifies the resulting integrals as Fourier transforms of derivatives of g outside their support.",
+          "conceptual_reading": "Support becomes an exact annihilation principle rather than merely a decay hypothesis: local expansions in the physical variable are tested at a forbidden Fourier frequency.",
+          "representation_or_bridge": "Taylor coefficients times powers of τ are converted into Fourier derivatives evaluated near frequency one, linking asymptotic expansion to support geometry.",
+          "boundary_or_failure": "This lower-cost route yields errors smaller than any fixed power of log X, not the sharp power-saving contour estimate, and it depends essentially on keeping the Taylor order fixed.",
+          "uncertainty": "The three-step mechanism is secure from the prose; the displayed intermediate expansion and its normalization should be scan-checked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the sharp proof of the residual Ratios term under RH and explicitly distinguishes the universal residue from the zero-driven error.",
+      "line_end": 548,
+      "line_start": 404,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The logical contour structure is readable; pole locations, Gamma/zeta ratios, and powers of X are formula-sensitive and need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Simplifies the arithmetic factor to a zeta ratio, supplies complex-shift decay and Gamma-ratio controls, and shifts the residual integral across the pole giving −g(0)/2 and the poles induced by zeta zeros. The support of the Fourier transform then determines the power saving, while the shifted contour is negligible.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour shifting separates the symmetry residue from zeta-zero errors",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u09.txt",
+      "unit_bytes": 8986,
+      "unit_id": "full_openalex_w2095113110_u09",
+      "unit_sha256": "4d3b98210f45fd9ecb7514236b84906ac96b10b04969260c2cb5a378228e8ec7",
+      "unit_type": "contour-shift-and-residue-analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u09.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 396,
+          "line_end": 403,
+          "text": "   We prove Lemma 2.1 in §2.1; this completes our analysis of the terms from the\nRatios Conjecture. We analyze the lower order term of size 1/ log X (present only if\nsupp(b g ) 6⊂ (−1, 1)) in Lemma 2.6 of §2.2. We explicitly calculate this contribution\nbecause in many applications all that is required are the main and first lower order\nterms. One example of this is that zeros at height T are modeled not by the N → ∞\nscaling limits of a classical compact group but by matrices of size N ∼ log(T /2π)\n[KeSn1, KeSn2]. In fact, even better agreement is obtained by changing N slightly due\nto the first lower order term (see [BBLM, DHKMS]).\n",
+          "sha256": "2c2a59993af2cb20797654c8824959f208933ebc1d4054f8df1eeae8d4972168"
+        },
+        "after": {
+          "line_start": 549,
+          "line_end": 556,
+          "text": "Remark 2.5. We sketch an alternate start of the proof of Lemma 2.1. One difficulty is\nthat R(g; X) is defined as an integral and there is a pole on the line of integration. We\nmay write\n                                                                 \u0001\n                      ζ(s) = (s − 1)−1 + ζ(s) − (s − 1)−1 .                         (2.14)\n                4πiτ\nFor us s = 1 − log X\n                     , so the first factor is just − log X\n",
+          "sha256": "46306988f0ce0a131fb2794178d157243c582006d79710c6cde4ff63bd3deec4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Analysis of the terms from the Ratios Conjecture",
+            "line_end": 691,
+            "line_start": 316,
+            "mathematical_role": "Matches conductor and even-prime-power pieces, isolates the difficult oscillatory term, evaluates it by contour shifting, and extracts its support-sensitive secondary term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 548,
+          "line_start": 404,
+          "title": "Contour shifting separates the symmetry residue from zeta-zero errors",
+          "unit_id": "full_openalex_w2095113110_u09",
+          "unit_type": "contour-shift-and-residue-analysis",
+          "why_material": "Simplifies the arithmetic factor to a zeta ratio, supplies complex-shift decay and Gamma-ratio controls, and shifts the residual integral across the pole giving −g(0)/2 and the poles induced by zeta zeros. The support of the Fourier transform then determines the power saving, while the shifted contour is negligible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the sharp proof of the residual Ratios term under RH and explicitly distinguishes the universal residue from the zero-driven error.",
+          "representation_dependency": "The logical contour structure is readable; pole locations, Gamma/zeta ratios, and powers of X are formula-sensitive and need scan verification.",
+          "unit_id": "full_openalex_w2095113110_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 403,
+            "line_start": 370,
+            "title": "Fourier support annihilates the asymptotic tail and exposes finite-size corrections",
+            "unit_id": "full_openalex_w2095113110_u08",
+            "unit_type": "compact-support-annihilation",
+            "why_material": "Gives a lower-cost alternative mechanism: truncate by Schwartz decay, Taylor-expand fixedly many factors, and interpret the resulting integrals as Fourier transforms of derivatives evaluated outside support. It also explains why the first 1/log X term matters for finite matrix-size modeling."
+          },
+          {
+            "line_end": 576,
+            "line_start": 549,
+            "title": "Subtracting the zeta pole regularizes an integral on the contour",
+            "unit_id": "full_openalex_w2095113110_u10",
+            "unit_type": "singularity-regularization",
+            "why_material": "Shows an alternate local maneuver for a pole lying on the line of integration: split zeta into its principal part and a regular remainder, use evenness to symmetrize the principal-value integral, and recover the sine-kernel contribution −g(0)/2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u09",
+          "spontaneous_reading": "The contour shift spatially separates two meanings carried by the same integral: the pole at the origin yields the universal −g(0)/2 term, whereas crossed denominator zeros generate the support-sensitive arithmetic error."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u09",
+          "source_grounded_mathematics": "The arithmetic factor is simplified to ζ(2)/ζ(2−2r), complex-shift decay for g and bounds for Gamma and zeta ratios support shifting the contour, and residues arise from the ζ-pole and, under RH, zeros of the denominator zeta factor; the terminal contour is negligible.",
+          "conceptual_reading": "Contour location acts as a filter: singularities crossed during deformation classify the main structural contribution separately from zero-driven corrections.",
+          "representation_or_bridge": "Compact Fourier support controls the growth of g off the real axis, converting the geometric distance of the shift into an X-power that determines the residue-error budget.",
+          "boundary_or_failure": "The stated sharp zero-residue bound assumes RH and sufficient support restriction; trivial-zero and cancellation bookkeeping must also be handled on the shifted path.",
+          "uncertainty": "The logical residue structure is readable, but the extracted pole locations, Gamma/zeta arguments, and powers of X are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides a reusable regularization viewpoint complementary to the full contour shift.",
+      "line_end": 576,
+      "line_start": 549,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The pole-subtraction argument is prose-recoverable; signs and Fourier normalization in the displayed integral should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows an alternate local maneuver for a pole lying on the line of integration: split zeta into its principal part and a regular remainder, use evenness to symmetrize the principal-value integral, and recover the sine-kernel contribution −g(0)/2.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subtracting the zeta pole regularizes an integral on the contour",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u10.txt",
+      "unit_bytes": 1692,
+      "unit_id": "full_openalex_w2095113110_u10",
+      "unit_sha256": "f09b54d8a2f2960b63358488c47c2d87b8774e69c24fb3a8fb8fcb49f13214a4",
+      "unit_type": "singularity-regularization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u10.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 541,
+          "line_end": 548,
+          "text": "O(X −1/2+ǫ ).\n\n   The proof is completed by showing that the integral over w = 2 is negligible. We\nuse Lemma B.2 (with z = τ − i2 log2πX ) to show the d-sum is O(X ∗X −2+ǫ ). Arguing\nas above shows the integral is bounded by O(X −2+2σ+ǫ ). (Note: some care is required,\nas there is a pole when w = 2 coming from the trivial zero of ζ(s) at s = −2. The\ncontribution from the residue here is negligible; we could also adjust the contour to\ninclude a semi-circle around w = 2 and use the residue theorem.)                    \u0003\n",
+          "sha256": "d741c86d167791eddf962b48a88e6b6e96af6416e5163cb86d6ce40cc92a08c1"
+        },
+        "after": {
+          "line_start": 577,
+          "line_end": 584,
+          "text": "2.2. Secondary term (of size 1/ log X) of R(g; X).\nLemma 2.6. Let supp(b  g ) ⊂ (−σ, σ); we do not assume σ < 1. Then the 1/ log X term\nin the expansion of R(g; X) is\n                               Γ′ ( 1 )      ′\n                         1 − Γ( 14) + 2 ζζ(2)\n                                          (2)\n                                              − 2γ + 2 log π\n                                   4\n",
+          "sha256": "dac552edb73672a7e30bddc82a683b278a105181378fa46aae65e1a66595a607"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Analysis of the terms from the Ratios Conjecture",
+            "line_end": 691,
+            "line_start": 316,
+            "mathematical_role": "Matches conductor and even-prime-power pieces, isolates the difficult oscillatory term, evaluates it by contour shifting, and extracts its support-sensitive secondary term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 576,
+          "line_start": 549,
+          "title": "Subtracting the zeta pole regularizes an integral on the contour",
+          "unit_id": "full_openalex_w2095113110_u10",
+          "unit_type": "singularity-regularization",
+          "why_material": "Shows an alternate local maneuver for a pole lying on the line of integration: split zeta into its principal part and a regular remainder, use evenness to symmetrize the principal-value integral, and recover the sine-kernel contribution −g(0)/2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides a reusable regularization viewpoint complementary to the full contour shift.",
+          "representation_dependency": "The pole-subtraction argument is prose-recoverable; signs and Fourier normalization in the displayed integral should be checked against the scan.",
+          "unit_id": "full_openalex_w2095113110_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 548,
+            "line_start": 404,
+            "title": "Contour shifting separates the symmetry residue from zeta-zero errors",
+            "unit_id": "full_openalex_w2095113110_u09",
+            "unit_type": "contour-shift-and-residue-analysis",
+            "why_material": "Simplifies the arithmetic factor to a zeta ratio, supplies complex-shift decay and Gamma-ratio controls, and shifts the residual integral across the pole giving −g(0)/2 and the poles induced by zeta zeros. The support of the Fourier transform then determines the power saving, while the shifted contour is negligible."
+          },
+          {
+            "line_end": 688,
+            "line_start": 577,
+            "title": "The first lower-order Ratios term appears only when support reaches frequency one",
+            "unit_id": "full_openalex_w2095113110_u11",
+            "unit_type": "secondary-asymptotic-extraction",
+            "why_material": "Restricts the integral using Schwartz decay, Taylor-expands the Gamma ratio, arithmetic factor, zeta pole, and conductor average, and identifies a 1/log X coefficient multiplying the Fourier transform at 1. It makes the support threshold for the secondary term explicit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u10",
+          "spontaneous_reading": "Subtracting the principal part of ζ turns a pole on the integration line into an explicit sine-kernel integral, leaving a regular remainder that can be estimated by the existing contour machinery."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u10",
+          "source_grounded_mathematics": "The source writes ζ(s) as (s−1)^{-1} plus a regularized remainder, substitutes the relevant linear relation between s and τ, and uses evenness of g to symmetrize the principal-value contribution into an integral against sin(2πτ)/(2πτ), equal to −g(0)/2 under the support hypothesis.",
+          "conceptual_reading": "Singularity subtraction isolates a canonical local contribution before global estimation, making the source of the symmetry term transparent.",
+          "representation_or_bridge": "The Laurent principal part becomes a Fourier sine kernel, connecting local analytic behavior at the ζ-pole to evaluation of the test function at zero.",
+          "boundary_or_failure": "This is only an alternate start: the regular remainder and corrections from the other factors still require analysis comparable to the full proof.",
+          "uncertainty": "The regularization idea is clear; signs and Fourier normalization in the displayed integral need scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uses the conductor average later proved in Appendix B; its main structural point is the factor-by-factor assembly of a secondary asymptotic.",
+      "line_end": 688,
+      "line_start": 577,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The expansion strategy and support threshold are clear; the exact coefficient, constants, and remainders are formula-layout-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Restricts the integral using Schwartz decay, Taylor-expands the Gamma ratio, arithmetic factor, zeta pole, and conductor average, and identifies a 1/log X coefficient multiplying the Fourier transform at 1. It makes the support threshold for the secondary term explicit.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The first lower-order Ratios term appears only when support reaches frequency one",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u11.txt",
+      "unit_bytes": 7957,
+      "unit_id": "full_openalex_w2095113110_u11",
+      "unit_sha256": "922357ce4c0b5613cfeb1c01c5cdbedf80138b8cea60357ed6b1c43dcef6076f",
+      "unit_type": "secondary-asymptotic-extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u11.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 569,
+          "line_end": 576,
+          "text": "<!-- source-page: 10 -->\n\n10                                        STEVEN J. MILLER\n\nwhere the last equality is a consequence of supp(b\n                                                 g ) ⊂ (−1, 1). The other terms from\nthe (s − 1)−1 factor and the terms from the ζ(s) − (s − 1)−1 piece are analyzed in a\nsimilar manner as the terms in the proof of Lemma 2.1.\n",
+          "sha256": "298fa189cb65ddca2e9b696d6d8c2717213b8b80ea9c70814a85e3048c4d7290"
+        },
+        "after": {
+          "line_start": 689,
+          "line_end": 696,
+          "text": "                                                                                                         \u0003\n\n\n                  3. A NALYSIS OF THE TERMS FROM N UMBER T HEORY\n   We now prove Theorem 1.2. The starting point is the Explicit Formula (Theorem\n1.5, with each d an even fundamental discriminant). As the log(d/π) and the Γ′ /Γ\nterms already appear in the expansion from the Ratios Conjecture (Theorem 1.1), we\n\n",
+          "sha256": "29f3cf405b6ad301c6c940e771205bd55da5cd7d0af21b4be5f16ed203fe2396"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Analysis of the terms from the Ratios Conjecture",
+            "line_end": 691,
+            "line_start": 316,
+            "mathematical_role": "Matches conductor and even-prime-power pieces, isolates the difficult oscillatory term, evaluates it by contour shifting, and extracts its support-sensitive secondary term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 688,
+          "line_start": 577,
+          "title": "The first lower-order Ratios term appears only when support reaches frequency one",
+          "unit_id": "full_openalex_w2095113110_u11",
+          "unit_type": "secondary-asymptotic-extraction",
+          "why_material": "Restricts the integral using Schwartz decay, Taylor-expands the Gamma ratio, arithmetic factor, zeta pole, and conductor average, and identifies a 1/log X coefficient multiplying the Fourier transform at 1. It makes the support threshold for the secondary term explicit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uses the conductor average later proved in Appendix B; its main structural point is the factor-by-factor assembly of a secondary asymptotic.",
+          "representation_dependency": "The expansion strategy and support threshold are clear; the exact coefficient, constants, and remainders are formula-layout-dependent.",
+          "unit_id": "full_openalex_w2095113110_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 576,
+            "line_start": 549,
+            "title": "Subtracting the zeta pole regularizes an integral on the contour",
+            "unit_id": "full_openalex_w2095113110_u10",
+            "unit_type": "singularity-regularization",
+            "why_material": "Shows an alternate local maneuver for a pole lying on the line of integration: split zeta into its principal part and a regular remainder, use evenness to symmetrize the principal-value integral, and recover the sine-kernel contribution −g(0)/2."
+          },
+          {
+            "line_end": 760,
+            "line_start": 692,
+            "title": "Parity decomposition of prime powers in the explicit formula",
+            "unit_id": "full_openalex_w2095113110_u02",
+            "unit_type": "even-odd explicit-formula split",
+            "why_material": "Defines the even- and odd-exponent character-sum contributions and states how the even part reproduces the symmetry residue, zeta logarithmic derivative, and arithmetic-factor derivative while the odd part must be bounded. This decomposition organizes the number-theory proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u11",
+          "spontaneous_reading": "The first finite-size correction is assembled multiplicatively from four local expansions, but survives globally only as a coefficient of ĝ(1); frequency one is therefore a genuine visibility threshold."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u11",
+          "source_grounded_mathematics": "After restricting τ by Schwartz decay, the source Taylor-expands the Gamma ratio, arithmetic Euler factor, ζ near its pole, and the averaged conductor phase, obtaining the main −g(0)/2 term and a 1/log X term proportional to the Fourier transform of g at one.",
+          "conceptual_reading": "A secondary asymptotic is not owned by any single factor: its coefficient is the sum of first-order perturbations from archimedean, arithmetic, singular, and conductor components.",
+          "representation_or_bridge": "Termwise Taylor expansion converts the product integral into Fourier evaluation at frequency one, explaining why the correction vanishes when the support stays strictly inside (−1,1).",
+          "boundary_or_failure": "The calculation concerns the first secondary term of R(g;X), uses the Appendix B conductor average, and does not by itself control all larger-support errors.",
+          "uncertainty": "The assembly and support threshold are clear, while the exact coefficient, constants, and remainder powers are layout-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The statement of Lemma 3.3 is at lines 766–771; the proof restates the corrected sum and derives its target identification.",
+      "line_end": 979,
+      "line_start": 878,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The local-frequency mechanism is clear; exact error terms and the final Euler-factor match require formula scan-checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the correction for primes dividing the discriminant, uses the local frequency 1/(p+1), controls the large-prime tail, expands the Fourier transform, sums the geometric series, and recognizes the result as the derivative of the Ratios arithmetic factor.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime divisibility frequencies become the derivative of the arithmetic Euler factor",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u12.txt",
+      "unit_bytes": 6073,
+      "unit_id": "full_openalex_w2095113110_u12",
+      "unit_sha256": "2895d201f3722dfaad465f0a202855723cd49c9bc9881d17dbe8bc9094a5b614",
+      "unit_type": "local-density-correction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u12.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 870,
+          "line_end": 877,
+          "text": "                                               4π\n                                                  X\n                                                    . Thus\n                                              Z ∞             \u0012         \u0013\n                             g(0)        2                 ζ′      4πiτ\n                    I1 =           −                 g(τ )     1+         dτ,           (3.15)\n                               2       log X −∞            ζ      log X\nwhich completes the proof of Lemma 3.2.                                                      \u0003\n",
+          "sha256": "c739cff09fe417f011a4d132576eab22d64d1acea9f04ace7757e9de2feda911"
+        },
+        "after": {
+          "line_start": 980,
+          "line_end": 987,
+          "text": "\n3.2. Contribution from k odd. As k is odd, χd (p)k = χd (p). Thus we must analyze\nthe sum                                                 \u0012           \u0013\n                              ∞\n                       2 X X X χd (p) log p               log p2ℓ+1\n            Sodd = − ∗                               gb               .    (3.22)\n                      X d≤X ℓ=0 p p(2ℓ+1)/2 log X           log X\nIf supp(bg ) ⊂ (−1, 1), Rubinstein [Rub1] showed (by applying Jutila’s bound [Ju1,\n",
+          "sha256": "d04543d46aac1245bec41ac70197d640802b83ce6751c0272859adfa48d784ee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Analysis of the terms from number theory",
+            "line_end": 1275,
+            "line_start": 692,
+            "mathematical_role": "Splits the explicit formula by exponent parity, identifies the even pieces with zeta and arithmetic-factor terms, and bounds odd pieces by Jutila and Poisson methods."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 979,
+          "line_start": 878,
+          "title": "Prime divisibility frequencies become the derivative of the arithmetic Euler factor",
+          "unit_id": "full_openalex_w2095113110_u12",
+          "unit_type": "local-density-correction",
+          "why_material": "Separates the correction for primes dividing the discriminant, uses the local frequency 1/(p+1), controls the large-prime tail, expands the Fourier transform, sums the geometric series, and recognizes the result as the derivative of the Ratios arithmetic factor."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The statement of Lemma 3.3 is at lines 766–771; the proof restates the corrected sum and derives its target identification.",
+          "representation_dependency": "The local-frequency mechanism is clear; exact error terms and the final Euler-factor match require formula scan-checking.",
+          "unit_id": "full_openalex_w2095113110_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 877,
+            "line_start": 774,
+            "title": "Perron representation identifies the universal residue and zeta logarithmic derivative",
+            "unit_id": "full_openalex_w2095113110_u03",
+            "unit_type": "perron-formula evaluation",
+            "why_material": "Rewrites the prime-power sum through Perron’s formula, shifts to a contour indented around the zeta pole, extracts the half-residue g(0)/2, and identifies the remaining integral with the zeta logarithmic derivative after rescaling."
+          },
+          {
+            "line_end": 1051,
+            "line_start": 981,
+            "title": "Jutila’s mean-square bound suppresses odd prime powers below support one",
+            "unit_id": "full_openalex_w2095113110_u13",
+            "unit_type": "mean-square-character-bound",
+            "why_material": "Uses the nonsquare nature of odd prime powers, a mean-square quadratic-character estimate, and Cauchy–Schwarz to obtain a power-saving bound whose exponent degrades directly with Fourier support."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A detailed heuristic prediction becomes testable by translating zeros to prime powers, splitting by parity, recognizing even terms as the predicted zeta and arithmetic factors, and proving that the odd remainder is below the desired scale.",
+            "limit": "The agreement is family-, support-, and error-budget-specific; it does not prove the Ratios Conjecture in general.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u04",
+              "full_openalex_w2095113110_u01",
+              "full_openalex_w2095113110_u06",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u02",
+              "full_openalex_w2095113110_u03",
+              "full_openalex_w2095113110_u12",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Prediction-to-proof matching pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u12",
+          "spontaneous_reading": "A local counting probability, Pr(p divides d)≈1/(p+1), is exactly the missing ingredient that turns the even-prime-power correction into the derivative of the Ratios Euler factor."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u12",
+          "source_grounded_mathematics": "The proof restricts the large-prime tail, uses the asymptotic count of discriminants divisible by p, replaces that count by X*/(p+1) with controlled error, expands the Fourier weight, sums the prime-power geometric series, and identifies the all-prime expression with A_D′.",
+          "conceptual_reading": "Global family averaging is governed by local membership frequencies; the arithmetic correction is an Euler product encoded by how often each prime divides a discriminant.",
+          "representation_or_bridge": "Counting p-divisible subfamilies converts χ_d(p)^2 behavior into rational local factors, while Fourier inversion and a geometric series translate those factors into the analytic derivative A_D′.",
+          "boundary_or_failure": "The replacement uses a uniform range p≤X^{1/2} and a separately controlled tail; outside these conditions the local-frequency substitution is not justified by this span.",
+          "uncertainty": "The mechanism and factor 1/(p+1) are clear, but exact error terms and the final Euler-factor normalization require scan checking."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the self-contained but weaker route for the odd contribution.",
+      "line_end": 1051,
+      "line_start": 981,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The mechanism is prose-recoverable; exact logarithmic powers and support exponent are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the nonsquare nature of odd prime powers, a mean-square quadratic-character estimate, and Cauchy–Schwarz to obtain a power-saving bound whose exponent degrades directly with Fourier support.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Jutila’s mean-square bound suppresses odd prime powers below support one",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u13.txt",
+      "unit_bytes": 4230,
+      "unit_id": "full_openalex_w2095113110_u13",
+      "unit_sha256": "4c28c1d87650463f7a16a17537b7354ecdf772ca530911b160a5e18bc8036f1f",
+      "unit_type": "mean-square-character-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u13.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 973,
+          "line_end": 980,
+          "text": "           (p + 1) log X −∞\n    p≤X\n                                                                                           (3.21)\nWe may extend the p-sum to be over all primes at a cost of O(X −1/2+ǫ ); this is because\nthe summands are O(log p/p2 ) and g is Schwartz. Recalling the definition of A′D (r; r)\nin (1.4), we see that the resulting p-sum is just A′D (2πiτ / log X; 2πiτ / log X); this\ncompletes the proof of Lemma 3.3.                                                     \u0003\n\n",
+          "sha256": "651852dce321950f560bcaac365de40e7bdee773f755f79d926b611eec9cc4ec"
+        },
+        "after": {
+          "line_start": 1052,
+          "line_end": 1059,
+          "text": "3.2.2. Analyzing Sodd with Poisson Summation.\n\n   Gao analyzes the contribution from Sodd by applying Poisson summation  \u0001 to the char-\n                                                                        2\nacter sums. The computations are simplified if the character χ2 (n) = n is not present.\nHe therefore studies the family of odd, positive square-free d (where d is a fundamental\ndiscriminant). His family is\n     {8d : X < d ≤ 2X, d an odd square − free fundamental discriminant};                  (3.27)\n",
+          "sha256": "e7251de82a98a0f6be10d0fce988241ac2dd94e91e82b18b62387fde329c26c9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Analysis of the terms from number theory",
+            "line_end": 1275,
+            "line_start": 692,
+            "mathematical_role": "Splits the explicit formula by exponent parity, identifies the even pieces with zeta and arithmetic-factor terms, and bounds odd pieces by Jutila and Poisson methods."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1051,
+          "line_start": 981,
+          "title": "Jutila’s mean-square bound suppresses odd prime powers below support one",
+          "unit_id": "full_openalex_w2095113110_u13",
+          "unit_type": "mean-square-character-bound",
+          "why_material": "Uses the nonsquare nature of odd prime powers, a mean-square quadratic-character estimate, and Cauchy–Schwarz to obtain a power-saving bound whose exponent degrades directly with Fourier support."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides the self-contained but weaker route for the odd contribution.",
+          "representation_dependency": "The mechanism is prose-recoverable; exact logarithmic powers and support exponent are formula-sensitive.",
+          "unit_id": "full_openalex_w2095113110_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 979,
+            "line_start": 878,
+            "title": "Prime divisibility frequencies become the derivative of the arithmetic Euler factor",
+            "unit_id": "full_openalex_w2095113110_u12",
+            "unit_type": "local-density-correction",
+            "why_material": "Separates the correction for primes dividing the discriminant, uses the local frequency 1/(p+1), controls the large-prime tail, expands the Fourier transform, sums the geometric series, and recognizes the result as the derivative of the Ratios arithmetic factor."
+          },
+          {
+            "line_end": 1116,
+            "line_start": 1052,
+            "title": "Smoothing prepares long quadratic-character sums for Poisson shortening",
+            "unit_id": "full_openalex_w2095113110_u14",
+            "unit_type": "smoothing-and-poisson-setup",
+            "why_material": "Changes to a family without the extra χ_2 factor, isolates one exponent, inserts a smooth cutoff with controlled derivatives, and balances the boundary error by choosing the smoothing parameter. This makes the long discriminant sum suitable for Poisson summation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A detailed heuristic prediction becomes testable by translating zeros to prime powers, splitting by parity, recognizing even terms as the predicted zeta and arithmetic factors, and proving that the odd remainder is below the desired scale.",
+            "limit": "The agreement is family-, support-, and error-budget-specific; it does not prove the Ratios Conjecture in general.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u04",
+              "full_openalex_w2095113110_u01",
+              "full_openalex_w2095113110_u06",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u02",
+              "full_openalex_w2095113110_u03",
+              "full_openalex_w2095113110_u12",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Prediction-to-proof matching pipeline"
+          },
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          },
+          {
+            "claim": "A mean-square estimate gives a simple baseline bound; smoothing, squarefree decomposition, Poisson shortening, refined dual-frequency bounds, and dyadic transfer are introduced only to reach the sharper square-root error scale.",
+            "limit": "The Poisson implementation changes to a technically convenient related family and depends on cited machinery summarized rather than reproved in full.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u14",
+              "full_openalex_w2095113110_u15",
+              "full_openalex_w2095113110_u16",
+              "full_openalex_w2095113110_u20"
+            ],
+            "title": "Escalating methods only at the odd-character bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u13",
+          "spontaneous_reading": "Odd prime powers are useful precisely because they remain nonsquares: that algebraic obstruction activates Jutila’s mean-square character bound, and Cauchy–Schwarz turns it into support-dependent cancellation."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u13",
+          "source_grounded_mathematics": "For odd exponents, χ_d(p)^{2ℓ+1}=χ_d(p) and p^{2ℓ+1} is nonsquare; applying Jutila’s quadratic-character mean-square estimate and Cauchy–Schwarz bounds S_odd by a power saving when σ<1.",
+          "conceptual_reading": "The nonsquare/square distinction determines which averaging mechanism is available: odd powers have no diagonal square contribution and can be treated as cancellation.",
+          "representation_or_bridge": "The Fourier-support cutoff bounds the prime-power range, which becomes the length parameter in the mean-square estimate and directly degrades the final X-exponent.",
+          "boundary_or_failure": "This self-contained route is weaker than Poisson summation and only gives a power saving below support one; it does not reach the square-root error needed for the sharper comparison.",
+          "uncertainty": "The argument is prose-recoverable, though exact logarithmic losses and exponent formatting are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Begins the stronger odd-sum route and explains why a nearby family is technically convenient.",
+      "line_end": 1116,
+      "line_start": 1052,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The strategy is clear in prose; the family normalization and smoothing error should be checked formula-exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Changes to a family without the extra χ_2 factor, isolates one exponent, inserts a smooth cutoff with controlled derivatives, and balances the boundary error by choosing the smoothing parameter. This makes the long discriminant sum suitable for Poisson summation.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smoothing prepares long quadratic-character sums for Poisson shortening",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u14.txt",
+      "unit_bytes": 3997,
+      "unit_id": "full_openalex_w2095113110_u14",
+      "unit_sha256": "921884d03df0660ddd1de263ccde16d36eabb569890c37ad310260f6b8a4bc22",
+      "unit_type": "smoothing-and-poisson-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u14.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1044,
+          "line_end": 1051,
+          "text": "                                            !1/2\n                        2          X 1                 1+σ\n                  ≪                                · X 2 log5 X\n                        X∗      n≤X σ\n                                        n\n                             1−σ\n                  ≪ X − 2 log6 X;                                                         (3.26)\nthus there is a power savings if σ < 1.                                                       \u0003\n",
+          "sha256": "d89f28e49b2428934e483a2f05c7bdad20d0a910ca905dabf60d690c8bd99f36"
+        },
+        "after": {
+          "line_start": 1117,
+          "line_end": 1124,
+          "text": "   To analyze S(X, Y, gb, Φ), we write it as SM (X, Y, gb, Φ) + SR (X, Y, gb, Φ), with\n                                 X             X log p          \u0012         \u0013 \u0012 \u0013\n                                                                    log p       d\n        SM (X, Y, gb, Φ) =             MZ (d)      √ χ8d (p)b g             Φ\n                                               p<Y\n                                                     p             log X        X\n                               (d,2)=1\n                                 X            X log p           \u0012         \u0013   \u0012   \u0013\n",
+          "sha256": "9b04498e829d95466da54c73333695472f549ad7c908c124dac12d18efad868a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Analysis of the terms from number theory",
+            "line_end": 1275,
+            "line_start": 692,
+            "mathematical_role": "Splits the explicit formula by exponent parity, identifies the even pieces with zeta and arithmetic-factor terms, and bounds odd pieces by Jutila and Poisson methods."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1116,
+          "line_start": 1052,
+          "title": "Smoothing prepares long quadratic-character sums for Poisson shortening",
+          "unit_id": "full_openalex_w2095113110_u14",
+          "unit_type": "smoothing-and-poisson-setup",
+          "why_material": "Changes to a family without the extra χ_2 factor, isolates one exponent, inserts a smooth cutoff with controlled derivatives, and balances the boundary error by choosing the smoothing parameter. This makes the long discriminant sum suitable for Poisson summation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Begins the stronger odd-sum route and explains why a nearby family is technically convenient.",
+          "representation_dependency": "The strategy is clear in prose; the family normalization and smoothing error should be checked formula-exactly.",
+          "unit_id": "full_openalex_w2095113110_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1051,
+            "line_start": 981,
+            "title": "Jutila’s mean-square bound suppresses odd prime powers below support one",
+            "unit_id": "full_openalex_w2095113110_u13",
+            "unit_type": "mean-square-character-bound",
+            "why_material": "Uses the nonsquare nature of odd prime powers, a mean-square quadratic-character estimate, and Cauchy–Schwarz to obtain a power-saving bound whose exponent degrades directly with Fourier support."
+          },
+          {
+            "line_end": 1239,
+            "line_start": 1117,
+            "title": "Squarefree decomposition and Poisson summation turn the odd sum into a balanced error budget",
+            "unit_id": "full_openalex_w2095113110_u15",
+            "unit_type": "poisson-error-budget",
+            "why_material": "Splits squarefreeness at a parameter Z, bounds the remainder, applies Poisson summation to the main portion, distinguishes zero, square, and nonsquare dual frequencies, and chooses U, Z, and Y to reach square-root accuracy for support below one third."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A mean-square estimate gives a simple baseline bound; smoothing, squarefree decomposition, Poisson shortening, refined dual-frequency bounds, and dyadic transfer are introduced only to reach the sharper square-root error scale.",
+            "limit": "The Poisson implementation changes to a technically convenient related family and depends on cited machinery summarized rather than reproved in full.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u14",
+              "full_openalex_w2095113110_u15",
+              "full_openalex_w2095113110_u16",
+              "full_openalex_w2095113110_u20"
+            ],
+            "title": "Escalating methods only at the odd-character bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u14",
+          "spontaneous_reading": "Smoothing is the interface that makes Poisson summation usable: it trades a controllable boundary layer for derivative bounds, while a technically cleaner quadratic-character family removes an otherwise obstructive χ₂ factor."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u14",
+          "source_grounded_mathematics": "The stronger odd-sum route passes to characters indexed by odd positive square-free d in an interval, isolates the ℓ=0 term, inserts a smooth cutoff Φ supported on (1,2) with derivatives controlled by U, and bounds the discrepancy to the sharp interval by O(X log^7 X/U).",
+          "conceptual_reading": "A hard discrete boundary is replaced by a differentiable approximation whose error and transform quality can be balanced through one parameter.",
+          "representation_or_bridge": "The smooth weight converts the long discriminant sum into an input suitable for Poisson summation; choosing U near X^{1/2} makes the normalized boundary error reach square-root scale.",
+          "boundary_or_failure": "The family is changed for technical convenience, so transfer back requires a separate argument, and the smoothing gain depends on the quoted trivial prime-sum bound.",
+          "uncertainty": "The strategy is clear; the precise family normalization, μ-notation, and smoothing-error constants are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The improved nonsquare estimate invoked here is proved in Appendix C; the span contains the parameter balance and resulting support threshold.",
+      "line_end": 1239,
+      "line_start": 1117,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The decomposition and balancing logic are recoverable; Gauss sums, dual transforms, and several exponents are formula-layout-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splits squarefreeness at a parameter Z, bounds the remainder, applies Poisson summation to the main portion, distinguishes zero, square, and nonsquare dual frequencies, and chooses U, Z, and Y to reach square-root accuracy for support below one third.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Squarefree decomposition and Poisson summation turn the odd sum into a balanced error budget",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u15.txt",
+      "unit_bytes": 7315,
+      "unit_id": "full_openalex_w2095113110_u15",
+      "unit_sha256": "34a8778dfc874b3634a0327398c036c85cf435f938aada101f7a82e7427d4b1b",
+      "unit_type": "poisson-error-budget",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u15.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1109,
+          "line_end": 1116,
+          "text": "(see Proposition III.1 of [Gao]). As there are O(X/U) choices of d and Φ(d/X) ≪ 1,\nwe have\n                                                         X log7 X\n                        S(X, Y, gb) − S(X, Y, gb, Φ) ≪               .                (3.31)\n                                                             U\n                    √\nWe will take U = X. Thus upon dividing by X ∗ ≫ X (the cardinality of the family),\nthis difference is O(X −1/2+ǫ ). The proof is completed by bounding S(X, Y, gb, Φ).\n",
+          "sha256": "05d292a047067ae348f1ac570625165851c392ab975c71356ecf61dcbd2543db"
+        },
+        "after": {
+          "line_start": 1240,
+          "line_end": 1247,
+          "text": "Lemma 3.6. Let supp(b\n                    g ) ⊂ (−σ, σ) ⊂ (−1, 1). Then for the family\n     {8d : 0 < d ≤ X, d an odd square − free fundamental discriminant}           (3.42)\n                                       3\nwe have Sodd = O(X −1/2+ǫ + X −(1− 2 σ)+ǫ ). In particular, if σ < 1/3 then Sodd =\nO(X −1/2+ǫ ).\nProof. As the calculation is standard, we merely sketch the argument. We write\n                                       log2 X \u0012           \u0015\n",
+          "sha256": "d6529ff45046ff3952c4ce2920e7fbc0eac505b0718cf447838b0a5ee5eebc28"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Analysis of the terms from number theory",
+            "line_end": 1275,
+            "line_start": 692,
+            "mathematical_role": "Splits the explicit formula by exponent parity, identifies the even pieces with zeta and arithmetic-factor terms, and bounds odd pieces by Jutila and Poisson methods."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1239,
+          "line_start": 1117,
+          "title": "Squarefree decomposition and Poisson summation turn the odd sum into a balanced error budget",
+          "unit_id": "full_openalex_w2095113110_u15",
+          "unit_type": "poisson-error-budget",
+          "why_material": "Splits squarefreeness at a parameter Z, bounds the remainder, applies Poisson summation to the main portion, distinguishes zero, square, and nonsquare dual frequencies, and chooses U, Z, and Y to reach square-root accuracy for support below one third."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The improved nonsquare estimate invoked here is proved in Appendix C; the span contains the parameter balance and resulting support threshold.",
+          "representation_dependency": "The decomposition and balancing logic are recoverable; Gauss sums, dual transforms, and several exponents are formula-layout-dependent.",
+          "unit_id": "full_openalex_w2095113110_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1116,
+            "line_start": 1052,
+            "title": "Smoothing prepares long quadratic-character sums for Poisson shortening",
+            "unit_id": "full_openalex_w2095113110_u14",
+            "unit_type": "smoothing-and-poisson-setup",
+            "why_material": "Changes to a family without the extra χ_2 factor, isolates one exponent, inserts a smooth cutoff with controlled derivatives, and balances the boundary error by choosing the smoothing parameter. This makes the long discriminant sum suitable for Poisson summation."
+          },
+          {
+            "line_end": 1274,
+            "line_start": 1240,
+            "title": "A dyadic partition transfers interval-family bounds to the initial segment",
+            "unit_id": "full_openalex_w2095113110_u16",
+            "unit_type": "dyadic-transfer",
+            "why_material": "Explains how a result for discriminants in (X,2X] extends to (0,X] without changing the decisive support condition: rescale interval-dependent parameters, retain the global normalization and test-function scale, and sum only error terms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A detailed heuristic prediction becomes testable by translating zeros to prime powers, splitting by parity, recognizing even terms as the predicted zeta and arithmetic factors, and proving that the odd remainder is below the desired scale.",
+            "limit": "The agreement is family-, support-, and error-budget-specific; it does not prove the Ratios Conjecture in general.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u04",
+              "full_openalex_w2095113110_u01",
+              "full_openalex_w2095113110_u06",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u02",
+              "full_openalex_w2095113110_u03",
+              "full_openalex_w2095113110_u12",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Prediction-to-proof matching pipeline"
+          },
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          },
+          {
+            "claim": "A mean-square estimate gives a simple baseline bound; smoothing, squarefree decomposition, Poisson shortening, refined dual-frequency bounds, and dyadic transfer are introduced only to reach the sharper square-root error scale.",
+            "limit": "The Poisson implementation changes to a technically convenient related family and depends on cited machinery summarized rather than reproved in full.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u14",
+              "full_openalex_w2095113110_u15",
+              "full_openalex_w2095113110_u16",
+              "full_openalex_w2095113110_u20"
+            ],
+            "title": "Escalating methods only at the odd-character bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u15",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u15",
+          "spontaneous_reading": "The proof succeeds by turning one odd character sum into an explicit error budget: split squarefreeness, Poisson-shorten the main piece, classify dual frequencies, then choose U, Z, and Y so no single remainder dominates."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u15",
+          "source_grounded_mathematics": "Möbius squarefree detection is split at Z into M_Z and R_Z, the remainder is bounded directly, Poisson summation transforms the main portion into Gauss-weighted dual sums, and the m=0, square, and nonsquare frequencies are treated separately before choosing Z=X^{1/2}, U=X^{1/2}, and Y=X^σ.",
+          "conceptual_reading": "The central object is not a closed form but a balanced decomposition: each parameter corresponds to a distinct approximation cost, and the support threshold emerges only after simultaneous optimization.",
+          "representation_or_bridge": "Poisson summation exchanges a long discriminant average for shorter dual-frequency sums, where square status exposes different cancellation mechanisms and Appendix C supplies the missing nonsquare estimate.",
+          "boundary_or_failure": "The square-root conclusion is obtained for the stated auxiliary family and σ<1/3, relies on several cited results from Gao, and needs the Appendix C refinement.",
+          "uncertainty": "The decomposition and balancing logic are clear; Gauss sums, dual transforms, and several printed exponents require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Closes the number-theory analysis for the exact comparison family.",
+      "line_end": 1274,
+      "line_start": 1240,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose-recoverable; the printed dyadic partition has layout risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains how a result for discriminants in (X,2X] extends to (0,X] without changing the decisive support condition: rescale interval-dependent parameters, retain the global normalization and test-function scale, and sum only error terms.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A dyadic partition transfers interval-family bounds to the initial segment",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u16.txt",
+      "unit_bytes": 1984,
+      "unit_id": "full_openalex_w2095113110_u16",
+      "unit_sha256": "53ead5ff7c89bf51faee7fb1f849369bb134964bce5c7f13dc3ebc735a69d943",
+      "unit_type": "dyadic-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u16.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1232,
+          "line_end": 1239,
+          "text": "X −1/2+ǫ ), we find\n                                                               3\n                    S(X, Y, gb, Φ)/X ≪ X −1/2+ǫ + X −(1− 2 σ)+ǫ ,                (3.40)\nwhich yields\n                                                       3\n                           Sodd ≪ X −1/2+ǫ + X −(1− 2 σ)+ǫ .                     (3.41)\n                                     −1/2+ǫ\nNote that if σ < 1/3 then Sodd ≪ X            .                                      \u0003\n",
+          "sha256": "2fa16dbd04cb6ed80e0f3eeec97d3ed17331580f8f176307ceef331569697609"
+        },
+        "after": {
+          "line_start": 1275,
+          "line_end": 1282,
+          "text": "\n                      A PPENDIX A. T HE E XPLICIT F ORMULA\n  We quickly review some needed facts about Dirichlet characters; see [Da] for details.\nLet χd be a primitive quadratic Dirichlet character of modulus |d|. Let c(d, χd ) be the\nGauss sum\n                                         Xd−1\n                            c(d, χd ) =       χd (k)e2πik/d ,                      (A.1)\n                                                k=1\n",
+          "sha256": "4cf42c69d2aa2eb9037028ea700ed1e8d6a767ad74f635d937b8169e5a50a1e3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Analysis of the terms from number theory",
+            "line_end": 1275,
+            "line_start": 692,
+            "mathematical_role": "Splits the explicit formula by exponent parity, identifies the even pieces with zeta and arithmetic-factor terms, and bounds odd pieces by Jutila and Poisson methods."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1274,
+          "line_start": 1240,
+          "title": "A dyadic partition transfers interval-family bounds to the initial segment",
+          "unit_id": "full_openalex_w2095113110_u16",
+          "unit_type": "dyadic-transfer",
+          "why_material": "Explains how a result for discriminants in (X,2X] extends to (0,X] without changing the decisive support condition: rescale interval-dependent parameters, retain the global normalization and test-function scale, and sum only error terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Closes the number-theory analysis for the exact comparison family.",
+          "representation_dependency": "Mostly prose-recoverable; the printed dyadic partition has layout risk.",
+          "unit_id": "full_openalex_w2095113110_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1239,
+            "line_start": 1117,
+            "title": "Squarefree decomposition and Poisson summation turn the odd sum into a balanced error budget",
+            "unit_id": "full_openalex_w2095113110_u15",
+            "unit_type": "poisson-error-budget",
+            "why_material": "Splits squarefreeness at a parameter Z, bounds the remainder, applies Poisson summation to the main portion, distinguishes zero, square, and nonsquare dual frequencies, and chooses U, Z, and Y to reach square-root accuracy for support below one third."
+          },
+          {
+            "line_end": 1466,
+            "line_start": 1276,
+            "title": "Functional equation and contour shifting derive the zero-to-prime-powers identity",
+            "unit_id": "full_openalex_w2095113110_u17",
+            "unit_type": "explicit-formula-derivation",
+            "why_material": "Builds the completed quadratic Dirichlet L-function, extends the test function using compact Fourier support, shifts a logarithmic-derivative contour across zeros, uses functional-equation symmetry, and expands L′/L into prime powers to obtain the family explicit formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A mean-square estimate gives a simple baseline bound; smoothing, squarefree decomposition, Poisson shortening, refined dual-frequency bounds, and dyadic transfer are introduced only to reach the sharper square-root error scale.",
+            "limit": "The Poisson implementation changes to a technically convenient related family and depends on cited machinery summarized rather than reproved in full.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u14",
+              "full_openalex_w2095113110_u15",
+              "full_openalex_w2095113110_u16",
+              "full_openalex_w2095113110_u20"
+            ],
+            "title": "Escalating methods only at the odd-character bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u16",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u16",
+          "spontaneous_reading": "Dyadic decomposition transports an interval estimate to an initial segment without paying a new support cost because there is no main term to rescale—only uniformly controlled errors are summed."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u16",
+          "source_grounded_mathematics": "The interval (0,X] is partitioned into dyadic pieces, the local scale X_i replaces X in interval-dependent smoothing and squarefree parameters, while the global family normalization, log X in the test-function scale, and prime cutoff Y are retained.",
+          "conceptual_reading": "Scale localization separates quantities that must vary with the dyadic block from global quantities defining the statistic; this preserves the decisive exponent.",
+          "representation_or_bridge": "Bounds for families on (X_i,2X_i] are aggregated into the target initial-segment family, with unchanged terms such as Y^{3/2}/X after final normalization.",
+          "boundary_or_failure": "The transfer works here because the analyzed contribution has no main term; a nonzero main term would require additional rescaling and summation bookkeeping.",
+          "uncertainty": "The prose argument is clear, though the printed dyadic partition and exact endpoint conventions have layout risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Supplies the exact representation bridge used in the main proof rather than assuming it as a black box.",
+      "line_end": 1466,
+      "line_start": 1276,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The derivation is coherent, but OCR/layout risk is high in the functional equation, contour identities, and rescaling formulas; scan verification is required for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds the completed quadratic Dirichlet L-function, extends the test function using compact Fourier support, shifts a logarithmic-derivative contour across zeros, uses functional-equation symmetry, and expands L′/L into prime powers to obtain the family explicit formula.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional equation and contour shifting derive the zero-to-prime-powers identity",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u17.txt",
+      "unit_bytes": 10513,
+      "unit_id": "full_openalex_w2095113110_u17",
+      "unit_sha256": "fd4b2d77c5c9244b7e2d9c76d11eb976fa3e2781654a9a80f449456c587aa6d2",
+      "unit_type": "explicit-formula-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u17.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1268,
+          "line_end": 1275,
+          "text": "20                                   STEVEN J. MILLER\n\n  We now finish the book-keeping. Expressions such as UZ/X in (3.39) are still O(1),\nand expressions such as X/U and X/Z are now smaller. When we divide by the cardi-\nnality of the family we still have terms such as Y 3/2 /X, and thus the support require-\n                                                        3\nments are unchanged (i.e., Sodd ≪ X −1/2+ǫ + X −(1− 2 σ)+ǫ ).                         \u0003\n\n",
+          "sha256": "05632051b955ccfe4ae61af624efab5fa9a42ff1202a91f29ba3d030dd39f2fb"
+        },
+        "after": {
+          "line_start": 1467,
+          "line_end": 1474,
+          "text": "\n            A PPENDIX B. S UMS OVER FUNDAMENTAL DISCRIMINANTS\nLemma\nP        B.1. Let d denote an even fundamental discriminant at most X, and set X ∗ =\n  d≤X 1. Then\n                                       3\n                               X ∗ = 2 X + O(X 1/2 )                           (B.1)\n                                      π\n",
+          "sha256": "846bf42a013ff2c8e465978d01d4489589e6fdd0f3b3052495d8c10412dd629d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A. The explicit formula",
+            "line_end": 1467,
+            "line_start": 1276,
+            "mathematical_role": "Derives the zeros-to-prime-powers identity from the completed quadratic Dirichlet L-function and its functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1466,
+          "line_start": 1276,
+          "title": "Functional equation and contour shifting derive the zero-to-prime-powers identity",
+          "unit_id": "full_openalex_w2095113110_u17",
+          "unit_type": "explicit-formula-derivation",
+          "why_material": "Builds the completed quadratic Dirichlet L-function, extends the test function using compact Fourier support, shifts a logarithmic-derivative contour across zeros, uses functional-equation symmetry, and expands L′/L into prime powers to obtain the family explicit formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Supplies the exact representation bridge used in the main proof rather than assuming it as a black box.",
+          "representation_dependency": "The derivation is coherent, but OCR/layout risk is high in the functional equation, contour identities, and rescaling formulas; scan verification is required for exact reuse.",
+          "unit_id": "full_openalex_w2095113110_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1274,
+            "line_start": 1240,
+            "title": "A dyadic partition transfers interval-family bounds to the initial segment",
+            "unit_id": "full_openalex_w2095113110_u16",
+            "unit_type": "dyadic-transfer",
+            "why_material": "Explains how a result for discriminants in (X,2X] extends to (0,X] without changing the decisive support condition: rescale interval-dependent parameters, retain the global normalization and test-function scale, and sum only error terms."
+          },
+          {
+            "line_end": 1644,
+            "line_start": 1468,
+            "title": "Möbius inversion counts fundamental discriminants and their prime-divisible subfamilies",
+            "unit_id": "full_openalex_w2095113110_u18",
+            "unit_type": "family-count-and-local-frequency",
+            "why_material": "Derives the family size with square-root error, modifies the count under p|d, and obtains the local proportion 1/(p+1), including a separate explanation for p=2. These counts justify the arithmetic correction in the even contribution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The explicit formula supplies the spectral-to-arithmetic representation, local discriminant counts supply Euler-factor frequencies, and partial summation supplies the averaged conductor phase used on shifted contours.",
+            "limit": "Formula extraction has nontrivial layout risk, so exact constants and normalizations require page-image verification before training or symbolic use.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u17",
+              "full_openalex_w2095113110_u18",
+              "full_openalex_w2095113110_u19"
+            ],
+            "title": "Auxiliary exact inputs close the semantic bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u17",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u17",
+          "spontaneous_reading": "The explicit formula is derived as a contour identity: compact Fourier support extends the test function off the critical line, the functional equation folds the two contours together, and the logarithmic derivative converts the result into prime powers."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u17",
+          "source_grounded_mathematics": "The appendix defines the completed primitive quadratic Dirichlet L-function and its parity, extends H(s) from a compactly supported Fourier transform, integrates Λ′/Λ on Re(s)=3/2, shifts across the zeros, invokes Λ(s)=Λ(1−s), expands L′/L as a prime-power series, and finally rescales and averages over the family.",
+          "conceptual_reading": "Functional-equation symmetry and contour deformation turn spectral data into arithmetic coefficients without approximating away lower-order terms.",
+          "representation_or_bridge": "Zeros appear as residues of Λ′/Λ, while the Dirichlet-series expansion of L′/L produces χ_d(p)^k log p; the test function mediates the exact Fourier pairing between them.",
+          "boundary_or_failure": "The derivation assumes a nonprincipal primitive quadratic character and compact Fourier support for the contour manipulations; GRH only makes the zero ordinates real and is not a substitute for checking the identity’s normalization.",
+          "uncertainty": "The overall derivation is coherent, but OCR/layout risk is high in the functional equation, contour identities, signs, and rescaling formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Connects global family normalization to the local Euler-factor probability used at lines 878–979.",
+      "line_end": 1644,
+      "line_start": 1468,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The counting argument is prose-recoverable; congruence indicators, constants, and Möbius sums should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the family size with square-root error, modifies the count under p|d, and obtains the local proportion 1/(p+1), including a separate explanation for p=2. These counts justify the arithmetic correction in the even contribution.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        23,
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Möbius inversion counts fundamental discriminants and their prime-divisible subfamilies",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u18.txt",
+      "unit_bytes": 8778,
+      "unit_id": "full_openalex_w2095113110_u18",
+      "unit_sha256": "830a3d8960574cd039e8874982105d54416488be4abdc17764234e5852c17daf",
+      "unit_type": "family-count-and-local-frequency",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u18.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1460,
+          "line_end": 1467,
+          "text": "   We replace\n        \u0010         φ(x)\n                   \u0011   with g(x)  = φ  x ·   2π\n                                                   . A standard computation gives gb(ξ) =\n  2π b\nlog X\n       φ ξ · log2πX . Summing over d ∈ F (X) completes the proof.                       \u0003\n\n",
+          "sha256": "439409fafa8570d8508d8e97a887ca295793809e4d1312a8b53d685148346886"
+        },
+        "after": {
+          "line_start": 1645,
+          "line_end": 1652,
+          "text": "\n  In our analysis of the terms from the L-functions Ratios Conjecture, we shall need a\npartial summation consequence of Lemma B.1.\n\nLemma B.2. Let d denote an even fundamental discriminant at most X and X ∗ =\nP                         log X\n  d≤X 1 and let z = τ − iw 2π with w ≥ 1/2. Then\n\n",
+          "sha256": "90c739dcd434bfd3b3f2a696478a6fe9d23ab703b8b6bbd4e5545774c1087ae2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix B. Sums over fundamental discriminants",
+            "line_end": 1718,
+            "line_start": 1468,
+            "mathematical_role": "Counts the family and prime-divisible subfamilies and evaluates the oscillatory conductor average by partial summation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1644,
+          "line_start": 1468,
+          "title": "Möbius inversion counts fundamental discriminants and their prime-divisible subfamilies",
+          "unit_id": "full_openalex_w2095113110_u18",
+          "unit_type": "family-count-and-local-frequency",
+          "why_material": "Derives the family size with square-root error, modifies the count under p|d, and obtains the local proportion 1/(p+1), including a separate explanation for p=2. These counts justify the arithmetic correction in the even contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Connects global family normalization to the local Euler-factor probability used at lines 878–979.",
+          "representation_dependency": "The counting argument is prose-recoverable; congruence indicators, constants, and Möbius sums should be scan-checked.",
+          "unit_id": "full_openalex_w2095113110_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1466,
+            "line_start": 1276,
+            "title": "Functional equation and contour shifting derive the zero-to-prime-powers identity",
+            "unit_id": "full_openalex_w2095113110_u17",
+            "unit_type": "explicit-formula-derivation",
+            "why_material": "Builds the completed quadratic Dirichlet L-function, extends the test function using compact Fourier support, shifts a logarithmic-derivative contour across zeros, uses functional-equation symmetry, and expands L′/L into prime powers to obtain the family explicit formula."
+          },
+          {
+            "line_end": 1713,
+            "line_start": 1646,
+            "title": "Partial summation evaluates the oscillatory conductor average uniformly on shifted contours",
+            "unit_id": "full_openalex_w2095113110_u19",
+            "unit_type": "partial-summation-average",
+            "why_material": "Uses the discriminant counting asymptotic inside partial summation to replace a conductor phase average by an explicit rational factor with logarithmic error, uniformly when the contour has sufficient imaginary shift."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The explicit formula supplies the spectral-to-arithmetic representation, local discriminant counts supply Euler-factor frequencies, and partial summation supplies the averaged conductor phase used on shifted contours.",
+            "limit": "Formula extraction has nontrivial layout risk, so exact constants and normalizations require page-image verification before training or symbolic use.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u17",
+              "full_openalex_w2095113110_u18",
+              "full_openalex_w2095113110_u19"
+            ],
+            "title": "Auxiliary exact inputs close the semantic bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u18",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u18",
+          "spontaneous_reading": "Möbius inversion converts the semantic condition “fundamental discriminant” into tractable divisor sums, and the same calculation with p forced in reveals the local law 1/(p+1) needed by the Euler factor."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u18",
+          "source_grounded_mathematics": "The source splits discriminants by congruence class, inserts the squarefree indicator through a Möbius divisor sum, uses cancellation of the nontrivial character modulo four, obtains the family-size asymptotic with square-root error, and modifies the count under p|d to get proportion 1/(p+1), treating p=2 separately.",
+          "conceptual_reading": "A global arithmetic family is reconstructed from independent-looking local restrictions plus congruence bookkeeping; forcing one prime changes the Euler density by a computable local factor.",
+          "representation_or_bridge": "Squarefreeness is represented by Möbius inversion, congruence membership by χ₄, and prime divisibility by a coprimality-modified count, bridging family combinatorics to Euler-product probabilities.",
+          "boundary_or_failure": "The displayed uniform prime-divisibility estimate is stated for p≤X^{1/2}; the p=2 case is not covered by the odd-prime manipulation and needs its separate family decomposition.",
+          "uncertainty": "The counting mechanism and local proportion are clear, while exact constants, congruence indicators, and Möbius-sum layout should be scan-checked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the deterministic input used in both the sharp contour estimate and the secondary-term expansion.",
+      "line_end": 1713,
+      "line_start": 1646,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The partial-summation logic is clear; phase signs, powers, and geometric-series algebra are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the discriminant counting asymptotic inside partial summation to replace a conductor phase average by an explicit rational factor with logarithmic error, uniformly when the contour has sufficient imaginary shift.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial summation evaluates the oscillatory conductor average uniformly on shifted contours",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u19.txt",
+      "unit_bytes": 3870,
+      "unit_id": "full_openalex_w2095113110_u19",
+      "unit_sha256": "95eab659979d3d43567b3718c07153cda816fbe2ff7d4b9fcaf79674175460ae",
+      "unit_type": "partial-summation-average",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u19.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1638,
+          "line_end": 1645,
+          "text": "\n<!-- source-page: 25 -->\n\nA SYMPLECTIC TEST OF THE L-FUNCTIONS RATIOS CONJECTURE                          25\n\n1/(p + 1) for p = 2, as one-third (which is 1/(2 + 1) of the fundamental discriminants\nin this family are divisible by 2.                                                  \u0003\n\n",
+          "sha256": "7897fdad94e24f714233f60f8de24b0008b138cc00037013183d4f23316fcb88"
+        },
+        "after": {
+          "line_start": 1714,
+          "line_end": 1721,
+          "text": "\n<!-- source-page: 26 -->\n\n26                                         STEVEN J. MILLER\n\n A PPENDIX C. I MPROVED BOUND FOR NON - SQUARE m TERMS IN SM (X, Y, gb, Φ)\n                                                                           √\n  Gao [Gao] proves that the non-square m-terms contribute ≪ (U 2 Z Y log7 X)/X to\n",
+          "sha256": "1aba915ca013b25c183fe1d1a96aad4c419de08d13573a3f1cc1fc1cb94e85fe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix B. Sums over fundamental discriminants",
+            "line_end": 1718,
+            "line_start": 1468,
+            "mathematical_role": "Counts the family and prime-divisible subfamilies and evaluates the oscillatory conductor average by partial summation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1713,
+          "line_start": 1646,
+          "title": "Partial summation evaluates the oscillatory conductor average uniformly on shifted contours",
+          "unit_id": "full_openalex_w2095113110_u19",
+          "unit_type": "partial-summation-average",
+          "why_material": "Uses the discriminant counting asymptotic inside partial summation to replace a conductor phase average by an explicit rational factor with logarithmic error, uniformly when the contour has sufficient imaginary shift."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the deterministic input used in both the sharp contour estimate and the secondary-term expansion.",
+          "representation_dependency": "The partial-summation logic is clear; phase signs, powers, and geometric-series algebra are formula-sensitive.",
+          "unit_id": "full_openalex_w2095113110_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1644,
+            "line_start": 1468,
+            "title": "Möbius inversion counts fundamental discriminants and their prime-divisible subfamilies",
+            "unit_id": "full_openalex_w2095113110_u18",
+            "unit_type": "family-count-and-local-frequency",
+            "why_material": "Derives the family size with square-root error, modifies the count under p|d, and obtains the local proportion 1/(p+1), including a separate explanation for p=2. These counts justify the arithmetic correction in the even contribution."
+          },
+          {
+            "line_end": 1824,
+            "line_start": 1719,
+            "title": "Splitting the Poisson dual variable saves the missing smoothing power",
+            "unit_id": "full_openalex_w2095113110_u20",
+            "unit_type": "refined-dual-sum-bound",
+            "why_material": "Repairs an insufficient nonsquare-frequency bound by splitting the dual variable at a very large cutoff, using a second-derivative transform bound for the finite range and a third-derivative bound for the tail. The recombined estimate saves a power of the smoothing parameter and closes the Poisson error budget."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The explicit formula supplies the spectral-to-arithmetic representation, local discriminant counts supply Euler-factor frequencies, and partial summation supplies the averaged conductor phase used on shifted contours.",
+            "limit": "Formula extraction has nontrivial layout risk, so exact constants and normalizations require page-image verification before training or symbolic use.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u17",
+              "full_openalex_w2095113110_u18",
+              "full_openalex_w2095113110_u19"
+            ],
+            "title": "Auxiliary exact inputs close the semantic bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u19",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u19",
+          "spontaneous_reading": "Partial summation promotes a static counting asymptotic into a uniform oscillatory average, replacing the discriminant-dependent conductor phase by an explicit rational response factor plus logarithmic error."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u19",
+          "source_grounded_mathematics": "Starting from the cumulative count of even fundamental discriminants, the source applies partial summation to Σ_{d≤X} exp(−2πiz log(d/π)/log X) and evaluates the main integral as an explicit factor involving (1−2πiz/log X)^{-1}, with O(log X) error when the imaginary shift parameter w is at least one half.",
+          "conceptual_reading": "A distributional counting statement can control a family average against a smoothly varying phase; the transform of the main density becomes the deterministic response used in later contour and Taylor arguments.",
+          "representation_or_bridge": "The counting function is converted by partial summation into a Mellin-like conductor-phase average, supplying the d-sum input for both the shifted-contour estimate and secondary-term expansion.",
+          "boundary_or_failure": "Uniformity depends on w≥1/2 so the integrated square-root counting error remains controlled; the lemma inherits the accuracy of the family-count asymptotic.",
+          "uncertainty": "The partial-summation logic is clear, but phase signs, powers, and geometric-series algebra are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the bounded technical improvement cited in the odd-sum proof.",
+      "line_end": 1824,
+      "line_start": 1719,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The refinement is prose-recoverable; the nested sums and exact powers in the final estimate require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Repairs an insufficient nonsquare-frequency bound by splitting the dual variable at a very large cutoff, using a second-derivative transform bound for the finite range and a third-derivative bound for the tail. The recombined estimate saves a power of the smoothing parameter and closes the Poisson error budget.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Splitting the Poisson dual variable saves the missing smoothing power",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u20.txt",
+      "unit_bytes": 5851,
+      "unit_id": "full_openalex_w2095113110_u20",
+      "unit_sha256": "1e205e7e4dba15cb2de4646db92e93fdc53413b2c1b5c6162ced72fe4f6372db",
+      "unit_type": "refined-dual-sum-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u20.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1711,
+          "line_end": 1718,
+          "text": "           =      X e                         1−               + O(log X).                  (B.13)\n                                                  log X\n                                                                                                   \u0003\n\n<!-- source-page: 26 -->\n\n26                                         STEVEN J. MILLER\n\n",
+          "sha256": "b71f6fa0fbd9daf43f2df0e01f85e713590f506f0c7dc8ab5ef192addadbaa6c"
+        },
+        "after": {
+          "line_start": 1825,
+          "line_end": 1832,
+          "text": "\n                                         R EFERENCES\n[Be]    M. V. Berry, Semiclassical formula for the number variance of the Riemann zeros, Nonlin-\n        earity 1 (1988), 399–407.\n[BeKe]  M. V. Berry and J. P. Keating, The Riemann zeros and eigenvalue asymptotics, Siam Review\n        41 (1999), no. 2, 236–266.\n[BBLM]  E. Bogomolny, O. Bohigas, P. Leboeuf and A. G. Monastra, On the spacing distribution of\n        the Riemann zeros: corrections to the asymptotic result, Journal of Physics A: Mathematical\n",
+          "sha256": "6e6351f91c612012884ae0f6eab8cca32370fd37aa25659ce3e4aaa49c8a451d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix C. Improved bound for non-square m terms",
+            "line_end": 1825,
+            "line_start": 1719,
+            "mathematical_role": "Refines the Poisson-error estimate by splitting the dual variable and choosing different derivative bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1824,
+          "line_start": 1719,
+          "title": "Splitting the Poisson dual variable saves the missing smoothing power",
+          "unit_id": "full_openalex_w2095113110_u20",
+          "unit_type": "refined-dual-sum-bound",
+          "why_material": "Repairs an insufficient nonsquare-frequency bound by splitting the dual variable at a very large cutoff, using a second-derivative transform bound for the finite range and a third-derivative bound for the tail. The recombined estimate saves a power of the smoothing parameter and closes the Poisson error budget."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides the bounded technical improvement cited in the odd-sum proof.",
+          "representation_dependency": "The refinement is prose-recoverable; the nested sums and exact powers in the final estimate require scan verification.",
+          "unit_id": "full_openalex_w2095113110_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1713,
+            "line_start": 1646,
+            "title": "Partial summation evaluates the oscillatory conductor average uniformly on shifted contours",
+            "unit_id": "full_openalex_w2095113110_u19",
+            "unit_type": "partial-summation-average",
+            "why_material": "Uses the discriminant counting asymptotic inside partial summation to replace a conductor phase average by an explicit rational factor with logarithmic error, uniformly when the contour has sufficient imaginary shift."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A mean-square estimate gives a simple baseline bound; smoothing, squarefree decomposition, Poisson shortening, refined dual-frequency bounds, and dyadic transfer are introduced only to reach the sharper square-root error scale.",
+            "limit": "The Poisson implementation changes to a technically convenient related family and depends on cited machinery summarized rather than reproved in full.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u14",
+              "full_openalex_w2095113110_u15",
+              "full_openalex_w2095113110_u16",
+              "full_openalex_w2095113110_u20"
+            ],
+            "title": "Escalating methods only at the odd-character bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u20",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u20",
+          "spontaneous_reading": "The missing smoothing power is recovered by refusing a uniform transform estimate: use two derivatives where low dual frequencies need a sharper U-dependence, and three derivatives only in the tail where convergence is the real constraint."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u20",
+          "source_grounded_mathematics": "For the troublesome nonsquare dual contribution R₃, the source splits the m-sum at M=X^{2008}, applies the j=2 transform-derivative bound for m≤M and j=3 for m>M, estimates the two ranges separately, and inserts them into the α-sum to improve Gao’s earlier bound.",
+          "conceptual_reading": "The refinement matches the strength of an estimate to the local obstruction: small frequencies demand parameter efficiency, whereas large frequencies demand summability.",
+          "representation_or_bridge": "Derivative decay of the transformed smooth cutoff converts regularity into inverse powers of the dual variable; splitting the frequency range permits one saved power of U without losing tail convergence.",
+          "boundary_or_failure": "The cutoff M is deliberately enormous and the final negligibility claim is tailored to the later choices of U, Y, and Z; the argument also relies on Gao’s quoted reduction and transform estimates.",
+          "uncertainty": "The range-splitting mechanism is prose-recoverable, while nested sums and exact exponents in the final bound require scan verification."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "49a7378c0d764299a8baacc6ca11f495b830e74db40397850ae22d4fe814f747"
+}
