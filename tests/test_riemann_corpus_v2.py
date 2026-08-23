@@ -1144,15 +1144,12 @@ class RiemannCorpusV2Tests(unittest.TestCase):
 
     def test_dual_openalex_state_binds_merged_agnostic_parent(self) -> None:
         self.assertEqual(full_corpus_v2.validate_openalex_handoff_state(False), [])
-        self.assertIn(
-            "#46 handoff processing is incomplete despite the frozen cutoff",
-            full_corpus_v2.validate_openalex_handoff_state(True),
-        )
+        self.assertEqual(full_corpus_v2.validate_openalex_handoff_state(True), [])
         state = full_corpus_v2.load_json(full_corpus_v2.OPENALEX_HANDOFF_STATE_PATH)
         self.assertEqual(set(state["streams"]), {"riemann", "agnostic_mathia"})
         self.assertEqual(state["network_requests_performed_by_42_for_handoffs"], 0)
         self.assertEqual(state["processing_cutoff"]["status"], "frozen")
-        self.assertFalse(state["finalization_allowed"])
+        self.assertTrue(state["finalization_allowed"])
         self.assertEqual(
             {
                 row["handoff_id"]

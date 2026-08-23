@@ -133,9 +133,9 @@
         "riemann_fulltext_v2"
       ],
       "processing_metrics": {
-        "derivatives_accepted": 234,
+        "derivatives_accepted": 239,
         "derivatives_quarantined": 2,
-        "derivatives_rejected": 5,
+        "derivatives_rejected": 0,
         "semantic_units": 241,
         "sources_deduplicated": 10,
         "sources_processed": 15,
@@ -232,48 +232,49 @@
       "sources_per_context_max": 1
     },
     "pass12": {
-      "completed_agent_contexts": 9,
-      "analyzed_units": 70,
+      "completed_agent_contexts": 222,
+      "analyzed_units": 3420,
       "units_per_context_min": 1,
-      "units_per_context_median": 2,
+      "units_per_context_median": 15,
       "units_per_context_max": 34
     },
     "pass3": {
-      "completed_agent_contexts": 3,
-      "analyzed_units": 62,
-      "units_per_context_min": 12,
-      "units_per_context_median": 16,
+      "completed_agent_contexts": 222,
+      "analyzed_units": 3420,
+      "units_per_context_min": 1,
+      "units_per_context_median": 15,
       "units_per_context_max": 34
     },
     "pass4": {
-      "completed_agent_contexts": 3,
-      "analyzed_units": 22,
-      "units_per_context_min": 3,
+      "completed_agent_contexts": 160,
+      "analyzed_units": 756,
+      "units_per_context_min": 1,
       "units_per_context_median": 4,
       "units_per_context_max": 15
     },
     "independent_audit": {
-      "completed_agent_contexts": 0,
-      "analyzed_objects": 0,
-      "objects_per_context_min": 0,
-      "objects_per_context_median": 0,
-      "objects_per_context_max": 0
+      "completed_agent_contexts": 180,
+      "analyzed_objects": 1301,
+      "objects_per_context_min": 2,
+      "objects_per_context_median": 7,
+      "objects_per_context_max": 24
     }
   },
   "independent_audit_reuse": {
-    "sampled_objects": 0,
-    "exact_pre_openalex_decisions_carried": 0,
-    "fresh_review_objects": 0,
-    "carried_fraction": 0.0,
+    "sampled_objects": 1319,
+    "exact_pre_openalex_decisions_carried": 18,
+    "fresh_review_objects": 1301,
+    "carried_fraction": 0.013646702047005308,
     "reuse_gate": "exact canonical object_id match only"
   },
   "critic_decisions_observed": {
-    "accept_as_is": 39,
-    "quarantine": 1,
-    "revise": 22
+    "accept_as_is": 2655,
+    "quarantine": 8,
+    "reject": 1,
+    "revise": 756
   },
-  "fresh_critic_fraction_of_v2_units": 0.018128654970760234,
-  "critic_revision_fraction": 0.3548387096774194,
+  "fresh_critic_fraction_of_v2_units": 1.0,
+  "critic_revision_fraction": 0.22105263157894736,
   "v1_reuse": {
     "relevant_inventory_records": 393,
     "usable_sources": 86,
@@ -281,8 +282,8 @@
     "semantic_units": 274,
     "objects": 568
   },
-  "materialized_v2_object_count": 0,
-  "new_v2_object_count": 0,
+  "materialized_v2_object_count": 8264,
+  "new_v2_object_count": 7696,
   "token_or_byte_proxies_by_stage": {
     "depth": {
       "observable_input_bytes_proxy": 15488458,
@@ -291,36 +292,36 @@
       "approximate_output_tokens_at_four_bytes_each": 1116072
     },
     "pass12": {
-      "observable_input_bytes_proxy": 366988,
-      "observable_output_bytes": 127896,
-      "approximate_input_tokens_at_four_bytes_each": 91747,
-      "approximate_output_tokens_at_four_bytes_each": 31974
+      "observable_input_bytes_proxy": 36912803,
+      "observable_output_bytes": 5503742,
+      "approximate_input_tokens_at_four_bytes_each": 9228200,
+      "approximate_output_tokens_at_four_bytes_each": 1375935
     },
     "pass3": {
-      "observable_input_bytes_proxy": 466882,
-      "observable_output_bytes": 87520,
-      "approximate_input_tokens_at_four_bytes_each": 116720,
-      "approximate_output_tokens_at_four_bytes_each": 21880
+      "observable_input_bytes_proxy": 43095027,
+      "observable_output_bytes": 3729994,
+      "approximate_input_tokens_at_four_bytes_each": 10773756,
+      "approximate_output_tokens_at_four_bytes_each": 932498
     },
     "pass4": {
-      "observable_input_bytes_proxy": 292439,
-      "observable_output_bytes": 35372,
-      "approximate_input_tokens_at_four_bytes_each": 73109,
-      "approximate_output_tokens_at_four_bytes_each": 8843
+      "observable_input_bytes_proxy": 10871085,
+      "observable_output_bytes": 1353934,
+      "approximate_input_tokens_at_four_bytes_each": 2717771,
+      "approximate_output_tokens_at_four_bytes_each": 338483
     },
     "independent_audit": {
-      "observable_input_bytes_proxy": 0,
-      "observable_output_bytes": 0,
-      "approximate_input_tokens_at_four_bytes_each": 0,
-      "approximate_output_tokens_at_four_bytes_each": 0
+      "observable_input_bytes_proxy": 20821270,
+      "observable_output_bytes": 2129024,
+      "approximate_input_tokens_at_four_bytes_each": 5205317,
+      "approximate_output_tokens_at_four_bytes_each": 532256
     }
   },
   "largest_observable_agent_input_stages": [
-    "depth",
     "pass3",
     "pass12",
-    "pass4",
-    "independent_audit"
+    "independent_audit",
+    "depth",
+    "pass4"
   ],
   "quality_tradeoff": "The compact dossier/nearby-context packet is used by default, while exact source spans remain mandatory and wider context is allowed when a unit cannot be judged safely."
 }
