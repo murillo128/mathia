@@ -40,6 +40,18 @@ PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_intuiti
 
 `generation_manifest.json` is frozen before the first theorem attempt.
 `summary.json`, `integrity_audit.json`, and `freeze.json` contain the final
-counts, anti-contamination evidence, artifact hashes, and sole exit decision.
+counts, anti-contamination evidence, artifact hashes, and pre-audit generation
+decision.
 Completing this corpus makes no qwen-lean, Lean-proof, Mathia, or downstream
 fertility claim.
+
+## Independent audit outcome
+
+The fresh audit of the exact published generation freeze returned `FAIL`.
+`independent_review.json` records the resulting
+`FRONTIER_INTUITION_INTEGRITY_BLOCKER`: the runtime emitted tool events despite
+the frozen no-tools contract, and the deterministic gate admitted Lean-plan or
+near-complete-proof outputs forbidden by issue #57. The original `freeze.json`
+is preserved as immutable generation evidence; its generation-only decision is
+superseded by the post-freeze independent audit outcome. No accepted row is
+post-hoc relabeled, and no downstream use is authorized.

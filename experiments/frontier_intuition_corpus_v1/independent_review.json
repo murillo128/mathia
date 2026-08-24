@@ -1,0 +1,55 @@
+{
+  "schema_version": "frontier-intuition-independent-review-v1",
+  "reviewed_at_utc": "2026-08-24T22:14:12Z",
+  "reviewed_pull_request": "murillo128/mathia#58",
+  "reviewed_head_sha": "1b9ea1d7a94a96c787267bfd030ad8149d10601b",
+  "reviewed_base_sha": "3cbb286020c9c9f39bd20acf280f641cc1e3b585",
+  "reviewed_freeze_id": "frontier_intuition_corpus_4ec023f14ea83cac12b5ff9b742ecbbdaeb11be1f002fd7c5e7d1e69f0f40804",
+  "verdict": "FAIL",
+  "audited_final_decision": "FRONTIER_INTUITION_INTEGRITY_BLOCKER",
+  "generation_freeze_reported_decision": "FRONTIER_INTUITION_GENERATION_BLOCKER",
+  "decision_rationale": "The independent audit found material generator-isolation and eligibility-boundary defects, which take precedence over corpus incompleteness.",
+  "material_findings": [
+    {
+      "finding": "generator_runtime_not_structurally_tool_free",
+      "attempts_with_unexpected_completed_items": 203,
+      "terminal_attempt_2_with_unexpected_completed_items": 102,
+      "unexpected_completed_items": {
+        "todo_list": 1,
+        "web_search": 712
+      },
+      "impact": "Every affected attempt was rejected as generation_failure, but terminal second-attempt failures materially affected completeness and contradict the frozen no-tools/no-browsing contract."
+    },
+    {
+      "finding": "eligibility_gate_missed_forbidden_outputs",
+      "accepted_count": 22,
+      "accepted_with_lean_word": 7,
+      "accepted_with_formal_hypothesis_marker": 4,
+      "impact": "The accepted projection contains explicit Lean-plan or copied-formal-hypothesis instructions and near-complete concrete derivations that issue #57 disallows."
+    },
+    {
+      "finding": "generation_only_decision_is_insufficient",
+      "impact": "The frozen decision logic treats only anti-contamination failure as an integrity failure and therefore misses the two protocol defects above."
+    }
+  ],
+  "verified_claims": {
+    "exact_244_plus_406_source_projection": true,
+    "ordered_task_id_hashes_match": true,
+    "no_test_role_tasks": true,
+    "theorem_public_context_only_source_schema": true,
+    "raw_capture_and_bounded_retry_lineage_replays": true,
+    "accepted_projection_and_artifact_hashes_replay": true,
+    "evaluation_only_markers_present": true,
+    "trainable_manifest_overlap_count": 0,
+    "external_consumer_count": 0,
+    "g_v2_or_optimizer_artifact_present": false,
+    "downstream_proof_claim_present": false,
+    "issue_specific_tests_passed": 17,
+    "repository_tests_passed": 143
+  },
+  "safe_follow_up": "Preserve this evidence. Before rerunning, freeze a new contract with genuinely unavailable tools and a deterministic gate covering the disallowed Lean-plan, copied-formal-instruction, and near-complete-proof boundaries. Do not post-hoc relabel this run.",
+  "corpus_ready": false,
+  "rerun_required_for_ready_corpus": true,
+  "downstream_proof_claim_authorized": false,
+  "technical_review_is_not_merge_authorization": true
+}
