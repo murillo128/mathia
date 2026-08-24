@@ -126,6 +126,39 @@ class CoreTests(unittest.TestCase):
         replay = core.parse_codex_transcript(str(capture["stdout_jsonl"]), tools_allowed=False)
         self.assertFalse(replay["valid_capture"])
 
+    def test_generator_selects_final_message_after_interim_web_message(self) -> None:
+        events = (
+            {"type": "thread.started", "thread_id": "thread-1"},
+            {"type": "item.completed", "item": {"type": "agent_message", "text": "I will check a public reference."}},
+            {"type": "item.completed", "item": {"type": "web_search", "query": "site:example.org theorem"}},
+            {"type": "item.completed", "item": {"type": "agent_message", "text": "Use the invariant decomposition."}},
+        )
+        transcript = "\n".join(json.dumps(row) for row in events)
+        parsed = core.parse_codex_transcript(
+            transcript, tools_allowed=True, allow_interim_agent_messages=True
+        )
+        self.assertTrue(parsed["valid_capture"])
+        self.assertEqual(parsed["agent_message_count"], 2)
+        self.assertEqual(parsed["interim_agent_message_count"], 1)
+        self.assertEqual(parsed["final_message"], "Use the invariant decomposition.")
+        strict = core.parse_codex_transcript(
+            transcript, tools_allowed=True, allow_interim_agent_messages=False
+        )
+        self.assertFalse(strict["valid_capture"])
+
+    def test_revised_semantic_rubric_rejects_compact_complete_derivations(self) -> None:
+        rubric = core.SEMANTIC_REVIEW_INSTRUCTION
+        self.assertIn("even to a concise one-paragraph derivation", rubric)
+        self.assertIn("one-step elementary identity", rubric)
+        self.assertIn("evaluates both theorem-specific sums", rubric)
+        self.assertIn("evaluates the theorem's percentages", rubric)
+        fixtures = json.loads(
+            (Path(__file__).parent / "semantic_boundary_revision_fixtures.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(len(fixtures), 4)
+        self.assertTrue(all(row["expected_decision"] == "rejected_near_complete_proof" for row in fixtures))
+        self.assertTrue(all(row["candidate"] not in core.INTUITION_REQUEST for row in fixtures))
+
     def test_semantic_decision_schema(self) -> None:
         message = json.dumps({
             "decision": "accepted_intuition", "semantic_truncation_detected": False,

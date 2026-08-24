@@ -15,6 +15,7 @@ from .core import (
     generate_calibration,
     generate_full,
     materialize_sources,
+    prepare_calibration_revision,
     validate_finalized,
     validate_manifest,
     validate_source_snapshot,
@@ -27,6 +28,7 @@ def build_parser() -> argparse.ArgumentParser:
     commands = parser.add_subparsers(dest="command", required=True)
     materialize = commands.add_parser("materialize-sources")
     materialize.add_argument("--prior-root", type=Path)
+    commands.add_parser("prepare-calibration-revision")
     commands.add_parser("validate-sources")
     commands.add_parser("freeze-contract")
     calibration = commands.add_parser("generate-calibration")
@@ -46,6 +48,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     if args.command == "materialize-sources":
         prior_root = args.prior_root.resolve() if args.prior_root else None
         result = materialize_sources(root=root, prior_root=prior_root)
+    elif args.command == "prepare-calibration-revision":
+        result = prepare_calibration_revision(root)
     elif args.command == "validate-sources":
         sources, prompts = validate_source_snapshot(root)
         result = {"valid": True, "sources": len(sources), "prompts": len(prompts)}

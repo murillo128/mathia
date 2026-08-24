@@ -1,0 +1,34 @@
+{
+  "schema_version": "frontier-assisted-calibration-revision-review-v1",
+  "verdict": "CALIBRATION_REVISE",
+  "reviewed_target": "89f6c49373c7d15d4604088a717f116ea24956e5",
+  "reviewed_calibration_sha256": "fa930f70c176f3978b00456565ff9e70c8f682cf2f8b172a5cc54c5bacc49a1b",
+  "reviewer": "fresh_gpt-5.6-sol_xhigh_read_only",
+  "reviewed_at_utc": "2026-08-24T23:52:00Z",
+  "material_findings": [
+    {
+      "criterion": "semantic_near_complete_proof_boundary",
+      "tasks": [
+        "mathd_algebra_10",
+        "mathd_algebra_55",
+        "mathd_algebra_224",
+        "algebra_2rootspoly_apatapbeq2asqp2ab"
+      ],
+      "consequence": "Corrected semantic labels leave fewer than 22/24 qualifying outputs at every candidate cap."
+    },
+    {
+      "criterion": "tool_use_is_provenance_not_failure",
+      "tasks": [
+        "6e146bd61f965546283b4a642bea101b64afc19c6f13d9221703842017de077b"
+      ],
+      "consequence": "An interim agent message plus web search plus final message was classified as generation_runtime_failure."
+    }
+  ],
+  "required_revision": [
+    "Reject compact derivations that supply all theorem-specific intermediate results and the conclusion.",
+    "Retain interim messages and tool events as provenance while selecting the final agent message.",
+    "Freeze a revised contract and rerun all 24 calibration tasks from fresh sessions without final-corpus reuse of revision-0 outputs."
+  ],
+  "full_generation_authorized": false,
+  "technical_review_is_not_merge_authorization": true
+}

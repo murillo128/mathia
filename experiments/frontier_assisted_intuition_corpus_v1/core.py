@@ -28,6 +28,7 @@ from urllib.parse import urlparse
 
 
 SCHEMA_VERSION = "frontier-assisted-intuition-corpus-v1"
+RUN_REVISION = "calibration-r1"
 SOURCE_SCHEMA_VERSION = "frontier-assisted-intuition-source-task-v1"
 PROMPT_SCHEMA_VERSION = "frontier-assisted-intuition-prompt-v1"
 ATTEMPT_SCHEMA_VERSION = "frontier-assisted-intuition-attempt-v1"
@@ -43,6 +44,11 @@ FREEZE_SCHEMA_VERSION = "frontier-assisted-freeze-v1"
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 EXPERIMENT_ROOT = Path(__file__).resolve().parent
 PRIOR_ROOT = REPOSITORY_ROOT / "experiments/frontier_intuition_corpus_v1"
+PROMPTS_FILENAME = "prompts_calibration_r1.jsonl"
+MANIFEST_FILENAME = "generation_manifest_calibration_r1.json"
+CALIBRATION_REPORT_FILENAME = "calibration_report_calibration_r1.json"
+CALIBRATION_REVIEW_FILENAME = "calibration_review_calibration_r1.json"
+ACTIVE_CAPTURES_DIRECTORY = Path("runs") / RUN_REVISION / "captures"
 CONTROLLING_ISSUE = "murillo128/mathia#59"
 PRIOR_ISSUE = "murillo128/mathia#57"
 QWEN_REPOSITORY = "murillo128/qwen-lean"
@@ -68,7 +74,10 @@ INTUITION_REQUEST = (
     "Analyze the theorem and identify the key mathematical idea that makes it true. Give one "
     "compact natural-language intuition explaining the useful representation, invariant, "
     "decomposition, obstruction, symmetry, reduction, or conceptual mechanism. You may state a "
-    "small number of intermediate mathematical observations if they clarify the route. Focus on "
+    "small number of intermediate mathematical observations if they clarify the route. Stop after "
+    "the central mechanism and leave theorem-specific substitutions, calculations, case enumeration, "
+    "and the final conclusion to the formal prover. For an elementary theorem, do not compress the "
+    "entire derivation into one paragraph merely because it is short. Focus on "
     "why the argument should work, not on how to encode it in Lean. Do not provide Lean tactics, "
     "mathlib lemma names, formal proof code, an API recipe, or a step-by-step complete proof. "
     "Return only the intuition, preferably as one concise paragraph and preferably within 128 "
@@ -89,8 +98,17 @@ SEMANTIC_REVIEW_INSTRUCTION = (
     "representation, invariant, decomposition, obstruction, symmetry, reduction, or a small number "
     "of conceptual intermediate observations. Use rejected_formal_implementation for Lean code, "
     "tactic/API recipes, formal proof terms, or copied formal identifiers used as execution steps. "
-    "Use rejected_near_complete_proof when the candidate gives a step-by-step proof whose remaining "
-    "formalization is mechanical. Use rejected_not_an_intuition when it is empty, off-task, lacks a "
+    "Use rejected_near_complete_proof whenever the candidate supplies all theorem-specific "
+    "intermediate results and the conclusion so that the remaining formalization is mechanical. "
+    "This applies even to a concise one-paragraph derivation without numbered steps. For example, "
+    "for a one-step elementary identity, reject a candidate that performs the decisive rewrite or "
+    "expansion and then states that the target follows; the fact that the whole proof has only one "
+    "step does not turn it into pre-proof intuition. "
+    "reject a candidate that converts the theorem's bounds, enumerates every remaining value, and "
+    "states the resulting count; reject one that evaluates both theorem-specific sums and their final "
+    "ratio; reject one that expands both concrete sides and declares the target identity; and reject "
+    "one that evaluates the theorem's percentages, difference, absolute value, and final result. "
+    "Use rejected_not_an_intuition when it is empty, off-task, lacks a "
     "strategic mathematical mechanism, or is visibly cut off before expressing one. Ordinary words "
     "such as induction, normalization, ring arithmetic, linear arithmetic, or Lean are not by "
     "themselves formal leakage. Do not use tools."
@@ -365,7 +383,7 @@ def validate_prompt_row(row: Mapping[str, Any], source: Mapping[str, Any]) -> No
 
 def validate_source_snapshot(root: Path = EXPERIMENT_ROOT) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     sources = list(iter_jsonl(root / "source_tasks.jsonl"))
-    prompts = list(iter_jsonl(root / "prompts.jsonl"))
+    prompts = list(iter_jsonl(root / PROMPTS_FILENAME))
     if len(sources) != 650 or len(prompts) != 650:
         raise ValueError("issue #59 source/prompt count differs from 650")
     prompt_by_key = {(str(row["workload"]), str(row["task_id"])): row for row in prompts}
@@ -400,15 +418,63 @@ def materialize_sources(*, root: Path = EXPERIMENT_ROOT, prior_root: Path | None
     sources = [_source_row(row, resolved_prior) for row in prior_sources]
     prompts = [_prompt_row(row) for row in sources]
     write_jsonl_once(root / "source_tasks.jsonl", sources)
-    write_jsonl_once(root / "prompts.jsonl", prompts)
+    write_jsonl_once(root / PROMPTS_FILENAME, prompts)
     validate_source_snapshot(root)
     return {
         "source_count": len(sources),
         "counts": dict(EXPECTED_COUNTS),
         "ordered_task_ids_sha256": dict(EXPECTED_ORDERED_TASK_IDS_SHA256),
         "source_tasks_sha256": sha256_file(root / "source_tasks.jsonl"),
-        "prompts_sha256": sha256_file(root / "prompts.jsonl"),
+        "prompts_sha256": sha256_file(root / PROMPTS_FILENAME),
         "prior_generation_outputs_copied": False,
+    }
+
+
+def prepare_calibration_revision(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
+    """Preserve calibration-r0 and materialize fresh r1 prompts.
+
+    Revision-0 captures remain byte-for-byte at their published paths. The
+    active capture path is disjoint, so no prior output can satisfy an r1 task.
+    """
+    sources = list(iter_jsonl(root / "source_tasks.jsonl"))
+    if len(sources) != 650:
+        raise ValueError("revision source count differs from 650")
+    for source in sources:
+        validate_source_row(source)
+    for workload in WORKLOADS:
+        ids = [str(row["task_id"]) for row in sources if row["workload"] == workload]
+        if len(ids) != EXPECTED_COUNTS[workload] or ordered_ids_sha256(ids) != EXPECTED_ORDERED_TASK_IDS_SHA256[workload]:
+            raise ValueError(f"revision source identity differs: {workload}")
+    review = json.loads((root / "calibration_revision_0_review.json").read_text(encoding="utf-8"))
+    if (
+        review.get("verdict") != "CALIBRATION_REVISE"
+        or review.get("reviewed_target") != "89f6c49373c7d15d4604088a717f116ea24956e5"
+        or review.get("reviewed_calibration_sha256") != sha256_file(root / "calibration_report.json")
+    ):
+        raise ValueError("calibration-r0 revision review is not bound to the preserved evidence")
+    old_capture_paths = sorted((root / "captures").rglob("attempt_*.json"))
+    if len(old_capture_paths) != 28:
+        raise ValueError("calibration-r0 must preserve exactly 28 raw attempts")
+    legacy_manifest = {
+        "schema_version": "frontier-assisted-superseded-calibration-capture-manifest-v1",
+        "run_revision": "calibration-r0",
+        "disposition": "CALIBRATION_REVISE_not_final_corpus_eligible",
+        "reviewed_target": review["reviewed_target"],
+        "captures": [
+            {"path": str(path.relative_to(root)), "bytes": path.stat().st_size, "sha256": sha256_file(path)}
+            for path in old_capture_paths
+        ],
+    }
+    write_json_once(root / "calibration_revision_0_capture_manifest.json", legacy_manifest)
+    prompts = [_prompt_row(row) for row in sources]
+    write_jsonl_once(root / PROMPTS_FILENAME, prompts)
+    validate_source_snapshot(root)
+    return {
+        "run_revision": RUN_REVISION,
+        "source_count": len(sources),
+        "prompts_sha256": sha256_file(root / PROMPTS_FILENAME),
+        "preserved_revision_0_attempts": len(old_capture_paths),
+        "revision_0_outputs_final_corpus_eligible": False,
     }
 
 
@@ -499,7 +565,16 @@ def _manifest_payload(root: Path, runtime: Mapping[str, Any]) -> dict[str, Any]:
         "schema_version": MANIFEST_SCHEMA_VERSION,
         "controlling_issue": CONTROLLING_ISSUE,
         "artifact_id": SCHEMA_VERSION,
-        "status": "pre_calibration_contract_frozen",
+        "run_revision": RUN_REVISION,
+        "status": "pre_calibration_revision_1_contract_frozen",
+        "superseded_calibration": {
+            "run_revision": "calibration-r0",
+            "verdict": "CALIBRATION_REVISE",
+            "reviewed_target": "89f6c49373c7d15d4604088a717f116ea24956e5",
+            "review_sha256": sha256_file(root / "calibration_revision_0_review.json"),
+            "capture_manifest_sha256": sha256_file(root / "calibration_revision_0_capture_manifest.json"),
+            "outputs_final_corpus_eligible": False,
+        },
         "source_contract": {
             "qwen_repository": QWEN_REPOSITORY,
             "accepted_dataset_v2_commit": QWEN_ACCEPTED_COMMIT,
@@ -508,8 +583,8 @@ def _manifest_payload(root: Path, runtime: Mapping[str, Any]) -> dict[str, Any]:
             "workload_counts": EXPECTED_COUNTS,
             "ordered_task_ids_sha256": EXPECTED_ORDERED_TASK_IDS_SHA256,
             "source_tasks_sha256": sha256_file(root / "source_tasks.jsonl"),
-            "prompts_sha256": sha256_file(root / "prompts.jsonl"),
-            "generator_reads_only": ["source_tasks.jsonl", "prompts.jsonl", "generation_manifest.json"],
+            "prompts_sha256": sha256_file(root / PROMPTS_FILENAME),
+            "generator_reads_only": ["source_tasks.jsonl", PROMPTS_FILENAME, MANIFEST_FILENAME],
             "forbidden_generator_inputs": sorted(FORBIDDEN_SOURCE_KEYS),
             "final_test_workloads_allowed": False,
             "prior_generation_outputs_reused": False,
@@ -525,6 +600,8 @@ def _manifest_payload(root: Path, runtime: Mapping[str, Any]) -> dict[str, Any]:
             "prior_conversation": False,
             "tools_allowed": True,
             "tool_use_is_rejection": False,
+            "agent_message_extraction": "retain every message in raw transcript; select final agent message",
+            "interim_agent_messages_are_failure": False,
             "available_support": "public browser/web plus product-managed reasoning helpers",
             "local_shell_and_connected_apps_disabled": True,
             "disabled_cli_features": list(GENERATOR_DISABLED_FEATURES),
@@ -632,13 +709,13 @@ def freeze_contract(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
         "frozen_at_utc": utc_now(),
         "generation_manifest_id": stable_id("frontier_assisted_generation_manifest", payload),
     }
-    write_json_once(root / "generation_manifest.json", manifest)
+    write_json_once(root / MANIFEST_FILENAME, manifest)
     validate_manifest(root)
     return manifest
 
 
 def validate_manifest(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
-    manifest = json.loads((root / "generation_manifest.json").read_text(encoding="utf-8"))
+    manifest = json.loads((root / MANIFEST_FILENAME).read_text(encoding="utf-8"))
     frozen_at = manifest.get("frozen_at_utc")
     manifest_id = manifest.get("generation_manifest_id")
     payload = {key: value for key, value in manifest.items() if key not in {"frozen_at_utc", "generation_manifest_id"}}
@@ -676,7 +753,9 @@ def _source_domains(value: Any) -> list[str]:
     return sorted(domains)
 
 
-def parse_codex_transcript(transcript: str, *, tools_allowed: bool) -> dict[str, Any]:
+def parse_codex_transcript(
+    transcript: str, *, tools_allowed: bool, allow_interim_agent_messages: bool = False
+) -> dict[str, Any]:
     final_messages: list[str] = []
     thread_ids: list[str] = []
     completed_support_items: list[dict[str, Any]] = []
@@ -701,22 +780,28 @@ def parse_codex_transcript(transcript: str, *, tools_allowed: bool) -> dict[str,
         elif item_type != "reasoning":
             completed_support_items.append(dict(item))
     support_types = Counter(str(item.get("type")) for item in completed_support_items)
+    message_count_valid = (
+        len(final_messages) >= 1 if allow_interim_agent_messages else len(final_messages) == 1
+    )
     valid = (
         invalid_json_lines == 0
         and len(thread_ids) == 1
-        and len(final_messages) == 1
+        and message_count_valid
         and (tools_allowed or not completed_support_items)
     )
     return {
         "valid_capture": valid,
         "thread_ids": thread_ids,
         "agent_message_count": len(final_messages),
+        "interim_agent_message_count": max(0, len(final_messages) - 1),
+        "agent_messages": final_messages,
         "invalid_json_lines": invalid_json_lines,
-        "final_message": final_messages[0] if len(final_messages) == 1 else None,
+        "final_message": final_messages[-1] if final_messages else None,
         "completed_support_items": completed_support_items,
         "support_item_types": dict(sorted(support_types.items())),
         "source_domains": _source_domains([completed_support_items, final_messages]),
         "tools_allowed": tools_allowed,
+        "allow_interim_agent_messages": allow_interim_agent_messages,
     }
 
 
@@ -757,7 +842,7 @@ def _safe_task_path(task_id: str) -> str:
 
 def capture_path(root: Path, source: Mapping[str, Any], attempt_index: int) -> Path:
     return (
-        root / "captures" / str(source["workload"]) / _safe_task_path(str(source["task_id"]))
+        root / ACTIVE_CAPTURES_DIRECTORY / str(source["workload"]) / _safe_task_path(str(source["task_id"]))
         / f"attempt_{attempt_index}.json"
     )
 
@@ -795,7 +880,9 @@ def _run_codex(
             timed_out = True
             stdout = error.stdout if isinstance(error.stdout, str) else ""
             stderr = error.stderr if isinstance(error.stderr, str) else ""
-    parsed = parse_codex_transcript(stdout, tools_allowed=not reviewer)
+    parsed = parse_codex_transcript(
+        stdout, tools_allowed=not reviewer, allow_interim_agent_messages=not reviewer
+    )
     valid = returncode == 0 and not timed_out and parsed["valid_capture"]
     return {
         "started_at_utc": started_at,
@@ -929,7 +1016,10 @@ def validate_attempt(
     generation = row.get("generation_capture")
     if not isinstance(generation, dict):
         raise ValueError("attempt lacks generation capture")
-    parsed = parse_codex_transcript(str(generation.get("stdout_jsonl", "")), tools_allowed=True)
+    parsed = parse_codex_transcript(
+        str(generation.get("stdout_jsonl", "")), tools_allowed=True,
+        allow_interim_agent_messages=True,
+    )
     for key, value in parsed.items():
         if generation.get(key) != value:
             raise ValueError(f"generation transcript parse evidence differs: {key}")
@@ -959,7 +1049,8 @@ def validate_attempt(
         if not isinstance(review_capture, dict):
             raise ValueError("semantic review lacks raw capture")
         review_parsed = parse_codex_transcript(
-            str(review_capture.get("stdout_jsonl", "")), tools_allowed=False
+            str(review_capture.get("stdout_jsonl", "")), tools_allowed=False,
+            allow_interim_agent_messages=False,
         )
         for key, value in review_parsed.items():
             if review_capture.get(key) != value:
@@ -1201,12 +1292,12 @@ def finalize_calibration(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
         "finalized_at_utc": utc_now(),
         "calibration_id": stable_id("frontier_assisted_calibration", report_payload),
     }
-    write_json_once(root / "calibration_report.json", report)
+    write_json_once(root / CALIBRATION_REPORT_FILENAME, report)
     return report
 
 
 def validate_calibration_report(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
-    report = json.loads((root / "calibration_report.json").read_text(encoding="utf-8"))
+    report = json.loads((root / CALIBRATION_REPORT_FILENAME).read_text(encoding="utf-8"))
     finalized = report.get("finalized_at_utc")
     calibration_id = report.get("calibration_id")
     payload = {key: value for key, value in report.items() if key not in {"finalized_at_utc", "calibration_id"}}
@@ -1241,7 +1332,7 @@ def _git_file_at_target(target: str, relative_path: str) -> bytes:
 
 def validate_calibration_review(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
     report = validate_calibration_report(root)
-    review = json.loads((root / "calibration_review.json").read_text(encoding="utf-8"))
+    review = json.loads((root / CALIBRATION_REVIEW_FILENAME).read_text(encoding="utf-8"))
     required = {
         "schema_version", "verdict", "reviewed_target", "reviewed_calibration_sha256",
         "reviewer", "reviewed_at_utc", "checks", "technical_review_is_not_merge_authorization",
@@ -1254,10 +1345,10 @@ def validate_calibration_review(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
     if not re.fullmatch(r"[0-9a-f]{40}", target):
         raise ValueError("calibration review target is not a full Git SHA")
     target_bytes = _git_file_at_target(
-        target, str((root / "calibration_report.json").relative_to(REPOSITORY_ROOT))
+        target, str((root / CALIBRATION_REPORT_FILENAME).relative_to(REPOSITORY_ROOT))
     )
     target_hash = sha256_bytes(target_bytes)
-    if target_hash != review.get("reviewed_calibration_sha256") or target_hash != sha256_file(root / "calibration_report.json"):
+    if target_hash != review.get("reviewed_calibration_sha256") or target_hash != sha256_file(root / CALIBRATION_REPORT_FILENAME):
         raise ValueError("calibration review does not bind the current published evidence")
     checks = review.get("checks")
     expected_checks = {
@@ -1450,7 +1541,7 @@ def _normalized_intuition(text: str) -> str:
 
 
 def _all_capture_paths(root: Path) -> list[Path]:
-    captures = root / "captures"
+    captures = root / ACTIVE_CAPTURES_DIRECTORY
     return sorted(captures.rglob("attempt_*.json")) if captures.exists() else []
 
 
@@ -1763,8 +1854,10 @@ def finalize(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
         else "FRONTIER_ASSISTED_INTUITION_CORPUS_READY"
     )
     artifact_names = (
-        "source_tasks.jsonl", "prompts.jsonl", "generation_manifest.json",
-        "calibration_report.json", "calibration_review.json", "raw_attempts.jsonl",
+        "source_tasks.jsonl", PROMPTS_FILENAME, MANIFEST_FILENAME,
+        CALIBRATION_REPORT_FILENAME, CALIBRATION_REVIEW_FILENAME,
+        "calibration_revision_0_review.json", "calibration_revision_0_capture_manifest.json",
+        "raw_attempts.jsonl",
         "accepted_intuitions.jsonl", "boundary_results.jsonl", "summary.json",
         "integrity_audit.json", "capture_manifest.json",
     )
