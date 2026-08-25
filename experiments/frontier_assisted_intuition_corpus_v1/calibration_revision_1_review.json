@@ -1,0 +1,33 @@
+{
+  "schema_version": "frontier-assisted-calibration-revision-review-v1",
+  "verdict": "CALIBRATION_REVISE",
+  "reviewed_target": "b54ec1f3e9c529bfb000800db17dc80c1b130cfb",
+  "reviewed_calibration_sha256": "ec6efd9f8be583f394fa6269793c460b6fb6cab415310244e7fd8379ced93a43",
+  "reviewer": "fresh_gpt-5.6-sol_xhigh_read_only",
+  "reviewed_at_utc": "2026-08-25T00:12:00Z",
+  "material_findings": [
+    {
+      "criterion": "semantic_near_complete_proof_boundary",
+      "tasks": [
+        "aime_1983_p9",
+        "algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x",
+        "6e146bd61f965546283b4a642bea101b64afc19c6f13d9221703842017de077b"
+      ],
+      "consequence": "Correcting any one false acceptance leaves fewer than 22/24 qualifying outputs at the selected cap."
+    }
+  ],
+  "verified_corrections": [
+    "Interim agent messages and web events are retained while the final agent message is selected.",
+    "Tool use is provenance rather than an eligibility failure.",
+    "Calibration-r0 and calibration-r1 paths, attempts, outputs, and generation threads are disjoint.",
+    "Exact theorem/public-context isolation remains intact."
+  ],
+  "required_revision": [
+    "Reject cosmetically shortened derivations that still contain the full theorem-specific route.",
+    "Reject multi-clause outputs that justify every clause even if one explicit witness is omitted.",
+    "Generate only the central mechanism and omit exact theorem-specific balances, bounds, calculations, witnesses, and conclusions.",
+    "Rerun all 24 calibration tasks from fresh sessions under a disjoint capture path with no calibration-r1 output reuse."
+  ],
+  "full_generation_authorized": false,
+  "technical_review_is_not_merge_authorization": true
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "frontier-assisted-boundary-preflight-v1",
+  "run_revision": "calibration-r4",
+  "recorded_at_utc": "2026-08-25T02:33:55Z",
+  "purpose": "Adversarial regression check before freezing r4; historical r3 outputs are evidence only and cannot become r4 corpus rows.",
+  "semantic_contract": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "xhigh",
+    "fresh_read_only_sessions": true,
+    "reviewers_per_candidate": 2,
+    "tools_allowed": false,
+    "acceptance": "unanimous accepted_intuition"
+  },
+  "confirmed_near_complete_negative_controls": [
+    {
+      "task_id": "mathd_numbertheory_739",
+      "historical_attempt_index": 2,
+      "decisions": ["rejected_near_complete_proof", "rejected_near_complete_proof"],
+      "stdout_sha256": ["13ab0e8e752a202868d59c3760ebaf735230fc804f5a5819f04e95f42313f356", "26ba79968d9b66f908acc4f05bd23c9e9b165fb356d7e1be708f3ea454f03f0d"]
+    },
+    {
+      "task_id": "induction_divisibility_9div10tonm1",
+      "historical_attempt_index": 2,
+      "decisions": ["rejected_near_complete_proof", "rejected_near_complete_proof"],
+      "stdout_sha256": ["13a9bd0936b2c21aa5e7e199273be041cc2dce0c36fc0a3a810c0305982464ba", "dfc50d3b378d93256e5d9ce398c6f68b113cf790b315431c0e526bdd73f016eb"]
+    },
+    {
+      "task_id": "induction_divisibility_3div2tooddnp1",
+      "historical_attempt_index": 2,
+      "decisions": ["rejected_near_complete_proof", "rejected_near_complete_proof"],
+      "stdout_sha256": ["737a61d447eab2b84967e262eec3a150b0cbd5aa221d43c461dfd9d327bfe2a9", "fae1caaed0eceb18e955c810c19872959e15e482a33698b74e09e320679c50ba"]
+    },
+    {
+      "task_id": "mathd_numbertheory_236",
+      "historical_attempt_index": 1,
+      "decisions": ["rejected_near_complete_proof", "rejected_near_complete_proof"],
+      "stdout_sha256": ["3e37c4b2b0513e75b0d0b79cbec0720eef3df3d42446bdf38fc69dc5e69b0601", "abdd0a4964e0f3da7021e9213a8c4663d0d0002bbda32411014195357add807c"]
+    }
+  ],
+  "previously_audited_positive_controls": [
+    {
+      "task_id": "mathd_algebra_224",
+      "decisions": ["accepted_intuition", "accepted_intuition"],
+      "stdout_sha256": ["dc316cb68a39e59c7d87bec3d54bad96516c4cbec9ae8a89eb15624d61caefba", "f54bafad03df06582445d535c7adc6aeef5287295d824776fbc21d3a6e65b0e2"]
+    },
+    {
+      "task_id": "mathd_algebra_55",
+      "decisions": ["accepted_intuition", "accepted_intuition"],
+      "stdout_sha256": ["78d8441801a5bcf58b273e9c65058b434aaced78ff977aa72a409b553226935a", "964b7df41faa71eeb74e915d956789f0032bacf681f1cfcdb5231b5cf51b7836"]
+    },
+    {
+      "task_id": "12b1567f63c5af5dba0d778e9169aa9f4a593ffbfe3832a901ae9961669cd72e",
+      "decisions": ["accepted_intuition", "accepted_intuition"],
+      "stdout_sha256": ["5363c79eff78b3e426b1c10b89c7e7cbd2b53d7c386e965955c3ed243dc0b2db", "dc7a605eb6796b76ce945dcf42fbcf441d8f3b8f8b04a0bf169d553b97285bbf"]
+    },
+    {
+      "task_id": "2542108b04f69a28db88ffa9b66fba83bbe371d7f717f8c2f3c65aed9dbf4e50",
+      "decisions": ["accepted_intuition", "accepted_intuition"],
+      "stdout_sha256": ["9fa6bc9aae9d3063b369d71d39923b58a6886adf76ab8d70694f5bbfba3f643a", "fbf3a8c4fdd87db3b5da4cbf0a072add93566783c0a0bacbec238bba49d5a431"]
+    }
+  ],
+  "hard_false_positive_recomputation": {
+    "task_id": "mathd_algebra_69",
+    "historical_attempt_index": 1,
+    "hard_check": "hard_pass",
+    "semantic_decisions": ["accepted_intuition", "accepted_intuition"],
+    "route_completeness": ["partial_route", "partial_route"],
+    "substantive_mathematical_bridge_omitted": [true, true],
+    "stdout_sha256": ["2a8f4fb58eaf9280c377d680020319ef9e1e39ab2399c9d42d32a693bd29541f", "ea2ae25707828a5d23cae31043f7ee517c30ec194f870ace7561caddbfb1a6f8"]
+  },
+  "result": {
+    "confirmed_negative_reviews": 8,
+    "confirmed_negative_false_acceptances": 0,
+    "positive_control_reviews": 8,
+    "positive_control_false_rejections": 0,
+    "hard_false_positive_corrected": true,
+    "status": "PASS"
+  }
+}
