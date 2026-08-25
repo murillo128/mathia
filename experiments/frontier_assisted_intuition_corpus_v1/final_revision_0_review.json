@@ -1,0 +1,43 @@
+{
+  "schema_version": "frontier-assisted-final-review-v1",
+  "verdict": "REVISE",
+  "reviewed_target": "6d7fa415a6259e18c886e0f53c10bd669768d390",
+  "reviewed_freeze_sha256": "f2f57ef149adb199e2730e05d5c821e1b4506b1657317165b80f4b4c56ec4b73",
+  "reviewer": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "xhigh",
+    "fresh_context": true,
+    "read_only": true
+  },
+  "review_recorded_at_utc": "2026-08-25T02:23:55Z",
+  "material_findings": [
+    {
+      "class": "hard_gate_false_positive",
+      "task_id": "mathd_algebra_69",
+      "finding": "Ordinary prose beginning with Positivity was classified as a Lean tactic line, causing an output-boundary retry that the unambiguous-hard-leakage contract did not authorize."
+    },
+    {
+      "class": "semantic_near_complete_proof_false_acceptance",
+      "task_ids": [
+        "mathd_numbertheory_739",
+        "induction_divisibility_9div10tonm1",
+        "induction_divisibility_3div2tooddnp1",
+        "mathd_numbertheory_236"
+      ],
+      "finding": "The semantic boundary admitted mechanically transcribable elementary proof routes, including attempt-2 wording materially equivalent to rejected attempt-1 routes."
+    }
+  ],
+  "high_risk_retry_pairs_requiring_uniform_new_revision_control": 52,
+  "checks_that_passed": [
+    "repository_native_tests_and_deterministic_validators",
+    "exact_source_membership_order_and_qwen_lineage",
+    "all_capture_transcript_hash_token_and_retry_linkage",
+    "circuit_breaker_replay",
+    "calibration_r3_pass_binding",
+    "superseded_output_non_reuse",
+    "theorem_only_generation_and_reviewer_isolation",
+    "evaluation_only_training_isolation"
+  ],
+  "disposition": "preserve_calibration_r3_run_byte_for_byte_and_restart_any_revised_extraction_contract_as_a_new_run_revision",
+  "technical_review_is_not_merge_authorization": true
+}
