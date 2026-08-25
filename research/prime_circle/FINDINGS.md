@@ -222,3 +222,55 @@ is also insufficient on the infinite nonperiodic prime path: it retains an alter
 Therefore cross-ratios alone do **not** canonically define a global spectral operator. A viable spectral construction must use additional structure already present in the original circle—Euclidean/unit-circle geometry, off-circle fields/interior-exterior duality, or a genuinely multidimensional labeled structure—rather than choosing a closure or lift normalization to manufacture a spectrum.
 
 Full derivation: `findings/PC-013-pure-projective-transfer-is-flat-and-hill-spectrum-needs-extra-gauge.md`.
+
+---
+
+## PC-014 — exact Euclidean/unit-circle spectral transfer is subdivision-invariant
+
+**Status:** `DECISIVE-NEGATIVE` for the most natural Euclidean repair of PC-013.
+
+For the distinguished prime vertices \(z_n=e^{2\pi i/p_n}\), the exact angular increments are
+
+\[
+h_n=2\pi\left(\frac1{p_n}-\frac1{p_{n+1}}\right)
+=\frac{2\pi g_n}{p_np_{n+1}}.
+\]
+
+Using the Euclidean circle to remove the projective lift ambiguity leads canonically to the exact one-dimensional Helmholtz/Dirichlet-to-Neumann element
+
+\[
+D_h(k)=k
+\begin{pmatrix}
+\cot(kh)&-\csc(kh)\\
+-\csc(kh)&\cot(kh)
+\end{pmatrix}
+\]
+
+and transfer matrix
+
+\[
+T_h(k)=
+\begin{pmatrix}
+\cos(kh)&\sin(kh)/k\\
+-k\sin(kh)&\cos(kh)
+\end{pmatrix}.
+\]
+
+This is exactly the \(\csc/\cot\) tridiagonal geometry suggested by the unit-circle lift. However,
+
+\[
+T_a(k)T_b(k)=T_{a+b}(k),
+\]
+
+so every finite prime block collapses to
+
+\[
+T_{h_m}(k)\cdots T_{h_N}(k)
+=T_{2\pi(1/p_m-1/p_{N+1})}(k),
+\]
+
+and the infinite tail collapses to an ordinary arc of length \(2\pi/p_m\). All interior prime-gap fluctuations disappear exactly. Equivalently, Schur-complement elimination of any inserted prime vertex composes the two exact Dirichlet-to-Neumann elements into the one for their total length.
+
+Thus a canonical one-dimensional spectralization of the Euclidean circle makes the prime vertices mere subdivision points. Freezing the \(k=1\) coefficients and then adding a new linear spectral parameter would produce a gap-sensitive Jacobi operator, but that extra spectral dependence is no longer derived from the exact circle geometry.
+
+Full derivation: `findings/PC-014-euclidean-unit-circle-spectral-transfer-is-subdivision-invariant.md`.
