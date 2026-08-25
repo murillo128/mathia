@@ -38,10 +38,13 @@ check.
 
 The exact active generator instruction, reviewer instruction, 8+16 evenly spaced
 calibration membership, candidate caps (128/160/192 Qwen tokens), maximum-two
-retry policy, and online circuit breakers are frozen before calibration. The
-full run cannot start until the 24-task evidence is published and a fresh
-read-only review records `CALIBRATION_PASS` in
-`calibration_review_calibration_r4.json`.
+retry policy, and online circuit breakers were frozen before calibration. The
+24-task r4 calibration received a fresh `CALIBRATION_PASS` at 22/24 and selected
+the 128-token cap. The authorized full run then completed all remaining 626
+tasks without a circuit breaker or runtime miss. The frozen candidate release
+contains 611 accepted intuitions and 39 explicit missing-intuition records from
+746 attempts. Its exact published target still requires a fresh independent
+final audit before the pull request can become ready for review.
 
 ## Reproduction and validation
 
