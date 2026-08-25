@@ -1,6 +1,8 @@
 # PF-025 — recurring prime islands implant pattern-specific small spectrum
 
-**Status:** LITERATURE+DERIVED / substantive candidate. The proof chain uses standard ingredients, but the arithmetic-to-essential-spectrum specialization appears not to be covered by the literature located so far. One local topological identification inherited from PF-004/PF-007 should still receive an independent formal audit before this is promoted to a project theorem.
+**SUPERSEDED BY PF-028.** The affine endpoint recentering used below does not freeze the marked hyperbolic pants geometry: every distinguished cuff internal to a bounded translated prime pattern has length tending to infinity, and conjugating the actual generators preserves those divergent traces. Therefore the fixed finite-area right limit `S_H` asserted below is not produced by the stated argument, and the spectral implantation conclusion must not be used as an established candidate. The text is retained as research history; see `PF-028-bounded-prime-islands-do-not-have-the-claimed-fixed-surface-right-limit.md` for the correction.
+
+**Status:** SUPERSEDED / INVALID AS STATED. The abstract Weyl-transplantation step would be valid given a genuine recurring geometric right limit, but this file does not establish such a limit.
 
 ## Statement
 
@@ -52,6 +54,8 @@ Reference:
 
 ## 2. Exact prime-circle normalization gives a fixed hyperbolic local limit
 
+**This section is the invalid step; see PF-028.**
+
 For one occurrence with large base prime scale `P_j`, use the upper-half-plane isometry
 
 ```text
@@ -74,35 +78,13 @@ A_j(cot(pi/(P_j+eta)))
 
 Hence the exact prime vertices of the recurrent island converge, after a genuine hyperbolic isometry, to the fixed endpoint configuration `H`.
 
-The Fuchsian side-pairing matrices and the orthogonal-circle geometry depend continuously on their real endpoints. Therefore every compact part of the island away from the two exterior collars converges smoothly to the corresponding compact part of a fixed finite hyperbolic surface `S_H`.
+The original version of this note then inferred that the Fuchsian side-pairing geometry converges to a fixed surface `S_H`. PF-028 shows that inference is false: the actual conjugated generators retain divergent traces and the internal Fenchel–Nielsen cuff lengths satisfy `ell_i -> infinity`.
 
-The large prime-free intervals on both sides give, through the exact PF-004 cross-ratio formula,
+The large prime-free intervals on both sides still give, through the exact PF-004 cross-ratio formula, short nonlocal separating classes under the hypotheses recorded in PF-007. That fact alone does not produce the fixed `S_H` claimed here.
 
-```text
-sinh(L_j^-/4)^2 -> 0,
-sinh(L_j^+/4)^2 -> 0,
-```
+## 3. Conditional Weyl-sequence argument
 
-so the two separating neck lengths satisfy
-
-```text
-L_j^- -> 0,
-L_j^+ -> 0.
-```
-
-Pinching those two necks replaces them by cusps. In the standard tight-flute pants topology, an internal chain of `r` cusp pants has genus zero, `r` original cusps, and two geodesic boundary components; pinching the two boundaries gives a connected finite-area genus-zero surface with
-
-```text
-n_H = r + 2
-```
-
-cusps.
-
-This topology is consistent with the standard definition of a tight flute as an infinite chain of tight pairs of pants.
-
-**Audit boundary.** The remaining local geometric task is to write explicitly, in the prime side-pairing convention, that the two PF-004 words used in PF-007 are the simple primitive separating classes bounding exactly this finite pants block. Their translation-length formula is already exact; this is a topological word-identification check, not an analytic gap in the argument below.
-
-## 3. A direct Weyl-sequence argument implants every small `L2` eigenvalue
+The following is a valid abstract mechanism **conditional on** first producing a genuine recurring smooth geometric right limit `S_H`; PF-028 shows that the construction in Section 2 does not do so.
 
 Let
 
@@ -119,134 +101,71 @@ Because `S_H` is complete, `C_c^infinity(S_H)` is a form/operator core for the L
 ||(Delta_S_H - lambda) phi_m|| -> 0.
 ```
 
-For each `m`, choose an occurrence of `H` so far out that:
-
-1. its two necks are sufficiently short;
-2. the compact set containing `supp(phi_m)` is represented inside the island;
-3. the metric on that compact set is sufficiently close to the metric of `S_H`.
-
-Transport `phi_m` through this local almost-isometry and extend it by zero to obtain `Phi_m` on `X_prime`. Choose the occurrences pairwise disjoint and escaping every compact subset of `X_prime`.
-
-Smooth convergence on the support gives
+If pairwise disjoint occurrences contained increasingly accurate copies of the supports of `phi_m`, transporting and extending by zero would give functions `Phi_m` on `X_prime` with
 
 ```text
 ||Phi_m|| -> 1,
-||(Delta_X_prime - lambda) Phi_m|| -> 0.
-```
-
-Escaping supports give
-
-```text
+||(Delta_X_prime - lambda) Phi_m|| -> 0,
 Phi_m -> 0 weakly.
 ```
 
-Weyl's criterion therefore yields
+Weyl's criterion would then yield
 
 ```text
 lambda in sigma_ess(Delta_X_prime).
 ```
 
-This argument only needs local smooth convergence on larger and larger compact subsets. It does not require a global scattering theory, a Selberg trace formula, or bounded geometry of the whole infinite flute.
-
-Classical hyperbolic-degeneration theory supplies a stronger surrounding framework for precisely this kind of pinching convergence; see, for example, Ji's work on spectral degeneration of hyperbolic Riemann surfaces and Wolpert's spectral-limit papers. Hide–Thomas also use explicit bi-Lipschitz comparison and eigenfunction transplantation when short geodesics are pinched to cusps.
+Classical hyperbolic-degeneration theory supplies a surrounding framework for genuine pinching convergence; see Ji and Wolpert. What failed here is not Weyl's criterion but the identification of the actual prime islands with one fixed finite-area limit surface.
 
 References:
 
 - L. Ji, *Spectral degeneration of hyperbolic Riemann surfaces*, J. Differential Geom. 38 (1993), 263–313.
 - S. A. Wolpert, *Spectral limits for hyperbolic surfaces, I*, Invent. Math. 108 (1992), 67–89.
-- W. Hide and J. Thomas, *Small eigenvalues of hyperbolic surfaces with many cusps*, arXiv:2410.06093, especially Section 4 on collapsing short geodesics and comparing small eigenvalues.
+- W. Hide and J. Thomas, *Small eigenvalues of hyperbolic surfaces with many cusps*, arXiv:2410.06093.
 
-## 4. Such a recurrent limit can be forced to have positive small spectrum
+## 4. The former small-spectrum conclusion is withdrawn
 
-Hide–Thomas prove the following current form of their topological lower bound:
+The original note combined the asserted genus-zero finite-area limit with the Hide–Thomas lower bound to force a positive eigenvalue below `1/4` and then implant it into the essential spectrum.
 
-```text
-For every a > 0 there exists b > 0 such that
-if g < a n, a finite-area hyperbolic surface of signature (g,n)
-has at least b(2g+n-2) eigenvalues in [0,1/4).
-```
-
-Apply this to `S_H`, where `g=0` and `n=n_H=r+2`. Since Pintz allows `k0`, hence `r`, to be chosen arbitrarily large, choose it large enough that
+Since the fixed finite-area surface `S_H` has not been obtained, that application is unavailable. In particular, this file no longer supports the conclusion
 
 ```text
-b(n_H-2) > 1.
-```
-
-The zero eigenvalue is simple on the connected finite-area surface `S_H`; therefore at least one further eigenvalue satisfies
-
-```text
-0 < lambda_H < 1/4.
-```
-
-By the Weyl argument,
-
-```text
+0 < lambda_H < 1/4,
 lambda_H in sigma_ess(Delta_X_prime).
 ```
 
-Thus the combination of a prime-cluster theorem and hyperbolic spectral geometry gives an unconditional route to **nonzero essential spectrum below `1/4`** for the prime-flute, subject only to the explicit separating-word audit stated above.
+Hide–Thomas remains a valid theorem about finite-area surfaces with many cusps; the missing object is the specific finite-area `S_H` that this note incorrectly claimed as the geometric limit of the recurring prime islands.
 
-Reference:
+## 5. What remains true and potentially useful
 
-- W. Hide and J. Thomas, *Small eigenvalues of hyperbolic surfaces with many cusps*, arXiv:2410.06093, Theorem 1.3 in the current version.
+The arithmetic recurrence statement remains valid: one exact bounded offset subset `H` can recur infinitely often inside isolated prime clusters.
 
-## 5. What is and is not prime-specific
+The exact Möbius-invariant four-endpoint data also remain valid. In particular PF-004/PF-007 can produce finite or vanishing translation lengths for certain **composite/nonlocal** words even while the individual distinguished cuff lengths internal to the bounded cluster diverge.
 
-PF-015 already showed that the **number** of small eigenvalues on a genus-zero surface with many cusps is largely topological. That is not the new signal here.
-
-The finer datum is
+This means the correct next problem is a singular-degeneration problem, not a frozen-surface problem:
 
 ```text
-H
- -> exact limiting endpoint/cross-ratio geometry
- -> S_H
- -> {lambda_j(S_H) : 0 < lambda_j < 1/4}
- -> sigma_ess(Delta_X_prime).
+recurring bounded prime pattern
+ + internal cuffs -> infinity
+ + selected nonlocal necks -> 0
+ -> determine the actual pointed/re-marked limit, if any.
 ```
 
-The exact positions of the eigenvalues of `S_H` depend on its moduli, which in this construction are selected by the recurrent prime offsets and their exact Möbius/cross-ratio geometry. A generic punctured sphere with the same number of cusps has no reason to have the same small eigenvalues.
-
-This is therefore not a restatement of “there are many cusps” or “there are unusual prime gaps.” It is a mechanism by which a **fixed recurring finite arithmetic configuration can implant its finite-surface spectral data into the essential spectrum of one infinite hyperbolic surface**.
-
-Important limitations:
-
-- no injectivity is claimed: different patterns can in principle be isospectral;
-- no Riemann-zero relation is claimed;
-- no density or completeness statement for `sigma_ess ∩ (0,1/4)` is claimed;
-- the coarse existence/count of small eigenvalues is not prime-specific;
-- the potentially prime-specific object is the set of exact spectral positions attached to each recurrent right-limit surface `S_H`.
+Only after that limit is identified can a pattern-specific spectral implantation claim be reconsidered.
 
 ## 6. Novelty check
 
-The ingredients are individually standard or published:
+The ingredients in the original proposed theorem were individually standard or published. PF-028 found a direct incompatibility with the exact cuff formula already present in this repository, so no novelty claim from this file survives.
 
-1. Pintz: recurring isolated bounded prime clusters from a fixed finite offset set;
-2. exact prime-circle endpoint normalization and PF-004 cross-ratio neck geometry;
-3. classical pinching convergence of hyperbolic surfaces;
-4. Weyl's criterion for essential spectrum;
-5. Hide–Thomas: many small eigenvalues on finite-area surfaces with many cusps.
-
-Searches for combinations of prime gaps/prime constellations with hyperbolic Laplacian essential spectrum, Fuchsian right limits, or pinching spectral implantation did not locate a published version of this arithmetic specialization. General right-limit/limit-operator principles exist for Jacobi operators, graphs, and bounded-geometry settings, but they do not directly cover this degenerating infinite-type surface and are not needed for the direct Weyl construction above.
-
-Accordingly, the **general spectral mechanism is not novel**, while the candidate contribution is the concrete prime-flute theorem obtained by composing these ingredients.
+The research value of keeping this note is methodological: endpoint convergence under a convenient Möbius normalization is not enough to infer convergence of a marked Fuchsian quotient when other intrinsic length coordinates diverge.
 
 ## Research consequence
 
-This is the first branch in the spectral investigation that survives the repeated universality tests in a nontrivial way.
-
-The useful target is no longer a scalar invariant such as
+PF-025 is no longer the surviving positive spectral branch. The legitimate target is to understand the simultaneous degeneration
 
 ```text
-delta,
-inf sigma,
-number of small eigenvalues,
-Selberg convergence threshold,
+internal distinguished cuffs -> infinity,
+selected multi-gap separating curves -> 0,
 ```
 
-but the family of pattern-dependent finite spectra
-
-```text
-H -> Spec_L2(S_H) ∩ (0,1/4).
-```
-
-A next serious test should compare two recurrent patterns with the same cusp count and determine whether their exact `S_H` moduli produce provably or numerically distinct small eigenvalues. That would test whether this channel carries actual relational prime information rather than merely topology.
+using the actual conjugated group or controlled Fenchel–Nielsen geometry. Any future finite-surface right limit must pass this invariant-length check before spectral data are transplanted from it.
