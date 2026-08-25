@@ -1,0 +1,45 @@
+{
+  "dedupe_report_id": "g_v2_dedupe_0c95102bb00175602d5238cc91defd8b5d5b77316e3fe9e7142a79a3c26173c3",
+  "dropped": [],
+  "duplicate_content_and_lineage_groups": [],
+  "duplicate_identity_groups": [],
+  "eligible_release_objects_by_parent": {
+    "agnostic-mathia-full-v1": 214,
+    "agnostic-mathia-openalex-supplement-v1": 595
+  },
+  "excluded_quality_counts_by_parent": {
+    "agnostic-mathia-full-v1|evaluation_only": 2,
+    "agnostic-mathia-full-v1|quarantined": 2,
+    "agnostic-mathia-full-v1|rejected": 4,
+    "agnostic-mathia-openalex-supplement-v1|quarantined": 3,
+    "agnostic-mathia-openalex-supplement-v1|rejected": 2
+  },
+  "input_candidate_count": 411,
+  "input_counts_by_parent_and_role": {
+    "agnostic-mathia-full-v1|interpretation": 98,
+    "agnostic-mathia-full-v1|synthesis": 18,
+    "agnostic-mathia-openalex-supplement-v1|interpretation": 295
+  },
+  "near_duplicate_diagnostic": {
+    "algorithm": "Jaccard similarity over normalized lexical token trigrams",
+    "automatic_deletion": false,
+    "normalization": "Unicode-preserving casefold plus whitespace collapse",
+    "pair_count": 0,
+    "pairs": [],
+    "scope": "normalized rendered supervised assistant content excluding assistant end control",
+    "threshold": 0.8
+  },
+  "policy": {
+    "content_and_lineage": "identical content_sha256 and lineage_sha256; keep parent precedence",
+    "identity": "identical object_id requires byte-identical canonical record; keep parent precedence",
+    "near_duplicate": "diagnostic only; never deletes automatically",
+    "parent_precedence": [
+      "agnostic-mathia-full-v1",
+      "agnostic-mathia-openalex-supplement-v1"
+    ],
+    "same_content_distinct_lineage": "retain and report"
+  },
+  "retained_count": 411,
+  "same_content_distinct_lineage_groups": [],
+  "schema_version": "qwen-mathia-v2-general-dedupe-v1"
+}

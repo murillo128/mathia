@@ -1,0 +1,227 @@
+{
+  "schema_version": "qwen-mathia-v2-general-design-config-v1",
+  "exit_decision": "QWEN_MATHIA_V2_GENERAL_DESIGN_READY",
+  "model": {
+    "model_id": "Qwen/Qwen3.5-4B-Base",
+    "model_revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+    "tokenizer_id": "Qwen/Qwen3.5-4B-Base",
+    "tokenizer_revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+    "architecture_class": "Qwen3_5ForCausalLM",
+    "text_only": true,
+    "chat_template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "source_files": {
+      "LICENSE": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+      "README.md": "76ead24ea3de5a52610c755ffa0b6e7cb51e3c413f124a3776bc6f16b694474e",
+      "config.json": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+      "merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+      "model.safetensors.index.json": "eae340074abb0a5f31a6621f7ae8e8248a7c1790df04a722c4e4b70c2a6d1dbb",
+      "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "tokenizer.json": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927",
+      "tokenizer_config.json": "3891e840d7dc5fca0af33d3a25083a735e36fe06214e3f707024820cb6b9f89c",
+      "video_preprocessor_config.json": "d039cd7d88b3502a99edd455496b75b44ecf7dd3b3669748bafac37e6cecc085",
+      "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    },
+    "upstream_evidence": {
+      "license": "apache-2.0",
+      "license_url": "https://huggingface.co/Qwen/Qwen3.5-4B-Base/blob/1001bb4d826a52d1f399e183466143f4da7b741b/LICENSE",
+      "model_card_url": "https://huggingface.co/Qwen/Qwen3.5-4B-Base/blob/1001bb4d826a52d1f399e183466143f4da7b741b/README.md",
+      "model_card_lora_contract": "The exact-revision card identifies the Base checkpoint as a fine-tuning parent and says its control tokens were trained for LoRA-style PEFT with the official chat template."
+    }
+  },
+  "corpus": {
+    "workload_id": "G-v2",
+    "contract_version": "mathia-interchange-v1",
+    "optimizer_roles": [
+      "interpretation",
+      "synthesis"
+    ],
+    "parents": [
+      {
+        "release_id": "agnostic-mathia-full-v1",
+        "freeze_id": "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f",
+        "review_content_freeze_id": "review_content_d1d1d7152fa2c2ddd3a4f6d26a4fa4b3f6d64129392b7c79ea72f125b5d95c0b",
+        "root": "experiments/agnostic_mathia_corpus/release_v1",
+        "freeze_file": "freeze.json",
+        "records_file": "records.jsonl",
+        "trainable_manifest_file": "trainable_manifest.json",
+        "kind": "inline",
+        "frozen_files": {
+          "freeze.json": "49e53a82803b34431281b3acfdb2e9972ace4cdef5e88ea0f8120d6dbb8cff92",
+          "records.jsonl": "d04e090126f58f039b229053cb456967cb9b6d209fdb172c9969a22909e483c1",
+          "rendered_trainable.jsonl": "9cbc2c87637a4139234acb6de85b3f863542503512319bf21bf11b27f223f625",
+          "review_content_freeze.json": "2fa415dd4e0dc94a7c7f63ec7742c648415d1e6be41dc04b209603029adb1795",
+          "trainable_manifest.json": "c5568184d3e55e753a8f271d6d2d2bb55fe0eb7e5b21373bc8ff044001d1ff6c"
+        }
+      },
+      {
+        "release_id": "agnostic-mathia-openalex-supplement-v1",
+        "freeze_id": "agnostic_openalex_supplement_a1aa591df034db64d5ce0271df0da570e3aaf470ac49e5cc4014b66181bf0e33",
+        "review_content_freeze_id": null,
+        "root": "experiments/agnostic_mathia_corpus/openalex_supplement_v1",
+        "freeze_file": "freeze.json",
+        "records_file": "objects.jsonl",
+        "trainable_manifest_file": "trainable_manifest.json",
+        "kind": "external-content-ref",
+        "frozen_files": {
+          "analysis/final.jsonl": "9ddd66ac76094b02f3b46b9043a6a92a0a1d30891daff0908bc468a614068021",
+          "freeze.json": "82a8c8849e3cf311fd3557f58748bd7ea2afe8b7a08cb23e7c2d65544643d3f9",
+          "objects.jsonl": "b99f194e6dfc7922d41843acc3fe1a3adb21a3e282e7f76427ed2657de56e636",
+          "parent.json": "0a484fdf6133dd14e17ce61ee00734aad0d4514e6c915b6ad27d25abfb1d1d5d",
+          "trainable_manifest.json": "ce26301eaf2a9496acde6a1132703fb3305766bace409c1ea2d1ad896ce5d2cd"
+        }
+      }
+    ],
+    "source_objects_are_context_only": true,
+    "excluded_quality_states": [
+      "rejected",
+      "quarantined",
+      "evaluation_only"
+    ],
+    "riemann_release_lineage_allowed": false
+  },
+  "serialization": {
+    "id": "qwen3.5-official-chat-template-response-only-sft-v1",
+    "chat_template": "official-pinned-tokenizer",
+    "system_message": null,
+    "user_content": "canonical mathia-interchange rendering through the Task section; the Response heading is a serialization boundary and is omitted",
+    "assistant_content": "exact accepted Mathia object content without semantic rewriting",
+    "enable_thinking": false,
+    "add_generation_prompt": true,
+    "prompt_loss_masked": true,
+    "assistant_content_supervised": true,
+    "assistant_end_supervised": true,
+    "assistant_end_text": "<|im_end|>\n",
+    "eos_token_appended_after_template": false,
+    "assistant_prefix_is_masked": true,
+    "same_public_template_required_for_base_vs_mathia": true
+  },
+  "ordering": {
+    "selection_order": "object_id_utf8_ascending",
+    "training_order": "sha256(seed_newline_object_id)_ascending",
+    "seed": 0,
+    "runtime_sampler_shuffle": false
+  },
+  "dedupe": {
+    "identity_key": "object_id",
+    "content_lineage_key": [
+      "content_sha256",
+      "lineage_sha256"
+    ],
+    "same_content_distinct_lineage": "retain_and_report",
+    "near_duplicate_scope": "rendered supervised assistant content excluding assistant end control",
+    "near_duplicate_algorithm": "Jaccard similarity over normalized lexical token trigrams",
+    "near_duplicate_threshold": 0.8,
+    "near_duplicates_are_automatically_deleted": false
+  },
+  "quantization": {
+    "load_in_4bit": true,
+    "quantization_type": "nf4",
+    "double_quantization": true,
+    "compute_dtype": "bfloat16"
+  },
+  "lora": {
+    "task_type": "CAUSAL_LM",
+    "target_regex": "^model\\.layers\\.\\d+\\.(?:self_attn\\.(?:q_proj|k_proj|v_proj|o_proj)|linear_attn\\.(?:in_proj_qkv|in_proj_z|in_proj_a|in_proj_b|out_proj)|mlp\\.(?:gate_proj|up_proj|down_proj))$",
+    "target_suffixes": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "in_proj_qkv",
+      "in_proj_z",
+      "in_proj_a",
+      "in_proj_b",
+      "out_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "expected_module_counts": {
+      "q_proj": 8,
+      "k_proj": 8,
+      "v_proj": 8,
+      "o_proj": 8,
+      "in_proj_qkv": 24,
+      "in_proj_z": 24,
+      "in_proj_a": 24,
+      "in_proj_b": 24,
+      "out_proj": 24,
+      "gate_proj": 32,
+      "up_proj": 32,
+      "down_proj": 32
+    },
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "bias": "none",
+    "modules_to_save": null,
+    "vision_path_frozen_and_excluded": true,
+    "embeddings_and_lm_head_frozen": true
+  },
+  "training": {
+    "trainer": "trl-sft",
+    "per_device_micro_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "epochs": 1.0,
+    "learning_rate": 0.00005,
+    "weight_decay": 0.0,
+    "maximum_gradient_norm": 1.0,
+    "lr_schedule": "cosine",
+    "warmup_steps": 0,
+    "optimizer": "paged_adamw_8bit",
+    "maximum_sequence_tokens": 9472,
+    "clean_sequence_multiple": 128,
+    "packing": false,
+    "truncation": false,
+    "gradient_checkpointing": true,
+    "seed": 0,
+    "checkpoint_fractions": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "checkpoint_selection": "terminal 1.0-epoch adapter is the precommitted root; intermediate adapters are recoverability evidence only"
+  },
+  "hardware": {
+    "primary_gpu": "NVIDIA RTX 4000 Ada Generation 20 GB",
+    "capacity_policy": "do not shrink, shorten, truncate, or drop G-v2 targets; stop on insufficient memory",
+    "v1_memory_headroom_is_transferable_evidence": false
+  },
+  "publication": {
+    "repository_id": "murillo2000/qwen3.5-4b-base-mathia-v2",
+    "artifact_format": "peft-lora",
+    "publish_merged_weights": false,
+    "hub_license": "other",
+    "raw_or_restricted_sources_uploaded": false,
+    "base_model_copy_uploaded": false,
+    "scientific_capability_claim_authorized": false
+  },
+  "gpu_execution_preflight": {
+    "required_checks": [
+      "exact model/tokenizer revision and clean immutable snapshot hashes",
+      "text-only forward and backward through the intended Qwen3.5 DeltaNet runtime",
+      "vision parameters frozen and absent from adapter targets",
+      "finite loss and non-zero LoRA gradients",
+      "only the intended 32,464,896 LoRA parameters change",
+      "official-template completion-only loss ranges replay exactly",
+      "no truncation at the frozen maximum sequence length",
+      "adapter save/reload identity",
+      "peak allocated/reserved VRAM and safe headroom at 9,472 tokens",
+      "single-resident-base coexistence and adapter switching with qwen-lean-planner and qwen-lean adapters",
+      "inference VRAM and KV-cache headroom for the intended Mathia to planner to prover lane"
+    ]
+  },
+  "downstream_handoff": {
+    "executed_here": false,
+    "primary_comparison": "exact Qwen3.5-4B-Base revision versus terminal Mathia-v2 adapter",
+    "formal_workers": [
+      "qwen-lean",
+      "DeepSeek"
+    ],
+    "verification": "Lean",
+    "matched_public_prompt_template": true,
+    "matched_formal_worker_budgets": true,
+    "qwen_mathia_v1_role": "optional historical engineering control",
+    "riemann_specialization": "out of scope"
+  }
+}
