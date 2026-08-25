@@ -1,0 +1,42 @@
+{
+  "schema_version": "frontier-assisted-final-review-v1",
+  "verdict": "PASS",
+  "reviewed_target": "584cc5319ecb1f1862b88bd81adbe69d1cd30000",
+  "reviewed_freeze_sha256": "40e9492bf31eef774cd1f8ac4fb70b6760f762191c6af381b7bfa54e3c5c4349",
+  "reviewer": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "xhigh",
+    "fresh_context": true,
+    "read_only": true
+  },
+  "review_recorded_at_utc": "2026-08-25T04:58:18Z",
+  "material_findings": [],
+  "checks_that_passed": [
+    "exact_source_membership_order_and_qwen_lineage",
+    "calibration_r4_pass_binding",
+    "all_capture_transcript_hash_session_token_and_tool_provenance",
+    "all_accepted_and_retry_output_boundary_review",
+    "r3_regression_corrections",
+    "retry_selection_and_missing_task_accounting",
+    "circuit_breaker_replay",
+    "evaluation_only_training_isolation",
+    "repository_native_tests_and_deterministic_validators",
+    "exact_pr_base_diff"
+  ],
+  "reviewed_counts": {
+    "tasks": 650,
+    "attempts": 746,
+    "accepted": 611,
+    "missing": 39,
+    "accepted_retries": 57,
+    "generation_sessions": 746,
+    "semantic_reviewer_sessions": 1476
+  },
+  "nonblocking_notes": [
+    "The 57 accepted retries comprise 51 semantic near-complete rejections and 6 hard identifier rejections.",
+    "The r4 preflight preserves reviewer-output hashes rather than raw reviewer JSON; complete r4 calibration and final captures mitigate this.",
+    "The unsuffixed manifest preserves r3 history; active code and the freeze bind generation_manifest_calibration_r4.json."
+  ],
+  "disposition": "ready_for_review_without_merge_authorization",
+  "technical_review_is_not_merge_authorization": true
+}

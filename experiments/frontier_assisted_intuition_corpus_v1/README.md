@@ -43,8 +43,10 @@ retry policy, and online circuit breakers were frozen before calibration. The
 the 128-token cap. The authorized full run then completed all remaining 626
 tasks without a circuit breaker or runtime miss. The frozen candidate release
 contains 611 accepted intuitions and 39 explicit missing-intuition records from
-746 attempts. Its exact published target still requires a fresh independent
-final audit before the pull request can become ready for review.
+746 attempts. A fresh independent final audit returned `PASS` on exact target
+`584cc5319ecb1f1862b88bd81adbe69d1cd30000`; the bound verdict is preserved in
+`final_revision_1_review.json`. This technical pass makes the pull request ready
+for human review but is not merge authorization.
 
 ## Reproduction and validation
 
