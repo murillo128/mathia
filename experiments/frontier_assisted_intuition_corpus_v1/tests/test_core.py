@@ -152,10 +152,12 @@ class CoreTests(unittest.TestCase):
         self.assertIn("one-step elementary identity", rubric)
         self.assertIn("evaluates both theorem-specific sums", rubric)
         self.assertIn("evaluates the theorem's percentages", rubric)
+        self.assertIn("Cosmetic omission of an explicit final result", rubric)
+        self.assertIn("decisive justification for every clause", rubric)
         fixtures = json.loads(
             (Path(__file__).parent / "semantic_boundary_revision_fixtures.json").read_text(encoding="utf-8")
         )
-        self.assertEqual(len(fixtures), 4)
+        self.assertEqual(len(fixtures), 7)
         self.assertTrue(all(row["expected_decision"] == "rejected_near_complete_proof" for row in fixtures))
         self.assertTrue(all(row["candidate"] not in core.INTUITION_REQUEST for row in fixtures))
 

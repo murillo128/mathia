@@ -28,7 +28,7 @@ from urllib.parse import urlparse
 
 
 SCHEMA_VERSION = "frontier-assisted-intuition-corpus-v1"
-RUN_REVISION = "calibration-r1"
+RUN_REVISION = "calibration-r2"
 SOURCE_SCHEMA_VERSION = "frontier-assisted-intuition-source-task-v1"
 PROMPT_SCHEMA_VERSION = "frontier-assisted-intuition-prompt-v1"
 ATTEMPT_SCHEMA_VERSION = "frontier-assisted-intuition-attempt-v1"
@@ -44,10 +44,10 @@ FREEZE_SCHEMA_VERSION = "frontier-assisted-freeze-v1"
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 EXPERIMENT_ROOT = Path(__file__).resolve().parent
 PRIOR_ROOT = REPOSITORY_ROOT / "experiments/frontier_intuition_corpus_v1"
-PROMPTS_FILENAME = "prompts_calibration_r1.jsonl"
-MANIFEST_FILENAME = "generation_manifest_calibration_r1.json"
-CALIBRATION_REPORT_FILENAME = "calibration_report_calibration_r1.json"
-CALIBRATION_REVIEW_FILENAME = "calibration_review_calibration_r1.json"
+PROMPTS_FILENAME = "prompts_calibration_r2.jsonl"
+MANIFEST_FILENAME = "generation_manifest_calibration_r2.json"
+CALIBRATION_REPORT_FILENAME = "calibration_report_calibration_r2.json"
+CALIBRATION_REVIEW_FILENAME = "calibration_review_calibration_r2.json"
 ACTIVE_CAPTURES_DIRECTORY = Path("runs") / RUN_REVISION / "captures"
 CONTROLLING_ISSUE = "murillo128/mathia#59"
 PRIOR_ISSUE = "murillo128/mathia#57"
@@ -77,7 +77,11 @@ INTUITION_REQUEST = (
     "small number of intermediate mathematical observations if they clarify the route. Stop after "
     "the central mechanism and leave theorem-specific substitutions, calculations, case enumeration, "
     "and the final conclusion to the formal prover. For an elementary theorem, do not compress the "
-    "entire derivation into one paragraph merely because it is short. Focus on "
+    "entire derivation into one paragraph merely because it is short: name the useful representation "
+    "or mechanism, but omit exact theorem-specific balance points, equality cases, evaluated bounds "
+    "or results, calculations, witnesses, and attainment details. For a conjunction or equivalence of "
+    "several facts, identify the common or independent mechanisms without justifying every component. "
+    "Prefer one or two sentences. Focus on "
     "why the argument should work, not on how to encode it in Lean. Do not provide Lean tactics, "
     "mathlib lemma names, formal proof code, an API recipe, or a step-by-step complete proof. "
     "Return only the intuition, preferably as one concise paragraph and preferably within 128 "
@@ -103,7 +107,12 @@ SEMANTIC_REVIEW_INSTRUCTION = (
     "This applies even to a concise one-paragraph derivation without numbered steps. For example, "
     "for a one-step elementary identity, reject a candidate that performs the decisive rewrite or "
     "expansion and then states that the target follows; the fact that the whole proof has only one "
-    "step does not turn it into pre-proof intuition. "
+    "step does not turn it into pre-proof intuition. Cosmetic omission of an explicit final result, "
+    "witness, or concluding phrase does not turn a full theorem-specific route into an intuition. "
+    "Reject a candidate that gives a substitution, its exact balance or equality point, the resulting "
+    "bound, and attainment, even if it does not spell out the final theorem value. Reject a multi-clause "
+    "candidate that supplies the decisive justification for every clause of a conjunction or equivalence; "
+    "omitting only one explicit witness is still cosmetic. "
     "reject a candidate that converts the theorem's bounds, enumerates every remaining value, and "
     "states the resulting count; reject one that evaluates both theorem-specific sums and their final "
     "ratio; reject one that expands both concrete sides and declares the target identity; and reject "
@@ -431,10 +440,11 @@ def materialize_sources(*, root: Path = EXPERIMENT_ROOT, prior_root: Path | None
 
 
 def prepare_calibration_revision(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
-    """Preserve calibration-r0 and materialize fresh r1 prompts.
+    """Preserve superseded calibrations and materialize fresh r2 prompts.
 
-    Revision-0 captures remain byte-for-byte at their published paths. The
-    active capture path is disjoint, so no prior output can satisfy an r1 task.
+    Revision-0 and revision-1 captures remain byte-for-byte at their
+    published paths. The active capture path is disjoint, so no prior output
+    can satisfy an r2 task.
     """
     sources = list(iter_jsonl(root / "source_tasks.jsonl"))
     if len(sources) != 650:
@@ -445,27 +455,59 @@ def prepare_calibration_revision(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]
         ids = [str(row["task_id"]) for row in sources if row["workload"] == workload]
         if len(ids) != EXPECTED_COUNTS[workload] or ordered_ids_sha256(ids) != EXPECTED_ORDERED_TASK_IDS_SHA256[workload]:
             raise ValueError(f"revision source identity differs: {workload}")
-    review = json.loads((root / "calibration_revision_0_review.json").read_text(encoding="utf-8"))
-    if (
-        review.get("verdict") != "CALIBRATION_REVISE"
-        or review.get("reviewed_target") != "89f6c49373c7d15d4604088a717f116ea24956e5"
-        or review.get("reviewed_calibration_sha256") != sha256_file(root / "calibration_report.json")
-    ):
-        raise ValueError("calibration-r0 revision review is not bound to the preserved evidence")
-    old_capture_paths = sorted((root / "captures").rglob("attempt_*.json"))
-    if len(old_capture_paths) != 28:
-        raise ValueError("calibration-r0 must preserve exactly 28 raw attempts")
-    legacy_manifest = {
-        "schema_version": "frontier-assisted-superseded-calibration-capture-manifest-v1",
-        "run_revision": "calibration-r0",
-        "disposition": "CALIBRATION_REVISE_not_final_corpus_eligible",
-        "reviewed_target": review["reviewed_target"],
-        "captures": [
-            {"path": str(path.relative_to(root)), "bytes": path.stat().st_size, "sha256": sha256_file(path)}
-            for path in old_capture_paths
-        ],
-    }
-    write_json_once(root / "calibration_revision_0_capture_manifest.json", legacy_manifest)
+    revisions = (
+        {
+            "run_revision": "calibration-r0",
+            "review_path": "calibration_revision_0_review.json",
+            "report_path": "calibration_report.json",
+            "capture_root": Path("captures"),
+            "capture_manifest_path": "calibration_revision_0_capture_manifest.json",
+            "reviewed_target": "89f6c49373c7d15d4604088a717f116ea24956e5",
+            "expected_attempts": 28,
+        },
+        {
+            "run_revision": "calibration-r1",
+            "review_path": "calibration_revision_1_review.json",
+            "report_path": "calibration_report_calibration_r1.json",
+            "capture_root": Path("runs/calibration-r1/captures"),
+            "capture_manifest_path": "calibration_revision_1_capture_manifest.json",
+            "reviewed_target": "b54ec1f3e9c529bfb000800db17dc80c1b130cfb",
+            "expected_attempts": 31,
+        },
+    )
+    preserved_attempts: dict[str, int] = {}
+    for revision in revisions:
+        review_path = root / str(revision["review_path"])
+        report_path = root / str(revision["report_path"])
+        review = json.loads(review_path.read_text(encoding="utf-8"))
+        if (
+            review.get("verdict") != "CALIBRATION_REVISE"
+            or review.get("reviewed_target") != revision["reviewed_target"]
+            or review.get("reviewed_calibration_sha256") != sha256_file(report_path)
+        ):
+            raise ValueError(f"{revision['run_revision']} review is not bound to the preserved evidence")
+        capture_paths = sorted((root / Path(revision["capture_root"])).rglob("attempt_*.json"))
+        if len(capture_paths) != revision["expected_attempts"]:
+            raise ValueError(
+                f"{revision['run_revision']} must preserve exactly {revision['expected_attempts']} raw attempts"
+            )
+        capture_manifest = {
+            "schema_version": "frontier-assisted-superseded-calibration-capture-manifest-v1",
+            "run_revision": revision["run_revision"],
+            "disposition": "CALIBRATION_REVISE_not_final_corpus_eligible",
+            "reviewed_target": review["reviewed_target"],
+            "captures": [
+                {"path": str(path.relative_to(root)), "bytes": path.stat().st_size, "sha256": sha256_file(path)}
+                for path in capture_paths
+            ],
+        }
+        manifest_path = root / str(revision["capture_manifest_path"])
+        if manifest_path.exists():
+            if json.loads(manifest_path.read_text(encoding="utf-8")) != capture_manifest:
+                raise ValueError(f"{revision['run_revision']} capture manifest differs from preserved evidence")
+        else:
+            write_json_once(manifest_path, capture_manifest)
+        preserved_attempts[str(revision["run_revision"])] = len(capture_paths)
     prompts = [_prompt_row(row) for row in sources]
     write_jsonl_once(root / PROMPTS_FILENAME, prompts)
     validate_source_snapshot(root)
@@ -473,8 +515,8 @@ def prepare_calibration_revision(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]
         "run_revision": RUN_REVISION,
         "source_count": len(sources),
         "prompts_sha256": sha256_file(root / PROMPTS_FILENAME),
-        "preserved_revision_0_attempts": len(old_capture_paths),
-        "revision_0_outputs_final_corpus_eligible": False,
+        "preserved_attempts": preserved_attempts,
+        "superseded_outputs_final_corpus_eligible": False,
     }
 
 
@@ -566,15 +608,25 @@ def _manifest_payload(root: Path, runtime: Mapping[str, Any]) -> dict[str, Any]:
         "controlling_issue": CONTROLLING_ISSUE,
         "artifact_id": SCHEMA_VERSION,
         "run_revision": RUN_REVISION,
-        "status": "pre_calibration_revision_1_contract_frozen",
-        "superseded_calibration": {
-            "run_revision": "calibration-r0",
-            "verdict": "CALIBRATION_REVISE",
-            "reviewed_target": "89f6c49373c7d15d4604088a717f116ea24956e5",
-            "review_sha256": sha256_file(root / "calibration_revision_0_review.json"),
-            "capture_manifest_sha256": sha256_file(root / "calibration_revision_0_capture_manifest.json"),
-            "outputs_final_corpus_eligible": False,
-        },
+        "status": "pre_calibration_revision_2_contract_frozen",
+        "superseded_calibrations": [
+            {
+                "run_revision": "calibration-r0",
+                "verdict": "CALIBRATION_REVISE",
+                "reviewed_target": "89f6c49373c7d15d4604088a717f116ea24956e5",
+                "review_sha256": sha256_file(root / "calibration_revision_0_review.json"),
+                "capture_manifest_sha256": sha256_file(root / "calibration_revision_0_capture_manifest.json"),
+                "outputs_final_corpus_eligible": False,
+            },
+            {
+                "run_revision": "calibration-r1",
+                "verdict": "CALIBRATION_REVISE",
+                "reviewed_target": "b54ec1f3e9c529bfb000800db17dc80c1b130cfb",
+                "review_sha256": sha256_file(root / "calibration_revision_1_review.json"),
+                "capture_manifest_sha256": sha256_file(root / "calibration_revision_1_capture_manifest.json"),
+                "outputs_final_corpus_eligible": False,
+            },
+        ],
         "source_contract": {
             "qwen_repository": QWEN_REPOSITORY,
             "accepted_dataset_v2_commit": QWEN_ACCEPTED_COMMIT,
@@ -1857,6 +1909,7 @@ def finalize(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
         "source_tasks.jsonl", PROMPTS_FILENAME, MANIFEST_FILENAME,
         CALIBRATION_REPORT_FILENAME, CALIBRATION_REVIEW_FILENAME,
         "calibration_revision_0_review.json", "calibration_revision_0_capture_manifest.json",
+        "calibration_revision_1_review.json", "calibration_revision_1_capture_manifest.json",
         "raw_attempts.jsonl",
         "accepted_intuitions.jsonl", "boundary_results.jsonl", "summary.json",
         "integrity_audit.json", "capture_manifest.json",
