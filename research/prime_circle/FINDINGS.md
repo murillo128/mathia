@@ -190,3 +190,35 @@ This is currently the most promising original-geometry object: a two-sided harmo
 ### Research gate
 
 Do **not** count a Mellin transform of \(U_n(1)=\Lambda(n)\) as progress; that immediately recovers the classical logarithmic derivative of \(\zeta\). A substantive next step must use information in the full field \(U_n(z)\), its interior/exterior coupling, its Fourier/Ramanujan modes, or its scale-renormalization dynamics that is lost by evaluating only at \(z=1\).
+
+---
+
+## PC-013 — pure projective transfer is flat; Hill spectrum needs extra gauge
+
+**Status:** `DECISIVE-NEGATIVE` for a spectral mechanism based only on the projective prime-vertex sequence.
+
+Four consecutive prime-circle vertices have a genuine Möbius-invariant cross-ratio and therefore a standard discrete-Schwarzian / discrete-Hill interpretation. However, a globally defined projective moving frame has Maurer–Cartan transport
+
+\[
+K_n=\rho_{n+1}\rho_n^{-1},
+\]
+
+so every path product telescopes exactly:
+
+\[
+K_{N-1}\cdots K_m=\rho_N\rho_m^{-1}.
+\]
+
+Thus pure one-dimensional projective transport has no interior holonomy from prime-gap fluctuations.
+
+The alternative unit-Wronskian Hill lift
+
+\[
+V_{n+2}=k_nV_{n+1}-V_n
+\]
+
+is also insufficient on the infinite nonperiodic prime path: it retains an alternating lift gauge \(V_n\mapsto c^{(-1)^n}V_n\), which changes \(k_n\) while preserving the projective cross-ratios \(s_n=k_nk_{n+1}\). The ambiguity genuinely changes the spectrum of the associated self-adjoint Schrödinger operator; even the projectively uniform sequence \(x_n=n\), with \(s_n\equiv4\), yields different period-two spectra under different allowed lift gauges.
+
+Therefore cross-ratios alone do **not** canonically define a global spectral operator. A viable spectral construction must use additional structure already present in the original circle—Euclidean/unit-circle geometry, off-circle fields/interior-exterior duality, or a genuinely multidimensional labeled structure—rather than choosing a closure or lift normalization to manufacture a spectrum.
+
+Full derivation: `findings/PC-013-pure-projective-transfer-is-flat-and-hill-spectrum-needs-extra-gauge.md`.
