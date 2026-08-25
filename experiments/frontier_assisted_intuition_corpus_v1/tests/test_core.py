@@ -90,6 +90,8 @@ class CoreTests(unittest.TestCase):
         self.assertNotIn(core.RETRY_REMINDER, first)
         self.assertIn(core.RETRY_REMINDER, second)
         self.assertNotIn("oracle_proof", first)
+        self.assertIn("one organizing lens in one sentence", first)
+        self.assertIn("without enumerating or justifying its components", second)
 
     def test_source_rejects_privileged_field(self) -> None:
         row = source_row(proof="secret")

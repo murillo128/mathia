@@ -22,17 +22,18 @@ Calibration revisions 0 and 1 are preserved as immutable
 `CALIBRATION_REVISE` evidence. Revision 0 admitted several compact but complete
 derivations and treated an interim-message/web/final-message trace as a failure.
 Revision 1 corrected extraction but still admitted three cosmetically shortened
-complete routes. Those 28 + 31 attempts are not eligible for the final corpus.
-The active `calibration-r2` contract retains all messages while selecting the
-final agent message and rejects exact theorem-specific balances, evaluated
-bounds, equality cases, attainment arguments, and proofs of every clause.
+complete routes. Revision 2 corrected that boundary but was
+`CALIBRATION_BLOCKED` at 18/24 because composite-theorem generations still
+sketched every clause. Those 28 + 31 + 34 attempts are not eligible for the
+final corpus. The active `calibration-r3` contract keeps the r2 reviewer
+unchanged while requiring one organizing lens for composite statements.
 
 The exact active generator instruction, reviewer instruction, 8+16 evenly spaced
 calibration membership, candidate caps (128/160/192 Qwen tokens), maximum-two
 retry policy, and online circuit breakers are frozen before calibration. The
 full run cannot start until the 24-task evidence is published and a fresh
 read-only review records `CALIBRATION_PASS` in
-`calibration_review_calibration_r2.json`.
+`calibration_review_calibration_r3.json`.
 
 ## Reproduction and validation
 
@@ -45,7 +46,7 @@ PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assiste
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 freeze-contract
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 generate-calibration --workers 4
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 finalize-calibration
-# Publish and obtain the required fresh CALIBRATION_PASS review, then record calibration_review_calibration_r2.json.
+# Publish and obtain the required fresh CALIBRATION_PASS review, then record calibration_review_calibration_r3.json.
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 generate-full --workers 4
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 finalize
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 validate-finalized
