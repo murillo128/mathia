@@ -13,9 +13,10 @@ Every record is `evaluation_only: true`, `training_eligible: false`, and
 Mathia or qwen-lean training source.
 
 The protocol has two distinct output-boundary layers: narrow deterministic
-checks for unmistakable Lean/formal implementation leakage, followed by a
-fresh blinded semantic classifier that sees only public theorem context and
-the candidate. Tool use is provenance, not an eligibility failure. No rejected
+checks for unmistakable Lean/formal implementation leakage, followed by two
+fresh independent blinded semantic classifiers that each see only public
+theorem context and the candidate. Acceptance requires unanimous semantic
+acceptance. Tool use is provenance, not an eligibility failure. No rejected
 output is rewritten or sanitized.
 
 Calibration revisions 0 and 1 are preserved as immutable
@@ -25,15 +26,22 @@ Revision 1 corrected extraction but still admitted three cosmetically shortened
 complete routes. Revision 2 corrected that boundary but was
 `CALIBRATION_BLOCKED` at 18/24 because composite-theorem generations still
 sketched every clause. Those 28 + 31 + 34 attempts are not eligible for the
-final corpus. The active `calibration-r3` contract keeps the r2 reviewer
-unchanged while requiring one organizing lens for composite statements.
+final corpus. Revision 3 passed calibration and completed all 650 tasks, but its
+exact-target final audit returned `REVISE`: a broad tactic-word hard check
+falsely rejected ordinary prose, and the single semantic classifier admitted
+several near-complete elementary routes. Its 738 attempts and derived release
+artifacts remain immutable, evaluation-only evidence and are not eligible for
+the final corpus. The active `calibration-r4` contract restarts generation in a
+disjoint capture tree, limits hard checks to unmistakable syntax, and requires
+unanimous independent semantic review with an explicit substantive-bridge
+check.
 
 The exact active generator instruction, reviewer instruction, 8+16 evenly spaced
 calibration membership, candidate caps (128/160/192 Qwen tokens), maximum-two
 retry policy, and online circuit breakers are frozen before calibration. The
 full run cannot start until the 24-task evidence is published and a fresh
 read-only review records `CALIBRATION_PASS` in
-`calibration_review_calibration_r3.json`.
+`calibration_review_calibration_r4.json`.
 
 ## Reproduction and validation
 
@@ -46,7 +54,7 @@ PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assiste
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 freeze-contract
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 generate-calibration --workers 4
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 finalize-calibration
-# Publish and obtain the required fresh CALIBRATION_PASS review, then record calibration_review_calibration_r3.json.
+# Publish and obtain the required fresh CALIBRATION_PASS review, then record calibration_review_calibration_r4.json.
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 generate-full --workers 4
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 finalize
 PYTHONPATH=. /workspace/.venvs/qwen45/bin/python -m experiments.frontier_assisted_intuition_corpus_v1 validate-finalized

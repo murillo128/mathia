@@ -28,26 +28,26 @@ from urllib.parse import urlparse
 
 
 SCHEMA_VERSION = "frontier-assisted-intuition-corpus-v1"
-RUN_REVISION = "calibration-r3"
+RUN_REVISION = "calibration-r4"
 SOURCE_SCHEMA_VERSION = "frontier-assisted-intuition-source-task-v1"
 PROMPT_SCHEMA_VERSION = "frontier-assisted-intuition-prompt-v1"
-ATTEMPT_SCHEMA_VERSION = "frontier-assisted-intuition-attempt-v1"
-HARD_CHECK_SCHEMA_VERSION = "frontier-assisted-hard-check-v1"
-SEMANTIC_REVIEW_SCHEMA_VERSION = "frontier-assisted-semantic-review-v1"
-ACCEPTED_SCHEMA_VERSION = "frontier-assisted-intuition-accepted-v1"
-MANIFEST_SCHEMA_VERSION = "frontier-assisted-generation-manifest-v1"
-CALIBRATION_SCHEMA_VERSION = "frontier-assisted-calibration-v1"
-SUMMARY_SCHEMA_VERSION = "frontier-assisted-summary-v1"
+ATTEMPT_SCHEMA_VERSION = "frontier-assisted-intuition-attempt-v2"
+HARD_CHECK_SCHEMA_VERSION = "frontier-assisted-hard-check-v2"
+SEMANTIC_REVIEW_SCHEMA_VERSION = "frontier-assisted-semantic-review-ensemble-v2"
+ACCEPTED_SCHEMA_VERSION = "frontier-assisted-intuition-accepted-v2"
+MANIFEST_SCHEMA_VERSION = "frontier-assisted-generation-manifest-v2"
+CALIBRATION_SCHEMA_VERSION = "frontier-assisted-calibration-v2"
+SUMMARY_SCHEMA_VERSION = "frontier-assisted-summary-v2"
 INTEGRITY_SCHEMA_VERSION = "frontier-assisted-integrity-audit-v1"
-FREEZE_SCHEMA_VERSION = "frontier-assisted-freeze-v1"
+FREEZE_SCHEMA_VERSION = "frontier-assisted-freeze-v2"
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 EXPERIMENT_ROOT = Path(__file__).resolve().parent
 PRIOR_ROOT = REPOSITORY_ROOT / "experiments/frontier_intuition_corpus_v1"
-PROMPTS_FILENAME = "prompts_calibration_r3.jsonl"
-MANIFEST_FILENAME = "generation_manifest_calibration_r3.json"
-CALIBRATION_REPORT_FILENAME = "calibration_report_calibration_r3.json"
-CALIBRATION_REVIEW_FILENAME = "calibration_review_calibration_r3.json"
+PROMPTS_FILENAME = "prompts_calibration_r4.jsonl"
+MANIFEST_FILENAME = "generation_manifest_calibration_r4.json"
+CALIBRATION_REPORT_FILENAME = "calibration_report_calibration_r4.json"
+CALIBRATION_REVIEW_FILENAME = "calibration_review_calibration_r4.json"
 ACTIVE_CAPTURES_DIRECTORY = Path("runs") / RUN_REVISION / "captures"
 CONTROLLING_ISSUE = "murillo128/mathia#59"
 PRIOR_ISSUE = "murillo128/mathia#57"
@@ -76,10 +76,14 @@ INTUITION_REQUEST = (
     "decomposition, obstruction, symmetry, reduction, or conceptual mechanism. You may state a "
     "small number of intermediate mathematical observations if they clarify the route. Stop after "
     "the central mechanism and leave theorem-specific substitutions, calculations, case enumeration, "
-    "and the final conclusion to the formal prover. For an elementary theorem, do not compress the "
-    "entire derivation into one paragraph merely because it is short: name the useful representation "
-    "or mechanism, but omit exact theorem-specific balance points, equality cases, evaluated bounds "
-    "or results, calculations, witnesses, and attainment details. For a short equivalence, mention a "
+    "and the final conclusion to the formal prover. For an elementary theorem, stop one abstraction "
+    "level above the decisive calculation: name the useful representation or mechanism, but do not "
+    "also carry it through theorem-specific substitutions, residue propagation, cancellation, parity "
+    "evaluation, factor evaluation, or the conclusion. Omit exact theorem-specific balance points, "
+    "equality cases, evaluated bounds or results, calculations, witnesses, and attainment details. "
+    "A short paragraph that states every mathematical fact needed for the target is still a complete "
+    "route even if it omits the last phrase; leave at least one substantive mathematical inference, "
+    "not merely Lean encoding, to the formal prover. For a short equivalence, mention a "
     "viewpoint without proving both directions or spelling out every equivalent condition. For any "
     "top-level conjunction, or an equivalence involving several independent facts, give one organizing "
     "lens in one sentence: do not enumerate or explain a route for every displayed clause. Other "
@@ -96,43 +100,48 @@ INTUITION_REQUEST = (
 RETRY_REMINDER = (
     "Generate a fresh replacement under the same contract. Compress to the central mathematical "
     "mechanism, use natural mathematical language only, and omit Lean/API instructions and any "
-    "mechanically transcribable complete derivation. If the theorem is composite, return one organizing-"
+    "mechanically transcribable complete derivation. For an elementary theorem, stay one abstraction "
+    "level above the decisive theorem-specific congruence, calculation, cancellation, equality case, "
+    "or conclusion, leaving at least one substantive mathematical inference unstated. If the theorem "
+    "is composite, return one organizing-"
     "lens sentence without enumerating or justifying its components. Leave at least one substantive "
     "bridge unstated. Return only the replacement intuition."
 )
 SEMANTIC_REVIEW_INSTRUCTION = (
     "You are a blinded output-boundary classifier. You see only a public theorem/context and one "
     "candidate intuition. Do not judge mathematical correctness, elegance, likely solver utility, "
-    "or similarity to a reference proof. Classify only the interface boundary. Use "
-    "accepted_intuition for compact natural-language mathematical guidance centered on a mechanism, "
-    "representation, invariant, decomposition, obstruction, symmetry, reduction, or a small number "
-    "of conceptual intermediate observations. Use rejected_formal_implementation for Lean code, "
-    "tactic/API recipes, formal proof terms, or copied formal identifiers used as execution steps. "
-    "Use rejected_near_complete_proof whenever the candidate supplies all theorem-specific "
-    "intermediate results and the conclusion so that the remaining formalization is mechanical. "
-    "This applies even to a concise one-paragraph derivation without numbered steps. For example, "
-    "for a one-step elementary identity, reject a candidate that performs the decisive rewrite or "
-    "expansion and then states that the target follows; the fact that the whole proof has only one "
-    "step does not turn it into pre-proof intuition. Cosmetic omission of an explicit final result, "
-    "witness, or concluding phrase does not turn a full theorem-specific route into an intuition. "
-    "Reject a candidate that gives a substitution, its exact balance or equality point, the resulting "
-    "bound, and attainment, even if it does not spell out the final theorem value. Reject a multi-clause "
-    "candidate that supplies the decisive justification for every clause of a conjunction or equivalence; "
-    "omitting only one explicit witness is still cosmetic. "
-    "reject a candidate that converts the theorem's bounds, enumerates every remaining value, and "
-    "states the resulting count; reject one that evaluates both theorem-specific sums and their final "
-    "ratio; reject one that expands both concrete sides and declares the target identity; and reject "
-    "one that evaluates the theorem's percentages, difference, absolute value, and final result. "
-    "Use rejected_not_an_intuition when it is empty, off-task, lacks a "
-    "strategic mathematical mechanism, or is visibly cut off before expressing one. Ordinary words "
-    "such as induction, normalization, ring arithmetic, linear arithmetic, or Lean are not by "
-    "themselves formal leakage. Do not use tools."
+    "or similarity to a reference proof. Classify only whether the candidate stays on the pre-proof "
+    "side of the interface. First ask whether a competent prover still has to supply at least one "
+    "substantive mathematical inference, as opposed to merely translating the supplied route into "
+    "formal syntax. A substantive bridge is a theorem-specific deduction, calculation, case argument, "
+    "witness, equality/attainment argument, or connection from the named mechanism to the target. "
+    "Use accepted_intuition only for compact natural-language guidance centered on a mechanism, "
+    "representation, invariant, decomposition, obstruction, symmetry, or reduction that leaves such "
+    "a bridge unstated. Use rejected_formal_implementation for Lean code, tactic/API recipes, formal "
+    "proof terms, or copied formal identifiers used as execution steps. Use "
+    "rejected_near_complete_proof whenever the candidate supplies enough theorem-specific mathematics "
+    "that the remaining work is mechanical transcription, even if the prose is short, unnumbered, or "
+    "omits the explicit final result, witness, or concluding phrase. Do not treat brevity as evidence "
+    "of intuition. For a divisibility or modular claim, reject a candidate that states the decisive "
+    "residue, propagates it through the theorem-specific exponent/parity, and gives the final "
+    "subtraction or cancellation route. For a one-step identity, reject a candidate that performs the "
+    "decisive rewrite or expansion and says the target follows. For an inequality, reject a candidate "
+    "that gives the theorem-specific substitution, balance/equality point, resulting bound, and "
+    "attainment. Reject a multi-clause candidate that supplies the decisive justification for every "
+    "clause of a conjunction or equivalence. Accept a higher-level suggestion such as using residue "
+    "classes, parity, a factorization, or a symmetry only when the theorem-specific propagation or "
+    "decisive calculation is genuinely left to the prover. Use rejected_not_an_intuition when the "
+    "candidate is empty, off-task, lacks a strategic mathematical mechanism, or is visibly cut off "
+    "before expressing one. Ordinary words such as induction, normalization, ring arithmetic, linear "
+    "arithmetic, positivity, or Lean are not by themselves formal leakage. Complete every structured "
+    "field consistently with this rubric. Do not use tools."
 )
 
 GENERATOR_MODEL = "gpt-5.6-sol"
 GENERATOR_REASONING_EFFORT = "xhigh"
 SEMANTIC_REVIEWER_MODEL = "gpt-5.6-sol"
 SEMANTIC_REVIEWER_REASONING_EFFORT = "xhigh"
+SEMANTIC_REVIEW_REPLICATES = 2
 MAX_ATTEMPTS = 2
 CANDIDATE_TOKEN_CAPS = (128, 160, 192)
 CALIBRATION_REQUIRED_ACCEPTED = 22
@@ -158,10 +167,13 @@ HARD_PATTERNS: tuple[tuple[str, str], ...] = (
     ("lean_fenced_code", r"```\s*(?:lean\d?|lean4)\b"),
     ("formal_code_fence", r"```[\s\S]*?(?::=\s*by|\b(?:theorem|lemma)\s+\w+[\s\S]*?\bby\b)[\s\S]*?```"),
     ("lean_assignment_by", r":=\s*by\b"),
-    ("lean_tactic_chain", r"<;>|^\s*(?:apply|exact|refine|rw|rwa)\s+[^.\n]+$"),
+    (
+        "lean_tactic_chain",
+        r"<;>|^\s*(?:apply|exact|refine|rw|rwa)\b[^\n;]*;\s*(?:apply|exact|refine|rw|rwa|simp|simpa|rfl)\b",
+    ),
     (
         "lean_tactic_line",
-        r"^\s*(?:simp(?:_all)?|simpa|rfl|linarith|nlinarith|omega|ring(?:_nf)?|norm_num|aesop|positivity)(?:\s|$)",
+        r"^\s*(?:(?:simp(?:_all)?|simpa)(?:\s+(?:only\s*)?\[[^\n]*\]|\s+at\s+\S+)?|rfl|linarith|nlinarith|omega|ring(?:_nf)?|norm_num|aesop|positivity)\s*$",
     ),
     ("lean_local_proof_term", r"^\s*(?:have|show|suffices)\s+[^.\n]*(?::=\s*by|\bfrom\b)"),
     ("lean_lambda_or_match", r"\bfun\s+[A-Za-z][A-Za-z0-9_']*\s*=>|\bmatch\b[^\n]*\bwith\b"),
@@ -195,9 +207,18 @@ REVIEW_OUTPUT_SCHEMA: dict[str, Any] = {
     "properties": {
         "decision": {"type": "string", "enum": list(SEMANTIC_DECISIONS)},
         "semantic_truncation_detected": {"type": "boolean"},
-        "boundary_basis": {"type": "string", "maxLength": 300},
+        "formal_implementation_detected": {"type": "boolean"},
+        "route_completeness": {
+            "type": "string",
+            "enum": ["mechanism_only", "partial_route", "near_complete_route"],
+        },
+        "substantive_mathematical_bridge_omitted": {"type": "boolean"},
+        "boundary_basis": {"type": "string", "maxLength": 400},
     },
-    "required": ["decision", "semantic_truncation_detected", "boundary_basis"],
+    "required": [
+        "decision", "semantic_truncation_detected", "formal_implementation_detected",
+        "route_completeness", "substantive_mathematical_bridge_omitted", "boundary_basis",
+    ],
     "additionalProperties": False,
 }
 
@@ -446,11 +467,11 @@ def materialize_sources(*, root: Path = EXPERIMENT_ROOT, prior_root: Path | None
 
 
 def prepare_calibration_revision(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
-    """Preserve superseded calibrations and materialize fresh r3 prompts.
+    """Preserve superseded evidence and materialize fresh r4 prompts.
 
-    Revision-0 through revision-2 captures remain byte-for-byte at their
+    Revision-0 through revision-3 captures remain byte-for-byte at their
     published paths. The active capture path is disjoint, so no prior output
-    can satisfy an r3 task.
+    can satisfy an r4 task.
     """
     sources = list(iter_jsonl(root / "source_tasks.jsonl"))
     if len(sources) != 650:
@@ -526,6 +547,63 @@ def prepare_calibration_revision(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]
         else:
             write_json_once(manifest_path, capture_manifest)
         preserved_attempts[str(revision["run_revision"])] = len(capture_paths)
+
+    final_review_path = root / "final_revision_0_review.json"
+    final_review = json.loads(final_review_path.read_text(encoding="utf-8"))
+    archived_freeze_path = root / "freeze_calibration_r3.json"
+    archived_capture_manifest_path = root / "capture_manifest_calibration_r3.json"
+    if (
+        final_review.get("schema_version") != "frontier-assisted-final-review-v1"
+        or final_review.get("verdict") != "REVISE"
+        or final_review.get("reviewed_target") != "6d7fa415a6259e18c886e0f53c10bd669768d390"
+        or final_review.get("reviewed_freeze_sha256") != sha256_file(archived_freeze_path)
+    ):
+        raise ValueError("calibration-r3 final review is not bound to the preserved failed release")
+    target_freeze = _git_file_at_target(
+        str(final_review["reviewed_target"]),
+        "experiments/frontier_assisted_intuition_corpus_v1/freeze.json",
+    )
+    if sha256_bytes(target_freeze) != sha256_file(archived_freeze_path):
+        raise ValueError("calibration-r3 archived freeze differs from the reviewed target")
+    r3_capture_paths = sorted((root / "runs/calibration-r3/captures").rglob("attempt_*.json"))
+    if len(r3_capture_paths) != 738:
+        raise ValueError("calibration-r3 must preserve exactly 738 raw attempts")
+    archived_capture_manifest = json.loads(archived_capture_manifest_path.read_text(encoding="utf-8"))
+    expected_r3_capture_manifest = {
+        "schema_version": "frontier-assisted-capture-manifest-v1",
+        "generation_manifest_id": json.loads(archived_freeze_path.read_text(encoding="utf-8"))[
+            "generation_manifest_id"
+        ],
+        "captures": [
+            {
+                "path": str(path.relative_to(root)),
+                "bytes": path.stat().st_size,
+                "sha256": sha256_file(path),
+            }
+            for path in r3_capture_paths
+        ],
+    }
+    if archived_capture_manifest != expected_r3_capture_manifest:
+        raise ValueError("calibration-r3 archived capture manifest differs from preserved captures")
+    archived_names = {
+        "accepted_intuitions.jsonl": "accepted_intuitions_calibration_r3.jsonl",
+        "boundary_results.jsonl": "boundary_results_calibration_r3.jsonl",
+        "capture_manifest.json": "capture_manifest_calibration_r3.json",
+        "freeze.json": "freeze_calibration_r3.json",
+        "integrity_audit.json": "integrity_audit_calibration_r3.json",
+        "raw_attempts.jsonl": "raw_attempts_calibration_r3.jsonl",
+        "summary.json": "summary_calibration_r3.json",
+    }
+    archived_freeze = json.loads(archived_freeze_path.read_text(encoding="utf-8"))
+    for original, archived in archived_names.items():
+        path = root / archived
+        identity = {"bytes": path.stat().st_size, "sha256": sha256_file(path)}
+        if original == "freeze.json":
+            if identity["sha256"] != final_review["reviewed_freeze_sha256"]:
+                raise ValueError("calibration-r3 archived freeze identity differs")
+        elif archived_freeze["artifacts"].get(original) != identity:
+            raise ValueError(f"calibration-r3 archived artifact identity differs: {original}")
+    preserved_attempts["calibration-r3"] = len(r3_capture_paths)
     prompts = [_prompt_row(row) for row in sources]
     write_jsonl_once(root / PROMPTS_FILENAME, prompts)
     validate_source_snapshot(root)
@@ -615,8 +693,32 @@ class FrozenTokenizer:
             return list(self.value.encode(text, add_special_tokens=add_special_tokens))
 
 
+def validate_boundary_revision_preflight(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
+    path = root / "boundary_revision_r4_preflight.json"
+    preflight = json.loads(path.read_text(encoding="utf-8"))
+    result = preflight.get("result")
+    if (
+        preflight.get("schema_version") != "frontier-assisted-boundary-preflight-v1"
+        or preflight.get("run_revision") != RUN_REVISION
+        or not isinstance(result, dict)
+        or result.get("status") != "PASS"
+        or result.get("confirmed_negative_reviews") != 8
+        or result.get("confirmed_negative_false_acceptances") != 0
+        or result.get("positive_control_reviews") != 8
+        or result.get("positive_control_false_rejections") != 0
+        or result.get("hard_false_positive_corrected") is not True
+    ):
+        raise ValueError("r4 boundary revision preflight is incomplete or failed")
+    if len(preflight.get("confirmed_near_complete_negative_controls", [])) != 4:
+        raise ValueError("r4 negative-control preflight count differs")
+    if len(preflight.get("previously_audited_positive_controls", [])) != 4:
+        raise ValueError("r4 positive-control preflight count differs")
+    return preflight
+
+
 def _manifest_payload(root: Path, runtime: Mapping[str, Any]) -> dict[str, Any]:
     sources, _ = validate_source_snapshot(root)
+    validate_boundary_revision_preflight(root)
     calibration = [
         {"workload": workload, "task_id": task_id}
         for workload, task_id in calibration_keys(sources)
@@ -626,7 +728,13 @@ def _manifest_payload(root: Path, runtime: Mapping[str, Any]) -> dict[str, Any]:
         "controlling_issue": CONTROLLING_ISSUE,
         "artifact_id": SCHEMA_VERSION,
         "run_revision": RUN_REVISION,
-        "status": "pre_calibration_revision_3_contract_frozen",
+        "status": "pre_calibration_revision_4_contract_frozen",
+        "boundary_revision_preflight": {
+            "path": "boundary_revision_r4_preflight.json",
+            "sha256": sha256_file(root / "boundary_revision_r4_preflight.json"),
+            "status": "PASS",
+            "historical_outputs_final_corpus_eligible": False,
+        },
         "superseded_calibrations": [
             {
                 "run_revision": "calibration-r0",
@@ -651,6 +759,16 @@ def _manifest_payload(root: Path, runtime: Mapping[str, Any]) -> dict[str, Any]:
                 "review_sha256": sha256_file(root / "calibration_revision_2_blocker.json"),
                 "capture_manifest_sha256": sha256_file(root / "calibration_revision_2_capture_manifest.json"),
                 "outputs_final_corpus_eligible": False,
+            },
+            {
+                "run_revision": "calibration-r3",
+                "verdict": "REVISE",
+                "reviewed_target": "6d7fa415a6259e18c886e0f53c10bd669768d390",
+                "review_sha256": sha256_file(root / "final_revision_0_review.json"),
+                "freeze_sha256": sha256_file(root / "freeze_calibration_r3.json"),
+                "capture_manifest_sha256": sha256_file(root / "capture_manifest_calibration_r3.json"),
+                "outputs_final_corpus_eligible": False,
+                "reason": "final audit found material hard and semantic output-boundary defects",
             },
         ],
         "source_contract": {
@@ -700,6 +818,9 @@ def _manifest_payload(root: Path, runtime: Mapping[str, Any]) -> dict[str, Any]:
             "correctness_or_usefulness_judgment": False,
             "tools_allowed": False,
             "tool_event_action": "semantic_review_runtime_failure",
+            "independent_replicates_per_candidate": SEMANTIC_REVIEW_REPLICATES,
+            "acceptance_consensus": "all independent reviewers must return accepted_intuition",
+            "rejection_aggregation": "formal implementation, then near-complete proof, then not-an-intuition",
             "output_schema": REVIEW_OUTPUT_SCHEMA,
             "output_schema_sha256": sha256_text(canonical_json(REVIEW_OUTPUT_SCHEMA)),
             "disabled_cli_features": list(REVIEWER_DISABLED_FEATURES),
@@ -741,7 +862,9 @@ def _manifest_payload(root: Path, runtime: Mapping[str, Any]) -> dict[str, Any]:
             "hard_patterns": [list(item) for item in HARD_PATTERNS],
             "hard_checks_are_narrow_unambiguous_formal_leakage_only": True,
             "semantic_review_schema": SEMANTIC_REVIEW_SCHEMA_VERSION,
-            "eligible": "valid generation + hard pass + accepted_intuition + no semantic truncation + within frozen cap",
+            "semantic_review_replicates": SEMANTIC_REVIEW_REPLICATES,
+            "semantic_acceptance": "unanimous accepted_intuition with every reviewer confirming a substantive mathematical bridge is omitted",
+            "eligible": "valid generation + hard pass + unanimous accepted_intuition + no semantic truncation + within frozen cap",
             "repair_or_sanitization": False,
             "semantic_quality_selection": False,
         },
@@ -993,26 +1116,92 @@ def _parse_semantic_decision(capture: Mapping[str, Any]) -> dict[str, Any]:
         except json.JSONDecodeError:
             error = "semantic_reviewer_json_invalid"
         else:
-            if not isinstance(parsed, dict) or set(parsed) != {
-                "decision", "semantic_truncation_detected", "boundary_basis"
-            }:
+            required_fields = set(REVIEW_OUTPUT_SCHEMA["required"])
+            if not isinstance(parsed, dict) or set(parsed) != required_fields:
                 error = "semantic_reviewer_schema_invalid"
             elif parsed.get("decision") not in SEMANTIC_DECISIONS:
                 error = "semantic_reviewer_decision_invalid"
             elif not isinstance(parsed.get("semantic_truncation_detected"), bool):
                 error = "semantic_reviewer_truncation_invalid"
-            elif not isinstance(parsed.get("boundary_basis"), str) or len(parsed["boundary_basis"]) > 300:
+            elif not isinstance(parsed.get("formal_implementation_detected"), bool):
+                error = "semantic_reviewer_formal_flag_invalid"
+            elif parsed.get("route_completeness") not in {
+                "mechanism_only", "partial_route", "near_complete_route"
+            }:
+                error = "semantic_reviewer_route_completeness_invalid"
+            elif not isinstance(parsed.get("substantive_mathematical_bridge_omitted"), bool):
+                error = "semantic_reviewer_bridge_flag_invalid"
+            elif not isinstance(parsed.get("boundary_basis"), str) or len(parsed["boundary_basis"]) > 400:
                 error = "semantic_reviewer_basis_invalid"
             else:
-                result = dict(parsed)
+                formal = bool(parsed["formal_implementation_detected"])
+                complete = parsed["route_completeness"] == "near_complete_route"
+                bridge_omitted = bool(parsed["substantive_mathematical_bridge_omitted"])
+                decision = str(parsed["decision"])
+                if formal and decision != "rejected_formal_implementation":
+                    error = "semantic_reviewer_decision_inconsistent"
+                elif not formal and (complete or not bridge_omitted) and decision != "rejected_near_complete_proof":
+                    error = "semantic_reviewer_decision_inconsistent"
+                elif (
+                    not formal and not complete and bridge_omitted
+                    and decision not in {"accepted_intuition", "rejected_not_an_intuition"}
+                ):
+                    error = "semantic_reviewer_decision_inconsistent"
+                else:
+                    result = dict(parsed)
     return {
         "schema_version": SEMANTIC_REVIEW_SCHEMA_VERSION,
         "status": "review_valid" if result is not None else "review_runtime_failure",
         "decision": result["decision"] if result else None,
         "semantic_truncation_detected": result["semantic_truncation_detected"] if result else None,
+        "formal_implementation_detected": result["formal_implementation_detected"] if result else None,
+        "route_completeness": result["route_completeness"] if result else None,
+        "substantive_mathematical_bridge_omitted": (
+            result["substantive_mathematical_bridge_omitted"] if result else None
+        ),
         "boundary_basis": result["boundary_basis"] if result else None,
         "error": error,
         "capture": dict(capture),
+    }
+
+
+def _aggregate_semantic_reviews(reviews: Sequence[Mapping[str, Any]]) -> dict[str, Any]:
+    if len(reviews) != SEMANTIC_REVIEW_REPLICATES:
+        raise ValueError("semantic review replicate count differs from the frozen contract")
+    valid = all(review.get("status") == "review_valid" for review in reviews)
+    decisions = [str(review.get("decision")) for review in reviews] if valid else []
+    decision: str | None = None
+    if valid:
+        for candidate in (
+            "rejected_formal_implementation",
+            "rejected_near_complete_proof",
+            "rejected_not_an_intuition",
+            "accepted_intuition",
+        ):
+            if candidate in decisions:
+                decision = candidate
+                break
+    return {
+        "schema_version": SEMANTIC_REVIEW_SCHEMA_VERSION,
+        "status": "review_valid" if valid else "review_runtime_failure",
+        "decision": decision,
+        "semantic_truncation_detected": (
+            any(bool(review.get("semantic_truncation_detected")) for review in reviews)
+            if valid else None
+        ),
+        "formal_implementation_detected": (
+            any(bool(review.get("formal_implementation_detected")) for review in reviews)
+            if valid else None
+        ),
+        "substantive_mathematical_bridge_omitted": (
+            all(bool(review.get("substantive_mathematical_bridge_omitted")) for review in reviews)
+            if valid else None
+        ),
+        "unanimous_acceptance": valid and all(
+            review.get("decision") == "accepted_intuition" for review in reviews
+        ),
+        "error": None if valid else "one_or_more_semantic_reviews_failed",
+        "reviews": [dict(review) for review in reviews],
     }
 
 
@@ -1030,12 +1219,17 @@ def _attempt_record(
     semantic: dict[str, Any] | None = None
     if generation.get("valid_capture") and check["status"] == "hard_pass":
         review_prompt = render_semantic_review_prompt(source, str(generation["final_message"]))
-        review_capture = _run_codex(
-            review_prompt, manifest["semantic_reviewer_contract"], reviewer=True,
-            output_schema=REVIEW_OUTPUT_SCHEMA,
-        )
-        semantic = _parse_semantic_decision(review_capture)
-        semantic["review_prompt_sha256"] = sha256_text(review_prompt)
+        reviews: list[dict[str, Any]] = []
+        for reviewer_index in range(1, SEMANTIC_REVIEW_REPLICATES + 1):
+            review_capture = _run_codex(
+                review_prompt, manifest["semantic_reviewer_contract"], reviewer=True,
+                output_schema=REVIEW_OUTPUT_SCHEMA,
+            )
+            review = _parse_semantic_decision(review_capture)
+            review["reviewer_index"] = reviewer_index
+            review["review_prompt_sha256"] = sha256_text(review_prompt)
+            reviews.append(review)
+        semantic = _aggregate_semantic_reviews(reviews)
     identity = {
         "workload": source["workload"], "task_id": source["task_id"],
         "attempt_index": attempt_index,
@@ -1043,7 +1237,10 @@ def _attempt_record(
         "prompt_sha256": prompt["attempt_prompt_sha256"][str(attempt_index)],
         "generation_thread_ids": generation["thread_ids"],
         "generation_stdout_sha256": generation["stdout_sha256"],
-        "semantic_stdout_sha256": semantic["capture"]["stdout_sha256"] if semantic else None,
+        "semantic_stdout_sha256": (
+            [review["capture"]["stdout_sha256"] for review in semantic["reviews"]]
+            if semantic else None
+        ),
     }
     return {
         "schema_version": ATTEMPT_SCHEMA_VERSION,
@@ -1123,19 +1320,29 @@ def validate_attempt(
     if valid_generation and expected_hard["status"] == "hard_pass":
         if not isinstance(semantic, dict):
             raise ValueError("hard-pass attempt lacks semantic boundary review")
-        review_capture = semantic.get("capture")
-        if not isinstance(review_capture, dict):
-            raise ValueError("semantic review lacks raw capture")
-        review_parsed = parse_codex_transcript(
-            str(review_capture.get("stdout_jsonl", "")), tools_allowed=False,
-            allow_interim_agent_messages=False,
-        )
-        for key, value in review_parsed.items():
-            if review_capture.get(key) != value:
-                raise ValueError(f"semantic transcript parse evidence differs: {key}")
-        expected_semantic = _parse_semantic_decision(review_capture)
         review_prompt = render_semantic_review_prompt(source, str(raw_text))
-        expected_semantic["review_prompt_sha256"] = sha256_text(review_prompt)
+        reviews = semantic.get("reviews")
+        if not isinstance(reviews, list) or len(reviews) != SEMANTIC_REVIEW_REPLICATES:
+            raise ValueError("semantic review ensemble has the wrong replicate count")
+        expected_reviews: list[dict[str, Any]] = []
+        for reviewer_index, review in enumerate(reviews, start=1):
+            if not isinstance(review, dict):
+                raise ValueError("semantic review replicate is malformed")
+            review_capture = review.get("capture")
+            if not isinstance(review_capture, dict):
+                raise ValueError("semantic review lacks raw capture")
+            review_parsed = parse_codex_transcript(
+                str(review_capture.get("stdout_jsonl", "")), tools_allowed=False,
+                allow_interim_agent_messages=False,
+            )
+            for key, value in review_parsed.items():
+                if review_capture.get(key) != value:
+                    raise ValueError(f"semantic transcript parse evidence differs: {key}")
+            expected_review = _parse_semantic_decision(review_capture)
+            expected_review["reviewer_index"] = reviewer_index
+            expected_review["review_prompt_sha256"] = sha256_text(review_prompt)
+            expected_reviews.append(expected_review)
+        expected_semantic = _aggregate_semantic_reviews(expected_reviews)
         if semantic != expected_semantic:
             raise ValueError("semantic review result differs from its raw capture")
     elif semantic is not None:
@@ -1146,7 +1353,10 @@ def validate_attempt(
         "prompt_sha256": prompt["attempt_prompt_sha256"][str(index)],
         "generation_thread_ids": generation["thread_ids"],
         "generation_stdout_sha256": generation["stdout_sha256"],
-        "semantic_stdout_sha256": semantic["capture"]["stdout_sha256"] if semantic else None,
+        "semantic_stdout_sha256": (
+            [review["capture"]["stdout_sha256"] for review in semantic["reviews"]]
+            if semantic else None
+        ),
     }
     if row.get("attempt_id") != stable_id("frontier_assisted_attempt", identity):
         raise ValueError("attempt identity differs")
@@ -1167,7 +1377,7 @@ def attempt_eligibility(row: Mapping[str, Any], *, maximum_tokens: int) -> dict[
     if hard["status"] == "hard_pass":
         if not isinstance(semantic, dict) or semantic.get("status") != "review_valid":
             reasons.append("semantic_review_runtime_failure")
-        elif semantic.get("decision") != "accepted_intuition":
+        elif semantic.get("decision") != "accepted_intuition" or not semantic.get("unanimous_acceptance"):
             reasons.append(f"semantic:{semantic.get('decision')}")
         elif semantic.get("semantic_truncation_detected"):
             reasons.append("semantic:truncation_detected")
@@ -1704,6 +1914,17 @@ def _accepted_projection(
                         attempt["semantic_boundary_review"]["decision"]
                         if isinstance(attempt.get("semantic_boundary_review"), dict) else None
                     ),
+                    "semantic_unanimous_acceptance": (
+                        attempt["semantic_boundary_review"]["unanimous_acceptance"]
+                        if isinstance(attempt.get("semantic_boundary_review"), dict) else None
+                    ),
+                    "semantic_reviewer_decisions": (
+                        [
+                            review["decision"]
+                            for review in attempt["semantic_boundary_review"]["reviews"]
+                        ]
+                        if isinstance(attempt.get("semantic_boundary_review"), dict) else []
+                    ),
                 }
                 for attempt, decision in zip(task_attempts, decisions, strict=True)
             ],
@@ -1724,6 +1945,7 @@ def build_summary(
     second_acceptance = sum(int(row["accepted_attempt_index"]) == 2 for row in accepted)
     hard_reasons: Counter[str] = Counter()
     semantic_counts: Counter[str] = Counter()
+    semantic_reviewer_counts: Counter[str] = Counter()
     tool_types: Counter[str] = Counter()
     source_domains: Counter[str] = Counter()
     tool_attempts = 0
@@ -1734,6 +1956,10 @@ def build_summary(
         semantic = attempt.get("semantic_boundary_review")
         if isinstance(semantic, dict):
             semantic_counts.update([str(semantic.get("decision") or semantic.get("status"))])
+            semantic_reviewer_counts.update(
+                str(review.get("decision") or review.get("status"))
+                for review in semantic.get("reviews", [])
+            )
         if int(attempt["hard_check"]["token_count"]) > maximum_tokens:
             length_rejections += 1
         capture = attempt["generation_capture"]
@@ -1770,6 +1996,8 @@ def build_summary(
             "generation_runtime_failures": runtime_failures,
         },
         "semantic_boundary_review_counts": dict(sorted(semantic_counts.items())),
+        "semantic_reviewer_replicate_counts": dict(sorted(semantic_reviewer_counts.items())),
+        "semantic_reviewer_replicates_per_hard_pass": SEMANTIC_REVIEW_REPLICATES,
         "tool_provenance": {
             "attempts_with_tool_or_support_use": tool_attempts,
             "attempt_rate": round(tool_attempts / len(attempts), 12) if attempts else None,
@@ -1937,6 +2165,15 @@ def finalize(root: Path = EXPERIMENT_ROOT) -> dict[str, Any]:
         "calibration_revision_0_review.json", "calibration_revision_0_capture_manifest.json",
         "calibration_revision_1_review.json", "calibration_revision_1_capture_manifest.json",
         "calibration_revision_2_blocker.json", "calibration_revision_2_capture_manifest.json",
+        "boundary_revision_r4_preflight.json",
+        "final_revision_0_review.json",
+        "accepted_intuitions_calibration_r3.jsonl",
+        "boundary_results_calibration_r3.jsonl",
+        "capture_manifest_calibration_r3.json",
+        "freeze_calibration_r3.json",
+        "integrity_audit_calibration_r3.json",
+        "raw_attempts_calibration_r3.jsonl",
+        "summary_calibration_r3.json",
         "raw_attempts.jsonl",
         "accepted_intuitions.jsonl", "boundary_results.jsonl", "summary.json",
         "integrity_audit.json", "capture_manifest.json",

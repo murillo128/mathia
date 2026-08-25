@@ -99,12 +99,18 @@ class CoreTests(unittest.TestCase):
             core.validate_source_row(row)
 
     def test_hard_gate_accepts_ordinary_mathematical_vocabulary(self) -> None:
-        text = (
-            "Lean aside, use induction and ring arithmetic conceptually: expose the invariant "
-            "factorization, then view Real.sqrt as ordinary notation and reduce by symmetry."
+        cases = (
+            (
+                "Lean aside, use induction and ring arithmetic conceptually: expose the invariant "
+                "factorization, then view Real.sqrt as ordinary notation and reduce by symmetry."
+            ),
+            "Positivity of the unchanged area selects the geometrically relevant branch.",
+            "Apply the triangle inequality conceptually to compare the two representations.",
+            "Ring normalization reveals the invariant without choosing a formal implementation.",
         )
-        result = core.hard_check(text, self.tokenizer)
-        self.assertEqual(result["status"], "hard_pass")
+        for text in cases:
+            with self.subTest(text=text):
+                self.assertEqual(core.hard_check(text, self.tokenizer)["status"], "hard_pass")
 
     def test_hard_gate_rejects_unambiguous_lean_recipe(self) -> None:
         cases = (
@@ -112,6 +118,8 @@ class CoreTests(unittest.TestCase):
             "Use Nat.Prime.dvd_of_dvd_pow as the API recipe.",
             "apply h; rw [identity]; exact result",
             "have h : P := by\n  simpa",
+            "simp [h]",
+            "positivity",
         )
         for text in cases:
             with self.subTest(text=text):
@@ -150,12 +158,14 @@ class CoreTests(unittest.TestCase):
 
     def test_revised_semantic_rubric_rejects_compact_complete_derivations(self) -> None:
         rubric = core.SEMANTIC_REVIEW_INSTRUCTION
-        self.assertIn("even to a concise one-paragraph derivation", rubric)
-        self.assertIn("one-step elementary identity", rubric)
-        self.assertIn("evaluates both theorem-specific sums", rubric)
-        self.assertIn("evaluates the theorem's percentages", rubric)
-        self.assertIn("Cosmetic omission of an explicit final result", rubric)
+        self.assertIn("even if the prose is short, unnumbered", rubric)
+        self.assertIn("For a one-step identity", rubric)
+        self.assertIn("mechanical transcription", rubric)
+        self.assertIn("balance/equality point", rubric)
+        self.assertIn("omits the explicit final result", rubric)
         self.assertIn("decisive justification for every clause", rubric)
+        self.assertIn("decisive residue", rubric)
+        self.assertIn("substantive mathematical inference", rubric)
         fixtures = json.loads(
             (Path(__file__).parent / "semantic_boundary_revision_fixtures.json").read_text(encoding="utf-8")
         )
@@ -166,12 +176,42 @@ class CoreTests(unittest.TestCase):
     def test_semantic_decision_schema(self) -> None:
         message = json.dumps({
             "decision": "accepted_intuition", "semantic_truncation_detected": False,
+            "formal_implementation_detected": False,
+            "route_completeness": "mechanism_only",
+            "substantive_mathematical_bridge_omitted": True,
             "boundary_basis": "Compact mechanism rather than an implementation.",
         })
         capture = valid_capture(message)
         decision = core._parse_semantic_decision(capture)
         self.assertEqual(decision["status"], "review_valid")
         self.assertEqual(decision["decision"], "accepted_intuition")
+
+    def test_semantic_schema_rejects_inconsistent_acceptance(self) -> None:
+        message = json.dumps({
+            "decision": "accepted_intuition", "semantic_truncation_detected": False,
+            "formal_implementation_detected": False,
+            "route_completeness": "near_complete_route",
+            "substantive_mathematical_bridge_omitted": False,
+            "boundary_basis": "The route is complete.",
+        })
+        decision = core._parse_semantic_decision(valid_capture(message))
+        self.assertEqual(decision["status"], "review_runtime_failure")
+        self.assertEqual(decision["error"], "semantic_reviewer_decision_inconsistent")
+
+    def test_semantic_ensemble_requires_unanimous_acceptance(self) -> None:
+        accepted = {
+            "status": "review_valid", "decision": "accepted_intuition",
+            "semantic_truncation_detected": False, "formal_implementation_detected": False,
+            "substantive_mathematical_bridge_omitted": True,
+        }
+        rejected = {
+            **accepted,
+            "decision": "rejected_near_complete_proof",
+            "substantive_mathematical_bridge_omitted": False,
+        }
+        aggregate = core._aggregate_semantic_reviews([accepted, rejected])
+        self.assertEqual(aggregate["decision"], "rejected_near_complete_proof")
+        self.assertFalse(aggregate["unanimous_acceptance"])
 
     def test_attempt_eligibility_combines_layers_and_cap(self) -> None:
         text = "Use symmetry to expose the shared invariant."
@@ -181,6 +221,7 @@ class CoreTests(unittest.TestCase):
             "semantic_boundary_review": {
                 "status": "review_valid", "decision": "accepted_intuition",
                 "semantic_truncation_detected": False,
+                "unanimous_acceptance": True,
             },
         }
         self.assertTrue(core.attempt_eligibility(attempt, maximum_tokens=128)["eligible"])
