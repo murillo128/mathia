@@ -1,17 +1,19 @@
 ---
 name: mathia-research-clues
-description: Hand off speculative but source-motivated research clues from Mathia Mind or the Research Graph Curator to mathematical Research Watch tasks without treating clues as evidence or discoveries.
+description: Hand off speculative but source-motivated research clues from Mind, Graph Curator, Research Watch, or Adversarial Research without treating clues as evidence or discoveries.
 ---
 
 # Mathia Research Clues
 
 ## Responsibility
 
-Use this skill together with `mathia-research-mind`, `mathia-research-graph-curator`, or `mathia-research-watch` when a recurring process needs to hand off a promising but unvalidated mathematical direction to research.
+Use this skill together with `mathia-research-mind`, `mathia-research-graph-curator`, `mathia-research-watch`, or `mathia-research-adversarial` when a recurring process needs to hand off a promising but unvalidated mathematical direction to research.
 
-A **clue is not a finding, intuition, theorem, novelty claim, or accepted research result**. It is a compact, falsifiable research lead suggested by already-persisted repository structure or synthesis but still requiring the normal research-watch derivation, adversarial audit, literature check, and evidence gate.
+A **clue is not a finding, intuition, theorem, novelty claim, review verdict, or accepted research result**. It is a compact, falsifiable research lead suggested by already-persisted repository structure, synthesis, primary research, or adversarial friction but still requiring the normal Research Watch derivation, stress test, literature check, and evidence gate.
 
-This skill is an explicit narrow extension of the caller skill's path gate for clue files only. All other ownership restrictions of the caller remain unchanged.
+This skill is a narrow extension of the caller skill's path gate for clue files only. All other caller ownership restrictions remain unchanged.
+
+The existing Mind and Graph Curator clue behavior remains unchanged; this skill additionally allows Research Watch and Adversarial Research to emit clues when their work exposes a genuinely separate research question.
 
 ## Storage
 
@@ -21,7 +23,7 @@ For a clue that clearly belongs to an existing research line, use:
 research/<line>/clues/CLUE-<slug>.md
 ```
 
-This is the preferred form because the corresponding line-specific Research Watch can triage it without cross-line ownership ambiguity.
+This is preferred because the corresponding line-specific Research Watch can triage it without cross-line ownership ambiguity.
 
 For a genuinely cross-line clue, a possible entirely new research line, or a clue that cannot yet be assigned honestly, use:
 
@@ -29,7 +31,7 @@ For a genuinely cross-line clue, a possible entirely new research line, or a clu
 research/clues/CLUE-<slug>.md
 ```
 
-Global clues are a frontier inbox. Existing line-specific watches must not silently adopt or rewrite them unless the clue is explicitly reassigned into that line's local `clues/` directory by an authorized process.
+Global clues are a frontier inbox. Existing line-specific watches must not silently adopt or rewrite them unless this skill explicitly authorizes the operation.
 
 Do not create a clue directory merely to show that a run happened.
 
@@ -37,7 +39,7 @@ Do not create a clue directory merely to show that a run happened.
 
 Use a descriptive deterministic slug rather than a numeric sequence. Before creating a clue, search existing local and global clues for the same mathematical question.
 
-Prefer updating an existing `proposed` clue with materially stronger persisted motivation over creating a near-duplicate. Do not merge two clues unless their research question and decisive test are genuinely the same.
+Prefer strengthening an existing `proposed` clue with materially better persisted motivation over creating a near-duplicate. Do not merge two clues unless their research question and decisive test are genuinely the same.
 
 Repository path is the clue identity.
 
@@ -50,7 +52,7 @@ Use compact frontmatter:
 id: CLUE-<scope>-<slug>
 type: research-clue
 status: proposed
-origin: mind | graph-curator
+origin: mind | graph-curator | research-watch | adversarial
 target_line: <line> | global | new-line-candidate
 based_on:
   - <repository path>
@@ -63,7 +65,7 @@ Then keep only these substantive sections:
 # <research question>
 
 ## Observation
-What persisted findings/intuitions/graph structure suggested the clue.
+What persisted finding, intuition, review, or graph structure suggested the clue.
 
 ## Research question
 The precise candidate mechanism, connection, obstruction, or distinction to investigate.
@@ -93,12 +95,12 @@ resolved
 
 Their meanings are strict:
 
-- `proposed`: a producer has identified a research-worthy question, but Research Watch has not triaged it.
-- `accepted`: the owning Research Watch has checked scope and basic plausibility/prior-art fit and considers it worth active investigation. This does **not** assert truth or novelty.
-- `rejected`: Research Watch found a reason not to pursue it as a research direction, such as duplication, known prior art with no residual question, an exact obstruction, malformed premise, or mismatch with the line's mathematical object.
+- `proposed`: a producer identified a research-worthy question, but the owning Research Watch has not triaged it.
+- `accepted`: the owning Research Watch checked scope and basic plausibility/prior-art fit and considers it worth active investigation. This does **not** assert truth or novelty.
+- `rejected`: Research Watch found a reason not to pursue it, such as duplication, known prior art with no residual question, an exact obstruction, malformed premise, or scope mismatch.
 - `resolved`: research produced a durable outcome. Link the resulting finding(s) and state whether the outcome supported, narrowed, classicalized, or refuted the clue.
 
-Status is workflow metadata for the clue handoff only. It must never be used as mathematical evidence.
+Status is workflow metadata for handoff only. It must never be used as mathematical evidence.
 
 ## Producer: Mathia Research Mind
 
@@ -108,12 +110,12 @@ Good Mind clues include:
 
 - two local intuitions suggesting a possible exact bridge whose proof is missing;
 - several findings suggesting a deeper ordered-memory coefficient not yet derived;
-- an apparent cross-line common invariant that needs an explicit equivalence or counterexample;
-- a plausible escape from a known impossibility principle that requires new mathematical work.
+- an apparent cross-line common invariant needing an explicit equivalence or counterexample;
+- a plausible escape from a known impossibility principle requiring new mathematical work.
 
 The Mind must not use a clue to smuggle unsupported claims into the repository. The `Evidence boundary` must make the missing premise explicit.
 
-For an existing local line, write only under that line's `clues/**`. For a genuinely cross-line or new-line candidate, write under `research/clues/**`.
+For an existing local line, write under that line's `clues/**`. For a genuinely cross-line or new-line candidate, write under `research/clues/**`.
 
 The Mind may create a new clue or strengthen the motivation of an existing `proposed` clue. It must not set `accepted`, `rejected`, or `resolved`; those states belong to Research Watch evaluation.
 
@@ -123,18 +125,16 @@ When loaded with `mathia-research-graph-curator`, the Curator may emit a clue on
 
 Examples:
 
-- two branches repeatedly touch the same canonical prior-art node but no persisted finding proves a direct bridge;
+- two branches repeatedly touch the same canonical prior-art node but no finding proves a direct bridge;
 - multiple independent obstruction chains terminate at the same unexplored representation;
-- a cluster of findings and intuitions suggests an untested cross-line equivalence or control;
-- the graph exposes an isolated frontier component whose missing connection can be stated as a precise mathematical question.
+- a cluster of findings/intuitions suggests an untested cross-line equivalence or control;
+- the graph exposes an isolated frontier component whose missing connection is a precise mathematical question.
 
 Graph topology, semantic proximity, co-citation, or shared vocabulary alone are not enough. A clue needs explicit persisted source nodes and a falsifiable mathematical question.
 
-The Curator must not create a graph edge for the unproved relation. The clue is the correct place to hand that uncertainty to research.
+The Curator must not create a graph edge for the unproved relation. It may create or strengthen only `proposed` clues and must not perform the research needed to accept/reject them.
 
-The Curator may create or strengthen only `proposed` clues. It must not perform the research needed to accept or reject them.
-
-## Consumer: Mathia Research Watch
+## Producer and consumer: Mathia Research Watch
 
 When loaded with `mathia-research-watch`, a line-specific Research Watch should inspect:
 
@@ -142,17 +142,23 @@ When loaded with `mathia-research-watch`, a line-specific Research Watch should 
 research/<line>/clues/**
 ```
 
-as optional candidate input after reconstructing the line's current mathematical state.
+as optional candidate input after reconstructing the line's current mathematical state and processing actionable adversarial reviews.
 
 Clues do not outrank the watch's own research judgment and do not force work every run. Prefer clues whose decisive test is tractable and whose outcome could materially change the line.
 
 For each clue actually triaged:
 
 1. verify it belongs to the watch's exact mathematical scope;
-2. reconstruct the question independently from the authoritative findings it cites;
+2. reconstruct the question independently from authoritative findings/sources it cites;
 3. run the normal derivation, adversarial stress test, and serious prior-art/novelty check from `mathia-research-watch`;
-4. decide whether the direction is worth continued research;
-5. update only that local clue's status/outcome consistently with the rules below.
+4. decide whether the direction deserves continued research;
+5. update only the clue's status/outcome consistently with this skill.
+
+The Research Watch may also **produce** a clue when primary research or an owner-side response in a `.review.md` thread reveals a valuable question that is separate from the claim currently being established/defended.
+
+A review-generated clue should normally cite both the finding and its sidecar in `based_on`. Do not turn the clue into a summary of the review. The clue must state a distinct research question.
+
+A line-specific watch may propose local clues under its own `research/<line>/clues/**`. It may propose a global clue under `research/clues/**` only when the question is genuinely cross-line or a new-line candidate and the persisted basis makes that scope explicit.
 
 ### Accepting a clue
 
@@ -164,7 +170,7 @@ Acceptance is not a substantive finding and must not create a canonical finding 
 
 Set `status: rejected` when the direction should not be pursued. Add a concise `## Research disposition` with the decisive reason.
 
-If the rejection itself satisfies the research-watch substantive-finding gate — for example a reusable impossibility theorem or a material prior-art redirect — also persist the corresponding durable finding normally and link it from the clue. If rejection is merely duplicate/out-of-scope/malformed, do not manufacture a finding.
+If the rejection itself satisfies the Research Watch substantive-finding gate, also persist the corresponding durable finding normally and link it from the clue. If rejection is merely duplicate/out-of-scope/malformed, do not manufacture a finding.
 
 ### Resolving a clue
 
@@ -180,13 +186,30 @@ Resolved by:
 
 The linked finding, not the clue, is the mathematical evidence.
 
+## Producer: Adversarial Research
+
+When loaded with `mathia-research-adversarial`, the adversary may emit a clue only when auditing a finding or discussing an open `.review.md` exposes a **separate**, potentially fertile research question.
+
+Good adversarial clues include:
+
+- the same failure mode may apply to another research line and needs explicit testing;
+- a defense reveals an invariant not required to settle the current review;
+- the objection and defense together suggest a discriminating theorem/control outside the target claim;
+- a review uncovers a possible cross-line equivalence whose truth is not needed for the verdict.
+
+The adversary must not use clues to outsource an objection that should remain in the `.review.md`, and must not encode the review verdict as a clue.
+
+It may create or materially strengthen only `proposed` clues. It must not set `accepted`, `rejected`, or `resolved`; those belong to the owning Research Watch.
+
+For an existing local line, prefer `research/<line>/clues/**`. Use `research/clues/**` only for genuinely cross-line/new-line questions.
+
 ## Ownership extension
 
-When this skill is explicitly loaded with one of the caller skills, it extends writable paths only as follows:
+When this skill is explicitly loaded, it extends writable paths only as follows.
 
 ### Mind
 
-May additionally create or update `proposed` clues under:
+May create or strengthen `proposed` clues under:
 
 ```text
 research/<discovered-line>/clues/**
@@ -197,7 +220,7 @@ It may not change Research Watch disposition states.
 
 ### Graph Curator
 
-May additionally create or update `proposed` clues under:
+May create or strengthen `proposed` clues under:
 
 ```text
 research/<research-line>/clues/**
@@ -208,13 +231,30 @@ It may not change Research Watch disposition states.
 
 ### Research Watch for `<line>`
 
-May additionally read and update only:
+May read/update lifecycle state for local clues and may create/strengthen `proposed` clues under:
 
 ```text
 research/<line>/clues/**
 ```
 
-It must not modify another line's clues or `research/clues/**`.
+It may additionally create/strengthen a `proposed` clue under:
+
+```text
+research/clues/**
+```
+
+only when the clue is genuinely cross-line or a new-line candidate. It must not modify another line's local clues.
+
+### Adversarial Research
+
+May create or materially strengthen only `proposed` clues under:
+
+```text
+research/<line>/clues/**
+research/clues/**
+```
+
+It must not change `accepted`, `rejected`, or `resolved` dispositions and must not modify a clue merely to record that it reviewed it.
 
 This exception does not grant access to any other caller-forbidden path.
 
@@ -224,6 +264,7 @@ A clue change may share the caller's normal direct-main publication path when al
 
 - every clue path is allowed for that caller above;
 - the clue is materially new, materially better grounded, or its Research Watch disposition changed;
+- any review-derived clue cites the persisted finding/review that motivated it;
 - no timestamps/run logs/status noise were added;
 - the source revision remains coherent;
 - the caller's normal diff review and publication gates pass.
@@ -232,6 +273,6 @@ Use the caller's normal commit prefix. Do not create a commit solely to restate 
 
 ## Reporting
 
-Mind or Curator should notify only when a clue is unusually consequential or when it represents a genuinely new cross-line/new-line candidate worth user attention. Routine local clue creation can remain silent.
+Mind, Curator, or Adversarial Research should notify only when a clue is unusually consequential or represents a genuinely new cross-line/new-line candidate worth user attention. Routine local clue creation can remain silent.
 
 Research Watch should report a clue only when it is accepted, rejected for a substantive mathematical reason, or resolved into a material finding under its normal notification policy.
