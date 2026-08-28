@@ -13,7 +13,7 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
    - Role: classical random-character result underlying the statement that a random Helson zeta function is almost surely analytic and zero-free in `Re(s)>1/2`; anchor for the zero-flexibility comparison in `PL-003`.
 
 3. **I. Bochkov, R. Romanov**, “On zeroes and poles of Helson zeta functions,” *Journal of Functional Analysis* **282**(8) (2022), Article 109398. arXiv: https://arxiv.org/abs/2106.15949.
-   - Role: constructs Helson zeta functions with essentially arbitrary prescribed poles and zeroes in `21/40 < Re(s) < 1` unconditionally, and in `1/2 < Re(s) < 1` under RH. This is the decisive contrasting prior art for `PL-003`.
+   - Role: constructs Helson zeta functions with essentially arbitrary prescribed poles and zeroes in `21/40 < Re(s) < 1` unconditionally, and in `1/2 < Re(s) < 1` under RH. This is the original decisive contrasting prior art for `PL-003`.
 
 ## Statistical-mechanical and spectral prior art
 
@@ -41,3 +41,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 10. **Eero Saksman, Christian Webb**, “The Riemann zeta function and Gaussian multiplicative chaos: statistics on the critical line,” *The Annals of Probability* **48**(6) (2020), 2680–2754. DOI: https://doi.org/10.1214/20-AOP1433. arXiv: https://arxiv.org/abs/1609.00027.
     - Role: constructs the randomized prime Euler-product boundary at `Re(s)=1/2` as a generalized function, proves convergence in law of random vertical shifts of zeta, identifies complex GMC structure, proves the boundary is not a Borel measure on any open interval, and constructs subcritical/critical modulus-chaos measures. Main anchor for `PL-006`.
+
+## Strengthened Helson continuation flexibility
+
+11. **Johan Andersson**, “Mittag-Leffler type theorems for Helson zeta-functions,” arXiv:2408.15713 [math.NT] (2024), preprint. https://arxiv.org/abs/2408.15713.
+    - Role: strengthens `PL-003` unconditionally by showing that Helson zeta functions can realize prescribed zeros and poles throughout `Re(s)<1` (subject to the ordinary discreteness conditions), and that arbitrary open connected domains containing `Re(s)>1` can occur as maximal continuation domains. This removes the earlier RH-dependent critical-strip limitation from the torus-flexibility obstruction.
