@@ -14,6 +14,10 @@ This file records durable sources that support or constrain findings in `researc
 - S. A. C. Baluyot, D. A. Goldston, A. I. Suriajaya and C. L. Turnage-Butterbaugh, **An unconditional Montgomery theorem for pair correlation of zeros of the Riemann zeta-function**, *Acta Arithmetica* 214 (2024), 357--376; arXiv:2306.04799. Role: unconditional pointwise Montgomery form-factor input over all complex zeros used by Alpöge--Furman.
 - E. Bombieri, **Remarks on Weil's quadratic functional in the theory of prime numbers, I**, *Atti Accad. Naz. Lincei Rend. Lincei Mat. Appl.* 11 (2000), 183--233. Role: prior art for interpreting the negative index of finite truncations of Weil's form in terms of off-critical zero pairs.
 
+## Gabor-frame and critical-sampling structure
+
+- Ingrid Daubechies, Alexandre Grossmann and Yves Meyer, **Painless nonorthogonal expansions**, *Journal of Mathematical Physics* 27:5 (1986), 1271--1283, DOI 10.1063/1.527388. Role: classical prior art for compact-support Gabor systems whose sufficiently dense modulation makes the frame operator diagonal/multiplicative; this is the harmonic-analysis mechanism behind the critical-lattice screening identity in WI-005. The application to Alpöge--Furman off-line Weil-pair blocks and the resulting obstruction to a depth-only negative-mass charge are derived in WI-005, not attributed to this paper.
+
 ## Optimization, multiplicity, and support barriers
 
 - Emanuel Carneiro, Vorrapan Chandee, Friedrich Littmann and Micah B. Milinovich, **Hilbert spaces and the pair correlation of zeros of the Riemann zeta-function**, *J. Reine Angew. Math.* 725 (2017), 143--182; arXiv:1406.5462. Role: extremal-function/Hilbert-space optimization underlying the optimality of the Montgomery--Taylor window among single-window certificates of the form `2-R(psi)`.
