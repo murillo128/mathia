@@ -1,28 +1,20 @@
-# Mathia research graph
+# Research graph views
 
-`research/graph/` is a **derived presentation layer** for the live Mathia research program. It is not mathematical source of truth.
+This directory owns only the **global derived research graph**.
 
-Authoritative knowledge remains in:
+Line-local graph views live beside their source knowledge:
 
-- `research/*/findings/`;
-- `research/*/mind/`;
-- `research/mind/`;
-- `research/prior_art/` once the prior-art projection is materialized.
+- `research/prime_circle/graph/`
+- `research/prime_flute/graph/`
+- `research/prime_lattice/graph/`
+- `research/prior_art/graph/`
 
-The graph files are intentionally empty scaffolds. A later independent research-graph curator may regenerate their managed sections from authoritative research material without editing the underlying findings, intuitions, or prior-art notes.
+The global graph may aggregate those local views and cross-line relationships, but it must not become a source of mathematical truth. Findings, mind notes, and prior-art notes remain authoritative; graph content is regenerable presentation state for Obsidian and later graph-curation tasks.
 
-## Views
-
-- `global.md` — aggregate Mathia research graph.
-- `prime-circle.md` — Prime Circle subgraph.
-- `prime-flute.md` — Prime Flute subgraph.
-- `prime-lattice.md` — Prime Lattice subgraph.
-- `prior-art.md` — canonical prior-art subgraph.
+`global.md` is intentionally empty of research relationships until a dedicated graph curator materializes them.
 
 ## Obsidian
 
 Open the repository root (`mathia/`) as an Obsidian vault. The committed `.obsidian/graph.json` configures the built-in Graph View to show only `research/` by default.
 
-For a future line-specific view, open the corresponding graph note and use Obsidian's **Open local graph** command. Once the curator materializes links in that hub, the local graph becomes the subgraph for that research line.
-
-No community plugin is required for this initial scaffold. Per-device workspace state and downloaded plugins/themes are intentionally ignored by Git.
+For a line-specific view, open that line's `graph/index.md` and use Obsidian's **Open local graph** command. No community plugin is required for this scaffold.
