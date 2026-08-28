@@ -80,10 +80,16 @@ one-particle prime operator T_s = diag(p^{-s})
     -> det_2(I-T_s) = exp(-sum_{k>=2} P(k s)/k) is holomorphic and zero-free
     -> the regularization removes the k=1 prime-zeta term, the only Euler-log term that can carry zeta-zero singularities in that half-plane
 
+canonical multiplicative Hilbert / Helson operator
+    -> matrix 1/(sqrt(m n) log(m n)) couples lattice energies through E(m)+E(n)
+    -> is a genuine small Hankel operator on the infinite torus with zeta kernel
+    -> has no eigenvalues and spectrum [0,pi], refined to purely absolutely continuous multiplicity one
+    -> its kernel samples zeta only in Re(s+w)>1; the boundary spectral singularity is the pole at 1 / Carleman kernel, not the critical zero divisor
+
 Möbius orientation of the square-free hypercube
     -> already feeds the Nyman-Beurling / Bagchi Hardy closure program
     -> exact Möbius cancellation plus the known H^2 bridge proves the canonical approximation only for Re(s)>1;
        entering the critical strip requires genuinely stronger analytic control
 ```
 
-Thus the bare prime-exponent lattice and infinite torus are not, by themselves, a zero mechanism for the Riemann zeta function. Several natural refinements are already rigorous prior art: Bagchi recurrence gives an exact RH-level dynamical target in function space; Saksman–Webb give a stochastic critical boundary; the canonical `log n` generator gives a clean Schatten/trace hierarchy; standard Hilbert–Schmidt regularization of the one-particle prime determinant is zero-free and pushes zero-sensitive information into the removed prime-zeta counterterm; and Möbius-weighted Hardy approximation gives a precise zero-free criterion. In every case the remaining RH difficulty is not the exponent-vector encoding itself but additional analytic structure capable of distinguishing the Riemann zeta function and retaining deterministic/microscopic zero information through the critical strip.
+Thus the bare prime-exponent lattice and infinite torus are not, by themselves, a zero mechanism for the Riemann zeta function. Several natural refinements are already rigorous prior art: Bagchi recurrence gives an exact RH-level dynamical target in function space; Saksman–Webb give a stochastic critical boundary; the canonical `log n` generator gives a clean Schatten/trace hierarchy; standard Hilbert–Schmidt regularization of the one-particle prime determinant is zero-free and pushes zero-sensitive information into the removed prime-zeta counterterm; the canonical non-diagonal multiplicative Hilbert operator has a completely continuous Hilbert/Carleman-type spectrum despite its zeta kernel; and Möbius-weighted Hardy approximation gives a precise zero-free criterion. In every case the remaining RH difficulty is not the exponent-vector encoding itself but additional analytic structure capable of distinguishing the Riemann zeta function and retaining deterministic/microscopic zero information through the critical strip.

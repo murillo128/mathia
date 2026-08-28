@@ -78,3 +78,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 19. **Luiz Hartmann, Matthias Lesch**, “Zeta and Fredholm determinants of self-adjoint operators,” *Journal of Functional Analysis* **283**(1) (2022), Article 109491. DOI: https://doi.org/10.1016/j.jfa.2022.109491. arXiv: https://arxiv.org/abs/2106.02444.
     - Role: authoritative modern context for Schatten regularized Fredholm determinants as Weierstrass products and their relation to zeta-regularized determinants; supporting operator-theory anchor for `PL-009`.
+
+## Multiplicative Hilbert / Helson spectral operator
+
+20. **Ole Fredrik Brevig, Karl-Mikael Perfekt, Kristian Seip, Aristomenis G. Siskakis, Dragan Vukotic**, “The multiplicative Hilbert matrix,” *Advances in Mathematics* **302** (2016), 410–432. DOI: https://doi.org/10.1016/j.aim.2016.07.019. arXiv: https://arxiv.org/abs/1411.7294.
+    - Role: primary source for `PL-010`. Introduces the operator `H f(s)=integral_{1/2}^infinity f(w)(zeta(s+w)-1)dw`, identifies its matrix as `1/(sqrt(m n) log(m n))`, interprets it as a multiplicative Hankel/small Hankel operator on the infinite torus, proves positivity, norm `pi`, no eigenvalues, and continuous spectrum `[0,pi]`, and explicitly relates the boundary singularity to the classical Carleman operator using that `zeta(s)-1/(s-1)` is entire.
+
+21. **Karl-Mikael Perfekt, Alexander Pushnitski**, “On the spectrum of the multiplicative Hilbert matrix,” *Arkiv för Matematik* **56**(1) (2018), 163–183. DOI: https://doi.org/10.4310/ARKIV.2018.v56.n1.a10. arXiv: https://arxiv.org/abs/1705.01959.
+    - Role: sharpens the spectral theorem used in `PL-010`: the multiplicative Hilbert matrix has no singular continuous spectrum and has absolutely continuous spectrum `[0,pi]` of multiplicity one, proved using spectral perturbation and scattering theory.
