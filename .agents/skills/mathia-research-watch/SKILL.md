@@ -229,6 +229,22 @@ Before every commit:
 5. verify the index/source updates agree with the detailed finding;
 6. use a concise commit message describing the mathematical outcome, not the fact that a scheduled run occurred.
 
+Research-watch commits must use the branch-scoped form:
+
+```text
+research(<line>): <mathematical outcome>
+```
+
+where `<line>` is the exact research directory name, for example:
+
+```text
+research(prime_circle): rule out projective Hill spectrum
+research(prime_flute): classify universal cusp continuum
+research(prime_lattice): identify Bohr-lift obstruction
+```
+
+Use `research:` only for repository-level maintenance of the shared research machinery itself, not for a finding belonging to one research line. Do not use a bare `prime_circle:`/`prime_flute:` prefix: retaining the common `research(...)` namespace makes research commits easy to identify while preserving branch provenance.
+
 If the diff fails the path gate, do not commit until the unrelated changes are removed.
 
 If no substantive mathematical result improved, do not commit merely to prove the task ran.
