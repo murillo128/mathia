@@ -16,6 +16,7 @@ The design authority owns:
 - the task-specific context needed to execute safely;
 - scope, invariants, exclusions, failure semantics, and acceptance criteria;
 - risk-based review checkpoints when useful;
+- the issue's initial readiness and any design-authority state transition;
 - a separate concise explanation to the user of how the designed mechanism works when that helps them understand the project.
 
 It does not implement code, operate branches, publish commits, perform independent review, or grant the executor merge authority.
@@ -77,6 +78,19 @@ Depending on the task, include:
 
 Do not copy generic Git, publication, review, merge, or reporting procedure already owned by skills. An issue may state observable post-merge completion conditions, but it must not authorize Codex/the executor to merge or enable auto-merge.
 
+## Readiness
+
+Use exactly one workflow state label:
+
+- `execution-ready`
+- `design-required`
+- `investigation-required`
+- `blocked`
+- `in-progress`
+- `completed`
+
+At issue publication, set exactly one state label through `codex-github-operations`. The issue body may record **Initial state** for historical context, but the label is authoritative for current state.
+
 ## Design method
 
 ### 1. Define the observable outcome
@@ -127,12 +141,16 @@ Before declaring an issue ready for execution, confirm:
 - scope, invariants, failure behavior, and acceptance are clear;
 - required inputs and validation capabilities are identified;
 - no exploratory project hypothesis was silently promoted to a settled requirement;
-- no issue text grants executor merge or auto-merge authority.
+- no issue text grants executor merge or auto-merge authority;
+- `execution-ready` is the issue's only state label.
 
 ## Suggested issue structure
 
 ```markdown
 # <Outcome-oriented title>
+
+## Readiness
+**Initial state:** execution-ready | design-required | investigation-required | blocked
 
 ## Goal and current limitation
 <Observable outcome, why it matters, and current behavior.>
