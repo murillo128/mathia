@@ -5,7 +5,7 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 ## Bohr correspondence and Hilbert spaces of Dirichlet series
 
 1. **Håkan Hedenmalm, Peter Lindqvist, Kristian Seip**, “A Hilbert space of Dirichlet series and systems of dilated functions in `L^2(0,1)`,” *Duke Mathematical Journal* **86** (1997), 1–37. DOI: https://doi.org/10.1215/S0012-7094-97-08601-4. arXiv: https://arxiv.org/abs/math/9512211.
-   - Role: models the square-summable-coefficient Dirichlet-series Hilbert space as `H^2` of the infinite-dimensional polydisk/character space and identifies multiplicative-character twists as vertical limit functions. This is the main prior-art anchor for `PL-001` and `PL-002`.
+   - Role: models the square-summable-coefficient Dirichlet-series Hilbert space as `H^2` of the infinite-dimensional polydisk/character space and identifies multiplicative-character twists as vertical limit functions. Main anchor for `PL-001`, `PL-002`, and the canonical basis used in `PL-007`.
 
 ## Helson zeta functions and twist flexibility
 
@@ -13,12 +13,12 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
    - Role: classical random-character result underlying the statement that a random Helson zeta function is almost surely analytic and zero-free in `Re(s)>1/2`; anchor for the zero-flexibility comparison in `PL-003`.
 
 3. **I. Bochkov, R. Romanov**, “On zeroes and poles of Helson zeta functions,” *Journal of Functional Analysis* **282**(8) (2022), Article 109398. arXiv: https://arxiv.org/abs/2106.15949.
-   - Role: constructs Helson zeta functions with essentially arbitrary prescribed poles and zeroes in `21/40 < Re(s) < 1` unconditionally, and in `1/2 < Re(s) < 1` under RH. This is the original decisive contrasting prior art for `PL-003`.
+   - Role: constructs Helson zeta functions with essentially arbitrary prescribed poles and zeroes in `21/40 < Re(s) < 1` unconditionally, and in `1/2 < Re(s) < 1` under RH. Original decisive contrasting prior art for `PL-003`.
 
 ## Statistical-mechanical and spectral prior art
 
 4. **Bernard L. Julia**, “Statistical theory of numbers,” in *Number Theory and Physics*, Les Houches Winter School, Springer Proceedings in Physics **47**, Springer-Verlag, 1990, pp. 276–293.
-   - Role: classical free Riemann/primon gas. Prime factors are modes with energies `log p`, exponent vectors are occupation numbers, total energy is `log n`, and the grand-canonical partition function is the Riemann zeta function. Anchor for `PL-004`.
+   - Role: classical free Riemann/primon gas. Prime factors are modes with energies `log p`, exponent vectors are occupation numbers, total energy is `log n`, and the grand-canonical partition function is the Riemann zeta function. Anchor for `PL-004` and prior-art anchor for the Hamiltonian in `PL-007`.
 
 5. **Jean-Benoît Bost, Alain Connes**, “Hecke algebras, type III factors and phase transitions with spontaneous symmetry breaking in number theory,” *Selecta Mathematica, New Series* **1** (1995), 411–457. DOI: https://doi.org/10.1007/BF01589495.
    - Role: constructs a natural `C*`-dynamical system with partition function `zeta(beta)` and arithmetic symmetry/phase-transition structure, showing that substantially richer structure than the free primon gas is classical prior art. Anchor for `PL-004`.
@@ -46,3 +46,24 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 11. **Johan Andersson**, “Mittag-Leffler type theorems for Helson zeta-functions,” arXiv:2408.15713 [math.NT] (2024), preprint. https://arxiv.org/abs/2408.15713.
     - Role: strengthens `PL-003` unconditionally by showing that Helson zeta functions can realize prescribed zeros and poles throughout `Re(s)<1` (subject to the ordinary discreteness conditions), and that arbitrary open connected domains containing `Re(s)>1` can occur as maximal continuation domains. This removes the earlier RH-dependent critical-strip limitation from the torus-flexibility obstruction.
+
+## Infinite-polydisk Hardy evaluation boundary
+
+12. **Brian J. Cole, Theodore W. Gamelin**, “Representing Measures and Hardy Spaces for the Infinite Polydisk Algebra,” *Proceedings of the London Mathematical Society* (3) **53**(1) (1986), 112–142. DOI: https://doi.org/10.1112/plms/s3-53.1.112.
+    - Role: proves that, for every fixed `0<p<infinity` in the standard infinite-polydisk Hardy framework, point evaluation is continuous exactly on `Delta^infinity intersect ell^2`. This strengthens `PL-001`: the Bohr curve reaches the evaluation boundary at `Re(s)=1/2` throughout the classical `H^p` scale, not only in `H^2`.
+
+## Schatten/composition-operator context
+
+13. **Frédéric Bayart, Athanasios Kouroupis**, “Schatten class composition operators on the Hardy space of Dirichlet series and a comparison-type principle,” *Revista Matemática Iberoamericana* **40**(5) (2024), 1863–1886. DOI: https://doi.org/10.4171/RMI/1474. arXiv: https://arxiv.org/abs/2306.05733.
+    - Role: close modern prior art for Schatten-class composition operators on `mathcal H^2` of Dirichlet series. `PL-007` derives the special translation-semigroup singular values directly from the diagonal Dirichlet basis; this source is a novelty-audit/context anchor, not needed for the elementary diagonal calculation.
+
+## Nyman–Beurling / Möbius Hardy approximation
+
+14. **Bhaskar Bagchi**, “On Nyman, Beurling and Baez-Duarte's Hilbert space reformulation of the Riemann hypothesis,” *Proceedings of the Indian Academy of Sciences — Mathematical Sciences* **116**(2) (2006), 137–146. DOI: https://doi.org/10.1007/BF02829783. arXiv: https://arxiv.org/abs/math/0607733.
+    - Role: source for the Hardy half-plane reformulation `RH <=> E in closure(span{G_k}) in H^2(C_{1/2})` used in `PL-008`.
+
+15. **Aditya Ghosh, Kobi Kremnizer, S. Waleed Noor, Charles F. Santos**, “Zero-free half-planes of the `zeta`-function via spaces of analytic functions,” *Advances in Mathematics* **455** (2024), Article 109872. DOI: https://doi.org/10.1016/j.aim.2024.109872. arXiv: https://arxiv.org/abs/2206.00434.
+    - Role: establishes a broader function-space framework in which completeness/closure properties imply zero-free half-planes, showing that the Hardy approximation route in `PL-008` belongs to an established research program rather than a new prime-lattice mechanism.
+
+16. **Juan Manzur, Waleed Noor, Gustavo Quintero**, “A Hardy space approximation supporting zero-free half-planes for the `zeta`-function,” arXiv:2606.16097v1 [math.FA] (submitted 15 June 2026), preprint. https://arxiv.org/abs/2606.16097.
+    - Role: main current anchor for `PL-008`. Constructs a bounded map from `mathcal H^2` of Dirichlet series to half-plane Hardy spaces, proves that closure of the Bagchi family in `H^2(C_alpha)` forces zero-freeness in `C_alpha`, and proves the explicit Möbius approximation `sum mu(k)G_k -> E` for every `alpha>1`. The paper explicitly leaves `1/2<=alpha<=1` outside its analytical proof and treats its critical-strip computations only as numerical evidence.
