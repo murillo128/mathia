@@ -55,4 +55,4 @@ Treat each primitive layer \(P_n^*\) as a boundary charge distribution and study
 U_n(z)=\sum_{\zeta\in P_n^*}\log|z-\zeta|=\log|\Phi_n(z)|.
 \]
 
-This construction simultaneously preserves the original circle geometry, the primitive/new-vertex decomposition, and an exact interior/exterior reciprocity. See `FINDINGS.md`.
+This construction simultaneously preserves the original circle geometry, the primitive/new-vertex decomposition, and an exact interior/exterior reciprocity. Canonical evidence lives under [`findings/`](findings/); [`graph/index.md`](graph/index.md) is the derived navigational view.
