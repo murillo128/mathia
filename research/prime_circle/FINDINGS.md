@@ -196,3 +196,11 @@ Every fixed bounded linear observable inherits this factorization, and independe
 The full-root cyclic covers satisfy `L²(Y_n)=direct_sum_{d|n} H_d^birth`, where `H_d^birth` consists exactly of deck characters of order `d`; the projector onto the order-`n` layer has Ramanujan coefficients. Venkov–Zograf Artin formalism gives the matching divisor factorization of Selberg zeta. The standard modular scattering channel containing `zeta(2s-1)/zeta(2s)` lies in the universal trivial/old sector present at every level and is removed by exact-order birth extraction, so its Riemann zeros cannot be counted as a prime-specific mechanism.
 
 [Detailed finding](findings/PC-022-cyclic-cover-spectrum-has-exact-order-birth-layers.md)
+
+### PC-023 — exact-order Selberg birth factors are cyclotomic filters of one fixed length-winding spectrum
+
+**Status:** `EXACT-DERIVED` + `LITERATURE+DERIVED` + `DECISIVE-NEGATIVE` for the canonical exact-order Selberg product/determinant as a new arithmetic mechanism.
+
+On the absolute-convergence half-plane, grouping the twisted Selberg Euler products over all deck characters of exact order `n` gives a local factor `Phi_m(q)^(phi(n)/phi(m))`, with `m=n/gcd(n,r)` for geodesic winding `r` (and `(1-q)^phi(n)` when `n|r`). Equivalently, the logarithmic weights are exactly `c_n(jr)`. Thus the level dependence of the canonical birth determinant is only classical cyclotomic/Ramanujan filtering of the fixed base length-winding spectrum; any surviving route must use a canonically distinguished individual twist, exceptional controlled analytic behavior, or the nonlinear uniformization defect.
+
+[Detailed finding](findings/PC-023-exact-order-selberg-birth-factors-are-cyclotomic-filters.md)
