@@ -35,6 +35,8 @@ This is a derived Obsidian view. Findings and `mind/` remain authoritative.
 - [[research/prime_circle/findings/PC-018-projective-factor-surgery-is-flat|PC-018]]
 - [[research/prime_circle/findings/PC-019-unanchored-birth-shell-geometry-cannot-distinguish-n-from-2n|PC-019]]
 - [[research/prime_circle/findings/PC-020-anchored-local-jet-is-jordan-totient-data|PC-020]]
+- [[research/prime_circle/findings/PC-021-regular-linear-probes-are-moebius-tautological|PC-021]]
+- [[research/prime_circle/findings/PC-022-cyclic-cover-spectrum-has-exact-order-birth-layers|PC-022]]
 
 ## Durable intuitions
 
@@ -49,6 +51,7 @@ This is a derived Obsidian view. Findings and `mind/` remain authoritative.
 - [[research/prime_circle/graph/relations/first-order-transport-collapse|First-order transport collapse]]
 - [[research/prime_circle/graph/relations/exact-circle-defect-bridge|Exact-circle defect bridge]]
 - [[research/prime_circle/graph/relations/legacy-pc015-id-collision|Legacy PC-015 ID collision]]
+- [[research/prime_circle/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
 
 ## Curation boundary
 

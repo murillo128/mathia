@@ -26,8 +26,9 @@ This is a derived Obsidian view. `FINDINGS.md` and detailed findings remain auth
 - [[research/prime_lattice/graph/relations/critical-hilbert-boundary-does-not-locate-zeros|Critical Hilbert boundary does not locate zeros]]
 - [[research/prime_lattice/graph/relations/ambient-bohr-structure-is-insufficient|Ambient Bohr structure is insufficient]]
 - [[research/prime_lattice/graph/relations/classical-prime-flow-bridge|Classical prime-flow RH bridge]]
+- [[research/prime_lattice/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
 
 ## Curation boundary
 
-Prime Lattice currently has no persisted `mind/` synthesis. None is invented here; the three relation nodes below are direct syntheses of statements already made by `PL-001..006`.
+Prime Lattice currently has no persisted `mind/` synthesis. None is invented here; the relation nodes are direct syntheses of statements already made by `PL-001..006`.
 <!-- graph:end -->

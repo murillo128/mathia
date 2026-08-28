@@ -30,6 +30,7 @@ This is the derived root graph for Mathia research. Source findings and mind not
 - [[research/graph/relations/information-preservation-before-compression|Information preservation before compression]]
 - [[research/graph/relations/relational-multiscale-memory|Relational multiscale memory]]
 - [[research/graph/relations/universal-background-subtraction|Universal-background subtraction]]
+- [[research/graph/relations/gamma2-scattering-is-shared-background|Gamma(2) scattering is shared background]]
 
 ## Current integration boundary
 
