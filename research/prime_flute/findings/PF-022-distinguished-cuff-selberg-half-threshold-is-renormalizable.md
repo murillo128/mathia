@@ -1,6 +1,6 @@
 # PF-022 — distinguished-cuff Selberg half-threshold is renormalizable and non-spectral
 
-**Status:** `NEGATIVE/OBSTRUCTION` + `EXACT-DERIVED` + `POSITIVE-RELATIVE-REGULARIZATION`. The original absolute half-threshold argument uses the previously recorded square-summability input for the logarithmic mesh; the exact-vs-linearized relative strengthening in Section 9 needs only the explicit endpoint map, elementary asymptotics, and Bertrand's postulate.
+**Status:** `NEGATIVE/OBSTRUCTION` + `EXACT-DERIVED` + `POSITIVE-RELATIVE-REGULARIZATION`. The original absolute half-threshold argument uses the previously recorded square-summability input for the logarithmic mesh; the exact-vs-linearized relative strengthening in Section 9 uses the explicit endpoint map, elementary asymptotics, Bertrand's postulate for the summability bound, and the standard consequence `p_n/p_{n-1}->1` of the prime number theorem to place the cuff factors eventually in the large-length regime.
 
 This note tests the most direct Selberg-type object built from the distinguished prime-flute cuffs themselves. The classical Selberg Euler factor is standard; the custom content is the exact specialization to the prime endpoint geometry and the resulting renormalization at `s=1/2`.
 
@@ -335,9 +335,9 @@ Bertrand's postulate gives `p_n<2p_{n-1}`, hence
 }
 \]
 
-This statement is stronger than merely saying that each bare cuff has an `O(p^-2)` exact/reference correction: the whole distinguished-cuff deformation is absolutely summable in length coordinates. No prime-gap upper bound is needed; the gap cancels against the logarithmic mesh in the derivative of `ell(h)`.
+This statement is stronger than merely saying that each bare cuff has an `O(p^-2)` exact/reference correction: the whole distinguished-cuff deformation is absolutely summable in length coordinates. No quantitative prime-gap upper bound is needed for this `ell^1` estimate; the gap cancels against the logarithmic mesh in the derivative of `ell(h)`.
 
-Because `p_n/p_{n-1}->1`, both `h_n^0` and `h_n^E` tend to zero and therefore both cuff lengths tend to `+infinity`.
+The standard prime-number-theorem consequence `p_n/p_{n-1}->1` gives `h_n^0->0`; the coboundary estimate then gives `h_n^E->0`. Therefore both cuff lengths tend to `+infinity`.
 
 ### Relative Ruelle cuff sector
 
