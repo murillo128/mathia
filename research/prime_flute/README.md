@@ -58,8 +58,10 @@ projective multi-gap / tangent data
 exact finite-scale cotangent geometry
     -> breaks that dilation gauge through the nonprojective endpoint defect
     -> first four-point Möbius-invariant correction appears at order P^-4 (PF-082)
+    -> but the leading P^-4 normalized local scattering response is reproduced by
+       any matched smooth endpoint control x - a/x + O(x^-3) (PF-101)
 ```
 
-The exact cross-ratio of four endpoints remains the cleanest intrinsic bridge from several gaps to an actual separating geodesic. PF-099 sharpens its arithmetic interpretation: **the projective/tangent limit encodes gap shape, not primality specificity**. Any candidate that aims to add genuinely new arithmetic structure must therefore survive the global dilation-clone test and use information not erased by projectivization, most naturally the exact finite-scale `cot(pi/p)` defect.
+The exact cross-ratio of four endpoints remains the cleanest intrinsic bridge from several gaps to an actual separating geodesic. PF-099 sharpens its arithmetic interpretation: **the projective/tangent limit encodes gap shape, not primality specificity**. PF-101 adds a second control: although the exact cotangent geometry breaks the dilation gauge, **a finite asymptotic endpoint jet does not by itself supply a distinguished RH scale**. Matching the `1/x` jet moves the first local direct-scattering distinction from `P^-4` to `P^-6`, and matching further jets can postpone it again. Any viable exact-geometry mechanism must therefore use more than a fixed finite perturbative jet, most naturally a genuinely nonperturbative/global property of the exact endpoint geometry coupled to the actual prime sampling.
 
-The major negative lessons remain that ordinary Selberg/Ruelle products, uniformly expanding Bowen--Series operators, modular/Hecke inheritance, raw global scalar Laplace data, and featureless relative backgrounds encounter structural obstructions before they can plausibly encode the Riemann zeros.
+The major negative lessons remain that ordinary Selberg/Ruelle products, uniformly expanding Bowen--Series operators, modular/Hecke inheritance, raw global scalar Laplace data, featureless relative backgrounds, and finite-jet scattering phase scales encounter structural obstructions before they can plausibly encode the Riemann zeros.
