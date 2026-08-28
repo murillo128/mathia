@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "path:research (path:findings OR path:mind OR path:graph OR path:prior_art OR path:clues) -file:README -file:COVERAGE -file:FINDINGS -file:SOURCES -file:LEAN_CANDIDATES",
+  "search": "path:research (path:findings OR path:mind OR path:graph OR path:prior_art OR path:clues) -file:README -file:COVERAGE -file:SOURCES -file:LEAN_CANDIDATES",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -8,31 +8,94 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:findings /(?im)^\\*\\*(Status|Evidence\\/status):\\*\\*.*(NEGATIVE|OBSTRUCTION|BRANCH-CLOSED|NOVELTY-DOWNGRADE|PRIOR-ART)/",
+      "query": "path:research/prime_circle/findings /\\*\\*(Status|Evidence\\/status|Evidence):\\*\\*[^\\n]*(NEGATIVE|OBSTRUCTION|BRANCH-CLOSED|NOVELTY-DOWNGRADE|PRIOR-ART|prior-art)/",
       "color": {
         "a": 1,
-        "rgb": 14703194
+        "rgb": 10365483
       }
     },
     {
-      "query": "path:findings /(?im)^\\*\\*(Status|Evidence\\/status):\\*\\*.*(POSITIVE|EXACT-DERIVED|LITERATURE\\+DERIVED|PROVED)/",
+      "query": "path:research/prime_flute/findings /\\*\\*(Status|Evidence\\/status|Evidence):\\*\\*[^\\n]*(NEGATIVE|OBSTRUCTION|BRANCH-CLOSED|NOVELTY-DOWNGRADE|PRIOR-ART|prior-art)/",
       "color": {
         "a": 1,
-        "rgb": 5025661
+        "rgb": 12860719
       }
     },
     {
-      "query": "path:findings",
+      "query": "path:research/prime_lattice/findings /\\*\\*(Status|Evidence\\/status|Evidence):\\*\\*[^\\n]*(NEGATIVE|OBSTRUCTION|BRANCH-CLOSED|NOVELTY-DOWNGRADE|PRIOR-ART|prior-art)/",
       "color": {
         "a": 1,
-        "rgb": 10134450
+        "rgb": 14047818
+      }
+    },
+    {
+      "query": "path:research/weil_positivity/findings /\\*\\*(Status|Evidence\\/status|Evidence):\\*\\*[^\\n]*(NEGATIVE|OBSTRUCTION|BRANCH-CLOSED|NOVELTY-DOWNGRADE|PRIOR-ART|prior-art)/",
+      "color": {
+        "a": 1,
+        "rgb": 15037299
+      }
+    },
+    {
+      "query": "path:research/prime_circle/findings /\\*\\*(Status|Evidence\\/status|Evidence):\\*\\*[^\\n]*(POSITIVE|PROVED|EXACT|LITERATURE|CANDIDATE-NEW-STRUCTURE)/",
+      "color": {
+        "a": 1,
+        "rgb": 1793568
+      }
+    },
+    {
+      "query": "path:research/prime_flute/findings /\\*\\*(Status|Evidence\\/status|Evidence):\\*\\*[^\\n]*(POSITIVE|PROVED|EXACT|LITERATURE|CANDIDATE-NEW-STRUCTURE)/",
+      "color": {
+        "a": 1,
+        "rgb": 3046706
+      }
+    },
+    {
+      "query": "path:research/prime_lattice/findings /\\*\\*(Status|Evidence\\/status|Evidence):\\*\\*[^\\n]*(POSITIVE|PROVED|EXACT|LITERATURE|CANDIDATE-NEW-STRUCTURE)/",
+      "color": {
+        "a": 1,
+        "rgb": 4168535
+      }
+    },
+    {
+      "query": "path:research/weil_positivity/findings /\\*\\*(Status|Evidence\\/status|Evidence):\\*\\*[^\\n]*(POSITIVE|PROVED|EXACT|LITERATURE|CANDIDATE-NEW-STRUCTURE)/",
+      "color": {
+        "a": 1,
+        "rgb": 6732650
+      }
+    },
+    {
+      "query": "path:research/prime_circle/findings",
+      "color": {
+        "a": 1,
+        "rgb": 4545124
+      }
+    },
+    {
+      "query": "path:research/prime_flute/findings",
+      "color": {
+        "a": 1,
+        "rgb": 6323595
+      }
+    },
+    {
+      "query": "path:research/prime_lattice/findings",
+      "color": {
+        "a": 1,
+        "rgb": 7901340
+      }
+    },
+    {
+      "query": "path:research/weil_positivity/findings",
+      "color": {
+        "a": 1,
+        "rgb": 9479342
       }
     },
     {
       "query": "path:research/prior_art",
       "color": {
         "a": 1,
-        "rgb": 9133302
+        "rgb": 8280002
       }
     },
     {
@@ -46,28 +109,35 @@
       "query": "path:clues",
       "color": {
         "a": 1,
-        "rgb": 15909198
+        "rgb": 15844435
       }
     },
     {
       "query": "path:research/prime_circle",
       "color": {
         "a": 1,
-        "rgb": 5211895
+        "rgb": 5209587
       }
     },
     {
       "query": "path:research/prime_flute",
       "color": {
         "a": 1,
-        "rgb": 16096834
+        "rgb": 15898938
       }
     },
     {
       "query": "path:research/prime_lattice",
       "color": {
         "a": 1,
-        "rgb": 2930344
+        "rgb": 2926244
+      }
+    },
+    {
+      "query": "path:research/weil_positivity",
+      "color": {
+        "a": 1,
+        "rgb": 10907092
       }
     },
     {
