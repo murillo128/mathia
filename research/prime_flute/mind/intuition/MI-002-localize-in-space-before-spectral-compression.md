@@ -1,35 +1,60 @@
-# MI-002 — Localize in space before compressing spectrally
+# MI-002 — Localize and mark before global spectral compression
 
 **Evidence level:** supported
 
 ## Core intuition
 
-The infinite prime flute is too singular for most global spectral compressions, yet finite prime-derived regions can become asymptotically isolated by collars whose widths diverge. This creates a robust asymmetry: **globalize first and the arithmetic signal is swamped; localize geometrically first and ordinary finite-type spectral theory becomes informative again.**
+The infinite prime flute does not turn a finite prime-pattern pole into one more isolated global pole.  Recurrent isolated patterns can instead become **essential spectral data**.  The safe order of operations is therefore stronger than “localize first”: localize geometrically, retain the relevant mark or spectral mode, and only then compress by an operation known to be injective on that family.
 
 ## Strongest justified principle
 
-Recurring isolated prime patterns produce genuine pointed tangents `Y_H`, and compactly supported spectral measures/wave observables in the corresponding blocks converge to those of `Y_H`. Thus finite-pattern moduli can enter the essential spectrum and local spectral response of the global Laplacian even when no useful global trace or determinant exists.
+Diverging collars can isolate a finite prime-derived tangent `Y_H` well enough that compactly supported spectral measures, wave observables and marked boundary/scattering data converge to finite-type tangent data.  When the same tangent occurs recurrently along the infinite flute, its low eigenvalues can be implanted into the global essential spectrum.
 
-PF-034 gives the geometric isolation mechanism. PF-050 and PF-064 show that local spectral measures and localized wave traces can recover tangent data from the global Laplacian. PF-066 shows that an exact maximal-collar Schur complement can canonically strip the universal neck from full DtN data. PF-065 supplies the warning: spectral compression of that boundary operator to Steklov eigenvalues alone becomes universal and loses the interior exponentially.
+Consequently a residual eigenvalue
 
-## Boundary cases
+\[
+\lambda=s(1-s),\qquad 0<\lambda<1/4,
+\]
 
-This is not a complete characterization of the essential spectrum: PF-060 blocks direct use of standard bounded-geometry localization-at-infinity theorems. Nor does full generalized scattering reconstruction count as new inverse theory; PF-067 identifies strong prior art. Fixed-pattern signals also have zero area density (PF-068), so uniform thermodynamic averaging erases them.
+which is a genuine finite-rank resolvent/scattering pole on a finite tangent need not remain a discrete global resonance.  PF-092 makes the change of spectral category explicit: recurrent tangent values can be non-Fredholm points of the global `L^2` pencil.  Localization preserves the finite object; naive globalization changes what the singularity means.
+
+At the same time, even after localization one must not overcompress.  PF-049/PF-050/PF-052 show that endpoint spectral measures/Weyl data can recover an ordered weighted path; PF-051/PF-053/PF-078/PF-079 retain comparable information in marked scattering.  PF-065 and PF-089 show the opposite behavior: Steklov eigenvalues can become universal after collar isolation, and a scalar low-energy determinant cancels the multiscale `w_j^2/w_{j-1}` memory visible in individual modes.
+
+## Synthesis of evidence
+
+PF-034 supplies the pointed geometric isolation mechanism.  PF-050 and PF-064 demonstrate recovery of tangent information from localized observables of the global Laplacian.  PF-066 gives an exact collar Schur complement that removes universal neck response without destroying the core boundary operator.  PF-043/PF-054 then show that repeated local spectral fingerprints enter the essential spectrum, while PF-092 proves that the corresponding near-one parameters obstruct the ordinary global Fredholm-resonance picture.
+
+The synthesis is a local-to-global asymmetry:
+
+\[
+\text{finite tangent pole / marked response}
+\quad\xrightarrow{\text{repetition}}\quad
+\text{essential global spectral structure},
+\]
+
+not a countable union of ordinary global poles.
+
+## Boundary cases and failure modes
+
+This is not a complete localization-at-infinity theorem: PF-060 explains why bounded-geometry frameworks do not apply directly to the collapsing-neck tail.  Generalized finite-tangent inverse scattering is also not new inverse theory; PF-067 locates strong prior art.  Fixed patterns can be thermodynamically invisible because their area density is zero (PF-068).
+
+The principle also does not forbid every global object.  Relative resolvents, rigged/weighted spaces, spectral-shift objects, or operator-valued direct integrals may remain viable if they explicitly account for the essential background instead of pretending it is a discrete resonance set.
 
 ## Status / novelty
 
-The localization and inverse tools are classical; their exact fit to the prime-derived collar isolation is supported. A general two-scale essential-spectrum theorem for this collapsing flute remains open.
+The finite propagation, collar isolation, finite-tangent inverse theory, and Fredholm/essential-spectrum implications use classical machinery.  Their composition in this deterministic prime flute is supported by the established findings.  A complete two-scale operator theory for the infinite collapsing surface remains open.
 
 ## Falsification criterion
 
-Find a canonical normalized global trace/IDS that preserves a fixed tangent fingerprint with nonzero weight, or show that localized global resolvents fail to converge to the finite tangent despite diverging separating collars.
+Refute the principle by showing that a recurrent isolated tangent eigenvalue below `1/4` remains an isolated finite-multiplicity pole of the ordinary global `L^2` resolvent rather than entering essential spectrum, or by producing a scalar compression known to be non-injective on the tangent family that nevertheless canonically recovers the lost marked data without adding information.
 
 ## Most informative next move
 
-Develop a two-scale localization theorem separating noncollapsed finite tangents from universal collapsing-collar channels, rather than searching for another absolute trace.
+Build **relative or localized Weyl/scattering objects** around the isolated blocks and study how their residues or spectral measures sit inside the global essential spectrum.  Any subsequent determinant should be formed only after proving that the chosen compression preserves the multiscale data of interest.
 
 ## Lean-formalizable core
 
-- Collar width tends to infinity as separating length tends to zero.
-- Finite-propagation isolation lemma for compact supports behind a collar of width `W>T`.
-- Exact Schur-complement identity for collar DtN stripping.
+- Finite-propagation isolation behind a collar wider than the observation time.
+- Matrix/Jacobi endpoint spectral measure determines the finite weighted path.
+- Matrix-tree identity showing cancellation in the scalar pseudodeterminant.
+- Abstract lemma: a Weyl sequence built from pairwise escaping copies puts the tangent eigenvalue in essential spectrum.
