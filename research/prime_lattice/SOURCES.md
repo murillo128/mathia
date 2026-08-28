@@ -124,3 +124,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 31. **Dinakar Ramakrishnan, Robert J. Valenza**, *Fourier Analysis on Number Fields*, Graduate Texts in Mathematics **186**, Springer, New York, 1999. DOI: https://doi.org/10.1007/978-1-4757-3085-2.
     - Role: comprehensive modern treatment of adelic harmonic analysis and Tate’s thesis; novelty/prior-art anchor confirming that the self-dual Fourier–Mellin mechanism used in `PL-014` is classical rather than a new prime-lattice construction.
+
+## Beurling controls for exponent-lattice universality
+
+32. **Wen-Bin Zhang**, “Beurling primes with RH and Beurling primes with large oscillation,” *Mathematische Annalen* **337**(3) (2007), 671–704. DOI: https://doi.org/10.1007/s00208-006-0051-5.
+    - Role: main contrast source for `PL-015`. Constructs two Beurling systems with generalized-integer counting functions in the same square-root-scale error class; one satisfies the Beurling analogue of RH, while the other has infinitely many zeros on `sigma=1-1/log t` and none to the right.
+
+33. **Wen-Bin Zhang**, “Normalization of Beurling generalized primes with Riemann Hypothesis,” *Annales Universitatis Scientiarum Budapestinensis de Rolando Eötvös Nominatae, Sectio Computatorica* **39** (2013). DOI: https://doi.org/10.71352/ac.39.459.
+    - Role: strengthens `PL-015` by constructing, for any assigned large cutoff, contrasting Beurling systems whose generalized primes below the cutoff are exactly the ordinary rational primes and whose integer counts both satisfy `N(x)=x+x^(1/2)O(exp(c(log x)^(2/3)))`, while one realizes RH and the other the classical zero-free/de la Vallée Poussin behavior.
+
+34. **Frederik Broucke, Athanasios Kouroupis, Karl-Mikael Perfekt**, “A note on Bohr’s theorem for Beurling integer systems,” *Mathematische Annalen* **389** (2024), 4319–4333. DOI: https://doi.org/10.1007/s00208-023-02756-x.
+    - Role: modern structural anchor for `PL-015`. Formulates Beurling primes with rationally independent logarithms, unique finite-product generalized integers, generalized Dirichlet series, the Euler product for `zeta_q`, and Hardy/Bohr theory; confirms that Beurling systems are direct deformations of the same multiplicatively generated exponent-lattice/frequency setup rather than an unrelated analogy.
