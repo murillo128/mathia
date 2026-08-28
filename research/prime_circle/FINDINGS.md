@@ -274,3 +274,43 @@ and the infinite tail collapses to an ordinary arc of length \(2\pi/p_m\). All i
 Thus a canonical one-dimensional spectralization of the Euclidean circle makes the prime vertices mere subdivision points. Freezing the \(k=1\) coefficients and then adding a new linear spectral parameter would produce a gap-sensitive Jacobi operator, but that extra spectral dependence is no longer derived from the exact circle geometry.
 
 Full derivation: `findings/PC-014-euclidean-unit-circle-spectral-transfer-is-subdivision-invariant.md`.
+
+---
+
+## PC-015 — the full-field Dirichlet transform is Möbius inversion, not a new zeta mechanism
+
+**Status:** `DECISIVE-NEGATIVE` + `LITERATURE+DERIVED` + `EXACT-DERIVED`.
+
+For `|z|<1`, normalize `hat Phi_1(z)=1-z`, `hat Phi_n(z)=Phi_n(z)` for `n>=2`, and set `L_n(z)=Log hat Phi_n(z)`. The complete primitive-shell field has Fourier expansion
+
+\[
+L_n(z)=-\sum_{m\ge1}\frac{c_n(m)}m z^m.
+\]
+
+Its canonical Dirichlet scale transform satisfies, for `Re(s)>1`,
+
+\[
+\boxed{
+\sum_{n\ge1}\frac{L_n(z)}{n^s}
+=\frac1{\zeta(s)}\sum_{d\ge1}\frac{\Log(1-z^d)}{d^s}.
+}
+\]
+
+Thus retaining the full two-dimensional harmonic field before applying `n^{-s}` does not escape the classical reduction: the `1/zeta(s)` factor is exactly Möbius inversion between full root-of-unity layers and primitive/cyclotomic layers. Bal's corrected 2026 arXiv version of *Constancy of an Infinite Cyclotomic Product via Ramanujan Sums* proves the corresponding weighted infinite-product identity explicitly.
+
+The numerator is entire in `s` for fixed `|z|<1`; every zeta zero is therefore a genuine pole of this field transform for sufficiently small nonzero `z`, but this is inherited from the explicit reciprocal-zeta denominator and supplies no independent zero-location mechanism.
+
+Likewise the exact PC-003 inversion law gives, after scale transformation,
+
+\[
+\boxed{
+\mathcal U(s,z)-\mathcal U(s,1/\bar z)
+=\log|z|\frac{\zeta(s-1)}{\zeta(s)}
+}
+\]
+
+(initially for `Re(s)>2`). Spatial circle inversion leaves the same `s` on both sides; it does not produce `s -> 1-s` or the completed-zeta gamma factor. Hence the intrinsic inside/outside duality is **not** the zeta functional equation without an additional, independently derived operation on scale.
+
+This closes the natural branch `full harmonic field -> ordinary Dirichlet/Mellin scale transform -> new RH mechanism`, and rules out treating circle inversion itself as the functional-equation reflection. Nonlinear mode/shell couplings, boundary-limit phenomena, and genuinely two-dimensional operators not diagonalized by `n^{-s}` remain open.
+
+Full derivation and novelty audit: `findings/PC-015-full-field-dirichlet-transform-is-moebius-inversion.md`.
