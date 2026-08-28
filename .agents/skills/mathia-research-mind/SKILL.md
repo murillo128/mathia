@@ -25,10 +25,9 @@ At the start of every run, inspect the direct children of:
 research/
 ```
 
-A directory `research/<line>/` is a local research line for this skill when it contains durable research evidence, normally at least one of:
+A directory `research/<line>/` is a local research line for this skill when it contains canonical durable research evidence under:
 
 ```text
-research/<line>/FINDINGS.md
 research/<line>/findings/
 ```
 
@@ -52,12 +51,13 @@ For each discovered `research/<line>/`, read only the material needed for a cohe
 
 ```text
 research/<line>/README.md
-research/<line>/FINDINGS.md
 research/<line>/findings/**
 research/<line>/SOURCES.md
 research/<line>/LEAN_CANDIDATES.md
 research/<line>/mind/**            # current local synthesis to revise
 ```
+
+The individual files under `findings/**` are the canonical research evidence. Do not expect or reconstruct a separate hand-maintained finding ledger.
 
 Do **not** use the line's `graph/**` directory as mathematical evidence. Graph content is derived presentation state.
 
@@ -268,7 +268,6 @@ research/prior_art/**
 research/graph/**
 research/<line>/graph/**
 research/<line>/README.md
-research/<line>/FINDINGS.md
 research/<line>/SOURCES.md
 research/<line>/LEAN_CANDIDATES.md
 research/<line>/findings/**

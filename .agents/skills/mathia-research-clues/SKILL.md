@@ -158,7 +158,7 @@ For each clue actually triaged:
 
 Set `status: accepted` only when the direction survives enough initial checking to justify continued investigation. Add a concise `## Research disposition` explaining what precise unresolved question remains.
 
-Acceptance is not a substantive finding and must not create a `FINDINGS.md` entry by itself.
+Acceptance is not a substantive finding and must not create a canonical finding by itself.
 
 ### Rejecting a clue
 
