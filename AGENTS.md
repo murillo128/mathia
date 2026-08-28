@@ -252,6 +252,8 @@ Load repository skills lazily by role:
 - design authority: `.agents/skills/design-github-issue/SKILL.md`;
 - main executor: `.agents/skills/spec-driven-codex-loop/SKILL.md`;
 - recurring mathematical research watch: `.agents/skills/mathia-research-watch/SKILL.md`;
+- shared finding-review protocol for research owners and adversaries: `.agents/skills/mathia-research-review/SKILL.md`;
+- recurring adversarial research watch: `.agents/skills/mathia-research-adversarial/SKILL.md`;
 - recurring research graph curator watch: `.agents/skills/mathia-research-graph-curator/SKILL.md`;
 - Git/GitHub mutation and publication: `.agents/skills/codex-github-operations/SKILL.md`;
 - independent checkpoint/final review: `.agents/skills/codex-independent-review/SKILL.md`.
@@ -269,7 +271,7 @@ Never commit secrets, credentials, private data, or artifacts without redistribu
 ## Git behavior
 
 - Use feature branches for non-trivial work unless the user explicitly requests a direct default-branch change.
-- Scheduled mathematical research watches routed through `.agents/skills/mathia-research-watch/SKILL.md` and scheduled graph-curator watches routed through `.agents/skills/mathia-research-graph-curator/SKILL.md` are explicit exceptions: they may commit only changes inside their respective skill-owned paths directly to the default branch when all path and publication gates pass.
+- Scheduled mathematical research watches routed through `.agents/skills/mathia-research-watch/SKILL.md`, scheduled adversarial research watches routed through `.agents/skills/mathia-research-adversarial/SKILL.md`, and scheduled graph-curator watches routed through `.agents/skills/mathia-research-graph-curator/SKILL.md` are explicit exceptions: they may commit only changes inside their respective skill-owned paths directly to the default branch when all path and publication gates pass.
 - Avoid unrelated formatting or cleanup.
 - Commit messages should describe one intentional outcome.
 - Executor workflows end at a ready-for-review pull request and handoff.
