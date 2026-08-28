@@ -25,14 +25,30 @@ Exploratory documents such as `docs/CONCEPTUAL_MATH_DIRECTION.md` provide motiva
 
 Do not weaken the issue or choose between materially different implementations when the issue is silent. Return to design instead.
 
-## Entry gate
+Do not silently promote exploratory notes, hypotheses, brainstorming, or provisional chat conclusions into requirements. Use them only when the controlling issue or an authoritative repository source explicitly adopts them.
+
+On resume, verify branch, `HEAD`, worktree, the controlling issue's single authoritative state label, and new material issue or PR discussion since the last handoff. Reuse unchanged inspected context rather than replaying history.
+
+## Entry gate and workflow state
 
 Before editing, confirm:
 
+- exactly one state label exists;
+- it is `execution-ready` or `in-progress`;
 - branch/worktree are safe;
 - scope, invariants, failure semantics, acceptance, and required inputs are clear;
 - no competing branch or PR creates ambiguous ownership;
 - the task does not depend on a project-wide plan or phase structure that does not exist.
+
+Before the first implementation edit, use `codex-github-operations` to replace `execution-ready` with `in-progress`. Do not post a comment solely for this transition.
+
+Use label replacements for execution-time returns:
+
+- missing material design decision: `design-required`;
+- evidence needed before design: `investigation-required`;
+- genuinely unavailable external capability: `blocked`.
+
+`completed` is a post-merge state. The Codex executor must not set `completed` or close the controlling issue as part of implementation delivery. After an explicit user-facing review accepts and merges the ready PR, the merge workflow may set `completed` and close the issue after observing the merge.
 
 ## Execution loop
 
@@ -89,6 +105,10 @@ At a declared checkpoint:
 
 A final technical verdict never authorizes merge by itself.
 
+## Repeated-review circuit breaker
+
+After two consecutive failures in substantially the same validation, attestation, parser, documentation-sync, or bookkeeping mechanism, stop compensating patches and return to design authority before a third cycle unless the defect is materially different. This never waives a continuing technical defect.
+
 ## Pull request discipline
 
 Use one PR per controlling issue unless the issue explicitly decomposes delivery. Keep it draft while required implementation, validation, or independent technical review remains incomplete.
@@ -100,7 +120,8 @@ The executor must never:
 - merge the PR;
 - enable auto-merge;
 - interpret technical success as user merge authorization;
-- create unrelated roadmap/phases/epics/decision logs merely as workflow bookkeeping.
+- create unrelated roadmap/phases/epics/decision logs merely as workflow bookkeeping;
+- close the controlling issue or set it to `completed` before an explicit user-facing review accepts and merges the PR.
 
 ## Handoff
 
