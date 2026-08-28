@@ -20,6 +20,9 @@ This is a research ledger, not a theorem list. Each entry records what was found
 | PF-012 | NEGATIVE/OBSTRUCTION | global first-kind/parabolic invariants are too universal to retain fine prime-gap data | low |
 | PF-013 | CONJECTURAL | Poisson gap background gives logistic shears and a zero-free Gamma transform | low |
 | PF-014 | LITERATURE+DERIVED | short separating geodesics define a canonical low-energy graph coupling | medium |
+| PF-097 | DECISIVE-NEGATIVE | finite tangents are moduli-complete and primality-blind; PF-099 strengthens the surviving boundary | medium |
+| PF-098 | DECISIVE-NEGATIVE | recurrent tangent mismatch blocks even compact relative perturbations against featureless controls; PF-099 corrects its arithmetic interpretation | medium |
+| PF-099 | DECISIVE-NEGATIVE / EXACT-DERIVED | global integer dilation gives an all-composite clone of the entire projective flute and recurrent tangent hull; only nonprojective finite-scale data escape | medium |
 
 ---
 
@@ -257,7 +260,6 @@ The quantitative consequence suggested by the theorem is
 ```text
 L_n = o((log n)^(-1/1264)).
 ```
-
 If the corresponding curves are recorded as the expected simple primitive separating classes, this yields
 
 ```text

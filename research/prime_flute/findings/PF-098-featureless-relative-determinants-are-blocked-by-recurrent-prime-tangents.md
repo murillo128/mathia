@@ -2,6 +2,8 @@
 
 **Status:** `DECISIVE-NEGATIVE` for compact-, trace-class-, relative-zeta-, and standard relative-scattering comparisons with a smooth/density-matched control whose geometry at infinity omits a recurrent prime tangent; `EXACT-GEOMETRIC + OPERATOR-THEORETIC + LITERATURE-AUDITED`.
 
+> **Boundary correction (PF-099).** The noncompactness theorem below is unchanged. PF-099 corrects only the arithmetic interpretation of the recurrent tangent hull: an all-composite dilation clone `q_n=Kp_n` has the same projective recurrent tangent process. Thus recurrence is what makes the featureless-background defect noncompact, but recurrence of projective tangents is not itself a primality discriminator. Matching the tangent hull is necessary for the perturbative comparison discussed here, not sufficient for arithmetic specificity.
+
 ## Claim
 
 Let `X_prime` be the exact zero-twist hyperbolic prime-flute and let `X_0` be a marked featureless control flute, for example one obtained from a smooth prime-number-theorem sampling sequence
@@ -329,7 +331,7 @@ The contrast is therefore structural:
 \tag{13}
 \]
 
-PF-088 still warns that the `Re s=1/4` threshold of the direct-channel operator is universal one-dimensional propagation rather than prime arithmetic.
+PF-088 still warns that the `Re s=1/4` threshold of the direct-channel operator is universal one-dimensional propagation rather than prime arithmetic. PF-099 adds a separate boundary: **matching the projective tangent hull is not arithmetically discriminating**, because `Kp_n` matches it on all-composite labels.
 
 ## 7. Interior/exterior duality
 
@@ -374,4 +376,6 @@ PF-098 does not rule out every possible relative spectral object. It rules out t
 
 Nor does it say that an individual recurrent tangent is intrinsically prime-specific: PF-097 proves the opposite. What is prime-specific here is the **selection and infinite recurrence of that tangent inside the single prime-flute**.
 
-Any surviving global construction must therefore preserve substantially more of the asymptotic hull. In particular it cannot first erase the recurrent prime tangent geometry and then hope to recover it as a small perturbative correction.
+**PF-099 correction.** The preceding sentence overstates arithmetic specificity. Selection and recurrence inside `X_prime` are the mechanism producing the noncompact comparison with a featureless control, but the complete projective recurrence process itself has an all-composite dilation clone. PF-098 therefore distinguishes a recurrent tangent hull from a featureless hull; it does not distinguish prime labels from every nonprime sampling.
+
+Any surviving global construction must therefore preserve substantially more of the asymptotic hull. In particular it cannot first erase the recurrent prime tangent geometry and then hope to recover it as a small perturbative correction. PF-099 adds that merely preserving or reconstructing that projective hull still does not pass the primality-specificity gate; the nonprojective finite-scale exact-circle sector remains the natural surviving source of intrinsic distinction.

@@ -2,6 +2,8 @@
 
 **Status:** `DECISIVE-NEGATIVE` for any RH mechanism based only on the intrinsic spectral geometry of one fixed finite tangent.
 
+> **Correction / strengthening (PF-099).** The original boundary in Section 4 was too permissive in calling global tangent selection/recurrence potentially prime-specific. PF-099 gives an all-composite dilation clone `q_n=Kp_n` whose entire **projective recurrent tangent process** is identical to that of the primes. The finite-tangent no-go proved here is unchanged; what survives as potentially selector-specific is the nonprojective finite-scale exact-circle data (or other information not invariant under common integer dilation), not recurrence of projective tangents by itself.
+
 ## Claim
 
 Let
@@ -190,6 +192,8 @@ whereas possible prime-specific information must involve at least one of
 \text{absolute finite-scale exact-circle corrections}.
 }
 \]
+
+**PF-099 correction to this paragraph.** The first two items in the preceding box are not sufficient for primality specificity if they use only projective/scale-invariant tangent data: the global dilation `p_n -> Kp_n` reproduces the entire ordered recurrent tangent process on all-composite labels. They remain spectrally meaningful features of `X_prime`, but not intrinsic certificates of the arithmetic predicate. The exact finite-scale `V(p)` sector is the surviving branch identified by the present no-go.
 
 The ambient interior/exterior inversion does not evade the obstruction: the tangent data above are built from cross-ratios and therefore survive Möbius conjugation unchanged.
 

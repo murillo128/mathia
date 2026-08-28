@@ -43,14 +43,22 @@ For **Lean**, priority should go first to finite algebraic/hyperbolic identities
 
 ## Current high-level picture
 
-The exploration repeatedly separates two regimes:
+The exploration repeatedly separates three regimes:
 
 ```text
 one-dimensional / local reductions
     -> telescope, universalize, or recover a known prime Dirichlet series
 
-multi-gap Möbius invariants
-    -> retain genuinely relational prime information
+projective multi-gap / tangent data
+    -> retain genuinely relational gap information and can drive real spectral effects
+    -> but are invariant under global integer dilation p_n -> K p_n
+       and therefore have an all-composite clone (PF-099)
+
+exact finite-scale cotangent geometry
+    -> breaks that dilation gauge through the nonprojective endpoint defect
+    -> first four-point Möbius-invariant correction appears at order P^-4 (PF-082)
 ```
 
-The strongest intrinsic object found so far is the cross-ratio of four prime endpoints, because it gives an exact separating geodesic length and therefore a direct route from several prime gaps to hyperbolic geometry. The most important negative lesson is that ordinary Selberg/Ruelle, a uniformly expanding Bowen-Series operator, modular/Hecke inheritance, and the raw global Laplacian all encounter structural obstructions before they can plausibly encode the Riemann zeros.
+The exact cross-ratio of four endpoints remains the cleanest intrinsic bridge from several gaps to an actual separating geodesic. PF-099 sharpens its arithmetic interpretation: **the projective/tangent limit encodes gap shape, not primality specificity**. Any candidate that aims to add genuinely new arithmetic structure must therefore survive the global dilation-clone test and use information not erased by projectivization, most naturally the exact finite-scale `cot(pi/p)` defect.
+
+The major negative lessons remain that ordinary Selberg/Ruelle products, uniformly expanding Bowen--Series operators, modular/Hecke inheritance, raw global scalar Laplace data, and featureless relative backgrounds encounter structural obstructions before they can plausibly encode the Riemann zeros.
