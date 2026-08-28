@@ -28,7 +28,7 @@ Artin factorization organizes spectral data of finite covers; it does not imply 
 
 ## Related prior art
 
-- [[research/prior_art/incremental/PA-gamma2-thrice-punctured-sphere-scattering|Gamma(2) thrice-punctured-sphere scattering]].
+- [[research/prior_art/incremental/PA-gamma-2-thrice-punctured-sphere-scattering|Gamma(2) thrice-punctured-sphere scattering]].
 
 ## Evidence and provenance
 

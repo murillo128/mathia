@@ -1,5 +1,5 @@
 ---
-id: PA-gcd-sums-poisson-polydisc
+id: PA-gcd-sums-from-poisson-integrals-on-the-polydisc
 type: prior-art
 canonical_name: GCD sums from Poisson integrals on the polydisc
 aliases:

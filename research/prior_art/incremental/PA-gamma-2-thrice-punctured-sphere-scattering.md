@@ -1,5 +1,5 @@
 ---
-id: PA-gamma2-thrice-punctured-sphere-scattering
+id: PA-gamma-2-thrice-punctured-sphere-scattering
 type: prior-art
 canonical_name: Gamma(2) thrice-punctured-sphere scattering
 aliases:
