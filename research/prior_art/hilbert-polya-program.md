@@ -27,7 +27,7 @@ No operator, domain, boundary conditions, or exact spectral identification is su
 
 ## Related prior art
 
-- [Montgomery pair correlation](montgomery-pair-correlation.md) — `uses`
+- [Montgomery pair correlation](montgomery-pair-correlation.md) — `constrained_by`
 
 ## Evidence and provenance
 

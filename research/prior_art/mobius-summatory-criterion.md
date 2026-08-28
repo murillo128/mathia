@@ -4,6 +4,7 @@ type: prior-art
 canonical_name: "Mobius summatory criterion"
 aliases:
   - "Möbius cancellation criterion"
+  - "Mertens function criterion"
 kind: criterion
 topics:
   - riemann-hypothesis

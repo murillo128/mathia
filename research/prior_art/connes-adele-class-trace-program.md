@@ -29,7 +29,7 @@ The retained source explicitly leaves the decisive global trace formula open and
 ## Related prior art
 
 - [Riemann explicit formula](riemann-explicit-formula.md) — `uses`
-- [Hilbert-Polya program](hilbert-polya-program.md) — `refines`
+- [Hilbert-Polya program](hilbert-polya-program.md) — `alternative_to`
 
 ## Evidence and provenance
 

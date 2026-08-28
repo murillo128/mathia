@@ -15,7 +15,7 @@ topics:
 
 ## What it is
 
-A map factors through the quotient by its kernel, separating the information it forgets from the injective map that faithfully retains what remains.
+A group homomorphism factors through the quotient by its kernel, separating the information it forgets from the injective homomorphism that faithfully retains what remains.
 
 ## Relation to RH / Mathia research
 

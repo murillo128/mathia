@@ -15,7 +15,7 @@ topics:
 
 ## What it is
 
-A derivative-zero reformulation: RH is encoded by the absence of nonreal zeros of zeta's derivative to the left of the critical line. Retained Mathia analyses treat differentiation as a transfer from zero geometry to critical-point geometry and counting.
+A derivative-zero reformulation: the retained Mathia evidence encodes RH by the absence of nonreal zeros of zeta's derivative in the half-strip 0 < Re(s) < 1/2. Retained analyses treat differentiation as a transfer from zero geometry to critical-point geometry and counting.
 
 ## Relation to RH / Mathia research
 
@@ -23,7 +23,7 @@ The qwen atlas records the derivative-zero condition as bidirectionally equivale
 
 ## Known scope and limits
 
-Asymptotic comparisons between counts of zeros of zeta and zeta' do not automatically establish the zero-free condition for every derivative zero. Extensions to other zeta or L-function classes require their own hypotheses.
+The qwen entry phrases the condition more broadly as Re(s) < 1/2; this projection retains the explicitly audited Mathia half-strip boundary rather than resolving that wording difference silently. Asymptotic zero-count comparisons and extensions to other L-function classes require separate arguments.
 
 ## Related prior art
 

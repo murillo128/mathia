@@ -32,5 +32,6 @@ This is an equivalent criterion, not a proof of RH. Direct numerical checks can 
 ## Evidence and provenance
 
 - **Riemann–Mathia v2 accepted object:** `experiments/riemann_corpus/full_corpus_v2/objects.jsonl#mathia_interpretation_6585ece1c4e3c0f2efb5964b3b94f5c36bde24fa17a59263aca6befb55dd17a7`; source `openalex_w2105290574`; unit `full_openalex_w2105290574_u02`.
+- **Riemann–Mathia v2 accepted object:** `experiments/riemann_corpus/full_corpus_v2/objects.jsonl#mathia_interpretation_28b281fe39ff6d1b66f7a5d0c5a9ecd212def25bd3add59f982fc43b82bf449d`; source `openalex_w1977375336`; unit `full_openalex_w1977375336_u03`.
 - **qwen-lean Riemann atlas:** `murillo128/qwen-lean@3364b508595a71b34a2efcf964ba1200f153ad84:data/riemann/atlas/entries.jsonl#baez-duarte-criterion`; entry; source `baez-duarte-2003`.
 - **Projection decision:** `research/prior_art/catalog.json#PA-baez-duarte-criterion`.

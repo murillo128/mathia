@@ -6,7 +6,7 @@ This ledger records what issue #63 inspected, selected, merged, and left out. It
 
 | Family | Frozen binding | Records inspected | Projection disposition |
 | --- | --- | ---: | --- |
-| Riemann–Mathia v2 accepted object | `riemann_mathia_v2_cd92907b9bc4565cffc138110faceb21c77d4bf71388d75536a8e640af3ba5f0` | 8,264 objects; 8,003 accepted | 31 accepted semantic objects bind emitted notes |
+| Riemann–Mathia v2 accepted object | `riemann_mathia_v2_cd92907b9bc4565cffc138110faceb21c77d4bf71388d75536a8e640af3ba5f0` | 8,264 objects; 8,003 accepted | 34 accepted semantic objects bind emitted notes |
 | Agnostic Mathia v1 accepted object | `freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f` | 222 objects; 214 accepted | 4 accepted semantic objects bind emitted notes |
 | Agnostic Mathia OpenAlex supplement accepted object | `agnostic_openalex_supplement_a1aa591df034db64d5ce0271df0da570e3aaf470ac49e5cc4014b66181bf0e33` | 600 objects; 595 accepted | 2 accepted semantic objects bind emitted notes |
 | qwen-lean Riemann atlas | `murillo128/qwen-lean@3364b508595a71b34a2efcf964ba1200f153ad84` | 234 entries; 226 relations; 18 sources | 24 entries and 1 source record bind emitted notes |
@@ -20,11 +20,11 @@ The qwen paths are additionally pinned by Git blobs: entries `3c02d9d01ee667f613
 
 | Mathia family | Accepted source objects retained as provenance, not standalone notes | Accepted derived objects selected | Accepted derived objects not selected as standalone notes |
 | --- | ---: | ---: | ---: |
-| Riemann–Mathia v2 accepted object | 3,694 | 31 | 4,278 |
+| Riemann–Mathia v2 accepted object | 3,694 | 34 | 4,275 |
 | Agnostic Mathia v1 accepted object | 98 | 4 | 112 |
 | Agnostic Mathia OpenAlex supplement accepted object | 300 | 2 | 293 |
 
-The projection emits **45 canonical notes** from **65 evidence bindings** referring to **62 unique retained records**. The decision catalog marks **21 manual identity merges** and **19 Mathia/qwen cross-status merges** for exhaustive review.
+The projection emits **45 canonical notes** from **68 evidence bindings** referring to **65 unique retained records**. The decision catalog marks **21 manual identity merges** and **19 Mathia/qwen cross-status merges** for exhaustive review.
 
 Of the 234 qwen atlas entries, 24 are direct positive evidence and 210 are not emitted as standalone nodes. The latter are predominantly formalization prerequisites/components or records already represented at a coarser canonical granularity. All 11 entries classified `equivalent-to-RH` in the pinned atlas are represented. One qwen source record is used directly to bind a preprint/publication identity.
 

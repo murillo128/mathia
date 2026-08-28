@@ -122,6 +122,12 @@
           "source_unit_ids": ["full_openalex_w2105290574_u02"]
         },
         {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_28b281fe39ff6d1b66f7a5d0c5a9ecd212def25bd3add59f982fc43b82bf449d",
+          "source_ids": ["openalex_w1977375336"],
+          "source_unit_ids": ["full_openalex_w1977375336_u03"]
+        },
+        {
           "family": "qwen-riemann-atlas",
           "entry_id": "baez-duarte-criterion",
           "source_ids": ["baez-duarte-2003"]
@@ -302,7 +308,7 @@
         "relation_to_research": "An exact self-adjoint realization with the required spectral identification would force the corresponding zeros onto the critical line. Mathia uses the program as a model of a potentially fertile representation whose proof value depends on the representation enforcing reality.",
         "scope_and_limits": "No operator, domain, boundary conditions, or exact spectral identification is supplied by the retained evidence. Random-matrix statistics and prime/orbit analogies do not themselves prove RH."
       },
-      "related": [{"id": "PA-montgomery-pair-correlation", "relation": "uses"}],
+      "related": [{"id": "PA-montgomery-pair-correlation", "relation": "constrained_by"}],
       "evidence": [
         {
           "family": "mathia-riemann-v2",
@@ -411,7 +417,7 @@
       "topics": ["riemann-hypothesis", "finite-fields", "cohomology"],
       "canonical_identity": ["mathia-mechanism:finite-field-frobenius-cohomology"],
       "sections": {
-        "what_it_is": "In the zeta theory of varieties over finite fields, reciprocal zeros and poles are interpreted as Frobenius eigenvalues on étale cohomology, and geometric positivity constrains their magnitudes. The retained curve-level discussion presents Euler product, functional equation, and the finite-field RH as a proved structural package.",
+        "what_it_is": "In the zeta theory of varieties over finite fields, reciprocal zeros and poles are interpreted as Frobenius eigenvalues on étale cohomology. For curves, the retained mechanism uses geometric positivity to constrain their magnitudes, while the retained overview presents Euler product, functional equation, and finite-field RH as a proved structural package.",
         "relation_to_research": "This is a proved analogue and a source of exact roles—Frobenius, cohomology, duality, and positivity—that a classical geometric proposal may try to reproduce. It is one of the strongest retained structural analogies for RH.",
         "scope_and_limits": "The function-field theorem does not transfer a proof to the classical Riemann zeta function. The note does not infer that an analogous classical geometric object exists, and it preserves the distinction between zeros themselves and the reciprocal characteristic roots interpreted as eigenvalues."
       },
@@ -422,9 +428,15 @@
           "object_id": "mathia_interpretation_3ab29ed75d4706358a9c1f3082fe6e867e9df25e7c937b252f5923ff6915a348",
           "source_ids": ["bombieri2000_clay"],
           "source_unit_ids": ["bombieri2000_u01_finite_field_analogy"]
+        },
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_12ffee6ead8b106a7ea2c3dbcfcd5c9ec86f206a17949db57bde15d44e675168",
+          "source_ids": ["milne2015_rh_finite_fields"],
+          "source_unit_ids": ["milne2015_depth_u018"]
         }
       ],
-      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": false, "cross_repository_status_merge": false, "proof_status_statement": true}
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": true, "cross_repository_status_merge": false, "proof_status_statement": true}
     },
     {
       "id": "PA-connes-adele-class-trace-program",
@@ -440,7 +452,7 @@
       },
       "related": [
         {"id": "PA-riemann-explicit-formula", "relation": "uses"},
-        {"id": "PA-hilbert-polya-program", "relation": "refines"}
+        {"id": "PA-hilbert-polya-program", "relation": "alternative_to"}
       ],
       "evidence": [
         {
@@ -550,7 +562,7 @@
           "source_unit_ids": ["montgomery1973_u02_unitary_analogy"]
         }
       ],
-      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": true, "cross_repository_status_merge": false, "proof_status_statement": true}
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": false, "cross_repository_status_merge": false, "proof_status_statement": true}
     },
     {
       "id": "PA-lagarias-criterion",
@@ -574,7 +586,7 @@
     {
       "id": "PA-mobius-summatory-criterion",
       "canonical_name": "Mobius summatory criterion",
-      "aliases": ["Möbius cancellation criterion"],
+      "aliases": ["Möbius cancellation criterion", "Mertens function criterion"],
       "kind": "criterion",
       "topics": ["riemann-hypothesis", "mobius", "cancellation"],
       "canonical_identity": ["qwen-entry:mobius-summatory-criterion"],
@@ -627,6 +639,7 @@
       "related": [{"id": "PA-baez-duarte-criterion", "relation": "related_by-growth-decay-transform"}],
       "evidence": [
         {"family": "mathia-riemann-v2", "object_id": "mathia_interpretation_3d33939b8a2befd7addd01bc7f1845e6e0ceb1d21aa34cea046e8c94eca602af", "source_ids": ["openalex_w1569098431"], "source_unit_ids": ["full_openalex_w1569098431_u02"]},
+        {"family": "mathia-riemann-v2", "object_id": "mathia_interpretation_59fc2cdd4713d1c09a513130e7e47177ccb1d5a016703354c3fd0a1e4959c268", "source_ids": ["openalex_w1569098431"], "source_unit_ids": ["full_openalex_w1569098431_u03"]},
         {"family": "qwen-riemann-atlas", "entry_id": "riesz-criterion", "source_ids": ["baez-duarte-2003"]}
       ],
       "review": {"calibration": false, "strong_rh_relation": true, "manual_merge": true, "cross_repository_status_merge": true, "proof_status_statement": true}
@@ -658,9 +671,9 @@
       "topics": ["riemann-hypothesis", "derivative-zeros", "critical-points"],
       "canonical_identity": ["qwen-entry:speiser-criterion"],
       "sections": {
-        "what_it_is": "A derivative-zero reformulation: RH is encoded by the absence of nonreal zeros of zeta's derivative to the left of the critical line. Retained Mathia analyses treat differentiation as a transfer from zero geometry to critical-point geometry and counting.",
+        "what_it_is": "A derivative-zero reformulation: the retained Mathia evidence encodes RH by the absence of nonreal zeros of zeta's derivative in the half-strip 0 < Re(s) < 1/2. Retained analyses treat differentiation as a transfer from zero geometry to critical-point geometry and counting.",
         "relation_to_research": "The qwen atlas records the derivative-zero condition as bidirectionally equivalent to RH. It is a canonical diagnostic for proposals based on the analytic landscape of zeta.",
-        "scope_and_limits": "Asymptotic comparisons between counts of zeros of zeta and zeta' do not automatically establish the zero-free condition for every derivative zero. Extensions to other zeta or L-function classes require their own hypotheses."
+        "scope_and_limits": "The qwen entry phrases the condition more broadly as Re(s) < 1/2; this projection retains the explicitly audited Mathia half-strip boundary rather than resolving that wording difference silently. Asymptotic zero-count comparisons and extensions to other L-function classes require separate arguments."
       },
       "related": [],
       "evidence": [
@@ -812,7 +825,7 @@
     {
       "id": "PA-generalized-riemann-hypothesis-for-dirichlet-l-functions",
       "canonical_name": "Generalized Riemann hypothesis for Dirichlet L-functions",
-      "aliases": ["Dirichlet GRH"],
+      "aliases": ["Dirichlet GRH", "GRH"],
       "kind": "conjecture",
       "topics": ["generalized-riemann-hypothesis", "dirichlet-l-functions", "critical-line"],
       "canonical_identity": ["qwen-entry:generalized-riemann-hypothesis"],
@@ -992,7 +1005,7 @@
       "topics": ["quotienting", "factorization", "invariance"],
       "canonical_identity": ["mathia-source-unit:qf_kernel_factor"],
       "sections": {
-        "what_it_is": "A map factors through the quotient by its kernel, separating the information it forgets from the injective map that faithfully retains what remains.",
+        "what_it_is": "A group homomorphism factors through the quotient by its kernel, separating the information it forgets from the injective homomorphism that faithfully retains what remains.",
         "relation_to_research": "It provides both a reusable compression move and a falsification test: a proposed equivalence is too coarse if it merges different images and unnecessarily fine if it preserves distinctions already killed by the map.",
         "scope_and_limits": "The quotient is canonical relative to the chosen map, not an absolute simplification of the domain. This cross-domain note does not assert a new RH implication."
       },

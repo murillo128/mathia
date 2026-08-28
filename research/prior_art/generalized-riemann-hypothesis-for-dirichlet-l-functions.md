@@ -4,6 +4,7 @@ type: prior-art
 canonical_name: "Generalized Riemann hypothesis for Dirichlet L-functions"
 aliases:
   - "Dirichlet GRH"
+  - "GRH"
 kind: conjecture
 topics:
   - generalized-riemann-hypothesis
