@@ -48,10 +48,6 @@ The finite propagation, collar isolation, finite-tangent inverse theory, and Fre
 
 Refute the principle by showing that a recurrent isolated tangent eigenvalue below `1/4` remains an isolated finite-multiplicity pole of the ordinary global `L^2` resolvent rather than entering essential spectrum, or by producing a scalar compression known to be non-injective on the tangent family that nevertheless canonically recovers the lost marked data without adding information.
 
-## Most informative next move
-
-Build **relative or localized Weyl/scattering objects** around the isolated blocks and study how their residues or spectral measures sit inside the global essential spectrum.  Any subsequent determinant should be formed only after proving that the chosen compression preserves the multiscale data of interest.
-
 ## Lean-formalizable core
 
 - Finite-propagation isolation behind a collar wider than the observation time.

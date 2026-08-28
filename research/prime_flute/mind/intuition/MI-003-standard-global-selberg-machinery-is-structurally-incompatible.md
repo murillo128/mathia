@@ -60,10 +60,6 @@ The operator-theoretic implications of essential spectrum and the classical geom
 
 The absolute statement would be falsified by a standard ordinary-`L^2` analytic Fredholm family for `Delta-s(1-s)` on a full neighborhood of `s=1` despite the established sequence of essential spectral values there.  The arithmetic interpretation of a relative threshold is falsified whenever the same threshold survives a featureless regularly spaced control, as `1/4` does.
 
-## Most informative next move
-
-Stop searching for absolute Selberg/scattering determinants near `s=1`.  For any relative candidate, first subtract a canonical regular reference and test the same construction on integers or another smooth control.  Pursue only residual operator-valued or marked effects that depend on ordered prime-gap fluctuations after that subtraction.
-
 ## Lean-formalizable core
 
 - Infinite-product obstruction when infinitely many factors fail to tend to one.

@@ -24,10 +24,6 @@ The component identities are classical or exact-derived. The synthesis is a desi
 
 Refute this intuition by exhibiting either (i) an unmarked single-shell invariant that distinguishes an odd prime `p` from `2p`, or (ii) a finite anchored single-shell jet invariant not determined by the classical cyclotomic derivative/Jordan-totient data.
 
-## Most informative next move
-
-Study global anchored functionals of `U_n` or of the cyclotomic uniformized surface that couple separated regions or multiple labeled shells while respecting inversion.
-
 ## Lean-formalizable core
 
 - `Phi_(2*n)(z)=Phi_n(-z)` for odd `n` and the induced shell isometry.

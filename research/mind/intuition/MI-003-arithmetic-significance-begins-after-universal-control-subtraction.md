@@ -64,10 +64,6 @@ The integer-control calculation of PF-088 is proved.  The broader hierarchy of m
 
 The narrow principle is falsified only if a feature mathematically identical under the prime and control constructions can nevertheless be shown to encode a prime-specific distinction **without any additional residual data**.  For a concrete candidate, the decisive test is to compute the same invariant on progressively matched controls and identify the first level at which it changes.
 
-## Most informative next move
-
-Attach a control family to every new spectral candidate from the start.  In particular, for the surviving multiscale flute observables compare the ordered upstream-memory coefficients not only with integers but with density-matched and gap-permuted sequences.  This can distinguish dependence on mean density, one-gap statistics, and genuinely ordered multi-gap correlations before any RH interpretation is attempted.
-
 ## Lean-formalizable core
 
 - Integer-control `p`-series criterion giving the `1/4` threshold.

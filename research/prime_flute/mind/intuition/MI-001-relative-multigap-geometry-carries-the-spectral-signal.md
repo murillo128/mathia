@@ -84,10 +84,6 @@ The exact cross-ratio/cuff formulas and the finite-tangent spectral expansions u
 
 The precise surface intuition fails if the displayed `w_j^2/w_{j-1}` coefficient is not present in a chain satisfying the graded Burger window.  The arithmetic extension fails if prime isolation can never realize such a window and no sharper surface estimate reaches the stronger hierarchies that are known to recur.
 
-## Most informative next move
-
-Do not compress the low spectrum to a determinant.  Either prove recurrent isolated prime blocks with controlled moderate hierarchy, or sharpen the multi-collar surface error below Burger's `sqrt(w_1)` scale so that the already-available super-hierarchical prime patterns become resolvable.  In both cases track individual eigenvalues, resolvent poles, or marked residues.
-
 ## Lean-formalizable core
 
 - Exact weighted-path eigenvalues for the two-neck case and `mu_+mu_-=3ab`.

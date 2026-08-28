@@ -24,10 +24,6 @@ Exact as an impossibility principle for the three audited constructions. The bro
 
 Find a canonical first-order single-path transport derived solely from the prime-circle geometry whose monodromy depends on an interior refinement after endpoints are fixed, without adding an external gauge or branching choice.
 
-## Most informative next move
-
-When proposing a new operator, test subdivision invariance/cocycle exactness before spectral analysis. Prefer observables whose natural composition is not one-dimensional concatenation: global uniformization Hessians, multi-shell interactions, or spatially separated boundary response.
-
 ## Lean-formalizable core
 
 - Telescoping identity for `rho_{n+1} rho_n^{-1}` products.

@@ -68,10 +68,6 @@ The identities and summability statements are exact.  Grunsky--Schiffer theory a
 
 Refute the precise principle by finding a canonical operator built only from the exact endpoint deformation `V` and its interior/exterior conformal coupling, with no added propagation/branching structure, whose prime-cell kernel fails the proved trace-class decay or whose finite-block observable contradicts the rectangle identity.
 
-## Most informative next move
-
-Treat `K_V` as the canonical conformal background to be **factored out**, not as the desired spectral generator.  Test whether composing it with geometrically forced long-block propagation leaves a residual that depends on ordered prime-gap fluctuations and disappears under regular-sequence controls.
-
 ## Lean-formalizable core
 
 - Cotangent divided-difference factorization above.

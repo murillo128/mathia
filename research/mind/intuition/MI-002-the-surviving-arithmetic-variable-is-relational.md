@@ -48,10 +48,6 @@ Exact/asymptotic for the displayed circle and flute conversions; supported as a 
 
 Find a robust prime-specific spectral mechanism in this program whose decisive information is an absolute local scale that cannot be rewritten after natural symmetry reduction as a relational invariant, or prove that the apparent upstream correction is removable by a canonical coordinate change and contains no information beyond the current ratio.
 
-## Most informative next move
-
-Search for observables that retain **ordered relational depth**: not only `d_j/d_{j+1}`, but how successive ratios interact under a canonical operator.  Test whether higher Feshbach coefficients, marked residues or Weyl functions retain longer-range combinations that do not telescope and are not reproduced by regular controls.
-
 ## Lean-formalizable core
 
 - Conversion from cuff differences to gap ratios.

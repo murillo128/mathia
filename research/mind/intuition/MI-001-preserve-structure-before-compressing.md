@@ -35,16 +35,6 @@ This is a program-level synthesis, not a standalone theorem.  Each listed loss m
 
 Find a canonical construction in which an early map is provably non-injective on the relevant prime-derived configurations, yet a later observable recovers the discarded distinction without receiving any additional mark, label, reference, or external arithmetic input.
 
-## Most informative next move
-
-For each candidate chain
-
-\[
-\text{arithmetic data}\to\text{geometry}\to\text{operator}\to\text{spectrum/zeta},
-\]
-
-explicitly test injectivity at every arrow.  Where full injectivity is unnecessary, identify exactly which equivalence class is preserved and prove that the desired arithmetic variable factors through that class before doing spectral analysis.
-
 ## Lean-formalizable core
 
 - Representative non-injectivity identities such as `Phi_(2n)(z)=Phi_n(-z)` for odd `n`.
