@@ -37,6 +37,7 @@ This is a derived Obsidian view. Findings and `mind/` remain authoritative.
 - [[research/prime_circle/findings/PC-020-anchored-local-jet-is-jordan-totient-data|PC-020]]
 - [[research/prime_circle/findings/PC-021-regular-linear-probes-are-moebius-tautological|PC-021]]
 - [[research/prime_circle/findings/PC-022-cyclic-cover-spectrum-has-exact-order-birth-layers|PC-022]]
+- [[research/prime_circle/findings/PC-023-exact-order-selberg-birth-factors-are-cyclotomic-filters|PC-023]]
 
 ## Durable intuitions
 

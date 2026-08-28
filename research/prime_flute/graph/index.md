@@ -9,12 +9,11 @@ derived: true
 
 # Prime Flute research graph
 
-This is a derived Obsidian view. Findings and `mind/` remain authoritative.
+This is a derived Obsidian view. Canonical findings and `mind/` remain authoritative.
 
 <!-- graph:start -->
 ## Findings
 
-### Legacy ledger findings now path-addressable
 - [[research/prime_flute/findings/PF-001-exact-cuff-coordinate|PF-001]]
 - [[research/prime_flute/findings/PF-002-local-scalar-cuff-observables-telescope|PF-002]]
 - [[research/prime_flute/findings/PF-003-canonical-shears-retain-consecutive-gap-irregularity|PF-003]]
@@ -29,8 +28,6 @@ This is a derived Obsidian view. Findings and `mind/` remain authoritative.
 - [[research/prime_flute/findings/PF-012-global-parabolic-data-are-universal|PF-012]]
 - [[research/prime_flute/findings/PF-013-poisson-logistic-shear-background-is-zero-free|PF-013]]
 - [[research/prime_flute/findings/PF-014-cross-ratio-necks-low-energy-graph-couplings|PF-014]]
-
-### Research-watch detailed findings
 - [[research/prime_flute/findings/PF-015-many-cusp-small-spectrum-is-topological|PF-015 / many-cusp topology]]
 - [[research/prime_flute/findings/PF-015-parabolic-transfer-half-threshold|PF-015 / parabolic half-threshold]]
 - [[research/prime_flute/findings/PF-016-scattering-reflection-is-universal|PF-016]]
@@ -117,6 +114,7 @@ This is a derived Obsidian view. Findings and `mind/` remain authoritative.
 - [[research/prime_flute/findings/PF-097-finite-prime-tangents-are-moduli-complete-and-primality-blind|PF-097]]
 - [[research/prime_flute/findings/PF-098-featureless-relative-determinants-are-blocked-by-recurrent-prime-tangents|PF-098]]
 - [[research/prime_flute/findings/PF-099-global-dilation-gauge-makes-projective-tangent-hull-primality-blind|PF-099]]
+- [[research/prime_flute/findings/PF-100-width-normalization-pushes-local-direct-scattering-gap-signal-to-quartic-scale|PF-100]]
 
 Legacy duplicate exposition: [[research/prime_flute/PF-015_SMALL_SPECTRUM_UNIVERSALITY]].
 
@@ -138,5 +136,5 @@ Legacy duplicate exposition: [[research/prime_flute/PF-015_SMALL_SPECTRUM_UNIVER
 
 ## Curation boundary
 
-All detailed finding files are exposed as graph nodes. Semantic edges below are only materialized where the current `mind/`, ledger, or a finding explicitly states the dependency/negative/refinement. No relation is inferred merely from neighboring numbering.
+All canonical finding files are exposed as graph nodes. Semantic edges are materialized only where the current `mind/` or a canonical finding explicitly states the dependency, obstruction, refinement, or bridge. No relation is inferred merely from neighboring numbering.
 <!-- graph:end -->

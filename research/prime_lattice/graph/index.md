@@ -9,7 +9,7 @@ derived: true
 
 # Prime Lattice research graph
 
-This is a derived Obsidian view. `FINDINGS.md` and detailed findings remain authoritative.
+This is a derived Obsidian view. Canonical finding files under `findings/` remain authoritative.
 
 <!-- graph:start -->
 ## Findings
@@ -20,6 +20,8 @@ This is a derived Obsidian view. `FINDINGS.md` and detailed findings remain auth
 - [[research/prime_lattice/findings/PL-004-prime-exponent-gas-prior-art|PL-004]]
 - [[research/prime_lattice/findings/PL-005-bagchi-prime-flow-recurrence-rh|PL-005]]
 - [[research/prime_lattice/findings/PL-006-random-bohr-boundary-gmc|PL-006]]
+- [[research/prime_lattice/findings/PL-007-canonical-prime-flow-schatten-ladder|PL-007]]
+- [[research/prime_lattice/findings/PL-008-mobius-hardy-zero-free-bridge|PL-008]]
 
 ## Derived relation nodes
 
@@ -30,5 +32,5 @@ This is a derived Obsidian view. `FINDINGS.md` and detailed findings remain auth
 
 ## Curation boundary
 
-Prime Lattice currently has no persisted `mind/` synthesis. None is invented here; the relation nodes are direct syntheses of statements already made by `PL-001..006`.
+Prime Lattice currently has no persisted `mind/` synthesis. None is invented here; the relation nodes are direct syntheses of statements already made by the canonical `PL-*` findings.
 <!-- graph:end -->
