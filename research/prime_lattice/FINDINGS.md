@@ -33,3 +33,19 @@ Detailed note: [`PL-003-ambient-prime-torus-zero-flexibility.md`](findings/PL-00
 The occupation-number interpretation `v_p(n)` with one-particle energies `log p`, total energy `log n`, and partition function `zeta(beta)` is the classical free Riemann/primon gas of Julia. Bost–Connes subsequently built a richer `C*`-dynamical system with partition function zeta, and Connes developed a noncommutative adelic trace-formula interpretation of zeta zeros. The bare exponent-lattice statistical-mechanics interpretation is therefore not novel; prior art redirects attention toward what extra arithmetic/dynamical structure is added beyond the free lattice gas.
 
 Detailed note: [`PL-004-prime-exponent-gas-prior-art.md`](findings/PL-004-prime-exponent-gas-prior-art.md)
+
+## PL-005 — Bagchi strong recurrence gives an exact RH equivalence for the prime-frequency flow
+
+**Evidence:** `LITERATURE+DERIVED` — prior-art redirect
+
+Bagchi's theorem gives an exact dynamical equivalence: RH holds if and only if the Riemann zeta function is strongly recurrent under vertical translation throughout `1/2 < Re(s) < 1`. In Bohr prime coordinates, vertical translation is the `log p` phase flow `p^{-s} -> p^{-s}e^{-i tau log p}`. The nontrivial critical-strip bridge is function-space universality/weak convergence, not a pointwise Euler product. Thus the sought prime-frequency dynamical interpretation already exists classically; new work must add structure that makes strong recurrence tractable rather than merely rewriting it in torus coordinates.
+
+Detailed note: [`PL-005-bagchi-prime-flow-recurrence-rh.md`](findings/PL-005-bagchi-prime-flow-recurrence-rh.md)
+
+## PL-006 — The critical Bohr boundary already exists as a randomized GMC distribution
+
+**Evidence:** `LITERATURE+DERIVED + NEGATIVE/OBSTRUCTION` — prior-art redirect
+
+Saksman–Webb construct the `Re(s)=1/2` boundary of the Haar-random prime Euler product as a generalized function and show that random vertical shifts of the actual zeta function converge in law to it in negative Sobolev topology. The boundary factors through complex Gaussian multiplicative chaos, while normalized modulus powers have a critical GMC measure at exponent `beta_c=2`. However, the limiting complex boundary is almost surely not even a Borel measure on any open interval, so it has no ordinary pointwise zero set. A direct route from the standard randomized Bohr boundary to individual Riemann zeros is therefore ill-defined.
+
+Detailed note: [`PL-006-random-bohr-boundary-gmc.md`](findings/PL-006-random-bohr-boundary-gmc.md)

@@ -62,6 +62,13 @@ standard H^2 reproducing kernel
 
 ambient prime torus + log-prime frequencies alone
     -> too flexible: Helson twists can have radically different zero/pole behavior
+
+Bagchi function-space dynamics
+    -> RH is exactly equivalent to strong recurrence of the distinguished zeta function under vertical translation
+
+randomized critical Bohr boundary
+    -> exists rigorously as a generalized-function / Gaussian-multiplicative-chaos limit,
+       but is not an ordinary function or even a local Borel measure from which pointwise zeros can be read
 ```
 
-Thus the bare prime-exponent lattice and infinite torus are not, by themselves, a zero mechanism for the Riemann zeta function. Any viable continuation of this viewpoint must use additional structure that distinguishes the Riemann zeta function from generic multiplicative twists and genuinely survives passage to the critical strip.
+Thus the bare prime-exponent lattice and infinite torus are not, by themselves, a zero mechanism for the Riemann zeta function. The literature already supplies two more refined continuations: Bagchi recurrence gives an exact RH-level dynamical target in function space, and Saksman–Webb give a rigorous stochastic boundary theory at `Re(s)=1/2`. Any viable new contribution must therefore add structure beyond torus density, classical universality, or coarse boundary statistics—enough to distinguish the Riemann zeta function and recover deterministic/microscopic information about its zeros.
