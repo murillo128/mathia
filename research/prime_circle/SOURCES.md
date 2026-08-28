@@ -33,6 +33,11 @@ This file records durable literature dependencies used to support or falsify fin
 - H. L. Montgomery and R. C. Vaughan, **The Bateman–Chowla functions**, *The Ramanujan Journal* 70, article 33 (2026). DOI: 10.1007/s11139-026-01410-9. Role: explicit modern statement of the classical primitive-character formulas expressing `L(1,chi)` through Gauss sums and log-sine/weighted residue sums; prior-art anchor for the multiplicative anchored-chord spectrum in PC-025.
 - Q. Yang, N. Wang and S. Kanemitsu, **Determinant expression for the class number of an abelian number field**, *Kyushu Journal of Mathematics* 77 (2023), 237–254. DOI: 10.2206/kyushujm.77.237. Role: finite-abelian-group characters and convolution maps as the basis of discrete Fourier/Dedekind determinant formulas, including the log-sine even part and cyclotomic class-number setting; prior-art anchor showing the determinant version of PC-025 is classical.
 
+## Cyclotomic units and projective cross-ratios
+
+- Lawrence C. Washington, **Introduction to Cyclotomic Fields**, 2nd ed., Graduate Texts in Mathematics 83, Springer (1997). DOI: 10.1007/978-1-4612-1934-7. Role: standard reference for cyclotomic/circular units, including generators built from ratios `(1-zeta^a)/(1-zeta)` and their regulator/class-number context; prior-art anchor for PC-026.
+- Warren Sinnott, **On the Stickelberger ideal and the circular units of a cyclotomic field**, *Annals of Mathematics* 108 (1978), 107–134. DOI: 10.2307/1970932. Role: classical circular-unit framework and finite-index/class-number structure; supports the classification in PC-026 that prime-level cross-ratios remain inside the classical cyclotomic-unit package.
+
 ## Fuchsian covers, Selberg factorization, and modular scattering
 
 - A. B. Venkov and P. G. Zograf, **On analogues of the Artin factorization formulas in the spectral theory of automorphic functions connected with induced representations of Fuchsian groups**, *Mathematics of the USSR-Izvestiya* 21:3 (1983), 435–443. DOI: 10.1070/IM1983v021n03ABEH001800. Role: Artin factorization of Selberg zeta functions and automorphic scattering determinants for finite-index Fuchsian subgroups; literature anchor for PC-016/PC-022/PC-023.
