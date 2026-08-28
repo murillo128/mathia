@@ -17,6 +17,25 @@ Prefer local `git` for worktree/branch/commit operations and the connected GitHu
 
 A failure of one replaceable transport is not a technical blocker when another route or a precise handoff can complete the operation.
 
+## Workflow state
+
+The controlling issue's current workflow state is authoritative only through exactly one state label:
+
+- `execution-ready`
+- `in-progress`
+- `design-required`
+- `investigation-required`
+- `blocked`
+- `completed`
+
+Every non-trivial controlling issue must carry exactly one of those labels. Preserve unrelated labels, but replace the previous state label instead of adding another.
+
+Use state-only label mutations without comments. Add comments only when material technical information must be preserved, such as a contract amendment, exact checkpoint target or verdict, blocker cause, failed evidence, or final handoff.
+
+Before relying on issue state, verify that exactly one state label is present. Repair an unambiguous inconsistency; stop for clarification if the intended state is ambiguous.
+
+During a Codex implementation workflow, `completed` is not an executor-controlled transition. Keep the issue `in-progress` through the ready-for-review handoff. Set `completed` and close the issue only after a later explicit user-facing merge decision has been executed and the merge is observed.
+
 ## Publish a branch
 
 Before publication:
@@ -54,6 +73,14 @@ CI success, issue acceptance criteria, or independent-review `PASS` / `PASS_WITH
 An independent review request must identify an exact published target. Preserve that target unchanged during review. A later technical change creates a new target and invalidates the prior final technical verdict for the changed content.
 
 Do not amend, reset, rebase, squash, cherry-pick, force-push, or otherwise rewrite valid shared review targets merely to repair workflow metadata.
+
+## Active executor ownership
+
+Once a Codex executor creates or adopts a pull request for a controlling issue, that executor owns the PR head branch and execution control plane until handoff, closure, merge, or explicit ownership transfer.
+
+Other actors may inspect the target read-only, but should not silently push to, rebase, reset, or otherwise modify the active executor's branch. Material corrections should flow through the controlling issue unless ownership has explicitly transferred.
+
+If branch ownership is ambiguous, stop and resolve ownership before mutating shared state.
 
 ## Safety
 
