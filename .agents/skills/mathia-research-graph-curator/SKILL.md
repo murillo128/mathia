@@ -29,12 +29,13 @@ Primary internal inputs are:
 
 ```text
 research/<line>/README.md              # branch context when needed
-research/<line>/FINDINGS.md            # compact evidence index when present
 research/<line>/findings/**             # canonical detailed findings
 research/<line>/mind/**                 # local durable intuitions/research lines when present
 research/mind/**                        # genuinely global Mathia intuitions/research lines
 research/prior_art/**                   # canonical prior-art projection
 ```
+
+There is no separate hand-maintained finding ledger. Inventory canonical finding files directly and derive navigation/index views from them.
 
 Treat every `graph/` subtree as derived output, never as evidence for a new mathematical claim.
 
@@ -61,7 +62,7 @@ Do **not** browse broadly for interesting mathematics merely because a graph reg
 
 ## Discover research lines conservatively
 
-A research line is a directory under `research/` that contains durable research evidence such as `FINDINGS.md` or `findings/`.
+A research line is a directory under `research/` that contains canonical durable research evidence under `findings/`.
 
 Do not treat these roots as research lines:
 
@@ -89,7 +90,7 @@ For each discovered research line, inspect its current `mind/` first when presen
 
 For every relation suggested by the mind, trace backward into the cited findings before materializing a graph relation. Mind synthesis may organize evidence, but it does not excuse missing support.
 
-If a line has no mind yet, work directly from its findings and compact index.
+If a line has no mind yet, work directly from its canonical findings.
 
 ### 2. Reconstruct the dependency graph
 
@@ -369,7 +370,6 @@ The curator must not modify:
 
 ```text
 research/<line>/README.md
-research/<line>/FINDINGS.md
 research/<line>/SOURCES.md
 research/<line>/LEAN_CANDIDATES.md
 research/<line>/findings/**
