@@ -1,316 +1,190 @@
 # Prime-circle findings
 
-## PC-001 — the common-vertex potential is exactly von Mangoldt
+This is the compact index for durable evidence under `research/prime_circle/findings/`. Detailed derivations, prior-art audits, boundary conditions, and research gates live in the individual finding files.
 
-**Status:** `CLASSICAL-IDENTITY` + `CANDIDATE-NEW-STRUCTURE` (geometric organization)
+> **Legacy ID note:** two independent findings were historically persisted as `PC-015`. Preserve both IDs/files; new findings continue above the maximum existing integer rather than renumbering history.
 
-Let
+## Indexed findings
 
-\[
-P_n^*=\{\zeta:\operatorname{ord}(\zeta)=n\}
-\]
+### PC-001 — common-vertex potential is exactly von Mangoldt
 
-be the vertices that appear for the first time in the regular \(n\)-gon. Define their dimensionless logarithmic chord potential at the common vertex \(1\) by
+**Status:** `CLASSICAL-IDENTITY` + `CANDIDATE-NEW-STRUCTURE`.
 
-\[
-E_n:=\sum_{\zeta\in P_n^*}\log|1-\zeta|.
-\]
+The logarithmic chord interaction of the common vertex with the primitive `n`-shell is exactly `log|Phi_n(1)|=Lambda(n)`. The geometry contains von Mangoldt intrinsically, but its ordinary Dirichlet transform is the classical `-zeta'/zeta`.
 
-Since
+[Detailed finding](findings/PC-001-common-vertex-potential-is-von-mangoldt.md)
 
-\[
-\Phi_n(x)=\prod_{\zeta\in P_n^*}(x-\zeta),
-\]
+### PC-002 — primitive-shell resultants detect prime-power scale jumps
 
-we have exactly
+**Status:** `CLASSICAL-IDENTITY` + `CANDIDATE-NEW-STRUCTURE`.
 
-\[
-E_n=\log|\Phi_n(1)|.
-\]
+Pairwise logarithmic shell interaction is the cyclotomic resultant; after normalization it is nonzero exactly across prime-power multiplicative jumps and returns `Lambda(n/m)`.
 
-For \(n>1\), the classical cyclotomic identity
+[Detailed finding](findings/PC-002-primitive-shell-resultant-detects-prime-power-jumps.md)
 
-\[
-\Phi_n(1)=e^{\Lambda(n)}
-\]
+### PC-003 — exact harmonic interior/exterior duality
 
-therefore gives
+**Status:** `EXACT-DERIVED` + `CANDIDATE-NEW-STRUCTURE`.
 
-\[
-\boxed{E_n=\Lambda(n).}
-\]
+The primitive-shell potential `U_n(z)=log|Phi_n(z)|` obeys the exact inversion relation `U_n(z)=phi(n)log|z|+U_n(1/conj(z))` and exact divisor/Möbius decomposition. This is intrinsic to the original circle.
 
-Equivalently,
+[Detailed finding](findings/PC-003-harmonic-interior-exterior-duality.md)
 
-\[
-E_n=\begin{cases}
-\log p,&n=p^k,\\
-0,&\text{otherwise.}
-\end{cases}
-\]
+### PC-004 — normalized resultants reproduce finite-prime Weil local kernels
 
-Thus the von Mangoldt source strength is not inserted into the original construction: it is the exact total logarithmic chord interaction between the common vertex and the new-vertex shell at level \(n\).
+**Status:** historical `EXACT-DERIVED` + candidate; **materially downgraded by PC-006**.
 
-The Mellin/Dirichlet transform
+On prime-power rays, half-density normalization of off-diagonal cyclotomic resultants produces the kernel `(log p)p^{-|a-b|/2}`, matching the finite-prime local shape of Weil-type kernels.
 
-\[
-\sum_{n\ge2}E_n n^{-s}=-\frac{\zeta'(s)}{\zeta(s)}
-\]
+[Detailed finding](findings/PC-004-normalized-resultants-weil-local-kernels.md)
 
-is classical and should **not** by itself be counted as a new RH mechanism. The potentially useful new direction is to retain the full two-dimensional potential field before taking this scalar transform.
+### PC-005 — discriminant renormalization completes the prime-ray kernel
 
-### Literature check
+**Status:** historical `EXACT-DERIVED` + candidate; **materially downgraded by PC-006**.
 
-The identity \(\Phi_n(1)=e^{\Lambda(n)}\) is classical and is explicitly discussed in Bzdęga–Herrera-Poyatos–Moree, *Cyclotomic polynomials at roots of unity*. The geometric logarithmic-chord interpretation is immediate from the defining product for \(\Phi_n\); novelty is not claimed for the identity.
+A discrete scale derivative of normalized cyclotomic discriminants supplies the diagonal `log p`, completing the prime-ray Toeplitz/Poisson kernel, but the diagonal and off-diagonal pieces are not yet produced by one canonical energy.
 
----
+[Detailed finding](findings/PC-005-discriminant-renormalization-completes-prime-ray-kernel.md)
 
-## PC-002 — pairwise primitive-shell interaction detects prime-power scale jumps
+### PC-006 — critical GCD kernel and potential theory downgrade PC-005
 
-**Status:** `CLASSICAL-IDENTITY` + `CANDIDATE-NEW-STRUCTURE`
+**Status:** `DECISIVE-NEGATIVE` + `NOVELTY-CORRECTION` + `EXACT-DERIVED`.
 
-For distinct primitive layers \(m<n\), define the total logarithmic interaction
+Resultant/discriminant energies belong to classical logarithmic potential theory, and `p^{-|a-b|/2}` is the prime-ray restriction of the classical critical GCD kernel `gcd(m,n)/sqrt(mn)`. A new RH mechanism would need one intrinsic object producing mutual energy, self-renormalization, and the global counterterm together.
 
-\[
-I_{m,n}:=
-\sum_{\zeta\in P_m^*}
-\sum_{\eta\in P_n^*}
-\log|\zeta-\eta|.
-\]
+[Detailed finding](findings/PC-006-critical-gcd-kernel-and-potential-theory-downgrade-PC005.md)
 
-By the defining formula for the polynomial resultant,
+### PC-007 — cumulative new vertices are the Farey sequence
 
-\[
-I_{m,n}=\log|\operatorname{Res}(\Phi_m,\Phi_n)|.
-\]
+**Status:** `DECISIVE-PRIOR-ART` + `BRANCH-CLOSED-AS-NOVELTY`.
 
-Apostol's classical resultant theorem gives, for \(n>m>1\),
+Accumulating all primitive/new vertices through level `N` gives the Farey sequence geometrically, so angular-discrepancy RH criteria in that cumulative geometry are classical rather than a new mechanism.
 
-\[
-|\operatorname{Res}(\Phi_m,\Phi_n)|
-=
-\begin{cases}
-p^{\varphi(m)},&n/m=p^k\text{ for a prime }p,\\
-1,&\text{otherwise.}
-\end{cases}
-\]
+[Detailed finding](findings/PC-007-cumulative-new-vertices-are-farey-rh-geometry-is-classical.md)
 
-Hence
+### PC-008 — single-polygon Riesz energy and cycle spectral zeta are known RH reformulations
 
-\[
-\boxed{
-I_{m,n}
-=
-\varphi(m)\,\Lambda(n/m)
-}
-\]
+**Status:** `DECISIVE-PRIOR-ART` + `BRANCH-CLOSED-AS-NOVELTY`.
 
-when \(m\mid n\), and \(I_{m,n}=0\) otherwise.
+Natural scalar spectral/Riesz constructions on one regular polygon fall into existing RH-equivalent or classical formulations and do not provide a new geometric explanation.
 
-After normalization by the number of charges in the lower shell,
+[Detailed finding](findings/PC-008-single-polygon-riesz-and-cycle-spectral-zeta-are-known-rh-reformulations.md)
 
-\[
-\boxed{
-\frac{I_{m,n}}{\varphi(m)}
-=
-\Lambda(n/m).
-}
-\]
+### PC-009 — polygon-edge crossing counts collapse to the GCD kernel
 
-So the original circle carries a canonical interaction graph on primitive layers in which nonzero couplings occur exactly across prime-power multiplicative jumps.
+**Status:** `EXACT-DERIVED` + `DECISIVE-NEGATIVE` + `BRANCH-CLOSED-AS-NOVELTY`.
 
-This suggests studying the **full interaction operator/geometry** before diagonalizing it by a Dirichlet transform. Immediately replacing it by \(-\zeta'/\zeta\) would only restate known arithmetic.
+Pairwise crossing/incidence geometry of regular-polygon edges reduces exactly to GCD data, closing that unlabeled combinatorial branch as a source of new RH structure.
 
-### Literature check
+[Detailed finding](findings/PC-009-polygon-edge-crossing-counts-collapse-to-gcd-kernel.md)
 
-The resultant formula is classical: T. M. Apostol, *Resultants of cyclotomic polynomials*, Proc. AMS 24 (1970), 457–462. Later proofs and extensions exist. No novelty is claimed for the resultant itself.
+### PC-010 — abstract refinement dynamics is the Bost–Connes cyclotomic tower
 
----
+**Status:** `DECISIVE-NEGATIVE` for vertex-birth/refinement dynamics alone.
 
-## PC-003 — exact harmonic interior/exterior duality of primitive-shell potentials
+Keeping only roots of unity, birth levels, and power/refinement maps recovers the classical cyclotomic/Bost–Connes organization rather than a new dynamics.
 
-**Status:** `EXACT-DERIVED` + `CANDIDATE-NEW-STRUCTURE`
+[Detailed finding](findings/PC-010-abstract-refinement-dynamics-is-the-bost-connes-cyclotomic-tower.md)
 
-Define the logarithmic potential of the primitive layer
+### PC-011 — common-vertex chord correlations are Dedekind/Vasyunin sums
 
-\[
-U_n(z)=\log|\Phi_n(z)|
-=\sum_{\zeta\in P_n^*}\log|z-\zeta|,
-\qquad n>1.
-\]
+**Status:** `DECISIVE-NEGATIVE` for first/second angular correlations of the anchored chord fan.
 
-Away from the unit circle charges, \(U_n\) is harmonic. Cyclotomic reciprocity gives
+Natural low-order correlations of the common-vertex chord geometry reduce to classical Dedekind/Vasyunin-type sums and known RH-adjacent structures.
 
-\[
-\Phi_n(z)=z^{\varphi(n)}\Phi_n(1/z),
-\qquad n>1,
-\]
+[Detailed finding](findings/PC-011-common-vertex-chord-correlations-are-dedekind-vasyunin-sums.md)
 
-and therefore, in modulus,
+### PC-012 — finite cross-level edge geometry embeds in one regular-polygon arrangement
 
-\[
-\boxed{
-U_n(z)
-=
-\varphi(n)\log|z|
-+U_n(1/\bar z).
-}
-\]
+**Status:** `DECISIVE-NEGATIVE` for unlabeled finite edge-incidence/crossing novelty.
 
-Thus inversion in the original circle gives an **intrinsic exact inside/outside relation for the potential field**. Unlike the prime-flute interior/exterior picture, this duality belongs directly to the original roots-of-unity object.
+Any finite collection of regular-polygon levels embeds into the diagonal arrangement of the single polygon at their LCM, so unlabeled finite incidence/crossing geometry contains no additional cross-level invariant.
 
-At the common boundary vertex,
+[Detailed finding](findings/PC-012-finite-cross-level-edge-geometry-embeds-in-a-single-regular-polygon-diagonal-arrangement.md)
 
-\[
-U_n(1)=\Lambda(n),
-\]
+### PC-013 — pure projective transfer is flat and Hill spectrum needs extra gauge
 
-by PC-001.
+**Status:** `DECISIVE-NEGATIVE`.
 
-The full polygon potential and primitive-shell potential are related by exact divisor/Möbius decomposition:
+Canonical one-dimensional projective moving-frame transport telescopes, while a Hill/Schrödinger lift retains an alternating gauge that changes the spectrum. Prime-circle cross-ratios alone do not canonically determine a global spectral operator.
 
-\[
-\log|z^n-1|
-=
-\sum_{d\mid n}U_d(z),
-\]
+[Detailed finding](findings/PC-013-pure-projective-transfer-is-flat-and-hill-spectrum-needs-extra-gauge.md)
 
-and formally away from singularities,
+### PC-014 — exact Euclidean circle spectral transfer is subdivision-invariant
 
-\[
-\boxed{
-U_n(z)
-=
-\sum_{d\mid n}\mu(n/d)\log|z^d-1|.
-}
-\]
+**Status:** `DECISIVE-NEGATIVE`.
 
-This is currently the most promising original-geometry object: a two-sided harmonic field whose boundary charges are the genuinely new polygon vertices, whose common-vertex source strength is von Mangoldt, and whose inter-layer energies are cyclotomic resultants.
+The exact Helmholtz/Dirichlet-to-Neumann transfer on successive prime arcs composes by total arc length, so all intermediate prime-gap fluctuations disappear. Adding a gap-sensitive spectral parameter afterward would import structure not forced by the circle.
 
-### Research gate
+[Detailed finding](findings/PC-014-euclidean-unit-circle-spectral-transfer-is-subdivision-invariant.md)
 
-Do **not** count a Mellin transform of \(U_n(1)=\Lambda(n)\) as progress; that immediately recovers the classical logarithmic derivative of \(\zeta\). A substantive next step must use information in the full field \(U_n(z)\), its interior/exterior coupling, its Fourier/Ramanujan modes, or its scale-renormalization dynamics that is lost by evaluating only at \(z=1\).
-
----
-
-## PC-013 — pure projective transfer is flat; Hill spectrum needs extra gauge
-
-**Status:** `DECISIVE-NEGATIVE` for a spectral mechanism based only on the projective prime-vertex sequence.
-
-Four consecutive prime-circle vertices have a genuine Möbius-invariant cross-ratio and therefore a standard discrete-Schwarzian / discrete-Hill interpretation. However, a globally defined projective moving frame has Maurer–Cartan transport
-
-\[
-K_n=\rho_{n+1}\rho_n^{-1},
-\]
-
-so every path product telescopes exactly:
-
-\[
-K_{N-1}\cdots K_m=\rho_N\rho_m^{-1}.
-\]
-
-Thus pure one-dimensional projective transport has no interior holonomy from prime-gap fluctuations.
-
-The alternative unit-Wronskian Hill lift
-
-\[
-V_{n+2}=k_nV_{n+1}-V_n
-\]
-
-is also insufficient on the infinite nonperiodic prime path: it retains an alternating lift gauge \(V_n\mapsto c^{(-1)^n}V_n\), which changes \(k_n\) while preserving the projective cross-ratios \(s_n=k_nk_{n+1}\). The ambiguity genuinely changes the spectrum of the associated self-adjoint Schrödinger operator; even the projectively uniform sequence \(x_n=n\), with \(s_n\equiv4\), yields different period-two spectra under different allowed lift gauges.
-
-Therefore cross-ratios alone do **not** canonically define a global spectral operator. A viable spectral construction must use additional structure already present in the original circle—Euclidean/unit-circle geometry, off-circle fields/interior-exterior duality, or a genuinely multidimensional labeled structure—rather than choosing a closure or lift normalization to manufacture a spectrum.
-
-Full derivation: `findings/PC-013-pure-projective-transfer-is-flat-and-hill-spectrum-needs-extra-gauge.md`.
-
----
-
-## PC-014 — exact Euclidean/unit-circle spectral transfer is subdivision-invariant
-
-**Status:** `DECISIVE-NEGATIVE` for the most natural Euclidean repair of PC-013.
-
-For the distinguished prime vertices \(z_n=e^{2\pi i/p_n}\), the exact angular increments are
-
-\[
-h_n=2\pi\left(\frac1{p_n}-\frac1{p_{n+1}}\right)
-=\frac{2\pi g_n}{p_np_{n+1}}.
-\]
-
-Using the Euclidean circle to remove the projective lift ambiguity leads canonically to the exact one-dimensional Helmholtz/Dirichlet-to-Neumann element
-
-\[
-D_h(k)=k
-\begin{pmatrix}
-\cot(kh)&-\csc(kh)\\
--\csc(kh)&\cot(kh)
-\end{pmatrix}
-\]
-
-and transfer matrix
-
-\[
-T_h(k)=
-\begin{pmatrix}
-\cos(kh)&\sin(kh)/k\\
--k\sin(kh)&\cos(kh)
-\end{pmatrix}.
-\]
-
-This is exactly the \(\csc/\cot\) tridiagonal geometry suggested by the unit-circle lift. However,
-
-\[
-T_a(k)T_b(k)=T_{a+b}(k),
-\]
-
-so every finite prime block collapses to
-
-\[
-T_{h_m}(k)\cdots T_{h_N}(k)
-=T_{2\pi(1/p_m-1/p_{N+1})}(k),
-\]
-
-and the infinite tail collapses to an ordinary arc of length \(2\pi/p_m\). All interior prime-gap fluctuations disappear exactly. Equivalently, Schur-complement elimination of any inserted prime vertex composes the two exact Dirichlet-to-Neumann elements into the one for their total length.
-
-Thus a canonical one-dimensional spectralization of the Euclidean circle makes the prime vertices mere subdivision points. Freezing the \(k=1\) coefficients and then adding a new linear spectral parameter would produce a gap-sensitive Jacobi operator, but that extra spectral dependence is no longer derived from the exact circle geometry.
-
-Full derivation: `findings/PC-014-euclidean-unit-circle-spectral-transfer-is-subdivision-invariant.md`.
-
----
-
-## PC-015 — the full-field Dirichlet transform is Möbius inversion, not a new zeta mechanism
+### PC-015 — full-field Dirichlet transform is Möbius inversion
 
 **Status:** `DECISIVE-NEGATIVE` + `LITERATURE+DERIVED` + `EXACT-DERIVED`.
 
-For `|z|<1`, normalize `hat Phi_1(z)=1-z`, `hat Phi_n(z)=Phi_n(z)` for `n>=2`, and set `L_n(z)=Log hat Phi_n(z)`. The complete primitive-shell field has Fourier expansion
+The complete interior primitive-shell field, when Dirichlet-transformed over level, factors through `1/zeta(s)` because primitive-shell extraction is Möbius inversion. Spatial circle inversion leaves the same scale variable and does not implement `s -> 1-s`.
+
+[Detailed finding](findings/PC-015-full-field-dirichlet-transform-is-moebius-inversion.md)
+
+### PC-015 — spherical compactification is exact but fixed linear sphere spectra collapse to Ramanujan data
+
+**Status:** `EXACT-DERIVED` + `DECISIVE-NEGATIVE`.
+
+Stereographic compactification makes inversion an exact equatorial reflection and orthogonal circles exact spherical caps, but every fixed round-sphere rotationally invariant linear operator sees primitive shells only through classical Ramanujan Fourier data.
+
+[Detailed finding](findings/PC-015-spherical-compactification-and-linear-spectral-collapse.md)
+
+### PC-016 — prime levels are exactly complete cyclic covers
+
+**Status:** `EXACT-DERIVED` + `CANDIDATE-NEW-STRUCTURE`; no RH claim.
+
+For the anchored birth surface, `n` is prime exactly when `z^n` realizes it as the complete unbranched cyclic cover of the thrice-punctured sphere. Multiplication by an old prime factor is an exact cover; introducing a new factor requires cover plus puncture-filling surgery.
+
+[Detailed finding](findings/PC-016-prime-levels-are-complete-cyclic-covers.md)
+
+### PC-017 — canonical cyclotomic uniformization defect
+
+**Status:** `EXACT-DERIVED` + `CANDIDATE-NEW-STRUCTURE`; no RH claim.
+
+Comparing the canonical Fuchsian projective connection of the birth surface with the explicit complete cyclic-cover connection gives an intrinsic nonlinear/accessory defect, zero exactly at prime levels. Its global accessory/monodromy part remains a live candidate because it is not a fixed linear shell observable.
+
+[Detailed finding](findings/PC-017-cyclotomic-uniformization-defect.md)
+
+### PC-018 — factor-introduction projective surgery is flat
+
+**Status:** `DECISIVE-NEGATIVE`.
+
+Uniformization/projective defects under power maps satisfy an exact cocycle, so introducing prime factors in different orders has zero canonical projective curvature/holonomy. Any surviving information must be nonlinear endpoint data rather than path-order holonomy.
+
+[Detailed finding](findings/PC-018-projective-factor-surgery-is-flat.md)
+
+### PC-019 — unanchored primitive-shell geometry cannot distinguish `n` from `2n`
+
+**Status:** `DECISIVE-NEGATIVE`.
+
+For odd `n`, `Phi_{2n}(z)=Phi_n(-z)`, so every unanchored intrinsic geometry or spectrum of one primitive shell identifies odd `n` with composite `2n`. The common vertex/absolute phase or multi-level structure is indispensable.
+
+[Detailed finding](findings/PC-019-unanchored-birth-shell-geometry-cannot-distinguish-n-from-2n.md)
+
+### PC-020 — the anchored local jet is classical Jordan-totient data
+
+**Status:** `DECISIVE-NEGATIVE` for finite-order local anchored differential data.
+
+The full Taylor jet of `log Phi_n(e^t)` at the common vertex is generated by `Lambda(n)`, `phi(n)`, even Jordan totients, and universal Bernoulli constants. A viable construction must therefore be anchored **and** nonlocal or genuinely multi-level.
+
+[Detailed finding](findings/PC-020-anchored-local-jet-is-jordan-totient-data.md)
+
+### PC-021 — regular linear probes are Möbius-tautological before spectralization
+
+**Status:** `EXACT-DERIVED` + `DECISIVE-NEGATIVE` for regular fixed linear ambient probes and independently transformed bounded multilinear probes.
+
+At the level of counting measures, `R_n=sum_{d|n}P_d`; hence for `Re(s)>2`,
 
 \[
-L_n(z)=-\sum_{m\ge1}\frac{c_n(m)}m z^m.
+\sum_{n\ge1}\frac{P_n}{n^s}
+=\frac1{\zeta(s)}\sum_{d\ge1}\frac{R_d}{d^s}.
 \]
 
-Its canonical Dirichlet scale transform satisfies, for `Re(s)>1`,
+Every fixed bounded linear observable inherits this factorization, and independent multilinear shell indices inherit one reciprocal-zeta factor each. The common-vertex logarithmic potential escapes the theorem precisely because it is a singular boundary probe: it is divergent on every full layer but finite on primitive shells. Thus the surviving region is anchored, nonlocal, and nonlinear or singularly renormalized.
 
-\[
-\boxed{
-\sum_{n\ge1}\frac{L_n(z)}{n^s}
-=\frac1{\zeta(s)}\sum_{d\ge1}\frac{\Log(1-z^d)}{d^s}.
-}
-\]
-
-Thus retaining the full two-dimensional harmonic field before applying `n^{-s}` does not escape the classical reduction: the `1/zeta(s)` factor is exactly Möbius inversion between full root-of-unity layers and primitive/cyclotomic layers. Bal's corrected 2026 arXiv version of *Constancy of an Infinite Cyclotomic Product via Ramanujan Sums* proves the corresponding weighted infinite-product identity explicitly.
-
-The numerator is entire in `s` for fixed `|z|<1`; every zeta zero is therefore a genuine pole of this field transform for sufficiently small nonzero `z`, but this is inherited from the explicit reciprocal-zeta denominator and supplies no independent zero-location mechanism.
-
-Likewise the exact PC-003 inversion law gives, after scale transformation,
-
-\[
-\boxed{
-\mathcal U(s,z)-\mathcal U(s,1/\bar z)
-=\log|z|\frac{\zeta(s-1)}{\zeta(s)}
-}
-\]
-
-(initially for `Re(s)>2`). Spatial circle inversion leaves the same `s` on both sides; it does not produce `s -> 1-s` or the completed-zeta gamma factor. Hence the intrinsic inside/outside duality is **not** the zeta functional equation without an additional, independently derived operation on scale.
-
-This closes the natural branch `full harmonic field -> ordinary Dirichlet/Mellin scale transform -> new RH mechanism`, and rules out treating circle inversion itself as the functional-equation reflection. Nonlinear mode/shell couplings, boundary-limit phenomena, and genuinely two-dimensional operators not diagonalized by `n^{-s}` remain open.
-
-Full derivation and novelty audit: `findings/PC-015-full-field-dirichlet-transform-is-moebius-inversion.md`.
+[Detailed finding](findings/PC-021-regular-linear-probes-are-moebius-tautological.md)
