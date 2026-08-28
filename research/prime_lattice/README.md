@@ -75,10 +75,15 @@ canonical prime-flow generator A = sum_p (log p) N_p
     -> diagonalizes the lattice exactly; exp(-sigma A) is Schatten S_q iff q sigma > 1
     -> Re(s)=1/2 is its Hilbert-Schmidt boundary, while zeta(s) is an ordinary trace only for Re(s)>1
 
+one-particle prime operator T_s = diag(p^{-s})
+    -> becomes Hilbert-Schmidt exactly for Re(s)>1/2, so the standard det_2 exists there
+    -> det_2(I-T_s) = exp(-sum_{k>=2} P(k s)/k) is holomorphic and zero-free
+    -> the regularization removes the k=1 prime-zeta term, the only Euler-log term that can carry zeta-zero singularities in that half-plane
+
 Möbius orientation of the square-free hypercube
     -> already feeds the Nyman-Beurling / Bagchi Hardy closure program
     -> exact Möbius cancellation plus the known H^2 bridge proves the canonical approximation only for Re(s)>1;
        entering the critical strip requires genuinely stronger analytic control
 ```
 
-Thus the bare prime-exponent lattice and infinite torus are not, by themselves, a zero mechanism for the Riemann zeta function. Several natural refinements are already rigorous prior art: Bagchi recurrence gives an exact RH-level dynamical target in function space; Saksman–Webb give a stochastic critical boundary; the canonical `log n` generator gives a clean Schatten/trace hierarchy; and Möbius-weighted Hardy approximation gives a precise zero-free criterion. In every case the remaining RH difficulty is not the exponent-vector encoding itself but additional analytic structure capable of distinguishing the Riemann zeta function and retaining deterministic/microscopic zero information through the critical strip.
+Thus the bare prime-exponent lattice and infinite torus are not, by themselves, a zero mechanism for the Riemann zeta function. Several natural refinements are already rigorous prior art: Bagchi recurrence gives an exact RH-level dynamical target in function space; Saksman–Webb give a stochastic critical boundary; the canonical `log n` generator gives a clean Schatten/trace hierarchy; standard Hilbert–Schmidt regularization of the one-particle prime determinant is zero-free and pushes zero-sensitive information into the removed prime-zeta counterterm; and Möbius-weighted Hardy approximation gives a precise zero-free criterion. In every case the remaining RH difficulty is not the exponent-vector encoding itself but additional analytic structure capable of distinguishing the Riemann zeta function and retaining deterministic/microscopic zero information through the critical strip.

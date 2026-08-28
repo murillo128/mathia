@@ -67,3 +67,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 16. **Juan Manzur, Waleed Noor, Gustavo Quintero**, “A Hardy space approximation supporting zero-free half-planes for the `zeta`-function,” arXiv:2606.16097v1 [math.FA] (submitted 15 June 2026), preprint. https://arxiv.org/abs/2606.16097.
     - Role: main current anchor for `PL-008`. Constructs a bounded map from `mathcal H^2` of Dirichlet series to half-plane Hardy spaces, proves that closure of the Bagchi family in `H^2(C_alpha)` forces zero-freeness in `C_alpha`, and proves the explicit Möbius approximation `sum mu(k)G_k -> E` for every `alpha>1`. The paper explicitly leaves `1/2<=alpha<=1` outside its analytical proof and treats its critical-strip computations only as numerical evidence.
+
+## Prime-zeta counterterms and regularized determinants
+
+17. **Carl-Erik Fröberg**, “On the prime zeta function,” *BIT Numerical Mathematics* **8**(3) (1968), 187–202. DOI: https://doi.org/10.1007/BF01933420.
+    - Role: classical prime-zeta continuation via Möbius inversion of `log zeta`, including the logarithmic singularity structure inherited from zeta zeros and its pole. Main number-theoretic anchor for `PL-009`.
+
+18. **Thomas Britz, Alan Carey, Fritz Gesztesy, Roger Nichols, Fedor Sukochev, Dmitriy Zanin**, “The product formula for regularized Fredholm determinants,” *Proceedings of the American Mathematical Society, Series B* **8** (2021), 42–51. DOI: https://doi.org/10.1090/bproc/70. arXiv: https://arxiv.org/abs/2007.12834.
+    - Role: modern primary reference for the standard Hilbert–Schmidt determinant `det_2(I-A)=det((I-A)exp(A))` and higher Schatten regularized determinant framework used in `PL-009`.
+
+19. **Luiz Hartmann, Matthias Lesch**, “Zeta and Fredholm determinants of self-adjoint operators,” *Journal of Functional Analysis* **283**(1) (2022), Article 109491. DOI: https://doi.org/10.1016/j.jfa.2022.109491. arXiv: https://arxiv.org/abs/2106.02444.
+    - Role: authoritative modern context for Schatten regularized Fredholm determinants as Weierstrass products and their relation to zeta-regularized determinants; supporting operator-theory anchor for `PL-009`.
