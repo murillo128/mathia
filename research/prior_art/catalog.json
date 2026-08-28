@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "bindings": {
+    "mathia-riemann-v2": {
+      "kind": "mathia-interchange",
+      "label": "Riemann–Mathia v2 accepted object",
+      "release_id": "riemann-mathia-full-v2",
+      "freeze_id": "riemann_mathia_v2_cd92907b9bc4565cffc138110faceb21c77d4bf71388d75536a8e640af3ba5f0",
+      "freeze_path": "experiments/riemann_corpus/full_corpus_v2/freeze.json",
+      "objects_path": "experiments/riemann_corpus/full_corpus_v2/objects.jsonl"
+    },
+    "mathia-agnostic-v1": {
+      "kind": "mathia-interchange",
+      "label": "Agnostic Mathia v1 accepted object",
+      "release_id": "agnostic-mathia-full-v1",
+      "freeze_id": "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f",
+      "freeze_path": "experiments/agnostic_mathia_corpus/release_v1/freeze.json",
+      "objects_path": "experiments/agnostic_mathia_corpus/release_v1/records.jsonl"
+    },
+    "mathia-agnostic-openalex-v1": {
+      "kind": "mathia-interchange",
+      "label": "Agnostic Mathia OpenAlex supplement accepted object",
+      "release_id": "agnostic-mathia-openalex-supplement-v1",
+      "freeze_id": "agnostic_openalex_supplement_a1aa591df034db64d5ce0271df0da570e3aaf470ac49e5cc4014b66181bf0e33",
+      "freeze_path": "experiments/agnostic_mathia_corpus/openalex_supplement_v1/freeze.json",
+      "objects_path": "experiments/agnostic_mathia_corpus/openalex_supplement_v1/objects.jsonl"
+    },
+    "qwen-riemann-atlas": {
+      "kind": "qwen-atlas",
+      "label": "qwen-lean Riemann atlas",
+      "repository": "murillo128/qwen-lean",
+      "revision": "3364b508595a71b34a2efcf964ba1200f153ad84",
+      "entries_path": "data/riemann/atlas/entries.jsonl",
+      "entries_git_blob": "3c02d9d01ee667f6136185d49f0d6367818362c6",
+      "sources_path": "data/riemann/atlas/sources.json",
+      "sources_git_blob": "ec66ed63fc039b6ab991089303041d4c960b13ca"
+    }
+  },
+  "nodes": [
+    {
+      "id": "PA-baez-duarte-criterion",
+      "canonical_name": "Baez-Duarte criterion",
+      "aliases": ["Baez-Duarte sequence criterion"],
+      "kind": "criterion",
+      "topics": ["riemann-hypothesis", "approximation", "zeta-values"],
+      "canonical_identity": ["qwen-entry:baez-duarte-criterion"],
+      "sections": {
+        "what_it_is": "A sequence criterion that concentrates zero information into coefficients formed from finite rational combinations of zeta values at positive even integers. The retained Mathia analysis records the RH-scale decay condition, an inversion formula, and an exponential generating function as different views of the same sequence.",
+        "relation_to_research": "The qwen atlas records the asymptotic order condition as bidirectionally equivalent to RH. For Mathia it is a reusable example of compressing analytic zero information into a discrete, algebraically reversible observable.",
+        "scope_and_limits": "This is an equivalent criterion, not a proof of RH. Direct numerical checks can remain insensitive to hypothetical high off-line zeros, and the retained records report no Lean formalization. It is intentionally distinct from Báez-Duarte's strengthening of the Nyman–Beurling closure criterion."
+      },
+      "related": [],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_6585ece1c4e3c0f2efb5964b3b94f5c36bde24fa17a59263aca6befb55dd17a7",
+          "source_ids": ["openalex_w2105290574"],
+          "source_unit_ids": ["full_openalex_w2105290574_u02"]
+        },
+        {
+          "family": "qwen-riemann-atlas",
+          "entry_id": "baez-duarte-criterion",
+          "source_ids": ["baez-duarte-2003"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": true, "manual_merge": true, "cross_repository_status_merge": true, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-nyman-beurling-criterion",
+      "canonical_name": "Nyman-Beurling criterion",
+      "aliases": ["Beurling-Nyman criterion", "Nyman-Beurling functional-analytic criterion"],
+      "kind": "criterion",
+      "topics": ["riemann-hypothesis", "functional-analysis", "approximation"],
+      "canonical_identity": ["qwen-entry:nyman-beurling-criterion"],
+      "sections": {
+        "what_it_is": "A functional-analytic reformulation of zero exclusion as a closure or density statement for fractional-part functions. The retained Mathia object also records the wider L^p pattern: the ambient norm parameter tracks a corresponding zero-free half-plane, while a single characteristic-function target can compress the full density question.",
+        "relation_to_research": "Both retained views classify the L² criterion as equivalent to RH. It is relevant to Mathia as a precise bridge from analytic zero location to approximation and representation selection.",
+        "scope_and_limits": "Closure membership is not a constructive approximation algorithm. The evidence supplies neither an effective convergence rate nor a Lean proof, and it does not imply that the discrete Baez-Duarte strengthening is automatic."
+      },
+      "related": [{"id": "PA-baez-duarte-strengthening-of-nyman-beurling", "relation": "refined_by"}],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_4e9d5e4ba91fbdb0bd6b42baf7cea4c327d28098dc1bc79cdec66b4b83db650a",
+          "source_ids": ["aim2004_resource"],
+          "source_unit_ids": ["aim2004_u30_beurling_nyman_density"]
+        },
+        {
+          "family": "qwen-riemann-atlas",
+          "entry_id": "nyman-beurling-criterion",
+          "source_ids": ["baez-duarte-2002"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": true, "manual_merge": true, "cross_repository_status_merge": true, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-baez-duarte-strengthening-of-nyman-beurling",
+      "canonical_name": "Baez-Duarte strengthening of Nyman-Beurling",
+      "aliases": ["discrete Nyman-Beurling criterion", "natural-dilation Nyman-Beurling criterion"],
+      "kind": "criterion",
+      "topics": ["riemann-hypothesis", "functional-analysis", "approximation"],
+      "canonical_identity": ["mathia-mechanism:baez-duarte-strengthened-nyman-beurling"],
+      "sections": {
+        "what_it_is": "A strengthening of the Nyman–Beurling closure criterion that restricts the generating family from all real dilation parameters at least one to natural-number dilations. The smaller arithmetic skeleton retains the target membership condition that is equivalent to RH.",
+        "relation_to_research": "This result shows that the continuum of generators is not essential at the level of closed span. It is useful to Mathia as a precise example of a representation being compressed without losing the decisive property.",
+        "scope_and_limits": "The theorem statement does not provide a constructive approximating sequence or rate. It is not the Báez-Duarte sequence criterion based on zeta values. The qwen source label `baez-duarte-2002` and Mathia source `baezduarte2003_nyman` are retained as preprint/publication views of arXiv `math/0202141`, not as two mathematical nodes."
+      },
+      "related": [{"id": "PA-nyman-beurling-criterion", "relation": "refines"}],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_2a07d7234efaf019d2a75217550055acf95e0203c41a0a468bde25617263cecc",
+          "source_ids": ["baezduarte2003_nyman"],
+          "source_unit_ids": ["baezduarte2003_nyman_d01"]
+        },
+        {
+          "family": "qwen-riemann-atlas",
+          "atlas_source_id": "baez-duarte-2002",
+          "source_ids": ["baez-duarte-2002"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": true, "manual_merge": true, "cross_repository_status_merge": true, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-franel-landau-farey-discrepancy-criterion",
+      "canonical_name": "Franel-Landau Farey discrepancy criterion",
+      "aliases": ["Farey discrepancy criterion", "Franel-Landau criterion"],
+      "kind": "criterion",
+      "topics": ["riemann-hypothesis", "farey", "discrepancy"],
+      "canonical_identity": ["mathia-mechanism:farey-discrepancy-equivalence"],
+      "sections": {
+        "what_it_is": "A reformulation that orders Farey fractions, compares them with uniform grid positions, and aggregates the resulting discrepancy. The retained Mathia analysis keeps the quadratic and absolute-deviation norms distinct while identifying the common representation change from reduced-rational arithmetic to equidistribution error.",
+        "relation_to_research": "The retained source unit states RH-equivalent bounds for the discrepancy aggregates. This is directly useful as a prior-art boundary for geometric Mathia routes that merely repackage Farey points or their one-dimensional distribution.",
+        "scope_and_limits": "The note records the criterion at mechanism level because the retained analysis flags formula and exponent typography as requiring scan verification for literal reuse. A geometric redrawing of the same discrepancy is not new RH progress."
+      },
+      "related": [],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_12b53d2d69bee1097433d20ef787dfb155c64b0e445283e09fd562c1743cee1b",
+          "source_ids": ["aim2004_resource"],
+          "source_unit_ids": ["aim2004_u24_farey_discrepancy_equivalence"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": true, "manual_merge": false, "cross_repository_status_merge": false, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-de-bruijn-newman-deformation",
+      "canonical_name": "De Bruijn-Newman deformation",
+      "aliases": ["De Bruijn-Newman constant", "De Bruijn-Newman criterion"],
+      "kind": "criterion-and-partial-result",
+      "topics": ["riemann-hypothesis", "heat-flow", "xi-function"],
+      "canonical_identity": ["qwen-entry:debruijn-newman"],
+      "sections": {
+        "what_it_is": "A one-parameter heat-flow deformation of the completed xi function with a threshold Λ separating the real-rooted regime from the regime containing nonreal zeros. The deformation turns a static zero-location question into a boundary problem in function space.",
+        "relation_to_research": "RH is equivalent to Λ ≤ 0, while the Rodgers–Tao result recorded in both retained views proves the complementary bound Λ ≥ 0. The Mathia analysis treats the contradiction mechanism as a clash between forced local equilibrium under Λ < 0 and known local zero statistics.",
+        "scope_and_limits": "The proved lower bound does not prove RH; together with RH it would force Λ = 0. Historical numerical bounds in older source units are not treated as current evidence, and no Lean formalization is claimed."
+      },
+      "related": [{"id": "PA-montgomery-pair-correlation", "relation": "uses"}],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_18a74509476a3a7765ae396d450fe89f5d4d423b6002d5b7800abab1d46f5a12",
+          "source_ids": ["rodgers_tao2020_newman"],
+          "source_unit_ids": ["rodgers2020_u01_heat_flow_boundary"]
+        },
+        {
+          "family": "qwen-riemann-atlas",
+          "entry_id": "debruijn-newman",
+          "source_ids": ["rodgers-tao-2018"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": true, "manual_merge": true, "cross_repository_status_merge": true, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-weil-positivity-criterion",
+      "canonical_name": "Weil positivity criterion",
+      "aliases": ["Weil explicit-formula positivity criterion"],
+      "kind": "criterion",
+      "topics": ["riemann-hypothesis", "positivity", "explicit-formula"],
+      "canonical_identity": ["mathia-mechanism:weil-positivity"],
+      "sections": {
+        "what_it_is": "A reformulation of RH as nonnegativity of an explicit-formula zero functional for an admissible class of test functions. It changes the target from locating every zero to proving positivity of a structured family of quantities.",
+        "relation_to_research": "The retained Mathia interpretation records the positivity statement as equivalent to RH and treats it as a central bridge between prime-zero duality and operator or geometric positivity programs.",
+        "scope_and_limits": "Equivalence does not explain why the functional should be nonnegative. Admissibility and normalization choices are mathematically substantive; the note does not generalize positivity beyond the retained test-function setting or claim a proof."
+      },
+      "related": [
+        {"id": "PA-riemann-explicit-formula", "relation": "uses"},
+        {"id": "PA-li-criterion", "relation": "refined_by"}
+      ],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_828647a7139e804436e3cb59488b61298197c7071b9d2b2cbdb3f935d6839c62",
+          "source_ids": ["conrey2003_notices"],
+          "source_unit_ids": ["conrey2003_u01_positivity_reframing"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": true, "manual_merge": false, "cross_repository_status_merge": false, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-li-criterion",
+      "canonical_name": "Li criterion",
+      "aliases": ["Li positivity criterion"],
+      "kind": "criterion",
+      "topics": ["riemann-hypothesis", "positivity", "xi-function"],
+      "canonical_identity": ["qwen-entry:li-criterion"],
+      "sections": {
+        "what_it_is": "A discrete positivity reformulation in which coefficients associated with the completed zeta function can be expressed through its zeros and through derivatives of log xi at a distinguished point.",
+        "relation_to_research": "The qwen atlas records nonnegativity of every Li coefficient as equivalent to RH. Mathia's accepted analysis places the sequence beside Weil positivity as a compression from a functional family to discrete quantities.",
+        "scope_and_limits": "The criterion does not establish positivity, and the retained qwen record reports no located Lean proof. This note does not reconstruct formula-sensitive coefficient definitions beyond the accepted source descriptions."
+      },
+      "related": [{"id": "PA-weil-positivity-criterion", "relation": "refines"}],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_828647a7139e804436e3cb59488b61298197c7071b9d2b2cbdb3f935d6839c62",
+          "source_ids": ["conrey2003_notices"],
+          "source_unit_ids": ["conrey2003_u01_positivity_reframing"]
+        },
+        {
+          "family": "qwen-riemann-atlas",
+          "entry_id": "li-criterion",
+          "source_ids": ["li-1997"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": true, "manual_merge": true, "cross_repository_status_merge": true, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-hilbert-polya-program",
+      "canonical_name": "Hilbert-Polya program",
+      "aliases": ["Hilbert-Pólya spectral program"],
+      "kind": "research-program",
+      "topics": ["riemann-hypothesis", "spectral", "quantum-chaos"],
+      "canonical_identity": ["mathia-mechanism:hilbert-polya-program"],
+      "sections": {
+        "what_it_is": "A conditional spectral strategy seeking a self-adjoint operator whose real spectrum corresponds exactly to the ordinates of nontrivial zeta zeros. Retained statistical and periodic-orbit correspondences act as constraints on the missing system rather than as its construction.",
+        "relation_to_research": "An exact self-adjoint realization with the required spectral identification would force the corresponding zeros onto the critical line. Mathia uses the program as a model of a potentially fertile representation whose proof value depends on the representation enforcing reality.",
+        "scope_and_limits": "No operator, domain, boundary conditions, or exact spectral identification is supplied by the retained evidence. Random-matrix statistics and prime/orbit analogies do not themselves prove RH."
+      },
+      "related": [{"id": "PA-montgomery-pair-correlation", "relation": "uses"}],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_497b4150119e063ab9fc0166ada112fcb129a479e0a7f6f94944608f037eda50",
+          "source_ids": ["aim2004_resource"],
+          "source_unit_ids": ["aim2004_u20_hilbert_polya_periodic_orbit_route"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": true, "manual_merge": false, "cross_repository_status_merge": false, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-montgomery-pair-correlation",
+      "canonical_name": "Montgomery pair correlation",
+      "aliases": ["Montgomery pair correlation conjecture", "pair correlation of zeta zeros"],
+      "kind": "conjecture",
+      "topics": ["riemann-hypothesis", "zero-statistics", "random-matrix"],
+      "canonical_identity": ["qwen-entry:montgomery-pair-correlation"],
+      "sections": {
+        "what_it_is": "A conjectural fine-scale law for pairs of high zeta-zero ordinates after normalization by their local density. The retained Mathia material separates Montgomery's proved, RH-conditional restricted Fourier regime from the extrapolation that yields the full pair-correlation law and unitary symmetry prediction.",
+        "relation_to_research": "The conjecture supplies a discriminating zero-statistics target and constrains spectral analogies. It also enters the retained de Bruijn–Newman argument as known local-statistical input against an overly rigid equilibrium consequence.",
+        "scope_and_limits": "The qwen atlas explicitly records no implication from the statistical similarity to RH. The full law is conjectural; restricted conditional results, numerical evidence, and a hypothetical exact operator are distinct epistemic claims."
+      },
+      "related": [
+        {"id": "PA-random-matrix-model-for-zeta-zeros", "relation": "uses"},
+        {"id": "PA-de-bruijn-newman-deformation", "relation": "used_by"}
+      ],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_b1e71662ae78a6f67808b82c7e85718cbba0067b9aeebed5b5a7d262dccd5d0e",
+          "source_ids": ["montgomery1973_pair_correlation"],
+          "source_unit_ids": ["montgomery1973_u02_unitary_analogy"]
+        },
+        {
+          "family": "qwen-riemann-atlas",
+          "entry_id": "montgomery-pair-correlation",
+          "source_ids": ["montgomery-1973"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": true, "cross_repository_status_merge": true, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-riemann-explicit-formula",
+      "canonical_name": "Riemann explicit formula",
+      "aliases": ["von Mangoldt explicit formula"],
+      "kind": "theorem-family",
+      "topics": ["riemann-hypothesis", "explicit-formula", "prime-zero-duality"],
+      "canonical_identity": ["qwen-entry:explicit-formula"],
+      "sections": {
+        "what_it_is": "A family of exact identities expressing weighted prime-counting data through the pole and zeros of zeta together with local correction terms. In the retained Mathia view, a transform places the same test function on the prime and zero sides; the function-field analogue admits a Lefschetz trace interpretation.",
+        "relation_to_research": "The explicit formula is a central bridge rather than an RH equivalence by itself. It makes proposed spectral, positivity, and geometric mechanisms answerable against the exact arithmetic terms they must reproduce.",
+        "scope_and_limits": "The identity does not force critical-line zero location. Test-function hypotheses, smoothing, local terms, signs, and convergence cannot be dropped, and qwen reports no located complete Lean proof of the theorem family."
+      },
+      "related": [
+        {"id": "PA-weil-positivity-criterion", "relation": "used_by"},
+        {"id": "PA-connes-adele-class-trace-program", "relation": "used_by"}
+      ],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_e6e5530160066dd21f70f6142869ef61feb8145f9476c88b9e371df0e193d7c4",
+          "source_ids": ["bombieri2000_clay"],
+          "source_unit_ids": ["bombieri2000_u02_explicit_trace_dictionary"]
+        },
+        {
+          "family": "qwen-riemann-atlas",
+          "entry_id": "explicit-formula",
+          "source_ids": ["riemann-1859", "titchmarsh-zeta"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": true, "cross_repository_status_merge": true, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-classical-zeta-zero-free-region",
+      "canonical_name": "Classical zeta zero-free region",
+      "aliases": ["classical zero-free-region method"],
+      "kind": "partial-result-family",
+      "topics": ["riemann-hypothesis", "zero-free-region", "prime-number-theorem"],
+      "canonical_identity": ["qwen-entry:classical-zero-free-region"],
+      "sections": {
+        "what_it_is": "A family of proved regions excluding zeta zeros near the line Re(s)=1. The retained Mathia source describes the mechanism as converting upper bounds for zeta into a forbidden region and distinguishes the classical inverse-log boundary from the stronger Vinogradov–Korobov-scale shape.",
+        "relation_to_research": "Zero-free regions give unconditional partial control of zeros and support quantitative prime-number-theorem error bounds. They are a classical-method baseline for any proposed Mathia route that claims only near-one exclusion.",
+        "scope_and_limits": "These regions are strictly weaker than RH and do not locate every nontrivial zero on the critical line. Exact constants and formula-sensitive boundaries are not reconstructed from OCR-damaged passages. qwen records only verified components in an external Lean project, not a complete formalization of every historical refinement."
+      },
+      "related": [],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_00e9a28503844e67735f3d5861caf6cd75963cbd96ed696e397eac7b0ca0a2ab",
+          "source_ids": ["openalex_w1980950385"],
+          "source_unit_ids": ["full_openalex_w1980950385_u01"]
+        },
+        {
+          "family": "qwen-riemann-atlas",
+          "entry_id": "classical-zero-free-region",
+          "source_ids": ["davenport-mnt"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": true, "cross_repository_status_merge": true, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-finite-field-riemann-hypothesis-via-frobenius-cohomology",
+      "canonical_name": "Finite-field Riemann hypothesis via Frobenius cohomology",
+      "aliases": ["function-field RH mechanism", "Frobenius-cohomology analogy"],
+      "kind": "proved-analogue",
+      "topics": ["riemann-hypothesis", "finite-fields", "cohomology"],
+      "canonical_identity": ["mathia-mechanism:finite-field-frobenius-cohomology"],
+      "sections": {
+        "what_it_is": "In the zeta theory of varieties over finite fields, reciprocal zeros and poles are interpreted as Frobenius eigenvalues on étale cohomology, and geometric positivity constrains their magnitudes. The retained curve-level discussion presents Euler product, functional equation, and the finite-field RH as a proved structural package.",
+        "relation_to_research": "This is a proved analogue and a source of exact roles—Frobenius, cohomology, duality, and positivity—that a classical geometric proposal may try to reproduce. It is one of the strongest retained structural analogies for RH.",
+        "scope_and_limits": "The function-field theorem does not transfer a proof to the classical Riemann zeta function. The note does not infer that an analogous classical geometric object exists, and it preserves the distinction between zeros themselves and the reciprocal characteristic roots interpreted as eigenvalues."
+      },
+      "related": [{"id": "PA-riemann-explicit-formula", "relation": "function-field-analogue-of"}],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_3ab29ed75d4706358a9c1f3082fe6e867e9df25e7c937b252f5923ff6915a348",
+          "source_ids": ["bombieri2000_clay"],
+          "source_unit_ids": ["bombieri2000_u01_finite_field_analogy"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": false, "cross_repository_status_merge": false, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-connes-adele-class-trace-program",
+      "canonical_name": "Connes adele-class trace program",
+      "aliases": ["Connes absorption-spectrum program", "adele-class spectral realization"],
+      "kind": "research-program",
+      "topics": ["riemann-hypothesis", "noncommutative-geometry", "trace-formula"],
+      "canonical_identity": ["mathia-mechanism:connes-adele-class-trace"],
+      "sections": {
+        "what_it_is": "A noncommutative-geometric spectral program in which zeta or L-function zeros appear as missing states or an absorption spectrum for an idele-class action on adele-class spaces. Retained local and finite-place trace formulas recover corresponding explicit-formula terms, while noncritical zeros are represented as resonances.",
+        "relation_to_research": "The program aims to make the explicit formula a genuine global trace formula and to explain the sign that obstructs a naive emitted-spectrum picture. It supplies concrete local constructions and a disciplined alternative to a bare Hilbert–Pólya analogy.",
+        "scope_and_limits": "The retained source explicitly leaves the decisive global trace formula open and does not claim Weil positivity or RH. Local trace results, a spectral interpretation, and a completed global proof are separate statuses."
+      },
+      "related": [
+        {"id": "PA-riemann-explicit-formula", "relation": "uses"},
+        {"id": "PA-hilbert-polya-program", "relation": "refines"}
+      ],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_a029cfa9491cef55943dec495020806300b55a1ddf572887dd5092ebed05d19f",
+          "source_ids": ["connes1999_trace_formula"],
+          "source_unit_ids": ["connes1999_u01_absorption_spectrum"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": true, "manual_merge": false, "cross_repository_status_merge": false, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-levinson-conrey-mollifier-method",
+      "canonical_name": "Levinson-Conrey mollifier method",
+      "aliases": ["mollifier method for critical-line proportions"],
+      "kind": "partial-result-method",
+      "topics": ["riemann-hypothesis", "mollifier", "critical-line-zeros"],
+      "canonical_identity": ["mathia-mechanism:levinson-conrey-mollifier"],
+      "sections": {
+        "what_it_is": "A method for proving lower bounds on the proportion of zeta zeros on the critical line by multiplying or combining zeta and its derivatives with a tunable Dirichlet-polynomial mollifier. The retained Conrey analysis identifies longer mollifiers, mean-value asymptotics, Kloosterman-sum control, and variational optimization as distinct components.",
+        "relation_to_research": "It is a classical partial-progress route that demonstrates how representation choice and an auxiliary approximation can make a zero-location problem tractable without resolving all zeros.",
+        "scope_and_limits": "A positive critical-line proportion is not RH. Claimed improvements depend on the admissible mollifier length and all required twisted-moment or error estimates; an unproved supporting estimate cannot be counted as an achieved bound."
+      },
+      "related": [],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_24e7457c0ba683483a914f413347edd046d2b8987255e10c658d774614e27e79",
+          "source_ids": ["conrey1989_two_fifths"],
+          "source_unit_ids": ["conrey1989_u01_longer_mollifier_synthesis"]
+        },
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_fc2d8f8ba971f38ebc78363d5b4303b21567470ce5b262132e29653fec3fa352",
+          "source_ids": ["conrey1989_two_fifths"],
+          "source_unit_ids": ["conrey1989_u02_variational_freedom_v1"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": true, "cross_repository_status_merge": false, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-bost-connes-system",
+      "canonical_name": "Bost-Connes system",
+      "aliases": ["Bost-Connes quantum statistical mechanical system"],
+      "kind": "mathematical-system",
+      "topics": ["riemann-zeta", "operator-algebras", "phase-transition"],
+      "canonical_identity": ["mathia-mechanism:bost-connes-system"],
+      "sections": {
+        "what_it_is": "An arithmetic quantum statistical mechanical system in which the Riemann zeta function occurs as thermodynamic counting data and its pole corresponds to a phase transition in the equilibrium-state structure. The retained analysis also records an arithmetic symmetry acting on the low-temperature phases.",
+        "relation_to_research": "For Mathia this is a concrete bridge from zeta to operator-algebraic dynamics and symmetry. It is relevant as an established realization of arithmetic information, not as a zero criterion.",
+        "scope_and_limits": "Encoding zeta as a partition function does not locate its nontrivial zeros and does not prove RH. This note does not merge the system with Connes's separate adele-class trace program merely because both use noncommutative geometry."
+      },
+      "related": [],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_5c15bf26f81b2f6ba02b9901e20ba5f42085cda3372ab7bbce1775f329cab8ad",
+          "source_ids": ["aim2004_resource"],
+          "source_unit_ids": ["aim2004_u38_bost_connes_phase_transition"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": false, "cross_repository_status_merge": false, "proof_status_statement": false}
+    },
+    {
+      "id": "PA-mertens-conjecture",
+      "canonical_name": "Mertens conjecture",
+      "aliases": [],
+      "kind": "disproved-conjecture",
+      "topics": ["riemann-hypothesis", "mobius", "obstruction"],
+      "canonical_identity": ["qwen-entry:mertens-conjecture"],
+      "sections": {
+        "what_it_is": "The historical assertion that the absolute value of the summatory Möbius function stays below the square-root scale. The retained qwen atlas records it specifically to prevent a false stronger statement from being mistaken for a viable open criterion.",
+        "relation_to_research": "The conjecture would imply RH, so it is a useful negative prior-art node when a Mathia route accidentally strengthens a legitimate Möbius-summatory RH criterion to this false bound.",
+        "scope_and_limits": "The Mertens conjecture is disproved. Its failure does not disprove RH, and this note does not conflate it with weaker Möbius-summatory conditions that are equivalent to RH."
+      },
+      "related": [],
+      "evidence": [
+        {
+          "family": "qwen-riemann-atlas",
+          "entry_id": "mertens-conjecture",
+          "source_ids": ["titchmarsh-zeta"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": false, "cross_repository_status_merge": false, "proof_status_statement": true}
+    },
+    {
+      "id": "PA-random-matrix-model-for-zeta-zeros",
+      "canonical_name": "Random matrix model for zeta zeros",
+      "aliases": ["GUE model for zeta-zero statistics", "unitary random-matrix analogy"],
+      "kind": "heuristic-framework",
+      "topics": ["riemann-hypothesis", "random-matrix", "zero-statistics"],
+      "canonical_identity": ["mathia-mechanism:random-matrix-zeta-zero-model"],
+      "sections": {
+        "what_it_is": "A statistical analogy between locally unfolded zeta-zero ordinates and eigenvalues from unitary random-matrix ensembles. The retained Montgomery analysis uses an extrapolated form factor and Dyson's comparison to select the unitary symmetry class.",
+        "relation_to_research": "The model predicts local spacing and correlation behavior and constrains a prospective spectral realization. It provides a transfer laboratory for testing whether a proposed mechanism reflects universal statistics or arithmetic structure specific to zeta.",
+        "scope_and_limits": "Statistical agreement is not equality of spectra, an operator construction, or an implication of RH. Unfolding removes absolute height and global density information, and the full zeta pair-correlation law remains conjectural."
+      },
+      "related": [
+        {"id": "PA-montgomery-pair-correlation", "relation": "supports"},
+        {"id": "PA-hilbert-polya-program", "relation": "constrains"}
+      ],
+      "evidence": [
+        {
+          "family": "mathia-riemann-v2",
+          "object_id": "mathia_interpretation_b1e71662ae78a6f67808b82c7e85718cbba0067b9aeebed5b5a7d262dccd5d0e",
+          "source_ids": ["montgomery1973_pair_correlation"],
+          "source_unit_ids": ["montgomery1973_u02_unitary_analogy"]
+        }
+      ],
+      "review": {"calibration": true, "strong_rh_relation": false, "manual_merge": true, "cross_repository_status_merge": false, "proof_status_statement": true}
+    }
+  ]
+}

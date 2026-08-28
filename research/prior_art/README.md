@@ -61,8 +61,9 @@ materialized:
 
 | Canonical ID | Historical records to collapse | Boundary retained |
 | --- | --- | --- |
-| `PA-baez-duarte-criterion` | Mathia's `baezduarte2003_nyman` source family and qwen atlas entry `baez-duarte-criterion` / source `baez-duarte-2002` | The discrete strengthening remains distinct from the broader Nyman–Beurling criterion |
+| `PA-baez-duarte-criterion` | Mathia coefficient/decay analyses and qwen atlas entry `baez-duarte-criterion` | The sequence criterion remains distinct from the discrete strengthening of Nyman–Beurling |
 | `PA-nyman-beurling-criterion` | Repeated Mathia units about the functional-analytic closure criterion and qwen entry `nyman-beurling-criterion` | No constructive approximating sequence or Lean proof is inferred |
+| `PA-baez-duarte-strengthening-of-nyman-beurling` | Mathia source `baezduarte2003_nyman` and qwen source `baez-duarte-2002`, both bound to arXiv `math/0202141` | Preprint/publication identity is merged, but this theorem is not merged with the Báez-Duarte sequence criterion |
 | `PA-de-bruijn-newman-deformation` | Repeated heat-flow/threshold analyses and qwen entry `debruijn-newman` | The proved lower bound and RH-equivalent upper-bound condition remain distinct |
 | `PA-montgomery-pair-correlation` | Mathia zero-statistics interpretations and qwen entry `montgomery-pair-correlation` | Conjectural/statistical evidence is not promoted to an RH implication |
 | `PA-hilbert-polya-program` | Spectral-program and quantum-chaos source units | A program/conditional mechanism is not a constructed operator or proof |
@@ -101,8 +102,32 @@ exact repository paths plus object/unit/source IDs, or a qwen-lean repository,
 revision, path, and atlas/source ID. Related-note links are ordinary relative
 Markdown links; no graph ontology is introduced here.
 
+## Checkpoint B: calibration audit
+
+The first materialized set contains 17 heterogeneous nodes: six criteria, one
+criterion plus partial result, two research programs, one theorem family, two
+partial-result families/methods, one proved analogue, one conjecture, one
+disproved conjecture, one heuristic framework, and one mathematical system. It
+includes nine notes with a strong or conditional RH relation, ten manual
+canonicalization decisions, and eight notes that combine Mathia and qwen
+provenance.
+
+Every calibration note was checked for identity, status, claim strength,
+granularity, provenance, and usefulness. The audit found one material initial
+over-merge: the Báez-Duarte sequence criterion had been conflated with
+Báez-Duarte's discrete strengthening of Nyman–Beurling. They are now separate
+nodes. Only the 2002 preprint / 2003 publication identity for arXiv
+`math/0202141` is merged. The audit also removed an unsupported relation between
+the Bost–Connes system and the adele-class trace program, and corrected the
+function-field explicit-formula relation from a historical claim to an analogy.
+
+The calibration passed deterministic rendering, accepted-evidence resolution,
+exact qwen blob/ID checks, stable-ID checks, and link checks. The small schema was
+sufficient; scaling continues without adding an ontology or changing the note
+contract.
+
 ## Status
 
-Checkpoint A records the complete input-family inventory and the schema. The
-canonical note set, deterministic decisions, coverage accounting, and validation
-evidence are added after calibration under the same contract.
+Checkpoints A and B are complete. The remaining work is full retained-family
+coverage, final deterministic validation, and the required fresh independent
+review.
