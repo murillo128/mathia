@@ -1,12 +1,83 @@
 {
   "collapse-filter": false,
-  "search": "path:research",
+  "search": "path:research (path:findings OR path:mind OR path:graph OR path:prior_art OR path:clues) -file:README -file:COVERAGE -file:FINDINGS -file:SOURCES -file:LEAN_CANDIDATES",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
-  "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:findings /(?im)^\\*\\*(Status|Evidence\\/status):\\*\\*.*(NEGATIVE|OBSTRUCTION|BRANCH-CLOSED|NOVELTY-DOWNGRADE|PRIOR-ART)/",
+      "color": {
+        "a": 1,
+        "rgb": 14703194
+      }
+    },
+    {
+      "query": "path:findings /(?im)^\\*\\*(Status|Evidence\\/status):\\*\\*.*(POSITIVE|EXACT-DERIVED|LITERATURE\\+DERIVED|PROVED)/",
+      "color": {
+        "a": 1,
+        "rgb": 5025661
+      }
+    },
+    {
+      "query": "path:findings",
+      "color": {
+        "a": 1,
+        "rgb": 10134450
+      }
+    },
+    {
+      "query": "path:research/prior_art",
+      "color": {
+        "a": 1,
+        "rgb": 9133302
+      }
+    },
+    {
+      "query": "path:mind",
+      "color": {
+        "a": 1,
+        "rgb": 13936428
+      }
+    },
+    {
+      "query": "path:clues",
+      "color": {
+        "a": 1,
+        "rgb": 15909198
+      }
+    },
+    {
+      "query": "path:research/prime_circle",
+      "color": {
+        "a": 1,
+        "rgb": 5211895
+      }
+    },
+    {
+      "query": "path:research/prime_flute",
+      "color": {
+        "a": 1,
+        "rgb": 16096834
+      }
+    },
+    {
+      "query": "path:research/prime_lattice",
+      "color": {
+        "a": 1,
+        "rgb": 2930344
+      }
+    },
+    {
+      "query": "path:research/graph",
+      "color": {
+        "a": 1,
+        "rgb": 7041664
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 0,
