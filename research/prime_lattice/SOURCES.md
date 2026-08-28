@@ -99,3 +99,17 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 24. **Jun-ichi Tanaka**, “Dirichlet series induced by the Riemann zeta-function,” *Studia Mathematica* **187**(2) (2008), 157–184. DOI: https://doi.org/10.4064/sm187-2-4.
     - Role: main anchor for `PL-012`. Extends the zeta/Möbius coefficient functions to outer functions in finite `H^q` ergodic Hardy spaces on `T^omega` for every `u>1/2`; proves Haar-a.e. prime-phase twists are analytic and zero-free on `Re(s)>1/2`; explicitly places the distinguished zeta identity orbit inside the exceptional null set because of the pole at `1`; characterizes typical twists as compact-uniform limits of vertical zeta shifts; and proves a weak Lindelöf-equivalent moment theorem after deleting a density-zero subset of heights.
+
+## Weil explicit formula and zeta spectral triples
+
+25. **André Weil**, “Sur les ‘formules explicites’ de la théorie des nombres premiers,” *Comm. Sém. Math. Univ. Lund* (1952), 252–265.
+    - Role: classical explicit-formula/positivity source behind `PL-013`. The completed formula pairs the zeta zero divisor with prime-power contributions and the archimedean place; the non-archimedean von-Mangoldt support is exactly the prime-power axis skeleton in exponent coordinates.
+
+26. **Enrico Bombieri**, “Remarks on Weil’s quadratic functional in the theory of prime numbers, I,” *Atti Accad. Naz. Lincei Rend. Lincei Mat. Appl.* **11**(3) (2000), 183–233.
+    - Role: authoritative analysis of Weil’s quadratic functional and finite truncations; states the positive-semidefinite Weil criterion equivalent to RH. Prior-art/novelty anchor for `PL-013`.
+
+27. **Alain Connes, Caterina Consani**, “Spectral triples and `zeta`-cycles,” *L’Enseignement Mathématique* **69**(1/2) (2023), 93–148. DOI: https://doi.org/10.4171/LEM/1049.
+    - Role: precursor to `PL-013`; restricts the Weil explicit-formula quadratic form to compact support, links its small eigenvectors to prolate spheroidal functions, and builds perturbed spectral triples with numerical low-spectrum agreement with zeta zeros.
+
+28. **Alain Connes, Caterina Consani, Henri Moscovici**, “Zeta spectral triples,” arXiv:2511.22755 [math.NT] (submitted 27 November 2025); EMS Press chapter, DOI: https://doi.org/10.4171/ELM/37/3 (2026).
+    - Role: main current anchor for `PL-013`. Constructs finite-cutoff self-adjoint rank-one perturbations from restrictions of the semilocal Weil form; proves the regularized determinant is the Fourier transform of the extremal vector and has only real zeros under explicit simplicity/evenness hypotheses; reports high-precision numerical agreement with low Riemann zeros; proves convergence of a prolate-wave model transform to `Xi`; and explicitly leaves the bridge from that model to the actual extremal eigenvector/determinant, hence spectral convergence and RH, unproved.
