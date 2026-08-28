@@ -228,18 +228,19 @@ Keep unresolved links and orphan notes hidden in the global view.
 
 A finding must visually preserve **both** dimensions available from the source:
 
-1. **polarity/status class**: negative, positive/constructive, or neutral/unclassified;
-2. **owning research line**.
+1. **owning research line** as the primary visual identity;
+2. **polarity/status class** as a secondary variation: negative, positive/constructive, or neutral/unclassified.
 
-Because built-in Obsidian gives a node only one effective group color, encode the pair as a color matrix:
+Because built-in Obsidian gives a node only one effective group color, encode the pair as a line-specific color family:
 
 ```text
-negative family  = red-family shades, one stable shade per research line
-positive family  = green-family shades, one stable shade per research line
-neutral family   = gray/slate-family shades, one stable shade per research line
+<line> base hue       = one stable, visually distinct hue for the research line
+<line> negative       = darker/deeper shade of that same hue
+<line> positive       = brighter/lighter shade of that same hue
+<line> neutral        = muted/desaturated shade of that same hue
 ```
 
-This makes all negative findings recognizable as one visual family, all positive findings as another, while shade differences preserve the research-line dimension.
+The research-line hue must remain recognizable across all four variants, so spatial clusters communicate ownership at a glance. Polarity is deliberately secondary and should be readable from brightness/saturation within the line family. Do not switch all negative findings to a global red family or all positive findings to a global green family, because that erases the research-line identity.
 
 For **every discovered research line**, maintain exactly these finding groups, in this precedence order:
 
@@ -250,6 +251,8 @@ For **every discovered research line**, maintain exactly these finding groups, i
 ```
 
 Across the complete group list, all negative line-specific groups must precede all positive groups, and all positive groups must precede all neutral groups. Therefore a mixed status such as `DECISIVE-NEGATIVE + EXACT-DERIVED` remains negative.
+
+When a new line is introduced, choose a stable base hue that is visibly distinct from existing research-line hues, then derive its negative/positive/neutral variants from that hue. Preserve existing line families between runs.
 
 ### Stable status classification
 
@@ -287,15 +290,15 @@ After all line×polarity finding groups:
 prior art              -> stable prior-art color
 mind                    -> stable mind color
 clues                   -> stable clue color
-<research line> graph   -> stable base color per line for remaining structural nodes
+<research line> graph   -> stable base hue for that line's remaining structural nodes
 global graph            -> stable fallback
 ```
 
 A new research line therefore normally adds **four** durable presentation groups:
 
-1. negative finding shade;
-2. positive finding shade;
-3. neutral finding shade;
+1. negative shade of its line hue;
+2. positive shade of its line hue;
+3. neutral/muted shade of its line hue;
 4. structural/base line color.
 
 Do not churn existing colors between runs.
