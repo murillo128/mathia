@@ -28,6 +28,11 @@ This file records durable literature dependencies used to support or falsify fin
   - `sum_{n>=1} c_n(m)n^{-s} = sigma_{1-s}(m)/zeta(s)` for `Re(s)>1`.
   Role: identify the reciprocal-zeta, squarefree, and totient factors in PC-015/PC-024 as classical Möbius/Ramanujan Dirichlet-transform structure rather than new spectral data.
 
+## Multiplicative characters, log-sine transforms, and class-number determinants
+
+- H. L. Montgomery and R. C. Vaughan, **The Bateman–Chowla functions**, *The Ramanujan Journal* 70, article 33 (2026). DOI: 10.1007/s11139-026-01410-9. Role: explicit modern statement of the classical primitive-character formulas expressing `L(1,chi)` through Gauss sums and log-sine/weighted residue sums; prior-art anchor for the multiplicative anchored-chord spectrum in PC-025.
+- Q. Yang, N. Wang and S. Kanemitsu, **Determinant expression for the class number of an abelian number field**, *Kyushu Journal of Mathematics* 77 (2023), 237–254. DOI: 10.2206/kyushujm.77.237. Role: finite-abelian-group characters and convolution maps as the basis of discrete Fourier/Dedekind determinant formulas, including the log-sine even part and cyclotomic class-number setting; prior-art anchor showing the determinant version of PC-025 is classical.
+
 ## Fuchsian covers, Selberg factorization, and modular scattering
 
 - A. B. Venkov and P. G. Zograf, **On analogues of the Artin factorization formulas in the spectral theory of automorphic functions connected with induced representations of Fuchsian groups**, *Mathematics of the USSR-Izvestiya* 21:3 (1983), 435–443. DOI: 10.1070/IM1983v021n03ABEH001800. Role: Artin factorization of Selberg zeta functions and automorphic scattering determinants for finite-index Fuchsian subgroups; literature anchor for PC-016/PC-022/PC-023.
