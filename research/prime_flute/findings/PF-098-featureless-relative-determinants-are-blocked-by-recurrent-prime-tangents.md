@@ -1,10 +1,10 @@
-# PF-098 — recurrent prime tangents block standard relative determinants against featureless controls
+# PF-098 — recurrent prime tangents block even compact relative perturbations against featureless controls
 
-**Status:** `DECISIVE-NEGATIVE` for the standard Müller/Borthwick--Judge--Perry relative-zeta route when the reference flute is a smooth/density-matched control whose geometry at infinity omits recurrent prime tangents; `EXACT-GEOMETRIC + OPERATOR-THEORETIC`.
+**Status:** `DECISIVE-NEGATIVE` for compact-, trace-class-, relative-zeta-, and standard relative-scattering comparisons with a smooth/density-matched control whose geometry at infinity omits a recurrent prime tangent; `EXACT-GEOMETRIC + OPERATOR-THEORETIC + LITERATURE-AUDITED`.
 
 ## Claim
 
-A natural response to the failure of the absolute Selberg/Laplacian determinant is to compare the prime-flute with a featureless reference surface: for example the exact orthogonal-circle flute obtained from a smooth prime-number-theorem sampling sequence `q_n` with
+Let `X_prime` be the exact zero-twist hyperbolic prime-flute and let `X_0` be a marked featureless control flute, for example one obtained from a smooth prime-number-theorem sampling sequence
 
 \[
 q_n\sim p_n,
@@ -12,41 +12,50 @@ q_n\sim p_n,
 \frac{q_{n+1}-q_n}{q_n-q_{n-1}}\to1,
 \]
 
-or the simpler integer control used in PF-088.
+or from an integer/equal-spacing reference. Assume that, along one recurrent isolated prime pattern `H` supplied by PF-034/PF-046, the corresponding marked windows in `X_0` have a pointed limit `Y_0` which is not the prime tangent `Y_H` and in particular omits its short primitive separator.
 
-This does **not** produce a standard relative determinant. The obstruction is stronger than divergence of a particular Euler product: the two Laplacians are not a trace-class perturbation in the relative heat sense required by the classical relative-zeta formalism.
+After the canonical pants marking, with the volume-density correction included so that
 
-More generally, let `X_0` be any marked control flute whose pointed geometric limit set at infinity omits one recurrent isolated prime tangent `Y_H` supplied by PF-034/PF-046. Then there exists `t_0>0` such that, after the canonical pants marking identifies the two `L^2` spaces,
+\[
+U:L^2(X_0)\to L^2(X_{\rm prime})
+\]
+
+is unitary, there exists `t_0>0` such that
 
 \[
 \boxed{
- e^{-t_0\Delta_{X_{\rm prime}}}
- -Ue^{-t_0\Delta_{X_0}}U^{-1}
- \notin \mathcal S_1.
+T_{t_0}
+:=e^{-t_0\Delta_{X_{\rm prime}}}
+-Ue^{-t_0\Delta_{X_0}}U^{-1}
+\quad\text{is not compact.}
 }
+\tag{1}
 \]
 
-Consequently the standard relative heat trace
+Consequently, for the nonnegative self-adjoint Laplacians,
 
 \[
-\operatorname{Tr}
-\left(e^{-t\Delta_{X_{\rm prime}}}
--Ue^{-t\Delta_{X_0}}U^{-1}\right)
+\boxed{
+(\Delta_{X_{\rm prime}}+1)^{-1}
+-U(\Delta_{X_0}+1)^{-1}U^{-1}
+\quad\text{is not compact.}
+}
+\tag{2}
 \]
 
-is not available for all `t>0`, and the usual relative zeta/determinant construction cannot be applied to this pair.
+This strictly strengthens the previous trace-class obstruction: the two Laplacians do not even define the same element modulo compact operators under this natural marking. Hence a featureless control cannot serve as a standard relatively compact background, let alone a resolvent-comparable/trace-class background for Birman--Krein spectral shift, relative scattering, or Müller/Borthwick--Judge--Perry relative determinants.
 
-The mathematical mechanism is a **tangent-hull mismatch at infinity**: a local spectral defect that recurs infinitely often with nonvanishing size cannot become trace class merely because the occurrences have zero density.
+The mechanism is a **recurrent tangent-hull mismatch at infinity**. An order-one local spectral defect which recurs in disjoint regions cannot be hidden by a compact perturbation merely because its occurrences have zero density.
 
-## 1. The distinguished cuffs already show an order-one mismatch at infinitely many escaping blocks
+## 1. Exact prime geometry supplies an order-one recurrent local defect
 
-PF-046 gives, for every sufficiently large prescribed `B`, a fixed finite prime pattern
+PF-046 gives, for every sufficiently large fixed `B`, a finite offset pattern
 
 \[
 H_B=\{\eta_1<\cdots<\eta_r\}
 \]
 
-which occurs infinitely often as an isolated block of consecutive primes. For its first two internal gaps
+which occurs infinitely often as an isolated block of consecutive primes, with exterior prime-free collars tending to infinity. For the first two internal gaps
 
 \[
 d_1=\eta_2-\eta_1,
@@ -54,21 +63,22 @@ d_1=\eta_2-\eta_1,
 d_2=\eta_3-\eta_2,
 \]
 
-one may force
+one can force
 
 \[
 \boxed{
 \frac{d_1}{d_2}<\frac1{B-1}.
 }
+\tag{3}
 \]
 
-At an occurrence near prime scale `P`, the distinguished cuffs satisfy
+At an occurrence near prime scale `P`, the distinguished cuffs obey
 
 \[
 \ell_i(P)=2\log\frac{4P}{d_i}+o(1),
 \]
 
-hence
+so
 
 \[
 \boxed{
@@ -77,10 +87,10 @@ hence
 2\log\frac{d_2}{d_1}
 >2\log(B-1).
 }
-\tag{1}
+\tag{4}
 \]
 
-The same exact orthogonal-circle block has the canonical short separator
+More importantly, the exact orthogonal-circle construction turns the same gap ratio into an intrinsic tangent separator
 
 \[
 \boxed{
@@ -88,248 +98,280 @@ The same exact orthogonal-circle block has the canonical short separator
 \qquad
 L_B\to0\quad(B\to\infty).
 }
-\tag{2}
-\]
-
-Thus the extreme cuff contrast is not merely an arithmetic label. It survives as a genuine primitive hyperbolic length in the pointed tangent `Y_{H_B}`.
-
-Now compare this with a density-matched smooth control `q_n` whose consecutive spacings are locally regular. For every fixed window,
-
-\[
-\frac{q_{n+k+1}-q_{n+k}}{q_{n+1}-q_n}\to1.
-\]
-
-After the same affine/Möbius normalization used to take prime tangents, the control windows therefore converge to the regular equal-spacing orthogonal-circle model. Its relevant local cross-ratios stay in a compact subset of `(0,\infty)`, so the corresponding primitive separator lengths are bounded away from zero.
-
-Choosing `B` sufficiently large gives
-
-\[
-\boxed{
-L_B<\frac12\,\operatorname{syst}_{\rm loc}(Y_0),
-}
-\tag{3}
-\]
-
-where `Y_0` denotes the regular pointed control model and `syst_loc` means the shortest primitive closed geodesic visible in the fixed marked core under consideration.
-
-The mismatch in (1)--(3) occurs at **infinitely many disjoint locations escaping to infinity** in the same prime-flute.
-
-## 2. A local heat observable distinguishes the two pointed limits
-
-Let `K` be a compact core of `Y_{H_B}` containing the short separator from (2), and choose a smooth cutoff
-
-\[
-0\le\chi\le1
-\]
-
-supported in a slightly larger core. PF-064/PF-094 provide exactly the locality needed here: along isolated occurrences `P_m`, the exterior collars diverge, finite propagation gives convergence of the localized wave kernels to the tangent wave kernel, and the primitive singularity at time `L_B` survives.
-
-For the smooth control, the corresponding marked cores converge instead to `Y_0`. By (3), its localized wave trace has no primitive singularity at `L_B`.
-
-Therefore the two localized spectral measures cannot be equal. Equivalently, their Laplace transforms cannot agree for every positive time. Hence there exists
-
-\[
-t_0>0
-\]
-
-such that
-
-\[
-\boxed{
- a_H(t_0)
- :=\operatorname{Tr}\bigl(\chi e^{-t_0\Delta_{Y_{H_B}}}\chi\bigr)
- \ne
- a_0(t_0)
- :=\operatorname{Tr}\bigl(\chi_0 e^{-t_0\Delta_{Y_0}}\chi_0\bigr).
-}
-\tag{4}
-\]
-
-This implication uses no global trace formula. Equality of the localized heat traces for every `t>0` would imply equality of the corresponding localized spectral measures by uniqueness of the Laplace transform; their cosine transforms would then give identical localized wave distributions, contradicting the short primitive orbit present only on the prime tangent.
-
-Let `\chi_m` be the transplanted cutoff on the `m`-th isolated occurrence. The supports can be chosen pairwise disjoint. Pointed heat-kernel convergence then gives
-
-\[
-\operatorname{Tr}\bigl(\chi_m e^{-t_0\Delta_{X_{\rm prime}}}\chi_m\bigr)
-\longrightarrow a_H(t_0),
 \tag{5}
 \]
 
-whereas the marked control gives
+Thus the cuff fluctuation is not merely a coordinate label: it survives the pointed normalization as a primitive closed geodesic of the finite-area tangent `Y_{H_B}`.
+
+For a smooth/equal-spacing control, every fixed normalized window converges instead to a regular model whose relevant local cross-ratios remain in a compact subset of `(0,\infty)`. Hence its corresponding primitive separator lengths are bounded away from zero. Choosing `B` large gives a strict local spectral-geometric mismatch between `Y_{H_B}` and the control limit `Y_0`.
+
+All quantities in (3)--(5) come from the exact orthogonal-circle/cross-ratio geometry. The asymptotic cuff formula is only the translation back to the distinguished `ell_n` coordinates.
+
+## 2. The two pointed limits have different localized heat operators
+
+Choose a compact marked core `K` of `Y_{H_B}` containing the primitive geodesic of length `L_B`, and a smooth cutoff `chi` supported in a slightly larger core.
+
+PF-064/PF-094 show that the isolated occurrences converge on larger and larger marked neighborhoods to `Y_{H_B}` and that the localized wave distribution detects the primitive orbit at `t=L_B`. The corresponding smooth-control windows converge to `Y_0`, which has no primitive orbit at that time after `B` is chosen as above.
+
+Therefore the localized spectral measures of the two limits are not identical. If
 
 \[
-\operatorname{Tr}\bigl(\chi_m Ue^{-t_0\Delta_{X_0}}U^{-1}\chi_m\bigr)
-\longrightarrow a_0(t_0).
-\tag{6}
+\chi e^{-t\Delta_{Y_{H_B}}}\chi
 \]
 
-Thus the localized relative heat traces converge to the nonzero constant
+and the corresponding marked localized heat operator for `Y_0` agreed for every `t>0`, their localized heat traces would agree for every `t`; uniqueness of the Laplace transform would then give identical localized spectral measures and hence identical localized wave distributions, contradicting the primitive singularity at `L_B`.
+
+Thus there exists `t_0>0` for which the self-adjoint localized difference
+
+\[
+A_H(t_0)
+:=
+\chi e^{-t_0\Delta_{Y_{H_B}}}\chi
+-
+J\chi_0e^{-t_0\Delta_{Y_0}}\chi_0J^{-1}
+\]
+
+is nonzero, where `J` is the fixed unitary identification on the marked limit cores.
+
+Because `A_H(t_0)` is self-adjoint and nonzero, there is a compactly supported unit vector `f` in the core such that
 
 \[
 \boxed{
-c_H(t_0):=a_H(t_0)-a_0(t_0)\ne0.}
+\langle f,A_H(t_0)f\rangle=c_H\ne0.
+}
+\tag{6}
+\]
+
+The heat-flow passage under pointed metric-measure convergence is standard. In particular, Gigli--Mondino--Savaré prove stability of heat flows under pointed measured convergence in the `RCD(K,\infty)` setting; the present smooth constant-curvature pointed limits are a much more rigid special case. No global trace formula or global scattering theory for the infinite flute is used here.
+
+## 3. Recurrence upgrades the local defect to noncompactness
+
+Let `f_m` be the transplant of `f` to the `m`-th isolated occurrence of `H_B` in `X_prime`, using the same marked coordinate to choose the corresponding test vector on `X_0`.
+
+The occurrences can be chosen pairwise disjoint and escaping every compact set. Therefore
+
+\[
+\|f_m\|=1,
+\qquad
+f_m\rightharpoonup0.
 \tag{7}
 \]
 
-## 3. Infinitely repeated nonzero local trace blocks are incompatible with trace class
-
-Set
+Pointed heat-flow convergence on the prime occurrences and on the corresponding control windows gives
 
 \[
-T_{t_0}
-=e^{-t_0\Delta_{X_{\rm prime}}}
--Ue^{-t_0\Delta_{X_0}}U^{-1}.
-\]
-
-Suppose, for contradiction, that `T_{t_0}` were trace class.
-
-Because the cutoffs have pairwise disjoint supports, for every finite `N` and phases `\varepsilon_m` with `|\varepsilon_m|=1`,
-
-\[
-B_N:=\sum_{m=1}^N\varepsilon_m\chi_m^2
-\]
-
-satisfies
-
-\[
-\|B_N\|\le1.
-\]
-
-Choose `\varepsilon_m` to align the phases of
-
-\[
-\operatorname{Tr}(\chi_mT_{t_0}\chi_m).
-\]
-
-Cyclicity of the trace gives
-
-\[
-\sum_{m=1}^N
-\left|
-\operatorname{Tr}(\chi_mT_{t_0}\chi_m)
-\right|
-=
-|\operatorname{Tr}(B_NT_{t_0})|
-\le
-\|T_{t_0}\|_{\mathcal S_1}.
+\boxed{
+\langle f_m,T_{t_0}f_m\rangle
+\longrightarrow c_H\ne0.
+}
 \tag{8}
 \]
 
-But (5)--(7) imply
+If `T_{t_0}` were compact, every bounded weakly-null sequence would be sent to a norm-null sequence:
 
 \[
-\left|
-\operatorname{Tr}(\chi_mT_{t_0}\chi_m)
-\right|
-\longrightarrow |c_H(t_0)|>0.
+\|T_{t_0}f_m\|\to0.
 \]
 
-The left side of (8) therefore grows linearly in `N`, a contradiction. Hence
+But Cauchy--Schwarz and (8) imply
 
 \[
-\boxed{T_{t_0}\notin\mathcal S_1.}
+\liminf_m\|T_{t_0}f_m\|
+\ge |c_H|>0,
+\]
+
+a contradiction. Hence (1) holds:
+
+\[
+\boxed{T_{t_0}\notin\mathcal K.}
 \tag{9}
 \]
 
-This is the central obstruction. Notice that the recurrence frequency is irrelevant: **infinitely many** asymptotically identical defects are enough. PF-068 showed that a fixed pattern has zero area density; PF-098 shows that zero density is still far too large for trace-class relative spectral theory when the amplitude of each defect does not decay.
-
-## 4. Consequence for relative zeta functions, determinants and scattering
-
-Müller's relative-zeta construction for noncompact operators starts from a pair `(A,A_0)` for which the relative heat operator
+This argument is stronger and simpler than the earlier trace-norm summation: it needs only one nonzero local matrix element repeated infinitely often, not summability estimates. In particular
 
 \[
-e^{-tA}-e^{-tA_0}
+T_{t_0}\notin\mathcal K
+\quad\Longrightarrow\quad
+T_{t_0}\notin\mathcal S_p
+\quad\text{for every finite }p,
 \]
 
-is trace class, together with the required small- and large-time asymptotics. The relative zeta function is obtained by Mellin transforming its trace. Borthwick--Judge--Perry use this architecture for infinite-area surfaces that are hyperbolic near infinity under controlled conformal perturbations, obtaining relative determinants whose divisors encode eigenvalues and resonances.
+so the previous `S_1` obstruction follows immediately.
 
-Equation (9) fails before any analytic continuation question arises. Therefore a smooth/PNT/integer control whose tangent hull omits recurrent prime tangents cannot serve as the reference in that standard architecture.
+The recurrence frequency is irrelevant. Infinitely many disjoint occurrences with nondecaying local response suffice; zero area density does not help.
 
-The same obstruction also rules out any ordinary Birman--Krein/relative-scattering setup that assumes a trace-class resolvent/heat perturbation of such a featureless reference. It does **not** rule out a new renormalized trace which explicitly subtracts each recurrent tangent sector; that would be a different construction and would need a canonical geometric prescription.
+## 4. The resolvent difference is also noncompact
 
-## 5. Why the projective-prime reference behaves differently
+The heat statement is not merely a defect of the chosen semigroup observable. Let
 
-PF-087 found a trace-class object in `Re s>1/4`, but it compares
+\[
+A=\Delta_{X_{\rm prime}},
+\qquad
+B=U\Delta_{X_0}U^{-1}.
+\]
+
+Both are nonnegative self-adjoint operators. Suppose
+
+\[
+R_A:=(A+1)^{-1},
+\qquad
+R_B:=(B+1)^{-1}
+\]
+
+satisfied
+
+\[
+R_A-R_B\in\mathcal K.
+\tag{10}
+\]
+
+Define the continuous function on `[0,1]`
+
+\[
+F_t(r)=
+\begin{cases}
+\exp\!\left[-t\left(r^{-1}-1\right)\right],&r>0,\\
+0,&r=0.
+\end{cases}
+\]
+
+Functional calculus gives exactly
+
+\[
+F_t(R_A)=e^{-tA},
+\qquad
+F_t(R_B)=e^{-tB}.
+\]
+
+The quotient map to the Calkin algebra is a `C^*`-homomorphism. Equation (10) would therefore imply
+
+\[
+e^{-tA}-e^{-tB}\in\mathcal K
+\qquad\text{for every }t>0,
+\]
+
+contradicting (9) at `t=t_0`.
+
+Hence
+
+\[
+\boxed{R_A-R_B\notin\mathcal K.}
+\tag{11}
+\]
+
+This is the natural operator-theoretic endpoint of the obstruction. Weyl's classical theorem says compact resolvent differences preserve essential spectrum; here the recurrent tangent mismatch prevents even entry into that perturbative equivalence class. The statement does **not** imply that the two essential spectral sets cannot coincide accidentally; it says they cannot be related by the standard compact-resolvent comparison under the natural marking.
+
+## 5. Consequences for relative zeta, scattering and spectral shift
+
+The classical relative constructions require hypotheses much stronger than compactness:
+
+- Müller's relative zeta/determinant architecture assumes trace-class relative heat operators plus controlled asymptotics;
+- Birman--Krein spectral-shift and standard relative-scattering frameworks use resolvent-comparable or trace-class perturbations;
+- Borthwick--Judge--Perry obtain relative determinants for controlled hyperbolic perturbations near infinity.
+
+PF-098 now fails one level earlier. A smooth/PNT/integer control that omits a recurrent prime tangent is not merely non-trace-class relative to `X_prime`; its resolvent difference is not compact. Therefore no standard perturbative completion of this featureless-background idea can repair the problem by replacing `trace class` with `Hilbert--Schmidt`, another Schatten class, or ordinary relative compactness.
+
+This closes the natural branch
+
+\[
+\boxed{
+\text{prime-flute}
+-
+\text{smooth featureless flute}
+\to
+\text{compact/trace-class relative Laplacian}
+\to
+\text{spectral shift / relative scattering / determinant}.
+}
+\tag{12}
+\]
+
+A genuinely different renormalization could still exist, but it would have to retain or explicitly quotient the recurrent tangent hull rather than regard prime-gap geometry as a perturbation vanishing at infinity.
+
+## 6. Why the prime-indexed projective reference is not contradicted
+
+PF-087 compares the exact endpoint sequence
 
 \[
 x_n^E=\pi\cot\frac{\pi}{p_n}
-\qquad\text{with}\qquad
+\]
+
+with the projective reference
+
+\[
 x_n^0=p_n.
 \]
 
-Crucially, both sides are sampled at the **same primes**. They therefore share the full finite projective gap/tangent hull. Their difference is the finite-scale nonprojectivity of the endpoint map, beginning with the Schwarzian defect
+Those two constructions are sampled at the **same primes** and hence share every finite projective gap tangent. Their direct-channel difference begins only with the decaying nonprojective endpoint defect, controlled by
 
 \[
-S\!\left(\pi\cot\frac{\pi}{p}\right)=\frac{2\pi^2}{p^4}
+S\!\left(\pi\cot\frac{\pi}{p}\right)=\frac{2\pi^2}{p^4}.
 \]
 
-from PF-082. That defect decays along the end, which is precisely the kind of behavior compatible with trace-class direct-channel comparison.
+That is precisely why the direct scattering difference can be trace class for `Re s>1/4`: the comparison has already matched the nondecaying tangent hull before subtracting the finite-scale exact-circle correction.
 
-PF-088 then showed that the `Re s=1/4` boundary of that direct operator is already present for integer sampling, so the exponent itself is universal one-dimensional propagation rather than prime arithmetic.
-
-This exposes a useful no-go tension:
+The contrast is therefore structural:
 
 \[
 \boxed{
 \begin{array}{c}
-\text{featureless reference}\;\Rightarrow\;
-\text{keeps prime-gap contrast but misses recurrent tangent hull}\;\Rightarrow\;
-\text{not relative trace class},\\[1mm]
-\text{prime-indexed projective reference}\;\Rightarrow\;
-\text{matches tangent hull and admits a decaying direct defect}\;\Rightarrow\;
-\text{subtracts the projective gap geometry itself}.
+\text{featureless reference}
+\Rightarrow
+\text{retains prime-gap contrast but mismatches recurrent tangents}
+\Rightarrow
+\text{not even relatively compact},\\[2mm]
+\text{prime-indexed projective reference}
+\Rightarrow
+\text{matches the tangent hull}
+\Rightarrow
+\text{only a decaying exact-circle defect remains}.
 \end{array}}
-\tag{10}
+\tag{13}
 \]
 
-Thus one cannot obtain a standard natural determinant merely by choosing a smooth null model and hoping that prime-gap fluctuations appear as a trace-class perturbation.
+PF-088 still warns that the `Re s=1/4` threshold of the direct-channel operator is universal one-dimensional propagation rather than prime arithmetic.
 
-## 6. Exact geometry and interior/exterior duality
+## 7. Interior/exterior duality
 
-The obstruction is not an artifact of the cuff asymptotic. The short tangent separator is computed from the exact orthogonal-circle cross-ratio, and the localized wave/heat distinction is intrinsic to the resulting hyperbolic surface.
+The obstruction is intrinsic. The recurrent separator length is a cross-ratio invariant, the Laplacian and heat flow are intrinsic to the hyperbolic surface, and the test-vector argument is invariant under isometry.
 
-The asymptotic
+The ambient inversion exchanging the interior/exterior orthogonal-circle realizations therefore transports the same recurrent tangent, the same local heat defect, and the same noncompactness statement. No preferred ambient side is introduced.
 
-\[
-\ell_n\sim2\log\frac{4p_n}{g_n}
-\]
+## 8. Prior-art and novelty audit
 
-is used only to translate the exact modulus into the distinguished-cuff language, as in (1).
+No novelty is claimed for the operator-theoretic ingredients:
 
-All decisive data -- cross-ratios, primitive separator lengths, Laplacian heat kernels and pointed tangent geometry -- are preserved under ambient Möbius conjugacy. The interior/exterior inversion therefore carries the same tangent-hull mismatch and the same trace-class obstruction.
+- compact operators send bounded weakly-null sequences to norm-null sequences;
+- compact resolvent difference is a standard form of relative compactness and, by continuous functional calculus in the Calkin algebra, implies compact differences of `C_0` functions of the operators;
+- Weyl's theorem and limit-operator/right-limit theory express the general principle that nonvanishing behavior at infinity obstructs compact perturbations;
+- Gigli--Mondino--Savaré establish stability of heat flows under pointed noncompact metric-measure convergence (`Proc. London Math. Soc.` 111 (2015), 1071--1129, DOI `10.1112/plms/pdv047`);
+- Müller, Birman--Krein, and Borthwick--Judge--Perry provide the classical relative trace/scattering/determinant frameworks under substantially stronger perturbative hypotheses.
 
-## 7. Prior-art / novelty audit
+A directed literature search over tight flutes, infinitely generated Fuchsian groups, relative hyperbolic determinants, compact resolvent perturbations, and limit-operator formulations found no theorem specializing this mechanism to the prime-derived flute. Existing tight-flute work is primarily about type/parabolicity and Fenchel--Nielsen geometry; the abstract noncompactness principle itself is standard.
 
-Known ingredients, not claimed as new:
-
-- Werner Müller's relative zeta functions and determinants for noncompact self-adjoint elliptic operators, based on trace-class relative heat operators;
-- Borthwick--Judge--Perry's relative determinants for controlled perturbations of infinite-area hyperbolic surfaces;
-- the general principle that compact/trace-class perturbations cannot carry a nonvanishing family of identical defects escaping to infinity;
-- right-limit/limit-operator descriptions of essential behavior, e.g. Last--Simon for Schrödinger/Jacobi/CMV operators and later graph/limit-operator work;
-- uniqueness of the Laplace transform of a positive spectral measure and local wave-trace detection of closed geodesics.
-
-Directed searches for relative determinants or scattering determinants on tight flutes and infinitely generated Fuchsian groups did not locate a theorem treating the present geometry. Existing tight-flute literature concentrates primarily on type/parabolicity and Fenchel--Nielsen criteria; standard hyperbolic determinant/scattering results assume geometrically finite or controlled asymptotic structures absent here.
-
-The potentially new content is the program-specific composition
+The program-specific substantive result is the exact composition
 
 \[
 \boxed{
-\text{Pintz/Maynard recurrent isolated prime patterns}
+\text{Pintz/Maynard recurrent isolated prime pattern}
 \to
-\text{exact recurrent hyperbolic tangents with nondecaying cuff contrast}
+\text{exact orthogonal-circle tangent modulus}
 \to
-\text{nonzero localized heat defect repeated at infinity}
+\text{nonzero local heat response}
 \to
-\text{failure of standard relative trace class against a smooth control}.
+\text{weakly-null recurrent test vectors}
+\to
+\text{noncompact relative heat and resolvent differences}.
 }
+\tag{14}
 \]
 
-The abstract operator principle is not new; the decisive point is that the exact prime-flute arithmetic supplies the recurrent order-one defects needed to trigger it.
+Thus the claimed novelty is an **impossibility principle for this construction**, not a new general theorem about compact operators or hyperbolic heat kernels.
 
-## 8. Scope of the negative result
+## 9. Boundary of the negative result
 
-PF-098 does **not** say that every relative spectral object is impossible. It rules out the most natural standard route in which one compares the prime-flute to a featureless smooth/density-matched reference and then applies ordinary relative heat/resolvent trace theory.
+PF-098 does not rule out every possible relative spectral object. It rules out the broad and natural class in which the prime-flute is compared with a featureless smooth/density-matched end and the difference is expected to become compact, Schatten-class, resolvent-comparable, or trace class.
 
-A viable relative object would have to do something stronger than a single background subtraction. In particular it would have to retain or explicitly renormalize the entire recurrent tangent hull rather than treating prime-gap fluctuations as a decaying perturbation of a regular end.
+Nor does it say that an individual recurrent tangent is intrinsically prime-specific: PF-097 proves the opposite. What is prime-specific here is the **selection and infinite recurrence of that tangent inside the single prime-flute**.
 
-This is consistent with PF-097: an individual tangent is primality-blind, but **which tangent types recur, and where they recur along the single infinite prime-flute, is precisely the information that prevents the prime geometry from becoming a trace-class perturbation of a featureless reference.**
+Any surviving global construction must therefore preserve substantially more of the asymptotic hull. In particular it cannot first erase the recurrent prime tangent geometry and then hope to recover it as a small perturbative correction.
