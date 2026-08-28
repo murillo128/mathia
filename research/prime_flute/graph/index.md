@@ -116,6 +116,7 @@ This is a derived Obsidian view. Findings and `mind/` remain authoritative.
 - [[research/prime_flute/findings/PF-096-first-scattering-correction-measures-discrete-cuff-curvature|PF-096]]
 - [[research/prime_flute/findings/PF-097-finite-prime-tangents-are-moduli-complete-and-primality-blind|PF-097]]
 - [[research/prime_flute/findings/PF-098-featureless-relative-determinants-are-blocked-by-recurrent-prime-tangents|PF-098]]
+- [[research/prime_flute/findings/PF-099-global-dilation-gauge-makes-projective-tangent-hull-primality-blind|PF-099]]
 
 Legacy duplicate exposition: [[research/prime_flute/PF-015_SMALL_SPECTRUM_UNIVERSALITY]].
 
@@ -133,6 +134,7 @@ Legacy duplicate exposition: [[research/prime_flute/PF-015_SMALL_SPECTRUM_UNIVER
 - [[research/prime_flute/graph/relations/localized-marked-spectral-data|Localized marked spectral data]]
 - [[research/prime_flute/graph/relations/global-selberg-fredholm-obstruction|Global Selberg/Fredholm obstruction]]
 - [[research/prime_flute/graph/relations/legacy-pf015-collision-and-duplicate|Legacy PF-015 collision / duplicate]]
+- [[research/prime_flute/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
 
 ## Curation boundary
 
