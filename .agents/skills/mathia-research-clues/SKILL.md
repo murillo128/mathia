@@ -1,19 +1,19 @@
 ---
 name: mathia-research-clues
-description: Hand off speculative but source-motivated research clues from Mind, Graph Curator, Research Watch, or Adversarial Research without treating clues as evidence or discoveries.
+description: Hand off speculative but source-motivated research clues from Mind, Graph Curator, Research Watch, Adversarial Research, or Master Researcher without treating clues as evidence or discoveries.
 ---
 
 # Mathia Research Clues
 
 ## Responsibility
 
-Use this skill together with `mathia-research-mind`, `mathia-research-graph-curator`, `mathia-research-watch`, or `mathia-research-adversarial` when a recurring process needs to hand off a promising but unvalidated mathematical direction to research.
+Use this skill together with `mathia-research-mind`, `mathia-research-graph-curator`, `mathia-research-watch`, `mathia-research-adversarial`, or `mathia-master-researcher` when a recurring process needs to hand off a promising but unvalidated mathematical direction to research.
 
-A **clue is not a finding, intuition, theorem, novelty claim, review verdict, or accepted research result**. It is a compact, falsifiable research lead suggested by already-persisted repository structure, synthesis, primary research, or adversarial friction but still requiring the normal Research Watch derivation, stress test, literature check, and evidence gate.
+A **clue is not a finding, intuition, theorem, novelty claim, review verdict, portfolio recommendation, or accepted research result**. It is a compact, falsifiable research lead suggested by already-persisted repository structure, synthesis, primary research, adversarial friction, or program-level cross-line analysis but still requiring the normal Research Watch derivation, stress test, literature check, and evidence gate.
 
 This skill is a narrow extension of the caller skill's path gate for clue files only. All other caller ownership restrictions remain unchanged.
 
-The existing Mind and Graph Curator clue behavior remains unchanged; this skill additionally allows Research Watch and Adversarial Research to emit clues when their work exposes a genuinely separate research question.
+The existing Mind, Graph Curator, Research Watch, and Adversarial Research clue behavior remains unchanged; this skill additionally allows the Master Researcher to emit source-grounded clues from cross-line/portfolio analysis.
 
 ## Storage
 
@@ -52,7 +52,7 @@ Use compact frontmatter:
 id: CLUE-<scope>-<slug>
 type: research-clue
 status: proposed
-origin: mind | graph-curator | research-watch | adversarial
+origin: mind | graph-curator | research-watch | adversarial | master-researcher
 target_line: <line> | global | new-line-candidate
 based_on:
   - <repository path>
@@ -65,7 +65,7 @@ Then keep only these substantive sections:
 # <research question>
 
 ## Observation
-What persisted finding, intuition, review, or graph structure suggested the clue.
+What persisted finding, intuition, review, graph structure, or cross-line program state suggested the clue.
 
 ## Research question
 The precise candidate mechanism, connection, obstruction, or distinction to investigate.
@@ -203,6 +203,24 @@ It may create or materially strengthen only `proposed` clues. It must not set `a
 
 For an existing local line, prefer `research/<line>/clues/**`. Use `research/clues/**` only for genuinely cross-line/new-line questions.
 
+## Producer: Master Researcher
+
+When loaded with `mathia-master-researcher`, the Master may emit a clue only when its current program-level analysis exposes a **concrete falsifiable question** that belongs back in mathematical research.
+
+Good Master clues include:
+
+- an established mechanism in one line may transfer to another and needs an exact test;
+- several lines share one unresolved lemma/estimate/representation that can be attacked directly;
+- an apparent cross-line redundancy needs an equivalence or counterexample before a merge recommendation is safe;
+- a possible `pause-candidate` has one precise unresolved escape route worth killing or validating first;
+- a `new-line-candidate` has a cheap decisive first test that no existing line can honestly own.
+
+The Master must not use clues as project-management commands or encode `continue`, `pause`, `merge`, `split`, or scheduling decisions inside them. A clue remains a mathematical research question.
+
+It may create or materially strengthen only `proposed` clues. It must not set `accepted`, `rejected`, or `resolved`.
+
+For an existing destination line, prefer `research/<line>/clues/**`. Use `research/clues/**` only when the question is genuinely cross-line or a new-line candidate.
+
 ## Ownership extension
 
 When this skill is explicitly loaded, it extends writable paths only as follows.
@@ -256,6 +274,17 @@ research/clues/**
 
 It must not change `accepted`, `rejected`, or `resolved` dispositions and must not modify a clue merely to record that it reviewed it.
 
+### Master Researcher
+
+May create or materially strengthen only `proposed` clues under:
+
+```text
+research/<line>/clues/**
+research/clues/**
+```
+
+It must not change Research Watch disposition states, create a clue solely to record a portfolio recommendation, or modify a clue merely because it appeared in `research/master/STATE.md`.
+
 This exception does not grant access to any other caller-forbidden path.
 
 ## Publication and no-churn gate
@@ -265,6 +294,7 @@ A clue change may share the caller's normal direct-main publication path when al
 - every clue path is allowed for that caller above;
 - the clue is materially new, materially better grounded, or its Research Watch disposition changed;
 - any review-derived clue cites the persisted finding/review that motivated it;
+- any Master-derived clue cites the current persisted findings/mind/graph/clues that motivated the cross-line question;
 - no timestamps/run logs/status noise were added;
 - the source revision remains coherent;
 - the caller's normal diff review and publication gates pass.
@@ -273,6 +303,6 @@ Use the caller's normal commit prefix. Do not create a commit solely to restate 
 
 ## Reporting
 
-Mind, Curator, or Adversarial Research should notify only when a clue is unusually consequential or represents a genuinely new cross-line/new-line candidate worth user attention. Routine local clue creation can remain silent.
+Mind, Curator, Adversarial Research, or Master Researcher should notify only when a clue is unusually consequential or represents a genuinely new cross-line/new-line candidate worth user attention. Routine local clue creation can remain silent.
 
 Research Watch should report a clue only when it is accepted, rejected for a substantive mathematical reason, or resolved into a material finding under its normal notification policy.
