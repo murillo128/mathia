@@ -69,6 +69,13 @@ bare prime Kronecker flow on Haar L^2(T^infinity)
     -> pure-point spectral type; ergodic/uniquely ergodic but not weakly mixing
     -> cannot by itself supply a decay-of-correlations or resonance mechanism for the Riemann zero divisor
 
+Tanaka ergodic-Hardy prime-torus extension
+    -> for every u>1/2, zeta/Mobius coefficient functions are outer in finite H^q on T^infinity
+    -> Haar-a.e. prime-phase twist is analytic and zero-free in Re(s)>1/2
+    -> typical twists occur as compact-uniform limits of vertical zeta shifts
+    -> the distinguished zeta identity orbit is wholly inside the exceptional Haar-null set because of the pole at 1
+    -> Haar typicality and ordinary ergodic averages therefore cannot alone decide RH; weak zeta moments require deleting a density-zero set
+
 Bagchi function-space dynamics
     -> RH is exactly equivalent to strong recurrence of the distinguished zeta function under vertical translation
 
@@ -97,4 +104,4 @@ Möbius orientation of the square-free hypercube
        entering the critical strip requires genuinely stronger analytic control
 ```
 
-Thus the bare prime-exponent lattice and infinite torus are not, by themselves, a zero mechanism for the Riemann zeta function. Several natural refinements are already rigorous prior art: the raw prime Kronecker rotation has a completely pure-point rational-log Koopman spectrum and no mixing; Bagchi recurrence gives an exact RH-level dynamical target in function space; Saksman–Webb give a stochastic critical boundary; the canonical `log n` generator gives a clean Schatten/trace hierarchy; standard Hilbert–Schmidt regularization of the one-particle prime determinant is zero-free and pushes zero-sensitive information into the removed prime-zeta counterterm; the canonical non-diagonal multiplicative Hilbert operator has a completely continuous Hilbert/Carleman-type spectrum despite its zeta kernel; and Möbius-weighted Hardy approximation gives a precise zero-free criterion. In every case the remaining RH difficulty is not the exponent-vector encoding itself but additional analytic structure capable of distinguishing the Riemann zeta function and retaining deterministic/microscopic zero information through the critical strip.
+Thus the bare prime-exponent lattice and infinite torus are not, by themselves, a zero mechanism for the Riemann zeta function. Several natural refinements are already rigorous prior art: the raw prime Kronecker rotation has a completely pure-point rational-log Koopman spectrum and no mixing; Tanaka already builds an ergodic-Hardy critical-strip extension on the prime torus but simultaneously shows that the actual zeta orbit is a Haar-null exception to its generic zero-free theory; Bagchi recurrence gives an exact RH-level dynamical target for that distinguished function; Saksman–Webb give a stochastic critical boundary; the canonical `log n` generator gives a clean Schatten/trace hierarchy; standard Hilbert–Schmidt regularization of the one-particle prime determinant is zero-free and pushes zero-sensitive information into the removed prime-zeta counterterm; the canonical non-diagonal multiplicative Hilbert operator has a completely continuous Hilbert/Carleman-type spectrum despite its zeta kernel; and Möbius-weighted Hardy approximation gives a precise zero-free criterion. In every case the remaining RH difficulty is not the exponent-vector encoding itself but additional analytic/arithmetic structure capable of selecting the exceptional Riemann orbit and retaining deterministic/microscopic zero information through the critical strip.
