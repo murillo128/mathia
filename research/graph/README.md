@@ -1,6 +1,8 @@
 # Research graph views
 
-This directory owns the **global derived research graph**. Findings, mind notes, clues, and canonical prior-art notes remain authoritative; graph files and Obsidian configuration are presentation state only.
+This directory owns the **global derived research graph**. Line-local graph views live beside their source knowledge under `research/<line>/graph/`, and prior-art graph views live under `research/prior_art/graph/`.
+
+Findings, mind notes, clues, and canonical prior-art notes remain authoritative. Graph files and Obsidian configuration are presentation state only.
 
 Procedural authority:
 
