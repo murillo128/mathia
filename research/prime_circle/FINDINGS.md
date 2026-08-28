@@ -188,3 +188,11 @@ At the level of counting measures, `R_n=sum_{d|n}P_d`; hence for `Re(s)>2`,
 Every fixed bounded linear observable inherits this factorization, and independent multilinear shell indices inherit one reciprocal-zeta factor each. The common-vertex logarithmic potential escapes the theorem precisely because it is a singular boundary probe: it is divergent on every full layer but finite on primitive shells. Thus the surviving region is anchored, nonlocal, and nonlinear or singularly renormalized.
 
 [Detailed finding](findings/PC-021-regular-linear-probes-are-moebius-tautological.md)
+
+### PC-022 — cyclic-cover spectrum has exact-order birth layers; modular zeta is inherited background
+
+**Status:** `EXACT-DERIVED` + `LITERATURE+DERIVED` + `DECISIVE-NEGATIVE` for a direct inherited modular/Riemann-zeta spectral mechanism.
+
+The full-root cyclic covers satisfy `L²(Y_n)=direct_sum_{d|n} H_d^birth`, where `H_d^birth` consists exactly of deck characters of order `d`; the projector onto the order-`n` layer has Ramanujan coefficients. Venkov–Zograf Artin formalism gives the matching divisor factorization of Selberg zeta. The standard modular scattering channel containing `zeta(2s-1)/zeta(2s)` lies in the universal trivial/old sector present at every level and is removed by exact-order birth extraction, so its Riemann zeros cannot be counted as a prime-specific mechanism.
+
+[Detailed finding](findings/PC-022-cyclic-cover-spectrum-has-exact-order-birth-layers.md)

@@ -25,3 +25,9 @@ This file records durable literature dependencies used to support or falsify fin
   - `sum_{n>=1} phi(n)n^{-s} = zeta(s-1)/zeta(s)` for `Re(s)>2`;
   - `sum_{n>=1} c_n(m)n^{-s} = sigma_{1-s}(m)/zeta(s)` for `Re(s)>1`.
   Role: identify the reciprocal-zeta and totient factors in PC-015 as classical Möbius/Dirichlet-transform structure rather than new spectral data.
+
+## Fuchsian covers, Selberg factorization, and modular scattering
+
+- A. B. Venkov and P. G. Zograf, **On analogues of the Artin factorization formulas in the spectral theory of automorphic functions connected with induced representations of Fuchsian groups**, *Mathematics of the USSR-Izvestiya* 21:3 (1983), 435–443. DOI: 10.1070/IM1983v021n03ABEH001800. Role: Artin factorization of Selberg zeta functions and automorphic scattering determinants for finite-index Fuchsian subgroups; literature anchor for PC-016/PC-022.
+- H. Iwaniec, **Spectral Methods of Automorphic Forms**, 2nd ed., Graduate Studies in Mathematics 53, American Mathematical Society (2002). Role: standard cofinite Fuchsian spectral theory and the modular Eisenstein/scattering coefficient `sqrt(pi) Gamma(s-1/2) zeta(2s-1)/(Gamma(s) zeta(2s))`, used in PC-022 to identify the inherited Riemann-zeta-bearing channel.
+- F. Diamond and J. Shurman, **A First Course in Modular Forms**, Graduate Texts in Mathematics 228, Springer (2005). Role: standard modular-curve background for `Gamma(2)`, the modular lambda coordinate, and the identification of the thrice-punctured sphere with the level-two modular curve used in PC-022.
