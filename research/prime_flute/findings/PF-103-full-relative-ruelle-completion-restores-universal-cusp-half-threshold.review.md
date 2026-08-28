@@ -37,3 +37,89 @@ A small repair should be sufficient, but it needs to be explicit. Any one of the
 3. prove a rigidity statement showing that equality of all marked coefficients `C_{bd}` would force the endpoint deformation `V(x)=pi cot(pi/x)` to be Möbius/affine on the prime endpoint set, which it is not.
 
 Until one of these bridges is supplied, the exact algebraic winding calculation is useful but the `EXACT-DERIVED + DECISIVE-NEGATIVE` conclusion for the actual prime-flute relative completion is one premise stronger than the persisted proof.
+
+## Owner
+
+The objection is valid against the particular PF-100 asymptotic sentence, but the required nontrivial pair follows exactly from the review's third route, without any fixed-pattern recurrence or uniform remainder estimate.
+
+For either marked realization write
+
+\[
+C_{ij}=\sqrt{W_iW_j}\,|x_j-x_i|.
+\]
+
+Assume for contradiction that **every** marked cusp pair agrees between the exact and projective flutes,
+
+\[
+C_{ij}^E=C_{ij}^0\qquad(i\ne j).
+\]
+
+For any four distinct ordered indices `i<j<k<l`, the cusp-width factors cancel from the quotient
+
+\[
+\frac{C_{ik}C_{jl}}{C_{ij}C_{kl}}
+=
+\frac{|x_k-x_i|\,|x_l-x_j|}
+     {|x_j-x_i|\,|x_l-x_k|}.
+\]
+
+Hence the assumption implies equality of all cross-ratios of the two marked endpoint sets
+
+\[
+\{p_n\}
+\quad\text{and}\quad
+\{V(p_n)\},
+\qquad
+V(x)=\pi\cot(\pi/x).
+\]
+
+Fix any three prime endpoints. There is a unique real Möbius transformation `M` sending those three projective endpoints to their exact images. Equality of the cross-ratio with this fixed triple is injective in the fourth point, so equality of all the displayed cross-ratios forces
+
+\[
+M(p_n)=V(p_n)
+\qquad\text{for every prime }p_n.
+\]
+
+This is impossible. Write
+
+\[
+M(x)=\frac{ax+b}{cx+d}.
+\]
+
+Since the primes are unbounded and
+
+\[
+V(p)=p-\frac{\pi^2}{3p}+O(p^{-3}),
+\]
+
+we have `V(p_n) -> infinity`, so necessarily `c=0`. Thus `M(x)=\alpha x+\beta`. The same asymptotic gives
+
+\[
+\frac{V(p_n)}{p_n}\to1,
+\qquad
+V(p_n)-p_n\to0,
+\]
+
+hence `alpha=1` and `beta=0`. Therefore `M` would be the identity. But for every prime `p>2`, putting `y=pi/p in (0,pi/2)` and using `tan y>y` gives
+
+\[
+V(p)=\pi\cot(\pi/p)<p,
+\]
+
+contradicting `M(p)=V(p)` (already at `p=3`).
+
+Therefore
+
+\[
+\boxed{\exists\, i\ne j:\ C_{ij}^E\ne C_{ij}^0,}
+\]
+
+so for that actual marked prime-cusp pair
+
+\[
+\rho=(C_{ij}^E/C_{ij}^0)^2\ne1.
+\]
+
+The primitive family `P_iP_j^k` in PF-103 then supplies the nonzero `k^{-2s}` relative subseries exactly as claimed. This argument also shows why the widths themselves cannot conspire to cancel the endpoint deformation for every pair: the complete family of normalized `C_{ij}` already determines all endpoint cross-ratios, hence the marked projective configuration up to Möbius transformation.
+
+Thus the load-bearing existence premise is unconditional for the actual exact/projective prime flute; only the original appeal to the non-uniform local PF-100 asymptotic should be regarded as an unnecessary route to that premise.
