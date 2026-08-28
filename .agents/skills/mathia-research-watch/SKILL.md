@@ -27,16 +27,17 @@ The prompt owns **what mathematics to investigate**. This skill owns **how to in
 
 ## Load context progressively
 
-Before substantive work, read:
+Before substantive work:
 
-1. `AGENTS.md`;
-2. this skill;
-3. `research/<line>/README.md` when present;
-4. `research/<line>/FINDINGS.md` when present;
-5. `research/<line>/SOURCES.md` and `LEAN_CANDIDATES.md` when present and relevant;
-6. only the individual findings needed to understand the live candidate, its dependencies, or possible duplication.
+1. read `AGENTS.md`;
+2. read this skill;
+3. read `research/<line>/README.md` when present;
+4. inventory the filenames under `research/<line>/findings/` so stable IDs and existing topics are visible without preloading every finding;
+5. read `research/<line>/SOURCES.md` and `LEAN_CANDIDATES.md` when present and relevant;
+6. use `research/<line>/graph/index.md` when present only as a derived navigation aid, never as mathematical evidence;
+7. read only the individual findings needed to understand the live candidate, its dependencies, or possible duplication.
 
-Other Mathia research branches and `mind/` may be read as evidence, but are read-only for this role.
+Other Mathia research branches and `mind/` may be read as evidence, but are read-only for this role. Treat every `graph/` subtree as regenerable derived state: verify any substantive claim or relationship against the underlying finding, mind note, or prior-art source before relying on it.
 
 Do not preload all findings or complete repository history unless a dependency or novelty question requires it.
 
@@ -135,14 +136,15 @@ Core artifacts are:
 
 ```text
 README.md
-FINDINGS.md
 SOURCES.md
 findings/
 ```
 
 `LEAN_CANDIDATES.md` is an optional adjunct for a deliberately small formalization queue when the branch already uses one or when a task explicitly needs it. It is not a research diary.
 
-Legacy branches may predate one of the core files. Do not create an empty placeholder merely for symmetry; initialize the missing artifact when the first substantive update needs it.
+`graph/` is a separate derived view owned by the graph curator. It may be used for navigation, but it is not evidence and the Research Watch does not maintain it.
+
+Legacy branches may predate one of the core artifacts or contain historical finding expositions outside `findings/`. Preserve such history unless a separate migration explicitly owns it. Do not create empty placeholders merely for symmetry.
 
 ### `README.md`
 
@@ -156,9 +158,11 @@ New detailed findings belong under:
 research/<line>/findings/<PREFIX>-NNN-<slug>.md
 ```
 
-Use stable three-digit IDs. Before allocating an ID, inspect both `FINDINGS.md` and `findings/`, then choose an integer greater than every existing ID for that prefix. Never recycle holes or renumber existing findings. If a legacy collision already exists, preserve it and allocate above the maximum rather than rewriting history during unrelated research.
+The individual finding files are the **canonical source of truth** for research evidence. Do not maintain a second hand-written finding ledger or compact duplicate index.
 
-Prefer revising an existing finding over creating a near-duplicate.
+Use stable three-digit IDs. Before allocating an ID, inspect all existing filenames under `findings/` for that prefix and any explicitly preserved legacy finding files for the same line, then choose an integer greater than every existing ID. Never recycle holes or renumber existing findings. If a legacy collision already exists, preserve it and allocate above the maximum rather than rewriting history during unrelated research.
+
+Prefer revising an existing finding over creating a near-duplicate. A derived graph index may help locate candidates, but duplication decisions must be verified from the canonical finding files themselves.
 
 A durable finding should contain, with headings adapted to the mathematics:
 
@@ -173,13 +177,7 @@ A durable finding should contain, with headings adapted to the mathematics:
 
 Preserve equations and enough reasoning that a later researcher can audit the claim without reconstructing the original chat.
 
-### `FINDINGS.md`
-
-Maintain a compact indexed synthesis, not a second copy of every detailed note.
-
-For each durable result, preserve the stable ID, title, evidence status, the core mathematical statement/obstruction, and a link to the detailed finding when one exists. When a later result corrects, weakens, supersedes, or refutes an earlier one, update the index and the affected finding so the current mathematical relationship is explicit.
-
-Prefer strengthening, merging, correcting, or refuting existing entries over accumulating near-duplicates.
+When a later result corrects, weakens, supersedes, or refutes an earlier one, update the affected canonical finding files so the relationship and current status are explicit. The graph curator can then derive the corresponding navigation and relation views without duplicating the mathematical statement.
 
 ### `SOURCES.md`
 
@@ -199,7 +197,6 @@ For a research watch on `research/<line>/`, the writable evidence area is limite
 
 ```text
 research/<line>/README.md
-research/<line>/FINDINGS.md
 research/<line>/SOURCES.md
 research/<line>/LEAN_CANDIDATES.md   # only when applicable
 research/<line>/findings/**
@@ -207,12 +204,13 @@ research/<line>/findings/**
 
 Do **not** write to:
 
+- `research/<line>/graph/**`;
 - `research/<line>/mind/**`;
 - `research/mind/**`;
 - another research line;
 - `docs/`, `experiments/`, code, tests, prompts, or unrelated repository files.
 
-The separate Mathia mind process owns synthesis into durable intuitions and research lines. Research watches provide its evidence; they do not compete with it.
+The separate Mathia mind process owns synthesis into durable intuitions and research lines. The graph curator owns derived navigation and relation views. Research watches provide their canonical evidence; they do not compete with either layer.
 
 If a candidate requires a code/experiment change, record the mathematical need in the finding when substantive, but do not cross the ownership boundary unless a separate task explicitly authorizes that work.
 
@@ -224,9 +222,9 @@ Before every commit:
 
 1. inspect the complete planned diff;
 2. verify every changed path is inside the allowed evidence area above;
-3. verify no `mind/`, code, experiment, or unrelated file changed;
+3. verify no `graph/`, `mind/`, code, experiment, or unrelated file changed;
 4. verify the update passes the substantive-finding gate;
-5. verify the index/source updates agree with the detailed finding;
+5. verify any `README.md`, `SOURCES.md`, or `LEAN_CANDIDATES.md` updates agree with the canonical detailed findings;
 6. use a concise commit message describing the mathematical outcome, not the fact that a scheduled run occurred.
 
 Research-watch commits must use the branch-scoped form:
