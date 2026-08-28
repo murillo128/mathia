@@ -113,3 +113,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 28. **Alain Connes, Caterina Consani, Henri Moscovici**, “Zeta spectral triples,” arXiv:2511.22755 [math.NT] (submitted 27 November 2025); EMS Press chapter, DOI: https://doi.org/10.4171/ELM/37/3 (2026).
     - Role: main current anchor for `PL-013`. Constructs finite-cutoff self-adjoint rank-one perturbations from restrictions of the semilocal Weil form; proves the regularized determinant is the Fourier transform of the extremal vector and has only real zeros under explicit simplicity/evenness hypotheses; reports high-precision numerical agreement with low Riemann zeros; proves convergence of a prolate-wave model transform to `Xi`; and explicitly leaves the bridge from that model to the actual extremal eigenvector/determinant, hence spectral convergence and RH, unproved.
+
+## Adelic Fourier completion and the critical self-dual axis
+
+29. **John T. Tate**, “Fourier analysis in number fields and Hecke’s zeta-functions,” in J. W. S. Cassels and A. Fröhlich (eds.), *Algebraic Number Theory* (Proc. Instructional Conf., Brighton, 1965), Thompson Book Company, Washington, D.C., 1967, pp. 305–347. Originally Princeton PhD thesis, 1950.
+    - Role: primary classical source for `PL-014`: adelic zeta integrals, additive Fourier/Poisson continuation, local factors, and functional equations for Hecke zeta/L-functions. Establishes that the natural functional-equation mechanism requires the full adelic Fourier–Mellin setting rather than the bare valuation torus.
+
+30. **Bjorn Poonen**, “Tate’s thesis,” MIT 18.786 Number Theory II lecture notes, Spring 2015. https://math.mit.edu/~poonen/786/notes.pdf.
+    - Role: main audit-friendly source for `PL-014`. Explicitly defines the twisted dual `chi^vee=chi^(-1)|.|`, proves every idele-class character has form `eta|.|^s` with `eta` unitary, states the product formula, constructs self-dual local/adelic Fourier measures, defines the global zeta integral, and proves meromorphic continuation plus `Z(f,chi)=Z(f_hat,chi^vee)` and the Hecke functional equation.
+
+31. **Dinakar Ramakrishnan, Robert J. Valenza**, *Fourier Analysis on Number Fields*, Graduate Texts in Mathematics **186**, Springer, New York, 1999. DOI: https://doi.org/10.1007/978-1-4757-3085-2.
+    - Role: comprehensive modern treatment of adelic harmonic analysis and Tate’s thesis; novelty/prior-art anchor confirming that the self-dual Fourier–Mellin mechanism used in `PL-014` is classical rather than a new prime-lattice construction.
