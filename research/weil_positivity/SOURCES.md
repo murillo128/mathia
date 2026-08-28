@@ -7,6 +7,10 @@ This file records only durable literature dependencies for canonical findings in
 - **André Weil**, *Sur les “formules explicites” de la théorie des nombres premiers*, Comm. Sém. Math. Univ. Lund (1952), 252–265. Original explicit-formula positivity framework underlying Weil's criterion. Mathia's retained summary is [`research/prior_art/weil-positivity-criterion.md`](../prior_art/weil-positivity-criterion.md).
 - **Enrico Bombieri**, *Remarks on Weil's quadratic functional in the theory of prime numbers. I*, Atti Accad. Naz. Lincei Cl. Sci. Fis. Mat. Natur. Rend. Lincei (9) Mat. Appl. 11 (2000), no. 3, 183–233. Modern treatment of Weil's quadratic functional and its positivity formulation.
 
+## Uniformization and geometric positivity
+
+- **Peter G. Zograf and Leon A. Takhtadzhyan**, *On Liouville's equation, accessory parameters, and the geometry of Teichmüller space for Riemann surfaces of genus 0*, Mathematics of the USSR-Sbornik 60 (1988), no. 1, 143–161. DOI: `10.1070/SM1988v060n01ABEH003160`. Constructs a Weil–Petersson potential from the hyperbolic/Liouville metric and identifies it as a generating function for the Fuchsian accessory parameters. This is the classical geometric-positivity anchor for auditing whether the PC-017 projective-connection defect can yield a Weil-type positive energy.
+
 ## Local and semilocal trace structure
 
 - **Jean-François Burnol**, *Scattering on the p-adic field and a trace formula*, International Mathematics Research Notices 2000, no. 2, 57–70. DOI: `10.1155/S1073792800000040`; arXiv: `math/9901051`. Gives a nonarchimedean scattering model in which a nonnegative time-delay spectral function coexists with the local Weil explicit formula only after an odd/even grading, as a **supertrace**. This is a key prior-art warning against identifying each finite-place Weil contribution with an ordinary positive local energy.
