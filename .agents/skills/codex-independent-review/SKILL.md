@@ -29,7 +29,7 @@ A fresh reviewer needs:
 4. the exact published target/range;
 5. the evidence required by that checkpoint.
 
-Load prior history only when an unresolved material finding depends on it.
+Load prior history only when an unresolved material finding or repeated-review circuit breaker depends on it.
 
 ## Independence
 
@@ -86,6 +86,17 @@ Final technical review completion allows a ready-for-review handoff. It does not
 ### 5. Report briefly
 
 Record exact target, verdict, material findings, validation/evidence inspected, and the smallest required delta or non-blocking notes.
+
+## Repeated-review circuit breaker
+
+When two consecutive reviews fail for substantially the same validation, attestation, parser, documentation-sync, or bookkeeping mechanism:
+
+- stop open-ended searches for representational variants;
+- use `PASS_WITH_NOTES` when progression is technically safe and the remaining concern is non-material;
+- request design review when the validation strategy itself prevents a trustworthy decision;
+- require explicit design-authority direction before a third corrective review of the same mechanism.
+
+The circuit breaker never waives a continuing material defect.
 
 ## Verdicts
 
