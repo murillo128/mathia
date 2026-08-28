@@ -14,6 +14,7 @@ from typing import Any
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PRIOR_ART_ROOT = REPO_ROOT / "research" / "prior_art"
 CATALOG_PATH = PRIOR_ART_ROOT / "catalog.json"
+COVERAGE_PATH = PRIOR_ART_ROOT / "COVERAGE.md"
 NOTE_REQUIRED_SECTIONS = (
     "what_it_is",
     "relation_to_research",
@@ -171,15 +172,230 @@ def _qwen_file(binding: dict[str, Any], qwen_root: Path, path_key: str) -> str:
 
 def _qwen_records(
     binding: dict[str, Any], qwen_root: Path
-) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]]]:
+) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]], list[dict[str, Any]]]:
     entries_text = _qwen_file(binding, qwen_root, "entries_path")
     sources_text = _qwen_file(binding, qwen_root, "sources_path")
+    relationships_text = _qwen_file(binding, qwen_root, "relationships_path")
     entries = {
         record["id"]: record
         for record in (json.loads(line) for line in entries_text.splitlines() if line)
     }
     sources = {record["id"]: record for record in json.loads(sources_text)}
-    return entries, sources
+    relationships = [
+        json.loads(line) for line in relationships_text.splitlines() if line
+    ]
+    return entries, sources, relationships
+
+
+def _selected_evidence_ids(
+    catalog: dict[str, Any], family: str, key: str
+) -> set[str]:
+    return {
+        evidence[key]
+        for node in catalog["nodes"]
+        for evidence in node["evidence"]
+        if evidence["family"] == family and key in evidence
+    }
+
+
+def _mathia_family_stats(catalog: dict[str, Any]) -> dict[str, dict[str, int]]:
+    stats: dict[str, dict[str, int]] = {}
+    for family, binding in catalog["bindings"].items():
+        if binding["kind"] != "mathia-interchange":
+            continue
+        records = load_jsonl(REPO_ROOT / binding["objects_path"])
+        accepted = [record for record in records if record.get("quality_state") == "accepted"]
+        selected = _selected_evidence_ids(catalog, family, "object_id")
+        role_counts = {
+            role: sum(record.get("object_role") == role for record in accepted)
+            for role in ("source", "interpretation", "synthesis")
+        }
+        stats[family] = {
+            "total": len(records),
+            "accepted": len(accepted),
+            "source": role_counts["source"],
+            "derived": role_counts["interpretation"] + role_counts["synthesis"],
+            "selected": len(selected),
+            "unselected_derived": (
+                role_counts["interpretation"] + role_counts["synthesis"] - len(selected)
+            ),
+        }
+    return stats
+
+
+def _review_cohorts(catalog: dict[str, Any]) -> tuple[list[str], list[str]]:
+    mandatory: list[str] = []
+    remaining: list[str] = []
+    for node in catalog["nodes"]:
+        review = node["review"]
+        if any(
+            review[key]
+            for key in (
+                "strong_rh_relation",
+                "proof_status_statement",
+                "manual_merge",
+                "cross_repository_status_merge",
+            )
+        ):
+            mandatory.append(node["id"])
+        else:
+            remaining.append(node["id"])
+    return mandatory, remaining
+
+
+def render_coverage(catalog: dict[str, Any]) -> str:
+    coverage = catalog["coverage"]
+    stats = _mathia_family_stats(catalog)
+    qwen_entries = _selected_evidence_ids(catalog, "qwen-riemann-atlas", "entry_id")
+    qwen_sources = _selected_evidence_ids(catalog, "qwen-riemann-atlas", "atlas_source_id")
+    evidence_bindings = sum(len(node["evidence"]) for node in catalog["nodes"])
+    unique_evidence = sum(item["selected"] for item in stats.values()) + len(qwen_entries) + len(qwen_sources)
+    manual_merges = sum(node["review"]["manual_merge"] for node in catalog["nodes"])
+    cross_repository = sum(
+        node["review"]["cross_repository_status_merge"] for node in catalog["nodes"]
+    )
+    mandatory, remaining = _review_cohorts(catalog)
+    sample = coverage["independent_review_sample"]
+    lines = [
+        "# Prior-art projection coverage",
+        "",
+        "This ledger records what issue #63 inspected, selected, merged, and left out. "
+        "It is rendered from `catalog.json` plus the frozen Mathia interchange metadata; "
+        "it does not claim bibliographic completeness or add new literature analysis.",
+        "",
+        "## Frozen evidence bindings",
+        "",
+        "| Family | Frozen binding | Records inspected | Projection disposition |",
+        "| --- | --- | ---: | --- |",
+    ]
+    for family in ("mathia-riemann-v2", "mathia-agnostic-v1", "mathia-agnostic-openalex-v1"):
+        binding = catalog["bindings"][family]
+        item = stats[family]
+        lines.append(
+            f"| {binding['label']} | `{binding['freeze_id']}` | "
+            f"{item['total']:,} objects; {item['accepted']:,} accepted | "
+            f"{item['selected']:,} accepted semantic objects bind emitted notes |"
+        )
+    qwen = catalog["bindings"]["qwen-riemann-atlas"]
+    qwen_snapshot = coverage["qwen_snapshot"]
+    lines.append(
+        f"| {qwen['label']} | `{qwen['repository']}@{qwen['revision']}` | "
+        f"{qwen_snapshot['entry_count']:,} entries; {qwen_snapshot['relationship_count']:,} "
+        f"relations; {qwen_snapshot['source_count']:,} sources | {len(qwen_entries):,} entries "
+        f"and {len(qwen_sources):,} source record bind emitted notes |"
+    )
+    graph = coverage["openalex_graph"]
+    lines.append(
+        f"| OpenAlex Riemann graph | `{graph['path']}` | "
+        f"{graph['accepted_candidates']:,} accepted discovery candidates; "
+        f"{graph['citation_edges']:,} edges; {graph['duplicate_groups']:,} duplicate groups | "
+        "Identity, citation, discovery, and version evidence only |"
+    )
+    v1 = coverage["riemann_v1"]
+    lines.append(
+        f"| Riemann–Mathia v1 parent | `{v1['freeze_id']}` | "
+        f"{v1['object_count']:,} immutable objects | Governed by v2 for overlaps and corrections |"
+    )
+    handoff = coverage["riemann_handoff"]
+    lines.append(
+        f"| OpenAlex Riemann handoff | `{handoff['freeze_id']}` | "
+        f"{handoff['record_count']:,} records | Source identity and v2 handoff lineage |"
+    )
+    lines.extend(
+        [
+            "",
+            "The qwen paths are additionally pinned by Git blobs: "
+            f"entries `{qwen['entries_git_blob']}`, relationships "
+            f"`{qwen['relationships_git_blob']}`, and sources `{qwen['sources_git_blob']}`.",
+            "",
+            "## Selection and disposition accounting",
+            "",
+            "| Mathia family | Accepted source objects retained as provenance, not standalone notes | Accepted derived objects selected | Accepted derived objects not selected as standalone notes |",
+            "| --- | ---: | ---: | ---: |",
+        ]
+    )
+    for family in ("mathia-riemann-v2", "mathia-agnostic-v1", "mathia-agnostic-openalex-v1"):
+        item = stats[family]
+        lines.append(
+            f"| {catalog['bindings'][family]['label']} | {item['source']:,} | "
+            f"{item['selected']:,} | {item['unselected_derived']:,} |"
+        )
+    lines.extend(
+        [
+            "",
+            f"The projection emits **{len(catalog['nodes'])} canonical notes** from "
+            f"**{evidence_bindings} evidence bindings** referring to **{unique_evidence} unique "
+            "retained records**. The decision catalog marks "
+            f"**{manual_merges} manual identity merges** and **{cross_repository} "
+            "Mathia/qwen cross-status merges** for exhaustive review.",
+            "",
+            f"Of the {qwen_snapshot['entry_count']} qwen atlas entries, {len(qwen_entries)} are "
+            f"direct positive evidence and {qwen_snapshot['entry_count'] - len(qwen_entries)} "
+            "are not emitted as standalone nodes. The latter are predominantly formalization "
+            "prerequisites/components or records already represented at a coarser canonical "
+            "granularity. All 11 entries classified `equivalent-to-RH` in the pinned atlas are "
+            "represented. One qwen source record is used directly to bind a preprint/publication "
+            "identity.",
+            "",
+            "Across Mathia, accepted source-role objects remain provenance parents rather than "
+            "one-note-per-source candidates. Accepted interpretations and syntheses not selected "
+            "above repeat a canonical entity, operate below research-facing granularity, or fall "
+            "outside the bounded Riemann/reusable-mechanism projection. Rejected, quarantined, "
+            "evaluation-only, and superseded records are never positive evidence.",
+            "",
+            "The OpenAlex graph's accepted works were considered as the discovery/identity "
+            "universe. Its mathematical claims were not projected directly; only later accepted "
+            "Mathia semantic objects can support note prose. The graph's 104 duplicate groups are "
+            "retained as duplicate/version evidence, not converted into mathematical relations.",
+            "",
+            "## Local artifact availability",
+            "",
+            "The following manifest-derived roots were present at Checkpoint A. They were used "
+            "only within the issue's identity/citation ambiguity boundary and are not required to "
+            "read or recheck the committed projection:",
+            "",
+        ]
+    )
+    lines.extend(f"- `{path}`" for path in coverage["local_artifact_roots"])
+    lines.extend(["", "No referenced evidence family was unavailable during this execution.", ""])
+    lines.extend(["## Unresolved canonicalization", ""])
+    for item in coverage["unresolved_canonicalization"]:
+        lines.append(
+            f"- **{item['candidate']} — {item['disposition']}.** {item['reason']}"
+        )
+    lines.extend(["", "## Known blind spots", ""])
+    lines.extend(f"- {item}" for item in coverage["known_blind_spots"])
+    lines.extend(
+        [
+            "",
+            "No new acquisition, API crawl, web search, or analysis of previously unprocessed "
+            "source text was performed. No raw full-text payload is included in this projection.",
+            "",
+            "## Independent-review census",
+            "",
+            f"The metadata places {len(mandatory)} notes in the exhaustive cohort because they "
+            "carry a strong RH relation, a proof-status statement, an ambiguous/manual merge, or "
+            "a Mathia/qwen cross-status merge. The remaining "
+            f"{len(remaining)} notes are all selected for the deterministic sample, so the sample "
+            "is 100% of the remainder (and therefore at least 20%):",
+            "",
+        ]
+    )
+    lines.extend(
+        f"- [{next(node['canonical_name'] for node in catalog['nodes'] if node['id'] == node_id)}]"
+        f"({note_filename(node_id)}) (`{node_id}`)"
+        for node_id in sample
+    )
+    lines.extend(
+        [
+            "",
+            "Together these cohorts require the fresh reviewer to inspect all emitted notes, "
+            "which necessarily spans Mathia, qwen, cross-domain sources, topics, and both single- "
+            "and multi-evidence nodes.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
 
 
 def validate_catalog(catalog: dict[str, Any], qwen_root: Path | None = None) -> list[str]:
@@ -195,6 +411,49 @@ def validate_catalog(catalog: dict[str, Any], qwen_root: Path | None = None) -> 
         None,
     )
     qwen_indexes = _qwen_records(qwen_binding, qwen_root) if qwen_root and qwen_binding else None
+
+    coverage = catalog.get("coverage")
+    if not coverage:
+        errors.append("catalog has no coverage decisions")
+    else:
+        mandatory, remaining = _review_cohorts(catalog)
+        sample = coverage.get("independent_review_sample", [])
+        if sample != remaining:
+            errors.append(
+                "independent review sample must deterministically include every remaining note"
+            )
+        if len(sample) * 5 < len(remaining):
+            errors.append("independent review sample is below 20% of remaining notes")
+        if len(mandatory) + len(remaining) != len(nodes):
+            errors.append("independent review cohorts do not cover the catalog")
+
+    if qwen_indexes is not None and coverage:
+        entries, sources, relationships = qwen_indexes
+        snapshot = coverage["qwen_snapshot"]
+        if len(entries) != snapshot["entry_count"]:
+            errors.append("qwen entry count differs from the frozen coverage decision")
+        if len(sources) != snapshot["source_count"]:
+            errors.append("qwen source count differs from the frozen coverage decision")
+        if len(relationships) != snapshot["relationship_count"]:
+            errors.append("qwen relationship count differs from the frozen coverage decision")
+        actual_statuses: dict[str, int] = {}
+        for record in entries.values():
+            status = record["formalization_status"]
+            actual_statuses[status] = actual_statuses.get(status, 0) + 1
+        if actual_statuses != snapshot["formalization_status_counts"]:
+            errors.append("qwen formalization-status counts differ from coverage")
+        equivalent_ids = {
+            record["id"]
+            for record in entries.values()
+            if record["relationship_to_rh"]["class"] == "equivalent-to-RH"
+        }
+        selected_qwen_ids = _selected_evidence_ids(
+            catalog, "qwen-riemann-atlas", "entry_id"
+        )
+        if not equivalent_ids <= selected_qwen_ids:
+            errors.append(
+                "not all qwen equivalent-to-RH entries have canonical projection evidence"
+            )
 
     for node in nodes:
         node_id = node.get("id", "<missing-id>")
@@ -296,6 +555,14 @@ def validate_rendered_notes(catalog: dict[str, Any]) -> list[str]:
     return errors
 
 
+def validate_coverage(catalog: dict[str, Any]) -> list[str]:
+    if not COVERAGE_PATH.exists():
+        return ["COVERAGE.md is missing"]
+    if COVERAGE_PATH.read_text(encoding="utf-8") != render_coverage(catalog):
+        return ["COVERAGE.md differs from deterministic rendering"]
+    return []
+
+
 def render_all(catalog: dict[str, Any]) -> None:
     expected = {note_filename(node["id"]) for node in catalog["nodes"]}
     for path in PRIOR_ART_ROOT.glob("*.md"):
@@ -305,6 +572,7 @@ def render_all(catalog: dict[str, Any]) -> None:
         (PRIOR_ART_ROOT / note_filename(node["id"])).write_text(
             render_note(node, catalog), encoding="utf-8"
         )
+    COVERAGE_PATH.write_text(render_coverage(catalog), encoding="utf-8")
 
 
 def main() -> int:
@@ -318,6 +586,7 @@ def main() -> int:
         render_all(catalog)
     if args.command == "check" and not errors:
         errors.extend(validate_rendered_notes(catalog))
+        errors.extend(validate_coverage(catalog))
     if errors:
         for error in errors:
             print(f"ERROR: {error}")

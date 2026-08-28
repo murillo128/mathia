@@ -14,8 +14,7 @@ The inventory was taken from Mathia revision
 `676855531b75ee145fced8facebe70812e327df2` and the local qwen-lean checkout at
 `3364b508595a71b34a2efcf964ba1200f153ad84`. The qwen Riemann data files were last
 changed by `61175c1b212a1b3fed1b227cc6967762a35f31be` and are pinned by their Git
-blob identities in the coverage report that will accompany the completed
-projection.
+blob identities in [the coverage report](COVERAGE.md).
 
 ### Artifact families found
 
@@ -128,6 +127,20 @@ contract.
 
 ## Status
 
-Checkpoints A and B are complete. The remaining work is full retained-family
-coverage, final deterministic validation, and the required fresh independent
-review.
+Checkpoints A and B are complete. The scaled projection contains 45 canonical
+notes spanning the retained #42 Riemann evidence, #46 identity and handoff
+lineage, qwen Riemann atlas, and relevant #44 cross-domain mechanisms. The
+[coverage ledger](COVERAGE.md) records exact selection, non-selection, merge,
+unresolved-identity, availability, and review-census accounting.
+
+Regenerate and check the projection against the pinned qwen revision with:
+
+```text
+python3 experiments/prior_art_projection.py render --qwen-root /workspace/qwen-lean
+python3 experiments/prior_art_projection.py check --qwen-root /workspace/qwen-lean
+```
+
+The renderer derives every note and the coverage ledger from the explicit
+semantic decisions in `catalog.json`; the checker also resolves accepted Mathia
+objects, verifies qwen Git blobs and IDs, and rejects duplicate identities or
+dangling note links.
