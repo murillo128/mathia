@@ -65,9 +65,10 @@ This line is maintained by `.agents/skills/mathia-research-watch/SKILL.md` with 
 When substantive results appear, persist them under the standard evidence contract:
 
 ```text
-research/weil_positivity/FINDINGS.md
 research/weil_positivity/SOURCES.md
 research/weil_positivity/findings/WP-NNN-<slug>.md
 ```
+
+The individual files under `findings/` are the canonical research evidence. Do not create a parallel hand-maintained finding index. Derived graph navigation may be added later by the graph curator when substantive findings exist.
 
 Do not create chronological run notes or write into any `mind/` directory. Missing evidence artifacts should be initialized only when the first substantive finding requires them.

@@ -31,9 +31,10 @@ These labels describe provenance, not mathematical importance.
 
 ## Files
 
-- [`FINDINGS.md`](FINDINGS.md) — indexed positive and negative results, with derivation sketches and open verification points.
+- [`findings/`](findings/) — canonical positive and negative research findings, including derivations, evidence status, prior-art audits, and failure modes.
 - [`LEAN_CANDIDATES.md`](LEAN_CANDIDATES.md) — a deliberately small queue of statements worth formalizing first.
 - [`SOURCES.md`](SOURCES.md) — literature anchors used by the current notes.
+- [`graph/index.md`](graph/index.md) — derived navigation and relation view; it is not a source of mathematical truth.
 
 ## Intended reuse
 

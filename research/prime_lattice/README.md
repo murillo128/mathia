@@ -43,9 +43,9 @@ These labels describe provenance and certainty, not importance.
 
 ## Files
 
-- [`FINDINGS.md`](FINDINGS.md) — compact index of durable positive and negative results.
+- [`findings/`](findings/) — canonical `PL-NNN-*` finding notes and source of truth for durable research evidence.
 - [`SOURCES.md`](SOURCES.md) — literature anchors used by the stored findings.
-- [`findings/`](findings/) — detailed `PL-NNN-*` finding notes.
+- [`graph/index.md`](graph/index.md) — derived navigation and relation view; it is not a source of mathematical truth.
 
 The separate Mathia mind process owns `mind/` synthesis; this evidence branch does not maintain intuitions, research lines, project status, or chronological logs.
 
