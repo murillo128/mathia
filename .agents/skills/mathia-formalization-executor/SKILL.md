@@ -174,7 +174,15 @@ Use the canonical independent-review skill when the controlling issue requires G
 .agents/skills/codex-independent-review/SKILL.md
 ```
 
-The independent reviewer remains read-only. It may discover material mathematics; those findings become inputs to the issue-owning review session.
+The independent reviewer remains read-only over the Lean implementation, workflow state, canonical findings, and adversarial reviews. On a **completed Mathia Lean formalization**, it additionally must reconstruct the formal theorem and proof as ordinary mathematics, compare that human proof with the persisted explanation, and state the exact unformalized boundary.
+
+If that formal-to-human reconstruction exposes a genuinely distinct, falsifiable mathematical direction, the reviewer may load:
+
+```text
+.agents/skills/mathia-research-clues/SKILL.md
+```
+
+and create or materially strengthen only a `status: proposed` clue. This is the reviewer's sole research-tree write exception; Research Watch owns clue disposition and any later finding.
 
 A technical `PASS` means the exact reviewed Lean target is safe at that checkpoint. It does not:
 
@@ -197,7 +205,8 @@ Before ready-for-review handoff, verify as required by the controlling issue:
 - no numerical falsification or exploratory computation was promoted into proof evidence;
 - material imports/dependencies used by the proof are recorded when relevant;
 - all material mathematical discoveries have structured handoffs in the controlling Mathia issue, or explicitly record `Formalization research handoff: none`;
-- fresh final technical review covers theorem fidelity, proof integrity, and completeness of research handoffs.
+- fresh final technical review covers theorem fidelity, proof integrity, formal-to-human statement/proof correspondence, explicit unformalized boundaries, and completeness of research handoffs;
+- any clue created by the independent reviewer is only `status: proposed`, deduplicated, and grounded in the exact formalization/correspondence evidence.
 
 Use the repository-native Lean command defined by Mathia's current Lean project. If no command is yet canonical, use the simplest command that checks the bounded formalization and record it in the execution evidence.
 
