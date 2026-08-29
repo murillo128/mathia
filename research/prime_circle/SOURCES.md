@@ -88,3 +88,8 @@ This file records durable literature dependencies used to support or falsify fin
 ## Weil–Petersson homothety under covering constructions
 
 - Carlos A. Serván, **Local rigidity of covering constructions and Weil–Petersson subvarieties of the moduli space of curves**, *International Mathematics Research Notices* 2026:12 (2026). DOI: 10.1093/imrn/rnag121. arXiv:2509.25523. Role: Corollary 6.5 proves for totally marked covering constructions that pullback scales the Weil–Petersson metric by the covering degree, `f^*g_WP = deg(h) g_WP`; direct prior-art anchor for the degree homothety and normalized divisor-refinement transport in PC-041.
+
+## Weil–Petersson curvature and Green/resolvent formulas
+
+- Scott A. Wolpert, **Chern forms and the Riemann tensor for the moduli space of curves**, *Inventiones Mathematicae* 85 (1986), 119–145. DOI: 10.1007/BF01388794. Role: primary classical source for the Weil–Petersson Riemann tensor expressed through the hyperbolic Green/resolvent operator; analytic prior-art anchor for PC-042.
+- Lin Weng, **Omega-admissible theory. II. Deligne pairings over moduli spaces of punctured Riemann surfaces**, *Mathematische Annalen* 320 (2001), 239–283. DOI: 10.1007/s002080100194. Role: Appendix explicitly extends the Wolpert curvature-tensor formula to punctured Teichmüller spaces and writes the associated spectral/resolvent decomposition; punctured-surface anchor for PC-042.
