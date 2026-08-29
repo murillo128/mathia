@@ -257,6 +257,7 @@ Load repository skills lazily by role:
 - recurring research mind synthesizer: `.agents/skills/mathia-research-mind/SKILL.md`;
 - recurring research graph curator watch: `.agents/skills/mathia-research-graph-curator/SKILL.md`;
 - recurring program-level master researcher: `.agents/skills/mathia-master-researcher/SKILL.md`;
+- recurring ultra-selective visionary researcher: `.agents/skills/mathia-visionary-researcher/SKILL.md`;
 - Git/GitHub mutation and publication: `.agents/skills/codex-github-operations/SKILL.md`;
 - independent checkpoint/final review: `.agents/skills/codex-independent-review/SKILL.md`.
 
@@ -273,7 +274,7 @@ Never commit secrets, credentials, private data, or artifacts without redistribu
 ## Git behavior
 
 - Use feature branches for non-trivial work unless the user explicitly requests a direct default-branch change.
-- Scheduled mathematical research watches routed through `.agents/skills/mathia-research-watch/SKILL.md`, scheduled adversarial research watches routed through `.agents/skills/mathia-research-adversarial/SKILL.md`, scheduled research-mind synthesis routed through `.agents/skills/mathia-research-mind/SKILL.md`, scheduled graph-curator watches routed through `.agents/skills/mathia-research-graph-curator/SKILL.md`, and scheduled Master Researcher passes routed through `.agents/skills/mathia-master-researcher/SKILL.md` are explicit exceptions: they may commit only changes inside their respective skill-owned paths directly to the default branch when all path and publication gates pass.
+- Scheduled mathematical research watches routed through `.agents/skills/mathia-research-watch/SKILL.md`, scheduled adversarial research watches routed through `.agents/skills/mathia-research-adversarial/SKILL.md`, scheduled research-mind synthesis routed through `.agents/skills/mathia-research-mind/SKILL.md`, scheduled graph-curator watches routed through `.agents/skills/mathia-research-graph-curator/SKILL.md`, scheduled Master Researcher passes routed through `.agents/skills/mathia-master-researcher/SKILL.md`, and scheduled Visionary Researcher passes routed through `.agents/skills/mathia-visionary-researcher/SKILL.md` are explicit exceptions: they may commit only changes inside their respective skill-owned paths directly to the default branch when all path and publication gates pass.
 - Avoid unrelated formatting or cleanup.
 - Commit messages should describe one intentional outcome.
 - Executor workflows end at a ready-for-review pull request and handoff.

@@ -1,19 +1,19 @@
 ---
 name: mathia-research-clues
-description: Hand off speculative but source-motivated research clues from Mind, Graph Curator, Research Watch, Adversarial Research, or Master Researcher without treating clues as evidence or discoveries.
+description: Hand off speculative but source-motivated research clues from Mind, Graph Curator, Research Watch, Adversarial Research, Master Researcher, or Visionary Researcher without treating clues as evidence or discoveries.
 ---
 
 # Mathia Research Clues
 
 ## Responsibility
 
-Use this skill together with `mathia-research-mind`, `mathia-research-graph-curator`, `mathia-research-watch`, `mathia-research-adversarial`, or `mathia-master-researcher` when a recurring process needs to hand off a promising but unvalidated mathematical direction to research.
+Use this skill together with `mathia-research-mind`, `mathia-research-graph-curator`, `mathia-research-watch`, `mathia-research-adversarial`, `mathia-master-researcher`, or `mathia-visionary-researcher` when a recurring process needs to hand off a promising but unvalidated mathematical direction to research.
 
 A **clue is not a finding, intuition, theorem, novelty claim, review verdict, portfolio recommendation, or accepted research result**. It is a compact, falsifiable research lead suggested by already-persisted repository structure, synthesis, primary research, adversarial friction, or program-level cross-line analysis but still requiring the normal Research Watch derivation, stress test, literature check, and evidence gate.
 
 This skill is a narrow extension of the caller skill's path gate for clue files only. All other caller ownership restrictions remain unchanged.
 
-The existing Mind, Graph Curator, Research Watch, and Adversarial Research clue behavior remains unchanged; this skill additionally allows the Master Researcher to emit source-grounded clues from cross-line/portfolio analysis.
+The existing Mind, Graph Curator, Research Watch, Adversarial Research, and Master Researcher clue behavior remains unchanged; this skill additionally allows the Visionary Researcher to emit ultra-selective, literature-audited clues for genuinely new attack families.
 
 ## Storage
 
@@ -52,7 +52,7 @@ Use compact frontmatter:
 id: CLUE-<scope>-<slug>
 type: research-clue
 status: proposed
-origin: mind | graph-curator | research-watch | adversarial | master-researcher
+origin: mind | graph-curator | research-watch | adversarial | master-researcher | visionary-researcher
 target_line: <line> | global | new-line-candidate
 based_on:
   - <repository path>
@@ -65,7 +65,7 @@ Then keep only these substantive sections:
 # <research question>
 
 ## Observation
-What persisted finding, intuition, review, graph structure, or cross-line program state suggested the clue.
+What persisted finding, intuition, review, graph structure, cross-line program state, or literature-audited blind spot suggested the clue.
 
 ## Research question
 The precise candidate mechanism, connection, obstruction, or distinction to investigate.
@@ -221,6 +221,23 @@ It may create or materially strengthen only `proposed` clues. It must not change
 
 For an existing destination line, prefer `research/<line>/clues/**`. Use `research/clues/**` only when the question is genuinely cross-line or a new-line candidate.
 
+## Producer: Visionary Researcher
+
+When loaded with `mathia-visionary-researcher`, the Visionary may emit a clue only after a full current-state/prior-art intake, broad external literature audit, and internal adversarial kill pass expose a **mathematically explicit attack family that is not already represented by the current program**.
+
+Good Visionary clues include:
+
+- a precise new information carrier that evades a persisted quotient/compression obstruction;
+- an exact operation or dual proof obligation outside the hypotheses of the current no-go results;
+- a structurally faithful transfer from a neighboring field with a complete mathematical dictionary and a cheap decisive test;
+- a genuinely distinct `new-line-candidate` whose first experiment can falsify the mechanism before a line is initialized.
+
+The Visionary must not persist brainstorming, candidate lists, literature-search logs, or claims of novelty. The clue must state a canonical construction, the strongest relevant Mathia obstruction, the closest authoritative literature, the exact unresolved residual, and a decisive first test. Put the compact literature comparison in `## Evidence boundary`; do not add a separate run report.
+
+It may create or materially strengthen at most one `proposed` clue per run. It must not change `accepted`, `rejected`, or `resolved` dispositions.
+
+For an existing destination line, prefer `research/<line>/clues/**`. Use `research/clues/**` for genuinely cross-line questions or `new-line-candidate` proposals. The Master Researcher consumes both local and global clues, so no separate Master inbox is needed.
+
 ## Ownership extension
 
 When this skill is explicitly loaded, it extends writable paths only as follows.
@@ -285,6 +302,17 @@ research/clues/**
 
 It must not change Research Watch disposition states, create a clue solely to record a portfolio recommendation, or modify a clue merely because it appeared in `research/master/STATE.md`.
 
+### Visionary Researcher
+
+May create or materially strengthen only `proposed` clues under:
+
+```text
+research/<line>/clues/**
+research/clues/**
+```
+
+It must not change Research Watch disposition states, create more than one clue in a run, persist null results or candidate backlogs, or modify a clue merely to record literature search.
+
 This exception does not grant access to any other caller-forbidden path.
 
 ## Publication and no-churn gate
@@ -295,6 +323,7 @@ A clue change may share the caller's normal direct-main publication path when al
 - the clue is materially new, materially better grounded, or its Research Watch disposition changed;
 - any review-derived clue cites the persisted finding/review that motivated it;
 - any Master-derived clue cites the current persisted findings/mind/graph/clues that motivated the cross-line question;
+- any Visionary-derived clue cites the current Master/Mind/finding/prior-art basis and gives a bounded closest-literature comparison plus a decisive first test;
 - no timestamps/run logs/status noise were added;
 - the source revision remains coherent;
 - the caller's normal diff review and publication gates pass.
@@ -305,7 +334,7 @@ Use the caller's normal commit prefix. Do not create a commit solely to restate 
 
 Clue persistence and clue notification are separate thresholds.
 
-- Producers (`Mind`, `Graph Curator`, `Adversarial Research`, `Master Researcher`, or a Research Watch proposing its own clue) do **not** notify merely because a clue is created or strengthened in `proposed` state, even if the clue appears consequential.
+- Producers (`Mind`, `Graph Curator`, `Adversarial Research`, `Master Researcher`, `Visionary Researcher`, or a Research Watch proposing its own clue) do **not** notify merely because a clue is created or strengthened in `proposed` state, even if the clue appears consequential.
 - A Research Watch notifies when it changes a clue to `status: accepted`.
 - Do not notify merely because a clue becomes `rejected` or `resolved`. Any durable mathematical result produced while rejecting or resolving it is governed by the Research Watch's ordinary notification policy, not by clue status itself.
 
