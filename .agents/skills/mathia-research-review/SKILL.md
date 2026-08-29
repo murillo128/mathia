@@ -1,6 +1,6 @@
 ---
 name: mathia-research-review
-description: Shared sidecar protocol for adversarial review of Mathia research findings, with turn ownership, convergence by deletion, Git-visible change semantics, and clue handoff.
+description: Shared sidecar protocol for adversarial review of Mathia research findings, with turn ownership, convergence by deletion, Git-visible change semantics, clue handoff, and review-notification semantics.
 ---
 
 # Mathia Research Review
@@ -156,6 +156,33 @@ If the owner has resolved the objection, the adversary deletes **only** the `.re
 If the objection remains, the adversary appends another `## Adversary` section explaining the remaining issue. Do not restate already resolved points merely to continue the conversation.
 
 The adversary never edits or deletes the target finding.
+
+## Review notification policy
+
+Adversarial review is intentionally operated in **full-observability mode** while the protocol is being validated. Every material review state transition or dialogue turn is notification-worthy.
+
+Notify for all of the following:
+
+- creation of a new `.review.md` sidecar;
+- every substantive `## Owner` response;
+- every substantive follow-up `## Adversary` response;
+- an owner concession that withdraws the reviewed finding;
+- a corrected or replacement finding created because a review invalidated or materially narrowed the old claim;
+- adversary deletion of the sidecar because the owner's defense resolved the objection;
+- any other material review-protocol transition that changes the mathematical disposition of the disputed claim.
+
+Do not notify for merely observing an existing review, an unchanged review waiting for the other participant, acknowledgements, duplicate objections, or runs in which the review state did not materially change.
+
+To avoid duplicate notifications, **the process that authors the review-state change owns its notification**:
+
+```text
+Adversary opens/continues/closes review -> Adversarial Research notifies
+Owner answers/concedes/replaces claim   -> owning Research Watch notifies
+```
+
+A process must not notify merely because it later observes a transition already authored by the other side.
+
+Task-specific prompts should not duplicate this review-notification matrix unless they intentionally impose a temporary stricter policy. This shared skill is the default source of truth for review notification semantics.
 
 ## Git as the change stream
 
