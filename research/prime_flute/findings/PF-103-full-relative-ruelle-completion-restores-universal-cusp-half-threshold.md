@@ -23,7 +23,7 @@ For the exact endpoint flute and its projective reference, the `O(1)` term depen
 C_{bd}=\sqrt{W_bW_d}\,|d-b|.
 \]
 
-Whenever the exact/reference coefficient ratio is nontrivial, the corresponding relative primitive-orbit logarithms are asymptotic to a nonzero constant times `k^{-2s}`. Hence this single primitive family is absolutely summable only for
+At least one actual marked prime-cusp pair has a nontrivial exact/reference coefficient ratio. For such a pair, the corresponding relative primitive-orbit logarithms are asymptotic to a nonzero constant times `k^{-2s}`. Hence this single primitive family is absolutely summable only for
 
 \[
 \boxed{\operatorname{Re}s>\frac12.}
@@ -149,15 +149,76 @@ a_0=(C_{bd}^0)^2,
 =\left(\frac{C_{bd}^E}{C_{bd}^0}\right)^2.
 \]
 
-PF-100 derives the exact/reference defect of this same width-normalized coefficient and shows that it is generically nonzero; for any fixed four-point local pattern its first nonzero term is
+The load-bearing fact that `\rho\ne1` for at least one **actual** marked prime-cusp pair follows exactly, without any recurrence assumption on fixed prime-gap patterns. For either realization write
 
 \[
-\log\frac{C^E}{C^0}
-=-\frac{\pi^2}{6P^4}
-\bigl((s-r)^2+ab+cd\bigr)+O(P^{-5}),
+C_{ij}=\sqrt{W_iW_j}\,|x_j-x_i|.
 \]
 
-whose displayed coefficient is strictly negative for positive gaps. Hence sufficiently far-out fixed patterns supply pairs with `\rho\ne1`.
+Suppose for contradiction that every marked pair agreed between the exact and projective flutes,
+
+\[
+C_{ij}^E=C_{ij}^0
+\qquad(i\ne j).
+\]
+
+For four distinct ordered indices `i<j<k<l`, the cusp-width factors cancel from
+
+\[
+\frac{C_{ik}C_{jl}}{C_{ij}C_{kl}}
+=
+\frac{|x_k-x_i|\,|x_l-x_j|}
+     {|x_j-x_i|\,|x_l-x_k|}.
+\]
+
+Hence equality of all `C_{ij}` would imply equality of all cross-ratios of the two marked endpoint sets
+
+\[
+\{p_n\}
+\qquad\text{and}\qquad
+\{V(p_n)\}.
+\]
+
+Fix three prime endpoints. There is a unique real Möbius transformation `M` sending those three projective endpoints to their exact images. Cross-ratio equality with the fixed triple is injective in the fourth point, so the assumed equality forces
+
+\[
+M(p_n)=V(p_n)
+\qquad\text{for every prime }p_n.
+\]
+
+This is impossible. Write
+
+\[
+M(x)=\frac{ax+b}{cx+d}.
+\]
+
+Since the primes are unbounded and
+
+\[
+V(p)=p-\frac{\pi^2}{3p}+O(p^{-3}),
+\]
+
+we have `V(p_n)\to\infty`, so necessarily `c=0`. Thus `M(x)=\alpha x+\beta`. The same asymptotic gives
+
+\[
+\frac{V(p_n)}{p_n}\to1,
+\qquad
+V(p_n)-p_n\to0,
+\]
+
+hence `\alpha=1` and `\beta=0`. Therefore `M` would be the identity. But for every prime `p>2`, putting `y=\pi/p\in(0,\pi/2)` and using `\tan y>y` gives
+
+\[
+V(p)=\pi\cot\frac{\pi}{p}<p,
+\]
+
+contradicting `M(p)=V(p)`. Therefore
+
+\[
+\boxed{\exists\,i\ne j:\ C_{ij}^E\ne C_{ij}^0.}
+\]
+
+Choose such an actual marked prime-cusp pair for `b,d`; then `\rho\ne1`. PF-100 remains useful as a local finite-scale asymptotic description of the same coefficient defect, but it is not needed for this existence premise.
 
 From (3),
 
@@ -273,7 +334,7 @@ The ingredients are classical and no novelty is claimed for them separately.
 - Pohl--Wabnitz, *Selberg Zeta Functions, Cuspidal Accelerations, and Existence of Strict Transfer Operator Approaches*, Memoirs AMS 1616 (2026), DOI `10.1090/memo/1616`, gives a systematic cuspidal-acceleration/Fredholm construction for geometrically finite noncompact hyperbolic orbisurfaces.
 - Cusp-winding statistics and thermodynamic formalisms for finitely generated Fuchsian groups are an established subject; recent examples include work of Yuya Arima and of Arima--Jaerisch. These settings are much more controlled than the infinitely generated prime-flute.
 
-Directed searches did not locate the specific relative statement proved here: for the prime-flute's explicit zero-twist parabolics, the exact identity `|tr(P_bP_d^k)|=|C_{bd}^2k-2|` combines with the exact/projective width-normalized defect to force a `1/2` subseries inside **any marked full primitive-orbit completion** of the PF-084 sector.
+Directed searches did not locate the specific relative statement proved here: for the prime-flute's explicit zero-twist parabolics, the exact identity `|tr(P_bP_d^k)|=|C_{bd}^2k-2|` combines with the exact cross-ratio rigidity argument above to force a nontrivial exact/projective coefficient and hence a `1/2` subseries inside **any marked full primitive-orbit completion** of the PF-084 sector.
 
 Accordingly, the novelty is a program-specific negative consequence, not a new theorem about standard cusped Selberg theory.
 
@@ -314,7 +375,9 @@ The finite algebraic part is a good Lean candidate:
    =|4AB(b-d)^2k-2|;
    \]
 3. rewrite `4AB(b-d)^2=W_bW_d(b-d)^2=C_{bd}^2`;
-4. derive `L_k=2 arcosh(|tr|/2)=2 log k+2 log C_{bd}^2+o(1)`;
-5. prove the elementary `p`-series implication (5)--(6) under `\rho>0`, `\rho\ne1`, `Re s>0`.
+4. prove that equality of all marked `C_{ij}` between the projective endpoints `p_n` and exact endpoints `V(p_n)` forces equality of all cross-ratios and hence a single Möbius map `M` with `M(p_n)=V(p_n)` for every prime;
+5. use the cotangent asymptotic and `V(p)<p` for `p>2` to rule out such an `M`, establishing an actual pair with `\rho\ne1`;
+6. derive `L_k=2 arcosh(|tr|/2)=2 log k+2 log C_{bd}^2+o(1)`;
+7. prove the elementary `p`-series implication (5)--(6) under `\rho>0`, `\rho\ne1`, `Re s>0`.
 
 The only topological input needed for primitivity is that the two peripheral loops are independent in the abelianization of a finite punctured-sphere subsurface with boundary.
