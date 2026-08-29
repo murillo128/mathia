@@ -251,6 +251,8 @@ Load repository skills lazily by role:
 
 - design authority: `.agents/skills/design-github-issue/SKILL.md`;
 - main executor: `.agents/skills/spec-driven-codex-loop/SKILL.md`;
+- Mathia formalization issue design: `.agents/skills/mathia-formalization-design/SKILL.md` on top of `design-github-issue`;
+- Mathia formalization execution: `.agents/skills/mathia-formalization-executor/SKILL.md` on top of `spec-driven-codex-loop`;
 - recurring mathematical research watch: `.agents/skills/mathia-research-watch/SKILL.md`;
 - shared finding-review protocol for research owners and adversaries: `.agents/skills/mathia-research-review/SKILL.md`;
 - recurring adversarial research watch: `.agents/skills/mathia-research-adversarial/SKILL.md`;
