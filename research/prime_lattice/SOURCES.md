@@ -159,3 +159,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 40. **Art M. Duval, Victor Reiner**, “Shifted simplicial complexes are Laplacian integral,” *Transactions of the American Mathematical Society* **354**(11) (2002), 4313–4344. DOI: https://doi.org/10.1090/S0002-9947-02-03082-9.
     - Role: spectral prior-art anchor for `PL-022`. Proves that the standard combinatorial Laplacians of every shifted simplicial complex have integer spectra with a combinatorial description, so Björner's shifted square-free complexes already carry a rigid classical Hodge spectrum rather than a direct Riemann-zero spectrum.
+
+## Prime-shift commutant and multiplier spectrum
+
+41. **Tomas Fernandez Vidal, Daniel Galicer, Pablo Sevilla-Peris**, “Multipliers for Hardy spaces of Dirichlet series,” *Annales de l'Institut Fourier* **75**(2) (2025), 541–577. DOI: https://doi.org/10.5802/aif.3658. arXiv: https://arxiv.org/abs/2205.07961.
+    - Role: main prior-art anchor for `PL-023`. Theorem 4.1 characterizes bounded operators between Hardy spaces of Dirichlet series that commute with every prime monomial multiplier as exactly multiplication operators. Theorem 5.1 identifies the spectrum of a multiplier from its half-plane image and notes that nonconstant multipliers have empty point spectrum. Combined with the `H^2` coefficient basis, this yields the derived scalar-normal and self-adjoint-resolvent obstruction for a fully prime-shift-invariant Hilbert–Pólya route.
