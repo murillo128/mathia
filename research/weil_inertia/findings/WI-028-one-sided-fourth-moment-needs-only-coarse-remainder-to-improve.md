@@ -144,7 +144,7 @@ The manuscript assembles
 R(1)
 \le
 \operatorname{core}(T)
-+arepsilon_{\rm tail}
++\varepsilon_{\rm tail}
 +o(1)
 \tag{10}
 \]
@@ -218,7 +218,7 @@ By contrast, reproducing the candidate `0.691615` at a tail charge `0.0111` requ
 
 which is a materially stronger burden.
 
-Equations (13)--(16) show why the route deserves renewed attention despite the failed exact-moment audit: **the current theorem can be improved by a coarse one-sided certification with more than an order of magnitude of slack relative to the manuscript's target remainder.** The finite-height computations are suggestive evidence that such a coarse certificate may be attainable, but they are not themselves proof.
+Equations (13)--(16) show why the route deserves renewed attention despite the failed exact-moment audit: **the current theorem can be improved by a coarse one-sided certification with roughly a factor `5.8` more remainder allowance than the manuscript's `0.0066` target.** The finite-height computations are suggestive evidence that such a coarse certificate may be attainable, but they are not themselves proof.
 
 ## 6. Prior art and novelty assessment
 
@@ -261,7 +261,6 @@ while
 R(1)<0.0221688
 \Longrightarrow
 \text{cross the }0.68185\text{ comparison ceiling.}
-}
 \]
 
 This is now the highest-leverage arithmetic audit target among the currently identified single-rung routes: first prove a coarse one-sided remainder theorem, then tighten it only if the coarse gate succeeds. The established bound itself is unchanged until that certification exists.
