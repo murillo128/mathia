@@ -164,3 +164,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 41. **Tomas Fernandez Vidal, Daniel Galicer, Pablo Sevilla-Peris**, “Multipliers for Hardy spaces of Dirichlet series,” *Annales de l'Institut Fourier* **75**(2) (2025), 541–577. DOI: https://doi.org/10.5802/aif.3658. arXiv: https://arxiv.org/abs/2205.07961.
     - Role: main prior-art anchor for `PL-023`. Theorem 4.1 characterizes bounded operators between Hardy spaces of Dirichlet series that commute with every prime monomial multiplier as exactly multiplication operators. Theorem 5.1 identifies the spectrum of a multiplier from its half-plane image and notes that nonconstant multipliers have empty point spectrum. Combined with the `H^2` coefficient basis, this yields the derived scalar-normal and self-adjoint-resolvent obstruction for a fully prime-shift-invariant Hilbert–Pólya route.
+
+## LogPrime quota persistence
+
+42. **Jonathan Pakianathan, Troy Winfree**, “Threshold complexes and connections to number theory,” *Turkish Journal of Mathematics* **37**(3) (2013), 511–539. DOI: https://doi.org/10.3906/mat-1112-14. Earlier arXiv version: *Quota Complexes, Persistent Homology and the Goldbach Conjecture*, arXiv:1104.4324v3 [math.AT] (2011), https://arxiv.org/abs/1104.4324.
+    - Role: main prior-art anchor for `PL-032`. Frames variation of scalar quota complexes as a persistent-homology/Morse-type problem; proves the minimum-weight shell/bouquet theorem; introduces the exact `LogPrime` complex with vertex weights `log p`; and identifies its Euler characteristic with the Mertens function, giving the classical RH-equivalent growth criterion. The exact `[b,2b)` barcode in `PL-032` is a derived filtered refinement, not claimed as literature or novelty.
