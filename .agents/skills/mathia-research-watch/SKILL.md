@@ -1,6 +1,6 @@
 ---
 name: mathia-research-watch
-description: Run recurring Mathia mathematical research watches with durable findings, adversarial review response, prior-art audit, clue triage, strict path ownership, and direct-main publication gates.
+description: Run recurring Mathia mathematical research watches with durable findings, adversarial review response, prior-art audit, clue triage, strict path ownership, direct-main publication gates, and low-noise notifications.
 ---
 
 # Mathia Research Watch
@@ -19,7 +19,7 @@ Every Research Watch must also load:
 .agents/skills/mathia-research-review/SKILL.md
 ```
 
-That skill is the procedural authority for responding to adversarial `.review.md` sidecars attached to this line's findings.
+That skill is the procedural authority for responding to adversarial `.review.md` sidecars attached to this line's findings, including review-notification ownership.
 
 When local clues exist or the run needs to create/update a clue, also load:
 
@@ -233,7 +233,7 @@ Review files live adjacent to their targets:
 research/<line>/findings/<finding>.review.md
 ```
 
-Their complete lifecycle, ownership, turn-taking, and deletion semantics are defined only by `mathia-research-review`. Do not invent local variants.
+Their complete lifecycle, ownership, turn-taking, deletion semantics, and notification ownership are defined only by `mathia-research-review`. Do not invent local variants.
 
 ### `SOURCES.md`
 
@@ -316,20 +316,23 @@ If no substantive mathematical or review outcome improved, do not commit merely 
 
 ## Notification policy
 
-A stored finding/review response and a user notification are separate thresholds. Routine substantive refinements may be committed silently.
+Persistence and notification are deliberately separate thresholds. The default Research Watch notification channel is a **low-noise interruption channel**, not a mirror of normal research activity.
 
-Unless the task specifies a stricter rule, notify only for one of these:
+Notify only for:
 
-1. a mathematically substantive mechanism connecting the construction to the target problem that survives serious novelty checking;
-2. a precise new conjectural bridge with a clear falsification test;
-3. prior art that essentially already contains the sought interpretation and materially redirects the investigation;
-4. a decisive negative result that rules out an important natural branch;
-5. an adversarial review that forces withdrawal of a consequential finding or resolves a major disputed claim.
+1. **Workflow/publication failure:** an error, conflict, missing required capability, path/publication-gate failure, or other workflow problem prevents the run from completing its intended research/review persistence correctly.
+2. **Extraordinary mathematical success:** a result that materially changes the RH research program or crosses a comparably high bar. Ordinary positive findings, useful refinements, classicalizations, and routine branch closures do not qualify merely because they are substantive enough to persist.
+3. **Clue acceptance:** a clue changes to `status: accepted`. Do not notify merely for clue proposal, rejection, or resolution; the resulting durable finding, when any, is governed by the ordinary research threshold above.
+4. **Owner-side adversarial review events:** every material review-state change authored by this Research Watch, exactly as defined by `mathia-research-review`, including each substantive `Owner` response and any concession, correction, replacement, or withdrawal caused by review.
 
-Do not notify for unchanged searches, minor source additions, editorial cleanup, or routine review dialogue.
+Do **not** notify for ordinary positive findings, routine negative results or dead-end/branch closures, routine prior-art redirects, ordinary commits, source additions, clue proposal/rejection/resolution, unchanged searches, or unchanged runs.
+
+Do not notify merely because this watch observes an adversary-side review event. The authoring `mathia-research-adversarial` process owns those notifications under `mathia-research-review`, which prevents duplicate alerts.
+
+A task-specific prompt may impose a stricter threshold, but should normally inherit this section instead of restating it.
 
 ## Reporting
 
-At the end of a run, report only substantive mathematical changes and their evidence level, plus consequential adversarial-review outcomes. If nothing material changed, say so concisely or remain silent when the automation's notification policy calls for silence.
+At the end of a run, persist and internally summarize whatever the research workflow needs, but surface a user-facing notification only when the notification policy above fires. Review notifications must follow the exact event ownership in `mathia-research-review`.
 
-Do not produce a project-status recap, timeline, or daily journal.
+Do not produce a project-status recap, timeline, daily journal, or routine success/closure message.
