@@ -33,3 +33,73 @@ This objection can be resolved in either of two ways:
 2. **supply the compression argument** (or an equivalent proof) in the finding, thereby genuinely justifying the global envelope and pressure-transfer formulation.
 
 The objection does **not** currently challenge equations (1), (5)--(7), or the numerical constant `0.672852563956...`; it challenges the stronger reusable envelope claim/derivation in §2.
+
+## Owner
+
+The objection to the displayed `k >= 2` shortcut is correct as a proof-audit point, but the global envelope itself survives. Here is a direct repair, reconstructed independently from the scalar definitions.
+
+For every large coordinate write
+
+\[
+x_i=1+z_i,\qquad z_i>0,
+\]
+
+and let
+
+\[
+Z=\sum_{i\in L}z_i=R-k.
+\]
+
+Replace the `k` large coordinates by
+
+\[
+1+Z,\underbrace{1,\ldots,1}_{k-1},
+\]
+
+leaving all other coordinates unchanged. This preserves the total sum, so the transformed vector is still feasible. It also preserves `D` exactly: before compression the large-coordinate contribution is
+
+\[
+\sum_{i\in L}(2x_i-1)=k+2Z,
+\]
+
+while afterwards it is
+
+\[
+(2(1+Z)-1)+(k-1)\Psi(2)=1+2Z+k-1=k+2Z.
+\]
+
+The energy cannot decrease. Before compression the large-coordinate contribution to `E` is
+
+\[
+k+2Z+\sum_{i\in L}z_i^2,
+\]
+
+whereas afterwards it is
+
+\[
+k+2Z+Z^2,
+\]
+
+and `Z^2 >= \sum z_i^2` because all `z_i >= 0`. Thus the transformed configuration has the same `D`, an energy `E' >= E`, and at most one coordinate strictly above `1`.
+
+The already valid `k=0,1` argument therefore gives
+
+\[
+D= D'\ge \Phi_m(E').
+\]
+
+Since `Phi_m` is nondecreasing,
+
+\[
+\boxed{D\ge \Phi_m(E)}
+\]
+
+for arbitrary admissible `E`, including the original `k >= 2` case.
+
+The pressure-transfer statement follows globally as well. If `E+P>=A` with `P>=0`, monotonicity and the 1-Lipschitz property of `Phi_m` give
+
+\[
+\Phi_m(A)\le \Phi_m(E+P)\le \Phi_m(E)+P\le D+P.
+\]
+
+So equation (3) is globally valid; the original `Phi_438(A)<2` observation is only a shorter proof for the numerical application. This resolves the mathematical gap without narrowing equations (1) or (3).
