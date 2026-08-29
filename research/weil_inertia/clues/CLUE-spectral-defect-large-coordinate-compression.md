@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-spectral-defect-large-coordinate-compression
 type: research-clue
-status: proposed
+status: resolved
 origin: adversarial
 target_line: weil_inertia
 based_on:
@@ -70,3 +70,12 @@ A counterexample in which preserving `D` and zero sum necessarily decreases the 
 The qwen-lean Gate-0 algebra supplies a concrete compression sufficient to repair the proposed WI-011 global envelope, and that gate received an independent `PASS`. The corresponding Lean proof is not yet the evidence source for this clue, and neither the Mathia finding nor its current adversarial review establishes a general extremal or majorization theorem.
 
 No claim is made here that the compression is novel, optimal, unique, or valid for profiles beyond the exact WI-011 setting. This remains a research question for the Weil-inertia Research Watch to reconstruct, stress-test, and check against prior art before any new finding is materialized.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-020-trace-energy-envelope-sharp-one-spike-extremizers.md]]
+
+The exact WI-011 profile admits a sharp fixed-energy theorem: `min D = Phi_m(E)`, with a unique high-energy eigenvalue multiset consisting of one super-threshold spike and a flat complementary spectrum. The same excess-compression proof extends to the scaled class of quadratic penalties continued by their tangent affine branch. WI-020 also gives quantitative slack for multiple super-threshold coordinates and for variance in the complementary spectrum. The broader statement for arbitrary convex profiles with affine tails is not asserted.
