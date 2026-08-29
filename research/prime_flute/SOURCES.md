@@ -170,6 +170,21 @@ The following branches were useful for exploration but should not be promoted un
 
 These omissions are intentional. `FINDINGS.md` marks the affected claims as negative background or `NEEDS-AUDIT` rather than pretending the sourcing is complete.
 
+## S11 — asymptotically isometric infinite-type structures
+
+**F. Yaşar**, *Infinite-dimensional Teichmüller spaces*, arXiv:2104.00289 (2021).
+
+- https://arxiv.org/abs/2104.00289
+
+Used for:
+
+- prior-art context for asymptotically isometric / asymptotic length-spectrum equivalence on infinite-type hyperbolic surfaces;
+- checking whether the uniform tail equivalence in PF-105 is already an instance of a standard Fenchel-Nielsen theorem.
+
+Relevant finding: PF-105.
+
+**Scope warning.** Yaşar's Fenchel-Nielsen characterization of `T^0_ls(H_0)` is stated under an **upper-bounded base surface** hypothesis. The prime-flute's distinguished cuffs tend to infinity, so PF-105 does not invoke that theorem. Its `O(P^-2)` cross-ratio/separator bounds and `ell^1` fan-shear defect are derived directly from the exact endpoint law.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
