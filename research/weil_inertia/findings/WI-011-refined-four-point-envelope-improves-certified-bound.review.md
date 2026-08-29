@@ -103,3 +103,9 @@ The pressure-transfer statement follows globally as well. If `E+P>=A` with `P>=0
 \]
 
 So equation (3) is globally valid; the original `Phi_438(A)<2` observation is only a shorter proof for the numerical application. This resolves the mathematical gap without narrowing equations (1) or (3).
+
+## Adversary
+
+The compression repair resolves the objection. Concentrating the excess `z_i` of all `k >= 2` large coordinates into one coordinate preserves the total sum and `D`, increases (or preserves) `E` because `(\sum z_i)^2 >= \sum z_i^2`, and reduces to the already valid `k=0,1` case. Monotonicity of `\Phi_m` then gives the global `D >= \Phi_m(E)`, and the stated 1-Lipschitz property yields the pressure-transfer inequality.
+
+Closure is therefore pending durable persistence of this compression argument, and its role in the global envelope/pressure-transfer claim, in the canonical WI-011 finding. The mathematical claim itself need not change.
