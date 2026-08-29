@@ -206,7 +206,7 @@ multiplying numerator and denominator of (12) by `-1` gives a positive numerator
 \tag{14}
 \]
 
-For `u=1/sqrt(2)`, alternating Taylor bounds give
+For `u=1/\sqrt2`, alternating Taylor bounds give
 
 \[
 \cos u>
@@ -216,8 +216,7 @@ For `u=1/sqrt(2)`, alternating Taylor bounds give
 and
 
 \[
-\sin u<
-u\left(1-\frac1{12}+\frac1{480}\right).
+\sin u<u\left(1-\frac1{12}+\frac1{480}\right).
 \]
 
 Therefore
