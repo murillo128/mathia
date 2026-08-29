@@ -274,12 +274,15 @@ If no candidate passes the gate, create no commit. Never commit merely to show t
 
 ## Notification and reporting
 
-Inherit the shared low-noise clue policy.
+This role has one deliberate exception to the shared low-noise clue default because a qualifying Visionary output is expected to be rare.
 
-- Do not notify merely because the Visionary created or strengthened a `proposed` clue, even if it appears important.
-- The eventual Research Watch notifies if it changes the clue to `status: accepted`.
-- Notify only when a workflow, required-capability, synchronization, path-gate, or publication failure prevents intended persistence.
-- Do not surface routine null results, candidate summaries, literature-search recaps, or weekly status reports.
+- Notify when the Visionary successfully creates or materially strengthens a `status: proposed` clue and publishes it to the default branch. This published clue is the task's positive result.
+- Keep that notification compact: identify the clue path, `target_line`, exact research question, decisive first test, and publication commit. Do not describe discarded candidates or the complete literature search.
+- The eventual Research Watch still notifies separately if it changes the clue to `status: accepted`.
+- Notify when a workflow, required-capability, synchronization, path-gate, or publication failure prevents intended persistence.
+- Do not notify for null runs, rejected internal candidates, unchanged clues, routine literature-search completion, or weekly status.
+
+This exception applies only to the Visionary Researcher's own publication of a qualifying clue; it does not change notification policy for other clue producers.
 
 ## Operating cadence
 
