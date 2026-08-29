@@ -37,13 +37,7 @@ It does not.
 
 ## 2. Positive spectral energy creates a negative DtN direction immediately
 
-Let `Omega` be one finite-area Prime-Flute block with its canonical geodesic boundary and let `Delta>=0` be the positive Laplacian. For real `lambda` below the first Dirichlet eigenvalue, define `Lambda(lambda)` by
-
-\[
-(\Delta-\lambda)u=0,
-\qquad
-u|_{\partial\Omega}=f.
-\]
+Let `Omega` be one finite-area Prime-Flute block with its canonical geodesic boundary and let `Delta>=0` be the positive Laplacian. For real `lambda` below the first Dirichlet eigenvalue, let `u` solve `(Delta-lambda)u=0` with boundary trace `u|∂Omega=f`, and let `Lambda(lambda)` be the corresponding DtN map.
 
 With the outward-normal convention for which the zero-energy DtN map is positive, Green's identity gives
 
@@ -128,7 +122,7 @@ PF-078 proves the marked-scattering scaling limit
 \tag{7}
 \]
 
-where `G_a` is the positive weighted path Laplacian carrying tangent gap data. This is a genuine Mathia-native Feshbach mechanism, but the limit is a resolvent. On the real axis `(G_a-zI)^{-1}` is positive only below the nonnegative graph spectrum (`z<0`) and develops poles/sign changes across it.
+where `G_a` is the positive weighted path Laplacian carrying tangent gap data. This is a genuine Mathia-native Feshbach mechanism, but the limit is a resolvent. On the real axis `(G_a-zI)^(-1)` is positive only below the nonnegative graph spectrum (`z<0`) and develops poles/sign changes across it.
 
 Therefore Feshbach reduction preserves useful arithmetic-geometric information but does not move the zero-energy DtN sign theorem to positive spectral energies. The Schur/Feshbach escape explicitly left open by WP-009 is **not realized by the ordinary Prime-Flute Laplacian DtN/Feshbach machinery**.
 
