@@ -7,6 +7,7 @@ target_line: prime_flute
 based_on:
   - research/prime_flute/findings/PF-105-exact-composite-clone-is-uniformly-tail-cross-ratio-equivalent.md
   - research/prime_flute/findings/PF-106-affine-composite-clone-is-l1-close.md
+  - research/prime_flute/findings/PF-107-shift-clone-cuff-defect-is-l2-not-l1.md
 ---
 
 # Affine composite clone and the relative Laplacian class
@@ -14,6 +15,8 @@ based_on:
 ## Observation
 
 After the canonical Möbius translation, the exact all-composite clone obtained from `q_n=p_n+1` has sampled endpoint displacement in `ell^1`, uniformly `O(P^-3)` all-span tail cross-ratio/separator distortion, and a natural piecewise-affine boundary matching whose derivative differs from the identity by an `L^1` function with vanishing tail mass. PF-106 explicitly stops short of converting this boundary control into an equivariant comparison of the two quotient surfaces.
+
+PF-107 now identifies a nonuniformity in the first intrinsic pants coordinate: for consecutive primes with left endpoint `p`, the matched distinguished cuff lengths satisfy `ell^+ - ell = 2/p + o(1/p)`. Hence the additive cuff defect is `ell^2` but not `ell^1`, even though the sampled endpoint displacement is `ell^1`. At the same time `(ell^+-ell)/ell = O(1/(p log p))`, so the **relative** cuff defect remains summable. The standard collar width has logarithmic relative defect `-1/p+o(1/p)`. This sharpens the clue rather than resolving it: endpoint summability cannot be used as a linear proxy for pants/collar or operator summability, but asymptotic multiplicative closeness remains viable.
 
 ## Research question
 
@@ -37,16 +40,18 @@ Second, the strongest standard infinite-type Fenchel--Nielsen theorem located fo
 
 Third, collapsing injectivity radius is not an automatic operator-theoretic veto once a controlled common-manifold comparison has actually been built. Güneysu--Thalmaier, *Scattering theory without injectivity radius assumptions, and spectral stability for the Ricci flow* (Ann. Inst. Fourier 70 (2020), 437--456, DOI `10.5802/aif.3316`), prove existence and completeness of Laplace wave operators for quasi-isometric complete metrics under an integral metric-deviation criterion with no injectivity-radius lower bound. Under global Ricci lower bounds their criterion can be written using the inverse volume of unit balls as a weight. This provides a concrete downstream target for the prime/composite comparison, but it also shows why the `L^1` boundary estimate of PF-106 is insufficient on its own: one still needs a group-equivariant surface identification and a metric deviation satisfying the **weighted surface integral**, especially through the cusp-thin regions. Their theorem concerns wave operators and absolutely continuous spectrum; it does not imply compact or Schatten resolvent difference.
 
+PF-107 makes the missing bridge more quantitative. The exact cuff transform has derivative asymptotic to `-2/h` as the logarithmic mesh `h` tends to zero, and this turns PF-106's summable endpoint defect into the nonsummable additive law `ell_n^+-ell_n ~ 2/p_{n-1}`. Therefore a future Güneysu--Thalmaier or Schatten test must estimate the metric deviation with its actual area/support weights through the pants and collars; summing endpoint errors or raw cuff-length changes is not a valid substitute. Conversely, because the relative cuff defect is summable and the absolute cuff difference tends to zero, PF-107 does not provide the Weyl-sequence or limit-operator obstruction required to reject the clue.
+
 The surviving research program is therefore precise:
 
-1. derive quantitative corresponding-cuff and collar comparison estimates from the exact `p_n -> p_n+1` deformation;
+1. derive quantitative corresponding-cuff and collar comparison estimates from the exact `p_n -> p_n+1` deformation, using PF-107 rather than endpoint `ell^1` as the intrinsic input;
 2. build and glue marked pants maps equivariantly, with tail dilatation/metric deviation tending to zero and explicit control in the cusp collars;
-3. test the resulting deviation against a no-injectivity-radius scattering criterion such as Güneysu--Thalmaier;
+3. test the resulting deviation against a no-injectivity-radius scattering criterion such as Güneysu--Thalmaier, keeping the shrinking geometric support explicit;
 4. only after that, ask the stronger compact/Schatten relative-resolvent or heat-kernel question;
 5. in parallel, search for a weakly-null sequence or another limit-operator obstruction that would show a nonlocal amplification despite the matched tangent hull and summable endpoint defect.
 
-No located theorem simultaneously covers this unbounded-cuff, infinite-type, exact prime/composite deformation and the required relative Laplacian class. The clue is accepted because the local geometric comparison has credible prior art and the downstream spectral gate is now theorem-level and falsifiable, while the crucial equivariant/integrability bridge remains genuinely open.
+No located theorem simultaneously covers this unbounded-cuff, infinite-type, exact prime/composite deformation and the required relative Laplacian class. The clue remains accepted because the local geometric comparison has credible prior art and the downstream spectral gate is theorem-level and falsifiable, while the crucial equivariant/integrability bridge remains genuinely open.
 
 ## Evidence boundary
 
-This clue is not evidence that the surfaces are relatively compact, trace-class comparable, wave-equivalent, or spectrally equivalent. PF-105 and PF-106 establish only the marked endpoint, cross-ratio, separator, shear, and boundary-interpolation estimates. Minsky supplies a uniform local pants/hexagon comparison under bounded **absolute boundary-length** differences; Šarić's asymptotically conformal Fenchel--Nielsen theorem has an upper-bounded-pants hypothesis unavailable here; and Güneysu--Thalmaier applies only after suitable quasi-isometric complete metrics on a common manifold satisfy its integral deviation hypothesis. The required prime-flute quotient-surface bridge remains unproved.
+This clue is not evidence that the surfaces are relatively compact, trace-class comparable, wave-equivalent, or spectrally equivalent. PF-105 and PF-106 establish the marked endpoint, cross-ratio, separator, shear, and boundary-interpolation estimates; PF-107 adds an intrinsic warning that additive cuff defects are `ell^2 \ ell^1` while relative cuff defects remain `ell^1`. Minsky supplies a uniform local pants/hexagon comparison under bounded **absolute boundary-length** differences; Šarić's asymptotically conformal Fenchel--Nielsen theorem has an upper-bounded-pants hypothesis unavailable here; and Güneysu--Thalmaier applies only after suitable quasi-isometric complete metrics on a common manifold satisfy its integral deviation hypothesis. The required prime-flute quotient-surface bridge remains unproved.
