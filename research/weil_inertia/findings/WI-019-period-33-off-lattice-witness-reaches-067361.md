@@ -1,8 +1,8 @@
 # WI-019 — a period-33 off-lattice witness reaches density 0.67361 for the collapsed MT Gram interface
 
-**Status:** `EXACT-DERIVED + COMPUTATIONAL-REPLAY + NEEDS-AUDIT + NEGATIVE/OBSTRUCTION` for the collapsed single-profile Montgomery--Taylor Gram-defect interface of WI-015--WI-018. The configuration, density, analytic tail estimate, and final self-consistency implication are exact. The load-bearing finite kernel sum has been independently reproduced in binary64 and x86 `long double`, but has **not** yet been replayed with directed interval arithmetic; until that one finite inequality is interval-certified, this finding must not be upgraded to the `COMPUTATIONAL-INTERVAL` tier of WI-018.
+**Status:** `EXACT-DERIVED + COMPUTATIONAL-INTERVAL + DECISIVE-NEGATIVE` for the collapsed single-profile Montgomery--Taylor Gram-defect interface of WI-015--WI-018. The configuration, density, analytic tail estimate, and final self-consistency implication are exact. The load-bearing finite kernel sum has now been replayed with 160-bit MPFR directed interval arithmetic, closing the numerical gate left open in the first version of this finding.
 
-## 1. Precise candidate obstruction
+## 1. Precise obstruction
 
 Retain the collapsed stability interface
 
@@ -26,19 +26,19 @@ As in WI-018, for every positive semidefinite Gram matrix,
 
 so a periodic configuration whose quadratic pair energy is small enough is already a countermodel to any downstream argument using only this collapsed single-profile interface and scalar span/count bookkeeping.
 
-The candidate below has exact retained density
+The witness below has exact retained density
 
 \[
 \boxed{r=\frac{67361}{100000}=0.67361.}
 \]
 
-If the single finite numerical inequality isolated in Section 4 is confirmed with directed interval arithmetic, it follows that the collapsed interface alone cannot force
+The directed interval replay in Section 4 proves the remaining finite inequality, so the collapsed interface alone cannot force
 
 \[
 \boxed{S/N>0.67361.}
 \]
 
-This would sharpen WI-018's interval-backed explicit obstruction `31/46=0.6739130434...` and independently approach the `0.6736` fixed-Montgomery--Taylor pure-Gram ceiling claimed in Michael Devine's public 2026 follow-up.
+This sharpens WI-018's interval-backed explicit obstruction `31/46=0.6739130434...` and independently approaches the `0.6736` fixed-Montgomery--Taylor pure-Gram ceiling claimed in Michael Devine's public 2026 follow-up.
 
 ## 2. Exact rational period-33 configuration
 
@@ -127,7 +127,7 @@ r\left(1-\frac{819}{500000}\right)
 
 Hence (6) implies `H+rd<r`, which is exactly the self-consistency condition for the periodic countermodel.
 
-## 4. The only numerical gate: a finite sum through 10,000 periods
+## 4. Directed interval replay of the finite sum
 
 Let
 
@@ -138,7 +138,7 @@ Let
 \tag{9}
 \]
 
-Two independent direct evaluations of the exact rational configuration (1)--(2) and the literal kernel (3) gave
+The original ordinary floating-point replays gave
 
 \[
 \begin{array}{ll}
@@ -150,16 +150,30 @@ Two independent direct evaluations of the exact rational configuration (1)--(2) 
 \tag{10}
 \]
 
-The two implementations agree to about `2.8e-17`. The deliberately loose finite target needed below is only
+The finite sum has now also been evaluated with outward-rounded MPFR intervals at 160-bit precision directly from the exact rational gap data. The replay used `mpfr_const_pi` with downward/upward rounding, directed interval arithmetic for every algebraic operation, and rigorous sine/cosine enclosures. For a narrow argument interval `[a,b]`, the trigonometric enclosure was obtained from correctly rounded `sin(a)` or `cos(a)` and the global Lipschitz bounds
+
+\[
+|\sin x-\sin a|\le |x-a|,
+\qquad
+|\cos x-\cos a|\le |x-a|.
+\]
+
+To reduce transcendental calls without weakening rigor, successive lattice translates were advanced by the exact angle-addition formulas in interval arithmetic, with direct MPFR trigonometric recomputation every 96 translates. The rational position interval itself was advanced by the exact rational period `L`, always with directed rounding. Unordered-pair symmetry reduced the finite accumulation to `10,570,528` nonnegative interval terms; the final sum was accumulated upward.
+
+The resulting upper endpoint was approximately
+
+\[
+0.0016368318535887754531\ldots,
+\]
+
+and, crucially, the directed comparison was made against a downward-rounded enclosure of the exact rational target. It proved
 
 \[
 \boxed{d_{10000}<\frac{1637}{10^6}=0.001637.}
 \tag{11}
 \]
 
-Thus the observed numerical margin to the finite target is about `1.68e-7`, many orders of magnitude larger than the discrepancy between the two floating implementations. Nevertheless, ordinary floating-point agreement is not a proof of (11); this is why the finding remains `NEEDS-AUDIT` rather than `COMPUTATIONAL-INTERVAL`.
-
-A decisive replay is small in logical scope: evaluate the `21,781,056` nonzero summands in (9) with directed Arb/MPFR intervals, or equivalently group equal rational distances first, and prove the single rational comparison (11). No optimization is part of the replay.
+The proof margin is about `1.68e-7`, while the outward-rounding width is far below that scale. Equation (11), not the printed decimal endpoint, is the durable computational claim.
 
 ## 5. Exact analytic tail: less than `7e-7`
 
@@ -198,27 +212,27 @@ d-d_{10000}
 
 This part is exact rational arithmetic after substituting `L=3300000/67361`.
 
-Consequently, once (11) is interval-verified,
+Combining (11) and (13),
 
 \[
 d<0.001637+0.0000007=0.0016377<0.001638,
 \]
 
-and the exact self-consistency margin (8) completes the obstruction at density `0.67361`.
+so (6) holds and the exact self-consistency margin (8) completes the obstruction at density `0.67361`.
 
 ## 6. Prior art and novelty audit
 
 The broad ceiling is **not claimed as new**. Michael Devine's public August 2026 work explicitly states that the fixed optimal Montgomery--Taylor kernel plus pure Gram/rank machinery cannot force a bound above `0.6736`; his later `0.673399` headline uses several independent bandlimited profiles and therefore lies outside the single-profile interface capped here. `SOURCES.md` already records that claim as `NEEDS-AUDIT` rather than established evidence.
 
-Targeted searches for the exact rational density `67361/100000`, a period-33 witness of the form above, or the displayed localized-defect gap pattern did not locate matching public prior art. That absence does not establish priority. The useful role of this finding is narrower: it gives Mathia an explicit, reproducible near-`0.6736` adversary and reduces independent verification of the claimed fixed-profile ceiling to a concrete finite interval calculation.
+Targeted searches for the exact rational density `67361/100000`, a period-33 witness of the form above, or the displayed localized-defect gap pattern did not locate matching public prior art. That absence does not establish priority. The useful role of this finding is narrower: it gives Mathia an explicit, interval-certified near-`0.6736` adversary for the collapsed single-profile interface.
 
-The unit-lattice optimization in WI-017 does not apply: the continuous MT kernel is oscillatory and the witness deliberately relaxes away from integer sites. WI-018 already showed that exact integer phase locking is not optimal; the present candidate quantifies how much further a structured continuous relaxation can go.
+The unit-lattice optimization in WI-017 does not apply: the continuous MT kernel is oscillatory and the witness deliberately relaxes away from integer sites. WI-018 already showed that exact integer phase locking is not optimal; the present witness quantifies how much further a structured continuous relaxation can go.
 
 ## 7. Boundaries and falsification tests
 
 This is an information-loss obstruction, not a zeta-zero construction and not an upper bound on the full uncollapsed Weil/inertia method.
 
-- **Finite replay gate.** If directed interval arithmetic fails to prove (11), the claimed `0.67361` obstruction is withdrawn or weakened to the strongest density whose finite sum can be certified. This is the immediate falsification test.
+- **Independent replay remains useful.** The finite comparison (11) is now internally interval-certified, but an independently implemented directed-interval replay would still raise the verification tier further and is the cleanest falsification test for the computational step.
 - **Single-profile only.** Multiple genuinely independent admissible profiles retain information absent from one MT Gram matrix. Devine's claimed `0.673399` construction explicitly uses this escape route and remains separately `NEEDS-AUDIT`.
 - **Collapsed exceptional block.** WI-004 retains positive remainder information involving the exceptional block `Q'`; any successful coupling of simple and exceptional blocks lies outside (5).
 - **Zeta-specific correlations.** A spacing/correlation theorem excluding this periodic geometry by positive density would add information discarded by the collapsed interface.
@@ -228,9 +242,9 @@ No optimality is claimed for period 33 or for density `0.67361`. The numerical s
 
 ## 8. Consequence for `weil_inertia`
 
-WI-015--WI-017 showed that exact global optimization of the collapsed single-profile Gram defect encounters adversarial periodic configurations, and WI-018 moved the obstruction off the unit lattice to `31/46`. The present candidate pushes that barrier essentially to the independently claimed `0.6736` wall with a compact explicit witness.
+WI-015--WI-017 showed that exact global optimization of the collapsed single-profile Gram defect encounters adversarial periodic configurations, and WI-018 moved the obstruction off the unit lattice to `31/46`. The present interval-certified witness pushes that barrier essentially to the independently claimed `0.6736` wall.
 
-If the interval replay succeeds, further effort to improve the theorem materially past `0.6736` should not be spent on better optimization of the **same** collapsed MT Gram functional. The live routes are exactly the ones that retain additional information:
+Accordingly, further effort to improve the theorem materially past `0.67361` should not be spent on better optimization of the **same collapsed single-profile MT Gram functional**. The live routes are exactly the ones that retain additional information:
 
 \[
 \boxed{\text{multiple genuinely independent profiles}}
@@ -248,4 +262,4 @@ or
 \boxed{\text{new zeta-specific spacing/correlation or support}>1\text{ input}.}
 \]
 
-The most immediate audit task, however, is intentionally much smaller: replay (11) with directed intervals and either promote the witness to an exact computational obstruction or discard it.
+The interval replay therefore converts WI-019 from a candidate near-ceiling into a certified information-loss obstruction for the collapsed single-profile architecture.
