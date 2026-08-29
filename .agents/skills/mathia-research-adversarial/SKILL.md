@@ -1,6 +1,6 @@
 ---
 name: mathia-research-adversarial
-description: Run recurring adversarial review over Mathia research findings using the shared sidecar review protocol, without modifying the claims being reviewed.
+description: Run recurring adversarial review over Mathia research findings using the shared sidecar protocol, without modifying canonical claims and while ensuring accepted new mathematics is durably persisted before closure.
 ---
 
 # Mathia Adversarial Research
@@ -17,7 +17,7 @@ The adversary does **not** rewrite findings and does not maintain the Mathia min
 .agents/skills/mathia-research-review/SKILL.md
 ```
 
-Load that skill before doing substantive review work. Its review lifecycle and notification ownership are authoritative. When a review exposes a genuinely separate research lead, also load:
+Load that skill before doing substantive review work. Its review lifecycle, durable-math persistence rules, and notification ownership are authoritative. When a review exposes a genuinely separate research lead, also load:
 
 ```text
 .agents/skills/mathia-research-clues/SKILL.md
@@ -47,6 +47,7 @@ Exclude repository-level infrastructure such as:
 research/prior_art/
 research/graph/
 research/mind/
+research/master/
 research/clues/
 ```
 
@@ -73,8 +74,8 @@ The absence of an adversarial commit or sidecar is not an approval certificate.
 
 Use this order unless a task-specific prompt gives a stronger reason otherwise:
 
-1. **Owner replies waiting for adversary judgment.** Re-evaluate and either close the review by deleting the sidecar or append the next adversary turn.
-2. **New or changed findings.** Audit claims that appeared since the previous adversarial pass.
+1. **Owner replies waiting for adversary judgment.** Re-evaluate and either continue the objection, close the review, or accept the mathematics pending durable persistence according to `mathia-research-review`.
+2. **New or changed findings.** Audit claims that appeared or were materially strengthened since the previous adversarial pass. A Git `M <finding>.md` is a real new-evidence event even when the finding ID is unchanged.
 3. **High-value unaudited backlog.** When capacity remains, attack older findings whose failure would materially affect a research line or several downstream claims.
 
 Do not create repository churn merely to mark a finding as reviewed. A clean audit with no material objection produces no sidecar.
@@ -123,21 +124,51 @@ A good initial review states:
 
 Do not open reviews for prose style, optional exposition, preference for another approach, or speculative research ideas that do not actually undermine the claim.
 
-Follow the sidecar naming, dialogue format, turn ownership, convergence rules, and notification ownership in `mathia-research-review` exactly.
+Follow the sidecar naming, dialogue format, turn ownership, convergence, durable-persistence, and notification rules in `mathia-research-review` exactly.
 
 ## Re-evaluating an owner response
 
-When the last substantive speaker in a sidecar is `Owner`, do not defend the original objection automatically. Reconstruct the issue again using the owner's response.
+When the last substantive speaker in a sidecar is `Owner`, do not defend the original objection automatically. Reconstruct the issue again using the owner's response and the current canonical finding.
 
-If the response resolves the objection, delete only the `.review.md` file. Do not edit the finding and do not add an "approved" marker.
+There are three outcomes.
 
-If a material problem remains, append a new `## Adversary` section containing only the unresolved issue or a materially stronger objection.
+### Objection remains
 
-If the owner has withdrawn the target and sidecar, there is nothing to close. Git history is the record of convergence.
+Append a new `## Adversary` section containing only the unresolved issue or a materially stronger objection.
+
+### Objection resolved with no missing durable mathematics
+
+If the owner response merely clarifies or recombines mathematics already present in the current finding, delete only the `.review.md` sidecar. Do not edit the finding and do not add an approval marker.
+
+### Objection resolved but accepted mathematics is not yet canonical
+
+If the owner supplied a new proof step, boundary argument, source bridge, hypothesis analysis, or independent result that is necessary to the accepted resolution and is **not yet durably present in the current finding corpus**, do **not** delete the sidecar.
+
+Append a concise `## Adversary` turn stating that the objection is mathematically resolved but closure is pending persistence, and identify the mathematical content that must be materialized. This returns the turn to the owner.
+
+The owner then follows `mathia-research-review`:
+
+- same claim -> update the existing finding in place and append an owner persistence turn;
+- independent durable result -> create a new finding ID and append an owner persistence turn;
+- materially changed claim -> withdraw the old finding and sidecar and use a new finding ID when warranted.
+
+Never request `.v2`, `.v3`, review-history sections, or other versioned claim files.
+
+## Final persistence verification
+
+When the last speaker is `Owner` after an adversary acceptance-pending-persistence turn, verify the current tree rather than trusting the acknowledgement.
+
+If the same claim was updated in place, confirm that the accepted mathematics is naturally integrated into the canonical finding and does not silently strengthen/change the claim identity.
+
+If an independent result was created, confirm that the new finding actually preserves the durable mathematical content needed by the accepted defense.
+
+If verification passes, delete only the `.review.md` sidecar. If persistence introduced a material mathematical issue, append another `## Adversary` turn.
+
+If the owner instead withdrew the target and sidecar because the claim identity changed, there is nothing further to close; Git records the convergence.
 
 ## Clues from adversarial friction
 
-A review sometimes exposes a mathematically interesting direction that is orthogonal to whether the target survives. In that case, use `mathia-research-clues` rather than bloating the review thread.
+A review sometimes exposes a mathematically interesting direction orthogonal to whether the target survives. In that case use `mathia-research-clues` rather than bloating the review thread.
 
 The adversary may propose:
 
@@ -176,6 +207,7 @@ research/<line>/mind/**
 research/mind/**
 research/**/graph/**
 research/prior_art/**
+research/master/**
 docs/**
 experiments/**
 code/tests/prompts outside this skill's ownership
@@ -191,11 +223,12 @@ Before every commit:
 
 1. refresh the default branch and ensure the target has not changed or disappeared while being reviewed;
 2. inspect the complete diff;
-3. verify every review path exactly corresponds to a current target finding;
+3. verify every review path exactly corresponds to a current target finding unless the owner already withdrew target+sidecar;
 4. verify turn ownership for every modified sidecar;
 5. verify no canonical finding or forbidden path changed;
 6. verify every new/continued objection is material and non-duplicative;
-7. verify any deleted sidecar is being closed because the owner's response actually resolved the objection.
+7. before deleting a sidecar, verify either that the accepted defense required no new durable mathematics or that any required new mathematics has already been persisted and checked;
+8. never close a review while the strongest accepted argument exists only in the sidecar/Git history.
 
 Use the commit prefix:
 
@@ -207,7 +240,8 @@ Examples:
 
 ```text
 research(adversarial): challenge prime-circle spectrum claim
-research(adversarial): close resolved Bohr-flow review
+research(adversarial): accept cusp defense pending persistence
+research(adversarial): close persisted Bohr-flow review
 research(adversarial): tighten convergence objection
 ```
 
@@ -219,7 +253,8 @@ For adversarial-review activity, follow `mathia-research-review` in full-observa
 
 - opening a new review sidecar;
 - every substantive follow-up `Adversary` turn;
-- closing/deleting a sidecar because the owner's response resolved the objection.
+- provisional acceptance pending durable persistence;
+- closing/deleting a sidecar after the owner's response or persistence resolves the objection.
 
 Also notify when a workflow/publication error prevents the adversarial process from completing or persisting its intended work correctly.
 
@@ -229,4 +264,4 @@ Task-specific prompts should normally inherit this policy rather than restating 
 
 ## Reporting
 
-Surface only notifications permitted by the notification policy above. The repository sidecar remains the durable review record; routine successful auditing is silent.
+Surface only notifications permitted by the notification policy above. The repository sidecar remains temporary review state; accepted mathematical content must survive in canonical findings when required by the shared protocol.
