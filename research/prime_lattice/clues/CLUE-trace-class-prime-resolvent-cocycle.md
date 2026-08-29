@@ -45,6 +45,14 @@ mu_p^* (H-z)^(-1) mu_p = (H+log p-z)^(-1),
 
 so its action-dependent residual after subtracting scalar translation is exactly zero. On the other hand, classical Hardy/model-space work of Amosov--Baranov--Kapustin shows that trace-class perturbations of the unilateral shift semigroup can carry prescribed spectral components, while trace-classness of the unitary cocycle itself is trivial in their explicit model. Classical resolvent-comparable perturbation theory also supplies determinants and spectral-shift functions once `S_1` comparability is assumed.
 
-Accordingly, the clue survives only after strengthening its target. Further work should **not** ask whether `S_1` membership or a determinant can be obtained. It should ask whether a canonically specified family indexed jointly by the primes forces a nonzero relative invariant with an arithmetic compatibility law — for example multiplicative/cocycle relations across `p`, `q`, and `pq` — that cannot be freely prescribed through an inner/model-space scattering datum and that survives Beurling matched controls.
+`PL-035` eliminates the next simplest escape: ordinary scalar multiplicative or translated 1-cocycle compatibility across `p`, `q`, and `pq` is itself non-discriminating. For any nonzero meromorphic `F`,
+
+```text
+Delta_n(z)=F(z+log n)/F(z)
+```
+
+obeys the exact prime-semigroup cocycle law, and the same construction works after replacing `log p` by arbitrary Beurling prime weights. Hence an exact scalar chain rule can be manufactured around freely chosen spectral data and cannot by itself be the sought arithmetic rigidity.
+
+Accordingly, the clue survives only after a second strengthening. Further work should **not** ask whether `S_1` membership, a determinant, or an ordinary scalar `p,q,pq` cocycle law can be obtained. It should ask whether a canonically specified prime family forces joint structure that is not a freely chosen scalar 1-coboundary — for example a genuinely nontrivial projective/higher cocycle, operator-valued relation, or global adelic/product-formula normalization — and whether that extra structure fails for matched Beurling controls.
 
 Acceptance means this narrowed question is worth active investigation. It does not mean such an invariant exists, is new, or would imply RH.
