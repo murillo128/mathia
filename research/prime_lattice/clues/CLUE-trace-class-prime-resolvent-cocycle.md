@@ -53,6 +53,21 @@ Delta_n(z)=F(z+log n)/F(z)
 
 obeys the exact prime-semigroup cocycle law, and the same construction works after replacing `log p` by arbitrary Beurling prime weights. Hence an exact scalar chain rule can be manufactured around freely chosen spectral data and cannot by itself be the sought arithmetic rigidity.
 
-Accordingly, the clue survives only after a second strengthening. Further work should **not** ask whether `S_1` membership, a determinant, or an ordinary scalar `p,q,pq` cocycle law can be obtained. It should ask whether a canonically specified prime family forces joint structure that is not a freely chosen scalar 1-coboundary — for example a genuinely nontrivial projective/higher cocycle, operator-valued relation, or global adelic/product-formula normalization — and whether that extra structure fails for matched Beurling controls.
+`PL-036` removes the next projective escape at the level of the bare exponent semigroup. For arbitrary pairwise phases `theta_(p,q)`, the bilinear multiplier
+
+```text
+omega_theta(alpha,beta)
+  = exp(2 pi i sum_(p<q) theta_(p,q) alpha_p beta_q)
+```
+
+defines a genuine projective prime action with
+
+```text
+V_p V_q = exp(2 pi i theta_(p,q)) V_q V_p.
+```
+
+The pairwise phases are gauge-invariant but freely assignable; classical multiplier theory identifies this as ordinary cohomology of the free abelian group completion, and Ore-semigroup dilation shows that the positive cone has the same `H^2`. The construction ignores the energy vector entirely and survives arbitrary Beurling replacement. Thus merely upgrading from a flat scalar `1`-cocycle to nonzero scalar projective curvature still does not supply arithmetic rigidity.
+
+Accordingly, the clue survives only after a third strengthening. Further work should **not** ask whether `S_1` membership, a determinant, an ordinary scalar `p,q,pq` cocycle law, or a nontrivial scalar projective multiplier can be obtained. It should ask whether a canonically specified prime family forces joint structure whose gauge/cohomology class is fixed by arithmetic rather than freely chosen on the prime generators — most plausibly an operator-valued scattering relation or a global adelic/reciprocity/product-formula normalization — and whether that extra structure fails for matched Beurling controls.
 
 Acceptance means this narrowed question is worth active investigation. It does not mean such an invariant exists, is new, or would imply RH.
