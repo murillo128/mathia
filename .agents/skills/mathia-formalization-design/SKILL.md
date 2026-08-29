@@ -76,7 +76,7 @@ The issue must state what a successful Lean theorem establishes and what it does
 Keep separate:
 
 - fidelity of the Lean statement to the intended mathematics;
-- success of the Lean proof;
+- formal proof success;
 - validity of wider Mathia findings or research programs;
 - novelty or prior-art status;
 - analytic, geometric, asymptotic, computational, or representation bridges excluded from the formal theorem.
@@ -87,7 +87,7 @@ A compiling theorem must never silently certify surrounding prose that was not f
 
 Every formalization issue must require Codex to report material mathematical discoveries to the **controlling Mathia issue**.
 
-The executor does not directly create Mathia adversarial sidecars, clues, or replacement findings as part of Lean execution. The issue comment is transport to the issue-owning review/orchestration session.
+The executor does not directly create Mathia adversarial sidecars, clues, or replacement findings as part of proof execution. The issue comment is transport to the issue-owning review/orchestration session.
 
 A material handoff should contain:
 
@@ -151,7 +151,7 @@ Unless the issue explicitly establishes a narrower or stronger boundary, an acce
 - no unchecked generated/CAS certificates;
 - `#print axioms` or an equivalent Lean trust-footprint inspection on principal theorems;
 - theorem statements unchanged from the Gate-0 accepted boundary;
-- fresh final review of statement fidelity, proof integrity, and research-handoff completeness.
+- fresh final review of statement fidelity, proof integrity, formal-to-human correspondence, and research-handoff completeness.
 
 Use the canonical independent-review skill when the issue requires a separate technical review:
 
@@ -159,7 +159,7 @@ Use the canonical independent-review skill when the issue requires a separate te
 .agents/skills/codex-independent-review/SKILL.md
 ```
 
-The independent reviewer remains read-only; its mathematical findings are inputs to the issue-owning review session.
+The independent reviewer remains read-only over the Lean implementation, workflow state, canonical findings, and adversarial reviews. For a completed Mathia Lean formalization, its canonical skill additionally requires reconstruction of the human mathematical theorem/proof and permits only the narrow creation or strengthening of `status: proposed` research clues through `.agents/skills/mathia-research-clues/SKILL.md` when that reconstruction exposes a genuinely distinct, falsifiable mathematical direction. Research Watch still owns clue disposition and any later finding.
 
 ## Issue shape
 
