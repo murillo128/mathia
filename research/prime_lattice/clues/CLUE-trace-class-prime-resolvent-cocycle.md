@@ -68,6 +68,14 @@ V_p V_q = exp(2 pi i theta_(p,q)) V_q V_p.
 
 The pairwise phases are gauge-invariant but freely assignable; classical multiplier theory identifies this as ordinary cohomology of the free abelian group completion, and Ore-semigroup dilation shows that the positive cone has the same `H^2`. The construction ignores the energy vector entirely and survives arbitrary Beurling replacement. Thus merely upgrading from a flat scalar `1`-cocycle to nonzero scalar projective curvature still does not supply arithmetic rigidity.
 
-Accordingly, the clue survives only after a third strengthening. Further work should **not** ask whether `S_1` membership, a determinant, an ordinary scalar `p,q,pq` cocycle law, or a nontrivial scalar projective multiplier can be obtained. It should ask whether a canonically specified prime family forces joint structure whose gauge/cohomology class is fixed by arithmetic rather than freely chosen on the prime generators — most plausibly an operator-valued scattering relation or a global adelic/reciprocity/product-formula normalization — and whether that extra structure fails for matched Beurling controls.
+`PL-038` eliminates the most direct **scalar reciprocity/product-formula** repair to that objection. Pulling the quadratic Hilbert symbols back along `alpha -> product_p p^(alpha_p)` gives canonically arithmetic local bilinear phases that a generic Beurling system does not possess. However Hilbert reciprocity forces
+
+```text
+product_v (n(alpha),n(beta))_v = 1,
+```
+
+and for positive exponent-lattice inputs the real factor is already `1`, so the product over finite prime places is identically `1`. Moreover the quadratic Hilbert symbol is symmetric, so its induced projective commutator phase is locally trivial as well. Thus even **canonical arithmetic local data that passes the Beurling-discrimination test can collapse completely under its canonical scalar global normalization**. Reciprocity is necessary structure, but scalar reciprocity by itself is not the missing spectral rigidity.
+
+Accordingly, the clue survives only after a fourth strengthening. Further work should **not** ask whether `S_1` membership, a determinant, an ordinary scalar `p,q,pq` cocycle law, a nontrivial scalar projective multiplier, or a scalar Hilbert-symbol/product-formula normalization can be obtained. It should ask whether a canonically specified prime family forces joint structure whose gauge/cohomology class is fixed by arithmetic and whose **global operator-valued or analytic completion remains nontrivial after reciprocity** — most plausibly an operator-valued scattering relation, an adelic Fourier/Poisson mechanism, or another local-global construction in which the prime pieces do not simply multiply to a scalar `1` — and whether that extra structure fails for matched Beurling controls.
 
 Acceptance means this narrowed question is worth active investigation. It does not mean such an invariant exists, is new, or would imply RH.
