@@ -1,15 +1,15 @@
 ---
 name: mathia-visionary-researcher
-description: Run sparse ultra-effort program-level searches for genuinely new Riemann-hypothesis attack families, grounded in Mathia's full current research state and prior-art corpus, and hand off only literature-audited proposed clues.
+description: Run sparse ultra-effort program-level campaigns for genuinely new Riemann-hypothesis attack families, grounded in Mathia's full current research state and prior-art corpus, with campaign state persisted only in a GitHub issue and at most one literature-audited proposed clue published per campaign.
 ---
 
 # Mathia Visionary Researcher
 
 ## Responsibility
 
-Use this skill for the recurring or scheduled **Mathia Visionary Researcher** pass.
+Use this skill for the recurring or scheduled **Mathia Visionary Researcher** campaign.
 
-The Visionary Researcher searches for mathematically precise ways of attacking the Riemann program that are not already represented by the active research lines, current clues, or known prior art. It is a deliberately low-frequency, high-risk, high-selectivity role. A fully successful run will normally produce **no repository change**.
+The Visionary Researcher searches for mathematically precise ways of attacking the Riemann program that are not already represented by the active research lines, current clues, or known prior art. It is a deliberately high-risk, ultra-selective role. A successful campaign will normally produce **no repository change**.
 
 The role separation is strict:
 
@@ -19,15 +19,15 @@ The role separation is strict:
 - **Adversarial Research** reviews persisted findings rather than speculative Visionary candidates;
 - **Mind** synthesizes durable intuitions from persisted evidence rather than preserving unvalidated brainstorming.
 
-The Visionary may perform provisional derivations, toy computations, counterexample searches, and broad literature investigation internally to shape or kill candidates. It must not persist those explorations as findings, intuitions, prior-art nodes, state, graph edges, or run notes.
+The Visionary may perform provisional derivations, toy computations, counterexample searches, and broad literature investigation while shaping or killing candidates. It must not persist those explorations as findings, intuitions, prior-art nodes, graph edges, repository state files, journals, or candidate backlogs.
 
-Its only substantive output is:
+Its only substantive repository output is:
 
 ```text
-zero or one proposed research clue
+zero or one proposed research clue per complete campaign
 ```
 
-That clue may target an existing Research Watch, the global Master-visible inbox, or a possible new research line. Producing nothing is the expected default and is not a workflow failure.
+A campaign may target an existing Research Watch, the global Master-visible inbox, or a possible new research line. Producing nothing is the expected default and is not a workflow failure.
 
 ## Required companion authority
 
@@ -36,7 +36,7 @@ Before substantive work:
 1. read `AGENTS.md`;
 2. read this skill;
 3. read `.agents/skills/mathia-research-clues/SKILL.md` as the authority for clue identity, schema, lifecycle, ownership, publication, and notification;
-4. read `.agents/skills/mathia-master-researcher/SKILL.md` to understand the current program-level state and global clue handoff;
+4. read `.agents/skills/mathia-master-researcher/SKILL.md` to understand the program-level state and global clue handoff;
 5. read `.agents/skills/mathia-research-watch/SKILL.md` only to understand the standard the eventual clue consumer will apply.
 
 This skill extends `mathia-research-clues` with the producer origin:
@@ -45,161 +45,260 @@ This skill extends `mathia-research-clues` with the producer origin:
 visionary-researcher
 ```
 
-It does not extend any clue lifecycle authority: the Visionary may create or materially strengthen only `status: proposed` clues.
+It does not extend clue lifecycle authority: the Visionary may create or materially strengthen only `status: proposed` clues.
 
-## Deliberate full-context exception
+For the purposes of the clue skill's "at most one clue per run" rule, **one Visionary campaign is one run**, even though the campaign is executed through several scheduled invocations.
 
-This role is an intentional bounded exception to ordinary progressive-loading guidance. Visionary work is useful only after absorbing the entire current synthesized program and the entire canonical prior-art corpus.
+## Campaign execution model
 
-At the start of every run:
+A Visionary campaign is intentionally split into six ordered phases so ultra-effort reasoning can survive ordinary session limits without lowering the research standard.
 
-1. synchronize the repository default branch;
-2. locate the most recent reachable commit with prefix `research(visionary):` when one exists and inspect the research delta since it, including additions, modifications, and deletions;
-3. read `research/master/STATE.md` in full;
-4. read the global current Mind under `research/mind/**` in full;
-5. discover current research lines dynamically, then read every line's `README.md` and current `mind/**` in full when present;
-6. read every canonical prior-art note recursively under `research/prior_art/**`, including the frozen bootstrap and `incremental/**`, together with the coverage/catalog control documents needed to understand corpus boundaries;
-7. inspect all local and global clues in every lifecycle state so rejected, resolved, or already proposed directions are not reinvented;
-8. use `research/graph/**` and line-local `graph/**` as structural navigation and gap detection, never as mathematical evidence;
-9. trace every candidate that survives initial ideation back to the exact current findings, sources, and open reviews on which it depends.
+A scheduled invocation must execute **only the currently active phase**. It must never continue into the next phase in the same invocation, even when time remains. Persist the phase checkpoint first and return.
 
-Do not preload every canonical finding merely for volume. Read the full synthesized states and prior-art corpus first, then read all exact findings and review sidecars needed to audit each surviving candidate. An open `.review.md` marks the dependent claim as unsettled; it is not evidence for either side.
-
-If no earlier `research(visionary):` commit exists, bootstrap from the current tree. Do not create a cursor, state file, coverage diary, or list of ideas that failed the gate.
-
-## Discover the program dynamically
-
-Do not hard-code research-line names.
-
-Inspect direct children of `research/`. Treat `research/<line>/` as a research line when it contains canonical current findings or is explicitly initialized as a Research-Watch-owned pre-evidence line in its `README.md`.
-
-Never treat these repository-level roots as research lines:
+The phases are:
 
 ```text
-research/master/
-research/mind/
-research/graph/
-research/prior_art/
-research/clues/
+1. reconstruct-state
+2. divergent-generation
+3. internal-collision-audit
+4. external-literature-audit
+5. adversarial-kill
+6. publication-gate
 ```
 
-A recently withdrawn line or finding may still matter as negative knowledge. Use Git history, rejected/resolved clues, current Mind, and current Master state to avoid regenerating a route that the live corpus has already killed or classicalized.
+If a phase cannot be completed safely within the invocation, persist a compact `phase_state: in-progress` checkpoint and leave the campaign on the same phase. The next invocation resumes that phase from the issue state. **Partial progress with a durable checkpoint is preferable to running until timeout.**
 
-## Visionary objective
+Do not rely on private chain-of-thought as campaign memory. Only the structured issue checkpoint may be used to resume later.
 
-The goal is not to attach a fashionable mathematical vocabulary to RH. The goal is to identify a **new exact leverage point**: a change in representation, retained information, operation, or proof obligation that could plausibly evade the accumulated Mathia obstructions and whose value can be decided by a finite or sharply stated first test.
+## GitHub issue is the only campaign state
 
-A candidate direction must eventually answer all of these questions:
+Campaign working state lives in exactly one open GitHub issue in `murillo128/mathia`.
+
+Use a title beginning:
+
+```text
+[visionary] <campaign-id>
+```
+
+The issue is **control-plane working state, not mathematical evidence**. It must say this explicitly. Nothing in the issue becomes a finding, clue, Mind statement, Master conclusion, prior-art node, or graph relation unless independently promoted through the owning workflow.
+
+Do not create a repository directory or file for campaign state. In particular, do not create `research/visionary/`, `.visionary/`, a cursor file, campaign ledger, candidate backlog, search log, or null-run marker in Git.
+
+### Single-active-campaign gate
+
+Before starting work, search for an open issue whose title begins `[visionary]` and whose body identifies it as an active Visionary campaign.
+
+- If exactly one active campaign exists, resume it.
+- If none exists, create a new campaign issue and begin phase 1.
+- If more than one active campaign exists, treat this as a workflow failure. Do not research until the ambiguity is resolved.
+
+A campaign issue may be closed only by phase 6 or when a workflow failure makes the campaign unrecoverable. A normal null result closes the issue silently.
+
+### Canonical issue state
+
+Keep the issue body as the compact mutable pointer to current state. It should contain fields equivalent to:
+
+```yaml
+campaign: visionary-<id>
+workflow: mathia-visionary-researcher
+status: active
+phase: 1-reconstruct-state
+phase_state: in-progress
+base_main_sha: <sha>
+state_revision: 0
+survivors: []
+```
+
+It may additionally contain compact corpus/tree hashes, candidate IDs, or stale-state markers needed for deterministic resume. Do not put mathematical claims in frontmatter-like state merely because they are convenient.
+
+Each completed or partial phase adds one concise issue comment containing:
+
+- phase name and outcome;
+- source `main` SHA used;
+- structured surviving candidate IDs/questions when relevant;
+- exact persisted paths or bibliographic identifiers needed by the next phase;
+- explicit kill reasons for candidates that must not be regenerated inside the same campaign;
+- the next phase or remaining substep.
+
+Do **not** persist chain-of-thought, free-form brainstorming, long search transcripts, hidden reasoning, or every rejected idea. The checkpoint must contain only enough auditable state for another invocation to resume the campaign faithfully.
+
+After posting the checkpoint, update the issue body atomically to the new `phase`, `phase_state`, `state_revision`, and survivor set.
+
+## Freshness and invalidation
+
+Phase 1 pins `base_main_sha` after synchronizing the default branch.
+
+Before every later phase, refresh `main` and inspect changes since the campaign snapshot. Changes are materially stale when they touch the mathematical state the campaign depends on, especially:
+
+```text
+research/master/**
+research/mind/**
+research/*/mind/**
+research/prior_art/**
+research/clues/**
+research/*/clues/**
+research/*/findings/**
+*.review.md
+```
+
+A new commit elsewhere does not automatically invalidate the campaign.
+
+If material state changed:
+
+1. do not silently continue from stale assumptions;
+2. record the changed paths/SHA compactly in the issue;
+3. reset the campaign to phase 1 in the same issue;
+4. preserve already-killed candidate IDs only when the kill reason remains valid under the new state;
+5. reconstruct against the new `main` snapshot on the next/continuing phase-1 execution.
+
+Phase 6 always performs one final synchronization and candidate-specific freshness audit before publication.
+
+## Phase 1 — reconstruct state
+
+This phase is the deliberate full-context exception to ordinary progressive-loading guidance.
+
+Synchronize the repository default branch and reconstruct the complete current Riemann research state. Consume:
+
+1. `research/master/STATE.md` in full;
+2. global current Mind under `research/mind/**` in full;
+3. every dynamically discovered research line's `README.md` and current `mind/**` in full when present;
+4. the full canonical prior-art corpus recursively under `research/prior_art/**`, including the frozen bootstrap, `incremental/**`, and coverage/catalog controls needed to understand corpus boundaries;
+5. all global and local clues in every lifecycle state;
+6. current graph state only as structural navigation and gap detection, never as mathematical evidence;
+7. the research delta since the most recent reachable `research(visionary):` publication when one exists, so withdrawn or newly established material is not missed.
+
+Do not read every canonical finding merely for volume. The exact findings/reviews required by candidates are loaded in phases 3 and 5.
+
+The checkpoint should summarize **constraints and open interfaces**, not reproduce documents. Record the snapshot SHA and enough tree/blob hashes or path references to detect staleness later.
+
+Phase 1 emits no candidate clue and performs no broad external literature search.
+
+## Phase 2 — divergent generation
+
+Starting only from the completed phase-1 snapshot, generate several **structurally distinct** attack families internally. Do not elaborate only the first attractive analogy.
+
+Use multiple search lenses such as:
+
+- shared-assumption inversion;
+- missing-structure completion;
+- obstruction reversal;
+- exact cross-domain transfer;
+- control-first construction;
+- dual/weakened proof target;
+- changing the order of operations before a known destructive compression;
+- coupling a signed selector to a global completion before positivity or scalarization.
+
+A candidate must answer provisionally:
 
 1. What exact mathematical object is proposed?
-2. How is it constructed canonically from primes, zeros, test functions, or an already persisted Mathia object?
+2. How is it constructed canonically?
 3. What information does it retain that current representations lose?
-4. Through what exact operation, invariant, duality, dynamics, or inequality could it become RH-sensitive?
-5. Which current obstruction, universality control, prior-art collapse, or information-loss result does it evade, and why?
-6. What is the cheapest decisive derivation, counterexample, matched control, finite model, or theorem that would kill it?
-7. Can an existing line own the test honestly, or is the mathematical object distinct enough to justify `new-line-candidate`?
+4. Through what operation/invariant/duality/dynamics/inequality could it become RH-sensitive?
+5. Which current obstruction does it plausibly evade?
+6. What cheap decisive test could kill it?
+7. Which existing line could own it, or why is it potentially a `new-line-candidate`?
 
-A candidate that cannot yet answer these questions is private brainstorming, not a clue.
+The phase checkpoint should retain only a small tournament set, normally **3–6 candidate IDs**, each with a compact exact question and first-kill test. Do not persist the larger brainstormed pool.
 
-## Generative search lenses
+## Phase 3 — internal collision audit
 
-Use several genuinely different lenses in each run rather than elaborating the first attractive analogy. The following are prompts for mathematical search, not a required ontology.
+Attempt to kill the phase-2 candidates using **Mathia's own complete persisted knowledge before spending external-literature budget**.
 
-### Shared-assumption inversion
+For each survivor, trace it to the exact relevant:
 
-Identify assumptions silently shared by the active lines: commutativity, scalarization, locality, positivity, stationarity, boundedness, unmarked spectra, fixed test spaces, one-way reconstruction, or another common restriction. Ask whether negating exactly one such assumption yields a canonical object rather than arbitrary extra freedom.
+- findings;
+- open or completed `.review.md` sidecars;
+- Mind constraints;
+- Master state;
+- clues in every lifecycle state;
+- canonical prior-art nodes already in the repository;
+- matched controls and no-go results from other lines.
 
-### Missing-structure completion
+Reject candidates that are already represented, already killed, classicalized by current local prior art, constant on a known destructive quotient, contradicted by an accepted review, or simply another wording of an existing clue.
 
-Locate information repeatedly lost by quotienting, averaging, determinant formation, Gram reduction, spectral aggregation, or control subtraction. Ask for the smallest marked, fibred, relational, boundary, cohomological, or otherwise enriched object that retains exactly the missing distinction without importing the desired RH conclusion.
+An open review marks its dependent claim as unsettled; do not use it as settled evidence for either side.
 
-### Obstruction reversal
+The checkpoint should retain at most **three** candidates for external audit, with exact repository paths that establish both their motivation and their strongest internal threat.
 
-Treat a durable negative result as a design theorem. Ask whether the mechanism causing failure can itself become the observable, defect, dual variable, conserved quantity, or source of quantitative control.
+## Phase 4 — external literature audit
 
-### Exact cross-domain transfer
+Perform the mandatory broad external literature audit only for candidates that survived phase 3.
 
-Search neighboring mathematical fields for the same formal structure, not merely similar language. A transfer requires an explicit dictionary of objects, morphisms/operations, hypotheses, and failure modes. Analogy without this dictionary must be discarded.
+For each candidate search in several passes:
 
-### Control-first construction
+1. direct RH/zeta/L-function literature for the exact object or operation;
+2. equivalent formulations, alternate terminology, transformed coordinates, and historical names;
+3. structural-neighbor fields where the same object-and-operation pair is standard even without RH;
+4. negative literature: impossibility, universality, nonexistence, failed-program, rigidity, or classification results;
+5. citation neighborhood around the closest authoritative primary sources.
 
-Design the matched non-prime, random, regular, density-preserving, or short-block-preserving controls before interpreting the signal. Search for an observable whose arithmetic residual is defined by what survives the strongest available control rather than by an attractive raw pattern.
+Prefer original papers, monographs, authoritative surveys, and stable theorem sources. Search by mathematical structure rather than candidate wording.
 
-### Dual or weakened proof target
+Distinguish:
 
-Ask whether RH can be approached through a dual certificate, minimax obstruction, quantitative defect, stability theorem, rigidity statement, reconstruction theorem, or exhaustion principle that is materially weaker than assuming the desired positivity/zero-free statement but stronger than a familiar equivalent reformulation.
+- known object;
+- known theorem/mechanism;
+- immediate specialization to Mathia/RH;
+- proposed additional coupling/residual question;
+- exact point not located in the searched literature.
 
-Generate multiple structurally distinct candidates internally. Do not persist candidate lists, rankings, or brainstorming residue.
+Failure to locate the same proposal is not proof of novelty. Never label a candidate novel.
 
-## Mandatory external literature audit
+Discard a candidate if it is already known, is an immediate coordinate change, or differs only rhetorically. If prior art leaves a precise Mathia-specific residual question, reshape the candidate around that residual.
 
-Unlike the Master Researcher, the Visionary Researcher is expected to perform a broad external literature search before emitting a clue.
+The checkpoint should retain at most **two** candidates and include only compact bibliographic identifiers and the residual question. It must not become a literature-search log.
 
-For every candidate that survives initial shaping, search in several passes:
+## Phase 5 — adversarial kill
 
-1. **Direct literature:** RH, zeta/L-functions, and the exact proposed mathematical object or operation.
-2. **Equivalent formulations:** alternate terminology, dual descriptions, transformed coordinates, historical names, and neighboring theorem statements.
-3. **Structural neighbors:** fields where the same object-and-operation pair is standard, even when RH is not mentioned.
-4. **Negative literature:** impossibility theorems, failed programs, universality results, nonexistence results, and known reasons the mechanism cannot carry arithmetic information.
-5. **Citation neighborhood:** backward references and, where available, later work around the closest primary sources.
-
-Prefer original papers, monographs, authoritative surveys, and stable theorem sources. Search by mathematical structure rather than by the candidate's invented wording.
-
-The audit must distinguish:
-
-- the known object;
-- the known theorem or mechanism;
-- the immediate specialization to Mathia/RH;
-- the proposed additional coupling or residual question;
-- the exact point not located in the searched literature.
-
-Failure to locate the same proposal is **not** proof of novelty. Never label a clue novel. Use bounded language describing the closest located prior art, the searched equivalences, and the residual question that remains unverified.
-
-If the candidate is already known, is an immediate coordinate change, or differs only rhetorically, discard it. If prior art leaves a precise Mathia-specific residual question, reshape the candidate around that residual rather than claiming a new theory.
-
-## Internal adversarial kill pass
-
-Before a clue may be persisted, try seriously to destroy it. At minimum test whether:
+Try seriously to destroy every remaining candidate. Load the exact current findings and reviews required to audit each survivor and test at minimum whether:
 
 - the construction is a tautology or a known RH-equivalent criterion with no new leverage;
-- the desired positivity, zero-free region, spectral placement, or rigidity was inserted as an assumption;
+- desired positivity, zero-free region, spectral placement, or rigidity was inserted as an assumption;
 - a quotient, determinant, Gram matrix, trace, average, or unmarked spectrum erases the claimed arithmetic distinction;
-- the signal is a universal geometric or spectral carrier that survives matched non-prime controls;
-- convergence, domains, operator classes, topology, limiting interchange, existence, or normalization invalidate the mechanism;
-- a current Mathia finding already rules out the proposed category;
-- the closest literature contains the same object-and-mechanism pair under another name;
-- the proposed cross-field transfer lacks an exact dictionary;
-- the decisive first test cannot actually distinguish success from a generic or classical phenomenon.
+- the signal survives a matched non-prime/Beurling/composite/representation-matched control;
+- convergence, domains, operator ideals, topology, limiting interchange, existence, or normalization invalidate the mechanism;
+- the external literature contains the same mechanism under another name;
+- a cross-field transfer lacks an exact dictionary;
+- the decisive first test cannot distinguish success from a generic/classical phenomenon;
+- the candidate depends on an unsettled review as though it were accepted evidence.
 
-A candidate may survive with substantial uncertainty. It may not survive with an unnamed object, missing construction, unfalsifiable promise, or hidden import of RH.
+At most **one** candidate may survive phase 5. It may survive with substantial uncertainty; it may not survive with an unnamed object, missing construction, unfalsifiable promise, or hidden import of RH.
 
-## Ultra-selective clue gate
+If none survives, set the campaign to phase 6 with an empty survivor set. Do not publish or notify yet.
 
-Emit or materially strengthen at most **one** clue in a run, and only when all of the following hold:
+## Phase 6 — publication gate
+
+Synchronize `main` again and perform a candidate-specific freshness audit against every material change since `base_main_sha`.
+
+If there is no survivor, close the campaign issue as a normal null result. Make no repository commit and do not notify.
+
+If one candidate survives, apply the **ultra-selective clue gate**. Publish or materially strengthen at most one clue only when all hold:
 
 1. the mathematical object and proposed mechanism are explicit enough for another researcher to reconstruct;
-2. the direction is not duplicated by current findings, Mind, Master state, graph relations, prior-art nodes, or clues in any lifecycle state;
-3. it survives the mandatory literature audit without collapsing into a known mechanism or empty novelty claim;
-4. it explicitly addresses the strongest relevant Mathia obstruction or explains why it operates outside that obstruction's hypotheses;
+2. the direction is not duplicated by current findings, Mind, Master state, graph navigation, prior-art nodes, or clues in any lifecycle state;
+3. it survived the mandatory external literature audit without collapsing into known mechanism or empty novelty claim;
+4. it explicitly addresses the strongest relevant Mathia obstruction or lies demonstrably outside that obstruction's hypotheses;
 5. it has a decisive first test that can cheaply falsify, classicalize, or materially narrow it;
 6. resolving it could redirect an existing line, create a genuine new information channel, or alter the global program;
-7. its uncertainty is stated strongly enough that no reader could mistake it for evidence.
+7. uncertainty is stated strongly enough that no reader could mistake it for evidence.
 
-A clever analogy, an unexplored keyword combination, or a long speculative derivation does not pass this gate.
+A clever analogy, unexplored keyword combination, or long speculative derivation does not pass.
 
-When the same precise question already exists as `status: proposed`, prefer materially strengthening that clue with a sharper construction, stronger persisted basis, closer literature boundary, or more decisive test. Do not touch accepted, rejected, or resolved clues.
+When the same precise question already exists as `status: proposed`, prefer materially strengthening that clue. Do not touch accepted, rejected, or resolved clues.
+
+After the clue publication attempt, record only the final disposition and publication commit/path when applicable, then close the campaign issue.
 
 ## Clue handoff
 
-Use `.agents/skills/mathia-research-clues/SKILL.md` without changing its lifecycle semantics.
+Use `.agents/skills/mathia-research-clues/SKILL.md` without changing lifecycle semantics.
 
-For a question clearly owned by an existing line, write:
+For a question clearly owned by an existing line:
 
 ```text
 research/<line>/clues/CLUE-<slug>.md
 ```
 
-For a genuinely cross-line question or a possible new research line, write:
+For a genuinely cross-line question or possible new research line:
 
 ```text
 research/clues/CLUE-<slug>.md
@@ -211,15 +310,17 @@ Use:
 origin: visionary-researcher
 ```
 
-Set `target_line` to the exact existing line, `global`, or `new-line-candidate` as appropriate. There is no separate Master inbox: the Master Researcher already consumes local and global clues, so a global Visionary clue is the handoff to Master.
+Set `target_line` to the exact existing line, `global`, or `new-line-candidate`.
 
-The clue's `based_on` list must cite the persisted Master/Mind/finding/prior-art/clue paths that motivated and constrained the proposal. In `## Evidence boundary`, include compact bibliographic identifiers for the closest authoritative external literature, state what was searched, identify the exact overlap, and state the residual question not established there. Do not turn the clue into a literature review or search log.
+The clue's `based_on` list must cite persisted Master/Mind/finding/prior-art/clue paths that motivated and constrained the proposal. In `## Evidence boundary`, include compact bibliographic identifiers for the closest authoritative external literature, state the exact overlap, and state the residual question not established there. Do not turn the clue into a campaign report.
 
-The Visionary must not set `accepted`, `rejected`, or `resolved`. Research Watch remains responsible for independent reconstruction, literature verification, derivation, stress testing, and disposition.
+The Visionary must not set `accepted`, `rejected`, or `resolved`.
 
 ## Ownership and hard path gate
 
-This skill may write only to proposed clue files under:
+The Visionary campaign may mutate its single GitHub campaign issue as working state. This issue mutation is the **only state-persistence exception**.
+
+Repository writes remain restricted to proposed clue files under:
 
 ```text
 research/<discovered-line>/clues/**
@@ -245,15 +346,15 @@ code/tests/docs/experiments
 .obsidian/**
 ```
 
-It must not create, delete, move, initialize, merge, pause, split, or recolor a research line. Those remain explicit user/portfolio decisions.
+The scheduled task itself may be changed only by an explicit user request outside the scheduled Visionary execution.
 
-Do not create a `research/visionary/` directory, state snapshot, candidate backlog, run ledger, source-search history, or empty marker file.
+It must not create, delete, move, initialize, merge, pause, split, or recolor a research line.
 
 ## Publication policy
 
-A scheduled Visionary pass may publish a clue change directly to the default branch only when the ultra-selective gate and all shared clue gates pass.
+A scheduled Visionary campaign may publish a clue change directly to the default branch only in phase 6 when the ultra-selective gate and all shared clue gates pass.
 
-Before each commit:
+Before each publication commit:
 
 1. refresh the default branch and ensure the evidence/literature basis is still coherent;
 2. inspect the complete diff;
@@ -261,7 +362,7 @@ Before each commit:
 4. verify every clue remains `status: proposed` and uses `origin: visionary-researcher`;
 5. verify the clue includes a concrete construction, decisive test, and bounded literature/evidence boundary;
 6. verify no state, finding, review, Mind, graph, prior-art, task, or unrelated file changed;
-7. remove formatting churn and any text that records the run rather than the research question.
+7. remove formatting churn and any text that records the campaign rather than the research question.
 
 Use:
 
@@ -270,22 +371,35 @@ research(visionary): propose <clue>
 research(visionary): sharpen <clue>
 ```
 
-If no candidate passes the gate, create no commit. Never commit merely to show that the weekly task ran or that literature was searched.
+If no candidate passes, create no commit. Never commit merely to show that a campaign phase ran.
 
 ## Notification and reporting
 
-This role has one deliberate exception to the shared low-noise clue default because a qualifying Visionary output is expected to be rare.
+Campaign checkpoint issue comments are persistence, **not user notifications**.
 
-- Notify when the Visionary successfully creates or materially strengthens a `status: proposed` clue and publishes it to the default branch. This published clue is the task's positive result.
-- Keep that notification compact: identify the clue path, `target_line`, exact research question, decisive first test, and publication commit. Do not describe discarded candidates or the complete literature search.
-- The eventual Research Watch still notifies separately if it changes the clue to `status: accepted`.
-- Notify when a workflow, required-capability, synchronization, path-gate, or publication failure prevents intended persistence.
-- Do not notify for null runs, rejected internal candidates, unchanged clues, routine literature-search completion, or weekly status.
+Notify only when:
 
-This exception applies only to the Visionary Researcher's own publication of a qualifying clue; it does not change notification policy for other clue producers.
+- phase 6 successfully publishes or materially strengthens a qualifying `status: proposed` Visionary clue; include clue path, `target_line`, exact research question, decisive first test, and publication commit;
+- a workflow, required-capability, synchronization, campaign-state ambiguity, path-gate, or publication failure prevents intended progress.
+
+Do not notify for:
+
+- phase completion;
+- partial phase checkpoints;
+- null campaigns;
+- rejected internal candidates;
+- unchanged clues;
+- routine literature completion;
+- normal campaign issue closure.
+
+The eventual Research Watch still notifies separately if it changes the clue to `status: accepted`.
 
 ## Operating cadence
 
-This role is designed for a **weekly ultra-effort pass**, not a daily quota. The full-state read, broad literature audit, and adversarial candidate tournament need depth; running daily would mostly reprocess an almost unchanged search space, amplify recent anchoring, and create pressure to emit weak ideas.
+This skill is designed for **one continuing campaign advanced by a recurring invocation approximately every four hours**, rather than one monolithic weekly pass or a daily quota.
 
-A material program reset or a major new obstruction may justify an explicit extra run, but the Visionary must never modify its own schedule.
+The scheduler should invoke the same prompt each time. The skill determines whether to create a campaign, resume the current phase, repeat an incomplete phase, reset stale state to phase 1, or close the campaign in phase 6.
+
+Do not start a second campaign while another is active. After phase 6 closes a campaign, the next scheduled invocation may start a new campaign immediately unless the user has changed the schedule.
+
+The Visionary must never modify its own schedule.
