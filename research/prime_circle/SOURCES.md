@@ -57,3 +57,7 @@ This file records durable literature dependencies used to support or falsify fin
 - Immanuel Asmus, **Duality between Hyperbolic and de Sitter Geometry**, arXiv:0810.5303v2 [math.DG] (2008). Role: explicit hyperbolic/de Sitter duality in Minkowski space and de Sitter causal geometry; prior-art anchor for the Lorentz-normal formulation in PC-031.
 - Maxim Arnold, Dmitry Fuchs, Ivan Izmestiev and Serge Tabachnikov, **Cross-ratio Dynamics on Ideal Polygons**, *International Mathematics Research Notices* 2022:9 (2022), 6770–6853. DOI: 10.1093/imrn/rnaa289. Role: classical projective dynamics of ideal polygons defined by cross-ratio, including the orthogonal-side case; prior-art boundary for attempts to extract a new orthogonal-circle dynamical mechanism in PC-031.
 - Robert C. Penner, **The decorated Teichmüller space of punctured surfaces**, *Communications in Mathematical Physics* 113 (1987), 299–339. Role: standard decorated Teichmüller and lambda-length framework in which finite ideal-edge lengths require horocycle decorations; supports the gauge boundary in PC-031.
+
+## Inverse-square chord spectra
+
+- F. Calogero and A. M. Perelomov, **Some Diophantine relations involving circular functions of rational angles**, *Linear Algebra and its Applications* 25 (1979), 91–94. Role: classical spectra and trigonometric sums for finite matrices with `sin^{-2}((j-k)pi/n)` entries; primary prior-art anchor for the full regular-polygon inverse-square chord spectrum used in PC-032.
