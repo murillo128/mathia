@@ -206,6 +206,21 @@ Relevant finding: PF-110; relevant local clue: `CLUE-affine-composite-clone-rela
 
 **Novelty discipline.** The modular trace floor and quasiconformal length inequality are classical, and Whitney--Šarić supply the substantive structural theorem. PF-110 does not claim a new general triangulation theorem; it records the immediate corollary and uses it to close the previously proposed bounded-triangulation route for the zero-systole prime flute.
 
+## S13 — pair-of-pants marked-length comparison
+
+**W. P. Thurston**, *Minimal stretch maps between hyperbolic surfaces*, preprint, arXiv:math/9801039 (1998).
+
+- https://arxiv.org/abs/math/9801039
+
+Used for:
+
+- Lemma 3.4 (`Shrinking at the waist`): for two marked hyperbolic pair-of-pants structures, any nonperipheral fundamental-group element whose marked geodesic length increases has ratio strictly below the largest corresponding boundary-length ratio;
+- PF-111's two-direction specialization, after approximating the common cusp by equal positive boundary length, which turns PF-107's summable relative cuff defect into a summable sequence of uniform distortions for the entire marked closed-geodesic spectrum of each individual tight pant.
+
+Relevant finding: PF-111; relevant local clue: `CLUE-affine-composite-clone-relative-operator-class.md`.
+
+**Scope warning.** PF-111 is pant-local. Thurston's lemma does not by itself control closed geodesics that traverse several pants, produce an equivariant global comparison, or imply any relative Laplacian/operator-ideal statement.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:

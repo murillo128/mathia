@@ -11,6 +11,7 @@ based_on:
   - research/prime_flute/findings/PF-108-shift-clone-collar-and-spine-defects-are-summable.md
   - research/prime_flute/findings/PF-109-shift-clone-preserves-canonical-separator-pinching-multiplicatively.md
   - research/prime_flute/findings/PF-110-zero-systole-obstructs-bounded-ideal-triangulations.md
+  - research/prime_flute/findings/PF-111-shift-clone-has-summable-pant-local-marked-length-distortion.md
 ---
 
 # Affine composite clone and the relative Laplacian class
@@ -23,17 +24,19 @@ PF-107 identifies a nonuniformity in the first intrinsic pants coordinate: for c
 
 PF-110 materially changes one proposed bridge. Whitney--Šarić bounded ideal triangulations are **not available at all** on the prime flute: their Proposition 4.2 makes every surface with such a triangulation quasiconformal to a zero-shear quotient by a subgroup of `PSL_2(Z)`; integer traces give that quotient a positive systole, and Wolpert's quasiconformal length inequality preserves positivity of the systole. Since the prime flute has primitive geodesics tending to zero, its zero systole is an intrinsic obstruction to every bounded ideal triangulation in their sense. The previously proposed bounded-triangulation/shear route is therefore closed, not merely awaiting a better combinatorial construction.
 
+PF-111 removes a different local amplification route. Thurston's pair-of-pants `Shrinking at the waist` lemma, applied in both directions and then to the common-cusp limit, shows that the **entire nonperipheral marked closed-geodesic spectrum inside each individual tight pant** is distorted by at most the larger of its two relative cuff defects. Because PF-107 makes those logarithmic cuff defects summable, the sequence of pant-local sup marked-length distortions is itself `ell^1`. Arbitrarily complicated words contained in one pant therefore cannot turn the shift-clone deformation into an order-one spectral distinction. Any surviving length/operator obstruction must be cross-pant or genuinely nonlocal.
+
 ## Research question
 
-Does the canonical marked prime/composite matching nevertheless extend **directly**, without a Whitney--Šarić bounded triangulation, to a quasiconformal, asymptotically isometric, or otherwise analytically controlled common-manifold comparison strong enough to imply compactness of a natural relative resolvent? If not, what exact nonlocal mechanism prevents such a perturbative conclusion despite the summable endpoint, transverse, area-weighted, and canonical-separator defects?
+Does the canonical marked prime/composite matching nevertheless extend **directly**, without a Whitney--Šarić bounded triangulation, to a quasiconformal, asymptotically isometric, or otherwise analytically controlled common-manifold comparison strong enough to imply compactness of a natural relative resolvent? If not, what exact nonlocal mechanism prevents such a perturbative conclusion despite the summable endpoint, transverse, area-weighted, canonical-separator, and pant-local marked-length defects?
 
 Schatten, heat-trace, wave, and scattering statements are separate stronger gates and must not be inferred from compact resolvent equivalence.
 
 ## Why it may matter
 
-This remains the sharpest current control on the surviving exact prime-flute tail. A positive operator-class theorem would show that even the exact sampled cotangent geometry is perturbative relative to an all-composite surface and would force any arithmetic signal into a narrower relative spectral-shift/phase sector. A negative theorem would be at least as informative: it would exhibit a genuine amplification mechanism of the infinite collapsing surface that is invisible in the endpoint, collar, spine, and canonical-separator comparisons.
+This remains the sharpest current control on the surviving exact prime-flute tail. A positive operator-class theorem would show that even the exact sampled cotangent geometry is perturbative relative to an all-composite surface and would force any arithmetic signal into a narrower relative spectral-shift/phase sector. A negative theorem would be at least as informative: it would exhibit a genuine amplification mechanism of the infinite collapsing surface that is invisible in the endpoint, collar, spine, canonical-separator, and pant-local marked-length comparisons.
 
-PF-110 improves the research value of the clue by removing a false shortcut. Any positive result now has to confront the actual unbounded-cuff, zero-systole quotient geometry rather than importing a bounded-shear coordinate chart whose existence is impossible here.
+PF-110 improves the research value of the clue by removing a false shortcut. Any positive result now has to confront the actual unbounded-cuff, zero-systole quotient geometry rather than importing a bounded-shear coordinate chart whose existence is impossible here. PF-111 sharpens the adversarial side: a counterexample cannot be obtained merely by taking longer and longer words inside one matched pair of pants.
 
 ## Decisive test
 
@@ -41,7 +44,7 @@ Either construct a canonical equivariant/common-manifold comparison with tail me
 
 ## Research-watch disposition
 
-**Accepted as a fertile research direction, not as proof of any operator equivalence.** The clue remains accepted after PF-110 because PF-110 kills only the bounded-ideal-triangulation route, not the direct pants/collar route or the operator question itself.
+**Accepted as a fertile research direction, not as proof of any operator equivalence.** The clue remains accepted after PF-110 and PF-111 because those findings close the bounded-ideal-triangulation route and pant-local word amplification, respectively, but not the direct pants/collar gluing route or the operator question itself.
 
 ### Local geometric route that survives
 
@@ -49,7 +52,7 @@ The unbounded prime-flute cuffs are not by themselves a local obstruction. Minsk
 
 The strongest standard infinite-type Fenchel--Nielsen theorem located for asymptotically conformal maps also does not close the bridge. Šarić, *Fenchel-Nielsen coordinates for asymptotically conformal deformations* (Ann. Acad. Sci. Fenn. Math. 41 (2016), 167--176, DOI `10.5186/aasfm.2016.4112`), assumes an upper-bounded geodesic pants decomposition, unavailable for the distinguished prime-flute decomposition.
 
-PF-107--PF-109 nevertheless make a direct gluing attempt quantitative: the raw additive cuff changes are non-`ell^1`, but relative cuff defects are summable; absolute collar/spine and collar-area defects are summable; and canonical separator pinching is preserved multiplicatively. A successful proof should therefore target **uniform tail metric equivalence on the complete pants/cusp pieces**, not `ell^1` summability of raw cuff circumferences.
+PF-107--PF-111 nevertheless make a direct gluing attempt quantitative: the raw additive cuff changes are non-`ell^1`, but relative cuff defects are summable; absolute collar/spine and collar-area defects are summable; canonical separator pinching is preserved multiplicatively; and every pant-local closed word has a summable uniform marked-length defect. A successful proof should therefore target **uniform tail metric equivalence on the complete pants/cusp pieces and compatibility across their glued cuffs**, not `ell^1` summability of raw cuff circumferences or local word-length estimates alone.
 
 ### Bounded-triangulation route is now closed
 
@@ -76,10 +79,10 @@ Güneysu--Thalmaier, *Scattering theory without injectivity radius assumptions, 
 2. If strong equivalence in the Georgescu--Golénia sense is obtained, derive compact relative resolvent and equality of essential spectra. Keep this conclusion separate from Schatten or trace-class claims.
 3. Separately test the stronger Güneysu--Thalmaier weighted metric-deviation integral for wave operators and absolutely continuous spectral stability, with special attention to the collapsing unit-ball volumes.
 4. Only after those gates, ask whether any resolvent/heat difference lies in a Schatten or trace class and whether a canonical relative scattering determinant or spectral-shift object exists.
-5. In parallel, search for a weakly-null sequence, a noncanonical closed-curve amplification, a pants/cusp gluing obstruction, or another limit-operator mechanism showing that global tail metric equivalence fails despite PF-107--PF-109.
+5. In parallel, search for a weakly-null sequence, a **cross-pant** closed-curve/arc amplification, a pants/cusp gluing obstruction, or another limit-operator mechanism showing that global tail metric equivalence fails despite PF-107--PF-111.
 
-No located theorem simultaneously constructs the required direct comparison for this zero-systole, unbounded-cuff, infinite-type exact prime/composite deformation. The clue therefore remains accepted, but its viable path is narrower and more explicit after PF-110.
+No located theorem simultaneously constructs the required direct comparison for this zero-systole, unbounded-cuff, infinite-type exact prime/composite deformation. The clue therefore remains accepted, but its viable path is narrower and more explicit after PF-110/PF-111.
 
 ## Evidence boundary
 
-This clue is not evidence that the surfaces are relatively compact, trace-class comparable, wave-equivalent, or spectrally equivalent. PF-105 and PF-106 establish endpoint, cross-ratio, separator, shear, and boundary-interpolation estimates; PF-107 gives the `ell^2 \ ell^1` additive cuff warning with `ell^1` relative cuffs; PF-108 proves summable transverse/collar quantities only on explicitly controlled pieces; PF-109 removes canonical separator pinching as a relative-length amplification mechanism; and PF-110 **rules out**, rather than supplies, the Whitney--Šarić bounded-triangulation bridge. Minsky supplies only local pants/hexagon comparison; Georgescu--Golénia applies only after a genuine strong equivalence of complete metrics on a common manifold has been established; and Güneysu--Thalmaier requires the stronger weighted metric-deviation hypothesis for wave operators. The required prime-flute quotient-surface bridge remains unproved.
+This clue is not evidence that the surfaces are relatively compact, trace-class comparable, wave-equivalent, or spectrally equivalent. PF-105 and PF-106 establish endpoint, cross-ratio, separator, shear, and boundary-interpolation estimates; PF-107 gives the `ell^2 \ ell^1` additive cuff warning with `ell^1` relative cuffs; PF-108 proves summable transverse/collar quantities only on explicitly controlled pieces; PF-109 removes canonical separator pinching as a relative-length amplification mechanism; PF-110 **rules out**, rather than supplies, the Whitney--Šarić bounded-triangulation bridge; and PF-111 controls all nonperipheral marked closed words **inside each individual pant** but not cross-pant geodesics or the gluing maps themselves. Minsky supplies only local pants/hexagon comparison; Georgescu--Golénia applies only after a genuine strong equivalence of complete metrics on a common manifold has been established; and Güneysu--Thalmaier requires the stronger weighted metric-deviation hypothesis for wave operators. The required prime-flute quotient-surface bridge remains unproved.
