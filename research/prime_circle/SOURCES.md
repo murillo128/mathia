@@ -84,3 +84,7 @@ This file records durable literature dependencies used to support or falsify fin
 
 - Florian Dörfler and Francesco Bullo, **Kron Reduction of Graphs With Applications to Electrical Networks**, *IEEE Transactions on Circuits and Systems I: Regular Papers* 60:1 (2013), 150–163. DOI: 10.1109/TCSI.2012.2215780. arXiv:1102.2950. Role: graph-Laplacian Kron reduction as Schur complementation, with algebraic, spectral and resistive properties; primary general prior-art anchor for the divisor-subpolygon reduction in PC-039.
 - Douglas E. Crabtree and Emilie V. Haynsworth, **An identity for the Schur complement of a matrix**, *Proceedings of the American Mathematical Society* 22:2 (1969), 364–366. DOI: 10.1090/S0002-9939-1969-0255573-1. Role: classical quotient identity for staged Schur complementation; prior-art anchor for the exact refinement-path independence in PC-039.
+
+## Weil–Petersson homothety under covering constructions
+
+- Carlos A. Serván, **Local rigidity of covering constructions and Weil–Petersson subvarieties of the moduli space of curves**, *International Mathematics Research Notices* 2026:12 (2026). DOI: 10.1093/imrn/rnag121. arXiv:2509.25523. Role: Corollary 6.5 proves for totally marked covering constructions that pullback scales the Weil–Petersson metric by the covering degree, `f^*g_WP = deg(h) g_WP`; direct prior-art anchor for the degree homothety and normalized divisor-refinement transport in PC-041.
