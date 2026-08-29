@@ -9,13 +9,13 @@ description: Design a Mathia-owned Lean formalization issue with a blocking stat
 
 Use this skill when Mathia wants to test, sharpen, falsify, or machine-check a mathematical claim in Lean.
 
-This is a thin specialization of the canonical merged repository skill:
+This is a thin specialization of the canonical repository skill:
 
 ```text
 .agents/skills/design-github-issue/SKILL.md
 ```
 
-Load that file from the current Mathia repository as the generic issue-design authority. Do not use a PR, feature branch, historical copy, or external duplicate of the skill as procedure authority unless a controlling issue explicitly pins historical workflow behavior for reproducibility.
+Load that file from the current Mathia repository as the generic issue-design authority. Repository skills on the default branch are procedure authority; do not substitute copies from old PRs or unrelated repositories.
 
 The **task represented by the controlling Mathia issue** owns the scientific question. Codex, Lean, and the independent reviewer are actors inside that task.
 
@@ -34,18 +34,11 @@ The issue chooses the smallest sensible Mathia-local path for the formal artifac
 
 ## Lean environment
 
-Use the canonical pinned Lean/mathlib environment in Mathia when one exists.
+Use the Lean tooling available on the execution machine together with Mathia's current local Lean/Lake setup.
 
-If Mathia does not yet contain a Lean project, the first formalization issue that requires one may authorize the **smallest pinned local Lean setup** needed for reproducible work, for example the minimal `lean-toolchain` / Lake configuration and imports needed by the bounded target.
+Do **not** make a predetermined Lean or mathlib version part of the scientific contract. The actual environment used may be recorded as execution evidence, but a formalization should not be blocked merely because the machine is running a different current Lean version than an older task.
 
-That setup must:
-
-- live in Mathia;
-- pin the material Lean/mathlib revision;
-- avoid importing another repository's project structure as an implicit dependency;
-- remain proportionate to the current formalization rather than becoming a general framework by default.
-
-If creating or materially changing the Lean environment is not authorized by the controlling issue, return to design rather than improvising it during proof work.
+If Mathia does not yet contain a Lean project, the first formalization that needs one may add the **smallest local Lake/Mathlib setup** required to compile the bounded target. Keep that setup inside Mathia and proportionate to the work; do not import another repository's project structure or turn initial setup into a general formalization framework.
 
 ## Formalization Gate 0
 
@@ -67,8 +60,7 @@ Also require when material:
 
 - search for exact or stronger prior mathematical/formal results;
 - search current mathlib and existing Mathia Lean code for reusable declarations;
-- an explicit dependency/import decision before rebuilding generic infrastructure;
-- exact Lean/mathlib pins used by the proof target.
+- an explicit dependency/import decision before rebuilding generic infrastructure.
 
 Allowed gate outcomes should include, with task-specific names if useful:
 
@@ -108,7 +100,7 @@ A material handoff should contain:
 - why the observation is mathematically material rather than proof-engineering trivia;
 - whether execution can safely continue before disposition.
 
-The issue-review session classifies each handoff using the canonical merged research skills in this repository.
+The issue-review session classifies each handoff using the canonical research skills in this repository.
 
 ### Persisted-finding challenge
 
@@ -153,7 +145,7 @@ Non-blocking research leads may wait until the next declared checkpoint, but the
 
 Unless the issue explicitly establishes a narrower or stronger boundary, an accepted formalization should require:
 
-- compilation under Mathia's pinned Lean/mathlib environment;
+- successful compilation/checking with the Lean environment available on the execution machine;
 - no `sorry` or `admit` in accepted theorem dependencies;
 - no new axioms introduced to discharge the target;
 - no `unsafe` proof shortcuts;
@@ -163,7 +155,7 @@ Unless the issue explicitly establishes a narrower or stronger boundary, an acce
 - theorem statements unchanged from the Gate-0 accepted boundary;
 - fresh final review of statement fidelity, proof integrity, and research-handoff completeness.
 
-Use the canonical merged independent-review skill when the issue requires a separate technical review:
+Use the canonical independent-review skill when the issue requires a separate technical review:
 
 ```text
 .agents/skills/codex-independent-review/SKILL.md
@@ -180,7 +172,7 @@ A Mathia Lean formalization issue should make only the task-specific boundaries 
 1. authoritative Mathia target(s);
 2. intended Lean theorem boundary;
 3. Gate-0 falsification/prior-art/mathlib-reuse risks specific to the target;
-4. exact Lean environment or authorization to introduce the minimal local one;
+4. any target-specific Lean setup/import needs not already covered by Mathia's local environment;
 5. target-specific proof-integrity or dependency constraints beyond this skill;
 6. surrounding Mathia conclusions that remain out of scope;
 7. any target-specific checkpoint/final-review conditions.
