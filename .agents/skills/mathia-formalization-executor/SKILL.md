@@ -1,23 +1,34 @@
 ---
 name: mathia-formalization-executor
-description: Execute an approved Mathia-owned formalization issue through Gate 0, Lean proof engineering, proof validation, and structured research handoff without directly mutating Mathia findings, adversarial sidecars, or clues.
+description: Execute an approved Mathia-owned Lean formalization issue through Gate 0, proof engineering, Lean validation, and structured research handoff without directly mutating Mathia findings, adversarial sidecars, or clues.
 ---
 
-# Mathia Formalization Executor
+# Mathia Lean Formalization Executor
 
 ## Responsibility
 
-Use this skill when Codex is implementing an approved Mathia formalization issue.
+Use this skill when Codex is implementing an approved Mathia Lean formalization issue in this repository.
 
-This skill is a thin specialization of:
+This is a thin specialization of the canonical merged repository skill:
 
 ```text
 .agents/skills/spec-driven-codex-loop/SKILL.md
 ```
 
-Load that skill first. It owns the normal issue-driven execution lifecycle, branch/PR discipline, validation, checkpoint publication, and ready-for-review handoff.
+Load that file from the current Mathia repository as the generic execution authority. Do not use a PR, feature branch, historical copy, or external duplicate of the skill as procedure authority unless a controlling issue explicitly pins historical workflow behavior for reproducibility.
 
-The controlling Mathia issue owns the scientific question. The executor owns proof engineering and evidence only within that contract.
+The controlling Mathia issue owns the scientific question. The executor owns Lean proof engineering and evidence only within that contract.
+
+## Repository and branch boundary
+
+All ordinary formalization execution happens in Mathia:
+
+- work from a Mathia feature branch governed by the controlling issue;
+- keep Lean source, Gate evidence, validation evidence, and implementation changes in that branch/PR;
+- target the Mathia default branch with the formalization PR;
+- report mathematical discoveries to the controlling Mathia issue.
+
+Do not move proof work to another repository merely to reuse its Lean project or existing proof infrastructure.
 
 ## Entry gate
 
@@ -25,50 +36,64 @@ Before proof implementation:
 
 1. load `AGENTS.md`;
 2. load the controlling Mathia issue;
-3. confirm the issue is execution-ready/in-progress under the generic workflow;
-4. identify the exact execution host, toolchain, source revision, and formal-library revision required by the issue;
-5. confirm Gate 0 exists and has not been bypassed.
+3. load the canonical `spec-driven-codex-loop` skill;
+4. confirm the issue has exactly one valid execution state and is safe to work;
+5. inspect Mathia's current Lean environment and relevant existing formalization source;
+6. confirm the issue defines a blocking Gate 0 and that it has not been bypassed.
 
-If Lean work is hosted in another repository, preserve the Mathia issue as the controlling authority and link any child issue/PR back to it.
+### Lean environment
+
+Use Mathia's pinned `lean-toolchain` / Lake / mathlib environment when present.
+
+If no Lean environment exists yet:
+
+- create one only when the controlling issue explicitly authorizes the minimal local setup;
+- pin the material Lean/mathlib revision;
+- keep it in Mathia;
+- add only the imports/configuration required for the bounded formalization;
+- do not copy another repository's project layout or dependency graph by default.
+
+If a Lean environment is needed but the issue does not authorize creating or changing it, return to design rather than improvising the environment during proof work.
 
 ## Gate 0 is blocking
 
-Do not begin the proof simply because the intended theorem looks plausible.
+Do not begin proof implementation simply because the intended theorem looks plausible.
 
-Execute the issue-defined statement/adversarial/prior-art/reuse audit first. The gate must inspect the actual intended theorem surface, not merely propose Lean syntax.
+Execute the issue-defined statement/adversarial/prior-art/mathlib-reuse audit first. The gate must inspect the intended theorem surface, not merely propose Lean syntax.
 
-At minimum, test the risks named by the issue around:
+At minimum, test the material risks named by the issue around:
 
-- domains and singularities;
+- domains, side conditions, singularities, and definedness;
 - quantifiers and hidden hypotheses;
-- normalization/sign/indexing/gauge conventions;
+- normalization, sign, indexing, orientation, gauge, and conventions;
 - boundary and degenerate cases;
-- equivalence between the informal claim and the formal target;
-- exact/stronger prior formalizations;
-- reusable formal-library declarations and dependencies.
+- fidelity between the persisted mathematical claim and the Lean target;
+- exact or stronger prior formalizations;
+- reusable mathlib or existing Mathia Lean declarations;
+- dependency/import choices.
 
-Publish the exact gate target and obtain the required independent verdict before proof implementation.
+Publish the exact Gate target and obtain the required independent verdict before proof implementation.
 
-If Gate 0 requires statement repair or finds mathematical conflict, do not weaken or alter the target in implementation. Return to the controlling Mathia issue/design boundary.
+If Gate 0 requires statement repair or finds mathematical conflict, do not weaken or alter the theorem in implementation. Return to the controlling Mathia issue/design boundary.
 
 ## Proof engineering
 
-After a safe gate verdict, implement the smallest coherent theorem chain that proves the frozen mathematical target.
+After a safe Gate verdict, implement the smallest coherent Lean theorem chain that proves the frozen mathematical target.
 
-Prefer existing mathlib/Lean infrastructure over bespoke generic machinery when practical. Do not force the prose proof route if a smaller exact route proves the same frozen theorem.
+Prefer existing mathlib and existing Mathia Lean infrastructure over bespoke generic machinery when practical. Do not force the prose proof route if a smaller exact Lean proof establishes the same frozen theorem.
 
 A proof-engineering simplification is allowed when it preserves the theorem. A mathematical target change is not.
 
-Unless the issue explicitly declares another proof boundary, accepted delivered theorems must contain no:
+Unless the controlling issue explicitly declares another proof boundary, accepted delivered theorems must contain no:
 
 - `sorry`;
 - `admit`;
 - new axioms introduced to discharge the target;
 - `unsafe` proof shortcuts;
 - floating-point or sampled evidence used as proof premises;
-- unchecked generated/CAS certificates.
+- unchecked generated or CAS certificates.
 
-Run `#print axioms` or the issue-defined equivalent on principal theorems and preserve the result.
+Run `#print axioms` on principal public theorems, or the issue-defined equivalent Lean trust-footprint inspection, and preserve the result.
 
 ## Formalization is also an observation surface
 
@@ -78,18 +103,18 @@ Material observations include, for example:
 
 - a missing or unnecessary hypothesis;
 - a counterexample or degenerate case;
-- a stronger/weaker exact theorem boundary;
+- a stronger or weaker exact theorem boundary;
 - a sign, normalization, indexing, orientation, or gauge subtlety;
-- an unexpected invariant/equivalence;
+- an unexpected invariant or equivalent formulation;
 - a proof that only works in a narrower domain than the persisted claim;
 - a genuinely simpler exact mathematical route;
-- a potential generalization or obstruction suggested by the formal derivation.
+- a plausible generalization or obstruction suggested by the formal derivation.
 
 Do not silently absorb such observations into implementation.
 
 ## Structured research handoff
 
-The executor reports material mathematical observations to the **controlling Mathia issue**. It does not directly write Mathia research knowledge files.
+The executor reports material mathematical observations to the **controlling Mathia issue**. It does not directly write Mathia research knowledge files as part of this role.
 
 For each material observation, post a concise `Formalization research handoff` containing:
 
@@ -113,46 +138,59 @@ Progression:
 <safe to continue | block pending issue-review disposition>
 ```
 
-Use prose rather than a new machine schema; the fields above are a checklist, not a permanent data format.
+The headings are a checklist, not a new permanent schema.
 
 ### No direct research-tree writes
 
-As part of this executor role, do **not** create/update/delete:
+As part of formalization execution, do **not** create/update/delete:
 
 ```text
 research/**/findings/*.review.md
 research/**/clues/**
 ```
 
-Do not rewrite a finding, create a new finding, or change clue disposition.
+Do not rewrite a canonical finding, create a new finding, or change clue disposition.
 
-The issue-owning review/orchestration session consumes the handoff and, when warranted, loads the Mathia adversarial-review or clue skill to materialize the durable research object.
+The issue-owning review/orchestration session consumes the handoff and, when warranted, loads the canonical merged Mathia research skills:
 
-A comment such as `Mathia feedback` is not itself durable research disposition; it must contain enough evidence for the task-level review to route it.
+```text
+.agents/skills/mathia-research-adversarial/SKILL.md
+.agents/skills/mathia-research-review/SKILL.md
+.agents/skills/mathia-research-clues/SKILL.md
+```
+
+That session decides whether to materialize an adversarial review, a proposed clue, both, or neither. Research Watch owns clue disposition and any later substantive finding.
+
+An informal `Mathia feedback` comment is not a substitute for a structured handoff when the observation may be mathematically material.
 
 ## Blocking discoveries
 
-If an observation materially challenges the frozen theorem or the persisted finding in a way that makes proof progression unsafe:
+If an observation materially challenges the frozen theorem or a persisted finding in a way that makes proof progression unsafe:
 
 1. publish the handoff immediately to the controlling Mathia issue;
 2. stop at the checkpoint;
-3. do not prove a repaired/narrowed theorem under the old contract;
+3. do not prove a repaired or narrowed theorem under the old contract;
 4. resume only after the issue-level task has disposed of the challenge and, when necessary, design has frozen a repaired target.
 
 Non-blocking independent research leads may be collected until the next declared checkpoint, but final handoff must account for them.
 
 ## Independent review
 
-Use the issue-required fresh independent reviewer for Gate 0 and final proof review.
+Use the canonical merged independent-review skill when the controlling issue requires Gate or final technical review:
 
-The independent reviewer remains read-only. It may discover material mathematics; record those findings in the checkpoint evidence so the issue-owning review session can route them through adversarial-review/clue protocols when warranted.
+```text
+.agents/skills/codex-independent-review/SKILL.md
+```
 
-A technical `PASS` means the exact reviewed formal target is safe at that boundary. It does not:
+The independent reviewer remains read-only. It may discover material mathematics; those findings become inputs to the issue-owning review session.
+
+A technical `PASS` means the exact reviewed Lean target is safe at that checkpoint. It does not:
 
 - merge the PR;
 - close the controlling issue;
 - resolve an open Mathia adversarial sidecar;
-- accept a clue;
+- accept or resolve a clue;
+- create a new finding;
 - establish research novelty;
 - validate unformalized surrounding claims.
 
@@ -160,22 +198,24 @@ A technical `PASS` means the exact reviewed formal target is safe at that bounda
 
 Before ready-for-review handoff, verify as required by the controlling issue:
 
-- exact theorem source compiles under the pinned toolchain;
-- placeholder/new-axiom/unsafe checks are clean;
-- principal axiom footprints are recorded;
+- the exact Lean source compiles under Mathia's pinned environment;
+- no forbidden `sorry`, `admit`, new axiom, `unsafe`, or unchecked-certificate dependency remains in the accepted theorem boundary;
+- principal `#print axioms` results or equivalent trust evidence are recorded;
 - theorem statements still match the Gate-0 frozen contract;
-- no numerical falsification aid was promoted into proof evidence;
-- external dependencies and source revisions are exact;
-- all material formalization discoveries have structured handoffs in the controlling Mathia issue, or explicitly record `Formalization research handoff: none`;
-- fresh final technical review covers theorem fidelity, proof integrity, and completeness of the research handoff.
+- no numerical falsification or exploratory computation was promoted into proof evidence;
+- material dependencies and revisions are pinned and recorded;
+- all material mathematical discoveries have structured handoffs in the controlling Mathia issue, or explicitly record `Formalization research handoff: none`;
+- fresh final technical review covers theorem fidelity, proof integrity, and completeness of research handoffs.
 
-## Cross-repository delivery
+Use the repository-native Lean command defined by Mathia's current Lean project. If no command is yet canonical, the controlling issue must define the exact check used for that bounded formalization.
 
-If implementation lives outside Mathia:
+## Delivery
 
-- keep the child PR focused on formal artifacts/evidence;
-- link it to the controlling Mathia issue prominently;
-- do not create an external scientific authority competing with the Mathia issue;
-- keep research disposition in Mathia.
+The formalization PR lives in Mathia and follows `spec-driven-codex-loop`:
 
-The executor ends with the implementation PR ready for user/ChatGPT review according to `spec-driven-codex-loop`. It never merges, enables auto-merge, closes the Mathia issue, accepts/resolves a clue, or authors a replacement Mathia finding.
+- one focused PR per controlling issue unless the issue explicitly decomposes delivery;
+- keep it draft while implementation/checkpoint review remains incomplete;
+- move it to ready-for-review only after required Lean validation and independent review pass;
+- stop for user/ChatGPT review and merge decision.
+
+The executor never merges, enables auto-merge, closes the controlling Mathia issue, accepts/resolves a clue, authors a replacement finding, or writes adversarial/clue research state directly.
