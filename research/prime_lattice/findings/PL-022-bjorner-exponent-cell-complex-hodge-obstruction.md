@@ -58,7 +58,7 @@ Str exp(-t L(Delta_X))
 
 Thus the most direct topological/spectral route is already classical and has a sharp limitation: **RH lives in alternating cancellation among Hodge zero-mode multiplicities, while the standard nonzero Hodge spectra of the shifted square-free complexes are integral combinatorial spectra.** The ordinary unweighted simplicial Laplacian is therefore not a Hilbert–Pólya operator whose eigenvalues are the Riemann-zero ordinates.
 
-**Evidence/status:** `LITERATURE+DERIVED + NEGATIVE/OBSTRUCTION` for the ordinary unweighted topological/Hodge route. Björner's complexes, their Euler-characteristic RH criteria, shiftedness, Betti formulae, and the full multicomplex CW realization are literature. Duval–Reiner's Laplacian integrality theorem is literature. The expression of Björner's Betti classes as a `log 2`-thick energy boundary shell, and the Hodge-supertrace consequence in exponent coordinates, are exact derived specializations. No novelty is claimed for the underlying topology or Laplacian theory.
+**Evidence/status:** `LITERATURE+DERIVED + NEGATIVE/OBSTRUCTION` for the ordinary unweighted topological/Hodge route. Björner's complexes, their Euler-characteristic RH criteria, shiftedness, Betti formulae, and the full multicomplex CW realization are literature. Duval–Reiner's Laplacian integrality theorem is literature. The expression of Björner's Betti numbers as a `log 2`-thick energy boundary-shell count, and the Hodge-supertrace consequence in exponent coordinates, are exact derived specializations. No novelty is claimed for the underlying topology or Laplacian theory.
 
 ## The square-free Boolean sector is Björner's simplicial complex
 
@@ -99,7 +99,7 @@ RH
 
 This is an exact RH reformulation, not a proof mechanism. Björner explicitly notes that the Betti-number information developed in the paper does not by itself improve control of this Euler-characteristic cancellation.
 
-## Shiftedness localizes all homology to the outer `log 2` energy shell
+## Shiftedness makes the entire Betti vector a `log 2` outer-shell count
 
 Björner proves that `Delta_X` is shifted when the prime vertices are ordered
 
@@ -107,7 +107,7 @@ Björner proves that `Delta_X` is shifted when the prime vertices are ordered
 2 < 3 < 5 < ...
 ```
 
-because replacing a prime factor by a smaller prime decreases the represented integer. A standard theorem for shifted complexes then gives a wedge-of-spheres homotopy type and identifies the Betti classes. His explicit formula is
+because replacing a prime factor by a smaller prime decreases the represented integer. A standard theorem for shifted complexes then gives a wedge-of-spheres homotopy type and identifies the Betti numbers. His explicit formula is
 
 ```text
 beta_k(Delta_X)
@@ -123,7 +123,7 @@ beta_k(Delta_X)
           Omega(b)=k+1 }.
 ```
 
-In exponent coordinates this has a particularly transparent interpretation. The homology representatives are exactly the square-free vectors `alpha` satisfying
+In exponent coordinates, the **faces counted by this Betti formula** are exactly the square-free vectors `alpha` satisfying
 
 ```text
 alpha_2 = 0,
@@ -138,7 +138,7 @@ alpha in Delta_X,
 but alpha + e_2 notin Delta_X.
 ```
 
-Thus **all reduced homology of the square-free exponent complex is supported in a boundary shell of fixed energy thickness `log 2`**. This is a genuine geometric reading of Björner's formula, but it is immediate from his shifted-complex theorem and is not claimed as new topology.
+Thus **the entire reduced Betti vector is determined by a boundary shell of fixed energy thickness `log 2`**. This is an indexing/counting statement from shifted-complex theory; it does not assert that arbitrary homology cycle representatives have literal chain support only inside that shell. The energy-shell reading is immediate from Björner's theorem and is not claimed as new topology.
 
 Björner also proves
 
