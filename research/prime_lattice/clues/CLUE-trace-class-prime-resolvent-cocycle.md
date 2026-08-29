@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-trace-class-prime-resolvent-cocycle
 type: research-clue
-status: proposed
+status: accepted
 origin: mind
 target_line: prime_lattice
 based_on:
@@ -32,3 +32,19 @@ Choose one prime action and reference representation forced by already-persisted
 ## Evidence boundary
 
 No such action-dependent `S_1` cocycle has been constructed in the persisted evidence. PL-028 only proves that this level is not automatic and explicitly leaves noncompact-reference scattering and specified prime actions outside its no-go. The clue makes no claim that a useful determinant exists, is novel, or is related to Riemann zeros.
+
+## Research disposition
+
+Accepted as a **narrow operator-design question**, not as evidence for RH or for novelty.
+
+`PL-034` performs the first decisive candidate/prior-art audit. The canonical Bost--Connes prime isometry gives
+
+```text
+mu_p^* (H-z)^(-1) mu_p = (H+log p-z)^(-1),
+```
+
+so its action-dependent residual after subtracting scalar translation is exactly zero. On the other hand, classical Hardy/model-space work of Amosov--Baranov--Kapustin shows that trace-class perturbations of the unilateral shift semigroup can carry prescribed spectral components, while trace-classness of the unitary cocycle itself is trivial in their explicit model. Classical resolvent-comparable perturbation theory also supplies determinants and spectral-shift functions once `S_1` comparability is assumed.
+
+Accordingly, the clue survives only after strengthening its target. Further work should **not** ask whether `S_1` membership or a determinant can be obtained. It should ask whether a canonically specified family indexed jointly by the primes forces a nonzero relative invariant with an arithmetic compatibility law — for example multiplicative/cocycle relations across `p`, `q`, and `pq` — that cannot be freely prescribed through an inner/model-space scattering datum and that survives Beurling matched controls.
+
+Acceptance means this narrowed question is worth active investigation. It does not mean such an invariant exists, is new, or would imply RH.
