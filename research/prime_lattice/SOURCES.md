@@ -177,3 +177,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 44. **Peter D. Lax, Ralph S. Phillips**, *Scattering Theory for Automorphic Functions*, Annals of Mathematics Studies **87**, Princeton University Press, Princeton, 1976.
     - Role: classical automorphic-scattering foundation for `PL-033`. Develops the non-Euclidean wave-equation scattering system for automorphic functions, meromorphic Eisenstein/scattering theory, and the relation between scattering poles and resolvent poles/eigenvalues of the Lax–Phillips infinitesimal generator; Uetake's exact zero-spectrum theorem refines this lineage for the modular group.
+
+## Hilbert reciprocity and scalar local-global cocycles
+
+45. **J. S. Milne**, *Class Field Theory*, version 4.03, 6 August 2020, Chapter VIII, §5. https://www.jmilne.org/math/CourseNotes/CFT.pdf.
+    - Role: main classical anchor for `PL-038`. Defines the local Hilbert/norm-residue symbol, records its bilinear local pairing structure and symmetry, proves the Hilbert product formula `product_v (a,b)_v=1`, computes the real-place factor, and derives power/quadratic reciprocity from the local symbols.
+
+46. **Richard Hill**, “Metaplectic covers of `GL_n` and the Gauss-Schering lemma,” *Journal de Théorie des Nombres de Bordeaux* **13**(1) (2001), 189–199. DOI: https://doi.org/10.5802/jtnb.314.
+    - Role: close projective/metaplectic prior-art anchor for `PL-038`. Constructs metaplectic `2`-cocycles over global fields in direct connection with reciprocity laws, confirming that Hilbert-symbol/cocycle formulations belong to established arithmetic representation theory rather than a novel prime-lattice mechanism.
