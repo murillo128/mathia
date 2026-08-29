@@ -151,3 +151,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 38. **Luis Báez-Duarte**, “A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis,” *Atti della Accademia Nazionale dei Lincei. Classe di Scienze Fisiche, Matematiche e Naturali. Rendiconti Lincei. Matematica e Applicazioni* **14**(1) (2003), 5–11. arXiv: https://arxiv.org/abs/math/0202141.
     - Role: discrete-scale anchor for `PL-017` and `PL-018`. Proves that the Nyman-Beurling RH criterion remains equivalent when the continuum of real dilations is restricted to positive integer dilations, isolating the sparse arithmetic family corresponding to `a=1/n` and hence to prime-exponent semigroup times `log n`.
+
+## Exponent-lattice cell complexes and shifted Hodge spectra
+
+39. **Anders Björner**, “A cell complex in number theory,” *Advances in Applied Mathematics* **46**(1–4) (2011), 71–85. DOI: https://doi.org/10.1016/j.aam.2010.09.007. arXiv: https://arxiv.org/abs/1101.5704.
+    - Role: main anchor for `PL-022`. Identifies the square-free divisibility complex with an abstract simplicial complex, proves `M(X)=-reduced_chi(Delta_X)`, proves shiftedness and explicit Betti formulae, and constructs a CW realization of the full integer multicomplex in which cells correspond to integers and inclusion records divisibility; its Euler characteristic is the negative summatory Liouville function, with the corresponding square-root growth criterion equivalent to RH.
+
+40. **Art M. Duval, Victor Reiner**, “Shifted simplicial complexes are Laplacian integral,” *Transactions of the American Mathematical Society* **354**(11) (2002), 4313–4344. DOI: https://doi.org/10.1090/S0002-9947-02-03082-9.
+    - Role: spectral prior-art anchor for `PL-022`. Proves that the standard combinatorial Laplacians of every shifted simplicial complex have integer spectra with a combinatorial description, so Björner's shifted square-free complexes already carry a rigid classical Hodge spectrum rather than a direct Riemann-zero spectrum.
