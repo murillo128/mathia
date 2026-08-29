@@ -1,13 +1,13 @@
 ---
 name: mathia-formalization-design
-description: Design a Mathia-owned formalization issue for a mathematical claim, with a blocking statement/adversarial/prior-art/reuse gate and a structured research-handoff contract independent of the selected formal backend.
+description: Design a Mathia-owned Lean formalization issue with a blocking statement/adversarial/prior-art/mathlib-reuse gate and structured handoff of mathematical discoveries back into Mathia research.
 ---
 
-# Mathia Formalization Design
+# Mathia Lean Formalization Design
 
 ## Responsibility
 
-Use this skill when Mathia wants to test, sharpen, falsify, or machine-check a mathematical claim with a formal system.
+Use this skill when Mathia wants to test, sharpen, falsify, or machine-check a mathematical claim in Lean.
 
 This is a thin specialization of the canonical merged repository skill:
 
@@ -15,46 +15,60 @@ This is a thin specialization of the canonical merged repository skill:
 .agents/skills/design-github-issue/SKILL.md
 ```
 
-Load that repository skill as the generic issue-design authority. Do not use a PR, feature branch, historical copy, or external duplicate of the skill as procedure authority unless a controlling issue explicitly pins a historical workflow for reproducibility.
+Load that file from the current Mathia repository as the generic issue-design authority. Do not use a PR, feature branch, historical copy, or external duplicate of the skill as procedure authority unless a controlling issue explicitly pins historical workflow behavior for reproducibility.
 
-The **task represented by the controlling Mathia issue** owns the scientific question. A formal backend, execution repository, proof engineer, reviewer, or chat session is an actor inside that task, not a separate scientific owner.
+The **task represented by the controlling Mathia issue** owns the scientific question. Codex, Lean, and the independent reviewer are actors inside that task.
 
-## Scientific ownership
+## Repository boundary
 
-When the mathematical target belongs to Mathia, keep the controlling scientific issue in this Mathia repository.
+For Mathia formalization work:
 
-The formal artifact may be implemented in this repository or in another execution host when that is technically useful. The issue must decide the execution location from the needs of the target, not from historical precedent.
+- the controlling issue lives in this Mathia repository;
+- Lean source and formalization evidence are developed on a Mathia feature branch;
+- the implementation PR targets Mathia;
+- mathematical discoveries flow back through the controlling Mathia issue.
 
-If execution is external:
+Do not move scientific ownership or proof execution to another repository merely because another project already has a Lean environment.
 
-- the Mathia issue remains authoritative for the mathematical target, scope, gates, and research consequences;
-- the external issue or PR is only an execution record and must point back to the controlling Mathia issue;
-- execution-host convenience must not determine, weaken, or silently reshape the mathematical claim.
+The issue chooses the smallest sensible Mathia-local path for the formal artifact. Do not freeze a permanent repository layout or formalization framework from this skill alone.
 
-Do not create an external controlling issue merely because a particular prover or toolchain is available there.
+## Lean environment
+
+Use the canonical pinned Lean/mathlib environment in Mathia when one exists.
+
+If Mathia does not yet contain a Lean project, the first formalization issue that requires one may authorize the **smallest pinned local Lean setup** needed for reproducible work, for example the minimal `lean-toolchain` / Lake configuration and imports needed by the bounded target.
+
+That setup must:
+
+- live in Mathia;
+- pin the material Lean/mathlib revision;
+- avoid importing another repository's project structure as an implicit dependency;
+- remain proportionate to the current formalization rather than becoming a general framework by default.
+
+If creating or materially changing the Lean environment is not authorized by the controlling issue, return to design rather than improvising it during proof work.
 
 ## Formalization Gate 0
 
-Every nontrivial formalization issue must begin with a blocking statement/adversarial/prior-art/reuse gate before proof implementation.
+Every nontrivial formalization issue must begin with a blocking **statement / adversarial / prior-art / mathlib-reuse gate** before proof implementation.
 
 Design Gate 0 to reconstruct the intended claim independently, including as relevant:
 
 - exact quantifiers and theorem surface;
 - domains, side conditions, singularities, and definedness;
-- normalization, sign, indexing, orientation, gauge, or convention choices;
+- normalization, sign, indexing, orientation, gauge, and convention choices;
 - boundary and degenerate cases;
-- the relation between informal notation and the proposed formal object;
-- whether the formal target is weaker, stronger, or equivalent to the persisted claim;
-- which surrounding consequences are explicitly outside the formal theorem.
+- the relation between informal notation and the proposed Lean object;
+- whether the Lean target is weaker, stronger, or equivalent to the persisted claim;
+- which surrounding consequences remain outside the formal theorem.
 
-The gate must try to falsify the proposed statement rather than merely translate its notation.
+The gate must actively try to falsify the proposed statement rather than merely translate notation.
 
-Also require, when material:
+Also require when material:
 
-- prior-art search for exact or stronger mathematical/formal results;
-- an audit of reusable declarations, libraries, packages, theories, or proof infrastructure in the selected backend;
-- an explicit dependency/version decision before importing or rebuilding external formal infrastructure;
-- a clear trust boundary for computation, automation, generated certificates, or external solvers used by the backend.
+- search for exact or stronger prior mathematical/formal results;
+- search current mathlib and existing Mathia Lean code for reusable declarations;
+- an explicit dependency/import decision before rebuilding generic infrastructure;
+- exact Lean/mathlib pins used by the proof target.
 
 Allowed gate outcomes should include, with task-specific names if useful:
 
@@ -65,43 +79,31 @@ Allowed gate outcomes should include, with task-specific names if useful:
 
 A negative gate result is a successful scientific outcome when it prevents proving the wrong statement.
 
-## Formal backend is issue-specific
-
-This skill does not choose Lean, another prover, a CAS-backed certificate system, or any permanent Mathia formalization stack.
-
-The controlling issue must identify the backend and the evidence needed for that backend. For example:
-
-- for Lean, relevant evidence may include pinned Lean/mathlib revisions, compilation, placeholder checks, and `#print axioms`;
-- for another prover, require the corresponding build/check command, admitted-hole policy, dependency pins, and trust/axiom footprint;
-- for generated or externally checked certificates, define exactly what is trusted and independently verified.
-
-Backend-specific procedure belongs in the issue only when it is material to the bounded target. Do not turn one successful backend into a project-wide architecture decision.
-
 ## Formal success boundary
 
-The issue must state what a successful formal proof establishes and what it does not.
+The issue must state what a successful Lean theorem establishes and what it does not.
 
 Keep separate:
 
-- fidelity of the formal statement to the intended mathematics;
-- success of the proof/check in the selected backend;
+- fidelity of the Lean statement to the intended mathematics;
+- success of the Lean proof;
 - validity of wider Mathia findings or research programs;
 - novelty or prior-art status;
 - analytic, geometric, asymptotic, computational, or representation bridges excluded from the formal theorem.
 
-Do not let a checked theorem silently certify surrounding prose that was not formalized.
+A compiling theorem must never silently certify surrounding prose that was not formalized.
 
 ## Research-handoff contract
 
-Every formalization issue must require the executor to report material mathematical discoveries to the **controlling Mathia issue**.
+Every formalization issue must require Codex to report material mathematical discoveries to the **controlling Mathia issue**.
 
-The executor does not directly write Mathia research sidecars or clues as part of formalization execution. The issue comment is transport to the issue-owning review/orchestration session.
+The executor does not directly create Mathia adversarial sidecars, clues, or replacement findings as part of Lean execution. The issue comment is transport to the issue-owning review/orchestration session.
 
 A material handoff should contain:
 
 - the exact mathematical observation;
 - whether it threatens/corrects the target or is independent of it;
-- exact evidence: derivation, counterexample, formal theorem/check, file/commit, or failed statement;
+- exact evidence: derivation, counterexample, Lean theorem/check, file/commit, or failed statement;
 - the affected Mathia object/path when applicable;
 - why the observation is mathematically material rather than proof-engineering trivia;
 - whether execution can safely continue before disposition.
@@ -117,7 +119,7 @@ If the observation could make a persisted finding false, overstrong, under-speci
 .agents/skills/mathia-research-review/SKILL.md
 ```
 
-and materialize or continue the adjacent `.review.md` according to those skills.
+and create or continue the adjacent `.review.md` according to those skills.
 
 ### Separate research lead
 
@@ -135,43 +137,52 @@ One discovery may require both a review and a clue. Keep their roles distinct: t
 
 ### Proof-engineering only
 
-A smaller proof route, useful library declaration, import simplification, tactic/automation workaround, representation convenience, or backend-specific implementation detail that does not materially alter the mathematics remains issue/PR evidence.
+A smaller Lean proof route, useful mathlib declaration, import simplification, tactic workaround, or implementation convenience that does not materially alter the mathematics remains issue/PR evidence.
 
-Do not inflate every formalization observation into research state.
+Do not inflate every Lean observation into research state.
 
 ## Blocking semantics
 
-If Gate 0 or later execution reveals a mathematical defect that makes progression unsafe, require the executor to stop at the checkpoint after posting the structured handoff.
+If Gate 0 or later Lean work exposes a mathematical defect that makes progression unsafe, require the executor to stop at the checkpoint after posting the structured handoff.
 
 The issue-owning review session decides disposition and whether a repaired target needs new design before proof work resumes.
 
 Non-blocking research leads may wait until the next declared checkpoint, but they must not disappear from final handoff.
 
-## Validation contract
+## Lean proof-integrity contract
 
-For an accepted formal proof, require backend-appropriate evidence sufficient to establish:
+Unless the issue explicitly establishes a narrower or stronger boundary, an accepted formalization should require:
 
-- the exact target was checked under the pinned environment;
-- no forbidden placeholder, admission, extra axiom, unsafe shortcut, or unchecked certificate crossed the issue's declared proof boundary;
-- the principal theorem's trust/axiom footprint is understood using the selected backend's appropriate mechanism;
-- the checked statement still matches the Gate-0 frozen target;
-- final review covers statement fidelity, proof/check integrity, and completeness of research handoffs.
+- compilation under Mathia's pinned Lean/mathlib environment;
+- no `sorry` or `admit` in accepted theorem dependencies;
+- no new axioms introduced to discharge the target;
+- no `unsafe` proof shortcuts;
+- no floating-point/sample evidence used as proof premises;
+- no unchecked generated/CAS certificates;
+- `#print axioms` or an equivalent Lean trust-footprint inspection on principal theorems;
+- theorem statements unchanged from the Gate-0 accepted boundary;
+- fresh final review of statement fidelity, proof integrity, and research-handoff completeness.
 
-Use fresh independent technical review when the issue requires it. The independent reviewer remains read-only; its findings are additional inputs to the issue-owning review session.
+Use the canonical merged independent-review skill when the issue requires a separate technical review:
+
+```text
+.agents/skills/codex-independent-review/SKILL.md
+```
+
+The independent reviewer remains read-only; its mathematical findings are inputs to the issue-owning review session.
 
 ## Issue shape
 
-Compose with `design-github-issue`; do not duplicate its generic workflow.
+Compose with `design-github-issue`; do not duplicate its generic workflow or copy reusable procedure into every issue.
 
-A formalization issue should nevertheless make these boundaries explicit:
+A Mathia Lean formalization issue should make only the task-specific boundaries explicit:
 
 1. authoritative Mathia target(s);
-2. intended formal theorem boundary;
-3. Gate-0 falsification/prior-art/reuse requirements;
-4. selected formal backend and execution location when already known;
-5. backend-specific proof-integrity/trust requirements;
-6. research-handoff contract;
-7. surrounding Mathia conclusions that remain out of scope;
-8. checkpoint/final-review conditions.
+2. intended Lean theorem boundary;
+3. Gate-0 falsification/prior-art/mathlib-reuse risks specific to the target;
+4. exact Lean environment or authorization to introduce the minimal local one;
+5. target-specific proof-integrity or dependency constraints beyond this skill;
+6. surrounding Mathia conclusions that remain out of scope;
+7. any target-specific checkpoint/final-review conditions.
 
-Do not design a permanent prover stack, formalization DSL, ontology, or repository layout unless a separate issue explicitly requires that decision.
+The research-handoff, issue-driven execution, Git/GitHub, and independent-review procedures remain owned by their canonical repository skills and should not be recopied into each issue.
