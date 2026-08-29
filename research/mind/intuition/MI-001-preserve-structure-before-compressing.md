@@ -4,47 +4,48 @@
 
 ## Core intuition
 
-Across Mathia, the recurring failure is not “spectralization” or “taking a scalar” in the abstract. It is applying a transformation that is non-injective on the **particular distinction later claimed to be arithmetic**. The safe procedure is to compute the fibers, symmetries, common factors, and operator category of every compression before interpreting its spectrum, determinant, positivity, or critical exponent.
+Across Mathia, the recurring failure is not “spectralization,” “positivity,” or “taking a scalar” in the abstract. It is applying a transformation that is non-injective on the **particular distinction later claimed to be arithmetic**, or optimizing perfectly after that distinction has already been discarded. The order of operations matters: identify and preserve the selector first; only then compress, spectralize, or prove a sign.
 
 ## Strongest current principle
 
 Several branches now exhibit mathematically different forms of the same information-loss mechanism.
 
-- **Prime Circle:** unmarked shells identify distinct levels; first-order transports telescope; single-shell rotation-invariant harmonic operators diagonalize and reduce to divisor/Dirichlet data (PC-019, PC-030, PC-032--PC-037).
-- **Prime Flute:** unmarked spectra and scalar determinants can erase ordered multi-neck memory even when resolved eigenvalues retain it; globalization can also change a finite tangent pole into essential spectrum (PF-048--PF-052, PF-089--PF-092).
-- **Prime Lattice:** the common off-line Blaschke factor is invisible to every generator Gram matrix, while the RH statement remains target/model-space totality (PL-017, PL-019, PL-020).
-- **Weil Inertia:** fixed-block pinching is exactly a restriction of the global Fenchel feasible set, so it discards cross-boundary witness coordinates that remain present in the same support-one data (WI-012).
-- **Weil Positivity:** universal projection/Gram positivity can merely repackage totality, and bounded positive repairs of a trace-class geometric coupling cannot cross the operator-ideal boundary to the non-Hilbert--Schmidt finite-Weil operator (WP-010, WP-014).
+- **Prime Circle:** even pointing a translation-invariant shell does not help when local spectral measures and Schur self-energies are derivative data (PC-038). Canonical divisor-level Kron refinement is path independent (PC-039), fixed primitive metric/chiral blocks classicalize to Dirichlet special values (PC-044--PC-045), and the joint same-level metric/chiral defect factors through old vertices with low rank (PC-046). The live information is old/new multilevel coupling before it is eliminated.
+- **Prime Flute:** marked local spectral measures can retain ordered multi-neck data that scalar determinants erase, but the strong `p_n+1` composite clone shows that many tail cross-ratio/separator/collar quantities become asymptotically indistinguishable. The unresolved discriminator sits at the operator comparison, not in a chosen coordinate defect.
+- **Prime Lattice:** a common off-line Blaschke factor is invisible to every generator Gram matrix while the Nyman statement remains target/model-space totality (PL-017, PL-019, PL-020). Prime-shift symmetry adds a second warning: exact covariance is too rigid whereas weak compact-resolvent covariance is automatic (PL-023--PL-028).
+- **Weil Inertia:** WI-012 showed that block pinching loses feasible global Fenchel coordinates, but WI-015--WI-020 go further: after collapsing to the exact single-profile Gram defect, explicit countermodels remain. Perfect optimization of that defect cannot restore information discarded by the representation itself.
+- **Weil Positivity:** the exact Mangoldt selector can be recovered by a signed Boolean supertrace or Poisson score (WP-018, WP-022), while canonical positive Hodge/information-geometric completions cancel, diverge, or universalize that data (WP-019--WP-023). Applying the positive symmetric quotient too early erases the selector one hoped positivity would control.
 
 These are not one theorem, but they support one robust rule:
 
 \[
 \boxed{
-\text{before compressing, identify exactly which equivalence relation the compression imposes.}
+\text{compute the fibers of every stage, and do not optimize or prove positivity after the target variable is already constant on them.}
 }
 \]
 
-If two configurations differing in the target variable have already become equivalent, no later unmarked function of the compressed object can canonically recover that difference without new information.
-
 ## Positive examples
 
-Compression is useful when its fibers are controlled. Prime-Flute endpoint spectral measures/Weyl data can determine an ordered finite weighted path even when its unmarked eigenvalues cannot. The full Fenchel dual in Weil Inertia is itself a compression of matrix information, but it retains the cross-boundary coordinates discarded by block pinching. The criterion is therefore **information preservation on the relevant family**, not maximal dimensionality.
+Compression remains useful when its fibers are controlled. Prime-Flute endpoint spectral measures/Weyl data can determine an ordered finite weighted path even when unmarked eigenvalues cannot. The Weil-Inertia Fenchel dual is an exact compression that removes block-boundary optimization loss; its limitation appears only after one asks whether the underlying single-profile Gram defect itself distinguishes the adversarial configurations. WP-018 likewise shows that a finite difference/supertrace can be a useful selector even though it is not a positive functional.
 
 ## Evidence against overgeneralization
 
-A map may be globally non-injective yet sufficient for one particular arithmetic predicate. Full reconstruction of the input is unnecessary. Conversely, an injective finite encoding can still be analytically irrelevant to RH. The audit must be relative to the exact distinction being claimed.
+A map may be globally non-injective yet sufficient for one particular arithmetic predicate; full input reconstruction is unnecessary. Conversely, retaining a target variable does not prove RH relevance. The audit must be relative to the claimed distinction and must separate **optimization loss** from **information loss**.
+
+Nor does the rule demand that the final object remain high-dimensional. A later scalar or determinant can be decisive if injectivity on the relevant family has already been proved or if a separate theorem shows that the target predicate factors through it.
 
 ## Status / novelty
 
-This is a cross-branch synthesis, not a standalone theorem. Every listed loss mechanism is grounded in persisted findings; their organization as a design principle is supported.
+This is a cross-branch synthesis, not a standalone theorem. Every listed loss mechanism is grounded in persisted findings; their organization as an order-of-operations principle is supported.
 
 ## Falsification criterion
 
-Find a canonical pipeline in which a stage is provably invariant under changing the claimed RH-relevant variable, yet a later observable recovers that variable without receiving any additional target, mark, reference, label, or arithmetic input.
+Find a canonical pipeline in which a stage is provably invariant under changing the claimed RH-relevant variable, no later stage receives any new target/mark/reference/arithmetic information, yet a later observable recovers that variable. Alternatively, show that an exact countermodel for a compressed representation can be excluded solely by better optimization of that same representation.
 
 ## Lean-formalizable core
 
 - Representative non-injectivity and telescoping identities.
 - Inner-isometry invariance of Gram matrices.
-- Block-restriction identity inside the Fenchel dual.
-- Operator-ideal invariance under bounded sandwiches.
+- Schur/path-independence and low-rank old-vertex factorization.
+- Exact Fenchel duality plus equality-of-representation/equality-of-optimized-value.
+- Hodge/equivariant cancellation of selector data under symmetric positive compression.

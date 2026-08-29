@@ -2,13 +2,13 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate distinct mathematical bottlenecks.
 
-## Certify the best global support-one Fenchel witness
+## Retain information before the single-profile Gram-defect collapse
 
 **Linked intuitions:** `MI-002-global-fenchel-dual-separates-losses`.
 
-The exact Fenchel dual shows that fixed-block pinching is only a restricted feasible class. The highest-value quantitative question inside the current support-one information budget is therefore whether a globally coupled, capacity-feasible finite-range witness admits a rigorous Bellman/subaction certificate whose asymptotic defect coefficient improves the strongest current block result.
+The exact Fenchel dual remains the right tool for eliminating artificial block-boundary loss, but WI-015--WI-019 show that the **full collapsed single-profile Gram defect itself** has explicit periodic countermodels down to density about `0.67361`. WI-020 further proves that the trace--energy envelope used in this interface is already sharp at fixed energy. Better optimization of the same `D(M)=tr Psi(M)` therefore cannot supply the missing discriminator.
 
-A decisive outcome is either a fully certified witness including the finite-`T` kernel/tail splice, or a sharp obstruction for a substantial witness family showing that its global optimum cannot beat the existing bound. Increasing block size without addressing the cross-boundary feasible coordinates is no longer the natural comparison.
+The live quantitative question is which unconditionally controlled datum can be retained before that collapse: the exceptional/off-line block itself, several genuinely independent test profiles and their cross-Gram information, horizontal/depth data, or another observable not matched by the certified countermodels. A decisive positive result must exhibit such a datum and show that it improves the inertia bound; a matched countermodel reproducing it would move the information boundary again.
 
 ## Identify the minimal supercritical information that breaks screening
 

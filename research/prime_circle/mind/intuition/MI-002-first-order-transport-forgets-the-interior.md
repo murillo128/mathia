@@ -1,43 +1,38 @@
-# MI-002 — First-order transport and circle-preserving accessory geometry are flat
+# MI-002 — First-order transport forgets the interior, and canonical WP curvature still universalizes
 
-**Evidence level:** proved for the audited mechanisms; supported as a broader design rule
+**Evidence level:** supported
 
 ## Core intuition
 
-The original prime-circle data repeatedly lose their interior refinement when they are converted into a **first-order equivariant transport law**. The newer uniformization evidence shows that this is not limited to elementary transfer matrices: even the natural tangential accessory field on the circle-preserving moduli slice is an exact one-form, while that slice is Weil–Petersson Lagrangian. A viable geometric memory mechanism therefore has to survive beyond first-order transport.
+Prime-Circle first-order transport repeatedly collapses to endpoint, exact-form, or universal symmetry data. The newer Weil--Petersson calculations show that merely passing to a second derivative is also insufficient: the canonical nonlinear curvature does couple distinct birth sectors, but on the full roots-of-unity cover it is governed by a fixed universal twisted resolvent on the thrice-punctured base and carries no free critical spectral parameter.
 
-## Strongest justified impossibility principle
+## Strongest justified principle
 
-Four mathematically different constructions now exhibit the same flatness pattern.
+The earlier first-order no-go remains intact: circle-preserving accessory transport is exact on the relevant real slice, and natural projective/Euclidean/Schwarzian transports do not retain interior arithmetic memory. PC-040--PC-043 now sharpen the second-order boundary.
 
-1. PC-013: projective moving-frame transport telescopes as a product of successive gauge changes.
-2. PC-014: exact Euclidean Helmholtz transfer satisfies a semigroup law and remembers only total path length.
-3. PC-018: the Schwarzian factor-introduction defect is an exact cocycle, so its square curvature vanishes.
-4. PC-030: on the real slice where all punctures remain on the original circle, the Weil–Petersson symplectic form vanishes and the tangential accessory form is
-   \[
-   \Theta=\frac12 d(S|_{\mathcal L}),
-   \]
-   hence `dTheta=0` and its circulation vanishes on an ordered chamber.
+- The Weil--Petersson metric on the full cyclic cover diagonalizes in character modes with a universal holonomy profile.
+- Normalized pullback along divisor refinements is exactly isometric and path flat, so the metric itself creates no prime-order refinement holonomy.
+- Weil--Petersson curvature is genuinely nonzero between orthogonal birth sectors, but its coupling is the universal Green/resolvent operator on the fixed base with exact character conservation.
+- The relevant resolvent is `2(L_theta+2)^(-1)`, corresponding to the regular automorphic parameter `s=2` (or `-1`), not to the critical line. Interpreting the same constant through the opposite sign convention as `s(1-s)=2` is a sign error.
 
-The common lesson is stronger than “one-dimensional products telescope.” Whenever the canonical first-order response is a functorial transport, cocycle, or gradient on the symmetry-preserving deformation space, its holonomy cannot carry the desired interior arithmetic refinement.
+Thus **nonlinearity is not enough when symmetry reduces the nonlinear response to a universal fixed-base operator**.
 
-## What remains genuinely open
+## What remains possible
 
-PC-030 does **not** kill the nonlinear uniformization branch. The symmetric Hessian of the restricted Liouville action, the nonzero Weil–Petersson metric on the real slice, global monodromy, interactions among several shell levels, and deformations leaving the circle-preserving locus are not first-order exact transports. These are precisely the places where curvature or mixed response may survive.
+A surviving uniformization mechanism must break the full-root-cover reduction itself. Natural possibilities already suggested by the geometry are the primitive-only composite birth surface, deformations off the maximally symmetric roots-of-unity locus, genuinely shell-dependent moduli, or a global accessory/Liouville response for which the old/new vertex pattern is not reducible to rational holonomy on one fixed base.
 
-The relevant distinction is therefore not “local versus global” by itself. A globally determined first-order vector field can still be exact. The surviving object must contain a non-concatenative second variation, a noncommuting/multi-path effect, or another obstruction to reduction to one scalar potential.
+Higher response is relevant only if it introduces a new mathematically forced variable or coupling. Repeatedly differentiating a universal full-cover formula without breaking its symmetry would not create an RH selector.
 
 ## Status / novelty
 
-The telescoping, semigroup, cocycle, Lagrangian-fixed-locus, and Liouville-generating-function ingredients are classical or exactly derived. The durable synthesis is the repeated **flatness test** they impose on future prime-circle proposals.
+The flat refinement, universal curvature formula, and fixed-energy identification are persisted evidence. The synthesis is a supported constraint on how a future nonlinear Prime-Circle mechanism must depart from the symmetric cover model.
 
 ## Falsification criterion
 
-Find a canonical first-order circle-preserving transport derived from the current geometry whose holonomy around a contractible ordered deformation loop is nontrivial after gauge removal, or show that one of the four audited exactness statements fails under its stated hypotheses.
+Produce a canonical nonlinear invariant on the audited full cyclic-cover family whose level dependence is not reconstructible from the universal base resolvent, rational holonomy characters, and the covering degree. Alternatively, show that the primitive-only or off-symmetric deformation still reduces to the same universal package; that would close the present escape.
 
 ## Lean-formalizable core
 
-- Telescoping and semigroup identities for the discrete transports.
-- Cocycle identity implying zero factor-introduction curvature.
-- Abstract fixed-locus lemma: an anti-holomorphic Kähler isometry has Lagrangian fixed locus when dimensions match.
-- Exactness of the restricted accessory one-form and vanishing of its loop integral on a contractible chamber.
+- Exact normalized pullback/isometry identities for divisor refinement.
+- Character-conservation identities in the curvature tensor.
+- Algebraic sign check locating the Green operator at `L_theta+2` rather than a critical-line spectral parameter.

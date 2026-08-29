@@ -1,40 +1,37 @@
-# MI-001 — Anchoring and nonlocality are necessary but not sufficient
+# MI-001 — Anchoring is necessary, but same-shell pointing and linear refinement still classicalize
 
-**Evidence level:** supported
+**Evidence level:** supported by exact and literature-backed negative results
 
 ## Core intuition
 
-The prime-circle branch has now crossed a stronger boundary than the earlier “keep the anchor and go nonlocal” rule. Removing the anchor loses arithmetic position, and a finite anchored jet classicalizes, but several genuinely anchored, nonlocal, singular, and all-mode constructions also collapse to pre-existing harmonic or Dirichlet data. The surviving regime must therefore preserve the anchor **and** escape the large symmetry classes that make a single shell diagonalizable or reducible to universal regular-polygon data.
+Breaking rotational symmetry by naming a vertex or retaining a local matrix is necessary to avoid the coarsest Prime-Circle quotients, but it is not sufficient. The newer evidence shows that several apparently stronger ways of preserving a mark — local spectral measures, Schur complements, divisor-level Kron refinement, and even a joint metric/chiral same-level algebra — still reduce to classical shell data or to a low-rank interaction through already-existing vertices.
 
 ## Strongest justified principle
 
-For a single primitive shell, neither anchoring nor nonlocality alone is enough to create a new arithmetic spectral mechanism.
+The one-shell obstruction is now substantially sharper than “unmarked spectra forget the anchor.”
 
-- PC-019 shows that an unmarked primitive shell identifies odd `n` with `2n`.
-- PC-020 shows that the complete finite anchored local jet of one shell is determined by classical cyclotomic/Jordan-totient data.
-- PC-032 tests a singular nonlocal inverse-square chord Laplacian at a prime level; grounding the common vertex merely differentiates the characteristic polynomial of the universal regular-polygon operator, whose spectrum is `k(n-k)/2`.
-- PC-035 and PC-036 keep the common anchor pointed and make the chord probe increasingly singular, but multiplicative diagonalization yields only finite bundles of classical Dirichlet values `L(2j,chi)` plus explicit local character factors.
-- PC-037 allows arbitrary shell-independent rotation-invariant linear/nonlocal harmonic operators; `U(1)` symmetry diagonalizes them mode by mode and the shell dependence reduces to a finite Möbius/divisor recombination of one universal tail sequence.
+- PC-038 proves that on a vertex-transitive circulant shell the pointed local spectral measure is the global spectral measure divided by the shell size, while vertex-deleted determinants and Schur self-energies are characteristic-polynomial derivatives. Pointing before diagonalization therefore does not create new local arithmetic data when the underlying operator remains translation invariant.
+- PC-039 shows that the canonical inverse-square divisor refinement by Kron/Schur reduction is path independent. Eliminating intermediate divisor shells creates no refinement holonomy or order-sensitive memory.
+- PC-044 and PC-045 show that the first square-free primitive metric and oriented/chiral blocks reduce exactly to finite Dirichlet-character packages at fixed special values `L(-1,chi)` and `L(0,chi)`.
+- PC-046 shows that the natural same-level metric/chiral pair is not an independent bulk noncommutative system: its polynomial relation fails after primitive compression only through a defect factoring through old vertices, with correspondingly low-rank commutator control.
 
-The common mechanism is **single-shell symmetry reduction**. Once the construction is diagonalized by the ambient cyclic/rotational symmetry, the prime shell supplies at most a classical finite arithmetic filter on a universal operator response.
+Together these findings shift the live variable from “a pointed shell” to **how genuinely new vertices couple to previously existing levels before those old degrees of freedom are eliminated**.
 
-## Evidence against overgeneralization
+## What remains possible
 
-This does not rule out all anchored nonlocal constructions. The no-go results leave open operations that couple several levels before spectralization, noncommuting joint use of the pointed shell and anchor data, nonlinear interactions between distinct shells, global uniformization/monodromy, or deformations in which the operator itself is forced by cross-level geometry rather than chosen independently of the shell.
-
-Nor does “classical” mean useless: Dirichlet `L`-values, Ramanujan sums, and divisor filters may be the right coordinates for a later global mechanism. The restriction is epistemic: their appearance after symmetry diagonalization is not evidence that the prime-circle geometry has generated a new zero mechanism.
+This does not rule out every cross-level construction. A simultaneous operator on several labeled shells can retain old/new couplings that a Schur reduction removes; a shell-dependent kernel can break the full circulant commutant; and a nonlinear response can amplify a low-rank old-vertex defect. The surviving mechanism must use one of those extra structures intrinsically rather than merely rename a one-shell cofactor, character sum, or staged Schur complement.
 
 ## Status / novelty
 
-The component collapses are exact or literature-backed findings. The synthesis is a supported design constraint: a viable prime-circle mechanism must defeat both **information loss from removing the anchor** and **classicalization from single-shell equivariant diagonalization**.
+The classicalization identities and low-rank factorization are persisted findings. The synthesis is a supported design constraint for future Prime-Circle operators, not a theorem about all multilevel constructions.
 
 ## Falsification criterion
 
-Refute this intuition by exhibiting a canonical one-shell construction that is anchored and lies inside one of the audited symmetry classes, yet produces an invariant not determined by the corresponding regular-polygon/Dirichlet/divisor data, without adding a cross-level label, an external kernel, or a noncanonical gauge.
+Construct a canonical same-shell or path-independent linear refinement observable built only from the audited translation-invariant shell operators whose value is not determined by the corresponding full-shell spectral/Dirichlet data and old-vertex coupling. Conversely, a genuinely simultaneous multilevel construction would evade this intuition only if the old/new interaction remains an active state rather than being compressed away.
 
 ## Lean-formalizable core
 
-- `Phi_(2n)(z)=Phi_n(-z)` for odd `n` and the induced unmarked-shell equivalence.
-- The derivative-of-characteristic-polynomial identity for one-vertex grounding of a circulant matrix.
-- Finite character-sum reductions of the pointed inverse-power chord profiles.
-- Rotation invariance implies Fourier-mode diagonalization and the resulting divisor/lcm reduction.
+- Cofactor/characteristic-polynomial derivative identities for circulant matrices.
+- Associativity/quotient identity for staged Schur complements.
+- Polynomial relation and old-vertex factorization in the metric/chiral pair.
+- Rank bounds under compression through an old-vertex subspace.

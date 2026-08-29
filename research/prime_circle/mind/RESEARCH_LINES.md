@@ -2,21 +2,21 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history. Lines should be merged, redirected, or removed when the mathematics changes.
 
-## Cross-level or noncommuting pointed observables beyond one-shell classicalization
+## Keep old/new shell coupling active before same-level compression
 
 **Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`.
 
-The one-shell search space is now heavily constrained. Unmarked shells lose the anchor, finite anchored jets classicalize, the canonical grounded inverse-square chord spectrum is inherited from the regular polygon, fixed even inverse-power pointed profiles reduce to finite Dirichlet-`L` bundles, and every shell-independent rotation-invariant linear harmonic form reduces to universal Fourier tails filtered by divisors.
+Pointing a translation-invariant shell no longer counts as a live escape by itself: local spectral measures and Schur self-energies reduce to full-shell derivative data (PC-038), canonical divisor-level Kron refinement is path independent (PC-039), fixed primitive metric/chiral blocks classicalize to Dirichlet special values (PC-044--PC-045), and the natural same-level metric/chiral noncommutativity factors through old vertices with low rank (PC-046).
 
-The surviving question is whether coupling several labeled levels **before** diagonalization, or retaining noncommuting pointed matrix data, produces an invariant that is not reconstructible from those classical single-shell packages. A decisive result would exhibit a canonical mixed quantity whose value changes under a cross-level rearrangement while every one-shell cyclotomic/Dirichlet/divisor invariant is held fixed. Exact reduction to independent shell spectra would close the candidate.
+The surviving question is whether a **simultaneous multilevel operator that keeps old and newly born vertices active at the same time** carries information that disappears under all of those reductions. A decisive positive result would exhibit a canonical mixed invariant that changes when old/new incidence is changed while every one-shell spectral/Dirichlet package is fixed. Exact reduction to independent shell data plus a bounded-rank old-vertex correction would close the candidate.
 
-## Second-order or global uniformization beyond flat circle-preserving transport
+## Break the universal full-cover reduction in nonlinear uniformization
 
 **Linked intuitions:** `MI-002-first-order-transport-forgets-the-interior`.
 
-First-order transport has now failed in projective, Euclidean, Schwarzian-cocycle, and circle-preserving accessory-parameter forms. In particular the natural tangential accessory one-form is exact on the Weil–Petersson Lagrangian real slice, so a Berry-like phase or first-order symplectic holonomy cannot be the missing arithmetic mechanism there.
+First-order accessory/projective transport is already too flat, and PC-040--PC-043 show that the canonical Weil--Petersson second-order response on the full roots-of-unity cover is still too universal: normalized divisor refinement is metric-flat, while the nonzero curvature couples character sectors only through a fixed twisted resolvent `2(L_theta+2)^(-1)` on the thrice-punctured base. The corresponding automorphic parameter is `s=2`, not the critical line.
 
-Investigate instead symmetric second variations of the restricted Liouville action, the Weil–Petersson metric/curvature on the real slice, global monodromy, off-slice deformation, or genuinely multi-path/cross-level response. The decisive test is a canonical mixed or second-order invariant that remains nonzero after fixing the same first-order accessory data and that is not a repackaging of known cyclotomic/Farey/Dirichlet information.
+The live nonlinear question is therefore whether the primitive-only composite birth surface, an off-symmetric deformation, or another genuinely global uniformization problem breaks this fixed-base reduction. A decisive invariant must retain level-specific old/new geometry that cannot be reconstructed from covering degree, rational holonomy characters, and the universal base resolvent. Higher derivatives that remain inside the same universal package do not qualify.
 
 ## Long-range propagation after factoring the exact conformal background
 

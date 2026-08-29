@@ -18,10 +18,10 @@ Develop relative or localized Weyl/scattering objects for isolated finite tangen
 
 The decisive test is an operator-level localization statement that both converges to the finite-tangent marked object behind escaping collars and embeds that information canonically into the infinite-flute spectral representation. Any scalar compression proposed afterwards should have its fibers computed on the tangent family before it is used.
 
-## Determine the relative operator class of the affine all-composite clone
+## Decide whether the shift clone is negligible in an operator-native geometry
 
-**Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`.
+**Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible` and `MI-004-coordinate-amplification-is-not-operator-amplification`.
 
-PF-106 gives the strongest current matched control: after a canonical Möbius normalization, the all-composite sequence `p_n+1` has `ell^1` sampled-endpoint displacement from the exact prime flute, `O(P^-3)` all-span tail cross-ratio distortion, and a natural piecewise-affine boundary matching with finite `L^1` derivative defect. What is not known is whether this boundary comparison extends equivariantly to the quotient surfaces with enough analytic control to compare their Laplacians.
+PF-106--PF-110 now give a mixed but much sharper geometric comparison for the all-composite shift clone `p_n+1`. The normalized endpoints are `ell^1`-close; additive cuff-length defects are only `ell^2` and not `ell^1`; nevertheless collar widths, collar areas, canonical seam/spine defects, and explicit collar metric distortion are summable, while every canonical separator has uniformly vanishing multiplicative distortion even through pinching. The bounded-ideal-triangulation route to a global quasiconformal comparison is impossible because the prime flute has zero systole.
 
-The decisive test is to prove either a canonical surface comparison implying compact/Schatten/trace-class control of an appropriate relative resolvent, heat kernel, or scattering operator, or a precise obstruction showing why the collapsing infinite-type geometry amplifies the summable endpoint defect into a noncompact operator difference. Either outcome would sharply locate the only exact-tail spectral information not already killed by the composite-clone controls.
+The remaining question is therefore not which coordinate sequence is summable. It is whether a **direct pants/collar matching on a common marked surface** satisfies the metric/measure hypotheses needed for compact/Schatten relative resolvent, heat, wave, or scattering comparison, or whether thin-end geometry amplifies the summable intrinsic defects into a noncompact operator difference. Either outcome would locate the only exact-tail spectral information not already removed by the composite-clone controls.

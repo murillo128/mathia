@@ -4,44 +4,49 @@
 
 ## Core intuition
 
-Two constructions can carry closely related arithmetic-looking kernels and still be unable to represent the same positive operator because they live in incompatible operator ideals. This is stronger than a mismatch of coefficients: bounded coordinate changes, compressions, or standard positive repairs cannot cross a Schatten-class boundary.
+Two constructions can carry closely related arithmetic-looking kernels and still be unable to represent the same positive operator because they live in incompatible operator ideals. The newer boundary-response evidence adds a second gate: even a category-changing passage is not enough if the operation reaches the critical spectral regime only by losing self-adjoint positivity. A viable bridge must change operator category **and** carry an independent sign theorem at the destination.
 
 ## Strongest justified principle
 
-WP-014 compares the canonical exact Prime-Flute Schiffer compression from PF-085 with the exact positive finite-Weil operator isolated in WP-004.
-
-The Schiffer cell operator is trace class. Therefore its absolute value, square, bounded congruences, and bounded compressions remain trace class or better. By contrast, the finite-Weil operator with prime-power weights
-
-\[
-T e_{p^k}=(\log p)p^{-k/2}e_{p^k}
-\]
-
-satisfies
+WP-014 compares the canonical exact Prime-Flute Schiffer compression from PF-085 with the exact positive finite-Weil operator isolated in WP-004. The Schiffer cell operator is trace class, so its absolute value, square, bounded congruences, and bounded compressions remain trace class or better. The finite-Weil operator with prime-power weights satisfies
 
 \[
 T\in S_q\iff q>2,
 \]
 
-so it is not even Hilbert--Schmidt. No bounded change of Hilbert coordinates or standard positive repair of the Schiffer operator can therefore produce this finite-Weil operator.
+and is not Hilbert--Schmidt. Bounded coordinate changes therefore cannot bridge the two.
 
-This gives a useful cross-branch discriminator. If a proposed bridge starts from an analytically soft, trace-class geometric defect but the target arithmetic form has a critical non-Hilbert--Schmidt tail, the missing operation must be genuinely category-changing: unbounded weighting, singular limit, quotient/boundary construction, dynamical propagation, or another mechanism whose slower tail is derived rather than inserted.
+WP-015 tests the most natural singular/boundary escape. Prime-Flute zero-energy DtN is genuinely positive, but its spectral continuation loses real positivity immediately; on the critical scattering line the outgoing response is non-Hermitian because of universal cusp flux. Feshbach reduction retains marked information through a resolvent, but the resolvent changes sign/poles across the positive spectrum rather than inheriting a Weil-type order theorem.
 
-## Evidence against overgeneralization
+The combined gate is stronger than ideal mismatch alone:
 
-Operator ideals are not preserved by every mathematically natural construction. An unbounded transform or singular boundary map can change them, and this finding does not forbid such a route. The constraint is that the category change itself must be canonical and geometrically justified; choosing a singular weight solely to reproduce the desired Mangoldt tail would merely encode the target.
+\[
+\boxed{
+\text{soft trace-class geometry}
+\to\text{category-changing operation}
+\to\text{critical-scale arithmetic operator}
+}
+\]
 
-The mismatch also does not say that the exact Prime-Flute coupling is irrelevant. It says that its direct bounded positive functional calculus cannot be the finite Weil form. The coupling may still be an input to a larger dynamical or relative construction.
+is useful only if the middle arrow is geometrically forced **and** the final object has a sign theorem not borrowed from the positive source after that sign has already been lost.
+
+## What remains possible
+
+Unbounded weighting, singular boundary maps, relative/noncompact scattering, cohomological quotients, noncommuting insertions, or determinant-line constructions can cross Schatten boundaries. Boundary asymmetry and eta-type data can also retain information that a positive square forgets. None is ruled out categorically.
+
+The requirement is that the category change itself be canonical, survive matched controls, and produce both the required slower arithmetic tail and an independent sign/order statement. Choosing a singular weight to reproduce Mangoldt coefficients, or invoking ordinary DtN positivity after continuation has destroyed it, does not meet that requirement.
 
 ## Status / novelty
 
-Trace-ideal closure properties are standard operator theory. The project-specific evidence is the exact placement of the two Mathia operators on opposite sides of the Hilbert--Schmidt boundary. The synthesis is a supported compatibility gate for future cross-branch proposals.
+Trace-ideal closure and boundary/Weyl theory are standard. The project-specific evidence is the exact placement of the Mathia operators on opposite sides of the Hilbert--Schmidt boundary together with the failure of the canonical Prime-Flute DtN/Feshbach bridge to preserve positivity at the critical spectral parameter.
 
 ## Falsification criterion
 
-Refute the narrow claim by constructing a bounded operator-theoretic transformation of the PF-085 trace-class compression that yields an operator unitarily equivalent to the WP-004 finite-Weil operator, contradicting ideal invariance. A singular/unbounded construction does not falsify the claim; it instead supplies the extra mechanism the intuition says is required.
+Construct a bounded transformation of the PF-085 trace-class compression yielding the finite-Weil operator, contradicting ideal invariance; or construct the ordinary continued Prime-Flute DtN/Feshbach object with a genuine positive quadratic form on the critical line despite the persisted cusp-flux obstruction. A different singular construction with its own sign theorem would evade rather than falsify the gate.
 
 ## Lean-formalizable core
 
-- Ideal property `A in S_1` and bounded `B,C` imply `BAC in S_1`.
-- `A in S_1` implies `|A|` and `A^*A` lie in trace/Hilbert--Schmidt classes as appropriate.
-- Series criterion giving `T in S_q iff q>2` for the prime-power diagonal weights.
+- Ideal property under bounded sandwiches and compressions.
+- Schatten criterion for the prime-power diagonal finite-Weil operator.
+- Elementary variational loss of DtN positivity for `Delta-lambda` at `lambda>0`.
+- Abstract distinction between information-preserving category change and sign preservation.
