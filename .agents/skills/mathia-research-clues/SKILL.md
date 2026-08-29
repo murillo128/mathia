@@ -217,7 +217,7 @@ Good Master clues include:
 
 The Master must not use clues as project-management commands or encode `continue`, `pause`, `merge`, `split`, or scheduling decisions inside them. A clue remains a mathematical research question.
 
-It may create or materially strengthen only `proposed` clues. It must not set `accepted`, `rejected`, or `resolved`.
+It may create or materially strengthen only `proposed` clues. It must not change Research Watch disposition states.
 
 For an existing destination line, prefer `research/<line>/clues/**`. Use `research/clues/**` only when the question is genuinely cross-line or a new-line candidate.
 
@@ -301,8 +301,16 @@ A clue change may share the caller's normal direct-main publication path when al
 
 Use the caller's normal commit prefix. Do not create a commit solely to restate an unchanged clue.
 
+## Notification policy
+
+Clue persistence and clue notification are separate thresholds.
+
+- Producers (`Mind`, `Graph Curator`, `Adversarial Research`, `Master Researcher`, or a Research Watch proposing its own clue) do **not** notify merely because a clue is created or strengthened in `proposed` state, even if the clue appears consequential.
+- A Research Watch notifies when it changes a clue to `status: accepted`.
+- Do not notify merely because a clue becomes `rejected` or `resolved`. Any durable mathematical result produced while rejecting or resolving it is governed by the Research Watch's ordinary notification policy, not by clue status itself.
+
+This is the shared default for all clue-producing/consuming research processes. Task prompts should normally inherit it rather than restating clue-specific notification rules.
+
 ## Reporting
 
-Mind, Curator, Adversarial Research, or Master Researcher should notify only when a clue is unusually consequential or represents a genuinely new cross-line/new-line candidate worth user attention. Routine local clue creation can remain silent.
-
-Research Watch should report a clue only when it is accepted, rejected for a substantive mathematical reason, or resolved into a material finding under its normal notification policy.
+Keep clue lifecycle changes durable in the repository, but surface a clue-specific user notification only for `accepted` as defined above.
