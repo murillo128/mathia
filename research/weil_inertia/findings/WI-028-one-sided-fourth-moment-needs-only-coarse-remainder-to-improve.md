@@ -261,6 +261,7 @@ while
 R(1)<0.0221688
 \Longrightarrow
 \text{cross the }0.68185\text{ comparison ceiling.}
+}
 \]
 
 This is now the highest-leverage arithmetic audit target among the currently identified single-rung routes: first prove a coarse one-sided remainder theorem, then tighten it only if the coarse gate succeeds. The established bound itself is unchanged until that certification exists.
