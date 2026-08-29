@@ -169,3 +169,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 42. **Jonathan Pakianathan, Troy Winfree**, “Threshold complexes and connections to number theory,” *Turkish Journal of Mathematics* **37**(3) (2013), 511–539. DOI: https://doi.org/10.3906/mat-1112-14. Earlier arXiv version: *Quota Complexes, Persistent Homology and the Goldbach Conjecture*, arXiv:1104.4324v3 [math.AT] (2011), https://arxiv.org/abs/1104.4324.
     - Role: main prior-art anchor for `PL-032`. Frames variation of scalar quota complexes as a persistent-homology/Morse-type problem; proves the minimum-weight shell/bouquet theorem; introduces the exact `LogPrime` complex with vertex weights `log p`; and identifies its Euler characteristic with the Mertens function, giving the classical RH-equivalent growth criterion. The exact `[b,2b)` barcode in `PL-032` is a derived filtered refinement, not claimed as literature or novelty.
+
+## Automorphic Lax–Phillips scattering and zero-spectrum realization
+
+43. **Yoichi Uetake**, “The Lax–Phillips infinitesimal generator and the scattering matrix for automorphic functions,” *Annales Polonici Mathematici* **92**(2) (2007), 99–122. DOI: https://doi.org/10.4064/ap92-2-1.
+    - Role: main anchor for `PL-033`. For the `SL_2(Z)` automorphic scattering system, isolates the causal factor `xi(2s)/xi(-2s)`, proves that nontrivial Riemann zeta zeros are exactly the eigenvalues of `-2 A_c` with matching algebraic multiplicity, proves that the generalized eigenvectors form a basis, and states `RH <=> sigma(2 A_c + (1/2)I) subset iR`; also gives an RH-equivalent cyclic-vector criterion for a weak-resolvent realization.
+
+44. **Peter D. Lax, Ralph S. Phillips**, *Scattering Theory for Automorphic Functions*, Annals of Mathematics Studies **87**, Princeton University Press, Princeton, 1976.
+    - Role: classical automorphic-scattering foundation for `PL-033`. Develops the non-Euclidean wave-equation scattering system for automorphic functions, meromorphic Eisenstein/scattering theory, and the relation between scattering poles and resolvent poles/eigenvalues of the Lax–Phillips infinitesimal generator; Uetake's exact zero-spectrum theorem refines this lineage for the modular group.
