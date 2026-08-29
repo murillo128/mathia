@@ -185,6 +185,27 @@ Relevant finding: PF-105.
 
 **Scope warning.** Yaşar's Fenchel-Nielsen characterization of `T^0_ls(H_0)` is stated under an **upper-bounded base surface** hypothesis. The prime-flute's distinguished cuffs tend to infinity, so PF-105 does not invoke that theorem. Its `O(P^-2)` cross-ratio/separator bounds and `ell^1` fan-shear defect are derived directly from the exact endpoint law.
 
+## S12 — bounded ideal triangulations and quasiconformal length distortion
+
+**D. Šarić, C. Whitney**, *Bounded ideal triangulations of infinite Riemann surfaces*, Journal of the London Mathematical Society 112 (2025), e70276. DOI: 10.1112/jlms.70276; arXiv:2502.05590.
+
+- https://arxiv.org/abs/2502.05590
+- https://doi.org/10.1112/jlms.70276
+
+**H. Shiga**, *On the hyperbolic length and quasiconformal mappings*, Complex Variables, Theory and Application 50 (2005), 123–130. DOI: 10.1080/02781070412331328206.
+
+- https://doi.org/10.1080/02781070412331328206
+
+Used for:
+
+- Whitney--Šarić Proposition 4.2: a surface carrying their bounded ideal triangulation is quasiconformal to a zero-shear representative whose covering group is a subgroup of `PSL_2(Z)`;
+- the classical Wolpert inequality `K^-1 ell_X(c) <= ell_Y(f_*(c)) <= K ell_X(c)` for a `K`-quasiconformal map, stated by Shiga for hyperbolic Riemann surfaces;
+- PF-110's literature-derived obstruction: a torsion-free subgroup of `PSL_2(Z)` has hyperbolic traces of absolute value at least `3`, hence a positive closed-geodesic length floor, and quasiconformal length distortion transfers positive systole back to every surface with a bounded ideal triangulation.
+
+Relevant finding: PF-110; relevant local clue: `CLUE-affine-composite-clone-relative-operator-class.md`.
+
+**Novelty discipline.** The modular trace floor and quasiconformal length inequality are classical, and Whitney--Šarić supply the substantive structural theorem. PF-110 does not claim a new general triangulation theorem; it records the immediate corollary and uses it to close the previously proposed bounded-triangulation route for the zero-systole prime flute.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
