@@ -135,3 +135,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 34. **Frederik Broucke, Athanasios Kouroupis, Karl-Mikael Perfekt**, “A note on Bohr’s theorem for Beurling integer systems,” *Mathematische Annalen* **389** (2024), 4319–4333. DOI: https://doi.org/10.1007/s00208-023-02756-x.
     - Role: modern structural anchor for `PL-015`. Formulates Beurling primes with rationally independent logarithms, unique finite-product generalized integers, generalized Dirichlet series, the Euler product for `zeta_q`, and Hardy/Bohr theory; confirms that Beurling systems are direct deformations of the same multiplicatively generated exponent-lattice/frequency setup rather than an unrelated analogy.
+
+## LCM join geometry and multiplicative tensor spectra
+
+35. **Titus Hilberdink, Alexander Pushnitski**, “Spectral asymptotics for a family of LCM matrices,” *St. Petersburg Mathematical Journal* **34**(3) (2023), 463–481. DOI: https://doi.org/10.1090/spmj/1764. arXiv: https://arxiv.org/abs/2110.14323.
+    - Role: main anchor for `PL-016`. Studies `E(sigma,tau)={n^sigma m^sigma/[n,m]^tau}` as a compact positive self-adjoint operator; makes the prime-exponent `max`/LCM tensor factorization explicit; proves product formulas for local/global eigenvalues, eigenvalue asymptotics and the exact Schatten threshold; connects `E(sigma,1)` to rescaled finite multiplicative Toeplitz Gram matrices from zeta coefficients; and factors the spectral zeta as `zeta(rho w)G(w)` with an analytic correction in a larger half-plane. The paper also explicitly distinguishes finite coefficient matrices from an infinite Toeplitz operator when analytic continuation is required and exhibits a mismatch between zeta value distribution and matrix singular-value distribution.
+
+36. **Titus Hilberdink**, “Matrices with multiplicative entries are tensor products,” *Linear Algebra and its Applications* **532** (2017), 179–197. DOI: https://doi.org/10.1016/j.laa.2017.06.037.
+    - Role: broader prior-art anchor for `PL-016`. Proves that infinite matrices whose entries are multiplicative functions of two variables decompose as infinite tensor products over primes, with applications to explicit eigenvalues and multiplicative Toeplitz/Hankel operators.
