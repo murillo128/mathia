@@ -9,13 +9,13 @@ description: Execute an approved Mathia-owned Lean formalization issue through G
 
 Use this skill when Codex is implementing an approved Mathia Lean formalization issue in this repository.
 
-This is a thin specialization of the canonical merged repository skill:
+This is a thin specialization of the canonical repository skill:
 
 ```text
 .agents/skills/spec-driven-codex-loop/SKILL.md
 ```
 
-Load that file from the current Mathia repository as the generic execution authority. Do not use a PR, feature branch, historical copy, or external duplicate of the skill as procedure authority unless a controlling issue explicitly pins historical workflow behavior for reproducibility.
+Load that file from the current Mathia repository as the generic execution authority. Repository skills on the default branch are procedure authority; do not substitute copies from old PRs or unrelated repositories.
 
 The controlling Mathia issue owns the scientific question. The executor owns Lean proof engineering and evidence only within that contract.
 
@@ -38,22 +38,16 @@ Before proof implementation:
 2. load the controlling Mathia issue;
 3. load the canonical `spec-driven-codex-loop` skill;
 4. confirm the issue has exactly one valid execution state and is safe to work;
-5. inspect Mathia's current Lean environment and relevant existing formalization source;
+5. inspect the Lean tooling available on the machine, Mathia's current local Lean/Lake setup, and relevant existing formalization source;
 6. confirm the issue defines a blocking Gate 0 and that it has not been bypassed.
 
 ### Lean environment
 
-Use Mathia's pinned `lean-toolchain` / Lake / mathlib environment when present.
+Use the Lean tooling currently available on the execution machine and Mathia's current local Lean/Lake setup.
 
-If no Lean environment exists yet:
+Do **not** require a predetermined Lean or mathlib version. Record the actual environment used when it helps reproduce or diagnose the run, but version identity is execution evidence rather than a scientific progression gate.
 
-- create one only when the controlling issue explicitly authorizes the minimal local setup;
-- pin the material Lean/mathlib revision;
-- keep it in Mathia;
-- add only the imports/configuration required for the bounded formalization;
-- do not copy another repository's project layout or dependency graph by default.
-
-If a Lean environment is needed but the issue does not authorize creating or changing it, return to design rather than improvising the environment during proof work.
+If no Lean project exists in Mathia yet, the executor may add the **smallest local Lake/Mathlib setup** needed for the bounded formalization. Keep it in Mathia, keep it minimal, and do not copy another repository's project layout or turn initial setup into a general framework.
 
 ## Gate 0 is blocking
 
@@ -151,7 +145,7 @@ research/**/clues/**
 
 Do not rewrite a canonical finding, create a new finding, or change clue disposition.
 
-The issue-owning review/orchestration session consumes the handoff and, when warranted, loads the canonical merged Mathia research skills:
+The issue-owning review/orchestration session consumes the handoff and, when warranted, loads the canonical Mathia research skills:
 
 ```text
 .agents/skills/mathia-research-adversarial/SKILL.md
@@ -176,7 +170,7 @@ Non-blocking independent research leads may be collected until the next declared
 
 ## Independent review
 
-Use the canonical merged independent-review skill when the controlling issue requires Gate or final technical review:
+Use the canonical independent-review skill when the controlling issue requires Gate or final technical review:
 
 ```text
 .agents/skills/codex-independent-review/SKILL.md
@@ -198,16 +192,16 @@ A technical `PASS` means the exact reviewed Lean target is safe at that checkpoi
 
 Before ready-for-review handoff, verify as required by the controlling issue:
 
-- the exact Lean source compiles under Mathia's pinned environment;
+- the exact Lean source compiles/checks successfully with the Lean environment available on the execution machine;
 - no forbidden `sorry`, `admit`, new axiom, `unsafe`, or unchecked-certificate dependency remains in the accepted theorem boundary;
 - principal `#print axioms` results or equivalent trust evidence are recorded;
 - theorem statements still match the Gate-0 frozen contract;
 - no numerical falsification or exploratory computation was promoted into proof evidence;
-- material dependencies and revisions are pinned and recorded;
+- material imports/dependencies used by the proof are recorded when relevant;
 - all material mathematical discoveries have structured handoffs in the controlling Mathia issue, or explicitly record `Formalization research handoff: none`;
 - fresh final technical review covers theorem fidelity, proof integrity, and completeness of research handoffs.
 
-Use the repository-native Lean command defined by Mathia's current Lean project. If no command is yet canonical, the controlling issue must define the exact check used for that bounded formalization.
+Use the repository-native Lean command defined by Mathia's current Lean project. If no command is yet canonical, use the simplest command that checks the bounded formalization and record it in the execution evidence.
 
 ## Delivery
 
