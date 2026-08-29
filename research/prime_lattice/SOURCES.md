@@ -185,3 +185,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 46. **Richard Hill**, “Metaplectic covers of `GL_n` and the Gauss-Schering lemma,” *Journal de Théorie des Nombres de Bordeaux* **13**(1) (2001), 189–199. DOI: https://doi.org/10.5802/jtnb.314.
     - Role: close projective/metaplectic prior-art anchor for `PL-038`. Constructs metaplectic `2`-cocycles over global fields in direct connection with reciprocity laws, confirming that Hilbert-symbol/cocycle formulations belong to established arithmetic representation theory rather than a novel prime-lattice mechanism.
+
+## Spherical intertwining normalization and scalar zeta scattering
+
+47. **Joseph Hundley**, “Holomorphy of adjoint L functions for quasisplit `A_2`,” *Research in Number Theory* **4** (2018), Article 44. DOI: https://doi.org/10.1007/s40993-018-0136-8. arXiv: https://arxiv.org/abs/1611.00057.
+    - Role: main local rank-one anchor for `PL-039`. Lemma 2.1 records the `GL_2` Gindikin–Karpelevich action of the standard intertwining operator on the normalized unramified spherical vector as the scalar ratio `L_v(u)/L_v(u+1)` and discusses normalized-intertwiner analyticity.
+
+48. **C. David Keys, Freydoon Shahidi**, “Artin L-functions and normalization of intertwining operators,” *Annales scientifiques de l'École Normale Supérieure* **21**(1) (1988), 67–89. DOI: https://doi.org/10.24033/asens.1551.
+    - Role: classical normalization anchor for `PL-039`. Establishes the L-function normalization framework for local/global intertwining operators, separating singular arithmetic normalizing factors from the regularized operator.
+
+49. **Volker Heiermann**, “The value of the global intertwining operators on spherical vectors,” *Proceedings of the American Mathematical Society* **147**(1) (2019), 115–124. DOI: https://doi.org/10.1090/proc/14208. arXiv: https://arxiv.org/abs/1709.09107.
+    - Role: global spherical prior-art anchor for `PL-039`. Computes the meromorphic scalar defined by a global standard intertwining operator acting on an everywhere-unramified spherical vector via Langlands–Shahidi L-data, confirming that the unramified global zeta channel scalarizes rather than retaining a hidden matrix invariant.
