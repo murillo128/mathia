@@ -138,20 +138,7 @@ Because the linear branch of `Psi(1+x)` replaces `x^2` by `2x-1` when `x>1`,
 \tag{2}
 \]
 
-If `k=0`, then `D=E`. If `k>=2`, Cauchy--Schwarz on the remaining `m-k` entries gives
-
-\[
-E-Q\ge\frac{R^2}{m-k},
-\]
-
-hence
-
-\[
-D\ge2R-k+\frac{R^2}{m-k}
-\ge\frac{km}{m-k}>2.
-\]
-
-If `k=1`, with the exceptional coordinate `r>1`, Cauchy gives
+If `k=0`, then `D=E`. If `k=1`, with the exceptional coordinate `r>1`, Cauchy on the other `m-1` coordinates gives
 
 \[
 r\le\sqrt{\frac{m-1}{m}E},
@@ -165,17 +152,71 @@ D\ge E+2r-1-r^2
 2\sqrt{\frac{m-1}{m}E}-1+\frac{E}{m}.
 \]
 
-Consequently, with
+For `k>=2`, the same one-large-coordinate estimate applies after an exact compression. Write each large coordinate as
+
+\[
+x_i=1+z_i,\qquad z_i>0,
+\]
+
+and let
+
+\[
+Z=\sum_{i\in L}z_i=R-k.
+\]
+
+Replace the `k` large coordinates by
+
+\[
+1+Z,\underbrace{1,\ldots,1}_{k-1},
+\]
+
+leaving every other coordinate unchanged. The total sum is preserved. The defect is also preserved exactly: the original large-coordinate contribution is
+
+\[
+\sum_{i\in L}(2x_i-1)=k+2Z,
+\]
+
+whereas after compression it is
+
+\[
+(2(1+Z)-1)+(k-1)\Psi(2)=1+2Z+k-1=k+2Z.
+\]
+
+The energy cannot decrease. Before compression the large-coordinate contribution to `E` is
+
+\[
+k+2Z+\sum_{i\in L}z_i^2,
+\]
+
+and afterwards it is
+
+\[
+k+2Z+Z^2,
+\]
+
+with
+
+\[
+Z^2\ge\sum_{i\in L}z_i^2.
+\]
+
+Thus the transformed vector has the same `D`, the same zero-sum constraint, energy `E' >= E`, and at most one coordinate strictly above the threshold. Applying the already proved `k=0,1` case to the transformed vector and using monotonicity of `Phi_m` gives the global bound
+
+\[
+\boxed{D\ge\Phi_m(E)}.
+\]
+
+Here
 
 \[
 \Phi_m(E)=
 \begin{cases}
 E,&0\le E\le m/(m-1),\\
-2\sqrt{(m-1)E/m}-1+E/m,&E\ge m/(m-1),
+2\sqrt{(m-1)E/m}-1+E/m,&E\ge m/(m-1).
 \end{cases}
 \]
 
-the function `Phi_m` is nondecreasing and 1-Lipschitz and, in the range used here,
+The function `Phi_m` is nondecreasing and 1-Lipschitz. Therefore, globally rather than only in the numerical range used below,
 
 \[
 \boxed{
@@ -186,7 +227,13 @@ D+P\ge\Phi_m(A).
 \tag{3}
 \]
 
-This is the finite-dimensional trace--energy envelope used by the recent `tawanerguo-cn` and `trmdy` refinements. For (1), `Phi_438(A)<2`, so the `k>=2` case has ample slack.
+Indeed,
+
+\[
+\Phi_m(A)\le\Phi_m(E+P)\le\Phi_m(E)+P\le D+P.
+\]
+
+This is the finite-dimensional trace--energy envelope used by the recent `tawanerguo-cn` and `trmdy` refinements. For the concrete application (1), `Phi_438(A)<2`; that observation gives a shorter numerical discharge of the multi-large-eigenvalue case, but it is not needed for the global statement (3).
 
 ## 3. The four-point certificate supplies block energy
 
@@ -327,13 +374,13 @@ Several failure modes were checked explicitly.
 
 **Unbounded blocks.** Pressure itself bounds the block span whenever the kernel approximation is needed, as explained after (5); high-pressure blocks satisfy the target without any kernel approximation.
 
-**Envelope branch.** At `m=438`, `A=1.00485 > 438/437`, so the displayed square-root branch applies. `Phi_438(A)<2`, making the `k>=2` spectral case harmless.
+**Envelope compression.** Multiple eigenvalues above `2` do not create an uncovered branch. Concentrating their excess above the threshold into one eigenvalue preserves the spectral defect and trace constraint and can only increase the quadratic energy. The one-large-eigenvalue bound therefore implies the global envelope by monotonicity. At `m=438`, `Phi_438(A)<2` also supplies an independent shorter check for the actual operating point.
 
 **Finite-`T` unit diagonal.** The simple-zero vectors have diagonal `1+o(1)` uniformly on bounded spans in the same truncation/tail regime as WI-009. Since `m` is fixed, normalization changes (6) by `o(1)` per block, hence `o(N)` globally.
 
 **No unverified larger certificate.** Neither the `tawanerguo-cn` seven-point finite certificate nor the `trmdy` nine-point certificate is used. Only their exact assembly lemma is imported; the numerical local input is the Lean theorem `four_point_cert`.
 
-A decisive falsification test is therefore finite and clear: formalize (3), the pair/window counting behind (5), and the `m`-shift averaging behind (6) in the existing zeta-lab bridge and instantiate it with `four_point_cert`. Any failure would have to identify a missing analytic normalization or an error in one of these exact finite steps.
+A decisive falsification test is therefore finite and clear: formalize (3), including the excess-compression step, the pair/window counting behind (5), and the `m`-shift averaging behind (6) in the existing zeta-lab bridge and instantiate it with `four_point_cert`. Any failure would have to identify a missing analytic normalization or an error in one of these exact finite steps.
 
 ## 8. Consequence for the research line
 
