@@ -1,6 +1,6 @@
 ---
 name: mathia-research-watch
-description: Run recurring Mathia mathematical research watches with durable findings, adversarial review response, prior-art audit, clue triage, strict path ownership, direct-main publication gates, and low-noise notifications.
+description: Run recurring Mathia mathematical research watches with durable findings, adversarial review response and persistence, prior-art audit, clue triage, strict path ownership, direct-main publication gates, and low-noise notifications.
 ---
 
 # Mathia Research Watch
@@ -9,9 +9,9 @@ description: Run recurring Mathia mathematical research watches with durable fin
 
 Use this skill for recurring or scheduled mathematical research watches that maintain one research-evidence line under `research/<line>/`.
 
-The Research Watch owns the line's **canonical findings and evidence**. Its job is to discover, derive, falsify, audit, preserve, and, when necessary, withdraw mathematical claims so that later synthesis, graph curation, adversarial review, or formalization can reuse the current corpus.
+The Research Watch owns the line's **canonical findings and evidence**. Its job is to discover, derive, falsify, audit, preserve, strengthen, and, when necessary, withdraw mathematical claims so that later synthesis, graph curation, adversarial review, or formalization can reuse the current corpus.
 
-It does not maintain project status, a changelog, a daily diary, a roadmap, an issue queue, or chronological research notes. It does not write to `mind/` or `graph/`.
+It does not maintain project status, a changelog, a daily diary, a roadmap, an issue queue, or chronological research notes. It does not write to `mind/`, `graph/`, or `research/master/`.
 
 Every Research Watch must also load:
 
@@ -19,7 +19,7 @@ Every Research Watch must also load:
 .agents/skills/mathia-research-review/SKILL.md
 ```
 
-That skill is the procedural authority for responding to adversarial `.review.md` sidecars attached to this line's findings, including review-notification ownership.
+That skill is the procedural authority for adversarial `.review.md` sidecars, including turn ownership, claim identity, accepted-mathematics persistence, closure, and review-notification ownership.
 
 When local clues exist or the run needs to create/update a clue, also load:
 
@@ -31,11 +31,11 @@ When local clues exist or the run needs to create/update a clue, also load:
 
 Each research-watch prompt should supply only the topic-specific contract:
 
-- the research line, such as `prime_circle`, `prime_flute`, or `prime_lattice`;
-- the stable finding prefix, such as `PC`, `PF`, or `PL`;
+- the research line, such as `prime_circle`, `prime_flute`, `prime_lattice`, `weil_positivity`, or `weil_inertia`;
+- the stable finding prefix, such as `PC`, `PF`, `PL`, `WP`, or `WI`;
 - the mathematical object and questions to investigate;
-- any branch-specific definitions, known results, priority mechanisms, or exclusions;
-- any notification threshold stricter than the default in this skill.
+- branch-specific definitions, known results, priority mechanisms, or exclusions;
+- any notification threshold stricter than the defaults in the loaded skills.
 
 The prompt owns **what mathematics to investigate**. This skill owns **how to investigate, handle reviews, persist evidence, and publish it**.
 
@@ -51,32 +51,69 @@ Before substantive work:
 6. inspect every open sidecar whose last substantive speaker is `Adversary`; these form the owner's review inbox;
 7. inspect `research/<line>/clues/**` when present, using `mathia-research-clues` for their semantics;
 8. read `research/<line>/SOURCES.md` and `LEAN_CANDIDATES.md` when relevant;
-9. use `research/<line>/graph/index.md` when present only as a derived navigation aid, never as mathematical evidence;
+9. use `research/<line>/graph/index.md` when present only as derived navigation, never as mathematical evidence;
 10. read only the individual findings and dependencies needed for the live review, candidate, clue, or duplication question.
 
 Other Mathia research lines and `mind/` may be read as context or evidence, but are read-only for this role. Treat every `graph/` subtree as regenerable derived state and verify substantive claims against canonical findings or sources.
 
 Do not preload all findings or complete repository history unless a dependency, deletion, review, or novelty question requires it.
 
-When a previous processed revision is available, use Git history as a change stream: added, modified, and deleted findings/reviews can all be meaningful events. Do not assume that only files present in the current tree can represent new information.
+When a previous processed revision is available, use Git as a change stream: added, modified, and deleted findings/reviews can all be meaningful events. In particular, `M <finding>.md` may represent newly accepted mathematics for the same claim identity.
 
 ## Review inbox comes before optional new exploration
 
-At the start of the mathematical cycle, make a serious attempt to process open reviews on findings owned by this line before spending the run entirely on unrelated exploration.
+At the start of the mathematical cycle, make a serious attempt to process open reviews owned by this line before spending the run entirely on unrelated exploration.
 
 For each sidecar whose last substantive speaker is `Adversary`:
 
 1. reconstruct the target claim and derivation independently;
 2. verify the objection rather than assuming either participant is right;
 3. inspect exact dependencies or sources needed to decide it;
-4. follow `mathia-research-review` exactly.
+4. determine whether this is an ordinary objection turn or an adversary **acceptance-pending-persistence** turn;
+5. follow `mathia-research-review` exactly.
 
-The owner has two main outcomes:
+### Ordinary owner response
 
-- **Defend:** keep the target unchanged, append an `## Owner` response with the decisive argument/evidence, and leave the sidecar for adversary judgment.
-- **Concede:** delete the target finding and its sidecar in the same commit. If a corrected/narrower result remains valuable, publish it as a new finding with a new stable ID instead of silently repurposing the withdrawn claim.
+If the objection remains open and the same claim can be defended:
 
-Do not edit the target finding while its `.review.md` sidecar is open. Do not delete a sidecar merely because an owner response has been written. Closure after a defense belongs to the adversary.
+- keep the target unchanged while the defense still awaits adversary judgment;
+- append an `## Owner` response with the decisive argument/evidence;
+- leave the sidecar for adversary judgment.
+
+If the claim must materially change, concede it instead of rewriting the identity in place:
+
+- delete target + sidecar atomically;
+- create a corrected/narrower/replacement result with a **new stable finding ID** when substantive;
+- never use `.v2`, `.v3`, or silently repurpose the old ID.
+
+### Owner persistence after adversary acceptance
+
+If the last `## Adversary` turn states that the objection is mathematically resolved but closure is pending durable persistence, the Research Watch must preserve the accepted new mathematics before the sidecar can disappear.
+
+Classify the accepted material using the shared protocol:
+
+**Same mathematical claim:**
+
+1. modify the existing canonical finding in place;
+2. integrate the accepted proof/evidence naturally into the claim, derivation, source bridge, boundaries, or audit sections where it belongs;
+3. do not add review-history or `Adversarial resolution` prose;
+4. append a concise `## Owner` turn confirming that the accepted mathematics is now persisted;
+5. leave the sidecar for final adversary verification.
+
+This is the sole exception to the normal rule that a target stays unchanged while a review is open.
+
+**Independent durable result:**
+
+1. keep the target unchanged if its claim remains valid;
+2. create a separate new finding with a new stable ID;
+3. append a concise owner persistence turn identifying the new result;
+4. leave the sidecar for adversary verification.
+
+**Materially changed claim:**
+
+Withdraw the old target and sidecar and create a new finding ID if a replacement remains valuable.
+
+A review response is not fully resolved merely because the mathematics appeared in the temporary sidecar. If that mathematics is necessary to the accepted defense, it must survive in the canonical finding corpus.
 
 If the objection cannot yet be materially answered, leave the sidecar untouched rather than add a placeholder response.
 
@@ -102,14 +139,14 @@ Try to kill a candidate before promoting it. Check, when relevant:
 
 - constants, signs, branch choices, normalization factors, and quantifiers;
 - convergence domains and whether a claimed identity survives analytic continuation;
-- finite-versus-infinite product, topology, measure, limiting, or operator-domain assumptions;
+- finite-versus-infinite products, topology, measure, limiting arguments, and operator-domain assumptions;
 - whether a quantity is gauge-, coordinate-, or parametrization-dependent;
 - telescoping, coboundary, pure-gauge, quotient, or endpoint-only reductions;
-- universal geometric/spectral background that erases the arithmetic data;
+- universal geometric/spectral background that erases arithmetic data;
 - local-versus-global information loss;
 - whether an apparent symmetry is merely a known functional equation or duality in disguise;
 - whether a proposed spectral/geometric object exists with the required hypotheses;
-- boundary cases, controls, counterexamples, and degenerate instances.
+- boundary cases, matched controls, counterexamples, and degenerate instances.
 
 Important negative results are first-class research results when they rule out a natural branch, expose hidden universality, or establish a reusable impossibility principle.
 
@@ -117,7 +154,7 @@ This self-audit does not replace the independent `mathia-research-adversarial` p
 
 ### 4. Run a serious prior-art and novelty check
 
-Search the closest classical and modern literature only after the mathematical candidate is precise enough to search for.
+Search the closest classical and modern literature only after the candidate is precise enough to search for.
 
 Prefer primary papers, monographs, authoritative surveys, or original theorem sources over secondary summaries. Determine separately:
 
@@ -131,15 +168,15 @@ Do not claim novelty because exact wording was not found. Search by mathematical
 
 ### 5. Classify the result honestly
 
-Use the line's established vocabulary when it is more specific. The common evidence vocabulary is:
+Use the line's established vocabulary when it is more specific. Common evidence labels include:
 
-- `EXACT-DERIVED` — exact consequence derived from the explicit Mathia construction;
-- `LITERATURE+DERIVED` — a published theorem plus a derived consequence for this construction;
-- `CLASSICAL-IDENTITY` — exact but already standard;
-- `CANDIDATE-NEW-STRUCTURE` — a potentially new organization/mechanism whose novelty is not established;
-- `NEGATIVE/OBSTRUCTION` or `DECISIVE-NEGATIVE` — a tempting route is ruled out or materially narrowed;
-- `CONJECTURAL` — depends on an unproved mechanism or statistical hypothesis;
-- `NEEDS-AUDIT` — a promising claim still lacks a reliable proof/source bridge.
+- `EXACT-DERIVED`;
+- `LITERATURE+DERIVED`;
+- `CLASSICAL-IDENTITY`;
+- `CANDIDATE-NEW-STRUCTURE`;
+- `NEGATIVE/OBSTRUCTION` or `DECISIVE-NEGATIVE`;
+- `CONJECTURAL`;
+- `NEEDS-AUDIT`.
 
 Labels may be combined when needed, but exactness, provenance, novelty, and remaining uncertainty must be unambiguous. Never silently upgrade evidence.
 
@@ -151,7 +188,7 @@ Persist a research update only when at least one of these happened materially:
 - a nontrivial candidate mechanism or invariant became precise and falsifiable;
 - an important route was disproved or sharply restricted;
 - a previous finding was materially corrected, replaced, withdrawn, strengthened, or refuted;
-- an adversarial review was materially answered or conceded;
+- an adversarial review was materially answered, persisted, or conceded;
 - prior art showed that a supposedly new mechanism is classical and materially redirected the investigation;
 - a decisive boundary condition, existence condition, or counterexample changed what can plausibly work;
 - a clue was substantively triaged under `mathia-research-clues`.
@@ -161,9 +198,9 @@ The following are not sufficient by themselves:
 - another search pass with no changed conclusion;
 - adding a paper that does not change or support a stored claim;
 - speculative prose without a precise claim or test;
-- renaming or repackaging known zeta/prime identities;
+- renaming/repackaging known zeta or prime identities;
 - recording what was attempted today;
-- acknowledging an adversarial review without materially answering it;
+- acknowledging an adversarial review without materially answering or persisting it;
 - updating a timestamp, status diary, TODO, or next-step log.
 
 If nothing passes the gate, create no repository churn.
@@ -184,15 +221,13 @@ SOURCES.md
 findings/
 ```
 
-`LEAN_CANDIDATES.md` is an optional adjunct for a deliberately small formalization queue. `clues/` is an optional research-direction inbox governed by `mathia-research-clues`.
+`LEAN_CANDIDATES.md` is an optional finite formalization queue. `clues/` is an optional research-direction inbox governed by `mathia-research-clues`.
 
-`graph/` is a derived view owned by the graph curator. `mind/` is synthesis owned by the mind process. Research Watch does not maintain either.
-
-Legacy lines may predate one of the core artifacts or contain historical finding expositions outside `findings/`. Preserve such history unless a separate migration owns it. Do not create empty placeholders for symmetry.
+`graph/` is owned by the graph curator. `mind/` is synthesis owned by the Mind. `research/master/` is owned by the Master Researcher. Research Watch does not maintain any of them.
 
 ### `README.md`
 
-Keep stable line context only: primary mathematical object, conventions, research stance, evidence vocabulary, file map, and durable high-level interpretation. Do not use it as a run log.
+Keep stable line context only: primary object, conventions, research stance, evidence vocabulary, file map, and durable high-level interpretation. Do not use it as a run log.
 
 ### Individual findings
 
@@ -202,28 +237,34 @@ New detailed findings belong under:
 research/<line>/findings/<PREFIX>-NNN-<slug>.md
 ```
 
-These files are the canonical source of truth for research claims. Adjacent `*.review.md` files are challenges/dialogue, not replacement evidence.
+These are the canonical current source of truth for research claims. Adjacent `*.review.md` files are temporary challenges/dialogue, not replacement evidence.
 
-Use stable three-digit IDs. Before allocating an ID, inspect all existing finding filenames for that prefix and any explicitly preserved legacy IDs for the same line, then choose an integer greater than every existing ID. Never recycle holes or renumber existing findings, including IDs of findings later deleted through review. Git history preserves those identities.
+Use stable three-digit IDs. Before allocating an ID, inspect all existing finding filenames for that prefix and any preserved legacy IDs, then choose an integer greater than every existing ID. Never recycle holes or IDs of findings later deleted through review.
 
-Prefer one coherent finding over near-duplicates. A graph index may help locate candidates, but duplication decisions must be verified against canonical findings.
+A stable ID denotes a stable **mathematical claim identity**, not an immutable byte sequence:
+
+```text
+same claim + stronger/completed accepted proof/evidence -> M existing finding
+materially changed/replacement claim                   -> D old + A new ID
+independent durable result                             -> A new ID
+```
+
+Never create `.v2`/`.v3` finding variants. Git versions the same claim; new IDs represent new claims.
 
 A durable finding should contain, with headings adapted to the mathematics:
 
 1. the precise claim or obstruction;
 2. evidence/status classification;
-3. the derivation, theorem bridge, computation, or falsifying argument;
-4. why the result is specific or relevant to the Mathia construction;
-5. prior art and novelty assessment;
-6. boundary conditions, counterarguments, and known failure modes;
+3. derivation, theorem bridge, computation, or falsifying argument;
+4. relevance to the Mathia construction;
+5. prior-art and novelty assessment;
+6. boundary conditions, counterarguments, and failure modes;
 7. a decisive falsification/audit test when the claim is not already exact;
 8. consequences for the research line.
 
-Preserve enough equations and reasoning that a later researcher or adversary can audit the claim without reconstructing the original chat.
+Preserve enough equations/reasoning that a later researcher or adversary can audit the claim without reconstructing chat or deleted review history.
 
-Substantive changes to an existing published finding are discoverable through Git and must not silently change the identity into a different claim. In particular, never edit a finding while it has an open review. If a review forces a materially different claim, withdraw the old target and create a new finding ID as defined by `mathia-research-review`.
-
-Minor exposition/source clarifications that leave the mathematical claim unchanged may update the existing finding normally when useful.
+Do not add special review-history sections. When a review strengthens the same claim, edit the natural mathematical exposition so the current finding is simply the best current version.
 
 ### Review sidecars
 
@@ -233,31 +274,27 @@ Review files live adjacent to their targets:
 research/<line>/findings/<finding>.review.md
 ```
 
-Their complete lifecycle, ownership, turn-taking, deletion semantics, and notification ownership are defined only by `mathia-research-review`. Do not invent local variants.
+Their lifecycle, turn-taking, persistence handshake, deletion semantics, and notification ownership are defined by `mathia-research-review`. Do not invent local variants.
 
 ### `SOURCES.md`
 
-Maintain the literature anchors used to support or falsify stored findings. Record stable bibliographic information and, briefly, what theorem/role the source provides.
-
-Do not turn `SOURCES.md` into a search history or reading diary. A source belongs there when it is a durable dependency or important novelty/prior-art anchor.
+Maintain literature anchors used to support or falsify stored findings. Record stable bibliographic information and briefly what theorem/role each source provides. Do not turn it into search history.
 
 ### `LEAN_CANDIDATES.md`
 
-When present, keep only high-value finite statements with a natural formal core. Separate the local lemma that Lean can reasonably prove from any external analytic or spectral theorem that must remain an explicit assumption.
-
-Formalizability does not upgrade mathematical evidence.
+When present, keep only high-value finite statements with a natural formal core. Separate local formalizable lemmas from external analytic/spectral theorems that remain assumptions. Formalizability does not upgrade evidence.
 
 ## Clue consumer and producer behavior
 
 When `research/<line>/clues/**` exists, use `mathia-research-clues` as the authority for triage and lifecycle.
 
-The Research Watch may also create a clue when its own research or a review response exposes a promising question that is not yet a finding. Keep the clue explicitly below the evidence threshold; do not use clues to avoid the finding gate.
+Research Watch may create a clue when primary research or a review response exposes a promising question that is not yet a finding. Keep clues explicitly below the evidence threshold.
 
-Global/cross-line clue creation is permitted only as defined by `mathia-research-clues` and should be rare and genuinely cross-line.
+Global/cross-line clue creation is permitted only as defined by `mathia-research-clues` and should be genuinely cross-line.
 
 ## Ownership and hard path gate
 
-For a Research Watch on `research/<line>/`, the writable evidence area is limited to:
+For a Research Watch on `research/<line>/`, writable evidence is limited to:
 
 ```text
 research/<line>/README.md
@@ -266,35 +303,37 @@ research/<line>/LEAN_CANDIDATES.md   # only when applicable
 research/<line>/findings/**
 ```
 
-Within `findings/**`, writes to `*.review.md` must obey `mathia-research-review`; ordinary Research Watch ownership does not override the review turn protocol.
+Within `findings/**`, writes to `*.review.md` must obey `mathia-research-review`; ordinary Research Watch ownership does not override turn-taking.
 
-When `mathia-research-clues` is loaded, its explicit clue-path extension also applies.
+An in-place modification of a target with an open review is allowed **only** in the acceptance-pending-persistence stage defined by `mathia-research-review`, and only when the mathematical claim identity is unchanged.
+
+When `mathia-research-clues` is loaded, its clue-path extension also applies.
 
 Do **not** write to:
 
 - `research/<line>/graph/**`;
 - `research/<line>/mind/**`;
 - `research/mind/**`;
-- another research line's evidence;
+- `research/master/**`;
+- another line's evidence;
 - `research/prior_art/**` unless another explicit skill grants it;
 - `docs/`, `experiments/`, code, tests, prompts, or unrelated repository files.
 
-If a candidate requires a code/experiment change, record the mathematical need in a finding or clue when substantive, but do not cross the ownership boundary without a separate task.
-
 ## Publication policy
 
-Scheduled Mathia Research Watches publish substantive research-knowledge improvements directly to the repository default branch. They do not open a PR for routine evidence/review maintenance.
+Scheduled Research Watches publish substantive research-knowledge improvements directly to the repository default branch. They do not open a PR for routine evidence/review maintenance.
 
 Before every commit:
 
 1. refresh the default branch and inspect the complete planned diff;
 2. verify every changed path is inside the allowed evidence/clue/review area;
-3. verify no `graph/`, `mind/`, code, experiment, or unrelated file changed;
+3. verify no `graph/`, `mind/`, `master/`, code, experiment, or unrelated file changed;
 4. verify the update passes the substantive gate;
-5. for review changes, verify `mathia-research-review` turn ownership and convergence rules;
-6. when conceding a review, verify the target and sidecar disappear atomically and any replacement claim has a new non-recycled ID;
-7. verify `README.md`, `SOURCES.md`, or `LEAN_CANDIDATES.md` updates agree with the current canonical findings;
-8. remove unrelated formatting churn.
+5. for review changes, verify `mathia-research-review` turn ownership and persistence stage;
+6. if updating a reviewed target in place, verify the adversary explicitly accepted the mathematics pending persistence and the claim identity remains the same;
+7. if claim identity changes, verify target+sidecar withdrawal and a new non-recycled ID rather than `.v2`;
+8. verify `README.md`, `SOURCES.md`, or `LEAN_CANDIDATES.md` agree with current canonical findings;
+9. remove unrelated formatting churn.
 
 Research-watch commits use:
 
@@ -306,7 +345,7 @@ Examples:
 
 ```text
 research(prime_circle): rule out projective Hill spectrum
-research(prime_flute): answer cusp-universality review
+research(prime_flute): persist critical-line cusp defense
 research(prime_lattice): withdraw invalid mixing claim
 ```
 
@@ -316,23 +355,23 @@ If no substantive mathematical or review outcome improved, do not commit merely 
 
 ## Notification policy
 
-Persistence and notification are deliberately separate thresholds. The default Research Watch notification channel is a **low-noise interruption channel**, not a mirror of normal research activity.
+Persistence and notification are separate thresholds. The default Research Watch channel is a **low-noise interruption channel**, except that adversarial review remains fully observable while the protocol is being validated.
 
 Notify only for:
 
-1. **Workflow/publication failure:** an error, conflict, missing required capability, path/publication-gate failure, or other workflow problem prevents the run from completing its intended research/review persistence correctly.
-2. **Extraordinary mathematical success:** a result that materially changes the RH research program or crosses a comparably high bar. Ordinary positive findings, useful refinements, classicalizations, and routine branch closures do not qualify merely because they are substantive enough to persist.
-3. **Clue acceptance:** a clue changes to `status: accepted`. Do not notify merely for clue proposal, rejection, or resolution; the resulting durable finding, when any, is governed by the ordinary research threshold above.
-4. **Owner-side adversarial review events:** every material review-state change authored by this Research Watch, exactly as defined by `mathia-research-review`, including each substantive `Owner` response and any concession, correction, replacement, or withdrawal caused by review.
+1. **Workflow/publication failure:** an error, conflict, missing required capability, path/publication-gate failure, or other workflow problem prevents intended persistence.
+2. **Extraordinary mathematical success:** a result that materially changes the RH research program or crosses a comparably high bar. Ordinary positives/refinements/classicalizations/closures do not qualify merely because they are persistable.
+3. **Clue acceptance:** a clue changes to `status: accepted`.
+4. **Owner-side adversarial review events:** every material owner-authored transition defined by `mathia-research-review`, including substantive `Owner` responses, persistence of accepted new mathematics into a finding, concessions, corrections, replacements, independent findings arising from review, and withdrawals.
 
-Do **not** notify for ordinary positive findings, routine negative results or dead-end/branch closures, routine prior-art redirects, ordinary commits, source additions, clue proposal/rejection/resolution, unchanged searches, or unchanged runs.
+Do **not** notify for ordinary positive findings, routine negatives/dead ends, ordinary prior-art redirects, routine commits, source additions, clue proposal/rejection/resolution, unchanged searches, or unchanged runs.
 
-Do not notify merely because this watch observes an adversary-side review event. The authoring `mathia-research-adversarial` process owns those notifications under `mathia-research-review`, which prevents duplicate alerts.
+Do not notify merely because this watch observes an adversary-side review event. The authoring adversarial process owns those notifications, preventing duplicates.
 
-A task-specific prompt may impose a stricter threshold, but should normally inherit this section instead of restating it.
+Task-specific prompts should normally inherit this policy rather than restating it.
 
 ## Reporting
 
-At the end of a run, persist and internally summarize whatever the research workflow needs, but surface a user-facing notification only when the notification policy above fires. Review notifications must follow the exact event ownership in `mathia-research-review`.
+At the end of a run, surface only notifications allowed above. Persist routine substantive work silently when notification thresholds are not met.
 
-Do not produce a project-status recap, timeline, daily journal, or routine success/closure message.
+Do not produce project-status recaps, timelines, or daily journals.
