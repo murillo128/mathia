@@ -159,7 +159,7 @@ The two implementations agree to about `2.8e-17`. The deliberately loose finite 
 
 Thus the observed numerical margin to the finite target is about `1.68e-7`, many orders of magnitude larger than the discrepancy between the two floating implementations. Nevertheless, ordinary floating-point agreement is not a proof of (11); this is why the finding remains `NEEDS-AUDIT` rather than `COMPUTATIONAL-INTERVAL`.
 
-A decisive replay is small in logical scope: evaluate the 21,781,? nonzero summands in (9) with directed Arb/MPFR intervals, or equivalently group equal rational distances first, and prove the single rational comparison (11). No optimization is part of the replay.
+A decisive replay is small in logical scope: evaluate the `21,781,056` nonzero summands in (9) with directed Arb/MPFR intervals, or equivalently group equal rational distances first, and prove the single rational comparison (11). No optimization is part of the replay.
 
 ## 5. Exact analytic tail: less than `7e-7`
 
