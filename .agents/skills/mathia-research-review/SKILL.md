@@ -1,6 +1,6 @@
 ---
 name: mathia-research-review
-description: Shared sidecar protocol for adversarial review of Mathia research findings, with turn ownership, convergence by deletion, Git-visible change semantics, clue handoff, and review-notification semantics.
+description: Shared sidecar protocol for adversarial review of Mathia research findings, with turn ownership, durable-math persistence, Git-visible convergence, clue handoff, and review-notification semantics.
 ---
 
 # Mathia Research Review
@@ -9,11 +9,34 @@ description: Shared sidecar protocol for adversarial review of Mathia research f
 
 Use this skill whenever an adversarial process challenges a persisted Mathia research finding or the owning Research Watch responds to that challenge.
 
-The protocol keeps the **claim** and the **review conversation** separate. The finding remains the canonical object consumed by the other research processes; an adjacent `.review.md` file is a temporary dispute sidecar. Git history preserves creation, replies, closure, and withdrawal, so there is no separate review archive or review-status database.
+The protocol keeps the **claim** and the **review conversation** separate. The finding is the canonical current object consumed by other research processes; an adjacent `.review.md` file is temporary dispute state. Git preserves the historical conversation and every previous version of the finding, so the current tree should contain the best current mathematical formulation rather than review history.
 
 This skill defines procedure only. It does not decide which mathematical claims are true and does not grant a caller ownership of unrelated repository paths.
 
-The first version of this protocol applies only to Research-Watch-owned findings. Do **not** create reviews for `mind/**` yet.
+The current protocol applies only to Research-Watch-owned findings. Do **not** create reviews for `mind/**` yet.
+
+## Core persistence principle
+
+A review may discover mathematics that was not present in the target finding. That mathematics must not disappear merely because the sidecar is eventually deleted.
+
+Use this identity rule:
+
+```text
+same mathematical claim + stronger/completed proof or evidence
+    -> update the existing finding in place
+
+materially different, weakened, corrected, or replacement claim
+    -> withdraw the old finding and publish a new finding with a new stable ID
+
+independent durable result discovered during the defense
+    -> publish a separate new finding with a new stable ID
+```
+
+Never create `.v2`, `.v3`, or similar versioned finding paths. A stable finding ID denotes one stable mathematical claim. Git already versions its proof/exposition. If the claim identity changes materially, the finding identity changes.
+
+Do not add an `Adversarial resolution`, review-history, changelog, or similar section merely to record the review. Integrate accepted mathematics into the natural claim/derivation/evidence/boundary sections of the finding. Git is the historical record.
+
+An `M <finding>.md` event is intentionally part of the research change stream: Mind, Graph, Master, and other consumers can discover that the current evidence changed without requiring a new finding ID.
 
 ## Reviewable objects
 
@@ -86,15 +109,15 @@ The owner appends:
 
 If the objection survives, the adversary appends another `## Adversary` section, and so on.
 
-Do not add timestamps, run logs, confidence percentages, workflow statuses, TODO queues, or duplicated copies of the target claim. The Git history already records chronology.
+Do not add timestamps, run logs, confidence percentages, workflow statuses, TODO queues, or duplicated copies of the target claim. Git already records chronology.
 
 ## Turn ownership
 
 The last substantive speaker determines whose turn it is:
 
 ```text
-last speaker Adversary -> only the finding owner should answer
-last speaker Owner     -> only the adversary should answer
+last speaker Adversary -> only the finding owner should answer or perform an owner-side persistence action
+last speaker Owner     -> only the adversary should judge/continue/close
 ```
 
 Do not append another comment when it is not your turn. Do not create parallel sidecars for the same target.
@@ -116,46 +139,109 @@ The adversary opens a sidecar only for a **material** objection. Good reasons in
 
 Do not open a review for style, wording preference, desire for a prettier proof, an unrelated alternative research direction, or generic skepticism without a falsifiable objection.
 
-The first adversary comment should identify the exact claim under attack, give the strongest current argument against it, and state what would resolve the objection when that is knowable.
+The first adversary comment should identify the exact claim under attack, give the strongest current argument against it, and state what would resolve the objection when knowable.
 
 ## Owner response
 
 Before answering, the finding owner must independently reconstruct the relevant derivation and seriously test the objection. Do not defend a claim merely because the owner created it.
 
-The owner has two principal outcomes.
+### Defend the current claim
 
-### Defend the claim
+If the objection can be answered while the **same mathematical claim** remains correct:
 
-If the objection can be answered while the persisted finding remains materially correct:
-
-1. keep the finding unchanged while the review is open;
+1. while the objection is still awaiting adversary judgment, keep the finding unchanged;
 2. append an `## Owner` response with the decisive argument/evidence;
-3. leave the sidecar in place for the adversary to judge.
+3. leave the sidecar in place for adversary judgment.
 
-Do not delete the sidecar yourself after a defense. Closure in this direction belongs to the adversary.
+The owner response may contain mathematics not yet in the finding because the adversary has not accepted it yet. If that mathematics later becomes necessary to the accepted defense, it must be materialized before the review closes.
 
-### Concede the objection
+### Concede or materially change the claim
 
-If the objection shows that the persisted claim is materially wrong or no longer deserves to exist in its current form:
+If the objection shows that the stored mathematical claim is materially wrong, overstated, or must change identity:
 
 1. delete the target finding;
 2. delete its `.review.md` sidecar in the **same commit**;
-3. if a corrected or narrower claim remains substantively valuable, publish it as a new finding with a new stable finding ID rather than silently repurposing the withdrawn claim;
-4. update other owner-controlled branch artifacts only when necessary to remove a now-invalid direct dependency and when the owning skill permits it.
+3. if a corrected/narrower/replacement claim remains substantively valuable, publish it as a new finding with a new stable ID;
+4. never create `<old-id>.v2` or silently repurpose the old ID;
+5. update other owner-controlled branch artifacts only when necessary and permitted by the owning skill.
 
-The deletion is the resolution signal. Do not leave a tombstone finding or a `status: invalidated` replacement merely to preserve history; Git already preserves it.
+The deletion is the resolution signal for the old claim. Do not leave a tombstone finding or `status: invalidated` replacement merely to preserve history.
 
-If the owner is not yet able to resolve or materially answer the objection, leave the review unchanged. An open review is allowed to survive multiple scheduled runs.
+If the owner cannot yet materially answer the objection, leave the review unchanged.
 
-## Adversary response and closure
+## Adversary judgment
 
-When the last speaker is the owner, the adversary re-evaluates the claim from scratch using the response and relevant evidence.
+When the last substantive speaker is `Owner`, the adversary re-evaluates the target from scratch using the response and relevant evidence.
 
-If the owner has resolved the objection, the adversary deletes **only** the `.review.md` sidecar. The target remains. This means the review converged in favor of the claim.
+There are three outcomes.
 
-If the objection remains, the adversary appends another `## Adversary` section explaining the remaining issue. Do not restate already resolved points merely to continue the conversation.
+### 1. Objection remains
+
+Append another `## Adversary` section containing only the unresolved issue or a materially stronger objection. Do not restate resolved points merely to continue the conversation.
+
+### 2. Defense succeeds and adds no missing durable mathematics
+
+If the target finding already contains everything needed for the accepted claim and the owner response only clarified/recombined material already persisted, delete **only** the `.review.md` sidecar. The target remains unchanged.
+
+### 3. Defense succeeds but relies on new durable mathematics
+
+If the objection is mathematically resolved **but the accepted resolution depends on a proof step, hypothesis analysis, source bridge, boundary argument, or other durable result not currently present in the canonical finding**, do **not** delete the sidecar yet.
+
+Append a concise `## Adversary` turn stating that the mathematical objection is resolved but closure is pending persistence of the accepted mathematics. Identify what must be materialized, without dictating prose or requiring a review-history section.
+
+This returns the turn to the owner.
 
 The adversary never edits or deletes the target finding.
+
+## Owner persistence after provisional acceptance
+
+When the last `## Adversary` turn says the objection is resolved pending persistence, the owner must decide how the accepted new mathematics relates to the claim.
+
+### Same claim: update in place
+
+If the mathematical claim is unchanged:
+
+1. update the existing finding in place (`M <finding>.md`);
+2. integrate the accepted mathematics into the natural derivation/evidence/boundary sections;
+3. do not add review-history prose;
+4. append a concise `## Owner` turn confirming that the accepted mathematics is now persisted in the target;
+5. leave the sidecar for final adversary verification.
+
+This is the **sole protocol-authorized exception** to any caller rule saying that a target finding must remain byte-for-byte unchanged while a sidecar exists. It is allowed only after the adversary has accepted the mathematics and explicitly requested persistence.
+
+### Independent durable result: new finding
+
+If the defense produced a mathematically independent result that deserves its own stable claim:
+
+1. keep the original target unchanged if its claim remains valid;
+2. publish the independent result as a new finding with a new stable ID;
+3. append a concise `## Owner` turn linking/identifying that new persisted result;
+4. leave the sidecar for final adversary verification.
+
+### Claim identity changed after all
+
+If materialization reveals that the original claim must actually be weakened/corrected/replaced, follow the concession rule: delete the old target and sidecar together and create a new finding ID when warranted.
+
+## Final adversary closure
+
+When the owner has persisted accepted mathematics and the last speaker is `Owner`, the adversary verifies that:
+
+- the current target still states the same claim that was defended;
+- the accepted argument/evidence is actually present and no stronger than justified; or
+- any independent new finding contains the durable result it was meant to preserve.
+
+If verification passes, delete only the `.review.md` sidecar. If persistence introduced a material new problem, append a new `## Adversary` turn instead.
+
+Thus a successful same-claim repair normally produces this Git-visible sequence:
+
+```text
+A/M  <finding>.review.md   objection / dialogue
+M    <finding>.md          accepted mathematics materialized
+M    <finding>.review.md   owner confirms persistence
+D    <finding>.review.md   adversary closes
+```
+
+Other agents can therefore discover the durable mathematical change directly from `M <finding>.md`; they never need to reconstruct the deleted sidecar history.
 
 ## Review notification policy
 
@@ -165,24 +251,25 @@ Notify for all of the following:
 
 - creation of a new `.review.md` sidecar;
 - every substantive `## Owner` response;
-- every substantive follow-up `## Adversary` response;
+- every substantive follow-up `## Adversary` response, including provisional acceptance pending persistence;
+- owner persistence of accepted new mathematics into an existing finding;
 - an owner concession that withdraws the reviewed finding;
-- a corrected or replacement finding created because a review invalidated or materially narrowed the old claim;
-- adversary deletion of the sidecar because the owner's defense resolved the objection;
+- a corrected, replacement, or independent finding created because of review;
+- adversary deletion of the sidecar after a defense or persistence verification succeeds;
 - any other material review-protocol transition that changes the mathematical disposition of the disputed claim.
 
-Do not notify for merely observing an existing review, an unchanged review waiting for the other participant, acknowledgements, duplicate objections, or runs in which the review state did not materially change.
+Do not notify for merely observing an existing review, an unchanged review waiting for the other participant, acknowledgements, duplicate objections, or runs in which review state did not materially change.
 
-To avoid duplicate notifications, **the process that authors the review-state change owns its notification**:
+To avoid duplicate notifications, **the process that authors the state change owns its notification**:
 
 ```text
-Adversary opens/continues/closes review -> Adversarial Research notifies
-Owner answers/concedes/replaces claim   -> owning Research Watch notifies
+Adversary opens/continues/provisionally accepts/finally closes -> Adversarial Research notifies
+Owner answers/persists/concedes/replaces                         -> owning Research Watch notifies
 ```
 
-A process must not notify merely because it later observes a transition already authored by the other side.
+A process must not notify merely because it later observes a transition authored by the other side.
 
-Task-specific prompts should not duplicate this review-notification matrix unless they intentionally impose a temporary stricter policy. This shared skill is the default source of truth for review notification semantics.
+Task-specific prompts should not duplicate this matrix unless intentionally imposing a stricter policy. This shared skill is the default authority for review notification semantics.
 
 ## Git as the change stream
 
@@ -192,16 +279,16 @@ Processes that consume research changes should, when they have a previous proces
 
 ```text
 A  <finding>.md            new claim
-M  <finding>.md            changed claim
-A  <finding>.review.md     new adversarial objection
-M  <finding>.review.md     new dialogue turn
-D  <finding>.review.md     review converged
+M  <finding>.md            stronger/completed evidence for the same claim
 D  <finding>.md            claim withdrawn
+A  <finding>.review.md     new adversarial objection
+M  <finding>.review.md     dialogue/persistence turn
+D  <finding>.review.md     review converged
 ```
 
-A deleted finding is no longer part of the current research corpus even though it remains recoverable from history.
+A deleted finding is no longer part of the current research corpus even though recoverable from history. A modified finding remains the same claim identity and is intentionally a discoverable new evidence event.
 
-The current tree remains authoritative for whether a review is open: if a sidecar exists, the target is under active challenge; if no sidecar exists, there is no open adversarial objection under this protocol.
+The current tree remains authoritative for whether a review is open.
 
 ## Clues discovered during review
 
@@ -218,7 +305,7 @@ Do not bury such a lead in a long review thread when it deserves independent res
 
 ## Ownership extension
 
-This skill grants only the narrow sidecar actions required by the protocol.
+This skill grants only the narrow actions required by the protocol.
 
 ### Adversary
 
@@ -238,7 +325,13 @@ May append owner responses to:
 research/<line>/findings/*.review.md
 ```
 
-and, when conceding, may delete the target finding and its sidecar together. The Research Watch's own skill remains authoritative for all other finding-path writes.
+It may:
+
+- delete target + sidecar atomically when conceding;
+- after explicit adversary acceptance-pending-persistence, modify the existing target **only when the mathematical claim remains the same**;
+- create a new finding ID for a materially different/replacement or independent durable claim.
+
+The Research Watch's own skill remains authoritative for all other finding-path writes.
 
 Clue writes require `mathia-research-clues`; this skill does not independently grant clue ownership.
 
@@ -249,8 +342,10 @@ Before publishing any review-protocol change:
 1. verify the target exists unless the owner is atomically withdrawing it;
 2. verify the sidecar name exactly matches the target;
 3. verify it is the caller's turn;
-4. verify the diff contains no unauthorized target, mind, graph, prior-art, code, experiment, or unrelated changes;
-5. ensure the comment materially advances the mathematical dispute;
-6. ensure a convergence deletion follows the exact owner/adversary rules above.
+4. verify any in-place target modification occurs only after explicit adversary acceptance-pending-persistence and preserves the same mathematical claim;
+5. verify any materially changed/replacement claim gets a new finding ID rather than `.v2` or silent repurposing;
+6. verify the diff contains no unauthorized mind, graph, prior-art, code, experiment, or unrelated changes;
+7. ensure every comment or persistence edit materially advances the mathematical dispute;
+8. ensure a convergence deletion follows the exact owner/adversary rules above.
 
 Review dialogue is not a run log. If nothing material changed, commit nothing.
