@@ -17,7 +17,7 @@ The adversary does **not** rewrite findings and does not maintain the Mathia min
 .agents/skills/mathia-research-review/SKILL.md
 ```
 
-Load that skill before doing substantive review work. When a review exposes a genuinely separate research lead, also load:
+Load that skill before doing substantive review work. Its review lifecycle and notification ownership are authoritative. When a review exposes a genuinely separate research lead, also load:
 
 ```text
 .agents/skills/mathia-research-clues/SKILL.md
@@ -123,7 +123,7 @@ A good initial review states:
 
 Do not open reviews for prose style, optional exposition, preference for another approach, or speculative research ideas that do not actually undermine the claim.
 
-Follow the sidecar naming, dialogue format, turn ownership, and convergence rules in `mathia-research-review` exactly.
+Follow the sidecar naming, dialogue format, turn ownership, convergence rules, and notification ownership in `mathia-research-review` exactly.
 
 ## Re-evaluating an owner response
 
@@ -213,13 +213,20 @@ research(adversarial): tighten convergence objection
 
 Do not commit merely to record that a scheduled adversarial pass ran or that several findings looked correct.
 
+## Notification policy
+
+For adversarial-review activity, follow `mathia-research-review` in full-observability mode. This task notifies for every material adversary-side event it authors:
+
+- opening a new review sidecar;
+- every substantive follow-up `Adversary` turn;
+- closing/deleting a sidecar because the owner's response resolved the objection.
+
+Also notify when a workflow/publication error prevents the adversarial process from completing or persisting its intended work correctly.
+
+Do not notify for clean audits with no objection, merely observing an owner response before acting on it, ordinary findings that survive audit, clue creation/strengthening, routine commits, or unchanged runs. Owner-authored review events are notified by the owning Research Watch according to `mathia-research-review`; do not duplicate them.
+
+Task-specific prompts should normally inherit this policy rather than restating it.
+
 ## Reporting
 
-Report only material events:
-
-- a new serious review was opened;
-- an owner response was accepted and the review closed;
-- an objection survived and was materially sharpened;
-- a review exposed an unusually consequential clue.
-
-If no material objection or response exists, create no repository churn and keep reporting concise.
+Surface only notifications permitted by the notification policy above. The repository sidecar remains the durable review record; routine successful auditing is silent.
