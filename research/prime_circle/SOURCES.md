@@ -51,6 +51,10 @@ This file records durable literature dependencies used to support or falsify fin
 - P. G. Zograf and L. A. Takhtajan, **On Liouville's equation, accessory parameters, and the geometry of Teichmüller space for Riemann surfaces of genus 0**, *Mathematics of the USSR-Sbornik* 60:1 (1988), 143–161. DOI: 10.1070/SM1988v060n01ABEH003160. Role: accessory parameters as derivatives of the classical Liouville action and the Weil-Petersson geometry of punctured spheres; primary prior-art anchor for the nonlinear uniformization direction of PC-017 and the symmetry restriction in PC-028.
 - L. A. Takhtajan and P. G. Zograf, **Hyperbolic 2-spheres with conical singularities, accessory parameters and Kähler metrics on `M_{0,n}`**, *Transactions of the American Mathematical Society* 355:5 (2003), 1857–1867. DOI: 10.1090/S0002-9947-02-03243-9. arXiv:math/0112170. Role: Liouville action as a generating function for accessory parameters and Kähler-potential interpretation on moduli; supports the surviving collective Liouville/Weil-Petersson branch after PC-028.
 
+## Cyclic symmetry in moduli and Weil–Petersson eigenspaces
+
+- Pierre Lochak, **On arithmetic curves in the moduli spaces of curves**, *Journal of the Institute of Mathematics of Jussieu* 4:3 (2005), 443–508. DOI: 10.1017/S1474748005000101. Role: explicitly identifies the genus-zero roots-of-unity configuration `(0,1,zeta,...,zeta^{r-1},infinity)` as a maximal cyclic special point, gives the standard rational basis of its quadratic-differential cotangent space, diagonalizes the rotation action, and notes that the finite automorphism is an isometry for the Weil–Petersson scalar product; direct prior-art anchor for the character-mode part of PC-040.
+
 ## Hyperbolic/de Sitter duality and ideal-circle geometry
 
 - John G. Ratcliffe, **Foundations of Hyperbolic Manifolds**, 3rd ed., Graduate Texts in Mathematics 149, Springer (2019). DOI: 10.1007/978-3-030-31597-9. Role: standard hyperbolic, inversive, Poincaré-disk, and Lorentz-model background for the intrinsic orthogonal-circle construction in PC-031.
