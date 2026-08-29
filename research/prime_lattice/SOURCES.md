@@ -60,7 +60,7 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 ## Nyman–Beurling / Möbius Hardy approximation
 
 14. **Bhaskar Bagchi**, “On Nyman, Beurling and Baez-Duarte's Hilbert space reformulation of the Riemann hypothesis,” *Proceedings of the Indian Academy of Sciences — Mathematical Sciences* **116**(2) (2006), 137–146. DOI: https://doi.org/10.1007/BF02829783. arXiv: https://arxiv.org/abs/math/0607733.
-    - Role: source for the Hardy half-plane reformulation `RH <=> E in closure(span{G_k}) in H^2(C_{1/2})` used in `PL-008`.
+    - Role: source for the Hardy half-plane reformulation `RH <=> E in closure(span{G_k}) in H^2(C_{1/2})` used in `PL-008` and for the integer dilation semigroup/Mellin totality formulation used in `PL-017`.
 
 15. **Aditya Ghosh, Kobi Kremnizer, S. Waleed Noor, Charles F. Santos**, “Zero-free half-planes of the `zeta`-function via spaces of analytic functions,” *Advances in Mathematics* **455** (2024), Article 109872. DOI: https://doi.org/10.1016/j.aim.2024.109872. arXiv: https://arxiv.org/abs/2206.00434.
     - Role: establishes a broader function-space framework in which completeness/closure properties imply zero-free half-planes, showing that the Hardy approximation route in `PL-008` belongs to an established research program rather than a new prime-lattice mechanism.
@@ -143,3 +143,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 36. **Titus Hilberdink**, “Matrices with multiplicative entries are tensor products,” *Linear Algebra and its Applications* **532** (2017), 179–197. DOI: https://doi.org/10.1016/j.laa.2017.06.037.
     - Role: broader prior-art anchor for `PL-016`. Proves that infinite matrices whose entries are multiplicative functions of two variables decompose as infinite tensor products over primes, with applications to explicit eigenvalues and multiplicative Toeplitz/Hankel operators.
+
+## Continuous Nyman scale completion and discrete strengthening
+
+37. **Nikolai Nikolski**, “Distance formulae and invariant subspaces, with an application to localization of zeros of the Riemann `zeta`-function,” *Annales de l'Institut Fourier* **45**(1) (1995), 143–159. DOI: https://doi.org/10.5802/aif.1451.
+    - Role: primary source for `PL-018`. Under Mellin, makes the continuous Nyman space invariant under the full multiplicative-shift semigroup, applies Beurling factorization, identifies its Blaschke zeros exactly with shifted zeta zeros, eliminates the possible singular inner factor, and relates reproducing-kernel distances to zero-free regions.
+
+38. **Luis Báez-Duarte**, “A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis,” *Atti della Accademia Nazionale dei Lincei. Classe di Scienze Fisiche, Matematiche e Naturali. Rendiconti Lincei. Matematica e Applicazioni* **14**(1) (2003), 5–11. arXiv: https://arxiv.org/abs/math/0202141.
+    - Role: discrete-scale anchor for `PL-017` and `PL-018`. Proves that the Nyman-Beurling RH criterion remains equivalent when the continuum of real dilations is restricted to positive integer dilations, isolating the sparse arithmetic family corresponding to `a=1/n` and hence to prime-exponent semigroup times `log n`.
