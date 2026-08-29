@@ -1,56 +1,44 @@
-# MI-002 — The surviving arithmetic variable is relational and multiscale
+# MI-002 — Relational memory is necessary locally, but arithmetic specificity requires a global anchor
 
 **Evidence level:** supported
 
 ## Core intuition
 
-The strongest Mathia constructions repeatedly remove a large universal or gauge-like absolute scale and retain a **relation**: a cross-ratio, gap ratio, cuff contrast, two-point conformal defect, or interscale spectral response.  The newer flute results sharpen this: the useful relation need not be a static ratio.  It can be a directed multiscale memory in which the response at one scale depends on the immediately stronger scale that preceded it.
+Mathia's strongest local mechanisms often emerge only after quotienting away an absolute scale: cross-ratios, cuff contrasts, mixed conformal defects, target-relative projection data, and cross-boundary variational couplings all survive where absolute coordinates or scalar summaries fail. But the newest controls show that **being relational is not enough to be arithmetic**. The relation must also be tied to a globally distinguished arithmetic structure that matched non-prime systems do not share.
 
-## Strongest current claim
+## Strongest current principle
 
-For prime-flute occurrences near a large common prime scale `P`,
+Prime Flute provides the positive local side. In a graded hyperbolic chain, an individual resolved eigenvalue contains a leading neck scale together with the upstream Feshbach correction `w_j^2/w_{j-1}`. After conversion to cuffs/gaps, this is a directed relation between adjacent relational scales. Scalar pseudodeterminants erase that memory, so retaining the marked mode matters (PF-080, PF-089--PF-091).
 
-\[
-\ell_i(P)=2\log(4P/d_i)+o(1),
-\]
+The same branch also supplies the warning. Projective gap relations have exact all-composite clones, and PF-106 constructs the much stronger exact-cotangent control `p_n+1`: after canonical normalization its sampled endpoints are `ell^1`-close to the prime endpoints and all-span tail cross-ratios differ by only `O(P^-3)`. Thus even a rich family of relations can fail to be prime-specific when a matched composite system carries essentially the same marked tail geometry.
 
-so common divergence disappears from differences and adjacent gap ratios become cuff contrasts.  In a graded pinching chain the resolved surface eigenvalue at the `j`-th weak neck has the form
+Prime Lattice gives the global analogue. PL-015 shows that the entire free exponent architecture, strong counting regularity, and arbitrary finite prime prefixes survive Beurling deformations with incompatible RH behavior. PL-014 identifies what those controls generally lack: the exact rational-prime norm embedded in the adelic/product-formula completion. The surviving arithmetic variable is therefore not “relation” in the abstract but a relation anchored to the **exact infinite arithmetic placement and completion**.
 
-\[
-\lambda^{(j)}
-=A_j e^{-C_j/4}
--B_j e^{-(2C_j-C_{j-1})/4}
-+o\!\left(e^{-(2C_j-C_{j-1})/4}\right),
-\qquad C_j=\ell_j-\ell_{j+1},
-\]
+Prime Circle reinforces the same boundary from a different direction. Anchoring and nonlocality prevent some gauge losses, yet PC-032--PC-037 show that many one-shell relational/spectral constructions still collapse to classical regular-polygon or Dirichlet/divisor data. Cross-level or genuinely nonlinear coupling is required before a new claim can be made.
 
-with explicit positive constants `A_j,B_j`.  The leading term is one relational scale; the first correction is a **relation between relations**.  This is the first rigorous mechanism in the program where an actual Laplace eigenvalue carries directed upstream memory rather than merely encoding the current gap ratio.
+## Consequence for synthesis
 
-The prime-circle side exhibits the same relational filtration in another language.  For the exact map `V(z)=pi cot(pi/z)`, the divided difference factors into two one-endpoint terms and one genuine two-point term.  Mixed differentiation or a four-point cross-ratio kills the one-endpoint factors and leaves the Grunsky--Schiffer kernel.  Its rectangle integral is exactly a hyperbolic separator-length defect.  Thus the circle-to-flute bridge itself selects relational information before spectralization.
+A plausible RH mechanism should pass two independent tests:
 
-## Synthesis of evidence
+1. **local memory:** after natural gauge reduction, does the observable retain the ordered/mixed variable it claims to use?
+2. **global specificity:** is that variable absent, changed, or differently organized in adversarial systems that match the local geometry/combinatorics as deeply as possible?
 
-PF-029/PF-047/PF-074/PF-076 show gap ratios reappearing as hyperbolic moduli, systoles and isoperimetric data.  PF-080/PF-090/PF-091 upgrade this from static ratios to effective-resistance memory `w_j^2/w_{j-1}` in resolved true-surface eigenvalues.  PF-089 shows why that distinction matters: multiplying the modes telescopes the hierarchy and leaves only endpoint contrast.
+Passing the first test without the second produces a good geometric coordinate, not yet an arithmetic selector.
 
-On the circle side, PC-013/PC-014/PC-018 show that absolute one-dimensional transports are often gauge/subdivision data, while PF-082/PF-085 show that the first exact nonprojective defect survives as a mixed two-point invariant.  PC-019 gives the opposite warning: quotienting away the anchor entirely destroys arithmetic distinction.
+## Evidence against overgeneralization
 
-## Boundary cases and failure modes
-
-Not every relative quantity is meaningful.  A marked sojourn difference may simply be a classical shear coordinate; an arbitrary generating function of gap ratios adds no structure; and PF-088 shows that a sharp `1/4` threshold can be entirely due to one-dimensional propagation even though it is expressed through a relative operator.
-
-Likewise, the multiscale eigenvalue law is a theorem for finite hyperbolic chains in a graded Burger window, but recurrent realization of that moderate window by actual consecutive prime blocks is not yet proved.  The program should therefore distinguish **geometric relational mechanisms** from **arithmetic recurrence of the required moduli**.
+This does not imply that only adelic objects can succeed, nor that local spectral memory is unimportant. A local mechanism may become decisive after coupling to a global normalization, target, or completion. The point is that local relational richness and arithmetic uniqueness are separate properties and must be proved separately.
 
 ## Status / novelty
 
-Exact/asymptotic for the displayed circle and flute conversions; supported as a program-wide principle.  Cross-ratios, Grunsky kernels, Burger degeneration and Feshbach theory are classical.  The potentially new content is their composition into a directed multi-gap spectral-memory mechanism tied to the exact prime-derived geometry.
+The local memory formulas and matched controls are persisted evidence; the two-stage interpretation is a supported cross-branch synthesis.
 
 ## Falsification criterion
 
-Find a robust prime-specific spectral mechanism in this program whose decisive information is an absolute local scale that cannot be rewritten after natural symmetry reduction as a relational invariant, or prove that the apparent upstream correction is removable by a canonical coordinate change and contains no information beyond the current ratio.
+Find a canonical invariant that depends only on a locally relational structure already shared by the strongest matched non-prime controls, but nevertheless forces a Riemann-specific conclusion without any additional global arithmetic anchor or completion.
 
 ## Lean-formalizable core
 
-- Conversion from cuff differences to gap ratios.
-- Cross-ratio invariance under Möbius normalization.
-- Cotangent divided-difference factorization and cancellation of one-endpoint factors.
-- Algebraic conversion of `w_j^2/w_{j-1}` to the corresponding three-gap/two-cuff-contrast expression.
+- Algebraic conversion of `w_j^2/w_{j-1}` to a relation-between-cuff-contrasts.
+- Invariance/equivalence tests for matched cross-ratio data.
+- Abstract two-stage lemma separating preservation of a local variable from uniqueness of the global source producing it.

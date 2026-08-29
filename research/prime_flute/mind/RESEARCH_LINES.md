@@ -18,10 +18,10 @@ Develop relative or localized Weyl/scattering objects for isolated finite tangen
 
 The decisive test is an operator-level localization statement that both converges to the finite-tangent marked object behind escaping collars and embeds that information canonically into the infinite-flute spectral representation. Any scalar compression proposed afterwards should have its fibers computed on the tangent family before it is used.
 
-## Relative spectral theory after canonical background subtraction
+## Determine the relative operator class of the affine all-composite clone
 
 **Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`.
 
-Search only for relative constructions whose reference shares the absolute essential/orbit pathology and whose subtraction is forced by the geometry rather than chosen to rescue a divergent Euler product. Candidate residuals should remain operator-valued or marked long enough to retain ordered prime-gap fluctuations.
+PF-106 gives the strongest current matched control: after a canonical Möbius normalization, the all-composite sequence `p_n+1` has `ell^1` sampled-endpoint displacement from the exact prime flute, `O(P^-3)` all-span tail cross-ratio distortion, and a natural piecewise-affine boundary matching with finite `L^1` derivative defect. What is not known is whether this boundary comparison extends equivariantly to the quotient surfaces with enough analytic control to compare their Laplacians.
 
-The decisive tests are twofold: prove the relative object is analytically well defined despite the absolute non-Fredholm background, and run the identical construction on integers or smoother matched controls. Thresholds or singularities that survive unchanged belong to propagation/carrier geometry; only residual data that changes with the ordered prime structure remains a candidate arithmetic signal.
+The decisive test is to prove either a canonical surface comparison implying compact/Schatten/trace-class control of an appropriate relative resolvent, heat kernel, or scattering operator, or a precise obstruction showing why the collapsing infinite-type geometry amplifies the summable endpoint defect into a noncompact operator difference. Either outcome would sharply locate the only exact-tail spectral information not already killed by the composite-clone controls.

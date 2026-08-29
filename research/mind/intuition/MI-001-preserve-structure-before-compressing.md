@@ -1,43 +1,50 @@
-# MI-001 — Preserve structure before compressing
+# MI-001 — Preserve the discriminating structure before compressing
 
 **Evidence level:** supported
 
 ## Core intuition
 
-Across the prime-circle and prime-flute branches, the recurring failure mode is **premature quotienting**.  Geometry may contain arithmetic information and still lose it when pushed too early through a path monodromy, local jet, unmarked spectrum, trace, or scalar determinant.  The successful constructions keep enough structure alive until the relevant relational variable has entered an injective or marked observable.
+Across Mathia, the recurring failure is not “spectralization” or “taking a scalar” in the abstract. It is applying a transformation that is non-injective on the **particular distinction later claimed to be arithmetic**. The safe procedure is to compute the fibers, symmetries, common factors, and operator category of every compression before interpreting its spectrum, determinant, positivity, or critical exponent.
 
 ## Strongest current principle
 
-A credible Mathia mechanism should pass an information-preservation audit at every transformation.  If a map identifies prime-derived configurations already known to be distinct, telescopes interior refinements, or multiplies resolved modes in a way that cancels their interscale displacement, no later zeta or spectral manipulation can canonically reconstruct the discarded information without adding new data.
+Several branches now exhibit mathematically different forms of the same information-loss mechanism.
 
-The audit now has several mathematically distinct examples:
+- **Prime Circle:** unmarked shells identify distinct levels; first-order transports telescope; single-shell rotation-invariant harmonic operators diagonalize and reduce to divisor/Dirichlet data (PC-019, PC-030, PC-032--PC-037).
+- **Prime Flute:** unmarked spectra and scalar determinants can erase ordered multi-neck memory even when resolved eigenvalues retain it; globalization can also change a finite tangent pole into essential spectrum (PF-048--PF-052, PF-089--PF-092).
+- **Prime Lattice:** the common off-line Blaschke factor is invisible to every generator Gram matrix, while the RH statement remains target/model-space totality (PL-017, PL-019, PL-020).
+- **Weil Inertia:** fixed-block pinching is exactly a restriction of the global Fenchel feasible set, so it discards cross-boundary witness coordinates that remain present in the same support-one data (WI-012).
+- **Weil Positivity:** universal projection/Gram positivity can merely repackage totality, and bounded positive repairs of a trace-class geometric coupling cannot cross the operator-ideal boundary to the non-Hilbert--Schmidt finite-Weil operator (WP-010, WP-014).
 
-- **quotient loss:** an unmarked primitive shell identifies `n` with `2n` (PC-019);
-- **transport loss:** first-order projective/Euclidean path laws telescope interior refinements (PC-013/PC-014/PC-018);
-- **local-jet loss:** the anchored one-shell jet reduces to classical Jordan-totient data (PC-020);
-- **spectral-mark loss:** unmarked weighted-path spectra are not generally inverse-unique, while endpoint spectral measures are (PF-048/PF-049/PF-052);
-- **determinant loss:** the `w_j^2/w_{j-1}` multiscale memory carried by individual low modes cancels in the path pseudodeterminant, which telescopes to endpoint scale data (PF-089);
-- **globalization loss/change of category:** a finite-tangent pole can become an essential spectral point when the tangent recurs along the infinite flute (PF-092).
+These are not one theorem, but they support one robust rule:
 
-The positive side is equally important.  Multi-gap cross-ratios survive Möbius normalization, become genuine finite-type moduli, and enter resolved hyperbolic eigenvalues.  PF-090/PF-091 show that, in a quantitative multiscale window, even the first upstream Feshbach memory survives into the **actual** surface eigenvalues.  The information is present until scalar determinant compression removes it.
+\[
+\boxed{
+\text{before compressing, identify exactly which equivalence relation the compression imposes.}
+}
+\]
+
+If two configurations differing in the target variable have already become equivalent, no later unmarked function of the compressed object can canonically recover that difference without new information.
+
+## Positive examples
+
+Compression is useful when its fibers are controlled. Prime-Flute endpoint spectral measures/Weyl data can determine an ordered finite weighted path even when its unmarked eigenvalues cannot. The full Fenchel dual in Weil Inertia is itself a compression of matrix information, but it retains the cross-boundary coordinates discarded by block pinching. The criterion is therefore **information preservation on the relevant family**, not maximal dimensionality.
 
 ## Evidence against overgeneralization
 
-Compression is not intrinsically destructive.  It is harmless or useful when it is injective on the restricted family: the four-punctured tangent systole determines the unordered adjacent-gap contrast, and an endpoint Jacobi `m`-function determines an ordered finite weighted path.  Likewise, PF-085 shows that a two-point conformal kernel can retain genuine exact-circle information while still being trace class; “preserved” does not mean “spectrally singular.”
-
-The criterion is therefore not “avoid scalars” or “avoid spectra.”  It is: **compute the fibers of the proposed compression on the prime-derived family before interpreting its analytic features.**
+A map may be globally non-injective yet sufficient for one particular arithmetic predicate. Full reconstruction of the input is unnecessary. Conversely, an injective finite encoding can still be analytically irrelevant to RH. The audit must be relative to the exact distinction being claimed.
 
 ## Status / novelty
 
-This is a program-level synthesis, not a standalone theorem.  Each listed loss mechanism is supported by exact or rigorous local results; the principle that these form a general design rule is supported rather than proved universally.
+This is a cross-branch synthesis, not a standalone theorem. Every listed loss mechanism is grounded in persisted findings; their organization as a design principle is supported.
 
 ## Falsification criterion
 
-Find a canonical construction in which an early map is provably non-injective on the relevant prime-derived configurations, yet a later observable recovers the discarded distinction without receiving any additional mark, label, reference, or external arithmetic input.
+Find a canonical pipeline in which a stage is provably invariant under changing the claimed RH-relevant variable, yet a later observable recovers that variable without receiving any additional target, mark, reference, label, or arithmetic input.
 
 ## Lean-formalizable core
 
-- Representative non-injectivity identities such as `Phi_(2n)(z)=Phi_n(-z)` for odd `n`.
-- Telescoping/semigroup identities for first-order transfer.
-- Matrix-tree identity and two-neck cancellation `mu_+mu_-=3ab`.
-- Injectivity of selected marked spectral maps on finite weighted paths.
+- Representative non-injectivity and telescoping identities.
+- Inner-isometry invariance of Gram matrices.
+- Block-restriction identity inside the Fenchel dual.
+- Operator-ideal invariance under bounded sandwiches.

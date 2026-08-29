@@ -1,71 +1,49 @@
-# MI-003 — Arithmetic significance begins after universal-control subtraction
+# MI-003 — Arithmetic significance begins only after matched-control subtraction
 
 **Evidence level:** supported
 
 ## Core intuition
 
-A striking exponent, singularity, or determinant boundary is not evidence of arithmetic merely because it was discovered on a prime-derived geometry.  Mathia needs a **null-model discipline**: first identify which analytic features are forced by dimension, ordering, density, or the ambient exact map; only the residual that changes when genuinely prime organization is removed can be interpreted as arithmetic signal.
+A critical exponent, self-dual line, positive kernel, resonance threshold, or elegant spectrum is not arithmetic evidence merely because it appears in a prime-derived construction. The control must match the **same information layer** the candidate claims to use. Recent results substantially strengthen this rule: regular lattices are often too weak a null model; useful adversaries can preserve projective geometry, exact sampled tails up to a summable defect, arbitrary finite prime prefixes, or all finite local adelic factors.
 
 ## Strongest justified principle
 
-If a proposed prime-specific spectral feature is reproduced by a featureless control under the same geometric construction, that feature itself belongs to the carrier geometry, not to the primes.  Prime information may still appear in coefficients, subleading terms, ordered fluctuations, or marked responses built on that carrier.
+A proposed arithmetic feature belongs to the background whenever a matched non-prime/control system reproduces the complete input on which that feature depends.
 
-PF-088 is the decisive example.  Replacing the primes by integers while keeping
+Prime Flute supplies a hierarchy of increasingly severe controls. Integer replacement reproduces the selected `1/4` propagation threshold; a single compact endpoint defect does the same; full cusp winding restores a universal `1/2` threshold. More strongly, projective dilation clones preserve the entire tangent process, while PF-106's all-composite affine clone is `ell^1`-close at the exact sampled endpoints and has uniformly vanishing all-span cross-ratio distortion. A tail invariant continuous under that comparison cannot be interpreted as primality-specific without additional residual data.
 
-\[
-V(x)=\pi\cot(\pi/x)
-\]
+Prime Lattice supplies a complementary global control. PL-015 uses Beurling systems with the same abstract exponent cone, comparable square-root counting regularity, and arbitrarily long exact initial rational-prime segments, yet incompatible RH behavior. Finite-dimensional agreement can therefore be made arbitrarily deep while the global zero theory changes.
 
-and the same ordered flute/scattering construction reproduces the sharp threshold
+Weil Positivity sharpens the matching logic again: WP-008 holds the complete finite adelic basic vector fixed while changing only the archimedean Fourier mode and flips the sign of the natural self-duality pairing. Hence “all finite-prime factors match” is still not enough when the claimed mechanism is global/completed.
 
-\[
-\operatorname{Re}s=\frac14
-\]
+## A control ladder
 
-both for the direct relative scattering kernel and for the all-block relative Ruelle sector.  The exponent comes from one-dimensional propagation and square summability:
+Controls should be chosen according to the claimed mechanism rather than by one fixed recipe:
 
-\[
-|i-j|^{-2s}\quad\leadsto\quad
-\sum_m m^{-4\operatorname{Re}s}.
-\]
+1. **regular/density controls** test dimensionality, ordering, and smooth background;
+2. **local-statistics controls** preserve gap marginals or short blocks while destroying order depth;
+3. **geometric clones** preserve projective or asymptotically exact marked geometry while removing primality of the labels;
+4. **finite-prefix arithmetic controls** preserve every inspected prime direction while changing the infinite norm map;
+5. **completion-matched controls** hold finite local data fixed while varying the archimedean/global coupling.
 
-Primes modify the weights and fluctuations but do not cause the exponent.
-
-The same adversarial lesson appears in milder forms elsewhere.  Prime-circle refinement can collapse to classical cyclotomic/Farey/Bost--Connes structures; the exact Grunsky--Schiffer kernel of `V` is defined before any prime sampling; and scalar low-energy determinants obey a universal matrix-tree identity before prime gap asymptotics are inserted.  The arithmetic question starts **after** these universal pieces are factored out.
-
-## A useful hierarchy of controls
-
-For future candidates, a sequence of increasingly matched controls can separate distinct sources of apparent structure:
-
-1. **regular lattice** (`x_n=n`): tests dimensionality, ordering, and the exact ambient map;
-2. **smooth density-matched mesh** (`x_n` with prime-number-theorem scale such as `n log n`): tests whether a phenomenon is only caused by nonuniform mean spacing;
-3. **gap-marginal control**: preserve the multiset or empirical distribution of gaps while destroying their order, testing whether the observable sees merely one-gap statistics;
-4. **ordered local controls**: preserve short blocks but destroy longer correlations, testing the relational depth of a proposed spectral memory.
-
-A candidate that survives deeper controls has a progressively sharper claim about what arithmetic organization it is detecting.  These controls are diagnostics, not substitutes for proof.
+A candidate earns arithmetic interpretation only when the first control level at which it changes matches the information it claims to detect.
 
 ## Evidence against overgeneralization
 
-A universal carrier can still be mathematically essential.  The fact that the `1/4` boundary is non-arithmetic does not make the relative scattering operator useless; prime-specific residues may live inside its trace-class region or in subleading behavior.  Likewise, a classical transform can be the correct coordinate system for new arithmetic information.
+Controls are falsifiers, not proofs. Surviving a strong control does not establish novelty or RH relevance; it only rules out a class of universal explanations. Conversely, a feature shared with a control may still be an essential carrier on which a more discriminating residual is built.
 
-The principle therefore forbids only the inference
-
-\[
-\text{observed on primes}\Rightarrow\text{caused by primes}.
-\]
-
-It does not require every interesting quantity to vanish on controls.
+Canonical subtraction is sometimes possible, but not mandatory. When subtraction is used, its reference must be forced independently of the desired singularity rather than selected post hoc.
 
 ## Status / novelty
 
-The integer-control calculation of PF-088 is proved.  The broader hierarchy of matched controls is a methodological mathematical principle, not a theorem about RH.  Its value is adversarial: it prevents universal geometry from being mistaken for arithmetic structure.
+The individual controls are rigorous persisted findings or literature-backed counterexamples. The hierarchy is a methodological mathematical synthesis.
 
 ## Falsification criterion
 
-The narrow principle is falsified only if a feature mathematically identical under the prime and control constructions can nevertheless be shown to encode a prime-specific distinction **without any additional residual data**.  For a concrete candidate, the decisive test is to compute the same invariant on progressively matched controls and identify the first level at which it changes.
+For a concrete candidate, exhibit two systems that match all inputs the candidate mathematically uses but yield different values of the claimed arithmetic invariant. Conversely, the narrow principle would fail if an invariant identical on such matched systems could nevertheless distinguish them without any additional information.
 
 ## Lean-formalizable core
 
-- Integer-control `p`-series criterion giving the `1/4` threshold.
-- Abstract lemma: equality of an invariant on two inputs implies that invariant alone cannot distinguish those inputs.
-- Finite-sequence permutation tests for observables depending only on a gap multiset versus ordered adjacent pairs/triples.
+- Equality-of-input/equality-of-invariant implications for deterministic constructions.
+- Exact projective clone identities and summable endpoint-control estimates.
+- Finite-prefix indistinguishability as an abstract obstruction to finite-coordinate decision rules.
