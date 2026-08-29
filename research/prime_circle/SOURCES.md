@@ -65,3 +65,9 @@ This file records durable literature dependencies used to support or falsify fin
 ## Generalized Bernoulli special values
 
 - J. Szmidt, J. Urbanowicz and D. Zagier, **Congruences among generalized Bernoulli numbers**, *Acta Arithmetica* 71:3 (1995), 273–278. DOI: 10.4064/aa-71-3-273-278. Role: standard generalized-Bernoulli definition and the exact identity `L(1-m,chi)=-B_{m,chi}/m`; prior-art anchor for the equivalent `L(-1,chi)` form of the pointed inverse-square character spectrum in PC-035.
+
+## Higher even-power trigonometric sums and character weights
+
+- N. Gauthier and P. S. Bruckman, **Sums of the even integral powers of the cosecant and secant**, *The Fibonacci Quarterly* 44:3 (2006), 263–272. DOI: 10.1080/00150517.2006.12428317. Role: differential identities and Mittag-Leffler expansions for all even powers of cosecant/secant; primary prior-art anchor for the analytic ladder used in PC-036.
+- M. Beck and M. Halloran, **Finite Trigonometric Character Sums Via Discrete Fourier Analysis**, *International Journal of Number Theory* 6:1 (2010), 51–67. DOI: 10.1142/S1793042110002806. arXiv:0804.0645. Role: finite trigonometric sums weighted by Dirichlet characters as an established discrete-Fourier/class-number framework; prior-art anchor for PC-036.
+- Jiahang Liu and Guoce Xin, **Root-of-unity weighted trigonometric power sums: a constant term approach**, arXiv:2607.29130 (2026). Role: current systematic formulas for root-of-unity-weighted powers of cotangent, tangent, cosecant, and secant, including all even powers; modern neighboring prior-art boundary for PC-036.
