@@ -40,3 +40,8 @@ This file records only durable literature dependencies for canonical findings in
 ## Global geometric comparison
 
 - **Alain Connes, Caterina Consani, and Matilde Marcolli**, *The Weil proof and the geometry of the adeles class space*, in *Algebra, Arithmetic, and Geometry*, Vol. I, Progress in Mathematics 269, Birkhäuser (2009/2010), 339–405; arXiv: `math/0703392`. Formulates the explicit formula as a Lefschetz-type trace on a global cohomological object and makes the positivity of the resulting trace pairing the number-field analogue to be explained. This is close prior art for any proposed Mathia global quotient/cohomology/compression mechanism.
+
+## Adelic Fourier self-duality and sign control
+
+- **John T. Tate**, *Fourier analysis in number fields and Hecke's zeta-functions*, in J. W. S. Cassels and A. Fröhlich (eds.), *Algebraic Number Theory*, Thompson Book Company, Washington, D.C., 1967, pp. 305–347; originally Princeton PhD thesis (1950). Primary source for the self-dual adelic Fourier transform, Poisson summation, zeta integrals, and functional equation. WP-008 uses the exact Fourier inversion/self-dual local setup to test whether Tate self-duality itself supplies a positive form.
+- **Bjorn Poonen**, *Tate's thesis*, MIT 18.786 Number Theory II lecture notes (Spring 2015), `https://math.mit.edu/~poonen/786/notes.pdf`. Audit-friendly treatment of self-dual local and adelic Haar measures, Fourier inversion, standard unramified vectors, product formula, global zeta integrals, and the twisted dual `chi^vee=chi^(-1)|.|`. WP-008 uses these conventions to keep the finite basic vector fixed while exhibiting opposite-sign even global Fourier eigenvectors.
