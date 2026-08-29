@@ -61,3 +61,7 @@ This file records durable literature dependencies used to support or falsify fin
 ## Inverse-square chord spectra
 
 - F. Calogero and A. M. Perelomov, **Some Diophantine relations involving circular functions of rational angles**, *Linear Algebra and its Applications* 25 (1979), 91–94. Role: classical spectra and trigonometric sums for finite matrices with `sin^{-2}((j-k)pi/n)` entries; primary prior-art anchor for the full regular-polygon inverse-square chord spectrum used in PC-032.
+
+## Generalized Bernoulli special values
+
+- J. Szmidt, J. Urbanowicz and D. Zagier, **Congruences among generalized Bernoulli numbers**, *Acta Arithmetica* 71:3 (1995), 273–278. DOI: 10.4064/aa-71-3-273-278. Role: standard generalized-Bernoulli definition and the exact identity `L(1-m,chi)=-B_{m,chi}/m`; prior-art anchor for the equivalent `L(-1,chi)` form of the pointed inverse-square character spectrum in PC-035.
