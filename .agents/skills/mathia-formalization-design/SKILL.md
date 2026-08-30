@@ -9,6 +9,8 @@ description: Design a Mathia-owned Lean formalization issue with a blocking stat
 
 Use this skill when Mathia wants to test, sharpen, falsify, or machine-check a mathematical claim in Lean.
 
+This skill may also be invoked automatically by `mathia-research-watch` when a canonical finding has a stable, high-value, reusable Lean theorem core. In that case, issue creation is the handoff itself: do not stop at identifying or describing the candidate, and do not require separate user confirmation before creating the issue.
+
 This is a thin specialization of the canonical repository skill:
 
 ```text
@@ -29,6 +31,25 @@ For Mathia formalization work:
 - mathematical discoveries flow back through the controlling Mathia issue.
 
 The issue chooses the smallest sensible Mathia-local path for the formal artifact. Do not freeze a permanent repository layout or formalization framework from this skill alone.
+
+## Automatic research handoff and deduplication
+
+When invoked from `mathia-research-watch`, treat a ready formalization candidate as a control-plane handoff, not as a repository queue entry.
+
+Before creating an issue:
+
+1. identify the exact canonical finding path and stable finding ID that motivate the formalization;
+2. isolate the smallest theorem surface that is mathematically useful and faithful to the persisted finding;
+3. search existing open and closed Mathia issues for the finding ID, equivalent theorem surface, and distinctive target terminology;
+4. inspect existing Mathia Lean/formalization artifacts when relevant to determine whether the target is already formalized or already has a controlling issue;
+5. if an equivalent issue or completed formalization already exists, do not create a duplicate; return that existing control object to the caller instead;
+6. otherwise use `design-github-issue` to create the controlling Mathia issue immediately.
+
+A Research Watch handoff is not complete merely because an issue body was drafted in prose. When GitHub issue creation is available, publish the issue in the same run. If required GitHub write capability is unavailable or publication fails, surface that as a workflow failure rather than silently falling back to a local candidate list.
+
+Do not create or maintain `LEAN_CANDIDATES.md`, TODO files, or another formalization queue. A candidate that is ready for execution is represented by its controlling GitHub issue; a candidate that is not ready remains ordinary research evidence until it matures.
+
+Issue creation does not itself upgrade, validate, or formalize the mathematical claim. The canonical finding remains the research evidence source and Gate 0 remains blocking.
 
 ## Lean environment
 
