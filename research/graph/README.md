@@ -1,14 +1,18 @@
 # Research graph views
 
-This directory owns the **global derived research graph**. Line-local graph views live beside their source knowledge under `research/<line>/graph/`, and prior-art graph views live under `research/prior_art/graph/`.
+This directory owns the **global derived research graph**. Line-local graph views live beside their source knowledge under `research/<line>/graph/`, prior-art graph views live under `research/prior_art/graph/`, and the versioned Riemann approach-space atlas lives under `research/graph/atlas/`.
 
-Findings, mind notes, clues, and canonical prior-art notes remain authoritative. Graph files and Obsidian configuration are presentation state only.
+Findings, mind notes, clues, and canonical prior-art notes remain authoritative. Graph files, atlas weights/states/metrics, and Obsidian configuration are derived presentation/analysis state only.
 
 Procedural authority:
 
 ```text
 .agents/skills/mathia-research-graph-curator/SKILL.md
 ```
+
+## Atlas
+
+Open [[research/graph/atlas/index|Riemann Atlas]] for the current versioned denominator, coverage/pruning metrics, and territory graph. Atlas coverage is coverage of the mapped known approach space, never a percentage of RH solved or of all possible mathematical ideas.
 
 ## Obsidian
 

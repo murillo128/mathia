@@ -10,12 +10,19 @@ derived: true
 
 This is the derived root graph for Mathia research. Source findings and mind notes remain authoritative.
 
-## Line hubs
+## Materialized line hubs
 
 - [[research/prime_circle/graph/index|Prime Circle]]
 - [[research/prime_flute/graph/index|Prime Flute]]
 - [[research/prime_lattice/graph/index|Prime Lattice]]
 - [[research/prior_art/graph/index|Prior-art redirects]]
+
+The Weil Positivity and Weil Inertia lines are current source-backed research lines but do not yet have dedicated local `graph/index.md` projections. Their absence from this hub list is presentation lag, not absence of research.
+
+## Riemann Atlas
+
+- [[research/graph/atlas/index|Riemann Atlas v1]]
+- [[research/graph/atlas/metrics|Atlas metrics]]
 
 <!-- graph:start -->
 ## Global durable intuitions
@@ -23,6 +30,7 @@ This is the derived root graph for Mathia research. Source findings and mind not
 - [[research/mind/intuition/MI-001-preserve-structure-before-compressing|MI-001 — preserve structure before compressing]]
 - [[research/mind/intuition/MI-002-the-surviving-arithmetic-variable-is-relational|MI-002 — surviving arithmetic variable is relational]]
 - [[research/mind/intuition/MI-003-arithmetic-significance-begins-after-universal-control-subtraction|MI-003 — subtract universal controls first]]
+- [[research/mind/intuition/MI-004-critical-axis-is-not-zero-selection|MI-004 — critical axis is not zero selection]]
 - [[research/mind/RESEARCH_LINES|Global Mathia research lines]]
 
 ## Cross-line relation nodes
@@ -34,5 +42,5 @@ This is the derived root graph for Mathia research. Source findings and mind not
 
 ## Current integration boundary
 
-The global `mind/` synthesis currently integrates Prime Circle and Prime Flute. Prime Lattice was persisted later and has no global-mind integration yet. This graph exposes Prime Lattice as a full line hub but does not invent cross-line MI relationships for it.
+The current global `mind/` synthesis integrates evidence from all five current lines: Prime Circle, Prime Flute, Prime Lattice, Weil Positivity, and Weil Inertia. Riemann Atlas v1 is derived directly from the current source tree plus the calibrated prior-art projection; graph-node counts are not used as its denominator.
 <!-- graph:end -->
