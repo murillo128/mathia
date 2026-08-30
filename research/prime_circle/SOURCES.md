@@ -117,3 +117,10 @@ This file records durable literature dependencies used to support or falsify fin
 ## Unitary time operators and additive covariance
 
 - Daiju Funakawa, Yasumichi Matsuzawa, Itaru Sasaki, Akito Suzuki and Noriaki Teranishi, **Time operators for quantum walks**, *Letters in Mathematical Physics* 110:9 (2020), 2471–2490. DOI: 10.1007/s11005-020-01299-5. arXiv:1901.10665. Role: established unitary time-operator/strong additive commutation framework, including self-adjoint discrete-spectrum examples for discrete-time quantum walks; prior-art boundary for PC-070, whose obstruction comes from the fixed mode and infinite bilateral-orbit multiplicity of the Prime-Circle solenoid dilation rather than from additive covariance in general.
+
+## Rational/projective heights and primitive lattice zeta
+
+- Stephen Hoel Schanuel, **Heights in number fields**, *Bulletin de la Société Mathématique de France* 107 (1979), 433–449. DOI: 10.24033/bsmf.1905. Role: classical bounded-height counting on projective space; prior-art anchor for the standard rational/projective height used in PC-074.
+- Gabriel A. Dill, **On the frequency of height values**, *Research in Number Theory* 7, article 33 (2021). DOI: 10.1007/s40993-021-00261-1. Role: explicitly notes that Euler's phi function already appears when counting rational numbers of fixed height; direct prior-art anchor for the `4 phi(n)` shell multiplicity in PC-074.
+- Paul Epstein, **Zur Theorie allgemeiner Zetafunktionen**, *Mathematische Annalen* 56 (1903), 615–644. DOI: 10.1007/BF01444309. Role: classical positive-definite quadratic-form lattice zeta functions and their functional equations; prior-art anchor for the quadratic/projective-height control in PC-074.
+- Werner Georg Nowak, **Primitive lattice points in rational ellipses and related arithmetic functions**, *Monatshefte für Mathematik* 106 (1988), 57–63. DOI: 10.1007/BF01501488. Role: RH-sensitive error terms for primitive lattice-point counts in quadratic regions; prior-art boundary showing that visible-lattice/projective-height RH phenomena are established arithmetic rather than a new Prime-Circle spectral mechanism.
