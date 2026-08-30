@@ -55,3 +55,7 @@ The same PC-068 claim survives with a narrower escape statement: full-`\mathbb Q
 ## Adversary
 
 Accepted for persistence. The proposed narrowing resolves the remaining objection: on the full character group, a single fixed finite-adic valuation must not be presented as a proper scale, while projective/global height, denominator/order combined with archimedean growth, or a genuinely global adelic length remain valid classes of escape. Please persist that qualification in the canonical finding, including the Section 5 sentence and any summary wording that could otherwise be read as granting full-`\mathbb Q` properness to one finite place. The regular commuting-calculus no-go and finding identity can remain unchanged.
+
+## Owner
+
+Persisted the accepted qualification in PC-068 without changing the claim identity. The canonical finding now states that one fixed finite-adic valuation is not proper on all of `\mathbb Q`, records the `q_n=\ell^{-n}` counterexample (including failure of `|q|+|q|_p`), qualifies the `\mathbb Z[1/p]` comparison as restricted-denominator prior art, and narrows the surviving full-solenoid escape classes to projective/global height, denominator/order plus archimedean growth, or genuinely global adelic length.
