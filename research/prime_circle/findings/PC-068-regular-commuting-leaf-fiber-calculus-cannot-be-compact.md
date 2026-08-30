@@ -65,7 +65,7 @@ If `F` is locally bounded at **even one** point
 
 then `H_F` does **not** have compact resolvent. Consequently no continuous, smooth, polynomial, or ordinary meromorphic/rational joint symbol with a regular noninteger point can turn the canonical leaf and chord data into a compact-resolvent Hamiltonian.
 
-A compact-resolvent diagonal coupling must instead be arithmetically singular: its energy must be unbounded in every neighborhood of the dense rational-frequency curve. Denominator, exact order, valuation, or height can do this, but those are precisely discontinuous/non-archimedean scales not supplied by regular joint functional calculus of `A` and `B`. The discontinuous exact-order decoder of PC-067 is an explicit example.
+A compact-resolvent diagonal coupling must instead be arithmetically singular: its energy must be unbounded in every neighborhood of the dense rational-frequency curve. An exact-order/denominator term supplies this transverse discontinuity, but on the full `\mathbb Q` character set it must also be combined with archimedean growth to control integer translates; for example `|q|+\operatorname{ord}(q\bmod\mathbb Z)` has finite balls. Such order, valuation, or height data are precisely discontinuous/non-archimedean scales not supplied by regular joint functional calculus of `A` and `B`.
 
 Thus the natural commuting repair
 
@@ -179,7 +179,7 @@ The distinct orthogonal eigenvectors `\chi_{q_j}` therefore give infinitely many
 
 Nothing special about the chosen irrational point was used. Hence compact resolvent would require `F` to fail local boundedness at **every** point of the noninteger curve `\Gamma(\mathbb R\setminus\mathbb Z)`. That excludes any ordinary continuous or locally regular scalar symbol.
 
-The same argument survives finitely many poles or singular curves: choose an irrational `x` whose point `\Gamma(x)` avoids them. Thus rational, meromorphic, polynomial, smooth, elliptic-symbol-like, and finite-singularity repairs all fail unless their singular set has been engineered to track the dense arithmetic character set itself.
+The same argument survives any pole or singularity set that leaves at least one regular noninteger point of `\Gamma`; in particular finitely many isolated poles and ordinary rational/meromorphic symbols regular somewhere on `\Gamma` still fail. A symbol singular along the whole rational-frequency accumulation curve has deliberately left the regular class and is exactly the kind of arithmetic/irregular escape considered below.
 
 ## 4. Why obvious combined energies do not help
 
@@ -203,15 +203,29 @@ Any finite-valued regular function of the canonical commuting geometric coordina
 
 ## 5. Properness can be restored only by a discontinuous arithmetic scale
 
-PC-067 already shows that the chord eigenvalue determines the reduced denominator/exact order up to reflection, so one may define the discontinuous Borel decoder
+PC-067 already shows that the chord eigenvalue determines the reduced denominator/exact order up to reflection, so the discontinuous Borel decoder
 
 \[
-C\chi_q=\operatorname{ord}(q\bmod\mathbb Z)\chi_q.
+C\chi_q=\operatorname{ord}(q\bmod\mathbb Z)\chi_q
 \]
 
-This is unbounded on rational points accumulating at every noninteger real frequency. That is exactly the type of behavior the compact-resolvent criterion demands. But it also makes the provenance problem explicit: compactness appears only after applying an arithmetically discontinuous function to a dense point spectrum.
+supplies a transverse arithmetic size. On the full solenoid this decoder alone is **not** proper: every integer `q\in\mathbb Z` has `\operatorname{ord}(q\bmod\mathbb Z)=1`, so its lowest energy ball already contains infinitely many characters.
 
-More generally one can use denominator, projective height, or finite-adic valuation. Such functions can have finite balls, but they are not continuous functions of the real leaf coordinate together with the native chord energy. They introduce the additional transverse arithmetic scale that PC-065 identified as missing and PC-066 showed was not fixed by abstract exact-order symmetry.
+Combining the transverse size with the archimedean one does give a proper example. Define
+
+\[
+L_{\rm ar}(q)=|q|+\operatorname{ord}(q\bmod\mathbb Z).
+\]
+
+If `L_{\rm ar}(q)\le R` and `q=a/n` is reduced with `n=\operatorname{ord}(q\bmod\mathbb Z)`, then `n\le R` and `|a|/n\le R`, hence `|a|\le Rn\le R^2`. Only finitely many reduced pairs `(a,n)` satisfy these bounds, so
+
+\[
+\boxed{
+\#\{q\in\mathbb Q:L_{\rm ar}(q)\le R\}<\infty.
+}
+\]
+
+Thus arithmetic properness is possible, but only after adding a discontinuous denominator/order scale to ordinary real-frequency growth. The provenance problem is exactly the point: this proper function is not selected by a locally regular joint symbol `F(A,B)`. More generally denominator, projective height, or finite-adic valuation can supply the needed discrete size, but they introduce the additional transverse arithmetic scale that PC-065 identified as missing and PC-066 showed was not fixed by abstract exact-order symmetry.
 
 This does not mean such a scale is illegitimate. It means Prime Circle must **derive** it from an additional exact geometric operation before spectralization; selecting it because properness or a desired Dirichlet series results is an arbitrary spectral wrapper.
 
@@ -255,7 +269,6 @@ The narrowed gate is
 \text{the missing ingredient is not another regular scalar combination of the known solenoid coordinates;}
 \quad
 \text{it must force arithmetic properness before commuting Fourier reduction.}
-}
 \]
 
 ## 8. Exact audit tests
@@ -268,6 +281,6 @@ The result has direct falsifiers.
 4. For a diagonal real multiplier `E(q)`, prove compact resolvent is equivalent to finiteness of every set `{q:|E(q)|\le R}`.
 5. Choose distinct rationals `q_j\to x` for one irrational noninteger `x` and verify that local boundedness of `F` at `\Gamma(x)` gives an infinite bounded-energy subsequence.
 6. Test polynomial, continuous and rational examples and confirm the same failure at any regular irrational point.
-7. Compare with the exact-order decoder of PC-067 and verify that it evades the theorem only by being unbounded/discontinuous on rational sequences converging archimedeanly while conductor grows.
+7. Verify that the exact-order decoder alone is not proper on `\mathbb Q` because all integers have order `1`, while `|q|+\operatorname{ord}(q\bmod\mathbb Z)` has finite balls; confirm that this repair escapes the theorem only through its arithmetic discontinuity.
 
 Failure of items 1–5 would invalidate the exact obstruction. A future leaf–fiber proposal escapes it only by leaving the stated commuting/regular class for a reason derived from Prime-Circle geometry itself.
