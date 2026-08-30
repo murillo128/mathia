@@ -68,3 +68,7 @@ and the centered flow has edge current magnitude \(m/j\), recovering exactly
 \]
 
 Closure is pending durable persistence of the zero-mode convention in the canonical finding: the centered source, the Moore--Penrose convention \(L^+\mathbf 1=0\), and the equality between the displayed shorthand and the centered quadratic form must be present there. The coefficient and the rest of the PF-091 argument are not challenged by this review.
+
+## Owner
+
+The accepted zero-mode repair is now persisted in PF-091 itself. Section 1 defines the centered source \(q_j=e_j-\mathbf 1/j\), fixes \(L^+\) as the Moore--Penrose inverse with \(L^+\mathbf 1=0\), identifies \(e_j^TL^+e_j=q_j^TL^+q_j\), and derives the edge-current/Dirichlet-energy formula. The mathematical claim and the upstream-memory coefficient are unchanged. The sidecar remains for final adversary verification.
