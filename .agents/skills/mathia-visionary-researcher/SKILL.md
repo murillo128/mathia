@@ -68,11 +68,11 @@ The phases are:
 
 If a phase cannot be completed safely within the invocation, persist a compact `phase_state: in-progress` checkpoint and leave the campaign on the same phase. The next invocation resumes that phase from the issue state. **Partial progress with a durable checkpoint is preferable to running until timeout.**
 
-Do not rely on private chain-of-thought as campaign memory. Only the structured issue checkpoint may be used to resume later.
+Use ordinary session/context continuity as the primary working memory when it is available. The GitHub issue is the durable recovery checkpoint, not a replacement for all working context: persist enough structured state to recover a campaign after truncation, interruption, or timeout, but do not duplicate the full corpus or private reasoning.
 
-## GitHub issue is the only campaign state
+## GitHub issue is the only durable campaign state
 
-Campaign working state lives in exactly one open GitHub issue in `murillo128/mathia`.
+Campaign working state outside ordinary session context lives in exactly one open GitHub issue in `murillo128/mathia`.
 
 Use a title beginning:
 
@@ -109,49 +109,30 @@ state_revision: 0
 survivors: []
 ```
 
-It may additionally contain compact corpus/tree hashes, candidate IDs, or stale-state markers needed for deterministic resume. Do not put mathematical claims in frontmatter-like state merely because they are convenient.
+It may additionally contain compact corpus/tree hashes or candidate IDs needed for deterministic recovery. Do not put mathematical claims in frontmatter-like state merely because they are convenient.
 
 Each completed or partial phase adds one concise issue comment containing:
 
 - phase name and outcome;
-- source `main` SHA used;
+- the frozen `base_main_sha` used by the campaign;
 - structured surviving candidate IDs/questions when relevant;
 - exact persisted paths or bibliographic identifiers needed by the next phase;
 - explicit kill reasons for candidates that must not be regenerated inside the same campaign;
 - the next phase or remaining substep.
 
-Do **not** persist chain-of-thought, free-form brainstorming, long search transcripts, hidden reasoning, or every rejected idea. The checkpoint must contain only enough auditable state for another invocation to resume the campaign faithfully.
+Do **not** persist chain-of-thought, free-form brainstorming, long search transcripts, hidden reasoning, or every rejected idea. The checkpoint must contain only enough auditable state for another invocation to resume the campaign faithfully if ordinary context continuity is unavailable.
 
 After posting the checkpoint, update the issue body atomically to the new `phase`, `phase_state`, `state_revision`, and survivor set.
 
-## Freshness and invalidation
+## Frozen campaign snapshot
 
-Phase 1 pins `base_main_sha` after synchronizing the default branch.
+Phase 1 synchronizes the default branch once and pins `base_main_sha`. That SHA defines the **mathematical knowledge snapshot for phases 1 through 5**.
 
-Before every later phase, refresh `main` and inspect changes since the campaign snapshot. Changes are materially stale when they touch the mathematical state the campaign depends on, especially:
+Phases 2–5 must not refresh, reset, or reinterpret the campaign merely because `main` advances. They continue against the phase-1 snapshot and its campaign checkpoints. A roughly one-day knowledge lag is intentional: the purpose of the phased campaign is to let one coherent research tournament finish rather than chase a rapidly moving repository.
 
-```text
-research/master/**
-research/mind/**
-research/*/mind/**
-research/prior_art/**
-research/clues/**
-research/*/clues/**
-research/*/findings/**
-*.review.md
-```
+In particular, commits made after `base_main_sha` are **not** a staleness condition and must never send the campaign back to phase 1. When an exact repository file is needed in phases 2–5, read it at `base_main_sha` when the GitHub capability permits an explicit ref; otherwise use the phase-1 checkpoint and record any unavoidable source-version ambiguity as a workflow limitation.
 
-A new commit elsewhere does not automatically invalidate the campaign.
-
-If material state changed:
-
-1. do not silently continue from stale assumptions;
-2. record the changed paths/SHA compactly in the issue;
-3. reset the campaign to phase 1 in the same issue;
-4. preserve already-killed candidate IDs only when the kill reason remains valid under the new state;
-5. reconstruct against the new `main` snapshot on the next/continuing phase-1 execution.
-
-Phase 6 always performs one final synchronization and candidate-specific freshness audit before publication.
+Only phase 6 synchronizes current `main` again. Its job is publication safety, not retroactive campaign reconstruction: compare the single surviving candidate, if any, against material changes since `base_main_sha`. If new evidence duplicates, classicalizes, refutes, or materially invalidates the candidate, kill it and close the campaign without publication. Do **not** restart the campaign. If the candidate remains coherent, apply the normal publication gate against current `main`.
 
 ## Phase 1 — reconstruct state
 
@@ -167,9 +148,9 @@ Synchronize the repository default branch and reconstruct the complete current R
 6. current graph state only as structural navigation and gap detection, never as mathematical evidence;
 7. the research delta since the most recent reachable `research(visionary):` publication when one exists, so withdrawn or newly established material is not missed.
 
-Do not read every canonical finding merely for volume. The exact findings/reviews required by candidates are loaded in phases 3 and 5.
+Do not read every canonical finding merely for volume. The exact findings/reviews required by candidates are loaded in phases 3 and 5 from the frozen campaign snapshot.
 
-The checkpoint should summarize **constraints and open interfaces**, not reproduce documents. Record the snapshot SHA and enough tree/blob hashes or path references to detect staleness later.
+The checkpoint should summarize **constraints and open interfaces**, not reproduce documents. Record the snapshot SHA and enough tree/blob hashes or path references to identify exactly which frozen corpus the campaign consumed.
 
 Phase 1 emits no candidate clue and performs no broad external literature search.
 
@@ -202,9 +183,9 @@ The phase checkpoint should retain only a small tournament set, normally **3–6
 
 ## Phase 3 — internal collision audit
 
-Attempt to kill the phase-2 candidates using **Mathia's own complete persisted knowledge before spending external-literature budget**.
+Attempt to kill the phase-2 candidates using **Mathia's complete persisted knowledge at `base_main_sha` before spending external-literature budget**.
 
-For each survivor, trace it to the exact relevant:
+For each survivor, trace it to the exact relevant snapshot versions of:
 
 - findings;
 - open or completed `.review.md` sidecars;
@@ -214,7 +195,7 @@ For each survivor, trace it to the exact relevant:
 - canonical prior-art nodes already in the repository;
 - matched controls and no-go results from other lines.
 
-Reject candidates that are already represented, already killed, classicalized by current local prior art, constant on a known destructive quotient, contradicted by an accepted review, or simply another wording of an existing clue.
+Reject candidates that were already represented, already killed, classicalized by the frozen local prior art, constant on a known destructive quotient, contradicted by an accepted review, or simply another wording of an existing clue at `base_main_sha`.
 
 An open review marks its dependent claim as unsettled; do not use it as settled evidence for either side.
 
@@ -250,7 +231,7 @@ The checkpoint should retain at most **two** candidates and include only compact
 
 ## Phase 5 — adversarial kill
 
-Try seriously to destroy every remaining candidate. Load the exact current findings and reviews required to audit each survivor and test at minimum whether:
+Try seriously to destroy every remaining candidate. Load the exact findings and reviews from the frozen `base_main_sha` required to audit each survivor and test at minimum whether:
 
 - the construction is a tautology or a known RH-equivalent criterion with no new leverage;
 - desired positivity, zero-free region, spectral placement, or rigidity was inserted as an assumption;
@@ -268,11 +249,13 @@ If none survives, set the campaign to phase 6 with an empty survivor set. Do not
 
 ## Phase 6 — publication gate
 
-Synchronize `main` again and perform a candidate-specific freshness audit against every material change since `base_main_sha`.
+Synchronize current `main` and perform a **candidate-specific publication audit** against material changes since `base_main_sha`. This is the only phase that consumes post-snapshot Mathia knowledge.
 
 If there is no survivor, close the campaign issue as a normal null result. Make no repository commit and do not notify.
 
-If one candidate survives, apply the **ultra-selective clue gate**. Publish or materially strengthen at most one clue only when all hold:
+If the survivor has been duplicated, classicalized, refuted, or materially invalidated by post-snapshot Mathia work, kill it, record the final disposition compactly, and close the campaign. Do not restart at phase 1.
+
+If one candidate still survives, apply the **ultra-selective clue gate** against current `main`. Publish or materially strengthen at most one clue only when all hold:
 
 1. the mathematical object and proposed mechanism are explicit enough for another researcher to reconstruct;
 2. the direction is not duplicated by current findings, Mind, Master state, graph navigation, prior-art nodes, or clues in any lifecycle state;
@@ -284,7 +267,7 @@ If one candidate survives, apply the **ultra-selective clue gate**. Publish or m
 
 A clever analogy, unexplored keyword combination, or long speculative derivation does not pass.
 
-When the same precise question already exists as `status: proposed`, prefer materially strengthening that clue. Do not touch accepted, rejected, or resolved clues.
+When the same precise question now exists as `status: proposed`, prefer materially strengthening that clue when permitted by the shared clue skill. Do not touch accepted, rejected, or resolved clues.
 
 After the clue publication attempt, record only the final disposition and publication commit/path when applicable, then close the campaign issue.
 
@@ -318,7 +301,7 @@ The Visionary must not set `accepted`, `rejected`, or `resolved`.
 
 ## Ownership and hard path gate
 
-The Visionary campaign may mutate its single GitHub campaign issue as working state. This issue mutation is the **only state-persistence exception**.
+The Visionary campaign may mutate its single GitHub campaign issue as working state. This issue mutation is the **only durable state-persistence exception**.
 
 Repository writes remain restricted to proposed clue files under:
 
@@ -398,7 +381,7 @@ The eventual Research Watch still notifies separately if it changes the clue to 
 
 This skill is designed for **one continuing campaign advanced by a recurring invocation approximately every four hours**, rather than one monolithic weekly pass or a daily quota.
 
-The scheduler should invoke the same prompt each time. The skill determines whether to create a campaign, resume the current phase, repeat an incomplete phase, reset stale state to phase 1, or close the campaign in phase 6.
+The scheduler should invoke the same prompt each time. The skill determines whether to create a campaign, resume the current frozen-snapshot phase, repeat an incomplete phase, or close the campaign in phase 6.
 
 Do not start a second campaign while another is active. After phase 6 closes a campaign, the next scheduled invocation may start a new campaign immediately unless the user has changed the schedule.
 
