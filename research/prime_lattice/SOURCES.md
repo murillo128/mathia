@@ -196,3 +196,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 49. **Volker Heiermann**, “The value of the global intertwining operators on spherical vectors,” *Proceedings of the American Mathematical Society* **147**(1) (2019), 115–124. DOI: https://doi.org/10.1090/proc/14208. arXiv: https://arxiv.org/abs/1709.09107.
     - Role: global spherical prior-art anchor for `PL-039`. Computes the meromorphic scalar defined by a global standard intertwining operator acting on an everywhere-unramified spherical vector via Langlands–Shahidi L-data, confirming that the unramified global zeta channel scalarizes rather than retaining a hidden matrix invariant.
+
+## Restricted-tensor non-spherical automorphic scattering
+
+50. **D. Flath**, “Decomposition of representations into tensor products,” in *Automorphic Forms, Representations and L-functions*, Proc. Sympos. Pure Math. **33**, Part 1, American Mathematical Society, Providence, 1979, pp. 179–183. DOI: https://doi.org/10.1090/pspum/033.1/546596.
+    - Role: classical structural anchor for `PL-040`. Proves the restricted tensor-product decomposition of irreducible admissible adelic representations, with unramified local components and distinguished hyperspecial-fixed vectors at almost all finite places. This is the reason a fixed smooth automorphic vector can be genuinely non-spherical at only finitely many finite primes.
+
+51. **Manami Roy, Ralf Schmidt, Shaoyun Yi**, “Classical and adelic Eisenstein series,” arXiv:2109.07649 [math.NT] (submitted 16 September 2021). https://arxiv.org/abs/2109.07649.
+    - Role: explicit classical/adelic anchor for `PL-040`. Develops local and global intertwining operators for classical Eisenstein series, including weight, level, and character variants, and makes concrete that finite-level adelizations are spherical at every finite prime away from the level. Together with Hundley's finite-`S` normalized intertwining formula, this supports the obstruction that fixed finite-level non-spherical data changes only finitely many prime coordinates while the infinite L-factor remains scalar.
