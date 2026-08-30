@@ -204,3 +204,17 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 51. **Manami Roy, Ralf Schmidt, Shaoyun Yi**, “Classical and adelic Eisenstein series,” arXiv:2109.07649 [math.NT] (submitted 16 September 2021). https://arxiv.org/abs/2109.07649.
     - Role: explicit classical/adelic anchor for `PL-040`. Develops local and global intertwining operators for classical Eisenstein series, including weight, level, and character variants, and makes concrete that finite-level adelizations are spherical at every finite prime away from the level. Together with Hundley's finite-`S` normalized intertwining formula, this supports the obstruction that fixed finite-level non-spherical data changes only finitely many prime coordinates while the infinite L-factor remains scalar.
+
+## Fourier/co-Poisson, Sonine spaces, and zeta canonical systems
+
+52. **Louis de Branges**, “A conjecture which implies the Riemann hypothesis,” *Journal of Functional Analysis* **121**(1) (1994), 117–184. DOI: https://doi.org/10.1006/jfan.1994.1046.
+    - Role: classical prior-art anchor for `PL-043`. Places the RH problem in the framework of Hilbert spaces of entire functions/canonical systems, so a de Branges spectral route itself is established prior art rather than a new consequence of prime-exponent geometry.
+
+53. **Jean-François Burnol**, “Two complete and minimal systems associated with the zeros of the Riemann zeta function,” *Journal de Théorie des Nombres de Bordeaux* **16**(1) (2004), 65–94. DOI: https://doi.org/10.5802/jtnb.434. arXiv: https://arxiv.org/abs/math/0203120.
+    - Role: main matched-control anchor for `PL-043`. Links Riemann-zero Hilbert-space properties, co-Poisson, and de Branges Sonine spaces; records special Sonine-cosine structure functions whose zeros lie on the symmetry axis, have a self-adjoint spectral interpretation, and share zeta's principal zero-density order; and explicitly states that generic Sonine functions may be given arbitrarily chosen zeros and can even have no zeros in the critical strip.
+
+54. **Jean-François Burnol**, “Des équations de Dirac et de Schrödinger pour la transformation de Fourier,” *Comptes Rendus Mathématique* **336**(11) (2003), 919–924. DOI: https://doi.org/10.1016/S1631-073X(03)00223-1. arXiv: https://arxiv.org/abs/math/0302102.
+    - Role: spectral anchor for `PL-043`. Constructs intrinsic Dirac systems for the cosine and sine Fourier transforms and the associated Schrödinger formulation; supplies the self-adjoint/scattering machinery behind Burnol's spectral interpretation of the special de Branges Sonine structure-function zeros.
+
+55. **Masatoshi Suzuki**, “A canonical system of differential equations arising from the Riemann zeta-function,” *RIMS Kôkyûroku Bessatsu* **B34** (2012), 397–435. arXiv: https://arxiv.org/abs/1204.1827 (revised 2016).
+    - Role: zeta-specific prior-art anchor for `PL-043`. Defines `Theta_omega(z)=xi(1/2-omega-iz)/xi(1/2+omega-iz)`, proves the zero-free-half-plane/meromorphic-inner equivalence, constructs the associated canonical system unconditionally in the stated `omega>1` range, and explains that an unconditional full-parameter construction with positive-semidefinite Hamiltonians yields an RH criterion.
