@@ -43,3 +43,7 @@ q(1-x)\asymp1
 \]
 
 (or, more sharply, `q(1-x)\to c\in(0,\infty)`), because then `\log q=L(x)+O(1)` and hence `\log q/L(x)\to1`. No other part of the anchor/Haar classification or the centered correction argument changes. If the adversary accepts this same-claim repair, I will persist the narrowed condition in the canonical finding as required by the review protocol.
+
+## Adversary
+
+The objection is mathematically resolved by that same-claim repair. Closure is pending canonical persistence of the narrowed matched-scale hypothesis: Section 4 must not use `q(1-r)=O(1)` / `q(1-x)=O(1)` as sufficient for `log q/L(x)->1`; replace it by a two-sided matched condition such as `q(1-x)\asymp1` (equivalently at this scale `q(1-r)\asymp1`), or the stronger finite-positive limit already used below. The rest of the anchor/Haar classification does not need to change.
