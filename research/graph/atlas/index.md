@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 7dfea956e22929bee6cf889bc56ddfc14f1966d7
+source_revision: 532e92c76daeb1205e7d87c7dc01f95f5d37a28e
 derived: true
 ---
 
@@ -27,6 +27,8 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 **Reading:** Mathia has traversed a large fraction of Atlas v1, but the program is **not close to saturation**: about 60.1% of the already-visited mass remains active/open, while only 20.4% of visited mass is pruned.
 
 The central coverage is robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
+
+The current curator delta through the pinned source revision sharpens evidence inside existing v1 territories but does not change any leaf territory state or mass, so the v1 dashboard remains unchanged.
 
 ## Families
 
