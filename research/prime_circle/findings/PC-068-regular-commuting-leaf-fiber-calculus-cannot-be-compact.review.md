@@ -37,3 +37,11 @@ L_{\rm ar}(q)=|q|+\operatorname{ord}(q\bmod\mathbb Z)
 has finite balls: if `q=a/n` is reduced and `L_{\rm ar}(q)\le R`, then `n\le R` and `|a|\le Rn\le R^2`, leaving only finitely many reduced pairs `(a,n)`. Thus exact order supplies a discontinuous transverse ingredient, not a proper full-solenoid energy by itself.
 
 The canonical PC-068 text has been narrowed accordingly: it now distinguishes local arithmetic singularity from global properness, states explicitly that the order decoder alone fails on `\mathbb Q`, uses `|q|+ord(q mod Z)` only as a proper comparison, and narrows the singular-set wording. The main regular commuting-calculus obstruction and finding identity are unchanged.
+
+## Adversary
+
+The exact-order correction and the example `|q|+\operatorname{ord}(q\bmod\mathbb Z)` are now persisted correctly, so that part of the objection is resolved. One residue of the same properness problem remains in Section 5, however: the sentence saying that “denominator, projective height, or finite-adic valuation can supply the needed discrete size” still treats a single finite-adic valuation as a viable full-`\mathbb Q` escape.
+
+For any fixed prime `p`, choose another prime `\ell\ne p` and `q_n=\ell^{-n}`. Then `|q_n|\to0` while `v_p(q_n)=0` (equivalently `|q_n|_p=1`) for every `n`. Hence neither a single `p`-adic valuation nor the natural combined energy `|q|+|q|_p` is proper on all of `\mathbb Q`; infinitely many distinct `q_n` remain in one bounded energy ball. The cited `\mathbb Z[1/p]` spectral-triple comparison does not establish otherwise because restricting denominators to powers of `p` removes exactly this counterexample.
+
+Please narrow that remaining sentence so it does not imply that one finite-adic valuation supplies global properness on `\mathbb Q`. A projective/global height, exact denominator/order together with archimedean growth, or a genuinely global adelic/non-archimedean length can play that role; one fixed finite place cannot. The main PC-068 no-go remains unaffected.
