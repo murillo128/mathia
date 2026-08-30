@@ -1,94 +1,78 @@
-# Weil-inertia critical-line research
-
-This directory preserves high-signal evidence from the **Mathia Weil-inertia** research line.
+# Weil Inertia
 
 ## Research mandate
 
-This README is the **canonical research contract** for the `weil_inertia` Research Watch. The scheduled task should identify the line and stable finding prefix, then read this README for the mathematical objective, scope, priorities, exclusions, and prior-art surface. Routine Research Watch runs must not silently redefine this mandate.
+### Identity
 
-Treat `research/weil_positivity/` and other Mathia branches as read-only evidence. This line is complementary to global Weil positivity: it studies quantitative defect and inertia rather than assuming or demanding full positivity at the outset.
+Research line: `weil_inertia`.
 
-The line starts from the recent Montgomery/Weil-form, matrix-inertia route to an unconditional lower bound for zeros that are both **simple and on the critical line**. Its purpose is not to repackage that bound, but to attack the structural gap that remains after it.
+### Primary object
 
-The central question is:
+The line starts from the recent Montgomery/Weil-form matrix-inertia approach giving an unconditional lower bound of roughly two thirds for zeta zeros that are both simple and on the critical line.
 
-> **Can the inertia/rank-trace mechanism be strengthened beyond the current two-thirds barrier, or can the exceptional mass not certified by the argument be characterized so rigidly that the remaining off-line or multiple-zero configurations can be ruled out?**
+Before using the result as evidence, reconstruct and verify its exact theorem statement, constant, hypotheses, normalization, proof provenance, and primary sources. The central mathematical object is the associated Hermitian/Weil form together with the rank, trace, inertia, block-signature, moment, and test-function information that can be extracted from it.
 
-## Important interpretation of the exceptional fraction
+The uncertified complement is not a known population of off-critical zeros and is not known to equal one third. It may contain multiple zeros on the critical line, off-line zeros constrained by functional-equation/conjugation symmetries, and pure slack from the proof.
 
-The complement of a lower bound such as `2/3` is **not** a known set of zeros sitting off the critical line, and the bound does not assert that exactly `1/3` of the zeros are exceptional.
+### Objective
 
-The uncertified mass may contain different phenomena, including:
+Pursue two coupled goals:
 
-- zeros on the critical line that are not proved simple by the argument;
-- zeros away from the critical line, with the functional-equation/conjugation symmetries they must satisfy;
-- slack introduced by inequalities, test-function restrictions, moment truncation, or other proof losses.
+1. strengthen the certified critical-line/simple-zero proportion beyond the current result; and
+2. characterize the uncertified complement so rigidly that the remaining off-line, multiple-zero, or proof-slack configurations can be reduced or ruled out.
 
-A core goal of this line is therefore to separate these sources of slack rather than treating the complement as one homogeneous population.
+A particularly valuable outcome would be a defect-to-zero or bootstrapping mechanism that converts a quantitative bound on negative inertia/off-line mass into a strictly stronger bound and can potentially iterate.
 
-## Research stance
+### Priority questions
 
-The first substantive pass must reconstruct and verify the exact theorem, hypotheses, normalization, and primary sources behind the recent result before treating any informal description of it as evidence.
+- Reconstruct the proof as exact identities and inequalities and locate every source of slack.
+- Determine equality and near-equality cases for the rank/trace/inertia estimates and associated moment or zero-counting steps.
+- Separate positive-semidefinite critical-line contributions from the paired or quadrupled indefinite blocks forced by off-line zeros, keeping multiplicity explicit.
+- Characterize extremal or near-extremal zero/matrix configurations required for the current constant to be sharp.
+- Test whether arithmetic constraints, explicit-formula identities, zero-density information, or spectral invariants forbid those extremizers.
+- Investigate higher trace moments, mixed moments, principal minors, determinant constraints, interlacing, local spectral statistics, or other invariants only when they are genuinely accessible.
+- Optimize admissible test functions and kernels and identify the true barrier imposed by Fourier support and available arithmetic information.
+- Seek observables that distinguish multiple critical-line zeros from off-line blocks instead of paying for both through one error term.
+- Combine independent unconditional information from simple-zero results, pair/higher correlations, mollifier methods, or zero-density estimates only when hypotheses and overlap with the inertia framework are explicit.
+- Search for monotone defect estimates or bootstrap inequalities that can feed improved bounds back into the argument.
 
-After that, the line should prioritize mechanisms that can materially change the certified proportion or constrain the exceptional contribution:
+### Scope and exclusions
 
-1. **Locate every source of loss.** Rewrite the proof as a chain of exact identities and inequalities; identify equality and near-equality cases for the rank/trace/inertia step, moment estimates, kernel restrictions, and any zero-counting reductions.
-2. **Exploit block structure, not only aggregate positivity.** Track separately the positive semidefinite contribution from critical-line zeros and the paired/quadrupled indefinite structure forced by off-line zeros, including multiplicities and all zeta symmetries.
-3. **Study extremizers.** If the present constant were close to sharp, determine what the zero configuration and the associated Hermitian form would have to look like. Then test whether the explicit formula, arithmetic side, known density estimates, or additional spectral invariants forbid such near-extremizers.
-4. **Add information beyond two global moments.** Investigate higher trace moments, mixed moments, principal minors, determinant/interlacing constraints, local spectral statistics, or other invariants only when they are actually accessible from the explicit formula or established zero statistics.
-5. **Optimize the test-function/kernel problem.** Determine the true variational barrier imposed by Fourier support, explicit-formula control, or positivity assumptions. Distinguish a sharp barrier of the method from a merely nonoptimal kernel choice, and consider wider Fourier support only when justified by available arithmetic information.
-6. **Separate multiplicity from off-line mass.** Seek inequalities or auxiliary observables that penalize multiple critical-line zeros differently from off-line hyperbolic blocks, rather than paying for both with one undifferentiated error term.
-7. **Combine independent unconditional information carefully.** Zero-density theorems, simple-zero results, pair-correlation information, mollifier methods, or wider-support results are useful only when the hypotheses and overlap with the inertia framework are explicit and non-circular.
-8. **Look for a defect-to-zero mechanism.** A particularly valuable outcome would be a monotone or bootstrapping principle that turns a quantitative bound on negative inertia/off-line mass into a stronger bound, potentially iterating toward zero.
+Do not interpret the uncertified complement as exactly `1/3`, as entirely off the critical line, or as a homogeneous exceptional population.
 
-Negative results are first-class. A rigorous proof that a proposed higher-moment, kernel, interlacing, or bootstrapping improvement cannot beat a specific barrier is a substantive result because it identifies what genuinely new arithmetic information would be required.
+Do not assume full Weil positivity at the outset; this line studies quantitative defect from positivity. Do not import conjectural pair-correlation, density, or support information into an unconditional bound without labeling the dependency explicitly.
 
-## Relation to `weil_positivity`
+A wider Fourier support, stronger moment estimate, or additional spectral invariant is admissible only when the arithmetic side required to control it is actually available.
 
-`research/weil_positivity/` asks whether an independent Mathia-native geometry can force a global Weil-type positivity statement.
+### Falsification and novelty standard
 
-This line is deliberately complementary. It does **not** begin by demanding full positivity. Instead it studies the **defect from positivity**: inertia, rank, block signature, exceptional mass, and the amount of arithmetic information needed to squeeze that defect.
+Treat barriers and negative results as first-class outcomes. For each proposed improvement:
 
-A mechanism that actually forces the negative inertia to vanish may become a bridge to `weil_positivity`, but the two lines should remain distinct unless persisted evidence establishes such a bridge.
+- identify the exact inequality or information bottleneck it changes;
+- compute or characterize extremizers and near-extremizers;
+- test whether the new invariant is independent of the moments already used;
+- distinguish a nonoptimal choice of kernel from a sharp barrier of the method;
+- determine what genuinely new arithmetic information would be required if the route cannot improve the constant;
+- check all functional-equation, conjugation, multiplicity, normalization, and block-signature constraints;
+- reject matrix reformulations that merely restate the same bound without adding information.
 
-## Prior-art audit surface
+Novelty must be assessed by mathematical mechanism, not by different matrix notation or decomposition language.
 
-Novelty checks should search by mechanism, not by wording, especially around:
+### Prior-art audit surface
+
+Search by mechanism and equivalent formulation across:
 
 - Montgomery pair correlation and simple-zero density arguments;
 - Weil's explicit formula and Hermitian/positivity formulations;
-- inertia and signature of Hermitian forms, Sylvester law of inertia, rank/trace/Frobenius inequalities, interlacing, and extremal matrix inequalities;
+- inertia and signature of Hermitian forms, Sylvester law of inertia, rank/trace/Frobenius inequalities, interlacing, determinants, principal minors, and extremal matrix inequalities;
 - Levinson/Conrey-style critical-line proportions and mollifier methods;
-- zero-density theorems, multiplicity bounds, pair correlation, and higher zero correlations;
+- zero-density theorems and multiplicity estimates;
+- pair and higher zero correlations;
 - test-function optimization and Fourier-support barriers in explicit-formula arguments;
-- recent work that supplies unconditional arithmetic-side estimates used by the two-thirds argument.
+- recent arithmetic estimates used by the two-thirds argument.
 
-Do not claim novelty merely because the matrix language, kernel, or decomposition is phrased differently.
+### Relationship to other lines
 
-## Evidence labels
+`weil_positivity` asks whether an independent Mathia-native structure can force global Weil positivity. This line is complementary: it studies inertia, rank, block signature, exceptional mass, and quantitative defect without assuming full positivity.
 
-Use the shared `mathia-research-watch` vocabulary, including:
-
-- **EXACT-DERIVED**;
-- **LITERATURE+DERIVED**;
-- **CLASSICAL-IDENTITY**;
-- **CANDIDATE-NEW-STRUCTURE**;
-- **NEGATIVE/OBSTRUCTION** / **DECISIVE-NEGATIVE**;
-- **CONJECTURAL** / **NEEDS-AUDIT**.
-
-These labels record evidence and uncertainty, not importance.
-
-## Persistence boundary
-
-This line is maintained by `.agents/skills/mathia-research-watch/SKILL.md` with stable finding prefix **`WI`**.
-
-When substantive results appear, persist them under the standard evidence contract:
-
-```text
-research/weil_inertia/SOURCES.md
-research/weil_inertia/findings/WI-NNN-<slug>.md
-```
-
-The individual files under `findings/` are the canonical research evidence. Do not create a parallel hand-maintained finding index. Derived graph navigation is owned by the graph curator.
-
-Do not create chronological run notes or write into any `mind/` directory. Missing evidence artifacts should be initialized only when the first substantive finding requires them.
+Prime Circle, Prime Flute, and Prime Lattice may contribute explicit auxiliary structures or constraints only when a precise evidence-backed bridge exists. They are otherwise separate research objects.

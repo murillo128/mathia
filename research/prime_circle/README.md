@@ -1,97 +1,88 @@
-# Prime-circle geometry
-
-This directory records research that starts from the **original regular-polygon / roots-of-unity construction**, before imposing the hyperbolic prime-flute model.
+# Prime Circle
 
 ## Research mandate
 
-This section is the **canonical research contract** for the `prime_circle` Research Watch. The scheduled task should identify the line and stable finding prefix, then read this README for the mathematical objective, scope, priorities, exclusions, and prior-art surface. Routine Research Watch runs must not silently redefine this mandate.
+### Identity
 
-### Objective
+Research line: `prime_circle`.
 
-Investigate only the original **prime-circle / roots-of-unity geometry** under `research/prime_circle/`, before imposing the hyperbolic prime-flute model. Treat `research/prime_flute/` as a downstream, read-only branch when useful for comparison, not as part of this line's research scope or writable output.
+### Primary object
 
-Start from the regular-polygon / roots-of-unity construction with a common anchored vertex and ask whether structures forced intrinsically by that geometry yield a nontrivial and potentially novel bridge to the Riemann zeta function, its functional equation, explicit formulas, spectral/operator formulations, or the critical line.
-
-### Priority structures and questions
-
-Study, when they arise intrinsically from the construction:
-
-- primitive/new-vertex layers and cyclotomic structure;
-- chord distances and interactions;
-- logarithmic potentials `U_n(z)=log|Phi_n(z)|`;
-- the exact common-vertex von Mangoldt identity;
-- pairwise shell resultants;
-- Möbius/divisor decompositions;
-- Fourier/Ramanujan modes;
-- harmonic interior/exterior inversion;
-- scale/refinement dynamics;
-- spherical or projective representations;
-- exact orthogonal-circle constructions;
-- genuinely two-dimensional or nonlocal operators that retain information lost by scalar evaluation.
-
-The line should prefer exact geometry and harmonic structure before importing external analytic or spectral machinery.
-
-### Exclusions and falsification targets
-
-Be especially alert to candidates that collapse to classical cyclotomic identities, Farey/Bost-Connes/Dedekind-Vasyunin structures, gcd kernels, Mellin/Dirichlet transforms of von Mangoldt, telescoping or projective pure gauge, or other known reformulations.
-
-Do **not** count recovery of `-zeta'(s)/zeta(s)`, standard cyclotomic identities, or arbitrary spectral wrappers as progress by themselves. Do not develop new hyperbolic flute/cuff/cusp/scattering findings in this line; those belong to `prime_flute`.
-
-### Prior-art audit surface
-
-Novelty checks should search by mathematical mechanism and equivalent formulation, including classical cyclotomic polynomial/resultant theory, harmonic and potential theory on roots of unity, Ramanujan/Fourier sums, Farey and Franel-Landau-type RH criteria when relevant, Bost-Connes/cyclotomic dynamics, projective/discrete Schwarzian constructions, and known operator or spectral formulations that could already contain the candidate mechanism.
-
-## Primary object
-
-Let
+The line starts from the original regular-polygon / roots-of-unity construction, before imposing the hyperbolic prime-flute model. Let
 
 \[
 P_n=\mu_n=\{z\in\mathbb C:z^n=1\}
 \]
 
-be the vertices of the regular \(n\)-gon on a fixed circle, with the common vertex \(1\). The vertices that appear for the first time at level \(n\) are the primitive \(n\)-th roots
+be the vertices of the regular `n`-gon on a fixed circle with common anchored vertex `1`, and let
 
 \[
-P_n^*=\{\zeta:\operatorname{ord}(\zeta)=n\}.
+P_n^*=\{\zeta:\operatorname{ord}(\zeta)=n\}
 \]
 
-Thus
+be the primitive/new-vertex layer. Thus
 
 \[
 P_n=\bigsqcup_{d\mid n}P_d^*,
-\qquad |P_n^*|=\varphi(n).
+\qquad |P_n^*|=\varphi(n),
 \]
 
-A prime \(p\) is characterized geometrically by
+and for a prime `p`, every non-common vertex of `P_p` is new.
 
-\[
-P_p=P_1\sqcup P_p^*,
-\]
+### Objective
 
-so every non-common vertex of the \(p\)-gon is new.
+Determine whether structures forced intrinsically by this roots-of-unity geometry yield a nontrivial and potentially novel bridge to the Riemann zeta function, its functional equation, explicit formulas, spectral/operator formulations, or the critical line.
 
-## Research stance
+The aim is not to repackage classical cyclotomic or zeta identities, but to identify additional geometric, harmonic, or nonlocal structure that retains information those scalar identities lose.
 
-The primary aim is to discover structures forced by this geometry itself: vertex collisions, chord distances, primitive/birth layers, logarithmic potentials, interior/exterior reciprocity, Fourier modes, scale renormalization, and interactions between layers.
+### Priority questions
 
-Classical analytic-number-theory or spectral machinery is used mainly as a falsifier/novelty check after a candidate structure has been derived.
+Study, when they arise intrinsically from the construction:
 
-The hyperbolic prime-flute under `research/prime_flute/` is now treated as a secondary derived model rather than the central object.
+- primitive/new-vertex layers and cyclotomic structure;
+- chord distances and interactions between layers;
+- logarithmic potentials `U_n(z)=log|Phi_n(z)|` and their interior/exterior reciprocity;
+- the exact common-vertex von Mangoldt identity and pairwise shell resultants;
+- Möbius/divisor decompositions and Fourier/Ramanujan modes;
+- scale/refinement dynamics;
+- spherical or projective representations and exact orthogonal-circle constructions;
+- genuinely two-dimensional or nonlocal operators that retain information lost by scalar evaluation.
 
-## Evidence labels
+Prefer exact geometric or harmonic consequences before importing external analytic or spectral machinery.
 
-- `EXACT-DERIVED`: exact consequence of the roots-of-unity geometry / elementary algebra.
-- `CLASSICAL-IDENTITY`: exact but already standard in the literature.
-- `CANDIDATE-NEW-STRUCTURE`: a new organization or operator suggested by the geometry; novelty not established.
-- `NEGATIVE`: a proposed interpretation ruled out.
-- `NEEDS-AUDIT`: requires source or proof verification.
+### Scope and exclusions
 
-## Current high-priority direction
+This line covers only the original prime-circle / roots-of-unity geometry. Do not develop new hyperbolic cuff, cusp, scattering, or infinite-flute results here.
 
-Treat each primitive layer \(P_n^*\) as a boundary charge distribution and study its logarithmic potential
+Do not count recovery of `-zeta'(s)/zeta(s)`, standard cyclotomic identities, known divisor transforms, or arbitrary spectral wrappers as progress by themselves. A proposed bridge must add a precise, falsifiable mechanism beyond a change of coordinates or notation.
 
-\[
-U_n(z)=\sum_{\zeta\in P_n^*}\log|z-\zeta|=\log|\Phi_n(z)|.
-\]
+### Falsification and novelty standard
 
-This construction simultaneously preserves the original circle geometry, the primitive/new-vertex decomposition, and an exact interior/exterior reciprocity. Canonical evidence lives under [`findings/`](findings/); [`graph/index.md`](graph/index.md) is the derived navigational view.
+Try to collapse every candidate to its simplest classical or degenerate form before treating it as new structure. In particular test for:
+
+- cyclotomic or resultant identities in disguise;
+- telescoping, coboundary, quotient, endpoint-only, or projective pure-gauge reductions;
+- loss of information under scalar evaluation;
+- universal behavior reproduced by matched non-prime or non-arithmetic controls;
+- dependence on an arbitrary coordinate, interpolation, normalization, or hand-picked operator.
+
+Novelty must be assessed by mathematical mechanism and equivalent formulation, not by wording.
+
+### Prior-art audit surface
+
+Search the closest classical and modern literature around:
+
+- cyclotomic polynomial and resultant theory;
+- harmonic and logarithmic potential theory on roots of unity;
+- Ramanujan/Fourier sums and divisor decompositions;
+- Farey and Franel-Landau-type RH criteria when relevant;
+- Bost-Connes and related cyclotomic dynamics;
+- Dedekind/Vasyunin-type structures and gcd kernels when structurally adjacent;
+- projective or discrete-Schwarzian constructions;
+- known operator or spectral formulations that may already contain the candidate mechanism.
+
+### Relationship to other lines
+
+`prime_flute` is a downstream geometric construction derived from the ordered prime vertices and may be read for comparison, but flute-specific phenomena are not evidence that the same mechanism is intrinsic to the circle construction.
+
+`prime_lattice`, `weil_positivity`, and `weil_inertia` may provide external comparisons or consume a surviving Prime Circle mechanism, but they do not redefine this line's object or objective.

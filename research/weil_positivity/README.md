@@ -1,80 +1,70 @@
-# Weil-positivity geometry research notes
-
-This directory preserves high-signal evidence from the **Mathia global Weil-positivity** research line.
+# Weil Positivity
 
 ## Research mandate
 
-This README is the **canonical research contract** for the `weil_positivity` Research Watch. The scheduled task should identify the line and stable finding prefix, then read this README for the mathematical objective, scope, priorities, exclusions, and prior-art surface. Routine Research Watch runs must not silently redefine this mandate.
+### Identity
 
-Other research branches and all `mind/` directories are read-only evidence for this line. Aggressively falsify candidate mechanisms and reject mere repackagings of zeta, known RH-equivalent positivity functionals, spectra defined from zeros, arbitrary regularizations, or hand-picked kernels whose sign is not forced independently by Mathia geometry.
+Research line: `weil_positivity`.
 
-The central question is:
+### Primary object
 
-> **Does Mathia contain, or can its intrinsic constructions force, a geometric structure whose own positivity yields a global Weil-type positivity statement, rather than merely producing another zeta function, spectrum, determinant, or representation of already-known zero data?**
+The line searches for a Mathia-native geometric pairing, energy, intersection form, norm, boundary response, cohomological structure, or operator-positive form whose own nonnegativity can be compared rigorously with a global Weil explicit-formula positivity criterion.
 
-The target is not a new coordinate system for the Riemann hypothesis. The research object is a candidate **Mathia-native geometric pairing, energy, intersection form, norm, or operator-positive form** whose local-to-global decomposition can be matched rigorously to the arithmetic/archimedean structure of a Weil explicit-formula positivity criterion, while its nonnegativity comes from the geometry itself.
+The comparison must account for both finite-prime and archimedean/global terms under an audited normalization, while the sign itself must come from independent geometry rather than from assuming RH or inserting the zero divisor by construction.
 
-## Research stance
+### Objective
 
-The classical Weil positivity criterion, the Riemann explicit formula, Hilbert–Pólya-style spectral reformulations, the function-field Frobenius/cohomology proof architecture, Connes-style trace programs, and existing local/operator positivity mechanisms are **prior art and calibration constraints**, not Mathia discoveries.
+Determine whether Mathia contains, or can force, an intrinsic geometric structure whose positivity yields a global Weil-type positivity statement instead of merely producing another zeta function, spectrum, determinant, or representation of already-known zero data.
 
-A durable result in this branch must do at least one of the following:
+The target is an explanatory sign mechanism, not a new coordinate system for the Riemann hypothesis.
 
-- derive a canonical positive or indefinite form directly from a Mathia construction and identify exactly what arithmetic information it retains;
-- obtain a genuine local-to-global decomposition and compare its terms with the finite-prime and archimedean pieces of the explicit formula under an audited normalization;
-- show that a known Mathia geometry forces a positivity mechanism analogous in role—not merely in vocabulary—to the geometric positivity used in proved function-field RH;
-- establish an obstruction showing that a natural Mathia construction can only re-encode zeta, its zeros, a spectrum, or a known positivity criterion without explaining the sign;
-- identify the extra intrinsic structure required to turn one of Mathia's surviving geometric mechanisms into a non-circular positivity argument.
+### Priority questions
 
-The branch must aggressively distinguish **positivity that is proved from independent geometry** from positivity that is equivalent to RH only because the zeta zeros or explicit formula were inserted by construction.
+For every candidate ask:
 
-## Primary audit questions
+- what exact geometric object or form is being defined;
+- why that object is canonical rather than dependent on arbitrary gauges, bases, regularizations, or kernels;
+- what independent theorem or structural principle forces its sign;
+- how prime-local terms arise intrinsically;
+- whether the same structure also produces the archimedean contribution and required global counterterms;
+- whether a genuine local-to-global decomposition matches the Weil explicit formula under a checked normalization;
+- whether existing Prime Circle, Prime Flute, or Prime Lattice structures can supply the required form without importing the desired answer;
+- what extra intrinsic structure is missing when a candidate reproduces the explicit formula but does not explain positivity.
 
-For every candidate, make the following questions explicit.
+### Scope and exclusions
 
-1. **What is the geometric object?** Define the space, pairing, energy, intersection form, operator, boundary response, or cohomological object without referring to the desired conclusion.
-2. **Why is it canonical?** Remove arbitrary gauges, coordinates, regularizations, basis choices, or hand-picked kernels unless the Mathia construction forces them.
-3. **Where does positivity come from?** It should follow from a geometric theorem or structural property such as a norm square, intersection/Hodge-type sign rule, reflection/energy principle, compression of a positive operator, or another independently justified mechanism.
-4. **Where do primes enter?** Determine whether prime-local terms arise intrinsically and whether the archimedean contribution and global counterterms are produced by the same structure rather than pasted together afterward.
-5. **Is the bridge circular?** Reject constructions whose positivity is obtained only after assuming RH, placing the zeros on a self-adjoint spectrum by definition, or importing the Weil functional as an unexplained kernel.
-6. **What survives controls?** Compare against integers, density-matched sequences, randomized/twisted Euler products, or other natural controls when they can expose universal geometric background.
-7. **What is genuinely beyond prior art?** Search by mechanism and equivalent formulations, especially around Weil positivity, explicit formulas, Frobenius/cohomology, trace formulas, Sonin/localization positivity, noncommutative geometry, and geometric intersection forms.
+Reject constructions whose positivity is obtained only after assuming RH, placing the zeros on a self-adjoint spectrum by definition, importing the Weil functional as an unexplained kernel, or choosing a regularization specifically to force the desired sign.
 
-## Existing Mathia evidence to treat as possible inputs, not assumptions
+Do not count a zeta function, determinant, trace formula, spectral representation, or known RH-equivalent positivity functional as progress unless an independently justified Mathia structure explains why the relevant form is nonnegative.
 
-Other research branches may be read as evidence but remain read-only for this watch. In particular, potentially relevant surviving structures include:
+The line may read other Mathia branches as evidence, but it does not modify or subsume them merely because one of their objects can be inserted into a Weil-style formula.
 
-- Prime Circle's anchored nonlocal and uniformization-defect mechanisms;
-- Prime Flute's localized/marked relative spectral data and canonical background subtraction;
-- Prime Lattice's function-space/Bohr dynamics after the failure of bare torus geometry;
-- the canonical prior-art layer under `research/prior_art/`, especially Weil positivity, the explicit formula, finite-field Frobenius/cohomology, Sonin-space positivity, and Connes-style trace mechanisms.
+### Falsification and novelty standard
 
-No one of these is privileged. The line should be willing to conclude that none supplies the missing positivity structure.
+Aggressively test circularity and universality. In particular ask whether the candidate survives:
 
-## Evidence labels
+- removal of explicit zero data from its definition;
+- changes of gauge, basis, coordinates, or admissible regularization;
+- matched integer, density-matched, randomized, twisted-Euler-product, or other natural controls;
+- separation of finite-prime and archimedean terms to see whether they truly arise from one structure;
+- comparison with known RH-equivalent positivity criteria and existing geometric/cohomological sign mechanisms.
 
-Use the shared `mathia-research-watch` vocabulary, including:
+A viable result must explain the sign from geometry first and only then identify its arithmetic consequence.
 
-- **EXACT-DERIVED** — exact consequence of an explicit Mathia construction;
-- **LITERATURE+DERIVED** — published mathematics plus a derived Mathia consequence;
-- **CLASSICAL-IDENTITY** — exact but already-standard structure that materially redirects the search;
-- **CANDIDATE-NEW-STRUCTURE** — a precise, falsifiable organization whose novelty remains unestablished;
-- **NEGATIVE/OBSTRUCTION** / **DECISIVE-NEGATIVE** — a natural positivity route is ruled out or sharply narrowed;
-- **CONJECTURAL** / **NEEDS-AUDIT** — a bridge remains unproved or insufficiently sourced.
+### Prior-art audit surface
 
-These labels record evidence and uncertainty, not importance.
+Search by mechanism and equivalent formulation across:
 
-## Persistence boundary
+- Weil's positivity criterion and the Riemann explicit formula;
+- Hilbert-Pólya-style spectral formulations;
+- Frobenius/cohomology and intersection-form mechanisms in function-field RH;
+- Hodge/index-type sign rules and geometric positivity arguments;
+- Connes-style trace and noncommutative-geometric programs;
+- Sonin/localization and related operator-positivity constructions;
+- trace formulas, canonical energies, boundary-response forms, and positive-operator compressions relevant to explicit formulas.
 
-This line is maintained by `.agents/skills/mathia-research-watch/SKILL.md` with stable finding prefix **`WP`**.
+### Relationship to other lines
 
-When substantive results appear, persist them under the standard evidence contract:
+Prime Circle, Prime Flute, and Prime Lattice are possible suppliers of intrinsic geometric or harmonic structures, but none is privileged and none of their current findings is assumed to solve the positivity problem.
 
-```text
-research/weil_positivity/SOURCES.md
-research/weil_positivity/findings/WP-NNN-<slug>.md
-```
-
-The individual files under `findings/` are the canonical research evidence. Do not create a parallel hand-maintained finding index. Derived graph navigation may be added later by the graph curator when substantive findings exist.
-
-Do not create chronological run notes or write into any `mind/` directory. Missing evidence artifacts should be initialized only when the first substantive finding requires them.
+`weil_inertia` is complementary: it studies quantitative defect from positivity and the amount of negative/exceptional mass compatible with available arithmetic information. A proven defect-to-zero mechanism may create a bridge between the two lines, but they remain distinct unless canonical evidence establishes that bridge.
