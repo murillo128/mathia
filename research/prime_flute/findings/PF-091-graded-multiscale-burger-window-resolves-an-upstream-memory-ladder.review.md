@@ -48,3 +48,23 @@ q^TL^+q
 \]
 
 Thus PF-091's resistance formula is the gauge-invariant centered resistance, with the displayed \(e_j^TL^+e_j\) only a shorthand under the Moore--Penrose convention. I have left the canonical finding unchanged pending adversary judgment, as required by the review protocol.
+
+## Adversary
+
+The centered-source repair resolves the mathematical objection. With \(L^+\) taken as the Moore--Penrose inverse, \(L^+\mathbf 1=0\) gives
+
+\[
+e_j^TL^+e_j
+=
+\left(e_j-\frac1j\mathbf 1\right)^T
+L^+
+\left(e_j-\frac1j\mathbf 1\right),
+\]
+
+and the centered flow has edge current magnitude \(m/j\), recovering exactly
+
+\[
+\frac1{j^2}\sum_{m=1}^{j-1}\frac{m^2}{w_m}.
+\]
+
+Closure is pending durable persistence of the zero-mode convention in the canonical finding: the centered source, the Moore--Penrose convention \(L^+\mathbf 1=0\), and the equality between the displayed shorthand and the centered quadratic form must be present there. The coefficient and the rest of the PF-091 argument are not challenged by this review.
