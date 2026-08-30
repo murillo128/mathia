@@ -67,51 +67,75 @@ missing deterministic four-prime singular-series main or by the finite-to-full E
 It must survive after that true joint local main is subtracted, or come from the separately
 booked analytic/collision interface.
 
+WI-050 supplies an additional unconditional suppression mechanism on a large structural
+subregime. After the lock and shift are unsliced, the coprime Yang `S1` square is the
+finite-complexity three-variable system
+
+```text
+(m, m-b1*k, n, n-b2*k).
+```
+
+Bienvenu's higher-dimensional Siegel--Walfisz theorem therefore gives the expected four-prime
+asymptotic uniformly whenever `b1,b2 <= (log X)^B` for any fixed `B`; WI-049 then identifies
+that asymptotic with the genuine cellwise four-form local main after aggregation. Thus the
+post-local-main residual is rigorously lower order throughout every fixed polylogarithmic
+coefficient regime. Any leading residual must be carried by super-polylogarithmic reduced
+coefficients or by the separately booked collision/analytic interface.
+
 ## Research question
 
-For the exact Yang cells and normalization, after replacing the factorized twin model by the
-genuine full four-form local singular-series model, does the remaining WI-043 locked pair--pair
-covariance have a nonzero negative leading term proportional to the full admissible strip
-geometry, or must it become lower order through arithmetic cancellation?
+For the exact Yang cells and normalization **outside every fixed polylogarithmic reduced-coefficient
+range**, after replacing the factorized twin model by the genuine full four-form local
+singular-series model, does the remaining WI-043 locked pair--pair covariance have a nonzero
+negative leading term proportional to the full admissible strip geometry, or must it become
+lower order through arithmetic cancellation? WI-050 settles the corresponding question in the
+polylogarithmic coefficient regime in favor of lower order.
 
 ## Why it may matter
 
-A nonzero leading **post-local-main** covariance term would eliminate the remaining
-source-specific projection escape and show that the welding step genuinely needs joint
-four-prime information rather than better marginal discrepancy or deterministic local-series
-centering. Conversely, a proof of eventual suppression would identify an arithmetic mechanism
-absent from WI-043's abstract obstruction. WI-049 now rules out both an omitted Hardy--Littlewood
-four-form main and a leading Euler-tail bias, so this is the shortest remaining analytic fork in
-the one-sided fourth-moment route.
+A nonzero leading **post-local-main** covariance term in the super-polylogarithmic/power-sized
+coefficient region would eliminate the remaining source-specific projection escape and show that
+the welding step genuinely needs coefficient-uniform joint four-prime information rather than
+better marginal discrepancy or deterministic local-series centering. Conversely, a proof of
+eventual suppression there would identify the missing arithmetic mechanism needed to finish the
+one-sided fourth-moment route. WI-049 rules out an omitted Hardy--Littlewood four-form main and a
+leading Euler-tail bias; WI-050 additionally rules out the entire fixed-polylog coefficient
+regime as the source of a leading prime residual.
 
 ## Research disposition
 
-**Accepted, narrowed by WI-049.** The exact monomial witness establishes that the source
-covariance is not an algebraic zero, and the finite-scale run shows a stable enough signal to
-justify a targeted asymptotic audit. WI-049 proves that the genuine full four-form deterministic
+**Accepted, narrowed by WI-049 and WI-050.** The exact monomial witness establishes that the
+source covariance is not an algebraic zero, and the finite-scale run shows a stable enough signal
+to justify a targeted asymptotic audit. WI-049 proves that the genuine full four-form deterministic
 local main is centered with `o(1)` normalized source bias after the long-cell/short-boundary split.
-The accepted target is therefore specifically the **post-four-form-local-main prime residual**,
-with the separately booked collision/analytic interface kept distinct.
+WI-050 (`research/weil_inertia/findings/WI-050-polylog-locked-four-prime-cells-fall-to-higher-dimensional-siegel-walfisz.md`)
+then proves, using Bienvenu's established theorem, that the genuine post-local-main four-prime
+residual is itself `o(1)` on every fixed polylogarithmic coprime base range. The accepted target
+is therefore specifically the **super-polylogarithmic/power-sized coefficient contribution** to
+the post-four-form-local-main prime residual, with the separately booked collision/analytic
+interface kept distinct.
 
 ## Decisive test
 
-Recompute the exact source-weighted locked covariance across the structured `(b1,b2,k)` family
-with the genuine full four-form Hardy--Littlewood local model subtracted cellwise, retaining the
-source diagonal/collision and deterministic `S1/S2/S3` bookings. Then derive an asymptotic or
-rigorous upper/lower bound for that residual. A nonzero limiting normalized coefficient, or a
-matching four-prime lower bound on a positive proportion of source mass, would support the
-leading-term mechanism. A proof that the post-local-main covariance divided by its exact
-geometry/pair-main scale tends to zero would refute it. Any claimed suppression must explain
-the exact finite monomial witness rather than rely on an identity cancellation.
+Decompose the exact source-weighted locked covariance by reduced coefficient size, retaining the
+source diagonal/collision and deterministic `S1/S2/S3` bookings and subtracting the genuine full
+four-form Hardy--Littlewood local model cellwise. The polylogarithmic part is already controlled
+by WI-050. On the complementary family, derive an asymptotic or rigorous upper/lower bound after
+normalization by its exact source mass. A nonzero limiting coefficient on a positive proportion
+of the super-polylogarithmic/power-sized mass, or a matching coefficient-uniform four-prime lower
+bound, would support the leading-term mechanism. A proof that this complementary residual is
+`o(1)` would refute it and close the clue. Any claimed suppression must explain the exact finite
+monomial witness rather than rely on an identity cancellation.
 
 ## Evidence boundary
 
 The monomial witness is an exact finite/source certificate that cancellation is not an algebraic
 identity. The six normalized values are bounded numerical evidence only: they do not prove a
 limit, its sign, a four-prime asymptotic, or the Yang--Yang one-sided fourth-moment theorem.
-WI-049 now rigorously removes the deterministic full-Euler local-main bias at the source scale,
-but it is **not** a prime-correlation theorem and does not control the genuine post-local-main
-four-prime residual or the separately booked analytic/collision interface. The computation used
-the pinned source's finite `Lambda`, intervals, `J=19`, base family, and stored twin-constant
-value; it has not yet been rerun after subtracting the genuine full four-form local model. This
-clue makes no novelty claim and is not a canonical finding.
+WI-049 rigorously removes the deterministic full-Euler local-main bias at the source scale.
+WI-050 rigorously controls the **aggregated** post-local-main residual only when the reduced
+coefficients are bounded by a fixed power of `log X`; it neither proves that this subfamily carries
+a positive fraction of the source ledger nor supplies any theorem for the power-sized coefficient
+range. The original computation used the pinned source's finite `Lambda`, intervals, `J=19`, base
+family, and stored twin-constant value; it has not yet been rerun after subtracting the genuine
+full four-form local model. This clue makes no novelty claim and is not a canonical finding.
