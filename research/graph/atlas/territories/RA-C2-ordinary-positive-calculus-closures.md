@@ -11,7 +11,7 @@ derived: true
 
 # C2 — Ordinary positive-calculus closures
 
-Natural Hodge/supersymmetric, Fisher/divergence, DtN/positive-functional, stable Hilbert-renorming, and scalar translation-invariant Markov-energy attempts erase the signed selector, lose positivity at the required continuation, or hit category/sign/support obstructions.
+Natural Hodge/supersymmetric, Fisher/divergence, DtN/positive-functional, stable Hilbert-renorming, scalar translation-invariant Markov-energy, canonical leaf-Sobolev/transverse-cycle, and regular scalar spectral-calculus attempts erase the signed selector, lose positivity at the required continuation, or hit category/sign/support/pairing obstructions.
 
 ## Evidence
 
@@ -23,5 +23,11 @@ Natural Hodge/supersymmetric, Fisher/divergence, DtN/positive-functional, stable
 - [[research/weil_positivity/findings/WP-033-stable-hilbert-renorming-cannot-rescue-critical-mangoldt-gram-selector|WP-033]]
 - [[research/weil_positivity/findings/WP-038-compatible-adelic-solenoid-dirichlet-energy-is-rational-square-and-noncoercive|WP-038]]
 - [[research/weil_positivity/findings/WP-039-translation-invariant-markov-energies-cannot-carry-mangoldt-support-as-their-fourier-symbol|WP-039]]
+- [[research/weil_positivity/findings/WP-040-canonical-solenoid-sobolev-trace-is-only-l2-and-cannot-host-weil-haar-tangent|WP-040]]
+- [[research/weil_positivity/findings/WP-041-compatible-profinite-cycle-energy-is-bounded-and-leaf-time-derived|WP-041]]
+- [[research/weil_positivity/findings/WP-042-local-schwarzian-sextic-detects-schiffer-two-point-indefiniteness|WP-042]]
+- [[research/weil_positivity/findings/WP-043-cycle-laplacian-shell-logdet-recovers-mangoldt-but-spectral-positivity-is-the-wrong-pairing|WP-043]]
 
-WP-038 and WP-039 extend the hard-pruned scope from ordinary local positive calculi to the most direct scalar translation-invariant Markov/Dirichlet energy escape on compact abelian completions. The broader Weil-positivity program remains open in other atlas territories because the findings explicitly leave non-translation-invariant, matrix/internal-state, quotient/compression, nonlinear, and genuinely coupled finite-archimedean mechanisms outside this closure.
+WP-040--WP-043 broaden the evidence inside this already hard-pruned **ordinary/regular positive-calculus** territory. Canonical leaf-generated Sobolev scales do not create conductor regularity, the compatible profinite cycle energy is bounded and leaf-time derived, the Schiffer candidate has a local two-point indefiniteness certificate, and even a positive scalar cycle calculus that exactly recovers Mangoldt data supplies the wrong pairing for the finite Weil birth matrix.
+
+The broader Weil-positivity program remains open elsewhere because these findings explicitly leave shell-dependent, singular, noncommuting, matrix/internal-state, nonlinear, nonseparable finite-archimedean, and genuinely category-changing mechanisms outside this closure.

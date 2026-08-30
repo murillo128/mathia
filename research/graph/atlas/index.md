@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 8058b3c2b9dd072ba8783f148ec2edd886a18b02
+source_revision: 29273aad7b6a73c79cf41f0e9dd2f4e0503800d1
 derived: true
 ---
 
@@ -28,7 +28,7 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 
 The central coverage is robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
 
-The current curator delta through the pinned source revision sharpens evidence inside existing v1 territories but does not change any leaf territory state or mass, so the v1 dashboard remains unchanged.
+The current curator delta through the pinned source revision materially sharpens already mapped territories: Prime Circle closes several regular solenoid-scale constructions, Prime Flute removes multiple local shift-clone comparison gates, Prime Lattice isolates a topology-sensitive Weil-boundary frontier, Weil Inertia narrows the welding problem to its genuinely coupled centered remainder, and Weil Positivity separates finite selector recovery from the required positive pairing. None of these changes justifies a v1 territory-state or mass change, so the dashboard remains unchanged.
 
 ## Families
 

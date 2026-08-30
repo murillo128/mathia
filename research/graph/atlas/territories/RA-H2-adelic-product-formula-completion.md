@@ -19,7 +19,14 @@ The exact rational-prime norm/completion is a live discriminator candidate preci
 - [[research/prime_lattice/mind/RESEARCH_LINES|Prime-lattice synthesis]]
 - [[research/prime_circle/findings/PC-064-compatible-circle-refinement-is-the-adelic-solenoid|PC-064]]
 - [[research/prime_circle/findings/PC-065-solenoid-leafwise-laplacian-has-dense-rational-square-spectrum|PC-065]]
+- [[research/prime_circle/findings/PC-066-transverse-profinite-symmetry-fixes-exact-order-projectors-not-rh-hamiltonian|PC-066]]
+- [[research/prime_circle/findings/PC-067-compatible-inverse-square-chord-energy-resolves-order-but-not-rh-scale|PC-067]]
+- [[research/prime_circle/findings/PC-068-regular-commuting-leaf-fiber-calculus-cannot-be-compact|PC-068]]
+- [[research/prime_circle/findings/PC-069-exact-solenoid-dilation-covariance-forbids-compact-resolvent|PC-069]]
+- [[research/prime_circle/findings/PC-070-additive-solenoid-dilation-covariance-also-forbids-compact-resolvent|PC-070]]
 
-PC-064 shows that the canonical compatible-circle completion is the classical arithmetic solenoid, while PC-065 rules out its bare leafwise Laplacian as a trace-class spectral route. These are scoped barriers inside the territory, not closure of the broader adelic/product-formula completion: the full self-dual adelic/idele structure used by Tate remains additional structure not supplied by the compact solenoid alone.
+PC-064 identifies the canonical compatible-circle completion with the classical arithmetic solenoid. PC-065--PC-070 then close a sequence of natural **bare-carrier** spectralizations: the leaf Laplacian is noncoercive/noncompact, transverse symmetry fixes exact-order projectors without fixing their scale, regular commuting leaf/fiber calculus remains nonproper, and exact homogeneous or additive solenoid-dilation covariance is incompatible with ordinary compact resolvent.
+
+These are scoped barriers inside the territory, not closure of the broader adelic/product-formula route. The full self-dual adelic/idele structure used by Tate, and singular/noncommuting/one-sided scales not supplied by the regular compact-solenoid calculus, remain outside the closed classes.
 
 Reproducing the self-dual `1/2` axis alone does not count as zero selection.

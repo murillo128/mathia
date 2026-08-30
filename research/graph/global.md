@@ -15,9 +15,9 @@ This is the derived root graph for Mathia research. Source findings and mind not
 - [[research/prime_circle/graph/index|Prime Circle]]
 - [[research/prime_flute/graph/index|Prime Flute]]
 - [[research/prime_lattice/graph/index|Prime Lattice]]
+- [[research/weil_positivity/graph/index|Weil Positivity]]
+- [[research/weil_inertia/graph/index|Weil Inertia]]
 - [[research/prior_art/graph/index|Prior-art redirects]]
-
-The Weil Positivity and Weil Inertia lines are current source-backed research lines but do not yet have dedicated local `graph/index.md` projections. Their absence from this hub list is presentation lag, not absence of research.
 
 ## Riemann Atlas
 
@@ -31,6 +31,7 @@ The Weil Positivity and Weil Inertia lines are current source-backed research li
 - [[research/mind/intuition/MI-002-the-surviving-arithmetic-variable-is-relational|MI-002 — surviving arithmetic variable is relational]]
 - [[research/mind/intuition/MI-003-arithmetic-significance-begins-after-universal-control-subtraction|MI-003 — subtract universal controls first]]
 - [[research/mind/intuition/MI-004-critical-axis-is-not-zero-selection|MI-004 — critical axis is not zero selection]]
+- [[research/mind/intuition/MI-005-topology-is-part-of-the-arithmetic-claim|MI-005 — topology is part of the arithmetic claim]]
 - [[research/mind/RESEARCH_LINES|Global Mathia research lines]]
 
 ## Cross-line relation nodes
@@ -39,8 +40,9 @@ The Weil Positivity and Weil Inertia lines are current source-backed research li
 - [[research/graph/relations/relational-multiscale-memory|Relational multiscale memory]]
 - [[research/graph/relations/universal-background-subtraction|Universal-background subtraction]]
 - [[research/graph/relations/gamma2-scattering-is-shared-background|Gamma(2) scattering is shared background]]
+- [[research/graph/relations/operator-topology-is-part-of-arithmetic-claim|Operator topology is part of the arithmetic claim]]
 
 ## Current integration boundary
 
-The current global `mind/` synthesis integrates evidence from all five current lines: Prime Circle, Prime Flute, Prime Lattice, Weil Positivity, and Weil Inertia. Riemann Atlas v1 is derived directly from the current source tree plus the calibrated prior-art projection; graph-node counts are not used as its denominator.
+The current global `mind/` synthesis integrates evidence from all five current source-backed research lines. Riemann Atlas v1 is derived directly from the current source tree plus the calibrated prior-art projection; graph-node counts are not used as its denominator.
 <!-- graph:end -->
