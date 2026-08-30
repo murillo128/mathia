@@ -32,19 +32,29 @@ log(S_n^+/S_n) = -1/p_n + o(1/p_n),
 
 although its additive defect is summable.
 
-PF-118 materially narrows the remaining local geometric gate. For each matched one-cusp pant, the exact arc distance tends to zero in both directions. Alessandrini--Disarlo's finite-type theorem therefore supplies continuous marking-compatible boundary-respecting Lipschitz maps both ways whose optimal Lipschitz constants tend to `1`; in the prime-to-clone direction the logarithmic optimal costs are even summable. Thus **mere existence of asymptotically near-isometric boundary-respecting Lipschitz maps on individual pants is no longer the missing theorem**.
+PF-118 materially narrows the remaining local geometric gate. For each matched one-cusp pant, the exact arc distance tends to zero in both directions. Alessandrini--Disarlo's finite-type theorem therefore supplies continuous marking-compatible boundary-respecting Lipschitz maps both ways whose optimal Lipschitz constants tend to `1`; in the prime-to-clone direction the logarithmic optimal costs are even summable. Those optimal maps are not known to be injective or to prescribe a common cuff parametrization.
 
-The unresolved step is stronger and more specific. The optimal maps used in PF-118 are not known to be injective, and the cited theorem does not prescribe a common boundary parametrization on each cuff. Consequently PF-118 does not yet give homeomorphisms, bilipschitz common-manifold identifications, or restrictions from adjacent pants that agree after zero-twist gluing. Any surviving obstruction must therefore occur in injectivity/boundary coherence, in the accumulation of the shrinking seam mode under gluing or Dirichlet energy, or in genuinely nonlocal operator behavior.
+A closer prior-art audit removes **bare homeomorphism existence** as the main obstruction, but not the asymptotic near-isometry needed for operators. Minsky's Lemma 8.2 gives a homeomorphism between hyperbolic pairs of pants whenever corresponding boundary lengths differ by a bounded additive amount, explicitly allowing cusp limits and arbitrarily long finite cuffs. It maps standard collars to standard collars and is uniformly bilipschitz on the collar-trimmed core. However, the theorem provides only a coarse `K(C)` bound: it does not give `K(C) -> 1` as the additive error tends to zero, and its bilipschitz conclusion is stated on the trimmed core rather than the full collars.
+
+Wu--Zhang's 2025 Proposition 8.7/8.18 supplies almost exactly the stronger kind of map desired here in a neighboring regime. If two boundary components are unchanged and each has length at least `2 arcsinh(1)`, while only the third bounded boundary is changed by relative amount `delta`, they construct a piecewise smooth homeomorphism that is the identity on the two unchanged boundaries and satisfies a metric-tensor estimate `1 +/- O(sqrt(delta))`; these maps glue because of the prescribed identity boundary data. Their proof is an explicit Fermi-coordinate pentagon/hexagon construction. It does **not** directly cover the prime-flute pants: in `P(A_n,B_n,0) -> P(A_n^+,B_n^+,0)` the cusp cannot be one of the two unchanged thick boundaries, while treating the cusp as the varied third boundary leaves its length identically zero and does not deform the two long finite cuffs. Thus the local gap is now a precise cusp-degenerate extension problem, not a generic lack of mapping technology.
 
 ## Research question
 
-Can the canonical prime/shift-clone matching be realized by **boundary-coherent homeomorphic or bilipschitz pant maps with distortion tending to one**, so that the maps glue to a common-manifold comparison whose metric-norm and volume-density defects vanish at infinity? If not, what exact geometric or energetic mechanism prevents this despite PF-118's two-sided local arc-Lipschitz convergence and the summable controls already established in PF-106--PF-114?
+Can the Wu--Zhang Fermi-coordinate construction, or another equally explicit construction, be extended to the matched one-cusp pants
+
+```text
+P(A_n,B_n,0) -> P(A_n^+,B_n^+,0)
+```
+
+with both finite cuffs varying by the PF-107 asymptotics, so as to obtain boundary-coherent homeomorphic/bilipschitz maps with metric distortion `1+o(1)` and a prescribed normalized-arclength map on each finite cuff? If not, which altitude, modulus, seam, or energy estimate fails specifically in the ideal-vertex limit despite PF-118's two-sided arc-Lipschitz convergence?
+
+If such maps exist and glue under the zero-twist marking, the next question is whether the resulting common-manifold comparison has metric-norm and volume-density defects tending to `1` on the complete tail. Only after that bridge is established should one invoke an operator theorem.
 
 The first operator target remains compactness of a natural relative resolvent, not trace class. PF-112 already proves that under any smooth non-isometric common-manifold identification the first relative resolvent cannot be `S_1` for the generic two-dimensional microlocal reason.
 
 ## Why it may matter
 
-This is the sharpest current test of whether the full exact cotangent endpoint geometry is operator-theoretically distinguishable from an explicit all-composite surface. A positive gluing/strong-equivalence theorem would show that the prime-specific sampled deformation is perturbative at the level of essential spectral data. A negative theorem would have to expose a genuine infinite-surface amplification mechanism that is invisible to endpoint displacement, canonical separators, collars, pant-local closed words, returning waves, and even the full local arc metric.
+This is the sharpest current test of whether the full exact cotangent endpoint geometry is operator-theoretically distinguishable from an explicit all-composite surface. A positive cusp-extension/gluing/strong-equivalence theorem would show that the prime-specific sampled deformation is perturbative at the level of essential spectral data. A negative theorem would have to expose a genuine infinite-surface amplification mechanism that is invisible to endpoint displacement, canonical separators, collars, pant-local closed words, returning waves, and even the full local arc metric.
 
 Either outcome is useful: it separates a real global Laplacian effect from coordinate amplification such as the nonsummable additive cuff circumference or relative seam scale.
 
@@ -52,12 +62,14 @@ Either outcome is useful: it separates a real global Laplacian effect from coord
 
 A positive resolution must do all of the following:
 
-1. construct, or prove existence of, homeomorphic/bilipschitz maps `P_n -> P_n^+` and inverses with distortion `1+o(1)` on the one-cusp pants despite unbounded finite cuffs;
-2. prescribe or control their restrictions to each finite cuff strongly enough that the two adjacent pant maps can be made identical there under the zero-twist marking;
-3. glue them to a global homeomorphism and verify uniform metric equivalence plus metric-norm and volume-density ratios tending to `1` on the complete tail, including collars and cusp regions;
+1. adapt the Fermi-coordinate or equivalent pant construction to the one-cusp family and prove a full metric-tensor/bilipschitz estimate `1+o(1)` as `n -> infinity`, with constants that remain controlled through the ideal-vertex limit and the simultaneous perturbation of both unbounded finite cuffs;
+2. prescribe normalized-arclength restrictions on each finite cuff, or prove an equivalent coherence statement, so that the two adjacent pant maps are identical there under the zero-twist marking;
+3. glue the local maps to a global homeomorphism and verify uniform metric equivalence plus metric-norm and volume-density ratios tending to `1` on the complete tail, including collars and cusp regions;
 4. only then invoke an appropriate operator theorem, for example Georgescu--Golénia strong equivalence, to deduce compact relative resolvent/equality of essential spectra.
 
-A negative resolution should exhibit a specific obstruction: a boundary-coherence modulus that stays away from `1`, a weakly-null/Weyl sequence, a cross-pant energy amplification, or another invariant showing that no such strong-equivalence identification can exist. PF-118 rules out treating the local arc spectrum itself as that obstruction.
+The cheapest negative test is to inspect the Wu--Zhang pentagon/hexagon altitude estimates in the ideal-vertex limit. Their current lower-bound hypothesis on the two fixed sides prevents a direct cusp substitution. If the corresponding Fermi-coordinate Jacobian or altitude control necessarily loses an `O(1)` amount for the PF-107 perturbation, that yields the desired obstruction. Otherwise, carrying the estimate through the cusp limit is the most direct positive route.
+
+A different negative resolution may exhibit a boundary-coherence modulus that stays away from `1`, a weakly-null/Weyl sequence, a cross-pant energy amplification, or another invariant showing that no such strong-equivalence identification can exist. PF-118 rules out treating the local arc spectrum itself as that obstruction.
 
 Wave/scattering equivalence is a separate stronger test. Güneysu--Thalmaier requires a global weighted metric-deviation integral involving inverse unit-ball volume; PF-108's unweighted collar integral does not verify it. If compactness survives, do not return to `S_1` of the first resolvent: test `S_p`, `p>1`, higher resolvent powers, or heat differences separately before defining determinant/spectral-shift objects.
 
@@ -65,9 +77,10 @@ Wave/scattering equivalence is a separate stronger test. Güneysu--Thalmaier req
 
 This clue is not evidence that the two complete surfaces are quasiconformally equivalent, asymptotically isometric, strongly equivalent, compact-resolvent perturbations, wave-equivalent, or spectrally equivalent. PF-118 proves only a finite-pant statement in the category of continuous boundary-respecting Lipschitz maps; it explicitly stops before injectivity, prescribed cuff parametrizations, gluing, metric-density control, or any operator conclusion.
 
-The closest prior art leaves exactly this gap:
+The closest prior art now isolates the missing hypothesis quite sharply:
 
-- Minsky gives uniform finite bilipschitz control for bounded additive pants-length changes with unbounded cuffs and cusp limits, but the audited statement does not quantify a `K(C) -> 1` modulus as `C -> 0`;
+- Minsky gives homeomorphisms for bounded additive pants-length changes with unbounded cuffs and cusp limits, mapping collars correspondingly and with uniform bilipschitz control on the collar-trimmed core, but the audited statement does not quantify a `K(C) -> 1` modulus and does not supply the required full-collar asymptotic metric estimate;
+- Wu--Zhang give piecewise smooth homeomorphisms with metric tensor `1 +/- O(sqrt(delta))` and identity data on two unchanged cuffs, and use that identity data to glue maps globally, but require those unchanged cuffs to be uniformly thick and perturb only a bounded third boundary; their theorem therefore misses exactly the one-cusp/two-long-cuff deformation occurring here;
 - Bishop gives boundary-affine quasiconformal maps with distortion tending to `1`, but assumes a uniform upper bound on the boundary lengths;
 - Buser--Makover--Muetzel--Silhol give boundary-coherent cusp degeneration uniformly in the other two cuff lengths, but perturb the short third boundary rather than the two unbounded finite cuffs;
 - Saric's asymptotically conformal Fenchel--Nielsen theorem assumes an upper-bounded pants decomposition, which the distinguished prime-flute decomposition is not;
@@ -78,11 +91,13 @@ No audited theorem located so far combines the four features now required simult
 
 ```text
 one cusp per pant
-+ unbounded perturbed finite cuffs
-+ homeomorphic/bilipschitz distortion -> 1
++ two simultaneously perturbed unbounded finite cuffs
++ homeomorphic/bilipschitz metric distortion -> 1
 + prescribed coherent cuff boundary maps.
 ```
 
+This is a theorem-hypothesis gap, not a novelty claim that such a cusp extension would be new.
+
 ## Research disposition
 
-**Accepted as an active research direction, not as proof of operator equivalence.** PF-118 resolves the earlier subquestion of whether the matched pants are intrinsically close in the local arc/Lipschitz sense: they are, in both directions. The clue is therefore narrowed to the **homeomorphism + boundary-coherence + global-gluing** bridge and to a possible nonlocal obstruction at that bridge. Compactness remains the first unresolved operator gate; first-resolvent trace class is already closed negatively by PF-112.
+**Accepted as an active research direction, not as proof of operator equivalence.** The prior-art audit removes bare homeomorphism existence as the decisive issue and narrows the local bridge to a specific extension of near-isometric, boundary-coherent pant maps through one ideal vertex while both long finite cuffs move. Wu--Zhang supplies the closest constructive template; Minsky shows that cusp limits and unbounded cuffs are not by themselves topological obstructions. The clue remains unresolved until that cusp-extension estimate is proved or a concrete failure mechanism is exhibited. Compactness remains the first unresolved operator gate; first-resolvent trace class is already closed negatively by PF-112.
