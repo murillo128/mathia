@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 7dfea956e22929bee6cf889bc56ddfc14f1966d7
+source_revision: 532e92c76daeb1205e7d87c7dc01f95f5d37a28e
 derived: true
 ---
 
@@ -28,7 +28,9 @@ Thus:
 - pruned share of visited mass = **20.4%**
 - hard-pruned share of all pruned mass = **78.9%**
 
-The initial saturation reading is therefore **high traversal, low saturation**. Mathia has touched much of this v1 map but has not closed most of what it touched.
+The current source delta sharpens several scoped barriers/frontiers inside already visited territories but does not change any v1 leaf state or mass. The state-mass metrics therefore remain unchanged.
+
+The saturation reading remains **high traversal, low saturation**. Mathia has touched much of this v1 map but has not closed most of what it touched.
 
 ## Largest unvisited territories
 
@@ -50,9 +52,13 @@ The hard-pruned mass is concentrated in five **specific interfaces**, not whole 
 - single-profile Gram-defect compression in Weil Inertia — **2.0%**
 - symmetric full-cover Weil–Petersson/uniformization package — **1.2%**
 
+WP-038/WP-039 strengthen the evidence inside the existing positive-calculus closure without expanding its mass: the bare compatible-solenoid Dirichlet form is noncoercive, and the broader scalar translation-invariant Markov escape cannot carry Mangoldt support as its Fourier energy symbol.
+
 ## Live frontier concentration
 
 Largest live family masses are B moments/inertia/statistics (**8.5%**), C explicit-formula/positivity (**8.5%**), H geometric/cohomological/adelic (**6.8%**), G arithmetic/harmonic (**5.0%**), F equivalent criteria (**4.0%**), and E scattering/dynamical (**3.5%**).
+
+The latest source delta sharpens rather than removes several live frontiers: PC-064/065 delimit the bare compact-solenoid spectral route while leaving fuller adelic/product-formula structure open; PL-049/050 close one bulk scaling of localized Weil prime operators while leaving boundary-adapted/full-operator routes open; WI-041/042 remove endpoint motion but expose the shift-first aggregation theorem gap in the welding route.
 
 ## Structural signals
 
@@ -62,4 +68,4 @@ Largest live family masses are B moments/inertia/statistics (**8.5%**), C explic
 
 ## Frontier fertility
 
-`frontier_fertility` is **not calibrated at bootstrap**. v1 establishes the denominator and state baseline; future curator deltas can classify new expansions as `new-territory`, `viable-extension`, `known-prior-art`, `internal-duplicate`, `known-barrier`, `new-barrier`, or `insufficient-evidence` and derive a real time-series without inventing retroactive event counts.
+`frontier_fertility` remains **uncalibrated**. This delta contains a mixture of scoped new barriers, prior-art redirections, and surviving boundary/frontier refinements inside already existing territories; no stable mass-valued event history has yet been established from which to compute the ratio without inventing retroactive weighting.
