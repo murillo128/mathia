@@ -136,6 +136,8 @@ Graph topology, proximity, node counts, or visual clusters are not evidence by t
 
 Inspect local and global clues to understand what has already been proposed, accepted, rejected, or resolved. Do not duplicate existing clues. A rejected clue is not necessarily a theorem-level negative result; inspect its disposition before using it as a strategic reason.
 
+An `origin: adversarial` clue may exceptionally carry a focused line-integrity warning produced after the adversary found and verified suspicious hallucination-like behavior or propagation of unsupported context. Treat such a clue as a **high-priority epistemic risk signal, not as proof**: trace its cited persisted artifacts and source mismatch, independently assess whether current portfolio conclusions depend on the suspect chain, and avoid strengthening strategy from that chain until the revalidation question is resolved. The Master may reflect only evidence-backed strategic consequences; it must not treat the warning itself as authority to mutate tasks or sessions.
+
 ### 5. Use prior art as a saturation/novelty constraint
 
 Use canonical `research/prior_art/**` and persisted novelty statements to understand when multiple lines repeatedly collapse into already-known mathematics.
