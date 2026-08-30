@@ -19,6 +19,18 @@ Load that file from the current Mathia repository as the generic issue-design au
 
 The **task represented by the controlling Mathia issue** owns the scientific question. Codex, Lean, and the independent reviewer are actors inside that task.
 
+## Research Watch promotion boundary
+
+When `mathia-research-watch` invokes this skill after a canonical finding has passed its maturity and deduplication gate, formalization promotion is direct and issue-driven:
+
+- design the smallest faithful Lean theorem boundary supported by the finding;
+- apply the normal `design-github-issue` design discipline and the Gate 0 requirements below;
+- if the target remains sound and execution-ready after design, publish the controlling Mathia issue in the same Research Watch run;
+- do not introduce or update a candidate-list file, TODO ledger, placeholder issue, or other intermediate formalization queue;
+- issue creation does not upgrade the finding's evidence or certify any mathematics beyond the persisted research state.
+
+If design itself exposes an under-specified statement, unresolved mathematical conflict, exact prior formalization with no material delta, or another reason the target is not execution-ready, do not publish a placeholder issue merely to preserve the candidate. Return to the Research Watch/research process with the blocking reason; the canonical finding remains the durable state until a later run can pass the promotion gate.
+
 ## Repository boundary
 
 For Mathia formalization work:
