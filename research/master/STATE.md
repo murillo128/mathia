@@ -1,73 +1,87 @@
 # Mathia Research State
 
+Current evidence revision: `8058b3c2b9dd072ba8783f148ec2edd886a18b02` on `main`.
+Previous material master baseline: `d375f47b1db9c96a7a2b33da492144a5663131d2`.
+
 ## Global picture
 
-The portfolio now supports a two-stage constraint on any serious RH mechanism.
+The current portfolio converges on one repeated constraint: **the arithmetic discriminator has to survive before canonical compression, and the later analytic/sign operation has to act on that surviving structure rather than manufacture selectivity after it has disappeared**.
 
-First, an **arithmetic discriminator must survive before compression**. Prime Circle, Prime Flute, Weil Inertia, and the Nyman side of Prime Lattice repeatedly show that scalarization, averaging, coarse pushforward, determinant formation, or relaxed spectral summaries can erase the information that distinguished the rational-prime object. The surviving data are typically marked, relational, multiscale, target-sensitive, or pre-collapse correlations.
+Across all five lines, recent canonical findings have made broad carrier-building less valuable. Prime Circle reaches profinite-Haar and arithmetic-solenoid completions whose bare leaf spectrum is classical; Prime Flute's explicit all-composite shift clone survives increasingly strong local geometric tests; Prime Lattice repeatedly finds universal, flexible, or boundary-escaping spectral wrappers; Weil Positivity rules out broad classes of passive positive/Markov/Gram realizations of the Mangoldt selector; Weil Inertia localizes its remaining gap to the exact ordering of arithmetic aggregation before Cauchy--Schwarz/compression.
 
-Second, the surviving discriminator must enter a **global analytic or sign-producing operation whose theorem is independent of the desired zeros**. Prime Lattice and Weil Positivity show that a critical boundary, trace-classness, cocycle compatibility, projective curvature, self-adjoint scattering, passive positivity, or a standard positive norm is not enough: each can be universal, freely forgeable, classical prior art, or attached to the wrong observable. The global Mind's distinction between *critical-axis generation* and *zero selection* is therefore essential.
+The useful frontier is therefore narrower in every line. No current evidence justifies creating a sixth research line: the surviving questions have honest owners in the existing portfolio.
 
-At present the most productive direct RH line is **Weil Inertia**: it gives unconditional numerical progress and now has a sharply localized representation/assembly bottleneck. The strongest Mathia-native structural line is **Prime Flute**, where recurrent graded spectral memory and the all-composite shift clone provide a serious mechanism/control pair. Prime Circle remains an upstream information-retention laboratory, while Prime Lattice and Weil Positivity are best used as narrow diagnostic lines for the residual global selector/sign problem.
+## Review and withdrawal reconciliation
 
-The central shared bottleneck is:
+- `PC-046` is withdrawn and absent. Its old low-rank interpretation must not be reused. The active replacements are PC-047--PC-049: the old/new cotangent coupling can have maximal permitted rank, fixed-shell data can still classicalize, and primitive refinement pushforward can be commuting and invertible.
+- `WP-027` is absent from the current tree and is not evidence. Portfolio conclusions use the surviving WP findings only.
+- There are no current research-review sidecars requiring unresolved dialogue reconciliation.
+- The Prime-Flute clone clue is now `accepted` and materially narrowed by PF-118 to homeomorphism/boundary coherence/global gluing and genuinely nonlocal operator behavior; first-resolvent trace class is already closed negatively by PF-112.
+- The Weil-Inertia large-coordinate compression clue is `resolved`; it is no longer an open portfolio target.
 
-> construct a canonical global operation that preserves a rational-prime discriminator through the relevant quotient/limit, fails a sufficiently matched non-prime control, and only then produces the analytic continuation, zero-sensitive invariant, or positivity required by RH.
+## Portfolio
 
-## Review-reconciled evidence state
-
-There are no open research review sidecars in the current portfolio snapshot. Accepted review mathematics that matters strategically is already canonical: PF-103 contains the exact cross-ratio/Mobius argument establishing a genuinely nontrivial exact/projective cusp pair; WP-015 contains the critical-line cusp-flux obstruction showing the ordinary outgoing DtN value is non-Hermitian; and WI-011 contains the accepted large-coordinate compression proof of the global trace-energy envelope.
-
-One former synthesis premise must **not** be reused: the old PC-046 interpretation of the old/new cotangent defect as globally low-rank was withdrawn after adversarial review. The current replacement PC-047 proves that the old/new coupling often has the **maximal rank permitted by dimensions**. Factoring through an "old" sector is provenance information, not a low-rank theorem.
-
-## Research-line portfolio
-
-| Line | Current evidence frontier | Live discriminating question | Recommendation |
+| Line | Evidence frontier | Current owner question | Recommendation |
 | --- | --- | --- | --- |
-| `prime_circle` | PC-047 shows old/new coupling is often maximally ranked; PC-048 shows a full-rank single-shell carrier can still diagonalize to fixed classical `L(0,chi)` data; PC-049 and PC-050 show canonical coarse refinement is an invertible commuting pushforward and repeated-prime averaging is radical-invariant | Can an **uncollapsed cross-level/fine-coarse correlation**, rectangular Gram object, or nonlinear primitive-only uniformization retain information not reduced to fixed cyclotomic/`L(0)` data or radical support? | `narrow` |
-| `prime_flute` | PF-111 shows the `p_n -> p_n+1` composite clone has summable distortion for every pant-local marked word; PF-112 rules out trace class of the first relative resolvent by a generic 2D microlocal obstruction, while compactness, `S_p (p>1)`, higher resolvent powers, heat and scattering remain open; recurrent graded finite blocks still retain upstream spectral memory | Does a **global cross-pant/operator-nonlocal** comparison place the prime/clone pair in a useful compact or higher relative-trace class, and can the recurrent graded spectral memory survive in such a global container? | `continue` |
-| `prime_lattice` | PL-034 shows `S_1` shift regularity is either canonical-zero or spectrally flexible; PL-035 shows scalar translated determinant compatibility is an arbitrary 1-coboundary and survives Beurling replacement; PL-036 shows scalar projective prime-square curvature is arbitrary phase data | Can a rational-prime family force a **canonically normalized joint invariant**—target-sensitive, operator-valued, adelic/reciprocity-based, or otherwise global—whose gauge class is not freely selectable and demonstrably fails matched Beurling controls? | `narrow` |
-| `weil_positivity` | WP-015 closes inherited ordinary DtN positivity on the critical scattering line; WP-024 shows even canonical modular scattering can contain completed zeta and Gamma while its physical positivity does not imply Weil positivity; WP-026 closes passive Kron/Schur generation of the missing negative self-energy; WP-027 shows the canonical positive commutator repair radializes away the Mangoldt selector | Can the signed/oriented finite selector be **coupled to the archimedean and polar sectors before positivity is taken**, with a genuinely new global order/pairing theorem that preserves the Mangoldt cancellation instead of radializing or subtracting it away? | `narrow` |
-| `weil_inertia` | WI-020 makes the scalar trace-energy relaxation sharp; WI-022 proves actual Montgomery-Taylor translation Grams cannot realize its one-spike extremizer; WI-024 gives the certified bound `N_0^s/N >= 0.6728529261926306...`; WI-025 shows enlarging the same four-point/full-recovery assembly has an asymptotic ceiling near `0.672854999`, still below the known collapsed countermodel scale | Can **pre-collapse multi-profile/cross-Gram information**, a quantified realizability surplus, a stronger certificate/support regime, or a different assembly law break the current single-profile/four-point ceiling? | `continue` |
+| `prime_circle` | PC-058--PC-061 drive the exact radial birth structure toward divisor-Haar/profinite-Haar behavior; PC-064 identifies compatible refinement with the arithmetic solenoid; PC-065 shows the bare leafwise Laplacian has dense rational-square spectrum, noncompact resolvent and no intrinsic trace-class heat-kernel route | Is there a **canonically forced transverse/nonlocal refinement operator** that retains prime/valuation information before Haar/leafwise scalarization and fails a matched non-prime control? | `narrow` |
+| `prime_flute` | PF-105--PF-111 make the all-composite shift clone extremely close in tail, cuff, collar, separator and pant-local marked geometry; PF-112 rules out `S_1` for the first relative resolvent; PF-114 isolates a surviving seam-relative mode; PF-118 gives two-sided local arc-Lipschitz convergence but not coherent homeomorphic gluing | Can boundary-coherent near-isometric pant homeomorphisms glue globally, or does a specific cross-pant/energy mechanism obstruct strong equivalence and compact relative resolvent? | `narrow` |
+| `prime_lattice` | PL-034--PL-043 repeatedly expose flexibility/universality in generic shift, scalar cocycle, projective, spherical and target-relative wrappers; PL-049 gives an exponential norm obstruction for the Weil prime shift; PL-050 shows natural rescaling has zero bulk strong limit while order-one spectral edges escape to boundary layers | Can a target-attached or boundary-adapted prime action produce a **nontrivial action-dependent joint invariant** after subtracting universal scalar/translation effects, and survive matched Beurling controls? | `narrow` |
+| `weil_positivity` | WP-028--WP-039 close increasingly broad positive repairs: compact corrections preserve finite negative index, place-additive PSD readouts cannot select prime powers, critical Gram completions are nonclosable/stably unrepairable, the solenoidal Dirichlet form is noncoercive, and even nonlocal translation-invariant Markov symbols cannot have Mangoldt support | Can finite arithmetic orientation be coupled to archimedean/polar data **before** positivity, through a non-translation-invariant, graded, boundary/cohomological or otherwise category-changing construction with an independent sign theorem? | `narrow` |
+| `weil_inertia` | WI-028 and WI-030--WI-034 rigidify the deterministic and structured-shift inputs; WI-037--WI-041 remove several apparent nuisances but expose the coefficient/aggregation wall; WI-042 proves the public band ledger uses the forbidden across-family Cauchy route and does not implement the claimed shift-only consumer | Can the actual Yang outer weights be exactly regrouped **shift-first** into an MRT-compatible coefficient norm before Cauchy--Schwarz, or can that possibility be decisively ruled out? | `narrow` |
 
-No current evidence supports `merge-candidate`, `split-candidate`, `pause-candidate`, or `new-line-candidate`. Prime Circle and Prime Flute remain coupled but distinct (information-retention geometry versus hyperbolic/operator realization); Weil Inertia and Weil Positivity remain complementary (quantitative control of exceptional mass versus construction of a global sign theorem).
+No current evidence supports `merge-candidate`, `pause-candidate`, `split-candidate`, or `new-line-candidate`. The lines share obstructions but still own distinct falsifiable questions.
 
-## Cross-line mechanisms and transfers
+## Cross-line synthesis
 
-### Capacity is not selectivity
+### Preserve the discriminator before compression
 
-PC-047/PC-048 supply the cleanest correction to an earlier heuristic: a carrier can have maximal rank and still encode only classical fixed special-value data. The strategic question is therefore not whether a representation has enough dimensions, but whether its **joint law constrains those dimensions arithmetically**. This transfers directly to Prime Lattice, where scalar/projective cocycles have ample nontrivial data but that data are freely assignable, and to Weil Positivity, where positive operator constructions can be rich while attached to the wrong selector.
+The strongest common pattern is now source-grounded across the portfolio. PC-058--PC-065 show radial/refinement canonicalization ending in Haar or classical rational-frequency structure. PF-097, PF-099 and PF-101 show finite moduli, projective normalization and matched finite-jet scattering can become prime-blind, while PF-114 preserves a relative seam mode before global operator compression. PL-039--PL-042 show spherical/scalar/target-relative constructions can be universal, and PL-050 shows bulk rescaling can literally send the fixed-window strong limit to zero while norm remains in escaping boundary states. WI-042 shows that changing the order of regrouping and Cauchy--Schwarz changes which arithmetic information is available. WP-031--WP-039 show that imposing a broad positive category too early can make the required Mangoldt support algebraically impossible.
 
-### Compression must be audited against realizability
+The portfolio-level rule is therefore: **identify the prime discriminator and its matched control first; only then permit averaging, quotienting, determinant formation, positivity, trace ideals or asymptotic limits.**
 
-Weil Inertia gives the quantitative version of the same lesson. The scalar trace-energy envelope is now sharp as a relaxation, yet actual translation Gram matrices cannot attain its extremizer. That gap is potentially useful only if it is quantified *before* the representation is collapsed to scalar energy. Prime Circle's fine/coarse versus averaged refinement distinction and Prime Flute's marked versus scalar spectral data are the analogous structural cases.
+### Matched non-prime controls are the main falsification tool
 
-### Matched controls must reach the same information layer
+Prime Flute provides the clearest reusable pattern: the `p_n -> p_n+1` all-composite clone preserves more and more of the local/tail geometry, forcing any surviving claim to move to a genuinely global information layer. The same discipline should be applied to Prime Circle transverse candidates, Prime Lattice action invariants and Weil-Positivity sign mechanisms. A candidate that reads only a structure preserved by its matched control is not an arithmetic selector.
 
-The strongest controls are no longer simple integer or regular backgrounds. Prime Flute's exact all-composite shift clone is locally extremely close to the prime surface through cuffs, collars and pant-local marked words, so any surviving geometric signal must be cross-pant or operator-nonlocal. Prime Lattice's Beurling controls reproduce exponent-semigroup, scalar-cocycle, and projective-cocycle structure while changing zeta behavior. A proposed arithmetic invariant should be tested against a control preserving **the same layer of structure the invariant reads**.
+### Operator category is a hard compatibility gate
 
-### Operator category is a hard gate
+PF-112 (`S_1` failure), PC-065 (noncompact resolvent/infinite heat trace), PL-050 (strong-limit/boundary-escape mismatch), and WP-032/WP-038/WP-039 (nonclosability, noncoercivity, Markov-symbol obstruction) all show that spectral resemblance is insufficient. Before assigning arithmetic meaning, each proposal must state and prove the operator class, compactness/Schatten/coercivity/sign property actually needed by the downstream argument.
 
-PF-112 shows that first-resolvent trace class is impossible for any non-isometric 2D metric comparison for local pseudodifferential reasons; WP-015 shows the outgoing critical-line DtN value is not even Hermitian; WP-026 shows passive Schur reduction cannot leave the passive cone to create the Weil self-energy correction. These are category obstructions, not failures of numerical tuning. Future operator proposals should identify the required ideal/order/sign category before interpreting their spectra.
+### Boundary/transverse structure is a recurring survivor, not yet evidence of RH
 
-### Boundary or symmetry is not zero selection
+Recent work repeatedly pushes surviving information out of a scalar bulk: PC-065 leaves transverse finite-adic structure outside the bare leaf metric; PF-114 leaves a seam-relative/gluing question; PL-050 pushes norm to moving boundary layers; WP-039 leaves non-translation-invariant or graded/global couplings; WI-042 requires structure retained before familywise compression. This is a useful transfer heuristic, but **not** evidence that “boundary” or “transverse” geometry selects Riemann zeros. Any such candidate still has to fail a matched control and acquire an independent analytic/sign theorem.
 
-Bohr/Hardy half-boundaries, hyperbolic scattering symmetry lines, self-adjoint/unitary axes, and critical attenuation can arise for universal reasons. WP-024 is the strongest matched example: one canonical response contains completed zeta but the Riemann zeros occur as off-physical-line resonances, while physical unitarity is unconditional. A successful line must therefore explain a selector or rigidity theorem beyond the existence of the symmetry axis itself.
+## Prior-art calibration
 
-## Prior-art saturation
+The graph and prior-art atlas are navigation aids, not proof. The curated corpus is explicitly bounded/incomplete, so the portfolio does **not** claim literature-wide saturation.
 
-Broad classical wrappers are now heavily saturated and should not be reopened without a new Mathia-specific discriminator. This includes cotangent/cyclotomic/Hecke special-value reformulations, standard modular/Selberg scattering and resonance realizations, generic Bost-Connes/shift/cocycle/determinant machinery, ordinary Hodge/index supersymmetry, passive DtN/Kron/Fisher positivity, and generic trace-class perturbation theory.
+What is locally saturated by current canonical Mathia evidence is narrower:
 
-The least-saturated live regions are correspondingly specific rather than broad: uncollapsed Prime-Circle cross-level correlations; Prime-Flute global comparison against the `p_n+1` clone beyond pant-local data and first-resolvent `S_1`; Prime-Lattice joint invariants fixed by genuine local-global arithmetic rather than free semigroup cohomology; Weil-Positivity selector-before-positivity couplings; and Weil-Inertia multi-profile/pre-collapse constraints or stronger certificates.
+- Prime Circle: radial/cotangent/profinite-Haar and bare-solenoid-leaf completions as standalone selectors.
+- Prime Flute: ordinary global Selberg/determinant interpretations and local/finite-jet geometry that the explicit composite clone already matches.
+- Prime Lattice: generic prime-shift, scalar/projective cocycle and universal ambient spectral wrappers without target-attached arithmetic normalization.
+- Weil Positivity: passive positive, place-additive Gram, canonical solenoidal Dirichlet and scalar translation-invariant Markov realizations of the finite Mangoldt selector.
+- Weil Inertia: the across-family `L^2`/Cauchy welding route represented by the public band ledger; the only credible repair is shift-first weighted regrouping or a genuinely stronger square-function theorem.
 
-## Highest-leverage unresolved questions
+## Active clues and ownership
 
-1. **Weil Inertia:** stop spending effort on larger instances of the same four-point/full-recovery assembly unless a new constraint changes the asymptotic ceiling. Highest leverage is a provable realizability surplus or genuinely independent profile/cross-Gram information that can beat the `~0.67361` collapsed countermodel scale.
-2. **Prime Flute:** test the first genuinely global clone gate—compact relative resolvent or a higher-power/heat relative trace—while preserving marked cross-pant information; separately connect the recurrent graded finite-block memory to that global operator picture if possible.
-3. **Prime Circle:** move past shell rank and canonical averaging. The next useful observable must retain fiber-orthogonal or cross-level correlation data and pass the fixed-`L(0)`/radical-invariance controls already established by PC-048–PC-050.
-4. **Prime Lattice:** require any new prime-action invariant to fail the arbitrary-transfer-function, arbitrary-phase, and Beurling controls. The surviving target is arithmetic normalization of a joint invariant, not another cocycle or Schatten label.
-5. **Weil Positivity:** preserve the Boolean/Mangoldt inclusion-exclusion through finite–archimedean coupling and postpone the positive norm/order operation until after that coupling. Any sign theorem that already works on the uncoupled finite object is likely to reproduce the radialization/passivity failures now catalogued.
+- `prime_circle`: `CLUE-transverse-solenoid-prime-discriminator.md` — `proposed`; asks the new post-PC-065 transverse/nonlocal discriminator question.
+- `prime_flute`: `CLUE-affine-composite-clone-relative-operator-class.md` — `accepted`; current scope is boundary-coherent homeomorphic/bilipschitz gluing, compact relative resolvent, or a concrete nonlocal obstruction.
+- `prime_lattice`: `CLUE-trace-class-prime-resolvent-cocycle.md` — `accepted`; owner question remains action-dependent relative data beyond scalar translation and universal compact-resolvent effects.
+- `weil_inertia`: `CLUE-spectral-defect-large-coordinate-compression.md` — `resolved`; do not treat as an open target.
+- `weil_positivity`: both Schiffer clues remain `proposed`; they are local structural questions and do not by themselves answer the newer global selector-before-positivity problem.
+
+No additional clue is warranted in this pass: the other concrete live questions are already owned by accepted/proposed line state or are direct continuations of current canonical findings, and duplicating them would create clue churn.
 
 ## Portfolio recommendation
 
-Keep the five-line portfolio unchanged. Continue `weil_inertia` and `prime_flute`; narrow `prime_circle`, `prime_lattice`, and `weil_positivity`. The main portfolio-level discipline is to reject new branches that add another classical carrier, boundary, cocycle, or positive norm without first identifying **which rational-prime discriminator survives the same construction under a matched control**.
+Keep the five-line portfolio unchanged and mark **all five `narrow`**. This changes the previous global stance for Prime Flute, Weil Inertia and the earlier broader versions of the active diagnostic lines: recent findings have not made those lines unproductive, but they have made broad exploration less defensible.
+
+The highest-leverage discipline is now to demand, for every next step, a short chain of four explicit gates:
+
+1. the exact rational-prime discriminator being retained;
+2. a matched non-prime/control object at the same information layer;
+3. the operator/analytic category required downstream;
+4. a falsifiable theorem showing either separation from the control or unavoidable collapse.
+
+Absent that chain, another classical carrier, scalar spectral wrapper, positive norm, or canonical limit should not reopen a broad search lane.
