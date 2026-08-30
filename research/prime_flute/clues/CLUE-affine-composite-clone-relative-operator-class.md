@@ -5,131 +5,90 @@ status: accepted
 origin: mind
 target_line: prime_flute
 based_on:
-  - research/prime_flute/findings/PF-105-exact-composite-clone-is-uniformly-tail-cross-ratio-equivalent.md
   - research/prime_flute/findings/PF-106-affine-composite-clone-is-l1-close.md
   - research/prime_flute/findings/PF-107-shift-clone-cuff-defect-is-l2-not-l1.md
   - research/prime_flute/findings/PF-108-shift-clone-collar-and-spine-defects-are-summable.md
   - research/prime_flute/findings/PF-109-shift-clone-preserves-canonical-separator-pinching-multiplicatively.md
-  - research/prime_flute/findings/PF-110-zero-systole-obstructs-bounded-ideal-triangulations.md
   - research/prime_flute/findings/PF-111-shift-clone-has-summable-pant-local-marked-length-distortion.md
   - research/prime_flute/findings/PF-112-first-relative-resolvent-is-not-trace-class.md
-  - research/prime_flute/findings/PF-113-relative-generator-right-limits-are-parabolic-gauge-data.md
   - research/prime_flute/findings/PF-114-shift-clone-pant-waves-telescope-but-seam-relative-mode-does-not.md
-  - research/prime_flute/findings/PF-115-all-composite-shift-clone-has-the-same-gromov-hyperbolicity-class.md
-  - research/prime_flute/findings/PF-116-prime-flute-is-not-gromov-hyperbolic.md
   - research/prime_flute/findings/PF-118-shift-clone-pants-are-arc-lipschitz-close.md
   - research/prime_flute/findings/PF-119-canonical-cusp-split-gluing-offset-has-summable-shift-clone-defect.md
+  - research/prime_flute/findings/PF-120-cusp-busemann-shifts-must-synchronize.md
+  - research/prime_flute/findings/PF-121-ideal-lambert-shift-comparison-is-asymptotically-bilipschitz.md
+  - research/prime_flute/findings/PF-122-canonical-cusp-strip-gluing-cost-is-summable.md
 ---
 
 # Affine composite clone and the relative Laplacian class
 
 ## Observation
 
-After the canonical Möbius translation, the all-composite shift clone `p_n -> p_n+1` is extremely close to the exact prime flute in every local or tail quantity so far tested. PF-106 gives `ell^1` sampled-endpoint displacement and uniform `O(P^-3)` all-span tail cross-ratio/separator distortion. PF-107--PF-109 give summable relative cuff distortion, summable absolute collar/spine and area-weighted defects, and multiplicative control of every canonical PF-004 separator. PF-111 removes amplification by the complete marked closed-word spectrum inside one pant, while PF-114 isolates the only presently exposed nonsummable local relative mode: the shrinking cross-cuff seam has
+The exact all-composite shift clone `p_n -> p_n+1` remains extremely close to the prime flute under every tail control that has survived audit. PF-106--PF-111 give summable or asymptotically vanishing endpoint, relative-cuff, collar/spine, separator, and pant-local marked-length defects. PF-112 closes first-resolvent trace class for a generic two-dimensional microlocal reason but explicitly leaves compactness open.
+
+The geometric bridge has now narrowed substantially. PF-119 factorizes each normalized one-cusp pant into two one-parameter ideal Lambert quadrilaterals and proves that the canonical cusp split-offset defect is `ell^1`. PF-120 shows that independently canonical side isometries cannot be prescribed on both rays of one cusp because their Busemann shifts must synchronize. PF-121 then constructs genuine `1+o(1)` bilipschitz homeomorphisms `Q(a_n)->Q(a_n^+)` uniformly through the collapsing ideal geometry, so there is no intrinsic single-quadrilateral `O(1)` distortion.
+
+PF-122 removes the remaining **deep-cusp** coherence candidate. In the physical PF-119 normalization, the region `y>=1` is the same standard strip `0<=x<=1` for every pant. The piecewise-affine map fixing height and sending the split `x=t_n` to `x=t_n^+` has
 
 ```text
-log(S_n^+/S_n) = -1/p_n + o(1/p_n),
+log Bilip <= |epsilon_n - epsilon_{n+1}|
+             = |sigma_n^+ - sigma_n|,
 ```
 
-although its additive defect is summable.
+and PF-119 proves the right-hand side is `ell^1`. The estimate is uniform even when `t_n->0` or `1`, and it uses one common Busemann gauge on all cusp rays. Thus the nonsummable reciprocal-prime common scale, extreme split ratios, and the infinite cusp itself no longer supply a plausible metric-amplification obstruction.
 
-PF-118 materially narrows the remaining local geometric gate. For each matched one-cusp pant, the exact arc distance tends to zero in both directions. Alessandrini--Disarlo's finite-type theorem therefore supplies continuous marking-compatible boundary-respecting Lipschitz maps both ways whose optimal Lipschitz constants tend to `1`; in the prime-to-clone direction the logarithmic optimal costs are even summable. Those optimal maps are not known to be injective or to prescribe a common cuff parametrization.
-
-PF-119 removes a more specific candidate obstruction at the cusp-gluing level. A canonical half-pant normalization splits `P(2a,2b,0)` into two one-parameter ideal Lambert quadrilaterals `Q(a)` and `Q(b)`. Their relative cusp placement is the exact horocyclic split ratio
-
-```text
-Theta(a,b) = cosh(a) / cosh(b).
-```
-
-For the prime/shift-clone pair, the **single-quadrilateral chart-scale defect** remains of reciprocal-prime size and is not `ell^1`, but the actual adjacent cusp-split offset is its first difference and PF-119 proves
-
-```text
-sum_n |sigma_n^+ - sigma_n| < infinity.
-```
-
-Thus the nonsummable seam/common scale does not by itself create a nonsummable scalar cusp-gluing offset. Any surviving local obstruction must live in the metric/Jacobian behavior of the one-parameter quadrilateral map, in prescribed finite-cuff boundary data, or in a genuinely nonlocal operator effect.
-
-A closer prior-art audit removes **bare homeomorphism existence** as the main obstruction, but not the asymptotic near-isometry needed for operators. Minsky's Lemma 8.2 gives a homeomorphism between hyperbolic pairs of pants whenever corresponding boundary lengths differ by a bounded additive amount, explicitly allowing cusp limits and arbitrarily long finite cuffs. It maps standard collars to standard collars and is uniformly bilipschitz on the collar-trimmed core. However, the theorem provides only a coarse `K(C)` bound: it does not give `K(C) -> 1` as the additive error tends to zero, and its bilipschitz conclusion is stated on the trimmed core rather than the full collars.
-
-Wu--Zhang's 2025 Proposition 8.7/8.18 supplies almost exactly the stronger kind of map desired here in a neighboring regime. If two boundary components are unchanged and each has length at least `2 arcsinh(1)`, while only the third bounded boundary is changed by relative amount `delta`, they construct a piecewise smooth homeomorphism that is the identity on the two unchanged boundaries and satisfies a metric-tensor estimate `1 +/- O(sqrt(delta))`; these maps glue because of the prescribed identity boundary data. Their proof is an explicit Fermi-coordinate pentagon/hexagon construction. It does **not** directly cover the prime-flute pants: in `P(A_n,B_n,0) -> P(A_n^+,B_n^+,0)` the cusp cannot be one of the two unchanged thick boundaries, while treating the cusp as the varied third boundary leaves its length identically zero and does not deform the two long finite cuffs.
-
-PF-119 shows that one need not attack that two-cuff cusp degeneration as an indivisible three-parameter problem. The exact half-pant factorization reduces the unresolved local bridge to a one-parameter map on `Q(a)` plus an already-controlled scalar interface offset.
+The unresolved local problem is now confined to a bounded-height transition: reconcile the lower PF-121 quadrilateral maps with the PF-122 canonical cusp-strip map while keeping the finite-cuff boundary trace dependent only on that cuff. If this can be done with distortion `1+o(1)`, the resulting pentagons should double and the zero-twist pants should have a chance to glue canonically across the full flute.
 
 ## Research question
 
-Can one construct piecewise smooth homeomorphisms
+Can the PF-121 and PF-122 maps be combined into boundary-coherent one-cusp pant homeomorphisms and then a global marked homeomorphism
 
 ```text
-Q(a_n) -> Q(a_n^+)
+F : X_prime -> X_shift
 ```
 
-for the PF-119 canonical ideal Lambert quadrilaterals such that:
-
-1. the metric tensor/bilipschitz distortion is `1+o(1)` uniformly as `a_n -> infinity`;
-2. the finite-cuff side is mapped by normalized arclength, or by another boundary parametrization that is identical when the two adjacent pants are glued with zero twist;
-3. the central vertical boundary map is compatible with the PF-119 cusp-chart scaling, so that the two quadrilateral maps assemble into a one-cusp pant homeomorphism without reintroducing an uncontrolled offset?
-
-The exact model is unusually rigid:
+such that, after transporting the clone metric to the prime surface,
 
 ```text
-Q(a):
-  vertical sides x=0,1
-  cuff circle      |z|   = tanh(a)
-  interface circle |z-1| = sech(a).
+||F^* g_shift - g_prime||_{g_prime} -> 0
 ```
 
-For the shift clone `a_n^+-a_n -> 0`; the outer radius `tanh(a)` changes only exponentially in `a`, while the small interface radius `sech(a)` changes multiplicatively by a factor tending to `1`. PF-119 proves that the relative translation needed when the `Q(a_n)` and `Q(a_{n+1})` charts are reassembled has summable defect. This makes an explicit Fermi-coordinate or patched-local-isometry construction the cheapest positive test.
+uniformly at infinity, with the associated volume-density ratio also tending to `1`?
 
-If the quadrilateral maps can be built and doubled/assembled pantwise, the next question is whether the resulting complete-flute homeomorphism has metric-norm and volume-density defects tending to `1` on the whole tail. Only after that bridge is established should one invoke an operator theorem.
+The concrete local gate is to construct, on each normalized pentagon, a piecewise-smooth transition across a fixed-height band that simultaneously:
 
-The first operator target remains compactness of a natural relative resolvent, not trace class. PF-112 already proves that under any smooth non-isometric common-manifold identification the first relative resolvent cannot be `S_1` for the generic two-dimensional microlocal reason.
+1. agrees with PF-122 on the upper cusp strip;
+2. agrees with a PF-121-type map on the lower Lambert pieces;
+3. induces one identical trace on the artificial split ray;
+4. induces on each finite cuff a trace determined only by that cuff parameter pair `(a_n,a_n^+)`, so the two adjacent pants glue with zero twist;
+5. has bilipschitz constant tending to `1` uniformly over all possible neighboring gap ratios.
+
+If those maps glue globally, the first operator target is **compact relative resolvent/equality of essential spectra**, not trace class. Georgescu--Golénia's strong-equivalence theorem for complete Riemannian structures is the natural theorem to audit against the resulting common-manifold metric coefficients.
 
 ## Why it may matter
 
-This is the sharpest current test of whether the full exact cotangent endpoint geometry is operator-theoretically distinguishable from an explicit all-composite surface. A positive quadrilateral/pant/gluing/strong-equivalence theorem would show that the prime-specific sampled deformation is perturbative at the level of essential spectral data. A negative theorem would have to expose a genuine infinite-surface amplification mechanism that is invisible to endpoint displacement, canonical separators, collars, pant-local closed words, returning waves, the full local arc metric, and now also the canonical scalar cusp-split offset.
+This is now a sharp adversarial test of whether any prime-specific information survives in the essential spectral class of the exact flute. A positive global strong-equivalence theorem would show that an explicit surface built only from composites has the same essential Laplace spectrum and compact relative resolvent under the natural marking, eliminating essential-spectrum data as a primality/RH selector for this construction.
 
-Either outcome is useful: it separates a real global Laplacian effect from coordinate amplification such as the nonsummable additive cuff circumference or relative seam scale.
+A negative result would be equally informative, but it can no longer be blamed on raw cuff divergence, local closed-word lengths, collar geometry, Lambert collapse, a scalar cusp offset, independent Busemann gauges, or extreme cusp split ratios. It would have to expose a genuine bounded-height gluing/Jacobian obstruction or a nonlocal infinite-surface amplification mechanism.
 
 ## Decisive test
 
-A positive resolution must do all of the following:
+A positive resolution must:
 
-1. construct the one-parameter maps `Q(a_n) -> Q(a_n^+)` and inverses with a full metric-tensor/bilipschitz estimate `1+o(1)` whose constants remain controlled through the ideal vertex and the collapsing `sech(a_n)` interface circle;
-2. prescribe normalized-arclength data on the finite-cuff side and compatible data on the central vertical, then use PF-119's summable cusp-offset defect to assemble the two quadrilaterals and their doubles into boundary-coherent one-cusp pant maps;
-3. glue the pant maps to a global homeomorphism and verify uniform metric equivalence plus metric-norm and volume-density ratios tending to `1` on the complete tail, including collars and cusp regions;
-4. only then invoke an appropriate operator theorem, for example Georgescu--Golénia strong equivalence, to deduce compact relative resolvent/equality of essential spectra.
+1. construct the boundary-coherent transition described above with a tail bilipschitz constant `K_n->1`;
+2. double the pentagon maps and prove that maps on every shared cuff agree exactly under the zero-twist marking;
+3. glue them to a complete global homeomorphism and verify uniform metric equivalence plus pointwise metric-norm and volume-density ratios tending to `1` at infinity;
+4. audit and apply the exact hypotheses of an appropriate relative-Laplacian theorem to obtain compact relative resolvent/equality of essential spectra.
 
-The cheapest negative test is now internal to `Q(a)`: prove that every homeomorphism with the required finite-cuff and central-vertical boundary data has an `O(1)` lower bound on its metric-tensor or quasiconformal distortion even when `|a_n^+-a_n| -> 0`. A failure specifically in the Fermi-coordinate Jacobian, the collapsing interface circle, or the energy of the prescribed boundary interpolation would give the desired obstruction. PF-119 rules out blaming a nonsummable scalar relative cusp translation alone.
+A decisive negative resolution must identify an invariant lower bound that survives PF-121 and PF-122: for example, prove that every transition with the required split/cuff traces pays a fixed positive bilipschitz or quasiconformal cost along an escaping sequence, or construct a weakly-null/Weyl sequence showing that no common-manifold metric perturbation tending to zero can realize the marked clone.
 
-A different negative resolution may exhibit a weakly-null/Weyl sequence, a cross-pant energy amplification, or another invariant showing that no strong-equivalence identification can exist. PF-118 rules out treating the local arc spectrum itself as that obstruction.
-
-Wave/scattering equivalence is a separate stronger test. Güneysu--Thalmaier requires a global weighted metric-deviation integral involving inverse unit-ball volume; PF-108's unweighted collar integral does not verify it. If compactness survives, do not return to `S_1` of the first resolvent: test `S_p`, `p>1`, higher resolvent powers, or heat differences separately before defining determinant/spectral-shift objects.
+Do not use failure of `S_1` for the first resolvent as such a negative test: PF-112 proves that failure locally for every non-isometric smooth metric perturbation, even when compactness holds. Higher Schatten classes, higher resolvent powers, heat differences, wave/scattering equivalence, and determinants remain separate later gates.
 
 ## Evidence boundary
 
-This clue is not evidence that the two complete surfaces are quasiconformally equivalent, asymptotically isometric, strongly equivalent, compact-resolvent perturbations, wave-equivalent, or spectrally equivalent. PF-118 proves only a finite-pant statement in the category of continuous boundary-respecting Lipschitz maps; it explicitly stops before injectivity, prescribed cuff parametrizations, gluing, metric-density control, or any operator conclusion. PF-119 proves an exact cusp-normalized half-pant factorization and summability of one scalar interface-offset defect; it does **not** construct the required `Q(a)` homeomorphism or control its Jacobian.
+This clue is **not** evidence that the complete prime and shift-clone surfaces are quasiconformally equivalent, strongly equivalent, compact-resolvent perturbations, wave-equivalent, or spectrally equivalent. PF-121 proves only a local ideal-quadrilateral map; PF-122 proves only a canonical map on the deep cusp strip. Their traces have not yet been reconciled across the bounded-height transition, the doubled pants have not been glued, and no global metric-density estimate has been established.
 
-The closest prior art now isolates the missing hypothesis quite sharply:
-
-- Minsky gives homeomorphisms for bounded additive pants-length changes with unbounded cuffs and cusp limits, mapping collars correspondingly and with uniform bilipschitz control on the collar-trimmed core, but the audited statement does not quantify a `K(C) -> 1` modulus and does not supply the required full-collar asymptotic metric estimate;
-- Wu--Zhang give piecewise smooth homeomorphisms with metric tensor `1 +/- O(sqrt(delta))` and identity data on two unchanged cuffs, and use that identity data to glue maps globally, but require those unchanged cuffs to be uniformly thick and perturb only a bounded third boundary; their theorem therefore misses the one-cusp/two-long-cuff deformation before the PF-119 factorization;
-- Bishop gives boundary-affine quasiconformal maps with distortion tending to `1`, but assumes a uniform upper bound on the boundary lengths;
-- Buser--Makover--Muetzel--Silhol give boundary-coherent cusp degeneration uniformly in the other two cuff lengths, but perturb the short third boundary rather than the two unbounded finite cuffs;
-- Saric's asymptotically conformal Fenchel--Nielsen theorem assumes an upper-bounded pants decomposition, which the distinguished prime-flute decomposition is not;
-- Whitney--Saric bounded ideal triangulations cannot supply an alternate bounded-shear chart because PF-110 proves that zero systole obstructs their existence here;
-- PF-115--PF-116 show that coarse Gromov hyperbolicity cannot distinguish prime from clone.
-
-No audited theorem located so far directly supplies the remaining one-parameter statement:
-
-```text
-canonical ideal Lambert Q(a)
-+ a' - a -> 0 with a -> infinity
-+ homeomorphic/bilipschitz metric distortion -> 1
-+ prescribed finite-cuff and central-vertical boundary maps.
-```
-
-This is a theorem-hypothesis gap, not a novelty claim that such a quadrilateral comparison would be new.
+The closest audited comparison literature remains hypothesis-mismatched rather than decisive: Minsky gives coarse bilipschitz pants/degenerate-hexagon comparisons for bounded additive boundary changes; Wu--Zhang give `1+o(1)` metric-tensor control with prescribed boundary data in a neighboring thick-boundary regime; Saric's asymptotically conformal Fenchel--Nielsen theorem assumes an upper-bounded pants decomposition; and bounded-ideal-triangulation routes are unavailable by PF-110. None of those statements directly supplies the current bounded-height transition for one cusp and two unbounded cuffs.
 
 ## Research disposition
 
-**Accepted as an active research direction, not as proof of operator equivalence.** PF-119 removes the canonical scalar cusp-gluing offset as a source of nonsummable amplification and factorizes the local problem into a one-parameter ideal-quadrilateral comparison. The next local gate is therefore explicit and falsifiable: prove or obstruct a boundary-controlled `1+o(1)` homeomorphic/bilipschitz map on `Q(a)`, then assemble and glue it. Compactness remains the first unresolved operator gate; first-resolvent trace class is already closed negatively by PF-112.
+**Accepted and materially narrowed, not resolved.** PF-121 kills the single-Lambert interior obstruction and PF-122 kills the deep-cusp/split-ray amplification. The next tractable gate is the fixed-height boundary-coherent transition and exact zero-twist cuff gluing. Compact relative resolvent remains the first unresolved operator consequence; first-resolvent trace class remains closed negatively by PF-112.
