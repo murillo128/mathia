@@ -22,7 +22,7 @@ and
 \tag{2}
 \]
 
-Thus every fixed `theta<1` leaves positive raw source-support mass outside even the optimistic one-sided interface. An explicit rational box around `beta_1=beta_2=2/5` has strictly positive four-leg source geometry and lies outside **both** AP ranges even at `theta=66/107`, the strongest currently located unconditional level in the much more restrictive triply-well-factorable setting. The obstruction is therefore not an artifact of integrating over cells on which the Yang overlap geometry vanishes.
+Thus every fixed `theta<1` leaves positive raw source-support mass outside even the optimistic one-sided interface. An explicit rational box around `beta_1=beta_2=2/5` has strictly positive four-leg source geometry and lies outside **both** AP ranges even at the deliberately optimistic nominal endpoint `theta=5/8` of Pascadi's unconditional `5/8-epsilon` theorem for triply-well-factorable prime weights. That theorem is structurally restricted rather than generic, so this comparison grants more than its literal hypotheses permit. The obstruction is therefore not an artifact of integrating over cells on which the Yang overlap geometry vanishes.
 
 The conclusion is deliberately narrower than “large-index sublattices cannot work.” A source-specific anisotropic dispersion theorem, a theorem for the coupled four-prime object rather than two separate AP problems, or genuinely stronger coefficient/modulus uniformity may bypass this barrier. What is ruled out is the cheap repair “split into residue classes and invoke a generic known level-of-distribution theorem.”
 
@@ -424,25 +424,24 @@ Including the zero endpoint in the overlap definition, their total span is there
 
 throughout the whole box.
 
-Now compare with the strongest unconditional beyond-square-root level located in the prior-art audit, Lichtman's
+The strongest unconditional beyond-square-root comparison located in the triply-well-factorable prime setting is Pascadi's theorem at level `5/8-epsilon`. It is **not** a generic theorem: it requires a triply-well-factorable modulus weight and gives a weighted prime-discrepancy estimate. To make the comparison deliberately more generous than the theorem itself, test the nominal endpoint
 
 \[
- \theta=\frac{66}{107},
+ \theta=\frac58.
 \tag{35}
 \]
 
-which is **not** a generic theorem but a triply-well-factorable weighted result. Even if one counterfactually granted (35) as a generic black-box level, every point of (29) still fails both necessary AP conditions. Indeed the largest possible right side of the first inequality is
+Even under that counterfactual generic interpretation, every point of (29) fails both necessary AP conditions. Indeed throughout the box,
 
 \[
- \frac{66}{107}\left(1-\frac{39}{100}\right)
- =\frac{4026}{10700}
- <\frac{4173}{10700}
- =\frac{39}{100}
- \le\alpha,
+ \alpha+\frac58\beta
+ \ge\frac{39}{100}\frac{13}{8}
+ =\frac{507}{800}
+ >\frac58,
 \tag{36}
 \]
 
-and the second side is symmetric.
+and the second side is symmetric. Since Pascadi's actual theorem has `5/8-epsilon`, the endpoint comparison is already strictly more favorable to the proposed AP repair.
 
 So the gap in (25) contains a rational open box with strictly positive Yang overlap geometry. It is not merely area carried by source cells of zero geometric weight.
 
@@ -460,7 +459,8 @@ Modern work crosses the square-root barrier only with additional structure. In p
 
 - James Maynard, **Primes in arithmetic progressions to large moduli II: Well-factorable estimates**, *Memoirs AMS* 306 (2025), no. 1543, proves level `3/5-epsilon` when the modulus sum is equipped with suitably well-factorable weights;
 - Maynard's companion **III: Uniform residue classes** proves ranges beyond `1/2` for moduli having conveniently sized divisors;
-- Jared Duker Lichtman, **Primes in arithmetic progressions to large moduli, and Goldbach beyond the square-root barrier**, arXiv:2309.08522, proves level `66/107` with **triply well-factorable** weights.
+- Jared Duker Lichtman, **Primes in arithmetic progressions to large moduli, and Goldbach beyond the square-root barrier**, arXiv:2309.08522, proves the historical unconditional level `66/107` with **triply well-factorable** weights and reaches `5/8` under a Selberg-eigenvalue hypothesis;
+- Alexandru Pascadi, **On the exponents of distribution of primes and smooth numbers**, arXiv:2505.00653v2 (2025), removes that Selberg-eigenvalue dependency for this comparison: Definition 1.1 uses the Maynard notion of a triply-well-factorable sequence, and Theorem 1.3(i) gives, for fixed nonzero residue `a`, `A,epsilon>0` and `Q<=x^(5/8-epsilon)`, the corresponding weighted prime-discrepancy estimate. This is the strongest unconditional triply-well-factorable prime level located in this audit.
 
 These hypotheses do not disappear in the Yang source. In fact the normalized prime-power base measure is asymptotically carried by genuine primes: higher powers contribute only
 
@@ -486,29 +486,30 @@ There is also an elementary incompatibility with treating a well-factorable weig
 
 forces `lambda_q=0`: the only factorizations of a prime are `1*q` and `q*1`, and neither fits both support bounds. Triply well-factorable weights have the analogous obstruction after splitting `Q` into three comparable factors. This is exactly why the quoted beyond-square-root results cannot simply be substituted for the generic `theta` in (10) on the prime-modulus Yang family.
 
-For perspective only, even if the restricted value `66/107` were incorrectly treated as generic, (1)--(2) would still give
+For perspective only, even if Pascadi's restricted nominal endpoint `5/8` were incorrectly treated as generic, (1)--(2) and (25) would still give
 
 \[
- f_{\rm both}\left(\frac{66}{107}\right)
- =\frac{55347}{82694}
- =0.6692988608\ldots,
+ f_{\rm both}\left(\frac58\right)
+ =\frac{53}{78}
+ =0.679487\ldots,
 \tag{38}
 \]
 
 and
 
 \[
- f_{\rm either}\left(\frac{66}{107}\right)
- =\frac{38313}{48440}
- =0.7909372419\ldots,
+ f_{\rm either}\left(\frac58\right)
+ =\frac{145}{182}
+ =0.796703\ldots,
 \tag{39}
 \]
 
 leaving
 
 \[
- \frac{10127}{48440}
- =0.2090627580\ldots
+ u_{\rm either}\left(\frac58\right)
+ =\frac{37}{182}
+ =0.203296\ldots
 \tag{40}
 \]
 
@@ -520,6 +521,7 @@ Primary/authoritative anchors checked for this finding:
 - Maynard II, published version / bibliographic record: https://doi.org/10.1090/memo/1543
 - Maynard III: https://arxiv.org/abs/2006.08250
 - Lichtman: https://arxiv.org/abs/2309.08522
+- Pascadi: https://arxiv.org/abs/2505.00653
 - pinned Yang source: https://github.com/JoshuaHKU/zeta-0.7947-reproduction/tree/d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
 
 No prior source located states the Yang-specific coverage laws (1)--(2). No priority claim is made: the new content recorded here is the exact application of classical level-of-distribution bookkeeping to the source scales and Mertens geometry already established in `WI-033`, `WI-040`, and `WI-046`.
@@ -551,6 +553,6 @@ The most direct independent audit is finite and exact: eliminate `t` from (13), 
 \tag{41}
 \]
 
-At the actual unconditional generic level `1/2`, a positive `30%` of raw source-support Mertens mass lies outside even the optimistic “either side is enough” region, and that missed set contains explicit cells with uniformly positive source geometry. Known unconditional improvements past `1/2` are structurally restricted and are not drop-in substitutes; even their best nominal exponent located here would still leave positive support mass if granted generically.
+At the actual unconditional generic level `1/2`, a positive `30%` of raw source-support Mertens mass lies outside even the optimistic “either side is enough” region, and that missed set contains explicit cells with uniformly positive source geometry. Known unconditional improvements past `1/2` are structurally restricted and are not drop-in substitutes; even Pascadi's stronger `5/8-epsilon` triply-well-factorable theorem would still leave a positive support mass if its nominal endpoint were counterfactually granted as a generic level.
 
 The useful redirect is therefore away from a cheap Bombieri--Vinogradov repair of `WI-040`. The promising remaining interfaces are the ones already exposed by `WI-044`--`WI-046`: exploit the exact `S1-2S2+S3` centering, the finite local collision identity, and the `k`-interval transport to obtain a **source-specific coupled dispersion/covariance estimate**. Alternatively, a separate-AP strategy needs distribution strength tending to level one on the relevant prime-modulus family, which is qualitatively Elliott--Halberstam territory rather than an application of currently available generic input.

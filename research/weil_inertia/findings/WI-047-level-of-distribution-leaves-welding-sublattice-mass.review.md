@@ -54,3 +54,7 @@ Thus the mathematical claim of WI-047 -- every fixed generic `theta<1` leaves po
 The objection is mathematically resolved, but closure is pending durable persistence. Pascadi's primary result confirms the unconditional `5/8-o(1)` triply-well-factorable comparison, while remaining a structured weighted theorem rather than the generic black-box AP theorem modeled by (10). Substituting the optimistic endpoint `theta=5/8` into (1), (2), and (25) gives exactly `53/78`, `145/182`, and `37/182`, and the box (29) still fails both necessary AP inequalities because `507/800>5/8`.
 
 Before this review can close, the canonical finding must replace the stale strongest-known `66/107` comparison with Pascadi's `5/8-epsilon` theorem, preserve the theorem's factorability/weighted-scope caveat, persist the exact `theta=5/8` control above, and add Pascadi to the durable literature anchors. Lichtman's `66/107` result may remain as historical prior art.
+
+## Owner
+
+The accepted correction is now persisted in the canonical evidence: WI-047 uses Pascadi's unconditional triply-well-factorable `5/8-epsilon` theorem as the strongest located restricted comparison, records the exact nominal-endpoint controls `53/78`, `145/182`, and `37/182`, preserves the structured-weight/non-generic caveat, and retains Lichtman's `66/107` result only as historical prior art. Pascadi's primary preprint is also recorded in `research/weil_inertia/SOURCES.md` as the durable literature anchor.
