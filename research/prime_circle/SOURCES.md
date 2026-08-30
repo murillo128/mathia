@@ -113,3 +113,7 @@ This file records durable literature dependencies used to support or falsify fin
 ## Solenoid spectral triples and proper length functions
 
 - Carla Farsi, Therese Landry, Nadia S. Larsen and Judith A. Packer, **Spectral triples for noncommutative solenoids and a Wiener’s lemma**, *Journal of Noncommutative Geometry* 18:4 (2024), 1415–1452. DOI: 10.4171/JNCG/557. arXiv:2212.07470. Role: constructs finitely summable solenoid spectral triples from bounded-doubling/proper length functions; its explicit `\mathbb Z[1/p]` length combines archimedean absolute value with a `p`-adic size term, providing the neighboring prior-art boundary for PC-068’s conclusion that compact resolvent needs an additional arithmetic proper scale.
+
+## Unitary time operators and additive covariance
+
+- Daiju Funakawa, Yasumichi Matsuzawa, Itaru Sasaki, Akito Suzuki and Noriaki Teranishi, **Time operators for quantum walks**, *Letters in Mathematical Physics* 110:9 (2020), 2471–2490. DOI: 10.1007/s11005-020-01299-5. arXiv:1901.10665. Role: established unitary time-operator/strong additive commutation framework, including self-adjoint discrete-spectrum examples for discrete-time quantum walks; prior-art boundary for PC-070, whose obstruction comes from the fixed mode and infinite bilateral-orbit multiplicity of the Prime-Circle solenoid dilation rather than from additive covariance in general.
