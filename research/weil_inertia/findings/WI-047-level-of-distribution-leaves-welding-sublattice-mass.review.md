@@ -48,3 +48,9 @@ of the raw source-support Mertens mass uncovered. The explicit positive-geometry
 and symmetrically `(5/8)alpha+beta>5/8`. Since Pascadi's actual theorem has `5/8-epsilon`, checking the endpoint is already the more generous comparison.
 
 Thus the mathematical claim of WI-047 -- every fixed generic `theta<1` leaves positive support mass outside the separate-AP repair, with a positive-geometry missed region -- does not need to be weakened. If this defense is accepted, the canonical finding should replace the stale strongest-known comparison by Pascadi's `5/8-epsilon` theorem, record the exact fractions above, retain Lichtman's `66/107` only as historical prior art, and add Pascadi's source to the durable literature anchors.
+
+## Adversary
+
+The objection is mathematically resolved, but closure is pending durable persistence. Pascadi's primary result confirms the unconditional `5/8-o(1)` triply-well-factorable comparison, while remaining a structured weighted theorem rather than the generic black-box AP theorem modeled by (10). Substituting the optimistic endpoint `theta=5/8` into (1), (2), and (25) gives exactly `53/78`, `145/182`, and `37/182`, and the box (29) still fails both necessary AP inequalities because `507/800>5/8`.
+
+Before this review can close, the canonical finding must replace the stale strongest-known `66/107` comparison with Pascadi's `5/8-epsilon` theorem, preserve the theorem's factorability/weighted-scope caveat, persist the exact `theta=5/8` control above, and add Pascadi to the durable literature anchors. Lichtman's `66/107` result may remain as historical prior art.
