@@ -1,39 +1,38 @@
-# MI-004 — Prime-shift symmetry is scaffolding, not a zero Hamiltonian principle
+# MI-004 — Prime-shift symmetry is scaffolding, not a zero-Hamiltonian principle
 
-**Evidence level:** proved for the audited commutant/covariance classes; supported as a broader design gate
+**Evidence level:** supported by exact operator obstructions and prior-art identifications
 
 ## Core intuition
 
-The exponent lattice makes multiplication by a prime look like a canonical coordinate shift, but promoting that shift symmetry directly to a Hilbert--Pólya Hamiltonian is now heavily constrained. Exact invariance is too rigid, reversible additive covariance forces the wrong spectral geometry, weak covariance modulo compact/Schatten resolvents is often automatic, and the canonical positive translation-invariant metric/Laplacian models have featureless spectra or pure-gauge vertical phases.
+The multiplicative prime action is canonical on the exponent lattice, but making that action look spectral is much easier than making it discriminate the Riemann zero set. Exact covariance is generally too rigid; weak covariance, scalar cocycles, projective phases, standard automorphic scattering, and generic model-space constructions are generally too flexible or already classical. The prime action becomes RH-relevant only when an additional target-sensitive invariant is forced by the exact rational-prime completion.
 
 ## Strongest justified principle
 
-PL-023--PL-031 separate the failures by operator category.
+The negative evidence now covers several distinct repairs.
 
-- PL-023: on the standard Hardy/Dirichlet representation, bounded operators commuting with all prime shifts are multipliers; normal multipliers are scalar. A self-adjoint operator whose nonreal resolvent commutes with all prime shifts is therefore scalar.
-- PL-024: the natural one-sided logarithmic covariance is already the classical Bost--Connes/free-primon skeleton. It explains `log p` energies and the zeta partition function for `beta>1`, not critical-zero selection.
-- PL-025: making the prime translations unitary with exact covariance `U_p^*HU_p=H+log p` forces the spectrum to be invariant under a dense additive subgroup and hence equal to all of `R`.
-- PL-026--PL-027: adding trace-class, or in the semibounded case merely compact, errors at the Hamiltonian level forces at-most-linear eigenvalue counting, incompatible with Riemann--von Mangoldt `T log T` density.
-- PL-028: moving the error to compact resolvents makes the relation vacuous for every compact-resolvent operator; even `S_q`, `q>1`, is automatic at Riemann-zero density. Any nontrivial `S_1` content must come from a specified prime action, not from the scalar `+log p` translation itself.
-- PL-030--PL-031: canonical GCD/Poisson and weighted-Hasse constructions do produce real `1/2` measure/domain boundaries, but vertical log-prime phases are gauge and the resulting spectra do not see zeta zeros.
+- PL-023--PL-028 squeeze ordinary prime-shift covariance from both sides: exact commutation is scalar, exact unitary logarithmic covariance gives full-line continuous spectrum, and the audited compact/trace-class Hamiltonian errors have the wrong eigenvalue-counting scale, while compact or `S_q`, `q>1`, resolvent covariance is essentially automatic at Riemann spectral density.
+- PL-030--PL-031 show that canonical GCD/Poisson and weighted Hasse structures can produce the critical `1/2` boundary while leaving vertical phases gauge or the spectrum otherwise zero-blind.
+- PL-034--PL-038 close straightforward relative/cocycle repairs. After subtracting the scalar logarithmic shift, the canonical Bost--Connes prime action has no residual cocycle; arbitrary scalar multiplicative/translated cocycles and projective phases can be manufactured without zero information; the canonical Hilbert-symbol reciprocity package collapses globally to the product formula rather than a new commutator invariant.
+- PL-039--PL-040 show that unramified `GL_2` spherical scattering scalarizes to a classical zeta ratio, while fixed finite nonspherical ramification can introduce matrix structure at only finitely many places. Neither supplies an infinite prime-direction matrix selector.
+- PL-041--PL-043 show that co-shift/model-space, Clark positivity, Sonine, de Branges, and related ambient Fourier machinery are real operator-theoretic frameworks, but their spectral reality/positivity is universal for arbitrary inner or Sonine data until a zeta-specific target theorem is added.
 
-The surviving lesson is that **the arithmetic role of prime coordinates cannot be expressed solely as translation symmetry of the candidate spectrum**.
+Thus “prime action + spectral formalism” is not yet a mechanism. The missing object must be an invariant that the action cannot realize for arbitrary Euler systems or arbitrary target inner functions.
 
 ## What remains possible
 
-A useful prime action can remain one-sided, target-relative, boundary-based, or attached to a noncompact reference where relative resolvents are not annihilated automatically. It may also act on observables or model spaces rather than translate the Hamiltonian itself. Such a mechanism must distinguish the exact rational-prime system from Beurling controls and must produce more than a known partition function, gauge phase, or automatic Schatten relation.
+A target-relative nonnormal action, a boundary defect tied to the exact rational-prime norm, a genuinely infinite ramified/adelic construction, or a relative object against a noncompact reference can still evade the audited no-go results. Such a construction must survive Beurling controls and must not reduce to a scalar zeta factor whose zeros were already present by definition.
 
 ## Status / novelty
 
-The individual no-go theorems and prior-art redirects are persisted findings. The synthesis is a supported operator-design constraint, not a classification of every possible prime action.
+The commutant/covariance theorems, cocycle controls, automorphic scalarizations, and model-space universality results are persisted findings or audited prior art. The synthesis is a supported restriction on what can count as a prime-action Hamiltonian principle.
 
 ## Falsification criterion
 
-Construct a nontrivial compact-resolvent zero Hamiltonian whose canonical prime-coordinate action lies inside one of the audited exact/compact covariance classes while retaining Riemann--von Mangoldt density, or show that one of the alleged vacuity/linear-counting conclusions fails under its stated hypotheses. A target-relative or noncompact-reference construction would instead evade, not falsify, the intuition.
+Construct a canonical prime action with a nontrivial invariant forced by the exact rational-prime completion that cannot be reproduced by the matched Beurling, arbitrary-inner, scalar-cocycle, or standard spherical-scattering controls, and then prove that invariant constrains the zero divisor beyond functional-equation symmetry. A construction differing only by a chosen scalar cocycle or target function does not falsify the intuition.
 
 ## Lean-formalizable core
 
-- Scalarity from a commuting normal multiplier/resolvent.
-- Dense-translation invariance of a closed spectrum.
-- Eigenvalue-counting obstruction under compact/trace-class additive covariance.
-- Schatten membership of a resolvent from `N(T) asymp T log T`.
+- Exact commutant and logarithmic covariance identities.
+- Automatic compact/`S_q` resolvent covariance estimates.
+- Triviality/flexibility tests for scalar and projective cocycles.
+- Equality-of-framework implications for arbitrary-inner model-space controls.

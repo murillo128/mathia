@@ -1,43 +1,42 @@
-# MI-002 — Global optimization only helps until the Gram-defect representation itself becomes the bottleneck
+# MI-002 — Realizability can improve a scalar envelope, but the realized single-profile architecture still has a ceiling
 
-**Evidence level:** supported by exact duality plus explicit and interval-certified countermodels
+**Evidence level:** supported by exact duality, geometric realizability gains, and explicit periodic countermodels
 
 ## Core intuition
 
-The global Fenchel dual correctly identified one real loss in the early Weil-inertia proofs: fixed-window pinching discards feasible cross-boundary witness coordinates. But removing that optimization loss does not make the collapsed single-profile Gram defect information-complete. The newer countermodels show that the exact full spectral defect `D(M)=tr Psi(M)` itself can remain compatible with densities near `0.6736`. Once the data have been collapsed to that one Gram profile, a better dual witness cannot recover information that is no longer present.
+The Weil-inertia program now separates three different losses. Fixed-window pinching loses feasible global witness coordinates; the scalar trace--energy envelope loses geometric information about which spectra are realizable by translation Gram blocks; and even after those two losses are repaired, a fixed **single-profile four-point pressure plus the same shifted assembly** still has matched periodic configurations that cap what that architecture can prove. “Better optimization” can help at the first two stages, but not once the full realized representation itself is matched by a countermodel.
 
 ## Strongest justified principle
 
-There are now two distinct bottlenecks and they must not be conflated.
+The evidence now gives a hierarchy rather than one bottleneck.
 
-1. **Optimization loss inside a fixed representation.** WI-012 proves the exact Fenchel formula for `D(M)` and shows that block pinching restricts its feasible set. Global coupling can therefore improve a block certificate without new arithmetic input.
-2. **Information loss in the representation itself.** WI-015 constructs an explicit periodic integer countermodel for the already-collapsed full Gram-defect interface. WI-016 sharpens it with a balanced mechanical word, WI-017 essentially closes the integer-lattice optimization by the classical convex lattice-gas theorem, and WI-018--WI-019 move off the integer lattice and lower the obstruction to a certified rational periodic configuration at density about `0.67361`.
+1. **Optimization loss.** WI-012 proves the exact Fenchel representation of the collapsed defect and shows why block pinching is suboptimal: global coupling enlarges the feasible witness set without new arithmetic input.
+2. **Envelope realizability loss.** WI-020 proves that the scalar trace--energy envelope is sharp among abstract spectra at fixed energy, but WI-021--WI-024 and WI-036 show that actual translation Gram blocks obey additional span/packing geometry. Positive span pressure can therefore recover part or all of the four-point energy that the scalar envelope discarded. Exact sharpness in the abstract spectral class did not imply attainability by the realized arithmetic matrices.
+3. **Representation/assembly loss.** WI-025 computes the ceiling of the full-recovery-only four-point assembly, while WI-026 gives a period-33 witness that caps any universal same-pressure four-point block surplus passed through that same shifted assembly below the older target. This is now the genuine matched-representation obstruction for that architecture.
 
-Because the Fenchel dual is an exact representation of the same `D(M)`, unrestricted optimization within that dual cannot beat a countermodel on which the full `D(M)` already has the wrong quantitative behavior.
-
-WI-020 closes another possible local escape: the trace--energy envelope `D >= Phi_m(E)` is the exact fixed-energy minimum, with one-spike equality spectra and quantitative stability. Further improvement cannot come from sharpening that envelope at fixed energy; it must use information not summarized by the collapsed energy/profile.
+The live lesson is precise: **first optimize globally, then impose realizability, then ask whether the realized representation is itself information-complete.** A countermodel at the last stage cannot be repaired by another inequality using only the same represented data.
 
 ## Consequence
 
-The live support-one direction is no longer “find a better global Fenchel witness for the same single Gram matrix.” It is to retain a discriminator **before** the collapse: the uncollapsed exceptional/off-line block, more than one genuinely independent test profile, a cross-profile matrix observable, horizontal/depth information, or another quantity available to the explicit formula that the WI-019 countermodel cannot match.
+A further support-one improvement must introduce information not matched by the period-33/same-pressure architecture: an uncollapsed exceptional block, multiple genuinely independent profiles and cross-profile matrices, a different local pressure sensitive to additional span geometry, horizontal/depth information, or another arithmetic observable whose unconditional control is explicit.
 
-This is compatible with MI-001. Screening at Fourier support at most one is one information-bandwidth obstruction; the single-profile Gram collapse is a second, downstream information loss even after the global optimization problem is solved exactly.
+This is compatible with MI-001. Screening is an upstream bandwidth obstruction; the realized single-profile ceiling is a downstream representation obstruction after substantial geometric information has already been retained.
 
 ## Evidence against overgeneralization
 
-The `0.67361` countermodel is not an upper bound on every support-one proof and not a theorem about the full zeta Weil matrix. It applies to the audited collapsed single-profile interface. An uncollapsed argument using additional matrix entries or multiple profiles can evade it without crossing Fourier support one, provided those extra observables are unconditionally controlled.
+WI-025--WI-026 are not upper bounds on every support-one proof, every Gram-matrix argument, or the full zeta Weil matrix. They apply to the audited four-point/same-pressure shifted assembly. A different pressure, several profiles, a global Fenchel variable not factored through that architecture, or support beyond one can evade the periodic witness if it consumes genuinely new information.
 
 ## Status / novelty
 
-The Fenchel identity, explicit countermodels, convex-lattice-gas reduction, interval-certified off-lattice witness, and sharp trace--energy envelope are persisted findings. The two-layer interpretation is a supported synthesis.
+The Fenchel identity, scalar-envelope sharpness, span/packing improvements, assembly ceiling, and periodic witness are persisted findings. Their three-layer organization is a supported synthesis.
 
 ## Falsification criterion
 
-Derive a bound exceeding the WI-019 countermodel ceiling using only the exact same collapsed single-profile Gram defect and no additional information, while respecting the persisted algebraic interface. That would contradict the countermodel. A stronger bound using an uncollapsed exceptional block or independent profiles would instead confirm the intuition's boundary.
+Exceed the WI-026 architecture ceiling using exactly the same realized single-profile four-point pressure and shifted assembly, with no additional observable or hypothesis. That would contradict the matched witness. An improvement using new realized data would instead confirm the stated boundary.
 
 ## Lean-formalizable core
 
-- Exact Fenchel duality for `tr Psi(M)`.
-- Countermodel evaluation of the collapsed Gram defect.
-- Sharp fixed-energy envelope and one-spike equality characterization.
-- Abstract statement that exact optimization cannot distinguish inputs identified by the representation it optimizes over.
+- Exact Fenchel duality and block-feasible-set inclusion.
+- Distinction between abstract fixed-energy spectra and translation-Gram realizability.
+- Span-packing recovery inequalities.
+- Evaluation of the period-33 witness under the fixed four-point pressure/assembly.

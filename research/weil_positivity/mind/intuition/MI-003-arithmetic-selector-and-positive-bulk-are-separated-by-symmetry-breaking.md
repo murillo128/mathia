@@ -1,38 +1,38 @@
-# MI-003 — The arithmetic selector and the positive bulk repeatedly live on opposite sides of a symmetry-breaking operation
+# MI-003 — Arithmetic selectors can survive in positive finite readouts, but the critical completion keeps changing the pairing
 
-**Evidence level:** supported by several exact constructions and matched controls
+**Evidence level:** supported by exact finite selectors and decisive completion obstructions
 
 ## Core intuition
 
-The strongest recent Weil-positivity candidates reveal the same structural fork in different languages. A positive bulk geometry is easy to obtain, but its canonical symmetric functional often pairs away the arithmetic information. The exact arithmetic selector survives only after taking a signed derivative, supertrace, noncommuting insertion, boundary flux, or spectral asymmetry — operations for which positivity is no longer inherited automatically.
+The newer Weil-positivity evidence refines the earlier “signed selector versus positive bulk” picture. Positivity does not always erase arithmetic immediately: finite incidence Gram determinants and primitive-shell log-determinants can recover `Lambda(n)` from canonical positive operators. The failure occurs one step later. Those positive readouts are rank/cyclotomic tests in the wrong pairing, and the operations needed to pass to the critical infinite Weil form either become nonclosable, expose an unbounded-below signed birth operator, or cancel that birth term under natural positive radial compression. The decisive variable is therefore not positivity alone but **which pairing and completion carries the selector**.
 
 ## Strongest justified principle
 
-Three exact examples isolate the pattern.
+The exact evidence now has two complementary sides.
 
-1. **Boolean/Hodge selector.** WP-018 recovers `Lambda(n)` from the supertrace of a positive residual-energy operator on the backward Boolean cube. WP-019--WP-020 show that a supersymmetric completion which keeps the insertion `Q`-invariant cancels all positive nonzero spectrum to an index. The successful Mangoldt insertion evades cancellation precisely because `[R_alpha,Q_alpha] != 0`.
-2. **Boundary asymmetry.** WP-021 shows that eta data survive positive-square compression because they remember the sign of the boundary operator, but `B` and `-B` have the same positive square and opposite eta. Escaping the positive square restores information and simultaneously removes inherited sign.
-3. **Information geometry.** WP-022 derives the exact critical finite Weil cosine comb as the radial score of a canonical positive product-Poisson family. The Fisher norm of that score diverges at `sigma=1/2`. WP-023 shows that standard positive divergences either reduce infinitesimally to the same Fisher geometry or have a boundary limit controlled only by the universal zeta pole, while unit-speed normalization sends every fixed prime-power coefficient to zero.
+1. **Positive finite recovery is possible.** WP-030 constructs a canonical positive degree-one Gram operator whose determinant recovers `Lambda(n)^2`; the mechanism is nevertheless a rank test universal for weighted free commutative monoids and has no archimedean sector. WP-043 gives an independent Prime-Circle realization: the positive cycle Laplacian has primitive-shell log-determinant exactly `Lambda(n)`. That identity is cyclotomic and lives in scalar spectral calculus, not in the pointwise shell pairing needed for the Weil birth matrix.
+2. **Critical completion changes category or pairing.** WP-032 proves that the direct critical Gram completion with amplitudes `(log p)/sqrt(p)` is nonclosable on the natural `ell^2` place space; WP-033 rules out rescue by an equivalent Hilbert renorming. WP-034 shows that the intrinsic Prime-Circle boundary birth operator contains the correct interior Weil ray weights but is unbounded below, while its stable positive orientation classicalizes to the Poisson/GCD route. WP-037 identifies the same birth form as a singular first-order tangent to profinite Haar rather than an ordinary positive probability tangent.
+3. **Natural sign-preserving reductions erase the finite birth operator.** WP-044 proves that finite positive radial contrasts remove the universal collision mode and the arithmetic birth operator in the same common radial channel. WP-045 shows that ordinary positive Schur/Feshbach elimination has the same failure: the boundary limit becomes a universal scalar radial kernel tensored with the shell identity, with the birth operator surviving only in a vanishing correction.
 
-These examples support a precise design rule: **do not apply the positive/symmetric quotient before the arithmetic first variation or asymmetry has been coupled to the global completion**.
+Together with WP-018--WP-023, these results support a stronger design rule: **extracting the right arithmetic coefficient is easier than transporting it through the right positive global pairing.**
 
 ## What remains possible
 
-A successful construction may be noncommutative, relative, boundary-based, graded, or cohomological. It need not make each local term positive. What it must supply is an independently forced theorem saying that the final coupled signed object is nonnegative on the Weil test class.
+A successful construction may use shell-dependent or singular radial filtering, a nonseparable finite--archimedean sector, a boundary/distributional pairing, a nonlinear determinant/intersection form, or another category-changing operation with an independent sign theorem. The operation must be forced before the finite selector is averaged into a universal radial/Haar mode and must also generate the archimedean/polar contribution.
 
-This intuition does not claim that every useful positivity proof must preserve a literal supertrace or score. A new geometric operation could reorganize the selector into a positive form. The requirement is only that the reorganization be derived before the selector is erased and that its sign not be equivalent to the desired RH conclusion by construction.
+The exact finite positive selectors remain useful evidence about what information is available; they are not themselves evidence for the Weil sign.
 
 ## Status / novelty
 
-The individual selector identities, index cancellations, eta sign control, and Fisher/divergence obstructions are persisted findings. Their common “symmetry-breaking selector versus positive bulk” interpretation is a supported synthesis, not a universal theorem about positivity methods.
+The finite determinant identities, nonclosability results, boundary birth spectrum, singular Haar tangent, and radial contrast/Schur cancellations are persisted findings. Their common “pairing/completion gate” interpretation is a supported synthesis, not a theorem that every positive completion fails.
 
 ## Falsification criterion
 
-Exhibit one of the audited positive bulk constructions and a canonical symmetry-preserving positive functional on it that retains the exact finite Mangoldt/Weil coefficients at the critical scale and supplies the missing completion without a signed/noncommuting/boundary input. Conversely, a new coupled sign theorem acting after a symmetry-breaking selector would support rather than falsify the intuition.
+Start from one of the audited finite positive selectors and derive a canonical completion whose closed/global pairing retains the exact critical finite-prime coefficients, supplies the archimedean/polar sector, and has an independently proved Weil sign. A shell-blind finite radial contrast or ordinary Schur elimination retaining the leading birth operator would contradict WP-044--WP-045.
 
 ## Lean-formalizable core
 
-- `Str R_alpha = Lambda(n)` and `[R_alpha,Q_alpha] != 0`.
-- Equivariant McKean--Singer cancellation for `Q`-invariant insertions.
-- Same-square/opposite-eta matched control.
-- Finite-product score coefficient identity and Fisher divergence criterion.
+- Rank-one Gram determinant selector for `Lambda`.
+- Nonclosability criterion for the critical rank-one form.
+- Primitive-shell cycle determinant `log det = 2 Lambda(n)`.
+- Common-mode cancellation of the boundary birth operator under finite radial contrasts and Schur elimination.
