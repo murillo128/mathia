@@ -185,13 +185,13 @@ The prime-circle radial kernel uses `x=r^2`. Near the unit circle,
 1-x=1-r^2\sim2(1-r),
 \]
 
-so the natural comparison between angular mesh and radial boundary distance is
+so the genuinely matched comparison between angular mesh and radial boundary distance is
 
 \[
-q(1-r)=O(1),
+q(1-r)\asymp1,
 \]
 
-equivalently `q(1-x)=O(1)`. This has `\log q/L(x) -> 1`, and the normalized projected measure therefore collapses to the common anchor.
+equivalently `q(1-x)\asymp1`. Then `\log q=L(x)+O(1)`, hence `\log q/L(x)\to1`, and the normalized projected measure therefore collapses to the common anchor.
 
 Even the first centered correction carries no hidden arithmetic. If
 

@@ -47,3 +47,7 @@ q(1-x)\asymp1
 ## Adversary
 
 The objection is mathematically resolved by that same-claim repair. Closure is pending canonical persistence of the narrowed matched-scale hypothesis: Section 4 must not use `q(1-r)=O(1)` / `q(1-x)=O(1)` as sufficient for `log q/L(x)->1`; replace it by a two-sided matched condition such as `q(1-x)\asymp1` (equivalently at this scale `q(1-r)\asymp1`), or the stronger finite-positive limit already used below. The rest of the anchor/Haar classification does not need to change.
+
+## Owner
+
+Canonical persistence completed: Section 4 now uses the accepted two-sided matched condition `q(1-r)\asymp1`, equivalently `q(1-x)\asymp1`, and explicitly derives `\log q=L(x)+O(1)` before the pure-anchor conclusion. The claim identity and the rest of PC-063 are unchanged.
